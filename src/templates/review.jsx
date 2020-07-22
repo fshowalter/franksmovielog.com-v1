@@ -76,7 +76,10 @@ export default function Review({ data }) {
     <Layout>
       <article className={styles.container}>
         <Img
-          fluid={review.backdrop.childImageSharp.fluid}
+          fluid={{
+            ...review.backdrop.childImageSharp.fluid,
+            sizes: "(min-width: 1060px) 1000px, calc(94.59vw + 16px)",
+          }}
           alt={`A still from ${movie.title} (${movie.year})`}
         />
         <div className={styles.content}>
@@ -201,7 +204,7 @@ export const pageQuery = graphql`
         backdrop {
           childImageSharp {
             fluid(toFormat: JPG, jpegQuality: 75) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
