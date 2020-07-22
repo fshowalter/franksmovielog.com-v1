@@ -1,0 +1,125 @@
+.container {
+  @media (min-width: 1000px) {
+    background-color: var(--color-content-background);
+    display: grid;
+    grid-template-columns: 1fr var(--step-1) 1.25fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "left . right";
+  }
+}
+
+.left {
+  @media (min-width: 1000px) {
+    grid-area: left;
+  }
+}
+
+.right {
+  @media (min-width: 1000px) {
+    grid-area: right;
+  }
+}
+
+.page_header {
+  composes: header from "../styles/page.scss";
+}
+
+.page_heading {
+  composes: heading from "../styles/page.scss";
+}
+
+.page_tagline {
+  composes: tagline from "../styles/page.scss";
+}
+
+.filters {
+  composes: card from "../styles/filters.scss";
+}
+
+.filters_fieldset {
+  composes: fieldset from "../styles/filters.scss";
+}
+
+.filter_text_input {
+  composes: text_input from "../styles/filters.scss";
+}
+
+.filter_select_input {
+  composes: select_input from "../styles/filters.scss";
+}
+
+.label {
+  composes: label from "../styles/filters.scss";
+}
+
+.toggle_review_button {
+  composes: toggle_button from "../styles/filters.scss";
+}
+
+.list {
+  composes: list from "../styles/list.scss";
+  list-style-type: decimal;
+}
+
+.list_item {
+  composes: list_item from "../styles/list.scss";
+
+  @media (min-width: 1000px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.list_item_first {
+  composes: list_item_first from "../styles/list.scss";
+}
+
+.list_item_title {
+  font-size: 18px;
+  color: var(--color-link);
+  padding-top: var(--step--2);
+  display: block;
+
+  @media (min-width: 1000px) {
+    padding-top: 8px;
+    font-size: 16px;
+  }
+}
+
+.list_item_title_link {
+  composes: list_item_title_link from "../styles/list.scss";
+}
+
+.list_item_title_year {
+  composes: list_item_title_year from "../styles/list.scss";
+
+  @media (min-width: 1000px) {
+    font-size: 12px;
+  }
+}
+
+.list_item_slug {
+  composes: list_item_slug from "../styles/list.scss";
+  display: flex;
+  justify-items: baseline;
+  font-size: 13px;
+  padding-bottom: var(--step--2);
+  font-feature-settings: "tnum";
+
+  @media (min-width: 1000px) {
+    width: 14rem;
+    padding-bottom: 8px;
+  }
+}
+
+.list_item_grade {
+  height: 15px;
+  width: auto;
+  margin-right: var(--step--2);
+
+  @media (min-width: 1000px) {
+    height: 15px;
+  }
+}

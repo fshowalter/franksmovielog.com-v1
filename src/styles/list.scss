@@ -1,0 +1,52 @@
+.list {
+  composes: card from "./utils.scss";
+  padding: var(--step-1) 0 var(--step-1) var(--step-1);
+
+  @media (min-width: 1000px) {
+    border: 0;
+    padding-top: 0;
+  }
+}
+
+.list_item {
+  display: block;
+  border-bottom: solid 1px var(--color-background);
+
+  @media (min-width: 1300px) {
+    border-right: solid 1px var(--color-background);
+  }
+}
+
+.list_item_first {
+  @media (min-width: 1300px) {
+    border-top: solid 1px var(--color-background);
+  }
+}
+
+.list_item_title {
+  font-size: 18px;
+  padding: 1.5rem var(--step-1) 0.5rem 0;
+}
+
+.list_item_title_link {
+  color: var(--color-link);
+
+  .list_item_title_year {
+    color: inherit;
+  }
+}
+
+.list_item_title_year {
+  color: var(--color-text-secondary);
+  font-size: var(--step--2);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+.list_item_slug {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  padding: 0 var(--step-1) 1.5rem 0;
+}

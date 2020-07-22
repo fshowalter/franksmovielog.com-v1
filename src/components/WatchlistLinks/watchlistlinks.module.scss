@@ -1,0 +1,18 @@
+.icon {
+  composes: icon from "../../styles/utils.scss";
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  padding: 0;
+  width: 50%;
+}
+
+.list_item {
+  margin-left: 0.75rem;
+}

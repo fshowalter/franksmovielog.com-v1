@@ -1,0 +1,14 @@
+.container {
+  color: var(--color-text-secondary);
+  font-size: var(--step--1);
+  font-family: var(--font-sans);
+  margin: var(--step-2) 0 0;
+  padding: var(--step-1);
+  border-top: solid 1px var(--color-border);
+  display: flex;
+}
+
+.icon {
+  composes: icon from "../../styles/utils.scss";
+  margin-right: 0.75rem;
+}

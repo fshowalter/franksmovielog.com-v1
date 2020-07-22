@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.thumb {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 50%;
+  cursor: grab;
+  height: 2rem;
+  left: -1rem;
+  position: relative;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+  width: 2rem;
+  z-index: 1;
+}
+
+.thumb:active {
+  transform: scale(1.25);
+}
+
+.slider {
+  flex: 1 100%;
+  height: var(--step-2);
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.track {
+  background: rgba(0, 0, 0, 0.06);
+  border-bottom: solid 0.5rem #fff;
+  border-top: solid 0.5rem #fff;
+  height: 2rem;
+  margin: auto 0.8rem;
+  position: relative;
+}
+
+.year_input {
+  appearance: textfield;
+  background-color: #fff;
+  border: 0;
+  box-sizing: content-box;
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--step--2);
+  padding: 0;
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,61 @@
+.header {
+  padding: var(--step-1) var(--step-1);
+  text-align: center;
+  font-size: clamp(15px, 4vw, 16px);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  color: var(--color-text-secondary);
+}
+
+.container {
+  padding: var(--step-1) var(--step-1) var(--step-5) var(--step-1);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: var(--step-1);
+  font-feature-settings: "tnum";
+}
+
+.pagination-link {
+  color: var(--color-link);
+}
+
+.pagination_heading {
+  composes: sr_only from "../../styles/utils.scss";
+}
+
+.current_page,
+.elipsis {
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  padding: calc(var(--step--2) / 2);
+  font-weight: 300;
+}
+
+.button {
+  appearance: none;
+  background-color: rgba(239, 239, 239, 1);
+  border: solid 1px darken(#e9e7e0, 5);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  padding: calc(var(--step--2) / 2);
+  font-weight: 300;
+  color: var(--color-link);
+
+  @media (min-width: 1000px) {
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+.button[disabled] {
+  background-color: rgba(239, 239, 239, 0.3);
+  color: rgba(16, 16, 16, 0.3);
+
+  @media (min-width: 1000px) {
+    background-color: transparent;
+  }
+}
