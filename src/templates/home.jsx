@@ -141,7 +141,11 @@ function ReviewListItem({
       >
         <Img
           className={styles.list_item_image}
-          fluid={review.backdrop.childImageSharp.fluid}
+          fluid={{
+            ...review.backdrop.childImageSharp.fluid,
+            sizes:
+              "(min-width: 1000px) 456px, (min-width: 660px) 580px, calc(95vw - 28px)",
+          }}
           alt={`A still from ${movie.title} (${movie.year})`}
         />
       </Link>
@@ -353,7 +357,7 @@ export const pageQuery = graphql`
         }
         backdrop {
           childImageSharp {
-            fluid(toFormat: JPG, jpegQuality: 75) {
+            fluid(toFormat: JPG, jpegQuality: 75 ) {
               ...GatsbyImageSharpFluid
             }
           }
