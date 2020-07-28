@@ -43,7 +43,12 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.5",
     "gatsby-cli": "^2.12.61",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-order": "^4.1.0"
   },
   "keywords": [
     "gatsby"
@@ -56,6 +61,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "lint:css": "stylelint './src/**/*.?(s)css*'",
     "test": "jest",
     "test:watch": "jest --watch",
     "sync": "cp -av ../movielog-new/export/*.json ./content/data",

@@ -19,6 +19,13 @@ module.exports = {
         path: `${__dirname}/content/assets/backdrops/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "posters",
+        path: `${__dirname}/content/assets/posters/`,
+      },
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,

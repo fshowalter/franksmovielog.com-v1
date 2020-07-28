@@ -1,65 +1,75 @@
+@import "./src/styles/breakpoints";
+
 .container {
   background-color: var(--color-content-background);
 }
 
 .content {
-  padding: 0 var(--step-1) var(--step-5);
   display: flex;
   flex-direction: column;
-  max-width: 66ch;
   margin: 0 auto;
+  max-width: 66ch;
+  padding: 0 var(--step-1) var(--step-5);
 
-  @media (min-width: 1000px) {
-    max-width: none;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 63ch 1fr;
-    grid-template-areas: "title title" "grade meta" "content meta" "date meta";
-    grid-template-rows: auto;
+  @media (min-width: $breakpoint_desktop) {
     column-gap: var(--step-5);
+    display: grid;
+    grid-template-areas: "title title" "grade meta" "content meta" "date meta";
+    grid-template-columns: 63ch 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    max-width: none;
+  }
+}
+
+.image {
+  max-width: $breakpoint_desktop;
+
+  @media (min-width: $breakpoint_max) {
+    margin-left: var(--step-1);
   }
 }
 
 .title {
-  padding: 1.5rem 0;
   font-size: var(--step-3);
-  @media (min-width: 1000px) {
+  padding: 1.5rem 0;
+  @media (min-width: $breakpoint_desktop) {
     grid-area: title;
   }
 }
 
 .grade {
-  margin-top: 1.5rem;
   height: 28px;
+  margin-top: 1.5rem;
   width: auto;
 
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     grid-area: grade;
     margin-top: 0;
   }
 }
 
 .meta {
+  color: var(--color-text-secondary);
   font-size: 16px;
   font-weight: 400;
-  color: var(--color-text-secondary);
   letter-spacing: 0.2px;
 
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
+    border-left: solid 1px var(--color-background);
     grid-area: meta;
     grid-row: 2 / 5;
-    border-left: solid 1px var(--color-background);
     padding-left: var(--step-1);
   }
 }
 
 .cast_label {
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     display: block;
-    margin-top: 1rem;
-    font-size: 14px;
     font-family: var(--font-sans);
+    font-size: 14px;
     font-weight: 300;
+    margin-top: 1rem;
 
     &:first-of-type {
       margin-top: 0;
@@ -72,6 +82,25 @@
   font-family: var(--font-sans);
   font-size: var(--step-0);
   font-weight: 300;
+}
+
+:global .footnotes {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: 300;
+
+  ol {
+    list-style-type: decimal;
+    margin-left: 1rem;
+  }
+
+  li {
+    display: block;
+  }
+
+  p {
+    display: inline;
+  }
 }
 
 .body {
@@ -89,14 +118,14 @@
   blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
+    // font-family: "Times";
+    font-style: italic;
     margin: 1.5em 0;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
-    // font-family: "Times";
-    font-style: italic;
   }
 
-  blockquote:before {
+  blockquote::before {
     color: #ccc;
     content: open-quote;
     font-size: 4em;
@@ -109,39 +138,20 @@
     display: inline;
   }
 
-  :global .footnotes {
-    font-family: var(--font-sans);
-    font-size: var(--step--1);
-    font-weight: 300;
-
-    ol {
-      list-style-type: decimal;
-      margin-left: 1rem;
-    }
-
-    li {
-      display: block;
-    }
-
-    p {
-      display: inline;
-    }
-  }
-
   @media (min-width: 1000px) {
-    margin-top: 1.5rem;
     grid-area: content;
+    margin-top: 1.5rem;
   }
 }
 
 .review_meta {
+  border-top: solid 1px var(--color-border);
   color: var(--color-text-secondary);
-  font-size: var(--step--2);
+  display: flex;
   font-family: var(--font-sans);
+  font-size: var(--step--2);
   margin: var(--step-2) 0 0;
   padding: var(--step-1);
-  border-top: solid 1px var(--color-border);
-  display: flex;
 
   @media (min-width: 1000px) {
     grid-area: meta;
@@ -157,17 +167,17 @@
 }
 
 .date {
-  display: flex;
   align-items: center;
+  color: var(--color-text-secondary);
+  display: flex;
   font-family: var(--font-sans);
   font-size: 14px;
   font-weight: 300;
-  color: var(--color-text-secondary);
+  margin: 1em 0 0;
 
-  @media (min-width: 1000px) {
-    grid-area: date;
-    margin: 0;
+  @media (min-width: $breakpoint_desktop) {
     border: 0;
+    grid-area: date;
     padding: 0;
   }
 }

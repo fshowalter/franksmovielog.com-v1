@@ -76,8 +76,9 @@ export default function Review({ data }) {
     <Layout>
       <article className={styles.container}>
         <Img
+          className={styles.image}
           fluid={{
-            ...review.backdrop.childImageSharp.fluid,
+            ...review.poster.childImageSharp.fluid,
             sizes: "(min-width: 1060px) 1000px, calc(94.59vw + 16px)",
           }}
           alt={`A still from ${movie.title} (${movie.year})`}
@@ -87,7 +88,7 @@ export default function Review({ data }) {
             {movie.title}{" "}
             <span className={styles.title_year}>{movie.year}</span>
           </h1>
-          <p className={styles.meta}>
+          <aside className={styles.meta}>
             <span className={styles.cast_label}>Directed by </span>
             {toSentenceArray(
               data.director.nodes.map((director) => director.name)
@@ -104,7 +105,7 @@ export default function Review({ data }) {
                 <WatchlistLinks watchlistTitle={watchlistTitle} />
               </div>
             )}
-          </p>
+          </aside>
           <Grade grade={review.frontmatter.grade} className={styles.grade} />
           <div
             className={styles.body}
@@ -202,6 +203,13 @@ export const pageQuery = graphql`
           venue_notes
         }
         backdrop {
+          childImageSharp {
+            fluid(toFormat: JPG, jpegQuality: 75) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        poster {
           childImageSharp {
             fluid(toFormat: JPG, jpegQuality: 75) {
               ...GatsbyImageSharpFluid_withWebp

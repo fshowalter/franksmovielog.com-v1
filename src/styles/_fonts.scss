@@ -1,0 +1,177 @@
+/* slackey-regular - latin */
+@font-face {
+  font-family: "Slackey";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Slackey Regular"), local("Slackey-Regular"),
+    url("../../fonts/slackey-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/slackey-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-sans-regular - latin-ext_latin */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("../../fonts/pt-sans-v11-latin-ext_latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/pt-sans-v11-latin-ext_latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pt-sans-italic - latin-ext_latin */
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("PT Sans Italic"), local("PTSans-Italic"),
+    url("../../fonts/pt-sans-v11-latin-ext_latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/pt-sans-v11-latin-ext_latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pt-sans-700 - latin-ext_latin */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+    url("../../fonts/pt-sans-v11-latin-ext_latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/pt-sans-v11-latin-ext_latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pt-sans-700italic - latin-ext_latin */
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("PT Sans Bold Italic"), local("PTSans-BoldItalic"),
+    url("../../fonts/pt-sans-v11-latin-ext_latin-700italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/pt-sans-v11-latin-ext_latin-700italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* maitree-200 - latin-ext_latin */
+@font-face {
+  font-family: "Maitree";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Maitree ExtraLight"), local("Maitree-ExtraLight"),
+    url("../../fonts/maitree-v5-latin-ext_latin-200.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/maitree-v5-latin-ext_latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* maitree-300 - latin-ext_latin */
+@font-face {
+  font-family: "Maitree";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Maitree Light"), local("Maitree-Light"),
+    url("../../fonts/maitree-v5-latin-ext_latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/maitree-v5-latin-ext_latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* maitree-regular - latin-ext_latin */
+@font-face {
+  font-family: "Maitree";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Maitree"),
+    url("../../fonts/maitree-v5-latin-ext_latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/maitree-v5-latin-ext_latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* maitree-500 - latin-ext_latin */
+@font-face {
+  font-family: "Maitree";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Maitree Medium"), local("Maitree-Medium"),
+    url("../../fonts/maitree-v5-latin-ext_latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/maitree-v5-latin-ext_latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* maitree-600 - latin-ext_latin */
+@font-face {
+  font-family: "Maitree";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Maitree SemiBold"), local("Maitree-SemiBold"),
+    url("../../fonts/maitree-v5-latin-ext_latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/maitree-v5-latin-ext_latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* maitree-700 - latin-ext_latin */
+@font-face {
+  font-family: "Maitree";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Maitree Bold"), local("Maitree-Bold"),
+    url("../../fonts/maitree-v5-latin-ext_latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../../fonts/maitree-v5-latin-ext_latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libertinus Serif";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../fonts/LibertinusSerif-Bold.woff2") format("woff2"),
+    url("../../fonts/LibertinusSerif-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libertinus Serif Display";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/LibertinusSerifDisplay-Regular.woff2") format("woff2"),
+    url("../../fonts/LibertinusSerifDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libertinus Serif";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/LibertinusSerif-Regular.woff2") format("woff2"),
+    url("../../fonts/LibertinusSerif-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../../fonts/LibertinusSerif-BoldItalic.woff2") format("woff2"),
+    url("../../fonts/LibertinusSerif-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libertinus Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/LibertinusSerif-Semibold.woff2") format("woff2"),
+    url("../../fonts/LibertinusSerif-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../../fonts/LibertinusSerif-Italic.woff2") format("woff2"),
+    url("../../fonts/LibertinusSerif-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libertinus Serif";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../fonts/LibertinusSerif-SemiboldItalic.woff2") format("woff2"),
+    url("../../fonts/LibertinusSerif-SemiboldItalic.woff") format("woff");
+}

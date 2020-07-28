@@ -1,0 +1,17 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.stylelint": true
+  },
+  "files.autoSaveDelay": 500,
+  "stylelint.packageManager": "yarn",
+  "stylelint.reportNeedlessDisables": true,
+  "eslint.packageManager": "yarn"
+}

@@ -220,6 +220,33 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               .find((node) => node.absolutePath === backdropPath);
           },
         },
+        poster: {
+          type: "File",
+          resolve: (source, args, context) => {
+            if (!source || !source.frontmatter || !source.frontmatter.slug) {
+              return null;
+            }
+
+            const imagePath = source.frontmatter.slug.endsWith("/")
+              ? source.frontmatter.slug.slice(
+                  0,
+                  source.frontmatter.slug.length - 1
+                )
+              : source.frontmatter.slug;
+
+            const posterPath = path.resolve(
+              `./content/assets/posters/${imagePath}.jpg`
+            );
+
+            if (!posterPath) {
+              return null;
+            }
+
+            return context.nodeModel
+              .getAllNodes({ type: "File" })
+              .find((node) => node.absolutePath === posterPath);
+          },
+        },
       },
     }),
   ];

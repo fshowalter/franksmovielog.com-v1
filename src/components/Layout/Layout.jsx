@@ -6,7 +6,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useReducer, useLayoutEffect, useEffect, useRef } from "react";
+import React, { useReducer, useLayoutEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
@@ -84,11 +84,11 @@ function getWidth(element) {
 }
 
 function getVisibleLinks(element) {
-  return element.querySelectorAll("li:not(.js--hidden)");
+  return element.querySelectorAll("li:not(.js_hidden)");
 }
 
 function getHiddenLinks(element) {
-  return element.querySelectorAll("li.js--hidden");
+  return element.querySelectorAll("li.js_hidden");
 }
 
 function updateNavBar({
@@ -98,12 +98,8 @@ function updateNavBar({
   searchButtonEl,
   responsiveBreaks,
 }) {
-  const spacerWidth = getComputedStyle(navListEl)
-    .getPropertyValue("margin-right")
-    .replace("px", "");
-
   const availableSpace = Math.ceil(
-    document.documentElement.clientWidth - spacerWidth
+    document.documentElement.clientWidth - navButtonEl.clientWidth
   );
 
   if (getWidth(navListEl) > availableSpace) {
@@ -113,32 +109,27 @@ function updateNavBar({
 
     const visibleLinks = getVisibleLinks(navListEl);
 
-    visibleLinks[visibleLinks.length - 1].classList.add("js--hidden");
+    visibleLinks[visibleLinks.length - 1].classList.add("js_hidden");
 
     // Show the responsive hidden button
-    if (navButtonEl.classList.contains("js--hidden")) {
-      navButtonEl.classList.remove("js--hidden");
-      searchButtonEl.classList.add("js--hidden");
+    if (navButtonEl.classList.contains("js_hidden")) {
+      navButtonEl.classList.remove("js_hidden");
     }
   } else {
     // Logic when visible list is not overflowing the nav
     if (availableSpace > responsiveBreaks[responsiveBreaks.length - 1]) {
       // Logic when there is space for another item in the nav
       const hiddenLinks = getHiddenLinks(navListEl);
-      hiddenLinks[0].classList.remove("js--hidden");
+      hiddenLinks[0].classList.remove("js_hidden");
 
       responsiveBreaks.pop(); // Move the item to the visible list
     }
 
     // Hide the resonsive hidden button if list is empty
     if (responsiveBreaks.length < 1 && getHiddenLinks(navListEl).length === 0) {
-      navButtonEl.classList.add("js--hidden");
-      searchButtonEl.classList.remove("js--hidden");
+      navButtonEl.classList.add("js_hidden");
     }
   }
-
-  console.log(availableSpace);
-  console.log(getWidth(navListEl));
 
   if (
     getWidth(navListEl) > availableSpace ||
@@ -166,6 +157,38 @@ function debounce(fn, ms, ...args) {
   };
 }
 
+function MenuIcon() {
+  return (
+    <svg
+      className={styles.mast_nav_menu_icon}
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+    >
+      <rect x="0" y="0" width="100%" height="2" />
+      <rect x="0" y="7" width="100%" height="2" />
+      <rect x="0" y="14" width="100%" height="2" />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 22.88 22.88"
+      width="1em"
+      height="1em"
+      fill="currentColor"
+      className={styles.mast_nav_menu_close_icon}
+    >
+      <path d="M.324 1.909a1.14 1.14 0 010-1.587 1.14 1.14 0 011.587 0l9.523 9.539L20.973.322a1.12 1.12 0 011.571 0 1.112 1.112 0 010 1.587l-9.523 9.524 9.523 9.539a1.112 1.112 0 010 1.587 1.12 1.12 0 01-1.571 0l-9.539-9.539-9.523 9.539a1.14 1.14 0 01-1.587 0c-.429-.444-.429-1.159 0-1.587l9.523-9.539L.324 1.909z" />
+    </svg>
+  );
+}
+
 function Layout({ children }) {
   const [state, dispatch] = useReducer(reducer, {}, initState);
   const navBarEl = useRef(null);
@@ -175,16 +198,10 @@ function Layout({ children }) {
   const responsiveBreaks = useRef([]);
 
   useLayoutEffect(() => {
-    updateNavBar({
-      navBarEl: navBarEl.current,
-      navButtonEl: navButtonEl.current,
-      navListEl: navListEl.current,
-      responsiveBreaks: responsiveBreaks.current,
-      searchButtonEl: searchButtonEl.current,
-    });
-  });
+    if (state.navVisible) {
+      return () => {};
+    }
 
-  useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
       updateNavBar({
         navBarEl: navBarEl.current,
@@ -197,6 +214,8 @@ function Layout({ children }) {
 
     window.addEventListener("resize", debouncedHandleResize);
 
+    debouncedHandleResize();
+
     return () => {
       window.removeEventListener("resize", debouncedHandleResize);
     };
@@ -204,9 +223,10 @@ function Layout({ children }) {
 
   return (
     <div
+      id="top"
       className={`${styles.container} ${
         state.navVisible ? styles.mast_nav_visible : ""
-      } ${state.searchVisible ? styles.search_visible : ""}`}
+      } ${state.searchVisible ? styles.mast_nav_search_visible : ""}`}
     >
       <Helmet>
         <html lang="en-us" />
@@ -215,107 +235,70 @@ function Layout({ children }) {
           content="width=device-width, initial-scale=1.0, maximum-scale=1"
         />
       </Helmet>
-      <header id="site-header" className={styles.mast}>
+      <a className={styles.skip_link} href="#content">
+        Skip to content
+      </a>
+      <header className={styles.mast_header}>
         <div className={styles.mast_logo}>
-          <h1 className={styles.mast_heading}>
-            <a href="/">Frank&apos;s Movie Log</a>
+          <h1 className={styles.mast_title}>
+            <Link href="/">Frank&apos;s Movie Log</Link>
           </h1>
           <p className={styles.mast_tagline}>My life at the movies.</p>
         </div>
-
-        <nav ref={navBarEl} className={styles.mast_nav}>
-          <h2 className={styles.mast_nav_heading}>Navigation</h2>
-          <ul ref={navListEl} className={styles.mast_nav_list}>
-            <MastNavItem to="/">Home</MastNavItem>
-            <MastNavItem to="/about/">About</MastNavItem>
-            <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
-            <MastNavItem to="/reviews/">All Reviews</MastNavItem>
-            <MastNavItem to="/viewings/">Viewing Log</MastNavItem>
-            <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
-          </ul>
-          <button
-            type="button"
-            ref={navButtonEl}
-            className={styles.mast_nav_button}
-            aria-label="Full Navigation"
-            onClick={() => dispatch({ type: actions.TOGGLE_NAV })}
-          >
-            <svg
-              className={styles.mast_menu_icon}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
+        <form
+          action="https://www.google.com/search"
+          acceptCharset="UTF-8"
+          method="get"
+          role="search"
+          className={styles.mast_search_form}
+        >
+          <label htmlFor="search" className={styles.mast_search_wrap}>
+            <span className={styles.mast_search_label}>Search</span>
+            <input
+              type="text"
+              className={styles.mast_search_input}
+              name="q"
+              id="search"
+              placeholder="Search..."
+            />
+            <input
+              type="hidden"
+              name="q"
+              value="site:movielog.frankshowalter.com"
+            />
+            <button
+              type="submit"
+              className={styles.mast_search_submit}
+              value="Search"
             >
-              <rect x="0" y="0" width="100%" height="2" fill="#fff" />
-              <rect x="0" y="9" width="100%" height="2" fill="#fff" />
-              <rect x="0" y="18" width="100%" height="2" fill="#fff" />
-            </svg>
-          </button>
-          <button
-            type="button"
-            ref={searchButtonEl}
-            className={`js--hidden ${styles.mast_search_button}`}
-            aria-label="Search"
-            onClick={() => dispatch({ type: actions.TOGGLE_SEARCH })}
-          >
-            <SearchIcon className={styles.mast_search_icon} />
-          </button>
-          <form
-            action="https://www.google.com/search"
-            acceptCharset="UTF-8"
-            method="get"
-            role="search"
-            className={styles.mast_search_form}
-          >
-            <label htmlFor="search" className={styles.mast_search_wrap}>
-              <span className={styles.mast_search_label}>Search</span>
-              <input
-                type="text"
-                className={styles.mast_search_input}
-                name="q"
-                id="search"
-                placeholder="Search..."
-              />
-              <input
-                type="hidden"
-                name="q"
-                value="site:movielog.frankshowalter.com"
-              />
-              <button
-                type="submit"
-                className={styles.mast_search_submit}
-                value="Search"
-              >
-                <SearchIcon />
-              </button>
-              <button
-                type="button"
-                className={styles.search_close}
-                value="Close Search"
-                onClick={() => dispatch({ type: actions.TOGGLE_SEARCH })}
-              >
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  className={styles.search_close_icon}
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
-                  />
-                </svg>
-              </button>
-            </label>
-          </form>
-        </nav>
+              <SearchIcon />
+            </button>
+          </label>
+        </form>
       </header>
-      <div className={styles.children}>{children}</div>
+      <nav ref={navBarEl} className={styles.mast_nav}>
+        <h2 className={styles.mast_nav_heading}>Navigation</h2>
+        <ul ref={navListEl} className={styles.mast_nav_list}>
+          <MastNavItem to="/">Home</MastNavItem>
+          <MastNavItem to="/about/">About</MastNavItem>
+          <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
+          <MastNavItem to="/reviews/">All Reviews</MastNavItem>
+          <MastNavItem to="/viewings/">Viewing Log</MastNavItem>
+          <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
+        </ul>
+        <button
+          type="button"
+          ref={navButtonEl}
+          className={styles.mast_nav_menu_button}
+          aria-label="Toggle Full Navigation"
+          onClick={() => dispatch({ type: actions.TOGGLE_NAV })}
+        >
+          {state.navVisible ? <CloseIcon /> : <MenuIcon />}
+        </button>
+      </nav>
+      <div id="content" className={styles.children}>
+        {children}
+      </div>
       <footer className={styles.footer}>
         <ul className={styles.footer_nav_list}>
           <FooterNavItem to="/">Home</FooterNavItem>
@@ -361,7 +344,7 @@ function Layout({ children }) {
             Fair Use Law.
           </a>
         </p>
-        <a href="#site-header" className={styles.footer_to_the_top}>
+        <a href="#top" className={styles.footer_to_the_top}>
           To the top ↑
         </a>
       </footer>

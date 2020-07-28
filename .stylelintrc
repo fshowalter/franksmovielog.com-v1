@@ -1,0 +1,25 @@
+---
+plugins:
+- stylelint-order
+extends:
+- stylelint-config-recommended
+- stylelint-config-sass-guidelines
+- stylelint-config-prettier
+rules:
+  order/properties-alphabetical-order: true
+  property-no-unknown:
+  - true
+  - ignoreProperties:
+   # CSS Modules composition
+   # https://github.com/css-modules/css-modules#composition
+    - composes
+  scss/dollar-variable-pattern: "^[_]?[a-z]+([a-z0-9_]+[a-z0-9]+)?$"
+  selector-class-pattern:
+  - "^[a-z0-9\\_]+$"
+  - message: Selector should be written in lowercase with underscores (selector-class-pattern)
+  selector-pseudo-class-no-unknown:
+  - true
+  - ignorePseudoClasses:
+    # CSS Modules :global scope
+    # https://github.com/css-modules/css-modules#exceptions
+    - global

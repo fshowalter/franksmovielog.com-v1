@@ -110,16 +110,15 @@ PostListItem.propTypes = {
   }).isRequired,
 };
 
-function ReviewListItem({
-  isLast,
+function ReviewArticle({
+  className,
   review,
   movies,
-  index,
-  value,
   allCast,
   watchlistTitles,
   directors,
 }) {
+  console.log(className);
   const movie = movies.find(
     (item) => item.imdb_id === review.frontmatter.imdb_id
   );
@@ -129,24 +128,16 @@ function ReviewListItem({
   );
 
   return (
-    <li
-      className={`${styles.list_item} ${
-        index === 0 ? styles.list_item_first : ""
-      }  ${isLast ? styles.list_item_last : ""}`}
-      value={value}
-    >
+    <article className={className}>
       <Link
         className={styles.list_item_image_link}
         to={`/reviews/${review.frontmatter.slug}/`}
       >
         <Img
-          className={styles.list_item_image}
-          fluid={{
-            ...review.backdrop.childImageSharp.fluid,
-            sizes:
-              "(min-width: 1000px) 456px, (min-width: 660px) 580px, calc(95vw - 28px)",
-          }}
-          alt={`A still from ${movie.title} (${movie.year})`}
+          className={styles.list_item_poster}
+          fixed={review.poster.childImageSharp.fixed}
+          width="70"
+          alt={`A poster from ${movie.title} (${movie.year})`}
         />
       </Link>
       <h2 className={styles.list_item_heading}>
@@ -157,19 +148,14 @@ function ReviewListItem({
           </span>
         </ReviewLink>
       </h2>
-      <Grade
-        grade={review.frontmatter.grade}
-        className={styles.list_item_grade}
-      />
-      <p className={styles.list_item_review_meta}>
-        Directed by {toSentenceArray(directors)}. Starring{" "}
-        <CastList
-          principalCastIds={movie.principal_cast_ids}
-          allCast={allCast}
-        />
-        .
-      </p>
-      <div
+      <div className={styles.list_item_slug}>
+        <Grade
+          grade={review.frontmatter.grade}
+          className={styles.list_item_grade}
+        />{" "}
+        on {review.frontmatter.date}
+      </div>
+      <main
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: stripFootnotes(review.firstParagraph),
@@ -184,20 +170,70 @@ function ReviewListItem({
           Continue Reading
         </Link>
       )}
-      <div className={styles.list_item_footer}>
-        <div className={styles.list_item_date}>
-          <DateIcon />
-          {review.frontmatter.date}
-        </div>
+      <footer className={styles.list_item_footer}>
         <WatchlistLinks watchlistTitle={watchlistTitle} />
-      </div>
+      </footer>
+    </article>
+  );
+}
+
+ReviewArticle.propTypes = {
+  className: PropTypes.string.isRequired,
+  movies: PropTypes.arrayOf(Movie).isRequired,
+  watchlistTitles: PropTypes.arrayOf(WatchlistTitle).isRequired,
+  allCast: PropTypes.arrayOf(
+    PropTypes.shape({
+      person_imdb_id: PropTypes.string,
+      name: PropTypes.string,
+    })
+  ).isRequired,
+  directors: PropTypes.arrayOf(PropTypes.string).isRequired,
+  review: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      imdb_id: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      grade: PropTypes.string.isRequired,
+      slug: PropTypes.string.isRequired,
+      sequence: PropTypes.number.isRequired,
+    }).isRequired,
+    backdrop: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape({
+          src: PropTypes.string.isRequired,
+        }),
+      }),
+    }).isRequired,
+    firstParagraph: PropTypes.string.isRequired,
+    numberOfParagraphs: PropTypes.number.isRequired,
+  }).isRequired,
+};
+
+function ReviewListItem({
+  className,
+  review,
+  movies,
+  value,
+  allCast,
+  watchlistTitles,
+  directors,
+}) {
+  return (
+    <li className={`${styles.list_item} ${className}`} value={value}>
+      <ReviewArticle
+        className={`${styles.review}`}
+        value={value}
+        review={review}
+        directors={directors}
+        movies={movies}
+        allCast={allCast}
+        watchlistTitles={watchlistTitles}
+      />
     </li>
   );
 }
 
 ReviewListItem.propTypes = {
-  isLast: PropTypes.bool,
-  index: PropTypes.number.isRequired,
+  className: PropTypes.string,
   value: PropTypes.number.isRequired,
   movies: PropTypes.arrayOf(Movie).isRequired,
   watchlistTitles: PropTypes.arrayOf(WatchlistTitle).isRequired,
@@ -229,10 +265,39 @@ ReviewListItem.propTypes = {
 };
 
 ReviewListItem.defaultProps = {
-  isLast: false,
+  className: null,
 };
 
 export default function HomeTemplate({ pageContext, data }) {
+  // const isFirstPage = pageContext.currentPage === 1;
+  // const posts = isFirstPage
+  //   ? data.updates.nodes.slice(1, data.updates.nodes.length)
+  //   : data.updates.nodes;
+
+  // let firstPost;
+
+  // if (isFirstPage && posts[0].postType === "review") {
+  //   const directors = data.director.nodes
+  //     .filter((director) => {
+  //       return director.movie_imdb_id === posts[0].frontmatter.imdb_id;
+  //     })
+  //     .map((director) => director.name);
+
+  //   firstPost = (
+  //     <>
+  //       <h2 className={styles.latest_heading}>Latest</h2>
+  //       <ReviewArticle
+  //         className={`${styles.review} ${styles.latest_article}`}
+  //         review={data.updates.nodes[0]}
+  //         directors={directors}
+  //         movies={data.movie.nodes}
+  //         allCast={data.cast.nodes}
+  //         watchlistTitles={data.watchlistTitle.nodes}
+  //       />
+  //     </>
+  //   );
+  // }
+
   return (
     <Layout>
       <main className={styles.container}>
@@ -241,13 +306,13 @@ export default function HomeTemplate({ pageContext, data }) {
             const listItemValue =
               data.updates.nodes.length - pageContext.skip - index;
 
-            let isLast;
+            // let renderWide;
 
-            if (Math.abs(data.updates.nodes.length % 2) === 1) {
-              isLast = false;
-            } else {
-              isLast = index + 1 === data.updates.nodes.length;
-            }
+            // if (Math.abs(posts.length % 2) === 0) {
+            //   renderWide = false;
+            // } else {
+            //   renderWide = index + 1 === posts.length;
+            // }
 
             if (update.postType === "review") {
               const directors = data.director.nodes
@@ -258,8 +323,6 @@ export default function HomeTemplate({ pageContext, data }) {
 
               return (
                 <ReviewListItem
-                  isLast={isLast}
-                  index={index}
                   review={update}
                   directors={directors}
                   movies={data.movie.nodes}
@@ -347,7 +410,7 @@ export const pageQuery = graphql`
       nodes {
         postType
         frontmatter {
-          date(formatString: "DD MMM YYYY")
+          date(formatString: "DD MMM, YYYY")
           grade
           slug
           title
@@ -359,6 +422,13 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(toFormat: JPG, jpegQuality: 75 ) {
               ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        poster {
+          childImageSharp {
+            fixed(jpegQuality: 75, width: 70 ) {
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }
