@@ -1,21 +1,25 @@
+@import "./src/styles/breakpoints";
+
 .container {
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     background-color: var(--color-content-background);
+    column-gap: var(--step-1);
     display: grid;
-    grid-template-columns: 1fr var(--step-1) 1.25fr;
+    grid-template-areas: "left right";
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "left . right";
   }
 }
 
 .left {
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     grid-area: left;
+    max-width: 330px;
   }
 }
 
 .right {
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     grid-area: right;
   }
 }
@@ -34,6 +38,10 @@
 
 .filters {
   composes: card from "../styles/filters.scss";
+
+  @media (min-width: $breakpoint_desktop) {
+    padding: 0;
+  }
 }
 
 .filters_fieldset {

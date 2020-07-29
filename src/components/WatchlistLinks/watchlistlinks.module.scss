@@ -3,12 +3,12 @@
 }
 
 .container {
+  color: var(--color-text-secondary);
   display: flex;
   flex-wrap: wrap;
-  font-family: var(--font-sans);
-  font-size: 14px;
+  font-family: "PT Sans";
+  font-size: 16px;
   font-weight: 300;
-  color: var(--color-text-secondary);
   padding: 0;
   width: 50%;
 }

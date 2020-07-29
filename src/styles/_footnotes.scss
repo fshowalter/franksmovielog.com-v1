@@ -1,0 +1,18 @@
+.footnotes {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: 300;
+
+  ol {
+    list-style-type: decimal;
+    margin-left: 1rem;
+  }
+
+  li {
+    display: block;
+  }
+
+  p {
+    display: inline;
+  }
+}

@@ -197,96 +197,98 @@ function Layout({ children }) {
   const searchButtonEl = useRef(null);
   const responsiveBreaks = useRef([]);
 
-  useLayoutEffect(() => {
-    if (state.navVisible) {
-      return () => {};
-    }
+  // useLayoutEffect(() => {
+  //   if (state.navVisible) {
+  //     return () => {};
+  //   }
 
-    const debouncedHandleResize = debounce(function handleResize() {
-      updateNavBar({
-        navBarEl: navBarEl.current,
-        navButtonEl: navButtonEl.current,
-        navListEl: navListEl.current,
-        responsiveBreaks: responsiveBreaks.current,
-        searchButtonEl: searchButtonEl.current,
-      });
-    }, 50);
+  //   const debouncedHandleResize = debounce(function handleResize() {
+  //     updateNavBar({
+  //       navBarEl: navBarEl.current,
+  //       navButtonEl: navButtonEl.current,
+  //       navListEl: navListEl.current,
+  //       responsiveBreaks: responsiveBreaks.current,
+  //       searchButtonEl: searchButtonEl.current,
+  //     });
+  //   }, 50);
 
-    window.addEventListener("resize", debouncedHandleResize);
+  //   window.addEventListener("resize", debouncedHandleResize);
 
-    debouncedHandleResize();
+  //   debouncedHandleResize();
 
-    return () => {
-      window.removeEventListener("resize", debouncedHandleResize);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("resize", debouncedHandleResize);
+  //   };
+  // });
 
   return (
-    <div
-      id="top"
-      className={`${styles.container} ${
-        state.navVisible ? styles.mast_nav_visible : ""
-      } ${state.searchVisible ? styles.mast_nav_search_visible : ""}`}
-    >
-      <Helmet>
-        <html lang="en-us" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1"
-        />
-      </Helmet>
+    <div className={styles.outer}>
       <a className={styles.skip_link} href="#content">
         Skip to content
       </a>
-      <header className={styles.mast_header}>
-        <div className={styles.mast_logo}>
-          <h1 className={styles.mast_title}>
-            <Link href="/">Frank&apos;s Movie Log</Link>
-          </h1>
-          <p className={styles.mast_tagline}>My life at the movies.</p>
-        </div>
-        <form
-          action="https://www.google.com/search"
-          acceptCharset="UTF-8"
-          method="get"
-          role="search"
-          className={styles.mast_search_form}
-        >
-          <label htmlFor="search" className={styles.mast_search_wrap}>
-            <span className={styles.mast_search_label}>Search</span>
-            <input
-              type="text"
-              className={styles.mast_search_input}
-              name="q"
-              id="search"
-              placeholder="Search..."
-            />
-            <input
-              type="hidden"
-              name="q"
-              value="site:movielog.frankshowalter.com"
-            />
-            <button
-              type="submit"
-              className={styles.mast_search_submit}
-              value="Search"
-            >
-              <SearchIcon />
-            </button>
-          </label>
-        </form>
-      </header>
-      <nav ref={navBarEl} className={styles.mast_nav}>
-        <h2 className={styles.mast_nav_heading}>Navigation</h2>
-        <ul ref={navListEl} className={styles.mast_nav_list}>
-          <MastNavItem to="/">Home</MastNavItem>
-          <MastNavItem to="/about/">About</MastNavItem>
-          <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
-          <MastNavItem to="/reviews/">All Reviews</MastNavItem>
-          <MastNavItem to="/viewings/">Viewing Log</MastNavItem>
-          <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
-        </ul>
-        <button
+      <div
+        id="top"
+        className={`${styles.container} ${
+          state.navVisible ? styles.mast_nav_visible : ""
+        } ${state.searchVisible ? styles.mast_nav_search_visible : ""}`}
+      >
+        <Helmet>
+          <html lang="en-us" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1"
+          />
+        </Helmet>
+
+        <header className={styles.mast_header}>
+          <div className={styles.mast_logo}>
+            <h1 className={styles.mast_title}>
+              <Link href="/">Frank&apos;s Movie Log</Link>
+            </h1>
+            <p className={styles.mast_tagline}>My life at the movies.</p>
+          </div>
+          <form
+            action="https://www.google.com/search"
+            acceptCharset="UTF-8"
+            method="get"
+            role="search"
+            className={styles.mast_search_form}
+          >
+            <label htmlFor="search" className={styles.mast_search_wrap}>
+              <span className={styles.mast_search_label}>Search</span>
+              <input
+                type="text"
+                className={styles.mast_search_input}
+                name="q"
+                id="search"
+                placeholder="Search..."
+              />
+              <input
+                type="hidden"
+                name="q"
+                value="site:movielog.frankshowalter.com"
+              />
+              <button
+                type="submit"
+                className={styles.mast_search_submit}
+                value="Search"
+              >
+                <SearchIcon />
+              </button>
+            </label>
+          </form>
+        </header>
+        <nav ref={navBarEl} className={styles.mast_nav}>
+          {/* <h2 className={styles.mast_nav_heading}>Navigation</h2> */}
+          <ul ref={navListEl} className={styles.mast_nav_list}>
+            <MastNavItem to="/">Home</MastNavItem>
+            <MastNavItem to="/about/">About</MastNavItem>
+            <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
+            <MastNavItem to="/reviews/">All Reviews</MastNavItem>
+            <MastNavItem to="/viewings/">Viewing Log</MastNavItem>
+            <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
+          </ul>
+          {/* <button
           type="button"
           ref={navButtonEl}
           className={styles.mast_nav_menu_button}
@@ -294,10 +296,11 @@ function Layout({ children }) {
           onClick={() => dispatch({ type: actions.TOGGLE_NAV })}
         >
           {state.navVisible ? <CloseIcon /> : <MenuIcon />}
-        </button>
-      </nav>
-      <div id="content" className={styles.children}>
-        {children}
+        </button> */}
+        </nav>
+        <div id="content" className={styles.children}>
+          {children}
+        </div>
       </div>
       <footer className={styles.footer}>
         <ul className={styles.footer_nav_list}>
@@ -308,36 +311,6 @@ function Layout({ children }) {
           <FooterNavItem to="/viewings/">Viewing Log</FooterNavItem>
           <FooterNavItem to="/watchlist/">Watchlist</FooterNavItem>
         </ul>
-        <form
-          action="https://www.google.com/search"
-          acceptCharset="UTF-8"
-          method="get"
-          role="search"
-          className={styles.footer_search_form}
-        >
-          <label htmlFor="search" className={styles.footer_search_wrap}>
-            <span className={styles.footer_search_label}>Search</span>
-            <input
-              type="text"
-              className={styles.footer_search_input}
-              name="q"
-              id="search"
-              placeholder="Search..."
-            />
-            <input
-              type="hidden"
-              name="q"
-              value="site:movielog.frankshowalter.com"
-            />
-            <button
-              type="submit"
-              className={styles.footer_search_submit}
-              value="Search"
-            >
-              <SearchIcon />
-            </button>
-          </label>
-        </form>
         <p className={styles.footer_fair_use}>
           All stills used in accordance with the{" "}
           <a href="http://www.copyright.gov/title17/92chap1.html#107">

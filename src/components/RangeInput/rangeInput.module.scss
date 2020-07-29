@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-flow: row wrap;
+  font-family: "PT Sans";
   justify-content: space-between;
 }
 
@@ -22,11 +23,15 @@
   transform: scale(1.25);
 }
 
+.to {
+  font-family: "PT Sans";
+}
+
 .slider {
   flex: 1 100%;
   height: var(--step-2);
-  width: 100%;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .track {
@@ -44,7 +49,7 @@
   border: 0;
   box-sizing: content-box;
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
+  font-family: "PT Sans";
   font-size: var(--step--2);
   padding: 0;
 

@@ -71,7 +71,7 @@ export default function RangeFilter({ id, min, max, onChange }) {
         onChange={(e) => handleMinChange(e.target.value)}
         className={styles.year_input}
       />
-      &nbsp;to&nbsp;
+      <span className={styles.to}> to </span>
       <input
         type="number"
         value={state[1]}

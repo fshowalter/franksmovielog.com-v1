@@ -1,39 +1,46 @@
 .label {
-  font-size: clamp(14px, 5vw, 15px);
   color: var(--color-text-secondary);
   display: flex;
   flex-direction: column;
+  font-family: "PT Sans";
+  font-size: clamp(14px, 5vw, 15px);
+  font-weight: 700;
   margin-top: var(--step-0);
 }
 
 .input {
-  padding: calc(var(--step--2) / 2) 0;
+  appearance: none;
   border: 0;
   border-radius: 0;
-  appearance: none;
+  font-family: "PT Sans";
   font-size: 14px;
+  padding: calc(var(--step--2) / 2) 0;
 }
 
 .text_input {
-  composes: input;
   border-bottom: solid 1px var(--color-background);
+  composes: input;
 }
 
 .select_input {
-  composes: input;
-  color: var(--color-link);
   background-color: transparent;
+  color: var(--color-link);
+  composes: input;
+  font-family: "PT Sans";
+  font-size: 16px;
 }
 
 .fieldset {
   border: solid 1px var(--color-background);
+  color: var(--color-text-secondary);
+  font-family: "PT Sans";
   font-size: var(--step-1);
 }
 
 .card {
-  border-top: solid 1px var(--color-background);
-  border-bottom: solid 1px darken(#e9e7e0, 5);
   background-color: var(--color-content-background);
+  border-bottom: solid 1px darken(#e9e7e0, 5);
+  border-top: solid 1px var(--color-background);
   padding: var(--step-5) var(--step-1);
 
   @media (min-width: 1000px) {
@@ -43,9 +50,10 @@
 }
 
 .toggle_button {
-  margin-top: var(--step-0);
-  font-size: clamp(14px, 5vw, 15px);
   border: solid 1px var(--color-background);
-  padding: calc(var(--step--2) / 2) var(--step--2);
   color: var(--color-link);
+  font-family: "PT Sans";
+  font-size: clamp(14px, 5vw, 15px);
+  margin-top: var(--step-0);
+  padding: calc(var(--step--2) / 2) var(--step--2);
 }

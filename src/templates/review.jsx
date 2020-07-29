@@ -77,45 +77,43 @@ export default function Review({ data }) {
       <article className={styles.container}>
         <Img
           className={styles.image}
-          fluid={{
-            ...review.poster.childImageSharp.fluid,
-            sizes: "(min-width: 1060px) 1000px, calc(94.59vw + 16px)",
-          }}
+          fluid={review.poster.childImageSharp.fluid}
           alt={`A still from ${movie.title} (${movie.year})`}
         />
-        <div className={styles.content}>
+        <div className={styles.movie_meta}>
           <h1 className={styles.title}>
             {movie.title}{" "}
             <span className={styles.title_year}>{movie.year}</span>
           </h1>
-          <aside className={styles.meta}>
-            <span className={styles.cast_label}>Directed by </span>
+          <aside className={styles.cast_and_crew}>
+            <span className={styles.cast_label}>Directed by</span>
             {toSentenceArray(
               data.director.nodes.map((director) => director.name)
             )}
-            {". "}
-            <span className={styles.cast_label}>Starring </span>
+            <span className={styles.cast_label}>Starring</span>
             <CastList
               principalCastIds={movie.principal_cast_ids}
               allCast={data.cast.nodes}
             />
-            .
             {watchlistTitle && (
               <div className={styles.watchlist}>
                 <WatchlistLinks watchlistTitle={watchlistTitle} />
               </div>
             )}
           </aside>
-          <Grade grade={review.frontmatter.grade} className={styles.grade} />
-          <div
-            className={styles.body}
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{
-              __html: review.html,
-            }}
-          />
-          <ReviewDate review={review} />
         </div>
+        <div className={styles.slug}>
+          <Grade grade={review.frontmatter.grade} className={styles.grade} />
+          on {review.frontmatter.date} via {review.frontmatter.venue} (
+          {review.frontmatter.venue_notes})
+        </div>
+        <div
+          className={styles.body}
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: review.html,
+          }}
+        />
       </article>
     </Layout>
   );
@@ -211,7 +209,7 @@ export const pageQuery = graphql`
         }
         poster {
           childImageSharp {
-            fluid(toFormat: JPG, jpegQuality: 75) {
+            fluid(jpegQuality: 75) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

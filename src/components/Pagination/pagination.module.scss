@@ -1,25 +1,38 @@
+@import "./src/styles/breakpoints";
+
 .header {
+  background-color: darken(#fff, 2);
+  border: solid 1px var(--color-background);
+  color: var(--color-text-secondary);
+  font-family: "PT Sans";
+  font-size: clamp(15px, 4vw, 16px);
+  font-weight: 300;
+  margin-top: var(--step-5);
   padding: var(--step-1) var(--step-1);
   text-align: center;
-  font-size: clamp(15px, 4vw, 16px);
-  font-family: var(--font-sans);
-  font-weight: 300;
-  color: var(--color-text-secondary);
 }
 
 .container {
-  padding: var(--step-1) var(--step-1) var(--step-5) var(--step-1);
+  align-items: baseline;
   display: flex;
   flex-wrap: wrap;
-  font-size: 16px;
-  white-space: nowrap;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-top: var(--step-1);
+  font-family: "PT Sans";
   font-feature-settings: "tnum";
+  font-size: 18px;
+  justify-content: space-between;
+  margin-top: var(--step-1);
+  padding: var(--step-1) var(--step-1) var(--step-5) var(--step-1);
+  white-space: nowrap;
+
+  @media (min-width: $breakpoint_desktop) {
+    background-color: darken(#fff, 2);
+    border: solid 1px var(--color-background);
+    margin: 0 0 var(--step-5);
+    padding: var(--step-1);
+  }
 }
 
-.pagination-link {
+.pagination_link {
   color: var(--color-link);
 }
 
@@ -30,24 +43,24 @@
 .current_page,
 .elipsis {
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
-  padding: calc(var(--step--2) / 2);
+  font-family: "PT Sans";
   font-weight: 300;
+  padding: calc(var(--step--2) / 2);
 }
 
 .button {
   appearance: none;
-  background-color: rgba(239, 239, 239, 1);
-  border: solid 1px darken(#e9e7e0, 5);
-  font-family: var(--font-sans);
-  font-size: 16px;
-  padding: calc(var(--step--2) / 2);
-  font-weight: 300;
+  background-color: darken(#fff, 2);
+  border: solid 1px var(--color-background);
   color: var(--color-link);
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 300;
+  padding: calc(var(--step--2) / 2);
 
-  @media (min-width: 1000px) {
-    border: 0;
+  @media (min-width: $breakpoint_desktop) {
     background-color: transparent;
+    border: 0;
   }
 }
 
@@ -55,7 +68,7 @@
   background-color: rgba(239, 239, 239, 0.3);
   color: rgba(16, 16, 16, 0.3);
 
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     background-color: transparent;
   }
 }

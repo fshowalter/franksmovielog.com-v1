@@ -118,7 +118,7 @@ function ReviewArticle({
   watchlistTitles,
   directors,
 }) {
-  console.log(className);
+  console.log(review);
   const movie = movies.find(
     (item) => item.imdb_id === review.frontmatter.imdb_id
   );
@@ -129,50 +129,49 @@ function ReviewArticle({
 
   return (
     <article className={className}>
-      <Link
-        className={styles.list_item_image_link}
-        to={`/reviews/${review.frontmatter.slug}/`}
-      >
-        <Img
-          className={styles.list_item_poster}
-          fixed={review.poster.childImageSharp.fixed}
-          width="70"
-          alt={`A poster from ${movie.title} (${movie.year})`}
-        />
-      </Link>
-      <h2 className={styles.list_item_heading}>
-        <ReviewLink imdbId={review.frontmatter.imdb_id}>
-          {movie.title}{" "}
-          <span className={styles.list_item_heading_review_year}>
-            {movie.year}
-          </span>
-        </ReviewLink>
-      </h2>
-      <div className={styles.list_item_slug}>
-        <Grade
-          grade={review.frontmatter.grade}
-          className={styles.list_item_grade}
-        />{" "}
-        on {review.frontmatter.date}
+      <div className={styles.list_item_date}>
+        <span className={styles.review_sequence}>
+          #{review.frontmatter.sequence}
+        </span>
+        {" on "}
+        {review.frontmatter.date}
       </div>
-      <main
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{
-          __html: stripFootnotes(review.firstParagraph),
-        }}
-        className={styles.list_item_excerpt}
-      />
-      {review.numberOfParagraphs > 1 && (
+      <div className={styles.list_item_content}>
         <Link
-          className={styles.list_item_continue_reading}
+          className={styles.list_item_image_link}
           to={`/reviews/${review.frontmatter.slug}/`}
         >
-          Continue Reading
+          <Img
+            className={styles.list_item_poster}
+            fixed={review.poster.childImageSharp.fixed}
+            width="70"
+            alt={`A poster from ${movie.title} (${movie.year})`}
+          />
         </Link>
-      )}
-      <footer className={styles.list_item_footer}>
-        <WatchlistLinks watchlistTitle={watchlistTitle} />
-      </footer>
+        <h2 className={styles.list_item_heading}>
+          <ReviewLink imdbId={review.frontmatter.imdb_id}>
+            {movie.title}{" "}
+            <span className={styles.list_item_heading_review_year}>
+              {movie.year}
+            </span>
+          </ReviewLink>
+        </h2>
+        <Grade
+          grade={review.frontmatter.grade}
+          className={styles.review_grade}
+        />{" "}
+        <span className={styles.post_date} />
+        <main
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: review.html,
+          }}
+          className={styles.list_item_excerpt}
+        />
+        <footer className={styles.list_item_footer}>
+          <WatchlistLinks watchlistTitle={watchlistTitle} />
+        </footer>
+      </div>
     </article>
   );
 }
@@ -427,12 +426,12 @@ export const pageQuery = graphql`
         }
         poster {
           childImageSharp {
-            fixed(jpegQuality: 75, width: 70 ) {
+            fixed(jpegQuality: 75, width: 100, height: 150 ) {
               ...GatsbyImageSharpFixed_withWebp
             }
           }
         }
-        firstParagraph
+        html
         numberOfParagraphs
       }
     }
