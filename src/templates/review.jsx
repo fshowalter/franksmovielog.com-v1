@@ -102,18 +102,20 @@ export default function Review({ data }) {
             )}
           </aside>
         </div>
-        <div className={styles.slug}>
-          <Grade grade={review.frontmatter.grade} className={styles.grade} />
-          on {review.frontmatter.date} via {review.frontmatter.venue} (
-          {review.frontmatter.venue_notes})
+        <div className={styles.review}>
+          <div className={styles.slug}>
+            <Grade grade={review.frontmatter.grade} className={styles.grade} />
+            on {review.frontmatter.date} via {review.frontmatter.venue} (
+            {review.frontmatter.venue_notes}) (#{review.frontmatter.sequence})
+          </div>
+          <div
+            className={styles.body}
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: review.html,
+            }}
+          />
         </div>
-        <div
-          className={styles.body}
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{
-            __html: review.html,
-          }}
-        />
       </article>
     </Layout>
   );
