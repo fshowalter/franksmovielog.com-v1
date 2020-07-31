@@ -13,9 +13,9 @@
 
 .list_item {
   background-color: darken(#fff, 2);
-  border: solid 1px var(--color-background);
+  border: solid 1px darken(#e9e7e0, 10); //var(--color-background);
   border-radius: 0.25rem;
   margin-left: 0.75rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   white-space: nowrap;
 }

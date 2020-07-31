@@ -5,7 +5,7 @@
   // margin: 0 var(--step-1);
 
   // @media (min-width: $breakpoint_desktop) {
-  //   background-color: var(--color-content-background);
+  //   border-top: solid 1px var(--color-background);
   // }
 }
 
@@ -74,11 +74,13 @@
 // }
 
 .list {
+  // display: grid;
+  // grid-gap: calc(2 * var(--step-1));
+  // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: var(--step-5);
-  margin-top: var(--step-5);
 
   // max-width: 640px;
 
@@ -88,40 +90,60 @@
 }
 
 .list_item {
-  background-color: var(--color-content-background);
+  background-color: darken(#fff, 0.5);
   border-top: solid 1px var(--color-background);
   display: flex;
   flex-direction: column;
-  // border-top: solid 1px darken(#e9e7e0, 5);
-  // margin-top: var(--step-5);
-  padding: 1.5rem 0;
-  width: 50%;
+  // // border-top: solid 1px darken(#e9e7e0, 5);
+  margin-top: var(--step-5);
+  max-width: calc((2 * var(--step-1)) + 60ch);
+  padding: 1.5rem var(--step-1);
 
-  &:nth-child(even) {
-    padding-right: var(--step-1);
-  }
+  @media (min-width: $breakpoint_desktop) {
+    max-width: none;
+    padding: 1.5rem 0;
+    width: 50%;
 
-  &:nth-child(odd) {
-    padding-left: var(--step-1);
-  }
+    &:nth-child(even) {
+      padding-right: var(--step-1);
+    }
 
-  &:first-of-type,
-  &:nth-last-child(1):nth-child(even) {
-    column-gap: calc(2 * var(--step-1));
-    display: grid;
-    grid-template-areas: "title backdrop" "grade backdrop" "cast-and-crew backdrop" "review backdrop" "footer backdrop";
-    grid-template-columns: 1fr calc(50% - var(--step-1));
-    padding-right: 0;
-    width: 100%;
+    &:nth-child(odd) {
+      padding-left: var(--step-1);
+    }
 
-    .list_item_heading {
-      margin-top: 0;
+    &:first-of-type,
+    &:nth-last-child(1):nth-child(even) {
+      column-gap: calc(2 * var(--step-1));
+      display: grid;
+      // grid-column: span 2;
+      grid-template-areas: "title backdrop" "grade backdrop" "cast-and-crew backdrop" "review backdrop" "footer backdrop";
+      grid-template-columns: 1fr calc(50% - var(--step-1));
+      padding-right: 0;
+      width: 100%;
+
+      .list_item_heading {
+        margin-top: 0;
+      }
+
+      .list_item_image_link {
+        align-self: start;
+      }
+    }
+
+    @media (min-width: 80rem) {
+      padding-top: 2rem;
+    }
+
+    &:first-of-type {
+      border-top: 0;
+      padding-left: 0;
+      padding-top: 1rem;
     }
   }
 
   &:first-of-type {
-    border-top: 0;
-    padding-left: 0;
+    margin-top: 0;
   }
 
   // @media (min-width: $breakpoint_tablet) {
@@ -142,7 +164,7 @@
 .list_item_image_link {
   // align-self: start;
   // // width: 70px;
-  // border: 0.5em solid #e9e7e0;
+  border: 0.5em solid #e9e7e0;
   // border-radius: 0.25rem;
   // // border-radius: 4px;
   // float: left;

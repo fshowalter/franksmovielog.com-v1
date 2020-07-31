@@ -3,9 +3,22 @@
 @import "./src/styles/breakpoints";
 
 .outer {
-  background-color: darken(#fff, 0.5);
   margin: 0 auto;
-  max-width: clamp(1000px, 90vw, $breakpoint_max);
+  // background-color: darken(#fff, 0.5);
+  max-width: clamp(1000px, 95vw, $breakpoint_max);
+  position: relative;
+
+  &::before {
+    background: #202020 url("/assets/ripnotcomingsoon.jpg") repeat;
+    content: "\0020";
+    display: block;
+    height: 1rem;
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    background-color: darken(#fff, 0.5);
+  }
 }
 
 .container {
@@ -19,6 +32,17 @@
 
   @media (min-width: $breakpoint_desktop) {
     padding-top: var(--step-1);
+  }
+
+  @media (min-width: 80rem) {
+    align-items: start;
+    column-gap: calc(2 * var(--step-1));
+    display: grid;
+    grid-template-areas: "children header" "children nav";
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: auto 1fr;
+    max-width: none;
+    padding: var(--step-1);
   }
 
   // &.mast_nav_visible {
@@ -61,7 +85,6 @@
 .mast_header {
   align-items: center;
   display: flex;
-  flex: 0 0 content;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: -1.5rem;
@@ -69,7 +92,14 @@
   width: 100%;
 
   @media (min-width: $breakpoint_desktop) {
-    padding-bottom: var(--step-5);
+    margin-bottom: 0;
+    padding-bottom: var(--step-1);
+  }
+
+  @media (min-width: 80rem) {
+    grid-area: header;
+    margin-top: calc(var(--step-5) - var(--step-1));
+    padding: 1rem 0 var(--step-1);
   }
 }
 
@@ -103,6 +133,10 @@
   grid-area: title;
   line-height: 1;
   white-space: nowrap;
+
+  @media (min-width: 80rem) {
+    font-size: var(--step-1);
+  }
 }
 
 .mast_tagline {
@@ -115,8 +149,8 @@
 .mast_nav {
   width: 100%;
 
-  @media (min-width: $breakpoint_tablet) {
-    // border-top: solid 1px var(--color-background);
+  @media (min-width: 80rem) {
+    grid-area: nav;
   }
 }
 // background-color: #222;
@@ -167,6 +201,18 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $breakpoint_desktop) {
+    border-bottom: solid 1px var(--color-background);
+    padding-bottom: calc(var(--step-5) - var(--step-1));
+  }
+
+  @media (min-width: 80rem) {
+    border-bottom: 0;
+    flex-direction: column;
+    padding: 0;
+    width: 80%;
+  }
+
   // .mast_nav_visible & {
   //   background: transparent;
   //   display: flex;
@@ -190,18 +236,31 @@
 
 .mast_nav_list_item {
   background-color: darken(#fff, 2);
-  border: solid 1px var(--color-background);
+  // background-color: #222;
+  border: solid 1px darken(#e9e7e0, 10);
   border-radius: 0.25rem;
   color: var(--color-link);
+  // color: #fff;
   // border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: block;
 
-  line-height: var(--step-4);
+  // line-height: var(--step-4);
   margin-bottom: 1rem;
   margin-right: clamp(0.75rem, 2vw, var(--step-1));
-  padding: 0 var(--step-1);
+  padding: 0.5rem 1rem;
   position: relative;
   white-space: nowrap;
+
+  @media (min-width: 80rem) {
+    background-color: transparent;
+    border: 0;
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    color: var(--color-link);
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+  }
 
   @media (min-width: $breakpoint_tablet) {
     // background-color: transparent;
@@ -243,6 +302,15 @@
   //   font-size: 16px;
   //   letter-spacing: 1px;
   // }
+}
+
+.mast_nav_link {
+  @media (min-width: 80rem) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    display: block;
+    line-height: var(--step-5);
+    white-space: nowrap;
+  }
 }
 
 .mast_nav_link_active {
@@ -346,10 +414,10 @@
   display: flex;
   overflow: hidden;
 
-  .mast_nav_visible & {
-    border-color: darken(#e9e7e0, 10);
-    display: flex;
-  }
+  // .mast_nav_visible & {
+  //   border-color: darken(#e9e7e0, 10);
+  //   display: flex;
+  // }
 
   @media (min-width: $breakpoint_tablet) {
     align-items: stretch;
@@ -408,16 +476,17 @@
 
 .footer {
   align-items: center;
-  background-color: #202020;
+  background: #202020 url("/assets/ripnotcomingsoon.jpg") repeat;
   color: #d2d2d2;
   display: flex;
   flex-direction: column;
   font-family: "PT Sans";
   font-size: 16px;
   justify-content: space-between;
+  max-height: 175px;
   // max-height: 100px;
   // order: 4;
-  padding: var(--step-3) var(--step-1);
+  padding: var(--step-1);
   width: 100%;
 
   // @media (min-width: $breakpoint_max) {
@@ -429,12 +498,20 @@
 
 .children {
   flex: 1 0 auto;
+  margin-top: var(--step-5);
+
   // order: 3;
 
   @media (min-width: $breakpoint_desktop) {
     box-sizing: border-box;
+    margin-top: calc(var(--step-5) - var(--step-1));
     max-width: 1000px;
     padding: 0 var(--step-1);
+  }
+
+  @media (min-width: 80rem) {
+    grid-area: children;
+    padding: 0;
   }
 }
 
@@ -455,7 +532,7 @@
   // font-family: var(--font-sans);
   font-size: 13px;
   font-weight: 300;
-  margin-top: var(--step-5);
+  margin-top: 1.5rem;
 }
 
 .footer_search_form {

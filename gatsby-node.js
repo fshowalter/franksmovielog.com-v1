@@ -393,17 +393,39 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           type: "String",
           async resolve(source, args, context, info) {
             const type = info.schema.getType("MarkdownRemark");
-            const parentNode = context.nodeModel.getNodeById({
-              id: source.parent,
-            });
+            // const parentNode = context.nodeModel.getNodeById({
+            //   id: source.parent,
+            // });
             const resolver = type.getFields().html.resolve;
             const fieldName = "html";
-            const result = await resolver(source, args, context, {
+            let result = await resolver(source, args, context, {
               fieldName,
             });
             const re = RegExp('(<span data-imdb-id="(.*)">)(.*)(</span>)');
-            const matches = result.matchAll(re);
-            console.log([...matches]);
+            const matches = [...result.matchAll(re)];
+            // console.log(matches);
+
+            matches.forEach((match) => {
+              const review = context.nodeModel
+                .getAllNodes({
+                  type: `MarkdownRemark`,
+                })
+                .find(
+                  (reviewNode) => reviewNode.frontmatter.imdb_id === match[2]
+                );
+
+              if (!review) {
+                result = result.replace(
+                  `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
+                  match[3]
+                );
+              }
+
+              result = result.replace(
+                `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
+                `<a href="/reviews/${review.frontmatter.slug}/">${match[3]}</a>`
+              );
+            });
 
             return result;
           },
