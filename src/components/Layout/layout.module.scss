@@ -26,11 +26,11 @@
   flex-direction: column;
   justify-items: stretch;
   margin: 0 auto;
-  max-width: $breakpoint_desktop;
   min-height: 100vh;
   position: relative;
 
   @media (min-width: $breakpoint_desktop) {
+    max-width: $breakpoint_desktop;
     padding-top: var(--step-1);
   }
 
@@ -87,12 +87,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: -1.5rem;
+  margin: 0 auto -1.5rem;
+  max-width: calc(#{$breakpoint_tablet_wrap} + (2 * var(--step-1)));
   padding: var(--step-2) var(--step-1);
   width: 100%;
 
   @media (min-width: $breakpoint_desktop) {
     margin-bottom: 0;
+    max-width: $breakpoint_desktop;
     padding-bottom: var(--step-1);
   }
 
@@ -197,8 +199,12 @@
   white-space: nowrap;
 
   @media (min-width: $breakpoint_tablet) {
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    justify-content: flex-start;
   }
 
   @media (min-width: 80rem) {
@@ -505,13 +511,14 @@
 
 .children {
   flex: 1 0 auto;
-  margin-top: 1.5rem;
+  margin: 1.5rem auto 0;
+  max-width: $breakpoint_tablet_wrap;
 
   // order: 3;
 
   @media (min-width: $breakpoint_desktop) {
     box-sizing: border-box;
-    margin-top: calc(var(--step-5) - var(--step-1));
+    margin: calc(var(--step-5) - var(--step-1)) 0 0;
     max-width: 1000px;
     padding: 0 var(--step-1);
   }

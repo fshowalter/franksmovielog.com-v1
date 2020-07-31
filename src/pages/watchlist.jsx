@@ -97,8 +97,13 @@ function formatPeople(people, suffix) {
   }
 
   const names = people.map((person) => person.name);
+  let append = suffix;
 
-  return [`${toSentenceArray(names).join("")} ${suffix}`];
+  if (Array.isArray(suffix)) {
+    append = names.length > 1 ? suffix[1] : suffix[0];
+  }
+
+  return [`${toSentenceArray(names).join("")} ${append}`];
 }
 
 function formatCollections(collections) {
@@ -116,7 +121,10 @@ function WatchlistSlug({ title }) {
   const credits = [
     ...formatPeople(title.directors, "directed"),
     ...formatPeople(title.performers, "performed"),
-    ...formatPeople(title.writers, "has a writing credit"),
+    ...formatPeople(title.writers, [
+      "has a writing credit",
+      "have writing credits",
+    ]),
     ...formatCollections(title.collections),
   ];
 
@@ -403,7 +411,7 @@ function reducer(state, action) {
       };
     }
     case actions.SORT: {
-      filteredTitles = sortTitles(state.filteredTitles);
+      filteredTitles = sortTitles(state.filteredTitles, action.value);
       return {
         ...state,
         sortValue: action.value,
@@ -702,7 +710,7 @@ WatchlistPage.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    review: allMarkdownRemark(filter: { postType: { eq: "review" } }) {
+    review: allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
       nodes {
         frontmatter {
           imdb_id

@@ -1,10 +1,11 @@
+@import "./src/styles/breakpoints";
+
 .label {
   color: var(--color-text-secondary);
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans";
-  font-size: clamp(14px, 5vw, 15px);
-  font-weight: 700;
+  font-family: var(--font-sans);
+  font-size: 14px;
   margin-top: var(--step-0);
 }
 
@@ -12,7 +13,7 @@
   appearance: none;
   border: 0;
   border-radius: 0;
-  font-family: "PT Sans";
+  font-family: var(--font-sans);
   font-size: 14px;
   padding: calc(var(--step--2) / 2) 0;
 }
@@ -26,33 +27,34 @@
   background-color: transparent;
   color: var(--color-link);
   composes: input;
-  font-family: "PT Sans";
-  font-size: 16px;
+  font-family: var(--font-sans);
+  font-size: 15px;
 }
 
 .fieldset {
   border: solid 1px var(--color-background);
   color: var(--color-text-secondary);
-  font-family: "PT Sans";
   font-size: var(--step-1);
 }
 
 .card {
   background-color: var(--color-content-background);
   border-bottom: solid 1px darken(#e9e7e0, 5);
+  border-radius: 8px;
   border-top: solid 1px var(--color-background);
   padding: var(--step-5) var(--step-1);
 
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     border: 0;
     padding-top: 0;
   }
 }
 
 .toggle_button {
-  border: solid 1px var(--color-background);
+  border: solid 1px lighten(#054a93, 50);
+  border-radius: 4px;
   color: var(--color-link);
-  font-family: "PT Sans";
+  font-family: var(--font-sans);
   font-size: clamp(14px, 5vw, 15px);
   margin-top: var(--step-0);
   padding: calc(var(--step--2) / 2) var(--step--2);

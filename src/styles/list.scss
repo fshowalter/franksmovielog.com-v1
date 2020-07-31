@@ -28,8 +28,13 @@
   // }
 }
 
+.list_item_title_year {
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
 .list_item_title {
-  font-family: "PT Sans";
   font-size: 18px;
   padding: 1.5rem var(--step-1) 0.25rem 0;
 }
@@ -42,15 +47,9 @@
   }
 }
 
-.list_item_title_year {
-  color: var(--color-text-secondary);
-  font-family: "PT Sans";
-  font-size: 14px;
-}
-
 .list_item_slug {
   color: var(--color-text-secondary);
-  font-family: "PT Sans";
-  font-size: 16px;
+  font-family: var(--font-sans);
+  font-size: 14px;
   padding: 0 var(--step-1) 1.5rem 0;
 }

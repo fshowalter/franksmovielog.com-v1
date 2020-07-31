@@ -1,9 +1,11 @@
 @import "./src/styles/breakpoints";
 
 .header {
-  background-color: var(--color-content-background);
-  font-family: "PT Sans";
-  padding: var(--step-5) var(--step-1);
+  padding: 1.5rem var(--step-1);
+
+  @media (min-width: $breakpoint_desktop) {
+    padding-top: var(--step-5);
+  }
 }
 
 .heading {

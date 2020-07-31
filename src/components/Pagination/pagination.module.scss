@@ -1,16 +1,16 @@
 @import "./src/styles/breakpoints";
 
 .header {
-  background-color: darken(#fff, 2);
   border-bottom: solid 1px var(--color-background);
   color: var(--color-text-secondary);
-  font-family: "PT Sans";
+  font-family: var(--font-sans);
   font-size: clamp(15px, 4vw, 16px);
   font-weight: 300;
   padding: var(--step-1);
   text-align: center;
 
   @media (min-width: $breakpoint_desktop) {
+    background-color: darken(#fff, 2);
     border: solid 1px var(--color-background);
     margin-top: var(--step-5);
     padding: 1rem var(--step-1);
@@ -19,11 +19,10 @@
 
 .container {
   align-items: baseline;
-  background-color: darken(#fff, 2);
   border-top: solid 1px var(--color-background);
   display: flex;
   flex-wrap: wrap;
-  font-family: "PT Sans";
+  font-family: var(--font-sans);
   font-feature-settings: "tnum";
   font-size: 18px;
   justify-content: space-between;
@@ -49,7 +48,7 @@
 .current_page,
 .elipsis {
   color: var(--color-text-secondary);
-  font-family: "PT Sans";
+  font-family: var(--font-sans);
   font-weight: 300;
   padding: calc(var(--step--2) / 2);
 }
@@ -61,7 +60,7 @@
   // border: solid 1px var(--color-background);
   border: 0;
   color: var(--color-link);
-  font-family: "PT Sans";
+  font-family: var(--font-sans);
   font-size: 18px;
   font-weight: 300;
   padding: calc(var(--step--2) / 2);
