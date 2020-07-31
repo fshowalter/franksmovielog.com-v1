@@ -389,6 +389,25 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               .find((node) => node.absolutePath === posterPath);
           },
         },
+        linkedHtml: {
+          type: "String",
+          async resolve(source, args, context, info) {
+            const type = info.schema.getType("MarkdownRemark");
+            const parentNode = context.nodeModel.getNodeById({
+              id: source.parent,
+            });
+            const resolver = type.getFields().html.resolve;
+            const fieldName = "html";
+            const result = await resolver(source, args, context, {
+              fieldName,
+            });
+            const re = RegExp('(<span data-imdb-id="(.*)">)(.*)(</span>)');
+            const matches = result.matchAll(re);
+            console.log([...matches]);
+
+            return result;
+          },
+        },
       },
     }),
   ];

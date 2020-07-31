@@ -99,10 +99,7 @@
 }
 
 .mast_title {
-  color: var(--color-link);
-  font-family: "PT Sans";
-  font-size: 30px;
-  font-weight: 700;
+  font-size: var(--step-2);
   grid-area: title;
   line-height: 1;
   white-space: nowrap;
@@ -195,11 +192,10 @@
   background-color: darken(#fff, 2);
   border: solid 1px var(--color-background);
   border-radius: 0.25rem;
-  // border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   color: var(--color-link);
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: block;
-  // color: #fff;
-  font-family: "PT Sans";
+
   line-height: var(--step-4);
   margin-bottom: 1rem;
   margin-right: clamp(0.75rem, 2vw, var(--step-1));
@@ -208,31 +204,31 @@
   white-space: nowrap;
 
   @media (min-width: $breakpoint_tablet) {
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    border-right: solid 1px var(--color-background);
-    border-top: solid 1px var(--color-background);
-    margin: 0;
-    padding-right: var(--step-1);
+    // background-color: transparent;
+    // border: 0;
+    // border-radius: 0;
+    // border-right: solid 1px var(--color-background);
+    // border-top: solid 1px var(--color-background);
+    // margin: 0;
+    // padding-right: var(--step-1);
 
-    &:first-of-type {
-      border-left: solid 1px var(--color-background);
-      border-top-left-radius: 0.25rem;
-      margin-left: calc(-1 * var(--step-1));
-      padding-left: var(--step-1);
-    }
+    // &:first-of-type {
+    //   border-left: solid 1px var(--color-background);
+    //   border-top-left-radius: 0.25rem;
+    //   margin-left: calc(-1 * var(--step-1));
+    //   padding-left: var(--step-1);
+    // }
 
-    &:last-of-type {
-      border-top-right-radius: 0.25rem;
-    }
+    // &:last-of-type {
+    //   border-top-right-radius: 0.25rem;
+    // }
 
-    @media (min-width: $breakpoint_desktop) {
-      &:first-of-type {
-        margin-left: 0;
-        // padding-left: var(--step-1);
-      }
-    }
+    // @media (min-width: $breakpoint_desktop) {
+    //   &:first-of-type {
+    //     margin-left: 0;
+    //     // padding-left: var(--step-1);
+    //   }
+    // }
   }
 
   // .mast_nav_visible & {

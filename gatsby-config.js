@@ -56,19 +56,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
-          `gatsby-remark-smartypants`,
-          // {
-          //   resolve: `remark-footnotes`,
-          //   options: {
-          //     inlineNotes: true,
-          //   },
-          // },
-        ],
+        extensions: [`.md`, `.mdx`],
+        remarkPlugins: [require("remark-smartypants")],
       },
     },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       `gatsby-remark-smartypants`,
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

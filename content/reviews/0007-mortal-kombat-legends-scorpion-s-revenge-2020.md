@@ -9,4 +9,4 @@ venue: Amazon Streaming
 venue_notes: WB Animation 1080p
 ---
 
-Animated quasi-remake of the original 1995 original lacks Christopher Lambert and--surprisingly--comprable production design. Makes up some ground with over-the-top graphic violence and Joel McHale, however.
+Animated quasi-remake of the original 1995 original lacks Christopher Lambert and--surprisingly--comprable production design. Makes up some ground with over-the-top graphic violence and Joel McHale.

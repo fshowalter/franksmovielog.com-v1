@@ -17,11 +17,14 @@ function stripFootnotes(html) {
   return html.replace(/\[\^.*\]/, "");
 }
 
-function CastList({ principalCastIds, allCast }) {
+function CastList({ imdbId, principalCastIds, allCast }) {
   const castIds = new Set(principalCastIds.split(","));
 
   const cast = allCast.filter(
-    (person) => person.person_imdb_id && castIds.has(person.person_imdb_id)
+    (person) =>
+      person.movie_imdb_id === imdbId &&
+      person.person_imdb_id &&
+      castIds.has(person.person_imdb_id)
   );
 
   return toSentenceArray(cast.map((person) => person.name));
@@ -127,84 +130,52 @@ function ReviewArticle({
   );
 
   return (
-    <article className={className}>
-      <div className={styles.list_item_date}>
-        <span className={styles.review_sequence}>
-          #{review.frontmatter.sequence}
-        </span>
-        {" on "}
-        {review.frontmatter.date}
-      </div>
-      <div className={styles.list_item_content}>
-        <Link
-          className={styles.list_item_image_link}
-          to={`/reviews/${review.frontmatter.slug}/`}
-        >
-          <Img
-            className={styles.list_item_poster}
-            fixed={review.poster.childImageSharp.fixed}
-            width="70"
-            alt={`A poster from ${movie.title} (${movie.year})`}
-          />
-        </Link>
-        <h2 className={styles.list_item_heading}>
-          <ReviewLink imdbId={review.frontmatter.imdb_id}>
-            {movie.title}{" "}
-            <span className={styles.list_item_heading_review_year}>
-              {movie.year}
-            </span>
-          </ReviewLink>
-        </h2>
-        <Grade
-          grade={review.frontmatter.grade}
-          className={styles.review_grade}
-        />{" "}
-        <span className={styles.post_date} />
-        <main
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{
-            __html: review.html,
-          }}
-          className={styles.list_item_excerpt}
+    <>
+      <Link
+        className={styles.list_item_image_link}
+        to={`/reviews/${review.frontmatter.slug}/`}
+      >
+        <Img
+          className={styles.list_item_poster}
+          fluid={review.backdrop.childImageSharp.fluid}
+          width="70"
+          alt={`A still from ${movie.title} (${movie.year})`}
         />
-        <footer className={styles.list_item_footer}>
-          <WatchlistLinks watchlistTitle={watchlistTitle} />
-        </footer>
-      </div>
-    </article>
+      </Link>
+      <h2 className={styles.list_item_heading}>
+        <ReviewLink imdbId={review.frontmatter.imdb_id}>
+          {movie.title}{" "}
+          <span className={styles.list_item_heading_review_year}>
+            {movie.year}
+          </span>
+        </ReviewLink>
+      </h2>
+      <Grade grade={review.frontmatter.grade} className={styles.review_grade} />
+      <p className={styles.list_item_review_meta}>
+        Directed by {toSentenceArray(directors)}. Starring{" "}
+        <CastList
+          imdbId={movie.imdb_id}
+          principalCastIds={movie.principal_cast_ids}
+          allCast={allCast}
+        />
+        .
+      </p>
+      <main
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{
+          __html: review.linkedHtml,
+        }}
+        className={styles.list_item_excerpt}
+      />
+      <footer className={styles.list_item_footer}>
+        <div className={styles.list_item_date}>
+          <DateIcon /> {review.frontmatter.date}
+        </div>
+        <WatchlistLinks watchlistTitle={watchlistTitle} />
+      </footer>
+    </>
   );
 }
-
-ReviewArticle.propTypes = {
-  className: PropTypes.string.isRequired,
-  movies: PropTypes.arrayOf(Movie).isRequired,
-  watchlistTitles: PropTypes.arrayOf(WatchlistTitle).isRequired,
-  allCast: PropTypes.arrayOf(
-    PropTypes.shape({
-      person_imdb_id: PropTypes.string,
-      name: PropTypes.string,
-    })
-  ).isRequired,
-  directors: PropTypes.arrayOf(PropTypes.string).isRequired,
-  review: PropTypes.shape({
-    frontmatter: PropTypes.shape({
-      imdb_id: PropTypes.string.isRequired,
-      date: PropTypes.string.isRequired,
-      grade: PropTypes.string.isRequired,
-      slug: PropTypes.string.isRequired,
-      sequence: PropTypes.number.isRequired,
-    }).isRequired,
-    backdrop: PropTypes.shape({
-      childImageSharp: PropTypes.shape({
-        fluid: PropTypes.shape({
-          src: PropTypes.string.isRequired,
-        }),
-      }),
-    }).isRequired,
-    firstParagraph: PropTypes.string.isRequired,
-    numberOfParagraphs: PropTypes.number.isRequired,
-  }).isRequired,
-};
 
 function ReviewListItem({
   className,
@@ -430,7 +401,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        html
+        linkedHtml
       }
     }
 
