@@ -235,6 +235,7 @@
   }
 
   @media (min-width: $breakpoint_desktop) {
+    margin-top: 1rem;
     padding-left: var(--step-1);
   }
 }
