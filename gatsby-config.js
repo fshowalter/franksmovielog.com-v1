@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `My life at the movies.`,
+    author: `Frank Showalter`,
     titleTemplate: "%s - Frank's Movie Log",
     url: "https://movielog.frankshowalter.com/",
     defaultImage: "",
@@ -31,46 +31,42 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/data/`,
+        name: "data",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages`,
+        name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/posts`,
+        name: `posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/reviews`,
+        name: `reviews`,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: `remark-footnotes`,
-            options: {
-              inlineNotes: true,
-            },
-          },
+          `gatsby-remark-smartypants`,
+          // {
+          //   resolve: `remark-footnotes`,
+          //   options: {
+          //     inlineNotes: true,
+          //   },
+          // },
         ],
-      },
-    },
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/pages`,
-        name: `posts`,
-        excerpt_separator: `\n\n`,
-      },
-    },
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/posts`,
-        name: `posts`,
-        excerpt_separator: `\n\n`,
-      },
-    },
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/reviews`,
-        name: `reviews`,
-        excerpt_separator: `\n\n`,
       },
     },
     {

@@ -13,13 +13,13 @@
     "gatsby-plugin-react-helmet": "^3.3.8",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-plugin-sharp": "^2.6.14",
+    "gatsby-remark-smartypants": "^2.3.10",
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-transformer-json": "^2.4.9",
     "gatsby-transformer-remark": "^2.8.23",
     "gatsby-transformer-sharp": "^2.5.7",
     "jest": "^26.1.0",
     "littlefoot": "^3.3.1",
-    "marked": "^1.1.0",
     "node-sass": "^4.14.1",
     "preact": "^10.4.5",
     "preact-render-to-string": "^5.1.9",
@@ -67,6 +67,7 @@
     "sync": "cp -av ../movielog-new/export/*.json ./content/data",
     "watch-movielog": "./watch-movielog.js"
   },
+  "browserslist": ["last 2 versions", "not dead"],
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"

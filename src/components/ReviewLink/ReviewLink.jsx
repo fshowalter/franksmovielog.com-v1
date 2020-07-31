@@ -9,7 +9,7 @@ function reviewForImdbId(reviews, imdbId) {
 export default function ReviewLink({ imdbId, children, className }) {
   const reviews = useStaticQuery(graphql`
     query ReviewLinkQuery {
-      allMarkdownRemark(filter: { postType: { eq: "review" } }) {
+      allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
         nodes {
           frontmatter {
             imdb_id

@@ -4,18 +4,15 @@
   column-gap: var(--step-1);
   display: grid;
   grid-template-areas: "poster movie_meta" "review review";
-  grid-template-columns: auto 1fr;
+  grid-template-columns: minmax(116px, 30%) 1fr;
   padding: var(--step-5) var(--step-1);
 
   @media (min-width: $breakpoint_tablet) {
-    column-gap: var(--step-1);
+    grid-template-areas: "poster movie_meta" "poster review";
+  }
 
-    grid-template-areas: "poster movie_meta" "poster slug" "poster content";
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: auto auto 1fr;
-    // display: flex;
-    // flex-wrap: wrap;
-    margin-top: var(--step-5);
+  @media (min-width: $breakpoint_desktop) {
+    padding: var(--step-5) 0;
   }
 }
 
@@ -25,6 +22,13 @@
   margin-top: 1.5rem;
 }
 
+.date_icon {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 2px;
+  width: 14px;
+}
+
 .slug {
   color: var(--color-text-secondary);
   font-family: "PT Sans";
@@ -32,10 +36,10 @@
   grid-area: slug;
   margin-top: 1.5rem;
 
-  @media (min-width: $breakpoint_tablet) {
-    align-items: center;
-    display: flex;
-  }
+  // @media (min-width: $breakpoint_tablet) {
+  //   align-items: center;
+  //   display: flex;
+  // }
 
   // display: flex;
   // flex-direction: column;
@@ -56,13 +60,13 @@
 
 .image {
   align-self: flex-start;
+  border: solid 0.5rem #e9e7e0;
   grid-area: poster;
-  max-width: 300px;
-  width: 100px;
+  width: 100%;
 
-  @media (min-width: $breakpoint_tablet) {
-    margin-right: 0;
-  }
+  // @media (min-width: $breakpoint_tablet) {
+  //   margin-right: 0;
+  // }
 }
 
 .title {
@@ -74,21 +78,25 @@
   line-height: normal;
   padding: 0;
 
-  @media (min-width: $breakpoint_tablet) {
-    font-size: 36px;
-  }
+  // @media (min-width: $breakpoint_tablet) {
+  //   font-size: 36px;
+  // }
+}
+
+.content {
+  position: relative;
 }
 
 .grade {
   height: 21px;
   margin-right: 0.5rem;
-  position: relative;
-  top: 2px;
+  position: absolute;
+  top: 3px;
   width: auto;
 
-  @media (min-width: $breakpoint_desktop) {
-    margin-top: 0;
-  }
+  // @media (min-width: $breakpoint_desktop) {
+  //   margin-top: 0;
+  // }
 }
 
 .movie_meta {
@@ -129,14 +137,21 @@
   font-weight: 300;
 }
 
+@supports (font-size-adjust: 1) {
+  .body {
+    font-size-adjust: 0.5;
+  }
+}
+
 .body {
   color: rgba(0, 0, 0, 0.75);
   font-size: 20px;
   font-weight: 300;
   grid-area: content;
   letter-spacing: 0.1px;
-  line-height: 1.5;
+  line-height: calc(1ex / 0.32);
   margin-top: 1.5rem;
+  max-width: 60ch;
 
   a {
     color: var(--color-link);
@@ -169,10 +184,20 @@
     display: inline;
   }
 
-  @media (min-width: 1000px) {
-    grid-area: content;
-    margin-top: 1.5rem;
+  > p:first-of-type {
+    &::before {
+      content: "\0020";
+      display: inline-block;
+      height: auto;
+      position: relative;
+      width: 115px;
+    }
   }
+
+  // @media (min-width: 1000px) {
+  //   grid-area: content;
+  //   margin-top: 1.5rem;
+  // }
 }
 
 // .review_meta {

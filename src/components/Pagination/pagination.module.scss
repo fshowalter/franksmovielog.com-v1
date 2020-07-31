@@ -2,33 +2,39 @@
 
 .header {
   background-color: darken(#fff, 2);
-  border: solid 1px var(--color-background);
+  border-bottom: solid 1px var(--color-background);
   color: var(--color-text-secondary);
   font-family: "PT Sans";
   font-size: clamp(15px, 4vw, 16px);
   font-weight: 300;
-  margin-top: var(--step-5);
-  padding: var(--step-1) var(--step-1);
+  padding: var(--step-1);
   text-align: center;
+
+  @media (min-width: $breakpoint_desktop) {
+    border: solid 1px var(--color-background);
+    margin-top: var(--step-5);
+    padding: 1rem var(--step-1);
+  }
 }
 
 .container {
   align-items: baseline;
+  background-color: darken(#fff, 2);
+  border-top: solid 1px var(--color-background);
   display: flex;
   flex-wrap: wrap;
   font-family: "PT Sans";
   font-feature-settings: "tnum";
   font-size: 18px;
   justify-content: space-between;
-  margin-top: var(--step-1);
-  padding: var(--step-1) var(--step-1) var(--step-5) var(--step-1);
+  padding: var(--step-1);
   white-space: nowrap;
 
   @media (min-width: $breakpoint_desktop) {
     background-color: darken(#fff, 2);
     border: solid 1px var(--color-background);
     margin: 0 0 var(--step-5);
-    padding: var(--step-1);
+    padding: 1rem var(--step-1);
   }
 }
 
@@ -50,8 +56,10 @@
 
 .button {
   appearance: none;
-  background-color: darken(#fff, 2);
-  border: solid 1px var(--color-background);
+  background: transparent;
+  // background-color: darken(#fff, 2);
+  // border: solid 1px var(--color-background);
+  border: 0;
   color: var(--color-link);
   font-family: "PT Sans";
   font-size: 18px;

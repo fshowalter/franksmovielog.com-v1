@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import toSentenceArray from "../utils/to-sentence-array";
 import styles from "./review.module.scss";
 import WatchlistLinks from "../components/WatchlistLinks";
+import DateIcon from "../components/DateIcon";
 
 function CastList({ principalCastIds, allCast }) {
   const castIds = new Set(principalCastIds.split(","));
@@ -104,17 +105,19 @@ export default function Review({ data }) {
         </div>
         <div className={styles.review}>
           <div className={styles.slug}>
-            <Grade grade={review.frontmatter.grade} className={styles.grade} />
-            on {review.frontmatter.date} via {review.frontmatter.venue} (
-            {review.frontmatter.venue_notes}) (#{review.frontmatter.sequence})
+            <DateIcon className={styles.date_icon} /> {review.frontmatter.date}{" "}
+            via {review.frontmatter.venue} ({review.frontmatter.venue_notes})
           </div>
-          <div
-            className={styles.body}
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{
-              __html: review.html,
-            }}
-          />
+          <div className={styles.content}>
+            <Grade grade={review.frontmatter.grade} className={styles.grade} />
+            <div
+              className={styles.body}
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{
+                __html: review.html,
+              }}
+            />
+          </div>
         </div>
       </article>
     </Layout>

@@ -12,14 +12,14 @@
 }
 
 .left {
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     grid-area: left;
     max-width: 330px;
   }
 }
 
 .right {
-  @media (min-width: 1000px) {
+  @media (min-width: $breakpoint_desktop) {
     grid-area: right;
   }
 }
@@ -70,13 +70,6 @@
 
 .list_item {
   composes: list_item from "../styles/list.scss";
-
-  @media (min-width: $breakpoint_desktop) {
-    align-items: baseline;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-  }
 }
 
 .list_item_first {
@@ -84,18 +77,7 @@
 }
 
 .list_item_title {
-  color: var(--color-link);
-  display: block;
-  font-family: "PT Sans";
-  font-size: 18px;
-  font-weight: 400;
-  padding-top: var(--step--2);
-
-  @media (min-width: $breakpoint_desktop) {
-    flex-grow: 1;
-    font-size: 16px;
-    padding-top: 0.5rem;
-  }
+  composes: list_item_title from "../styles/list.scss";
 }
 
 .list_item_title_link {
@@ -104,35 +86,8 @@
 
 .list_item_title_year {
   composes: list_item_title_year from "../styles/list.scss";
-
-  @media (min-width: $breakpoint_desktop) {
-    font-family: "PT Sans";
-    font-size: 14px;
-  }
 }
 
 .list_item_slug {
   composes: list_item_slug from "../styles/list.scss";
-  display: flex;
-  font-family: "PT Sans";
-  font-feature-settings: "tnum";
-  font-size: 13px;
-  justify-items: baseline;
-  padding-bottom: var(--step--2);
-
-  @media (min-width: $breakpoint_desktop) {
-    flex-grow: 0;
-    font-size: 14px;
-    padding-bottom: 8px;
-  }
-}
-
-.list_item_grade {
-  height: 15px;
-  margin-right: var(--step--2);
-  width: auto;
-
-  @media (min-width: $breakpoint_desktop) {
-    height: 16px;
-  }
 }

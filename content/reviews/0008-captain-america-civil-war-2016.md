@@ -9,4 +9,4 @@ venue: 4k UHD Blu-ray
 venue_notes: 2019 Disney / Buena Vista
 ---
 
-A better version of Age of Ultron that wisely regulates the big-bad to the background and instead focuses on the group dynamics.
+A better version of Age of Ultron that regulates the big-bad to the background to focus on the group dynamics.

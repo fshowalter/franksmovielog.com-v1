@@ -82,3 +82,7 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
+
+p {
+  line-height: calc(1ex / 0.32);
+}

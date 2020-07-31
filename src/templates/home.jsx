@@ -118,7 +118,6 @@ function ReviewArticle({
   watchlistTitles,
   directors,
 }) {
-  console.log(review);
   const movie = movies.find(
     (item) => item.imdb_id === review.frontmatter.imdb_id
   );
@@ -313,7 +312,7 @@ export default function HomeTemplate({ pageContext, data }) {
             //   renderWide = index + 1 === posts.length;
             // }
 
-            if (update.postType === "review") {
+            if (update.postType === "REVIEW") {
               const directors = data.director.nodes
                 .filter((director) => {
                   return director.movie_imdb_id === update.frontmatter.imdb_id;
@@ -432,7 +431,6 @@ export const pageQuery = graphql`
           }
         }
         html
-        numberOfParagraphs
       }
     }
 

@@ -243,7 +243,7 @@ function Layout({ children }) {
         <header className={styles.mast_header}>
           <div className={styles.mast_logo}>
             <h1 className={styles.mast_title}>
-              <Link href="/">Frank&apos;s Movie Log</Link>
+              <Link to="/">Frank&apos;s Movie Log</Link>
             </h1>
             <p className={styles.mast_tagline}>My life at the movies.</p>
           </div>

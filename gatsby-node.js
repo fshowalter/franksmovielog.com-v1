@@ -7,7 +7,7 @@
 // You can delete this file if you're not using it
 
 const path = require("path");
-const marked = require("marked");
+const { node } = require("prop-types");
 
 async function createHomePages(graphql, reporter, createPage) {
   const query = await graphql(
@@ -107,7 +107,7 @@ async function createReviewPages(graphql, reporter, createPage) {
   const query = await graphql(
     `
       {
-        allMarkdownRemark(filter: { postType: { eq: "review" } }) {
+        allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
           nodes {
             frontmatter {
               imdb_id
@@ -138,12 +138,180 @@ async function createReviewPages(graphql, reporter, createPage) {
   });
 }
 
+async function createWatchlistPages(graphql, reporter, createPage) {
+  const reviewsQuery = await graphql(
+    `
+      {
+        allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
+          nodes {
+            frontmatter {
+              imdb_id
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const watchlistTitlesQuery = await graphql(
+    `
+      {
+        allWatchlistTitlesJson {
+          nodes {
+            imdb_id
+            directors {
+              name
+              imdb_id
+              slug
+            }
+            performers {
+              name
+              imdb_id
+              slug
+            }
+            writers {
+              name
+              imdb_id
+              slug
+            }
+            collections {
+              name
+              slug
+            }
+          }
+        }
+      }
+    `
+  );
+
+  if (watchlistTitlesQuery.errors || reviewsQuery.errors) {
+    reporter.panicOnBuild(
+      `Error while running GraphQL query for createWatchlistDirectorPages.`
+    );
+    return;
+  }
+
+  const reviewIds = new Set(
+    reviewsQuery.data.allMarkdownRemark.nodes.map((review) => {
+      return review.frontmatter.imdb_id;
+    })
+  );
+
+  const reducePerson = (key, accumulator, currentValue) => {
+    currentValue[key].forEach((person) => {
+      accumulator[key][person.slug] = accumulator[person.slug] || {};
+      accumulator[key][person.slug].name = person.name;
+      accumulator[key][person.slug].imdbId = person.imdb_id;
+      accumulator[key][person.slug].imdbIds =
+        accumulator[key][person.slug].imdbIds || new Set();
+
+      accumulator[key][person.slug].imdbIds.add(currentValue.imdb_id);
+    });
+  };
+
+  const pages = watchlistTitlesQuery.data.allWatchlistTitlesJson.nodes.reduce(
+    (accumulator, currentValue) => {
+      if (!reviewIds.has(currentValue.imdb_id)) {
+        return accumulator;
+      }
+
+      reducePerson("directors", accumulator, currentValue);
+      reducePerson("performers", accumulator, currentValue);
+      reducePerson("writers", accumulator, currentValue);
+
+      currentValue.collections.forEach((collection) => {
+        accumulator.collections[collection.slug] =
+          accumulator[collection.slug] || {};
+        accumulator.collections[collection.slug].name = collection.name;
+        accumulator.collections[collection.slug].imdbIds =
+          accumulator.collections[collection.slug].imdbIds || new Set();
+
+        accumulator.collections[collection.slug].imdbIds.add(
+          currentValue.imdb_id
+        );
+      });
+      return accumulator;
+    },
+    {
+      directors: {},
+      performers: {},
+      writers: {},
+      collections: {},
+    }
+  );
+
+  // Create director pages
+  Object.keys(pages.directors).forEach((slug) => {
+    const director = pages.directors[slug];
+
+    createPage({
+      path: `/watchlist/directors/${slug}/`,
+      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      context: {
+        personType: "DIRECTOR",
+        imdbId: director.imdbId,
+        imdbIds: [...director.imdbIds],
+        name: director.name,
+      },
+    });
+  });
+
+  // Create performer pages
+  Object.keys(pages.performers).forEach((slug) => {
+    const performer = pages.performers[slug];
+
+    createPage({
+      path: `/watchlist/cast/${slug}/`,
+      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      context: {
+        personType: "PERFORMER",
+        imdbId: performer.imdbId,
+        imdbIds: [...performer.imdbIds],
+        name: performer.name,
+      },
+    });
+  });
+
+  // Create writer pages
+  Object.keys(pages.writers).forEach((slug) => {
+    const writer = pages.writers[slug];
+
+    createPage({
+      path: `/watchlist/writers/${slug}/`,
+      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      context: {
+        personType: "WRITER",
+        imdbId: writer.imdbId,
+        imdbIds: [...writer.imdbIds],
+        name: writer.name,
+      },
+    });
+  });
+
+  // Create collection pages
+  Object.keys(pages.collections).forEach((slug) => {
+    const collection = pages.collections[slug];
+
+    createPage({
+      path: `/watchlist/directors/${slug}/`,
+      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      context: {
+        personType: "COLLECTION",
+        imdbId: collection.imdbId,
+        imdbIds: [...collection.imdbIds],
+        name: collection.name,
+      },
+    });
+  });
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   await createHomePages(graphql, reporter, createPage);
   await createReviewPages(graphql, reporter, createPage);
   await createAboutPages(graphql, reporter, createPage);
+  await createWatchlistPages(graphql, reporter, createPage);
 };
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
@@ -153,41 +321,15 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       name: "MarkdownRemark",
       interfaces: ["Node"],
       fields: {
-        firstParagraphRaw: {
-          type: "String",
-          resolve: (source) => {
-            return source.rawMarkdownBody
-              ? source.rawMarkdownBody.trim().split("\n\n")[0]
-              : "";
-          },
-        },
-        firstParagraph: {
-          type: "String",
-          resolve: (source) => {
-            return marked(
-              source.rawMarkdownBody
-                ? source.rawMarkdownBody.trim().split("\n\n")[0]
-                : ""
-            );
-          },
-        },
-        numberOfParagraphs: {
-          type: "Int",
-          resolve: (source) => {
-            return source.rawMarkdownBody
-              ? source.rawMarkdownBody.trim().split("\n\n").length
-              : 0;
-          },
-        },
         postType: {
           type: "String",
           resolve: (source) => {
             if (source.fileAbsolutePath.includes("/reviews/")) {
-              return "review";
+              return "REVIEW";
             }
 
             if (source.fileAbsolutePath.includes("/posts/")) {
-              return "post";
+              return "POST";
             }
 
             return null;
