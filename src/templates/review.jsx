@@ -78,35 +78,33 @@ export default function Review({ data }) {
       <article className={styles.container}>
         <Img
           className={styles.image}
-          fluid={review.poster.childImageSharp.fluid}
+          fluid={review.backdrop.childImageSharp.fluid}
           alt={`A still from ${movie.title} (${movie.year})`}
         />
-        <div className={styles.movie_meta}>
-          <h1 className={styles.title}>
-            {movie.title}{" "}
-            <span className={styles.title_year}>{movie.year}</span>
-          </h1>
-          <aside className={styles.cast_and_crew}>
-            <span className={styles.cast_label}>Directed by</span>
-            {toSentenceArray(
-              data.director.nodes.map((director) => director.name)
-            )}
-            <span className={styles.cast_label}>Starring</span>
-            <CastList
-              principalCastIds={movie.principal_cast_ids}
-              allCast={data.cast.nodes}
-            />
-            {watchlistTitle && (
-              <div className={styles.watchlist}>
-                <WatchlistLinks watchlistTitle={watchlistTitle} />
-              </div>
-            )}
-          </aside>
-        </div>
+        <h1 className={styles.title}>
+          {movie.title} <span className={styles.title_year}>{movie.year}</span>
+        </h1>
+        <aside className={styles.cast_and_crew}>
+          <span className={styles.cast_label}>Directed by</span>
+          {toSentenceArray(
+            data.director.nodes.map((director) => director.name)
+          )}
+          <span className={styles.cast_label}>Starring</span>
+          <CastList
+            principalCastIds={movie.principal_cast_ids}
+            allCast={data.cast.nodes}
+          />
+          {watchlistTitle && (
+            <div className={styles.watchlist}>
+              <WatchlistLinks watchlistTitle={watchlistTitle} />
+            </div>
+          )}
+        </aside>
         <div className={styles.review}>
           <div className={styles.slug}>
-            <DateIcon className={styles.date_icon} /> {review.frontmatter.date}{" "}
-            via {review.frontmatter.venue} ({review.frontmatter.venue_notes})
+            <DateIcon className={styles.date_icon} />{" "}
+            <span className={styles.date}>{review.frontmatter.date}</span> via{" "}
+            {review.frontmatter.venue} ({review.frontmatter.venue_notes})
           </div>
           <div className={styles.content}>
             <Grade grade={review.frontmatter.grade} className={styles.grade} />
@@ -114,7 +112,7 @@ export default function Review({ data }) {
               className={styles.body}
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{
-                __html: review.html,
+                __html: review.linkedHtml,
               }}
             />
           </div>
@@ -123,72 +121,6 @@ export default function Review({ data }) {
     </Layout>
   );
 }
-
-Review.propTypes = {
-  pageContext: PropTypes.shape({
-    imdbId: PropTypes.string.isRequired,
-  }).isRequired,
-  data: PropTypes.shape({
-    director: PropTypes.shape({
-      nodes: PropTypes.arrayOf(
-        PropTypes.shape({
-          full_name: PropTypes.string,
-        })
-      ),
-    }),
-    cast: PropTypes.shape({
-      nodes: PropTypes.arrayOf(
-        PropTypes.shape({
-          full_name: PropTypes.string,
-        })
-      ),
-    }),
-    review: PropTypes.shape({
-      nodes: PropTypes.arrayOf(
-        PropTypes.shape({
-          frontmatter: PropTypes.shape({
-            imdb_id: PropTypes.string.isRequired,
-            date: PropTypes.string.isRequired,
-            grade: PropTypes.string.isRequired,
-            sequence: PropTypes.number.isRequired,
-          }).isRequired,
-          backdrop: PropTypes.shape({
-            childImageSharp: PropTypes.shape({
-              fluid: PropTypes.shape({
-                src: PropTypes.string.isRequired,
-              }),
-            }),
-          }).isRequired,
-          html: PropTypes.string.isRequired,
-        })
-      ),
-    }),
-    movie: PropTypes.shape({
-      nodes: PropTypes.arrayOf(
-        PropTypes.shape({
-          imdb_id: PropTypes.string,
-          title: PropTypes.string,
-          year: PropTypes.number,
-          runtime_minutes: PropTypes.number,
-          principal_cast_ids: PropTypes.string,
-        })
-      ),
-    }),
-    watchlistTitle: PropTypes.shape({
-      nodes: PropTypes.arrayOf(
-        PropTypes.shape({
-          performers: PropTypes.arrayOf(
-            PropTypes.shape({
-              imdb_id: PropTypes.string,
-              name: PropTypes.string,
-              slug: PropTypes.string,
-            })
-          ),
-        })
-      ),
-    }),
-  }).isRequired,
-};
 
 export const pageQuery = graphql`
   query($imdbId: String) {
@@ -219,7 +151,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        html
+        linkedHtml
       }
     }
 

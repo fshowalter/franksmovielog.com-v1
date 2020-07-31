@@ -1,3 +1,5 @@
+@import "./src/styles/breakpoints";
+
 .icon {
   composes: icon from "../../styles/utils.scss";
 }
@@ -18,4 +20,8 @@
   margin-left: 0.75rem;
   padding: 0.5rem 1rem;
   white-space: nowrap;
+
+  @media (min-width: $breakpoint_desktop) {
+    border-color: var(--color-background);
+  }
 }
