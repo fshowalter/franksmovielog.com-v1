@@ -5,10 +5,10 @@
  */
 
 // You can delete this file if you're not using it
-import littlefoot from "littlefoot";
-import "littlefoot/dist/littlefoot.css";
+const { littlefoot } = require("littlefoot");
+require("littlefoot/dist/littlefoot.css");
 
 // eslint-disable-next-line import/prefer-default-export
-export function onRouteUpdate() {
+exports.onRouteUpdate = () => {
   littlefoot(); // Pass any littlefoot settings here.
-}
+};
