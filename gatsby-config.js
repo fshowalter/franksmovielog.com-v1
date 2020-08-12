@@ -8,6 +8,14 @@ module.exports = {
     title: "Frank's Movie Log",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     `gatsby-transformer-sharp`,

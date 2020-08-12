@@ -1,14 +1,24 @@
+import PropTypes from "prop-types";
 import React from "react";
 import ReactSlider from "react-slider";
-import PropTypes from "prop-types";
-import styles from "./rangeInput.module.scss";
+import * as styles from "./rangeInput.module.scss";
 
-export default function RangeFilter({ id, min, max, onChange }) {
-  const initialState = [min, max];
+export default function RangeFilter({
+  id,
+  min,
+  max,
+  onChange,
+}: {
+  id: string;
+  min: number;
+  max: number;
+  onChange: (arg0: [number, number]) => void;
+}): JSX.Element {
+  const initialState: [number, number] = [min, max];
 
   const [state, setState] = React.useState(initialState.slice());
 
-  const valuesAreValid = (values) => {
+  const valuesAreValid = (values: [number, number]) => {
     return (
       values[0] >= min &&
       values[0] <= values[1] &&
@@ -17,22 +27,22 @@ export default function RangeFilter({ id, min, max, onChange }) {
     );
   };
 
-  const handleSliderUpdate = (values) => {
+  const handleSliderUpdate = (values: number | number[] | null | undefined) => {
     if (!Array.isArray(values)) {
       return;
     }
-    onChange(values);
+    onChange(values as [number, number]);
   };
 
-  const handleSliderChange = (values) => {
+  const handleSliderChange = (values: number | number[] | null | undefined) => {
     if (!Array.isArray(values)) {
       return;
     }
     setState([...values]);
   };
 
-  const handleMinChange = (value) => {
-    const newState = [parseInt(value, 10), state[1]];
+  const handleMinChange = (value: string) => {
+    const newState: [number, number] = [parseInt(value, 10), state[1]];
     setState(newState);
 
     if (valuesAreValid(newState)) {
@@ -40,8 +50,8 @@ export default function RangeFilter({ id, min, max, onChange }) {
     }
   };
 
-  const handleMaxChange = (value) => {
-    const newState = [state[0], parseInt(value, 10)];
+  const handleMaxChange = (value: string) => {
+    const newState: [number, number] = [state[0], parseInt(value, 10)];
     setState(newState);
 
     if (valuesAreValid(newState)) {

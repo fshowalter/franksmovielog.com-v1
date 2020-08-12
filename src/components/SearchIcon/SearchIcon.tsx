@@ -1,17 +1,18 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
+import * as styles from "./searchIcon.module.scss";
 
-import styles from "./searchIcon.module.scss";
-
-export default function SearchIcon({ className }) {
-  const svgClassName = className || styles.icon;
-
+export default function SearchIcon({
+  className = styles.icon,
+}: {
+  className?: string;
+}): JSX.Element {
   return (
     <svg
       width="1em"
       height="1em"
       viewBox="0 0 16 16"
-      className={svgClassName}
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

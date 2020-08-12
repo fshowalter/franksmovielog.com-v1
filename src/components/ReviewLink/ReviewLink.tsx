@@ -1,13 +1,35 @@
-import React from "react";
-import { useStaticQuery, Link, graphql } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
+import React from "react";
 
-function reviewForImdbId(reviews, imdbId) {
+type Review = {
+  frontmatter: {
+    // eslint-disable-next-line camelcase
+    imdb_id: string;
+    slug: string;
+  };
+};
+
+function reviewForImdbId(reviews: Review[], imdbId: string) {
   return reviews.find((review) => review.frontmatter.imdb_id === imdbId);
 }
 
-export default function ReviewLink({ imdbId, children, className }) {
-  const reviews = useStaticQuery(graphql`
+type ReviewsQuery = {
+  allMarkdownRemark: {
+    nodes: Review[];
+  };
+};
+
+export default function ReviewLink({
+  imdbId,
+  children,
+  className,
+}: {
+  imdbId: string;
+  children: React.ReactNode;
+  className?: string;
+}): JSX.Element {
+  const data: ReviewsQuery = useStaticQuery(graphql`
     query ReviewLinkQuery {
       allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
         nodes {
@@ -18,9 +40,9 @@ export default function ReviewLink({ imdbId, children, className }) {
         }
       }
     }
-  `).allMarkdownRemark.nodes;
+  `);
 
-  const review = reviewForImdbId(reviews, imdbId);
+  const review = reviewForImdbId(data.allMarkdownRemark.nodes, imdbId);
 
   if (!review) {
     return <>{children}</>;

@@ -1,9 +1,8 @@
-import React from "react";
 import PropTypes from "prop-types";
-
+import React from "react";
 import styles from "./postDate.module.scss";
 
-export default function PostDate({ date }) {
+export default function PostDate({ date }: { date: string }): JSX.Element {
   return (
     <div className={styles.container}>
       <svg

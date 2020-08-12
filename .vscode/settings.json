@@ -2,6 +2,16 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
@@ -13,5 +23,6 @@
   "files.autoSaveDelay": 500,
   "stylelint.packageManager": "yarn",
   "stylelint.reportNeedlessDisables": true,
-  "eslint.packageManager": "yarn"
+  "eslint.packageManager": "yarn",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

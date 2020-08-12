@@ -1,29 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import * as styles from "./pagination.module.scss";
 
-import styles from "./pagination.module.scss";
+export function PaginationHeader({
+  className,
+  currentPage,
+  perPage,
+  numberOfItems,
+}: PaginationHeaderProps): JSX.Element {
+  const start = currentPage * perPage - perPage || 1;
+  const max = currentPage * perPage;
+  const end = max < numberOfItems ? max : numberOfItems;
 
-export const PaginationHeader = React.forwardRef(
-  ({ className, currentPage, perPage, numberOfItems }, ref) => {
-    const start = currentPage * perPage - perPage || 1;
-    const max = currentPage * perPage;
-    const end = max < numberOfItems ? max : numberOfItems;
+  return (
+    <p className={className}>
+      Showing {start}-{end} of {numberOfItems}.
+    </p>
+  );
+}
 
-    return (
-      <p ref={ref} className={className}>
-        Showing {start}-{end} of {numberOfItems}.
-      </p>
-    );
-  }
-);
-
-PaginationHeader.propTypes = {
-  className: PropTypes.string,
-  currentPage: PropTypes.number.isRequired,
-  perPage: PropTypes.number.isRequired,
-  numberOfItems: PropTypes.number.isRequired,
-};
+interface PaginationHeaderProps {
+  className?: string;
+  currentPage: number;
+  perPage: number;
+  numberOfItems: number;
+}
 
 PaginationHeader.defaultProps = {
   className: styles.header,
@@ -35,13 +37,19 @@ export default function Footer({
   onClick,
   limit,
   numberOfItems,
-}) {
+}: FooterProps): JSX.Element {
   const useButton = !!onClick;
 
   const numPages = Math.ceil(numberOfItems / limit);
 
   if (numPages === 1) {
-    return null;
+    return (
+      <PaginationHeader
+        currentPage={1}
+        numberOfItems={numberOfItems}
+        perPage={limit}
+      />
+    );
   }
 
   const isFirst = currentPage === 1;
@@ -60,7 +68,7 @@ export default function Footer({
         ←Prev
       </button>
     ) : (
-      <span className={styles.placeholder}>←Prev</span>
+      <span>←Prev</span>
     );
   } else {
     prev = useButton ? (
@@ -72,9 +80,7 @@ export default function Footer({
         ←Prev
       </button>
     ) : (
-      <Link className={styles.link} to={prevPageUrl}>
-        ←Prev
-      </Link>
+      <Link to={prevPageUrl}>←Prev</Link>
     );
   }
 
@@ -86,7 +92,7 @@ export default function Footer({
         Next→
       </button>
     ) : (
-      <span className={styles.placeholder}>Next→</span>
+      <span>Next→</span>
     );
   } else {
     next = useButton ? (
@@ -98,13 +104,11 @@ export default function Footer({
         Next→
       </button>
     ) : (
-      <Link className={styles.link} to={nextPageUrl}>
-        Next→
-      </Link>
+      <Link to={nextPageUrl}>Next→</Link>
     );
   }
 
-  let firstPage = "";
+  let firstPage: string | JSX.Element = "";
 
   if (currentPage - 1 > 1) {
     firstPage = useButton ? (
@@ -116,19 +120,17 @@ export default function Footer({
         1
       </button>
     ) : (
-      <Link className={styles.link} to={`${urlRoot}`}>
-        1
-      </Link>
+      <Link to={`${urlRoot}`}>1</Link>
     );
   }
 
-  let prevDots = "";
+  let prevDots: string | JSX.Element = "";
 
   if (currentPage - 2 > 1) {
     prevDots = <span className={styles.elipsis}>…</span>;
   }
 
-  let prevPage = "";
+  let prevPage: string | JSX.Element = "";
 
   if (!isFirst) {
     prevPage = useButton ? (
@@ -140,13 +142,11 @@ export default function Footer({
         {currentPage - 1}
       </button>
     ) : (
-      <Link className={styles.link} to={prevPageUrl}>
-        {currentPage - 1}
-      </Link>
+      <Link to={prevPageUrl}>{currentPage - 1}</Link>
     );
   }
 
-  let nextPage = "";
+  let nextPage: string | JSX.Element = "";
 
   if (isLast) {
     nextPage = <span className="pagination-placeholder" />;
@@ -160,19 +160,17 @@ export default function Footer({
         {currentPage + 1}
       </button>
     ) : (
-      <Link class={styles.link} to={nextPageUrl}>
-        {currentPage + 1}
-      </Link>
+      <Link to={nextPageUrl}>{currentPage + 1}</Link>
     );
   }
 
-  let nextDots = "";
+  let nextDots: string | JSX.Element = "";
 
   if (currentPage + 2 < numPages) {
     nextDots = <span className={styles.elipsis}>…</span>;
   }
 
-  let lastPage = "";
+  let lastPage: string | JSX.Element = "";
 
   if (currentPage + 1 < numPages) {
     lastPage = useButton ? (
@@ -184,9 +182,7 @@ export default function Footer({
         {numPages}
       </button>
     ) : (
-      <Link className={styles.link} to={`${urlRoot}page-${numPages}/`}>
-        {numPages}
-      </Link>
+      <Link to={`${urlRoot}page-${numPages}/`}>{numPages}</Link>
     );
   }
 
@@ -202,11 +198,22 @@ export default function Footer({
   );
 }
 
+type onClickType = (pageNumber: number) => void;
+
+interface FooterProps {
+  currentPage: number;
+  limit: number;
+  numberOfItems: number;
+  onClick: onClickType;
+  urlRoot: string;
+  [key: string]: number | string | onClickType;
+}
+
 Footer.propTypes = {
   currentPage: PropTypes.number.isRequired,
   limit: PropTypes.number.isRequired,
   numberOfItems: PropTypes.number.isRequired,
-  onClick: (props, propName) => {
+  onClick: (props: FooterProps, propName: string) => {
     const { [propName]: onClick, urlRoot } = props;
     if (!urlRoot && (!onClick || typeof onClick !== "function")) {
       return new Error("Please provide a onClick function or urlRoot.");
