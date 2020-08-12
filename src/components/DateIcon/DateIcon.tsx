@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 import React from "react";
 import * as styles from "./dateIcon.module.scss";
 
-interface DateIconProps {
+export default function DateIcon({
+  className,
+}: {
   className?: string;
-}
-
-export default function DateIcon({ className }: DateIconProps): JSX.Element {
+}): JSX.Element {
   const svgClassName = className || styles.icon;
 
   return (

@@ -4,11 +4,16 @@ import React from "react";
 import * as styles from "./pagination.module.scss";
 
 export function PaginationHeader({
-  className,
+  className = styles.header,
   currentPage,
   perPage,
   numberOfItems,
-}: PaginationHeaderProps): JSX.Element {
+}: {
+  className?: string;
+  currentPage: number;
+  perPage: number;
+  numberOfItems: number;
+}): JSX.Element {
   const start = currentPage * perPage - perPage || 1;
   const max = currentPage * perPage;
   const end = max < numberOfItems ? max : numberOfItems;
@@ -18,13 +23,6 @@ export function PaginationHeader({
       Showing {start}-{end} of {numberOfItems}.
     </p>
   );
-}
-
-interface PaginationHeaderProps {
-  className?: string;
-  currentPage: number;
-  perPage: number;
-  numberOfItems: number;
 }
 
 PaginationHeader.defaultProps = {
@@ -200,14 +198,14 @@ export default function Footer({
 
 type onClickType = (pageNumber: number) => void;
 
-interface FooterProps {
+type FooterProps = {
   currentPage: number;
   limit: number;
   numberOfItems: number;
   onClick: onClickType;
   urlRoot: string;
   [key: string]: number | string | onClickType;
-}
+};
 
 Footer.propTypes = {
   currentPage: PropTypes.number.isRequired,

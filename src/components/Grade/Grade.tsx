@@ -57,9 +57,9 @@ type GradeProps =
 export default function Grade({
   grade,
   gradeValue,
-  width,
-  height,
   className,
+  width = 70,
+  height = 14,
 }: GradeProps): JSX.Element | null {
   let src: string | undefined;
   let alt: string | undefined;

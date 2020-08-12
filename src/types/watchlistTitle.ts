@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const WatchlistTitle = PropTypes.shape({
+export const WatchlistTitlePropTypes = PropTypes.shape({
   directors: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -27,4 +27,14 @@ const WatchlistTitle = PropTypes.shape({
   ).isRequired,
 });
 
-export default WatchlistTitle;
+export type WatchlistItem = {
+  name: string;
+  slug: string;
+};
+
+export type WatchlistTitle = {
+  directors: WatchlistItem[];
+  performers: WatchlistItem[];
+  writers: WatchlistItem[];
+  collections: WatchlistItem[];
+};

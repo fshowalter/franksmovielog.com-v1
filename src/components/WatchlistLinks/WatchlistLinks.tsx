@@ -1,11 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "gatsby";
+import React from "react";
+import {
+  WatchlistTitle,
+  WatchlistTitlePropTypes,
+} from "../../types/watchlistTitle";
+import * as styles from "./watchlistlinks.module.scss";
 
-import styles from "./watchlistlinks.module.scss";
-import WatchlistTitle from "../../types/watchlistTitle";
-
-function WatchlistItem({ to, children }) {
+function WatchlistItem({
+  to,
+  children,
+}: {
+  to: string;
+  children: React.ReactNode;
+}): JSX.Element {
   return (
     <li className={styles.list_item}>
       <Link to={to}>{children}</Link>
@@ -13,12 +20,11 @@ function WatchlistItem({ to, children }) {
   );
 }
 
-WatchlistItem.propTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
-
-function WatchlistLinks({ watchlistTitle }) {
+function WatchlistLinks({
+  watchlistTitle,
+}: {
+  watchlistTitle?: WatchlistTitle;
+}): JSX.Element | null {
   if (!watchlistTitle) {
     return null;
   }
@@ -77,7 +83,7 @@ function WatchlistLinks({ watchlistTitle }) {
 }
 
 WatchlistLinks.propTypes = {
-  watchlistTitle: WatchlistTitle,
+  watchlistTitle: WatchlistTitlePropTypes,
 };
 
 WatchlistLinks.defaultProps = {

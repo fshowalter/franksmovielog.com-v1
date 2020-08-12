@@ -14,10 +14,10 @@ import "../../styles/js.scss";
 import SearchIcon from "../SearchIcon";
 import * as styles from "./layout.module.scss";
 
-interface NavItemProps {
+type NavItemProps = {
   to: string;
   children: React.ReactNode;
-}
+};
 
 const NavItemPropTypes = {
   to: PropTypes.string.isRequired,
@@ -50,11 +50,7 @@ function FooterNavItem({ to, children }: NavItemProps): JSX.Element {
 
 FooterNavItem.propTypes = NavItemPropTypes;
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-function Layout({ children }: LayoutProps): React.ReactNode {
+function Layout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
     <>
       <a className={styles.skip_link} href="#content">

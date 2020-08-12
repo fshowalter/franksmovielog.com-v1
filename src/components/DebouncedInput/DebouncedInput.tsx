@@ -46,19 +46,17 @@ function underscoreDebounce<F extends onChangeHandler>(
   };
 }
 
-interface DebouncedInputProps {
+export default function DebouncedInput({
+  className,
+  id,
+  placeholder = "",
+  onChange,
+}: {
   className?: string;
   id: string;
   placeholder: string;
   onChange: onChangeHandler;
-}
-
-export default function DebouncedInput({
-  className,
-  id,
-  placeholder,
-  onChange,
-}: DebouncedInputProps): JSX.Element {
+}): JSX.Element {
   const debouncedHandleChange = underscoreDebounce(onChange, 150);
 
   return (
