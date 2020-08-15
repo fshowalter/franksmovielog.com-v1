@@ -207,15 +207,19 @@ export function PaginationWithLinks({
   const nextPageUrl = `${urlRoot}page-${currentPage + 1}/`;
 
   const prev = isFirst ? (
-    <span>←Prev</span>
+    <span className={styles.disabled}>←Prev</span>
   ) : (
-    <Link to={prevPageUrl}>←Prev</Link>
+    <Link to={prevPageUrl} className={styles.pagination_link}>
+      ←Prev
+    </Link>
   );
 
   const next = isLast ? (
     <span>Next→</span>
   ) : (
-    <Link to={nextPageUrl}>Next→</Link>
+    <Link to={nextPageUrl} className={styles.pagination_link}>
+      Next→
+    </Link>
   );
 
   const firstPage = currentPage - 1 > 1 ? <Link to={`${urlRoot}`}>1</Link> : "";
@@ -226,13 +230,17 @@ export function PaginationWithLinks({
   const prevPage = isFirst ? (
     ""
   ) : (
-    <Link to={prevPageUrl}>{currentPage - 1}</Link>
+    <Link to={prevPageUrl} className={styles.pagination_link}>
+      {currentPage - 1}
+    </Link>
   );
 
   const nextPage = isLast ? (
     <span className="pagination-placeholder" />
   ) : (
-    <Link to={nextPageUrl}>{currentPage + 1}</Link>
+    <Link to={nextPageUrl} className={styles.pagination_link}>
+      {currentPage + 1}
+    </Link>
   );
 
   const nextDots =
@@ -240,7 +248,12 @@ export function PaginationWithLinks({
 
   const lastPage =
     currentPage + 1 < numPages ? (
-      <Link to={`${urlRoot}page-${numPages}/`}>{numPages}</Link>
+      <Link
+        to={`${urlRoot}page-${numPages}/`}
+        className={styles.pagination_link}
+      >
+        {numPages}
+      </Link>
     ) : (
       ""
     );

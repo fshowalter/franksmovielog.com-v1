@@ -11,6 +11,8 @@
 }
 
 .left {
+  composes: card from "../styles/card.scss";
+
   @media (min-width: $breakpoint_desktop) {
     grid-area: left;
     max-width: 330px;
@@ -90,12 +92,11 @@
 .list_item_title {
   color: var(--color-link);
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: var(--step--2);
 
   @media (min-width: $breakpoint_desktop) {
     flex-grow: 1;
-    font-size: 16px;
     padding: 0.5rem 0;
   }
 }

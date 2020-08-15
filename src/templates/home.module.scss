@@ -1,92 +1,18 @@
 @import "./src/styles/breakpoints";
 
-.container {
-  // background-color: var(--color-background);
-  // margin: 0 var(--step-1);
-
-  // @media (min-width: $breakpoint_desktop) {
-  //   border-top: solid 1px var(--color-background);
-  // }
-}
-
-// .latest_heading,
-// .older_heading {
-//   composes: sr_only from "../styles/utils.scss";
-
-//   @media (min-width: $breakpoint_tablet) {
-//     composes: not_sr_only from "../styles/utils.scss";
-//     display: block;
-//     font-size: var(--step-2);
-//     padding: 0 var(--step-1);
-//   }
-// }
-
-// .older_heading {
-//   @media (min-width: $breakpoint_tablet) {
-//     margin-top: 1.5rem;
-//   }
-// }
-
 .review {
-  // column-gap: var(--step-1);
   display: flex;
   flex-wrap: wrap;
-  // grid-template-areas:
-  //   "slug poster title" "slug poster grade" "slug poster content"
-  //   "slug poster footer";
-  // grid-template-columns: 100px auto 60ch 1fr;
-
-  // @media (min-width: $breakpoint_tablet) {
-  //   column-gap: var(--step-1);
-  //   display: grid;
-  //   grid-template-areas:
-  //     "poster title" "poster slug"
-  //     "poster content" "poster watchlist";
-  //   grid-template-columns: 70px 1fr;
-  // }
 
   @media (min-width: $breakpoint_tablet) {
     padding-bottom: 1.5rem;
-
-    // .list_item_content {
-    //   display: grid;
-    //   grid-template-areas: "poster title" "poster grade" "poster content" "poster footer";
-    //   grid-template-columns: auto auto 1fr;
-    //   grid-template-rows: auto auto 1fr;
-    // }
   }
 }
 
-.review_sequence {
-  // color: var(--color-text-secondary);
-  // font-feature-settings: "tnum";
-  // font-size: 16px;
-  // font-weight: 700;
-  // margin-right: 0.25rem;
-}
-
-// .latest_article {
-//   background-color: var(--color-content-background);
-//   border-bottom: solid 1px darken(#e9e7e0, 5);
-//   border-top: solid 1px darken(#e9e7e0, 5);
-//   margin-top: 0;
-//   padding: var(--step-1);
-// }
-
 .list {
-  // display: grid;
-  // grid-gap: calc(2 * var(--step-1));
-  // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: var(--step-5);
-
-  // max-width: 640px;
-
-  // @media (min-width: $breakpoint_max) {
-  //   border-right: solid 1px var(--color-background);
-  // }
 }
 
 .list_item {
@@ -94,7 +20,6 @@
   border-top: solid 1px var(--color-background);
   display: flex;
   flex-direction: column;
-  // // border-top: solid 1px darken(#e9e7e0, 5);
   margin-top: var(--step-5);
   max-width: calc((2 * var(--step-1)) + 60ch);
   padding: 1.5rem var(--step-1);
@@ -112,11 +37,16 @@
       padding-left: var(--step-1);
     }
 
+    &:first-of-type {
+      border-top: 0;
+      padding-left: 0;
+      padding-top: 1rem;
+    }
+
     &:first-of-type,
     &:nth-last-child(1):nth-child(even) {
       column-gap: calc(2 * var(--step-1));
       display: grid;
-      // grid-column: span 2;
       grid-template-areas: "title backdrop" "grade backdrop" "cast-and-crew backdrop" "review backdrop" "footer backdrop";
       grid-template-columns: 1fr calc(50% - var(--step-1));
       padding-right: 0;
@@ -134,47 +64,16 @@
     @media (min-width: 80rem) {
       padding-top: 2rem;
     }
-
-    &:first-of-type {
-      border-top: 0;
-      padding-left: 0;
-      padding-top: 1rem;
-    }
   }
 
   &:first-of-type {
     margin-top: 0;
   }
-
-  // @media (min-width: $breakpoint_tablet) {
-  //   &:first-of-type {
-  //     margin-top: 0;
-  //   }
-  // }
-
-  // @media (min-width: $breakpoint_desktop) {
-  //   border-top: 0;
-  //   display: flex;
-  //   flex-direction: column;
-  //   margin-top: 0;
-  //   width: 50%;
-  // }
 }
 
 .list_item_image_link {
-  // align-self: start;
-  // // width: 70px;
   border: 0.5em solid #e9e7e0;
-  // border-radius: 0.25rem;
-  // // border-radius: 4px;
-  // float: left;
   grid-area: backdrop;
-  // height: calc(150px + 1rem);
-  // // height: auto;
-  // margin-bottom: 0.25rem;
-  // margin-right: var(--step-1);
-  // // overflow: hidden;
-  // position: relative;
 }
 
 .list_item_heading {
@@ -182,85 +81,17 @@
   font-weight: 700;
   grid-area: title;
   margin-top: var(--step-1);
-  // line-height: 1.2;
-
-  // @media (min-width: $breakpoint_desktop) {
-  //   align-self: flex-start;
-  // }
 }
 
-// .list_item_first,
-// .list_item_last {
-//   border-top: 0;
-//   margin-top: 0;
-
-//   @media (min-width: $breakpoint_desktop) {
-//     column-gap: calc(2 * var(--step-1));
-//     display: grid;
-//     grid-template-areas: "title image" "slug image" "meta image" "content image" "footer image";
-//     grid-template-columns: 1fr calc(50% - var(--step-1));
-//     grid-template-rows: auto;
-//     width: 100%;
-
-//     .list_item_heading {
-//       grid-area: title;
-//       text-align: left;
-//     }
-
-//     .list_item_image_link {
-//       grid-area: image;
-//       margin-top: var(--step-1);
-//     }
-
-//     .list_item_grade {
-//       grid-area: grade;
-//     }
-
-//     .list_item_footer {
-//       grid-area: footer;
-//       padding-bottom: 1rem;
-//     }
-
-//     .list_item_review_meta {
-//       grid-area: meta;
-//     }
-
-//     .list_item_excerpt {
-//       grid-area: content;
-//     }
-//   }
-// }
-
-// .list_item_first {
-//   padding-top: 0;
-
-//   .list_item_heading {
-//     margin-top: 0;
-//   }
-
-//   .list_item_image_link {
-//     margin-top: 0;
-//   }
-// }
-
-// .list_item_last {
-//   border-bottom: 0;
-// }
-
 .list_item_footer {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   grid-area: footer;
   margin-top: auto;
-  // margin-top: 1.5rem;
 
   a {
     color: var(--color-link);
   }
-
-  // @media (min-width: $breakpoint_tablet) {
-  //   margin-top: 0;
-  // }
 }
 
 .list_item_date {
@@ -272,7 +103,7 @@
   font-weight: 300;
   grid-area: slug;
   line-height: 24px;
-  line-height: 31px;
+  line-height: 36px;
   white-space: nowrap;
   width: 150px;
 }
@@ -303,17 +134,12 @@
 
 .list_item_excerpt {
   color: var(--color-block-text);
-  // font-family: "Maitree";
   color: rgba(0, 0, 0, 0.65);
   font-size: 18px;
   grid-area: review;
   margin-top: 1.5rem;
   max-width: 59ch;
   text-align: left;
-
-  // @media (min-width: $breakpoint_desktop) {
-  //   line-height: 1.4;
-  // }
 
   a {
     color: var(--color-link);
@@ -326,7 +152,6 @@
   blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
-    // font-family: "Times";
     font-style: italic;
     margin: 1.5em 0;
     padding: 0.5em 10px;

@@ -14,6 +14,9 @@ async function createHomePages(graphql, reporter, createPage) {
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___sequence], order: DESC }
+          filter: {
+            fileAbsolutePath: { regex: "content/(reviews)|(posts)/.*\\\\.md$/" }
+          }
         ) {
           nodes {
             frontmatter {
@@ -35,7 +38,7 @@ async function createHomePages(graphql, reporter, createPage) {
   }
 
   const updates = query.data.allMarkdownRemark.nodes;
-  const perPage = 20;
+  const perPage = 10;
   const numPages = Math.ceil(updates.length / perPage);
   Array.from({ length: numPages }).forEach((_, i) => {
     const skip = i * perPage;

@@ -1,7 +1,8 @@
 @import "./src/styles/breakpoints";
 
 .header {
-  padding: 1.5rem var(--step-1);
+  background-color: var(--color-content-background);
+  margin-bottom: var(--step-5);
 
   @media (min-width: $breakpoint_desktop) {
     padding-top: var(--step-5);

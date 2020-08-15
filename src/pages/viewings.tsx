@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import React, { useReducer } from "react";
+import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Layout from "../components/Layout";
 import {
@@ -353,6 +353,8 @@ export default function ViewingsPage({
     initState
   );
 
+  const listHeader = useRef<HTMLDivElement>(null);
+
   return (
     <Layout>
       <main className={styles.container}>
@@ -433,7 +435,7 @@ export default function ViewingsPage({
             </fieldset>
           </div>
         </div>
-        <div className={styles.right}>
+        <div className={styles.right} ref={listHeader}>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}
@@ -458,9 +460,12 @@ export default function ViewingsPage({
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredViewings.length}
-            onClick={(newPage) =>
-              dispatch({ type: CHANGE_PAGE, value: newPage })
-            }
+            onClick={(newPage) => {
+              dispatch({ type: CHANGE_PAGE, value: newPage });
+              if (listHeader && listHeader.current) {
+                listHeader.current.scrollIntoView();
+              }
+            }}
           />
         </div>
       </main>

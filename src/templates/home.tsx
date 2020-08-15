@@ -19,7 +19,10 @@ import * as styles from "./home.module.scss";
 export default function HomeTemplate({
   pageContext,
   data,
-}: PageQueryResult): JSX.Element {
+}: {
+  pageContext: PageContext;
+  data: PageQueryResult;
+}): JSX.Element {
   return (
     <Layout>
       <main>
@@ -112,23 +115,22 @@ interface ReviewUpdate extends MarkdownReview {
   postType: "REVIEW";
 }
 
+interface PageContext {
+  limit: number;
+  skip: number;
+  numberOfItems: number;
+  currentPage: number;
+}
+
 interface PageQueryResult {
-  pageContext: {
-    limit: number;
-    skip: number;
-    numberOfItems: number;
-    currentPage: number;
+  updates: {
+    nodes: ReviewUpdate[];
   };
-  data: {
-    updates: {
-      nodes: ReviewUpdate[];
-    };
-    watchlistMovie: {
-      nodes: WatchlistMovie[];
-    };
-    movieInfo: {
-      nodes: JsonReview[];
-    };
+  watchlistMovie: {
+    nodes: WatchlistMovie[];
+  };
+  movieInfo: {
+    nodes: JsonReview[];
   };
 }
 

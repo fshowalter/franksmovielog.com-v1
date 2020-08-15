@@ -2,22 +2,25 @@
 
 .icon {
   composes: icon from "../../styles/utils.scss";
+  height: 36px;
+  margin-right: 0.75rem;
 }
 
 .container {
   color: var(--color-text-secondary);
   display: flex;
   flex-wrap: wrap;
-  font-size: 1rem;
+  font-family: var(--font-sans);
+  font-size: 14px;
   font-weight: 300;
   padding: 0;
 }
 
 .list_item {
   background-color: darken(#fff, 2);
-  border: solid 1px darken(#e9e7e0, 10); //var(--color-background);
+  border: solid 1px darken(#e9e7e0, 10);
   border-radius: 0.25rem;
-  margin-left: 0.75rem;
+  margin-right: 0.75rem;
   padding: 0.5rem 1rem;
   white-space: nowrap;
 

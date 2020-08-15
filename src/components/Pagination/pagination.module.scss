@@ -45,11 +45,16 @@
   composes: sr_only from "../../styles/utils.scss";
 }
 
+.disabled,
 .current_page,
 .elipsis {
   color: var(--color-text-secondary);
   font-family: var(--font-sans);
   font-weight: 300;
+}
+
+.current_page,
+.elipsis {
   padding: calc(var(--step--2) / 2);
 }
 

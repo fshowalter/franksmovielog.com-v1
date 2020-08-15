@@ -12,6 +12,7 @@
 .list_item {
   border-bottom: solid 1px var(--color-background);
   display: block;
+  padding-right: var(--step-1);
 
   @media (min-width: $breakpoint_desktop) {
     border-right: solid 1px var(--color-background);
