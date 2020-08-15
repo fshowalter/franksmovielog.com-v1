@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import F from "../../../content/assets/1-star.svg";
 import D from "../../../content/assets/2-stars.svg";
@@ -94,28 +93,6 @@ export default function Grade({
     />
   );
 }
-
-Grade.propTypes = {
-  grade: PropTypes.oneOf([
-    "A+",
-    "A",
-    "A-",
-    "B+",
-    "B",
-    "B-",
-    "C+",
-    "C",
-    "C-",
-    "D+",
-    "D",
-    "D-",
-    "F",
-  ]),
-  gradeValue: PropTypes.oneOf([1, 2, 3, 4, 5]),
-  width: PropTypes.number,
-  height: PropTypes.number,
-  className: PropTypes.string,
-};
 
 Grade.defaultProps = {
   width: 70,

@@ -1,22 +1,14 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
+import MarkdownReview from "../../types/MarkdownReview";
 
-type Review = {
-  frontmatter: {
-    // eslint-disable-next-line camelcase
-    imdb_id: string;
-    slug: string;
-  };
-};
-
-function reviewForImdbId(reviews: Review[], imdbId: string) {
-  return reviews.find((review) => review.frontmatter.imdb_id === imdbId);
+function reviewForImdbId(reviews: MarkdownReview[], imdbId: string) {
+  return reviews.find((review) => review.frontmatter.imdbId === imdbId);
 }
 
 type ReviewsQuery = {
   allMarkdownRemark: {
-    nodes: Review[];
+    nodes: MarkdownReview[];
   };
 };
 
@@ -34,7 +26,7 @@ export default function ReviewLink({
       allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
         nodes {
           frontmatter {
-            imdb_id
+            imdbId: imdb_id
             slug
           }
         }
@@ -54,12 +46,6 @@ export default function ReviewLink({
     </Link>
   );
 }
-
-ReviewLink.propTypes = {
-  imdbId: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string,
-};
 
 ReviewLink.defaultProps = {
   className: null,

@@ -7,7 +7,6 @@
 // You can delete this file if you're not using it
 
 const path = require("path");
-const { node } = require("prop-types");
 
 async function createHomePages(graphql, reporter, createPage) {
   const query = await graphql(
@@ -47,7 +46,7 @@ async function createHomePages(graphql, reporter, createPage) {
 
     createPage({
       path: i === 0 ? `/` : `/page-${i + 1}/`,
-      component: path.resolve("./src/templates/home.jsx"),
+      component: path.resolve("./src/templates/home.tsx"),
       context: {
         limit: perPage,
         skip,
@@ -92,7 +91,7 @@ async function createAboutPages(graphql, reporter, createPage) {
 
     createPage({
       path: i === 0 ? `/about/` : `/about/page-${i + 1}/`,
-      component: path.resolve("./src/templates/about.jsx"),
+      component: path.resolve("./src/templates/about.tsx"),
       context: {
         limit: perPage,
         skip,
@@ -130,7 +129,7 @@ async function createReviewPages(graphql, reporter, createPage) {
   query.data.allMarkdownRemark.nodes.forEach((node) => {
     createPage({
       path: `/reviews/${node.frontmatter.slug}/`,
-      component: path.resolve("./src/templates/review.jsx"),
+      component: path.resolve("./src/templates/review.tsx"),
       context: {
         imdbId: node.frontmatter.imdb_id,
       },
@@ -186,7 +185,7 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
   if (watchlistTitlesQuery.errors || reviewsQuery.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphQL query for createWatchlistDirectorPages.`
+      `Error while running GraphQL query for createWatchlistPages.`
     );
     return;
   }
@@ -199,11 +198,12 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
   const reducePerson = (key, accumulator, currentValue) => {
     currentValue[key].forEach((person) => {
-      accumulator[key][person.slug] = accumulator[person.slug] || {};
-      accumulator[key][person.slug].name = person.name;
-      accumulator[key][person.slug].imdbId = person.imdb_id;
-      accumulator[key][person.slug].imdbIds =
-        accumulator[key][person.slug].imdbIds || new Set();
+      if (!accumulator[key][person.slug]) {
+        accumulator[key][person.slug] = {};
+        accumulator[key][person.slug].name = person.name;
+        accumulator[key][person.slug].imdbId = person.imdb_id;
+        accumulator[key][person.slug].imdbIds = new Set();
+      }
 
       accumulator[key][person.slug].imdbIds.add(currentValue.imdb_id);
     });
@@ -220,11 +220,11 @@ async function createWatchlistPages(graphql, reporter, createPage) {
       reducePerson("writers", accumulator, currentValue);
 
       currentValue.collections.forEach((collection) => {
-        accumulator.collections[collection.slug] =
-          accumulator[collection.slug] || {};
-        accumulator.collections[collection.slug].name = collection.name;
-        accumulator.collections[collection.slug].imdbIds =
-          accumulator.collections[collection.slug].imdbIds || new Set();
+        if (!accumulator.collections[collection.slug]) {
+          accumulator.collections[collection.slug] = {};
+          accumulator.collections[collection.slug].name = collection.name;
+          accumulator.collections[collection.slug].imdbIds = new Set();
+        }
 
         accumulator.collections[collection.slug].imdbIds.add(
           currentValue.imdb_id
@@ -246,9 +246,9 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
     createPage({
       path: `/watchlist/directors/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      component: path.resolve("./src/templates/watchlist-entity.tsx"),
       context: {
-        personType: "DIRECTOR",
+        entityType: "DIRECTOR",
         imdbId: director.imdbId,
         imdbIds: [...director.imdbIds],
         name: director.name,
@@ -262,9 +262,9 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
     createPage({
       path: `/watchlist/cast/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      component: path.resolve("./src/templates/watchlist-entity.tsx"),
       context: {
-        personType: "PERFORMER",
+        entityType: "PERFORMER",
         imdbId: performer.imdbId,
         imdbIds: [...performer.imdbIds],
         name: performer.name,
@@ -278,9 +278,9 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
     createPage({
       path: `/watchlist/writers/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      component: path.resolve("./src/templates/watchlist-entity.tsx"),
       context: {
-        personType: "WRITER",
+        entityType: "WRITER",
         imdbId: writer.imdbId,
         imdbIds: [...writer.imdbIds],
         name: writer.name,
@@ -294,9 +294,9 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
     createPage({
       path: `/watchlist/directors/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-person.jsx"),
+      component: path.resolve("./src/templates/watchlist-entity.tsx"),
       context: {
-        personType: "COLLECTION",
+        entityType: "COLLECTION",
         imdbId: collection.imdbId,
         imdbIds: [...collection.imdbIds],
         name: collection.name,

@@ -2,16 +2,6 @@
   "root": true,
   "extends": ["airbnb", "prettier/react", "plugin:prettier/recommended"],
   "ignorePatterns": ["node_modules/", "static/", "public/"],
-  "rules": {
-    "jsx-a11y/label-has-associated-control": [
-      "error",
-      {
-        "controlComponents": ["DebouncedInput", "RangeInput"],
-        "assert": "both",
-        "depth": 25
-      }
-    ]
-  },
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
@@ -52,6 +42,14 @@
           "error",
           {
             "ignore": ["describe"]
+          }
+        ],
+        "jsx-a11y/label-has-associated-control": [
+          "error",
+          {
+            "controlComponents": ["DebouncedInput", "RangeInput"],
+            "assert": "both",
+            "depth": 25
           }
         ],
         "no-useless-constructor": "off",

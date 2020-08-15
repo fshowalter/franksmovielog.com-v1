@@ -1,69 +1,47 @@
-import { Link, graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React, { useReducer } from "react";
-import PropTypes from "prop-types";
-
-import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
-import Layout from "../components/Layout";
-import RangeInput from "../components/RangeInput";
-import Pagination, { PaginationHeader } from "../components/Pagination";
 import Grade from "../components/Grade";
+import Layout from "../components/Layout";
+import {
+  PaginationInfo,
+  PaginationWithButtons,
+} from "../components/Pagination";
+import RangeInput from "../components/RangeInput";
+import JsonReview from "../types/JsonReview";
+import applyFilters from "../utils/apply-filters";
+import slicePage from "../utils/slice-page";
+import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
 import styles from "./reviews.module.scss";
 
-function sortReleaseDateAsc(a, b) {
-  return sortStringAsc(a.year, b.year);
-}
-
-function sortReleaseDateDesc(a, b) {
-  return sortStringDesc(a.year, b.year);
-}
-
-function sortGradeAsc(a, b) {
-  return sortStringAsc(a.grade_value, b.grade_value);
-}
-
-function sortGradeDesc(a, b) {
-  return sortStringDesc(a.grade_value, b.grade_value);
-}
-
-function sortTitleAsc(a, b) {
-  return collator.compare(a.title, b.title);
-}
-
-function escapeRegExp(str = "") {
-  return str.replace(/[-[\]/{}()*+?.\\^$|]/g, "\\$&");
-}
-
-function slicePage(viewings, currentPage, perPage) {
-  const skip = perPage * (currentPage - 1);
-  return viewings.slice(skip, currentPage * perPage);
-}
-
-function filterReviews(viewings, filters) {
-  return viewings.filter((viewing) => {
-    return Object.values(filters).every((filter) => {
-      return filter(viewing);
-    });
-  });
-}
-
-function sortReviews(viewings, sortOrder) {
-  const sortMap = {
-    title: sortTitleAsc,
-    "release-date-desc": sortReleaseDateDesc,
-    "release-date-asc": sortReleaseDateAsc,
-    "grade-asc": sortGradeAsc,
-    "grade-desc": sortGradeDesc,
+function sortReviews(reviews: JsonReview[], sortOrder: string) {
+  const sortMap: Record<string, (a: JsonReview, b: JsonReview) => number> = {
+    title: (a, b) => collator.compare(a.title, b.title),
+    "release-date-desc": (a, b) => sortStringDesc(a.year, b.year),
+    "release-date-asc": (a, b) => sortStringAsc(a.year, b.year),
+    "grade-asc": (a, b) =>
+      sortStringAsc(a.gradeValue.toString(), b.gradeValue.toString()),
+    "grade-desc": (a, b) =>
+      sortStringDesc(a.gradeValue.toString(), b.gradeValue.toString()),
   };
 
   const comparer = sortMap[sortOrder];
-  return viewings.sort(comparer);
+
+  if (!comparer) {
+    return reviews;
+  }
+
+  return reviews.sort(comparer);
 }
 
-function minMaxReleaseYearsForReviews(viewings) {
-  const releaseYears = viewings
-    .map((viewing) => {
-      return viewing.year;
+/**
+ * Returns the min and max release years for a given collection of reviews.
+ * @param reviews The reviews collection.
+ */
+function minMaxReleaseYearsForReviews(reviews: JsonReview[]) {
+  const releaseYears = reviews
+    .map((review) => {
+      return review.year;
     })
     .sort();
 
@@ -73,7 +51,31 @@ function minMaxReleaseYearsForReviews(viewings) {
   return [minYear, maxYear];
 }
 
-function initState({ reviews }) {
+/**
+ * The page state.
+ */
+type State = {
+  /** All possible reviews. */
+  allReviews: JsonReview[];
+  /** Reviews matching the current filters. */
+  filteredReviews: JsonReview[];
+  /** Reviews matching the current filters for the current page. */
+  reviewsForPage: JsonReview[];
+  /** The active filters. */
+  filters: Record<string, (review: JsonReview) => boolean>;
+  /** The current page. */
+  currentPage: number;
+  /** The number of reviews per page. */
+  perPage: number;
+  /** The minimum year for the release date filter. */
+  minYear: number;
+  /** The maximum year for the release date filter. */
+  maxYear: number;
+  /** The active sort value. */
+  sortValue: string;
+};
+
+function initState({ reviews }: { reviews: JsonReview[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForReviews(reviews);
   const currentPage = 1;
   const perPage = 100;
@@ -81,38 +83,77 @@ function initState({ reviews }) {
   return {
     allReviews: reviews,
     filteredReviews: reviews,
-    reviewsForPage: slicePage(reviews, currentPage, perPage),
+    reviewsForPage: slicePage<JsonReview>({
+      collection: reviews,
+      pageToSlice: currentPage,
+      perPage,
+    }),
     filters: {},
     currentPage,
     perPage,
     minYear,
     maxYear,
+    sortValue: "title",
   };
 }
 
-const actions = {
-  FILTER_TITLE: "FILTER_TITLE",
-  FILTER_GRADE: "FILTER_GRADE",
-  FILTER_RELEASE_YEAR: "FILTER_RELEASE_YEAR",
-  SORT: "SORT",
-  CHANGE_PAGE: "CHANGE_PAGE",
-};
+const FILTER_TITLE = "FILTER_TITLE";
+const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
+const SORT = "SORT";
+const CHANGE_PAGE = "CHANGE_PAGE";
 
-function reducer(state, action) {
+/** Action to filter by title. */
+interface FilterTitleAction {
+  type: typeof FILTER_TITLE;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by title. */
+interface FilterReleaseYearAction {
+  type: typeof FILTER_RELEASE_YEAR;
+  /** The minimum and maximum years to bound the filter window. */
+  values: [number, number];
+}
+
+interface SortAction {
+  type: typeof SORT;
+  /** The sorter to apply. */
+  value: string;
+}
+
+interface ChangePageAction {
+  type: typeof CHANGE_PAGE;
+  /** The page to change to. */
+  value: number;
+}
+
+type ActionTypes =
+  | FilterTitleAction
+  | FilterReleaseYearAction
+  | SortAction
+  | ChangePageAction;
+
+/**
+ * Applies the given action to the given state, returning a new State object.
+ * @param state The current state.
+ * @param action The action to apply.
+ */
+function reducer(state: State, action: ActionTypes): State {
   let filters;
   let filteredReviews;
 
   switch (action.type) {
-    case actions.FILTER_TITLE: {
-      const regex = new RegExp(escapeRegExp(action.value), "i");
+    case FILTER_TITLE: {
+      const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (review) => {
+        title: (review: JsonReview) => {
           return regex.test(review.title);
         },
       };
       filteredReviews = sortReviews(
-        filterReviews(state.allReviews, filters),
+        applyFilters<JsonReview>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
@@ -120,15 +161,19 @@ function reducer(state, action) {
         filters,
         filteredReviews,
         currentPage: 1,
-        reviewsForPage: slicePage(filteredReviews, 1, state.perPage),
+        reviewsForPage: slicePage<JsonReview>({
+          collection: filteredReviews,
+          pageToSlice: 1,
+          perPage: state.perPage,
+        }),
       };
     }
-    case actions.FILTER_RELEASE_YEAR: {
+    case FILTER_RELEASE_YEAR: {
       const [minYear, maxYear] = minMaxReleaseYearsForReviews(state.allReviews);
       filters = {
         ...state.filters,
-        releaseYear: (viewing) => {
-          const releaseYear = parseInt(viewing.year, 10);
+        releaseYear: (review: JsonReview) => {
+          const releaseYear = parseInt(review.year, 10);
           if (action.values === [minYear, maxYear]) {
             return true;
           }
@@ -138,7 +183,7 @@ function reducer(state, action) {
         },
       };
       filteredReviews = sortReviews(
-        filterReviews(state.allReviews, filters),
+        applyFilters<JsonReview>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
@@ -146,31 +191,35 @@ function reducer(state, action) {
         filters,
         filteredReviews,
         currentPage: 1,
-        reviewsForPage: slicePage(filteredReviews, 1, state.perPage),
+        reviewsForPage: slicePage<JsonReview>({
+          collection: filteredReviews,
+          pageToSlice: 1,
+          perPage: state.perPage,
+        }),
       };
     }
-    case actions.SORT: {
+    case SORT: {
       filteredReviews = sortReviews(state.filteredReviews, action.value);
       return {
         ...state,
         sortValue: action.value,
         filteredReviews,
-        reviewsForPage: slicePage(
-          filteredReviews,
-          state.currentPage,
-          state.perPage
-        ),
+        reviewsForPage: slicePage<JsonReview>({
+          collection: filteredReviews,
+          pageToSlice: state.currentPage,
+          perPage: state.perPage,
+        }),
       };
     }
-    case actions.CHANGE_PAGE: {
+    case CHANGE_PAGE: {
       return {
         ...state,
         currentPage: action.value,
-        reviewsForPage: slicePage(
-          state.filteredReviews,
-          action.value,
-          state.perPage
-        ),
+        reviewsForPage: slicePage<JsonReview>({
+          collection: state.filteredReviews,
+          pageToSlice: action.value,
+          perPage: state.perPage,
+        }),
       };
     }
     default:
@@ -178,7 +227,14 @@ function reducer(state, action) {
   }
 }
 
-export default function ReviewsPage({ data }) {
+/**
+ * Renders the reviews page.
+ */
+export default function ReviewsPage({
+  data,
+}: {
+  data: PageQueryResult;
+}): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -207,9 +263,7 @@ export default function ReviewsPage({ data }) {
                   id={styles.filter_text_input}
                   placeholder="Enter all or part of a title"
                   className={styles.filter_text_input}
-                  onChange={(value) =>
-                    dispatch({ type: actions.FILTER_TITLE, value })
-                  }
+                  onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
                 />
               </label>
               <label
@@ -222,7 +276,7 @@ export default function ReviewsPage({ data }) {
                   min={state.minYear}
                   max={state.maxYear}
                   onChange={(values) =>
-                    dispatch({ type: actions.FILTER_RELEASE_YEAR, values })
+                    dispatch({ type: FILTER_RELEASE_YEAR, values })
                   }
                 />
               </label>
@@ -233,7 +287,7 @@ export default function ReviewsPage({ data }) {
                   id="viewings-sort-input"
                   className={styles.filter_select_input}
                   onChange={(e) =>
-                    dispatch({ type: actions.SORT, value: e.target.value })
+                    dispatch({ type: SORT, value: e.target.value })
                   }
                 >
                   <option value="title">Title</option>
@@ -251,7 +305,7 @@ export default function ReviewsPage({ data }) {
           </div>
         </div>
         <div className={styles.right}>
-          <PaginationHeader
+          <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredReviews.length}
@@ -275,7 +329,7 @@ export default function ReviewsPage({ data }) {
                   </Link>
                   <div className={styles.list_item_slug}>
                     <Grade
-                      gradeValue={review.grade_value}
+                      gradeValue={review.gradeValue}
                       className={styles.list_item_grade}
                     />
                     {review.date}
@@ -284,12 +338,12 @@ export default function ReviewsPage({ data }) {
               );
             })}
           </ol>
-          <Pagination
+          <PaginationWithButtons
             currentPage={state.currentPage}
-            limit={state.perPage}
+            perPage={state.perPage}
             numberOfItems={state.filteredReviews.length}
             onClick={(newPage) =>
-              dispatch({ type: actions.CHANGE_PAGE, value: newPage })
+              dispatch({ type: CHANGE_PAGE, value: newPage })
             }
           />
         </div>
@@ -298,13 +352,11 @@ export default function ReviewsPage({ data }) {
   );
 }
 
-ReviewsPage.propTypes = {
-  data: PropTypes.shape({
-    reviews: PropTypes.shape({
-      nodes: PropTypes.arrayOf(PropTypes.object).isRequired,
-    }).isRequired,
-  }).isRequired,
-};
+interface PageQueryResult {
+  reviews: {
+    nodes: JsonReview[];
+  };
+}
 
 export const query = graphql`
   query {
@@ -312,10 +364,10 @@ export const query = graphql`
       nodes {
         sequence
         date(formatString: "YYYY-MM-DD")
-        imdb_id
+        imdbId: imdb_id
         title
         year
-        grade_value
+        gradeValue: grade_value
         sort_title
         slug
       }

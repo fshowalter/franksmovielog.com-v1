@@ -1,16 +1,40 @@
 import { graphql } from "gatsby";
 import React, { useReducer } from "react";
-import PropTypes from "prop-types";
-
-import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Layout from "../components/Layout";
-import Pagination, { PaginationHeader } from "../components/Pagination";
+import {
+  PaginationInfo,
+  PaginationWithButtons,
+} from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
-import styles from "./viewings.module.scss";
+import applyFilters from "../utils/apply-filters";
+import slicePage from "../utils/slice-page";
+import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
+import * as styles from "./viewings.module.scss";
 
-function VenueOptions({ viewings }) {
+type Viewing = {
+  date: string;
+  // eslint-disable-next-line camelcase
+  imdb_id: string;
+  sequence: number;
+  // eslint-disable-next-line camelcase
+  sort_title: string;
+  sortDate: string;
+  title: string;
+  venue: string;
+  year: string;
+};
+
+/**
+ * Renders the venue select options.
+ */
+function VenueOptions({
+  viewings,
+}: {
+  /** The viewings to parse for possible venues. */
+  viewings: Viewing[];
+}): JSX.Element {
   const venues = Array.from(
     new Set(viewings.map((viewing) => viewing.venue))
   ).sort((a, b) => collator.compare(a, b));
@@ -29,15 +53,10 @@ function VenueOptions({ viewings }) {
   );
 }
 
-VenueOptions.propTypes = {
-  viewings: PropTypes.arrayOf(
-    PropTypes.shape({
-      venue: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
-
-function ViewingTitle({ viewing }) {
+/**
+ * Renders a viewing title.
+ */
+function ViewingTitle({ viewing }: { viewing: Viewing }) {
   return (
     <div className={styles.list_item_title}>
       <ReviewLink
@@ -53,15 +72,10 @@ function ViewingTitle({ viewing }) {
   );
 }
 
-ViewingTitle.propTypes = {
-  viewing: PropTypes.shape({
-    imdb_id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-  }).isRequired,
-};
-
-function ViewingSlug({ viewing }) {
+/**
+ * Renders a viewing slug.
+ */
+function ViewingSlug({ viewing }: { viewing: Viewing }) {
   return (
     <div className={styles.list_item_slug}>
       {viewing.date} via {viewing.venue}.
@@ -69,64 +83,31 @@ function ViewingSlug({ viewing }) {
   );
 }
 
-ViewingSlug.propTypes = {
-  viewing: PropTypes.shape({
-    date: PropTypes.string.isRequired,
-    venue: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-function sortViewingDateAsc(a, b) {
-  return sortStringAsc(a.sortDate, b.sortDate);
-}
-
-function sortViewingDateDesc(a, b) {
-  return sortStringDesc(a.sortDate, b.sortDate);
-}
-
-function sortReleaseDateAsc(a, b) {
-  return sortStringAsc(a.year, b.year);
-}
-
-function sortReleaseDateDesc(a, b) {
-  return sortStringDesc(a.year, b.year);
-}
-
-function sortTitleAsc(a, b) {
-  return collator.compare(a.sort_title, b.sort_title);
-}
-
-function escapeRegExp(str = "") {
-  return str.replace(/[-[\]/{}()*+?.\\^$|]/g, "\\$&");
-}
-
-function slicePage(viewings, currentPage, perPage) {
-  const skip = perPage * (currentPage - 1);
-  return viewings.slice(skip, currentPage * perPage);
-}
-
-function filterViewings(viewings, filters) {
-  return viewings.filter((viewing) => {
-    return Object.values(filters).every((filter) => {
-      return filter(viewing);
-    });
-  });
-}
-
-function sortViewings(viewings, sortOrder) {
-  const sortMap = {
-    "viewing-date-desc": sortViewingDateDesc,
-    "viewing-date-asc": sortViewingDateAsc,
-    "release-date-desc": sortReleaseDateDesc,
-    "release-date-asc": sortReleaseDateAsc,
-    title: sortTitleAsc,
+/**
+ * Sorts a given collection of viewings using the given sort function key.
+ * @param viewings The collection to sort.
+ * @param sortOrder The sort function key.
+ */
+function sortViewings(viewings: Viewing[], sortOrder: string) {
+  const sortMap: Record<string, (a: Viewing, b: Viewing) => number> = {
+    "viewing-date-desc": (a, b) => sortStringDesc(a.sortDate, b.sortDate),
+    "viewing-date-asc": (a, b) => sortStringAsc(a.sortDate, b.sortDate),
+    "release-date-desc": (a, b) =>
+      sortStringDesc(a.year.toString(), b.year.toString()),
+    "release-date-asc": (a, b) =>
+      sortStringAsc(a.year.toString(), b.year.toString()),
+    title: (a, b) => collator.compare(a.sort_title, b.sort_title),
   };
 
   const comparer = sortMap[sortOrder];
   return viewings.sort(comparer);
 }
 
-function minMaxReleaseYearsForViewings(viewings) {
+/**
+ * Parses the given viewings and returns the [min, max] release years.
+ * @param viewings The viewings to parse.
+ */
+function minMaxReleaseYearsForViewings(viewings: Viewing[]) {
   const releaseYears = viewings
     .map((viewing) => {
       return viewing.year;
@@ -139,7 +120,32 @@ function minMaxReleaseYearsForViewings(viewings) {
   return [minYear, maxYear];
 }
 
-function initState({ viewings }) {
+/** The page state. */
+type State = {
+  /** All possible viewings. */
+  allViewings: Viewing[];
+  /** Viewings matching the current filters. */
+  filteredViewings: Viewing[];
+  /** Viewings matching the current filters for the current page. */
+  viewingsForPage: Viewing[];
+  /** The active filters. */
+  filters: Record<string, (viewing: Viewing) => boolean>;
+  /** The current page. */
+  currentPage: number;
+  /** The number of reviews per page. */
+  perPage: number;
+  /** The minimum year for the release date filter. */
+  minYear: number;
+  /** The maximum year for the release date filter. */
+  maxYear: number;
+  /** The active sort value. */
+  sortValue: string;
+};
+
+/**
+ * Initializes the page state.
+ */
+function initState({ viewings }: { viewings: Viewing[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForViewings(viewings);
   const currentPage = 1;
   const perPage = 50;
@@ -147,38 +153,88 @@ function initState({ viewings }) {
   return {
     allViewings: viewings,
     filteredViewings: viewings,
-    viewingsForPage: slicePage(viewings, currentPage, perPage),
+    viewingsForPage: slicePage<Viewing>({
+      collection: viewings,
+      pageToSlice: currentPage,
+      perPage,
+    }),
     filters: {},
     currentPage,
     perPage,
     minYear,
     maxYear,
+    sortValue: "viewing-date-desc",
   };
 }
 
-const actions = {
-  FILTER_TITLE: "FILTER_TITLE",
-  FILTER_VENUE: "FILTER_VENUE",
-  FILTER_RELEASE_YEAR: "FILTER_RELEASE_YEAR",
-  SORT: "SORT",
-  CHANGE_PAGE: "CHANGE_PAGE",
-};
+const FILTER_TITLE = "FILTER_TITLE";
+const FILTER_VENUE = "FILTER_VENUE";
+const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
+const SORT = "SORT";
+const CHANGE_PAGE = "CHANGE_PAGE";
 
-function reducer(state, action) {
+/** Action to filter by title. */
+interface FilterTitleAction {
+  type: typeof FILTER_TITLE;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by title. */
+interface FilterVenueAction {
+  type: typeof FILTER_VENUE;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by release year. */
+interface FilterReleaseYearAction {
+  type: typeof FILTER_RELEASE_YEAR;
+  /** The minimum and maximum years to bound the filter window. */
+  values: [number, number];
+}
+
+/** Action to sort. */
+interface SortAction {
+  type: typeof SORT;
+  /** The sorter to apply. */
+  value: string;
+}
+
+/** Action to change page. */
+interface ChangePageAction {
+  type: typeof CHANGE_PAGE;
+  /** The page to change to. */
+  value: number;
+}
+
+type ActionTypes =
+  | FilterTitleAction
+  | FilterReleaseYearAction
+  | FilterVenueAction
+  | SortAction
+  | ChangePageAction;
+
+/**
+ * Applies the given action to the given state, returning a new State object.
+ * @param state The current state.
+ * @param action The action to apply.
+ */
+function reducer(state: State, action: ActionTypes) {
   let filters;
   let filteredViewings;
 
   switch (action.type) {
-    case actions.FILTER_TITLE: {
-      const regex = new RegExp(escapeRegExp(action.value), "i");
+    case FILTER_TITLE: {
+      const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (viewing) => {
+        title: (viewing: Viewing) => {
           return regex.test(viewing.title);
         },
       };
       filteredViewings = sortViewings(
-        filterViewings(state.allViewings, filters),
+        applyFilters<Viewing>({ collection: state.allViewings, filters }),
         state.sortValue
       );
       return {
@@ -186,13 +242,17 @@ function reducer(state, action) {
         filters,
         filteredViewings,
         currentPage: 1,
-        viewingsForPage: slicePage(filteredViewings, 1, state.perPage),
+        viewingsForPage: slicePage<Viewing>({
+          collection: filteredViewings,
+          pageToSlice: 1,
+          perPage: state.perPage,
+        }),
       };
     }
-    case actions.FILTER_VENUE: {
+    case FILTER_VENUE: {
       filters = {
         ...state.filters,
-        venue: (viewing) => {
+        venue: (viewing: Viewing) => {
           if (action.value === "All") {
             return true;
           }
@@ -201,7 +261,7 @@ function reducer(state, action) {
         },
       };
       filteredViewings = sortViewings(
-        filterViewings(state.allViewings, filters),
+        applyFilters<Viewing>({ collection: state.allViewings, filters }),
         state.sortValue
       );
       return {
@@ -209,16 +269,20 @@ function reducer(state, action) {
         filters,
         filteredViewings,
         currentPage: 1,
-        viewingsForPage: slicePage(filteredViewings, 1, state.perPage),
+        viewingsForPage: slicePage<Viewing>({
+          collection: filteredViewings,
+          pageToSlice: 1,
+          perPage: state.perPage,
+        }),
       };
     }
-    case actions.FILTER_RELEASE_YEAR: {
+    case FILTER_RELEASE_YEAR: {
       const [minYear, maxYear] = minMaxReleaseYearsForViewings(
         state.allViewings
       );
       filters = {
         ...state.filters,
-        releaseYear: (viewing) => {
+        releaseYear: (viewing: Viewing) => {
           const releaseYear = parseInt(viewing.year, 10);
           if (action.values === [minYear, maxYear]) {
             return true;
@@ -229,7 +293,7 @@ function reducer(state, action) {
         },
       };
       filteredViewings = sortViewings(
-        filterViewings(state.allViewings, filters),
+        applyFilters<Viewing>({ collection: state.allViewings, filters }),
         state.sortValue
       );
       return {
@@ -237,31 +301,35 @@ function reducer(state, action) {
         filters,
         filteredViewings,
         currentPage: 1,
-        viewingsForPage: slicePage(filteredViewings, 1, state.perPage),
+        viewingsForPage: slicePage<Viewing>({
+          collection: filteredViewings,
+          pageToSlice: 1,
+          perPage: state.perPage,
+        }),
       };
     }
-    case actions.SORT: {
+    case SORT: {
       filteredViewings = sortViewings(state.filteredViewings, action.value);
       return {
         ...state,
         sortValue: action.value,
         filteredViewings,
-        viewingsForPage: slicePage(
-          filteredViewings,
-          state.currentPage,
-          state.perPage
-        ),
+        viewingsForPage: slicePage<Viewing>({
+          collection: filteredViewings,
+          pageToSlice: state.currentPage,
+          perPage: state.perPage,
+        }),
       };
     }
-    case actions.CHANGE_PAGE: {
+    case CHANGE_PAGE: {
       return {
         ...state,
         currentPage: action.value,
-        viewingsForPage: slicePage(
-          state.filteredViewings,
-          action.value,
-          state.perPage
-        ),
+        viewingsForPage: slicePage<Viewing>({
+          collection: state.filteredViewings,
+          pageToSlice: action.value,
+          perPage: state.perPage,
+        }),
       };
     }
     default:
@@ -269,7 +337,14 @@ function reducer(state, action) {
   }
 }
 
-export default function ViewingsPage({ data }) {
+/**
+ * Renders the viewings page.
+ */
+export default function ViewingsPage({
+  data,
+}: {
+  data: PageQueryResult;
+}): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -298,9 +373,7 @@ export default function ViewingsPage({ data }) {
                   id="viewings-title-input"
                   className={styles.filter_text_input}
                   placeholder="Enter all or part of a title"
-                  onChange={(value) =>
-                    dispatch({ type: actions.FILTER_TITLE, value })
-                  }
+                  onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
                 />
               </label>
               <label
@@ -313,7 +386,7 @@ export default function ViewingsPage({ data }) {
                   min={state.minYear}
                   max={state.maxYear}
                   onChange={(values) =>
-                    dispatch({ type: actions.FILTER_RELEASE_YEAR, values })
+                    dispatch({ type: FILTER_RELEASE_YEAR, values })
                   }
                 />
               </label>
@@ -324,7 +397,7 @@ export default function ViewingsPage({ data }) {
                   className={styles.filter_select_input}
                   onChange={(e) =>
                     dispatch({
-                      type: actions.FILTER_VENUE,
+                      type: FILTER_VENUE,
                       value: e.target.value,
                     })
                   }
@@ -339,7 +412,7 @@ export default function ViewingsPage({ data }) {
                   className={styles.filter_select_input}
                   id="viewings-sort-input"
                   onChange={(e) =>
-                    dispatch({ type: actions.SORT, value: e.target.value })
+                    dispatch({ type: SORT, value: e.target.value })
                   }
                 >
                   <option value="viewing-date-desc">
@@ -361,7 +434,7 @@ export default function ViewingsPage({ data }) {
           </div>
         </div>
         <div className={styles.right}>
-          <PaginationHeader
+          <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredViewings.length}
@@ -381,12 +454,12 @@ export default function ViewingsPage({ data }) {
               );
             })}
           </ol>
-          <Pagination
+          <PaginationWithButtons
             currentPage={state.currentPage}
-            limit={state.perPage}
+            perPage={state.perPage}
             numberOfItems={state.filteredViewings.length}
             onClick={(newPage) =>
-              dispatch({ type: actions.CHANGE_PAGE, value: newPage })
+              dispatch({ type: CHANGE_PAGE, value: newPage })
             }
           />
         </div>
@@ -395,13 +468,11 @@ export default function ViewingsPage({ data }) {
   );
 }
 
-ViewingsPage.propTypes = {
-  data: PropTypes.shape({
-    allViewingsJson: PropTypes.shape({
-      nodes: PropTypes.arrayOf(PropTypes.object).isRequired,
-    }).isRequired,
-  }).isRequired,
-};
+interface PageQueryResult {
+  allViewingsJson: {
+    nodes: Viewing[];
+  };
+}
 
 export const pageQuery = graphql`
   query {

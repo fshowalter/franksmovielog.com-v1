@@ -1,23 +1,33 @@
-import PropTypes from "prop-types";
 import React from "react";
 import ReactSlider from "react-slider";
 import * as styles from "./rangeInput.module.scss";
 
+/**
+ * Renders a dual-handle range slider.
+ */
 export default function RangeFilter({
   id,
   min,
   max,
   onChange,
 }: {
+  /** A unique id for this form control. */
   id: string;
+  /** The lowest number in the range. */
   min: number;
+  /** The highest number in the range. */
   max: number;
-  onChange: (arg0: [number, number]) => void;
+  /** Handler called when the control changes. */
+  onChange: (values: [number, number]) => void;
 }): JSX.Element {
   const initialState: [number, number] = [min, max];
 
   const [state, setState] = React.useState(initialState.slice());
 
+  /**
+   * Validates a given pair of values fall within the min and max.
+   * @param values The values to validate.
+   */
   const valuesAreValid = (values: [number, number]) => {
     return (
       values[0] >= min &&
@@ -94,10 +104,3 @@ export default function RangeFilter({
     </div>
   );
 }
-
-RangeFilter.propTypes = {
-  id: PropTypes.string.isRequired,
-  min: PropTypes.number.isRequired,
-  max: PropTypes.number.isRequired,
-  onChange: PropTypes.func.isRequired,
-};

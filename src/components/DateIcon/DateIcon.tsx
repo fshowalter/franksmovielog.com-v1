@@ -1,10 +1,13 @@
-import PropTypes from "prop-types";
 import React from "react";
 import * as styles from "./dateIcon.module.scss";
 
+/**
+ * Renders a calendar icon.
+ */
 export default function DateIcon({
-  className,
+  className = styles.icon,
 }: {
+  /** CSS class to apply to the rendered element. */
   className?: string;
 }): JSX.Element {
   const svgClassName = className || styles.icon;
@@ -34,10 +37,6 @@ export default function DateIcon({
     </svg>
   );
 }
-
-DateIcon.propTypes = {
-  className: PropTypes.string,
-};
 
 DateIcon.defaultProps = {
   className: styles.icon,

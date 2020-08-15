@@ -1,9 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import {
-  WatchlistTitle,
-  WatchlistTitlePropTypes,
-} from "../../types/watchlistTitle";
+import WatchlistMovie from "../../types/WatchlistMovie";
 import * as styles from "./watchlistlinks.module.scss";
 
 function WatchlistItem({
@@ -21,11 +18,11 @@ function WatchlistItem({
 }
 
 function WatchlistLinks({
-  watchlistTitle,
+  watchlistMovie,
 }: {
-  watchlistTitle?: WatchlistTitle;
+  watchlistMovie?: WatchlistMovie;
 }): JSX.Element | null {
-  if (!watchlistTitle) {
+  if (!watchlistMovie) {
     return null;
   }
 
@@ -49,28 +46,28 @@ function WatchlistLinks({
         />
       </svg>
       <ul>
-        {watchlistTitle.collections.map((collection) => {
+        {watchlistMovie.collections.map((collection) => {
           return (
             <WatchlistItem to={`/watchlist/collections/${collection.slug}/`}>
               {collection.name}
             </WatchlistItem>
           );
         })}
-        {watchlistTitle.directors.map((director) => {
+        {watchlistMovie.directors.map((director) => {
           return (
             <WatchlistItem to={`/watchlist/directors/${director.slug}/`}>
               {director.name}
             </WatchlistItem>
           );
         })}
-        {watchlistTitle.performers.map((performer) => {
+        {watchlistMovie.performers.map((performer) => {
           return (
             <WatchlistItem to={`/watchlist/cast/${performer.slug}/`}>
               {performer.name}
             </WatchlistItem>
           );
         })}
-        {watchlistTitle.writers.map((writer) => {
+        {watchlistMovie.writers.map((writer) => {
           return (
             <WatchlistItem to={`/watchlist/writers/${writer.slug}/`}>
               {writer.name}
@@ -82,12 +79,8 @@ function WatchlistLinks({
   );
 }
 
-WatchlistLinks.propTypes = {
-  watchlistTitle: WatchlistTitlePropTypes,
-};
-
 WatchlistLinks.defaultProps = {
-  watchlistTitle: null,
+  watchlistMovie: null,
 };
 
 export default WatchlistLinks;

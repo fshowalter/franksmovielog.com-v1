@@ -1,7 +1,6 @@
-import PropTypes from "prop-types";
 import React from "react";
 
-export type onChangeHandler = (...args: unknown[]) => void;
+export type onChangeHandler = (value: string) => void;
 
 /**
  * Wraps a given function in a setTimeout call with the given milliseconds.
@@ -12,10 +11,10 @@ export type onChangeHandler = (...args: unknown[]) => void;
 function delay<F extends onChangeHandler>(
   func: F,
   wait: number,
-  ...args: unknown[]
+  value: string
 ): NodeJS.Timeout {
   return setTimeout(function delayWrap() {
-    return func(...args);
+    return func(value);
   }, wait);
 }
 
@@ -30,19 +29,17 @@ function underscoreDebounce<F extends onChangeHandler>(
 ): onChangeHandler {
   let timeout: NodeJS.Timeout | null = null;
 
-  const later = function later(...args: unknown[]) {
+  const later = function later(value: string) {
     timeout = null;
-    if (args) {
-      func(...args);
-    }
+    func(value);
   };
 
-  return function debouncedFunction(...args): void {
+  return function debouncedFunction(value: string): void {
     if (timeout) {
       clearTimeout(timeout);
     }
 
-    timeout = delay(later, wait, null, args);
+    timeout = delay(later, wait, value);
   };
 }
 
@@ -54,7 +51,7 @@ export default function DebouncedInput({
 }: {
   className?: string;
   id: string;
-  placeholder: string;
+  placeholder?: string;
   onChange: onChangeHandler;
 }): JSX.Element {
   const debouncedHandleChange = underscoreDebounce(onChange, 150);
@@ -73,11 +70,4 @@ export default function DebouncedInput({
 DebouncedInput.defaultProps = {
   placeholder: "",
   className: null,
-};
-
-DebouncedInput.propTypes = {
-  id: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
-  className: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
 };

@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
-import PropTypes from "prop-types";
 import React from "react";
 import Layout from "../components/Layout";
 
@@ -26,29 +25,6 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
     </Layout>
   );
 }
-
-AboutPage.propTypes = {
-  data: PropTypes.shape({
-    page: PropTypes.shape({
-      nodes: PropTypes.arrayOf(
-        PropTypes.shape({
-          frontmatter: PropTypes.shape({
-            slug: PropTypes.string.isRequired,
-            title: PropTypes.string.isRequired,
-          }).isRequired,
-          backdrop: PropTypes.shape({
-            childImageSharp: PropTypes.shape({
-              fluid: PropTypes.shape({
-                src: PropTypes.string.isRequired,
-              }),
-            }),
-          }).isRequired,
-          html: PropTypes.string.isRequired,
-        }).isRequired
-      ),
-    }).isRequired,
-  }).isRequired,
-};
 
 type PageQueryResult = {
   data: {

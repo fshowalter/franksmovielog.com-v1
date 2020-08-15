@@ -1,10 +1,13 @@
-import PropTypes from "prop-types";
 import React from "react";
 import * as styles from "./searchIcon.module.scss";
 
+/**
+ * Renders a search icon.
+ */
 export default function SearchIcon({
   className = styles.icon,
 }: {
+  /** CSS class to apply to the rendered element. */
   className?: string;
 }): JSX.Element {
   return (
@@ -26,10 +29,6 @@ export default function SearchIcon({
     </svg>
   );
 }
-
-SearchIcon.propTypes = {
-  className: PropTypes.string,
-};
 
 SearchIcon.defaultProps = {
   className: styles.icon,

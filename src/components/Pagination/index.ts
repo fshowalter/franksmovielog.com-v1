@@ -1,4 +1,7 @@
-import Pagination, { PaginationHeader } from "./Pagination";
+import {
+  PaginationInfo,
+  PaginationWithButtons,
+  PaginationWithLinks,
+} from "./Pagination";
 
-export default Pagination;
-export { PaginationHeader };
+export { PaginationInfo, PaginationWithButtons, PaginationWithLinks };

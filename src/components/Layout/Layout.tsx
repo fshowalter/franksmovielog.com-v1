@@ -7,7 +7,6 @@
  */
 
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../../styles/js.scss";
@@ -17,11 +16,6 @@ import * as styles from "./layout.module.scss";
 type NavItemProps = {
   to: string;
   children: React.ReactNode;
-};
-
-const NavItemPropTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
 };
 
 function MastNavItem({ to, children }: NavItemProps): JSX.Element {
@@ -38,8 +32,6 @@ function MastNavItem({ to, children }: NavItemProps): JSX.Element {
   );
 }
 
-MastNavItem.propTypes = NavItemPropTypes;
-
 function FooterNavItem({ to, children }: NavItemProps): JSX.Element {
   return (
     <li className={styles.footer_nav_list_item}>
@@ -48,9 +40,11 @@ function FooterNavItem({ to, children }: NavItemProps): JSX.Element {
   );
 }
 
-FooterNavItem.propTypes = NavItemPropTypes;
-
-function Layout({ children }: { children: React.ReactNode }): JSX.Element {
+export default function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}): JSX.Element {
   return (
     <>
       <a className={styles.skip_link} href="#content">
@@ -141,9 +135,3 @@ function Layout({ children }: { children: React.ReactNode }): JSX.Element {
     </>
   );
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default Layout;
