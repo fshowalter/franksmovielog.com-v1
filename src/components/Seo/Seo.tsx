@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 
-type SEOQuery = {
+interface SEOQueryResult {
   site: {
     siteMetadata: {
       defaultTitle?: string;
@@ -13,21 +13,7 @@ type SEOQuery = {
       defaultImage: string;
     };
   };
-};
-
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        titleTemplate
-        defaultDescription: description
-        siteUrl: url
-        defaultImage
-      }
-    }
-  }
-`;
+}
 
 function SEO({
   title,
@@ -41,7 +27,19 @@ function SEO({
   article?: boolean;
 }): JSX.Element {
   const { pathname } = useLocation();
-  const data: SEOQuery = useStaticQuery(query);
+  const data: SEOQueryResult = useStaticQuery(graphql`
+    query SEO {
+      site {
+        siteMetadata {
+          defaultTitle: title
+          titleTemplate
+          defaultDescription: description
+          siteUrl: url
+          defaultImage: image
+        }
+      }
+    }
+  `);
   const {
     defaultTitle,
     titleTemplate,
@@ -59,7 +57,7 @@ function SEO({
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
-      {/* <meta name="image" content={seo.image} /> */}
+      <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}

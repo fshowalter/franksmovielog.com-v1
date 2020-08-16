@@ -42,7 +42,7 @@
 }
 
 .pagination_heading {
-  composes: sr_only from "../../styles/utils.scss";
+  composes: sr_only from "../../styles/sr.scss";
 }
 
 .disabled,

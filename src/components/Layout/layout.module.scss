@@ -46,13 +46,14 @@
 }
 
 .skip_link {
-  background: #319795;
+  background: var(--color-link);
   color: #fff;
   font-weight: 700;
   left: 50%;
-  padding: 4px;
+  padding: 0.5rem var(--step-1);
   position: absolute;
   transform: translateY(-100%);
+  z-index: 100;
 }
 
 .skip_link:focus {
@@ -136,6 +137,7 @@
 }
 
 .mast_nav {
+  padding: 0 var(--step-1);
   width: 100%;
 
   @media (min-width: 80rem) {
@@ -150,7 +152,6 @@
   justify-content: center;
   letter-spacing: 1px;
   margin: 0 -0.5rem;
-  padding: 0 var(--step-1);
   white-space: nowrap;
 
   @media (min-width: $breakpoint_tablet) {
@@ -231,9 +232,10 @@
 
 .mast_search_form {
   flex-grow: 1;
-  margin-bottom: 1.5rem;
-  // max-width: 50%;
+  margin: 0 auto 1.5rem;
+  max-width: 66ch;
   min-width: 25%;
+  width: 100%;
 
   @media (min-width: $breakpoint_tablet) {
     max-width: 350px;
@@ -267,7 +269,7 @@
 
 .mast_search_label,
 .footer_search_label {
-  composes: sr_only from "../../styles/utils.scss";
+  composes: sr_only from "../../styles/sr.scss";
 }
 
 .mast_search_input {
@@ -352,7 +354,7 @@
 }
 
 .footer_to_the_top {
-  composes: sr_only from "../../styles/utils.scss";
+  composes: sr_only from "../../styles/sr.scss";
 }
 
 .footer_fair_use {

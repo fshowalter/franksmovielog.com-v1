@@ -6,6 +6,7 @@ import Grade from "../components/Grade";
 import Layout from "../components/Layout";
 import { PaginationWithLinks } from "../components/Pagination";
 import ReviewLink from "../components/ReviewLink";
+import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
 import JsonReview from "../types/JsonReview";
 import MarkdownReview from "../types/MarkdownReview";
@@ -25,6 +26,13 @@ export default function HomeTemplate({
 }): JSX.Element {
   return (
     <Layout>
+      <Seo
+        title={
+          pageContext.currentPage === 1
+            ? "Home"
+            : `Page ${pageContext.currentPage}`
+        }
+      />
       <main className={styles.container}>
         <ol className={styles.list}>
           {data.updates.nodes.map((update, index) => {

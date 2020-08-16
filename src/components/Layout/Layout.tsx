@@ -9,7 +9,6 @@
 import { Link } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
-import "../../styles/js.scss";
 import SearchIcon from "../SearchIcon";
 import * as styles from "./layout.module.scss";
 
@@ -56,7 +55,7 @@ export default function Layout({
             <html lang="en-us" />
             <meta
               name="viewport"
-              content="width=device-width, initial-scale=1.0, maximum-scale=1"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
           </Helmet>
 
@@ -93,6 +92,7 @@ export default function Layout({
                     type="submit"
                     className={styles.mast_search_submit}
                     value="Search"
+                    aria-label="Search"
                   >
                     <SearchIcon />
                   </button>
