@@ -305,7 +305,7 @@ async function createWatchlistPages(graphql, reporter, createPage) {
     const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
-      path: `/watchlist/directors/${slug}/`,
+      path: `/watchlist/collections/${slug}/`,
       component,
       context: {
         avatarPath,
