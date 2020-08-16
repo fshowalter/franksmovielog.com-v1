@@ -152,7 +152,7 @@
 }
 
 .pagination {
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: 1076px) {
     margin: 0 calc(-1 * var(--step-1));
   }
 }
