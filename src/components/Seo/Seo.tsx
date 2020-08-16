@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 
-interface SEOQueryResult {
+export interface SeoQueryResult {
   site: {
     siteMetadata: {
       defaultTitle?: string;
@@ -15,7 +15,7 @@ interface SEOQueryResult {
   };
 }
 
-function SEO({
+function Seo({
   title,
   description,
   image,
@@ -27,7 +27,7 @@ function SEO({
   article?: boolean;
 }): JSX.Element {
   const { pathname } = useLocation();
-  const data: SEOQueryResult = useStaticQuery(graphql`
+  const data: SeoQueryResult = useStaticQuery(graphql`
     query SEO {
       site {
         siteMetadata {
@@ -67,9 +67,9 @@ function SEO({
     </Helmet>
   );
 }
-export default SEO;
+export default Seo;
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   title: null,
   description: null,
   image: null,

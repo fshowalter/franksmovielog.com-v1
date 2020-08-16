@@ -124,14 +124,14 @@ interface ReviewUpdate extends MarkdownReview {
   postType: "REVIEW";
 }
 
-interface PageContext {
+export interface PageContext {
   limit: number;
   skip: number;
   numberOfItems: number;
   currentPage: number;
 }
 
-interface PageQueryResult {
+export interface PageQueryResult {
   updates: {
     nodes: ReviewUpdate[];
   };

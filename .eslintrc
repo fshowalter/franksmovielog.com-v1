@@ -2,6 +2,9 @@
   "root": true,
   "extends": ["airbnb", "prettier/react", "plugin:prettier/recommended"],
   "ignorePatterns": ["node_modules/", "static/", "public/"],
+  "env": {
+    "jest/globals": true
+  },
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
@@ -38,6 +41,7 @@
             "tsx": "never"
           }
         ],
+        "jest/no-hooks": ["off"],
         "jest/lowercase-name": [
           "error",
           {

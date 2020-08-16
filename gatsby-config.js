@@ -8,9 +8,6 @@ module.exports = {
     title: "Frank's Movie Log",
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-svgr",
-    },
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     `gatsby-transformer-sharp`,

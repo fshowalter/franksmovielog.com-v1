@@ -19,6 +19,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: $breakpoint_desktop) {
+    padding-bottom: var(--step-5);
+  }
 }
 
 .list_item {
@@ -108,6 +112,7 @@
   font-size: 14px;
   font-weight: 300;
   grid-area: slug;
+  letter-spacing: 0.25px;
   line-height: 24px;
   line-height: 36px;
   white-space: nowrap;

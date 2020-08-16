@@ -137,11 +137,13 @@
 }
 
 .mast_nav {
+  font-family: var(--font-sans);
   padding: 0 var(--step-1);
   width: 100%;
 
   @media (min-width: 80rem) {
     grid-area: nav;
+    padding: 0 1rem;
   }
 }
 
@@ -150,7 +152,7 @@
   flex-wrap: wrap;
   font-size: 16px;
   justify-content: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.25px;
   margin: 0 -0.5rem;
   white-space: nowrap;
 
@@ -206,7 +208,6 @@
     border: 0;
     color: var(--color-link);
     font-size: 16px;
-    letter-spacing: 1px;
     margin: 0;
     padding: 0;
 
