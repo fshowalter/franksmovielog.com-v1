@@ -16,6 +16,11 @@ type MarkdownReview = {
       fluid: FluidObject;
     };
   };
+  poster: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
   linkedHtml: string;
 };
 

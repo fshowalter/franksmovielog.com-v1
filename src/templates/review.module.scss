@@ -3,6 +3,20 @@
 .container {
   background-color: darken(#fff, 0.5);
   max-width: 1000px;
+
+  @media (min-width: $breakpoint_desktop) {
+    column-gap: calc(2 * var(--step-1));
+    display: grid;
+    grid-template-areas: "backdrop backdrop" "title title" "directors poster" "cast poster" "watchlist poster" "reviews poster";
+    grid-template-columns: calc(66ch + var(--step-1) + 0.5rem) 25%;
+    grid-template-rows: auto auto auto auto auto 1fr;
+    justify-content: space-between;
+  }
+}
+
+.reviews {
+  align-self: start;
+  grid-area: reviews;
 }
 
 .review {
@@ -69,14 +83,50 @@
 
 .cast_and_crew {
   color: var(--color-text-secondary);
+  column-gap: var(--step-1);
+  display: grid;
   font-size: 16px;
   font-weight: 400;
+  grid-template-areas: "directors poster" "cast poster" ". poster" "watchlist watchlist";
+  grid-template-columns: 1fr 25%;
+  grid-template-rows: auto auto 1fr auto;
   letter-spacing: 0.2px;
   padding: 1.5rem var(--step-1);
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpoint_tablet) {
     grid-area: meta;
+    grid-template-areas: "directors poster" "cast poster" "watchlist poster";
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    display: contents;
     padding: 1.5rem 0.5rem;
+  }
+}
+
+.poster {
+  align-self: start;
+  grid-area: poster;
+
+  @media (min-width: $breakpoint_desktop) {
+    margin: 1.5rem 0 var(--step-5);
+  }
+}
+
+.directors {
+  grid-area: directors;
+
+  @media (min-width: $breakpoint_desktop) {
+    padding: 1.5rem 0.5rem 0;
+  }
+}
+
+.cast {
+  grid-area: cast;
+  margin-top: 1rem;
+
+  @media (min-width: $breakpoint_desktop) {
+    padding: 0 0.5rem;
   }
 }
 
@@ -125,9 +175,14 @@
 }
 
 .watchlist {
+  grid-area: watchlist;
   margin-top: 1.5rem;
 
   a {
     color: var(--color-link);
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    padding: 0 0.5rem;
   }
 }

@@ -9,7 +9,7 @@ import JsonReview from "../types/JsonReview";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie from "../types/WatchlistMovie";
 import toSentenceArray from "../utils/to-sentence-array";
-import styles from "./review.module.scss";
+import * as styles from "./review.module.scss";
 
 /**
  * Renders a review page.
@@ -36,44 +36,56 @@ export default function Review({
           <span className={styles.title_year}>{movieInfo.year}</span>
         </h1>
         <aside className={styles.cast_and_crew}>
-          <span className={styles.cast_label}>Directed by</span>
-          {toSentenceArray(
-            movieInfo.directors.map((director) => director.name)
-          )}
-          <span className={styles.cast_label}>Starring</span>
-          {toSentenceArray(
-            movieInfo.principalCast.map((person) => person.name)
-          )}
+          <Img
+            className={styles.poster}
+            fluid={reviews[0].poster.childImageSharp.fluid}
+            alt={`A poster from ${movieInfo.title} (${movieInfo.year})`}
+          />
+          <div className={styles.directors}>
+            <span className={styles.cast_label}>Directed by</span>
+            {toSentenceArray(
+              movieInfo.directors.map((director) => director.name)
+            )}
+          </div>
+          <div className={styles.cast}>
+            <span className={styles.cast_label}>Starring</span>
+            {toSentenceArray(
+              movieInfo.principalCast.map((person) => person.name)
+            )}
+          </div>
           {watchlistMovie && (
             <div className={styles.watchlist}>
               <WatchlistLinks watchlistMovie={watchlistMovie} />
             </div>
           )}
         </aside>
-        {reviews.map((review) => {
-          return (
-            <div className={styles.review}>
-              <div className={styles.slug}>
-                <DateIcon className={styles.date_icon} />{" "}
-                <span className={styles.date}>{review.frontmatter.date}</span>{" "}
-                via {review.frontmatter.venue} ({review.frontmatter.venueNotes})
-              </div>
-              <div className={styles.content}>
-                <Grade
-                  grade={review.frontmatter.grade}
-                  className={styles.grade}
-                />
-                <div
-                  className={styles.body}
-                  // eslint-disable-next-line react/no-danger
-                  dangerouslySetInnerHTML={{
-                    __html: review.linkedHtml,
-                  }}
-                />
-              </div>
-            </div>
-          );
-        })}
+        <ul className={styles.reviews}>
+          {reviews.map((review) => {
+            return (
+              <li className={styles.review}>
+                <div className={styles.slug}>
+                  <DateIcon className={styles.date_icon} />{" "}
+                  <span className={styles.date}>{review.frontmatter.date}</span>{" "}
+                  via {review.frontmatter.venue} (
+                  {review.frontmatter.venueNotes})
+                </div>
+                <div className={styles.content}>
+                  <Grade
+                    grade={review.frontmatter.grade}
+                    className={styles.grade}
+                  />
+                  <div
+                    className={styles.body}
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{
+                      __html: review.linkedHtml,
+                    }}
+                  />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </article>
     </Layout>
   );
@@ -111,7 +123,7 @@ export const pageQuery = graphql`
         }
         poster {
           childImageSharp {
-            fluid(jpegQuality: 75) {
+            fluid {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
