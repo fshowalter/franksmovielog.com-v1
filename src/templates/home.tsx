@@ -155,7 +155,7 @@ export const pageQuery = graphql`
         }
         backdrop {
           childImageSharp {
-            fluid(maxWidth: 518, quality: 80) {
+            fluid(toFormat: JPG, maxWidth: 518, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
