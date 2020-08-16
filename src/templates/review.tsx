@@ -116,14 +116,14 @@ export const pageQuery = graphql`
         }
         backdrop {
           childImageSharp {
-            fluid(toFormat: JPG, jpegQuality: 75) {
+            fluid(maxWidth: 934, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         poster {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 238, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

@@ -35,10 +35,10 @@
 
   @media (min-width: 80rem) {
     align-items: start;
-    column-gap: calc(2 * var(--step-1));
+    column-gap: var(--step-1);
     display: grid;
     grid-template-areas: "children header" "children nav";
-    grid-template-columns: 1fr 225px;
+    grid-template-columns: 1fr 250px;
     grid-template-rows: auto 1fr;
     max-width: none;
     padding: var(--step-1);
@@ -57,6 +57,18 @@
 
 .skip_link:focus {
   transform: translateY(0%);
+}
+
+.sticky_wrap {
+  display: contents;
+
+  @media (min-width: 80rem) {
+    display: block;
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 250px;
+  }
 }
 
 .mast_header {
@@ -148,12 +160,12 @@
 
   @media (min-width: $breakpoint_desktop) {
     justify-content: flex-start;
+    margin: 0;
   }
 
   @media (min-width: 80rem) {
     border-bottom: 0;
     flex-direction: column;
-    margin: 0;
     padding: 0;
     width: 80%;
   }
