@@ -1,16 +1,16 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.franksmovielog.com">
-    <img alt="Frank's Movie Log" src="https://www.franksmovielog.com/favicon.svg" width="60" />
+    <img alt="Frank's Movie Log" src="https://www.franksmovielog.com/favicon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
   Frank's Movie Log
 </h1>
 
-Front-end for www.franksmovielog.com. Built on [Gatsby](https://www.gatsbyjs.org/).
+Source for www.franksmovielog.com. Built on [Gatsby](https://www.gatsbyjs.org/).
 
-## Useful commands.
+## Setup
 
 1.  **Install nvm.**
 
@@ -25,7 +25,7 @@ Front-end for www.franksmovielog.com. Built on [Gatsby](https://www.gatsbyjs.org
     nvm use
     ```
 
-1)  **Install yarn.**
+1.  **Install yarn.**
 
     Yarn is our package-manger of choice.
 
@@ -34,7 +34,7 @@ Front-end for www.franksmovielog.com. Built on [Gatsby](https://www.gatsbyjs.org
     brew install yarn
     ```
 
-1)  **Start a Dev server.**
+1.  **Start a Dev server.**
 
     Running the task through yarn will also pass the necessary parameters to
     allow external access to the site.
@@ -44,11 +44,9 @@ Front-end for www.franksmovielog.com. Built on [Gatsby](https://www.gatsbyjs.org
     yarn develop
     ```
 
-1)  **Open the source code and start editing!**
+1.  **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    The site is now running at `http://localhost:8000` with a GraphQL instance at `http://localhost:8000/___graphql`.
 
 ## What's inside?
 
