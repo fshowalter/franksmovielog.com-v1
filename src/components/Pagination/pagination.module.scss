@@ -32,7 +32,7 @@
   @media (min-width: $breakpoint_desktop) {
     background-color: darken(#fff, 2);
     border: solid 1px var(--color-background);
-    margin: 0 calc(-1 * var(--step-1)) var(--step-5);
+    margin: 0 0 var(--step-5);
     padding: 1rem var(--step-1);
   }
 }

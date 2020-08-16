@@ -101,6 +101,7 @@ export default function HomeTemplate({
           })}
         </ol>
         <PaginationWithLinks
+          className={styles.pagination}
           currentPage={pageContext.currentPage}
           urlRoot="/"
           perPage={pageContext.limit}

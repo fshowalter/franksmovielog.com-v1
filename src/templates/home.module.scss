@@ -139,41 +139,20 @@
 }
 
 .list_item_excerpt {
-  color: var(--color-block-text);
   color: rgba(0, 0, 0, 0.65);
+  composes: long_content from "../styles/long_content.scss";
   font-size: 18px;
   grid-area: review;
-  margin-top: 1.5rem;
   max-width: 59ch;
   text-align: left;
 
-  a {
-    color: var(--color-link);
-  }
-
-  p {
+  p:last-child {
     margin-bottom: 1.4rem;
   }
+}
 
-  blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    font-style: italic;
-    margin: 1.5em 0;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-
-  blockquote::before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-
-  blockquote p {
-    display: inline;
+.pagination {
+  @media (min-width: $breakpoint_desktop) {
+    margin: 0 calc(-1 * var(--step-1));
   }
 }

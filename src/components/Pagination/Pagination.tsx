@@ -182,9 +182,11 @@ export function PaginationWithLinks({
   perPage,
   numberOfItems,
   urlRoot,
+  className,
 }: PaginationProps & {
   /** The url root to use in generated page links including trailing slash. */
   urlRoot: string;
+  className?: string;
 }): JSX.Element {
   const numPages = Math.ceil(numberOfItems / perPage);
 
@@ -194,6 +196,7 @@ export function PaginationWithLinks({
         currentPage={1}
         numberOfItems={numberOfItems}
         perPage={perPage}
+        className={className}
       />
     );
   }
@@ -259,7 +262,7 @@ export function PaginationWithLinks({
     );
 
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} ${className || ""}`}>
       <h3 className={styles.pagination_heading}>Pagination</h3>
       {prev} {firstPage} {prevDots} {prevPage}
       <span className={styles.current_page} aria-current="page">
