@@ -1,6 +1,8 @@
 @import "./src/styles/breakpoints";
 
 .container {
+  min-width: 100%;
+
   @media (min-width: $breakpoint_desktop) {
     background-color: var(--color-content-background);
     column-gap: var(--step-1);
@@ -12,6 +14,8 @@
 }
 
 .left {
+  composes: card from "../styles/card.scss";
+
   @media (min-width: $breakpoint_desktop) {
     grid-area: left;
     max-width: 330px;
@@ -34,6 +38,12 @@
 
 .page_tagline {
   composes: tagline from "../styles/page.scss";
+}
+
+.avatar {
+  border-radius: 50%;
+  margin: 0 auto var(--step-5);
+  width: 75%;
 }
 
 .filters {
@@ -65,29 +75,34 @@
 }
 
 .list {
-  composes: list from "../styles/list.scss";
+  background-color: var(--color-content-background);
 }
 
 .list_item {
-  composes: list_item from "../styles/list.scss";
+  border-bottom: solid 1px var(--color-background);
+  padding: var(--step-5) var(--step-1) var(--step-1);
 }
 
-.list_item_first {
-  composes: list_item_first from "../styles/list.scss";
+.list_item_image_link {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .list_item_title {
-  composes: list_item_title from "../styles/list.scss";
-}
-
-.list_item_title_link {
-  composes: list_item_title_link from "../styles/list.scss";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-rendering: optimizeLegibility;
 }
 
 .list_item_title_year {
-  composes: list_item_title_year from "../styles/list.scss";
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 300;
 }
 
-.list_item_slug {
-  composes: list_item_slug from "../styles/list.scss";
+.list_item_grade {
+  height: 1.125rem;
+  width: auto;
 }

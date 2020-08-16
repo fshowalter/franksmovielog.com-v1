@@ -1,11 +1,14 @@
 @import "./src/styles/breakpoints";
 
 .list {
-  composes: card from "./utils.scss";
+  background-color: var(--color-content-background);
+  border-bottom: solid 1px darken(#e9e7e0, 5);
+  border-top: solid 1px var(--color-background);
   padding-left: var(--step-1);
 
   @media (min-width: $breakpoint_desktop) {
     border: 0;
+    padding-top: 0;
   }
 }
 
@@ -21,12 +24,6 @@
   &:last-of-type {
     border-bottom: 0;
   }
-}
-
-.list_item_first {
-  // @media (min-width: 1300px) {
-  //   border-top: solid 1px var(--color-background);
-  // }
 }
 
 .list_item_title_year {

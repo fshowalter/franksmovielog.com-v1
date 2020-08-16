@@ -9,12 +9,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /\.inline\.svg$/,
-        },
-      },
+      resolve: "gatsby-plugin-svgr",
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
@@ -32,6 +27,13 @@ module.exports = {
       options: {
         name: "posters",
         path: `${__dirname}/content/assets/posters/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "avatars",
+        path: `${__dirname}/content/assets/avatars/`,
       },
     },
     `gatsby-transformer-json`,

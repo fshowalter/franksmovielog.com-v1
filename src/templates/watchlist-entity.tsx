@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import Img, { FluidObject } from "gatsby-image";
 import React, { useReducer } from "react";
 import DebouncedInput from "../components/DebouncedInput";
 import Grade from "../components/Grade";
@@ -276,11 +276,21 @@ export default function WatchlistPersonPage({
     initState
   );
 
+  if (!data.avatar) {
+    console.log(pageContext.avatarPath);
+    throw Error(`No avatar found at ${pageContext.avatarPath}`);
+  }
+
   return (
     <Layout>
       <main className={styles.container}>
         <div className={styles.left}>
           <header className={styles.page_header}>
+            <Img
+              fluid={data.avatar.childImageSharp.fluid}
+              alt={`An image of ${pageContext.name}`}
+              className={styles.avatar}
+            />
             <h2 className={styles.page_heading}>{pageContext.name}</h2>
             <p className={styles.page_tagline}>
               <EntityHeader pageContext={pageContext} />
@@ -367,34 +377,32 @@ export default function WatchlistPersonPage({
                           alt={`A still from ${review.title} (${review.year})`}
                         />
                       </Link>
-                      <h2 className={styles.list_item_heading}>
+                      <div className={styles.list_item_title}>
                         <ReviewLink imdbId={review.imdbId}>
                           {review.title}{" "}
-                          <span
-                            className={styles.list_item_heading_review_year}
-                          >
+                          <span className={styles.list_item_title_year}>
                             {review.year}
                           </span>
                         </ReviewLink>
-                      </h2>
+                      </div>
                       <Grade
                         gradeValue={review.gradeValue}
-                        className={styles.review_grade}
+                        className={styles.list_item_grade}
                       />
                     </div>
                   </article>
                 </li>
               );
             })}
-            <PaginationWithButtons
-              currentPage={state.currentPage}
-              perPage={state.perPage}
-              numberOfItems={state.filteredReviews.length}
-              onClick={(newPage) =>
-                dispatch({ type: CHANGE_PAGE, value: newPage })
-              }
-            />
           </ul>
+          <PaginationWithButtons
+            currentPage={state.currentPage}
+            perPage={state.perPage}
+            numberOfItems={state.filteredReviews.length}
+            onClick={(newPage) =>
+              dispatch({ type: CHANGE_PAGE, value: newPage })
+            }
+          />
         </div>
       </main>
     </Layout>
@@ -405,9 +413,15 @@ interface PageContext {
   name: string;
   imdbIds: string[];
   entityType: string;
+  avatarPath: string;
 }
 
 interface PageQueryResult {
+  avatar: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
   backdrop: {
     nodes: MarkdownReview[];
   };
@@ -417,7 +431,14 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query($imdbIds: [String]) {
+  query($imdbIds: [String], $avatarPath: String) {
+    avatar: file(absolutePath: { eq: $avatarPath }) {
+      childImageSharp {
+        fluid(toFormat: JPG, jpegQuality: 75) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
     backdrop: allMarkdownRemark(
       filter: {
         postType: { eq: "REVIEW" }

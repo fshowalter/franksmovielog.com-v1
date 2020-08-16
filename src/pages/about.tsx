@@ -2,19 +2,20 @@ import { graphql } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import React from "react";
 import Layout from "../components/Layout";
+import * as styles from "./about.module.scss";
 
 export default function AboutPage({ data }: PageQueryResult): JSX.Element {
   const page = data.page.nodes[0];
 
   return (
     <Layout>
-      <main className="home">
+      <main className={styles.container}>
         <article>
-          <div className="home-post_image_wrap">
+          <div>
             <Img fluid={page.backdrop.childImageSharp.fluid} alt="" />
           </div>
           <div
-            className="home-post_excerpt"
+            className={styles.body}
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: page.html,

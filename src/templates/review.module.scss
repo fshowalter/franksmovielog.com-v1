@@ -3,26 +3,6 @@
 .container {
   background-color: darken(#fff, 0.5);
   max-width: 1000px;
-  // column-gap: var(--step-1);
-  // display: grid;
-  // grid-template-areas: "poster movie_meta" "review review";
-  // grid-template-columns: minmax(116px, 30%) 1fr;
-  // padding: var(--step-5) var(--step-1);
-  // @media (min-width: $breakpoint_tablet) {
-  //   grid-template-areas: "poster movie_meta" "poster review";
-  // }
-  @media (min-width: $breakpoint_desktop) {
-    // align-items: start;
-    // column-gap: calc(2 * var(--step-1));
-    // display: grid;
-    // grid-template-areas: "backdrop backdrop" "title title" ". ." "meta review";
-    // grid-template-columns: minmax(200px, 1fr) minmax(
-    //     0,
-    //     calc(2 * var(--step-1) + var(--step-5) + 63ch)
-    //   );
-    // grid-template-rows: auto auto auto 1fr;
-    // row-gap: 1.5rem;
-  }
 }
 
 .review {
@@ -32,19 +12,6 @@
 
   @media (min-width: $breakpoint_desktop) {
     padding: 0 0.5rem 3rem;
-    // border-image: linear-gradient(
-    //     to bottom,
-    //     var(--color-background),
-    //     var(--color-background) 50%,
-    //     transparent
-    //   )
-    //   1 100%;
-    // border-style: solid;
-    // border-top: 0;
-    // border-width: 0 0 0 1px;
-    // grid-area: review;
-    // margin-top: 0;
-    // padding: 0 var(--step-1) 3rem var(--step-5);
   }
 }
 
@@ -60,26 +27,6 @@
   font-size: 16px;
   grid-area: slug;
   margin-top: 1.5rem;
-
-  @media (min-width: $breakpoint_desktop) {
-    // margin-top: 0;
-  }
-
-  // display: flex;
-  // flex-direction: column;
-  // margin: 0 auto;
-  // max-width: 66ch;
-  // padding: 0 var(--step-1) var(--step-5);
-
-  // @media (min-width: $breakpoint_desktop) {
-  //   column-gap: var(--step-5);
-  //   display: grid;
-  //   grid-template-areas: "title title" "grade meta" "content meta" "date meta";
-  //   grid-template-columns: 63ch 1fr;
-  //   grid-template-rows: auto;
-  //   margin: 0;
-  //   max-width: none;
-  // }
 }
 
 .image {
@@ -100,8 +47,6 @@
   padding: 0 var(--step-1);
 
   @media (min-width: $breakpoint_desktop) {
-    // grid-area: title;
-    // margin-top: 0;
     padding: 0 0.5rem;
   }
 }
@@ -147,18 +92,6 @@
   &:first-of-type {
     margin-top: 0;
   }
-
-  // @media (min-width: $breakpoint_desktop) {
-  //   display: block;
-  //   font-family: var(--font-sans);
-  //   font-size: 14px;
-  //   font-weight: 300;
-  //   margin-top: 1rem;
-
-  //   &:first-of-type {
-  //     margin-top: 0;
-  //   }
-  // }
 }
 
 .date {
@@ -173,65 +106,16 @@
   font-weight: 300;
 }
 
-@supports (font-size-adjust: 1) {
-  .body {
-    font-size-adjust: 0.5;
-  }
-}
-
 .body {
-  color: rgba(0, 0, 0, 0.75);
-  font-size: 20px;
-  font-weight: 300;
+  composes: long_content from "../styles/long_content.scss";
   grid-area: content;
-  letter-spacing: 0.1px;
-  line-height: calc(1ex / 0.32);
-  margin-top: 1.5rem;
-  max-width: 63ch;
 
-  a {
-    color: var(--color-link);
-  }
-
-  p {
-    margin-bottom: 1.4rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    // font-family: "Times";
-    font-style: italic;
-    margin: 1.5em 0;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-
-  blockquote::before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-
-  blockquote p {
-    display: inline;
-  }
-
-  > p:first-of-type {
-    &::before {
-      content: "\0020";
-      display: inline-block;
-      height: auto;
-      position: relative;
-      width: 115px;
-    }
+  > p:first-of-type::before {
+    content: "\0020";
+    display: inline-block;
+    height: auto;
+    position: relative;
+    width: 115px;
   }
 
   @media (min-width: $breakpoint_desktop) {
@@ -240,20 +124,6 @@
   }
 }
 
-// .review_meta {
-//   border-top: solid 1px var(--color-border);
-//   color: var(--color-text-secondary);
-//   display: flex;
-//   font-family: var(--font-sans);
-//   font-size: var(--step--2);
-//   margin: var(--step-2) 0 0;
-//   padding: var(--step-1);
-
-//   @media (min-width: 1000px) {
-//     grid-area: meta;
-//   }
-// }
-
 .watchlist {
   margin-top: 1.5rem;
 
@@ -261,22 +131,3 @@
     color: var(--color-link);
   }
 }
-
-// .date {
-//   align-items: center;
-//   color: var(--color-text-secondary);
-//   display: flex;
-//   font-family: "PT Sans";
-//   margin: 1em 0 0;
-
-//   @media (min-width: $breakpoint_desktop) {
-//     border: 0;
-//     grid-area: date;
-//     padding: 0;
-//   }
-// }
-
-// .review_meta_icon {
-//   composes: icon from "../styles/utils.scss";
-//   margin-right: 0.75rem;
-// }

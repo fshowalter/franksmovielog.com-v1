@@ -1,0 +1,15 @@
+@import "./src/styles/breakpoints";
+
+.container {
+  background-color: darken(#fff, 0.5);
+  max-width: 1000px;
+}
+
+.body {
+  composes: long_content from "../styles/long_content.scss";
+  padding: 0 var(--step-1) 3rem;
+
+  @media (min-width: $breakpoint_desktop) {
+    padding: 0 0.5rem 3rem;
+  }
+}

@@ -1,0 +1,42 @@
+.long_content {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  margin-top: 1.5rem;
+  max-width: 63ch;
+
+  a {
+    color: var(--color-link);
+  }
+
+  p {
+    margin-bottom: 1.4rem;
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    font-style: italic;
+    margin: 1.5em 0;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+  blockquote::before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

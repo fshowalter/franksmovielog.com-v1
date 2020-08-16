@@ -243,14 +243,18 @@ async function createWatchlistPages(graphql, reporter, createPage) {
     }
   );
 
+  const component = path.resolve("./src/templates/watchlist-entity.tsx");
+
   // Create director pages
   Object.keys(pages.directors).forEach((slug) => {
     const director = pages.directors[slug];
+    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
       path: `/watchlist/directors/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-entity.tsx"),
+      component,
       context: {
+        avatarPath,
         entityType: "DIRECTOR",
         imdbId: director.imdbId,
         imdbIds: [...director.imdbIds],
@@ -262,11 +266,13 @@ async function createWatchlistPages(graphql, reporter, createPage) {
   // Create performer pages
   Object.keys(pages.performers).forEach((slug) => {
     const performer = pages.performers[slug];
+    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
       path: `/watchlist/cast/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-entity.tsx"),
+      component,
       context: {
+        avatarPath,
         entityType: "PERFORMER",
         imdbId: performer.imdbId,
         imdbIds: [...performer.imdbIds],
@@ -278,11 +284,13 @@ async function createWatchlistPages(graphql, reporter, createPage) {
   // Create writer pages
   Object.keys(pages.writers).forEach((slug) => {
     const writer = pages.writers[slug];
+    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
       path: `/watchlist/writers/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-entity.tsx"),
+      component,
       context: {
+        avatarPath,
         entityType: "WRITER",
         imdbId: writer.imdbId,
         imdbIds: [...writer.imdbIds],
@@ -294,11 +302,13 @@ async function createWatchlistPages(graphql, reporter, createPage) {
   // Create collection pages
   Object.keys(pages.collections).forEach((slug) => {
     const collection = pages.collections[slug];
+    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
       path: `/watchlist/directors/${slug}/`,
-      component: path.resolve("./src/templates/watchlist-entity.tsx"),
+      component,
       context: {
+        avatarPath,
         entityType: "COLLECTION",
         imdbId: collection.imdbId,
         imdbIds: [...collection.imdbIds],

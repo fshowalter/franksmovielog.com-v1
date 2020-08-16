@@ -1,30 +1,25 @@
 import React from "react";
-import F from "../../../content/assets/1-star.svg";
-import D from "../../../content/assets/2-stars.svg";
-import C from "../../../content/assets/3-stars.svg";
-import B from "../../../content/assets/4-stars.svg";
-import A from "../../../content/assets/5-stars.svg";
 
 /**
  * Maps grade letters to their letter and alt-text.
  */
 const gradeMap: { [key: string]: [string, string] } = {
-  A: [A, "5 stars (out of 5)"],
-  B: [B, "4 stars (out of 5)"],
-  C: [C, "3 stars (out of 5)"],
-  D: [D, "2 stars (out of 5)"],
-  F: [F, "1 star (out of 5)"],
+  A: ["/svg/5-stars.svg", "5 stars (out of 5)"],
+  B: ["/svg/4-stars.svg", "4 stars (out of 5)"],
+  C: ["/svg/3-stars.svg", "3 stars (out of 5)"],
+  D: ["/svg/2-stars.svg", "2 stars (out of 5)"],
+  F: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
 
 /**
  * Maps grade values to their letter and alt-text.
  */
 const gradeValueMap: { [key: number]: [string, string] } = {
-  5: [A, "5 stars (out of 5)"],
-  4: [B, "4 stars (out of 5)"],
-  3: [C, "3 stars (out of 5)"],
-  2: [D, "2 stars (out of 5)"],
-  1: [F, "1 star (out of 5)"],
+  5: ["/svg/5-stars.svg", "5 stars (out of 5)"],
+  4: ["/svg/4-stars.svg", "4 stars (out of 5)"],
+  3: ["/svg/3-stars.svg", "3 stars (out of 5)"],
+  2: ["/svg/2-stars.svg", "2 stars (out of 5)"],
+  1: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
 
 type GradeProps =
