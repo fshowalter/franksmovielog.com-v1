@@ -277,7 +277,6 @@ export default function WatchlistPersonPage({
   );
 
   if (!data.avatar) {
-    console.log(pageContext.avatarPath);
     throw Error(`No avatar found at ${pageContext.avatarPath}`);
   }
 

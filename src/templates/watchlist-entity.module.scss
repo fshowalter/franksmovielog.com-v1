@@ -5,11 +5,12 @@
 
   @media (min-width: $breakpoint_desktop) {
     background-color: var(--color-content-background);
-    column-gap: var(--step-1);
+    column-gap: calc(2 * var(--step-1));
     display: grid;
     grid-template-areas: "left right";
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 30% 1fr;
     grid-template-rows: auto;
+    padding-bottom: var(--step-5);
   }
 }
 
@@ -18,7 +19,6 @@
 
   @media (min-width: $breakpoint_desktop) {
     grid-area: left;
-    max-width: 330px;
   }
 }
 
@@ -34,10 +34,18 @@
 
 .page_heading {
   composes: heading from "../styles/page.scss";
+
+  @media (min-width: $breakpoint_desktop) {
+    text-align: center;
+  }
 }
 
 .page_tagline {
   composes: tagline from "../styles/page.scss";
+
+  @media (min-width: $breakpoint_desktop) {
+    text-align: center;
+  }
 }
 
 .avatar {
@@ -81,6 +89,10 @@
 .list_item {
   border-bottom: solid 1px var(--color-background);
   padding: var(--step-5) var(--step-1) var(--step-1);
+
+  @media (min-width: $breakpoint_desktop) {
+    padding: var(--step-5) 0 var(--step-1);
+  }
 }
 
 .list_item_image_link {
@@ -89,8 +101,8 @@
 }
 
 .list_item_title {
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: var(--step-1);
+  font-weight: 700;
   line-height: 1.3;
   text-rendering: optimizeLegibility;
 }
@@ -98,11 +110,11 @@
 .list_item_title_year {
   color: var(--color-text-secondary);
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .list_item_grade {
-  height: 1.125rem;
+  height: 1.25rem;
   width: auto;
 }

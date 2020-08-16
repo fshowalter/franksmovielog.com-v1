@@ -25,7 +25,7 @@ export default function HomeTemplate({
 }): JSX.Element {
   return (
     <Layout>
-      <main>
+      <main className={styles.container}>
         <ol className={styles.list}>
           {data.updates.nodes.map((update, index) => {
             const review = update;

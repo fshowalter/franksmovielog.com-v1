@@ -1,5 +1,11 @@
 @import "./src/styles/breakpoints";
 
+.container {
+  @media (min-width: $breakpoint_desktop) {
+    padding-bottom: var(--step-5);
+  }
+}
+
 .review {
   display: flex;
   flex-wrap: wrap;

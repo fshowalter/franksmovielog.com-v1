@@ -60,15 +60,20 @@
 }
 
 .mast_header {
-  align-items: center;
+  align-items: stretch;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   margin: 0 auto -1.5rem;
   max-width: calc(#{$breakpoint_tablet_wrap} + (2 * var(--step-1)));
   padding: var(--step-2) var(--step-1);
   text-align: center;
   width: 100%;
+
+  @media (min-width: $breakpoint_tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   @media (min-width: $breakpoint_desktop) {
     margin-bottom: 0;
@@ -77,6 +82,7 @@
   }
 
   @media (min-width: 80rem) {
+    flex-direction: column;
     grid-area: header;
     margin-top: calc(var(--step-5) - var(--step-1));
     padding: 1rem 0 var(--step-1);
@@ -88,7 +94,15 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
-  // margin-right: var(--step-1);
+
+  @media (min-width: $breakpoint_tablet) {
+    text-align: left;
+    width: 50%;
+  }
+
+  @media (min-width: 80rem) {
+    width: auto;
+  }
 }
 
 .mast_title {
@@ -120,7 +134,6 @@
 .mast_nav_list {
   display: flex;
   flex-wrap: wrap;
-  // font-family: var(--font-sans);
   font-size: 16px;
   justify-content: center;
   letter-spacing: 1px;
@@ -140,15 +153,13 @@
   @media (min-width: 80rem) {
     border-bottom: 0;
     flex-direction: column;
+    margin: 0;
     padding: 0;
     width: 80%;
   }
 }
 
 .mast_nav_list_item {
-  // background-color: darken(#fff, 2);
-  // border: solid 1px darken(#e9e7e0, 10);
-  // border-radius: 0.25rem;
   color: var(--color-link);
   display: block;
 
@@ -169,6 +180,12 @@
       border-left: solid 1px var(--color-background);
       padding-left: var(--step-1);
     }
+  }
+
+  @media (min-width: $breakpoint_desktop) {
+    background-color: darken(#fff, 2);
+    border-left: 0;
+    padding: 0.5rem var(--step-1);
   }
 
   @media (min-width: 80rem) {
@@ -328,30 +345,8 @@
 }
 
 .footer_fair_use {
+  font-family: var(--font-sans);
   font-size: 13px;
   font-weight: 300;
   margin-top: 1.5rem;
-}
-
-.footer_search_form {
-  margin-top: 1.5rem;
-}
-
-.footer_search_wrap {
-  display: flex;
-}
-
-.footer_search_input {
-  border: 0;
-  font-size: 14px;
-  height: 2rem;
-  padding: 0 var(--step-1);
-}
-
-.footer_search_submit {
-  border: 0;
-  border-left: solid 1px var(--color-text-secondary);
-  display: inline-block;
-  height: 2rem;
-  padding: 0 12px;
 }
