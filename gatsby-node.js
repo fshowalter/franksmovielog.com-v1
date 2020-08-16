@@ -414,9 +414,9 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             let result = await resolver(source, args, context, {
               fieldName,
             });
+
             const re = RegExp('(<span data-imdb-id="(.*)">)(.*)(</span>)');
             const matches = [...result.matchAll(re)];
-            // console.log(matches);
 
             matches.forEach((match) => {
               const review = context.nodeModel
