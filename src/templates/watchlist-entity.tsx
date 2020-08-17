@@ -15,6 +15,7 @@ import MarkdownReview from "../types/MarkdownReview";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
+import toSentenceArray from "../utils/to-sentence-array";
 import styles from "./watchlist-entity.module.scss";
 
 function sortReviews(reviews: JsonReview[], sortOrder: string) {
@@ -388,6 +389,17 @@ export default function WatchlistPersonPage({
                         gradeValue={review.gradeValue}
                         className={styles.list_item_grade}
                       />
+                      <p className={styles.list_item_cast_and_crew}>
+                        Directed by{" "}
+                        {toSentenceArray(
+                          review.directors.map((person) => person.name)
+                        )}
+                        . Starring{" "}
+                        {toSentenceArray(
+                          review.principalCast.map((person) => person.name)
+                        )}
+                        .
+                      </p>
                     </div>
                   </article>
                 </li>
@@ -467,7 +479,14 @@ export const pageQuery = graphql`
         title
         year
         sequence
+        principalCast: principal_cast {
+          name: full_name
+        }
+        directors {
+          name: full_name
+        }
         gradeValue: grade_value
+        slug
       }
     }
   }
