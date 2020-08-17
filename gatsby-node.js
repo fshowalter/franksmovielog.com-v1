@@ -415,7 +415,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               fieldName,
             });
 
-            const re = RegExp('(<span data-imdb-id="(.*)">)(.*)(</span>)');
+            const re = RegExp(
+              /(<span data-imdb-id="(tt\d+)">)(.*?)(<\/span>)/,
+              "g"
+            );
             const matches = [...result.matchAll(re)];
 
             matches.forEach((match) => {
@@ -432,12 +435,12 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
                   `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
                   match[3]
                 );
+              } else {
+                result = result.replace(
+                  `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
+                  `<a href="/reviews/${review.frontmatter.slug}/">${match[3]}</a>`
+                );
               }
-
-              result = result.replace(
-                `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
-                `<a href="/reviews/${review.frontmatter.slug}/">${match[3]}</a>`
-              );
             });
 
             return result;
