@@ -83,14 +83,16 @@
 }
 
 .list {
-  background-color: var(--color-content-background);
 }
 
 .list_item {
+  background-color: darken(#fff, 0.5);
   border-bottom: solid 1px var(--color-background);
+  margin-top: var(--step-5);
   padding: var(--step-5) var(--step-1) var(--step-1);
 
   @media (min-width: $breakpoint_desktop) {
+    margin-top: 0;
     padding: var(--step-5) 0 var(--step-1);
   }
 }

@@ -109,6 +109,7 @@
   grid-area: poster;
 
   @media (min-width: $breakpoint_desktop) {
+    border: solid 0.5rem #e9e7e0;
     margin: 1.5rem 0 var(--step-5);
   }
 }
