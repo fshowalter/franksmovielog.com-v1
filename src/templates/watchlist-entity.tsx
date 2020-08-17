@@ -352,7 +352,7 @@ export default function WatchlistPersonPage({
             perPage={state.perPage}
             numberOfItems={state.filteredReviews.length}
           />
-          <ul className={styles.list}>
+          <ul>
             {state.filteredReviews.map((review) => {
               const markdownNode = data.backdrop.nodes.find(
                 (item) => item.frontmatter.sequence === review.sequence
@@ -366,42 +366,38 @@ export default function WatchlistPersonPage({
 
               return (
                 <li className={styles.list_item}>
-                  <article>
-                    <div className={styles.list_item_content}>
-                      <Link
-                        className={styles.list_item_image_link}
-                        to={`/reviews/${review.slug}/`}
-                      >
-                        <Img
-                          fluid={markdownNode.backdrop.childImageSharp.fluid}
-                          alt={`A still from ${review.title} (${review.year})`}
-                        />
-                      </Link>
-                      <div className={styles.list_item_title}>
-                        <ReviewLink imdbId={review.imdbId}>
-                          {review.title}{" "}
-                          <span className={styles.list_item_title_year}>
-                            {review.year}
-                          </span>
-                        </ReviewLink>
-                      </div>
-                      <Grade
-                        gradeValue={review.gradeValue}
-                        className={styles.list_item_grade}
-                      />
-                      <p className={styles.list_item_cast_and_crew}>
-                        Directed by{" "}
-                        {toSentenceArray(
-                          review.directors.map((person) => person.name)
-                        )}
-                        . Starring{" "}
-                        {toSentenceArray(
-                          review.principalCast.map((person) => person.name)
-                        )}
-                        .
-                      </p>
-                    </div>
-                  </article>
+                  <Link
+                    className={styles.list_item_image_link}
+                    to={`/reviews/${review.slug}/`}
+                  >
+                    <Img
+                      fluid={markdownNode.backdrop.childImageSharp.fluid}
+                      alt={`A still from ${review.title} (${review.year})`}
+                    />
+                  </Link>
+                  <div className={styles.list_item_title}>
+                    <ReviewLink imdbId={review.imdbId}>
+                      {review.title}{" "}
+                      <span className={styles.list_item_title_year}>
+                        {review.year}
+                      </span>
+                    </ReviewLink>
+                  </div>
+                  <Grade
+                    gradeValue={review.gradeValue}
+                    className={styles.list_item_grade}
+                  />
+                  <p className={styles.list_item_cast_and_crew}>
+                    Directed by{" "}
+                    {toSentenceArray(
+                      review.directors.map((person) => person.name)
+                    )}
+                    . Starring{" "}
+                    {toSentenceArray(
+                      review.principalCast.map((person) => person.name)
+                    )}
+                    .
+                  </p>
                 </li>
               );
             })}

@@ -82,9 +82,6 @@
   composes: toggle_button from "../styles/filters.scss";
 }
 
-.list {
-}
-
 .list_item {
   background-color: darken(#fff, 0.5);
   border-bottom: solid 1px var(--color-background);

@@ -7,7 +7,7 @@
   @media (min-width: $breakpoint_desktop) {
     column-gap: calc(2 * var(--step-1));
     display: grid;
-    grid-template-areas: "backdrop backdrop" "title title" "directors poster" "cast poster" "watchlist poster" "reviews poster";
+    grid-template-areas: "backdrop backdrop" "title title" "reviews poster" "reviews directors" "reviews cast" "reviews watchlist";
     grid-template-columns: calc(66ch + var(--step-1) + 0.5rem) 25%;
     grid-template-rows: auto auto auto auto auto 1fr;
     justify-content: space-between;
@@ -87,7 +87,7 @@
   display: grid;
   font-size: 16px;
   font-weight: 400;
-  grid-template-areas: "directors poster" "cast poster" ". poster" "watchlist watchlist";
+  grid-template-areas: "directors poster" "cast poster" "watchlist poster";
   grid-template-columns: 1fr 25%;
   grid-template-rows: auto auto 1fr auto;
   letter-spacing: 0.2px;
@@ -95,12 +95,10 @@
 
   @media (min-width: $breakpoint_tablet) {
     grid-area: meta;
-    grid-template-areas: "directors poster" "cast poster" "watchlist poster";
   }
 
   @media (min-width: $breakpoint_desktop) {
     display: contents;
-    padding: 1.5rem 0.5rem;
   }
 }
 
@@ -110,7 +108,7 @@
 
   @media (min-width: $breakpoint_desktop) {
     border: solid 0.5rem #e9e7e0;
-    margin: 1.5rem 0 var(--step-5);
+    margin: 1.5rem 0 0; //var(--step-5);
   }
 }
 
@@ -134,6 +132,7 @@
 .cast_label {
   display: block;
   font-weight: 700;
+  line-height: 1.5;
   margin-top: 1rem;
 
   &::after {
@@ -176,6 +175,7 @@
 }
 
 .watchlist {
+  align-self: start;
   grid-area: watchlist;
   margin-top: 1.5rem;
 
