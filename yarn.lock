@@ -10294,10 +10294,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-littlefoot@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/littlefoot/-/littlefoot-3.3.1.tgz#a4b7b86cfc885b63a6587edca67430fa3ad6a9f5"
-  integrity sha512-orKvTLXk5nfcddPq1OTMJ6RLydiUXbu7Fa3UmPTnnUfRCMChnChn/HYpVqgJ7c9O4gl8JtMtd6LKOsd5kOCLUQ==
+littlefoot@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/littlefoot/-/littlefoot-3.4.0.tgz#11e7952541813f49991b165cae587d9d48d716db"
+  integrity sha512-Sk6MX0AsLbYGicC3fxVvGVD3RCRgvvawEXbqehLqnBo622MYWPBznaZDnIp5f2JOUyXjEK9LPFhrWXpA21jGMw==
   dependencies:
     "@pacote/get-style" "^1.0.0"
     "@pacote/pixels" "^1.0.0"
