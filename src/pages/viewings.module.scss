@@ -6,7 +6,7 @@
     column-gap: var(--step-1);
     display: grid;
     grid-template-areas: "left right";
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 40% 1fr;
     grid-template-rows: auto;
   }
 }
@@ -17,7 +17,7 @@
 
   @media (min-width: $breakpoint_desktop) {
     grid-area: left;
-    max-width: 330px;
+    max-width: auto;
   }
 }
 

@@ -352,7 +352,7 @@ export default function WatchlistPersonPage({
             numberOfItems={state.filteredReviews.length}
           />
           <ul className={styles.list}>
-            {data.review.nodes.map((review) => {
+            {state.filteredReviews.map((review) => {
               const markdownNode = data.backdrop.nodes.find(
                 (item) => item.frontmatter.sequence === review.sequence
               );

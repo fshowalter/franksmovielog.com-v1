@@ -8,7 +8,7 @@
     column-gap: calc(2 * var(--step-1));
     display: grid;
     grid-template-areas: "left right";
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 35% 1fr;
     grid-template-rows: auto;
     padding-bottom: var(--step-5);
   }
