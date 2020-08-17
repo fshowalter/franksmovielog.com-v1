@@ -3,8 +3,11 @@
 @import "./src/styles/breakpoints";
 
 .outer {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   max-width: clamp(1000px, 95vw, $breakpoint_max);
+  min-height: 100vh;
   position: relative;
 
   &::before {
@@ -23,9 +26,9 @@
 .container {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-items: stretch;
   margin: 0 auto;
-  min-height: 100vh;
   position: relative;
 
   @media (min-width: $breakpoint_desktop) {
