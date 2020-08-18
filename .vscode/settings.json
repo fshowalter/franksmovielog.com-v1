@@ -2,6 +2,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "rewrap.wrappingColumn": 9999
+  },
   "[typescript]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
