@@ -52,41 +52,60 @@ describe("Home", () => {
     expect(tree).toMatchInlineSnapshot(`
       Array [
         <a
+          className="skip_link"
           href="#content"
         >
           Skip to content
         </a>,
-        <div>
+        <div
+          className="outer"
+        >
           <div
+            className="container"
             id="top"
           >
-            <div>
-              <header>
-                <div>
-                  <h1>
+            <div
+              className="sticky_wrap"
+            >
+              <header
+                className="mast_header"
+              >
+                <div
+                  className="mast_logo"
+                >
+                  <h1
+                    className="mast_title"
+                  >
                     <a
                       href="/"
                     >
                       Frank's Movie Log
                     </a>
                   </h1>
-                  <p>
+                  <p
+                    className="mast_tagline"
+                  >
                     My life at the movies.
                   </p>
                 </div>
                 <form
                   acceptCharset="UTF-8"
                   action="https://www.google.com/search"
+                  className="mast_search_form"
                   method="get"
                   role="search"
                 >
                   <label
+                    className="mast_search_wrap"
                     htmlFor="search"
                   >
-                    <span>
+                    <span
+                      className="mast_search_label"
+                    >
                       Search
                     </span>
                     <input
+                      className="mast_search_input"
                       id="search"
                       name="q"
                       placeholder="Search..."
@@ -99,6 +118,7 @@ describe("Home", () => {
                     />
                     <button
                       aria-label="Search"
+                      className="mast_search_submit"
                       type="submit"
                       value="Search"
                     >
@@ -121,45 +141,67 @@ describe("Home", () => {
                   </label>
                 </form>
               </header>
-              <nav>
-                <ul>
-                  <li>
+              <nav
+                className="mast_nav"
+              >
+                <ul
+                  className="mast_nav_list"
+                >
+                  <li
+                    className="mast_nav_list_item"
+                  >
                     <a
+                      className="mast_nav_link"
                       href="/"
                     >
                       Home
                     </a>
                   </li>
-                  <li>
+                  <li
+                    className="mast_nav_list_item"
+                  >
                     <a
+                      className="mast_nav_link"
                       href="/about/"
                     >
                       About
                     </a>
                   </li>
-                  <li>
+                  <li
+                    className="mast_nav_list_item"
+                  >
                     <a
+                      className="mast_nav_link"
                       href="/how-i-grade/"
                     >
                       How I Grade
                     </a>
                   </li>
-                  <li>
+                  <li
+                    className="mast_nav_list_item"
+                  >
                     <a
+                      className="mast_nav_link"
                       href="/reviews/"
                     >
                       All Reviews
                     </a>
                   </li>
-                  <li>
+                  <li
+                    className="mast_nav_list_item"
+                  >
                     <a
+                      className="mast_nav_link"
                       href="/viewings/"
                     >
                       Viewing Log
                     </a>
                   </li>
-                  <li>
+                  <li
+                    className="mast_nav_list_item"
+                  >
                     <a
+                      className="mast_nav_link"
                       href="/watchlist/"
                     >
                       Watchlist
@@ -169,11 +211,18 @@ describe("Home", () => {
               </nav>
             </div>
             <div
+              className="children"
               id="content"
             >
-              <main>
-                <ol />
-                <p>
+              <main
+                className="container"
+              >
+                <ol
+                  className="list"
+                />
+                <p
+                  className="pagination"
+                >
                   Showing 
                   1
                   -
@@ -185,44 +234,60 @@ describe("Home", () => {
               </main>
             </div>
           </div>
-          <footer>
-            <ul>
-              <li>
+          <footer
+            className="footer"
+          >
+            <ul
+              className="footer_nav_list"
+            >
+              <li
+                className="footer_nav_list_item"
+              >
                 <a
                   href="/"
                 >
                   Home
                 </a>
               </li>
-              <li>
+              <li
+                className="footer_nav_list_item"
+              >
                 <a
                   href="/about/"
                 >
                   About
                 </a>
               </li>
-              <li>
+              <li
+                className="footer_nav_list_item"
+              >
                 <a
                   href="/how-i-grade/"
                 >
                   How I Grade
                 </a>
               </li>
-              <li>
+              <li
+                className="footer_nav_list_item"
+              >
                 <a
                   href="/reviews/"
                 >
                   All Reviews
                 </a>
               </li>
-              <li>
+              <li
+                className="footer_nav_list_item"
+              >
                 <a
                   href="/viewings/"
                 >
                   Viewing Log
                 </a>
               </li>
-              <li>
+              <li
+                className="footer_nav_list_item"
+              >
                 <a
                   href="/watchlist/"
                 >
@@ -230,7 +295,9 @@ describe("Home", () => {
                 </a>
               </li>
             </ul>
-            <p>
+            <p
+              className="footer_fair_use"
+            >
               All stills used in accordance with the
                
               <a
@@ -240,6 +307,7 @@ describe("Home", () => {
               </a>
             </p>
             <a
+              className="footer_to_the_top"
               href="#top"
             >
               To the top ↑
