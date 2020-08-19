@@ -12,7 +12,7 @@ import JsonReview from "../types/JsonReview";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie from "../types/WatchlistMovie";
 import toSentenceArray from "../utils/to-sentence-array";
-import * as styles from "./home.module.scss";
+import styles from "./home.module.scss";
 
 /**
  * Renders the home (index) page.
@@ -92,7 +92,7 @@ export default function HomeTemplate({
                   <main
                     // eslint-disable-next-line react/no-danger
                     dangerouslySetInnerHTML={{
-                      __html: review.linkedHtml,
+                      __html: review.linkedExcerpt,
                     }}
                     className={styles.list_item_excerpt}
                   />
@@ -100,7 +100,10 @@ export default function HomeTemplate({
                     <div className={styles.list_item_date}>
                       <DateIcon /> {review.frontmatter.date}
                     </div>
-                    <WatchlistLinks watchlistMovie={watchlistMovie} />
+                    <WatchlistLinks
+                      watchlistMovie={watchlistMovie}
+                      className={styles.list_item_watchlist_links}
+                    />
                   </footer>
                 </li>
               );
@@ -168,7 +171,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        linkedHtml
+        linkedExcerpt
       }
     }
 

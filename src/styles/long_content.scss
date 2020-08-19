@@ -15,38 +15,43 @@
   }
 
   blockquote {
-    background: #f9f9f9;
+    // background: #f9f9f9;
     // border-left: 10px solid #ccc;
+    border-left: 0.5rem solid var(--color-background);
+    color: rgba(0, 0, 0, 0.65);
+    // font-size: 95%;
+    // letter-spacing: 0.15px;
     font-style: italic;
+    // letter-spacing: 0.5px;
     margin: 1.5em 0;
-    padding: 0.5em 2rem 0.5em 3rem;
+    padding: 0 var(--step-1);
     position: relative;
     quotes: "\201C""\201D""\2018""\2019";
   }
 
-  blockquote::before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    left: 0;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    position: absolute;
-    top: 32px;
-    vertical-align: -0.4em;
-  }
+  // blockquote::before {
+  //   color: var(--color-background);
+  //   content: open-quote;
+  //   font-size: 6rem;
+  //   left: 0;
+  //   line-height: 0.1em;
+  //   margin-right: 0.25em;
+  //   position: absolute;
+  //   top: 2.4rem;
+  //   vertical-align: -0.4em;
+  // }
 
-  blockquote::after {
-    bottom: 0;
-    color: #ccc;
-    content: close-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.5rem;
-    position: absolute;
-    right: 0;
-    vertical-align: -0.4em;
-  }
+  // blockquote::after {
+  //   bottom: -1rem;
+  //   color: var(--color-background);
+  //   content: close-quote;
+  //   font-size: 6em;
+  //   line-height: 0.1em;
+  //   margin-right: 0.5rem;
+  //   position: absolute;
+  //   right: 0;
+  //   vertical-align: -0.4em;
+  // }
 
   blockquote p {
     display: inline;

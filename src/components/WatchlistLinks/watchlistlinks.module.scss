@@ -2,24 +2,30 @@
 
 .icon {
   composes: icon from "../../styles/icon.scss";
+  flex-shrink: 0;
   height: 36px;
   margin-right: 0.75rem;
+  min-width: 18px;
 }
 
 .container {
   color: var(--color-text-secondary);
   display: flex;
   flex-wrap: wrap;
-  font-family: var(--font-sans);
   font-size: 14px;
   letter-spacing: 0.25px;
   padding: 0;
+}
+
+.list {
+  display: contents;
 }
 
 .list_item {
   background-color: darken(#fff, 2);
   border: solid 1px darken(#e9e7e0, 10);
   border-radius: 0.25rem;
+  margin-bottom: 1rem;
   margin-right: 0.75rem;
   padding: 0.5rem 1rem;
   white-space: nowrap;

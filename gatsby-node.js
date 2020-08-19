@@ -402,6 +402,91 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               .find((node) => node.absolutePath === posterPath);
           },
         },
+        hasExcerpt: {
+          type: "Boolean",
+          async resolve(source, args, context, info) {
+            const type = info.schema.getType("MarkdownRemark");
+            // const parentNode = context.nodeModel.getNodeById({
+            //   id: source.parent,
+            // });
+            const resolver = type.getFields().rawMarkdownBody.resolve;
+            const fieldName = "rawMarkdownBody";
+            const result = await resolver(source, args, context, {
+              fieldName,
+            });
+
+            return result.includes("<!-- end -->");
+          },
+        },
+        linkedExcerpt: {
+          type: "String",
+          async resolve(source, args, context, info) {
+            const type = info.schema.getType("MarkdownRemark");
+
+            const rawMarkdownBodyResolver = type.getFields().rawMarkdownBody
+              .resolve;
+
+            const rawMarkdownBody = await rawMarkdownBodyResolver(
+              source,
+              { format: "HTML", pruneLength: 20000, truncate: false },
+              context,
+              {
+                fieldName: "rawMarkdownBody",
+              }
+            );
+
+            const hasExcerpt = rawMarkdownBody.includes("<!-- end -->");
+
+            const excerptResolver = type.getFields().excerpt.resolve;
+
+            let result = await excerptResolver(
+              source,
+              { format: "HTML", pruneLength: 20000, truncate: false },
+              context,
+              {
+                fieldName: "excerpt",
+              }
+            );
+
+            if (hasExcerpt) {
+              result = result.replace(/\n+$/, "");
+              result = result.replace(
+                /<\/p>$/,
+                ` <a href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
+              );
+            }
+
+            const re = RegExp(
+              /(<span data-imdb-id="(tt\d+)">)(.*?)(<\/span>)/,
+              "g"
+            );
+            const matches = [...result.matchAll(re)];
+
+            matches.forEach((match) => {
+              const review = context.nodeModel
+                .getAllNodes({
+                  type: `MarkdownRemark`,
+                })
+                .find(
+                  (reviewNode) => reviewNode.frontmatter.imdb_id === match[2]
+                );
+
+              if (!review) {
+                result = result.replace(
+                  `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
+                  match[3]
+                );
+              } else {
+                result = result.replace(
+                  `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
+                  `<a href="/reviews/${review.frontmatter.slug}/">${match[3]}</a>`
+                );
+              }
+            });
+
+            return result;
+          },
+        },
         linkedHtml: {
           type: "String",
           async resolve(source, args, context, info) {

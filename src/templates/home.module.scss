@@ -97,7 +97,9 @@
   align-items: flex-start;
   display: flex;
   grid-area: footer;
+  justify-content: space-between;
   margin-top: auto;
+  padding-top: 1.4rem;
 
   a {
     color: var(--color-link);
@@ -107,21 +109,19 @@
 .list_item_date {
   color: var(--color-text-secondary);
   display: flex;
-  font-family: var(--font-sans);
   font-feature-settings: "tnum";
   font-size: 14px;
   font-weight: 300;
   grid-area: slug;
   letter-spacing: 0.25px;
-  line-height: 24px;
   line-height: 36px;
+  margin-bottom: 1rem;
+  min-width: 130px;
   white-space: nowrap;
-  width: 150px;
 }
 
 .list_item_heading_review_year {
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
   font-size: 16px;
   font-weight: 300;
 }
@@ -154,6 +154,10 @@
   p:last-child {
     margin-bottom: 1.4rem;
   }
+}
+
+.list_item_watchlist_links {
+  justify-content: flex-end;
 }
 
 .pagination {

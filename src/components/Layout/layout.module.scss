@@ -32,8 +32,8 @@
   position: relative;
 
   @media (min-width: $breakpoint_desktop) {
-    max-width: $breakpoint_desktop;
     padding-top: var(--step-1);
+    width: $breakpoint_desktop;
   }
 
   @media (min-width: 80rem) {
@@ -43,8 +43,8 @@
     grid-template-areas: "children header" "children nav";
     grid-template-columns: 1fr 250px;
     grid-template-rows: auto 1fr;
-    max-width: none;
     padding: var(--step-1);
+    width: 100%;
   }
 }
 
@@ -339,7 +339,7 @@
   @media (min-width: $breakpoint_desktop) {
     box-sizing: border-box;
     margin: calc(var(--step-5) - var(--step-1)) 0 0;
-    max-width: 1000px;
+    max-width: none;
     padding: 0 var(--step-1);
   }
 

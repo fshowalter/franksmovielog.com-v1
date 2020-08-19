@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import WatchlistMovie from "../../types/WatchlistMovie";
-import * as styles from "./watchlistlinks.module.scss";
+import styles from "./watchlistlinks.module.scss";
 
 function WatchlistItem({
   to,
@@ -19,15 +19,17 @@ function WatchlistItem({
 
 function WatchlistLinks({
   watchlistMovie,
+  className,
 }: {
   watchlistMovie?: WatchlistMovie;
+  className?: string;
 }): JSX.Element | null {
   if (!watchlistMovie) {
     return null;
   }
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className || ""}`}>
       <svg
         width="1em"
         height="1em"
@@ -45,7 +47,7 @@ function WatchlistLinks({
           d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
         />
       </svg>
-      <ul>
+      <ul className={styles.list}>
         {watchlistMovie.collections.map((collection) => {
           return (
             <WatchlistItem to={`/watchlist/collections/${collection.slug}/`}>
@@ -81,6 +83,7 @@ function WatchlistLinks({
 
 WatchlistLinks.defaultProps = {
   watchlistMovie: null,
+  className: null,
 };
 
 export default WatchlistLinks;

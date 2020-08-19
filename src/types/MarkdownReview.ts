@@ -22,6 +22,8 @@ type MarkdownReview = {
     };
   };
   linkedHtml: string;
+  linkedExcerpt: string;
+  hasExcerpt: boolean;
 };
 
 export default MarkdownReview;
