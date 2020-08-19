@@ -4,7 +4,6 @@
   color: var(--color-text-secondary);
   display: flex;
   flex-direction: column;
-  font-family: var(--font-sans);
   font-size: 14px;
   margin-top: var(--step-0);
 }
@@ -13,7 +12,6 @@
   appearance: none;
   border: 0;
   border-radius: 0;
-  font-family: var(--font-sans);
   font-size: 14px;
   padding: calc(var(--step--2) / 2) 0;
 }
@@ -27,7 +25,6 @@
   background-color: transparent;
   color: var(--color-link);
   composes: input;
-  font-family: var(--font-sans);
   font-size: 15px;
 }
 
@@ -41,7 +38,6 @@
   border: solid 1px darken(#e9e7e0, 5);
   border-radius: 4px;
   color: var(--color-link);
-  font-family: var(--font-sans);
   font-size: clamp(14px, 5vw, 15px);
   margin-top: var(--step-0);
   padding: calc(var(--step--2) / 2) var(--step--2);

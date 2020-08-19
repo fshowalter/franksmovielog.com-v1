@@ -7,6 +7,8 @@
 
 .body {
   composes: long_content from "../styles/long_content.scss";
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 var(--step-1) 3rem;
 
   h1,

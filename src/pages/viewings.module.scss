@@ -2,22 +2,20 @@
 
 .container {
   @media (min-width: $breakpoint_desktop) {
-    background-color: var(--color-content-background);
     column-gap: var(--step-1);
     display: grid;
     grid-template-areas: "left right";
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto;
   }
 }
 
 .left {
   composes: card from "../styles/card.scss";
-  margin: 0;
 
   @media (min-width: $breakpoint_desktop) {
     grid-area: left;
-    max-width: auto;
+    max-width: 330px;
   }
 }
 
