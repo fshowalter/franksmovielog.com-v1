@@ -30,6 +30,7 @@
   justify-items: stretch;
   margin: 0 auto;
   position: relative;
+  width: 100%;
 
   @media (min-width: $breakpoint_desktop) {
     padding-top: var(--step-1);
@@ -64,7 +65,13 @@
 }
 
 .sticky_wrap {
-  display: contents;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  padding-bottom: 1.4rem;
+
+  @media (min-width: $breakpoint_desktop) {
+    box-shadow: none;
+  }
 
   @media (min-width: 80rem) {
     display: block;
@@ -180,30 +187,31 @@
 .mast_nav_list_item {
   color: var(--color-link);
   display: block;
-
   margin: 0.25rem 0.5rem;
   padding: 0.25rem;
   position: relative;
   white-space: nowrap;
 
   @media (min-width: $breakpoint_tablet) {
-    border: solid 1px var(--color-background);
-    border-color: var(--color-background);
-    border-left: 0;
-    border-radius: 0;
     margin: 0;
     padding-right: var(--step-1);
 
     &:first-of-type {
-      border-left: solid 1px var(--color-background);
       padding-left: var(--step-1);
     }
   }
 
   @media (min-width: $breakpoint_desktop) {
     background-color: darken(#fff, 2);
+    border: solid 1px var(--color-background);
+    border-color: var(--color-background);
     border-left: 0;
+    border-radius: 0;
     padding: 0.5rem var(--step-1);
+
+    &:first-of-type {
+      border-left: solid 1px var(--color-background);
+    }
   }
 
   @media (min-width: 80rem) {

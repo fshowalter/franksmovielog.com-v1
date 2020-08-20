@@ -3,8 +3,8 @@
 .icon {
   composes: icon from "../../styles/icon.scss";
   flex-shrink: 0;
-  height: 36px;
-  margin-right: 0.75rem;
+  // height: 36px;
+  margin-right: 1ch;
   min-width: 18px;
 }
 
@@ -21,10 +21,11 @@
   display: contents;
 }
 
-.list_item {
+.link {
   background-color: darken(#fff, 2);
   border: solid 1px darken(#e9e7e0, 10);
   border-radius: 0.25rem;
+  display: flex;
   margin-bottom: 1rem;
   margin-right: 0.75rem;
   padding: 0.5rem 1rem;
@@ -33,4 +34,8 @@
   @media (min-width: $breakpoint_desktop) {
     border-color: var(--color-background);
   }
+}
+
+.link:hover > .icon {
+  fill: var(--color-link);
 }
