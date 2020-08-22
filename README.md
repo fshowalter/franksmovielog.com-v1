@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.franksmovielog.com">
-    <img alt="Frank's Movie Log" src="https://www.franksmovielog.com/favicon.png" width="60" />
+    <img alt="Frank's Movie Log" src="https://www.franksmovielog.com/assets/default_og.jpg" />
   </a>
 </p>
 <h1 align="center">
