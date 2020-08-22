@@ -390,7 +390,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               : source.frontmatter.slug;
 
             const posterPath = path.resolve(
-              `./content/assets/posters/${imagePath}.jpg`
+              `./content/assets/posters/${imagePath}.png`
             );
 
             if (!posterPath) {

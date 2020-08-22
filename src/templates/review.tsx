@@ -9,7 +9,7 @@ import JsonReview from "../types/JsonReview";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie from "../types/WatchlistMovie";
 import toSentenceArray from "../utils/to-sentence-array";
-import * as styles from "./review.module.scss";
+import styles from "./review.module.scss";
 
 /**
  * Renders a review page.
@@ -116,14 +116,14 @@ export const pageQuery = graphql`
         }
         backdrop {
           childImageSharp {
-            fluid(maxWidth: 934, quality: 80) {
+            fluid(toFormat: JPG, maxWidth: 934, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         poster {
           childImageSharp {
-            fluid(maxWidth: 238, quality: 80) {
+            fluid(toFormat: JPG, maxWidth: 238, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

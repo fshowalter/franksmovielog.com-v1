@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 chokidar
-  .watch(["../movielog-new/reviews", "../movielog-new/export"])
+  .watch(["../movielog/reviews", "../movielog/export"])
   .on("all", (event, sourcePath) => {
     if (event === "add" || event === "change") {
       console.log(event, sourcePath); // eslint-disable-line no-console
