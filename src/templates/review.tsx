@@ -11,6 +11,61 @@ import WatchlistMovie from "../types/WatchlistMovie";
 import toSentenceArray from "../utils/to-sentence-array";
 import styles from "./review.module.scss";
 
+function buildStructuredData(
+  allReviews: MarkdownReview[],
+  movieInfo: JsonReview
+) {
+  const reviews = allReviews.slice().reverse();
+  let description = "";
+  const re = RegExp(/<span data-snippet>(.*?)<\/span>/);
+
+  for (let i = 0; i < reviews.length; i += 1) {
+    const match = re.exec(reviews[0].linkedHtml);
+
+    if (match) {
+      [, description] = match;
+      break;
+    }
+  }
+
+  if (!description) {
+    return null;
+  }
+
+  return {
+    "@context": "http://schema.org",
+    "@type": "Review",
+    datePublished: reviews[0].frontmatter.date,
+    description,
+    author: {
+      "@type": "Person",
+      name: "Frank Showalter",
+      sameAs: "https://www.frankshowalter.com",
+    },
+    inLanguage: "en",
+    itemReviewed: {
+      "@type": "Movie",
+      name: movieInfo.title,
+      sameAs: `http://www.imdb.com/title/${movieInfo.imdbId}/`,
+      image: reviews[0].seoImage.childImageSharp.resize.src,
+      dateCreated: movieInfo.year,
+      director: {
+        "@type": "Person",
+        name: movieInfo.directors[0].name,
+      },
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Frank's Movie Log",
+      sameAs: "https://www.franksmovielog.com",
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: movieInfo.gradeValue,
+    },
+  };
+}
+
 /**
  * Renders a review page.
  */
@@ -22,6 +77,7 @@ export default function Review({
   const { movieInfo } = data;
   const { watchlistMovie } = data;
   const reviews = data.review.nodes;
+  const structuredData = buildStructuredData(reviews, movieInfo);
 
   return (
     <Layout>
@@ -87,6 +143,11 @@ export default function Review({
           })}
         </ul>
       </article>
+      {structuredData && (
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      )}
     </Layout>
   );
 }
@@ -121,6 +182,13 @@ export const pageQuery = graphql`
             }
           }
         }
+        seoImage: backdrop {
+          childImageSharp {
+            resize(toFormat: JPG, width: 1200, height: 675, quality: 80) {
+              src
+            }
+          }
+        }
         poster {
           childImageSharp {
             fluid(toFormat: JPG, maxWidth: 238, quality: 80) {
@@ -136,6 +204,7 @@ export const pageQuery = graphql`
       imdbId: imdb_id
       title
       year
+      gradeValue: grade_value
       principalCast: principal_cast {
         name: full_name
       }
@@ -155,7 +224,6 @@ export const pageQuery = graphql`
         slug
       }
       performers {
-        imdb_id
         name
         slug
       }

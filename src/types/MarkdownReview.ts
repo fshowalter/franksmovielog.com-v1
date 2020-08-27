@@ -16,6 +16,13 @@ type MarkdownReview = {
       fluid: FluidObject;
     };
   };
+  seoImage: {
+    childImageSharp: {
+      resize: {
+        src: string;
+      };
+    };
+  };
   poster: {
     childImageSharp: {
       fluid: FluidObject;
