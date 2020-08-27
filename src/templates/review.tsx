@@ -182,9 +182,9 @@ export const pageQuery = graphql`
             }
           }
         }
-        seoImage: backdrop {
+        seoImage: poster {
           childImageSharp {
-            resize(toFormat: JPG, width: 1200, height: 675, quality: 80) {
+            resize(toFormat: JPG, width: 500, height: 750, quality: 80) {
               src
             }
           }
