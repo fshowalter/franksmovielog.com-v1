@@ -41,7 +41,11 @@ export default function ReviewLink({
   }
 
   return (
-    <Link className={className} to={`/reviews/${review.frontmatter.slug}/`}>
+    <Link
+      rel="canonical"
+      className={className}
+      to={`/reviews/${review.frontmatter.slug}/`}
+    >
       {children}
     </Link>
   );

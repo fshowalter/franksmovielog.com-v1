@@ -58,6 +58,7 @@ export default function HomeTemplate({
               return (
                 <li className={styles.list_item} value={listItemValue}>
                   <Link
+                    rel="canonical"
                     className={styles.list_item_image_link}
                     to={`/reviews/${review.frontmatter.slug}/`}
                   >
