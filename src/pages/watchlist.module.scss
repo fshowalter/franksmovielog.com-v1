@@ -12,7 +12,7 @@
 }
 
 .left {
-  composes: card from "../styles/card.scss";
+  // composes: card from "../styles/card.scss";
 
   @media (min-width: $breakpoint_desktop) {
     grid-area: left;
