@@ -37,8 +37,10 @@ export default function HomeTemplate({
         <ol className={styles.list}>
           {data.updates.nodes.map((update, index) => {
             const review = update;
+            const isFirst = index === 0;
+            const isLast = index === data.updates.nodes.length - 1;
             const listItemValue =
-              data.updates.nodes.length - pageContext.skip - index;
+              pageContext.numberOfItems - pageContext.skip - index;
 
             if (update.postType === "REVIEW") {
               const movieInfo = data.movieInfo.nodes.find(
@@ -56,56 +58,64 @@ export default function HomeTemplate({
               );
 
               return (
-                <li className={styles.list_item} value={listItemValue}>
-                  <Link
-                    rel="canonical"
-                    className={styles.list_item_image_link}
-                    to={`/reviews/${review.frontmatter.slug}/`}
+                <li value={listItemValue} className={styles.list_item}>
+                  <article
+                    className={`${styles.review} ${
+                      isFirst ? styles.first : ""
+                    } ${isLast ? styles.last : ""}`}
                   >
-                    <Img
-                      fluid={review.backdrop.childImageSharp.fluid}
-                      alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+                    <Link
+                      rel="canonical"
+                      className={styles.image_link}
+                      to={`/reviews/${review.frontmatter.slug}/`}
+                    >
+                      <Img
+                        fluid={review.backdrop.childImageSharp.fluid}
+                        alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+                      />
+                    </Link>
+                    <header className={styles.review_header}>
+                      <h2 className={styles.article_heading}>
+                        <ReviewLink imdbId={review.frontmatter.imdbId}>
+                          {movieInfo.title}{" "}
+                          <span className={styles.review_year}>
+                            {movieInfo.year}
+                          </span>
+                        </ReviewLink>
+                      </h2>
+                      <Grade
+                        grade={review.frontmatter.grade}
+                        className={styles.review_grade}
+                      />
+                      <p className={styles.review_credits}>
+                        Directed by{" "}
+                        {toSentenceArray(
+                          movieInfo.directors.map((person) => person.name)
+                        )}
+                        . Starring{" "}
+                        {toSentenceArray(
+                          movieInfo.principalCast.map((person) => person.name)
+                        )}
+                        .
+                      </p>
+                    </header>
+                    <main
+                      // eslint-disable-next-line react/no-danger
+                      dangerouslySetInnerHTML={{
+                        __html: review.linkedExcerpt,
+                      }}
+                      className={styles.article_body}
                     />
-                  </Link>
-                  <h2 className={styles.list_item_heading}>
-                    <ReviewLink imdbId={review.frontmatter.imdbId}>
-                      {movieInfo.title}{" "}
-                      <span className={styles.list_item_heading_review_year}>
-                        {movieInfo.year}
-                      </span>
-                    </ReviewLink>
-                  </h2>
-                  <Grade
-                    grade={review.frontmatter.grade}
-                    className={styles.review_grade}
-                  />
-                  <p className={styles.list_item_review_meta}>
-                    Directed by{" "}
-                    {toSentenceArray(
-                      movieInfo.directors.map((person) => person.name)
-                    )}
-                    . Starring{" "}
-                    {toSentenceArray(
-                      movieInfo.principalCast.map((person) => person.name)
-                    )}
-                    .
-                  </p>
-                  <main
-                    // eslint-disable-next-line react/no-danger
-                    dangerouslySetInnerHTML={{
-                      __html: review.linkedExcerpt,
-                    }}
-                    className={styles.list_item_excerpt}
-                  />
-                  <footer className={styles.list_item_footer}>
-                    <div className={styles.list_item_date}>
-                      <DateIcon /> {review.frontmatter.date}
-                    </div>
-                    <WatchlistLinks
-                      watchlistMovie={watchlistMovie}
-                      className={styles.list_item_watchlist_links}
-                    />
-                  </footer>
+                    <footer className={styles.article_footer}>
+                      <div className={styles.date}>
+                        <DateIcon /> {review.frontmatter.date}
+                      </div>
+                      <WatchlistLinks
+                        watchlistMovie={watchlistMovie}
+                        className={styles.watchlist_links}
+                      />
+                    </footer>
+                  </article>
                 </li>
               );
             }
@@ -118,6 +128,8 @@ export default function HomeTemplate({
           urlRoot="/"
           perPage={pageContext.limit}
           numberOfItems={pageContext.numberOfItems}
+          prevText="Newer"
+          nextText="Older"
         />
       </main>
     </Layout>

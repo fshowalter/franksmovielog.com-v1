@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import * as styles from "./pagination.module.scss";
+import styles from "./pagination.module.scss";
 
 type PaginationProps = {
   /** The current page number, starting from 1. */
@@ -183,10 +183,16 @@ export function PaginationWithLinks({
   numberOfItems,
   urlRoot,
   className,
+  prevText = "Prev",
+  nextText = "Next",
 }: PaginationProps & {
   /** The url root to use in generated page links including trailing slash. */
   urlRoot: string;
   className?: string;
+  /** Text to use for previous page link */
+  prevText: string;
+  /** Text to use for next page link */
+  nextText: string;
 }): JSX.Element {
   const numPages = Math.ceil(numberOfItems / perPage);
 
@@ -209,23 +215,26 @@ export function PaginationWithLinks({
 
   const nextPageUrl = `${urlRoot}page-${currentPage + 1}/`;
 
-  const prev = isFirst ? (
-    <span className={styles.disabled}>←Prev</span>
-  ) : (
+  const prev = isFirst ? null : (
     <Link to={prevPageUrl} className={styles.pagination_link}>
-      ←Prev
+      {`← ${prevText}`}
     </Link>
   );
 
-  const next = isLast ? (
-    <span className={styles.disabled}>Next→</span>
-  ) : (
+  const next = isLast ? null : (
     <Link to={nextPageUrl} className={styles.pagination_link}>
-      Next→
+      {`${nextText} →`}
     </Link>
   );
 
-  const firstPage = currentPage - 1 > 1 ? <Link to={`${urlRoot}`}>1</Link> : "";
+  const firstPage =
+    currentPage - 1 > 1 ? (
+      <Link className={styles.pagination_link} to={urlRoot}>
+        1
+      </Link>
+    ) : (
+      ""
+    );
 
   const prevDots =
     currentPage - 2 > 1 ? <span className={styles.elipsis}>…</span> : "";
