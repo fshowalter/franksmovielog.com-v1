@@ -1,32 +1,57 @@
 @import "./src/styles/breakpoints";
 
 .container {
+  border-top: solid 1px var(--color-background);
+  display: grid;
+  grid-gap: var(--step-1);
+  grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+  padding-top: var(--step-5);
+
   @media (min-width: $breakpoint_desktop) {
-    column-gap: var(--step-1);
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto;
+    border-top: 0;
+  }
+
+  @media (min-width: 80rem) {
+    padding-top: 0;
   }
 }
 
 .left {
-  // composes: card from "../styles/card.scss";
+  align-content: start;
+  display: grid;
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . .";
+  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+      var(--step-1),
+      1fr
+    );
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5);
 
   @media (min-width: $breakpoint_desktop) {
-    grid-area: left;
-    max-width: 330px;
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." ". pagination_info ." ". . .";
   }
 }
 
 .right {
-  @media (min-width: $breakpoint_desktop) {
-    grid-area: right;
-  }
+  display: grid;
+  grid-template-areas: ". list" ". ." "pagination pagination" ". .";
+  grid-template-columns: var(--step-1) 1fr;
+  grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
 
 .page_header {
-  composes: header from "../styles/page.scss";
+  grid-area: header;
+}
+
+.pagination_info {
+  color: var(--color-text-secondary);
+  grid-area: pagination_info;
+  justify-self: center;
+}
+
+.pagination {
+  color: var(--color-text-secondary);
+  grid-area: pagination;
+  justify-self: center;
 }
 
 .page_heading {
@@ -38,15 +63,10 @@
 }
 
 .filters {
-  composes: card from "../styles/filters.scss";
-
-  @media (min-width: $breakpoint_desktop) {
-    padding: 0;
-  }
-}
-
-.filters_fieldset {
-  composes: fieldset from "../styles/filters.scss";
+  border: solid 1px var(--color-background);
+  color: var(--color-text-secondary);
+  font-size: var(--step-1);
+  grid-area: filters;
 }
 
 .filter_text_input {
@@ -66,19 +86,28 @@
 }
 
 .list {
-  composes: list from "../styles/list.scss";
+  background-color: var(--color-content-background);
+  grid-area: list;
+
+  @media (min-width: $breakpoint_desktop) {
+    border-top: 0;
+  }
 }
 
 .list_item {
-  composes: list_item from "../styles/list.scss";
+  border-bottom: solid 1px var(--color-background);
+  display: block;
 }
 
 .list_item_first {
-  composes: list_item_first from "../styles/list.scss";
+  & .list_item_title {
+    padding-top: 0.5rem;
+  }
 }
 
 .list_item_title {
-  composes: list_item_title from "../styles/list.scss";
+  font-size: 18px;
+  padding: 1.5rem var(--step-1) 0.25rem 0;
 }
 
 .list_item_title_link {

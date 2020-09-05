@@ -175,4 +175,8 @@
 
 .pagination {
   grid-area: pagination;
+
+  @media (min-width: $breakpoint_desktop) {
+    border-top: solid 1px var(--color-background);
+  }
 }

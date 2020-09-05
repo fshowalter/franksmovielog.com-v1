@@ -18,7 +18,6 @@
   white-space: nowrap;
 
   @media (min-width: $breakpoint_desktop) {
-    border-top: solid 1px var(--color-background);
     font-size: 21px;
   }
 
@@ -43,17 +42,17 @@
   margin-left: 1.5rem;
 }
 
+.elipsis {
+  margin-top: -0.5ch;
+}
+
 .button {
   appearance: none;
   background: transparent;
-  // background-color: darken(#fff, 2);
-  // border: solid 1px var(--color-background);
   border: 0;
   color: var(--color-link);
-  font-family: var(--font-sans);
-  font-size: 18px;
-  font-weight: 300;
-  padding: calc(var(--step--2) / 2);
+  margin-left: 1.5rem;
+  padding: 0;
 
   @media (min-width: $breakpoint_desktop) {
     background-color: transparent;

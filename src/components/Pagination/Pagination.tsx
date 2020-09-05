@@ -61,11 +61,7 @@ export function PaginationWithButtons({
   let prev;
 
   if (isFirst) {
-    prev = (
-      <button type="button" disabled className={styles.button}>
-        ←Prev
-      </button>
-    );
+    prev = null;
   } else {
     prev = (
       <button
@@ -81,11 +77,7 @@ export function PaginationWithButtons({
   let next;
 
   if (isLast) {
-    next = (
-      <button type="button" disabled className={styles.button}>
-        Next→
-      </button>
-    );
+    next = null;
   } else {
     next = (
       <button
@@ -93,7 +85,7 @@ export function PaginationWithButtons({
         onClick={() => onClick(currentPage + 1)}
         className={styles.button}
       >
-        Next→
+        Next →
       </button>
     );
   }
