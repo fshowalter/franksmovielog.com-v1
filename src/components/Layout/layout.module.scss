@@ -18,6 +18,12 @@
     height: 1.5rem;
   }
 
+  @media (min-width: $breakpoint_tablet) {
+    &::before {
+      height: 1.25rem;
+    }
+  }
+
   @media (min-width: $breakpoint_desktop) {
     grid-template-areas: "border border border" ". . ." ". header ." ". content ." "footer footer footer";
     grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 1000px) minmax(
@@ -27,7 +33,7 @@
     grid-template-rows: auto 3rem auto auto auto;
 
     &::before {
-      height: 1.25rem;
+      height: 1rem;
     }
   }
 
@@ -38,10 +44,6 @@
         --step-1
       );
     grid-template-rows: auto 4rem auto auto auto;
-
-    &::before {
-      height: 1rem;
-    }
   }
 }
 

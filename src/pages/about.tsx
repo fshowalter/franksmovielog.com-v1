@@ -9,11 +9,14 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
 
   return (
     <Layout>
-      <main className={styles.container}>
-        <article>
-          <div>
-            <Img fluid={page.backdrop.childImageSharp.fluid} alt="" />
-          </div>
+      <main>
+        <article className={styles.article}>
+          <Img
+            fluid={page.backdrop.childImageSharp.fluid}
+            alt=""
+            className={styles.image}
+          />
+          <h1 className={styles.title}>About the Move Log</h1>
           <div
             className={styles.body}
             // eslint-disable-next-line react/no-danger
