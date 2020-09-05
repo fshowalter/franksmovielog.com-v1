@@ -40,6 +40,8 @@ excerpt: Grade scales are harder than you'd think.
   can't forgive boring. When reading a 1-star review, remember: I watch
   them so you don’t have to.
 
+---
+
 ## On Grading
 
 Let’s start with a binary scale. A yes or no. Gene Siskel’s argument for the

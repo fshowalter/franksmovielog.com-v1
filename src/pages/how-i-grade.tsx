@@ -9,11 +9,13 @@ export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
 
   return (
     <Layout>
-      <main className={styles.container}>
-        <article>
-          <div className="home-post_image_wrap">
-            <Img fluid={page.backdrop.childImageSharp.fluid} alt="" />
-          </div>
+      <main>
+        <article className={styles.article}>
+          <Img
+            fluid={page.backdrop.childImageSharp.fluid}
+            alt=""
+            className={styles.image}
+          />
           <div
             className={styles.body}
             // eslint-disable-next-line react/no-danger

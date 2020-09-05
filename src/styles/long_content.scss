@@ -27,32 +27,45 @@
     quotes: "\201C""\201D""\2018""\2019";
   }
 
-  // blockquote::before {
-  //   color: var(--color-background);
-  //   content: open-quote;
-  //   font-size: 6rem;
-  //   left: 0;
-  //   line-height: 0.1em;
-  //   margin-right: 0.25em;
-  //   position: absolute;
-  //   top: 2.4rem;
-  //   vertical-align: -0.4em;
-  // }
-
-  // blockquote::after {
-  //   bottom: -1rem;
-  //   color: var(--color-background);
-  //   content: close-quote;
-  //   font-size: 6em;
-  //   line-height: 0.1em;
-  //   margin-right: 0.5rem;
-  //   position: absolute;
-  //   right: 0;
-  //   vertical-align: -0.4em;
-  // }
-
   blockquote p {
     display: inline;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+    margin-top: 1.5rem;
+  }
+
+  h1 {
+    color: #000;
+    font-size: var(--step-3);
+    margin-bottom: var(--step-5);
+    text-align: center;
+  }
+
+  h2 {
+    color: #000;
+    font-size: var(--step-2);
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    color: #000;
+    font-size: var(--step-1);
+    margin-bottom: 0.25rem;
+  }
+
+  hr {
+    border: 1px solid var(--color-background);
+    margin: 2.8rem auto;
+    width: 75%;
+  }
+
+  img {
+    height: 1rem;
+    width: auto;
   }
 
   p:last-child {

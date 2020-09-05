@@ -5,6 +5,8 @@ title: Welcome Back
 slug: about
 ---
 
+# About the Movie Log
+
 Been a long time, huh?
 
 I know what you’re thinking, constant reader, but I’m serious this time. Okay, maybe not serious, but at least pragmatic.

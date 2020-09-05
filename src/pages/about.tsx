@@ -16,7 +16,6 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
             alt=""
             className={styles.image}
           />
-          <h1 className={styles.title}>About the Move Log</h1>
           <div
             className={styles.body}
             // eslint-disable-next-line react/no-danger
