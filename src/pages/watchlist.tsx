@@ -603,145 +603,135 @@ export default function WatchlistPage({
               documentaries.
             </p>
           </header>
-          <div className={styles.filters}>
-            <fieldset className={styles.filters_fieldset}>
-              <legend>Filter &amp; Sort</legend>
-              <label className={styles.label} htmlFor="to_watch-title-input">
-                Title
-                <DebouncedInput
-                  id="to_watch-title-input"
-                  className={styles.filter_text_input}
-                  placeholder="Enter all or part of a title"
-                  onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
+          <fieldset className={styles.filters}>
+            <legend>Filter &amp; Sort</legend>
+            <label className={styles.label} htmlFor="to_watch-title-input">
+              Title
+              <DebouncedInput
+                id="to_watch-title-input"
+                className={styles.filter_text_input}
+                placeholder="Enter all or part of a title"
+                onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
+              />
+            </label>
+            <label className={styles.label} htmlFor="to_watch-director-input">
+              Director
+              <select
+                id="to_watch-director-input"
+                className={styles.filter_select_input}
+                onChange={(e) =>
+                  dispatch({
+                    type: FILTER_DIRECTOR,
+                    value: e.target.value,
+                  })
+                }
+              >
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="directors"
                 />
-              </label>
-              <label className={styles.label} htmlFor="to_watch-director-input">
-                Director
-                <select
-                  id="to_watch-director-input"
-                  className={styles.filter_select_input}
-                  onChange={(e) =>
-                    dispatch({
-                      type: FILTER_DIRECTOR,
-                      value: e.target.value,
-                    })
-                  }
-                >
-                  <WatchlistOptions
-                    movies={state.allMovies}
-                    keyName="directors"
-                  />
-                </select>
-              </label>
-              <label
-                className={styles.label}
-                htmlFor="to_watch-performer-input"
+              </select>
+            </label>
+            <label className={styles.label} htmlFor="to_watch-performer-input">
+              Performer
+              <select
+                id="to_watch-performer-input"
+                className={styles.filter_select_input}
+                onChange={(e) =>
+                  dispatch({
+                    type: FILTER_PERFORMER,
+                    value: e.target.value,
+                  })
+                }
               >
-                Performer
-                <select
-                  id="to_watch-performer-input"
-                  className={styles.filter_select_input}
-                  onChange={(e) =>
-                    dispatch({
-                      type: FILTER_PERFORMER,
-                      value: e.target.value,
-                    })
-                  }
-                >
-                  <WatchlistOptions
-                    movies={state.allMovies}
-                    keyName="performers"
-                  />
-                </select>
-              </label>
-              <label className={styles.label} htmlFor="to_watch-writer-input">
-                Writer
-                <select
-                  id="to_watch-writer-input"
-                  className={styles.filter_select_input}
-                  onChange={(e) =>
-                    dispatch({
-                      type: FILTER_WRITER,
-                      value: e.target.value,
-                    })
-                  }
-                >
-                  <WatchlistOptions
-                    movies={state.allMovies}
-                    keyName="writers"
-                  />
-                </select>
-              </label>
-              <label
-                className={styles.label}
-                htmlFor="to_watch-collection-input"
-              >
-                Collection
-                <select
-                  id="to_watch-collection-input"
-                  className={styles.filter_select_input}
-                  onChange={(e) =>
-                    dispatch({
-                      type: FILTER_COLLECTION,
-                      value: e.target.value,
-                    })
-                  }
-                >
-                  <WatchlistOptions
-                    movies={state.allMovies}
-                    keyName="collections"
-                  />
-                </select>
-              </label>
-              <label
-                className={styles.label}
-                htmlFor="to_watch-release-year-input"
-              >
-                Release Year
-                <RangeInput
-                  id="to_watch-release-year-input"
-                  min={state.minYear}
-                  max={state.maxYear}
-                  onChange={(values) =>
-                    dispatch({ type: FILTER_RELEASE_YEAR, values })
-                  }
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="performers"
                 />
-              </label>
-              <label className={styles.label} htmlFor="to_watch-sort-input">
-                Order By
-                <select
-                  id="to_watch-sort-input"
-                  className={styles.filter_select_input}
-                  onChange={(e) =>
-                    dispatch({ type: SORT, value: e.target.value })
-                  }
-                >
-                  <option value="release-date-asc">
-                    Release Date (Oldest First)
-                  </option>
-                  <option value="release-date-desc">
-                    Release Date (Newest First)
-                  </option>
-                  <option value="title">Title</option>
-                </select>
-              </label>
-              <button
-                id="to_watch-toggle_reviewed"
-                type="button"
-                className={styles.toggle_review_button}
-                onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
+              </select>
+            </label>
+            <label className={styles.label} htmlFor="to_watch-writer-input">
+              Writer
+              <select
+                id="to_watch-writer-input"
+                className={styles.filter_select_input}
+                onChange={(e) =>
+                  dispatch({
+                    type: FILTER_WRITER,
+                    value: e.target.value,
+                  })
+                }
               >
-                {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-              </button>
-            </fieldset>
-          </div>
-        </div>
-        <div ref={listHeader} className={styles.right}>
+                <WatchlistOptions movies={state.allMovies} keyName="writers" />
+              </select>
+            </label>
+            <label className={styles.label} htmlFor="to_watch-collection-input">
+              Collection
+              <select
+                id="to_watch-collection-input"
+                className={styles.filter_select_input}
+                onChange={(e) =>
+                  dispatch({
+                    type: FILTER_COLLECTION,
+                    value: e.target.value,
+                  })
+                }
+              >
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="collections"
+                />
+              </select>
+            </label>
+            <label
+              className={styles.label}
+              htmlFor="to_watch-release-year-input"
+            >
+              Release Year
+              <RangeInput
+                id="to_watch-release-year-input"
+                min={state.minYear}
+                max={state.maxYear}
+                onChange={(values) =>
+                  dispatch({ type: FILTER_RELEASE_YEAR, values })
+                }
+              />
+            </label>
+            <label className={styles.label} htmlFor="to_watch-sort-input">
+              Order By
+              <select
+                id="to_watch-sort-input"
+                className={styles.filter_select_input}
+                onChange={(e) =>
+                  dispatch({ type: SORT, value: e.target.value })
+                }
+              >
+                <option value="release-date-asc">
+                  Release Date (Oldest First)
+                </option>
+                <option value="release-date-desc">
+                  Release Date (Newest First)
+                </option>
+                <option value="title">Title</option>
+              </select>
+            </label>
+            <button
+              id="to_watch-toggle_reviewed"
+              type="button"
+              className={styles.toggle_review_button}
+              onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
+            >
+              {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+            </button>
+          </fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredMovies.length}
+            className={styles.pagination_info}
           />
+        </div>
+        <div ref={listHeader} className={styles.right}>
           <ol className={styles.list}>
             {state.moviesForPage.map((movie, index) => {
               return (
@@ -757,6 +747,7 @@ export default function WatchlistPage({
             })}
           </ol>
           <PaginationWithButtons
+            className={styles.pagination}
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredMovies.length}
