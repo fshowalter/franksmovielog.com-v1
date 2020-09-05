@@ -15,7 +15,7 @@ export function PaginationInfo({
   currentPage,
   perPage,
   numberOfItems,
-  className = styles.header,
+  className = styles.info,
 }: PaginationProps & {
   /** CSS class to apply to the rendered element. */
   className?: string;
@@ -36,9 +36,11 @@ export function PaginationWithButtons({
   perPage,
   numberOfItems,
   onClick,
+  className,
 }: PaginationProps & {
   /** Handler called when a pagination button is clicked. */
   onClick: (value: number) => void;
+  className?: string;
 }): JSX.Element {
   const numPages = Math.ceil(numberOfItems / perPage);
 
@@ -48,6 +50,7 @@ export function PaginationWithButtons({
         currentPage={1}
         numberOfItems={numberOfItems}
         perPage={perPage}
+        className={className}
       />
     );
   }
@@ -166,7 +169,7 @@ export function PaginationWithButtons({
   }
 
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} ${className || ""}`}>
       <h3 className={styles.pagination_heading}>Pagination</h3>
       {prev} {firstPage} {prevDots} {prevPage}
       <span className={styles.current_page} aria-current="page">

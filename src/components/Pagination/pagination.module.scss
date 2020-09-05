@@ -1,20 +1,10 @@
 @import "./src/styles/breakpoints";
 
-.header {
-  border-bottom: solid 1px var(--color-background);
+.info {
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
   font-size: clamp(15px, 4vw, 16px);
   font-weight: 300;
-  padding: var(--step-1);
   text-align: center;
-
-  @media (min-width: $breakpoint_desktop) {
-    background-color: darken(#fff, 2);
-    border: solid 1px var(--color-background);
-    margin-top: var(--step-5);
-    padding: 1rem var(--step-1);
-  }
 }
 
 .container {

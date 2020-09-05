@@ -4,12 +4,6 @@
   background-color: var(--color-content-background);
   border-bottom: solid 1px darken(#e9e7e0, 5);
   border-top: solid 1px var(--color-background);
-  padding-left: var(--step-1);
-
-  @media (min-width: $breakpoint_desktop) {
-    border: 0;
-    padding-top: 0;
-  }
 }
 
 .list_item {

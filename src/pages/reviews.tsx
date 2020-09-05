@@ -254,62 +254,61 @@ export default function ReviewsPage({
             </p>
           </header>
 
-          <div className={styles.filters}>
-            <fieldset className={styles.filters_fieldset}>
-              <legend>Filter &amp; Sort</legend>
-              <label className={styles.label} htmlFor="viewings-title-input">
-                Title
-                <DebouncedInput
-                  id={styles.filter_text_input}
-                  placeholder="Enter all or part of a title"
-                  className={styles.filter_text_input}
-                  onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
-                />
-              </label>
-              <label
-                className={styles.label}
-                htmlFor="viewings-release-year-input"
+          <fieldset className={styles.filters}>
+            <legend>Filter &amp; Sort</legend>
+            <label className={styles.label} htmlFor="viewings-title-input">
+              Title
+              <DebouncedInput
+                id={styles.filter_text_input}
+                placeholder="Enter all or part of a title"
+                className={styles.filter_text_input}
+                onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
+              />
+            </label>
+            <label
+              className={styles.label}
+              htmlFor="viewings-release-year-input"
+            >
+              Release Year
+              <RangeInput
+                id="viewings-release-year-input"
+                min={state.minYear}
+                max={state.maxYear}
+                onChange={(values) =>
+                  dispatch({ type: FILTER_RELEASE_YEAR, values })
+                }
+              />
+            </label>
+            <label className={styles.label} htmlFor="viewings-sort-input">
+              Order By
+              <select
+                value={state.sortValue}
+                id="viewings-sort-input"
+                className={styles.filter_select_input}
+                onChange={(e) =>
+                  dispatch({ type: SORT, value: e.target.value })
+                }
               >
-                Release Year
-                <RangeInput
-                  id="viewings-release-year-input"
-                  min={state.minYear}
-                  max={state.maxYear}
-                  onChange={(values) =>
-                    dispatch({ type: FILTER_RELEASE_YEAR, values })
-                  }
-                />
-              </label>
-              <label className={styles.label} htmlFor="viewings-sort-input">
-                Order By
-                <select
-                  value={state.sortValue}
-                  id="viewings-sort-input"
-                  className={styles.filter_select_input}
-                  onChange={(e) =>
-                    dispatch({ type: SORT, value: e.target.value })
-                  }
-                >
-                  <option value="title">Title</option>
-                  <option value="grade-desc">Grade (Best First)</option>
-                  <option value="grade-asc">Grade (Worst First)</option>
-                  <option value="release-date-desc">
-                    Release Date (Newest First)
-                  </option>
-                  <option value="release-date-asc">
-                    Release Date (Oldest First)
-                  </option>
-                </select>
-              </label>
-            </fieldset>
-          </div>
-        </div>
-        <div className={styles.right}>
+                <option value="title">Title</option>
+                <option value="grade-desc">Grade (Best First)</option>
+                <option value="grade-asc">Grade (Worst First)</option>
+                <option value="release-date-desc">
+                  Release Date (Newest First)
+                </option>
+                <option value="release-date-asc">
+                  Release Date (Oldest First)
+                </option>
+              </select>
+            </label>
+          </fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredReviews.length}
+            className={styles.pagination_info}
           />
+        </div>
+        <div className={styles.right}>
           <ol className={styles.list}>
             {state.reviewsForPage.map((review, index) => {
               return (
@@ -345,6 +344,7 @@ export default function ReviewsPage({
             onClick={(newPage) =>
               dispatch({ type: CHANGE_PAGE, value: newPage })
             }
+            className={styles.pagination}
           />
         </div>
       </main>
