@@ -7,11 +7,8 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
-    border-top: 0;
-  }
-
   @media (min-width: 80rem) {
+    border-top: 0;
     padding-top: 0;
   }
 }
@@ -19,12 +16,12 @@
 .left {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
     );
-  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5);
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto;
 
   @media (min-width: $breakpoint_desktop) {
     grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." ". pagination_info ." ". . .";

@@ -10,9 +10,12 @@
     );
 
   @media (min-width: $breakpoint_desktop) {
-    border-top: 0;
     grid-template-areas: "list" "pagination";
     grid-template-columns: unset;
+  }
+
+  @media (min-width: 80rem) {
+    border-top: 0;
   }
 }
 
@@ -41,15 +44,16 @@
       padding-left: var(--step-1);
     }
 
-    &:first-of-type {
-      border-top: 0;
-      margin-top: 0;
-    }
-
     &:first-of-type,
     &:last-of-type {
       padding: 2.5rem 0;
       width: 100%;
+    }
+
+    &:first-of-type {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: var(--step-5);
     }
   }
 

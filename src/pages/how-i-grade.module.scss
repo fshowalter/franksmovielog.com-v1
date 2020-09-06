@@ -14,12 +14,7 @@
     grid-template-columns:
       minmax(var(--step-1), 1fr) minmax(auto, 63ch)
       minmax(var(--step-1), 1fr);
-    margin-top: var(--step-1);
     max-width: none;
-  }
-
-  @media (min-width: 80rem) {
-    margin-top: 0;
   }
 }
 

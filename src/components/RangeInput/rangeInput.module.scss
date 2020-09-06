@@ -48,14 +48,12 @@
   appearance: textfield;
   background-color: #fff;
   border: 0;
-  box-sizing: content-box;
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
   font-size: var(--step--2);
   padding: 0;
+  width: 4em;
+}
 
-  &::-webkit-inner-spin-button {
-    appearance: none;
-    margin: 0;
-  }
+.right {
+  text-align: right;
 }

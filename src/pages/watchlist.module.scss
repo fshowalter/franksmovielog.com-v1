@@ -7,11 +7,8 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
-    border-top: 0;
-  }
-
   @media (min-width: 80rem) {
+    border-top: 0;
     padding-top: 0;
   }
 }

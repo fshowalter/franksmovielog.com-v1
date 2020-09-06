@@ -81,7 +81,7 @@ export default function Review({
 
   return (
     <Layout>
-      <article className={styles.container}>
+      <main className={styles.container}>
         <Img
           className={styles.image}
           fluid={reviews[0].backdrop.childImageSharp.fluid}
@@ -91,7 +91,7 @@ export default function Review({
           {movieInfo.title}{" "}
           <span className={styles.title_year}>{movieInfo.year}</span>
         </h1>
-        <aside className={styles.cast_and_crew}>
+        <aside className={styles.credits}>
           <Img
             className={styles.poster}
             fluid={reviews[0].poster.childImageSharp.fluid}
@@ -118,31 +118,35 @@ export default function Review({
         <ul className={styles.reviews}>
           {reviews.map((review) => {
             return (
-              <li className={styles.review}>
-                <div className={styles.slug}>
-                  <DateIcon className={styles.date_icon} />{" "}
-                  <span className={styles.date}>{review.frontmatter.date}</span>{" "}
-                  via {review.frontmatter.venue} (
-                  {review.frontmatter.venueNotes})
-                </div>
-                <div className={styles.content}>
-                  <Grade
-                    grade={review.frontmatter.grade}
-                    className={styles.grade}
-                  />
-                  <div
-                    className={styles.body}
-                    // eslint-disable-next-line react/no-danger
-                    dangerouslySetInnerHTML={{
-                      __html: review.linkedHtml,
-                    }}
-                  />
-                </div>
+              <li>
+                <article className={styles.review}>
+                  <header className={styles.slug}>
+                    <DateIcon className={styles.date_icon} />{" "}
+                    <span className={styles.date}>
+                      {review.frontmatter.date}
+                    </span>{" "}
+                    via {review.frontmatter.venue} (
+                    {review.frontmatter.venueNotes})
+                  </header>
+                  <div className={styles.content}>
+                    <Grade
+                      grade={review.frontmatter.grade}
+                      className={styles.grade}
+                    />
+                    <div
+                      className={styles.body}
+                      // eslint-disable-next-line react/no-danger
+                      dangerouslySetInnerHTML={{
+                        __html: review.linkedHtml,
+                      }}
+                    />
+                  </div>
+                </article>
               </li>
             );
           })}
         </ul>
-      </article>
+      </main>
       {structuredData && (
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
