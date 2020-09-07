@@ -1,16 +1,16 @@
 import { graphql } from "gatsby";
-import React,{ useReducer,useRef } from "react";
+import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Layout from "../components/Layout";
 import {
   PaginationInfo,
-  PaginationWithButtons
+  PaginationWithButtons,
 } from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
-import { collator,sortStringAsc,sortStringDesc } from "../utils/sort-utils";
+import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
 import styles from "./viewings.module.scss";
 
 type Viewing = {

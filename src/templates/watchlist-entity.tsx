@@ -1,6 +1,6 @@
 import { graphql, Link } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
-import React, { useReducer } from "react";
+import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
@@ -321,6 +321,8 @@ export default function WatchlistPersonPage({
     throw Error(`No avatar found at ${pageContext.avatarPath}`);
   }
 
+  const listHeader = useRef<HTMLDivElement>(null);
+
   return (
     <Layout>
       <main className={styles.container}>
@@ -388,7 +390,7 @@ export default function WatchlistPersonPage({
             className={styles.pagination_info}
           />
         </div>
-        <div className={styles.right}>
+        <div className={styles.right} ref={listHeader}>
           <ul className={styles.list}>
             {state.moviesForPage.map((movie) => {
               const markdownNode = data.backdrop.nodes.find(
@@ -410,9 +412,12 @@ export default function WatchlistPersonPage({
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredMovies.length}
-            onClick={(newPage) =>
-              dispatch({ type: CHANGE_PAGE, value: newPage })
-            }
+            onClick={(newPage) => {
+              dispatch({ type: CHANGE_PAGE, value: newPage });
+              if (listHeader && listHeader.current) {
+                listHeader.current.scrollIntoView();
+              }
+            }}
             className={styles.pagination}
           />
         </div>
