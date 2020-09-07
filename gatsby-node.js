@@ -141,20 +141,6 @@ async function createReviewPages(graphql, reporter, createPage) {
 }
 
 async function createWatchlistPages(graphql, reporter, createPage) {
-  const reviewsQuery = await graphql(
-    `
-      {
-        allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
-          nodes {
-            frontmatter {
-              imdb_id
-            }
-          }
-        }
-      }
-    `
-  );
-
   const watchlistTitlesQuery = await graphql(
     `
       {
@@ -186,18 +172,12 @@ async function createWatchlistPages(graphql, reporter, createPage) {
     `
   );
 
-  if (watchlistTitlesQuery.errors || reviewsQuery.errors) {
+  if (watchlistTitlesQuery.errors) {
     reporter.panicOnBuild(
       `Error while running GraphQL query for createWatchlistPages.`
     );
     return;
   }
-
-  const reviewIds = new Set(
-    reviewsQuery.data.allMarkdownRemark.nodes.map((review) => {
-      return review.frontmatter.imdb_id;
-    })
-  );
 
   const reducePerson = (key, accumulator, currentValue) => {
     currentValue[key].forEach((person) => {
@@ -214,10 +194,6 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
   const pages = watchlistTitlesQuery.data.allWatchlistTitlesJson.nodes.reduce(
     (accumulator, currentValue) => {
-      if (!reviewIds.has(currentValue.imdb_id)) {
-        return accumulator;
-      }
-
       reducePerson("directors", accumulator, currentValue);
       reducePerson("performers", accumulator, currentValue);
       reducePerson("writers", accumulator, currentValue);

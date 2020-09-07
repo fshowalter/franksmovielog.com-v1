@@ -24,7 +24,7 @@
   grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5);
 
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." ". pagination_info ." ". . .";
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . .";
   }
 }
 

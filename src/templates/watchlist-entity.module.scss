@@ -1,65 +1,86 @@
 @import "./src/styles/breakpoints";
 
 .container {
-  min-width: 100%;
+  border-top: solid 1px var(--color-background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
-    background-color: var(--color-content-background);
-    column-gap: calc(2 * var(--step-1));
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-columns: 35% 1fr;
-    grid-template-rows: auto;
-    padding-bottom: var(--step-5);
+  @media (min-width: 80rem) {
+    border-top: 0;
+    padding-top: 0;
   }
 }
 
 .left {
-  composes: card from "../styles/card.scss";
+  align-content: start;
+  display: grid;
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . .";
+  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+      var(--step-1),
+      1fr
+    );
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5);
+  margin: 0 auto;
+  width: clamp(320px, 100vw, 375px);
 
   @media (min-width: $breakpoint_desktop) {
-    grid-area: left;
+    grid-template-areas: ". header . ." ". . . ." "filters filters . ." ". . . ." "pagination_info pagination_info . ." ". . . .";
+    grid-template-columns:
+      minmax(var(--step-1), 1fr) minmax(auto, 100%) var(--step-1)
+      minmax(var(--step-1), 1fr);
   }
 }
 
 .right {
+  display: grid;
+  flex-grow: 1;
+  grid-template-areas: "list" "." "pagination" ".";
+  grid-template-rows: auto var(--step-1) auto var(--step-5);
+  padding: 0 var(--step-1);
+
   @media (min-width: $breakpoint_desktop) {
-    grid-area: right;
+    padding: 0;
   }
 }
 
 .page_header {
-  composes: header from "../styles/page.scss";
+  grid-area: header;
+}
+
+.pagination_info {
+  color: var(--color-text-secondary);
+  grid-area: pagination_info;
+  justify-self: center;
+}
+
+.pagination {
+  color: var(--color-text-secondary);
+  grid-area: pagination;
+  justify-self: center;
 }
 
 .page_heading {
   composes: heading from "../styles/page.scss";
-
-  @media (min-width: $breakpoint_desktop) {
-    text-align: center;
-  }
 }
 
 .page_tagline {
   composes: tagline from "../styles/page.scss";
-
-  @media (min-width: $breakpoint_desktop) {
-    text-align: center;
-  }
 }
 
 .avatar {
   border-radius: 50%;
   margin: 0 auto var(--step-5);
+  max-width: 200px;
   width: 75%;
 }
 
 .filters {
-  composes: card from "../styles/filters.scss";
-
-  @media (min-width: $breakpoint_desktop) {
-    padding: 0;
-  }
+  border: solid 1px var(--color-background);
+  color: var(--color-text-secondary);
+  font-size: var(--step-1);
+  grid-area: filters;
 }
 
 .filters_fieldset {
@@ -82,16 +103,20 @@
   composes: toggle_button from "../styles/filters.scss";
 }
 
-.list_item {
-  background-color: darken(#fff, 0.5);
-  border-bottom: solid 1px var(--color-background);
-  margin-top: var(--step-5);
-  padding: var(--step-5) var(--step-1) var(--step-1);
+.list {
+  background-color: var(--color-content-background);
+  column-gap: var(--step-1);
+  display: grid;
+  grid-area: list;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  row-gap: 1.5rem;
 
   @media (min-width: $breakpoint_desktop) {
-    margin-top: 0;
-    padding: var(--step-5) 0 var(--step-1);
+    border-top: 0;
   }
+}
+
+.list_item {
 }
 
 .list_item_image_link {
@@ -100,22 +125,20 @@
 }
 
 .list_item_title {
-  font-size: var(--step-1);
-  font-weight: 700;
+  font-size: 1rem;
   line-height: 1.3;
   text-rendering: optimizeLegibility;
 }
 
 .list_item_title_year {
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 300;
 }
 
 .list_item_grade {
-  height: 1.75rem;
-  margin-top: 1rem;
+  height: 1rem;
+  margin-top: 0.15rem;
   width: auto;
 }
 
