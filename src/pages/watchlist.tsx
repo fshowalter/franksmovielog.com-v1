@@ -1,6 +1,8 @@
 import { graphql } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
+import Fieldset from "../components/Fieldset";
+import Label from "../components/Label";
 import Layout from "../components/Layout";
 import {
   PaginationInfo,
@@ -8,6 +10,7 @@ import {
 } from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
+import SelectInput from "../components/SelectInput";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie, {
   WatchlistCollection,
@@ -603,22 +606,20 @@ export default function WatchlistPage({
               documentaries.
             </p>
           </header>
-          <fieldset className={styles.filters}>
+          <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
-            <label className={styles.label} htmlFor="to_watch-title-input">
+            <Label htmlFor="to_watch-title-input">
               Title
               <DebouncedInput
                 id="to_watch-title-input"
-                className={styles.filter_text_input}
                 placeholder="Enter all or part of a title"
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
-            </label>
-            <label className={styles.label} htmlFor="to_watch-director-input">
+            </Label>
+            <Label htmlFor="to_watch-director-input">
               Director
-              <select
+              <SelectInput
                 id="to_watch-director-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({
                     type: FILTER_DIRECTOR,
@@ -630,13 +631,12 @@ export default function WatchlistPage({
                   movies={state.allMovies}
                   keyName="directors"
                 />
-              </select>
-            </label>
-            <label className={styles.label} htmlFor="to_watch-performer-input">
+              </SelectInput>
+            </Label>
+            <Label htmlFor="to_watch-performer-input">
               Performer
-              <select
+              <SelectInput
                 id="to_watch-performer-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({
                     type: FILTER_PERFORMER,
@@ -648,13 +648,12 @@ export default function WatchlistPage({
                   movies={state.allMovies}
                   keyName="performers"
                 />
-              </select>
-            </label>
-            <label className={styles.label} htmlFor="to_watch-writer-input">
+              </SelectInput>
+            </Label>
+            <Label htmlFor="to_watch-writer-input">
               Writer
-              <select
+              <SelectInput
                 id="to_watch-writer-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({
                     type: FILTER_WRITER,
@@ -663,13 +662,12 @@ export default function WatchlistPage({
                 }
               >
                 <WatchlistOptions movies={state.allMovies} keyName="writers" />
-              </select>
-            </label>
-            <label className={styles.label} htmlFor="to_watch-collection-input">
+              </SelectInput>
+            </Label>
+            <Label htmlFor="to_watch-collection-input">
               Collection
-              <select
+              <SelectInput
                 id="to_watch-collection-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({
                     type: FILTER_COLLECTION,
@@ -681,12 +679,9 @@ export default function WatchlistPage({
                   movies={state.allMovies}
                   keyName="collections"
                 />
-              </select>
-            </label>
-            <label
-              className={styles.label}
-              htmlFor="to_watch-release-year-input"
-            >
+              </SelectInput>
+            </Label>
+            <Label htmlFor="to_watch-release-year-input">
               Release Year
               <RangeInput
                 id="to_watch-release-year-input"
@@ -696,12 +691,11 @@ export default function WatchlistPage({
                   dispatch({ type: FILTER_RELEASE_YEAR, values })
                 }
               />
-            </label>
-            <label className={styles.label} htmlFor="to_watch-sort-input">
+            </Label>
+            <Label htmlFor="to_watch-sort-input">
               Order By
-              <select
+              <SelectInput
                 id="to_watch-sort-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({ type: SORT, value: e.target.value })
                 }
@@ -713,8 +707,8 @@ export default function WatchlistPage({
                   Release Date (Newest First)
                 </option>
                 <option value="title">Title</option>
-              </select>
-            </label>
+              </SelectInput>
+            </Label>
             <button
               id="to_watch-toggle_reviewed"
               type="button"
@@ -723,7 +717,7 @@ export default function WatchlistPage({
             >
               {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
             </button>
-          </fieldset>
+          </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}

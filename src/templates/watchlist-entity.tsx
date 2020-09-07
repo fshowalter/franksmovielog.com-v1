@@ -2,7 +2,9 @@ import { graphql, Link } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput";
+import Fieldset from "../components/Fieldset";
 import Grade from "../components/Grade";
+import Label from "../components/Label";
 import Layout from "../components/Layout";
 import {
   PaginationInfo,
@@ -338,9 +340,9 @@ export default function WatchlistPersonPage({
               <EntityHeader pageContext={pageContext} />
             </p>
           </header>
-          <fieldset className={styles.filters}>
+          <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
-            <label className={styles.label} htmlFor="viewings-title-input">
+            <Label htmlFor="viewings-title-input">
               Title
               <DebouncedInput
                 id={styles.filter_text_input}
@@ -348,11 +350,8 @@ export default function WatchlistPersonPage({
                 className={styles.filter_text_input}
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
-            </label>
-            <label
-              className={styles.label}
-              htmlFor="viewings-release-year-input"
-            >
+            </Label>
+            <Label htmlFor="viewings-release-year-input">
               Release Year
               <RangeInput
                 id="viewings-release-year-input"
@@ -362,8 +361,8 @@ export default function WatchlistPersonPage({
                   dispatch({ type: FILTER_RELEASE_YEAR, values })
                 }
               />
-            </label>
-            <label className={styles.label} htmlFor="viewings-sort-input">
+            </Label>
+            <Label htmlFor="viewings-sort-input">
               Order By
               <select
                 value={state.sortValue}
@@ -381,8 +380,8 @@ export default function WatchlistPersonPage({
                 </option>
                 <option value="title">Title</option>
               </select>
-            </label>
-          </fieldset>
+            </Label>
+          </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}

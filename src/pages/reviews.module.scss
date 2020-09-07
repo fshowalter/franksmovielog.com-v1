@@ -62,22 +62,7 @@
 }
 
 .filters {
-  border: solid 1px var(--color-background);
-  color: var(--color-text-secondary);
-  font-size: var(--step-1);
   grid-area: filters;
-}
-
-.filter_text_input {
-  composes: text_input from "../styles/filters.scss";
-}
-
-.filter_select_input {
-  composes: select_input from "../styles/filters.scss";
-}
-
-.label {
-  composes: label from "../styles/filters.scss";
 }
 
 .toggle_review_button {

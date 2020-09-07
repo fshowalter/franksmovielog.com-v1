@@ -1,13 +1,3 @@
-@import "./src/styles/breakpoints";
-
-.label {
-  color: var(--color-text-secondary);
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  margin-top: var(--step-0);
-}
-
 .input {
   appearance: none;
   border: 0;

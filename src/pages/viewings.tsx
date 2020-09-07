@@ -1,6 +1,8 @@
 import { graphql } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
+import Fieldset from "../components/Fieldset";
+import Label from "../components/Label";
 import Layout from "../components/Layout";
 import {
   PaginationInfo,
@@ -8,6 +10,7 @@ import {
 } from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
+import SelectInput from "../components/SelectInput";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
@@ -366,21 +369,17 @@ export default function ViewingsPage({
             </p>
           </header>
 
-          <fieldset className={styles.filters}>
+          <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
-            <label className={styles.label} htmlFor="viewings-title-input">
+            <Label htmlFor="viewings-title-input">
               Title
               <DebouncedInput
                 id="viewings-title-input"
-                className={styles.filter_text_input}
                 placeholder="Enter all or part of a title"
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
-            </label>
-            <label
-              className={styles.label}
-              htmlFor="viewings-release-year-input"
-            >
+            </Label>
+            <Label htmlFor="viewings-release-year-input">
               Release Year
               <RangeInput
                 id="viewings-release-year-input"
@@ -390,8 +389,8 @@ export default function ViewingsPage({
                   dispatch({ type: FILTER_RELEASE_YEAR, values })
                 }
               />
-            </label>
-            <label className={styles.label} htmlFor="viewings-venue-input">
+            </Label>
+            <Label htmlFor="viewings-venue-input">
               Venue
               <select
                 id="viewings-venue-input"
@@ -405,12 +404,11 @@ export default function ViewingsPage({
               >
                 <VenueOptions viewings={state.allViewings} />
               </select>
-            </label>
-            <label className={styles.label} htmlFor="viewings-sort-input">
+            </Label>
+            <Label htmlFor="viewings-sort-input">
               Order By
-              <select
+              <SelectInput
                 value={state.sortValue}
-                className={styles.filter_select_input}
                 id="viewings-sort-input"
                 onChange={(e) =>
                   dispatch({ type: SORT, value: e.target.value })
@@ -429,9 +427,9 @@ export default function ViewingsPage({
                   Release Date (Oldest First)
                 </option>
                 <option value="title">Title</option>
-              </select>
-            </label>
-          </fieldset>
+              </SelectInput>
+            </Label>
+          </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}

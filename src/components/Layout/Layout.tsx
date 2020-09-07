@@ -10,7 +10,7 @@ import { Link } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 import SearchIcon from "../SearchIcon";
-import styles from "./layout.module.scss";
+import styles from "./Layout.module.scss";
 
 type NavItemProps = {
   to: string;

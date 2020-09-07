@@ -1,13 +1,16 @@
 import { graphql, Link } from "gatsby";
 import React, { useReducer } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
+import Fieldset from "../components/Fieldset";
 import Grade from "../components/Grade";
+import Label from "../components/Label";
 import Layout from "../components/Layout";
 import {
   PaginationInfo,
   PaginationWithButtons,
 } from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
+import SelectInput from "../components/SelectInput";
 import JsonReview from "../types/JsonReview";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
@@ -254,21 +257,17 @@ export default function ReviewsPage({
             </p>
           </header>
 
-          <fieldset className={styles.filters}>
+          <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
-            <label className={styles.label} htmlFor="viewings-title-input">
+            <Label htmlFor="viewings-title-input">
               Title
               <DebouncedInput
-                id={styles.filter_text_input}
+                id="viewings-title-input"
                 placeholder="Enter all or part of a title"
-                className={styles.filter_text_input}
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
-            </label>
-            <label
-              className={styles.label}
-              htmlFor="viewings-release-year-input"
-            >
+            </Label>
+            <Label htmlFor="viewings-release-year-input">
               Release Year
               <RangeInput
                 id="viewings-release-year-input"
@@ -278,13 +277,12 @@ export default function ReviewsPage({
                   dispatch({ type: FILTER_RELEASE_YEAR, values })
                 }
               />
-            </label>
-            <label className={styles.label} htmlFor="viewings-sort-input">
+            </Label>
+            <Label htmlFor="viewings-sort-input">
               Order By
-              <select
+              <SelectInput
                 value={state.sortValue}
                 id="viewings-sort-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({ type: SORT, value: e.target.value })
                 }
@@ -298,9 +296,9 @@ export default function ReviewsPage({
                 <option value="release-date-asc">
                   Release Date (Oldest First)
                 </option>
-              </select>
-            </label>
-          </fieldset>
+              </SelectInput>
+            </Label>
+          </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}
