@@ -24,7 +24,7 @@
   grid-template-rows: auto var(--step-5) auto var(--step-1) auto;
 
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." ". pagination_info ." ". . .";
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . .";
   }
 }
 
@@ -84,12 +84,7 @@
 
 .list {
   background-color: var(--color-content-background);
-  border-top: solid 1px var(--color-background);
   grid-area: list;
-
-  @media (min-width: $breakpoint_desktop) {
-    border-top: 0;
-  }
 }
 
 .list_item {

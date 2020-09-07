@@ -8,6 +8,7 @@
   grid-template-areas: "border" "header" "content" "footer";
   margin: 0 auto;
   max-width: clamp(1000px, 95vw, $breakpoint_max);
+  min-height: 100vh;
   position: relative;
 
   &::before {
@@ -30,7 +31,7 @@
         var(--step-1),
         1fr
       );
-    grid-template-rows: auto 3rem auto auto auto;
+    grid-template-rows: auto 3rem auto 1fr auto;
 
     &::before {
       height: 1rem;
@@ -43,7 +44,7 @@
     grid-template-columns: calc(2 * var(--step-1)) 1fr calc(2 * var(--step-1)) 250px var(
         --step-1
       );
-    grid-template-rows: auto 4rem auto auto auto;
+    grid-template-rows: auto 4rem 1fr auto;
   }
 }
 
