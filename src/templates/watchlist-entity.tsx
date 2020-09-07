@@ -3,6 +3,7 @@ import Img, { FluidObject } from "gatsby-image";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput";
 import Fieldset from "../components/Fieldset";
+import FilterPageHeader from "../components/FilterPageHeader";
 import Grade from "../components/Grade";
 import Label from "../components/Label";
 import Layout from "../components/Layout";
@@ -12,6 +13,7 @@ import {
 } from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
+import SelectInput from "../components/SelectInput";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie from "../types/WatchlistMovie";
 import applyFilters from "../utils/apply-filters";
@@ -329,25 +331,20 @@ export default function WatchlistPersonPage({
     <Layout>
       <main className={styles.container}>
         <div className={styles.left}>
-          <header className={styles.page_header}>
-            <Img
-              fluid={data.avatar.childImageSharp.fluid}
-              alt={`An image of ${pageContext.name}`}
-              className={styles.avatar}
-            />
-            <h2 className={styles.page_heading}>{pageContext.name}</h2>
-            <p className={styles.page_tagline}>
-              <EntityHeader pageContext={pageContext} />
-            </p>
-          </header>
+          <FilterPageHeader
+            className={styles.page_header}
+            avatar={data.avatar.childImageSharp.fluid}
+            alt={`An image of ${pageContext.name}`}
+            heading={pageContext.name}
+            tagline={<EntityHeader pageContext={pageContext} />}
+          />
           <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="viewings-title-input">
               Title
               <DebouncedInput
-                id={styles.filter_text_input}
+                id="viewings-title-input"
                 placeholder="Enter all or part of a title"
-                className={styles.filter_text_input}
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
             </Label>
@@ -364,10 +361,9 @@ export default function WatchlistPersonPage({
             </Label>
             <Label htmlFor="viewings-sort-input">
               Order By
-              <select
+              <SelectInput
                 value={state.sortValue}
                 id="viewings-sort-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({ type: SORT, value: e.target.value })
                 }
@@ -379,7 +375,7 @@ export default function WatchlistPersonPage({
                   Release Date (Newest First)
                 </option>
                 <option value="title">Title</option>
-              </select>
+              </SelectInput>
             </Label>
           </Fieldset>
           <PaginationInfo

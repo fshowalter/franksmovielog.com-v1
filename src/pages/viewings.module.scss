@@ -42,31 +42,17 @@
 }
 
 .pagination_info {
-  color: var(--color-text-secondary);
   grid-area: pagination_info;
   justify-self: center;
 }
 
 .pagination {
-  color: var(--color-text-secondary);
   grid-area: pagination;
   justify-self: center;
 }
 
-.page_heading {
-  composes: heading from "../styles/page.scss";
-}
-
-.page_tagline {
-  composes: tagline from "../styles/page.scss";
-}
-
 .filters {
   grid-area: filters;
-}
-
-.toggle_review_button {
-  composes: toggle_button from "../styles/filters.scss";
 }
 
 .list {

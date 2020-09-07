@@ -2,6 +2,7 @@ import { graphql, Link } from "gatsby";
 import React, { useReducer } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Fieldset from "../components/Fieldset";
+import FilterPageHeader from "../components/FilterPageHeader";
 import Grade from "../components/Grade";
 import Label from "../components/Label";
 import Layout from "../components/Layout";
@@ -250,13 +251,16 @@ export default function ReviewsPage({
     <Layout>
       <main className={styles.container}>
         <div className={styles.left}>
-          <header className={styles.page_header}>
-            <h2 className={styles.page_heading}>Reviews</h2>
-            <p className={styles.page_tagline}>
-              I&apos;ve published {state.allReviews.length} reviews since 2020.
-            </p>
-          </header>
-
+          <FilterPageHeader
+            className={styles.page_header}
+            heading="Reviews"
+            tagline={
+              <>
+                I&apos;ve published {state.allReviews.length} reviews since
+                2020.
+              </>
+            }
+          />
           <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="viewings-title-input">

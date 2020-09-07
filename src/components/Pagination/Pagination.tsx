@@ -15,7 +15,7 @@ export function PaginationInfo({
   currentPage,
   perPage,
   numberOfItems,
-  className = styles.info,
+  className,
 }: PaginationProps & {
   /** CSS class to apply to the rendered element. */
   className?: string;
@@ -25,7 +25,7 @@ export function PaginationInfo({
   const end = max < numberOfItems ? max : numberOfItems;
 
   return (
-    <p className={className}>
+    <p className={`${styles.info} ${className || ""}`}>
       Showing {start}-{end} of {numberOfItems}.
     </p>
   );

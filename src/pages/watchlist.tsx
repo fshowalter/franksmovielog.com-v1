@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Fieldset from "../components/Fieldset";
+import FilterPageHeader from "../components/FilterPageHeader";
 import Label from "../components/Label";
 import Layout from "../components/Layout";
 import {
@@ -11,6 +12,7 @@ import {
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
+import ToggleButton from "../components/ToggleButton";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie, {
   WatchlistCollection,
@@ -598,14 +600,17 @@ export default function WatchlistPage({
     <Layout>
       <main className={styles.container}>
         <div className={styles.left}>
-          <header className={styles.page_header}>
-            <h2 className={styles.page_heading}>Watchlist</h2>
-            <p className={styles.page_tagline}>
-              My movie review bucketlist.{" "}
-              {state.allMovies.length.toLocaleString()} titles. No silents or
-              documentaries.
-            </p>
-          </header>
+          <FilterPageHeader
+            className={styles.page_header}
+            heading="Watchlist"
+            tagline={
+              <>
+                My movie review bucketlist.{" "}
+                {state.allMovies.length.toLocaleString()} titles. No silents or
+                documentaries.
+              </>
+            }
+          />
           <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="to_watch-title-input">
@@ -709,14 +714,12 @@ export default function WatchlistPage({
                 <option value="title">Title</option>
               </SelectInput>
             </Label>
-            <button
+            <ToggleButton
               id="to_watch-toggle_reviewed"
-              type="button"
-              className={styles.toggle_review_button}
               onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
             >
               {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-            </button>
+            </ToggleButton>
           </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}

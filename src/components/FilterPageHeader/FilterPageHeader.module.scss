@@ -1,12 +1,10 @@
 @import "./src/styles/breakpoints";
 
-.header {
-  background-color: var(--color-content-background);
-  margin-bottom: var(--step-5);
-
-  @media (min-width: $breakpoint_desktop) {
-    padding: var(--step-5) var(--step-1) 0;
-  }
+.avatar {
+  border-radius: 50%;
+  margin: 0 auto var(--step-5);
+  max-width: 200px;
+  width: 75%;
 }
 
 .heading {

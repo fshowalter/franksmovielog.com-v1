@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Fieldset from "../components/Fieldset";
+import FilterPageHeader from "../components/FilterPageHeader";
 import Label from "../components/Label";
 import Layout from "../components/Layout";
 import {
@@ -362,13 +363,15 @@ export default function ViewingsPage({
     <Layout>
       <main className={styles.container}>
         <div className={styles.left}>
-          <header className={styles.page_header}>
-            <h2 className={styles.page_heading}>Viewing Log</h2>
-            <p className={styles.page_tagline}>
-              I&apos;ve watched {state.allViewings.length} movies since 2012.
-            </p>
-          </header>
-
+          <FilterPageHeader
+            className={styles.page_header}
+            heading="Viewing Log"
+            tagline={
+              <>
+                I&apos;ve watched {state.allViewings.length} movies since 2012.
+              </>
+            }
+          />
           <Fieldset className={styles.filters}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="viewings-title-input">
@@ -392,9 +395,8 @@ export default function ViewingsPage({
             </Label>
             <Label htmlFor="viewings-venue-input">
               Venue
-              <select
+              <SelectInput
                 id="viewings-venue-input"
-                className={styles.filter_select_input}
                 onChange={(e) =>
                   dispatch({
                     type: FILTER_VENUE,
@@ -403,7 +405,7 @@ export default function ViewingsPage({
                 }
               >
                 <VenueOptions viewings={state.allViewings} />
-              </select>
+              </SelectInput>
             </Label>
             <Label htmlFor="viewings-sort-input">
               Order By

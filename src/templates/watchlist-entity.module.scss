@@ -62,39 +62,8 @@
   justify-self: center;
 }
 
-.page_heading {
-  composes: heading from "../styles/page.scss";
-}
-
-.page_tagline {
-  composes: tagline from "../styles/page.scss";
-}
-
-.avatar {
-  border-radius: 50%;
-  margin: 0 auto var(--step-5);
-  max-width: 200px;
-  width: 75%;
-}
-
 .filters {
   grid-area: filters;
-}
-
-.filters_fieldset {
-  composes: fieldset from "../styles/filters.scss";
-}
-
-.filter_text_input {
-  composes: text_input from "../styles/filters.scss";
-}
-
-.filter_select_input {
-  composes: select_input from "../styles/filters.scss";
-}
-
-.toggle_review_button {
-  composes: toggle_button from "../styles/filters.scss";
 }
 
 .list {
