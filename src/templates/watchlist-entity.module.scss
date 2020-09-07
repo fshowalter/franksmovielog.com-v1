@@ -2,10 +2,12 @@
 
 .container {
   border-top: solid 1px var(--color-background);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
   padding-top: var(--step-5);
+
+  @media (min-width: 720px) {
+    grid-template-columns: 375px 1fr;
+  }
 
   @media (min-width: 80rem) {
     border-top: 0;
@@ -22,14 +24,13 @@
       1fr
     );
   grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5);
-  margin: 0 auto;
-  width: clamp(320px, 100vw, 375px);
 
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header . ." ". . . ." "filters filters . ." ". . . ." "pagination_info pagination_info . ." ". . . .";
-    grid-template-columns:
-      minmax(var(--step-1), 1fr) minmax(auto, 100%) var(--step-1)
-      minmax(var(--step-1), 1fr);
+    grid-template-areas: ". header . " ". . ." "filters filters ." ". . ." "pagination_info pagination_info .." ". . .";
+    grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+        var(--step-1),
+        1fr
+      );
   }
 }
 
@@ -41,7 +42,7 @@
   padding: 0 var(--step-1);
 
   @media (min-width: $breakpoint_desktop) {
-    padding: 0;
+    padding-right: 0;
   }
 }
 
