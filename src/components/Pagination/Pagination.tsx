@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import ScreenReaderOnly from "../ScreenReaderOnly";
 import styles from "./pagination.module.scss";
 
 type PaginationProps = {
@@ -162,7 +163,9 @@ export function PaginationWithButtons({
 
   return (
     <section className={`${styles.container} ${className || ""}`}>
-      <h3 className={styles.pagination_heading}>Pagination</h3>
+      <ScreenReaderOnly>
+        <h3>Pagination</h3>
+      </ScreenReaderOnly>
       {prev} {firstPage} {prevDots} {prevPage}
       <span className={styles.current_page} aria-current="page">
         {currentPage}
@@ -267,7 +270,9 @@ export function PaginationWithLinks({
 
   return (
     <section className={`${styles.container} ${className || ""}`}>
-      <h3 className={styles.pagination_heading}>Pagination</h3>
+      <ScreenReaderOnly>
+        <h3>Pagination</h3>
+      </ScreenReaderOnly>
       {prev} {firstPage} {prevDots} {prevPage}
       <span className={styles.current_page} aria-current="page">
         {currentPage}

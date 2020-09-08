@@ -239,13 +239,21 @@ function reducer(state: State, action: ActionTypes): State {
 function EntityHeader({ pageContext }: { pageContext: PageContext }) {
   switch (pageContext.entityType) {
     case "COLLECTION":
-      return <>{`Collection of ${pageContext.imdbIds.length} movies.`}</>;
+      return (
+        <>{`Collection of ${pageContext.imdbIds.length} watchlist movies.`}</>
+      );
     case "DIRECTOR":
-      return <>{`Director of ${pageContext.imdbIds.length} movies.`}</>;
+      return (
+        <>{`Director of ${pageContext.imdbIds.length} watchlist movies.`}</>
+      );
     case "PERFORMER":
-      return <>{`Performer in ${pageContext.imdbIds.length} movies.`}</>;
+      return (
+        <>{`Performer in ${pageContext.imdbIds.length} watchlist movies.`}</>
+      );
     case "WRITER":
-      return <>{`Writing credits on ${pageContext.imdbIds.length} movies.`}</>;
+      return (
+        <>{`Writing credits on ${pageContext.imdbIds.length} watchlist movies.`}</>
+      );
     default:
       throw new Error(
         `Unknown entityType parameter: ${pageContext.entityType}`

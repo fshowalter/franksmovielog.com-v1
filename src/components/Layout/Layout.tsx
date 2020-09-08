@@ -9,6 +9,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
+import ScreenReaderOnly from "../ScreenReaderOnly";
 import SearchIcon from "../SearchIcon";
 import styles from "./Layout.module.scss";
 
@@ -70,7 +71,7 @@ export default function Layout({
             className={styles.mast_search_form}
           >
             <label htmlFor="search" className={styles.mast_search_wrap}>
-              <span className={styles.mast_search_label}>Search</span>
+              <ScreenReaderOnly>Search</ScreenReaderOnly>
               <input
                 type="text"
                 className={styles.mast_search_input}
@@ -122,9 +123,9 @@ export default function Layout({
               Fair Use Law.
             </a>
           </p>
-          <a href="#top" className={styles.footer_to_the_top}>
-            To the top ↑
-          </a>
+          <ScreenReaderOnly>
+            <a href="#top">To the top ↑</a>
+          </ScreenReaderOnly>
         </footer>
       </div>
     </>

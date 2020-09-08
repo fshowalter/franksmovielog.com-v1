@@ -5,6 +5,7 @@ import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
 import { PaginationWithLinks } from "../components/Pagination";
+import RenderedMarkdown from "../components/RenderedMarkdown";
 import ReviewLink from "../components/ReviewLink";
 import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
@@ -99,12 +100,10 @@ export default function HomeTemplate({
                         .
                       </p>
                     </header>
-                    <main
-                      // eslint-disable-next-line react/no-danger
-                      dangerouslySetInnerHTML={{
-                        __html: review.linkedExcerpt,
-                      }}
+                    <RenderedMarkdown
                       className={styles.article_body}
+                      text={review.linkedExcerpt}
+                      tag="main"
                     />
                     <footer className={styles.article_footer}>
                       <div className={styles.date}>

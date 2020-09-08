@@ -4,6 +4,7 @@ import React from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
+import RenderedMarkdown from "../components/RenderedMarkdown";
 import WatchlistLinks from "../components/WatchlistLinks";
 import JsonReview from "../types/JsonReview";
 import MarkdownReview from "../types/MarkdownReview";
@@ -133,12 +134,10 @@ export default function Review({
                       grade={review.frontmatter.grade}
                       className={styles.grade}
                     />
-                    <div
+                    <RenderedMarkdown
                       className={styles.body}
                       // eslint-disable-next-line react/no-danger
-                      dangerouslySetInnerHTML={{
-                        __html: review.linkedHtml,
-                      }}
+                      text={review.linkedHtml}
                     />
                   </div>
                 </article>

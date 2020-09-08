@@ -199,11 +199,6 @@
   overflow: hidden;
 }
 
-.mast_search_label,
-.footer_search_label {
-  composes: sr_only from "../../styles/sr.scss";
-}
-
 .mast_search_input {
   border: 0;
   border-radius: 0;
@@ -262,10 +257,6 @@
 .footer_nav_list_item {
   display: inline-block;
   margin: 0.5rem;
-}
-
-.footer_to_the_top {
-  composes: sr_only from "../../styles/sr.scss";
 }
 
 .footer_fair_use {

@@ -154,7 +154,6 @@
 }
 
 .body {
-  composes: long_content from "../styles/long_content.scss";
   grid-area: content;
 
   > p:first-of-type::before {

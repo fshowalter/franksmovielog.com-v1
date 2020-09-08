@@ -18,12 +18,12 @@
 .left {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info .";
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
     );
-  grid-template-rows: auto var(--step-5) auto var(--step-1) auto;
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto 1.5rem;
 
   @media (min-width: $breakpoint_desktop) {
     grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . .";

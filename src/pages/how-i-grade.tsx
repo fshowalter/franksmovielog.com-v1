@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import React from "react";
 import Layout from "../components/Layout";
+import RenderedMarkdown from "../components/RenderedMarkdown";
 import * as styles from "./how-i-grade.module.scss";
 
 export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
@@ -16,13 +17,7 @@ export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
             alt=""
             className={styles.image}
           />
-          <div
-            className={styles.body}
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{
-              __html: page.html,
-            }}
-          />
+          <RenderedMarkdown className={styles.body} text={page.html} />
         </article>
       </main>
     </Layout>
