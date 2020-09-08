@@ -56,12 +56,7 @@
 }
 
 .list {
-  background-color: var(--color-content-background);
   grid-area: list;
-
-  @media (min-width: $breakpoint_desktop) {
-    border-top: 0;
-  }
 }
 
 .list_item {
@@ -76,17 +71,21 @@
 }
 
 .list_item_title {
-  composes: list_item_title from "../styles/list.scss";
+  font-size: 1.125rem;
+  padding: 1.5rem var(--step-1) 0.25rem 0;
 }
 
 .list_item_title_link {
-  composes: list_item_title_link from "../styles/list.scss";
+  color: var(--color-link);
 }
 
 .list_item_title_year {
-  composes: list_item_title_year from "../styles/list.scss";
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
 }
 
 .list_item_slug {
-  composes: list_item_slug from "../styles/list.scss";
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  padding: 0 var(--step-1) 1.5rem 0;
 }

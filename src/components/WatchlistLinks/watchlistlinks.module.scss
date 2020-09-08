@@ -1,9 +1,7 @@
 @import "./src/styles/breakpoints";
 
 .icon {
-  composes: icon from "../../styles/icon.scss";
   flex-shrink: 0;
-  // height: 36px;
   margin-right: 1ch;
   min-width: 18px;
 }

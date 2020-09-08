@@ -67,19 +67,11 @@
 }
 
 .list {
-  background-color: var(--color-content-background);
   column-gap: var(--step-1);
   display: grid;
   grid-area: list;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   row-gap: 1.5rem;
-
-  @media (min-width: $breakpoint_desktop) {
-    border-top: 0;
-  }
-}
-
-.list_item {
 }
 
 .list_item_image_link {
