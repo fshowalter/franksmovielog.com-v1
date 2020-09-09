@@ -89,17 +89,17 @@
 }
 
 .list_item_title_year {
-  font-size: 0.875rem;
   color: var(--color-text-secondary);
+  font-size: 0.875rem;
 }
 
 .list_item_slug {
   color: var(--color-text-secondary);
-  font-size: 0.875rem;
-  padding: 2px var(--step-1) var(--step--2) 0;
   display: flex;
   font-feature-settings: "tnum";
+  font-size: 0.875rem;
   justify-items: baseline;
+  padding: 2px var(--step-1) var(--step--2) 0;
 
   @media (min-width: $breakpoint_desktop) {
     flex-grow: 0;

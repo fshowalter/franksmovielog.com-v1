@@ -64,15 +64,15 @@
   display: block;
 }
 
-.list_item_first {
-  & .list_item_title {
-    padding-top: 0.5rem;
-  }
-}
-
 .list_item_title {
   font-size: 1.125rem;
   padding: 1.5rem var(--step-1) 0.25rem 0;
+}
+
+.list_item_first {
+  .list_item_title {
+    padding-top: 0.5rem;
+  }
 }
 
 .list_item_title_link {
@@ -80,8 +80,8 @@
 }
 
 .list_item_title_year {
-  font-size: 0.875rem;
   color: var(--color-text-secondary);
+  font-size: 0.875rem;
 }
 
 .list_item_slug {
