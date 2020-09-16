@@ -269,15 +269,17 @@ function ReviewedListItem({
   movie: WatchlistMovie;
 }): JSX.Element {
   return (
-    <li className={styles.list_item}>
+    <li>
       <Link
         className={styles.list_item_image_link}
         to={`/reviews/${review.frontmatter.slug}/`}
       >
-        <Img
-          fluid={review.backdrop.childImageSharp.fluid}
-          alt={`A still from ${movie.title} (${movie.year})`}
-        />
+        {review.backdrop && (
+          <Img
+            fluid={review.backdrop.childImageSharp.fluid}
+            alt={`A still from ${movie.title} (${movie.year})`}
+          />
+        )}
       </Link>
       <div className={styles.list_item_title}>
         <ReviewLink imdbId={review.frontmatter.imdbId}>
@@ -301,7 +303,7 @@ function UnreviewedListItem({
   backdrop: FluidObject;
 }): JSX.Element {
   return (
-    <li className={styles.list_item}>
+    <li>
       <Img fluid={backdrop} alt="" />
       <div className={styles.list_item_title}>
         {movie.title}{" "}

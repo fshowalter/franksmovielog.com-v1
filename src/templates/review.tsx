@@ -17,32 +17,16 @@ function buildStructuredData(
   movieInfo: JsonReview
 ) {
   const reviews = allReviews.slice().reverse();
-  let description = "";
-  const re = RegExp(/<span data-snippet>(.*?)<\/span>/);
-
-  for (let i = 0; i < reviews.length; i += 1) {
-    const match = re.exec(reviews[0].linkedHtml);
-
-    if (match) {
-      [, description] = match;
-      break;
-    }
-  }
-
-  if (!description) {
-    return null;
-  }
 
   return {
     "@context": "http://schema.org",
     "@type": "Review",
-    datePublished: reviews[0].frontmatter.date,
-    description,
     author: {
       "@type": "Person",
       name: "Frank Showalter",
       sameAs: "https://www.frankshowalter.com",
     },
+    datePublished: reviews[0].frontmatter.date,
     inLanguage: "en",
     itemReviewed: {
       "@type": "Movie",
@@ -83,21 +67,25 @@ export default function Review({
   return (
     <Layout>
       <main className={styles.container}>
-        <Img
-          className={styles.image}
-          fluid={reviews[0].backdrop.childImageSharp.fluid}
-          alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
-        />
+        {reviews[0].backdrop && (
+          <Img
+            className={styles.image}
+            fluid={reviews[0].backdrop.childImageSharp.fluid}
+            alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+          />
+        )}
         <h1 className={styles.title}>
           {movieInfo.title}{" "}
           <span className={styles.title_year}>{movieInfo.year}</span>
         </h1>
         <aside className={styles.credits}>
-          <Img
-            className={styles.poster}
-            fluid={reviews[0].poster.childImageSharp.fluid}
-            alt={`A poster from ${movieInfo.title} (${movieInfo.year})`}
-          />
+          {reviews[0].poster && (
+            <Img
+              className={styles.poster}
+              fluid={reviews[0].poster.childImageSharp.fluid}
+              alt={`A poster from ${movieInfo.title} (${movieInfo.year})`}
+            />
+          )}
           <div className={styles.directors}>
             <span className={styles.cast_label}>Directed by</span>
             {toSentenceArray(

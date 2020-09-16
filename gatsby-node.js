@@ -174,7 +174,7 @@ async function createWatchlistPages(graphql, reporter, createPage) {
 
   if (watchlistTitlesQuery.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphQL query for createWatchlistPages.`
+      `Error while running watchlistTitlesQuery query for createWatchlistPages.`
     );
     return;
   }
@@ -219,11 +219,43 @@ async function createWatchlistPages(graphql, reporter, createPage) {
     }
   );
 
+  const reviewsQuery = await graphql(
+    `
+      {
+        allReviewsJson {
+          nodes {
+            imdb_id
+          }
+        }
+      }
+    `
+  );
+
+  if (reviewsQuery.errors) {
+    reporter.panicOnBuild(
+      `Error while running reviewsQuery query for createWatchlistPages.`
+    );
+    return;
+  }
+
+  const reviewImdbIds = new Set(
+    reviewsQuery.data.allReviewsJson.nodes.map((node) => node.imdb_id)
+  );
+
   const component = path.resolve("./src/templates/watchlist-entity.tsx");
 
   // Create director pages
   Object.keys(pages.directors).forEach((slug) => {
     const director = pages.directors[slug];
+
+    if (
+      ![...director.imdbIds].some((imdbId) => {
+        return reviewImdbIds.has(imdbId);
+      })
+    ) {
+      return;
+    }
+
     const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
@@ -242,6 +274,15 @@ async function createWatchlistPages(graphql, reporter, createPage) {
   // Create performer pages
   Object.keys(pages.performers).forEach((slug) => {
     const performer = pages.performers[slug];
+
+    if (
+      ![...performer.imdbIds].some((imdbId) => {
+        return reviewImdbIds.has(imdbId);
+      })
+    ) {
+      return;
+    }
+
     const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
@@ -260,6 +301,15 @@ async function createWatchlistPages(graphql, reporter, createPage) {
   // Create writer pages
   Object.keys(pages.writers).forEach((slug) => {
     const writer = pages.writers[slug];
+
+    if (
+      ![...writer.imdbIds].some((imdbId) => {
+        return reviewImdbIds.has(imdbId);
+      })
+    ) {
+      return;
+    }
+
     const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
@@ -278,6 +328,15 @@ async function createWatchlistPages(graphql, reporter, createPage) {
   // Create collection pages
   Object.keys(pages.collections).forEach((slug) => {
     const collection = pages.collections[slug];
+
+    if (
+      ![...collection.imdbIds].some((imdbId) => {
+        return reviewImdbIds.has(imdbId);
+      })
+    ) {
+      return;
+    }
+
     const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
@@ -347,7 +406,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             }
 
             return context.nodeModel
-              .getAllNodes({ type: "File" })
+              .getAllNodes({ type: "File" }, { connectionType: "File" })
               .find((node) => node.absolutePath === backdropPath);
           },
         },
@@ -374,7 +433,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             }
 
             return context.nodeModel
-              .getAllNodes({ type: "File" })
+              .getAllNodes({ type: "File" }, { connectionType: "File" })
               .find((node) => node.absolutePath === posterPath);
           },
         },

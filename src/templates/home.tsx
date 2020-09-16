@@ -1,6 +1,6 @@
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
-import React from "react";
+import React, { useRef } from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
@@ -25,6 +25,8 @@ export default function HomeTemplate({
   pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
+  const listHeader = useRef<HTMLDivElement>(null);
+
   return (
     <Layout>
       <Seo
@@ -34,7 +36,7 @@ export default function HomeTemplate({
             : `Page ${pageContext.currentPage}`
         }
       />
-      <main className={styles.container}>
+      <main className={styles.container} ref={listHeader}>
         <ol className={styles.list}>
           {data.updates.nodes.map((update, index) => {
             const review = update;
@@ -70,10 +72,12 @@ export default function HomeTemplate({
                       className={styles.image_link}
                       to={`/reviews/${review.frontmatter.slug}/`}
                     >
-                      <Img
-                        fluid={review.backdrop.childImageSharp.fluid}
-                        alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
-                      />
+                      {review.backdrop && (
+                        <Img
+                          fluid={review.backdrop.childImageSharp.fluid}
+                          alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+                        />
+                      )}
                     </Link>
                     <header className={styles.review_header}>
                       <h2 className={styles.article_heading}>
