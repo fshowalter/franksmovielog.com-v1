@@ -12,6 +12,7 @@ import {
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
+import Seo from "../components/Seo";
 import ToggleButton from "../components/ToggleButton";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie, {
@@ -598,6 +599,12 @@ export default function WatchlistPage({
 
   return (
     <Layout>
+      <Seo
+        pageTitle="Watchlist"
+        description="My movie review bucketlist."
+        image={null}
+        article={false}
+      />
       <main className={styles.container}>
         <div className={styles.left}>
           <FilterPageHeader

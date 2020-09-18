@@ -12,6 +12,7 @@ import {
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
+import Seo from "../components/Seo";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
@@ -361,6 +362,12 @@ export default function ViewingsPage({
 
   return (
     <Layout>
+      <Seo
+        pageTitle="Viewing Log"
+        description="A sortable and filterable list of every movie I've watched since 2012."
+        image={null}
+        article={false}
+      />
       <main className={styles.container}>
         <div className={styles.left}>
           <FilterPageHeader

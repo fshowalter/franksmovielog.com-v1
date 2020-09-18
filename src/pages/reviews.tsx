@@ -12,6 +12,7 @@ import {
 } from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
+import Seo from "../components/Seo";
 import JsonReview from "../types/JsonReview";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
@@ -249,6 +250,12 @@ export default function ReviewsPage({
 
   return (
     <Layout>
+      <Seo
+        pageTitle="All Reviews"
+        description="A sortable and filterable list of all movie reviews on this site."
+        image={null}
+        article={false}
+      />
       <main className={styles.container}>
         <div className={styles.left}>
           <FilterPageHeader
@@ -312,13 +319,9 @@ export default function ReviewsPage({
         </div>
         <div className={styles.right}>
           <ol className={styles.list}>
-            {state.reviewsForPage.map((review, index) => {
+            {state.reviewsForPage.map((review) => {
               return (
-                <li
-                  className={`${styles.list_item} ${
-                    index === 0 ? styles.list_item_first : ""
-                  }`}
-                >
+                <li className={styles.list_item}>
                   <Link
                     to={`/reviews/${review.slug}/`}
                     className={styles.list_item_title}
