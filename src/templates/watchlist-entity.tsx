@@ -14,6 +14,7 @@ import {
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
+import Seo from "../components/Seo";
 import MarkdownReview from "../types/MarkdownReview";
 import WatchlistMovie from "../types/WatchlistMovie";
 import applyFilters from "../utils/apply-filters";
@@ -261,6 +262,24 @@ function EntityHeader({ pageContext }: { pageContext: PageContext }) {
   }
 }
 
+/**
+ * Renders the description for the current entity type.
+ */
+function buildDescription(name: string, entityType: string): string {
+  switch (entityType) {
+    case "COLLECTION":
+      return `A sortable and filterable list of reviews of movies in the ${name} collection.`;
+    case "DIRECTOR":
+      return `A sortable and filterable list of reviews of movies directed by ${name}.`;
+    case "PERFORMER":
+      return `A sortable and filterable list of reviews of movies featuring ${name}.`;
+    case "WRITER":
+      return `A sortable and filterable list of reviews of movies written (in some part) by ${name}.`;
+    default:
+      throw new Error(`Unknown entityType parameter: ${entityType}`);
+  }
+}
+
 function ReviewedListItem({
   review,
   movie,
@@ -316,7 +335,7 @@ function UnreviewedListItem({
 /**
  * Renders a watchlist page for a given person.
  */
-export default function WatchlistPersonPage({
+export default function WatchlistEntityTemplate({
   pageContext,
   data,
 }: {
@@ -339,6 +358,12 @@ export default function WatchlistPersonPage({
 
   return (
     <Layout>
+      <Seo
+        pageTitle={pageContext.name}
+        description={buildDescription(pageContext.name, pageContext.entityType)}
+        image={null}
+        article={false}
+      />
       <main className={styles.container}>
         <div className={styles.left}>
           <FilterPageHeader
