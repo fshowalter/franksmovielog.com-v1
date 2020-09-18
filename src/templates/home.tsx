@@ -30,12 +30,12 @@ export default function HomeTemplate({
   return (
     <Layout>
       <Seo
-        title={
+        pageTitle={
           pageContext.currentPage === 1
-            ? null
+            ? "Frank's Movie Log: My Life at the Movies"
             : `Page ${pageContext.currentPage}`
         }
-        description="The latest movie reviews from Frank Showalter."
+        description="Reviews of current, cult, classic, and forgotten films."
         article={false}
         image={null}
       />

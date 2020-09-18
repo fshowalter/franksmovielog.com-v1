@@ -68,7 +68,7 @@ export default function Review({
   return (
     <Layout>
       <Seo
-        title={`${movieInfo.title} (${movieInfo.year}) Movie Review`}
+        pageTitle={`${movieInfo.title} (${movieInfo.year})`}
         description={`A review of the ${movieInfo.year} film ${movieInfo.title}.`}
         image={reviews[0].seoImage.childImageSharp.resize.src}
         article
