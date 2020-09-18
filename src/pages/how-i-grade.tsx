@@ -3,13 +3,20 @@ import Img, { FluidObject } from "gatsby-image";
 import React from "react";
 import Layout from "../components/Layout";
 import RenderedMarkdown from "../components/RenderedMarkdown";
-import * as styles from "./how-i-grade.module.scss";
+import Seo from "../components/Seo";
+import styles from "./how-i-grade.module.scss";
 
 export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
   const page = data.page.nodes[0];
 
   return (
     <Layout>
+      <Seo
+        pageTitle="How I Grade"
+        description="The criteria I use to rate movies on this site."
+        image={null}
+        article
+      />
       <main>
         <article className={styles.article}>
           <Img
