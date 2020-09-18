@@ -18,13 +18,13 @@ export interface SeoQueryResult {
 function Seo({
   title,
   description,
-  image,
+  image = null,
   article = false,
 }: {
-  title?: string;
-  description?: string;
-  image?: string;
-  article?: boolean;
+  title: string | null;
+  description: string;
+  image: string | null;
+  article: boolean;
 }): JSX.Element {
   const { pathname } = useLocation();
   const data: SeoQueryResult = useStaticQuery(graphql`
@@ -68,10 +68,3 @@ function Seo({
   );
 }
 export default Seo;
-
-Seo.defaultProps = {
-  title: null,
-  description: null,
-  image: null,
-  article: false,
-};

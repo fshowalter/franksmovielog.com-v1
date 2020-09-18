@@ -6,9 +6,11 @@ title: The Big Trail (1930)
 grade: B-
 slug: the-big-trail-1930
 venue: Blu-ray
-venue_notes: 2012 20th Century Fox
+venue_notes: 2012 20th Century Fox Grandeur Version
 ---
 
-John Wayne's first starring role. He's good but raw--on par with the poverty-row oaters he'd make for the next nine years. He plays a trapper leading a wagon train up the Oregon Trail. The script includes the requisite character drama and love interest, but they're better viewed as a movie-within-a-movie. The real star here is the production itself.
+John Wayne's first starring role. He's good but raw—on par with the poverty-row oaters he'd headline for the next nine years. Here he plays a trapper leading a wagon train up the Oregon Trail. The script includes the requisite character drama and romantic interest. Disregard them. The production itself is the real star.
 
-After a talky, inert opening, things get moving and the film shifts. It's like Raul Walsh set out to make a melodramatic epic but ended up making a pseudo-documentary. The spectacle must be seen to be believed. They shot everything on location. The rain storms aren't special effects. They cross a river, and wagons and horses get washed away. They lower wagons down a muddy cliffside to sometimes disastrous results. All in 70mm wide-screen. Warner Herzog would be proud.
+<!-- end -->
+
+It's as though Raoul Walsh set out to film a melodramatic epic but ended up creating a pseudo-documentary. The spectacle astounds. Wide shots dominate as thousands of extras march hundreds of livestock and scores of wagons across the Yuma desert and up the Rocky Mountains. They struggle through a muddy basin during a raging lightning storm. They ford a rushing river and wagons and horses get washed away. They lower wagons down a sheer cliffside to sometimes disastrous results. All in 70mm wide-screen. See it to believe it.

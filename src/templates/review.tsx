@@ -5,6 +5,7 @@ import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
 import RenderedMarkdown from "../components/RenderedMarkdown";
+import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
 import JsonReview from "../types/JsonReview";
 import MarkdownReview from "../types/MarkdownReview";
@@ -66,6 +67,12 @@ export default function Review({
 
   return (
     <Layout>
+      <Seo
+        title={`${movieInfo.title} (${movieInfo.year}) Movie Review`}
+        description={`A review of the ${movieInfo.year} film ${movieInfo.title}.`}
+        image={reviews[0].seoImage.childImageSharp.resize.src}
+        article
+      />
       <main className={styles.container}>
         {reviews[0].backdrop && (
           <Img

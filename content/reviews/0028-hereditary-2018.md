@@ -9,4 +9,4 @@ venue: Amazon Streaming
 venue_notes: 2018 A24 4k
 ---
 
-Right in my nihilistic, trap-movie loving wheelhouse. Fronted by an all-in performance from Toni Collette, writer-director Ari Aster's debut feature tells an ambitious story about a doomed family. Saying more about the plot would venture into spoiler territory, so suffice it to say the film surprised me with its commitment and Aster's sure-handed execution. More than once, I'd dismiss a plot point as lazy writing only to have it twist and smack me in the gut. Like The Witch, I suspect this will only get better on subsequent viewings.
+Right in my nihilistic, trap-movie-loving wheelhouse. I bought everything Toni Collette's all-in performance was selling. Aster's unwavering commitment and sure-handed execution surprised me. More than once, I dismissed a plot point as lazy writing, only for it to twist and punch me in the gut. And I loved the ending.

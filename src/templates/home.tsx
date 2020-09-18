@@ -32,9 +32,12 @@ export default function HomeTemplate({
       <Seo
         title={
           pageContext.currentPage === 1
-            ? "Home"
+            ? null
             : `Page ${pageContext.currentPage}`
         }
+        description="The latest movie reviews from Frank Showalter."
+        article={false}
+        image={null}
       />
       <main className={styles.container} ref={listHeader}>
         <ol className={styles.list}>
