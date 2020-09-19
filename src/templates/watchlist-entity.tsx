@@ -490,7 +490,7 @@ export const pageQuery = graphql`
   query($imdbIds: [String], $avatarPath: String) {
     avatar: file(absolutePath: { eq: $avatarPath }) {
       childImageSharp {
-        fluid(toFormat: JPG, jpegQuality: 75) {
+        fluid(toFormat: JPG, maxWidth: 200, quality: 80) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
