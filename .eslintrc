@@ -78,7 +78,7 @@
             "extensions": [".js", ".jsx", ".ts", ".tsx"]
           },
           "typescript": {
-            "directory": ["./tsconfig.json"]
+            "project": ["./tsconfig.json"]
           }
         }
       }
