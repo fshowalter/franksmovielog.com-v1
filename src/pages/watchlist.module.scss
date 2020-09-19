@@ -1,95 +1,91 @@
 @import "./src/styles/breakpoints";
 
 .container {
-  @media (min-width: $breakpoint_desktop) {
-    background-color: var(--color-content-background);
-    column-gap: var(--step-1);
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: auto;
+  border-top: solid 1px var(--color-background);
+  display: grid;
+  padding-top: var(--step-5);
+
+  @media (min-width: 720px) {
+    grid-template-columns: 375px 1fr;
+  }
+
+  @media (min-width: 80rem) {
+    border-top: 0;
+    padding-top: 0;
   }
 }
 
 .left {
-  composes: card from "../styles/card.scss";
+  align-content: start;
+  display: grid;
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . .";
+  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+      var(--step-1),
+      1fr
+    );
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5);
 
   @media (min-width: $breakpoint_desktop) {
-    grid-area: left;
-    max-width: 330px;
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . .";
   }
 }
 
 .right {
-  @media (min-width: $breakpoint_desktop) {
-    grid-area: right;
-  }
+  display: grid;
+  grid-template-areas: ". list" ". ." "pagination pagination" ". .";
+  grid-template-columns: var(--step-1) 1fr;
+  grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
 
 .page_header {
-  composes: header from "../styles/page.scss";
+  grid-area: header;
 }
 
-.page_heading {
-  composes: heading from "../styles/page.scss";
+.pagination_info {
+  grid-area: pagination_info;
+  justify-self: center;
 }
 
-.page_tagline {
-  composes: tagline from "../styles/page.scss";
+.pagination {
+  grid-area: pagination;
+  justify-self: center;
 }
 
 .filters {
-  composes: card from "../styles/filters.scss";
-
-  @media (min-width: $breakpoint_desktop) {
-    padding: 0;
-  }
-}
-
-.filters_fieldset {
-  composes: fieldset from "../styles/filters.scss";
-}
-
-.filter_text_input {
-  composes: text_input from "../styles/filters.scss";
-}
-
-.filter_select_input {
-  composes: select_input from "../styles/filters.scss";
-}
-
-.label {
-  composes: label from "../styles/filters.scss";
-}
-
-.toggle_review_button {
-  composes: toggle_button from "../styles/filters.scss";
+  grid-area: filters;
 }
 
 .list {
-  composes: list from "../styles/list.scss";
+  grid-area: list;
 }
 
 .list_item {
-  composes: list_item from "../styles/list.scss";
-}
-
-.list_item_first {
-  composes: list_item_first from "../styles/list.scss";
+  border-bottom: solid 1px var(--color-background);
+  display: block;
 }
 
 .list_item_title {
-  composes: list_item_title from "../styles/list.scss";
+  font-size: 1.125rem;
+  padding: 1.5rem var(--step-1) 0.25rem 0;
+}
+
+.list_item_first {
+  .list_item_title {
+    padding-top: 0.5rem;
+  }
 }
 
 .list_item_title_link {
-  composes: list_item_title_link from "../styles/list.scss";
+  color: var(--color-link);
 }
 
 .list_item_title_year {
-  composes: list_item_title_year from "../styles/list.scss";
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
 }
 
 .list_item_slug {
-  composes: list_item_slug from "../styles/list.scss";
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  padding: 0 var(--step-1) 1.5rem 0;
 }

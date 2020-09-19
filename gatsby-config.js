@@ -1,8 +1,6 @@
 module.exports = {
   siteMetadata: {
-    description: `Reviews of current, cult, classic, and fogotten films. My life at the movies.`,
     author: `Frank Showalter`,
-    titleTemplate: "%s - Frank's Movie Log",
     url: "https://www.franksmovielog.com/",
     image: "assets/default_og.jpg",
     title: "Frank's Movie Log",

@@ -2,25 +2,29 @@ import { graphql } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import React from "react";
 import Layout from "../components/Layout";
-import * as styles from "./about.module.scss";
+import RenderedMarkdown from "../components/RenderedMarkdown";
+import Seo from "../components/Seo";
+import styles from "./about.module.scss";
 
 export default function AboutPage({ data }: PageQueryResult): JSX.Element {
   const page = data.page.nodes[0];
 
   return (
     <Layout>
-      <main className={styles.container}>
-        <article>
-          <div>
-            <Img fluid={page.backdrop.childImageSharp.fluid} alt="" />
-          </div>
-          <div
-            className={styles.body}
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{
-              __html: page.html,
-            }}
+      <Seo
+        pageTitle="About this site"
+        description="An attempt to explain why this site exists."
+        image={null}
+        article
+      />
+      <main>
+        <article className={styles.article}>
+          <Img
+            fluid={page.backdrop.childImageSharp.fluid}
+            alt=""
+            className={styles.image}
           />
+          <RenderedMarkdown className={styles.body} text={page.html} />
         </article>
       </main>
     </Layout>

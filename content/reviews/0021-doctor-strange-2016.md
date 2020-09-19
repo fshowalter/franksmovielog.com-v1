@@ -9,7 +9,7 @@ venue: "Disney+"
 venue_notes: 2017 Disney / Buena Vista 4k
 ---
 
-Benedict Cumberbatch stars as Stephen Strange, a hotshot neurosurgeon. After a car accident cripples his hands, Strange’s search for a miracle cure leads him to Nepal. There he meets The Ancient One, played by Tilda Swinton, who trains him in the mystic arts.
+Benedict Cumberbatch stars as Stephen Strange, a hotshot neurosurgeon. After a car accident cripples his hands, Strange’s search for a miracle cure leads him to Nepal. There he meets The Ancient One, played by Tilda Swinton, who trains him in sorcery.
 
 <!-- end -->
 
@@ -25,4 +25,4 @@ The special effects also fail to connect. We see cities twisting and folding upo
 
 This sounds like I hated the film. I did not. Though I would have preferred his native British accent, I enjoyed Cumberbatch’s performance. The real star, however, is Tilda Swinton. She takes a throw-away archtypical role and delivers the film’s most memorable character. And full disclosure: as someone who grew up reading the comics, I loved seeing the sentient Cloak of Levitation, even if it was little more than comic relief.
 
-There’s a reoccurring effect where characters enter the Astral Plane. Their ethereal bodies float in the air and pass through solid objects. If they try hard enough, they can bump walls or knock things over. It’s an apt-enough metaphor for the film. <span data-snippet>It looks good, but it’s hollow inside and struggles to connect.</span> When you try to grab it, you discover there’s nothing there.
+There’s a reoccurring effect where characters enter the Astral Plane. Their ethereal bodies float in the air and pass through solid objects. If they try hard enough, they can bump walls or knock things over. It’s an apt-enough metaphor for the film. It looks good, but it’s hollow inside and struggles to connect. When you try to grab it, you discover there’s nothing there.

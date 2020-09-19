@@ -1,8 +1,11 @@
 import { graphql, Link } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
-import React, { useReducer } from "react";
+import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput";
+import Fieldset from "../components/Fieldset";
+import FilterPageHeader from "../components/FilterPageHeader";
 import Grade from "../components/Grade";
+import Label from "../components/Label";
 import Layout from "../components/Layout";
 import {
   PaginationInfo,
@@ -10,42 +13,42 @@ import {
 } from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
-import JsonReview from "../types/JsonReview";
+import SelectInput from "../components/SelectInput";
+import Seo from "../components/Seo";
 import MarkdownReview from "../types/MarkdownReview";
+import WatchlistMovie from "../types/WatchlistMovie";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
-import toSentenceArray from "../utils/to-sentence-array";
 import styles from "./watchlist-entity.module.scss";
 
-function sortReviews(reviews: JsonReview[], sortOrder: string) {
-  const sortMap: Record<string, (a: JsonReview, b: JsonReview) => number> = {
-    title: (a, b) => collator.compare(a.title, b.title),
-    "release-date-desc": (a, b) => sortStringDesc(a.year, b.year),
+function sortMovies(titles: WatchlistMovie[], sortOrder: string) {
+  const sortMap: Record<
+    string,
+    (a: WatchlistMovie, b: WatchlistMovie) => number
+  > = {
     "release-date-asc": (a, b) => sortStringAsc(a.year, b.year),
-    "grade-asc": (a, b) =>
-      sortStringAsc(a.gradeValue.toString(), b.gradeValue.toString()),
-    "grade-desc": (a, b) =>
-      sortStringDesc(a.gradeValue.toString(), b.gradeValue.toString()),
+    "release-date-desc": (a, b) => sortStringDesc(a.year, b.year),
+    title: (a, b) => collator.compare(a.title, b.title),
   };
 
   const comparer = sortMap[sortOrder];
 
   if (!comparer) {
-    return reviews;
+    return titles;
   }
 
-  return reviews.sort(comparer);
+  return titles.sort(comparer);
 }
 
 /**
- * Returns the min and max release years for a given collection of reviews.
- * @param reviews The reviews collection.
+ * Returns the min and max release years for a given collection of movies.
+ * @param movies The movies collection.
  */
-function minMaxReleaseYearsForReviews(reviews: JsonReview[]) {
-  const releaseYears = reviews
-    .map((review) => {
-      return review.year;
+function minMaxReleaseYears(movies: WatchlistMovie[]) {
+  const releaseYears = movies
+    .map((title) => {
+      return title.year;
     })
     .sort();
 
@@ -60,13 +63,13 @@ function minMaxReleaseYearsForReviews(reviews: JsonReview[]) {
  */
 type State = {
   /** All possible reviews. */
-  allReviews: JsonReview[];
+  allMovies: WatchlistMovie[];
   /** Reviews matching the current filters. */
-  filteredReviews: JsonReview[];
+  filteredMovies: WatchlistMovie[];
   /** Reviews matching the current filters for the current page. */
-  reviewsForPage: JsonReview[];
+  moviesForPage: WatchlistMovie[];
   /** The active filters. */
-  filters: Record<string, (review: JsonReview) => boolean>;
+  filters: Record<string, (title: WatchlistMovie) => boolean>;
   /** The current page. */
   currentPage: number;
   /** The number of reviews per page. */
@@ -79,16 +82,16 @@ type State = {
   sortValue: string;
 };
 
-function initState({ reviews }: { reviews: JsonReview[] }): State {
-  const [minYear, maxYear] = minMaxReleaseYearsForReviews(reviews);
+function initState({ movies }: { movies: WatchlistMovie[] }): State {
+  const [minYear, maxYear] = minMaxReleaseYears(movies);
   const currentPage = 1;
-  const perPage = 100;
+  const perPage = 24;
 
   return {
-    allReviews: reviews,
-    filteredReviews: reviews,
-    reviewsForPage: slicePage<JsonReview>({
-      collection: reviews,
+    allMovies: movies,
+    filteredMovies: movies,
+    moviesForPage: slicePage<WatchlistMovie>({
+      collection: movies,
       pageToSlice: currentPage,
       perPage,
     }),
@@ -97,7 +100,7 @@ function initState({ reviews }: { reviews: JsonReview[] }): State {
     perPage,
     minYear,
     maxYear,
-    sortValue: "title",
+    sortValue: "release-date-asc",
   };
 }
 
@@ -145,38 +148,38 @@ type ActionTypes =
  */
 function reducer(state: State, action: ActionTypes): State {
   let filters;
-  let filteredReviews;
+  let filteredMovies;
 
   switch (action.type) {
     case FILTER_TITLE: {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (review: JsonReview) => {
+        title: (review: WatchlistMovie) => {
           return regex.test(review.title);
         },
       };
-      filteredReviews = sortReviews(
-        applyFilters<JsonReview>({ collection: state.allReviews, filters }),
+      filteredMovies = sortMovies(
+        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
         state.sortValue
       );
       return {
         ...state,
         filters,
-        filteredReviews,
+        filteredMovies,
         currentPage: 1,
-        reviewsForPage: slicePage<JsonReview>({
-          collection: filteredReviews,
+        moviesForPage: slicePage<WatchlistMovie>({
+          collection: filteredMovies,
           pageToSlice: 1,
           perPage: state.perPage,
         }),
       };
     }
     case FILTER_RELEASE_YEAR: {
-      const [minYear, maxYear] = minMaxReleaseYearsForReviews(state.allReviews);
+      const [minYear, maxYear] = minMaxReleaseYears(state.allMovies);
       filters = {
         ...state.filters,
-        releaseYear: (review: JsonReview) => {
+        releaseYear: (review: WatchlistMovie) => {
           const releaseYear = parseInt(review.year, 10);
           if (action.values === [minYear, maxYear]) {
             return true;
@@ -186,30 +189,30 @@ function reducer(state: State, action: ActionTypes): State {
           );
         },
       };
-      filteredReviews = sortReviews(
-        applyFilters<JsonReview>({ collection: state.allReviews, filters }),
+      filteredMovies = sortMovies(
+        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
         state.sortValue
       );
       return {
         ...state,
         filters,
-        filteredReviews,
+        filteredMovies,
         currentPage: 1,
-        reviewsForPage: slicePage<JsonReview>({
-          collection: filteredReviews,
+        moviesForPage: slicePage<WatchlistMovie>({
+          collection: filteredMovies,
           pageToSlice: 1,
           perPage: state.perPage,
         }),
       };
     }
     case SORT: {
-      filteredReviews = sortReviews(state.filteredReviews, action.value);
+      filteredMovies = sortMovies(state.filteredMovies, action.value);
       return {
         ...state,
         sortValue: action.value,
-        filteredReviews,
-        reviewsForPage: slicePage<JsonReview>({
-          collection: filteredReviews,
+        filteredMovies,
+        moviesForPage: slicePage<WatchlistMovie>({
+          collection: filteredMovies,
           pageToSlice: state.currentPage,
           perPage: state.perPage,
         }),
@@ -219,8 +222,8 @@ function reducer(state: State, action: ActionTypes): State {
       return {
         ...state,
         currentPage: action.value,
-        reviewsForPage: slicePage<JsonReview>({
-          collection: state.filteredReviews,
+        moviesForPage: slicePage<WatchlistMovie>({
+          collection: state.filteredMovies,
           pageToSlice: action.value,
           perPage: state.perPage,
         }),
@@ -238,19 +241,19 @@ function EntityHeader({ pageContext }: { pageContext: PageContext }) {
   switch (pageContext.entityType) {
     case "COLLECTION":
       return (
-        <>{`Collection of ${pageContext.imdbIds.length} reviewed movies.`}</>
+        <>{`Collection of ${pageContext.imdbIds.length} watchlist movies.`}</>
       );
     case "DIRECTOR":
       return (
-        <>{`Director of ${pageContext.imdbIds.length} reviewed movies.`}</>
+        <>{`Director of ${pageContext.imdbIds.length} watchlist movies.`}</>
       );
     case "PERFORMER":
       return (
-        <>{`Performer in ${pageContext.imdbIds.length} reviewed movies.`}</>
+        <>{`Performer in ${pageContext.imdbIds.length} watchlist movies.`}</>
       );
     case "WRITER":
       return (
-        <>{`Writing credits on ${pageContext.imdbIds.length} reviewed movies.`}</>
+        <>{`Writing credits on ${pageContext.imdbIds.length} watchlist movies.`}</>
       );
     default:
       throw new Error(
@@ -260,9 +263,79 @@ function EntityHeader({ pageContext }: { pageContext: PageContext }) {
 }
 
 /**
+ * Renders the description for the current entity type.
+ */
+function buildDescription(name: string, entityType: string): string {
+  switch (entityType) {
+    case "COLLECTION":
+      return `A sortable and filterable list of reviews of movies in the ${name} collection.`;
+    case "DIRECTOR":
+      return `A sortable and filterable list of reviews of movies directed by ${name}.`;
+    case "PERFORMER":
+      return `A sortable and filterable list of reviews of movies featuring ${name}.`;
+    case "WRITER":
+      return `A sortable and filterable list of reviews of movies written (in some part) by ${name}.`;
+    default:
+      throw new Error(`Unknown entityType parameter: ${entityType}`);
+  }
+}
+
+function ReviewedListItem({
+  review,
+  movie,
+}: {
+  review: MarkdownReview;
+  movie: WatchlistMovie;
+}): JSX.Element {
+  return (
+    <li>
+      <Link
+        className={styles.list_item_image_link}
+        to={`/reviews/${review.frontmatter.slug}/`}
+      >
+        {review.backdrop && (
+          <Img
+            fluid={review.backdrop.childImageSharp.fluid}
+            alt={`A still from ${movie.title} (${movie.year})`}
+          />
+        )}
+      </Link>
+      <div className={styles.list_item_title}>
+        <ReviewLink imdbId={review.frontmatter.imdbId}>
+          {movie.title}{" "}
+          <span className={styles.list_item_title_year}>{movie.year}</span>
+        </ReviewLink>
+      </div>
+      <Grade
+        grade={review.frontmatter.grade}
+        className={styles.list_item_grade}
+      />
+    </li>
+  );
+}
+
+function UnreviewedListItem({
+  movie,
+  backdrop,
+}: {
+  movie: WatchlistMovie;
+  backdrop: FluidObject;
+}): JSX.Element {
+  return (
+    <li>
+      <Img fluid={backdrop} alt="" />
+      <div className={styles.list_item_title}>
+        {movie.title}{" "}
+        <span className={styles.list_item_title_year}>{movie.year}</span>
+      </div>
+    </li>
+  );
+}
+
+/**
  * Renders a watchlist page for a given person.
  */
-export default function WatchlistPersonPage({
+export default function WatchlistEntityTemplate({
   pageContext,
   data,
 }: {
@@ -272,7 +345,7 @@ export default function WatchlistPersonPage({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      reviews: [...data.review.nodes],
+      movies: [...data.movie.nodes],
     },
     initState
   );
@@ -281,134 +354,101 @@ export default function WatchlistPersonPage({
     throw Error(`No avatar found at ${pageContext.avatarPath}`);
   }
 
+  const listHeader = useRef<HTMLDivElement>(null);
+
   return (
     <Layout>
+      <Seo
+        pageTitle={pageContext.name}
+        description={buildDescription(pageContext.name, pageContext.entityType)}
+        image={null}
+        article={false}
+      />
       <main className={styles.container}>
         <div className={styles.left}>
-          <header className={styles.page_header}>
-            <Img
-              fluid={data.avatar.childImageSharp.fluid}
-              alt={`An image of ${pageContext.name}`}
-              className={styles.avatar}
-            />
-            <h2 className={styles.page_heading}>{pageContext.name}</h2>
-            <p className={styles.page_tagline}>
-              <EntityHeader pageContext={pageContext} />
-            </p>
-          </header>
-          <div className={styles.filters}>
-            <fieldset className={styles.filters_fieldset}>
-              <legend>Filter &amp; Sort</legend>
-              <label className={styles.label} htmlFor="viewings-title-input">
-                Title
-                <DebouncedInput
-                  id={styles.filter_text_input}
-                  placeholder="Enter all or part of a title"
-                  className={styles.filter_text_input}
-                  onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
-                />
-              </label>
-              <label
-                className={styles.label}
-                htmlFor="viewings-release-year-input"
+          <FilterPageHeader
+            className={styles.page_header}
+            avatar={data.avatar.childImageSharp.fluid}
+            alt={`An image of ${pageContext.name}`}
+            heading={pageContext.name}
+            tagline={<EntityHeader pageContext={pageContext} />}
+          />
+          <Fieldset className={styles.filters}>
+            <legend>Filter &amp; Sort</legend>
+            <Label htmlFor="viewings-title-input">
+              Title
+              <DebouncedInput
+                id="viewings-title-input"
+                placeholder="Enter all or part of a title"
+                onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
+              />
+            </Label>
+            <Label htmlFor="viewings-release-year-input">
+              Release Year
+              <RangeInput
+                id="viewings-release-year-input"
+                min={state.minYear}
+                max={state.maxYear}
+                onChange={(values) =>
+                  dispatch({ type: FILTER_RELEASE_YEAR, values })
+                }
+              />
+            </Label>
+            <Label htmlFor="viewings-sort-input">
+              Order By
+              <SelectInput
+                value={state.sortValue}
+                id="viewings-sort-input"
+                onChange={(e) =>
+                  dispatch({ type: SORT, value: e.target.value })
+                }
               >
-                Release Year
-                <RangeInput
-                  id="viewings-release-year-input"
-                  min={state.minYear}
-                  max={state.maxYear}
-                  onChange={(values) =>
-                    dispatch({ type: FILTER_RELEASE_YEAR, values })
-                  }
-                />
-              </label>
-              <label className={styles.label} htmlFor="viewings-sort-input">
-                Order By
-                <select
-                  value={state.sortValue}
-                  id="viewings-sort-input"
-                  className={styles.filter_select_input}
-                  onChange={(e) =>
-                    dispatch({ type: SORT, value: e.target.value })
-                  }
-                >
-                  <option value="title">Title</option>
-                  <option value="grade-desc">Grade (Best First)</option>
-                  <option value="grade-asc">Grade (Worst First)</option>
-                  <option value="release-date-desc">
-                    Release Date (Newest First)
-                  </option>
-                  <option value="release-date-asc">
-                    Release Date (Oldest First)
-                  </option>
-                </select>
-              </label>
-            </fieldset>
-          </div>
-        </div>
-        <div className={styles.right}>
+                <option value="release-date-asc">
+                  Release Date (Oldest First)
+                </option>
+                <option value="release-date-desc">
+                  Release Date (Newest First)
+                </option>
+                <option value="title">Title</option>
+              </SelectInput>
+            </Label>
+          </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
             perPage={state.perPage}
-            numberOfItems={state.filteredReviews.length}
+            numberOfItems={state.filteredMovies.length}
+            className={styles.pagination_info}
           />
-          <ul>
-            {state.filteredReviews.map((review) => {
+        </div>
+        <div className={styles.right} ref={listHeader}>
+          <ul className={styles.list}>
+            {state.moviesForPage.map((movie) => {
               const markdownNode = data.backdrop.nodes.find(
-                (item) => item.frontmatter.sequence === review.sequence
+                (item) => item.frontmatter.imdbId === movie.imdbId
               );
 
-              if (!markdownNode) {
-                throw new Error(
-                  `No review markdown found for ${review.title} (IMDb ID: ${review.imdbId})`
-                );
+              if (markdownNode) {
+                return <ReviewedListItem review={markdownNode} movie={movie} />;
               }
-
               return (
-                <li className={styles.list_item}>
-                  <Link
-                    className={styles.list_item_image_link}
-                    to={`/reviews/${review.slug}/`}
-                  >
-                    <Img
-                      fluid={markdownNode.backdrop.childImageSharp.fluid}
-                      alt={`A still from ${review.title} (${review.year})`}
-                    />
-                  </Link>
-                  <div className={styles.list_item_title}>
-                    <ReviewLink imdbId={review.imdbId}>
-                      {review.title}{" "}
-                      <span className={styles.list_item_title_year}>
-                        {review.year}
-                      </span>
-                    </ReviewLink>
-                  </div>
-                  <Grade
-                    gradeValue={review.gradeValue}
-                    className={styles.list_item_grade}
-                  />
-                  <p className={styles.list_item_cast_and_crew}>
-                    Directed by{" "}
-                    {toSentenceArray(
-                      review.directors.map((person) => person.name)
-                    )}
-                    . Starring{" "}
-                    {toSentenceArray(
-                      review.principalCast.map((person) => person.name)
-                    )}
-                    .
-                  </p>
-                </li>
+                <UnreviewedListItem
+                  backdrop={data.defaultBackdrop.childImageSharp.fluid}
+                  movie={movie}
+                />
               );
             })}
           </ul>
           <PaginationWithButtons
             currentPage={state.currentPage}
             perPage={state.perPage}
-            numberOfItems={state.filteredReviews.length}
-            onClick={(newPage) =>
-              dispatch({ type: CHANGE_PAGE, value: newPage })
-            }
+            numberOfItems={state.filteredMovies.length}
+            onClick={(newPage) => {
+              dispatch({ type: CHANGE_PAGE, value: newPage });
+              if (listHeader && listHeader.current) {
+                listHeader.current.scrollIntoView();
+              }
+            }}
+            className={styles.pagination}
           />
         </div>
       </main>
@@ -417,10 +457,14 @@ export default function WatchlistPersonPage({
 }
 
 interface PageContext {
-  name: string;
-  imdbIds: string[];
-  entityType: string;
   avatarPath: string;
+  limit: number;
+  skip: number;
+  numberOfItems: number;
+  currentPage: number;
+  entityType: string;
+  imdbIds: [string];
+  name: string;
 }
 
 interface PageQueryResult {
@@ -432,8 +476,13 @@ interface PageQueryResult {
   backdrop: {
     nodes: MarkdownReview[];
   };
-  review: {
-    nodes: JsonReview[];
+  defaultBackdrop: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
+  movie: {
+    nodes: WatchlistMovie[];
   };
 }
 
@@ -454,7 +503,9 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
-          sequence
+          imdbId: imdb_id
+          grade
+          slug
         }
         backdrop {
           childImageSharp {
@@ -465,8 +516,15 @@ export const pageQuery = graphql`
         }
       }
     }
+    defaultBackdrop: file(absolutePath: { regex: "/backdrops/default.png$/" }) {
+      childImageSharp {
+        fluid(toFormat: JPG, jpegQuality: 75) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
 
-    review: allReviewsJson(
+    movie: allWatchlistTitlesJson(
       sort: { fields: [year], order: ASC }
       filter: { imdb_id: { in: $imdbIds } }
     ) {
@@ -474,15 +532,6 @@ export const pageQuery = graphql`
         imdbId: imdb_id
         title
         year
-        sequence
-        principalCast: principal_cast {
-          name: full_name
-        }
-        directors {
-          name: full_name
-        }
-        gradeValue: grade_value
-        slug
       }
     }
   }

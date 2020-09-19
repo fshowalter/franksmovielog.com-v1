@@ -99,7 +99,7 @@ export default function RangeFilter({
         max={max}
         onChange={(e) => handleMaxChange(e.target.value)}
         step="1"
-        className={styles.year_input}
+        className={`${styles.year_input} ${styles.right}`}
       />
     </div>
   );

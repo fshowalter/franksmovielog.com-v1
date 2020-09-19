@@ -9,8 +9,9 @@
 import { Link } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
+import ScreenReaderOnly from "../ScreenReaderOnly";
 import SearchIcon from "../SearchIcon";
-import styles from "./layout.module.scss";
+import styles from "./Layout.module.scss";
 
 type NavItemProps = {
   to: string;
@@ -49,70 +50,63 @@ export default function Layout({
       <a className={styles.skip_link} href="#content">
         Skip to content
       </a>
-      <div className={styles.outer}>
-        <div id="top" className={styles.container}>
-          <Helmet>
-            <html lang="en-us" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1, shrink-to-fit=no"
-            />
-          </Helmet>
-
-          <div className={styles.sticky_wrap}>
-            <header className={styles.mast_header}>
-              <div className={styles.mast_logo}>
-                <h1 className={styles.mast_title}>
-                  <Link to="/">Frank&apos;s Movie Log</Link>
-                </h1>
-                <p className={styles.mast_tagline}>My life at the movies.</p>
-              </div>
-              <form
-                action="https://www.google.com/search"
-                acceptCharset="UTF-8"
-                method="get"
-                role="search"
-                className={styles.mast_search_form}
+      <div id="top" className={styles.container}>
+        <Helmet>
+          <html lang="en-us" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+        </Helmet>
+        <header className={styles.mast_header}>
+          <h1 className={styles.mast_title}>
+            <Link to="/">Frank&apos;s Movie Log</Link>
+          </h1>
+          <p className={styles.mast_tagline}>My life at the movies.</p>
+          <form
+            action="https://www.google.com/search"
+            acceptCharset="UTF-8"
+            method="get"
+            role="search"
+            className={styles.mast_search_form}
+          >
+            <label htmlFor="search" className={styles.mast_search_wrap}>
+              <ScreenReaderOnly>Search</ScreenReaderOnly>
+              <input
+                type="text"
+                className={styles.mast_search_input}
+                name="q"
+                id="search"
+                placeholder="Search..."
+              />
+              <input
+                type="hidden"
+                name="q"
+                value="site:movielog.frankshowalter.com"
+              />
+              <button
+                type="submit"
+                className={styles.mast_search_submit}
+                value="Search"
+                aria-label="Search"
               >
-                <label htmlFor="search" className={styles.mast_search_wrap}>
-                  <span className={styles.mast_search_label}>Search</span>
-                  <input
-                    type="text"
-                    className={styles.mast_search_input}
-                    name="q"
-                    id="search"
-                    placeholder="Search..."
-                  />
-                  <input
-                    type="hidden"
-                    name="q"
-                    value="site:movielog.frankshowalter.com"
-                  />
-                  <button
-                    type="submit"
-                    className={styles.mast_search_submit}
-                    value="Search"
-                    aria-label="Search"
-                  >
-                    <SearchIcon />
-                  </button>
-                </label>
-              </form>
-            </header>
-            <nav className={styles.mast_nav}>
-              <ul className={styles.mast_nav_list}>
-                <MastNavItem to="/">Home</MastNavItem>
-                <MastNavItem to="/about/">About</MastNavItem>
-                <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
-                <MastNavItem to="/reviews/">All Reviews</MastNavItem>
-                <MastNavItem to="/viewings/">Viewing Log</MastNavItem>
-                <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
-              </ul>
-            </nav>
-          </div>
-          <div id="content" className={styles.children}>
-            {children}
-          </div>
+                <SearchIcon />
+              </button>
+            </label>
+          </form>
+          <nav className={styles.mast_nav}>
+            <ul className={styles.mast_nav_list}>
+              <MastNavItem to="/">Home</MastNavItem>
+              <MastNavItem to="/about/">About</MastNavItem>
+              <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
+              <MastNavItem to="/reviews/">All Reviews</MastNavItem>
+              <MastNavItem to="/viewings/">Viewing Log</MastNavItem>
+              <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
+            </ul>
+          </nav>
+        </header>
+        <div id="content" className={styles.children}>
+          {children}
         </div>
         <footer className={styles.footer}>
           <ul className={styles.footer_nav_list}>
@@ -129,9 +123,9 @@ export default function Layout({
               Fair Use Law.
             </a>
           </p>
-          <a href="#top" className={styles.footer_to_the_top}>
-            To the top ↑
-          </a>
+          <ScreenReaderOnly>
+            <a href="#top">To the top ↑</a>
+          </ScreenReaderOnly>
         </footer>
       </div>
     </>

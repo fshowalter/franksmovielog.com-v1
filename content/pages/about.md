@@ -5,6 +5,8 @@ title: Welcome Back
 slug: about
 ---
 
+# About the Movie Log
+
 Been a long time, huh?
 
 I know what you’re thinking, constant reader, but I’m serious this time. Okay, maybe not serious, but at least pragmatic.
@@ -29,6 +31,6 @@ Lastly, you may ask, “Why bother?” I’m not delusional, constant reader, I 
 
 So, future readers, I beg you: place these reviews in their time. Know I mean no ill-will and today’s innocuous joke can become tomorrow’s offensive trigger. If you disagree with my opinions, that’s fine—maybe even expected. I only hope you’ll find the writing rewarding.
 
-Love, and happy watching.
+Love and happy watching,
 
 -Frank

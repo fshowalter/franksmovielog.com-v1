@@ -6,56 +6,54 @@ import { Helmet } from "react-helmet";
 export interface SeoQueryResult {
   site: {
     siteMetadata: {
-      defaultTitle?: string;
-      titleTemplate?: string;
-      defaultDescription?: string;
+      siteTitle: string;
       siteUrl: string;
-      defaultImage: string;
+      siteImage: string;
     };
   };
 }
 
+function buildTitle(pageTitle: string, siteTitle: string): string {
+  if (pageTitle?.startsWith(siteTitle)) {
+    return pageTitle;
+  }
+
+  return `${pageTitle} | ${siteTitle}`;
+}
+
 function Seo({
-  title,
+  pageTitle,
   description,
-  image,
+  image = null,
   article = false,
 }: {
-  title?: string;
-  description?: string;
-  image?: string;
-  article?: boolean;
+  pageTitle: string;
+  description: string;
+  image: string | null;
+  article: boolean;
 }): JSX.Element {
   const { pathname } = useLocation();
   const data: SeoQueryResult = useStaticQuery(graphql`
     query SEO {
       site {
         siteMetadata {
-          defaultTitle: title
-          titleTemplate
-          defaultDescription: description
+          siteTitle: title
           siteUrl: url
-          defaultImage: image
+          siteImage: image
         }
       }
     }
   `);
-  const {
-    defaultTitle,
-    titleTemplate,
-    defaultDescription,
-    siteUrl,
-    defaultImage,
-  } = data.site.siteMetadata;
+  const { siteTitle, siteUrl, siteImage } = data.site.siteMetadata;
 
   const seo = {
-    title: title || defaultTitle,
-    description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
+    title: buildTitle(pageTitle, siteTitle),
+    description,
+    image: `${siteUrl}${image || siteImage}`,
     url: `${siteUrl}${pathname}`,
   };
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -68,10 +66,3 @@ function Seo({
   );
 }
 export default Seo;
-
-Seo.defaultProps = {
-  title: null,
-  description: null,
-  image: null,
-  article: false,
-};

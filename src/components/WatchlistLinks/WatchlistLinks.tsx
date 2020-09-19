@@ -1,7 +1,8 @@
 import { Link } from "gatsby";
 import React from "react";
 import WatchlistMovie from "../../types/WatchlistMovie";
-import styles from "./watchlistlinks.module.scss";
+import SvgIcon from "../SvgIcon";
+import styles from "./WatchlistLinks.module.scss";
 
 function WatchlistItem({
   to,
@@ -13,13 +14,7 @@ function WatchlistItem({
   return (
     <li>
       <Link to={to} className={styles.link}>
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          className={styles.icon}
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <SvgIcon className={styles.icon}>
           <title>Watchlist entries</title>
           <path
             fillRule="evenodd"
@@ -29,7 +24,7 @@ function WatchlistItem({
             fillRule="evenodd"
             d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
           />
-        </svg>
+        </SvgIcon>
         {children}
       </Link>
     </li>

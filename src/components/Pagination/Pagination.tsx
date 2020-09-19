@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
-import * as styles from "./pagination.module.scss";
+import ScreenReaderOnly from "../ScreenReaderOnly";
+import styles from "./pagination.module.scss";
 
 type PaginationProps = {
   /** The current page number, starting from 1. */
@@ -15,7 +16,7 @@ export function PaginationInfo({
   currentPage,
   perPage,
   numberOfItems,
-  className = styles.header,
+  className,
 }: PaginationProps & {
   /** CSS class to apply to the rendered element. */
   className?: string;
@@ -25,7 +26,7 @@ export function PaginationInfo({
   const end = max < numberOfItems ? max : numberOfItems;
 
   return (
-    <p className={className}>
+    <p className={`${styles.info} ${className || ""}`}>
       Showing {start}-{end} of {numberOfItems}.
     </p>
   );
@@ -36,9 +37,11 @@ export function PaginationWithButtons({
   perPage,
   numberOfItems,
   onClick,
+  className,
 }: PaginationProps & {
   /** Handler called when a pagination button is clicked. */
   onClick: (value: number) => void;
+  className?: string;
 }): JSX.Element {
   const numPages = Math.ceil(numberOfItems / perPage);
 
@@ -48,6 +51,7 @@ export function PaginationWithButtons({
         currentPage={1}
         numberOfItems={numberOfItems}
         perPage={perPage}
+        className={className}
       />
     );
   }
@@ -58,11 +62,7 @@ export function PaginationWithButtons({
   let prev;
 
   if (isFirst) {
-    prev = (
-      <button type="button" disabled className={styles.button}>
-        ←Prev
-      </button>
-    );
+    prev = null;
   } else {
     prev = (
       <button
@@ -78,11 +78,7 @@ export function PaginationWithButtons({
   let next;
 
   if (isLast) {
-    next = (
-      <button type="button" disabled className={styles.button}>
-        Next→
-      </button>
-    );
+    next = null;
   } else {
     next = (
       <button
@@ -90,7 +86,7 @@ export function PaginationWithButtons({
         onClick={() => onClick(currentPage + 1)}
         className={styles.button}
       >
-        Next→
+        Next →
       </button>
     );
   }
@@ -166,8 +162,10 @@ export function PaginationWithButtons({
   }
 
   return (
-    <section className={styles.container}>
-      <h3 className={styles.pagination_heading}>Pagination</h3>
+    <section className={`${styles.container} ${className || ""}`}>
+      <ScreenReaderOnly>
+        <h3>Pagination</h3>
+      </ScreenReaderOnly>
       {prev} {firstPage} {prevDots} {prevPage}
       <span className={styles.current_page} aria-current="page">
         {currentPage}
@@ -183,10 +181,16 @@ export function PaginationWithLinks({
   numberOfItems,
   urlRoot,
   className,
+  prevText = "Prev",
+  nextText = "Next",
 }: PaginationProps & {
   /** The url root to use in generated page links including trailing slash. */
   urlRoot: string;
   className?: string;
+  /** Text to use for previous page link */
+  prevText: string;
+  /** Text to use for next page link */
+  nextText: string;
 }): JSX.Element {
   const numPages = Math.ceil(numberOfItems / perPage);
 
@@ -209,23 +213,26 @@ export function PaginationWithLinks({
 
   const nextPageUrl = `${urlRoot}page-${currentPage + 1}/`;
 
-  const prev = isFirst ? (
-    <span className={styles.disabled}>←Prev</span>
-  ) : (
+  const prev = isFirst ? null : (
     <Link to={prevPageUrl} className={styles.pagination_link}>
-      ←Prev
+      {`← ${prevText}`}
     </Link>
   );
 
-  const next = isLast ? (
-    <span className={styles.disabled}>Next→</span>
-  ) : (
+  const next = isLast ? null : (
     <Link to={nextPageUrl} className={styles.pagination_link}>
-      Next→
+      {`${nextText} →`}
     </Link>
   );
 
-  const firstPage = currentPage - 1 > 1 ? <Link to={`${urlRoot}`}>1</Link> : "";
+  const firstPage =
+    currentPage - 1 > 1 ? (
+      <Link className={styles.pagination_link} to={urlRoot}>
+        1
+      </Link>
+    ) : (
+      ""
+    );
 
   const prevDots =
     currentPage - 2 > 1 ? <span className={styles.elipsis}>…</span> : "";
@@ -263,7 +270,9 @@ export function PaginationWithLinks({
 
   return (
     <section className={`${styles.container} ${className || ""}`}>
-      <h3 className={styles.pagination_heading}>Pagination</h3>
+      <ScreenReaderOnly>
+        <h3>Pagination</h3>
+      </ScreenReaderOnly>
       {prev} {firstPage} {prevDots} {prevPage}
       <span className={styles.current_page} aria-current="page">
         {currentPage}

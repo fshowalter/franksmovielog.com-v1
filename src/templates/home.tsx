@@ -1,10 +1,11 @@
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
-import React from "react";
+import React, { useRef } from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
 import { PaginationWithLinks } from "../components/Pagination";
+import RenderedMarkdown from "../components/RenderedMarkdown";
 import ReviewLink from "../components/ReviewLink";
 import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
@@ -24,21 +25,28 @@ export default function HomeTemplate({
   pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
+  const listHeader = useRef<HTMLDivElement>(null);
+
   return (
     <Layout>
       <Seo
-        title={
+        pageTitle={
           pageContext.currentPage === 1
-            ? "Home"
+            ? "Frank's Movie Log: My Life at the Movies"
             : `Page ${pageContext.currentPage}`
         }
+        description="Reviews of current, cult, classic, and forgotten films."
+        article={false}
+        image={null}
       />
-      <main className={styles.container}>
+      <main className={styles.container} ref={listHeader}>
         <ol className={styles.list}>
           {data.updates.nodes.map((update, index) => {
             const review = update;
+            const isFirst = index === 0;
+            const isLast = index === data.updates.nodes.length - 1;
             const listItemValue =
-              data.updates.nodes.length - pageContext.skip - index;
+              pageContext.numberOfItems - pageContext.skip - index;
 
             if (update.postType === "REVIEW") {
               const movieInfo = data.movieInfo.nodes.find(
@@ -56,55 +64,64 @@ export default function HomeTemplate({
               );
 
               return (
-                <li className={styles.list_item} value={listItemValue}>
-                  <Link
-                    className={styles.list_item_image_link}
-                    to={`/reviews/${review.frontmatter.slug}/`}
+                <li value={listItemValue} className={styles.list_item}>
+                  <article
+                    className={`${styles.review} ${
+                      isFirst ? styles.first : ""
+                    } ${isLast ? styles.last : ""}`}
                   >
-                    <Img
-                      fluid={review.backdrop.childImageSharp.fluid}
-                      alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+                    <Link
+                      rel="canonical"
+                      className={styles.image_link}
+                      to={`/reviews/${review.frontmatter.slug}/`}
+                    >
+                      {review.backdrop && (
+                        <Img
+                          fluid={review.backdrop.childImageSharp.fluid}
+                          alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+                        />
+                      )}
+                    </Link>
+                    <header className={styles.review_header}>
+                      <h2 className={styles.article_heading}>
+                        <ReviewLink imdbId={review.frontmatter.imdbId}>
+                          {movieInfo.title}{" "}
+                          <span className={styles.review_year}>
+                            {movieInfo.year}
+                          </span>
+                        </ReviewLink>
+                      </h2>
+                      <Grade
+                        grade={review.frontmatter.grade}
+                        className={styles.review_grade}
+                      />
+                      <p className={styles.review_credits}>
+                        Directed by{" "}
+                        {toSentenceArray(
+                          movieInfo.directors.map((person) => person.name)
+                        )}
+                        . Starring{" "}
+                        {toSentenceArray(
+                          movieInfo.principalCast.map((person) => person.name)
+                        )}
+                        .
+                      </p>
+                    </header>
+                    <RenderedMarkdown
+                      className={styles.article_body}
+                      text={review.linkedExcerpt}
+                      tag="main"
                     />
-                  </Link>
-                  <h2 className={styles.list_item_heading}>
-                    <ReviewLink imdbId={review.frontmatter.imdbId}>
-                      {movieInfo.title}{" "}
-                      <span className={styles.list_item_heading_review_year}>
-                        {movieInfo.year}
-                      </span>
-                    </ReviewLink>
-                  </h2>
-                  <Grade
-                    grade={review.frontmatter.grade}
-                    className={styles.review_grade}
-                  />
-                  <p className={styles.list_item_review_meta}>
-                    Directed by{" "}
-                    {toSentenceArray(
-                      movieInfo.directors.map((person) => person.name)
-                    )}
-                    . Starring{" "}
-                    {toSentenceArray(
-                      movieInfo.principalCast.map((person) => person.name)
-                    )}
-                    .
-                  </p>
-                  <main
-                    // eslint-disable-next-line react/no-danger
-                    dangerouslySetInnerHTML={{
-                      __html: review.linkedExcerpt,
-                    }}
-                    className={styles.list_item_excerpt}
-                  />
-                  <footer className={styles.list_item_footer}>
-                    <div className={styles.list_item_date}>
-                      <DateIcon /> {review.frontmatter.date}
-                    </div>
-                    <WatchlistLinks
-                      watchlistMovie={watchlistMovie}
-                      className={styles.list_item_watchlist_links}
-                    />
-                  </footer>
+                    <footer className={styles.article_footer}>
+                      <div className={styles.date}>
+                        <DateIcon /> {review.frontmatter.date}
+                      </div>
+                      <WatchlistLinks
+                        watchlistMovie={watchlistMovie}
+                        className={styles.watchlist_links}
+                      />
+                    </footer>
+                  </article>
                 </li>
               );
             }
@@ -117,6 +134,8 @@ export default function HomeTemplate({
           urlRoot="/"
           perPage={pageContext.limit}
           numberOfItems={pageContext.numberOfItems}
+          prevText="Newer"
+          nextText="Older"
         />
       </main>
     </Layout>

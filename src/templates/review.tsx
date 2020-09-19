@@ -4,6 +4,8 @@ import React from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
+import RenderedMarkdown from "../components/RenderedMarkdown";
+import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
 import JsonReview from "../types/JsonReview";
 import MarkdownReview from "../types/MarkdownReview";
@@ -16,32 +18,16 @@ function buildStructuredData(
   movieInfo: JsonReview
 ) {
   const reviews = allReviews.slice().reverse();
-  let description = "";
-  const re = RegExp(/<span data-snippet>(.*?)<\/span>/);
-
-  for (let i = 0; i < reviews.length; i += 1) {
-    const match = re.exec(reviews[0].linkedHtml);
-
-    if (match) {
-      [, description] = match;
-      break;
-    }
-  }
-
-  if (!description) {
-    return null;
-  }
 
   return {
     "@context": "http://schema.org",
     "@type": "Review",
-    datePublished: reviews[0].frontmatter.date,
-    description,
     author: {
       "@type": "Person",
       name: "Frank Showalter",
       sameAs: "https://www.frankshowalter.com",
     },
+    datePublished: reviews[0].frontmatter.date,
     inLanguage: "en",
     itemReviewed: {
       "@type": "Movie",
@@ -81,22 +67,32 @@ export default function Review({
 
   return (
     <Layout>
-      <article className={styles.container}>
-        <Img
-          className={styles.image}
-          fluid={reviews[0].backdrop.childImageSharp.fluid}
-          alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
-        />
+      <Seo
+        pageTitle={`${movieInfo.title} (${movieInfo.year})`}
+        description={`A review of the ${movieInfo.year} film ${movieInfo.title}.`}
+        image={reviews[0].seoImage.childImageSharp.resize.src}
+        article
+      />
+      <main className={styles.container}>
+        {reviews[0].backdrop && (
+          <Img
+            className={styles.image}
+            fluid={reviews[0].backdrop.childImageSharp.fluid}
+            alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+          />
+        )}
         <h1 className={styles.title}>
           {movieInfo.title}{" "}
           <span className={styles.title_year}>{movieInfo.year}</span>
         </h1>
-        <aside className={styles.cast_and_crew}>
-          <Img
-            className={styles.poster}
-            fluid={reviews[0].poster.childImageSharp.fluid}
-            alt={`A poster from ${movieInfo.title} (${movieInfo.year})`}
-          />
+        <aside className={styles.credits}>
+          {reviews[0].poster && (
+            <Img
+              className={styles.poster}
+              fluid={reviews[0].poster.childImageSharp.fluid}
+              alt={`A poster from ${movieInfo.title} (${movieInfo.year})`}
+            />
+          )}
           <div className={styles.directors}>
             <span className={styles.cast_label}>Directed by</span>
             {toSentenceArray(
@@ -118,31 +114,33 @@ export default function Review({
         <ul className={styles.reviews}>
           {reviews.map((review) => {
             return (
-              <li className={styles.review}>
-                <div className={styles.slug}>
-                  <DateIcon className={styles.date_icon} />{" "}
-                  <span className={styles.date}>{review.frontmatter.date}</span>{" "}
-                  via {review.frontmatter.venue} (
-                  {review.frontmatter.venueNotes})
-                </div>
-                <div className={styles.content}>
-                  <Grade
-                    grade={review.frontmatter.grade}
-                    className={styles.grade}
-                  />
-                  <div
-                    className={styles.body}
-                    // eslint-disable-next-line react/no-danger
-                    dangerouslySetInnerHTML={{
-                      __html: review.linkedHtml,
-                    }}
-                  />
-                </div>
+              <li>
+                <article className={styles.review}>
+                  <header className={styles.slug}>
+                    <DateIcon className={styles.date_icon} />{" "}
+                    <span className={styles.date}>
+                      {review.frontmatter.date}
+                    </span>{" "}
+                    via {review.frontmatter.venue} (
+                    {review.frontmatter.venueNotes})
+                  </header>
+                  <div className={styles.content}>
+                    <Grade
+                      grade={review.frontmatter.grade}
+                      className={styles.grade}
+                    />
+                    <RenderedMarkdown
+                      className={styles.body}
+                      // eslint-disable-next-line react/no-danger
+                      text={review.linkedHtml}
+                    />
+                  </div>
+                </article>
               </li>
             );
           })}
         </ul>
-      </article>
+      </main>
       {structuredData && (
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}

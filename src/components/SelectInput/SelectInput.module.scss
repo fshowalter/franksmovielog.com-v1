@@ -1,0 +1,9 @@
+.select_input {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: var(--color-link);
+  font-size: 15px;
+  padding: calc(var(--step--2) / 2) 0;
+}
