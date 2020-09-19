@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import ScreenReaderOnly from "../ScreenReaderOnly";
-import styles from "./pagination.module.scss";
+import styles from "./Pagination.module.scss";
 
 type PaginationProps = {
   /** The current page number, starting from 1. */
@@ -31,6 +31,10 @@ export function PaginationInfo({
     </p>
   );
 }
+
+PaginationInfo.defaultProps = {
+  className: "",
+};
 
 export function PaginationWithButtons({
   currentPage,
