@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import WatchlistMovie from "../../types/WatchlistMovie";
 import SvgIcon from "../SvgIcon";
-import styles from "./Watchlistlinks.module.scss";
+import styles from "./WatchlistLinks.module.scss";
 
 function WatchlistItem({
   to,
