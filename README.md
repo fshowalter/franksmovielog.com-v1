@@ -63,7 +63,7 @@ A quick look at the non-standard directories included in the project.
 
 1.  **`/src/images`**: The favicon images used by the `gatsby-manifest` plugin to generate the necessary `meta` tags.
 
-1.  **`/src/styles`**: Shared styles `composed` into the various css-module files.
+1.  **`/src/styles`**: Shared SASS variables and mixins.
 
 1.  **`/src/utils`**: Shared utility functions.
 
