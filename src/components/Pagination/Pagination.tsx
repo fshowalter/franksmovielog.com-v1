@@ -132,7 +132,7 @@ export function PaginationWithButtons({
   let nextPage: string | JSX.Element = "";
 
   if (isLast) {
-    nextPage = <span className={styles.placeholder} />;
+    nextPage = <span />;
   } else {
     nextPage = (
       <button
@@ -178,6 +178,10 @@ export function PaginationWithButtons({
     </section>
   );
 }
+
+PaginationWithButtons.defaultProps = {
+  className: "",
+};
 
 export function PaginationWithLinks({
   currentPage,
@@ -242,7 +246,7 @@ export function PaginationWithLinks({
     currentPage - 2 > 1 ? <span className={styles.elipsis}>…</span> : "";
 
   const prevPage = isFirst ? (
-    <span className={styles.placeholder} />
+    <span />
   ) : (
     <Link to={prevPageUrl} className={styles.pagination_link}>
       {currentPage - 1}
@@ -250,7 +254,7 @@ export function PaginationWithLinks({
   );
 
   const nextPage = isLast ? (
-    <span className={styles.placeholder} />
+    <span />
   ) : (
     <Link to={nextPageUrl} className={styles.pagination_link}>
       {currentPage + 1}
@@ -285,3 +289,7 @@ export function PaginationWithLinks({
     </section>
   );
 }
+
+PaginationWithLinks.defaultProps = {
+  className: "",
+};
