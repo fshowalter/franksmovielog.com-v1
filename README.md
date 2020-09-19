@@ -58,19 +58,14 @@ A quick look at the non-standard directories included in the project.
     ├── src/styles
     └── src/utils
 
-1.  **`/content`**: This directory contains all of the movie log content.
-    Reviews and data copied from the backend system, as well as front-end
-    specific assets like backdrops and posters. It also contains the content for
-    the [about](https://www.franksmovielog.com/about/) and [how I
-    grade](https://www.franksmovielog.com/how-i-grade/) pages.
+1.  **`/content`**: The movie log content. Reviews and data copied from the backend system, as well as front-end
+    specific assets like backdrops and posters. It also contains the content for the [about](https://www.franksmovielog.com/about/) and [how I grade](https://www.franksmovielog.com/how-i-grade/) pages.
 
-1.  **`/src/images`**: This directory holds the favicon images used by the
-    `gatsby-manifest` plugin to generate the necessary `meta` tags.
+1.  **`/src/images`**: The favicon images used by the `gatsby-manifest` plugin to generate the necessary `meta` tags.
 
-1.  **`/src/styles`**: This directory holds shared styles `composed` into the
-    various css-module files.
+1.  **`/src/styles`**: Shared styles `composed` into the various css-module files.
 
-1.  **`/src/utils`**: This directory holds shared utility functions.
+1.  **`/src/utils`**: Shared utility functions.
 
 ## Deployment
 
