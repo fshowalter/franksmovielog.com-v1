@@ -1,11 +1,6 @@
 {
   "root": true,
-  "extends": [
-    "airbnb",
-    "prettier/react",
-    "plugin:prettier/recommended",
-    "plugin:import/typescript"
-  ],
+  "extends": ["airbnb", "prettier/react", "plugin:prettier/recommended"],
   "ignorePatterns": ["node_modules/", "static/", "public/"],
   "env": {
     "jest/globals": true
@@ -16,13 +11,13 @@
       "extends": [
         "airbnb",
         "airbnb/hooks",
-        "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:jest/all",
         "prettier",
         "prettier/react",
-        "prettier/@typescript-eslint"
+        "prettier/@typescript-eslint",
+        "plugin:import/typescript"
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
@@ -75,10 +70,10 @@
         "import/resolver": {
           "node": {
             "paths": ["./src"],
-            "extensions": [".js", ".jsx", ".ts", ".tsx", ".scss"]
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
           },
           "typescript": {
-            "project": ["./tsconfig.json"]
+            "directory": ["./tsconfig.json"]
           }
         }
       }
