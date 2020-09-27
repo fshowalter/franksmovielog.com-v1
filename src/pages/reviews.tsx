@@ -16,7 +16,13 @@ import Seo from "../components/Seo";
 import JsonReview from "../types/JsonReview";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
-import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
+import {
+  collator,
+  sortNumberAsc,
+  sortNumberDesc,
+  sortStringAsc,
+  sortStringDesc,
+} from "../utils/sort-utils";
 import styles from "./reviews.module.scss";
 
 function sortReviews(reviews: JsonReview[], sortOrder: string) {
@@ -24,10 +30,8 @@ function sortReviews(reviews: JsonReview[], sortOrder: string) {
     title: (a, b) => collator.compare(a.title, b.title),
     "release-date-desc": (a, b) => sortStringDesc(a.year, b.year),
     "release-date-asc": (a, b) => sortStringAsc(a.year, b.year),
-    "grade-asc": (a, b) =>
-      sortStringAsc(a.gradeValue.toString(), b.gradeValue.toString()),
-    "grade-desc": (a, b) =>
-      sortStringDesc(a.gradeValue.toString(), b.gradeValue.toString()),
+    "grade-asc": (a, b) => sortNumberAsc(a.gradeValue, b.gradeValue),
+    "grade-desc": (a, b) => sortNumberDesc(a.gradeValue, b.gradeValue),
   };
 
   const comparer = sortMap[sortOrder];
@@ -333,7 +337,7 @@ export default function ReviewsPage({
                   </Link>
                   <div className={styles.list_item_slug}>
                     <Grade
-                      gradeValue={review.gradeValue}
+                      grade={review.grade}
                       className={styles.list_item_grade}
                     />
                     {review.date}
@@ -372,6 +376,7 @@ export const query = graphql`
         imdbId: imdb_id
         title
         year
+        grade
         gradeValue: grade_value
         sort_title
         slug

@@ -4,6 +4,14 @@ export const collator = new Intl.Collator("en", {
   numeric: true,
 });
 
+export function sortNumberAsc(a: number, b: number): number {
+  return a - b;
+}
+
+export function sortNumberDesc(a: number, b: number): number {
+  return -1 * sortNumberAsc(a, b);
+}
+
 export function sortStringAsc(a: string, b: string): number {
   if (a > b) {
     return 1;
