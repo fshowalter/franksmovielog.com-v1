@@ -82,7 +82,7 @@ export default function Grade({
     <img
       className={className}
       src={src}
-      alt={alt}
+      alt={`${grade || ""}: ${alt || ""}`}
       width={width}
       height={height}
     />

@@ -1,6 +1,7 @@
 type JsonReview = {
   date: string;
   directors: { name: string }[];
+  grade: string;
   gradeValue: number;
   imdbId: string;
   principalCast: { name: string }[];
