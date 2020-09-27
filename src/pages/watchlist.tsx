@@ -578,6 +578,59 @@ function reducer(state: State, action: ActionTypes): State {
   }
 }
 
+function WatchlistProgress({
+  total,
+  reviewed,
+}: {
+  total: number;
+  reviewed: number;
+}): JSX.Element {
+  const percent = Math.floor((reviewed / total) * 100);
+
+  return (
+    <>
+      <svg viewBox="0 0 36 36" className={styles.percent_graph}>
+        <path
+          className={styles.percent_graph_background}
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+          className={styles.percent_graph_progress}
+          strokeDasharray={`${percent}, 100`}
+        />
+        <text x="18" y="20.35" className={styles.percent_number}>
+          {percent}%
+        </text>
+      </svg>
+      <div className={styles.percent_totals}>
+        {reviewed}/{total} Reviewed
+      </div>
+    </>
+  );
+}
+
+function reviewedMovieCount(
+  filteredMovies: WatchlistMovie[],
+  reviews: MarkdownReview[]
+): number {
+  const allIds = filteredMovies.map((m) => m.imdbId);
+  const reviewIds = new Set(reviews.map((r) => r.frontmatter.imdbId));
+
+  const intersection = new Set();
+  allIds.forEach((movieId) => {
+    if (reviewIds.has(movieId)) {
+      intersection.add(movieId);
+    }
+  });
+
+  return intersection.size;
+}
+
 /**
  * Renders the watchlist page.
  */
@@ -721,12 +774,6 @@ export default function WatchlistPage({
                 <option value="title">Title</option>
               </SelectInput>
             </Label>
-            <ToggleButton
-              id="to_watch-toggle_reviewed"
-              onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
-            >
-              {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-            </ToggleButton>
           </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
@@ -734,6 +781,21 @@ export default function WatchlistPage({
             numberOfItems={state.filteredMovies.length}
             className={styles.pagination_info}
           />
+          <div className={styles.percent}>
+            <WatchlistProgress
+              total={state.filteredMovies.length}
+              reviewed={reviewedMovieCount(
+                state.filteredMovies,
+                state.allReviews
+              )}
+            />
+            <ToggleButton
+              id="to_watch-toggle_reviewed"
+              onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
+            >
+              {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+            </ToggleButton>
+          </div>
         </div>
         <div ref={listHeader} className={styles.right}>
           <ol className={styles.list}>
