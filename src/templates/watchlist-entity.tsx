@@ -104,6 +104,59 @@ function initState({ movies }: { movies: WatchlistMovie[] }): State {
   };
 }
 
+function WatchlistEntityProgress({
+  total,
+  reviewed,
+}: {
+  total: number;
+  reviewed: number;
+}): JSX.Element {
+  const percent = Math.floor((reviewed / total) * 100);
+
+  return (
+    <>
+      <svg viewBox="0 0 36 36" className={styles.percent_graph}>
+        <path
+          className={styles.percent_graph_background}
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+          className={styles.percent_graph_progress}
+          strokeDasharray={`${percent}, 100`}
+        />
+        <text x="18" y="20.35" className={styles.percent_number}>
+          {percent}%
+        </text>
+      </svg>
+      <div className={styles.percent_totals}>
+        {reviewed}/{total} Reviewed
+      </div>
+    </>
+  );
+}
+
+function reviewedMovieCount(
+  filteredMovies: WatchlistMovie[],
+  reviews: MarkdownReview[]
+): number {
+  const allIds = filteredMovies.map((m) => m.imdbId);
+  const reviewIds = new Set(reviews.map((r) => r.frontmatter.imdbId));
+
+  const intersection = new Set();
+  allIds.forEach((movieId) => {
+    if (reviewIds.has(movieId)) {
+      intersection.add(movieId);
+    }
+  });
+
+  return intersection.size;
+}
+
 const FILTER_TITLE = "FILTER_TITLE";
 const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
 const SORT = "SORT";
@@ -419,6 +472,15 @@ export default function WatchlistEntityTemplate({
             numberOfItems={state.filteredMovies.length}
             className={styles.pagination_info}
           />
+          <div className={styles.percent}>
+            <WatchlistEntityProgress
+              total={state.filteredMovies.length}
+              reviewed={reviewedMovieCount(
+                state.filteredMovies,
+                data.backdrop.nodes
+              )}
+            />
+          </div>
         </div>
         <div className={styles.right} ref={listHeader}>
           <ul className={styles.list}>
