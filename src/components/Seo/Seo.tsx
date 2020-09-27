@@ -55,7 +55,7 @@ function Seo({
   return (
     <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+      <meta name="og:image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
