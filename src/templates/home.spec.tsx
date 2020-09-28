@@ -49,6 +49,7 @@ describe("Home", () => {
       </LocationProvider>
     ).toJSON();
 
+    // eslint-disable-next-line jest/no-large-snapshots
     expect(tree).toMatchInlineSnapshot(`
       Array [
         <a
@@ -213,11 +214,11 @@ describe("Home", () => {
               <p
                 className="info pagination"
               >
-                Showing 
+                Showing
                 1
                 -
                 1
-                 of 
+                 of
                 1
                 .
               </p>
@@ -288,7 +289,7 @@ describe("Home", () => {
               className="footer_fair_use"
             >
               All stills used in accordance with the
-               
+
               <a
                 href="http://www.copyright.gov/title17/92chap1.html#107"
               >
