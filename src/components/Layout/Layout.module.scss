@@ -177,6 +177,10 @@
     display: block;
     line-height: var(--step-5);
     white-space: nowrap;
+
+    &:hover {
+      border-color: var(--color-link);
+    }
   }
 }
 
