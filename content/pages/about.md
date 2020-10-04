@@ -19,7 +19,7 @@ This time, I’m going for a middle ground. Looking back on the first iteration,
 
 But wait, there’s more.
 
-My time left on this planet is less than the time I’ve spent here, so I’ve compiled a review bucket list based on my favorite stars, directors, and writers. I call it the [Watchlist](/watchlist/). Four thousand plus titles means I won’t get through them all but I’m gonna try.
+My time left on this planet is less than the time I’ve spent here, so I’ve compiled a review bucket list based on my favorite stars, directors, and writers. I call it the [Watchlist](/watchlist/). Three thousand plus titles means I won’t get through them all but I’m gonna try.
 
 The ground rules:
 
@@ -27,10 +27,10 @@ The ground rules:
 1. I’ll watch as much in order as possible. There’s value in watching artists evolve and placing disparate works in their chronological context.
 1. I’ll do my best to watch the best-available version _within reason_. I won’t pay $100 for an out-of-print Blu-Ray with the original 1.66:1 aspect-ratio when there’s a 1.85:1 print streaming on Netflix. Okay, maybe I will, but I don’t _have_ to.
 
-Lastly, you may ask, “Why bother?” I’m not delusional, constant reader, I know you are me, as no one else reads this site. And we both know we’re doing this for our kids, so when they’re our age and we’ve long departed this world, they’ll have these words as a way of connecting with us across time, our middle-aged self to theirs.
+Lastly, you may ask, “Why bother?” I’m not delusional, constant reader, I know you are me. No one else reads this site. We’re doing this for our kids. When they’re our age and we’ve long departed this world, they’ll have these words to connect us across time, our middle-aged self to theirs.
 
-So, future readers, I beg you: place these reviews in their time. Know I mean no ill-will and today’s innocuous joke can become tomorrow’s offensive trigger. If you disagree with my opinions, that’s fine—maybe even expected. I only hope you’ll find the writing rewarding.
+So, future readers, I beg you: place these reviews in their time. Today’s innocuous joke may be tomorrow’s offensive trigger, but I mean no ill-will. If you disagree with my opinions, that’s fine—maybe even expected. I only hope you’ll find the writing rewarding.
 
 Love and happy watching,
 
--Frank
+-Dad
