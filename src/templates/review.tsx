@@ -81,7 +81,7 @@ export default function Review({
             alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
           />
         )}
-        <header>
+        <header className={styles.header}>
           <h1 className={styles.title}>
             {movieInfo.title}{" "}
             <span className={styles.title_year}>{movieInfo.year}</span>

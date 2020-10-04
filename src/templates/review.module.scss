@@ -69,8 +69,11 @@
 .title {
   color: #000;
   font-size: var(--step-3);
-  grid-area: title;
   line-height: 1.1;
+}
+
+.header {
+  grid-area: title;
 }
 
 .aka_container {
