@@ -73,6 +73,21 @@
   line-height: 1.1;
 }
 
+.aka_container {
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-top: 0.875rem;
+}
+
+.aka_list {
+  margin-top: 0.5rem;
+}
+
+.aka_list_item {
+  display: block;
+  font-size: 1.125rem;
+}
+
 .content {
   position: relative;
 }

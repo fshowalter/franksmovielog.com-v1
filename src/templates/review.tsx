@@ -81,10 +81,22 @@ export default function Review({
             alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
           />
         )}
-        <h1 className={styles.title}>
-          {movieInfo.title}{" "}
-          <span className={styles.title_year}>{movieInfo.year}</span>
-        </h1>
+        <header>
+          <h1 className={styles.title}>
+            {movieInfo.title}{" "}
+            <span className={styles.title_year}>{movieInfo.year}</span>
+          </h1>
+          {movieInfo.akaTitles.length > 0 && (
+            <div className={styles.aka_container}>
+              aka:
+              <ul className={styles.aka_list}>
+                {movieInfo.akaTitles.map((akaTitle) => {
+                  return <li className={styles.aka_list_item}>{akaTitle}</li>;
+                })}
+              </ul>
+            </div>
+          )}
+        </header>
         <aside className={styles.credits}>
           {reviews[0].poster && (
             <Img
@@ -203,6 +215,7 @@ export const pageQuery = graphql`
       title
       year
       gradeValue: grade_value
+      akaTitles: aka_titles
       principalCast: principal_cast {
         name: full_name
       }

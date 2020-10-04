@@ -10,6 +10,7 @@ type JsonReview = {
   title: string;
   year: string;
   releaseDate: string;
+  akaTitles: string[];
 };
 
 export default JsonReview;
