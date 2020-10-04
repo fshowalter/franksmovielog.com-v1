@@ -28,8 +28,8 @@ import styles from "./reviews.module.scss";
 function sortReviews(reviews: JsonReview[], sortOrder: string) {
   const sortMap: Record<string, (a: JsonReview, b: JsonReview) => number> = {
     title: (a, b) => collator.compare(a.title, b.title),
-    "release-date-desc": (a, b) => sortStringDesc(a.year, b.year),
-    "release-date-asc": (a, b) => sortStringAsc(a.year, b.year),
+    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
+    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     "grade-asc": (a, b) => sortNumberAsc(a.gradeValue, b.gradeValue),
     "grade-desc": (a, b) => sortNumberDesc(a.gradeValue, b.gradeValue),
   };
@@ -373,6 +373,7 @@ export const query = graphql`
       nodes {
         sequence
         date(formatString: "YYYY-MM-DD")
+        releaseDate: release_date
         imdbId: imdb_id
         title
         year

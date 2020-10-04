@@ -16,6 +16,8 @@ type WatchlistMovie = {
   title: string;
   writers: WatchlistPerson[];
   year: string;
+  releaseDate: string;
+  sortTitle: string;
 };
 
 export default WatchlistMovie;

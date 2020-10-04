@@ -9,6 +9,7 @@ type JsonReview = {
   slug: string;
   title: string;
   year: string;
+  releaseDate: string;
 };
 
 export default JsonReview;
