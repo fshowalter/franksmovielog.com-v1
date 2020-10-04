@@ -19,13 +19,12 @@ import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
 import styles from "./viewings.module.scss";
 
 type Viewing = {
-  date: string;
-  // eslint-disable-next-line camelcase
-  imdb_id: string;
+  imdbId: string;
   sequence: number;
-  // eslint-disable-next-line camelcase
-  sort_title: string;
-  sortDate: string;
+  sortTitle: string;
+  viewingDateSort: string;
+  viewingDate: string;
+  releaseDate: string;
   title: string;
   venue: string;
   year: string;
@@ -65,7 +64,7 @@ function ViewingTitle({ viewing }: { viewing: Viewing }) {
   return (
     <div className={styles.list_item_title}>
       <ReviewLink
-        imdbId={viewing.imdb_id}
+        imdbId={viewing.imdbId}
         className={styles.list_item_title_link}
       >
         <>
@@ -83,7 +82,7 @@ function ViewingTitle({ viewing }: { viewing: Viewing }) {
 function ViewingSlug({ viewing }: { viewing: Viewing }) {
   return (
     <div className={styles.list_item_slug}>
-      {viewing.date} via {viewing.venue}.
+      {viewing.viewingDate} via {viewing.venue}.
     </div>
   );
 }
@@ -95,13 +94,15 @@ function ViewingSlug({ viewing }: { viewing: Viewing }) {
  */
 function sortViewings(viewings: Viewing[], sortOrder: string) {
   const sortMap: Record<string, (a: Viewing, b: Viewing) => number> = {
-    "viewing-date-desc": (a, b) => sortStringDesc(a.sortDate, b.sortDate),
-    "viewing-date-asc": (a, b) => sortStringAsc(a.sortDate, b.sortDate),
+    "viewing-date-desc": (a, b) =>
+      sortStringDesc(a.viewingDateSort, b.viewingDateSort),
+    "viewing-date-asc": (a, b) =>
+      sortStringAsc(a.viewingDateSort, b.viewingDateSort),
     "release-date-desc": (a, b) =>
-      sortStringDesc(a.year.toString(), b.year.toString()),
+      sortStringDesc(a.releaseDate.toString(), b.releaseDate.toString()),
     "release-date-asc": (a, b) =>
-      sortStringAsc(a.year.toString(), b.year.toString()),
-    title: (a, b) => collator.compare(a.sort_title, b.sort_title),
+      sortStringAsc(a.releaseDate.toString(), b.releaseDate.toString()),
+    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
   };
 
   const comparer = sortMap[sortOrder];
@@ -491,13 +492,14 @@ export const pageQuery = graphql`
     allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
         sequence
-        sortDate: date(formatString: "YYYY-MM-DD")
-        date(formatString: "dddd MMM D, YYYY")
-        imdb_id
+        viewingDateSort: viewing_date(formatString: "YYYY-MM-DD")
+        viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
+        releaseDate: release_date
+        imdbId: imdb_id
         title
         venue
         year
-        sort_title
+        sortTitle: sort_title
       }
     }
   }

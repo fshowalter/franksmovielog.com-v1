@@ -156,9 +156,9 @@ function sortMovies(titles: WatchlistMovie[], sortOrder: string) {
     string,
     (a: WatchlistMovie, b: WatchlistMovie) => number
   > = {
-    "release-date-asc": (a, b) => sortStringAsc(a.year, b.year),
-    "release-date-desc": (a, b) => sortStringDesc(a.year, b.year),
-    title: (a, b) => collator.compare(a.title, b.title),
+    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
+    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
+    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
   };
 
   const comparer = sortMap[sortOrder];
@@ -854,6 +854,8 @@ export const pageQuery = graphql`
         imdbId: imdb_id
         title
         year
+        releaseDate: release_date
+        sortTitle: sort_title
         directors {
           name
         }
