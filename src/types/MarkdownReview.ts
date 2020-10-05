@@ -6,6 +6,7 @@ type MarkdownReview = {
     slug: string;
     grade: string;
     date: string;
+    dateIso: string;
     title: string;
     venue: string;
     venueNotes: string;

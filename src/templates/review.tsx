@@ -27,7 +27,7 @@ function buildStructuredData(
       name: "Frank Showalter",
       sameAs: "https://www.frankshowalter.com",
     },
-    datePublished: reviews[0].frontmatter.date,
+    datePublished: reviews[0].frontmatter.dateIso,
     inLanguage: "en",
     itemReviewed: {
       "@type": "Movie",
@@ -154,9 +154,11 @@ export default function Review({
         </ul>
       </main>
       {structuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       )}
     </Layout>
   );
@@ -179,6 +181,7 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           date(formatString: "dddd MMM D, YYYY")
+          dateIso: date(formatString: "Y-MM-DD")
           grade
           sequence
           imdbId: imdb_id
