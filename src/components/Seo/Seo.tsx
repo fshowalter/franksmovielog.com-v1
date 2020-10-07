@@ -38,7 +38,7 @@ function Seo({
       site {
         siteMetadata {
           siteTitle: title
-          siteUrl: url
+          siteUrl
           siteImage: image
         }
       }

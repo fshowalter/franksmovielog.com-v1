@@ -1,11 +1,17 @@
 module.exports = {
   siteMetadata: {
     author: `Frank Showalter`,
-    url: "https://www.franksmovielog.com/",
+    siteUrl: "https://www.franksmovielog.com/",
     image: "assets/default_og.jpg",
     title: "Frank's Movie Log",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        createLinkInHead: false,
+      },
+    },
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     `gatsby-transformer-sharp`,
