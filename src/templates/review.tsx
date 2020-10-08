@@ -19,6 +19,14 @@ function buildStructuredData(
 ) {
   const reviews = allReviews.slice().reverse();
 
+  const gradeMap: { [index: string]: number } = {
+    A: 5,
+    B: 4,
+    C: 3,
+    D: 2,
+    F: 1,
+  };
+
   return {
     "@context": "http://schema.org",
     "@type": "Review",
@@ -47,7 +55,7 @@ function buildStructuredData(
     },
     reviewRating: {
       "@type": "Rating",
-      ratingValue: movieInfo.gradeValue,
+      ratingValue: gradeMap[reviews[0].frontmatter.grade[0]],
     },
   };
 }
