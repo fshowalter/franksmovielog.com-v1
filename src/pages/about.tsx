@@ -13,7 +13,7 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
     <Layout>
       <Seo
         pageTitle="About this site"
-        description="An attempt to explain why this site exists."
+        description="An attempt to justify this site's existence."
         image={null}
         article
       />
