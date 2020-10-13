@@ -1848,6 +1848,11 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
+"@prefresh/babel-plugin@^0.2.0":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@prefresh/babel-plugin/-/babel-plugin-0.2.2.tgz#b921f0a1350a9daa9106518378a4e5a49211e6f6"
+  integrity sha512-NDPMsDs5QncSdOX7zsATwypf1IWtYvOX23X3t4DOcZsVErRABqdlUTZ2RAf4KfOAIjSZhR9p0Htchqp8rQr14Q==
+
 "@prefresh/core@^0.8.1":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@prefresh/core/-/core-0.8.1.tgz#d4f15d9e3ee9c16bf420405e2b422774e807a594"
@@ -7594,13 +7599,13 @@ gatsby-plugin-page-creator@^2.3.28:
     graphql "^14.6.0"
     lodash "^4.17.20"
 
-gatsby-plugin-preact@^4.0.12:
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-4.0.12.tgz#cde31eb11ff1f833745bf47d6a179e1393931f60"
-  integrity sha512-t26xoN81Z8DRbiZPJTLszrNElY/pUb7N9u99htRStvOnJeGv4luXPPXofTHJ2dI44V1zaBP/5BiWwU+CiJREoQ==
+gatsby-plugin-preact@^4.0.15:
+  version "4.0.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-4.0.15.tgz#dcda953d95cf852a6b6518cda779a10a7152fe73"
+  integrity sha512-bnqKFDPAxzKyNkrDbYdm45jOlCy/279Cgo2BpuMs15iNsxhtHNSONFrG+ayip7q9ZTx0Lzu7LXkGyYnmTpYHCQ==
   dependencies:
+    "@prefresh/babel-plugin" "^0.2.0"
     "@prefresh/webpack" "^1.0.2"
-    react-refresh "^0.8.2"
 
 gatsby-plugin-react-helmet@^3.3.11:
   version "3.3.11"
@@ -13834,7 +13839,7 @@ react-refresh@^0.7.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.7.2.tgz#f30978d21eb8cac6e2f2fde056a7d04f6844dd50"
   integrity sha512-u5l7fhAJXecWUJzVxzMRU2Zvw8m4QmDNHlTrT5uo3KBlYBhmChd7syAakBoay1yIiVhx/8Fi7a6v6kQZfsw81Q==
 
-react-refresh@^0.8.2, react-refresh@^0.8.3:
+react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
