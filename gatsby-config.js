@@ -105,6 +105,14 @@ module.exports = {
         `,
         feeds: [
           {
+            setup: (options) => ({
+              ...options,
+              custom_elements: [
+                {
+                  'atom:link href="https://www.franksmovielog.com.com/feed.xml" rel="self" type="application/rss+xml"': null,
+                },
+              ],
+            }),
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map((edge) => {
                 return {
@@ -114,7 +122,7 @@ module.exports = {
                   guid: `${site.siteMetadata.siteUrl}/${edge.node.frontmatter.sequence}-${edge.node.frontmatter.slug}`,
                   custom_elements: [
                     {
-                      "content:encoded": `<image src="${edge.node.image.childImageSharp.resize.src}" alt="A still from ${edge.node.frontmatter.title}">${edge.node.linkedExcerpt}`,
+                      "content:encoded": `<img src="${edge.node.image.childImageSharp.resize.src}" alt="A still from ${edge.node.frontmatter.title}">${edge.node.linkedExcerpt}`,
                     },
                   ],
                 };
