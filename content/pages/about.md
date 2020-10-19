@@ -15,7 +15,7 @@ The first time around, I cranked out 100-200 word reviews of everything I watche
 
 The second time around, I prioritized quality over quantity. My writing got better, but my output suffered, slowing to one review a week, then one review every couple of weeks, then one review a month, then none for years. Writing a definitive review proved so daunting, I'd write and rewrite until I lost all perspective.
 
-This time, I’m going for a middle ground. Looking back on the first iteration, I got better the more I wrote, but I can’t crank out several hundred words of definitive analysis for every movie I watch. So I’m giving myself an out: a one or two paragraph impression _of that viewing_ is okay. I’m leaving the door open to re-visit the film later and add another review—building on the first, or rethinking my earlier ideas.
+This time, I’m going for a middle ground. Looking back on the first iteration, I got better the more I wrote, but I can’t crank out several hundred words of definitive analysis for every movie I watch. So I’m giving myself an out: a one or two paragraph impression _of that viewing_ is okay. I’m leaving the door open to re-visit the film later and add another review--building on the first, or rethinking my earlier ideas.
 
 But wait, there’s more.
 
@@ -29,8 +29,4 @@ The ground rules:
 
 Lastly, you may ask, “Why bother?” I’m not delusional, constant reader, I know you are me. No one else reads this site. We’re doing this for our kids. When they’re our age and we’ve long departed this world, they’ll have these words to connect us across time, our middle-aged self to theirs.
 
-So, future readers, I beg you: place these reviews in their time. Today’s innocuous joke may be tomorrow’s offensive trigger, but I mean no ill-will. If you disagree with my opinions, that’s fine—maybe even expected. I only hope you’ll find the writing rewarding.
-
-Love and happy watching,
-
--Dad
+So, future readers, I beg you: place these reviews in their time. Today’s innocuous joke may be tomorrow’s offensive trigger, but I mean no ill-will. If you disagree with my opinions, that’s fine--maybe even expected. I only hope you’ll find the writing rewarding.

@@ -43,7 +43,7 @@ async function createHomePages(graphql, reporter, createPage) {
   Array.from({ length: numPages }).forEach((_, i) => {
     const skip = i * perPage;
     const imdbIds = updates
-      .slice(skip, skip * perPage || perPage)
+      .slice(skip, skip + perPage)
       .filter((update) => update.frontmatter.imdb_id)
       .map((update) => update.frontmatter.imdb_id);
 
