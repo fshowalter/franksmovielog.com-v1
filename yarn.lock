@@ -7625,10 +7625,10 @@ gatsby-plugin-react-helmet@^3.3.11:
   dependencies:
     "@babel/runtime" "^7.11.2"
 
-gatsby-plugin-sass@^2.3.13:
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.13.tgz#8cefc3b32a0b1dba54ab63f95a84ae5b73c8f802"
-  integrity sha512-lxxJjW0bNGidjS0NA1QedoJUwr889OTDQllDxGP65A2XK/CdR5AencijfXr3CD9aDGREGF5GkL+TS9oYKSqegQ==
+gatsby-plugin-sass@^2.3.17:
+  version "2.3.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.17.tgz#58c8488013c81f07f44645b6568ceda0506bd36b"
+  integrity sha512-hH73k8k4p9AJV/Zta/G9tks0v7GiXXj6qhldFEdq6ajdbgEqcLW5tsDIIV3kF3AiH77pDYXUmyDLoTS5i1CyMQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     sass-loader "^7.3.1"
