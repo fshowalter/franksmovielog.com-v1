@@ -9,10 +9,13 @@ import {
   PaginationInfo,
   PaginationWithButtons,
 } from "../components/Pagination";
+import ProgressGraph from "../components/ProgressGraph";
 import RangeInput from "../components/RangeInput";
 import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
+import ToggleButton from "../components/ToggleButton";
+import MarkdownReview from "../types/MarkdownReview";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
@@ -128,6 +131,8 @@ function minMaxReleaseYearsForViewings(viewings: Viewing[]) {
 
 /** The page state. */
 type State = {
+  /** All possible reviews. */
+  allReviews: MarkdownReview[];
   /** All possible viewings. */
   allViewings: Viewing[];
   /** Viewings matching the current filters. */
@@ -146,18 +151,27 @@ type State = {
   maxYear: number;
   /** The active sort value. */
   sortValue: string;
+  /** True if reviewed items are currently hidden. */
+  hideReviewed: boolean;
 };
 
 /**
  * Initializes the page state.
  */
-function initState({ viewings }: { viewings: Viewing[] }): State {
+function initState({
+  viewings,
+  reviews,
+}: {
+  viewings: Viewing[];
+  reviews: MarkdownReview[];
+}): State {
   const [minYear, maxYear] = minMaxReleaseYearsForViewings(viewings);
   const currentPage = 1;
   const perPage = 50;
 
   return {
     allViewings: viewings,
+    allReviews: reviews,
     filteredViewings: viewings,
     viewingsForPage: slicePage<Viewing>({
       collection: viewings,
@@ -170,6 +184,7 @@ function initState({ viewings }: { viewings: Viewing[] }): State {
     minYear,
     maxYear,
     sortValue: "viewing-date-desc",
+    hideReviewed: false,
   };
 }
 
@@ -178,6 +193,7 @@ const FILTER_VENUE = "FILTER_VENUE";
 const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
 const SORT = "SORT";
 const CHANGE_PAGE = "CHANGE_PAGE";
+const TOGGLE_REVIEWED = "TOGGLE_REVIEWED";
 
 /** Action to filter by title. */
 interface FilterTitleAction {
@@ -214,12 +230,18 @@ interface ChangePageAction {
   value: number;
 }
 
+/** Action to change page. */
+interface ToggleReviewedAction {
+  type: typeof TOGGLE_REVIEWED;
+}
+
 type ActionTypes =
   | FilterTitleAction
   | FilterReleaseYearAction
   | FilterVenueAction
   | SortAction
-  | ChangePageAction;
+  | ChangePageAction
+  | ToggleReviewedAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -338,9 +360,73 @@ function reducer(state: State, action: ActionTypes) {
         }),
       };
     }
+    case TOGGLE_REVIEWED: {
+      if (state.hideReviewed) {
+        filters = {
+          ...state.filters,
+        };
+        delete filters.reviewed;
+      } else {
+        filters = {
+          ...state.filters,
+          reviewed: (viewing: Viewing) => {
+            return !state.allReviews.some(
+              (review) => review.frontmatter.imdbId === viewing.imdbId
+            );
+          },
+        };
+      }
+      filteredViewings = sortViewings(
+        applyFilters<Viewing>({ collection: state.allViewings, filters }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredViewings,
+        hideReviewed: !state.hideReviewed,
+        currentPage: 1,
+        viewingsForPage: slicePage<Viewing>({
+          collection: filteredViewings,
+          pageToSlice: 1,
+          perPage: state.perPage,
+        }),
+      };
+    }
     default:
       throw new Error();
   }
+}
+
+function ReviewedProgress({
+  total,
+  reviewed,
+}: {
+  total: number;
+  reviewed: number;
+}): JSX.Element {
+  return (
+    <ProgressGraph total={total} complete={reviewed}>
+      {reviewed}/{total} Reviewed
+    </ProgressGraph>
+  );
+}
+
+function reviewedMovieCount(
+  filteredViewings: Viewing[],
+  reviews: MarkdownReview[]
+): number {
+  const allIds = filteredViewings.map((m) => m.imdbId);
+  const reviewIds = new Set(reviews.map((r) => r.frontmatter.imdbId));
+
+  const reviewedViewingIds = [];
+  allIds.forEach((movieId) => {
+    if (reviewIds.has(movieId)) {
+      reviewedViewingIds.push(movieId);
+    }
+  });
+
+  return reviewedViewingIds.length;
 }
 
 /**
@@ -354,7 +440,8 @@ export default function ViewingsPage({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      viewings: [...data.allViewingsJson.nodes],
+      viewings: [...data.viewing.nodes],
+      reviews: [...data.review.nodes],
     },
     initState
   );
@@ -446,6 +533,21 @@ export default function ViewingsPage({
             numberOfItems={state.filteredViewings.length}
             className={styles.pagination_info}
           />
+          <div className={styles.percent}>
+            <ReviewedProgress
+              total={state.filteredViewings.length}
+              reviewed={reviewedMovieCount(
+                state.filteredViewings,
+                state.allReviews
+              )}
+            />
+            <ToggleButton
+              id="to_watch-toggle_reviewed"
+              onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
+            >
+              {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+            </ToggleButton>
+          </div>
         </div>
         <div className={styles.right} ref={listHeader}>
           <ol className={styles.list}>
@@ -482,14 +584,25 @@ export default function ViewingsPage({
 }
 
 interface PageQueryResult {
-  allViewingsJson: {
+  review: {
+    nodes: MarkdownReview[];
+  };
+  viewing: {
     nodes: Viewing[];
   };
 }
 
 export const pageQuery = graphql`
   query {
-    allViewingsJson(sort: { fields: [sequence], order: DESC }) {
+    review: allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
+      nodes {
+        frontmatter {
+          imdbId: imdb_id
+          slug
+        }
+      }
+    }
+    viewing: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
         sequence
         viewingDateSort: viewing_date(formatString: "YYYY-MM-DD")

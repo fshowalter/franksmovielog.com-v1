@@ -28,11 +28,7 @@
     );
 
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header . " ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
-    grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
-        var(--step-1),
-        1fr
-      );
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
   }
 }
 
@@ -115,39 +111,4 @@
   grid-area: percent;
   margin: 0 auto;
   width: 150px;
-}
-
-.percent_graph {
-  display: block;
-}
-
-.percent_number {
-  font-size: 0.5em;
-  text-anchor: middle;
-}
-
-.percent_totals {
-  color: var(--color-text-secondary);
-  font-size: 1rem;
-  margin-top: 1.5rem;
-}
-
-.percent_graph_background {
-  fill: none;
-  stroke: #eee;
-  stroke-width: 3.8;
-}
-
-.percent_graph_progress {
-  animation: progress 1s ease-out forwards;
-  fill: none;
-  stroke: #77e895;
-  stroke-linecap: round;
-  stroke-width: 2.8;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
 }
