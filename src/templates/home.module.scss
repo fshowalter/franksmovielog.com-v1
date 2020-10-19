@@ -183,3 +183,8 @@
     border-top: solid 1px var(--color-background);
   }
 }
+
+:global(.global__excerpt_link) {
+  font-size: 14px;
+  text-transform: uppercase;
+}

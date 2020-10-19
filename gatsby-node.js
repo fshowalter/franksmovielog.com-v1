@@ -487,7 +487,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               result = result.replace(/\n+$/, "");
               result = result.replace(
                 /<\/p>$/,
-                ` <a href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
+                ` <a class="global__excerpt_link" href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
               );
             }
 
