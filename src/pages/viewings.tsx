@@ -18,7 +18,13 @@ import ToggleButton from "../components/ToggleButton";
 import MarkdownReview from "../types/MarkdownReview";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
-import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
+import {
+  collator,
+  sortNumberAsc,
+  sortNumberDesc,
+  sortStringAsc,
+  sortStringDesc,
+} from "../utils/sort-utils";
 import styles from "./viewings.module.scss";
 
 type Viewing = {
@@ -97,10 +103,8 @@ function ViewingSlug({ viewing }: { viewing: Viewing }) {
  */
 function sortViewings(viewings: Viewing[], sortOrder: string) {
   const sortMap: Record<string, (a: Viewing, b: Viewing) => number> = {
-    "viewing-date-desc": (a, b) =>
-      sortStringDesc(a.viewingDateSort, b.viewingDateSort),
-    "viewing-date-asc": (a, b) =>
-      sortStringAsc(a.viewingDateSort, b.viewingDateSort),
+    "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
+    "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
     "release-date-desc": (a, b) =>
       sortStringDesc(a.releaseDate.toString(), b.releaseDate.toString()),
     "release-date-asc": (a, b) =>
@@ -448,6 +452,11 @@ export default function ViewingsPage({
 
   const listHeader = useRef<HTMLDivElement>(null);
 
+  const reviewedCount = reviewedMovieCount(
+    state.filteredViewings,
+    state.allReviews
+  );
+
   return (
     <Layout>
       <Seo
@@ -536,17 +545,16 @@ export default function ViewingsPage({
           <div className={styles.percent}>
             <ReviewedProgress
               total={state.filteredViewings.length}
-              reviewed={reviewedMovieCount(
-                state.filteredViewings,
-                state.allReviews
-              )}
+              reviewed={reviewedCount}
             />
-            <ToggleButton
-              id="to_watch-toggle_reviewed"
-              onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
-            >
-              {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-            </ToggleButton>
+            {(reviewedCount > 0 || state.hideReviewed) && (
+              <ToggleButton
+                id="to_watch-toggle_reviewed"
+                onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
+              >
+                {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+              </ToggleButton>
+            )}
           </div>
         </div>
         <div className={styles.right} ref={listHeader}>
@@ -605,7 +613,6 @@ export const pageQuery = graphql`
     viewing: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
         sequence
-        viewingDateSort: viewing_date(formatString: "YYYY-MM-DD")
         viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
         releaseDate: release_date
         imdbId: imdb_id

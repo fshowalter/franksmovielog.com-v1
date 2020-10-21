@@ -21,6 +21,10 @@ export function PaginationInfo({
   /** CSS class to apply to the rendered element. */
   className?: string;
 }): JSX.Element {
+  if (numberOfItems === 0) {
+    return <p className={`${styles.info} ${className || ""}`}>No results.</p>;
+  }
+
   const start = currentPage * perPage - perPage || 1;
   const max = currentPage * perPage;
   const end = max < numberOfItems ? max : numberOfItems;
@@ -46,7 +50,11 @@ export function PaginationWithButtons({
   /** Handler called when a pagination button is clicked. */
   onClick: (value: number) => void;
   className?: string;
-}): JSX.Element {
+}): JSX.Element | null {
+  if (numberOfItems === 0) {
+    return null;
+  }
+
   const numPages = Math.ceil(numberOfItems / perPage);
 
   if (numPages === 1) {

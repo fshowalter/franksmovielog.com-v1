@@ -9,7 +9,11 @@ export default function ProgressGraph({
   total: number;
   complete: number;
   children: React.ReactNode;
-}): JSX.Element {
+}): JSX.Element | null {
+  if (total === 0) {
+    return null;
+  }
+
   const percent = Math.floor((complete / total) * 100);
 
   return (

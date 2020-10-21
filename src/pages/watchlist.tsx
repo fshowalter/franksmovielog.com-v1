@@ -628,6 +628,10 @@ export default function WatchlistPage({
   );
 
   const listHeader = useRef<HTMLDivElement>(null);
+  const reviewedCount = reviewedMovieCount(
+    state.filteredMovies,
+    state.allReviews
+  );
 
   return (
     <Layout>
@@ -763,17 +767,16 @@ export default function WatchlistPage({
           <div className={styles.percent}>
             <WatchlistProgress
               total={state.filteredMovies.length}
-              reviewed={reviewedMovieCount(
-                state.filteredMovies,
-                state.allReviews
-              )}
+              reviewed={reviewedCount}
             />
-            <ToggleButton
-              id="to_watch-toggle_reviewed"
-              onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
-            >
-              {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-            </ToggleButton>
+            {(reviewedCount > 0 || state.hideReviewed) && (
+              <ToggleButton
+                id="to_watch-toggle_reviewed"
+                onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
+              >
+                {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+              </ToggleButton>
+            )}
           </div>
         </div>
         <div ref={listHeader} className={styles.right}>
