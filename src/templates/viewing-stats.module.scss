@@ -138,6 +138,12 @@
   color: var(--color-link);
   display: inline-block;
   margin-right: 2ch;
+
+  @media (min-width: 80rem) {
+    display: block;
+    line-height: var(--step-5);
+    white-space: nowrap;
+  }
 }
 
 .person_link {
