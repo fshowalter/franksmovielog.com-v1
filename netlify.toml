@@ -7,3 +7,9 @@
   from = "/cast-and-crew/humphrey-bogart"
   to = "/watchlist/cast/humphrey-bogart"
   status = 301
+
+[[redirects]]
+  from = "/browse/reviews/dont-torture-a-duckling-1972"
+  to = "/reviews/dont-torture-a-duckling-1972"
+  status = 301
+
