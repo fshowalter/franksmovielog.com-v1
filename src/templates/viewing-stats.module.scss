@@ -1,0 +1,179 @@
+@import "./src/styles/breakpoints";
+
+.container {
+  border-top: solid 1px var(--color-background);
+  display: grid;
+  padding-top: var(--step-5);
+
+  @media (min-width: 720px) {
+    grid-template-columns: 375px 1fr;
+  }
+
+  @media (min-width: 80rem) {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+
+.left {
+  align-content: start;
+  display: grid;
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
+  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+      var(--step-1),
+      1fr
+    );
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
+      --step-5
+    );
+
+  @media (min-width: $breakpoint_desktop) {
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
+  }
+}
+
+.right {
+  padding: 0 var(--step-1);
+
+  @media (min-width: $breakpoint_desktop) {
+    padding-right: 0;
+  }
+}
+
+.page_header {
+  grid-area: header;
+}
+
+.pagination_info {
+  color: var(--color-text-secondary);
+  grid-area: pagination_info;
+  justify-self: center;
+}
+
+.pagination {
+  color: var(--color-text-secondary);
+  grid-area: pagination;
+  justify-self: center;
+}
+
+.filters {
+  grid-area: filters;
+}
+
+.list {
+  column-gap: var(--step-1);
+  display: grid;
+  grid-area: list;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  row-gap: 1.5rem;
+}
+
+.list_item_image_link {
+  display: block;
+}
+
+.list_item_title {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-top: 0.25rem;
+  text-rendering: optimizeLegibility;
+}
+
+.list_item_title_year {
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.list_item_grade {
+  height: 1rem;
+  margin-top: 0.15rem;
+  width: auto;
+}
+
+.list_item_cast_and_crew {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.percent {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  grid-area: percent;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.heading {
+  font-size: var(--step-2);
+  text-align: center;
+
+  @media (min-width: $breakpoint_desktop) {
+    text-align: left;
+  }
+}
+
+.tagline {
+  color: var(--color-text-secondary);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  margin-top: var(--step-1);
+  text-align: center;
+
+  @media (min-width: $breakpoint_desktop) {
+    text-align: left;
+  }
+}
+
+.year_list {
+  margin-top: 1.5rem;
+}
+
+.year_list_item {
+  color: var(--color-link);
+  display: inline-block;
+  margin-right: 2ch;
+}
+
+.person_link {
+  color: var(--color-link);
+}
+
+.table_heading {
+  font-size: var(--step-1);
+  padding-left: var(--step-1);
+}
+
+.table {
+  border: 1px solid var(--color-background);
+  border-collapse: collapse;
+  line-height: 1.5;
+  margin-bottom: var(--step-5);
+  width: 100%;
+}
+
+.table_row {
+  &:nth-child(odd) {
+    background-color: #e9e7e061;
+  }
+}
+
+.table_fill_cell {
+  width: 100%;
+}
+
+.table_index_cell {
+  font-feature-settings: "tnum";
+  padding-left: var(--step-1);
+  text-align: right;
+}
+
+.table_count_cell {
+  font-feature-settings: "tnum";
+  padding-right: var(--step-1);
+}

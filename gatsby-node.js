@@ -353,6 +353,44 @@ async function createWatchlistPages(graphql, reporter, createPage) {
   });
 }
 
+async function createViewingStatsPages(graphql, reporter, createPage) {
+  const query = await graphql(
+    `
+      {
+        allViewingsJson {
+          viewingYears: distinct(field: viewing_year)
+        }
+      }
+    `
+  );
+
+  if (query.errors) {
+    reporter.panicOnBuild(
+      `Error while running GraphQL query for viewing stats.`
+    );
+    return;
+  }
+
+  const years = query.data.allViewingsJson.viewingYears;
+  years.forEach((year) => {
+    createPage({
+      path: `/viewings/stats/${year}/`,
+      component: path.resolve("./src/templates/viewing-stats.tsx"),
+      context: {
+        yearScope: year,
+      },
+    });
+  });
+
+  createPage({
+    path: `/viewings/stats/`,
+    component: path.resolve("./src/templates/viewing-stats.tsx"),
+    context: {
+      yearScope: "all",
+    },
+  });
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
@@ -360,11 +398,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   await createReviewPages(graphql, reporter, createPage);
   await createAboutPages(graphql, reporter, createPage);
   await createWatchlistPages(graphql, reporter, createPage);
+  await createViewingStatsPages(graphql, reporter, createPage);
 };
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
   const typeDefs = [
+    `
+      type MostWatchedWritersJson implements Node @dontInfer {
+        writers: [Writer]
+        year: String
+      }
+      type Writer {
+        count: Int!
+        full_name: String!
+        slug: String
+      }
+    `,
     schema.buildObjectType({
       name: "MarkdownRemark",
       interfaces: ["Node"],

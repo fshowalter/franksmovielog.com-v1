@@ -1,4 +1,4 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Fieldset from "../components/Fieldset";
@@ -472,7 +472,24 @@ export default function ViewingsPage({
             heading="Viewing Log"
             tagline={
               <>
-                I&apos;ve watched {state.allViewings.length} movies since 2012.
+                I&apos;ve watched {state.allViewings.length} movies since 2012.{" "}
+                <Link to="/viewings/stats/" className={styles.stats_link}>
+                  Stats{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    className={styles.stats_icon}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                    />
+                  </svg>
+                </Link>
               </>
             }
           />
