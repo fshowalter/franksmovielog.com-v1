@@ -141,8 +141,10 @@ export default function Review({
                     <span className={styles.date}>
                       {review.frontmatter.date}
                     </span>{" "}
-                    via {review.frontmatter.venue} (
-                    {review.frontmatter.venueNotes})
+                    via {review.frontmatter.venue}
+                    {review.frontmatter.venueNotes && (
+                      <> ({review.frontmatter.venueNotes})</>
+                    )}
                   </header>
                   <div className={styles.content}>
                     <Grade
