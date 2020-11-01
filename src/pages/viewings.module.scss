@@ -102,7 +102,13 @@
 }
 
 .stats_link {
+  border: solid 1px darken(#e9e7e0, 5);
+  border-radius: 4px;
   color: var(--color-link);
+  display: inline-block;
+  font-size: clamp(14px, 5vw, 15px);
+  margin: 1rem auto 0;
+  padding: calc(var(--step--2) / 2) var(--step--2);
   white-space: nowrap;
 }
 

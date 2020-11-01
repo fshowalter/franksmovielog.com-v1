@@ -135,14 +135,25 @@
 }
 
 .year_list_item {
-  color: var(--color-link);
   display: inline-block;
   margin-right: 2ch;
 
-  @media (min-width: 80rem) {
+  @media (min-width: $breakpoint_desktop) {
     display: block;
-    line-height: var(--step-5);
     white-space: nowrap;
+  }
+}
+
+.year_list_item_link {
+  color: var(--color-link);
+}
+
+.year_list_item_link,
+.year_list_item_text {
+  @media (min-width: $breakpoint_desktop) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    line-height: var(--step-5);
   }
 }
 

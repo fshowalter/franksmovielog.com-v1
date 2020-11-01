@@ -21,7 +21,7 @@ function buildSubHeading(yearScope: string, numberOfYears: number): string {
     return "A Year in Progress...";
   }
 
-  return "A Year in Review";
+  return "A Year in Review.";
 }
 
 function buildPersonName(type: string, person: Person): JSX.Element {
@@ -37,6 +37,22 @@ function buildPersonName(type: string, person: Person): JSX.Element {
   }
 
   return <>{person.fullName}</>;
+}
+
+function builMovieTitle(movie: Movie): JSX.Element {
+  if (movie.slug) {
+    return (
+      <Link className={styles.person_link} to={`/reviews/${movie.slug}`}>
+        {movie.title} ({movie.year})
+      </Link>
+    );
+  }
+
+  return (
+    <>
+      {movie.title} ({movie.year})
+    </>
+  );
 }
 
 function buildYearSuffix(yearScope: string): JSX.Element | null {
@@ -62,7 +78,27 @@ function MostWatchedTableHeading({
   );
 }
 
-function MostWatchedTable({
+function MostWatchedMoviesTable({
+  collection,
+}: {
+  collection: [Movie];
+}): JSX.Element {
+  return (
+    <table className={styles.table}>
+      {collection.map((movie, index) => {
+        return (
+          <tr className={styles.table_row}>
+            <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
+            <td className={styles.table_fill_cell}>{builMovieTitle(movie)}</td>
+            <td className={styles.table_count_cell}>{movie.count}</td>
+          </tr>
+        );
+      })}
+    </table>
+  );
+}
+
+function MostWatchedPersonTable({
   collection,
   watchlistType,
 }: {
@@ -96,10 +132,10 @@ export default function ViewingStatsTemplate({
   pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
-  console.log(data);
   const mostWatchedDirectors = data.mostWatchedDirectors.nodes[0].directors;
   const mostWatchedPerformers = data.mostWatchedPerformers.nodes[0].performers;
   const mostWatchedWriters = data.mostWatchedWriters.nodes[0].writers;
+  const mostWatchedMovies = data.mostWatchedMovies.nodes[0].movies;
 
   return (
     <Layout>
@@ -128,17 +164,41 @@ export default function ViewingStatsTemplate({
               <ul className={styles.year_list}>
                 {pageContext.yearScope !== "all" && (
                   <li className={styles.year_list_item}>
-                    <Link to="/viewings/stats/">All-Time</Link>
+                    <Link
+                      to="/viewings/stats/"
+                      className={styles.year_list_item_link}
+                    >
+                      All-Time
+                    </Link>
+                  </li>
+                )}
+                {pageContext.yearScope === "all" && (
+                  <li className={styles.year_list_item}>
+                    <span className={styles.year_list_item_text}>All-Time</span>
                   </li>
                 )}
                 {data.year.nodes.map(({ year }) => {
-                  if (year === "all" || year === pageContext.yearScope) {
+                  if (year === "all") {
                     return null;
+                  }
+                  if (year === pageContext.yearScope) {
+                    return (
+                      <li className={styles.year_list_item}>
+                        <span className={styles.year_list_item_text}>
+                          {year}
+                        </span>
+                      </li>
+                    );
                   }
 
                   return (
                     <li className={styles.year_list_item}>
-                      <Link to={`/viewings/stats/${year}`}>{year}</Link>
+                      <Link
+                        to={`/viewings/stats/${year}`}
+                        className={styles.year_list_item_link}
+                      >
+                        {year}
+                      </Link>
                     </li>
                   );
                 })}
@@ -148,10 +208,15 @@ export default function ViewingStatsTemplate({
         </div>
         <div className={styles.right}>
           <MostWatchedTableHeading
+            mostWatchedType="Movies"
+            year={pageContext.yearScope}
+          />
+          <MostWatchedMoviesTable collection={mostWatchedMovies} />
+          <MostWatchedTableHeading
             mostWatchedType="Directors"
             year={pageContext.yearScope}
           />
-          <MostWatchedTable
+          <MostWatchedPersonTable
             collection={mostWatchedDirectors}
             watchlistType="directors"
           />
@@ -159,7 +224,7 @@ export default function ViewingStatsTemplate({
             mostWatchedType="Performers"
             year={pageContext.yearScope}
           />
-          <MostWatchedTable
+          <MostWatchedPersonTable
             collection={mostWatchedPerformers}
             watchlistType="cast"
           />
@@ -167,7 +232,7 @@ export default function ViewingStatsTemplate({
             mostWatchedType="Writers"
             year={pageContext.yearScope}
           />
-          <MostWatchedTable
+          <MostWatchedPersonTable
             collection={mostWatchedWriters}
             watchlistType="writers"
           />
@@ -187,7 +252,21 @@ export interface Person {
   slug: string;
 }
 
+export interface Movie {
+  count: number;
+  title: string;
+  year: string;
+  slug: string;
+}
+
 export interface PageQueryResult {
+  mostWatchedMovies: {
+    nodes: [
+      {
+        movies: [Movie];
+      }
+    ];
+  };
   mostWatchedDirectors: {
     nodes: [
       {
@@ -220,6 +299,18 @@ export interface PageQueryResult {
 
 export const pageQuery = graphql`
   query($yearScope: String) {
+    mostWatchedMovies: allMostWatchedMoviesJson(
+      filter: { year: { eq: $yearScope } }
+    ) {
+      nodes {
+        movies {
+          count
+          title
+          year
+          slug
+        }
+      }
+    }
     mostWatchedDirectors: allMostWatchedDirectorsJson(
       filter: { year: { eq: $yearScope } }
     ) {
