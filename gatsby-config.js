@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: "https://www.franksmovielog.com/",
     image: "assets/default_og.jpg",
     title: "Frank's Movie Log",
+    feedImageUrl: "https://www.franksmovielog.com/assets/favicon-128.png",
   },
   plugins: [
     {
@@ -97,6 +98,8 @@ module.exports = {
               siteMetadata {
                 title
                 description
+                feedImageUrl
+                image_url: feedImageUrl
                 siteUrl
                 site_url: siteUrl
               }
