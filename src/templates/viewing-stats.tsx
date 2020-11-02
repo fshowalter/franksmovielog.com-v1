@@ -14,7 +14,7 @@ function buildHeading(yearScope: string): string {
 
 function buildSubHeading(yearScope: string, numberOfYears: number): string {
   if (yearScope === "all") {
-    return `${(numberOfYears - 2).toString()} Years in Review`;
+    return `${(numberOfYears - 2).toString()} Years in Review.`;
   }
 
   if (yearScope === new Date().getFullYear().toString()) {
