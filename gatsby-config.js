@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: "https://www.franksmovielog.com/",
     image: "assets/default_og.jpg",
     title: "Frank's Movie Log",
-    feedImageUrl: "https://www.franksmovielog.com/assets/favicon-128.png",
   },
   plugins: [
     {
@@ -92,20 +91,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-feed`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                feedImageUrl
-                image_url: feedImageUrl
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
         feeds: [
           {
             setup: (options) => ({
@@ -162,6 +147,8 @@ module.exports = {
             `,
             output: "/feed.xml",
             title: "Frank's Movie Log",
+            site_url: "https://www.franksmovielog.com/",
+            image_url: "https://www.franksmovielog.com/assets/favicon-128.png",
           },
         ],
       },
@@ -170,6 +157,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     "gatsby-plugin-preact",
-    "gatsby-plugin-webpack-bundle-analyser-v2",
+    // Enable for webpack bundle stats.
+    // "gatsby-plugin-webpack-bundle-analyser-v2",
   ],
 };
