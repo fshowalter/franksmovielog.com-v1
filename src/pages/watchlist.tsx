@@ -1,4 +1,4 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
 import Fieldset from "../components/Fieldset";
@@ -11,15 +11,10 @@ import {
 } from "../components/Pagination";
 import ProgressGraph from "../components/ProgressGraph";
 import RangeInput from "../components/RangeInput";
-import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
 import ToggleButton from "../components/ToggleButton";
-import MarkdownReview from "../types/MarkdownReview";
-import WatchlistMovie, {
-  WatchlistCollection,
-  WatchlistPerson,
-} from "../types/WatchlistMovie";
+import { Collection, Person, WatchlistMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
@@ -69,16 +64,26 @@ function WatchlistMovieTitle({
   /** The movie to render */
   movie: WatchlistMovie;
 }): JSX.Element {
-  return (
-    <div className={styles.list_item_title}>
-      <ReviewLink imdbId={movie.imdbId} className={styles.list_item_title_link}>
-        <>
-          {movie.title}{" "}
-          <span className={styles.list_item_title_year}>{movie.year}</span>
-        </>
-      </ReviewLink>
-    </div>
+  let title = (
+    <>
+      {movie.title}{" "}
+      <span className={styles.list_item_title_year}>{movie.year}</span>
+    </>
   );
+
+  if (movie.reviewedMovie) {
+    title = (
+      <Link
+        rel="canonical"
+        to={`/reviews/${movie.reviewedMovie.slug}/`}
+        className={styles.list_item_title_link}
+      >
+        {title}
+      </Link>
+    );
+  }
+
+  return <div className={styles.list_item_title}>{title}</div>;
 }
 
 /**
@@ -87,10 +92,7 @@ function WatchlistMovieTitle({
  * @param people The people to format.
  * @param suffix The suffix to append to the formed sentence.
  */
-function formatPeople(
-  people: WatchlistPerson[],
-  suffix: string | string[]
-): string[] {
+function formatPeople(people: Person[], suffix: string | string[]): string[] {
   if (people.length === 0) {
     return [""];
   }
@@ -113,9 +115,7 @@ function formatPeople(
  * commas and conjunction if necessary.
  * @param collections The collections to format.
  */
-function formatCollections(
-  collections: WatchlistCollection[]
-): string | string[] {
+function formatCollections(collections: Collection[]): string | string[] {
   if (collections.length === 0) {
     return "";
   }
@@ -184,8 +184,6 @@ function minMaxReleaseYearsForMovies(movies: WatchlistMovie[]) {
 }
 
 type State = {
-  /** All possible reviews. */
-  allReviews: MarkdownReview[];
   /** All possible watchlist movies. */
   allMovies: WatchlistMovie[];
   /** Watchlist movies matching the current filters. */
@@ -211,19 +209,12 @@ type State = {
 /**
  * Initializes the page state.
  */
-function initState({
-  movies,
-  reviews,
-}: {
-  movies: WatchlistMovie[];
-  reviews: MarkdownReview[];
-}): State {
+function initState({ movies }: { movies: WatchlistMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForMovies(movies);
   const currentPage = 1;
   const perPage = 50;
 
   return {
-    allReviews: reviews,
     allMovies: movies,
     filteredMovies: movies,
     moviesForPage: slicePage<WatchlistMovie>({
@@ -551,9 +542,7 @@ function reducer(state: State, action: ActionTypes): State {
         filters = {
           ...state.filters,
           reviewed: (movie: WatchlistMovie) => {
-            return !state.allReviews.some(
-              (review) => review.frontmatter.imdbId === movie.imdbId
-            );
+            return movie.reviewedMovie === null;
           },
         };
       }
@@ -593,21 +582,10 @@ function WatchlistProgress({
   );
 }
 
-function reviewedMovieCount(
-  filteredMovies: WatchlistMovie[],
-  reviews: MarkdownReview[]
-): number {
-  const allIds = filteredMovies.map((m) => m.imdbId);
-  const reviewIds = new Set(reviews.map((r) => r.frontmatter.imdbId));
+function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
+  const reviewedMovies = filteredMovies.filter((m) => m.reviewedMovie);
 
-  const intersection = new Set();
-  allIds.forEach((movieId) => {
-    if (reviewIds.has(movieId)) {
-      intersection.add(movieId);
-    }
-  });
-
-  return intersection.size;
+  return reviewedMovies.length;
 }
 
 /**
@@ -621,17 +599,13 @@ export default function WatchlistPage({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      reviews: [...data.review.nodes],
       movies: [...data.watchlist.nodes],
     },
     initState
   );
 
   const listHeader = useRef<HTMLDivElement>(null);
-  const reviewedCount = reviewedMovieCount(
-    state.filteredMovies,
-    state.allReviews
-  );
+  const reviewedCount = reviewedMovieCount(state.filteredMovies);
 
   return (
     <Layout>
@@ -813,9 +787,6 @@ export default function WatchlistPage({
 }
 
 interface PageQueryResult {
-  review: {
-    nodes: MarkdownReview[];
-  };
   watchlist: {
     nodes: WatchlistMovie[];
   };
@@ -823,21 +794,16 @@ interface PageQueryResult {
 
 export const pageQuery = graphql`
   query {
-    review: allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
-      nodes {
-        frontmatter {
-          imdbId: imdb_id
-          slug
-        }
-      }
-    }
-    watchlist: allWatchlistTitlesJson(sort: { fields: [year], order: ASC }) {
+    watchlist: allWatchlistMoviesJson(sort: { fields: [year], order: ASC }) {
       nodes {
         imdbId: imdb_id
         title
         year
         releaseDate: release_date
         sortTitle: sort_title
+        reviewedMovie {
+          slug
+        }
         directors {
           name
         }

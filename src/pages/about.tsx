@@ -7,7 +7,7 @@ import Seo from "../components/Seo";
 import styles from "./about.module.scss";
 
 export default function AboutPage({ data }: PageQueryResult): JSX.Element {
-  const page = data.page.nodes[0];
+  const { backdrop, page } = data;
 
   return (
     <Layout>
@@ -20,7 +20,7 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
       <main>
         <article className={styles.article}>
           <Img
-            fluid={page.backdrop.childImageSharp.fluid}
+            fluid={backdrop.childImageSharp.fluid}
             alt=""
             className={styles.image}
           />
@@ -33,40 +33,28 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
 
 type PageQueryResult = {
   data: {
+    backdrop: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    };
     page: {
-      nodes: [
-        {
-          backdrop: {
-            childImageSharp: {
-              fluid: FluidObject;
-            };
-          };
-          html: string;
-        }
-      ];
+      html: string;
     };
   };
 };
 
 export const pageQuery = graphql`
   query {
-    page: allMarkdownRemark(
-      filter: { frontmatter: { slug: { eq: "about" } } }
-    ) {
-      nodes {
-        frontmatter {
-          slug
-          title
+    backdrop: file(absolutePath: { regex: "/backdrops/about.png$/" }) {
+      childImageSharp {
+        fluid(toFormat: JPG, jpegQuality: 85) {
+          ...GatsbyImageSharpFluid
         }
-        backdrop {
-          childImageSharp {
-            fluid(toFormat: JPG, jpegQuality: 85) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        html
       }
+    }
+    page: markdownRemark(frontmatter: { slug: { eq: "about" } }) {
+      html
     }
   }
 `;

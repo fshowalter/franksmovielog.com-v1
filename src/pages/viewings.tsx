@@ -11,11 +11,10 @@ import {
 } from "../components/Pagination";
 import ProgressGraph from "../components/ProgressGraph";
 import RangeInput from "../components/RangeInput";
-import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
 import ToggleButton from "../components/ToggleButton";
-import MarkdownReview from "../types/MarkdownReview";
+import { ReviewedMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import {
@@ -37,6 +36,7 @@ type Viewing = {
   title: string;
   venue: string;
   year: string;
+  reviewedMovie: ReviewedMovie;
 };
 
 /**
@@ -69,20 +69,32 @@ function VenueOptions({
 /**
  * Renders a viewing title.
  */
-function ViewingTitle({ viewing }: { viewing: Viewing }) {
-  return (
-    <div className={styles.list_item_title}>
-      <ReviewLink
-        imdbId={viewing.imdbId}
+function ViewingTitle({
+  viewing,
+}: {
+  /** The viewing to render */
+  viewing: Viewing;
+}): JSX.Element {
+  let title = (
+    <>
+      {viewing.title}{" "}
+      <span className={styles.list_item_title_year}>{viewing.year}</span>
+    </>
+  );
+
+  if (viewing.reviewedMovie) {
+    title = (
+      <Link
+        rel="canonical"
+        to={`/reviews/${viewing.reviewedMovie.slug}/`}
         className={styles.list_item_title_link}
       >
-        <>
-          {viewing.title}{" "}
-          <span className={styles.list_item_title_year}>{viewing.year}</span>
-        </>
-      </ReviewLink>
-    </div>
-  );
+        {title}
+      </Link>
+    );
+  }
+
+  return <div className={styles.list_item_title}>{title}</div>;
 }
 
 /**
@@ -135,8 +147,6 @@ function minMaxReleaseYearsForViewings(viewings: Viewing[]) {
 
 /** The page state. */
 type State = {
-  /** All possible reviews. */
-  allReviews: MarkdownReview[];
   /** All possible viewings. */
   allViewings: Viewing[];
   /** Viewings matching the current filters. */
@@ -162,20 +172,13 @@ type State = {
 /**
  * Initializes the page state.
  */
-function initState({
-  viewings,
-  reviews,
-}: {
-  viewings: Viewing[];
-  reviews: MarkdownReview[];
-}): State {
+function initState({ viewings }: { viewings: Viewing[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForViewings(viewings);
   const currentPage = 1;
   const perPage = 50;
 
   return {
     allViewings: viewings,
-    allReviews: reviews,
     filteredViewings: viewings,
     viewingsForPage: slicePage<Viewing>({
       collection: viewings,
@@ -374,9 +377,7 @@ function reducer(state: State, action: ActionTypes) {
         filters = {
           ...state.filters,
           reviewed: (viewing: Viewing) => {
-            return !state.allReviews.some(
-              (review) => review.frontmatter.imdbId === viewing.imdbId
-            );
+            return !!viewing.reviewedMovie;
           },
         };
       }
@@ -416,21 +417,8 @@ function ReviewedProgress({
   );
 }
 
-function reviewedMovieCount(
-  filteredViewings: Viewing[],
-  reviews: MarkdownReview[]
-): number {
-  const allIds = filteredViewings.map((m) => m.imdbId);
-  const reviewIds = new Set(reviews.map((r) => r.frontmatter.imdbId));
-
-  const reviewedViewingIds = [];
-  allIds.forEach((movieId) => {
-    if (reviewIds.has(movieId)) {
-      reviewedViewingIds.push(movieId);
-    }
-  });
-
-  return reviewedViewingIds.length;
+function reviewedMovieCount(filteredViewings: Viewing[]): number {
+  return filteredViewings.filter((viewing) => viewing.reviewedMovie).length;
 }
 
 /**
@@ -445,17 +433,13 @@ export default function ViewingsPage({
     reducer,
     {
       viewings: [...data.viewing.nodes],
-      reviews: [...data.review.nodes],
     },
     initState
   );
 
   const listHeader = useRef<HTMLDivElement>(null);
 
-  const reviewedCount = reviewedMovieCount(
-    state.filteredViewings,
-    state.allReviews
-  );
+  const reviewedCount = reviewedMovieCount(state.filteredViewings);
 
   return (
     <Layout>
@@ -610,9 +594,6 @@ export default function ViewingsPage({
 }
 
 interface PageQueryResult {
-  review: {
-    nodes: MarkdownReview[];
-  };
   viewing: {
     nodes: Viewing[];
   };
@@ -620,14 +601,6 @@ interface PageQueryResult {
 
 export const pageQuery = graphql`
   query {
-    review: allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
-      nodes {
-        frontmatter {
-          imdbId: imdb_id
-          slug
-        }
-      }
-    }
     viewing: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
         sequence
@@ -638,6 +611,9 @@ export const pageQuery = graphql`
         venue
         year
         sortTitle: sort_title
+        reviewedMovie {
+          slug
+        }
       }
     }
   }

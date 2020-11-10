@@ -1,6 +1,6 @@
 import React from "react";
 import ReactSlider from "react-slider";
-import styles from "./rangeInput.module.scss";
+import styles from "./RangeInput.module.scss";
 
 /**
  * Renders a dual-handle range slider.

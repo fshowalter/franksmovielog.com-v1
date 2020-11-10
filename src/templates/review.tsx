@@ -1,24 +1,18 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import React from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
 import Layout from "../components/Layout";
+import RelatedMovies from "../components/RelatedMovies";
 import RenderedMarkdown from "../components/RenderedMarkdown";
 import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
-import JsonReview from "../types/JsonReview";
-import MarkdownReview from "../types/MarkdownReview";
-import WatchlistMovie from "../types/WatchlistMovie";
+import { ReviewedMovie } from "../types";
 import toSentenceArray from "../utils/to-sentence-array";
 import styles from "./review.module.scss";
 
-function buildStructuredData(
-  allReviews: MarkdownReview[],
-  movieInfo: JsonReview
-) {
-  const reviews = allReviews.slice().reverse();
-
+function buildStructuredData(movie: ReviewedMovie) {
   const gradeMap: { [index: string]: number } = {
     A: 5,
     B: 4,
@@ -35,17 +29,17 @@ function buildStructuredData(
       name: "Frank Showalter",
       sameAs: "https://www.frankshowalter.com",
     },
-    datePublished: reviews[0].frontmatter.dateIso,
+    datePublished: movie.lastReviewDate,
     inLanguage: "en",
     itemReviewed: {
       "@type": "Movie",
-      name: movieInfo.title,
-      sameAs: `http://www.imdb.com/title/${movieInfo.imdbId}/`,
-      image: reviews[0].seoImage.childImageSharp.resize.src,
-      dateCreated: movieInfo.year,
+      name: movie.title,
+      sameAs: `http://www.imdb.com/title/${movie.imdbId}/`,
+      image: movie.seoImage.childImageSharp.resize.src,
+      dateCreated: movie.year,
       director: {
         "@type": "Person",
-        name: movieInfo.directors[0].name,
+        name: movie.directors[0].name,
       },
     },
     publisher: {
@@ -55,9 +49,98 @@ function buildStructuredData(
     },
     reviewRating: {
       "@type": "Rating",
-      ratingValue: gradeMap[reviews[0].frontmatter.grade[0]],
+      ratingValue: gradeMap[movie.lastReviewGrade],
     },
   };
+}
+
+function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
+  return (
+    <div className={styles.related}>
+      {movie.watchlist.collections.map((collection) => {
+        return (
+          <RelatedMovies movies={collection.reviewedMovies}>
+            <header className={styles.related_header}>
+              <h3 className={styles.related_heading}>
+                More{" "}
+                <span className={styles.related_name}>{collection.name}</span>
+              </h3>
+              <Link
+                to={`/watchlist/collections/${collection.slug}/`}
+                className={styles.related_more}
+              >
+                View All &raquo;
+              </Link>
+            </header>
+          </RelatedMovies>
+        );
+      })}
+      {movie.watchlist.performers.map((performer) => {
+        return (
+          <RelatedMovies movies={performer.reviewedMovies}>
+            <header className={styles.related_header}>
+              <h3 className={styles.related_heading}>
+                More with{" "}
+                <span className={styles.related_name}>{performer.name}</span>
+              </h3>
+              <Link
+                to={`/watchlist/cast/${performer.slug}/`}
+                className={styles.related_more}
+              >
+                View All &raquo;
+              </Link>
+            </header>
+          </RelatedMovies>
+        );
+      })}
+      {movie.watchlist.directors.map((director) => {
+        return (
+          <RelatedMovies movies={director.reviewedMovies}>
+            <header className={styles.related_header}>
+              <h3 className={styles.related_heading}>
+                More directed by{" "}
+                <span className={styles.related_name}>{director.name}</span>
+              </h3>
+              <Link
+                to={`/watchlist/directors/${director.slug}/`}
+                className={styles.related_more}
+              >
+                View All &raquo;
+              </Link>
+            </header>
+          </RelatedMovies>
+        );
+      })}
+      {movie.watchlist.writers.map((writer) => {
+        return (
+          <RelatedMovies movies={writer.reviewedMovies}>
+            <header className={styles.related_header}>
+              <h3 className={styles.related_heading}>
+                More written by{" "}
+                <span className={styles.related_name}>{writer.name}</span>
+              </h3>
+              <Link
+                to={`/watchlist/writers/${writer.slug}/`}
+                className={styles.related_more}
+              >
+                View All &raquo;
+              </Link>
+            </header>
+          </RelatedMovies>
+        );
+      })}
+      <RelatedMovies movies={movie.browseMore}>
+        <header className={styles.related_header}>
+          <h3 className={styles.related_heading}>
+            More <span className={styles.related_name}>Reviews</span>
+          </h3>
+          <Link to="/reviews/" className={styles.related_more}>
+            View All &raquo;
+          </Link>
+        </header>
+      </RelatedMovies>
+    </div>
+  );
 }
 
 /**
@@ -68,37 +151,35 @@ export default function Review({
 }: {
   data: PageQueryResult;
 }): JSX.Element {
-  const { movieInfo } = data;
-  const { watchlistMovie } = data;
-  const reviews = data.review.nodes;
-  const structuredData = buildStructuredData(reviews, movieInfo);
+  const { movie } = data;
+  const structuredData = buildStructuredData(movie);
 
   return (
     <Layout>
       <Seo
-        pageTitle={`${movieInfo.title} (${movieInfo.year})`}
-        description={`A review of the ${movieInfo.year} film ${movieInfo.title}.`}
-        image={reviews[0].seoImage.childImageSharp.resize.src}
+        pageTitle={`${movie.title} (${movie.year})`}
+        description={`A review of the ${movie.year} film ${movie.title}.`}
+        image={movie.seoImage.childImageSharp.resize.src}
         article
       />
       <main className={styles.container}>
-        {reviews[0].backdrop && (
+        {movie.backdrop && (
           <Img
             className={styles.image}
-            fluid={reviews[0].backdrop.childImageSharp.fluid}
-            alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
+            fluid={movie.backdrop.childImageSharp.fluid}
+            alt={`A still from ${movie.title} (${movie.year})`}
           />
         )}
         <header className={styles.header}>
           <h1 className={styles.title}>
-            {movieInfo.title}{" "}
-            <span className={styles.title_year}>{movieInfo.year}</span>
+            {movie.title}{" "}
+            <span className={styles.title_year}>{movie.year}</span>
           </h1>
-          {movieInfo.akaTitles.length > 0 && (
+          {movie.akaTitles.length > 0 && (
             <div className={styles.aka_container}>
               aka:
               <ul className={styles.aka_list}>
-                {movieInfo.akaTitles.map((akaTitle) => {
+                {movie.akaTitles.map((akaTitle) => {
                   return <li className={styles.aka_list_item}>{akaTitle}</li>;
                 })}
               </ul>
@@ -106,33 +187,27 @@ export default function Review({
           )}
         </header>
         <aside className={styles.credits}>
-          {reviews[0].poster && (
+          {movie.poster && (
             <Img
               className={styles.poster}
-              fluid={reviews[0].poster.childImageSharp.fluid}
-              alt={`A poster from ${movieInfo.title} (${movieInfo.year})`}
+              fluid={movie.poster.childImageSharp.fluid}
+              alt={`A poster from ${movie.title} (${movie.year})`}
             />
           )}
           <div className={styles.directors}>
             <span className={styles.cast_label}>Directed by</span>
-            {toSentenceArray(
-              movieInfo.directors.map((director) => director.name)
-            )}
+            {toSentenceArray(movie.directors.map((director) => director.name))}
           </div>
           <div className={styles.cast}>
             <span className={styles.cast_label}>Starring</span>
-            {toSentenceArray(
-              movieInfo.principalCast.map((person) => person.name)
-            )}
+            {toSentenceArray(movie.principalCast.map((person) => person.name))}
           </div>
-          {watchlistMovie && (
-            <div className={styles.watchlist}>
-              <WatchlistLinks watchlistMovie={watchlistMovie} />
-            </div>
-          )}
+          <div className={styles.watchlist}>
+            <WatchlistLinks movie={movie} />
+          </div>
         </aside>
-        <ul className={styles.reviews}>
-          {reviews.map((review) => {
+        <ul className={styles.reviews_list}>
+          {movie.reviews.map((review) => {
             return (
               <li>
                 <article className={styles.review}>
@@ -162,6 +237,25 @@ export default function Review({
             );
           })}
         </ul>
+        {movie.olderViewings.length > 0 && (
+          <div className={styles.older_viewings}>
+            <h3 className={styles.older_viewings_heading}>Older Viewings</h3>
+            <ul className={styles.older_viewings_list}>
+              {movie.olderViewings.map((viewing) => {
+                return (
+                  <li>
+                    <div className={styles.slug}>
+                      <DateIcon className={styles.viewing_date_icon} />{" "}
+                      <span className={styles.date}>{viewing.viewingDate}</span>{" "}
+                      via {viewing.venue}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+        <Related movie={movie} />
       </main>
       {structuredData && (
         <script
@@ -175,20 +269,24 @@ export default function Review({
 }
 
 interface PageQueryResult {
-  review: {
-    nodes: MarkdownReview[];
-  };
-  movieInfo: JsonReview;
-  watchlistMovie?: WatchlistMovie;
+  movie: ReviewedMovie;
 }
 
 export const pageQuery = graphql`
   query($imdbId: String) {
-    review: allMarkdownRemark(
-      sort: { fields: [frontmatter___sequence], order: ASC }
-      filter: { frontmatter: { imdb_id: { eq: $imdbId } } }
-    ) {
-      nodes {
+    movie: reviewedMoviesJson(imdb_id: { eq: $imdbId }) {
+      imdbId: imdb_id
+      title
+      year
+      lastReviewGradeValue: last_review_grade_value
+      akaTitles: aka_titles
+      principalCast: principal_cast {
+        name: full_name
+      }
+      directors {
+        name: full_name
+      }
+      reviews {
         frontmatter {
           date(formatString: "dddd MMM D, YYYY")
           dateIso: date(formatString: "Y-MM-DD")
@@ -198,62 +296,110 @@ export const pageQuery = graphql`
           venue
           venueNotes: venue_notes
         }
-        backdrop {
-          childImageSharp {
-            fluid(toFormat: JPG, maxWidth: 934, quality: 80) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        seoImage: backdrop {
-          childImageSharp {
-            resize(toFormat: JPG, width: 1200, quality: 80) {
-              src
-            }
-          }
-        }
-        poster {
-          childImageSharp {
-            fluid(toFormat: JPG, maxWidth: 238, quality: 80) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
         linkedHtml
       }
-    }
-
-    movieInfo: reviewsJson(imdb_id: { eq: $imdbId }) {
-      imdbId: imdb_id
-      title
-      year
-      gradeValue: grade_value
-      akaTitles: aka_titles
-      principalCast: principal_cast {
-        name: full_name
+      olderViewings {
+        viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
+        venue
       }
-      directors {
-        name: full_name
+      backdrop {
+        childImageSharp {
+          fluid(toFormat: JPG, maxWidth: 934, quality: 80) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
       }
-    }
-
-    watchlistMovie: watchlistTitlesJson(imdb_id: { eq: $imdbId }) {
-      imdbId: imdb_id
-      directors {
-        name
+      seoImage: backdrop {
+        childImageSharp {
+          resize(toFormat: JPG, width: 1200, quality: 80) {
+            src
+          }
+        }
+      }
+      poster {
+        childImageSharp {
+          fluid(toFormat: JPG, maxWidth: 238, quality: 80) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      browseMore {
+        title
+        lastReviewGrade: last_review_grade
         slug
+        backdrop {
+          childImageSharp {
+            fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
-      writers {
-        name
-        slug
-      }
-      performers {
-        name
-        slug
-      }
-      collections {
-        name
-        slug
+      watchlist {
+        performers {
+          name
+          slug
+          reviewedMovies {
+            title
+            lastReviewGrade: last_review_grade
+            slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
+        }
+        directors {
+          name
+          slug
+          reviewedMovies {
+            title
+            lastReviewGrade: last_review_grade
+            slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
+        }
+        writers {
+          name
+          slug
+          reviewedMovies {
+            title
+            lastReviewGrade: last_review_grade
+            slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
+        }
+        collections {
+          name
+          slug
+          reviewedMovies {
+            title
+            lastReviewGrade: last_review_grade
+            slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

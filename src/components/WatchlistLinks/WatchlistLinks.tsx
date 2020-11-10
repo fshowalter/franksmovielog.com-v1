@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import WatchlistMovie from "../../types/WatchlistMovie";
+import { Movie } from "../../types";
 import SvgIcon from "../SvgIcon";
 import styles from "./WatchlistLinks.module.scss";
 
@@ -32,41 +32,43 @@ function WatchlistItem({
 }
 
 function WatchlistLinks({
-  watchlistMovie,
+  movie,
   className,
 }: {
-  watchlistMovie?: WatchlistMovie;
+  movie?: Movie;
   className?: string;
 }): JSX.Element | null {
-  if (!watchlistMovie) {
+  if (!movie) {
     return null;
   }
+
+  const { watchlist } = movie;
 
   return (
     <div className={`${styles.container} ${className || ""}`}>
       <ul className={styles.list}>
-        {watchlistMovie.collections.map((collection) => {
+        {watchlist.collections.map((collection) => {
           return (
             <WatchlistItem to={`/watchlist/collections/${collection.slug}/`}>
               {collection.name}
             </WatchlistItem>
           );
         })}
-        {watchlistMovie.directors.map((director) => {
+        {watchlist.directors.map((director) => {
           return (
             <WatchlistItem to={`/watchlist/directors/${director.slug}/`}>
               {director.name}
             </WatchlistItem>
           );
         })}
-        {watchlistMovie.performers.map((performer) => {
+        {watchlist.performers.map((performer) => {
           return (
             <WatchlistItem to={`/watchlist/cast/${performer.slug}/`}>
               {performer.name}
             </WatchlistItem>
           );
         })}
-        {watchlistMovie.writers.map((writer) => {
+        {watchlist.writers.map((writer) => {
           return (
             <WatchlistItem to={`/watchlist/writers/${writer.slug}/`}>
               {writer.name}
@@ -79,7 +81,7 @@ function WatchlistLinks({
 }
 
 WatchlistLinks.defaultProps = {
-  watchlistMovie: null,
+  movie: null,
   className: null,
 };
 

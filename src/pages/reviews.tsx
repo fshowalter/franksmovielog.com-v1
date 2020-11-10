@@ -13,7 +13,7 @@ import {
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
-import JsonReview from "../types/JsonReview";
+import { ReviewedMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import {
@@ -25,13 +25,18 @@ import {
 } from "../utils/sort-utils";
 import styles from "./reviews.module.scss";
 
-function sortReviews(reviews: JsonReview[], sortOrder: string) {
-  const sortMap: Record<string, (a: JsonReview, b: JsonReview) => number> = {
+function sortReviews(reviews: ReviewedMovie[], sortOrder: string) {
+  const sortMap: Record<
+    string,
+    (a: ReviewedMovie, b: ReviewedMovie) => number
+  > = {
     title: (a, b) => collator.compare(a.title, b.title),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
-    "grade-asc": (a, b) => sortNumberAsc(a.gradeValue, b.gradeValue),
-    "grade-desc": (a, b) => sortNumberDesc(a.gradeValue, b.gradeValue),
+    "grade-asc": (a, b) =>
+      sortNumberAsc(a.lastReviewGradeValue, b.lastReviewGradeValue),
+    "grade-desc": (a, b) =>
+      sortNumberDesc(a.lastReviewGradeValue, b.lastReviewGradeValue),
   };
 
   const comparer = sortMap[sortOrder];
@@ -47,7 +52,7 @@ function sortReviews(reviews: JsonReview[], sortOrder: string) {
  * Returns the min and max release years for a given collection of reviews.
  * @param reviews The reviews collection.
  */
-function minMaxReleaseYearsForReviews(reviews: JsonReview[]) {
+function minMaxReleaseYearsForReviews(reviews: ReviewedMovie[]) {
   const releaseYears = reviews
     .map((review) => {
       return review.year;
@@ -65,13 +70,13 @@ function minMaxReleaseYearsForReviews(reviews: JsonReview[]) {
  */
 type State = {
   /** All possible reviews. */
-  allReviews: JsonReview[];
+  allReviews: ReviewedMovie[];
   /** Reviews matching the current filters. */
-  filteredReviews: JsonReview[];
+  filteredReviews: ReviewedMovie[];
   /** Reviews matching the current filters for the current page. */
-  reviewsForPage: JsonReview[];
+  reviewsForPage: ReviewedMovie[];
   /** The active filters. */
-  filters: Record<string, (review: JsonReview) => boolean>;
+  filters: Record<string, (review: ReviewedMovie) => boolean>;
   /** The current page. */
   currentPage: number;
   /** The number of reviews per page. */
@@ -84,7 +89,7 @@ type State = {
   sortValue: string;
 };
 
-function initState({ reviews }: { reviews: JsonReview[] }): State {
+function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForReviews(reviews);
   const currentPage = 1;
   const perPage = 100;
@@ -92,7 +97,7 @@ function initState({ reviews }: { reviews: JsonReview[] }): State {
   return {
     allReviews: reviews,
     filteredReviews: reviews,
-    reviewsForPage: slicePage<JsonReview>({
+    reviewsForPage: slicePage<ReviewedMovie>({
       collection: reviews,
       pageToSlice: currentPage,
       perPage,
@@ -157,12 +162,12 @@ function reducer(state: State, action: ActionTypes): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (review: JsonReview) => {
+        title: (review: ReviewedMovie) => {
           return regex.test(review.title);
         },
       };
       filteredReviews = sortReviews(
-        applyFilters<JsonReview>({ collection: state.allReviews, filters }),
+        applyFilters<ReviewedMovie>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
@@ -170,7 +175,7 @@ function reducer(state: State, action: ActionTypes): State {
         filters,
         filteredReviews,
         currentPage: 1,
-        reviewsForPage: slicePage<JsonReview>({
+        reviewsForPage: slicePage<ReviewedMovie>({
           collection: filteredReviews,
           pageToSlice: 1,
           perPage: state.perPage,
@@ -181,7 +186,7 @@ function reducer(state: State, action: ActionTypes): State {
       const [minYear, maxYear] = minMaxReleaseYearsForReviews(state.allReviews);
       filters = {
         ...state.filters,
-        releaseYear: (review: JsonReview) => {
+        releaseYear: (review: ReviewedMovie) => {
           const releaseYear = parseInt(review.year, 10);
           if (action.values === [minYear, maxYear]) {
             return true;
@@ -192,7 +197,7 @@ function reducer(state: State, action: ActionTypes): State {
         },
       };
       filteredReviews = sortReviews(
-        applyFilters<JsonReview>({ collection: state.allReviews, filters }),
+        applyFilters<ReviewedMovie>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
@@ -200,7 +205,7 @@ function reducer(state: State, action: ActionTypes): State {
         filters,
         filteredReviews,
         currentPage: 1,
-        reviewsForPage: slicePage<JsonReview>({
+        reviewsForPage: slicePage<ReviewedMovie>({
           collection: filteredReviews,
           pageToSlice: 1,
           perPage: state.perPage,
@@ -213,7 +218,7 @@ function reducer(state: State, action: ActionTypes): State {
         ...state,
         sortValue: action.value,
         filteredReviews,
-        reviewsForPage: slicePage<JsonReview>({
+        reviewsForPage: slicePage<ReviewedMovie>({
           collection: filteredReviews,
           pageToSlice: state.currentPage,
           perPage: state.perPage,
@@ -224,7 +229,7 @@ function reducer(state: State, action: ActionTypes): State {
       return {
         ...state,
         currentPage: action.value,
-        reviewsForPage: slicePage<JsonReview>({
+        reviewsForPage: slicePage<ReviewedMovie>({
           collection: state.filteredReviews,
           pageToSlice: action.value,
           perPage: state.perPage,
@@ -267,8 +272,7 @@ export default function ReviewsPage({
             heading="Reviews"
             tagline={
               <>
-                I&apos;ve published {state.allReviews.length} reviews since
-                2020.
+                I&apos;ve reviewed {state.allReviews.length} movies since 2020.
               </>
             }
           />
@@ -337,10 +341,10 @@ export default function ReviewsPage({
                   </Link>
                   <div className={styles.list_item_slug}>
                     <Grade
-                      grade={review.grade}
+                      grade={review.lastReviewGrade}
                       className={styles.list_item_grade}
                     />
-                    {review.date}
+                    {review.lastReviewDate}
                   </div>
                 </li>
               );
@@ -363,13 +367,13 @@ export default function ReviewsPage({
 
 interface PageQueryResult {
   reviews: {
-    nodes: JsonReview[];
+    nodes: ReviewedMovie[];
   };
 }
 
 export const query = graphql`
   query {
-    reviews: allReviewsJson(sort: { fields: [sort_title], order: ASC }) {
+    reviews: allReviewedMoviesJson(sort: { fields: [sort_title], order: ASC }) {
       nodes {
         sequence
         date(formatString: "YYYY-MM-DD")
@@ -377,8 +381,8 @@ export const query = graphql`
         imdbId: imdb_id
         title
         year
-        grade
-        gradeValue: grade_value
+        lastReviewGrade: last_review_grade
+        lastReviewGradeValue: last_review_grade_value
         sort_title
         slug
       }

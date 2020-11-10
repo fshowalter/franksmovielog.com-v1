@@ -6,12 +6,9 @@ import Grade from "../components/Grade";
 import Layout from "../components/Layout";
 import { PaginationWithLinks } from "../components/Pagination";
 import RenderedMarkdown from "../components/RenderedMarkdown";
-import ReviewLink from "../components/ReviewLink";
 import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
-import JsonReview from "../types/JsonReview";
-import MarkdownReview from "../types/MarkdownReview";
-import WatchlistMovie from "../types/WatchlistMovie";
+import { MarkdownReview } from "../types";
 import toSentenceArray from "../utils/to-sentence-array";
 import styles from "./home.module.scss";
 
@@ -26,6 +23,9 @@ export default function HomeTemplate({
   data: PageQueryResult;
 }): JSX.Element {
   const listHeader = useRef<HTMLDivElement>(null);
+  const {
+    update: { nodes: updates },
+  } = data;
 
   return (
     <Layout>
@@ -41,91 +41,76 @@ export default function HomeTemplate({
       />
       <main className={styles.container} ref={listHeader}>
         <ol className={styles.list}>
-          {data.updates.nodes.map((update, index) => {
+          {updates.map((update, index) => {
             const review = update;
             const isFirst = index === 0;
-            const isLast = index === data.updates.nodes.length - 1;
+            const isLast = index === updates.length - 1;
             const listItemValue =
               pageContext.numberOfItems - pageContext.skip - index;
+            const movie = update.reviewedMovie;
 
-            if (update.postType === "REVIEW") {
-              const movieInfo = data.movieInfo.nodes.find(
-                (item) => item.imdbId === review.frontmatter.imdbId
-              );
-
-              if (!movieInfo) {
-                throw new Error(
-                  `No review data found for ${review.frontmatter.title} (IMDb ID: ${review.frontmatter.imdbId})`
-                );
-              }
-
-              const watchlistMovie = data.watchlistMovie.nodes.find(
-                (movie) => movie.imdbId === review.frontmatter.imdbId
-              );
-
-              return (
-                <li value={listItemValue} className={styles.list_item}>
-                  <article
-                    className={`${styles.review} ${
-                      isFirst ? styles.first : ""
-                    } ${isLast ? styles.last : ""}`}
+            return (
+              <li value={listItemValue} className={styles.list_item}>
+                <article
+                  className={`${styles.review} ${isFirst ? styles.first : ""} ${
+                    isLast ? styles.last : ""
+                  }`}
+                >
+                  <Link
+                    rel="canonical"
+                    className={styles.image_link}
+                    to={`/reviews/${review.frontmatter.slug}/`}
                   >
-                    <Link
-                      rel="canonical"
-                      className={styles.image_link}
-                      to={`/reviews/${review.frontmatter.slug}/`}
-                    >
-                      {review.backdrop && (
-                        <Img
-                          fluid={review.backdrop.childImageSharp.fluid}
-                          alt={`A still from ${movieInfo.title} (${movieInfo.year})`}
-                        />
-                      )}
-                    </Link>
-                    <header className={styles.review_header}>
-                      <h2 className={styles.article_heading}>
-                        <ReviewLink imdbId={review.frontmatter.imdbId}>
-                          {movieInfo.title}{" "}
-                          <span className={styles.review_year}>
-                            {movieInfo.year}
-                          </span>
-                        </ReviewLink>
-                      </h2>
-                      <Grade
-                        grade={review.frontmatter.grade}
-                        className={styles.review_grade}
+                    {movie.backdrop && (
+                      <Img
+                        fluid={movie.backdrop.childImageSharp.fluid}
+                        alt={`A still from ${movie.title} (${movie.year})`}
                       />
-                      <p className={styles.review_credits}>
-                        Directed by{" "}
-                        {toSentenceArray(
-                          movieInfo.directors.map((person) => person.name)
-                        )}
-                        . Starring{" "}
-                        {toSentenceArray(
-                          movieInfo.principalCast.map((person) => person.name)
-                        )}
-                        .
-                      </p>
-                    </header>
-                    <RenderedMarkdown
-                      className={styles.article_body}
-                      text={review.linkedExcerpt}
-                      tag="main"
+                    )}
+                  </Link>
+                  <header className={styles.review_header}>
+                    <h2 className={styles.article_heading}>
+                      <Link
+                        to={`/reviews/${review.frontmatter.slug}/`}
+                        rel="canonical"
+                      >
+                        {movie.title}{" "}
+                        <span className={styles.review_year}>{movie.year}</span>
+                      </Link>
+                    </h2>
+                    <Grade
+                      grade={review.frontmatter.grade}
+                      className={styles.review_grade}
                     />
-                    <footer className={styles.article_footer}>
-                      <div className={styles.date}>
-                        <DateIcon /> {review.frontmatter.date}
-                      </div>
-                      <WatchlistLinks
-                        watchlistMovie={watchlistMovie}
-                        className={styles.watchlist_links}
-                      />
-                    </footer>
-                  </article>
-                </li>
-              );
-            }
-            return null;
+                    <p className={styles.review_credits}>
+                      Directed by{" "}
+                      {toSentenceArray(
+                        movie.directors.map((person) => person.name)
+                      )}
+                      . Starring{" "}
+                      {toSentenceArray(
+                        movie.principalCast.map((person) => person.name)
+                      )}
+                      .
+                    </p>
+                  </header>
+                  <RenderedMarkdown
+                    className={styles.article_body}
+                    text={review.linkedExcerpt}
+                    tag="main"
+                  />
+                  <footer className={styles.article_footer}>
+                    <div className={styles.date}>
+                      <DateIcon /> {review.frontmatter.date}
+                    </div>
+                    <WatchlistLinks
+                      movie={movie}
+                      className={styles.watchlist_links}
+                    />
+                  </footer>
+                </article>
+              </li>
+            );
           })}
         </ol>
         <PaginationWithLinks
@@ -142,10 +127,6 @@ export default function HomeTemplate({
   );
 }
 
-interface ReviewUpdate extends MarkdownReview {
-  postType: "REVIEW";
-}
-
 export interface PageContext {
   limit: number;
   skip: number;
@@ -154,24 +135,18 @@ export interface PageContext {
 }
 
 export interface PageQueryResult {
-  updates: {
-    nodes: ReviewUpdate[];
-  };
-  watchlistMovie: {
-    nodes: WatchlistMovie[];
-  };
-  movieInfo: {
-    nodes: JsonReview[];
+  update: {
+    nodes: MarkdownReview[];
   };
 }
 
 export const pageQuery = graphql`
-  query($skip: Int!, $limit: Int!, $imdbIds: [String]) {
-    updates: allMarkdownRemark(
+  query($skip: Int!, $limit: Int!) {
+    update: allMarkdownRemark(
       sort: { fields: [frontmatter___sequence], order: DESC }
       limit: $limit
       skip: $skip
-      filter: {fileAbsolutePath: {regex: "content/(reviews)|(posts)/.*\\.md$/"}}
+      filter: { postType: { eq: "REVIEW" } }
     ) {
       nodes {
         postType
@@ -183,52 +158,42 @@ export const pageQuery = graphql`
           sequence
           imdbId: imdb_id
         }
-        backdrop {
-          childImageSharp {
-            fluid(toFormat: JPG, maxWidth: 518, quality: 80) {
-              ...GatsbyImageSharpFluid_withWebp
+        reviewedMovie {
+          title
+          year
+          principalCast: principal_cast {
+            name: full_name
+          }
+          directors {
+            name: full_name
+          }
+          backdrop {
+            childImageSharp {
+              fluid(toFormat: JPG, maxWidth: 518, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          watchlist {
+            directors {
+              name
+              slug
+            }
+            writers {
+              name
+              slug
+            }
+            performers {
+              name
+              slug
+            }
+            collections {
+              name
+              slug
             }
           }
         }
         linkedExcerpt
-      }
-    }
-
-    movieInfo: allReviewsJson(filter: { imdb_id: { in: $imdbIds } }) {
-      nodes {
-        imdbId: imdb_id
-        title
-        year
-        principalCast: principal_cast {
-          name: full_name
-        }
-        directors {
-          name: full_name
-        }
-      }
-    }
-
-    watchlistMovie: allWatchlistTitlesJson(
-      filter: { imdb_id: { in: $imdbIds } }
-    ) {
-      nodes {
-        imdbId: imdb_id
-        directors {
-          name
-          slug
-        }
-        writers {
-          name
-          slug
-        }
-        performers {
-          name
-          slug
-        }
-        collections {
-          name
-          slug
-        }
       }
     }
   }

@@ -13,11 +13,9 @@ import {
 } from "../components/Pagination";
 import ProgressGraph from "../components/ProgressGraph";
 import RangeInput from "../components/RangeInput";
-import ReviewLink from "../components/ReviewLink";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
-import MarkdownReview from "../types/MarkdownReview";
-import WatchlistMovie from "../types/WatchlistMovie";
+import { WatchlistMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
@@ -119,21 +117,8 @@ function WatchlistEntityProgress({
   );
 }
 
-function reviewedMovieCount(
-  filteredMovies: WatchlistMovie[],
-  reviews: MarkdownReview[]
-): number {
-  const allIds = filteredMovies.map((m) => m.imdbId);
-  const reviewIds = new Set(reviews.map((r) => r.frontmatter.imdbId));
-
-  const intersection = new Set();
-  allIds.forEach((movieId) => {
-    if (reviewIds.has(movieId)) {
-      intersection.add(movieId);
-    }
-  });
-
-  return intersection.size;
+function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
+  return filteredMovies.filter((movie) => movie.reviewedMovie).length;
 }
 
 const FILTER_TITLE = "FILTER_TITLE";
@@ -312,18 +297,14 @@ function buildDescription(name: string, entityType: string): string {
   }
 }
 
-function ReviewedListItem({
-  review,
-  movie,
-}: {
-  review: MarkdownReview;
-  movie: WatchlistMovie;
-}): JSX.Element {
+function ReviewedListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
+  const review = movie.reviewedMovie;
+
   return (
     <li>
       <Link
         className={styles.list_item_image_link}
-        to={`/reviews/${review.frontmatter.slug}/`}
+        to={`/reviews/${review.slug}/`}
       >
         {review.backdrop && (
           <Img
@@ -333,13 +314,13 @@ function ReviewedListItem({
         )}
       </Link>
       <div className={styles.list_item_title}>
-        <ReviewLink imdbId={review.frontmatter.imdbId}>
+        <Link to={`/reviews/${review.slug}/`}>
           {movie.title}{" "}
           <span className={styles.list_item_title_year}>{movie.year}</span>
-        </ReviewLink>
+        </Link>
       </div>
       <Grade
-        grade={review.frontmatter.grade}
+        grade={review.lastReviewGrade}
         className={styles.list_item_grade}
       />
     </li>
@@ -454,22 +435,15 @@ export default function WatchlistEntityTemplate({
           <div className={styles.percent}>
             <WatchlistEntityProgress
               total={state.filteredMovies.length}
-              reviewed={reviewedMovieCount(
-                state.filteredMovies,
-                data.backdrop.nodes
-              )}
+              reviewed={reviewedMovieCount(state.filteredMovies)}
             />
           </div>
         </div>
         <div className={styles.right} ref={listHeader}>
           <ul className={styles.list}>
             {state.moviesForPage.map((movie) => {
-              const markdownNode = data.backdrop.nodes.find(
-                (item) => item.frontmatter.imdbId === movie.imdbId
-              );
-
-              if (markdownNode) {
-                return <ReviewedListItem review={markdownNode} movie={movie} />;
+              if (movie.reviewedMovie) {
+                return <ReviewedListItem movie={movie} />;
               }
               return (
                 <UnreviewedListItem
@@ -499,10 +473,6 @@ export default function WatchlistEntityTemplate({
 
 interface PageContext {
   avatarPath: string;
-  limit: number;
-  skip: number;
-  numberOfItems: number;
-  currentPage: number;
   entityType: string;
   imdbIds: [string];
   name: string;
@@ -513,9 +483,6 @@ interface PageQueryResult {
     childImageSharp: {
       fluid: FluidObject;
     };
-  };
-  backdrop: {
-    nodes: MarkdownReview[];
   };
   defaultBackdrop: {
     childImageSharp: {
@@ -536,36 +503,16 @@ export const pageQuery = graphql`
         }
       }
     }
-    backdrop: allMarkdownRemark(
-      filter: {
-        postType: { eq: "REVIEW" }
-        frontmatter: { imdb_id: { in: $imdbIds } }
-      }
-    ) {
-      nodes {
-        frontmatter {
-          imdbId: imdb_id
-          grade
-          slug
-        }
-        backdrop {
-          childImageSharp {
-            fluid(toFormat: JPG, jpegQuality: 75) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    }
+
     defaultBackdrop: file(absolutePath: { regex: "/backdrops/default.png$/" }) {
       childImageSharp {
-        fluid(toFormat: JPG, jpegQuality: 75) {
+        fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
 
-    movie: allWatchlistTitlesJson(
+    movie: allWatchlistMoviesJson(
       sort: { fields: [year], order: ASC }
       filter: { imdb_id: { in: $imdbIds } }
     ) {
@@ -573,6 +520,17 @@ export const pageQuery = graphql`
         imdbId: imdb_id
         title
         year
+        reviewedMovie {
+          lastReviewGrade: last_review_grade
+          slug
+          backdrop {
+            childImageSharp {
+              fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
       }
     }
   }

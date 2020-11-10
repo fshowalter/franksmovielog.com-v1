@@ -2,7 +2,7 @@
 
 .container {
   display: grid;
-  grid-template-areas: "image image image" ". title ." ". credits ." ". reviews .";
+  grid-template-areas: "image image image" ". title ." ". credits ." ". reviews ." ". viewings ." ". related .";
   grid-template-columns:
     minmax(var(--step-1), 1fr) minmax(auto, 63ch)
     minmax(var(--step-1), 1fr);
@@ -13,14 +13,19 @@
   position: relative;
   row-gap: 3rem;
 
+  @media (min-width: $breakpoint_tablet) {
+    grid-template-areas: "image" "title" "credits" "reviews" "viewings" "related";
+    grid-template-columns: unset;
+  }
+
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: "image image image" "title title title" "reviews . credits";
+    grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
     grid-template-columns: minmax(auto, 63ch) 1fr 25%;
     max-width: unset;
   }
 }
 
-.reviews {
+.reviews_list {
   display: grid;
   grid-area: reviews;
   grid-template-columns: 1fr;
@@ -49,7 +54,7 @@
   top: 2px;
   width: 14px;
 
-  @media (min-width: 41rem) {
+  @media (min-width: $breakpoint_desktop) {
     left: -24px;
     position: absolute;
   }
@@ -214,4 +219,57 @@
   p {
     display: inline;
   }
+}
+
+.related {
+  display: grid;
+  grid-area: related;
+  row-gap: 3rem;
+}
+
+.related_header {
+  border-bottom: 1px solid var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+.related_heading {
+  color: var(--color-text-secondary);
+}
+
+.related_more {
+  color: var(--color-link);
+}
+
+.related_name {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.older_viewings_heading {
+  border-bottom: solid 1px var(--color-background);
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.25rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.older_viewings_list {
+  display: grid;
+  row-gap: 0.25rem;
+}
+
+.older_viewings {
+  grid-area: viewings;
+}
+
+.viewing_date_icon {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 2px;
+  width: 14px;
 }
