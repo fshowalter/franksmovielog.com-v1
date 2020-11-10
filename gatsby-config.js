@@ -102,15 +102,15 @@ module.exports = {
               ],
             }),
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map((edge) => {
+              return allMarkdownRemark.nodes.map((node) => {
                 return {
-                  ...edge.node.frontmatter,
-                  date: edge.node.frontmatter.date,
-                  url: `${site.siteMetadata.siteUrl}/reviews/${edge.node.frontmatter.slug}/`,
-                  guid: `${site.siteMetadata.siteUrl}/${edge.node.frontmatter.sequence}-${edge.node.frontmatter.slug}`,
+                  title: node.reviewedMovie.title,
+                  date: node.frontmatter.date,
+                  url: `${site.siteMetadata.siteUrl}/reviews/${node.reviewedMovie.slug}/`,
+                  guid: `${site.siteMetadata.siteUrl}/${node.frontmatter.sequence}-${node.reviewedMovie.slug}`,
                   custom_elements: [
                     {
-                      "content:encoded": `<img src="${edge.node.image.childImageSharp.resize.src}" alt="A still from ${edge.node.frontmatter.title}">${edge.node.linkedExcerpt}`,
+                      "content:encoded": `<img src="${node.reviewedMovie.image.childImageSharp.resize.src}" alt="A still from ${node.reviewedMovie.title}">${node.linkedExcerpt}`,
                     },
                   ],
                 };
@@ -121,18 +121,18 @@ module.exports = {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___sequence] },
                   limit: 25,
-                  filter: {fileAbsolutePath: {regex: "content/reviews/.*.md$/"}}
+                  filter: { postType: { eq: "REVIEW" } }
                 ) {
-                  edges {
-                    node {
-                      excerpt
-                      linkedExcerpt
-                      frontmatter {
-                        title
-                        date
-                        slug
-                        sequence
-                      }
+                  nodes {
+                    excerpt
+                    linkedExcerpt
+                    frontmatter {
+                      date
+                      sequence
+                    }
+                    reviewedMovie {
+                      title
+                      slug
                       image: backdrop {
                         childImageSharp {
                           resize(toFormat: JPG, width: 800, quality: 80) {
