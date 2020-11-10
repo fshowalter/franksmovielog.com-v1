@@ -104,7 +104,7 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map((node) => {
                 return {
-                  title: node.reviewedMovie.title,
+                  title: `${node.reviewedMovie.title} (${node.reviewedMovie.year})`,
                   date: node.frontmatter.date,
                   url: `${site.siteMetadata.siteUrl}/reviews/${node.reviewedMovie.slug}/`,
                   guid: `${site.siteMetadata.siteUrl}/${node.frontmatter.sequence}-${node.reviewedMovie.slug}`,
@@ -132,6 +132,7 @@ module.exports = {
                     }
                     reviewedMovie {
                       title
+                      year
                       slug
                       image: backdrop {
                         childImageSharp {
