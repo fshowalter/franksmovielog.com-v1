@@ -49,7 +49,7 @@ function buildStructuredData(movie: ReviewedMovie) {
     },
     reviewRating: {
       "@type": "Rating",
-      ratingValue: gradeMap[movie.lastReviewGrade],
+      ratingValue: gradeMap[movie.lastReviewGrade[0]],
     },
   };
 }
@@ -278,6 +278,7 @@ export const pageQuery = graphql`
       imdbId: imdb_id
       title
       year
+      lastReviewGrade: last_review_grade
       lastReviewGradeValue: last_review_grade_value
       akaTitles: aka_titles
       principalCast: principal_cast {
