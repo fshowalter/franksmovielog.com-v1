@@ -39,7 +39,7 @@ function buildPersonName(type: string, person: Person): JSX.Element {
   return <>{person.fullName}</>;
 }
 
-function builMovieTitle(movie: Movie): JSX.Element {
+function buildlMovieTitle(movie: Movie): JSX.Element {
   if (movie.slug) {
     return (
       <Link className={styles.person_link} to={`/reviews/${movie.slug}`}>
@@ -81,7 +81,7 @@ function MostWatchedTableHeading({
 function MostWatchedMoviesTable({
   collection,
 }: {
-  collection: [Movie];
+  collection: [MovieWithCount];
 }): JSX.Element {
   return (
     <table className={styles.table}>
@@ -89,7 +89,9 @@ function MostWatchedMoviesTable({
         return (
           <tr className={styles.table_row}>
             <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
-            <td className={styles.table_fill_cell}>{builMovieTitle(movie)}</td>
+            <td className={styles.table_fill_cell}>
+              {buildlMovieTitle(movie)}
+            </td>
             <td className={styles.table_count_cell}>{movie.count}</td>
           </tr>
         );
@@ -108,11 +110,20 @@ function MostWatchedPersonTable({
   return (
     <table className={styles.table}>
       {collection.map((person, index) => {
+        console.log(person);
         return (
           <tr className={styles.table_row}>
             <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
             <td className={styles.table_fill_cell}>
               {buildPersonName(watchlistType, person)}
+              <details>
+                <summary className={styles.details_label}>Details</summary>
+                <ul className={styles.details_list}>
+                  {person.details.map((detail) => {
+                    return <li>{buildlMovieTitle(detail)}</li>;
+                  })}
+                </ul>
+              </details>
             </td>
             <td className={styles.table_count_cell}>{person.count}</td>
           </tr>
@@ -250,20 +261,24 @@ export interface Person {
   count: number;
   fullName: string;
   slug: string;
+  details: Movie[];
 }
 
 export interface Movie {
-  count: number;
   title: string;
   year: string;
   slug: string;
+}
+
+export interface MovieWithCount extends Movie {
+  count: number;
 }
 
 export interface PageQueryResult {
   mostWatchedMovies: {
     nodes: [
       {
-        movies: [Movie];
+        movies: [MovieWithCount];
       }
     ];
   };
@@ -319,6 +334,11 @@ export const pageQuery = graphql`
           count
           fullName: full_name
           slug
+          details {
+            title
+            year
+            slug
+          }
         }
       }
     }
@@ -330,6 +350,11 @@ export const pageQuery = graphql`
           count
           fullName: full_name
           slug
+          details {
+            title
+            year
+            slug
+          }
         }
       }
     }
@@ -341,10 +366,15 @@ export const pageQuery = graphql`
           count
           fullName: full_name
           slug
+          details {
+            title
+            year
+            slug
+          }
         }
       }
     }
-    year: allMostWatchedDirectorsJson {
+    year: allMostWatchedMoviesJson {
       nodes {
         year
       }

@@ -418,15 +418,6 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
   const { createTypes } = actions;
   const typeDefs = [
     `
-      type MostWatchedWritersJson implements Node @dontInfer {
-        writers: [Writer]
-        year: String
-      }
-      type Writer {
-        count: Int!
-        full_name: String!
-        slug: String
-      }
       type WatchlistEntry {
         name: String!
         slug: String
