@@ -18,8 +18,47 @@
   to = "/reviews/up-the-river-1930"
   status = 301
 
-
 [[redirects]]
   from = "/wp-login.php"
   to = "/wp-login.php"
+  status = 403
+
+[[redirects]]
+  from = "/apple-touch-icon.png"
+  to = "/apple-touch-icon.png"
+  status = 403
+
+[[redirects]]
+  from = "/apple-touch-icon-120x120.png"
+  to = "/apple-touch-icon-120x120.png"
+  status = 403
+
+[[redirects]]
+  from = "/apple-touch-icon-152x152.png"
+  to = "/apple-touch-icon-152x152.png"
+  status = 403
+
+[[redirects]]
+  from = "/apple-touch-icon-120x120-precomposed.png"
+  to = "/apple-touch-icon-120x120-precomposed.png"
+  status = 403
+
+[[redirects]]
+  from = "/apple-touch-icon-precomposed.png"
+  to = "/apple-touch-icon-precomposed.png"
+  status = 403
+
+[[redirects]]
+  from = "/cast-and-crew/yakima-canutt"
+  to = "/cast-and-crew/yakima-canutt"
+  status = 403
+
+[[redirects]]
+  from = "/cast-and-crew/betta-st-john"
+  to = "/cast-and-crew/betta-st-john"
+  status = 403
+
+[[redirects]]
+  from = "/cast-and-crew/maureen-o-sullivan-i"
+  to = "/cast-and-crew/maureen-o-sullivan-i"
   status = 403
