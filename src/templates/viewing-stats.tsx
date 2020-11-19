@@ -85,6 +85,13 @@ function MostWatchedMoviesTable({
 }): JSX.Element {
   return (
     <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.name_header}>Name</th>
+          <th className={styles.count_header}>Viewing Count</th>
+        </tr>
+      </thead>
       {collection.map((movie, index) => {
         return (
           <tr className={styles.table_row}>
@@ -109,8 +116,14 @@ function MostWatchedPersonTable({
 }): JSX.Element {
   return (
     <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.name_header}>Name</th>
+          <th className={styles.count_header}>Viewing Count</th>
+        </tr>
+      </thead>
       {collection.map((person, index) => {
-        console.log(person);
         return (
           <tr className={styles.table_row}>
             <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>

@@ -19,3 +19,7 @@
   status = 301
 
 
+[[redirects]]
+  from = "/wp-login.php"
+  to = "/wp-login.php"
+  status = 403

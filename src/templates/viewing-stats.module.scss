@@ -200,6 +200,7 @@
 .table_count_cell {
   font-feature-settings: "tnum";
   padding-right: var(--step-1);
+  text-align: right;
   vertical-align: top;
 }
 
@@ -210,4 +211,14 @@
 
 .details_list {
   margin-left: 1rem;
+}
+
+.name_header {
+  text-align: left;
+}
+
+.count_header {
+  padding-right: var(--step-1);
+  text-align: right;
+  white-space: nowrap;
 }
