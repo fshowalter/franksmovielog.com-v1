@@ -7,7 +7,6 @@ import Seo from "../components/Seo";
 import styles from "./gone.module.scss";
 
 export default function GonePage({ data }: PageQueryResult): JSX.Element {
-  console.log({ data });
   const { backdrop, page } = data;
 
   return (
