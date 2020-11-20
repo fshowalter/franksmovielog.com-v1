@@ -99,7 +99,7 @@ describe("Home", () => {
                 <input
                   name="q"
                   type="hidden"
-                  value="site:movielog.frankshowalter.com"
+                  value="site:www.franksmovielog.com"
                 />
                 <button
                   aria-label="Search"
@@ -208,11 +208,11 @@ describe("Home", () => {
               <p
                 className="info pagination"
               >
-                Showing 
+                Showing
                 1
                 -
                 1
-                 of 
+                 of
                 1
                 .
               </p>
@@ -283,7 +283,7 @@ describe("Home", () => {
               className="footer_fair_use"
             >
               All stills used in accordance with the
-               
+
               <a
                 href="http://www.copyright.gov/title17/92chap1.html#107"
               >
