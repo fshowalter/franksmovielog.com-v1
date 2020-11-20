@@ -82,7 +82,7 @@ export default function Layout({
               <input
                 type="hidden"
                 name="q"
-                value="site:movielog.frankshowalter.com"
+                value="site:www.franksmovielog.com"
               />
               <button
                 type="submit"

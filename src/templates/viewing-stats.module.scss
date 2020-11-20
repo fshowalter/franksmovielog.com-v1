@@ -3,22 +3,7 @@
 .container {
   border-top: solid 1px var(--color-background);
   display: grid;
-  padding-top: var(--step-5);
-
-  @media (min-width: 720px) {
-    grid-template-columns: 375px 1fr;
-  }
-
-  @media (min-width: 80rem) {
-    border-top: 0;
-    padding-top: 0;
-  }
-}
-
-.left {
-  align-content: start;
-  display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". list ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
@@ -26,17 +11,11 @@
   grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
       --step-5
     );
+  padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
-  }
-}
-
-.right {
-  padding: 0 var(--step-1);
-
-  @media (min-width: $breakpoint_desktop) {
-    padding-right: 0;
+  @media (min-width: 80rem) {
+    border-top: 0;
+    padding-top: 0;
   }
 }
 
@@ -44,32 +23,9 @@
   grid-area: header;
 }
 
-.pagination_info {
-  color: var(--color-text-secondary);
-  grid-area: pagination_info;
-  justify-self: center;
-}
-
-.pagination {
-  color: var(--color-text-secondary);
-  grid-area: pagination;
-  justify-self: center;
-}
-
-.filters {
-  grid-area: filters;
-}
-
 .list {
-  column-gap: var(--step-1);
-  display: grid;
-  grid-area: list;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  row-gap: 1.5rem;
-}
-
-.list_item_image_link {
   display: block;
+  grid-area: list;
 }
 
 .list_item_title {
@@ -110,7 +66,7 @@
 }
 
 .heading {
-  font-size: var(--step-2);
+  font-size: var(--step-3);
   text-align: center;
 
   @media (min-width: $breakpoint_desktop) {
@@ -122,7 +78,6 @@
   color: var(--color-text-secondary);
   font-family: var(--font-serif);
   font-size: 16px;
-  margin-top: var(--step-1);
   text-align: center;
 
   @media (min-width: $breakpoint_desktop) {
@@ -137,24 +92,10 @@
 .year_list_item {
   display: inline-block;
   margin-right: 2ch;
-
-  @media (min-width: $breakpoint_desktop) {
-    display: block;
-    white-space: nowrap;
-  }
 }
 
 .year_list_item_link {
   color: var(--color-link);
-}
-
-.year_list_item_link,
-.year_list_item_text {
-  @media (min-width: $breakpoint_desktop) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    display: inline-block;
-    line-height: var(--step-5);
-  }
 }
 
 .person_link {
@@ -163,7 +104,17 @@
 
 .table_heading {
   font-size: var(--step-1);
-  padding-left: var(--step-1);
+  line-height: 2.5;
+  text-align: center;
+
+  @media (min-width: $breakpoint_desktop) {
+    text-align: left;
+  }
+}
+
+.table_title_year {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
 }
 
 .table {
@@ -207,17 +158,20 @@
 .details_label {
   color: var(--color-text-secondary);
   font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-align: left;
 }
 
 .details_list {
   margin-left: 1rem;
 }
 
-.name_header {
+.text_header {
   text-align: left;
 }
 
-.count_header {
+.number_header {
   padding-right: var(--step-1);
   text-align: right;
   white-space: nowrap;

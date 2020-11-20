@@ -43,38 +43,27 @@ function buildlMovieTitle(movie: Movie): JSX.Element {
   if (movie.slug) {
     return (
       <Link className={styles.person_link} to={`/reviews/${movie.slug}`}>
-        {movie.title} ({movie.year})
+        {movie.title}{" "}
+        <span className={styles.table_title_year}>{movie.year}</span>
       </Link>
     );
   }
 
   return (
     <>
-      {movie.title} ({movie.year})
+      {movie.title}{" "}
+      <span className={styles.table_title_year}>{movie.year}</span>
     </>
   );
 }
 
-function buildYearSuffix(yearScope: string): JSX.Element | null {
-  if (yearScope === "all") {
-    return null;
-  }
-
-  return <> in {yearScope}</>;
-}
-
 function MostWatchedTableHeading({
-  year,
   mostWatchedType,
 }: {
-  year: string;
   mostWatchedType: string;
 }): JSX.Element {
   return (
-    <h2 className={styles.table_heading}>
-      Most Watched {mostWatchedType}
-      {buildYearSuffix(year)}
-    </h2>
+    <h2 className={styles.table_heading}>Most Watched {mostWatchedType}</h2>
   );
 }
 
@@ -88,8 +77,8 @@ function MostWatchedMoviesTable({
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={styles.name_header}>Name</th>
-          <th className={styles.count_header}>Viewing Count</th>
+          <th className={styles.text_header}>Title</th>
+          <th className={styles.number_header}>Viewing Count</th>
         </tr>
       </thead>
       {collection.map((movie, index) => {
@@ -119,8 +108,8 @@ function MostWatchedPersonTable({
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={styles.name_header}>Name</th>
-          <th className={styles.count_header}>Viewing Count</th>
+          <th className={styles.text_header}>Name</th>
+          <th className={styles.number_header}>Viewing Count</th>
         </tr>
       </thead>
       {collection.map((person, index) => {
@@ -178,84 +167,62 @@ export default function ViewingStatsTemplate({
         image={null}
       />
       <main className={styles.container}>
-        <div className={styles.left}>
-          <header className={styles.page_header}>
-            <h2 className={styles.heading}>
-              {buildHeading(pageContext.yearScope)}
-            </h2>
-            <p className={styles.tagline}>
-              {buildSubHeading(pageContext.yearScope, data.year.nodes.length)}
-              <ul className={styles.year_list}>
-                {pageContext.yearScope !== "all" && (
+        <header className={styles.page_header}>
+          <h2 className={styles.heading}>
+            {buildHeading(pageContext.yearScope)}
+          </h2>
+          <p className={styles.tagline}>
+            {buildSubHeading(pageContext.yearScope, data.year.nodes.length)}
+            <ul className={styles.year_list}>
+              {pageContext.yearScope !== "all" && (
+                <li className={styles.year_list_item}>
+                  <Link
+                    to="/viewings/stats/"
+                    className={styles.year_list_item_link}
+                  >
+                    All-Time
+                  </Link>
+                </li>
+              )}
+              {pageContext.yearScope === "all" && (
+                <li className={styles.year_list_item}>All-Time</li>
+              )}
+              {data.year.nodes.map(({ year }) => {
+                if (year === "all") {
+                  return null;
+                }
+                if (year === pageContext.yearScope) {
+                  return <li className={styles.year_list_item}>{year}</li>;
+                }
+
+                return (
                   <li className={styles.year_list_item}>
                     <Link
-                      to="/viewings/stats/"
+                      to={`/viewings/stats/${year}`}
                       className={styles.year_list_item_link}
                     >
-                      All-Time
+                      {year}
                     </Link>
                   </li>
-                )}
-                {pageContext.yearScope === "all" && (
-                  <li className={styles.year_list_item}>
-                    <span className={styles.year_list_item_text}>All-Time</span>
-                  </li>
-                )}
-                {data.year.nodes.map(({ year }) => {
-                  if (year === "all") {
-                    return null;
-                  }
-                  if (year === pageContext.yearScope) {
-                    return (
-                      <li className={styles.year_list_item}>
-                        <span className={styles.year_list_item_text}>
-                          {year}
-                        </span>
-                      </li>
-                    );
-                  }
-
-                  return (
-                    <li className={styles.year_list_item}>
-                      <Link
-                        to={`/viewings/stats/${year}`}
-                        className={styles.year_list_item_link}
-                      >
-                        {year}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </p>
-          </header>
-        </div>
-        <div className={styles.right}>
-          <MostWatchedTableHeading
-            mostWatchedType="Movies"
-            year={pageContext.yearScope}
-          />
+                );
+              })}
+            </ul>
+          </p>
+        </header>
+        <div className={styles.list}>
+          <MostWatchedTableHeading mostWatchedType="Movies" />
           <MostWatchedMoviesTable collection={mostWatchedMovies} />
-          <MostWatchedTableHeading
-            mostWatchedType="Directors"
-            year={pageContext.yearScope}
-          />
+          <MostWatchedTableHeading mostWatchedType="Directors" />
           <MostWatchedPersonTable
             collection={mostWatchedDirectors}
             watchlistType="directors"
           />
-          <MostWatchedTableHeading
-            mostWatchedType="Performers"
-            year={pageContext.yearScope}
-          />
+          <MostWatchedTableHeading mostWatchedType="Performers" />
           <MostWatchedPersonTable
             collection={mostWatchedPerformers}
             watchlistType="cast"
           />
-          <MostWatchedTableHeading
-            mostWatchedType="Writers"
-            year={pageContext.yearScope}
-          />
+          <MostWatchedTableHeading mostWatchedType="Writers" />
           <MostWatchedPersonTable
             collection={mostWatchedWriters}
             watchlistType="writers"
