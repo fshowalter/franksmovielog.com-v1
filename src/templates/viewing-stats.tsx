@@ -66,14 +66,8 @@ function buildViewingDetail(viewing: Viewing): JSX.Element {
   );
 }
 
-function MostWatchedTableHeading({
-  mostWatchedType,
-}: {
-  mostWatchedType: string;
-}): JSX.Element {
-  return (
-    <h2 className={styles.table_heading}>Most Watched {mostWatchedType}</h2>
-  );
+function TableHeading({ headingText }: { headingText: string }): JSX.Element {
+  return <h2 className={styles.table_heading}>{headingText}</h2>;
 }
 
 function MostWatchedMoviesTable({
@@ -106,6 +100,33 @@ function MostWatchedMoviesTable({
               </details>
             </td>
             <td className={styles.table_count_cell}>{movie.viewingCount}</td>
+          </tr>
+        );
+      })}
+    </table>
+  );
+}
+
+function DecadeTable({
+  collection,
+}: {
+  collection: DecadeGroup[];
+}): JSX.Element {
+  return (
+    <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.text_header}>Decade</th>
+          <th className={styles.number_header}>Viewing Count</th>
+        </tr>
+      </thead>
+      {collection.map((group) => {
+        return (
+          <tr className={styles.table_row}>
+            <td className={styles.table_index_cell}>&nbsp;</td>
+            <td className={styles.table_fill_cell}>{group.decade}</td>
+            <td className={styles.table_count_cell}>{group.viewingCount}</td>
           </tr>
         );
       })}
@@ -231,19 +252,35 @@ export default function ViewingStatsTemplate({
           </p>
         </header>
         <div className={styles.list}>
-          <MostWatchedTableHeading mostWatchedType="Movies" />
+          <div className={styles.stat_pops}>
+            <div className={styles.stat_pop}>
+              <span className={styles.stat_pop_number}>
+                {movies.viewingCount}
+              </span>{" "}
+              <span className={styles.stat_pop_legend}>Viewings</span>
+            </div>
+            <div className={styles.stat_pop}>
+              <span className={styles.stat_pop_number}>
+                {movies.movieCount}
+              </span>{" "}
+              <span className={styles.stat_pop_legend}>Movies</span>
+            </div>
+          </div>
+          <TableHeading headingText="Most Watched Movies" />
           <MostWatchedMoviesTable collection={movies.mostWatched} />
-          <MostWatchedTableHeading mostWatchedType="Directors" />
+          <TableHeading headingText="Viewings By Release Decade" />
+          <DecadeTable collection={movies.decades} />
+          <TableHeading headingText="Most Watched Directors" />
           <MostWatchedPersonTable
             collection={directors.mostWatched}
             watchlistType="directors"
           />
-          <MostWatchedTableHeading mostWatchedType="Performers" />
+          <TableHeading headingText="Most Watched Performers" />
           <MostWatchedPersonTable
             collection={performers.mostWatched}
             watchlistType="cast"
           />
-          <MostWatchedTableHeading mostWatchedType="Writers" />
+          <TableHeading headingText="Most Watched Writers" />
           <MostWatchedPersonTable
             collection={writers.mostWatched}
             watchlistType="writers"
@@ -285,9 +322,17 @@ export interface MovieWithViewings extends Movie {
   viewingCount: number;
 }
 
+export interface DecadeGroup {
+  decade: string;
+  viewingCount: number;
+}
+
 export interface PageQueryResult {
   movies: {
+    movieCount: number;
+    viewingCount: number;
     mostWatched: MovieWithViewings[];
+    decades: DecadeGroup[];
   };
   directors: {
     mostWatched: PersonWithViewings[];
@@ -310,6 +355,12 @@ export interface PageQueryResult {
 export const pageQuery = graphql`
   query($yearScope: String) {
     movies: mostWatchedMoviesJson(year: { eq: $yearScope }) {
+      viewingCount: viewing_count
+      movieCount: movie_count
+      decades {
+        decade
+        viewingCount: viewing_count
+      }
       mostWatched: most_watched {
         title
         year
