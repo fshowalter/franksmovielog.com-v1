@@ -19,6 +19,12 @@
   status = 301
 
 [[redirects]]
+  from = "/reviews/island-of-death-1977"
+  to = "/reviews/island-of-death-1976"
+  status = 301
+
+
+[[redirects]]
   from = "/wp-login.php"
   to = "/gone"
   status = 410
