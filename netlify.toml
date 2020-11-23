@@ -21,27 +21,27 @@
 [[redirects]]
   from = "/wp-login.php"
   to = "/gone"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/apple-touch-icon.png"
   to = "/gone"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/apple-touch-icon-120x120.png"
   to = "/gone"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/apple-touch-icon-152x152.png"
   to = "/apple-touch-icon-152x152.png"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/apple-touch-icon-120x120-precomposed.png"
   to = "/gone"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/apple-touch-icon-precomposed.png"
@@ -51,19 +51,29 @@
 [[redirects]]
   from = "/cast-and-crew/yakima-canutt"
   to = "/gone"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/cast-and-crew/betta-st-john"
   to = "/gone"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/cast-and-crew/maureen-o-sullivan-i"
   to = "/gone"
-  status = 403
+  status = 410
 
 [[redirects]]
   from = "/watchlist/cast/bill-murray"
   to = "/gone"
-  status = 403
+  status = 410
+
+[[redirects]]
+  from = "/cast-and-crew/bill-finger-ii"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/cast-and-crew/martin-kitrosser"
+  to = "/gone"
+  status = 410

@@ -164,7 +164,17 @@
 }
 
 .details_list {
-  margin-left: 1rem;
+  li {
+    padding-left: 1rem;
+  }
+
+  li:nth-child(even) {
+    background-color: #fff;
+  }
+
+  li:nth-child(odd) {
+    background-color: #e9e7e061;
+  }
 }
 
 .text_header {
@@ -175,4 +185,14 @@
   padding-right: var(--step-1);
   text-align: right;
   white-space: nowrap;
+}
+
+.viewing_detail {
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+
+.viewing_for_movie,
+.via {
+  color: var(--color-text-secondary);
 }

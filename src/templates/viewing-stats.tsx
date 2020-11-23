@@ -57,6 +57,15 @@ function buildlMovieTitle(movie: Movie): JSX.Element {
   );
 }
 
+function buildViewingDetail(viewing: Viewing): JSX.Element {
+  return (
+    <span className={styles.viewing_detail}>
+      {viewing.prettyDate} <span className={styles.via}>via</span>{" "}
+      {viewing.venue}.
+    </span>
+  );
+}
+
 function MostWatchedTableHeading({
   mostWatchedType,
 }: {
@@ -70,7 +79,7 @@ function MostWatchedTableHeading({
 function MostWatchedMoviesTable({
   collection,
 }: {
-  collection: [MovieWithCount];
+  collection: MovieWithViewings[];
 }): JSX.Element {
   return (
     <table className={styles.table}>
@@ -87,8 +96,16 @@ function MostWatchedMoviesTable({
             <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
             <td className={styles.table_fill_cell}>
               {buildlMovieTitle(movie)}
+              <details>
+                <summary className={styles.details_label}>Details</summary>
+                <ul className={styles.details_list}>
+                  {movie.viewings.map((detail) => {
+                    return <li>{buildViewingDetail(detail)}</li>;
+                  })}
+                </ul>
+              </details>
             </td>
-            <td className={styles.table_count_cell}>{movie.count}</td>
+            <td className={styles.table_count_cell}>{movie.viewingCount}</td>
           </tr>
         );
       })}
@@ -100,7 +117,7 @@ function MostWatchedPersonTable({
   collection,
   watchlistType,
 }: {
-  collection: [Person];
+  collection: PersonWithViewings[];
   watchlistType: string;
 }): JSX.Element {
   return (
@@ -121,13 +138,20 @@ function MostWatchedPersonTable({
               <details>
                 <summary className={styles.details_label}>Details</summary>
                 <ul className={styles.details_list}>
-                  {person.details.map((detail) => {
-                    return <li>{buildlMovieTitle(detail)}</li>;
+                  {person.viewings.map((detail) => {
+                    return (
+                      <li>
+                        {buildlMovieTitle(detail.movie)}{" "}
+                        <div className={styles.viewing_for_movie}>
+                          {buildViewingDetail(detail)}
+                        </div>
+                      </li>
+                    );
                   })}
                 </ul>
               </details>
             </td>
-            <td className={styles.table_count_cell}>{person.count}</td>
+            <td className={styles.table_count_cell}>{person.viewingCount}</td>
           </tr>
         );
       })}
@@ -145,10 +169,7 @@ export default function ViewingStatsTemplate({
   pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
-  const mostWatchedDirectors = data.mostWatchedDirectors.nodes[0].directors;
-  const mostWatchedPerformers = data.mostWatchedPerformers.nodes[0].performers;
-  const mostWatchedWriters = data.mostWatchedWriters.nodes[0].writers;
-  const mostWatchedMovies = data.mostWatchedMovies.nodes[0].movies;
+  const { performers, directors, writers, movies } = data;
 
   return (
     <Layout>
@@ -211,20 +232,20 @@ export default function ViewingStatsTemplate({
         </header>
         <div className={styles.list}>
           <MostWatchedTableHeading mostWatchedType="Movies" />
-          <MostWatchedMoviesTable collection={mostWatchedMovies} />
+          <MostWatchedMoviesTable collection={movies.mostWatched} />
           <MostWatchedTableHeading mostWatchedType="Directors" />
           <MostWatchedPersonTable
-            collection={mostWatchedDirectors}
+            collection={directors.mostWatched}
             watchlistType="directors"
           />
           <MostWatchedTableHeading mostWatchedType="Performers" />
           <MostWatchedPersonTable
-            collection={mostWatchedPerformers}
+            collection={performers.mostWatched}
             watchlistType="cast"
           />
           <MostWatchedTableHeading mostWatchedType="Writers" />
           <MostWatchedPersonTable
-            collection={mostWatchedWriters}
+            collection={writers.mostWatched}
             watchlistType="writers"
           />
         </div>
@@ -238,10 +259,14 @@ export interface PageContext {
 }
 
 export interface Person {
-  count: number;
   fullName: string;
   slug: string;
-  details: Movie[];
+}
+
+export interface Viewing {
+  prettyDate: string;
+  venue: string;
+  movie: Movie;
 }
 
 export interface Movie {
@@ -250,38 +275,28 @@ export interface Movie {
   slug: string;
 }
 
-export interface MovieWithCount extends Movie {
-  count: number;
+export interface PersonWithViewings extends Person {
+  viewingCount: number;
+  viewings: Viewing[];
+}
+
+export interface MovieWithViewings extends Movie {
+  viewings: Viewing[];
+  viewingCount: number;
 }
 
 export interface PageQueryResult {
-  mostWatchedMovies: {
-    nodes: [
-      {
-        movies: [MovieWithCount];
-      }
-    ];
+  movies: {
+    mostWatched: MovieWithViewings[];
   };
-  mostWatchedDirectors: {
-    nodes: [
-      {
-        directors: [Person];
-      }
-    ];
+  directors: {
+    mostWatched: PersonWithViewings[];
   };
-  mostWatchedPerformers: {
-    nodes: [
-      {
-        performers: [Person];
-      }
-    ];
+  performers: {
+    mostWatched: PersonWithViewings[];
   };
-  mostWatchedWriters: {
-    nodes: [
-      {
-        writers: [Person];
-      }
-    ];
+  writers: {
+    mostWatched: PersonWithViewings[];
   };
   year: {
     nodes: [
@@ -294,27 +309,32 @@ export interface PageQueryResult {
 
 export const pageQuery = graphql`
   query($yearScope: String) {
-    mostWatchedMovies: allMostWatchedMoviesJson(
-      filter: { year: { eq: $yearScope } }
-    ) {
-      nodes {
-        movies {
-          count
-          title
-          year
-          slug
+    movies: mostWatchedMoviesJson(year: { eq: $yearScope }) {
+      mostWatched: most_watched {
+        title
+        year
+        slug
+        viewings {
+          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
         }
+        viewingCount: viewing_count
       }
     }
-    mostWatchedDirectors: allMostWatchedDirectorsJson(
-      filter: { year: { eq: $yearScope } }
-    ) {
-      nodes {
-        directors {
-          count
-          fullName: full_name
-          slug
-          details {
+    directors: mostWatchedDirectorsJson(year: { eq: $yearScope }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          venue
+          movie {
             title
             year
             slug
@@ -322,15 +342,15 @@ export const pageQuery = graphql`
         }
       }
     }
-    mostWatchedPerformers: allMostWatchedPerformersJson(
-      filter: { year: { eq: $yearScope } }
-    ) {
-      nodes {
-        performers {
-          count
-          fullName: full_name
-          slug
-          details {
+    performers: mostWatchedPerformersJson(year: { eq: $yearScope }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          venue
+          movie {
             title
             year
             slug
@@ -338,15 +358,15 @@ export const pageQuery = graphql`
         }
       }
     }
-    mostWatchedWriters: allMostWatchedWritersJson(
-      filter: { year: { eq: $yearScope } }
-    ) {
-      nodes {
-        writers {
-          count
-          fullName: full_name
-          slug
-          details {
+    writers: mostWatchedWritersJson(year: { eq: $yearScope }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          venue
+          movie {
             title
             year
             slug
@@ -354,7 +374,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    year: allMostWatchedMoviesJson {
+    year: allMostWatchedMoviesJson(sort: { fields: year, order: DESC }) {
       nodes {
         year
       }
