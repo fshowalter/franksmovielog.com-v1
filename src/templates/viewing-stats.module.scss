@@ -203,6 +203,10 @@
   grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
   justify-content: center;
   margin: 0 auto;
+
+  @media (min-width: $breakpoint_desktop) {
+    column-gap: var(--step-5);
+  }
 }
 
 .stat_pop {
