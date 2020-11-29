@@ -23,6 +23,10 @@
   to = "/reviews/island-of-death-1976"
   status = 301
 
+[[redirects]]
+  from = "/reviews/curse-of-the-demon-1958"
+  to = "/reviews/curse-of-the-demon-1957"
+  status = 301
 
 [[redirects]]
   from = "/wp-login.php"
@@ -81,5 +85,15 @@
 
 [[redirects]]
   from = "/cast-and-crew/martin-kitrosser"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/images/5-stars-4661cb2a.svg"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/apple-touch-icon-152x152.png"
   to = "/gone"
   status = 410

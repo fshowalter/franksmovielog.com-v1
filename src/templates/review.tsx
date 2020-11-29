@@ -69,7 +69,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
                 to={`/watchlist/collections/${collection.slug}/`}
                 className={styles.related_more}
               >
-                View All &raquo;
+                See All &raquo;
               </Link>
             </header>
           </RelatedMovies>
@@ -87,7 +87,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
                 to={`/watchlist/cast/${performer.slug}/`}
                 className={styles.related_more}
               >
-                View All &raquo;
+                See All &raquo;
               </Link>
             </header>
           </RelatedMovies>
@@ -105,7 +105,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
                 to={`/watchlist/directors/${director.slug}/`}
                 className={styles.related_more}
               >
-                View All &raquo;
+                See All &raquo;
               </Link>
             </header>
           </RelatedMovies>
@@ -123,7 +123,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
                 to={`/watchlist/writers/${writer.slug}/`}
                 className={styles.related_more}
               >
-                View All &raquo;
+                See All &raquo;
               </Link>
             </header>
           </RelatedMovies>
@@ -135,7 +135,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
             More <span className={styles.related_name}>Reviews</span>
           </h3>
           <Link to="/reviews/" className={styles.related_more}>
-            View All &raquo;
+            See All &raquo;
           </Link>
         </header>
       </RelatedMovies>
@@ -148,6 +148,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
  */
 export default function Review({
   data,
+  pageContext,
 }: {
   data: PageQueryResult;
 }): JSX.Element {

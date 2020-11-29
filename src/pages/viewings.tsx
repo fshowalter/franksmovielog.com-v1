@@ -377,7 +377,7 @@ function reducer(state: State, action: ActionTypes) {
         filters = {
           ...state.filters,
           reviewed: (viewing: Viewing) => {
-            return !!viewing.reviewedMovie;
+            return !viewing.reviewedMovie;
           },
         };
       }
