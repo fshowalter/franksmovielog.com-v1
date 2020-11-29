@@ -148,7 +148,6 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
  */
 export default function Review({
   data,
-  pageContext,
 }: {
   data: PageQueryResult;
 }): JSX.Element {
