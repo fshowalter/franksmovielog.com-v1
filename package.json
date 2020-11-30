@@ -91,6 +91,9 @@
     "sync": "cp -av ../movielog-new/export/*.json ./content/data",
     "watch-movielog": "./watch-movielog.js"
   },
+  "resolutions": {
+    "sharp": "0.26.3"
+  },
   "browserslist": [
     "last 2 versions",
     "not dead"
