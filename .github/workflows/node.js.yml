@@ -19,7 +19,7 @@ jobs:
       - id: nvmrc
         uses: browniebroke/read-nvmrc-action@v1
       - name: Use Node.js from .nvmrc
-        uses: actions/setup-node@v1
+        uses: dcodeIO/setup-node-nvm@master
         with:
           node-version: "${{ steps.nvmrc.outputs.node_version }}"
       - name: Install dependencies
