@@ -457,7 +457,7 @@ export default function ViewingsPage({
             tagline={
               <>
                 I&apos;ve watched {state.allViewings.length} movies since 2012.
-                (We have such sights to show you!)
+                (We have such sights to show you)
                 <br />
                 <Link to="/viewings/stats/" className={styles.stats_link}>
                   Stats{" "}

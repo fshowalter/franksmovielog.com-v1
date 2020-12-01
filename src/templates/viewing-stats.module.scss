@@ -129,7 +129,7 @@
 .table_row {
   font-size: 1.125rem;
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background-color: #e9e7e061;
   }
 }
@@ -165,8 +165,15 @@
 }
 
 .details_list {
+  list-style-type: decimal;
+  margin: 0 1rem;
+
   li {
-    padding-left: 1rem;
+    padding: 1px 0;
+  }
+
+  li::marker {
+    color: var(--color-text-secondary);
   }
 
   li:nth-child(even) {
@@ -189,13 +196,18 @@
 }
 
 .viewing_detail {
+  font-feature-settings: "tnum";
   font-size: 1rem;
   letter-spacing: normal;
 }
 
-.viewing_for_movie,
+.viewing_for_movie {
+  display: inline;
+}
+
 .via {
   color: var(--color-text-secondary);
+  display: inline;
 }
 
 .stat_pops {

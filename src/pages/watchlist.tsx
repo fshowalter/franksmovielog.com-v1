@@ -624,7 +624,7 @@ export default function WatchlistPage({
               <>
                 My movie review bucketlist.{" "}
                 {state.allMovies.length.toLocaleString()} titles. No silents or
-                documentaries (A man&apos;s got to know his limitations).
+                documentaries. (A man&apos;s got to know his limitations)
               </>
             }
           />

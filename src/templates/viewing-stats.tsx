@@ -61,7 +61,7 @@ function buildViewingDetail(viewing: Viewing): JSX.Element {
   return (
     <span className={styles.viewing_detail}>
       {viewing.prettyDate} <span className={styles.via}>via</span>{" "}
-      {viewing.venue}.
+      {viewing.venue}
     </span>
   );
 }
@@ -86,21 +86,28 @@ function MostWatchedMoviesTable({
       </thead>
       {collection.map((movie, index) => {
         return (
-          <tr className={styles.table_row}>
-            <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
-            <td className={styles.table_fill_cell}>
-              {buildlMovieTitle(movie)}
-              <details>
-                <summary className={styles.details_label}>Details</summary>
-                <ul className={styles.details_list}>
-                  {movie.viewings.map((detail) => {
-                    return <li>{buildViewingDetail(detail)}</li>;
-                  })}
-                </ul>
-              </details>
-            </td>
-            <td className={styles.table_count_cell}>{movie.viewingCount}</td>
-          </tr>
+          <>
+            <tr className={styles.table_row}>
+              <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
+              <td className={styles.table_fill_cell}>
+                {buildlMovieTitle(movie)}
+              </td>
+              <td className={styles.table_count_cell}>{movie.viewingCount}</td>
+            </tr>
+            <tr>
+              <td className={styles.table_index_cell}>&nbsp;</td>
+              <td colSpan={2}>
+                <details>
+                  <summary className={styles.details_label}>Details</summary>
+                  <ul className={styles.details_list}>
+                    {movie.viewings.map((detail) => {
+                      return <li>{buildViewingDetail(detail)}</li>;
+                    })}
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </>
         );
       })}
     </table>
@@ -152,28 +159,35 @@ function MostWatchedPersonTable({
       </thead>
       {collection.map((person, index) => {
         return (
-          <tr className={styles.table_row}>
-            <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
-            <td className={styles.table_fill_cell}>
-              {buildPersonName(watchlistType, person)}
-              <details>
-                <summary className={styles.details_label}>Details</summary>
-                <ul className={styles.details_list}>
-                  {person.viewings.map((detail) => {
-                    return (
-                      <li>
-                        {buildlMovieTitle(detail.movie)}{" "}
-                        <div className={styles.viewing_for_movie}>
-                          {buildViewingDetail(detail)}
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </details>
-            </td>
-            <td className={styles.table_count_cell}>{person.viewingCount}</td>
-          </tr>
+          <>
+            <tr className={styles.table_row}>
+              <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
+              <td className={styles.table_fill_cell}>
+                {buildPersonName(watchlistType, person)}
+              </td>
+              <td className={styles.table_count_cell}>{person.viewingCount}</td>
+            </tr>
+            <tr>
+              <td className={styles.table_index_cell}>&nbsp;</td>
+              <td colSpan={2}>
+                <details>
+                  <summary className={styles.details_label}>Details</summary>
+                  <ul className={styles.details_list}>
+                    {person.viewings.map((detail) => {
+                      return (
+                        <li>
+                          {buildlMovieTitle(detail.movie)}{" "}
+                          <div className={styles.viewing_for_movie}>
+                            {buildViewingDetail(detail)}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </>
         );
       })}
     </table>
@@ -366,7 +380,7 @@ export const pageQuery = graphql`
         year
         slug
         viewings {
-          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
           venue
           movie {
             title
@@ -383,7 +397,7 @@ export const pageQuery = graphql`
         slug
         viewingCount: viewing_count
         viewings {
-          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
           venue
           movie {
             title
@@ -399,7 +413,7 @@ export const pageQuery = graphql`
         slug
         viewingCount: viewing_count
         viewings {
-          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
           venue
           movie {
             title
@@ -415,7 +429,7 @@ export const pageQuery = graphql`
         slug
         viewingCount: viewing_count
         viewings {
-          prettyDate: date(formatString: "dddd MMM D, YYYY")
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
           venue
           movie {
             title
