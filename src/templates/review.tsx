@@ -305,8 +305,8 @@ export const pageQuery = graphql`
       }
       backdrop {
         childImageSharp {
-          fluid(toFormat: JPG, maxWidth: 934, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
+          fluid(toFormat: WEBP, maxWidth: 934, quality: 80) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -319,8 +319,8 @@ export const pageQuery = graphql`
       }
       poster {
         childImageSharp {
-          fluid(toFormat: JPG, maxWidth: 238, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
+          fluid(toFormat: WEBP, maxWidth: 238, quality: 80) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -330,8 +330,8 @@ export const pageQuery = graphql`
         slug
         backdrop {
           childImageSharp {
-            fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -346,8 +346,8 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
-                  ...GatsbyImageSharpFluid_withWebp
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -362,8 +362,8 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
-                  ...GatsbyImageSharpFluid_withWebp
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -378,8 +378,8 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
-                  ...GatsbyImageSharpFluid_withWebp
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -394,8 +394,8 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
-                  ...GatsbyImageSharpFluid_withWebp
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

@@ -498,16 +498,16 @@ export const pageQuery = graphql`
   query($imdbIds: [String], $avatarPath: String) {
     avatar: file(absolutePath: { eq: $avatarPath }) {
       childImageSharp {
-        fluid(toFormat: JPG, maxWidth: 200, quality: 80) {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(toFormat: WEBP, maxWidth: 200, quality: 80) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
 
     defaultBackdrop: file(absolutePath: { regex: "/backdrops/default.png$/" }) {
       childImageSharp {
-        fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(toFormat: WEBP, maxWidth: 308, jpegQuality: 80) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -525,8 +525,8 @@ export const pageQuery = graphql`
           slug
           backdrop {
             childImageSharp {
-              fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 75) {
-                ...GatsbyImageSharpFluid_withWebp
+              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

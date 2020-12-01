@@ -48,7 +48,7 @@ export const pageQuery = graphql`
   query {
     backdrop: file(absolutePath: { regex: "/backdrops/about.png$/" }) {
       childImageSharp {
-        fluid(toFormat: JPG, jpegQuality: 85) {
+        fluid(toFormat: WEBP, quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }

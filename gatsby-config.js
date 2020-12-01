@@ -136,7 +136,7 @@ module.exports = {
                       slug
                       image: backdrop {
                         childImageSharp {
-                          resize(toFormat: JPG, width: 800, quality: 80) {
+                          resize(toFormat: JPG, width: 800, jpegQuality: 80) {
                             src
                           }
                         }
