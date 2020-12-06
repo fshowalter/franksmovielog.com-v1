@@ -8,12 +8,10 @@ module.exports = async function createReviewPages(
   const query = await graphql(
     `
       {
-        allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
+        reviews: allReviewedMoviesJson {
           nodes {
-            frontmatter {
-              imdb_id
-              slug
-            }
+            imdb_id
+            slug
           }
         }
       }
@@ -28,12 +26,12 @@ module.exports = async function createReviewPages(
   }
 
   // Create review pages
-  query.data.allMarkdownRemark.nodes.forEach((node) => {
+  query.data.reviews.nodes.forEach((node) => {
     createPage({
-      path: `/reviews/${node.frontmatter.slug}/`,
+      path: `/reviews/${node.slug}/`,
       component: path.resolve("./src/templates/review.tsx"),
       context: {
-        imdbId: node.frontmatter.imdb_id,
+        imdbId: node.imdb_id,
       },
     });
   });

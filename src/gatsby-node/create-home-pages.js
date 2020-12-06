@@ -4,16 +4,12 @@ module.exports = async function createHomePages(graphql, reporter, createPage) {
   const query = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___sequence], order: DESC }
-          filter: { postType: { eq: "REVIEW" } }
+        reviews: allReviewedMoviesJson(
+          sort: { fields: [sequence], order: DESC }
         ) {
           nodes {
-            frontmatter {
-              sequence
-              imdb_id
-              slug
-            }
+            imdb_id
+            slug
           }
         }
       }
@@ -27,7 +23,7 @@ module.exports = async function createHomePages(graphql, reporter, createPage) {
     return;
   }
 
-  const updates = query.data.allMarkdownRemark.nodes;
+  const updates = query.data.reviews.nodes;
   const perPage = 10;
   const numPages = Math.ceil(updates.length / perPage);
   Array.from({ length: numPages }).forEach((_, i) => {
