@@ -29,6 +29,12 @@
   status = 301
 
 [[redirects]]
+  from = "/reviews/l-age-d-or-1930"
+  to = "/reviews/lage-dor-1930"
+  status = 301
+
+
+[[redirects]]
   from = "/wp-login.php"
   to = "/gone"
   status = 410
