@@ -9,6 +9,11 @@
   status = 301
 
 [[redirects]]
+  from = "/cast-and-crew/john-wayne-i"
+  to = "/watchlist/cast/john-wayne"
+  status = 301
+
+[[redirects]]
   from = "/browse/reviews/dont-torture-a-duckling-1972"
   to = "/reviews/dont-torture-a-duckling-1972"
   status = 301
