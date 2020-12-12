@@ -13,11 +13,27 @@ function reducePerson(key, accumulator, currentValue) {
   });
 }
 
+async function buildRoots(graphql, reporter, createPage) {
+  const component = path.resolve("./src/templates/watchlist-type.tsx");
+
+  ["director", "performer", "writer", "collection"].forEach((entityType) => {
+    createPage({
+      path: `/watchlist/${entityType}s/`,
+      component,
+      context: {
+        entityType,
+      },
+    });
+  });
+}
+
 module.exports = async function createWatchlistPages(
   graphql,
   reporter,
   createPage
 ) {
+  buildRoots(graphql, reporter, createPage);
+
   const watchlistMoviesQuery = await graphql(
     `
       {
@@ -150,7 +166,7 @@ module.exports = async function createWatchlistPages(
     const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
 
     createPage({
-      path: `/watchlist/cast/${slug}/`,
+      path: `/watchlist/performers/${slug}/`,
       component,
       context: {
         avatarPath,

@@ -414,6 +414,24 @@ const reviewedMoviesJson = {
   },
 };
 
+const watchlistEntitiesJson = {
+  name: `WatchlistEntitiesJson`,
+  interfaces: ["Node"],
+  fields: {
+    avatar: {
+      type: "File",
+      resolve: (source, args, context) => {
+        if (!source) {
+          return null;
+        }
+
+        const assetPath = assetPathForSlug(source.slug, "avatar");
+        return findFileNodeByAbsolutePath(context.nodeModel, assetPath);
+      },
+    },
+  },
+};
+
 module.exports = function createSchemaCustomization({ actions, schema }) {
   const { createTypes } = actions;
   const typeDefs = [
@@ -434,6 +452,7 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
     schema.buildObjectType(watchlistMoviesJson),
     schema.buildObjectType(markdownRemark),
     schema.buildObjectType(reviewedMoviesJson),
+    schema.buildObjectType(watchlistEntitiesJson),
   ];
 
   createTypes(typeDefs);

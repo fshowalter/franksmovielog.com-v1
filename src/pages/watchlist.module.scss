@@ -18,17 +18,17 @@
 .left {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
     );
-  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
-      --step-5
-    );
+  grid-template-rows:
+    auto var(--step-1) auto var(--step-5) auto var(--step-1) auto var(--step-5)
+    auto var(--step-5);
 
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
+    grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
   }
 }
 
@@ -99,4 +99,47 @@
   grid-area: percent;
   margin: 0 auto;
   width: 150px;
+}
+
+.percent_totals {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.type_links {
+  align-items: end;
+  display: grid;
+  grid-area: type_links;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.type_link {
+  background-color: darken(#fff, 2);
+  border: solid 1px darken(#e9e7e0, 10);
+  border-radius: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-right: 0.75rem;
+  padding: 0.5rem;
+  white-space: nowrap;
+
+  @media (min-width: $breakpoint_desktop) {
+    border-color: var(--color-background);
+  }
+
+  &:hover {
+    border-color: var(--color-link);
+  }
+}
+
+.type_icon {
+  color: var(--color-text-secondary);
+  height: 20px;
+  margin-right: 1ch;
+  width: 20px;
+}
+
+.type_link:hover > .type_icon {
+  fill: var(--color-link);
 }

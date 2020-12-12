@@ -111,9 +111,12 @@ function WatchlistEntityProgress({
   reviewed: number;
 }): JSX.Element {
   return (
-    <ProgressGraph total={total} complete={reviewed}>
-      {reviewed}/{total} Reviewed
-    </ProgressGraph>
+    <>
+      <ProgressGraph total={total} complete={reviewed} />
+      <div className={styles.percent_totals}>
+        {reviewed}/{total} Reviewed
+      </div>
+    </>
   );
 }
 
