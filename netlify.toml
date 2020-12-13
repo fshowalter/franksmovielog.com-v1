@@ -1,16 +1,21 @@
 [[redirects]]
+  from = "/watchlist/cast/*"
+  to = "/watchlist/performers/:splat"
+  status = 301
+
+[[redirects]]
   from = "/cast-and-crew/christopher-lee-i"
-  to = "/watchlist/cast/christopher-lee"
+  to = "/watchlist/performers/christopher-lee"
   status = 301
 
 [[redirects]]
   from = "/cast-and-crew/humphrey-bogart"
-  to = "/watchlist/cast/humphrey-bogart"
+  to = "/watchlist/performers/humphrey-bogart"
   status = 301
 
 [[redirects]]
   from = "/cast-and-crew/john-wayne-i"
-  to = "/watchlist/cast/john-wayne"
+  to = "/watchlist/performers/john-wayne"
   status = 301
 
 [[redirects]]

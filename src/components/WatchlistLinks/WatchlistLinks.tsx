@@ -63,7 +63,7 @@ function WatchlistLinks({
         })}
         {watchlist.performers.map((performer) => {
           return (
-            <WatchlistItem to={`/watchlist/cast/${performer.slug}/`}>
+            <WatchlistItem to={`/watchlist/performers/${performer.slug}/`}>
               {performer.name}
             </WatchlistItem>
           );

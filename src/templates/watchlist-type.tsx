@@ -81,9 +81,9 @@ function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
 function buildDescription(entityType: string): string {
   switch (entityType) {
     case "director":
-      return `"Made it, Ma! Top of the world!"`;
+      return `"Drama is life with the dull bits cut out."`;
     case "performer":
-      return `"All right, Mr. DeMille, I'm ready for my close-up."`;
+      return `"Talk low, talk slow, and don't talk too much."`;
     case "writer":
       return `"It's not a lie. It's a gift for fiction."`;
     case "collection":
