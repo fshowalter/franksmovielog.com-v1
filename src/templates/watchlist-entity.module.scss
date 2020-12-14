@@ -18,17 +18,15 @@
 .left {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". percent ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
     );
-  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
-      --step-5
-    );
+  grid-template-rows: auto var(--step-5) auto var(--step-5) auto var(--step-5);
 
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "percent percent ." ". . .";
   }
 }
 
@@ -46,18 +44,6 @@
 
 .page_header {
   grid-area: header;
-}
-
-.pagination_info {
-  color: var(--color-text-secondary);
-  grid-area: pagination_info;
-  justify-self: center;
-}
-
-.pagination {
-  color: var(--color-text-secondary);
-  grid-area: pagination;
-  justify-self: center;
 }
 
 .filters {

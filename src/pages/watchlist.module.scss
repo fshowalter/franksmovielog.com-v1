@@ -143,3 +143,9 @@
 .type_link:hover > .type_icon {
   fill: var(--color-link);
 }
+
+.quote {
+  color: var(--color-text-tertiary);
+  display: block;
+  margin-top: 0.75rem;
+}

@@ -7,17 +7,12 @@ import FilterPageHeader from "../components/FilterPageHeader";
 import Grade from "../components/Grade";
 import Label from "../components/Label";
 import Layout from "../components/Layout";
-import {
-  PaginationInfo,
-  PaginationWithButtons,
-} from "../components/Pagination";
 import ProgressGraph from "../components/ProgressGraph";
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
 import { WatchlistMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
-import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
 import styles from "./watchlist-entity.module.scss";
 
@@ -65,14 +60,8 @@ type State = {
   allMovies: WatchlistMovie[];
   /** Reviews matching the current filters. */
   filteredMovies: WatchlistMovie[];
-  /** Reviews matching the current filters for the current page. */
-  moviesForPage: WatchlistMovie[];
   /** The active filters. */
   filters: Record<string, (title: WatchlistMovie) => boolean>;
-  /** The current page. */
-  currentPage: number;
-  /** The number of reviews per page. */
-  perPage: number;
   /** The minimum year for the release date filter. */
   minYear: number;
   /** The maximum year for the release date filter. */
@@ -83,20 +72,11 @@ type State = {
 
 function initState({ movies }: { movies: WatchlistMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYears(movies);
-  const currentPage = 1;
-  const perPage = 24;
 
   return {
     allMovies: movies,
     filteredMovies: movies,
-    moviesForPage: slicePage<WatchlistMovie>({
-      collection: movies,
-      pageToSlice: currentPage,
-      perPage,
-    }),
     filters: {},
-    currentPage,
-    perPage,
     minYear,
     maxYear,
     sortValue: "release-date-asc",
@@ -127,7 +107,6 @@ function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
 const FILTER_TITLE = "FILTER_TITLE";
 const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
 const SORT = "SORT";
-const CHANGE_PAGE = "CHANGE_PAGE";
 
 /** Action to filter by title. */
 interface FilterTitleAction {
@@ -149,17 +128,7 @@ interface SortAction {
   value: string;
 }
 
-interface ChangePageAction {
-  type: typeof CHANGE_PAGE;
-  /** The page to change to. */
-  value: number;
-}
-
-type ActionTypes =
-  | FilterTitleAction
-  | FilterReleaseYearAction
-  | SortAction
-  | ChangePageAction;
+type ActionTypes = FilterTitleAction | FilterReleaseYearAction | SortAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -187,12 +156,6 @@ function reducer(state: State, action: ActionTypes): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     case FILTER_RELEASE_YEAR: {
@@ -217,12 +180,6 @@ function reducer(state: State, action: ActionTypes): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     case SORT: {
@@ -231,22 +188,6 @@ function reducer(state: State, action: ActionTypes): State {
         ...state,
         sortValue: action.value,
         filteredMovies,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: state.currentPage,
-          perPage: state.perPage,
-        }),
-      };
-    }
-    case CHANGE_PAGE: {
-      return {
-        ...state,
-        currentPage: action.value,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: state.filteredMovies,
-          pageToSlice: action.value,
-          perPage: state.perPage,
-        }),
       };
     }
     default:
@@ -429,12 +370,6 @@ export default function WatchlistEntityTemplate({
               </SelectInput>
             </Label>
           </Fieldset>
-          <PaginationInfo
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredMovies.length}
-            className={styles.pagination_info}
-          />
           <div className={styles.percent}>
             <WatchlistEntityProgress
               total={state.filteredMovies.length}
@@ -444,7 +379,7 @@ export default function WatchlistEntityTemplate({
         </div>
         <div className={styles.right} ref={listHeader}>
           <ul className={styles.list}>
-            {state.moviesForPage.map((movie) => {
+            {state.filteredMovies.map((movie) => {
               if (movie.reviewedMovie) {
                 return <ReviewedListItem movie={movie} />;
               }
@@ -456,18 +391,6 @@ export default function WatchlistEntityTemplate({
               );
             })}
           </ul>
-          <PaginationWithButtons
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredMovies.length}
-            onClick={(newPage) => {
-              dispatch({ type: CHANGE_PAGE, value: newPage });
-              if (listHeader && listHeader.current) {
-                listHeader.current.scrollIntoView();
-              }
-            }}
-            className={styles.pagination}
-          />
         </div>
       </main>
     </Layout>
