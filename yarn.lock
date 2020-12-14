@@ -7713,10 +7713,10 @@ gatsby-plugin-page-creator@^2.5.0:
     graphql "^14.7.0"
     lodash "^4.17.20"
 
-gatsby-plugin-preact@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-4.2.0.tgz#bc2f3643f80d59b331a5158fa35d1b2b39714f05"
-  integrity sha512-D9LlJEv26gnvI5THsjyHhw8VFV+ebkvwEoI8NNOqzocO9W3t8f2f2dMZnqzUuB9pRCE4F1b94kcaWqzZgeVdaQ==
+gatsby-plugin-preact@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-4.3.0.tgz#8c02467bde91a158f59522744d0bcf7a12d57f3b"
+  integrity sha512-RJLgm23E5uEmhTrq55gP+ZuUbe1m97Em7G6OEZOAP/EI/1t73AsXFKtZ03qHxRWsfLDY1Jk3/OTz8gnJlFKZnA==
   dependencies:
     "@prefresh/babel-plugin" "^0.2.2"
     "@prefresh/webpack" "^1.1.0"
