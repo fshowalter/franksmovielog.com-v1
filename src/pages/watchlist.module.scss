@@ -63,11 +63,14 @@
 
 .list_item {
   border-bottom: solid 1px var(--color-background);
-  display: block;
+  display: grid;
+  grid-template-areas: "title . checkmark ." "slug . checkmark .";
+  grid-template-columns: 1fr var(--step-1) 3rem 1rem;
 }
 
 .list_item_title {
   font-size: 1.125rem;
+  grid-area: title;
   padding: 1.5rem var(--step-1) 0.25rem 0;
 }
 
@@ -89,7 +92,16 @@
 .list_item_slug {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
+  grid-area: slug;
   padding: 0 var(--step-1) 1.5rem 0;
+}
+
+.list_item_checkmark {
+  align-self: center;
+  color: #9beab0;
+  grid-area: checkmark;
+  height: 3rem;
+  width: 3rem;
 }
 
 .percent {

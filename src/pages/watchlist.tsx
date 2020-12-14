@@ -86,6 +86,33 @@ function WatchlistMovieTitle({
   return <div className={styles.list_item_title}>{title}</div>;
 }
 
+function WatchlistMovieCheckMark({
+  movie,
+}: {
+  movie: WatchlistMovie;
+}): JSX.Element {
+  if (movie.reviewedMovie) {
+    return (
+      <svg
+        className={styles.list_item_checkmark}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1}
+          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    );
+  }
+
+  return <div className={styles.list_item_checkmark} />;
+}
+
 /**
  * Formats a given collection of watchlist person names to a sentence with
  * commas and conjunction if necessary.
@@ -833,6 +860,7 @@ export default function WatchlistPage({
                 >
                   <WatchlistMovieTitle movie={movie} />
                   <WatchlistMovieSlug movie={movie} />
+                  <WatchlistMovieCheckMark movie={movie} />
                 </li>
               );
             })}
