@@ -1,0 +1,410 @@
+import { graphql, Link } from "gatsby";
+import React from "react";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import styles from "./viewing-stats-all.module.scss";
+
+function buildSubHeading(numberOfYears: number): string {
+  return `${(numberOfYears - 2).toString()} Years in Review.`;
+}
+
+function buildPersonName(type: string, person: Person): JSX.Element {
+  if (person.slug) {
+    return (
+      <Link
+        className={styles.person_link}
+        to={`/watchlist/${type}/${person.slug}`}
+      >
+        {person.fullName}
+      </Link>
+    );
+  }
+
+  return <>{person.fullName}</>;
+}
+
+function buildlMovieTitle(movie: Movie): JSX.Element {
+  if (movie.slug) {
+    return (
+      <Link className={styles.person_link} to={`/reviews/${movie.slug}`}>
+        {movie.title}{" "}
+        <span className={styles.table_title_year}>{movie.year}</span>
+      </Link>
+    );
+  }
+
+  return (
+    <>
+      {movie.title}{" "}
+      <span className={styles.table_title_year}>{movie.year}</span>
+    </>
+  );
+}
+
+function buildViewingDetail(viewing: Viewing): JSX.Element {
+  return (
+    <span className={styles.viewing_detail}>
+      {viewing.prettyDate} <span className={styles.via}>via</span>{" "}
+      {viewing.venue}
+    </span>
+  );
+}
+
+function TableHeading({ headingText }: { headingText: string }): JSX.Element {
+  return <h2 className={styles.table_heading}>{headingText}</h2>;
+}
+
+function MostWatchedMoviesTable({
+  collection,
+}: {
+  collection: MovieWithViewings[];
+}): JSX.Element {
+  return (
+    <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.text_header}>Title</th>
+          <th className={styles.number_header}>Viewing Count</th>
+        </tr>
+      </thead>
+      {collection.map((movie, index) => {
+        return (
+          <>
+            <tr className={styles.table_row}>
+              <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
+              <td className={styles.table_fill_cell}>
+                {buildlMovieTitle(movie)}
+              </td>
+              <td className={styles.table_count_cell}>{movie.viewingCount}</td>
+            </tr>
+            <tr>
+              <td className={styles.table_index_cell}>&nbsp;</td>
+              <td colSpan={2}>
+                <details>
+                  <summary className={styles.details_label}>Details</summary>
+                  <ul className={styles.details_list}>
+                    {movie.viewings.map((detail) => {
+                      return <li>{buildViewingDetail(detail)}</li>;
+                    })}
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </>
+        );
+      })}
+    </table>
+  );
+}
+
+function DecadeTable({
+  collection,
+}: {
+  collection: DecadeGroup[];
+}): JSX.Element {
+  return (
+    <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.text_header}>Decade</th>
+          <th className={styles.number_header}>Viewing Count</th>
+        </tr>
+      </thead>
+      {collection.map((group) => {
+        return (
+          <tr className={styles.table_row}>
+            <td className={styles.table_index_cell}>&nbsp;</td>
+            <td className={styles.table_fill_cell}>{group.decade}</td>
+            <td className={styles.table_count_cell}>{group.viewingCount}</td>
+          </tr>
+        );
+      })}
+    </table>
+  );
+}
+
+function MostWatchedPersonTable({
+  collection,
+  watchlistType,
+}: {
+  collection: PersonWithViewings[];
+  watchlistType: string;
+}): JSX.Element {
+  return (
+    <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.text_header}>Name</th>
+          <th className={styles.number_header}>Viewing Count</th>
+        </tr>
+      </thead>
+      {collection.map((person, index) => {
+        return (
+          <>
+            <tr className={styles.table_row}>
+              <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
+              <td className={styles.table_fill_cell}>
+                {buildPersonName(watchlistType, person)}
+              </td>
+              <td className={styles.table_count_cell}>{person.viewingCount}</td>
+            </tr>
+            <tr>
+              <td className={styles.table_index_cell}>&nbsp;</td>
+              <td colSpan={2}>
+                <details>
+                  <summary className={styles.details_label}>Details</summary>
+                  <ul className={styles.details_list}>
+                    {person.viewings.map((detail) => {
+                      return (
+                        <li>
+                          {buildlMovieTitle(detail.movie)}{" "}
+                          <div className={styles.viewing_for_movie}>
+                            {buildViewingDetail(detail)}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </>
+        );
+      })}
+    </table>
+  );
+}
+
+/**
+ * Renders the viewing stats template.
+ */
+export default function ViewingStatsTemplate({
+  pageContext,
+  data,
+}: {
+  pageContext: PageContext;
+  data: PageQueryResult;
+}): JSX.Element {
+  const { performers, directors, writers, movies } = data;
+
+  return (
+    <Layout>
+      <Seo
+        pageTitle="All-Time Viewing Stats"
+        description={`My most watched titles, performers, directors and writers in ${pageContext.yearScope}`}
+        article={false}
+        image={null}
+      />
+      <main className={styles.container}>
+        <header className={styles.page_header}>
+          <h2 className={styles.heading}>All-Time Viewing Stats</h2>
+          <p className={styles.tagline}>
+            {buildSubHeading(data.year.nodes.length)}
+            <ul className={styles.year_list}>
+              <li className={styles.year_list_item}>All-Time</li>
+              {data.year.nodes.map(({ year }) => {
+                if (year === "all") {
+                  return null;
+                }
+                if (year === pageContext.yearScope) {
+                  return <li className={styles.year_list_item}>{year}</li>;
+                }
+
+                return (
+                  <li className={styles.year_list_item}>
+                    <Link
+                      to={`/viewings/stats/${year}`}
+                      className={styles.year_list_item_link}
+                    >
+                      {year}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </p>
+        </header>
+        <div className={styles.list}>
+          <div className={styles.stat_pops}>
+            <div className={styles.stat_pop}>
+              <span className={styles.stat_pop_number}>
+                {movies.viewingCount}
+              </span>{" "}
+              <span className={styles.stat_pop_legend}>Viewings</span>
+            </div>
+            <div className={styles.stat_pop}>
+              <span className={styles.stat_pop_number}>
+                {movies.movieCount}
+              </span>{" "}
+              <span className={styles.stat_pop_legend}>Movies</span>
+            </div>
+          </div>
+          <TableHeading headingText="Most Watched Movies" />
+          <MostWatchedMoviesTable collection={movies.mostWatched} />
+          <TableHeading headingText="Viewings By Release Decade" />
+          <DecadeTable collection={movies.decades} />
+          <TableHeading headingText="Most Watched Directors" />
+          <MostWatchedPersonTable
+            collection={directors.mostWatched}
+            watchlistType="directors"
+          />
+          <TableHeading headingText="Most Watched Performers" />
+          <MostWatchedPersonTable
+            collection={performers.mostWatched}
+            watchlistType="cast"
+          />
+          <TableHeading headingText="Most Watched Writers" />
+          <MostWatchedPersonTable
+            collection={writers.mostWatched}
+            watchlistType="writers"
+          />
+        </div>
+      </main>
+    </Layout>
+  );
+}
+
+export interface PageContext {
+  yearScope: string;
+}
+
+export interface Person {
+  fullName: string;
+  slug: string;
+}
+
+export interface Viewing {
+  prettyDate: string;
+  venue: string;
+  movie: Movie;
+}
+
+export interface Movie {
+  title: string;
+  year: string;
+  slug: string;
+}
+
+export interface PersonWithViewings extends Person {
+  viewingCount: number;
+  viewings: Viewing[];
+}
+
+export interface MovieWithViewings extends Movie {
+  viewings: Viewing[];
+  viewingCount: number;
+}
+
+export interface DecadeGroup {
+  decade: string;
+  viewingCount: number;
+}
+
+export interface PageQueryResult {
+  movies: {
+    movieCount: number;
+    viewingCount: number;
+    mostWatched: MovieWithViewings[];
+    decades: DecadeGroup[];
+  };
+  directors: {
+    mostWatched: PersonWithViewings[];
+  };
+  performers: {
+    mostWatched: PersonWithViewings[];
+  };
+  writers: {
+    mostWatched: PersonWithViewings[];
+  };
+  year: {
+    nodes: [
+      {
+        year: string;
+      }
+    ];
+  };
+}
+
+export const pageQuery = graphql`
+  query {
+    movies: mostWatchedMoviesJson(year: { eq: "all" }) {
+      viewingCount: viewing_count
+      movieCount: movie_count
+      decades {
+        decade
+        viewingCount: viewing_count
+      }
+      mostWatched: most_watched {
+        title
+        year
+        slug
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+        viewingCount: viewing_count
+      }
+    }
+    directors: mostWatchedDirectorsJson(year: { eq: "all" }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+      }
+    }
+    performers: mostWatchedPerformersJson(year: { eq: "all" }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+      }
+    }
+    writers: mostWatchedWritersJson(year: { eq: "all" }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+      }
+    }
+    year: allMostWatchedMoviesJson(sort: { fields: year, order: DESC }) {
+      nodes {
+        year
+      }
+    }
+  }
+`;

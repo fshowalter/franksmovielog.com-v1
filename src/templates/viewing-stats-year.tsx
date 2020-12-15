@@ -2,7 +2,7 @@ import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
-import styles from "./viewing-stats.module.scss";
+import styles from "./viewing-stats-year.module.scss";
 
 function buildHeading(yearScope: string): string {
   if (yearScope === "all") {
