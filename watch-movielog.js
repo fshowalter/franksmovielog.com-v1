@@ -11,7 +11,7 @@ chokidar
       console.log(event, sourcePath); // eslint-disable-line no-console
 
       let dest;
-      const name = path.basename(sourcePath);
+      const name = sourcePath.replace(/..\/movielog\/(export|reviews)\//, "");
 
       if (/\/reviews\//.test(sourcePath)) {
         dest = `${__dirname}/content/reviews/${name}`;
@@ -19,6 +19,12 @@ chokidar
 
       if (/\/export\//.test(sourcePath)) {
         dest = `${__dirname}/content/data/${name}`;
+
+        const destPath = path.parse(dest).dir;
+
+        if (!fs.existsSync(destPath)) {
+          fs.mkdirSync(destPath);
+        }
       }
 
       if (dest) {

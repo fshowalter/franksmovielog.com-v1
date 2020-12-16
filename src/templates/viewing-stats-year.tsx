@@ -367,8 +367,8 @@ export interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query($yearScope: String) {
-    movies: mostWatchedMoviesJson(year: { eq: $yearScope }) {
+  query($yearScope: Date) {
+    movies: mostWatchedMoviesByYearJson(year: { eq: $yearScope }) {
       viewingCount: viewing_count
       movieCount: movie_count
       decades {
@@ -391,7 +391,7 @@ export const pageQuery = graphql`
         viewingCount: viewing_count
       }
     }
-    directors: mostWatchedDirectorsJson(year: { eq: $yearScope }) {
+    directors: mostWatchedDirectorsByYearJson(year: { eq: $yearScope }) {
       mostWatched: most_watched {
         fullName: full_name
         slug
@@ -407,7 +407,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    performers: mostWatchedPerformersJson(year: { eq: $yearScope }) {
+    performers: mostWatchedPerformersByYearJson(year: { eq: $yearScope }) {
       mostWatched: most_watched {
         fullName: full_name
         slug
@@ -423,7 +423,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    writers: mostWatchedWritersJson(year: { eq: $yearScope }) {
+    writers: mostWatchedWritersByYearJson(year: { eq: $yearScope }) {
       mostWatched: most_watched {
         fullName: full_name
         slug
@@ -439,7 +439,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    year: allMostWatchedMoviesJson(sort: { fields: year, order: DESC }) {
+    year: allMostWatchedMoviesByYearJson(sort: { fields: year, order: DESC }) {
       nodes {
         year
       }

@@ -447,6 +447,42 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
         writers: [WatchlistEntry]
         collections: [WatchlistEntry]
       }
+      type MostWatchedDirectorsJson implements Node {
+        most_watched: [MostWatchedDirectorsJsonMost_watched]
+      }
+      type MostWatchedPerformersJson implements Node {
+        most_watched: [MostWatchedPerformersJsonMost_watched]
+      }
+      type MostWatchedWritersJson implements Node {
+        most_watched: [MostWatchedWritersJsonMost_watched]
+      }
+      type MostWatchedDirectorsByYearJson implements Node {
+        most_watched: [MostWatchedDirectorsByYearJsonMost_watched]
+      }
+      type MostWatchedPerformersByYearJson implements Node {
+        most_watched: [MostWatchedPerformersByYearJsonMost_watched]
+      }
+      type MostWatchedWritersByYearJson implements Node {
+        most_watched: [MostWatchedWritersByYearJsonMost_watched]
+      }
+      type MostWatchedDirectorsJsonMost_watched {
+        slug: String
+      }
+      type MostWatchedPerformersJsonMost_watched {
+        slug: String
+      }
+      type MostWatchedWritersJsonMost_watched {
+        slug: String
+      }
+      type MostWatchedDirectorsByYearJsonMost_watched {
+        slug: String
+      }
+      type MostWatchedPerformersByYearJsonMost_watched {
+        slug: String
+      }
+      type MostWatchedWritersByYearJsonMost_watched {
+        slug: String
+      }
     `,
     schema.buildObjectType(viewingsJson),
     schema.buildObjectType(watchlistMoviesJson),
