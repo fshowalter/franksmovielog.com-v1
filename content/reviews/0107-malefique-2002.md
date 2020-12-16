@@ -3,7 +3,7 @@ sequence: 107
 date: 2020-12-15
 imdb_id: tt0309832
 title: Maléfique (2002)
-grade: B-
+grade: C+
 slug: malefique-2002
 venue: DVD
 venue_notes:
