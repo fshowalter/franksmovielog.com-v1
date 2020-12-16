@@ -48,6 +48,12 @@
   grid-area: header;
 }
 
+.page_header_sub {
+  color: var(--color-text-secondary);
+  display: block;
+  font-size: 1rem;
+}
+
 .pagination_info {
   color: var(--color-text-secondary);
   grid-area: pagination_info;

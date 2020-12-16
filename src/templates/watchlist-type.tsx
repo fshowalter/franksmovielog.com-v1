@@ -254,7 +254,12 @@ export default function WatchlistTypeTemplate({
         <div className={styles.left}>
           <FilterPageHeader
             className={styles.page_header}
-            heading={`Watchlist ${pageTitle}s`}
+            heading={
+              <>
+                <span className={styles.page_header_sub}>Watchlist</span>{" "}
+                {pageTitle}s
+              </>
+            }
             tagline={buildDescription(pageContext.entityType)}
           />
           <Fieldset className={styles.filters}>
