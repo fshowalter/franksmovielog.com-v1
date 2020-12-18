@@ -29,6 +29,11 @@
   status = 301
 
 [[redirects]]
+  from = "/browse/reviews/kill-a-dragon-1967"
+  to = "/reviews/kill-a-dragon-1967"
+  status = 301
+
+[[redirects]]
   from = "/reviews/island-of-death-1977"
   to = "/reviews/island-of-death-1976"
   status = 301
