@@ -72,6 +72,8 @@ export type ReviewedMovie = Movie & {
   lastReviewGradeValue: number;
   sequence: number;
   slug: string;
+  countries: string[];
+  runtimeMinutes: number;
   backdrop: {
     childImageSharp: {
       fluid: FluidObject;

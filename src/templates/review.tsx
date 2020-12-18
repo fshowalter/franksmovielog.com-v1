@@ -175,6 +175,23 @@ export default function Review({
             {movie.title}{" "}
             <span className={styles.title_year}>{movie.year}</span>
           </h1>
+          <div className={styles.header_meta}>
+            {movie.runtimeMinutes} min.{" "}
+            <span className={styles.separator}>|</span>{" "}
+            {movie.countries.reduce<JSX.Element | null>((acc, country) => {
+              if (acc === null) {
+                return <>{country}</>;
+              }
+
+              return (
+                <>
+                  {acc}
+                  <span className={styles.separator}>-</span>
+                  {country}
+                </>
+              );
+            }, null)}
+          </div>
           {movie.akaTitles.length > 0 && (
             <div className={styles.aka_container}>
               aka:
@@ -278,6 +295,8 @@ export const pageQuery = graphql`
       imdbId: imdb_id
       title
       year
+      countries
+      runtimeMinutes: runtime_minutes
       lastReviewGrade: last_review_grade
       lastReviewGradeValue: last_review_grade_value
       akaTitles: aka_titles
