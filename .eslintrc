@@ -16,13 +16,13 @@
       "extends": [
         "airbnb",
         "airbnb/hooks",
+        "plugin:prettier/recommended",
+        "prettier/react",
+        "prettier/@typescript-eslint",
         "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:jest/all",
-        "prettier",
-        "prettier/react",
-        "prettier/@typescript-eslint"
+        "plugin:jest/all"
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
@@ -47,6 +47,8 @@
             "tsx": "never"
           }
         ],
+        "no-use-before-define": [0],
+        "@typescript-eslint/no-use-before-define": [1],
         "jest/no-hooks": ["off"],
         "jest/lowercase-name": [
           "error",
