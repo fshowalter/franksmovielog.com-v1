@@ -57,78 +57,70 @@ function buildStructuredData(movie: ReviewedMovie) {
 function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
   return (
     <div className={styles.related}>
-      {movie.watchlist.collections.map((collection) => {
-        return (
-          <RelatedMovies movies={collection.reviewedMovies}>
-            <header className={styles.related_header}>
-              <h3 className={styles.related_heading}>
-                More{" "}
-                <span className={styles.related_name}>{collection.name}</span>
-              </h3>
-              <Link
-                to={`/watchlist/collections/${collection.slug}/`}
-                className={styles.related_more}
-              >
-                See All &raquo;
-              </Link>
-            </header>
-          </RelatedMovies>
-        );
-      })}
-      {movie.watchlist.performers.map((performer) => {
-        return (
-          <RelatedMovies movies={performer.reviewedMovies}>
-            <header className={styles.related_header}>
-              <h3 className={styles.related_heading}>
-                More with{" "}
-                <span className={styles.related_name}>{performer.name}</span>
-              </h3>
-              <Link
-                to={`/watchlist/cast/${performer.slug}/`}
-                className={styles.related_more}
-              >
-                See All &raquo;
-              </Link>
-            </header>
-          </RelatedMovies>
-        );
-      })}
-      {movie.watchlist.directors.map((director) => {
-        return (
-          <RelatedMovies movies={director.reviewedMovies}>
-            <header className={styles.related_header}>
-              <h3 className={styles.related_heading}>
-                More directed by{" "}
-                <span className={styles.related_name}>{director.name}</span>
-              </h3>
-              <Link
-                to={`/watchlist/directors/${director.slug}/`}
-                className={styles.related_more}
-              >
-                See All &raquo;
-              </Link>
-            </header>
-          </RelatedMovies>
-        );
-      })}
-      {movie.watchlist.writers.map((writer) => {
-        return (
-          <RelatedMovies movies={writer.reviewedMovies}>
-            <header className={styles.related_header}>
-              <h3 className={styles.related_heading}>
-                More written by{" "}
-                <span className={styles.related_name}>{writer.name}</span>
-              </h3>
-              <Link
-                to={`/watchlist/writers/${writer.slug}/`}
-                className={styles.related_more}
-              >
-                See All &raquo;
-              </Link>
-            </header>
-          </RelatedMovies>
-        );
-      })}
+      {movie.watchlist.collections.map((collection) => (
+        <RelatedMovies movies={collection.reviewedMovies}>
+          <header className={styles.related_header}>
+            <h3 className={styles.related_heading}>
+              More{" "}
+              <span className={styles.related_name}>{collection.name}</span>
+            </h3>
+            <Link
+              to={`/watchlist/collections/${collection.slug}/`}
+              className={styles.related_more}
+            >
+              See All &raquo;
+            </Link>
+          </header>
+        </RelatedMovies>
+      ))}
+      {movie.watchlist.performers.map((performer) => (
+        <RelatedMovies movies={performer.reviewedMovies}>
+          <header className={styles.related_header}>
+            <h3 className={styles.related_heading}>
+              More with{" "}
+              <span className={styles.related_name}>{performer.name}</span>
+            </h3>
+            <Link
+              to={`/watchlist/cast/${performer.slug}/`}
+              className={styles.related_more}
+            >
+              See All &raquo;
+            </Link>
+          </header>
+        </RelatedMovies>
+      ))}
+      {movie.watchlist.directors.map((director) => (
+        <RelatedMovies movies={director.reviewedMovies}>
+          <header className={styles.related_header}>
+            <h3 className={styles.related_heading}>
+              More directed by{" "}
+              <span className={styles.related_name}>{director.name}</span>
+            </h3>
+            <Link
+              to={`/watchlist/directors/${director.slug}/`}
+              className={styles.related_more}
+            >
+              See All &raquo;
+            </Link>
+          </header>
+        </RelatedMovies>
+      ))}
+      {movie.watchlist.writers.map((writer) => (
+        <RelatedMovies movies={writer.reviewedMovies}>
+          <header className={styles.related_header}>
+            <h3 className={styles.related_heading}>
+              More written by{" "}
+              <span className={styles.related_name}>{writer.name}</span>
+            </h3>
+            <Link
+              to={`/watchlist/writers/${writer.slug}/`}
+              className={styles.related_more}
+            >
+              See All &raquo;
+            </Link>
+          </header>
+        </RelatedMovies>
+      ))}
       <RelatedMovies movies={movie.browseMore}>
         <header className={styles.related_header}>
           <h3 className={styles.related_heading}>
@@ -186,7 +178,7 @@ export default function Review({
               return (
                 <>
                   {acc}
-                  <span className={styles.separator}>-</span>
+                  <span className={styles.separator}>&mdash;</span>
                   {country}
                 </>
               );
@@ -196,9 +188,9 @@ export default function Review({
             <div className={styles.aka_container}>
               aka:
               <ul className={styles.aka_list}>
-                {movie.akaTitles.map((akaTitle) => {
-                  return <li className={styles.aka_list_item}>{akaTitle}</li>;
-                })}
+                {movie.akaTitles.map((akaTitle) => (
+                  <li className={styles.aka_list_item}>{akaTitle}</li>
+                ))}
               </ul>
             </div>
           )}
@@ -224,51 +216,45 @@ export default function Review({
           </div>
         </aside>
         <ul className={styles.reviews_list}>
-          {movie.reviews.map((review) => {
-            return (
-              <li>
-                <article className={styles.review}>
-                  <header className={styles.slug}>
-                    <DateIcon className={styles.date_icon} />{" "}
-                    <span className={styles.date}>
-                      {review.frontmatter.date}
-                    </span>{" "}
-                    via {review.frontmatter.venue}
-                    {review.frontmatter.venueNotes && (
-                      <> ({review.frontmatter.venueNotes})</>
-                    )}
-                  </header>
-                  <div className={styles.content}>
-                    <Grade
-                      grade={review.frontmatter.grade}
-                      className={styles.grade}
-                    />
-                    <RenderedMarkdown
-                      className={styles.body}
-                      // eslint-disable-next-line react/no-danger
-                      text={review.linkedHtml}
-                    />
-                  </div>
-                </article>
-              </li>
-            );
-          })}
+          {movie.reviews.map((review) => (
+            <li>
+              <article className={styles.review}>
+                <header className={styles.slug}>
+                  <DateIcon className={styles.date_icon} />{" "}
+                  <span className={styles.date}>{review.frontmatter.date}</span>{" "}
+                  via {review.frontmatter.venue}
+                  {review.frontmatter.venueNotes && (
+                    <> ({review.frontmatter.venueNotes})</>
+                  )}
+                </header>
+                <div className={styles.content}>
+                  <Grade
+                    grade={review.frontmatter.grade}
+                    className={styles.grade}
+                  />
+                  <RenderedMarkdown
+                    className={styles.body}
+                    // eslint-disable-next-line react/no-danger
+                    text={review.linkedHtml}
+                  />
+                </div>
+              </article>
+            </li>
+          ))}
         </ul>
         {movie.olderViewings.length > 0 && (
           <div className={styles.older_viewings}>
             <h3 className={styles.older_viewings_heading}>Older Viewings</h3>
             <ul className={styles.older_viewings_list}>
-              {movie.olderViewings.map((viewing) => {
-                return (
-                  <li>
-                    <div className={styles.slug}>
-                      <DateIcon className={styles.viewing_date_icon} />{" "}
-                      <span className={styles.date}>{viewing.viewingDate}</span>{" "}
-                      via {viewing.venue}
-                    </div>
-                  </li>
-                );
-              })}
+              {movie.olderViewings.map((viewing) => (
+                <li>
+                  <div className={styles.slug}>
+                    <DateIcon className={styles.viewing_date_icon} />{" "}
+                    <span className={styles.date}>{viewing.viewingDate}</span>{" "}
+                    via {viewing.venue}
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         )}
