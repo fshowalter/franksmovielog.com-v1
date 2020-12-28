@@ -9,6 +9,8 @@ venue: 4k UHD Blu-ray
 venue_notes: 2017 | Eone
 ---
 
-A brilliant deconstruction of '80s horror tropes that doubles as a meta trap-movie. It's so snug in my wheelhouse, it’s as though they wrote it just for me.
+Five college kids head out for a weekend in a remote cabin secluded deep in the woods, where one unleashes a supernatural evil.
 
-I first saw this at a midnight premiere show. I remember laughing so hard my cheeks hurt and being awestruck by the ending. Eight years and five rewatches later, the film still impresses.
+<!-- end -->
+
+There's wit to spare in Whedon and Goddard's literate horror film deconstruction as it lays bare the genre's tropes in their logic-defying glory. Their "loving hate letter" to the genre is self-referential almost to the point of parody as it serves up equal parts genuine thrills and acerbic black comedy. That it doubles as a meta trap-movie places it so snug in my wheelhouse, it's as though they wrote it just for me.
