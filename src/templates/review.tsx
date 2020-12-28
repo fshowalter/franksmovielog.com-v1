@@ -305,7 +305,7 @@ export const pageQuery = graphql`
         linkedHtml
       }
       olderViewings {
-        viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
+        viewingDate: viewing_date(formatString: "ddd MMM DD, YYYY")
         venue
       }
       backdrop {

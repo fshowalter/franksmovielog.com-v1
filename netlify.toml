@@ -48,6 +48,12 @@
   to = "/reviews/lage-dor-1930"
   status = 301
 
+[[redirects]]
+  from = "/movies/the-cabin-in-the-woods-2011"
+  to = "/reviews/the-cabin-in-the-woods-2011/"
+  status = 301
+
+
 
 [[redirects]]
   from = "/wp-login.php"
