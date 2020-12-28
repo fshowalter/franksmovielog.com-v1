@@ -141,6 +141,55 @@ function DecadeTable({
   );
 }
 
+function CountryTable({
+  collection,
+}: {
+  collection: CountryGroup[];
+}): JSX.Element {
+  return (
+    <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.text_header}>Country</th>
+          <th className={styles.number_header}>Viewing Count</th>
+        </tr>
+      </thead>
+      {collection.map((group, index) => {
+        return (
+          <>
+            <tr className={styles.table_row}>
+              <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
+              <td className={styles.table_fill_cell}>{group.name}</td>
+              <td className={styles.table_count_cell}>{group.viewingCount}</td>
+            </tr>
+            <tr>
+              <td className={styles.table_index_cell}>&nbsp;</td>
+              <td colSpan={2}>
+                <details>
+                  <summary className={styles.details_label}>Details</summary>
+                  <ul className={styles.details_list}>
+                    {group.viewings.map((detail) => {
+                      return (
+                        <li>
+                          {buildlMovieTitle(detail.movie)}{" "}
+                          <div className={styles.viewing_for_movie}>
+                            {buildViewingDetail(detail)}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </details>
+              </td>
+            </tr>
+          </>
+        );
+      })}
+    </table>
+  );
+}
+
 function MostWatchedPersonTable({
   collection,
   watchlistType,
@@ -284,6 +333,8 @@ export default function ViewingStatsTemplate({
           <MostWatchedMoviesTable collection={movies.mostWatched} />
           <TableHeading headingText="Viewings By Release Decade" />
           <DecadeTable collection={movies.decades} />
+          <TableHeading headingText="Viewings By Country of Origin" />
+          <CountryTable collection={movies.countries} />
           <TableHeading headingText="Most Watched Directors" />
           <MostWatchedPersonTable
             collection={directors.mostWatched}
@@ -341,12 +392,19 @@ export interface DecadeGroup {
   viewingCount: number;
 }
 
+export interface CountryGroup {
+  name: string;
+  viewingCount: number;
+  viewings: Viewing[];
+}
+
 export interface PageQueryResult {
   movies: {
     movieCount: number;
     viewingCount: number;
     mostWatched: MovieWithViewings[];
     decades: DecadeGroup[];
+    countries: CountryGroup[];
   };
   directors: {
     mostWatched: PersonWithViewings[];
@@ -374,6 +432,19 @@ export const pageQuery = graphql`
       decades {
         decade
         viewingCount: viewing_count
+      }
+      countries {
+        name
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
       }
       mostWatched: most_watched {
         title

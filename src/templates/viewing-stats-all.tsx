@@ -125,6 +125,33 @@ function DecadeTable({
   );
 }
 
+function CountryTable({
+  collection,
+}: {
+  collection: CountryGroup[];
+}): JSX.Element {
+  return (
+    <table className={styles.table}>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th className={styles.text_header}>Country</th>
+          <th className={styles.number_header}>Viewing Count</th>
+        </tr>
+      </thead>
+      {collection.map((group) => {
+        return (
+          <tr className={styles.table_row}>
+            <td className={styles.table_index_cell}>&nbsp;</td>
+            <td className={styles.table_fill_cell}>{group.name}</td>
+            <td className={styles.table_count_cell}>{group.viewingCount}</td>
+          </tr>
+        );
+      })}
+    </table>
+  );
+}
+
 function MostWatchedPersonTable({
   collection,
   watchlistType,
@@ -246,6 +273,8 @@ export default function ViewingStatsTemplate({
           <MostWatchedMoviesTable collection={movies.mostWatched} />
           <TableHeading headingText="Viewings By Release Decade" />
           <DecadeTable collection={movies.decades} />
+          <TableHeading headingText="Viewings By Country of Origin" />
+          <CountryTable collection={movies.countries} />
           <TableHeading headingText="Most Watched Directors" />
           <MostWatchedPersonTable
             collection={directors.mostWatched}
@@ -303,12 +332,18 @@ export interface DecadeGroup {
   viewingCount: number;
 }
 
+export interface CountryGroup {
+  name: string;
+  viewingCount: number;
+}
+
 export interface PageQueryResult {
   movies: {
     movieCount: number;
     viewingCount: number;
     mostWatched: MovieWithViewings[];
     decades: DecadeGroup[];
+    countries: CountryGroup[];
   };
   directors: {
     mostWatched: PersonWithViewings[];
@@ -335,6 +370,10 @@ export const pageQuery = graphql`
       movieCount: movie_count
       decades {
         decade
+        viewingCount: viewing_count
+      }
+      countries {
+        name
         viewingCount: viewing_count
       }
       mostWatched: most_watched {
