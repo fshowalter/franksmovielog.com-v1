@@ -72,7 +72,7 @@
 
 [[redirects]]
   from = "/apple-touch-icon-152x152.png"
-  to = "/apple-touch-icon-152x152.png"
+  to = "/gone"
   status = 410
 
 [[redirects]]
@@ -137,11 +137,6 @@
 
 [[redirects]]
   from = "/favicon.ico"
-  to = "/gone"
-  status = 410
-
-[[redirects]]
-  from = "/apple-touch-icon-152x152.png"
   to = "/gone"
   status = 410
 
