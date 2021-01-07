@@ -163,13 +163,9 @@ export default function Review({
           />
         )}
         <header className={styles.header}>
-          <h1 className={styles.title}>
-            {movie.title}{" "}
-            <span className={styles.title_year}>{movie.year}</span>
-          </h1>
+          <h1 className={styles.title}>{movie.title}</h1>
           <div className={styles.header_meta}>
-            {movie.runtimeMinutes} min.{" "}
-            <span className={styles.separator}>|</span>{" "}
+            {movie.year} <span className={styles.separator}>|</span>{" "}
             {movie.countries.reduce<JSX.Element | null>((acc, country) => {
               if (acc === null) {
                 return <>{country}</>;
@@ -178,11 +174,13 @@ export default function Review({
               return (
                 <>
                   {acc}
-                  <span className={styles.separator}>&mdash;</span>
+                  <span className={styles.separator}>&ndash;</span>
                   {country}
                 </>
               );
             }, null)}
+            <span className={styles.separator}>|</span> {movie.runtimeMinutes}{" "}
+            mins{" "}
           </div>
           {movie.akaTitles.length > 0 && (
             <div className={styles.aka_container}>
