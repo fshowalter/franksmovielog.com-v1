@@ -178,9 +178,9 @@ export default function Review({
                   {country}
                 </>
               );
-            }, null)}
-            <span className={styles.separator}>|</span> {movie.runtimeMinutes}{" "}
-            mins{" "}
+            }, null)}{" "}
+            <span className={styles.separator}>|</span> {movie.runtimeMinutes}
+            &#x02009;min
           </div>
           {movie.akaTitles.length > 0 && (
             <div className={styles.aka_container}>
