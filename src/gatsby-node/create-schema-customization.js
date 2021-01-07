@@ -110,6 +110,43 @@ function sliceReviewedMoviesForTitle(movies, titleImdbId) {
   return movies.slice(lower + 1, upper + 1).filter(movieIsNotTitle);
 }
 
+async function getResolvedValueForType(type, fieldName, source, args, context) {
+  const resolver = type.getFields()[fieldName].resolve;
+
+  return resolver(source, args, context, {
+    fieldName,
+  });
+}
+
+function assetPathForSlug(slug, assetType) {
+  if (!slug) {
+    return null;
+  }
+
+  const fileName = slug.endsWith("/") ? slug.slice(0, slug.length - 1) : slug;
+
+  return path.resolve(`./content/assets/${assetType}s/${fileName}.png`);
+}
+
+function findFileNodeByAbsolutePath(nodeModel, absolutePath) {
+  if (!absolutePath) {
+    return null;
+  }
+
+  return nodeModel
+    .getAllNodes({ type: "File" }, { connectionType: "File" })
+    .find((node) => node.absolutePath === absolutePath);
+}
+
+function getAvatar(nodeModel, slug) {
+  if (!slug) {
+    return null;
+  }
+
+  const assetPath = assetPathForSlug(slug, "avatar");
+  return findFileNodeByAbsolutePath(nodeModel, assetPath);
+}
+
 function itemsForWatchlistTitle(nodeModel, watchlistTitle, itemType) {
   const items = [];
 
@@ -117,6 +154,7 @@ function itemsForWatchlistTitle(nodeModel, watchlistTitle, itemType) {
     const watchlistItem = {
       name: titleItem.name,
       slug: titleItem.slug,
+      avatar: getAvatar(nodeModel, titleItem.slug),
       reviewedMovies: [],
     };
 
@@ -145,34 +183,6 @@ function itemsForWatchlistTitle(nodeModel, watchlistTitle, itemType) {
   });
 
   return items;
-}
-
-async function getResolvedValueForType(type, fieldName, source, args, context) {
-  const resolver = type.getFields()[fieldName].resolve;
-
-  return resolver(source, args, context, {
-    fieldName,
-  });
-}
-
-function assetPathForSlug(slug, assetType) {
-  if (!slug) {
-    return null;
-  }
-
-  const fileName = slug.endsWith("/") ? slug.slice(0, slug.length - 1) : slug;
-
-  return path.resolve(`./content/assets/${assetType}s/${fileName}.png`);
-}
-
-function findFileNodeByAbsolutePath(nodeModel, absolutePath) {
-  if (!absolutePath) {
-    return null;
-  }
-
-  return nodeModel
-    .getAllNodes({ type: "File" }, { connectionType: "File" })
-    .find((node) => node.absolutePath === absolutePath);
 }
 
 function addReviewLinks(text, reviewedMovieNodes) {
@@ -425,8 +435,7 @@ const watchlistEntitiesJson = {
           return null;
         }
 
-        const assetPath = assetPathForSlug(source.slug, "avatar");
-        return findFileNodeByAbsolutePath(context.nodeModel, assetPath);
+        return getAvatar(context.nodeModel, source.slug);
       },
     },
   },
@@ -440,6 +449,7 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
         name: String!
         slug: String
         reviewedMovies: [ReviewedMoviesJson]
+        avatar: File
       }
       type Watchlist {
         performers: [WatchlistEntry]

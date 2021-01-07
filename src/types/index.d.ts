@@ -4,12 +4,22 @@ export type Person = {
   name: string;
   slug: string;
   reviewedMovies: ReviewedMovie[];
+  avatar: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
 };
 
 export type Collection = {
   name: string;
   slug: string;
   reviewedMovies: ReviewedMovie[];
+  avatar: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
+  };
 };
 
 export type MarkdownReview = {

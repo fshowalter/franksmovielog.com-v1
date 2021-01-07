@@ -178,18 +178,46 @@ export const pageQuery = graphql`
             directors {
               name
               slug
+              avatar {
+                childImageSharp {
+                  fluid(toFormat: WEBP, maxWidth: 40, quality: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
             writers {
               name
               slug
+              avatar {
+                childImageSharp {
+                  fluid(toFormat: WEBP, maxWidth: 40, quality: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
             performers {
               name
               slug
+              avatar {
+                childImageSharp {
+                  fluid(toFormat: WEBP, maxWidth: 40, quality: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
             collections {
               name
               slug
+              avatar {
+                childImageSharp {
+                  fluid(toFormat: WEBP, maxWidth: 40, quality: 80) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }

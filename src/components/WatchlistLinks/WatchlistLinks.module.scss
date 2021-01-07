@@ -21,6 +21,7 @@
 }
 
 .link {
+  align-items: center;
   background-color: darken(#fff, 2);
   border: solid 1px darken(#e9e7e0, 10);
   border-radius: 0.5rem;
@@ -41,4 +42,11 @@
 
 .link:hover > .icon {
   fill: var(--color-link);
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 1ch;
+  width: 40px;
 }
