@@ -140,10 +140,11 @@ function findFileNodeByAbsolutePath(nodeModel, absolutePath) {
 
 function getAvatar(nodeModel, slug) {
   if (!slug) {
-    return null;
+    return "";
   }
 
   const assetPath = assetPathForSlug(slug, "avatar");
+
   return findFileNodeByAbsolutePath(nodeModel, assetPath);
 }
 

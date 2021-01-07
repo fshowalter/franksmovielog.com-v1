@@ -343,65 +343,65 @@ export const pageQuery = graphql`
         performers {
           name
           slug
+          avatar {
+            childImageSharp {
+              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           reviewedMovies {
             title
             lastReviewGrade: last_review_grade
             slug
-            backdrop {
-              childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
         directors {
           name
           slug
+          avatar {
+            childImageSharp {
+              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           reviewedMovies {
             title
             lastReviewGrade: last_review_grade
             slug
-            backdrop {
-              childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
         writers {
           name
           slug
+          avatar {
+            childImageSharp {
+              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           reviewedMovies {
             title
             lastReviewGrade: last_review_grade
             slug
-            backdrop {
-              childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
         collections {
           name
           slug
+          avatar {
+            childImageSharp {
+              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           reviewedMovies {
             title
             lastReviewGrade: last_review_grade
             slug
-            backdrop {
-              childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
       }

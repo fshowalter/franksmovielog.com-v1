@@ -12,15 +12,21 @@ function WatchlistItem({
   to: string;
   entity: Person | Collection;
   children: React.ReactNode;
-}): JSX.Element {
+}): JSX.Element | null {
+  if (!entity) {
+    return null;
+  }
+
   return (
     <li>
       <Link to={to} className={styles.link}>
-        <Img
-          fluid={entity.avatar.childImageSharp.fluid}
-          alt={`More ${entity.name} reviews`}
-          className={styles.avatar}
-        />
+        {entity.avatar && (
+          <Img
+            fluid={entity.avatar.childImageSharp.fluid}
+            alt={`More ${entity.name} reviews`}
+            className={styles.avatar}
+          />
+        )}
         {children}
       </Link>
     </li>
