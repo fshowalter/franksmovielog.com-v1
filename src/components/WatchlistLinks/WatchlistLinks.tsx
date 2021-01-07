@@ -1,26 +1,24 @@
 import { Link } from "gatsby";
-import Img, { FluidObject } from "gatsby-image";
+import Img from "gatsby-image";
 import React from "react";
-import { Movie } from "../../types";
+import { Collection, Movie, Person } from "../../types";
 import styles from "./WatchlistLinks.module.scss";
 
 function WatchlistItem({
   to,
-  avatar,
-  alt,
+  entity,
   children,
 }: {
   to: string;
-  avatar: FluidObject;
-  alt: string;
+  entity: Person | Collection;
   children: React.ReactNode;
 }): JSX.Element {
   return (
     <li>
       <Link to={to} className={styles.link}>
         <Img
-          fluid={avatar}
-          alt={`More ${alt} reviews`}
+          fluid={entity.avatar.childImageSharp.fluid}
+          alt={`More ${entity.name} reviews`}
           className={styles.avatar}
         />
         {children}
@@ -48,9 +46,8 @@ function WatchlistLinks({
         {watchlist.collections.map((collection) => {
           return (
             <WatchlistItem
-              avatar={collection.avatar.childImageSharp.fluid}
-              alt={collection.name}
               to={`/watchlist/collections/${collection.slug}/`}
+              entity={collection}
             >
               {collection.name}
             </WatchlistItem>
@@ -59,8 +56,7 @@ function WatchlistLinks({
         {watchlist.directors.map((director) => {
           return (
             <WatchlistItem
-              avatar={director.avatar.childImageSharp.fluid}
-              alt={director.name}
+              entity={director}
               to={`/watchlist/directors/${director.slug}/`}
             >
               {director.name}
@@ -70,8 +66,7 @@ function WatchlistLinks({
         {watchlist.performers.map((performer) => {
           return (
             <WatchlistItem
-              avatar={performer.avatar.childImageSharp.fluid}
-              alt={performer.name}
+              entity={performer}
               to={`/watchlist/performers/${performer.slug}/`}
             >
               {performer.name}
@@ -81,8 +76,7 @@ function WatchlistLinks({
         {watchlist.writers.map((writer) => {
           return (
             <WatchlistItem
-              avatar={writer.avatar.childImageSharp.fluid}
-              alt={writer.name}
+              entity={writer}
               to={`/watchlist/writers/${writer.slug}/`}
             >
               {writer.name}
