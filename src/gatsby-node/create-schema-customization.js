@@ -59,18 +59,6 @@ function findWatchlistTitleForImdbId(nodeModel, imdbId) {
   );
 }
 
-function closestLimit(totalSize, index) {
-  if (index < 0) {
-    return 0;
-  }
-
-  if (index >= totalSize) {
-    return totalSize - 1;
-  }
-
-  return index;
-}
-
 function sliceReviewedMoviesForTitle(movies, titleImdbId) {
   const windowSize = 5;
   const arraySize = movies.length;
@@ -89,25 +77,13 @@ function sliceReviewedMoviesForTitle(movies, titleImdbId) {
 
   const titleIndex = movies.findIndex((movie) => movie.imdb_id === titleImdbId);
 
-  const arrayClosestLimit = (index) => {
-    return closestLimit(arraySize, index);
-  };
-
-  const center = arrayClosestLimit(titleIndex);
-
-  let lower = arrayClosestLimit(Math.ceil(center - windowSize / 2));
-  let upper = arrayClosestLimit(Math.floor(center + windowSize / 2));
-
-  while (upper - lower + 1 < windowSize) {
-    lower = arrayClosestLimit(lower - 1);
-    upper = arrayClosestLimit(upper + 1);
+  if (titleIndex + 3 <= arraySize && titleIndex - 2 >= 0) {
+    return movies.slice(titleIndex - 2, titleIndex + 3).filter(movieIsNotTitle);
   }
 
-  if (upper - lower + 1 === windowSize) {
-    return movies.slice(lower, upper + 1).filter(movieIsNotTitle);
-  }
-
-  return movies.slice(lower + 1, upper + 1).filter(movieIsNotTitle);
+  return [...movies.slice(-2), ...movies, ...movies.slice(0, 3)]
+    .slice(titleIndex, titleIndex + 5)
+    .filter(movieIsNotTitle);
 }
 
 async function getResolvedValueForType(type, fieldName, source, args, context) {

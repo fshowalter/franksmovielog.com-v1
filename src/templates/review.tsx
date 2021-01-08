@@ -81,7 +81,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
               <span className={styles.related_name}>{performer.name}</span>
             </h3>
             <Link
-              to={`/watchlist/cast/${performer.slug}/`}
+              to={`/watchlist/performers/${performer.slug}/`}
               className={styles.related_more}
             >
               See All &raquo;
@@ -354,6 +354,13 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
         directors {
@@ -370,6 +377,13 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
         writers {
@@ -386,6 +400,13 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
         collections {
@@ -402,6 +423,13 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            backdrop {
+              childImageSharp {
+                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
