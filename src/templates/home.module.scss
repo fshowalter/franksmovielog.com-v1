@@ -44,8 +44,7 @@
       padding-left: var(--step-1);
     }
 
-    &:first-of-type,
-    &:last-of-type {
+    &.wide {
       padding: 2.5rem 0;
       width: 100%;
     }
@@ -89,7 +88,8 @@
     }
 
     &.first,
-    &.last {
+    &.last,
+    &.wide {
       align-items: start;
       column-gap: calc(2 * var(--step-1));
       grid-template-areas: "header image" ". image" "body image" ". image" "footer image";

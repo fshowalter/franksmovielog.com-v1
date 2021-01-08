@@ -43,18 +43,20 @@ export default function HomeTemplate({
         <ol className={styles.list}>
           {updates.map((update, index) => {
             const review = update;
-            const isFirst = index === 0;
-            const isLast = index === updates.length - 1;
+            const isWide =
+              index === 0 ||
+              (index === updates.length - 1 && updates.length % 2 === 0);
             const listItemValue =
               pageContext.numberOfItems - pageContext.skip - index;
             const movie = update.reviewedMovie;
 
             return (
-              <li value={listItemValue} className={styles.list_item}>
+              <li
+                value={listItemValue}
+                className={`${styles.list_item} ${isWide ? styles.wide : ""}`}
+              >
                 <article
-                  className={`${styles.review} ${isFirst ? styles.first : ""} ${
-                    isLast ? styles.last : ""
-                  }`}
+                  className={`${styles.review} ${isWide ? styles.wide : ""}`}
                 >
                   <Link
                     rel="canonical"
