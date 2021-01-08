@@ -328,6 +328,12 @@ export default function ViewingStatsTemplate({
               </span>{" "}
               <span className={styles.stat_pop_legend}>Movies</span>
             </div>
+            <div className={styles.stat_pop}>
+              <span className={styles.stat_pop_number}>
+                {movies.newMovieCount}
+              </span>{" "}
+              <span className={styles.stat_pop_legend}>New Movies</span>
+            </div>
           </div>
           <TableHeading headingText="Most Watched Movies" />
           <MostWatchedMoviesTable collection={movies.mostWatched} />
@@ -429,6 +435,7 @@ export const pageQuery = graphql`
     movies: mostWatchedMoviesByYearJson(year: { eq: $yearScope }) {
       viewingCount: viewing_count
       movieCount: movie_count
+      newMovieCount: new_movie_count
       decades {
         decade
         viewingCount: viewing_count
