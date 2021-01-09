@@ -102,6 +102,30 @@ module.exports = {
               ],
             }),
             serialize: ({ query: { site, allMarkdownRemark } }) => {
+              function starsForGrade(grade) {
+                const gradeMap = {
+                  A: "&#9733;&#9733;&#9733;&#9733;&#9733;",
+                  B: "&#9733;&#9733;&#9733;&#9733;",
+                  C: "&#9733;&#9733;&#9733;",
+                  D: "&#9733;&#9733;",
+                  F: "&#9733;",
+                };
+
+                return gradeMap[grade];
+              }
+
+              function addMetaToExcerpt(excerpt, reviewData) {
+                const meta = `${starsForGrade(
+                  reviewData.frontmatter.grade[0]
+                )} D: ${reviewData.reviewedMovie.directors
+                  .map((director) => director.name)
+                  .join(", ")}. ${reviewData.reviewedMovie.principalCast
+                  .map((person) => person.name)
+                  .join(", ")}.`;
+
+                return excerpt.replace("<p>", `<p>${meta} `);
+              }
+
               return allMarkdownRemark.nodes.map((node) => {
                 return {
                   title: `${node.reviewedMovie.title} (${node.reviewedMovie.year})`,
@@ -110,7 +134,11 @@ module.exports = {
                   guid: `${site.siteMetadata.siteUrl}/${node.frontmatter.sequence}-${node.reviewedMovie.slug}`,
                   custom_elements: [
                     {
-                      "content:encoded": `<img src="${node.reviewedMovie.image.childImageSharp.resize.src}" alt="A still from ${node.reviewedMovie.title}">${node.linkedExcerpt}`,
+                      "content:encoded": `<img src="${
+                        node.reviewedMovie.image.childImageSharp.resize.src
+                      }" alt="A still from ${
+                        node.reviewedMovie.title
+                      }">${addMetaToExcerpt(node.linkedExcerpt, node)}`,
                     },
                   ],
                 };
@@ -129,11 +157,18 @@ module.exports = {
                     frontmatter {
                       date
                       sequence
+                      grade
                     }
                     reviewedMovie {
                       title
                       year
                       slug
+                      principalCast: principal_cast {
+                        name: full_name
+                      }
+                      directors {
+                        name: full_name
+                      }
                       image: backdrop {
                         childImageSharp {
                           resize(toFormat: JPG, width: 1200, quality: 80) {
