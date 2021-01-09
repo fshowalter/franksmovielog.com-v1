@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 import styles from "./viewing-stats-all.module.scss";
 
 function buildSubHeading(numberOfYears: number): string {
-  return `${(numberOfYears - 2).toString()} Years in Review.`;
+  return `${(numberOfYears - 2).toString()} Years in Review`;
 }
 
 function buildPersonName(type: string, person: Person): JSX.Element {

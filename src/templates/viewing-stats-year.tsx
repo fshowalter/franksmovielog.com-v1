@@ -21,7 +21,7 @@ function buildSubHeading(yearScope: string, numberOfYears: number): string {
     return "A Year in Progress...";
   }
 
-  return "A Year in Review.";
+  return "A Year in Review";
 }
 
 function buildPersonName(type: string, person: Person): JSX.Element {
@@ -408,6 +408,7 @@ export interface PageQueryResult {
   movies: {
     movieCount: number;
     viewingCount: number;
+    newMovieCount: number;
     mostWatched: MovieWithViewings[];
     decades: DecadeGroup[];
     countries: CountryGroup[];
