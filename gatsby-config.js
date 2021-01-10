@@ -123,7 +123,7 @@ module.exports = {
                   .map((person) => person.name)
                   .join(", ")}.`;
 
-                return excerpt.replace("<p>", `<p>${meta} `);
+                return `<p>${meta}</p>${excerpt}`;
               }
 
               return allMarkdownRemark.nodes.map((node) => {
