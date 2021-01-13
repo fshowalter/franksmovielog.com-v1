@@ -103,7 +103,7 @@ function ViewingTitle({
 function ViewingSlug({ viewing }: { viewing: Viewing }) {
   return (
     <div className={styles.list_item_slug}>
-      {viewing.viewingDate} via {viewing.venue}.
+      {viewing.viewingDate} via {viewing.venue}
     </div>
   );
 }
