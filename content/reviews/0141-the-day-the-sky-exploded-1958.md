@@ -9,7 +9,7 @@ venue: DVD
 venue_notes:
 ---
 
-Like <span data-imdb-id="tt0049429">_Lust of the Vampire_</span>, an uncredited Mario Bava assumed the director's chair after the credited director abandoned the project. The plot concerns the first atomic rocket mission into space. The pilot runs into unexplained trouble and has to abandon the mission. I feared this would devolve into a cheap <span data-imdb-id="tt0049646">_Quatermass_</span> rip-off, but I'm pleased to report we're not subjected to any laughable rubber suits.
+Like <span data-imdb-id="tt0049429">_Lust of the Vampire_</span>, an uncredited Mario Bava assumed the director's chair after the credited director abandoned the project. The plot concerns the first atomic rocket mission into space. The pilot runs into unexplained trouble and has to abandon the mission. I feared this would devolve into a cheap <span data-imdb-id="tt0049646">_Quatermass_</span> knock-off, but I'm pleased to report we're not subjected to any laughable rubber-suited aliens.
 
 <!-- end -->
 
