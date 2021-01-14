@@ -53,10 +53,8 @@
   to = "/reviews/the-cabin-in-the-woods-2011/"
   status = 301
 
-
-
 [[redirects]]
-  from = "/wp-login.php"
+  from = "/*.php"
   to = "/gone"
   status = 410
 
