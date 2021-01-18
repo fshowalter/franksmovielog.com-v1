@@ -48,6 +48,10 @@
 
 .filters {
   grid-area: filters;
+
+  legend {
+    text-align: center;
+  }
 }
 
 .list {
