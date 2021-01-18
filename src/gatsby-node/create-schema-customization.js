@@ -16,6 +16,7 @@ function getReviews(nodeModel) {
 function getReviewedMovies(nodeModel) {
   return nodeModel.getAllNodes({
     type: `ReviewedMoviesJson`,
+    connectionType: "ReviewedMoviesJson",
   });
 }
 
