@@ -54,9 +54,25 @@
   status = 301
 
 [[redirects]]
-  from = "/*.php"
+  from = "/config.bak.php"
   to = "/gone"
   status = 410
+
+[[redirects]]
+  from = "/wp-admin/config.bak.php"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/wp-content/config.bak.php"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/wp-login.php"
+  to = "/gone"
+  status = 410
+
 
 [[redirects]]
   from = "/apple-touch-icon.png"
