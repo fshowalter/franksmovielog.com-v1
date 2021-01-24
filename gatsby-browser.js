@@ -8,7 +8,6 @@
 const { littlefoot } = require("littlefoot");
 require("littlefoot/dist/littlefoot.css");
 
-// eslint-disable-next-line import/prefer-default-export
 exports.onRouteUpdate = () => {
   littlefoot(); // Pass any littlefoot settings here.
 };
