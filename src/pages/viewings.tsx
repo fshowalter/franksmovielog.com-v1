@@ -461,7 +461,7 @@ export default function ViewingsPage({
               <>
                 I&apos;ve watched {state.allViewings.length} movies since 2012.{" "}
                 <span className={styles.quote}>
-                  &ldquo;We have such sights to show you!&rdquo;
+                  &ldquo;We have such sights to show you.&rdquo;
                 </span>
                 <br />
                 <Link to="/viewings/stats/" className={styles.stats_link}>
