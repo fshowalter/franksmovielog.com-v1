@@ -213,15 +213,7 @@ const watchlistMoviesJson = {
   name: "WatchlistMoviesJson",
   interfaces: ["Node"],
   fields: {
-    reviewedMovie: {
-      type: "ReviewedMoviesJson",
-      connectionType: "ReviewedMoviesJson",
-      resolve: (source, args, context) => {
-        return getReviewedMovies(context.nodeModel).find((movie) => {
-          return movie.imdb_id === source.imdb_id;
-        });
-      },
-    },
+    reviewedMovie,
   },
 };
 
