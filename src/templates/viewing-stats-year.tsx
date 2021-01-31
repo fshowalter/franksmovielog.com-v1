@@ -1,4 +1,4 @@
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
@@ -254,6 +254,16 @@ export default function ViewingStatsTemplate({
   data: PageQueryResult;
 }): JSX.Element {
   const { performers, directors, writers, movies } = data;
+  let mostWatched = null;
+
+  if (movies.mostWatched.length > 0) {
+    mostWatched = (
+      <>
+        <TableHeading headingText="Most Watched Movies" />
+        <MostWatchedMoviesTable collection={movies.mostWatched} />
+      </>
+    );
+  }
 
   return (
     <Layout>
@@ -335,8 +345,7 @@ export default function ViewingStatsTemplate({
               <span className={styles.stat_pop_legend}>New Movies</span>
             </div>
           </div>
-          <TableHeading headingText="Most Watched Movies" />
-          <MostWatchedMoviesTable collection={movies.mostWatched} />
+          {mostWatched}
           <TableHeading headingText="Viewings By Release Decade" />
           <DecadeTable collection={movies.decades} />
           <TableHeading headingText="Viewings By Country of Origin" />
@@ -430,98 +439,3 @@ export interface PageQueryResult {
     ];
   };
 }
-
-export const pageQuery = graphql`
-  query($yearScope: Date) {
-    movies: mostWatchedMoviesByYearJson(year: { eq: $yearScope }) {
-      viewingCount: viewing_count
-      movieCount: movie_count
-      newMovieCount: new_movie_count
-      decades {
-        decade
-        viewingCount: viewing_count
-      }
-      countries {
-        name
-        viewingCount: viewing_count
-        viewings {
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          movie {
-            title
-            year
-            slug
-          }
-        }
-      }
-      mostWatched: most_watched {
-        title
-        year
-        slug
-        viewings {
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          movie {
-            title
-            year
-            slug
-          }
-        }
-        viewingCount: viewing_count
-      }
-    }
-    directors: mostWatchedDirectorsByYearJson(year: { eq: $yearScope }) {
-      mostWatched: most_watched {
-        fullName: full_name
-        slug
-        viewingCount: viewing_count
-        viewings {
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          movie {
-            title
-            year
-            slug
-          }
-        }
-      }
-    }
-    performers: mostWatchedPerformersByYearJson(year: { eq: $yearScope }) {
-      mostWatched: most_watched {
-        fullName: full_name
-        slug
-        viewingCount: viewing_count
-        viewings {
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          movie {
-            title
-            year
-            slug
-          }
-        }
-      }
-    }
-    writers: mostWatchedWritersByYearJson(year: { eq: $yearScope }) {
-      mostWatched: most_watched {
-        fullName: full_name
-        slug
-        viewingCount: viewing_count
-        viewings {
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          movie {
-            title
-            year
-            slug
-          }
-        }
-      }
-    }
-    year: allMostWatchedMoviesByYearJson(sort: { fields: year, order: DESC }) {
-      nodes {
-        year
-      }
-    }
-  }
-`;
