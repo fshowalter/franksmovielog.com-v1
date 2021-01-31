@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
@@ -439,3 +439,98 @@ export interface PageQueryResult {
     ];
   };
 }
+
+export const pageQuery = graphql`
+  query($yearScope: Date) {
+    movies: mostWatchedMoviesByYearJson(year: { eq: $yearScope }) {
+      viewingCount: viewing_count
+      movieCount: movie_count
+      newMovieCount: new_movie_count
+      decades {
+        decade
+        viewingCount: viewing_count
+      }
+      countries {
+        name
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+      }
+      mostWatched: most_watched {
+        title
+        year
+        slug
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+        viewingCount: viewing_count
+      }
+    }
+    directors: mostWatchedDirectorsByYearJson(year: { eq: $yearScope }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+      }
+    }
+    performers: mostWatchedPerformersByYearJson(year: { eq: $yearScope }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+      }
+    }
+    writers: mostWatchedWritersByYearJson(year: { eq: $yearScope }) {
+      mostWatched: most_watched {
+        fullName: full_name
+        slug
+        viewingCount: viewing_count
+        viewings {
+          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          venue
+          movie {
+            title
+            year
+            slug
+          }
+        }
+      }
+    }
+    year: allMostWatchedMoviesByYearJson(sort: { fields: year, order: DESC }) {
+      nodes {
+        year
+      }
+    }
+  }
+`;
