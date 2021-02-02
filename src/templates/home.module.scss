@@ -121,8 +121,9 @@
 .article_footer {
   align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
   grid-area: footer;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: -1rem;
 
   a {
@@ -140,7 +141,9 @@
   letter-spacing: 0.25px;
   line-height: 40px;
   margin-bottom: 1rem;
+  margin-right: auto;
   min-width: 120px;
+  order: -1;
   padding: 9px 0;
   white-space: nowrap;
 }
@@ -174,7 +177,7 @@
 }
 
 .watchlist_links {
-  justify-content: flex-end;
+  display: contents;
 }
 
 .pagination {
