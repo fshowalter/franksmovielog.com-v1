@@ -19,6 +19,11 @@
   status = 301
 
 [[redirects]]
+  from = "/cast-and-crew/sam-peckinpah"
+  to = "/watchlist/directors/sam-peckinpah"
+  status = 301
+
+[[redirects]]
   from = "/browse/reviews/dont-torture-a-duckling-1972"
   to = "/reviews/dont-torture-a-duckling-1972"
   status = 301
@@ -110,6 +115,11 @@
   status = 410
 
 [[redirects]]
+  from = "/cast-and-crew/robin-atkin-downes"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
   from = "/cast-and-crew/maureen-o-sullivan-i"
   to = "/gone"
   status = 410
@@ -163,3 +173,25 @@
   from = "/ads.txt"
   to = "/gone"
   status = 410
+
+[[redirects]]
+  from = "/.env"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/metrics"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/cast-and-crew/joan-blondell"
+  to = "/gone"
+  status = 410
+
+[[redirects]]
+  from = "/wp-content/wp-1ogin_bak.php"
+  to = "/gone"
+  status = 410
+
+
