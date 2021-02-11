@@ -67,7 +67,7 @@ export default function HomeTemplate({
                       <Img
                         fluid={movie.backdrop.childImageSharp.fluid}
                         alt={`A still from ${movie.title} (${movie.year})`}
-                        loading={index === 0 ? "eager" : "auto"}
+                        loading={index === 0 ? "eager" : "lazy"}
                       />
                     )}
                   </Link>
