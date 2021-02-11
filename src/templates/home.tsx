@@ -67,6 +67,7 @@ export default function HomeTemplate({
                       <Img
                         fluid={movie.backdrop.childImageSharp.fluid}
                         alt={`A still from ${movie.title} (${movie.year})`}
+                        loading={index === 0 ? "eager" : "auto"}
                       />
                     )}
                   </Link>
@@ -172,7 +173,7 @@ export const pageQuery = graphql`
           backdrop {
             childImageSharp {
               fluid(toFormat: WEBP, maxWidth: 592, quality: 80) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
