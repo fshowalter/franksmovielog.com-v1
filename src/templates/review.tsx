@@ -160,6 +160,7 @@ export default function Review({
             className={styles.image}
             fluid={movie.backdrop.childImageSharp.fluid}
             alt={`A still from ${movie.title} (${movie.year})`}
+            loading="eager"
           />
         )}
         <header className={styles.header}>
@@ -308,8 +309,8 @@ export const pageQuery = graphql`
       }
       backdrop {
         childImageSharp {
-          fluid(toFormat: WEBP, maxWidth: 934, quality: 80) {
-            ...GatsbyImageSharpFluid
+          fluid(toFormat: JPG, maxWidth: 934, quality: 80) {
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -322,8 +323,8 @@ export const pageQuery = graphql`
       }
       poster {
         childImageSharp {
-          fluid(toFormat: WEBP, maxWidth: 238, quality: 80) {
-            ...GatsbyImageSharpFluid
+          fluid(toFormat: JPG, maxWidth: 238, quality: 80) {
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
@@ -333,8 +334,8 @@ export const pageQuery = graphql`
         slug
         backdrop {
           childImageSharp {
-            fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
-              ...GatsbyImageSharpFluid
+            fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
@@ -345,7 +346,7 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -356,7 +357,7 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -368,7 +369,7 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -379,7 +380,7 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -391,7 +392,7 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -402,7 +403,7 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -414,7 +415,7 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -425,7 +426,7 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
+                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
