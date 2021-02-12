@@ -173,7 +173,7 @@ export const pageQuery = graphql`
           }
           backdrop {
             childImageSharp {
-              fluid(toFormat: JPEG, maxWidth: 592, quality: 80) {
+              fluid(toFormat: JPG, maxWidth: 592, quality: 80) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
@@ -184,7 +184,7 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPEG, maxWidth: 40, quality: 80) {
+                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -195,7 +195,7 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPEG, maxWidth: 40, quality: 80) {
+                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -206,7 +206,7 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPEG, maxWidth: 40, quality: 80) {
+                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -217,7 +217,7 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPEG, maxWidth: 40, quality: 80) {
+                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
                     ...GatsbyImageSharpFluid
                   }
                 }
