@@ -7,6 +7,7 @@ export type Person = {
   avatar: {
     childImageSharp: {
       fluid: FluidObject;
+      fixed: FixedObject;
     };
   };
 };
