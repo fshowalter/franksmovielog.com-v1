@@ -161,6 +161,7 @@ export default function Review({
             fluid={movie.backdrop.childImageSharp.fluid}
             alt={`A still from ${movie.title} (${movie.year})`}
             loading="eager"
+            fadeIn={false}
           />
         )}
         <header className={styles.header}>
