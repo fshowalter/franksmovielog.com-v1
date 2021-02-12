@@ -68,6 +68,7 @@ export default function HomeTemplate({
                         fluid={movie.backdrop.childImageSharp.fluid}
                         alt={`A still from ${movie.title} (${movie.year})`}
                         loading={index === 0 ? "eager" : "lazy"}
+                        fadeIn={false}
                       />
                     )}
                   </Link>
