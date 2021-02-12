@@ -347,8 +347,8 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
-                ...GatsbyImageSharpFluid
+              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                ...GatsbyImageSharpFixed_tracedSVG
               }
             }
           }
@@ -359,7 +359,7 @@ export const pageQuery = graphql`
             backdrop {
               childImageSharp {
                 fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -370,8 +370,8 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
-                ...GatsbyImageSharpFluid
+              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                ...GatsbyImageSharpFixed_tracedSVG
               }
             }
           }
@@ -382,7 +382,7 @@ export const pageQuery = graphql`
             backdrop {
               childImageSharp {
                 fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -393,8 +393,8 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
-                ...GatsbyImageSharpFluid
+              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                ...GatsbyImageSharpFixed_tracedSVG
               }
             }
           }
@@ -416,8 +416,8 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
-                ...GatsbyImageSharpFluid
+              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                ...GatsbyImageSharpFixed_tracedSVG
               }
             }
           }
@@ -428,7 +428,7 @@ export const pageQuery = graphql`
             backdrop {
               childImageSharp {
                 fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }

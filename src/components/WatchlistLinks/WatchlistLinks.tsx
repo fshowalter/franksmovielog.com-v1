@@ -22,7 +22,7 @@ function WatchlistItem({
       <Link to={to} className={styles.link}>
         {entity.avatar && (
           <Img
-            fluid={entity.avatar.childImageSharp.fluid}
+            fixed={entity.avatar.childImageSharp.fixed}
             alt={`More ${entity.name} reviews`}
             className={styles.avatar}
           />

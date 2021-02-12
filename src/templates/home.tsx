@@ -184,8 +184,8 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
-                    ...GatsbyImageSharpFluid
+                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                    ...GatsbyImageSharpFixed_tracedSVG
                   }
                 }
               }
@@ -195,8 +195,8 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
-                    ...GatsbyImageSharpFluid
+                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                    ...GatsbyImageSharpFixed_tracedSVG
                   }
                 }
               }
@@ -206,8 +206,8 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
-                    ...GatsbyImageSharpFluid
+                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                    ...GatsbyImageSharpFixed_tracedSVG
                   }
                 }
               }
@@ -217,8 +217,8 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fluid(toFormat: JPG, maxWidth: 40, quality: 80) {
-                    ...GatsbyImageSharpFluid
+                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
+                    ...GatsbyImageSharpFixed_tracedSVG
                   }
                 }
               }

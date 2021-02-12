@@ -1,4 +1,4 @@
-import { FluidObject } from "gatsby-image";
+import { FixedObject, FluidObject } from "gatsby-image";
 
 export type Person = {
   name: string;
@@ -18,6 +18,7 @@ export type Collection = {
   avatar: {
     childImageSharp: {
       fluid: FluidObject;
+      fixed: FixedObject;
     };
   };
 };
