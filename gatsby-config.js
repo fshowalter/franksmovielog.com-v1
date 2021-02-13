@@ -189,11 +189,6 @@ module.exports = {
         ],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     "gatsby-plugin-preact",
-    // Enable for webpack bundle stats.
-    // "gatsby-plugin-webpack-bundle-analyser-v2",
   ],
 };
