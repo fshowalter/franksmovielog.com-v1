@@ -174,6 +174,7 @@ function ListItem({
               fluid={entity.avatar.childImageSharp.fluid}
               className={styles.list_item_avatar}
               alt={`An image of ${entity.name}`}
+              fadeIn={false}
             />
           )}
         </Link>
@@ -337,8 +338,8 @@ export const pageQuery = graphql`
         reviewCount: review_count
         avatar {
           childImageSharp {
-            fluid(toFormat: WEBP, maxWidth: 308, jpegQuality: 80) {
-              ...GatsbyImageSharpFluid
+            fluid(toFormat: JPG, maxWidth: 210, jpegQuality: 80) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }

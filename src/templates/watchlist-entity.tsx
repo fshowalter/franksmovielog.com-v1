@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import Img, { FluidObject } from "gatsby-image";
+import Img, { FixedObject, FluidObject } from "gatsby-image";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput";
 import Fieldset from "../components/Fieldset";
@@ -254,6 +254,7 @@ function ReviewedListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
           <Img
             fluid={review.backdrop.childImageSharp.fluid}
             alt={`A still from ${movie.title} (${movie.year})`}
+            fadeIn={false}
           />
         )}
       </Link>
@@ -280,7 +281,7 @@ function UnreviewedListItem({
 }): JSX.Element {
   return (
     <li>
-      <Img fluid={backdrop} alt="" />
+      <Img fluid={backdrop} alt="" fadeIn={false} />
       <div className={styles.list_item_title}>
         {movie.title}{" "}
         <span className={styles.list_item_title_year}>{movie.year}</span>
@@ -325,7 +326,7 @@ export default function WatchlistEntityTemplate({
         <div className={styles.left}>
           <FilterPageHeader
             className={styles.page_header}
-            avatar={data.avatar.childImageSharp.fluid}
+            avatar={data.avatar.childImageSharp.fixed}
             alt={`An image of ${pageContext.name}`}
             heading={pageContext.name}
             tagline={<EntityHeader pageContext={pageContext} />}
@@ -407,7 +408,7 @@ interface PageContext {
 interface PageQueryResult {
   avatar: {
     childImageSharp: {
-      fluid: FluidObject;
+      fixed: FixedObject;
     };
   };
   defaultBackdrop: {
@@ -424,16 +425,16 @@ export const pageQuery = graphql`
   query($imdbIds: [String], $avatarPath: String) {
     avatar: file(absolutePath: { eq: $avatarPath }) {
       childImageSharp {
-        fluid(toFormat: WEBP, maxWidth: 200, quality: 80) {
-          ...GatsbyImageSharpFluid
+        fixed(toFormat: JPG, width: 200, height: 200, quality: 80) {
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
 
     defaultBackdrop: file(absolutePath: { regex: "/backdrops/default.png$/" }) {
       childImageSharp {
-        fluid(toFormat: WEBP, maxWidth: 308, jpegQuality: 80) {
-          ...GatsbyImageSharpFluid
+        fluid(toFormat: JPG, maxWidth: 308, jpegQuality: 80) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -451,8 +452,8 @@ export const pageQuery = graphql`
           slug
           backdrop {
             childImageSharp {
-              fluid(toFormat: WEBP, maxWidth: 308, quality: 80) {
-                ...GatsbyImageSharpFluid
+              fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }

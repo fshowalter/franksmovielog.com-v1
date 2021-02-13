@@ -1,4 +1,4 @@
-import Img, { FluidObject } from "gatsby-image";
+import Img, { FixedObject } from "gatsby-image";
 import React from "react";
 import styles from "./FilterPageHeader.module.scss";
 
@@ -9,7 +9,7 @@ export default function FilterPageHeader({
   heading,
   tagline,
 }: {
-  avatar?: FluidObject;
+  avatar?: FixedObject;
   alt?: string;
   className: string;
   heading: React.ReactNode;
@@ -17,7 +17,11 @@ export default function FilterPageHeader({
 }): JSX.Element {
   return (
     <header className={className}>
-      {avatar && <Img fluid={avatar} alt={alt} className={styles.avatar} />}
+      {avatar && (
+        <div className={styles.avatar}>
+          <Img fixed={avatar} alt={alt} fadeIn={false} loading="eager" />
+        </div>
+      )}
       <h2 className={styles.heading}>{heading}</h2>
       <p className={styles.tagline}>{tagline}</p>
     </header>

@@ -201,6 +201,8 @@ export default function Review({
               className={styles.poster}
               fluid={movie.poster.childImageSharp.fluid}
               alt={`A poster from ${movie.title} (${movie.year})`}
+              loading="eager"
+              fadeIn={false}
             />
           )}
           <div className={styles.directors}>
@@ -310,7 +312,7 @@ export const pageQuery = graphql`
       }
       backdrop {
         childImageSharp {
-          fluid(toFormat: JPG, maxWidth: 934, quality: 80) {
+          fluid(toFormat: JPG, maxWidth: 1000, quality: 80) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
@@ -324,7 +326,7 @@ export const pageQuery = graphql`
       }
       poster {
         childImageSharp {
-          fluid(toFormat: JPG, maxWidth: 238, quality: 80) {
+          fluid(toFormat: JPG, maxWidth: 250, quality: 80) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }

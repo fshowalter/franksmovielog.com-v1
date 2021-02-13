@@ -6,7 +6,6 @@ export type Person = {
   reviewedMovies: ReviewedMovie[];
   avatar: {
     childImageSharp: {
-      fluid: FluidObject;
       fixed: FixedObject;
     };
   };
@@ -18,7 +17,6 @@ export type Collection = {
   reviewedMovies: ReviewedMovie[];
   avatar: {
     childImageSharp: {
-      fluid: FluidObject;
       fixed: FixedObject;
     };
   };

@@ -5,7 +5,7 @@
   display: grid;
   padding-top: var(--step-5);
 
-  @media (min-width: 720px) {
+  @media (min-width: 726px) {
     grid-template-columns: 375px 1fr;
   }
 
@@ -74,7 +74,7 @@
   column-gap: var(--step-2);
   display: grid;
   grid-area: list;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, max-content));
   row-gap: var(--step-5);
 }
 

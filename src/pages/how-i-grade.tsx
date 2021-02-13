@@ -23,6 +23,8 @@ export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
             fluid={backdrop.childImageSharp.fluid}
             alt=""
             className={styles.image}
+            loading="eager"
+            fadeIn={false}
           />
           <RenderedMarkdown className={styles.body} text={page.html} />
         </article>
@@ -48,8 +50,8 @@ export const pageQuery = graphql`
   query {
     backdrop: file(absolutePath: { regex: "/backdrops/how-i-grade.png$/" }) {
       childImageSharp {
-        fluid(toFormat: WEBP, quality: 80) {
-          ...GatsbyImageSharpFluid
+        fluid(toFormat: JPG, maxWidth: 1000, quality: 80) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
