@@ -349,7 +349,13 @@ export const pageQuery = graphql`
         slug
         backdrop {
           childImageSharp {
-            fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
+            fluid(
+              toFormat: JPG
+              quality: 80
+              srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
+              maxWidth: 309
+              sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279) 232px, 195px"
+            ) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
@@ -372,7 +378,13 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
+                fluid(
+                  toFormat: JPG
+                  quality: 80
+                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
+                  maxWidth: 309
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279) 232px, 195px"
+                ) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
@@ -395,7 +407,13 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
+                fluid(
+                  toFormat: JPG
+                  quality: 80
+                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
+                  maxWidth: 309
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279) 232px, 195px"
+                ) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
@@ -418,7 +436,13 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
+                fluid(
+                  toFormat: JPG
+                  quality: 80
+                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
+                  maxWidth: 309
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279) 232px, 195px"
+                ) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -441,7 +465,13 @@ export const pageQuery = graphql`
             slug
             backdrop {
               childImageSharp {
-                fluid(toFormat: JPG, maxWidth: 308, quality: 80) {
+                fluid(
+                  toFormat: JPG
+                  quality: 80
+                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
+                  maxWidth: 309
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279) 232px, 195px"
+                ) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }

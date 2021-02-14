@@ -16,6 +16,7 @@ function RelatedMovie({ movie }: { movie: ReviewedMovie }): JSX.Element {
           <Img
             fluid={movie.backdrop.childImageSharp.fluid}
             alt={`A still from ${movie.title} (${movie.year})`}
+            fadeIn={false}
           />
         )}
       </Link>

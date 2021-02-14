@@ -7,7 +7,7 @@
   grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
   row-gap: 1.5rem;
 
-  @media (max-width: $breakpoint_desktop) {
+  @media (max-width: #{$breakpoint_desktop - 1px}) {
     grid-template-columns: repeat(2, minmax(155px, 1fr));
   }
 }
