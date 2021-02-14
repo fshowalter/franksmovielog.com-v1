@@ -50,7 +50,13 @@ export const pageQuery = graphql`
   query {
     backdrop: file(absolutePath: { regex: "/backdrops/how-i-grade.png$/" }) {
       childImageSharp {
-        fluid(toFormat: JPG, maxWidth: 1000, quality: 80) {
+        fluid(
+          toFormat: JPG
+          quality: 80
+          srcSetBreakpoints: [414, 640, 818, 904, 1280, 1808, 2000]
+          maxWidth: 1000
+          sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
+        ) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
