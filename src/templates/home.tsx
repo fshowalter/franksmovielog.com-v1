@@ -176,9 +176,9 @@ export const pageQuery = graphql`
               fluid(
                 toFormat: JPG
                 quality: 80
-                srcSetBreakpoints: [355, 410, 459, 710, 810, 918, 1184]
+                srcSetBreakpoints: [355, 411, 459, 710, 822, 918, 1184]
                 maxWidth: 592
-                sizes: "(max-width: 414px) 355px, (max-width: 768px) 592px, (max-width: 1024px) 459px, (max-width: 1280px) 410px, 592px"
+                sizes: "(max-width: 414px) 355px, (max-width: 1023px) 592px, (max-width: 1279px) 459px, (min-width: 1280px) 411px, 592px"
               ) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
