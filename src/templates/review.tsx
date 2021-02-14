@@ -332,7 +332,13 @@ export const pageQuery = graphql`
       }
       poster {
         childImageSharp {
-          fluid(toFormat: JPG, maxWidth: 250, quality: 80) {
+          fluid(
+            toFormat: JPG
+            quality: 80
+            srcSetBreakpoints: [93, 141, 160, 186, 282, 320, 500]
+            maxWidth: 250
+            sizes: "(max-width: 414px) 93px, (max-width: 767px) 141px, (max-width: 1023px) 160px, 250px"
+          ) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
