@@ -2,7 +2,7 @@
 
 .avatar {
   border-radius: 50%;
-  display: block;
+  display: block !important;
   margin: 0 auto var(--step-5);
   max-width: 200px;
   overflow: hidden;

@@ -347,6 +347,7 @@ export const pageQuery = graphql`
         title
         lastReviewGrade: last_review_grade
         slug
+        year
         backdrop {
           childImageSharp {
             fluid(
@@ -376,6 +377,7 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            year
             backdrop {
               childImageSharp {
                 fluid(
@@ -405,6 +407,7 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            year
             backdrop {
               childImageSharp {
                 fluid(
@@ -434,6 +437,7 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            year
             backdrop {
               childImageSharp {
                 fluid(
@@ -463,6 +467,7 @@ export const pageQuery = graphql`
             title
             lastReviewGrade: last_review_grade
             slug
+            year
             backdrop {
               childImageSharp {
                 fluid(

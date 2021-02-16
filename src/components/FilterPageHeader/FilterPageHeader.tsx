@@ -18,9 +18,13 @@ export default function FilterPageHeader({
   return (
     <header className={className}>
       {avatar && (
-        <div className={styles.avatar}>
-          <Img fixed={avatar} alt={alt} fadeIn={false} loading="eager" />
-        </div>
+        <Img
+          className={styles.avatar}
+          fixed={avatar}
+          alt={alt}
+          fadeIn={false}
+          loading="eager"
+        />
       )}
       <h2 className={styles.heading}>{heading}</h2>
       <p className={styles.tagline}>{tagline}</p>
