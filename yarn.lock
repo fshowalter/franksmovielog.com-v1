@@ -2283,20 +2283,12 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-motion@*":
-  version "0.0.29"
-  resolved "https://registry.yarnpkg.com/@types/react-motion/-/react-motion-0.0.29.tgz#1a22e11bc1452150e8aa58463f72dd921ff10721"
-  integrity sha512-MD1DbdcDKruR0zz5Z0XIlrkPdjDMgYx0AHhbaoTBpDirUTt8Bd7x6OFE458nEINZxfPW0EcEOw2O8S/WwGNLsA==
+"@types/react-slider@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@types/react-slider/-/react-slider-1.1.1.tgz#b6ac88d926cdb1a8565e81d9e1521190191898bc"
+  integrity sha512-SfP4L/QIFdAcypcMTX4nWVTt5bGjtMJtBMOkok4yn+x8gaMrgvgDF4MhkJmxIZFOn+m2iYNSXasA4KoGf6nevw==
   dependencies:
     "@types/react" "*"
-
-"@types/react-slider@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/react-slider/-/react-slider-1.0.0.tgz#bdb29573d6cee2b269ff2814b3cadd08f5dc48d5"
-  integrity sha512-OQpKbS1J96UwUGOqMiVedFM5ds73HQmYufL3yEoLQ51NCUof2A2NQqpeu5U1EwZQI3MhERU78uXhKJzY7Lbqbw==
-  dependencies:
-    "@types/react" "*"
-    "@types/react-motion" "*"
 
 "@types/react-test-renderer@^17.0.0":
   version "17.0.0"
