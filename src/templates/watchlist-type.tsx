@@ -342,9 +342,9 @@ export const pageQuery = graphql`
               toFormat: JPG
               jpegQuality: 80
               quality: 80
-              srcSetBreakpoints: [130, 165, 260, 330, 386]
-              maxWidth: 193
-              sizes: "(max-width: 414px) 165px, (max-width: 503px) 193px, (max-width: 655px) 165px, (max-width: 725px) 130px, (max-width: 887px) 193px, (max-width: 1279px) 165px, (max-width: 1291px) 193px, 130px"
+              srcSetBreakpoints: [414, 640, 818, 904, 1280, 1808, 2000]
+              maxWidth: 1000
+              sizes: "(max-width: 414px) 165px, (max-width: 503px]) 488px, (max-width: 655px) 165px, (max-width: 725px) 126px, 904px"
             ) {
               ...GatsbyImageSharpFluid_tracedSVG
             }

@@ -3,10 +3,13 @@
 .container {
   border-top: solid 1px var(--color-background);
   display: grid;
+  margin: 0 auto;
+  max-width: 40rem;
   padding-top: var(--step-5);
 
-  @media (min-width: 720px) {
+  @media (min-width: $breakpoint_desktop) {
     grid-template-columns: 375px 1fr;
+    max-width: unset;
   }
 
   @media (min-width: 80rem) {
