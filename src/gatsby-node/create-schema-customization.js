@@ -191,22 +191,6 @@ function addReviewLinks(text, reviewedMovieNodes) {
   return result;
 }
 
-const reviewedMovie = {
-  type: "ReviewedMoviesJson",
-  connectionType: "ReviewedMoviesJson",
-  resolve: (source, args, context) => {
-    return context.nodeModel.runQuery({
-      query: {
-        filter: {
-          imdb_id: { eq: source.imdb_id },
-        },
-      },
-      type: "ReviewedMoviesJson",
-      firstOnly: true,
-    });
-  },
-};
-
 const viewingsJson = {
   name: "ViewingsJson",
   interfaces: ["Node"],
