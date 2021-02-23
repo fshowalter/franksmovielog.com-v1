@@ -6,7 +6,7 @@ title: "X-Men: Days of Future Past (2014)"
 grade: C+
 slug: x-men-days-of-future-past-2014
 venue: Blu-ray
-venue_notes:
+venue_notes: 2014 | 20th Century Fox | Theatrical Version
 ---
 
-The story makes no sense but watching it you’d be hard pressed to care. Fassbender and McAvoy may not be as good as they were in first class, but still prove engaging. Jackman moves the film along then gets out of the way. Best part: it retcons the entirety of Lat Stand. Worst part: it doesn’t explain the tag at the end of the Wolverine. And which stadium did magneto pick up?
+A convoluted time-travel story that crumbles under the slightest introspection. But I’m hard pressed to care given it retcons <span data-imdb-id="tt0376994">_Last Stand_</span> from existence. James McAvoy and Michael Fassbender wring out what little gravitas the material offers.
