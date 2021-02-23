@@ -195,8 +195,14 @@ const reviewedMovie = {
   type: "ReviewedMoviesJson",
   connectionType: "ReviewedMoviesJson",
   resolve: (source, args, context) => {
-    return getReviewedMovies(context.nodeModel).find((movie) => {
-      return movie.imdb_id === source.imdb_id;
+    return context.nodeModel.runQuery({
+      query: {
+        filter: {
+          imdb_id: { eq: source.imdb_id },
+        },
+      },
+      type: "ReviewedMoviesJson",
+      firstOnly: true,
     });
   },
 };
@@ -205,7 +211,21 @@ const viewingsJson = {
   name: "ViewingsJson",
   interfaces: ["Node"],
   fields: {
-    reviewedMovie,
+    reviewedMovie: {
+      type: "ReviewedMoviesJson",
+      connectionType: "ReviewedMoviesJson",
+      resolve: (source, args, context) => {
+        return context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: "ReviewedMoviesJson",
+          firstOnly: true,
+        });
+      },
+    },
   },
 };
 
@@ -213,7 +233,21 @@ const watchlistMoviesJson = {
   name: "WatchlistMoviesJson",
   interfaces: ["Node"],
   fields: {
-    reviewedMovie,
+    reviewedMovie: {
+      type: "ReviewedMoviesJson",
+      connectionType: "ReviewedMoviesJson",
+      resolve: (source, args, context) => {
+        return context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: "ReviewedMoviesJson",
+          firstOnly: true,
+        });
+      },
+    },
   },
 };
 
