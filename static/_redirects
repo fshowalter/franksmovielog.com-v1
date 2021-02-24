@@ -1,0 +1,55 @@
+# cast links to performers
+/watchlist/cast/* /watchlist/performers/:splat 301
+
+# old cast-and-crew to new watchlist entries
+/cast-and-crew/christopher-lee-i /watchlist/performers/christopher-lee 301
+/cast-and-crew/humphrey-bogart /watchlist/performers/humphrey-bogart 301
+/cast-and-crew/john-wayne-i /watchlist/performers/john-wayne 301
+/cast-and-crew/sam-peckinpah /watchlist/directors/sam-peckinpah 301
+
+# old review links to new
+/browse/reviews/dont-torture-a-duckling-1972 /reviews/dont-torture-a-duckling-1972 301
+/browse/reviews/up-the-river-1930 /reviews/up-the-river-1930 301
+/browse/reviews/kill-a-dragon-1967 /reviews/kill-a-dragon-1967 301
+/reviews/island-of-death-1977 /reviews/island-of-death-1976 301
+/reviews/curse-of-the-demon-1958 /reviews/curse-of-the-demon-1957 301
+/reviews/l-age-d-or-1930 /reviews/lage-dor-1930 301
+/movies/the-cabin-in-the-woods-2011 /reviews/the-cabin-in-the-woods-2011/ 301
+
+
+# misc spam
+/config.bak.php /gone 410
+/wp-admin/config.bak.php /gone 410
+/wp-content/config.bak.php /gone 410
+/wp-login.php /gone 410
+/wp-content/wp-1ogin_bak.php /gone 410
+/.env /gone 410
+
+
+# old favicons
+/favicon.ico /gone 410
+/apple-touch-icon.png /gone 410
+/apple-touch-icon-120x120.png /gone 410
+/apple-touch-icon-152x152.png /gone 410
+/apple-touch-icon-120x120-precomposed.png /gone 410
+/apple-touch-icon-precomposed.png /gone 410
+
+# old cast and crew links we're not bringing back
+/cast-and-crew/yakima-canutt /gone 410
+/cast-and-crew/betta-st-john /gone 410
+/cast-and-crew/robin-atkin-downes /gone 410
+/cast-and-crew/maureen-o-sullivan-i /gone 410
+/watchlist/cast/bill-murray /gone 410
+/cast-and-crew/bill-finger-ii /gone 410
+/cast-and-crew/martin-kitrosser /gone 410
+/cast-and-crew/frank-forsyth-i /gone 410
+/cast-and-crew/bob-kane-i /gone 410
+/cast-and-crew/corey-feldman-i /gone 410
+/cast-and-crew/joan-blondell /gone 410
+
+# misc old links
+/images/5-stars-4661cb2a.svg /gone 410
+/metrics /gone 410
+
+# misc
+/ads.txt /gone 410
