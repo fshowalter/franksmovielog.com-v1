@@ -325,7 +325,7 @@ interface ChangePageAction {
   value: number;
 }
 
-/** Action to change page. */
+/** Action to toggle reviewed. */
 interface ToggleReviewedAction {
   type: typeof TOGGLE_REVIEWED;
 }

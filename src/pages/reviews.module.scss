@@ -21,7 +21,7 @@
 .left {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". toggle ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
@@ -29,7 +29,7 @@
   grid-template-rows: auto var(--step-5) auto var(--step-1) auto 1.5rem;
 
   @media (min-width: $breakpoint_desktop) {
-    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . .";
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." ". toggle ." ". . .";
   }
 }
 
@@ -111,12 +111,21 @@
   }
 }
 
+.list_item_letter_grade {
+  min-width: 3ch;
+  text-align: left;
+}
+
 .list_item_grade {
   height: 15px;
-  margin-right: var(--step--2);
   width: auto;
 
   @media (min-width: $breakpoint_desktop) {
     height: 16px;
   }
+}
+
+.toggle_grades_button {
+  grid-area: toggle;
+  justify-self: center;
 }

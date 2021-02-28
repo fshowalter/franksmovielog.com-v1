@@ -13,6 +13,7 @@ import {
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
+import ToggleButton from "../components/ToggleButton";
 import { ReviewedMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
@@ -87,6 +88,8 @@ type State = {
   maxYear: number;
   /** The active sort value. */
   sortValue: string;
+  /** True to show grades vs. stars. */
+  showGrades: boolean;
 };
 
 function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
@@ -108,6 +111,7 @@ function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
     minYear,
     maxYear,
     sortValue: "title",
+    showGrades: false,
   };
 }
 
@@ -115,6 +119,7 @@ const FILTER_TITLE = "FILTER_TITLE";
 const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
 const SORT = "SORT";
 const CHANGE_PAGE = "CHANGE_PAGE";
+const TOGGLE_GRADES = "TOGGLE_GRADES";
 
 /** Action to filter by title. */
 interface FilterTitleAction {
@@ -142,10 +147,16 @@ interface ChangePageAction {
   value: number;
 }
 
+/** Action to toggle grades. */
+interface ToggleGradesAction {
+  type: typeof TOGGLE_GRADES;
+}
+
 type ActionTypes =
   | FilterTitleAction
   | FilterReleaseYearAction
   | SortAction
+  | ToggleGradesAction
   | ChangePageAction;
 
 /**
@@ -236,6 +247,12 @@ function reducer(state: State, action: ActionTypes): State {
         }),
       };
     }
+    case TOGGLE_GRADES: {
+      return {
+        ...state,
+        showGrades: !state.showGrades,
+      };
+    }
     default:
       throw new Error();
   }
@@ -324,6 +341,14 @@ export default function ReviewsPage({
             numberOfItems={state.filteredReviews.length}
             className={styles.pagination_info}
           />
+          <div className={styles.toggle_grades_button}>
+            <ToggleButton
+              id="show_grade-toggle"
+              onClick={() => dispatch({ type: TOGGLE_GRADES })}
+            >
+              {state.showGrades ? "Show Stars" : "Show Grades"}
+            </ToggleButton>
+          </div>
         </div>
         <div className={styles.right}>
           <ol className={styles.list}>
@@ -340,11 +365,17 @@ export default function ReviewsPage({
                     </span>
                   </Link>
                   <div className={styles.list_item_slug}>
-                    <Grade
-                      grade={review.lastReviewGrade}
-                      className={styles.list_item_grade}
-                    />
-                    {review.lastReviewDate}
+                    {}
+                    {state.showGrades ? (
+                      <div className={styles.list_item_letter_grade}>
+                        {review.lastReviewGrade}
+                      </div>
+                    ) : (
+                      <Grade
+                        grade={review.lastReviewGrade}
+                        className={styles.list_item_grade}
+                      />
+                    )}
                   </div>
                 </li>
               );
