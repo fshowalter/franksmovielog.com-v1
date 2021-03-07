@@ -1,1 +1,1 @@
-export const srOnly: string;
+export const srOnlyCss: string;

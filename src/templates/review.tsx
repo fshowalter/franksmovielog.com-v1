@@ -10,7 +10,40 @@ import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
 import { ReviewedMovie } from "../types";
 import toSentenceArray from "../utils/to-sentence-array";
-import styles from "./review.module.scss";
+import {
+  akaContainerCss,
+  akaListCss,
+  akaListItemCss,
+  bodyCss,
+  castCss,
+  castLabelCss,
+  containerCss,
+  contentCss,
+  creditsCss,
+  dateCss,
+  dateIconCss,
+  directorsCss,
+  gradeCss,
+  headerCss,
+  headerMetaCss,
+  imageCss,
+  olderViewingsCss,
+  olderViewingsHeadingCss,
+  olderViewingsListCss,
+  posterCss,
+  relatedCss,
+  relatedHeaderCss,
+  relatedHeadingCss,
+  relatedMoreCss,
+  relatedNameCss,
+  reviewCss,
+  reviewsListCss,
+  separatorCss,
+  slugCss,
+  titleCss,
+  viewingDateIconCss,
+  watchlistCss,
+} from "./review.module.scss";
 
 function buildStructuredData(movie: ReviewedMovie) {
   const gradeMap: { [index: string]: number } = {
@@ -56,17 +89,16 @@ function buildStructuredData(movie: ReviewedMovie) {
 
 function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
   return (
-    <div className={styles.related}>
+    <div className={relatedCss}>
       {movie.watchlist.collections.map((collection) => (
         <RelatedMovies movies={collection.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
-              More{" "}
-              <span className={styles.related_name}>{collection.name}</span>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
+              More <span className={relatedNameCss}>{collection.name}</span>
             </h3>
             <Link
               to={`/watchlist/collections/${collection.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -75,14 +107,13 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
       ))}
       {movie.watchlist.performers.map((performer) => (
         <RelatedMovies movies={performer.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
-              More with{" "}
-              <span className={styles.related_name}>{performer.name}</span>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
+              More with <span className={relatedNameCss}>{performer.name}</span>
             </h3>
             <Link
               to={`/watchlist/performers/${performer.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -91,14 +122,14 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
       ))}
       {movie.watchlist.directors.map((director) => (
         <RelatedMovies movies={director.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
               More directed by{" "}
-              <span className={styles.related_name}>{director.name}</span>
+              <span className={relatedNameCss}>{director.name}</span>
             </h3>
             <Link
               to={`/watchlist/directors/${director.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -107,14 +138,14 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
       ))}
       {movie.watchlist.writers.map((writer) => (
         <RelatedMovies movies={writer.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
               More written by{" "}
-              <span className={styles.related_name}>{writer.name}</span>
+              <span className={relatedNameCss}>{writer.name}</span>
             </h3>
             <Link
               to={`/watchlist/writers/${writer.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -122,11 +153,11 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
         </RelatedMovies>
       ))}
       <RelatedMovies movies={movie.browseMore}>
-        <header className={styles.related_header}>
-          <h3 className={styles.related_heading}>
-            More <span className={styles.related_name}>Reviews</span>
+        <header className={relatedHeaderCss}>
+          <h3 className={relatedHeadingCss}>
+            More <span className={relatedNameCss}>Reviews</span>
           </h3>
-          <Link to="/reviews/" className={styles.related_more}>
+          <Link to="/reviews/" className={relatedMoreCss}>
             See All &raquo;
           </Link>
         </header>
@@ -154,20 +185,20 @@ export default function Review({
         image={movie.seoImage.childImageSharp.resize.src}
         article
       />
-      <main className={styles.container}>
+      <main className={containerCss}>
         {movie.backdrop && (
           <Img
-            className={styles.image}
+            className={imageCss}
             fluid={movie.backdrop.childImageSharp.fluid}
             alt={`A still from ${movie.title} (${movie.year})`}
             loading="eager"
             fadeIn={false}
           />
         )}
-        <header className={styles.header}>
-          <h1 className={styles.title}>{movie.title}</h1>
-          <div className={styles.header_meta}>
-            {movie.year} <span className={styles.separator}>|</span>{" "}
+        <header className={headerCss}>
+          <h1 className={titleCss}>{movie.title}</h1>
+          <div className={headerMetaCss}>
+            {movie.year} <span className={separatorCss}>|</span>{" "}
             {movie.countries.reduce<JSX.Element | null>((acc, country) => {
               if (acc === null) {
                 return <>{country}</>;
@@ -176,66 +207,66 @@ export default function Review({
               return (
                 <>
                   {acc}
-                  <span className={styles.separator}>&ndash;</span>
+                  <span className={separatorCss}>&ndash;</span>
                   {country}
                 </>
               );
             }, null)}{" "}
-            <span className={styles.separator}>|</span> {movie.runtimeMinutes}
+            <span className={separatorCss}>|</span> {movie.runtimeMinutes}
             &#x02009;min
           </div>
           {movie.akaTitles.length > 0 && (
-            <div className={styles.aka_container}>
+            <div className={akaContainerCss}>
               aka:
-              <ul className={styles.aka_list}>
+              <ul className={akaListCss}>
                 {movie.akaTitles.map((akaTitle) => (
-                  <li className={styles.aka_list_item}>{akaTitle}</li>
+                  <li className={akaListItemCss}>{akaTitle}</li>
                 ))}
               </ul>
             </div>
           )}
         </header>
-        <aside className={styles.credits}>
+        <aside className={creditsCss}>
           {movie.poster && (
             <Img
-              className={styles.poster}
+              className={posterCss}
               fluid={movie.poster.childImageSharp.fluid}
               alt={`A poster from ${movie.title} (${movie.year})`}
               loading="eager"
               fadeIn={false}
             />
           )}
-          <div className={styles.directors}>
-            <span className={styles.cast_label}>Directed by</span>
+          <div className={directorsCss}>
+            <span className={castLabelCss}>Directed by</span>
             {toSentenceArray(movie.directors.map((director) => director.name))}
           </div>
-          <div className={styles.cast}>
-            <span className={styles.cast_label}>Starring</span>
+          <div className={castCss}>
+            <span className={castLabelCss}>Starring</span>
             {toSentenceArray(movie.principalCast.map((person) => person.name))}
           </div>
-          <div className={styles.watchlist}>
+          <div className={watchlistCss}>
             <WatchlistLinks movie={movie} />
           </div>
         </aside>
-        <ul className={styles.reviews_list}>
+        <ul className={reviewsListCss}>
           {movie.reviews.map((review) => (
             <li>
-              <article className={styles.review}>
-                <header className={styles.slug}>
-                  <DateIcon className={styles.date_icon} />{" "}
-                  <span className={styles.date}>{review.frontmatter.date}</span>{" "}
-                  via {review.frontmatter.venue}
+              <article className={reviewCss}>
+                <header className={slugCss}>
+                  <DateIcon className={dateIconCss} />{" "}
+                  <span className={dateCss}>{review.frontmatter.date}</span> via{" "}
+                  {review.frontmatter.venue}
                   {review.frontmatter.venueNotes && (
                     <> ({review.frontmatter.venueNotes})</>
                   )}
                 </header>
-                <div className={styles.content}>
+                <div className={contentCss}>
                   <Grade
                     grade={review.frontmatter.grade}
-                    className={styles.grade}
+                    className={gradeCss}
                   />
                   <RenderedMarkdown
-                    className={styles.body}
+                    className={bodyCss}
                     // eslint-disable-next-line react/no-danger
                     text={review.linkedHtml}
                   />
@@ -245,15 +276,15 @@ export default function Review({
           ))}
         </ul>
         {movie.olderViewings.length > 0 && (
-          <div className={styles.older_viewings}>
-            <h3 className={styles.older_viewings_heading}>Older Viewings</h3>
-            <ul className={styles.older_viewings_list}>
+          <div className={olderViewingsCss}>
+            <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>
+            <ul className={olderViewingsListCss}>
               {movie.olderViewings.map((viewing) => (
                 <li>
-                  <div className={styles.slug}>
-                    <DateIcon className={styles.viewing_date_icon} />{" "}
-                    <span className={styles.date}>{viewing.viewingDate}</span>{" "}
-                    via {viewing.venue}
+                  <div className={slugCss}>
+                    <DateIcon className={viewingDateIconCss} />{" "}
+                    <span className={dateCss}>{viewing.viewingDate}</span> via{" "}
+                    {viewing.venue}
                   </div>
                 </li>
               ))}

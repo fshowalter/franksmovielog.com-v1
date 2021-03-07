@@ -1,1 +1,1 @@
-export const icon: string;
+export const iconCss: string;

@@ -1,6 +1,6 @@
 @import "./src/styles/breakpoints";
 
-.container {
+.containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
   grid-template-areas: ". header ." ". . ." ". list ." ". . .";
@@ -19,53 +19,16 @@
   }
 }
 
-.page_header {
+.pageHeaderCss {
   grid-area: header;
 }
 
-.list {
+.listCss {
   display: block;
   grid-area: list;
 }
 
-.list_item_title {
-  font-size: 1rem;
-  line-height: 1.3;
-  margin-top: 0.25rem;
-  text-rendering: optimizeLegibility;
-}
-
-.list_item_title_year {
-  color: var(--color-text-secondary);
-  font-size: 0.75rem;
-  font-weight: 300;
-}
-
-.list_item_grade {
-  height: 1rem;
-  margin-top: 0.15rem;
-  width: auto;
-}
-
-.list_item_cast_and_crew {
-  color: var(--color-text-secondary);
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  margin-top: 1rem;
-  text-align: left;
-}
-
-.percent {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  grid-area: percent;
-  margin: 0 auto;
-  width: 150px;
-}
-
-.heading {
+.headingCss {
   font-size: var(--step-3);
   text-align: center;
 
@@ -74,7 +37,7 @@
   }
 }
 
-.tagline {
+.taglineCss {
   color: var(--color-text-secondary);
   font-family: var(--font-serif);
   font-size: 16px;
@@ -85,25 +48,25 @@
   }
 }
 
-.year_list {
+.yearListCss {
   font-feature-settings: "tnum";
   margin-top: 1.5rem;
 }
 
-.year_list_item {
+.yearListItemCss {
   display: inline-block;
   margin-right: 2ch;
 }
 
-.year_list_item_link {
+.yearListItemLinkCss {
   color: var(--color-link);
 }
 
-.person_link {
+.personLinkCss {
   color: var(--color-link);
 }
 
-.table_heading {
+.tableHeadingCss {
   font-size: var(--step-1);
   line-height: 2.5;
   text-align: center;
@@ -113,12 +76,12 @@
   }
 }
 
-.table_title_year {
+.tableTitleYearCss {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
 }
 
-.table {
+.tableCss {
   border: 1px solid var(--color-background);
   border-collapse: collapse;
   line-height: 1.75;
@@ -126,7 +89,7 @@
   width: 100%;
 }
 
-.table_row {
+.tableRowCss {
   font-size: 1.125rem;
 
   &:nth-child(even) {
@@ -134,12 +97,12 @@
   }
 }
 
-.table_fill_cell {
+.tableFillCellCss {
   padding-right: var(--step-1);
   width: 100%;
 }
 
-.table_index_cell {
+.tableIndexCellCss {
   font-feature-settings: "tnum";
   text-align: right;
   vertical-align: top;
@@ -149,14 +112,14 @@
   }
 }
 
-.table_count_cell {
+.tableCountCellCss {
   font-feature-settings: "tnum";
   padding-right: var(--step-1);
   text-align: right;
   vertical-align: top;
 }
 
-.details_label {
+.detailsLabelCss {
   color: var(--color-text-secondary);
   font-size: 1rem;
   font-weight: 400;
@@ -164,7 +127,7 @@
   text-align: left;
 }
 
-.details_list {
+.detailsListCss {
   list-style-type: decimal;
   margin: 0 1rem;
 
@@ -185,32 +148,28 @@
   }
 }
 
-.text_header {
-  text-align: left;
-}
-
-.number_header {
+.numberHeaderCss {
   padding-right: var(--step-1);
   text-align: right;
   white-space: nowrap;
 }
 
-.viewing_detail {
+.viewingDetailCss {
   font-feature-settings: "tnum";
   font-size: 1rem;
   letter-spacing: normal;
 }
 
-.viewing_for_movie {
+.viewingForMovieCss {
   display: inline;
 }
 
-.via {
+.viaCss {
   color: var(--color-text-secondary);
   display: inline;
 }
 
-.stat_pops {
+.statPopsCss {
   column-gap: var(--step-1);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
@@ -222,7 +181,7 @@
   }
 }
 
-.stat_pop {
+.statPopCss {
   border: 1px solid var(--color-background);
   border-radius: 50%;
   display: flex;
@@ -233,13 +192,13 @@
   width: 10rem;
 }
 
-.stat_pop_number {
+.statPopNumberCss {
   display: block;
   font-size: var(--step-5);
   text-align: center;
 }
 
-.stat_pop_legend {
+.statPopLegendCss {
   color: var(--color-text-secondary);
   display: block;
   font-size: 1.125rem;

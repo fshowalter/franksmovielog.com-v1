@@ -1,6 +1,6 @@
 @import "./src/styles/breakpoints";
 
-.container {
+.containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
   grid-template-areas: ". list ." "pagination pagination pagination";
@@ -19,7 +19,7 @@
   }
 }
 
-.list {
+.listCss {
   grid-area: list;
 
   @media (min-width: $breakpointDesktop) {
@@ -28,7 +28,7 @@
   }
 }
 
-.list_item {
+.listItemCss {
   @media (min-width: $breakpointDesktop) {
     border-top: solid 1px var(--color-background);
     display: flex;
@@ -44,7 +44,7 @@
       padding-left: var(--step-1);
     }
 
-    &.wide {
+    &.wideCss {
       padding: 2.5rem 0;
       width: 100%;
     }
@@ -63,7 +63,7 @@
   }
 }
 
-.review {
+.reviewCss {
   display: grid;
   grid-template-areas: ". . ." "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". . ." ". border ." ". . .";
   grid-template-columns: 1fr minmax(auto, 60ch) 1fr;
@@ -87,9 +87,7 @@
       display: none;
     }
 
-    &.first,
-    &.last,
-    &.wide {
+    &.wideCss {
       align-items: start;
       column-gap: calc(2 * var(--step-1));
       grid-template-areas: "header image" ". image" "body image" ". image" "footer image";
@@ -99,7 +97,7 @@
   }
 }
 
-.image_link {
+.imageLinkCss {
   border: 0.5em solid #e9e7e0;
   display: block;
   grid-area: image;
@@ -111,20 +109,20 @@
   }
 }
 
-.review_header {
+.reviewHeaderCss {
   display: grid;
   grid-area: header;
   grid-template-areas: "heading" "." "grade" "." "credits";
   grid-template-rows: auto 1.5rem auto 1.5rem auto;
 }
 
-.article_heading {
+.articleHeadingCss {
   font-size: var(--step-2);
   font-weight: 700;
   grid-area: heading;
 }
 
-.article_footer {
+.articleFooterCss {
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +135,7 @@
   }
 }
 
-.date {
+.dateCss {
   color: var(--color-text-secondary);
   display: flex;
   font-feature-settings: "tnum";
@@ -154,13 +152,13 @@
   white-space: nowrap;
 }
 
-.review_year {
+.reviewYearCss {
   color: var(--color-text-secondary);
   font-size: 16px;
   font-weight: 300;
 }
 
-.review_credits {
+.reviewCreditsCss {
   color: var(--color-text-secondary);
   font-size: 16px;
   font-weight: 400;
@@ -169,24 +167,24 @@
   text-align: left;
 }
 
-.review_grade {
+.reviewGradeCss {
   align-self: flex-start;
   grid-area: grade;
   height: 1.75rem;
   width: auto;
 }
 
-.article_body {
+.articleBodyCss {
   color: rgba(0, 0, 0, 0.65);
   font-size: 18px;
   grid-area: body;
 }
 
-.watchlist_links {
+.watchlistLinksCss {
   display: contents;
 }
 
-.pagination {
+.paginationCss {
   grid-area: pagination;
 
   @media (min-width: $breakpointDesktop) {
@@ -194,7 +192,7 @@
   }
 }
 
-:global(.global__excerpt_link) {
+:global(.globalExcerptLinkCss) {
   font-size: 14px;
   text-transform: uppercase;
   white-space: nowrap;

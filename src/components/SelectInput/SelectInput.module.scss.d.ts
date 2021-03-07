@@ -1,1 +1,1 @@
-export const selectInput: string;
+export const selectInputCss: string;

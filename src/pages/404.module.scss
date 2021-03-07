@@ -1,6 +1,6 @@
 @import "./src/styles/breakpoints";
 
-.article {
+.articleCss {
   display: grid;
   grid-template-areas: "image image image" ". . ." ". body ." ". . .";
   grid-template-columns:
@@ -18,11 +18,11 @@
   }
 }
 
-.image {
+.imageCss {
   display: block;
   grid-area: image;
 }
 
-.body {
+.bodyCss {
   grid-area: body;
 }

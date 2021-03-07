@@ -10,7 +10,24 @@ import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
 import { MarkdownReview } from "../types";
 import toSentenceArray from "../utils/to-sentence-array";
-import styles from "./home.module.scss";
+import {
+  articleBodyCss,
+  articleFooterCss,
+  articleHeadingCss,
+  containerCss,
+  dateCss,
+  imageLinkCss,
+  listCss,
+  listItemCss,
+  paginationCss,
+  reviewCreditsCss,
+  reviewCss,
+  reviewGradeCss,
+  reviewHeaderCss,
+  reviewYearCss,
+  watchlistLinksCss,
+  wideCss,
+} from "./home.module.scss";
 
 /**
  * Renders the home (index) page.
@@ -39,8 +56,8 @@ export default function HomeTemplate({
         article={false}
         image={null}
       />
-      <main className={styles.container} ref={listHeader}>
-        <ol className={styles.list}>
+      <main className={containerCss} ref={listHeader}>
+        <ol className={listCss}>
           {updates.map((update, index) => {
             const review = update;
             const isWide =
@@ -53,14 +70,12 @@ export default function HomeTemplate({
             return (
               <li
                 value={listItemValue}
-                className={`${styles.list_item} ${isWide ? styles.wide : ""}`}
+                className={`${listItemCss} ${isWide ? wideCss : ""}`}
               >
-                <article
-                  className={`${styles.review} ${isWide ? styles.wide : ""}`}
-                >
+                <article className={`${reviewCss} ${isWide ? wideCss : ""}`}>
                   <Link
                     rel="canonical"
-                    className={styles.image_link}
+                    className={imageLinkCss}
                     to={`/reviews/${review.frontmatter.slug}/`}
                   >
                     {movie.backdrop && (
@@ -72,21 +87,21 @@ export default function HomeTemplate({
                       />
                     )}
                   </Link>
-                  <header className={styles.review_header}>
-                    <h2 className={styles.article_heading}>
+                  <header className={reviewHeaderCss}>
+                    <h2 className={articleHeadingCss}>
                       <Link
                         to={`/reviews/${review.frontmatter.slug}/`}
                         rel="canonical"
                       >
                         {movie.title}{" "}
-                        <span className={styles.review_year}>{movie.year}</span>
+                        <span className={reviewYearCss}>{movie.year}</span>
                       </Link>
                     </h2>
                     <Grade
                       grade={review.frontmatter.grade}
-                      className={styles.review_grade}
+                      className={reviewGradeCss}
                     />
-                    <p className={styles.review_credits}>
+                    <p className={reviewCreditsCss}>
                       Directed by{" "}
                       {toSentenceArray(
                         movie.directors.map((person) => person.name)
@@ -99,17 +114,17 @@ export default function HomeTemplate({
                     </p>
                   </header>
                   <RenderedMarkdown
-                    className={styles.article_body}
+                    className={articleBodyCss}
                     text={review.linkedExcerpt}
                     tag="main"
                   />
-                  <footer className={styles.article_footer}>
-                    <div className={styles.date}>
+                  <footer className={articleFooterCss}>
+                    <div className={dateCss}>
                       <DateIcon /> {review.frontmatter.date}
                     </div>
                     <WatchlistLinks
                       movie={movie}
-                      className={styles.watchlist_links}
+                      className={watchlistLinksCss}
                     />
                   </footer>
                 </article>
@@ -118,7 +133,7 @@ export default function HomeTemplate({
           })}
         </ol>
         <PaginationWithLinks
-          className={styles.pagination}
+          className={paginationCss}
           currentPage={pageContext.currentPage}
           urlRoot="/"
           perPage={pageContext.limit}

@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from "react";
-import styles from "./SelectInput.module.scss";
+import { selectInputCss } from "./SelectInput.module.scss";
 
 export default function SelectInput({
   value,
@@ -18,7 +18,7 @@ export default function SelectInput({
     <select
       value={value}
       id={id}
-      className={`${styles.select_input} ${className || ""}`}
+      className={`${selectInputCss} ${className || ""}`}
       onChange={onChange}
     >
       {children}

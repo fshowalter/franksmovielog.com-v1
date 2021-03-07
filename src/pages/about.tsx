@@ -4,7 +4,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import RenderedMarkdown from "../components/RenderedMarkdown";
 import Seo from "../components/Seo";
-import styles from "./about.module.scss";
+import { articleCss, bodyCss, imageCss } from "./about.module.scss";
 
 export default function AboutPage({ data }: PageQueryResult): JSX.Element {
   const { backdrop, page } = data;
@@ -18,15 +18,15 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
         article
       />
       <main>
-        <article className={styles.article}>
+        <article className={articleCss}>
           <Img
             fluid={backdrop.childImageSharp.fluid}
             alt=""
-            className={styles.image}
+            className={imageCss}
             loading="eager"
             fadeIn={false}
           />
-          <RenderedMarkdown className={styles.body} text={page.html} />
+          <RenderedMarkdown className={bodyCss} text={page.html} />
         </article>
       </main>
     </Layout>

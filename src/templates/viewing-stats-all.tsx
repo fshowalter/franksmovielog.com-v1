@@ -2,7 +2,34 @@ import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
-import styles from "./viewing-stats-all.module.scss";
+import {
+  containerCss,
+  detailsLabelCss,
+  detailsListCss,
+  headingCss,
+  listCss,
+  numberHeaderCss,
+  pageHeaderCss,
+  personLinkCss,
+  statPopCss,
+  statPopLegendCss,
+  statPopNumberCss,
+  statPopsCss,
+  tableCountCellCss,
+  tableCss,
+  tableFillCellCss,
+  tableHeadingCss,
+  tableIndexCellCss,
+  tableRowCss,
+  tableTitleYearCss,
+  taglineCss,
+  viaCss,
+  viewingDetailCss,
+  viewingForMovieCss,
+  yearListCss,
+  yearListItemCss,
+  yearListItemLinkCss,
+} from "./viewing-stats-all.module.scss";
 
 function buildSubHeading(numberOfYears: number): string {
   return `${(numberOfYears - 1).toString()} Years in Review`;
@@ -11,10 +38,7 @@ function buildSubHeading(numberOfYears: number): string {
 function buildPersonName(type: string, person: Person): JSX.Element {
   if (person.slug) {
     return (
-      <Link
-        className={styles.person_link}
-        to={`/watchlist/${type}/${person.slug}`}
-      >
+      <Link className={personLinkCss} to={`/watchlist/${type}/${person.slug}`}>
         {person.fullName}
       </Link>
     );
@@ -26,32 +50,29 @@ function buildPersonName(type: string, person: Person): JSX.Element {
 function buildlMovieTitle(movie: Movie): JSX.Element {
   if (movie.slug) {
     return (
-      <Link className={styles.person_link} to={`/reviews/${movie.slug}`}>
-        {movie.title}{" "}
-        <span className={styles.table_title_year}>{movie.year}</span>
+      <Link className={personLinkCss} to={`/reviews/${movie.slug}`}>
+        {movie.title} <span className={tableTitleYearCss}>{movie.year}</span>
       </Link>
     );
   }
 
   return (
     <>
-      {movie.title}{" "}
-      <span className={styles.table_title_year}>{movie.year}</span>
+      {movie.title} <span className={tableTitleYearCss}>{movie.year}</span>
     </>
   );
 }
 
 function buildViewingDetail(viewing: Viewing): JSX.Element {
   return (
-    <span className={styles.viewing_detail}>
-      {viewing.prettyDate} <span className={styles.via}>via</span>{" "}
-      {viewing.venue}
+    <span className={viewingDetailCss}>
+      {viewing.prettyDate} <span className={viaCss}>via</span> {viewing.venue}
     </span>
   );
 }
 
 function TableHeading({ headingText }: { headingText: string }): JSX.Element {
-  return <h2 className={styles.table_heading}>{headingText}</h2>;
+  return <h2 className={tableHeadingCss}>{headingText}</h2>;
 }
 
 function MostWatchedMoviesTable({
@@ -60,30 +81,28 @@ function MostWatchedMoviesTable({
   collection: MovieWithViewings[];
 }): JSX.Element {
   return (
-    <table className={styles.table}>
+    <table className={tableCss}>
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={styles.text_header}>Title</th>
-          <th className={styles.number_header}>Viewing Count</th>
+          <th className={tableHeadingCss}>Title</th>
+          <th className={numberHeaderCss}>Viewing Count</th>
         </tr>
       </thead>
       {collection.map((movie, index) => {
         return (
           <>
-            <tr className={styles.table_row}>
-              <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
-              <td className={styles.table_fill_cell}>
-                {buildlMovieTitle(movie)}
-              </td>
-              <td className={styles.table_count_cell}>{movie.viewingCount}</td>
+            <tr className={tableRowCss}>
+              <td className={tableIndexCellCss}>{index + 1}.&nbsp;</td>
+              <td className={tableFillCellCss}>{buildlMovieTitle(movie)}</td>
+              <td className={tableCountCellCss}>{movie.viewingCount}</td>
             </tr>
             <tr>
-              <td className={styles.table_index_cell}>&nbsp;</td>
+              <td className={tableIndexCellCss}>&nbsp;</td>
               <td colSpan={2}>
                 <details>
-                  <summary className={styles.details_label}>Details</summary>
-                  <ul className={styles.details_list}>
+                  <summary className={detailsLabelCss}>Details</summary>
+                  <ul className={detailsListCss}>
                     {movie.viewings.map((detail) => {
                       return <li>{buildViewingDetail(detail)}</li>;
                     })}
@@ -104,20 +123,20 @@ function DecadeTable({
   collection: DecadeGroup[];
 }): JSX.Element {
   return (
-    <table className={styles.table}>
+    <table className={tableCss}>
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={styles.text_header}>Decade</th>
-          <th className={styles.number_header}>Viewing Count</th>
+          <th className={tableHeadingCss}>Decade</th>
+          <th className={numberHeaderCss}>Viewing Count</th>
         </tr>
       </thead>
       {collection.map((group) => {
         return (
-          <tr className={styles.table_row}>
-            <td className={styles.table_index_cell}>&nbsp;</td>
-            <td className={styles.table_fill_cell}>{group.decade}</td>
-            <td className={styles.table_count_cell}>{group.viewingCount}</td>
+          <tr className={tableRowCss}>
+            <td className={tableIndexCellCss}>&nbsp;</td>
+            <td className={tableFillCellCss}>{group.decade}</td>
+            <td className={tableCountCellCss}>{group.viewingCount}</td>
           </tr>
         );
       })}
@@ -131,20 +150,20 @@ function CountryTable({
   collection: CountryGroup[];
 }): JSX.Element {
   return (
-    <table className={styles.table}>
+    <table className={tableCss}>
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={styles.text_header}>Country</th>
-          <th className={styles.number_header}>Viewing Count</th>
+          <th className={tableHeadingCss}>Country</th>
+          <th className={numberHeaderCss}>Viewing Count</th>
         </tr>
       </thead>
       {collection.map((group) => {
         return (
-          <tr className={styles.table_row}>
-            <td className={styles.table_index_cell}>&nbsp;</td>
-            <td className={styles.table_fill_cell}>{group.name}</td>
-            <td className={styles.table_count_cell}>{group.viewingCount}</td>
+          <tr className={tableRowCss}>
+            <td className={tableIndexCellCss}>&nbsp;</td>
+            <td className={tableFillCellCss}>{group.name}</td>
+            <td className={tableCountCellCss}>{group.viewingCount}</td>
           </tr>
         );
       })}
@@ -160,35 +179,35 @@ function MostWatchedPersonTable({
   watchlistType: string;
 }): JSX.Element {
   return (
-    <table className={styles.table}>
+    <table className={tableCss}>
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={styles.text_header}>Name</th>
-          <th className={styles.number_header}>Viewing Count</th>
+          <th className={tableHeadingCss}>Name</th>
+          <th className={numberHeaderCss}>Viewing Count</th>
         </tr>
       </thead>
       {collection.map((person, index) => {
         return (
           <>
-            <tr className={styles.table_row}>
-              <td className={styles.table_index_cell}>{index + 1}.&nbsp;</td>
-              <td className={styles.table_fill_cell}>
+            <tr className={tableRowCss}>
+              <td className={tableIndexCellCss}>{index + 1}.&nbsp;</td>
+              <td className={tableFillCellCss}>
                 {buildPersonName(watchlistType, person)}
               </td>
-              <td className={styles.table_count_cell}>{person.viewingCount}</td>
+              <td className={tableCountCellCss}>{person.viewingCount}</td>
             </tr>
             <tr>
-              <td className={styles.table_index_cell}>&nbsp;</td>
+              <td className={tableIndexCellCss}>&nbsp;</td>
               <td colSpan={2}>
                 <details>
-                  <summary className={styles.details_label}>Details</summary>
-                  <ul className={styles.details_list}>
+                  <summary className={detailsLabelCss}>Details</summary>
+                  <ul className={detailsListCss}>
                     {person.viewings.map((detail) => {
                       return (
                         <li>
                           {buildlMovieTitle(detail.movie)}{" "}
-                          <div className={styles.viewing_for_movie}>
+                          <div className={viewingForMovieCss}>
                             {buildViewingDetail(detail)}
                           </div>
                         </li>
@@ -225,26 +244,26 @@ export default function ViewingStatsTemplate({
         article={false}
         image={null}
       />
-      <main className={styles.container}>
-        <header className={styles.page_header}>
-          <h2 className={styles.heading}>All-Time Viewing Stats</h2>
-          <p className={styles.tagline}>
+      <main className={containerCss}>
+        <header className={pageHeaderCss}>
+          <h2 className={headingCss}>All-Time Viewing Stats</h2>
+          <p className={taglineCss}>
             {buildSubHeading(data.year.nodes.length)}
-            <ul className={styles.year_list}>
-              <li className={styles.year_list_item}>All-Time</li>
+            <ul className={yearListCss}>
+              <li className={yearListItemCss}>All-Time</li>
               {data.year.nodes.map(({ year }) => {
                 if (year === "all") {
                   return null;
                 }
                 if (year === pageContext.yearScope) {
-                  return <li className={styles.year_list_item}>{year}</li>;
+                  return <li className={yearListItemCss}>{year}</li>;
                 }
 
                 return (
-                  <li className={styles.year_list_item}>
+                  <li className={yearListItemCss}>
                     <Link
                       to={`/viewings/stats/${year}`}
-                      className={styles.year_list_item_link}
+                      className={yearListItemLinkCss}
                     >
                       {year}
                     </Link>
@@ -254,19 +273,15 @@ export default function ViewingStatsTemplate({
             </ul>
           </p>
         </header>
-        <div className={styles.list}>
-          <div className={styles.stat_pops}>
-            <div className={styles.stat_pop}>
-              <span className={styles.stat_pop_number}>
-                {movies.viewingCount}
-              </span>{" "}
-              <span className={styles.stat_pop_legend}>Viewings</span>
+        <div className={listCss}>
+          <div className={statPopsCss}>
+            <div className={statPopCss}>
+              <span className={statPopNumberCss}>{movies.viewingCount}</span>{" "}
+              <span className={statPopLegendCss}>Viewings</span>
             </div>
-            <div className={styles.stat_pop}>
-              <span className={styles.stat_pop_number}>
-                {movies.movieCount}
-              </span>{" "}
-              <span className={styles.stat_pop_legend}>Movies</span>
+            <div className={statPopCss}>
+              <span className={statPopNumberCss}>{movies.movieCount}</span>{" "}
+              <span className={statPopLegendCss}>Movies</span>
             </div>
           </div>
           <TableHeading headingText="Most Watched Movies" />

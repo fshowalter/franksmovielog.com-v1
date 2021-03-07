@@ -1,1 +1,1 @@
-export const toggleButton: string;
+export const toggleButtonCss: string;

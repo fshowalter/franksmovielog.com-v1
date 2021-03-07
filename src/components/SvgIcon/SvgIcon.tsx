@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SvgIcon.module.scss";
+import { iconCss } from "./SvgIcon.module.scss";
 
 /**
  * Renders a search icon.
@@ -17,7 +17,7 @@ export default function SvgIcon({
       width="1em"
       height="1em"
       viewBox="0 0 16 16"
-      className={`${styles.icon} ${className || ""}`}
+      className={`${iconCss} ${className || ""}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       {children}

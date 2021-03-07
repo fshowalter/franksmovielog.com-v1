@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ToggleButton.module.scss";
+import { toggleButtonCss } from "./ToggleButton.module.scss";
 
 export default function ToggleButton({
   id,
@@ -11,12 +11,7 @@ export default function ToggleButton({
   onClick: () => void;
 }): JSX.Element {
   return (
-    <button
-      id={id}
-      type="button"
-      className={styles.toggle_button}
-      onClick={onClick}
-    >
+    <button id={id} type="button" className={toggleButtonCss} onClick={onClick}>
       {children}
     </button>
   );
