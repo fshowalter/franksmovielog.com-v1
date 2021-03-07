@@ -2,7 +2,6 @@
   "root": true,
   "extends": [
     "airbnb",
-    "prettier/react",
     "plugin:prettier/recommended",
     "plugin:import/typescript"
   ],
@@ -17,8 +16,6 @@
         "airbnb",
         "airbnb/hooks",
         "plugin:prettier/recommended",
-        "prettier/react",
-        "prettier/@typescript-eslint",
         "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -47,6 +44,7 @@
             "tsx": "never"
           }
         ],
+        "import/prefer-default-export": ["off"],
         "no-use-before-define": [0],
         "@typescript-eslint/no-use-before-define": [1],
         "jest/no-hooks": ["off"],

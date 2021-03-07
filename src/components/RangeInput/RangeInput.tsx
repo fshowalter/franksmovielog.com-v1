@@ -1,6 +1,15 @@
 import React from "react";
 import ReactSlider from "react-slider";
-import styles from "./RangeInput.module.scss";
+import {
+  containerCss,
+  draggingCss,
+  rightCss,
+  sliderCss,
+  thumbCss,
+  toCss,
+  trackCss,
+  yearInputCss,
+} from "./RangeInput.module.scss";
 
 /**
  * Renders a dual-handle range slider.
@@ -70,17 +79,17 @@ export default function RangeFilter({
   };
 
   return (
-    <div id={id} className={styles.container}>
+    <div id={id} className={containerCss}>
       <ReactSlider
         value={state}
         max={max}
         min={min}
         onChange={handleSliderChange}
         onAfterChange={handleSliderUpdate}
-        thumbClassName={styles.thumb}
-        trackClassName={styles.track}
-        thumbActiveClassName={styles.dragging}
-        className={styles.slider}
+        thumbClassName={thumbCss}
+        trackClassName={trackCss}
+        thumbActiveClassName={draggingCss}
+        className={sliderCss}
       />
       <input
         type="number"
@@ -89,9 +98,9 @@ export default function RangeFilter({
         value={state[0]}
         step="1"
         onChange={(e) => handleMinChange(e.target.value)}
-        className={styles.year_input}
+        className={yearInputCss}
       />
-      <span className={styles.to}> to </span>
+      <span className={toCss}> to </span>
       <input
         type="number"
         value={state[1]}
@@ -99,7 +108,7 @@ export default function RangeFilter({
         max={max}
         onChange={(e) => handleMaxChange(e.target.value)}
         step="1"
-        className={`${styles.year_input} ${styles.right}`}
+        className={`${yearInputCss} ${rightCss}`}
       />
     </div>
   );

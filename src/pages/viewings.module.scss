@@ -7,7 +7,7 @@
   max-width: 40rem;
   padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-columns: 375px 1fr;
     max-width: unset;
   }
@@ -30,7 +30,7 @@
       --step-5
     );
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
   }
 }

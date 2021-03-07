@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Fieldset.module.scss";
+import { fieldsetCss } from "./Fieldset.module.scss";
 
 export default function Label({
   className,
@@ -9,8 +9,6 @@ export default function Label({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <fieldset className={`${styles.fieldset} ${className}`}>
-      {children}
-    </fieldset>
+    <fieldset className={`${fieldsetCss} ${className}`}>{children}</fieldset>
   );
 }

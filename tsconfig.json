@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
@@ -15,7 +14,7 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "strictNullChecks": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
   },
   "include": ["./src/**/*", "./*.js"],
   "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"]

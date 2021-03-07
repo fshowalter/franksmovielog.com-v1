@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./RenderedMarkdown.module.scss";
+import { renderedMarkdownCss } from "./RenderedMarkdown.module.scss";
 
 export default function RenderedMarkdown({
   text,
@@ -14,7 +14,7 @@ export default function RenderedMarkdown({
 
   return (
     <Tag
-      className={`${styles.rendered_markdown} ${className}`}
+      className={`${renderedMarkdownCss} ${className}`}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: text,

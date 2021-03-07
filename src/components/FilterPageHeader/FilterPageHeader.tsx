@@ -1,6 +1,10 @@
 import Img, { FixedObject } from "gatsby-image";
 import React from "react";
-import styles from "./FilterPageHeader.module.scss";
+import {
+  avatarCss,
+  headingCss,
+  taglineCss,
+} from "./FilterPageHeader.module.scss";
 
 export default function FilterPageHeader({
   avatar,
@@ -19,15 +23,15 @@ export default function FilterPageHeader({
     <header className={className}>
       {avatar && (
         <Img
-          className={styles.avatar}
+          className={avatarCss}
           fixed={avatar}
           alt={alt}
           fadeIn={false}
           loading="eager"
         />
       )}
-      <h2 className={styles.heading}>{heading}</h2>
-      <p className={styles.tagline}>{tagline}</p>
+      <h2 className={headingCss}>{heading}</h2>
+      <p className={taglineCss}>{tagline}</p>
     </header>
   );
 }

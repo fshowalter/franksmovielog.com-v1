@@ -1,5 +1,10 @@
 import React from "react";
-import styles from "./ProgressGraph.module.scss";
+import {
+  percentGraphBackgroundCss,
+  percentGraphCss,
+  percentGraphProgressCss,
+  percentNumberCss,
+} from "./ProgressGraph.module.scss";
 
 export default function ProgressGraph({
   total,
@@ -15,9 +20,9 @@ export default function ProgressGraph({
   const percent = Math.floor((complete / total) * 100);
 
   return (
-    <svg viewBox="0 0 36 36" className={styles.percent_graph}>
+    <svg viewBox="0 0 36 36" className={percentGraphCss}>
       <path
-        className={styles.percent_graph_background}
+        className={percentGraphBackgroundCss}
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -26,10 +31,10 @@ export default function ProgressGraph({
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
-        className={styles.percent_graph_progress}
+        className={percentGraphProgressCss}
         strokeDasharray={`${percent}, 100`}
       />
-      <text x="18" y="20.35" className={styles.percent_number}>
+      <text x="18" y="20.35" className={percentNumberCss}>
         {percent}%
       </text>
     </svg>

@@ -14,7 +14,20 @@ import Seo from "../components/Seo";
 import { WatchlistMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
-import styles from "./watchlist-entity.module.scss";
+import {
+  containerCss,
+  filtersCss,
+  leftCss,
+  listCss,
+  listItemGradeCss,
+  listItemImageLinkCss,
+  listItemTitleCss,
+  listItemTitleYearCss,
+  pageHeaderCss,
+  percentCss,
+  percentTotalsCss,
+  rightCss,
+} from "./watchlist-entity.module.scss";
 
 function sortMovies(titles: WatchlistMovie[], sortOrder: string) {
   const sortMap: Record<
@@ -93,7 +106,7 @@ function WatchlistEntityProgress({
   return (
     <>
       <ProgressGraph total={total} complete={reviewed} />
-      <div className={styles.percent_totals}>
+      <div className={percentTotalsCss}>
         {reviewed}/{total} Reviewed
       </div>
     </>
@@ -246,10 +259,7 @@ function ReviewedListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
 
   return (
     <li>
-      <Link
-        className={styles.list_item_image_link}
-        to={`/reviews/${review.slug}/`}
-      >
+      <Link className={listItemImageLinkCss} to={`/reviews/${review.slug}/`}>
         {review.backdrop && (
           <Img
             fluid={review.backdrop.childImageSharp.fluid}
@@ -258,16 +268,13 @@ function ReviewedListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
           />
         )}
       </Link>
-      <div className={styles.list_item_title}>
+      <div className={listItemTitleCss}>
         <Link to={`/reviews/${review.slug}/`}>
           {movie.title}{" "}
-          <span className={styles.list_item_title_year}>{movie.year}</span>
+          <span className={listItemTitleYearCss}>{movie.year}</span>
         </Link>
       </div>
-      <Grade
-        grade={review.lastReviewGrade}
-        className={styles.list_item_grade}
-      />
+      <Grade grade={review.lastReviewGrade} className={listItemGradeCss} />
     </li>
   );
 }
@@ -282,9 +289,8 @@ function UnreviewedListItem({
   return (
     <li>
       <Img fluid={backdrop} alt="" fadeIn={false} />
-      <div className={styles.list_item_title}>
-        {movie.title}{" "}
-        <span className={styles.list_item_title_year}>{movie.year}</span>
+      <div className={listItemTitleCss}>
+        {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
       </div>
     </li>
   );
@@ -322,16 +328,16 @@ export default function WatchlistEntityTemplate({
         image={null}
         article={false}
       />
-      <main className={styles.container}>
-        <div className={styles.left}>
+      <main className={containerCss}>
+        <div className={leftCss}>
           <FilterPageHeader
-            className={styles.page_header}
+            className={pageHeaderCss}
             avatar={data.avatar.childImageSharp.fixed}
             alt={`An image of ${pageContext.name}`}
             heading={pageContext.name}
             tagline={<EntityHeader pageContext={pageContext} />}
           />
-          <Fieldset className={styles.filters}>
+          <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="viewings-title-input">
               Title
@@ -371,15 +377,15 @@ export default function WatchlistEntityTemplate({
               </SelectInput>
             </Label>
           </Fieldset>
-          <div className={styles.percent}>
+          <div className={percentCss}>
             <WatchlistEntityProgress
               total={state.filteredMovies.length}
               reviewed={reviewedMovieCount(state.filteredMovies)}
             />
           </div>
         </div>
-        <div className={styles.right} ref={listHeader}>
-          <ul className={styles.list}>
+        <div className={rightCss} ref={listHeader}>
+          <ul className={listCss}>
             {state.filteredMovies.map((movie) => {
               if (movie.reviewedMovie) {
                 return <ReviewedListItem movie={movie} />;

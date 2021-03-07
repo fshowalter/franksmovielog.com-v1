@@ -1,4 +1,4 @@
-.rendered_markdown {
+.renderedMarkdownCss {
   color: rgba(0, 0, 0, 0.75);
   font-size: 19px;
   font-weight: 300;
@@ -13,14 +13,9 @@
   }
 
   blockquote {
-    // background: #f9f9f9;
-    // border-left: 10px solid #ccc;
     border-left: 0.5rem solid var(--color-background);
     color: rgba(0, 0, 0, 0.65);
-    // font-size: 95%;
-    // letter-spacing: 0.15px;
     font-style: italic;
-    // letter-spacing: 0.5px;
     margin: 1.5em 0;
     padding: 0 var(--step-1);
     position: relative;

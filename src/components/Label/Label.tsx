@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Label.module.scss";
+import { labelCss } from "./Label.module.scss";
 
 export default function Label({
   htmlFor,
@@ -9,7 +9,7 @@ export default function Label({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <label className={styles.label} htmlFor={htmlFor}>
+    <label className={labelCss} htmlFor={htmlFor}>
       {children}
     </label>
   );

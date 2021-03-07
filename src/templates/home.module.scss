@@ -9,7 +9,7 @@
       1fr
     );
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: "list" "pagination";
     grid-template-columns: unset;
   }
@@ -22,14 +22,14 @@
 .list {
   grid-area: list;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 .list_item {
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     border-top: solid 1px var(--color-background);
     display: flex;
     margin-top: var(--step-5);
@@ -79,7 +79,7 @@
     width: 75%;
   }
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". . ." ". border .";
     grid-template-rows: auto var(--step-1) auto 1.4rem 1fr 2.8rem auto;
 
@@ -189,7 +189,7 @@
 .pagination {
   grid-area: pagination;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     border-top: solid 1px var(--color-background);
   }
 }

@@ -31,7 +31,7 @@
   padding: 0.5rem;
   white-space: nowrap;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     border-color: var(--color-background);
   }
 

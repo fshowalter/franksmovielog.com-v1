@@ -1,6 +1,6 @@
 @import "./src/styles/breakpoints";
 
-.avatar {
+.avatarCss {
   border-radius: 50%;
   display: block !important;
   margin: 0 auto var(--step-5);
@@ -9,12 +9,12 @@
   width: 75%;
 }
 
-.heading {
+.headingCss {
   font-size: var(--step-2);
   text-align: center;
 }
 
-.tagline {
+.taglineCss {
   color: var(--color-text-secondary);
   font-family: var(--font-serif);
   font-size: 16px;

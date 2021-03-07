@@ -10,7 +10,24 @@ import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
 import applyFilters from "../utils/apply-filters";
 import { sortNumberDesc, sortStringAsc } from "../utils/sort-utils";
-import styles from "./watchlist-type.module.scss";
+import {
+  containerCss,
+  defaultImageCss,
+  filtersCss,
+  leftCss,
+  listCss,
+  listItemAvatarCss,
+  listItemCss,
+  listItemLinkCss,
+  listItemTitleCss,
+  pageHeaderCss,
+  pageHeaderSubCss,
+  percentBackgroundCss,
+  percentProgressCss,
+  progressRingCss,
+  progressStatsCss,
+  rightCss,
+} from "./watchlist-type.module.scss";
 
 function sortEntities(titles: WatchlistEntity[], sortOrder: string) {
   const sortMap: Record<
@@ -59,7 +76,7 @@ function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
   return (
     <svg viewBox="0 0 36 36">
       <path
-        className={styles.percent_background}
+        className={percentBackgroundCss}
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -68,7 +85,7 @@ function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
-        className={styles.percent_progress}
+        className={percentProgressCss}
         strokeDasharray={`${percent}, 100`}
       />
     </svg>
@@ -164,41 +181,41 @@ function ListItem({
 }): JSX.Element {
   if (entity.avatar) {
     return (
-      <li className={styles.list_item}>
+      <li className={listItemCss}>
         <Link
-          className={styles.list_item_link}
+          className={listItemLinkCss}
           to={`/watchlist/${entityType}s/${entity.slug}/`}
         >
           {entity.avatar && (
             <Img
               fluid={entity.avatar.childImageSharp.fluid}
-              className={styles.list_item_avatar}
+              className={listItemAvatarCss}
               alt={`An image of ${entity.name}`}
               fadeIn={false}
             />
           )}
         </Link>
-        <div className={styles.list_item_title}>
+        <div className={listItemTitleCss}>
           <Link to={`/watchlist/${entityType}s/${entity.slug}/`}>
             {entity.name}
           </Link>
         </div>
         <Link
           to={`/watchlist/${entityType}s/${entity.slug}/`}
-          className={styles.progress_ring}
+          className={progressRingCss}
         >
           <Progress entity={entity} />
         </Link>
-        <div className={styles.progress_stats}>
+        <div className={progressStatsCss}>
           {entity.reviewCount} / {entity.titleCount}
         </div>
       </li>
     );
   }
   return (
-    <li className={styles.list_item}>
+    <li className={listItemCss}>
       <svg
-        className={`${styles.list_item_avatar} ${styles.list_item_default_image}`}
+        className={`${listItemAvatarCss} ${defaultImageCss}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
         fill="currentColor"
@@ -209,11 +226,11 @@ function ListItem({
           fillRule="evenodd"
         />
       </svg>
-      <div className={styles.list_item_title}>{entity.name}</div>
-      <div className={styles.progress_ring}>
+      <div className={listItemTitleCss}>{entity.name}</div>
+      <div className={progressRingCss}>
         <Progress entity={entity} />
       </div>
-      <div className={styles.progress_stats}>
+      <div className={progressStatsCss}>
         {entity.reviewCount} / {entity.titleCount}
       </div>
     </li>
@@ -251,19 +268,18 @@ export default function WatchlistTypeTemplate({
         image={null}
         article={false}
       />
-      <main className={styles.container}>
-        <div className={styles.left}>
+      <main className={containerCss}>
+        <div className={leftCss}>
           <FilterPageHeader
-            className={styles.page_header}
+            className={pageHeaderCss}
             heading={
               <>
-                <span className={styles.page_header_sub}>Watchlist</span>{" "}
-                {pageTitle}s
+                <span className={pageHeaderSubCss}>Watchlist</span> {pageTitle}s
               </>
             }
             tagline={buildDescription(pageContext.entityType)}
           />
-          <Fieldset className={styles.filters}>
+          <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="watchlist-people-title-input">
               Title
@@ -288,8 +304,8 @@ export default function WatchlistTypeTemplate({
             </Label>
           </Fieldset>
         </div>
-        <div className={styles.right} ref={listHeader}>
-          <ul className={styles.list}>
+        <div className={rightCss} ref={listHeader}>
+          <ul className={listCss}>
             {state.filteredEntities.map((entity) => {
               return (
                 <ListItem entity={entity} entityType={pageContext.entityType} />

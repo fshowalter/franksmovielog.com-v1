@@ -3,15 +3,18 @@ import Img from "gatsby-image";
 import React from "react";
 import { ReviewedMovie } from "../../types";
 import Grade from "../Grade";
-import styles from "./RelatedMovies.module.scss";
+import {
+  listCss,
+  listItemGradeCss,
+  listItemImageLinkCss,
+  listItemTitleCss,
+  listItemTitleYearCss,
+} from "./RelatedMovies.module.scss";
 
 function RelatedMovie({ movie }: { movie: ReviewedMovie }): JSX.Element {
   return (
     <>
-      <Link
-        className={styles.list_item_image_link}
-        to={`/reviews/${movie.slug}/`}
-      >
+      <Link className={listItemImageLinkCss} to={`/reviews/${movie.slug}/`}>
         {movie.backdrop && (
           <Img
             fluid={movie.backdrop.childImageSharp.fluid}
@@ -20,13 +23,13 @@ function RelatedMovie({ movie }: { movie: ReviewedMovie }): JSX.Element {
           />
         )}
       </Link>
-      <div className={styles.list_item_title}>
+      <div className={listItemTitleCss}>
         <Link to={`/reviews/${movie.slug}/`}>
           {movie.title}{" "}
-          <span className={styles.list_item_title_year}>{movie.year}</span>
+          <span className={listItemTitleYearCss}>{movie.year}</span>
         </Link>
       </div>
-      <Grade grade={movie.lastReviewGrade} className={styles.list_item_grade} />
+      <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
     </>
   );
 }
@@ -45,7 +48,7 @@ export default function RelatedMovies({
   return (
     <div>
       {children}
-      <ul className={styles.list}>
+      <ul className={listCss}>
         {movies.map((movie) => {
           return (
             <li>

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./DebouncedInput.module.scss";
+import { inputCss } from "./DebouncedInput.module.scss";
 
 export type onChangeHandler = (value: string) => void;
 
@@ -59,7 +59,7 @@ export default function DebouncedInput({
 
   return (
     <input
-      className={`${styles.input} ${className || ""}`}
+      className={`${inputCss} ${className || ""}`}
       type="text"
       id={id}
       placeholder={placeholder}

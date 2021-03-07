@@ -7,7 +7,7 @@
   max-width: 40rem;
   padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-columns: 375px 1fr;
     max-width: unset;
   }
@@ -30,7 +30,7 @@
     auto var(--step-1) auto var(--step-5) auto var(--step-1) auto var(--step-5)
     auto var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
   }
 }
@@ -141,7 +141,7 @@
   padding: 0.5rem;
   white-space: nowrap;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     border-color: var(--color-background);
   }
 
