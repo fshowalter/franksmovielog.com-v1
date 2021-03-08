@@ -2,12 +2,12 @@
 @import "./src/styles/vars";
 @import "./src/styles/breakpoints";
 
-.container {
+.containerCss {
   background-color: var(--color-content-background);
   display: grid;
   grid-template-areas: "border" "header" "content" "footer";
   margin: 0 auto;
-  max-width: clamp(1000px, 95vw, $breakpoint_max);
+  max-width: clamp(1000px, 95vw, $breakpointMax);
   min-height: 100vh;
   position: relative;
 
@@ -19,13 +19,13 @@
     height: 1.5rem;
   }
 
-  @media (min-width: $breakpoint_tablet) {
+  @media (min-width: $breakpointTablet) {
     &::before {
       height: 1.25rem;
     }
   }
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: "border border border" ". . ." ". header ." ". content ." "footer footer footer";
     grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 1000px) minmax(
         var(--step-1),
@@ -48,7 +48,7 @@
   }
 }
 
-.skip_link {
+.skipLinkCss {
   background: var(--color-link);
   color: #fff;
   left: 0;
@@ -60,13 +60,13 @@
   top: 0;
   transform: translateY(-100%);
   z-index: 100;
+
+  &:focus {
+    transform: translateY(0%);
+  }
 }
 
-.skip_link:focus {
-  transform: translateY(0%);
-}
-
-.mast_header {
+.mastHeaderCss {
   display: grid;
   grid-area: header;
   grid-template-areas: ". . ." ". logo ." ". tagline ." ". . ." ". search ." ". . ." ". nav ." ". . .";
@@ -77,7 +77,7 @@
   grid-template-rows: 1.5rem auto auto 1.5rem auto 1.5rem auto 1.5rem;
   justify-items: center;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     column-gap: calc(2 * var(--step-1));
     grid-template-areas: "logo search" "tagline . " ". ." "nav nav" ". .";
     grid-template-columns: auto;
@@ -96,7 +96,7 @@
   }
 }
 
-.mast_title {
+.mastTitleCss {
   font-size: var(--step-2);
   grid-area: logo;
   line-height: 1;
@@ -107,19 +107,19 @@
   }
 }
 
-.mast_tagline {
+.mastTaglineCss {
   color: rgba(0, 0, 0, 0.65);
   font-size: var(--step--2);
   font-style: italic;
   grid-area: tagline;
 }
 
-.mast_nav {
+.mastNavCss {
   grid-area: nav;
   justify-self: stretch;
 }
 
-.mast_nav_list {
+.mastNavListCss {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -129,7 +129,7 @@
   margin: 0 -0.75rem;
   white-space: nowrap;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     justify-content: flex-start;
     margin: 0;
   }
@@ -142,14 +142,14 @@
   }
 }
 
-.mast_nav_list_item {
+.mastNavListItemCss {
   color: var(--color-link);
   display: block;
   margin: 0.5rem 0.75rem;
   position: relative;
   white-space: nowrap;
 
-  @media (min-width: $breakpoint_tablet) {
+  @media (min-width: $breakpointTablet) {
     margin: 0;
     padding-right: var(--step-1);
 
@@ -158,7 +158,7 @@
     }
   }
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     &:first-of-type {
       padding-left: 1px;
     }
@@ -174,7 +174,7 @@
   }
 }
 
-.mast_nav_link {
+.mastNavLinkCss {
   @media (min-width: 80rem) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     display: block;
@@ -183,16 +183,16 @@
   }
 }
 
-.mast_nav_link_active {
+.mastNavLinkActiveCss {
   color: var(--color-text-secondary);
 }
 
-.mast_search_form {
+.mastSearchFormCss {
   grid-area: search;
   justify-self: stretch;
 }
 
-.mast_search_wrap {
+.mastSearchWrapCss {
   align-items: stretch;
   border: solid 1px #000;
   border-color: darken(#e9e7e0, 10);
@@ -202,7 +202,7 @@
   overflow: hidden;
 }
 
-.mast_search_input {
+.mastSearchInputCss {
   border: 0;
   border-radius: 0;
   flex-grow: 1;
@@ -212,28 +212,24 @@
   min-width: 0;
   padding: 0 1rem;
 
-  .mast_nav_visible & {
-    border-color: darken(#e9e7e0, 10);
-  }
-
-  @media (min-width: $breakpoint_max) {
+  @media (min-width: $breakpointMax) {
     flex-grow: unset;
     width: 100%;
   }
 }
 
-.mast_search_submit {
+.mastSearchSubmitCss {
   border: 0;
   border-left: solid 1px darken(#e9e7e0, 10);
   font-size: 12px;
   padding: 0.375rem 0.625rem;
 }
 
-.children {
+.childrenCss {
   grid-area: content;
 }
 
-.footer {
+.footerCss {
   background: #202020 url("/assets/ripnotcomingsoon.jpg") repeat;
   color: #d2d2d2;
   display: grid;
@@ -248,7 +244,7 @@
   justify-items: center;
 }
 
-.footer_nav_list {
+.footerNavListCss {
   display: flex;
   flex-wrap: wrap;
   grid-area: links;
@@ -257,12 +253,12 @@
   white-space: nowrap;
 }
 
-.footer_nav_list_item {
+.footerNavListItemCss {
   display: inline-block;
   margin: 0.5rem;
 }
 
-.footer_fair_use {
+.footerFairUseCss {
   font-size: 13px;
   font-weight: 300;
   grid-area: notice;

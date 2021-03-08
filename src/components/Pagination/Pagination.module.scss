@@ -1,13 +1,13 @@
 @import "./src/styles/breakpoints";
 
-.info {
+.infoCss {
   color: var(--color-text-secondary);
   font-size: clamp(15px, 4vw, 16px);
   font-weight: 300;
   text-align: center;
 }
 
-.container {
+.containerCss {
   align-items: baseline;
   display: inline-flex;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@
   padding: 2.5rem 0;
   white-space: nowrap;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     font-size: 21px;
   }
 
@@ -26,23 +26,22 @@
   }
 }
 
-.pagination_link {
+.paginationLinkCss {
   color: var(--color-link);
   margin-left: 1.5rem;
 }
 
-.disabled,
-.current_page,
-.elipsis {
+.currentPageCss,
+.elipsisCss {
   color: var(--color-text-secondary);
   margin-left: 1.5rem;
 }
 
-.elipsis {
+.elipsisCss {
   margin-top: -0.5ch;
 }
 
-.button {
+.buttonCss {
   appearance: none;
   background: transparent;
   border: 0;
@@ -50,17 +49,17 @@
   margin-left: 1.5rem;
   padding: 0;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     background-color: transparent;
     border: 0;
   }
-}
 
-.button[disabled] {
-  background-color: rgba(239, 239, 239, 0.3);
-  color: rgba(16, 16, 16, 0.3);
+  &[disabled] {
+    background-color: rgba(239, 239, 239, 0.3);
+    color: rgba(16, 16, 16, 0.3);
 
-  @media (min-width: $breakpoint_desktop) {
-    background-color: transparent;
+    @media (min-width: $breakpointDesktop) {
+      background-color: transparent;
+    }
   }
 }

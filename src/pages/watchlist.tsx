@@ -19,7 +19,29 @@ import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
 import toSentenceArray from "../utils/to-sentence-array";
-import styles from "./watchlist.module.scss";
+import {
+  containerCss,
+  filtersCss,
+  leftCss,
+  listCss,
+  listItemCheckmarkCss,
+  listItemCss,
+  listItemFirstCss,
+  listItemSlugCss,
+  listItemTitleCss,
+  listItemTitleLinkCss,
+  listItemTitleYearCss,
+  pageHeaderCss,
+  paginationCss,
+  paginationInfoCss,
+  percentCss,
+  percentTotalsCss,
+  quoteCss,
+  rightCss,
+  typeIconCss,
+  typeLinkCss,
+  typeLinksCss,
+} from "./watchlist.module.scss";
 
 /**
  * Renders options for a watchlist person or collection select.
@@ -66,8 +88,7 @@ function WatchlistMovieTitle({
 }): JSX.Element {
   let title = (
     <>
-      {movie.title}{" "}
-      <span className={styles.list_item_title_year}>{movie.year}</span>
+      {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
     </>
   );
 
@@ -76,14 +97,14 @@ function WatchlistMovieTitle({
       <Link
         rel="canonical"
         to={`/reviews/${movie.reviewedMovie.slug}/`}
-        className={styles.list_item_title_link}
+        className={listItemTitleLinkCss}
       >
         {title}
       </Link>
     );
   }
 
-  return <div className={styles.list_item_title}>{title}</div>;
+  return <div className={listItemTitleCss}>{title}</div>;
 }
 
 function WatchlistMovieCheckMark({
@@ -94,7 +115,7 @@ function WatchlistMovieCheckMark({
   if (movie.reviewedMovie) {
     return (
       <svg
-        className={styles.list_item_checkmark}
+        className={listItemCheckmarkCss}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -110,7 +131,7 @@ function WatchlistMovieCheckMark({
     );
   }
 
-  return <div className={styles.list_item_checkmark} />;
+  return <div className={listItemCheckmarkCss} />;
 }
 
 /**
@@ -168,9 +189,7 @@ function WatchlistMovieSlug({ movie }: { movie: WatchlistMovie }): JSX.Element {
   ];
 
   return (
-    <div className={styles.list_item_slug}>
-      Because {toSentenceArray(credits)}.
-    </div>
+    <div className={listItemSlugCss}>Because {toSentenceArray(credits)}.</div>
   );
 }
 
@@ -605,7 +624,7 @@ function WatchlistProgress({
   return (
     <>
       <ProgressGraph total={total} complete={reviewed} />
-      <div className={styles.percent_totals}>
+      <div className={percentTotalsCss}>
         {reviewed}/{total} Reviewed
       </div>
     </>
@@ -627,12 +646,12 @@ function WatchlistPeopleLinkItem({
 }): JSX.Element {
   return (
     <li>
-      <Link to={to} className={styles.type_link}>
+      <Link to={to} className={typeLinkCss}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className={styles.type_icon}
+          className={typeIconCss}
         >
           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
         </svg>
@@ -651,12 +670,12 @@ function WatchlistCollectionLinkItem({
 }): JSX.Element {
   return (
     <li>
-      <Link to={to} className={styles.type_link}>
+      <Link to={to} className={typeLinkCss}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className={styles.type_icon}
+          className={typeIconCss}
         >
           <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
         </svg>
@@ -693,23 +712,23 @@ export default function WatchlistPage({
         image={null}
         article={false}
       />
-      <main className={styles.container}>
-        <div className={styles.left}>
+      <main className={containerCss}>
+        <div className={leftCss}>
           <FilterPageHeader
-            className={styles.page_header}
+            className={pageHeaderCss}
             heading="Watchlist"
             tagline={
               <>
                 My movie review bucketlist.{" "}
                 {state.allMovies.length.toLocaleString()} titles. No silents or
                 documentaries.{" "}
-                <span className={styles.quote}>
+                <span className={quoteCss}>
                   &ldquo;A man&apos;s got to know his limitations&rdquo;
                 </span>
               </>
             }
           />
-          <ul className={styles.type_links}>
+          <ul className={typeLinksCss}>
             <WatchlistPeopleLinkItem to="/watchlist/directors/">
               Directors
             </WatchlistPeopleLinkItem>
@@ -724,7 +743,7 @@ export default function WatchlistPage({
               Collections
             </WatchlistCollectionLinkItem>
           </ul>
-          <Fieldset className={styles.filters}>
+          <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="to_watch-title-input">
               Title
@@ -832,9 +851,9 @@ export default function WatchlistPage({
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredMovies.length}
-            className={styles.pagination_info}
+            className={paginationInfoCss}
           />
-          <div className={styles.percent}>
+          <div className={percentCss}>
             <WatchlistProgress
               total={state.filteredMovies.length}
               reviewed={reviewedCount}
@@ -849,13 +868,13 @@ export default function WatchlistPage({
             )}
           </div>
         </div>
-        <div ref={listHeader} className={styles.right}>
-          <ol className={styles.list}>
+        <div ref={listHeader} className={rightCss}>
+          <ol className={listCss}>
             {state.moviesForPage.map((movie, index) => {
               return (
                 <li
-                  className={`${styles.list_item} ${
-                    index === 0 ? styles.list_item_first : ""
+                  className={`${listItemCss} ${
+                    index === 0 ? listItemFirstCss : ""
                   }`}
                 >
                   <WatchlistMovieTitle movie={movie} />
@@ -866,7 +885,7 @@ export default function WatchlistPage({
             })}
           </ol>
           <PaginationWithButtons
-            className={styles.pagination}
+            className={paginationCss}
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredMovies.length}

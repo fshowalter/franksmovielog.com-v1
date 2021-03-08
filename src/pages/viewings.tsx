@@ -24,7 +24,27 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../utils/sort-utils";
-import styles from "./viewings.module.scss";
+import {
+  containerCss,
+  filtersCss,
+  leftCss,
+  listCss,
+  listItemCss,
+  listItemFirstCss,
+  listItemSlugCss,
+  listItemTitleCss,
+  listItemTitleLinkCss,
+  listItemTitleYearCss,
+  pageHeaderCss,
+  paginationCss,
+  paginationInfoCss,
+  percentCss,
+  percentTotalsCss,
+  quoteCss,
+  rightCss,
+  statsIconCss,
+  statsLinkCss,
+} from "./viewings.module.scss";
 
 type Viewing = {
   imdbId: string;
@@ -78,7 +98,7 @@ function ViewingTitle({
   let title = (
     <>
       {viewing.title}{" "}
-      <span className={styles.list_item_title_year}>{viewing.year}</span>
+      <span className={listItemTitleYearCss}>{viewing.year}</span>
     </>
   );
 
@@ -87,14 +107,14 @@ function ViewingTitle({
       <Link
         rel="canonical"
         to={`/reviews/${viewing.reviewedMovie.slug}/`}
-        className={styles.list_item_title_link}
+        className={listItemTitleLinkCss}
       >
         {title}
       </Link>
     );
   }
 
-  return <div className={styles.list_item_title}>{title}</div>;
+  return <div className={listItemTitleCss}>{title}</div>;
 }
 
 /**
@@ -102,7 +122,7 @@ function ViewingTitle({
  */
 function ViewingSlug({ viewing }: { viewing: Viewing }) {
   return (
-    <div className={styles.list_item_slug}>
+    <div className={listItemSlugCss}>
       {viewing.viewingDate} via {viewing.venue}
     </div>
   );
@@ -413,7 +433,7 @@ function ReviewedProgress({
   return (
     <>
       <ProgressGraph total={total} complete={reviewed} />
-      <div className={styles.percent_totals}>
+      <div className={percentTotalsCss}>
         {reviewed}/{total} Reviewed
       </div>
     </>
@@ -452,27 +472,27 @@ export default function ViewingsPage({
         image={null}
         article={false}
       />
-      <main className={styles.container}>
-        <div className={styles.left}>
+      <main className={containerCss}>
+        <div className={leftCss}>
           <FilterPageHeader
-            className={styles.page_header}
+            className={pageHeaderCss}
             heading="Viewing Log"
             tagline={
               <>
                 I&apos;ve watched {state.allViewings.length.toLocaleString()}{" "}
                 movies since 2012.{" "}
-                <span className={styles.quote}>
+                <span className={quoteCss}>
                   &ldquo;We have such sights to show you.&rdquo;
                 </span>
                 <br />
-                <Link to="/viewings/stats/" className={styles.stats_link}>
+                <Link to="/viewings/stats/" className={statsLinkCss}>
                   Stats{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    className={styles.stats_icon}
+                    className={statsIconCss}
                   >
                     <path
                       strokeLinecap="round"
@@ -485,7 +505,7 @@ export default function ViewingsPage({
               </>
             }
           />
-          <Fieldset className={styles.filters}>
+          <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="viewings-title-input">
               Title
@@ -549,9 +569,9 @@ export default function ViewingsPage({
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredViewings.length}
-            className={styles.pagination_info}
+            className={paginationInfoCss}
           />
-          <div className={styles.percent}>
+          <div className={percentCss}>
             <ReviewedProgress
               total={state.filteredViewings.length}
               reviewed={reviewedCount}
@@ -566,14 +586,14 @@ export default function ViewingsPage({
             )}
           </div>
         </div>
-        <div className={styles.right} ref={listHeader}>
-          <ol className={styles.list}>
+        <div className={rightCss} ref={listHeader}>
+          <ol className={listCss}>
             {state.viewingsForPage.map((viewing, index) => {
               return (
                 <li
                   value={viewing.sequence}
-                  className={`${styles.list_item} ${
-                    index === 0 ? styles.list_item_first : ""
+                  className={`${listItemCss} ${
+                    index === 0 ? listItemFirstCss : ""
                   }`}
                 >
                   <ViewingTitle viewing={viewing} />
@@ -583,7 +603,7 @@ export default function ViewingsPage({
             })}
           </ol>
           <PaginationWithButtons
-            className={styles.pagination}
+            className={paginationCss}
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredViewings.length}

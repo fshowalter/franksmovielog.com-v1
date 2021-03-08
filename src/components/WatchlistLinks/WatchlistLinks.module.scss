@@ -1,12 +1,6 @@
 @import "./src/styles/breakpoints";
 
-.icon {
-  flex-shrink: 0;
-  margin-right: 1ch;
-  min-width: 18px;
-}
-
-.container {
+.containerCss {
   color: var(--color-text-secondary);
   display: flex;
   flex-wrap: wrap;
@@ -16,11 +10,11 @@
   padding: 0;
 }
 
-.list {
+.listCss {
   display: contents;
 }
 
-.link {
+.linkCss {
   align-items: center;
   background-color: darken(#fff, 2);
   border: solid 1px darken(#e9e7e0, 10);
@@ -31,7 +25,7 @@
   padding: 0.5rem;
   white-space: nowrap;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     border-color: var(--color-background);
   }
 
@@ -40,11 +34,7 @@
   }
 }
 
-.link:hover > .icon {
-  fill: var(--color-link);
-}
-
-.avatar {
+.avatarCss {
   border-radius: 50%;
   height: 40px;
   margin-right: 1ch;

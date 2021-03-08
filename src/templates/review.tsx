@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
@@ -10,7 +10,40 @@ import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
 import { ReviewedMovie } from "../types";
 import toSentenceArray from "../utils/to-sentence-array";
-import styles from "./review.module.scss";
+import {
+  akaContainerCss,
+  akaListCss,
+  akaListItemCss,
+  bodyCss,
+  castCss,
+  castLabelCss,
+  containerCss,
+  contentCss,
+  creditsCss,
+  dateCss,
+  dateIconCss,
+  directorsCss,
+  gradeCss,
+  headerCss,
+  headerMetaCss,
+  imageCss,
+  olderViewingsCss,
+  olderViewingsHeadingCss,
+  olderViewingsListCss,
+  posterCss,
+  relatedCss,
+  relatedHeaderCss,
+  relatedHeadingCss,
+  relatedMoreCss,
+  relatedNameCss,
+  reviewCss,
+  reviewsListCss,
+  separatorCss,
+  slugCss,
+  titleCss,
+  viewingDateIconCss,
+  watchlistCss,
+} from "./review.module.scss";
 
 function buildStructuredData(movie: ReviewedMovie) {
   const gradeMap: { [index: string]: number } = {
@@ -56,17 +89,16 @@ function buildStructuredData(movie: ReviewedMovie) {
 
 function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
   return (
-    <div className={styles.related}>
+    <div className={relatedCss}>
       {movie.watchlist.collections.map((collection) => (
         <RelatedMovies movies={collection.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
-              More{" "}
-              <span className={styles.related_name}>{collection.name}</span>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
+              More <span className={relatedNameCss}>{collection.name}</span>
             </h3>
             <Link
               to={`/watchlist/collections/${collection.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -75,14 +107,13 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
       ))}
       {movie.watchlist.performers.map((performer) => (
         <RelatedMovies movies={performer.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
-              More with{" "}
-              <span className={styles.related_name}>{performer.name}</span>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
+              More with <span className={relatedNameCss}>{performer.name}</span>
             </h3>
             <Link
               to={`/watchlist/performers/${performer.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -91,14 +122,14 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
       ))}
       {movie.watchlist.directors.map((director) => (
         <RelatedMovies movies={director.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
               More directed by{" "}
-              <span className={styles.related_name}>{director.name}</span>
+              <span className={relatedNameCss}>{director.name}</span>
             </h3>
             <Link
               to={`/watchlist/directors/${director.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -107,14 +138,14 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
       ))}
       {movie.watchlist.writers.map((writer) => (
         <RelatedMovies movies={writer.reviewedMovies}>
-          <header className={styles.related_header}>
-            <h3 className={styles.related_heading}>
+          <header className={relatedHeaderCss}>
+            <h3 className={relatedHeadingCss}>
               More written by{" "}
-              <span className={styles.related_name}>{writer.name}</span>
+              <span className={relatedNameCss}>{writer.name}</span>
             </h3>
             <Link
               to={`/watchlist/writers/${writer.slug}/`}
-              className={styles.related_more}
+              className={relatedMoreCss}
             >
               See All &raquo;
             </Link>
@@ -122,11 +153,11 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
         </RelatedMovies>
       ))}
       <RelatedMovies movies={movie.browseMore}>
-        <header className={styles.related_header}>
-          <h3 className={styles.related_heading}>
-            More <span className={styles.related_name}>Reviews</span>
+        <header className={relatedHeaderCss}>
+          <h3 className={relatedHeadingCss}>
+            More <span className={relatedNameCss}>Reviews</span>
           </h3>
-          <Link to="/reviews/" className={styles.related_more}>
+          <Link to="/reviews/" className={relatedMoreCss}>
             See All &raquo;
           </Link>
         </header>
@@ -154,20 +185,19 @@ export default function Review({
         image={movie.seoImage.childImageSharp.resize.src}
         article
       />
-      <main className={styles.container}>
+      <main className={containerCss}>
         {movie.backdrop && (
-          <Img
-            className={styles.image}
-            fluid={movie.backdrop.childImageSharp.fluid}
+          <GatsbyImage
+            className={imageCss}
+            image={movie.backdrop.childImageSharp.gatsbyImageData}
             alt={`A still from ${movie.title} (${movie.year})`}
             loading="eager"
-            fadeIn={false}
           />
         )}
-        <header className={styles.header}>
-          <h1 className={styles.title}>{movie.title}</h1>
-          <div className={styles.header_meta}>
-            {movie.year} <span className={styles.separator}>|</span>{" "}
+        <header className={headerCss}>
+          <h1 className={titleCss}>{movie.title}</h1>
+          <div className={headerMetaCss}>
+            {movie.year} <span className={separatorCss}>|</span>{" "}
             {movie.countries.reduce<JSX.Element | null>((acc, country) => {
               if (acc === null) {
                 return <>{country}</>;
@@ -176,66 +206,65 @@ export default function Review({
               return (
                 <>
                   {acc}
-                  <span className={styles.separator}>&ndash;</span>
+                  <span className={separatorCss}>&ndash;</span>
                   {country}
                 </>
               );
             }, null)}{" "}
-            <span className={styles.separator}>|</span> {movie.runtimeMinutes}
+            <span className={separatorCss}>|</span> {movie.runtimeMinutes}
             &#x02009;min
           </div>
           {movie.akaTitles.length > 0 && (
-            <div className={styles.aka_container}>
+            <div className={akaContainerCss}>
               aka:
-              <ul className={styles.aka_list}>
+              <ul className={akaListCss}>
                 {movie.akaTitles.map((akaTitle) => (
-                  <li className={styles.aka_list_item}>{akaTitle}</li>
+                  <li className={akaListItemCss}>{akaTitle}</li>
                 ))}
               </ul>
             </div>
           )}
         </header>
-        <aside className={styles.credits}>
+        <aside className={creditsCss}>
           {movie.poster && (
-            <Img
-              className={styles.poster}
-              fluid={movie.poster.childImageSharp.fluid}
+            <GatsbyImage
+              className={posterCss}
+              image={movie.poster.childImageSharp.gatsbyImageData}
               alt={`A poster from ${movie.title} (${movie.year})`}
               loading="eager"
-              fadeIn={false}
             />
           )}
-          <div className={styles.directors}>
-            <span className={styles.cast_label}>Directed by</span>
+          <div className={directorsCss}>
+            <span className={castLabelCss}>Directed by</span>
             {toSentenceArray(movie.directors.map((director) => director.name))}
           </div>
-          <div className={styles.cast}>
-            <span className={styles.cast_label}>Starring</span>
+          <div className={castCss}>
+            <span className={castLabelCss}>Starring</span>
             {toSentenceArray(movie.principalCast.map((person) => person.name))}
           </div>
-          <div className={styles.watchlist}>
+          <div className={watchlistCss}>
             <WatchlistLinks movie={movie} />
           </div>
         </aside>
-        <ul className={styles.reviews_list}>
+        <ul className={reviewsListCss}>
           {movie.reviews.map((review) => (
             <li>
-              <article className={styles.review}>
-                <header className={styles.slug}>
-                  <DateIcon className={styles.date_icon} />{" "}
-                  <span className={styles.date}>{review.frontmatter.date}</span>{" "}
-                  via {review.frontmatter.venue}
+              <article className={reviewCss}>
+                <header className={slugCss}>
+                  <DateIcon className={dateIconCss} />{" "}
+                  <span className={dateCss}>{review.frontmatter.date}</span> via{" "}
+                  {review.frontmatter.venue}
                   {review.frontmatter.venueNotes && (
                     <> ({review.frontmatter.venueNotes})</>
                   )}
                 </header>
-                <div className={styles.content}>
+                <div className={contentCss}>
                   <Grade
                     grade={review.frontmatter.grade}
-                    className={styles.grade}
+                    className={gradeCss}
                   />
                   <RenderedMarkdown
-                    className={styles.body}
+                    className={bodyCss}
                     // eslint-disable-next-line react/no-danger
                     text={review.linkedHtml}
                   />
@@ -245,15 +274,15 @@ export default function Review({
           ))}
         </ul>
         {movie.olderViewings.length > 0 && (
-          <div className={styles.older_viewings}>
-            <h3 className={styles.older_viewings_heading}>Older Viewings</h3>
-            <ul className={styles.older_viewings_list}>
+          <div className={olderViewingsCss}>
+            <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>
+            <ul className={olderViewingsListCss}>
               {movie.olderViewings.map((viewing) => (
                 <li>
-                  <div className={styles.slug}>
-                    <DateIcon className={styles.viewing_date_icon} />{" "}
-                    <span className={styles.date}>{viewing.viewingDate}</span>{" "}
-                    via {viewing.venue}
+                  <div className={slugCss}>
+                    <DateIcon className={viewingDateIconCss} />{" "}
+                    <span className={dateCss}>{viewing.viewingDate}</span> via{" "}
+                    {viewing.venue}
                   </div>
                 </li>
               ))}
@@ -312,15 +341,15 @@ export const pageQuery = graphql`
       }
       backdrop {
         childImageSharp {
-          fluid(
-            toFormat: JPG
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
             quality: 80
-            srcSetBreakpoints: [414, 640, 818, 904, 1280, 1808, 2000]
-            maxWidth: 1000
+            width: 1000
+            aspectRatio: 1.777777778
+            breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
             sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
-          ) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+          )
         }
       }
       seoImage: backdrop {
@@ -332,15 +361,15 @@ export const pageQuery = graphql`
       }
       poster {
         childImageSharp {
-          fluid(
-            toFormat: JPG
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
             quality: 80
-            srcSetBreakpoints: [93, 141, 160, 186, 282, 320, 500]
-            maxWidth: 250
+            width: 250
+            aspectRatio: 0.666666667
+            breakpoints: [93, 141, 160, 186, 250, 282, 320, 500]
             sizes: "(max-width: 414px) 93px, (max-width: 767px) 141px, (max-width: 1023px) 160px, 250px"
-          ) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+          )
         }
       }
       browseMore {
@@ -350,15 +379,15 @@ export const pageQuery = graphql`
         year
         backdrop {
           childImageSharp {
-            fluid(
-              toFormat: JPG
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [JPG, AVIF]
               quality: 80
-              srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-              maxWidth: 309
+              aspectRatio: 1.777777778
+              width: 309
+              breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
               sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-            ) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            )
           }
         }
       }
@@ -368,9 +397,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -380,15 +413,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                )
               }
             }
           }
@@ -398,9 +431,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -410,15 +447,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                )
               }
             }
           }
@@ -428,9 +465,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -440,15 +481,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid
-                }
+                )
               }
             }
           }
@@ -458,9 +499,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -470,15 +515,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                )
               }
             }
           }

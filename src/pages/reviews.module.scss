@@ -1,13 +1,13 @@
 @import "./src/styles/breakpoints";
 
-.container {
+.containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
   margin: 0 auto;
   max-width: 40rem;
   padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-columns: 375px 1fr;
     max-width: unset;
   }
@@ -18,7 +18,7 @@
   }
 }
 
-.left {
+.leftCss {
   align-content: start;
   display: grid;
   grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". toggle ." ". . .";
@@ -30,46 +30,46 @@
       --step-5
     );
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "toggle toggle ." ". . .";
   }
 }
 
-.right {
+.rightCss {
   display: grid;
   grid-template-areas: ". list" ". ." "pagination pagination" ". .";
   grid-template-columns: var(--step-1) 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
 
-.page_header {
+.pageHeaderCss {
   grid-area: header;
 }
 
-.pagination_info {
+.paginationInfoCss {
   grid-area: pagination_info;
   justify-self: center;
 }
 
-.pagination {
+.paginationCss {
   grid-area: pagination;
   justify-self: center;
 }
 
-.filters {
+.filtersCss {
   grid-area: filters;
 }
 
-.list {
+.listCss {
   grid-area: list;
 }
 
-.list_item {
+.listItemCss {
   border-bottom: solid 1px var(--color-background);
   display: block;
   padding-right: var(--step-1);
 
-  @media (min-width: $breakpoint_tablet) {
+  @media (min-width: $breakpointTablet) {
     align-items: baseline;
     display: flex;
     justify-content: space-between;
@@ -77,28 +77,24 @@
   }
 }
 
-.list_item_title {
+.listItemTitleCss {
   color: var(--color-link);
   display: block;
   font-size: 16px;
   padding-top: var(--step--2);
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     flex-grow: 1;
     padding: 0.5rem 0;
   }
 }
 
-.list_item_title_link {
-  color: var(--color-link);
-}
-
-.list_item_title_year {
+.listItemTitleYearCss {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
 }
 
-.list_item_slug {
+.listItemSlugCss {
   color: var(--color-text-secondary);
   display: flex;
   font-feature-settings: "tnum";
@@ -106,28 +102,28 @@
   justify-items: baseline;
   padding: 2px var(--step-1) var(--step--2) 0;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     flex-grow: 0;
     flex-shrink: 0;
     padding: 0;
   }
 }
 
-.list_item_letter_grade {
+.listItemLetterGradeCss {
   min-width: 3ch;
   text-align: left;
 }
 
-.list_item_grade {
+.listItemGradeCss {
   height: 15px;
   width: auto;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     height: 16px;
   }
 }
 
-.toggle_grades_button {
+.toggleGradesButtonCss {
   grid-area: toggle;
   justify-self: center;
 }

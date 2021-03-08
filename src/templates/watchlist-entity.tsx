@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import Img, { FixedObject, FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput";
 import Fieldset from "../components/Fieldset";
@@ -14,7 +14,20 @@ import Seo from "../components/Seo";
 import { WatchlistMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
-import styles from "./watchlist-entity.module.scss";
+import {
+  containerCss,
+  filtersCss,
+  leftCss,
+  listCss,
+  listItemGradeCss,
+  listItemImageLinkCss,
+  listItemTitleCss,
+  listItemTitleYearCss,
+  pageHeaderCss,
+  percentCss,
+  percentTotalsCss,
+  rightCss,
+} from "./watchlist-entity.module.scss";
 
 function sortMovies(titles: WatchlistMovie[], sortOrder: string) {
   const sortMap: Record<
@@ -93,7 +106,7 @@ function WatchlistEntityProgress({
   return (
     <>
       <ProgressGraph total={total} complete={reviewed} />
-      <div className={styles.percent_totals}>
+      <div className={percentTotalsCss}>
         {reviewed}/{total} Reviewed
       </div>
     </>
@@ -246,28 +259,21 @@ function ReviewedListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
 
   return (
     <li>
-      <Link
-        className={styles.list_item_image_link}
-        to={`/reviews/${review.slug}/`}
-      >
+      <Link className={listItemImageLinkCss} to={`/reviews/${review.slug}/`}>
         {review.backdrop && (
-          <Img
-            fluid={review.backdrop.childImageSharp.fluid}
+          <GatsbyImage
+            image={review.backdrop.childImageSharp.gatsbyImageData}
             alt={`A still from ${movie.title} (${movie.year})`}
-            fadeIn={false}
           />
         )}
       </Link>
-      <div className={styles.list_item_title}>
+      <div className={listItemTitleCss}>
         <Link to={`/reviews/${review.slug}/`}>
           {movie.title}{" "}
-          <span className={styles.list_item_title_year}>{movie.year}</span>
+          <span className={listItemTitleYearCss}>{movie.year}</span>
         </Link>
       </div>
-      <Grade
-        grade={review.lastReviewGrade}
-        className={styles.list_item_grade}
-      />
+      <Grade grade={review.lastReviewGrade} className={listItemGradeCss} />
     </li>
   );
 }
@@ -277,14 +283,13 @@ function UnreviewedListItem({
   backdrop,
 }: {
   movie: WatchlistMovie;
-  backdrop: FluidObject;
+  backdrop: IGatsbyImageData;
 }): JSX.Element {
   return (
     <li>
-      <Img fluid={backdrop} alt="" fadeIn={false} />
-      <div className={styles.list_item_title}>
-        {movie.title}{" "}
-        <span className={styles.list_item_title_year}>{movie.year}</span>
+      <GatsbyImage image={backdrop} alt="An unreviewed title." />
+      <div className={listItemTitleCss}>
+        {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
       </div>
     </li>
   );
@@ -322,16 +327,16 @@ export default function WatchlistEntityTemplate({
         image={null}
         article={false}
       />
-      <main className={styles.container}>
-        <div className={styles.left}>
+      <main className={containerCss}>
+        <div className={leftCss}>
           <FilterPageHeader
-            className={styles.page_header}
-            avatar={data.avatar.childImageSharp.fixed}
+            className={pageHeaderCss}
+            avatar={data.avatar.childImageSharp.gatsbyImageData}
             alt={`An image of ${pageContext.name}`}
             heading={pageContext.name}
             tagline={<EntityHeader pageContext={pageContext} />}
           />
-          <Fieldset className={styles.filters}>
+          <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="viewings-title-input">
               Title
@@ -371,22 +376,24 @@ export default function WatchlistEntityTemplate({
               </SelectInput>
             </Label>
           </Fieldset>
-          <div className={styles.percent}>
+          <div className={percentCss}>
             <WatchlistEntityProgress
               total={state.filteredMovies.length}
               reviewed={reviewedMovieCount(state.filteredMovies)}
             />
           </div>
         </div>
-        <div className={styles.right} ref={listHeader}>
-          <ul className={styles.list}>
+        <div className={rightCss} ref={listHeader}>
+          <ul className={listCss}>
             {state.filteredMovies.map((movie) => {
               if (movie.reviewedMovie) {
                 return <ReviewedListItem movie={movie} />;
               }
               return (
                 <UnreviewedListItem
-                  backdrop={data.defaultBackdrop.childImageSharp.fluid}
+                  backdrop={
+                    data.defaultBackdrop.childImageSharp.gatsbyImageData
+                  }
                   movie={movie}
                 />
               );
@@ -408,12 +415,12 @@ interface PageContext {
 interface PageQueryResult {
   avatar: {
     childImageSharp: {
-      fixed: FixedObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   defaultBackdrop: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   movie: {
@@ -425,23 +432,27 @@ export const pageQuery = graphql`
   query($imdbIds: [String], $avatarPath: String) {
     avatar: file(absolutePath: { eq: $avatarPath }) {
       childImageSharp {
-        fixed(toFormat: JPG, width: 200, height: 200, quality: 80) {
-          ...GatsbyImageSharpFixed_tracedSVG
-        }
+        gatsbyImageData(
+          layout: FIXED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 200
+          height: 200
+        )
       }
     }
 
     defaultBackdrop: file(absolutePath: { regex: "/backdrops/default.png$/" }) {
       childImageSharp {
-        fluid(
-          toFormat: JPG
-          jpegQuality: 80
-          srcSetBreakpoints: [151, 184, 238, 302, 368, 476, 642]
-          maxWidth: 321
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
+          width: 321
+          aspectRatio: 1.777777778
           sizes: "(max-width: 379px) 321px, (max-width: 555px) 238px, (max-width: 1279) 184px, (max-width: 1343px) 238px, 151px"
-        ) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
+        )
       }
     }
 
@@ -458,15 +469,15 @@ export const pageQuery = graphql`
           slug
           backdrop {
             childImageSharp {
-              fluid(
-                toFormat: JPG
-                jpegQuality: 80
-                srcSetBreakpoints: [151, 184, 238, 302, 368, 476, 642]
-                maxWidth: 321
+              gatsbyImageData(
+                layout: CONSTRAINED
+                formats: [JPG, AVIF]
+                quality: 80
+                breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
+                width: 321
+                aspectRatio: 1.777777778
                 sizes: "(max-width: 379px) 321px, (max-width: 555px) 238px, (max-width: 1279) 184px, (max-width: 1343px) 238px, 151px"
-              ) {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
+              )
             }
           }
         }

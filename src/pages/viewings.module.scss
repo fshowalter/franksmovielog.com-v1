@@ -1,13 +1,13 @@
 @import "./src/styles/breakpoints";
 
-.container {
+.containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
   margin: 0 auto;
   max-width: 40rem;
   padding-top: var(--step-5);
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-columns: 375px 1fr;
     max-width: unset;
   }
@@ -18,7 +18,7 @@
   }
 }
 
-.left {
+.leftCss {
   align-content: start;
   display: grid;
   grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
@@ -30,73 +30,73 @@
       --step-5
     );
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
   }
 }
 
-.right {
+.rightCss {
   display: grid;
   grid-template-areas: ". list" ". ." "pagination pagination" ". .";
   grid-template-columns: var(--step-1) 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
 
-.page_header {
+.pageHeaderCss {
   grid-area: header;
 }
 
-.pagination_info {
+.paginationInfoCss {
   grid-area: pagination_info;
   justify-self: center;
 }
 
-.pagination {
+.paginationCss {
   grid-area: pagination;
   justify-self: center;
 }
 
-.filters {
+.filtersCss {
   grid-area: filters;
 }
 
-.list {
+.listCss {
   grid-area: list;
 }
 
-.list_item {
+.listItemCss {
   border-bottom: solid 1px var(--color-background);
   display: block;
 }
 
-.list_item_title {
+.listItemTitleCss {
   font-size: 1.125rem;
   padding: 1.5rem var(--step-1) 0.25rem 0;
 }
 
-.list_item_first {
-  .list_item_title {
+.listItemFirstCss {
+  .listItemTitleCss {
     padding-top: 0.5rem;
   }
 }
 
-.list_item_title_link {
+.listItemTitleLinkCss {
   color: var(--color-link);
 }
 
-.list_item_title_year {
+.listItemTitleYearCss {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
 }
 
-.list_item_slug {
+.listItemSlugCss {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
   letter-spacing: 0.5px;
   padding: 0 var(--step-1) 1.5rem 0;
 }
 
-.percent {
+.percentCss {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
@@ -105,7 +105,7 @@
   width: 150px;
 }
 
-.stats_link {
+.statsLinkCss {
   border: solid 1px darken(#e9e7e0, 5);
   border-radius: 4px;
   color: var(--color-link);
@@ -116,18 +116,18 @@
   white-space: nowrap;
 }
 
-.stats_icon {
+.statsIconCss {
   height: auto;
   width: 16px;
 }
 
-.percent_totals {
+.percentTotalsCss {
   color: var(--color-text-secondary);
   font-size: 1rem;
   margin-top: 1.5rem;
 }
 
-.quote {
+.quoteCss {
   color: var(--color-text-tertiary);
   display: block;
   margin-top: 0.75rem;

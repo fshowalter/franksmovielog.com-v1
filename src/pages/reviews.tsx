@@ -24,7 +24,23 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../utils/sort-utils";
-import styles from "./reviews.module.scss";
+import {
+  containerCss,
+  filtersCss,
+  leftCss,
+  listCss,
+  listItemCss,
+  listItemGradeCss,
+  listItemLetterGradeCss,
+  listItemSlugCss,
+  listItemTitleCss,
+  listItemTitleYearCss,
+  pageHeaderCss,
+  paginationCss,
+  paginationInfoCss,
+  rightCss,
+  toggleGradesButtonCss,
+} from "./reviews.module.scss";
 
 function sortReviews(reviews: ReviewedMovie[], sortOrder: string) {
   const sortMap: Record<
@@ -282,10 +298,10 @@ export default function ReviewsPage({
         image={null}
         article={false}
       />
-      <main className={styles.container}>
-        <div className={styles.left}>
+      <main className={containerCss}>
+        <div className={leftCss}>
           <FilterPageHeader
-            className={styles.page_header}
+            className={pageHeaderCss}
             heading="Reviews"
             tagline={
               <>
@@ -293,7 +309,7 @@ export default function ReviewsPage({
               </>
             }
           />
-          <Fieldset className={styles.filters}>
+          <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
             <Label htmlFor="viewings-title-input">
               Title
@@ -339,9 +355,9 @@ export default function ReviewsPage({
             currentPage={state.currentPage}
             perPage={state.perPage}
             numberOfItems={state.filteredReviews.length}
-            className={styles.pagination_info}
+            className={paginationInfoCss}
           />
-          <div className={styles.toggle_grades_button}>
+          <div className={toggleGradesButtonCss}>
             <ToggleButton
               id="show_grade-toggle"
               onClick={() => dispatch({ type: TOGGLE_GRADES })}
@@ -350,30 +366,28 @@ export default function ReviewsPage({
             </ToggleButton>
           </div>
         </div>
-        <div className={styles.right}>
-          <ol className={styles.list}>
+        <div className={rightCss}>
+          <ol className={listCss}>
             {state.reviewsForPage.map((review) => {
               return (
-                <li className={styles.list_item}>
+                <li className={listItemCss}>
                   <Link
                     to={`/reviews/${review.slug}/`}
-                    className={styles.list_item_title}
+                    className={listItemTitleCss}
                   >
                     {review.title}{" "}
-                    <span className={styles.list_item_title_year}>
-                      {review.year}
-                    </span>
+                    <span className={listItemTitleYearCss}>{review.year}</span>
                   </Link>
-                  <div className={styles.list_item_slug}>
+                  <div className={listItemSlugCss}>
                     {}
                     {state.showGrades ? (
-                      <div className={styles.list_item_letter_grade}>
+                      <div className={listItemLetterGradeCss}>
                         {review.lastReviewGrade}
                       </div>
                     ) : (
                       <Grade
                         grade={review.lastReviewGrade}
-                        className={styles.list_item_grade}
+                        className={listItemGradeCss}
                       />
                     )}
                   </div>
@@ -388,7 +402,7 @@ export default function ReviewsPage({
             onClick={(newPage) =>
               dispatch({ type: CHANGE_PAGE, value: newPage })
             }
-            className={styles.pagination}
+            className={paginationCss}
           />
         </div>
       </main>

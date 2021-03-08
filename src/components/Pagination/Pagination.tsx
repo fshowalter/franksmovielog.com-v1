@@ -1,7 +1,14 @@
 import { Link } from "gatsby";
 import React from "react";
 import ScreenReaderOnly from "../ScreenReaderOnly";
-import styles from "./Pagination.module.scss";
+import {
+  buttonCss,
+  containerCss,
+  currentPageCss,
+  elipsisCss,
+  infoCss,
+  paginationLinkCss,
+} from "./Pagination.module.scss";
 
 type PaginationProps = {
   /** The current page number, starting from 1. */
@@ -22,7 +29,7 @@ export function PaginationInfo({
   className?: string;
 }): JSX.Element {
   if (numberOfItems === 0) {
-    return <p className={`${styles.info} ${className || ""}`}>No results.</p>;
+    return <p className={`${infoCss} ${className || ""}`}>No results.</p>;
   }
 
   const start = currentPage * perPage - perPage || 1;
@@ -30,7 +37,7 @@ export function PaginationInfo({
   const end = max < numberOfItems ? max : numberOfItems;
 
   return (
-    <p className={`${styles.info} ${className || ""}`}>
+    <p className={`${infoCss} ${className || ""}`}>
       Showing {start}-{end} of {numberOfItems}.
     </p>
   );
@@ -80,7 +87,7 @@ export function PaginationWithButtons({
       <button
         type="button"
         onClick={() => onClick(currentPage - 1)}
-        className={styles.button}
+        className={buttonCss}
       >
         ←Prev
       </button>
@@ -96,7 +103,7 @@ export function PaginationWithButtons({
       <button
         type="button"
         onClick={() => onClick(currentPage + 1)}
-        className={styles.button}
+        className={buttonCss}
       >
         Next →
       </button>
@@ -107,11 +114,7 @@ export function PaginationWithButtons({
 
   if (currentPage - 1 > 1) {
     firstPage = (
-      <button
-        type="button"
-        onClick={() => onClick(1)}
-        className={styles.button}
-      >
+      <button type="button" onClick={() => onClick(1)} className={buttonCss}>
         1
       </button>
     );
@@ -120,7 +123,7 @@ export function PaginationWithButtons({
   let prevDots: string | JSX.Element = "";
 
   if (currentPage - 2 > 1) {
-    prevDots = <span className={styles.elipsis}>…</span>;
+    prevDots = <span className={elipsisCss}>…</span>;
   }
 
   let prevPage: string | JSX.Element = "";
@@ -130,7 +133,7 @@ export function PaginationWithButtons({
       <button
         type="button"
         onClick={() => onClick(currentPage - 1)}
-        className={styles.button}
+        className={buttonCss}
       >
         {currentPage - 1}
       </button>
@@ -146,7 +149,7 @@ export function PaginationWithButtons({
       <button
         type="button"
         onClick={() => onClick(currentPage + 1)}
-        className={styles.button}
+        className={buttonCss}
       >
         {currentPage + 1}
       </button>
@@ -156,7 +159,7 @@ export function PaginationWithButtons({
   let nextDots: string | JSX.Element = "";
 
   if (currentPage + 2 < numPages) {
-    nextDots = <span className={styles.elipsis}>…</span>;
+    nextDots = <span className={elipsisCss}>…</span>;
   }
 
   let lastPage: string | JSX.Element = "";
@@ -166,7 +169,7 @@ export function PaginationWithButtons({
       <button
         type="button"
         onClick={() => onClick(numPages)}
-        className={styles.button}
+        className={buttonCss}
       >
         {numPages}
       </button>
@@ -174,12 +177,12 @@ export function PaginationWithButtons({
   }
 
   return (
-    <section className={`${styles.container} ${className || ""}`}>
+    <section className={`${containerCss} ${className || ""}`}>
       <ScreenReaderOnly>
         <h3>Pagination</h3>
       </ScreenReaderOnly>
       {prev} {firstPage} {prevDots} {prevPage}
-      <span className={styles.current_page} aria-current="page">
+      <span className={currentPageCss} aria-current="page">
         {currentPage}
       </span>
       {nextPage} {nextDots} {lastPage} {next}
@@ -230,20 +233,20 @@ export function PaginationWithLinks({
   const nextPageUrl = `${urlRoot}page-${currentPage + 1}/`;
 
   const prev = isFirst ? null : (
-    <Link to={prevPageUrl} className={styles.pagination_link}>
+    <Link to={prevPageUrl} className={paginationLinkCss}>
       {`← ${prevText}`}
     </Link>
   );
 
   const next = isLast ? null : (
-    <Link to={nextPageUrl} className={styles.pagination_link}>
+    <Link to={nextPageUrl} className={paginationLinkCss}>
       {`${nextText} →`}
     </Link>
   );
 
   const firstPage =
     currentPage - 1 > 1 ? (
-      <Link className={styles.pagination_link} to={urlRoot}>
+      <Link className={paginationLinkCss} to={urlRoot}>
         1
       </Link>
     ) : (
@@ -251,12 +254,12 @@ export function PaginationWithLinks({
     );
 
   const prevDots =
-    currentPage - 2 > 1 ? <span className={styles.elipsis}>…</span> : "";
+    currentPage - 2 > 1 ? <span className={elipsisCss}>…</span> : "";
 
   const prevPage = isFirst ? (
     <span />
   ) : (
-    <Link to={prevPageUrl} className={styles.pagination_link}>
+    <Link to={prevPageUrl} className={paginationLinkCss}>
       {currentPage - 1}
     </Link>
   );
@@ -264,20 +267,17 @@ export function PaginationWithLinks({
   const nextPage = isLast ? (
     <span />
   ) : (
-    <Link to={nextPageUrl} className={styles.pagination_link}>
+    <Link to={nextPageUrl} className={paginationLinkCss}>
       {currentPage + 1}
     </Link>
   );
 
   const nextDots =
-    currentPage + 2 < numPages ? <span className={styles.elipsis}>…</span> : "";
+    currentPage + 2 < numPages ? <span className={elipsisCss}>…</span> : "";
 
   const lastPage =
     currentPage + 1 < numPages ? (
-      <Link
-        to={`${urlRoot}page-${numPages}/`}
-        className={styles.pagination_link}
-      >
+      <Link to={`${urlRoot}page-${numPages}/`} className={paginationLinkCss}>
         {numPages}
       </Link>
     ) : (
@@ -285,12 +285,12 @@ export function PaginationWithLinks({
     );
 
   return (
-    <section className={`${styles.container} ${className || ""}`}>
+    <section className={`${containerCss} ${className || ""}`}>
       <ScreenReaderOnly>
         <h3>Pagination</h3>
       </ScreenReaderOnly>
       {prev} {firstPage} {prevDots} {prevPage}
-      <span className={styles.current_page} aria-current="page">
+      <span className={currentPageCss} aria-current="page">
         {currentPage}
       </span>
       {nextPage} {nextDots} {lastPage} {next}

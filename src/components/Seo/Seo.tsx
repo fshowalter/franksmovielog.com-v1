@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useLocation } from "@reach/router";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";

@@ -4,11 +4,20 @@ module.exports = function onCreateWebpackConfig({
   plugins,
   getConfig,
 }) {
+  // get current webpack config
+  const config = getConfig();
+
+  const miniCssExtractPlugin = config.plugins.find(
+    (plugin) => plugin.constructor.name === "MiniCssExtractPlugin"
+  );
+
+  if (miniCssExtractPlugin) {
+    miniCssExtractPlugin.options.ignoreOrder = true;
+  }
+
   // override config only during
   // production JS & CSS build
   if (stage === "build-javascript") {
-    // get current webpack config
-    const config = getConfig();
     // our new cssnano options
     // are still based on default preset
     const options = {
@@ -37,7 +46,8 @@ module.exports = function onCreateWebpackConfig({
         options
       );
     }
-    // replace webpack config with the modified object
-    actions.replaceWebpackConfig(config);
   }
+
+  // replace webpack config with the modified object
+  actions.replaceWebpackConfig(config);
 };

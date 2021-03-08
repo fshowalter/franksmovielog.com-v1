@@ -1,11 +1,11 @@
-.container {
+.containerCss {
   display: flex;
   flex-flow: row wrap;
   font-family: var(--font-sans);
   justify-content: space-between;
 }
 
-.thumb {
+.thumbCss {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 50%;
@@ -17,25 +17,29 @@
   transition: transform 0.3s ease-in-out;
   width: 2rem;
   z-index: 1;
+
+  &:active {
+    transform: scale(1.25);
+  }
 }
 
-.dragging,
-.thumb:active {
+.draggingCss,
+.thumbCss:active {
   transform: scale(1.25);
 }
 
-.to {
+.toCss {
   font-family: var(--font-sans);
 }
 
-.slider {
+.sliderCss {
   flex: 1 100%;
   height: var(--step-2);
   margin-bottom: 0.5rem;
   width: 100%;
 }
 
-.track {
+.trackCss {
   background: rgba(0, 0, 0, 0.06);
   border-bottom: solid 0.5rem #fff;
   border-top: solid 0.5rem #fff;
@@ -44,7 +48,7 @@
   position: relative;
 }
 
-.year_input {
+.yearInputCss {
   appearance: textfield;
   background-color: #fff;
   border: 0;
@@ -54,6 +58,6 @@
   width: 4em;
 }
 
-.right {
+.rightCss {
   text-align: right;
 }

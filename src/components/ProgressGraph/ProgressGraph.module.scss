@@ -1,25 +1,19 @@
-.percent_graph {
+.percentGraphCss {
   display: block;
 }
 
-.percent_number {
+.percentNumberCss {
   font-size: 0.5em;
   text-anchor: middle;
 }
 
-.percent_totals {
-  color: var(--color-text-secondary);
-  font-size: 1rem;
-  margin-top: 1.5rem;
-}
-
-.percent_graph_background {
+.percentGraphBackgroundCss {
   fill: none;
   stroke: #eee;
   stroke-width: 3.8;
 }
 
-.percent_graph_progress {
+.percentGraphProgressCss {
   animation: progress 1s ease-out forwards;
   fill: none;
   stroke: #77e895;

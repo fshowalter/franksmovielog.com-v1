@@ -1,8 +1,13 @@
 import { Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { Collection, Movie, Person } from "../../types";
-import styles from "./WatchlistLinks.module.scss";
+import {
+  avatarCss,
+  containerCss,
+  linkCss,
+  listCss,
+} from "./WatchlistLinks.module.scss";
 
 function WatchlistItem({
   to,
@@ -19,12 +24,12 @@ function WatchlistItem({
 
   return (
     <li>
-      <Link to={to} className={styles.link}>
+      <Link to={to} className={linkCss}>
         {entity.avatar && (
-          <Img
-            fixed={entity.avatar.childImageSharp.fixed}
+          <GatsbyImage
+            image={entity.avatar.childImageSharp.gatsbyImageData}
             alt={`More ${entity.name} reviews`}
-            className={styles.avatar}
+            className={avatarCss}
           />
         )}
         {children}
@@ -47,8 +52,8 @@ function WatchlistLinks({
   const { watchlist } = movie;
 
   return (
-    <div className={`${styles.container} ${className || ""}`}>
-      <ul className={styles.list}>
+    <div className={`${containerCss} ${className || ""}`}>
+      <ul className={listCss}>
         {watchlist.collections.map((collection) => {
           return (
             <WatchlistItem

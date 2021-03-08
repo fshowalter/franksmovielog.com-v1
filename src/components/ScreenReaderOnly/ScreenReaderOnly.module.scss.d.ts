@@ -1,0 +1,1 @@
+export const srOnlyCss: string;

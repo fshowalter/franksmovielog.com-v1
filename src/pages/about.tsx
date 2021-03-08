@@ -1,10 +1,10 @@
 import { graphql } from "gatsby";
-import Img, { FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/Layout";
 import RenderedMarkdown from "../components/RenderedMarkdown";
 import Seo from "../components/Seo";
-import styles from "./about.module.scss";
+import { articleCss, bodyCss, imageCss } from "./about.module.scss";
 
 export default function AboutPage({ data }: PageQueryResult): JSX.Element {
   const { backdrop, page } = data;
@@ -18,15 +18,14 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
         article
       />
       <main>
-        <article className={styles.article}>
-          <Img
-            fluid={backdrop.childImageSharp.fluid}
-            alt=""
-            className={styles.image}
+        <article className={articleCss}>
+          <GatsbyImage
+            image={backdrop.childImageSharp.gatsbyImageData}
+            alt="A coffee cup with the word BEGIN on it."
+            className={imageCss}
             loading="eager"
-            fadeIn={false}
           />
-          <RenderedMarkdown className={styles.body} text={page.html} />
+          <RenderedMarkdown className={bodyCss} text={page.html} />
         </article>
       </main>
     </Layout>
@@ -37,7 +36,7 @@ type PageQueryResult = {
   data: {
     backdrop: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
     page: {
@@ -50,15 +49,15 @@ export const pageQuery = graphql`
   query {
     backdrop: file(absolutePath: { regex: "/backdrops/about.png$/" }) {
       childImageSharp {
-        fluid(
-          toFormat: JPG
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
           quality: 80
-          srcSetBreakpoints: [414, 640, 818, 904, 1280, 1808, 2000]
-          maxWidth: 1000
+          width: 1000
+          aspectRatio: 1.777777778
+          breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
           sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
-        ) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
+        )
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "about" } }) {

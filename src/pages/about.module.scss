@@ -1,6 +1,6 @@
 @import "./src/styles/breakpoints";
 
-.article {
+.articleCss {
   display: grid;
   grid-template-areas: "image image image" ". . ." ". body ." ". . .";
   grid-template-columns:
@@ -10,7 +10,7 @@
   margin: 0 auto;
   max-width: 40rem;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-columns:
       minmax(var(--step-1), 1fr) minmax(auto, 63ch)
       minmax(var(--step-1), 1fr);
@@ -18,11 +18,11 @@
   }
 }
 
-.image {
+.imageCss {
   display: block;
   grid-area: image;
 }
 
-.body {
+.bodyCss {
   grid-area: body;
 }

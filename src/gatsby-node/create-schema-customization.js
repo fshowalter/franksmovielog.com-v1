@@ -290,7 +290,7 @@ const markdownRemark = {
           excerpt = excerpt.replace(/\n+$/, "");
           excerpt = excerpt.replace(
             /<\/p>$/,
-            ` <a class="global__excerpt_link" href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
+            ` <a class="globalExcerptLinkCss" href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
           );
         }
 

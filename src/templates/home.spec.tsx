@@ -2,7 +2,7 @@ import {
   createHistory,
   createMemorySource,
   LocationProvider,
-} from "@reach/router";
+} from "@reach/router"; // eslint-disable-line import/no-extraneous-dependencies
 import { useStaticQuery } from "gatsby";
 import React from "react";
 import { create } from "react-test-renderer";
@@ -47,20 +47,20 @@ describe("Home", () => {
     expect(tree).toMatchInlineSnapshot(`
       Array [
         <a
-          className="skip_link"
+          className="skipLinkCss"
           href="#content"
         >
           Skip to content
         </a>,
         <div
-          className="container"
+          className="containerCss"
           id="top"
         >
           <header
-            className="mast_header"
+            className="mastHeaderCss"
           >
             <h1
-              className="mast_title"
+              className="mastTitleCss"
             >
               <a
                 href="/"
@@ -69,28 +69,28 @@ describe("Home", () => {
               </a>
             </h1>
             <p
-              className="mast_tagline"
+              className="mastTaglineCss"
             >
               My life at the movies.
             </p>
             <form
               acceptCharset="UTF-8"
               action="https://www.google.com/search"
-              className="mast_search_form"
+              className="mastSearchFormCss"
               method="get"
               role="search"
             >
               <label
-                className="mast_search_wrap"
+                className="mastSearchWrapCss"
                 htmlFor="search"
               >
                 <div
-                  className="sr_only"
+                  className="srOnlyCss"
                 >
                   Search
                 </div>
                 <input
-                  className="mast_search_input"
+                  className="mastSearchInputCss"
                   id="search"
                   name="q"
                   placeholder="Search..."
@@ -103,12 +103,12 @@ describe("Home", () => {
                 />
                 <button
                   aria-label="Search"
-                  className="mast_search_submit"
+                  className="mastSearchSubmitCss"
                   type="submit"
                   value="Search"
                 >
                   <svg
-                    className="icon "
+                    className="iconCss "
                     height="1em"
                     viewBox="0 0 16 16"
                     width="1em"
@@ -127,66 +127,66 @@ describe("Home", () => {
               </label>
             </form>
             <nav
-              className="mast_nav"
+              className="mastNavCss"
             >
               <ul
-                className="mast_nav_list"
+                className="mastNavListCss"
               >
                 <li
-                  className="mast_nav_list_item"
+                  className="mastNavListItemCss"
                 >
                   <a
-                    className="mast_nav_link"
+                    className="mastNavLinkCss"
                     href="/"
                   >
                     Home
                   </a>
                 </li>
                 <li
-                  className="mast_nav_list_item"
+                  className="mastNavListItemCss"
                 >
                   <a
-                    className="mast_nav_link"
+                    className="mastNavLinkCss"
                     href="/about/"
                   >
                     About
                   </a>
                 </li>
                 <li
-                  className="mast_nav_list_item"
+                  className="mastNavListItemCss"
                 >
                   <a
-                    className="mast_nav_link"
+                    className="mastNavLinkCss"
                     href="/how-i-grade/"
                   >
                     How I Grade
                   </a>
                 </li>
                 <li
-                  className="mast_nav_list_item"
+                  className="mastNavListItemCss"
                 >
                   <a
-                    className="mast_nav_link"
+                    className="mastNavLinkCss"
                     href="/reviews/"
                   >
                     All Reviews
                   </a>
                 </li>
                 <li
-                  className="mast_nav_list_item"
+                  className="mastNavListItemCss"
                 >
                   <a
-                    className="mast_nav_link"
+                    className="mastNavLinkCss"
                     href="/viewings/"
                   >
                     Viewing Log
                   </a>
                 </li>
                 <li
-                  className="mast_nav_list_item"
+                  className="mastNavListItemCss"
                 >
                   <a
-                    className="mast_nav_link"
+                    className="mastNavLinkCss"
                     href="/watchlist/"
                   >
                     Watchlist
@@ -196,17 +196,17 @@ describe("Home", () => {
             </nav>
           </header>
           <div
-            className="children"
+            className="childrenCss"
             id="content"
           >
             <main
-              className="container"
+              className="containerCss"
             >
               <ol
-                className="list"
+                className="listCss"
               />
               <p
-                className="info pagination"
+                className="infoCss paginationCss"
               >
                 Showing 
                 1
@@ -219,13 +219,13 @@ describe("Home", () => {
             </main>
           </div>
           <footer
-            className="footer"
+            className="footerCss"
           >
             <ul
-              className="footer_nav_list"
+              className="footerNavListCss"
             >
               <li
-                className="footer_nav_list_item"
+                className="footerNavListItemCss"
               >
                 <a
                   href="/"
@@ -234,7 +234,7 @@ describe("Home", () => {
                 </a>
               </li>
               <li
-                className="footer_nav_list_item"
+                className="footerNavListItemCss"
               >
                 <a
                   href="/about/"
@@ -243,7 +243,7 @@ describe("Home", () => {
                 </a>
               </li>
               <li
-                className="footer_nav_list_item"
+                className="footerNavListItemCss"
               >
                 <a
                   href="/how-i-grade/"
@@ -252,7 +252,7 @@ describe("Home", () => {
                 </a>
               </li>
               <li
-                className="footer_nav_list_item"
+                className="footerNavListItemCss"
               >
                 <a
                   href="/reviews/"
@@ -261,7 +261,7 @@ describe("Home", () => {
                 </a>
               </li>
               <li
-                className="footer_nav_list_item"
+                className="footerNavListItemCss"
               >
                 <a
                   href="/viewings/"
@@ -270,7 +270,7 @@ describe("Home", () => {
                 </a>
               </li>
               <li
-                className="footer_nav_list_item"
+                className="footerNavListItemCss"
               >
                 <a
                   href="/watchlist/"
@@ -280,7 +280,7 @@ describe("Home", () => {
               </li>
             </ul>
             <p
-              className="footer_fair_use"
+              className="footerFairUseCss"
             >
               All stills used in accordance with the
                
@@ -291,7 +291,7 @@ describe("Home", () => {
               </a>
             </p>
             <div
-              className="sr_only"
+              className="srOnlyCss"
             >
               <a
                 href="#top"

@@ -1,6 +1,6 @@
 import React from "react";
 import SvgIcon from "../SvgIcon";
-import styles from "./DateIcon.module.scss";
+import { iconCss } from "./DateIcon.module.scss";
 
 /**
  * Renders a calendar icon.
@@ -12,7 +12,7 @@ export default function DateIcon({
   className?: string;
 }): JSX.Element {
   return (
-    <SvgIcon className={`${styles.icon} ${className || ""}`}>
+    <SvgIcon className={`${iconCss} ${className || ""}`}>
       <title>Watched on</title>
       <path
         fillRule="evenodd"

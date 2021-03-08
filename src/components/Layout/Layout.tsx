@@ -11,7 +11,27 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import ScreenReaderOnly from "../ScreenReaderOnly";
 import SearchIcon from "../SearchIcon";
-import styles from "./Layout.module.scss";
+import {
+  childrenCss,
+  containerCss,
+  footerCss,
+  footerFairUseCss,
+  footerNavListCss,
+  footerNavListItemCss,
+  mastHeaderCss,
+  mastNavCss,
+  mastNavLinkActiveCss,
+  mastNavLinkCss,
+  mastNavListCss,
+  mastNavListItemCss,
+  mastSearchFormCss,
+  mastSearchInputCss,
+  mastSearchSubmitCss,
+  mastSearchWrapCss,
+  mastTaglineCss,
+  mastTitleCss,
+  skipLinkCss,
+} from "./Layout.module.scss";
 
 type NavItemProps = {
   to: string;
@@ -20,11 +40,11 @@ type NavItemProps = {
 
 function MastNavItem({ to, children }: NavItemProps): JSX.Element {
   return (
-    <li className={styles.mast_nav_list_item}>
+    <li className={mastNavListItemCss}>
       <Link
         to={to}
-        className={styles.mast_nav_link}
-        activeClassName={styles.mast_nav_link_active}
+        className={mastNavLinkCss}
+        activeClassName={mastNavLinkActiveCss}
       >
         {children}
       </Link>
@@ -34,7 +54,7 @@ function MastNavItem({ to, children }: NavItemProps): JSX.Element {
 
 function FooterNavItem({ to, children }: NavItemProps): JSX.Element {
   return (
-    <li className={styles.footer_nav_list_item}>
+    <li className={footerNavListItemCss}>
       <Link to={to}>{children}</Link>
     </li>
   );
@@ -47,10 +67,10 @@ export default function Layout({
 }): JSX.Element {
   return (
     <>
-      <a className={styles.skip_link} href="#content">
+      <a className={skipLinkCss} href="#content">
         Skip to content
       </a>
-      <div id="top" className={styles.container}>
+      <div id="top" className={containerCss}>
         <Helmet>
           <html lang="en-us" />
           <meta
@@ -58,23 +78,23 @@ export default function Layout({
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
         </Helmet>
-        <header className={styles.mast_header}>
-          <h1 className={styles.mast_title}>
+        <header className={mastHeaderCss}>
+          <h1 className={mastTitleCss}>
             <Link to="/">Frank&apos;s Movie Log</Link>
           </h1>
-          <p className={styles.mast_tagline}>My life at the movies.</p>
+          <p className={mastTaglineCss}>My life at the movies.</p>
           <form
             action="https://www.google.com/search"
             acceptCharset="UTF-8"
             method="get"
             role="search"
-            className={styles.mast_search_form}
+            className={mastSearchFormCss}
           >
-            <label htmlFor="search" className={styles.mast_search_wrap}>
+            <label htmlFor="search" className={mastSearchWrapCss}>
               <ScreenReaderOnly>Search</ScreenReaderOnly>
               <input
                 type="text"
-                className={styles.mast_search_input}
+                className={mastSearchInputCss}
                 name="q"
                 id="search"
                 placeholder="Search..."
@@ -86,7 +106,7 @@ export default function Layout({
               />
               <button
                 type="submit"
-                className={styles.mast_search_submit}
+                className={mastSearchSubmitCss}
                 value="Search"
                 aria-label="Search"
               >
@@ -94,8 +114,8 @@ export default function Layout({
               </button>
             </label>
           </form>
-          <nav className={styles.mast_nav}>
-            <ul className={styles.mast_nav_list}>
+          <nav className={mastNavCss}>
+            <ul className={mastNavListCss}>
               <MastNavItem to="/">Home</MastNavItem>
               <MastNavItem to="/about/">About</MastNavItem>
               <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
@@ -105,11 +125,11 @@ export default function Layout({
             </ul>
           </nav>
         </header>
-        <div id="content" className={styles.children}>
+        <div id="content" className={childrenCss}>
           {children}
         </div>
-        <footer className={styles.footer}>
-          <ul className={styles.footer_nav_list}>
+        <footer className={footerCss}>
+          <ul className={footerNavListCss}>
             <FooterNavItem to="/">Home</FooterNavItem>
             <FooterNavItem to="/about/">About</FooterNavItem>
             <FooterNavItem to="/how-i-grade/">How I Grade</FooterNavItem>
@@ -117,7 +137,7 @@ export default function Layout({
             <FooterNavItem to="/viewings/">Viewing Log</FooterNavItem>
             <FooterNavItem to="/watchlist/">Watchlist</FooterNavItem>
           </ul>
-          <p className={styles.footer_fair_use}>
+          <p className={footerFairUseCss}>
             All stills used in accordance with the{" "}
             <a href="http://www.copyright.gov/title17/92chap1.html#107">
               Fair Use Law.

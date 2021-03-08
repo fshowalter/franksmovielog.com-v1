@@ -1,6 +1,6 @@
 @import "./src/styles/breakpoints";
 
-.container {
+.containerCss {
   display: grid;
   grid-template-areas: "image image image" ". title ." ". credits ." ". reviews ." ". viewings ." ". related .";
   grid-template-columns:
@@ -13,33 +13,33 @@
   position: relative;
   row-gap: 3rem;
 
-  @media (min-width: $breakpoint_tablet) {
+  @media (min-width: $breakpointTablet) {
     grid-template-areas: "image" "title" "credits" "reviews" "viewings" "related";
     grid-template-columns: unset;
   }
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
     grid-template-columns: minmax(auto, 63ch) 1fr 25%;
     max-width: unset;
   }
 }
 
-.reviews_list {
+.reviewsListCss {
   display: grid;
   grid-area: reviews;
   grid-template-columns: 1fr;
   row-gap: 3rem;
 }
 
-.review {
+.reviewCss {
   border-top: solid 1px var(--color-background);
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 1.5rem;
   row-gap: 1rem;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-columns: var(--step-1) 1fr;
 
     > * {
@@ -48,59 +48,59 @@
   }
 }
 
-.date_icon {
+.dateIconCss {
   margin-right: 0.5rem;
   position: relative;
   top: 2px;
   width: 14px;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     left: -24px;
     position: absolute;
   }
 }
 
-.slug {
+.slugCss {
   color: var(--color-text-secondary);
   font-size: 16px;
   position: relative;
 }
 
-.image {
+.imageCss {
   grid-area: image;
   width: 100%;
 }
 
-.title {
+.titleCss {
   color: #000;
   font-size: var(--step-3);
   line-height: 1.1;
 }
 
-.header {
+.headerCss {
   grid-area: title;
 }
 
-.aka_container {
+.akaContainerCss {
   color: var(--color-text-secondary);
   font-style: italic;
   margin-top: 0.875rem;
 }
 
-.aka_list {
+.akaListCss {
   margin-top: 0.5rem;
 }
 
-.aka_list_item {
+.akaListItemCss {
   display: block;
   font-size: 1.125rem;
 }
 
-.content {
+.contentCss {
   position: relative;
 }
 
-.grade {
+.gradeCss {
   height: 21px;
   margin-right: 0.5rem;
   position: absolute;
@@ -108,7 +108,7 @@
   width: auto;
 }
 
-.credits {
+.creditsCss {
   align-content: start;
   color: var(--color-text-secondary);
   column-gap: var(--step-1);
@@ -120,36 +120,36 @@
   grid-template-rows: auto auto 1fr auto;
   letter-spacing: 0.2px;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-areas: "poster" "directors" "cast" "watchlist";
     grid-template-columns: 1fr;
     grid-template-rows: unset;
   }
 }
 
-.poster {
+.posterCss {
   align-self: start;
   grid-area: poster;
 }
 
-.directors {
+.directorsCss {
   grid-area: directors;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     padding: 1.5rem 0.5rem 0;
   }
 }
 
-.cast {
+.castCss {
   grid-area: cast;
   margin-top: 1rem;
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     padding: 0 0.5rem;
   }
 }
 
-.cast_label {
+.castLabelCss {
   display: block;
   font-weight: 700;
   line-height: 1.5;
@@ -164,12 +164,12 @@
   }
 }
 
-.date {
+.dateCss {
   font-weight: 700;
   letter-spacing: 0.2px;
 }
 
-.body {
+.bodyCss {
   grid-area: content;
 
   > p:first-of-type::before {
@@ -181,7 +181,7 @@
   }
 }
 
-.watchlist {
+.watchlistCss {
   align-self: start;
   grid-area: watchlist;
   margin-top: 1.5rem;
@@ -190,37 +190,18 @@
     color: var(--color-link);
   }
 
-  @media (min-width: $breakpoint_desktop) {
+  @media (min-width: $breakpointDesktop) {
     padding: 0 0.5rem;
   }
 }
 
-.footnotes {
-  font-family: var(--font-sans);
-  font-size: var(--step--1);
-  font-weight: 300;
-
-  ol {
-    list-style-type: decimal;
-    margin-left: 1rem;
-  }
-
-  li {
-    display: block;
-  }
-
-  p {
-    display: inline;
-  }
-}
-
-.related {
+.relatedCss {
   display: grid;
   grid-area: related;
   row-gap: 3rem;
 }
 
-.related_header {
+.relatedHeaderCss {
   border-bottom: 1px solid var(--color-background);
   display: flex;
   justify-content: space-between;
@@ -229,21 +210,21 @@
   text-rendering: optimizeLegibility;
 }
 
-.related_heading {
+.relatedHeadingCss {
   color: var(--color-text-secondary);
 }
 
-.related_more {
+.relatedMoreCss {
   color: var(--color-link);
 }
 
-.related_name {
+.relatedNameCss {
   color: rgba(0, 0, 0, 0.75);
   font-weight: 600;
   letter-spacing: 0.2px;
 }
 
-.older_viewings_heading {
+.olderViewingsHeadingCss {
   border-bottom: solid 1px var(--color-background);
   color: rgba(0, 0, 0, 0.75);
   font-size: 1.25rem;
@@ -251,27 +232,27 @@
   margin-bottom: 1rem;
 }
 
-.older_viewings_list {
+.olderViewingsListCss {
   display: grid;
   row-gap: 0.25rem;
 }
 
-.older_viewings {
+.olderViewingsCss {
   grid-area: viewings;
 }
 
-.viewing_date_icon {
+.viewingDateIconCss {
   margin-right: 0.5rem;
   position: relative;
   top: 2px;
   width: 14px;
 }
 
-.separator {
+.separatorCss {
   color: var(--color-text-secondary);
 }
 
-.header_meta {
+.headerMetaCss {
   color: var(--color-text-secondary);
   font-feature-settings: "tnum";
   margin-top: 0.75rem;
