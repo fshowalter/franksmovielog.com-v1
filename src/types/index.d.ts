@@ -1,4 +1,4 @@
-import { FixedObject, FluidObject } from "gatsby-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 export type Person = {
   name: string;
@@ -6,7 +6,7 @@ export type Person = {
   reviewedMovies: ReviewedMovie[];
   avatar: {
     childImageSharp: {
-      fixed: FixedObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
 };
@@ -17,7 +17,7 @@ export type Collection = {
   reviewedMovies: ReviewedMovie[];
   avatar: {
     childImageSharp: {
-      fixed: FixedObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
 };
@@ -86,7 +86,7 @@ export type ReviewedMovie = Movie & {
   runtimeMinutes: number;
   backdrop: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   seoImage: {
@@ -98,7 +98,7 @@ export type ReviewedMovie = Movie & {
   };
   poster: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   reviews: MarkdownReview[];

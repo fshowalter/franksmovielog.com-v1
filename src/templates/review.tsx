@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
@@ -187,12 +187,11 @@ export default function Review({
       />
       <main className={containerCss}>
         {movie.backdrop && (
-          <Img
+          <GatsbyImage
             className={imageCss}
-            fluid={movie.backdrop.childImageSharp.fluid}
+            image={movie.backdrop.childImageSharp.gatsbyImageData}
             alt={`A still from ${movie.title} (${movie.year})`}
             loading="eager"
-            fadeIn={false}
           />
         )}
         <header className={headerCss}>
@@ -228,12 +227,11 @@ export default function Review({
         </header>
         <aside className={creditsCss}>
           {movie.poster && (
-            <Img
+            <GatsbyImage
               className={posterCss}
-              fluid={movie.poster.childImageSharp.fluid}
+              image={movie.poster.childImageSharp.gatsbyImageData}
               alt={`A poster from ${movie.title} (${movie.year})`}
               loading="eager"
-              fadeIn={false}
             />
           )}
           <div className={directorsCss}>
@@ -343,15 +341,15 @@ export const pageQuery = graphql`
       }
       backdrop {
         childImageSharp {
-          fluid(
-            toFormat: JPG
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
             quality: 80
-            srcSetBreakpoints: [414, 640, 818, 904, 1280, 1808, 2000]
-            maxWidth: 1000
+            width: 1000
+            aspectRatio: 1.777777778
+            breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
             sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
-          ) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+          )
         }
       }
       seoImage: backdrop {
@@ -363,15 +361,15 @@ export const pageQuery = graphql`
       }
       poster {
         childImageSharp {
-          fluid(
-            toFormat: JPG
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
             quality: 80
-            srcSetBreakpoints: [93, 141, 160, 186, 282, 320, 500]
-            maxWidth: 250
+            width: 250
+            aspectRatio: 0.666666667
+            breakpoints: [93, 141, 160, 186, 250, 282, 320, 500]
             sizes: "(max-width: 414px) 93px, (max-width: 767px) 141px, (max-width: 1023px) 160px, 250px"
-          ) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+          )
         }
       }
       browseMore {
@@ -381,15 +379,15 @@ export const pageQuery = graphql`
         year
         backdrop {
           childImageSharp {
-            fluid(
-              toFormat: JPG
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [JPG, AVIF]
               quality: 80
-              srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-              maxWidth: 309
+              aspectRatio: 1.777777778
+              width: 309
+              breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
               sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-            ) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            )
           }
         }
       }
@@ -399,9 +397,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -411,15 +413,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                )
               }
             }
           }
@@ -429,9 +431,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -441,15 +447,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                )
               }
             }
           }
@@ -459,9 +465,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -471,15 +481,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid
-                }
+                )
               }
             }
           }
@@ -489,9 +499,13 @@ export const pageQuery = graphql`
           slug
           avatar {
             childImageSharp {
-              fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+              )
             }
           }
           reviewedMovies {
@@ -501,15 +515,15 @@ export const pageQuery = graphql`
             year
             backdrop {
               childImageSharp {
-                fluid(
-                  toFormat: JPG
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
                   quality: 80
-                  srcSetBreakpoints: [175, 195, 232, 350, 390, 464, 618]
-                  maxWidth: 309
+                  aspectRatio: 1.777777778
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
                   sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-                ) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                )
               }
             }
           }

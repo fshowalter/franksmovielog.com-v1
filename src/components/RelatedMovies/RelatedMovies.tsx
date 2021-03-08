@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { ReviewedMovie } from "../../types";
 import Grade from "../Grade";
@@ -16,10 +16,9 @@ function RelatedMovie({ movie }: { movie: ReviewedMovie }): JSX.Element {
     <>
       <Link className={listItemImageLinkCss} to={`/reviews/${movie.slug}/`}>
         {movie.backdrop && (
-          <Img
-            fluid={movie.backdrop.childImageSharp.fluid}
+          <GatsbyImage
+            image={movie.backdrop.childImageSharp.gatsbyImageData}
             alt={`A still from ${movie.title} (${movie.year})`}
-            fadeIn={false}
           />
         )}
       </Link>

@@ -101,12 +101,7 @@
   border: 0.5em solid #e9e7e0;
   display: block;
   grid-area: image;
-
-  img {
-    aspect-ratio: 1.777777778;
-    height: auto;
-    width: 100%;
-  }
+  line-height: 0;
 }
 
 .reviewHeaderCss {

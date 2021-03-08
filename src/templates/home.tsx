@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useRef } from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
@@ -79,11 +79,10 @@ export default function HomeTemplate({
                     to={`/reviews/${review.frontmatter.slug}/`}
                   >
                     {movie.backdrop && (
-                      <Img
-                        fluid={movie.backdrop.childImageSharp.fluid}
+                      <GatsbyImage
+                        image={movie.backdrop.childImageSharp.gatsbyImageData}
                         alt={`A still from ${movie.title} (${movie.year})`}
                         loading={index === 0 ? "eager" : "lazy"}
-                        fadeIn={false}
                       />
                     )}
                   </Link>
@@ -188,15 +187,15 @@ export const pageQuery = graphql`
           }
           backdrop {
             childImageSharp {
-              fluid(
-                toFormat: JPG
+              gatsbyImageData(
+                layout: CONSTRAINED
+                formats: [JPG, AVIF]
                 quality: 80
-                srcSetBreakpoints: [355, 411, 459, 710, 822, 918, 1184]
-                maxWidth: 592
+                breakpoints: [355, 411, 459, 592, 710, 822, 918, 1184]
+                width: 592
+                aspectRatio: 1.777777778
                 sizes: "(max-width: 414px) 355px, (max-width: 1023px) 592px, (max-width: 1279px) 459px, (min-width: 1280px) 411px, 592px"
-              ) {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
+              )
             }
           }
           watchlist {
@@ -205,9 +204,13 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                    ...GatsbyImageSharpFixed_tracedSVG
-                  }
+                  gatsbyImageData(
+                    layout: FIXED
+                    formats: [JPG, AVIF]
+                    quality: 80
+                    width: 40
+                    height: 40
+                  )
                 }
               }
             }
@@ -216,9 +219,13 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                    ...GatsbyImageSharpFixed_tracedSVG
-                  }
+                  gatsbyImageData(
+                    layout: FIXED
+                    formats: [JPG, AVIF]
+                    quality: 80
+                    width: 40
+                    height: 40
+                  )
                 }
               }
             }
@@ -227,9 +234,13 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                    ...GatsbyImageSharpFixed_tracedSVG
-                  }
+                  gatsbyImageData(
+                    layout: FIXED
+                    formats: [JPG, AVIF]
+                    quality: 80
+                    width: 40
+                    height: 40
+                  )
                 }
               }
             }
@@ -238,9 +249,13 @@ export const pageQuery = graphql`
               slug
               avatar {
                 childImageSharp {
-                  fixed(toFormat: JPG, width: 40, height: 40, quality: 80) {
-                    ...GatsbyImageSharpFixed_tracedSVG
-                  }
+                  gatsbyImageData(
+                    layout: FIXED
+                    formats: [JPG, AVIF]
+                    quality: 80
+                    width: 40
+                    height: 40
+                  )
                 }
               }
             }

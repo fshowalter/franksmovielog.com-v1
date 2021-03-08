@@ -1,4 +1,4 @@
-import Img, { FixedObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import {
   avatarCss,
@@ -13,7 +13,7 @@ export default function FilterPageHeader({
   heading,
   tagline,
 }: {
-  avatar?: FixedObject;
+  avatar?: IGatsbyImageData;
   alt?: string;
   className: string;
   heading: React.ReactNode;
@@ -22,11 +22,10 @@ export default function FilterPageHeader({
   return (
     <header className={className}>
       {avatar && (
-        <Img
+        <GatsbyImage
           className={avatarCss}
-          fixed={avatar}
-          alt={alt}
-          fadeIn={false}
+          image={avatar}
+          alt={alt || ""}
           loading="eager"
         />
       )}

@@ -3,13 +3,16 @@
 .containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
+  margin: 0 auto;
+  max-width: 40rem;
   padding-top: var(--step-5);
 
-  @media (min-width: 726px) {
+  @media (min-width: $breakpointDesktop) {
     grid-template-columns: 375px 1fr;
+    max-width: unset;
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: $breakpointMax) {
     border-top: 0;
     padding-top: 0;
   }
@@ -63,6 +66,7 @@
   display: grid;
   grid-area: list;
   grid-template-columns: repeat(auto-fit, minmax(130px, max-content));
+  justify-content: center;
   row-gap: var(--step-5);
 }
 
@@ -90,6 +94,7 @@
 
 .defaultImageCss {
   color: #e1e1e1;
+  display: block;
 }
 
 .progressRingCss {
@@ -102,7 +107,9 @@
 
 .listItemAvatarCss {
   border-radius: 50%;
+  display: block;
   margin: 0 auto;
+  max-width: 192px;
   width: calc(100% - 18px);
 }
 

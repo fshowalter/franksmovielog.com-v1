@@ -9,6 +9,16 @@
   "env": {
     "jest/globals": true
   },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@reach/router", "@gatsbyjs/reach-router"]
+        ],
+        "extensions": [".tsx", ".ts", ".js"]
+      }
+    }
+  },
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],

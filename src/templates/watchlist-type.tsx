@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import Img, { FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import DebouncedInput from "../components/DebouncedInput";
 import Fieldset from "../components/Fieldset";
@@ -187,11 +187,10 @@ function ListItem({
           to={`/watchlist/${entityType}s/${entity.slug}/`}
         >
           {entity.avatar && (
-            <Img
-              fluid={entity.avatar.childImageSharp.fluid}
+            <GatsbyImage
+              image={entity.avatar.childImageSharp.gatsbyImageData}
               className={listItemAvatarCss}
               alt={`An image of ${entity.name}`}
-              fadeIn={false}
             />
           )}
         </Link>
@@ -330,7 +329,7 @@ interface WatchlistEntity {
   reviewCount: number;
   avatar: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
 }
@@ -354,16 +353,15 @@ export const pageQuery = graphql`
         reviewCount: review_count
         avatar {
           childImageSharp {
-            fluid(
-              toFormat: JPG
-              jpegQuality: 80
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [JPG, AVIF]
               quality: 80
-              srcSetBreakpoints: [414, 640, 818, 904, 1280, 1808, 2000]
-              maxWidth: 1000
-              sizes: "(max-width: 414px) 165px, (max-width: 503px]) 488px, (max-width: 655px) 165px, (max-width: 725px) 126px, 904px"
-            ) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+              breakpoints: [130, 162, 174, 260, 324, 348]
+              width: 174
+              height: 174
+              sizes: "(max-width: 487) 174px,  (max-width: 1279px) 162px, (max-width: 1291px) 174px, 130px"
+            )
           }
         }
       }

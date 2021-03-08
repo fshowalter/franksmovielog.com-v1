@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { Collection, Movie, Person } from "../../types";
 import {
@@ -26,8 +26,8 @@ function WatchlistItem({
     <li>
       <Link to={to} className={linkCss}>
         {entity.avatar && (
-          <Img
-            fixed={entity.avatar.childImageSharp.fixed}
+          <GatsbyImage
+            image={entity.avatar.childImageSharp.gatsbyImageData}
             alt={`More ${entity.name} reviews`}
             className={avatarCss}
           />

@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import Img, { FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/Layout";
 import RenderedMarkdown from "../components/RenderedMarkdown";
@@ -19,12 +19,11 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
       />
       <main>
         <article className={articleCss}>
-          <Img
-            fluid={backdrop.childImageSharp.fluid}
-            alt=""
+          <GatsbyImage
+            image={backdrop.childImageSharp.gatsbyImageData}
+            alt="A coffee cup with the word BEGIN on it."
             className={imageCss}
             loading="eager"
-            fadeIn={false}
           />
           <RenderedMarkdown className={bodyCss} text={page.html} />
         </article>
@@ -37,7 +36,7 @@ type PageQueryResult = {
   data: {
     backdrop: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
     page: {
@@ -50,15 +49,15 @@ export const pageQuery = graphql`
   query {
     backdrop: file(absolutePath: { regex: "/backdrops/about.png$/" }) {
       childImageSharp {
-        fluid(
-          toFormat: JPG
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
           quality: 80
-          srcSetBreakpoints: [414, 640, 818, 904, 1280, 1808, 2000]
-          maxWidth: 1000
+          width: 1000
+          aspectRatio: 1.777777778
+          breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
           sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
-        ) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
+        )
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "about" } }) {

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    author: `Frank Showalter`,
+    author: "Frank Showalter",
     siteUrl: "https://www.franksmovielog.com/",
     image: "assets/default_og.jpg",
     title: "Frank's Movie Log",
@@ -14,10 +14,11 @@ module.exports = {
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         name: "backdrop",
         path: `${__dirname}/content/assets/backdrops/`,
