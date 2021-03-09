@@ -6,7 +6,7 @@
   "author": "Frank Showalter <fshowalter@gmail.com>",
   "dependencies": {
     "@silvenon/remark-smartypants": "^1.0.0",
-    "gatsby": "^3.0.3",
+    "gatsby": "^3.0.4",
     "gatsby-plugin-catch-links": "^3.0.0",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-image": "^1.0.0",
@@ -35,7 +35,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.32",
+    "@types/node": "^14.14.33",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
     "@types/react-helmet": "^6.1.0",
@@ -43,10 +43,12 @@
     "@types/react-test-renderer": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
+    "babel-jest": "^26.6.3",
     "babel-preset-gatsby": "^1.0.0",
     "eslint": "^7.21.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.2.0",
@@ -58,15 +60,13 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "prettier": "2.2.1",
+    "react-test-renderer": "^17.0.1",
     "stylelint": "^13.12.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^4.0.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-order": "^4.1.0",
-    "typed-scss-modules": "^4.1.0",
-    "react-test-renderer": "^17.0.1",
-    "babel-jest": "^26.6.3",
-    "eslint-import-resolver-alias": "^1.1.2"
+    "typed-scss-modules": "^4.1.0"
   },
   "keywords": [
     "gatsby"
