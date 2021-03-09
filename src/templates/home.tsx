@@ -189,7 +189,7 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 layout: CONSTRAINED
-                formats: [JPG]
+                formats: [JPG, AVIF]
                 quality: 80
                 breakpoints: [355, 411, 459, 592, 710, 822, 918, 1184]
                 width: 592
@@ -206,7 +206,7 @@ export const pageQuery = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     layout: FIXED
-                    formats: [JPG]
+                    formats: [JPG, AVIF]
                     quality: 80
                     width: 40
                     height: 40
@@ -221,7 +221,7 @@ export const pageQuery = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     layout: FIXED
-                    formats: [JPG]
+                    formats: [JPG, AVIF]
                     quality: 80
                     width: 40
                     height: 40
@@ -236,7 +236,7 @@ export const pageQuery = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     layout: FIXED
-                    formats: [JPG]
+                    formats: [JPG, AVIF]
                     quality: 80
                     width: 40
                     height: 40
@@ -251,7 +251,7 @@ export const pageQuery = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     layout: FIXED
-                    formats: [JPG]
+                    formats: [JPG, AVIF]
                     quality: 80
                     width: 40
                     height: 40

@@ -51,7 +51,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           layout: CONSTRAINED
-          formats: [JPG]
+          formats: [JPG, AVIF]
           quality: 80
           width: 1000
           aspectRatio: 1.777777778

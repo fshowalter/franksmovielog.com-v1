@@ -343,7 +343,7 @@ export const pageQuery = graphql`
         childImageSharp {
           gatsbyImageData(
             layout: CONSTRAINED
-            formats: [JPG]
+            formats: [JPG, AVIF]
             quality: 80
             width: 1000
             aspectRatio: 1.777777778
@@ -363,7 +363,7 @@ export const pageQuery = graphql`
         childImageSharp {
           gatsbyImageData(
             layout: CONSTRAINED
-            formats: [JPG]
+            formats: [JPG, AVIF]
             quality: 80
             width: 250
             aspectRatio: 0.666666667
@@ -381,7 +381,7 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(
               layout: CONSTRAINED
-              formats: [JPG]
+              formats: [JPG, AVIF]
               quality: 80
               aspectRatio: 1.777777778
               width: 309
@@ -399,7 +399,7 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 layout: FIXED
-                formats: [JPG]
+                formats: [JPG, AVIF]
                 quality: 80
                 width: 40
                 height: 40
@@ -415,7 +415,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 gatsbyImageData(
                   layout: CONSTRAINED
-                  formats: [JPG]
+                  formats: [JPG, AVIF]
                   quality: 80
                   aspectRatio: 1.777777778
                   width: 309
@@ -433,7 +433,7 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 layout: FIXED
-                formats: [JPG]
+                formats: [JPG, AVIF]
                 quality: 80
                 width: 40
                 height: 40
@@ -449,7 +449,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 gatsbyImageData(
                   layout: CONSTRAINED
-                  formats: [JPG]
+                  formats: [JPG, AVIF]
                   quality: 80
                   aspectRatio: 1.777777778
                   width: 309
@@ -467,7 +467,7 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 layout: FIXED
-                formats: [JPG]
+                formats: [JPG, AVIF]
                 quality: 80
                 width: 40
                 height: 40
@@ -483,7 +483,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 gatsbyImageData(
                   layout: CONSTRAINED
-                  formats: [JPG]
+                  formats: [JPG, AVIF]
                   quality: 80
                   aspectRatio: 1.777777778
                   width: 309
@@ -501,7 +501,7 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 layout: FIXED
-                formats: [JPG]
+                formats: [JPG, AVIF]
                 quality: 80
                 width: 40
                 height: 40
@@ -517,7 +517,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 gatsbyImageData(
                   layout: CONSTRAINED
-                  formats: [JPG]
+                  formats: [JPG, AVIF]
                   quality: 80
                   aspectRatio: 1.777777778
                   width: 309

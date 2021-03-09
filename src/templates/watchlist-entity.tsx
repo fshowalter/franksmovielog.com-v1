@@ -434,7 +434,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           layout: FIXED
-          formats: [JPG]
+          formats: [JPG, AVIF]
           quality: 80
           width: 200
           height: 200
@@ -446,7 +446,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           layout: CONSTRAINED
-          formats: [JPG]
+          formats: [JPG, AVIF]
           quality: 80
           breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
           width: 321
@@ -471,7 +471,7 @@ export const pageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 layout: CONSTRAINED
-                formats: [JPG]
+                formats: [JPG, AVIF]
                 quality: 80
                 breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
                 width: 321
