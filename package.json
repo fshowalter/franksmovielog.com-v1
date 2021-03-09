@@ -6,8 +6,6 @@
   "author": "Frank Showalter <fshowalter@gmail.com>",
   "dependencies": {
     "@silvenon/remark-smartypants": "^1.0.0",
-    "babel-jest": "^26.6.3",
-    "eslint-import-resolver-alias": "^1.1.2",
     "gatsby": "^3.0.3",
     "gatsby-plugin-catch-links": "^3.0.0",
     "gatsby-plugin-feed": "^3.0.0",
@@ -30,9 +28,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-refresh": "^0.9.0",
     "react-slider": "^1.0.11",
-    "react-test-renderer": "^17.0.1",
     "typescript": "^4.2.3"
   },
   "devDependencies": {
@@ -67,7 +63,10 @@
     "stylelint-config-recommended": "^4.0.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-order": "^4.1.0",
-    "typed-scss-modules": "^4.1.0"
+    "typed-scss-modules": "^4.1.0",
+    "react-test-renderer": "^17.0.1",
+    "babel-jest": "^26.6.3",
+    "eslint-import-resolver-alias": "^1.1.2"
   },
   "keywords": [
     "gatsby"

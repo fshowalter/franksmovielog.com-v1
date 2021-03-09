@@ -9,6 +9,12 @@
   "env": {
     "jest/globals": true
   },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["jest-preprocess.js"] }
+    ]
+  },
   "settings": {
     "import/resolver": {
       "alias": {
@@ -53,6 +59,10 @@
             "ts": "never",
             "tsx": "never"
           }
+        ],
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": ["**/*.spec.tsx"] }
         ],
         "import/prefer-default-export": ["off"],
         "no-use-before-define": [0],
