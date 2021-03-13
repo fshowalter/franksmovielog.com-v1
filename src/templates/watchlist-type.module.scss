@@ -106,15 +106,12 @@
 }
 
 .listItemAvatarCss {
-  display: block;
+  border-radius: 50%;
+  display: block !important;
   margin: 0 auto;
   max-width: 192px;
+  overflow: hidden;
   width: calc(100% - 18px);
-
-  img {
-    border-radius: 50%;
-    overflow: hidden;
-  }
 }
 
 .percentBackgroundCss {
