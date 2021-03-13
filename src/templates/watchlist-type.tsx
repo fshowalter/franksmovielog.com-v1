@@ -360,6 +360,7 @@ export const pageQuery = graphql`
               breakpoints: [130, 162, 174, 260, 324, 348]
               width: 174
               height: 174
+              placeholder: TRACED_SVG
               sizes: "(max-width: 487) 174px,  (max-width: 1279px) 162px, (max-width: 1291px) 174px, 130px"
             )
           }

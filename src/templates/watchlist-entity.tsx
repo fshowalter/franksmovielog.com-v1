@@ -438,6 +438,7 @@ export const pageQuery = graphql`
           quality: 80
           width: 200
           height: 200
+          placeholder: TRACED_SVG
         )
       }
     }
@@ -450,7 +451,7 @@ export const pageQuery = graphql`
           quality: 80
           breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
           width: 321
-          aspectRatio: 1.777777778
+          placeholder: TRACED_SVG
           sizes: "(max-width: 379px) 321px, (max-width: 555px) 238px, (max-width: 1279) 184px, (max-width: 1343px) 238px, 151px"
         )
       }
@@ -475,7 +476,7 @@ export const pageQuery = graphql`
                 quality: 80
                 breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
                 width: 321
-                aspectRatio: 1.777777778
+                placeholder: TRACED_SVG
                 sizes: "(max-width: 379px) 321px, (max-width: 555px) 238px, (max-width: 1279) 184px, (max-width: 1343px) 238px, 151px"
               )
             }

@@ -9,6 +9,6 @@ venue: Blu-ray
 venue_notes: 2018 | Arrow
 ---
 
-Groom-to-be X arrives on Y with friends Z, and Robert De Niro to wed A. After encountring her eccentric family he has second thoughts.
+Despite featuring an early performance from a young Robert De Niro, director Brian De Palma proves the star of his first filmed picture. He employs an array of formal devices to tell a farcical story of a groom-to-be’s second thoughts after encountering his fiancee’s eccentric family. De Niro plays a groomsman.
 
-De Palma's first filmed (but third released) feature sports a servicable cast--including a very young De Niro--but the director proves the real star. From the opening drive, De Palma presents numerous equences that play like silent comedy, bypassing the technical logistics of sound and performing demands of dialog. It's an interesting watch, but only occasionally amusing. The execution may shine, but the script proves lacking.
+It’s an interesting watch, but only somewhat amusing. De Palma presents several sequences like silent comedy. A smart move given the limited budget and novice cast, but style can only gloss over so much.

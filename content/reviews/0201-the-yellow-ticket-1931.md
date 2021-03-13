@@ -9,10 +9,12 @@ venue: YouTube
 venue_notes:
 ---
 
-In Tsarist Russia, a young Jewish woman desparate to see her ailing father acquires a yellow travel pass, allowing her to move freely thorugh the country, but forever branding her as a prostitute.
+In Tsarist Russia, a young Jewish woman desperate to visit her ailing father acquires a special travel pass that allows her to move freely through the country, but forever brands her as a prostitute.
 
-An odd little movie that can't help but play like an amateur production of a larger epic. The costumes and set decoration are nice, but they can't disguise the Southern California locales hoping to pass for Russia. Everyone's doing a different acccent, none of them Russian. And Lionel Barrymore's character could pass for a younger version of Mr. Potter.
+<!-- end -->
 
-Still, Walsh makes the most of what he has to work with. The big finale, coinciding with the revolution, mixes equal parts drama and chaos that made me wish he'd been afforded widescreen scope and a larger budget.
+An odd little movie that plays like an amateur production of a larger epic. The costumes and set decorations are nice, but they can't disguise the Southern California locales. The performers each proffer a different accent, none of them Russian. And Lionel Barrymore's character could pass for a younger version of Mr. Potter from <span data-imdb-id="tt0038650">_It's a Wonderful Life_</span>.
 
-Borris Karloff has an uncredited minor part as a drunken porter.
+Still, director Raoul Walsh works with what he has. The big finale mixes equal parts drama and chaos to great effect. It left me wishing the studio had afforded Walsh wide-screen scope and a larger budget.
+
+Boris Karloff plays a drunken porter in an uncredited part.
