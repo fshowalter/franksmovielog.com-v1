@@ -111,6 +111,7 @@
   margin: 0 auto;
   max-width: 192px;
   overflow: hidden;
+  transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
   width: calc(100% - 18px);
 }
 
