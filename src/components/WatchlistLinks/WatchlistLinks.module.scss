@@ -36,7 +36,9 @@
 
 .avatarCss {
   border-radius: 50%;
+  display: block !important;
   height: 40px;
   margin-right: 1ch;
+  transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
   width: 40px;
 }
