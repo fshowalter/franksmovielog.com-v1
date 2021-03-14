@@ -9,7 +9,7 @@ venue: Shudder
 venue_notes:
 ---
 
-Michele Soavi's directorial debut. Dario Argento's former assistant director showcases ample formal rigor in service of a clumsy script that sees an escaped psychopath terrorizing a theater troupe.
+Michele Soavi's directorial debut. Dario Argento's former assistant director showcases ample formal rigor in service of a clumsy script that sees an escaped psychopath terrorize a theater troupe.
 
 <!-- end -->
 
