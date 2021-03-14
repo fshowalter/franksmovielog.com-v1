@@ -38,7 +38,7 @@ But not all star-systems prove equal.
 
 Roger Ebert hated the four-star scale his paper enforced because it presented no middle ground.[^2] Awful, bad, good, or great. No room for okay. Thus, we can rule out the four-star system.
 
-Next, let's consider the IMDb. It regiments a ten-star system. That's a lot of stars. Perhaps too many. In 2009 the median movie score hit 6.6, implying users are skewing toward the upper bounds. Ergo, if you hate a 1-star and love a 10-star, what does a 3-star mean?
+Next, let's consider the IMDb. It proffers a ten-star system. That's a lot of stars. Perhaps too many. In 2009 the median movie score hit 6.6, implying users skew toward the upper bounds. Ergo, if you hate a 1-star and love a 10-star, what does a 3-star mean?
 
 So if a four-star scale proves too small and ten-star scale too large, what's ideal?
 
