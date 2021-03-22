@@ -9,7 +9,6 @@
   margin: 0 auto;
   max-width: clamp(1000px, 95vw, $breakpointMax);
   min-height: 100vh;
-  padding-top: 1.5rem;
   position: relative;
 
   &::before {
@@ -18,17 +17,11 @@
     display: block;
     grid-area: border;
     height: 1.5rem;
-    position: absolute;
-    top: -1.5rem;
-    width: 100%;
   }
 
   @media (min-width: $breakpointTablet) {
-    padding-top: 1.25rem;
-
     &::before {
       height: 1.25rem;
-      top: -1.25rem;
     }
   }
 
@@ -39,11 +32,9 @@
         1fr
       );
     grid-template-rows: auto 3rem auto 1fr auto;
-    padding-top: 1rem;
 
     &::before {
       height: 1rem;
-      top: -1rem;
     }
   }
 
