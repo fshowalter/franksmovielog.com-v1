@@ -4028,12 +4028,7 @@ camelcase@^2.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-2.1.1.tgz#7c1d16d679a1bbe59ca02cacecfb011e201f5a1f"
   integrity sha1-fB0W1nmhu+WcoCys7PsBHiAfWh8=
 
-camelcase@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.0.0.tgz#5259f7c30e35e278f1bdc2a4d91230b37cad981e"
-  integrity sha512-8KMDF1Vz2gzOq54ONPJS65IvTUaB1cHJ2DMM7MbPmLZljDH1qpzzLsWdiN9pHh6qvkRVDTi/07+eNGch/oLU4w==
-
-camelcase@^6.2.0:
+camelcase@^6.0.0, camelcase@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
@@ -15302,10 +15297,10 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.1.0.tgz#9bdc22c648cf8cf86dd23d32336a41cfb6475e3f"
   integrity sha512-G9absDWvhAWCV2gmF1zKud3OyC61nZDwWvBL2DApaVFogI07CprggiQAOOjvp2NRjYWFzPyu7vwtDrQFq8jeSA==
 
-typed-scss-modules@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-4.1.0.tgz#85eaf363169532126123e19437f97abf6b318342"
-  integrity sha512-3vdIygfyhWDEhGfb8xi3TXy/QrjjvTc5Emm4pIk5THcatQb1S1CzXJ2wiiZVwaEbjVm+ay9noYUHmspvVf7a6g==
+typed-scss-modules@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-4.1.1.tgz#eab12f25511a329f8e4837842c3b484ffd66b449"
+  integrity sha512-eVRej2pMRRbrMQ7oyLNR+GcMCD4Tmc+MMzq+6qo8pTXiz2GQR1dTaYTs9vDeoCE7iJv9JZ7U36fATbIVECJ+fQ==
   dependencies:
     camelcase "^5.0.0"
     chalk "^3.0.0"
