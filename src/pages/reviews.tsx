@@ -111,7 +111,7 @@ type State = {
 function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForReviews(reviews);
   const currentPage = 1;
-  const perPage = 200;
+  const perPage = 300;
 
   return {
     allReviews: reviews,
