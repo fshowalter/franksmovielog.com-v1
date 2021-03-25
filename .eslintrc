@@ -1,29 +1,24 @@
 {
   "root": true,
   "extends": [
-    "airbnb",
+    "airbnb-base",
     "plugin:prettier/recommended",
     "plugin:import/typescript"
   ],
-  "ignorePatterns": ["node_modules/", "static/", "public/"],
+  "plugins": [
+    "import",
+    "prettier",
+    "jest"
+  ],
   "env": {
     "jest/globals": true
   },
+  "ignorePatterns": ["node_modules/", "static/", "public/"],
   "rules": {
     "import/no-extraneous-dependencies": [
       "error",
       { "devDependencies": ["jest-preprocess.js"] }
     ]
-  },
-  "settings": {
-    "import/resolver": {
-      "alias": {
-        "map": [
-          ["@reach/router", "@gatsbyjs/reach-router"]
-        ],
-        "extensions": [".tsx", ".ts", ".js"]
-      }
-    }
   },
   "overrides": [
     {
@@ -93,6 +88,12 @@
           "@typescript-eslint/parser": [".ts", ".tsx"]
         },
         "import/resolver": {
+          "alias": {
+            "map": [
+              ["@reach/router", "@gatsbyjs/reach-router"]
+            ],
+            "extensions": [".tsx", ".ts", ".js"]
+          },
           "node": {
             "paths": ["./src"],
             "extensions": [".js", ".jsx", ".ts", ".tsx"]
