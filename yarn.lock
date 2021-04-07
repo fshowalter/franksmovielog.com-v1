@@ -7040,10 +7040,10 @@ gatsby-plugin-feed@^3.2.0:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-image@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.2.0.tgz#ad571ba270b5c1e8a679ac33eeccd01ac3370db3"
-  integrity sha512-tG39QNnmld4rpTLettTL6r8BFm1rRrcionBpgUJXi9l5W4UaUn/hKdM9jV8g5aNUzo4YrEcgZcf1v2dPfrz9Iw==
+gatsby-plugin-image@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.2.1.tgz#69f220c06593e3b35d1a3a22638d113ed9d8f368"
+  integrity sha512-XXIxZdcqlI31hHd55Ba7TrXbzkYT+no3X+VOek1lTMjEuTQDnLwrpCgCBFwp/YgYNgPRV7b3QnHpjmc7sUY+Wg==
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/parser" "^7.12.5"
@@ -7107,10 +7107,10 @@ gatsby-plugin-sass@^4.2.0:
     resolve-url-loader "^3.1.2"
     sass-loader "^10.1.1"
 
-gatsby-plugin-sharp@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.2.0.tgz#d0e638f91c823800e5014a83c8860c98dec914c3"
-  integrity sha512-+Y4z/Q0bQL+wA1kb9wvAKlSz+o0+2V3IRxhu8kx/0pfpk48Q0apk+v4UMn7l835yocKfsePj8qvW7Ez0D47O9A==
+gatsby-plugin-sharp@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.2.1.tgz#6c150484b9d07ccdf24adf86b92f5e3a23597bd4"
+  integrity sha512-ZAEiDehEz7VRgykQSVwg0ESu9c+rA2BUfi6+VCi2ppemRezXm+jGUkSTo+WUhjiPmEhQq+IIOOWe4lpslJoZRg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
@@ -15453,10 +15453,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.2.3:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.3.tgz#39062d8019912d43726298f09493d598048c1ce3"
-  integrity sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
+typescript@^4.2.4:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
 
 unbox-primitive@^1.0.0:
   version "1.0.0"
