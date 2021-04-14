@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  lint-and-test:
+  lint-test-and-build:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: "${{ steps.nvmrc.outputs.node_version }}"
 
-      - name: get gatsby cahce
+      - name: get gatsby cache
         id: gatsby-cache-build
         uses: actions/cache@v2
         with:
@@ -60,17 +60,17 @@ jobs:
         env:
           CI: true
 
-      - name: deploy
-        uses: nwtgck/actions-netlify@v1.1
-        with:
-          publish-dir: "./public"
-          production-branch: master
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: "Deploy from GitHub Actions"
-          enable-pull-request-comment: true
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          timeout-minutes: 5
+      # - name: deploy
+      #   uses: nwtgck/actions-netlify@v1.1
+      #   with:
+      #     publish-dir: "./public"
+      #     production-branch: master
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     deploy-message: "Deploy from GitHub Actions"
+      #     enable-pull-request-comment: true
+      #     enable-commit-comment: true
+      #     overwrites-pull-request-comment: true
+      #   env:
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      #     timeout-minutes: 5
