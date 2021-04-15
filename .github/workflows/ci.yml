@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  lint-test-and-build:
+  prettier:
     runs-on: ubuntu-latest
 
     steps:
@@ -49,11 +49,143 @@ jobs:
       - name: install dependencies
         run: yarn install --prefer-offline --frozen-lockfile
 
-      - name: lint
-        run: yarn lint
+      - name: prettier check
+        run: yarn format:check
 
-      - name: test
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Read node version from `.nvmrc` file
+      - id: nvmrc
+        uses: browniebroke/read-nvmrc-action@v1
+
+      - name: use node.js from .nvmrc
+        uses: dcodeIO/setup-node-nvm@master
+        with:
+          node-version: "${{ steps.nvmrc.outputs.node_version }}"
+
+      - name: get gatsby cache
+        id: gatsby-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+
+      # See: https://github.com/actions/cache/blob/main/examples.md#node---yarn
+      - name: get yarn cache directory
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: use yarn cache
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
+
+      # `--prefer-offline` gives cache priority
+      - name: install dependencies
+        run: yarn install --prefer-offline --frozen-lockfile
+
+      - name: lint js
+        run: yarn lint:js
+
+      - name: lint css
+        run: yarn lint:css
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Read node version from `.nvmrc` file
+      - id: nvmrc
+        uses: browniebroke/read-nvmrc-action@v1
+
+      - name: use node.js from .nvmrc
+        uses: dcodeIO/setup-node-nvm@master
+        with:
+          node-version: "${{ steps.nvmrc.outputs.node_version }}"
+
+      - name: get gatsby cache
+        id: gatsby-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+
+      # See: https://github.com/actions/cache/blob/main/examples.md#node---yarn
+      - name: get yarn cache directory
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: use yarn cache
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
+
+      # `--prefer-offline` gives cache priority
+      - name: install dependencies
+        run: yarn install --prefer-offline --frozen-lockfile
+
+      - name: run tests
         run: yarn test
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Read node version from `.nvmrc` file
+      - id: nvmrc
+        uses: browniebroke/read-nvmrc-action@v1
+
+      - name: use node.js from .nvmrc
+        uses: dcodeIO/setup-node-nvm@master
+        with:
+          node-version: "${{ steps.nvmrc.outputs.node_version }}"
+
+      - name: get gatsby cache
+        id: gatsby-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+
+      # See: https://github.com/actions/cache/blob/main/examples.md#node---yarn
+      - name: get yarn cache directory
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: use yarn cache
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
+
+      # `--prefer-offline` gives cache priority
+      - name: install dependencies
+        run: yarn install --prefer-offline --frozen-lockfile
 
       - name: build
         run: yarn build

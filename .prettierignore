@@ -1,5 +1,9 @@
 .cache
+.vscode
+coverage
 package.json
 package-lock.json
 public
-content
+content/data
+content/reviews
+node_modules

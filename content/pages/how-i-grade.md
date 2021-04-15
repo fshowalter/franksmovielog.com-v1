@@ -27,10 +27,10 @@ slug: how-i-grade
 ---
 
 ## On Grading
+
 Let's start with a binary scale. Gene Siskel argued a person yearns to know: “Should I watch this movie?”[^1]
 
 A pragmatic approach, but one that doesn't differentiate between movies one _should_ see and movies one _must_ see. <span data-imdb-id="tt0372784">_Batman Begins_ </span> and <span data-imdb-id="tt0468569">_The Dark Knight_</span> both deserve a “Thumbs up” but they are not equal.
-
 
 Enter the star scale. I've encountered scales from three stars to ten, sometimes with half-stars.
 
@@ -46,7 +46,7 @@ I like a five-star system. Ebert liked it too.[^1] It offers a middle ground (3-
 
 And what about letter grade systems?[^3] I like them. Under-the-covers, they translate to five-star systems. A's equate to 5-stars, B's to 4-stars, and so on. I employ letter grades behind the scenes because it's how my brain works.
 
-So why display them as stars? Well, for one, grade definitions aren't universal. To me, a 'C'  equates to an “okay” movie, to others it screams burn. A 3-star out of 5 display indicates a middle-of-the-road rating.
+So why display them as stars? Well, for one, grade definitions aren't universal. To me, a 'C' equates to an “okay” movie, to others it screams burn. A 3-star out of 5 display indicates a middle-of-the-road rating.
 
 Grading systems are hard. I think a 5-star system works, but I'm not married to the idea. Some of my favorite reviewers eschew grades, preferring you read the review. Fair enough, but I bet they rate them behind the scenes.
 
