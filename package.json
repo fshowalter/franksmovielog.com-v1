@@ -83,7 +83,7 @@
     "lint": "yarn run lint:js && yarn run lint:css",
     "lint:js": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:css": "yarn stylelint './src/**/*.?(s)css*'",
-    "lint:format": "yarn prettier --check \"**/*.{json,js,css,scss,md,ts,tsx,jsx}\"",
+    "format:check": "yarn prettier --check \"**/*.{json,js,css,scss,md,ts,tsx,jsx}\"",
     "test": "yarn jest",
     "test:watch": "yarn jest --watch",
     "type-check": "yarn tsc --noEmit",
