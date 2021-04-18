@@ -14,7 +14,7 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "strictNullChecks": true,
-    "noImplicitAny": true,
+    "noImplicitAny": true
   },
   "include": ["./src/**/*", "./*.js"],
   "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"]
