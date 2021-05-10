@@ -98,7 +98,8 @@ module.exports = {
               ...options,
               custom_elements: [
                 {
-                  'atom:link href="https://www.franksmovielog.com/feed.xml" rel="self" type="application/rss+xml"': null,
+                  'atom:link href="https://www.franksmovielog.com/feed.xml" rel="self" type="application/rss+xml"':
+                    null,
                 },
               ],
             }),

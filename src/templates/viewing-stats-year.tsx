@@ -450,7 +450,7 @@ export interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query($yearScope: Date) {
+  query ($yearScope: Date) {
     movies: mostWatchedMoviesByYearJson(year: { eq: $yearScope }) {
       viewingCount: viewing_count
       movieCount: movie_count

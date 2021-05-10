@@ -42,9 +42,8 @@ module.exports = function onCreateWebpackConfig({
     );
     // if found, overwrite existing CSS minimizer with the new one
     if (minifyCssIndex > -1) {
-      config.optimization.minimizer[minifyCssIndex] = plugins.minifyCss(
-        options
-      );
+      config.optimization.minimizer[minifyCssIndex] =
+        plugins.minifyCss(options);
     }
   }
 
