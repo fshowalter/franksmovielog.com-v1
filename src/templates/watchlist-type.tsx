@@ -341,7 +341,7 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query($entityType: String) {
+  query ($entityType: String) {
     entity: allWatchlistEntitiesJson(
       sort: { fields: [name], order: ASC }
       filter: { entity_type: { eq: $entityType } }

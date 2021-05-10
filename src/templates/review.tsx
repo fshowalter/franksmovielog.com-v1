@@ -307,7 +307,7 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query($imdbId: String) {
+  query ($imdbId: String) {
     movie: reviewedMoviesJson(imdb_id: { eq: $imdbId }) {
       imdbId: imdb_id
       title

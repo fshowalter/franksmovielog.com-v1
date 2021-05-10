@@ -429,7 +429,7 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query($imdbIds: [String], $avatarPath: String) {
+  query ($imdbIds: [String], $avatarPath: String) {
     avatar: file(absolutePath: { eq: $avatarPath }) {
       childImageSharp {
         gatsbyImageData(

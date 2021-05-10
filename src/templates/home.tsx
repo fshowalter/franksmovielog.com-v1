@@ -159,7 +159,7 @@ export interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query ($skip: Int!, $limit: Int!) {
     update: allMarkdownRemark(
       sort: { fields: [frontmatter___sequence], order: DESC }
       limit: $limit
