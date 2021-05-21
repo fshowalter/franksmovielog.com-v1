@@ -258,7 +258,7 @@ type State = {
 function initState({ movies }: { movies: WatchlistMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForMovies(movies);
   const currentPage = 1;
-  const perPage = 50;
+  const perPage = 5000;
 
   return {
     allMovies: movies,
