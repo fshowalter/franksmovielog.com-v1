@@ -20,7 +20,7 @@ export default function AllTimeViewingStatsTemplate({
     <Layout>
       <Seo
         pageTitle="All-Time Viewing Stats"
-        description={`My all-time most watched titles, performers, directors and writers.`}
+        description="My all-time most watched titles, performers, directors and writers."
         article={false}
         image={null}
       />
