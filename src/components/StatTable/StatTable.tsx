@@ -1,15 +1,16 @@
 import React, { ReactElement } from "react";
 import {
   fillDataCellCss,
+  headingCss,
   numberDataCellCss,
   numberHeaderCss,
   rowCss,
   tableCss,
   textDataCellCss,
   textHeaderCss,
-} from "./Table.module.scss";
+} from "./StatTable.module.scss";
 
-export function TableTextHeader({
+export function StatTableTextHeader({
   text,
 }: {
   text: string;
@@ -17,7 +18,7 @@ export function TableTextHeader({
   return <th className={textHeaderCss}>{text}</th>;
 }
 
-export function TableTextDataCell({
+export function StatTableTextDataCell({
   text,
 }: {
   text: string;
@@ -25,7 +26,7 @@ export function TableTextDataCell({
   return <td className={textDataCellCss}>{text}</td>;
 }
 
-export function TableFillDataCell({
+export function StatTableFillDataCell({
   children,
 }: {
   children: JSX.Element;
@@ -33,7 +34,7 @@ export function TableFillDataCell({
   return <td className={fillDataCellCss}>{children}</td>;
 }
 
-export function TableNumberDataCell({
+export function StatTableNumberDataCell({
   number,
 }: {
   number: number;
@@ -41,7 +42,7 @@ export function TableNumberDataCell({
   return <td className={numberDataCellCss}>{number}</td>;
 }
 
-export function TableNumberHeader({
+export function StatTableNumberHeader({
   text,
 }: {
   text: string;
@@ -49,11 +50,11 @@ export function TableNumberHeader({
   return <th className={numberHeaderCss}>{text}</th>;
 }
 
-export function TableSpacerHeader(): ReactElement<HTMLTableHeaderCellElement> {
+export function StatTableSpacerHeader(): ReactElement<HTMLTableHeaderCellElement> {
   return <th>&nbsp;</th>;
 }
 
-export function TableRow({
+export function StatTableRow({
   children,
 }: {
   children: ReactElement<HTMLTableDataCellElement>[];
@@ -61,19 +62,28 @@ export function TableRow({
   return <tr className={rowCss}>{children}</tr>;
 }
 
-export function Table({
+export default function TableHeading({ text }: { text: string }): JSX.Element {
+  return <h2 className={headingCss}>{text}</h2>;
+}
+
+export function StatTable({
+  heading,
   headers,
   children,
 }: {
+  heading: string;
   headers: ReactElement<HTMLTableHeaderCellElement>[];
   children: ReactElement<HTMLTableRowElement>[];
 }): JSX.Element {
   return (
-    <table className={tableCss}>
-      <thead>
-        <tr>{headers}</tr>
-      </thead>
-      <tbody>{children}</tbody>
-    </table>
+    <>
+      <TableHeading text={heading} />
+      <table className={tableCss}>
+        <thead>
+          <tr>{headers}</tr>
+        </thead>
+        <tbody>{children}</tbody>
+      </table>
+    </>
   );
 }

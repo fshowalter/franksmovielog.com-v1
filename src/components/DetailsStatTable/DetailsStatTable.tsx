@@ -1,20 +1,20 @@
 import React, { ReactElement } from "react";
 import {
-  Table,
-  TableFillDataCell,
-  TableNumberDataCell,
-  TableNumberHeader,
-  TableRow,
-  TableSpacerHeader,
-  TableTextHeader,
-} from "../Table";
+  StatTable,
+  StatTableFillDataCell,
+  StatTableNumberDataCell,
+  StatTableNumberHeader,
+  StatTableRow,
+  StatTableSpacerHeader,
+  StatTableTextHeader,
+} from "../StatTable";
 import {
   detailsLabelCss,
   detailsListCss,
   tableIndexCellCss,
-} from "./TableWithDetails.module.scss";
+} from "./DetailsStatTable.module.scss";
 
-function TableIndexCell({
+function DetailsStatTableIndexCell({
   index,
 }: {
   index: number;
@@ -22,7 +22,8 @@ function TableIndexCell({
   return <td className={tableIndexCellCss}>{index}.&nbsp;</td>;
 }
 
-export default function TableWithDetails<T>({
+export default function DetailsStatTable<T>({
+  heading,
   collection,
   nameHeaderText,
   valueHeaderText,
@@ -30,6 +31,7 @@ export default function TableWithDetails<T>({
   valueFunc,
   detailsFunc,
 }: {
+  heading: string;
   collection: T[];
   nameHeaderText: string;
   valueHeaderText: string;
@@ -38,9 +40,9 @@ export default function TableWithDetails<T>({
   detailsFunc: (x: T) => ReactElement<HTMLLIElement>[];
 }): JSX.Element {
   const headers = [
-    <TableSpacerHeader />,
-    <TableTextHeader text={nameHeaderText} />,
-    <TableNumberHeader text={valueHeaderText} />,
+    <StatTableSpacerHeader />,
+    <StatTableTextHeader text={nameHeaderText} />,
+    <StatTableNumberHeader text={valueHeaderText} />,
   ];
 
   const rows = collection.map((item, index) => {
@@ -49,11 +51,11 @@ export default function TableWithDetails<T>({
 
     return (
       <>
-        <TableRow>
-          <TableIndexCell index={index + 1} />
-          <TableFillDataCell>{name}</TableFillDataCell>
-          <TableNumberDataCell number={value} />
-        </TableRow>
+        <StatTableRow>
+          <DetailsStatTableIndexCell index={index + 1} />
+          <StatTableFillDataCell>{name}</StatTableFillDataCell>
+          <StatTableNumberDataCell number={value} />
+        </StatTableRow>
         <tr>
           <td>&nbsp;</td>
           <td colSpan={2}>
@@ -67,5 +69,9 @@ export default function TableWithDetails<T>({
     );
   });
 
-  return <Table headers={headers}>{rows}</Table>;
+  return (
+    <StatTable heading={heading} headers={headers}>
+      {rows}
+    </StatTable>
+  );
 }

@@ -1,258 +1,25 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
+import MostWatchedMoviesStatTable from "../components/MostWatchedMoviesStatTable";
+import MostWatchedPersonsStatTable from "../components/MostWatchedPersonsStatTable";
 import Seo from "../components/Seo";
+import StatCallouts from "../components/StatCallouts";
+import ViewingsByDecadeStatTable from "../components/ViewingsByDecadeStatTable";
+import ViewingsByVenueStatTable from "../components/ViewingsByVenueStatTable";
+import ViewingYearNavigation from "../components/ViewingYearNavigation";
 import {
-  barCss,
   containerCss,
-  detailsLabelCss,
-  detailsListCss,
+  contentCss,
   headingCss,
-  listCss,
-  numberHeaderCss,
   pageHeaderCss,
-  personLinkCss,
-  statPopCss,
-  statPopLegendCss,
-  statPopNumberCss,
-  statPopsCss,
-  tableCountCellCss,
-  tableCss,
-  tableFillCellCss,
-  tableHeaderCss,
-  tableHeadingCss,
-  tableIndexCellCss,
-  tableRowCss,
-  tableTextCellCss,
-  tableTitleYearCss,
   taglineCss,
-  viaCss,
-  viewingDetailCss,
-  viewingForMovieCss,
-  yearListCss,
-  yearListItemCss,
-  yearListItemLinkCss,
 } from "./viewing-stats-all.module.scss";
 
-function buildSubHeading(numberOfYears: number): string {
-  return `${(numberOfYears - 1).toString()} Years in Review`;
-}
-
-function buildPersonName(type: string, person: Person): JSX.Element {
-  if (person.slug) {
-    return (
-      <Link className={personLinkCss} to={`/watchlist/${type}/${person.slug}`}>
-        {person.fullName}
-      </Link>
-    );
-  }
-
-  return <>{person.fullName}</>;
-}
-
-function buildlMovieTitle(movie: Movie): JSX.Element {
-  if (movie.slug) {
-    return (
-      <Link className={personLinkCss} to={`/reviews/${movie.slug}`}>
-        {movie.title} <span className={tableTitleYearCss}>{movie.year}</span>
-      </Link>
-    );
-  }
-
-  return (
-    <>
-      {movie.title} <span className={tableTitleYearCss}>{movie.year}</span>
-    </>
-  );
-}
-
-function buildViewingDetail(viewing: Viewing): JSX.Element {
-  return (
-    <span className={viewingDetailCss}>
-      {viewing.prettyDate} <span className={viaCss}>via</span> {viewing.venue}
-    </span>
-  );
-}
-
-function TableHeading({ headingText }: { headingText: string }): JSX.Element {
-  return <h2 className={tableHeadingCss}>{headingText}</h2>;
-}
-
-function MostWatchedMoviesTable({
-  collection,
-}: {
-  collection: MovieWithViewings[];
-}): JSX.Element {
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th className={tableHeaderCss}>Title</th>
-          <th className={numberHeaderCss}>Viewings</th>
-        </tr>
-      </thead>
-      {collection.map((movie, index) => {
-        return (
-          <>
-            <tr className={tableRowCss}>
-              <td className={tableIndexCellCss}>{index + 1}.&nbsp;</td>
-              <td className={tableFillCellCss}>{buildlMovieTitle(movie)}</td>
-              <td className={tableCountCellCss}>{movie.viewingCount}</td>
-            </tr>
-            <tr>
-              <td className={tableIndexCellCss}>&nbsp;</td>
-              <td colSpan={2}>
-                <details>
-                  <summary className={detailsLabelCss}>Details</summary>
-                  <ul className={detailsListCss}>
-                    {movie.viewings.map((detail) => {
-                      return <li>{buildViewingDetail(detail)}</li>;
-                    })}
-                  </ul>
-                </details>
-              </td>
-            </tr>
-          </>
-        );
-      })}
-    </table>
-  );
-}
-
-function DecadeTable({
-  collection,
-}: {
-  collection: DecadeGroup[];
-}): JSX.Element {
-  const maxBar = collection.reduce(
-    (acc, dec) => (acc = acc > dec.viewingCount ? acc : dec.viewingCount),
-    0
-  );
-
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th className={tableHeaderCss}>Decade</th>
-          <th>&nbsp;</th>
-          <th className={numberHeaderCss}>Viewings</th>
-        </tr>
-      </thead>
-      {collection.map((group) => {
-        const barPercentProperty = {
-          "--bar-percent": `${(group.viewingCount / maxBar) * 100}%`,
-        } as React.CSSProperties;
-
-        return (
-          <tr className={tableRowCss}>
-            <td className={tableTextCellCss}>{group.decade}</td>
-            <td className={tableFillCellCss}>
-              <div className={barCss} style={barPercentProperty}>
-                &nbsp;
-              </div>
-            </td>
-            <td className={tableCountCellCss}>{group.viewingCount}</td>
-          </tr>
-        );
-      })}
-    </table>
-  );
-}
-
-function VenueTable({ collection }: { collection: VenueGroup[] }): JSX.Element {
-  const maxBar = collection.reduce(
-    (acc, dec) => (acc = acc > dec.viewingCount ? acc : dec.viewingCount),
-    0
-  );
-
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th className={tableHeaderCss}>Venue</th>
-          <th>&nbsp;</th>
-          <th className={numberHeaderCss}>Viewings</th>
-        </tr>
-      </thead>
-      {collection.map((group) => {
-        const barPercentProperty = {
-          "--bar-percent": `${(group.viewingCount / maxBar) * 100}%`,
-        } as React.CSSProperties;
-
-        return (
-          <tr className={tableRowCss}>
-            <td className={tableTextCellCss}>{group.name}</td>
-            <td className={tableFillCellCss}>
-              <div className={barCss} style={barPercentProperty}>
-                &nbsp;
-              </div>
-            </td>
-            <td className={tableCountCellCss}>{group.viewingCount}</td>
-          </tr>
-        );
-      })}
-    </table>
-  );
-}
-
-function MostWatchedPersonTable({
-  collection,
-  watchlistType,
-}: {
-  collection: PersonWithViewings[];
-  watchlistType: string;
-}): JSX.Element {
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th className={tableHeaderCss}>Name</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
-        </tr>
-      </thead>
-      {collection.map((person, index) => {
-        return (
-          <>
-            <tr className={tableRowCss}>
-              <td className={tableIndexCellCss}>{index + 1}.&nbsp;</td>
-              <td className={tableFillCellCss}>
-                {buildPersonName(watchlistType, person)}
-              </td>
-              <td className={tableCountCellCss}>{person.viewingCount}</td>
-            </tr>
-            <tr>
-              <td className={tableIndexCellCss}>&nbsp;</td>
-              <td colSpan={2}>
-                <details>
-                  <summary className={detailsLabelCss}>Details</summary>
-                  <ul className={detailsListCss}>
-                    {person.viewings.map((detail) => {
-                      return (
-                        <li>
-                          {buildlMovieTitle(detail.movie)}{" "}
-                          <div className={viewingForMovieCss}>
-                            {buildViewingDetail(detail)}
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </details>
-              </td>
-            </tr>
-          </>
-        );
-      })}
-    </table>
-  );
-}
-
 /**
- * Renders the viewing stats template.
+ * Renders the all-time viewing stats template.
  */
-export default function ViewingStatsTemplate({
+export default function AllTimeViewingStatsTemplate({
   pageContext,
   data,
 }: {
@@ -265,7 +32,7 @@ export default function ViewingStatsTemplate({
     <Layout>
       <Seo
         pageTitle="All-Time Viewing Stats"
-        description={`My most watched titles, performers, directors and writers in ${pageContext.yearScope}`}
+        description={`My all-time most watched titles, performers, directors and writers.`}
         article={false}
         image={null}
       />
@@ -273,60 +40,38 @@ export default function ViewingStatsTemplate({
         <header className={pageHeaderCss}>
           <h2 className={headingCss}>All-Time Viewing Stats</h2>
           <p className={taglineCss}>
-            {buildSubHeading(data.year.nodes.length)}
-            <ul className={yearListCss}>
-              <li className={yearListItemCss}>All-Time</li>
-              {data.year.nodes.map(({ year }) => {
-                if (year === "all") {
-                  return null;
-                }
-                if (year === pageContext.yearScope) {
-                  return <li className={yearListItemCss}>{year}</li>;
-                }
-
-                return (
-                  <li className={yearListItemCss}>
-                    <Link
-                      to={`/viewings/stats/${year}`}
-                      className={yearListItemLinkCss}
-                    >
-                      {year}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            {`${(data.year.nodes.length - 1).toString()} Years in Review`}
+            <ViewingYearNavigation
+              currentYear={pageContext.yearScope}
+              years={data.year.nodes.map((node) => node.year)}
+            />
           </p>
         </header>
-        <div className={listCss}>
-          <div className={statPopsCss}>
-            <div className={statPopCss}>
-              <span className={statPopNumberCss}>{movies.viewingCount}</span>{" "}
-              <span className={statPopLegendCss}>Viewings</span>
-            </div>
-            <div className={statPopCss}>
-              <span className={statPopNumberCss}>{movies.movieCount}</span>{" "}
-              <span className={statPopLegendCss}>Movies</span>
-            </div>
-          </div>
-          <TableHeading headingText="Most Watched Movies" />
-          <MostWatchedMoviesTable collection={movies.mostWatched} />
-          <TableHeading headingText="Viewings By Release Decade" />
-          <DecadeTable collection={movies.decades} />
-          <TableHeading headingText="Viewings By Venue" />
-          <VenueTable collection={movies.venues} />
-          <TableHeading headingText="Most Watched Directors" />
-          <MostWatchedPersonTable
+        <div className={contentCss}>
+          <StatCallouts
+            stats={[
+              {
+                number: movies.viewingCount,
+                text: "Viewings",
+              },
+              {
+                number: movies.movieCount,
+                text: "Movies",
+              },
+            ]}
+          />
+          <MostWatchedMoviesStatTable collection={movies.mostWatched} />
+          <ViewingsByDecadeStatTable collection={movies.decades} />
+          <ViewingsByVenueStatTable collection={movies.venues} />
+          <MostWatchedPersonsStatTable
             collection={directors.mostWatched}
             watchlistType="directors"
           />
-          <TableHeading headingText="Most Watched Performers" />
-          <MostWatchedPersonTable
+          <MostWatchedPersonsStatTable
             collection={performers.mostWatched}
             watchlistType="cast"
           />
-          <TableHeading headingText="Most Watched Writers" />
-          <MostWatchedPersonTable
+          <MostWatchedPersonsStatTable
             collection={writers.mostWatched}
             watchlistType="writers"
           />

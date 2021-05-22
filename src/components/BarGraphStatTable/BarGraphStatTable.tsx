@@ -1,15 +1,15 @@
 import React from "react";
 import {
-  Table,
-  TableFillDataCell,
-  TableNumberDataCell,
-  TableNumberHeader,
-  TableRow,
-  TableSpacerHeader,
-  TableTextDataCell,
-  TableTextHeader,
-} from "../Table";
-import { barCss } from "./TableWithBarGraph.module.scss";
+  StatTable,
+  StatTableFillDataCell,
+  StatTableNumberDataCell,
+  StatTableNumberHeader,
+  StatTableRow,
+  StatTableSpacerHeader,
+  StatTableTextDataCell,
+  StatTableTextHeader,
+} from "../StatTable";
+import { barCss } from "./BarGraphStatTable.module.scss";
 
 function BarGraph({
   value,
@@ -29,13 +29,15 @@ function BarGraph({
   );
 }
 
-export default function TableWithBarGraph<T>({
+export default function BarGraphStatTable<T>({
+  heading,
   collection,
   nameHeaderText,
   valueHeaderText,
   nameFunc,
   valueFunc,
 }: {
+  heading: string;
   collection: T[];
   nameHeaderText: string;
   valueHeaderText: string;
@@ -48,9 +50,9 @@ export default function TableWithBarGraph<T>({
   }, 0);
 
   const headers = [
-    <TableTextHeader text={nameHeaderText} />,
-    <TableSpacerHeader />,
-    <TableNumberHeader text={valueHeaderText} />,
+    <StatTableTextHeader text={nameHeaderText} />,
+    <StatTableSpacerHeader />,
+    <StatTableNumberHeader text={valueHeaderText} />,
   ];
 
   const rows = collection.map((item) => {
@@ -58,15 +60,19 @@ export default function TableWithBarGraph<T>({
     const name = nameFunc(item);
 
     return (
-      <TableRow>
-        <TableTextDataCell text={name} />
-        <TableFillDataCell>
+      <StatTableRow>
+        <StatTableTextDataCell text={name} />
+        <StatTableFillDataCell>
           <BarGraph value={value} maxValue={maxBar} />
-        </TableFillDataCell>
-        <TableNumberDataCell number={value} />
-      </TableRow>
+        </StatTableFillDataCell>
+        <StatTableNumberDataCell number={value} />
+      </StatTableRow>
     );
   });
 
-  return <Table headers={headers}>{rows}</Table>;
+  return (
+    <StatTable heading={heading} headers={headers}>
+      {rows}
+    </StatTable>
+  );
 }

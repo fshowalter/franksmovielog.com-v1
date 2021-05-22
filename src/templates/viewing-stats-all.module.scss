@@ -3,7 +3,7 @@
 .containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". list ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". content ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
@@ -23,9 +23,9 @@
   grid-area: header;
 }
 
-.listCss {
+.contentCss {
   display: block;
-  grid-area: list;
+  grid-area: content;
 }
 
 .headingCss {
@@ -46,193 +46,4 @@
   @media (min-width: $breakpointDesktop) {
     text-align: left;
   }
-}
-
-.yearListCss {
-  font-feature-settings: "tnum";
-  margin-top: 1.5rem;
-}
-
-.yearListItemCss {
-  display: inline-block;
-  margin-right: 2ch;
-}
-
-.yearListItemLinkCss {
-  color: var(--color-link);
-}
-
-.personLinkCss {
-  color: var(--color-link);
-}
-
-.tableHeadingCss {
-  font-size: var(--step-1);
-  line-height: 2.5;
-  text-align: center;
-
-  @media (min-width: $breakpointDesktop) {
-    text-align: left;
-  }
-}
-
-.tableHeaderCss {
-  line-height: 2.5;
-  text-align: left;
-}
-
-.tableTitleYearCss {
-  color: var(--color-text-secondary);
-  font-size: 0.875rem;
-}
-
-.tableCss {
-  border: 1px solid var(--color-background);
-  border-collapse: collapse;
-  line-height: 1.75;
-  margin-bottom: var(--step-5);
-  width: 100%;
-
-  th:first-of-type,
-  td:first-of-type {
-    padding-left: 1rem;
-  }
-
-  th:last-of-type,
-  td:last-of-type {
-    padding-right: 1rem;
-  }
-}
-
-.tableRowCss {
-  font-size: 1.125rem;
-
-  &:nth-child(even) {
-    background-color: #e9e7e061;
-  }
-}
-
-.tableFillCellCss {
-  padding-right: var(--step-1);
-  width: 100%;
-}
-
-.barCss {
-  background-image: linear-gradient(
-    to right,
-    var(--color-highlight),
-    var(--color-highlight) var(--bar-percent),
-    transparent var(--bar-percent),
-    transparent
-  );
-  opacity: 33%;
-  width: 100%;
-}
-
-.tableTextCellCss {
-  padding-right: var(--step-1);
-
-  @media (min-width: $breakpointTablet) {
-    white-space: nowrap;
-  }
-}
-
-.tableIndexCellCss {
-  color: var(--color-text-secondary);
-  font-feature-settings: "tnum";
-  font-size: 0.875rem;
-  line-height: 31.5px;
-  text-align: right;
-  vertical-align: top;
-}
-
-.tableCountCellCss {
-  font-feature-settings: "tnum";
-  text-align: right;
-  vertical-align: top;
-}
-
-.detailsLabelCss {
-  color: var(--color-text-secondary);
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  text-align: left;
-}
-
-.detailsListCss {
-  list-style-type: decimal;
-  margin: 0 1rem;
-
-  li {
-    padding: 1px 0;
-  }
-
-  li::marker {
-    color: var(--color-text-secondary);
-  }
-
-  li:nth-child(even) {
-    background-color: #fff;
-  }
-
-  li:nth-child(odd) {
-    background-color: #e9e7e061;
-  }
-}
-
-.numberHeaderCss {
-  text-align: right;
-  white-space: nowrap;
-}
-
-.viewingDetailCss {
-  font-feature-settings: "tnum";
-  font-size: 1rem;
-  letter-spacing: normal;
-}
-
-.viewingForMovieCss {
-  display: inline;
-}
-
-.viaCss {
-  color: var(--color-text-secondary);
-  display: inline;
-}
-
-.statPopsCss {
-  column-gap: var(--step-1);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 10rem));
-  justify-content: center;
-  margin: 0 auto;
-
-  @media (min-width: $breakpointDesktop) {
-    column-gap: var(--step-5);
-  }
-}
-
-.statPopCss {
-  border: 1px solid var(--color-background);
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  height: 10rem;
-  justify-content: center;
-  margin-bottom: var(--step-5);
-  width: 10rem;
-}
-
-.statPopNumberCss {
-  display: block;
-  font-size: var(--step-5);
-  text-align: center;
-}
-
-.statPopLegendCss {
-  color: var(--color-text-secondary);
-  display: block;
-  font-size: 1.125rem;
-  text-align: center;
 }

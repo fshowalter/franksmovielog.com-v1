@@ -1,12 +1,12 @@
 import { Link } from "gatsby";
 import React from "react";
-import TableWithDetails from "../TableWithDetails";
+import DetailsStatTable from "../DetailsStatTable";
 import {
   linkCss,
   titleYearCss,
   viaCss,
   viewingDetailCss,
-} from "./MostWatchedTable.module.scss";
+} from "./MostWatchedStatTable.module.scss";
 
 export interface Viewing {
   prettyDate: string;
@@ -65,18 +65,21 @@ export function ViewingDetail({ viewing }: { viewing: Viewing }): JSX.Element {
   );
 }
 
-export function MostWatchedTable<T extends HasViewings>({
+export function MostWatchedStatTable<T extends HasViewings>({
+  heading,
   nameHeaderText,
   collection,
   nameFunc,
   detailsFunc,
 }: {
+  heading: string;
   collection: T[];
   nameHeaderText: string;
   nameFunc: (item: T) => JSX.Element;
   detailsFunc: (viewing: Viewing) => JSX.Element;
 }): JSX.Element {
-  return TableWithDetails<T>({
+  return DetailsStatTable<T>({
+    heading: heading,
     collection: collection,
     nameHeaderText: nameHeaderText,
     valueHeaderText: "Viewings",

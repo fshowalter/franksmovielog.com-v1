@@ -1,4 +1,5 @@
 export const fillDataCellCss: string;
+export const headingCss: string;
 export const numberDataCellCss: string;
 export const numberHeaderCss: string;
 export const rowCss: string;

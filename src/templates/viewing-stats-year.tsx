@@ -1,68 +1,27 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
-import MostWatchedMoviesTable from "../components/MostWatchedMoviesTable";
-import MostWatchedPersonsTable from "../components/MostWatchedPersonsTable";
+import MostWatchedMoviesStatTable from "../components/MostWatchedMoviesStatTable";
+import MostWatchedPersonsStatTable from "../components/MostWatchedPersonsStatTable";
 import Seo from "../components/Seo";
-import StatTableHeading from "../components/StatTableHeading";
-import TableWithBarGraph from "../components/TableWithBarGraph";
+import StatCallouts from "../components/StatCallouts";
+import ViewingsByDecadeBarGraphStatTable from "../components/ViewingsByDecadeStatTable";
+import ViewingsByVenueBarGraphStatTable from "../components/ViewingsByVenueStatTable";
+import ViewingYearNavigation from "../components/ViewingYearNavigation";
 import {
   containerCss,
+  contentCss,
   headingCss,
-  listCss,
   pageHeaderCss,
-  statPopCss,
-  statPopLegendCss,
-  statPopNumberCss,
-  statPopsCss,
   taglineCss,
-  yearListCss,
-  yearListItemCss,
-  yearListItemLinkCss,
 } from "./viewing-stats-year.module.scss";
 
-function buildHeading(yearScope: string): string {
-  if (yearScope === "all") {
-    return "All-Time Viewing Stats";
-  }
-
-  return `${yearScope} Viewing Stats`;
-}
-
-function buildSubHeading(yearScope: string, numberOfYears: number): string {
-  if (yearScope === "all") {
-    return `${(numberOfYears - 2).toString()} Years in Review.`;
-  }
-
+function buildSubHeading(yearScope: string): string {
   if (yearScope === new Date().getFullYear().toString()) {
     return "A Year in Progress...";
   }
 
   return "A Year in Review";
-}
-
-function DecadeTable({
-  collection,
-}: {
-  collection: DecadeGroup[];
-}): JSX.Element {
-  return TableWithBarGraph<DecadeGroup>({
-    collection: collection,
-    nameHeaderText: "Decade",
-    valueHeaderText: "Viewings",
-    nameFunc: (item) => item.decade,
-    valueFunc: (item) => item.viewingCount,
-  });
-}
-
-function VenueTable({ collection }: { collection: VenueGroup[] }): JSX.Element {
-  return TableWithBarGraph<VenueGroup>({
-    collection: collection,
-    nameHeaderText: "Venue",
-    valueHeaderText: "Viewings",
-    nameFunc: (item) => item.name,
-    valueFunc: (item) => item.viewingCount,
-  });
 }
 
 /**
@@ -80,99 +39,60 @@ export default function ViewingStatsYearTemplate({
 
   if (movies.mostWatched.length > 0) {
     mostWatched = (
-      <>
-        <StatTableHeading text="Most Watched Movies" />
-        <MostWatchedMoviesTable collection={movies.mostWatched} />
-      </>
+      <MostWatchedMoviesStatTable collection={movies.mostWatched} />
     );
   }
 
   return (
     <Layout>
       <Seo
-        pageTitle={
-          pageContext.yearScope !== "all"
-            ? `${pageContext.yearScope} Viewing Stats`
-            : `All-Time Viewing Stats`
-        }
-        description={
-          pageContext.yearScope
-            ? `My most watched titles, performers, directors and writers in ${pageContext.yearScope}`
-            : `My all-time most watched titles, performers, directors and writers.`
-        }
+        pageTitle={`${pageContext.yearScope} Viewing Stats`}
+        description={`My most watched titles, performers, directors and writers in ${pageContext.yearScope}`}
         article={false}
         image={null}
       />
       <main className={containerCss}>
         <header className={pageHeaderCss}>
-          <h2 className={headingCss}>{buildHeading(pageContext.yearScope)}</h2>
+          <h2
+            className={headingCss}
+          >{`${pageContext.yearScope} Viewing Stats`}</h2>
           <p className={taglineCss}>
-            {buildSubHeading(pageContext.yearScope, data.year.nodes.length)}
-            <ul className={yearListCss}>
-              {pageContext.yearScope !== "all" && (
-                <li className={yearListItemCss}>
-                  <Link to="/viewings/stats/" className={yearListItemLinkCss}>
-                    All-Time
-                  </Link>
-                </li>
-              )}
-              {pageContext.yearScope === "all" && (
-                <li className={yearListItemCss}>All-Time</li>
-              )}
-              {data.year.nodes.map(({ year }) => {
-                if (year === "all") {
-                  return null;
-                }
-                if (year === pageContext.yearScope) {
-                  return <li className={yearListItemCss}>{year}</li>;
-                }
-
-                return (
-                  <li className={yearListItemCss}>
-                    <Link
-                      to={`/viewings/stats/${year}`}
-                      className={yearListItemLinkCss}
-                    >
-                      {year}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            {buildSubHeading(pageContext.yearScope)}
+            <ViewingYearNavigation
+              currentYear={pageContext.yearScope}
+              years={data.year.nodes.map((node) => node.year)}
+            />
           </p>
         </header>
-        <div className={listCss}>
-          <div className={statPopsCss}>
-            <div className={statPopCss}>
-              <span className={statPopNumberCss}>{movies.viewingCount}</span>{" "}
-              <span className={statPopLegendCss}>Viewings</span>
-            </div>
-            <div className={statPopCss}>
-              <span className={statPopNumberCss}>{movies.movieCount}</span>{" "}
-              <span className={statPopLegendCss}>Movies</span>
-            </div>
-            <div className={statPopCss}>
-              <span className={statPopNumberCss}>{movies.newMovieCount}</span>{" "}
-              <span className={statPopLegendCss}>New Movies</span>
-            </div>
-          </div>
+        <div className={contentCss}>
+          <StatCallouts
+            stats={[
+              {
+                number: movies.viewingCount,
+                text: "Viewings",
+              },
+              {
+                number: movies.movieCount,
+                text: "Movies",
+              },
+              {
+                number: movies.newMovieCount,
+                text: "New Movies",
+              },
+            ]}
+          />
           {mostWatched}
-          <StatTableHeading text="Viewings By Release Decade" />
-          <DecadeTable collection={movies.decades} />
-          <StatTableHeading text="Viewings By Venue" />
-          <VenueTable collection={movies.venues} />
-          <StatTableHeading text="Most Watched Directors" />
-          <MostWatchedPersonsTable
+          <ViewingsByDecadeBarGraphStatTable collection={movies.decades} />
+          <ViewingsByVenueBarGraphStatTable collection={movies.venues} />
+          <MostWatchedPersonsStatTable
             collection={directors.mostWatched}
             watchlistType="directors"
           />
-          <StatTableHeading text="Most Watched Performers" />
-          <MostWatchedPersonsTable
+          <MostWatchedPersonsStatTable
             collection={performers.mostWatched}
-            watchlistType="cast"
+            watchlistType="performers"
           />
-          <StatTableHeading text="Most Watched Writers" />
-          <MostWatchedPersonsTable
+          <MostWatchedPersonsStatTable
             collection={writers.mostWatched}
             watchlistType="writers"
           />
