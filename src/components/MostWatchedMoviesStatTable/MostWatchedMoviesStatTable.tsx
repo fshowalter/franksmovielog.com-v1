@@ -23,7 +23,7 @@ export default function MostWatchedMoviesStatTable({
 
   return MostWatchedStatTable<MovieWithViewings>({
     heading: "Most Watched Movies",
-    collection: collection,
+    collection,
     nameHeaderText: "Title",
     nameFunc: (movie: MovieWithViewings) => <MovieTitle movie={movie} />,
     detailsFunc: (viewing) => {

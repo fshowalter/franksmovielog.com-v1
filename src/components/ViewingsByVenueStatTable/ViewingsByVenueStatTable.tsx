@@ -12,7 +12,7 @@ export default function ViewingsByVenueStatTable({
 }): JSX.Element {
   return BarGraphStatTable<VenueWithViewings>({
     heading: "Viewings By Venue",
-    collection: collection,
+    collection,
     nameHeaderText: "Venue",
     valueHeaderText: "Viewings",
     nameFunc: (item) => item.name,

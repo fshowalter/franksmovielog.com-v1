@@ -12,7 +12,7 @@ export default function ViewingsByDecadeStatTable({
 }): JSX.Element {
   return BarGraphStatTable<DecadeWithViewings>({
     heading: "Viewings By Release Decade",
-    collection: collection,
+    collection,
     nameHeaderText: "Venue",
     valueHeaderText: "Viewings",
     nameFunc: (item) => item.decade,

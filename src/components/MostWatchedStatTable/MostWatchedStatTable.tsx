@@ -79,11 +79,11 @@ export function MostWatchedStatTable<T extends HasViewings>({
   detailsFunc: (viewing: Viewing) => JSX.Element;
 }): JSX.Element {
   return DetailsStatTable<T>({
-    heading: heading,
-    collection: collection,
-    nameHeaderText: nameHeaderText,
+    heading,
+    collection,
+    nameHeaderText,
     valueHeaderText: "Viewings",
-    nameFunc: nameFunc,
+    nameFunc,
     valueFunc: (item: T) => item.viewingCount,
     detailsFunc: (item: T) => {
       return item.viewings.map((viewing) => {

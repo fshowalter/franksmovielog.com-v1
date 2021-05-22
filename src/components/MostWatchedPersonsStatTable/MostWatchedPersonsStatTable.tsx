@@ -40,14 +40,14 @@ export default function MostWatchedPersonsStatTable({
     heading: `Most Watched ${
       watchlistType[0].toUpperCase() + watchlistType.slice(1)
     }`,
-    collection: collection,
+    collection,
     nameHeaderText: "Name",
     nameFunc: (person) => buildPersonName(watchlistType, person),
     detailsFunc: (viewing) => {
+      const { movie } = viewing;
       return (
         <>
-          <MovieTitle movie={viewing.movie} />{" "}
-          <ViewingDetail viewing={viewing} />
+          <MovieTitle movie={movie} /> <ViewingDetail viewing={viewing} />
         </>
       );
     },
