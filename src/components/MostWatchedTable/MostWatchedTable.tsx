@@ -1,0 +1,91 @@
+import { Link } from "gatsby";
+import React from "react";
+import TableWithDetails from "../TableWithDetails";
+import {
+  linkCss,
+  titleYearCss,
+  viaCss,
+  viewingDetailCss,
+} from "./MostWatchedTable.module.scss";
+
+export interface Viewing {
+  prettyDate: string;
+  venue: string;
+  movie: Movie;
+}
+
+export interface Movie {
+  title: string;
+  year: string;
+  slug: string;
+}
+
+export interface HasViewings {
+  viewings: Viewing[];
+  viewingCount: number;
+}
+
+export function TableLink({
+  to,
+  children,
+}: {
+  to: string;
+  children: JSX.Element | string;
+}): JSX.Element {
+  return (
+    <Link className={linkCss} to={to}>
+      {children}
+    </Link>
+  );
+}
+
+export function MovieTitle({ movie }: { movie: Movie }): JSX.Element {
+  if (movie.slug) {
+    return (
+      <TableLink to={`/reviews/${movie.slug}`}>
+        <>
+          {movie.title} <span className={titleYearCss}>{movie.year}</span>
+        </>
+      </TableLink>
+    );
+  }
+
+  return (
+    <>
+      {movie.title} <span className={titleYearCss}>{movie.year}</span>
+    </>
+  );
+}
+
+export function ViewingDetail({ viewing }: { viewing: Viewing }): JSX.Element {
+  return (
+    <span className={viewingDetailCss}>
+      {viewing.prettyDate} <span className={viaCss}>via</span> {viewing.venue}
+    </span>
+  );
+}
+
+export function MostWatchedTable<T extends HasViewings>({
+  nameHeaderText,
+  collection,
+  nameFunc,
+  detailsFunc,
+}: {
+  collection: T[];
+  nameHeaderText: string;
+  nameFunc: (item: T) => JSX.Element;
+  detailsFunc: (viewing: Viewing) => JSX.Element;
+}): JSX.Element {
+  return TableWithDetails<T>({
+    collection: collection,
+    nameHeaderText: nameHeaderText,
+    valueHeaderText: "Viewings",
+    nameFunc: nameFunc,
+    valueFunc: (item: T) => item.viewingCount,
+    detailsFunc: (item: T) => {
+      return item.viewings.map((viewing) => {
+        return <li>{detailsFunc(viewing)}</li>;
+      });
+    },
+  });
+}

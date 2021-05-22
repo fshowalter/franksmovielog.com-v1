@@ -1,0 +1,19 @@
+.viaCss {
+  color: var(--color-text-secondary);
+  display: inline;
+}
+
+.titleYearCss {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.viewingDetailCss {
+  font-feature-settings: "tnum";
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+
+.linkCss {
+  color: var(--color-link);
+}

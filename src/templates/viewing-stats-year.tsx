@@ -1,32 +1,21 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
+import MostWatchedMoviesTable from "../components/MostWatchedMoviesTable";
+import MostWatchedPersonsTable from "../components/MostWatchedPersonsTable";
 import Seo from "../components/Seo";
+import StatTableHeading from "../components/StatTableHeading";
+import TableWithBarGraph from "../components/TableWithBarGraph";
 import {
   containerCss,
-  detailsLabelCss,
-  detailsListCss,
   headingCss,
   listCss,
-  numberHeaderCss,
   pageHeaderCss,
-  personLinkCss,
   statPopCss,
   statPopLegendCss,
   statPopNumberCss,
   statPopsCss,
-  tableCountCellCss,
-  tableCss,
-  tableFillCellCss,
-  tableHeadingCss,
-  tableIndexCellCss,
-  tableRowCss,
-  tableTitleYearCss,
   taglineCss,
-  textHeaderCss,
-  viaCss,
-  viewingDetailCss,
-  viewingForMovieCss,
   yearListCss,
   yearListItemCss,
   yearListItemLinkCss,
@@ -52,221 +41,34 @@ function buildSubHeading(yearScope: string, numberOfYears: number): string {
   return "A Year in Review";
 }
 
-function buildPersonName(type: string, person: Person): JSX.Element {
-  if (person.slug) {
-    return (
-      <Link className={personLinkCss} to={`/watchlist/${type}/${person.slug}`}>
-        {person.fullName}
-      </Link>
-    );
-  }
-
-  return <>{person.fullName}</>;
-}
-
-function buildlMovieTitle(movie: Movie): JSX.Element {
-  if (movie.slug) {
-    return (
-      <Link className={personLinkCss} to={`/reviews/${movie.slug}`}>
-        {movie.title} <span className={tableTitleYearCss}>{movie.year}</span>
-      </Link>
-    );
-  }
-
-  return (
-    <>
-      {movie.title} <span className={tableTitleYearCss}>{movie.year}</span>
-    </>
-  );
-}
-
-function buildViewingDetail(viewing: Viewing): JSX.Element {
-  return (
-    <span className={viewingDetailCss}>
-      {viewing.prettyDate} <span className={viaCss}>via</span> {viewing.venue}
-    </span>
-  );
-}
-
-function TableHeading({ headingText }: { headingText: string }): JSX.Element {
-  return <h2 className={tableHeadingCss}>{headingText}</h2>;
-}
-
-function MostWatchedMoviesTable({
-  collection,
-}: {
-  collection: MovieWithViewings[];
-}): JSX.Element {
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th className={textHeaderCss}>Title</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
-        </tr>
-      </thead>
-      {collection.map((movie, index) => {
-        return (
-          <>
-            <tr className={tableRowCss}>
-              <td className={tableIndexCellCss}>{index + 1}.&nbsp;</td>
-              <td className={tableFillCellCss}>{buildlMovieTitle(movie)}</td>
-              <td className={tableCountCellCss}>{movie.viewingCount}</td>
-            </tr>
-            <tr>
-              <td className={tableIndexCellCss}>&nbsp;</td>
-              <td colSpan={2}>
-                <details>
-                  <summary className={detailsLabelCss}>Details</summary>
-                  <ul className={detailsListCss}>
-                    {movie.viewings.map((detail) => {
-                      return <li>{buildViewingDetail(detail)}</li>;
-                    })}
-                  </ul>
-                </details>
-              </td>
-            </tr>
-          </>
-        );
-      })}
-    </table>
-  );
-}
-
 function DecadeTable({
   collection,
 }: {
   collection: DecadeGroup[];
 }): JSX.Element {
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th className={textHeaderCss}>Decade</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
-        </tr>
-      </thead>
-      {collection.map((group) => {
-        return (
-          <tr className={tableRowCss}>
-            <td className={tableIndexCellCss}>&nbsp;</td>
-            <td className={tableFillCellCss}>{group.decade}</td>
-            <td className={tableCountCellCss}>{group.viewingCount}</td>
-          </tr>
-        );
-      })}
-    </table>
-  );
+  return TableWithBarGraph<DecadeGroup>({
+    collection: collection,
+    nameHeaderText: "Decade",
+    valueHeaderText: "Viewings",
+    nameFunc: (item) => item.decade,
+    valueFunc: (item) => item.viewingCount,
+  });
 }
 
-function CountryTable({
-  collection,
-}: {
-  collection: CountryGroup[];
-}): JSX.Element {
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th className={textHeaderCss}>Country</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
-        </tr>
-      </thead>
-      {collection.map((group, index) => {
-        return (
-          <>
-            <tr className={tableRowCss}>
-              <td className={tableIndexCellCss}>{index + 1}.&nbsp;</td>
-              <td className={tableFillCellCss}>{group.name}</td>
-              <td className={tableCountCellCss}>{group.viewingCount}</td>
-            </tr>
-            <tr>
-              <td className={tableIndexCellCss}>&nbsp;</td>
-              <td colSpan={2}>
-                <details>
-                  <summary className={detailsLabelCss}>Details</summary>
-                  <ul className={detailsListCss}>
-                    {group.viewings.map((detail) => {
-                      return (
-                        <li>
-                          {buildlMovieTitle(detail.movie)}{" "}
-                          <div className={viewingForMovieCss}>
-                            {buildViewingDetail(detail)}
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </details>
-              </td>
-            </tr>
-          </>
-        );
-      })}
-    </table>
-  );
-}
-
-function MostWatchedPersonTable({
-  collection,
-  watchlistType,
-}: {
-  collection: PersonWithViewings[];
-  watchlistType: string;
-}): JSX.Element {
-  return (
-    <table className={tableCss}>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th className={textHeaderCss}>Name</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
-        </tr>
-      </thead>
-      {collection.map((person, index) => {
-        return (
-          <>
-            <tr className={tableRowCss}>
-              <td className={tableIndexCellCss}>{index + 1}.&nbsp;</td>
-              <td className={tableFillCellCss}>
-                {buildPersonName(watchlistType, person)}
-              </td>
-              <td className={tableCountCellCss}>{person.viewingCount}</td>
-            </tr>
-            <tr>
-              <td className={tableIndexCellCss}>&nbsp;</td>
-              <td colSpan={2}>
-                <details>
-                  <summary className={detailsLabelCss}>Details</summary>
-                  <ul className={detailsListCss}>
-                    {person.viewings.map((detail) => {
-                      return (
-                        <li>
-                          {buildlMovieTitle(detail.movie)}{" "}
-                          <div className={viewingForMovieCss}>
-                            {buildViewingDetail(detail)}
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </details>
-              </td>
-            </tr>
-          </>
-        );
-      })}
-    </table>
-  );
+function VenueTable({ collection }: { collection: VenueGroup[] }): JSX.Element {
+  return TableWithBarGraph<VenueGroup>({
+    collection: collection,
+    nameHeaderText: "Venue",
+    valueHeaderText: "Viewings",
+    nameFunc: (item) => item.name,
+    valueFunc: (item) => item.viewingCount,
+  });
 }
 
 /**
- * Renders the viewing stats template.
+ * Renders the viewing stats year template.
  */
-export default function ViewingStatsTemplate({
+export default function ViewingStatsYearTemplate({
   pageContext,
   data,
 }: {
@@ -279,7 +81,7 @@ export default function ViewingStatsTemplate({
   if (movies.mostWatched.length > 0) {
     mostWatched = (
       <>
-        <TableHeading headingText="Most Watched Movies" />
+        <StatTableHeading text="Most Watched Movies" />
         <MostWatchedMoviesTable collection={movies.mostWatched} />
       </>
     );
@@ -355,22 +157,22 @@ export default function ViewingStatsTemplate({
             </div>
           </div>
           {mostWatched}
-          <TableHeading headingText="Viewings By Release Decade" />
+          <StatTableHeading text="Viewings By Release Decade" />
           <DecadeTable collection={movies.decades} />
-          <TableHeading headingText="Viewings By Country of Origin" />
-          <CountryTable collection={movies.countries} />
-          <TableHeading headingText="Most Watched Directors" />
-          <MostWatchedPersonTable
+          <StatTableHeading text="Viewings By Venue" />
+          <VenueTable collection={movies.venues} />
+          <StatTableHeading text="Most Watched Directors" />
+          <MostWatchedPersonsTable
             collection={directors.mostWatched}
             watchlistType="directors"
           />
-          <TableHeading headingText="Most Watched Performers" />
-          <MostWatchedPersonTable
+          <StatTableHeading text="Most Watched Performers" />
+          <MostWatchedPersonsTable
             collection={performers.mostWatched}
             watchlistType="cast"
           />
-          <TableHeading headingText="Most Watched Writers" />
-          <MostWatchedPersonTable
+          <StatTableHeading text="Most Watched Writers" />
+          <MostWatchedPersonsTable
             collection={writers.mostWatched}
             watchlistType="writers"
           />
@@ -416,10 +218,9 @@ export interface DecadeGroup {
   viewingCount: number;
 }
 
-export interface CountryGroup {
+export interface VenueGroup {
   name: string;
   viewingCount: number;
-  viewings: Viewing[];
 }
 
 export interface PageQueryResult {
@@ -429,7 +230,7 @@ export interface PageQueryResult {
     newMovieCount: number;
     mostWatched: MovieWithViewings[];
     decades: DecadeGroup[];
-    countries: CountryGroup[];
+    venues: VenueGroup[];
   };
   directors: {
     mostWatched: PersonWithViewings[];
@@ -459,18 +260,9 @@ export const pageQuery = graphql`
         decade
         viewingCount: viewing_count
       }
-      countries {
+      venues {
         name
         viewingCount: viewing_count
-        viewings {
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          movie {
-            title
-            year
-            slug
-          }
-        }
       }
       mostWatched: most_watched {
         title

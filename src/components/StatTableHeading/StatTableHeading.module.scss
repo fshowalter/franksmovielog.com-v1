@@ -1,0 +1,11 @@
+@import "./src/styles/breakpoints";
+
+.tableHeadingCss {
+  font-size: var(--step-1);
+  line-height: 2.5;
+  text-align: center;
+
+  @media (min-width: $breakpointDesktop) {
+    text-align: left;
+  }
+}

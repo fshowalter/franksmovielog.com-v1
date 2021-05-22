@@ -76,6 +76,11 @@
   }
 }
 
+.tableHeaderCss {
+  line-height: 2.5;
+  text-align: left;
+}
+
 .tableTitleYearCss {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
@@ -87,6 +92,16 @@
   line-height: 1.75;
   margin-bottom: var(--step-5);
   width: 100%;
+
+  th:first-of-type,
+  td:first-of-type {
+    padding-left: 1rem;
+  }
+
+  th:last-of-type,
+  td:last-of-type {
+    padding-right: 1rem;
+  }
 }
 
 .tableRowCss {
@@ -102,19 +117,37 @@
   width: 100%;
 }
 
+.barCss {
+  background-image: linear-gradient(
+    to right,
+    var(--color-highlight),
+    var(--color-highlight) var(--bar-percent),
+    transparent var(--bar-percent),
+    transparent
+  );
+  opacity: 33%;
+  width: 100%;
+}
+
+.tableTextCellCss {
+  padding-right: var(--step-1);
+
+  @media (min-width: $breakpointTablet) {
+    white-space: nowrap;
+  }
+}
+
 .tableIndexCellCss {
+  color: var(--color-text-secondary);
   font-feature-settings: "tnum";
+  font-size: 0.875rem;
+  line-height: 31.5px;
   text-align: right;
   vertical-align: top;
-
-  @media (min-width: $breakpointDesktop) {
-    padding-left: var(--step-1);
-  }
 }
 
 .tableCountCellCss {
   font-feature-settings: "tnum";
-  padding-right: var(--step-1);
   text-align: right;
   vertical-align: top;
 }
@@ -149,7 +182,6 @@
 }
 
 .numberHeaderCss {
-  padding-right: var(--step-1);
   text-align: right;
   white-space: nowrap;
 }

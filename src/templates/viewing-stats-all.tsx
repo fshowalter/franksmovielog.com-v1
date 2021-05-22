@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import {
+  barCss,
   containerCss,
   detailsLabelCss,
   detailsListCss,
@@ -18,9 +19,11 @@ import {
   tableCountCellCss,
   tableCss,
   tableFillCellCss,
+  tableHeaderCss,
   tableHeadingCss,
   tableIndexCellCss,
   tableRowCss,
+  tableTextCellCss,
   tableTitleYearCss,
   taglineCss,
   viaCss,
@@ -85,8 +88,8 @@ function MostWatchedMoviesTable({
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={tableHeadingCss}>Title</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
+          <th className={tableHeaderCss}>Title</th>
+          <th className={numberHeaderCss}>Viewings</th>
         </tr>
       </thead>
       {collection.map((movie, index) => {
@@ -122,20 +125,33 @@ function DecadeTable({
 }: {
   collection: DecadeGroup[];
 }): JSX.Element {
+  const maxBar = collection.reduce(
+    (acc, dec) => (acc = acc > dec.viewingCount ? acc : dec.viewingCount),
+    0
+  );
+
   return (
     <table className={tableCss}>
       <thead>
         <tr>
+          <th className={tableHeaderCss}>Decade</th>
           <th>&nbsp;</th>
-          <th className={tableHeadingCss}>Decade</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
+          <th className={numberHeaderCss}>Viewings</th>
         </tr>
       </thead>
       {collection.map((group) => {
+        const barPercentProperty = {
+          "--bar-percent": `${(group.viewingCount / maxBar) * 100}%`,
+        } as React.CSSProperties;
+
         return (
           <tr className={tableRowCss}>
-            <td className={tableIndexCellCss}>&nbsp;</td>
-            <td className={tableFillCellCss}>{group.decade}</td>
+            <td className={tableTextCellCss}>{group.decade}</td>
+            <td className={tableFillCellCss}>
+              <div className={barCss} style={barPercentProperty}>
+                &nbsp;
+              </div>
+            </td>
             <td className={tableCountCellCss}>{group.viewingCount}</td>
           </tr>
         );
@@ -144,25 +160,34 @@ function DecadeTable({
   );
 }
 
-function CountryTable({
-  collection,
-}: {
-  collection: CountryGroup[];
-}): JSX.Element {
+function VenueTable({ collection }: { collection: VenueGroup[] }): JSX.Element {
+  const maxBar = collection.reduce(
+    (acc, dec) => (acc = acc > dec.viewingCount ? acc : dec.viewingCount),
+    0
+  );
+
   return (
     <table className={tableCss}>
       <thead>
         <tr>
+          <th className={tableHeaderCss}>Venue</th>
           <th>&nbsp;</th>
-          <th className={tableHeadingCss}>Country</th>
-          <th className={numberHeaderCss}>Viewing Count</th>
+          <th className={numberHeaderCss}>Viewings</th>
         </tr>
       </thead>
       {collection.map((group) => {
+        const barPercentProperty = {
+          "--bar-percent": `${(group.viewingCount / maxBar) * 100}%`,
+        } as React.CSSProperties;
+
         return (
           <tr className={tableRowCss}>
-            <td className={tableIndexCellCss}>&nbsp;</td>
-            <td className={tableFillCellCss}>{group.name}</td>
+            <td className={tableTextCellCss}>{group.name}</td>
+            <td className={tableFillCellCss}>
+              <div className={barCss} style={barPercentProperty}>
+                &nbsp;
+              </div>
+            </td>
             <td className={tableCountCellCss}>{group.viewingCount}</td>
           </tr>
         );
@@ -183,7 +208,7 @@ function MostWatchedPersonTable({
       <thead>
         <tr>
           <th>&nbsp;</th>
-          <th className={tableHeadingCss}>Name</th>
+          <th className={tableHeaderCss}>Name</th>
           <th className={numberHeaderCss}>Viewing Count</th>
         </tr>
       </thead>
@@ -288,8 +313,8 @@ export default function ViewingStatsTemplate({
           <MostWatchedMoviesTable collection={movies.mostWatched} />
           <TableHeading headingText="Viewings By Release Decade" />
           <DecadeTable collection={movies.decades} />
-          <TableHeading headingText="Viewings By Country of Origin" />
-          <CountryTable collection={movies.countries} />
+          <TableHeading headingText="Viewings By Venue" />
+          <VenueTable collection={movies.venues} />
           <TableHeading headingText="Most Watched Directors" />
           <MostWatchedPersonTable
             collection={directors.mostWatched}
@@ -347,7 +372,7 @@ export interface DecadeGroup {
   viewingCount: number;
 }
 
-export interface CountryGroup {
+export interface VenueGroup {
   name: string;
   viewingCount: number;
 }
@@ -358,7 +383,7 @@ export interface PageQueryResult {
     viewingCount: number;
     mostWatched: MovieWithViewings[];
     decades: DecadeGroup[];
-    countries: CountryGroup[];
+    venues: VenueGroup[];
   };
   directors: {
     mostWatched: PersonWithViewings[];
@@ -387,7 +412,7 @@ export const pageQuery = graphql`
         decade
         viewingCount: viewing_count
       }
-      countries {
+      venues {
         name
         viewingCount: viewing_count
       }
