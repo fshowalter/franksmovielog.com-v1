@@ -16,7 +16,11 @@ export default function MostWatchedMoviesStatTable({
   collection,
 }: {
   collection: MovieWithViewings[];
-}): JSX.Element {
+}): JSX.Element | null {
+  if (collection.length === 0) {
+    return null;
+  }
+
   return MostWatchedStatTable<MovieWithViewings>({
     heading: "Most Watched Movies",
     collection: collection,

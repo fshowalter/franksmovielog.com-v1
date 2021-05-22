@@ -1,6 +1,6 @@
 import BarGraphStatTable from "../BarGraphStatTable";
 
-interface VenueWithViewings {
+export interface VenueWithViewings {
   name: string;
   viewingCount: number;
 }

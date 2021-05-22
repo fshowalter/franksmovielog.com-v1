@@ -19,13 +19,8 @@
   }
 }
 
-.pageHeaderCss {
+.headerCss {
   grid-area: header;
-}
-
-.contentCss {
-  display: block;
-  grid-area: content;
 }
 
 .headingCss {
@@ -46,4 +41,9 @@
   @media (min-width: $breakpointDesktop) {
     text-align: left;
   }
+}
+
+.contentCss {
+  display: block;
+  grid-area: content;
 }

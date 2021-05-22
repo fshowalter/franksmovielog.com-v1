@@ -1,22 +1,10 @@
 import { graphql } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
-import MostWatchedMoviesStatTable from "../components/MostWatchedMoviesStatTable";
-import MostWatchedPersonsStatTable from "../components/MostWatchedPersonsStatTable";
 import Seo from "../components/Seo";
-import StatCallouts from "../components/StatCallouts";
-import ViewingsByDecadeBarGraphStatTable from "../components/ViewingsByDecadeStatTable";
-import ViewingsByVenueBarGraphStatTable from "../components/ViewingsByVenueStatTable";
-import ViewingYearNavigation from "../components/ViewingYearNavigation";
-import {
-  containerCss,
-  contentCss,
-  headingCss,
-  pageHeaderCss,
-  taglineCss,
-} from "./viewing-stats-year.module.scss";
+import ViewingStats from "../components/ViewingStats";
 
-function buildSubHeading(yearScope: string): string {
+function buildTagline(yearScope: string): string {
   if (yearScope === new Date().getFullYear().toString()) {
     return "A Year in Progress...";
   }
@@ -35,14 +23,6 @@ export default function ViewingStatsYearTemplate({
   data: PageQueryResult;
 }): JSX.Element {
   const { performers, directors, writers, movies } = data;
-  let mostWatched = null;
-
-  if (movies.mostWatched.length > 0) {
-    mostWatched = (
-      <MostWatchedMoviesStatTable collection={movies.mostWatched} />
-    );
-  }
-
   return (
     <Layout>
       <Seo
@@ -51,53 +31,32 @@ export default function ViewingStatsYearTemplate({
         article={false}
         image={null}
       />
-      <main className={containerCss}>
-        <header className={pageHeaderCss}>
-          <h2
-            className={headingCss}
-          >{`${pageContext.yearScope} Viewing Stats`}</h2>
-          <p className={taglineCss}>
-            {buildSubHeading(pageContext.yearScope)}
-            <ViewingYearNavigation
-              currentYear={pageContext.yearScope}
-              years={data.year.nodes.map((node) => node.year)}
-            />
-          </p>
-        </header>
-        <div className={contentCss}>
-          <StatCallouts
-            stats={[
-              {
-                number: movies.viewingCount,
-                text: "Viewings",
-              },
-              {
-                number: movies.movieCount,
-                text: "Movies",
-              },
-              {
-                number: movies.newMovieCount,
-                text: "New Movies",
-              },
-            ]}
-          />
-          {mostWatched}
-          <ViewingsByDecadeBarGraphStatTable collection={movies.decades} />
-          <ViewingsByVenueBarGraphStatTable collection={movies.venues} />
-          <MostWatchedPersonsStatTable
-            collection={directors.mostWatched}
-            watchlistType="directors"
-          />
-          <MostWatchedPersonsStatTable
-            collection={performers.mostWatched}
-            watchlistType="performers"
-          />
-          <MostWatchedPersonsStatTable
-            collection={writers.mostWatched}
-            watchlistType="writers"
-          />
-        </div>
-      </main>
+      <ViewingStats
+        headingText={`${pageContext.yearScope} Viewing Stats`}
+        taglineText={buildTagline(pageContext.yearScope)}
+        currentYear={pageContext.yearScope}
+        years={data.year.nodes.map((node) => node.year)}
+        stats={[
+          {
+            number: movies.viewingCount,
+            text: "Viewings",
+          },
+          {
+            number: movies.movieCount,
+            text: "Movies",
+          },
+          {
+            number: movies.newMovieCount,
+            text: "New Movies",
+          },
+        ]}
+        mostWatchedMovies={movies.mostWatched}
+        decades={movies.decades}
+        venues={movies.venues}
+        mostWatchedDirectors={directors.mostWatched}
+        mostWatchedPerformers={performers.mostWatched}
+        mostWatchedWriters={writers.mostWatched}
+      />
     </Layout>
   );
 }

@@ -6,7 +6,7 @@ import {
   numberCss,
 } from "./StatCallouts.module.scss";
 
-interface Stat {
+export interface Stat {
   number: number;
   text: string;
 }

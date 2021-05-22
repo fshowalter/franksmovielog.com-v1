@@ -1,6 +1,6 @@
 import BarGraphStatTable from "../BarGraphStatTable";
 
-interface DecadeWithViewings {
+export interface DecadeWithViewings {
   decade: string;
   viewingCount: number;
 }

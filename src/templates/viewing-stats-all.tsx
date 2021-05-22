@@ -1,20 +1,8 @@
 import { graphql } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
-import MostWatchedMoviesStatTable from "../components/MostWatchedMoviesStatTable";
-import MostWatchedPersonsStatTable from "../components/MostWatchedPersonsStatTable";
 import Seo from "../components/Seo";
-import StatCallouts from "../components/StatCallouts";
-import ViewingsByDecadeStatTable from "../components/ViewingsByDecadeStatTable";
-import ViewingsByVenueStatTable from "../components/ViewingsByVenueStatTable";
-import ViewingYearNavigation from "../components/ViewingYearNavigation";
-import {
-  containerCss,
-  contentCss,
-  headingCss,
-  pageHeaderCss,
-  taglineCss,
-} from "./viewing-stats-all.module.scss";
+import ViewingStats from "../components/ViewingStats";
 
 /**
  * Renders the all-time viewing stats template.
@@ -36,47 +24,30 @@ export default function AllTimeViewingStatsTemplate({
         article={false}
         image={null}
       />
-      <main className={containerCss}>
-        <header className={pageHeaderCss}>
-          <h2 className={headingCss}>All-Time Viewing Stats</h2>
-          <p className={taglineCss}>
-            {`${(data.year.nodes.length - 1).toString()} Years in Review`}
-            <ViewingYearNavigation
-              currentYear={pageContext.yearScope}
-              years={data.year.nodes.map((node) => node.year)}
-            />
-          </p>
-        </header>
-        <div className={contentCss}>
-          <StatCallouts
-            stats={[
-              {
-                number: movies.viewingCount,
-                text: "Viewings",
-              },
-              {
-                number: movies.movieCount,
-                text: "Movies",
-              },
-            ]}
-          />
-          <MostWatchedMoviesStatTable collection={movies.mostWatched} />
-          <ViewingsByDecadeStatTable collection={movies.decades} />
-          <ViewingsByVenueStatTable collection={movies.venues} />
-          <MostWatchedPersonsStatTable
-            collection={directors.mostWatched}
-            watchlistType="directors"
-          />
-          <MostWatchedPersonsStatTable
-            collection={performers.mostWatched}
-            watchlistType="cast"
-          />
-          <MostWatchedPersonsStatTable
-            collection={writers.mostWatched}
-            watchlistType="writers"
-          />
-        </div>
-      </main>
+      <ViewingStats
+        headingText="All-Time Viewing Stats"
+        taglineText={`${(
+          data.year.nodes.length - 1
+        ).toString()} Years in Review`}
+        currentYear={pageContext.yearScope}
+        years={data.year.nodes.map((node) => node.year)}
+        stats={[
+          {
+            number: movies.viewingCount,
+            text: "Viewings",
+          },
+          {
+            number: movies.movieCount,
+            text: "Movies",
+          },
+        ]}
+        mostWatchedMovies={movies.mostWatched}
+        decades={movies.decades}
+        venues={movies.venues}
+        mostWatchedDirectors={directors.mostWatched}
+        mostWatchedPerformers={performers.mostWatched}
+        mostWatchedWriters={writers.mostWatched}
+      />
     </Layout>
   );
 }

@@ -1,3 +1,4 @@
-import StatCallounts from "./StatCallouts";
+import StatCallouts from "./StatCallouts";
+export type { Stat } from "./StatCallouts";
 
-export default StatCallounts;
+export default StatCallouts;

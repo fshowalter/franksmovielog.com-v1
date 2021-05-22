@@ -13,17 +13,18 @@ function AllTimeLink({
   currentYear: string;
   linkFunc: (year: string) => string;
 }): JSX.Element {
-  if (currentYear !== "all") {
-    return (
-      <li className={listItemCss}>
-        <Link to={linkFunc("all")} className={listItemLinkCss}>
-          All-Time
-        </Link>
-      </li>
-    );
+  console.log(currentYear);
+  if (!currentYear || currentYear === "all") {
+    return <li className={listItemCss}>All-Time</li>;
   }
 
-  return <li className={listItemCss}>All-Time</li>;
+  return (
+    <li className={listItemCss}>
+      <Link to={linkFunc("all")} className={listItemLinkCss}>
+        All-Time
+      </Link>
+    </li>
+  );
 }
 
 function YearLink({
