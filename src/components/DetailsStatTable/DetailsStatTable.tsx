@@ -36,7 +36,7 @@ export default function DetailsStatTable<T>({
   nameHeaderText: string;
   valueHeaderText: string;
   nameFunc: (x: T) => JSX.Element;
-  valueFunc: (x: T) => number;
+  valueFunc: (x: T) => ReactElement;
   detailsFunc: (x: T) => ReactElement<HTMLLIElement>[];
 }): JSX.Element {
   const headers = [
@@ -54,7 +54,7 @@ export default function DetailsStatTable<T>({
         <StatTableRow>
           <DetailsStatTableIndexCell index={index + 1} />
           <StatTableFillDataCell>{name}</StatTableFillDataCell>
-          <StatTableNumberDataCell number={value} />
+          <StatTableNumberDataCell content={value} />
         </StatTableRow>
         <tr>
           <td>&nbsp;</td>

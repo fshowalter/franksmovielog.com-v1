@@ -71,11 +71,13 @@ export default function Grade({
   }
 
   if (gradeValue) {
-    if (!(gradeValue in gradeValueMap)) {
+    const roundedGradeValue = Math.round(gradeValue);
+
+    if (!(roundedGradeValue in gradeValueMap)) {
       return null;
     }
 
-    [src, alt] = gradeValueMap[gradeValue];
+    [src, alt] = gradeValueMap[roundedGradeValue];
   }
 
   return (

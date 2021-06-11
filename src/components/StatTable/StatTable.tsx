@@ -35,11 +35,11 @@ export function StatTableFillDataCell({
 }
 
 export function StatTableNumberDataCell({
-  number,
+  content,
 }: {
-  number: number;
+  content: ReactElement;
 }): ReactElement<HTMLTableHeaderCellElement> {
-  return <td className={numberDataCellCss}>{number}</td>;
+  return <td className={numberDataCellCss}>{content}</td>;
 }
 
 export function StatTableNumberHeader({

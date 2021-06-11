@@ -5,7 +5,7 @@ module.exports = async function createHomePages(graphql, reporter, createPage) {
     `
       {
         reviews: allReviewedMoviesJson(
-          sort: { fields: [sequence], order: DESC }
+          sort: { fields: [review_sequence], order: DESC }
         ) {
           nodes {
             imdb_id

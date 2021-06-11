@@ -65,7 +65,7 @@ export default function BarGraphStatTable<T>({
         <StatTableFillDataCell>
           <BarGraph value={value} maxValue={maxBar} />
         </StatTableFillDataCell>
-        <StatTableNumberDataCell number={value} />
+        <StatTableNumberDataCell content={<>{value}</>} />
       </StatTableRow>
     );
   });

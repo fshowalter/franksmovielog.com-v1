@@ -20,7 +20,7 @@ function buildPersonName(
 ): JSX.Element {
   if (person.slug) {
     return (
-      <TableLink to={`/watchlist/${type}/${person.slug}`}>
+      <TableLink to={`/watchlist/${type}/${person.slug}/`}>
         {person.fullName}
       </TableLink>
     );

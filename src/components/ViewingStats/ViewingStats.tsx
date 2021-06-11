@@ -61,7 +61,7 @@ export default function ViewingStats({
         />
         <MostWatchedPersonsStatTable
           collection={mostWatchedPerformers}
-          watchlistType="cast"
+          watchlistType="performers"
         />
         <MostWatchedPersonsStatTable
           collection={mostWatchedWriters}

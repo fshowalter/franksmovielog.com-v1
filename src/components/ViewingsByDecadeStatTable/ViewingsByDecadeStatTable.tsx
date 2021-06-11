@@ -13,7 +13,7 @@ export default function ViewingsByDecadeStatTable({
   return BarGraphStatTable<DecadeWithViewings>({
     heading: "Viewings By Release Decade",
     collection,
-    nameHeaderText: "Venue",
+    nameHeaderText: "Decade",
     valueHeaderText: "Viewings",
     nameFunc: (item) => item.decade,
     valueFunc: (item) => item.viewingCount,

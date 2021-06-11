@@ -13,6 +13,7 @@ import ProgressGraph from "../components/ProgressGraph";
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
+import StatsLink from "../components/StatsLink";
 import ToggleButton from "../components/ToggleButton";
 import { ReviewedMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
@@ -42,8 +43,6 @@ import {
   percentTotalsCss,
   quoteCss,
   rightCss,
-  statsIconCss,
-  statsLinkCss,
 } from "./viewings.module.scss";
 
 type Viewing = {
@@ -485,23 +484,7 @@ export default function ViewingsPage({
                   &ldquo;We have such sights to show you.&rdquo;
                 </span>
                 <br />
-                <Link to="/viewings/stats/" className={statsLinkCss}>
-                  Stats{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className={statsIconCss}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                    />
-                  </svg>
-                </Link>
+                <StatsLink to="/viewings/stats/" />
               </>
             }
           />

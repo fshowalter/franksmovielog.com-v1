@@ -13,6 +13,7 @@ import {
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
+import StatsLink from "../components/StatsLink";
 import ToggleButton from "../components/ToggleButton";
 import { ReviewedMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
@@ -306,6 +307,8 @@ export default function ReviewsPage({
             tagline={
               <>
                 I&apos;ve reviewed {state.allReviews.length} movies since 2020.
+                <br />
+                <StatsLink to="/reviews/stats/" />
               </>
             }
           />
@@ -420,8 +423,8 @@ export const query = graphql`
   query {
     reviews: allReviewedMoviesJson(sort: { fields: [sort_title], order: ASC }) {
       nodes {
-        sequence
-        date(formatString: "YYYY-MM-DD")
+        sequence: review_sequence
+        date: review_date(formatString: "YYYY-MM-DD")
         releaseDate: release_date
         imdbId: imdb_id
         title

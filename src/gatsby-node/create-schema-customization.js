@@ -490,6 +490,9 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
       type MostWatchedWritersByYearJsonMost_watched {
         slug: String
       }
+      type HighestRatedWritersJsonHighest_rated {
+        slug: String
+      }
     `,
     schema.buildObjectType(viewingsJson),
     schema.buildObjectType(watchlistMoviesJson),
