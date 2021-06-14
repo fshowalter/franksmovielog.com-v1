@@ -11,8 +11,6 @@ export const listItemTitleYearCss: string;
 export const pageHeaderCss: string;
 export const paginationCss: string;
 export const paginationInfoCss: string;
-export const percentCss: string;
-export const percentTotalsCss: string;
 export const quoteCss: string;
 export const rightCss: string;
 export const statsIconCss: string;

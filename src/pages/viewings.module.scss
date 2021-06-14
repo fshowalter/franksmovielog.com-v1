@@ -96,21 +96,6 @@
   padding: 0 var(--step-1) 1.5rem 0;
 }
 
-.percentCss {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  grid-area: percent;
-  margin: 0 auto;
-  width: 150px;
-}
-
-.percentTotalsCss {
-  color: var(--color-text-secondary);
-  font-size: 1rem;
-  margin-top: 1.5rem;
-}
-
 .quoteCss {
   color: var(--color-text-tertiary);
   display: block;

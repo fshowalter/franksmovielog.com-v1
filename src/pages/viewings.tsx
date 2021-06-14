@@ -5,19 +5,11 @@ import Fieldset from "../components/Fieldset";
 import FilterPageHeader from "../components/FilterPageHeader";
 import Label from "../components/Label";
 import Layout from "../components/Layout";
-import {
-  PaginationInfo,
-  PaginationWithButtons,
-} from "../components/Pagination";
-import ProgressGraph from "../components/ProgressGraph";
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
 import StatsLink from "../components/StatsLink";
-import ToggleButton from "../components/ToggleButton";
-import { ReviewedMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
-import slicePage from "../utils/slice-page";
 import {
   collator,
   sortNumberAsc,
@@ -37,26 +29,9 @@ import {
   listItemTitleLinkCss,
   listItemTitleYearCss,
   pageHeaderCss,
-  paginationCss,
-  paginationInfoCss,
-  percentCss,
-  percentTotalsCss,
   quoteCss,
   rightCss,
 } from "./viewings.module.scss";
-
-type Viewing = {
-  imdbId: string;
-  sequence: number;
-  sortTitle: string;
-  viewingDateSort: string;
-  viewingDate: string;
-  releaseDate: string;
-  title: string;
-  venue: string;
-  year: string;
-  reviewedMovie: ReviewedMovie;
-};
 
 /**
  * Renders the venue select options.
@@ -101,11 +76,11 @@ function ViewingTitle({
     </>
   );
 
-  if (viewing.reviewedMovie) {
+  if (viewing.slug) {
     title = (
       <Link
         rel="canonical"
-        to={`/reviews/${viewing.reviewedMovie.slug}/`}
+        to={`/reviews/${viewing.slug}/#${viewing.sequence}`}
         className={listItemTitleLinkCss}
       >
         {title}
@@ -136,10 +111,8 @@ function sortViewings(viewings: Viewing[], sortOrder: string) {
   const sortMap: Record<string, (a: Viewing, b: Viewing) => number> = {
     "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
     "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
-    "release-date-desc": (a, b) =>
-      sortStringDesc(a.releaseDate.toString(), b.releaseDate.toString()),
-    "release-date-asc": (a, b) =>
-      sortStringAsc(a.releaseDate.toString(), b.releaseDate.toString()),
+    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
+    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
   };
 
@@ -158,8 +131,8 @@ function minMaxReleaseYearsForViewings(viewings: Viewing[]) {
     })
     .sort();
 
-  const minYear = parseInt(releaseYears[0], 10);
-  const maxYear = parseInt(releaseYears[releaseYears.length - 1], 10);
+  const minYear = releaseYears[0];
+  const maxYear = releaseYears[releaseYears.length - 1];
 
   return [minYear, maxYear];
 }
@@ -170,22 +143,14 @@ type State = {
   allViewings: Viewing[];
   /** Viewings matching the current filters. */
   filteredViewings: Viewing[];
-  /** Viewings matching the current filters for the current page. */
-  viewingsForPage: Viewing[];
   /** The active filters. */
   filters: Record<string, (viewing: Viewing) => boolean>;
-  /** The current page. */
-  currentPage: number;
-  /** The number of reviews per page. */
-  perPage: number;
   /** The minimum year for the release date filter. */
   minYear: number;
   /** The maximum year for the release date filter. */
   maxYear: number;
   /** The active sort value. */
   sortValue: string;
-  /** True if reviewed items are currently hidden. */
-  hideReviewed: boolean;
 };
 
 /**
@@ -193,24 +158,14 @@ type State = {
  */
 function initState({ viewings }: { viewings: Viewing[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForViewings(viewings);
-  const currentPage = 1;
-  const perPage = 50;
 
   return {
     allViewings: viewings,
     filteredViewings: viewings,
-    viewingsForPage: slicePage<Viewing>({
-      collection: viewings,
-      pageToSlice: currentPage,
-      perPage,
-    }),
     filters: {},
-    currentPage,
-    perPage,
     minYear,
     maxYear,
     sortValue: "viewing-date-desc",
-    hideReviewed: false,
   };
 }
 
@@ -218,8 +173,6 @@ const FILTER_TITLE = "FILTER_TITLE";
 const FILTER_VENUE = "FILTER_VENUE";
 const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
 const SORT = "SORT";
-const CHANGE_PAGE = "CHANGE_PAGE";
-const TOGGLE_REVIEWED = "TOGGLE_REVIEWED";
 
 /** Action to filter by title. */
 interface FilterTitleAction {
@@ -249,32 +202,19 @@ interface SortAction {
   value: string;
 }
 
-/** Action to change page. */
-interface ChangePageAction {
-  type: typeof CHANGE_PAGE;
-  /** The page to change to. */
-  value: number;
-}
-
-/** Action to change page. */
-interface ToggleReviewedAction {
-  type: typeof TOGGLE_REVIEWED;
-}
-
 type ActionTypes =
   | FilterTitleAction
   | FilterReleaseYearAction
   | FilterVenueAction
-  | SortAction
-  | ChangePageAction
-  | ToggleReviewedAction;
+  | SortAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
  * @param state The current state.
  * @param action The action to apply.
  */
-function reducer(state: State, action: ActionTypes) {
+function reducer(state: State, action: ActionTypes): State {
+  // eslint-disable-line consistent-return
   let filters;
   let filteredViewings;
 
@@ -295,12 +235,6 @@ function reducer(state: State, action: ActionTypes) {
         ...state,
         filters,
         filteredViewings,
-        currentPage: 1,
-        viewingsForPage: slicePage<Viewing>({
-          collection: filteredViewings,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     case FILTER_VENUE: {
@@ -322,25 +256,13 @@ function reducer(state: State, action: ActionTypes) {
         ...state,
         filters,
         filteredViewings,
-        currentPage: 1,
-        viewingsForPage: slicePage<Viewing>({
-          collection: filteredViewings,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     case FILTER_RELEASE_YEAR: {
-      const [minYear, maxYear] = minMaxReleaseYearsForViewings(
-        state.allViewings
-      );
       filters = {
         ...state.filters,
         releaseYear: (viewing: Viewing) => {
-          const releaseYear = parseInt(viewing.year, 10);
-          if (action.values === [minYear, maxYear]) {
-            return true;
-          }
+          const releaseYear = viewing.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
           );
@@ -354,12 +276,6 @@ function reducer(state: State, action: ActionTypes) {
         ...state,
         filters,
         filteredViewings,
-        currentPage: 1,
-        viewingsForPage: slicePage<Viewing>({
-          collection: filteredViewings,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     case SORT: {
@@ -368,79 +284,10 @@ function reducer(state: State, action: ActionTypes) {
         ...state,
         sortValue: action.value,
         filteredViewings,
-        viewingsForPage: slicePage<Viewing>({
-          collection: filteredViewings,
-          pageToSlice: state.currentPage,
-          perPage: state.perPage,
-        }),
       };
     }
-    case CHANGE_PAGE: {
-      return {
-        ...state,
-        currentPage: action.value,
-        viewingsForPage: slicePage<Viewing>({
-          collection: state.filteredViewings,
-          pageToSlice: action.value,
-          perPage: state.perPage,
-        }),
-      };
-    }
-    case TOGGLE_REVIEWED: {
-      if (state.hideReviewed) {
-        filters = {
-          ...state.filters,
-        };
-        delete filters.reviewed;
-      } else {
-        filters = {
-          ...state.filters,
-          reviewed: (viewing: Viewing) => {
-            return !viewing.reviewedMovie;
-          },
-        };
-      }
-      filteredViewings = sortViewings(
-        applyFilters<Viewing>({ collection: state.allViewings, filters }),
-        state.sortValue
-      );
-      return {
-        ...state,
-        filters,
-        filteredViewings,
-        hideReviewed: !state.hideReviewed,
-        currentPage: 1,
-        viewingsForPage: slicePage<Viewing>({
-          collection: filteredViewings,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
-      };
-    }
-    default:
-      throw new Error();
+    // no default
   }
-}
-
-function ReviewedProgress({
-  total,
-  reviewed,
-}: {
-  total: number;
-  reviewed: number;
-}): JSX.Element {
-  return (
-    <>
-      <ProgressGraph total={total} complete={reviewed} />
-      <div className={percentTotalsCss}>
-        {reviewed}/{total} Reviewed
-      </div>
-    </>
-  );
-}
-
-function reviewedMovieCount(filteredViewings: Viewing[]): number {
-  return filteredViewings.filter((viewing) => viewing.reviewedMovie).length;
 }
 
 /**
@@ -460,8 +307,6 @@ export default function ViewingsPage({
   );
 
   const listHeader = useRef<HTMLDivElement>(null);
-
-  const reviewedCount = reviewedMovieCount(state.filteredViewings);
 
   return (
     <Layout>
@@ -498,17 +343,15 @@ export default function ViewingsPage({
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
             </Label>
-            <Label htmlFor="viewings-release-year-input">
-              Release Year
-              <RangeInput
-                id="viewings-release-year-input"
-                min={state.minYear}
-                max={state.maxYear}
-                onChange={(values) =>
-                  dispatch({ type: FILTER_RELEASE_YEAR, values })
-                }
-              />
-            </Label>
+            <RangeInput
+              id="viewings-release-year-input"
+              label="Release Year"
+              min={state.minYear}
+              max={state.maxYear}
+              onChange={(values) =>
+                dispatch({ type: FILTER_RELEASE_YEAR, values })
+              }
+            />
             <Label htmlFor="viewings-venue-input">
               Venue
               <SelectInput
@@ -548,33 +391,14 @@ export default function ViewingsPage({
               </SelectInput>
             </Label>
           </Fieldset>
-          <PaginationInfo
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredViewings.length}
-            className={paginationInfoCss}
-          />
-          <div className={percentCss}>
-            <ReviewedProgress
-              total={state.filteredViewings.length}
-              reviewed={reviewedCount}
-            />
-            {(reviewedCount > 0 || state.hideReviewed) && (
-              <ToggleButton
-                id="to_watch-toggle_reviewed"
-                onClick={() => dispatch({ type: TOGGLE_REVIEWED })}
-              >
-                {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-              </ToggleButton>
-            )}
-          </div>
         </div>
         <div className={rightCss} ref={listHeader}>
-          <ol className={listCss}>
-            {state.viewingsForPage.map((viewing, index) => {
+          <ol data-testid="viewings-list" className={listCss}>
+            {state.filteredViewings.map((viewing, index) => {
               return (
                 <li
                   value={viewing.sequence}
+                  key={viewing.sequence}
                   className={`${listItemCss} ${
                     index === 0 ? listItemFirstCss : ""
                   }`}
@@ -585,23 +409,22 @@ export default function ViewingsPage({
               );
             })}
           </ol>
-          <PaginationWithButtons
-            className={paginationCss}
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredViewings.length}
-            onClick={(newPage) => {
-              dispatch({ type: CHANGE_PAGE, value: newPage });
-              if (listHeader && listHeader.current) {
-                listHeader.current.scrollIntoView();
-              }
-            }}
-          />
         </div>
       </main>
     </Layout>
   );
 }
+
+type Viewing = {
+  title: string;
+  year: number;
+  releaseDate: string;
+  viewingDate: string;
+  sequence: number;
+  venue: string;
+  sortTitle: string;
+  slug: string | null;
+};
 
 interface PageQueryResult {
   viewing: {
@@ -615,15 +438,12 @@ export const pageQuery = graphql`
       nodes {
         sequence
         viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
-        releaseDate: release_date
-        imdbId: imdb_id
+        releaseDate: release_date(formatString: "YYYY-MM-DD")
         title
         venue
         year
         sortTitle: sort_title
-        reviewedMovie {
-          slug
-        }
+        slug
       }
     }
   }

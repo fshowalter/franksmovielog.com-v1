@@ -1,0 +1,1266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/viewings can filter by venue then show all 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1112"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-human-tornado-1976/#1112"
+        rel="canonical"
+      >
+        The Human Tornado
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1976
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Blu-ray
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      The Girl with the Dragon Tattoo
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        2011
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jan 5, 2012
+       via 
+      AMC Tysons Corner 16
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings can sort by release date with newest first 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      The Girl with the Dragon Tattoo
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        2011
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jan 5, 2012
+       via 
+      AMC Tysons Corner 16
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1112"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-human-tornado-1976/#1112"
+        rel="canonical"
+      >
+        The Human Tornado
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1976
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Blu-ray
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings can sort by release date with oldest first 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1112"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-human-tornado-1976/#1112"
+        rel="canonical"
+      >
+        The Human Tornado
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1976
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Blu-ray
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      The Girl with the Dragon Tattoo
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        2011
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jan 5, 2012
+       via 
+      AMC Tysons Corner 16
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings can sort by title 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      The Girl with the Dragon Tattoo
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        2011
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jan 5, 2012
+       via 
+      AMC Tysons Corner 16
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1112"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-human-tornado-1976/#1112"
+        rel="canonical"
+      >
+        The Human Tornado
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1976
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Blu-ray
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings can sort by viewing date with newest first 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1112"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-human-tornado-1976/#1112"
+        rel="canonical"
+      >
+        The Human Tornado
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1976
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Blu-ray
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      The Girl with the Dragon Tattoo
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        2011
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jan 5, 2012
+       via 
+      AMC Tysons Corner 16
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings can sort by viewing date with oldest first 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      The Girl with the Dragon Tattoo
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        2011
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jan 5, 2012
+       via 
+      AMC Tysons Corner 16
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1112"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-human-tornado-1976/#1112"
+        rel="canonical"
+      >
+        The Human Tornado
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1976
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Blu-ray
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings renders 1`] = `
+<DocumentFragment>
+  <a
+    class="skipLinkCss"
+    href="#content"
+  >
+    Skip to content
+  </a>
+  <div
+    class="containerCss"
+    id="top"
+  >
+    <header
+      class="mastHeaderCss"
+    >
+      <h1
+        class="mastTitleCss"
+      >
+        <a
+          href="/"
+        >
+          Frank's Movie Log
+        </a>
+      </h1>
+      <p
+        class="mastTaglineCss"
+      >
+        My life at the movies.
+      </p>
+      <form
+        accept-charset="UTF-8"
+        action="https://www.google.com/search"
+        class="mastSearchFormCss"
+        method="get"
+        role="search"
+      >
+        <label
+          class="mastSearchWrapCss"
+          for="search"
+        >
+          <div
+            class="srOnlyCss"
+          >
+            Search
+          </div>
+          <input
+            class="mastSearchInputCss"
+            id="search"
+            name="q"
+            placeholder="Search..."
+            type="text"
+          />
+          <input
+            name="q"
+            type="hidden"
+            value="site:www.franksmovielog.com"
+          />
+          <button
+            aria-label="Search"
+            class="mastSearchSubmitCss"
+            type="submit"
+            value="Search"
+          >
+            <svg
+              class="iconCss "
+              height="1em"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                fill-rule="evenodd"
+              />
+              <path
+                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </label>
+      </form>
+      <nav
+        class="mastNavCss"
+      >
+        <ul
+          class="mastNavListCss"
+        >
+          <li
+            class="mastNavListItemCss"
+          >
+            <a
+              class="mastNavLinkCss"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="mastNavListItemCss"
+          >
+            <a
+              class="mastNavLinkCss"
+              href="/about/"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="mastNavListItemCss"
+          >
+            <a
+              class="mastNavLinkCss"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="mastNavListItemCss"
+          >
+            <a
+              class="mastNavLinkCss"
+              href="/reviews/"
+            >
+              All Reviews
+            </a>
+          </li>
+          <li
+            class="mastNavListItemCss"
+          >
+            <a
+              class="mastNavLinkCss"
+              href="/viewings/"
+            >
+              Viewing Log
+            </a>
+          </li>
+          <li
+            class="mastNavListItemCss"
+          >
+            <a
+              class="mastNavLinkCss"
+              href="/watchlist/"
+            >
+              Watchlist
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="childrenCss"
+      id="content"
+    >
+      <main
+        class="containerCss"
+      >
+        <div
+          class="leftCss"
+        >
+          <header
+            class="pageHeaderCss"
+          >
+            <h2
+              class="headingCss"
+            >
+              Viewing Log
+            </h2>
+            <p
+              class="taglineCss"
+            >
+              I've watched 4 movies since 2012. 
+              <span
+                class="quoteCss"
+              >
+                “We have such sights to show you.”
+              </span>
+              <br />
+              <a
+                class="linkCss"
+                href="/viewings/stats/"
+              >
+                Stats 
+                <svg
+                  class="iconCss"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </a>
+            </p>
+          </header>
+          <fieldset
+            class="fieldsetCss filtersCss"
+          >
+            <legend>
+              Filter & Sort
+            </legend>
+            <label
+              class="labelCss"
+              for="viewings-title-input"
+            >
+              Title
+              <input
+                class="inputCss "
+                id="viewings-title-input"
+                placeholder="Enter all or part of a title"
+                type="text"
+              />
+            </label>
+            <div
+              class="containerCss"
+              id="viewings-release-year-input"
+            >
+              <div
+                id="viewings-release-year-input-label"
+              >
+                Release Year
+              </div>
+              <div
+                class="sliderCss"
+                style="position: relative;"
+              >
+                <div
+                  class="trackCss trackCss-0"
+                  style="position: absolute; left: 0px; right: 0px;"
+                />
+                <div
+                  class="trackCss trackCss-1"
+                  style="position: absolute; left: 0px; right: 0px;"
+                />
+                <div
+                  class="trackCss trackCss-2"
+                  style="position: absolute; left: 0px; right: 0px;"
+                />
+                <div
+                  aria-orientation="horizontal"
+                  aria-valuemax="2011"
+                  aria-valuemin="1976"
+                  aria-valuenow="1976"
+                  class="thumbCss thumbCss-0 "
+                  role="slider"
+                  style="position: absolute; z-index: 1; left: 0px;"
+                  tabindex="0"
+                />
+                <div
+                  aria-orientation="horizontal"
+                  aria-valuemax="2011"
+                  aria-valuemin="1976"
+                  aria-valuenow="2011"
+                  class="thumbCss thumbCss-1 "
+                  role="slider"
+                  style="position: absolute; z-index: 2; left: 0px;"
+                  tabindex="0"
+                />
+              </div>
+              <input
+                aria-labelledby="viewings-release-year-input-label"
+                class="yearInputCss"
+                max="2011"
+                min="1976"
+                step="1"
+                type="number"
+                value="1976"
+              />
+              <span
+                class="toCss"
+              >
+                 to 
+              </span>
+              <input
+                aria-labelledby="viewings-release-year-input-label"
+                class="yearInputCss rightCss"
+                max="2011"
+                min="1976"
+                step="1"
+                type="number"
+                value="2011"
+              />
+            </div>
+            <label
+              class="labelCss"
+              for="viewings-venue-input"
+            >
+              Venue
+              <select
+                class="selectInputCss "
+                id="viewings-venue-input"
+              >
+                <option
+                  value="All"
+                >
+                  All
+                </option>
+                <option
+                  value="AMC Tysons Corner 16"
+                >
+                  AMC Tysons Corner 16
+                </option>
+                <option
+                  value="Arrow Player"
+                >
+                  Arrow Player
+                </option>
+                <option
+                  value="Blu-ray"
+                >
+                  Blu-ray
+                </option>
+                <option
+                  value="Hulu"
+                >
+                  Hulu
+                </option>
+              </select>
+            </label>
+            <label
+              class="labelCss"
+              for="viewings-sort-input"
+            >
+              Order By
+              <select
+                class="selectInputCss "
+                id="viewings-sort-input"
+              >
+                <option
+                  value="viewing-date-desc"
+                >
+                  Viewing Date (Newest First)
+                </option>
+                <option
+                  value="viewing-date-asc"
+                >
+                  Viewing Date (Oldest First)
+                </option>
+                <option
+                  value="release-date-desc"
+                >
+                  Release Date (Newest First)
+                </option>
+                <option
+                  value="release-date-asc"
+                >
+                  Release Date (Oldest First)
+                </option>
+                <option
+                  value="title"
+                >
+                  Title
+                </option>
+              </select>
+            </label>
+          </fieldset>
+        </div>
+        <div
+          class="rightCss"
+        >
+          <ol
+            class="listCss"
+            data-testid="viewings-list"
+          >
+            <li
+              class="listItemCss listItemFirstCss"
+              value="1113"
+            >
+              <div
+                class="listItemTitleCss"
+              >
+                <a
+                  class="listItemTitleLinkCss"
+                  href="/reviews/weekend-at-bernies-1989/#1113"
+                  rel="canonical"
+                >
+                  Weekend at Bernie's 
+                  <span
+                    class="listItemTitleYearCss"
+                  >
+                    1989
+                  </span>
+                </a>
+              </div>
+              <div
+                class="listItemSlugCss"
+              >
+                Saturday Jun 12, 2021 via Hulu
+              </div>
+            </li>
+            <li
+              class="listItemCss "
+              value="1112"
+            >
+              <div
+                class="listItemTitleCss"
+              >
+                <a
+                  class="listItemTitleLinkCss"
+                  href="/reviews/the-human-tornado-1976/#1112"
+                  rel="canonical"
+                >
+                  The Human Tornado 
+                  <span
+                    class="listItemTitleYearCss"
+                  >
+                    1976
+                  </span>
+                </a>
+              </div>
+              <div
+                class="listItemSlugCss"
+              >
+                Thursday Jun 10, 2021 via Blu-ray
+              </div>
+            </li>
+            <li
+              class="listItemCss "
+              value="1111"
+            >
+              <div
+                class="listItemTitleCss"
+              >
+                <a
+                  class="listItemTitleLinkCss"
+                  href="/reviews/gone-with-the-pope-2010/#1111"
+                  rel="canonical"
+                >
+                  Gone with the Pope 
+                  <span
+                    class="listItemTitleYearCss"
+                  >
+                    2010
+                  </span>
+                </a>
+              </div>
+              <div
+                class="listItemSlugCss"
+              >
+                Thursday Jun 10, 2021 via Arrow Player
+              </div>
+            </li>
+            <li
+              class="listItemCss "
+              value="1"
+            >
+              <div
+                class="listItemTitleCss"
+              >
+                The Girl with the Dragon Tattoo 
+                <span
+                  class="listItemTitleYearCss"
+                >
+                  2011
+                </span>
+              </div>
+              <div
+                class="listItemSlugCss"
+              >
+                Thursday Jan 5, 2012 via AMC Tysons Corner 16
+              </div>
+            </li>
+          </ol>
+        </div>
+      </main>
+    </div>
+    <footer
+      class="footerCss"
+    >
+      <ul
+        class="footerNavListCss"
+      >
+        <li
+          class="footerNavListItemCss"
+        >
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="footerNavListItemCss"
+        >
+          <a
+            href="/about/"
+          >
+            About
+          </a>
+        </li>
+        <li
+          class="footerNavListItemCss"
+        >
+          <a
+            href="/how-i-grade/"
+          >
+            How I Grade
+          </a>
+        </li>
+        <li
+          class="footerNavListItemCss"
+        >
+          <a
+            href="/reviews/"
+          >
+            All Reviews
+          </a>
+        </li>
+        <li
+          class="footerNavListItemCss"
+        >
+          <a
+            href="/viewings/"
+          >
+            Viewing Log
+          </a>
+        </li>
+        <li
+          class="footerNavListItemCss"
+        >
+          <a
+            href="/watchlist/"
+          >
+            Watchlist
+          </a>
+        </li>
+      </ul>
+      <p
+        class="footerFairUseCss"
+      >
+        All stills used in accordance with the 
+        <a
+          href="http://www.copyright.gov/title17/92chap1.html#107"
+        >
+          Fair Use Law.
+        </a>
+      </p>
+      <div
+        class="srOnlyCss"
+      >
+        <a
+          href="#top"
+        >
+          To the top ↑
+        </a>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

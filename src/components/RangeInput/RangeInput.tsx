@@ -16,12 +16,15 @@ import {
  */
 export default function RangeFilter({
   id,
+  label,
   min,
   max,
   onChange,
 }: {
   /** A unique id for this form control. */
   id: string;
+  /** The label text. */
+  label: string;
   /** The lowest number in the range. */
   min: number;
   /** The highest number in the range. */
@@ -80,6 +83,7 @@ export default function RangeFilter({
 
   return (
     <div id={id} className={containerCss}>
+      <div id={`${id}-label`}>{label}</div>
       <ReactSlider
         value={state}
         max={max}
@@ -97,6 +101,7 @@ export default function RangeFilter({
         max={max}
         value={state[0]}
         step="1"
+        aria-labelledby={`${id}-label`}
         onChange={(e) => handleMinChange(e.target.value)}
         className={yearInputCss}
       />
@@ -106,6 +111,7 @@ export default function RangeFilter({
         value={state[1]}
         min={min}
         max={max}
+        aria-labelledby={`${id}-label`}
         onChange={(e) => handleMaxChange(e.target.value)}
         step="1"
         className={`${yearInputCss} ${rightCss}`}

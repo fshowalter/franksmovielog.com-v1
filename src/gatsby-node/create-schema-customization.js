@@ -195,21 +195,29 @@ const viewingsJson = {
   name: "ViewingsJson",
   interfaces: ["Node"],
   fields: {
-    reviewedMovie: {
-      type: "ReviewedMoviesJson",
-      connectionType: "ReviewedMoviesJson",
-      resolve: (source, args, context) => {
-        return context.nodeModel.runQuery({
-          query: {
-            filter: {
-              imdb_id: { eq: source.imdb_id },
-            },
-          },
-          type: "ReviewedMoviesJson",
-          firstOnly: true,
-        });
+    imdb_id: "String!",
+    title: "String!",
+    year: "Int!",
+    release_date: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
       },
     },
+    viewing_date: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+    },
+    viewing_year: "String!",
+    sequence: "Int!",
+    venue: "String!",
+    sort_title: "String!",
+    slug: "String",
+  },
+  extensions: {
+    infer: false,
   },
 };
 
