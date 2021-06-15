@@ -9,7 +9,5 @@ export const listItemSlugCss: string;
 export const listItemTitleCss: string;
 export const listItemTitleYearCss: string;
 export const pageHeaderCss: string;
-export const paginationCss: string;
-export const paginationInfoCss: string;
 export const rightCss: string;
 export const toggleGradesButtonCss: string;

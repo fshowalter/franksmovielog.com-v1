@@ -6,18 +6,12 @@ import FilterPageHeader from "../components/FilterPageHeader";
 import Grade from "../components/Grade";
 import Label from "../components/Label";
 import Layout from "../components/Layout";
-import {
-  PaginationInfo,
-  PaginationWithButtons,
-} from "../components/Pagination";
 import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
 import StatsLink from "../components/StatsLink";
 import ToggleButton from "../components/ToggleButton";
-import { ReviewedMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
-import slicePage from "../utils/slice-page";
 import {
   collator,
   sortNumberAsc,
@@ -37,18 +31,24 @@ import {
   listItemTitleCss,
   listItemTitleYearCss,
   pageHeaderCss,
-  paginationCss,
-  paginationInfoCss,
   rightCss,
   toggleGradesButtonCss,
 } from "./reviews.module.scss";
 
-function sortReviews(reviews: ReviewedMovie[], sortOrder: string) {
+function sortReviews(
+  reviews: ReviewedMovie[],
+  sortOrder:
+    | "title"
+    | "release-date-desc"
+    | "release-date-asc"
+    | "grade-asc"
+    | "grade-desc"
+) {
   const sortMap: Record<
     string,
     (a: ReviewedMovie, b: ReviewedMovie) => number
   > = {
-    title: (a, b) => collator.compare(a.title, b.title),
+    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     "grade-asc": (a, b) =>
@@ -58,10 +58,6 @@ function sortReviews(reviews: ReviewedMovie[], sortOrder: string) {
   };
 
   const comparer = sortMap[sortOrder];
-
-  if (!comparer) {
-    return reviews;
-  }
 
   return reviews.sort(comparer);
 }
@@ -77,8 +73,8 @@ function minMaxReleaseYearsForReviews(reviews: ReviewedMovie[]) {
     })
     .sort();
 
-  const minYear = parseInt(releaseYears[0], 10);
-  const maxYear = parseInt(releaseYears[releaseYears.length - 1], 10);
+  const minYear = releaseYears[0];
+  const maxYear = releaseYears[releaseYears.length - 1];
 
   return [minYear, maxYear];
 }
@@ -92,39 +88,29 @@ type State = {
   /** Reviews matching the current filters. */
   filteredReviews: ReviewedMovie[];
   /** Reviews matching the current filters for the current page. */
-  reviewsForPage: ReviewedMovie[];
-  /** The active filters. */
   filters: Record<string, (review: ReviewedMovie) => boolean>;
   /** The current page. */
-  currentPage: number;
-  /** The number of reviews per page. */
-  perPage: number;
-  /** The minimum year for the release date filter. */
   minYear: number;
   /** The maximum year for the release date filter. */
   maxYear: number;
   /** The active sort value. */
-  sortValue: string;
+  sortValue:
+    | "title"
+    | "release-date-desc"
+    | "release-date-asc"
+    | "grade-asc"
+    | "grade-desc";
   /** True to show grades vs. stars. */
   showGrades: boolean;
 };
 
 function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForReviews(reviews);
-  const currentPage = 1;
-  const perPage = 300;
 
   return {
     allReviews: reviews,
     filteredReviews: reviews,
-    reviewsForPage: slicePage<ReviewedMovie>({
-      collection: reviews,
-      pageToSlice: currentPage,
-      perPage,
-    }),
     filters: {},
-    currentPage,
-    perPage,
     minYear,
     maxYear,
     sortValue: "title",
@@ -135,7 +121,6 @@ function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
 const FILTER_TITLE = "FILTER_TITLE";
 const FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR";
 const SORT = "SORT";
-const CHANGE_PAGE = "CHANGE_PAGE";
 const TOGGLE_GRADES = "TOGGLE_GRADES";
 
 /** Action to filter by title. */
@@ -155,13 +140,12 @@ interface FilterReleaseYearAction {
 interface SortAction {
   type: typeof SORT;
   /** The sorter to apply. */
-  value: string;
-}
-
-interface ChangePageAction {
-  type: typeof CHANGE_PAGE;
-  /** The page to change to. */
-  value: number;
+  value:
+    | "title"
+    | "release-date-desc"
+    | "release-date-asc"
+    | "grade-asc"
+    | "grade-desc";
 }
 
 /** Action to toggle grades. */
@@ -173,8 +157,7 @@ type ActionTypes =
   | FilterTitleAction
   | FilterReleaseYearAction
   | SortAction
-  | ToggleGradesAction
-  | ChangePageAction;
+  | ToggleGradesAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -202,23 +185,14 @@ function reducer(state: State, action: ActionTypes): State {
         ...state,
         filters,
         filteredReviews,
-        currentPage: 1,
-        reviewsForPage: slicePage<ReviewedMovie>({
-          collection: filteredReviews,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     case FILTER_RELEASE_YEAR: {
-      const [minYear, maxYear] = minMaxReleaseYearsForReviews(state.allReviews);
       filters = {
         ...state.filters,
         releaseYear: (review: ReviewedMovie) => {
-          const releaseYear = parseInt(review.year, 10);
-          if (action.values === [minYear, maxYear]) {
-            return true;
-          }
+          const releaseYear = review.year;
+
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
           );
@@ -232,12 +206,6 @@ function reducer(state: State, action: ActionTypes): State {
         ...state,
         filters,
         filteredReviews,
-        currentPage: 1,
-        reviewsForPage: slicePage<ReviewedMovie>({
-          collection: filteredReviews,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     case SORT: {
@@ -246,22 +214,6 @@ function reducer(state: State, action: ActionTypes): State {
         ...state,
         sortValue: action.value,
         filteredReviews,
-        reviewsForPage: slicePage<ReviewedMovie>({
-          collection: filteredReviews,
-          pageToSlice: state.currentPage,
-          perPage: state.perPage,
-        }),
-      };
-    }
-    case CHANGE_PAGE: {
-      return {
-        ...state,
-        currentPage: action.value,
-        reviewsForPage: slicePage<ReviewedMovie>({
-          collection: state.filteredReviews,
-          pageToSlice: action.value,
-          perPage: state.perPage,
-        }),
       };
     }
     case TOGGLE_GRADES: {
@@ -270,8 +222,7 @@ function reducer(state: State, action: ActionTypes): State {
         showGrades: !state.showGrades,
       };
     }
-    default:
-      throw new Error();
+    // no default
   }
 }
 
@@ -314,32 +265,38 @@ export default function ReviewsPage({
           />
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="viewings-title-input">
+            <Label htmlFor="reviews-title-input">
               Title
               <DebouncedInput
-                id="viewings-title-input"
+                id="reviews-title-input"
                 placeholder="Enter all or part of a title"
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
             </Label>
-            <Label htmlFor="viewings-release-year-input">
-              Release Year
-              <RangeInput
-                id="viewings-release-year-input"
-                min={state.minYear}
-                max={state.maxYear}
-                onChange={(values) =>
-                  dispatch({ type: FILTER_RELEASE_YEAR, values })
-                }
-              />
-            </Label>
-            <Label htmlFor="viewings-sort-input">
+            <RangeInput
+              label="Release Year"
+              id="reviews-release-year-input"
+              min={state.minYear}
+              max={state.maxYear}
+              onChange={(values) =>
+                dispatch({ type: FILTER_RELEASE_YEAR, values })
+              }
+            />
+            <Label htmlFor="reviews-sort-input">
               Order By
               <SelectInput
                 value={state.sortValue}
-                id="viewings-sort-input"
+                id="reviews-sort-input"
                 onChange={(e) =>
-                  dispatch({ type: SORT, value: e.target.value })
+                  dispatch({
+                    type: SORT,
+                    value: e.target.value as
+                      | "title"
+                      | "release-date-desc"
+                      | "release-date-asc"
+                      | "grade-asc"
+                      | "grade-desc",
+                  })
                 }
               >
                 <option value="title">Title</option>
@@ -354,12 +311,6 @@ export default function ReviewsPage({
               </SelectInput>
             </Label>
           </Fieldset>
-          <PaginationInfo
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredReviews.length}
-            className={paginationInfoCss}
-          />
           <div className={toggleGradesButtonCss}>
             <ToggleButton
               id="show_grade-toggle"
@@ -370,10 +321,10 @@ export default function ReviewsPage({
           </div>
         </div>
         <div className={rightCss}>
-          <ol className={listCss}>
-            {state.reviewsForPage.map((review) => {
+          <ol data-testid="reviews-list" className={listCss}>
+            {state.filteredReviews.map((review) => {
               return (
-                <li className={listItemCss}>
+                <li className={listItemCss} key={review.imdbId}>
                   <Link
                     to={`/reviews/${review.slug}/`}
                     className={listItemTitleCss}
@@ -398,15 +349,6 @@ export default function ReviewsPage({
               );
             })}
           </ol>
-          <PaginationWithButtons
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredReviews.length}
-            onClick={(newPage) =>
-              dispatch({ type: CHANGE_PAGE, value: newPage })
-            }
-            className={paginationCss}
-          />
         </div>
       </main>
     </Layout>
@@ -418,6 +360,19 @@ interface PageQueryResult {
     nodes: ReviewedMovie[];
   };
 }
+
+type ReviewedMovie = {
+  sequence: number;
+  date: string;
+  releaseDate: string;
+  lastReviewGrade: string;
+  lastReviewGradeValue: number;
+  slug: string;
+  imdbId: string;
+  title: string;
+  year: number;
+  sortTitle: string;
+};
 
 export const query = graphql`
   query {
@@ -431,7 +386,7 @@ export const query = graphql`
         year
         lastReviewGrade: last_review_grade
         lastReviewGradeValue: last_review_grade_value
-        sort_title
+        sortTitle: sort_title
         slug
       }
     }

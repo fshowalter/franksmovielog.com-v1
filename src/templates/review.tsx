@@ -317,12 +317,8 @@ export const pageQuery = graphql`
       lastReviewGrade: last_review_grade
       lastReviewGradeValue: last_review_grade_value
       akaTitles: aka_titles
-      principalCast: principal_cast {
-        name: full_name
-      }
-      directors {
-        name: full_name
-      }
+      principalCastNames: principal_cast_names
+      directors: director_names
       reviews {
         frontmatter {
           date(formatString: "dddd MMM D, YYYY")

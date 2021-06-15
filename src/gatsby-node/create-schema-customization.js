@@ -244,6 +244,9 @@ const watchlistMoviesJson = {
       },
     },
   },
+  extensions: {
+    infer: false,
+  },
 };
 
 const markdownRemark = {
@@ -329,6 +332,26 @@ const reviewedMoviesJson = {
   name: "ReviewedMoviesJson",
   interfaces: ["Node"],
   fields: {
+    imdb_id: "String!",
+    title: "String!",
+    original_title: "String",
+    year: "Int!",
+    release_date: "String!",
+    review_sequence: "Int!",
+    review_date: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+    },
+    last_review_grade: "String!",
+    last_review_grade_value: "Float!",
+    principal_cast_ids: "String",
+    sort_title: "String!",
+    slug: "String",
+    runtime_minutes: "Int!",
+    director_names: "[String!]!",
+    principal_cast_names: "[String!]!",
     reviews: {
       type: "[MarkdownRemark]",
       resolve: (source, args, context) => {
@@ -429,6 +452,9 @@ const reviewedMoviesJson = {
         return watchlist;
       },
     },
+  },
+  extensions: {
+    infer: false,
   },
 };
 
