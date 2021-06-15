@@ -198,12 +198,7 @@ const viewingsJson = {
     imdb_id: "String!",
     title: "String!",
     year: "Int!",
-    release_date: {
-      type: "Date!",
-      extensions: {
-        dateformat: {},
-      },
-    },
+    release_date: "String!",
     viewing_date: {
       type: "Date!",
       extensions: {
@@ -225,19 +220,27 @@ const watchlistMoviesJson = {
   name: "WatchlistMoviesJson",
   interfaces: ["Node"],
   fields: {
-    reviewedMovie: {
-      type: "ReviewedMoviesJson",
-      connectionType: "ReviewedMoviesJson",
+    imdb_id: "String!",
+    title: "String!",
+    year: "Int!",
+    sort_title: "String!",
+    release_date: "String!",
+    director_names: "[String!]!",
+    performer_names: "[String!]!",
+    writer_names: "[String!]!",
+    collection_names: "[String!]!",
+    slug: "String!",
+    reviews_slug: "String",
+    last_review_grade: "String",
+    backdrop: {
+      type: "File",
       resolve: (source, args, context) => {
-        return context.nodeModel.runQuery({
-          query: {
-            filter: {
-              imdb_id: { eq: source.imdb_id },
-            },
-          },
-          type: "ReviewedMoviesJson",
-          firstOnly: true,
-        });
+        if (!source) {
+          return null;
+        }
+
+        const assetPath = assetPathForSlug(source.reviews_slug, "backdrop");
+        return findFileNodeByAbsolutePath(context.nodeModel, assetPath);
       },
     },
   },

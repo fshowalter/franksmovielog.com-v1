@@ -1,5 +1,145 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`/viewings can filter by release year 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings can filter by title 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1112"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-human-tornado-1976/#1112"
+        rel="canonical"
+      >
+        The Human Tornado
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1976
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Blu-ray
+    </div>
+  </li>
+</ol>
+`;
+
+exports[`/viewings can filter by venue 1`] = `
+<ol
+  class="listCss"
+  data-testid="viewings-list"
+>
+  <li
+    class="listItemCss listItemFirstCss"
+    value="1111"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/gone-with-the-pope-2010/#1111"
+        rel="canonical"
+      >
+        Gone with the Pope
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          2010
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Thursday Jun 10, 2021
+       via 
+      Arrow Player
+    </div>
+  </li>
+</ol>
+`;
+
 exports[`/viewings can filter by venue then show all 1`] = `
 <ol
   class="listCss"
@@ -125,35 +265,6 @@ exports[`/viewings can sort by release date with newest first 1`] = `
 >
   <li
     class="listItemCss listItemFirstCss"
-    value="1113"
-  >
-    <div
-      class="listItemTitleCss"
-    >
-      <a
-        class="listItemTitleLinkCss"
-        href="/reviews/weekend-at-bernies-1989/#1113"
-        rel="canonical"
-      >
-        Weekend at Bernie's
-         
-        <span
-          class="listItemTitleYearCss"
-        >
-          1989
-        </span>
-      </a>
-    </div>
-    <div
-      class="listItemSlugCss"
-    >
-      Saturday Jun 12, 2021
-       via 
-      Hulu
-    </div>
-  </li>
-  <li
-    class="listItemCss "
     value="1"
   >
     <div
@@ -202,6 +313,35 @@ exports[`/viewings can sort by release date with newest first 1`] = `
       Thursday Jun 10, 2021
        via 
       Arrow Player
+    </div>
+  </li>
+  <li
+    class="listItemCss "
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
     </div>
   </li>
   <li
@@ -272,6 +412,35 @@ exports[`/viewings can sort by release date with oldest first 1`] = `
   </li>
   <li
     class="listItemCss "
+    value="1113"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/weekend-at-bernies-1989/#1113"
+        rel="canonical"
+      >
+        Weekend at Bernie's
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1989
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Saturday Jun 12, 2021
+       via 
+      Hulu
+    </div>
+  </li>
+  <li
+    class="listItemCss "
     value="1111"
   >
     <div
@@ -320,35 +489,6 @@ exports[`/viewings can sort by release date with oldest first 1`] = `
       Thursday Jan 5, 2012
        via 
       AMC Tysons Corner 16
-    </div>
-  </li>
-  <li
-    class="listItemCss "
-    value="1113"
-  >
-    <div
-      class="listItemTitleCss"
-    >
-      <a
-        class="listItemTitleLinkCss"
-        href="/reviews/weekend-at-bernies-1989/#1113"
-        rel="canonical"
-      >
-        Weekend at Bernie's
-         
-        <span
-          class="listItemTitleYearCss"
-        >
-          1989
-        </span>
-      </a>
-    </div>
-    <div
-      class="listItemSlugCss"
-    >
-      Saturday Jun 12, 2021
-       via 
-      Hulu
     </div>
   </li>
 </ol>

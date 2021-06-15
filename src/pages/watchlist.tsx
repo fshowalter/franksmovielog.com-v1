@@ -14,7 +14,6 @@ import RangeInput from "../components/RangeInput";
 import SelectInput from "../components/SelectInput";
 import Seo from "../components/Seo";
 import ToggleButton from "../components/ToggleButton";
-import { Collection, Person, WatchlistMovie } from "../types";
 import applyFilters from "../utils/apply-filters";
 import slicePage from "../utils/slice-page";
 import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
@@ -53,12 +52,16 @@ function WatchlistOptions({
   /** The watchlist titles to parse for persons or collections. */
   movies: WatchlistMovie[];
   /** The key name to parse. */
-  keyName: "collections" | "directors" | "performers" | "writers";
+  keyName:
+    | "collectionNames"
+    | "directorNames"
+    | "performerNames"
+    | "writerNames";
 }) {
   const names = [
     ...new Set(
       movies.flatMap((movie) => {
-        return movie[keyName].map((keyValue) => keyValue.name);
+        return movie[keyName];
       })
     ),
   ].sort((a, b) => collator.compare(a, b));
@@ -92,11 +95,11 @@ function WatchlistMovieTitle({
     </>
   );
 
-  if (movie.reviewedMovie) {
+  if (movie.reviewsSlug) {
     title = (
       <Link
         rel="canonical"
-        to={`/reviews/${movie.reviewedMovie.slug}/`}
+        to={`/reviews/${movie.reviewsSlug}/`}
         className={listItemTitleLinkCss}
       >
         {title}
@@ -112,7 +115,7 @@ function WatchlistMovieCheckMark({
 }: {
   movie: WatchlistMovie;
 }): JSX.Element {
-  if (movie.reviewedMovie) {
+  if (movie.reviewsSlug) {
     return (
       <svg
         className={listItemCheckmarkCss}
@@ -140,12 +143,13 @@ function WatchlistMovieCheckMark({
  * @param people The people to format.
  * @param suffix The suffix to append to the formed sentence.
  */
-function formatPeople(people: Person[], suffix: string | string[]): string[] {
-  if (people.length === 0) {
+function formatPeopleNames(
+  names: string[],
+  suffix: string | string[]
+): string[] {
+  if (names.length === 0) {
     return [""];
   }
-
-  const names = people.map((person) => person.name);
 
   let append;
 
@@ -163,11 +167,10 @@ function formatPeople(people: Person[], suffix: string | string[]): string[] {
  * commas and conjunction if necessary.
  * @param collections The collections to format.
  */
-function formatCollections(collections: Collection[]): string | string[] {
-  if (collections.length === 0) {
+function formatCollectionNames(names: string[]): string | string[] {
+  if (names.length === 0) {
     return "";
   }
-  const names = collections.map((collection) => collection.name);
 
   const suffix = names.length > 1 ? "collections" : "collection";
 
@@ -179,13 +182,13 @@ function formatCollections(collections: Collection[]): string | string[] {
  */
 function WatchlistMovieSlug({ movie }: { movie: WatchlistMovie }): JSX.Element {
   const credits = [
-    ...formatPeople(movie.directors, "directed"),
-    ...formatPeople(movie.performers, "performed"),
-    ...formatPeople(movie.writers, [
+    ...formatPeopleNames(movie.directorNames, "directed"),
+    ...formatPeopleNames(movie.performerNames, "performed"),
+    ...formatPeopleNames(movie.writerNames, [
       "has a writing credit",
       "have writing credits",
     ]),
-    ...formatCollections(movie.collections),
+    ...formatCollectionNames(movie.collectionNames),
   ];
 
   return (
@@ -223,8 +226,8 @@ function minMaxReleaseYearsForMovies(movies: WatchlistMovie[]) {
     })
     .sort();
 
-  const minYear = parseInt(releaseYears[0], 10);
-  const maxYear = parseInt(releaseYears[releaseYears.length - 1], 10);
+  const minYear = releaseYears[0];
+  const maxYear = releaseYears[releaseYears.length - 1];
 
   return [minYear, maxYear];
 }
@@ -402,13 +405,7 @@ function reducer(state: State, action: ActionTypes): State {
             return true;
           }
 
-          if (movie.directors.length === 0) {
-            return false;
-          }
-
-          return movie.directors.some(
-            (director) => director.name === action.value
-          );
+          return movie.directorNames.includes(action.value);
         },
       };
       filteredMovies = sortMovies(
@@ -435,13 +432,7 @@ function reducer(state: State, action: ActionTypes): State {
             return true;
           }
 
-          if (movie.performers.length === 0) {
-            return false;
-          }
-
-          return movie.performers.some(
-            (performer) => performer.name === action.value
-          );
+          return movie.performerNames.includes(action.value);
         },
       };
       filteredMovies = sortMovies(
@@ -468,11 +459,7 @@ function reducer(state: State, action: ActionTypes): State {
             return true;
           }
 
-          if (movie.writers.length === 0) {
-            return false;
-          }
-
-          return movie.writers.some((writer) => writer.name === action.value);
+          return movie.writerNames.includes(action.value);
         },
       };
       filteredMovies = sortMovies(
@@ -499,13 +486,7 @@ function reducer(state: State, action: ActionTypes): State {
             return true;
           }
 
-          if (movie.collections.length === 0) {
-            return false;
-          }
-
-          return movie.collections.some(
-            (collection) => collection.name === action.value
-          );
+          return movie.collectionNames.includes(action.value);
         },
       };
       filteredMovies = sortMovies(
@@ -525,14 +506,10 @@ function reducer(state: State, action: ActionTypes): State {
       };
     }
     case FILTER_RELEASE_YEAR: {
-      const [minYear, maxYear] = minMaxReleaseYearsForMovies(state.allMovies);
       filters = {
         ...state.filters,
         releaseYear: (movie: WatchlistMovie) => {
-          const releaseYear = parseInt(movie.year, 10);
-          if (action.values === [minYear, maxYear]) {
-            return true;
-          }
+          const releaseYear = movie.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
           );
@@ -588,7 +565,7 @@ function reducer(state: State, action: ActionTypes): State {
         filters = {
           ...state.filters,
           reviewed: (movie: WatchlistMovie) => {
-            return movie.reviewedMovie === null;
+            return movie.reviewsSlug === null;
           },
         };
       }
@@ -609,8 +586,7 @@ function reducer(state: State, action: ActionTypes): State {
         }),
       };
     }
-    default:
-      throw new Error();
+    // no default
   }
 }
 
@@ -632,7 +608,7 @@ function WatchlistProgress({
 }
 
 function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
-  const reviewedMovies = filteredMovies.filter((m) => m.reviewedMovie);
+  const reviewedMovies = filteredMovies.filter((m) => m.reviewsSlug);
 
   return reviewedMovies.length;
 }
@@ -766,7 +742,7 @@ export default function WatchlistPage({
               >
                 <WatchlistOptions
                   movies={state.allMovies}
-                  keyName="directors"
+                  keyName="directorNames"
                 />
               </SelectInput>
             </Label>
@@ -783,7 +759,7 @@ export default function WatchlistPage({
               >
                 <WatchlistOptions
                   movies={state.allMovies}
-                  keyName="performers"
+                  keyName="performerNames"
                 />
               </SelectInput>
             </Label>
@@ -798,7 +774,10 @@ export default function WatchlistPage({
                   })
                 }
               >
-                <WatchlistOptions movies={state.allMovies} keyName="writers" />
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="writerNames"
+                />
               </SelectInput>
             </Label>
             <Label htmlFor="to_watch-collection-input">
@@ -814,21 +793,19 @@ export default function WatchlistPage({
               >
                 <WatchlistOptions
                   movies={state.allMovies}
-                  keyName="collections"
+                  keyName="collectionNames"
                 />
               </SelectInput>
             </Label>
-            <Label htmlFor="to_watch-release-year-input">
-              Release Year
-              <RangeInput
-                id="to_watch-release-year-input"
-                min={state.minYear}
-                max={state.maxYear}
-                onChange={(values) =>
-                  dispatch({ type: FILTER_RELEASE_YEAR, values })
-                }
-              />
-            </Label>
+            <RangeInput
+              id="to_watch-release-year-input"
+              label="Release Year"
+              min={state.minYear}
+              max={state.maxYear}
+              onChange={(values) =>
+                dispatch({ type: FILTER_RELEASE_YEAR, values })
+              }
+            />
             <Label htmlFor="to_watch-sort-input">
               Order By
               <SelectInput
@@ -869,10 +846,11 @@ export default function WatchlistPage({
           </div>
         </div>
         <div ref={listHeader} className={rightCss}>
-          <ol className={listCss}>
+          <ol data-testid="watchlist-list" className={listCss}>
             {state.moviesForPage.map((movie, index) => {
               return (
                 <li
+                  key={movie.imdbId}
                   className={`${listItemCss} ${
                     index === 0 ? listItemFirstCss : ""
                   }`}
@@ -891,9 +869,9 @@ export default function WatchlistPage({
             numberOfItems={state.filteredMovies.length}
             onClick={(newPage) => {
               dispatch({ type: CHANGE_PAGE, value: newPage });
-              if (listHeader && listHeader.current) {
+              listHeader &&
+                listHeader.current &&
                 listHeader.current.scrollIntoView();
-              }
             }}
           />
         </div>
@@ -901,6 +879,19 @@ export default function WatchlistPage({
     </Layout>
   );
 }
+
+type WatchlistMovie = {
+  collectionNames: string[];
+  directorNames: string[];
+  imdbId: string;
+  performerNames: string[];
+  title: string;
+  writerNames: string[];
+  year: number;
+  releaseDate: string;
+  sortTitle: string;
+  reviewsSlug: string | null;
+};
 
 interface PageQueryResult {
   watchlist: {
@@ -910,28 +901,20 @@ interface PageQueryResult {
 
 export const pageQuery = graphql`
   query {
-    watchlist: allWatchlistMoviesJson(sort: { fields: [year], order: ASC }) {
+    watchlist: allWatchlistMoviesJson(
+      sort: { fields: [release_date], order: ASC }
+    ) {
       nodes {
         imdbId: imdb_id
         title
         year
         releaseDate: release_date
         sortTitle: sort_title
-        reviewedMovie {
-          slug
-        }
-        directors {
-          name
-        }
-        performers {
-          name
-        }
-        writers {
-          name
-        }
-        collections {
-          name
-        }
+        reviewsSlug: reviews_slug
+        directorNames: director_names
+        performerNames: performer_names
+        writerNames: writer_names
+        collectionNames: collection_names
       }
     }
   }

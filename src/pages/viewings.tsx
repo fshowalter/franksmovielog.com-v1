@@ -438,7 +438,7 @@ export const pageQuery = graphql`
       nodes {
         sequence
         viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
-        releaseDate: release_date(formatString: "YYYY-MM-DD")
+        releaseDate: release_date
         title
         venue
         year

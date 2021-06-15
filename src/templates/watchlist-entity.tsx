@@ -465,21 +465,19 @@ export const pageQuery = graphql`
         imdbId: imdb_id
         title
         year
-        reviewedMovie {
-          lastReviewGrade: last_review_grade
-          slug
-          backdrop {
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                formats: [JPG, AVIF]
-                quality: 80
-                breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
-                width: 321
-                placeholder: TRACED_SVG
-                sizes: "(max-width: 379px) 321px, (max-width: 555px) 238px, (max-width: 1279) 184px, (max-width: 1343px) 238px, 151px"
-              )
-            }
+        lastReviewGrade: last_review_grade
+        slug
+        backdrop {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [JPG, AVIF]
+              quality: 80
+              breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
+              width: 321
+              placeholder: TRACED_SVG
+              sizes: "(max-width: 379px) 321px, (max-width: 555px) 238px, (max-width: 1279) 184px, (max-width: 1343px) 238px, 151px"
+            )
           }
         }
       }

@@ -60,11 +60,18 @@ export default function RangeFilter({
     if (!Array.isArray(values)) {
       return;
     }
+    console.log(values);
+
     setState([...values]);
   };
 
   const handleMinChange = (value: string) => {
     const newState: [number, number] = [parseInt(value, 10), state[1]];
+
+    if (isNaN(newState[0])) {
+      newState[0] = 0;
+    }
+
     setState(newState);
 
     if (valuesAreValid(newState)) {
@@ -74,6 +81,11 @@ export default function RangeFilter({
 
   const handleMaxChange = (value: string) => {
     const newState: [number, number] = [state[0], parseInt(value, 10)];
+
+    if (isNaN(newState[1])) {
+      newState[1] = 0;
+    }
+
     setState(newState);
 
     if (valuesAreValid(newState)) {
