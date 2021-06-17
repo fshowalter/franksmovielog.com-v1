@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useRef } from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
@@ -8,7 +8,6 @@ import { PaginationWithLinks } from "../components/Pagination";
 import RenderedMarkdown from "../components/RenderedMarkdown";
 import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
-import { MarkdownReview } from "../types";
 import toSentenceArray from "../utils/to-sentence-array";
 import {
   articleBodyCss,
@@ -69,6 +68,7 @@ export default function HomeTemplate({
 
             return (
               <li
+                key={review.frontmatter.sequence}
                 value={listItemValue}
                 className={`${listItemCss} ${isWide ? wideCss : ""}`}
               >
@@ -101,15 +101,8 @@ export default function HomeTemplate({
                       className={reviewGradeCss}
                     />
                     <p className={reviewCreditsCss}>
-                      Directed by{" "}
-                      {toSentenceArray(
-                        movie.directors.map((person) => person.name)
-                      )}
-                      . Starring{" "}
-                      {toSentenceArray(
-                        movie.principalCast.map((person) => person.name)
-                      )}
-                      .
+                      Directed by {toSentenceArray(movie.directorNames)}.
+                      Starring {toSentenceArray(movie.principalCastNames)}.
                     </p>
                   </header>
                   <RenderedMarkdown
@@ -152,9 +145,49 @@ export interface PageContext {
   currentPage: number;
 }
 
+interface WatchlistEntity {
+  name: string;
+  slug: string;
+  avatar: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+}
+
+interface Movie {
+  title: string;
+  year: string;
+  principalCastNames: string[];
+  directorNames: string[];
+  backdrop: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+  watchlist: {
+    performers: WatchlistEntity[];
+    directors: WatchlistEntity[];
+    writers: WatchlistEntity[];
+    collections: WatchlistEntity[];
+  };
+}
+
+interface Review {
+  frontmatter: {
+    imdbId: string;
+    slug: string;
+    grade: string;
+    date: string;
+    sequence: number;
+  };
+  linkedExcerpt: string;
+  reviewedMovie: Movie;
+}
+
 export interface PageQueryResult {
   update: {
-    nodes: MarkdownReview[];
+    nodes: Review[];
   };
 }
 
@@ -172,19 +205,14 @@ export const pageQuery = graphql`
           date(formatString: "DD MMM, YYYY")
           grade
           slug
-          title
           sequence
           imdbId: imdb_id
         }
         reviewedMovie {
           title
           year
-          principalCast: principal_cast {
-            name: full_name
-          }
-          directors {
-            name: full_name
-          }
+          principalCastNames: principal_cast_names
+          directorNames: director_names
           backdrop {
             childImageSharp {
               gatsbyImageData(

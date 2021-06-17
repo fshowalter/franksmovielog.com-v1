@@ -1,15 +1,15 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useReducer, useRef } from "react";
-import DebouncedInput from "../components/DebouncedInput";
-import Fieldset from "../components/Fieldset";
-import FilterPageHeader from "../components/FilterPageHeader";
-import Label from "../components/Label";
-import Layout from "../components/Layout";
-import SelectInput from "../components/SelectInput";
-import Seo from "../components/Seo";
-import applyFilters from "../utils/apply-filters";
-import { sortNumberDesc, sortStringAsc } from "../utils/sort-utils";
+import React, { useReducer } from "react";
+import DebouncedInput from "../../components/DebouncedInput";
+import Fieldset from "../../components/Fieldset";
+import FilterPageHeader from "../../components/FilterPageHeader";
+import Label from "../../components/Label";
+import Layout from "../../components/Layout";
+import SelectInput from "../../components/SelectInput";
+import Seo from "../../components/Seo";
+import applyFilters from "../../utils/apply-filters";
+import { sortNumberDesc, sortStringAsc } from "../../utils/sort-utils";
 import {
   containerCss,
   defaultImageCss,
@@ -27,11 +27,13 @@ import {
   progressRingCss,
   progressStatsCss,
   rightCss,
-} from "./watchlist-type.module.scss";
+} from "./performers.module.scss";
 
-function sortEntities(titles: WatchlistEntity[], sortOrder: string) {
+type SortValue = "name" | "reviews";
+
+function sortEntities(titles: WatchlistEntity[], sortOrder: SortValue) {
   const sortMap: Record<
-    string,
+    SortValue,
     (a: WatchlistEntity, b: WatchlistEntity) => number
   > = {
     name: (a, b) => sortStringAsc(a.name, b.name),
@@ -39,10 +41,6 @@ function sortEntities(titles: WatchlistEntity[], sortOrder: string) {
   };
 
   const comparer = sortMap[sortOrder];
-
-  if (!comparer) {
-    return titles;
-  }
 
   return titles.sort(comparer);
 }
@@ -58,7 +56,7 @@ type State = {
   /** The active filters. */
   filters: Record<string, (entity: WatchlistEntity) => boolean>;
   /** The active sort value. */
-  sortValue: string;
+  sortValue: SortValue;
 };
 
 function initState({ entities }: { entities: WatchlistEntity[] }): State {
@@ -92,24 +90,6 @@ function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
   );
 }
 
-/**
- * Renders the description for the current entity type.
- */
-function buildDescription(entityType: string): string {
-  switch (entityType) {
-    case "director":
-      return `"Drama is life with the dull bits cut out."`;
-    case "performer":
-      return `"Talk low, talk slow, and don't talk too much."`;
-    case "writer":
-      return `"It's not a lie. It's a gift for fiction."`;
-    case "collection":
-      return `"Round up the usual suspects."`;
-    default:
-      throw new Error(`Unknown entityType parameter: ${entityType}`);
-  }
-}
-
 const FILTER_NAME = "FILTER_NAME";
 const SORT = "SORT";
 
@@ -123,7 +103,7 @@ interface FilterNameAction {
 interface SortAction {
   type: typeof SORT;
   /** The sorter to apply. */
-  value: string;
+  value: SortValue;
 }
 
 type ActionTypes = FilterNameAction | SortAction;
@@ -167,24 +147,17 @@ function reducer(state: State, action: ActionTypes): State {
         filteredEntities,
       };
     }
-    default:
-      throw new Error(`Unknown action type.`);
+    // no default
   }
 }
 
-function ListItem({
-  entityType,
-  entity,
-}: {
-  entityType: string;
-  entity: WatchlistEntity;
-}): JSX.Element {
+function ListItem({ entity }: { entity: WatchlistEntity }): JSX.Element {
   if (entity.avatar) {
     return (
       <li className={listItemCss}>
         <Link
           className={listItemLinkCss}
-          to={`/watchlist/${entityType}s/${entity.slug}/`}
+          to={`/watchlist/performers/${entity.slug}/`}
         >
           {entity.avatar && (
             <GatsbyImage
@@ -195,12 +168,12 @@ function ListItem({
           )}
         </Link>
         <div className={listItemTitleCss}>
-          <Link to={`/watchlist/${entityType}s/${entity.slug}/`}>
+          <Link to={`/watchlist/performers/${entity.slug}/`}>
             {entity.name}
           </Link>
         </div>
         <Link
-          to={`/watchlist/${entityType}s/${entity.slug}/`}
+          to={`/watchlist/performers/${entity.slug}/`}
           className={progressRingCss}
         >
           <Progress entity={entity} />
@@ -237,13 +210,11 @@ function ListItem({
 }
 
 /**
- * Renders a watchlist page for a given person.
+ * Renders a page for watchlist performers.
  */
-export default function WatchlistTypeTemplate({
-  pageContext,
+export default function WatchlistPerformerPage({
   data,
 }: {
-  pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
@@ -254,16 +225,11 @@ export default function WatchlistTypeTemplate({
     initState
   );
 
-  const listHeader = useRef<HTMLDivElement>(null);
-  const pageTitle = `${pageContext.entityType[0].toUpperCase()}${pageContext.entityType.slice(
-    1
-  )}`;
-
   return (
     <Layout>
       <Seo
-        pageTitle={`Watchlist ${pageTitle}s`}
-        description={`A sortable and filterable list of watchlist ${pageContext.entityType}s.`}
+        pageTitle="Watchlist Performers"
+        description="A sortable and filterable list of watchlist performers."
         image={null}
         article={false}
       />
@@ -273,28 +239,28 @@ export default function WatchlistTypeTemplate({
             className={pageHeaderCss}
             heading={
               <>
-                <span className={pageHeaderSubCss}>Watchlist</span> {pageTitle}s
+                <span className={pageHeaderSubCss}>Watchlist</span> Performers
               </>
             }
-            tagline={buildDescription(pageContext.entityType)}
+            tagline="Talk low, talk slow, and don't talk too much."
           />
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="watchlist-people-title-input">
-              Title
+            <Label htmlFor="watchlist-type-name-input">
+              Name
               <DebouncedInput
-                id="watchlist-people-name-input"
+                id="watchlist-type-name-input"
                 placeholder="Enter all or part of a name"
                 onChange={(value) => dispatch({ type: FILTER_NAME, value })}
               />
             </Label>
-            <Label htmlFor="watchlist-people-sort-input">
+            <Label htmlFor="watchlist-type-sort-input">
               Order By
               <SelectInput
                 value={state.sortValue}
-                id="watchlist-people-sort-input"
+                id="watchlist-type-sort-input"
                 onChange={(e) =>
-                  dispatch({ type: SORT, value: e.target.value })
+                  dispatch({ type: SORT, value: e.target.value as SortValue })
                 }
               >
                 <option value="name">Name</option>
@@ -303,12 +269,10 @@ export default function WatchlistTypeTemplate({
             </Label>
           </Fieldset>
         </div>
-        <div className={rightCss} ref={listHeader}>
-          <ul className={listCss}>
+        <div className={rightCss}>
+          <ul data-testid="performers-list" className={listCss}>
             {state.filteredEntities.map((entity) => {
-              return (
-                <ListItem entity={entity} entityType={pageContext.entityType} />
-              );
+              return <ListItem key={entity.slug} entity={entity} />;
             })}
           </ul>
         </div>
@@ -317,17 +281,12 @@ export default function WatchlistTypeTemplate({
   );
 }
 
-interface PageContext {
-  entityType: string;
-  slug: string;
-}
-
 interface WatchlistEntity {
   name: string;
   slug: string;
   titleCount: number;
   reviewCount: number;
-  avatar: {
+  avatar: null | {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
     };
@@ -341,10 +300,10 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query ($entityType: String) {
+  query {
     entity: allWatchlistEntitiesJson(
       sort: { fields: [name], order: ASC }
-      filter: { entity_type: { eq: $entityType } }
+      filter: { entity_type: { eq: "performer" } }
     ) {
       nodes {
         name

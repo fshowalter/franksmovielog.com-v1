@@ -1,0 +1,142 @@
+@import "./src/styles/breakpoints";
+
+.containerCss {
+  border-top: solid 1px var(--color-background);
+  display: grid;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding-top: var(--step-5);
+
+  @media (min-width: $breakpointDesktop) {
+    grid-template-columns: 375px 1fr;
+    max-width: unset;
+  }
+
+  @media (min-width: $breakpointMax) {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+
+.leftCss {
+  align-content: start;
+  display: grid;
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
+  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+      var(--step-1),
+      1fr
+    );
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
+      --step-5
+    );
+
+  @media (min-width: $breakpointDesktop) {
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
+  }
+}
+
+.rightCss {
+  display: grid;
+  flex-grow: 1;
+  grid-template-areas: "list" "." "pagination" ".";
+  grid-template-rows: auto var(--step-1) auto var(--step-5) 1fr;
+  padding: 0 var(--step-1);
+
+  @media (min-width: $breakpointDesktop) {
+    padding-right: 0;
+  }
+}
+
+.pageHeaderCss {
+  grid-area: header;
+}
+
+.pageHeaderSubCss {
+  color: var(--color-text-secondary);
+  display: block;
+  font-size: 1rem;
+}
+
+.filtersCss {
+  grid-area: filters;
+}
+
+.listCss {
+  column-gap: var(--step-2);
+  display: grid;
+  grid-area: list;
+  grid-template-columns: repeat(auto-fit, minmax(130px, max-content));
+  justify-content: center;
+  row-gap: var(--step-5);
+}
+
+.listItemCss {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  position: relative;
+}
+
+.listItemLinkCss {
+  display: block;
+  width: 100%;
+}
+
+.listItemTitleCss {
+  flex-grow: 1;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+}
+
+.defaultImageCss {
+  color: #e1e1e1;
+  display: block;
+}
+
+.progressRingCss {
+  height: 100%;
+  position: absolute;
+  top: -9px;
+  width: 100%;
+  z-index: 100;
+}
+
+.listItemAvatarCss {
+  border-radius: 50%;
+  display: block !important;
+  margin: 0 auto;
+  max-width: 192px;
+  overflow: hidden;
+  transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
+  width: calc(100% - 18px);
+}
+
+.percentBackgroundCss {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 1;
+}
+
+.percentProgressCss {
+  animation: progress 1s ease-out forwards;
+  fill: none;
+  stroke: #77e895;
+  stroke-linecap: round;
+  stroke-width: 0.9;
+}
+
+.progressStatsCss {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  text-align: center;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}

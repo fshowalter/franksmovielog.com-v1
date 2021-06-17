@@ -1,3 +1,4 @@
+jest.unmock("./Seo");
 // eslint-disable-next-line import/no-extraneous-dependencies
 import {
   createHistory,

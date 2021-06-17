@@ -1,19 +1,22 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useReducer, useRef } from "react";
-import DebouncedInput from "../components/DebouncedInput";
-import Fieldset from "../components/Fieldset";
-import FilterPageHeader from "../components/FilterPageHeader";
-import Grade from "../components/Grade";
-import Label from "../components/Label";
-import Layout from "../components/Layout";
-import ProgressGraph from "../components/ProgressGraph";
-import RangeInput from "../components/RangeInput";
-import SelectInput from "../components/SelectInput";
-import Seo from "../components/Seo";
-import { WatchlistMovie } from "../types";
-import applyFilters from "../utils/apply-filters";
-import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
+import React, { useReducer } from "react";
+import DebouncedInput from "../../components/DebouncedInput";
+import Fieldset from "../../components/Fieldset";
+import FilterPageHeader from "../../components/FilterPageHeader";
+import Grade from "../../components/Grade";
+import Label from "../../components/Label";
+import Layout from "../../components/Layout";
+import ProgressGraph from "../../components/ProgressGraph";
+import RangeInput from "../../components/RangeInput";
+import SelectInput from "../../components/SelectInput";
+import Seo from "../../components/Seo";
+import applyFilters from "../../utils/apply-filters";
+import {
+  collator,
+  sortStringAsc,
+  sortStringDesc,
+} from "../../utils/sort-utils";
 import {
   containerCss,
   filtersCss,
@@ -27,23 +30,21 @@ import {
   percentCss,
   percentTotalsCss,
   rightCss,
-} from "./watchlist-entity.module.scss";
+} from "./writer.module.scss";
 
-function sortMovies(titles: WatchlistMovie[], sortOrder: string) {
+type SortType = "release-date-asc" | "release-date-desc" | "title";
+
+function sortMovies(titles: WatchlistMovie[], sortType: SortType) {
   const sortMap: Record<
-    string,
+    SortType,
     (a: WatchlistMovie, b: WatchlistMovie) => number
   > = {
-    "release-date-asc": (a, b) => sortStringAsc(a.year, b.year),
-    "release-date-desc": (a, b) => sortStringDesc(a.year, b.year),
-    title: (a, b) => collator.compare(a.title, b.title),
+    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
+    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
+    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
   };
 
-  const comparer = sortMap[sortOrder];
-
-  if (!comparer) {
-    return titles;
-  }
+  const comparer = sortMap[sortType];
 
   return titles.sort(comparer);
 }
@@ -59,8 +60,8 @@ function minMaxReleaseYears(movies: WatchlistMovie[]) {
     })
     .sort();
 
-  const minYear = parseInt(releaseYears[0], 10);
-  const maxYear = parseInt(releaseYears[releaseYears.length - 1], 10);
+  const minYear = releaseYears[0];
+  const maxYear = releaseYears[releaseYears.length - 1];
 
   return [minYear, maxYear];
 }
@@ -79,8 +80,8 @@ type State = {
   minYear: number;
   /** The maximum year for the release date filter. */
   maxYear: number;
-  /** The active sort value. */
-  sortValue: string;
+  /** The active sort type. */
+  sortType: SortType;
 };
 
 function initState({ movies }: { movies: WatchlistMovie[] }): State {
@@ -92,7 +93,7 @@ function initState({ movies }: { movies: WatchlistMovie[] }): State {
     filters: {},
     minYear,
     maxYear,
-    sortValue: "release-date-asc",
+    sortType: "release-date-asc",
   };
 }
 
@@ -114,7 +115,7 @@ function WatchlistEntityProgress({
 }
 
 function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
-  return filteredMovies.filter((movie) => movie.reviewedMovie).length;
+  return filteredMovies.filter((movie) => movie.slug).length;
 }
 
 const FILTER_TITLE = "FILTER_TITLE";
@@ -138,7 +139,7 @@ interface FilterReleaseYearAction {
 interface SortAction {
   type: typeof SORT;
   /** The sorter to apply. */
-  value: string;
+  value: SortType;
 }
 
 type ActionTypes = FilterTitleAction | FilterReleaseYearAction | SortAction;
@@ -163,7 +164,7 @@ function reducer(state: State, action: ActionTypes): State {
       };
       filteredMovies = sortMovies(
         applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
-        state.sortValue
+        state.sortType
       );
       return {
         ...state,
@@ -172,14 +173,10 @@ function reducer(state: State, action: ActionTypes): State {
       };
     }
     case FILTER_RELEASE_YEAR: {
-      const [minYear, maxYear] = minMaxReleaseYears(state.allMovies);
       filters = {
         ...state.filters,
         releaseYear: (review: WatchlistMovie) => {
-          const releaseYear = parseInt(review.year, 10);
-          if (action.values === [minYear, maxYear]) {
-            return true;
-          }
+          const releaseYear = review.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
           );
@@ -187,7 +184,7 @@ function reducer(state: State, action: ActionTypes): State {
       };
       filteredMovies = sortMovies(
         applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
-        state.sortValue
+        state.sortType
       );
       return {
         ...state,
@@ -199,95 +196,46 @@ function reducer(state: State, action: ActionTypes): State {
       filteredMovies = sortMovies(state.filteredMovies, action.value);
       return {
         ...state,
-        sortValue: action.value,
+        sortType: action.value,
         filteredMovies,
       };
     }
-    default:
-      throw new Error(`Unknown action type.`);
+    // no default
   }
 }
 
-/**
- * Renders the header lead in for the current entity type.
- */
-function EntityHeader({ pageContext }: { pageContext: PageContext }) {
-  switch (pageContext.entityType) {
-    case "COLLECTION":
-      return (
-        <>{`Collection of ${pageContext.imdbIds.length} watchlist movies.`}</>
-      );
-    case "DIRECTOR":
-      return (
-        <>{`Director of ${pageContext.imdbIds.length} watchlist movies.`}</>
-      );
-    case "PERFORMER":
-      return (
-        <>{`Performer in ${pageContext.imdbIds.length} watchlist movies.`}</>
-      );
-    case "WRITER":
-      return (
-        <>{`Writing credits on ${pageContext.imdbIds.length} watchlist movies.`}</>
-      );
-    default:
-      throw new Error(
-        `Unknown entityType parameter: ${pageContext.entityType}`
-      );
-  }
-}
-
-/**
- * Renders the description for the current entity type.
- */
-function buildDescription(name: string, entityType: string): string {
-  switch (entityType) {
-    case "COLLECTION":
-      return `A sortable and filterable list of reviews of movies in the ${name} collection.`;
-    case "DIRECTOR":
-      return `A sortable and filterable list of reviews of movies directed by ${name}.`;
-    case "PERFORMER":
-      return `A sortable and filterable list of reviews of movies featuring ${name}.`;
-    case "WRITER":
-      return `A sortable and filterable list of reviews of movies written (in some part) by ${name}.`;
-    default:
-      throw new Error(`Unknown entityType parameter: ${entityType}`);
-  }
-}
-
-function ReviewedListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
-  const review = movie.reviewedMovie;
-
-  return (
-    <li>
-      <Link className={listItemImageLinkCss} to={`/reviews/${review.slug}/`}>
-        {review.backdrop && (
-          <GatsbyImage
-            image={review.backdrop.childImageSharp.gatsbyImageData}
-            alt={`A still from ${movie.title} (${movie.year})`}
-          />
-        )}
-      </Link>
-      <div className={listItemTitleCss}>
-        <Link to={`/reviews/${review.slug}/`}>
-          {movie.title}{" "}
-          <span className={listItemTitleYearCss}>{movie.year}</span>
-        </Link>
-      </div>
-      <Grade grade={review.lastReviewGrade} className={listItemGradeCss} />
-    </li>
-  );
-}
-
-function UnreviewedListItem({
+function ListItem({
   movie,
-  backdrop,
+  defaultBackdrop,
 }: {
   movie: WatchlistMovie;
-  backdrop: IGatsbyImageData;
+  defaultBackdrop: IGatsbyImageData;
 }): JSX.Element {
+  if (movie.slug && movie.lastReviewGrade) {
+    return (
+      <li>
+        <Link className={listItemImageLinkCss} to={`/reviews/${movie.slug}/`}>
+          {movie.backdrop && (
+            <GatsbyImage
+              image={movie.backdrop.childImageSharp.gatsbyImageData}
+              alt={`A still from ${movie.title} (${movie.year})`}
+            />
+          )}
+        </Link>
+        <div className={listItemTitleCss}>
+          <Link to={`/reviews/${movie.slug}/`}>
+            {movie.title}{" "}
+            <span className={listItemTitleYearCss}>{movie.year}</span>
+          </Link>
+        </div>
+        <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
+      </li>
+    );
+  }
+
   return (
     <li>
-      <GatsbyImage image={backdrop} alt="An unreviewed title." />
+      <GatsbyImage image={defaultBackdrop} alt="An unreviewed title." />
       <div className={listItemTitleCss}>
         {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
       </div>
@@ -296,13 +244,11 @@ function UnreviewedListItem({
 }
 
 /**
- * Renders a watchlist page for a given person.
+ * Renders a page for a watchlist director.
  */
-export default function WatchlistEntityTemplate({
-  pageContext,
+export default function WatchlistDirectorTemplate({
   data,
 }: {
-  pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
@@ -313,17 +259,15 @@ export default function WatchlistEntityTemplate({
     initState
   );
 
-  if (!data.avatar) {
-    throw Error(`No avatar found at ${pageContext.avatarPath}`);
+  if (!data.performer.avatar) {
+    throw Error(`No avatar found for ${data.performer.name}.`);
   }
-
-  const listHeader = useRef<HTMLDivElement>(null);
 
   return (
     <Layout>
       <Seo
-        pageTitle={pageContext.name}
-        description={buildDescription(pageContext.name, pageContext.entityType)}
+        pageTitle={data.performer.name}
+        description={`A sortable and filterable list of reviews of movies featuring ${data.performer.name}.`}
         image={null}
         article={false}
       />
@@ -331,39 +275,37 @@ export default function WatchlistEntityTemplate({
         <div className={leftCss}>
           <FilterPageHeader
             className={pageHeaderCss}
-            avatar={data.avatar.childImageSharp.gatsbyImageData}
-            alt={`An image of ${pageContext.name}`}
-            heading={pageContext.name}
-            tagline={<EntityHeader pageContext={pageContext} />}
+            avatar={data.performer.avatar.childImageSharp.gatsbyImageData}
+            alt={`An image of ${data.performer.name}`}
+            heading={data.performer.name}
+            tagline={`Performer in ${data.movie.nodes.length} watchlist movies.`}
           />
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="viewings-title-input">
+            <Label htmlFor="watchlist-performer-title-input">
               Title
               <DebouncedInput
-                id="viewings-title-input"
+                id="watchlist-performer-title-input"
                 placeholder="Enter all or part of a title"
                 onChange={(value) => dispatch({ type: FILTER_TITLE, value })}
               />
             </Label>
-            <Label htmlFor="viewings-release-year-input">
-              Release Year
-              <RangeInput
-                id="viewings-release-year-input"
-                min={state.minYear}
-                max={state.maxYear}
-                onChange={(values) =>
-                  dispatch({ type: FILTER_RELEASE_YEAR, values })
-                }
-              />
-            </Label>
-            <Label htmlFor="viewings-sort-input">
+            <RangeInput
+              label="Release Year"
+              id="watchlist-performer-release-year-input"
+              min={state.minYear}
+              max={state.maxYear}
+              onChange={(values) =>
+                dispatch({ type: FILTER_RELEASE_YEAR, values })
+              }
+            />
+            <Label htmlFor="watchlist-performer-sort-input">
               Order By
               <SelectInput
-                value={state.sortValue}
-                id="viewings-sort-input"
+                value={state.sortType}
+                id="watchlist-performer-sort-input"
                 onChange={(e) =>
-                  dispatch({ type: SORT, value: e.target.value })
+                  dispatch({ type: SORT, value: e.target.value as SortType })
                 }
               >
                 <option value="release-date-asc">
@@ -383,15 +325,13 @@ export default function WatchlistEntityTemplate({
             />
           </div>
         </div>
-        <div className={rightCss} ref={listHeader}>
-          <ul className={listCss}>
+        <div className={rightCss}>
+          <ul data-testid="movie-list" className={listCss}>
             {state.filteredMovies.map((movie) => {
-              if (movie.reviewedMovie) {
-                return <ReviewedListItem movie={movie} />;
-              }
               return (
-                <UnreviewedListItem
-                  backdrop={
+                <ListItem
+                  key={movie.imdbId}
+                  defaultBackdrop={
                     data.defaultBackdrop.childImageSharp.gatsbyImageData
                   }
                   movie={movie}
@@ -405,17 +345,28 @@ export default function WatchlistEntityTemplate({
   );
 }
 
-interface PageContext {
-  avatarPath: string;
-  entityType: string;
-  imdbIds: [string];
-  name: string;
-}
-
-interface PageQueryResult {
-  avatar: {
+type WatchlistMovie = {
+  imdbId: string;
+  title: string;
+  year: number;
+  lastReviewGrade: null | string;
+  sortTitle: string;
+  slug: null | string;
+  releaseDate: string;
+  backdrop: null | {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
+    };
+  };
+};
+
+interface PageQueryResult {
+  performer: {
+    name: string;
+    avatar: null | {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      };
     };
   };
   defaultBackdrop: {
@@ -429,17 +380,23 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query ($imdbIds: [String], $avatarPath: String) {
-    avatar: file(absolutePath: { eq: $avatarPath }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 200
-          height: 200
-          placeholder: TRACED_SVG
-        )
+  query ($imdbId: String!) {
+    performer: watchlistEntitiesJson(
+      entity_type: { eq: "performer" }
+      imdb_id: { eq: $imdbId }
+    ) {
+      name
+      avatar {
+        childImageSharp {
+          gatsbyImageData(
+            layout: FIXED
+            formats: [JPG, AVIF]
+            quality: 80
+            width: 200
+            height: 200
+            placeholder: TRACED_SVG
+          )
+        }
       }
     }
 
@@ -458,15 +415,17 @@ export const pageQuery = graphql`
     }
 
     movie: allWatchlistMoviesJson(
-      sort: { fields: [year], order: ASC }
-      filter: { imdb_id: { in: $imdbIds } }
+      sort: { fields: [release_date], order: ASC }
+      filter: { performer_imdb_ids: { in: [$imdbId] } }
     ) {
       nodes {
         imdbId: imdb_id
         title
         year
         lastReviewGrade: last_review_grade
-        slug
+        slug: reviews_slug
+        sortTitle: sort_title
+        releaseDate: release_date
         backdrop {
           childImageSharp {
             gatsbyImageData(

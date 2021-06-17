@@ -362,8 +362,6 @@ interface PageQueryResult {
 }
 
 type ReviewedMovie = {
-  sequence: number;
-  date: string;
   releaseDate: string;
   lastReviewGrade: string;
   lastReviewGradeValue: number;
@@ -378,8 +376,6 @@ export const query = graphql`
   query {
     reviews: allReviewedMoviesJson(sort: { fields: [sort_title], order: ASC }) {
       nodes {
-        sequence: review_sequence
-        date: review_date(formatString: "YYYY-MM-DD")
         releaseDate: release_date
         imdbId: imdb_id
         title

@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
-import { Collection, Movie, Person } from "../../types";
 import {
   avatarCss,
   containerCss,
@@ -9,13 +8,32 @@ import {
   listCss,
 } from "./WatchlistLinks.module.scss";
 
+interface WatchlistEntity {
+  name: string;
+  slug: string;
+  avatar: null | {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+}
+
+interface Movie {
+  watchlist: {
+    collections: WatchlistEntity[];
+    directors: WatchlistEntity[];
+    performers: WatchlistEntity[];
+    writers: WatchlistEntity[];
+  };
+}
+
 function WatchlistItem({
   to,
   entity,
   children,
 }: {
   to: string;
-  entity: Person | Collection;
+  entity: WatchlistEntity;
   children: React.ReactNode;
 }): JSX.Element | null {
   if (!entity) {
@@ -39,11 +57,11 @@ function WatchlistItem({
 }
 
 function WatchlistLinks({
-  movie,
-  className,
+  movie = null,
+  className = null,
 }: {
-  movie?: Movie;
-  className?: string;
+  movie?: Movie | null;
+  className?: string | null;
 }): JSX.Element | null {
   if (!movie) {
     return null;
@@ -59,6 +77,7 @@ function WatchlistLinks({
             <WatchlistItem
               to={`/watchlist/collections/${collection.slug}/`}
               entity={collection}
+              key={collection.slug}
             >
               {collection.name}
             </WatchlistItem>
@@ -68,6 +87,7 @@ function WatchlistLinks({
           return (
             <WatchlistItem
               entity={director}
+              key={director.slug}
               to={`/watchlist/directors/${director.slug}/`}
             >
               {director.name}
@@ -78,6 +98,7 @@ function WatchlistLinks({
           return (
             <WatchlistItem
               entity={performer}
+              key={performer.slug}
               to={`/watchlist/performers/${performer.slug}/`}
             >
               {performer.name}
@@ -88,6 +109,7 @@ function WatchlistLinks({
           return (
             <WatchlistItem
               entity={writer}
+              key={writer.slug}
               to={`/watchlist/writers/${writer.slug}/`}
             >
               {writer.name}
@@ -98,10 +120,5 @@ function WatchlistLinks({
     </div>
   );
 }
-
-WatchlistLinks.defaultProps = {
-  movie: null,
-  className: null,
-};
 
 export default WatchlistLinks;

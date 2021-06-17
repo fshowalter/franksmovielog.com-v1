@@ -12,7 +12,7 @@ export default function GonePage({ data }: PageQueryResult): JSX.Element {
   return (
     <Layout>
       <Seo
-        pageTitle="403: Gone"
+        pageTitle="410: Gone"
         description="Forget it, Jake. It's Chinatown."
         image={null}
         article

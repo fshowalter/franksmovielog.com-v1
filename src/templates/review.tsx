@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import DateIcon from "../components/DateIcon";
 import Grade from "../components/Grade";
@@ -8,7 +8,6 @@ import RelatedMovies from "../components/RelatedMovies";
 import RenderedMarkdown from "../components/RenderedMarkdown";
 import Seo from "../components/Seo";
 import WatchlistLinks from "../components/WatchlistLinks";
-import { ReviewedMovie } from "../types";
 import toSentenceArray from "../utils/to-sentence-array";
 import {
   akaContainerCss,
@@ -45,7 +44,7 @@ import {
   watchlistCss,
 } from "./review.module.scss";
 
-function buildStructuredData(movie: ReviewedMovie) {
+function buildStructuredData(movie: Movie) {
   const gradeMap: { [index: string]: number } = {
     A: 5,
     B: 4,
@@ -56,14 +55,7 @@ function buildStructuredData(movie: ReviewedMovie) {
 
   return {
     "@context": "http://schema.org",
-    "@type": "Review",
-    author: {
-      "@type": "Person",
-      name: "Frank Showalter",
-      sameAs: "https://www.frankshowalter.com",
-    },
-    datePublished: movie.lastReviewDate,
-    inLanguage: "en",
+    "@type": "AggregateRating",
     itemReviewed: {
       "@type": "Movie",
       name: movie.title,
@@ -72,26 +64,18 @@ function buildStructuredData(movie: ReviewedMovie) {
       dateCreated: movie.year,
       director: {
         "@type": "Person",
-        name: movie.directors[0].name,
+        name: movie.directorNames[0],
       },
     },
-    publisher: {
-      "@type": "Organization",
-      name: "Frank's Movie Log",
-      sameAs: "https://www.franksmovielog.com",
-    },
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: gradeMap[movie.lastReviewGrade[0]],
-    },
+    ratingValue: gradeMap[movie.lastReviewGrade[0]],
   };
 }
 
-function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
+function Related({ movie }: { movie: Movie }): JSX.Element | null {
   return (
     <div className={relatedCss}>
       {movie.watchlist.collections.map((collection) => (
-        <RelatedMovies movies={collection.reviewedMovies}>
+        <RelatedMovies key={collection.name} movies={collection.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               More <span className={relatedNameCss}>{collection.name}</span>
@@ -106,7 +90,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
         </RelatedMovies>
       ))}
       {movie.watchlist.performers.map((performer) => (
-        <RelatedMovies movies={performer.reviewedMovies}>
+        <RelatedMovies key={performer.slug} movies={performer.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               More with <span className={relatedNameCss}>{performer.name}</span>
@@ -121,7 +105,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
         </RelatedMovies>
       ))}
       {movie.watchlist.directors.map((director) => (
-        <RelatedMovies movies={director.reviewedMovies}>
+        <RelatedMovies key={director.slug} movies={director.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               More directed by{" "}
@@ -137,7 +121,7 @@ function Related({ movie }: { movie: ReviewedMovie }): JSX.Element | null {
         </RelatedMovies>
       ))}
       {movie.watchlist.writers.map((writer) => (
-        <RelatedMovies movies={writer.reviewedMovies}>
+        <RelatedMovies key={writer.slug} movies={writer.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               More written by{" "}
@@ -219,7 +203,9 @@ export default function Review({
               aka:
               <ul className={akaListCss}>
                 {movie.akaTitles.map((akaTitle) => (
-                  <li className={akaListItemCss}>{akaTitle}</li>
+                  <li key={akaTitle} className={akaListItemCss}>
+                    {akaTitle}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -236,11 +222,11 @@ export default function Review({
           )}
           <div className={directorsCss}>
             <span className={castLabelCss}>Directed by</span>
-            {toSentenceArray(movie.directors.map((director) => director.name))}
+            {toSentenceArray(movie.directorNames)}
           </div>
           <div className={castCss}>
             <span className={castLabelCss}>Starring</span>
-            {toSentenceArray(movie.principalCast.map((person) => person.name))}
+            {toSentenceArray(movie.principalCastNames)}
           </div>
           <div className={watchlistCss}>
             <WatchlistLinks movie={movie} />
@@ -248,7 +234,7 @@ export default function Review({
         </aside>
         <ul className={reviewsListCss}>
           {movie.reviews.map((review) => (
-            <li>
+            <li key={review.frontmatter.sequence}>
               <article className={reviewCss}>
                 <header className={slugCss}>
                   <DateIcon className={dateIconCss} />{" "}
@@ -278,7 +264,7 @@ export default function Review({
             <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>
             <ul className={olderViewingsListCss}>
               {movie.olderViewings.map((viewing) => (
-                <li>
+                <li key={viewing.sequence}>
                   <div className={slugCss}>
                     <DateIcon className={viewingDateIconCss} />{" "}
                     <span className={dateCss}>{viewing.viewingDate}</span> via{" "}
@@ -303,8 +289,89 @@ export default function Review({
 }
 
 interface PageQueryResult {
-  movie: ReviewedMovie;
+  movie: Movie;
 }
+
+type Review = {
+  frontmatter: {
+    grade: string;
+    date: string;
+    dateIso: string;
+    venue: string;
+    venueNotes: string;
+    sequence: number;
+  };
+  linkedHtml: string;
+};
+
+type Viewing = {
+  venue: string;
+  viewingDate: string;
+  sequence: number;
+};
+
+type BrowseMoreMovie = {
+  imdbId: string;
+  title: string;
+  lastReviewGrade: string;
+  slug: string;
+  year: number;
+  backdrop: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+};
+
+export type WatchlistEntity = {
+  name: string;
+  slug: string;
+  browseMore: BrowseMoreMovie[];
+  avatar: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+};
+
+type Movie = {
+  imdbId: string;
+  title: string;
+  year: number;
+  countries: string[];
+  runtimeMinutes: number;
+  lastReviewGrade: string;
+  lastReviewGradeValue: number;
+  akaTitles: string[];
+  principalCastNames: string[];
+  directorNames: string[];
+  browseMore: BrowseMoreMovie[];
+  backdrop: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+  seoImage: {
+    childImageSharp: {
+      resize: {
+        src: string;
+      };
+    };
+  };
+  poster: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+  reviews: Review[];
+  olderViewings: Viewing[];
+  watchlist: {
+    performers: WatchlistEntity[];
+    directors: WatchlistEntity[];
+    writers: WatchlistEntity[];
+    collections: WatchlistEntity[];
+  };
+};
 
 export const pageQuery = graphql`
   query ($imdbId: String) {
@@ -318,22 +385,42 @@ export const pageQuery = graphql`
       lastReviewGradeValue: last_review_grade_value
       akaTitles: aka_titles
       principalCastNames: principal_cast_names
-      directors: director_names
+      directorNames: director_names
       reviews {
         frontmatter {
           date(formatString: "dddd MMM D, YYYY")
           dateIso: date(formatString: "Y-MM-DD")
           grade
           sequence
-          imdbId: imdb_id
           venue
           venueNotes: venue_notes
         }
         linkedHtml
       }
+      browseMore {
+        imdbId: imdb_id
+        title
+        lastReviewGrade: last_review_grade
+        slug
+        year
+        backdrop {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [JPG, AVIF]
+              quality: 80
+              placeholder: TRACED_SVG
+              width: 309
+              breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
+              sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
+            )
+          }
+        }
+      }
       olderViewings {
         viewingDate: viewing_date(formatString: "ddd MMM DD, YYYY")
         venue
+        sequence
       }
       backdrop {
         childImageSharp {
@@ -368,25 +455,6 @@ export const pageQuery = graphql`
           )
         }
       }
-      browseMore {
-        title
-        lastReviewGrade: last_review_grade
-        slug
-        year
-        backdrop {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              placeholder: TRACED_SVG
-              width: 309
-              breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
-              sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
-            )
-          }
-        }
-      }
       watchlist {
         performers {
           name
@@ -403,7 +471,8 @@ export const pageQuery = graphql`
               )
             }
           }
-          reviewedMovies {
+          browseMore {
+            imdbId: imdb_id
             title
             lastReviewGrade: last_review_grade
             slug
@@ -438,7 +507,8 @@ export const pageQuery = graphql`
               )
             }
           }
-          reviewedMovies {
+          browseMore {
+            imdbId: imdb_id
             title
             lastReviewGrade: last_review_grade
             slug
@@ -473,7 +543,8 @@ export const pageQuery = graphql`
               )
             }
           }
-          reviewedMovies {
+          browseMore {
+            imdbId: imdb_id
             title
             lastReviewGrade: last_review_grade
             slug
@@ -508,7 +579,8 @@ export const pageQuery = graphql`
               )
             }
           }
-          reviewedMovies {
+          browseMore {
+            imdbId: imdb_id
             title
             lastReviewGrade: last_review_grade
             slug

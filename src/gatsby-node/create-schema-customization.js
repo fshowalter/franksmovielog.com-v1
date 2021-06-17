@@ -34,13 +34,13 @@ function getReviewedMoviesByReleaseDate(nodeModel) {
   });
 }
 
-function getReviewedMoviesBySequence(nodeModel) {
+function getReviewedMoviesByTitle(nodeModel) {
   return getReviewedMovies(nodeModel).sort((a, b) => {
-    if (a.sequence > b.sequence) {
+    if (a.sort_title > b.sort_title) {
       return 1;
     }
 
-    if (a.sequence < b.sequence) {
+    if (a.sort_title < b.sort_title) {
       return -1;
     }
 
@@ -58,6 +58,14 @@ function findWatchlistTitleForImdbId(nodeModel, imdbId) {
   return getWatchlistMovies(nodeModel).find(
     (movie) => movie.imdb_id === imdbId
   );
+}
+
+async function getResolvedValueForType(type, fieldName, source, args, context) {
+  const resolver = type.getFields()[fieldName].resolve;
+
+  return resolver(source, args, context, {
+    fieldName,
+  });
 }
 
 function sliceReviewedMoviesForTitle(movies, titleImdbId) {
@@ -85,14 +93,6 @@ function sliceReviewedMoviesForTitle(movies, titleImdbId) {
   return [...movies.slice(-2), ...movies, ...movies.slice(0, 3)]
     .slice(titleIndex, titleIndex + 5)
     .filter(movieIsNotTitle);
-}
-
-async function getResolvedValueForType(type, fieldName, source, args, context) {
-  const resolver = type.getFields()[fieldName].resolve;
-
-  return resolver(source, args, context, {
-    fieldName,
-  });
 }
 
 function assetPathForSlug(slug, assetType) {
@@ -125,24 +125,30 @@ function getAvatar(nodeModel, slug) {
   return findFileNodeByAbsolutePath(nodeModel, assetPath);
 }
 
-function itemsForWatchlistTitle(nodeModel, watchlistTitle, itemType) {
-  const items = [];
+function peopleForWatchlistTitle(nodeModel, watchlistTitle, personType) {
+  const people = [];
 
-  watchlistTitle[`${itemType}s`].forEach((titleItem) => {
+  watchlistTitle[`${personType}_imdb_ids`].forEach((personImdbId) => {
+    const personEntity = nodeModel
+      .getAllNodes({ type: `WatchlistEntitiesJson` })
+      .find((entity) => {
+        return (
+          entity.entity_type == personType && entity.imdb_id == personImdbId
+        );
+      });
+
     const watchlistItem = {
-      name: titleItem.name,
-      slug: titleItem.slug,
-      avatar: getAvatar(nodeModel, titleItem.slug),
-      reviewedMovies: [],
+      name: personEntity.name,
+      slug: personEntity.slug,
+      avatar: getAvatar(nodeModel, personEntity.slug),
+      browseMore: [],
     };
 
-    items.push(watchlistItem);
+    people.push(watchlistItem);
 
     const watchlistMoviesWithItem = getWatchlistMovies(nodeModel).filter(
       (title) => {
-        return title[`${itemType}s`].some((item) => {
-          return item.slug === titleItem.slug;
-        });
+        return title[`${personType}_imdb_ids`].includes(personImdbId);
       }
     );
 
@@ -150,7 +156,51 @@ function itemsForWatchlistTitle(nodeModel, watchlistTitle, itemType) {
       return;
     }
 
-    watchlistItem.reviewedMovies = sliceReviewedMoviesForTitle(
+    watchlistItem.browseMore = sliceReviewedMoviesForTitle(
+      getReviewedMoviesByReleaseDate(nodeModel).filter((reviewedMovie) => {
+        return watchlistMoviesWithItem.some((watchlistMovie) => {
+          return reviewedMovie.imdb_id === watchlistMovie.imdb_id;
+        });
+      }),
+      watchlistTitle.imdb_id
+    );
+  });
+
+  return people;
+}
+
+function collectionsForWatchlistTitle(nodeModel, watchlistTitle) {
+  const items = [];
+
+  watchlistTitle.collection_names.forEach((collectionName) => {
+    const collectionEntity = nodeModel
+      .getAllNodes({ type: `WatchlistEntitiesJson` })
+      .find((entity) => {
+        return (
+          entity.entity_type == "collection" && entity.name == collectionName
+        );
+      });
+
+    const watchlistItem = {
+      name: collectionEntity.name,
+      slug: collectionEntity.slug,
+      avatar: getAvatar(nodeModel, collectionEntity.slug),
+      browseMore: [],
+    };
+
+    items.push(watchlistItem);
+
+    const watchlistMoviesWithItem = getWatchlistMovies(nodeModel).filter(
+      (title) => {
+        return title.collection_names.includes(collectionName);
+      }
+    );
+
+    if (!watchlistMoviesWithItem) {
+      return;
+    }
+
+    watchlistItem.browseMore = sliceReviewedMoviesForTitle(
       getReviewedMoviesByReleaseDate(nodeModel).filter((reviewedMovie) => {
         return watchlistMoviesWithItem.some((watchlistMovie) => {
           return reviewedMovie.imdb_id === watchlistMovie.imdb_id;
@@ -225,13 +275,63 @@ const watchlistMoviesJson = {
     year: "Int!",
     sort_title: "String!",
     release_date: "String!",
-    director_names: "[String!]!",
-    performer_names: "[String!]!",
-    writer_names: "[String!]!",
+    director_imdb_ids: "[String!]!",
+    performer_imdb_ids: "[String!]!",
+    writer_imdb_ids: "[String!]!",
     collection_names: "[String!]!",
-    slug: "String!",
     reviews_slug: "String",
     last_review_grade: "String",
+    directorNames: {
+      type: "[String!]!",
+      resolve: async (source, args, context) => {
+        const nodes = await context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { in: source.director_imdb_ids },
+              entity_type: { eq: "director" },
+            },
+          },
+          type: "WatchlistEntitiesJson",
+          firstOnly: false,
+        });
+
+        return nodes.map((node) => node.name);
+      },
+    },
+    performerNames: {
+      type: "[String!]!",
+      resolve: async (source, args, context) => {
+        const nodes = await context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { in: source.performer_imdb_ids },
+              entity_type: { eq: "performer" },
+            },
+          },
+          type: "WatchlistEntitiesJson",
+          firstOnly: false,
+        });
+
+        return nodes.map((node) => node.name);
+      },
+    },
+    writerNames: {
+      type: "[String!]!",
+      resolve: async (source, args, context) => {
+        const nodes = await context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { in: source.writer_imdb_ids },
+              entity_type: { eq: "writer" },
+            },
+          },
+          type: "WatchlistEntitiesJson",
+          firstOnly: false,
+        });
+
+        return nodes.map((node) => node.name);
+      },
+    },
     backdrop: {
       type: "File",
       resolve: (source, args, context) => {
@@ -334,24 +434,17 @@ const reviewedMoviesJson = {
   fields: {
     imdb_id: "String!",
     title: "String!",
-    original_title: "String",
     year: "Int!",
     release_date: "String!",
-    review_sequence: "Int!",
-    review_date: {
-      type: "Date!",
-      extensions: {
-        dateformat: {},
-      },
-    },
     last_review_grade: "String!",
     last_review_grade_value: "Float!",
-    principal_cast_ids: "String",
     sort_title: "String!",
     slug: "String",
     runtime_minutes: "Int!",
     director_names: "[String!]!",
     principal_cast_names: "[String!]!",
+    aka_titles: "[String!]!",
+    countries: "[String!]!",
     reviews: {
       type: "[MarkdownRemark]",
       resolve: (source, args, context) => {
@@ -364,7 +457,7 @@ const reviewedMoviesJson = {
       type: "[ReviewedMoviesJson]",
       resolve: (source, args, context) => {
         return sliceReviewedMoviesForTitle(
-          getReviewedMoviesBySequence(context.nodeModel),
+          getReviewedMoviesByTitle(context.nodeModel),
           source.imdb_id
         );
       },
@@ -425,28 +518,27 @@ const reviewedMoviesJson = {
           return watchlist;
         }
 
-        watchlist.performers = itemsForWatchlistTitle(
+        watchlist.performers = peopleForWatchlistTitle(
           context.nodeModel,
           watchlistTitle,
           "performer"
         );
 
-        watchlist.directors = itemsForWatchlistTitle(
+        watchlist.directors = peopleForWatchlistTitle(
           context.nodeModel,
           watchlistTitle,
           "director"
         );
 
-        watchlist.writers = itemsForWatchlistTitle(
+        watchlist.writers = peopleForWatchlistTitle(
           context.nodeModel,
           watchlistTitle,
           "writer"
         );
 
-        watchlist.collections = itemsForWatchlistTitle(
+        watchlist.collections = collectionsForWatchlistTitle(
           context.nodeModel,
-          watchlistTitle,
-          "collection"
+          watchlistTitle
         );
 
         return watchlist;
@@ -462,6 +554,12 @@ const watchlistEntitiesJson = {
   name: `WatchlistEntitiesJson`,
   interfaces: ["Node"],
   fields: {
+    imdb_id: "String",
+    name: "String!",
+    slug: "String!",
+    title_count: "Int!",
+    review_count: "Int!",
+    entity_type: "String!",
     avatar: {
       type: "File",
       resolve: (source, args, context) => {
@@ -472,6 +570,18 @@ const watchlistEntitiesJson = {
         return getAvatar(context.nodeModel, source.slug);
       },
     },
+    reviewedMovies: {
+      type: "[ReviewedMoviesJson]",
+      resolve: (source, args, context) => {
+        return sliceReviewedMoviesForTitle(
+          getReviewedMoviesByTitle(context.nodeModel),
+          source.imdb_id
+        );
+      },
+    },
+  },
+  extensions: {
+    infer: false,
   },
 };
 
@@ -482,7 +592,7 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
       type WatchlistEntry {
         name: String!
         slug: String
-        reviewedMovies: [ReviewedMoviesJson]
+        browseMore: [ReviewedMoviesJson]
         avatar: File
       }
       type Watchlist {
