@@ -1,24 +1,24 @@
 import { graphql, Link } from "gatsby";
 import React, { useReducer } from "react";
-import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
-import Fieldset from "../components/Fieldset";
-import FilterPageHeader from "../components/FilterPageHeader";
-import Grade from "../components/Grade";
-import Label from "../components/Label";
-import Layout from "../components/Layout";
-import RangeInput from "../components/RangeInput";
-import SelectInput from "../components/SelectInput";
-import Seo from "../components/Seo";
-import StatsLink from "../components/StatsLink";
-import ToggleButton from "../components/ToggleButton";
-import applyFilters from "../utils/apply-filters";
+import DebouncedInput from "../../components/DebouncedInput/DebouncedInput";
+import Fieldset from "../../components/Fieldset";
+import FilterPageHeader from "../../components/FilterPageHeader";
+import Grade from "../../components/Grade";
+import Label from "../../components/Label";
+import Layout from "../../components/Layout";
+import RangeInput from "../../components/RangeInput";
+import SelectInput from "../../components/SelectInput";
+import Seo from "../../components/Seo";
+import StatsLink from "../../components/StatsLink";
+import ToggleButton from "../../components/ToggleButton";
+import applyFilters from "../../utils/apply-filters";
 import {
   collator,
   sortNumberAsc,
   sortNumberDesc,
   sortStringAsc,
   sortStringDesc,
-} from "../utils/sort-utils";
+} from "../../utils/sort-utils";
 import {
   containerCss,
   filtersCss,
@@ -33,7 +33,7 @@ import {
   pageHeaderCss,
   rightCss,
   toggleGradesButtonCss,
-} from "./reviews.module.scss";
+} from "./index.module.scss";
 
 function sortReviews(
   reviews: ReviewedMovie[],

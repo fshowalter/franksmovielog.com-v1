@@ -2,10 +2,10 @@
 import { act, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
-import ReviewsPage from "../reviews";
-import data from "./__fixtures__/reviews-page-query";
+import ReviewsPage from "../index";
+import data from "./__fixtures__/index-page-query";
 
-jest.mock("../../components/Seo/Seo.tsx");
+jest.mock("../../../components/Seo/Seo.tsx");
 
 describe("/reviews", () => {
   it("renders", () => {

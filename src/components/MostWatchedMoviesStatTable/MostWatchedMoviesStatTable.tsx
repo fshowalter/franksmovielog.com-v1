@@ -1,15 +1,19 @@
 import React from "react";
 import {
   MostWatchedStatTable,
-  Movie,
   MovieTitle,
-  Viewing,
   ViewingDetail,
 } from "../MostWatchedStatTable";
 
-export interface MovieWithViewings extends Movie {
-  viewings: Viewing[];
+export interface MovieWithViewings {
+  title: string;
+  year: number;
+  slug: string | null;
   viewingCount: number;
+  viewings: {
+    prettyDate: string;
+    venue: string;
+  }[];
 }
 
 export default function MostWatchedMoviesStatTable({

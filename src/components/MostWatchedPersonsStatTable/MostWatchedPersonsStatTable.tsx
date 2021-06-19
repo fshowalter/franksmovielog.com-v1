@@ -3,15 +3,20 @@ import {
   MostWatchedStatTable,
   MovieTitle,
   TableLink,
-  Viewing,
   ViewingDetail,
 } from "../MostWatchedStatTable";
 
 export interface PersonWithViewings {
   fullName: string;
-  slug: string;
-  viewings: Viewing[];
+  slug: string | null;
   viewingCount: number;
+  viewings: {
+    title: string;
+    prettyDate: string;
+    venue: string;
+    year: number;
+    slug: string | null;
+  }[];
 }
 
 function buildPersonName(
