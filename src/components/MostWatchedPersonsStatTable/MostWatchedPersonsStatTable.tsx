@@ -44,10 +44,9 @@ export default function MostWatchedPersonsStatTable({
     nameHeaderText: "Name",
     nameFunc: (person) => buildPersonName(watchlistType, person),
     detailsFunc: (viewing) => {
-      const { movie } = viewing;
       return (
         <>
-          <MovieTitle movie={movie} /> <ViewingDetail viewing={viewing} />
+          <MovieTitle movie={viewing} /> <ViewingDetail viewing={viewing} />
         </>
       );
     },
