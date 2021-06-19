@@ -157,7 +157,7 @@ interface WatchlistEntity {
 
 interface Movie {
   title: string;
-  year: string;
+  year: number;
   principalCastNames: string[];
   directorNames: string[];
   backdrop: {
@@ -200,7 +200,6 @@ export const pageQuery = graphql`
       filter: { postType: { eq: "REVIEW" } }
     ) {
       nodes {
-        postType
         frontmatter {
           date(formatString: "DD MMM, YYYY")
           grade

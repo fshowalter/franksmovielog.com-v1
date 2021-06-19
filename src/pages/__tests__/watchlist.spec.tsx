@@ -2,10 +2,10 @@
 import { act, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
-import WatchlistPage from "../index";
-import data from "./__fixtures__/index-page-query";
+import WatchlistPage from "../watchlist";
+import data from "./__fixtures__/watchlist-page-query";
 
-jest.mock("../../../components/Seo/Seo.tsx");
+jest.mock("../../components/Seo/Seo.tsx");
 
 describe("/watchlist", () => {
   it("renders", () => {

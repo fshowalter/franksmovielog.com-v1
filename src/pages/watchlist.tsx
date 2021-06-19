@@ -1,27 +1,23 @@
 import { graphql, Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
-import DebouncedInput from "../../components/DebouncedInput/DebouncedInput";
-import Fieldset from "../../components/Fieldset";
-import FilterPageHeader from "../../components/FilterPageHeader";
-import Label from "../../components/Label";
-import Layout from "../../components/Layout";
+import DebouncedInput from "../components/DebouncedInput/DebouncedInput";
+import Fieldset from "../components/Fieldset";
+import FilterPageHeader from "../components/FilterPageHeader";
+import Label from "../components/Label";
+import Layout from "../components/Layout";
 import {
   PaginationInfo,
   PaginationWithButtons,
-} from "../../components/Pagination";
-import ProgressGraph from "../../components/ProgressGraph";
-import RangeInput from "../../components/RangeInput";
-import SelectInput from "../../components/SelectInput";
-import Seo from "../../components/Seo";
-import ToggleButton from "../../components/ToggleButton";
-import applyFilters from "../../utils/apply-filters";
-import slicePage from "../../utils/slice-page";
-import {
-  collator,
-  sortStringAsc,
-  sortStringDesc,
-} from "../../utils/sort-utils";
-import toSentenceArray from "../../utils/to-sentence-array";
+} from "../components/Pagination";
+import ProgressGraph from "../components/ProgressGraph";
+import RangeInput from "../components/RangeInput";
+import SelectInput from "../components/SelectInput";
+import Seo from "../components/Seo";
+import ToggleButton from "../components/ToggleButton";
+import applyFilters from "../utils/apply-filters";
+import slicePage from "../utils/slice-page";
+import { collator, sortStringAsc, sortStringDesc } from "../utils/sort-utils";
+import toSentenceArray from "../utils/to-sentence-array";
 import {
   containerCss,
   filtersCss,
@@ -44,7 +40,7 @@ import {
   typeIconCss,
   typeLinkCss,
   typeLinksCss,
-} from "./index.module.scss";
+} from "./watchlist.module.scss";
 
 /**
  * Renders options for a watchlist person or collection select.
