@@ -563,9 +563,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="A+: 5 stars (out of 5)"
                   class="gradeCss"
-                  height="14"
                   src="/svg/5-stars.svg"
-                  width="70"
                 />
                 <div
                   class="renderedMarkdownCss bodyCss"
@@ -823,9 +821,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="B-: 4 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/4-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -900,9 +896,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="C-: 3 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/3-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -977,9 +971,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="D+: 2 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/2-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -1054,9 +1046,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="F: 1 star (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/1-star.svg"
-                  width="70"
                 />
               </li>
             </ul>
@@ -1157,9 +1147,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="C+: 3 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/3-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -1234,9 +1222,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="B+: 4 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/4-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -1311,9 +1297,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="C+: 3 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/3-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -1388,9 +1372,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 <img
                   alt="B-: 4 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/4-stars.svg"
-                  width="70"
                 />
               </li>
             </ul>
@@ -1924,9 +1906,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="B-: 4 stars (out of 5)"
                   class="gradeCss"
-                  height="14"
                   src="/svg/4-stars.svg"
-                  width="70"
                 />
                 <div
                   class="renderedMarkdownCss bodyCss"
@@ -2054,9 +2034,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="B-: 4 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/4-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -2131,9 +2109,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="A-: 5 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/5-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -2208,9 +2184,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="C+: 3 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/3-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -2285,9 +2259,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="A: 5 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/5-stars.svg"
-                  width="70"
                 />
               </li>
             </ul>
@@ -2388,9 +2360,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="C: 3 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/3-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -2465,9 +2435,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="D+: 2 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/2-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -2542,9 +2510,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="C-: 3 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/3-stars.svg"
-                  width="70"
                 />
               </li>
               <li>
@@ -2619,9 +2585,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 <img
                   alt="D+: 2 stars (out of 5)"
                   class="listItemGradeCss"
-                  height="14"
                   src="/svg/2-stars.svg"
-                  width="70"
                 />
               </li>
             </ul>

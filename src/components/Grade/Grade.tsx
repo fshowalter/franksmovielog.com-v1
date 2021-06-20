@@ -21,12 +21,7 @@ const gradeValueMap: { [key: number]: [string, string] } = {
   2: ["/svg/2-stars.svg", "2 stars (out of 5)"],
   1: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
-
-type GradeProps = {
-  /** The grade letter value. */
-  grade: string | null;
-  /** The grade float value. */
-  gradeValue: number | null;
+type CommonGradeProps = {
   /** The width of the stars image. */
   width?: number;
   /** The height of the stars image. */
@@ -35,45 +30,46 @@ type GradeProps = {
   className?: string;
 };
 
-export default function Grade({
-  grade,
-  gradeValue,
-  className = undefined,
-  width = 70,
-  height = 14,
-}: GradeProps): JSX.Element | null {
-  let src: string | undefined;
-  let alt: string | undefined;
+type LetterGradeProps = {
+  /** The grade letter value. */
+  grade: string;
+  gradeValue: never;
+} & CommonGradeProps;
 
-  if (!grade && !gradeValue) {
-    return null;
+type ValueGradeProps = {
+  /** The grade letter value. */
+  gradeValue: number;
+  grade: never;
+} & CommonGradeProps;
+
+type GradeProps = LetterGradeProps | ValueGradeProps;
+
+export default function Grade(props: GradeProps): JSX.Element | null {
+  let src;
+  let alt = "";
+  let grade = "";
+
+  console.log(props);
+
+  if (props.grade) {
+    grade = props.grade;
+    [src, alt] = gradeMap[props.grade[0]];
   }
 
-  if (grade) {
-    if (!(grade[0] in gradeMap)) {
-      return null;
-    }
+  if (props.gradeValue) {
+    const gradeValueInt = Math.round(props.gradeValue);
 
-    [src, alt] = gradeMap[grade[0]];
-  }
-
-  if (gradeValue) {
-    const gradeValueInt = Math.round(gradeValue);
-
-    if (!(gradeValueInt in gradeValueMap)) {
-      return null;
-    }
-
+    grade = props.gradeValue.toString();
     [src, alt] = gradeValueMap[gradeValueInt];
   }
 
   return (
     <img
-      className={className}
+      className={props.className}
       src={src}
-      alt={`${grade || ""}: ${alt || ""}`}
-      width={width}
-      height={height}
+      alt={`${grade}: ${alt}`}
+      width={props.width}
+      height={props.height}
     />
   );
 }

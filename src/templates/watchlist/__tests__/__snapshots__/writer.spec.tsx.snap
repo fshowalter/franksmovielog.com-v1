@@ -78,9 +78,7 @@ exports[`/watchlist/writers/{slug} can filter by release year 1`] = `
     <img
       alt="A: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -156,9 +154,7 @@ exports[`/watchlist/writers/{slug} can filter by release year 1`] = `
     <img
       alt="C: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -300,9 +296,7 @@ exports[`/watchlist/writers/{slug} can filter by title 1`] = `
     <img
       alt="A: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -378,9 +372,7 @@ exports[`/watchlist/writers/{slug} can filter by title 1`] = `
     <img
       alt="C: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
 </ul>
@@ -928,9 +920,7 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
     <img
       alt="C: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -1006,9 +996,7 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
     <img
       alt="A: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -1324,9 +1312,7 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
     <img
       alt="A: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -1402,9 +1388,7 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
     <img
       alt="C: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -2242,9 +2226,7 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
     <img
       alt="C: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -2320,9 +2302,7 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
     <img
       alt="A: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -3170,9 +3150,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
               <img
                 alt="A: 5 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/5-stars.svg"
-                width="70"
               />
             </li>
             <li>
@@ -3247,9 +3225,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/3-stars.svg"
-                width="70"
               />
             </li>
             <li>

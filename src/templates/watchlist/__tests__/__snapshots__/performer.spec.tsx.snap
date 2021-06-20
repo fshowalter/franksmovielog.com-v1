@@ -1194,9 +1194,7 @@ exports[`/watchlist/performers/{slug} can filter by release year 1`] = `
     <img
       alt="A+: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -1466,9 +1464,7 @@ exports[`/watchlist/performers/{slug} can filter by title 1`] = `
     <img
       alt="A+: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
 </ul>
@@ -3536,9 +3532,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with newest first
     <img
       alt="A+: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -10310,9 +10304,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with newest first
     <img
       alt="F: 1 star (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/1-star.svg"
-      width="70"
     />
   </li>
   <li>
@@ -10388,9 +10380,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with newest first
     <img
       alt="D+: 2 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/2-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -10528,9 +10518,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with newest first
     <img
       alt="C-: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -10730,9 +10718,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with newest first
     <img
       alt="B-: 4 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/4-stars.svg"
-      width="70"
     />
   </li>
 </ul>
@@ -10816,9 +10802,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with oldest first
     <img
       alt="B-: 4 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/4-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -11018,9 +11002,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with oldest first
     <img
       alt="C-: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -11158,9 +11140,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with oldest first
     <img
       alt="D+: 2 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/2-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -11236,9 +11216,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with oldest first
     <img
       alt="F: 1 star (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/1-star.svg"
-      width="70"
     />
   </li>
   <li>
@@ -18010,9 +17988,7 @@ exports[`/watchlist/performers/{slug} can sort by release date with oldest first
     <img
       alt="A+: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -20390,9 +20366,7 @@ exports[`/watchlist/performers/{slug} can sort by title 1`] = `
     <img
       alt="C-: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -20840,9 +20814,7 @@ exports[`/watchlist/performers/{slug} can sort by title 1`] = `
     <img
       alt="B-: 4 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/4-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -24824,9 +24796,7 @@ exports[`/watchlist/performers/{slug} can sort by title 1`] = `
     <img
       alt="F: 1 star (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/1-star.svg"
-      width="70"
     />
   </li>
   <li>
@@ -26142,9 +26112,7 @@ exports[`/watchlist/performers/{slug} can sort by title 1`] = `
     <img
       alt="D+: 2 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/2-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -26592,9 +26560,7 @@ exports[`/watchlist/performers/{slug} can sort by title 1`] = `
     <img
       alt="A+: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -29704,9 +29670,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
               <img
                 alt="B-: 4 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/4-stars.svg"
-                width="70"
               />
             </li>
             <li>
@@ -29903,9 +29867,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
               <img
                 alt="C-: 3 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/3-stars.svg"
-                width="70"
               />
             </li>
             <li>
@@ -30041,9 +30003,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
               <img
                 alt="D+: 2 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/2-stars.svg"
-                width="70"
               />
             </li>
             <li>
@@ -30118,9 +30078,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
               <img
                 alt="F: 1 star (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/1-star.svg"
-                width="70"
               />
             </li>
             <li>
@@ -36783,9 +36741,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
               <img
                 alt="A+: 5 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/5-stars.svg"
-                width="70"
               />
             </li>
             <li>

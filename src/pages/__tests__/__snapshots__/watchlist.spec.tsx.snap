@@ -2932,6 +2932,13 @@ exports[`/watchlist can filter by director then show all 1`] = `
 </ol>
 `;
 
+exports[`/watchlist can filter by not-found title 1`] = `
+<ol
+  class="listCss"
+  data-testid="watchlist-list"
+/>
+`;
+
 exports[`/watchlist can filter by performer 1`] = `
 <ol
   class="listCss"

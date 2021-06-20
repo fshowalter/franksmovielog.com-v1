@@ -43,6 +43,25 @@ describe("/watchlist", () => {
     });
   });
 
+  it("can filter by not-found title", async () => {
+    expect.hasAssertions();
+    render(<WatchlistPage data={data} />);
+
+    act(() => {
+      jest.useFakeTimers(); // For the debouced input
+      userEvent.type(
+        screen.getByLabelText("Title"),
+        "This movie doesn't exist"
+      );
+      jest.runOnlyPendingTimers(); // Flush the delay
+      jest.useRealTimers();
+    });
+
+    await waitFor(() => {
+      expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    });
+  });
+
   it("can filter by director", () => {
     expect.hasAssertions();
     render(<WatchlistPage data={data} />);

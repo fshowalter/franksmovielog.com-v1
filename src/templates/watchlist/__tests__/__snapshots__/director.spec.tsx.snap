@@ -1644,9 +1644,7 @@ exports[`/watchlist/directors/{slug} can sort by release date with newest first 
     <img
       alt="A-: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -1722,9 +1720,7 @@ exports[`/watchlist/directors/{slug} can sort by release date with newest first 
     <img
       alt="C+: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
 </ul>
@@ -1808,9 +1804,7 @@ exports[`/watchlist/directors/{slug} can sort by release date with oldest first 
     <img
       alt="C+: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -1886,9 +1880,7 @@ exports[`/watchlist/directors/{slug} can sort by release date with oldest first 
     <img
       alt="A-: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -2964,9 +2956,7 @@ exports[`/watchlist/directors/{slug} can sort by title 1`] = `
     <img
       alt="A-: 5 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/5-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -3166,9 +3156,7 @@ exports[`/watchlist/directors/{slug} can sort by title 1`] = `
     <img
       alt="C+: 3 stars (out of 5)"
       class="listItemGradeCss"
-      height="14"
       src="/svg/3-stars.svg"
-      width="70"
     />
   </li>
   <li>
@@ -4480,9 +4468,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/3-stars.svg"
-                width="70"
               />
             </li>
             <li>
@@ -4557,9 +4543,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
               <img
                 alt="A-: 5 stars (out of 5)"
                 class="listItemGradeCss"
-                height="14"
                 src="/svg/5-stars.svg"
-                width="70"
               />
             </li>
             <li>
