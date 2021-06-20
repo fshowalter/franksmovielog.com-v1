@@ -1,38 +1,30 @@
 import { graphql } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
-import Layout from "../components/Layout";
-import RenderedMarkdown from "../components/RenderedMarkdown";
+import ArticlePage from "../components/ArticlePage";
 import Seo from "../components/Seo";
-import { articleCss, bodyCss, imageCss } from "./404.module.scss";
 
-export default function NotFoundPage({ data }: PageQueryResult): JSX.Element {
+export default function NotFoundPage({ data }: PageData): JSX.Element {
   const { backdrop, page } = data;
 
   return (
-    <Layout>
+    <>
       <Seo
         pageTitle="404: Not Found"
         description="Dick Laurent is dead."
         image={null}
         article
       />
-      <main>
-        <article className={articleCss}>
-          <GatsbyImage
-            image={backdrop.childImageSharp.gatsbyImageData}
-            alt="A lost highway to nowhere."
-            className={imageCss}
-            loading="eager"
-          />
-          <RenderedMarkdown className={bodyCss} text={page.html} />
-        </article>
-      </main>
-    </Layout>
+      <ArticlePage
+        image={backdrop.childImageSharp.gatsbyImageData}
+        alt="A lost highway."
+        articleText={page.html}
+      />
+    </>
   );
 }
 
-type PageQueryResult = {
+type PageData = {
   data: {
     backdrop: {
       childImageSharp: {
