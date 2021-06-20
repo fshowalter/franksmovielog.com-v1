@@ -1,13 +1,13 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import HomePageTemplate from "../home";
-import data from "./__fixtures__/home-page-queries";
+import HomePage from "../HomePage";
+import data from "./HomePage.fixtures";
 
-describe("/reviews/{slug}", () => {
+describe("/", () => {
   it("renders", () => {
     const { asFragment } = render(
-      <HomePageTemplate
+      <HomePage
         data={data}
         pageContext={{
           limit: 10,
@@ -27,7 +27,7 @@ describe("/reviews/{slug}", () => {
   it("sets page title for first page", (done) => {
     expect.hasAssertions();
     render(
-      <HomePageTemplate
+      <HomePage
         data={data}
         pageContext={{
           limit: 10,
@@ -52,7 +52,7 @@ describe("/reviews/{slug}", () => {
   it("sets page title for not-first page", (done) => {
     expect.hasAssertions();
     render(
-      <HomePageTemplate
+      <HomePage
         data={data}
         pageContext={{
           limit: 10,

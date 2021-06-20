@@ -16,7 +16,7 @@ async function resolveFieldForNode(fieldName, nodeItem, context, info, args) {
 
   const resolver = type.getFields()[fieldName].resolve;
 
-  return resolver(nodeItem, args, context, { fieldName });
+  return resolver(nodeItem, args, context, { ...info, fieldName });
 }
 
 function sliceReviewedMoviesForTitle(movies, titleImdbId) {
@@ -468,7 +468,7 @@ const ReviewedMoviesJson = {
           firstOnly: false,
           query: {
             filter: {
-              imdb: {
+              imdb_id: {
                 eq: source.imdb_id,
               },
               sequence: {
@@ -476,8 +476,8 @@ const ReviewedMoviesJson = {
               },
             },
             sort: {
-              fields: "[sequence]",
-              order: "[DESC]",
+              fields: ["sequence"],
+              order: ["DESC"],
             },
           },
         });

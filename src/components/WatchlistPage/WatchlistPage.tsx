@@ -1,4 +1,4 @@
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import { collator } from "../../utils/sort-utils";
 import toSentenceArray from "../../utils/to-sentence-array";
@@ -502,24 +502,3 @@ interface PageQueryResult {
     nodes: WatchlistMovie[];
   };
 }
-
-export const pageQuery = graphql`
-  query {
-    watchlist: allWatchlistMoviesJson(
-      sort: { fields: [release_date], order: ASC }
-    ) {
-      nodes {
-        imdbId: imdb_id
-        title
-        year
-        releaseDate: release_date
-        sortTitle: sort_title
-        reviewedMovieSlug
-        directorNames
-        performerNames
-        writerNames
-        collectionNames: collection_names
-      }
-    }
-  }
-`;

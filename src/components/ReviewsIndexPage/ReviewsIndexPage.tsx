@@ -8,6 +8,7 @@ import Label from "../Label";
 import Layout from "../Layout";
 import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
+import Seo from "../Seo";
 import StatsLink from "../StatsLink";
 import ToggleButton from "../ToggleButton";
 import reducer, { ActionType, initState } from "./reducer";
@@ -25,12 +26,16 @@ import {
   pageHeaderCss,
   rightCss,
   toggleGradesButtonCss,
-} from "./ReviewsPage.module.scss";
+} from "./ReviewsIndexPage.module.scss";
 
 /**
  * Renders the reviews page.
  */
-export default function ReviewsPage({ data }: { data: PageData }): JSX.Element {
+export default function ReviewsIndexPage({
+  data,
+}: {
+  data: PageQueryResult;
+}): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -41,6 +46,12 @@ export default function ReviewsPage({ data }: { data: PageData }): JSX.Element {
 
   return (
     <Layout>
+      <Seo
+        pageTitle="All Reviews"
+        description="A sortable and filterable list of all movie reviews on this site."
+        image={null}
+        article={false}
+      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader
@@ -148,7 +159,7 @@ export default function ReviewsPage({ data }: { data: PageData }): JSX.Element {
   );
 }
 
-interface PageData {
+interface PageQueryResult {
   reviews: {
     nodes: {
       releaseDate: string;

@@ -1,21 +1,19 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import ReviewPageTemplate from "../review";
-import data, {
-  dataWithCollectionAndCountries,
-} from "./__fixtures__/review-page-queries";
+import ReviewPage from "./ReviewPage";
+import data, { dataWithCollectionAndCountries } from "./ReviewPage.fixtures";
 
 describe("/reviews/{slug}", () => {
   it("renders", () => {
-    const { asFragment } = render(<ReviewPageTemplate data={data} />);
+    const { asFragment } = render(<ReviewPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders with multiple countries and a collection", () => {
     const { asFragment } = render(
-      <ReviewPageTemplate data={dataWithCollectionAndCountries} />
+      <ReviewPage data={dataWithCollectionAndCountries} />
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -26,7 +24,7 @@ describe("/reviews/{slug}", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<ReviewPageTemplate data={data} />);
+    render(<ReviewPage data={data} />);
 
     requestAnimationFrame(() => {
       expect(document.title).toStrictEqual("Rio Bravo (1959)");

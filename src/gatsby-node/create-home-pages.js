@@ -34,7 +34,7 @@ module.exports = async function createHomePages(graphql, reporter, createPage) {
 
     createPage({
       path: i === 0 ? `/` : `/page-${i + 1}/`,
-      component: path.resolve("./src/templates/home.tsx"),
+      component: path.resolve("./src/components/HomePage/HomePage.tsx"),
       context: {
         limit: perPage,
         skip,

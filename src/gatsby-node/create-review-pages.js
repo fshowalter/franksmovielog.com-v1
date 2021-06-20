@@ -5,6 +5,14 @@ module.exports = async function createReviewPages(
   reporter,
   createPage
 ) {
+  // Index page
+  createPage({
+    path: `/reviews/`,
+    component: path.resolve(
+      "./src/components/ReviewsIndexPage/ReviewsIndexPage.tsx"
+    ),
+  });
+
   const query = await graphql(
     `
       {
@@ -25,11 +33,11 @@ module.exports = async function createReviewPages(
     return;
   }
 
-  // Create review pages
+  // Review pages
   query.data.reviews.nodes.forEach((node) => {
     createPage({
       path: `/reviews/${node.slug}/`,
-      component: path.resolve("./src/templates/review.tsx"),
+      component: path.resolve("./src/components/ReviewPage/ReviewPage.tsx"),
       context: {
         imdbId: node.imdb_id,
       },

@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
@@ -7,6 +7,7 @@ import Grade from "../Grade";
 import Layout from "../Layout";
 import RelatedMovies from "../RelatedMovies";
 import RenderedMarkdown from "../RenderedMarkdown";
+import Seo from "../Seo";
 import WatchlistLinks from "../WatchlistLinks";
 import {
   akaContainerCss,
@@ -43,7 +44,7 @@ import {
   watchlistCss,
 } from "./ReviewPage.module.scss";
 
-function buildStructuredData(pageData: PageData) {
+function buildStructuredData(pageData: PageQueryResult) {
   const gradeMap: { [index: string]: number } = {
     A: 5,
     B: 4,
@@ -70,7 +71,7 @@ function buildStructuredData(pageData: PageData) {
   };
 }
 
-function Related(pageData: PageData): JSX.Element | null {
+function Related(pageData: PageQueryResult): JSX.Element | null {
   return (
     <div className={relatedCss}>
       {pageData.movie.watchlist.collections.map((collection) => (
@@ -149,94 +150,25 @@ function Related(pageData: PageData): JSX.Element | null {
   );
 }
 
-interface PageData {
-  movie: {
-    imdbId: string;
-    title: string;
-    year: number;
-    countries: string[];
-    runtimeMinutes: number;
-    lastReviewGrade: string;
-    lastReviewGradeValue: number;
-    akaTitles: string[];
-    principalCastNames: string[];
-    directorNames: string[];
-    browseMore: BrowseMoreMovie[];
-    backdrop: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    seoImage: {
-      childImageSharp: {
-        resize: {
-          src: string;
-        };
-      };
-    };
-    poster: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    reviews: {
-      frontmatter: {
-        grade: string;
-        date: string;
-        dateIso: string;
-        venue: string;
-        venueNotes: string;
-        sequence: number;
-      };
-      linkedHtml: string;
-    }[];
-    olderViewings: {
-      venue: string;
-      viewingDate: string;
-      sequence: number;
-    }[];
-    watchlist: {
-      performers: WatchlistEntity[];
-      directors: WatchlistEntity[];
-      writers: WatchlistEntity[];
-      collections: WatchlistEntity[];
-    };
-  };
-}
-
-interface BrowseMoreMovie {
-  imdbId: string;
-  title: string;
-  lastReviewGrade: string;
-  slug: string;
-  year: number;
-  backdrop: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
-interface WatchlistEntity {
-  name: string;
-  slug: string;
-  browseMore: BrowseMoreMovie[];
-  avatar: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
 /**
  * Renders a review page.
  */
-export default function Review({ data }: { data: PageData }): JSX.Element {
+export default function ReviewPage({
+  data,
+}: {
+  data: PageQueryResult;
+}): JSX.Element {
   const structuredData = buildStructuredData(data);
   const { movie } = data;
 
   return (
     <Layout>
+      <Seo
+        pageTitle={`${movie.title} (${movie.year})`}
+        description={`A review of the ${movie.year} film ${movie.title}.`}
+        image={movie.seoImage.childImageSharp.resize.src}
+        article
+      />
       <main className={containerCss}>
         {movie.backdrop && (
           <GatsbyImage
@@ -355,3 +287,312 @@ export default function Review({ data }: { data: PageData }): JSX.Element {
     </Layout>
   );
 }
+
+interface PageQueryResult {
+  movie: {
+    imdbId: string;
+    title: string;
+    year: number;
+    countries: string[];
+    runtimeMinutes: number;
+    lastReviewGrade: string;
+    akaTitles: string[];
+    principalCastNames: string[];
+    directorNames: string[];
+    browseMore: BrowseMoreMovie[];
+    backdrop: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      };
+    };
+    seoImage: {
+      childImageSharp: {
+        resize: {
+          src: string;
+        };
+      };
+    };
+    poster: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      };
+    };
+    reviews: {
+      frontmatter: {
+        grade: string;
+        date: string;
+        dateIso: string;
+        venue: string;
+        venueNotes: string;
+        sequence: number;
+      };
+      linkedHtml: string;
+    }[];
+    olderViewings: {
+      venue: string;
+      viewingDate: string;
+      sequence: number;
+    }[];
+    watchlist: {
+      performers: WatchlistEntity[];
+      directors: WatchlistEntity[];
+      writers: WatchlistEntity[];
+      collections: WatchlistEntity[];
+    };
+  };
+}
+
+interface BrowseMoreMovie {
+  imdbId: string;
+  title: string;
+  lastReviewGrade: string;
+  slug: string;
+  year: number;
+  backdrop: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+}
+
+interface WatchlistEntity {
+  name: string;
+  slug: string;
+  browseMore: BrowseMoreMovie[];
+  avatar: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+}
+
+export const pageQuery = graphql`
+  query ($imdbId: String!) {
+    movie: reviewedMoviesJson(imdb_id: { eq: $imdbId }) {
+      imdbId: imdb_id
+      title
+      year
+      countries
+      runtimeMinutes: runtime_minutes
+      lastReviewGrade
+      akaTitles: aka_titles
+      principalCastNames: principal_cast_names
+      directorNames: director_names
+      reviews {
+        frontmatter {
+          date(formatString: "dddd MMM D, YYYY")
+          dateIso: date(formatString: "Y-MM-DD")
+          grade
+          sequence
+          venue
+          venueNotes: venue_notes
+        }
+        linkedHtml
+      }
+      browseMore {
+        imdbId: imdb_id
+        title
+        lastReviewGrade
+        slug
+        year
+        backdrop {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [JPG, AVIF]
+              quality: 80
+              placeholder: TRACED_SVG
+              width: 309
+              breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
+              sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
+            )
+          }
+        }
+      }
+      olderViewings {
+        viewingDate: viewing_date(formatString: "ddd MMM DD, YYYY")
+        venue
+        sequence
+      }
+      backdrop {
+        childImageSharp {
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
+            quality: 80
+            width: 1000
+            placeholder: TRACED_SVG
+            breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
+            sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
+          )
+        }
+      }
+      seoImage: backdrop {
+        childImageSharp {
+          resize(toFormat: JPG, width: 1200, quality: 80) {
+            src
+          }
+        }
+      }
+      poster {
+        childImageSharp {
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
+            quality: 80
+            width: 250
+            placeholder: TRACED_SVG
+            breakpoints: [93, 141, 160, 186, 250, 282, 320, 500]
+            sizes: "(max-width: 414px) 93px, (max-width: 767px) 141px, (max-width: 1023px) 160px, 250px"
+          )
+        }
+      }
+      watchlist {
+        performers {
+          name
+          slug
+          avatar {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+                placeholder: TRACED_SVG
+              )
+            }
+          }
+          browseMore(movieImdbId: $imdbId) {
+            imdbId: imdb_id
+            title
+            lastReviewGrade
+            slug
+            year
+            backdrop {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
+                  quality: 80
+                  placeholder: TRACED_SVG
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
+                )
+              }
+            }
+          }
+        }
+        directors {
+          name
+          slug
+          avatar {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+                placeholder: TRACED_SVG
+              )
+            }
+          }
+          browseMore(movieImdbId: $imdbId) {
+            imdbId: imdb_id
+            title
+            lastReviewGrade
+            slug
+            year
+            backdrop {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
+                  quality: 80
+                  placeholder: TRACED_SVG
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
+                )
+              }
+            }
+          }
+        }
+        writers {
+          name
+          slug
+          avatar {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+                placeholder: TRACED_SVG
+              )
+            }
+          }
+          browseMore(movieImdbId: $imdbId) {
+            imdbId: imdb_id
+            title
+            lastReviewGrade
+            slug
+            year
+            backdrop {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
+                  quality: 80
+                  placeholder: TRACED_SVG
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
+                )
+              }
+            }
+          }
+        }
+        collections {
+          name
+          slug
+          avatar {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FIXED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 40
+                height: 40
+                placeholder: TRACED_SVG
+              )
+            }
+          }
+          browseMore(movieImdbId: $imdbId) {
+            imdbId: imdb_id
+            title
+            lastReviewGrade
+            slug
+            year
+            backdrop {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  formats: [JPG, AVIF]
+                  quality: 80
+                  placeholder: TRACED_SVG
+                  width: 309
+                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
+                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
+                )
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

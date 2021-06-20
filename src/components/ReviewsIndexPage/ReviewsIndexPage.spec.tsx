@@ -2,14 +2,12 @@
 import { act, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
-import ReviewsPage from "../reviews";
-import data from "./__fixtures__/reviews-page-query";
-
-jest.mock("../../components/Seo/Seo.tsx");
+import ReviewsIndexPage from "./ReviewsIndexPage";
+import data from "./ReviewsIndexPage.fixtures";
 
 describe("/reviews", () => {
   it("renders", () => {
-    const { asFragment } = render(<ReviewsPage data={data} />);
+    const { asFragment } = render(<ReviewsIndexPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -19,7 +17,7 @@ describe("/reviews", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     requestAnimationFrame(() => {
       expect(document.title).toStrictEqual("All Reviews");
@@ -29,7 +27,7 @@ describe("/reviews", () => {
 
   it("can filter by title", async () => {
     expect.hasAssertions();
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
@@ -44,7 +42,7 @@ describe("/reviews", () => {
   });
 
   it("can sort by grade with best first", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -55,7 +53,7 @@ describe("/reviews", () => {
   });
 
   it("can sort by grade with worst first", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -66,7 +64,7 @@ describe("/reviews", () => {
   });
 
   it("can sort by title", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
@@ -74,7 +72,7 @@ describe("/reviews", () => {
   });
 
   it("can sort by release date with oldest first", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -85,7 +83,7 @@ describe("/reviews", () => {
   });
 
   it("can sort by release date with newest first", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -96,7 +94,7 @@ describe("/reviews", () => {
   });
 
   it("can filter by release year", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     const inputs = screen.getAllByLabelText("Release Year");
 
@@ -109,7 +107,7 @@ describe("/reviews", () => {
   });
 
   it("can show grades", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     userEvent.click(screen.getByText("Show Grades"));
 
@@ -117,7 +115,7 @@ describe("/reviews", () => {
   });
 
   it("can show stars", () => {
-    render(<ReviewsPage data={data} />);
+    render(<ReviewsIndexPage data={data} />);
 
     userEvent.click(screen.getByText("Show Grades"));
     userEvent.click(screen.getByText("Show Stars"));
