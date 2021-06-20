@@ -1,0 +1,209 @@
+import applyFilters from "../../utils/apply-filters";
+import {
+  collator,
+  sortNumberAsc,
+  sortNumberDesc,
+  sortStringAsc,
+  sortStringDesc,
+} from "../../utils/sort-utils";
+
+interface Viewing {
+  title: string;
+  year: number;
+  releaseDate: string;
+  viewingDate: string;
+  sequence: number;
+  venue: string;
+  sortTitle: string;
+  slug: string | null;
+}
+
+/**
+ * Sorts a given collection of viewings using the given sort function key.
+ * @param viewings The collection to sort.
+ * @param sortOrder The sort function key.
+ */
+function sortViewings(viewings: Viewing[], sortOrder: string) {
+  const sortMap: Record<string, (a: Viewing, b: Viewing) => number> = {
+    "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
+    "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
+    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
+    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
+    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+  };
+
+  const comparer = sortMap[sortOrder];
+  return viewings.sort(comparer);
+}
+
+/**
+ * Parses the given viewings and returns the [min, max] release years.
+ * @param viewings The viewings to parse.
+ */
+function minMaxReleaseYearsForViewings(viewings: Viewing[]) {
+  const releaseYears = viewings
+    .map((viewing) => {
+      return viewing.year;
+    })
+    .sort();
+
+  const minYear = releaseYears[0];
+  const maxYear = releaseYears[releaseYears.length - 1];
+
+  return [minYear, maxYear];
+}
+
+/** The page state. */
+type State = {
+  /** All possible viewings. */
+  allViewings: Viewing[];
+  /** Viewings matching the current filters. */
+  filteredViewings: Viewing[];
+  /** The active filters. */
+  filters: Record<string, (viewing: Viewing) => boolean>;
+  /** The minimum year for the release date filter. */
+  minYear: number;
+  /** The maximum year for the release date filter. */
+  maxYear: number;
+  /** The active sort value. */
+  sortValue: string;
+};
+
+/**
+ * Initializes the page state.
+ */
+export function initState({ viewings }: { viewings: Viewing[] }): State {
+  const [minYear, maxYear] = minMaxReleaseYearsForViewings(viewings);
+
+  return {
+    allViewings: viewings,
+    filteredViewings: viewings,
+    filters: {},
+    minYear,
+    maxYear,
+    sortValue: "viewing-date-desc",
+  };
+}
+
+export enum ActionTypes {
+  FILTER_TITLE = "FILTER_TITLE",
+  FILTER_VENUE = "FILTER_VENUE",
+  FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
+  SORT = "SORT",
+}
+
+/** Action to filter by title. */
+interface FilterTitleAction {
+  type: ActionTypes.FILTER_TITLE;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by title. */
+interface FilterVenueAction {
+  type: ActionTypes.FILTER_VENUE;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by release year. */
+interface FilterReleaseYearAction {
+  type: ActionTypes.FILTER_RELEASE_YEAR;
+  /** The minimum and maximum years to bound the filter window. */
+  values: [number, number];
+}
+
+/** Action to sort. */
+interface SortAction {
+  type: ActionTypes.SORT;
+  /** The sorter to apply. */
+  value: string;
+}
+
+type Action =
+  | FilterTitleAction
+  | FilterReleaseYearAction
+  | FilterVenueAction
+  | SortAction;
+
+/**
+ * Applies the given action to the given state, returning a new State object.
+ * @param state The current state.
+ * @param action The action to apply.
+ */
+export default function reducer(state: State, action: Action): State {
+  // eslint-disable-line consistent-return
+  let filters;
+  let filteredViewings;
+
+  switch (action.type) {
+    case ActionTypes.FILTER_TITLE: {
+      const regex = new RegExp(action.value, "i");
+      filters = {
+        ...state.filters,
+        title: (viewing: Viewing) => {
+          return regex.test(viewing.title);
+        },
+      };
+      filteredViewings = sortViewings(
+        applyFilters<Viewing>({ collection: state.allViewings, filters }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredViewings,
+      };
+    }
+    case ActionTypes.FILTER_VENUE: {
+      filters = {
+        ...state.filters,
+        venue: (viewing: Viewing) => {
+          if (action.value === "All") {
+            return true;
+          }
+
+          return viewing.venue === action.value;
+        },
+      };
+      filteredViewings = sortViewings(
+        applyFilters<Viewing>({ collection: state.allViewings, filters }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredViewings,
+      };
+    }
+    case ActionTypes.FILTER_RELEASE_YEAR: {
+      filters = {
+        ...state.filters,
+        releaseYear: (viewing: Viewing) => {
+          const releaseYear = viewing.year;
+          return (
+            releaseYear >= action.values[0] && releaseYear <= action.values[1]
+          );
+        },
+      };
+      filteredViewings = sortViewings(
+        applyFilters<Viewing>({ collection: state.allViewings, filters }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredViewings,
+      };
+    }
+    case ActionTypes.SORT: {
+      filteredViewings = sortViewings(state.filteredViewings, action.value);
+      return {
+        ...state,
+        sortValue: action.value,
+        filteredViewings,
+      };
+    }
+    // no default
+  }
+}
