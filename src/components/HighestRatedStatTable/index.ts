@@ -4,4 +4,4 @@ export {
   ReviewDetail,
   TableLink,
 } from "./HighestRatedStatTable";
-export type { Movie, Review } from "./HighestRatedStatTable";
+export type { Review } from "./HighestRatedStatTable";

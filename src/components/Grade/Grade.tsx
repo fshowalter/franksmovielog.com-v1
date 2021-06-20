@@ -33,13 +33,11 @@ type CommonGradeProps = {
 type LetterGradeProps = {
   /** The grade letter value. */
   grade: string;
-  gradeValue: never;
 } & CommonGradeProps;
 
 type ValueGradeProps = {
   /** The grade letter value. */
   gradeValue: number;
-  grade: never;
 } & CommonGradeProps;
 
 type GradeProps = LetterGradeProps | ValueGradeProps;
@@ -51,12 +49,12 @@ export default function Grade(props: GradeProps): JSX.Element | null {
 
   console.log(props);
 
-  if (props.grade) {
+  if ("grade" in props) {
     grade = props.grade;
     [src, alt] = gradeMap[props.grade[0]];
   }
 
-  if (props.gradeValue) {
+  if ("gradeValue" in props) {
     const gradeValueInt = Math.round(props.gradeValue);
 
     grade = props.gradeValue.toString();

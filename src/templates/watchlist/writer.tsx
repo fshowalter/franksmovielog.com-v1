@@ -348,20 +348,33 @@ export default function WatchlistDirectorTemplate({
   );
 }
 
-type WatchlistMovie = {
+type UnreviewedWatchlistMovie = {
   imdbId: string;
   title: string;
   year: number;
-  lastReviewGrade: null | string;
+  lastReviewGrade: null;
   sortTitle: string;
-  reviewedMovieSlug: null | string;
+  reviewedMovieSlug: null;
   releaseDate: string;
-  backdrop: null | {
+  backdrop: null;
+};
+
+type ReviewedWatchlistMovie = {
+  imdbId: string;
+  title: string;
+  year: number;
+  lastReviewGrade: string;
+  sortTitle: string;
+  reviewedMovieSlug: string;
+  releaseDate: string;
+  backdrop: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
     };
   };
 };
+
+type WatchlistMovie = UnreviewedWatchlistMovie | ReviewedWatchlistMovie;
 
 interface PageQueryResult {
   writer: {
