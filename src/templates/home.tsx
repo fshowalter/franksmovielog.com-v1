@@ -1,32 +1,8 @@
-import { graphql, Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useRef } from "react";
-import DateIcon from "../components/DateIcon";
-import Grade from "../components/Grade";
-import Layout from "../components/Layout";
-import { PaginationWithLinks } from "../components/Pagination";
-import RenderedMarkdown from "../components/RenderedMarkdown";
+import { graphql } from "gatsby";
+import { IGatsbyImageData } from "gatsby-plugin-image";
+import React from "react";
+import HomePage from "../components/HomePage";
 import Seo from "../components/Seo";
-import WatchlistLinks from "../components/WatchlistLinks";
-import toSentenceArray from "../utils/to-sentence-array";
-import {
-  articleBodyCss,
-  articleFooterCss,
-  articleHeadingCss,
-  containerCss,
-  dateCss,
-  imageLinkCss,
-  listCss,
-  listItemCss,
-  paginationCss,
-  reviewCreditsCss,
-  reviewCss,
-  reviewGradeCss,
-  reviewHeaderCss,
-  reviewYearCss,
-  watchlistLinksCss,
-  wideCss,
-} from "./home.module.scss";
 
 /**
  * Renders the home (index) page.
@@ -35,16 +11,16 @@ export default function HomeTemplate({
   pageContext,
   data,
 }: {
-  pageContext: PageContext;
+  pageContext: {
+    limit: number;
+    skip: number;
+    numberOfItems: number;
+    currentPage: number;
+  };
   data: PageQueryResult;
 }): JSX.Element {
-  const listHeader = useRef<HTMLDivElement>(null);
-  const {
-    update: { nodes: updates },
-  } = data;
-
   return (
-    <Layout>
+    <>
       <Seo
         pageTitle={
           pageContext.currentPage === 1
@@ -55,94 +31,9 @@ export default function HomeTemplate({
         article={false}
         image={null}
       />
-      <main className={containerCss} ref={listHeader}>
-        <ol className={listCss}>
-          {updates.map((update, index) => {
-            const review = update;
-            const isWide =
-              index === 0 ||
-              (index === updates.length - 1 && updates.length % 2 === 0);
-            const listItemValue =
-              pageContext.numberOfItems - pageContext.skip - index;
-            const movie = update.reviewedMovie;
-
-            return (
-              <li
-                key={review.frontmatter.sequence}
-                value={listItemValue}
-                className={`${listItemCss} ${isWide ? wideCss : ""}`}
-              >
-                <article className={`${reviewCss} ${isWide ? wideCss : ""}`}>
-                  <Link
-                    rel="canonical"
-                    className={imageLinkCss}
-                    to={`/reviews/${review.frontmatter.slug}/`}
-                  >
-                    {movie.backdrop && (
-                      <GatsbyImage
-                        image={movie.backdrop.childImageSharp.gatsbyImageData}
-                        alt={`A still from ${movie.title} (${movie.year})`}
-                        loading={index === 0 ? "eager" : "lazy"}
-                      />
-                    )}
-                  </Link>
-                  <header className={reviewHeaderCss}>
-                    <h2 className={articleHeadingCss}>
-                      <Link
-                        to={`/reviews/${review.frontmatter.slug}/`}
-                        rel="canonical"
-                      >
-                        {movie.title}{" "}
-                        <span className={reviewYearCss}>{movie.year}</span>
-                      </Link>
-                    </h2>
-                    <Grade
-                      grade={review.frontmatter.grade}
-                      className={reviewGradeCss}
-                    />
-                    <p className={reviewCreditsCss}>
-                      Directed by {toSentenceArray(movie.directorNames)}.
-                      Starring {toSentenceArray(movie.principalCastNames)}.
-                    </p>
-                  </header>
-                  <RenderedMarkdown
-                    className={articleBodyCss}
-                    text={review.linkedExcerpt}
-                    tag="main"
-                  />
-                  <footer className={articleFooterCss}>
-                    <div className={dateCss}>
-                      <DateIcon /> {review.frontmatter.date}
-                    </div>
-                    <WatchlistLinks
-                      movie={movie}
-                      className={watchlistLinksCss}
-                    />
-                  </footer>
-                </article>
-              </li>
-            );
-          })}
-        </ol>
-        <PaginationWithLinks
-          className={paginationCss}
-          currentPage={pageContext.currentPage}
-          urlRoot="/"
-          perPage={pageContext.limit}
-          numberOfItems={pageContext.numberOfItems}
-          prevText="Newer"
-          nextText="Older"
-        />
-      </main>
-    </Layout>
+      <HomePage pageContext={pageContext} data={data} />
+    </>
   );
-}
-
-export interface PageContext {
-  limit: number;
-  skip: number;
-  numberOfItems: number;
-  currentPage: number;
 }
 
 interface WatchlistEntity {
@@ -155,39 +46,35 @@ interface WatchlistEntity {
   };
 }
 
-interface Movie {
-  title: string;
-  year: number;
-  principalCastNames: string[];
-  directorNames: string[];
-  backdrop: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-  watchlist: {
-    performers: WatchlistEntity[];
-    directors: WatchlistEntity[];
-    writers: WatchlistEntity[];
-    collections: WatchlistEntity[];
-  };
-}
-
-interface Review {
-  frontmatter: {
-    imdbId: string;
-    slug: string;
-    grade: string;
-    date: string;
-    sequence: number;
-  };
-  linkedExcerpt: string;
-  reviewedMovie: Movie;
-}
-
 export interface PageQueryResult {
   update: {
-    nodes: Review[];
+    nodes: {
+      frontmatter: {
+        imdbId: string;
+        slug: string;
+        grade: string;
+        date: string;
+        sequence: number;
+      };
+      linkedExcerpt: string;
+      reviewedMovie: {
+        title: string;
+        year: number;
+        principalCastNames: string[];
+        directorNames: string[];
+        backdrop: {
+          childImageSharp: {
+            gatsbyImageData: IGatsbyImageData;
+          };
+        };
+        watchlist: {
+          performers: WatchlistEntity[];
+          directors: WatchlistEntity[];
+          writers: WatchlistEntity[];
+          collections: WatchlistEntity[];
+        };
+      };
+    }[];
   };
 }
 

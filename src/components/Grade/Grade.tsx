@@ -47,8 +47,6 @@ export default function Grade(props: GradeProps): JSX.Element | null {
   let alt = "";
   let grade = "";
 
-  console.log(props);
-
   if ("grade" in props) {
     grade = props.grade;
     [src, alt] = gradeMap[props.grade[0]];
