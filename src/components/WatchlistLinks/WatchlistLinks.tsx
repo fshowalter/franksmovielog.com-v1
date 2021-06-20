@@ -36,10 +36,6 @@ function WatchlistItem({
   entity: WatchlistEntity;
   children: React.ReactNode;
 }): JSX.Element | null {
-  if (!entity) {
-    return null;
-  }
-
   return (
     <li>
       <Link to={to} className={linkCss}>
@@ -57,16 +53,12 @@ function WatchlistItem({
 }
 
 function WatchlistLinks({
-  movie = null,
+  movie,
   className = null,
 }: {
-  movie?: Movie | null;
+  movie: Movie;
   className?: string | null;
 }): JSX.Element | null {
-  if (!movie) {
-    return null;
-  }
-
   const { watchlist } = movie;
 
   return (

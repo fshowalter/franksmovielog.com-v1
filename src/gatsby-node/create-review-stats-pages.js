@@ -28,18 +28,10 @@ module.exports = async function createReviewStatsPages(
   years.forEach((year) => {
     createPage({
       path: `/reviews/stats/${year}/`,
-      component: path.resolve("./src/templates/review-stats.tsx"),
+      component: path.resolve("./src/templates/review-stats-for-year.tsx"),
       context: {
         yearScope: year,
       },
     });
-  });
-
-  createPage({
-    path: `/reviews/stats/`,
-    component: path.resolve("./src/templates/review-stats.tsx"),
-    context: {
-      yearScope: "all",
-    },
   });
 };

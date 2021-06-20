@@ -11,12 +11,8 @@ import {
 export interface Review {
   prettyDate: string;
   gradeValue: number;
-  movie: Movie;
-}
-
-export interface Movie {
   title: string;
-  year: string;
+  year: number;
   slug: string;
 }
 
@@ -39,12 +35,12 @@ export function TableLink({
   );
 }
 
-export function MovieTitle({ movie }: { movie: Movie }): JSX.Element {
-  if (movie.slug) {
+export function MovieTitle({ review }: { review: Review }): JSX.Element {
+  if (review.slug) {
     return (
-      <TableLink to={`/reviews/${movie.slug}`}>
+      <TableLink to={`/reviews/${review.slug}`}>
         <>
-          {movie.title} <span className={titleYearCss}>{movie.year}</span>
+          {review.title} <span className={titleYearCss}>{review.year}</span>
         </>
       </TableLink>
     );
@@ -52,7 +48,7 @@ export function MovieTitle({ movie }: { movie: Movie }): JSX.Element {
 
   return (
     <>
-      {movie.title} <span className={titleYearCss}>{movie.year}</span>
+      {review.title} <span className={titleYearCss}>{review.year}</span>
     </>
   );
 }

@@ -211,17 +211,13 @@ exports[`/watchlist/writers/{slug} can filter by release year 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Nightbreed
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Nightbreed
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1990
-      </span>
-    </div>
+      1990
+    </span>
   </li>
 </ul>
 `;
@@ -445,17 +441,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Books of Blood
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Books of Blood
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2020
-      </span>
-    </div>
+      2020
+    </span>
   </li>
   <li>
     <div
@@ -507,17 +499,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Dread
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Dread
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2009
-      </span>
-    </div>
+      2009
+    </span>
   </li>
   <li>
     <div
@@ -569,17 +557,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Book of Blood
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Book of Blood
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2009
-      </span>
-    </div>
+      2009
+    </span>
   </li>
   <li>
     <div
@@ -631,17 +615,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    The Midnight Meat Train
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      The Midnight Meat Train
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2008
-      </span>
-    </div>
+      2008
+    </span>
   </li>
   <li>
     <div
@@ -693,17 +673,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Lord of Illusions
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Lord of Illusions
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1995
-      </span>
-    </div>
+      1995
+    </span>
   </li>
   <li>
     <div
@@ -755,17 +731,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Candyman: Farewell to the Flesh
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Candyman: Farewell to the Flesh
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1995
-      </span>
-    </div>
+      1995
+    </span>
   </li>
   <li>
     <div
@@ -817,17 +789,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Candyman
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Candyman
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1992
-      </span>
-    </div>
+      1992
+    </span>
   </li>
   <li>
     <div
@@ -879,17 +847,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Nightbreed
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Nightbreed
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1990
-      </span>
-    </div>
+      1990
+    </span>
   </li>
   <li>
     <a
@@ -1097,17 +1061,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Rawhead Rex
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Rawhead Rex
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1986
-      </span>
-    </div>
+      1986
+    </span>
   </li>
   <li>
     <div
@@ -1159,17 +1119,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Underworld
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Underworld
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1985
-      </span>
-    </div>
+      1985
+    </span>
   </li>
 </ul>
 `;
@@ -1229,17 +1185,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Underworld
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Underworld
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1985
-      </span>
-    </div>
+      1985
+    </span>
   </li>
   <li>
     <div
@@ -1291,17 +1243,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Rawhead Rex
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Rawhead Rex
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1986
-      </span>
-    </div>
+      1986
+    </span>
   </li>
   <li>
     <a
@@ -1509,17 +1457,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Nightbreed
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Nightbreed
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1990
-      </span>
-    </div>
+      1990
+    </span>
   </li>
   <li>
     <div
@@ -1571,17 +1515,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Candyman
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Candyman
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1992
-      </span>
-    </div>
+      1992
+    </span>
   </li>
   <li>
     <div
@@ -1633,17 +1573,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Candyman: Farewell to the Flesh
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Candyman: Farewell to the Flesh
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1995
-      </span>
-    </div>
+      1995
+    </span>
   </li>
   <li>
     <div
@@ -1695,17 +1631,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Lord of Illusions
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Lord of Illusions
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1995
-      </span>
-    </div>
+      1995
+    </span>
   </li>
   <li>
     <div
@@ -1757,17 +1689,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    The Midnight Meat Train
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      The Midnight Meat Train
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2008
-      </span>
-    </div>
+      2008
+    </span>
   </li>
   <li>
     <div
@@ -1819,17 +1747,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Book of Blood
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Book of Blood
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2009
-      </span>
-    </div>
+      2009
+    </span>
   </li>
   <li>
     <div
@@ -1881,17 +1805,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Dread
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Dread
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2009
-      </span>
-    </div>
+      2009
+    </span>
   </li>
   <li>
     <div
@@ -1943,17 +1863,13 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Books of Blood
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Books of Blood
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2020
-      </span>
-    </div>
+      2020
+    </span>
   </li>
 </ul>
 `;
@@ -2013,17 +1929,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Book of Blood
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Book of Blood
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2009
-      </span>
-    </div>
+      2009
+    </span>
   </li>
   <li>
     <div
@@ -2075,17 +1987,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Books of Blood
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Books of Blood
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2020
-      </span>
-    </div>
+      2020
+    </span>
   </li>
   <li>
     <div
@@ -2137,17 +2045,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Candyman
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Candyman
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1992
-      </span>
-    </div>
+      1992
+    </span>
   </li>
   <li>
     <div
@@ -2199,17 +2103,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Candyman: Farewell to the Flesh
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Candyman: Farewell to the Flesh
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1995
-      </span>
-    </div>
+      1995
+    </span>
   </li>
   <li>
     <div
@@ -2261,17 +2161,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Dread
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Dread
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2009
-      </span>
-    </div>
+      2009
+    </span>
   </li>
   <li>
     <a
@@ -2479,17 +2375,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Lord of Illusions
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Lord of Illusions
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1995
-      </span>
-    </div>
+      1995
+    </span>
   </li>
   <li>
     <div
@@ -2541,17 +2433,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    The Midnight Meat Train
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      The Midnight Meat Train
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        2008
-      </span>
-    </div>
+      2008
+    </span>
   </li>
   <li>
     <div
@@ -2603,17 +2491,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Nightbreed
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Nightbreed
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1990
-      </span>
-    </div>
+      1990
+    </span>
   </li>
   <li>
     <div
@@ -2665,17 +2549,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Rawhead Rex
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Rawhead Rex
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1986
-      </span>
-    </div>
+      1986
+    </span>
   </li>
   <li>
     <div
@@ -2727,17 +2607,13 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
         const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
       </script>
     </div>
-    <div
-      class="listItemTitleCss"
+    Underworld
+     
+    <span
+      class="listItemTitleYearCss"
     >
-      Underworld
-       
-      <span
-        class="listItemTitleYearCss"
-      >
-        1985
-      </span>
-    </div>
+      1985
+    </span>
   </li>
 </ul>
 `;
@@ -3158,16 +3034,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Underworld 
+              <span
+                class="listItemTitleYearCss"
               >
-                Underworld 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  1985
-                </span>
-              </div>
+                1985
+              </span>
             </li>
             <li>
               <div
@@ -3219,16 +3091,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Rawhead Rex 
+              <span
+                class="listItemTitleYearCss"
               >
-                Rawhead Rex 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  1986
-                </span>
-              </div>
+                1986
+              </span>
             </li>
             <li>
               <a
@@ -3434,16 +3302,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Nightbreed 
+              <span
+                class="listItemTitleYearCss"
               >
-                Nightbreed 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  1990
-                </span>
-              </div>
+                1990
+              </span>
             </li>
             <li>
               <div
@@ -3495,16 +3359,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Candyman 
+              <span
+                class="listItemTitleYearCss"
               >
-                Candyman 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  1992
-                </span>
-              </div>
+                1992
+              </span>
             </li>
             <li>
               <div
@@ -3556,16 +3416,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Candyman: Farewell to the Flesh 
+              <span
+                class="listItemTitleYearCss"
               >
-                Candyman: Farewell to the Flesh 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  1995
-                </span>
-              </div>
+                1995
+              </span>
             </li>
             <li>
               <div
@@ -3617,16 +3473,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Lord of Illusions 
+              <span
+                class="listItemTitleYearCss"
               >
-                Lord of Illusions 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  1995
-                </span>
-              </div>
+                1995
+              </span>
             </li>
             <li>
               <div
@@ -3678,16 +3530,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              The Midnight Meat Train 
+              <span
+                class="listItemTitleYearCss"
               >
-                The Midnight Meat Train 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  2008
-                </span>
-              </div>
+                2008
+              </span>
             </li>
             <li>
               <div
@@ -3739,16 +3587,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Book of Blood 
+              <span
+                class="listItemTitleYearCss"
               >
-                Book of Blood 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  2009
-                </span>
-              </div>
+                2009
+              </span>
             </li>
             <li>
               <div
@@ -3800,16 +3644,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Dread 
+              <span
+                class="listItemTitleYearCss"
               >
-                Dread 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  2009
-                </span>
-              </div>
+                2009
+              </span>
             </li>
             <li>
               <div
@@ -3861,16 +3701,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
                 </script>
               </div>
-              <div
-                class="listItemTitleCss"
+              Books of Blood 
+              <span
+                class="listItemTitleYearCss"
               >
-                Books of Blood 
-                <span
-                  class="listItemTitleYearCss"
-                >
-                  2020
-                </span>
-              </div>
+                2020
+              </span>
             </li>
           </ul>
         </div>

@@ -22,36 +22,23 @@ const gradeValueMap: { [key: number]: [string, string] } = {
   1: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
 
-type GradeProps =
-  | {
-      /** The grade letter value. */
-      grade: string;
-      /** The grade number value. */
-      gradeValue?: number;
-      /** The width of the stars image. */
-      width?: number;
-      /** The height of the stars image. */
-      height?: number;
-      /** The CSS class name of the stars image. */
-      className?: string;
-    }
-  | {
-      /** The grade letter value. */
-      grade?: string;
-      /** The grade number value. */
-      gradeValue: number;
-      /** The width of the stars image. */
-      width?: number;
-      /** The height of the stars image. */
-      height?: number;
-      /** The CSS class name of the stars image. */
-      className?: string;
-    };
+type GradeProps = {
+  /** The grade letter value. */
+  grade: string | null;
+  /** The grade float value. */
+  gradeValue: number | null;
+  /** The width of the stars image. */
+  width?: number;
+  /** The height of the stars image. */
+  height?: number;
+  /** The CSS class name of the stars image. */
+  className?: string;
+};
 
 export default function Grade({
   grade,
   gradeValue,
-  className,
+  className = undefined,
   width = 70,
   height = 14,
 }: GradeProps): JSX.Element | null {
@@ -71,13 +58,13 @@ export default function Grade({
   }
 
   if (gradeValue) {
-    const roundedGradeValue = Math.round(gradeValue);
+    const gradeValueInt = Math.round(gradeValue);
 
-    if (!(roundedGradeValue in gradeValueMap)) {
+    if (!(gradeValueInt in gradeValueMap)) {
       return null;
     }
 
-    [src, alt] = gradeValueMap[roundedGradeValue];
+    [src, alt] = gradeValueMap[gradeValueInt];
   }
 
   return (
@@ -90,11 +77,3 @@ export default function Grade({
     />
   );
 }
-
-Grade.defaultProps = {
-  width: 70,
-  height: 14,
-  className: null,
-  grade: null,
-  gradeValue: null,
-};

@@ -3,7 +3,7 @@ import { act, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import ViewingsPage from "../viewings";
-import data from "./__fixtures__/viewings-page-queries";
+import data from "./__fixtures__/viewings-page-query";
 
 jest.mock("../../components/Seo/Seo.tsx");
 

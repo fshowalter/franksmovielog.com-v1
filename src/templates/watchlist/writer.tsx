@@ -115,7 +115,7 @@ function WatchlistEntityProgress({
 }
 
 function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
-  return filteredMovies.filter((movie) => movie.slug).length;
+  return filteredMovies.filter((movie) => movie.reviewedMovieSlug).length;
 }
 
 const FILTER_TITLE = "FILTER_TITLE";
@@ -211,10 +211,13 @@ function ListItem({
   movie: WatchlistMovie;
   defaultBackdrop: IGatsbyImageData;
 }): JSX.Element {
-  if (movie.slug && movie.lastReviewGrade) {
+  if (movie.reviewedMovieSlug) {
     return (
       <li>
-        <Link className={listItemImageLinkCss} to={`/reviews/${movie.slug}/`}>
+        <Link
+          className={listItemImageLinkCss}
+          to={`/reviews/${movie.reviewedMovieSlug}/`}
+        >
           {movie.backdrop && (
             <GatsbyImage
               image={movie.backdrop.childImageSharp.gatsbyImageData}
@@ -223,12 +226,14 @@ function ListItem({
           )}
         </Link>
         <div className={listItemTitleCss}>
-          <Link to={`/reviews/${movie.slug}/`}>
+          <Link to={`/reviews/${movie.reviewedMovieSlug}/`}>
             {movie.title}{" "}
             <span className={listItemTitleYearCss}>{movie.year}</span>
           </Link>
         </div>
-        <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
+        {movie.lastReviewGrade && (
+          <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
+        )}
       </li>
     );
   }
@@ -236,9 +241,7 @@ function ListItem({
   return (
     <li>
       <GatsbyImage image={defaultBackdrop} alt="An unreviewed title." />
-      <div className={listItemTitleCss}>
-        {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
-      </div>
+      {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
     </li>
   );
 }
@@ -351,7 +354,7 @@ type WatchlistMovie = {
   year: number;
   lastReviewGrade: null | string;
   sortTitle: string;
-  slug: null | string;
+  reviewedMovieSlug: null | string;
   releaseDate: string;
   backdrop: null | {
     childImageSharp: {
@@ -422,8 +425,8 @@ export const pageQuery = graphql`
         imdbId: imdb_id
         title
         year
-        lastReviewGrade: last_review_grade
-        slug: reviews_slug
+        lastReviewGrade
+        reviewedMovieSlug
         sortTitle: sort_title
         releaseDate: release_date
         backdrop {

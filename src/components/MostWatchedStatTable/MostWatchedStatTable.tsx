@@ -11,13 +11,15 @@ import {
 export interface Viewing {
   prettyDate: string;
   venue: string;
-  movie: Movie;
+  title: string;
+  year: number;
+  slug: string | null;
 }
 
 export interface Movie {
   title: string;
-  year: string;
-  slug: string;
+  year: number;
+  slug: string | null;
 }
 
 export interface HasViewings {

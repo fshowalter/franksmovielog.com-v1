@@ -35,10 +35,10 @@ export default function AllTimeViewingStatsTemplate({
       <ViewingStats
         headingText="All-Time Viewing Stats"
         taglineText={`${(
-          data.years.nodes.length - 1
+          data.year.nodes.length - 1
         ).toString()} Years in Review`}
         currentYear={pageContext.yearScope}
-        years={data.years.nodes.map((node) => node.year)}
+        years={data.year.nodes.map((node) => node.year)}
         stats={[
           {
             number: overall.viewingCount,
@@ -68,41 +68,17 @@ export interface PageContext {
   yearScope: string;
 }
 
-export interface Person {
+export interface MostWatchedPerson {
   fullName: string;
-  slug: string;
-}
-
-export interface Viewing {
-  prettyDate: string;
-  venue: string;
-  movie: Movie;
-}
-
-export interface Movie {
-  title: string;
-  year: string;
-  slug: string;
-}
-
-export interface PersonWithViewings extends Person {
+  slug: string | null;
   viewingCount: number;
-  viewings: Viewing[];
-}
-
-export interface MovieWithViewings extends Movie {
-  viewings: Viewing[];
-  viewingCount: number;
-}
-
-export interface DecadeStats {
-  decade: string;
-  viewingCount: number;
-}
-
-export interface VenueStats {
-  venue: string;
-  viewingCount: number;
+  viewings: {
+    prettyDate: string;
+    venue: string;
+    title: string;
+    year: number;
+    slug: string | null;
+  }[];
 }
 
 export interface PageQueryResult {
@@ -112,29 +88,42 @@ export interface PageQueryResult {
     viewingCount: number;
   };
   decade: {
-    stats: DecadeStats[];
+    stats: {
+      decade: string;
+      viewingCount: number;
+    }[];
   };
   venue: {
-    stats: VenueStats[];
+    stats: {
+      name: string;
+      viewingCount: number;
+    }[];
   };
   mostWatchedMovies: {
-    movies: Movie[];
+    movies: {
+      title: string;
+      year: number;
+      slug: string | null;
+      viewings: {
+        prettyDate: string;
+        venue: string;
+      }[];
+      viewingCount: number;
+    }[];
   };
   mostWatchedDirectors: {
-    directors: PersonWithViewings[];
+    directors: MostWatchedPerson[];
   };
   mostWatchedPerformers: {
-    performers: PersonWithViewings[];
+    performers: MostWatchedPerson[];
   };
   mostWatchedWriters: {
-    writers: PersonWithViewings[];
+    writers: MostWatchedPerson[];
   };
-  years: {
-    nodes: [
-      {
-        year: string;
-      }
-    ];
+  year: {
+    nodes: {
+      year: string;
+    }[];
   };
 }
 
@@ -153,7 +142,7 @@ export const pageQuery = graphql`
     }
     venue: viewingCountsForVenuesJson(viewing_year: { eq: $yearScope }) {
       stats: venue_stats {
-        venue
+        name
         viewingCount: viewing_count
       }
     }
@@ -179,11 +168,9 @@ export const pageQuery = graphql`
         viewings {
           prettyDate: date(formatString: "ddd MMM D, YYYY")
           venue
-          movie {
-            title
-            year
-            slug
-          }
+          title
+          year
+          slug
         }
       }
     }
@@ -197,11 +184,9 @@ export const pageQuery = graphql`
         viewings {
           prettyDate: date(formatString: "ddd MMM D, YYYY")
           venue
-          movie {
-            title
-            year
-            slug
-          }
+          title
+          year
+          slug
         }
       }
     }
@@ -215,15 +200,13 @@ export const pageQuery = graphql`
         viewings {
           prettyDate: date(formatString: "ddd MMM D, YYYY")
           venue
-          movie {
-            title
-            year
-            slug
-          }
+          title
+          year
+          slug
         }
       }
     }
-    years: allViewingStatsJson(sort: { fields: viewing_year, order: DESC }) {
+    year: allViewingStatsJson(sort: { fields: viewing_year, order: DESC }) {
       nodes {
         year: viewing_year
       }

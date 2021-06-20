@@ -33,7 +33,7 @@ export default function AllTimeReviewStatsTemplate({
         stats={[]}
         grades={gradeDistributions.distributions}
         currentYear={pageContext.yearScope}
-        decades={decades.decades}
+        decades={decades.decade}
         highestRatedDirectors={directors.highestRated}
         highestRatedPerformers={performers.highestRated}
         highestRatedWriters={writers.highestRated}
@@ -48,42 +48,29 @@ export interface PageContext {
 
 export interface Person {
   fullName: string;
-  slug: string;
+  slug: string | null;
   averageGradeValue: number;
-  reviews: Review[];
-}
-
-export interface Review {
-  prettyDate: string;
-  gradeValue: number;
-  movie: Movie;
-}
-
-export interface Movie {
-  title: string;
-  year: string;
-  slug: string;
-}
-
-export interface Decade {
-  decade: string;
-  averageGradeValue: number;
-}
-
-export interface GradeDistribution {
-  grade: string;
-  reviewCount: number;
+  reviews: {
+    prettyDate: string;
+    gradeValue: number;
+    title: string;
+    year: number;
+    slug: string;
+  }[];
 }
 
 export interface PageQueryResult {
-  movies: {
-    reviewCount: number;
-  };
   decades: {
-    decades: Decade[];
+    decade: {
+      decade: string;
+      averageGradeValue: number;
+    }[];
   };
   gradeDistributions: {
-    distributions: GradeDistribution[];
+    distributions: {
+      grade: string;
+      reviewCount: number;
+    }[];
   };
   directors: {
     highestRated: Person[];
@@ -95,11 +82,9 @@ export interface PageQueryResult {
     highestRated: Person[];
   };
   year: {
-    nodes: [
-      {
-        year: string;
-      }
-    ];
+    nodes: {
+      year: string;
+    }[];
   };
 }
 
@@ -128,11 +113,9 @@ export const pageQuery = graphql`
         reviews {
           prettyDate: date(formatString: "ddd MMM D, YYYY")
           gradeValue: grade_value
-          movie {
-            title
-            year
-            slug
-          }
+          title
+          year
+          slug
         }
       }
     }
@@ -145,11 +128,9 @@ export const pageQuery = graphql`
         reviews {
           prettyDate: date(formatString: "ddd MMM D, YYYY")
           gradeValue: grade_value
-          movie {
-            title
-            year
-            slug
-          }
+          title
+          year
+          slug
         }
       }
     }
@@ -162,17 +143,13 @@ export const pageQuery = graphql`
         reviews {
           prettyDate: date(formatString: "ddd MMM D, YYYY")
           gradeValue: grade_value
-          movie {
-            title
-            year
-            slug
-          }
+          title
+          year
+          slug
         }
       }
     }
-    year: allHighestRatedDirectorsJson(
-      sort: { fields: review_year, order: DESC }
-    ) {
+    year: allReviewStatsJson(sort: { fields: review_year, order: DESC }) {
       nodes {
         year: review_year
       }

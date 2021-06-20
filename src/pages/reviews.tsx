@@ -380,8 +380,8 @@ export const query = graphql`
         imdbId: imdb_id
         title
         year
-        lastReviewGrade: last_review_grade
-        lastReviewGradeValue: last_review_grade_value
+        lastReviewGrade
+        lastReviewGradeValue
         sortTitle: sort_title
         slug
       }

@@ -1,15 +1,15 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import ReviewsStatsForYearTemplate from "../review-stats-for-year";
-import data from "./__fixtures__/review-stats-for-year-page-queries";
+import ViewingStatsForYearTemplate from "../viewing-stats-for-year";
+import data from "./__fixtures__/viewing-stats-for-year-page-queries";
 
 jest.mock("../../components/Seo/Seo.tsx");
 
-describe("/reviews/stats/{year}", () => {
+describe("/viewings/stats/{year}", () => {
   it("renders", () => {
     const { asFragment } = render(
-      <ReviewsStatsForYearTemplate
+      <ViewingStatsForYearTemplate
         data={data}
         pageContext={{ yearScope: "2020" }}
       />

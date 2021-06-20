@@ -910,7 +910,7 @@ export const pageQuery = graphql`
         year
         releaseDate: release_date
         sortTitle: sort_title
-        reviewsSlug: reviews_slug
+        reviewedMovieSlug
         directorNames
         performerNames
         writerNames

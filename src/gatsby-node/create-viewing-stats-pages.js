@@ -26,18 +26,10 @@ module.exports = async function createViewingStatsPages(
   years.forEach((year) => {
     createPage({
       path: `/viewings/stats/${year}/`,
-      component: path.resolve("./src/templates/viewing-stats.tsx"),
+      component: path.resolve("./src/templates/viewing-stats-for-year.tsx"),
       context: {
         yearScope: year,
       },
     });
-  });
-
-  createPage({
-    path: `/viewings/stats/`,
-    component: path.resolve("./src/templates/viewing-stats.tsx"),
-    context: {
-      yearScope: "all",
-    },
   });
 };

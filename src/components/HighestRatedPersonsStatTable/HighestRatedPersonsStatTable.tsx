@@ -10,7 +10,7 @@ import {
 
 export interface PersonWithReviews {
   fullName: string;
-  slug: string;
+  slug: string | null;
   reviews: Review[];
   averageGradeValue: number;
 }
@@ -42,11 +42,10 @@ export default function MostWatchedPersonsStatTable({
     nameHeaderText: "Name",
     nameFunc: (person) => buildPersonName(watchlistType, person),
     detailsFunc: (review) => {
-      const { movie, gradeValue } = review;
       return (
         <>
-          <Grade gradeValue={gradeValue} /> <MovieTitle movie={movie} />{" "}
-          <ReviewDetail review={review} />
+          <Grade gradeValue={review.gradeValue} />{" "}
+          <MovieTitle review={review} /> <ReviewDetail review={review} />
         </>
       );
     },

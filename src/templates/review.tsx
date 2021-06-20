@@ -374,15 +374,15 @@ type Movie = {
 };
 
 export const pageQuery = graphql`
-  query ($imdbId: String) {
+  query ($imdbId: String!) {
     movie: reviewedMoviesJson(imdb_id: { eq: $imdbId }) {
       imdbId: imdb_id
       title
       year
       countries
       runtimeMinutes: runtime_minutes
-      lastReviewGrade: last_review_grade
-      lastReviewGradeValue: last_review_grade_value
+      lastReviewGrade
+      lastReviewGradeValue
       akaTitles: aka_titles
       principalCastNames: principal_cast_names
       directorNames: director_names
@@ -400,7 +400,7 @@ export const pageQuery = graphql`
       browseMore {
         imdbId: imdb_id
         title
-        lastReviewGrade: last_review_grade
+        lastReviewGrade
         slug
         year
         backdrop {
@@ -471,10 +471,10 @@ export const pageQuery = graphql`
               )
             }
           }
-          browseMore {
+          browseMore(movieImdbId: $imdbId) {
             imdbId: imdb_id
             title
-            lastReviewGrade: last_review_grade
+            lastReviewGrade
             slug
             year
             backdrop {
@@ -507,10 +507,10 @@ export const pageQuery = graphql`
               )
             }
           }
-          browseMore {
+          browseMore(movieImdbId: $imdbId) {
             imdbId: imdb_id
             title
-            lastReviewGrade: last_review_grade
+            lastReviewGrade
             slug
             year
             backdrop {
@@ -543,10 +543,10 @@ export const pageQuery = graphql`
               )
             }
           }
-          browseMore {
+          browseMore(movieImdbId: $imdbId) {
             imdbId: imdb_id
             title
-            lastReviewGrade: last_review_grade
+            lastReviewGrade
             slug
             year
             backdrop {
@@ -579,10 +579,10 @@ export const pageQuery = graphql`
               )
             }
           }
-          browseMore {
+          browseMore(movieImdbId: $imdbId) {
             imdbId: imdb_id
             title
-            lastReviewGrade: last_review_grade
+            lastReviewGrade
             slug
             year
             backdrop {
