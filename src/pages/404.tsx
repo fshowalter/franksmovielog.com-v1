@@ -4,7 +4,7 @@ import React from "react";
 import ArticlePage from "../components/ArticlePage";
 import Seo from "../components/Seo";
 
-export default function NotFoundPage({ data }: PageData): JSX.Element {
+export default function NotFoundPage({ data }: PageQueryResult): JSX.Element {
   const { backdrop, page } = data;
 
   return (
@@ -24,7 +24,7 @@ export default function NotFoundPage({ data }: PageData): JSX.Element {
   );
 }
 
-type PageData = {
+interface PageQueryResult {
   data: {
     backdrop: {
       childImageSharp: {
@@ -35,7 +35,7 @@ type PageData = {
       html: string;
     };
   };
-};
+}
 
 export const pageQuery = graphql`
   query {
