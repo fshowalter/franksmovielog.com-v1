@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import { collator } from "../../utils/sort-utils";
 import toSentenceArray from "../../utils/to-sentence-array";
@@ -36,7 +36,7 @@ import {
   typeIconCss,
   typeLinkCss,
   typeLinksCss,
-} from "./WatchlistPage.module.scss";
+} from "./WatchlistIndexPage.module.scss";
 
 /**
  * Renders options for a watchlist person or collection select.
@@ -91,11 +91,11 @@ function WatchlistMovieTitle({
     </>
   );
 
-  if (movie.reviewsSlug) {
+  if (movie.reviewedMovieSlug) {
     title = (
       <Link
         rel="canonical"
-        to={`/reviews/${movie.reviewsSlug}/`}
+        to={`/reviews/${movie.reviewedMovieSlug}/`}
         className={listItemTitleLinkCss}
       >
         {title}
@@ -111,7 +111,7 @@ function WatchlistMovieCheckMark({
 }: {
   movie: WatchlistMovie;
 }): JSX.Element {
-  if (movie.reviewsSlug) {
+  if (movie.reviewedMovieSlug) {
     return (
       <svg
         className={listItemCheckmarkCss}
@@ -210,7 +210,7 @@ function WatchlistProgress({
 }
 
 function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
-  const reviewedMovies = filteredMovies.filter((m) => m.reviewsSlug);
+  const reviewedMovies = filteredMovies.filter((m) => m.reviewedMovieSlug);
 
   return reviewedMovies.length;
 }
@@ -266,7 +266,7 @@ function WatchlistCollectionLinkItem({
 /**
  * Renders the watchlist page.
  */
-export default function WatchlistPage({
+export default function WatchlistIndexPage({
   data,
 }: {
   data: PageQueryResult;
@@ -492,9 +492,9 @@ type WatchlistMovie = {
   title: string;
   writerNames: string[];
   year: number;
-  releaseDate: string;
+  reviewedMovieSlug: string | null;
   sortTitle: string;
-  reviewsSlug: string | null;
+  releaseDate: string;
 };
 
 interface PageQueryResult {
@@ -502,3 +502,24 @@ interface PageQueryResult {
     nodes: WatchlistMovie[];
   };
 }
+
+export const pageQuery = graphql`
+  query {
+    watchlist: allWatchlistMoviesJson(
+      sort: { fields: [release_date], order: ASC }
+    ) {
+      nodes {
+        imdbId: imdb_id
+        title
+        year
+        releaseDate: release_date
+        sortTitle: sort_title
+        reviewedMovieSlug
+        directorNames
+        performerNames
+        writerNames
+        collectionNames: collection_names
+      }
+    }
+  }
+`;

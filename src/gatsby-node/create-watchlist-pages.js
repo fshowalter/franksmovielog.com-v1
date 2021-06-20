@@ -128,11 +128,21 @@ async function createCollectionPages(graphql, reporter, createPage) {
   });
 }
 
+function createIndexPage(createPage) {
+  createPage({
+    path: `/watchlist/`,
+    component: path.resolve(
+      "./src/components/WatchlistIndexPage/WatchlistIndexPage.tsx"
+    ),
+  });
+}
+
 module.exports = async function createWatchlistPages(
   graphql,
   reporter,
   createPage
 ) {
+  createIndexPage(createPage);
   createDirectorPages(graphql, reporter, createPage);
   createPerformerPages(graphql, reporter, createPage);
   createWriterPages(graphql, reporter, createPage);

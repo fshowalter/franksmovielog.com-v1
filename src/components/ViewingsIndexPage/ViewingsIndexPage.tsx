@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import { collator } from "../../utils/sort-utils";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
@@ -8,6 +8,7 @@ import Label from "../Label";
 import Layout from "../Layout";
 import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
+import Seo from "../Seo";
 import StatsLink from "../StatsLink";
 import reducer, { ActionTypes, initState } from "./reducer";
 import {
@@ -24,7 +25,7 @@ import {
   pageHeaderCss,
   quoteCss,
   rightCss,
-} from "./ViewingsPage.module.scss";
+} from "./ViewingsIndexPage.module.scss";
 
 /**
  * Renders the venue select options.
@@ -95,30 +96,13 @@ function ViewingSlug({ viewing }: { viewing: Viewing }) {
   );
 }
 
-interface Viewing {
-  title: string;
-  year: number;
-  releaseDate: string;
-  viewingDate: string;
-  sequence: number;
-  venue: string;
-  sortTitle: string;
-  slug: string | null;
-}
-
-interface PageData {
-  viewing: {
-    nodes: Viewing[];
-  };
-}
-
 /**
  * Renders the viewings page.
  */
-export default function ViewingsPage({
+export default function ViewingsIndexPage({
   data,
 }: {
-  data: PageData;
+  data: PageQueryResult;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -132,6 +116,12 @@ export default function ViewingsPage({
 
   return (
     <Layout>
+      <Seo
+        pageTitle="Viewing Log"
+        description="A sortable and filterable list of every movie I've watched since 2012."
+        image={null}
+        article={false}
+      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader
@@ -232,3 +222,37 @@ export default function ViewingsPage({
     </Layout>
   );
 }
+
+interface Viewing {
+  title: string;
+  year: number;
+  releaseDate: string;
+  viewingDate: string;
+  sequence: number;
+  venue: string;
+  sortTitle: string;
+  slug: string | null;
+}
+
+interface PageQueryResult {
+  viewing: {
+    nodes: Viewing[];
+  };
+}
+
+export const pageQuery = graphql`
+  query {
+    viewing: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
+      nodes {
+        sequence
+        viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
+        releaseDate: release_date
+        title
+        venue
+        year
+        sortTitle: sort_title
+        slug
+      }
+    }
+  }
+`;

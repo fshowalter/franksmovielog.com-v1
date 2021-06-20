@@ -1,10 +1,17 @@
 const path = require("path");
 
-module.exports = async function createViewingStatsPages(
+module.exports = async function createViewingsPages(
   graphql,
   reporter,
   createPage
 ) {
+  createPage({
+    path: `/viewings/`,
+    component: path.resolve(
+      "./src/components/ViewingsIndexPage/ViewingsIndexPage.tsx"
+    ),
+  });
+
   const query = await graphql(
     `
       {

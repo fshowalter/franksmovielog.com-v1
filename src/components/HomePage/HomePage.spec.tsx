@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import HomePage from "../HomePage";
+import HomePage from "./HomePage";
 import data from "./HomePage.fixtures";
 
 describe("/", () => {

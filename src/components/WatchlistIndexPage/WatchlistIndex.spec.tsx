@@ -2,14 +2,12 @@
 import { act, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
-import WatchlistPage from "../watchlist";
-import data from "./__fixtures__/watchlist-page-query";
-
-jest.mock("../../components/Seo/Seo.tsx");
+import data from "./WatchlistIndex.fixtures";
+import WatchlistIndexPage from "./WatchlistIndexPage";
 
 describe("/watchlist", () => {
   it("renders", () => {
-    const { asFragment } = render(<WatchlistPage data={data} />);
+    const { asFragment } = render(<WatchlistIndexPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -19,7 +17,7 @@ describe("/watchlist", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     requestAnimationFrame(() => {
       expect(document.title).toStrictEqual("Watchlist");
@@ -29,7 +27,7 @@ describe("/watchlist", () => {
 
   it("can filter by title", async () => {
     expect.hasAssertions();
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
@@ -45,7 +43,7 @@ describe("/watchlist", () => {
 
   it("can filter by not-found title", async () => {
     expect.hasAssertions();
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
@@ -64,7 +62,7 @@ describe("/watchlist", () => {
 
   it("can filter by director", () => {
     expect.hasAssertions();
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Director"), "Howard Hawks");
 
@@ -72,7 +70,7 @@ describe("/watchlist", () => {
   });
 
   it("can filter by director then show all", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Director"), "Howard Hawks");
     userEvent.selectOptions(screen.getByLabelText("Director"), "All");
@@ -82,7 +80,7 @@ describe("/watchlist", () => {
 
   it("can filter by performer", () => {
     expect.hasAssertions();
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Performer"), "Bette Davis");
 
@@ -90,7 +88,7 @@ describe("/watchlist", () => {
   });
 
   it("can filter by performer then show all", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Performer"), "Bette Davis");
     userEvent.selectOptions(screen.getByLabelText("Performer"), "All");
@@ -100,7 +98,7 @@ describe("/watchlist", () => {
 
   it("can filter by writer", () => {
     expect.hasAssertions();
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Writer"), "Clive Barker");
 
@@ -108,7 +106,7 @@ describe("/watchlist", () => {
   });
 
   it("can filter by writer then show all", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Writer"), "Clive Barker");
     userEvent.selectOptions(screen.getByLabelText("Writer"), "All");
@@ -118,7 +116,7 @@ describe("/watchlist", () => {
 
   it("can filter by collection", () => {
     expect.hasAssertions();
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Collection"),
@@ -129,7 +127,7 @@ describe("/watchlist", () => {
   });
 
   it("can filter by collection then show all", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Collection"),
@@ -141,7 +139,7 @@ describe("/watchlist", () => {
   });
 
   it("can sort by title", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
@@ -149,7 +147,7 @@ describe("/watchlist", () => {
   });
 
   it("can sort by release date with oldest first", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -160,7 +158,7 @@ describe("/watchlist", () => {
   });
 
   it("can sort by release date with newest first", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -171,7 +169,7 @@ describe("/watchlist", () => {
   });
 
   it("can filter by release year", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     const inputs = screen.getAllByLabelText("Release Year");
 
@@ -184,7 +182,7 @@ describe("/watchlist", () => {
   });
 
   it("can hide reviewed titles", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.click(screen.getByText("Hide Reviewed"));
 
@@ -192,7 +190,7 @@ describe("/watchlist", () => {
   });
 
   it("can show hidden reviewed titles", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.click(screen.getByText("Hide Reviewed"));
     userEvent.click(screen.getByText("Show Reviewed"));
@@ -201,7 +199,7 @@ describe("/watchlist", () => {
   });
 
   it("can view next page", () => {
-    render(<WatchlistPage data={data} />);
+    render(<WatchlistIndexPage data={data} />);
 
     userEvent.click(screen.getByText("Next →"));
 

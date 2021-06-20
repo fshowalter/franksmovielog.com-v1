@@ -2,14 +2,12 @@
 import { act, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
-import ViewingsPage from "../viewings";
-import data from "./__fixtures__/viewings-page-query";
-
-jest.mock("../../components/Seo/Seo.tsx");
+import ViewingsIndexPage from "./ViewingsIndexPage";
+import data from "./ViewingsIndexPage.fixtures";
 
 describe("/viewings", () => {
   it("renders", () => {
-    const { asFragment } = render(<ViewingsPage data={data} />);
+    const { asFragment } = render(<ViewingsIndexPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -19,7 +17,7 @@ describe("/viewings", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     requestAnimationFrame(() => {
       expect(document.title).toStrictEqual("Viewing Log");
@@ -29,7 +27,7 @@ describe("/viewings", () => {
 
   it("can filter by title", async () => {
     expect.hasAssertions();
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
@@ -45,7 +43,7 @@ describe("/viewings", () => {
 
   it("can filter by venue", () => {
     expect.hasAssertions();
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Venue"), "Arrow Player");
 
@@ -53,7 +51,7 @@ describe("/viewings", () => {
   });
 
   it("can filter by venue then show all", () => {
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Venue"), "Arrow Player");
     userEvent.selectOptions(screen.getByLabelText("Venue"), "All");
@@ -62,7 +60,7 @@ describe("/viewings", () => {
   });
 
   it("can sort by viewing date with newest first", () => {
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -73,7 +71,7 @@ describe("/viewings", () => {
   });
 
   it("can sort by viewing date with oldest first", () => {
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -84,7 +82,7 @@ describe("/viewings", () => {
   });
 
   it("can sort by title", () => {
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
@@ -92,7 +90,7 @@ describe("/viewings", () => {
   });
 
   it("can sort by release date with oldest first", () => {
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -103,7 +101,7 @@ describe("/viewings", () => {
   });
 
   it("can sort by release date with newest first", () => {
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -114,7 +112,7 @@ describe("/viewings", () => {
   });
 
   it("can filter by release year", () => {
-    render(<ViewingsPage data={data} />);
+    render(<ViewingsIndexPage data={data} />);
 
     const inputs = screen.getAllByLabelText("Release Year");
 

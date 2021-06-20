@@ -26,9 +26,9 @@ interface WatchlistMovie {
   title: string;
   writerNames: string[];
   year: number;
-  releaseDate: string;
+  reviewedMovieSlug: string | null;
   sortTitle: string;
-  reviewsSlug: string | null;
+  releaseDate: string;
 }
 
 /**
@@ -390,7 +390,7 @@ export default function reducer(state: State, action: Action): State {
         filters = {
           ...state.filters,
           reviewed: (movie: WatchlistMovie) => {
-            return movie.reviewsSlug === null;
+            return movie.reviewedMovieSlug === null;
           },
         };
       }
