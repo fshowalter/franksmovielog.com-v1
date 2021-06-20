@@ -1,0 +1,259 @@
+@import "./src/styles/breakpoints";
+
+.containerCss {
+  display: grid;
+  grid-template-areas: "image image image" ". title ." ". credits ." ". reviews ." ". viewings ." ". related .";
+  grid-template-columns:
+    minmax(var(--step-1), 1fr) minmax(auto, 63ch)
+    minmax(var(--step-1), 1fr);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding-bottom: var(--step-5);
+  position: relative;
+  row-gap: 3rem;
+
+  @media (min-width: $breakpointTablet) {
+    grid-template-areas: "image" "title" "credits" "reviews" "viewings" "related";
+    grid-template-columns: unset;
+  }
+
+  @media (min-width: $breakpointDesktop) {
+    grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
+    grid-template-columns: minmax(auto, 63ch) 1fr 25%;
+    max-width: unset;
+  }
+}
+
+.reviewsListCss {
+  display: grid;
+  grid-area: reviews;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+
+.reviewCss {
+  border-top: solid 1px var(--color-background);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 1.5rem;
+  row-gap: 1rem;
+
+  @media (min-width: $breakpointDesktop) {
+    grid-template-columns: var(--step-1) 1fr;
+
+    > * {
+      grid-column: 2;
+    }
+  }
+}
+
+.dateIconCss {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 2px;
+  width: 14px;
+
+  @media (min-width: $breakpointDesktop) {
+    left: -24px;
+    position: absolute;
+  }
+}
+
+.slugCss {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  position: relative;
+}
+
+.imageCss {
+  grid-area: image;
+  width: 100%;
+}
+
+.titleCss {
+  color: #000;
+  font-size: var(--step-3);
+  line-height: 1.1;
+}
+
+.headerCss {
+  grid-area: title;
+}
+
+.akaContainerCss {
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-top: 0.875rem;
+}
+
+.akaListCss {
+  margin-top: 0.5rem;
+}
+
+.akaListItemCss {
+  display: block;
+  font-size: 1.125rem;
+}
+
+.contentCss {
+  position: relative;
+}
+
+.gradeCss {
+  height: 21px;
+  margin-right: 0.5rem;
+  position: absolute;
+  top: 3px;
+  width: auto;
+}
+
+.creditsCss {
+  align-content: start;
+  color: var(--color-text-secondary);
+  column-gap: var(--step-1);
+  display: grid;
+  font-size: 1rem;
+  grid-area: credits;
+  grid-template-areas: "directors poster" "cast poster" "watchlist poster";
+  grid-template-columns: 1fr 25%;
+  grid-template-rows: auto auto 1fr auto;
+  letter-spacing: 0.2px;
+
+  @media (min-width: $breakpointDesktop) {
+    grid-template-areas: "poster" "directors" "cast" "watchlist";
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+  }
+}
+
+.posterCss {
+  align-self: start;
+  grid-area: poster;
+}
+
+.directorsCss {
+  grid-area: directors;
+
+  @media (min-width: $breakpointDesktop) {
+    padding: 1.5rem 0.5rem 0;
+  }
+}
+
+.castCss {
+  grid-area: cast;
+  margin-top: 1rem;
+
+  @media (min-width: $breakpointDesktop) {
+    padding: 0 0.5rem;
+  }
+}
+
+.castLabelCss {
+  display: block;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 1rem;
+
+  &::after {
+    content: ":";
+  }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.dateCss {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.bodyCss {
+  grid-area: content;
+
+  > p:first-of-type::before {
+    content: "\0020";
+    display: inline-block;
+    height: auto;
+    position: relative;
+    width: 115px;
+  }
+}
+
+.watchlistCss {
+  align-self: start;
+  grid-area: watchlist;
+  margin-top: 1.5rem;
+
+  a {
+    color: var(--color-link);
+  }
+
+  @media (min-width: $breakpointDesktop) {
+    padding: 0 0.5rem;
+  }
+}
+
+.relatedCss {
+  display: grid;
+  grid-area: related;
+  row-gap: 3rem;
+}
+
+.relatedHeaderCss {
+  border-bottom: 1px solid var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+.relatedHeadingCss {
+  color: var(--color-text-secondary);
+}
+
+.relatedMoreCss {
+  color: var(--color-link);
+}
+
+.relatedNameCss {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.olderViewingsHeadingCss {
+  border-bottom: solid 1px var(--color-background);
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.25rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.olderViewingsListCss {
+  display: grid;
+  row-gap: 0.25rem;
+}
+
+.olderViewingsCss {
+  grid-area: viewings;
+}
+
+.viewingDateIconCss {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 2px;
+  width: 14px;
+}
+
+.separatorCss {
+  color: var(--color-text-secondary);
+}
+
+.headerMetaCss {
+  color: var(--color-text-secondary);
+  font-feature-settings: "tnum";
+  margin-top: 0.75rem;
+}
