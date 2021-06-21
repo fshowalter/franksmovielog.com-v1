@@ -1,14 +1,12 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import HowIGradePage from "../how-i-grade";
-import data from "./__fixtures__/how-i-grade-page-query";
+import GonePage from "./gone";
+import data from "./gone.fixtures";
 
-jest.mock("../../components/Seo/Seo.tsx");
-
-describe("/how-i-grade", () => {
+describe("/gone", () => {
   it("renders", () => {
-    const { asFragment } = render(<HowIGradePage data={data} />);
+    const { asFragment } = render(<GonePage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -18,10 +16,10 @@ describe("/how-i-grade", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<HowIGradePage data={data} />);
+    render(<GonePage data={data} />);
 
     requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("How I Grade");
+      expect(document.title).toStrictEqual("410: Gone");
       done();
     });
   });

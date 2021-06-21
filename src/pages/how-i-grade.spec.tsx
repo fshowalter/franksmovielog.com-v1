@@ -1,14 +1,12 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import NotFoundPage from "../404";
-import data from "./__fixtures__/404-page-query";
+import HowIGradePage from "./how-i-grade";
+import data from "./how-i-grade.fixtures";
 
-jest.mock("../../components/Seo/Seo.tsx");
-
-describe("/404", () => {
+describe("/how-i-grade", () => {
   it("renders", () => {
-    const { asFragment } = render(<NotFoundPage data={data} />);
+    const { asFragment } = render(<HowIGradePage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -18,10 +16,10 @@ describe("/404", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<NotFoundPage data={data} />);
+    render(<HowIGradePage data={data} />);
 
     requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("404: Not Found");
+      expect(document.title).toStrictEqual("How I Grade");
       done();
     });
   });

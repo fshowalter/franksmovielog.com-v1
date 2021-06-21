@@ -1,14 +1,12 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import GonePage from "../gone";
-import data from "./__fixtures__/gone-page-query";
+import NotFoundPage from "./404";
+import data from "./404.fixtures";
 
-jest.mock("../../components/Seo/Seo.tsx");
-
-describe("/gone", () => {
+describe("/404", () => {
   it("renders", () => {
-    const { asFragment } = render(<GonePage data={data} />);
+    const { asFragment } = render(<NotFoundPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -18,10 +16,10 @@ describe("/gone", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<GonePage data={data} />);
+    render(<NotFoundPage data={data} />);
 
     requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("410: Gone");
+      expect(document.title).toStrictEqual("404: Not Found");
       done();
     });
   });

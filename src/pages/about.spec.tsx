@@ -1,10 +1,8 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import AboutPage from "../about";
-import data from "./__fixtures__/about-page-query";
-
-jest.mock("../../components/Seo/Seo.tsx");
+import AboutPage from "./about";
+import data from "./about.fixtures";
 
 describe("/about", () => {
   it("renders", () => {
