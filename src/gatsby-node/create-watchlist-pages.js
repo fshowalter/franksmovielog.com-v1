@@ -21,6 +21,16 @@ async function createDirectorPages(graphql, reporter, createPage) {
     return;
   }
 
+  createPage({
+    path: `/watchlist/directors/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "director",
+    },
+  });
+
   query.data.directors.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/directors/${node.slug}/`,
@@ -52,6 +62,16 @@ async function createPerformerPages(graphql, reporter, createPage) {
     reporter.panicOnBuild(`Error while running query watchlist performers.`);
     return;
   }
+
+  createPage({
+    path: `/watchlist/performers/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "performer",
+    },
+  });
 
   query.data.performers.nodes.forEach((node) => {
     createPage({
@@ -85,6 +105,16 @@ async function createWriterPages(graphql, reporter, createPage) {
     return;
   }
 
+  createPage({
+    path: `/watchlist/writers/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "writer",
+    },
+  });
+
   query.data.writers.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/writers/${node.slug}/`,
@@ -116,6 +146,16 @@ async function createCollectionPages(graphql, reporter, createPage) {
     reporter.panicOnBuild(`Error while running query watchlist collections.`);
     return;
   }
+
+  createPage({
+    path: `/watchlist/collections/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "collection",
+    },
+  });
 
   query.data.collections.nodes.forEach((node) => {
     createPage({

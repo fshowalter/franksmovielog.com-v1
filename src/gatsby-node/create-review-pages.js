@@ -6,7 +6,7 @@ async function createReviewStatsPages(createPage, graphql, reporter) {
       {
         allReviewStatsJson {
           nodes {
-            review_year
+            year: review_year
           }
         }
       }
@@ -15,16 +15,21 @@ async function createReviewStatsPages(createPage, graphql, reporter) {
 
   if (query.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphQL query for viewing stats.`
+      `Error while running GraphQL query for review stats.`
     );
     return;
   }
 
   const years = query.data.allReviewStatsJson.nodes.map((node) => node.year);
   years.forEach((year) => {
+    const pagePath =
+      year === "all" ? `/reviews/stats/` : `/reviews/stats/${year}/`;
+
     createPage({
-      path: `/reviews/stats/${year}/`,
-      component: path.resolve("./src/templates/review-stats-for-year.tsx"),
+      path: pagePath,
+      component: path.resolve(
+        "./src/components/ReviewStatsPage/ReviewStatsPage.tsx"
+      ),
       context: {
         yearScope: year,
       },
@@ -39,14 +44,6 @@ function createReviewsIndexPage(createPage) {
     component: path.resolve(
       "./src/components/ReviewsIndexPage/ReviewsIndexPage.tsx"
     ),
-  });
-}
-
-function createReviewStatsIndexPage(createPage) {
-  // Index page
-  createPage({
-    path: `/reviews/stats/`,
-    component: path.resolve("./src/components/ReviewStats/AllTime.tsx"),
   });
 }
 
@@ -90,6 +87,5 @@ module.exports = async function createReviewPages(
 ) {
   createReviewsIndexPage(createPage);
   await createIndividualReviewPages(createPage, graphql, reporter);
-  createReviewStatsIndexPage(createPage);
   await createReviewStatsPages(createPage, graphql, reporter);
 };

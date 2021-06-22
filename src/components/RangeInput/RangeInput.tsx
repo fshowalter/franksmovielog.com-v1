@@ -60,7 +60,6 @@ export default function RangeFilter({
     if (!Array.isArray(values)) {
       return;
     }
-    console.log(values);
 
     setState([...values]);
   };

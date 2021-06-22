@@ -1,22 +1,13 @@
 const path = require("path");
 
-module.exports = async function createViewingsPages(
-  graphql,
-  reporter,
-  createPage
-) {
-  createPage({
-    path: `/viewings/`,
-    component: path.resolve(
-      "./src/components/ViewingsIndexPage/ViewingsIndexPage.tsx"
-    ),
-  });
-
+async function createViewingStatsPages(createPage, graphql, reporter) {
   const query = await graphql(
     `
       {
-        allViewingsJson {
-          viewingYears: distinct(field: viewing_year)
+        allViewingStatsJson {
+          nodes {
+            year: viewing_year
+          }
         }
       }
     `
@@ -29,14 +20,38 @@ module.exports = async function createViewingsPages(
     return;
   }
 
-  const years = query.data.allViewingsJson.viewingYears;
+  const years = query.data.allViewingStatsJson.nodes.map((node) => node.year);
   years.forEach((year) => {
+    const pagePath =
+      year === "all" ? `/viewings/stats/` : `/viewings/stats/${year}/`;
+
     createPage({
-      path: `/viewings/stats/${year}/`,
-      component: path.resolve("./src/templates/viewing-stats-for-year.tsx"),
+      path: pagePath,
+      component: path.resolve(
+        "./src/components/ViewingStatsPage/ViewingStatsPage.tsx"
+      ),
       context: {
         yearScope: year,
       },
     });
   });
+}
+
+function createViewingsIndexPage(createPage) {
+  // Index page
+  createPage({
+    path: `/viewings/`,
+    component: path.resolve(
+      "./src/components/ViewingsIndexPage/ViewingsIndexPage.tsx"
+    ),
+  });
+}
+
+module.exports = async function createViewingsPages(
+  graphql,
+  reporter,
+  createPage
+) {
+  createViewingsIndexPage(createPage);
+  await createViewingStatsPages(createPage, graphql, reporter);
 };

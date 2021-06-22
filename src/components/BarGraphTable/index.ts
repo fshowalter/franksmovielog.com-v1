@@ -1,3 +1,3 @@
-import BarGraphStatTable from "./BarGraphStatTable";
+import BarGraphTable from "./BarGraphTable";
 
-export default BarGraphStatTable;
+export default BarGraphTable;

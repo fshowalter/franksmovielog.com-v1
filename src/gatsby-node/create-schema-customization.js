@@ -703,7 +703,45 @@ const ViewingCountsForVenuesJson = {
   fields: {
     viewing_year: "String!",
     total_viewing_count: "Int!",
-    venue_stats: "[VenueStat!]!",
+    stats: "[VenueStat!]!",
+  },
+  extensions: {
+    infer: false,
+  },
+};
+
+const MostWatchedMovieViewing = {
+  name: "MostWatchedMovieViewing",
+  fields: {
+    date: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+    },
+    venue: "String!",
+    sequence: "Int!",
+    slug: "String",
+  },
+};
+
+const MostWatchedMovie = {
+  name: "MostWatchedMovie",
+  fields: {
+    viewing_count: "Int!",
+    imdb_id: "String!",
+    title: "String!",
+    year: "Int!",
+    viewings: "[MostWatchedMovieViewing!]!",
+  },
+};
+
+const MostWatchedMoviesJson = {
+  name: "MostWatchedMoviesJson",
+  interfaces: ["Node"],
+  fields: {
+    viewing_year: "String!",
+    most_watched: "[MostWatchedMovie!]!",
   },
   extensions: {
     infer: false,
@@ -713,6 +751,7 @@ const ViewingCountsForVenuesJson = {
 const MostWatchedPersonViewing = {
   name: "MostWatchedPersonViewing",
   fields: {
+    sequence: "Int!",
     venue: "String!",
     date: {
       type: "Date!",
@@ -849,6 +888,9 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
     schema.buildObjectType(WatchlistEntitiesJson),
     schema.buildObjectType(VenueStat),
     schema.buildObjectType(ViewingCountsForVenuesJson),
+    schema.buildObjectType(MostWatchedMovieViewing),
+    schema.buildObjectType(MostWatchedMovie),
+    schema.buildObjectType(MostWatchedMoviesJson),
     schema.buildObjectType(MostWatchedPersonViewing),
     schema.buildObjectType(MostWatchedPerson),
     schema.buildObjectType(MostWatchedDirectorsJson),
