@@ -66,7 +66,12 @@ export default function YearNavigation({
       <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
       {years.map((year) => {
         return (
-          <YearLink year={year} currentYear={currentYear} linkFunc={linkFunc} />
+          <YearLink
+            key={year}
+            year={year}
+            currentYear={currentYear}
+            linkFunc={linkFunc}
+          />
         );
       })}
     </ul>

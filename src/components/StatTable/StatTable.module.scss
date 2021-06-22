@@ -26,9 +26,13 @@
   td:last-of-type {
     padding-right: 1rem;
   }
+
+  a {
+    color: var(--color-link);
+  }
 }
 
-.textHeaderCss {
+.leftHeaderCss {
   line-height: 2.5;
   text-align: left;
 }
@@ -41,12 +45,12 @@
   }
 }
 
-.numberHeaderCss {
+.rightHeaderCss {
   text-align: right;
   white-space: nowrap;
 }
 
-.textDataCellCss {
+.leftCellCss {
   padding-right: var(--step-1);
 
   @media (min-width: $breakpointTablet) {
@@ -54,12 +58,12 @@
   }
 }
 
-.numberDataCellCss {
+.rightCellCss {
   font-feature-settings: "tnum";
   text-align: right;
   vertical-align: top;
 }
 
-.fillDataCellCss {
+.fillCellCss {
   width: 100%;
 }

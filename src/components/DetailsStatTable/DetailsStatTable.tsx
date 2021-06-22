@@ -1,20 +1,12 @@
 import React, { ReactElement } from "react";
-import {
-  StatTable,
-  StatTableFillDataCell,
-  StatTableNumberDataCell,
-  StatTableNumberHeader,
-  StatTableRow,
-  StatTableSpacerHeader,
-  StatTableTextHeader,
-} from "../StatTable";
+import StatTable from "../StatTable";
 import {
   detailsLabelCss,
   detailsListCss,
   tableIndexCellCss,
 } from "./DetailsStatTable.module.scss";
 
-function DetailsStatTableIndexCell({
+function IndexCell({
   index,
 }: {
   index: number;
@@ -25,53 +17,58 @@ function DetailsStatTableIndexCell({
 export default function DetailsStatTable<T>({
   heading,
   collection,
-  nameHeaderText,
-  valueHeaderText,
-  nameFunc,
-  valueFunc,
-  detailsFunc,
+  leftHeaderText,
+  rightHeaderText,
+  renderKey,
+  renderLeft,
+  renderRight,
+  renderDetails,
 }: {
   heading: string;
   collection: T[];
-  nameHeaderText: string;
-  valueHeaderText: string;
-  nameFunc: (x: T) => JSX.Element;
-  valueFunc: (x: T) => ReactElement;
-  detailsFunc: (x: T) => ReactElement<HTMLLIElement>[];
+  leftHeaderText: string;
+  rightHeaderText: string;
+  renderKey: (x: T) => string | number;
+  renderLeft: (x: T) => React.ReactNode;
+  renderRight: (x: T) => React.ReactNode;
+  renderDetails: (x: T) => ReactElement<HTMLLIElement>[];
 }): JSX.Element {
   const headers = [
-    <StatTableSpacerHeader />,
-    <StatTableTextHeader text={nameHeaderText} />,
-    <StatTableNumberHeader text={valueHeaderText} />,
+    <StatTable.SpacerHeader key={0} />,
+    <StatTable.LeftHeader key={1} value={leftHeaderText} />,
+    <StatTable.RightHeader key={2} value={rightHeaderText} />,
   ];
 
-  const rows = collection.map((item, index) => {
-    const value = valueFunc(item);
-    const name = nameFunc(item);
+  function renderRow(item: T, index: number) {
+    const name = renderLeft(item);
+    const value = renderRight(item);
 
     return (
-      <>
-        <StatTableRow>
-          <DetailsStatTableIndexCell index={index + 1} />
-          <StatTableFillDataCell>{name}</StatTableFillDataCell>
-          <StatTableNumberDataCell content={value} />
-        </StatTableRow>
+      <React.Fragment key={renderKey(item)}>
+        <StatTable.Row>
+          <IndexCell index={index + 1} />
+          <StatTable.FillCell>{name}</StatTable.FillCell>
+          <StatTable.RightCell value={value} />
+        </StatTable.Row>
         <tr>
           <td>&nbsp;</td>
           <td colSpan={2}>
             <details>
               <summary className={detailsLabelCss}>Details</summary>
-              <ul className={detailsListCss}>{detailsFunc(item)}</ul>
+              <ul className={detailsListCss}>{renderDetails(item)}</ul>
             </details>
           </td>
         </tr>
-      </>
+      </React.Fragment>
     );
-  });
+  }
 
   return (
-    <StatTable heading={heading} headers={headers}>
-      {rows}
-    </StatTable>
+    <StatTable
+      heading={heading}
+      headers={headers}
+      collection={collection}
+      renderRow={renderRow}
+    />
   );
 }

@@ -1,14 +1,12 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import ReviewsStatsPage from "../stats";
-import data from "./__fixtures__/stats-page-queries";
-
-jest.mock("../../../components/Seo/Seo.tsx");
+import AllReviewStatsPage from "./AllTime";
+import data from "./AllTime.fixtures";
 
 describe("/reviews/stats", () => {
   it("renders", () => {
-    const { asFragment } = render(<ReviewsStatsPage data={data} />);
+    const { asFragment } = render(<AllReviewStatsPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });

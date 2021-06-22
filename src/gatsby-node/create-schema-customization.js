@@ -776,6 +776,7 @@ const MostWatchedWritersJson = {
 const HighestRatedPersonReview = {
   name: "HighestRatedPersonReview",
   fields: {
+    sequence: "Int!",
     grade_value: "Float!",
     date: {
       type: "Date!",

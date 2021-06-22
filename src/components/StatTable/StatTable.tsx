@@ -1,60 +1,60 @@
 import React, { ReactElement } from "react";
 import {
-  fillDataCellCss,
+  fillCellCss,
   headingCss,
-  numberDataCellCss,
-  numberHeaderCss,
+  leftCellCss,
+  leftHeaderCss,
+  rightCellCss,
+  rightHeaderCss,
   rowCss,
   tableCss,
-  textDataCellCss,
-  textHeaderCss,
 } from "./StatTable.module.scss";
 
-export function StatTableTextHeader({
-  text,
+function LeftHeader({
+  value,
 }: {
-  text: string;
+  value: React.ReactNode;
 }): ReactElement<HTMLTableHeaderCellElement> {
-  return <th className={textHeaderCss}>{text}</th>;
+  return <th className={leftHeaderCss}>{value}</th>;
 }
 
-export function StatTableTextDataCell({
-  text,
+function LeftCell({
+  value,
 }: {
-  text: string;
+  value: React.ReactNode;
 }): ReactElement<HTMLTableHeaderCellElement> {
-  return <td className={textDataCellCss}>{text}</td>;
+  return <td className={leftCellCss}>{value}</td>;
 }
 
-export function StatTableFillDataCell({
+function FillCell({
   children,
 }: {
-  children: JSX.Element;
+  children: React.ReactNode;
 }): ReactElement<HTMLTableHeaderCellElement> {
-  return <td className={fillDataCellCss}>{children}</td>;
+  return <td className={fillCellCss}>{children}</td>;
 }
 
-export function StatTableNumberDataCell({
-  content,
+function RightCell({
+  value,
 }: {
-  content: ReactElement;
+  value: React.ReactNode;
 }): ReactElement<HTMLTableHeaderCellElement> {
-  return <td className={numberDataCellCss}>{content}</td>;
+  return <td className={rightCellCss}>{value}</td>;
 }
 
-export function StatTableNumberHeader({
-  text,
+function RightHeader({
+  value,
 }: {
-  text: string;
+  value: React.ReactNode;
 }): ReactElement<HTMLTableHeaderCellElement> {
-  return <th className={numberHeaderCss}>{text}</th>;
+  return <th className={rightHeaderCss}>{value}</th>;
 }
 
-export function StatTableSpacerHeader(): ReactElement<HTMLTableHeaderCellElement> {
+function SpacerHeader(): ReactElement<HTMLTableHeaderCellElement> {
   return <th>&nbsp;</th>;
 }
 
-export function StatTableRow({
+function Row({
   children,
 }: {
   children: ReactElement<HTMLTableDataCellElement>[];
@@ -62,28 +62,40 @@ export function StatTableRow({
   return <tr className={rowCss}>{children}</tr>;
 }
 
-export default function TableHeading({ text }: { text: string }): JSX.Element {
-  return <h2 className={headingCss}>{text}</h2>;
-}
-
-export function StatTable({
+function StatTable<T>({
   heading,
   headers,
-  children,
+  collection,
+  renderRow,
 }: {
   heading: string;
   headers: ReactElement<HTMLTableHeaderCellElement>[];
-  children: ReactElement<HTMLTableRowElement>[];
+  collection: T[];
+  renderRow: (item: T, index: number) => ReactElement<HTMLTableRowElement>;
 }): JSX.Element {
   return (
     <>
-      <TableHeading text={heading} />
+      <h2 className={headingCss}>{heading}</h2>
       <table className={tableCss}>
         <thead>
           <tr>{headers}</tr>
         </thead>
-        <tbody>{children}</tbody>
+        <tbody>
+          {collection.map((item, index) => {
+            return renderRow(item, index);
+          })}
+        </tbody>
       </table>
     </>
   );
 }
+
+StatTable.LeftHeader = LeftHeader;
+StatTable.RightCell = RightCell;
+StatTable.RightHeader = RightHeader;
+StatTable.Row = Row;
+StatTable.FillCell = FillCell;
+StatTable.SpacerHeader = SpacerHeader;
+StatTable.LeftCell = LeftCell;
+
+export default StatTable;

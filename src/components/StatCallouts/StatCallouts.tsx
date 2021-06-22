@@ -28,7 +28,7 @@ export default function StatCallouts({
   return (
     <div className={containerCss}>
       {stats.map((stat) => {
-        return <StatCallout stat={stat} />;
+        return <StatCallout key={stat.text} stat={stat} />;
       })}
     </div>
   );

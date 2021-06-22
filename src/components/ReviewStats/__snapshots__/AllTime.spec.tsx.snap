@@ -166,48 +166,78 @@ exports[`/reviews/stats renders 1`] = `
           >
             All-Time Viewing Stats
           </h2>
-          <p
+          <div
             class="taglineCss"
           >
             2 Years in Review
-          </p>
-          <ul
-            class="listCss"
-          >
-            <li
-              class="listItemCss"
+            <ul
+              class="listCss"
             >
-              All-Time
-            </li>
-            <li
-              class="listItemCss"
-            >
-              <a
-                class="listItemLinkCss"
-                href="/reviews/stats/2021/"
+              <li
+                class="listItemCss"
               >
-                2021
-              </a>
-            </li>
-            <li
-              class="listItemCss"
-            >
-              <a
-                class="listItemLinkCss"
-                href="/reviews/stats/2020/"
+                All-Time
+              </li>
+              <li
+                class="listItemCss"
               >
-                2020
-              </a>
-            </li>
-          </ul>
-          <p />
+                <a
+                  class="listItemLinkCss"
+                  href="/reviews/stats/2021/"
+                >
+                  2021
+                </a>
+              </li>
+              <li
+                class="listItemCss"
+              >
+                <a
+                  class="listItemLinkCss"
+                  href="/reviews/stats/2020/"
+                >
+                  2020
+                </a>
+              </li>
+            </ul>
+          </div>
         </header>
         <div
           class="contentCss"
         >
           <div
             class="containerCss"
-          />
+          >
+            <div
+              class="calloutContainerCss"
+            >
+              <span
+                class="numberCss"
+              >
+                278
+              </span>
+               
+              <span
+                class="legendCss"
+              >
+                Reviews
+              </span>
+            </div>
+            <div
+              class="calloutContainerCss"
+            >
+              <span
+                class="numberCss"
+              >
+                137
+              </span>
+               
+              <span
+                class="legendCss"
+              >
+                Average Words Per Review
+              </span>
+            </div>
+          </div>
           <h2
             class="headingCss"
           >
@@ -219,7 +249,7 @@ exports[`/reviews/stats renders 1`] = `
             <thead>
               <tr>
                 <th
-                  class="textHeaderCss"
+                  class="leftHeaderCss"
                 >
                   Grade
                 </th>
@@ -227,7 +257,7 @@ exports[`/reviews/stats renders 1`] = `
                    
                 </th>
                 <th
-                  class="numberHeaderCss"
+                  class="rightHeaderCss"
                 >
                   Reviews
                 </th>
@@ -238,12 +268,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   A+
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -253,7 +283,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   6
                 </td>
@@ -262,12 +292,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   A
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -277,7 +307,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   5
                 </td>
@@ -286,12 +316,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   A-
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -301,7 +331,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   8
                 </td>
@@ -310,12 +340,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   B+
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -325,7 +355,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   15
                 </td>
@@ -334,36 +364,36 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   B
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 33.33333333333333%;"
+                    style="--bar-percent: 35%;"
                   >
                      
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
-                  20
+                  21
                 </td>
               </tr>
               <tr
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   B-
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -373,7 +403,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   25
                 </td>
@@ -382,12 +412,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   C+
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -397,7 +427,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   49
                 </td>
@@ -406,12 +436,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   C
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -421,7 +451,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   33
                 </td>
@@ -430,12 +460,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   C-
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -445,7 +475,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   20
                 </td>
@@ -454,12 +484,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   D+
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -469,7 +499,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   60
                 </td>
@@ -478,12 +508,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   D
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -493,7 +523,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   16
                 </td>
@@ -502,12 +532,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   D-
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -517,7 +547,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   1
                 </td>
@@ -526,12 +556,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   F
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -541,7 +571,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   19
                 </td>
@@ -559,7 +589,7 @@ exports[`/reviews/stats renders 1`] = `
             <thead>
               <tr>
                 <th
-                  class="textHeaderCss"
+                  class="leftHeaderCss"
                 >
                   Decade
                 </th>
@@ -567,7 +597,7 @@ exports[`/reviews/stats renders 1`] = `
                    
                 </th>
                 <th
-                  class="numberHeaderCss"
+                  class="rightHeaderCss"
                 >
                   Grade
                 </th>
@@ -578,12 +608,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1920s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -593,7 +623,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.391818181818181
                 </td>
@@ -602,12 +632,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1930s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -617,7 +647,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.654918032786885
                 </td>
@@ -626,12 +656,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1940s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -641,7 +671,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.3830769230769224
                 </td>
@@ -650,12 +680,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1950s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -665,7 +695,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.229615384615384
                 </td>
@@ -674,12 +704,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1960s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -689,7 +719,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.901176470588235
                 </td>
@@ -698,12 +728,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1970s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -713,7 +743,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.1144827586206896
                 </td>
@@ -722,36 +752,36 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1980s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 98.69410896754442%;"
+                    style="--bar-percent: 99.2771997699587%;"
                   >
                      
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
-                  3.4322222222222223
+                  3.4525
                 </td>
               </tr>
               <tr
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   1990s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -761,7 +791,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.9278571428571425
                 </td>
@@ -770,12 +800,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   2000s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -785,7 +815,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.2206666666666663
                 </td>
@@ -794,12 +824,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   2010s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -809,7 +839,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.4776363636363636
                 </td>
@@ -818,12 +848,12 @@ exports[`/reviews/stats renders 1`] = `
                 class="rowCss"
               >
                 <td
-                  class="textDataCellCss"
+                  class="leftCellCss"
                 >
                   2020s
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <div
                     class="barCss"
@@ -833,7 +863,7 @@ exports[`/reviews/stats renders 1`] = `
                   </div>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.5544444444444445
                 </td>
@@ -854,12 +884,12 @@ exports[`/reviews/stats renders 1`] = `
                    
                 </th>
                 <th
-                  class="textHeaderCss"
+                  class="leftHeaderCss"
                 >
                   Name
                 </th>
                 <th
-                  class="numberHeaderCss"
+                  class="rightHeaderCss"
                 >
                   Grade
                 </th>
@@ -875,12 +905,12 @@ exports[`/reviews/stats renders 1`] = `
                   1. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Anthony Russo
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.89
                 </td>
@@ -908,7 +938,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -937,7 +966,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -966,7 +994,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -1001,12 +1028,12 @@ exports[`/reviews/stats renders 1`] = `
                   2. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Joe Russo
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.89
                 </td>
@@ -1034,7 +1061,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -1063,7 +1089,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -1092,7 +1117,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -1127,17 +1151,16 @@ exports[`/reviews/stats renders 1`] = `
                   3. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/michael-haneke/"
                   >
                     Michael Haneke
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.22
                 </td>
@@ -1165,7 +1188,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-seventh-continent-1989"
                         >
                           The Seventh Continent 
@@ -1194,7 +1216,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/bennys-video-1992"
                         >
                           Benny's Video 
@@ -1223,7 +1244,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/71-fragments-of-a-chronology-of-chance-1994"
                         >
                           71 Fragments of a Chronology of Chance 
@@ -1258,17 +1278,16 @@ exports[`/reviews/stats renders 1`] = `
                   4. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/howard-hawks/"
                   >
                     Howard Hawks
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.11
                 </td>
@@ -1296,7 +1315,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-dawn-patrol-1930"
                         >
                           The Dawn Patrol 
@@ -1325,7 +1343,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-criminal-code-1930"
                         >
                           The Criminal Code 
@@ -1354,7 +1371,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/rio-bravo-1959"
                         >
                           Rio Bravo 
@@ -1389,12 +1405,12 @@ exports[`/reviews/stats renders 1`] = `
                   5. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Zack Snyder
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.00
                 </td>
@@ -1422,7 +1438,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/zack-snyders-justice-league-2021"
                         >
                           Zack Snyder's Justice League 
@@ -1451,7 +1466,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/batman-v-superman-dawn-of-justice-2016"
                         >
                           Batman v Superman: Dawn of Justice 
@@ -1480,7 +1494,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/watchmen-2009"
                         >
                           Watchmen 
@@ -1515,17 +1528,16 @@ exports[`/reviews/stats renders 1`] = `
                   6. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/lucio-fulci/"
                   >
                     Lucio Fulci
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.39
                 </td>
@@ -1553,7 +1565,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-brute-and-the-beast-1966"
                         >
                           Massacre Time 
@@ -1582,7 +1593,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/one-on-top-of-the-other-1969"
                         >
                           One on Top of the Other 
@@ -1611,7 +1621,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-conspiracy-of-torture-1969"
                         >
                           The Conspiracy of Torture 
@@ -1640,7 +1649,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-lizard-in-a-womans-skin-1971"
                         >
                           A Lizard in a Woman's Skin 
@@ -1669,7 +1677,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dont-torture-a-duckling-1972"
                         >
                           Don't Torture a Duckling 
@@ -1698,7 +1705,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/white-fang-1973"
                         >
                           White Fang 
@@ -1733,12 +1739,12 @@ exports[`/reviews/stats renders 1`] = `
                   7. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   James Whale
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.33
                 </td>
@@ -1766,7 +1772,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/waterloo-bridge-1931"
                         >
                           Waterloo Bridge 
@@ -1795,7 +1800,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/frankenstein-1931"
                         >
                           Frankenstein 
@@ -1824,7 +1828,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-man-in-the-iron-mask-1939"
                         >
                           The Man in the Iron Mask 
@@ -1859,17 +1862,16 @@ exports[`/reviews/stats renders 1`] = `
                   8. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/tod-browning/"
                   >
                     Tod Browning
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.00
                 </td>
@@ -1897,7 +1899,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-thirteenth-chair-1929"
                         >
                           The Thirteenth Chair 
@@ -1926,7 +1927,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dracula-1931"
                         >
                           Dracula 
@@ -1955,7 +1955,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/outside-the-law-1930"
                         >
                           Outside the Law 
@@ -1984,7 +1983,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/iron-man-1931"
                         >
                           Iron Man 
@@ -2019,12 +2017,12 @@ exports[`/reviews/stats renders 1`] = `
                   9. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Val Guest
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.00
                 </td>
@@ -2052,7 +2050,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-quatermass-xperiment-1955"
                         >
                           The Quatermass Xperiment 
@@ -2081,7 +2078,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-abominable-snowman-1957"
                         >
                           The Abominable Snowman 
@@ -2110,7 +2106,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/quatermass-2-1957"
                         >
                           Quatermass 2 
@@ -2139,7 +2134,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-camp-on-blood-island-1958"
                         >
                           The Camp on Blood Island 
@@ -2174,12 +2168,12 @@ exports[`/reviews/stats renders 1`] = `
                   10. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Don Mancini
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.00
                 </td>
@@ -2207,7 +2201,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/seed-of-chucky-2004"
                         >
                           Seed of Chucky 
@@ -2236,7 +2229,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/curse-of-chucky-2013"
                         >
                           Curse of Chucky 
@@ -2265,7 +2257,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/cult-of-chucky-2017"
                         >
                           Cult of Chucky 
@@ -2300,17 +2291,16 @@ exports[`/reviews/stats renders 1`] = `
                   11. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/ingmar-bergman/"
                   >
                     Ingmar Bergman
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.89
                 </td>
@@ -2338,7 +2328,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/crisis-1946"
                         >
                           Crisis 
@@ -2367,7 +2356,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/it-rains-on-our-love-1946"
                         >
                           It Rains on Our Love 
@@ -2396,7 +2384,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-ship-to-india-1947"
                         >
                           A Ship to India 
@@ -2425,7 +2412,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/music-in-darkness-1948"
                         >
                           Music in Darkness 
@@ -2454,7 +2440,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/port-of-call-1948"
                         >
                           Port of Call 
@@ -2483,7 +2468,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/prison-1949"
                         >
                           Prison 
@@ -2512,7 +2496,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/thirst-1949"
                         >
                           Thirst 
@@ -2541,7 +2524,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/to-joy-1950"
                         >
                           To Joy 
@@ -2570,7 +2552,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/this-cant-happen-here-1950"
                         >
                           This Can't Happen Here 
@@ -2599,7 +2580,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/summer-interlude-1951"
                         >
                           Summer Interlude 
@@ -2628,7 +2608,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/waiting-women-1952"
                         >
                           Kvinnors väntan 
@@ -2657,7 +2636,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/summer-with-monika-1953"
                         >
                           Summer with Monika 
@@ -2686,7 +2664,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/sawdust-and-tinsel-1953"
                         >
                           Sawdust and Tinsel 
@@ -2715,7 +2692,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-lesson-in-love-1954"
                         >
                           A Lesson in Love 
@@ -2744,7 +2720,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dreams-1955"
                         >
                           Dreams 
@@ -2779,12 +2754,12 @@ exports[`/reviews/stats renders 1`] = `
                   12. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Frank Tuttle
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.83
                 </td>
@@ -2812,7 +2787,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-canary-murder-case-1929"
                         >
                           The Canary Murder Case 
@@ -2841,7 +2815,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-greene-murder-case-1929"
                         >
                           The Greene Murder Case 
@@ -2870,7 +2843,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-benson-murder-case-1930"
                         >
                           The Benson Murder Case 
@@ -2899,7 +2871,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/this-is-the-night-1932"
                         >
                           This Is the Night 
@@ -2934,12 +2905,12 @@ exports[`/reviews/stats renders 1`] = `
                   13. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Bryan Singer
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.83
                 </td>
@@ -2967,7 +2938,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-2000"
                         >
                           X-Men 
@@ -2996,7 +2966,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x2-x-men-united-2003"
                         >
                           X2: X-Men United 
@@ -3025,7 +2994,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-days-of-future-past-2014"
                         >
                           X-Men: Days of Future Past 
@@ -3054,7 +3022,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-apocalypse-2016"
                         >
                           X-Men: Apocalypse 
@@ -3089,12 +3056,12 @@ exports[`/reviews/stats renders 1`] = `
                   14. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Adam Green
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.67
                 </td>
@@ -3122,7 +3089,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-2006"
                         >
                           Hatchet 
@@ -3151,7 +3117,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-ii-2010"
                         >
                           Hatchet II 
@@ -3180,7 +3145,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/victor-crowley-2017"
                         >
                           Victor Crowley 
@@ -3215,17 +3179,16 @@ exports[`/reviews/stats renders 1`] = `
                   15. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/brian-de-palma/"
                   >
                     Brian De Palma
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.52
                 </td>
@@ -3253,7 +3216,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/murder-a-la-mod-1968"
                         >
                           Murder à la Mod 
@@ -3282,7 +3244,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/greetings-1968"
                         >
                           Greetings 
@@ -3311,7 +3272,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-wedding-party-1969"
                         >
                           The Wedding Party 
@@ -3340,7 +3300,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dionysus-in-69-1970"
                         >
                           Dionysus in '69 
@@ -3369,7 +3328,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hi-mom-1970"
                         >
                           Hi, Mom! 
@@ -3398,7 +3356,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/get-to-know-your-rabbit-1972"
                         >
                           Get to Know Your Rabbit 
@@ -3427,7 +3384,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/sisters-1972"
                         >
                           Sisters 
@@ -3462,17 +3418,16 @@ exports[`/reviews/stats renders 1`] = `
                   16. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/john-ford/"
                   >
                     John Ford
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.47
                 </td>
@@ -3500,7 +3455,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-black-watch-1929"
                         >
                           The Black Watch 
@@ -3529,7 +3483,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/born-reckless-1930"
                         >
                           Born Reckless 
@@ -3558,7 +3511,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/men-without-women-1930"
                         >
                           Men Without Women 
@@ -3587,7 +3539,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/salute-1929"
                         >
                           Salute 
@@ -3616,7 +3567,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/up-the-river-1930"
                         >
                           Up the River 
@@ -3645,7 +3595,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/seas-beneath-1931"
                         >
                           Seas Beneath 
@@ -3674,7 +3623,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/arrowsmith-1931"
                         >
                           Arrowsmith 
@@ -3709,17 +3657,16 @@ exports[`/reviews/stats renders 1`] = `
                   17. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/david-cronenberg/"
                   >
                     David Cronenberg
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.42
                 </td>
@@ -3747,7 +3694,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/stereo-tile-3b-of-a-caee-educational-mosaic-1969"
                         >
                           Stereo (Tile 3B of a CAEE Educational Mosaic) 
@@ -3776,7 +3722,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/crimes-of-the-future-1970"
                         >
                           Crimes of the Future 
@@ -3805,7 +3750,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/shivers-1975"
                         >
                           Shivers 
@@ -3834,7 +3778,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/rabid-1977"
                         >
                           Rabid 
@@ -3869,12 +3812,12 @@ exports[`/reviews/stats renders 1`] = `
                   18. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Mervyn LeRoy
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.33
                 </td>
@@ -3902,7 +3845,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/big-city-blues-1932"
                         >
                           Big City Blues 
@@ -3931,7 +3873,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/five-star-final-1931"
                         >
                           Five Star Final 
@@ -3960,7 +3901,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/broadminded-1931"
                         >
                           Broadminded 
@@ -3989,7 +3929,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/tonight-or-never-1931"
                         >
                           Tonight or Never 
@@ -4018,7 +3957,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/high-pressure-1932"
                         >
                           High Pressure 
@@ -4053,17 +3991,16 @@ exports[`/reviews/stats renders 1`] = `
                   19. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/directors/alfred-hitchcock/"
                   >
                     Alfred Hitchcock
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.27
                 </td>
@@ -4091,7 +4028,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/blackmail-1929"
                         >
                           Blackmail 
@@ -4120,7 +4056,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/murder-1930"
                         >
                           Murder! 
@@ -4149,7 +4084,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/juno-and-the-paycock-1930"
                         >
                           Juno and the Paycock 
@@ -4178,7 +4112,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-skin-game-1931"
                         >
                           The Skin Game 
@@ -4207,7 +4140,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/east-of-shanghai-1931"
                         >
                           East of Shanghai 
@@ -4242,12 +4174,12 @@ exports[`/reviews/stats renders 1`] = `
                   20. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Irving Cummings
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   1.67
                 </td>
@@ -4275,7 +4207,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/behind-that-curtain-1929"
                         >
                           Behind That Curtain 
@@ -4304,7 +4235,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-holy-terror-1931"
                         >
                           A Holy Terror 
@@ -4346,12 +4276,12 @@ exports[`/reviews/stats renders 1`] = `
                    
                 </th>
                 <th
-                  class="textHeaderCss"
+                  class="leftHeaderCss"
                 >
                   Name
                 </th>
                 <th
-                  class="numberHeaderCss"
+                  class="rightHeaderCss"
                 >
                   Grade
                 </th>
@@ -4367,12 +4297,12 @@ exports[`/reviews/stats renders 1`] = `
                   1. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Chris Hemsworth
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.80
                 </td>
@@ -4400,7 +4330,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-age-of-ultron-2015"
                         >
                           Avengers: Age of Ultron 
@@ -4429,7 +4358,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/thor-ragnarok-2017"
                         >
                           Thor: Ragnarok 
@@ -4458,7 +4386,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -4487,7 +4414,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -4516,7 +4442,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-cabin-in-the-woods-2011"
                         >
                           The Cabin in the Woods 
@@ -4551,12 +4476,12 @@ exports[`/reviews/stats renders 1`] = `
                   2. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Robert Downey Jr.
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.26
                 </td>
@@ -4584,7 +4509,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-age-of-ultron-2015"
                         >
                           Avengers: Age of Ultron 
@@ -4613,7 +4537,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -4642,7 +4565,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/spider-man-homecoming-2017"
                         >
                           Spider-Man: Homecoming 
@@ -4671,7 +4593,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -4700,7 +4621,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -4735,12 +4655,12 @@ exports[`/reviews/stats renders 1`] = `
                   3. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Kerry Condon
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.26
                 </td>
@@ -4768,7 +4688,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-age-of-ultron-2015"
                         >
                           Avengers: Age of Ultron 
@@ -4797,7 +4716,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -4826,7 +4744,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/spider-man-homecoming-2017"
                         >
                           Spider-Man: Homecoming 
@@ -4855,7 +4772,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -4884,7 +4800,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -4919,12 +4834,12 @@ exports[`/reviews/stats renders 1`] = `
                   4. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Chris Evans
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.26
                 </td>
@@ -4952,7 +4867,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-age-of-ultron-2015"
                         >
                           Avengers: Age of Ultron 
@@ -4981,7 +4895,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -5010,7 +4923,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/spider-man-homecoming-2017"
                         >
                           Spider-Man: Homecoming 
@@ -5039,7 +4951,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -5068,7 +4979,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -5103,12 +5013,12 @@ exports[`/reviews/stats renders 1`] = `
                   5. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Anthony Mackie
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.06
                 </td>
@@ -5136,7 +5046,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-age-of-ultron-2015"
                         >
                           Avengers: Age of Ultron 
@@ -5165,7 +5074,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/ant-man-2015"
                         >
                           Ant-Man 
@@ -5194,7 +5102,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -5223,7 +5130,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -5252,7 +5158,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -5287,12 +5192,12 @@ exports[`/reviews/stats renders 1`] = `
                   6. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Tom Holland
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.06
                 </td>
@@ -5320,7 +5225,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -5349,7 +5253,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/spider-man-homecoming-2017"
                         >
                           Spider-Man: Homecoming 
@@ -5378,7 +5281,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -5407,7 +5309,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -5436,7 +5337,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/spider-man-far-from-home-2019"
                         >
                           Spider-Man: Far from Home 
@@ -5471,17 +5371,16 @@ exports[`/reviews/stats renders 1`] = `
                   7. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/performers/peter-cushing/"
                   >
                     Peter Cushing
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.39
                 </td>
@@ -5509,7 +5408,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/star-wars-episode-iv-a-new-hope-1977"
                         >
                           Star Wars: Episode IV - A New Hope 
@@ -5538,7 +5436,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-abominable-snowman-1957"
                         >
                           The Abominable Snowman 
@@ -5567,7 +5464,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-curse-of-frankenstein-1957"
                         >
                           The Curse of Frankenstein 
@@ -5596,7 +5492,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-chump-at-oxford-1939"
                         >
                           A Chump at Oxford 
@@ -5625,7 +5520,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/horror-of-dracula-1958"
                         >
                           Horror of Dracula 
@@ -5654,7 +5548,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-man-in-the-iron-mask-1939"
                         >
                           The Man in the Iron Mask 
@@ -5689,12 +5582,12 @@ exports[`/reviews/stats renders 1`] = `
                   8. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Gunnar Björnstrand
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.28
                 </td>
@@ -5722,7 +5615,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/it-rains-on-our-love-1946"
                         >
                           It Rains on Our Love 
@@ -5751,7 +5643,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/music-in-darkness-1948"
                         >
                           Music in Darkness 
@@ -5780,7 +5671,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/waiting-women-1952"
                         >
                           Kvinnors väntan 
@@ -5809,7 +5699,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/sawdust-and-tinsel-1953"
                         >
                           Sawdust and Tinsel 
@@ -5838,7 +5727,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-lesson-in-love-1954"
                         >
                           A Lesson in Love 
@@ -5867,7 +5755,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dreams-1955"
                         >
                           Dreams 
@@ -5902,12 +5789,12 @@ exports[`/reviews/stats renders 1`] = `
                   9. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Samuel L. Jackson
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.26
                 </td>
@@ -5935,7 +5822,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-age-of-ultron-2015"
                         >
                           Avengers: Age of Ultron 
@@ -5964,7 +5850,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-marvel-2019"
                         >
                           Captain Marvel 
@@ -5993,7 +5878,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -6022,7 +5906,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/spider-man-far-from-home-2019"
                         >
                           Spider-Man: Far from Home 
@@ -6051,7 +5934,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/glass-2019"
                         >
                           Glass 
@@ -6086,12 +5968,12 @@ exports[`/reviews/stats renders 1`] = `
                   10. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Kane Hodder
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.11
                 </td>
@@ -6119,7 +6001,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-2006"
                         >
                           Hatchet 
@@ -6148,7 +6029,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-ii-2010"
                         >
                           Hatchet II 
@@ -6177,7 +6057,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-iii-2013"
                         >
                           Hatchet III 
@@ -6206,7 +6085,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/victor-crowley-2017"
                         >
                           Victor Crowley 
@@ -6235,7 +6113,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/california-split-1974"
                         >
                           California Split 
@@ -6264,7 +6141,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/friday-the-13th-part-vii-the-new-blood-1988"
                         >
                           Friday the 13th Part VII: The New Blood 
@@ -6299,12 +6175,12 @@ exports[`/reviews/stats renders 1`] = `
                   11. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Hugh Jackman
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.08
                 </td>
@@ -6332,7 +6208,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-2000"
                         >
                           X-Men 
@@ -6361,7 +6236,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x2-x-men-united-2003"
                         >
                           X2: X-Men United 
@@ -6390,7 +6264,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-the-last-stand-2006"
                         >
                           X-Men: The Last Stand 
@@ -6419,7 +6292,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-origins-wolverine-2009"
                         >
                           X-Men Origins: Wolverine 
@@ -6448,7 +6320,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-first-class-2011"
                         >
                           X-Men: First Class 
@@ -6477,7 +6348,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-wolverine-2013"
                         >
                           The Wolverine 
@@ -6506,7 +6376,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-days-of-future-past-2014"
                         >
                           X-Men: Days of Future Past 
@@ -6535,7 +6404,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/logan-2017"
                         >
                           Logan 
@@ -6570,12 +6438,12 @@ exports[`/reviews/stats renders 1`] = `
                   12. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Famke Janssen
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.05
                 </td>
@@ -6603,7 +6471,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/goldeneye-1995"
                         >
                           GoldenEye 
@@ -6632,7 +6499,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-2000"
                         >
                           X-Men 
@@ -6661,7 +6527,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x2-x-men-united-2003"
                         >
                           X2: X-Men United 
@@ -6690,7 +6555,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-the-last-stand-2006"
                         >
                           X-Men: The Last Stand 
@@ -6719,7 +6583,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-wolverine-2013"
                         >
                           The Wolverine 
@@ -6748,7 +6611,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-days-of-future-past-2014"
                         >
                           X-Men: Days of Future Past 
@@ -6783,17 +6645,16 @@ exports[`/reviews/stats renders 1`] = `
                   13. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/performers/john-wayne/"
                   >
                     John Wayne
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.00
                 </td>
@@ -6821,7 +6682,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-big-trail-1930"
                         >
                           The Big Trail 
@@ -6850,7 +6710,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/arizona-1931"
                         >
                           Arizona 
@@ -6879,7 +6738,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/rio-bravo-1959"
                         >
                           Rio Bravo 
@@ -6908,7 +6766,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-range-feud-1931"
                         >
                           The Range Feud 
@@ -6937,7 +6794,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/maker-of-men-1931"
                         >
                           Maker of Men 
@@ -6972,17 +6828,16 @@ exports[`/reviews/stats renders 1`] = `
                   14. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/performers/william-powell/"
                   >
                     William Powell
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.86
                 </td>
@@ -7010,7 +6865,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-canary-murder-case-1929"
                         >
                           The Canary Murder Case 
@@ -7039,7 +6893,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/charming-sinners-1929"
                         >
                           Charming Sinners 
@@ -7068,7 +6921,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-greene-murder-case-1929"
                         >
                           The Greene Murder Case 
@@ -7097,7 +6949,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/pointed-heels-1929"
                         >
                           Pointed Heels 
@@ -7126,7 +6977,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/behind-the-make-up-1930"
                         >
                           Behind the Make-Up 
@@ -7155,7 +7005,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/interference-1928"
                         >
                           Interference 
@@ -7184,7 +7033,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-benson-murder-case-1930"
                         >
                           The Benson Murder Case 
@@ -7213,7 +7061,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/for-the-defense-1930"
                         >
                           For the Defense 
@@ -7242,7 +7089,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/street-of-chance-1930"
                         >
                           Street of Chance 
@@ -7271,7 +7117,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/shadow-of-the-law-1930"
                         >
                           Shadow of the Law 
@@ -7300,7 +7145,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/ladies-man-1931"
                         >
                           Ladies' Man 
@@ -7329,7 +7173,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/man-of-the-world-1931"
                         >
                           Man of the World 
@@ -7358,7 +7201,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-road-to-singapore-1931"
                         >
                           The Road to Singapore 
@@ -7387,7 +7229,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/high-pressure-1932"
                         >
                           High Pressure 
@@ -7422,12 +7263,12 @@ exports[`/reviews/stats renders 1`] = `
                   15. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Brad Dourif
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.71
                 </td>
@@ -7455,7 +7296,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/childs-play-1988"
                         >
                           Child's Play 
@@ -7484,7 +7324,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/childs-play-2-1990"
                         >
                           Child's Play 2 
@@ -7513,7 +7352,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/childs-play-3-1991"
                         >
                           Child's Play 3 
@@ -7542,7 +7380,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/bride-of-chucky-1998"
                         >
                           Bride of Chucky 
@@ -7571,7 +7408,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/seed-of-chucky-2004"
                         >
                           Seed of Chucky 
@@ -7600,7 +7436,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/curse-of-chucky-2013"
                         >
                           Curse of Chucky 
@@ -7629,7 +7464,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/cult-of-chucky-2017"
                         >
                           Cult of Chucky 
@@ -7664,12 +7498,12 @@ exports[`/reviews/stats renders 1`] = `
                   16. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Birger Malmsten
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.67
                 </td>
@@ -7697,7 +7531,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/it-rains-on-our-love-1946"
                         >
                           It Rains on Our Love 
@@ -7726,7 +7559,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-ship-to-india-1947"
                         >
                           A Ship to India 
@@ -7755,7 +7587,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/music-in-darkness-1948"
                         >
                           Music in Darkness 
@@ -7784,7 +7615,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/prison-1949"
                         >
                           Prison 
@@ -7813,7 +7643,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/thirst-1949"
                         >
                           Thirst 
@@ -7842,7 +7671,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/to-joy-1950"
                         >
                           To Joy 
@@ -7871,7 +7699,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/summer-interlude-1951"
                         >
                           Summer Interlude 
@@ -7900,7 +7727,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/waiting-women-1952"
                         >
                           Kvinnors väntan 
@@ -7935,17 +7761,16 @@ exports[`/reviews/stats renders 1`] = `
                   17. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/performers/boris-karloff/"
                   >
                     Boris Karloff
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.60
                 </td>
@@ -7973,7 +7798,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/behind-that-curtain-1929"
                         >
                           Behind That Curtain 
@@ -8002,7 +7826,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/cracked-nuts-1931"
                         >
                           Cracked Nuts 
@@ -8031,7 +7854,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-sea-bat-1930"
                         >
                           The Sea Bat 
@@ -8060,7 +7882,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-criminal-code-1930"
                         >
                           The Criminal Code 
@@ -8089,7 +7910,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-utah-kid-1930"
                         >
                           The Utah Kid 
@@ -8118,7 +7938,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-public-defender-1931"
                         >
                           The Public Defender 
@@ -8147,7 +7966,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/five-star-final-1931"
                         >
                           Five Star Final 
@@ -8176,7 +7994,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/i-like-your-nerve-1931"
                         >
                           I Like Your Nerve 
@@ -8205,7 +8022,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-guilty-generation-1931"
                         >
                           The Guilty Generation 
@@ -8234,7 +8050,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/frankenstein-1931"
                         >
                           Frankenstein 
@@ -8263,7 +8078,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/tonight-or-never-1931"
                         >
                           Tonight or Never 
@@ -8298,17 +8112,16 @@ exports[`/reviews/stats renders 1`] = `
                   18. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   <a
-                    class="linkCss"
                     href="/watchlist/performers/bela-lugosi/"
                   >
                     Bela Lugosi
                   </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.57
                 </td>
@@ -8336,7 +8149,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-thirteenth-chair-1929"
                         >
                           The Thirteenth Chair 
@@ -8365,7 +8177,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dracula-1931"
                         >
                           Dracula 
@@ -8394,7 +8205,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/renegades-1930"
                         >
                           Renegades 
@@ -8423,7 +8233,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/wild-company-1930"
                         >
                           Wild Company 
@@ -8452,7 +8261,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/oh-for-a-man-1930"
                         >
                           Oh, for a Man! 
@@ -8481,7 +8289,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-black-camel-1931"
                         >
                           The Black Camel 
@@ -8510,7 +8317,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/broadminded-1931"
                         >
                           Broadminded 
@@ -8545,12 +8351,12 @@ exports[`/reviews/stats renders 1`] = `
                   19. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Frank Albertson
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.53
                 </td>
@@ -8578,7 +8384,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/born-reckless-1930"
                         >
                           Born Reckless 
@@ -8607,7 +8412,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/men-without-women-1930"
                         >
                           Men Without Women 
@@ -8636,7 +8440,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/salute-1929"
                         >
                           Salute 
@@ -8665,7 +8468,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/wild-company-1930"
                         >
                           Wild Company 
@@ -8694,7 +8496,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/way-back-home-1931"
                         >
                           Way Back Home 
@@ -8729,12 +8530,12 @@ exports[`/reviews/stats renders 1`] = `
                   20. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Richard Tucker
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.13
                 </td>
@@ -8762,7 +8563,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-unholy-night-1929"
                         >
                           The Unholy Night 
@@ -8791,7 +8591,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-benson-murder-case-1930"
                         >
                           The Benson Murder Case 
@@ -8820,7 +8619,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/shadow-of-the-law-1930"
                         >
                           Shadow of the Law 
@@ -8849,7 +8647,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-holy-terror-1931"
                         >
                           A Holy Terror 
@@ -8878,7 +8675,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/maker-of-men-1931"
                         >
                           Maker of Men 
@@ -8920,12 +8716,12 @@ exports[`/reviews/stats renders 1`] = `
                    
                 </th>
                 <th
-                  class="textHeaderCss"
+                  class="leftHeaderCss"
                 >
                   Name
                 </th>
                 <th
-                  class="numberHeaderCss"
+                  class="rightHeaderCss"
                 >
                   Grade
                 </th>
@@ -8941,12 +8737,12 @@ exports[`/reviews/stats renders 1`] = `
                   1. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Christopher Markus
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   4.89
                 </td>
@@ -8974,7 +8770,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/captain-america-civil-war-2016"
                         >
                           Captain America: Civil War 
@@ -9003,7 +8798,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-infinity-war-2018"
                         >
                           Avengers: Infinity War 
@@ -9032,7 +8826,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/avengers-endgame-2019"
                         >
                           Avengers: Endgame 
@@ -9067,12 +8860,12 @@ exports[`/reviews/stats renders 1`] = `
                   2. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Lucio Fulci
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.60
                 </td>
@@ -9100,7 +8893,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-brute-and-the-beast-1966"
                         >
                           Massacre Time 
@@ -9129,7 +8921,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/one-on-top-of-the-other-1969"
                         >
                           One on Top of the Other 
@@ -9158,7 +8949,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-conspiracy-of-torture-1969"
                         >
                           The Conspiracy of Torture 
@@ -9187,7 +8977,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-lizard-in-a-womans-skin-1971"
                         >
                           A Lizard in a Woman's Skin 
@@ -9216,7 +9005,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dont-torture-a-duckling-1972"
                         >
                           Don't Torture a Duckling 
@@ -9251,12 +9039,12 @@ exports[`/reviews/stats renders 1`] = `
                   3. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Garrett Fort
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.58
                 </td>
@@ -9284,7 +9072,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dracula-1931"
                         >
                           Dracula 
@@ -9313,7 +9100,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/outside-the-law-1930"
                         >
                           Outside the Law 
@@ -9342,7 +9128,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dracula-1931-spanish"
                         >
                           Drácula 
@@ -9371,7 +9156,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/frankenstein-1931"
                         >
                           Frankenstein 
@@ -9406,12 +9190,12 @@ exports[`/reviews/stats renders 1`] = `
                   4. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Roberto Gianviti
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.40
                 </td>
@@ -9439,7 +9223,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/one-on-top-of-the-other-1969"
                         >
                           One on Top of the Other 
@@ -9468,7 +9251,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-conspiracy-of-torture-1969"
                         >
                           The Conspiracy of Torture 
@@ -9497,7 +9279,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-lizard-in-a-womans-skin-1971"
                         >
                           A Lizard in a Woman's Skin 
@@ -9526,7 +9307,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dont-torture-a-duckling-1972"
                         >
                           Don't Torture a Duckling 
@@ -9555,7 +9335,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/white-fang-1973"
                         >
                           White Fang 
@@ -9590,12 +9369,12 @@ exports[`/reviews/stats renders 1`] = `
                   5. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Ingmar Bergman
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.25
                 </td>
@@ -9623,7 +9402,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/crisis-1946"
                         >
                           Crisis 
@@ -9652,7 +9430,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/it-rains-on-our-love-1946"
                         >
                           It Rains on Our Love 
@@ -9681,7 +9458,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-ship-to-india-1947"
                         >
                           A Ship to India 
@@ -9710,7 +9486,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/port-of-call-1948"
                         >
                           Port of Call 
@@ -9739,7 +9514,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/prison-1949"
                         >
                           Prison 
@@ -9768,7 +9542,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/to-joy-1950"
                         >
                           To Joy 
@@ -9797,7 +9570,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/summer-interlude-1951"
                         >
                           Summer Interlude 
@@ -9826,7 +9598,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/waiting-women-1952"
                         >
                           Kvinnors väntan 
@@ -9855,7 +9626,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/summer-with-monika-1953"
                         >
                           Summer with Monika 
@@ -9884,7 +9654,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/sawdust-and-tinsel-1953"
                         >
                           Sawdust and Tinsel 
@@ -9913,7 +9682,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/a-lesson-in-love-1954"
                         >
                           A Lesson in Love 
@@ -9942,7 +9710,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/dreams-1955"
                         >
                           Dreams 
@@ -9977,12 +9744,12 @@ exports[`/reviews/stats renders 1`] = `
                   6. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Val Guest
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.00
                 </td>
@@ -10010,7 +9777,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-quatermass-xperiment-1955"
                         >
                           The Quatermass Xperiment 
@@ -10039,7 +9805,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-abominable-snowman-1957"
                         >
                           The Abominable Snowman 
@@ -10068,7 +9833,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/quatermass-2-1957"
                         >
                           Quatermass 2 
@@ -10097,7 +9861,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-camp-on-blood-island-1958"
                         >
                           The Camp on Blood Island 
@@ -10132,12 +9895,12 @@ exports[`/reviews/stats renders 1`] = `
                   7. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Bryan Singer
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   3.00
                 </td>
@@ -10165,7 +9928,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-2000"
                         >
                           X-Men 
@@ -10194,7 +9956,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x2-x-men-united-2003"
                         >
                           X2: X-Men United 
@@ -10223,7 +9984,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-first-class-2011"
                         >
                           X-Men: First Class 
@@ -10252,7 +10012,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-apocalypse-2016"
                         >
                           X-Men: Apocalypse 
@@ -10287,12 +10046,12 @@ exports[`/reviews/stats renders 1`] = `
                   8. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Adam Green
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.83
                 </td>
@@ -10320,7 +10079,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-2006"
                         >
                           Hatchet 
@@ -10349,7 +10107,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-ii-2010"
                         >
                           Hatchet II 
@@ -10378,7 +10135,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hatchet-iii-2013"
                         >
                           Hatchet III 
@@ -10407,7 +10163,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/victor-crowley-2017"
                         >
                           Victor Crowley 
@@ -10442,12 +10197,12 @@ exports[`/reviews/stats renders 1`] = `
                   9. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Dudley Nichols
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.83
                 </td>
@@ -10475,7 +10230,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/born-reckless-1930"
                         >
                           Born Reckless 
@@ -10504,7 +10258,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/men-without-women-1930"
                         >
                           Men Without Women 
@@ -10533,7 +10286,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-black-camel-1931"
                         >
                           The Black Camel 
@@ -10562,7 +10314,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/seas-beneath-1931"
                         >
                           Seas Beneath 
@@ -10597,12 +10348,12 @@ exports[`/reviews/stats renders 1`] = `
                   10. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Herman J. Mankiewicz
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.78
                 </td>
@@ -10630,7 +10381,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-canary-murder-case-1929"
                         >
                           The Canary Murder Case 
@@ -10659,7 +10409,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/ladies-man-1931"
                         >
                           Ladies' Man 
@@ -10688,7 +10437,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/man-of-the-world-1931"
                         >
                           Man of the World 
@@ -10723,12 +10471,12 @@ exports[`/reviews/stats renders 1`] = `
                   11. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   S.S. Van Dine
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.78
                 </td>
@@ -10756,7 +10504,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-canary-murder-case-1929"
                         >
                           The Canary Murder Case 
@@ -10785,7 +10532,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-greene-murder-case-1929"
                         >
                           The Greene Murder Case 
@@ -10814,7 +10560,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-benson-murder-case-1930"
                         >
                           The Benson Murder Case 
@@ -10849,12 +10594,12 @@ exports[`/reviews/stats renders 1`] = `
                   12. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Brian De Palma
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.73
                 </td>
@@ -10882,7 +10627,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/murder-a-la-mod-1968"
                         >
                           Murder à la Mod 
@@ -10911,7 +10655,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/greetings-1968"
                         >
                           Greetings 
@@ -10940,7 +10683,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-wedding-party-1969"
                         >
                           The Wedding Party 
@@ -10969,7 +10711,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/hi-mom-1970"
                         >
                           Hi, Mom! 
@@ -10998,7 +10739,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/sisters-1972"
                         >
                           Sisters 
@@ -11033,12 +10773,12 @@ exports[`/reviews/stats renders 1`] = `
                   13. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Don Mancini
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.71
                 </td>
@@ -11066,7 +10806,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/childs-play-1988"
                         >
                           Child's Play 
@@ -11095,7 +10834,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/childs-play-2-1990"
                         >
                           Child's Play 2 
@@ -11124,7 +10862,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/childs-play-3-1991"
                         >
                           Child's Play 3 
@@ -11153,7 +10890,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/bride-of-chucky-1998"
                         >
                           Bride of Chucky 
@@ -11182,7 +10918,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/seed-of-chucky-2004"
                         >
                           Seed of Chucky 
@@ -11211,7 +10946,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/curse-of-chucky-2013"
                         >
                           Curse of Chucky 
@@ -11240,7 +10974,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/cult-of-chucky-2017"
                         >
                           Cult of Chucky 
@@ -11275,12 +11008,16 @@ exports[`/reviews/stats renders 1`] = `
                   14. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
-                  David Cronenberg
+                  <a
+                    href="/watchlist/writers/david-cronenberg/"
+                  >
+                    David Cronenberg
+                  </a>
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.42
                 </td>
@@ -11308,7 +11045,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/stereo-tile-3b-of-a-caee-educational-mosaic-1969"
                         >
                           Stereo (Tile 3B of a CAEE Educational Mosaic) 
@@ -11337,7 +11073,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/crimes-of-the-future-1970"
                         >
                           Crimes of the Future 
@@ -11366,7 +11101,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/shivers-1975"
                         >
                           Shivers 
@@ -11395,7 +11129,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/rabid-1977"
                         >
                           Rabid 
@@ -11430,12 +11163,12 @@ exports[`/reviews/stats renders 1`] = `
                   15. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Herbert Grevenius
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.33
                 </td>
@@ -11463,7 +11196,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/it-rains-on-our-love-1946"
                         >
                           It Rains on Our Love 
@@ -11492,7 +11224,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/thirst-1949"
                         >
                           Thirst 
@@ -11521,7 +11252,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/this-cant-happen-here-1950"
                         >
                           This Can't Happen Here 
@@ -11550,7 +11280,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/summer-interlude-1951"
                         >
                           Summer Interlude 
@@ -11585,12 +11314,12 @@ exports[`/reviews/stats renders 1`] = `
                   16. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Alfred Hitchcock
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.27
                 </td>
@@ -11618,7 +11347,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/blackmail-1929"
                         >
                           Blackmail 
@@ -11647,7 +11375,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/murder-1930"
                         >
                           Murder! 
@@ -11676,7 +11403,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/juno-and-the-paycock-1930"
                         >
                           Juno and the Paycock 
@@ -11705,7 +11431,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-skin-game-1931"
                         >
                           The Skin Game 
@@ -11734,7 +11459,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/east-of-shanghai-1931"
                         >
                           East of Shanghai 
@@ -11769,12 +11493,12 @@ exports[`/reviews/stats renders 1`] = `
                   17. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   James Kevin McGuinness
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.22
                 </td>
@@ -11802,7 +11526,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-black-watch-1929"
                         >
                           The Black Watch 
@@ -11831,7 +11554,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/men-without-women-1930"
                         >
                           Men Without Women 
@@ -11860,7 +11582,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/salute-1929"
                         >
                           Salute 
@@ -11895,12 +11616,12 @@ exports[`/reviews/stats renders 1`] = `
                   18. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Alma Reville
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   2.00
                 </td>
@@ -11928,7 +11649,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/murder-1930"
                         >
                           Murder! 
@@ -11957,7 +11677,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/juno-and-the-paycock-1930"
                         >
                           Juno and the Paycock 
@@ -11986,7 +11705,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-skin-game-1931"
                         >
                           The Skin Game 
@@ -12015,7 +11733,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/east-of-shanghai-1931"
                         >
                           East of Shanghai 
@@ -12050,12 +11767,12 @@ exports[`/reviews/stats renders 1`] = `
                   19. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   Simon Kinberg
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   1.92
                 </td>
@@ -12083,7 +11800,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-the-last-stand-2006"
                         >
                           X-Men: The Last Stand 
@@ -12112,7 +11828,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-days-of-future-past-2014"
                         >
                           X-Men: Days of Future Past 
@@ -12141,7 +11856,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-apocalypse-2016"
                         >
                           X-Men: Apocalypse 
@@ -12170,7 +11884,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/x-men-dark-phoenix-2019"
                         >
                           X-Men: Dark Phoenix 
@@ -12205,12 +11918,12 @@ exports[`/reviews/stats renders 1`] = `
                   20. 
                 </td>
                 <td
-                  class="fillDataCellCss"
+                  class="fillCellCss"
                 >
                   John Stone
                 </td>
                 <td
-                  class="numberDataCellCss"
+                  class="rightCellCss"
                 >
                   1.89
                 </td>
@@ -12238,7 +11951,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/the-black-watch-1929"
                         >
                           The Black Watch 
@@ -12267,7 +11979,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/salute-1929"
                         >
                           Salute 
@@ -12296,7 +12007,6 @@ exports[`/reviews/stats renders 1`] = `
                         />
                          
                         <a
-                          class="linkCss"
                           href="/reviews/wild-company-1930"
                         >
                           Wild Company 

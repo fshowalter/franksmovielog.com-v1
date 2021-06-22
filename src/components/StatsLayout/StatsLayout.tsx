@@ -1,4 +1,5 @@
-import React, { ReactNode } from "react";
+import React from "react";
+import Layout from "../Layout";
 import {
   containerCss,
   contentCss,
@@ -7,33 +8,24 @@ import {
   taglineCss,
 } from "./StatsLayout.module.scss";
 
-export function StatsLayoutHeader({
-  headingText,
+export default function StatsLayout({
+  heading,
+  subHeading,
   children,
 }: {
-  headingText: string;
-  children: ReactNode;
+  heading: string;
+  subHeading: React.ReactNode;
+  children: React.ReactNode;
 }): JSX.Element {
   return (
-    <header className={headerCss}>
-      <h2 className={headingCss}>{headingText}</h2>
-      <p className={taglineCss}>{children}</p>
-    </header>
+    <Layout>
+      <main className={containerCss}>
+        <header className={headerCss}>
+          <h2 className={headingCss}>{heading}</h2>
+          <div className={taglineCss}>{subHeading}</div>
+        </header>
+        <div className={contentCss}>{children}</div>
+      </main>
+    </Layout>
   );
-}
-
-export function StatsLayoutContent({
-  children,
-}: {
-  children: JSX.Element[];
-}): JSX.Element {
-  return <div className={contentCss}>{children}</div>;
-}
-
-export function StatsLayout({
-  children,
-}: {
-  children: JSX.Element[];
-}): JSX.Element {
-  return <main className={containerCss}>{children}</main>;
 }

@@ -1,5 +1,3 @@
-export {
-  StatsLayout,
-  StatsLayoutContent,
-  StatsLayoutHeader,
-} from "./StatsLayout";
+import StatsLayout from "./StatsLayout";
+
+export default StatsLayout;

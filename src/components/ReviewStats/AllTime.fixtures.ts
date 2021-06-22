@@ -1,6 +1,10 @@
 export default {
-  gradeDistributions: {
-    distributions: [
+  overall: {
+    averageWordsPerReview: 136.68345323741008,
+    reviewCount: 278,
+  },
+  gradeDistribution: {
+    stats: [
       {
         grade: "A+",
         reviewCount: 6,
@@ -19,7 +23,7 @@ export default {
       },
       {
         grade: "B",
-        reviewCount: 20,
+        reviewCount: 21,
       },
       {
         grade: "B-",
@@ -55,8 +59,8 @@ export default {
       },
     ],
   },
-  decades: {
-    decade: [
+  decade: {
+    stats: [
       {
         decade: "1920s",
         averageGradeValue: 2.391818181818181,
@@ -83,7 +87,7 @@ export default {
       },
       {
         decade: "1980s",
-        averageGradeValue: 3.4322222222222223,
+        averageGradeValue: 3.4525,
       },
       {
         decade: "1990s",
@@ -112,6 +116,7 @@ export default {
         averageGradeValue: 4.886666666666667,
         reviews: [
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -119,6 +124,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -126,6 +132,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -141,6 +148,7 @@ export default {
         averageGradeValue: 4.886666666666667,
         reviews: [
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -148,6 +156,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -155,6 +164,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -170,6 +180,7 @@ export default {
         averageGradeValue: 4.223333333333334,
         reviews: [
           {
+            sequence: 998,
             prettyDate: "Tue Jan 26, 2021",
             gradeValue: 4.67,
             title: "The Seventh Continent",
@@ -177,6 +188,7 @@ export default {
             slug: "the-seventh-continent-1989",
           },
           {
+            sequence: 1053,
             prettyDate: "Thu Mar 18, 2021",
             gradeValue: 4.67,
             title: "Benny's Video",
@@ -184,6 +196,7 @@ export default {
             slug: "bennys-video-1992",
           },
           {
+            sequence: 1067,
             prettyDate: "Mon Mar 29, 2021",
             gradeValue: 3.33,
             title: "71 Fragments of a Chronology of Chance",
@@ -199,6 +212,7 @@ export default {
         averageGradeValue: 4.11,
         reviews: [
           {
+            sequence: 869,
             prettyDate: "Sun Sep 13, 2020",
             gradeValue: 3.67,
             title: "The Dawn Patrol",
@@ -206,6 +220,7 @@ export default {
             slug: "the-dawn-patrol-1930",
           },
           {
+            sequence: 919,
             prettyDate: "Wed Nov 18, 2020",
             gradeValue: 3.33,
             title: "The Criminal Code",
@@ -213,6 +228,7 @@ export default {
             slug: "the-criminal-code-1930",
           },
           {
+            sequence: 1001,
             prettyDate: "Fri Jan 29, 2021",
             gradeValue: 5.33,
             title: "Rio Bravo",
@@ -228,6 +244,7 @@ export default {
         averageGradeValue: 4,
         reviews: [
           {
+            sequence: 1054,
             prettyDate: "Fri Mar 19, 2021",
             gradeValue: 4,
             title: "Zack Snyder's Justice League",
@@ -235,6 +252,7 @@ export default {
             slug: "zack-snyders-justice-league-2021",
           },
           {
+            sequence: 1064,
             prettyDate: "Sat Mar 27, 2021",
             gradeValue: 3.67,
             title: "Batman v Superman: Dawn of Justice",
@@ -242,6 +260,7 @@ export default {
             slug: "batman-v-superman-dawn-of-justice-2016",
           },
           {
+            sequence: 1084,
             prettyDate: "Sat Apr 17, 2021",
             gradeValue: 4.33,
             title: "Watchmen",
@@ -257,6 +276,7 @@ export default {
         averageGradeValue: 3.388333333333333,
         reviews: [
           {
+            sequence: 873,
             prettyDate: "Mon Sep 21, 2020",
             gradeValue: 3.33,
             title: "Massacre Time",
@@ -264,6 +284,7 @@ export default {
             slug: "the-brute-and-the-beast-1966",
           },
           {
+            sequence: 874,
             prettyDate: "Thu Sep 24, 2020",
             gradeValue: 4,
             title: "One on Top of the Other",
@@ -271,6 +292,7 @@ export default {
             slug: "one-on-top-of-the-other-1969",
           },
           {
+            sequence: 896,
             prettyDate: "Thu Oct 22, 2020",
             gradeValue: 3.67,
             title: "The Conspiracy of Torture",
@@ -278,6 +300,7 @@ export default {
             slug: "the-conspiracy-of-torture-1969",
           },
           {
+            sequence: 897,
             prettyDate: "Fri Oct 23, 2020",
             gradeValue: 3.33,
             title: "A Lizard in a Woman's Skin",
@@ -285,6 +308,7 @@ export default {
             slug: "a-lizard-in-a-womans-skin-1971",
           },
           {
+            sequence: 901,
             prettyDate: "Tue Oct 27, 2020",
             gradeValue: 3.67,
             title: "Don't Torture a Duckling",
@@ -292,6 +316,7 @@ export default {
             slug: "dont-torture-a-duckling-1972",
           },
           {
+            sequence: 1060,
             prettyDate: "Fri Mar 26, 2021",
             gradeValue: 2.33,
             title: "White Fang",
@@ -307,6 +332,7 @@ export default {
         averageGradeValue: 3.3333333333333335,
         reviews: [
           {
+            sequence: 1029,
             prettyDate: "Thu Feb 25, 2021",
             gradeValue: 2.67,
             title: "Waterloo Bridge",
@@ -314,6 +340,7 @@ export default {
             slug: "waterloo-bridge-1931",
           },
           {
+            sequence: 1087,
             prettyDate: "Tue Apr 20, 2021",
             gradeValue: 4.33,
             title: "Frankenstein",
@@ -321,6 +348,7 @@ export default {
             slug: "frankenstein-1931",
           },
           {
+            sequence: 1099,
             prettyDate: "Mon May 10, 2021",
             gradeValue: 3,
             title: "The Man in the Iron Mask",
@@ -336,6 +364,7 @@ export default {
         averageGradeValue: 3,
         reviews: [
           {
+            sequence: 854,
             prettyDate: "Mon Aug 17, 2020",
             gradeValue: 2.33,
             title: "The Thirteenth Chair",
@@ -343,6 +372,7 @@ export default {
             slug: "the-thirteenth-chair-1929",
           },
           {
+            sequence: 880,
             prettyDate: "Sun Oct 4, 2020",
             gradeValue: 4.67,
             title: "Dracula",
@@ -350,6 +380,7 @@ export default {
             slug: "dracula-1931",
           },
           {
+            sequence: 967,
             prettyDate: "Fri Jan 1, 2021",
             gradeValue: 2,
             title: "Outside the Law",
@@ -357,6 +388,7 @@ export default {
             slug: "outside-the-law-1930",
           },
           {
+            sequence: 988,
             prettyDate: "Sun Jan 17, 2021",
             gradeValue: 3,
             title: "Iron Man",
@@ -372,6 +404,7 @@ export default {
         averageGradeValue: 3,
         reviews: [
           {
+            sequence: 856,
             prettyDate: "Wed Aug 19, 2020",
             gradeValue: 3.67,
             title: "The Quatermass Xperiment",
@@ -379,6 +412,7 @@ export default {
             slug: "the-quatermass-xperiment-1955",
           },
           {
+            sequence: 861,
             prettyDate: "Thu Aug 27, 2020",
             gradeValue: 2.33,
             title: "The Abominable Snowman",
@@ -386,6 +420,7 @@ export default {
             slug: "the-abominable-snowman-1957",
           },
           {
+            sequence: 911,
             prettyDate: "Thu Nov 5, 2020",
             gradeValue: 2.33,
             title: "Quatermass 2",
@@ -393,6 +428,7 @@ export default {
             slug: "quatermass-2-1957",
           },
           {
+            sequence: 915,
             prettyDate: "Tue Nov 10, 2020",
             gradeValue: 3.67,
             title: "The Camp on Blood Island",
@@ -408,6 +444,7 @@ export default {
         averageGradeValue: 2.9966666666666666,
         reviews: [
           {
+            sequence: 1092,
             prettyDate: "Sun Apr 25, 2021",
             gradeValue: 3.33,
             title: "Seed of Chucky",
@@ -415,6 +452,7 @@ export default {
             slug: "seed-of-chucky-2004",
           },
           {
+            sequence: 1105,
             prettyDate: "Sun May 16, 2021",
             gradeValue: 3.33,
             title: "Curse of Chucky",
@@ -422,6 +460,7 @@ export default {
             slug: "curse-of-chucky-2013",
           },
           {
+            sequence: 1110,
             prettyDate: "Thu Jun 3, 2021",
             gradeValue: 2.33,
             title: "Cult of Chucky",
@@ -437,6 +476,7 @@ export default {
         averageGradeValue: 2.887333333333333,
         reviews: [
           {
+            sequence: 942,
             prettyDate: "Sun Dec 13, 2020",
             gradeValue: 3.67,
             title: "Crisis",
@@ -444,6 +484,7 @@ export default {
             slug: "crisis-1946",
           },
           {
+            sequence: 945,
             prettyDate: "Wed Dec 16, 2020",
             gradeValue: 4,
             title: "It Rains on Our Love",
@@ -451,6 +492,7 @@ export default {
             slug: "it-rains-on-our-love-1946",
           },
           {
+            sequence: 952,
             prettyDate: "Sun Dec 20, 2020",
             gradeValue: 2.33,
             title: "A Ship to India",
@@ -458,6 +500,7 @@ export default {
             slug: "a-ship-to-india-1947",
           },
           {
+            sequence: 976,
             prettyDate: "Fri Jan 8, 2021",
             gradeValue: 2.33,
             title: "Music in Darkness",
@@ -465,6 +508,7 @@ export default {
             slug: "music-in-darkness-1948",
           },
           {
+            sequence: 981,
             prettyDate: "Mon Jan 11, 2021",
             gradeValue: 2.33,
             title: "Port of Call",
@@ -472,6 +516,7 @@ export default {
             slug: "port-of-call-1948",
           },
           {
+            sequence: 1004,
             prettyDate: "Mon Feb 1, 2021",
             gradeValue: 2.33,
             title: "Prison",
@@ -479,6 +524,7 @@ export default {
             slug: "prison-1949",
           },
           {
+            sequence: 1021,
             prettyDate: "Wed Feb 17, 2021",
             gradeValue: 1,
             title: "Thirst",
@@ -486,6 +532,7 @@ export default {
             slug: "thirst-1949",
           },
           {
+            sequence: 1035,
             prettyDate: "Mon Mar 1, 2021",
             gradeValue: 3.33,
             title: "To Joy",
@@ -493,6 +540,7 @@ export default {
             slug: "to-joy-1950",
           },
           {
+            sequence: 1050,
             prettyDate: "Mon Mar 15, 2021",
             gradeValue: 1,
             title: "This Can't Happen Here",
@@ -500,6 +548,7 @@ export default {
             slug: "this-cant-happen-here-1950",
           },
           {
+            sequence: 1058,
             prettyDate: "Wed Mar 24, 2021",
             gradeValue: 3.33,
             title: "Summer Interlude",
@@ -507,6 +556,7 @@ export default {
             slug: "summer-interlude-1951",
           },
           {
+            sequence: 1069,
             prettyDate: "Thu Apr 1, 2021",
             gradeValue: 2.67,
             title: "Kvinnors väntan",
@@ -514,6 +564,7 @@ export default {
             slug: "waiting-women-1952",
           },
           {
+            sequence: 1079,
             prettyDate: "Mon Apr 12, 2021",
             gradeValue: 4.33,
             title: "Summer with Monika",
@@ -521,6 +572,7 @@ export default {
             slug: "summer-with-monika-1953",
           },
           {
+            sequence: 1089,
             prettyDate: "Thu Apr 22, 2021",
             gradeValue: 4.33,
             title: "Sawdust and Tinsel",
@@ -528,6 +580,7 @@ export default {
             slug: "sawdust-and-tinsel-1953",
           },
           {
+            sequence: 1094,
             prettyDate: "Wed Apr 28, 2021",
             gradeValue: 3,
             title: "A Lesson in Love",
@@ -535,6 +588,7 @@ export default {
             slug: "a-lesson-in-love-1954",
           },
           {
+            sequence: 1098,
             prettyDate: "Tue May 4, 2021",
             gradeValue: 3.33,
             title: "Dreams",
@@ -550,6 +604,7 @@ export default {
         averageGradeValue: 2.8325,
         reviews: [
           {
+            sequence: 841,
             prettyDate: "Fri Jul 17, 2020",
             gradeValue: 3,
             title: "The Canary Murder Case",
@@ -557,6 +612,7 @@ export default {
             slug: "the-canary-murder-case-1929",
           },
           {
+            sequence: 846,
             prettyDate: "Thu Jul 30, 2020",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
@@ -564,6 +620,7 @@ export default {
             slug: "the-greene-murder-case-1929",
           },
           {
+            sequence: 860,
             prettyDate: "Wed Aug 26, 2020",
             gradeValue: 3,
             title: "The Benson Murder Case",
@@ -571,6 +628,7 @@ export default {
             slug: "the-benson-murder-case-1930",
           },
           {
+            sequence: 1062,
             prettyDate: "Sat Mar 27, 2021",
             gradeValue: 3,
             title: "This Is the Night",
@@ -586,6 +644,7 @@ export default {
         averageGradeValue: 2.8325,
         reviews: [
           {
+            sequence: 978,
             prettyDate: "Sat Jan 9, 2021",
             gradeValue: 4,
             title: "X-Men",
@@ -593,6 +652,7 @@ export default {
             slug: "x-men-2000",
           },
           {
+            sequence: 986,
             prettyDate: "Sat Jan 16, 2021",
             gradeValue: 3,
             title: "X2: X-Men United",
@@ -600,6 +660,7 @@ export default {
             slug: "x2-x-men-united-2003",
           },
           {
+            sequence: 1024,
             prettyDate: "Sat Feb 20, 2021",
             gradeValue: 3.33,
             title: "X-Men: Days of Future Past",
@@ -607,6 +668,7 @@ export default {
             slug: "x-men-days-of-future-past-2014",
           },
           {
+            sequence: 1040,
             prettyDate: "Sat Mar 6, 2021",
             gradeValue: 1,
             title: "X-Men: Apocalypse",
@@ -622,6 +684,7 @@ export default {
         averageGradeValue: 2.6666666666666665,
         reviews: [
           {
+            sequence: 871,
             prettyDate: "Sat Sep 19, 2020",
             gradeValue: 3,
             title: "Hatchet",
@@ -629,6 +692,7 @@ export default {
             slug: "hatchet-2006",
           },
           {
+            sequence: 890,
             prettyDate: "Thu Oct 15, 2020",
             gradeValue: 2.67,
             title: "Hatchet II",
@@ -636,6 +700,7 @@ export default {
             slug: "hatchet-ii-2010",
           },
           {
+            sequence: 987,
             prettyDate: "Sat Jan 16, 2021",
             gradeValue: 2.33,
             title: "Victor Crowley",
@@ -651,6 +716,7 @@ export default {
         averageGradeValue: 2.5228571428571427,
         reviews: [
           {
+            sequence: 969,
             prettyDate: "Fri Jan 1, 2021",
             gradeValue: 3.67,
             title: "Murder à la Mod",
@@ -658,6 +724,7 @@ export default {
             slug: "murder-a-la-mod-1968",
           },
           {
+            sequence: 1006,
             prettyDate: "Wed Feb 3, 2021",
             gradeValue: 2,
             title: "Greetings",
@@ -665,6 +732,7 @@ export default {
             slug: "greetings-1968",
           },
           {
+            sequence: 1038,
             prettyDate: "Thu Mar 4, 2021",
             gradeValue: 2.33,
             title: "The Wedding Party",
@@ -672,6 +740,7 @@ export default {
             slug: "the-wedding-party-1969",
           },
           {
+            sequence: 1056,
             prettyDate: "Sun Mar 21, 2021",
             gradeValue: 1,
             title: "Dionysus in '69",
@@ -679,6 +748,7 @@ export default {
             slug: "dionysus-in-69-1970",
           },
           {
+            sequence: 1068,
             prettyDate: "Wed Mar 31, 2021",
             gradeValue: 2.33,
             title: "Hi, Mom!",
@@ -686,6 +756,7 @@ export default {
             slug: "hi-mom-1970",
           },
           {
+            sequence: 1082,
             prettyDate: "Thu Apr 15, 2021",
             gradeValue: 3,
             title: "Get to Know Your Rabbit",
@@ -693,6 +764,7 @@ export default {
             slug: "get-to-know-your-rabbit-1972",
           },
           {
+            sequence: 1095,
             prettyDate: "Thu Apr 29, 2021",
             gradeValue: 3.33,
             title: "Sisters",
@@ -708,6 +780,7 @@ export default {
         averageGradeValue: 2.474285714285714,
         reviews: [
           {
+            sequence: 840,
             prettyDate: "Sun Jul 12, 2020",
             gradeValue: 1,
             title: "The Black Watch",
@@ -715,6 +788,7 @@ export default {
             slug: "the-black-watch-1929",
           },
           {
+            sequence: 867,
             prettyDate: "Fri Sep 11, 2020",
             gradeValue: 2.33,
             title: "Born Reckless",
@@ -722,6 +796,7 @@ export default {
             slug: "born-reckless-1930",
           },
           {
+            sequence: 868,
             prettyDate: "Fri Sep 11, 2020",
             gradeValue: 3.33,
             title: "Men Without Women",
@@ -729,6 +804,7 @@ export default {
             slug: "men-without-women-1930",
           },
           {
+            sequence: 883,
             prettyDate: "Fri Oct 9, 2020",
             gradeValue: 2.33,
             title: "Salute",
@@ -736,6 +812,7 @@ export default {
             slug: "salute-1929",
           },
           {
+            sequence: 912,
             prettyDate: "Fri Nov 6, 2020",
             gradeValue: 3.67,
             title: "Up the River",
@@ -743,6 +820,7 @@ export default {
             slug: "up-the-river-1930",
           },
           {
+            sequence: 975,
             prettyDate: "Thu Jan 7, 2021",
             gradeValue: 2.33,
             title: "Seas Beneath",
@@ -750,6 +828,7 @@ export default {
             slug: "seas-beneath-1931",
           },
           {
+            sequence: 1088,
             prettyDate: "Wed Apr 21, 2021",
             gradeValue: 2.33,
             title: "Arrowsmith",
@@ -765,6 +844,7 @@ export default {
         averageGradeValue: 2.4175,
         reviews: [
           {
+            sequence: 964,
             prettyDate: "Sat Dec 26, 2020",
             gradeValue: 2,
             title: "Stereo (Tile 3B of a CAEE Educational Mosaic)",
@@ -772,6 +852,7 @@ export default {
             slug: "stereo-tile-3b-of-a-caee-educational-mosaic-1969",
           },
           {
+            sequence: 972,
             prettyDate: "Sun Jan 3, 2021",
             gradeValue: 2.33,
             title: "Crimes of the Future",
@@ -779,6 +860,7 @@ export default {
             slug: "crimes-of-the-future-1970",
           },
           {
+            sequence: 1000,
             prettyDate: "Thu Jan 28, 2021",
             gradeValue: 2.67,
             title: "Shivers",
@@ -786,6 +868,7 @@ export default {
             slug: "shivers-1975",
           },
           {
+            sequence: 1007,
             prettyDate: "Thu Feb 4, 2021",
             gradeValue: 2.67,
             title: "Rabid",
@@ -801,6 +884,7 @@ export default {
         averageGradeValue: 2.332,
         reviews: [
           {
+            sequence: 892,
             prettyDate: "Fri Oct 16, 2020",
             gradeValue: 3.33,
             title: "Big City Blues",
@@ -808,6 +892,7 @@ export default {
             slug: "big-city-blues-1932",
           },
           {
+            sequence: 1030,
             prettyDate: "Thu Feb 25, 2021",
             gradeValue: 2.33,
             title: "Five Star Final",
@@ -815,6 +900,7 @@ export default {
             slug: "five-star-final-1931",
           },
           {
+            sequence: 1034,
             prettyDate: "Sun Feb 28, 2021",
             gradeValue: 1,
             title: "Broadminded",
@@ -822,6 +908,7 @@ export default {
             slug: "broadminded-1931",
           },
           {
+            sequence: 1097,
             prettyDate: "Mon May 3, 2021",
             gradeValue: 2.33,
             title: "Tonight or Never",
@@ -829,6 +916,7 @@ export default {
             slug: "tonight-or-never-1931",
           },
           {
+            sequence: 1100,
             prettyDate: "Wed May 12, 2021",
             gradeValue: 2.67,
             title: "High Pressure",
@@ -844,6 +932,7 @@ export default {
         averageGradeValue: 2.266,
         reviews: [
           {
+            sequence: 838,
             prettyDate: "Fri Jul 10, 2020",
             gradeValue: 3.33,
             title: "Blackmail",
@@ -851,6 +940,7 @@ export default {
             slug: "blackmail-1929",
           },
           {
+            sequence: 876,
             prettyDate: "Mon Sep 28, 2020",
             gradeValue: 3,
             title: "Murder!",
@@ -858,6 +948,7 @@ export default {
             slug: "murder-1930",
           },
           {
+            sequence: 909,
             prettyDate: "Mon Nov 2, 2020",
             gradeValue: 1,
             title: "Juno and the Paycock",
@@ -865,6 +956,7 @@ export default {
             slug: "juno-and-the-paycock-1930",
           },
           {
+            sequence: 979,
             prettyDate: "Sat Jan 9, 2021",
             gradeValue: 2,
             title: "The Skin Game",
@@ -872,6 +964,7 @@ export default {
             slug: "the-skin-game-1931",
           },
           {
+            sequence: 1093,
             prettyDate: "Tue Apr 27, 2021",
             gradeValue: 2,
             title: "East of Shanghai",
@@ -887,6 +980,7 @@ export default {
         averageGradeValue: 1.665,
         reviews: [
           {
+            sequence: 837,
             prettyDate: "Thu Jul 9, 2020",
             gradeValue: 2.33,
             title: "Behind That Curtain",
@@ -894,6 +988,7 @@ export default {
             slug: "behind-that-curtain-1929",
           },
           {
+            sequence: 928,
             prettyDate: "Fri Nov 27, 2020",
             gradeValue: 1,
             title: "A Holy Terror",
@@ -913,6 +1008,7 @@ export default {
         averageGradeValue: 4.798,
         reviews: [
           {
+            sequence: 839,
             prettyDate: "Sat Jul 11, 2020",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
@@ -920,6 +1016,7 @@ export default {
             slug: "avengers-age-of-ultron-2015",
           },
           {
+            sequence: 875,
             prettyDate: "Sat Sep 26, 2020",
             gradeValue: 5,
             title: "Thor: Ragnarok",
@@ -927,6 +1024,7 @@ export default {
             slug: "thor-ragnarok-2017",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -934,6 +1032,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -941,6 +1040,7 @@ export default {
             slug: "avengers-endgame-2019",
           },
           {
+            sequence: 956,
             prettyDate: "Tue Dec 22, 2020",
             gradeValue: 5.33,
             title: "The Cabin in the Woods",
@@ -956,6 +1056,7 @@ export default {
         averageGradeValue: 4.264,
         reviews: [
           {
+            sequence: 839,
             prettyDate: "Sat Jul 11, 2020",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
@@ -963,6 +1064,7 @@ export default {
             slug: "avengers-age-of-ultron-2015",
           },
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -970,6 +1072,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 865,
             prettyDate: "Sat Sep 5, 2020",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
@@ -977,6 +1080,7 @@ export default {
             slug: "spider-man-homecoming-2017",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -984,6 +1088,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -999,6 +1104,7 @@ export default {
         averageGradeValue: 4.264,
         reviews: [
           {
+            sequence: 839,
             prettyDate: "Sat Jul 11, 2020",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
@@ -1006,6 +1112,7 @@ export default {
             slug: "avengers-age-of-ultron-2015",
           },
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -1013,6 +1120,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 865,
             prettyDate: "Sat Sep 5, 2020",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
@@ -1020,6 +1128,7 @@ export default {
             slug: "spider-man-homecoming-2017",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -1027,6 +1136,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -1042,6 +1152,7 @@ export default {
         averageGradeValue: 4.264,
         reviews: [
           {
+            sequence: 839,
             prettyDate: "Sat Jul 11, 2020",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
@@ -1049,6 +1160,7 @@ export default {
             slug: "avengers-age-of-ultron-2015",
           },
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -1056,6 +1168,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 865,
             prettyDate: "Sat Sep 5, 2020",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
@@ -1063,6 +1176,7 @@ export default {
             slug: "spider-man-homecoming-2017",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -1070,6 +1184,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -1085,6 +1200,7 @@ export default {
         averageGradeValue: 4.064,
         reviews: [
           {
+            sequence: 839,
             prettyDate: "Sat Jul 11, 2020",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
@@ -1092,6 +1208,7 @@ export default {
             slug: "avengers-age-of-ultron-2015",
           },
           {
+            sequence: 842,
             prettyDate: "Sat Jul 18, 2020",
             gradeValue: 2.33,
             title: "Ant-Man",
@@ -1099,6 +1216,7 @@ export default {
             slug: "ant-man-2015",
           },
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -1106,6 +1224,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -1113,6 +1232,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -1128,6 +1248,7 @@ export default {
         averageGradeValue: 4.064,
         reviews: [
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -1135,6 +1256,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 865,
             prettyDate: "Sat Sep 5, 2020",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
@@ -1142,6 +1264,7 @@ export default {
             slug: "spider-man-homecoming-2017",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -1149,6 +1272,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -1156,6 +1280,7 @@ export default {
             slug: "avengers-endgame-2019",
           },
           {
+            sequence: 921,
             prettyDate: "Sat Nov 21, 2020",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
@@ -1171,6 +1296,7 @@ export default {
         averageGradeValue: 3.388333333333333,
         reviews: [
           {
+            sequence: 847,
             prettyDate: "Sat Aug 1, 2020",
             gradeValue: 3,
             title: "Star Wars: Episode IV - A New Hope",
@@ -1178,6 +1304,7 @@ export default {
             slug: "star-wars-episode-iv-a-new-hope-1977",
           },
           {
+            sequence: 861,
             prettyDate: "Thu Aug 27, 2020",
             gradeValue: 2.33,
             title: "The Abominable Snowman",
@@ -1185,6 +1312,7 @@ export default {
             slug: "the-abominable-snowman-1957",
           },
           {
+            sequence: 872,
             prettyDate: "Sat Sep 19, 2020",
             gradeValue: 5,
             title: "The Curse of Frankenstein",
@@ -1192,6 +1320,7 @@ export default {
             slug: "the-curse-of-frankenstein-1957",
           },
           {
+            sequence: 882,
             prettyDate: "Tue Oct 6, 2020",
             gradeValue: 2.33,
             title: "A Chump at Oxford",
@@ -1199,6 +1328,7 @@ export default {
             slug: "a-chump-at-oxford-1939",
           },
           {
+            sequence: 936,
             prettyDate: "Tue Dec 8, 2020",
             gradeValue: 4.67,
             title: "Horror of Dracula",
@@ -1206,6 +1336,7 @@ export default {
             slug: "horror-of-dracula-1958",
           },
           {
+            sequence: 1099,
             prettyDate: "Mon May 10, 2021",
             gradeValue: 3,
             title: "The Man in the Iron Mask",
@@ -1221,6 +1352,7 @@ export default {
         averageGradeValue: 3.276666666666666,
         reviews: [
           {
+            sequence: 945,
             prettyDate: "Wed Dec 16, 2020",
             gradeValue: 4,
             title: "It Rains on Our Love",
@@ -1228,6 +1360,7 @@ export default {
             slug: "it-rains-on-our-love-1946",
           },
           {
+            sequence: 976,
             prettyDate: "Fri Jan 8, 2021",
             gradeValue: 2.33,
             title: "Music in Darkness",
@@ -1235,6 +1368,7 @@ export default {
             slug: "music-in-darkness-1948",
           },
           {
+            sequence: 1069,
             prettyDate: "Thu Apr 1, 2021",
             gradeValue: 2.67,
             title: "Kvinnors väntan",
@@ -1242,6 +1376,7 @@ export default {
             slug: "waiting-women-1952",
           },
           {
+            sequence: 1089,
             prettyDate: "Thu Apr 22, 2021",
             gradeValue: 4.33,
             title: "Sawdust and Tinsel",
@@ -1249,6 +1384,7 @@ export default {
             slug: "sawdust-and-tinsel-1953",
           },
           {
+            sequence: 1094,
             prettyDate: "Wed Apr 28, 2021",
             gradeValue: 3,
             title: "A Lesson in Love",
@@ -1256,6 +1392,7 @@ export default {
             slug: "a-lesson-in-love-1954",
           },
           {
+            sequence: 1098,
             prettyDate: "Tue May 4, 2021",
             gradeValue: 3.33,
             title: "Dreams",
@@ -1271,6 +1408,7 @@ export default {
         averageGradeValue: 3.2640000000000002,
         reviews: [
           {
+            sequence: 839,
             prettyDate: "Sat Jul 11, 2020",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
@@ -1278,6 +1416,7 @@ export default {
             slug: "avengers-age-of-ultron-2015",
           },
           {
+            sequence: 913,
             prettyDate: "Sun Nov 8, 2020",
             gradeValue: 3.33,
             title: "Captain Marvel",
@@ -1285,6 +1424,7 @@ export default {
             slug: "captain-marvel-2019",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -1292,6 +1432,7 @@ export default {
             slug: "avengers-endgame-2019",
           },
           {
+            sequence: 921,
             prettyDate: "Sat Nov 21, 2020",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
@@ -1299,6 +1440,7 @@ export default {
             slug: "spider-man-far-from-home-2019",
           },
           {
+            sequence: 966,
             prettyDate: "Thu Dec 31, 2020",
             gradeValue: 2.33,
             title: "Glass",
@@ -1314,6 +1456,7 @@ export default {
         averageGradeValue: 3.1099999999999994,
         reviews: [
           {
+            sequence: 871,
             prettyDate: "Sat Sep 19, 2020",
             gradeValue: 3,
             title: "Hatchet",
@@ -1321,6 +1464,7 @@ export default {
             slug: "hatchet-2006",
           },
           {
+            sequence: 890,
             prettyDate: "Thu Oct 15, 2020",
             gradeValue: 2.67,
             title: "Hatchet II",
@@ -1328,6 +1472,7 @@ export default {
             slug: "hatchet-ii-2010",
           },
           {
+            sequence: 920,
             prettyDate: "Thu Nov 19, 2020",
             gradeValue: 3.33,
             title: "Hatchet III",
@@ -1335,6 +1480,7 @@ export default {
             slug: "hatchet-iii-2013",
           },
           {
+            sequence: 987,
             prettyDate: "Sat Jan 16, 2021",
             gradeValue: 2.33,
             title: "Victor Crowley",
@@ -1342,6 +1488,7 @@ export default {
             slug: "victor-crowley-2017",
           },
           {
+            sequence: 1086,
             prettyDate: "Mon Apr 19, 2021",
             gradeValue: 5,
             title: "California Split",
@@ -1349,6 +1496,7 @@ export default {
             slug: "california-split-1974",
           },
           {
+            sequence: 1090,
             prettyDate: "Fri Apr 23, 2021",
             gradeValue: 2.33,
             title: "Friday the 13th Part VII: The New Blood",
@@ -1364,6 +1512,7 @@ export default {
         averageGradeValue: 3.0824999999999996,
         reviews: [
           {
+            sequence: 978,
             prettyDate: "Sat Jan 9, 2021",
             gradeValue: 4,
             title: "X-Men",
@@ -1371,6 +1520,7 @@ export default {
             slug: "x-men-2000",
           },
           {
+            sequence: 986,
             prettyDate: "Sat Jan 16, 2021",
             gradeValue: 3,
             title: "X2: X-Men United",
@@ -1378,6 +1528,7 @@ export default {
             slug: "x2-x-men-united-2003",
           },
           {
+            sequence: 995,
             prettyDate: "Sat Jan 23, 2021",
             gradeValue: 1,
             title: "X-Men: The Last Stand",
@@ -1385,6 +1536,7 @@ export default {
             slug: "x-men-the-last-stand-2006",
           },
           {
+            sequence: 1002,
             prettyDate: "Sat Jan 30, 2021",
             gradeValue: 2,
             title: "X-Men Origins: Wolverine",
@@ -1392,6 +1544,7 @@ export default {
             slug: "x-men-origins-wolverine-2009",
           },
           {
+            sequence: 1010,
             prettyDate: "Sat Feb 6, 2021",
             gradeValue: 4,
             title: "X-Men: First Class",
@@ -1399,6 +1552,7 @@ export default {
             slug: "x-men-first-class-2011",
           },
           {
+            sequence: 1017,
             prettyDate: "Sat Feb 13, 2021",
             gradeValue: 3.33,
             title: "The Wolverine",
@@ -1406,6 +1560,7 @@ export default {
             slug: "the-wolverine-2013",
           },
           {
+            sequence: 1024,
             prettyDate: "Sat Feb 20, 2021",
             gradeValue: 3.33,
             title: "X-Men: Days of Future Past",
@@ -1413,6 +1568,7 @@ export default {
             slug: "x-men-days-of-future-past-2014",
           },
           {
+            sequence: 1048,
             prettyDate: "Sat Mar 13, 2021",
             gradeValue: 4,
             title: "Logan",
@@ -1428,6 +1584,7 @@ export default {
         averageGradeValue: 3.0549999999999997,
         reviews: [
           {
+            sequence: 850,
             prettyDate: "Tue Aug 4, 2020",
             gradeValue: 3.67,
             title: "GoldenEye",
@@ -1435,6 +1592,7 @@ export default {
             slug: "goldeneye-1995",
           },
           {
+            sequence: 978,
             prettyDate: "Sat Jan 9, 2021",
             gradeValue: 4,
             title: "X-Men",
@@ -1442,6 +1600,7 @@ export default {
             slug: "x-men-2000",
           },
           {
+            sequence: 986,
             prettyDate: "Sat Jan 16, 2021",
             gradeValue: 3,
             title: "X2: X-Men United",
@@ -1449,6 +1608,7 @@ export default {
             slug: "x2-x-men-united-2003",
           },
           {
+            sequence: 995,
             prettyDate: "Sat Jan 23, 2021",
             gradeValue: 1,
             title: "X-Men: The Last Stand",
@@ -1456,6 +1616,7 @@ export default {
             slug: "x-men-the-last-stand-2006",
           },
           {
+            sequence: 1017,
             prettyDate: "Sat Feb 13, 2021",
             gradeValue: 3.33,
             title: "The Wolverine",
@@ -1463,6 +1624,7 @@ export default {
             slug: "the-wolverine-2013",
           },
           {
+            sequence: 1024,
             prettyDate: "Sat Feb 20, 2021",
             gradeValue: 3.33,
             title: "X-Men: Days of Future Past",
@@ -1478,6 +1640,7 @@ export default {
         averageGradeValue: 3,
         reviews: [
           {
+            sequence: 863,
             prettyDate: "Sat Aug 29, 2020",
             gradeValue: 3.67,
             title: "The Big Trail",
@@ -1485,6 +1648,7 @@ export default {
             slug: "the-big-trail-1930",
           },
           {
+            sequence: 991,
             prettyDate: "Wed Jan 20, 2021",
             gradeValue: 2.67,
             title: "Arizona",
@@ -1492,6 +1656,7 @@ export default {
             slug: "arizona-1931",
           },
           {
+            sequence: 1001,
             prettyDate: "Fri Jan 29, 2021",
             gradeValue: 5.33,
             title: "Rio Bravo",
@@ -1499,6 +1664,7 @@ export default {
             slug: "rio-bravo-1959",
           },
           {
+            sequence: 1045,
             prettyDate: "Fri Mar 12, 2021",
             gradeValue: 2.33,
             title: "The Range Feud",
@@ -1506,6 +1672,7 @@ export default {
             slug: "the-range-feud-1931",
           },
           {
+            sequence: 1051,
             prettyDate: "Tue Mar 16, 2021",
             gradeValue: 1,
             title: "Maker of Men",
@@ -1521,6 +1688,7 @@ export default {
         averageGradeValue: 2.8564285714285718,
         reviews: [
           {
+            sequence: 841,
             prettyDate: "Fri Jul 17, 2020",
             gradeValue: 3,
             title: "The Canary Murder Case",
@@ -1528,6 +1696,7 @@ export default {
             slug: "the-canary-murder-case-1929",
           },
           {
+            sequence: 845,
             prettyDate: "Thu Jul 30, 2020",
             gradeValue: 3,
             title: "Charming Sinners",
@@ -1535,6 +1704,7 @@ export default {
             slug: "charming-sinners-1929",
           },
           {
+            sequence: 846,
             prettyDate: "Thu Jul 30, 2020",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
@@ -1542,6 +1712,7 @@ export default {
             slug: "the-greene-murder-case-1929",
           },
           {
+            sequence: 849,
             prettyDate: "Sun Aug 2, 2020",
             gradeValue: 2,
             title: "Pointed Heels",
@@ -1549,6 +1720,7 @@ export default {
             slug: "pointed-heels-1929",
           },
           {
+            sequence: 858,
             prettyDate: "Sat Aug 22, 2020",
             gradeValue: 3.33,
             title: "Behind the Make-Up",
@@ -1556,6 +1728,7 @@ export default {
             slug: "behind-the-make-up-1930",
           },
           {
+            sequence: 859,
             prettyDate: "Sat Aug 22, 2020",
             gradeValue: 2.33,
             title: "Interference",
@@ -1563,6 +1736,7 @@ export default {
             slug: "interference-1928",
           },
           {
+            sequence: 860,
             prettyDate: "Wed Aug 26, 2020",
             gradeValue: 3,
             title: "The Benson Murder Case",
@@ -1570,6 +1744,7 @@ export default {
             slug: "the-benson-murder-case-1930",
           },
           {
+            sequence: 870,
             prettyDate: "Sun Sep 13, 2020",
             gradeValue: 3,
             title: "For the Defense",
@@ -1577,6 +1752,7 @@ export default {
             slug: "for-the-defense-1930",
           },
           {
+            sequence: 877,
             prettyDate: "Wed Sep 30, 2020",
             gradeValue: 3,
             title: "Street of Chance",
@@ -1584,6 +1760,7 @@ export default {
             slug: "street-of-chance-1930",
           },
           {
+            sequence: 885,
             prettyDate: "Sat Oct 10, 2020",
             gradeValue: 3.33,
             title: "Shadow of the Law",
@@ -1591,6 +1768,7 @@ export default {
             slug: "shadow-of-the-law-1930",
           },
           {
+            sequence: 925,
             prettyDate: "Wed Nov 25, 2020",
             gradeValue: 3,
             title: "Ladies' Man",
@@ -1598,6 +1776,7 @@ export default {
             slug: "ladies-man-1931",
           },
           {
+            sequence: 980,
             prettyDate: "Sun Jan 10, 2021",
             gradeValue: 2.33,
             title: "Man of the World",
@@ -1605,6 +1784,7 @@ export default {
             slug: "man-of-the-world-1931",
           },
           {
+            sequence: 1036,
             prettyDate: "Tue Mar 2, 2021",
             gradeValue: 3.67,
             title: "The Road to Singapore",
@@ -1612,6 +1792,7 @@ export default {
             slug: "the-road-to-singapore-1931",
           },
           {
+            sequence: 1100,
             prettyDate: "Wed May 12, 2021",
             gradeValue: 2.67,
             title: "High Pressure",
@@ -1627,6 +1808,7 @@ export default {
         averageGradeValue: 2.712857142857143,
         reviews: [
           {
+            sequence: 1052,
             prettyDate: "Wed Mar 17, 2021",
             gradeValue: 2.67,
             title: "Child's Play",
@@ -1634,6 +1816,7 @@ export default {
             slug: "childs-play-1988",
           },
           {
+            sequence: 1072,
             prettyDate: "Sun Apr 4, 2021",
             gradeValue: 2.33,
             title: "Child's Play 2",
@@ -1641,6 +1824,7 @@ export default {
             slug: "childs-play-2-1990",
           },
           {
+            sequence: 1078,
             prettyDate: "Sun Apr 11, 2021",
             gradeValue: 2.33,
             title: "Child's Play 3",
@@ -1648,6 +1832,7 @@ export default {
             slug: "childs-play-3-1991",
           },
           {
+            sequence: 1085,
             prettyDate: "Sun Apr 18, 2021",
             gradeValue: 2.67,
             title: "Bride of Chucky",
@@ -1655,6 +1840,7 @@ export default {
             slug: "bride-of-chucky-1998",
           },
           {
+            sequence: 1092,
             prettyDate: "Sun Apr 25, 2021",
             gradeValue: 3.33,
             title: "Seed of Chucky",
@@ -1662,6 +1848,7 @@ export default {
             slug: "seed-of-chucky-2004",
           },
           {
+            sequence: 1105,
             prettyDate: "Sun May 16, 2021",
             gradeValue: 3.33,
             title: "Curse of Chucky",
@@ -1669,6 +1856,7 @@ export default {
             slug: "curse-of-chucky-2013",
           },
           {
+            sequence: 1110,
             prettyDate: "Thu Jun 3, 2021",
             gradeValue: 2.33,
             title: "Cult of Chucky",
@@ -1684,6 +1872,7 @@ export default {
         averageGradeValue: 2.665,
         reviews: [
           {
+            sequence: 945,
             prettyDate: "Wed Dec 16, 2020",
             gradeValue: 4,
             title: "It Rains on Our Love",
@@ -1691,6 +1880,7 @@ export default {
             slug: "it-rains-on-our-love-1946",
           },
           {
+            sequence: 952,
             prettyDate: "Sun Dec 20, 2020",
             gradeValue: 2.33,
             title: "A Ship to India",
@@ -1698,6 +1888,7 @@ export default {
             slug: "a-ship-to-india-1947",
           },
           {
+            sequence: 976,
             prettyDate: "Fri Jan 8, 2021",
             gradeValue: 2.33,
             title: "Music in Darkness",
@@ -1705,6 +1896,7 @@ export default {
             slug: "music-in-darkness-1948",
           },
           {
+            sequence: 1004,
             prettyDate: "Mon Feb 1, 2021",
             gradeValue: 2.33,
             title: "Prison",
@@ -1712,6 +1904,7 @@ export default {
             slug: "prison-1949",
           },
           {
+            sequence: 1021,
             prettyDate: "Wed Feb 17, 2021",
             gradeValue: 1,
             title: "Thirst",
@@ -1719,6 +1912,7 @@ export default {
             slug: "thirst-1949",
           },
           {
+            sequence: 1035,
             prettyDate: "Mon Mar 1, 2021",
             gradeValue: 3.33,
             title: "To Joy",
@@ -1726,6 +1920,7 @@ export default {
             slug: "to-joy-1950",
           },
           {
+            sequence: 1058,
             prettyDate: "Wed Mar 24, 2021",
             gradeValue: 3.33,
             title: "Summer Interlude",
@@ -1733,6 +1928,7 @@ export default {
             slug: "summer-interlude-1951",
           },
           {
+            sequence: 1069,
             prettyDate: "Thu Apr 1, 2021",
             gradeValue: 2.67,
             title: "Kvinnors väntan",
@@ -1748,6 +1944,7 @@ export default {
         averageGradeValue: 2.6045454545454545,
         reviews: [
           {
+            sequence: 837,
             prettyDate: "Thu Jul 9, 2020",
             gradeValue: 2.33,
             title: "Behind That Curtain",
@@ -1755,6 +1952,7 @@ export default {
             slug: "behind-that-curtain-1929",
           },
           {
+            sequence: 889,
             prettyDate: "Sun Oct 11, 2020",
             gradeValue: 2,
             title: "Cracked Nuts",
@@ -1762,6 +1960,7 @@ export default {
             slug: "cracked-nuts-1931",
           },
           {
+            sequence: 895,
             prettyDate: "Thu Oct 22, 2020",
             gradeValue: 2.33,
             title: "The Sea Bat",
@@ -1769,6 +1968,7 @@ export default {
             slug: "the-sea-bat-1930",
           },
           {
+            sequence: 919,
             prettyDate: "Wed Nov 18, 2020",
             gradeValue: 3.33,
             title: "The Criminal Code",
@@ -1776,6 +1976,7 @@ export default {
             slug: "the-criminal-code-1930",
           },
           {
+            sequence: 984,
             prettyDate: "Thu Jan 14, 2021",
             gradeValue: 2.67,
             title: "The Utah Kid",
@@ -1783,6 +1984,7 @@ export default {
             slug: "the-utah-kid-1930",
           },
           {
+            sequence: 1022,
             prettyDate: "Thu Feb 18, 2021",
             gradeValue: 3,
             title: "The Public Defender",
@@ -1790,6 +1992,7 @@ export default {
             slug: "the-public-defender-1931",
           },
           {
+            sequence: 1030,
             prettyDate: "Thu Feb 25, 2021",
             gradeValue: 2.33,
             title: "Five Star Final",
@@ -1797,6 +2000,7 @@ export default {
             slug: "five-star-final-1931",
           },
           {
+            sequence: 1031,
             prettyDate: "Fri Feb 26, 2021",
             gradeValue: 1,
             title: "I Like Your Nerve",
@@ -1804,6 +2008,7 @@ export default {
             slug: "i-like-your-nerve-1931",
           },
           {
+            sequence: 1046,
             prettyDate: "Fri Mar 12, 2021",
             gradeValue: 3,
             title: "The Guilty Generation",
@@ -1811,6 +2016,7 @@ export default {
             slug: "the-guilty-generation-1931",
           },
           {
+            sequence: 1087,
             prettyDate: "Tue Apr 20, 2021",
             gradeValue: 4.33,
             title: "Frankenstein",
@@ -1818,6 +2024,7 @@ export default {
             slug: "frankenstein-1931",
           },
           {
+            sequence: 1097,
             prettyDate: "Mon May 3, 2021",
             gradeValue: 2.33,
             title: "Tonight or Never",
@@ -1833,6 +2040,7 @@ export default {
         averageGradeValue: 2.5700000000000003,
         reviews: [
           {
+            sequence: 854,
             prettyDate: "Mon Aug 17, 2020",
             gradeValue: 2.33,
             title: "The Thirteenth Chair",
@@ -1840,6 +2048,7 @@ export default {
             slug: "the-thirteenth-chair-1929",
           },
           {
+            sequence: 880,
             prettyDate: "Sun Oct 4, 2020",
             gradeValue: 4.67,
             title: "Dracula",
@@ -1847,6 +2056,7 @@ export default {
             slug: "dracula-1931",
           },
           {
+            sequence: 886,
             prettyDate: "Sat Oct 10, 2020",
             gradeValue: 3.33,
             title: "Renegades",
@@ -1854,6 +2064,7 @@ export default {
             slug: "renegades-1930",
           },
           {
+            sequence: 922,
             prettyDate: "Tue Nov 24, 2020",
             gradeValue: 2.33,
             title: "Wild Company",
@@ -1861,6 +2072,7 @@ export default {
             slug: "wild-company-1930",
           },
           {
+            sequence: 923,
             prettyDate: "Tue Nov 24, 2020",
             gradeValue: 1,
             title: "Oh, for a Man!",
@@ -1868,6 +2080,7 @@ export default {
             slug: "oh-for-a-man-1930",
           },
           {
+            sequence: 926,
             prettyDate: "Thu Nov 26, 2020",
             gradeValue: 3.33,
             title: "The Black Camel",
@@ -1875,6 +2088,7 @@ export default {
             slug: "the-black-camel-1931",
           },
           {
+            sequence: 1034,
             prettyDate: "Sun Feb 28, 2021",
             gradeValue: 1,
             title: "Broadminded",
@@ -1890,6 +2104,7 @@ export default {
         averageGradeValue: 2.5300000000000002,
         reviews: [
           {
+            sequence: 867,
             prettyDate: "Fri Sep 11, 2020",
             gradeValue: 2.33,
             title: "Born Reckless",
@@ -1897,6 +2112,7 @@ export default {
             slug: "born-reckless-1930",
           },
           {
+            sequence: 868,
             prettyDate: "Fri Sep 11, 2020",
             gradeValue: 3.33,
             title: "Men Without Women",
@@ -1904,6 +2120,7 @@ export default {
             slug: "men-without-women-1930",
           },
           {
+            sequence: 883,
             prettyDate: "Fri Oct 9, 2020",
             gradeValue: 2.33,
             title: "Salute",
@@ -1911,6 +2128,7 @@ export default {
             slug: "salute-1929",
           },
           {
+            sequence: 922,
             prettyDate: "Tue Nov 24, 2020",
             gradeValue: 2.33,
             title: "Wild Company",
@@ -1918,6 +2136,7 @@ export default {
             slug: "wild-company-1930",
           },
           {
+            sequence: 1081,
             prettyDate: "Wed Apr 14, 2021",
             gradeValue: 2.33,
             title: "Way Back Home",
@@ -1933,6 +2152,7 @@ export default {
         averageGradeValue: 2.132,
         reviews: [
           {
+            sequence: 855,
             prettyDate: "Tue Aug 18, 2020",
             gradeValue: 2.33,
             title: "The Unholy Night",
@@ -1940,6 +2160,7 @@ export default {
             slug: "the-unholy-night-1929",
           },
           {
+            sequence: 860,
             prettyDate: "Wed Aug 26, 2020",
             gradeValue: 3,
             title: "The Benson Murder Case",
@@ -1947,6 +2168,7 @@ export default {
             slug: "the-benson-murder-case-1930",
           },
           {
+            sequence: 885,
             prettyDate: "Sat Oct 10, 2020",
             gradeValue: 3.33,
             title: "Shadow of the Law",
@@ -1954,6 +2176,7 @@ export default {
             slug: "shadow-of-the-law-1930",
           },
           {
+            sequence: 928,
             prettyDate: "Fri Nov 27, 2020",
             gradeValue: 1,
             title: "A Holy Terror",
@@ -1961,6 +2184,7 @@ export default {
             slug: "a-holy-terror-1931",
           },
           {
+            sequence: 1051,
             prettyDate: "Tue Mar 16, 2021",
             gradeValue: 1,
             title: "Maker of Men",
@@ -1980,6 +2204,7 @@ export default {
         averageGradeValue: 4.886666666666667,
         reviews: [
           {
+            sequence: 844,
             prettyDate: "Sat Jul 25, 2020",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
@@ -1987,6 +2212,7 @@ export default {
             slug: "captain-america-civil-war-2016",
           },
           {
+            sequence: 893,
             prettyDate: "Sat Oct 17, 2020",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
@@ -1994,6 +2220,7 @@ export default {
             slug: "avengers-infinity-war-2018",
           },
           {
+            sequence: 918,
             prettyDate: "Sat Nov 14, 2020",
             gradeValue: 5,
             title: "Avengers: Endgame",
@@ -2009,6 +2236,7 @@ export default {
         averageGradeValue: 3.6,
         reviews: [
           {
+            sequence: 873,
             prettyDate: "Mon Sep 21, 2020",
             gradeValue: 3.33,
             title: "Massacre Time",
@@ -2016,6 +2244,7 @@ export default {
             slug: "the-brute-and-the-beast-1966",
           },
           {
+            sequence: 874,
             prettyDate: "Thu Sep 24, 2020",
             gradeValue: 4,
             title: "One on Top of the Other",
@@ -2023,6 +2252,7 @@ export default {
             slug: "one-on-top-of-the-other-1969",
           },
           {
+            sequence: 896,
             prettyDate: "Thu Oct 22, 2020",
             gradeValue: 3.67,
             title: "The Conspiracy of Torture",
@@ -2030,6 +2260,7 @@ export default {
             slug: "the-conspiracy-of-torture-1969",
           },
           {
+            sequence: 897,
             prettyDate: "Fri Oct 23, 2020",
             gradeValue: 3.33,
             title: "A Lizard in a Woman's Skin",
@@ -2037,6 +2268,7 @@ export default {
             slug: "a-lizard-in-a-womans-skin-1971",
           },
           {
+            sequence: 901,
             prettyDate: "Tue Oct 27, 2020",
             gradeValue: 3.67,
             title: "Don't Torture a Duckling",
@@ -2052,6 +2284,7 @@ export default {
         averageGradeValue: 3.5825,
         reviews: [
           {
+            sequence: 880,
             prettyDate: "Sun Oct 4, 2020",
             gradeValue: 4.67,
             title: "Dracula",
@@ -2059,6 +2292,7 @@ export default {
             slug: "dracula-1931",
           },
           {
+            sequence: 967,
             prettyDate: "Fri Jan 1, 2021",
             gradeValue: 2,
             title: "Outside the Law",
@@ -2066,6 +2300,7 @@ export default {
             slug: "outside-the-law-1930",
           },
           {
+            sequence: 1066,
             prettyDate: "Sun Mar 28, 2021",
             gradeValue: 3.33,
             title: "Drácula",
@@ -2073,6 +2308,7 @@ export default {
             slug: "dracula-1931-spanish",
           },
           {
+            sequence: 1087,
             prettyDate: "Tue Apr 20, 2021",
             gradeValue: 4.33,
             title: "Frankenstein",
@@ -2088,6 +2324,7 @@ export default {
         averageGradeValue: 3.4,
         reviews: [
           {
+            sequence: 874,
             prettyDate: "Thu Sep 24, 2020",
             gradeValue: 4,
             title: "One on Top of the Other",
@@ -2095,6 +2332,7 @@ export default {
             slug: "one-on-top-of-the-other-1969",
           },
           {
+            sequence: 896,
             prettyDate: "Thu Oct 22, 2020",
             gradeValue: 3.67,
             title: "The Conspiracy of Torture",
@@ -2102,6 +2340,7 @@ export default {
             slug: "the-conspiracy-of-torture-1969",
           },
           {
+            sequence: 897,
             prettyDate: "Fri Oct 23, 2020",
             gradeValue: 3.33,
             title: "A Lizard in a Woman's Skin",
@@ -2109,6 +2348,7 @@ export default {
             slug: "a-lizard-in-a-womans-skin-1971",
           },
           {
+            sequence: 901,
             prettyDate: "Tue Oct 27, 2020",
             gradeValue: 3.67,
             title: "Don't Torture a Duckling",
@@ -2116,6 +2356,7 @@ export default {
             slug: "dont-torture-a-duckling-1972",
           },
           {
+            sequence: 1060,
             prettyDate: "Fri Mar 26, 2021",
             gradeValue: 2.33,
             title: "White Fang",
@@ -2131,6 +2372,7 @@ export default {
         averageGradeValue: 3.248333333333333,
         reviews: [
           {
+            sequence: 942,
             prettyDate: "Sun Dec 13, 2020",
             gradeValue: 3.67,
             title: "Crisis",
@@ -2138,6 +2380,7 @@ export default {
             slug: "crisis-1946",
           },
           {
+            sequence: 945,
             prettyDate: "Wed Dec 16, 2020",
             gradeValue: 4,
             title: "It Rains on Our Love",
@@ -2145,6 +2388,7 @@ export default {
             slug: "it-rains-on-our-love-1946",
           },
           {
+            sequence: 952,
             prettyDate: "Sun Dec 20, 2020",
             gradeValue: 2.33,
             title: "A Ship to India",
@@ -2152,6 +2396,7 @@ export default {
             slug: "a-ship-to-india-1947",
           },
           {
+            sequence: 981,
             prettyDate: "Mon Jan 11, 2021",
             gradeValue: 2.33,
             title: "Port of Call",
@@ -2159,6 +2404,7 @@ export default {
             slug: "port-of-call-1948",
           },
           {
+            sequence: 1004,
             prettyDate: "Mon Feb 1, 2021",
             gradeValue: 2.33,
             title: "Prison",
@@ -2166,6 +2412,7 @@ export default {
             slug: "prison-1949",
           },
           {
+            sequence: 1035,
             prettyDate: "Mon Mar 1, 2021",
             gradeValue: 3.33,
             title: "To Joy",
@@ -2173,6 +2420,7 @@ export default {
             slug: "to-joy-1950",
           },
           {
+            sequence: 1058,
             prettyDate: "Wed Mar 24, 2021",
             gradeValue: 3.33,
             title: "Summer Interlude",
@@ -2180,6 +2428,7 @@ export default {
             slug: "summer-interlude-1951",
           },
           {
+            sequence: 1069,
             prettyDate: "Thu Apr 1, 2021",
             gradeValue: 2.67,
             title: "Kvinnors väntan",
@@ -2187,6 +2436,7 @@ export default {
             slug: "waiting-women-1952",
           },
           {
+            sequence: 1079,
             prettyDate: "Mon Apr 12, 2021",
             gradeValue: 4.33,
             title: "Summer with Monika",
@@ -2194,6 +2444,7 @@ export default {
             slug: "summer-with-monika-1953",
           },
           {
+            sequence: 1089,
             prettyDate: "Thu Apr 22, 2021",
             gradeValue: 4.33,
             title: "Sawdust and Tinsel",
@@ -2201,6 +2452,7 @@ export default {
             slug: "sawdust-and-tinsel-1953",
           },
           {
+            sequence: 1094,
             prettyDate: "Wed Apr 28, 2021",
             gradeValue: 3,
             title: "A Lesson in Love",
@@ -2208,6 +2460,7 @@ export default {
             slug: "a-lesson-in-love-1954",
           },
           {
+            sequence: 1098,
             prettyDate: "Tue May 4, 2021",
             gradeValue: 3.33,
             title: "Dreams",
@@ -2223,6 +2476,7 @@ export default {
         averageGradeValue: 3,
         reviews: [
           {
+            sequence: 856,
             prettyDate: "Wed Aug 19, 2020",
             gradeValue: 3.67,
             title: "The Quatermass Xperiment",
@@ -2230,6 +2484,7 @@ export default {
             slug: "the-quatermass-xperiment-1955",
           },
           {
+            sequence: 861,
             prettyDate: "Thu Aug 27, 2020",
             gradeValue: 2.33,
             title: "The Abominable Snowman",
@@ -2237,6 +2492,7 @@ export default {
             slug: "the-abominable-snowman-1957",
           },
           {
+            sequence: 911,
             prettyDate: "Thu Nov 5, 2020",
             gradeValue: 2.33,
             title: "Quatermass 2",
@@ -2244,6 +2500,7 @@ export default {
             slug: "quatermass-2-1957",
           },
           {
+            sequence: 915,
             prettyDate: "Tue Nov 10, 2020",
             gradeValue: 3.67,
             title: "The Camp on Blood Island",
@@ -2259,6 +2516,7 @@ export default {
         averageGradeValue: 3,
         reviews: [
           {
+            sequence: 978,
             prettyDate: "Sat Jan 9, 2021",
             gradeValue: 4,
             title: "X-Men",
@@ -2266,6 +2524,7 @@ export default {
             slug: "x-men-2000",
           },
           {
+            sequence: 986,
             prettyDate: "Sat Jan 16, 2021",
             gradeValue: 3,
             title: "X2: X-Men United",
@@ -2273,6 +2532,7 @@ export default {
             slug: "x2-x-men-united-2003",
           },
           {
+            sequence: 1010,
             prettyDate: "Sat Feb 6, 2021",
             gradeValue: 4,
             title: "X-Men: First Class",
@@ -2280,6 +2540,7 @@ export default {
             slug: "x-men-first-class-2011",
           },
           {
+            sequence: 1040,
             prettyDate: "Sat Mar 6, 2021",
             gradeValue: 1,
             title: "X-Men: Apocalypse",
@@ -2295,6 +2556,7 @@ export default {
         averageGradeValue: 2.8325,
         reviews: [
           {
+            sequence: 871,
             prettyDate: "Sat Sep 19, 2020",
             gradeValue: 3,
             title: "Hatchet",
@@ -2302,6 +2564,7 @@ export default {
             slug: "hatchet-2006",
           },
           {
+            sequence: 890,
             prettyDate: "Thu Oct 15, 2020",
             gradeValue: 2.67,
             title: "Hatchet II",
@@ -2309,6 +2572,7 @@ export default {
             slug: "hatchet-ii-2010",
           },
           {
+            sequence: 920,
             prettyDate: "Thu Nov 19, 2020",
             gradeValue: 3.33,
             title: "Hatchet III",
@@ -2316,6 +2580,7 @@ export default {
             slug: "hatchet-iii-2013",
           },
           {
+            sequence: 987,
             prettyDate: "Sat Jan 16, 2021",
             gradeValue: 2.33,
             title: "Victor Crowley",
@@ -2331,6 +2596,7 @@ export default {
         averageGradeValue: 2.83,
         reviews: [
           {
+            sequence: 867,
             prettyDate: "Fri Sep 11, 2020",
             gradeValue: 2.33,
             title: "Born Reckless",
@@ -2338,6 +2604,7 @@ export default {
             slug: "born-reckless-1930",
           },
           {
+            sequence: 868,
             prettyDate: "Fri Sep 11, 2020",
             gradeValue: 3.33,
             title: "Men Without Women",
@@ -2345,6 +2612,7 @@ export default {
             slug: "men-without-women-1930",
           },
           {
+            sequence: 926,
             prettyDate: "Thu Nov 26, 2020",
             gradeValue: 3.33,
             title: "The Black Camel",
@@ -2352,6 +2620,7 @@ export default {
             slug: "the-black-camel-1931",
           },
           {
+            sequence: 975,
             prettyDate: "Thu Jan 7, 2021",
             gradeValue: 2.33,
             title: "Seas Beneath",
@@ -2367,6 +2636,7 @@ export default {
         averageGradeValue: 2.776666666666667,
         reviews: [
           {
+            sequence: 841,
             prettyDate: "Fri Jul 17, 2020",
             gradeValue: 3,
             title: "The Canary Murder Case",
@@ -2374,6 +2644,7 @@ export default {
             slug: "the-canary-murder-case-1929",
           },
           {
+            sequence: 925,
             prettyDate: "Wed Nov 25, 2020",
             gradeValue: 3,
             title: "Ladies' Man",
@@ -2381,6 +2652,7 @@ export default {
             slug: "ladies-man-1931",
           },
           {
+            sequence: 980,
             prettyDate: "Sun Jan 10, 2021",
             gradeValue: 2.33,
             title: "Man of the World",
@@ -2396,6 +2668,7 @@ export default {
         averageGradeValue: 2.776666666666667,
         reviews: [
           {
+            sequence: 841,
             prettyDate: "Fri Jul 17, 2020",
             gradeValue: 3,
             title: "The Canary Murder Case",
@@ -2403,6 +2676,7 @@ export default {
             slug: "the-canary-murder-case-1929",
           },
           {
+            sequence: 846,
             prettyDate: "Thu Jul 30, 2020",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
@@ -2410,6 +2684,7 @@ export default {
             slug: "the-greene-murder-case-1929",
           },
           {
+            sequence: 860,
             prettyDate: "Wed Aug 26, 2020",
             gradeValue: 3,
             title: "The Benson Murder Case",
@@ -2425,6 +2700,7 @@ export default {
         averageGradeValue: 2.732,
         reviews: [
           {
+            sequence: 969,
             prettyDate: "Fri Jan 1, 2021",
             gradeValue: 3.67,
             title: "Murder à la Mod",
@@ -2432,6 +2708,7 @@ export default {
             slug: "murder-a-la-mod-1968",
           },
           {
+            sequence: 1006,
             prettyDate: "Wed Feb 3, 2021",
             gradeValue: 2,
             title: "Greetings",
@@ -2439,6 +2716,7 @@ export default {
             slug: "greetings-1968",
           },
           {
+            sequence: 1038,
             prettyDate: "Thu Mar 4, 2021",
             gradeValue: 2.33,
             title: "The Wedding Party",
@@ -2446,6 +2724,7 @@ export default {
             slug: "the-wedding-party-1969",
           },
           {
+            sequence: 1068,
             prettyDate: "Wed Mar 31, 2021",
             gradeValue: 2.33,
             title: "Hi, Mom!",
@@ -2453,6 +2732,7 @@ export default {
             slug: "hi-mom-1970",
           },
           {
+            sequence: 1095,
             prettyDate: "Thu Apr 29, 2021",
             gradeValue: 3.33,
             title: "Sisters",
@@ -2468,6 +2748,7 @@ export default {
         averageGradeValue: 2.712857142857143,
         reviews: [
           {
+            sequence: 1052,
             prettyDate: "Wed Mar 17, 2021",
             gradeValue: 2.67,
             title: "Child's Play",
@@ -2475,6 +2756,7 @@ export default {
             slug: "childs-play-1988",
           },
           {
+            sequence: 1072,
             prettyDate: "Sun Apr 4, 2021",
             gradeValue: 2.33,
             title: "Child's Play 2",
@@ -2482,6 +2764,7 @@ export default {
             slug: "childs-play-2-1990",
           },
           {
+            sequence: 1078,
             prettyDate: "Sun Apr 11, 2021",
             gradeValue: 2.33,
             title: "Child's Play 3",
@@ -2489,6 +2772,7 @@ export default {
             slug: "childs-play-3-1991",
           },
           {
+            sequence: 1085,
             prettyDate: "Sun Apr 18, 2021",
             gradeValue: 2.67,
             title: "Bride of Chucky",
@@ -2496,6 +2780,7 @@ export default {
             slug: "bride-of-chucky-1998",
           },
           {
+            sequence: 1092,
             prettyDate: "Sun Apr 25, 2021",
             gradeValue: 3.33,
             title: "Seed of Chucky",
@@ -2503,6 +2788,7 @@ export default {
             slug: "seed-of-chucky-2004",
           },
           {
+            sequence: 1105,
             prettyDate: "Sun May 16, 2021",
             gradeValue: 3.33,
             title: "Curse of Chucky",
@@ -2510,6 +2796,7 @@ export default {
             slug: "curse-of-chucky-2013",
           },
           {
+            sequence: 1110,
             prettyDate: "Thu Jun 3, 2021",
             gradeValue: 2.33,
             title: "Cult of Chucky",
@@ -2520,11 +2807,12 @@ export default {
       },
       {
         fullName: "David Cronenberg",
-        slug: null,
+        slug: "david-cronenberg",
         reviewCount: 4,
         averageGradeValue: 2.4175,
         reviews: [
           {
+            sequence: 964,
             prettyDate: "Sat Dec 26, 2020",
             gradeValue: 2,
             title: "Stereo (Tile 3B of a CAEE Educational Mosaic)",
@@ -2532,6 +2820,7 @@ export default {
             slug: "stereo-tile-3b-of-a-caee-educational-mosaic-1969",
           },
           {
+            sequence: 972,
             prettyDate: "Sun Jan 3, 2021",
             gradeValue: 2.33,
             title: "Crimes of the Future",
@@ -2539,6 +2828,7 @@ export default {
             slug: "crimes-of-the-future-1970",
           },
           {
+            sequence: 1000,
             prettyDate: "Thu Jan 28, 2021",
             gradeValue: 2.67,
             title: "Shivers",
@@ -2546,6 +2836,7 @@ export default {
             slug: "shivers-1975",
           },
           {
+            sequence: 1007,
             prettyDate: "Thu Feb 4, 2021",
             gradeValue: 2.67,
             title: "Rabid",
@@ -2561,6 +2852,7 @@ export default {
         averageGradeValue: 2.3325,
         reviews: [
           {
+            sequence: 945,
             prettyDate: "Wed Dec 16, 2020",
             gradeValue: 4,
             title: "It Rains on Our Love",
@@ -2568,6 +2860,7 @@ export default {
             slug: "it-rains-on-our-love-1946",
           },
           {
+            sequence: 1021,
             prettyDate: "Wed Feb 17, 2021",
             gradeValue: 1,
             title: "Thirst",
@@ -2575,6 +2868,7 @@ export default {
             slug: "thirst-1949",
           },
           {
+            sequence: 1050,
             prettyDate: "Mon Mar 15, 2021",
             gradeValue: 1,
             title: "This Can't Happen Here",
@@ -2582,6 +2876,7 @@ export default {
             slug: "this-cant-happen-here-1950",
           },
           {
+            sequence: 1058,
             prettyDate: "Wed Mar 24, 2021",
             gradeValue: 3.33,
             title: "Summer Interlude",
@@ -2597,6 +2892,7 @@ export default {
         averageGradeValue: 2.266,
         reviews: [
           {
+            sequence: 838,
             prettyDate: "Fri Jul 10, 2020",
             gradeValue: 3.33,
             title: "Blackmail",
@@ -2604,6 +2900,7 @@ export default {
             slug: "blackmail-1929",
           },
           {
+            sequence: 876,
             prettyDate: "Mon Sep 28, 2020",
             gradeValue: 3,
             title: "Murder!",
@@ -2611,6 +2908,7 @@ export default {
             slug: "murder-1930",
           },
           {
+            sequence: 909,
             prettyDate: "Mon Nov 2, 2020",
             gradeValue: 1,
             title: "Juno and the Paycock",
@@ -2618,6 +2916,7 @@ export default {
             slug: "juno-and-the-paycock-1930",
           },
           {
+            sequence: 979,
             prettyDate: "Sat Jan 9, 2021",
             gradeValue: 2,
             title: "The Skin Game",
@@ -2625,6 +2924,7 @@ export default {
             slug: "the-skin-game-1931",
           },
           {
+            sequence: 1093,
             prettyDate: "Tue Apr 27, 2021",
             gradeValue: 2,
             title: "East of Shanghai",
@@ -2640,6 +2940,7 @@ export default {
         averageGradeValue: 2.22,
         reviews: [
           {
+            sequence: 840,
             prettyDate: "Sun Jul 12, 2020",
             gradeValue: 1,
             title: "The Black Watch",
@@ -2647,6 +2948,7 @@ export default {
             slug: "the-black-watch-1929",
           },
           {
+            sequence: 868,
             prettyDate: "Fri Sep 11, 2020",
             gradeValue: 3.33,
             title: "Men Without Women",
@@ -2654,6 +2956,7 @@ export default {
             slug: "men-without-women-1930",
           },
           {
+            sequence: 883,
             prettyDate: "Fri Oct 9, 2020",
             gradeValue: 2.33,
             title: "Salute",
@@ -2669,6 +2972,7 @@ export default {
         averageGradeValue: 2,
         reviews: [
           {
+            sequence: 876,
             prettyDate: "Mon Sep 28, 2020",
             gradeValue: 3,
             title: "Murder!",
@@ -2676,6 +2980,7 @@ export default {
             slug: "murder-1930",
           },
           {
+            sequence: 909,
             prettyDate: "Mon Nov 2, 2020",
             gradeValue: 1,
             title: "Juno and the Paycock",
@@ -2683,6 +2988,7 @@ export default {
             slug: "juno-and-the-paycock-1930",
           },
           {
+            sequence: 979,
             prettyDate: "Sat Jan 9, 2021",
             gradeValue: 2,
             title: "The Skin Game",
@@ -2690,6 +2996,7 @@ export default {
             slug: "the-skin-game-1931",
           },
           {
+            sequence: 1093,
             prettyDate: "Tue Apr 27, 2021",
             gradeValue: 2,
             title: "East of Shanghai",
@@ -2705,6 +3012,7 @@ export default {
         averageGradeValue: 1.915,
         reviews: [
           {
+            sequence: 995,
             prettyDate: "Sat Jan 23, 2021",
             gradeValue: 1,
             title: "X-Men: The Last Stand",
@@ -2712,6 +3020,7 @@ export default {
             slug: "x-men-the-last-stand-2006",
           },
           {
+            sequence: 1024,
             prettyDate: "Sat Feb 20, 2021",
             gradeValue: 3.33,
             title: "X-Men: Days of Future Past",
@@ -2719,6 +3028,7 @@ export default {
             slug: "x-men-days-of-future-past-2014",
           },
           {
+            sequence: 1040,
             prettyDate: "Sat Mar 6, 2021",
             gradeValue: 1,
             title: "X-Men: Apocalypse",
@@ -2726,6 +3036,7 @@ export default {
             slug: "x-men-apocalypse-2016",
           },
           {
+            sequence: 1071,
             prettyDate: "Sat Apr 3, 2021",
             gradeValue: 2.33,
             title: "X-Men: Dark Phoenix",
@@ -2741,6 +3052,7 @@ export default {
         averageGradeValue: 1.8866666666666667,
         reviews: [
           {
+            sequence: 840,
             prettyDate: "Sun Jul 12, 2020",
             gradeValue: 1,
             title: "The Black Watch",
@@ -2748,6 +3060,7 @@ export default {
             slug: "the-black-watch-1929",
           },
           {
+            sequence: 883,
             prettyDate: "Fri Oct 9, 2020",
             gradeValue: 2.33,
             title: "Salute",
@@ -2755,6 +3068,7 @@ export default {
             slug: "salute-1929",
           },
           {
+            sequence: 922,
             prettyDate: "Tue Nov 24, 2020",
             gradeValue: 2.33,
             title: "Wild Company",
