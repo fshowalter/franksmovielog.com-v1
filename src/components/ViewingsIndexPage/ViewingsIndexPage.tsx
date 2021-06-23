@@ -10,7 +10,6 @@ import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
 import StatsLink from "../StatsLink";
-import reducer, { ActionTypes, initState } from "./reducer";
 import {
   containerCss,
   filtersCss,
@@ -26,6 +25,7 @@ import {
   quoteCss,
   rightCss,
 } from "./ViewingsIndexPage.module.scss";
+import reducer, { ActionTypes, initState } from "./ViewingsIndexPage.reducer";
 
 /**
  * Renders the venue select options.

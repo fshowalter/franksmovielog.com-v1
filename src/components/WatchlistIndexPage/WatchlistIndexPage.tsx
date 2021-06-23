@@ -13,7 +13,6 @@ import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
 import ToggleButton from "../ToggleButton";
-import reducer, { ActionType, initState } from "./reducer";
 import {
   containerCss,
   filtersCss,
@@ -37,6 +36,7 @@ import {
   typeLinkCss,
   typeLinksCss,
 } from "./WatchlistIndexPage.module.scss";
+import reducer, { ActionType, initState } from "./WatchlistIndexPage.reducer";
 
 /**
  * Renders options for a watchlist person or collection select.

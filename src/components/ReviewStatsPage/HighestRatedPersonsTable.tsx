@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import DetailsStatTable from "../DetailsStatTable";
+import DetailsTable from "../DetailsTable";
 import Grade from "../Grade";
 import {
   titleYearCss,
@@ -75,7 +75,7 @@ export default function HighestRatedPersonsTable({
   people: PersonWithReviews[];
   slugPath: string;
 }): JSX.Element {
-  return DetailsStatTable<PersonWithReviews>({
+  return DetailsTable<PersonWithReviews>({
     heading,
     collection: people,
     leftHeaderText: "Name",

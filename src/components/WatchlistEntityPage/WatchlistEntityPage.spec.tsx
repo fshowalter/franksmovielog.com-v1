@@ -2,12 +2,17 @@
 import { act, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
-import WatchlistDirectorTemplate from "../director";
-import data, { dataNoAvatar } from "./__fixtures__/director-page-queries";
+import WatchlistEntityPage, { EntityType } from "./WatchlistEntityPage";
+import data, { dataNoAvatar } from "./WatchlistEntityPage.fixtures";
 
 describe("/watchlist/directors/{slug}", () => {
   it("renders", () => {
-    const { asFragment } = render(<WatchlistDirectorTemplate data={data} />);
+    const { asFragment } = render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -22,7 +27,12 @@ describe("/watchlist/directors/{slug}", () => {
     });
 
     expect(() => {
-      render(<WatchlistDirectorTemplate data={dataNoAvatar} />);
+      render(
+        <WatchlistEntityPage
+          data={dataNoAvatar}
+          pageContext={{ entityType: EntityType.DIRECTOR }}
+        />
+      );
     }).toThrow("No avatar found for John Carpenter.");
 
     spy.mockRestore();
@@ -33,7 +43,12 @@ describe("/watchlist/directors/{slug}", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<WatchlistDirectorTemplate data={data} />);
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
 
     requestAnimationFrame(() => {
       expect(document.title).toStrictEqual("John Carpenter");
@@ -43,7 +58,12 @@ describe("/watchlist/directors/{slug}", () => {
 
   it("can filter by title", async () => {
     expect.hasAssertions();
-    render(<WatchlistDirectorTemplate data={data} />);
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
@@ -58,7 +78,12 @@ describe("/watchlist/directors/{slug}", () => {
   });
 
   it("can sort by title", () => {
-    render(<WatchlistDirectorTemplate data={data} />);
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
 
     userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
@@ -66,7 +91,12 @@ describe("/watchlist/directors/{slug}", () => {
   });
 
   it("can sort by release date with oldest first", () => {
-    render(<WatchlistDirectorTemplate data={data} />);
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -77,7 +107,12 @@ describe("/watchlist/directors/{slug}", () => {
   });
 
   it("can sort by release date with newest first", () => {
-    render(<WatchlistDirectorTemplate data={data} />);
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -88,7 +123,12 @@ describe("/watchlist/directors/{slug}", () => {
   });
 
   it("can filter by release year", () => {
-    render(<WatchlistDirectorTemplate data={data} />);
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
 
     const inputs = screen.getAllByLabelText("Release Year");
 
@@ -98,5 +138,44 @@ describe("/watchlist/directors/{slug}", () => {
     userEvent.type(inputs[1], "1990");
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
+  });
+});
+
+describe("/watchlist/performers/{slug}", () => {
+  it("renders", () => {
+    const { asFragment } = render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.PERFORMER }}
+      />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+});
+
+describe("/watchlist/writers/{slug}", () => {
+  it("renders", () => {
+    const { asFragment } = render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.WRITER }}
+      />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+});
+
+describe("/watchlist/collections/{slug}", () => {
+  it("renders", () => {
+    const { asFragment } = render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.COLLECTION }}
+      />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

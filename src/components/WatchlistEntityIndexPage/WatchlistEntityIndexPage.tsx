@@ -8,7 +8,6 @@ import Label from "../Label";
 import Layout from "../Layout";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
-import { ActionType, initState, reducer, SortValue } from "./reducer";
 import {
   containerCss,
   defaultImageCss,
@@ -27,6 +26,12 @@ import {
   progressStatsCss,
   rightCss,
 } from "./WatchlistEntityIndexPage.module.scss";
+import {
+  ActionType,
+  initState,
+  reducer,
+  SortValue,
+} from "./WatchlistEntityIndexPage.reducer";
 
 function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
   const percent = Math.floor((entity.reviewCount / entity.titleCount) * 100);

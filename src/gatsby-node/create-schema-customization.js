@@ -218,7 +218,7 @@ const WatchlistMoviesJson = {
     },
     backdrop: {
       type: "File",
-      resolve: async (source, args, context) => {
+      resolve: async (source, args, context, info) => {
         const reviewedMovie = await context.nodeModel.runQuery({
           query: {
             filter: {
@@ -230,10 +230,20 @@ const WatchlistMoviesJson = {
         });
 
         if (!reviewedMovie) {
-          return null;
+          return context.nodeModel.runQuery({
+            type: "File",
+            firstOnly: true,
+            query: {
+              filter: {
+                absolutePath: {
+                  eq: path.resolve(`./content/assets/backdrops/default.png`),
+                },
+              },
+            },
+          });
         }
 
-        return reviewedMovie.backdrop;
+        return resolveFieldForNode("backdrop", reviewedMovie, context, info);
       },
     },
   },
@@ -620,16 +630,11 @@ const WatchlistEntitiesJson = {
         });
       },
     },
-    browseMore: {
-      type: `[${REVIEWED_MOVIES_JSON}]`,
-      args: {
-        movieImdbId: "String!",
-      },
+    watchlistMovies: {
+      type: `[${WATCHLIST_MOVIES_JSON}]`,
       resolve: async (source, args, context) => {
-        let watchlistMovies;
-
         if (source.entity_type == "collection") {
-          watchlistMovies = await context.nodeModel.runQuery({
+          return context.nodeModel.runQuery({
             type: WATCHLIST_MOVIES_JSON,
             firstOnly: false,
             query: {
@@ -638,17 +643,31 @@ const WatchlistEntitiesJson = {
               },
             },
           });
-        } else {
-          watchlistMovies = await context.nodeModel.runQuery({
-            type: WATCHLIST_MOVIES_JSON,
-            firstOnly: false,
-            query: {
-              filter: {
-                [`${source.entity_type}_imdb_ids`]: { in: [source.imdb_id] },
-              },
-            },
-          });
         }
+
+        return context.nodeModel.runQuery({
+          type: WATCHLIST_MOVIES_JSON,
+          firstOnly: false,
+          query: {
+            filter: {
+              [`${source.entity_type}_imdb_ids`]: { in: [source.imdb_id] },
+            },
+          },
+        });
+      },
+    },
+    browseMore: {
+      type: `[${REVIEWED_MOVIES_JSON}]`,
+      args: {
+        movieImdbId: "String!",
+      },
+      resolve: async (source, args, context, info) => {
+        const watchlistMovies = await resolveFieldForNode(
+          "watchlistMovies",
+          source,
+          context,
+          info
+        );
 
         const watchlistMovieImdbIds = watchlistMovies.map(
           (movie) => movie.imdb_id

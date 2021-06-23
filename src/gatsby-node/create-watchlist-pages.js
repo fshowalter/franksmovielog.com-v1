@@ -9,7 +9,6 @@ async function createDirectorPages(graphql, reporter, createPage) {
         ) {
           nodes {
             slug
-            imdbId: imdb_id
           }
         }
       }
@@ -34,9 +33,12 @@ async function createDirectorPages(graphql, reporter, createPage) {
   query.data.directors.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/directors/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlist/director.tsx"),
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
       context: {
-        imdbId: node.imdbId,
+        slug: node.slug,
+        entityType: "director",
       },
     });
   });
@@ -51,7 +53,6 @@ async function createPerformerPages(graphql, reporter, createPage) {
         ) {
           nodes {
             slug
-            imdbId: imdb_id
           }
         }
       }
@@ -76,9 +77,12 @@ async function createPerformerPages(graphql, reporter, createPage) {
   query.data.performers.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/performers/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlist/performer.tsx"),
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
       context: {
-        imdbId: node.imdbId,
+        slug: node.slug,
+        entityType: "performer",
       },
     });
   });
@@ -93,7 +97,6 @@ async function createWriterPages(graphql, reporter, createPage) {
         ) {
           nodes {
             slug
-            imdbId: imdb_id
           }
         }
       }
@@ -118,9 +121,12 @@ async function createWriterPages(graphql, reporter, createPage) {
   query.data.writers.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/writers/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlist/writer.tsx"),
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
       context: {
-        imdbId: node.imdbId,
+        slug: node.slug,
+        entityType: "writer",
       },
     });
   });
@@ -135,7 +141,6 @@ async function createCollectionPages(graphql, reporter, createPage) {
         ) {
           nodes {
             slug
-            name
           }
         }
       }
@@ -160,9 +165,12 @@ async function createCollectionPages(graphql, reporter, createPage) {
   query.data.collections.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/collections/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlist/collection.tsx"),
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
       context: {
-        name: node.name,
+        slug: node.slug,
+        entityType: "collection",
       },
     });
   });

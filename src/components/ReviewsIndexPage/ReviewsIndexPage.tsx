@@ -11,7 +11,6 @@ import SelectInput from "../SelectInput";
 import Seo from "../Seo";
 import StatsLink from "../StatsLink";
 import ToggleButton from "../ToggleButton";
-import reducer, { ActionType, initState } from "./reducer";
 import {
   containerCss,
   filtersCss,
@@ -27,6 +26,7 @@ import {
   rightCss,
   toggleGradesButtonCss,
 } from "./ReviewsIndexPage.module.scss";
+import reducer, { ActionType, initState } from "./ReviewsIndexPage.reducer";
 
 /**
  * Renders the reviews page.

@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import DetailsStatTable from "../DetailsStatTable";
+import DetailsTable from "../DetailsTable";
 import {
   titleYearCss,
   viaCss,
@@ -58,7 +58,7 @@ export default function MostWatchedMoviesTable({
     return null;
   }
 
-  return DetailsStatTable<MovieWithViewings>({
+  return DetailsTable<MovieWithViewings>({
     heading: "Most Watched Movies",
     collection: movies,
     leftHeaderText: "Title",

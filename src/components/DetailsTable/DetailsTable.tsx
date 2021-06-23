@@ -4,7 +4,7 @@ import {
   detailsLabelCss,
   detailsListCss,
   tableIndexCellCss,
-} from "./DetailsStatTable.module.scss";
+} from "./DetailsTable.module.scss";
 
 function IndexCell({
   index,

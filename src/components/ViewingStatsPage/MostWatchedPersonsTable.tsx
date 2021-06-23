@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import DetailsStatTable from "../DetailsStatTable";
+import DetailsTable from "../DetailsTable";
 import {
   titleYearCss,
   viaCss,
@@ -67,7 +67,7 @@ export default function MostWatchedPersonsTable({
   people: PersonWithViewings[];
   slugPath: string;
 }): JSX.Element {
-  return DetailsStatTable<PersonWithViewings>({
+  return DetailsTable<PersonWithViewings>({
     heading,
     collection: people,
     leftHeaderText: "Name",
