@@ -424,7 +424,6 @@ export default function WatchlistIndexPage({
             />
             {(reviewedCount > 0 || state.hideReviewed) && (
               <Button
-                id="to_watch-toggle_reviewed"
                 onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
               >
                 {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}

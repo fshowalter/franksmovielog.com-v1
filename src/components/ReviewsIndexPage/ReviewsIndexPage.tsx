@@ -105,7 +105,6 @@ export default function ReviewsIndexPage({
           </Fieldset>
           <div className={toggleGradesButtonCss}>
             <Button
-              id="show_grade-toggle"
               onClick={() => dispatch({ type: ActionType.TOGGLE_GRADES })}
             >
               {state.showGrades ? "Show Stars" : "Show Grades"}
