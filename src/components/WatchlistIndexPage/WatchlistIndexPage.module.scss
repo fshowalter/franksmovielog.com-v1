@@ -21,7 +21,7 @@
 .leftCss {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." ". filters ." ". . ." ". list_info ." ". . ." ". percent ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
@@ -31,13 +31,13 @@
     auto var(--step-5);
 
   @media (min-width: $breakpointDesktop) {
-    grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
+    grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";
   }
 }
 
 .rightCss {
   display: grid;
-  grid-template-areas: ". list" ". ." "pagination pagination" ". .";
+  grid-template-areas: ". list" ". ." "show_more show_more" ". .";
   grid-template-columns: var(--step-1) 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
@@ -46,13 +46,17 @@
   grid-area: header;
 }
 
-.paginationInfoCss {
-  grid-area: pagination_info;
+.listInfoCss {
+  color: var(--color-text-secondary);
+  font-size: clamp(15px, 4vw, 16px);
+  font-weight: 300;
+  grid-area: list_info;
   justify-self: center;
+  text-align: center;
 }
 
-.paginationCss {
-  grid-area: pagination;
+.showMoreCss {
+  grid-area: show_more;
   justify-self: center;
 }
 
@@ -135,6 +139,7 @@
   background-color: darken(#fff, 2);
   border: solid 1px darken(#e9e7e0, 10);
   border-radius: 1rem;
+  color: var(--color-link);
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;

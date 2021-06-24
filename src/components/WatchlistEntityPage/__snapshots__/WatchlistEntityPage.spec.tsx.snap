@@ -275,7 +275,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                 />
               </div>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="fromCss"
@@ -292,7 +292,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                 />
               </label>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="toCss"
@@ -5892,7 +5892,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                 />
               </div>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="fromCss"
@@ -5909,7 +5909,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                 />
               </label>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="toCss"
@@ -7479,7 +7479,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                 />
               </div>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="fromCss"
@@ -7496,7 +7496,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                 />
               </label>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="toCss"
@@ -9066,7 +9066,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                 />
               </div>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="fromCss"
@@ -9083,7 +9083,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                 />
               </label>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="toCss"

@@ -21373,13 +21373,2005 @@ exports[`/watchlist can sort by title 1`] = `
 </ol>
 `;
 
-exports[`/watchlist can view next page 1`] = `
+exports[`/watchlist can view more titles 1`] = `
 <ol
   class="listCss"
   data-testid="watchlist-list"
 >
   <li
     class="listItemCss listItemFirstCss"
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/interference-1928/"
+        rel="canonical"
+      >
+        Interference
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1928
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-canary-murder-case-1929/"
+        rel="canonical"
+      >
+        The Canary Murder Case
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-black-watch-1929/"
+        rel="canonical"
+      >
+        The Black Watch
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Ford directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/behind-that-curtain-1929/"
+        rel="canonical"
+      >
+        Behind That Curtain
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Boris Karloff performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/blackmail-1929/"
+        rel="canonical"
+      >
+        Blackmail
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Alfred Hitchcock directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-greene-murder-case-1929/"
+        rel="canonical"
+      >
+        The Greene Murder Case
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/charming-sinners-1929/"
+        rel="canonical"
+      >
+        Charming Sinners
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/salute-1929/"
+        rel="canonical"
+      >
+        Salute
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Ford directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-unholy-night-1929/"
+        rel="canonical"
+      >
+        The Unholy Night
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Boris Karloff performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-thirteenth-chair-1929/"
+        rel="canonical"
+      >
+        The Thirteenth Chair
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Tod Browning directed
+       and 
+      Bela Lugosi performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/pointed-heels-1929/"
+        rel="canonical"
+      >
+        Pointed Heels
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1929
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/behind-the-make-up-1930/"
+        rel="canonical"
+      >
+        Behind the Make-Up
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/men-without-women-1930/"
+        rel="canonical"
+      >
+        Men Without Women
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Ford directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/street-of-chance-1930/"
+        rel="canonical"
+      >
+        Street of Chance
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-benson-murder-case-1930/"
+        rel="canonical"
+      >
+        The Benson Murder Case
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/juno-and-the-paycock-1930/"
+        rel="canonical"
+      >
+        Juno and the Paycock
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Alfred Hitchcock directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      The Bad One
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        1930
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Boris Karloff performed
+      .
+    </div>
+    <div
+      class="listItemCheckmarkCss"
+    />
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/born-reckless-1930/"
+        rel="canonical"
+      >
+        Born Reckless
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Ford directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/shadow-of-the-law-1930/"
+        rel="canonical"
+      >
+        Shadow of the Law
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-sea-bat-1930/"
+        rel="canonical"
+      >
+        The Sea Bat
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Boris Karloff performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/wild-company-1930/"
+        rel="canonical"
+      >
+        Wild Company
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Bela Lugosi performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-dawn-patrol-1930/"
+        rel="canonical"
+      >
+        The Dawn Patrol
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Howard Hawks directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/for-the-defense-1930/"
+        rel="canonical"
+      >
+        For the Defense
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/murder-1930/"
+        rel="canonical"
+      >
+        Murder!
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Alfred Hitchcock directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/outside-the-law-1930/"
+        rel="canonical"
+      >
+        Outside the Law
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Tod Browning directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-big-trail-1930/"
+        rel="canonical"
+      >
+        The Big Trail
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Wayne performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/up-the-river-1930/"
+        rel="canonical"
+      >
+        Up the River
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Ford directed
+       and 
+      Humphrey Bogart performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      A Devil with Women
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        1930
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Humphrey Bogart performed
+      .
+    </div>
+    <div
+      class="listItemCheckmarkCss"
+    />
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/renegades-1930/"
+        rel="canonical"
+      >
+        Renegades
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Bela Lugosi performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-utah-kid-1930/"
+        rel="canonical"
+      >
+        The Utah Kid
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Boris Karloff performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/oh-for-a-man-1930/"
+        rel="canonical"
+      >
+        Oh, for a Man!
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Bela Lugosi performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/lage-dor-1930/"
+        rel="canonical"
+      >
+        L'Age d'Or
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Luis Buñuel directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-criminal-code-1930/"
+        rel="canonical"
+      >
+        The Criminal Code
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1930
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Howard Hawks directed
+       and 
+      Boris Karloff performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/seas-beneath-1931/"
+        rel="canonical"
+      >
+        Seas Beneath
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Ford directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      Girls Demand Excitement
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        1931
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Wayne performed
+      .
+    </div>
+    <div
+      class="listItemCheckmarkCss"
+    />
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/dracula-1931/"
+        rel="canonical"
+      >
+        Dracula
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Tod Browning directed
+      , 
+      Bela Lugosi performed
+      , 
+       and 
+      it's in the Universal Monsters collection
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      Body and Soul
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        1931
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Humphrey Bogart performed
+      .
+    </div>
+    <div
+      class="listItemCheckmarkCss"
+    />
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-skin-game-1931/"
+        rel="canonical"
+      >
+        The Skin Game
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Alfred Hitchcock directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/dracula-1931-spanish/"
+        rel="canonical"
+      >
+        Drácula
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      it's in the Universal Monsters collection
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/man-of-the-world-1931/"
+        rel="canonical"
+      >
+        Man of the World
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-bad-sister-1931/"
+        rel="canonical"
+      >
+        Bad Sister
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Bette Davis and Humphrey Bogart performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/cracked-nuts-1931/"
+        rel="canonical"
+      >
+        Cracked Nuts
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Boris Karloff performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      Three Girls Lost
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        1931
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Wayne performed
+      .
+    </div>
+    <div
+      class="listItemCheckmarkCss"
+    />
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/iron-man-1931/"
+        rel="canonical"
+      >
+        Iron Man
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Tod Browning directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/ladies-man-1931/"
+        rel="canonical"
+      >
+        Ladies' Man
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      William Powell performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/m-1931/"
+        rel="canonical"
+      >
+        M
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Fritz Lang directed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      Seed
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        1931
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Bette Davis performed
+      .
+    </div>
+    <div
+      class="listItemCheckmarkCss"
+    />
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      Young Donovan's Kid
+       
+      <span
+        class="listItemTitleYearCss"
+      >
+        1931
+      </span>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Boris Karloff performed
+      .
+    </div>
+    <div
+      class="listItemCheckmarkCss"
+    />
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/the-black-camel-1931/"
+        rel="canonical"
+      >
+        The Black Camel
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      Bela Lugosi performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
+  >
+    <div
+      class="listItemTitleCss"
+    >
+      <a
+        class="listItemTitleLinkCss"
+        href="/reviews/arizona-1931/"
+        rel="canonical"
+      >
+        Arizona
+         
+        <span
+          class="listItemTitleYearCss"
+        >
+          1931
+        </span>
+      </a>
+    </div>
+    <div
+      class="listItemSlugCss"
+    >
+      Because 
+      John Wayne performed
+      .
+    </div>
+    <svg
+      class="listItemCheckmarkCss"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1"
+      />
+    </svg>
+  </li>
+  <li
+    class="listItemCss "
   >
     <div
       class="listItemTitleCss"
@@ -23836,7 +25828,7 @@ exports[`/watchlist renders 1`] = `
                 />
               </div>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="fromCss"
@@ -23853,7 +25845,7 @@ exports[`/watchlist renders 1`] = `
                 />
               </label>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="toCss"
@@ -23895,11 +25887,11 @@ exports[`/watchlist renders 1`] = `
               </select>
             </label>
           </fieldset>
-          <p
-            class="infoCss paginationInfoCss"
+          <div
+            class="listInfoCss"
           >
-            Showing 1-50 of 3252.
-          </p>
+            Showing 1-50 of 3252
+          </div>
           <div
             class="percentCss"
           >
@@ -23930,8 +25922,7 @@ exports[`/watchlist renders 1`] = `
               170/3252 Reviewed
             </div>
             <button
-              class="toggleButtonCss"
-              id="to_watch-toggle_reviewed"
+              class="buttonCss"
               type="button"
             >
               Hide Reviewed
@@ -25777,50 +27768,16 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
           </ol>
-          <section
-            class="containerCss paginationCss"
+          <div
+            class="showMoreCss"
           >
-            <div
-              class="srOnlyCss"
-            >
-              <h3>
-                Pagination
-              </h3>
-            </div>
-               
-            <span
-              aria-current="page"
-              class="currentPageCss"
-            >
-              1
-            </span>
             <button
               class="buttonCss"
               type="button"
             >
-              2
+              Show More
             </button>
-             
-            <span
-              class="elipsisCss"
-            >
-              …
-            </span>
-             
-            <button
-              class="buttonCss"
-              type="button"
-            >
-              66
-            </button>
-             
-            <button
-              class="buttonCss"
-              type="button"
-            >
-              Next →
-            </button>
-          </section>
+          </div>
         </div>
       </main>
     </div>

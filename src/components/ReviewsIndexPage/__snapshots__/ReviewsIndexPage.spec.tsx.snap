@@ -50305,7 +50305,7 @@ exports[`/reviews renders 1`] = `
                 />
               </div>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="fromCss"
@@ -50322,7 +50322,7 @@ exports[`/reviews renders 1`] = `
                 />
               </label>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="toCss"
@@ -50378,8 +50378,7 @@ exports[`/reviews renders 1`] = `
             class="toggleGradesButtonCss"
           >
             <button
-              class="toggleButtonCss"
-              id="show_grade-toggle"
+              class="buttonCss"
               type="button"
             >
               Show Grades

@@ -1,5 +1,6 @@
 import { graphql, Link } from "gatsby";
 import React, { useReducer } from "react";
+import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
@@ -9,7 +10,6 @@ import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
 import StatsLink from "../StatsLink";
-import ToggleButton from "../ToggleButton";
 import {
   containerCss,
   filtersCss,
@@ -104,12 +104,12 @@ export default function ReviewsIndexPage({
             </SelectInput>
           </Fieldset>
           <div className={toggleGradesButtonCss}>
-            <ToggleButton
+            <Button
               id="show_grade-toggle"
               onClick={() => dispatch({ type: ActionType.TOGGLE_GRADES })}
             >
               {state.showGrades ? "Show Stars" : "Show Grades"}
-            </ToggleButton>
+            </Button>
           </div>
         </div>
         <div className={rightCss}>

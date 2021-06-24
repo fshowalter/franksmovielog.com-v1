@@ -1,5 +1,4 @@
 import applyFilters from "../../utils/apply-filters";
-import slicePage from "../../utils/slice-page";
 import {
   collator,
   sortStringAsc,
@@ -15,7 +14,7 @@ export enum ActionType {
   FILTER_COLLECTION = "FILTER_COLLECTION",
   FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
   SORT = "SORT",
-  CHANGE_PAGE = "CHANGE_PAGE",
+  SHOW_MORE = "SHOW_MORE",
   TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
 }
 
@@ -62,14 +61,10 @@ type State = {
   allMovies: WatchlistMovie[];
   /** Watchlist movies matching the current filters. */
   filteredMovies: WatchlistMovie[];
-  /** Watchlist movies matching the current filters for the current page. */
-  moviesForPage: WatchlistMovie[];
+  /** Number of movies to show on the page. */
+  showCount: number;
   /** The active filters. */
   filters: Record<string, (movie: WatchlistMovie) => boolean>;
-  /** The current page. */
-  currentPage: number;
-  /** The number of reviews per page. */
-  perPage: number;
   /** The minimum year for the release date filter. */
   minYear: number;
   /** The maximum year for the release date filter. */
@@ -80,27 +75,21 @@ type State = {
   hideReviewed: boolean;
 };
 
+const SHOW_COUNT_DEFAULT = 50;
+
 /**
  * Initializes the page state.
  */
 export function initState({ movies }: { movies: WatchlistMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForMovies(movies);
-  const currentPage = 1;
-  const perPage = 50;
 
   return {
     allMovies: movies,
     filteredMovies: movies,
-    moviesForPage: slicePage<WatchlistMovie>({
-      collection: movies,
-      pageToSlice: currentPage,
-      perPage,
-    }),
+    showCount: SHOW_COUNT_DEFAULT,
     filters: {},
     sortValue: "release-date-asc",
     hideReviewed: false,
-    currentPage,
-    perPage,
     minYear,
     maxYear,
   };
@@ -156,10 +145,8 @@ interface SortAction {
 }
 
 /** Action to change page. */
-interface ChangePageAction {
-  type: ActionType.CHANGE_PAGE;
-  /** The page to change to. */
-  value: number;
+interface ShowMoreAction {
+  type: ActionType.SHOW_MORE;
 }
 
 /** Action to toggle reviewed. */
@@ -176,7 +163,7 @@ type Action =
   | FilterWriterAction
   | SortAction
   | ToggleReviewedAction
-  | ChangePageAction;
+  | ShowMoreAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -204,12 +191,7 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
+        showCount: SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.FILTER_DIRECTOR: {
@@ -231,12 +213,7 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
+        showCount: SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.FILTER_PERFORMER: {
@@ -258,12 +235,7 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
+        showCount: SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.FILTER_WRITER: {
@@ -285,12 +257,7 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
+        showCount: SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.FILTER_COLLECTION: {
@@ -312,12 +279,7 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
+        showCount: SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.FILTER_RELEASE_YEAR: {
@@ -338,12 +300,7 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         filters,
         filteredMovies,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
+        showCount: SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.SORT: {
@@ -352,22 +309,13 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         sortValue: action.value,
         filteredMovies,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: state.currentPage,
-          perPage: state.perPage,
-        }),
+        showCount: SHOW_COUNT_DEFAULT,
       };
     }
-    case ActionType.CHANGE_PAGE: {
+    case ActionType.SHOW_MORE: {
       return {
         ...state,
-        currentPage: action.value,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: state.filteredMovies,
-          pageToSlice: action.value,
-          perPage: state.perPage,
-        }),
+        showCount: state.showCount + SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.TOGGLE_REVIEWED: {
@@ -393,12 +341,6 @@ export default function reducer(state: State, action: Action): State {
         filters,
         filteredMovies,
         hideReviewed: !state.hideReviewed,
-        currentPage: 1,
-        moviesForPage: slicePage<WatchlistMovie>({
-          collection: filteredMovies,
-          pageToSlice: 1,
-          perPage: state.perPage,
-        }),
       };
     }
     // no default

@@ -200,10 +200,10 @@ describe("/watchlist", () => {
     expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
   });
 
-  it("can view next page", () => {
+  it("can view more titles", () => {
     render(<WatchlistIndexPage data={data} />);
 
-    userEvent.click(screen.getByText("Next →"));
+    userEvent.click(screen.getByText("Show More"));
 
     expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
   });

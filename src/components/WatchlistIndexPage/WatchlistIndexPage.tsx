@@ -2,21 +2,21 @@ import { graphql, Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import { collator } from "../../utils/sort-utils";
 import toSentenceArray from "../../utils/to-sentence-array";
+import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
-import { PaginationInfo, PaginationWithButtons } from "../Pagination";
 import ProgressGraph from "../ProgressGraph";
 import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
-import ToggleButton from "../ToggleButton";
 import {
   containerCss,
   filtersCss,
   leftCss,
   listCss,
+  listInfoCss,
   listItemCheckmarkCss,
   listItemCss,
   listItemFirstCss,
@@ -25,12 +25,11 @@ import {
   listItemTitleLinkCss,
   listItemTitleYearCss,
   pageHeaderCss,
-  paginationCss,
-  paginationInfoCss,
   percentCss,
   percentTotalsCss,
   quoteCss,
   rightCss,
+  showMoreCss,
   typeIconCss,
   typeLinkCss,
   typeLinksCss,
@@ -414,56 +413,48 @@ export default function WatchlistIndexPage({
               <option value="title">Title</option>
             </SelectInput>
           </Fieldset>
-          <PaginationInfo
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredMovies.length}
-            className={paginationInfoCss}
-          />
+          <div className={listInfoCss}>
+            Showing 1-{state.showCount} of {state.filteredMovies.length}
+          </div>
           <div className={percentCss}>
             <WatchlistProgress
               total={state.filteredMovies.length}
               reviewed={reviewedCount}
             />
             {(reviewedCount > 0 || state.hideReviewed) && (
-              <ToggleButton
+              <Button
                 id="to_watch-toggle_reviewed"
                 onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
               >
                 {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-              </ToggleButton>
+              </Button>
             )}
           </div>
         </div>
         <div ref={listHeader} className={rightCss}>
           <ol data-testid="watchlist-list" className={listCss}>
-            {state.moviesForPage.map((movie, index) => {
-              return (
-                <li
-                  key={movie.imdbId}
-                  className={`${listItemCss} ${
-                    index === 0 ? listItemFirstCss : ""
-                  }`}
-                >
-                  <WatchlistMovieTitle movie={movie} />
-                  <WatchlistMovieSlug movie={movie} />
-                  <WatchlistMovieCheckMark movie={movie} />
-                </li>
-              );
-            })}
+            {state.filteredMovies
+              .slice(0, state.showCount)
+              .map((movie, index) => {
+                return (
+                  <li
+                    key={movie.imdbId}
+                    className={`${listItemCss} ${
+                      index === 0 ? listItemFirstCss : ""
+                    }`}
+                  >
+                    <WatchlistMovieTitle movie={movie} />
+                    <WatchlistMovieSlug movie={movie} />
+                    <WatchlistMovieCheckMark movie={movie} />
+                  </li>
+                );
+              })}
           </ol>
-          <PaginationWithButtons
-            className={paginationCss}
-            currentPage={state.currentPage}
-            perPage={state.perPage}
-            numberOfItems={state.filteredMovies.length}
-            onClick={(newPage) => {
-              dispatch({ type: ActionType.CHANGE_PAGE, value: newPage });
-              listHeader &&
-                listHeader.current &&
-                listHeader.current.scrollIntoView();
-            }}
-          />
+          <div className={showMoreCss}>
+            <Button onClick={() => dispatch({ type: ActionType.SHOW_MORE })}>
+              Show More
+            </Button>
+          </div>
         </div>
       </main>
     </Layout>

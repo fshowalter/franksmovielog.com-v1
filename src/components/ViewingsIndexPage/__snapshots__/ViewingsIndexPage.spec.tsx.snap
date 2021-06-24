@@ -171702,7 +171702,7 @@ exports[`/viewings renders 1`] = `
                 />
               </div>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="fromCss"
@@ -171719,7 +171719,7 @@ exports[`/viewings renders 1`] = `
                 />
               </label>
               <label
-                class="inputLabel"
+                class="inputLabelCss"
               >
                 <span
                   class="toCss"
