@@ -14,14 +14,14 @@ export default function Pagination({
   numberOfItems,
   urlRoot,
   className,
-  prevText = "Prev",
-  nextText = "Next",
+  prevText,
+  nextText,
 }: {
   currentPage: number;
   perPage: number;
   numberOfItems: number;
   urlRoot: string;
-  className?: string;
+  className: string;
   prevText: string;
   nextText: string;
 }): JSX.Element {
@@ -88,7 +88,7 @@ export default function Pagination({
     );
 
   return (
-    <section className={`${containerCss} ${className || ""}`}>
+    <section className={`${containerCss} ${className}`}>
       <ScreenReaderOnly>
         <h3>Pagination</h3>
       </ScreenReaderOnly>

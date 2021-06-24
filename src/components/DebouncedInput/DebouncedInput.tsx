@@ -46,11 +46,11 @@ function underscoreDebounce<F extends onChangeHandler>(
 
 export default function DebouncedInput({
   label,
-  placeholder = "",
+  placeholder,
   onChange,
 }: {
   label: string;
-  placeholder?: string;
+  placeholder: string;
   onChange: onChangeHandler;
 }): JSX.Element {
   const debouncedHandleChange = underscoreDebounce(onChange, 150);
