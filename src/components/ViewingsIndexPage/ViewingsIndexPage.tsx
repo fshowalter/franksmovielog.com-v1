@@ -1,6 +1,7 @@
 import { graphql, Link } from "gatsby";
 import React, { useReducer, useRef } from "react";
 import { collator } from "../../utils/sort-utils";
+import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
@@ -14,6 +15,7 @@ import {
   filtersCss,
   leftCss,
   listCss,
+  listInfoCss,
   listItemCss,
   listItemFirstCss,
   listItemSlugCss,
@@ -23,6 +25,7 @@ import {
   pageHeaderCss,
   quoteCss,
   rightCss,
+  showMoreCss,
 } from "./ViewingsIndexPage.module.scss";
 import type { SortType } from "./ViewingsIndexPage.reducer";
 import reducer, { ActionTypes, initState } from "./ViewingsIndexPage.reducer";
@@ -192,24 +195,35 @@ export default function ViewingsIndexPage({
               <option value="title">Title</option>
             </SelectInput>
           </Fieldset>
+          <div className={listInfoCss}>
+            Showing 1-{state.showCount} of{" "}
+            {state.filteredViewings.length.toLocaleString()}
+          </div>
         </div>
         <div className={rightCss} ref={listHeader}>
           <ol data-testid="viewings-list" className={listCss}>
-            {state.filteredViewings.map((viewing, index) => {
-              return (
-                <li
-                  value={viewing.sequence}
-                  key={viewing.sequence}
-                  className={`${listItemCss} ${
-                    index === 0 ? listItemFirstCss : ""
-                  }`}
-                >
-                  <ViewingTitle viewing={viewing} />
-                  <ViewingSlug viewing={viewing} />
-                </li>
-              );
-            })}
+            {state.filteredViewings
+              .slice(0, state.showCount)
+              .map((viewing, index) => {
+                return (
+                  <li
+                    value={viewing.sequence}
+                    key={viewing.sequence}
+                    className={`${listItemCss} ${
+                      index === 0 ? listItemFirstCss : ""
+                    }`}
+                  >
+                    <ViewingTitle viewing={viewing} />
+                    <ViewingSlug viewing={viewing} />
+                  </li>
+                );
+              })}
           </ol>
+          <div className={showMoreCss}>
+            <Button onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}>
+              Show More
+            </Button>
+          </div>
         </div>
       </main>
     </Layout>

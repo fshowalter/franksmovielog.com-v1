@@ -1,11 +1,10 @@
 import React from "react";
 import { buttonCss } from "./Button.module.scss";
 
-export default function ToggleButton({
+export default function Button({
   onClick,
   children,
 }: {
-  id: string;
   children: React.ReactNode;
   onClick: () => void;
 }): JSX.Element {

@@ -57,9 +57,13 @@ type State = {
   minYear: number;
   /** The maximum year for the release date filter. */
   maxYear: number;
+  /** The number of viewings to show. */
+  showCount: number;
   /** The active sort value. */
   sortValue: SortType;
 };
+
+const SHOW_COUNT_DEFAULT = 50;
 
 /**
  * Initializes the page state.
@@ -73,6 +77,7 @@ export function initState({ viewings }: { viewings: Viewing[] }): State {
     filters: {},
     minYear,
     maxYear,
+    showCount: SHOW_COUNT_DEFAULT,
     sortValue: "viewing-date-desc",
   };
 }
@@ -82,6 +87,7 @@ export enum ActionTypes {
   FILTER_VENUE = "FILTER_VENUE",
   FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
   SORT = "SORT",
+  SHOW_MORE = "SHOW_MORE",
 }
 
 /** Action to filter by title. */
@@ -112,11 +118,16 @@ interface SortAction {
   value: SortType;
 }
 
+interface ShowMoreAction {
+  type: ActionTypes.SHOW_MORE;
+}
+
 type Action =
   | FilterTitleAction
   | FilterReleaseYearAction
   | FilterVenueAction
-  | SortAction;
+  | SortAction
+  | ShowMoreAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -194,6 +205,12 @@ export default function reducer(state: State, action: Action): State {
         ...state,
         sortValue: action.value,
         filteredViewings,
+      };
+    }
+    case ActionTypes.SHOW_MORE: {
+      return {
+        ...state,
+        showCount: state.showCount + SHOW_COUNT_DEFAULT,
       };
     }
     // no default

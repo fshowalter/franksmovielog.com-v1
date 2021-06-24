@@ -414,7 +414,8 @@ export default function WatchlistIndexPage({
             </SelectInput>
           </Fieldset>
           <div className={listInfoCss}>
-            Showing 1-{state.showCount} of {state.filteredMovies.length}
+            Showing 1-{state.showCount} of{" "}
+            {state.filteredMovies.length.toLocaleString()}
           </div>
           <div className={percentCss}>
             <WatchlistProgress
