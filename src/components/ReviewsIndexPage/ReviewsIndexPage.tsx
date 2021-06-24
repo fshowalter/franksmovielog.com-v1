@@ -4,7 +4,6 @@ import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Grade from "../Grade";
-import Label from "../Label";
 import Layout from "../Layout";
 import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
@@ -26,6 +25,7 @@ import {
   rightCss,
   toggleGradesButtonCss,
 } from "./ReviewsIndexPage.module.scss";
+import type { SortType } from "./ReviewsIndexPage.reducer";
 import reducer, { ActionType, initState } from "./ReviewsIndexPage.reducer";
 
 /**
@@ -67,53 +67,41 @@ export default function ReviewsIndexPage({
           />
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="reviews-title-input">
-              Title
-              <DebouncedInput
-                id="reviews-title-input"
-                placeholder="Enter all or part of a title"
-                onChange={(value) =>
-                  dispatch({ type: ActionType.FILTER_TITLE, value })
-                }
-              />
-            </Label>
+            <DebouncedInput
+              label="Title"
+              placeholder="Enter all or part of a title"
+              onChange={(value) =>
+                dispatch({ type: ActionType.FILTER_TITLE, value })
+              }
+            />
             <RangeInput
               label="Release Year"
-              id="reviews-release-year-input"
               min={state.minYear}
               max={state.maxYear}
               onChange={(values) =>
                 dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
               }
             />
-            <Label htmlFor="reviews-sort-input">
-              Order By
-              <SelectInput
-                value={state.sortValue}
-                id="reviews-sort-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.SORT,
-                    value: e.target.value as
-                      | "title"
-                      | "release-date-desc"
-                      | "release-date-asc"
-                      | "grade-asc"
-                      | "grade-desc",
-                  })
-                }
-              >
-                <option value="title">Title</option>
-                <option value="grade-desc">Grade (Best First)</option>
-                <option value="grade-asc">Grade (Worst First)</option>
-                <option value="release-date-desc">
-                  Release Date (Newest First)
-                </option>
-                <option value="release-date-asc">
-                  Release Date (Oldest First)
-                </option>
-              </SelectInput>
-            </Label>
+            <SelectInput
+              value={state.sortValue}
+              label="Order By"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.SORT,
+                  value: e.target.value as SortType,
+                })
+              }
+            >
+              <option value="title">Title</option>
+              <option value="grade-desc">Grade (Best First)</option>
+              <option value="grade-asc">Grade (Worst First)</option>
+              <option value="release-date-desc">
+                Release Date (Newest First)
+              </option>
+              <option value="release-date-asc">
+                Release Date (Oldest First)
+              </option>
+            </SelectInput>
           </Fieldset>
           <div className={toggleGradesButtonCss}>
             <ToggleButton
@@ -161,17 +149,19 @@ export default function ReviewsIndexPage({
 
 interface PageQueryResult {
   reviews: {
-    nodes: {
-      releaseDate: string;
-      lastReviewGrade: string;
-      lastReviewGradeValue: number;
-      slug: string;
-      imdbId: string;
-      title: string;
-      year: number;
-      sortTitle: string;
-    }[];
+    nodes: ReviewedMovie[];
   };
+}
+
+export interface ReviewedMovie {
+  releaseDate: string;
+  lastReviewGrade: string;
+  lastReviewGradeValue: number;
+  slug: string;
+  imdbId: string;
+  title: string;
+  year: number;
+  sortTitle: string;
 }
 
 export const query = graphql`

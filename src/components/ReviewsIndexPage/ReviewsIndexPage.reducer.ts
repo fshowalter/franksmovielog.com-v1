@@ -6,6 +6,7 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
+import type { ReviewedMovie } from "./ReviewsIndexPage";
 
 export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
@@ -14,16 +15,12 @@ export enum ActionType {
   TOGGLE_GRADES = "TOGGLE_GRADES",
 }
 
-interface ReviewedMovie {
-  releaseDate: string;
-  lastReviewGrade: string;
-  lastReviewGradeValue: number;
-  slug: string;
-  imdbId: string;
-  title: string;
-  year: number;
-  sortTitle: string;
-}
+export type SortType =
+  | "title"
+  | "release-date-desc"
+  | "release-date-asc"
+  | "grade-asc"
+  | "grade-desc";
 
 /**
  * The page state.
@@ -40,27 +37,17 @@ type State = {
   /** The maximum year for the release date filter. */
   maxYear: number;
   /** The active sort value. */
-  sortValue:
-    | "title"
-    | "release-date-desc"
-    | "release-date-asc"
-    | "grade-asc"
-    | "grade-desc";
+  sortValue: SortType;
   /** True to show grades vs. stars. */
   showGrades: boolean;
 };
 
 function sortReviews(
   reviews: ReviewedMovie[],
-  sortOrder:
-    | "title"
-    | "release-date-desc"
-    | "release-date-asc"
-    | "grade-asc"
-    | "grade-desc"
+  sortOrder: SortType
 ): ReviewedMovie[] {
   const sortMap: Record<
-    string,
+    SortType,
     (a: ReviewedMovie, b: ReviewedMovie) => number
   > = {
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
@@ -125,12 +112,7 @@ interface FilterReleaseYearAction {
 interface SortAction {
   type: ActionType.SORT;
   /** The sorter to apply. */
-  value:
-    | "title"
-    | "release-date-desc"
-    | "release-date-asc"
-    | "grade-asc"
-    | "grade-desc";
+  value: SortType;
 }
 
 /** Action to toggle grades. */

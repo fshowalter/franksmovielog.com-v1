@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { act, render, screen, waitFor } from "@testing-library/react";
+import { act, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import WatchlistEntityPage, { EntityType } from "./WatchlistEntityPage";
@@ -130,12 +130,14 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    const inputs = screen.getAllByLabelText("Release Year");
+    const fieldset = screen.getByRole("group", { name: "Release Year" });
+    const fromInput = within(fieldset).getByLabelText("From");
+    const toInput = within(fieldset).getByLabelText("To");
 
-    userEvent.clear(inputs[0]);
-    userEvent.type(inputs[0], "1980");
-    userEvent.clear(inputs[1]);
-    userEvent.type(inputs[1], "1990");
+    userEvent.clear(fromInput);
+    userEvent.type(fromInput, "1980");
+    userEvent.clear(toInput);
+    userEvent.type(toInput, "1990");
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });

@@ -5,6 +5,7 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
+import type { WatchlistMovie } from "./WatchlistIndexPage";
 
 export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
@@ -18,27 +19,16 @@ export enum ActionType {
   TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
 }
 
-interface WatchlistMovie {
-  collectionNames: string[];
-  directorNames: string[];
-  imdbId: string;
-  performerNames: string[];
-  title: string;
-  writerNames: string[];
-  year: number;
-  reviewedMovieSlug: string | null;
-  sortTitle: string;
-  releaseDate: string;
-}
+export type SortType = "release-date-asc" | "release-date-desc" | "title";
 
 /**
  * Sorts a given collection of watchlist movies using the given sort function key.
  * @param titles The collection to sort.
  * @param sortOrder The sort function key.
  */
-function sortMovies(titles: WatchlistMovie[], sortOrder: string) {
+function sortMovies(titles: WatchlistMovie[], sortOrder: SortType) {
   const sortMap: Record<
-    string,
+    SortType,
     (a: WatchlistMovie, b: WatchlistMovie) => number
   > = {
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
@@ -85,7 +75,7 @@ type State = {
   /** The maximum year for the release date filter. */
   maxYear: number;
   /** The active sort value. */
-  sortValue: string;
+  sortValue: SortType;
   /** True if reviewed items are currently hidden. */
   hideReviewed: boolean;
 };
@@ -162,7 +152,7 @@ interface FilterReleaseYearAction {
 interface SortAction {
   type: ActionType.SORT;
   /** The sorter to apply. */
-  value: string;
+  value: SortType;
 }
 
 /** Action to change page. */

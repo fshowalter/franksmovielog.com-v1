@@ -5,7 +5,6 @@ import toSentenceArray from "../../utils/to-sentence-array";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
-import Label from "../Label";
 import Layout from "../Layout";
 import { PaginationInfo, PaginationWithButtons } from "../Pagination";
 import ProgressGraph from "../ProgressGraph";
@@ -36,6 +35,7 @@ import {
   typeLinkCss,
   typeLinksCss,
 } from "./WatchlistIndexPage.module.scss";
+import type { SortType } from "./WatchlistIndexPage.reducer";
 import reducer, { ActionType, initState } from "./WatchlistIndexPage.reducer";
 
 /**
@@ -314,95 +314,81 @@ export default function WatchlistIndexPage({
             <WatchlistPeopleLinkItem to="/watchlist/performers/">
               Performers
             </WatchlistPeopleLinkItem>
+
             <WatchlistPeopleLinkItem to="/watchlist/writers/">
               Writers
             </WatchlistPeopleLinkItem>
+
             <WatchlistCollectionLinkItem to="/watchlist/collections/">
               Collections
             </WatchlistCollectionLinkItem>
           </ul>
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="to_watch-title-input">
-              Title
-              <DebouncedInput
-                id="to_watch-title-input"
-                placeholder="Enter all or part of a title"
-                onChange={(value) =>
-                  dispatch({ type: ActionType.FILTER_TITLE, value })
-                }
+            <DebouncedInput
+              label="Title"
+              placeholder="Enter all or part of a title"
+              onChange={(value) =>
+                dispatch({ type: ActionType.FILTER_TITLE, value })
+              }
+            />
+            <SelectInput
+              label="Director"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.FILTER_DIRECTOR,
+                  value: e.target.value,
+                })
+              }
+            >
+              <WatchlistOptions
+                movies={state.allMovies}
+                keyName="directorNames"
               />
-            </Label>
-            <Label htmlFor="to_watch-director-input">
-              Director
-              <SelectInput
-                id="to_watch-director-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_DIRECTOR,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="directorNames"
-                />
-              </SelectInput>
-            </Label>
-            <Label htmlFor="to_watch-performer-input">
-              Performer
-              <SelectInput
-                id="to_watch-performer-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_PERFORMER,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="performerNames"
-                />
-              </SelectInput>
-            </Label>
-            <Label htmlFor="to_watch-writer-input">
-              Writer
-              <SelectInput
-                id="to_watch-writer-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_WRITER,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="writerNames"
-                />
-              </SelectInput>
-            </Label>
-            <Label htmlFor="to_watch-collection-input">
-              Collection
-              <SelectInput
-                id="to_watch-collection-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_COLLECTION,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="collectionNames"
-                />
-              </SelectInput>
-            </Label>
+            </SelectInput>
+            <SelectInput
+              label="Performer"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.FILTER_PERFORMER,
+                  value: e.target.value,
+                })
+              }
+            >
+              <WatchlistOptions
+                movies={state.allMovies}
+                keyName="performerNames"
+              />
+            </SelectInput>
+            <SelectInput
+              label="Writer"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.FILTER_WRITER,
+                  value: e.target.value,
+                })
+              }
+            >
+              <WatchlistOptions
+                movies={state.allMovies}
+                keyName="writerNames"
+              />
+            </SelectInput>
+            <SelectInput
+              label="Collection"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.FILTER_COLLECTION,
+                  value: e.target.value,
+                })
+              }
+            >
+              <WatchlistOptions
+                movies={state.allMovies}
+                keyName="collectionNames"
+              />
+            </SelectInput>
             <RangeInput
-              id="to_watch-release-year-input"
               label="Release Year"
               min={state.minYear}
               max={state.maxYear}
@@ -410,23 +396,23 @@ export default function WatchlistIndexPage({
                 dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
               }
             />
-            <Label htmlFor="to_watch-sort-input">
-              Order By
-              <SelectInput
-                id="to_watch-sort-input"
-                onChange={(e) =>
-                  dispatch({ type: ActionType.SORT, value: e.target.value })
-                }
-              >
-                <option value="release-date-asc">
-                  Release Date (Oldest First)
-                </option>
-                <option value="release-date-desc">
-                  Release Date (Newest First)
-                </option>
-                <option value="title">Title</option>
-              </SelectInput>
-            </Label>
+            <SelectInput
+              label="Order By"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.SORT,
+                  value: e.target.value as SortType,
+                })
+              }
+            >
+              <option value="release-date-asc">
+                Release Date (Oldest First)
+              </option>
+              <option value="release-date-desc">
+                Release Date (Newest First)
+              </option>
+              <option value="title">Title</option>
+            </SelectInput>
           </Fieldset>
           <PaginationInfo
             currentPage={state.currentPage}
@@ -484,7 +470,7 @@ export default function WatchlistIndexPage({
   );
 }
 
-type WatchlistMovie = {
+export interface WatchlistMovie {
   collectionNames: string[];
   directorNames: string[];
   imdbId: string;
@@ -495,7 +481,7 @@ type WatchlistMovie = {
   reviewedMovieSlug: string | null;
   sortTitle: string;
   releaseDate: string;
-};
+}
 
 interface PageQueryResult {
   watchlist: {

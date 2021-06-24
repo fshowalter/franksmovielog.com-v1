@@ -5,7 +5,6 @@ import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Grade from "../Grade";
-import Label from "../Label";
 import Layout from "../Layout";
 import ProgressGraph from "../ProgressGraph";
 import RangeInput from "../RangeInput";
@@ -183,46 +182,39 @@ export default function WatchlistEntityPage({
           />
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="watchlist-director-title-input">
-              Title
-              <DebouncedInput
-                id="watchlist-director-title-input"
-                placeholder="Enter all or part of a title"
-                onChange={(value) =>
-                  dispatch({ type: ActionType.FILTER_TITLE, value })
-                }
-              />
-            </Label>
+            <DebouncedInput
+              label="Title"
+              placeholder="Enter all or part of a title"
+              onChange={(value) =>
+                dispatch({ type: ActionType.FILTER_TITLE, value })
+              }
+            />
             <RangeInput
               label="Release Year"
-              id="watchlist-director-release-year-input"
               min={state.minYear}
               max={state.maxYear}
               onChange={(values) =>
                 dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
               }
             />
-            <Label htmlFor="watchlist-director-sort-input">
-              Order By
-              <SelectInput
-                value={state.sortType}
-                id="watchlist-director-sort-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.SORT,
-                    value: e.target.value as SortType,
-                  })
-                }
-              >
-                <option value="release-date-asc">
-                  Release Date (Oldest First)
-                </option>
-                <option value="release-date-desc">
-                  Release Date (Newest First)
-                </option>
-                <option value="title">Title</option>
-              </SelectInput>
-            </Label>
+            <SelectInput
+              value={state.sortType}
+              label="Order By"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.SORT,
+                  value: e.target.value as SortType,
+                })
+              }
+            >
+              <option value="release-date-asc">
+                Release Date (Oldest First)
+              </option>
+              <option value="release-date-desc">
+                Release Date (Newest First)
+              </option>
+              <option value="title">Title</option>
+            </SelectInput>
           </Fieldset>
           <div className={percentCss}>
             <WatchlistEntityProgress

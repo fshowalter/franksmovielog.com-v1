@@ -4,7 +4,6 @@ import { collator } from "../../utils/sort-utils";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
-import Label from "../Label";
 import Layout from "../Layout";
 import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
@@ -25,6 +24,7 @@ import {
   quoteCss,
   rightCss,
 } from "./ViewingsIndexPage.module.scss";
+import type { SortType } from "./ViewingsIndexPage.reducer";
 import reducer, { ActionTypes, initState } from "./ViewingsIndexPage.reducer";
 
 /**
@@ -141,18 +141,14 @@ export default function ViewingsIndexPage({
           />
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="viewings-title-input">
-              Title
-              <DebouncedInput
-                id="viewings-title-input"
-                placeholder="Enter all or part of a title"
-                onChange={(value) =>
-                  dispatch({ type: ActionTypes.FILTER_TITLE, value })
-                }
-              />
-            </Label>
+            <DebouncedInput
+              label="Title"
+              placeholder="Enter all or part of a title"
+              onChange={(value) =>
+                dispatch({ type: ActionTypes.FILTER_TITLE, value })
+              }
+            />
             <RangeInput
-              id="viewings-release-year-input"
               label="Release Year"
               min={state.minYear}
               max={state.maxYear}
@@ -160,44 +156,41 @@ export default function ViewingsIndexPage({
                 dispatch({ type: ActionTypes.FILTER_RELEASE_YEAR, values })
               }
             />
-            <Label htmlFor="viewings-venue-input">
-              Venue
-              <SelectInput
-                id="viewings-venue-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionTypes.FILTER_VENUE,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <VenueOptions viewings={state.allViewings} />
-              </SelectInput>
-            </Label>
-            <Label htmlFor="viewings-sort-input">
-              Order By
-              <SelectInput
-                value={state.sortValue}
-                id="viewings-sort-input"
-                onChange={(e) =>
-                  dispatch({ type: ActionTypes.SORT, value: e.target.value })
-                }
-              >
-                <option value="viewing-date-desc">
-                  Viewing Date (Newest First)
-                </option>
-                <option value="viewing-date-asc">
-                  Viewing Date (Oldest First)
-                </option>
-                <option value="release-date-desc">
-                  Release Date (Newest First)
-                </option>
-                <option value="release-date-asc">
-                  Release Date (Oldest First)
-                </option>
-                <option value="title">Title</option>
-              </SelectInput>
-            </Label>
+            <SelectInput
+              label="Venue"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionTypes.FILTER_VENUE,
+                  value: e.target.value,
+                })
+              }
+            >
+              <VenueOptions viewings={state.allViewings} />
+            </SelectInput>
+            <SelectInput
+              value={state.sortValue}
+              label="Order By"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionTypes.SORT,
+                  value: e.target.value as SortType,
+                })
+              }
+            >
+              <option value="viewing-date-desc">
+                Viewing Date (Newest First)
+              </option>
+              <option value="viewing-date-asc">
+                Viewing Date (Oldest First)
+              </option>
+              <option value="release-date-desc">
+                Release Date (Newest First)
+              </option>
+              <option value="release-date-asc">
+                Release Date (Oldest First)
+              </option>
+              <option value="title">Title</option>
+            </SelectInput>
           </Fieldset>
         </div>
         <div className={rightCss} ref={listHeader}>
@@ -223,7 +216,7 @@ export default function ViewingsIndexPage({
   );
 }
 
-interface Viewing {
+export interface Viewing {
   title: string;
   year: number;
   releaseDate: string;

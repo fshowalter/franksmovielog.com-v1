@@ -74,11 +74,11 @@
         "jsx-a11y/label-has-associated-control": [
           "error",
           {
-            "controlComponents": ["DebouncedInput", "RangeInput"],
-            "assert": "both",
+            "assert": "either",
             "depth": 25
           }
         ],
+        "jsx-a11y/no-onchange": "off",
         "no-useless-constructor": "off",
         "react/jsx-filename-extension": [
           2,

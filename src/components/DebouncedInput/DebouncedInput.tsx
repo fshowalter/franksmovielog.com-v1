@@ -1,5 +1,5 @@
 import React from "react";
-import { inputCss } from "./DebouncedInput.module.scss";
+import { inputCss, labelCss } from "./DebouncedInput.module.scss";
 
 export type onChangeHandler = (value: string) => void;
 
@@ -45,30 +45,25 @@ function underscoreDebounce<F extends onChangeHandler>(
 }
 
 export default function DebouncedInput({
-  className,
-  id,
+  label,
   placeholder = "",
   onChange,
 }: {
-  className?: string;
-  id: string;
+  label: string;
   placeholder?: string;
   onChange: onChangeHandler;
 }): JSX.Element {
   const debouncedHandleChange = underscoreDebounce(onChange, 150);
 
   return (
-    <input
-      className={`${inputCss} ${className || ""}`}
-      type="text"
-      id={id}
-      placeholder={placeholder}
-      onChange={(e) => debouncedHandleChange(e.target.value)}
-    />
+    <label className={labelCss}>
+      {label}
+      <input
+        className={inputCss}
+        type="text"
+        placeholder={placeholder}
+        onChange={(e) => debouncedHandleChange(e.target.value)}
+      />
+    </label>
   );
 }
-
-DebouncedInput.defaultProps = {
-  placeholder: "",
-  className: null,
-};

@@ -4,7 +4,6 @@ import React, { useReducer } from "react";
 import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
-import Label from "../Label";
 import Layout from "../Layout";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
@@ -190,32 +189,26 @@ export default function WatchlistEntityIndexPage({
           />
           <Fieldset className={filtersCss}>
             <legend>Filter &amp; Sort</legend>
-            <Label htmlFor="watchlist-entity-name-input">
-              Name
-              <DebouncedInput
-                id="watchlist-entity-name-input"
-                placeholder="Enter all or part of a name"
-                onChange={(value) =>
-                  dispatch({ type: ActionType.FILTER_NAME, value })
-                }
-              />
-            </Label>
-            <Label htmlFor="watchlist-entity-sort-input">
-              Order By
-              <SelectInput
-                value={state.sortValue}
-                id="watchlist-entity-sort-input"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.SORT,
-                    value: e.target.value as SortValue,
-                  })
-                }
-              >
-                <option value="name">Name</option>
-                <option value="reviews">Review Count</option>
-              </SelectInput>
-            </Label>
+            <DebouncedInput
+              label="Name"
+              placeholder="Enter all or part of a name"
+              onChange={(value) =>
+                dispatch({ type: ActionType.FILTER_NAME, value })
+              }
+            />
+            <SelectInput
+              value={state.sortValue}
+              label="Order By"
+              onChange={(e) =>
+                dispatch({
+                  type: ActionType.SORT,
+                  value: e.target.value as SortValue,
+                })
+              }
+            >
+              <option value="name">Name</option>
+              <option value="reviews">Review Count</option>
+            </SelectInput>
           </Fieldset>
         </div>
         <div className={rightCss}>
@@ -234,7 +227,7 @@ interface PageContext {
   entityType: EntityType;
 }
 
-interface WatchlistEntity {
+export interface WatchlistEntity {
   name: string;
   slug: string;
   titleCount: number;

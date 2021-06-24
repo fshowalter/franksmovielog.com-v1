@@ -1,18 +1,6 @@
-import { IGatsbyImageData } from "gatsby-plugin-image";
 import applyFilters from "../../utils/apply-filters";
 import { sortNumberDesc, sortStringAsc } from "../../utils/sort-utils";
-
-interface WatchlistEntity {
-  name: string;
-  slug: string;
-  titleCount: number;
-  reviewCount: number;
-  avatar: null | {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
+import type { WatchlistEntity } from "./WatchlistEntityIndexPage";
 
 export enum ActionType {
   FILTER_NAME = "FILTER_NAME",

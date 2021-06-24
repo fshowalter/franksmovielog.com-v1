@@ -1,32 +1,23 @@
 import React, { ChangeEvent } from "react";
-import { selectInputCss } from "./SelectInput.module.scss";
+import { labelCss, selectInputCss } from "./SelectInput.module.scss";
 
 export default function SelectInput({
+  label,
   value,
-  id,
-  className,
   onChange,
   children,
 }: {
+  label: string;
   value?: string;
-  id: string;
-  className?: string;
   children: React.ReactNode;
   onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
 }): JSX.Element {
   return (
-    <select
-      value={value}
-      id={id}
-      className={`${selectInputCss} ${className || ""}`}
-      onChange={onChange}
-    >
-      {children}
-    </select>
+    <label className={labelCss}>
+      {label}
+      <select value={value} className={selectInputCss} onChange={onChange}>
+        {children}
+      </select>
+    </label>
   );
 }
-
-SelectInput.defaultProps = {
-  value: undefined,
-  className: undefined,
-};

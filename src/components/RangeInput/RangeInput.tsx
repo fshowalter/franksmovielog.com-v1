@@ -3,7 +3,9 @@ import ReactSlider from "react-slider";
 import {
   containerCss,
   draggingCss,
-  rightCss,
+  fromCss,
+  inputLabelCss,
+  labelCss,
   sliderCss,
   thumbCss,
   toCss,
@@ -15,14 +17,11 @@ import {
  * Renders a dual-handle range slider.
  */
 export default function RangeFilter({
-  id,
   label,
   min,
   max,
   onChange,
 }: {
-  /** A unique id for this form control. */
-  id: string;
   /** The label text. */
   label: string;
   /** The lowest number in the range. */
@@ -93,8 +92,8 @@ export default function RangeFilter({
   };
 
   return (
-    <div id={id} className={containerCss}>
-      <div id={`${id}-label`}>{label}</div>
+    <fieldset className={containerCss}>
+      <legend className={labelCss}>{label}</legend>
       <ReactSlider
         value={state}
         max={max}
@@ -106,27 +105,30 @@ export default function RangeFilter({
         thumbActiveClassName={draggingCss}
         className={sliderCss}
       />
-      <input
-        type="number"
-        min={min}
-        max={max}
-        value={state[0]}
-        step="1"
-        aria-labelledby={`${id}-label`}
-        onChange={(e) => handleMinChange(e.target.value)}
-        className={yearInputCss}
-      />
-      <span className={toCss}> to </span>
-      <input
-        type="number"
-        value={state[1]}
-        min={min}
-        max={max}
-        aria-labelledby={`${id}-label`}
-        onChange={(e) => handleMaxChange(e.target.value)}
-        step="1"
-        className={`${yearInputCss} ${rightCss}`}
-      />
-    </div>
+      <label className={inputLabelCss}>
+        <span className={fromCss}>From </span>
+        <input
+          type="number"
+          min={min}
+          max={max}
+          value={state[0]}
+          step="1"
+          onChange={(e) => handleMinChange(e.target.value)}
+          className={yearInputCss}
+        />
+      </label>
+      <label className={inputLabelCss}>
+        <span className={toCss}>To </span>
+        <input
+          type="number"
+          value={state[1]}
+          min={min}
+          max={max}
+          onChange={(e) => handleMaxChange(e.target.value)}
+          step="1"
+          className={`${yearInputCss}`}
+        />
+      </label>
+    </fieldset>
   );
 }

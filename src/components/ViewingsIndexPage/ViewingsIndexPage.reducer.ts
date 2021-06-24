@@ -6,25 +6,17 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
+import type { Viewing } from "./ViewingsIndexPage";
 
-interface Viewing {
-  title: string;
-  year: number;
-  releaseDate: string;
-  viewingDate: string;
-  sequence: number;
-  venue: string;
-  sortTitle: string;
-  slug: string | null;
-}
+export type SortType =
+  | "viewing-date-desc"
+  | "viewing-date-asc"
+  | "release-date-desc"
+  | "release-date-asc"
+  | "title";
 
-/**
- * Sorts a given collection of viewings using the given sort function key.
- * @param viewings The collection to sort.
- * @param sortOrder The sort function key.
- */
-function sortViewings(viewings: Viewing[], sortOrder: string) {
-  const sortMap: Record<string, (a: Viewing, b: Viewing) => number> = {
+function sortViewings(viewings: Viewing[], sortOrder: SortType) {
+  const sortMap: Record<SortType, (a: Viewing, b: Viewing) => number> = {
     "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
     "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
@@ -66,7 +58,7 @@ type State = {
   /** The maximum year for the release date filter. */
   maxYear: number;
   /** The active sort value. */
-  sortValue: string;
+  sortValue: SortType;
 };
 
 /**
@@ -117,7 +109,7 @@ interface FilterReleaseYearAction {
 interface SortAction {
   type: ActionTypes.SORT;
   /** The sorter to apply. */
-  value: string;
+  value: SortType;
 }
 
 type Action =

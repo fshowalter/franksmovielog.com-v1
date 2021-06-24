@@ -7342,24 +7342,20 @@ exports[`/watchlist/collections/ renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-entity-name-input"
             >
               Name
               <input
-                class="inputCss "
-                id="watchlist-entity-name-input"
+                class="inputCss"
                 placeholder="Enter all or part of a name"
                 type="text"
               />
             </label>
             <label
               class="labelCss"
-              for="watchlist-entity-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-entity-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="name"
@@ -11078,24 +11074,20 @@ exports[`/watchlist/directors/ renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-entity-name-input"
             >
               Name
               <input
-                class="inputCss "
-                id="watchlist-entity-name-input"
+                class="inputCss"
                 placeholder="Enter all or part of a name"
                 type="text"
               />
             </label>
             <label
               class="labelCss"
-              for="watchlist-entity-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-entity-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="name"
@@ -14814,24 +14806,20 @@ exports[`/watchlist/performers/ renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-entity-name-input"
             >
               Name
               <input
-                class="inputCss "
-                id="watchlist-entity-name-input"
+                class="inputCss"
                 placeholder="Enter all or part of a name"
                 type="text"
               />
             </label>
             <label
               class="labelCss"
-              for="watchlist-entity-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-entity-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="name"
@@ -18550,24 +18538,20 @@ exports[`/watchlist/writers/ renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-entity-name-input"
             >
               Name
               <input
-                class="inputCss "
-                id="watchlist-entity-name-input"
+                class="inputCss"
                 placeholder="Enter all or part of a name"
                 type="text"
               />
             </label>
             <label
               class="labelCss"
-              for="watchlist-entity-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-entity-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="name"

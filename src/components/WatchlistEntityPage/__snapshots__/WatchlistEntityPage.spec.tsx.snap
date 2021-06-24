@@ -221,25 +221,22 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-director-title-input"
             >
               Title
               <input
-                class="inputCss "
-                id="watchlist-director-title-input"
+                class="inputCss"
                 placeholder="Enter all or part of a title"
                 type="text"
               />
             </label>
-            <div
+            <fieldset
               class="containerCss"
-              id="watchlist-director-release-year-input"
             >
-              <div
-                id="watchlist-director-release-year-input-label"
+              <legend
+                class="labelCss"
               >
                 Release Year
-              </div>
+              </legend>
               <div
                 class="sliderCss"
                 style="position: relative;"
@@ -277,38 +274,47 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                   tabindex="0"
                 />
               </div>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="1974"
-              />
-              <span
-                class="toCss"
+              <label
+                class="inputLabel"
               >
-                 to 
-              </span>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss rightCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="2010"
-              />
-            </div>
+                <span
+                  class="fromCss"
+                >
+                  From 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="1974"
+                />
+              </label>
+              <label
+                class="inputLabel"
+              >
+                <span
+                  class="toCss"
+                >
+                  To 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="2010"
+                />
+              </label>
+            </fieldset>
             <label
               class="labelCss"
-              for="watchlist-director-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-director-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="release-date-asc"
@@ -5832,25 +5838,22 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-director-title-input"
             >
               Title
               <input
-                class="inputCss "
-                id="watchlist-director-title-input"
+                class="inputCss"
                 placeholder="Enter all or part of a title"
                 type="text"
               />
             </label>
-            <div
+            <fieldset
               class="containerCss"
-              id="watchlist-director-release-year-input"
             >
-              <div
-                id="watchlist-director-release-year-input-label"
+              <legend
+                class="labelCss"
               >
                 Release Year
-              </div>
+              </legend>
               <div
                 class="sliderCss"
                 style="position: relative;"
@@ -5888,38 +5891,47 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                   tabindex="0"
                 />
               </div>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="1974"
-              />
-              <span
-                class="toCss"
+              <label
+                class="inputLabel"
               >
-                 to 
-              </span>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss rightCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="2010"
-              />
-            </div>
+                <span
+                  class="fromCss"
+                >
+                  From 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="1974"
+                />
+              </label>
+              <label
+                class="inputLabel"
+              >
+                <span
+                  class="toCss"
+                >
+                  To 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="2010"
+                />
+              </label>
+            </fieldset>
             <label
               class="labelCss"
-              for="watchlist-director-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-director-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="release-date-asc"
@@ -7413,25 +7425,22 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-director-title-input"
             >
               Title
               <input
-                class="inputCss "
-                id="watchlist-director-title-input"
+                class="inputCss"
                 placeholder="Enter all or part of a title"
                 type="text"
               />
             </label>
-            <div
+            <fieldset
               class="containerCss"
-              id="watchlist-director-release-year-input"
             >
-              <div
-                id="watchlist-director-release-year-input-label"
+              <legend
+                class="labelCss"
               >
                 Release Year
-              </div>
+              </legend>
               <div
                 class="sliderCss"
                 style="position: relative;"
@@ -7469,38 +7478,47 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                   tabindex="0"
                 />
               </div>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="1974"
-              />
-              <span
-                class="toCss"
+              <label
+                class="inputLabel"
               >
-                 to 
-              </span>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss rightCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="2010"
-              />
-            </div>
+                <span
+                  class="fromCss"
+                >
+                  From 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="1974"
+                />
+              </label>
+              <label
+                class="inputLabel"
+              >
+                <span
+                  class="toCss"
+                >
+                  To 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="2010"
+                />
+              </label>
+            </fieldset>
             <label
               class="labelCss"
-              for="watchlist-director-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-director-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="release-date-asc"
@@ -8994,25 +9012,22 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="watchlist-director-title-input"
             >
               Title
               <input
-                class="inputCss "
-                id="watchlist-director-title-input"
+                class="inputCss"
                 placeholder="Enter all or part of a title"
                 type="text"
               />
             </label>
-            <div
+            <fieldset
               class="containerCss"
-              id="watchlist-director-release-year-input"
             >
-              <div
-                id="watchlist-director-release-year-input-label"
+              <legend
+                class="labelCss"
               >
                 Release Year
-              </div>
+              </legend>
               <div
                 class="sliderCss"
                 style="position: relative;"
@@ -9050,38 +9065,47 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                   tabindex="0"
                 />
               </div>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="1974"
-              />
-              <span
-                class="toCss"
+              <label
+                class="inputLabel"
               >
-                 to 
-              </span>
-              <input
-                aria-labelledby="watchlist-director-release-year-input-label"
-                class="yearInputCss rightCss"
-                max="2010"
-                min="1974"
-                step="1"
-                type="number"
-                value="2010"
-              />
-            </div>
+                <span
+                  class="fromCss"
+                >
+                  From 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="1974"
+                />
+              </label>
+              <label
+                class="inputLabel"
+              >
+                <span
+                  class="toCss"
+                >
+                  To 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2010"
+                  min="1974"
+                  step="1"
+                  type="number"
+                  value="2010"
+                />
+              </label>
+            </fieldset>
             <label
               class="labelCss"
-              for="watchlist-director-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="watchlist-director-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="release-date-asc"

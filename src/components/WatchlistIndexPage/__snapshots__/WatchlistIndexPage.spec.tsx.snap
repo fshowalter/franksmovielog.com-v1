@@ -23256,24 +23256,20 @@ exports[`/watchlist renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="to_watch-title-input"
             >
               Title
               <input
-                class="inputCss "
-                id="to_watch-title-input"
+                class="inputCss"
                 placeholder="Enter all or part of a title"
                 type="text"
               />
             </label>
             <label
               class="labelCss"
-              for="to_watch-director-input"
             >
               Director
               <select
-                class="selectInputCss "
-                id="to_watch-director-input"
+                class="selectInputCss"
               >
                 <option
                   value="All"
@@ -23534,12 +23530,10 @@ exports[`/watchlist renders 1`] = `
             </label>
             <label
               class="labelCss"
-              for="to_watch-performer-input"
             >
               Performer
               <select
-                class="selectInputCss "
-                id="to_watch-performer-input"
+                class="selectInputCss"
               >
                 <option
                   value="All"
@@ -23700,12 +23694,10 @@ exports[`/watchlist renders 1`] = `
             </label>
             <label
               class="labelCss"
-              for="to_watch-writer-input"
             >
               Writer
               <select
-                class="selectInputCss "
-                id="to_watch-writer-input"
+                class="selectInputCss"
               >
                 <option
                   value="All"
@@ -23751,12 +23743,10 @@ exports[`/watchlist renders 1`] = `
             </label>
             <label
               class="labelCss"
-              for="to_watch-collection-input"
             >
               Collection
               <select
-                class="selectInputCss "
-                id="to_watch-collection-input"
+                class="selectInputCss"
               >
                 <option
                   value="All"
@@ -23800,15 +23790,14 @@ exports[`/watchlist renders 1`] = `
                 </option>
               </select>
             </label>
-            <div
+            <fieldset
               class="containerCss"
-              id="to_watch-release-year-input"
             >
-              <div
-                id="to_watch-release-year-input-label"
+              <legend
+                class="labelCss"
               >
                 Release Year
-              </div>
+              </legend>
               <div
                 class="sliderCss"
                 style="position: relative;"
@@ -23846,38 +23835,47 @@ exports[`/watchlist renders 1`] = `
                   tabindex="0"
                 />
               </div>
-              <input
-                aria-labelledby="to_watch-release-year-input-label"
-                class="yearInputCss"
-                max="2020"
-                min="1928"
-                step="1"
-                type="number"
-                value="1928"
-              />
-              <span
-                class="toCss"
+              <label
+                class="inputLabel"
               >
-                 to 
-              </span>
-              <input
-                aria-labelledby="to_watch-release-year-input-label"
-                class="yearInputCss rightCss"
-                max="2020"
-                min="1928"
-                step="1"
-                type="number"
-                value="2020"
-              />
-            </div>
+                <span
+                  class="fromCss"
+                >
+                  From 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2020"
+                  min="1928"
+                  step="1"
+                  type="number"
+                  value="1928"
+                />
+              </label>
+              <label
+                class="inputLabel"
+              >
+                <span
+                  class="toCss"
+                >
+                  To 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2020"
+                  min="1928"
+                  step="1"
+                  type="number"
+                  value="2020"
+                />
+              </label>
+            </fieldset>
             <label
               class="labelCss"
-              for="to_watch-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="to_watch-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="release-date-asc"

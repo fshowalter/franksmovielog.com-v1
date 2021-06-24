@@ -50251,25 +50251,22 @@ exports[`/reviews renders 1`] = `
             </legend>
             <label
               class="labelCss"
-              for="reviews-title-input"
             >
               Title
               <input
-                class="inputCss "
-                id="reviews-title-input"
+                class="inputCss"
                 placeholder="Enter all or part of a title"
                 type="text"
               />
             </label>
-            <div
+            <fieldset
               class="containerCss"
-              id="reviews-release-year-input"
             >
-              <div
-                id="reviews-release-year-input-label"
+              <legend
+                class="labelCss"
               >
                 Release Year
-              </div>
+              </legend>
               <div
                 class="sliderCss"
                 style="position: relative;"
@@ -50307,38 +50304,47 @@ exports[`/reviews renders 1`] = `
                   tabindex="0"
                 />
               </div>
-              <input
-                aria-labelledby="reviews-release-year-input-label"
-                class="yearInputCss"
-                max="2021"
-                min="1928"
-                step="1"
-                type="number"
-                value="1928"
-              />
-              <span
-                class="toCss"
+              <label
+                class="inputLabel"
               >
-                 to 
-              </span>
-              <input
-                aria-labelledby="reviews-release-year-input-label"
-                class="yearInputCss rightCss"
-                max="2021"
-                min="1928"
-                step="1"
-                type="number"
-                value="2021"
-              />
-            </div>
+                <span
+                  class="fromCss"
+                >
+                  From 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2021"
+                  min="1928"
+                  step="1"
+                  type="number"
+                  value="1928"
+                />
+              </label>
+              <label
+                class="inputLabel"
+              >
+                <span
+                  class="toCss"
+                >
+                  To 
+                </span>
+                <input
+                  class="yearInputCss"
+                  max="2021"
+                  min="1928"
+                  step="1"
+                  type="number"
+                  value="2021"
+                />
+              </label>
+            </fieldset>
             <label
               class="labelCss"
-              for="reviews-sort-input"
             >
               Order By
               <select
-                class="selectInputCss "
-                id="reviews-sort-input"
+                class="selectInputCss"
               >
                 <option
                   value="title"
