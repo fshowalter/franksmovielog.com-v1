@@ -5,10 +5,10 @@ import toSentenceArray from "../../utils/to-sentence-array";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
 import Layout from "../Layout";
-import RelatedMovies from "../RelatedMovies";
 import RenderedMarkdown from "../RenderedMarkdown";
 import Seo from "../Seo";
 import WatchlistLinks from "../WatchlistLinks";
+import RelatedMovies from "./RelatedMovies";
 import {
   akaContainerCss,
   akaListCss,
