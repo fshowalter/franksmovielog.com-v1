@@ -5,7 +5,6 @@ import toSentenceArray from "../../utils/to-sentence-array";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
 import Layout from "../Layout";
-import { PaginationWithLinks } from "../Pagination";
 import RenderedMarkdown from "../RenderedMarkdown";
 import Seo from "../Seo";
 import WatchlistLinks from "../WatchlistLinks";
@@ -27,10 +26,8 @@ import {
   watchlistLinksCss,
   wideCss,
 } from "./HomePage.module.scss";
+import Pagination from "./Pagination";
 
-/**
- * Renders the home (index) page.
- */
 export default function HomePage({
   pageContext,
   data,
@@ -129,7 +126,7 @@ export default function HomePage({
             );
           })}
         </ol>
-        <PaginationWithLinks
+        <Pagination
           className={paginationCss}
           currentPage={pageContext.currentPage}
           urlRoot="/"
