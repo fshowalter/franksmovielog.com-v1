@@ -1,15 +1,26 @@
 .buttonCss {
+  align-items: center;
   background-color: transparent;
   background-color: #77b5e8;
-  border: solid 1px var(--color-link);
+  border: solid 1px darken(#77b5e8, 10);
   border-radius: 4px;
   color: #fff;
+  display: flex;
+  flex-direction: row;
   font-size: clamp(14px, 5vw, 15px);
   font-weight: bold;
+  gap: 1ch;
+  justify-content: center;
   margin-top: 1rem;
   padding: calc(var(--step--2) / 2) var(--step--2);
+  white-space: nowrap;
 
   &:hover {
     cursor: pointer;
+  }
+
+  svg {
+    height: 1rem;
+    width: 1rem;
   }
 }
