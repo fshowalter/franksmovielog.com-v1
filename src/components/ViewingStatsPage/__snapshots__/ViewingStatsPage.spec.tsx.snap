@@ -370,12 +370,16 @@ exports[`/viewings/stats/ renders all-time 1`] = `
                 <td
                   class="fillCellCss"
                 >
-                  The Cabin in the Woods 
-                  <span
-                    class="titleYearCss"
+                  <a
+                    href="/reviews/the-cabin-in-the-woods-2011"
                   >
-                    2011
-                  </span>
+                    The Cabin in the Woods 
+                    <span
+                      class="titleYearCss"
+                    >
+                      2011
+                    </span>
+                  </a>
                 </td>
                 <td
                   class="rightCellCss"
@@ -444,12 +448,16 @@ exports[`/viewings/stats/ renders all-time 1`] = `
                 <td
                   class="fillCellCss"
                 >
-                  Avengers: Infinity War 
-                  <span
-                    class="titleYearCss"
+                  <a
+                    href="/reviews/avengers-infinity-war-2018"
                   >
-                    2018
-                  </span>
+                    Avengers: Infinity War 
+                    <span
+                      class="titleYearCss"
+                    >
+                      2018
+                    </span>
+                  </a>
                 </td>
                 <td
                   class="rightCellCss"
@@ -10567,12 +10575,16 @@ exports[`/viewings/stats/{year} renders for current year 1`] = `
                 <td
                   class="fillCellCss"
                 >
-                  The Cabin in the Woods 
-                  <span
-                    class="titleYearCss"
+                  <a
+                    href="/reviews/the-cabin-in-the-woods-2011"
                   >
-                    2011
-                  </span>
+                    The Cabin in the Woods 
+                    <span
+                      class="titleYearCss"
+                    >
+                      2011
+                    </span>
+                  </a>
                 </td>
                 <td
                   class="rightCellCss"
@@ -10641,12 +10653,16 @@ exports[`/viewings/stats/{year} renders for current year 1`] = `
                 <td
                   class="fillCellCss"
                 >
-                  Avengers: Infinity War 
-                  <span
-                    class="titleYearCss"
+                  <a
+                    href="/reviews/avengers-infinity-war-2018"
                   >
-                    2018
-                  </span>
+                    Avengers: Infinity War 
+                    <span
+                      class="titleYearCss"
+                    >
+                      2018
+                    </span>
+                  </a>
                 </td>
                 <td
                   class="rightCellCss"
@@ -20764,12 +20780,16 @@ exports[`/viewings/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="fillCellCss"
                 >
-                  The Cabin in the Woods 
-                  <span
-                    class="titleYearCss"
+                  <a
+                    href="/reviews/the-cabin-in-the-woods-2011"
                   >
-                    2011
-                  </span>
+                    The Cabin in the Woods 
+                    <span
+                      class="titleYearCss"
+                    >
+                      2011
+                    </span>
+                  </a>
                 </td>
                 <td
                   class="rightCellCss"
@@ -20838,12 +20858,16 @@ exports[`/viewings/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="fillCellCss"
                 >
-                  Avengers: Infinity War 
-                  <span
-                    class="titleYearCss"
+                  <a
+                    href="/reviews/avengers-infinity-war-2018"
                   >
-                    2018
-                  </span>
+                    Avengers: Infinity War 
+                    <span
+                      class="titleYearCss"
+                    >
+                      2018
+                    </span>
+                  </a>
                 </td>
                 <td
                   class="rightCellCss"

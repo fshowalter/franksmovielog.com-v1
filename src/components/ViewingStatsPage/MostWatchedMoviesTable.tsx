@@ -19,15 +19,22 @@ interface MovieWithViewings {
   title: string;
   year: number;
   viewingCount: number;
+  slug: string | null;
   viewings: Viewing[];
 }
 
 function movieTitle(movie: MovieWithViewings): JSX.Element {
-  return (
+  const title = (
     <>
       {movie.title} <span className={titleYearCss}>{movie.year}</span>
     </>
   );
+
+  if (movie.slug) {
+    return <Link to={`/reviews/${movie.slug}`}>{title}</Link>;
+  }
+
+  return title;
 }
 
 function ViewingDetail({ viewing }: { viewing: Viewing }): JSX.Element {

@@ -752,6 +752,26 @@ const MostWatchedMovie = {
     title: "String!",
     year: "Int!",
     viewings: "[MostWatchedMovieViewing!]!",
+    slug: {
+      type: "String",
+      resolve: async (source, args, context) => {
+        const reviewedMovie = await context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: REVIEWED_MOVIES_JSON,
+          firstOnly: true,
+        });
+
+        if (!reviewedMovie) {
+          return null;
+        }
+
+        return reviewedMovie.slug;
+      },
+    },
   },
 };
 

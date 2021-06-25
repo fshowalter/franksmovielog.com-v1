@@ -196,6 +196,7 @@ interface PageQueryResult {
       imdbId: string;
       title: string;
       year: number;
+      slug: string | null;
       viewings: {
         sequence: number;
         prettyDate: string;
@@ -245,6 +246,7 @@ export const pageQuery = graphql`
         imdbId: imdb_id
         title
         year
+        slug
         viewings {
           sequence
           slug

@@ -146,6 +146,7 @@ export default {
         imdbId: "tt1259521",
         title: "The Cabin in the Woods",
         year: 2011,
+        slug: "the-cabin-in-the-woods-2011",
         viewings: [
           {
             sequence: 815,
@@ -166,6 +167,7 @@ export default {
         imdbId: "tt4154756",
         title: "Avengers: Infinity War",
         year: 2018,
+        slug: "avengers-infinity-war-2018",
         viewings: [
           {
             sequence: 824,
