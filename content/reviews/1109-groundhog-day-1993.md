@@ -6,6 +6,6 @@ title: Groundhog Day (1993)
 grade: B+
 slug: groundhog-day-1993
 venue: 4k UHD Blu-ray
-venue_notes:
+venue_notes: 2018 | Universal Sony Pictures Home Entertainment 
 ---
 

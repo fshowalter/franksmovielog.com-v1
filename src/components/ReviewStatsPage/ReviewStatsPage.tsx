@@ -109,7 +109,9 @@ export default function ReviewStatsPage({
           nameHeaderText="Decade"
           valueHeaderText="Grade"
           renderName={(item) => item.decade}
-          renderValue={(item) => item.averageGradeValue}
+          renderValue={(item) =>
+            item.averageGradeValue.toFixed(2) as unknown as number
+          }
         />
         <HighestRatedPersonsTable
           heading="Highest Rated Directors"

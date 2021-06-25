@@ -7,6 +7,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: {
+          patterns: [`*.fixtures.ts`],
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-sitemap",
       options: {
         createLinkInHead: false,

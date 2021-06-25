@@ -593,7 +593,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 63.19202593971417%;"
+                    style="--bar-percent: 63.227513227513235%;"
                   >
                      
                   </div>
@@ -601,7 +601,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.391818181818181
+                  2.39
                 </td>
               </tr>
               <tr
@@ -617,7 +617,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 75.16512549537647%;"
+                    style="--bar-percent: 75.13227513227513%;"
                   >
                      
                   </div>
@@ -625,7 +625,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.8449999999999993
+                  2.84
                 </td>
               </tr>
               <tr
@@ -641,7 +641,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 71.90664905328049%;"
+                    style="--bar-percent: 71.95767195767196%;"
                   >
                      
                   </div>
@@ -649,7 +649,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.7216666666666662
+                  2.72
                 </td>
               </tr>
               <tr
@@ -665,7 +665,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 91.57199471598415%;"
+                    style="--bar-percent: 91.79894179894181%;"
                   >
                      
                   </div>
@@ -673,7 +673,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.4659999999999997
+                  3.47
                 </td>
               </tr>
               <tr
@@ -689,7 +689,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 77.76309995596654%;"
+                    style="--bar-percent: 77.77777777777779%;"
                   >
                      
                   </div>
@@ -697,7 +697,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.9433333333333334
+                  2.94
                 </td>
               </tr>
               <tr
@@ -713,7 +713,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 84.03987030142908%;"
+                    style="--bar-percent: 84.12698412698414%;"
                   >
                      
                   </div>
@@ -721,7 +721,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.1809090909090902
+                  3.18
                 </td>
               </tr>
               <tr
@@ -745,7 +745,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.7849999999999997
+                  3.78
                 </td>
               </tr>
               <tr
@@ -761,7 +761,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 71.7116437063597%;"
+                    style="--bar-percent: 71.6931216931217%;"
                   >
                      
                   </div>
@@ -769,7 +769,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.7142857142857144
+                  2.71
                 </td>
               </tr>
               <tr
@@ -785,7 +785,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 90.9291061206517%;"
+                    style="--bar-percent: 91.00529100529101%;"
                   >
                      
                   </div>
@@ -793,7 +793,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.4416666666666664
+                  3.44
                 </td>
               </tr>
               <tr
@@ -809,7 +809,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 95.61335580558466%;"
+                    style="--bar-percent: 95.76719576719577%;"
                   >
                      
                   </div>
@@ -817,7 +817,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.618965517241379
+                  3.62
                 </td>
               </tr>
               <tr
@@ -833,7 +833,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 59.37912813738442%;"
+                    style="--bar-percent: 59.523809523809526%;"
                   >
                      
                   </div>
@@ -841,7 +841,7 @@ exports[`/reviews/stats/ renders all-time 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.2475
+                  2.25
                 </td>
               </tr>
             </tbody>
@@ -9903,7 +9903,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 63.19202593971417%;"
+                    style="--bar-percent: 63.227513227513235%;"
                   >
                      
                   </div>
@@ -9911,7 +9911,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.391818181818181
+                  2.39
                 </td>
               </tr>
               <tr
@@ -9927,7 +9927,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 75.16512549537647%;"
+                    style="--bar-percent: 75.13227513227513%;"
                   >
                      
                   </div>
@@ -9935,7 +9935,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.8449999999999993
+                  2.84
                 </td>
               </tr>
               <tr
@@ -9951,7 +9951,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 71.90664905328049%;"
+                    style="--bar-percent: 71.95767195767196%;"
                   >
                      
                   </div>
@@ -9959,7 +9959,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.7216666666666662
+                  2.72
                 </td>
               </tr>
               <tr
@@ -9975,7 +9975,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 91.57199471598415%;"
+                    style="--bar-percent: 91.79894179894181%;"
                   >
                      
                   </div>
@@ -9983,7 +9983,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.4659999999999997
+                  3.47
                 </td>
               </tr>
               <tr
@@ -9999,7 +9999,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 77.76309995596654%;"
+                    style="--bar-percent: 77.77777777777779%;"
                   >
                      
                   </div>
@@ -10007,7 +10007,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.9433333333333334
+                  2.94
                 </td>
               </tr>
               <tr
@@ -10023,7 +10023,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 84.03987030142908%;"
+                    style="--bar-percent: 84.12698412698414%;"
                   >
                      
                   </div>
@@ -10031,7 +10031,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.1809090909090902
+                  3.18
                 </td>
               </tr>
               <tr
@@ -10055,7 +10055,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.7849999999999997
+                  3.78
                 </td>
               </tr>
               <tr
@@ -10071,7 +10071,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 71.7116437063597%;"
+                    style="--bar-percent: 71.6931216931217%;"
                   >
                      
                   </div>
@@ -10079,7 +10079,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.7142857142857144
+                  2.71
                 </td>
               </tr>
               <tr
@@ -10095,7 +10095,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 90.9291061206517%;"
+                    style="--bar-percent: 91.00529100529101%;"
                   >
                      
                   </div>
@@ -10103,7 +10103,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.4416666666666664
+                  3.44
                 </td>
               </tr>
               <tr
@@ -10119,7 +10119,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 95.61335580558466%;"
+                    style="--bar-percent: 95.76719576719577%;"
                   >
                      
                   </div>
@@ -10127,7 +10127,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.618965517241379
+                  3.62
                 </td>
               </tr>
               <tr
@@ -10143,7 +10143,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 59.37912813738442%;"
+                    style="--bar-percent: 59.523809523809526%;"
                   >
                      
                   </div>
@@ -10151,7 +10151,7 @@ exports[`/reviews/stats/{year} renders for current year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.2475
+                  2.25
                 </td>
               </tr>
             </tbody>
@@ -19213,7 +19213,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 63.19202593971417%;"
+                    style="--bar-percent: 63.227513227513235%;"
                   >
                      
                   </div>
@@ -19221,7 +19221,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.391818181818181
+                  2.39
                 </td>
               </tr>
               <tr
@@ -19237,7 +19237,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 75.16512549537647%;"
+                    style="--bar-percent: 75.13227513227513%;"
                   >
                      
                   </div>
@@ -19245,7 +19245,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.8449999999999993
+                  2.84
                 </td>
               </tr>
               <tr
@@ -19261,7 +19261,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 71.90664905328049%;"
+                    style="--bar-percent: 71.95767195767196%;"
                   >
                      
                   </div>
@@ -19269,7 +19269,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.7216666666666662
+                  2.72
                 </td>
               </tr>
               <tr
@@ -19285,7 +19285,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 91.57199471598415%;"
+                    style="--bar-percent: 91.79894179894181%;"
                   >
                      
                   </div>
@@ -19293,7 +19293,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.4659999999999997
+                  3.47
                 </td>
               </tr>
               <tr
@@ -19309,7 +19309,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 77.76309995596654%;"
+                    style="--bar-percent: 77.77777777777779%;"
                   >
                      
                   </div>
@@ -19317,7 +19317,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.9433333333333334
+                  2.94
                 </td>
               </tr>
               <tr
@@ -19333,7 +19333,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 84.03987030142908%;"
+                    style="--bar-percent: 84.12698412698414%;"
                   >
                      
                   </div>
@@ -19341,7 +19341,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.1809090909090902
+                  3.18
                 </td>
               </tr>
               <tr
@@ -19365,7 +19365,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.7849999999999997
+                  3.78
                 </td>
               </tr>
               <tr
@@ -19381,7 +19381,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 71.7116437063597%;"
+                    style="--bar-percent: 71.6931216931217%;"
                   >
                      
                   </div>
@@ -19389,7 +19389,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.7142857142857144
+                  2.71
                 </td>
               </tr>
               <tr
@@ -19405,7 +19405,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 90.9291061206517%;"
+                    style="--bar-percent: 91.00529100529101%;"
                   >
                      
                   </div>
@@ -19413,7 +19413,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.4416666666666664
+                  3.44
                 </td>
               </tr>
               <tr
@@ -19429,7 +19429,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 95.61335580558466%;"
+                    style="--bar-percent: 95.76719576719577%;"
                   >
                      
                   </div>
@@ -19437,7 +19437,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  3.618965517241379
+                  3.62
                 </td>
               </tr>
               <tr
@@ -19453,7 +19453,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 >
                   <div
                     class="barCss"
-                    style="--bar-percent: 59.37912813738442%;"
+                    style="--bar-percent: 59.523809523809526%;"
                   >
                      
                   </div>
@@ -19461,7 +19461,7 @@ exports[`/reviews/stats/{year} renders for legacy year 1`] = `
                 <td
                   class="rightCellCss"
                 >
-                  2.2475
+                  2.25
                 </td>
               </tr>
             </tbody>
