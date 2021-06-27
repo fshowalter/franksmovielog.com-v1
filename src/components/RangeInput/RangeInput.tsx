@@ -108,9 +108,11 @@ export default function RangeFilter({
       <label className={inputLabelCss}>
         <span className={fromCss}>From </span>
         <input
-          type="number"
-          min={min}
-          max={max}
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          minLength={4}
+          maxLength={4}
           value={state[0]}
           step="1"
           onChange={(e) => handleMinChange(e.target.value)}
@@ -120,10 +122,12 @@ export default function RangeFilter({
       <label className={inputLabelCss}>
         <span className={toCss}>To </span>
         <input
-          type="number"
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
           value={state[1]}
-          min={min}
-          max={max}
+          minLength={4}
+          maxLength={4}
           onChange={(e) => handleMaxChange(e.target.value)}
           step="1"
           className={`${yearInputCss}`}
