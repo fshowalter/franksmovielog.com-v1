@@ -25837,10 +25837,12 @@ exports[`/watchlist renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2020"
-                  min="1928"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="1928"
                 />
               </label>
@@ -25854,10 +25856,12 @@ exports[`/watchlist renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2020"
-                  min="1928"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="2020"
                 />
               </label>

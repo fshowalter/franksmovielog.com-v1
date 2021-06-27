@@ -284,10 +284,12 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="1974"
                 />
               </label>
@@ -301,10 +303,12 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="2010"
                 />
               </label>
@@ -5901,10 +5905,12 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="1974"
                 />
               </label>
@@ -5918,10 +5924,12 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="2010"
                 />
               </label>
@@ -7488,10 +7496,12 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="1974"
                 />
               </label>
@@ -7505,10 +7515,12 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="2010"
                 />
               </label>
@@ -9075,10 +9087,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="1974"
                 />
               </label>
@@ -9092,10 +9106,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                 </span>
                 <input
                   class="yearInputCss"
-                  max="2010"
-                  min="1974"
+                  inputmode="numeric"
+                  maxlength="4"
+                  minlength="4"
+                  pattern="[0-9]*"
                   step="1"
-                  type="number"
+                  type="text"
                   value="2010"
                 />
               </label>

@@ -6,6 +6,6 @@ title: The Human Tornado (1976)
 grade: C
 slug: the-human-tornado-1976
 venue: Blu-ray
-venue_notes:
+venue_notes: 2016 | Vinegar Syndrome
 ---
 
