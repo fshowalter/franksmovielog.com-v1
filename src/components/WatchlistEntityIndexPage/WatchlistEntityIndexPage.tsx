@@ -54,13 +54,19 @@ function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
   );
 }
 
-function ListItem({ entity }: { entity: WatchlistEntity }): JSX.Element {
+function ListItem({
+  entity,
+  slugPath,
+}: {
+  entity: WatchlistEntity;
+  slugPath: string;
+}): JSX.Element {
   if (entity.avatar) {
     return (
       <li className={listItemCss}>
         <Link
           className={listItemLinkCss}
-          to={`/watchlist/directors/${entity.slug}/`}
+          to={`/watchlist/${slugPath}/${entity.slug}/`}
         >
           {entity.avatar && (
             <GatsbyImage
@@ -71,10 +77,12 @@ function ListItem({ entity }: { entity: WatchlistEntity }): JSX.Element {
           )}
         </Link>
         <div className={listItemTitleCss}>
-          <Link to={`/watchlist/directors/${entity.slug}/`}>{entity.name}</Link>
+          <Link to={`/watchlist/${slugPath}/${entity.slug}/`}>
+            {entity.name}
+          </Link>
         </div>
         <Link
-          to={`/watchlist/directors/${entity.slug}/`}
+          to={`/watchlist/${slugPath}/${entity.slug}/`}
           className={progressRingCss}
         >
           <Progress entity={entity} />
@@ -214,7 +222,13 @@ export default function WatchlistEntityIndexPage({
         <div className={rightCss}>
           <ul data-testid="entity-list" className={listCss}>
             {state.filteredEntities.map((entity) => {
-              return <ListItem key={entity.slug} entity={entity} />;
+              return (
+                <ListItem
+                  key={entity.slug}
+                  entity={entity}
+                  slugPath={entityDetails.pluralName.toLowerCase()}
+                />
+              );
             })}
           </ul>
         </div>
