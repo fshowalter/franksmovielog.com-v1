@@ -9,16 +9,16 @@ venue: Blu-ray
 venue_notes:
 ---
 
-The opening got my hopes up. It picks up right from the tag ending Curse of Chucky. X returns as Andy who's now a young man suffering from post traumatic stress disorder following the events of the first three films. We meet him on a date that, of course, doesn't go well once she realizes his past. Andy returns to his isolated cabin. Weapons line the walls. He stars drinking, then opens a secret safe and removes a badly mangled Chucky who he's been keeping prisoner. Chucky cracks wise about his failed date and Andy begins torturing the demonic doll.
+The opening got my hopes up. Picking up from <span data-imdb-id="tt2230358">_Curse of Chucky_</span>'s post-credits tag, Alex Vincent returns as Andy, now an adult suffering from post-traumatic stress disorder. We meet him on a date that, of course, doesn’t go well. Andy returns to his isolated cabin. From a secret safe, he removes Chucky, now mangled and disfigured. Chucky cracks wise about the failed date and Andy tortures him with a blowtorch.
 
 <!-- end -->
 
-I loved this setup. The final showdown between Andy and Chucky. I was onboard. 
+I loved this setup. A final showdown between Andy and Chucky. I was on board.
 
-But then the film shifts. We rejoin X from Curse of Chucky, now in a criminal institution. No problem, I can roll with this. Curse was one of my favorite entries. Some plot happens and she's transferred to a lesser security prison. This proves to be the film's primary setting. An isolated concrete obliesk full of stark white hallways and snowy exteriors. I loved the snow. 
+But then the film shifts. We rejoin Fiona Dourif from _Curse of Chucky_, now in a criminal institution. No problem, I can roll with this. _Curse_ was one of my favorite entries. Her doctor transfers her to a lesser security prison. An isolated concrete fortress full of stark white hallways and snowy exteriors. I loved the snow.
 
-Anyway, Andy's forgotten as we get a story involving Chucky and the other inmates. He shows up in the finale as something of an afterthought. Not Scatman Caruthers bad, but headscratcher nonetheless. 
+But now the film meanders. We meet the other inmates and the chief doctor. Chucky shows up and stars offing inmates, framing Dourif’s character. Andy arrives for the finale as an afterthought. Not Scatman Crothers bad, but a head-scratcher.
 
-This one's an odd duck. There's a lot to like. In addition to the above highlights, Chucky gets the funniest line of the series, referring to another antagonist: "I'm not sure if I should kill him or just take notes!"
+This one proves an odd duck. The tone proves uneven, veering from antiseptic horror to black comedy. To wit, Chucky delivers the funniest line of the series when referring to another antagonist saying, “I’m not sure if I should kill him or just take notes!”
 
-But the opening tease of a final showdown between Andy and Chucky never materializes and the ending left me underwhelmed. Yes, it serves as a finale for the series, but it feels like the Andy bits were grafted onto an existing story. Said story isn't bad, but not what I wanted from the finale.
+But the opening tease of a final showdown between Andy and Chucky never materializes, and the ending underwhelmed. Yes, it serves as a series finale, but it feels like they grafted the Andy bits onto another story. Said story isn’t bad, but not the finale I wanted.

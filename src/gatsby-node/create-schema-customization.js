@@ -46,14 +46,14 @@ function sliceReviewedMoviesForTitle(movies, titleImdbId) {
     .filter(movieIsNotTitle);
 }
 
-function addReviewLinks(text, nodeModel) {
+async function addReviewLinks(text, nodeModel) {
   let result = text;
 
   const re = RegExp(/(<span data-imdb-id="(tt\d+)">)(.*?)(<\/span>)/, "g");
 
   const matches = [...text.matchAll(re)];
 
-  matches.forEach(async (match) => {
+  for (const match of matches) {
     const reviewedMovie = await nodeModel.runQuery({
       type: REVIEWED_MOVIES_JSON,
       firstOnly: true,
@@ -77,7 +77,7 @@ function addReviewLinks(text, nodeModel) {
         `<a href="/reviews/${reviewedMovie.slug}/">${match[3]}</a>`
       );
     }
-  });
+  }
 
   return result;
 }
