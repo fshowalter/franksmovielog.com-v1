@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { useLocation } from "@reach/router";
+import { useLocation } from "@gatsbyjs/reach-router"; // eslint-disable-line import/no-extraneous-dependencies
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -30,8 +29,8 @@ function Seo({
 }: {
   pageTitle: string;
   description: string;
-  image: string | null;
-  article: boolean;
+  image?: string | null;
+  article?: boolean;
 }): JSX.Element {
   const { pathname } = useLocation();
   const data: SeoQueryResult = useStaticQuery(graphql`
@@ -57,12 +56,10 @@ function Seo({
     <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
       <meta name="og:image" content={seo.image} />
-      {seo.url && <meta property="og:url" content={seo.url} />}
-      {(article ? true : null) && <meta property="og:type" content="article" />}
-      {seo.title && <meta property="og:title" content={seo.title} />}
-      {seo.description && (
-        <meta property="og:description" content={seo.description} />
-      )}
+      <meta property="og:url" content={seo.url} />
+      {article && <meta property="og:type" content="article" />}
+      <meta property="og:title" content={seo.title} />
+      <meta property="og:description" content={seo.description} />
     </Helmet>
   );
 }

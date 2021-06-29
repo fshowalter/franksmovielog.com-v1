@@ -1,0 +1,37 @@
+.tableIndexCellCss {
+  color: var(--color-text-secondary);
+  font-feature-settings: "tnum";
+  font-size: 0.875rem;
+  line-height: 31.5px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.detailsLabelCss {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.detailsListCss {
+  list-style-type: decimal;
+  margin: 0 1rem;
+
+  li {
+    padding: 1px 0;
+  }
+
+  li::marker {
+    color: var(--color-text-secondary);
+  }
+
+  li:nth-child(even) {
+    background-color: #fff;
+  }
+
+  li:nth-child(odd) {
+    background-color: #e9e7e061;
+  }
+}

@@ -10,7 +10,6 @@ import { Link } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 import ScreenReaderOnly from "../ScreenReaderOnly";
-import SearchIcon from "../SearchIcon";
 import {
   childrenCss,
   containerCss,
@@ -32,6 +31,7 @@ import {
   mastTitleCss,
   skipLinkCss,
 } from "./Layout.module.scss";
+import SearchIcon from "./SearchIcon";
 
 type NavItemProps = {
   to: string;

@@ -4,12 +4,15 @@ module.exports = async function createHomePages(graphql, reporter, createPage) {
   const query = await graphql(
     `
       {
-        reviews: allReviewedMoviesJson(
-          sort: { fields: [sequence], order: DESC }
+        reviews: allMarkdownRemark(
+          filter: { postType: { eq: "REVIEW" } }
+          sort: { fields: frontmatter___sequence, order: DESC }
         ) {
           nodes {
-            imdb_id
-            slug
+            frontmatter {
+              imdb_id
+              slug
+            }
           }
         }
       }
@@ -31,7 +34,7 @@ module.exports = async function createHomePages(graphql, reporter, createPage) {
 
     createPage({
       path: i === 0 ? `/` : `/page-${i + 1}/`,
-      component: path.resolve("./src/templates/home.tsx"),
+      component: path.resolve("./src/components/HomePage/HomePage.tsx"),
       context: {
         limit: perPage,
         skip,

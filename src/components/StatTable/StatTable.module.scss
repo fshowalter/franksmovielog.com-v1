@@ -1,0 +1,69 @@
+@import "./src/styles/breakpoints";
+
+.headingCss {
+  font-size: var(--step-1);
+  line-height: 2.5;
+  text-align: center;
+
+  @media (min-width: $breakpointDesktop) {
+    text-align: left;
+  }
+}
+
+.tableCss {
+  border: 1px solid var(--color-background);
+  border-collapse: collapse;
+  line-height: 1.75;
+  margin-bottom: var(--step-5);
+  width: 100%;
+
+  th:first-of-type,
+  td:first-of-type {
+    padding-left: 1rem;
+  }
+
+  th:last-of-type,
+  td:last-of-type {
+    padding-right: 1rem;
+  }
+
+  a {
+    color: var(--color-link);
+  }
+}
+
+.leftHeaderCss {
+  line-height: 2.5;
+  text-align: left;
+}
+
+.rowCss {
+  font-size: 1.125rem;
+
+  &:nth-child(odd) {
+    background-color: #e9e7e061;
+  }
+}
+
+.rightHeaderCss {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.leftCellCss {
+  padding-right: var(--step-1);
+
+  @media (min-width: $breakpointTablet) {
+    white-space: nowrap;
+  }
+}
+
+.rightCellCss {
+  font-feature-settings: "tnum";
+  text-align: right;
+  vertical-align: top;
+}
+
+.fillCellCss {
+  width: 100%;
+}

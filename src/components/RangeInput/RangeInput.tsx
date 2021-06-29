@@ -3,7 +3,9 @@ import ReactSlider from "react-slider";
 import {
   containerCss,
   draggingCss,
-  rightCss,
+  fromCss,
+  inputLabelCss,
+  labelCss,
   sliderCss,
   thumbCss,
   toCss,
@@ -15,13 +17,13 @@ import {
  * Renders a dual-handle range slider.
  */
 export default function RangeFilter({
-  id,
+  label,
   min,
   max,
   onChange,
 }: {
-  /** A unique id for this form control. */
-  id: string;
+  /** The label text. */
+  label: string;
   /** The lowest number in the range. */
   min: number;
   /** The highest number in the range. */
@@ -57,11 +59,17 @@ export default function RangeFilter({
     if (!Array.isArray(values)) {
       return;
     }
+
     setState([...values]);
   };
 
   const handleMinChange = (value: string) => {
     const newState: [number, number] = [parseInt(value, 10), state[1]];
+
+    if (isNaN(newState[0])) {
+      newState[0] = 0;
+    }
+
     setState(newState);
 
     if (valuesAreValid(newState)) {
@@ -71,6 +79,11 @@ export default function RangeFilter({
 
   const handleMaxChange = (value: string) => {
     const newState: [number, number] = [state[0], parseInt(value, 10)];
+
+    if (isNaN(newState[1])) {
+      newState[1] = 0;
+    }
+
     setState(newState);
 
     if (valuesAreValid(newState)) {
@@ -79,7 +92,8 @@ export default function RangeFilter({
   };
 
   return (
-    <div id={id} className={containerCss}>
+    <fieldset className={containerCss}>
+      <legend className={labelCss}>{label}</legend>
       <ReactSlider
         value={state}
         max={max}
@@ -91,25 +105,34 @@ export default function RangeFilter({
         thumbActiveClassName={draggingCss}
         className={sliderCss}
       />
-      <input
-        type="number"
-        min={min}
-        max={max}
-        value={state[0]}
-        step="1"
-        onChange={(e) => handleMinChange(e.target.value)}
-        className={yearInputCss}
-      />
-      <span className={toCss}> to </span>
-      <input
-        type="number"
-        value={state[1]}
-        min={min}
-        max={max}
-        onChange={(e) => handleMaxChange(e.target.value)}
-        step="1"
-        className={`${yearInputCss} ${rightCss}`}
-      />
-    </div>
+      <label className={inputLabelCss}>
+        <span className={fromCss}>From </span>
+        <input
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          minLength={4}
+          maxLength={4}
+          value={state[0]}
+          step="1"
+          onChange={(e) => handleMinChange(e.target.value)}
+          className={yearInputCss}
+        />
+      </label>
+      <label className={inputLabelCss}>
+        <span className={toCss}>To </span>
+        <input
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          value={state[1]}
+          minLength={4}
+          maxLength={4}
+          onChange={(e) => handleMaxChange(e.target.value)}
+          step="1"
+          className={`${yearInputCss}`}
+        />
+      </label>
+    </fieldset>
   );
 }

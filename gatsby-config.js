@@ -7,6 +7,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: {
+          patterns: [`*.fixtures.ts`],
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-sitemap",
       options: {
         createLinkInHead: false,
@@ -119,11 +128,9 @@ module.exports = {
               function addMetaToExcerpt(excerpt, reviewData) {
                 const meta = `${starsForGrade(
                   reviewData.frontmatter.grade[0]
-                )} D: ${reviewData.reviewedMovie.directors
-                  .map((director) => director.name)
-                  .join(", ")}. ${reviewData.reviewedMovie.principalCast
-                  .map((person) => person.name)
-                  .join(", ")}.`;
+                )} D: ${reviewData.reviewedMovie.directorNames.join(
+                  ", "
+                )}. ${reviewData.reviewedMovie.principalCastNames.join(", ")}.`;
 
                 return `<p>${meta}</p>${excerpt}`;
               }
@@ -154,7 +161,6 @@ module.exports = {
                   filter: { postType: { eq: "REVIEW" } }
                 ) {
                   nodes {
-                    excerpt
                     linkedExcerpt
                     frontmatter {
                       date
@@ -165,12 +171,8 @@ module.exports = {
                       title
                       year
                       slug
-                      principalCast: principal_cast {
-                        name: full_name
-                      }
-                      directors {
-                        name: full_name
-                      }
+                      principalCastNames: principal_cast_names
+                      directorNames: director_names
                       image: backdrop {
                         childImageSharp {
                           resize(toFormat: JPG, width: 1200, quality: 80) {

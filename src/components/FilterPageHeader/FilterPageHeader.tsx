@@ -6,36 +6,38 @@ import {
   taglineCss,
 } from "./FilterPageHeader.module.scss";
 
-export default function FilterPageHeader({
-  avatar,
-  alt,
-  className,
-  heading,
-  tagline,
-}: {
-  avatar?: IGatsbyImageData;
-  alt?: string;
+type HeaderProps = {
   className: string;
   heading: React.ReactNode;
   tagline: React.ReactNode;
-}): JSX.Element {
+};
+
+type WithAvatarProps = {
+  avatar: IGatsbyImageData;
+  alt: string;
+} & HeaderProps;
+
+type Props = HeaderProps | WithAvatarProps;
+
+export default function FilterPageHeader(props: Props): JSX.Element {
+  let avatar;
+
+  if ("avatar" in props) {
+    avatar = (
+      <GatsbyImage
+        className={avatarCss}
+        image={props.avatar}
+        alt={props.alt}
+        loading="eager"
+      />
+    );
+  }
+
   return (
-    <header className={className}>
-      {avatar && (
-        <GatsbyImage
-          className={avatarCss}
-          image={avatar}
-          alt={alt || ""}
-          loading="eager"
-        />
-      )}
-      <h2 className={headingCss}>{heading}</h2>
-      <p className={taglineCss}>{tagline}</p>
+    <header className={props.className}>
+      {avatar}
+      <h2 className={headingCss}>{props.heading}</h2>
+      <p className={taglineCss}>{props.tagline}</p>
     </header>
   );
 }
-
-FilterPageHeader.defaultProps = {
-  avatar: null,
-  alt: null,
-};

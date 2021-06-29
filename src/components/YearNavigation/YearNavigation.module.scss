@@ -1,0 +1,13 @@
+.listCss {
+  font-feature-settings: "tnum";
+  margin-top: 1.5rem;
+}
+
+.listItemCss {
+  display: inline-block;
+  margin-right: 2ch;
+}
+
+.listItemLinkCss {
+  color: var(--color-link);
+}

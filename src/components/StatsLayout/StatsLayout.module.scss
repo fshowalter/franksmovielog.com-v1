@@ -1,0 +1,49 @@
+@import "./src/styles/breakpoints";
+
+.containerCss {
+  border-top: solid 1px var(--color-background);
+  display: grid;
+  grid-template-areas: ". header ." ". . ." ". content ." ". . .";
+  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+      var(--step-1),
+      1fr
+    );
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
+      --step-5
+    );
+  padding-top: var(--step-5);
+
+  @media (min-width: 80rem) {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+
+.headerCss {
+  grid-area: header;
+}
+
+.headingCss {
+  font-size: var(--step-3);
+  text-align: center;
+
+  @media (min-width: $breakpointDesktop) {
+    text-align: left;
+  }
+}
+
+.taglineCss {
+  color: var(--color-text-secondary);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  text-align: center;
+
+  @media (min-width: $breakpointDesktop) {
+    text-align: left;
+  }
+}
+
+.contentCss {
+  display: block;
+  grid-area: content;
+}

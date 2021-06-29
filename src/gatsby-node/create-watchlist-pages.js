@@ -1,29 +1,187 @@
 const path = require("path");
 
-function reducePerson(key, accumulator, currentValue) {
-  currentValue[key].forEach((person) => {
-    if (!accumulator[key][person.slug]) {
-      accumulator[key][person.slug] = {};
-      accumulator[key][person.slug].name = person.name;
-      accumulator[key][person.slug].imdbId = person.imdb_id;
-      accumulator[key][person.slug].imdbIds = new Set();
-    }
+async function createDirectorPages(graphql, reporter, createPage) {
+  const query = await graphql(
+    `
+      {
+        directors: allWatchlistEntitiesJson(
+          filter: { entity_type: { eq: "director" }, review_count: { gt: 0 } }
+        ) {
+          nodes {
+            slug
+          }
+        }
+      }
+    `
+  );
 
-    accumulator[key][person.slug].imdbIds.add(currentValue.imdb_id);
+  if (query.errors) {
+    reporter.panicOnBuild(`Error while running query watchlist directors.`);
+    return;
+  }
+
+  createPage({
+    path: `/watchlist/directors/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "director",
+    },
+  });
+
+  query.data.directors.nodes.forEach((node) => {
+    createPage({
+      path: `/watchlist/directors/${node.slug}/`,
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
+      context: {
+        slug: node.slug,
+        entityType: "director",
+      },
+    });
   });
 }
 
-async function buildRoots(graphql, reporter, createPage) {
-  const component = path.resolve("./src/templates/watchlist-type.tsx");
+async function createPerformerPages(graphql, reporter, createPage) {
+  const query = await graphql(
+    `
+      {
+        performers: allWatchlistEntitiesJson(
+          filter: { entity_type: { eq: "performer" }, review_count: { gt: 0 } }
+        ) {
+          nodes {
+            slug
+          }
+        }
+      }
+    `
+  );
 
-  ["director", "performer", "writer", "collection"].forEach((entityType) => {
+  if (query.errors) {
+    reporter.panicOnBuild(`Error while running query watchlist performers.`);
+    return;
+  }
+
+  createPage({
+    path: `/watchlist/performers/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "performer",
+    },
+  });
+
+  query.data.performers.nodes.forEach((node) => {
     createPage({
-      path: `/watchlist/${entityType}s/`,
-      component,
+      path: `/watchlist/performers/${node.slug}/`,
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
       context: {
-        entityType,
+        slug: node.slug,
+        entityType: "performer",
       },
     });
+  });
+}
+
+async function createWriterPages(graphql, reporter, createPage) {
+  const query = await graphql(
+    `
+      {
+        writers: allWatchlistEntitiesJson(
+          filter: { entity_type: { eq: "writer" }, review_count: { gt: 0 } }
+        ) {
+          nodes {
+            slug
+          }
+        }
+      }
+    `
+  );
+
+  if (query.errors) {
+    reporter.panicOnBuild(`Error while running query watchlist writers.`);
+    return;
+  }
+
+  createPage({
+    path: `/watchlist/writers/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "writer",
+    },
+  });
+
+  query.data.writers.nodes.forEach((node) => {
+    createPage({
+      path: `/watchlist/writers/${node.slug}/`,
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
+      context: {
+        slug: node.slug,
+        entityType: "writer",
+      },
+    });
+  });
+}
+
+async function createCollectionPages(graphql, reporter, createPage) {
+  const query = await graphql(
+    `
+      {
+        collections: allWatchlistEntitiesJson(
+          filter: { entity_type: { eq: "collection" }, review_count: { gt: 0 } }
+        ) {
+          nodes {
+            slug
+          }
+        }
+      }
+    `
+  );
+
+  if (query.errors) {
+    reporter.panicOnBuild(`Error while running query watchlist collections.`);
+    return;
+  }
+
+  createPage({
+    path: `/watchlist/collections/`,
+    component: path.resolve(
+      "./src/components/WatchlistEntityIndexPage/WatchlistEntityIndexPage.tsx"
+    ),
+    context: {
+      entityType: "collection",
+    },
+  });
+
+  query.data.collections.nodes.forEach((node) => {
+    createPage({
+      path: `/watchlist/collections/${node.slug}/`,
+      component: path.resolve(
+        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
+      ),
+      context: {
+        slug: node.slug,
+        entityType: "collection",
+      },
+    });
+  });
+}
+
+function createIndexPage(createPage) {
+  createPage({
+    path: `/watchlist/`,
+    component: path.resolve(
+      "./src/components/WatchlistIndexPage/WatchlistIndexPage.tsx"
+    ),
   });
 }
 
@@ -32,203 +190,9 @@ module.exports = async function createWatchlistPages(
   reporter,
   createPage
 ) {
-  buildRoots(graphql, reporter, createPage);
-
-  const watchlistMoviesQuery = await graphql(
-    `
-      {
-        movies: allWatchlistMoviesJson {
-          nodes {
-            imdb_id
-            directors {
-              name
-              imdb_id
-              slug
-            }
-            performers {
-              name
-              imdb_id
-              slug
-            }
-            writers {
-              name
-              imdb_id
-              slug
-            }
-            collections {
-              name
-              slug
-            }
-          }
-        }
-      }
-    `
-  );
-
-  if (watchlistMoviesQuery.errors) {
-    reporter.panicOnBuild(
-      `Error while running watchlistMoviesQuery query for createWatchlistPages.`
-    );
-    return;
-  }
-
-  const pages = watchlistMoviesQuery.data.movies.nodes.reduce(
-    (accumulator, currentValue) => {
-      reducePerson("directors", accumulator, currentValue);
-      reducePerson("performers", accumulator, currentValue);
-      reducePerson("writers", accumulator, currentValue);
-
-      currentValue.collections.forEach((collection) => {
-        if (!accumulator.collections[collection.slug]) {
-          accumulator.collections[collection.slug] = {};
-          accumulator.collections[collection.slug].name = collection.name;
-          accumulator.collections[collection.slug].imdbIds = new Set();
-        }
-
-        accumulator.collections[collection.slug].imdbIds.add(
-          currentValue.imdb_id
-        );
-      });
-      return accumulator;
-    },
-    {
-      directors: {},
-      performers: {},
-      writers: {},
-      collections: {},
-    }
-  );
-
-  const reviewsQuery = await graphql(
-    `
-      {
-        reviews: allReviewedMoviesJson {
-          nodes {
-            imdb_id
-          }
-        }
-      }
-    `
-  );
-
-  if (reviewsQuery.errors) {
-    reporter.panicOnBuild(
-      `Error while running reviewsQuery query for createWatchlistPages.`
-    );
-    return;
-  }
-
-  const reviewImdbIds = new Set(
-    reviewsQuery.data.reviews.nodes.map((node) => node.imdb_id)
-  );
-
-  const component = path.resolve("./src/templates/watchlist-entity.tsx");
-
-  // Create director pages
-  Object.keys(pages.directors).forEach((slug) => {
-    const director = pages.directors[slug];
-
-    if (
-      ![...director.imdbIds].some((imdbId) => {
-        return reviewImdbIds.has(imdbId);
-      })
-    ) {
-      return;
-    }
-
-    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
-
-    createPage({
-      path: `/watchlist/directors/${slug}/`,
-      component,
-      context: {
-        avatarPath,
-        entityType: "DIRECTOR",
-        imdbId: director.imdbId,
-        imdbIds: [...director.imdbIds],
-        name: director.name,
-      },
-    });
-  });
-
-  // Create performer pages
-  Object.keys(pages.performers).forEach((slug) => {
-    const performer = pages.performers[slug];
-
-    if (
-      ![...performer.imdbIds].some((imdbId) => {
-        return reviewImdbIds.has(imdbId);
-      })
-    ) {
-      return;
-    }
-
-    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
-
-    createPage({
-      path: `/watchlist/performers/${slug}/`,
-      component,
-      context: {
-        avatarPath,
-        entityType: "PERFORMER",
-        imdbId: performer.imdbId,
-        imdbIds: [...performer.imdbIds],
-        name: performer.name,
-      },
-    });
-  });
-
-  // Create writer pages
-  Object.keys(pages.writers).forEach((slug) => {
-    const writer = pages.writers[slug];
-
-    if (
-      ![...writer.imdbIds].some((imdbId) => {
-        return reviewImdbIds.has(imdbId);
-      })
-    ) {
-      return;
-    }
-
-    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
-
-    createPage({
-      path: `/watchlist/writers/${slug}/`,
-      component,
-      context: {
-        avatarPath,
-        entityType: "WRITER",
-        imdbId: writer.imdbId,
-        imdbIds: [...writer.imdbIds],
-        name: writer.name,
-      },
-    });
-  });
-
-  // Create collection pages
-  Object.keys(pages.collections).forEach((slug) => {
-    const collection = pages.collections[slug];
-
-    if (
-      ![...collection.imdbIds].some((imdbId) => {
-        return reviewImdbIds.has(imdbId);
-      })
-    ) {
-      return;
-    }
-
-    const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
-
-    createPage({
-      path: `/watchlist/collections/${slug}/`,
-      component,
-      context: {
-        avatarPath,
-        entityType: "COLLECTION",
-        imdbId: collection.imdbId,
-        imdbIds: [...collection.imdbIds],
-        name: collection.name,
-      },
-    });
-  });
+  createIndexPage(createPage);
+  createDirectorPages(graphql, reporter, createPage);
+  createPerformerPages(graphql, reporter, createPage);
+  createWriterPages(graphql, reporter, createPage);
+  createCollectionPages(graphql, reporter, createPage);
 };

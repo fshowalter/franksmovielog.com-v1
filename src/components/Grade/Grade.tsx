@@ -21,78 +21,51 @@ const gradeValueMap: { [key: number]: [string, string] } = {
   2: ["/svg/2-stars.svg", "2 stars (out of 5)"],
   1: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
+type CommonGradeProps = {
+  /** The width of the stars image. */
+  width?: number;
+  /** The height of the stars image. */
+  height?: number;
+  /** The CSS class name of the stars image. */
+  className?: string;
+};
 
-type GradeProps =
-  | {
-      /** The grade letter value. */
-      grade: string;
-      /** The grade number value. */
-      gradeValue?: number;
-      /** The width of the stars image. */
-      width?: number;
-      /** The height of the stars image. */
-      height?: number;
-      /** The CSS class name of the stars image. */
-      className?: string;
-    }
-  | {
-      /** The grade letter value. */
-      grade?: string;
-      /** The grade number value. */
-      gradeValue: number;
-      /** The width of the stars image. */
-      width?: number;
-      /** The height of the stars image. */
-      height?: number;
-      /** The CSS class name of the stars image. */
-      className?: string;
-    };
+type LetterGradeProps = {
+  /** The grade letter value. */
+  grade: string;
+} & CommonGradeProps;
 
-export default function Grade({
-  grade,
-  gradeValue,
-  className,
-  width = 70,
-  height = 14,
-}: GradeProps): JSX.Element | null {
-  let src: string | undefined;
-  let alt: string | undefined;
+type ValueGradeProps = {
+  /** The grade letter value. */
+  gradeValue: number;
+} & CommonGradeProps;
 
-  if (!grade && !gradeValue) {
-    return null;
+type GradeProps = LetterGradeProps | ValueGradeProps;
+
+export default function Grade(props: GradeProps): JSX.Element | null {
+  let src;
+  let alt = "";
+  let grade = "";
+
+  if ("grade" in props) {
+    grade = props.grade;
+    [src, alt] = gradeMap[props.grade[0]];
   }
 
-  if (grade) {
-    if (!(grade[0] in gradeMap)) {
-      return null;
-    }
+  if ("gradeValue" in props) {
+    const gradeValueInt = Math.round(props.gradeValue);
 
-    [src, alt] = gradeMap[grade[0]];
-  }
-
-  if (gradeValue) {
-    if (!(gradeValue in gradeValueMap)) {
-      return null;
-    }
-
-    [src, alt] = gradeValueMap[gradeValue];
+    grade = props.gradeValue.toString();
+    [src, alt] = gradeValueMap[gradeValueInt];
   }
 
   return (
     <img
-      className={className}
+      className={props.className}
       src={src}
-      alt={`${grade || ""}: ${alt || ""}`}
-      width={width}
-      height={height}
+      alt={`${grade}: ${alt}`}
+      width={props.width}
+      height={props.height}
     />
   );
 }
-
-Grade.defaultProps = {
-  width: 70,
-  height: 14,
-  className: null,
-  grade: null,
-  gradeValue: null,
-};

@@ -1,0 +1,117 @@
+@import "./src/styles/breakpoints";
+
+.containerCss {
+  border-top: solid 1px var(--color-background);
+  display: grid;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding-top: var(--step-5);
+
+  @media (min-width: $breakpointDesktop) {
+    grid-template-columns: 375px 1fr;
+    max-width: unset;
+  }
+
+  @media (min-width: 80rem) {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+
+.leftCss {
+  align-content: start;
+  display: grid;
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". list_info ." ". . ." ". percent ." ". . .";
+  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
+      var(--step-1),
+      1fr
+    );
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
+      --step-5
+    );
+
+  @media (min-width: $breakpointDesktop) {
+    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";
+  }
+}
+
+.rightCss {
+  display: grid;
+  grid-template-areas: ". list" ". ." "show_more show_more" ". .";
+  grid-template-columns: var(--step-1) 1fr;
+  grid-template-rows: auto var(--step-1) auto var(--step-5);
+}
+
+.pageHeaderCss {
+  grid-area: header;
+}
+
+.paginationInfoCss {
+  grid-area: pagination_info;
+  justify-self: center;
+}
+
+.paginationCss {
+  grid-area: pagination;
+  justify-self: center;
+}
+
+.filtersCss {
+  grid-area: filters;
+}
+
+.listCss {
+  grid-area: list;
+}
+
+.listItemCss {
+  border-bottom: solid 1px var(--color-background);
+  display: block;
+}
+
+.listItemTitleCss {
+  font-size: 1.125rem;
+  padding: 1.5rem var(--step-1) 0.25rem 0;
+}
+
+.listItemFirstCss {
+  .listItemTitleCss {
+    padding-top: 0.5rem;
+  }
+}
+
+.listItemTitleLinkCss {
+  color: var(--color-link);
+}
+
+.listItemTitleYearCss {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.listItemSlugCss {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  padding: 0 var(--step-1) 1.5rem 0;
+}
+
+.quoteCss {
+  color: var(--color-text-tertiary);
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.listInfoCss {
+  color: var(--color-text-secondary);
+  font-size: clamp(15px, 4vw, 16px);
+  font-weight: 300;
+  grid-area: list_info;
+  justify-self: center;
+  text-align: center;
+}
+
+.showMoreCss {
+  grid-area: show_more;
+  justify-self: center;
+}

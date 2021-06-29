@@ -17,5 +17,6 @@
     "noImplicitAny": true
   },
   "include": ["./src/**/*", "./*.js"],
-  "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"]
+  "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"],
+  "typeRoots": ["./src/types", "./node_modules/@types/"]
 }

@@ -1,34 +1,26 @@
 import { graphql } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
-import Layout from "../components/Layout";
-import RenderedMarkdown from "../components/RenderedMarkdown";
+import ArticlePage from "../components/ArticlePage";
 import Seo from "../components/Seo";
-import { articleCss, bodyCss, imageCss } from "./how-i-grade.module.scss";
 
 export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
   const { backdrop, page } = data;
 
   return (
-    <Layout>
+    <>
       <Seo
         pageTitle="How I Grade"
         description="The criteria I use to rate movies on this site."
         image={null}
         article
       />
-      <main>
-        <article className={articleCss}>
-          <GatsbyImage
-            image={backdrop.childImageSharp.gatsbyImageData}
-            alt="Empty cinema seats."
-            className={imageCss}
-            loading="eager"
-          />
-          <RenderedMarkdown className={bodyCss} text={page.html} />
-        </article>
-      </main>
-    </Layout>
+      <ArticlePage
+        image={backdrop.childImageSharp.gatsbyImageData}
+        alt="Empty cinema seats."
+        articleText={page.html}
+      />
+    </>
   );
 }
 
