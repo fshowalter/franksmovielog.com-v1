@@ -9,4 +9,8 @@ venue: Blu-ray
 venue_notes: 2017 | Shout Factory
 ---
 
-How did I miss this off-beat 80s teen comedy that skews closer to Savage Steve than John Hughes? I loved the formal rigour director Phil Joanou brings to this simple tale of a dweeby kid who finds himself the target of his high school's ginormous new bully. From long takes of overlapping dialog to an always-interesting shot selection, the film proved a terrific discovery. That said, as much as I loved the cast, I wish the script had made Casey Siemaszko's character a bit more endearing. Oft times he's his own worst enemy. Thus, while I was always curious what was going to happen, I wasn't too concerned with what was going to happen to _him_.
+How did I miss this off-beat 80s teen comedy that skews closer to Savage Steve Holland than John Hughes? I loved the formal rigor director Phil Joanou employs in this comedic tale of high-school dweeb Jerry Mitchell who finds himself targeted by the hulking new bully. From long takes of overlapping dialog to an always-interesting shot choice, the film proved a terrific discovery.
+
+<!-- end -->
+
+My nitpick: Jerry didn’t connect. Casey Siemaszko delivers an entertaining performance, but the script paints him as a bumbling doofus who’s his own worst enemy. Hard to root for him. Instead, imagine a draft where the second-act finale sees him accept his fate and adopt a devil-may-care attitude befitting a dying man. It kicks off with him seducing Miss Farmer and gets darker and weirder. Too much? Perhaps, but I can’t help wishing this packed a bit more edge.

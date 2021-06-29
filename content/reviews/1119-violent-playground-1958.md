@@ -9,4 +9,4 @@ venue: Watch TCM
 venue_notes:
 ---
 
-A stacked cast and vivid location photography elevate this story of juvenile deliquency. Stanley Baker makes a strong case for watchlist inclusion as a Liverpool detective voluntold to take over as Juvenile Liason Officer. David McCallum plays the requisite troubled youth. Peter Cushing turns up as the local priest. The Liverpool photography puts you on the streets of the Beatles home town a few years before they broke through. Baker and McCallum ensure you're never bored. The script avoids soap box soliloques and rations the melodramatics. A pleasant surprise.
+A stacked cast and vivid location photography elevate this story of juvenile delinquency. Stanley Baker makes a strong case for Watchlist inclusion as a Liverpool detective volun-told to take over as Juvenile Liaison Officer. David McCallum plays the requisite troubled youth. Peter Cushing turns up as the local priest. The Liverpool photography puts you on the streets of the Beatles hometown a few years before they broke big. Baker and McCallum ensure you're never bored. The script avoids soapbox soliloquies and rations the melodramatics. A pleasant surprise.
