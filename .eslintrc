@@ -71,22 +71,12 @@
           "error",
           { "onlyFunctionsWithAsyncKeyword": true }
         ],
-        "jsx-a11y/label-has-associated-control": [
-          "error",
-          {
-            "assert": "either",
-            "depth": 25
-          }
-        ],
-        "jsx-a11y/no-onchange": "off",
-        "no-useless-constructor": "off",
-        "react/jsx-filename-extension": [
-          2,
-          { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
-        ],
-        "react/require-default-props": "off"
+        "jsx-a11y/no-onchange": "off"
       },
       "settings": {
+        "react": {
+          "version": "detect"
+        },
         "import/parsers": {
           "@typescript-eslint/parser": [".ts", ".tsx"]
         },
