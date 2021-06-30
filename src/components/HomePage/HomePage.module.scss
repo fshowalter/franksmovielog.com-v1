@@ -1,4 +1,4 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .containerCss {
   border-top: solid 1px var(--color-background);
@@ -9,7 +9,7 @@
       1fr
     );
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "list" "pagination";
     grid-template-columns: unset;
   }
@@ -22,14 +22,14 @@
 .listCss {
   grid-area: list;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 .listItemCss {
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     border-top: solid 1px var(--color-background);
     display: flex;
     margin-top: var(--step-5);
@@ -79,7 +79,7 @@
     width: 75%;
   }
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". . ." ". border .";
     grid-template-rows: auto var(--step-1) auto 1.4rem 1fr 2.8rem auto;
 
@@ -182,7 +182,7 @@
 .paginationCss {
   grid-area: pagination;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     border-top: solid 1px var(--color-background);
   }
 }

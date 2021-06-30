@@ -1,11 +1,11 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .headingCss {
   font-size: var(--step-1);
   line-height: 2.5;
   text-align: center;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     text-align: left;
   }
 }
@@ -53,7 +53,7 @@
 .leftCellCss {
   padding-right: var(--step-1);
 
-  @media (min-width: $breakpointTablet) {
+  @media (min-width: breakpoints.$tablet) {
     white-space: nowrap;
   }
 }

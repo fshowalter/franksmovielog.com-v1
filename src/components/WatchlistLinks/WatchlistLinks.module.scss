@@ -1,4 +1,4 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .containerCss {
   color: var(--color-text-secondary);
@@ -25,7 +25,7 @@
   padding: 0.5rem;
   white-space: nowrap;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     border-color: var(--color-background);
   }
 

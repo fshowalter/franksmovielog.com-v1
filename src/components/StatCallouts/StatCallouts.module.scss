@@ -1,4 +1,4 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .containerCss {
   column-gap: var(--step-1);
@@ -7,7 +7,7 @@
   justify-content: center;
   margin: 0 auto;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     column-gap: var(--step-5);
   }
 }

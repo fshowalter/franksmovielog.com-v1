@@ -1,4 +1,4 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .infoCss {
   color: var(--color-text-secondary);
@@ -17,7 +17,7 @@
   padding: 2.5rem 0;
   white-space: nowrap;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     font-size: 21px;
   }
 

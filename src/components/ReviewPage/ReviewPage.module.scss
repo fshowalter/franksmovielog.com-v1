@@ -1,4 +1,4 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .containerCss {
   display: grid;
@@ -13,12 +13,12 @@
   position: relative;
   row-gap: 3rem;
 
-  @media (min-width: $breakpointTablet) {
+  @media (min-width: breakpoints.$tablet) {
     grid-template-areas: "image" "title" "credits" "reviews" "viewings" "related";
     grid-template-columns: unset;
   }
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
     grid-template-columns: minmax(auto, 63ch) 1fr 25%;
     max-width: unset;
@@ -39,7 +39,7 @@
   padding-top: 1.5rem;
   row-gap: 1rem;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-columns: var(--step-1) 1fr;
 
     > * {
@@ -54,7 +54,7 @@
   top: 2px;
   width: 14px;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     left: -24px;
     position: absolute;
   }
@@ -120,7 +120,7 @@
   grid-template-rows: auto auto 1fr auto;
   letter-spacing: 0.2px;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "poster" "directors" "cast" "watchlist";
     grid-template-columns: 1fr;
     grid-template-rows: unset;
@@ -135,7 +135,7 @@
 .directorsCss {
   grid-area: directors;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     padding: 1.5rem 0.5rem 0;
   }
 }
@@ -144,7 +144,7 @@
   grid-area: cast;
   margin-top: 1rem;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     padding: 0 0.5rem;
   }
 }
@@ -190,7 +190,7 @@
     color: var(--color-link);
   }
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     padding: 0 0.5rem;
   }
 }
