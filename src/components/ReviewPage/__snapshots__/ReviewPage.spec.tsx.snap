@@ -519,12 +519,15 @@ exports[`/reviews/{slug} renders 1`] = `
         <ul
           class="reviewsListCss"
         >
-          <li>
+          <li
+            class="reviewsListItemCss"
+          >
             <article
               class="reviewCss"
             >
               <header
                 class="slugCss"
+                id="1001"
               >
                 <svg
                   class="iconCss iconCss dateIconCss"
@@ -1382,7 +1385,7 @@ exports[`/reviews/{slug} renders 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Movie","name":"Rio Bravo","sameAs":"http://www.imdb.com/title/tt0053221/","image":"/static/fcebe4b6b4be5df958898032ef7c8bbe/8c3c2/rio-bravo-1959.jpg","dateCreated":1959,"director":{"@type":"Person","name":"Howard Hawks"}},"ratingValue":5}
+        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Movie","name":"Rio Bravo","sameAs":"http://www.imdb.com/title/tt0053221/","image":"/static/fcebe4b6b4be5df958898032ef7c8bbe/8c3c2/rio-bravo-1959.jpg","dateCreated":1959,"director":{"@type":"Person","name":"Howard Hawks"}},"reviewCount":1,"ratingValue":5}
       </script>
     </div>
     <footer
@@ -1862,12 +1865,15 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
         <ul
           class="reviewsListCss"
         >
-          <li>
+          <li
+            class="reviewsListItemCss"
+          >
             <article
               class="reviewCss"
             >
               <header
                 class="slugCss"
+                id="856"
               >
                 <svg
                   class="iconCss iconCss dateIconCss"
@@ -2595,7 +2601,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Movie","name":"The Quatermass Xperiment","sameAs":"http://www.imdb.com/title/tt0049646/","image":"/static/28861d007b93206a8c7209a41d35620b/8c3c2/the-quatermass-xperiment-1955.jpg","dateCreated":1955,"director":{"@type":"Person","name":"Val Guest"}},"ratingValue":4}
+        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Movie","name":"The Quatermass Xperiment","sameAs":"http://www.imdb.com/title/tt0049646/","image":"/static/28861d007b93206a8c7209a41d35620b/8c3c2/the-quatermass-xperiment-1955.jpg","dateCreated":1955,"director":{"@type":"Person","name":"Val Guest"}},"reviewCount":1,"ratingValue":4}
       </script>
     </div>
     <footer
