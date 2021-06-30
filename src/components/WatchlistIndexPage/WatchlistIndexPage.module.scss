@@ -1,4 +1,4 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .containerCss {
   border-top: solid 1px var(--color-background);
@@ -7,7 +7,7 @@
   max-width: 40rem;
   padding-top: var(--step-5);
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-columns: 375px 1fr;
     max-width: unset;
   }
@@ -30,7 +30,7 @@
     auto var(--step-1) auto var(--step-5) auto var(--step-1) auto var(--step-5)
     auto var(--step-5);
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";
   }
 }
@@ -146,7 +146,7 @@
   padding: 0.5rem;
   white-space: nowrap;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     border-color: var(--color-background);
   }
 

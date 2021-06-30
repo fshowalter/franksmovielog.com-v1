@@ -1,4 +1,4 @@
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
 
 .listCss {
   column-gap: var(--step-1);
@@ -7,7 +7,7 @@
   grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
   row-gap: 1.5rem;
 
-  @media (max-width: #{$breakpointDesktop - 1px}) {
+  @media (max-width: #{breakpoints.$desktop - 1px}) {
     grid-template-columns: repeat(2, minmax(155px, 1fr));
   }
 }

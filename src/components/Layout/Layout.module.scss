@@ -1,13 +1,13 @@
-@import "./src/styles/global";
-@import "./src/styles/vars";
-@import "./src/styles/breakpoints";
+@use "./src/styles/breakpoints";
+@use "./src/styles/global";
+@use "./src/styles/vars";
 
 .containerCss {
   background-color: var(--color-content-background);
   display: grid;
   grid-template-areas: "border" "header" "content" "footer";
   margin: 0 auto;
-  max-width: clamp(1000px, 95vw, $breakpointMax);
+  max-width: clamp(1000px, 95vw, #{breakpoints.$max});
   min-height: 100vh;
   position: relative;
 
@@ -19,13 +19,13 @@
     height: 1.5rem;
   }
 
-  @media (min-width: $breakpointTablet) {
+  @media (min-width: breakpoints.$tablet) {
     &::before {
       height: 1.25rem;
     }
   }
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "border border border" ". . ." ". header ." ". content ." "footer footer footer";
     grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 1000px) minmax(
         var(--step-1),
@@ -77,7 +77,7 @@
   grid-template-rows: 1.5rem auto auto 1.5rem auto 1.5rem auto 1.5rem;
   justify-items: center;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     column-gap: calc(2 * var(--step-1));
     grid-template-areas: "logo search" "tagline . " ". ." "nav nav" ". .";
     grid-template-columns: auto;
@@ -129,7 +129,7 @@
   margin: 0 -0.75rem;
   white-space: nowrap;
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     justify-content: flex-start;
     margin: 0;
   }
@@ -149,7 +149,7 @@
   position: relative;
   white-space: nowrap;
 
-  @media (min-width: $breakpointTablet) {
+  @media (min-width: breakpoints.$tablet) {
     margin: 0;
     padding-right: var(--step-1);
 
@@ -158,7 +158,7 @@
     }
   }
 
-  @media (min-width: $breakpointDesktop) {
+  @media (min-width: breakpoints.$desktop) {
     &:first-of-type {
       padding-left: 1px;
     }
@@ -212,7 +212,7 @@
   min-width: 0;
   padding: 0 1rem;
 
-  @media (min-width: $breakpointMax) {
+  @media (min-width: breakpoints.$max) {
     flex-grow: unset;
     width: 100%;
   }
