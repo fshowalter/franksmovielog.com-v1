@@ -37,6 +37,7 @@ import {
   relatedNameCss,
   reviewCss,
   reviewsListCss,
+  reviewsListItemCss,
   separatorCss,
   slugCss,
   titleCss,
@@ -67,6 +68,7 @@ function buildStructuredData(pageData: PageQueryResult) {
         name: pageData.movie.directorNames[0],
       },
     },
+    reviewCount: pageData.movie.reviews.length,
     ratingValue: gradeMap[pageData.movie.lastReviewGrade[0]],
   };
 }
@@ -233,10 +235,16 @@ export default function ReviewPage({
           </div>
         </aside>
         <ul className={reviewsListCss}>
-          {movie.reviews.map((review) => (
-            <li key={review.frontmatter.sequence}>
+          {movie.reviews.reverse().map((review) => (
+            <li
+              className={reviewsListItemCss}
+              key={review.frontmatter.sequence}
+            >
               <article className={reviewCss}>
-                <header className={slugCss}>
+                <header
+                  className={slugCss}
+                  id={review.frontmatter.sequence.toString()}
+                >
                   <DateIcon className={dateIconCss} />{" "}
                   <span className={dateCss}>{review.frontmatter.date}</span> via{" "}
                   {review.frontmatter.venue}
@@ -380,7 +388,7 @@ export const pageQuery = graphql`
       directorNames: director_names
       reviews {
         frontmatter {
-          date(formatString: "dddd MMM D, YYYY")
+          date(formatString: "ddd MMM D, YYYY")
           dateIso: date(formatString: "Y-MM-DD")
           grade
           sequence

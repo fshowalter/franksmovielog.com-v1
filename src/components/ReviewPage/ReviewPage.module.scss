@@ -26,14 +26,42 @@
 }
 
 .reviewsListCss {
+  border-top: solid 1px var(--color-background);
   display: grid;
   grid-area: reviews;
   grid-template-columns: 1fr;
   row-gap: 3rem;
 }
 
-.reviewCss {
+.reviewsListItemCss:not(:first-child) {
+  padding-top: 3rem;
+  position: relative;
+}
+
+.reviewsListItemCss:not(:first-child)::after {
+  background-color: #fff;
+  content: url("/assets/film-icon.svg");
+  display: block;
+  height: 1rem;
+  left: calc(50% - 1.5rem);
+  padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  width: 3rem;
+  z-index: 100;
+}
+
+.reviewsListItemCss:not(:first-child)::before {
   border-top: solid 1px var(--color-background);
+  content: " ";
+  height: 1px;
+  left: 25%;
+  position: absolute;
+  top: calc(0.5rem - 1px);
+  width: 50%;
+}
+
+.reviewCss {
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 1.5rem;

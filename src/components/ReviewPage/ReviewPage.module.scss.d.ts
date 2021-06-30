@@ -25,6 +25,7 @@ export const relatedMoreCss: string;
 export const relatedNameCss: string;
 export const reviewCss: string;
 export const reviewsListCss: string;
+export const reviewsListItemCss: string;
 export const separatorCss: string;
 export const slugCss: string;
 export const titleCss: string;
