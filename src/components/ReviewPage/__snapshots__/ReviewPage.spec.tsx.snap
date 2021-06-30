@@ -519,7 +519,9 @@ exports[`/reviews/{slug} renders 1`] = `
         <ul
           class="reviewsListCss"
         >
-          <li>
+          <li
+            class="reviewsListItemCss"
+          >
             <article
               class="reviewCss"
             >
@@ -1863,7 +1865,9 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
         <ul
           class="reviewsListCss"
         >
-          <li>
+          <li
+            class="reviewsListItemCss"
+          >
             <article
               class="reviewCss"
             >
