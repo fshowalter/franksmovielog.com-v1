@@ -142,8 +142,7 @@ export default function ViewingsIndexPage({
               </>
             }
           />
-          <Fieldset className={filtersCss}>
-            <legend>Filter &amp; Sort</legend>
+          <Fieldset className={filtersCss} legend="Filter & Sort">
             <DebouncedInput
               label="Title"
               placeholder="Enter all or part of a title"
@@ -223,14 +222,16 @@ export default function ViewingsIndexPage({
             <Button onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
                 <path
-                  fillRule="evenodd"
-                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                  clipRule="evenodd"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
                 />
               </svg>
               Show More

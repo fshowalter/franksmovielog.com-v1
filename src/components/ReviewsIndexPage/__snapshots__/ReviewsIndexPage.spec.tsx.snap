@@ -50246,7 +50246,9 @@ exports[`/reviews renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label

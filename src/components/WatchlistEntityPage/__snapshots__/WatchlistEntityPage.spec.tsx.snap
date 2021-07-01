@@ -216,7 +216,9 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label
@@ -5837,7 +5839,9 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label
@@ -7428,7 +7432,9 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label
@@ -9019,7 +9025,9 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label

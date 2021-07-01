@@ -3,7 +3,7 @@
   background-color: transparent;
   background-color: #357ebd;
   border: solid 1px #357ebd;
-  border-radius: 6px;
+  border-radius: 1rem;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -11,9 +11,9 @@
   font-weight: bold;
   gap: 1ch;
   justify-content: center;
-  line-height: 1rem;
+  line-height: calc(1ex / 0.32);
   margin-top: 1rem;
-  padding: 0.75rem 1rem;
+  padding: calc(var(--step--2) / 2) var(--step-0);
   white-space: nowrap;
 
   &:hover {
@@ -21,7 +21,7 @@
   }
 
   svg {
-    height: 1rem;
-    width: 1rem;
+    height: 20px;
+    width: auto;
   }
 }
