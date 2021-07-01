@@ -1,19 +1,19 @@
 .buttonCss {
   align-items: center;
   background-color: transparent;
-  background-color: #357ebd;
-  border: solid 1px #357ebd;
+  background-color: #455d98;
+  border: solid 1px #455d98;
   border-radius: 1rem;
   color: #fff;
   display: flex;
   flex-direction: row;
   font-size: 1rem;
-  font-weight: bold;
+  // font-weight: bold;
   gap: 1ch;
   justify-content: center;
   line-height: calc(1ex / 0.32);
   margin-top: 1rem;
-  padding: calc(var(--step--2) / 2) var(--step-0);
+  padding: calc(var(--step--2) / 2) var(--step--1);
   white-space: nowrap;
 
   &:hover {
