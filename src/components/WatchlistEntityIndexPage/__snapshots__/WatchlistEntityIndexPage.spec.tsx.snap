@@ -7321,11 +7321,12 @@ exports[`/watchlist/collections/ renders 1`] = `
             <h2
               class="headingCss"
             >
-              <span
+              <a
                 class="pageHeaderSubCss"
+                href="/watchlist"
               >
                 Watchlist
-              </span>
+              </a>
                Collections
             </h2>
             <p
@@ -7337,7 +7338,9 @@ exports[`/watchlist/collections/ renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label
@@ -11053,11 +11056,12 @@ exports[`/watchlist/directors/ renders 1`] = `
             <h2
               class="headingCss"
             >
-              <span
+              <a
                 class="pageHeaderSubCss"
+                href="/watchlist"
               >
                 Watchlist
-              </span>
+              </a>
                Directors
             </h2>
             <p
@@ -11069,7 +11073,9 @@ exports[`/watchlist/directors/ renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label
@@ -14785,11 +14791,12 @@ exports[`/watchlist/performers/ renders 1`] = `
             <h2
               class="headingCss"
             >
-              <span
+              <a
                 class="pageHeaderSubCss"
+                href="/watchlist"
               >
                 Watchlist
-              </span>
+              </a>
                Performers
             </h2>
             <p
@@ -14801,7 +14808,9 @@ exports[`/watchlist/performers/ renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label
@@ -18517,11 +18526,12 @@ exports[`/watchlist/writers/ renders 1`] = `
             <h2
               class="headingCss"
             >
-              <span
+              <a
                 class="pageHeaderSubCss"
+                href="/watchlist"
               >
                 Watchlist
-              </span>
+              </a>
                Writers
             </h2>
             <p
@@ -18533,7 +18543,9 @@ exports[`/watchlist/writers/ renders 1`] = `
           <fieldset
             class="fieldsetCss filtersCss"
           >
-            <legend>
+            <legend
+              class="legendCss"
+            >
               Filter & Sort
             </legend>
             <label

@@ -322,8 +322,7 @@ export default function WatchlistIndexPage({
               Collections
             </WatchlistCollectionLinkItem>
           </ul>
-          <Fieldset className={filtersCss}>
-            <legend>Filter &amp; Sort</legend>
+          <Fieldset className={filtersCss} legend="Filter & Sort">
             <DebouncedInput
               label="Title"
               placeholder="Enter all or part of a title"
@@ -502,7 +501,7 @@ export default function WatchlistIndexPage({
               >
                 <path
                   fillRule="evenodd"
-                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                  d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
                   clipRule="evenodd"
                 />
               </svg>

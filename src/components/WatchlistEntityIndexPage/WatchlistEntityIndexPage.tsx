@@ -189,14 +189,15 @@ export default function WatchlistEntityIndexPage({
             className={pageHeaderCss}
             heading={
               <>
-                <span className={pageHeaderSubCss}>Watchlist</span>{" "}
+                <Link to="/watchlist" className={pageHeaderSubCss}>
+                  Watchlist
+                </Link>{" "}
                 {entityDetails.pluralName}
               </>
             }
             tagline={entityDetails.tagLine}
           />
-          <Fieldset className={filtersCss}>
-            <legend>Filter &amp; Sort</legend>
+          <Fieldset className={filtersCss} legend="Filter & Sort">
             <DebouncedInput
               label="Name"
               placeholder="Enter all or part of a name"

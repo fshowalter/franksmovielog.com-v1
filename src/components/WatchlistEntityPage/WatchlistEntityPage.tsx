@@ -180,8 +180,7 @@ export default function WatchlistEntityPage({
             heading={entity.name}
             tagline={entityDetails.tagLine}
           />
-          <Fieldset className={filtersCss}>
-            <legend>Filter &amp; Sort</legend>
+          <Fieldset className={filtersCss} legend="Filter & Sort">
             <DebouncedInput
               label="Title"
               placeholder="Enter all or part of a title"

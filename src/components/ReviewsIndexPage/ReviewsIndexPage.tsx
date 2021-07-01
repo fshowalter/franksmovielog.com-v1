@@ -65,8 +65,7 @@ export default function ReviewsIndexPage({
               </>
             }
           />
-          <Fieldset className={filtersCss}>
-            <legend>Filter &amp; Sort</legend>
+          <Fieldset className={filtersCss} legend="Filter & Sort">
             <DebouncedInput
               label="Title"
               placeholder="Enter all or part of a title"
