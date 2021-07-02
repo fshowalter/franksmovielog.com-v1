@@ -88,7 +88,7 @@
 }
 
 .listItemTitleLinkCss {
-  color: #22863a;
+  color: darken(#77e895, 33%);
 }
 
 .listItemTitleYearCss {
@@ -106,7 +106,7 @@
 
 .listItemCheckmarkCss {
   align-self: center;
-  color: #9beab0;
+  color: #77e895;
   grid-area: checkmark;
   height: 3rem;
   width: 3rem;
