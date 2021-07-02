@@ -202,7 +202,7 @@ function WatchlistProgress({
     <>
       <ProgressGraph total={total} complete={reviewed} />
       <div className={percentTotalsCss}>
-        {reviewed}/{total} Reviewed
+        {reviewed}/{total.toLocaleString()} Reviewed
       </div>
     </>
   );
