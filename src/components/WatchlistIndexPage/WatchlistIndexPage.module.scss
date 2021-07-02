@@ -31,7 +31,7 @@
     auto var(--step-5);
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";
+    grid-template-areas: "header header ." ". . ." "type_links type_links ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";
   }
 }
 

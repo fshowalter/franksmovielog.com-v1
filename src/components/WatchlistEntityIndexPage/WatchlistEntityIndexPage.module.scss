@@ -31,7 +31,7 @@
     );
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: ". header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
+    grid-template-areas: "header header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
   }
 }
 
