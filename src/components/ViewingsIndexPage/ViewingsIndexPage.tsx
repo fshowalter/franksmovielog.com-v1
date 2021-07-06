@@ -219,23 +219,25 @@ export default function ViewingsIndexPage({
               })}
           </ol>
           <div className={showMoreCss}>
-            <Button onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-                />
-              </svg>
-              Show More
-            </Button>
+            {state.filteredViewings.length > state.showCount && (
+              <Button onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                  />
+                </svg>
+                Show More
+              </Button>
+            )}
           </div>
         </div>
       </main>
