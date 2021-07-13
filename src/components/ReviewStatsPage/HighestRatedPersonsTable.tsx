@@ -3,6 +3,8 @@ import React from "react";
 import DetailsTable from "../DetailsTable";
 import Grade from "../Grade";
 import {
+  gradeCss,
+  listItemCss,
   titleYearCss,
   viaCss,
   viewingDetailCss,
@@ -87,10 +89,13 @@ export default function HighestRatedPersonsTable({
     renderDetails: (item: PersonWithReviews) => {
       return item.reviews.map((review) => {
         return (
-          <li key={review.sequence}>
+          <li key={review.sequence} className={listItemCss}>
             <>
-              <Grade gradeValue={review.gradeValue} />{" "}
-              <MovieTitle review={review} /> <ReviewDetail review={review} />
+              <Grade className={gradeCss} gradeValue={review.gradeValue} />
+              <span>
+                {" "}
+                <MovieTitle review={review} /> <ReviewDetail review={review} />
+              </span>
             </>
           </li>
         );
