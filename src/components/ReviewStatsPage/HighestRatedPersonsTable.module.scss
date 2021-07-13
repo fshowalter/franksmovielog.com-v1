@@ -1,3 +1,5 @@
+@use "./src/styles/breakpoints";
+
 .viaCss {
   color: var(--color-text-secondary);
   display: inline;
@@ -12,4 +14,18 @@
   font-feature-settings: "tnum";
   font-size: 1rem;
   letter-spacing: normal;
+}
+
+.gradeCss {
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  width: auto;
+}
+
+.listItemCss {
+  line-height: 26px;
+  position: relative;
+  text-indent: calc(5rem + 1ch);
 }

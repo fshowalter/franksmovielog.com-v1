@@ -1,3 +1,5 @@
+@use "./src/styles/breakpoints";
+
 .tableIndexCellCss {
   color: var(--color-text-secondary);
   font-feature-settings: "tnum";
@@ -17,7 +19,10 @@
 
 .detailsListCss {
   list-style-type: decimal;
-  margin: 0 1rem;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin: 0 1rem;
+  }
 
   li {
     padding: 1px 0;
