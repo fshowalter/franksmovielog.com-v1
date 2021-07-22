@@ -11471,17 +11471,12 @@ exports[`/viewings renders 1`] = `
               type="button"
             >
               <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
+                focusable="false"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
                 />
               </svg>
               Show More
