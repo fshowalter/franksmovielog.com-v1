@@ -37,8 +37,8 @@
 
 .rightCss {
   display: grid;
-  grid-template-areas: ". list" ". ." "pagination pagination" ". .";
-  grid-template-columns: var(--step-1) 1fr;
+  grid-template-areas: "list" "." "pagination" ".";
+  grid-template-columns: 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
 
@@ -51,32 +51,22 @@
 }
 
 .listCss {
+  display: grid;
   grid-area: list;
+  grid-template-columns: 1fr auto calc(75px + 2 * var(--step--2));
 }
 
 .listItemCss {
-  border-bottom: solid 1px var(--color-background);
-  display: block;
-  padding-right: var(--step-1);
-
-  @media (min-width: breakpoints.$tablet) {
-    align-items: baseline;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 0;
+  display: contents;
+  &:nth-child(odd) > * {
+    background-color: #e9e7e061;
   }
 }
 
 .listItemTitleCss {
   color: var(--color-link);
-  display: block;
   font-size: 16px;
-  padding-top: var(--step--2);
-
-  @media (min-width: breakpoints.$desktop) {
-    flex-grow: 1;
-    padding: 0.5rem 0;
-  }
+  padding: 0.5rem var(--step--2) 0.5rem var(--step--1);
 }
 
 .listItemTitleYearCss {
@@ -86,31 +76,26 @@
 
 .listItemSlugCss {
   color: var(--color-text-secondary);
-  display: flex;
+  display: contents;
   font-feature-settings: "tnum";
   font-size: 0.875rem;
-  justify-items: baseline;
-  padding: 2px var(--step-1) var(--step--2) 0;
-
-  @media (min-width: breakpoints.$desktop) {
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding: 0;
-  }
 }
 
 .listItemLetterGradeCss {
-  min-width: 3ch;
+  color: var(--color-text-secondary);
+  font-feature-settings: "tnum";
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
   text-align: left;
 }
 
 .listItemGradeCss {
-  height: 15px;
-  width: auto;
-
-  @media (min-width: breakpoints.$desktop) {
-    height: 16px;
-  }
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem var(--step--2);
 }
 
 .toggleGradesButtonCss {
