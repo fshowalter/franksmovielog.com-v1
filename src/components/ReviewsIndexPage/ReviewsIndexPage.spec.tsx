@@ -107,21 +107,4 @@ describe("/reviews", () => {
 
     expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
   });
-
-  it("can show grades", () => {
-    render(<ReviewsIndexPage data={data} />);
-
-    userEvent.click(screen.getByText("Show Grades"));
-
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
-  });
-
-  it("can show stars", () => {
-    render(<ReviewsIndexPage data={data} />);
-
-    userEvent.click(screen.getByText("Show Grades"));
-    userEvent.click(screen.getByText("Show Stars"));
-
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
-  });
 });

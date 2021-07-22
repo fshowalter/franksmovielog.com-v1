@@ -1,6 +1,5 @@
 import { graphql, Link } from "gatsby";
 import React, { useReducer } from "react";
-import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
@@ -18,12 +17,10 @@ import {
   listItemCss,
   listItemGradeCss,
   listItemLetterGradeCss,
-  listItemSlugCss,
   listItemTitleCss,
   listItemTitleYearCss,
   pageHeaderCss,
   rightCss,
-  toggleGradesButtonCss,
 } from "./ReviewsIndexPage.module.scss";
 import type { SortType } from "./ReviewsIndexPage.reducer";
 import reducer, { ActionType, initState } from "./ReviewsIndexPage.reducer";
@@ -102,45 +99,6 @@ export default function ReviewsIndexPage({
               </option>
             </SelectInput>
           </Fieldset>
-          <div className={toggleGradesButtonCss}>
-            <Button
-              onClick={() => dispatch({ type: ActionType.TOGGLE_GRADES })}
-            >
-              {state.showGrades ? (
-                <>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                  Show Stars
-                </>
-              ) : (
-                <>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                    />
-                  </svg>
-                  Show Grades
-                </>
-              )}
-            </Button>
-          </div>
         </div>
         <div className={rightCss}>
           <ol data-testid="reviews-list" className={listCss}>
@@ -154,19 +112,12 @@ export default function ReviewsIndexPage({
                     {review.title}{" "}
                     <span className={listItemTitleYearCss}>{review.year}</span>
                   </Link>
-                  <div className={listItemSlugCss}>
-                    {}
-                    {state.showGrades ? (
-                      <div className={listItemLetterGradeCss}>
-                        {review.lastReviewGrade}
-                      </div>
-                    ) : (
-                      <Grade
-                        grade={review.lastReviewGrade}
-                        className={listItemGradeCss}
-                      />
-                    )}
+                  <div className={listItemLetterGradeCss}>
+                    {review.lastReviewGrade.replace("-", "\u2212")}
                   </div>
+                  <span className={listItemGradeCss}>
+                    <Grade grade={review.lastReviewGrade} />
+                  </span>
                 </li>
               );
             })}
