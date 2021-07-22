@@ -37,7 +37,7 @@
 
 .rightCss {
   display: grid;
-  grid-template-areas: ". list" ". ." "show_more show_more" ". .";
+  grid-template-areas: ". list" ". ." ". show_more" ". .";
   grid-template-columns: var(--step-1) 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
@@ -113,5 +113,8 @@
 
 .showMoreCss {
   grid-area: show_more;
-  justify-self: center;
+
+  @media (max-width: breakpoints.$tablet) {
+    padding-right: var(--step-1);
+  }
 }

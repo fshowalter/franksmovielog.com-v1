@@ -1,29 +1,23 @@
 .buttonCss {
-  align-items: center;
-  background-color: #3276b1;
-  border: 0;
-  border-bottom: solid 1px #285e8e;
-  border-radius: 4px;
-  border-right: solid 1px #285e8e;
-  box-shadow: inset 0 0 0 #777, 0 2px 3px rgb(0 0 0 / 40%);
-  color: #fff;
-  display: flex;
-  flex-direction: row;
+  background-color: darken(#fff, 2);
+  border: solid 1px darken(#e9e7e0, 10);
+  border-radius: 20px;
+  cursor: pointer;
   font-size: 1rem;
-  gap: 1ch;
-  justify-content: center;
-  line-height: calc(1ex / 0.32);
   margin-top: 1rem;
-  padding: calc(var(--step--2) / 2) var(--step--1);
+  padding: 0.5rem 1rem;
+  position: relative;
   white-space: nowrap;
-
-  &:hover {
-    box-shadow: 0 0 0 #777, 0 4px 6px rgb(0 0 0 / 40%);
-    cursor: pointer;
-  }
+  width: 100%;
 
   svg {
     height: 20px;
+    left: 1rem;
+    position: absolute;
     width: 20px;
+  }
+
+  &:hover {
+    border-color: var(--color-link);
   }
 }
