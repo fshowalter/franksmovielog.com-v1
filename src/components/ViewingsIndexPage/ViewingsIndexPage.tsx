@@ -17,7 +17,6 @@ import {
   listCss,
   listInfoCss,
   listItemCss,
-  listItemFirstCss,
   listItemSlugCss,
   listItemTitleCss,
   listItemTitleLinkCss,
@@ -201,22 +200,18 @@ export default function ViewingsIndexPage({
         </div>
         <div className={rightCss} ref={listHeader}>
           <ol data-testid="viewings-list" className={listCss}>
-            {state.filteredViewings
-              .slice(0, state.showCount)
-              .map((viewing, index) => {
-                return (
-                  <li
-                    value={viewing.sequence}
-                    key={viewing.sequence}
-                    className={`${listItemCss} ${
-                      index === 0 ? listItemFirstCss : ""
-                    }`}
-                  >
-                    <ViewingTitle viewing={viewing} />
-                    <ViewingSlug viewing={viewing} />
-                  </li>
-                );
-              })}
+            {state.filteredViewings.slice(0, state.showCount).map((viewing) => {
+              return (
+                <li
+                  value={viewing.sequence}
+                  key={viewing.sequence}
+                  className={listItemCss}
+                >
+                  <ViewingTitle viewing={viewing} />
+                  <ViewingSlug viewing={viewing} />
+                </li>
+              );
+            })}
           </ol>
           <div className={showMoreCss}>
             {state.filteredViewings.length > state.showCount && (

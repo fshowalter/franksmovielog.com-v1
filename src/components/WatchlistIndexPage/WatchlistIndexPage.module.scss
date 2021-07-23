@@ -37,8 +37,9 @@
 
 .rightCss {
   display: grid;
-  grid-template-areas: ". list" ". ." ". show_more" ". .";
-  grid-template-columns: var(--step-1) 1fr;
+
+  grid-template-areas: "list" "." "show_more" ".";
+  grid-template-columns: 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
 }
 
@@ -59,7 +60,7 @@
   grid-area: show_more;
 
   @media (max-width: breakpoints.$tablet) {
-    padding-right: var(--step-1);
+    padding: 0 var(--step-1);
   }
 }
 
@@ -72,22 +73,20 @@
 }
 
 .listItemCss {
-  border-bottom: solid 1px var(--color-background);
   display: grid;
   grid-template-areas: "title . checkmark ." "slug . checkmark .";
   grid-template-columns: 1fr var(--step-1) 3rem 1rem;
+  padding-left: var(--step-1);
+
+  &:nth-child(odd) {
+    background-color: #e9e7e061;
+  }
 }
 
 .listItemTitleCss {
   font-size: 1.125rem;
   grid-area: title;
   padding: 1.5rem var(--step-1) 0.25rem 0;
-}
-
-.listItemFirstCss {
-  .listItemTitleCss {
-    padding-top: 0.5rem;
-  }
 }
 
 .listItemTitleLinkCss {
