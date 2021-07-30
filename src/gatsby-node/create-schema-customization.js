@@ -14,8 +14,6 @@ async function resolveFieldForNode(fieldName, nodeItem, context, info, args) {
 
   const type = info.schema.getType(nodeItem.internal.type);
 
-  console.log(type.getFields());
-
   const resolver = type.getFields()[fieldName].resolve;
 
   return resolver(nodeItem, args, context, { ...info, fieldName });
