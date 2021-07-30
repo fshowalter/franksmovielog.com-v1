@@ -19,7 +19,6 @@ import {
   listInfoCss,
   listItemCheckmarkCss,
   listItemCss,
-  listItemFirstCss,
   listItemSlugCss,
   listItemTitleCss,
   listItemTitleLinkCss,
@@ -432,22 +431,15 @@ export default function WatchlistIndexPage({
         </div>
         <div ref={listHeader} className={rightCss}>
           <ol data-testid="watchlist-list" className={listCss}>
-            {state.filteredMovies
-              .slice(0, state.showCount)
-              .map((movie, index) => {
-                return (
-                  <li
-                    key={movie.imdbId}
-                    className={`${listItemCss} ${
-                      index === 0 ? listItemFirstCss : ""
-                    }`}
-                  >
-                    <WatchlistMovieTitle movie={movie} />
-                    <WatchlistMovieSlug movie={movie} />
-                    <WatchlistMovieCheckMark movie={movie} />
-                  </li>
-                );
-              })}
+            {state.filteredMovies.slice(0, state.showCount).map((movie) => {
+              return (
+                <li key={movie.imdbId} className={listItemCss}>
+                  <WatchlistMovieTitle movie={movie} />
+                  <WatchlistMovieSlug movie={movie} />
+                  <WatchlistMovieCheckMark movie={movie} />
+                </li>
+              );
+            })}
           </ol>
           <div className={showMoreCss}>
             {state.filteredMovies.length > state.showCount && (
