@@ -50,13 +50,14 @@ function sortReviews(
     SortType,
     (a: ReviewedMovie, b: ReviewedMovie) => number
   > = {
-    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
-    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
-    "grade-asc": (a, b) =>
-      sortNumberAsc(a.lastReviewGradeValue, b.lastReviewGradeValue),
-    "grade-desc": (a, b) =>
-      sortNumberDesc(a.lastReviewGradeValue, b.lastReviewGradeValue),
+    title: (a, b) =>
+      collator.compare(a.reviewedMovie.sortTitle, b.reviewedMovie.sortTitle),
+    "release-date-desc": (a, b) =>
+      sortStringDesc(a.reviewedMovie.releaseDate, b.reviewedMovie.releaseDate),
+    "release-date-asc": (a, b) =>
+      sortStringAsc(a.reviewedMovie.releaseDate, b.reviewedMovie.releaseDate),
+    "grade-asc": (a, b) => sortNumberAsc(a.gradeValue, b.gradeValue),
+    "grade-desc": (a, b) => sortNumberDesc(a.gradeValue, b.gradeValue),
   };
 
   const comparer = sortMap[sortOrder];
@@ -71,7 +72,7 @@ function sortReviews(
 function minMaxReleaseYearsForReviews(reviews: ReviewedMovie[]) {
   const releaseYears = reviews
     .map((review) => {
-      return review.year;
+      return review.reviewedMovie.year;
     })
     .sort();
 
@@ -141,7 +142,7 @@ export default function reducer(state: State, action: Action): State {
       filters = {
         ...state.filters,
         title: (review: ReviewedMovie) => {
-          return regex.test(review.title);
+          return regex.test(review.reviewedMovie.title);
         },
       };
       filteredReviews = sortReviews(
@@ -158,7 +159,7 @@ export default function reducer(state: State, action: Action): State {
       filters = {
         ...state.filters,
         releaseYear: (review: ReviewedMovie) => {
-          const releaseYear = review.year;
+          const releaseYear = review.reviewedMovie.year;
 
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]

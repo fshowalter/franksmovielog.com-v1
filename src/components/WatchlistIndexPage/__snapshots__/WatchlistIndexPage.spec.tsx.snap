@@ -6,7 +6,7 @@ exports[`/watchlist can filter by collection 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -48,7 +48,7 @@ exports[`/watchlist can filter by collection 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -90,7 +90,7 @@ exports[`/watchlist can filter by collection 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -134,7 +134,7 @@ exports[`/watchlist can filter by collection 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -159,7 +159,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -201,7 +201,7 @@ exports[`/watchlist can filter by collection 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -245,7 +245,7 @@ exports[`/watchlist can filter by collection 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -287,7 +287,7 @@ exports[`/watchlist can filter by collection 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -331,7 +331,7 @@ exports[`/watchlist can filter by collection 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -358,7 +358,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -383,7 +383,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -408,7 +408,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -435,7 +435,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -462,7 +462,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -487,7 +487,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -514,7 +514,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -539,7 +539,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -564,7 +564,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -589,7 +589,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -616,7 +616,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -643,7 +643,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -668,7 +668,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -695,7 +695,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -720,7 +720,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -747,7 +747,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -774,7 +774,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -799,7 +799,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -824,7 +824,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -851,7 +851,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -878,7 +878,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -905,7 +905,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -930,7 +930,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -955,7 +955,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -980,7 +980,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1005,7 +1005,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1030,7 +1030,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1055,7 +1055,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1080,7 +1080,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1105,7 +1105,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1132,7 +1132,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1159,7 +1159,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1186,7 +1186,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1211,7 +1211,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1236,7 +1236,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1261,7 +1261,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1286,7 +1286,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1313,7 +1313,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1338,7 +1338,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1365,7 +1365,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1392,7 +1392,7 @@ exports[`/watchlist can filter by collection 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1425,7 +1425,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1467,7 +1467,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1509,7 +1509,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1551,7 +1551,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1593,7 +1593,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1635,7 +1635,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1677,7 +1677,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1719,7 +1719,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1761,7 +1761,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1803,7 +1803,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1847,7 +1847,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1889,7 +1889,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1931,7 +1931,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -1973,7 +1973,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2015,7 +2015,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2057,7 +2057,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2099,7 +2099,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2124,7 +2124,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2166,7 +2166,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2208,7 +2208,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2250,7 +2250,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2292,7 +2292,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2334,7 +2334,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2376,7 +2376,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2418,7 +2418,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2460,7 +2460,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2502,7 +2502,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2546,7 +2546,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2571,7 +2571,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2613,7 +2613,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2655,7 +2655,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2697,7 +2697,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2739,7 +2739,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2783,7 +2783,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2825,7 +2825,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2850,7 +2850,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2897,7 +2897,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2922,7 +2922,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -2964,7 +2964,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3006,7 +3006,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3048,7 +3048,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3090,7 +3090,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3132,7 +3132,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3157,7 +3157,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3199,7 +3199,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3241,7 +3241,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3283,7 +3283,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3308,7 +3308,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3333,7 +3333,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3375,7 +3375,7 @@ exports[`/watchlist can filter by collection then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3425,7 +3425,7 @@ exports[`/watchlist can filter by director 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3467,7 +3467,7 @@ exports[`/watchlist can filter by director 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3511,7 +3511,7 @@ exports[`/watchlist can filter by director 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3538,7 +3538,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3563,7 +3563,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3588,7 +3588,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3613,7 +3613,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3638,7 +3638,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3663,7 +3663,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3688,7 +3688,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3713,7 +3713,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3738,7 +3738,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3763,7 +3763,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3788,7 +3788,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3815,7 +3815,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3842,7 +3842,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3869,7 +3869,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3894,7 +3894,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3919,7 +3919,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3944,7 +3944,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3969,7 +3969,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -3994,7 +3994,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4021,7 +4021,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4051,7 +4051,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4078,7 +4078,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4103,7 +4103,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4130,7 +4130,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4155,7 +4155,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4180,7 +4180,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4207,7 +4207,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4234,7 +4234,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4261,7 +4261,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4286,7 +4286,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4333,7 +4333,7 @@ exports[`/watchlist can filter by director 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4363,7 +4363,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4388,7 +4388,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4413,7 +4413,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4443,7 +4443,7 @@ exports[`/watchlist can filter by director 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4481,7 +4481,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4523,7 +4523,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4565,7 +4565,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4607,7 +4607,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4649,7 +4649,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4691,7 +4691,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4733,7 +4733,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4775,7 +4775,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4817,7 +4817,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4859,7 +4859,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4903,7 +4903,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4945,7 +4945,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -4987,7 +4987,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5029,7 +5029,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5071,7 +5071,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5113,7 +5113,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5155,7 +5155,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5180,7 +5180,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5222,7 +5222,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5264,7 +5264,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5306,7 +5306,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5348,7 +5348,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5390,7 +5390,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5432,7 +5432,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5474,7 +5474,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5516,7 +5516,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5558,7 +5558,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5602,7 +5602,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5627,7 +5627,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5669,7 +5669,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5711,7 +5711,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5753,7 +5753,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5795,7 +5795,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5839,7 +5839,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5881,7 +5881,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5906,7 +5906,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5953,7 +5953,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -5978,7 +5978,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6020,7 +6020,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6062,7 +6062,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6104,7 +6104,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6146,7 +6146,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6188,7 +6188,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6213,7 +6213,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6255,7 +6255,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6297,7 +6297,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6339,7 +6339,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6364,7 +6364,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6389,7 +6389,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6431,7 +6431,7 @@ exports[`/watchlist can filter by director then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6488,7 +6488,7 @@ exports[`/watchlist can filter by performer 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6530,7 +6530,7 @@ exports[`/watchlist can filter by performer 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6555,7 +6555,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6597,7 +6597,7 @@ exports[`/watchlist can filter by performer 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6639,7 +6639,7 @@ exports[`/watchlist can filter by performer 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6664,7 +6664,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6689,7 +6689,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6731,7 +6731,7 @@ exports[`/watchlist can filter by performer 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6756,7 +6756,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6781,7 +6781,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6806,7 +6806,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6831,7 +6831,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6856,7 +6856,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6881,7 +6881,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6906,7 +6906,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6931,7 +6931,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6956,7 +6956,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -6981,7 +6981,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7006,7 +7006,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7031,7 +7031,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7056,7 +7056,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7081,7 +7081,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7106,7 +7106,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7131,7 +7131,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7156,7 +7156,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7181,7 +7181,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7206,7 +7206,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7231,7 +7231,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7256,7 +7256,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7281,7 +7281,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7306,7 +7306,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7331,7 +7331,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7356,7 +7356,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7381,7 +7381,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7406,7 +7406,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7431,7 +7431,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7456,7 +7456,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7481,7 +7481,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7506,7 +7506,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7531,7 +7531,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7556,7 +7556,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7581,7 +7581,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7606,7 +7606,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7631,7 +7631,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7656,7 +7656,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7681,7 +7681,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7706,7 +7706,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7731,7 +7731,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7756,7 +7756,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7783,7 +7783,7 @@ exports[`/watchlist can filter by performer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7816,7 +7816,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7858,7 +7858,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7900,7 +7900,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7942,7 +7942,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -7984,7 +7984,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8026,7 +8026,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8068,7 +8068,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8110,7 +8110,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8152,7 +8152,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8194,7 +8194,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8238,7 +8238,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8280,7 +8280,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8322,7 +8322,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8364,7 +8364,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8406,7 +8406,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8448,7 +8448,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8490,7 +8490,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8515,7 +8515,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8557,7 +8557,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8599,7 +8599,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8641,7 +8641,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8683,7 +8683,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8725,7 +8725,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8767,7 +8767,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8809,7 +8809,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8851,7 +8851,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8893,7 +8893,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8937,7 +8937,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -8962,7 +8962,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9004,7 +9004,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9046,7 +9046,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9088,7 +9088,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9130,7 +9130,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9174,7 +9174,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9216,7 +9216,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9241,7 +9241,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9288,7 +9288,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9313,7 +9313,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9355,7 +9355,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9397,7 +9397,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9439,7 +9439,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9481,7 +9481,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9523,7 +9523,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9548,7 +9548,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9590,7 +9590,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9632,7 +9632,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9674,7 +9674,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9699,7 +9699,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9724,7 +9724,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9766,7 +9766,7 @@ exports[`/watchlist can filter by performer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9816,7 +9816,7 @@ exports[`/watchlist can filter by release year 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9841,7 +9841,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9866,7 +9866,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9891,7 +9891,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9916,7 +9916,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9941,7 +9941,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9966,7 +9966,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -9991,7 +9991,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10016,7 +10016,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10041,7 +10041,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10066,7 +10066,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10091,7 +10091,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10116,7 +10116,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10141,7 +10141,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10183,7 +10183,7 @@ exports[`/watchlist can filter by release year 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10208,7 +10208,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10233,7 +10233,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10258,7 +10258,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10283,7 +10283,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10308,7 +10308,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10352,7 +10352,7 @@ exports[`/watchlist can filter by release year 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10377,7 +10377,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10402,7 +10402,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10427,7 +10427,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10454,7 +10454,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10479,7 +10479,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10504,7 +10504,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10531,7 +10531,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10556,7 +10556,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10581,7 +10581,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10606,7 +10606,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10631,7 +10631,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10656,7 +10656,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10681,7 +10681,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10706,7 +10706,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10731,7 +10731,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10756,7 +10756,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10798,7 +10798,7 @@ exports[`/watchlist can filter by release year 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10823,7 +10823,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10848,7 +10848,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10890,7 +10890,7 @@ exports[`/watchlist can filter by release year 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10915,7 +10915,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10942,7 +10942,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10967,7 +10967,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -10992,7 +10992,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11019,7 +11019,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11044,7 +11044,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11069,7 +11069,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11094,7 +11094,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11119,7 +11119,7 @@ exports[`/watchlist can filter by release year 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11152,7 +11152,7 @@ exports[`/watchlist can filter by title 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11185,7 +11185,7 @@ exports[`/watchlist can filter by writer 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11210,7 +11210,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11235,7 +11235,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11277,7 +11277,7 @@ exports[`/watchlist can filter by writer 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11319,7 +11319,7 @@ exports[`/watchlist can filter by writer 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11344,7 +11344,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11369,7 +11369,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11394,7 +11394,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11419,7 +11419,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11444,7 +11444,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11469,7 +11469,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11494,7 +11494,7 @@ exports[`/watchlist can filter by writer 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11527,7 +11527,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11569,7 +11569,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11611,7 +11611,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11653,7 +11653,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11695,7 +11695,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11737,7 +11737,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11779,7 +11779,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11821,7 +11821,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11863,7 +11863,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11905,7 +11905,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11949,7 +11949,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -11991,7 +11991,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12033,7 +12033,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12075,7 +12075,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12117,7 +12117,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12159,7 +12159,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12201,7 +12201,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12226,7 +12226,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12268,7 +12268,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12310,7 +12310,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12352,7 +12352,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12394,7 +12394,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12436,7 +12436,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12478,7 +12478,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12520,7 +12520,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12562,7 +12562,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12604,7 +12604,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12648,7 +12648,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12673,7 +12673,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12715,7 +12715,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12757,7 +12757,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12799,7 +12799,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12841,7 +12841,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12885,7 +12885,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12927,7 +12927,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12952,7 +12952,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -12999,7 +12999,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13024,7 +13024,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13066,7 +13066,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13108,7 +13108,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13150,7 +13150,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13192,7 +13192,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13234,7 +13234,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13259,7 +13259,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13301,7 +13301,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13343,7 +13343,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13385,7 +13385,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13410,7 +13410,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13435,7 +13435,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13477,7 +13477,7 @@ exports[`/watchlist can filter by writer then show all 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13527,7 +13527,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13552,7 +13552,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13577,7 +13577,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13602,7 +13602,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13627,7 +13627,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13652,7 +13652,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13677,7 +13677,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13702,7 +13702,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13727,7 +13727,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13752,7 +13752,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13777,7 +13777,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13802,7 +13802,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13827,7 +13827,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13852,7 +13852,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13877,7 +13877,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13902,7 +13902,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13927,7 +13927,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13952,7 +13952,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -13977,7 +13977,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14004,7 +14004,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14029,7 +14029,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14054,7 +14054,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14079,7 +14079,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14104,7 +14104,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14129,7 +14129,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14154,7 +14154,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14179,7 +14179,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14204,7 +14204,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14229,7 +14229,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14254,7 +14254,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14279,7 +14279,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14304,7 +14304,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14329,7 +14329,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14354,7 +14354,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14379,7 +14379,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14404,7 +14404,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14429,7 +14429,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14454,7 +14454,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14479,7 +14479,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14504,7 +14504,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14529,7 +14529,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14554,7 +14554,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14579,7 +14579,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14604,7 +14604,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14629,7 +14629,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14654,7 +14654,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14679,7 +14679,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14704,7 +14704,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14729,7 +14729,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14754,7 +14754,7 @@ exports[`/watchlist can hide reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14787,7 +14787,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14829,7 +14829,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14871,7 +14871,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14913,7 +14913,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14955,7 +14955,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -14997,7 +14997,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15039,7 +15039,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15081,7 +15081,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15123,7 +15123,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15165,7 +15165,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15209,7 +15209,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15251,7 +15251,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15293,7 +15293,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15335,7 +15335,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15377,7 +15377,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15419,7 +15419,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15461,7 +15461,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15486,7 +15486,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15528,7 +15528,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15570,7 +15570,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15612,7 +15612,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15654,7 +15654,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15696,7 +15696,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15738,7 +15738,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15780,7 +15780,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15822,7 +15822,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15864,7 +15864,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15908,7 +15908,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15933,7 +15933,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -15975,7 +15975,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16017,7 +16017,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16059,7 +16059,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16101,7 +16101,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16145,7 +16145,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16187,7 +16187,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16212,7 +16212,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16259,7 +16259,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16284,7 +16284,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16326,7 +16326,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16368,7 +16368,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16410,7 +16410,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16452,7 +16452,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16494,7 +16494,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16519,7 +16519,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16561,7 +16561,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16603,7 +16603,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16645,7 +16645,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16670,7 +16670,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16695,7 +16695,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16737,7 +16737,7 @@ exports[`/watchlist can show hidden reviewed titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16787,7 +16787,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16812,7 +16812,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16837,7 +16837,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16862,7 +16862,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16887,7 +16887,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16912,7 +16912,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16937,7 +16937,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16962,7 +16962,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -16987,7 +16987,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17012,7 +17012,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17037,7 +17037,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17062,7 +17062,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17087,7 +17087,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17112,7 +17112,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17137,7 +17137,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17162,7 +17162,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17187,7 +17187,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17212,7 +17212,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17237,7 +17237,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17262,7 +17262,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17287,7 +17287,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17312,7 +17312,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17337,7 +17337,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17362,7 +17362,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17387,7 +17387,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17412,7 +17412,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17437,7 +17437,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17462,7 +17462,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17487,7 +17487,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17512,7 +17512,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17537,7 +17537,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17562,7 +17562,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17587,7 +17587,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17612,7 +17612,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17637,7 +17637,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17679,7 +17679,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17721,7 +17721,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17746,7 +17746,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17771,7 +17771,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17796,7 +17796,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17821,7 +17821,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17846,7 +17846,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17871,7 +17871,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17896,7 +17896,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17921,7 +17921,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17946,7 +17946,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17971,7 +17971,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -17996,7 +17996,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18021,7 +18021,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18046,7 +18046,7 @@ exports[`/watchlist can sort by release date with newest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18079,7 +18079,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18121,7 +18121,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18163,7 +18163,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18205,7 +18205,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18247,7 +18247,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18289,7 +18289,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18331,7 +18331,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18373,7 +18373,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18415,7 +18415,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18457,7 +18457,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18501,7 +18501,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18543,7 +18543,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18585,7 +18585,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18627,7 +18627,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18669,7 +18669,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18711,7 +18711,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18753,7 +18753,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18778,7 +18778,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18820,7 +18820,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18862,7 +18862,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18904,7 +18904,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18946,7 +18946,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -18988,7 +18988,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19030,7 +19030,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19072,7 +19072,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19114,7 +19114,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19156,7 +19156,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19200,7 +19200,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19225,7 +19225,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19267,7 +19267,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19309,7 +19309,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19351,7 +19351,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19393,7 +19393,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19437,7 +19437,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19479,7 +19479,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19504,7 +19504,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19551,7 +19551,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19576,7 +19576,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19618,7 +19618,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19660,7 +19660,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19702,7 +19702,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19744,7 +19744,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19786,7 +19786,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19811,7 +19811,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19853,7 +19853,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19895,7 +19895,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19937,7 +19937,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19962,7 +19962,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -19987,7 +19987,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20029,7 +20029,7 @@ exports[`/watchlist can sort by release date with oldest first 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20079,7 +20079,7 @@ exports[`/watchlist can sort by title 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20104,7 +20104,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20131,7 +20131,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20156,7 +20156,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20181,7 +20181,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20206,7 +20206,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20231,7 +20231,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20256,7 +20256,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20281,7 +20281,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20306,7 +20306,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20331,7 +20331,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20356,7 +20356,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20381,7 +20381,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20406,7 +20406,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20431,7 +20431,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20456,7 +20456,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20498,7 +20498,7 @@ exports[`/watchlist can sort by title 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20523,7 +20523,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20548,7 +20548,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20573,7 +20573,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20598,7 +20598,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20623,7 +20623,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20648,7 +20648,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20673,7 +20673,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20698,7 +20698,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20723,7 +20723,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20748,7 +20748,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20775,7 +20775,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20800,7 +20800,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20825,7 +20825,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20869,7 +20869,7 @@ exports[`/watchlist can sort by title 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20894,7 +20894,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20919,7 +20919,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20944,7 +20944,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20969,7 +20969,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -20994,7 +20994,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21019,7 +21019,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21044,7 +21044,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21069,7 +21069,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21096,7 +21096,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21121,7 +21121,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21146,7 +21146,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21171,7 +21171,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21196,7 +21196,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21221,7 +21221,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21246,7 +21246,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21271,7 +21271,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21296,7 +21296,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21321,7 +21321,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21346,7 +21346,7 @@ exports[`/watchlist can sort by title 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21379,7 +21379,7 @@ exports[`/watchlist can view more titles 1`] = `
   data-testid="watchlist-list"
 >
   <li
-    class="listItemCss listItemFirstCss"
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21421,7 +21421,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21463,7 +21463,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21505,7 +21505,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21547,7 +21547,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21589,7 +21589,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21631,7 +21631,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21673,7 +21673,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21715,7 +21715,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21757,7 +21757,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21801,7 +21801,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21843,7 +21843,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21885,7 +21885,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21927,7 +21927,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -21969,7 +21969,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22011,7 +22011,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22053,7 +22053,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22078,7 +22078,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22120,7 +22120,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22162,7 +22162,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22204,7 +22204,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22246,7 +22246,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22288,7 +22288,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22330,7 +22330,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22372,7 +22372,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22414,7 +22414,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22456,7 +22456,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22500,7 +22500,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22525,7 +22525,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22567,7 +22567,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22609,7 +22609,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22651,7 +22651,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22693,7 +22693,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22737,7 +22737,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22779,7 +22779,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22804,7 +22804,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22851,7 +22851,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22876,7 +22876,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22918,7 +22918,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -22960,7 +22960,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23002,7 +23002,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23044,7 +23044,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23086,7 +23086,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23111,7 +23111,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23153,7 +23153,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23195,7 +23195,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23237,7 +23237,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23262,7 +23262,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23287,7 +23287,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23329,7 +23329,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23371,7 +23371,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23413,7 +23413,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23455,7 +23455,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23497,7 +23497,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23539,7 +23539,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23564,7 +23564,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23606,7 +23606,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23648,7 +23648,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23690,7 +23690,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23715,7 +23715,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23757,7 +23757,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23799,7 +23799,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23841,7 +23841,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23883,7 +23883,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23927,7 +23927,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23969,7 +23969,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -23994,7 +23994,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24036,7 +24036,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24078,7 +24078,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24120,7 +24120,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24162,7 +24162,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24204,7 +24204,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24246,7 +24246,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24271,7 +24271,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24296,7 +24296,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24321,7 +24321,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24363,7 +24363,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24388,7 +24388,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24413,7 +24413,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24438,7 +24438,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24463,7 +24463,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24488,7 +24488,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24515,7 +24515,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24540,7 +24540,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24582,7 +24582,7 @@ exports[`/watchlist can view more titles 1`] = `
     </svg>
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24607,7 +24607,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24632,7 +24632,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24657,7 +24657,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24682,7 +24682,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24707,7 +24707,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24732,7 +24732,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24757,7 +24757,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24782,7 +24782,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24807,7 +24807,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24832,7 +24832,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24857,7 +24857,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24882,7 +24882,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24907,7 +24907,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24932,7 +24932,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -24957,7 +24957,7 @@ exports[`/watchlist can view more titles 1`] = `
     />
   </li>
   <li
-    class="listItemCss "
+    class="listItemCss"
   >
     <div
       class="listItemTitleCss"
@@ -25943,7 +25943,7 @@ exports[`/watchlist renders 1`] = `
             data-testid="watchlist-list"
           >
             <li
-              class="listItemCss listItemFirstCss"
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -25982,7 +25982,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26021,7 +26021,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26060,7 +26060,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26099,7 +26099,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26138,7 +26138,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26177,7 +26177,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26216,7 +26216,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26255,7 +26255,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26294,7 +26294,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26333,7 +26333,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26372,7 +26372,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26411,7 +26411,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26450,7 +26450,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26489,7 +26489,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26528,7 +26528,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26567,7 +26567,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26589,7 +26589,7 @@ exports[`/watchlist renders 1`] = `
               />
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26628,7 +26628,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26667,7 +26667,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26706,7 +26706,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26745,7 +26745,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26784,7 +26784,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26823,7 +26823,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26862,7 +26862,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26901,7 +26901,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26940,7 +26940,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -26979,7 +26979,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27001,7 +27001,7 @@ exports[`/watchlist renders 1`] = `
               />
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27040,7 +27040,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27079,7 +27079,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27118,7 +27118,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27157,7 +27157,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27196,7 +27196,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27235,7 +27235,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27257,7 +27257,7 @@ exports[`/watchlist renders 1`] = `
               />
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27296,7 +27296,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27318,7 +27318,7 @@ exports[`/watchlist renders 1`] = `
               />
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27357,7 +27357,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27396,7 +27396,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27435,7 +27435,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27474,7 +27474,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27513,7 +27513,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27535,7 +27535,7 @@ exports[`/watchlist renders 1`] = `
               />
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27574,7 +27574,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27613,7 +27613,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27652,7 +27652,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27674,7 +27674,7 @@ exports[`/watchlist renders 1`] = `
               />
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27696,7 +27696,7 @@ exports[`/watchlist renders 1`] = `
               />
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"
@@ -27735,7 +27735,7 @@ exports[`/watchlist renders 1`] = `
               </svg>
             </li>
             <li
-              class="listItemCss "
+              class="listItemCss"
             >
               <div
                 class="listItemTitleCss"

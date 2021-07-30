@@ -3,7 +3,6 @@ import React, { useReducer } from "react";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
-import Grade from "../Grade";
 import Layout from "../Layout";
 import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
@@ -15,7 +14,12 @@ import {
   leftCss,
   listCss,
   listItemCss,
-  listItemGradeCss,
+  listItemDateCss,
+  listItemGradeACss,
+  listItemGradeBCss,
+  listItemGradeCCss,
+  listItemGradeDCss,
+  listItemGradeFCss,
   listItemLetterGradeCss,
   listItemTitleCss,
   listItemTitleYearCss,
@@ -24,6 +28,26 @@ import {
 } from "./ReviewsIndexPage.module.scss";
 import type { SortType } from "./ReviewsIndexPage.reducer";
 import reducer, { ActionType, initState } from "./ReviewsIndexPage.reducer";
+
+function gradeCssForReview(review: ReviewedMovie): string {
+  if (review.gradeValue > 9) {
+    return listItemGradeACss;
+  }
+
+  if (review.gradeValue > 6) {
+    return listItemGradeBCss;
+  }
+
+  if (review.gradeValue > 3) {
+    return listItemGradeCCss;
+  }
+
+  if (review.gradeValue > 0) {
+    return listItemGradeDCss;
+  }
+
+  return listItemGradeFCss;
+}
 
 /**
  * Renders the reviews page.
@@ -36,7 +60,7 @@ export default function ReviewsIndexPage({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      reviews: [...data.reviews.nodes],
+      reviews: [...data.review.nodes],
     },
     initState
   );
@@ -104,20 +128,25 @@ export default function ReviewsIndexPage({
           <ol data-testid="reviews-list" className={listCss}>
             {state.filteredReviews.map((review) => {
               return (
-                <li className={listItemCss} key={review.imdbId}>
+                <li
+                  className={`${listItemCss} ${gradeCssForReview(review)}`}
+                  key={review.frontmatter.sequence}
+                >
                   <Link
-                    to={`/reviews/${review.slug}/`}
+                    to={`/reviews/${review.frontmatter.slug}/#${review.frontmatter.sequence}`}
                     className={listItemTitleCss}
                   >
-                    {review.title}{" "}
-                    <span className={listItemTitleYearCss}>{review.year}</span>
+                    {review.reviewedMovie.title}{" "}
+                    <span className={listItemTitleYearCss}>
+                      {review.reviewedMovie.year}
+                    </span>
                   </Link>
                   <div className={listItemLetterGradeCss}>
-                    {review.lastReviewGrade.replace("-", "\u2212")}
+                    {review.frontmatter.grade.replace("-", "\u2212")}
                   </div>
-                  <span className={listItemGradeCss}>
-                    <Grade grade={review.lastReviewGrade} />
-                  </span>
+                  <div className={listItemDateCss}>
+                    {review.frontmatter.date}
+                  </div>
                 </li>
               );
             })}
@@ -129,34 +158,47 @@ export default function ReviewsIndexPage({
 }
 
 interface PageQueryResult {
-  reviews: {
+  review: {
     nodes: ReviewedMovie[];
   };
 }
 
 export interface ReviewedMovie {
-  releaseDate: string;
-  lastReviewGrade: string;
-  lastReviewGradeValue: number;
-  slug: string;
-  imdbId: string;
-  title: string;
-  year: number;
-  sortTitle: string;
+  frontmatter: {
+    grade: string;
+    slug: string;
+    sequence: number;
+    date: string;
+  };
+  reviewedMovie: {
+    releaseDate: string;
+    title: string;
+    year: number;
+    sortTitle: string;
+  };
+  gradeValue: number;
 }
 
 export const query = graphql`
   query {
-    reviews: allReviewedMoviesJson(sort: { fields: [sort_title], order: ASC }) {
+    review: allMarkdownRemark(
+      sort: { fields: [reviewedMovie___sort_title] }
+      filter: { postType: { eq: "REVIEW" } }
+    ) {
       nodes {
-        releaseDate: release_date
-        imdbId: imdb_id
-        title
-        year
-        lastReviewGrade
-        lastReviewGradeValue
-        sortTitle: sort_title
-        slug
+        frontmatter {
+          date(formatString: "YYYY-MM-DD")
+          grade
+          slug
+          sequence
+        }
+        reviewedMovie {
+          title
+          year
+          releaseDate: release_date
+          sortTitle: sort_title
+        }
+        gradeValue
       }
     }
   }

@@ -4,7 +4,6 @@ export const leftCss: string;
 export const listCss: string;
 export const listInfoCss: string;
 export const listItemCss: string;
-export const listItemFirstCss: string;
 export const listItemSlugCss: string;
 export const listItemTitleCss: string;
 export const listItemTitleLinkCss: string;
