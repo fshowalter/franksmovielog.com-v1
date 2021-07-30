@@ -14,6 +14,8 @@ async function resolveFieldForNode(fieldName, nodeItem, context, info, args) {
 
   const type = info.schema.getType(nodeItem.internal.type);
 
+  console.log(type.getFields());
+
   const resolver = type.getFields()[fieldName].resolve;
 
   return resolver(nodeItem, args, context, { ...info, fieldName });
@@ -341,6 +343,65 @@ const MarkdownRemark = {
         return addReviewLinks(html, context.nodeModel);
       },
     },
+    gradeValue: {
+      type: "Int",
+      resolve: async (source, args, context, info) => {
+        const frontMatter = await resolveFieldForNode(
+          "frontmatter",
+          source,
+          context,
+          info
+        );
+
+        const grade = frontMatter.grade;
+
+        if (!grade) {
+          return null;
+        }
+
+        switch (grade) {
+          case "A+": {
+            return 12;
+          }
+          case "A": {
+            return 11;
+          }
+          case "A-": {
+            return 10;
+          }
+          case "B+": {
+            return 9;
+          }
+          case "B": {
+            return 8;
+          }
+          case "B-": {
+            return 7;
+          }
+          case "C+": {
+            return 6;
+          }
+          case "C": {
+            return 5;
+          }
+          case "C-": {
+            return 4;
+          }
+          case "D+": {
+            return 3;
+          }
+          case "D": {
+            return 2;
+          }
+          case "D-": {
+            return 1;
+          }
+          default: {
+            return 0;
+          }
+        }
+      },
+    },
   },
 };
 
@@ -397,58 +458,13 @@ const ReviewedMoviesJson = {
     lastReviewGradeValue: {
       type: "Int",
       resolve: async (source, args, context, info) => {
-        const grade = await resolveFieldForNode(
-          "lastReviewGrade",
+        const reviews = await resolveFieldForNode(
+          "reviews",
           source,
           context,
           info
         );
-
-        if (!grade) {
-          return null;
-        }
-
-        switch (grade) {
-          case "A+": {
-            return 12;
-          }
-          case "A": {
-            return 11;
-          }
-          case "A-": {
-            return 10;
-          }
-          case "B+": {
-            return 9;
-          }
-          case "B": {
-            return 8;
-          }
-          case "B-": {
-            return 7;
-          }
-          case "C+": {
-            return 6;
-          }
-          case "C": {
-            return 5;
-          }
-          case "C-": {
-            return 4;
-          }
-          case "D+": {
-            return 3;
-          }
-          case "D": {
-            return 2;
-          }
-          case "D-": {
-            return 1;
-          }
-          default: {
-            return 0;
-          }
-        }
+        return resolveFieldForNode("gradeValue", reviews[0], context, info);
       },
     },
     browseMore: {

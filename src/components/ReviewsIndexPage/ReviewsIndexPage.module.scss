@@ -51,22 +51,27 @@
 }
 
 .listCss {
-  display: grid;
+  display: block;
   grid-area: list;
-  grid-template-columns: 1fr auto calc(75px + var(--step--2) + var(--step-1));
 }
 
 .listItemCss {
-  display: contents;
-  &:nth-child(odd) > * {
+  display: grid;
+
+  grid-template-areas: "title title title grade" "date stars . grade";
+  grid-template-columns: auto auto 1fr 45px;
+  grid-template-rows: auto 20px;
+  padding: 1.25rem 0 1.25rem var(--step-1);
+
+  &:nth-child(odd) {
     background-color: #e9e7e061;
   }
 }
 
 .listItemTitleCss {
-  color: var(--color-link);
-  font-size: 16px;
-  padding: 0.5rem var(--step--2) 0.5rem var(--step-1);
+  color: inherit;
+  font-size: 1.125rem;
+  grid-area: title;
 }
 
 .listItemTitleYearCss {
@@ -74,26 +79,40 @@
   font-size: 0.875rem;
 }
 
-.listItemSlugCss {
-  color: var(--color-text-secondary);
-  display: contents;
-  font-feature-settings: "tnum";
-  font-size: 0.875rem;
-}
-
 .listItemLetterGradeCss {
+  color: inherit;
+  font-feature-settings: "tnum";
+  font-size: 1.125rem;
+  grid-area: grade;
+  position: relative;
+  width: 40px;
+}
+
+.listItemGradeACss {
+  color: #379634;
+}
+
+.listItemGradeBCss {
+  color: #81b800;
+}
+
+.listItemGradeCCss {
+  color: #326273;
+}
+
+.listItemGradeDCss {
+  color: #d17b0f;
+}
+
+.listItemGradeFCss {
+  color: #c1292e;
+}
+
+.listItemDateCss {
   color: var(--color-text-secondary);
   font-feature-settings: "tnum";
   font-size: 0.875rem;
-  letter-spacing: 2px;
-  padding: 0.5rem 0;
-  text-align: left;
-}
-
-.listItemGradeCss {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem var(--step-1) 0.5rem var(--step--2);
+  grid-area: date;
+  letter-spacing: 0.5px;
+  padding: 0 var(--step-1) 0 0;
 }
