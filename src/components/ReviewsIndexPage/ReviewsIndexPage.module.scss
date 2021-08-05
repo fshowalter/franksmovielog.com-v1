@@ -56,12 +56,15 @@
 }
 
 .listItemCss {
+  align-items: end;
+  column-gap: 0.5rem;
   display: grid;
 
-  grid-template-areas: "title title title grade" "date stars . grade";
-  grid-template-columns: auto auto 1fr 45px;
+  grid-template-areas: "title grade" "date .";
+  grid-template-columns: auto 45px;
   grid-template-rows: auto 20px;
   padding: 1.25rem 0 1.25rem var(--step-1);
+  row-gap: 0.25rem;
 
   &:nth-child(odd) {
     background-color: #e9e7e061;
@@ -72,6 +75,18 @@
   color: inherit;
   font-size: 1.125rem;
   grid-area: title;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+    opacity: 0.5;
+    padding-left: 0.25ch;
+    position: absolute;
+    text-align: right;
+  }
 }
 
 .listItemTitleYearCss {
@@ -84,6 +99,7 @@
   font-feature-settings: "tnum";
   font-size: 1.125rem;
   grid-area: grade;
+  letter-spacing: -1px;
   position: relative;
   width: 40px;
 }
@@ -110,7 +126,6 @@
 
 .listItemDateCss {
   color: var(--color-text-secondary);
-  font-feature-settings: "tnum";
   font-size: 0.875rem;
   grid-area: date;
   letter-spacing: 0.5px;
