@@ -3,7 +3,7 @@
 .containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". content ." ". . .";
+  grid-template-areas: ". header ." ". . ." "content content content" ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
