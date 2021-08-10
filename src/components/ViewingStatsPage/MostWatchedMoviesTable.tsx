@@ -42,8 +42,7 @@ function ViewingDetail({ viewing }: { viewing: Viewing }): JSX.Element {
     return (
       <span className={viewingDetailCss}>
         <Link to={`/reviews/${viewing.slug}`}>
-          {viewing.prettyDate} <span className={viaCss}>via</span>{" "}
-          {viewing.venue}
+          {viewing.prettyDate} via {viewing.venue}
         </Link>
       </span>
     );

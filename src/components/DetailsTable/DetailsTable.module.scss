@@ -18,25 +18,46 @@
 }
 
 .detailsListCss {
-  list-style-type: decimal;
+  counter-reset: details;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  list-style-type: none;
+  margin-left: var(--step-1);
 
   @media (min-width: breakpoints.$tablet) {
     margin: 0 1rem;
   }
 
   li {
-    padding: 1px 0;
+    display: contents;
+    padding: 1px var(--step-1);
   }
 
-  li::marker {
+  li::before {
+    /* stylelint-disable-line max-nesting-depth */
     color: var(--color-text-secondary);
+    content: counters(details, ".") ". ";
+    counter-increment: details;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    padding-left: var(--step-1);
+    padding-right: 1ch;
+    text-align: right;
+
+    @media (min-width: breakpoints.$tablet) {
+      line-height: 1.95rem;
+    }
   }
 
-  li:nth-child(even) {
+  li:nth-child(even) > * {
     background-color: #fff;
   }
 
-  li:nth-child(odd) {
+  li:nth-child(odd) > * {
+    background-color: #e9e7e061;
+  }
+
+  li:nth-child(odd)::before {
     background-color: #e9e7e061;
   }
 }
