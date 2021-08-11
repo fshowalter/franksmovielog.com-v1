@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import DetailsTable from "../DetailsTable";
 import {
+  listItemCss,
   titleYearCss,
   viaCss,
   viewingDetailCss,
@@ -42,8 +43,7 @@ function ViewingDetail({ viewing }: { viewing: Viewing }): JSX.Element {
     return (
       <span className={viewingDetailCss}>
         <Link to={`/reviews/${viewing.slug}`}>
-          {viewing.prettyDate} <span className={viaCss}>via</span>{" "}
-          {viewing.venue}
+          {viewing.prettyDate} via {viewing.venue}
         </Link>
       </span>
     );
@@ -76,7 +76,7 @@ export default function MostWatchedMoviesTable({
     renderDetails: (item: MovieWithViewings) => {
       return item.viewings.map((viewing) => {
         return (
-          <li key={viewing.sequence}>
+          <li key={viewing.sequence} className={listItemCss}>
             <ViewingDetail viewing={viewing} />
           </li>
         );

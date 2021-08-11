@@ -1,15 +1,34 @@
-.viaCss {
-  color: var(--color-text-secondary);
-  display: inline;
-}
+@use "./src/styles/breakpoints";
 
 .titleYearCss {
   color: var(--color-text-secondary);
+  display: inline-block;
   font-size: 0.875rem;
+  line-height: 1.75rem;
 }
 
 .viewingDetailCss {
+  color: var(--color-text-secondary);
   font-feature-settings: "tnum";
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+}
+
+.viewingTitleCss {
   font-size: 1rem;
   letter-spacing: normal;
+
+  @media (min-width: breakpoints.$tablet) {
+    font-size: 1.125rem;
+  }
+}
+
+.listItemCss {
+  line-height: 1.75rem;
+
+  @media (min-width: breakpoints.$tablet) {
+    line-height: 1.96875rem;
+  }
 }

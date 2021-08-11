@@ -143,7 +143,7 @@ export interface Person {
   averageGradeValue: number;
   reviews: {
     sequence: number;
-    prettyDate: string;
+    date: string;
     gradeValue: number;
     title: string;
     year: number;
@@ -210,7 +210,7 @@ export const pageQuery = graphql`
         averageGradeValue: average_grade_value
         reviews {
           sequence
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          date
           gradeValue: grade_value
           title
           year
@@ -226,7 +226,7 @@ export const pageQuery = graphql`
         averageGradeValue: average_grade_value
         reviews {
           sequence
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          date
           gradeValue: grade_value
           title
           year
@@ -242,7 +242,7 @@ export const pageQuery = graphql`
         averageGradeValue: average_grade_value
         reviews {
           sequence
-          prettyDate: date(formatString: "ddd MMM D, YYYY")
+          date
           gradeValue: grade_value
           title
           year

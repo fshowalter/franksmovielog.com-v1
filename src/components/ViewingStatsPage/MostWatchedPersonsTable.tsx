@@ -2,9 +2,10 @@ import { Link } from "gatsby";
 import React from "react";
 import DetailsTable from "../DetailsTable";
 import {
+  listItemCss,
   titleYearCss,
-  viaCss,
   viewingDetailCss,
+  viewingTitleCss,
 } from "./MostWatchedPersonsTable.module.scss";
 
 interface Viewing {
@@ -38,24 +39,22 @@ function buildPersonName(
   return <>{person.fullName}</>;
 }
 
-function ViewingDetail({ viewing }: { viewing: Viewing }): JSX.Element {
-  const viewingSlug = (
-    <>
-      {viewing.prettyDate} <span className={viaCss}>via</span> {viewing.venue}
-    </>
-  );
-
+function ViewingTitle({ viewing }: { viewing: Viewing }): JSX.Element {
   if (viewing.slug) {
     return (
-      <span className={viewingDetailCss}>
-        <Link to={`/reviews/${viewing.slug}#${viewing.sequence}`}>
-          {viewingSlug}
+      <>
+        <Link to={`/reviews/${viewing.slug}`}>
+          {viewing.title} <span className={titleYearCss}>{viewing.year}</span>
         </Link>
-      </span>
+      </>
     );
   }
 
-  return <span className={viewingDetailCss}>{viewingSlug}</span>;
+  return (
+    <>
+      {viewing.title} <span className={titleYearCss}>{viewing.year}</span>
+    </>
+  );
 }
 
 export default function MostWatchedPersonsTable({
@@ -78,12 +77,15 @@ export default function MostWatchedPersonsTable({
     renderDetails: (item: PersonWithViewings) => {
       return item.viewings.map((viewing) => {
         return (
-          <li key={viewing.sequence}>
-            <>
-              {viewing.title}{" "}
-              <span className={titleYearCss}>{viewing.year}</span>{" "}
-              <ViewingDetail viewing={viewing} />
-            </>
+          <li key={viewing.sequence} className={listItemCss}>
+            <div>
+              <div className={viewingTitleCss}>
+                <ViewingTitle viewing={viewing} />
+              </div>
+              <div className={viewingDetailCss}>
+                {viewing.prettyDate} via {viewing.venue}
+              </div>
+            </div>
           </li>
         );
       });

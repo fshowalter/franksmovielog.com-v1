@@ -1,31 +1,31 @@
 @use "./src/styles/breakpoints";
 
-.viaCss {
-  color: var(--color-text-secondary);
-  display: inline;
-}
-
 .titleYearCss {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
 }
 
-.viewingDetailCss {
+.reviewDetailCss {
+  color: var(--color-text-secondary);
   font-feature-settings: "tnum";
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.reviewTitleCss {
   font-size: 1rem;
   letter-spacing: normal;
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
 }
 
 .gradeCss {
   height: 1rem;
-  left: 0;
-  position: absolute;
-  top: 6px;
+  margin-right: 0.5ch;
+  vertical-align: -2px;
   width: auto;
 }
 
 .listItemCss {
-  line-height: 26px;
-  position: relative;
-  text-indent: calc(5rem + 1ch);
+  line-height: 1.5rem;
 }
