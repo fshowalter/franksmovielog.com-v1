@@ -1,6 +1,6 @@
 export default {
   overall: {
-    averageWordsPerReview: 131.03076923076924,
+    averageWordsPerReview: 130.76153846153846,
     reviewCount: 130,
   },
   gradeDistribution: {
@@ -113,7 +113,7 @@ export default {
         reviews: [
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -121,7 +121,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -129,7 +129,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -145,7 +145,7 @@ export default {
         reviews: [
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -153,7 +153,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -161,7 +161,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -177,7 +177,7 @@ export default {
         reviews: [
           {
             sequence: 872,
-            prettyDate: "Sat Sep 19, 2020",
+            date: "2020-09-19",
             gradeValue: 5,
             title: "The Curse of Frankenstein",
             year: 1957,
@@ -185,7 +185,7 @@ export default {
           },
           {
             sequence: 936,
-            prettyDate: "Tue Dec 8, 2020",
+            date: "2020-12-08",
             gradeValue: 4.67,
             title: "Horror of Dracula",
             year: 1958,
@@ -201,7 +201,7 @@ export default {
         reviews: [
           {
             sequence: 873,
-            prettyDate: "Mon Sep 21, 2020",
+            date: "2020-09-21",
             gradeValue: 3.33,
             title: "Massacre Time",
             year: 1966,
@@ -209,7 +209,7 @@ export default {
           },
           {
             sequence: 874,
-            prettyDate: "Thu Sep 24, 2020",
+            date: "2020-09-24",
             gradeValue: 4,
             title: "One on Top of the Other",
             year: 1969,
@@ -217,7 +217,7 @@ export default {
           },
           {
             sequence: 896,
-            prettyDate: "Thu Oct 22, 2020",
+            date: "2020-10-22",
             gradeValue: 3.67,
             title: "The Conspiracy of Torture",
             year: 1969,
@@ -225,7 +225,7 @@ export default {
           },
           {
             sequence: 897,
-            prettyDate: "Fri Oct 23, 2020",
+            date: "2020-10-23",
             gradeValue: 3.33,
             title: "A Lizard in a Woman's Skin",
             year: 1971,
@@ -233,7 +233,7 @@ export default {
           },
           {
             sequence: 901,
-            prettyDate: "Tue Oct 27, 2020",
+            date: "2020-10-27",
             gradeValue: 3.67,
             title: "Don't Torture a Duckling",
             year: 1972,
@@ -249,7 +249,7 @@ export default {
         reviews: [
           {
             sequence: 854,
-            prettyDate: "Mon Aug 17, 2020",
+            date: "2020-08-17",
             gradeValue: 2.33,
             title: "The Thirteenth Chair",
             year: 1929,
@@ -257,7 +257,7 @@ export default {
           },
           {
             sequence: 880,
-            prettyDate: "Sun Oct 4, 2020",
+            date: "2020-10-04",
             gradeValue: 4.67,
             title: "Dracula",
             year: 1931,
@@ -273,7 +273,7 @@ export default {
         reviews: [
           {
             sequence: 869,
-            prettyDate: "Sun Sep 13, 2020",
+            date: "2020-09-13",
             gradeValue: 3.67,
             title: "The Dawn Patrol",
             year: 1930,
@@ -281,7 +281,7 @@ export default {
           },
           {
             sequence: 919,
-            prettyDate: "Wed Nov 18, 2020",
+            date: "2020-11-18",
             gradeValue: 3.33,
             title: "The Criminal Code",
             year: 1930,
@@ -297,7 +297,7 @@ export default {
         reviews: [
           {
             sequence: 942,
-            prettyDate: "Sun Dec 13, 2020",
+            date: "2020-12-13",
             gradeValue: 3.67,
             title: "Crisis",
             year: 1946,
@@ -305,7 +305,7 @@ export default {
           },
           {
             sequence: 945,
-            prettyDate: "Wed Dec 16, 2020",
+            date: "2020-12-16",
             gradeValue: 4,
             title: "It Rains on Our Love",
             year: 1946,
@@ -313,7 +313,7 @@ export default {
           },
           {
             sequence: 952,
-            prettyDate: "Sun Dec 20, 2020",
+            date: "2020-12-20",
             gradeValue: 2.33,
             title: "A Ship to India",
             year: 1947,
@@ -329,7 +329,7 @@ export default {
         reviews: [
           {
             sequence: 845,
-            prettyDate: "Thu Jul 30, 2020",
+            date: "2020-07-30",
             gradeValue: 3,
             title: "Charming Sinners",
             year: 1929,
@@ -337,7 +337,7 @@ export default {
           },
           {
             sequence: 858,
-            prettyDate: "Sat Aug 22, 2020",
+            date: "2020-08-22",
             gradeValue: 3.33,
             title: "Behind the Make-Up",
             year: 1930,
@@ -353,7 +353,7 @@ export default {
         reviews: [
           {
             sequence: 878,
-            prettyDate: "Fri Oct 2, 2020",
+            date: "2020-10-02",
             gradeValue: 4,
             title: "WolfCop",
             year: 2014,
@@ -361,7 +361,7 @@ export default {
           },
           {
             sequence: 881,
-            prettyDate: "Sun Oct 4, 2020",
+            date: "2020-10-04",
             gradeValue: 2.33,
             title: "Another WolfCop",
             year: 2017,
@@ -377,7 +377,7 @@ export default {
         reviews: [
           {
             sequence: 856,
-            prettyDate: "Wed Aug 19, 2020",
+            date: "2020-08-19",
             gradeValue: 3.67,
             title: "The Quatermass Xperiment",
             year: 1955,
@@ -385,7 +385,7 @@ export default {
           },
           {
             sequence: 861,
-            prettyDate: "Thu Aug 27, 2020",
+            date: "2020-08-27",
             gradeValue: 2.33,
             title: "The Abominable Snowman",
             year: 1957,
@@ -393,7 +393,7 @@ export default {
           },
           {
             sequence: 911,
-            prettyDate: "Thu Nov 5, 2020",
+            date: "2020-11-05",
             gradeValue: 2.33,
             title: "Quatermass 2",
             year: 1957,
@@ -401,7 +401,7 @@ export default {
           },
           {
             sequence: 915,
-            prettyDate: "Tue Nov 10, 2020",
+            date: "2020-11-10",
             gradeValue: 3.67,
             title: "The Camp on Blood Island",
             year: 1958,
@@ -417,7 +417,7 @@ export default {
         reviews: [
           {
             sequence: 870,
-            prettyDate: "Sun Sep 13, 2020",
+            date: "2020-09-13",
             gradeValue: 3,
             title: "For the Defense",
             year: 1930,
@@ -425,7 +425,7 @@ export default {
           },
           {
             sequence: 877,
-            prettyDate: "Wed Sep 30, 2020",
+            date: "2020-09-30",
             gradeValue: 3,
             title: "Street of Chance",
             year: 1930,
@@ -441,7 +441,7 @@ export default {
         reviews: [
           {
             sequence: 871,
-            prettyDate: "Sat Sep 19, 2020",
+            date: "2020-09-19",
             gradeValue: 3,
             title: "Hatchet",
             year: 2006,
@@ -449,7 +449,7 @@ export default {
           },
           {
             sequence: 890,
-            prettyDate: "Thu Oct 15, 2020",
+            date: "2020-10-15",
             gradeValue: 2.67,
             title: "Hatchet II",
             year: 2010,
@@ -465,7 +465,7 @@ export default {
         reviews: [
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -473,7 +473,7 @@ export default {
           },
           {
             sequence: 921,
-            prettyDate: "Sat Nov 21, 2020",
+            date: "2020-11-21",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
             year: 2019,
@@ -489,7 +489,7 @@ export default {
         reviews: [
           {
             sequence: 841,
-            prettyDate: "Fri Jul 17, 2020",
+            date: "2020-07-17",
             gradeValue: 3,
             title: "The Canary Murder Case",
             year: 1929,
@@ -497,7 +497,7 @@ export default {
           },
           {
             sequence: 846,
-            prettyDate: "Thu Jul 30, 2020",
+            date: "2020-07-30",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
             year: 1929,
@@ -505,7 +505,7 @@ export default {
           },
           {
             sequence: 860,
-            prettyDate: "Wed Aug 26, 2020",
+            date: "2020-08-26",
             gradeValue: 3,
             title: "The Benson Murder Case",
             year: 1930,
@@ -521,7 +521,7 @@ export default {
         reviews: [
           {
             sequence: 859,
-            prettyDate: "Sat Aug 22, 2020",
+            date: "2020-08-22",
             gradeValue: 2.33,
             title: "Interference",
             year: 1928,
@@ -529,7 +529,7 @@ export default {
           },
           {
             sequence: 925,
-            prettyDate: "Wed Nov 25, 2020",
+            date: "2020-11-25",
             gradeValue: 3,
             title: "Ladies' Man",
             year: 1931,
@@ -545,7 +545,7 @@ export default {
         reviews: [
           {
             sequence: 840,
-            prettyDate: "Sun Jul 12, 2020",
+            date: "2020-07-12",
             gradeValue: 1,
             title: "The Black Watch",
             year: 1929,
@@ -553,7 +553,7 @@ export default {
           },
           {
             sequence: 867,
-            prettyDate: "Fri Sep 11, 2020",
+            date: "2020-09-11",
             gradeValue: 2.33,
             title: "Born Reckless",
             year: 1930,
@@ -561,7 +561,7 @@ export default {
           },
           {
             sequence: 868,
-            prettyDate: "Fri Sep 11, 2020",
+            date: "2020-09-11",
             gradeValue: 3.33,
             title: "Men Without Women",
             year: 1930,
@@ -569,7 +569,7 @@ export default {
           },
           {
             sequence: 883,
-            prettyDate: "Fri Oct 9, 2020",
+            date: "2020-10-09",
             gradeValue: 2.33,
             title: "Salute",
             year: 1929,
@@ -577,7 +577,7 @@ export default {
           },
           {
             sequence: 912,
-            prettyDate: "Fri Nov 6, 2020",
+            date: "2020-11-06",
             gradeValue: 3.67,
             title: "Up the River",
             year: 1930,
@@ -593,7 +593,7 @@ export default {
         reviews: [
           {
             sequence: 838,
-            prettyDate: "Fri Jul 10, 2020",
+            date: "2020-07-10",
             gradeValue: 3.33,
             title: "Blackmail",
             year: 1929,
@@ -601,7 +601,7 @@ export default {
           },
           {
             sequence: 876,
-            prettyDate: "Mon Sep 28, 2020",
+            date: "2020-09-28",
             gradeValue: 3,
             title: "Murder!",
             year: 1930,
@@ -609,7 +609,7 @@ export default {
           },
           {
             sequence: 909,
-            prettyDate: "Mon Nov 2, 2020",
+            date: "2020-11-02",
             gradeValue: 1,
             title: "Juno and the Paycock",
             year: 1930,
@@ -625,7 +625,7 @@ export default {
         reviews: [
           {
             sequence: 855,
-            prettyDate: "Tue Aug 18, 2020",
+            date: "2020-08-18",
             gradeValue: 2.33,
             title: "The Unholy Night",
             year: 1929,
@@ -633,7 +633,7 @@ export default {
           },
           {
             sequence: 895,
-            prettyDate: "Thu Oct 22, 2020",
+            date: "2020-10-22",
             gradeValue: 2.33,
             title: "The Sea Bat",
             year: 1930,
@@ -649,7 +649,7 @@ export default {
         reviews: [
           {
             sequence: 842,
-            prettyDate: "Sat Jul 18, 2020",
+            date: "2020-07-18",
             gradeValue: 2.33,
             title: "Ant-Man",
             year: 2015,
@@ -657,7 +657,7 @@ export default {
           },
           {
             sequence: 900,
-            prettyDate: "Sat Oct 24, 2020",
+            date: "2020-10-24",
             gradeValue: 2,
             title: "Ant-Man and the Wasp",
             year: 2018,
@@ -673,7 +673,7 @@ export default {
         reviews: [
           {
             sequence: 837,
-            prettyDate: "Thu Jul 9, 2020",
+            date: "2020-07-09",
             gradeValue: 2.33,
             title: "Behind That Curtain",
             year: 1929,
@@ -681,7 +681,7 @@ export default {
           },
           {
             sequence: 928,
-            prettyDate: "Fri Nov 27, 2020",
+            date: "2020-11-27",
             gradeValue: 1,
             title: "A Holy Terror",
             year: 1931,
@@ -701,7 +701,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -709,7 +709,7 @@ export default {
           },
           {
             sequence: 875,
-            prettyDate: "Sat Sep 26, 2020",
+            date: "2020-09-26",
             gradeValue: 5,
             title: "Thor: Ragnarok",
             year: 2017,
@@ -717,7 +717,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -725,7 +725,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -733,7 +733,7 @@ export default {
           },
           {
             sequence: 956,
-            prettyDate: "Tue Dec 22, 2020",
+            date: "2020-12-22",
             gradeValue: 5.33,
             title: "The Cabin in the Woods",
             year: 2011,
@@ -749,7 +749,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -757,7 +757,7 @@ export default {
           },
           {
             sequence: 875,
-            prettyDate: "Sat Sep 26, 2020",
+            date: "2020-09-26",
             gradeValue: 5,
             title: "Thor: Ragnarok",
             year: 2017,
@@ -765,7 +765,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -773,7 +773,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -789,7 +789,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -797,7 +797,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -805,7 +805,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -813,7 +813,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -829,7 +829,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -837,7 +837,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -845,7 +845,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -853,7 +853,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -869,7 +869,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -877,7 +877,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -885,7 +885,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -893,7 +893,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -909,7 +909,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -917,7 +917,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -925,7 +925,7 @@ export default {
           },
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -933,7 +933,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -941,7 +941,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -957,7 +957,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -965,7 +965,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -973,7 +973,7 @@ export default {
           },
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -981,7 +981,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -989,7 +989,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1005,7 +1005,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -1013,7 +1013,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1021,7 +1021,7 @@ export default {
           },
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -1029,7 +1029,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -1037,7 +1037,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1053,7 +1053,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -1061,7 +1061,7 @@ export default {
           },
           {
             sequence: 842,
-            prettyDate: "Sat Jul 18, 2020",
+            date: "2020-07-18",
             gradeValue: 2.33,
             title: "Ant-Man",
             year: 2015,
@@ -1069,7 +1069,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1077,7 +1077,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -1085,7 +1085,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1101,7 +1101,7 @@ export default {
         reviews: [
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1109,7 +1109,7 @@ export default {
           },
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -1117,7 +1117,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -1125,7 +1125,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1133,7 +1133,7 @@ export default {
           },
           {
             sequence: 921,
-            prettyDate: "Sat Nov 21, 2020",
+            date: "2020-11-21",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
             year: 2019,
@@ -1149,7 +1149,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -1157,7 +1157,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1165,7 +1165,7 @@ export default {
           },
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -1173,7 +1173,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1189,7 +1189,7 @@ export default {
         reviews: [
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1197,7 +1197,7 @@ export default {
           },
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -1205,7 +1205,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1213,7 +1213,7 @@ export default {
           },
           {
             sequence: 921,
-            prettyDate: "Sat Nov 21, 2020",
+            date: "2020-11-21",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
             year: 2019,
@@ -1229,7 +1229,7 @@ export default {
         reviews: [
           {
             sequence: 847,
-            prettyDate: "Sat Aug 1, 2020",
+            date: "2020-08-01",
             gradeValue: 3,
             title: "Star Wars: Episode IV - A New Hope",
             year: 1977,
@@ -1237,7 +1237,7 @@ export default {
           },
           {
             sequence: 861,
-            prettyDate: "Thu Aug 27, 2020",
+            date: "2020-08-27",
             gradeValue: 2.33,
             title: "The Abominable Snowman",
             year: 1957,
@@ -1245,7 +1245,7 @@ export default {
           },
           {
             sequence: 872,
-            prettyDate: "Sat Sep 19, 2020",
+            date: "2020-09-19",
             gradeValue: 5,
             title: "The Curse of Frankenstein",
             year: 1957,
@@ -1253,7 +1253,7 @@ export default {
           },
           {
             sequence: 882,
-            prettyDate: "Tue Oct 6, 2020",
+            date: "2020-10-06",
             gradeValue: 2.33,
             title: "A Chump at Oxford",
             year: 1939,
@@ -1261,7 +1261,7 @@ export default {
           },
           {
             sequence: 936,
-            prettyDate: "Tue Dec 8, 2020",
+            date: "2020-12-08",
             gradeValue: 4.67,
             title: "Horror of Dracula",
             year: 1958,
@@ -1277,7 +1277,7 @@ export default {
         reviews: [
           {
             sequence: 842,
-            prettyDate: "Sat Jul 18, 2020",
+            date: "2020-07-18",
             gradeValue: 2.33,
             title: "Ant-Man",
             year: 2015,
@@ -1285,7 +1285,7 @@ export default {
           },
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1293,7 +1293,7 @@ export default {
           },
           {
             sequence: 900,
-            prettyDate: "Sat Oct 24, 2020",
+            date: "2020-10-24",
             gradeValue: 2,
             title: "Ant-Man and the Wasp",
             year: 2018,
@@ -1301,7 +1301,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1317,7 +1317,7 @@ export default {
         reviews: [
           {
             sequence: 839,
-            prettyDate: "Sat Jul 11, 2020",
+            date: "2020-07-11",
             gradeValue: 3.33,
             title: "Avengers: Age of Ultron",
             year: 2015,
@@ -1325,7 +1325,7 @@ export default {
           },
           {
             sequence: 913,
-            prettyDate: "Sun Nov 8, 2020",
+            date: "2020-11-08",
             gradeValue: 3.33,
             title: "Captain Marvel",
             year: 2019,
@@ -1333,7 +1333,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1341,7 +1341,7 @@ export default {
           },
           {
             sequence: 921,
-            prettyDate: "Sat Nov 21, 2020",
+            date: "2020-11-21",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
             year: 2019,
@@ -1349,7 +1349,7 @@ export default {
           },
           {
             sequence: 966,
-            prettyDate: "Thu Dec 31, 2020",
+            date: "2020-12-31",
             gradeValue: 2.33,
             title: "Glass",
             year: 2019,
@@ -1365,7 +1365,7 @@ export default {
         reviews: [
           {
             sequence: 841,
-            prettyDate: "Fri Jul 17, 2020",
+            date: "2020-07-17",
             gradeValue: 3,
             title: "The Canary Murder Case",
             year: 1929,
@@ -1373,7 +1373,7 @@ export default {
           },
           {
             sequence: 846,
-            prettyDate: "Thu Jul 30, 2020",
+            date: "2020-07-30",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
             year: 1929,
@@ -1381,7 +1381,7 @@ export default {
           },
           {
             sequence: 858,
-            prettyDate: "Sat Aug 22, 2020",
+            date: "2020-08-22",
             gradeValue: 3.33,
             title: "Behind the Make-Up",
             year: 1930,
@@ -1389,7 +1389,7 @@ export default {
           },
           {
             sequence: 860,
-            prettyDate: "Wed Aug 26, 2020",
+            date: "2020-08-26",
             gradeValue: 3,
             title: "The Benson Murder Case",
             year: 1930,
@@ -1405,7 +1405,7 @@ export default {
         reviews: [
           {
             sequence: 841,
-            prettyDate: "Fri Jul 17, 2020",
+            date: "2020-07-17",
             gradeValue: 3,
             title: "The Canary Murder Case",
             year: 1929,
@@ -1413,7 +1413,7 @@ export default {
           },
           {
             sequence: 845,
-            prettyDate: "Thu Jul 30, 2020",
+            date: "2020-07-30",
             gradeValue: 3,
             title: "Charming Sinners",
             year: 1929,
@@ -1421,7 +1421,7 @@ export default {
           },
           {
             sequence: 846,
-            prettyDate: "Thu Jul 30, 2020",
+            date: "2020-07-30",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
             year: 1929,
@@ -1429,7 +1429,7 @@ export default {
           },
           {
             sequence: 849,
-            prettyDate: "Sun Aug 2, 2020",
+            date: "2020-08-02",
             gradeValue: 2,
             title: "Pointed Heels",
             year: 1929,
@@ -1437,7 +1437,7 @@ export default {
           },
           {
             sequence: 858,
-            prettyDate: "Sat Aug 22, 2020",
+            date: "2020-08-22",
             gradeValue: 3.33,
             title: "Behind the Make-Up",
             year: 1930,
@@ -1445,7 +1445,7 @@ export default {
           },
           {
             sequence: 859,
-            prettyDate: "Sat Aug 22, 2020",
+            date: "2020-08-22",
             gradeValue: 2.33,
             title: "Interference",
             year: 1928,
@@ -1453,7 +1453,7 @@ export default {
           },
           {
             sequence: 860,
-            prettyDate: "Wed Aug 26, 2020",
+            date: "2020-08-26",
             gradeValue: 3,
             title: "The Benson Murder Case",
             year: 1930,
@@ -1461,7 +1461,7 @@ export default {
           },
           {
             sequence: 870,
-            prettyDate: "Sun Sep 13, 2020",
+            date: "2020-09-13",
             gradeValue: 3,
             title: "For the Defense",
             year: 1930,
@@ -1469,7 +1469,7 @@ export default {
           },
           {
             sequence: 877,
-            prettyDate: "Wed Sep 30, 2020",
+            date: "2020-09-30",
             gradeValue: 3,
             title: "Street of Chance",
             year: 1930,
@@ -1477,7 +1477,7 @@ export default {
           },
           {
             sequence: 885,
-            prettyDate: "Sat Oct 10, 2020",
+            date: "2020-10-10",
             gradeValue: 3.33,
             title: "Shadow of the Law",
             year: 1930,
@@ -1485,7 +1485,7 @@ export default {
           },
           {
             sequence: 925,
-            prettyDate: "Wed Nov 25, 2020",
+            date: "2020-11-25",
             gradeValue: 3,
             title: "Ladies' Man",
             year: 1931,
@@ -1501,7 +1501,7 @@ export default {
         reviews: [
           {
             sequence: 854,
-            prettyDate: "Mon Aug 17, 2020",
+            date: "2020-08-17",
             gradeValue: 2.33,
             title: "The Thirteenth Chair",
             year: 1929,
@@ -1509,7 +1509,7 @@ export default {
           },
           {
             sequence: 880,
-            prettyDate: "Sun Oct 4, 2020",
+            date: "2020-10-04",
             gradeValue: 4.67,
             title: "Dracula",
             year: 1931,
@@ -1517,7 +1517,7 @@ export default {
           },
           {
             sequence: 886,
-            prettyDate: "Sat Oct 10, 2020",
+            date: "2020-10-10",
             gradeValue: 3.33,
             title: "Renegades",
             year: 1930,
@@ -1525,7 +1525,7 @@ export default {
           },
           {
             sequence: 922,
-            prettyDate: "Tue Nov 24, 2020",
+            date: "2020-11-24",
             gradeValue: 2.33,
             title: "Wild Company",
             year: 1930,
@@ -1533,7 +1533,7 @@ export default {
           },
           {
             sequence: 923,
-            prettyDate: "Tue Nov 24, 2020",
+            date: "2020-11-24",
             gradeValue: 1,
             title: "Oh, for a Man!",
             year: 1930,
@@ -1541,7 +1541,7 @@ export default {
           },
           {
             sequence: 926,
-            prettyDate: "Thu Nov 26, 2020",
+            date: "2020-11-26",
             gradeValue: 3.33,
             title: "The Black Camel",
             year: 1931,
@@ -1557,7 +1557,7 @@ export default {
         reviews: [
           {
             sequence: 841,
-            prettyDate: "Fri Jul 17, 2020",
+            date: "2020-07-17",
             gradeValue: 3,
             title: "The Canary Murder Case",
             year: 1929,
@@ -1565,7 +1565,7 @@ export default {
           },
           {
             sequence: 846,
-            prettyDate: "Thu Jul 30, 2020",
+            date: "2020-07-30",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
             year: 1929,
@@ -1573,7 +1573,7 @@ export default {
           },
           {
             sequence: 849,
-            prettyDate: "Sun Aug 2, 2020",
+            date: "2020-08-02",
             gradeValue: 2,
             title: "Pointed Heels",
             year: 1929,
@@ -1581,7 +1581,7 @@ export default {
           },
           {
             sequence: 860,
-            prettyDate: "Wed Aug 26, 2020",
+            date: "2020-08-26",
             gradeValue: 3,
             title: "The Benson Murder Case",
             year: 1930,
@@ -1597,7 +1597,7 @@ export default {
         reviews: [
           {
             sequence: 837,
-            prettyDate: "Thu Jul 9, 2020",
+            date: "2020-07-09",
             gradeValue: 2.33,
             title: "Behind That Curtain",
             year: 1929,
@@ -1605,7 +1605,7 @@ export default {
           },
           {
             sequence: 889,
-            prettyDate: "Sun Oct 11, 2020",
+            date: "2020-10-11",
             gradeValue: 2,
             title: "Cracked Nuts",
             year: 1931,
@@ -1613,7 +1613,7 @@ export default {
           },
           {
             sequence: 895,
-            prettyDate: "Thu Oct 22, 2020",
+            date: "2020-10-22",
             gradeValue: 2.33,
             title: "The Sea Bat",
             year: 1930,
@@ -1621,7 +1621,7 @@ export default {
           },
           {
             sequence: 919,
-            prettyDate: "Wed Nov 18, 2020",
+            date: "2020-11-18",
             gradeValue: 3.33,
             title: "The Criminal Code",
             year: 1930,
@@ -1641,7 +1641,7 @@ export default {
         reviews: [
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1649,7 +1649,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -1657,7 +1657,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1673,7 +1673,7 @@ export default {
         reviews: [
           {
             sequence: 844,
-            prettyDate: "Sat Jul 25, 2020",
+            date: "2020-07-25",
             gradeValue: 4.33,
             title: "Captain America: Civil War",
             year: 2016,
@@ -1681,7 +1681,7 @@ export default {
           },
           {
             sequence: 893,
-            prettyDate: "Sat Oct 17, 2020",
+            date: "2020-10-17",
             gradeValue: 5.33,
             title: "Avengers: Infinity War",
             year: 2018,
@@ -1689,7 +1689,7 @@ export default {
           },
           {
             sequence: 918,
-            prettyDate: "Sat Nov 14, 2020",
+            date: "2020-11-14",
             gradeValue: 5,
             title: "Avengers: Endgame",
             year: 2019,
@@ -1705,7 +1705,7 @@ export default {
         reviews: [
           {
             sequence: 853,
-            prettyDate: "Sun Aug 16, 2020",
+            date: "2020-08-16",
             gradeValue: 3.33,
             title: "X the Unknown",
             year: 1956,
@@ -1713,7 +1713,7 @@ export default {
           },
           {
             sequence: 872,
-            prettyDate: "Sat Sep 19, 2020",
+            date: "2020-09-19",
             gradeValue: 5,
             title: "The Curse of Frankenstein",
             year: 1957,
@@ -1721,7 +1721,7 @@ export default {
           },
           {
             sequence: 936,
-            prettyDate: "Tue Dec 8, 2020",
+            date: "2020-12-08",
             gradeValue: 4.67,
             title: "Horror of Dracula",
             year: 1958,
@@ -1737,7 +1737,7 @@ export default {
         reviews: [
           {
             sequence: 874,
-            prettyDate: "Thu Sep 24, 2020",
+            date: "2020-09-24",
             gradeValue: 4,
             title: "One on Top of the Other",
             year: 1969,
@@ -1745,7 +1745,7 @@ export default {
           },
           {
             sequence: 896,
-            prettyDate: "Thu Oct 22, 2020",
+            date: "2020-10-22",
             gradeValue: 3.67,
             title: "The Conspiracy of Torture",
             year: 1969,
@@ -1753,7 +1753,7 @@ export default {
           },
           {
             sequence: 897,
-            prettyDate: "Fri Oct 23, 2020",
+            date: "2020-10-23",
             gradeValue: 3.33,
             title: "A Lizard in a Woman's Skin",
             year: 1971,
@@ -1761,7 +1761,7 @@ export default {
           },
           {
             sequence: 901,
-            prettyDate: "Tue Oct 27, 2020",
+            date: "2020-10-27",
             gradeValue: 3.67,
             title: "Don't Torture a Duckling",
             year: 1972,
@@ -1777,7 +1777,7 @@ export default {
         reviews: [
           {
             sequence: 838,
-            prettyDate: "Fri Jul 10, 2020",
+            date: "2020-07-10",
             gradeValue: 3.33,
             title: "Blackmail",
             year: 1929,
@@ -1785,7 +1785,7 @@ export default {
           },
           {
             sequence: 894,
-            prettyDate: "Mon Oct 19, 2020",
+            date: "2020-10-19",
             gradeValue: 4,
             title: "Curse of the Demon",
             year: 1957,
@@ -1795,13 +1795,13 @@ export default {
       },
       {
         fullName: "Lucio Fulci",
-        slug: "lucio-fulci",
+        slug: null,
         reviewCount: 5,
         averageGradeValue: 3.6,
         reviews: [
           {
             sequence: 873,
-            prettyDate: "Mon Sep 21, 2020",
+            date: "2020-09-21",
             gradeValue: 3.33,
             title: "Massacre Time",
             year: 1966,
@@ -1809,7 +1809,7 @@ export default {
           },
           {
             sequence: 874,
-            prettyDate: "Thu Sep 24, 2020",
+            date: "2020-09-24",
             gradeValue: 4,
             title: "One on Top of the Other",
             year: 1969,
@@ -1817,7 +1817,7 @@ export default {
           },
           {
             sequence: 896,
-            prettyDate: "Thu Oct 22, 2020",
+            date: "2020-10-22",
             gradeValue: 3.67,
             title: "The Conspiracy of Torture",
             year: 1969,
@@ -1825,7 +1825,7 @@ export default {
           },
           {
             sequence: 897,
-            prettyDate: "Fri Oct 23, 2020",
+            date: "2020-10-23",
             gradeValue: 3.33,
             title: "A Lizard in a Woman's Skin",
             year: 1971,
@@ -1833,7 +1833,7 @@ export default {
           },
           {
             sequence: 901,
-            prettyDate: "Tue Oct 27, 2020",
+            date: "2020-10-27",
             gradeValue: 3.67,
             title: "Don't Torture a Duckling",
             year: 1972,
@@ -1849,7 +1849,7 @@ export default {
         reviews: [
           {
             sequence: 942,
-            prettyDate: "Sun Dec 13, 2020",
+            date: "2020-12-13",
             gradeValue: 3.67,
             title: "Crisis",
             year: 1946,
@@ -1857,7 +1857,7 @@ export default {
           },
           {
             sequence: 945,
-            prettyDate: "Wed Dec 16, 2020",
+            date: "2020-12-16",
             gradeValue: 4,
             title: "It Rains on Our Love",
             year: 1946,
@@ -1865,7 +1865,7 @@ export default {
           },
           {
             sequence: 952,
-            prettyDate: "Sun Dec 20, 2020",
+            date: "2020-12-20",
             gradeValue: 2.33,
             title: "A Ship to India",
             year: 1947,
@@ -1881,7 +1881,7 @@ export default {
         reviews: [
           {
             sequence: 856,
-            prettyDate: "Wed Aug 19, 2020",
+            date: "2020-08-19",
             gradeValue: 3.67,
             title: "The Quatermass Xperiment",
             year: 1955,
@@ -1889,7 +1889,7 @@ export default {
           },
           {
             sequence: 861,
-            prettyDate: "Thu Aug 27, 2020",
+            date: "2020-08-27",
             gradeValue: 2.33,
             title: "The Abominable Snowman",
             year: 1957,
@@ -1897,7 +1897,7 @@ export default {
           },
           {
             sequence: 911,
-            prettyDate: "Thu Nov 5, 2020",
+            date: "2020-11-05",
             gradeValue: 2.33,
             title: "Quatermass 2",
             year: 1957,
@@ -1905,7 +1905,7 @@ export default {
           },
           {
             sequence: 915,
-            prettyDate: "Tue Nov 10, 2020",
+            date: "2020-11-10",
             gradeValue: 3.67,
             title: "The Camp on Blood Island",
             year: 1958,
@@ -1921,7 +1921,7 @@ export default {
         reviews: [
           {
             sequence: 871,
-            prettyDate: "Sat Sep 19, 2020",
+            date: "2020-09-19",
             gradeValue: 3,
             title: "Hatchet",
             year: 2006,
@@ -1929,7 +1929,7 @@ export default {
           },
           {
             sequence: 890,
-            prettyDate: "Thu Oct 15, 2020",
+            date: "2020-10-15",
             gradeValue: 2.67,
             title: "Hatchet II",
             year: 2010,
@@ -1937,7 +1937,7 @@ export default {
           },
           {
             sequence: 920,
-            prettyDate: "Thu Nov 19, 2020",
+            date: "2020-11-19",
             gradeValue: 3.33,
             title: "Hatchet III",
             year: 2013,
@@ -1953,7 +1953,7 @@ export default {
         reviews: [
           {
             sequence: 867,
-            prettyDate: "Fri Sep 11, 2020",
+            date: "2020-09-11",
             gradeValue: 2.33,
             title: "Born Reckless",
             year: 1930,
@@ -1961,7 +1961,7 @@ export default {
           },
           {
             sequence: 868,
-            prettyDate: "Fri Sep 11, 2020",
+            date: "2020-09-11",
             gradeValue: 3.33,
             title: "Men Without Women",
             year: 1930,
@@ -1969,7 +1969,7 @@ export default {
           },
           {
             sequence: 926,
-            prettyDate: "Thu Nov 26, 2020",
+            date: "2020-11-26",
             gradeValue: 3.33,
             title: "The Black Camel",
             year: 1931,
@@ -1985,7 +1985,7 @@ export default {
         reviews: [
           {
             sequence: 850,
-            prettyDate: "Tue Aug 4, 2020",
+            date: "2020-08-04",
             gradeValue: 3.67,
             title: "GoldenEye",
             year: 1995,
@@ -1993,7 +1993,7 @@ export default {
           },
           {
             sequence: 851,
-            prettyDate: "Thu Aug 6, 2020",
+            date: "2020-08-06",
             gradeValue: 2.33,
             title: "Tomorrow Never Dies",
             year: 1997,
@@ -2001,7 +2001,7 @@ export default {
           },
           {
             sequence: 852,
-            prettyDate: "Thu Aug 6, 2020",
+            date: "2020-08-06",
             gradeValue: 2.67,
             title: "The World Is Not Enough",
             year: 1999,
@@ -2017,7 +2017,7 @@ export default {
         reviews: [
           {
             sequence: 837,
-            prettyDate: "Thu Jul 9, 2020",
+            date: "2020-07-09",
             gradeValue: 2.33,
             title: "Behind That Curtain",
             year: 1929,
@@ -2025,7 +2025,7 @@ export default {
           },
           {
             sequence: 926,
-            prettyDate: "Thu Nov 26, 2020",
+            date: "2020-11-26",
             gradeValue: 3.33,
             title: "The Black Camel",
             year: 1931,
@@ -2041,7 +2041,7 @@ export default {
         reviews: [
           {
             sequence: 841,
-            prettyDate: "Fri Jul 17, 2020",
+            date: "2020-07-17",
             gradeValue: 3,
             title: "The Canary Murder Case",
             year: 1929,
@@ -2049,7 +2049,7 @@ export default {
           },
           {
             sequence: 846,
-            prettyDate: "Thu Jul 30, 2020",
+            date: "2020-07-30",
             gradeValue: 2.33,
             title: "The Greene Murder Case",
             year: 1929,
@@ -2057,7 +2057,7 @@ export default {
           },
           {
             sequence: 860,
-            prettyDate: "Wed Aug 26, 2020",
+            date: "2020-08-26",
             gradeValue: 3,
             title: "The Benson Murder Case",
             year: 1930,
@@ -2073,7 +2073,7 @@ export default {
         reviews: [
           {
             sequence: 856,
-            prettyDate: "Wed Aug 19, 2020",
+            date: "2020-08-19",
             gradeValue: 3.67,
             title: "The Quatermass Xperiment",
             year: 1955,
@@ -2081,7 +2081,7 @@ export default {
           },
           {
             sequence: 861,
-            prettyDate: "Thu Aug 27, 2020",
+            date: "2020-08-27",
             gradeValue: 2.33,
             title: "The Abominable Snowman",
             year: 1957,
@@ -2089,7 +2089,7 @@ export default {
           },
           {
             sequence: 911,
-            prettyDate: "Thu Nov 5, 2020",
+            date: "2020-11-05",
             gradeValue: 2.33,
             title: "Quatermass 2",
             year: 1957,
@@ -2105,7 +2105,7 @@ export default {
         reviews: [
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -2113,7 +2113,7 @@ export default {
           },
           {
             sequence: 900,
-            prettyDate: "Sat Oct 24, 2020",
+            date: "2020-10-24",
             gradeValue: 2,
             title: "Ant-Man and the Wasp",
             year: 2018,
@@ -2121,7 +2121,7 @@ export default {
           },
           {
             sequence: 921,
-            prettyDate: "Sat Nov 21, 2020",
+            date: "2020-11-21",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
             year: 2019,
@@ -2137,7 +2137,7 @@ export default {
         reviews: [
           {
             sequence: 865,
-            prettyDate: "Sat Sep 5, 2020",
+            date: "2020-09-05",
             gradeValue: 3.33,
             title: "Spider-Man: Homecoming",
             year: 2017,
@@ -2145,7 +2145,7 @@ export default {
           },
           {
             sequence: 900,
-            prettyDate: "Sat Oct 24, 2020",
+            date: "2020-10-24",
             gradeValue: 2,
             title: "Ant-Man and the Wasp",
             year: 2018,
@@ -2153,7 +2153,7 @@ export default {
           },
           {
             sequence: 921,
-            prettyDate: "Sat Nov 21, 2020",
+            date: "2020-11-21",
             gradeValue: 2.33,
             title: "Spider-Man: Far from Home",
             year: 2019,
@@ -2169,7 +2169,7 @@ export default {
         reviews: [
           {
             sequence: 838,
-            prettyDate: "Fri Jul 10, 2020",
+            date: "2020-07-10",
             gradeValue: 3.33,
             title: "Blackmail",
             year: 1929,
@@ -2177,7 +2177,7 @@ export default {
           },
           {
             sequence: 876,
-            prettyDate: "Mon Sep 28, 2020",
+            date: "2020-09-28",
             gradeValue: 3,
             title: "Murder!",
             year: 1930,
@@ -2185,7 +2185,7 @@ export default {
           },
           {
             sequence: 909,
-            prettyDate: "Mon Nov 2, 2020",
+            date: "2020-11-02",
             gradeValue: 1,
             title: "Juno and the Paycock",
             year: 1930,
@@ -2201,7 +2201,7 @@ export default {
         reviews: [
           {
             sequence: 837,
-            prettyDate: "Thu Jul 9, 2020",
+            date: "2020-07-09",
             gradeValue: 2.33,
             title: "Behind That Curtain",
             year: 1929,
@@ -2209,7 +2209,7 @@ export default {
           },
           {
             sequence: 883,
-            prettyDate: "Fri Oct 9, 2020",
+            date: "2020-10-09",
             gradeValue: 2.33,
             title: "Salute",
             year: 1929,
@@ -2225,7 +2225,7 @@ export default {
         reviews: [
           {
             sequence: 840,
-            prettyDate: "Sun Jul 12, 2020",
+            date: "2020-07-12",
             gradeValue: 1,
             title: "The Black Watch",
             year: 1929,
@@ -2233,7 +2233,7 @@ export default {
           },
           {
             sequence: 868,
-            prettyDate: "Fri Sep 11, 2020",
+            date: "2020-09-11",
             gradeValue: 3.33,
             title: "Men Without Women",
             year: 1930,
@@ -2241,7 +2241,7 @@ export default {
           },
           {
             sequence: 883,
-            prettyDate: "Fri Oct 9, 2020",
+            date: "2020-10-09",
             gradeValue: 2.33,
             title: "Salute",
             year: 1929,
@@ -2257,7 +2257,7 @@ export default {
         reviews: [
           {
             sequence: 840,
-            prettyDate: "Sun Jul 12, 2020",
+            date: "2020-07-12",
             gradeValue: 1,
             title: "The Black Watch",
             year: 1929,
@@ -2265,7 +2265,7 @@ export default {
           },
           {
             sequence: 883,
-            prettyDate: "Fri Oct 9, 2020",
+            date: "2020-10-09",
             gradeValue: 2.33,
             title: "Salute",
             year: 1929,
@@ -2273,7 +2273,7 @@ export default {
           },
           {
             sequence: 922,
-            prettyDate: "Tue Nov 24, 2020",
+            date: "2020-11-24",
             gradeValue: 2.33,
             title: "Wild Company",
             year: 1930,
