@@ -7,7 +7,6 @@ export const listItemDateCss: string;
 export const listItemGradeACss: string;
 export const listItemGradeBCss: string;
 export const listItemGradeCCss: string;
-export const listItemGradeCss: string;
 export const listItemGradeDCss: string;
 export const listItemGradeFCss: string;
 export const listItemLetterGradeCss: string;

@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import DetailsTable from "../DetailsTable";
 import {
+  listItemCss,
   titleYearCss,
   viewingDetailCss,
   viewingTitleCss,
@@ -76,7 +77,7 @@ export default function MostWatchedPersonsTable({
     renderDetails: (item: PersonWithViewings) => {
       return item.viewings.map((viewing) => {
         return (
-          <li key={viewing.sequence}>
+          <li key={viewing.sequence} className={listItemCss}>
             <div>
               <div className={viewingTitleCss}>
                 <ViewingTitle viewing={viewing} />

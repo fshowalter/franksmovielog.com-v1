@@ -2,7 +2,9 @@
 
 .titleYearCss {
   color: var(--color-text-secondary);
+  display: inline-block;
   font-size: 0.875rem;
+  line-height: 1.75rem;
 }
 
 .viewingDetailCss {
@@ -20,5 +22,13 @@
 
   @media (min-width: breakpoints.$tablet) {
     font-size: 1.125rem;
+  }
+}
+
+.listItemCss {
+  line-height: 1.75rem;
+
+  @media (min-width: breakpoints.$tablet) {
+    line-height: 1.96875rem;
   }
 }

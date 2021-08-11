@@ -5,40 +5,13 @@ import Grade from "../Grade";
 import {
   gradeCss,
   listItemCss,
+  reviewDetailCss,
+  reviewTitleCss,
   titleYearCss,
-  viaCss,
-  viewingDetailCss,
 } from "./HighestRatedPersonsTable.module.scss";
 
 interface Review {
-  prettyDate: string;
-  gradeValue: number;
-  title: string;
-  year: number;
-  slug: string;
-  sequence: number;
-}
-
-function MovieTitle({ review }: { review: Review }): JSX.Element {
-  return (
-    <Link to={`/reviews/${review.slug}`}>
-      <>
-        {review.title} <span className={titleYearCss}>{review.year}</span>
-      </>
-    </Link>
-  );
-}
-
-function ReviewDetail({ review }: { review: Review }): JSX.Element {
-  return (
-    <span className={viewingDetailCss}>
-      <span className={viaCss}>on</span> {review.prettyDate}
-    </span>
-  );
-}
-
-interface Review {
-  prettyDate: string;
+  date: string;
   gradeValue: number;
   title: string;
   year: number;
@@ -90,13 +63,14 @@ export default function HighestRatedPersonsTable({
       return item.reviews.map((review) => {
         return (
           <li key={review.sequence} className={listItemCss}>
-            <>
-              <Grade className={gradeCss} gradeValue={review.gradeValue} />
-              <span>
-                {" "}
-                <MovieTitle review={review} /> <ReviewDetail review={review} />
-              </span>
-            </>
+            <div className={reviewTitleCss}>
+              <Grade className={gradeCss} gradeValue={review.gradeValue} />{" "}
+              <Link to={`/reviews/${review.slug}`}>
+                {review.title}{" "}
+                <span className={titleYearCss}>{review.year}</span>
+              </Link>{" "}
+              <span className={reviewDetailCss}>on {review.date}</span>
+            </div>
           </li>
         );
       });
