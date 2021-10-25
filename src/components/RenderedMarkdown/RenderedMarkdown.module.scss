@@ -59,7 +59,7 @@
     width: auto;
   }
 
-  p:last-of-type {
+  p:last-child {
     margin-bottom: 0;
   }
 
@@ -68,7 +68,12 @@
     padding-left: 1.4rem;
   }
 
-  ol > li {
+  ul {
+    list-style-type: disc;
+    padding-left: 1.4rem;
+  }
+
+  li {
     margin-bottom: 1.4rem;
   }
 }
