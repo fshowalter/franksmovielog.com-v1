@@ -235,7 +235,7 @@ export default function ReviewPage({
           </div>
         </aside>
         <ul className={reviewsListCss}>
-          {movie.reviews.reverse().map((review) => (
+          {movie.reviews.map((review) => (
             <li
               className={reviewsListItemCss}
               key={review.frontmatter.sequence}
