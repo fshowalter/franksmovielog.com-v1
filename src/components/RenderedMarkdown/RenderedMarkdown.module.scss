@@ -1,5 +1,5 @@
 .renderedMarkdownCss {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgb(0 0 0 / 75%);
   font-size: 19px;
   font-weight: 300;
   letter-spacing: 0.3px;
@@ -14,7 +14,7 @@
 
   blockquote {
     border-left: 0.5rem solid var(--color-background);
-    color: rgba(0, 0, 0, 0.65);
+    color: rgb(0 0 0 / 65%);
     font-style: italic;
     margin: 1.5em 0;
     padding: 0 var(--step-1);
