@@ -10,7 +10,7 @@
 
 .thumbCss {
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.54);
+  border: 1px solid rgb(0 0 0 / 54%);
   border-radius: 50%;
   cursor: grab;
   height: 2rem;
@@ -43,7 +43,7 @@
 }
 
 .trackCss {
-  background: rgba(0, 0, 0, 0.06);
+  background: rgb(0 0 0 / 6%);
   border-bottom: solid 0.5rem #fff;
   border-top: solid 0.5rem #fff;
   height: 2rem;

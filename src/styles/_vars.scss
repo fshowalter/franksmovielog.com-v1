@@ -1,8 +1,8 @@
 :root {
   --color-background: #e9e7e0;
   --color-content-background: #fff;
-  --color-text-primary: rgba(0, 0, 0, 0.75);
-  --color-text-secondary: rgba(0, 0, 0, 0.6);
+  --color-text-primary: rgb(0 0 0 / 75%);
+  --color-text-secondary: rgb(0 0 0 / 60%);
   --color-text-tertiary: #969696;
   --color-link: #054a93;
   --font-serif: "Charter", "Iowan Old Style", "Georgia", "Cambria",
@@ -16,7 +16,6 @@
   --fluid-max-size: 21;
   --fluid-min-ratio: 1.2;
   --fluid-max-ratio: 1.2;
-
   --fluid-screen: 100vw;
   --fluid-bp: calc(
     (var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) /
@@ -25,7 +24,6 @@
 
   --fluid-max-negative: (1 / var(--fluid-max-ratio) / var(--fluid-max-ratio));
   --fluid-min-negative: (1 / var(--fluid-min-ratio) / var(--fluid-min-ratio));
-
   --fluid-min-scale--2: var(--fluid-min-scale--1) * var(--fluid-min-ratio) *
     var(--fluid-min-negative);
   --fluid-max-scale--2: var(--fluid-max-scale--1) * var(--fluid-max-ratio) *
@@ -38,7 +36,6 @@
         (var(--fluid-max-size--2) - var(--fluid-min-size--2)) * var(--fluid-bp)
     )
   );
-
   --fluid-min-scale--1: var(--fluid-min-ratio) * var(--fluid-min-negative);
   --fluid-max-scale--1: var(--fluid-max-ratio) * var(--fluid-max-negative);
   --fluid-min-size--1: (var(--fluid-min-size) * var(--fluid-min-scale--1)) / 16;
@@ -49,7 +46,6 @@
         (var(--fluid-max-size--1) - var(--fluid-min-size--1)) * var(--fluid-bp)
     )
   );
-
   --fluid-min-scale-0: var(--fluid-min-ratio);
   --fluid-max-scale-0: var(--fluid-max-ratio);
   --fluid-min-size-0: (var(--fluid-min-size)) / 16;
@@ -60,7 +56,6 @@
         (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)
     )
   );
-
   --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
   --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
   --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
@@ -71,7 +66,6 @@
         (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)
     )
   );
-
   --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
   --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
   --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
@@ -82,7 +76,6 @@
         (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)
     )
   );
-
   --fluid-min-scale-3: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
   --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
   --fluid-min-size-3: (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
@@ -93,7 +86,6 @@
         (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)
     )
   );
-
   --fluid-min-scale-4: var(--fluid-min-scale-3) * var(--fluid-min-ratio);
   --fluid-max-scale-4: var(--fluid-max-scale-3) * var(--fluid-max-ratio);
   --fluid-min-size-4: (var(--fluid-min-size) * var(--fluid-min-scale-3)) / 16;
@@ -104,7 +96,6 @@
         (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)
     )
   );
-
   --fluid-min-scale-5: var(--fluid-min-scale-4) * var(--fluid-min-ratio);
   --fluid-max-scale-5: var(--fluid-max-scale-4) * var(--fluid-max-ratio);
   --fluid-min-size-5: (var(--fluid-min-size) * var(--fluid-min-scale-4)) / 16;

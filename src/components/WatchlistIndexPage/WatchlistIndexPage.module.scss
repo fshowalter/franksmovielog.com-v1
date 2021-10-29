@@ -1,4 +1,5 @@
 @use "./src/styles/breakpoints";
+@use "sass:color";
 
 .containerCss {
   border-top: solid 1px var(--color-background);
@@ -37,7 +38,6 @@
 
 .rightCss {
   display: grid;
-
   grid-template-areas: "list" "." "show_more" ".";
   grid-template-columns: 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
@@ -138,8 +138,8 @@
 }
 
 .typeLinkCss {
-  background-color: darken(#fff, 2);
-  border: solid 1px darken(#e9e7e0, 10);
+  background-color: color.adjust(#fff, $lightness: -2%);
+  border: solid 1px color.adjust(#e9e7e0, $lightness: -10%);
   border-radius: 1rem;
   color: var(--color-link);
   display: flex;
