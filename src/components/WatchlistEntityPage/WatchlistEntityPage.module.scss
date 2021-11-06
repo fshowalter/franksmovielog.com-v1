@@ -26,9 +26,9 @@
       var(--step-1),
       1fr
     );
-  grid-template-rows: auto var(--step-1) auto var(--step-5) auto var(--step-1) auto var(
-      --step-5
-    ) auto var(--step-5);
+  grid-template-rows:
+    auto var(--step-1) auto var(--step-5) auto var(--step-1) auto var(--step-5)
+    auto var(--step-5);
 
   @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "breadcrumb breadcrumb ." ". . ." "header header ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";

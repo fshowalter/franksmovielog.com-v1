@@ -42,9 +42,9 @@
   @media (min-width: breakpoints.$max) {
     align-items: start;
     grid-template-areas: "border border border border border" ". . . . ." ". content . header ." "footer footer footer footer footer";
-    grid-template-columns: calc(2 * var(--step-1)) 1000px calc(
-        2 * var(--step-1)
-      ) 250px var(--step-1);
+    grid-template-columns:
+      calc(2 * var(--step-1)) 1000px calc(2 * var(--step-1))
+      250px var(--step-1);
     grid-template-rows: auto 4rem 1fr auto;
     max-width: breakpoints.$max;
   }
