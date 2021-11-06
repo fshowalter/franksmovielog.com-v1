@@ -37,7 +37,7 @@ describe("/watchlist", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+      expect(screen.getByTestId("movies-list")).toMatchSnapshot();
     });
   });
 
@@ -56,7 +56,7 @@ describe("/watchlist", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+      expect(screen.getByTestId("movies-list")).toMatchSnapshot();
     });
   });
 
@@ -66,7 +66,7 @@ describe("/watchlist", () => {
 
     userEvent.selectOptions(screen.getByLabelText("Director"), "Howard Hawks");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by director then show all", () => {
@@ -75,7 +75,7 @@ describe("/watchlist", () => {
     userEvent.selectOptions(screen.getByLabelText("Director"), "Howard Hawks");
     userEvent.selectOptions(screen.getByLabelText("Director"), "All");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by performer", () => {
@@ -84,7 +84,7 @@ describe("/watchlist", () => {
 
     userEvent.selectOptions(screen.getByLabelText("Performer"), "Bette Davis");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by performer then show all", () => {
@@ -93,25 +93,31 @@ describe("/watchlist", () => {
     userEvent.selectOptions(screen.getByLabelText("Performer"), "Bette Davis");
     userEvent.selectOptions(screen.getByLabelText("Performer"), "All");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by writer", () => {
     expect.hasAssertions();
     render(<WatchlistIndexPage data={data} />);
 
-    userEvent.selectOptions(screen.getByLabelText("Writer"), "Clive Barker");
+    userEvent.selectOptions(
+      screen.getByLabelText("Writer"),
+      "Raymond Chandler"
+    );
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by writer then show all", () => {
     render(<WatchlistIndexPage data={data} />);
 
-    userEvent.selectOptions(screen.getByLabelText("Writer"), "Clive Barker");
+    userEvent.selectOptions(
+      screen.getByLabelText("Writer"),
+      "Raymond Chandler"
+    );
     userEvent.selectOptions(screen.getByLabelText("Writer"), "All");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by collection", () => {
@@ -120,10 +126,10 @@ describe("/watchlist", () => {
 
     userEvent.selectOptions(
       screen.getByLabelText("Collection"),
-      "Hammer Films"
+      "Universal Monsters"
     );
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by collection then show all", () => {
@@ -131,11 +137,11 @@ describe("/watchlist", () => {
 
     userEvent.selectOptions(
       screen.getByLabelText("Collection"),
-      "Hammer Films"
+      "Universal Monsters"
     );
     userEvent.selectOptions(screen.getByLabelText("Collection"), "All");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can sort by title", () => {
@@ -143,7 +149,7 @@ describe("/watchlist", () => {
 
     userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can sort by release date with oldest first", () => {
@@ -154,7 +160,7 @@ describe("/watchlist", () => {
       "Release Date (Oldest First)"
     );
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can sort by release date with newest first", () => {
@@ -165,7 +171,7 @@ describe("/watchlist", () => {
       "Release Date (Newest First)"
     );
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can filter by release year", () => {
@@ -180,7 +186,7 @@ describe("/watchlist", () => {
     userEvent.clear(toInput);
     userEvent.type(toInput, "1978");
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can hide reviewed titles", () => {
@@ -188,7 +194,7 @@ describe("/watchlist", () => {
 
     userEvent.click(screen.getByText("Hide Reviewed"));
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can show hidden reviewed titles", () => {
@@ -197,7 +203,7 @@ describe("/watchlist", () => {
     userEvent.click(screen.getByText("Hide Reviewed"));
     userEvent.click(screen.getByText("Show Reviewed"));
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
   it("can view more titles", () => {
@@ -205,6 +211,6 @@ describe("/watchlist", () => {
 
     userEvent.click(screen.getByText("Show More"));
 
-    expect(screen.getByTestId("watchlist-list")).toMatchSnapshot();
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 });

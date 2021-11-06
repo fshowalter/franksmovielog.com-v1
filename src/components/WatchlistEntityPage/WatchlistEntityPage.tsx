@@ -1,6 +1,7 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer } from "react";
+import Button from "../Button";
 import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
@@ -11,10 +12,13 @@ import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
 import {
+  breadcrumbCss,
   containerCss,
   filtersCss,
   leftCss,
   listCss,
+  listHeaderGroupCss,
+  listInfoCss,
   listItemGradeCss,
   listItemImageLinkCss,
   listItemTitleCss,
@@ -23,12 +27,79 @@ import {
   percentCss,
   percentTotalsCss,
   rightCss,
+  showMoreCss,
 } from "./WatchlistEntityPage.module.scss";
 import reducer, {
   ActionType,
   initState,
   SortType,
 } from "./WatchlistEntityPage.reducer";
+
+function ListInfo({
+  visible,
+  total,
+}: {
+  visible: number;
+  total: number;
+}): JSX.Element {
+  let showingText;
+
+  if (visible > total) {
+    showingText = `Showing ${total} of ${total}`;
+  } else {
+    showingText = `Showing 1-${visible} of ${total.toLocaleString()}`;
+  }
+
+  return <div className={listInfoCss}>{showingText}</div>;
+}
+
+function groupForMovie(movie: WatchlistMovie, sortType: SortType): string {
+  switch (sortType) {
+    case "release-date-asc":
+    case "release-date-desc": {
+      return movie.releaseDate.substring(0, 4);
+    }
+    case "grade-asc":
+    case "grade-desc": {
+      return movie.lastReviewGrade || "Unrated";
+    }
+    case "title": {
+      const letter = movie.sortTitle.substring(0, 1);
+
+      if (letter.toLowerCase() == letter.toUpperCase()) {
+        return "#";
+      }
+
+      return movie.sortTitle.substring(0, 1).toLocaleUpperCase();
+    }
+    // no default
+  }
+}
+
+function groupMovies({
+  movies,
+  sortType,
+}: {
+  movies: WatchlistMovie[];
+  sortType: SortType;
+}): Map<string, WatchlistMovie[]> {
+  const groupedMovies: Map<string, WatchlistMovie[]> = new Map();
+
+  console.log(movies);
+
+  movies.map((movie) => {
+    const group = groupForMovie(movie, sortType);
+    let groupValue = groupedMovies.get(group);
+
+    if (!groupValue) {
+      groupValue = [];
+      groupedMovies.set(group, groupValue);
+    }
+    groupValue.push(movie);
+  });
+
+  return groupedMovies;
+}
 
 function WatchlistEntityProgress({
   total,
@@ -55,9 +126,9 @@ function ListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
           className={listItemImageLinkCss}
           to={`/reviews/${movie.reviewedMovieSlug}/`}
         >
-          {movie.backdrop && (
+          {movie.poster && (
             <GatsbyImage
-              image={movie.backdrop.childImageSharp.gatsbyImageData}
+              image={movie.poster.childImageSharp.gatsbyImageData}
               alt={`A still from ${movie.title} (${movie.year})`}
             />
           )}
@@ -76,7 +147,7 @@ function ListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
   return (
     <li>
       <GatsbyImage
-        image={movie.backdrop.childImageSharp.gatsbyImageData}
+        image={movie.poster.childImageSharp.gatsbyImageData}
         alt="An unreviewed title."
       />
       <div className={listItemTitleCss}>
@@ -101,6 +172,7 @@ function detailsForEntityType(
   const details = {
     tagLine: "",
     description: "",
+    kind: "",
   };
 
   const tagLine = (prefix: string) =>
@@ -113,21 +185,25 @@ function detailsForEntityType(
     case EntityType.DIRECTOR: {
       details.tagLine = tagLine("Director of");
       details.description = personDescription("directed by");
+      details.kind = "Directors";
       return details;
     }
     case EntityType.PERFORMER: {
       details.tagLine = tagLine("Performer in");
       details.description = personDescription("featuring");
+      details.kind = "Performers";
       return details;
     }
     case EntityType.WRITER: {
       details.tagLine = tagLine("Writer on");
       details.description = personDescription("written (in some part) by");
+      details.kind = "Writers";
       return details;
     }
     case EntityType.COLLECTION: {
       details.tagLine = tagLine("Collection of");
       details.description = `A sortable and filterable list of reviews of movies in the ${name} collection.`;
+      details.kind = "Collections";
       return details;
     }
   }
@@ -163,6 +239,11 @@ export default function WatchlistEntityPage({
     entity.watchlistMovies.length
   );
 
+  const groupedMovies = groupMovies({
+    movies: state.filteredMovies.slice(0, state.showCount),
+    sortType: state.sortType,
+  });
+
   return (
     <Layout>
       <Seo
@@ -173,6 +254,12 @@ export default function WatchlistEntityPage({
       />
       <main className={containerCss}>
         <div className={leftCss}>
+          <div className={breadcrumbCss}>
+            <Link to="/watchlist/">Watchlist</Link> /{" "}
+            <Link to={`/watchlist/${entityDetails.kind.toLowerCase()}`}>
+              {entityDetails.kind}
+            </Link>
+          </div>
           <FilterPageHeader
             className={pageHeaderCss}
             avatar={entity.avatar.childImageSharp.gatsbyImageData}
@@ -213,8 +300,16 @@ export default function WatchlistEntityPage({
                 Release Date (Newest First)
               </option>
               <option value="title">Title</option>
+              <option value="grade-desc">Grade (Best First)</option>
+              <option value="grade-asc">Grade (Worst First)</option>
             </SelectInput>
           </Fieldset>
+          <div className={listInfoCss}>
+            <ListInfo
+              visible={state.showCount}
+              total={state.filteredMovies.length}
+            />
+          </div>
           <div className={percentCss}>
             <WatchlistEntityProgress
               total={state.filteredMovies.length}
@@ -223,11 +318,39 @@ export default function WatchlistEntityPage({
           </div>
         </div>
         <div className={rightCss}>
-          <ul data-testid="movie-list" className={listCss}>
-            {state.filteredMovies.map((movie) => {
-              return <ListItem key={movie.imdbId} movie={movie} />;
+          <ol data-testid="movie-list">
+            {[...groupedMovies].map(([group, movies], index) => {
+              return (
+                <li key={group}>
+                  <div
+                    className={listHeaderGroupCss}
+                    style={{ zIndex: index + 100 }}
+                  >
+                    {group}
+                  </div>
+                  <ol className={listCss}>
+                    {movies.map((movie) => {
+                      return <ListItem key={movie.imdbId} movie={movie} />;
+                    })}
+                  </ol>
+                </li>
+              );
             })}
-          </ul>
+          </ol>
+          <div className={showMoreCss}>
+            {state.filteredMovies.length > state.showCount && (
+              <Button onClick={() => dispatch({ type: ActionType.SHOW_MORE })}>
+                <svg
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                </svg>
+                Show More
+              </Button>
+            )}
+          </div>
         </div>
       </main>
     </Layout>
@@ -244,7 +367,7 @@ type WatchlistMovieBase = {
   year: number;
   sortTitle: string;
   releaseDate: string;
-  backdrop: {
+  poster: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
     };
@@ -253,11 +376,13 @@ type WatchlistMovieBase = {
 
 type UnreviewedWatchlistMovie = {
   lastReviewGrade: null;
+  lastReviewGradeValue: null;
   reviewedMovieSlug: null;
 } & WatchlistMovieBase;
 
 type ReviewedWatchlistMovie = {
   lastReviewGrade: string;
+  lastReviewGradeValue: number;
   reviewedMovieSlug: string;
 } & WatchlistMovieBase;
 
@@ -299,19 +424,18 @@ export const pageQuery = graphql`
         title
         year
         lastReviewGrade
+        lastReviewGradeValue
         reviewedMovieSlug
         sortTitle: sort_title
         releaseDate: release_date
-        backdrop {
+        poster {
           childImageSharp {
             gatsbyImageData(
               layout: CONSTRAINED
               formats: [JPG, AVIF]
               quality: 80
-              breakpoints: [151, 184, 238, 302, 321, 368, 476, 642]
-              width: 321
+              width: 200
               placeholder: TRACED_SVG
-              sizes: "(max-width: 379px) 321px, (max-width: 555px) 238px, (max-width: 1279) 184px, (max-width: 1343px) 238px, 151px"
             )
           }
         }

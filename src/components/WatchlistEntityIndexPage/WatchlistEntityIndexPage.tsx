@@ -189,7 +189,7 @@ export default function WatchlistEntityIndexPage({
             className={pageHeaderCss}
             heading={
               <>
-                <Link to="/watchlist" className={pageHeaderSubCss}>
+                <Link to="/watchlist/" className={pageHeaderSubCss}>
                   Watchlist
                 </Link>{" "}
                 {entityDetails.pluralName}

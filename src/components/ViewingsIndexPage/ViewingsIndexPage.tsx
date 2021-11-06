@@ -1,4 +1,5 @@
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import { collator } from "../../utils/sort-utils";
 import Button from "../Button";
@@ -15,11 +16,11 @@ import {
   filtersCss,
   leftCss,
   listCss,
+  listHeaderGroupCss,
   listInfoCss,
-  listItemCss,
+  listItemImageLinkCss,
   listItemSlugCss,
   listItemTitleCss,
-  listItemTitleLinkCss,
   listItemTitleYearCss,
   pageHeaderCss,
   quoteCss,
@@ -56,45 +57,133 @@ function VenueOptions({
   );
 }
 
-/**
- * Renders a viewing title.
- */
-function ViewingTitle({
-  viewing,
+function ListInfo({
+  visible,
+  total,
 }: {
-  /** The viewing to render */
-  viewing: Viewing;
+  visible: number;
+  total: number;
 }): JSX.Element {
-  let title = (
-    <>
-      {viewing.title}{" "}
-      <span className={listItemTitleYearCss}>{viewing.year}</span>
-    </>
-  );
+  let showingText;
 
+  if (visible > total) {
+    showingText = `Showing ${total} of ${total}`;
+  } else {
+    showingText = `Showing 1-${visible} of ${total.toLocaleString()}`;
+  }
+
+  return <div className={listInfoCss}>{showingText}</div>;
+}
+
+function groupForViewing(viewing: Viewing, sortValue: SortType): string {
+  const shortMonthToLong: { [key: string]: string } = {
+    Jan: "January",
+    Feb: "February",
+    Mar: "March",
+    Apr: "April",
+    May: "May",
+    Jun: "June",
+    Jul: "July",
+    Aug: "August",
+    Sep: "September",
+    Oct: "October",
+    Nov: "November",
+    Dec: "December",
+  };
+
+  switch (sortValue) {
+    case "release-date-asc":
+    case "release-date-desc": {
+      return viewing.releaseDate.substring(0, 4);
+    }
+    case "viewing-date-asc":
+    case "viewing-date-desc": {
+      const match = viewing.viewingDate.match(
+        /[A-Za-z]{3} ([A-Za-z]{3}) \d{1,2}, (\d{4})/
+      );
+      if (!match) {
+        return "Unknown";
+      }
+
+      return `${shortMonthToLong[match[1]]} ${match[2]}`;
+    }
+    case "title": {
+      const letter = viewing.sortTitle.substring(0, 1);
+
+      if (letter.toLowerCase() == letter.toUpperCase()) {
+        return "#";
+      }
+
+      return viewing.sortTitle.substring(0, 1).toLocaleUpperCase();
+    }
+    // no default
+  }
+}
+
+function groupViewings({
+  viewings,
+  sortValue,
+}: {
+  viewings: Viewing[];
+  sortValue: SortType;
+}): Map<string, Viewing[]> {
+  const groupedViewings: Map<string, Viewing[]> = new Map();
+
+  viewings.map((viewing) => {
+    const group = groupForViewing(viewing, sortValue);
+    let groupValue = groupedViewings.get(group);
+
+    if (!groupValue) {
+      groupValue = [];
+      groupedViewings.set(group, groupValue);
+    }
+    groupValue.push(viewing);
+  });
+
+  return groupedViewings;
+}
+
+function ListItem({ viewing }: { viewing: Viewing }): JSX.Element {
   if (viewing.slug) {
-    title = (
-      <Link
-        rel="canonical"
-        to={`/reviews/${viewing.slug}/#${viewing.sequence}`}
-        className={listItemTitleLinkCss}
-      >
-        {title}
-      </Link>
+    return (
+      <li>
+        <Link className={listItemImageLinkCss} to={`/reviews/${viewing.slug}/`}>
+          {viewing.poster && (
+            <GatsbyImage
+              image={viewing.poster.childImageSharp.gatsbyImageData}
+              alt={`A poster from ${viewing.title} (${viewing.year})`}
+            />
+          )}
+        </Link>
+        <div className={listItemTitleCss}>
+          <Link to={`/reviews/${viewing.slug}/`}>
+            {viewing.title}{" "}
+            <span className={listItemTitleYearCss}>{viewing.year}</span>
+          </Link>
+        </div>
+        <div className={listItemSlugCss}>
+          <div>{viewing.viewingDate}</div>
+          <div>{viewing.venue}</div>
+        </div>
+      </li>
     );
   }
 
-  return <div className={listItemTitleCss}>{title}</div>;
-}
-
-/**
- * Renders a viewing slug.
- */
-function ViewingSlug({ viewing }: { viewing: Viewing }) {
   return (
-    <div className={listItemSlugCss}>
-      {viewing.viewingDate} via {viewing.venue}
-    </div>
+    <li>
+      <GatsbyImage
+        image={viewing.poster.childImageSharp.gatsbyImageData}
+        alt="An unreviewed title."
+      />
+      <div className={listItemTitleCss}>
+        {viewing.title}{" "}
+        <span className={listItemTitleYearCss}>{viewing.year}</span>
+      </div>
+      <div className={listItemSlugCss}>
+        <div>{viewing.viewingDate}</div>
+        <div>{viewing.venue}</div>
+      </div>
+    </li>
   );
 }
 
@@ -115,6 +204,11 @@ export default function ViewingsIndexPage({
   );
 
   const listHeader = useRef<HTMLDivElement>(null);
+
+  const groupedViewings = groupViewings({
+    viewings: state.filteredViewings.slice(0, state.showCount),
+    sortValue: state.sortValue,
+  });
 
   return (
     <Layout>
@@ -194,21 +288,30 @@ export default function ViewingsIndexPage({
             </SelectInput>
           </Fieldset>
           <div className={listInfoCss}>
-            Showing 1-{state.showCount} of{" "}
-            {state.filteredViewings.length.toLocaleString()}
+            <ListInfo
+              visible={state.showCount}
+              total={state.filteredViewings.length}
+            />
           </div>
         </div>
         <div className={rightCss} ref={listHeader}>
-          <ol data-testid="viewings-list" className={listCss}>
-            {state.filteredViewings.slice(0, state.showCount).map((viewing) => {
+          <ol data-testid="viewings-list">
+            {[...groupedViewings].map(([group, viewings], index) => {
               return (
-                <li
-                  value={viewing.sequence}
-                  key={viewing.sequence}
-                  className={listItemCss}
-                >
-                  <ViewingTitle viewing={viewing} />
-                  <ViewingSlug viewing={viewing} />
+                <li key={group}>
+                  <div
+                    className={listHeaderGroupCss}
+                    style={{ zIndex: index + 100 }}
+                  >
+                    {group}
+                  </div>
+                  <ol className={listCss}>
+                    {viewings.map((viewing) => {
+                      return (
+                        <ListItem viewing={viewing} key={viewing.sequence} />
+                      );
+                    })}
+                  </ol>
                 </li>
               );
             })}
@@ -242,6 +345,11 @@ export interface Viewing {
   venue: string;
   sortTitle: string;
   slug: string | null;
+  poster: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
 }
 
 interface PageQueryResult {
@@ -255,13 +363,24 @@ export const pageQuery = graphql`
     viewing: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
         sequence
-        viewingDate: viewing_date(formatString: "dddd MMM D, YYYY")
+        viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
         releaseDate: release_date
         title
         venue
         year
         sortTitle: sort_title
         slug
+        poster {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              formats: [JPG, AVIF]
+              quality: 80
+              width: 200
+              placeholder: TRACED_SVG
+            )
+          }
+        }
       }
     }
   }

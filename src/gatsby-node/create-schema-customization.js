@@ -101,6 +101,36 @@ const ViewingsJson = {
     venue: "String!",
     sort_title: "String!",
     slug: "String",
+    poster: {
+      type: "File",
+      resolve: async (source, args, context, info) => {
+        const reviewedMovie = await context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: REVIEWED_MOVIES_JSON,
+          firstOnly: true,
+        });
+
+        if (!reviewedMovie) {
+          return context.nodeModel.runQuery({
+            type: "File",
+            firstOnly: true,
+            query: {
+              filter: {
+                absolutePath: {
+                  eq: path.resolve(`./content/assets/posters/default.png`),
+                },
+              },
+            },
+          });
+        }
+
+        return resolveFieldForNode("poster", reviewedMovie, context, info);
+      },
+    },
   },
   extensions: {
     infer: false,
@@ -196,6 +226,31 @@ const WatchlistMoviesJson = {
         );
       },
     },
+    lastReviewGradeValue: {
+      type: "Int",
+      resolve: async (source, args, context, info) => {
+        const reviewedMovie = await context.nodeModel.runQuery({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: REVIEWED_MOVIES_JSON,
+          firstOnly: true,
+        });
+
+        if (!reviewedMovie) {
+          return null;
+        }
+
+        return resolveFieldForNode(
+          "lastReviewGradeValue",
+          reviewedMovie,
+          context,
+          info
+        );
+      },
+    },
     reviewedMovieSlug: {
       type: "String",
       resolve: async (source, args, context) => {
@@ -216,7 +271,7 @@ const WatchlistMoviesJson = {
         return reviewedMovie.slug;
       },
     },
-    backdrop: {
+    poster: {
       type: "File",
       resolve: async (source, args, context, info) => {
         const reviewedMovie = await context.nodeModel.runQuery({
@@ -236,14 +291,14 @@ const WatchlistMoviesJson = {
             query: {
               filter: {
                 absolutePath: {
-                  eq: path.resolve(`./content/assets/backdrops/default.png`),
+                  eq: path.resolve(`./content/assets/posters/default.png`),
                 },
               },
             },
           });
         }
 
-        return resolveFieldForNode("backdrop", reviewedMovie, context, info);
+        return resolveFieldForNode("poster", reviewedMovie, context, info);
       },
     },
   },

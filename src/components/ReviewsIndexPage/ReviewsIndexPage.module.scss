@@ -1,4 +1,5 @@
 @use "./src/styles/breakpoints";
+@use "sass:color";
 
 .containerCss {
   border-top: solid 1px var(--color-background);
@@ -12,7 +13,7 @@
     max-width: unset;
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: breakpoints.$max) {
     border-top: 0;
     padding-top: 0;
   }
@@ -21,25 +22,30 @@
 .leftCss {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". toggle ." ". . .";
+  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". list_info ." ". . ." ". percent ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
     );
-  grid-template-rows: auto var(--step-5) auto var(--step-1) auto 1.5rem auto var(
+  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
       --step-5
     );
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "header header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "toggle toggle ." ". . .";
+    grid-template-areas: "header header ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";
   }
 }
 
 .rightCss {
   display: grid;
-  grid-template-areas: "list" "." "pagination" ".";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto var(--step-1) auto var(--step-5);
+  flex-grow: 1;
+  grid-template-areas: "list" "." "show_more" ".";
+  grid-template-rows: auto var(--step-1) auto var(--step-5) 1fr;
+  padding: 0 var(--step-1);
+
+  @media (min-width: breakpoints.$desktop) {
+    padding-right: 0;
+  }
 }
 
 .pageHeaderCss {
@@ -51,82 +57,80 @@
 }
 
 .listCss {
-  display: block;
+  column-gap: var(--step-1);
+  display: grid;
   grid-area: list;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  margin: 1rem 0;
+  row-gap: 2rem;
 }
 
-.listItemCss {
-  align-items: end;
-  column-gap: 0.5rem;
-  display: grid;
-  grid-template-areas: "title grade" "date .";
-  grid-template-columns: auto 45px;
-  grid-template-rows: auto 20px;
-  padding: 1.25rem 0 1.25rem var(--step-1);
-  row-gap: 0.25rem;
-
-  &:nth-child(odd) {
-    background-color: #e9e7e061;
-  }
+.listItemImageLinkCss {
+  display: block;
+  max-width: 250px;
 }
 
 .listItemTitleCss {
-  color: inherit;
-  font-size: 1.125rem;
-  grid-area: title;
-  overflow: hidden;
-  position: relative;
-
-  &::after {
-    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
-      ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
-      ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
-    opacity: 50%;
-    padding-left: 0.25ch;
-    position: absolute;
-    text-align: right;
-  }
+  color: var(--color-link);
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-top: 0.25rem;
+  text-rendering: optimizeLegibility;
 }
 
 .listItemTitleYearCss {
   color: var(--color-text-secondary);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 
-.listItemLetterGradeCss {
-  color: inherit;
-  font-feature-settings: "tnum";
-  font-size: 1.125rem;
-  grid-area: grade;
-  letter-spacing: -1px;
-  position: relative;
-  width: 40px;
+.listItemGradeCss {
+  height: 16px;
+  width: 80px;
 }
 
-.listItemGradeACss {
-  color: #379634;
-}
-
-.listItemGradeBCss {
-  color: #6f9e26;
-}
-
-.listItemGradeCCss {
-  color: #aba716;
-}
-
-.listItemGradeDCss {
-  color: #b66522;
-}
-
-.listItemGradeFCss {
-  color: #c1292e;
-}
-
-.listItemDateCss {
+.listItemSlugCss {
+  align-items: center;
   color: var(--color-text-secondary);
-  font-size: 0.875rem;
-  grid-area: date;
-  letter-spacing: 0.5px;
-  padding: 0 var(--step-1) 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  font-weight: 300;
+  justify-content: space-between;
+  margin-top: 3px;
+  row-gap: 3px;
+}
+
+.listInfoCss {
+  color: var(--color-text-secondary);
+  font-size: clamp(15px, 4vw, 16px);
+  font-weight: 300;
+  grid-area: list_info;
+  justify-self: center;
+  text-align: center;
+}
+
+.showMoreCss {
+  grid-area: show_more;
+
+  @media (max-width: breakpoints.$tablet) {
+    margin-left: var(--step-1);
+    padding-right: var(--step-1);
+  }
+}
+
+.listHeaderGroupCss {
+  background-color: var(--color-background);
+  display: block;
+  font-size: 1.125rem;
+  margin: 0 calc(-1 * var(--step-1));
+  padding: 0.5rem var(--step-1);
+  position: sticky;
+  top: 0;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin: 0 calc(-0.5 * var(--step-1));
+    padding: 0.5rem calc(0.55 * var(--step-1));
+  }
 }

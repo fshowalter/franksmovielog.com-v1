@@ -63,7 +63,7 @@ type State = {
   sortValue: SortType;
 };
 
-const SHOW_COUNT_DEFAULT = 50;
+const SHOW_COUNT_DEFAULT = 24;
 
 /**
  * Initializes the page state.
