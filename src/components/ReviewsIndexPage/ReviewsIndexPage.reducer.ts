@@ -6,13 +6,14 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
-import type { ReviewedMovie } from "./ReviewsIndexPage";
+import type { Review } from "./ReviewsIndexPage";
 
 export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
   FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
   SORT = "SORT",
   TOGGLE_GRADES = "TOGGLE_GRADES",
+  SHOW_MORE = "SHOW_MORE",
 }
 
 export type SortType =
@@ -20,36 +21,36 @@ export type SortType =
   | "release-date-desc"
   | "release-date-asc"
   | "grade-asc"
-  | "grade-desc";
+  | "grade-desc"
+  | "review-date-asc"
+  | "review-date-desc";
+
+const SHOW_COUNT_DEFAULT = 24;
 
 /**
  * The page state.
  */
 type State = {
   /** All possible reviews. */
-  allReviews: ReviewedMovie[];
+  allReviews: Review[];
   /** Reviews matching the current filters. */
-  filteredReviews: ReviewedMovie[];
+  filteredReviews: Review[];
   /** Reviews matching the current filters for the current page. */
-  filters: Record<string, (review: ReviewedMovie) => boolean>;
+  filters: Record<string, (review: Review) => boolean>;
   /** The current page. */
   minYear: number;
   /** The maximum year for the release date filter. */
   maxYear: number;
   /** The active sort value. */
   sortValue: SortType;
+  /** The number of viewings to show. */
+  showCount: number;
   /** True to show grades vs. stars. */
   showGrades: boolean;
 };
 
-function sortReviews(
-  reviews: ReviewedMovie[],
-  sortOrder: SortType
-): ReviewedMovie[] {
-  const sortMap: Record<
-    SortType,
-    (a: ReviewedMovie, b: ReviewedMovie) => number
-  > = {
+function sortReviews(reviews: Review[], sortOrder: SortType): Review[] {
+  const sortMap: Record<SortType, (a: Review, b: Review) => number> = {
     title: (a, b) =>
       collator.compare(a.reviewedMovie.sortTitle, b.reviewedMovie.sortTitle),
     "release-date-desc": (a, b) =>
@@ -58,6 +59,10 @@ function sortReviews(
       sortStringAsc(a.reviewedMovie.releaseDate, b.reviewedMovie.releaseDate),
     "grade-asc": (a, b) => sortNumberAsc(a.gradeValue, b.gradeValue),
     "grade-desc": (a, b) => sortNumberDesc(a.gradeValue, b.gradeValue),
+    "review-date-desc": (a, b) =>
+      sortNumberDesc(a.frontmatter.sequence, b.frontmatter.sequence),
+    "review-date-asc": (a, b) =>
+      sortNumberAsc(a.frontmatter.sequence, b.frontmatter.sequence),
   };
 
   const comparer = sortMap[sortOrder];
@@ -69,7 +74,7 @@ function sortReviews(
  * Returns the min and max release years for a given collection of reviews.
  * @param reviews The reviews collection.
  */
-function minMaxReleaseYearsForReviews(reviews: ReviewedMovie[]) {
+function minMaxReleaseYearsForReviews(reviews: Review[]) {
   const releaseYears = reviews
     .map((review) => {
       return review.reviewedMovie.year;
@@ -82,7 +87,7 @@ function minMaxReleaseYearsForReviews(reviews: ReviewedMovie[]) {
   return [minYear, maxYear];
 }
 
-export function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
+export function initState({ reviews }: { reviews: Review[] }): State {
   const [minYear, maxYear] = minMaxReleaseYearsForReviews(reviews);
 
   return {
@@ -93,6 +98,7 @@ export function initState({ reviews }: { reviews: ReviewedMovie[] }): State {
     maxYear,
     sortValue: "title",
     showGrades: false,
+    showCount: SHOW_COUNT_DEFAULT,
   };
 }
 
@@ -121,11 +127,16 @@ interface ToggleGradesAction {
   type: ActionType.TOGGLE_GRADES;
 }
 
+interface ShowMoreAction {
+  type: ActionType.SHOW_MORE;
+}
+
 export type Action =
   | FilterTitleAction
   | FilterReleaseYearAction
   | SortAction
-  | ToggleGradesAction;
+  | ToggleGradesAction
+  | ShowMoreAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -141,12 +152,12 @@ export default function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (review: ReviewedMovie) => {
+        title: (review: Review) => {
           return regex.test(review.reviewedMovie.title);
         },
       };
       filteredReviews = sortReviews(
-        applyFilters<ReviewedMovie>({ collection: state.allReviews, filters }),
+        applyFilters<Review>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
@@ -158,7 +169,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionType.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (review: ReviewedMovie) => {
+        releaseYear: (review: Review) => {
           const releaseYear = review.reviewedMovie.year;
 
           return (
@@ -167,7 +178,7 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredReviews = sortReviews(
-        applyFilters<ReviewedMovie>({ collection: state.allReviews, filters }),
+        applyFilters<Review>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
@@ -188,6 +199,12 @@ export default function reducer(state: State, action: Action): State {
       return {
         ...state,
         showGrades: !state.showGrades,
+      };
+    }
+    case ActionType.SHOW_MORE: {
+      return {
+        ...state,
+        showCount: state.showCount + SHOW_COUNT_DEFAULT,
       };
     }
     // no default

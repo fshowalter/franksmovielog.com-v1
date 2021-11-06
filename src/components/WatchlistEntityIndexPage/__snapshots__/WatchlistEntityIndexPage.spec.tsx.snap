@@ -7323,7 +7323,7 @@ exports[`/watchlist/collections/ renders 1`] = `
             >
               <a
                 class="pageHeaderSubCss"
-                href="/watchlist"
+                href="/watchlist/"
               >
                 Watchlist
               </a>
@@ -11058,7 +11058,7 @@ exports[`/watchlist/directors/ renders 1`] = `
             >
               <a
                 class="pageHeaderSubCss"
-                href="/watchlist"
+                href="/watchlist/"
               >
                 Watchlist
               </a>
@@ -14793,7 +14793,7 @@ exports[`/watchlist/performers/ renders 1`] = `
             >
               <a
                 class="pageHeaderSubCss"
-                href="/watchlist"
+                href="/watchlist/"
               >
                 Watchlist
               </a>
@@ -18528,7 +18528,7 @@ exports[`/watchlist/writers/ renders 1`] = `
             >
               <a
                 class="pageHeaderSubCss"
-                href="/watchlist"
+                href="/watchlist/"
               >
                 Watchlist
               </a>

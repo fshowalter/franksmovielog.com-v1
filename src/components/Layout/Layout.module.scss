@@ -39,13 +39,14 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: breakpoints.$max) {
     align-items: start;
     grid-template-areas: "border border border border border" ". . . . ." ". content . header ." "footer footer footer footer footer";
-    grid-template-columns: calc(2 * var(--step-1)) 1fr calc(2 * var(--step-1)) 250px var(
-        --step-1
-      );
+    grid-template-columns: calc(2 * var(--step-1)) 1000px calc(
+        2 * var(--step-1)
+      ) 250px var(--step-1);
     grid-template-rows: auto 4rem 1fr auto;
+    max-width: breakpoints.$max;
   }
 }
 
@@ -86,7 +87,7 @@
     justify-items: start;
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: breakpoints.$max) {
     column-gap: unset;
     grid-template-areas: "logo logo logo" "tagline tagline tagline" ". . ." "search search search" ". . ." ". nav .";
     grid-template-columns: 1rem auto 1rem;
@@ -103,7 +104,7 @@
   line-height: 1;
   white-space: nowrap;
 
-  @media (min-width: 80rem) {
+  @media (min-width: breakpoints.$max) {
     font-size: var(--step-1);
   }
 }
@@ -135,7 +136,7 @@
     margin: 0;
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: 86rem) {
     border-bottom: 0;
     flex-direction: column;
     padding: 0;
@@ -165,7 +166,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: breakpoints.$max) {
     padding: 0;
 
     &:first-of-type {
@@ -176,7 +177,7 @@
 }
 
 .mastNavLinkCss {
-  @media (min-width: 80rem) {
+  @media (min-width: 86rem) {
     border-bottom: 1px solid rgb(0 0 0 / 15%);
     display: block;
     line-height: var(--step-5);

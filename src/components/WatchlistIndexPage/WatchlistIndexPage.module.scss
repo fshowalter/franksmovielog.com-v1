@@ -41,6 +41,14 @@
   grid-template-areas: "list" "." "show_more" ".";
   grid-template-columns: 1fr;
   grid-template-rows: auto var(--step-1) auto var(--step-5);
+
+  @media (min-width: breakpoints.$tablet) {
+    padding: 0 var(--step-1);
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    padding-right: 0;
+  }
 }
 
 .pageHeaderCss {
@@ -72,21 +80,35 @@
   grid-area: list;
 }
 
+.nestedListCss {
+  @media (min-width: breakpoints.$tablet) {
+    margin: 1rem 0;
+  }
+}
+
 .listItemCss {
   display: grid;
-  grid-template-areas: "title . checkmark ." "slug . checkmark .";
-  grid-template-columns: 1fr var(--step-1) 3rem 1rem;
+  grid-template-areas: "poster . . . . ." "poster . title . checkmark ." "poster . slug . checkmark ." "poster . . . . .";
+  grid-template-columns: 50px 1rem 1fr var(--step-1) 3rem 1rem;
+  grid-template-rows: auto auto minmax(1.5rem 1fr);
+  padding-bottom: 1rem;
   padding-left: var(--step-1);
+  padding-top: 1rem;
 
   &:nth-child(odd) {
     background-color: #e9e7e061;
   }
 }
 
+.listItemPosterCss {
+  align-self: start;
+  grid-area: poster;
+}
+
 .listItemTitleCss {
   font-size: 1.125rem;
   grid-area: title;
-  padding: 1.5rem var(--step-1) 0.25rem 0;
+  padding: 0 var(--step-1) 0.25rem 0;
 }
 
 .listItemTitleLinkCss {
@@ -103,7 +125,7 @@
   font-size: 0.875rem;
   grid-area: slug;
   letter-spacing: 0.5px;
-  padding: 0 var(--step-1) 1.5rem 0;
+  padding: 0 var(--step-1) 0 0;
 }
 
 .listItemCheckmarkCss {
@@ -172,4 +194,18 @@
   color: var(--color-text-tertiary);
   display: block;
   margin-top: 0.75rem;
+}
+
+.listHeaderGroupCss {
+  background-color: var(--color-background);
+  display: block;
+  font-size: 1.125rem;
+  padding: 0.5rem var(--step-1);
+  position: sticky;
+  top: 0;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin: 0 calc(-0.5 * var(--step-1));
+    padding: 0.5rem calc(1.5 * var(--step-1));
+  }
 }

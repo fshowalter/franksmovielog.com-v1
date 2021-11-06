@@ -1,4 +1,5 @@
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import { collator } from "../../utils/sort-utils";
 import toSentenceArray from "../../utils/to-sentence-array";
@@ -16,13 +17,16 @@ import {
   filtersCss,
   leftCss,
   listCss,
+  listHeaderGroupCss,
   listInfoCss,
   listItemCheckmarkCss,
   listItemCss,
+  listItemPosterCss,
   listItemSlugCss,
   listItemTitleCss,
   listItemTitleLinkCss,
   listItemTitleYearCss,
+  nestedListCss,
   pageHeaderCss,
   percentCss,
   percentTotalsCss,
@@ -35,6 +39,66 @@ import {
 } from "./WatchlistIndexPage.module.scss";
 import type { SortType } from "./WatchlistIndexPage.reducer";
 import reducer, { ActionType, initState } from "./WatchlistIndexPage.reducer";
+
+function ListInfo({
+  visible,
+  total,
+}: {
+  visible: number;
+  total: number;
+}): JSX.Element {
+  let showingText;
+
+  if (visible > total) {
+    showingText = `Showing ${total} of ${total}`;
+  } else {
+    showingText = `Showing 1-${visible} of ${total.toLocaleString()}`;
+  }
+
+  return <div className={listInfoCss}>{showingText}</div>;
+}
+
+function groupForMovie(movie: WatchlistMovie, sortValue: SortType): string {
+  switch (sortValue) {
+    case "release-date-asc":
+    case "release-date-desc": {
+      return movie.releaseDate.substring(0, 4);
+    }
+    case "title": {
+      const letter = movie.sortTitle.substring(0, 1);
+
+      if (letter.toLowerCase() == letter.toUpperCase()) {
+        return "#";
+      }
+
+      return movie.sortTitle.substring(0, 1).toLocaleUpperCase();
+    }
+    // no default
+  }
+}
+
+function groupMovies({
+  movies,
+  sortValue,
+}: {
+  movies: WatchlistMovie[];
+  sortValue: SortType;
+}): Map<string, WatchlistMovie[]> {
+  const groupedMovies: Map<string, WatchlistMovie[]> = new Map();
+
+  movies.map((movie) => {
+    const group = groupForMovie(movie, sortValue);
+    let groupValue = groupedMovies.get(group);
+
+    if (!groupValue) {
+      groupValue = [];
+      groupedMovies.set(group, groupValue);
+    }
+    groupValue.push(movie);
+  });
+
+  return groupedMovies;
+}
 
 /**
  * Renders options for a watchlist person or collection select.
@@ -261,6 +325,34 @@ function WatchlistCollectionLinkItem({
   );
 }
 
+function WatchlistMoviePoster({
+  movie,
+}: {
+  movie: WatchlistMovie;
+}): JSX.Element {
+  const poster = (
+    <GatsbyImage
+      className={listItemPosterCss}
+      image={movie.poster.childImageSharp.gatsbyImageData}
+      alt={`A poster from ${movie.title} (${movie.year})`}
+    />
+  );
+
+  if (movie.reviewedMovieSlug) {
+    return (
+      <Link
+        rel="canonical"
+        to={`/reviews/${movie.reviewedMovieSlug}/`}
+        className={listItemPosterCss}
+      >
+        {poster}
+      </Link>
+    );
+  }
+
+  return <div className={listItemPosterCss}>{poster}</div>;
+}
+
 /**
  * Renders the watchlist page.
  */
@@ -279,6 +371,10 @@ export default function WatchlistIndexPage({
 
   const listHeader = useRef<HTMLDivElement>(null);
   const reviewedCount = reviewedMovieCount(state.filteredMovies);
+  const groupedMovies = groupMovies({
+    movies: state.filteredMovies.slice(0, state.showCount),
+    sortValue: state.sortValue,
+  });
 
   return (
     <Layout>
@@ -412,8 +508,10 @@ export default function WatchlistIndexPage({
             </SelectInput>
           </Fieldset>
           <div className={listInfoCss}>
-            Showing 1-{state.showCount} of{" "}
-            {state.filteredMovies.length.toLocaleString()}
+            <ListInfo
+              visible={state.showCount}
+              total={state.filteredMovies.length}
+            />
           </div>
           <div className={percentCss}>
             <WatchlistProgress
@@ -430,13 +528,28 @@ export default function WatchlistIndexPage({
           </div>
         </div>
         <div ref={listHeader} className={rightCss}>
-          <ol data-testid="watchlist-list" className={listCss}>
-            {state.filteredMovies.slice(0, state.showCount).map((movie) => {
+          <ol data-testid="movies-list" className={listCss}>
+            {[...groupedMovies].map(([group, movies], index) => {
               return (
-                <li key={movie.imdbId} className={listItemCss}>
-                  <WatchlistMovieTitle movie={movie} />
-                  <WatchlistMovieSlug movie={movie} />
-                  <WatchlistMovieCheckMark movie={movie} />
+                <li key={group}>
+                  <div
+                    className={listHeaderGroupCss}
+                    style={{ zIndex: index + 100 }}
+                  >
+                    {group}
+                  </div>
+                  <ol className={nestedListCss}>
+                    {movies.map((movie) => {
+                      return (
+                        <li key={movie.imdbId} className={listItemCss}>
+                          <WatchlistMoviePoster movie={movie} />
+                          <WatchlistMovieTitle movie={movie} />
+                          <WatchlistMovieSlug movie={movie} />
+                          <WatchlistMovieCheckMark movie={movie} />
+                        </li>
+                      );
+                    })}
+                  </ol>
                 </li>
               );
             })}
@@ -472,6 +585,11 @@ export interface WatchlistMovie {
   reviewedMovieSlug: string | null;
   sortTitle: string;
   releaseDate: string;
+  poster: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
 }
 
 interface PageQueryResult {
@@ -496,6 +614,17 @@ export const pageQuery = graphql`
         performerNames
         writerNames
         collectionNames: collection_names
+        poster {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FIXED
+              formats: [JPG, AVIF]
+              quality: 80
+              width: 50
+              placeholder: TRACED_SVG
+            )
+          }
+        }
       }
     }
   }

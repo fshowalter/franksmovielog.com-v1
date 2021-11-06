@@ -1,8 +1,11 @@
 import { graphql, Link } from "gatsby";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer } from "react";
+import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
+import Grade from "../Grade";
 import Layout from "../Layout";
 import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
@@ -13,40 +16,138 @@ import {
   filtersCss,
   leftCss,
   listCss,
-  listItemCss,
-  listItemDateCss,
-  listItemGradeACss,
-  listItemGradeBCss,
-  listItemGradeCCss,
-  listItemGradeDCss,
-  listItemGradeFCss,
-  listItemLetterGradeCss,
+  listHeaderGroupCss,
+  listInfoCss,
+  listItemGradeCss,
+  listItemImageLinkCss,
+  listItemSlugCss,
   listItemTitleCss,
   listItemTitleYearCss,
   pageHeaderCss,
   rightCss,
+  showMoreCss,
 } from "./ReviewsIndexPage.module.scss";
 import type { SortType } from "./ReviewsIndexPage.reducer";
 import reducer, { ActionType, initState } from "./ReviewsIndexPage.reducer";
 
-function gradeCssForReview(review: ReviewedMovie): string {
-  if (review.gradeValue > 9) {
-    return listItemGradeACss;
+function ListInfo({
+  visible,
+  total,
+}: {
+  visible: number;
+  total: number;
+}): JSX.Element {
+  let showingText;
+
+  if (visible > total) {
+    showingText = `Showing ${total} of ${total}`;
+  } else {
+    showingText = `Showing 1-${visible} of ${total.toLocaleString()}`;
   }
 
-  if (review.gradeValue > 6) {
-    return listItemGradeBCss;
-  }
+  return <div className={listInfoCss}>{showingText}</div>;
+}
 
-  if (review.gradeValue > 3) {
-    return listItemGradeCCss;
-  }
+function groupForReview(review: Review, sortValue: SortType): string {
+  const shortMonthToLong: { [key: string]: string } = {
+    Jan: "January",
+    Feb: "February",
+    Mar: "March",
+    Apr: "April",
+    May: "May",
+    Jun: "June",
+    Jul: "July",
+    Aug: "August",
+    Sep: "September",
+    Oct: "October",
+    Nov: "November",
+    Dec: "December",
+  };
 
-  if (review.gradeValue > 0) {
-    return listItemGradeDCss;
-  }
+  switch (sortValue) {
+    case "release-date-asc":
+    case "release-date-desc": {
+      return review.reviewedMovie.releaseDate.substring(0, 4);
+    }
+    case "review-date-asc":
+    case "review-date-desc": {
+      const match = review.frontmatter.date.match(
+        /[A-Za-z]{3} ([A-Za-z]{3}) \d{1,2}, (\d{4})/
+      );
+      if (!match) {
+        return "Unknown";
+      }
 
-  return listItemGradeFCss;
+      return `${shortMonthToLong[match[1]]} ${match[2]}`;
+    }
+    case "grade-asc":
+    case "grade-desc": {
+      return review.frontmatter.grade;
+    }
+    case "title": {
+      const letter = review.reviewedMovie.sortTitle.substring(0, 1);
+
+      if (letter.toLowerCase() == letter.toUpperCase()) {
+        return "#";
+      }
+
+      return review.reviewedMovie.sortTitle.substring(0, 1).toLocaleUpperCase();
+    }
+    // no default
+  }
+}
+
+function groupReviews({
+  reviews,
+  sortValue,
+}: {
+  reviews: Review[];
+  sortValue: SortType;
+}): Map<string, Review[]> {
+  const groupedReviews: Map<string, Review[]> = new Map();
+
+  reviews.map((review) => {
+    const group = groupForReview(review, sortValue);
+    let groupValue = groupedReviews.get(group);
+
+    if (!groupValue) {
+      groupValue = [];
+      groupedReviews.set(group, groupValue);
+    }
+    groupValue.push(review);
+  });
+
+  return groupedReviews;
+}
+
+function ListItem({ review }: { review: Review }): JSX.Element {
+  return (
+    <li>
+      <Link
+        className={listItemImageLinkCss}
+        to={`/reviews/${review.frontmatter.slug}/`}
+      >
+        {review.reviewedMovie.poster && (
+          <GatsbyImage
+            image={review.reviewedMovie.poster.childImageSharp.gatsbyImageData}
+            alt={`A poster from ${review.reviewedMovie.title} (${review.reviewedMovie.year})`}
+          />
+        )}
+      </Link>
+      <div className={listItemTitleCss}>
+        <Link to={`/reviews/${review.frontmatter.slug}/`}>
+          {review.reviewedMovie.title}{" "}
+          <span className={listItemTitleYearCss}>
+            {review.reviewedMovie.year}
+          </span>
+        </Link>
+      </div>
+      <div className={listItemSlugCss}>
+        <Grade grade={review.frontmatter.grade} className={listItemGradeCss} />{" "}
+        <span>{review.frontmatter.date}</span>
+      </div>
+    </li>
+  );
 }
 
 /**
@@ -64,6 +165,11 @@ export default function ReviewsIndexPage({
     },
     initState
   );
+
+  const groupedReviews = groupReviews({
+    reviews: state.filteredReviews.slice(0, state.showCount),
+    sortValue: state.sortValue,
+  });
 
   return (
     <Layout>
@@ -121,36 +227,60 @@ export default function ReviewsIndexPage({
               <option value="release-date-asc">
                 Release Date (Oldest First)
               </option>
+              <option value="review-date-desc">
+                Review Date (Newest First)
+              </option>
+              <option value="review-date-asc">
+                Review Date (Oldest First)
+              </option>
             </SelectInput>
           </Fieldset>
+          <div className={listInfoCss}>
+            <ListInfo
+              visible={state.showCount}
+              total={state.filteredReviews.length}
+            />
+          </div>
         </div>
         <div className={rightCss}>
-          <ol data-testid="reviews-list" className={listCss}>
-            {state.filteredReviews.map((review) => {
+          <ol data-testid="reviews-list">
+            {[...groupedReviews].map(([group, reviews], index) => {
               return (
-                <li
-                  className={`${listItemCss} ${gradeCssForReview(review)}`}
-                  key={review.frontmatter.sequence}
-                >
-                  <Link
-                    to={`/reviews/${review.frontmatter.slug}/#${review.frontmatter.sequence}`}
-                    className={listItemTitleCss}
+                <li key={group}>
+                  <div
+                    className={listHeaderGroupCss}
+                    style={{ zIndex: index + 100 }}
                   >
-                    {review.reviewedMovie.title}{" "}
-                    <span className={listItemTitleYearCss}>
-                      {review.reviewedMovie.year}
-                    </span>
-                  </Link>
-                  <div className={listItemLetterGradeCss}>
-                    {review.frontmatter.grade.replace("-", "\u2212")}
+                    {group}
                   </div>
-                  <div className={listItemDateCss}>
-                    {review.frontmatter.date}
-                  </div>
+                  <ol className={listCss}>
+                    {reviews.map((review) => {
+                      return (
+                        <ListItem
+                          review={review}
+                          key={review.frontmatter.sequence}
+                        />
+                      );
+                    })}
+                  </ol>
                 </li>
               );
             })}
           </ol>
+          <div className={showMoreCss}>
+            {state.filteredReviews.length > state.showCount && (
+              <Button onClick={() => dispatch({ type: ActionType.SHOW_MORE })}>
+                <svg
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                </svg>
+                Show More
+              </Button>
+            )}
+          </div>
         </div>
       </main>
     </Layout>
@@ -159,11 +289,11 @@ export default function ReviewsIndexPage({
 
 interface PageQueryResult {
   review: {
-    nodes: ReviewedMovie[];
+    nodes: Review[];
   };
 }
 
-export interface ReviewedMovie {
+export interface Review {
   frontmatter: {
     grade: string;
     slug: string;
@@ -175,6 +305,11 @@ export interface ReviewedMovie {
     title: string;
     year: number;
     sortTitle: string;
+    poster: null | {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      };
+    };
   };
   gradeValue: number;
 }
@@ -187,7 +322,7 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          date(formatString: "YYYY-MM-DD")
+          date(formatString: "ddd MMM D, YYYY")
           grade
           slug
           sequence
@@ -197,6 +332,17 @@ export const query = graphql`
           year
           releaseDate: release_date
           sortTitle: sort_title
+          poster {
+            childImageSharp {
+              gatsbyImageData(
+                layout: CONSTRAINED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 200
+                placeholder: TRACED_SVG
+              )
+            }
+          }
         }
         gradeValue
       }

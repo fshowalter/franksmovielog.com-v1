@@ -411,8 +411,6 @@ export const pageQuery = graphql`
               quality: 80
               placeholder: TRACED_SVG
               width: 309
-              breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
-              sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
             )
           }
         }
@@ -430,8 +428,6 @@ export const pageQuery = graphql`
             quality: 80
             width: 1000
             placeholder: TRACED_SVG
-            breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
-            sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
           )
         }
       }
@@ -450,8 +446,6 @@ export const pageQuery = graphql`
             quality: 80
             width: 250
             placeholder: TRACED_SVG
-            breakpoints: [93, 141, 160, 186, 250, 282, 320, 500]
-            sizes: "(max-width: 414px) 93px, (max-width: 767px) 141px, (max-width: 1023px) 160px, 250px"
           )
         }
       }
@@ -485,8 +479,6 @@ export const pageQuery = graphql`
                   quality: 80
                   placeholder: TRACED_SVG
                   width: 309
-                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
-                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
                 )
               }
             }
@@ -521,8 +513,6 @@ export const pageQuery = graphql`
                   quality: 80
                   placeholder: TRACED_SVG
                   width: 309
-                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
-                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
                 )
               }
             }
@@ -557,8 +547,6 @@ export const pageQuery = graphql`
                   quality: 80
                   placeholder: TRACED_SVG
                   width: 309
-                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
-                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
                 )
               }
             }
@@ -593,8 +581,6 @@ export const pageQuery = graphql`
                   quality: 80
                   placeholder: TRACED_SVG
                   width: 309
-                  breakpoints: [175, 195, 232, 309, 350, 390, 464, 618]
-                  sizes: "(max-width: 414px) 175px, (max-width: 1023px) 309px, (max-width: 1279px) 232px, 195px"
                 )
               }
             }

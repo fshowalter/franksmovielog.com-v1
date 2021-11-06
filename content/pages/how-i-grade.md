@@ -5,23 +5,24 @@ slug: how-i-grade
 
 # How I Grade
 
-- ### a great movie
+- ## a great movie
 
   ![5 stars](/svg/5-stars.svg) I loved it. A must-see. A perfect or almost perfect movie. These are the movies I recommend to everyone. A hard rating to earn.
 
-- ### a good movie
+- ## a good movie
 
   ![4 stars](/svg/4-stars.svg) I really liked it. Unless you hate the genre or star, watch it. These are the movies I recommend to most folks. They may not resonate like the 5-star selections, but they don’t disappoint.
 
-- ### an okay movie
+- ## an okay movie
 
   ![3 stars](/svg/3-stars.svg) I liked it. I wouldn’t recommend it, but I wouldn’t recommend _against_ it either. Most movies fall into this category.
 
-- ### a bad movie
+- ## a bad movie
 
   ![2 stars](/svg/2-stars.svg) I didn’t like it. Unless you have a deep-seated love for the genre or star, avoid it. It wasn’t awful, but if I paid money, I felt burned.
 
-- ### an awful movie
+- ## an awful movie
+
   ![1 star](/svg/1-star.svg) I hated it. Everyone involved should apologize. Another a hard rating to earn. I can forgive a movie many things. Bad acting? It happens. Specious plotting? Maybe it's atmosphere. Gratuitous nudity? Sure. But I can't forgive boring. When reading a 1-star review, remember: I watch them so you don’t have to.
 
 ---

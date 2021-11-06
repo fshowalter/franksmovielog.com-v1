@@ -1,12 +1,19 @@
 import applyFilters from "../../utils/apply-filters";
 import {
   collator,
+  sortNumberAsc,
+  sortNumberDesc,
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
 import type { WatchlistMovie } from "./WatchlistEntityPage";
 
-export type SortType = "release-date-asc" | "release-date-desc" | "title";
+export type SortType =
+  | "release-date-asc"
+  | "release-date-desc"
+  | "title"
+  | "grade-asc"
+  | "grade-desc";
 
 function sortMovies(titles: WatchlistMovie[], sortType: SortType) {
   const sortMap: Record<
@@ -16,6 +23,13 @@ function sortMovies(titles: WatchlistMovie[], sortType: SortType) {
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+    "grade-asc": (a, b) =>
+      sortNumberAsc(a.lastReviewGradeValue || 50, b.lastReviewGradeValue || 50),
+    "grade-desc": (a, b) =>
+      sortNumberDesc(
+        a.lastReviewGradeValue || -1,
+        b.lastReviewGradeValue || -1
+      ),
   };
 
   const comparer = sortMap[sortType];
@@ -52,6 +66,8 @@ type State = {
   allMovies: WatchlistMovie[];
   /** Reviews matching the current filters. */
   filteredMovies: WatchlistMovie[];
+  /** Number of movies to show on the page. */
+  showCount: number;
   /** The active filters. */
   filters: Record<string, (title: WatchlistMovie) => boolean>;
   /** The minimum year for the release date filter. */
@@ -64,12 +80,15 @@ type State = {
   sortType: SortType;
 };
 
+const SHOW_COUNT_DEFAULT = 24;
+
 export function initState({ movies }: { movies: WatchlistMovie[] }): State {
   const [minYear, maxYear] = minMaxReleaseYears(movies);
 
   return {
     allMovies: movies,
     filteredMovies: movies,
+    showCount: SHOW_COUNT_DEFAULT,
     filters: {},
     minYear,
     maxYear,
@@ -82,6 +101,7 @@ export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
   FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
   SORT = "SORT",
+  SHOW_MORE = "SHOW_MORE",
 }
 
 /** Action to filter by title. */
@@ -104,7 +124,16 @@ interface SortAction {
   value: SortType;
 }
 
-type Action = FilterTitleAction | FilterReleaseYearAction | SortAction;
+/** Action to change page. */
+interface ShowMoreAction {
+  type: ActionType.SHOW_MORE;
+}
+
+type Action =
+  | FilterTitleAction
+  | FilterReleaseYearAction
+  | SortAction
+  | ShowMoreAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -154,6 +183,12 @@ export default function reducer(state: State, action: Action): State {
         filters,
         filteredMovies,
         reviewedMovieCount: reviewedMovieCount(filteredMovies),
+      };
+    }
+    case ActionType.SHOW_MORE: {
+      return {
+        ...state,
+        showCount: state.showCount + SHOW_COUNT_DEFAULT,
       };
     }
     case ActionType.SORT: {
