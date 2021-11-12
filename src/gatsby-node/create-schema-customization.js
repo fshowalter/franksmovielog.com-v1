@@ -54,9 +54,8 @@ async function addReviewLinks(text, nodeModel) {
   const matches = [...text.matchAll(re)];
 
   for (const match of matches) {
-    const reviewedMovie = await nodeModel.runQuery({
+    const reviewedMovie = await nodeModel.findOne({
       type: REVIEWED_MOVIES_JSON,
-      firstOnly: true,
       query: {
         filter: {
           imdb_id: {
@@ -96,28 +95,28 @@ const ViewingsJson = {
         dateformat: {},
       },
     },
-    viewing_year: "String!",
+    viewing_year: "Int!",
     sequence: "Int!",
     venue: "String!",
     sort_title: "String!",
     slug: "String",
+    grade: "String",
+    genres: "[String!]!",
     poster: {
       type: "File",
       resolve: async (source, args, context, info) => {
-        const reviewedMovie = await context.nodeModel.runQuery({
+        const reviewedMovie = await context.nodeModel.findOne({
           query: {
             filter: {
               imdb_id: { eq: source.imdb_id },
             },
           },
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: true,
         });
 
         if (!reviewedMovie) {
-          return context.nodeModel.runQuery({
+          return await context.nodeModel.findOne({
             type: "File",
-            firstOnly: true,
             query: {
               filter: {
                 absolutePath: {
@@ -129,6 +128,58 @@ const ViewingsJson = {
         }
 
         return resolveFieldForNode("poster", reviewedMovie, context, info);
+      },
+    },
+    gradeValue: {
+      type: "Int",
+      resolve: async (source, args, context, info) => {
+        const grade = await resolveFieldForNode("grade", source, context, info);
+
+        if (!grade) {
+          return null;
+        }
+
+        switch (grade) {
+          case "A+": {
+            return 13;
+          }
+          case "A": {
+            return 12;
+          }
+          case "A-": {
+            return 11;
+          }
+          case "B+": {
+            return 10;
+          }
+          case "B": {
+            return 9;
+          }
+          case "B-": {
+            return 8;
+          }
+          case "C+": {
+            return 7;
+          }
+          case "C": {
+            return 6;
+          }
+          case "C-": {
+            return 5;
+          }
+          case "D+": {
+            return 4;
+          }
+          case "D": {
+            return 3;
+          }
+          case "D-": {
+            return 2;
+          }
+          default: {
+            return 1;
+          }
+        }
       },
     },
   },
@@ -153,7 +204,7 @@ const WatchlistMoviesJson = {
     directorNames: {
       type: "[String!]!",
       resolve: async (source, args, context) => {
-        const nodes = await context.nodeModel.runQuery({
+        const { entries } = await context.nodeModel.findAll({
           query: {
             filter: {
               imdb_id: { in: source.director_imdb_ids },
@@ -161,16 +212,15 @@ const WatchlistMoviesJson = {
             },
           },
           type: WATCHLIST_ENTITIES_JSON,
-          firstOnly: false,
         });
 
-        return nodes.map((node) => node.name);
+        return entries.map((node) => node.name);
       },
     },
     performerNames: {
       type: "[String!]!",
       resolve: async (source, args, context) => {
-        const nodes = await context.nodeModel.runQuery({
+        const { entries } = await context.nodeModel.findAll({
           query: {
             filter: {
               imdb_id: { in: source.performer_imdb_ids },
@@ -178,16 +228,15 @@ const WatchlistMoviesJson = {
             },
           },
           type: WATCHLIST_ENTITIES_JSON,
-          firstOnly: false,
         });
 
-        return nodes.map((node) => node.name);
+        return entries.map((node) => node.name);
       },
     },
     writerNames: {
       type: "[String!]!",
       resolve: async (source, args, context) => {
-        const nodes = await context.nodeModel.runQuery({
+        const { entries } = await context.nodeModel.findAll({
           query: {
             filter: {
               imdb_id: { in: source.writer_imdb_ids },
@@ -195,23 +244,21 @@ const WatchlistMoviesJson = {
             },
           },
           type: WATCHLIST_ENTITIES_JSON,
-          firstOnly: false,
         });
 
-        return nodes.map((node) => node.name);
+        return entries.map((node) => node.name);
       },
     },
     lastReviewGrade: {
       type: "String",
       resolve: async (source, args, context, info) => {
-        const reviewedMovie = await context.nodeModel.runQuery({
+        const reviewedMovie = await context.nodeModel.findOne({
           query: {
             filter: {
               imdb_id: { eq: source.imdb_id },
             },
           },
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: true,
         });
 
         if (!reviewedMovie) {
@@ -229,14 +276,13 @@ const WatchlistMoviesJson = {
     lastReviewGradeValue: {
       type: "Int",
       resolve: async (source, args, context, info) => {
-        const reviewedMovie = await context.nodeModel.runQuery({
+        const reviewedMovie = await context.nodeModel.findOne({
           query: {
             filter: {
               imdb_id: { eq: source.imdb_id },
             },
           },
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: true,
         });
 
         if (!reviewedMovie) {
@@ -254,14 +300,13 @@ const WatchlistMoviesJson = {
     reviewedMovieSlug: {
       type: "String",
       resolve: async (source, args, context) => {
-        const reviewedMovie = await context.nodeModel.runQuery({
+        const reviewedMovie = await context.nodeModel.findOne({
           query: {
             filter: {
               imdb_id: { eq: source.imdb_id },
             },
           },
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: true,
         });
 
         if (!reviewedMovie) {
@@ -274,20 +319,18 @@ const WatchlistMoviesJson = {
     poster: {
       type: "File",
       resolve: async (source, args, context, info) => {
-        const reviewedMovie = await context.nodeModel.runQuery({
+        const reviewedMovie = await context.nodeModel.findOne({
           query: {
             filter: {
               imdb_id: { eq: source.imdb_id },
             },
           },
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: true,
         });
 
         if (!reviewedMovie) {
-          return context.nodeModel.runQuery({
+          return await context.nodeModel.findOne({
             type: "File",
-            firstOnly: true,
             query: {
               filter: {
                 absolutePath: {
@@ -339,9 +382,8 @@ const MarkdownRemark = {
           return;
         }
 
-        return context.nodeModel.runQuery({
+        return await context.nodeModel.findOne({
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: true,
           query: {
             filter: {
               imdb_id: {
@@ -414,43 +456,43 @@ const MarkdownRemark = {
 
         switch (grade) {
           case "A+": {
-            return 12;
+            return 13;
           }
           case "A": {
-            return 11;
+            return 12;
           }
           case "A-": {
-            return 10;
+            return 11;
           }
           case "B+": {
-            return 9;
+            return 10;
           }
           case "B": {
-            return 8;
+            return 9;
           }
           case "B-": {
-            return 7;
+            return 8;
           }
           case "C+": {
-            return 6;
+            return 7;
           }
           case "C": {
-            return 5;
+            return 6;
           }
           case "C-": {
-            return 4;
+            return 5;
           }
           case "D+": {
-            return 3;
+            return 4;
           }
           case "D": {
-            return 2;
+            return 3;
           }
           case "D-": {
-            return 1;
+            return 2;
           }
           default: {
-            return 0;
+            return 1;
           }
         }
       },
@@ -475,10 +517,9 @@ const ReviewedMoviesJson = {
     countries: "[String!]!",
     reviews: {
       type: `[${MARKDOWN_REMARK}!]!`,
-      resolve: (source, args, context) => {
-        return context.nodeModel.runQuery({
+      resolve: async (source, args, context) => {
+        const { entries } = await context.nodeModel.findAll({
           type: MARKDOWN_REMARK,
-          firstOnly: false,
           query: {
             filter: {
               postType: {
@@ -494,6 +535,8 @@ const ReviewedMoviesJson = {
             },
           },
         });
+
+        return entries;
       },
     },
     lastReviewGrade: {
@@ -505,7 +548,7 @@ const ReviewedMoviesJson = {
           context,
           info
         );
-        return reviews[0].frontmatter.grade;
+        return Array.from(reviews)[0].frontmatter.grade;
       },
     },
     lastReviewGradeValue: {
@@ -517,15 +560,19 @@ const ReviewedMoviesJson = {
           context,
           info
         );
-        return resolveFieldForNode("gradeValue", reviews[0], context, info);
+        return resolveFieldForNode(
+          "gradeValue",
+          Array.from(reviews)[0],
+          context,
+          info
+        );
       },
     },
     browseMore: {
       type: `[${REVIEWED_MOVIES_JSON}]`,
       resolve: async (source, args, context) => {
-        const reviewedMoviesByTitle = await context.nodeModel.runQuery({
+        const { entries } = await context.nodeModel.findAll({
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: false,
           query: {
             sort: {
               fields: ["sort_title"],
@@ -533,18 +580,14 @@ const ReviewedMoviesJson = {
             },
           },
         });
-        return sliceReviewedMoviesForTitle(
-          reviewedMoviesByTitle,
-          source.imdb_id
-        );
+        return sliceReviewedMoviesForTitle(Array.from(entries), source.imdb_id);
       },
     },
     olderViewings: {
       type: `[${VIEWINGS_JSON}]`,
-      resolve: (source, args, context) => {
-        return context.nodeModel.runQuery({
+      resolve: async (source, args, context) => {
+        const { entries } = await context.nodeModel.findAll({
           type: VIEWINGS_JSON,
-          firstOnly: false,
           query: {
             filter: {
               imdb_id: {
@@ -560,14 +603,15 @@ const ReviewedMoviesJson = {
             },
           },
         });
+
+        return entries;
       },
     },
     backdrop: {
       type: "File",
-      resolve: (source, args, context) => {
-        return context.nodeModel.runQuery({
+      resolve: async (source, args, context) => {
+        return await context.nodeModel.findOne({
           type: "File",
-          firstOnly: true,
           query: {
             filter: {
               absolutePath: {
@@ -582,10 +626,9 @@ const ReviewedMoviesJson = {
     },
     poster: {
       type: "File",
-      resolve: (source, args, context) => {
-        return context.nodeModel.runQuery({
+      resolve: async (source, args, context) => {
+        return await context.nodeModel.findOne({
           type: "File",
-          firstOnly: true,
           query: {
             filter: {
               absolutePath: {
@@ -606,9 +649,8 @@ const ReviewedMoviesJson = {
           writers: [],
         };
 
-        const watchlistTitle = await context.nodeModel.runQuery({
+        const watchlistTitle = await context.nodeModel.findOne({
           type: WATCHLIST_MOVIES_JSON,
-          firstOnly: true,
           query: {
             filter: {
               imdb_id: { eq: source.imdb_id },
@@ -620,49 +662,45 @@ const ReviewedMoviesJson = {
           return watchlist;
         }
 
-        watchlist.performers = await context.nodeModel.runQuery({
+        ({ entries: watchlist.performers } = await context.nodeModel.findAll({
           type: WATCHLIST_ENTITIES_JSON,
-          firstOnly: false,
           query: {
             filter: {
               imdb_id: { in: watchlistTitle.performer_imdb_ids },
               entity_type: { eq: "performer" },
             },
           },
-        });
+        }));
 
-        watchlist.directors = await context.nodeModel.runQuery({
+        ({ entries: watchlist.directors } = await context.nodeModel.findAll({
           type: WATCHLIST_ENTITIES_JSON,
-          firstOnly: false,
           query: {
             filter: {
               imdb_id: { in: watchlistTitle.director_imdb_ids },
               entity_type: { eq: "director" },
             },
           },
-        });
+        }));
 
-        watchlist.writers = await context.nodeModel.runQuery({
+        ({ entries: watchlist.writers } = await context.nodeModel.findAll({
           type: WATCHLIST_ENTITIES_JSON,
-          firstOnly: false,
           query: {
             filter: {
               imdb_id: { in: watchlistTitle.writer_imdb_ids },
               entity_type: { eq: "writer" },
             },
           },
-        });
+        }));
 
-        watchlist.collections = await context.nodeModel.runQuery({
+        ({ entries: watchlist.collections } = await context.nodeModel.findAll({
           type: WATCHLIST_ENTITIES_JSON,
-          firstOnly: false,
           query: {
             filter: {
               name: { in: watchlistTitle.collection_names },
               entity_type: { eq: "collection" },
             },
           },
-        });
+        }));
 
         return watchlist;
       },
@@ -685,10 +723,9 @@ const WatchlistEntitiesJson = {
     entity_type: "String!",
     avatar: {
       type: "File",
-      resolve: (source, args, context) => {
-        return context.nodeModel.runQuery({
+      resolve: async (source, args, context) => {
+        return await context.nodeModel.findOne({
           type: "File",
-          firstOnly: true,
           query: {
             filter: {
               absolutePath: {
@@ -703,26 +740,27 @@ const WatchlistEntitiesJson = {
       type: `[${WATCHLIST_MOVIES_JSON}]`,
       resolve: async (source, args, context) => {
         if (source.entity_type == "collection") {
-          return context.nodeModel.runQuery({
+          const { entries } = await context.nodeModel.findAll({
             type: WATCHLIST_MOVIES_JSON,
-            firstOnly: false,
             query: {
               filter: {
                 collection_names: { in: [source.name] },
               },
             },
           });
+          return entries;
         }
 
-        return context.nodeModel.runQuery({
+        const { entries } = await context.nodeModel.findAll({
           type: WATCHLIST_MOVIES_JSON,
-          firstOnly: false,
           query: {
             filter: {
               [`${source.entity_type}_imdb_ids`]: { in: [source.imdb_id] },
             },
           },
         });
+
+        return entries;
       },
     },
     browseMore: {
@@ -742,9 +780,8 @@ const WatchlistEntitiesJson = {
           (movie) => movie.imdb_id
         );
 
-        const reviewedMovies = await context.nodeModel.runQuery({
+        const { entries } = await context.nodeModel.findAll({
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: false,
           query: {
             filter: {
               imdb_id: {
@@ -758,7 +795,10 @@ const WatchlistEntitiesJson = {
           },
         });
 
-        return sliceReviewedMoviesForTitle(reviewedMovies, args.movieImdbId);
+        return sliceReviewedMoviesForTitle(
+          Array.from(entries),
+          args.movieImdbId
+        );
       },
     },
   },
@@ -785,13 +825,34 @@ const VenueStat = {
   },
 };
 
-const ViewingCountsForVenuesJson = {
-  name: "ViewingCountsForVenuesJson",
+const TopVenuesJson = {
+  name: "TopVenuesJson",
   interfaces: ["Node"],
   fields: {
     viewing_year: "String!",
     total_viewing_count: "Int!",
     stats: "[VenueStat!]!",
+  },
+  extensions: {
+    infer: false,
+  },
+};
+
+const GenreStat = {
+  name: "GenreStat",
+  fields: {
+    name: "String!",
+    viewing_count: "Int!",
+  },
+};
+
+const TopGenresJson = {
+  name: "TopGenresJson",
+  interfaces: ["Node"],
+  fields: {
+    viewing_year: "String!",
+    total_viewing_count: "Int!",
+    stats: "[GenreStat!]!",
   },
   extensions: {
     infer: false,
@@ -824,14 +885,13 @@ const MostWatchedMovie = {
     slug: {
       type: "String",
       resolve: async (source, args, context) => {
-        const reviewedMovie = await context.nodeModel.runQuery({
+        const reviewedMovie = await context.nodeModel.findOne({
           query: {
             filter: {
               imdb_id: { eq: source.imdb_id },
             },
           },
           type: REVIEWED_MOVIES_JSON,
-          firstOnly: true,
         });
 
         if (!reviewedMovie) {
@@ -839,6 +899,34 @@ const MostWatchedMovie = {
         }
 
         return reviewedMovie.slug;
+      },
+    },
+    poster: {
+      type: "File",
+      resolve: async (source, args, context, info) => {
+        const reviewedMovie = await context.nodeModel.findOne({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: REVIEWED_MOVIES_JSON,
+        });
+
+        if (!reviewedMovie) {
+          return await context.nodeModel.findOne({
+            type: "File",
+            query: {
+              filter: {
+                absolutePath: {
+                  eq: path.resolve(`./content/assets/posters/default.png`),
+                },
+              },
+            },
+          });
+        }
+
+        return resolveFieldForNode("poster", reviewedMovie, context, info);
       },
     },
   },
@@ -860,6 +948,7 @@ const MostWatchedPersonViewing = {
   name: "MostWatchedPersonViewing",
   fields: {
     sequence: "Int!",
+    imdb_id: "String!",
     venue: "String!",
     date: {
       type: "Date!",
@@ -870,6 +959,34 @@ const MostWatchedPersonViewing = {
     title: "String!",
     year: "Int!",
     slug: "String",
+    poster: {
+      type: "File",
+      resolve: async (source, args, context, info) => {
+        const reviewedMovie = await context.nodeModel.findOne({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: REVIEWED_MOVIES_JSON,
+        });
+
+        if (!reviewedMovie) {
+          return await context.nodeModel.findOne({
+            type: "File",
+            query: {
+              filter: {
+                absolutePath: {
+                  eq: path.resolve(`./content/assets/posters/default.png`),
+                },
+              },
+            },
+          });
+        }
+
+        return resolveFieldForNode("poster", reviewedMovie, context, info);
+      },
+    },
   },
 };
 
@@ -995,7 +1112,9 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
     schema.buildObjectType(ReviewedMoviesJson),
     schema.buildObjectType(WatchlistEntitiesJson),
     schema.buildObjectType(VenueStat),
-    schema.buildObjectType(ViewingCountsForVenuesJson),
+    schema.buildObjectType(TopVenuesJson),
+    schema.buildObjectType(GenreStat),
+    schema.buildObjectType(TopGenresJson),
     schema.buildObjectType(MostWatchedMovieViewing),
     schema.buildObjectType(MostWatchedMovie),
     schema.buildObjectType(MostWatchedMoviesJson),

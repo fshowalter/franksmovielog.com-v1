@@ -1,19 +1,17 @@
 import React from "react";
-import { fieldsetCss, legendCss } from "./Fieldset.module.scss";
+import { fieldsetCss, legendCss, wrapperCss } from "./Fieldset.module.scss";
 
 export default function Label({
-  className,
   legend,
   children,
 }: {
-  className: string;
   legend: string;
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <fieldset className={`${fieldsetCss} ${className}`}>
+    <fieldset className={fieldsetCss}>
       <legend className={legendCss}>{legend}</legend>
-      {children}
+      <div className={wrapperCss}>{children}</div>
     </fieldset>
   );
 }

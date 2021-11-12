@@ -179,12 +179,10 @@ describe("/watchlist", () => {
 
     const fieldset = screen.getByRole("group", { name: "Release Year" });
     const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("To");
+    const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.clear(fromInput);
-    userEvent.type(fromInput, "1958");
-    userEvent.clear(toInput);
-    userEvent.type(toInput, "1978");
+    userEvent.selectOptions(fromInput, "1939");
+    userEvent.selectOptions(toInput, "1941");
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });

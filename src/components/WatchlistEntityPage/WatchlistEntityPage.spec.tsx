@@ -132,12 +132,10 @@ describe("/watchlist/directors/{slug}", () => {
 
     const fieldset = screen.getByRole("group", { name: "Release Year" });
     const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("To");
+    const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.clear(fromInput);
-    userEvent.type(fromInput, "1980");
-    userEvent.clear(toInput);
-    userEvent.type(toInput, "1990");
+    userEvent.selectOptions(fromInput, "1980");
+    userEvent.selectOptions(toInput, "1992");
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });

@@ -1,0 +1,27 @@
+@use "./src/styles/breakpoints";
+
+.listCss {
+  display: flex;
+  flex-wrap: wrap;
+  font-feature-settings: "tnum";
+  font-size: 1.125rem;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+
+  @media (min-width: breakpoints.$max) {
+    justify-content: flex-start;
+  }
+}
+
+.listItemCss {
+  display: inline-block;
+}
+
+.listItemLinkCss {
+  color: var(--color-link);
+}
+
+.allTimeCss {
+  width: 100%;
+}

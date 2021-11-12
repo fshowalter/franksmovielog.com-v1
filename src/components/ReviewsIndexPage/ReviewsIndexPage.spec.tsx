@@ -20,7 +20,7 @@ describe("/reviews", () => {
     render(<ReviewsIndexPage data={data} />);
 
     requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("All Reviews");
+      expect(document.title).toStrictEqual("Reviews");
       done();
     });
   });
@@ -37,30 +37,48 @@ describe("/reviews", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
+      expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
     });
   });
 
-  it("can sort by grade with best first", () => {
+  it("can filter by venue", () => {
+    expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Grade (Best First)"
-    );
+    userEvent.selectOptions(screen.getByLabelText("Venue"), "Arrow Player");
 
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with worst first", () => {
+  it("can filter by venue then show all", () => {
+    render(<ReviewsIndexPage data={data} />);
+
+    userEvent.selectOptions(screen.getByLabelText("Venue"), "Arrow Player");
+    userEvent.selectOptions(screen.getByLabelText("Venue"), "All");
+
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+  });
+
+  it("can sort by viewing date with newest first", () => {
     render(<ReviewsIndexPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Worst First)"
+      "Viewing Date (Newest First)"
     );
 
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+  });
+
+  it("can sort by viewing date with oldest first", () => {
+    render(<ReviewsIndexPage data={data} />);
+
+    userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Viewing Date (Oldest First)"
+    );
+
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 
   it("can sort by title", () => {
@@ -68,7 +86,7 @@ describe("/reviews", () => {
 
     userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 
   it("can sort by release date with oldest first", () => {
@@ -79,7 +97,7 @@ describe("/reviews", () => {
       "Release Date (Oldest First)"
     );
 
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 
   it("can sort by release date with newest first", () => {
@@ -90,7 +108,7 @@ describe("/reviews", () => {
       "Release Date (Newest First)"
     );
 
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 
   it("can filter by release year", () => {
@@ -98,13 +116,11 @@ describe("/reviews", () => {
 
     const fieldset = screen.getByRole("group", { name: "Release Year" });
     const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("To");
+    const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.clear(fromInput);
-    userEvent.type(fromInput, "1980");
-    userEvent.clear(toInput);
-    userEvent.type(toInput, "2010");
+    userEvent.selectOptions(fromInput, "1980");
+    userEvent.selectOptions(toInput, "2010");
 
-    expect(screen.getByTestId("reviews-list")).toMatchSnapshot();
+    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 });

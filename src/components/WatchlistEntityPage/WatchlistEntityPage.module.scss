@@ -21,17 +21,15 @@
 .leftCss {
   align-content: start;
   display: grid;
-  grid-template-areas: ". breadcrumb ." ". . ." ". header ." ". . ." ". filters ." ". . ." ". list_info ." ". . ." ". percent ." ". . .";
+  grid-template-areas: ". breadcrumb ." ". . ." ". header ." ". . ." ". filters ." ". . .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
       var(--step-1),
       1fr
     );
-  grid-template-rows:
-    auto var(--step-1) auto var(--step-5) auto var(--step-1) auto var(--step-5)
-    auto var(--step-5);
+  grid-template-rows: auto var(--step-1) auto var(--step-5) auto var(--step-1);
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "breadcrumb breadcrumb ." ". . ." "header header ." ". . ." "filters filters ." ". . ." "list_info list_info ." ". . ." "percent percent ." ". . .";
+    grid-template-areas: "breadcrumb breadcrumb ." ". . ." "header header ." ". . ." "filters filters ." ". . .";
   }
 }
 
@@ -53,6 +51,15 @@
 
 .filtersCss {
   grid-area: filters;
+
+  @media (min-width: breakpoints.$tablet) and (max-width: breakpoints.$desktop - 1px) {
+    margin: 0 calc(-1 * var(--step-1));
+  }
+
+  @media (min-width: breakpoints.$desktop) and (min-height: 1200px) {
+    position: sticky;
+    top: var(--step-5);
+  }
 }
 
 .listCss {
@@ -95,8 +102,7 @@
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  grid-area: percent;
-  margin: 0 auto;
+  margin: var(--step-1) auto 0;
   width: 150px;
 }
 
@@ -123,10 +129,8 @@
 
 .listInfoCss {
   color: var(--color-text-secondary);
-  font-size: clamp(15px, 4vw, 16px);
   font-weight: 300;
-  grid-area: list_info;
-  justify-self: center;
+  margin-top: var(--step-1);
   text-align: center;
 }
 

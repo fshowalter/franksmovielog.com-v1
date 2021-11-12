@@ -196,8 +196,7 @@
 
 .mastSearchWrapCss {
   align-items: stretch;
-  border: solid 1px #000;
-  border-color: color.adjust(#e9e7e0, $lightness: -10%);
+  border: solid 1px color.adjust(#e9e7e0, $lightness: -10%);
   border-radius: 4px;
   display: flex;
   margin: 0;

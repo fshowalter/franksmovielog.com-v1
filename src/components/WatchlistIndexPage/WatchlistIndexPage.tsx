@@ -9,9 +9,9 @@ import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
 import ProgressGraph from "../ProgressGraph";
-import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
+import YearInput from "../YearInput";
 import {
   containerCss,
   filtersCss,
@@ -395,7 +395,7 @@ export default function WatchlistIndexPage({
                 {state.allMovies.length.toLocaleString()} titles. No silents or
                 documentaries.{" "}
                 <span className={quoteCss}>
-                  &ldquo;A man&apos;s got to know his limitations&rdquo;
+                  &ldquo;A man&apos;s got to know his limitations.&rdquo;
                 </span>
               </>
             }
@@ -417,114 +417,115 @@ export default function WatchlistIndexPage({
               Collections
             </WatchlistCollectionLinkItem>
           </ul>
-          <Fieldset className={filtersCss} legend="Filter & Sort">
-            <DebouncedInput
-              label="Title"
-              placeholder="Enter all or part of a title"
-              onChange={(value) =>
-                dispatch({ type: ActionType.FILTER_TITLE, value })
-              }
-            />
-            <SelectInput
-              label="Director"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.FILTER_DIRECTOR,
-                  value: e.target.value,
-                })
-              }
-            >
-              <WatchlistOptions
-                movies={state.allMovies}
-                keyName="directorNames"
+          <div className={filtersCss}>
+            <Fieldset legend="Filter & Sort">
+              <DebouncedInput
+                label="Title"
+                placeholder="Enter all or part of a title"
+                onChange={(value) =>
+                  dispatch({ type: ActionType.FILTER_TITLE, value })
+                }
               />
-            </SelectInput>
-            <SelectInput
-              label="Performer"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.FILTER_PERFORMER,
-                  value: e.target.value,
-                })
-              }
-            >
-              <WatchlistOptions
-                movies={state.allMovies}
-                keyName="performerNames"
-              />
-            </SelectInput>
-            <SelectInput
-              label="Writer"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.FILTER_WRITER,
-                  value: e.target.value,
-                })
-              }
-            >
-              <WatchlistOptions
-                movies={state.allMovies}
-                keyName="writerNames"
-              />
-            </SelectInput>
-            <SelectInput
-              label="Collection"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.FILTER_COLLECTION,
-                  value: e.target.value,
-                })
-              }
-            >
-              <WatchlistOptions
-                movies={state.allMovies}
-                keyName="collectionNames"
-              />
-            </SelectInput>
-            <RangeInput
-              label="Release Year"
-              min={state.minYear}
-              max={state.maxYear}
-              onChange={(values) =>
-                dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
-              }
-            />
-            <SelectInput
-              label="Order By"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.SORT,
-                  value: e.target.value as SortType,
-                })
-              }
-            >
-              <option value="release-date-asc">
-                Release Date (Oldest First)
-              </option>
-              <option value="release-date-desc">
-                Release Date (Newest First)
-              </option>
-              <option value="title">Title</option>
-            </SelectInput>
-          </Fieldset>
-          <div className={listInfoCss}>
-            <ListInfo
-              visible={state.showCount}
-              total={state.filteredMovies.length}
-            />
-          </div>
-          <div className={percentCss}>
-            <WatchlistProgress
-              total={state.filteredMovies.length}
-              reviewed={reviewedCount}
-            />
-            {(reviewedCount > 0 || state.hideReviewed) && (
-              <Button
-                onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
+              <SelectInput
+                label="Director"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.FILTER_DIRECTOR,
+                    value: e.target.value,
+                  })
+                }
               >
-                {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-              </Button>
-            )}
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="directorNames"
+                />
+              </SelectInput>
+              <SelectInput
+                label="Performer"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.FILTER_PERFORMER,
+                    value: e.target.value,
+                  })
+                }
+              >
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="performerNames"
+                />
+              </SelectInput>
+              <SelectInput
+                label="Writer"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.FILTER_WRITER,
+                    value: e.target.value,
+                  })
+                }
+              >
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="writerNames"
+                />
+              </SelectInput>
+              <SelectInput
+                label="Collection"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.FILTER_COLLECTION,
+                    value: e.target.value,
+                  })
+                }
+              >
+                <WatchlistOptions
+                  movies={state.allMovies}
+                  keyName="collectionNames"
+                />
+              </SelectInput>
+              <YearInput
+                label="Release Year"
+                years={data.watchlist.releaseYears}
+                onChange={(values) =>
+                  dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
+                }
+              />
+              <SelectInput
+                label="Order By"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.SORT,
+                    value: e.target.value as SortType,
+                  })
+                }
+              >
+                <option value="release-date-asc">
+                  Release Date (Oldest First)
+                </option>
+                <option value="release-date-desc">
+                  Release Date (Newest First)
+                </option>
+                <option value="title">Title</option>
+              </SelectInput>
+            </Fieldset>
+            <div className={listInfoCss}>
+              <ListInfo
+                visible={state.showCount}
+                total={state.filteredMovies.length}
+              />
+            </div>
+            <div className={percentCss}>
+              <WatchlistProgress
+                total={state.filteredMovies.length}
+                reviewed={reviewedCount}
+              />
+              {(reviewedCount > 0 || state.hideReviewed) && (
+                <Button
+                  onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
+                >
+                  {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+                </Button>
+              )}
+            </div>
           </div>
         </div>
         <div ref={listHeader} className={rightCss}>
@@ -595,6 +596,7 @@ export interface WatchlistMovie {
 interface PageQueryResult {
   watchlist: {
     nodes: WatchlistMovie[];
+    releaseYears: string[];
   };
 }
 
@@ -626,6 +628,7 @@ export const pageQuery = graphql`
           }
         }
       }
+      releaseYears: distinct(field: year)
     }
   }
 `;

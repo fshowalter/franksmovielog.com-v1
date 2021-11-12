@@ -1,17 +1,21 @@
+@use "sass:color";
+
 .inputCss {
-  appearance: none;
-  border: 0;
-  border-bottom: solid 1px var(--color-background);
-  border-radius: 0;
+  background-color: #fafafa;
+  border: solid 1px var(--color-background);
+  border-radius: 4px;
   font-size: 1rem;
-  padding: calc(var(--step--2) / 2) 0;
+  margin-top: 4px;
+  padding: calc(0.5em - 1px) calc(0.75em - 1px);
 }
 
 .labelCss {
   color: var(--color-text-secondary);
-  display: flex;
-  flex-direction: column;
+  display: grid;
   font-size: 14px;
+  font-weight: bold;
+  grid-template-columns: auto;
+  grid-template-rows: 1.5rem auto;
   letter-spacing: 0.5px;
-  margin-top: 1.5rem;
+  line-height: 1.5;
 }

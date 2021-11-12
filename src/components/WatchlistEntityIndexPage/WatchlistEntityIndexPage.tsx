@@ -197,28 +197,30 @@ export default function WatchlistEntityIndexPage({
             }
             tagline={entityDetails.tagLine}
           />
-          <Fieldset className={filtersCss} legend="Filter & Sort">
-            <DebouncedInput
-              label="Name"
-              placeholder="Enter all or part of a name"
-              onChange={(value) =>
-                dispatch({ type: ActionType.FILTER_NAME, value })
-              }
-            />
-            <SelectInput
-              value={state.sortValue}
-              label="Order By"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.SORT,
-                  value: e.target.value as SortValue,
-                })
-              }
-            >
-              <option value="name">Name</option>
-              <option value="reviews">Review Count</option>
-            </SelectInput>
-          </Fieldset>
+          <div className={filtersCss}>
+            <Fieldset legend="Filter & Sort">
+              <DebouncedInput
+                label="Name"
+                placeholder="Enter all or part of a name"
+                onChange={(value) =>
+                  dispatch({ type: ActionType.FILTER_NAME, value })
+                }
+              />
+              <SelectInput
+                value={state.sortValue}
+                label="Order By"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.SORT,
+                    value: e.target.value as SortValue,
+                  })
+                }
+              >
+                <option value="name">Name</option>
+                <option value="reviews">Review Count</option>
+              </SelectInput>
+            </Fieldset>
+          </div>
         </div>
         <div className={rightCss}>
           <ul data-testid="entity-list" className={listCss}>

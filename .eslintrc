@@ -5,11 +5,7 @@
     "plugin:prettier/recommended",
     "plugin:import/typescript"
   ],
-  "plugins": [
-    "import",
-    "prettier",
-    "jest"
-  ],
+  "plugins": ["import", "prettier", "jest"],
   "env": {
     "jest/globals": true,
     "node": true,
@@ -71,7 +67,14 @@
           "error",
           { "onlyFunctionsWithAsyncKeyword": true }
         ],
-        "jsx-a11y/no-onchange": "off"
+        "jsx-a11y/no-onchange": "off",
+        "jsx-a11y/label-has-associated-control": [
+          2,
+          {
+            "controlComponents": ["Select"],
+            "depth": 3
+          }
+        ]
       },
       "settings": {
         "react": {
@@ -82,9 +85,7 @@
         },
         "import/resolver": {
           "alias": {
-            "map": [
-              ["@reach/router", "@gatsbyjs/reach-router"]
-            ],
+            "map": [["@reach/router", "@gatsbyjs/reach-router"]],
             "extensions": [".tsx", ".ts", ".js"]
           },
           "node": {
