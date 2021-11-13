@@ -85,8 +85,6 @@ function groupMovies({
 }): Map<string, WatchlistMovie[]> {
   const groupedMovies: Map<string, WatchlistMovie[]> = new Map();
 
-  console.log(movies);
-
   movies.map((movie) => {
     const group = groupForMovie(movie, sortType);
     let groupValue = groupedMovies.get(group);

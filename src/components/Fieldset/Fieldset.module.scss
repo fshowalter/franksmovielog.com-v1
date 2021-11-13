@@ -11,8 +11,7 @@
   gap: var(--step-3);
   justify-content: space-between;
 
-  & > label,
-  & > fieldset {
+  & > * {
     flex-basis: 260px;
     flex-grow: 1;
     flex-shrink: 0;

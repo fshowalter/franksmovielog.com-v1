@@ -30,7 +30,7 @@ export default function Callouts({
   viewingCount: number;
   movieCount: number;
   newMovieCount: number;
-  reviewCount: number;
+  reviewCount: number | undefined;
 }): JSX.Element {
   return (
     <div className={containerCss}>

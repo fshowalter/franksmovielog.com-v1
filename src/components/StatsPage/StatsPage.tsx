@@ -125,7 +125,10 @@ export default function StatsPage({
           <header className={headerCss}>
             <h2 className={headingCss}>{pageTitle}</h2>
             <div className={taglineCss}>
-              <SubHeading yearScope={yearScope} years={viewing.years} />
+              <SubHeading
+                yearScope={yearScope}
+                years={viewing.years.sort().reverse()}
+              />
             </div>
           </header>
           <div className={contentCss}>
@@ -195,7 +198,7 @@ interface PageQueryResult {
   };
   reviewStats: {
     reviewCount: number;
-  };
+  } | null;
   decade: {
     stats: DecadeStat[];
   };
@@ -204,7 +207,7 @@ interface PageQueryResult {
   };
   grade: {
     distributions: GradeDistribution[];
-  };
+  } | null;
   movies: {
     mostWatched: Movie[];
   };

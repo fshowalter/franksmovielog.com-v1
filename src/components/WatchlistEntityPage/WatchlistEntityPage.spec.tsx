@@ -33,7 +33,7 @@ describe("/watchlist/directors/{slug}", () => {
           pageContext={{ entityType: EntityType.DIRECTOR }}
         />
       );
-    }).toThrow("No avatar found for John Carpenter.");
+    }).toThrow("No avatar found for John Ford.");
 
     spy.mockRestore();
   });
@@ -51,7 +51,7 @@ describe("/watchlist/directors/{slug}", () => {
     );
 
     requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("John Carpenter");
+      expect(document.title).toStrictEqual("John Ford");
       done();
     });
   });
@@ -67,7 +67,10 @@ describe("/watchlist/directors/{slug}", () => {
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
-      userEvent.type(screen.getByLabelText("Title"), "Halloween");
+      userEvent.type(
+        screen.getByLabelText("Title"),
+        "Man Who Shot Liberty Valance"
+      );
       jest.runOnlyPendingTimers(); // Flush the delay
       jest.useRealTimers();
     });
@@ -122,6 +125,38 @@ describe("/watchlist/directors/{slug}", () => {
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
 
+  it("can sort by grade with Best first", () => {
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
+
+    userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Grade (Best First)"
+    );
+
+    expect(screen.getByTestId("movie-list")).toMatchSnapshot();
+  });
+
+  it("can sort by grade with worst first", () => {
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
+
+    userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Grade (Worst First)"
+    );
+
+    expect(screen.getByTestId("movie-list")).toMatchSnapshot();
+  });
+
   it("can filter by release year", () => {
     render(
       <WatchlistEntityPage
@@ -134,8 +169,21 @@ describe("/watchlist/directors/{slug}", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "1980");
-    userEvent.selectOptions(toInput, "1992");
+    userEvent.selectOptions(fromInput, "1959");
+    userEvent.selectOptions(toInput, "1962");
+
+    expect(screen.getByTestId("movie-list")).toMatchSnapshot();
+  });
+
+  it("can view more titles", () => {
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
+
+    userEvent.click(screen.getByText("Show More"));
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });

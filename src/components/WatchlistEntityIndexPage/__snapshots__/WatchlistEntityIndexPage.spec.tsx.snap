@@ -7329,11 +7329,13 @@ exports[`/watchlist/collections/ renders 1`] = `
               </a>
                Collections
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "Round up the usual suspects."
-            </p>
+              <q>
+                Round up the usual suspects.
+              </q>
+            </div>
           </header>
           <div
             class="filtersCss"
@@ -11072,11 +11074,13 @@ exports[`/watchlist/directors/ renders 1`] = `
               </a>
                Directors
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "Drama is life with the dull bits cut out."
-            </p>
+              <q>
+                Drama is life with the dull bits cut out.
+              </q>
+            </div>
           </header>
           <div
             class="filtersCss"
@@ -14815,11 +14819,13 @@ exports[`/watchlist/performers/ renders 1`] = `
               </a>
                Performers
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "Talk low, talk slow, and don't talk too much."
-            </p>
+              <q>
+                Talk low, talk slow, and don't talk too much.
+              </q>
+            </div>
           </header>
           <div
             class="filtersCss"
@@ -18558,11 +18564,13 @@ exports[`/watchlist/writers/ renders 1`] = `
               </a>
                Writers
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "It's not a lie. It's a gift for fiction."
-            </p>
+              <q>
+                It's not a lie. It's a gift for fiction.
+              </q>
+            </div>
           </header>
           <div
             class="filtersCss"

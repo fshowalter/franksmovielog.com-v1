@@ -1,13 +1,13 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import React from "react";
-import ViewingStatsPage from "./StatsPage";
-import data from "./StatsPage.fixtures";
+import StatsPage from "./StatsPage";
+import data, { yearWithNoMostWatched } from "./StatsPage.fixtures";
 
-describe("/viewings/stats/{year}", () => {
+describe("/stats/{year}", () => {
   it("renders for legacy year", () => {
     const { asFragment } = render(
-      <ViewingStatsPage data={data} pageContext={{ yearScope: "2020" }} />
+      <StatsPage data={data} pageContext={{ yearScope: "2020" }} />
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -17,17 +17,28 @@ describe("/viewings/stats/{year}", () => {
     const thisYear = new Date().getFullYear().toString();
 
     const { asFragment } = render(
-      <ViewingStatsPage data={data} pageContext={{ yearScope: thisYear }} />
+      <StatsPage data={data} pageContext={{ yearScope: thisYear }} />
     );
 
     expect(asFragment()).toMatchSnapshot();
   });
 });
 
-describe("/viewings/stats/", () => {
+describe("/stats/", () => {
   it("renders all-time", () => {
     const { asFragment } = render(
-      <ViewingStatsPage data={data} pageContext={{ yearScope: "all" }} />
+      <StatsPage data={data} pageContext={{ yearScope: "all" }} />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("doesn't render most watched movies if non exist for year", () => {
+    const { asFragment } = render(
+      <StatsPage
+        data={yearWithNoMostWatched}
+        pageContext={{ yearScope: "all" }}
+      />
     );
 
     expect(asFragment()).toMatchSnapshot();

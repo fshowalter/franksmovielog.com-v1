@@ -3,14 +3,14 @@ import { renderedMarkdownCss } from "./RenderedMarkdown.module.scss";
 
 export default function RenderedMarkdown({
   text,
-  className = "",
-  tag = "div",
+  className,
+  tag,
 }: {
   text: string;
-  className?: string;
+  className: string;
   tag?: keyof JSX.IntrinsicElements;
 }): JSX.Element {
-  const Tag = tag;
+  const Tag = tag || "div";
 
   return (
     <Tag
@@ -22,8 +22,3 @@ export default function RenderedMarkdown({
     />
   );
 }
-
-RenderedMarkdown.defaultProps = {
-  className: "",
-  tag: "div",
-};

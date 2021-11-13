@@ -2,6 +2,7 @@ export const calloutCss: string;
 export const containerCss: string;
 export const filtersCss: string;
 export const genresSelectLabelCss: string;
+export const genresWrapCss: string;
 export const leftCss: string;
 export const listCss: string;
 export const listHeaderGroupCss: string;

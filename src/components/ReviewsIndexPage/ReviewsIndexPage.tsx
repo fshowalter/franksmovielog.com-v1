@@ -18,6 +18,7 @@ import {
   containerCss,
   filtersCss,
   genresSelectLabelCss,
+  genresWrapCss,
   leftCss,
   listCss,
   listHeaderGroupCss,
@@ -237,18 +238,18 @@ export default function ReviewsIndexPage({
             heading="Reviews"
             tagline={
               <>
-                <div className={quoteCss}>
-                  &ldquo;We have such sights to show you.&rdquo;
-                </div>
-                I&apos;ve watched{" "}
-                <span className={calloutCss}>
-                  {state.allViewings.length.toLocaleString()}
-                </span>{" "}
-                movies since 2012 and reviewed{" "}
-                <span className={calloutCss}>
-                  {data.reviews.totalCount.toLocaleString()}
-                </span>{" "}
-                since 2020.
+                <q className={quoteCss}>We have such sights to show you.</q>
+                <p>
+                  I&apos;ve watched{" "}
+                  <span className={calloutCss}>
+                    {state.allViewings.length.toLocaleString()}
+                  </span>{" "}
+                  movies since 2012 and reviewed{" "}
+                  <span className={calloutCss}>
+                    {data.reviews.totalCount.toLocaleString()}
+                  </span>{" "}
+                  since 2020.
+                </p>
               </>
             }
           />
@@ -296,9 +297,12 @@ export default function ReviewsIndexPage({
               >
                 <VenueOptions viewings={state.allViewings} />
               </SelectInput>
-              <label className={genresSelectLabelCss}>
-                Genres
+              <div className={genresWrapCss}>
+                <label htmlFor="genres" className={genresSelectLabelCss}>
+                  Genres
+                </label>
                 <Select
+                  inputId="genres"
                   theme={(theme) => ({
                     ...theme,
                     borderRadius: 4,
@@ -325,7 +329,7 @@ export default function ReviewsIndexPage({
                     return { value: genre, label: genre };
                   })}
                 />
-              </label>
+              </div>
               <SelectInput
                 value={state.sortValue}
                 label="Order By"

@@ -163,7 +163,7 @@ export default {
         imdbId: "tt1259521",
         title: "The Cabin in the Woods",
         year: 2011,
-        slug: "the-cabin-in-the-woods-2011",
+        slug: null,
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -6619,6 +6619,3053 @@ export default {
                       {
                         srcSet:
                           "/static/3251f70a0604bd387a4cae82bf806ffb/998c5/salute-1929.avif 50w,\n/static/3251f70a0604bd387a4cae82bf806ffb/520c2/salute-1929.avif 100w,\n/static/3251f70a0604bd387a4cae82bf806ffb/af163/salute-1929.avif 200w,\n/static/3251f70a0604bd387a4cae82bf806ffb/81c8e/salute-1929.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
+  viewing: {
+    years: [
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "all",
+    ],
+  },
+};
+
+export const yearWithNoMostWatched = {
+  viewingStats: {
+    movieCount: 105,
+    newMovieCount: 95,
+    viewingCount: 106,
+  },
+  reviewStats: null,
+  decade: {
+    stats: [
+      {
+        decade: "1930s",
+        viewingCount: 3,
+      },
+      {
+        decade: "1940s",
+        viewingCount: 1,
+      },
+      {
+        decade: "1950s",
+        viewingCount: 3,
+      },
+      {
+        decade: "1960s",
+        viewingCount: 6,
+      },
+      {
+        decade: "1970s",
+        viewingCount: 7,
+      },
+      {
+        decade: "1980s",
+        viewingCount: 17,
+      },
+      {
+        decade: "1990s",
+        viewingCount: 7,
+      },
+      {
+        decade: "2000s",
+        viewingCount: 9,
+      },
+      {
+        decade: "2010s",
+        viewingCount: 53,
+      },
+    ],
+  },
+  grade: null,
+  venue: {
+    stats: [
+      {
+        name: "Netflix",
+        viewingCount: 46,
+      },
+      {
+        name: "Blu-ray",
+        viewingCount: 19,
+      },
+      {
+        name: "Alamo Drafthouse Cinema - One Loudoun",
+        viewingCount: 16,
+      },
+      {
+        name: "Angelika Film Center Mosaic",
+        viewingCount: 6,
+      },
+      {
+        name: "TCM",
+        viewingCount: 5,
+      },
+      {
+        name: "DVD",
+        viewingCount: 5,
+      },
+      {
+        name: "Amazon",
+        viewingCount: 4,
+      },
+      {
+        name: "AMC Tysons Corner 16",
+        viewingCount: 3,
+      },
+      {
+        name: "TCM HD",
+        viewingCount: 2,
+      },
+    ],
+  },
+  movies: {
+    mostWatched: [],
+  },
+  directors: {
+    mostWatched: [
+      {
+        fullName: "Dario Argento",
+        slug: "dario-argento",
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 368,
+            viewingDate: "Sat Feb 1, 2014",
+            venue: "Netflix",
+            title: "Dracula 3D",
+            year: 2012,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 388,
+            viewingDate: "Sat May 17, 2014",
+            venue: "Blu-ray",
+            title: "The Bird with the Crystal Plumage",
+            year: 1970,
+            slug: "the-bird-with-the-crystal-plumage-1970",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M35%205l-4%203h-3V7c0-2%200-2-2-1l-2%204h-1l-3-2h-4c-1-1-1%200-1%204%200%205%202%209%202%204l1%201c1%202%201%202%202-2%201-6%202-5%202%201l1%205%204-7c0-2%200-2-1%200-2%202-3%200-1-3s3-1%203%204l1%204%201-1%201-2%201%201c0%202%206%201%206-1h1c0%202%204%202%206%201l2%201c1%201%201%201%202-1h1c0%203%202%201%202-3l1-4v4c0%206%202%205%202-1l1-4v4c0%207%202%207%203%200%200-5-1-6-4-5h-4c-2%200-3%201-3%202%200%202%200%202-1%201V8c1-2%201-4-1-2s-5%201-3%200V3c0-1-1-1-1%201-1%202-3%203-3%201V4l-1%201V2l-3%203m67%200h-3l-3%202-6%201c-3%200-4%200-4%202h-1l-2-2c-2%200-2%201-2%205s0%205%202%205%202-1%201-4l1-3%201%204c0%202%200%203%202%203V9c0-2%202%203%201%205l1%203h11l6%201c2%200%203%200%202-1l-1-5V8l-2%205-1%205v-6c0-5%200-5%203-5l2-1c0-2-5-2-8-1m85%203h-12v4l-1%205-1-5-1-4-1%202%201%205c0%203%200%203%203%203%202%200%203%200%202-4l1-5%201%205c0%204%202%206%202%202l1-2v2c0%202%204%203%204%200h1c0%205%202%201%202-3l-1-6-1%201m-69%205c0%204%200%205%202%205%201%200%202-1%202-3s0-2%201%201l1%201v-2l1%202c1%201%201%201%201-1v-3l1%203%201%201c0-2%200-2%201-1%202%203%203%202%202-3l1-4%201%205c-1%203%200%204%203%204l1-5V8h-3c-3%200-4%201-4%202l-1%202V9l-1-1-1%202-1%203v-3l-1-2-2%202c-1%202-1%202-1%200s0-2-1%200h-1c0-4-2-2-2%203M92%2037c-6%202-10%203-10%201l-3%201c-6%205-13%2010-14%209l2-2%202-3h-1l-5%203-5%203-5-3c-5-4-7-4-18%202-5%202-5%204-1%208%203%203%203%204%203%208-1%206%200%2015%202%2016%207%207%2010%209%2011%208l1-1v-8c-1%200%200-4%202-6l2-3c0-3%206-11%2010-14l10-7c15-15%2039-16%2049-4%204%205%205%206%207%205%201-1%201-1-1-1l-3-2c-2-9-22-15-35-10M15%2052c-3%205-2%208%203%208%202%200%204%201%202%202l-4-1h-5s4%204%206%204l9%208-3-2-4-1-2-2-1-1-4-3c-7-6-11-6-11%200%200%203%203%206%2018%2016l10%207c3%203%202%204-1%203-6-3-7-3-6-4l-4-4a1455%201455%200%2001-15-9l1%203v1h1l2-1v1l-1%203-1%203c-1%200-2%201-2%204v3l3-1%202-1-2%202c-3%201-5%206-2%208%202%202%202%208%200%2010l-2%204-1-8c-1-8-1-7-1%208v18l1-8c0-7%200-7%202-5s2%202%201%204c-2%202-2%204-1%207l-1%206c-3%202-3%2082%200%2084%203%203%2011%206%2014%206%205%200%205%201-1%202-3%201-4%201-8-2-4-2-5-2-2%201v3c-5%203-1%206%205%206a3093%203093%200%2001-8%203c-2%201-3%204%200%204l2%202c0%201%201%202%203%202h5l8-2h4l3-1c3-2%2013-2%2012%200l1%202c2%202%201%204-2%204-2%201-3%201-5-1-3-2-4-2-4-1%200%202-2%203-10%202h-7l-6%201-6%201c0%203%2040%202%2041%200l13-1c12%200%2012%200%2012-2l1-2v4h15a608%20608%200%200116%202l-2%201%207%201c3%200%203%200%203%203%200%204%200%204-2%203H86v13h21l21-1h16c2-2%202-2%203%200%203%203%2012%200%2012-4%200-2%200-2%201-1h1c1-1%201%200%201%202v4h5l6-1c0-2%206-1%207%200l7%201c6%200%207%200%208-2v-4c0-2%200-2-3-2s-4-2-3-5c0-1%201-2%203-2l3-1-3-1c-3%201-4-1-4-4s-4-2-5%202l-1%201c0-2-2-3-2-1l-1-1c-1-2-5-3-7-1h-1c1-1%200-2-5-1l-8%201h-13l-1%204c0%204%200%205%203%206l4%202h-4c-2%200-3%200-3%203-1%201-1-2-1-7v-9h-4l-5%201h-2l-7-1c-7%201-9%200-4-1l10-1%206-1h1l18%201a2013%202013%200%200142-1c1%201%201-4%201-29%200-20%200-29-1-28l-2%202-4%202c-9%207-18%209-30%209l-8%201c0%202-3%202-4%200-2-1-6-2-7-1h-6a114%20114%200%2000-31-1l-4-1-1-1-2%201-1%201v-10c0-2%201-2%202%203l1%205v-5c-1-4-1-4%201-3l15%201c4-1%205-5%202-6-1-1%200-2%206-3l2-1c-8%201-17%200-21-1-2-1-4-2-6-1h-2l2-2%206-1c2%200%204%200%205-2%201-1%201-1-1-1l-5%201-2-1%202-2%201-2-3%201-8%201%203-1%204-2%206-2%203-1h-5l2-2c2%200%203-1%203-2l-3%201-3%201-1%201-3-1h-5l-2%201-1%201v1l-5%203c-1%202-2%202-2%201v-2c-1%201-2-5-2-8%202-6%204-7%2013-6l9-1-9-1H87l-3%204c-2%203-3%209-1%2014%201%202%201%203-5%2011-6%209-7%2010-16%2010-8%200-12%202-23%2012-5%204-5%205-7%203v-4l-2%201-2-1-2-1%203-2%201-2-3%201h-1c0-1%201-2%203-2l2-1h-4c-1%201-11-8-11-10l10%201h1l2-2c3%202%202-12-1-24v-9c1-2%200-3-2-1v10c3%2012%202%2013-6%2013-5%200-6%200-6%202h-1v-11h-3l1-1%201-2-2-1c-1%201-2%200-3-7l1-6v-2c-1-3%206-26%2010-32%202-3%206-4%2012-4s9%201%207%202v1c2-1%209%205%2010%208l1%201v-3c-2-4-1-6%203-9l4-3c2-3%2016%202%2014%205l1%201h1v9l-1%2010a935%20935%200%20012%208h3v2l1%202c3-1%204-2%204-5l1-5v-1c-2%201-3-1-2-5v-3c-2%200-1-2%200-1%202%200%205-4%203-4v-1l3%202%202%202%205%207c2%205%203%206%209%209l7%203c1-1-16-19-26-27-7-6-46-34-48-34v3l-1%203-1-23c0-2%200-2-2-2-2%201-3%201-4-2%200-2-1-4-3-5l-3-5c-2-4-2-4-5%201m165%2039a62%2062%200%2000-9%2010l-1-1-2-1c-2%200-3%200-2%203%200%204-3%208-5%207l-2-2-1-1c-1%200-10%2012-9%2013h3c4%201%205%202%201%202-2%201-4%203-2%203%204%200%2010-5%2015-15l3-4-4%208-4%208c2%203-13%207-24%206h-10l-6-6c-3-4-6-6-7-6l6%208c5%206%207%207%209%207h12c10%201%2018-3%2025-11l5-4c0%201%205%205%2012%208%205%203%203%200-3-4-8-5-8-6%201-3%208%204%209%203%200-1-3-2-6-3-5-4l3%201h5c3-1%203-1-2-1-5-1-9-3-6-3l18-3c6-1%203-2-5-1l-12%201h-3l3-2c5-2%2016-10%2016-11l-10%205c-8%205-14%207-9%203%206-4%2016-16%2015-18l-9%209M72%2093l-3%202v1l-1%202c-4%202-4%202-1%204l9%206c6%205%2010%207%209%204v-1c1-1%201%200%201%201s0%202%201%201v-1l1-2-1-3h-2c0%202%200%202-2%200-3-2-2-3%201-2%203%200%203%200%202-4l1-5v-2c-1-2-5-2-5%201h-1c-1-2-2-1-2%202l-1%202%201-6c2-2%200-2-2%200-3%201-4%201-4-1-1-1-1-1-1%201m-43%2035l-7%202c-2%200-3%202-1%202l8-3%207-2c1%201-8%205-12%206-3%200-4%201-4%202l1%203c0%205%207%206%2013%203%206-4%207-13%202-15l-2-1-5%203m164%2091l-5%202-2%201-2%201h-13c0%202-5%201-7-2l-3-2v2c0%203%200%203-5%203l-6-1-4-2-4%202c0%201-5%202-5%200h-1l-6%201c-3%200-5%200-4%201l2%201%202%201h2c1-1%2014-2%2015%200%201%204%201%205%202%202%201-4%208-4%207%200%200%203%204%203%204%200%201-4%208-4%208-1s3%203%206%200c1-2%202-2%206-2l10-1%205-1c2%201%203%200%203-3%200-4-2-4-5-2m-162%202l-4%203-4%201c-2%201-1%201%203%201l6-2h1c0%201%202%203%205%204%204%203%205%203%2013%203l10%201c0%201-14%201-28-1-4%200-9%203-8%205h14a613%20613%200%200158%200c0-3%202-2%202%201%201%203%201%203%201%200%200-4-1-4-2-4-2%201-23%200-25-1s1-1%209-1c13%200%2018-2%207-2a169%20169%200%2001-15-1l-15%201c-17%202-23%200-25-8v-3l-3%203m18%2036a451%20451%200%2000-21%204%202091%202091%200%2001-24%201c-4%200-4%200-4%203v3h6l16-3%205%201h4l5-2%208-4%209-2c3%200%209-2%205-2h-2l-7%201m140%2026l-1%201c0-2%200-2-1-1h-12l-9-1h-9v4c0%202%200%203%201%202h31l2%201v-7c-1-1-1%200-2%201M2%20298l-2%201%2029%201%2028-1a590%20590%200%2001-54-1'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/5e11eb0dc0e8e553d88f11406119e75c/10b75/the-bird-with-the-crystal-plumage-1970.jpg",
+                      srcSet:
+                        "/static/5e11eb0dc0e8e553d88f11406119e75c/0cf61/the-bird-with-the-crystal-plumage-1970.jpg 50w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/4cfec/the-bird-with-the-crystal-plumage-1970.jpg 100w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/10b75/the-bird-with-the-crystal-plumage-1970.jpg 200w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/d5b68/the-bird-with-the-crystal-plumage-1970.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/5e11eb0dc0e8e553d88f11406119e75c/998c5/the-bird-with-the-crystal-plumage-1970.avif 50w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/520c2/the-bird-with-the-crystal-plumage-1970.avif 100w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/af163/the-bird-with-the-crystal-plumage-1970.avif 200w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/81c8e/the-bird-with-the-crystal-plumage-1970.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 393,
+            viewingDate: "Sat May 31, 2014",
+            venue: "Blu-ray",
+            title: "Inferno",
+            year: 1980,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Isaac Florentine",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 360,
+            viewingDate: "Sat Jan 11, 2014",
+            venue: "Netflix",
+            title: "Ninja: Shadow of a Tear",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 367,
+            viewingDate: "Mon Jan 27, 2014",
+            venue: "Amazon",
+            title: "Ninja",
+            year: 2009,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Quentin Tarantino",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 372,
+            viewingDate: "Sun Feb 16, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 1",
+            year: 2003,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 378,
+            viewingDate: "Sat Mar 29, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 2",
+            year: 2004,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Terence Fisher",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 418,
+            viewingDate: "Sat Aug 16, 2014",
+            venue: "DVD",
+            title: "Horror of Dracula",
+            year: 1958,
+            slug: "horror-of-dracula-1958",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20150v150h201V0H0v150m78-66c-4%200-7%2010-4%2010l1%201v5l2%206c0%205%200%205-2%203l-1-2h-1l-2-2c-1-1-1-1-1%201%200%203%204%207%207%207l3%203c7%2011%2015%2018%2020%2018%203%200%203%200%202-1l-3-2-1-1h3l2-1-2-1-2-1h-2c-3%201-4%201-5-2-2-3-2-3%200-5l2-3c0-1%201-1%201%201l-1%204c-1%203-1%203%201%203%204%200%205-1%204-3v-1c2%201%207-3%205-4l-2-4-1-4c-1-1%200-4%202-4%201%200%203-5%204-12%200-5%200-6-3-3l-6%202-16-2h-2l-2-1%202-1%201-2c0-2-1-3-3-2m8%2051c-4%200-11%206-16%2012-3%204-6%206-7%206h-4c0-2-1-2-3-2-7%200-7%200-9%2010l-2%2010h9c8%201%208%201%209-2%201-2%202-3%205-3l5-2%2013-1h10c-2%201-2%201-1%202%202%202%202%202%201%204h-3l2%203v2l-3%201h3c5-1%208-2%206-3v-1l-1-1v-3l1-1c1%200%204%203%204%205s-5%205-9%206l-5%203c0%202-2%203-3%203v-2c2-2%202-2%200-4l-3-2-1%203c-2%204%200%2010%201%207%201-2%201-2%202-1s5%200%206-2h6c2-3%201%202-2%204-1%202-2%203-1%204l-3%201c-4%200-4-1%200-4%203-2%202-2-3%200-4%201-5%202-5%204%200%203-2%203-3%200-1-2-1-2-2%200l-1%202-1%201-1%203-1-4c-1-2-3-3-3-2h-5l-2-1c-2%200-2-3%201-4l1-1h3c2%201%202%201%202-1-1-4%200-4%203%201l2%204%202-4c2-4%202-7%200-5l-2-2h-3c-1-2-1-2-1%200h-2c0-2-1-2-1-1l-1%201-3%202v1l-2%201-1%202-1%202c-2%202-3%203-3%205%200%203%200%203%203%203h2c-1%201-1%201%201%201%201-1%202%200%203%202%202%204%203%204%203%200-1-1%200-2%201-2h1l2%202c1%203%200%207-2%207s-2%201-1%203l3%203%202-1-1-3c0-2%200-2%202-3%201%200%202-1%202-3%201-3%201-3%202-2s1%201%202-1l2-2%204%204%202%203%202%202v-3c0-4%200-5%201-2l2%204c0%204%202%206%205%206l4%202c4%203%206%203%208-4l2-6c-1-2%200-3%202-6%203-3%207-4%206-2l1%202c2%202%203%202%203-6l1-4-1%203c-3%204-4%204-4-1%200-3%201-4%202-4%201%201%201%200%202-1%201-3%203-5%203-2l4%204%206%206c1%203%202%203%206%203%205-1%207-3%205-4-1-1%206-6%209-5v-1l-1-2-1-5%201-5%201-5-1-4-1-3c-1-3-3-4-5-1%200%202-2%202-2-1l2-2c1%200-1-3-5-5-2-1-2-1-1-3v-1l-4-2-8-3-9-3c-5-2-6-3-4%200v1l-2-1c0-2-5-2-5-1h-4l-4%201v1l1%201-2%201h-2l-1%201-1-2c1-2%201-2-3-2-3%201-4%201-6-1s-2-2-3-1h-2l-1-2-3%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg",
+                      srcSet:
+                        "/static/fadc2641cc29a6d9841fa131bc4822fa/0cf61/horror-of-dracula-1958.jpg 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/4cfec/horror-of-dracula-1958.jpg 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/d5b68/horror-of-dracula-1958.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/fadc2641cc29a6d9841fa131bc4822fa/998c5/horror-of-dracula-1958.avif 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/520c2/horror-of-dracula-1958.avif 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/af163/horror-of-dracula-1958.avif 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/81c8e/horror-of-dracula-1958.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 456,
+            viewingDate: "Sat Dec 20, 2014",
+            venue: "Blu-ray",
+            title: "Horror of Dracula",
+            year: 1958,
+            slug: "horror-of-dracula-1958",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20150v150h201V0H0v150m78-66c-4%200-7%2010-4%2010l1%201v5l2%206c0%205%200%205-2%203l-1-2h-1l-2-2c-1-1-1-1-1%201%200%203%204%207%207%207l3%203c7%2011%2015%2018%2020%2018%203%200%203%200%202-1l-3-2-1-1h3l2-1-2-1-2-1h-2c-3%201-4%201-5-2-2-3-2-3%200-5l2-3c0-1%201-1%201%201l-1%204c-1%203-1%203%201%203%204%200%205-1%204-3v-1c2%201%207-3%205-4l-2-4-1-4c-1-1%200-4%202-4%201%200%203-5%204-12%200-5%200-6-3-3l-6%202-16-2h-2l-2-1%202-1%201-2c0-2-1-3-3-2m8%2051c-4%200-11%206-16%2012-3%204-6%206-7%206h-4c0-2-1-2-3-2-7%200-7%200-9%2010l-2%2010h9c8%201%208%201%209-2%201-2%202-3%205-3l5-2%2013-1h10c-2%201-2%201-1%202%202%202%202%202%201%204h-3l2%203v2l-3%201h3c5-1%208-2%206-3v-1l-1-1v-3l1-1c1%200%204%203%204%205s-5%205-9%206l-5%203c0%202-2%203-3%203v-2c2-2%202-2%200-4l-3-2-1%203c-2%204%200%2010%201%207%201-2%201-2%202-1s5%200%206-2h6c2-3%201%202-2%204-1%202-2%203-1%204l-3%201c-4%200-4-1%200-4%203-2%202-2-3%200-4%201-5%202-5%204%200%203-2%203-3%200-1-2-1-2-2%200l-1%202-1%201-1%203-1-4c-1-2-3-3-3-2h-5l-2-1c-2%200-2-3%201-4l1-1h3c2%201%202%201%202-1-1-4%200-4%203%201l2%204%202-4c2-4%202-7%200-5l-2-2h-3c-1-2-1-2-1%200h-2c0-2-1-2-1-1l-1%201-3%202v1l-2%201-1%202-1%202c-2%202-3%203-3%205%200%203%200%203%203%203h2c-1%201-1%201%201%201%201-1%202%200%203%202%202%204%203%204%203%200-1-1%200-2%201-2h1l2%202c1%203%200%207-2%207s-2%201-1%203l3%203%202-1-1-3c0-2%200-2%202-3%201%200%202-1%202-3%201-3%201-3%202-2s1%201%202-1l2-2%204%204%202%203%202%202v-3c0-4%200-5%201-2l2%204c0%204%202%206%205%206l4%202c4%203%206%203%208-4l2-6c-1-2%200-3%202-6%203-3%207-4%206-2l1%202c2%202%203%202%203-6l1-4-1%203c-3%204-4%204-4-1%200-3%201-4%202-4%201%201%201%200%202-1%201-3%203-5%203-2l4%204%206%206c1%203%202%203%206%203%205-1%207-3%205-4-1-1%206-6%209-5v-1l-1-2-1-5%201-5%201-5-1-4-1-3c-1-3-3-4-5-1%200%202-2%202-2-1l2-2c1%200-1-3-5-5-2-1-2-1-1-3v-1l-4-2-8-3-9-3c-5-2-6-3-4%200v1l-2-1c0-2-5-2-5-1h-4l-4%201v1l1%201-2%201h-2l-1%201-1-2c1-2%201-2-3-2-3%201-4%201-6-1s-2-2-3-1h-2l-1-2-3%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg",
+                      srcSet:
+                        "/static/fadc2641cc29a6d9841fa131bc4822fa/0cf61/horror-of-dracula-1958.jpg 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/4cfec/horror-of-dracula-1958.jpg 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/d5b68/horror-of-dracula-1958.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/fadc2641cc29a6d9841fa131bc4822fa/998c5/horror-of-dracula-1958.avif 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/520c2/horror-of-dracula-1958.avif 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/af163/horror-of-dracula-1958.avif 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/81c8e/horror-of-dracula-1958.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Adam Wingard",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 420,
+            viewingDate: "Fri Aug 22, 2014",
+            venue: "Netflix",
+            title: "You're Next",
+            year: 2011,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 440,
+            viewingDate: "Sat Oct 25, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "V/H/S/2",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Don Sharp",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 436,
+            viewingDate: "Sat Oct 18, 2014",
+            venue: "DVD",
+            title: "The Face of Fu Manchu",
+            year: 1965,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 437,
+            viewingDate: "Sat Oct 18, 2014",
+            venue: "DVD",
+            title: "The Brides of Fu Manchu",
+            year: 1966,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Eduardo Sánchez",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 440,
+            viewingDate: "Sat Oct 25, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "V/H/S/2",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 441,
+            viewingDate: "Sun Oct 26, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "Exists",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
+  performers: {
+    mostWatched: [
+      {
+        fullName: "Christopher Lee",
+        slug: "christopher-lee",
+        viewingCount: 7,
+        viewings: [
+          {
+            sequence: 406,
+            viewingDate: "Thu Jul 3, 2014",
+            venue: "TCM",
+            title: "Horror Castle",
+            year: 1963,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 414,
+            viewingDate: "Sat Aug 2, 2014",
+            venue: "DVD",
+            title: "The Bloody Judge",
+            year: 1970,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 416,
+            viewingDate: "Sat Aug 9, 2014",
+            venue: "DVD",
+            title: "Psycho-Circus",
+            year: 1966,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 418,
+            viewingDate: "Sat Aug 16, 2014",
+            venue: "DVD",
+            title: "Horror of Dracula",
+            year: 1958,
+            slug: "horror-of-dracula-1958",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20150v150h201V0H0v150m78-66c-4%200-7%2010-4%2010l1%201v5l2%206c0%205%200%205-2%203l-1-2h-1l-2-2c-1-1-1-1-1%201%200%203%204%207%207%207l3%203c7%2011%2015%2018%2020%2018%203%200%203%200%202-1l-3-2-1-1h3l2-1-2-1-2-1h-2c-3%201-4%201-5-2-2-3-2-3%200-5l2-3c0-1%201-1%201%201l-1%204c-1%203-1%203%201%203%204%200%205-1%204-3v-1c2%201%207-3%205-4l-2-4-1-4c-1-1%200-4%202-4%201%200%203-5%204-12%200-5%200-6-3-3l-6%202-16-2h-2l-2-1%202-1%201-2c0-2-1-3-3-2m8%2051c-4%200-11%206-16%2012-3%204-6%206-7%206h-4c0-2-1-2-3-2-7%200-7%200-9%2010l-2%2010h9c8%201%208%201%209-2%201-2%202-3%205-3l5-2%2013-1h10c-2%201-2%201-1%202%202%202%202%202%201%204h-3l2%203v2l-3%201h3c5-1%208-2%206-3v-1l-1-1v-3l1-1c1%200%204%203%204%205s-5%205-9%206l-5%203c0%202-2%203-3%203v-2c2-2%202-2%200-4l-3-2-1%203c-2%204%200%2010%201%207%201-2%201-2%202-1s5%200%206-2h6c2-3%201%202-2%204-1%202-2%203-1%204l-3%201c-4%200-4-1%200-4%203-2%202-2-3%200-4%201-5%202-5%204%200%203-2%203-3%200-1-2-1-2-2%200l-1%202-1%201-1%203-1-4c-1-2-3-3-3-2h-5l-2-1c-2%200-2-3%201-4l1-1h3c2%201%202%201%202-1-1-4%200-4%203%201l2%204%202-4c2-4%202-7%200-5l-2-2h-3c-1-2-1-2-1%200h-2c0-2-1-2-1-1l-1%201-3%202v1l-2%201-1%202-1%202c-2%202-3%203-3%205%200%203%200%203%203%203h2c-1%201-1%201%201%201%201-1%202%200%203%202%202%204%203%204%203%200-1-1%200-2%201-2h1l2%202c1%203%200%207-2%207s-2%201-1%203l3%203%202-1-1-3c0-2%200-2%202-3%201%200%202-1%202-3%201-3%201-3%202-2s1%201%202-1l2-2%204%204%202%203%202%202v-3c0-4%200-5%201-2l2%204c0%204%202%206%205%206l4%202c4%203%206%203%208-4l2-6c-1-2%200-3%202-6%203-3%207-4%206-2l1%202c2%202%203%202%203-6l1-4-1%203c-3%204-4%204-4-1%200-3%201-4%202-4%201%201%201%200%202-1%201-3%203-5%203-2l4%204%206%206c1%203%202%203%206%203%205-1%207-3%205-4-1-1%206-6%209-5v-1l-1-2-1-5%201-5%201-5-1-4-1-3c-1-3-3-4-5-1%200%202-2%202-2-1l2-2c1%200-1-3-5-5-2-1-2-1-1-3v-1l-4-2-8-3-9-3c-5-2-6-3-4%200v1l-2-1c0-2-5-2-5-1h-4l-4%201v1l1%201-2%201h-2l-1%201-1-2c1-2%201-2-3-2-3%201-4%201-6-1s-2-2-3-1h-2l-1-2-3%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg",
+                      srcSet:
+                        "/static/fadc2641cc29a6d9841fa131bc4822fa/0cf61/horror-of-dracula-1958.jpg 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/4cfec/horror-of-dracula-1958.jpg 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/d5b68/horror-of-dracula-1958.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/fadc2641cc29a6d9841fa131bc4822fa/998c5/horror-of-dracula-1958.avif 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/520c2/horror-of-dracula-1958.avif 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/af163/horror-of-dracula-1958.avif 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/81c8e/horror-of-dracula-1958.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 436,
+            viewingDate: "Sat Oct 18, 2014",
+            venue: "DVD",
+            title: "The Face of Fu Manchu",
+            year: 1965,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 437,
+            viewingDate: "Sat Oct 18, 2014",
+            venue: "DVD",
+            title: "The Brides of Fu Manchu",
+            year: 1966,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 456,
+            viewingDate: "Sat Dec 20, 2014",
+            venue: "Blu-ray",
+            title: "Horror of Dracula",
+            year: 1958,
+            slug: "horror-of-dracula-1958",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20150v150h201V0H0v150m78-66c-4%200-7%2010-4%2010l1%201v5l2%206c0%205%200%205-2%203l-1-2h-1l-2-2c-1-1-1-1-1%201%200%203%204%207%207%207l3%203c7%2011%2015%2018%2020%2018%203%200%203%200%202-1l-3-2-1-1h3l2-1-2-1-2-1h-2c-3%201-4%201-5-2-2-3-2-3%200-5l2-3c0-1%201-1%201%201l-1%204c-1%203-1%203%201%203%204%200%205-1%204-3v-1c2%201%207-3%205-4l-2-4-1-4c-1-1%200-4%202-4%201%200%203-5%204-12%200-5%200-6-3-3l-6%202-16-2h-2l-2-1%202-1%201-2c0-2-1-3-3-2m8%2051c-4%200-11%206-16%2012-3%204-6%206-7%206h-4c0-2-1-2-3-2-7%200-7%200-9%2010l-2%2010h9c8%201%208%201%209-2%201-2%202-3%205-3l5-2%2013-1h10c-2%201-2%201-1%202%202%202%202%202%201%204h-3l2%203v2l-3%201h3c5-1%208-2%206-3v-1l-1-1v-3l1-1c1%200%204%203%204%205s-5%205-9%206l-5%203c0%202-2%203-3%203v-2c2-2%202-2%200-4l-3-2-1%203c-2%204%200%2010%201%207%201-2%201-2%202-1s5%200%206-2h6c2-3%201%202-2%204-1%202-2%203-1%204l-3%201c-4%200-4-1%200-4%203-2%202-2-3%200-4%201-5%202-5%204%200%203-2%203-3%200-1-2-1-2-2%200l-1%202-1%201-1%203-1-4c-1-2-3-3-3-2h-5l-2-1c-2%200-2-3%201-4l1-1h3c2%201%202%201%202-1-1-4%200-4%203%201l2%204%202-4c2-4%202-7%200-5l-2-2h-3c-1-2-1-2-1%200h-2c0-2-1-2-1-1l-1%201-3%202v1l-2%201-1%202-1%202c-2%202-3%203-3%205%200%203%200%203%203%203h2c-1%201-1%201%201%201%201-1%202%200%203%202%202%204%203%204%203%200-1-1%200-2%201-2h1l2%202c1%203%200%207-2%207s-2%201-1%203l3%203%202-1-1-3c0-2%200-2%202-3%201%200%202-1%202-3%201-3%201-3%202-2s1%201%202-1l2-2%204%204%202%203%202%202v-3c0-4%200-5%201-2l2%204c0%204%202%206%205%206l4%202c4%203%206%203%208-4l2-6c-1-2%200-3%202-6%203-3%207-4%206-2l1%202c2%202%203%202%203-6l1-4-1%203c-3%204-4%204-4-1%200-3%201-4%202-4%201%201%201%200%202-1%201-3%203-5%203-2l4%204%206%206c1%203%202%203%206%203%205-1%207-3%205-4-1-1%206-6%209-5v-1l-1-2-1-5%201-5%201-5-1-4-1-3c-1-3-3-4-5-1%200%202-2%202-2-1l2-2c1%200-1-3-5-5-2-1-2-1-1-3v-1l-4-2-8-3-9-3c-5-2-6-3-4%200v1l-2-1c0-2-5-2-5-1h-4l-4%201v1l1%201-2%201h-2l-1%201-1-2c1-2%201-2-3-2-3%201-4%201-6-1s-2-2-3-1h-2l-1-2-3%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg",
+                      srcSet:
+                        "/static/fadc2641cc29a6d9841fa131bc4822fa/0cf61/horror-of-dracula-1958.jpg 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/4cfec/horror-of-dracula-1958.jpg 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/10b75/horror-of-dracula-1958.jpg 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/d5b68/horror-of-dracula-1958.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/fadc2641cc29a6d9841fa131bc4822fa/998c5/horror-of-dracula-1958.avif 50w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/520c2/horror-of-dracula-1958.avif 100w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/af163/horror-of-dracula-1958.avif 200w,\n/static/fadc2641cc29a6d9841fa131bc4822fa/81c8e/horror-of-dracula-1958.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Jennifer Lawrence",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 357,
+            viewingDate: "Thu Jan 2, 2014",
+            venue: "AMC Tysons Corner 16",
+            title: "American Hustle",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 390,
+            viewingDate: "Thu May 22, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "X-Men: Days of Future Past",
+            year: 2014,
+            slug: "x-men-days-of-future-past-2014",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%203c0%203%202%206%209%209l4%203%201%201%202%201c1%202%207%205%2012%205l6%202c5%202%207%202%206-1%200-2%202-4%203-2l3%202%202%202%203%201%208%202%209%201a274%20274%200%200117-3c9-2%2012-1%206%202l-5%203-3%202c-2%200-6%203-4%203l1%204-1%203c-4-1-8%200-11%203-5%204-5%207-1%204%203-2%209-3%2013-1%202%201%203%201%203-2s1-3%206-3l7%201%202%201c2%200%202%200%201%202l-2%204c0%202-2%203-7%204-1%201-2%201-1%202l1%201h8c1-2%202-1%201%201l-1%205-1%204v2c1%200%202%201%202%203%200%203%200%203%202%202%201-2%201-2%201%200v2c2%200%202%204%201%207-2%203-4%202-4%200s-1-2-3%202-4%2013-2%2013v5h-2c-3-2-4%200-2%202%202%200%202%201%201%201l-1%201c1%205-3%209-7%208l-1%204c0%202%200%202-2%202-1-1-3%200-5%203-2%201-3%203-2%203l3%201c1%202%201%202-2%201l-7%201-3%202v-3c1-3%202-4%207-6l2-3c1-3%207-19%208-17l-1%206c-3%209-2%2010%203%202%202-5%202-6%201-12l-1-5-2%204-1%204-1-5-1-7v-1l4-8-1-8-1-8c-1-1%200-3%202-3v2c-1%201-1%201%201%201s2%200%202%202v1c2-1%202-13%201-13s-2-1-2-3l-4-4c-4%200-4%200-4%203%200%202%200%203-2%204-3%200-5-1-5-3%200-1-2-1-2%201-1%202-1%203%201%204v2l-1%202v1l-1%202c0%201%200%202%201%201h6l-3-1-2-1h7c1-1%201%200%201%203l-1%204%201%202%203%202h-5l2%201c2%201%202%202-1%202-2-1-4-6-2-7l1-3c0-2%200-2-1%200-1%203-3%203-4%202s-2-2-3-1v2c1%200%203%202%204%205l2%205-1%202c0%202-4%207-6%207v1c1%203-1%204-2%203-2-3-7-1-7%202%200%202%201%203%202%203l1%201h-3l-3-2v-1l-1%204c0%202-2%208-3%207v2h-1c-1-2-2-1-2%202l-1%204-1%205v4l-1%202c0%202%200%202%202%200%201-3%201-2%201%2014%200%205%200%206-2%205-3%200-5%203-3%204l1%202-1%206-2%206-1%206-2%2011c-2%206-2%209-1%2011%202%203%201%206%200%205-2%200-2%201-2%204s0%203%201%202c0-3%202-3%202%200l2%203v-14c-1-3%200-6%2010-34l3-13%203-14%202%206%204%209v4l-4%2013-1%202v1l-1%201c-1-1-2%203-1%204v2c-3%202-2%203%200%202%202%200%202%200%201%201v2c-2%200-3%202-1%203%202%200%201%202%200%202h-3c-2-1-7-2-8-1l2%202c3%202%203%202%203%208-1%204%200%207%201%208v3l1%204%202%203%202%201c1-1%201%200%201%201l1%202c1%200%203-4%202-6v-2l1-5%201-5%202-7%201-6v14c1%201%201%200%201-2s1-1%202%204l1%208v-9l2-13%201-3v3c0%203%200%203%201%201v6l1%208h1c1%202%204-2%204-5l1-3h1l1%201%201-2c0-2-1-3-3-1s-1-3%201-5%201-4-2-3c-2%200-3-2-2-7l-1-2c-1%202-6-1-6-4%200-2%200-1-1%201-1%205-3%207-3%202v-7l1-5-1-1h1c1%200%202%200%201-2%200-1-1-2-2-1-2%200-2%200%200-1l2-4%201%201%203%201c2%200%202%200%200%204-2%203-2%204-1%205v2l-1%202c1%201%202%200%203-2l2-2c0%203%205%206%2010%206l6-1%202-1c1%201%206-1%206-2l-1-3v-2l2%203c1%203%201%204-1%209l-2%207c1%203%201%204-1%203l-4%201h-3v-1l1-2c0-2%200-2-1%200l-2%202v-3c-1-4-4-4-4%200v4l1%202%202%204c1%201%202%206%200%205-1-1-4%205-4%209s0%204%201%203%202-1%202%201h3c2-3%202-3%206%204l3%206c4%200%205-9%202-13-2-2-2-4-1-6l-1-3-1-2c1-2%203-4%203-2s3%201%204-1c1-1%203%201%204%205l2%202c2%200%202%202%201%202-2%201-2%204-1%206%201%201%202%201%204-1l2-1h2c5-1%202%204-3%207l-3%204c-1%203-1%203-1%201%200-4-3%202-4%2010l-2%206c-2-1-5%202-5%205%201%202-1%204-3%202h-7l1-2%201-3-1%201h-3l-1%201v-2c1-2-1-1-4%202-2%202-2%202-3%201l-1-1-4-2c-2-3-5-3-3-1%201%203%201%205-1%204l-1-1h-3l-5-1-2-2-1%201-1%201c-1-1-4%200-4%202h-1v-2c0-2%200-2-1-1-2%201-3%201-2-2%200-2-6-1-6%201-1%202-1%202-2%201l-2-1v1l1%202-14-1H12c-7%200-15-2-10-2l12-3h4c1%201%201%201%201-2%200-1%200-2-1-1%200%201-1%201-2-1v-3l-1-1-2-1c-1-1-2%200-3%201-3%204-4%204-5%200l-1-2-2-2c-2-1-2%203-2%2041v42h201v-43c0-38%200-42-1-41l-2%203c0%203-1%205-3%205-4%200-5%201-4%204%200%204-1%206-4%203-2-1-2-1-3%201l-1-1c-1-2-1-3%201-5l3-4c0-2%200-2-1-1l-4%203c-2%201-4%202-4%204l-4%202c-2%200-2%200-1%204l2-1h1c-1%202%202%202%205%201%201-1%204%201%203%201l-6%201h-6l-1-2v2l-2%201-5-2-4-1%201-1c3%200%204%200%203-1-2-1-2-1%200-1l2-1h-4l-3%201-2%202v2l1%201c0%202-13%201-18-2h-5l-3%202c-2%200-7%205-7%206l-1%202-1%202-1%201c-2%200%201-11%206-26%201-2%209-4%209-3l-1%201v4l2%203%202%201c2%203%203-8%205-38%200-9-1-13-5-13l-4%202c-1%201-1%201%201%201s3%201%203%202h-3l-2-1-1-1c-3%200-6-4-4-4l1-4v-1c1%201%201%201%201-1%200-3%204-3%206%201l2%202%202%202%202-16c0-8%200-8%202-8l3%201-3-2-2-2%202-9c2-9%207-21%208-19l3%207%206%2010c2%203%202%204%201%207v8c0%205%200%205-3%205-5%200-9%203-8%207l2%205%201%203c0%202%201%202%202%202%202-1%201%200-2%204l-2%203%201-1%205-1-5%206c-5%207-4%208%201%203%204-4%204-3%201%202l-3%205%207-8%206-8c2-1%203-4%203-5l2-3%201-4%203-7c6-8%207-20%203-27l-4-9c0-4-2-9-4-13s-3-7-3-12c0-9-2-14-10-21-4-5-7-6-9-6l-4-1h-2c-2%201-14-4-14-6h-1v-2c0-3%200-3-2-3l-2-1-6%206-6%208c-2%201-1-2%202-6l3-6c-1-2%200-2%201-3%202%200%202-1%202-4s0-4-1-3l-1-2c2-4%202-15%201-15l-1-1v-2l-1-1%2010%202c3%201%203%202%203%205%200%202%203%203%208%203%205-1%205%200%203%202l-1%203-2%203-3%204c1%201%208-1%207-2h2c8%202%2022%203%2021%201l-4-1-7-2c-5-2-5-3-3-4l5-6c4-3%204-3%206-1h2c1-2%205-1%205%201%201%205%207%207%2020%207l11%201V26l1-22V0H0v3m110%2078c0%202-1%202-3%202l-3%203c-1%204%200%205%203%201l3-2-1%202c-1%202-1%2013%201%2016v24c-2%200-4-1-4-4%200-2-1-3-3-1l-4%201-5%202c-2%203-4%203-6%201-4-3-5-2-3%202%201%203-1%207-4%207-2-1-2%2011%200%2014v2c-1%201%200%204%202%204l1%201c0%201%206%201%208-1l1-4%201-2c1%200%202-5%201-6l-3-2v-1l1-1c1%201%204%200%204-2l-1-5-1-4%202%202%201%204%201-5%202-4v9l1-4%202-4v4c-1%205%200%206%202%202l2-2c0%201-4%2010-6%2011v3l-2%207c-2%204-3%207-1%205l3-1v-1c-1-1-1-1%201-1%203-1%208%200%207%201l1%202%201-2%202-2%201%201%202%201%201%203c0%202%200%202%201%201l1-9c0-6%200-6-1-2-1%205-3%206-2%201%200-4-1-4-2-1-1%202-1%202-1-2a422%20422%200%20003-13v-1c-2%200-2-1-2-4l-1-4-1-1h1l3-2c1-4%202-4%204-1l3%201%201%201v1h1c-1%201%200%201%202%201%201%200%203-1%203-3%201-1%201-1%201%201%201%201%200%203-3%206s-4%204-3%205l1%203-2%206v4l-1-4c0-4-3-8-3-5l1%203%201%203%201%204v2c-1%202-1%202%201%202l2%201c1%202%205-5%205-8-1-1%200-2%201-2s2%200%201-2h3l1-2v-1c0-1%200-2-2-2v-1c2-2%204%201%204%205%200%205%202%204%203-3%201-6%200-14-2-17v-2c2-1%202-2%201-4v-5h-1c-1%201-2%203-1%204l-2%204c-2%201-2%201-3-1-2-5-6-7-7-4l-2%202c-2%200-4-6-3-8%202-2%202-6%201-6-2%200-9%204-9%206-1%201-1%200-1-1l1-3v-1l-1-4V85l-2-1-1-1v-3c-1-1-1-1-1%201m22%2015c-3%206-2%2013%202%2013%203%200%203-3%201-3l1-1c2-1%203-2%203-5-1-8-5-10-7-4m-10%2060c-1%202%203%207%205%207l1%201-2%201c-3%200-5%203-5%207%200%205%201%206%203%205%202%200%204-5%203-6l1-4c2-3%203-10%201-10h-2c0-2-1-2-2-2h-2c-1-1-1-1-1%201m-53%2095c-2%202%200%2015%202%2015l-1%201c-2%201-2%201%201%201h4l-1-5c0-6%200-6%206-1l6%205%205-5%206-5v11h6v-17h-4l-8%204-5%205-4-3-6-6c-2-2-5-3-7%200m-40%200l5%205%205%204-3%203-3%202%202%201c2%201%202%201-1%201l-4%201h4l7-2c2-2%202-2%204-1l5%201h3l-3-3-4-4%205-4%205-3-4-1c-2%200-4%200-6%202l-3%203-3-2c-2-2-4-3-7-3h-4m81%207v8h25l-10-1c-9%200-10%200-10-2%200-1%201-2%2010-1%2010%200%2010%200%209-2%200-2-1-2-9-2l-10-1c0-2%201-2%2010-2s10%200%2010-2-1-2-13-2h-12v7m32%200c0%208%200%208%202%208%203%200%205-6%203-8-1-2%201-1%209%205%207%204%209%205%2012%205h5l-4-1-4-1h7v-15h-6v7c0%205%200%206-1%205a409%20409%200%2001-20-12h-3v7'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/135835fc4caf6e043a8409ea6067b550/10b75/x-men-days-of-future-past-2014.jpg",
+                      srcSet:
+                        "/static/135835fc4caf6e043a8409ea6067b550/0cf61/x-men-days-of-future-past-2014.jpg 50w,\n/static/135835fc4caf6e043a8409ea6067b550/4cfec/x-men-days-of-future-past-2014.jpg 100w,\n/static/135835fc4caf6e043a8409ea6067b550/10b75/x-men-days-of-future-past-2014.jpg 200w,\n/static/135835fc4caf6e043a8409ea6067b550/d5b68/x-men-days-of-future-past-2014.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/135835fc4caf6e043a8409ea6067b550/998c5/x-men-days-of-future-past-2014.avif 50w,\n/static/135835fc4caf6e043a8409ea6067b550/520c2/x-men-days-of-future-past-2014.avif 100w,\n/static/135835fc4caf6e043a8409ea6067b550/af163/x-men-days-of-future-past-2014.avif 200w,\n/static/135835fc4caf6e043a8409ea6067b550/81c8e/x-men-days-of-future-past-2014.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 448,
+            viewingDate: "Wed Dec 3, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "The Hunger Games: Mockingjay - Part 1",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Peter Stormare",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 359,
+            viewingDate: "Sat Jan 11, 2014",
+            venue: "Netflix",
+            title: "The Last Stand",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 387,
+            viewingDate: "Sun May 11, 2014",
+            venue: "Netflix",
+            title: "Pain & Gain",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 398,
+            viewingDate: "Thu Jun 19, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "22 Jump Street",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Shun Sugata",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 360,
+            viewingDate: "Sat Jan 11, 2014",
+            venue: "Netflix",
+            title: "Ninja: Shadow of a Tear",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 372,
+            viewingDate: "Sun Feb 16, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 1",
+            year: 2003,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 378,
+            viewingDate: "Sat Mar 29, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 2",
+            year: 2004,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Price Carson",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 363,
+            viewingDate: "Sat Jan 18, 2014",
+            venue: "Netflix",
+            title: "Wrong",
+            year: 2012,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 417,
+            viewingDate: "Sat Aug 16, 2014",
+            venue: "Netflix",
+            title: "The Master",
+            year: 2012,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 444,
+            viewingDate: "Thu Nov 6, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "Nightcrawler",
+            year: 2014,
+            slug: "nightcrawler-2014",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20150v150h201V0H0v150m134-68v5l2%2012c1%201%203%200%204-2l3-2c1-2%202-3%200-2l-1-3c0-2%200-2-2-2-3%202-3%202-4%200%200-2%200-2%202-2%203%201%203%200%203-2-1-3-4-4-7-2m40%2016l-3%203-2%204c-4%204-3%2010%201%2010h4l3-5%203-7c1-1-3-6-4-6l-2%201m-28%2060l-12%202c-6-1-8%200-4%202%201%200%201%201-1%201l-2%201%202%201c3%201%203%201%202%202v1c2%201%204-2%204-5h1l1%203c0%203%201%203%208%201%205-2%2010-6%2010-9-1-2-3-2-9%200m42%2076l-6%201a10602%2010602%200%2001-27%202c1%202%200%203-1%204l-1%205c0%205-2%207-4%204h-1l-1-3c0-2%201-3%202-3%203-1%201-3-2-2h-3v21l3-1c4-1%206-3%202-3-2%200-2-1-2-3%200-3%200-3%203-3s3%200%203%204c0%203%200%204%202%204l1-4c0-6%202-6%202-1l3%204v-6c0-5%200-5%202-5h5c2%200%202%200%200-1-1-2-1-2%201-2l2-1c-1-1%200-2%205-1%204%200%206%200%205-1s1-5%202-5l2-1%203-1%203-1-1-2-2%201m-59%2018c0%205%200%207-1%206l-2-1c-1%201-1-1-1-5l-1-7c-2%200-2%202-2%2011%200%2010%201%2012%203%208%202-2%202-2%203-1%203%204%204%201%204-9l-1-10c-2%200-2%202-2%208m-16-5l-1%2010c-2%2011-2%2010%200%2010l1-1%202-2%201%201%202%201c1%200%201-5-2-18%200-2-3-3-3-1m-14%2012c0%2010%202%2014%202%205%201-5%202-6%203%200l2%204%201-10v-10h-8v11m-27-2l-1%204c-2%200-2-1-2-4l-1-4c-2%200-2%202-2%2010s0%2010%202%2010l1-4c0-3%200-5%202-5%201-1%201%200%201%204l1%205c2-1%203-21%201-21s-2%201-2%205m-16-2l-1%2010c0%2010%201%2011%205%209%203-1%203-1%203-6s0-6-2-6l-2%202%201%201c2%200%201%206-1%207l-1-7c0-6%200-8%202-8l1%201%201%201%201-2c0-3-4-4-7-2m-12%207v6l-2-6c-1-4-2-5-3-5-2%201-2%205-2%2014%201%208%203%208%203%200v-5l2%205%203%205c1%201%202-9%201-15%200-7-2-6-2%201m84%2025c-9%201-9%201-9%204s0%203%203%202l10-1%203-1v-1c1%202%203%201%203-2%200-2-2-3-10-1m-18%202c-4%201-5%202-5%203-1%202-1%202-1%200%200-1-1-2-3-1-4%200-4%201-4%203l1%203%206-1%205-1%206-1c1%200%202-1%202-3l-1-3-6%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/642aa5d3c02cce4123ead2158d9bef06/10b75/nightcrawler-2014.jpg",
+                      srcSet:
+                        "/static/642aa5d3c02cce4123ead2158d9bef06/0cf61/nightcrawler-2014.jpg 50w,\n/static/642aa5d3c02cce4123ead2158d9bef06/4cfec/nightcrawler-2014.jpg 100w,\n/static/642aa5d3c02cce4123ead2158d9bef06/10b75/nightcrawler-2014.jpg 200w,\n/static/642aa5d3c02cce4123ead2158d9bef06/d5b68/nightcrawler-2014.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/642aa5d3c02cce4123ead2158d9bef06/998c5/nightcrawler-2014.avif 50w,\n/static/642aa5d3c02cce4123ead2158d9bef06/520c2/nightcrawler-2014.avif 100w,\n/static/642aa5d3c02cce4123ead2158d9bef06/af163/nightcrawler-2014.avif 200w,\n/static/642aa5d3c02cce4123ead2158d9bef06/81c8e/nightcrawler-2014.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Thom Mathews",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 366,
+            viewingDate: "Sat Jan 25, 2014",
+            venue: "Blu-ray",
+            title: "The Return of the Living Dead",
+            year: 1985,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 458,
+            viewingDate: "Sat Dec 20, 2014",
+            venue: "Netflix",
+            title: "Friday the 13th Part VI: Jason Lives",
+            year: 1986,
+            slug: "friday-the-13th-part-vi-jason-lives-1986",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M25%202c-3%202-2%203%200%203%202-1%202%200%202%201-1%201-1%201%201%201%202-1%203%201%201%203-2%200-6-2-6-4l-1-1c-2%200-3%203-1%204l1%202%201%202%204%202%203%203c2%200%203%202%201%204v3l-2%205-5%209c-5%208-13%2029-15%2040-4%2021-1%2044%209%2064a9226%209226%200%20014%2012c-1-2-1-2-1%200-1%202-8%202-10-1-2-2-6-3-8-2-1%201-1%201-1-1v-2c-1%200-2%2010-2%2083v68h201l-1-82a719%20719%200%2000-1-104%20233%20233%200%2000-2-53c0-8%200-9-2-9s-4%203-4%205c1%201%200%201-2%201a1465%201465%200%2001-18%208l-2%204c-2%201-3%203-3%205s0%202-3%201c-4%200-5%201-4%203%203%206%201%2018-3%2023-8%208-16%209-27%204-17-8-18-19-3-28l5-3c2-3%2013-6%2020-6%207%201%209%200%209-4%200-2%200-2%202-2%205%201%206%200%205-4%200-3%200-3%202-3l6-3%206-2%202-2%202-2c3-2%204-7%203-9%200-2-10-2-11-1l-1%201c-1-1-8%204-13%209-3%203-3%203-4%201-3-2-3-6%200-6%201%201%202%200%203-2l6-6%203-4c-1-1%200-3%202-4%202-3%202-3%200-5-1-2-1-2%201-2s2%200%200-3c-5-3-11-6-9-4%201%202-1%201-5-3-5-5-7-5-10-3-3%203-6%2011-5%2012%202%201%200%209-5%2016-5%208-6%209-9%206-2-1-3-1-4%201-5%204-3-4%207-28l3-10%201-3H97C75%200%2057%200%2058%201c2%201%201%203-2%205h-3l-2-2-1-3-7-1-7%201v2l-1%203-2%202c-1%200-2%200-1-1%200-2%200-2-2-2s-4-2-2-3l2-1c0-2-4-1-5%201m117%2035l-8%209c-4%206-5%208-4%2010%202%204%205%203%2012-5%205-5%207-7%207-9%200-4-4-6-7-5m-66%209c-1%202-1%204%201%2010%204%209%207%2010%2010%206%202-2%202-2-2-9-4-8-6-10-9-7m34%201l-4%208c-1%205-1%205%201%207%204%204%206%202%209-5%202-7%202-10-2-11-2-1-3-1-4%201M51%2080c-9%203-11%2011-6%2020%204%208%2012%2011%2022%207%2012-4%2017-14%2010-20s-19-10-26-7m101%2046c0%203%201%205%204%206%204%200%204%200%204%204s0%205%205%202c4-2%204-5%200-4l-1-3-3-2c-1-1-3-2-3-4-1-3-5-3-6%201m-58%2016h-4c-11%200-17%206-12%2013%202%201%202%203%202%205l2%204c3%203%202%204-1%202l-3-3c0-11-7-15-14-8-1%202-4%204-6%204-4%202-4%203-4%205l-2%201c-3%200-3%205-2%2012l1%206-1%204-1%203c-3%202-2%207%200%207s3%202%202%208l1%205%201%202-1%202-1%202%201%202%203%201v4l1%207%201%204%201-3%202-1v-2c-1-1%201-4%203-4v-8h1l2-1c1-4%201-4-1-3-2%200-2%200-2-2s0-2%201-1l1%201v-2c-2-2-2-3%200-2l1%202%201%201%201-8c0-8%200-8%202-9%203%200%203%200%203%208%200%206%200%207%201%204l2-3v1l1%201c2-1%202%200%202%203%200%207%202%201%202-6%200-6%200-6-3-6-1%201-2%200-2-1l1-1%201-3%201-9%201-7%203-1c4%200%204%200%204%206%201%207%203%2011%206%2013l2%204%201%201%201%201v1c3%200%200-6-3-8-4-2-4-8-1-8%202%200%202%200%201-1s-2-2-2-5c0-4%200-4%204-4h5c1-1%203-2%201-2l-1-2%202-2h1l-1-2-4-5c-3-6-6-8-11-8-5%201-5-2%200-3%209-3%2022-2%2029%202%205%202%206%203%206%201%202-4-10-9-21-9h-8m-24%2031l-1%208c0%205-1%207-1%204%200-5-3-5-4%200-2%204%200%206%205%206%205-1%205-1%205-10%201-9%201-9-2-9l-2%201m76%202h-1c-2-3-4%202-4%209%201%206%201%206-2%206l-3%201%202%209c1%2010%203%2013%205%2011%202-1%202-1%202%201a13879%2013879%200%20004%2022h7c1-1%201-1%201%201h2c1%203%203%202%203%200%201-1%200-3-1-4-3-4-3-6%202-6%204%200%2010-3%2010-6l5-3c5%200%205%200%204-1-2-1-2-2-1-4h1c0%203%207%204%208%202l2-2c2%200%200-1-2-2a1511%201511%200%2000-32-4l1-4c3-5%203-8-1-8-2%200-3%201-3%202l-1%203v-3l-2-2-3-1-3-17m-15%2010c0%205%200%205-2%205l-4-2c-1-1-1-1-1%201%200%203-4%203-6%200h-1c1%202%201%202-4%202h-5c-1%201%206%202%2013%201%203%200%205%200%206%202%203%202%203%206%200%206l1%201%203%205v-10l1-2c1-1%202-2%201-3%200-2%200-2%202-2h2l-2-1-1-1%201-1v-1l-2-3c1-1%200-2-1-2-2%200-2%201-1%205m-15%2011l-1%203c-1%200-1%203%201%206%202%205%201%208-2%208-4%200-4%201-2%203%202%201%204%205%202%205l1%203c2%204%203%204%204%200s3-6%206-5c1%201%202%201%202-1l3-1h1v-2c3%200-3-2-7-2s-6-2-6-7c0-3%200-3%201-2h3l-2-2-2-1-1-1v-6l-1%202m-72%209c-2%202-6%203-6%201l1-1v-1c-1-2-3%201-3%203%201%201%200%202-1%204-4%202-4%203%200%205h5c2-1%202-1%203%201%201%201%201%201%202-1l1-2v2c2%206%204-3%202-11%200-4-1-4-4%200m119%2040c-1%206-5%209-6%206-2-2-3-1-4%202s-1%203-1%201%200-2-1-1l-2%204c-3%202-2%203%201%200h2c0%202%201%202%203%200h1c0%201%201%202%203%202h4c1%201%204-2%204-4l1-2c2%200%202%201%201%203v4c3%201%207%200%206-2l1-4%201-3h-7l-7%201%201-4%201-5c-1-1-1%200-2%202'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/105d0c807e45ee7ac38a6f6c4df96d56/10b75/friday-the-13th-part-vi-jason-lives-1986.jpg",
+                      srcSet:
+                        "/static/105d0c807e45ee7ac38a6f6c4df96d56/0cf61/friday-the-13th-part-vi-jason-lives-1986.jpg 50w,\n/static/105d0c807e45ee7ac38a6f6c4df96d56/4cfec/friday-the-13th-part-vi-jason-lives-1986.jpg 100w,\n/static/105d0c807e45ee7ac38a6f6c4df96d56/10b75/friday-the-13th-part-vi-jason-lives-1986.jpg 200w,\n/static/105d0c807e45ee7ac38a6f6c4df96d56/d5b68/friday-the-13th-part-vi-jason-lives-1986.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/105d0c807e45ee7ac38a6f6c4df96d56/998c5/friday-the-13th-part-vi-jason-lives-1986.avif 50w,\n/static/105d0c807e45ee7ac38a6f6c4df96d56/520c2/friday-the-13th-part-vi-jason-lives-1986.avif 100w,\n/static/105d0c807e45ee7ac38a6f6c4df96d56/af163/friday-the-13th-part-vi-jason-lives-1986.avif 200w,\n/static/105d0c807e45ee7ac38a6f6c4df96d56/81c8e/friday-the-13th-part-vi-jason-lives-1986.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 460,
+            viewingDate: "Sat Dec 27, 2014",
+            venue: "Netflix",
+            title: "Friday the 13th Part VII: The New Blood",
+            year: 1988,
+            slug: "friday-the-13th-part-vii-the-new-blood-1988",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20150v150h201V0H0v150M92%207c-4%200-7%203-7%204l2%203c3%203%203%204-1%205-3%201-3%201-2%202s2%202%203%201l2%201-1%201-3%201c-2%201-2%201-2-1h-1l-2%202-4%202c0%202-2%203-5%204l-8%204-12%203c-8%200-10%202-11%2010-1%206-4%2010-10%2013-5%202-5%204-5%2010l-1%207-2%206-4%207c-3%204-3%208-2%2015%202%204%202%206%201%2010-1%205-1%205%201%209%203%205%204%209%202%2015-1%204-1%204%203%208%205%206%209%2015%2010%2022%200%206%200%207%207%2013%205%205%207%207%207%209%200%203%205%209%208%209%201%200%206%205%207%209%202%204%206%206%2011%206l5%203c2%202%203%203%206%203%204-1%208%201%2011%206%203%206%204%204%202-4-2-5-2-9-2-13l2-47%201-40v45c1%2046%202%2066%205%2066l2-4%203-10%201-10-1-11-1-10c-1-7%200-12%202-12l2-1h-3a650%20650%200%20000-47V95l2-1c2%200%202%200%200-1l-4%201h-2l-2-1c-2%200-2%200-1-1%204-1%202-2-4-3-4%200-5-1-4-2l1-14V60c2-3%201-24%200-25l-1-2v-2c-2%200%201-2%204-2l2-1-1-2-2-2h1l1%201V13l1-3%201%207c0%204%201%205%202%205l2%202-2%202c-4%200-2%202%202%203%205%200%205%200%206%2035v27h-2l-2%201%203%201c2%200%203%200%203-3l2-18c2-24%201-43-3-47l-2-2-1%202c-1%203-4%203-3-1v-2l1%202c1%202%201%202%201%200l2-2c2%200%202%200%200-3l-2-5c0-5-7-8-15-7M67%2042l-10%208c-4%204-4%204-2%205%201%201%202%202%203%201v4l1-1h2v7l1%202%201%204c-1%202-2%2010-1%2012v2l-2%204h-1l-1-2v3c1%201%201%203-1%207-1%204-2%206-1%207v1l-1%202-2%206v-2c0-1-1-1-2%201-3%203-3%203-2%206l1%205%201%207c1-1%204%207%203%208l1%202c1%201%202%206%201%207v3h-1l2%201c1-1%201%200%201%201l2%202c2%200%202%200%201%201-2%200-2%201-1%203l3%209-5-2c-4-2-6-3-4-1l1%204v4l-2-3c0-2-2-3-3-3l-1-3-1-5c-2-1-3-4-4-6l-2-3v5l3%209%201%201v1l1%201c-2%202%208%2018%2015%2025l8%208h8l9-1c3%200%203-5%203-34l1-32c1-9-3-34-5-36s-2-3%200-3v-1c-2%200-3-2-1-2s0-31-4-41c-1-5-5-12-6-12l-8%204m61%2053c0%203-1%205-4%205l-4%204c-1%203-4%207-6%207s-3%202-2%204l3%207c1%203%202%207%204%209l2%205c0%203%202%208%203%207l1%201c0%201%206%204%207%202l3-3c2-1%205-4%206-7l4-6c2-2%202-6%200-8-4-2-4-4%200-8l4-3h-3c-2-1-2-1-2-4%201-4%201-4-3-4-8-2-10-3-11-7%200-5-2-5-2-1m-25%2053l1%2033a458%20458%200%2000-1-33m-2%2091l-1%201c0-2-2-3-5-1v2c3%200%203%202%200%202s-4%202-4%207c0%204%200%204-4%205-3%200-4%201-6%204l-1%204c1%200%202-1%202-3%202-5%206-5%206%200l1%202v-2l1-4%202-1%202-1c2%200%203-1%205-3l1-2v5l1-3%201-2v2c0%205%204%204%204-1%201-7-3-16-5-11'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/bd1c33ad142a8810f78c6a35fef55918/10b75/friday-the-13th-part-vii-the-new-blood-1988.jpg",
+                      srcSet:
+                        "/static/bd1c33ad142a8810f78c6a35fef55918/0cf61/friday-the-13th-part-vii-the-new-blood-1988.jpg 50w,\n/static/bd1c33ad142a8810f78c6a35fef55918/4cfec/friday-the-13th-part-vii-the-new-blood-1988.jpg 100w,\n/static/bd1c33ad142a8810f78c6a35fef55918/10b75/friday-the-13th-part-vii-the-new-blood-1988.jpg 200w,\n/static/bd1c33ad142a8810f78c6a35fef55918/d5b68/friday-the-13th-part-vii-the-new-blood-1988.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/bd1c33ad142a8810f78c6a35fef55918/998c5/friday-the-13th-part-vii-the-new-blood-1988.avif 50w,\n/static/bd1c33ad142a8810f78c6a35fef55918/520c2/friday-the-13th-part-vii-the-new-blood-1988.avif 100w,\n/static/bd1c33ad142a8810f78c6a35fef55918/af163/friday-the-13th-part-vii-the-new-blood-1988.avif 200w,\n/static/bd1c33ad142a8810f78c6a35fef55918/81c8e/friday-the-13th-part-vii-the-new-blood-1988.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Julianne Moore",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 371,
+            viewingDate: "Sat Feb 15, 2014",
+            venue: "Netflix",
+            title: "Tales from the Darkside: The Movie",
+            year: 1990,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 383,
+            viewingDate: "Sat Apr 26, 2014",
+            venue: "Netflix",
+            title: "Don Jon",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 448,
+            viewingDate: "Wed Dec 3, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "The Hunger Games: Mockingjay - Part 1",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "David Carradine",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 372,
+            viewingDate: "Sun Feb 16, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 1",
+            year: 2003,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 377,
+            viewingDate: "Sat Mar 29, 2014",
+            venue: "Netflix",
+            title: "Death Race 2000",
+            year: 1975,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 378,
+            viewingDate: "Sat Mar 29, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 2",
+            year: 2004,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Keanu Reeves",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 375,
+            viewingDate: "Sat Mar 22, 2014",
+            venue: "Netflix",
+            title: "Man of Tai Chi",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 395,
+            viewingDate: "Sat Jun 14, 2014",
+            venue: "Blu-ray",
+            title: "The Matrix",
+            year: 1999,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 445,
+            viewingDate: "Thu Nov 6, 2014",
+            venue: "Alamo Drafthouse Cinema - One Loudoun",
+            title: "John Wick",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Clark Middleton",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 378,
+            viewingDate: "Sat Mar 29, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 2",
+            year: 2004,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 412,
+            viewingDate: "Thu Jul 17, 2014",
+            venue: "Angelika Film Center Mosaic",
+            title: "Snowpiercer",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 447,
+            viewingDate: "Thu Nov 20, 2014",
+            venue: "Angelika Film Center Mosaic",
+            title: "Birdman or (The Unexpected Virtue of Ignorance)",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
+  writers: {
+    mostWatched: [
+      {
+        fullName: "Harry Alan Towers",
+        slug: null,
+        viewingCount: 4,
+        viewings: [
+          {
+            sequence: 414,
+            viewingDate: "Sat Aug 2, 2014",
+            venue: "DVD",
+            title: "The Bloody Judge",
+            year: 1970,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 416,
+            viewingDate: "Sat Aug 9, 2014",
+            venue: "DVD",
+            title: "Psycho-Circus",
+            year: 1966,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 436,
+            viewingDate: "Sat Oct 18, 2014",
+            venue: "DVD",
+            title: "The Face of Fu Manchu",
+            year: 1965,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 437,
+            viewingDate: "Sat Oct 18, 2014",
+            venue: "DVD",
+            title: "The Brides of Fu Manchu",
+            year: 1966,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Dario Argento",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 368,
+            viewingDate: "Sat Feb 1, 2014",
+            venue: "Netflix",
+            title: "Dracula 3D",
+            year: 2012,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 388,
+            viewingDate: "Sat May 17, 2014",
+            venue: "Blu-ray",
+            title: "The Bird with the Crystal Plumage",
+            year: 1970,
+            slug: "the-bird-with-the-crystal-plumage-1970",
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M35%205l-4%203h-3V7c0-2%200-2-2-1l-2%204h-1l-3-2h-4c-1-1-1%200-1%204%200%205%202%209%202%204l1%201c1%202%201%202%202-2%201-6%202-5%202%201l1%205%204-7c0-2%200-2-1%200-2%202-3%200-1-3s3-1%203%204l1%204%201-1%201-2%201%201c0%202%206%201%206-1h1c0%202%204%202%206%201l2%201c1%201%201%201%202-1h1c0%203%202%201%202-3l1-4v4c0%206%202%205%202-1l1-4v4c0%207%202%207%203%200%200-5-1-6-4-5h-4c-2%200-3%201-3%202%200%202%200%202-1%201V8c1-2%201-4-1-2s-5%201-3%200V3c0-1-1-1-1%201-1%202-3%203-3%201V4l-1%201V2l-3%203m67%200h-3l-3%202-6%201c-3%200-4%200-4%202h-1l-2-2c-2%200-2%201-2%205s0%205%202%205%202-1%201-4l1-3%201%204c0%202%200%203%202%203V9c0-2%202%203%201%205l1%203h11l6%201c2%200%203%200%202-1l-1-5V8l-2%205-1%205v-6c0-5%200-5%203-5l2-1c0-2-5-2-8-1m85%203h-12v4l-1%205-1-5-1-4-1%202%201%205c0%203%200%203%203%203%202%200%203%200%202-4l1-5%201%205c0%204%202%206%202%202l1-2v2c0%202%204%203%204%200h1c0%205%202%201%202-3l-1-6-1%201m-69%205c0%204%200%205%202%205%201%200%202-1%202-3s0-2%201%201l1%201v-2l1%202c1%201%201%201%201-1v-3l1%203%201%201c0-2%200-2%201-1%202%203%203%202%202-3l1-4%201%205c-1%203%200%204%203%204l1-5V8h-3c-3%200-4%201-4%202l-1%202V9l-1-1-1%202-1%203v-3l-1-2-2%202c-1%202-1%202-1%200s0-2-1%200h-1c0-4-2-2-2%203M92%2037c-6%202-10%203-10%201l-3%201c-6%205-13%2010-14%209l2-2%202-3h-1l-5%203-5%203-5-3c-5-4-7-4-18%202-5%202-5%204-1%208%203%203%203%204%203%208-1%206%200%2015%202%2016%207%207%2010%209%2011%208l1-1v-8c-1%200%200-4%202-6l2-3c0-3%206-11%2010-14l10-7c15-15%2039-16%2049-4%204%205%205%206%207%205%201-1%201-1-1-1l-3-2c-2-9-22-15-35-10M15%2052c-3%205-2%208%203%208%202%200%204%201%202%202l-4-1h-5s4%204%206%204l9%208-3-2-4-1-2-2-1-1-4-3c-7-6-11-6-11%200%200%203%203%206%2018%2016l10%207c3%203%202%204-1%203-6-3-7-3-6-4l-4-4a1455%201455%200%2001-15-9l1%203v1h1l2-1v1l-1%203-1%203c-1%200-2%201-2%204v3l3-1%202-1-2%202c-3%201-5%206-2%208%202%202%202%208%200%2010l-2%204-1-8c-1-8-1-7-1%208v18l1-8c0-7%200-7%202-5s2%202%201%204c-2%202-2%204-1%207l-1%206c-3%202-3%2082%200%2084%203%203%2011%206%2014%206%205%200%205%201-1%202-3%201-4%201-8-2-4-2-5-2-2%201v3c-5%203-1%206%205%206a3093%203093%200%2001-8%203c-2%201-3%204%200%204l2%202c0%201%201%202%203%202h5l8-2h4l3-1c3-2%2013-2%2012%200l1%202c2%202%201%204-2%204-2%201-3%201-5-1-3-2-4-2-4-1%200%202-2%203-10%202h-7l-6%201-6%201c0%203%2040%202%2041%200l13-1c12%200%2012%200%2012-2l1-2v4h15a608%20608%200%200116%202l-2%201%207%201c3%200%203%200%203%203%200%204%200%204-2%203H86v13h21l21-1h16c2-2%202-2%203%200%203%203%2012%200%2012-4%200-2%200-2%201-1h1c1-1%201%200%201%202v4h5l6-1c0-2%206-1%207%200l7%201c6%200%207%200%208-2v-4c0-2%200-2-3-2s-4-2-3-5c0-1%201-2%203-2l3-1-3-1c-3%201-4-1-4-4s-4-2-5%202l-1%201c0-2-2-3-2-1l-1-1c-1-2-5-3-7-1h-1c1-1%200-2-5-1l-8%201h-13l-1%204c0%204%200%205%203%206l4%202h-4c-2%200-3%200-3%203-1%201-1-2-1-7v-9h-4l-5%201h-2l-7-1c-7%201-9%200-4-1l10-1%206-1h1l18%201a2013%202013%200%200142-1c1%201%201-4%201-29%200-20%200-29-1-28l-2%202-4%202c-9%207-18%209-30%209l-8%201c0%202-3%202-4%200-2-1-6-2-7-1h-6a114%20114%200%2000-31-1l-4-1-1-1-2%201-1%201v-10c0-2%201-2%202%203l1%205v-5c-1-4-1-4%201-3l15%201c4-1%205-5%202-6-1-1%200-2%206-3l2-1c-8%201-17%200-21-1-2-1-4-2-6-1h-2l2-2%206-1c2%200%204%200%205-2%201-1%201-1-1-1l-5%201-2-1%202-2%201-2-3%201-8%201%203-1%204-2%206-2%203-1h-5l2-2c2%200%203-1%203-2l-3%201-3%201-1%201-3-1h-5l-2%201-1%201v1l-5%203c-1%202-2%202-2%201v-2c-1%201-2-5-2-8%202-6%204-7%2013-6l9-1-9-1H87l-3%204c-2%203-3%209-1%2014%201%202%201%203-5%2011-6%209-7%2010-16%2010-8%200-12%202-23%2012-5%204-5%205-7%203v-4l-2%201-2-1-2-1%203-2%201-2-3%201h-1c0-1%201-2%203-2l2-1h-4c-1%201-11-8-11-10l10%201h1l2-2c3%202%202-12-1-24v-9c1-2%200-3-2-1v10c3%2012%202%2013-6%2013-5%200-6%200-6%202h-1v-11h-3l1-1%201-2-2-1c-1%201-2%200-3-7l1-6v-2c-1-3%206-26%2010-32%202-3%206-4%2012-4s9%201%207%202v1c2-1%209%205%2010%208l1%201v-3c-2-4-1-6%203-9l4-3c2-3%2016%202%2014%205l1%201h1v9l-1%2010a935%20935%200%20012%208h3v2l1%202c3-1%204-2%204-5l1-5v-1c-2%201-3-1-2-5v-3c-2%200-1-2%200-1%202%200%205-4%203-4v-1l3%202%202%202%205%207c2%205%203%206%209%209l7%203c1-1-16-19-26-27-7-6-46-34-48-34v3l-1%203-1-23c0-2%200-2-2-2-2%201-3%201-4-2%200-2-1-4-3-5l-3-5c-2-4-2-4-5%201m165%2039a62%2062%200%2000-9%2010l-1-1-2-1c-2%200-3%200-2%203%200%204-3%208-5%207l-2-2-1-1c-1%200-10%2012-9%2013h3c4%201%205%202%201%202-2%201-4%203-2%203%204%200%2010-5%2015-15l3-4-4%208-4%208c2%203-13%207-24%206h-10l-6-6c-3-4-6-6-7-6l6%208c5%206%207%207%209%207h12c10%201%2018-3%2025-11l5-4c0%201%205%205%2012%208%205%203%203%200-3-4-8-5-8-6%201-3%208%204%209%203%200-1-3-2-6-3-5-4l3%201h5c3-1%203-1-2-1-5-1-9-3-6-3l18-3c6-1%203-2-5-1l-12%201h-3l3-2c5-2%2016-10%2016-11l-10%205c-8%205-14%207-9%203%206-4%2016-16%2015-18l-9%209M72%2093l-3%202v1l-1%202c-4%202-4%202-1%204l9%206c6%205%2010%207%209%204v-1c1-1%201%200%201%201s0%202%201%201v-1l1-2-1-3h-2c0%202%200%202-2%200-3-2-2-3%201-2%203%200%203%200%202-4l1-5v-2c-1-2-5-2-5%201h-1c-1-2-2-1-2%202l-1%202%201-6c2-2%200-2-2%200-3%201-4%201-4-1-1-1-1-1-1%201m-43%2035l-7%202c-2%200-3%202-1%202l8-3%207-2c1%201-8%205-12%206-3%200-4%201-4%202l1%203c0%205%207%206%2013%203%206-4%207-13%202-15l-2-1-5%203m164%2091l-5%202-2%201-2%201h-13c0%202-5%201-7-2l-3-2v2c0%203%200%203-5%203l-6-1-4-2-4%202c0%201-5%202-5%200h-1l-6%201c-3%200-5%200-4%201l2%201%202%201h2c1-1%2014-2%2015%200%201%204%201%205%202%202%201-4%208-4%207%200%200%203%204%203%204%200%201-4%208-4%208-1s3%203%206%200c1-2%202-2%206-2l10-1%205-1c2%201%203%200%203-3%200-4-2-4-5-2m-162%202l-4%203-4%201c-2%201-1%201%203%201l6-2h1c0%201%202%203%205%204%204%203%205%203%2013%203l10%201c0%201-14%201-28-1-4%200-9%203-8%205h14a613%20613%200%200158%200c0-3%202-2%202%201%201%203%201%203%201%200%200-4-1-4-2-4-2%201-23%200-25-1s1-1%209-1c13%200%2018-2%207-2a169%20169%200%2001-15-1l-15%201c-17%202-23%200-25-8v-3l-3%203m18%2036a451%20451%200%2000-21%204%202091%202091%200%2001-24%201c-4%200-4%200-4%203v3h6l16-3%205%201h4l5-2%208-4%209-2c3%200%209-2%205-2h-2l-7%201m140%2026l-1%201c0-2%200-2-1-1h-12l-9-1h-9v4c0%202%200%203%201%202h31l2%201v-7c-1-1-1%200-2%201M2%20298l-2%201%2029%201%2028-1a590%20590%200%2001-54-1'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/5e11eb0dc0e8e553d88f11406119e75c/10b75/the-bird-with-the-crystal-plumage-1970.jpg",
+                      srcSet:
+                        "/static/5e11eb0dc0e8e553d88f11406119e75c/0cf61/the-bird-with-the-crystal-plumage-1970.jpg 50w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/4cfec/the-bird-with-the-crystal-plumage-1970.jpg 100w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/10b75/the-bird-with-the-crystal-plumage-1970.jpg 200w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/d5b68/the-bird-with-the-crystal-plumage-1970.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/5e11eb0dc0e8e553d88f11406119e75c/998c5/the-bird-with-the-crystal-plumage-1970.avif 50w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/520c2/the-bird-with-the-crystal-plumage-1970.avif 100w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/af163/the-bird-with-the-crystal-plumage-1970.avif 200w,\n/static/5e11eb0dc0e8e553d88f11406119e75c/81c8e/the-bird-with-the-crystal-plumage-1970.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 393,
+            viewingDate: "Sat May 31, 2014",
+            venue: "Blu-ray",
+            title: "Inferno",
+            year: 1980,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Christopher Markus",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 379,
+            viewingDate: "Thu Apr 10, 2014",
+            venue: "AMC Tysons Corner 16",
+            title: "Captain America: The Winter Soldier",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 387,
+            viewingDate: "Sun May 11, 2014",
+            venue: "Netflix",
+            title: "Pain & Gain",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 462,
+            viewingDate: "Wed Dec 31, 2014",
+            venue: "Blu-ray",
+            title: "Thor: The Dark World",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Stephen McFeely",
+        slug: null,
+        viewingCount: 3,
+        viewings: [
+          {
+            sequence: 379,
+            viewingDate: "Thu Apr 10, 2014",
+            venue: "AMC Tysons Corner 16",
+            title: "Captain America: The Winter Soldier",
+            year: 2014,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 387,
+            viewingDate: "Sun May 11, 2014",
+            venue: "Netflix",
+            title: "Pain & Gain",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 462,
+            viewingDate: "Wed Dec 31, 2014",
+            venue: "Blu-ray",
+            title: "Thor: The Dark World",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Boaz Davidson",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 360,
+            viewingDate: "Sat Jan 11, 2014",
+            venue: "Netflix",
+            title: "Ninja: Shadow of a Tear",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 367,
+            viewingDate: "Mon Jan 27, 2014",
+            venue: "Amazon",
+            title: "Ninja",
+            year: 2009,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Michael Hurst",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 360,
+            viewingDate: "Sat Jan 11, 2014",
+            venue: "Netflix",
+            title: "Ninja: Shadow of a Tear",
+            year: 2013,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 367,
+            viewingDate: "Mon Jan 27, 2014",
+            venue: "Amazon",
+            title: "Ninja",
+            year: 2009,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Dan O'Bannon",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 366,
+            viewingDate: "Sat Jan 25, 2014",
+            venue: "Blu-ray",
+            title: "The Return of the Living Dead",
+            year: 1985,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 408,
+            viewingDate: "Sat Jul 5, 2014",
+            venue: "Blu-ray",
+            title: "Alien",
+            year: 1979,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "George A. Romero",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 369,
+            viewingDate: "Sat Feb 8, 2014",
+            venue: "Netflix",
+            title: "Day of the Dead",
+            year: 1985,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 371,
+            viewingDate: "Sat Feb 15, 2014",
+            venue: "Netflix",
+            title: "Tales from the Darkside: The Movie",
+            year: 1990,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Stephen King",
+        slug: "stephen-king",
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 371,
+            viewingDate: "Sat Feb 15, 2014",
+            venue: "Netflix",
+            title: "Tales from the Darkside: The Movie",
+            year: 1990,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 386,
+            viewingDate: "Sat May 10, 2014",
+            venue: "Netflix",
+            title: "The Running Man",
+            year: 1987,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+        ],
+      },
+      {
+        fullName: "Quentin Tarantino",
+        slug: null,
+        viewingCount: 2,
+        viewings: [
+          {
+            sequence: 372,
+            viewingDate: "Sun Feb 16, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 1",
+            year: 2003,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                        type: "image/avif",
+                        sizes: "(min-width: 200px) 200px, 100vw",
+                      },
+                    ],
+                  },
+                  width: 200,
+                  height: 300,
+                },
+              },
+            },
+          },
+          {
+            sequence: 378,
+            viewingDate: "Sat Mar 29, 2014",
+            venue: "Blu-ray",
+            title: "Kill Bill: Vol. 2",
+            year: 2004,
+            slug: null,
+            poster: {
+              childImageSharp: {
+                gatsbyImageData: {
+                  layout: "constrained" as Layout,
+                  placeholder: {
+                    fallback:
+                      "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='300'%20viewBox='0%200%20200%20300'%20preserveAspectRatio='none'%3e%3cpath%20d='M117%20121c-1%202-2%204-5%205-4%201-5%201-3-3%202-3%202-4-2-2-3%201-5%203-6%206-2%203-6%206-9%206l1-3%202-4c-4%200-8%204-10%208l-2%205%2019-7%2019-7v-3c-1-5-3-6-4-1m-30%2024l3%204H73v13l1%2015%2026%201h25v-36l-4-1h-4l3%204%204%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204%203%204h-4c-3%200-4-1-7-4-4-3-5-4-9-4h-4l4%204'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                  },
+                  images: {
+                    fallback: {
+                      src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                      srcSet:
+                        "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
+                      sizes: "(min-width: 200px) 200px, 100vw",
+                    },
+                    sources: [
+                      {
+                        srcSet:
+                          "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
                         type: "image/avif",
                         sizes: "(min-width: 200px) 200px, 100vw",
                       },

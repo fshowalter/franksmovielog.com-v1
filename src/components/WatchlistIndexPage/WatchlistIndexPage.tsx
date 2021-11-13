@@ -391,12 +391,14 @@ export default function WatchlistIndexPage({
             heading="Watchlist"
             tagline={
               <>
-                My movie review bucketlist.{" "}
-                {state.allMovies.length.toLocaleString()} titles. No silents or
-                documentaries.{" "}
-                <span className={quoteCss}>
-                  &ldquo;A man&apos;s got to know his limitations.&rdquo;
-                </span>
+                <q className={quoteCss}>
+                  A man&apos;s got to know his limitations.
+                </q>
+                <p>
+                  My movie review bucketlist.{" "}
+                  {state.allMovies.length.toLocaleString()} titles. No silents
+                  or documentaries.{" "}
+                </p>
               </>
             }
           />
