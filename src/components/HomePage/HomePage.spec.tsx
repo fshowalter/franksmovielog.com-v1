@@ -68,4 +68,20 @@ describe("/", () => {
       done();
     });
   });
+
+  it("can render last page", () => {
+    const { asFragment } = render(
+      <HomePage
+        data={data}
+        pageContext={{
+          limit: 10,
+          skip: 100,
+          numberOfItems: 102,
+          currentPage: 11,
+        }}
+      />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

@@ -134,22 +134,22 @@ function detailsForEntityType(entityType: EntityType) {
   switch (entityType) {
     case EntityType.DIRECTOR: {
       details.pluralName = "Directors";
-      details.tagLine = `"Drama is life with the dull bits cut out."`;
+      details.tagLine = "Drama is life with the dull bits cut out.";
       return details;
     }
     case EntityType.PERFORMER: {
       details.pluralName = "Performers";
-      details.tagLine = `"Talk low, talk slow, and don't talk too much."`;
+      details.tagLine = "Talk low, talk slow, and don't talk too much.";
       return details;
     }
     case EntityType.WRITER: {
       details.pluralName = "Writers";
-      details.tagLine = `"It's not a lie. It's a gift for fiction."`;
+      details.tagLine = "It's not a lie. It's a gift for fiction.";
       return details;
     }
     case EntityType.COLLECTION: {
       details.pluralName = "Collections";
-      details.tagLine = `"Round up the usual suspects."`;
+      details.tagLine = "Round up the usual suspects.";
       return details;
     }
   }
@@ -195,30 +195,32 @@ export default function WatchlistEntityIndexPage({
                 {entityDetails.pluralName}
               </>
             }
-            tagline={entityDetails.tagLine}
+            tagline={<q>{entityDetails.tagLine}</q>}
           />
-          <Fieldset className={filtersCss} legend="Filter & Sort">
-            <DebouncedInput
-              label="Name"
-              placeholder="Enter all or part of a name"
-              onChange={(value) =>
-                dispatch({ type: ActionType.FILTER_NAME, value })
-              }
-            />
-            <SelectInput
-              value={state.sortValue}
-              label="Order By"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.SORT,
-                  value: e.target.value as SortValue,
-                })
-              }
-            >
-              <option value="name">Name</option>
-              <option value="reviews">Review Count</option>
-            </SelectInput>
-          </Fieldset>
+          <div className={filtersCss}>
+            <Fieldset legend="Filter & Sort">
+              <DebouncedInput
+                label="Name"
+                placeholder="Enter all or part of a name"
+                onChange={(value) =>
+                  dispatch({ type: ActionType.FILTER_NAME, value })
+                }
+              />
+              <SelectInput
+                value={state.sortValue}
+                label="Order By"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.SORT,
+                    value: e.target.value as SortValue,
+                  })
+                }
+              >
+                <option value="name">Name</option>
+                <option value="reviews">Review Count</option>
+              </SelectInput>
+            </Fieldset>
+          </div>
         </div>
         <div className={rightCss}>
           <ul data-testid="entity-list" className={listCss}>

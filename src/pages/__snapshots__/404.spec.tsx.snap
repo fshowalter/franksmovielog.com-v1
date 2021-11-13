@@ -125,7 +125,7 @@ exports[`/404 renders 1`] = `
               class="mastNavLinkCss"
               href="/reviews/"
             >
-              All Reviews
+              Reviews
             </a>
           </li>
           <li
@@ -133,9 +133,9 @@ exports[`/404 renders 1`] = `
           >
             <a
               class="mastNavLinkCss"
-              href="/viewings/"
+              href="/stats/"
             >
-              Viewing Log
+              Stats
             </a>
           </li>
           <li
@@ -285,16 +285,16 @@ and reposting them. In the mean time, you can find them in the site’s
           <a
             href="/reviews/"
           >
-            All Reviews
+            Reviews
           </a>
         </li>
         <li
           class="footerNavListItemCss"
         >
           <a
-            href="/viewings/"
+            href="/stats/"
           >
-            Viewing Log
+            Stats
           </a>
         </li>
         <li

@@ -100,10 +100,7 @@ describe("/watchlist", () => {
     expect.hasAssertions();
     render(<WatchlistIndexPage data={data} />);
 
-    userEvent.selectOptions(
-      screen.getByLabelText("Writer"),
-      "Raymond Chandler"
-    );
+    userEvent.selectOptions(screen.getByLabelText("Writer"), "Leigh Brackett");
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
@@ -111,10 +108,7 @@ describe("/watchlist", () => {
   it("can filter by writer then show all", () => {
     render(<WatchlistIndexPage data={data} />);
 
-    userEvent.selectOptions(
-      screen.getByLabelText("Writer"),
-      "Raymond Chandler"
-    );
+    userEvent.selectOptions(screen.getByLabelText("Writer"), "Leigh Brackett");
     userEvent.selectOptions(screen.getByLabelText("Writer"), "All");
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
@@ -179,12 +173,10 @@ describe("/watchlist", () => {
 
     const fieldset = screen.getByRole("group", { name: "Release Year" });
     const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("To");
+    const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.clear(fromInput);
-    userEvent.type(fromInput, "1958");
-    userEvent.clear(toInput);
-    userEvent.type(toInput, "1978");
+    userEvent.selectOptions(fromInput, "1947");
+    userEvent.selectOptions(toInput, "1948");
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
@@ -206,7 +198,7 @@ describe("/watchlist", () => {
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
-  it("can view more titles", () => {
+  it("can show more titles", () => {
     render(<WatchlistIndexPage data={data} />);
 
     userEvent.click(screen.getByText("Show More"));

@@ -60,6 +60,15 @@
 
 .filtersCss {
   grid-area: filters;
+
+  @media (min-width: breakpoints.$tablet) and (max-width: breakpoints.$desktop - 1px) {
+    margin: 0 calc(-1 * var(--step-1));
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    position: sticky;
+    top: var(--step-5);
+  }
 }
 
 .listCss {

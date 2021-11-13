@@ -1,0 +1,47 @@
+@use "./src/styles/breakpoints";
+
+.containerCss {
+  border-top: solid 1px var(--color-background);
+  margin: 0 auto;
+  max-width: 40rem;
+  padding-top: var(--step-5);
+
+  @media (min-width: breakpoints.$desktop) {
+    max-width: unset;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    border-top: 0;
+    padding-top: 0;
+  }
+}
+
+.headerCss {
+  margin: 0 auto;
+  padding: 0 var(--step-1);
+}
+
+.headingCss {
+  font-size: var(--step-3);
+  text-align: center;
+
+  @media (min-width: breakpoints.$max) {
+    text-align: left;
+  }
+}
+
+.taglineCss {
+  color: var(--color-text-secondary);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  text-align: center;
+
+  @media (min-width: breakpoints.$max) {
+    text-align: left;
+  }
+}
+
+.contentCss {
+  display: block;
+  margin-top: var(--step-5);
+}

@@ -7279,7 +7279,7 @@ exports[`/watchlist/collections/ renders 1`] = `
               class="mastNavLinkCss"
               href="/reviews/"
             >
-              All Reviews
+              Reviews
             </a>
           </li>
           <li
@@ -7287,9 +7287,9 @@ exports[`/watchlist/collections/ renders 1`] = `
           >
             <a
               class="mastNavLinkCss"
-              href="/viewings/"
+              href="/stats/"
             >
-              Viewing Log
+              Stats
             </a>
           </li>
           <li
@@ -7329,50 +7329,60 @@ exports[`/watchlist/collections/ renders 1`] = `
               </a>
                Collections
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "Round up the usual suspects."
-            </p>
+              <q>
+                Round up the usual suspects.
+              </q>
+            </div>
           </header>
-          <fieldset
-            class="fieldsetCss filtersCss"
+          <div
+            class="filtersCss"
           >
-            <legend
-              class="legendCss"
+            <fieldset
+              class="fieldsetCss"
             >
-              Filter & Sort
-            </legend>
-            <label
-              class="labelCss"
-            >
-              Name
-              <input
-                class="inputCss"
-                placeholder="Enter all or part of a name"
-                type="text"
-              />
-            </label>
-            <label
-              class="labelCss"
-            >
-              Order By
-              <select
-                class="selectInputCss"
+              <legend
+                class="legendCss"
               >
-                <option
-                  value="name"
+                Filter & Sort
+              </legend>
+              <div
+                class="wrapperCss"
+              >
+                <label
+                  class="labelCss"
                 >
                   Name
-                </option>
-                <option
-                  value="reviews"
+                  <input
+                    class="inputCss"
+                    placeholder="Enter all or part of a name"
+                    type="text"
+                  />
+                </label>
+                <label
+                  class="labelCss"
                 >
-                  Review Count
-                </option>
-              </select>
-            </label>
-          </fieldset>
+                  Order By
+                  <select
+                    class="selectInputCss"
+                  >
+                    <option
+                      value="name"
+                    >
+                      Name
+                    </option>
+                    <option
+                      value="reviews"
+                    >
+                      Review Count
+                    </option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+          </div>
         </div>
         <div
           class="rightCss"
@@ -10843,16 +10853,16 @@ exports[`/watchlist/collections/ renders 1`] = `
           <a
             href="/reviews/"
           >
-            All Reviews
+            Reviews
           </a>
         </li>
         <li
           class="footerNavListItemCss"
         >
           <a
-            href="/viewings/"
+            href="/stats/"
           >
-            Viewing Log
+            Stats
           </a>
         </li>
         <li
@@ -11014,7 +11024,7 @@ exports[`/watchlist/directors/ renders 1`] = `
               class="mastNavLinkCss"
               href="/reviews/"
             >
-              All Reviews
+              Reviews
             </a>
           </li>
           <li
@@ -11022,9 +11032,9 @@ exports[`/watchlist/directors/ renders 1`] = `
           >
             <a
               class="mastNavLinkCss"
-              href="/viewings/"
+              href="/stats/"
             >
-              Viewing Log
+              Stats
             </a>
           </li>
           <li
@@ -11064,50 +11074,60 @@ exports[`/watchlist/directors/ renders 1`] = `
               </a>
                Directors
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "Drama is life with the dull bits cut out."
-            </p>
+              <q>
+                Drama is life with the dull bits cut out.
+              </q>
+            </div>
           </header>
-          <fieldset
-            class="fieldsetCss filtersCss"
+          <div
+            class="filtersCss"
           >
-            <legend
-              class="legendCss"
+            <fieldset
+              class="fieldsetCss"
             >
-              Filter & Sort
-            </legend>
-            <label
-              class="labelCss"
-            >
-              Name
-              <input
-                class="inputCss"
-                placeholder="Enter all or part of a name"
-                type="text"
-              />
-            </label>
-            <label
-              class="labelCss"
-            >
-              Order By
-              <select
-                class="selectInputCss"
+              <legend
+                class="legendCss"
               >
-                <option
-                  value="name"
+                Filter & Sort
+              </legend>
+              <div
+                class="wrapperCss"
+              >
+                <label
+                  class="labelCss"
                 >
                   Name
-                </option>
-                <option
-                  value="reviews"
+                  <input
+                    class="inputCss"
+                    placeholder="Enter all or part of a name"
+                    type="text"
+                  />
+                </label>
+                <label
+                  class="labelCss"
                 >
-                  Review Count
-                </option>
-              </select>
-            </label>
-          </fieldset>
+                  Order By
+                  <select
+                    class="selectInputCss"
+                  >
+                    <option
+                      value="name"
+                    >
+                      Name
+                    </option>
+                    <option
+                      value="reviews"
+                    >
+                      Review Count
+                    </option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+          </div>
         </div>
         <div
           class="rightCss"
@@ -14578,16 +14598,16 @@ exports[`/watchlist/directors/ renders 1`] = `
           <a
             href="/reviews/"
           >
-            All Reviews
+            Reviews
           </a>
         </li>
         <li
           class="footerNavListItemCss"
         >
           <a
-            href="/viewings/"
+            href="/stats/"
           >
-            Viewing Log
+            Stats
           </a>
         </li>
         <li
@@ -14749,7 +14769,7 @@ exports[`/watchlist/performers/ renders 1`] = `
               class="mastNavLinkCss"
               href="/reviews/"
             >
-              All Reviews
+              Reviews
             </a>
           </li>
           <li
@@ -14757,9 +14777,9 @@ exports[`/watchlist/performers/ renders 1`] = `
           >
             <a
               class="mastNavLinkCss"
-              href="/viewings/"
+              href="/stats/"
             >
-              Viewing Log
+              Stats
             </a>
           </li>
           <li
@@ -14799,50 +14819,60 @@ exports[`/watchlist/performers/ renders 1`] = `
               </a>
                Performers
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "Talk low, talk slow, and don't talk too much."
-            </p>
+              <q>
+                Talk low, talk slow, and don't talk too much.
+              </q>
+            </div>
           </header>
-          <fieldset
-            class="fieldsetCss filtersCss"
+          <div
+            class="filtersCss"
           >
-            <legend
-              class="legendCss"
+            <fieldset
+              class="fieldsetCss"
             >
-              Filter & Sort
-            </legend>
-            <label
-              class="labelCss"
-            >
-              Name
-              <input
-                class="inputCss"
-                placeholder="Enter all or part of a name"
-                type="text"
-              />
-            </label>
-            <label
-              class="labelCss"
-            >
-              Order By
-              <select
-                class="selectInputCss"
+              <legend
+                class="legendCss"
               >
-                <option
-                  value="name"
+                Filter & Sort
+              </legend>
+              <div
+                class="wrapperCss"
+              >
+                <label
+                  class="labelCss"
                 >
                   Name
-                </option>
-                <option
-                  value="reviews"
+                  <input
+                    class="inputCss"
+                    placeholder="Enter all or part of a name"
+                    type="text"
+                  />
+                </label>
+                <label
+                  class="labelCss"
                 >
-                  Review Count
-                </option>
-              </select>
-            </label>
-          </fieldset>
+                  Order By
+                  <select
+                    class="selectInputCss"
+                  >
+                    <option
+                      value="name"
+                    >
+                      Name
+                    </option>
+                    <option
+                      value="reviews"
+                    >
+                      Review Count
+                    </option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+          </div>
         </div>
         <div
           class="rightCss"
@@ -18313,16 +18343,16 @@ exports[`/watchlist/performers/ renders 1`] = `
           <a
             href="/reviews/"
           >
-            All Reviews
+            Reviews
           </a>
         </li>
         <li
           class="footerNavListItemCss"
         >
           <a
-            href="/viewings/"
+            href="/stats/"
           >
-            Viewing Log
+            Stats
           </a>
         </li>
         <li
@@ -18484,7 +18514,7 @@ exports[`/watchlist/writers/ renders 1`] = `
               class="mastNavLinkCss"
               href="/reviews/"
             >
-              All Reviews
+              Reviews
             </a>
           </li>
           <li
@@ -18492,9 +18522,9 @@ exports[`/watchlist/writers/ renders 1`] = `
           >
             <a
               class="mastNavLinkCss"
-              href="/viewings/"
+              href="/stats/"
             >
-              Viewing Log
+              Stats
             </a>
           </li>
           <li
@@ -18534,50 +18564,60 @@ exports[`/watchlist/writers/ renders 1`] = `
               </a>
                Writers
             </h2>
-            <p
+            <div
               class="taglineCss"
             >
-              "It's not a lie. It's a gift for fiction."
-            </p>
+              <q>
+                It's not a lie. It's a gift for fiction.
+              </q>
+            </div>
           </header>
-          <fieldset
-            class="fieldsetCss filtersCss"
+          <div
+            class="filtersCss"
           >
-            <legend
-              class="legendCss"
+            <fieldset
+              class="fieldsetCss"
             >
-              Filter & Sort
-            </legend>
-            <label
-              class="labelCss"
-            >
-              Name
-              <input
-                class="inputCss"
-                placeholder="Enter all or part of a name"
-                type="text"
-              />
-            </label>
-            <label
-              class="labelCss"
-            >
-              Order By
-              <select
-                class="selectInputCss"
+              <legend
+                class="legendCss"
               >
-                <option
-                  value="name"
+                Filter & Sort
+              </legend>
+              <div
+                class="wrapperCss"
+              >
+                <label
+                  class="labelCss"
                 >
                   Name
-                </option>
-                <option
-                  value="reviews"
+                  <input
+                    class="inputCss"
+                    placeholder="Enter all or part of a name"
+                    type="text"
+                  />
+                </label>
+                <label
+                  class="labelCss"
                 >
-                  Review Count
-                </option>
-              </select>
-            </label>
-          </fieldset>
+                  Order By
+                  <select
+                    class="selectInputCss"
+                  >
+                    <option
+                      value="name"
+                    >
+                      Name
+                    </option>
+                    <option
+                      value="reviews"
+                    >
+                      Review Count
+                    </option>
+                  </select>
+                </label>
+              </div>
+            </fieldset>
+          </div>
         </div>
         <div
           class="rightCss"
@@ -22048,16 +22088,16 @@ exports[`/watchlist/writers/ renders 1`] = `
           <a
             href="/reviews/"
           >
-            All Reviews
+            Reviews
           </a>
         </li>
         <li
           class="footerNavListItemCss"
         >
           <a
-            href="/viewings/"
+            href="/stats/"
           >
-            Viewing Log
+            Stats
           </a>
         </li>
         <li

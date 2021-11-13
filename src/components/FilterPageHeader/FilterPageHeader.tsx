@@ -37,7 +37,7 @@ export default function FilterPageHeader(props: Props): JSX.Element {
     <header className={props.className}>
       {avatar}
       <h2 className={headingCss}>{props.heading}</h2>
-      <p className={taglineCss}>{props.tagline}</p>
+      <div className={taglineCss}>{props.tagline}</div>
     </header>
   );
 }

@@ -8,7 +8,7 @@
 
 const createPages = require("./src/gatsby-node/create-pages");
 const onCreateWebpackConfig = require("./src/gatsby-node/on-create-webpack-config");
-const createSchemaCustomization = require("./src/gatsby-node/create-schema-customization");
+const createSchemaCustomization = require("./src/gatsby-node/create-schema-customization.js");
 
 exports.createPages = createPages;
 exports.createSchemaCustomization = createSchemaCustomization;

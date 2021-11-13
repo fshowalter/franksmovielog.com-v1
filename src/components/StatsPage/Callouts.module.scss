@@ -1,0 +1,36 @@
+@use "./src/styles/breakpoints";
+
+.containerCss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--step-1);
+  justify-content: center;
+  margin: 0 auto;
+
+  @media (min-width: breakpoints.$desktop) {
+    column-gap: var(--step-5);
+  }
+}
+
+.calloutContainerCss {
+  border: 1px solid var(--color-background);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: center;
+  width: 10rem;
+}
+
+.numberCss {
+  display: block;
+  font-size: var(--step-4);
+  text-align: center;
+}
+
+.legendCss {
+  color: var(--color-text-secondary);
+  display: block;
+  font-size: 1.125rem;
+  text-align: center;
+}

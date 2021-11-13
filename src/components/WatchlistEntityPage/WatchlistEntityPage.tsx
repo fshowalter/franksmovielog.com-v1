@@ -8,9 +8,9 @@ import FilterPageHeader from "../FilterPageHeader";
 import Grade from "../Grade";
 import Layout from "../Layout";
 import ProgressGraph from "../ProgressGraph";
-import RangeInput from "../RangeInput";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
+import YearInput from "../YearInput";
 import {
   breadcrumbCss,
   containerCss,
@@ -84,8 +84,6 @@ function groupMovies({
   sortType: SortType;
 }): Map<string, WatchlistMovie[]> {
   const groupedMovies: Map<string, WatchlistMovie[]> = new Map();
-
-  console.log(movies);
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortType);
@@ -219,7 +217,7 @@ export default function WatchlistEntityPage({
   pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
-  const { entity } = data;
+  const entity = data.entity.nodes[0];
 
   const [state, dispatch] = useReducer(
     reducer,
@@ -267,54 +265,55 @@ export default function WatchlistEntityPage({
             heading={entity.name}
             tagline={entityDetails.tagLine}
           />
-          <Fieldset className={filtersCss} legend="Filter & Sort">
-            <DebouncedInput
-              label="Title"
-              placeholder="Enter all or part of a title"
-              onChange={(value) =>
-                dispatch({ type: ActionType.FILTER_TITLE, value })
-              }
-            />
-            <RangeInput
-              label="Release Year"
-              min={state.minYear}
-              max={state.maxYear}
-              onChange={(values) =>
-                dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
-              }
-            />
-            <SelectInput
-              value={state.sortType}
-              label="Order By"
-              onChange={(e) =>
-                dispatch({
-                  type: ActionType.SORT,
-                  value: e.target.value as SortType,
-                })
-              }
-            >
-              <option value="release-date-asc">
-                Release Date (Oldest First)
-              </option>
-              <option value="release-date-desc">
-                Release Date (Newest First)
-              </option>
-              <option value="title">Title</option>
-              <option value="grade-desc">Grade (Best First)</option>
-              <option value="grade-asc">Grade (Worst First)</option>
-            </SelectInput>
-          </Fieldset>
-          <div className={listInfoCss}>
-            <ListInfo
-              visible={state.showCount}
-              total={state.filteredMovies.length}
-            />
-          </div>
-          <div className={percentCss}>
-            <WatchlistEntityProgress
-              total={state.filteredMovies.length}
-              reviewed={state.reviewedMovieCount}
-            />
+          <div className={filtersCss}>
+            <Fieldset legend="Filter & Sort">
+              <DebouncedInput
+                label="Title"
+                placeholder="Enter all or part of a title"
+                onChange={(value) =>
+                  dispatch({ type: ActionType.FILTER_TITLE, value })
+                }
+              />
+              <YearInput
+                label="Release Year"
+                years={data.entity.releaseYears}
+                onChange={(values) =>
+                  dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
+                }
+              />
+              <SelectInput
+                value={state.sortType}
+                label="Order By"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionType.SORT,
+                    value: e.target.value as SortType,
+                  })
+                }
+              >
+                <option value="release-date-asc">
+                  Release Date (Oldest First)
+                </option>
+                <option value="release-date-desc">
+                  Release Date (Newest First)
+                </option>
+                <option value="title">Title</option>
+                <option value="grade-desc">Grade (Best First)</option>
+                <option value="grade-asc">Grade (Worst First)</option>
+              </SelectInput>
+            </Fieldset>
+            <div className={listInfoCss}>
+              <ListInfo
+                visible={state.showCount}
+                total={state.filteredMovies.length}
+              />
+            </div>
+            <div className={percentCss}>
+              <WatchlistEntityProgress
+                total={state.filteredMovies.length}
+                reviewed={state.reviewedMovieCount}
+              />
+            </div>
           </div>
         </div>
         <div className={rightCss}>
@@ -390,56 +389,62 @@ export type WatchlistMovie = UnreviewedWatchlistMovie | ReviewedWatchlistMovie;
 
 interface PageQueryResult {
   entity: {
-    name: string;
-    avatar: null | {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
+    nodes: {
+      name: string;
+      avatar: null | {
+        childImageSharp: {
+          gatsbyImageData: IGatsbyImageData;
+        };
       };
-    };
-    watchlistMovies: WatchlistMovie[];
+      watchlistMovies: WatchlistMovie[];
+    }[];
+    releaseYears: string[];
   };
 }
 
 export const pageQuery = graphql`
   query ($slug: String!, $entityType: String!) {
-    entity: watchlistEntitiesJson(
-      entity_type: { eq: $entityType }
-      slug: { eq: $slug }
+    entity: allWatchlistEntitiesJson(
+      filter: { entity_type: { eq: $entityType }, slug: { eq: $slug } }
+      limit: 1
     ) {
-      name
-      avatar {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FIXED
-            formats: [JPG, AVIF]
-            quality: 80
-            width: 200
-            height: 200
-            placeholder: TRACED_SVG
-          )
-        }
-      }
-      watchlistMovies {
-        imdbId: imdb_id
-        title
-        year
-        lastReviewGrade
-        lastReviewGradeValue
-        reviewedMovieSlug
-        sortTitle: sort_title
-        releaseDate: release_date
-        poster {
+      nodes {
+        name
+        avatar {
           childImageSharp {
             gatsbyImageData(
-              layout: CONSTRAINED
+              layout: FIXED
               formats: [JPG, AVIF]
               quality: 80
               width: 200
+              height: 200
               placeholder: TRACED_SVG
             )
           }
         }
+        watchlistMovies {
+          imdbId: imdb_id
+          title
+          year
+          lastReviewGrade
+          lastReviewGradeValue
+          reviewedMovieSlug
+          sortTitle: sort_title
+          releaseDate: release_date
+          poster {
+            childImageSharp {
+              gatsbyImageData(
+                layout: CONSTRAINED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 200
+                placeholder: TRACED_SVG
+              )
+            }
+          }
+        }
       }
+      releaseYears: distinct(field: watchlistMovies___year)
     }
   }
 `;

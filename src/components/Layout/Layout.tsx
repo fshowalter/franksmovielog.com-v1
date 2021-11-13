@@ -119,8 +119,8 @@ export default function Layout({
               <MastNavItem to="/">Home</MastNavItem>
               <MastNavItem to="/about/">About</MastNavItem>
               <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
-              <MastNavItem to="/reviews/">All Reviews</MastNavItem>
-              <MastNavItem to="/viewings/">Viewing Log</MastNavItem>
+              <MastNavItem to="/reviews/">Reviews</MastNavItem>
+              <MastNavItem to="/stats/">Stats</MastNavItem>
               <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
             </ul>
           </nav>
@@ -133,8 +133,8 @@ export default function Layout({
             <FooterNavItem to="/">Home</FooterNavItem>
             <FooterNavItem to="/about/">About</FooterNavItem>
             <FooterNavItem to="/how-i-grade/">How I Grade</FooterNavItem>
-            <FooterNavItem to="/reviews/">All Reviews</FooterNavItem>
-            <FooterNavItem to="/viewings/">Viewing Log</FooterNavItem>
+            <FooterNavItem to="/reviews/">Reviews</FooterNavItem>
+            <FooterNavItem to="/stats/">Stats</FooterNavItem>
             <FooterNavItem to="/watchlist/">Watchlist</FooterNavItem>
           </ul>
           <p className={footerFairUseCss}>

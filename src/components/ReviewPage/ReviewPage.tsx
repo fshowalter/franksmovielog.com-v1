@@ -29,6 +29,8 @@ import {
   olderViewingsCss,
   olderViewingsHeadingCss,
   olderViewingsListCss,
+  olderViewingsListItemCss,
+  olderViewingSlugCss,
   posterCss,
   relatedCss,
   relatedHeaderCss,
@@ -40,7 +42,9 @@ import {
   reviewsListItemCss,
   separatorCss,
   slugCss,
+  slugDateCss,
   titleCss,
+  venueNotesCss,
   viewingDateIconCss,
   watchlistCss,
 } from "./ReviewPage.module.scss";
@@ -246,10 +250,13 @@ export default function ReviewPage({
                   id={review.frontmatter.sequence.toString()}
                 >
                   <DateIcon className={dateIconCss} />{" "}
-                  <span className={dateCss}>{review.frontmatter.date}</span> via{" "}
-                  {review.frontmatter.venue}
+                  <span className={slugDateCss}>{review.frontmatter.date}</span>{" "}
+                  <span>via {review.frontmatter.venue}</span>
                   {review.frontmatter.venueNotes && (
-                    <> ({review.frontmatter.venueNotes})</>
+                    <span className={venueNotesCss}>
+                      {" "}
+                      {review.frontmatter.venueNotes}
+                    </span>
                   )}
                 </header>
                 <div className={contentCss}>
@@ -272,12 +279,12 @@ export default function ReviewPage({
             <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>
             <ul className={olderViewingsListCss}>
               {movie.olderViewings.map((viewing) => (
-                <li key={viewing.sequence}>
-                  <div className={slugCss}>
-                    <DateIcon className={viewingDateIconCss} />{" "}
+                <li key={viewing.sequence} className={olderViewingsListItemCss}>
+                  <DateIcon className={viewingDateIconCss} />{" "}
+                  <span className={olderViewingSlugCss}>
                     <span className={dateCss}>{viewing.viewingDate}</span> via{" "}
                     {viewing.venue}
-                  </div>
+                  </span>
                 </li>
               ))}
             </ul>
