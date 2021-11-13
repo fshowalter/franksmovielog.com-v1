@@ -134,9 +134,9 @@ jobs:
           path: |
             public
             .cache
-          key: ${{ runner.os }}-gatsby-buildv2-${{ github.run_id }}
+          key: ${{ runner.os }}-gatsby-buildv3-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-gatsby-buildv2-
+            ${{ runner.os }}-gatsby-buildv3-
 
       # See: https://github.com/actions/cache/blob/main/examples.md#node---yarn
       - name: get yarn cache directory

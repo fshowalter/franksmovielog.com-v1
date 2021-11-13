@@ -776,7 +776,9 @@ const WatchlistEntitiesJson = {
           info
         );
 
-        const watchlistMovieImdbIds = watchlistMovies.map(
+        // console.log(watchlistMovies);
+
+        const watchlistMovieImdbIds = Array.from(watchlistMovies).map(
           (movie) => movie.imdb_id
         );
 
@@ -801,9 +803,6 @@ const WatchlistEntitiesJson = {
         );
       },
     },
-  },
-  extensions: {
-    infer: false,
   },
 };
 
