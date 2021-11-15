@@ -101,6 +101,8 @@ export default function HomePage({
                     <Grade
                       grade={review.frontmatter.grade}
                       className={reviewGradeCss}
+                      width={140}
+                      height={28}
                     />
                     <p className={reviewCreditsCss}>
                       Directed by {toSentenceArray(movie.directorNames)}.
