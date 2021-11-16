@@ -20,7 +20,6 @@ import {
   contentCss,
   creditsCss,
   dateCss,
-  dateIconCss,
   directorsCss,
   gradeCss,
   headerCss,
@@ -44,7 +43,6 @@ import {
   slugCss,
   slugDateCss,
   titleCss,
-  venueNotesCss,
   viewingDateIconCss,
   watchlistCss,
 } from "./ReviewPage.module.scss";
@@ -176,14 +174,6 @@ export default function ReviewPage({
         article
       />
       <main className={containerCss}>
-        {movie.backdrop && (
-          <GatsbyImage
-            className={imageCss}
-            image={movie.backdrop.childImageSharp.gatsbyImageData}
-            alt={`A still from ${movie.title} (${movie.year})`}
-            loading="eager"
-          />
-        )}
         <header className={headerCss}>
           <h1 className={titleCss}>{movie.title}</h1>
           <div className={headerMetaCss}>
@@ -204,6 +194,71 @@ export default function ReviewPage({
             <span className={separatorCss}>|</span> {movie.runtimeMinutes}
             &#x02009;min
           </div>
+        </header>
+        {movie.backdrop && (
+          <GatsbyImage
+            className={imageCss}
+            image={movie.backdrop.childImageSharp.gatsbyImageData}
+            alt={`A still from ${movie.title} (${movie.year})`}
+            loading="eager"
+          />
+        )}
+        <ul className={reviewsListCss}>
+          {movie.reviews.map((review) => (
+            <li
+              className={reviewsListItemCss}
+              key={review.frontmatter.sequence}
+            >
+              <article className={reviewCss}>
+                <header
+                  className={slugCss}
+                  id={review.frontmatter.sequence.toString()}
+                >
+                  <Grade
+                    grade={review.frontmatter.grade}
+                    className={gradeCss}
+                  />
+                  <span> on </span>
+                  <span className={slugDateCss}>{review.frontmatter.date}</span>
+                  <span> via {review.frontmatter.venue}</span>
+                  {review.frontmatter.venueNotes && (
+                    <sup id="fn-venue-notes">1</sup>
+                  )}
+                </header>
+                <div className={contentCss}>
+                  <RenderedMarkdown
+                    className={bodyCss}
+                    // eslint-disable-next-line react/no-danger
+                    text={review.linkedHtml}
+                  />
+                </div>
+                {review.frontmatter.venueNotes && (
+                  <div className="footnotes">
+                    <ol>
+                      <li className="footnote" id="venue-footnotes">
+                        <p>
+                          {review.frontmatter.venueNotes}
+                          <a href="#fn-venue-notes" title="Back to top">
+                            ↩
+                          </a>
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                )}
+              </article>
+            </li>
+          ))}
+        </ul>
+        <aside className={creditsCss}>
+          {movie.poster && (
+            <GatsbyImage
+              className={posterCss}
+              image={movie.poster.childImageSharp.gatsbyImageData}
+              alt={`A poster from ${movie.title} (${movie.year})`}
+              loading="eager"
+            />
+          )}
           {movie.akaTitles.length > 0 && (
             <div className={akaContainerCss}>
               aka:
@@ -215,16 +270,6 @@ export default function ReviewPage({
                 ))}
               </ul>
             </div>
-          )}
-        </header>
-        <aside className={creditsCss}>
-          {movie.poster && (
-            <GatsbyImage
-              className={posterCss}
-              image={movie.poster.childImageSharp.gatsbyImageData}
-              alt={`A poster from ${movie.title} (${movie.year})`}
-              loading="eager"
-            />
           )}
           <div className={directorsCss}>
             <span className={castLabelCss}>Directed by</span>
@@ -238,42 +283,6 @@ export default function ReviewPage({
             <WatchlistLinks movie={movie} />
           </div>
         </aside>
-        <ul className={reviewsListCss}>
-          {movie.reviews.map((review) => (
-            <li
-              className={reviewsListItemCss}
-              key={review.frontmatter.sequence}
-            >
-              <article className={reviewCss}>
-                <header
-                  className={slugCss}
-                  id={review.frontmatter.sequence.toString()}
-                >
-                  <DateIcon className={dateIconCss} />{" "}
-                  <span className={slugDateCss}>{review.frontmatter.date}</span>{" "}
-                  <span>via {review.frontmatter.venue}</span>
-                  {review.frontmatter.venueNotes && (
-                    <span className={venueNotesCss}>
-                      {" "}
-                      {review.frontmatter.venueNotes}
-                    </span>
-                  )}
-                </header>
-                <div className={contentCss}>
-                  <Grade
-                    grade={review.frontmatter.grade}
-                    className={gradeCss}
-                  />
-                  <RenderedMarkdown
-                    className={bodyCss}
-                    // eslint-disable-next-line react/no-danger
-                    text={review.linkedHtml}
-                  />
-                </div>
-              </article>
-            </li>
-          ))}
-        </ul>
         {movie.olderViewings.length > 0 && (
           <div className={olderViewingsCss}>
             <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>

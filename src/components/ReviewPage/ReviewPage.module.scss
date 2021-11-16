@@ -1,12 +1,13 @@
 @use "./src/styles/breakpoints";
 
 .containerCss {
+  border-top: solid 1px var(--color-background);
   display: grid;
-  grid-template-areas: "image image image" ". . ." ". title ." ". . ." ". credits ." ". . ." ". reviews ." ". . ." ". viewings ." ". . ." ". related .";
+  grid-template-areas: ". title ." "image image image" ". . ." ". reviews ." ". . ." ". credits ." ". . ." ". viewings ." ". . ." ". related .";
   grid-template-columns:
     minmax(var(--step-1), 1fr) minmax(auto, 63ch)
     minmax(var(--step-1), 1fr);
-  grid-template-rows: auto 3rem auto var(--step-1) auto 3rem auto 3rem auto 3rem;
+  grid-template-rows: auto auto var(--step-1) auto 3rem auto 3rem auto 3rem;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 40rem;
@@ -29,7 +30,6 @@
 }
 
 .reviewsListCss {
-  border-top: solid 1px var(--color-background);
   display: grid;
   grid-area: reviews;
   grid-template-columns: 1fr;
@@ -90,24 +90,22 @@
 .slugCss {
   align-items: center;
   color: var(--color-text-secondary);
-  column-gap: 5px;
+  column-gap: 1ch;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   font-feature-settings: "tnum";
   font-size: 16px;
   justify-content: start;
   letter-spacing: 0.5px;
+  line-height: 1.5;
   position: relative;
-  row-gap: 1px;
+  text-align: center;
 }
 
 .slugDateCss {
+  display: flex;
   font-weight: 700;
-}
-
-.venueNotesCss {
-  font-size: 14px;
-  min-width: 100%;
 }
 
 .imageCss {
@@ -123,6 +121,8 @@
 
 .headerCss {
   grid-area: title;
+  padding: var(--step-1) 0;
+  text-align: center;
 }
 
 .akaContainerCss {
@@ -145,10 +145,8 @@
 }
 
 .gradeCss {
-  height: 21px;
-  margin-right: 0.5rem;
-  position: absolute;
-  top: 3px;
+  display: block;
+  height: 32px;
   width: auto;
 }
 
@@ -219,14 +217,15 @@
 
 .bodyCss {
   grid-area: content;
+  margin-top: var(--step-1);
 
-  > p:first-of-type::before {
-    content: "\0020";
-    display: inline-block;
-    height: auto;
-    position: relative;
-    width: 115px;
-  }
+  // > p:first-of-type::before {
+  //   content: "\0020";
+  //   display: inline-block;
+  //   height: auto;
+  //   position: relative;
+  //   width: 115px;
+  // }
 }
 
 .watchlistCss {
