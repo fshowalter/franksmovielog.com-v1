@@ -19,6 +19,7 @@ import {
   containerCss,
   contentCss,
   creditsCss,
+  creditsTitleCss,
   dateCss,
   directorsCss,
   gradeCss,
@@ -42,6 +43,9 @@ import {
   separatorCss,
   slugCss,
   slugDateCss,
+  slugFootnoteCss,
+  slugOnCss,
+  slugViaCss,
   titleCss,
   viewingDateIconCss,
   watchlistCss,
@@ -218,12 +222,26 @@ export default function ReviewPage({
                     grade={review.frontmatter.grade}
                     className={gradeCss}
                   />
-                  <span> on </span>
+                  <span className={slugOnCss}> on </span>
                   <span className={slugDateCss}>{review.frontmatter.date}</span>
-                  <span> via {review.frontmatter.venue}</span>
-                  {review.frontmatter.venueNotes && (
-                    <sup id="fn-venue-notes">1</sup>
-                  )}
+                  <span className={slugViaCss}>
+                    {" "}
+                    via {review.frontmatter.venue}
+                    {review.frontmatter.venueNotes && (
+                      <span className={slugFootnoteCss}>
+                        {" "}
+                        <sup
+                          id={`fnref:venue-notes-${review.frontmatter.sequence}`}
+                        >
+                          <a
+                            href={`#fn:venue-footnotes-${review.frontmatter.sequence}`}
+                          >
+                            1
+                          </a>
+                        </sup>
+                      </span>
+                    )}
+                  </span>
                 </header>
                 <div className={contentCss}>
                   <RenderedMarkdown
@@ -235,10 +253,16 @@ export default function ReviewPage({
                 {review.frontmatter.venueNotes && (
                   <div className="footnotes">
                     <ol>
-                      <li className="footnote" id="venue-footnotes">
+                      <li
+                        className="footnote"
+                        id={`fn:venue-footnotes-${review.frontmatter.sequence}`}
+                      >
                         <p>
                           {review.frontmatter.venueNotes}
-                          <a href="#fn-venue-notes" title="Back to top">
+                          <a
+                            href={`#fnref:venue-notes-${review.frontmatter.sequence}`}
+                            title="Back to top"
+                          >
                             ↩
                           </a>
                         </p>
@@ -251,17 +275,12 @@ export default function ReviewPage({
           ))}
         </ul>
         <aside className={creditsCss}>
-          {movie.poster && (
-            <GatsbyImage
-              className={posterCss}
-              image={movie.poster.childImageSharp.gatsbyImageData}
-              alt={`A poster from ${movie.title} (${movie.year})`}
-              loading="eager"
-            />
-          )}
+          <h1 className={creditsTitleCss}>
+            {movie.title} ({movie.year})
+          </h1>
           {movie.akaTitles.length > 0 && (
             <div className={akaContainerCss}>
-              aka:
+              Aka:
               <ul className={akaListCss}>
                 {movie.akaTitles.map((akaTitle) => (
                   <li key={akaTitle} className={akaListItemCss}>
@@ -279,6 +298,14 @@ export default function ReviewPage({
             <span className={castLabelCss}>Starring</span>
             {toSentenceArray(movie.principalCastNames)}
           </div>
+          {movie.poster && (
+            <GatsbyImage
+              className={posterCss}
+              image={movie.poster.childImageSharp.gatsbyImageData}
+              alt={`A poster from ${movie.title} (${movie.year})`}
+              loading="eager"
+            />
+          )}
           <div className={watchlistCss}>
             <WatchlistLinks movie={movie} />
           </div>
@@ -301,13 +328,7 @@ export default function ReviewPage({
         )}
         <Related movie={movie} />
       </main>
-      {structuredData && (
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      )}
+      {}
     </Layout>
   );
 }
