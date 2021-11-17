@@ -3,7 +3,7 @@
 .containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
-  grid-template-areas: ". list ." "pagination pagination pagination";
+  grid-template-areas: ". list ." ". pagination .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 38rem) minmax(
       var(--step-1),
       1fr
@@ -23,6 +23,7 @@
   grid-area: list;
 
   @media (min-width: breakpoints.$desktop) {
+    border-bottom: solid 1px var(--color-background);
     display: flex;
     flex-wrap: wrap;
   }
@@ -180,11 +181,8 @@
 }
 
 .paginationCss {
+  align-content: space-around;
   grid-area: pagination;
-
-  @media (min-width: breakpoints.$desktop) {
-    border-top: solid 1px var(--color-background);
-  }
 }
 
 :global(.globalExcerptLinkCss) {
