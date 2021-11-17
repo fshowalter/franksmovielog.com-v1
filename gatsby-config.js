@@ -83,7 +83,12 @@ module.exports = {
         plugins: [`gatsby-remark-smartypants`],
       },
     },
-    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-catch-links`,
+      options: {
+        excludePattern: /#/,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -57,7 +57,7 @@ export default function RelatedMovies({
   }
 
   return (
-    <div>
+    <nav>
       {children}
       <ul className={listCss}>
         {movies.map((movie) => {
@@ -68,6 +68,6 @@ export default function RelatedMovies({
           );
         })}
       </ul>
-    </div>
+    </nav>
   );
 }

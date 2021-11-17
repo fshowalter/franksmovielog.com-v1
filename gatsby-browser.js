@@ -8,6 +8,8 @@
 const { littlefoot } = require("littlefoot");
 require("littlefoot/dist/littlefoot.css");
 
-exports.onRouteUpdate = () => {
-  littlefoot(); // Pass any littlefoot settings here.
+exports.onRouteUpdate = ({ location, prevLocation }) => {
+  if (location.pathname != (prevLocation && prevLocation.pathname)) {
+    littlefoot(); // Pass any littlefoot settings here.
+  }
 };
