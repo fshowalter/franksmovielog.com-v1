@@ -513,7 +513,7 @@ const ReviewedMoviesJson = {
     runtime_minutes: "Int!",
     director_names: "[String!]!",
     principal_cast_names: "[String!]!",
-    aka_titles: "[String!]!",
+    original_title: "String",
     countries: "[String!]!",
     reviews: {
       type: `[${MARKDOWN_REMARK}!]!`,
