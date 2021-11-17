@@ -199,7 +199,7 @@ export default function ReviewPage({
               );
             }, null)}{" "}
             <span className={headerSeparatorCss}>|</span> {movie.runtimeMinutes}
-            &#x02009;min
+            &#x02009;min{" "}
             <span className={hideDesktopCss}>
               <span className={headerSeparatorCss}>|</span>{" "}
               <a href="#credits">More...</a>
