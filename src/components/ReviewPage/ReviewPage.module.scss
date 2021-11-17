@@ -3,21 +3,17 @@
 .containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
-  grid-template-areas: ". title ." "image image image" ". . ." ". reviews ." ". . ." ". credits ." ". . ." ". viewings ." ". . ." ". related .";
-  grid-template-columns:
-    minmax(var(--step-1), 1fr) minmax(auto, 63ch)
-    minmax(var(--step-1), 1fr);
-  grid-template-rows: auto auto var(--step-1) auto 3rem auto 3rem auto 3rem;
+  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" ". related .";
+  grid-template-columns: var(--step-1) 1fr var(--step-1);
+  grid-template-rows: auto;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 40rem;
   padding-bottom: var(--step-5);
-  position: relative;
 
   @media (min-width: breakpoints.$tablet) {
-    grid-template-areas: "image" "." "title" "." "credits" "." "reviews" "." "viewings" "." "related";
+    grid-template-areas: "title" "image" "reviews" "viewings" "credits" "related";
     grid-template-columns: unset;
-    grid-template-rows: auto 3rem auto var(--step-1) auto 3rem auto 3rem auto 3rem;
   }
 
   @media (min-width: breakpoints.$desktop) {
@@ -29,15 +25,46 @@
   }
 }
 
+.reviewGradeCss {
+  display: block;
+  height: 32px;
+  margin: 0 auto;
+  width: auto;
+
+  @media (min-width: breakpoints.$desktop) {
+    height: 24px;
+    margin: 0 1ch 0 0;
+  }
+}
+
+.reviewsListItemCss {
+  position: relative;
+
+  @media (min-width: breakpoints.$desktop) {
+    padding-left: calc(1.25 * var(--step-1));
+  }
+}
+
 .reviewsListCss {
-  display: grid;
   grid-area: reviews;
-  grid-template-columns: 1fr;
-  row-gap: 3rem;
+  padding-top: var(--step-3);
+
+  @media (min-width: breakpoints.$desktop) {
+    border-top: 1px solid var(--color-background);
+  }
+}
+
+.reviewsListItemCss:not(:first-child) .reviewGradeCss {
+  height: 24px;
+
+  @media (min-width: breakpoints.$desktop) {
+    height: 18px;
+    margin: 0 1ch 0 0;
+  }
 }
 
 .reviewsListItemCss:not(:first-child) {
-  padding-top: 3rem;
+  padding-top: calc(2 * var(--step-5));
   position: relative;
 }
 
@@ -49,7 +76,7 @@
   left: calc(50% - 1.5rem);
   padding: 0 1rem;
   position: absolute;
-  top: 0;
+  top: calc(var(--step-5) - 0.5rem);
   width: 3rem;
   z-index: 100;
 }
@@ -60,51 +87,54 @@
   height: 1px;
   left: 25%;
   position: absolute;
-  top: calc(0.5rem - 1px);
+  top: calc(var(--step-5) - 1px);
   width: 50%;
 }
 
-.reviewCss {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-top: 1.5rem;
-  row-gap: 1rem;
+.reviewDateIconCss {
+  display: none;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-columns: calc(1.25 * var(--step-1)) 1fr;
-
-    > * {
-      grid-column: 2;
-    }
+    display: block;
+    height: auto;
+    margin-right: calc(1.25 * var(--step-1) - 16px);
+    width: 16px;
   }
 }
 
-.dateIconCss {
-  @media (min-width: breakpoints.$desktop) {
-    left: calc(-1.25 * var(--step-1));
-    position: absolute;
-    top: 2px;
-  }
-}
-
-.slugCss {
+.slugContainerCss {
   font-feature-settings: "tnum";
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 1.5;
   text-align: center;
+
+  @media (min-width: breakpoints.$desktop) {
+    align-items: center;
+    display: flex;
+    margin-left: calc(-1.25 * var(--step-1));
+    text-align: left;
+  }
 }
 
 .slugOnCss {
   color: var(--color-text-secondary);
   display: block;
   margin: 0 auto;
+
+  @media (min-width: breakpoints.$desktop) {
+    display: inline;
+  }
 }
 
 .slugViaCss {
   color: var(--color-text-secondary);
   display: block;
   margin: 0 auto;
+
+  @media (min-width: breakpoints.$desktop) {
+    display: inline;
+  }
 }
 
 .slugFootnoteCss {
@@ -119,136 +149,104 @@
   display: block;
   font-weight: 700;
   margin: 0 auto;
+
+  @media (min-width: breakpoints.$desktop) {
+    display: inline;
+  }
 }
 
-.imageCss {
+.heroImageCss {
   grid-area: image;
   width: 100%;
 }
 
-.titleCss {
+.headerTitleCss {
   color: #000;
   font-size: var(--step-3);
   line-height: 1.1;
 }
 
-.headerCss {
+.headerContainerCss {
   grid-area: title;
   padding: var(--step-1) 0;
   text-align: center;
+
+  @media (min-width: breakpoints.$desktop) {
+    padding: 0;
+    text-align: left;
+  }
 }
 
-.akaContainerCss {
-  font-weight: 700;
-  grid-area: aka;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.akaListCss {
-  display: block;
-}
-
-.akaListItemCss {
-  font-weight: normal;
-}
-
-.contentCss {
-  position: relative;
-}
-
-.gradeCss {
-  display: block;
-  height: 32px;
-  margin: 0 auto;
-  width: auto;
-}
-
-.creditsCss {
-  align-content: start;
+.headerOriginalTitleCss {
   color: var(--color-text-secondary);
-  column-gap: var(--step-1);
+}
+
+.reviewContentCss {
+  margin-top: var(--step-3);
+
+  @media (min-width: breakpoints.$desktop) {
+    margin-top: 1rem;
+    position: relative;
+  }
+}
+
+.creditsContainerCss {
+  align-content: start;
+  background-color: var(--color-background);
   display: grid;
   font-size: 1rem;
   grid-area: credits;
-  grid-template-areas: "title title" ". . " "aka poster" "directors poster" "cast poster" "watchlist watchlist";
-  grid-template-columns: 1fr 38.2%;
-  grid-template-rows: auto 1rem auto auto 1fr auto;
+  grid-template-areas: ". poster . credits ." ". watchlist watchlist watchlist .";
+  grid-template-columns: var(--step-1) 1fr var(--step-1) 1fr var(--step-1);
+  grid-template-rows: auto;
   letter-spacing: 0.2px;
+  margin-top: var(--step-5);
+  padding: var(--step-3) 0 3rem;
+  position: relative;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin: 4rem calc(-1 * var(--step-1)) 0;
+    overflow: hidden;
+  }
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "poster" "directors" "cast" "watchlist";
+    background-color: unset;
+    grid-template-areas: "poster" "credits" "watchlist";
     grid-template-columns: 1fr;
     grid-template-rows: unset;
+    margin: unset;
   }
+}
+
+.creditsListCss {
+  color: var(--color-text-secondary);
+  grid-area: credits;
 }
 
 .creditsTitleCss {
   font-size: 1.25rem;
   font-weight: 700;
-  grid-area: title;
+  line-height: 1.2;
 }
 
-.posterCss {
+.creditsPosterCss {
   align-self: flex-start;
   grid-area: poster;
-  max-width: 175px;
-
-  @media (min-width: breakpoints.$desktop) {
-    max-width: unset;
-  }
+  justify-self: flex-end;
+  max-width: 309px;
 }
 
-.directorsCss {
-  grid-area: directors;
-
-  @media (min-width: breakpoints.$desktop) {
-    padding: 1.5rem 0.5rem 0;
-  }
-}
-
-.castCss {
-  grid-area: cast;
-  margin-top: 1rem;
-
-  @media (min-width: breakpoints.$desktop) {
-    padding: 0 0.5rem;
-  }
-}
-
-.castLabelCss {
-  display: block;
+.creditTermCss {
   font-weight: 700;
   line-height: 1.5;
-  margin-top: 1rem;
-
-  &::after {
-    content: ":";
-  }
-
-  &:first-of-type {
-    margin-top: 0;
-  }
+  margin-top: var(--step-1);
 }
 
-.dateCss {
+.olderViewingsDateCss {
   font-weight: 700;
 }
 
-.bodyCss {
-  grid-area: content;
-  margin-top: var(--step-1);
-
-  // > p:first-of-type::before {
-  //   content: "\0020";
-  //   display: inline-block;
-  //   height: auto;
-  //   position: relative;
-  //   width: 115px;
-  // }
-}
-
-.watchlistCss {
+.creditsWatchlistCss {
   align-self: start;
   grid-area: watchlist;
   margin-top: 1.5rem;
@@ -265,7 +263,13 @@
 .relatedCss {
   display: grid;
   grid-area: related;
-  row-gap: 3rem;
+  margin-top: var(--step-5);
+  row-gap: var(--step-5);
+
+  @media (min-width: breakpoints.$tablet) {
+    margin-top: 4rem;
+    row-gap: 4rem;
+  }
 }
 
 .relatedHeaderCss {
@@ -292,11 +296,15 @@
 }
 
 .olderViewingsHeadingCss {
-  border-bottom: solid 1px var(--color-background);
+  border-bottom: 1px solid var(--color-background);
   color: rgb(0 0 0 / 75%);
-  font-size: 1.25rem;
-  line-height: 3rem;
-  margin-bottom: 1rem;
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  letter-spacing: 0.2px;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
 }
 
 .olderViewingsListCss {
@@ -305,8 +313,9 @@
   gap: 5px;
 }
 
-.olderViewingsCss {
+.olderViewingsContainerCss {
   grid-area: viewings;
+  margin-top: var(--step-5);
 }
 
 .olderViewingsListItemCss {
@@ -318,14 +327,14 @@
   justify-content: start;
 }
 
-.viewingDateIconCss {
+.olderViewingsDateIconCss {
   grid-area: icon;
   margin-right: calc(1.25 * var(--step-1) - 16px);
   position: relative;
   width: 16px;
 }
 
-.separatorCss {
+.headerSeparatorCss {
   color: var(--color-text-secondary);
 }
 
@@ -337,4 +346,69 @@
 
 .olderViewingSlugCss {
   grid-area: slug;
+}
+
+.backToTopContainerCss {
+  align-items: center;
+  backface-visibility: hidden;
+  background-color: rgb(0 0 0 / 15%);
+  border-radius: 100px 0 0;
+  bottom: 0;
+  color: rgb(255 255 255);
+  cursor: pointer;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 18.6667px 4.6667px 4.6667px 18.6667px;
+  position: relative;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease 0s;
+
+  &::before {
+    background-color: rgb(255 255 255);
+    border-radius: inherit;
+    content: " ";
+    inset: 0;
+    opacity: 0%;
+    pointer-events: none;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+  }
+
+  &::after {
+    border-radius: inherit;
+    content: " ";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.backToTopInnerCss {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.backToTopArrowCss {
+  align-items: center;
+  display: flex;
+  fill: rgb(255 255 255);
+  height: 31.5px;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+  width: 31.5px;
+  z-index: 2;
+}
+
+.hideDesktopCss {
+  @media (min-width: breakpoints.$desktop) {
+    display: none;
+  }
 }

@@ -10,45 +10,45 @@ import Seo from "../Seo";
 import WatchlistLinks from "../WatchlistLinks";
 import RelatedMovies from "./RelatedMovies";
 import {
-  akaContainerCss,
-  akaListCss,
-  akaListItemCss,
-  bodyCss,
-  castCss,
-  castLabelCss,
+  backToTopArrowCss,
+  backToTopContainerCss,
+  backToTopInnerCss,
   containerCss,
-  contentCss,
-  creditsCss,
+  creditsContainerCss,
+  creditsListCss,
+  creditsPosterCss,
   creditsTitleCss,
-  dateCss,
-  directorsCss,
-  gradeCss,
-  headerCss,
+  creditsWatchlistCss,
+  creditTermCss,
+  headerContainerCss,
   headerMetaCss,
-  imageCss,
-  olderViewingsCss,
+  headerOriginalTitleCss,
+  headerSeparatorCss,
+  headerTitleCss,
+  heroImageCss,
+  hideDesktopCss,
+  olderViewingsContainerCss,
+  olderViewingsDateCss,
+  olderViewingsDateIconCss,
   olderViewingsHeadingCss,
   olderViewingsListCss,
   olderViewingsListItemCss,
   olderViewingSlugCss,
-  posterCss,
   relatedCss,
   relatedHeaderCss,
   relatedHeadingCss,
   relatedMoreCss,
   relatedNameCss,
-  reviewCss,
+  reviewContentCss,
+  reviewDateIconCss,
+  reviewGradeCss,
   reviewsListCss,
   reviewsListItemCss,
-  separatorCss,
-  slugCss,
+  slugContainerCss,
   slugDateCss,
   slugFootnoteCss,
   slugOnCss,
   slugViaCss,
-  titleCss,
-  viewingDateIconCss,
-  watchlistCss,
 } from "./ReviewPage.module.scss";
 
 function buildStructuredData(pageData: PageQueryResult) {
@@ -177,11 +177,14 @@ export default function ReviewPage({
         image={movie.seoImage.childImageSharp.resize.src}
         article
       />
-      <main className={containerCss}>
-        <header className={headerCss}>
-          <h1 className={titleCss}>{movie.title}</h1>
+      <main id="top" className={containerCss}>
+        <header className={headerContainerCss}>
+          <h1 className={headerTitleCss}>{movie.title}</h1>
+          {movie.akaTitles.length > 0 && (
+            <div className={headerOriginalTitleCss}>({movie.akaTitles[0]})</div>
+          )}
           <div className={headerMetaCss}>
-            {movie.year} <span className={separatorCss}>|</span>{" "}
+            {movie.year} <span className={headerSeparatorCss}>|</span>{" "}
             {movie.countries.reduce<JSX.Element | null>((acc, country) => {
               if (acc === null) {
                 return <>{country}</>;
@@ -190,18 +193,22 @@ export default function ReviewPage({
               return (
                 <>
                   {acc}
-                  <span className={separatorCss}>&ndash;</span>
+                  <span className={headerSeparatorCss}>&ndash;</span>
                   {country}
                 </>
               );
             }, null)}{" "}
-            <span className={separatorCss}>|</span> {movie.runtimeMinutes}
+            <span className={headerSeparatorCss}>|</span> {movie.runtimeMinutes}
             &#x02009;min
+            <span className={hideDesktopCss}>
+              <span className={headerSeparatorCss}>|</span>{" "}
+              <a href="#credits">More...</a>
+            </span>
           </div>
         </header>
         {movie.backdrop && (
           <GatsbyImage
-            className={imageCss}
+            className={heroImageCss}
             image={movie.backdrop.childImageSharp.gatsbyImageData}
             alt={`A still from ${movie.title} (${movie.year})`}
             loading="eager"
@@ -213,43 +220,46 @@ export default function ReviewPage({
               className={reviewsListItemCss}
               key={review.frontmatter.sequence}
             >
-              <article className={reviewCss}>
+              <article>
                 <header
-                  className={slugCss}
+                  className={slugContainerCss}
                   id={review.frontmatter.sequence.toString()}
                 >
+                  <DateIcon className={reviewDateIconCss} />{" "}
                   <Grade
                     grade={review.frontmatter.grade}
-                    className={gradeCss}
+                    className={reviewGradeCss}
                   />
-                  <span className={slugOnCss}> on </span>
-                  <span className={slugDateCss}>{review.frontmatter.date}</span>
-                  <span className={slugViaCss}>
-                    {" "}
-                    via {review.frontmatter.venue}
-                    {review.frontmatter.venueNotes && (
-                      <span className={slugFootnoteCss}>
-                        {" "}
-                        <sup
-                          id={`fnref:venue-notes-${review.frontmatter.sequence}`}
-                        >
-                          <a
-                            href={`#fn:venue-footnotes-${review.frontmatter.sequence}`}
+                  <div>
+                    <span className={slugOnCss}> on </span>
+                    <span className={slugDateCss}>
+                      {review.frontmatter.date}
+                    </span>
+                    <span className={slugViaCss}>
+                      {" "}
+                      via {review.frontmatter.venue}
+                      {review.frontmatter.venueNotes && (
+                        <span className={slugFootnoteCss}>
+                          {" "}
+                          <sup
+                            id={`fnref:venue-notes-${review.frontmatter.sequence}`}
                           >
-                            1
-                          </a>
-                        </sup>
-                      </span>
-                    )}
-                  </span>
+                            <a
+                              href={`#fn:venue-footnotes-${review.frontmatter.sequence}`}
+                            >
+                              1
+                            </a>
+                          </sup>
+                        </span>
+                      )}
+                    </span>
+                  </div>
                 </header>
-                <div className={contentCss}>
-                  <RenderedMarkdown
-                    className={bodyCss}
-                    // eslint-disable-next-line react/no-danger
-                    text={review.linkedHtml}
-                  />
-                </div>
+                <RenderedMarkdown
+                  className={reviewContentCss}
+                  // eslint-disable-next-line react/no-danger
+                  text={review.linkedHtml}
+                />
                 {review.frontmatter.venueNotes && (
                   <div className="footnotes">
                     <ol>
@@ -274,61 +284,81 @@ export default function ReviewPage({
             </li>
           ))}
         </ul>
-        <aside className={creditsCss}>
-          <h1 className={creditsTitleCss}>
-            {movie.title} ({movie.year})
-          </h1>
-          {movie.akaTitles.length > 0 && (
-            <div className={akaContainerCss}>
-              Aka:
-              <ul className={akaListCss}>
-                {movie.akaTitles.map((akaTitle) => (
-                  <li key={akaTitle} className={akaListItemCss}>
-                    {akaTitle}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          <div className={directorsCss}>
-            <span className={castLabelCss}>Directed by</span>
-            {toSentenceArray(movie.directorNames)}
-          </div>
-          <div className={castCss}>
-            <span className={castLabelCss}>Starring</span>
-            {toSentenceArray(movie.principalCastNames)}
-          </div>
-          {movie.poster && (
-            <GatsbyImage
-              className={posterCss}
-              image={movie.poster.childImageSharp.gatsbyImageData}
-              alt={`A poster from ${movie.title} (${movie.year})`}
-              loading="eager"
-            />
-          )}
-          <div className={watchlistCss}>
-            <WatchlistLinks movie={movie} />
-          </div>
-        </aside>
         {movie.olderViewings.length > 0 && (
-          <div className={olderViewingsCss}>
+          <div className={olderViewingsContainerCss}>
             <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>
             <ul className={olderViewingsListCss}>
               {movie.olderViewings.map((viewing) => (
                 <li key={viewing.sequence} className={olderViewingsListItemCss}>
-                  <DateIcon className={viewingDateIconCss} />{" "}
+                  <DateIcon className={olderViewingsDateIconCss} />{" "}
                   <span className={olderViewingSlugCss}>
-                    <span className={dateCss}>{viewing.viewingDate}</span> via{" "}
-                    {viewing.venue}
+                    <span className={olderViewingsDateCss}>
+                      {viewing.viewingDate}
+                    </span>{" "}
+                    via {viewing.venue}
                   </span>
                 </li>
               ))}
             </ul>
           </div>
         )}
+        <aside id="credits" className={creditsContainerCss}>
+          {movie.poster && (
+            <GatsbyImage
+              className={creditsPosterCss}
+              image={movie.poster.childImageSharp.gatsbyImageData}
+              alt={`A poster from ${movie.title} (${movie.year})`}
+              loading="eager"
+            />
+          )}
+          <div className={creditsListCss}>
+            <div className={hideDesktopCss}>
+              <div className={creditsTitleCss}>{movie.title}</div>
+            </div>
+            <dl>
+              <div className={hideDesktopCss}>
+                <dt className={creditTermCss}>Year</dt>
+                <dd>{movie.year}</dd>
+                {movie.akaTitles.length > 0 && (
+                  <>
+                    <dt className={creditTermCss}>Original Title</dt>
+                    <dd>{movie.akaTitles[0]}</dd>
+                  </>
+                )}
+                <dt className={creditTermCss}>Financing</dt>
+                <dd>{toSentenceArray(movie.countries)}</dd>
+                <dt className={creditTermCss}>Running Time</dt>
+                <dd>{movie.runtimeMinutes}min</dd>
+              </div>
+              <dt className={creditTermCss}>Directed by</dt>
+              <dd>{toSentenceArray(movie.directorNames)}</dd>
+              <dt className={creditTermCss}>Starring</dt>
+              <dd>{toSentenceArray(movie.principalCastNames)}</dd>
+            </dl>
+          </div>
+          <div className={creditsWatchlistCss}>
+            <WatchlistLinks movie={movie} />
+          </div>
+          <a
+            href="#top"
+            className={[backToTopContainerCss, hideDesktopCss].join(" ")}
+          >
+            <div className={backToTopInnerCss}>
+              <svg viewBox="0 0 24 24" className={backToTopArrowCss}>
+                <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
+              </svg>
+            </div>
+          </a>
+        </aside>
         <Related movie={movie} />
       </main>
-      {}
+      {structuredData && (
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
     </Layout>
   );
 }
@@ -481,7 +511,7 @@ export const pageQuery = graphql`
             layout: CONSTRAINED
             formats: [JPG, AVIF]
             quality: 80
-            width: 250
+            width: 309
             placeholder: TRACED_SVG
           )
         }

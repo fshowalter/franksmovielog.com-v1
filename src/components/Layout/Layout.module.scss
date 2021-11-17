@@ -76,7 +76,9 @@
       var(--step-1),
       1fr
     );
-  grid-template-rows: 1.5rem auto auto 1.5rem auto 1.5rem auto 1.5rem;
+  grid-template-rows: var(--step-1) auto auto var(--step-1) auto var(--step-1) auto var(
+      --step-1
+    );
   justify-items: center;
 
   @media (min-width: breakpoints.$desktop) {
