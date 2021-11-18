@@ -168,11 +168,6 @@ exports[`/reviews/{slug} renders 1`] = `
             Rio Bravo
           </h1>
           <div
-            class="headerOriginalTitleCss"
-          >
-            (Howard Hawks' Rio Bravo)
-          </div>
-          <div
             class="headerMetaCss"
           >
             1959 
@@ -187,7 +182,7 @@ exports[`/reviews/{slug} renders 1`] = `
             >
               |
             </span>
-             141 min
+             141 min 
             <span
               class="hideDesktopCss"
             >
@@ -584,14 +579,6 @@ exports[`/reviews/{slug} renders 1`] = `
                 </dt>
                 <dd>
                   1959
-                </dd>
-                <dt
-                  class="creditTermCss"
-                >
-                  Original Title
-                </dt>
-                <dd>
-                  Howard Hawks' Rio Bravo
                 </dd>
                 <dt
                   class="creditTermCss"
@@ -1758,11 +1745,6 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
             The Quatermass Xperiment
           </h1>
           <div
-            class="headerOriginalTitleCss"
-          >
-            (The Quatermass Experiment)
-          </div>
-          <div
             class="headerMetaCss"
           >
             1955 
@@ -1783,7 +1765,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
             >
               |
             </span>
-             82 min
+             82 min 
             <span
               class="hideDesktopCss"
             >
@@ -2044,14 +2026,6 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                 </dt>
                 <dd>
                   1955
-                </dd>
-                <dt
-                  class="creditTermCss"
-                >
-                  Original Title
-                </dt>
-                <dd>
-                  The Quatermass Experiment
                 </dd>
                 <dt
                   class="creditTermCss"

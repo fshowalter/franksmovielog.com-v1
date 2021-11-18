@@ -180,8 +180,10 @@ export default function ReviewPage({
       <main id="top" className={containerCss}>
         <header className={headerContainerCss}>
           <h1 className={headerTitleCss}>{movie.title}</h1>
-          {movie.akaTitles.length > 0 && (
-            <div className={headerOriginalTitleCss}>({movie.akaTitles[0]})</div>
+          {movie.originalTitle && (
+            <div className={headerOriginalTitleCss}>
+              ({movie.originalTitle})
+            </div>
           )}
           <div className={headerMetaCss}>
             {movie.year} <span className={headerSeparatorCss}>|</span>{" "}
@@ -199,7 +201,7 @@ export default function ReviewPage({
               );
             }, null)}{" "}
             <span className={headerSeparatorCss}>|</span> {movie.runtimeMinutes}
-            &#x02009;min
+            &#x02009;min{" "}
             <span className={hideDesktopCss}>
               <span className={headerSeparatorCss}>|</span>{" "}
               <a href="#credits">More...</a>
@@ -319,10 +321,10 @@ export default function ReviewPage({
               <div className={hideDesktopCss}>
                 <dt className={creditTermCss}>Year</dt>
                 <dd>{movie.year}</dd>
-                {movie.akaTitles.length > 0 && (
+                {movie.originalTitle && (
                   <>
                     <dt className={creditTermCss}>Original Title</dt>
-                    <dd>{movie.akaTitles[0]}</dd>
+                    <dd>{movie.originalTitle}</dd>
                   </>
                 )}
                 <dt className={creditTermCss}>Financing</dt>
@@ -371,7 +373,7 @@ interface PageQueryResult {
     countries: string[];
     runtimeMinutes: number;
     lastReviewGrade: string;
-    akaTitles: string[];
+    originalTitle: string;
     principalCastNames: string[];
     directorNames: string[];
     browseMore: BrowseMoreMovie[];
@@ -450,7 +452,7 @@ export const pageQuery = graphql`
       countries
       runtimeMinutes: runtime_minutes
       lastReviewGrade
-      akaTitles: aka_titles
+      originalTitle: original_title
       principalCastNames: principal_cast_names
       directorNames: director_names
       reviews {
