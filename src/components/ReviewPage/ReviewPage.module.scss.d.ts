@@ -22,6 +22,7 @@ export const olderViewingsHeadingCss: string;
 export const olderViewingsListCss: string;
 export const olderViewingsListItemCss: string;
 export const olderViewingSlugCss: string;
+export const relatedAvaterCss: string;
 export const relatedCss: string;
 export const relatedHeaderCss: string;
 export const relatedHeadingCss: string;
