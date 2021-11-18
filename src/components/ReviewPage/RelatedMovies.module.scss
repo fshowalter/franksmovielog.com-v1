@@ -17,6 +17,7 @@
 }
 
 .listItemTitleCss {
+  color: var(--color-link);
   font-size: 1rem;
   line-height: 1.3;
   margin-top: 0.25rem;
@@ -33,4 +34,26 @@
   height: 1rem;
   margin-top: 0.15rem;
   width: auto;
+}
+
+.containerCss {
+  padding: var(--step-1);
+
+  &:last-of-type {
+    background-color: unset;
+    border: none;
+  }
+
+  @media (min-width: breakpoints.$tablet) {
+    background-color: #f9fafa;
+    border: solid 1px rgb(0 0 0 / 10%);
+    margin: 0 calc(-1 * var(--step-1));
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    background-color: unset;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 }

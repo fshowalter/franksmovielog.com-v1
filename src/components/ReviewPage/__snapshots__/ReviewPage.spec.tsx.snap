@@ -594,7 +594,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   Running Time
                 </dt>
                 <dd>
-                  141min
+                  141 min
                 </dd>
               </div>
               <dt
@@ -832,7 +832,9 @@ exports[`/reviews/{slug} renders 1`] = `
         <div
           class="relatedCss"
         >
-          <nav>
+          <nav
+            class="containerCss"
+          >
             <header
               class="relatedHeaderCss"
             >
@@ -1199,7 +1201,9 @@ exports[`/reviews/{slug} renders 1`] = `
               </li>
             </ul>
           </nav>
-          <nav>
+          <nav
+            class="containerCss"
+          >
             <header
               class="relatedHeaderCss"
             >
@@ -2084,7 +2088,7 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
                   Running Time
                 </dt>
                 <dd>
-                  82min
+                  82 min
                 </dd>
               </div>
               <dt
@@ -2184,7 +2188,9 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
         <div
           class="relatedCss"
         >
-          <nav>
+          <nav
+            class="containerCss"
+          >
             <header
               class="relatedHeaderCss"
             >
@@ -2551,7 +2557,9 @@ exports[`/reviews/{slug} renders with multiple countries and a collection 1`] = 
               </li>
             </ul>
           </nav>
-          <nav>
+          <nav
+            class="containerCss"
+          >
             <header
               class="relatedHeaderCss"
             >
