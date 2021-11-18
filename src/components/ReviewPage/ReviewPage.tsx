@@ -370,7 +370,7 @@ export default function ReviewPage({
                 <dt className={creditTermCss}>Financing</dt>
                 <dd>{toSentenceArray(movie.countries)}</dd>
                 <dt className={creditTermCss}>Running Time</dt>
-                <dd>{movie.runtimeMinutes}min</dd>
+                <dd>{movie.runtimeMinutes} min</dd>
               </div>
               <dt className={creditTermCss}>Directed by</dt>
               <dd>{toSentenceArray(movie.directorNames)}</dd>

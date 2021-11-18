@@ -193,6 +193,7 @@
 .creditsContainerCss {
   align-content: start;
   background-color: var(--color-background);
+  border-top: solid 1px rgb(0 0 0 / 15%);
   display: grid;
   font-size: 1rem;
   grid-area: credits;
@@ -201,7 +202,7 @@
   grid-template-rows: auto;
   letter-spacing: 0.2px;
   margin-top: var(--step-5);
-  padding: var(--step-3) 0 3rem;
+  padding: var(--step-5) 0 var(--step-5);
   position: relative;
 
   @media (min-width: breakpoints.$tablet) {
@@ -249,10 +250,15 @@
 .creditsWatchlistCss {
   align-self: start;
   grid-area: watchlist;
-  margin-top: 1.5rem;
+
+  // margin-top: 1.5rem;
 
   a {
     color: var(--color-link);
+  }
+
+  > div {
+    margin-top: var(--step-1);
   }
 
   @media (min-width: breakpoints.$desktop) {
@@ -372,7 +378,7 @@
   color: rgb(255 255 255);
   cursor: pointer;
   display: flex;
-  height: 3rem;
+  height: var(--step-5);
   justify-content: center;
   margin-bottom: 0;
   margin-right: 0;
@@ -380,7 +386,6 @@
   position: relative;
   position: absolute;
   right: 0;
-  transition: all 0.3s ease 0s;
 
   &::before {
     background-color: rgb(255 255 255);
@@ -390,7 +395,6 @@
     opacity: 0%;
     pointer-events: none;
     position: absolute;
-    transition: all 0.3s ease 0s;
     z-index: 1;
   }
 
