@@ -273,6 +273,7 @@
 }
 
 .relatedHeaderCss {
+  align-items: center;
   border-bottom: 1px solid var(--color-background);
   display: flex;
   justify-content: space-between;
@@ -282,7 +283,9 @@
 }
 
 .relatedHeadingCss {
+  align-items: center;
   color: var(--color-text-secondary);
+  display: flex;
 }
 
 .relatedMoreCss {
@@ -293,6 +296,18 @@
   color: rgb(0 0 0 / 75%);
   font-weight: 600;
   letter-spacing: 0.2px;
+}
+
+.relatedAvaterCss {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--color-background);
+  display: none;
+  margin-right: 1ch;
+  transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
+
+  @media (min-width: breakpoints.$tablet) {
+    display: block !important;
+  }
 }
 
 .olderViewingsHeadingCss {

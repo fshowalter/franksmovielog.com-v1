@@ -34,6 +34,7 @@ import {
   olderViewingsListCss,
   olderViewingsListItemCss,
   olderViewingSlugCss,
+  relatedAvaterCss,
   relatedCss,
   relatedHeaderCss,
   relatedHeadingCss,
@@ -86,7 +87,16 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         <RelatedMovies key={collection.name} movies={collection.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              More <span className={relatedNameCss}>{collection.name}</span>
+              {collection.avatar && (
+                <GatsbyImage
+                  image={collection.avatar.childImageSharp.gatsbyImageData}
+                  alt={collection.name}
+                  className={relatedAvaterCss}
+                />
+              )}{" "}
+              <span>
+                More <span className={relatedNameCss}>{collection.name}</span>
+              </span>
             </h3>
             <Link
               to={`/watchlist/collections/${collection.slug}/`}
@@ -101,7 +111,17 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         <RelatedMovies key={performer.slug} movies={performer.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              More with <span className={relatedNameCss}>{performer.name}</span>
+              {performer.avatar && (
+                <GatsbyImage
+                  image={performer.avatar.childImageSharp.gatsbyImageData}
+                  alt={performer.name}
+                  className={relatedAvaterCss}
+                />
+              )}{" "}
+              <span>
+                More with{" "}
+                <span className={relatedNameCss}>{performer.name}</span>
+              </span>
             </h3>
             <Link
               to={`/watchlist/performers/${performer.slug}/`}
@@ -116,8 +136,17 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         <RelatedMovies key={director.slug} movies={director.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              More directed by{" "}
-              <span className={relatedNameCss}>{director.name}</span>
+              {director.avatar && (
+                <GatsbyImage
+                  image={director.avatar.childImageSharp.gatsbyImageData}
+                  alt={director.name}
+                  className={relatedAvaterCss}
+                />
+              )}{" "}
+              <span>
+                More directed by{" "}
+                <span className={relatedNameCss}>{director.name}</span>
+              </span>
             </h3>
             <Link
               to={`/watchlist/directors/${director.slug}/`}
@@ -132,8 +161,17 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         <RelatedMovies key={writer.slug} movies={writer.browseMore}>
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              More written by{" "}
-              <span className={relatedNameCss}>{writer.name}</span>
+              {writer.avatar && (
+                <GatsbyImage
+                  image={writer.avatar.childImageSharp.gatsbyImageData}
+                  alt={writer.name}
+                  className={relatedAvaterCss}
+                />
+              )}{" "}
+              <span>
+                More written by{" "}
+                <span className={relatedNameCss}>{writer.name}</span>
+              </span>
             </h3>
             <Link
               to={`/watchlist/writers/${writer.slug}/`}
@@ -147,7 +185,9 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
       <RelatedMovies movies={pageData.movie.browseMore}>
         <header className={relatedHeaderCss}>
           <h3 className={relatedHeadingCss}>
-            More <span className={relatedNameCss}>Reviews</span>
+            <span>
+              More <span className={relatedNameCss}>Reviews</span>
+            </span>
           </h3>
           <Link to="/reviews/" className={relatedMoreCss}>
             See All &raquo;
