@@ -19,6 +19,7 @@ a {
 
 body {
   background-color: var(--color-background);
+  color: var(--color-text-primary);
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-kerning: normal;
   margin: 0;
@@ -58,6 +59,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--color-text-headings);
   font-size: inherit;
   font-weight: inherit;
 }

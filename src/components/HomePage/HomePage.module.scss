@@ -99,7 +99,7 @@
 }
 
 .imageLinkCss {
-  border: 0.5em solid #e9e7e0;
+  border: 0.5em solid var(--color-background);
   display: block;
   grid-area: image;
   line-height: 0;
@@ -171,7 +171,7 @@
 }
 
 .articleBodyCss {
-  color: rgb(0 0 0 / 65%);
+  color: var(--color-text-tertiary);
   font-size: 18px;
   grid-area: body;
 }

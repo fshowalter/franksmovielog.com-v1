@@ -1,9 +1,10 @@
 :root {
   --color-background: #e9e7e0;
   --color-content-background: #fff;
+  --color-text-heading: black;
   --color-text-primary: rgb(0 0 0 / 75%);
   --color-text-secondary: rgb(0 0 0 / 60%);
-  --color-text-tertiary: #969696;
+  --color-text-tertiary: rgb(0 0 0 / 65%);
   --color-link: #054a93;
   --font-serif: "Charter", "Iowan Old Style", "Georgia", "Cambria",
     '"Times New Roman"', "Times", "serif";
@@ -110,5 +111,18 @@
 @media screen and (min-width: 1140px) {
   :root {
     --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #484745;
+    --color-content-background: #322f2f;
+    --color-text-headings: rgb(251 248 248 / 90%);
+    --color-text-primary: rgb(251 248 248 / 75%);
+    --color-text-secondary: rgb(251 248 248 / 60%);
+    --color-text-tertiary: rgb(251 248 248 / 65%);
+    --color-link: #499ef8;
+    --color-highlight: #14bd41;
   }
 }

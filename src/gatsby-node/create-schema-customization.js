@@ -837,27 +837,6 @@ const TopVenuesJson = {
   },
 };
 
-const GenreStat = {
-  name: "GenreStat",
-  fields: {
-    name: "String!",
-    viewing_count: "Int!",
-  },
-};
-
-const TopGenresJson = {
-  name: "TopGenresJson",
-  interfaces: ["Node"],
-  fields: {
-    viewing_year: "String!",
-    total_viewing_count: "Int!",
-    stats: "[GenreStat!]!",
-  },
-  extensions: {
-    infer: false,
-  },
-};
-
 const MostWatchedMovieViewing = {
   name: "MostWatchedMovieViewing",
   fields: {
@@ -1112,8 +1091,6 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
     schema.buildObjectType(WatchlistEntitiesJson),
     schema.buildObjectType(VenueStat),
     schema.buildObjectType(TopVenuesJson),
-    schema.buildObjectType(GenreStat),
-    schema.buildObjectType(TopGenresJson),
     schema.buildObjectType(MostWatchedMovieViewing),
     schema.buildObjectType(MostWatchedMovie),
     schema.buildObjectType(MostWatchedMoviesJson),

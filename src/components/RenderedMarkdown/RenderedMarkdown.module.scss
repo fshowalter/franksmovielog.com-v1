@@ -1,5 +1,5 @@
 .renderedMarkdownCss {
-  color: rgb(0 0 0 / 75%);
+  color: var(--color-text-primary);
   font-size: 19px;
   font-weight: 300;
   letter-spacing: 0.3px;
@@ -14,7 +14,7 @@
 
   blockquote {
     border-left: 0.5rem solid var(--color-background);
-    color: rgb(0 0 0 / 65%);
+    color: var(--color-text-tertiary);
     font-style: italic;
     margin: 1.5em 0;
     padding: 0 var(--step-1);
@@ -30,20 +30,17 @@
   }
 
   h1 {
-    color: #000;
     font-size: var(--step-3);
     margin-bottom: var(--step-5);
     text-align: center;
   }
 
   h2 {
-    color: #000;
     font-size: var(--step-2);
     margin-bottom: 0.5rem;
   }
 
   h3 {
-    color: #000;
     font-size: var(--step-1);
     margin-bottom: 0.25rem;
   }

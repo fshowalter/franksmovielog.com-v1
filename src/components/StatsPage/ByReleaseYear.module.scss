@@ -61,7 +61,7 @@
 }
 
 .headerRowCss {
-  background-color: #fff;
+  background-color: var(--color-content-background);
   position: sticky;
   top: 38px;
   z-index: 100;
