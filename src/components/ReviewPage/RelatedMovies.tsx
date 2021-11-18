@@ -3,6 +3,7 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import Grade from "../Grade";
 import {
+  containerCss,
   listCss,
   listItemGradeCss,
   listItemImageLinkCss,
@@ -57,7 +58,7 @@ export default function RelatedMovies({
   }
 
   return (
-    <nav>
+    <nav className={containerCss}>
       {children}
       <ul className={listCss}>
         {movies.map((movie) => {

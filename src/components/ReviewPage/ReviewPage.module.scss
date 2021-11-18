@@ -3,13 +3,12 @@
 .containerCss {
   border-top: solid 1px var(--color-background);
   display: grid;
-  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" ". related .";
+  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" "related related related";
   grid-template-columns: var(--step-1) 1fr var(--step-1);
   grid-template-rows: auto;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 40rem;
-  padding-bottom: var(--step-5);
 
   @media (min-width: breakpoints.$tablet) {
     grid-template-areas: "title" "image" "reviews" "viewings" "credits" "related";
@@ -18,7 +17,7 @@
 
   @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
-    grid-template-columns: minmax(auto, 63ch) 1fr 25%;
+    grid-template-columns: minmax(auto, 66ch) 1fr 25%;
     grid-template-rows: none;
     max-width: unset;
     row-gap: 3rem;
@@ -206,12 +205,14 @@
   position: relative;
 
   @media (min-width: breakpoints.$tablet) {
+    border: solid 1px rgb(0 0 0 / 15%);
     margin: 4rem calc(-1 * var(--step-1)) 0;
     overflow: hidden;
   }
 
   @media (min-width: breakpoints.$desktop) {
     background-color: unset;
+    border: none;
     grid-template-areas: "poster" "credits" "watchlist";
     grid-template-columns: 1fr;
     grid-template-rows: unset;
@@ -251,8 +252,6 @@
   align-self: start;
   grid-area: watchlist;
 
-  // margin-top: 1.5rem;
-
   a {
     color: var(--color-link);
   }
@@ -260,21 +259,25 @@
   > div {
     margin-top: var(--step-1);
   }
-
-  @media (min-width: breakpoints.$desktop) {
-    padding: 0 0.5rem;
-  }
 }
 
 .relatedCss {
+  background-color: #f9fafa;
   display: grid;
   grid-area: related;
-  margin-top: var(--step-5);
+  padding-bottom: var(--step-5);
+  padding-top: var(--step-5);
   row-gap: var(--step-5);
 
-  @media (min-width: breakpoints.$tablet) {
+  @media (min-width: 40rem) {
+    background-color: unset;
     margin-top: 4rem;
+    padding-top: 0;
     row-gap: 4rem;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    row-gap: 4.5rem;
   }
 }
 
