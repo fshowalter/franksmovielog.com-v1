@@ -1,7 +1,7 @@
 @use "./src/styles/breakpoints";
 
 .containerCss {
-  border-top: solid 1px var(--color-background);
+  border-top: solid 1px var(--color-border-default);
   margin: 0 auto;
   max-width: 40rem;
   padding-top: var(--step-5);
@@ -31,8 +31,7 @@
 }
 
 .taglineCss {
-  color: var(--color-text-secondary);
-  font-family: var(--font-serif);
+  color: var(--color-fg-subtle);
   font-size: 16px;
   text-align: center;
 

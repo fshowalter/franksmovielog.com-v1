@@ -3,20 +3,21 @@
 }
 
 .percentNumberCss {
+  fill: var(--color-fg-default);
   font-size: 0.5em;
   text-anchor: middle;
 }
 
 .percentGraphBackgroundCss {
   fill: none;
-  stroke: #eee;
+  stroke: var(--color-bg-accent);
   stroke-width: 3.8;
 }
 
 .percentGraphProgressCss {
   animation: progress 1s ease-out forwards;
   fill: none;
-  stroke: #77e895;
+  stroke: var(--color-bg-progress);
   stroke-linecap: round;
   stroke-width: 2.8;
 }

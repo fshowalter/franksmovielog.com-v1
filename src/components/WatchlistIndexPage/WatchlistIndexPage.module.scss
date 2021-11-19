@@ -2,7 +2,7 @@
 @use "sass:color";
 
 .containerCss {
-  border-top: solid 1px var(--color-background);
+  border-top: solid 1px var(--color-border-default);
   display: grid;
   margin: 0 auto;
   max-width: 40rem;
@@ -54,7 +54,7 @@
 }
 
 .listInfoCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-weight: 300;
   justify-self: center;
   margin-top: var(--step-1);
@@ -102,7 +102,7 @@
   padding-top: 1rem;
 
   &:nth-child(odd) {
-    background-color: #e9e7e061;
+    background-color: var(--color-bg-stripe);
   }
 }
 
@@ -122,12 +122,12 @@
 }
 
 .listItemTitleYearCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-size: 0.875rem;
 }
 
 .listItemSlugCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-size: 0.875rem;
   grid-area: slug;
   letter-spacing: 0.5px;
@@ -151,7 +151,7 @@
 }
 
 .percentTotalsCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-size: 1rem;
   margin-top: 1.5rem;
 }
@@ -165,45 +165,41 @@
 }
 
 .typeLinkCss {
-  background-color: color.adjust(#fff, $lightness: -2%);
-  border: solid 1px color.adjust(#e9e7e0, $lightness: -10%);
+  background-color: var(--color-bg-subtle);
+  border: solid 1px var(--color-border-default);
   border-radius: 1rem;
-  color: var(--color-link);
+  color: var(--color-fg-accent);
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
   padding: 0.5rem;
   white-space: nowrap;
 
-  @media (min-width: breakpoints.$desktop) {
-    border-color: var(--color-background);
-  }
-
   &:hover {
-    border-color: var(--color-link);
+    border-color: var(--color-border-accent);
   }
 }
 
 .typeIconCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   height: 20px;
   margin-right: 1ch;
   width: 20px;
 }
 
 .typeLinkCss:hover > .typeIconCss {
-  fill: var(--color-link);
+  fill: var(--color-fg-accent);
 }
 
 .quoteCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: block;
   font-weight: bold;
   margin-bottom: var(--step--1);
 }
 
 .listHeaderGroupCss {
-  background-color: var(--color-background);
+  background-color: var(--color-bg-accent);
   display: block;
   font-size: 1.125rem;
   padding: 0.5rem var(--step-1);

@@ -1,0 +1,66 @@
+@use "./src/styles/breakpoints";
+
+.tableCss {
+  border: 1px solid var(--color-border-default);
+  border-collapse: collapse;
+  line-height: 1.75;
+  margin: 0 auto var(--step-5);
+  width: 100%;
+}
+
+.tableHeadCss {
+  background-color: var(--color-bg-default);
+  line-height: 2.5;
+  position: sticky;
+  top: 38px;
+  z-index: 100;
+}
+
+.tableRowCss {
+  font-size: 1.125rem;
+
+  &:nth-child(odd) {
+    background-color: var(--color-bg-stripe);
+  }
+}
+
+.tableHeaderCellLeftCss {
+  line-height: 2.5;
+  padding-left: var(--step-1);
+  text-align: left;
+}
+
+.tableHeaderCellRightCss {
+  padding-right: var(--step-1);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tableDataCellLeftCss {
+  padding: 0 var(--step-1);
+
+  @media (min-width: breakpoints.$tablet) {
+    white-space: nowrap;
+  }
+}
+
+.tableDataCellRightCss {
+  font-feature-settings: "tnum";
+  padding-right: var(--step-1);
+  text-align: right;
+  vertical-align: top;
+}
+
+.tableDataCellFillCss {
+  width: 100%;
+}
+
+.hideOnSmallScreensCss {
+  @media (max-width: breakpoints.$tablet) {
+    width: 0;
+
+    > * {
+      display: none;
+    }
+  }
+}

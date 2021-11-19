@@ -1,35 +1,14 @@
 import React from "react";
-import {
-  barCellCss,
-  barCss,
-  decadeCellCss,
-  decadeHeaderCss,
-  headerCss,
-  headerRowCss,
-  rowCss,
-  tableCss,
-  viewingsCellCss,
-  viewingsHeaderCss,
-} from "./ByReleaseYear.module.scss";
+import Bar from "./Bar";
+import StatHeading from "./StatHeading";
 import type { DecadeStat } from "./StatsPage";
-
-function BarGraph({
-  value,
-  maxValue,
-}: {
-  value: number;
-  maxValue: number;
-}): JSX.Element {
-  const barPercentProperty = {
-    "--bar-percent": `${(value / maxValue) * 100}%`,
-  } as React.CSSProperties;
-
-  return (
-    <div className={barCss} style={barPercentProperty}>
-      &nbsp;
-    </div>
-  );
-}
+import {
+  Table,
+  TableDataCell,
+  TableHead,
+  TableHeaderCell,
+  TableRow,
+} from "./Table";
 
 export default function ByReleaseYear({
   decades,
@@ -43,29 +22,29 @@ export default function ByReleaseYear({
 
   return (
     <section>
-      <h3 className={headerCss}>By Release Year</h3>
-      <table className={tableCss}>
-        <thead className={headerRowCss}>
+      <StatHeading>By Release Year</StatHeading>
+      <Table>
+        <TableHead>
           <tr>
-            <th className={decadeHeaderCss}>Decade</th>
+            <TableHeaderCell align="left">Decade</TableHeaderCell>
             <th>&nbsp;</th>
-            <th className={viewingsHeaderCss}>Viewings</th>
+            <TableHeaderCell align="right">Viewings</TableHeaderCell>
           </tr>
-        </thead>
+        </TableHead>
         <tbody>
           {decades.map((stat) => {
             return (
-              <tr key={stat.decade} className={rowCss}>
-                <td className={decadeCellCss}>{stat.decade}</td>
-                <td className={barCellCss}>
-                  <BarGraph value={stat.viewingCount} maxValue={maxBar} />
-                </td>
-                <td className={viewingsCellCss}>{stat.viewingCount}</td>
-              </tr>
+              <TableRow key={stat.decade}>
+                <TableDataCell align="left">{stat.decade}</TableDataCell>
+                <TableDataCell align="fill">
+                  <Bar value={stat.viewingCount} maxValue={maxBar} />
+                </TableDataCell>
+                <TableDataCell align="right">{stat.viewingCount}</TableDataCell>
+              </TableRow>
             );
           })}
         </tbody>
-      </table>
+      </Table>
     </section>
   );
 }

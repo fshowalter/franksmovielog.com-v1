@@ -413,7 +413,7 @@ interface PageQueryResult {
     countries: string[];
     runtimeMinutes: number;
     lastReviewGrade: string;
-    originalTitle: string;
+    originalTitle: string | null;
     principalCastNames: string[];
     directorNames: string[];
     browseMore: BrowseMoreMovie[];

@@ -1,0 +1,21 @@
+@use "./src/styles/breakpoints";
+
+.barCss {
+  background-image: linear-gradient(
+    to right,
+    var(--color-bg-progress),
+    var(--color-bg-progress) var(--bar-percent),
+    transparent var(--bar-percent),
+    transparent
+  );
+  opacity: 33%;
+  width: 100%;
+}
+
+.hideOnSmallScreensCss {
+  display: none;
+
+  @media (min-width: breakpoints.$tablet) {
+    display: block;
+  }
+}
