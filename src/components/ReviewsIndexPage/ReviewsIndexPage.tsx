@@ -1,5 +1,5 @@
-import { graphql, Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import Select from "react-select";
 import { collator } from "../../utils/sort-utils";
@@ -7,9 +7,9 @@ import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
-import Grade from "../Grade";
 import GradeInput from "../GradeInput";
 import Layout from "../Layout";
+import { Poster, PosterList } from "../PosterList";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
@@ -20,14 +20,8 @@ import {
   genresSelectLabelCss,
   genresWrapCss,
   leftCss,
-  listCss,
   listHeaderGroupCss,
   listInfoCss,
-  listItemGradeCss,
-  listItemImageLinkCss,
-  listItemSlugCss,
-  listItemTitleCss,
-  listItemTitleYearCss,
   pageHeaderCss,
   quoteCss,
   rightCss,
@@ -153,53 +147,6 @@ function groupViewings({
   return groupedViewings;
 }
 
-function ListItem({ viewing }: { viewing: Movie }): JSX.Element {
-  if (viewing.slug) {
-    return (
-      <li>
-        <Link className={listItemImageLinkCss} to={`/reviews/${viewing.slug}/`}>
-          {viewing.poster && (
-            <GatsbyImage
-              image={viewing.poster.childImageSharp.gatsbyImageData}
-              alt={`A poster from ${viewing.title} (${viewing.year})`}
-            />
-          )}
-        </Link>
-        <div className={listItemTitleCss}>
-          <Link to={`/reviews/${viewing.slug}/`}>
-            {viewing.title}{" "}
-            <span className={listItemTitleYearCss}>{viewing.year}</span>
-          </Link>
-        </div>
-        <div className={listItemSlugCss}>
-          {viewing.grade && (
-            <Grade grade={viewing.grade} className={listItemGradeCss} />
-          )}
-          <div>{viewing.viewingDate}</div>
-          <div>{viewing.venue}</div>
-        </div>
-      </li>
-    );
-  }
-
-  return (
-    <li>
-      <GatsbyImage
-        image={viewing.poster.childImageSharp.gatsbyImageData}
-        alt="An unreviewed title."
-      />
-      <div className={listItemTitleCss}>
-        {viewing.title}{" "}
-        <span className={listItemTitleYearCss}>{viewing.year}</span>
-      </div>
-      <div className={listItemSlugCss}>
-        <div>{viewing.viewingDate}</div>
-        <div>{viewing.venue}</div>
-      </div>
-    </li>
-  );
-}
-
 /**
  * Renders the reviews page.
  */
@@ -308,12 +255,15 @@ export default function ReviewsIndexPage({
                     borderRadius: 4,
                     colors: {
                       ...theme.colors,
-                      neutral0: "#fafafa",
-                      neutral20: "var(--color-background)",
-                      neutral30: "var(--color-background)",
-                      neutral50: "var(--color-text-secondary)",
+                      neutral0: "var(--color-bg-subtle)",
+                      neutral10: "var(--color-bg-default)",
+                      neutral20: "var(--color-border-default)",
+                      neutral30: "var(--color-bg-subtle)",
+                      neutral80: "var(--color-fg-subtle)",
+                      primary25: "var(--color-bg-default)",
+                      primary50: "var(--color-bg-default)",
                       dangerLight: "#B2D4FF",
-                      danger: "var(--color-link)",
+                      danger: "var(--color-fg-accent)",
                     },
                   })}
                   classNamePrefix="reactSelect"
@@ -376,13 +326,22 @@ export default function ReviewsIndexPage({
                   >
                     {group}
                   </div>
-                  <ol className={listCss}>
+                  <PosterList>
                     {viewings.map((viewing) => {
                       return (
-                        <ListItem viewing={viewing} key={viewing.sequence} />
+                        <Poster
+                          key={viewing.sequence}
+                          title={viewing.title}
+                          year={viewing.year}
+                          grade={viewing.grade}
+                          date={viewing.viewingDate}
+                          venue={viewing.venue}
+                          slug={viewing.slug}
+                          image={viewing.poster}
+                        />
                       );
                     })}
-                  </ol>
+                  </PosterList>
                 </li>
               );
             })}

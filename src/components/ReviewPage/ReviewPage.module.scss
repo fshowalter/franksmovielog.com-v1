@@ -1,7 +1,7 @@
 @use "./src/styles/breakpoints";
 
 .containerCss {
-  border-top: solid 1px var(--color-background);
+  border-top: solid 1px var(--color-border-default);
   display: grid;
   grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" "related related related";
   grid-template-columns: var(--step-1) 1fr var(--step-1);
@@ -49,7 +49,7 @@
   padding-top: var(--step-3);
 
   @media (min-width: breakpoints.$desktop) {
-    border-top: 1px solid var(--color-background);
+    border-top: 1px solid var(--color-border-default);
   }
 }
 
@@ -81,7 +81,7 @@
 }
 
 .reviewsListItemCss:not(:first-child)::before {
-  border-top: solid 1px var(--color-background);
+  border-top: solid 1px var(--color-border-default);
   content: " ";
   height: 1px;
   left: 25%;
@@ -117,7 +117,7 @@
 }
 
 .slugOnCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: block;
   margin: 0 auto;
 
@@ -127,7 +127,7 @@
 }
 
 .slugViaCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: block;
   margin: 0 auto;
 
@@ -137,14 +137,14 @@
 }
 
 .slugFootnoteCss {
-  color: var(--color-text);
+  color: var(--color-fg-default);
   color: rgb(0 0 0 / 75%);
   letter-spacing: 0.3px;
   text-align: left;
 }
 
 .slugDateCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: block;
   font-weight: 700;
   margin: 0 auto;
@@ -160,7 +160,6 @@
 }
 
 .headerTitleCss {
-  color: #000;
   font-size: var(--step-3);
   line-height: 1.1;
 }
@@ -177,7 +176,7 @@
 }
 
 .headerOriginalTitleCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
 }
 
 .reviewContentCss {
@@ -191,7 +190,7 @@
 
 .creditsContainerCss {
   align-content: start;
-  background-color: var(--color-background);
+  background-color: var(--color-bg-accent);
   border-top: solid 1px rgb(0 0 0 / 15%);
   display: grid;
   font-size: 1rem;
@@ -221,7 +220,7 @@
 }
 
 .creditsListCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   grid-area: credits;
 }
 
@@ -253,7 +252,7 @@
   grid-area: watchlist;
 
   a {
-    color: var(--color-link);
+    color: var(--color-fg-accent);
   }
 
   > div {
@@ -262,7 +261,7 @@
 }
 
 .relatedCss {
-  background-color: #f9fafa;
+  background-color: #var(--color-bg-subtle);
   display: grid;
   grid-area: related;
   padding-bottom: var(--step-5);
@@ -283,7 +282,7 @@
 
 .relatedHeaderCss {
   align-items: center;
-  border-bottom: 1px solid var(--color-background);
+  border-bottom: 1px solid var(--color-border-default);
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
@@ -293,23 +292,23 @@
 
 .relatedHeadingCss {
   align-items: center;
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: flex;
 }
 
 .relatedMoreCss {
-  color: var(--color-link);
+  color: var(--color-fg-accent);
 }
 
 .relatedNameCss {
-  color: rgb(0 0 0 / 75%);
+  color: var(--color-fg-muted);
   font-weight: 600;
   letter-spacing: 0.2px;
 }
 
 .relatedAvaterCss {
   border-radius: 50%;
-  box-shadow: 0 0 0 1px var(--color-background);
+  box-shadow: 0 0 0 1px var(--color-border-default);
   display: none;
   margin-right: 1ch;
   transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
@@ -320,8 +319,8 @@
 }
 
 .olderViewingsHeadingCss {
-  border-bottom: 1px solid var(--color-background);
-  color: rgb(0 0 0 / 75%);
+  border-bottom: 1px solid var(--color-border-default);
+  color: var(--color-fg-muted);
   display: flex;
   font-weight: 600;
   justify-content: space-between;
@@ -344,7 +343,7 @@
 
 .olderViewingsListItemCss {
   align-items: center;
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: grid;
   font-feature-settings: "tnum";
   grid-template-areas: "icon slug";
@@ -359,11 +358,11 @@
 }
 
 .headerSeparatorCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
 }
 
 .headerMetaCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-feature-settings: "tnum";
   margin-top: 0.75rem;
 }
@@ -421,7 +420,7 @@
 .backToTopArrowCss {
   align-items: center;
   display: flex;
-  fill: rgb(255 255 255);
+  fill: var(--color-fg-default);
   height: 31.5px;
   justify-content: center;
   transition: all 0.3s ease 0s;

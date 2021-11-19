@@ -2,7 +2,7 @@
 @use "sass:color";
 
 .containerCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-muted);
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
@@ -17,8 +17,8 @@
 
 .linkCss {
   align-items: center;
-  background-color: #f9fafa;
-  border: solid 1px color.adjust(#e9e7e0, $lightness: -10%);
+  background-color: var(--color-bg-subtle);
+  border: solid 1px var(--color-border-default);
   border-radius: 0.5rem;
   display: flex;
   margin-bottom: 1rem;
@@ -26,12 +26,8 @@
   padding: 0.5rem;
   white-space: nowrap;
 
-  @media (min-width: breakpoints.$desktop) {
-    border-color: var(--color-background);
-  }
-
   &:hover {
-    border-color: var(--color-link);
+    border-color: var(--color-border-accent);
   }
 }
 

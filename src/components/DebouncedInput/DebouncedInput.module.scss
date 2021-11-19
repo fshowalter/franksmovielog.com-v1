@@ -1,16 +1,17 @@
 @use "sass:color";
 
 .inputCss {
-  background-color: #fafafa;
-  border: solid 1px var(--color-background);
+  background-color: var(--color-bg-subtle);
+  border: solid 1px var(--color-border-default);
   border-radius: 4px;
+  color: var(--color-text-primary);
   font-size: 1rem;
   margin-top: 4px;
   padding: calc(0.5em - 1px) calc(0.75em - 1px);
 }
 
 .labelCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: grid;
   font-size: 14px;
   font-weight: bold;

@@ -1,11 +1,11 @@
 .renderedMarkdownCss {
-  color: var(--color-text-primary);
+  color: var(--color-fg-default);
   font-size: 19px;
   font-weight: 300;
   letter-spacing: 0.3px;
 
   a {
-    color: var(--color-link);
+    color: var(--color-fg-accent);
   }
 
   p {
@@ -13,8 +13,8 @@
   }
 
   blockquote {
-    border-left: 0.5rem solid var(--color-background);
-    color: var(--color-text-tertiary);
+    border-left: 0.5rem solid var(--color-border-default);
+    color: var(--color-fg-muted);
     font-style: italic;
     margin: 1.5em 0;
     padding: 0 var(--step-1);
@@ -46,7 +46,7 @@
   }
 
   hr {
-    border: 1px solid var(--color-background);
+    border: 1px solid var(--color-border-default);
     margin: 2.8rem auto;
     width: 75%;
   }

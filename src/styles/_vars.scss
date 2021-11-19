@@ -1,14 +1,18 @@
 :root {
-  --color-background: #e9e7e0;
-  --color-content-background: #fff;
-  --color-text-heading: black;
-  --color-text-primary: rgb(0 0 0 / 75%);
-  --color-text-secondary: rgb(0 0 0 / 60%);
-  --color-text-tertiary: rgb(0 0 0 / 65%);
-  --color-link: #054a93;
+  --color-fg-accent: #054a93;
+  --color-fg-default: rgb(0 0 0 / 75%);
+  --color-fg-muted: rgb(0 0 0 / 65%);
+  --color-fg-subtle: rgb(0 0 0 / 60%);
+  --color-bg-accent: #e9e7e0;
+  --color-bg-default: #fff;
+  --color-bg-subtle: #e9e7e033;
+  --color-bg-stripe: #e9e7e061;
+  --color-border-accent: #054a93;
+  --color-border-default: #e9e7e0;
+  --color-border-subtle: #e9e7e066;
   --font-serif: "Charter", "Iowan Old Style", "Georgia", "Cambria",
     '"Times New Roman"', "Times", "serif";
-  --color-highlight: #14bd41;
+  --color-bg-progress: #14bd41;
 
   /* @link https://utopia.fyi/generator?c=375,18,1.2,1140,24,1.25,5,2, */
   --fluid-min-width: 375;
@@ -116,13 +120,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #484745;
-    --color-content-background: #322f2f;
-    --color-text-headings: rgb(251 248 248 / 90%);
-    --color-text-primary: rgb(251 248 248 / 75%);
-    --color-text-secondary: rgb(251 248 248 / 60%);
-    --color-text-tertiary: rgb(251 248 248 / 65%);
-    --color-link: #499ef8;
-    --color-highlight: #14bd41;
+    --color-bg-accent: #484745;
+    --color-bg-default: #322f2f;
+    --color-bg-stripe: #48474563;
+    --color-bg-subtle: #242424;
+    --color-bg-progress: #379634;
+    --color-border-accent: #499ef8;
+    --color-border-default: #484745;
+    --color-border-subtle: rgb(0 0 0 / 15%);
+    --color-fg-accent: #499ef8;
+    --color-fg-default: rgb(255 255 255 / 75%);
+    --color-fg-muted: rgb(255 255 255 / 65%);
+    --color-fg-subtle: rgb(255 255 255 / 60%);
   }
 }

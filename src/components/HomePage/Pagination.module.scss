@@ -1,7 +1,7 @@
 @use "./src/styles/breakpoints";
 
 .infoCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-size: clamp(15px, 4vw, 16px);
   font-weight: 300;
   text-align: center;
@@ -32,7 +32,7 @@
 }
 
 .paginationLinkCss {
-  color: var(--color-link);
+  color: var(--color-fg-accent);
 
   @media (min-width: breakpoints.$desktop) {
     margin-left: 1.5rem;
@@ -41,7 +41,7 @@
 
 .currentPageCss,
 .elipsisCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-sublte);
 
   @media (min-width: breakpoints.$desktop) {
     margin-left: 1.5rem;

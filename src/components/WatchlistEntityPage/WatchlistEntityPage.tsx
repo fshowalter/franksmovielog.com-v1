@@ -1,12 +1,12 @@
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer } from "react";
 import Button from "../Button";
 import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
-import Grade from "../Grade";
 import Layout from "../Layout";
+import { Poster, PosterList } from "../PosterList";
 import ProgressGraph from "../ProgressGraph";
 import SelectInput from "../SelectInput";
 import Seo from "../Seo";
@@ -16,13 +16,8 @@ import {
   containerCss,
   filtersCss,
   leftCss,
-  listCss,
   listHeaderGroupCss,
   listInfoCss,
-  listItemGradeCss,
-  listItemImageLinkCss,
-  listItemTitleCss,
-  listItemTitleYearCss,
   pageHeaderCss,
   percentCss,
   percentTotalsCss,
@@ -113,45 +108,6 @@ function WatchlistEntityProgress({
         {reviewed}/{total} Reviewed
       </div>
     </>
-  );
-}
-
-function ListItem({ movie }: { movie: WatchlistMovie }): JSX.Element {
-  if (movie.reviewedMovieSlug) {
-    return (
-      <li>
-        <Link
-          className={listItemImageLinkCss}
-          to={`/reviews/${movie.reviewedMovieSlug}/`}
-        >
-          {movie.poster && (
-            <GatsbyImage
-              image={movie.poster.childImageSharp.gatsbyImageData}
-              alt={`A still from ${movie.title} (${movie.year})`}
-            />
-          )}
-        </Link>
-        <div className={listItemTitleCss}>
-          <Link to={`/reviews/${movie.reviewedMovieSlug}/`}>
-            {movie.title}{" "}
-            <span className={listItemTitleYearCss}>{movie.year}</span>
-          </Link>
-        </div>
-        <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
-      </li>
-    );
-  }
-
-  return (
-    <li>
-      <GatsbyImage
-        image={movie.poster.childImageSharp.gatsbyImageData}
-        alt="An unreviewed title."
-      />
-      <div className={listItemTitleCss}>
-        {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
-      </div>
-    </li>
   );
 }
 
@@ -327,11 +283,20 @@ export default function WatchlistEntityPage({
                   >
                     {group}
                   </div>
-                  <ol className={listCss}>
+                  <PosterList>
                     {movies.map((movie) => {
-                      return <ListItem key={movie.imdbId} movie={movie} />;
+                      return (
+                        <Poster
+                          key={movie.imdbId}
+                          title={movie.title}
+                          year={movie.year}
+                          slug={movie.reviewedMovieSlug}
+                          grade={movie.lastReviewGrade}
+                          image={movie.poster}
+                        />
+                      );
                     })}
-                  </ol>
+                  </PosterList>
                 </li>
               );
             })}

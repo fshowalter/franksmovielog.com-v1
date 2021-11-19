@@ -18,8 +18,8 @@ a {
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
+  background-color: var(--color-bg-accent);
+  color: var(--color-fg-default);
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-kerning: normal;
   margin: 0;
@@ -59,7 +59,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-text-headings);
   font-size: inherit;
   font-weight: inherit;
 }
@@ -97,4 +96,19 @@ p {
 button {
   background-color: rgb(239 239 239);
   color: rgb(0 0 0);
+}
+
+:global {
+  /* stylelint-disable-next-line selector-class-pattern */
+  .littlefoot-footnote__content {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-fg-default);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .reactSelect__dropdown-indicator {
+    > svg {
+      color: #054a93;
+    }
+  }
 }

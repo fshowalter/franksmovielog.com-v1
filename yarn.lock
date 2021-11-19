@@ -2211,22 +2211,22 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pacote/get-style@^1.0.0", "@pacote/get-style@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@pacote/get-style/-/get-style-1.1.2.tgz#d41d25332d787a4e41307d332ff593e1a4108a31"
-  integrity sha512-gmQ6x6FcSUltWFrT2x/iqkNEuwSn6J98Ykt2i8gSxx1c7/RplQgnoDaASTD0DOwDm+E7h1LN44HelQCEj93yLg==
+"@pacote/get-style@^1.0.0", "@pacote/get-style@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@pacote/get-style/-/get-style-1.1.7.tgz#b02d146f8eb7593f4733fc515b7d6702a4975c27"
+  integrity sha512-TGg2mrHvLtQC/d9dPy/GpVDIdvCT1PfYvbjsOQR0nU8o4ofuPy4NHRsPDUYjZXXbpMC5uPK6N/yitHO0Pon/lA==
 
 "@pacote/pixels@^1.0.0":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@pacote/pixels/-/pixels-1.1.2.tgz#a10bcf91ff1db69a31173cb08a203a96467becda"
-  integrity sha512-Iq1gcNofoZUBS3lpQDvV48/aAkh6Rz+xRBq7xVDACxjvznR97YaQ2dcoMvXFpX4sN+T65tVuYpHQVzxw6pcwnw==
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@pacote/pixels/-/pixels-1.1.7.tgz#385e7f1a0a593cbb5690888f873b28a31f5808b8"
+  integrity sha512-yztATcpzvQR4Y1iflLKQybTc/pr31LfAUAX2y2EE+62nqf9Q2gir5fcnVSSDYcEIONHAQHN+Pbb/V95Pg/fi7Q==
   dependencies:
-    "@pacote/get-style" "^1.1.2"
+    "@pacote/get-style" "^1.1.7"
 
 "@pacote/throttle@^1.0.0":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@pacote/throttle/-/throttle-1.0.3.tgz#69811c49a8fc2f8d0cd4609cc48283a529b0ac01"
-  integrity sha512-jK2mgFPO/lD2vcvuZpH32BFZGp5MRBtW0TIflTuqENJBsshBLbfsFAH5IQOIqvHRhYtNjj/tDOLJ79e6N0wAZg==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@pacote/throttle/-/throttle-1.0.7.tgz#1967f2b56259d1bbaa2c8bcef47311a78b811cad"
+  integrity sha512-7iO/ehc4UFeBcdwRjS5gxJwB/SSbeCzrUVR+R0R2Dxxz96TE2KpKN32UdRuv/4WNc+oRgu1g0Jyq/+U6/mr01A==
 
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"

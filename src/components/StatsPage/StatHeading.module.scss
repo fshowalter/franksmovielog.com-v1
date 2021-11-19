@@ -1,0 +1,10 @@
+.headingCss {
+  background-color: var(--color-bg-accent);
+  display: block;
+  font-size: 1.125rem;
+  margin: var(--step-5) 0 0 0;
+  padding: 0.5rem var(--step-1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

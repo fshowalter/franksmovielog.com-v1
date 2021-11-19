@@ -1,7 +1,7 @@
 @use "./src/styles/breakpoints";
 
 .containerCss {
-  border-top: solid 1px var(--color-background);
+  border-top: solid 1px var(--color-border-default);
   display: grid;
   margin: 0 auto;
   max-width: 40rem;
@@ -52,7 +52,7 @@
 }
 
 .pageHeaderSubCss {
-  color: var(--color-link);
+  color: var(--color-fg-accent);
   display: block;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -103,7 +103,7 @@
 }
 
 .defaultImageCss {
-  color: #e1e1e1;
+  color: var(--color-bg-subtle);
   display: block;
 }
 
@@ -127,20 +127,20 @@
 
 .percentBackgroundCss {
   fill: none;
-  stroke: #eee;
+  stroke: var(--color-border-default);
   stroke-width: 1;
 }
 
 .percentProgressCss {
   animation: progress 1s ease-out forwards;
   fill: none;
-  stroke: #77e895;
+  stroke: var(--color-bg-progress);
   stroke-linecap: round;
   stroke-width: 0.9;
 }
 
 .progressStatsCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-size: 1rem;
   text-align: center;
 }

@@ -1,35 +1,14 @@
 import React from "react";
-import {
-  barCellCss,
-  barCss,
-  gradeCellCss,
-  gradeHeaderCss,
-  headerCss,
-  headerRowCss,
-  reviewsCellCss,
-  reviewsHeaderCss,
-  rowCss,
-  tableCss,
-} from "./GradeDistribution.module.scss";
+import Bar from "./Bar";
+import StatHeading from "./StatHeading";
 import type { GradeDistribution } from "./StatsPage";
-
-function BarGraph({
-  value,
-  maxValue,
-}: {
-  value: number;
-  maxValue: number;
-}): JSX.Element {
-  const barPercentProperty = {
-    "--bar-percent": `${(value / maxValue) * 100}%`,
-  } as React.CSSProperties;
-
-  return (
-    <div className={barCss} style={barPercentProperty}>
-      &nbsp;
-    </div>
-  );
-}
+import {
+  Table,
+  TableDataCell,
+  TableHead,
+  TableHeaderCell,
+  TableRow,
+} from "./Table";
 
 export default function GradeDistributions({
   distributions,
@@ -43,32 +22,31 @@ export default function GradeDistributions({
 
   return (
     <section>
-      <h3 className={headerCss}>Grade Distribution</h3>
-      <table className={tableCss}>
-        <thead className={headerRowCss}>
+      <StatHeading>Grade Distribution</StatHeading>
+      <Table>
+        <TableHead>
           <tr>
-            <th className={gradeHeaderCss}>Grade</th>
+            <TableHeaderCell align="left">Grade</TableHeaderCell>
             <th>&nbsp;</th>
-            <th className={reviewsHeaderCss}>Reviews</th>
+            <TableHeaderCell align="right">Reviews</TableHeaderCell>
           </tr>
-        </thead>
+        </TableHead>
         <tbody>
           {distributions.map((distribution) => {
             return (
-              <tr key={distribution.grade} className={rowCss}>
-                <td className={gradeCellCss}>{distribution.grade}</td>
-                <td className={barCellCss}>
-                  <BarGraph
-                    value={distribution.reviewCount}
-                    maxValue={maxBar}
-                  />
-                </td>
-                <td className={reviewsCellCss}>{distribution.reviewCount}</td>
-              </tr>
+              <TableRow key={distribution.grade}>
+                <TableDataCell align="left">{distribution.grade}</TableDataCell>
+                <TableDataCell align="fill">
+                  <Bar value={distribution.reviewCount} maxValue={maxBar} />
+                </TableDataCell>
+                <TableDataCell align="right">
+                  {distribution.reviewCount}
+                </TableDataCell>
+              </TableRow>
             );
           })}
         </tbody>
-      </table>
+      </Table>
     </section>
   );
 }

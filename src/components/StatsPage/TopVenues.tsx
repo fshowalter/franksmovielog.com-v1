@@ -1,35 +1,14 @@
 import React from "react";
+import Bar from "./Bar";
+import StatHeading from "./StatHeading";
 import type { VenueStat } from "./StatsPage";
 import {
-  barCellCss,
-  barCss,
-  headerCss,
-  headerRowCss,
-  nameCellCss,
-  nameHeaderCss,
-  rowCss,
-  tableCss,
-  viewingsCellCss,
-  viewingsHeaderCss,
-} from "./TopVenues.module.scss";
-
-function BarGraph({
-  value,
-  maxValue,
-}: {
-  value: number;
-  maxValue: number;
-}): JSX.Element {
-  const barPercentProperty = {
-    "--bar-percent": `${(value / maxValue) * 100}%`,
-  } as React.CSSProperties;
-
-  return (
-    <div className={barCss} style={barPercentProperty}>
-      &nbsp;
-    </div>
-  );
-}
+  Table,
+  TableDataCell,
+  TableHead,
+  TableHeaderCell,
+  TableRow,
+} from "./Table";
 
 export default function TopVenues({
   venues,
@@ -43,29 +22,29 @@ export default function TopVenues({
 
   return (
     <section>
-      <h3 className={headerCss}>Top Venues</h3>
-      <table className={tableCss}>
-        <thead className={headerRowCss}>
+      <StatHeading>Top Venues</StatHeading>
+      <Table>
+        <TableHead>
           <tr>
-            <th className={nameHeaderCss}>Name</th>
+            <TableHeaderCell align="left">Name</TableHeaderCell>
             <th>&nbsp;</th>
-            <th className={viewingsHeaderCss}>Viewings</th>
+            <TableHeaderCell align="right">Viewings</TableHeaderCell>
           </tr>
-        </thead>
+        </TableHead>
         <tbody>
           {venues.map((stat) => {
             return (
-              <tr key={stat.name} className={rowCss}>
-                <td className={nameCellCss}>{stat.name}</td>
-                <td className={barCellCss}>
-                  <BarGraph value={stat.viewingCount} maxValue={maxBar} />
-                </td>
-                <td className={viewingsCellCss}>{stat.viewingCount}</td>
-              </tr>
+              <TableRow key={stat.name}>
+                <TableDataCell align="left">{stat.name}</TableDataCell>
+                <TableDataCell hideOnSmallScreens align="fill">
+                  <Bar value={stat.viewingCount} maxValue={maxBar} />
+                </TableDataCell>
+                <TableDataCell align="right">{stat.viewingCount}</TableDataCell>
+              </TableRow>
             );
           })}
         </tbody>
-      </table>
+      </Table>
     </section>
   );
 }

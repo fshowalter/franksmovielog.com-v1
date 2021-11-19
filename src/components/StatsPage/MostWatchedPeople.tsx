@@ -1,6 +1,5 @@
-import { Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
+import { Poster, PosterList } from "../PosterList";
 import {
   barCss,
   barSpaceCss,
@@ -9,11 +8,6 @@ import {
   detailsRowCss,
   headerCss,
   headerRowCss,
-  listCss,
-  listItemImageLinkCss,
-  listItemSlugCss,
-  listItemTitleCss,
-  listItemTitleYearCss,
   nameCss,
   nameHeaderCss,
   parentListCss,
@@ -21,7 +15,7 @@ import {
   viewingsCss,
   viewingsHeaderCss,
 } from "./MostWatchedPeople.module.scss";
-import type { Person, Viewing } from "./StatsPage";
+import type { Person } from "./StatsPage";
 
 function BarGraph({
   value,
@@ -38,44 +32,6 @@ function BarGraph({
     <div className={barCss} style={barPercentProperty}>
       &nbsp;
     </div>
-  );
-}
-
-function ListItem({ viewing }: { viewing: Viewing }): JSX.Element {
-  if (viewing.slug) {
-    return (
-      <li>
-        <Link className={listItemImageLinkCss} to={`/reviews/${viewing.slug}/`}>
-          {viewing.poster && (
-            <GatsbyImage
-              image={viewing.poster.childImageSharp.gatsbyImageData}
-              alt={`A poster from ${viewing.title} (${viewing.year})`}
-            />
-          )}
-        </Link>
-        <div className={listItemSlugCss}>
-          <div>{viewing.viewingDate}</div>
-          <div>{viewing.venue}</div>
-        </div>
-      </li>
-    );
-  }
-
-  return (
-    <li>
-      <GatsbyImage
-        image={viewing.poster.childImageSharp.gatsbyImageData}
-        alt="An unreviewed title."
-      />
-      <div className={listItemTitleCss}>
-        {viewing.title}{" "}
-        <span className={listItemTitleYearCss}>{viewing.year}</span>
-      </div>
-      <div className={listItemSlugCss}>
-        <div>{viewing.viewingDate}</div>
-        <div>{viewing.venue}</div>
-      </div>
-    </li>
   );
 }
 
@@ -112,13 +68,22 @@ export default function MostWatchedPeople({
               <div className={detailsRowCss}>
                 <details>
                   <summary className={detailsLabelCss}>Details</summary>
-                  <ol className={listCss}>
+                  <PosterList>
                     {person.viewings.map((viewing) => {
                       return (
-                        <ListItem key={viewing.sequence} viewing={viewing} />
+                        <Poster
+                          key={viewing.sequence}
+                          image={viewing.poster}
+                          title={viewing.title}
+                          slug={viewing.slug}
+                          year={viewing.year}
+                          date={viewing.viewingDate}
+                          venue={viewing.venue}
+                          showTitle={false}
+                        />
                       );
                     })}
-                  </ol>
+                  </PosterList>
                 </details>
               </div>
             </li>

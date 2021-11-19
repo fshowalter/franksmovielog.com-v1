@@ -1,7 +1,7 @@
 @use "./src/styles/breakpoints";
 
 .containerCss {
-  border-top: solid 1px var(--color-background);
+  border-top: solid 1px var(--color-border-default);
   display: grid;
   grid-template-areas: ". list ." ". pagination .";
   grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 38rem) minmax(
@@ -14,7 +14,7 @@
     grid-template-columns: unset;
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: breakpoints.$max) {
     border-top: 0;
   }
 }
@@ -23,7 +23,7 @@
   grid-area: list;
 
   @media (min-width: breakpoints.$desktop) {
-    border-bottom: solid 1px var(--color-background);
+    border-bottom: solid 1px var(--color-border-default);
     display: flex;
     flex-wrap: wrap;
   }
@@ -31,7 +31,7 @@
 
 .listItemCss {
   @media (min-width: breakpoints.$desktop) {
-    border-top: solid 1px var(--color-background);
+    border-top: solid 1px var(--color-border-default);
     display: flex;
     margin-top: var(--step-5);
     padding: 1.5rem 0;
@@ -57,7 +57,7 @@
     }
   }
 
-  @media (min-width: 80rem) {
+  @media (min-width: breakpoints.$max) {
     &:first-of-type {
       padding-top: 0;
     }
@@ -71,7 +71,7 @@
   grid-template-rows: 2.5rem auto var(--step-1) auto 1.4rem 1fr 1.4rem auto 2.5rem;
 
   &::after {
-    border-bottom: solid 1px var(--color-background);
+    border-bottom: solid 1px var(--color-border-default);
     content: "";
     display: block;
     grid-area: border;
@@ -99,7 +99,7 @@
 }
 
 .imageLinkCss {
-  border: 0.5em solid var(--color-background);
+  border: 0.5em solid var(--color-border-default);
   display: block;
   grid-area: image;
   line-height: 0;
@@ -127,12 +127,12 @@
   margin-bottom: -1rem;
 
   a {
-    color: var(--color-link);
+    color: var(--color-fg-accent);
   }
 }
 
 .dateCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   display: flex;
   font-feature-settings: "tnum";
   font-size: 14px;
@@ -149,13 +149,13 @@
 }
 
 .reviewYearCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-size: 16px;
   font-weight: 300;
 }
 
 .reviewCreditsCss {
-  color: var(--color-text-secondary);
+  color: var(--color-fg-subtle);
   font-size: 16px;
   font-weight: 400;
   grid-area: credits;
@@ -171,7 +171,7 @@
 }
 
 .articleBodyCss {
-  color: var(--color-text-tertiary);
+  color: var(--color-fg-muted);
   font-size: 18px;
   grid-area: body;
 }
