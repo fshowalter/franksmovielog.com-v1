@@ -1,3 +1,4 @@
+export const hideOnSmallScreensCss: string;
 export const tableCss: string;
 export const tableDataCellFillCss: string;
 export const tableDataCellLeftCss: string;

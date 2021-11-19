@@ -2,19 +2,11 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import ReviewPage from "./ReviewPage";
-import data, { dataWithCollectionAndCountries } from "./ReviewPage.fixtures";
+import data from "./ReviewPage.fixtures";
 
 describe("/reviews/{slug}", () => {
   it("renders", () => {
     const { asFragment } = render(<ReviewPage data={data} />);
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("renders with multiple countries and a collection", () => {
-    const { asFragment } = render(
-      <ReviewPage data={dataWithCollectionAndCountries} />
-    );
 
     expect(asFragment()).toMatchSnapshot();
   });
