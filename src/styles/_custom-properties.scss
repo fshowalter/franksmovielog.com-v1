@@ -1,18 +1,22 @@
+@use "./breakpoints";
+
 :root {
+  --color-bg-canvas: #e9e7e0;
+  --color-bg-default: #fff;
+  --color-bg-progress: #14bd41;
+  --color-fg-inverse: rgb(255 255 255 / 75%);
+  --color-bg-stripe: #f7f5f3;
+  --color-bg-subtle: #fbfaf9;
+  --color-border-accent: #054a93;
+  --color-border-default: #e9e7e0;
+  --color-border-subtle: #eae8e1;
   --color-fg-accent: #0056b3;
   --color-fg-default: rgb(0 0 0 / 75%);
   --color-fg-muted: rgb(0 0 0 / 65%);
   --color-fg-subtle: rgb(0 0 0 / 60%);
-  --color-bg-accent: #e9e7e0;
-  --color-bg-default: #fff;
-  --color-bg-subtle: #fbfaf9;
-  --color-bg-stripe: #f7f5f3;
-  --color-border-accent: #054a93;
-  --color-border-default: #e9e7e0;
-  --color-border-subtle: #eae8e1;
   --font-serif: "Charter", "Iowan Old Style", "Georgia", "Cambria",
     '"Times New Roman"', "Times", "serif";
-  --color-bg-progress: #14bd41;
+  --layout-grid-margin: 20px;
 
   /* @link https://utopia.fyi/generator?c=375,18,1.2,1140,24,1.25,5,2, */
   --fluid-min-width: 375;
@@ -112,6 +116,18 @@
   );
 }
 
+@media screen and (min-width: breakpoints.$desktop) {
+  :root {
+    --layout-grid-margin: 32px;
+  }
+}
+
+@media (min-width: breakpoints.$max) {
+  :root {
+    --layout-grid-margin: 48px;
+  }
+}
+
 @media screen and (min-width: 1140px) {
   :root {
     --fluid-screen: calc(var(--fluid-max-width) * 1px);
@@ -120,11 +136,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg-accent: #484745;
+    --color-bg-canvas: #484745;
     --color-bg-default: #322f2f;
+    --color-bg-progress: #379634;
     --color-bg-stripe: #48474563;
     --color-bg-subtle: #242424;
-    --color-bg-progress: #379634;
     --color-border-accent: #499ef8;
     --color-border-default: #484745;
     --color-border-subtle: rgb(0 0 0 / 15%);

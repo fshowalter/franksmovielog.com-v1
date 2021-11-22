@@ -18,13 +18,42 @@ a {
 }
 
 body {
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-bg-canvas);
   color: var(--color-fg-default);
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-kerning: normal;
   margin: 0;
   overflow-x: hidden;
   word-wrap: break-word;
+}
+
+/**
+* A quick baseline grid overlay using css+svg.
+* Inspired by [Basehold.it](https://basehold.it/).
+* @author leshido
+*/
+
+body {
+  position: relative;
+}
+
+body::after {
+  /* Change the `height` parameter here to match your base line-height. */
+  background: url('data:image/svg+xml;utf8,<svg height="8" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(0, 0, 0, 0.3)" /></svg>')
+    repeat top left;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+body:active::after {
+  display: none;
 }
 
 *,
@@ -87,6 +116,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  padding: 5px 15px;
 }
 
 p {
