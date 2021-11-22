@@ -1,13 +1,14 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
   border-top: solid 1px var(--color-border-default);
   display: grid;
   grid-template-areas: ". list ." ". pagination .";
-  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 38rem) minmax(
-      var(--step-1),
-      1fr
-    );
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 640px)
+    minmax(var(--layout-grid-margin), 1fr);
+  margin-top: -1px;
 
   @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "list" "pagination";
@@ -24,36 +25,25 @@
 
   @media (min-width: breakpoints.$desktop) {
     border-bottom: solid 1px var(--color-border-default);
-    display: flex;
-    flex-wrap: wrap;
+    column-gap: layout.$spacer-8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: layout.$spacer-7 0 layout.$spacer-8;
+    row-gap: layout.$spacer-8;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    padding-top: 0;
   }
 }
 
 .listItemCss {
   @media (min-width: breakpoints.$desktop) {
-    border-top: solid 1px var(--color-border-default);
     display: flex;
-    margin-top: var(--step-5);
-    padding: 1.5rem 0;
-    width: 50%;
-
-    &:nth-child(even) {
-      padding-right: var(--step-1);
-    }
-
-    &:nth-child(odd) {
-      padding-left: var(--step-1);
-    }
 
     &.wideCss {
-      padding: 2.5rem 0;
-      width: 100%;
-    }
-
-    &:first-of-type {
-      border-top: 0;
-      margin-top: 0;
-      padding-top: var(--step-5);
+      grid-column-end: 3;
+      grid-column-start: 1;
     }
   }
 
@@ -66,23 +56,25 @@
 
 .reviewCss {
   display: grid;
-  grid-template-areas: ". . ." "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". . ." ". border ." ". . .";
+  grid-template-areas: ". . ." "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". border .";
   grid-template-columns: 1fr minmax(auto, 60ch) 1fr;
-  grid-template-rows: 2.5rem auto var(--step-1) auto 1.4rem 1fr 1.4rem auto 2.5rem;
+  grid-template-rows: layout.$spacer-6 auto layout.$spacer-3 auto layout.$spacer-4 1fr layout.$spacer-4 auto layout.$spacer-6;
+  position: relative;
 
   &::after {
     border-bottom: solid 1px var(--color-border-default);
     content: "";
     display: block;
     grid-area: border;
-    height: 1px;
+    height: layout.$spacer-6;
     justify-self: center;
     width: 75%;
   }
 
   @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". . ." ". border .";
-    grid-template-rows: auto var(--step-1) auto 1.4rem 1fr 2.8rem auto;
+    grid-template-columns: layout.$spacer-2 1fr layout.$spacer-2;
+    grid-template-rows: auto layout.$spacer-4 auto layout.$spacer-4 1fr layout.$spacer-4 auto;
 
     &::after {
       display: none;
@@ -90,41 +82,55 @@
 
     &.wideCss {
       align-items: start;
-      column-gap: calc(2 * var(--step-1));
+      column-gap: layout.$spacer-8;
       grid-template-areas: "header image" ". image" "body image" ". image" "footer image";
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto var(--step-1) 1fr 1.4rem auto;
+      grid-template-rows: auto layout.$spacer-4 1fr layout.$spacer-4 auto;
     }
   }
 }
 
 .imageLinkCss {
-  border: 0.5em solid var(--color-border-default);
+  border: solid layout.$spacer-2 var(--color-border-default);
   display: block;
   grid-area: image;
   line-height: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: breakpoints.$desktop) {
+    margin-bottom: 5.25px;
+  }
 }
 
 .reviewHeaderCss {
   display: grid;
   grid-area: header;
   grid-template-areas: "heading" "." "grade" "." "credits";
-  grid-template-rows: auto 1.5rem auto 1.5rem auto;
+  grid-template-rows: auto layout.$spacer-4 auto layout.$spacer-4 auto;
 }
 
 .articleHeadingCss {
-  font-size: var(--step-2);
+  font-size: 26px;
   font-weight: 700;
   grid-area: heading;
+  line-height: 32px;
+
+  a {
+    display: inline-block;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    font-size: 30px;
+  }
 }
 
 .articleFooterCss {
   align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  gap: layout.$spacer-3;
   grid-area: footer;
-  justify-content: flex-end;
-  margin-bottom: -1rem;
 
   a {
     color: var(--color-fg-accent);
@@ -139,19 +145,17 @@
   font-weight: 300;
   grid-area: slug;
   letter-spacing: 0.25px;
-  line-height: 40px;
-  margin-bottom: 1rem;
+  line-height: layout.$spacer-6;
   margin-right: auto;
-  min-width: 120px;
-  order: -1;
-  padding: 9px 0;
   white-space: nowrap;
 }
 
 .reviewYearCss {
   color: var(--color-fg-subtle);
+  display: inline-block;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1;
 }
 
 .reviewCreditsCss {
@@ -160,13 +164,14 @@
   font-weight: 400;
   grid-area: credits;
   letter-spacing: 0.25px;
+  line-height: layout.$spacer-4;
   text-align: left;
 }
 
 .reviewGradeCss {
   align-self: flex-start;
   grid-area: grade;
-  height: 1.75rem;
+  height: layout.$spacer-5;
   width: auto;
 }
 
@@ -174,6 +179,14 @@
   color: var(--color-fg-muted);
   font-size: 18px;
   grid-area: body;
+
+  p {
+    line-height: 28px;
+  }
+
+  * {
+    display: inline-block;
+  }
 }
 
 .watchlistLinksCss {
@@ -187,6 +200,22 @@
 
 :global(.globalExcerptLinkCss) {
   font-size: 14px;
+  line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
+
+  @media (max-width: breakpoints.$desktop - 1) {
+    background-color: var(--color-bg-accent);
+    border-radius: 4px;
+    color: var(--color-fg-on-accent) !important;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: layout.$spacer-4;
+    margin: layout.$spacer-4 auto;
+    padding: layout.$spacer-2 layout.$spacer-3;
+    text-align: center;
+    text-transform: unset;
+    width: 75%;
+  }
 }

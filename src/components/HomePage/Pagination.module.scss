@@ -1,3 +1,4 @@
+@use "./src/styles/layout";
 @use "./src/styles/breakpoints";
 
 .infoCss {
@@ -14,9 +15,10 @@
   font-feature-settings: "tnum";
   font-size: 18px;
   justify-content: space-between;
+  line-height: layout.$spacer-4;
   margin: 0 auto;
   max-width: 25rem;
-  padding: 2.5rem 0;
+  padding: layout.$spacer-6 0;
   white-space: nowrap;
   width: 100%;
 

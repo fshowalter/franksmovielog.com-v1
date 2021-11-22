@@ -75,6 +75,7 @@
 
   @media (min-width: breakpoints.$desktop) {
     column-gap: var(--spacer-7);
+    column-gap: layout.$spacer-8;
     grid-template-areas: "logo search" "tagline . " ". ." "nav nav" ". .";
     grid-template-columns: auto;
     grid-template-rows: auto auto layout.$spacer-5 auto layout.$spacer-6;

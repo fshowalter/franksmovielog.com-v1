@@ -1,6 +1,7 @@
 @use "./breakpoints";
 
 :root {
+  --color-bg-accent: #0056b3;
   --color-bg-canvas: #e9e7e0;
   --color-bg-default: #fff;
   --color-bg-progress: #14bd41;
@@ -13,6 +14,7 @@
   --color-fg-accent: #0056b3;
   --color-fg-default: rgb(0 0 0 / 75%);
   --color-fg-muted: rgb(0 0 0 / 65%);
+  --color-fg-on-accent: #fff;
   --color-fg-subtle: rgb(0 0 0 / 60%);
   --font-serif: "Charter", "Iowan Old Style", "Georgia", "Cambria",
     '"Times New Roman"', "Times", "serif";
@@ -118,13 +120,13 @@
 
 @media screen and (min-width: breakpoints.$desktop) {
   :root {
-    --layout-grid-margin: 32px;
+    --layout-grid-margin: 48px;
   }
 }
 
 @media (min-width: breakpoints.$max) {
   :root {
-    --layout-grid-margin: 48px;
+    --layout-grid-margin: 64px;
   }
 }
 
