@@ -6,7 +6,7 @@
   display: grid;
   grid-template-areas: ". list ." ". pagination .";
   grid-template-columns:
-    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 640px)
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
     minmax(var(--layout-grid-margin), 1fr);
   margin-top: -1px;
 
@@ -203,19 +203,4 @@
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
-
-  @media (max-width: breakpoints.$desktop - 1) {
-    background-color: var(--color-bg-accent);
-    border-radius: 4px;
-    color: var(--color-fg-on-accent) !important;
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: layout.$spacer-4;
-    margin: layout.$spacer-4 auto;
-    padding: layout.$spacer-2 layout.$spacer-3;
-    text-align: center;
-    text-transform: unset;
-    width: 75%;
-  }
 }

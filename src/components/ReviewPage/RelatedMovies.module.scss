@@ -3,10 +3,12 @@
 
 .listCss {
   column-gap: layout.$spacer-4;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-area: list;
   grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
-  row-gap: layout.$spacer-5;
+
+  // row-gap: layout.$spacer-4;
 
   @media (max-width: #{breakpoints.$desktop - 1px}) {
     grid-template-columns: repeat(2, minmax(125px, 1fr));
@@ -15,13 +17,22 @@
 
 .listItemCss {
   align-items: flex-start;
-  display: flex;
-  flex-direction: column;
+  column-gap: layout.$spacer-4;
+  display: grid;
+  grid-template-areas: "title image" "grade image" ". image";
+  grid-template-columns: 1fr 1fr;
+  margin: 0 calc(-1 * var(--layout-grid-margin));
+  padding: layout.$spacer-5 var(--layout-grid-margin);
+
+  &:nth-child(even) {
+    background-color: var(--color-bg-subtle);
+  }
 }
 
 .listItemImageLinkCss {
   border-radius: 8px;
   display: block;
+  grid-area: image;
   margin-bottom: 4.54px;
   overflow: hidden;
 
@@ -31,9 +42,9 @@
 }
 
 .listItemTitleCss {
-  color: var(--color-fg-accent);
-  font-size: 16px;
-  line-height: 20px;
+  // color: var(--color-fg-accent);
+  font-size: 22px;
+  line-height: 24px;
   text-rendering: optimizeLegibility;
 }
 
@@ -45,8 +56,8 @@
 }
 
 .listItemGradeCss {
-  height: 16px;
-  margin-top: layout.$spacer-1;
+  height: 18px;
+  margin-top: layout.$spacer-2;
   width: auto;
 }
 
