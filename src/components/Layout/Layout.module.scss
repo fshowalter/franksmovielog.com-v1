@@ -61,16 +61,16 @@
 }
 
 .mastHeaderCss {
+  border-bottom: solid 1px var(--color-border-default);
   display: grid;
   grid-area: header;
   grid-template-areas: ". . ." ". logo ." ". tagline ." ". . ." ". search ." ". . ." ". nav ." ". . .";
-  grid-template-columns: minmax(var(--layout-grid-margin), 1fr) auto minmax(
-      var(--layout-grid-margin),
-      1fr
-    );
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
+    minmax(var(--layout-grid-margin), 1fr);
   grid-template-rows:
     layout.$spacer-4 auto auto layout.$spacer-4 auto layout.$spacer-4
-    auto layout.$spacer-4;
+    auto layout.$spacer-4 - 1;
   justify-items: center;
 
   @media (min-width: breakpoints.$desktop) {

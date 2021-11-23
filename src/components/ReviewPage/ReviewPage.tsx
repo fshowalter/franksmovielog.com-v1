@@ -19,6 +19,7 @@ import {
   creditsPosterCss,
   creditsTitleCss,
   creditsWatchlistCss,
+  creditsWrapCss,
   creditTermCss,
   headerContainerCss,
   headerMetaCss,
@@ -34,11 +35,14 @@ import {
   olderViewingsListCss,
   olderViewingsListItemCss,
   olderViewingSlugCss,
+  olderViewingsVenueCss,
+  olderViewingsViaCss,
   relatedAvaterCss,
   relatedCss,
   relatedHeaderCss,
   relatedHeadingCss,
   relatedMoreCss,
+  relatedMoviesSectionCss,
   relatedNameCss,
   reviewContentCss,
   reviewDateIconCss,
@@ -84,7 +88,11 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
   return (
     <div className={relatedCss}>
       {pageData.movie.watchlist.collections.map((collection) => (
-        <RelatedMovies key={collection.name} movies={collection.browseMore}>
+        <RelatedMovies
+          key={collection.name}
+          movies={collection.browseMore}
+          className={relatedMoviesSectionCss}
+        >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               {collection.avatar && (
@@ -108,7 +116,11 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         </RelatedMovies>
       ))}
       {pageData.movie.watchlist.performers.map((performer) => (
-        <RelatedMovies key={performer.slug} movies={performer.browseMore}>
+        <RelatedMovies
+          key={performer.slug}
+          movies={performer.browseMore}
+          className={relatedMoviesSectionCss}
+        >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               {performer.avatar && (
@@ -133,7 +145,11 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         </RelatedMovies>
       ))}
       {pageData.movie.watchlist.directors.map((director) => (
-        <RelatedMovies key={director.slug} movies={director.browseMore}>
+        <RelatedMovies
+          key={director.slug}
+          movies={director.browseMore}
+          className={relatedMoviesSectionCss}
+        >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               {director.avatar && (
@@ -158,7 +174,11 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         </RelatedMovies>
       ))}
       {pageData.movie.watchlist.writers.map((writer) => (
-        <RelatedMovies key={writer.slug} movies={writer.browseMore}>
+        <RelatedMovies
+          key={writer.slug}
+          movies={writer.browseMore}
+          className={relatedMoviesSectionCss}
+        >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
               {writer.avatar && (
@@ -182,7 +202,10 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
           </header>
         </RelatedMovies>
       ))}
-      <RelatedMovies movies={pageData.movie.browseMore}>
+      <RelatedMovies
+        movies={pageData.movie.browseMore}
+        className={relatedMoviesSectionCss}
+      >
         <header className={relatedHeaderCss}>
           <h3 className={relatedHeadingCss}>
             <span>
@@ -337,7 +360,10 @@ export default function ReviewPage({
                     <span className={olderViewingsDateCss}>
                       {viewing.viewingDate}
                     </span>{" "}
-                    via {viewing.venue}
+                    <span className={olderViewingsViaCss}>via</span>{" "}
+                    <span className={olderViewingsVenueCss}>
+                      {viewing.venue}
+                    </span>
                   </span>
                 </li>
               ))}
@@ -345,41 +371,43 @@ export default function ReviewPage({
           </div>
         )}
         <aside id="credits" className={creditsContainerCss}>
-          {movie.poster && (
-            <GatsbyImage
-              className={creditsPosterCss}
-              image={movie.poster.childImageSharp.gatsbyImageData}
-              alt={`A poster from ${movie.title} (${movie.year})`}
-              loading="eager"
-            />
-          )}
-          <div className={creditsListCss}>
-            <div className={hideDesktopCss}>
-              <div className={creditsTitleCss}>{movie.title}</div>
-            </div>
-            <dl>
+          <div className={creditsWrapCss}>
+            {movie.poster && (
+              <GatsbyImage
+                className={creditsPosterCss}
+                image={movie.poster.childImageSharp.gatsbyImageData}
+                alt={`A poster from ${movie.title} (${movie.year})`}
+                loading="eager"
+              />
+            )}
+            <div className={creditsListCss}>
               <div className={hideDesktopCss}>
-                <dt className={creditTermCss}>Year</dt>
-                <dd>{movie.year}</dd>
-                {movie.originalTitle && (
-                  <>
-                    <dt className={creditTermCss}>Original Title</dt>
-                    <dd>{movie.originalTitle}</dd>
-                  </>
-                )}
-                <dt className={creditTermCss}>Financing</dt>
-                <dd>{toSentenceArray(movie.countries)}</dd>
-                <dt className={creditTermCss}>Running Time</dt>
-                <dd>{movie.runtimeMinutes} min</dd>
+                <div className={creditsTitleCss}>{movie.title}</div>
               </div>
-              <dt className={creditTermCss}>Directed by</dt>
-              <dd>{toSentenceArray(movie.directorNames)}</dd>
-              <dt className={creditTermCss}>Starring</dt>
-              <dd>{toSentenceArray(movie.principalCastNames)}</dd>
-            </dl>
-          </div>
-          <div className={creditsWatchlistCss}>
-            <WatchlistLinks movie={movie} />
+              <dl>
+                <div className={hideDesktopCss}>
+                  <dt className={creditTermCss}>Year</dt>
+                  <dd>{movie.year}</dd>
+                  {movie.originalTitle && (
+                    <>
+                      <dt className={creditTermCss}>Original Title</dt>
+                      <dd>{movie.originalTitle}</dd>
+                    </>
+                  )}
+                  <dt className={creditTermCss}>Financing</dt>
+                  <dd>{toSentenceArray(movie.countries)}</dd>
+                  <dt className={creditTermCss}>Running Time</dt>
+                  <dd>{movie.runtimeMinutes} min</dd>
+                </div>
+                <dt className={creditTermCss}>Directed by</dt>
+                <dd>{toSentenceArray(movie.directorNames)}</dd>
+                <dt className={creditTermCss}>Starring</dt>
+                <dd>{toSentenceArray(movie.principalCastNames)}</dd>
+              </dl>
+            </div>
+            <div className={creditsWatchlistCss}>
+              <WatchlistLinks movie={movie} />
+            </div>
           </div>
           <a
             href="#top"
@@ -519,7 +547,7 @@ export const pageQuery = graphql`
               formats: [JPG, AVIF]
               quality: 80
               placeholder: TRACED_SVG
-              width: 309
+              width: 328
             )
           }
         }
@@ -553,7 +581,7 @@ export const pageQuery = graphql`
             layout: CONSTRAINED
             formats: [JPG, AVIF]
             quality: 80
-            width: 309
+            width: 328
             placeholder: TRACED_SVG
           )
         }
@@ -587,7 +615,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 309
+                  width: 328
                 )
               }
             }
@@ -621,7 +649,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 309
+                  width: 328
                 )
               }
             }
@@ -655,7 +683,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 309
+                  width: 328
                 )
               }
             }
@@ -689,7 +717,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 309
+                  width: 328
                 )
               }
             }

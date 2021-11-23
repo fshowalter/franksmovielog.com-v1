@@ -57,7 +57,7 @@
 .reviewCss {
   display: grid;
   grid-template-areas: ". . ." "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". border .";
-  grid-template-columns: 1fr minmax(auto, 60ch) 1fr;
+  grid-template-columns: 1fr minmax(auto, 520px) 1fr;
   grid-template-rows: layout.$spacer-6 auto layout.$spacer-3 auto layout.$spacer-4 1fr layout.$spacer-4 auto layout.$spacer-6;
   position: relative;
 

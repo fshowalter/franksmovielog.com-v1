@@ -1,19 +1,15 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
-  border-top: solid 1px var(--color-border-default);
   display: grid;
-  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" "related related related";
-  grid-template-columns: var(--step-1) 1fr var(--step-1);
+  grid-template-areas: ". title ." ". image ." ". reviews ." ". viewings ." "credits credits credits" "related related related";
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
+    minmax(var(--layout-grid-margin), 1fr);
   grid-template-rows: auto;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 40rem;
-
-  @media (min-width: breakpoints.$tablet) {
-    grid-template-areas: "title" "image" "reviews" "viewings" "credits" "related";
-    grid-template-columns: unset;
-  }
 
   @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
@@ -46,7 +42,7 @@
 
 .reviewsListCss {
   grid-area: reviews;
-  padding-top: var(--step-3);
+  padding-top: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
     border-top: 1px solid var(--color-border-default);
@@ -55,6 +51,7 @@
 
 .reviewsListItemCss:not(:first-child) .reviewGradeCss {
   height: 24px;
+  margin-top: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
     height: 18px;
@@ -63,20 +60,20 @@
 }
 
 .reviewsListItemCss:not(:first-child) {
-  padding-top: calc(2 * var(--step-5));
+  padding-top: layout.$spacer-5;
   position: relative;
 }
 
 .reviewsListItemCss:not(:first-child)::after {
-  background-color: #fff;
+  background-color: var(--color-bg-default);
   content: url("/assets/film-icon.svg");
   display: block;
-  height: 1rem;
-  left: calc(50% - 1.5rem);
-  padding: 0 1rem;
+  height: layout.$spacer-3;
+  left: calc(50% - layout.$spacer-4);
+  padding: 0 layout.$spacer-3;
   position: absolute;
-  top: calc(var(--step-5) - 0.5rem);
-  width: 3rem;
+  top: layout.$spacer-4;
+  width: layout.$spacer-7;
   z-index: 100;
 }
 
@@ -86,7 +83,7 @@
   height: 1px;
   left: 25%;
   position: absolute;
-  top: calc(var(--step-5) - 1px);
+  top: calc(layout.$spacer-5 - 1px);
   width: 50%;
 }
 
@@ -105,7 +102,7 @@
   font-feature-settings: "tnum";
   font-size: 16px;
   letter-spacing: 0.5px;
-  line-height: 1.5;
+  line-height: layout.$spacer-4;
   text-align: center;
 
   @media (min-width: breakpoints.$desktop) {
@@ -156,17 +153,22 @@
 
 .heroImageCss {
   grid-area: image;
+  margin-bottom: 7.845px;
   width: 100%;
+
+  @media (min-width: breakpoints.$desktop) {
+    margin-bottom: 5.25px;
+  }
 }
 
 .headerTitleCss {
-  font-size: var(--step-3);
-  line-height: 1.1;
+  font-size: 32px;
+  line-height: layout.$spacer-5;
 }
 
 .headerContainerCss {
   grid-area: title;
-  padding: var(--step-1) 0;
+  padding: layout.$spacer-4 0;
   text-align: center;
 
   @media (min-width: breakpoints.$desktop) {
@@ -180,7 +182,17 @@
 }
 
 .reviewContentCss {
-  margin-top: var(--step-3);
+  color: #292929;
+  margin-top: layout.$spacer-5;
+
+  // @media (min-width: breakpoints.$tablet) {
+  //   color: #292929;
+  //   font-size: 21px;
+
+  //   p {
+  //     line-height: layout.$spacer-5 !important;
+  //   }
+  // }
 
   @media (min-width: breakpoints.$desktop) {
     margin-top: 1rem;
@@ -189,25 +201,44 @@
 }
 
 .creditsContainerCss {
-  align-content: start;
-  background-color: var(--color-bg-accent);
-  border-top: solid 1px rgb(0 0 0 / 15%);
+  background-color: var(--color-bg-subtle);
+  border-top: solid 1px var(--color-border-subtle);
   display: grid;
-  font-size: 1rem;
   grid-area: credits;
-  grid-template-areas: ". poster . credits ." ". watchlist watchlist watchlist .";
-  grid-template-columns: var(--step-1) 1fr var(--step-1) 1fr var(--step-1);
-  grid-template-rows: auto;
-  letter-spacing: 0.2px;
-  margin-top: var(--step-5);
-  padding: var(--step-5) 0 var(--step-5);
+  grid-template-areas: ". heading ." ". credits .";
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
+    minmax(var(--layout-grid-margin), 1fr);
+  margin-top: layout.$spacer-7;
+  padding: layout.$spacer-7 - 1 0 layout.$spacer-7;
   position: relative;
+}
 
-  @media (min-width: breakpoints.$tablet) {
-    border: solid 1px rgb(0 0 0 / 15%);
-    margin: 4rem calc(-1 * var(--step-1)) 0;
-    overflow: hidden;
-  }
+.creditsHeadingCss {
+  border-bottom: solid 1px var(--color-border-default);
+  color: var(--color-fg-muted);
+  display: flex;
+  font-weight: 600;
+  grid-area: heading;
+  justify-content: space-between;
+  letter-spacing: 0.2px;
+  margin-bottom: layout.$spacer-2;
+  padding-bottom: layout.$spacer-2 - 1;
+  text-rendering: optimizeLegibility;
+}
+
+.creditsWrapCss {
+  align-content: start;
+  background-color: var(--color-bg-subtle);
+
+  // border-top: solid 3px var(--color-bg-canvas);
+  display: grid;
+  font-size: 16px;
+  grid-area: credits;
+  grid-template-areas: "poster . credits" ". . ." "watchlist watchlist watchlist";
+  grid-template-columns: 1fr layout.$spacer-4 1fr;
+  grid-template-rows: auto layout.$spacer-4 auto;
+  letter-spacing: 0.2px;
 
   @media (min-width: breakpoints.$desktop) {
     background-color: unset;
@@ -222,29 +253,39 @@
 .creditsListCss {
   color: var(--color-fg-subtle);
   grid-area: credits;
+  line-height: 20px;
 }
 
 .creditsTitleCss {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: layout.$spacer-4;
 }
 
 .creditsPosterCss {
   align-self: flex-start;
+  border-radius: 8px;
   grid-area: poster;
   justify-self: flex-end;
-  max-width: 309px;
+  margin-bottom: 7.55px;
+
+  // max-width: 309px;
+  overflow: hidden;
 }
 
 .creditTermCss {
   font-weight: 700;
-  line-height: 1.5;
-  margin-top: var(--step-1);
+  line-height: layout.$spacer-4;
+  margin-top: layout.$spacer-4;
 }
 
 .olderViewingsDateCss {
+  display: block;
   font-weight: 700;
+
+  @media (min-width: breakpoints.$tablet) {
+    // display: inline;
+  }
 }
 
 .creditsWatchlistCss {
@@ -261,32 +302,33 @@
 }
 
 .relatedCss {
-  background-color: #var(--color-bg-subtle);
+  background-color: var(--color-bg-subtle);
+  border-top: solid 1px var(--color-border-subtle);
   display: grid;
   grid-area: related;
-  padding-bottom: var(--step-5);
-  padding-top: var(--step-5);
-  row-gap: var(--step-5);
-
-  @media (min-width: 40rem) {
-    background-color: unset;
-    margin-top: 4rem;
-    padding-top: 0;
-    row-gap: 4rem;
-  }
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
+    minmax(var(--layout-grid-margin), 1fr);
+  padding-bottom: layout.$spacer-8;
+  padding-top: layout.$spacer-9 - 1;
+  row-gap: layout.$spacer-9;
 
   @media (min-width: breakpoints.$desktop) {
     row-gap: 4.5rem;
   }
 }
 
+.relatedMoviesSectionCss {
+  grid-column: 2;
+}
+
 .relatedHeaderCss {
   align-items: center;
-  border-bottom: 1px solid var(--color-border-default);
+  border-bottom: 1px solid var(--color-border-subtle);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 12px;
+  padding-bottom: 11px;
   text-rendering: optimizeLegibility;
 }
 
@@ -325,20 +367,18 @@
   font-weight: 600;
   justify-content: space-between;
   letter-spacing: 0.2px;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: layout.$spacer-2 - 1;
   text-rendering: optimizeLegibility;
 }
 
 .olderViewingsListCss {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .olderViewingsContainerCss {
   grid-area: viewings;
-  margin-top: var(--step-5);
+  margin-top: layout.$spacer-7;
 }
 
 .olderViewingsListItemCss {
@@ -347,14 +387,32 @@
   display: grid;
   font-feature-settings: "tnum";
   grid-template-areas: "icon slug";
-  justify-content: start;
+  grid-template-columns: auto 1fr;
+  margin: 0 calc(-1 * var(--layout-grid-margin));
+  padding: 0 var(--layout-grid-margin);
+
+  &:nth-child(even) {
+    background-color: var(--color-bg-subtle);
+  }
 }
 
 .olderViewingsDateIconCss {
   grid-area: icon;
-  margin-right: calc(1.25 * var(--step-1) - 16px);
+  margin-right: layout.$spacer-3;
   position: relative;
   width: 16px;
+}
+
+.olderViewingsViaCss {
+  display: none;
+
+  @media (min-width: breakpoints.$tablet) {
+    display: inline;
+  }
+}
+
+.olderViewingsVenueCss {
+  font-size: 14px;
 }
 
 .headerSeparatorCss {
@@ -364,11 +422,18 @@
 .headerMetaCss {
   color: var(--color-fg-subtle);
   font-feature-settings: "tnum";
-  margin-top: 0.75rem;
+  line-height: layout.$spacer-3;
+  margin-top: layout.$spacer-3;
 }
 
 .olderViewingSlugCss {
+  // border-bottom: solid 1px var(--color-border-default);
   grid-area: slug;
+  padding-bottom: layout.$spacer-3 - 1;
+  padding-top: layout.$spacer-3;
+
+  @media (min-width: breakpoints.$tablet) {
+  }
 }
 
 .backToTopContainerCss {
