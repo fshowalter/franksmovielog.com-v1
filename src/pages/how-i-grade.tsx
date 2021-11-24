@@ -19,6 +19,7 @@ export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
         image={backdrop.childImageSharp.gatsbyImageData}
         alt="Empty cinema seats."
         articleText={page.html}
+        title={page.frontmatter.title}
       />
     </>
   );
@@ -33,6 +34,9 @@ type PageQueryResult = {
     };
     page: {
       html: string;
+      frontmatter: {
+        title: string;
+      };
     };
   };
 };
@@ -54,6 +58,9 @@ export const pageQuery = graphql`
     }
     page: markdownRemark(frontmatter: { slug: { eq: "how-i-grade" } }) {
       html
+      frontmatter {
+        title
+      }
     }
   }
 `;

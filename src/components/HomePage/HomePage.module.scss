@@ -2,7 +2,6 @@
 @use "./src/styles/layout";
 
 .containerCss {
-  border-top: solid 1px var(--color-border-default);
   display: grid;
   grid-template-areas: ". list ." ". pagination .";
   grid-template-columns:
@@ -28,7 +27,7 @@
     column-gap: layout.$spacer-8;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: layout.$spacer-7 0 layout.$spacer-8;
+    padding: layout.$spacer-7 0 layout.$spacer-8 - 1;
     row-gap: layout.$spacer-8;
   }
 
@@ -97,8 +96,12 @@
   line-height: 0;
   margin-bottom: 5px;
 
-  @media (min-width: breakpoints.$desktop) {
-    margin-bottom: 5.25px;
+  @media (min-width: breakpoints.$tablet) {
+    margin-bottom: 4.5px;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    margin-bottom: 1.75px;
   }
 }
 

@@ -1,30 +1,19 @@
 import { Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Grade from "../Grade";
 import {
   listCss,
   listItemCss,
+  listItemDateCss,
   listItemGradeCss,
   listItemImageLinkCss,
   listItemTitleCss,
   listItemTitleYearCss,
 } from "./RelatedMovies.module.scss";
+import type { RelatedMovie } from "./ReviewPage";
 
-interface Movie {
-  slug: string;
-  backdrop: null | {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-  title: string;
-  year: number;
-  lastReviewGrade: string;
-  imdbId: string;
-}
-
-function RelatedMovie({ movie }: { movie: Movie }): JSX.Element {
+function Movie({ movie }: { movie: RelatedMovie }): JSX.Element {
   return (
     <>
       <Link className={listItemImageLinkCss} to={`/reviews/${movie.slug}/`}>
@@ -42,6 +31,7 @@ function RelatedMovie({ movie }: { movie: Movie }): JSX.Element {
         </Link>
       </div>
       <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
+      <div className={listItemDateCss}>{movie.lastReviewDate}</div>
     </>
   );
 }
@@ -51,7 +41,7 @@ export default function RelatedMovies({
   children,
   className,
 }: {
-  movies: Movie[];
+  movies: RelatedMovie[];
   children: React.ReactNode;
   className: string;
 }): JSX.Element | null {
@@ -66,7 +56,7 @@ export default function RelatedMovies({
         {movies.map((movie) => {
           return (
             <li key={movie.imdbId} className={listItemCss}>
-              <RelatedMovie movie={movie} />
+              <Movie movie={movie} />
             </li>
           );
         })}

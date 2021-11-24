@@ -1,9 +1,8 @@
 ---
 date: 2020-07-07
 slug: about
+title: About the Movie Log
 ---
-
-# About the Movie Log
 
 Been a long time, huh?
 

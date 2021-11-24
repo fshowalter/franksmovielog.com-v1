@@ -3,7 +3,7 @@
 
 .containerCss {
   display: grid;
-  grid-template-areas: ". title ." ". image ." ". reviews ." ". viewings ." "credits credits credits" "related related related";
+  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" "related related related";
   grid-template-columns:
     minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
     minmax(var(--layout-grid-margin), 1fr);
@@ -13,7 +13,7 @@
 
   @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
-    grid-template-columns: minmax(auto, 66ch) 1fr 25%;
+    grid-template-columns: minmax(auto, 66ch) 1fr calc((100% - 72px) / 4);
     grid-template-rows: none;
     max-width: unset;
     row-gap: 3rem;
@@ -27,17 +27,13 @@
   width: auto;
 
   @media (min-width: breakpoints.$desktop) {
-    height: 24px;
+    height: 20px;
     margin: 0 1ch 0 0;
   }
 }
 
 .reviewsListItemCss {
   position: relative;
-
-  @media (min-width: breakpoints.$desktop) {
-    padding-left: calc(1.25 * var(--step-1));
-  }
 }
 
 .reviewsListCss {
@@ -46,6 +42,7 @@
 
   @media (min-width: breakpoints.$desktop) {
     border-top: 1px solid var(--color-border-default);
+    padding-top: layout.$spacer-6 - 1;
   }
 }
 
@@ -62,6 +59,10 @@
 .reviewsListItemCss:not(:first-child) {
   padding-top: layout.$spacer-5;
   position: relative;
+
+  @media (min-width: breakpoints.$desktop) {
+    padding-top: layout.$spacer-8;
+  }
 }
 
 .reviewsListItemCss:not(:first-child)::after {
@@ -93,7 +94,7 @@
   @media (min-width: breakpoints.$desktop) {
     display: block;
     height: auto;
-    margin-right: calc(1.25 * var(--step-1) - 16px);
+    margin-right: layout.$spacer-3;
     width: 16px;
   }
 }
@@ -156,14 +157,23 @@
   margin-bottom: 7.845px;
   width: 100%;
 
-  @media (min-width: breakpoints.$desktop) {
-    margin-bottom: 5.25px;
+  @media (min-width: breakpoints.$tablet) {
+    margin-bottom: 7.625px;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    margin-bottom: 5px;
   }
 }
 
 .headerTitleCss {
   font-size: 32px;
   line-height: layout.$spacer-5;
+
+  @media (min-width: breakpoints.$desktop) {
+    font-size: 36px;
+    line-height: layout.$spacer-6;
+  }
 }
 
 .headerContainerCss {
@@ -179,6 +189,7 @@
 
 .headerOriginalTitleCss {
   color: var(--color-fg-subtle);
+  line-height: layout.$spacer-4;
 }
 
 .reviewContentCss {
@@ -195,7 +206,8 @@
   // }
 
   @media (min-width: breakpoints.$desktop) {
-    margin-top: 1rem;
+    margin-top: layout.$spacer-3;
+    padding-left: layout.$spacer-5;
     position: relative;
   }
 }
@@ -205,48 +217,36 @@
   border-top: solid 1px var(--color-border-subtle);
   display: grid;
   grid-area: credits;
-  grid-template-areas: ". heading ." ". credits .";
   grid-template-columns:
     minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
     minmax(var(--layout-grid-margin), 1fr);
   margin-top: layout.$spacer-7;
   padding: layout.$spacer-7 - 1 0 layout.$spacer-7;
   position: relative;
-}
 
-.creditsHeadingCss {
-  border-bottom: solid 1px var(--color-border-default);
-  color: var(--color-fg-muted);
-  display: flex;
-  font-weight: 600;
-  grid-area: heading;
-  justify-content: space-between;
-  letter-spacing: 0.2px;
-  margin-bottom: layout.$spacer-2;
-  padding-bottom: layout.$spacer-2 - 1;
-  text-rendering: optimizeLegibility;
+  @media (min-width: breakpoints.$desktop) {
+    background-color: unset;
+    border: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    margin: unset;
+  }
 }
 
 .creditsWrapCss {
   align-content: start;
-  background-color: var(--color-bg-subtle);
-
-  // border-top: solid 3px var(--color-bg-canvas);
   display: grid;
   font-size: 16px;
-  grid-area: credits;
+  grid-column: 2;
   grid-template-areas: "poster . credits" ". . ." "watchlist watchlist watchlist";
   grid-template-columns: 1fr layout.$spacer-4 1fr;
   grid-template-rows: auto layout.$spacer-4 auto;
   letter-spacing: 0.2px;
 
   @media (min-width: breakpoints.$desktop) {
-    background-color: unset;
-    border: none;
     grid-template-areas: "poster" "credits" "watchlist";
     grid-template-columns: 1fr;
     grid-template-rows: unset;
-    margin: unset;
   }
 }
 
@@ -257,8 +257,7 @@
 }
 
 .creditsTitleCss {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 22px;
   line-height: layout.$spacer-4;
 }
 
@@ -271,6 +270,10 @@
 
   // max-width: 309px;
   overflow: hidden;
+
+  @media (min-width: breakpoints.$desktop) {
+    border-radius: unset;
+  }
 }
 
 .creditTermCss {
@@ -299,10 +302,13 @@
   > div {
     margin-top: var(--step-1);
   }
+
+  @media (min-width: breakpoints.$desktop) {
+    margin-top: layout.$spacer-5;
+  }
 }
 
 .relatedCss {
-  // background-color: var(--color-bg-subtle);
   border-top: solid 1px var(--color-border-subtle);
   display: grid;
   grid-area: related;
@@ -314,12 +320,31 @@
   row-gap: layout.$spacer-9;
 
   @media (min-width: breakpoints.$desktop) {
-    row-gap: 4.5rem;
+    grid-template-columns: unset;
   }
 }
 
 .relatedMoviesSectionCss {
   grid-column: 2;
+
+  @media (min-width: breakpoints.$desktop) {
+    grid-column: unset;
+    padding: layout.$spacer-4 0;
+
+    &:nth-child(even) {
+      background-color: var(--color-bg-subtle);
+      margin: 0 calc(-1 * var(--layout-grid-margin));
+      padding-left: var(--layout-grid-margin);
+      padding-right: var(--layout-grid-margin);
+    }
+  }
+
+  @media (min-width: breakpoints.$max) {
+    &:nth-child(even) {
+      margin: 0 layout.$spacer-4 * -1 0 calc(-1 * var(--layout-grid-margin));
+      padding-right: layout.$spacer-4;
+    }
+  }
 }
 
 .relatedHeaderCss {
@@ -429,11 +454,7 @@
 .olderViewingSlugCss {
   // border-bottom: solid 1px var(--color-border-default);
   grid-area: slug;
-  padding-bottom: layout.$spacer-3 - 1;
-  padding-top: layout.$spacer-3;
-
-  @media (min-width: breakpoints.$tablet) {
-  }
+  padding: layout.$spacer-3 0;
 }
 
 .backToTopContainerCss {

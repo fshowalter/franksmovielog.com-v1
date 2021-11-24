@@ -19,6 +19,7 @@ export default function AboutPage({ data }: PageQueryResult): JSX.Element {
         image={backdrop.childImageSharp.gatsbyImageData}
         alt="A coffee cup with the word BEGIN on it."
         articleText={page.html}
+        title={page.frontmatter.title}
       />
     </>
   );
@@ -33,6 +34,9 @@ interface PageQueryResult {
     };
     page: {
       html: string;
+      frontmatter: {
+        title: string;
+      };
     };
   };
 }
@@ -54,6 +58,9 @@ export const pageQuery = graphql`
     }
     page: markdownRemark(frontmatter: { slug: { eq: "about" } }) {
       html
+      frontmatter {
+        title
+      }
     }
   }
 `;

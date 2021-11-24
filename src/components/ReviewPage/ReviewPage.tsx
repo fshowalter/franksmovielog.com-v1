@@ -444,7 +444,7 @@ interface PageQueryResult {
     originalTitle: string | null;
     principalCastNames: string[];
     directorNames: string[];
-    browseMore: BrowseMoreMovie[];
+    browseMore: RelatedMovie[];
     backdrop: {
       childImageSharp: {
         gatsbyImageData: IGatsbyImageData;
@@ -487,7 +487,7 @@ interface PageQueryResult {
   };
 }
 
-interface BrowseMoreMovie {
+export interface RelatedMovie {
   imdbId: string;
   title: string;
   lastReviewGrade: string;
@@ -503,7 +503,7 @@ interface BrowseMoreMovie {
 interface WatchlistEntity {
   name: string;
   slug: string;
-  browseMore: BrowseMoreMovie[];
+  browseMore: RelatedMovie[];
   avatar: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
@@ -547,7 +547,7 @@ export const pageQuery = graphql`
               formats: [JPG, AVIF]
               quality: 80
               placeholder: TRACED_SVG
-              width: 328
+              width: 248
             )
           }
         }
@@ -581,7 +581,7 @@ export const pageQuery = graphql`
             layout: CONSTRAINED
             formats: [JPG, AVIF]
             quality: 80
-            width: 328
+            width: 248
             placeholder: TRACED_SVG
           )
         }
@@ -615,7 +615,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 328
+                  width: 248
                 )
               }
             }
@@ -649,7 +649,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 328
+                  width: 248
                 )
               }
             }
@@ -683,7 +683,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 328
+                  width: 248
                 )
               }
             }
@@ -717,7 +717,7 @@ export const pageQuery = graphql`
                   formats: [JPG, AVIF]
                   quality: 80
                   placeholder: TRACED_SVG
-                  width: 328
+                  width: 248
                 )
               }
             }

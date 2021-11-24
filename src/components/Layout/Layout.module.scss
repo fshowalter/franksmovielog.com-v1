@@ -83,6 +83,7 @@
   }
 
   @media (min-width: breakpoints.$max) {
+    border-bottom: 0;
     column-gap: unset;
     grid-template-areas: "logo logo logo" "tagline tagline tagline" ". . ." "search search search" ". . ." ". nav .";
     grid-template-columns: layout.$spacer-3 auto layout.$spacer-3;
@@ -222,7 +223,6 @@
   border: 0;
   border-left: solid 1px var(--color-border-default);
   font-size: 12px;
-  margin-left: -1px;
   padding: 5px 12px;
 }
 

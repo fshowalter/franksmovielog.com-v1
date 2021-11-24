@@ -71,7 +71,7 @@ export default function Layout({
       <a className={skipLinkCss} href="#content">
         Skip to content
       </a>
-      <div id="top" className={containerCss}>
+      <div className={containerCss}>
         <Helmet>
           <html lang="en-us" />
           <meta
