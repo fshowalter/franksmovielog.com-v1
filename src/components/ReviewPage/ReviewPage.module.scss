@@ -154,16 +154,6 @@
 
 .heroImageCss {
   grid-area: image;
-  margin-bottom: 7.845px;
-  width: 100%;
-
-  @media (min-width: breakpoints.$tablet) {
-    margin-bottom: 7.625px;
-  }
-
-  @media (min-width: breakpoints.$max) {
-    margin-bottom: 5px;
-  }
 }
 
 .headerTitleCss {

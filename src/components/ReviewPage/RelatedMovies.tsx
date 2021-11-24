@@ -5,7 +5,6 @@ import Grade from "../Grade";
 import {
   listCss,
   listItemCss,
-  listItemDateCss,
   listItemGradeCss,
   listItemImageLinkCss,
   listItemTitleCss,
@@ -31,7 +30,6 @@ function Movie({ movie }: { movie: RelatedMovie }): JSX.Element {
         </Link>
       </div>
       <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
-      <div className={listItemDateCss}>{movie.lastReviewDate}</div>
     </>
   );
 }

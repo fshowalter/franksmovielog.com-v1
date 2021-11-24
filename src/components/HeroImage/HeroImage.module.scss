@@ -1,0 +1,14 @@
+@use "./src/styles/breakpoints";
+@use "./src/styles/layout";
+
+.imageCss {
+  margin-bottom: 7.845px;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin-bottom: 7.625px;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    margin-bottom: 5px;
+  }
+}

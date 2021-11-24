@@ -4,7 +4,9 @@ import React from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
+import HeroImage from "../HeroImage";
 import Layout from "../Layout";
+import PageTitle from "../PageTitle";
 import RenderedMarkdown from "../RenderedMarkdown";
 import Seo from "../Seo";
 import WatchlistLinks from "../WatchlistLinks";
@@ -25,7 +27,6 @@ import {
   headerMetaCss,
   headerOriginalTitleCss,
   headerSeparatorCss,
-  headerTitleCss,
   heroImageCss,
   hideDesktopCss,
   olderViewingsContainerCss,
@@ -242,7 +243,7 @@ export default function ReviewPage({
       />
       <main id="top" className={containerCss}>
         <header className={headerContainerCss}>
-          <h1 className={headerTitleCss}>{movie.title}</h1>
+          <PageTitle>{movie.title}</PageTitle>
           {movie.originalTitle && (
             <div className={headerOriginalTitleCss}>
               ({movie.originalTitle})
@@ -272,11 +273,10 @@ export default function ReviewPage({
           </div>
         </header>
         {movie.backdrop && (
-          <GatsbyImage
+          <HeroImage
             className={heroImageCss}
             image={movie.backdrop.childImageSharp.gatsbyImageData}
             alt={`A still from ${movie.title} (${movie.year})`}
-            loading="eager"
           />
         )}
         <ul className={reviewsListCss}>

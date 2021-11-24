@@ -1,6 +1,8 @@
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
+import HeroImage from "../HeroImage";
 import Layout from "../Layout";
+import PageTitle from "../PageTitle";
 import RenderedMarkdown from "../RenderedMarkdown";
 import {
   articleCss,
@@ -24,13 +26,8 @@ export default function ArticlePage({
     <Layout>
       <main>
         <article className={articleCss}>
-          <h1 className={titleCss}>{title}</h1>
-          <GatsbyImage
-            image={image}
-            alt={alt}
-            className={imageCss}
-            loading="eager"
-          />
+          <PageTitle className={titleCss}>{title}</PageTitle>
+          <HeroImage image={image} alt={alt} className={imageCss} />
           <RenderedMarkdown className={bodyCss} text={articleText} />
         </article>
       </main>

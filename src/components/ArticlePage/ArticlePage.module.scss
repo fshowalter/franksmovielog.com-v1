@@ -12,14 +12,13 @@
   margin: 0 auto;
 
   @media (min-width: breakpoints.$desktop) {
+    grid-template-areas: "image" "title" "body";
     grid-template-columns: unset;
   }
 }
 
 .titleCss {
-  font-size: 32px;
   grid-area: title;
-  line-height: layout.$spacer-5;
   padding: layout.$spacer-4 0;
   text-align: center;
 
@@ -29,9 +28,7 @@
 }
 
 .imageCss {
-  display: block;
   grid-area: image;
-  margin-bottom: 7.845px;
 }
 
 .bodyCss {
