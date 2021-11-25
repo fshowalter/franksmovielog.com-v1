@@ -209,9 +209,9 @@
   flex-grow: 1;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1;
+  line-height: layout.$spacer-4;
   min-width: 0;
-
+  padding: layout.$spacer-2 - 1 layout.$spacer-3 - 1;
   @media (min-width: breakpoints.$max) {
     flex-grow: unset;
     width: 100%;

@@ -1,3 +1,5 @@
+@use "./src/styles/layout";
+
 .avatarCss {
   border-radius: 50%;
   display: block !important;
@@ -9,13 +11,13 @@
 }
 
 .headingCss {
-  font-size: var(--step-2);
   text-align: center;
 }
 
 .taglineCss {
   color: var(--color-fg-subtle);
   font-size: 16px;
-  margin-top: var(--step-1);
+  line-height: layout.$spacer-4;
+  margin-top: layout.$spacer-3;
   text-align: center;
 }

@@ -1,3 +1,5 @@
+@use "./src/styles/layout";
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -91,7 +93,7 @@ textarea {
 }
 
 p {
-  line-height: calc(1ex / 0.32);
+  line-height: unset;
 }
 
 button {
@@ -111,5 +113,17 @@ button {
     > svg {
       color: #054a93;
     }
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .reactSelect__value-container {
+    line-height: layout.$spacer-4;
+    padding: layout.$spacer-2 - 1 layout.$spacer-5 - 1 layout.$spacer-2 - 1
+      layout.$spacer-3 - 1 !important;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .reactSelect__placeholder {
+    padding: 0;
   }
 }

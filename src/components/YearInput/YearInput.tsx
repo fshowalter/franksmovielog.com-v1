@@ -1,4 +1,5 @@
 import React from "react";
+import SelectInput from "../SelectInput";
 import {
   containerCss,
   fromCss,
@@ -57,7 +58,7 @@ export default function YearInput({
       <div className={wrapperCss}>
         <label className={inputLabelCss}>
           <span className={fromCss}>From</span>
-          <select
+          <SelectInput
             value={minYear}
             className={fromInputCss}
             onChange={(e) => handleMinChange(e.target.value)}
@@ -69,11 +70,11 @@ export default function YearInput({
                 </option>
               );
             })}
-          </select>
+          </SelectInput>
         </label>
         <label className={inputLabelCss}>
           <span className={toCss}>to</span>
-          <select
+          <SelectInput
             value={maxYear}
             className={toInputCss}
             onChange={(e) => handleMaxChange(e.target.value)}
@@ -88,7 +89,7 @@ export default function YearInput({
                   </option>
                 );
               })}
-          </select>
+          </SelectInput>
         </label>
       </div>
     </fieldset>

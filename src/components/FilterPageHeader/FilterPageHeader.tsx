@@ -1,5 +1,6 @@
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
+import PageTitle from "../PageTitle";
 import {
   avatarCss,
   headingCss,
@@ -36,7 +37,7 @@ export default function FilterPageHeader(props: Props): JSX.Element {
   return (
     <header className={props.className}>
       {avatar}
-      <h2 className={headingCss}>{props.heading}</h2>
+      <PageTitle className={headingCss}>{props.heading}</PageTitle>
       <div className={taglineCss}>{props.tagline}</div>
     </header>
   );
