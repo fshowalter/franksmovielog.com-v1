@@ -1,9 +1,11 @@
+@use "./src/styles/layout";
+
 .headingCss {
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-bg-canvas);
   display: block;
   font-size: 1.125rem;
-  margin: var(--step-5) 0 0 0;
-  padding: 0.5rem var(--step-1);
+  line-height: layout.$spacer-4;
+  padding: layout.$spacer-2 var(--layout-grid-margin);
   position: sticky;
   top: 0;
   z-index: 100;

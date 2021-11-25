@@ -21,7 +21,7 @@
   --layout-grid-margin: 20px;
 }
 
-@media screen and (min-width: breakpoints.$desktop) {
+@media screen and (min-width: breakpoints.$tablet) {
   :root {
     --layout-grid-margin: 48px;
   }

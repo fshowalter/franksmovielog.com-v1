@@ -1,10 +1,8 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
-  border-top: solid 1px var(--color-border-default);
   margin: 0 auto;
-  max-width: 40rem;
-  padding-top: var(--step-5);
 
   @media (min-width: breakpoints.$desktop) {
     max-width: unset;
@@ -17,15 +15,15 @@
 }
 
 .headerCss {
-  margin: 0 auto;
-  padding: 0 var(--step-1);
+  padding: 0 var(--layout-grid-margin);
 }
 
 .headingCss {
-  font-size: var(--step-3);
+  padding: layout.$spacer-4 0 0;
   text-align: center;
 
-  @media (min-width: breakpoints.$max) {
+  @media (min-width: breakpoints.$desktop) {
+    padding: layout.$spacer-6 0 0;
     text-align: left;
   }
 }
@@ -33,6 +31,7 @@
 .taglineCss {
   color: var(--color-fg-subtle);
   font-size: 16px;
+  line-height: layout.$spacer-4;
   text-align: center;
 
   @media (min-width: breakpoints.$max) {
@@ -42,5 +41,4 @@
 
 .contentCss {
   display: block;
-  margin-top: var(--step-5);
 }

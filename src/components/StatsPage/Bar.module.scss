@@ -1,4 +1,5 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .barCss {
   background-image: linear-gradient(
@@ -8,6 +9,7 @@
     transparent var(--bar-percent),
     transparent
   );
+  line-height: layout.$spacer-6 - 2;
   opacity: 33%;
   width: 100%;
 }

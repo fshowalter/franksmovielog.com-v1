@@ -1,8 +1,12 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
-  border: 1px solid var(--color-border-default);
-  margin: var(--step-5) auto var(--step-5);
+  margin: layout.$spacer-6 auto;
+
+  @media (min-width: breakpoints.$tablet) {
+    border: 1px solid var(--color-border-default);
+  }
 }
 
 .headerRowCss {
@@ -11,16 +15,16 @@
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  line-height: 1.75;
-  padding: 0 var(--step-1);
+  line-height: layout.$spacer-6;
+  padding: 0 var(--layout-grid-margin);
   position: sticky;
-  top: 38px;
+  top: layout.$spacer-6 - 1;
   width: 100%;
   z-index: 200;
 }
 
 .nameHeaderCss {
-  line-height: 2.5;
+  line-height: layout.$spacer-6;
   text-align: left;
 }
 
@@ -44,8 +48,7 @@
 .nameCss {
   grid-column-end: 2;
   grid-column-start: 1;
-  padding: 0 0 0 var(--step-1);
-  padding-right: var(--step-1);
+  padding: 0 var(--layout-grid-margin);
   width: 100%;
 
   a {
@@ -68,7 +71,7 @@
 
 .viewingsCss {
   font-feature-settings: "tnum";
-  padding: 0 var(--step-1);
+  padding: 0 var(--layout-grid-margin);
   text-align: right;
   vertical-align: top;
 }
@@ -77,15 +80,16 @@
 .barSpaceCss,
 .viewingsCss {
   background-color: var(--color-bg-stripe);
-  font-size: 1.125rem;
-  line-height: 1.9;
+  font-size: 18px;
+  line-height: layout.$spacer-6;
 }
 
 .headerCss {
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-bg-canvas);
   display: block;
-  font-size: 1.125rem;
-  padding: 0.5rem var(--step-1);
+  font-size: 18px;
+  line-height: layout.$spacer-6;
+  padding: 0 var(--layout-grid-margin);
   position: sticky;
   top: 0;
   z-index: 300;
@@ -94,9 +98,8 @@
 .detailsRowCss {
   grid-column-end: 4;
   grid-column-start: 1;
-  line-height: 1.75;
-  margin: 2px 0;
-  padding: 0 var(--step-1);
+  line-height: layout.$spacer-5;
+  padding: 0 var(--layout-grid-margin);
 }
 
 .detailsLabelCss {

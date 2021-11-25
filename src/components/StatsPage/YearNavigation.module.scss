@@ -1,13 +1,15 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .listCss {
   display: flex;
   flex-wrap: wrap;
   font-feature-settings: "tnum";
-  font-size: 1.125rem;
-  gap: 1rem;
+  font-size: 18px;
+  gap: layout.$spacer-3;
   justify-content: center;
-  margin-top: 1.5rem;
+  line-height: layout.$spacer-4;
+  margin-top: layout.$spacer-4;
 
   @media (min-width: breakpoints.$max) {
     justify-content: flex-start;
