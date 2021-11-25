@@ -18,11 +18,16 @@
 
 .listItemSlugCss {
   color: var(--color-fg-subtle);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 300;
+  line-height: layout.$spacer-4;
   text-align: center;
 }
 
 .containerCss {
   padding: 0 var(--layout-grid-margin);
+
+  @media (min-width: breakpoints.$max) {
+    padding: 0 layout.$spacer-4;
+  }
 }

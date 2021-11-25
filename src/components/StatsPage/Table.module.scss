@@ -16,6 +16,10 @@
   position: sticky;
   top: layout.$spacer-6 - 1;
   z-index: 100;
+
+  @media (min-width: breakpoints.$max) {
+    padding: 0 layout.$spacer-4;
+  }
 }
 
 .tableRowCss {
@@ -31,12 +35,20 @@
   line-height: layout.$spacer-6;
   padding-left: var(--layout-grid-margin);
   text-align: left;
+
+  @media (min-width: breakpoints.$max) {
+    padding-left: layout.$spacer-4;
+  }
 }
 
 .tableHeaderCellRightCss {
   padding-right: var(--layout-grid-margin);
   text-align: right;
   white-space: nowrap;
+
+  @media (min-width: breakpoints.$max) {
+    padding-right: layout.$spacer-4;
+  }
 }
 
 .tableDataCellLeftCss {
@@ -44,6 +56,10 @@
 
   @media (min-width: breakpoints.$tablet) {
     white-space: nowrap;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    padding: 0 layout.$spacer-4;
   }
 }
 
@@ -53,6 +69,10 @@
   padding-right: var(--layout-grid-margin);
   text-align: right;
   vertical-align: top;
+
+  @media (min-width: breakpoints.$max) {
+    padding-right: layout.$spacer-4;
+  }
 }
 
 .tableDataCellFillCss {

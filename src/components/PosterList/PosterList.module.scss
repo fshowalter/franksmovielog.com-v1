@@ -23,6 +23,10 @@
   max-width: 248px;
   overflow: hidden;
 
+  @media (min-width: breakpoints.$tablet) {
+    margin-bottom: 7px;
+  }
+
   @media (min-width: breakpoints.$desktop) {
     margin-bottom: 0;
   }
