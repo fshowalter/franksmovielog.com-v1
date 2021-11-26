@@ -1,0 +1,9 @@
+.labelCss {
+  color: var(--color-fg-subtle);
+  display: grid;
+  font-size: 14px;
+  font-weight: bold;
+  grid-template-columns: auto;
+  grid-template-rows: 1.5rem auto;
+  letter-spacing: 0.5px;
+}
