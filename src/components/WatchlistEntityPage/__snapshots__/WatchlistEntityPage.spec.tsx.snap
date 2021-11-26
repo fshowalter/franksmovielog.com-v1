@@ -10,7 +10,6 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
   </a>
   <div
     class="containerCss"
-    id="top"
   >
     <header
       class="mastHeaderCss"
@@ -64,7 +63,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
             value="Search"
           >
             <svg
-              class="iconCss "
+              class="iconCss mastSearchIconCss"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -161,21 +160,6 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
         <div
           class="leftCss"
         >
-          <div
-            class="breadcrumbCss"
-          >
-            <a
-              href="/watchlist/"
-            >
-              Watchlist
-            </a>
-             / 
-            <a
-              href="/watchlist/collections"
-            >
-              Collections
-            </a>
-          </div>
           <header
             class="pageHeaderCss"
           >
@@ -217,11 +201,28 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                 const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
               </script>
             </div>
-            <h2
-              class="headingCss"
+            <div
+              class="breadcrumbCss"
+            >
+              <div>
+                <a
+                  href="/watchlist/"
+                >
+                  Watchlist
+                </a>
+                 / 
+                <a
+                  href="/watchlist/collections"
+                >
+                  Collections
+                </a>
+              </div>
+            </div>
+            <h1
+              class="titleCss headingCss"
             >
               John Ford
-            </h2>
+            </h1>
             <div
               class="taglineCss"
             >
@@ -245,7 +246,11 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                 <label
                   class="labelCss"
                 >
-                  Title
+                  <span
+                    class="labelTextCss"
+                  >
+                    Title
+                  </span>
                   <input
                     class="inputCss"
                     placeholder="Enter all or part of a title"
@@ -272,7 +277,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                         From
                       </span>
                       <select
-                        class="fromInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1929"
@@ -450,7 +455,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                         to
                       </span>
                       <select
-                        class="toInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1966"
@@ -626,7 +631,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
                 >
                   Order By
                   <select
-                    class="selectInputCss"
+                    class="selectInputCss "
                   >
                     <option
                       value="release-date-asc"
@@ -16338,7 +16343,6 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
   </a>
   <div
     class="containerCss"
-    id="top"
   >
     <header
       class="mastHeaderCss"
@@ -16392,7 +16396,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
             value="Search"
           >
             <svg
-              class="iconCss "
+              class="iconCss mastSearchIconCss"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -16489,21 +16493,6 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
         <div
           class="leftCss"
         >
-          <div
-            class="breadcrumbCss"
-          >
-            <a
-              href="/watchlist/"
-            >
-              Watchlist
-            </a>
-             / 
-            <a
-              href="/watchlist/directors"
-            >
-              Directors
-            </a>
-          </div>
           <header
             class="pageHeaderCss"
           >
@@ -16545,11 +16534,28 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                 const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
               </script>
             </div>
-            <h2
-              class="headingCss"
+            <div
+              class="breadcrumbCss"
+            >
+              <div>
+                <a
+                  href="/watchlist/"
+                >
+                  Watchlist
+                </a>
+                 / 
+                <a
+                  href="/watchlist/directors"
+                >
+                  Directors
+                </a>
+              </div>
+            </div>
+            <h1
+              class="titleCss headingCss"
             >
               John Ford
-            </h2>
+            </h1>
             <div
               class="taglineCss"
             >
@@ -16573,7 +16579,11 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                 <label
                   class="labelCss"
                 >
-                  Title
+                  <span
+                    class="labelTextCss"
+                  >
+                    Title
+                  </span>
                   <input
                     class="inputCss"
                     placeholder="Enter all or part of a title"
@@ -16600,7 +16610,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                         From
                       </span>
                       <select
-                        class="fromInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1929"
@@ -16778,7 +16788,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                         to
                       </span>
                       <select
-                        class="toInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1966"
@@ -16954,7 +16964,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
                 >
                   Order By
                   <select
-                    class="selectInputCss"
+                    class="selectInputCss "
                   >
                     <option
                       value="release-date-asc"
@@ -19027,7 +19037,6 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
   </a>
   <div
     class="containerCss"
-    id="top"
   >
     <header
       class="mastHeaderCss"
@@ -19081,7 +19090,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
             value="Search"
           >
             <svg
-              class="iconCss "
+              class="iconCss mastSearchIconCss"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -19178,21 +19187,6 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
         <div
           class="leftCss"
         >
-          <div
-            class="breadcrumbCss"
-          >
-            <a
-              href="/watchlist/"
-            >
-              Watchlist
-            </a>
-             / 
-            <a
-              href="/watchlist/performers"
-            >
-              Performers
-            </a>
-          </div>
           <header
             class="pageHeaderCss"
           >
@@ -19234,11 +19228,28 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                 const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
               </script>
             </div>
-            <h2
-              class="headingCss"
+            <div
+              class="breadcrumbCss"
+            >
+              <div>
+                <a
+                  href="/watchlist/"
+                >
+                  Watchlist
+                </a>
+                 / 
+                <a
+                  href="/watchlist/performers"
+                >
+                  Performers
+                </a>
+              </div>
+            </div>
+            <h1
+              class="titleCss headingCss"
             >
               John Ford
-            </h2>
+            </h1>
             <div
               class="taglineCss"
             >
@@ -19262,7 +19273,11 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                 <label
                   class="labelCss"
                 >
-                  Title
+                  <span
+                    class="labelTextCss"
+                  >
+                    Title
+                  </span>
                   <input
                     class="inputCss"
                     placeholder="Enter all or part of a title"
@@ -19289,7 +19304,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                         From
                       </span>
                       <select
-                        class="fromInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1929"
@@ -19467,7 +19482,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                         to
                       </span>
                       <select
-                        class="toInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1966"
@@ -19643,7 +19658,7 @@ exports[`/watchlist/performers/{slug} renders 1`] = `
                 >
                   Order By
                   <select
-                    class="selectInputCss"
+                    class="selectInputCss "
                   >
                     <option
                       value="release-date-asc"
@@ -21716,7 +21731,6 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
   </a>
   <div
     class="containerCss"
-    id="top"
   >
     <header
       class="mastHeaderCss"
@@ -21770,7 +21784,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
             value="Search"
           >
             <svg
-              class="iconCss "
+              class="iconCss mastSearchIconCss"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -21867,21 +21881,6 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
         <div
           class="leftCss"
         >
-          <div
-            class="breadcrumbCss"
-          >
-            <a
-              href="/watchlist/"
-            >
-              Watchlist
-            </a>
-             / 
-            <a
-              href="/watchlist/writers"
-            >
-              Writers
-            </a>
-          </div>
           <header
             class="pageHeaderCss"
           >
@@ -21923,11 +21922,28 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                 const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}
               </script>
             </div>
-            <h2
-              class="headingCss"
+            <div
+              class="breadcrumbCss"
+            >
+              <div>
+                <a
+                  href="/watchlist/"
+                >
+                  Watchlist
+                </a>
+                 / 
+                <a
+                  href="/watchlist/writers"
+                >
+                  Writers
+                </a>
+              </div>
+            </div>
+            <h1
+              class="titleCss headingCss"
             >
               John Ford
-            </h2>
+            </h1>
             <div
               class="taglineCss"
             >
@@ -21951,7 +21967,11 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                 <label
                   class="labelCss"
                 >
-                  Title
+                  <span
+                    class="labelTextCss"
+                  >
+                    Title
+                  </span>
                   <input
                     class="inputCss"
                     placeholder="Enter all or part of a title"
@@ -21978,7 +21998,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                         From
                       </span>
                       <select
-                        class="fromInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1929"
@@ -22156,7 +22176,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                         to
                       </span>
                       <select
-                        class="toInputCss"
+                        class="selectInputCss "
                       >
                         <option
                           value="1966"
@@ -22332,7 +22352,7 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                 >
                   Order By
                   <select
-                    class="selectInputCss"
+                    class="selectInputCss "
                   >
                     <option
                       value="release-date-asc"

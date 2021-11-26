@@ -1,9 +1,8 @@
 ---
 slug: not-found
 date: 2020-07-07
+title: 404 Not Found
 ---
-
-# 404 Not Found
 
 This is probably my fault. Are you looking for one of my old reviews? I'm in the process of touching them up
 and reposting them. In the mean time, you can find them in the site's <a href="https://github.com/fshowalter/franksmovielog.com/">GitHub repo</a>.

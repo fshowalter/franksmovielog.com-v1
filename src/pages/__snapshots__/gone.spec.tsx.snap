@@ -10,7 +10,6 @@ exports[`/gone renders 1`] = `
   </a>
   <div
     class="containerCss"
-    id="top"
   >
     <header
       class="mastHeaderCss"
@@ -64,7 +63,7 @@ exports[`/gone renders 1`] = `
             value="Search"
           >
             <svg
-              class="iconCss "
+              class="iconCss mastSearchIconCss"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -159,8 +158,13 @@ exports[`/gone renders 1`] = `
         <article
           class="articleCss"
         >
+          <h1
+            class="titleCss titleCss"
+          >
+            410 Gone
+          </h1>
           <div
-            class="gatsby-image-wrapper gatsby-image-wrapper-constrained imageCss"
+            class="gatsby-image-wrapper gatsby-image-wrapper-constrained imageCss imageCss"
             data-gatsby-image-wrapper=""
             style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
           >
@@ -185,8 +189,8 @@ exports[`/gone renders 1`] = `
             />
             <picture>
               <source
-                sizes="(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
-                srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/db797/gone.avif 414w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/a53c3/gone.avif 640w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/6c055/gone.avif 818w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/44246/gone.avif 904w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/70674/gone.avif 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/6e61b/gone.avif 1280w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/7a18e/gone.avif 1808w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/31a81/gone.avif 2000w"
+                sizes="(min-width: 1000px) 1000px, 100vw"
+                srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/fdfcf/gone.avif 250w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/b400f/gone.avif 500w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/70674/gone.avif 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/31a81/gone.avif 2000w"
                 type="image/avif"
               />
               <img
@@ -195,9 +199,9 @@ exports[`/gone renders 1`] = `
                 data-main-image=""
                 decoding="async"
                 loading="eager"
-                sizes="(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
+                sizes="(min-width: 1000px) 1000px, 100vw"
                 src="/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg"
-                srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/d6f92/gone.jpg 414w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/ad189/gone.jpg 640w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/046a8/gone.jpg 818w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/8a152/gone.jpg 904w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/1015f/gone.jpg 1280w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/d5f84/gone.jpg 1808w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f2565/gone.jpg 2000w"
+                srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/2af26/gone.jpg 250w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/a5dc9/gone.jpg 500w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f2565/gone.jpg 2000w"
                 style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
               />
             </picture>
@@ -211,11 +215,6 @@ exports[`/gone renders 1`] = `
           <div
             class="renderedMarkdownCss bodyCss"
           >
-            <h1>
-              410: Gone
-            </h1>
-            
-
             <p>
               Forget it, Jake. It’s Chinatown.
             </p>

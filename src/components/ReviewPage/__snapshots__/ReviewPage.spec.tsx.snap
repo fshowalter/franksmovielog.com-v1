@@ -10,7 +10,6 @@ exports[`/reviews/{slug} renders 1`] = `
   </a>
   <div
     class="containerCss"
-    id="top"
   >
     <header
       class="mastHeaderCss"
@@ -64,7 +63,7 @@ exports[`/reviews/{slug} renders 1`] = `
             value="Search"
           >
             <svg
-              class="iconCss "
+              class="iconCss mastSearchIconCss"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -163,7 +162,7 @@ exports[`/reviews/{slug} renders 1`] = `
           class="headerContainerCss"
         >
           <h1
-            class="headerTitleCss"
+            class="titleCss "
           >
             Rio Bravo
           </h1>
@@ -201,7 +200,7 @@ exports[`/reviews/{slug} renders 1`] = `
           </div>
         </header>
         <div
-          class="gatsby-image-wrapper gatsby-image-wrapper-constrained heroImageCss"
+          class="gatsby-image-wrapper gatsby-image-wrapper-constrained imageCss heroImageCss"
           data-gatsby-image-wrapper=""
           style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
         >
@@ -422,7 +421,18 @@ exports[`/reviews/{slug} renders 1`] = `
                 >
                   Sun Jun 17, 2018
                 </span>
-                 via Blu-ray
+                 
+                <span
+                  class="olderViewingsViaCss"
+                >
+                  via
+                </span>
+                 
+                <span
+                  class="olderViewingsVenueCss"
+                >
+                  Blu-ray
+                </span>
               </span>
             </li>
             <li
@@ -460,7 +470,18 @@ exports[`/reviews/{slug} renders 1`] = `
                 >
                   Sat Dec 09, 2017
                 </span>
-                 via Blu-ray
+                 
+                <span
+                  class="olderViewingsViaCss"
+                >
+                  via
+                </span>
+                 
+                <span
+                  class="olderViewingsVenueCss"
+                >
+                  Blu-ray
+                </span>
               </span>
             </li>
             <li
@@ -498,17 +519,28 @@ exports[`/reviews/{slug} renders 1`] = `
                 >
                   Sun Jun 18, 2017
                 </span>
-                 via Alamo Drafthouse Cinema - One Loudoun
+                 
+                <span
+                  class="olderViewingsViaCss"
+                >
+                  via
+                </span>
+                 
+                <span
+                  class="olderViewingsVenueCss"
+                >
+                  Alamo Drafthouse Cinema - One Loudoun
+                </span>
               </span>
             </li>
           </ul>
         </div>
         <aside
-          class="creditsContainerCss"
+          class="creditsCss containerCss"
           id="credits"
         >
           <div
-            class="gatsby-image-wrapper gatsby-image-wrapper-constrained creditsPosterCss"
+            class="gatsby-image-wrapper gatsby-image-wrapper-constrained posterCss"
             data-gatsby-image-wrapper=""
             style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
           >
@@ -557,13 +589,13 @@ exports[`/reviews/{slug} renders 1`] = `
             </script>
           </div>
           <div
-            class="creditsListCss"
+            class="listCss"
           >
             <div
               class="hideDesktopCss"
             >
               <div
-                class="creditsTitleCss"
+                class="titleCss"
               >
                 Rio Bravo
               </div>
@@ -573,7 +605,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 class="hideDesktopCss"
               >
                 <dt
-                  class="creditTermCss"
+                  class="termCss"
                 >
                   Year
                 </dt>
@@ -581,7 +613,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   1959
                 </dd>
                 <dt
-                  class="creditTermCss"
+                  class="termCss"
                 >
                   Financing
                 </dt>
@@ -589,7 +621,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   United States
                 </dd>
                 <dt
-                  class="creditTermCss"
+                  class="termCss"
                 >
                   Running Time
                 </dt>
@@ -598,7 +630,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </dd>
               </div>
               <dt
-                class="creditTermCss"
+                class="termCss"
               >
                 Directed by
               </dt>
@@ -606,7 +638,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 Howard Hawks
               </dd>
               <dt
-                class="creditTermCss"
+                class="termCss"
               >
                 Starring
               </dt>
@@ -616,7 +648,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </dl>
           </div>
           <div
-            class="creditsWatchlistCss"
+            class="watchlistCss"
           >
             <div
               class="containerCss "
@@ -833,7 +865,7 @@ exports[`/reviews/{slug} renders 1`] = `
           class="relatedCss"
         >
           <nav
-            class="containerCss"
+            class="relatedMoviesSectionCss"
           >
             <header
               class="relatedHeaderCss"
@@ -899,7 +931,9 @@ exports[`/reviews/{slug} renders 1`] = `
             <ul
               class="listCss"
             >
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/maker-of-men-1931/"
@@ -974,7 +1008,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   src="/svg/1-star.svg"
                 />
               </li>
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/texas-cyclone-1932/"
@@ -1049,7 +1085,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   src="/svg/3-stars.svg"
                 />
               </li>
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/the-big-trail-1930/"
@@ -1124,7 +1162,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   src="/svg/4-stars.svg"
                 />
               </li>
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/arizona-1931/"
@@ -1202,7 +1242,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </ul>
           </nav>
           <nav
-            class="containerCss"
+            class="relatedMoviesSectionCss"
           >
             <header
               class="relatedHeaderCss"
@@ -1229,7 +1269,9 @@ exports[`/reviews/{slug} renders 1`] = `
             <ul
               class="listCss"
             >
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/renegades-1930/"
@@ -1304,7 +1346,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   src="/svg/3-stars.svg"
                 />
               </li>
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/ride-lonesome-1959/"
@@ -1379,7 +1423,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   src="/svg/4-stars.svg"
                 />
               </li>
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/the-rise-and-fall-of-legs-diamond-1960/"
@@ -1454,7 +1500,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   src="/svg/3-stars.svg"
                 />
               </li>
-              <li>
+              <li
+                class="listItemCss"
+              >
                 <a
                   class="listItemImageLinkCss"
                   href="/reviews/road-house-1989/"

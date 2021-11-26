@@ -51,8 +51,6 @@ export const pageQuery = graphql`
           quality: 80
           width: 1000
           placeholder: TRACED_SVG
-          breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
-          sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
         )
       }
     }

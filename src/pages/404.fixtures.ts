@@ -13,17 +13,15 @@ export default {
           fallback: {
             src: "/static/1b59d2a682b5e99753024caedc9d1323/f4320/not-found.jpg",
             srcSet:
-              "/static/1b59d2a682b5e99753024caedc9d1323/d6f92/not-found.jpg 414w,\n/static/1b59d2a682b5e99753024caedc9d1323/ad189/not-found.jpg 640w,\n/static/1b59d2a682b5e99753024caedc9d1323/046a8/not-found.jpg 818w,\n/static/1b59d2a682b5e99753024caedc9d1323/8a152/not-found.jpg 904w,\n/static/1b59d2a682b5e99753024caedc9d1323/f4320/not-found.jpg 1000w,\n/static/1b59d2a682b5e99753024caedc9d1323/1015f/not-found.jpg 1280w,\n/static/1b59d2a682b5e99753024caedc9d1323/d5f84/not-found.jpg 1808w,\n/static/1b59d2a682b5e99753024caedc9d1323/f2565/not-found.jpg 2000w",
-            sizes:
-              "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px",
+              "/static/1b59d2a682b5e99753024caedc9d1323/2af26/not-found.jpg 250w,\n/static/1b59d2a682b5e99753024caedc9d1323/a5dc9/not-found.jpg 500w,\n/static/1b59d2a682b5e99753024caedc9d1323/f4320/not-found.jpg 1000w,\n/static/1b59d2a682b5e99753024caedc9d1323/f2565/not-found.jpg 2000w",
+            sizes: "(min-width: 1000px) 1000px, 100vw",
           },
           sources: [
             {
               srcSet:
-                "/static/1b59d2a682b5e99753024caedc9d1323/db797/not-found.avif 414w,\n/static/1b59d2a682b5e99753024caedc9d1323/a53c3/not-found.avif 640w,\n/static/1b59d2a682b5e99753024caedc9d1323/6c055/not-found.avif 818w,\n/static/1b59d2a682b5e99753024caedc9d1323/44246/not-found.avif 904w,\n/static/1b59d2a682b5e99753024caedc9d1323/70674/not-found.avif 1000w,\n/static/1b59d2a682b5e99753024caedc9d1323/6e61b/not-found.avif 1280w,\n/static/1b59d2a682b5e99753024caedc9d1323/7a18e/not-found.avif 1808w,\n/static/1b59d2a682b5e99753024caedc9d1323/31a81/not-found.avif 2000w",
+                "/static/1b59d2a682b5e99753024caedc9d1323/fdfcf/not-found.avif 250w,\n/static/1b59d2a682b5e99753024caedc9d1323/b400f/not-found.avif 500w,\n/static/1b59d2a682b5e99753024caedc9d1323/70674/not-found.avif 1000w,\n/static/1b59d2a682b5e99753024caedc9d1323/31a81/not-found.avif 2000w",
               type: "image/avif",
-              sizes:
-                "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px",
+              sizes: "(min-width: 1000px) 1000px, 100vw",
             },
           ],
         },
@@ -33,6 +31,9 @@ export default {
     },
   },
   page: {
-    html: '<h1>404 Not Found</h1>\n<p>This is probably my fault. Are you looking for one of my old reviews? I’m in the process of touching them up\nand reposting them. In the mean time, you can find them in the site’s <a href="https://github.com/fshowalter/franksmovielog.com/">GitHub repo</a>.</p>\n<p>If you still can’t find what you need, <a href="https://github.com/fshowalter/franksmovielog.com/issues/new/choose">open an issue on GitHub</a> and I’ll try to help.</p>\n<p>My apologies, and thanks for stopping by.</p>',
+    html: '<p>This is probably my fault. Are you looking for one of my old reviews? I’m in the process of touching them up\nand reposting them. In the mean time, you can find them in the site’s <a href="https://github.com/fshowalter/franksmovielog.com/">GitHub repo</a>.</p>\n<p>If you still can’t find what you need, <a href="https://github.com/fshowalter/franksmovielog.com/issues/new/choose">open an issue on GitHub</a> and I’ll try to help.</p>\n<p>My apologies, and thanks for stopping by.</p>',
+    frontmatter: {
+      title: "404 Not Found",
+    },
   },
 };
