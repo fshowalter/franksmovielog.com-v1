@@ -32,23 +32,33 @@ import {
 } from "./WatchlistEntityIndexPage.reducer";
 
 function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
-  const percent = Math.floor((entity.reviewCount / entity.titleCount) * 100);
+  const percent = entity.reviewCount / entity.titleCount;
+  const circumference = 17.5 * 2 * Math.PI;
 
   return (
-    <svg viewBox="0 0 36 36" className={progressRingCss}>
-      <path
-        className={percentBackgroundCss}
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-      />
-      <path
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-        className={percentProgressCss}
-        strokeDasharray={`${percent}, 100`}
-      />
+    <svg
+      viewBox="0 0 36 36"
+      className={progressRingCss}
+      preserveAspectRatio="none"
+    >
+      <g id="circles" strokeWidth="1">
+        <circle
+          r="17.5"
+          cx="18"
+          cy="18"
+          fill="none"
+          className={percentBackgroundCss}
+        />
+        <circle
+          r="17.5"
+          cx="18"
+          cy="18"
+          fill="none"
+          strokeDasharray={`${circumference} ${circumference}`}
+          strokeDashoffset={circumference - percent * circumference}
+          className={percentProgressCss}
+        />
+      </g>
     </svg>
   );
 }

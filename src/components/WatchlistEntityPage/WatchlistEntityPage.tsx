@@ -8,7 +8,7 @@ import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
 import ProgressGraph from "../ProgressGraph";
-import SelectInput from "../SelectInput";
+import SelectField from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
@@ -238,7 +238,7 @@ export default function WatchlistEntityPage({
                   dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
                 }
               />
-              <SelectInput
+              <SelectField
                 value={state.sortType}
                 label="Order By"
                 onChange={(e) =>
@@ -257,7 +257,7 @@ export default function WatchlistEntityPage({
                 <option value="title">Title</option>
                 <option value="grade-desc">Grade (Best First)</option>
                 <option value="grade-asc">Grade (Worst First)</option>
-              </SelectInput>
+              </SelectField>
             </Fieldset>
             <div className={listInfoCss}>
               <ListInfo

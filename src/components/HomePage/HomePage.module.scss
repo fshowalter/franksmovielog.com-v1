@@ -44,6 +44,18 @@
       grid-column-end: 3;
       grid-column-start: 1;
     }
+
+    &:first-of-type {
+      border-bottom: solid 1px var(--color-border-default);
+      border-top: 0 !important;
+      padding-bottom: layout.$spacer-7 - 1;
+    }
+
+    &:last-of-type {
+      border-bottom: 0 !important;
+      border-top: solid 1px var(--color-border-default);
+      padding-top: layout.$spacer-8 - 1;
+    }
   }
 
   @media (min-width: breakpoints.$max) {
