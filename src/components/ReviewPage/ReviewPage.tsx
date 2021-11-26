@@ -1,7 +1,6 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
-import toSentenceArray from "../../utils/to-sentence-array";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
 import HeroImage from "../HeroImage";
@@ -9,20 +8,11 @@ import Layout from "../Layout";
 import PageTitle from "../PageTitle";
 import RenderedMarkdown from "../RenderedMarkdown";
 import Seo from "../Seo";
-import WatchlistLinks from "../WatchlistLinks";
+import Credits from "./Credits";
 import RelatedMovies from "./RelatedMovies";
 import {
-  backToTopArrowCss,
-  backToTopContainerCss,
-  backToTopInnerCss,
   containerCss,
-  creditsContainerCss,
-  creditsListCss,
-  creditsPosterCss,
-  creditsTitleCss,
-  creditsWatchlistCss,
-  creditsWrapCss,
-  creditTermCss,
+  creditsCss,
   headerContainerCss,
   headerMetaCss,
   headerOriginalTitleCss,
@@ -370,56 +360,7 @@ export default function ReviewPage({
             </ul>
           </div>
         )}
-        <aside id="credits" className={creditsContainerCss}>
-          <div className={creditsWrapCss}>
-            {movie.poster && (
-              <GatsbyImage
-                className={creditsPosterCss}
-                image={movie.poster.childImageSharp.gatsbyImageData}
-                alt={`A poster from ${movie.title} (${movie.year})`}
-                loading="eager"
-              />
-            )}
-            <div className={creditsListCss}>
-              <div className={hideDesktopCss}>
-                <div className={creditsTitleCss}>{movie.title}</div>
-              </div>
-              <dl>
-                <div className={hideDesktopCss}>
-                  <dt className={creditTermCss}>Year</dt>
-                  <dd>{movie.year}</dd>
-                  {movie.originalTitle && (
-                    <>
-                      <dt className={creditTermCss}>Original Title</dt>
-                      <dd>{movie.originalTitle}</dd>
-                    </>
-                  )}
-                  <dt className={creditTermCss}>Financing</dt>
-                  <dd>{toSentenceArray(movie.countries)}</dd>
-                  <dt className={creditTermCss}>Running Time</dt>
-                  <dd>{movie.runtimeMinutes} min</dd>
-                </div>
-                <dt className={creditTermCss}>Directed by</dt>
-                <dd>{toSentenceArray(movie.directorNames)}</dd>
-                <dt className={creditTermCss}>Starring</dt>
-                <dd>{toSentenceArray(movie.principalCastNames)}</dd>
-              </dl>
-            </div>
-            <div className={creditsWatchlistCss}>
-              <WatchlistLinks movie={movie} />
-            </div>
-          </div>
-          <a
-            href="#top"
-            className={[backToTopContainerCss, hideDesktopCss].join(" ")}
-          >
-            <div className={backToTopInnerCss}>
-              <svg viewBox="0 0 24 24" className={backToTopArrowCss}>
-                <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
-              </svg>
-            </div>
-          </a>
-        </aside>
+        <Credits movie={movie} className={creditsCss} />
         <Related movie={movie} />
       </main>
       {structuredData && (
@@ -434,56 +375,58 @@ export default function ReviewPage({
 }
 
 interface PageQueryResult {
-  movie: {
-    imdbId: string;
-    title: string;
-    year: number;
-    countries: string[];
-    runtimeMinutes: number;
-    lastReviewGrade: string;
-    originalTitle: string | null;
-    principalCastNames: string[];
-    directorNames: string[];
-    browseMore: RelatedMovie[];
-    backdrop: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
+  movie: Movie;
+}
+
+export interface Movie {
+  imdbId: string;
+  title: string;
+  year: number;
+  countries: string[];
+  runtimeMinutes: number;
+  lastReviewGrade: string;
+  originalTitle: string | null;
+  principalCastNames: string[];
+  directorNames: string[];
+  browseMore: RelatedMovie[];
+  backdrop: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+  seoImage: {
+    childImageSharp: {
+      resize: {
+        src: string;
       };
     };
-    seoImage: {
-      childImageSharp: {
-        resize: {
-          src: string;
-        };
-      };
+  };
+  poster: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
     };
-    poster: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    reviews: {
-      frontmatter: {
-        grade: string;
-        date: string;
-        dateIso: string;
-        venue: string;
-        venueNotes: string;
-        sequence: number;
-      };
-      linkedHtml: string;
-    }[];
-    olderViewings: {
+  };
+  reviews: {
+    frontmatter: {
+      grade: string;
+      date: string;
+      dateIso: string;
       venue: string;
-      viewingDate: string;
+      venueNotes: string;
       sequence: number;
-    }[];
-    watchlist: {
-      performers: WatchlistEntity[];
-      directors: WatchlistEntity[];
-      writers: WatchlistEntity[];
-      collections: WatchlistEntity[];
     };
+    linkedHtml: string;
+  }[];
+  olderViewings: {
+    venue: string;
+    viewingDate: string;
+    sequence: number;
+  }[];
+  watchlist: {
+    performers: WatchlistEntity[];
+    directors: WatchlistEntity[];
+    writers: WatchlistEntity[];
+    collections: WatchlistEntity[];
   };
 }
 

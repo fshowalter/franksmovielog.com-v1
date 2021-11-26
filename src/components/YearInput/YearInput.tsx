@@ -3,11 +3,9 @@ import SelectInput from "../SelectInput";
 import {
   containerCss,
   fromCss,
-  fromInputCss,
   inputLabelCss,
   legendCss,
   toCss,
-  toInputCss,
   wrapperCss,
 } from "./YearInput.module.scss";
 
@@ -60,7 +58,6 @@ export default function YearInput({
           <span className={fromCss}>From</span>
           <SelectInput
             value={minYear}
-            className={fromInputCss}
             onChange={(e) => handleMinChange(e.target.value)}
           >
             {years.map((year) => {
@@ -76,7 +73,6 @@ export default function YearInput({
           <span className={toCss}>to</span>
           <SelectInput
             value={maxYear}
-            className={toInputCss}
             onChange={(e) => handleMaxChange(e.target.value)}
           >
             {years

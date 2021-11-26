@@ -3,7 +3,7 @@
 
 .containerCss {
   display: grid;
-  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" "related related related";
+  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." ". credits ." ". related .";
   grid-template-columns:
     minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
     minmax(var(--layout-grid-margin), 1fr);
@@ -202,76 +202,6 @@
   }
 }
 
-.creditsContainerCss {
-  background-color: var(--color-bg-subtle);
-  border-top: solid 1px var(--color-border-subtle);
-  display: grid;
-  grid-area: credits;
-  grid-template-columns:
-    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
-    minmax(var(--layout-grid-margin), 1fr);
-  margin-top: layout.$spacer-7;
-  padding: layout.$spacer-7 - 1 0 layout.$spacer-7;
-  position: relative;
-
-  @media (min-width: breakpoints.$desktop) {
-    background-color: unset;
-    border: none;
-    grid-template-columns: 1fr;
-    grid-template-rows: unset;
-    margin: unset;
-  }
-}
-
-.creditsWrapCss {
-  align-content: start;
-  display: grid;
-  font-size: 16px;
-  grid-column: 2;
-  grid-template-areas: "poster . credits" ". . ." "watchlist watchlist watchlist";
-  grid-template-columns: 1fr layout.$spacer-4 1fr;
-  grid-template-rows: auto layout.$spacer-4 auto;
-  letter-spacing: 0.2px;
-
-  @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "poster" "credits" "watchlist";
-    grid-template-columns: 1fr;
-    grid-template-rows: unset;
-  }
-}
-
-.creditsListCss {
-  color: var(--color-fg-subtle);
-  grid-area: credits;
-  line-height: 20px;
-}
-
-.creditsTitleCss {
-  font-size: 22px;
-  line-height: layout.$spacer-4;
-}
-
-.creditsPosterCss {
-  align-self: flex-start;
-  border-radius: 8px;
-  grid-area: poster;
-  justify-self: flex-end;
-  margin-bottom: 7.55px;
-
-  // max-width: 309px;
-  overflow: hidden;
-
-  @media (min-width: breakpoints.$desktop) {
-    border-radius: unset;
-  }
-}
-
-.creditTermCss {
-  font-weight: 700;
-  line-height: layout.$spacer-4;
-  margin-top: layout.$spacer-4;
-}
-
 .olderViewingsDateCss {
   display: block;
   font-weight: 700;
@@ -281,32 +211,11 @@
   }
 }
 
-.creditsWatchlistCss {
-  align-self: start;
-  grid-area: watchlist;
-
-  a {
-    color: var(--color-fg-accent);
-  }
-
-  > div {
-    margin-top: var(--step-1);
-  }
-
-  @media (min-width: breakpoints.$desktop) {
-    margin-top: layout.$spacer-5;
-  }
-}
-
 .relatedCss {
-  border-top: solid 1px var(--color-border-subtle);
   display: grid;
   grid-area: related;
-  grid-template-columns:
-    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
-    minmax(var(--layout-grid-margin), 1fr);
   padding-bottom: layout.$spacer-8;
-  padding-top: layout.$spacer-9 - 1;
+  padding-top: layout.$spacer-9;
   row-gap: layout.$spacer-9;
 
   @media (min-width: breakpoints.$desktop) {
@@ -315,13 +224,11 @@
 }
 
 .relatedMoviesSectionCss {
-  grid-column: 2;
-
   @media (min-width: breakpoints.$desktop) {
     grid-column: unset;
     padding: layout.$spacer-4 0;
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background-color: var(--color-bg-subtle);
       margin: 0 calc(-1 * var(--layout-grid-margin));
       padding-left: var(--layout-grid-margin);
@@ -330,7 +237,7 @@
   }
 
   @media (min-width: breakpoints.$max) {
-    &:nth-child(even) {
+    &:nth-child(odd) {
       margin: 0 layout.$spacer-4 * -1 0 calc(-1 * var(--layout-grid-margin));
       padding-right: layout.$spacer-4;
     }
@@ -447,61 +354,16 @@
   padding: layout.$spacer-3 0;
 }
 
-.backToTopContainerCss {
-  align-items: center;
-  backface-visibility: hidden;
-  background-color: rgb(0 0 0 / 15%);
-  border-radius: 100px 0 0;
-  bottom: 0;
-  color: rgb(255 255 255);
-  cursor: pointer;
-  display: flex;
-  height: var(--step-5);
-  justify-content: center;
-  margin-bottom: 0;
-  margin-right: 0;
-  padding: 18.6667px 4.6667px 4.6667px 18.6667px;
-  position: relative;
-  position: absolute;
-  right: 0;
+.creditsCss {
+  background-color: var(--color-bg-subtle);
+  grid-area: credits;
+  margin-top: layout.$spacer-7;
 
-  &::before {
-    background-color: rgb(255 255 255);
-    border-radius: inherit;
-    content: " ";
-    inset: 0;
-    opacity: 0%;
-    pointer-events: none;
-    position: absolute;
-    z-index: 1;
+  @media (min-width: breakpoints.$desktop) {
+    background-color: unset;
+    border: none;
+    margin: unset;
   }
-
-  &::after {
-    border-radius: inherit;
-    content: " ";
-    inset: 0;
-    pointer-events: none;
-    position: absolute;
-    z-index: 1;
-  }
-}
-
-.backToTopInnerCss {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.backToTopArrowCss {
-  align-items: center;
-  display: flex;
-  fill: var(--color-fg-default);
-  height: 31.5px;
-  justify-content: center;
-  transition: all 0.3s ease 0s;
-  width: 31.5px;
-  z-index: 2;
 }
 
 .hideDesktopCss {
