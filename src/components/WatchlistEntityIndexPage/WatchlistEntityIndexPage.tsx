@@ -18,7 +18,6 @@ import {
   listItemLinkCss,
   listItemTitleCss,
   pageHeaderCss,
-  pageHeaderSubCss,
   percentBackgroundCss,
   percentProgressCss,
   progressRingCss,
@@ -182,15 +181,9 @@ export default function WatchlistEntityIndexPage({
         <div className={leftCss}>
           <FilterPageHeader
             className={pageHeaderCss}
-            heading={
-              <>
-                <Link to="/watchlist/" className={pageHeaderSubCss}>
-                  Watchlist
-                </Link>{" "}
-                {entityDetails.pluralName}
-              </>
-            }
+            heading={entityDetails.pluralName}
             tagline={<q>{entityDetails.tagLine}</q>}
+            breadcrumb={<Link to="/watchlist/">Watchlist</Link>}
           />
           <div className={filtersCss}>
             <Fieldset legend="Filter & Sort">

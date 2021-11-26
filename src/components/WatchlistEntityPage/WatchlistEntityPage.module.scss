@@ -1,15 +1,18 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
-  border-top: solid 1px var(--color-border-default);
   display: grid;
+  grid-template-columns: var(--layout-grid-margin) 1fr var(--layout-grid-margin);
   margin: 0 auto;
-  max-width: 40rem;
-  padding-top: var(--step-5);
+  padding-bottom: layout.$spacer-5;
+  padding-top: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-columns: 375px 1fr;
+    column-gap: layout.$spacer-5;
+    grid-template-columns: 352px 1fr;
     max-width: unset;
+    padding-top: layout.$spacer-5;
   }
 
   @media (min-width: breakpoints.$max) {
@@ -21,44 +24,50 @@
 .leftCss {
   align-content: start;
   display: grid;
-  grid-template-areas: ". breadcrumb ." ". . ." ". header ." ". . ." ". filters ." ". . .";
-  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
-      var(--step-1),
-      1fr
-    );
-  grid-template-rows: auto var(--step-1) auto var(--step-5) auto var(--step-1);
+  grid-column: 2;
+  grid-template-areas: "header" "filters";
+  row-gap: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "breadcrumb breadcrumb ." ". . ." "header header ." ". . ." "filters filters ." ". . .";
+    grid-column: 1;
   }
 }
 
 .rightCss {
   display: grid;
-  grid-template-areas: "list" "." "show_more" ".";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto var(--step-1) auto var(--step-5);
-  padding: 0 var(--step-1);
+  grid-column: 2;
+  grid-template-areas: "list" "show_more";
+  row-gap: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
-    padding-right: 0;
+    padding: 0 layout.$spacer-3;
   }
 }
 
 .pageHeaderCss {
   grid-area: header;
+  margin: 0 auto;
+  max-width: 58ch;
+}
+
+.listInfoCss {
+  color: var(--color-fg-subtle);
+  font-weight: 300;
+  justify-self: center;
+  margin-top: layout.$spacer-4;
+  text-align: center;
+}
+
+.showMoreCss {
+  grid-area: show_more;
 }
 
 .filtersCss {
   grid-area: filters;
 
-  @media (min-width: breakpoints.$tablet) and (max-width: breakpoints.$desktop - 1px) {
-    margin: 0 calc(-1 * var(--step-1));
-  }
-
   @media (min-width: breakpoints.$desktop) and (min-height: 1200px) {
     position: sticky;
-    top: var(--step-5);
+    top: layout.$spacer-7;
   }
 }
 
@@ -66,48 +75,29 @@
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  margin: var(--step-1) auto 0;
-  width: 150px;
+  margin: layout.$spacer-4 auto 0;
+  padding-bottom: layout.$spacer-4;
+  width: 160px;
 }
 
 .percentTotalsCss {
   color: var(--color-fg-subtle);
-  font-size: 1rem;
-  margin-top: 1.5rem;
+  font-size: 16px;
+  margin-top: layout.$spacer-4;
 }
 
 .listHeaderGroupCss {
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-bg-canvas);
   display: block;
-  font-size: 1.125rem;
-  margin: 0 calc(-1 * var(--step-1));
-  padding: 0.5rem var(--step-1);
+  font-size: 18px;
+  line-height: layout.$spacer-4;
+  margin: 0 calc(-1 * var(--layout-grid-margin));
+  padding: layout.$spacer-2 var(--layout-grid-margin);
   position: sticky;
   top: 0;
 
-  @media (min-width: breakpoints.$tablet) {
-    margin: 0 calc(-0.5 * var(--step-1));
-    padding: 0.5rem calc(0.55 * var(--step-1));
+  @media (min-width: breakpoints.$desktop) {
+    margin: 0 (-1 * layout.$spacer-3);
+    padding: layout.$spacer-2 layout.$spacer-3;
   }
-}
-
-.listInfoCss {
-  color: var(--color-fg-subtle);
-  font-weight: 300;
-  margin-top: var(--step-1);
-  text-align: center;
-}
-
-.showMoreCss {
-  grid-area: show_more;
-
-  @media (max-width: breakpoints.$tablet) {
-    padding: 0 var(--step-1);
-  }
-}
-
-.breadcrumbCss {
-  color: var(--color-fg-accent);
-  grid-area: breadcrumb;
-  text-align: center;
 }

@@ -26,7 +26,6 @@ import {
   listItemTitleCss,
   listItemTitleLinkCss,
   listItemTitleYearCss,
-  nestedListCss,
   pageHeaderCss,
   percentCss,
   percentTotalsCss,
@@ -541,7 +540,7 @@ export default function WatchlistIndexPage({
                   >
                     {group}
                   </div>
-                  <ol className={nestedListCss}>
+                  <ol>
                     {movies.map((movie) => {
                       return (
                         <li key={movie.imdbId} className={listItemCss}>

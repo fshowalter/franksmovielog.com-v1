@@ -12,7 +12,6 @@ import SelectInput from "../SelectInput";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
-  breadcrumbCss,
   containerCss,
   filtersCss,
   leftCss,
@@ -208,18 +207,20 @@ export default function WatchlistEntityPage({
       />
       <main className={containerCss}>
         <div className={leftCss}>
-          <div className={breadcrumbCss}>
-            <Link to="/watchlist/">Watchlist</Link> /{" "}
-            <Link to={`/watchlist/${entityDetails.kind.toLowerCase()}`}>
-              {entityDetails.kind}
-            </Link>
-          </div>
           <FilterPageHeader
             className={pageHeaderCss}
             avatar={entity.avatar.childImageSharp.gatsbyImageData}
             alt={`An image of ${entity.name}`}
             heading={entity.name}
             tagline={entityDetails.tagLine}
+            breadcrumb={
+              <div>
+                <Link to="/watchlist/">Watchlist</Link> /{" "}
+                <Link to={`/watchlist/${entityDetails.kind.toLowerCase()}`}>
+                  {entityDetails.kind}
+                </Link>
+              </div>
+            }
           />
           <div className={filtersCss}>
             <Fieldset legend="Filter & Sort">

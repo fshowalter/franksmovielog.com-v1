@@ -78,11 +78,6 @@
 
 .showMoreCss {
   grid-area: show_more;
-
-  @media (max-width: breakpoints.$tablet) {
-    margin-left: var(--step-1);
-    padding-right: var(--step-1);
-  }
 }
 
 .listHeaderGroupCss {

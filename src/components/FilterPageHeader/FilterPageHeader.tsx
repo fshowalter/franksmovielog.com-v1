@@ -3,6 +3,7 @@ import React from "react";
 import PageTitle from "../PageTitle";
 import {
   avatarCss,
+  breadcrumbCss,
   headingCss,
   taglineCss,
 } from "./FilterPageHeader.module.scss";
@@ -13,12 +14,16 @@ type HeaderProps = {
   tagline: React.ReactNode;
 };
 
+type WithBreadCrumpProps = {
+  breadcrumb: React.ReactNode;
+} & HeaderProps;
+
 type WithAvatarProps = {
   avatar: IGatsbyImageData;
   alt: string;
-} & HeaderProps;
+} & WithBreadCrumpProps;
 
-type Props = HeaderProps | WithAvatarProps;
+type Props = HeaderProps | WithBreadCrumpProps | WithAvatarProps;
 
 export default function FilterPageHeader(props: Props): JSX.Element {
   let avatar;
@@ -37,6 +42,9 @@ export default function FilterPageHeader(props: Props): JSX.Element {
   return (
     <header className={props.className}>
       {avatar}
+      {"breadcrumb" in props && (
+        <div className={breadcrumbCss}>{props.breadcrumb}</div>
+      )}
       <PageTitle className={headingCss}>{props.heading}</PageTitle>
       <div className={taglineCss}>{props.tagline}</div>
     </header>
