@@ -55,7 +55,7 @@
 
   @media (min-width: breakpoints.$desktop) and (min-height: breakpoints.$tablet) {
     position: sticky;
-    top: var(--step-5);
+    top: layout.$spacer-7;
   }
 }
 
@@ -96,7 +96,6 @@
   top: 0;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-column: 1;
     margin: 0 (-1 * layout.$spacer-3);
     padding: layout.$spacer-2 layout.$spacer-3;
   }

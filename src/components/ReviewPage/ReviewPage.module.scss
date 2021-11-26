@@ -183,17 +183,7 @@
 }
 
 .reviewContentCss {
-  color: #292929;
   margin-top: layout.$spacer-5;
-
-  // @media (min-width: breakpoints.$tablet) {
-  //   color: #292929;
-  //   font-size: 21px;
-
-  //   p {
-  //     line-height: layout.$spacer-5 !important;
-  //   }
-  // }
 
   @media (min-width: breakpoints.$desktop) {
     margin-top: layout.$spacer-3;
@@ -349,7 +339,6 @@
 }
 
 .olderViewingSlugCss {
-  // border-bottom: solid 1px var(--color-border-default);
   grid-area: slug;
   padding: layout.$spacer-3 0;
 }
