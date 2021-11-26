@@ -1,15 +1,18 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
-  border-top: solid 1px var(--color-border-default);
   display: grid;
+  grid-template-columns: var(--layout-grid-margin) 1fr var(--layout-grid-margin);
   margin: 0 auto;
-  max-width: 40rem;
-  padding-top: var(--step-5);
+  padding-bottom: layout.$spacer-7;
+  padding-top: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-columns: 375px 1fr;
+    column-gap: layout.$spacer-5;
+    grid-template-columns: 352px 1fr;
     max-width: unset;
+    padding-top: layout.$spacer-5;
   }
 
   @media (min-width: breakpoints.$max) {
@@ -21,30 +24,22 @@
 .leftCss {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". filters ." ". . ." ". pagination_info ." ". . ." ". percent ." ". . .";
-  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
-      var(--step-1),
-      1fr
-    );
-  grid-template-rows: auto var(--step-5) auto var(--step-1) auto var(--step-5) auto var(
-      --step-5
-    );
+  grid-column: 2;
+  grid-template-areas: "header" "filters";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-bottom: layout.$spacer-6;
+  row-gap: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "header header ." ". . ." "filters filters ." ". . ." "pagination_info pagination_info ." ". . ." "percent percent ." ". . .";
+    grid-column: 1;
   }
 }
 
 .rightCss {
   display: grid;
-  flex-grow: 1;
-  grid-template-areas: "list" "." "pagination" ".";
-  grid-template-rows: auto var(--step-1) auto var(--step-5) 1fr;
-  padding: 0 var(--step-1);
-
-  @media (min-width: breakpoints.$desktop) {
-    padding-right: 0;
-  }
+  grid-column: 2;
+  grid-template-areas: "list";
 }
 
 .pageHeaderCss {
@@ -54,49 +49,52 @@
 .pageHeaderSubCss {
   color: var(--color-fg-accent);
   display: block;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 16px;
+  line-height: layout.$spacer-4;
+  margin-bottom: layout.$spacer-2;
 }
 
 .filtersCss {
   grid-area: filters;
 
-  @media (min-width: breakpoints.$tablet) and (max-width: breakpoints.$desktop - 1px) {
-    margin: 0 calc(-1 * var(--step-1));
-  }
-
   @media (min-width: breakpoints.$desktop) {
     position: sticky;
-    top: var(--step-5);
+    top: layout.$spacer-7;
   }
 }
 
 .listCss {
-  column-gap: var(--step-2);
+  align-content: center;
+  align-items: center;
+  column-gap: layout.$spacer-5;
   display: grid;
   grid-area: list;
-  grid-template-columns: repeat(auto-fit, minmax(130px, max-content));
+  grid-template-columns: repeat(auto-fill, minmax(144px, max-content));
   justify-content: center;
-  row-gap: var(--step-5);
+  justify-items: center;
+  row-gap: layout.$spacer-5;
 }
 
 .listItemCss {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-items: center;
   position: relative;
+  row-gap: layout.$spacer-1;
 }
 
 .listItemLinkCss {
   display: block;
-  width: 100%;
+  position: relative;
+
+  // width: 100%;
 }
 
 .listItemTitleCss {
   flex-grow: 1;
-  font-size: 1.125rem;
-  line-height: 1.3;
-  margin-top: 0.5rem;
+  font-size: 18px;
+  line-height: layout.$spacer-3;
   text-align: center;
   text-rendering: optimizeLegibility;
   width: 100%;
@@ -108,21 +106,21 @@
 }
 
 .progressRingCss {
-  height: 100%;
+  bottom: -8px;
+  left: -8px;
   position: absolute;
-  top: -9px;
-  width: 100%;
+  right: -8px;
+  top: -8px;
   z-index: 100;
 }
 
 .listItemAvatarCss {
   border-radius: 50%;
   display: block !important;
-  margin: 0 auto;
-  max-width: 192px;
+  max-width: 160px;
   overflow: hidden;
   transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
-  width: calc(100% - 18px);
+  width: 100%;
 }
 
 .percentBackgroundCss {
