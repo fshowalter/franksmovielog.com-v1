@@ -10,7 +10,6 @@ exports[`/about renders 1`] = `
   </a>
   <div
     class="containerCss"
-    id="top"
   >
     <header
       class="mastHeaderCss"
@@ -64,7 +63,7 @@ exports[`/about renders 1`] = `
             value="Search"
           >
             <svg
-              class="iconCss "
+              class="iconCss mastSearchIconCss"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -159,8 +158,13 @@ exports[`/about renders 1`] = `
         <article
           class="articleCss"
         >
+          <h1
+            class="titleCss titleCss"
+          >
+            About the Movie Log
+          </h1>
           <div
-            class="gatsby-image-wrapper gatsby-image-wrapper-constrained imageCss"
+            class="gatsby-image-wrapper gatsby-image-wrapper-constrained imageCss imageCss"
             data-gatsby-image-wrapper=""
             style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
           >
@@ -185,8 +189,8 @@ exports[`/about renders 1`] = `
             />
             <picture>
               <source
-                sizes="(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
-                srcset="/static/f5aba40fd9013c55103643e8e13011f8/db797/about.avif 414w,/static/f5aba40fd9013c55103643e8e13011f8/a53c3/about.avif 640w,/static/f5aba40fd9013c55103643e8e13011f8/6c055/about.avif 818w,/static/f5aba40fd9013c55103643e8e13011f8/44246/about.avif 904w,/static/f5aba40fd9013c55103643e8e13011f8/70674/about.avif 1000w,/static/f5aba40fd9013c55103643e8e13011f8/6e61b/about.avif 1280w,/static/f5aba40fd9013c55103643e8e13011f8/7a18e/about.avif 1808w,/static/f5aba40fd9013c55103643e8e13011f8/31a81/about.avif 2000w"
+                sizes="(min-width: 1000px) 1000px, 100vw"
+                srcset="/static/f5aba40fd9013c55103643e8e13011f8/fdfcf/about.avif 250w,/static/f5aba40fd9013c55103643e8e13011f8/b400f/about.avif 500w,/static/f5aba40fd9013c55103643e8e13011f8/70674/about.avif 1000w,/static/f5aba40fd9013c55103643e8e13011f8/31a81/about.avif 2000w"
                 type="image/avif"
               />
               <img
@@ -195,9 +199,9 @@ exports[`/about renders 1`] = `
                 data-main-image=""
                 decoding="async"
                 loading="eager"
-                sizes="(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
+                sizes="(min-width: 1000px) 1000px, 100vw"
                 src="/static/f5aba40fd9013c55103643e8e13011f8/f4320/about.jpg"
-                srcset="/static/f5aba40fd9013c55103643e8e13011f8/d6f92/about.jpg 414w,/static/f5aba40fd9013c55103643e8e13011f8/ad189/about.jpg 640w,/static/f5aba40fd9013c55103643e8e13011f8/046a8/about.jpg 818w,/static/f5aba40fd9013c55103643e8e13011f8/8a152/about.jpg 904w,/static/f5aba40fd9013c55103643e8e13011f8/f4320/about.jpg 1000w,/static/f5aba40fd9013c55103643e8e13011f8/1015f/about.jpg 1280w,/static/f5aba40fd9013c55103643e8e13011f8/d5f84/about.jpg 1808w,/static/f5aba40fd9013c55103643e8e13011f8/f2565/about.jpg 2000w"
+                srcset="/static/f5aba40fd9013c55103643e8e13011f8/2af26/about.jpg 250w,/static/f5aba40fd9013c55103643e8e13011f8/a5dc9/about.jpg 500w,/static/f5aba40fd9013c55103643e8e13011f8/f4320/about.jpg 1000w,/static/f5aba40fd9013c55103643e8e13011f8/f2565/about.jpg 2000w"
                 style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
               />
             </picture>
@@ -211,11 +215,6 @@ exports[`/about renders 1`] = `
           <div
             class="renderedMarkdownCss bodyCss"
           >
-            <h1>
-              About the Movie Log
-            </h1>
-            
-
             <p>
               Been a long time, huh?
             </p>

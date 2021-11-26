@@ -5,7 +5,7 @@ import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
-import SelectInput from "../SelectInput";
+import SelectField from "../SelectField";
 import Seo from "../Seo";
 import {
   containerCss,
@@ -18,7 +18,6 @@ import {
   listItemLinkCss,
   listItemTitleCss,
   pageHeaderCss,
-  pageHeaderSubCss,
   percentBackgroundCss,
   percentProgressCss,
   progressRingCss,
@@ -33,23 +32,33 @@ import {
 } from "./WatchlistEntityIndexPage.reducer";
 
 function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
-  const percent = Math.floor((entity.reviewCount / entity.titleCount) * 100);
+  const percent = entity.reviewCount / entity.titleCount;
+  const circumference = 17.5 * 2 * Math.PI;
 
   return (
-    <svg viewBox="0 0 36 36">
-      <path
-        className={percentBackgroundCss}
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-      />
-      <path
-        d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-        className={percentProgressCss}
-        strokeDasharray={`${percent}, 100`}
-      />
+    <svg
+      viewBox="0 0 36 36"
+      className={progressRingCss}
+      preserveAspectRatio="none"
+    >
+      <g id="circles" strokeWidth="1">
+        <circle
+          r="17.5"
+          cx="18"
+          cy="18"
+          fill="none"
+          className={percentBackgroundCss}
+        />
+        <circle
+          r="17.5"
+          cx="18"
+          cy="18"
+          fill="none"
+          strokeDasharray={`${circumference} ${circumference}`}
+          strokeDashoffset={circumference - percent * circumference}
+          className={percentProgressCss}
+        />
+      </g>
     </svg>
   );
 }
@@ -75,18 +84,13 @@ function ListItem({
               alt={`An image of ${entity.name}`}
             />
           )}
+          <Progress entity={entity} />
         </Link>
         <div className={listItemTitleCss}>
           <Link to={`/watchlist/${slugPath}/${entity.slug}/`}>
             {entity.name}
           </Link>
         </div>
-        <Link
-          to={`/watchlist/${slugPath}/${entity.slug}/`}
-          className={progressRingCss}
-        >
-          <Progress entity={entity} />
-        </Link>
         <div className={progressStatsCss}>
           {entity.reviewCount} / {entity.titleCount}
         </div>
@@ -95,22 +99,22 @@ function ListItem({
   }
   return (
     <li className={listItemCss}>
-      <svg
-        className={`${listItemAvatarCss} ${defaultImageCss}`}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 16 16"
-        fill="currentColor"
-      >
-        <path
-          clipRule="evenodd"
-          d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-          fillRule="evenodd"
-        />
-      </svg>
-      <div className={listItemTitleCss}>{entity.name}</div>
-      <div className={progressRingCss}>
+      <div className={listItemLinkCss}>
+        <svg
+          className={`${listItemAvatarCss} ${defaultImageCss}`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+        >
+          <path
+            clipRule="evenodd"
+            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+            fillRule="evenodd"
+          />
+        </svg>
         <Progress entity={entity} />
       </div>
+      <div className={listItemTitleCss}>{entity.name}</div>
       <div className={progressStatsCss}>
         {entity.reviewCount} / {entity.titleCount}
       </div>
@@ -187,15 +191,9 @@ export default function WatchlistEntityIndexPage({
         <div className={leftCss}>
           <FilterPageHeader
             className={pageHeaderCss}
-            heading={
-              <>
-                <Link to="/watchlist/" className={pageHeaderSubCss}>
-                  Watchlist
-                </Link>{" "}
-                {entityDetails.pluralName}
-              </>
-            }
+            heading={entityDetails.pluralName}
             tagline={<q>{entityDetails.tagLine}</q>}
+            breadcrumb={<Link to="/watchlist/">Watchlist</Link>}
           />
           <div className={filtersCss}>
             <Fieldset legend="Filter & Sort">
@@ -206,7 +204,7 @@ export default function WatchlistEntityIndexPage({
                   dispatch({ type: ActionType.FILTER_NAME, value })
                 }
               />
-              <SelectInput
+              <SelectField
                 value={state.sortValue}
                 label="Order By"
                 onChange={(e) =>
@@ -218,7 +216,7 @@ export default function WatchlistEntityIndexPage({
               >
                 <option value="name">Name</option>
                 <option value="reviews">Review Count</option>
-              </SelectInput>
+              </SelectField>
             </Fieldset>
           </div>
         </div>
@@ -279,11 +277,9 @@ export const pageQuery = graphql`
               layout: CONSTRAINED
               formats: [JPG, AVIF]
               quality: 80
-              breakpoints: [130, 162, 174, 260, 324, 348]
-              width: 174
-              height: 174
+              width: 160
+              height: 160
               placeholder: TRACED_SVG
-              sizes: "(max-width: 487) 174px,  (max-width: 1279px) 162px, (max-width: 1291px) 174px, 130px"
             )
           }
         }

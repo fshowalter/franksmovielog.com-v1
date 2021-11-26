@@ -1,6 +1,7 @@
 import React from "react";
 import { Poster, PosterList } from "../PosterList";
 import {
+  containerCss,
   listItemSlugCss,
   listItemTitleCss,
   listItemTitleYearCss,
@@ -39,22 +40,24 @@ export default function MostWatchedMovies({
   }
 
   return (
-    <div>
+    <>
       <StatHeading>Most Watched Movies</StatHeading>
-      <PosterList>
-        {movies.map((movie) => {
-          return (
-            <Poster
-              key={movie.imdbId}
-              slug={movie.slug}
-              image={movie.poster}
-              title={movie.title}
-              year={movie.year}
-              details={<ListItemDetails movie={movie} />}
-            />
-          );
-        })}
-      </PosterList>
-    </div>
+      <div className={containerCss}>
+        <PosterList>
+          {movies.map((movie) => {
+            return (
+              <Poster
+                key={movie.imdbId}
+                slug={movie.slug}
+                image={movie.poster}
+                title={movie.title}
+                year={movie.year}
+                details={<ListItemDetails movie={movie} />}
+              />
+            );
+          })}
+        </PosterList>
+      </div>
+    </>
   );
 }

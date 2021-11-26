@@ -1,23 +1,30 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .tableCss {
   border: 1px solid var(--color-border-default);
   border-collapse: collapse;
-  line-height: 1.75;
-  margin: 0 auto var(--step-5);
+  line-height: layout.$spacer-4;
+  margin: 0 auto layout.$spacer-6 - 2;
   width: 100%;
 }
 
 .tableHeadCss {
   background-color: var(--color-bg-default);
-  line-height: 2.5;
+  line-height: layout.$spacer-6;
+  padding: 0 var(--layout-grid-margin);
   position: sticky;
-  top: 38px;
+  top: layout.$spacer-6 - 1;
   z-index: 100;
+
+  @media (min-width: breakpoints.$max) {
+    padding: 0 layout.$spacer-4;
+  }
 }
 
 .tableRowCss {
-  font-size: 1.125rem;
+  font-size: 18px;
+  line-height: layout.$spacer-6;
 
   &:nth-child(odd) {
     background-color: var(--color-bg-stripe);
@@ -25,30 +32,47 @@
 }
 
 .tableHeaderCellLeftCss {
-  line-height: 2.5;
-  padding-left: var(--step-1);
+  line-height: layout.$spacer-6;
+  padding-left: var(--layout-grid-margin);
   text-align: left;
+
+  @media (min-width: breakpoints.$max) {
+    padding-left: layout.$spacer-4;
+  }
 }
 
 .tableHeaderCellRightCss {
-  padding-right: var(--step-1);
+  padding-right: var(--layout-grid-margin);
   text-align: right;
   white-space: nowrap;
+
+  @media (min-width: breakpoints.$max) {
+    padding-right: layout.$spacer-4;
+  }
 }
 
 .tableDataCellLeftCss {
-  padding: 0 var(--step-1);
+  padding: 0 var(--layout-grid-margin);
 
   @media (min-width: breakpoints.$tablet) {
     white-space: nowrap;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    padding: 0 layout.$spacer-4;
   }
 }
 
 .tableDataCellRightCss {
   font-feature-settings: "tnum";
-  padding-right: var(--step-1);
+  line-height: layout.$spacer-6 - 2;
+  padding-right: var(--layout-grid-margin);
   text-align: right;
   vertical-align: top;
+
+  @media (min-width: breakpoints.$max) {
+    padding-right: layout.$spacer-4;
+  }
 }
 
 .tableDataCellFillCss {

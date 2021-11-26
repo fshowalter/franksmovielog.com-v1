@@ -1,9 +1,8 @@
 ---
 date: 2020-07-07
 slug: how-i-grade
+title: How I Grade
 ---
-
-# How I Grade
 
 - ## a great movie
 

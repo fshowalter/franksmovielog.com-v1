@@ -1,13 +1,12 @@
 import React from "react";
+import SelectInput from "../SelectInput";
 import {
   checkboxLabelCss,
   containerCss,
   fromCss,
-  fromInputCss,
   inputLabelCss,
   legendCss,
   toCss,
-  toInputCss,
   wrapperCss,
 } from "./GradeInput.module.scss";
 
@@ -103,23 +102,21 @@ export default function GradeFilter({
       <div className={wrapperCss}>
         <label className={inputLabelCss}>
           <span className={fromCss}>From</span>
-          <select
+          <SelectInput
             value={minValue}
-            className={fromInputCss}
             onChange={(e) => handleMinChange(e.target.value)}
           >
             {options.slice().reverse()}
-          </select>
+          </SelectInput>
         </label>
         <label className={inputLabelCss}>
           <span className={toCss}>to</span>
-          <select
+          <SelectInput
             value={maxValue}
-            className={toInputCss}
             onChange={(e) => handleMaxChange(e.target.value)}
           >
             {options.slice()}
-          </select>
+          </SelectInput>
         </label>
         <label className={checkboxLabelCss}>
           <input

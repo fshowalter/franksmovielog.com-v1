@@ -1,22 +1,25 @@
-@use "sass:color";
+@use "./src/styles/layout";
 
 .inputCss {
   background-color: var(--color-bg-subtle);
   border: solid 1px var(--color-border-default);
   border-radius: 4px;
-  color: var(--color-text-primary);
-  font-size: 1rem;
-  margin-top: 4px;
-  padding: calc(0.5em - 1px) calc(0.75em - 1px);
+  color: var(--color-fg-default);
+  font-size: 16px;
+  line-height: layout.$spacer-4;
+  padding: layout.$spacer-2 - 1 layout.$spacer-3 - 1;
 }
 
 .labelCss {
   color: var(--color-fg-subtle);
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelTextCss {
+  display: inline-block;
   font-size: 14px;
   font-weight: bold;
-  grid-template-columns: auto;
-  grid-template-rows: 1.5rem auto;
+  height: layout.$spacer-4;
   letter-spacing: 0.5px;
-  line-height: 1.5;
 }

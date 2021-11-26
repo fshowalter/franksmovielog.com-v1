@@ -9,7 +9,6 @@ rules:
   order/properties-alphabetical-order: true
   property-no-unknown:
     - true
-  scss/dollar-variable-pattern: "^[a-z][a-zA-Z0-9]+$"
   selector-class-pattern:
     - "^[a-z][a-zA-Z0-9]+Css$"
     - message: Selector should be written in lowerCamelCase and end with Css (selector-class-pattern)

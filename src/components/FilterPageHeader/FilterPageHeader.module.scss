@@ -1,7 +1,9 @@
+@use "./src/styles/layout";
+
 .avatarCss {
   border-radius: 50%;
   display: block !important;
-  margin: 0 auto var(--step-5);
+  margin: 0 auto layout.$spacer-4;
   max-width: 200px;
   overflow: hidden;
   transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
@@ -9,13 +11,22 @@
 }
 
 .headingCss {
-  font-size: var(--step-2);
   text-align: center;
 }
 
 .taglineCss {
   color: var(--color-fg-subtle);
   font-size: 16px;
-  margin-top: var(--step-1);
+  line-height: layout.$spacer-4;
+  margin-top: layout.$spacer-3;
+  text-align: center;
+}
+
+.breadcrumbCss {
+  color: var(--color-fg-accent);
+  display: block;
+  font-size: 16px;
+  line-height: layout.$spacer-4;
+  margin-bottom: layout.$spacer-2;
   text-align: center;
 }

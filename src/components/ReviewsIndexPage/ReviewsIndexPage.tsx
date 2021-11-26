@@ -10,7 +10,7 @@ import FilterPageHeader from "../FilterPageHeader";
 import GradeInput from "../GradeInput";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
-import SelectInput from "../SelectInput";
+import SelectField from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
@@ -233,7 +233,7 @@ export default function ReviewsIndexPage({
                   })
                 }
               />
-              <SelectInput
+              <SelectField
                 label="Venue"
                 onChange={(e) =>
                   dispatch({
@@ -243,7 +243,7 @@ export default function ReviewsIndexPage({
                 }
               >
                 <VenueOptions viewings={state.allViewings} />
-              </SelectInput>
+              </SelectField>
               <div className={genresWrapCss}>
                 <label htmlFor="genres" className={genresSelectLabelCss}>
                   Genres
@@ -256,14 +256,10 @@ export default function ReviewsIndexPage({
                     colors: {
                       ...theme.colors,
                       neutral0: "var(--color-bg-subtle)",
-                      neutral10: "var(--color-bg-default)",
                       neutral20: "var(--color-border-default)",
-                      neutral30: "var(--color-bg-subtle)",
-                      neutral80: "var(--color-fg-subtle)",
-                      primary25: "var(--color-bg-default)",
-                      primary50: "var(--color-bg-default)",
-                      dangerLight: "#B2D4FF",
+                      neutral50: "var(--color-fg-subtle)",
                       danger: "var(--color-fg-accent)",
+                      primary25: "var(--color-bg-stripe)",
                     },
                   })}
                   classNamePrefix="reactSelect"
@@ -280,7 +276,7 @@ export default function ReviewsIndexPage({
                   })}
                 />
               </div>
-              <SelectInput
+              <SelectField
                 value={state.sortValue}
                 label="Order By"
                 onChange={(e) =>
@@ -305,7 +301,7 @@ export default function ReviewsIndexPage({
                 <option value="title">Title</option>
                 <option value="grade-desc">Grade (Best First)</option>
                 <option value="grade-asc">Grade (Worst First)</option>
-              </SelectInput>
+              </SelectField>
             </Fieldset>
             <div className={listInfoCss}>
               <ListInfo

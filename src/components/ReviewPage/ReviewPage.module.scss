@@ -1,23 +1,19 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
-  border-top: solid 1px var(--color-border-default);
   display: grid;
-  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." "credits credits credits" "related related related";
-  grid-template-columns: var(--step-1) 1fr var(--step-1);
+  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." ". credits ." ". related .";
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
+    minmax(var(--layout-grid-margin), 1fr);
   grid-template-rows: auto;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 40rem;
-
-  @media (min-width: breakpoints.$tablet) {
-    grid-template-areas: "title" "image" "reviews" "viewings" "credits" "related";
-    grid-template-columns: unset;
-  }
 
   @media (min-width: breakpoints.$desktop) {
     grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
-    grid-template-columns: minmax(auto, 66ch) 1fr 25%;
+    grid-template-columns: minmax(auto, 66ch) 1fr calc((100% - 72px) / 4);
     grid-template-rows: none;
     max-width: unset;
     row-gap: 3rem;
@@ -31,30 +27,28 @@
   width: auto;
 
   @media (min-width: breakpoints.$desktop) {
-    height: 24px;
+    height: 20px;
     margin: 0 1ch 0 0;
   }
 }
 
 .reviewsListItemCss {
   position: relative;
-
-  @media (min-width: breakpoints.$desktop) {
-    padding-left: calc(1.25 * var(--step-1));
-  }
 }
 
 .reviewsListCss {
   grid-area: reviews;
-  padding-top: var(--step-3);
+  padding-top: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
     border-top: 1px solid var(--color-border-default);
+    padding-top: layout.$spacer-6 - 1;
   }
 }
 
 .reviewsListItemCss:not(:first-child) .reviewGradeCss {
   height: 24px;
+  margin-top: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
     height: 18px;
@@ -63,20 +57,24 @@
 }
 
 .reviewsListItemCss:not(:first-child) {
-  padding-top: calc(2 * var(--step-5));
+  padding-top: layout.$spacer-5;
   position: relative;
+
+  @media (min-width: breakpoints.$desktop) {
+    padding-top: layout.$spacer-8;
+  }
 }
 
 .reviewsListItemCss:not(:first-child)::after {
-  background-color: #fff;
+  background-color: var(--color-bg-default);
   content: url("/assets/film-icon.svg");
   display: block;
-  height: 1rem;
-  left: calc(50% - 1.5rem);
-  padding: 0 1rem;
+  height: layout.$spacer-3;
+  left: calc(50% - layout.$spacer-4);
+  padding: 0 layout.$spacer-3;
   position: absolute;
-  top: calc(var(--step-5) - 0.5rem);
-  width: 3rem;
+  top: layout.$spacer-4;
+  width: layout.$spacer-7;
   z-index: 100;
 }
 
@@ -86,7 +84,7 @@
   height: 1px;
   left: 25%;
   position: absolute;
-  top: calc(var(--step-5) - 1px);
+  top: calc(layout.$spacer-5 - 1px);
   width: 50%;
 }
 
@@ -96,7 +94,7 @@
   @media (min-width: breakpoints.$desktop) {
     display: block;
     height: auto;
-    margin-right: calc(1.25 * var(--step-1) - 16px);
+    margin-right: layout.$spacer-3;
     width: 16px;
   }
 }
@@ -105,7 +103,7 @@
   font-feature-settings: "tnum";
   font-size: 16px;
   letter-spacing: 0.5px;
-  line-height: 1.5;
+  line-height: layout.$spacer-4;
   text-align: center;
 
   @media (min-width: breakpoints.$desktop) {
@@ -156,17 +154,21 @@
 
 .heroImageCss {
   grid-area: image;
-  width: 100%;
 }
 
 .headerTitleCss {
-  font-size: var(--step-3);
-  line-height: 1.1;
+  font-size: 32px;
+  line-height: layout.$spacer-5;
+
+  @media (min-width: breakpoints.$desktop) {
+    font-size: 36px;
+    line-height: layout.$spacer-6;
+  }
 }
 
 .headerContainerCss {
   grid-area: title;
-  padding: var(--step-1) 0;
+  padding: layout.$spacer-4 0;
   text-align: center;
 
   @media (min-width: breakpoints.$desktop) {
@@ -177,116 +179,68 @@
 
 .headerOriginalTitleCss {
   color: var(--color-fg-subtle);
+  line-height: layout.$spacer-4;
 }
 
 .reviewContentCss {
-  margin-top: var(--step-3);
+  margin-top: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
-    margin-top: 1rem;
+    margin-top: layout.$spacer-3;
+    padding-left: layout.$spacer-5;
     position: relative;
   }
 }
 
-.creditsContainerCss {
-  align-content: start;
-  background-color: var(--color-bg-accent);
-  border-top: solid 1px rgb(0 0 0 / 15%);
-  display: grid;
-  font-size: 1rem;
-  grid-area: credits;
-  grid-template-areas: ". poster . credits ." ". watchlist watchlist watchlist .";
-  grid-template-columns: var(--step-1) 1fr var(--step-1) 1fr var(--step-1);
-  grid-template-rows: auto;
-  letter-spacing: 0.2px;
-  margin-top: var(--step-5);
-  padding: var(--step-5) 0 var(--step-5);
-  position: relative;
+.olderViewingsDateCss {
+  display: block;
+  font-weight: 700;
 
   @media (min-width: breakpoints.$tablet) {
-    border: solid 1px rgb(0 0 0 / 15%);
-    margin: 4rem calc(-1 * var(--step-1)) 0;
-    overflow: hidden;
-  }
-
-  @media (min-width: breakpoints.$desktop) {
-    background-color: unset;
-    border: none;
-    grid-template-areas: "poster" "credits" "watchlist";
-    grid-template-columns: 1fr;
-    grid-template-rows: unset;
-    margin: unset;
-  }
-}
-
-.creditsListCss {
-  color: var(--color-fg-subtle);
-  grid-area: credits;
-}
-
-.creditsTitleCss {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.creditsPosterCss {
-  align-self: flex-start;
-  grid-area: poster;
-  justify-self: flex-end;
-  max-width: 309px;
-}
-
-.creditTermCss {
-  font-weight: 700;
-  line-height: 1.5;
-  margin-top: var(--step-1);
-}
-
-.olderViewingsDateCss {
-  font-weight: 700;
-}
-
-.creditsWatchlistCss {
-  align-self: start;
-  grid-area: watchlist;
-
-  a {
-    color: var(--color-fg-accent);
-  }
-
-  > div {
-    margin-top: var(--step-1);
+    // display: inline;
   }
 }
 
 .relatedCss {
-  background-color: #var(--color-bg-subtle);
   display: grid;
   grid-area: related;
-  padding-bottom: var(--step-5);
-  padding-top: var(--step-5);
-  row-gap: var(--step-5);
-
-  @media (min-width: 40rem) {
-    background-color: unset;
-    margin-top: 4rem;
-    padding-top: 0;
-    row-gap: 4rem;
-  }
+  padding-bottom: layout.$spacer-8;
+  padding-top: layout.$spacer-9;
+  row-gap: layout.$spacer-9;
 
   @media (min-width: breakpoints.$desktop) {
-    row-gap: 4.5rem;
+    grid-template-columns: unset;
+  }
+}
+
+.relatedMoviesSectionCss {
+  @media (min-width: breakpoints.$desktop) {
+    grid-column: unset;
+    padding: layout.$spacer-4 0;
+
+    &:nth-child(odd) {
+      background-color: var(--color-bg-subtle);
+      margin: 0 calc(-1 * var(--layout-grid-margin));
+      padding-left: var(--layout-grid-margin);
+      padding-right: var(--layout-grid-margin);
+    }
+  }
+
+  @media (min-width: breakpoints.$max) {
+    &:nth-child(odd) {
+      margin: 0 layout.$spacer-4 * -1 0 calc(-1 * var(--layout-grid-margin));
+      padding-right: layout.$spacer-4;
+    }
   }
 }
 
 .relatedHeaderCss {
   align-items: center;
-  border-bottom: 1px solid var(--color-border-default);
+  border-bottom: 1px solid var(--color-border-subtle);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 12px;
+  padding-bottom: 11px;
   text-rendering: optimizeLegibility;
 }
 
@@ -325,20 +279,18 @@
   font-weight: 600;
   justify-content: space-between;
   letter-spacing: 0.2px;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: layout.$spacer-2 - 1;
   text-rendering: optimizeLegibility;
 }
 
 .olderViewingsListCss {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .olderViewingsContainerCss {
   grid-area: viewings;
-  margin-top: var(--step-5);
+  margin-top: layout.$spacer-7;
 }
 
 .olderViewingsListItemCss {
@@ -347,14 +299,32 @@
   display: grid;
   font-feature-settings: "tnum";
   grid-template-areas: "icon slug";
-  justify-content: start;
+  grid-template-columns: auto 1fr;
+  margin: 0 calc(-1 * var(--layout-grid-margin));
+  padding: 0 var(--layout-grid-margin);
+
+  &:nth-child(even) {
+    background-color: var(--color-bg-subtle);
+  }
 }
 
 .olderViewingsDateIconCss {
   grid-area: icon;
-  margin-right: calc(1.25 * var(--step-1) - 16px);
+  margin-right: layout.$spacer-3;
   position: relative;
   width: 16px;
+}
+
+.olderViewingsViaCss {
+  display: none;
+
+  @media (min-width: breakpoints.$tablet) {
+    display: inline;
+  }
+}
+
+.olderViewingsVenueCss {
+  font-size: 14px;
 }
 
 .headerSeparatorCss {
@@ -364,68 +334,25 @@
 .headerMetaCss {
   color: var(--color-fg-subtle);
   font-feature-settings: "tnum";
-  margin-top: 0.75rem;
+  line-height: layout.$spacer-4;
+  margin-top: layout.$spacer-3;
 }
 
 .olderViewingSlugCss {
   grid-area: slug;
+  padding: layout.$spacer-3 0;
 }
 
-.backToTopContainerCss {
-  align-items: center;
-  backface-visibility: hidden;
-  background-color: rgb(0 0 0 / 15%);
-  border-radius: 100px 0 0;
-  bottom: 0;
-  color: rgb(255 255 255);
-  cursor: pointer;
-  display: flex;
-  height: var(--step-5);
-  justify-content: center;
-  margin-bottom: 0;
-  margin-right: 0;
-  padding: 18.6667px 4.6667px 4.6667px 18.6667px;
-  position: relative;
-  position: absolute;
-  right: 0;
+.creditsCss {
+  background-color: var(--color-bg-subtle);
+  grid-area: credits;
+  margin-top: layout.$spacer-7;
 
-  &::before {
-    background-color: rgb(255 255 255);
-    border-radius: inherit;
-    content: " ";
-    inset: 0;
-    opacity: 0%;
-    pointer-events: none;
-    position: absolute;
-    z-index: 1;
+  @media (min-width: breakpoints.$desktop) {
+    background-color: unset;
+    border: none;
+    margin: unset;
   }
-
-  &::after {
-    border-radius: inherit;
-    content: " ";
-    inset: 0;
-    pointer-events: none;
-    position: absolute;
-    z-index: 1;
-  }
-}
-
-.backToTopInnerCss {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.backToTopArrowCss {
-  align-items: center;
-  display: flex;
-  fill: var(--color-fg-default);
-  height: 31.5px;
-  justify-content: center;
-  transition: all 0.3s ease 0s;
-  width: 31.5px;
-  z-index: 2;
 }
 
 .hideDesktopCss {

@@ -249,6 +249,33 @@ const WatchlistMoviesJson = {
         return entries.map((node) => node.name);
       },
     },
+    lastReviewDate: {
+      type: "Date",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: async (source, args, context, info) => {
+        const reviewedMovie = await context.nodeModel.findOne({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: REVIEWED_MOVIES_JSON,
+        });
+
+        if (!reviewedMovie) {
+          return null;
+        }
+
+        return resolveFieldForNode(
+          "lastReviewDate",
+          reviewedMovie,
+          context,
+          info
+        );
+      },
+    },
     lastReviewGrade: {
       type: "String",
       resolve: async (source, args, context, info) => {
@@ -537,6 +564,22 @@ const ReviewedMoviesJson = {
         });
 
         return entries;
+      },
+    },
+    lastReviewDate: {
+      type: "Date",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: async (source, args, context, info) => {
+        const reviews = await resolveFieldForNode(
+          "reviews",
+          source,
+          context,
+          info
+        );
+
+        return Array.from(reviews)[0].frontmatter.date;
       },
     },
     lastReviewGrade: {

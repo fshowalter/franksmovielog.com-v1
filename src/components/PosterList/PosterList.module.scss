@@ -1,28 +1,40 @@
+@use "./src/styles/layout";
+@use "./src/styles/breakpoints";
+
 .listCss {
-  column-gap: var(--step-1);
+  column-gap: layout.$spacer-4;
   display: grid;
   grid-area: list;
-  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-  line-height: 1.25;
-  margin: 1rem 0;
-  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  margin: layout.$spacer-3 0;
+  row-gap: layout.$spacer-5;
 }
 
 .listItemCss {
   display: flex;
   flex-direction: column;
-  row-gap: 4px;
+  row-gap: layout.$spacer-1;
 }
 
 .listItemImageWrapCss {
+  border-radius: 8px;
   display: block;
-  max-width: 250px;
+  margin-bottom: 2px;
+  max-width: 248px;
   overflow: hidden;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .listItemTitleCss {
-  font-size: 1rem;
-  line-height: 1.3;
+  font-size: 16px;
+  line-height: 20px;
   text-rendering: optimizeLegibility;
 
   a {
@@ -32,14 +44,15 @@
 
 .listItemTitleYearCss {
   color: var(--color-fg-subtle);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 300;
+  line-height: 1;
 }
 
 .listItemGradeCss {
-  height: 16px;
-  margin-bottom: 4px;
-  width: 80px;
+  height: 12px;
+  margin: 2px 0;
+  width: 60px;
 }
 
 .listItemSlugCss {
@@ -47,7 +60,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 300;
-  row-gap: 4px;
+  line-height: layout.$spacer-3;
+  row-gap: layout.$spacer-1;
 }

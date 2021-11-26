@@ -1,14 +1,16 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .containerCss {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--step-1);
+  gap: layout.$spacer-4;
   justify-content: center;
-  margin: 0 auto;
+  padding-bottom: layout.$spacer-5;
+  padding-top: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
-    column-gap: var(--step-5);
+    column-gap: layout.$spacer-6;
   }
 }
 
@@ -17,20 +19,21 @@
   border-radius: 50%;
   display: flex;
   flex-direction: column;
-  height: 10rem;
+  height: 144px;
   justify-content: center;
-  width: 10rem;
+  width: 144px;
 }
 
 .numberCss {
   display: block;
-  font-size: var(--step-4);
+  font-size: 32px;
   text-align: center;
 }
 
 .legendCss {
   color: var(--color-fg-subtle);
   display: block;
-  font-size: 1.125rem;
+  font-size: 16px;
+  line-height: layout.$spacer-3;
   text-align: center;
 }

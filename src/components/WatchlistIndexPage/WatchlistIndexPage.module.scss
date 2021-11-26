@@ -1,16 +1,19 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 @use "sass:color";
 
 .containerCss {
-  border-top: solid 1px var(--color-border-default);
   display: grid;
+  grid-template-columns: var(--layout-grid-margin) 1fr var(--layout-grid-margin);
   margin: 0 auto;
-  max-width: 40rem;
-  padding-top: var(--step-5);
+  padding-bottom: layout.$spacer-5;
+  padding-top: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-columns: 375px 1fr;
+    column-gap: layout.$spacer-5;
+    grid-template-columns: 352px 1fr;
     max-width: unset;
+    padding-top: layout.$spacer-5;
   }
 
   @media (min-width: breakpoints.$max) {
@@ -22,63 +25,54 @@
 .leftCss {
   align-content: start;
   display: grid;
-  grid-template-areas: ". header ." ". . ." ". type_links ." ". . ." ". filters ." ". . .";
-  grid-template-columns: minmax(var(--step-1), 1fr) minmax(auto, 100%) minmax(
-      var(--step-1),
-      1fr
-    );
-  grid-template-rows: auto var(--step-1) auto var(--step-1) auto var(--step-1);
+  grid-column: 2;
+  grid-template-areas: "header" "type_links" "filters";
+  row-gap: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "header header ." ". . ." "type_links type_links ." ". . ." "filters filters ." ". . .";
+    grid-column: 1;
   }
 }
 
 .rightCss {
   display: grid;
-  grid-template-areas: "list" "." "show_more" ".";
+  grid-column: 2;
+  grid-template-areas: "list" "show_more";
   grid-template-columns: 1fr;
-  grid-template-rows: auto var(--step-1) auto var(--step-5);
-
-  @media (min-width: breakpoints.$tablet) {
-    padding: 0 var(--step-1);
-  }
+  margin-left: calc(-1 * var(--layout-grid-margin));
+  margin-right: calc(-1 * var(--layout-grid-margin));
+  row-gap: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
-    padding-right: 0;
+    margin: unset;
   }
 }
 
 .pageHeaderCss {
   grid-area: header;
+  margin: 0 auto;
+  max-width: 58ch;
 }
 
 .listInfoCss {
   color: var(--color-fg-subtle);
   font-weight: 300;
   justify-self: center;
-  margin-top: var(--step-1);
+  margin-top: layout.$spacer-4;
   text-align: center;
 }
 
 .showMoreCss {
   grid-area: show_more;
-
-  @media (max-width: breakpoints.$tablet) {
-    padding: 0 var(--step-1);
-  }
+  margin: 0 var(--layout-grid-margin);
 }
 
 .filtersCss {
   grid-area: filters;
 
-  @media (min-width: breakpoints.$tablet) and (max-width: breakpoints.$desktop - 1px) {
-    margin: 0 calc(-1 * var(--step-1));
-  }
-
   @media (min-width: breakpoints.$desktop) and (min-height: 1200px) {
     position: sticky;
-    top: var(--step-5);
+    top: layout.$spacer-7;
   }
 }
 
@@ -86,23 +80,21 @@
   grid-area: list;
 }
 
-.nestedListCss {
-  @media (min-width: breakpoints.$tablet) {
-    margin: 1rem 0;
-  }
-}
-
 .listItemCss {
+  column-gap: layout.$spacer-4;
   display: grid;
-  grid-template-areas: "poster . . . . ." "poster . title . checkmark ." "poster . slug . checkmark ." "poster . . . . .";
-  grid-template-columns: 50px 1rem 1fr var(--step-1) 3rem 1rem;
-  grid-template-rows: auto auto minmax(1.5rem 1fr);
-  padding-bottom: 1rem;
-  padding-left: var(--step-1);
-  padding-top: 1rem;
+  grid-template-areas: "poster . ." "poster title checkmark" "poster slug checkmark" "poster . . ";
+  grid-template-columns: layout.$spacer-7 1fr layout.$spacer-7;
+  grid-template-rows: 1fr auto auto 1fr;
+  padding: layout.$spacer-3 var(--layout-grid-margin);
+  row-gap: layout.$spacer-2;
 
   &:nth-child(odd) {
-    background-color: var(--color-bg-stripe);
+    background-color: var(--color-bg-subtle);
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    padding: layout.$spacer-3 layout.$spacer-4;
   }
 }
 
@@ -112,67 +104,73 @@
 }
 
 .listItemTitleCss {
-  font-size: 1.125rem;
+  font-size: 20px;
   grid-area: title;
-  padding: 0 var(--step-1) 0.25rem 0;
+  line-height: layout.$spacer-4;
+  text-rendering: optimizeLegibility;
 }
 
 .listItemTitleLinkCss {
   color: #379634;
+  display: inline-block;
 }
 
 .listItemTitleYearCss {
   color: var(--color-fg-subtle);
-  font-size: 0.875rem;
+  font-size: 14px;
+  line-height: 1;
 }
 
 .listItemSlugCss {
   color: var(--color-fg-subtle);
-  font-size: 0.875rem;
+  font-size: 14px;
   grid-area: slug;
   letter-spacing: 0.5px;
-  padding: 0 var(--step-1) 0 0;
+  line-height: layout.$spacer-3;
 }
 
 .listItemCheckmarkCss {
   align-self: center;
   color: #379634;
   grid-area: checkmark;
-  height: 3rem;
-  width: 3rem;
+  height: layout.$spacer-7;
+  width: layout.$spacer-7;
 }
 
 .percentCss {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  margin: var(--step-1) auto 0;
-  width: 150px;
+  margin: layout.$spacer-4 auto 0;
+  padding-bottom: layout.$spacer-4;
+  width: 160px;
 }
 
 .percentTotalsCss {
   color: var(--color-fg-subtle);
-  font-size: 1rem;
-  margin-top: 1.5rem;
+  font-size: 16px;
+  margin-top: layout.$spacer-4;
 }
 
 .typeLinksCss {
   align-items: end;
-  column-gap: 0.75rem;
+  column-gap: layout.$spacer-4;
   display: grid;
   grid-area: type_links;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: layout.$spacer-4;
 }
 
 .typeLinkCss {
+  align-items: center;
   background-color: var(--color-bg-subtle);
   border: solid 1px var(--color-border-default);
-  border-radius: 1rem;
+  border-radius: 16px;
   color: var(--color-fg-accent);
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  line-height: layout.$spacer-4;
+  padding: layout.$spacer-2 - 1;
   white-space: nowrap;
 
   &:hover {
@@ -183,7 +181,7 @@
 .typeIconCss {
   color: var(--color-fg-subtle);
   height: 20px;
-  margin-right: 1ch;
+  margin-right: layout.$spacer-2;
   width: 20px;
 }
 
@@ -195,14 +193,20 @@
   color: var(--color-fg-subtle);
   display: block;
   font-weight: bold;
-  margin-bottom: var(--step--1);
+  margin-bottom: layout.$spacer-3;
 }
 
 .listHeaderGroupCss {
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-bg-canvas);
   display: block;
-  font-size: 1.125rem;
-  padding: 0.5rem var(--step-1);
+  font-size: 18px;
+  line-height: layout.$spacer-4;
+  padding: layout.$spacer-2 var(--layout-grid-margin);
   position: sticky;
   top: 0;
+
+  @media (min-width: breakpoints.$desktop) {
+    margin: 0;
+    padding: layout.$spacer-2 layout.$spacer-4;
+  }
 }

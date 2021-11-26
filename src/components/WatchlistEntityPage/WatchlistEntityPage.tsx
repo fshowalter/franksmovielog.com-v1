@@ -8,11 +8,10 @@ import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
 import ProgressGraph from "../ProgressGraph";
-import SelectInput from "../SelectInput";
+import SelectField from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
-  breadcrumbCss,
   containerCss,
   filtersCss,
   leftCss,
@@ -208,18 +207,20 @@ export default function WatchlistEntityPage({
       />
       <main className={containerCss}>
         <div className={leftCss}>
-          <div className={breadcrumbCss}>
-            <Link to="/watchlist/">Watchlist</Link> /{" "}
-            <Link to={`/watchlist/${entityDetails.kind.toLowerCase()}`}>
-              {entityDetails.kind}
-            </Link>
-          </div>
           <FilterPageHeader
             className={pageHeaderCss}
             avatar={entity.avatar.childImageSharp.gatsbyImageData}
             alt={`An image of ${entity.name}`}
             heading={entity.name}
             tagline={entityDetails.tagLine}
+            breadcrumb={
+              <div>
+                <Link to="/watchlist/">Watchlist</Link> /{" "}
+                <Link to={`/watchlist/${entityDetails.kind.toLowerCase()}`}>
+                  {entityDetails.kind}
+                </Link>
+              </div>
+            }
           />
           <div className={filtersCss}>
             <Fieldset legend="Filter & Sort">
@@ -237,7 +238,7 @@ export default function WatchlistEntityPage({
                   dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
                 }
               />
-              <SelectInput
+              <SelectField
                 value={state.sortType}
                 label="Order By"
                 onChange={(e) =>
@@ -256,7 +257,7 @@ export default function WatchlistEntityPage({
                 <option value="title">Title</option>
                 <option value="grade-desc">Grade (Best First)</option>
                 <option value="grade-asc">Grade (Worst First)</option>
-              </SelectInput>
+              </SelectField>
             </Fieldset>
             <div className={listInfoCss}>
               <ListInfo

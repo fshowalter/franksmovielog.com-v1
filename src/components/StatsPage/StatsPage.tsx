@@ -2,6 +2,7 @@ import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../Layout";
+import PageTitle from "../PageTitle";
 import Seo from "../Seo";
 import ByReleaseYear from "./ByReleaseYear";
 import Callouts from "./Callouts";
@@ -123,7 +124,7 @@ export default function StatsPage({
       <Layout>
         <main className={containerCss}>
           <header className={headerCss}>
-            <h2 className={headingCss}>{pageTitle}</h2>
+            <PageTitle className={headingCss}>{pageTitle}</PageTitle>
             <div className={taglineCss}>
               <SubHeading
                 yearScope={yearScope}

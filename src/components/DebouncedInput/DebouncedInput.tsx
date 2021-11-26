@@ -1,5 +1,5 @@
 import React from "react";
-import { inputCss, labelCss } from "./DebouncedInput.module.scss";
+import { inputCss, labelCss, labelTextCss } from "./DebouncedInput.module.scss";
 
 export type onChangeHandler = (value: string) => void;
 
@@ -57,7 +57,7 @@ export default function DebouncedInput({
 
   return (
     <label className={labelCss}>
-      {label}
+      <span className={labelTextCss}>{label}</span>
       <input
         className={inputCss}
         type="text"

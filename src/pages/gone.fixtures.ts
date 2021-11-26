@@ -13,17 +13,15 @@ export default {
           fallback: {
             src: "/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg",
             srcSet:
-              "/static/feaee0b15b37d41bd89f3440e7cf8b6a/d6f92/gone.jpg 414w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/ad189/gone.jpg 640w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/046a8/gone.jpg 818w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/8a152/gone.jpg 904w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg 1000w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/1015f/gone.jpg 1280w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/d5f84/gone.jpg 1808w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/f2565/gone.jpg 2000w",
-            sizes:
-              "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px",
+              "/static/feaee0b15b37d41bd89f3440e7cf8b6a/2af26/gone.jpg 250w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/a5dc9/gone.jpg 500w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg 1000w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/f2565/gone.jpg 2000w",
+            sizes: "(min-width: 1000px) 1000px, 100vw",
           },
           sources: [
             {
               srcSet:
-                "/static/feaee0b15b37d41bd89f3440e7cf8b6a/db797/gone.avif 414w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/a53c3/gone.avif 640w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/6c055/gone.avif 818w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/44246/gone.avif 904w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/70674/gone.avif 1000w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/6e61b/gone.avif 1280w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/7a18e/gone.avif 1808w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/31a81/gone.avif 2000w",
+                "/static/feaee0b15b37d41bd89f3440e7cf8b6a/fdfcf/gone.avif 250w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/b400f/gone.avif 500w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/70674/gone.avif 1000w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/31a81/gone.avif 2000w",
               type: "image/avif",
-              sizes:
-                "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px",
+              sizes: "(min-width: 1000px) 1000px, 100vw",
             },
           ],
         },
@@ -33,6 +31,9 @@ export default {
     },
   },
   page: {
-    html: "<h1>410: Gone</h1>\n<p>Forget it, Jake. It’s Chinatown.</p>",
+    html: "<p>Forget it, Jake. It’s Chinatown.</p>",
+    frontmatter: {
+      title: "410 Gone",
+    },
   },
 };

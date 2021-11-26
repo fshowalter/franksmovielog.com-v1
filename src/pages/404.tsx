@@ -19,6 +19,7 @@ export default function NotFoundPage({ data }: PageQueryResult): JSX.Element {
         image={backdrop.childImageSharp.gatsbyImageData}
         alt="A lost highway."
         articleText={page.html}
+        title={page.frontmatter.title}
       />
     </>
   );
@@ -33,6 +34,9 @@ interface PageQueryResult {
     };
     page: {
       html: string;
+      frontmatter: {
+        title: string;
+      };
     };
   };
 }
@@ -47,13 +51,14 @@ export const pageQuery = graphql`
           quality: 80
           width: 1000
           placeholder: TRACED_SVG
-          breakpoints: [414, 640, 818, 904, 1000, 1280, 1808, 2000]
-          sizes: "(max-width: 414px) 414px, (max-width: 1023px) 640px, (max-width: 1279px) 1000px, 904px"
         )
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "not-found" } }) {
       html
+      frontmatter {
+        title
+      }
     }
   }
 `;

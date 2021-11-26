@@ -33,7 +33,6 @@ export function Poster({
   showTitle?: boolean;
   details?: React.ReactNode;
 }): JSX.Element {
-  console.log(!details);
   if (slug) {
     return (
       <li className={listItemCss}>

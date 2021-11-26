@@ -1,4 +1,3 @@
-export const breadcrumbCss: string;
 export const containerCss: string;
 export const filtersCss: string;
 export const leftCss: string;

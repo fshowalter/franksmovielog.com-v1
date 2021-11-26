@@ -1,59 +1,83 @@
 @use "./src/styles/breakpoints";
+@use "./src/styles/layout";
 
 .listCss {
-  column-gap: var(--step-1);
-  display: grid;
+  column-gap: layout.$spacer-4;
+  display: flex;
+  flex-direction: column;
   grid-area: list;
-  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
-  row-gap: 1.5rem;
 
-  @media (max-width: #{breakpoints.$desktop - 1px}) {
-    grid-template-columns: repeat(2, minmax(125px, 1fr));
+  @media (min-width: breakpoints.$desktop) {
+    column-gap: layout.$spacer-4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.listItemCss {
+  align-items: flex-start;
+  column-gap: layout.$spacer-4;
+  display: grid;
+  grid-template-areas: "title image" "grade image" "date image" ". image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  margin: 0 calc(-1 * var(--layout-grid-margin));
+  padding: layout.$spacer-5 var(--layout-grid-margin);
+
+  &:nth-child(even) {
+    background-color: var(--color-bg-subtle);
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    grid-template-areas: "image" "title" "grade" "." "date";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(even) {
+      background-color: unset;
+    }
   }
 }
 
 .listItemImageLinkCss {
+  border-radius: 8px;
   display: block;
+  grid-area: image;
+  margin-bottom: 4.455px;
+  overflow: hidden;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    margin-bottom: 5.055px;
+  }
 }
 
 .listItemTitleCss {
-  color: var(--color-fg-accent);
-  font-size: 1rem;
-  line-height: 1.3;
-  margin-top: 0.25rem;
+  // color: var(--color-fg-accent);
+  font-size: 20px;
+  line-height: layout.$spacer-4;
   text-rendering: optimizeLegibility;
 }
 
 .listItemTitleYearCss {
   color: var(--color-fg-subtle);
-  font-size: 0.75rem;
+  font-size: 14px;
   font-weight: 300;
+  line-height: 1;
 }
 
 .listItemGradeCss {
-  height: 1rem;
-  margin-top: 0.15rem;
+  height: 18px;
+  margin-top: layout.$spacer-2;
   width: auto;
-}
-
-.containerCss {
-  padding: var(--step-1);
-
-  &:last-of-type {
-    background-color: unset;
-    border: none;
-  }
-
-  @media (min-width: breakpoints.$tablet) {
-    background-color: var(--color-bg-subtle);
-    border: solid 1px var(--color-border-subtle);
-    margin: 0 calc(-1 * var(--step-1));
-  }
 
   @media (min-width: breakpoints.$desktop) {
-    background-color: unset;
-    border: none;
-    margin: 0;
-    padding: 0;
+    height: 20px;
+    margin-top: layout.$spacer-1;
   }
 }

@@ -9,7 +9,7 @@ import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
 import ProgressGraph from "../ProgressGraph";
-import SelectInput from "../SelectInput";
+import SelectField from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
@@ -26,7 +26,6 @@ import {
   listItemTitleCss,
   listItemTitleLinkCss,
   listItemTitleYearCss,
-  nestedListCss,
   pageHeaderCss,
   percentCss,
   percentTotalsCss,
@@ -428,7 +427,7 @@ export default function WatchlistIndexPage({
                   dispatch({ type: ActionType.FILTER_TITLE, value })
                 }
               />
-              <SelectInput
+              <SelectField
                 label="Director"
                 onChange={(e) =>
                   dispatch({
@@ -441,8 +440,8 @@ export default function WatchlistIndexPage({
                   movies={state.allMovies}
                   keyName="directorNames"
                 />
-              </SelectInput>
-              <SelectInput
+              </SelectField>
+              <SelectField
                 label="Performer"
                 onChange={(e) =>
                   dispatch({
@@ -455,8 +454,8 @@ export default function WatchlistIndexPage({
                   movies={state.allMovies}
                   keyName="performerNames"
                 />
-              </SelectInput>
-              <SelectInput
+              </SelectField>
+              <SelectField
                 label="Writer"
                 onChange={(e) =>
                   dispatch({
@@ -469,8 +468,8 @@ export default function WatchlistIndexPage({
                   movies={state.allMovies}
                   keyName="writerNames"
                 />
-              </SelectInput>
-              <SelectInput
+              </SelectField>
+              <SelectField
                 label="Collection"
                 onChange={(e) =>
                   dispatch({
@@ -483,7 +482,7 @@ export default function WatchlistIndexPage({
                   movies={state.allMovies}
                   keyName="collectionNames"
                 />
-              </SelectInput>
+              </SelectField>
               <YearInput
                 label="Release Year"
                 years={data.watchlist.releaseYears}
@@ -491,7 +490,7 @@ export default function WatchlistIndexPage({
                   dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
                 }
               />
-              <SelectInput
+              <SelectField
                 label="Order By"
                 onChange={(e) =>
                   dispatch({
@@ -507,7 +506,7 @@ export default function WatchlistIndexPage({
                   Release Date (Newest First)
                 </option>
                 <option value="title">Title</option>
-              </SelectInput>
+              </SelectField>
             </Fieldset>
             <div className={listInfoCss}>
               <ListInfo
@@ -541,7 +540,7 @@ export default function WatchlistIndexPage({
                   >
                     {group}
                   </div>
-                  <ol className={nestedListCss}>
+                  <ol>
                     {movies.map((movie) => {
                       return (
                         <li key={movie.imdbId} className={listItemCss}>
@@ -624,7 +623,7 @@ export const pageQuery = graphql`
               layout: FIXED
               formats: [JPG, AVIF]
               quality: 80
-              width: 50
+              width: 48
               placeholder: TRACED_SVG
             )
           }
