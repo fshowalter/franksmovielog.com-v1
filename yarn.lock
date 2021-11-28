@@ -7184,10 +7184,10 @@ gatsby-recipes@^1.0.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-remark-smartypants@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-5.0.0.tgz#1d07dae12a0cfb7617fc151c371d93548c84a86b"
-  integrity sha512-er3Su6+3enyHeFRYa8GEeYnBbgXOor4s+TzVuNR+2pD+B6DHwvS5JS8HDbuugJT2T305fEHMvIdMXenmhpWUeA==
+gatsby-remark-smartypants@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-5.2.0.tgz#586096bbda82b3b973c9cc429986bc6141b6ed3e"
+  integrity sha512-kYL1Z9z8943NB+2nK0ShX/SzUpWo/yYK7bwdnz2MgFMfAqX2NO0MwP2/FKAYSR4WZduypDmgNq++4kUhVIaecg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     retext "^7.0.1"
