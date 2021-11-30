@@ -14,7 +14,7 @@
     "gatsby-plugin-preact": "^6.2.0",
     "gatsby-plugin-react-helmet": "^5.0.0",
     "gatsby-plugin-sass": "^5.0.0",
-    "gatsby-plugin-sharp": "^4.0.1",
+    "gatsby-plugin-sharp": "^4.2.0",
     "gatsby-plugin-sitemap": "^5.2.0",
     "gatsby-remark-smartypants": "^5.2.0",
     "gatsby-source-filesystem": "^4.0.0",
@@ -29,7 +29,7 @@
     "react-helmet": "^6.1.0",
     "react-select": "^5.2.1",
     "sass": "^1.43.4",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.10.1",
