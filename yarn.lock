@@ -1758,7 +1758,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jest/types@^27.0.2", "@jest/types@^27.0.6", "@jest/types@^27.4.2":
+"@jest/types@^27.4.2":
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.4.2.tgz#96536ebd34da6392c2b7c7737d693885b5dd44a5"
   integrity sha512-j35yw0PMTPpZsUoOBiuHzr1zTYoad1cVIE0ajEjcrJONxxrko/IRGKkXx3os0Nsi4Hu3+5VmDbVfq5WhG/pWAg==
@@ -2238,38 +2238,10 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@testing-library/dom@>=7":
+"@testing-library/dom@>=7", "@testing-library/dom@^8.0.0", "@testing-library/dom@^8.11.1":
   version "8.11.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.11.1.tgz#03fa2684aa09ade589b460db46b4c7be9fc69753"
   integrity sha512-3KQDyx9r0RKYailW2MiYrSSKEfH0GTkI51UGEvJenvcoDoeRYs0PZpi2SXqtnMClQvCqdtTTpOfFETDTVADpAg==
-  dependencies:
-    "@babel/code-frame" "^7.10.4"
-    "@babel/runtime" "^7.12.5"
-    "@types/aria-query" "^4.2.0"
-    aria-query "^5.0.0"
-    chalk "^4.1.0"
-    dom-accessibility-api "^0.5.9"
-    lz-string "^1.4.4"
-    pretty-format "^27.0.2"
-
-"@testing-library/dom@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.0.0.tgz#2bb994393c566aae021db86dd263ba06e8b71b38"
-  integrity sha512-Ym375MTOpfszlagRnTMO+FOfTt6gRrWiDOWmEnWLu9OvwCPOWtK6i5pBHmZ07wUJiQ7wWz0t8+ZBK2wFo2tlew==
-  dependencies:
-    "@babel/code-frame" "^7.10.4"
-    "@babel/runtime" "^7.12.5"
-    "@types/aria-query" "^4.2.0"
-    aria-query "^4.2.2"
-    chalk "^4.1.0"
-    dom-accessibility-api "^0.5.6"
-    lz-string "^1.4.4"
-    pretty-format "^27.0.2"
-
-"@testing-library/dom@^8.10.1":
-  version "8.10.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.10.1.tgz#e24fed92ad51c619cf304c6f1410b4c76b1000c0"
-  integrity sha512-rab7vpf1uGig5efWwsCOn9j4/doy+W3VBoUyzX7C4y77u0wAckwc7R8nyH6e2rw0rRzKJR+gWPiAg8zhiFbxWQ==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
@@ -3671,10 +3643,10 @@ babel-preset-current-node-syntax@^1.0.0:
     "@babel/plugin-syntax-optional-chaining" "^7.8.3"
     "@babel/plugin-syntax-top-level-await" "^7.8.3"
 
-babel-preset-gatsby@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.0.0.tgz#215e4fede2d16906d7f91a2572b0fa029813e45d"
-  integrity sha512-zq4lt0HB9EM6k5k5PQr9sRbidaCQHRlQk80NbbO6K74IZgcn5bNPMWz3o+81ogvQd6ouof5eCVxygEIZyzTdqw==
+babel-preset-gatsby@^2.0.0, babel-preset-gatsby@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.3.0.tgz#2eafb5e76c25d57f1e53ad09a22e11cd5786c187"
+  integrity sha512-8/y4wntH3IU4K98nnZQ7wItOsJgR/mWSB4swzXlMI+vtVmp8I/HgKwqiXwIECLi/7Ypygus8L/WO+Dwv0kJedg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.0"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
@@ -3689,8 +3661,8 @@ babel-preset-gatsby@^2.0.0:
     babel-plugin-dynamic-import-node "^2.3.3"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^3.0.0"
-    gatsby-legacy-polyfills "^2.0.0"
+    gatsby-core-utils "^3.3.0"
+    gatsby-legacy-polyfills "^2.3.0"
 
 babel-preset-jest@^27.4.0:
   version "27.4.0"
@@ -6633,10 +6605,10 @@ gatsby-graphiql-explorer@^2.0.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-legacy-polyfills@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.0.0.tgz#83d9b8806d8d9a432ead98bf52ba09d883b32fb9"
-  integrity sha512-/zjwMYecVfb3Q+TPi16IjrN21Hgdz4ftRaL45x8Y0rcJNaLAT06dbJmpLkdbVxOGvRklGqMNRG19rBDl6nxLTw==
+gatsby-legacy-polyfills@^2.0.0, gatsby-legacy-polyfills@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.3.0.tgz#9def8ab33f094504524e908ae244765c8a1d3ec7"
+  integrity sha512-OSoQvpX5PbBKOnoTVnPkQfQDWjFVgTLF+WP0/Ofd8Mzrb83o7I8Zt4o82W/YE0RexUvKbik2d/zDQlaKY2moKQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
@@ -6704,16 +6676,16 @@ gatsby-plugin-image@^2.3.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.7.2"
 
-gatsby-plugin-manifest@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.0.0.tgz#7b66405c3e0cee8de78b38086272edc366ceb09d"
-  integrity sha512-2SAg68WS/LZpw+klcoopOI/a9nOyEa7FaviGa4ps+kSWZ1Gvxy5NAuw+qjUCV683mc4ddWPEGuQOFO4WUTRy+Q==
+gatsby-plugin-manifest@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.3.0.tgz#2e6ce2a15d149ba84b956569b3f5243ee6d7a745"
+  integrity sha512-HaOlG1ILLLWv2Fa4agsDgNEMpL5mkMZjK6MMVi8PqjXxpFV7ZQpaZhgQ8qT9dGywFkyJf4+dfmn9YKTIW/DXig==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    gatsby-core-utils "^3.0.0"
-    gatsby-plugin-utils "^2.0.0"
+    gatsby-core-utils "^3.3.0"
+    gatsby-plugin-utils "^2.3.0"
     semver "^7.3.5"
-    sharp "^0.29.1"
+    sharp "^0.29.2"
 
 gatsby-plugin-page-creator@^4.0.0:
   version "4.0.0"
@@ -11595,12 +11567,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
-
-prettier@^2.4.1:
+prettier@2.5.0, prettier@^2.4.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.0.tgz#a6370e2d4594e093270419d9cc47f7670488f893"
   integrity sha512-FM/zAKgWTxj40rH03VxzIPdXmj39SwSjwG0heUcNFwI+EMZJnY93yAiKXM3dObIKAM5TA88werc8T/EwhB45eg==
@@ -11638,27 +11605,7 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-pretty-format@^27.0.0, pretty-format@^27.0.6:
-  version "27.0.6"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.0.6.tgz#ab770c47b2c6f893a21aefc57b75da63ef49a11f"
-  integrity sha512-8tGD7gBIENgzqA+UBzObyWqQ5B778VIFZA/S66cclyd5YkFLYs2Js7gxDKf0MXtTc9zcS7t1xhdfcElJ3YIvkQ==
-  dependencies:
-    "@jest/types" "^27.0.6"
-    ansi-regex "^5.0.0"
-    ansi-styles "^5.0.0"
-    react-is "^17.0.1"
-
-pretty-format@^27.0.2:
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.0.2.tgz#9283ff8c4f581b186b2d4da461617143dca478a4"
-  integrity sha512-mXKbbBPnYTG7Yra9qFBtqj+IXcsvxsvOBco3QHxtxTl+hHKq6QdzMZ+q0CtL4ORHZgwGImRr2XZUX2EWzORxig==
-  dependencies:
-    "@jest/types" "^27.0.2"
-    ansi-regex "^5.0.0"
-    ansi-styles "^5.0.0"
-    react-is "^17.0.1"
-
-pretty-format@^27.4.2:
+pretty-format@^27.0.0, pretty-format@^27.0.2, pretty-format@^27.0.6, pretty-format@^27.4.2:
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.4.2.tgz#e4ce92ad66c3888423d332b40477c87d1dac1fb8"
   integrity sha512-p0wNtJ9oLuvgOQDEIZ9zQjZffK7KtyR6Si0jnXULIDwrlNF8Cuir3AZP0hHv0jmKuNN/edOnbMjnzd4uTcmWiw==
