@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Frank Showalter <fshowalter@gmail.com>",
   "dependencies": {
-    "@silvenon/remark-smartypants": "^1.0.0",
+    "@silvenon/remark-smartypants": "^2.0.0",
     "gatsby": "^4.0.2",
     "gatsby-plugin-catch-links": "^4.0.0",
     "gatsby-plugin-feed": "^4.3.0",
@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "^4.3.0",
     "gatsby-transformer-json": "^4.3.0",
     "gatsby-transformer-remark": "5.0.0",
-    "gatsby-transformer-sharp": "^4.0.0",
+    "gatsby-transformer-sharp": "^4.3.0",
     "littlefoot": "^3.4.1",
     "preact": "^10.6.2",
     "preact-render-to-string": "^5.1.19",
