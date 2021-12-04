@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Frank Showalter <fshowalter@gmail.com>",
   "dependencies": {
-    "@silvenon/remark-smartypants": "^1.0.0",
+    "@silvenon/remark-smartypants": "^2.0.0",
     "gatsby": "^4.0.2",
     "gatsby-plugin-catch-links": "^4.0.0",
     "gatsby-plugin-feed": "^4.3.0",
