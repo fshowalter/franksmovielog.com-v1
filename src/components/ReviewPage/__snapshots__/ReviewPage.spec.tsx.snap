@@ -308,12 +308,12 @@ exports[`/reviews/{slug} renders 1`] = `
                     >
                        
                       <sup
-                        id="fnref:venue-notes-1001"
+                        id="fnref:1001-v"
                       >
                         <a
-                          href="#fn:venue-footnotes-1001"
+                          href="#fn:1001-v"
                         >
-                          1
+                          V
                         </a>
                       </sup>
                     </span>
@@ -351,26 +351,6 @@ exports[`/reviews/{slug} renders 1`] = `
                 <p>
                   And about the comic relief. Much of it comes via Brennan, but repeat viewings have lent a comedic shade to many of Wayne’s lines. Like Billy Wilder’s best films, Rio Bravo uses comedy as a subtle distraction. When Wayne says, “Sorry don’t get it done Dude,” I smirk at the delivery but the message resonates.
                 </p>
-              </div>
-              <div
-                class="footnotes"
-              >
-                <ol>
-                  <li
-                    class="footnote"
-                    id="fn:venue-footnotes-1001"
-                  >
-                    <p>
-                      2015 | Warner Bros.
-                      <a
-                        href="#fnref:venue-notes-1001"
-                        title="Back to top"
-                      >
-                        ↩
-                      </a>
-                    </p>
-                  </li>
-                </ol>
               </div>
             </article>
           </li>

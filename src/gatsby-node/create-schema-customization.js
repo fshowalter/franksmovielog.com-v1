@@ -1,4 +1,10 @@
 const path = require("path");
+const hastToHTML = require(`hast-util-to-html`);
+const Remark = require(`remark`);
+const toHAST = require(`mdast-util-to-hast`);
+const selectAll = require("hast-util-select").selectAll;
+const visit = require("unist-util-visit");
+const SKIP = require("unist-util-visit").SKIP;
 
 const VIEWINGS_JSON = "ViewingsJson";
 const WATCHLIST_ENTITIES_JSON = "WatchlistEntitiesJson";
@@ -44,6 +50,147 @@ function sliceReviewedMoviesForTitle(movies, titleImdbId) {
   return [...movies.slice(-2), ...movies, ...movies.slice(0, 3)]
     .slice(titleIndex, titleIndex + 5)
     .filter(movieIsNotTitle);
+}
+
+function fixFootnoteRefs(ast, frontmatter) {
+  const sups = selectAll("sup[id^=fnref]", ast);
+  for (const sup of sups) {
+    sup.properties.id = sup.properties.id.replace(
+      "fnref-",
+      `fnref:${frontmatter.sequence}-`
+    );
+  }
+
+  const supAnchors = selectAll("a[href^=#fn-]", ast);
+  for (const supAnchor of supAnchors) {
+    supAnchor.properties.href = supAnchor.properties.href.replace(
+      "#fn-",
+      `#fn:${frontmatter.sequence}-`
+    );
+  }
+
+  const listItems = selectAll("li[id^=fn-]", ast);
+  for (const listItem of listItems) {
+    listItem.properties.id = listItem.properties.id.replace(
+      "fn-",
+      `fn:${frontmatter.sequence}-`
+    );
+  }
+
+  const returnAnchors = selectAll("a[href^=#fnref-]", ast);
+  for (const returnAnchor of returnAnchors) {
+    returnAnchor.properties.href = returnAnchor.properties.href.replace(
+      "#fnref-",
+      `#fnref:${frontmatter.sequence}-`
+    );
+  }
+
+  return ast;
+}
+
+function removeFootnotes(ast) {
+  visit(ast, "element", function (node, index, parent) {
+    if (
+      node.tagName === "div" &&
+      node.properties.className &&
+      node.properties.className.includes("footnotes")
+    ) {
+      parent.children.splice(index, 1);
+      return [SKIP, index];
+    }
+
+    if (
+      node.tagName === "sup" &&
+      node.properties.id &&
+      node.properties.id.startsWith("fnref-")
+    ) {
+      parent.children.splice(index, 1);
+      return [SKIP, index];
+    }
+  });
+
+  return ast;
+}
+
+function addVenueNotesFootnote(ast, frontmatter) {
+  const notesMarkdown = frontmatter.venue_notes;
+
+  if (!notesMarkdown) {
+    return ast;
+  }
+
+  const remark = new Remark();
+
+  const venueFootnote = [
+    {
+      type: "element",
+      tagName: "li",
+      properties: { id: `fn:${frontmatter.sequence}-v` },
+      children: [
+        { type: "text", value: "\n" },
+        toHAST(remark.parse(notesMarkdown), {
+          allowDangerousHtml: true,
+        }),
+        {
+          type: "element",
+          tagName: "a",
+          properties: {
+            href: `#fnref:${frontmatter.sequence}-v`,
+            className: ["footnote-backref"],
+          },
+          children: [
+            {
+              type: "text",
+              value: "↩",
+            },
+          ],
+        },
+        { type: "text", value: "\n" },
+      ],
+    },
+  ];
+
+  const lastElement = ast.children[ast.children.length - 1];
+  let footNotesListElement;
+
+  if (
+    lastElement.properties &&
+    lastElement.properties.className &&
+    lastElement.properties.className.includes("footnotes")
+  ) {
+    footNotesListElement = lastElement.children[3];
+  } else {
+    ast.children.push({
+      type: "element",
+      tagName: "div",
+      proprties: {
+        className: ["footnotes"],
+      },
+      children: [
+        { type: "text", value: "\n" },
+        { type: "element", tagName: "hr", properties: {}, children: [] },
+        { type: "text", value: "\n" },
+        {
+          type: "element",
+          tagName: "ol",
+          properties: {},
+          children: [{ type: "text", value: "\n" }],
+        },
+        { type: "text", value: "\n" },
+      ],
+    });
+
+    footNotesListElement = ast.children[ast.children.length - 1].children[3];
+  }
+
+  footNotesListElement.children.push(...venueFootnote);
+
+  return ast;
+}
+
+async function fixFootnotes(frontmatter, ast) {
+  fixFootnoteRefs(ast, frontmatter);
+  addVenueNotesFootnote(ast, frontmatter);
 }
 
 async function addReviewLinks(text, nodeModel) {
@@ -438,13 +585,19 @@ const MarkdownRemark = {
 
         const hasExcerptBreak = rawMarkdownBody.includes("<!-- end -->");
 
-        let excerpt = await resolveFieldForNode(
-          "excerpt",
+        const excerptAst = await resolveFieldForNode(
+          "excerptAst",
           source,
           context,
           info,
-          { format: "HTML", pruneLength: 20000, truncate: false }
+          { pruneLength: 20000, truncate: false }
         );
+
+        removeFootnotes(excerptAst);
+
+        let excerpt = hastToHTML(excerptAst, {
+          allowDangerousHtml: true,
+        });
 
         if (hasExcerptBreak) {
           excerpt = excerpt.replace(/\n+$/, "");
@@ -460,7 +613,25 @@ const MarkdownRemark = {
     linkedHtml: {
       type: "String",
       async resolve(source, args, context, info) {
-        const html = await resolveFieldForNode("html", source, context, info);
+        const frontMatter = await resolveFieldForNode(
+          "frontmatter",
+          source,
+          context,
+          info
+        );
+        // const html = await resolveFieldForNode("html", source, context, info);
+
+        const htmlAst = await resolveFieldForNode(
+          "htmlAst",
+          source,
+          context,
+          info
+        );
+        fixFootnotes(frontMatter, htmlAst, context.nodeModel);
+
+        const html = hastToHTML(htmlAst, {
+          allowDangerousHtml: true,
+        });
 
         return addReviewLinks(html, context.nodeModel);
       },

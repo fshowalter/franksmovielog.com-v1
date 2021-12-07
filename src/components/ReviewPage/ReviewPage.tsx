@@ -296,13 +296,9 @@ export default function ReviewPage({
                       {review.frontmatter.venueNotes && (
                         <span className={slugFootnoteCss}>
                           {" "}
-                          <sup
-                            id={`fnref:venue-notes-${review.frontmatter.sequence}`}
-                          >
-                            <a
-                              href={`#fn:venue-footnotes-${review.frontmatter.sequence}`}
-                            >
-                              1
+                          <sup id={`fnref:${review.frontmatter.sequence}-v`}>
+                            <a href={`#fn:${review.frontmatter.sequence}-v`}>
+                              V
                             </a>
                           </sup>
                         </span>
@@ -315,26 +311,6 @@ export default function ReviewPage({
                   // eslint-disable-next-line react/no-danger
                   text={review.linkedHtml}
                 />
-                {review.frontmatter.venueNotes && (
-                  <div className="footnotes">
-                    <ol>
-                      <li
-                        className="footnote"
-                        id={`fn:venue-footnotes-${review.frontmatter.sequence}`}
-                      >
-                        <p>
-                          {review.frontmatter.venueNotes}
-                          <a
-                            href={`#fnref:venue-notes-${review.frontmatter.sequence}`}
-                            title="Back to top"
-                          >
-                            ↩
-                          </a>
-                        </p>
-                      </li>
-                    </ol>
-                  </div>
-                )}
               </article>
             </li>
           ))}
