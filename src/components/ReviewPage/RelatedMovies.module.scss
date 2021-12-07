@@ -18,7 +18,7 @@
   align-items: flex-start;
   column-gap: layout.$spacer-4;
   display: grid;
-  grid-template-areas: "title image" "grade image" "date image" ". image";
+  grid-template-areas: "title image" "grade image" ". image";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto 1fr;
   margin: 0 calc(-1 * var(--layout-grid-margin));
@@ -29,7 +29,7 @@
   }
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "image" "title" "grade" "." "date";
+    grid-template-areas: "image" "title" "grade";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto 1fr auto;
     margin: 0;
@@ -52,13 +52,12 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: breakpoints.$max) {
+  @media (min-width: breakpoints.$desktop) {
     margin-bottom: 5.055px;
   }
 }
 
 .listItemTitleCss {
-  // color: var(--color-fg-accent);
   font-size: 20px;
   line-height: layout.$spacer-4;
   text-rendering: optimizeLegibility;
@@ -73,11 +72,10 @@
 
 .listItemGradeCss {
   height: 18px;
-  margin-top: layout.$spacer-2;
+  margin-top: layout.$spacer-1;
   width: auto;
 
   @media (min-width: breakpoints.$desktop) {
-    height: 20px;
-    margin-top: layout.$spacer-1;
+    margin: 3px 0;
   }
 }
