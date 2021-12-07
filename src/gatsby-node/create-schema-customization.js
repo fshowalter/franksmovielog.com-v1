@@ -121,6 +121,12 @@ function addVenueNotesFootnote(ast, frontmatter) {
 
   const remark = new Remark();
 
+  const footNoteItemHast = toHAST(remark.parse(notesMarkdown), {
+    allowDangerousHtml: true,
+  });
+
+  footNoteItemHast.children = footNoteItemHast.children[0].children;
+
   const venueFootnote = [
     {
       type: "element",
@@ -128,9 +134,7 @@ function addVenueNotesFootnote(ast, frontmatter) {
       properties: { id: `fn:${frontmatter.sequence}-v` },
       children: [
         { type: "text", value: "\n" },
-        toHAST(remark.parse(notesMarkdown), {
-          allowDangerousHtml: true,
-        }),
+        footNoteItemHast,
         {
           type: "element",
           tagName: "a",
