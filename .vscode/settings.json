@@ -24,5 +24,6 @@
   "stylelint.packageManager": "yarn",
   "stylelint.reportNeedlessDisables": true,
   "eslint.packageManager": "yarn",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "jest.autoRun": "off",
 }
