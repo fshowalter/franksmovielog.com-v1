@@ -38776,6 +38776,15 @@ exports[`/reviews renders 1`] = `
                 </span>
                  since 2020.
               </p>
+              <p>
+                See also my list of 
+                <a
+                  href="/reviews/underseen/"
+                >
+                  underseen gems
+                </a>
+                .
+              </p>
             </div>
           </header>
           <div

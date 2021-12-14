@@ -10,6 +10,16 @@ function createReviewsIndexPage(createPage) {
   });
 }
 
+function createUnderseenGemsPage(createPage) {
+  // Index page
+  createPage({
+    path: `/reviews/underseen/`,
+    component: path.resolve(
+      "./src/components/UnderseenGemsPage/UnderseenGemsPage.tsx"
+    ),
+  });
+}
+
 async function createIndividualReviewPages(createPage, graphql, reporter) {
   const query = await graphql(
     `
@@ -49,5 +59,6 @@ module.exports = async function createReviewPages(
   createPage
 ) {
   createReviewsIndexPage(createPage);
+  createUnderseenGemsPage(createPage);
   await createIndividualReviewPages(createPage, graphql, reporter);
 };

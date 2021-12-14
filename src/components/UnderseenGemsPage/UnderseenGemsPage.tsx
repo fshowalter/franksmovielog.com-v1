@@ -2,19 +2,16 @@ import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import Select from "react-select";
-import { collator } from "../../utils/sort-utils";
 import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
-import GradeInput from "../GradeInput";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
 import SelectField from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
-  calloutCss,
   containerCss,
   filtersCss,
   genresSelectLabelCss,
@@ -26,36 +23,9 @@ import {
   quoteCss,
   rightCss,
   showMoreCss,
-} from "./ReviewsIndexPage.module.scss";
-import type { SortType } from "./ReviewsIndexPage.reducer";
-import reducer, { ActionTypes, initState } from "./ReviewsIndexPage.reducer";
-
-/**
- * Renders the venue select options.
- */
-function VenueOptions({
-  viewings,
-}: {
-  /** The viewings to parse for possible venues. */
-  viewings: Movie[];
-}): JSX.Element {
-  const venues = Array.from(
-    new Set(viewings.map((viewing) => viewing.venue))
-  ).sort((a, b) => collator.compare(a, b));
-
-  return (
-    <>
-      <option key="all" value="All">
-        All
-      </option>
-      {venues.map((venue) => (
-        <option key={venue} value={venue}>
-          {venue}
-        </option>
-      ))}
-    </>
-  );
-}
+} from "./UnderseenGemsPage.module.scss";
+import type { SortType } from "./UnderseenGemsPage.reducer";
+import reducer, { ActionTypes, initState } from "./UnderseenGemsPage.reducer";
 
 function ListInfo({
   visible,
@@ -75,37 +45,11 @@ function ListInfo({
   return <div className={listInfoCss}>{showingText}</div>;
 }
 
-function groupForViewing(movie: Movie, sortValue: SortType): string {
-  const shortMonthToLong: { [key: string]: string } = {
-    Jan: "January",
-    Feb: "February",
-    Mar: "March",
-    Apr: "April",
-    May: "May",
-    Jun: "June",
-    Jul: "July",
-    Aug: "August",
-    Sep: "September",
-    Oct: "October",
-    Nov: "November",
-    Dec: "December",
-  };
-
+function groupForMovie(movie: Movie, sortValue: SortType): string {
   switch (sortValue) {
     case "release-date-asc":
     case "release-date-desc": {
       return movie.releaseDate.substring(0, 4);
-    }
-    case "viewing-date-asc":
-    case "viewing-date-desc": {
-      const match = movie.viewingDate.match(
-        /[A-Za-z]{3} ([A-Za-z]{3}) \d{1,2}, (\d{4})/
-      );
-      if (!match) {
-        return "Unknown";
-      }
-
-      return `${shortMonthToLong[match[1]]} ${match[2]}`;
     }
     case "grade-asc":
     case "grade-desc": {
@@ -124,33 +68,33 @@ function groupForViewing(movie: Movie, sortValue: SortType): string {
   }
 }
 
-function groupViewings({
-  viewings,
+function groupMovies({
+  movies,
   sortValue,
 }: {
-  viewings: Movie[];
+  movies: Movie[];
   sortValue: SortType;
 }): Map<string, Movie[]> {
-  const groupedViewings: Map<string, Movie[]> = new Map();
+  const groupedMovies: Map<string, Movie[]> = new Map();
 
-  viewings.map((viewing) => {
-    const group = groupForViewing(viewing, sortValue);
-    let groupValue = groupedViewings.get(group);
+  movies.map((movie) => {
+    const group = groupForMovie(movie, sortValue);
+    let groupValue = groupedMovies.get(group);
 
     if (!groupValue) {
       groupValue = [];
-      groupedViewings.set(group, groupValue);
+      groupedMovies.set(group, groupValue);
     }
-    groupValue.push(viewing);
+    groupValue.push(movie);
   });
 
-  return groupedViewings;
+  return groupedMovies;
 }
 
 /**
- * Renders the reviews page.
+ * Renders the underseen gems page.
  */
-export default function ReviewsIndexPage({
+export default function UnderseenGemsPage({
   data,
 }: {
   data: PageQueryResult;
@@ -158,23 +102,23 @@ export default function ReviewsIndexPage({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      viewings: [...data.movie.nodes],
+      movies: [...data.movie.nodes],
     },
     initState
   );
 
   const listHeader = useRef<HTMLDivElement>(null);
 
-  const groupedViewings = groupViewings({
-    viewings: state.filteredViewings.slice(0, state.showCount),
+  const groupedMovies = groupMovies({
+    movies: state.filteredMovies.slice(0, state.showCount),
     sortValue: state.sortValue,
   });
 
   return (
     <Layout>
       <Seo
-        pageTitle="Reviews"
-        description="A sortable and filterable list of every movie I've watched and reviewed since 2012."
+        pageTitle="Underseen Gems"
+        description="Four and five star movies with a below average number of votes on the IMDb."
         image={null}
         article={false}
       />
@@ -182,24 +126,18 @@ export default function ReviewsIndexPage({
         <div className={leftCss}>
           <FilterPageHeader
             className={pageHeaderCss}
-            heading="Reviews"
+            heading="Underseen Gems"
+            breadcrumb={
+              <div>
+                <Link to="/reviews/">Reviews</Link>
+              </div>
+            }
             tagline={
               <>
-                <q className={quoteCss}>We have such sights to show you.</q>
+                <q className={quoteCss}>My God, it&apos;s full of stars!</q>
                 <p>
-                  I&apos;ve watched{" "}
-                  <span className={calloutCss}>
-                    {state.allViewings.length.toLocaleString()}
-                  </span>{" "}
-                  movies since 2012 and reviewed{" "}
-                  <span className={calloutCss}>
-                    {data.reviews.totalCount.toLocaleString()}
-                  </span>{" "}
-                  since 2020.
-                </p>
-                <p>
-                  See also my list of{" "}
-                  <Link to="/reviews/underseen/">underseen gems</Link>.
+                  Four and five star movies with a below average number of IMDb
+                  votes.
                 </p>
               </>
             }
@@ -220,34 +158,6 @@ export default function ReviewsIndexPage({
                   dispatch({ type: ActionTypes.FILTER_RELEASE_YEAR, values })
                 }
               />
-              <YearInput
-                label="Viewing Year"
-                years={data.movie.viewingYears}
-                onChange={(values) =>
-                  dispatch({ type: ActionTypes.FILTER_VIEWING_YEAR, values })
-                }
-              />
-              <GradeInput
-                label="Grade"
-                onChange={(values, includeNonReviewed) =>
-                  dispatch({
-                    type: ActionTypes.FILTER_GRADE,
-                    values,
-                    includeNonReviewed,
-                  })
-                }
-              />
-              <SelectField
-                label="Venue"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionTypes.FILTER_VENUE,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <VenueOptions viewings={state.allViewings} />
-              </SelectField>
               <div className={genresWrapCss}>
                 <label htmlFor="genres" className={genresSelectLabelCss}>
                   Genres
@@ -290,12 +200,6 @@ export default function ReviewsIndexPage({
                   })
                 }
               >
-                <option value="viewing-date-desc">
-                  Viewing Date (Newest First)
-                </option>
-                <option value="viewing-date-asc">
-                  Viewing Date (Oldest First)
-                </option>
                 <option value="release-date-desc">
                   Release Date (Newest First)
                 </option>
@@ -310,14 +214,14 @@ export default function ReviewsIndexPage({
             <div className={listInfoCss}>
               <ListInfo
                 visible={state.showCount}
-                total={state.filteredViewings.length}
+                total={state.filteredMovies.length}
               />
             </div>
           </div>
         </div>
         <div className={rightCss} ref={listHeader}>
-          <ol data-testid="viewings-list">
-            {[...groupedViewings].map(([group, viewings], index) => {
+          <ol data-testid="movies-list">
+            {[...groupedMovies].map(([group, movies], index) => {
               return (
                 <li key={group}>
                   <div
@@ -327,17 +231,15 @@ export default function ReviewsIndexPage({
                     {group}
                   </div>
                   <PosterList>
-                    {viewings.map((viewing) => {
+                    {movies.map((movie) => {
                       return (
                         <Poster
-                          key={viewing.sequence}
-                          title={viewing.title}
-                          year={viewing.year}
-                          grade={viewing.grade}
-                          date={viewing.viewingDate}
-                          venue={viewing.venue}
-                          slug={viewing.slug}
-                          image={viewing.poster}
+                          key={movie.imdbId}
+                          title={movie.title}
+                          year={movie.year}
+                          grade={movie.grade}
+                          slug={movie.slug}
+                          image={movie.poster}
                         />
                       );
                     })}
@@ -347,7 +249,7 @@ export default function ReviewsIndexPage({
             })}
           </ol>
           <div className={showMoreCss}>
-            {state.filteredViewings.length > state.showCount && (
+            {state.filteredMovies.length > state.showCount && (
               <Button onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}>
                 <svg
                   focusable="false"
@@ -367,18 +269,15 @@ export default function ReviewsIndexPage({
 }
 
 export interface Movie {
+  imdbId: string;
   title: string;
   year: number;
   releaseDate: string;
-  viewingDate: string;
-  viewingYear: number;
-  sequence: number;
-  venue: string;
   sortTitle: string;
   genres: string[];
-  slug: string | null;
-  grade: string | null;
-  gradeValue: number | null;
+  slug: string;
+  grade: string;
+  gradeValue: number;
   poster: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
@@ -387,12 +286,8 @@ export interface Movie {
 }
 
 interface PageQueryResult {
-  reviews: {
-    totalCount: number;
-  };
   movie: {
     nodes: Movie[];
-    viewingYears: string[];
     releaseYears: string[];
     genres: string[];
   };
@@ -400,17 +295,11 @@ interface PageQueryResult {
 
 export const pageQuery = graphql`
   query {
-    reviews: allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
-      totalCount
-    }
-    movie: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
+    movie: allUnderseenGemsJson(sort: { fields: [release_date], order: DESC }) {
       nodes {
-        sequence
-        viewingYear: viewing_year
-        viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
+        imdbId: imdb_id
         releaseDate: release_date
         title
-        venue
         year
         sortTitle: sort_title
         slug
@@ -429,7 +318,6 @@ export const pageQuery = graphql`
           }
         }
       }
-      viewingYears: distinct(field: viewing_year)
       releaseYears: distinct(field: year)
       genres: distinct(field: genres)
     }

@@ -9,6 +9,7 @@ const SKIP = require("unist-util-visit").SKIP;
 const VIEWINGS_JSON = "ViewingsJson";
 const WATCHLIST_ENTITIES_JSON = "WatchlistEntitiesJson";
 const WATCHLIST_MOVIES_JSON = "WatchlistMoviesJson";
+const UNDERSEEN_GEMS_JSON = "UnderseenGemsJson";
 const REVIEWED_MOVIES_JSON = "ReviewedMoviesJson";
 const MARKDOWN_REMARK = "MarkdownRemark";
 const REVIEWED_MOVIES_WATCHLIST_ENTITIES = `ReviewedMoviesWatchlistEntities`;
@@ -492,6 +493,104 @@ const WatchlistMoviesJson = {
         }
 
         return reviewedMovie.slug;
+      },
+    },
+    poster: {
+      type: "File",
+      resolve: async (source, args, context, info) => {
+        const reviewedMovie = await context.nodeModel.findOne({
+          query: {
+            filter: {
+              imdb_id: { eq: source.imdb_id },
+            },
+          },
+          type: REVIEWED_MOVIES_JSON,
+        });
+
+        if (!reviewedMovie) {
+          return await context.nodeModel.findOne({
+            type: "File",
+            query: {
+              filter: {
+                absolutePath: {
+                  eq: path.resolve(`./content/assets/posters/default.png`),
+                },
+              },
+            },
+          });
+        }
+
+        return resolveFieldForNode("poster", reviewedMovie, context, info);
+      },
+    },
+  },
+  extensions: {
+    infer: false,
+  },
+};
+
+const UnderseenGemsJson = {
+  name: UNDERSEEN_GEMS_JSON,
+  interfaces: ["Node"],
+  fields: {
+    imdb_id: "String!",
+    title: "String!",
+    year: "Int!",
+    sort_title: "String!",
+    release_date: "String!",
+    genres: "[String!]!",
+    grade: "String!",
+    slug: "String!",
+    gradeValue: {
+      type: "Int",
+      resolve: async (source, args, context, info) => {
+        const grade = await resolveFieldForNode("grade", source, context, info);
+
+        if (!grade) {
+          return null;
+        }
+
+        switch (grade) {
+          case "A+": {
+            return 13;
+          }
+          case "A": {
+            return 12;
+          }
+          case "A-": {
+            return 11;
+          }
+          case "B+": {
+            return 10;
+          }
+          case "B": {
+            return 9;
+          }
+          case "B-": {
+            return 8;
+          }
+          case "C+": {
+            return 7;
+          }
+          case "C": {
+            return 6;
+          }
+          case "C-": {
+            return 5;
+          }
+          case "D+": {
+            return 4;
+          }
+          case "D": {
+            return 3;
+          }
+          case "D-": {
+            return 2;
+          }
+          default: {
+            return 1;
+          }
+        }
       },
     },
     poster: {
@@ -1322,6 +1421,7 @@ module.exports = function createSchemaCustomization({ actions, schema }) {
     schema.buildObjectType(HighestRatedDirectorsJson),
     schema.buildObjectType(HighestRatedPerformersJson),
     schema.buildObjectType(HighestRatedWritersJson),
+    schema.buildObjectType(UnderseenGemsJson),
   ];
 
   createTypes(typeDefs);
