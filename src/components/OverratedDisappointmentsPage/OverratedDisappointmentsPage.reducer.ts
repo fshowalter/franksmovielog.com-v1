@@ -6,7 +6,7 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
-import type { Movie } from "./UnderseenGemsPage";
+import type { Movie } from "./OverratedDisappointmentsPage";
 
 export type SortType =
   | "release-date-desc"
