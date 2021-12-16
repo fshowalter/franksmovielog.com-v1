@@ -26,4 +26,17 @@
   "eslint.packageManager": "yarn",
   "typescript.tsdk": "node_modules/typescript/lib",
   "jest.autoRun": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "stylelint.snippet": [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ],
 }

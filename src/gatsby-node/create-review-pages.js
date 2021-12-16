@@ -20,6 +20,16 @@ function createUnderseenGemsPage(createPage) {
   });
 }
 
+function createOverratedDisappointmentsPage(createPage) {
+  // Index page
+  createPage({
+    path: `/reviews/overrated/`,
+    component: path.resolve(
+      "./src/components/OverratedDisappointmentsPage/OverratedDisappointmentsPage.tsx"
+    ),
+  });
+}
+
 async function createIndividualReviewPages(createPage, graphql, reporter) {
   const query = await graphql(
     `
@@ -60,5 +70,6 @@ module.exports = async function createReviewPages(
 ) {
   createReviewsIndexPage(createPage);
   createUnderseenGemsPage(createPage);
+  createOverratedDisappointmentsPage(createPage);
   await createIndividualReviewPages(createPage, graphql, reporter);
 };

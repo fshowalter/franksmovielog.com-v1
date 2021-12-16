@@ -38777,11 +38777,28 @@ exports[`/reviews renders 1`] = `
                  since 2020.
               </p>
               <p>
-                See also my list of 
+                <b>
+                  Looking for something new?
+                </b>
+                <br />
+                 Peruse my list of 
                 <a
                   href="/reviews/underseen/"
                 >
                   underseen gems
+                </a>
+                .
+              </p>
+              <p>
+                <b>
+                  Feeling contrarian?
+                </b>
+                <br />
+                Behold my list of 
+                <a
+                  href="/reviews/overrated/"
+                >
+                  overrated disappointments
                 </a>
                 .
               </p>

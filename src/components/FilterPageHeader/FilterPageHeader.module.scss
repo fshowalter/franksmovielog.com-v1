@@ -21,12 +21,14 @@
   margin-top: layout.$spacer-3;
   text-align: center;
 
-  p:not(:first-of-type) {
-    margin-top: layout.$spacer-3;
-
+  p {
     a {
       color: var(--color-fg-accent);
     }
+  }
+
+  p:not(:first-of-type) {
+    margin-top: layout.$spacer-3;
   }
 }
 
