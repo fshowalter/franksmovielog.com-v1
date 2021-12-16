@@ -26,6 +26,10 @@
   padding: layout.$spacer-4 0 0;
   text-align: center;
 
+  @media (min-width: breakpoints.$desktop) {
+    padding: layout.$spacer-5 0 0;
+  }
+
   @media (min-width: breakpoints.$max) {
     padding: 0;
     text-align: left;
