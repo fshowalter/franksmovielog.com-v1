@@ -91,7 +91,6 @@ export default function GradeFilter({
   };
 
   const handleCheckedChange = (value: boolean) => {
-    console.log(value);
     setCheckedValue(value);
     onChange([minValue, maxValue], value);
   };
