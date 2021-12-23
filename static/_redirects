@@ -40,6 +40,7 @@
 /browse/reviews/24-hour-party-people-2002 /reviews/24-hour-party-people-2002 301
 /browse/reviews/better-off-dead-1985 /reviews/better-off-dead-1985 301
 /reviews/the-brute-and-the-beast-1966 /reviews/massacre-time-1966 301
+/reviews/bill-ted-face-the-music-2020 /reviews/bill-and-ted-face-the-music-2020 301
 
 # misc spam
 /config.bak.php /gone 410
@@ -50,7 +51,12 @@
 /.env /gone 410
 /wp-content /gone 410
 /admin /gone 410
+/wlwmanifest.xml /gone 410
+*/wlwmanifest.xml /gone 410
+/xmlrpc.php /gone 410
+//xmlrpc.php /gone 410
 // /gone 410
+
 
 # old favicons
 /favicon.ico /gone 410
