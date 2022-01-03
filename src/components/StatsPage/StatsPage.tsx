@@ -64,7 +64,7 @@ function SubHeading({
     subTitle = `${(years.length - 1).toString()} Years in Review`;
   }
 
-  if (yearScope === new Date().getFullYear().toString()) {
+  if (yearScope === years[1]) {
     subTitle = "A Year in Progress...";
   }
 
