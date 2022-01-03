@@ -14,7 +14,7 @@ describe("/stats/{year}", () => {
   });
 
   it("renders for current year", () => {
-    const thisYear = 2021;
+    const thisYear = "2021";
 
     const { asFragment } = render(
       <StatsPage data={data} pageContext={{ yearScope: thisYear }} />
