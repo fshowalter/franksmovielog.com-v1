@@ -160,6 +160,7 @@ function addVenueNotesFootnote(ast, frontmatter) {
   let footNotesListElement;
 
   if (
+    lastElement &&
     lastElement.properties &&
     lastElement.properties.className &&
     lastElement.properties.className.includes("footnotes")
