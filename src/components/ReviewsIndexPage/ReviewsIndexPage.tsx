@@ -191,11 +191,11 @@ export default function ReviewsIndexPage({
                   <span className={calloutCss}>
                     {state.allViewings.length.toLocaleString()}
                   </span>{" "}
-                  movies since 2012 and reviewed{" "}
+                  movies since 2012 and published{" "}
                   <span className={calloutCss}>
                     {data.reviews.totalCount.toLocaleString()}
                   </span>{" "}
-                  since 2020.
+                  reviews since 2020.
                 </p>
                 <p>
                   <b>Looking for something new?</b>
