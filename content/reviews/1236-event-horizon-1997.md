@@ -23,6 +23,6 @@ This may sound like I didn't enjoy the film. I did, but I found it frustrating. 
 
 But alas.
 
-The cast shines, though when Fishburn asks, “Are you saying this ship is alive?” his incredulity appears directed toward the dialogue itself. Neill steals the show with his monstrous third act performance that provides the film's most resonant moments. The scene where he grabs Fishburne's head and forces a glimpse of the future while bellowing “Do you see?!” epitomizes the film's unrealized potential.
+The cast shines, though when Fishburne asks, “Are you saying this ship is alive?” his incredulity appears directed toward the dialogue itself. Neill steals the show with his monstrous third act performance that provides the film's most resonant moments. The scene where he grabs Fishburne's head and forces a glimpse of the future while bellowing “Do you see?!” epitomizes the film's unrealized potential.
 
 Do you see? Indeed.
