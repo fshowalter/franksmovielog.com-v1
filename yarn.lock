@@ -5515,10 +5515,10 @@ eslint-plugin-import@^2.25.3, eslint-plugin-import@^2.25.4:
     resolve "^1.20.0"
     tsconfig-paths "^3.12.0"
 
-eslint-plugin-jest@^26.0.0:
-  version "26.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.0.0.tgz#f83a25a23ab90ce5b375b1d44389b8c391be5ce8"
-  integrity sha512-Fvs0YgJ/nw9FTrnqTuMGVrkozkd07jkQzWm0ajqyHlfcsdkxGfAuv30fgfWHOnHiCr9+1YQ365CcDX7vrNhqQg==
+eslint-plugin-jest@^26.1.0:
+  version "26.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.1.0.tgz#9f6c33e66f3cef3f2832c3a4d2caa21a75792dee"
+  integrity sha512-vjF6RvcKm4xZSJgCmXb9fXmhzTva+I9jtj9Qv5JeZQTRocU7WT1g3Kx0cZ+00SekPe2DtSWDawHtSj4RaxFhXQ==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -6378,10 +6378,10 @@ gatsby-page-utils@^2.6.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-catch-links@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-4.5.0.tgz#8255b6bc1543eced269badf6462ffb387ab31560"
-  integrity sha512-qxwaOHGlHYfacItT1cCDjHkGDhuY8biOdg53mNyLyZCtSMYxsAraCVL8iyDTI1hD33YuA+a6YlcFxaTDWr1mtw==
+gatsby-plugin-catch-links@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-4.7.0.tgz#cffdf4e812fe9dd4839fa8a6980459930b55219a"
+  integrity sha512-jIqUI1+Cu+RV1RxkoHcjQTwUCDjeL3R4b+c2psd1TlQ9xZDe/+OQiXkWawk4EKeW+BlB0vFY0qvOB5CBYJBQpg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     escape-string-regexp "^1.0.5"
