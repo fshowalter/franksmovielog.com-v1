@@ -16,7 +16,7 @@
     "strictNullChecks": true,
     "noImplicitAny": true
   },
-  "include": ["./src/**/*", "./*.js"],
+  "include": ["./src/**/*", "./*.js", "*.ts"],
   "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"],
   "typeRoots": ["./src/types", "./node_modules/@types/"]
 }
