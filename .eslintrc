@@ -22,7 +22,7 @@
   },
   "overrides": [
     {
-      "files": ["**/*.ts", "**/*.tsx"],
+      "files": ["*.ts", "**/*.ts", "**/*.tsx"],
       "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
