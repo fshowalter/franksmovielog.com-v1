@@ -13,7 +13,7 @@ import MostWatchedPerformersJson from "./schema/MostWatchedPerformersJson";
 import MostWatchedPerson from "./schema/MostWatchedPerson";
 import MostWatchedPersonViewing from "./schema/MostWatchedPersonViewing";
 import MostWatchedWritersJson from "./schema/MostWatchedWritersJson";
-import OverratedDisappointmentsJson from "./schema/overratedDisappointmentsJson";
+import OverratedDisappointmentsJson from "./schema/OverratedDisappointmentsJson";
 import ReviewedMoviesJson from "./schema/ReviewedMoviesJson";
 import ReviewedMovieWatchlistEntities from "./schema/ReviewedMoviesWatchlistEntities";
 import TopVenuesJson from "./schema/TopVenuesJson";
