@@ -1,10 +1,23 @@
-const path = require("path");
+import type { Actions, CreatePagesArgs } from "gatsby";
+import path from "path";
 
-async function createDirectorPages(graphql, reporter, createPage) {
-  const query = await graphql(
+interface EntityQueryResult {
+  entity: {
+    nodes: {
+      slug: string;
+    }[];
+  };
+}
+
+async function createDirectorPages(
+  graphql: CreatePagesArgs["graphql"],
+  reporter: CreatePagesArgs["reporter"],
+  createPage: Actions["createPage"]
+) {
+  const queryResult = await graphql<EntityQueryResult>(
     `
       {
-        directors: allWatchlistEntitiesJson(
+        entity: allWatchlistEntitiesJson(
           filter: { entity_type: { eq: "director" }, review_count: { gt: 0 } }
         ) {
           nodes {
@@ -15,7 +28,7 @@ async function createDirectorPages(graphql, reporter, createPage) {
     `
   );
 
-  if (query.errors) {
+  if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(`Error while running query watchlist directors.`);
     return;
   }
@@ -30,7 +43,7 @@ async function createDirectorPages(graphql, reporter, createPage) {
     },
   });
 
-  query.data.directors.nodes.forEach((node) => {
+  queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/directors/${node.slug}/`,
       component: path.resolve(
@@ -44,11 +57,15 @@ async function createDirectorPages(graphql, reporter, createPage) {
   });
 }
 
-async function createPerformerPages(graphql, reporter, createPage) {
-  const query = await graphql(
+async function createPerformerPages(
+  graphql: CreatePagesArgs["graphql"],
+  reporter: CreatePagesArgs["reporter"],
+  createPage: Actions["createPage"]
+) {
+  const queryResult = await graphql<EntityQueryResult>(
     `
       {
-        performers: allWatchlistEntitiesJson(
+        entity: allWatchlistEntitiesJson(
           filter: { entity_type: { eq: "performer" }, review_count: { gt: 0 } }
         ) {
           nodes {
@@ -59,7 +76,7 @@ async function createPerformerPages(graphql, reporter, createPage) {
     `
   );
 
-  if (query.errors) {
+  if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(`Error while running query watchlist performers.`);
     return;
   }
@@ -74,7 +91,7 @@ async function createPerformerPages(graphql, reporter, createPage) {
     },
   });
 
-  query.data.performers.nodes.forEach((node) => {
+  queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/performers/${node.slug}/`,
       component: path.resolve(
@@ -88,11 +105,15 @@ async function createPerformerPages(graphql, reporter, createPage) {
   });
 }
 
-async function createWriterPages(graphql, reporter, createPage) {
-  const query = await graphql(
+async function createWriterPages(
+  graphql: CreatePagesArgs["graphql"],
+  reporter: CreatePagesArgs["reporter"],
+  createPage: Actions["createPage"]
+) {
+  const queryResult = await graphql<EntityQueryResult>(
     `
       {
-        writers: allWatchlistEntitiesJson(
+        entity: allWatchlistEntitiesJson(
           filter: { entity_type: { eq: "writer" }, review_count: { gt: 0 } }
         ) {
           nodes {
@@ -103,7 +124,7 @@ async function createWriterPages(graphql, reporter, createPage) {
     `
   );
 
-  if (query.errors) {
+  if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(`Error while running query watchlist writers.`);
     return;
   }
@@ -118,7 +139,7 @@ async function createWriterPages(graphql, reporter, createPage) {
     },
   });
 
-  query.data.writers.nodes.forEach((node) => {
+  queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/writers/${node.slug}/`,
       component: path.resolve(
@@ -132,11 +153,15 @@ async function createWriterPages(graphql, reporter, createPage) {
   });
 }
 
-async function createCollectionPages(graphql, reporter, createPage) {
-  const query = await graphql(
+async function createCollectionPages(
+  graphql: CreatePagesArgs["graphql"],
+  reporter: CreatePagesArgs["reporter"],
+  createPage: Actions["createPage"]
+) {
+  const queryResult = await graphql<EntityQueryResult>(
     `
       {
-        collections: allWatchlistEntitiesJson(
+        entity: allWatchlistEntitiesJson(
           filter: { entity_type: { eq: "collection" }, review_count: { gt: 0 } }
         ) {
           nodes {
@@ -147,7 +172,7 @@ async function createCollectionPages(graphql, reporter, createPage) {
     `
   );
 
-  if (query.errors) {
+  if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(`Error while running query watchlist collections.`);
     return;
   }
@@ -162,7 +187,7 @@ async function createCollectionPages(graphql, reporter, createPage) {
     },
   });
 
-  query.data.collections.nodes.forEach((node) => {
+  queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/collections/${node.slug}/`,
       component: path.resolve(
@@ -176,23 +201,26 @@ async function createCollectionPages(graphql, reporter, createPage) {
   });
 }
 
-function createIndexPage(createPage) {
+function createIndexPage(createPage: Actions["createPage"]) {
   createPage({
     path: `/watchlist/`,
+    context: null,
     component: path.resolve(
       "./src/components/WatchlistIndexPage/WatchlistIndexPage.tsx"
     ),
   });
 }
 
-module.exports = async function createWatchlistPages(
+export default async function createWatchlistPages({
   graphql,
   reporter,
-  createPage
-) {
+  actions,
+}: CreatePagesArgs) {
+  const { createPage } = actions;
+
   createIndexPage(createPage);
-  createDirectorPages(graphql, reporter, createPage);
-  createPerformerPages(graphql, reporter, createPage);
-  createWriterPages(graphql, reporter, createPage);
-  createCollectionPages(graphql, reporter, createPage);
-};
+  await createDirectorPages(graphql, reporter, createPage);
+  await createPerformerPages(graphql, reporter, createPage);
+  await createWriterPages(graphql, reporter, createPage);
+  await createCollectionPages(graphql, reporter, createPage);
+}
