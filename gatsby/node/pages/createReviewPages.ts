@@ -1,8 +1,10 @@
-const path = require("path");
+import type { Actions, CreatePagesArgs } from "gatsby";
+import path from "path";
 
-function createReviewsIndexPage(createPage) {
+function createReviewsIndexPage(createPage: Actions["createPage"]) {
   // Index page
   createPage({
+    context: null,
     path: `/reviews/`,
     component: path.resolve(
       "./src/components/ReviewsIndexPage/ReviewsIndexPage.tsx"
@@ -10,9 +12,10 @@ function createReviewsIndexPage(createPage) {
   });
 }
 
-function createUnderseenGemsPage(createPage) {
+function createUnderseenGemsPage(createPage: Actions["createPage"]) {
   // Index page
   createPage({
+    context: null,
     path: `/reviews/underseen/`,
     component: path.resolve(
       "./src/components/UnderseenGemsPage/UnderseenGemsPage.tsx"
@@ -20,9 +23,10 @@ function createUnderseenGemsPage(createPage) {
   });
 }
 
-function createOverratedDisappointmentsPage(createPage) {
+function createOverratedDisappointmentsPage(createPage: Actions["createPage"]) {
   // Index page
   createPage({
+    context: null,
     path: `/reviews/overrated/`,
     component: path.resolve(
       "./src/components/OverratedDisappointmentsPage/OverratedDisappointmentsPage.tsx"
@@ -30,21 +34,34 @@ function createOverratedDisappointmentsPage(createPage) {
   });
 }
 
-async function createIndividualReviewPages(createPage, graphql, reporter) {
-  const query = await graphql(
-    `
-      {
-        reviews: allReviewedMoviesJson {
-          nodes {
-            imdb_id
-            slug
-          }
-        }
-      }
-    `
-  );
+const query = `
+{
+  reviews: allReviewedMoviesJson {
+    nodes {
+      imdb_id
+      slug
+    }
+  }
+}
+`;
 
-  if (query.errors) {
+interface QueryResult {
+  reviews: {
+    nodes: {
+      imdb_id: string;
+      slug: string;
+    }[];
+  };
+}
+
+async function createIndividualReviewPages(
+  createPage: Actions["createPage"],
+  graphql: CreatePagesArgs["graphql"],
+  reporter: CreatePagesArgs["reporter"]
+) {
+  const queryResult = await graphql<QueryResult>(query);
+
+  if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
       `Error while running GraphQL query for review pages.`
     );
@@ -52,7 +69,7 @@ async function createIndividualReviewPages(createPage, graphql, reporter) {
   }
 
   // Review pages
-  query.data.reviews.nodes.forEach((node) => {
+  queryResult.data.reviews.nodes.forEach((node) => {
     createPage({
       path: `/reviews/${node.slug}/`,
       component: path.resolve("./src/components/ReviewPage/ReviewPage.tsx"),
@@ -63,13 +80,15 @@ async function createIndividualReviewPages(createPage, graphql, reporter) {
   });
 }
 
-module.exports = async function createReviewPages(
+export default async function createReviewPages({
   graphql,
   reporter,
-  createPage
-) {
+  actions,
+}: CreatePagesArgs) {
+  const { createPage } = actions;
+
   createReviewsIndexPage(createPage);
   createUnderseenGemsPage(createPage);
   createOverratedDisappointmentsPage(createPage);
   await createIndividualReviewPages(createPage, graphql, reporter);
-};
+}
