@@ -1,7 +1,6 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
-import { collator } from "../../utils/sort-utils";
 import toSentenceArray from "../../utils/to-sentence-array";
 import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
@@ -9,7 +8,7 @@ import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
 import ProgressGraph from "../ProgressGraph";
-import SelectField from "../SelectField";
+import { SelectField, SelectOptions } from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
@@ -97,44 +96,6 @@ function groupMovies({
   });
 
   return groupedMovies;
-}
-
-/**
- * Renders options for a watchlist person or collection select.
- */
-function WatchlistOptions({
-  movies,
-  keyName,
-}: {
-  /** The watchlist titles to parse for persons or collections. */
-  movies: WatchlistMovie[];
-  /** The key name to parse. */
-  keyName:
-    | "collectionNames"
-    | "directorNames"
-    | "performerNames"
-    | "writerNames";
-}) {
-  const names = [
-    ...new Set(
-      movies.flatMap((movie) => {
-        return movie[keyName];
-      })
-    ),
-  ].sort((a, b) => collator.compare(a, b));
-
-  return (
-    <>
-      <option key="all" value="All">
-        All
-      </option>
-      {names.map((name) => (
-        <option key={name} value={name}>
-          {name}
-        </option>
-      ))}
-    </>
-  );
 }
 
 /**
@@ -436,10 +397,7 @@ export default function WatchlistIndexPage({
                   })
                 }
               >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="directorNames"
-                />
+                <SelectOptions options={data.watchlist.directors} />
               </SelectField>
               <SelectField
                 label="Performer"
@@ -450,10 +408,7 @@ export default function WatchlistIndexPage({
                   })
                 }
               >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="performerNames"
-                />
+                <SelectOptions options={data.watchlist.performers} />
               </SelectField>
               <SelectField
                 label="Writer"
@@ -464,10 +419,7 @@ export default function WatchlistIndexPage({
                   })
                 }
               >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="writerNames"
-                />
+                <SelectOptions options={data.watchlist.writers} />
               </SelectField>
               <SelectField
                 label="Collection"
@@ -478,10 +430,7 @@ export default function WatchlistIndexPage({
                   })
                 }
               >
-                <WatchlistOptions
-                  movies={state.allMovies}
-                  keyName="collectionNames"
-                />
+                <SelectOptions options={data.watchlist.collections} />
               </SelectField>
               <YearInput
                 label="Release Year"
@@ -598,6 +547,10 @@ interface PageQueryResult {
   watchlist: {
     nodes: WatchlistMovie[];
     releaseYears: string[];
+    directors: string[];
+    performers: string[];
+    writers: string[];
+    collections: string[];
   };
 }
 
@@ -630,6 +583,10 @@ export const pageQuery = graphql`
         }
       }
       releaseYears: distinct(field: year)
+      directors: distinct(field: directorNames)
+      performers: distinct(field: performerNames)
+      writers: distinct(field: writerNames)
+      collections: distinct(field: collection_names)
     }
   }
 `;

@@ -37,23 +37,6 @@ function sortMovies(titles: WatchlistMovie[], sortType: SortType) {
   return titles.sort(comparer);
 }
 
-/**
- * Returns the min and max release years for a given collection of movies.
- * @param movies The movies collection.
- */
-function minMaxReleaseYears(movies: WatchlistMovie[]) {
-  const releaseYears = movies
-    .map((title) => {
-      return title.year;
-    })
-    .sort();
-
-  const minYear = releaseYears[0];
-  const maxYear = releaseYears[releaseYears.length - 1];
-
-  return [minYear, maxYear];
-}
-
 function reviewedMovieCount(movies: WatchlistMovie[]): number {
   return movies.filter((movie) => movie.reviewedMovieSlug).length;
 }
@@ -70,10 +53,6 @@ type State = {
   showCount: number;
   /** The active filters. */
   filters: Record<string, (title: WatchlistMovie) => boolean>;
-  /** The minimum year for the release date filter. */
-  minYear: number;
-  /** The maximum year for the release date filter. */
-  maxYear: number;
   /** The reviewed movie count */
   reviewedMovieCount: number;
   /** The active sort type. */
@@ -83,15 +62,11 @@ type State = {
 const SHOW_COUNT_DEFAULT = 24;
 
 export function initState({ movies }: { movies: WatchlistMovie[] }): State {
-  const [minYear, maxYear] = minMaxReleaseYears(movies);
-
   return {
     allMovies: movies,
     filteredMovies: movies,
     showCount: SHOW_COUNT_DEFAULT,
     filters: {},
-    minYear,
-    maxYear,
     reviewedMovieCount: reviewedMovieCount(movies),
     sortType: "release-date-asc",
   };

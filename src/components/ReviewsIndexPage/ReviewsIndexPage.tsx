@@ -2,7 +2,6 @@ import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import Select from "react-select";
-import { collator } from "../../utils/sort-utils";
 import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
@@ -10,7 +9,7 @@ import FilterPageHeader from "../FilterPageHeader";
 import GradeInput from "../GradeInput";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
-import SelectField from "../SelectField";
+import { SelectField, SelectOptions } from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
@@ -29,33 +28,6 @@ import {
 } from "./ReviewsIndexPage.module.scss";
 import type { SortType } from "./ReviewsIndexPage.reducer";
 import reducer, { ActionTypes, initState } from "./ReviewsIndexPage.reducer";
-
-/**
- * Renders the venue select options.
- */
-function VenueOptions({
-  viewings,
-}: {
-  /** The viewings to parse for possible venues. */
-  viewings: Movie[];
-}): JSX.Element {
-  const venues = Array.from(
-    new Set(viewings.map((viewing) => viewing.venue))
-  ).sort((a, b) => collator.compare(a, b));
-
-  return (
-    <>
-      <option key="all" value="All">
-        All
-      </option>
-      {venues.map((venue) => (
-        <option key={venue} value={venue}>
-          {venue}
-        </option>
-      ))}
-    </>
-  );
-}
 
 function ListInfo({
   visible,
@@ -257,7 +229,7 @@ export default function ReviewsIndexPage({
                   })
                 }
               >
-                <VenueOptions viewings={state.allViewings} />
+                <SelectOptions options={data.movie.venues} />
               </SelectField>
               <div className={genresWrapCss}>
                 <label htmlFor="genres" className={genresSelectLabelCss}>
@@ -406,6 +378,7 @@ interface PageQueryResult {
     viewingYears: string[];
     releaseYears: string[];
     genres: string[];
+    venues: string[];
   };
 }
 
@@ -440,6 +413,7 @@ export const pageQuery = graphql`
           }
         }
       }
+      venues: distinct(field: venue)
       viewingYears: distinct(field: viewing_year)
       releaseYears: distinct(field: year)
       genres: distinct(field: genres)

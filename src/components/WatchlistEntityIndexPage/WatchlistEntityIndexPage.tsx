@@ -5,7 +5,7 @@ import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
-import SelectField from "../SelectField";
+import { SelectField } from "../SelectField";
 import Seo from "../Seo";
 import {
   containerCss,
