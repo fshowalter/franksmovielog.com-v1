@@ -1,3 +1,4 @@
 import SelectField from "./SelectField";
+import SelectOptions from "./SelectOptions";
 
-export default SelectField;
+export { SelectField, SelectOptions };

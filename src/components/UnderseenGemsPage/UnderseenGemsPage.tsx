@@ -8,7 +8,7 @@ import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
-import SelectField from "../SelectField";
+import { SelectField } from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {

@@ -54,7 +54,7 @@ const WatchlistMoviesJson = {
           return [];
         }
 
-        return entries.map((node) => node.name);
+        return Array.from(entries.map((node) => node.name));
       },
     },
     performerNames: {
@@ -75,7 +75,7 @@ const WatchlistMoviesJson = {
             type: SchemaNames.WATCHLIST_ENTITIES_JSON,
           });
 
-        return entries.map((node) => node.name);
+        return Array.from(entries.map((node) => node.name));
       },
     },
     writerNames: {
@@ -96,7 +96,7 @@ const WatchlistMoviesJson = {
             type: SchemaNames.WATCHLIST_ENTITIES_JSON,
           });
 
-        return entries.map((node) => node.name);
+        return Array.from(entries.map((node) => node.name));
       },
     },
     lastReviewDate: {
