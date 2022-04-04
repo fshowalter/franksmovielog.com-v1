@@ -7026,10 +7026,10 @@ gatsby-cli@^4.10.2:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.10.1, gatsby-core-utils@^3.8.2:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.10.1.tgz#0f5e6aeda5ef4b86218b27480a9766fe30af4393"
-  integrity sha512-WqNMm0u1CAZm6Q+UQ4dDHwIAt3l32NeIaPuSXmDX7QcMGR3FUUk8cl2Ym6gx1hfILm1aCexqfaSCLUXtaWKkbQ==
+gatsby-core-utils@^3.10.1, gatsby-core-utils@^3.11.1, gatsby-core-utils@^3.8.2:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.11.1.tgz#ea87c1d3aa45c26c9ea32b8e8b029afe6a56f8c7"
+  integrity sha512-Op9/uihtcsDLlZDfRsGJ1ya2mFx2YH9Zmx93bawElZ0YpIzKjCkNTp+I5i5UANxvs5I+Fljl0WHQRudMWg+fWA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -7291,16 +7291,16 @@ gatsby-sharp@^0.4.0:
     "@types/sharp" "^0.29.5"
     sharp "^0.30.1"
 
-gatsby-source-filesystem@^4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.10.1.tgz#c513fadb3cedb138ff28ba351ffd264524a0c28d"
-  integrity sha512-qdOWS234l6QyEN0M8tfdGQF530pK9nSiaT1JfSzZV7Bl9psX9SdsuOtfZ2AV0QVt1BQB7C53E/BNGaxMLCcnUg==
+gatsby-source-filesystem@^4.11.1:
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.11.1.tgz#cf2edca8816c6d06ca36ef46feaad4c6d07a6f10"
+  integrity sha512-8Fz+VpctjoiZxnGYDgfXFgdD+8rLmj5+l16fZpN+bxETAOPhbyQjznc8IoTwDEdyOER1Zr8JQB/y6tx/qRf+Bw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     chokidar "^3.5.2"
     file-type "^16.5.3"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.10.1"
+    gatsby-core-utils "^3.11.1"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.5.2"
