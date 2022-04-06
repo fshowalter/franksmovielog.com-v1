@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { act, render, screen, waitFor, within } from "@testing-library/react";
+import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import WatchlistEntityPage, { EntityType } from "./WatchlistEntityPage";
@@ -65,35 +65,20 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    act(() => {
-      jest.useFakeTimers(); // For the debouced input
-      userEvent.type(
+    await act(async () => {
+      await userEvent.type(
         screen.getByLabelText("Title"),
         "Man Who Shot Liberty Valance"
       );
-      jest.runOnlyPendingTimers(); // Flush the delay
-      jest.useRealTimers();
+      await new Promise((r) => setTimeout(r, 500));
     });
-
-    await waitFor(() => {
-      expect(screen.getByTestId("movie-list")).toMatchSnapshot();
-    });
-  });
-
-  it("can sort by title", () => {
-    render(
-      <WatchlistEntityPage
-        data={data}
-        pageContext={{ entityType: EntityType.DIRECTOR }}
-      />
-    );
-
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
 
-  it("can sort by release date with oldest first", () => {
+  it("can sort by title", async () => {
+    expect.hasAssertions();
+
     render(
       <WatchlistEntityPage
         data={data}
@@ -101,7 +86,22 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+
+    expect(screen.getByTestId("movie-list")).toMatchSnapshot();
+  });
+
+  it("can sort by release date with oldest first", async () => {
+    expect.hasAssertions();
+
+    render(
+      <WatchlistEntityPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
+
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Release Date (Oldest First)"
     );
@@ -109,7 +109,9 @@ describe("/watchlist/directors/{slug}", () => {
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
 
-  it("can sort by release date with newest first", () => {
+  it("can sort by release date with newest first", async () => {
+    expect.hasAssertions();
+
     render(
       <WatchlistEntityPage
         data={data}
@@ -117,7 +119,7 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Release Date (Newest First)"
     );
@@ -125,7 +127,9 @@ describe("/watchlist/directors/{slug}", () => {
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with Best first", () => {
+  it("can sort by grade with Best first", async () => {
+    expect.hasAssertions();
+
     render(
       <WatchlistEntityPage
         data={data}
@@ -133,7 +137,7 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Best First)"
     );
@@ -141,7 +145,9 @@ describe("/watchlist/directors/{slug}", () => {
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with worst first", () => {
+  it("can sort by grade with worst first", async () => {
+    expect.hasAssertions();
+
     render(
       <WatchlistEntityPage
         data={data}
@@ -149,7 +155,7 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Worst First)"
     );
@@ -157,7 +163,9 @@ describe("/watchlist/directors/{slug}", () => {
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
 
-  it("can filter by release year", () => {
+  it("can filter by release year", async () => {
+    expect.hasAssertions();
+
     render(
       <WatchlistEntityPage
         data={data}
@@ -169,13 +177,15 @@ describe("/watchlist/directors/{slug}", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "1959");
-    userEvent.selectOptions(toInput, "1962");
+    await userEvent.selectOptions(fromInput, "1959");
+    await userEvent.selectOptions(toInput, "1962");
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
 
-  it("can view more titles", () => {
+  it("can view more titles", async () => {
+    expect.hasAssertions();
+
     render(
       <WatchlistEntityPage
         data={data}
@@ -183,7 +193,7 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    userEvent.click(screen.getByText("Show More"));
+    await userEvent.click(screen.getByText("Show More"));
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
