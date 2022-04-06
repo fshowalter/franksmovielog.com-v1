@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { act, render, screen, waitFor, within } from "@testing-library/react";
+import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import selectEvent from "react-select-event";
@@ -30,30 +30,30 @@ describe("/reviews/underseen/", () => {
     expect.hasAssertions();
     render(<UnderseenGemsPage data={data} />);
 
-    act(() => {
-      jest.useFakeTimers(); // For the debouced input
-      userEvent.type(screen.getByLabelText("Title"), "Arrebato");
-      jest.runOnlyPendingTimers(); // Flush the delay
-      jest.useRealTimers();
+    await act(async () => {
+      await userEvent.type(screen.getByLabelText("Title"), "Arrebato");
+      await new Promise((r) => setTimeout(r, 500));
     });
-
-    await waitFor(() => {
-      expect(screen.getByTestId("movies-list")).toMatchSnapshot();
-    });
-  });
-
-  it("can sort by title", () => {
-    render(<UnderseenGemsPage data={data} />);
-
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
-  it("can sort by release date with oldest first", () => {
+  it("can sort by title", async () => {
+    expect.hasAssertions();
+
     render(<UnderseenGemsPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+
+    expect(screen.getByTestId("movies-list")).toMatchSnapshot();
+  });
+
+  it("can sort by release date with oldest first", async () => {
+    expect.hasAssertions();
+
+    render(<UnderseenGemsPage data={data} />);
+
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Release Date (Oldest First)"
     );
@@ -61,10 +61,12 @@ describe("/reviews/underseen/", () => {
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
-  it("can sort by release date with newest first", () => {
+  it("can sort by release date with newest first", async () => {
+    expect.hasAssertions();
+
     render(<UnderseenGemsPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Release Date (Newest First)"
     );
@@ -72,10 +74,12 @@ describe("/reviews/underseen/", () => {
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with best first", () => {
+  it("can sort by grade with best first", async () => {
+    expect.hasAssertions();
+
     render(<UnderseenGemsPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Best First)"
     );
@@ -83,10 +87,12 @@ describe("/reviews/underseen/", () => {
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with worst first", () => {
+  it("can sort by grade with worst first", async () => {
+    expect.hasAssertions();
+
     render(<UnderseenGemsPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Worst First)"
     );
@@ -94,30 +100,34 @@ describe("/reviews/underseen/", () => {
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
-  it("can filter by release year", () => {
+  it("can filter by release year", async () => {
+    expect.hasAssertions();
+
     render(<UnderseenGemsPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Release Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "1987");
-    userEvent.selectOptions(toInput, "2013");
+    await userEvent.selectOptions(fromInput, "1987");
+    await userEvent.selectOptions(toInput, "2013");
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });
 
-  it("can filter by release year reversed", () => {
+  it("can filter by release year reversed", async () => {
+    expect.hasAssertions();
+
     render(<UnderseenGemsPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Release Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "1987");
-    userEvent.selectOptions(toInput, "2013");
-    userEvent.selectOptions(fromInput, "2009");
-    userEvent.selectOptions(toInput, "1989");
+    await userEvent.selectOptions(fromInput, "1987");
+    await userEvent.selectOptions(toInput, "2013");
+    await userEvent.selectOptions(fromInput, "2009");
+    await userEvent.selectOptions(toInput, "1989");
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });

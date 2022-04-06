@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { act, render, screen, waitFor } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import WatchlistEntityIndexPage, {
@@ -10,6 +10,7 @@ import data from "./WatchlistEntityIndexPage.fixtures";
 describe("/watchlist/{entityType}/", () => {
   it("can filter by name", async () => {
     expect.hasAssertions();
+
     render(
       <WatchlistEntityIndexPage
         data={data}
@@ -17,32 +18,17 @@ describe("/watchlist/{entityType}/", () => {
       />
     );
 
-    act(() => {
-      jest.useFakeTimers(); // For the debouced input
-      userEvent.type(screen.getByLabelText("Name"), "Dario Argento");
-      jest.runOnlyPendingTimers(); // Flush the delay
-      jest.useRealTimers();
+    await act(async () => {
+      await userEvent.type(screen.getByLabelText("Name"), "Dario Argento");
+      await new Promise((r) => setTimeout(r, 500));
     });
-
-    await waitFor(() => {
-      expect(screen.getByTestId("entity-list")).toMatchSnapshot();
-    });
-  });
-
-  it("can sort by name", () => {
-    render(
-      <WatchlistEntityIndexPage
-        data={data}
-        pageContext={{ entityType: EntityType.DIRECTOR }}
-      />
-    );
-
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Name");
 
     expect(screen.getByTestId("entity-list")).toMatchSnapshot();
   });
 
-  it("can sort by review count", () => {
+  it("can sort by name", async () => {
+    expect.hasAssertions();
+
     render(
       <WatchlistEntityIndexPage
         data={data}
@@ -50,7 +36,25 @@ describe("/watchlist/{entityType}/", () => {
       />
     );
 
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Review Count");
+    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Name");
+
+    expect(screen.getByTestId("entity-list")).toMatchSnapshot();
+  });
+
+  it("can sort by review count", async () => {
+    expect.hasAssertions();
+
+    render(
+      <WatchlistEntityIndexPage
+        data={data}
+        pageContext={{ entityType: EntityType.DIRECTOR }}
+      />
+    );
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Review Count"
+    );
 
     expect(screen.getByTestId("entity-list")).toMatchSnapshot();
   });
