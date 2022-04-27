@@ -14319,10 +14319,10 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.1.0.tgz#9bdc22c648cf8cf86dd23d32336a41cfb6475e3f"
   integrity sha512-G9absDWvhAWCV2gmF1zKud3OyC61nZDwWvBL2DApaVFogI07CprggiQAOOjvp2NRjYWFzPyu7vwtDrQFq8jeSA==
 
-typed-scss-modules@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-6.2.1.tgz#d25f1741991586064b0955643cefe4f072717ceb"
-  integrity sha512-kBBUORAC6n5lfe68xvE+Ma7xNNUrXxLTaPjag92i61VIoQlpbyQeZfrVGxarVDrHGlkVpANB+J4+1t3MjCrj4w==
+typed-scss-modules@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-6.3.0.tgz#c041ef0e75e47e65c92f50e834dea3818b0d59d4"
+  integrity sha512-0rwu3LyEtc7g3G7FP1RSxJMcApZ1JgsCkQClZ6+geQpIee1S7SAVIpgKYcbbdbNlhb4c/dAlzKVeLH44Nf1mHg==
   dependencies:
     bundle-require "^3.0.4"
     camelcase "^6.3.0"
