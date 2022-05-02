@@ -3,33 +3,17 @@
 
 .containerCss {
   display: grid;
-  grid-template-areas: ". list ." ". pagination .";
-  grid-template-columns:
-    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
-    minmax(var(--layout-grid-margin), 1fr);
-  margin-top: -1px;
-
-  @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "list" "pagination";
-    grid-template-columns: unset;
-  }
-
-  @media (min-width: breakpoints.$max) {
-    border-top: 0;
-  }
+  grid-template-areas: "list" "pagination";
 }
 
 .listCss {
   grid-area: list;
 
   @media (min-width: breakpoints.$desktop) {
-    // border-bottom: solid 1px var(--color-border-default);
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 calc(-1 * var(--layout-grid-margin));
     padding: layout.$spacer-7 0;
-
-    // row-gap: layout.$spacer-8;
   }
 
   @media (min-width: breakpoints.$max) {
@@ -39,14 +23,19 @@
 }
 
 .listItemCss {
+  &:nth-child(even) {
+    background-color: var(--color-bg-subtle);
+  }
+
+  display: grid;
+  grid-template-areas: ". article .";
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
+    minmax(var(--layout-grid-margin), 1fr);
+
   @media (min-width: breakpoints.$desktop) {
-    // border-bottom: solid 1px var(--color-border-default);
     display: flex;
     padding: layout.$spacer-7 layout.$spacer-8;
-
-    &:nth-child(even) {
-      background-color: var(--color-bg-subtle);
-    }
   }
 
   @media (min-width: breakpoints.$max) {
@@ -60,20 +49,11 @@
 
 .reviewCss {
   display: grid;
+  grid-area: article;
   grid-template-areas: ". . ." "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". border .";
   grid-template-columns: 1fr minmax(auto, 520px) 1fr;
   grid-template-rows: layout.$spacer-6 auto layout.$spacer-3 auto layout.$spacer-4 1fr layout.$spacer-4 auto layout.$spacer-6;
   position: relative;
-
-  &::after {
-    border-bottom: solid 1px var(--color-border-default);
-    content: "";
-    display: block;
-    grid-area: border;
-    height: layout.$spacer-6;
-    justify-self: center;
-    width: 75%;
-  }
 
   @media (min-width: breakpoints.$desktop) {
     align-items: start;
@@ -93,14 +73,14 @@
   display: block;
   grid-area: image;
   line-height: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4.57px;
 
   @media (min-width: breakpoints.$tablet) {
     margin-bottom: 4.5px;
   }
 
   @media (min-width: breakpoints.$max) {
-    margin-bottom: 1.75px;
+    margin-bottom: 0;
   }
 }
 
