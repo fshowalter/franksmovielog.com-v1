@@ -14,7 +14,7 @@ module.exports = {
     "<rootDir>.*/public",
     "/__fixtures__/",
   ],
-  transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
+  transformIgnorePatterns: [`node_modules/(?!(gatsby|gatsby-script)/)`],
   globals: {
     __PATH_PREFIX__: "",
   },
