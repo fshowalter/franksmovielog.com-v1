@@ -24,7 +24,6 @@ import {
   reviewHeaderCss,
   reviewYearCss,
   watchlistLinksCss,
-  wideCss,
 } from "./HomePage.module.scss";
 import Pagination from "./Pagination";
 
@@ -61,9 +60,6 @@ export default function HomePage({
         <ol className={listCss}>
           {updates.map((update, index) => {
             const review = update;
-            const isWide =
-              index === 0 ||
-              (index === updates.length - 1 && updates.length % 2 === 0);
             const listItemValue =
               pageContext.numberOfItems - pageContext.skip - index;
             const movie = update.reviewedMovie;
@@ -72,9 +68,9 @@ export default function HomePage({
               <li
                 key={review.frontmatter.sequence}
                 value={listItemValue}
-                className={`${listItemCss} ${isWide ? wideCss : ""}`}
+                className={`${listItemCss}`}
               >
-                <article className={`${reviewCss} ${isWide ? wideCss : ""}`}>
+                <article className={`${reviewCss}`}>
                   <Link
                     rel="canonical"
                     className={imageLinkCss}
