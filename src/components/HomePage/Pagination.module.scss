@@ -10,21 +10,20 @@
 
 .containerCss {
   align-items: baseline;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   font-feature-settings: "tnum";
   font-size: 18px;
-  justify-content: space-between;
+  justify-content: center;
   line-height: layout.$spacer-4;
   margin: 0 auto;
   max-width: 25rem;
   padding: layout.$spacer-6 0;
   white-space: nowrap;
-  width: 100%;
+  width: calc(100% - 2 * var(--layout-grid-margin));
 
   @media (min-width: breakpoints.$desktop) {
     font-size: 21px;
-    justify-content: center;
     max-width: unset;
   }
 
@@ -35,19 +34,13 @@
 
 .paginationLinkCss {
   color: var(--color-fg-accent);
-
-  @media (min-width: breakpoints.$desktop) {
-    margin-left: 1.5rem;
-  }
+  margin-left: 1.5rem;
 }
 
 .currentPageCss,
 .elipsisCss {
   color: var(--color-fg-sublte);
-
-  @media (min-width: breakpoints.$desktop) {
-    margin-left: 1.5rem;
-  }
+  margin-left: 1.5rem;
 }
 
 .elipsisCss {
