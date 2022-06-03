@@ -161,11 +161,11 @@ exports[`/ can render last page 1`] = `
           class="listCss"
         >
           <li
-            class="listItemCss wideCss"
+            class="listItemCss"
             value="2"
           >
             <article
-              class="reviewCss wideCss"
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -355,11 +355,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="1"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -506,11 +506,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="0"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -653,11 +653,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="-1"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -845,11 +845,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="-2"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -1044,11 +1044,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="-3"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -1232,11 +1232,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="-4"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -1420,11 +1420,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="-5"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -1561,11 +1561,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="-6"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -1758,11 +1758,11 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss wideCss"
+            class="listItemCss"
             value="-7"
           >
             <article
-              class="reviewCss wideCss"
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -2242,11 +2242,11 @@ exports[`/ renders 1`] = `
           class="listCss"
         >
           <li
-            class="listItemCss wideCss"
+            class="listItemCss"
             value="102"
           >
             <article
-              class="reviewCss wideCss"
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -2436,11 +2436,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="101"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -2587,11 +2587,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="100"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -2734,11 +2734,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="99"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -2926,11 +2926,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="98"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -3125,11 +3125,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="97"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -3313,11 +3313,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="96"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -3501,11 +3501,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="95"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -3642,11 +3642,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss "
+            class="listItemCss"
             value="94"
           >
             <article
-              class="reviewCss "
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
@@ -3839,11 +3839,11 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="listItemCss wideCss"
+            class="listItemCss"
             value="93"
           >
             <article
-              class="reviewCss wideCss"
+              class="reviewCss"
             >
               <a
                 class="imageLinkCss"
