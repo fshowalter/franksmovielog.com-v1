@@ -113,6 +113,7 @@ const gatsbyPluginManifest = {
 };
 
 const config: GatsbyConfig = {
+  jsxRuntime: "automatic",
   siteMetadata: siteMetadata,
   plugins: [
     gatsbyPluginPageCreator,
