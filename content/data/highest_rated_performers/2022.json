@@ -2,6 +2,39 @@
 "review_year": "2022",
 "highest_rated": [
 {
+"imdb_id": "nm0422514",
+"full_name": "Robert Jezek",
+"slug": null,
+"average_grade_value": 3.89,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1236,
+"grade_value": 4,
+"date": "2022-01-28",
+"title": "Event Horizon",
+"year": 1997,
+"slug": "event-horizon-1997"
+},
+{
+"sequence": 1277,
+"grade_value": 4,
+"date": "2022-05-29",
+"title": "Event Horizon",
+"year": 1997,
+"slug": "event-horizon-1997"
+},
+{
+"sequence": 1283,
+"grade_value": 3.67,
+"date": "2022-06-15",
+"title": "Casino Royale",
+"year": 2006,
+"slug": "casino-royale-2006"
+}
+]
+},
+{
 "imdb_id": "nm0377336",
 "full_name": "Aksel Hennie",
 "slug": null,
@@ -255,31 +288,6 @@
 "title": "Titane",
 "year": 2021,
 "slug": "titane-2021"
-}
-]
-},
-{
-"imdb_id": "nm0104114",
-"full_name": "Richard Brake",
-"slug": null,
-"average_grade_value": 2.5,
-"review_count": 2,
-"reviews": [
-{
-"sequence": 1231,
-"grade_value": 2.33,
-"date": "2022-01-17",
-"title": "3 from Hell",
-"year": 2019,
-"slug": "3-from-hell-2019"
-},
-{
-"sequence": 1268,
-"grade_value": 2.67,
-"date": "2022-03-31",
-"title": "Halloween II",
-"year": 2009,
-"slug": "halloween-ii-2009"
 }
 ]
 },

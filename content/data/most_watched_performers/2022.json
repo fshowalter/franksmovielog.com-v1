@@ -177,6 +177,41 @@
 ]
 },
 {
+"imdb_id": "nm0422514",
+"full_name": "Robert Jezek",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 1236,
+"venue": "HBO Max",
+"date": "2022-01-28",
+"title": "Event Horizon",
+"year": 1997,
+"slug": "event-horizon-1997",
+"imdb_id": "tt0119081"
+},
+{
+"sequence": 1277,
+"venue": "Prince Charles Cinema",
+"date": "2022-05-29",
+"title": "Event Horizon",
+"year": 1997,
+"slug": "event-horizon-1997",
+"imdb_id": "tt0119081"
+},
+{
+"sequence": 1283,
+"venue": "4k UHD Blu-ray",
+"date": "2022-06-15",
+"title": "Casino Royale",
+"year": 2006,
+"slug": "casino-royale-2006",
+"imdb_id": "tt0381061"
+}
+]
+},
+{
 "imdb_id": "nm0157900",
 "full_name": "Ching-Ho Wang",
 "slug": null,
@@ -277,32 +312,6 @@
 "year": 2021,
 "slug": "the-trip-2021",
 "imdb_id": "tt13109952"
-}
-]
-},
-{
-"imdb_id": "nm4469165",
-"full_name": "Garance Marillier",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1226,
-"venue": "Netflix",
-"date": "2022-01-09",
-"title": "Raw",
-"year": 2016,
-"slug": "raw-2016",
-"imdb_id": "tt4954522"
-},
-{
-"sequence": 1232,
-"venue": "iTunes",
-"date": "2022-01-20",
-"title": "Titane",
-"year": 2021,
-"slug": "titane-2021",
-"imdb_id": "tt10944760"
 }
 ]
 }
