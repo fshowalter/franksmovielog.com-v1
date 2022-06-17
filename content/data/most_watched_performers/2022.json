@@ -212,6 +212,41 @@
 ]
 },
 {
+"imdb_id": "nm0942482",
+"full_name": "Jeffrey Wright",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 1272,
+"venue": "HBO Max",
+"date": "2022-04-28",
+"title": "The Batman",
+"year": 2022,
+"slug": "the-batman-2022",
+"imdb_id": "tt1877830"
+},
+{
+"sequence": 1283,
+"venue": "4k UHD Blu-ray",
+"date": "2022-06-15",
+"title": "Casino Royale",
+"year": 2006,
+"slug": "casino-royale-2006",
+"imdb_id": "tt0381061"
+},
+{
+"sequence": 1284,
+"venue": "Amazon",
+"date": "2022-06-16",
+"title": "No Time to Die",
+"year": 2021,
+"slug": "no-time-to-die-2021",
+"imdb_id": "tt2382320"
+}
+]
+},
+{
 "imdb_id": "nm0157900",
 "full_name": "Ching-Ho Wang",
 "slug": null,
@@ -286,32 +321,6 @@
 "year": 1984,
 "slug": "the-eight-diagram-pole-fighter-1984",
 "imdb_id": "tt0086606"
-}
-]
-},
-{
-"imdb_id": "nm0377336",
-"full_name": "Aksel Hennie",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1225,
-"venue": "Blu-ray",
-"date": "2022-01-05",
-"title": "Headhunters",
-"year": 2011,
-"slug": "jo-nesbos-headhunters-2011",
-"imdb_id": "tt1614989"
-},
-{
-"sequence": 1243,
-"venue": "Netflix",
-"date": "2022-02-03",
-"title": "The Trip",
-"year": 2021,
-"slug": "the-trip-2021",
-"imdb_id": "tt13109952"
 }
 ]
 }
