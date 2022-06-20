@@ -1,6 +1,5 @@
 import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
 import Layout from "../Layout";
 import PageTitle from "../PageTitle";
 import Seo from "../Seo";
@@ -139,6 +138,7 @@ export default function StatsPage({
               movieCount={viewingStats.movieCount}
               newMovieCount={viewingStats.newMovieCount}
               reviewCount={reviewStats?.reviewCount}
+              watchlistTitlesReviewed={reviewStats?.watchlistTitlesReviewed}
             />
             <MostWatchedMovies movies={movies.mostWatched} />
             <ByReleaseYear decades={decade.stats} />
@@ -199,6 +199,7 @@ interface PageQueryResult {
   };
   reviewStats: {
     reviewCount: number;
+    watchlistTitlesReviewed: number;
   } | null;
   decade: {
     stats: DecadeStat[];
@@ -263,6 +264,7 @@ export const pageQuery = graphql`
     }
     reviewStats: reviewStatsJson(review_year: { eq: $yearScope }) {
       reviewCount: total_review_count
+      watchlistTitlesReviewed: watchlist_titles_reviewed
     }
     decade: viewingCountsForDecadesJson(viewing_year: { eq: $yearScope }) {
       stats {
