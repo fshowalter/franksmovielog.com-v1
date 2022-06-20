@@ -1,4 +1,3 @@
-import React from "react";
 import {
   calloutContainerCss,
   containerCss,
@@ -26,11 +25,13 @@ export default function Callouts({
   movieCount,
   newMovieCount,
   reviewCount,
+  watchlistTitlesReviewed,
 }: {
   viewingCount: number;
   movieCount: number;
   newMovieCount: number;
   reviewCount: number | undefined;
+  watchlistTitlesReviewed: number | undefined;
 }): JSX.Element {
   return (
     <div className={containerCss}>
@@ -40,6 +41,9 @@ export default function Callouts({
         <Callout label="New Movies" stat={newMovieCount} />
       )}
       {reviewCount && <Callout label="Reviews" stat={reviewCount} />}
+      {watchlistTitlesReviewed && (
+        <Callout label="From Watchlist" stat={watchlistTitlesReviewed} />
+      )}
     </div>
   );
 }

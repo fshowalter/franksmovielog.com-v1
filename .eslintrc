@@ -74,7 +74,8 @@
             "controlComponents": ["Select"],
             "depth": 3
           }
-        ]
+        ],
+        "react/react-in-jsx-scope": "off"
       },
       "settings": {
         "react": {
