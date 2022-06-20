@@ -656,8 +656,8 @@
 "imdb_id": "nm0387987",
 "full_name": "Kane Hodder",
 "slug": null,
-"average_grade_value": 2.9574999999999996,
-"review_count": 8,
+"average_grade_value": 2.9255555555555555,
+"review_count": 9,
 "reviews": [
 {
 "sequence": 871,
@@ -722,6 +722,14 @@
 "title": "Jason Goes to Hell: The Final Friday",
 "year": 1993,
 "slug": "jason-goes-to-hell-the-final-friday-1993"
+},
+{
+"sequence": 1285,
+"grade_value": 2.67,
+"date": "2022-06-18",
+"title": "Frozen",
+"year": 2010,
+"slug": "frozen-2010"
 }
 ]
 },

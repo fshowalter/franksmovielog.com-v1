@@ -87,23 +87,6 @@
 ]
 },
 {
-"imdb_id": "nm0939236",
-"full_name": "Manfred Wong",
-"slug": null,
-"average_grade_value": 4.67,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1229,
-"grade_value": 4.67,
-"date": "2022-01-13",
-"title": "Duel to the Death",
-"year": 1983,
-"slug": "duel-to-the-death-1983"
-}
-]
-},
-{
 "imdb_id": "nm0252155",
 "full_name": "Philip Eisner",
 "slug": null,
@@ -374,6 +357,31 @@
 "title": "A Nightmare on Elm Street",
 "year": 1984,
 "slug": "a-nightmare-on-elm-street-1984"
+}
+]
+},
+{
+"imdb_id": "nm0000343",
+"full_name": "David Cronenberg",
+"slug": null,
+"average_grade_value": 2.335,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1246,
+"grade_value": 3,
+"date": "2022-02-08",
+"title": "Fast Company",
+"year": 1979,
+"slug": "fast-company-1979"
+},
+{
+"sequence": 1286,
+"grade_value": 1.67,
+"date": "2022-06-18",
+"title": "The Brood",
+"year": 1979,
+"slug": "the-brood-1979"
 }
 ]
 },
