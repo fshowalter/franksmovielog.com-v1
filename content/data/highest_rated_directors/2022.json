@@ -260,6 +260,31 @@
 ]
 },
 {
+"imdb_id": "nm0000343",
+"full_name": "David Cronenberg",
+"slug": "david-cronenberg",
+"average_grade_value": 2.335,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1246,
+"grade_value": 3,
+"date": "2022-02-08",
+"title": "Fast Company",
+"year": 1979,
+"slug": "fast-company-1979"
+},
+{
+"sequence": 1286,
+"grade_value": 1.67,
+"date": "2022-06-18",
+"title": "The Brood",
+"year": 1979,
+"slug": "the-brood-1979"
+}
+]
+},
+{
 "imdb_id": "nm0950109",
 "full_name": "Terence Young",
 "slug": null,
@@ -375,23 +400,6 @@
 "title": "The Trip",
 "year": 2021,
 "slug": "the-trip-2021"
-}
-]
-},
-{
-"imdb_id": "nm2830283",
-"full_name": "Kevin McManus",
-"slug": null,
-"average_grade_value": 2.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1244,
-"grade_value": 2.33,
-"date": "2022-02-06",
-"title": "The Block Island Sound",
-"year": 2020,
-"slug": "the-block-island-sound-2020"
 }
 ]
 },
