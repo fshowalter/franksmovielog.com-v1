@@ -2582,7 +2582,7 @@
 "venue": "TCM HD",
 "sort_title": "Jewel Robbery (1932)",
 "year": 1932,
-"slug": null,
+"slug": "jewel-robbery-1932",
 "grade": null,
 "genres": [
 "Comedy",
@@ -9913,7 +9913,7 @@
 "venue": "TCM",
 "sort_title": "Haunted Gold (1932)",
 "year": 1932,
-"slug": null,
+"slug": "haunted-gold-1932",
 "grade": null,
 "genres": [
 "Horror",
@@ -9968,7 +9968,7 @@
 "venue": "TCM",
 "sort_title": "Ride Him, Cowboy (1932)",
 "year": 1932,
-"slug": null,
+"slug": "ride-him-cowboy-1932",
 "grade": null,
 "genres": [
 "Action",
@@ -22937,6 +22937,60 @@
 "genres": [
 "Horror",
 "Sci-Fi"
+]
+},
+{
+"imdb_id": "tt0023396",
+"title": "Ride Him, Cowboy",
+"release_date": "1932-08-27",
+"viewing_date": "2022-06-19",
+"viewing_year": "2022",
+"sequence": 1287,
+"venue": "iTunes",
+"sort_title": "Ride Him, Cowboy (1932)",
+"year": 1932,
+"slug": "ride-him-cowboy-1932",
+"grade": "D",
+"genres": [
+"Action",
+"Romance",
+"Western"
+]
+},
+{
+"imdb_id": "tt0022981",
+"title": "Haunted Gold",
+"release_date": "1932-12-17",
+"viewing_date": "2022-06-19",
+"viewing_year": "2022",
+"sequence": 1288,
+"venue": "iTunes",
+"sort_title": "Haunted Gold (1932)",
+"year": 1932,
+"slug": "haunted-gold-1932",
+"grade": "F",
+"genres": [
+"Horror",
+"Mystery",
+"Western"
+]
+},
+{
+"imdb_id": "tt0023074",
+"title": "Jewel Robbery",
+"release_date": "1932-07-08",
+"viewing_date": "2022-06-19",
+"viewing_year": "2022",
+"sequence": 1289,
+"venue": "DVD",
+"sort_title": "Jewel Robbery (1932)",
+"year": 1932,
+"slug": "jewel-robbery-1932",
+"grade": "C-",
+"genres": [
+"Comedy",
+"Crime",
+"Romance"
 ]
 }
 ]

@@ -5,7 +5,7 @@
 "imdb_id": "nm0000078",
 "full_name": "John Wayne",
 "slug": "john-wayne",
-"viewing_count": 45,
+"viewing_count": 47,
 "viewings": [
 {
 "sequence": 52,
@@ -238,7 +238,7 @@
 "date": "2016-08-22",
 "title": "Haunted Gold",
 "year": 1932,
-"slug": null,
+"slug": "haunted-gold-1932",
 "imdb_id": "tt0022981"
 },
 {
@@ -247,7 +247,7 @@
 "date": "2016-09-04",
 "title": "Ride Him, Cowboy",
 "year": 1932,
-"slug": null,
+"slug": "ride-him-cowboy-1932",
 "imdb_id": "tt0023396"
 },
 {
@@ -411,6 +411,24 @@
 "year": 1932,
 "slug": "two-fisted-law-1932",
 "imdb_id": "tt0023631"
+},
+{
+"sequence": 1287,
+"venue": "iTunes",
+"date": "2022-06-19",
+"title": "Ride Him, Cowboy",
+"year": 1932,
+"slug": "ride-him-cowboy-1932",
+"imdb_id": "tt0023396"
+},
+{
+"sequence": 1288,
+"venue": "iTunes",
+"date": "2022-06-19",
+"title": "Haunted Gold",
+"year": 1932,
+"slug": "haunted-gold-1932",
+"imdb_id": "tt0022981"
 }
 ]
 },
@@ -1118,7 +1136,7 @@
 "imdb_id": "nm0001635",
 "full_name": "William Powell",
 "slug": "william-powell",
-"viewing_count": 30,
+"viewing_count": 31,
 "viewings": [
 {
 "sequence": 11,
@@ -1180,7 +1198,7 @@
 "date": "2012-04-06",
 "title": "Jewel Robbery",
 "year": 1932,
-"slug": null,
+"slug": "jewel-robbery-1932",
 "imdb_id": "tt0023074"
 },
 {
@@ -1389,6 +1407,15 @@
 "year": 1932,
 "slug": "high-pressure-1932",
 "imdb_id": "tt0023007"
+},
+{
+"sequence": 1289,
+"venue": "DVD",
+"date": "2022-06-19",
+"title": "Jewel Robbery",
+"year": 1932,
+"slug": "jewel-robbery-1932",
+"imdb_id": "tt0023074"
 }
 ]
 },

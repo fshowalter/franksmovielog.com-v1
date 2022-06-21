@@ -737,8 +737,8 @@
 "imdb_id": "nm0001635",
 "full_name": "William Powell",
 "slug": "william-powell",
-"average_grade_value": 2.8564285714285718,
-"review_count": 14,
+"average_grade_value": 2.8440000000000003,
+"review_count": 15,
 "reviews": [
 {
 "sequence": 841,
@@ -851,6 +851,14 @@
 "title": "High Pressure",
 "year": 1932,
 "slug": "high-pressure-1932"
+},
+{
+"sequence": 1289,
+"grade_value": 2.67,
+"date": "2022-06-19",
+"title": "Jewel Robbery",
+"year": 1932,
+"slug": "jewel-robbery-1932"
 }
 ]
 },
@@ -1187,79 +1195,6 @@
 ]
 },
 {
-"imdb_id": "nm0000078",
-"full_name": "John Wayne",
-"slug": "john-wayne",
-"average_grade_value": 2.58375,
-"review_count": 8,
-"reviews": [
-{
-"sequence": 863,
-"grade_value": 3.67,
-"date": "2020-08-29",
-"title": "The Big Trail",
-"year": 1930,
-"slug": "the-big-trail-1930"
-},
-{
-"sequence": 991,
-"grade_value": 2.67,
-"date": "2021-01-20",
-"title": "Arizona",
-"year": 1931,
-"slug": "arizona-1931"
-},
-{
-"sequence": 1001,
-"grade_value": 5.33,
-"date": "2021-01-29",
-"title": "Rio Bravo",
-"year": 1959,
-"slug": "rio-bravo-1959"
-},
-{
-"sequence": 1045,
-"grade_value": 2.33,
-"date": "2021-03-12",
-"title": "The Range Feud",
-"year": 1931,
-"slug": "the-range-feud-1931"
-},
-{
-"sequence": 1051,
-"grade_value": 1,
-"date": "2021-03-16",
-"title": "Maker of Men",
-"year": 1931,
-"slug": "maker-of-men-1931"
-},
-{
-"sequence": 1143,
-"grade_value": 2.67,
-"date": "2021-08-11",
-"title": "Texas Cyclone",
-"year": 1932,
-"slug": "texas-cyclone-1932"
-},
-{
-"sequence": 1196,
-"grade_value": 2,
-"date": "2021-11-28",
-"title": "The Big Stampede",
-"year": 1932,
-"slug": "the-big-stampede-1932"
-},
-{
-"sequence": 1221,
-"grade_value": 1,
-"date": "2021-12-22",
-"title": "Two-Fisted Law",
-"year": 1932,
-"slug": "two-fisted-law-1932"
-}
-]
-},
-{
 "imdb_id": "nm0000509",
 "full_name": "Bela Lugosi",
 "slug": "bela-lugosi",
@@ -1329,6 +1264,95 @@
 "title": "Murders in the Rue Morgue",
 "year": 1932,
 "slug": "murders-in-the-rue-morgue-1932"
+}
+]
+},
+{
+"imdb_id": "nm0000078",
+"full_name": "John Wayne",
+"slug": "john-wayne",
+"average_grade_value": 2.367,
+"review_count": 10,
+"reviews": [
+{
+"sequence": 863,
+"grade_value": 3.67,
+"date": "2020-08-29",
+"title": "The Big Trail",
+"year": 1930,
+"slug": "the-big-trail-1930"
+},
+{
+"sequence": 991,
+"grade_value": 2.67,
+"date": "2021-01-20",
+"title": "Arizona",
+"year": 1931,
+"slug": "arizona-1931"
+},
+{
+"sequence": 1001,
+"grade_value": 5.33,
+"date": "2021-01-29",
+"title": "Rio Bravo",
+"year": 1959,
+"slug": "rio-bravo-1959"
+},
+{
+"sequence": 1045,
+"grade_value": 2.33,
+"date": "2021-03-12",
+"title": "The Range Feud",
+"year": 1931,
+"slug": "the-range-feud-1931"
+},
+{
+"sequence": 1051,
+"grade_value": 1,
+"date": "2021-03-16",
+"title": "Maker of Men",
+"year": 1931,
+"slug": "maker-of-men-1931"
+},
+{
+"sequence": 1143,
+"grade_value": 2.67,
+"date": "2021-08-11",
+"title": "Texas Cyclone",
+"year": 1932,
+"slug": "texas-cyclone-1932"
+},
+{
+"sequence": 1196,
+"grade_value": 2,
+"date": "2021-11-28",
+"title": "The Big Stampede",
+"year": 1932,
+"slug": "the-big-stampede-1932"
+},
+{
+"sequence": 1221,
+"grade_value": 1,
+"date": "2021-12-22",
+"title": "Two-Fisted Law",
+"year": 1932,
+"slug": "two-fisted-law-1932"
+},
+{
+"sequence": 1287,
+"grade_value": 2,
+"date": "2022-06-19",
+"title": "Ride Him, Cowboy",
+"year": 1932,
+"slug": "ride-him-cowboy-1932"
+},
+{
+"sequence": 1288,
+"grade_value": 1,
+"date": "2022-06-19",
+"title": "Haunted Gold",
+"year": 1932,
+"slug": "haunted-gold-1932"
 }
 ]
 },
