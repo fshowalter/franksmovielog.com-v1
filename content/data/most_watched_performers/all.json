@@ -1136,7 +1136,7 @@
 "imdb_id": "nm0001635",
 "full_name": "William Powell",
 "slug": "william-powell",
-"viewing_count": 30,
+"viewing_count": 31,
 "viewings": [
 {
 "sequence": 11,
@@ -1198,7 +1198,7 @@
 "date": "2012-04-06",
 "title": "Jewel Robbery",
 "year": 1932,
-"slug": null,
+"slug": "jewel-robbery-1932",
 "imdb_id": "tt0023074"
 },
 {
@@ -1407,6 +1407,15 @@
 "year": 1932,
 "slug": "high-pressure-1932",
 "imdb_id": "tt0023007"
+},
+{
+"sequence": 1289,
+"venue": "DVD",
+"date": "2022-06-19",
+"title": "Jewel Robbery",
+"year": 1932,
+"slug": "jewel-robbery-1932",
+"imdb_id": "tt0023074"
 }
 ]
 },
