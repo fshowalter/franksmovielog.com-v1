@@ -7462,10 +7462,10 @@ functions-have-names@^1.2.2:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
-gatsby-cli@^4.15.0, gatsby-cli@^4.17.0:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-4.17.0.tgz#38bd743cf24c0b9bf20d097479809c0aee4faf03"
-  integrity sha512-x1oxUVSWYEDxYl8sNTDTakMnCYKIbjwIAfGBhp1v3wK8WvqKz2+ICho6vvd2rXSkGGbwAg/gJ5g4/p78WOdRLw==
+gatsby-cli@^4.17.0, gatsby-cli@^4.17.1:
+  version "4.17.1"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-4.17.1.tgz#e7fc847b6cad9580012aaac9dc79e5a1b6275630"
+  integrity sha512-yLNRGKo8vyeiqKNTH5MkE0Q3AF6Un1v3MVlXzvoyRNs1DIHwkkZ22jGOB64/KIIR/o2cjRsrKJNCVjGV7qNnzw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
