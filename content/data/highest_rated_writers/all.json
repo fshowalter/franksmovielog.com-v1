@@ -616,8 +616,8 @@
 "imdb_id": "nm0629580",
 "full_name": "Dudley Nichols",
 "slug": null,
-"average_grade_value": 2.83,
-"review_count": 4,
+"average_grade_value": 2.864,
+"review_count": 5,
 "reviews": [
 {
 "sequence": 867,
@@ -650,6 +650,14 @@
 "title": "Seas Beneath",
 "year": 1931,
 "slug": "seas-beneath-1931"
+},
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
 }
 ]
 },
