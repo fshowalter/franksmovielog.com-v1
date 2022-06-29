@@ -70,23 +70,6 @@
 ]
 },
 {
-"imdb_id": "nm0481681",
-"full_name": "David Lai",
-"slug": null,
-"average_grade_value": 4.67,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1229,
-"grade_value": 4.67,
-"date": "2022-01-13",
-"title": "Duel to the Death",
-"year": 1983,
-"slug": "duel-to-the-death-1983"
-}
-]
-},
-{
 "imdb_id": "nm0252155",
 "full_name": "Philip Eisner",
 "slug": null,
@@ -175,6 +158,31 @@
 "title": "Halloween Kills",
 "year": 2021,
 "slug": "halloween-kills-2021"
+}
+]
+},
+{
+"imdb_id": "nm0629580",
+"full_name": "Dudley Nichols",
+"slug": null,
+"average_grade_value": 3.0,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
+},
+{
+"sequence": 1293,
+"grade_value": 3,
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935"
 }
 ]
 },
