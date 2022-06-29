@@ -892,8 +892,8 @@
 "imdb_id": "nm0000406",
 "full_name": "John Ford",
 "slug": "john-ford",
-"average_grade_value": 2.474285714285714,
-"review_count": 7,
+"average_grade_value": 2.54,
+"review_count": 8,
 "reviews": [
 {
 "sequence": 840,
@@ -950,6 +950,14 @@
 "title": "Arrowsmith",
 "year": 1931,
 "slug": "arrowsmith-1931"
+},
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
 }
 ]
 },
