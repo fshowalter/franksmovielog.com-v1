@@ -153,6 +153,31 @@
 ]
 },
 {
+"imdb_id": "nm0000406",
+"full_name": "John Ford",
+"slug": "john-ford",
+"average_grade_value": 3.0,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
+},
+{
+"sequence": 1293,
+"grade_value": 3,
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935"
+}
+]
+},
+{
 "imdb_id": "nm0957772",
 "full_name": "Rob Zombie",
 "slug": null,
@@ -383,23 +408,6 @@
 "title": "Pig",
 "year": 2021,
 "slug": "pig-2021"
-}
-]
-},
-{
-"imdb_id": "nm2482088",
-"full_name": "Tommy Wirkola",
-"slug": null,
-"average_grade_value": 2.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1243,
-"grade_value": 2.33,
-"date": "2022-02-03",
-"title": "The Trip",
-"year": 2021,
-"slug": "the-trip-2021"
 }
 ]
 },
