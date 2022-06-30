@@ -613,63 +613,6 @@
 ]
 },
 {
-"imdb_id": "nm0629580",
-"full_name": "Dudley Nichols",
-"slug": null,
-"average_grade_value": 2.8866666666666667,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 867,
-"grade_value": 2.33,
-"date": "2020-09-11",
-"title": "Born Reckless",
-"year": 1930,
-"slug": "born-reckless-1930"
-},
-{
-"sequence": 868,
-"grade_value": 3.33,
-"date": "2020-09-11",
-"title": "Men Without Women",
-"year": 1930,
-"slug": "men-without-women-1930"
-},
-{
-"sequence": 926,
-"grade_value": 3.33,
-"date": "2020-11-26",
-"title": "The Black Camel",
-"year": 1931,
-"slug": "the-black-camel-1931"
-},
-{
-"sequence": 975,
-"grade_value": 2.33,
-"date": "2021-01-07",
-"title": "Seas Beneath",
-"year": 1931,
-"slug": "seas-beneath-1931"
-},
-{
-"sequence": 1292,
-"grade_value": 3,
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"slug": "pilgrimage-1933"
-},
-{
-"sequence": 1293,
-"grade_value": 3,
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"slug": "steamboat-round-the-bend-1935"
-}
-]
-},
-{
 "imdb_id": "nm0000361",
 "full_name": "Brian De Palma",
 "slug": null,
@@ -934,6 +877,71 @@
 "title": "Halloween II",
 "year": 2009,
 "slug": "halloween-ii-2009"
+}
+]
+},
+{
+"imdb_id": "nm0629580",
+"full_name": "Dudley Nichols",
+"slug": null,
+"average_grade_value": 2.617142857142857,
+"review_count": 7,
+"reviews": [
+{
+"sequence": 867,
+"grade_value": 2.33,
+"date": "2020-09-11",
+"title": "Born Reckless",
+"year": 1930,
+"slug": "born-reckless-1930"
+},
+{
+"sequence": 868,
+"grade_value": 3.33,
+"date": "2020-09-11",
+"title": "Men Without Women",
+"year": 1930,
+"slug": "men-without-women-1930"
+},
+{
+"sequence": 926,
+"grade_value": 3.33,
+"date": "2020-11-26",
+"title": "The Black Camel",
+"year": 1931,
+"slug": "the-black-camel-1931"
+},
+{
+"sequence": 975,
+"grade_value": 2.33,
+"date": "2021-01-07",
+"title": "Seas Beneath",
+"year": 1931,
+"slug": "seas-beneath-1931"
+},
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
+},
+{
+"sequence": 1293,
+"grade_value": 3,
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935"
+},
+{
+"sequence": 1294,
+"grade_value": 1,
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936"
 }
 ]
 },

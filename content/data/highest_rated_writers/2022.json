@@ -162,31 +162,6 @@
 ]
 },
 {
-"imdb_id": "nm0629580",
-"full_name": "Dudley Nichols",
-"slug": null,
-"average_grade_value": 3.0,
-"review_count": 2,
-"reviews": [
-{
-"sequence": 1292,
-"grade_value": 3,
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"slug": "pilgrimage-1933"
-},
-{
-"sequence": 1293,
-"grade_value": 3,
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"slug": "steamboat-round-the-bend-1935"
-}
-]
-},
-{
 "imdb_id": "nm0000361",
 "full_name": "Brian De Palma",
 "slug": null,
@@ -390,6 +365,39 @@
 "title": "The Brood",
 "year": 1979,
 "slug": "the-brood-1979"
+}
+]
+},
+{
+"imdb_id": "nm0629580",
+"full_name": "Dudley Nichols",
+"slug": null,
+"average_grade_value": 2.3333333333333335,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
+},
+{
+"sequence": 1293,
+"grade_value": 3,
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935"
+},
+{
+"sequence": 1294,
+"grade_value": 1,
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936"
 }
 ]
 },
