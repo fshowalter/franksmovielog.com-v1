@@ -892,8 +892,8 @@
 "imdb_id": "nm0000406",
 "full_name": "John Ford",
 "slug": "john-ford",
-"average_grade_value": 2.591111111111111,
-"review_count": 9,
+"average_grade_value": 2.432,
+"review_count": 10,
 "reviews": [
 {
 "sequence": 840,
@@ -966,6 +966,14 @@
 "title": "Steamboat Round the Bend",
 "year": 1935,
 "slug": "steamboat-round-the-bend-1935"
+},
+{
+"sequence": 1294,
+"grade_value": 1,
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936"
 }
 ]
 },
