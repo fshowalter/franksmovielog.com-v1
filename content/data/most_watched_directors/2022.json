@@ -55,6 +55,50 @@
 ]
 },
 {
+"imdb_id": "nm0000406",
+"full_name": "John Ford",
+"slug": "john-ford",
+"viewing_count": 4,
+"viewings": [
+{
+"sequence": 1292,
+"venue": "Criterion Channel",
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933",
+"imdb_id": "tt0024453"
+},
+{
+"sequence": 1293,
+"venue": "Criterion Channel",
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935",
+"imdb_id": "tt0027042"
+},
+{
+"sequence": 1294,
+"venue": "Criterion Channel",
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936",
+"imdb_id": "tt0028112"
+},
+{
+"sequence": 1295,
+"venue": "Criterion Channel",
+"date": "2022-06-29",
+"title": "Doctor Bull",
+"year": 1933,
+"slug": "doctor-bull-1933",
+"imdb_id": "tt0023955"
+}
+]
+},
+{
 "imdb_id": "nm0957772",
 "full_name": "Rob Zombie",
 "slug": null,
@@ -121,41 +165,6 @@
 "year": 1984,
 "slug": "body-double-1984",
 "imdb_id": "tt0086984"
-}
-]
-},
-{
-"imdb_id": "nm0000406",
-"full_name": "John Ford",
-"slug": "john-ford",
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 1292,
-"venue": "Criterion Channel",
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"slug": "pilgrimage-1933",
-"imdb_id": "tt0024453"
-},
-{
-"sequence": 1293,
-"venue": "Criterion Channel",
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"slug": "steamboat-round-the-bend-1935",
-"imdb_id": "tt0027042"
-},
-{
-"sequence": 1294,
-"venue": "Criterion Channel",
-"date": "2022-06-27",
-"title": "The Plough and the Stars",
-"year": 1936,
-"slug": "the-plough-and-the-stars-1936",
-"imdb_id": "tt0028112"
 }
 ]
 },
