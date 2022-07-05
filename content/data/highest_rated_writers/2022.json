@@ -145,6 +145,31 @@
 ]
 },
 {
+"imdb_id": "nm0001220",
+"full_name": "Ian Fleming",
+"slug": null,
+"average_grade_value": 3.0,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1283,
+"grade_value": 3.67,
+"date": "2022-06-15",
+"title": "Casino Royale",
+"year": 2006,
+"slug": "casino-royale-2006"
+},
+{
+"sequence": 1296,
+"grade_value": 2.33,
+"date": "2022-07-01",
+"title": "Live and Let Die",
+"year": 1973,
+"slug": "live-and-let-die-1973"
+}
+]
+},
+{
 "imdb_id": "nm0000361",
 "full_name": "Brian De Palma",
 "slug": null,
@@ -429,23 +454,6 @@
 {
 "imdb_id": "nm0557398",
 "full_name": "Christopher Massie",
-"slug": null,
-"average_grade_value": 2.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1227,
-"grade_value": 2.33,
-"date": "2022-01-10",
-"title": "Corridor of Mirrors",
-"year": 1948,
-"slug": "corridor-of-mirrors-1948"
-}
-]
-},
-{
-"imdb_id": "nm0739704",
-"full_name": "Edana Romney",
 "slug": null,
 "average_grade_value": 2.33,
 "review_count": 1,
