@@ -5,7 +5,7 @@
 "imdb_id": "nm0000375",
 "full_name": "Robert Downey Jr.",
 "slug": null,
-"average_grade_value": 4.264,
+"average_grade_value": 4.132,
 "review_count": 5,
 "reviews": [
 {
@@ -26,7 +26,7 @@
 },
 {
 "sequence": 865,
-"grade_value": 3.33,
+"grade_value": 2.67,
 "date": "2020-09-05",
 "title": "Spider-Man: Homecoming",
 "year": 2017,
@@ -54,7 +54,7 @@
 "imdb_id": "nm0174403",
 "full_name": "Kerry Condon",
 "slug": null,
-"average_grade_value": 4.264,
+"average_grade_value": 4.132,
 "review_count": 5,
 "reviews": [
 {
@@ -75,7 +75,7 @@
 },
 {
 "sequence": 865,
-"grade_value": 3.33,
+"grade_value": 2.67,
 "date": "2020-09-05",
 "title": "Spider-Man: Homecoming",
 "year": 2017,
@@ -103,7 +103,7 @@
 "imdb_id": "nm0262635",
 "full_name": "Chris Evans",
 "slug": null,
-"average_grade_value": 4.264,
+"average_grade_value": 4.132,
 "review_count": 5,
 "reviews": [
 {
@@ -124,7 +124,7 @@
 },
 {
 "sequence": 865,
-"grade_value": 3.33,
+"grade_value": 2.67,
 "date": "2020-09-05",
 "title": "Spider-Man: Homecoming",
 "year": 2017,
@@ -198,28 +198,12 @@
 ]
 },
 {
-"imdb_id": "nm1107001",
-"full_name": "Anthony Mackie",
+"imdb_id": "nm4043618",
+"full_name": "Tom Holland",
 "slug": null,
-"average_grade_value": 4.064,
-"review_count": 5,
+"average_grade_value": 3.8316666666666657,
+"review_count": 6,
 "reviews": [
-{
-"sequence": 839,
-"grade_value": 3.33,
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"slug": "avengers-age-of-ultron-2015"
-},
-{
-"sequence": 842,
-"grade_value": 2.33,
-"date": "2020-07-18",
-"title": "Ant-Man",
-"year": 2015,
-"slug": "ant-man-2015"
-},
 {
 "sequence": 844,
 "grade_value": 4.33,
@@ -227,6 +211,14 @@
 "title": "Captain America: Civil War",
 "year": 2016,
 "slug": "captain-america-civil-war-2016"
+},
+{
+"sequence": 865,
+"grade_value": 2.67,
+"date": "2020-09-05",
+"title": "Spider-Man: Homecoming",
+"year": 2017,
+"slug": "spider-man-homecoming-2017"
 },
 {
 "sequence": 893,
@@ -243,6 +235,22 @@
 "title": "Avengers: Endgame",
 "year": 2019,
 "slug": "avengers-endgame-2019"
+},
+{
+"sequence": 921,
+"grade_value": 2.33,
+"date": "2020-11-21",
+"title": "Spider-Man: Far from Home",
+"year": 2019,
+"slug": "spider-man-far-from-home-2019"
+},
+{
+"sequence": 1297,
+"grade_value": 3.33,
+"date": "2022-07-02",
+"title": "Spider-Man: No Way Home",
+"year": 2021,
+"slug": "spider-man-no-way-home-2021"
 }
 ]
 },

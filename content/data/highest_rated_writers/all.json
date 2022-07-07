@@ -51,47 +51,6 @@
 ]
 },
 {
-"imdb_id": "nm0276169",
-"full_name": "Tom Holland",
-"slug": null,
-"average_grade_value": 4.0,
-"review_count": 4,
-"reviews": [
-{
-"sequence": 907,
-"grade_value": 5.33,
-"date": "2020-10-31",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985"
-},
-{
-"sequence": 1052,
-"grade_value": 2.67,
-"date": "2021-03-17",
-"title": "Child's Play",
-"year": 1988,
-"slug": "childs-play-1988"
-},
-{
-"sequence": 1168,
-"grade_value": 5.33,
-"date": "2021-09-28",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985"
-},
-{
-"sequence": 1175,
-"grade_value": 2.67,
-"date": "2021-10-05",
-"title": "Child's Play",
-"year": 2019,
-"slug": "childs-play-2019"
-}
-]
-},
-{
 "imdb_id": "nm0001328",
 "full_name": "Howard Hawks",
 "slug": null,
@@ -129,47 +88,6 @@
 "title": "Scarface",
 "year": 1983,
 "slug": "scarface-1983"
-}
-]
-},
-{
-"imdb_id": "nm0287124",
-"full_name": "Garrett Fort",
-"slug": null,
-"average_grade_value": 3.5825,
-"review_count": 4,
-"reviews": [
-{
-"sequence": 880,
-"grade_value": 4.67,
-"date": "2020-10-04",
-"title": "Dracula",
-"year": 1931,
-"slug": "dracula-1931"
-},
-{
-"sequence": 967,
-"grade_value": 2,
-"date": "2021-01-01",
-"title": "Outside the Law",
-"year": 1930,
-"slug": "outside-the-law-1930"
-},
-{
-"sequence": 1066,
-"grade_value": 3.33,
-"date": "2021-03-28",
-"title": "Dr\u00e1cula",
-"year": 1931,
-"slug": "dracula-1931-spanish"
-},
-{
-"sequence": 1087,
-"grade_value": 4.33,
-"date": "2021-04-20",
-"title": "Frankenstein",
-"year": 1931,
-"slug": "frankenstein-1931"
 }
 ]
 },
@@ -942,6 +860,88 @@
 "title": "The Plough and the Stars",
 "year": 1936,
 "slug": "the-plough-and-the-stars-1936"
+}
+]
+},
+{
+"imdb_id": "nm0571344",
+"full_name": "Chris McKenna",
+"slug": null,
+"average_grade_value": 2.5825,
+"review_count": 4,
+"reviews": [
+{
+"sequence": 865,
+"grade_value": 2.67,
+"date": "2020-09-05",
+"title": "Spider-Man: Homecoming",
+"year": 2017,
+"slug": "spider-man-homecoming-2017"
+},
+{
+"sequence": 900,
+"grade_value": 2,
+"date": "2020-10-24",
+"title": "Ant-Man and the Wasp",
+"year": 2018,
+"slug": "ant-man-and-the-wasp-2018"
+},
+{
+"sequence": 921,
+"grade_value": 2.33,
+"date": "2020-11-21",
+"title": "Spider-Man: Far from Home",
+"year": 2019,
+"slug": "spider-man-far-from-home-2019"
+},
+{
+"sequence": 1297,
+"grade_value": 3.33,
+"date": "2022-07-02",
+"title": "Spider-Man: No Way Home",
+"year": 2021,
+"slug": "spider-man-no-way-home-2021"
+}
+]
+},
+{
+"imdb_id": "nm1273099",
+"full_name": "Erik Sommers",
+"slug": null,
+"average_grade_value": 2.5825,
+"review_count": 4,
+"reviews": [
+{
+"sequence": 865,
+"grade_value": 2.67,
+"date": "2020-09-05",
+"title": "Spider-Man: Homecoming",
+"year": 2017,
+"slug": "spider-man-homecoming-2017"
+},
+{
+"sequence": 900,
+"grade_value": 2,
+"date": "2020-10-24",
+"title": "Ant-Man and the Wasp",
+"year": 2018,
+"slug": "ant-man-and-the-wasp-2018"
+},
+{
+"sequence": 921,
+"grade_value": 2.33,
+"date": "2020-11-21",
+"title": "Spider-Man: Far from Home",
+"year": 2019,
+"slug": "spider-man-far-from-home-2019"
+},
+{
+"sequence": 1297,
+"grade_value": 3.33,
+"date": "2022-07-02",
+"title": "Spider-Man: No Way Home",
+"year": 2021,
+"slug": "spider-man-no-way-home-2021"
 }
 ]
 },

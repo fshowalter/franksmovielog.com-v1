@@ -366,31 +366,6 @@
 ]
 },
 {
-"imdb_id": "nm1218281",
-"full_name": "Jon Watts",
-"slug": null,
-"average_grade_value": 2.83,
-"review_count": 2,
-"reviews": [
-{
-"sequence": 865,
-"grade_value": 3.33,
-"date": "2020-09-05",
-"title": "Spider-Man: Homecoming",
-"year": 2017,
-"slug": "spider-man-homecoming-2017"
-},
-{
-"sequence": 921,
-"grade_value": 2.33,
-"date": "2020-11-21",
-"title": "Spider-Man: Far from Home",
-"year": 2019,
-"slug": "spider-man-far-from-home-2019"
-}
-]
-},
-{
 "imdb_id": "nm0878338",
 "full_name": "Frank Tuttle",
 "slug": null,
@@ -494,6 +469,31 @@
 "title": "Up the River",
 "year": 1930,
 "slug": "up-the-river-1930"
+}
+]
+},
+{
+"imdb_id": "nm1218281",
+"full_name": "Jon Watts",
+"slug": null,
+"average_grade_value": 2.5,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 865,
+"grade_value": 2.67,
+"date": "2020-09-05",
+"title": "Spider-Man: Homecoming",
+"year": 2017,
+"slug": "spider-man-homecoming-2017"
+},
+{
+"sequence": 921,
+"grade_value": 2.33,
+"date": "2020-11-21",
+"title": "Spider-Man: Far from Home",
+"year": 2019,
+"slug": "spider-man-far-from-home-2019"
 }
 ]
 },
