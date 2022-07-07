@@ -480,72 +480,6 @@
 ]
 },
 {
-"imdb_id": "nm0571344",
-"full_name": "Chris McKenna",
-"slug": null,
-"average_grade_value": 2.5533333333333332,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 865,
-"grade_value": 3.33,
-"date": "2020-09-05",
-"title": "Spider-Man: Homecoming",
-"year": 2017,
-"slug": "spider-man-homecoming-2017"
-},
-{
-"sequence": 900,
-"grade_value": 2,
-"date": "2020-10-24",
-"title": "Ant-Man and the Wasp",
-"year": 2018,
-"slug": "ant-man-and-the-wasp-2018"
-},
-{
-"sequence": 921,
-"grade_value": 2.33,
-"date": "2020-11-21",
-"title": "Spider-Man: Far from Home",
-"year": 2019,
-"slug": "spider-man-far-from-home-2019"
-}
-]
-},
-{
-"imdb_id": "nm1273099",
-"full_name": "Erik Sommers",
-"slug": null,
-"average_grade_value": 2.5533333333333332,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 865,
-"grade_value": 3.33,
-"date": "2020-09-05",
-"title": "Spider-Man: Homecoming",
-"year": 2017,
-"slug": "spider-man-homecoming-2017"
-},
-{
-"sequence": 900,
-"grade_value": 2,
-"date": "2020-10-24",
-"title": "Ant-Man and the Wasp",
-"year": 2018,
-"slug": "ant-man-and-the-wasp-2018"
-},
-{
-"sequence": 921,
-"grade_value": 2.33,
-"date": "2020-11-21",
-"title": "Spider-Man: Far from Home",
-"year": 2019,
-"slug": "spider-man-far-from-home-2019"
-}
-]
-},
-{
 "imdb_id": "nm0000033",
 "full_name": "Alfred Hitchcock",
 "slug": null,
@@ -575,6 +509,72 @@
 "title": "Juno and the Paycock",
 "year": 1929,
 "slug": "juno-and-the-paycock-1930"
+}
+]
+},
+{
+"imdb_id": "nm0571344",
+"full_name": "Chris McKenna",
+"slug": null,
+"average_grade_value": 2.3333333333333335,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 865,
+"grade_value": 2.67,
+"date": "2020-09-05",
+"title": "Spider-Man: Homecoming",
+"year": 2017,
+"slug": "spider-man-homecoming-2017"
+},
+{
+"sequence": 900,
+"grade_value": 2,
+"date": "2020-10-24",
+"title": "Ant-Man and the Wasp",
+"year": 2018,
+"slug": "ant-man-and-the-wasp-2018"
+},
+{
+"sequence": 921,
+"grade_value": 2.33,
+"date": "2020-11-21",
+"title": "Spider-Man: Far from Home",
+"year": 2019,
+"slug": "spider-man-far-from-home-2019"
+}
+]
+},
+{
+"imdb_id": "nm1273099",
+"full_name": "Erik Sommers",
+"slug": null,
+"average_grade_value": 2.3333333333333335,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 865,
+"grade_value": 2.67,
+"date": "2020-09-05",
+"title": "Spider-Man: Homecoming",
+"year": 2017,
+"slug": "spider-man-homecoming-2017"
+},
+{
+"sequence": 900,
+"grade_value": 2,
+"date": "2020-10-24",
+"title": "Ant-Man and the Wasp",
+"year": 2018,
+"slug": "ant-man-and-the-wasp-2018"
+},
+{
+"sequence": 921,
+"grade_value": 2.33,
+"date": "2020-11-21",
+"title": "Spider-Man: Far from Home",
+"year": 2019,
+"slug": "spider-man-far-from-home-2019"
 }
 ]
 },
