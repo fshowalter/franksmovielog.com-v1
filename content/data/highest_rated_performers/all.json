@@ -152,8 +152,8 @@
 "imdb_id": "nm0424060",
 "full_name": "Scarlett Johansson",
 "slug": null,
-"average_grade_value": 4.064,
-"review_count": 5,
+"average_grade_value": 3.9983333333333335,
+"review_count": 6,
 "reviews": [
 {
 "sequence": 839,
@@ -194,6 +194,14 @@
 "title": "Black Widow",
 "year": 2021,
 "slug": "black-widow-2021"
+},
+{
+"sequence": 1302,
+"grade_value": 3.67,
+"date": "2022-07-10",
+"title": "Under the Skin",
+"year": 2013,
+"slug": "under-the-skin-2013"
 }
 ]
 },
