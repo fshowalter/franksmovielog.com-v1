@@ -100,55 +100,6 @@
 ]
 },
 {
-"imdb_id": "nm0262635",
-"full_name": "Chris Evans",
-"slug": null,
-"average_grade_value": 4.132,
-"review_count": 5,
-"reviews": [
-{
-"sequence": 839,
-"grade_value": 3.33,
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"slug": "avengers-age-of-ultron-2015"
-},
-{
-"sequence": 844,
-"grade_value": 4.33,
-"date": "2020-07-25",
-"title": "Captain America: Civil War",
-"year": 2016,
-"slug": "captain-america-civil-war-2016"
-},
-{
-"sequence": 865,
-"grade_value": 2.67,
-"date": "2020-09-05",
-"title": "Spider-Man: Homecoming",
-"year": 2017,
-"slug": "spider-man-homecoming-2017"
-},
-{
-"sequence": 893,
-"grade_value": 5.33,
-"date": "2020-10-17",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018"
-},
-{
-"sequence": 918,
-"grade_value": 5,
-"date": "2020-11-14",
-"title": "Avengers: Endgame",
-"year": 2019,
-"slug": "avengers-endgame-2019"
-}
-]
-},
-{
 "imdb_id": "nm0424060",
 "full_name": "Scarlett Johansson",
 "slug": null,
@@ -956,6 +907,63 @@
 "title": "Halloween II",
 "year": 2009,
 "slug": "halloween-ii-2009"
+}
+]
+},
+{
+"imdb_id": "nm0573688",
+"full_name": "J. Patrick McNamara",
+"slug": null,
+"average_grade_value": 2.723333333333333,
+"review_count": 6,
+"reviews": [
+{
+"sequence": 1091,
+"grade_value": 3.67,
+"date": "2021-04-24",
+"title": "Bill & Ted's Excellent Adventure",
+"year": 1989,
+"slug": "bill-and-teds-excellent-adventure-1989"
+},
+{
+"sequence": 1096,
+"grade_value": 2.33,
+"date": "2021-05-01",
+"title": "Bill & Ted's Bogus Journey",
+"year": 1991,
+"slug": "bill-and-teds-bogus-journey-1991"
+},
+{
+"sequence": 1138,
+"grade_value": 2.33,
+"date": "2021-08-02",
+"title": "Obsession",
+"year": 1976,
+"slug": "obsession-1976"
+},
+{
+"sequence": 1172,
+"grade_value": 1.67,
+"date": "2021-10-01",
+"title": "The Fury",
+"year": 1978,
+"slug": "the-fury-1978"
+},
+{
+"sequence": 1239,
+"grade_value": 3.67,
+"date": "2022-01-31",
+"title": "Blow Out",
+"year": 1981,
+"slug": "blow-out-1981"
+},
+{
+"sequence": 1304,
+"grade_value": 2.67,
+"date": "2022-07-21",
+"title": "Phantasm II",
+"year": 1988,
+"slug": "phantasm-ii-1988"
 }
 ]
 },
