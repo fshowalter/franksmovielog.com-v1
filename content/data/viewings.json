@@ -3903,7 +3903,7 @@
 "venue": "Netflix",
 "sort_title": "Phantasm II (1988)",
 "year": 1988,
-"slug": null,
+"slug": "phantasm-ii-1988",
 "grade": null,
 "genres": [
 "Action",
@@ -23222,6 +23222,43 @@
 "Drama",
 "Horror",
 "Mystery",
+"Sci-Fi",
+"Thriller"
+]
+},
+{
+"imdb_id": "tt0095379",
+"title": "Intruder",
+"release_date": "1989-01-13",
+"viewing_date": "2022-07-21",
+"viewing_year": "2022",
+"sequence": 1303,
+"venue": "Blu-ray",
+"sort_title": "Intruder (1989)",
+"year": 1989,
+"slug": "intruder-1989",
+"grade": "C",
+"genres": [
+"Horror",
+"Mystery"
+]
+},
+{
+"imdb_id": "tt0095863",
+"title": "Phantasm II",
+"release_date": "1988-07-08",
+"viewing_date": "2022-07-21",
+"viewing_year": "2022",
+"sequence": 1304,
+"venue": "Blu-ray",
+"sort_title": "Phantasm II (1988)",
+"year": 1988,
+"slug": "phantasm-ii-1988",
+"grade": "C-",
+"genres": [
+"Action",
+"Fantasy",
+"Horror",
 "Sci-Fi",
 "Thriller"
 ]
