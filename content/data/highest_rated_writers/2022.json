@@ -145,6 +145,31 @@
 ]
 },
 {
+"imdb_id": "nm1191481",
+"full_name": "Leigh Whannell",
+"slug": null,
+"average_grade_value": 3.335,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1301,
+"grade_value": 3.67,
+"date": "2022-07-08",
+"title": "Saw",
+"year": 2004,
+"slug": "saw-2004"
+},
+{
+"sequence": 1305,
+"grade_value": 3,
+"date": "2022-07-22",
+"title": "Saw II",
+"year": 2005,
+"slug": "saw-ii-2005"
+}
+]
+},
+{
 "imdb_id": "nm0001220",
 "full_name": "Ian Fleming",
 "slug": null,
@@ -456,23 +481,6 @@
 "title": "The Plough and the Stars",
 "year": 1936,
 "slug": "the-plough-and-the-stars-1936"
-}
-]
-},
-{
-"imdb_id": "nm0142056",
-"full_name": "Rudolph Cartier",
-"slug": null,
-"average_grade_value": 2.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1227,
-"grade_value": 2.33,
-"date": "2022-01-10",
-"title": "Corridor of Mirrors",
-"year": 1948,
-"slug": "corridor-of-mirrors-1948"
 }
 ]
 },
