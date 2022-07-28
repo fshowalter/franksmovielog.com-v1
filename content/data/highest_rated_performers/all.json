@@ -2,35 +2,27 @@
 "review_year": "all",
 "highest_rated": [
 {
-"imdb_id": "nm0000375",
-"full_name": "Robert Downey Jr.",
+"imdb_id": "nm1212722",
+"full_name": "Benedict Cumberbatch",
 "slug": null,
-"average_grade_value": 4.132,
-"review_count": 5,
+"average_grade_value": 4.221666666666667,
+"review_count": 6,
 "reviews": [
 {
-"sequence": 839,
-"grade_value": 3.33,
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"slug": "avengers-age-of-ultron-2015"
-},
-{
-"sequence": 844,
-"grade_value": 4.33,
-"date": "2020-07-25",
-"title": "Captain America: Civil War",
+"sequence": 857,
+"grade_value": 3,
+"date": "2020-08-22",
+"title": "Doctor Strange",
 "year": 2016,
-"slug": "captain-america-civil-war-2016"
+"slug": "doctor-strange-2016"
 },
 {
-"sequence": 865,
-"grade_value": 2.67,
-"date": "2020-09-05",
-"title": "Spider-Man: Homecoming",
+"sequence": 875,
+"grade_value": 5,
+"date": "2020-09-26",
+"title": "Thor: Ragnarok",
 "year": 2017,
-"slug": "spider-man-homecoming-2017"
+"slug": "thor-ragnarok-2017"
 },
 {
 "sequence": 893,
@@ -47,55 +39,22 @@
 "title": "Avengers: Endgame",
 "year": 2019,
 "slug": "avengers-endgame-2019"
-}
-]
 },
 {
-"imdb_id": "nm0174403",
-"full_name": "Kerry Condon",
-"slug": null,
-"average_grade_value": 4.132,
-"review_count": 5,
-"reviews": [
-{
-"sequence": 839,
+"sequence": 1297,
 "grade_value": 3.33,
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"slug": "avengers-age-of-ultron-2015"
+"date": "2022-07-02",
+"title": "Spider-Man: No Way Home",
+"year": 2021,
+"slug": "spider-man-no-way-home-2021"
 },
 {
-"sequence": 844,
-"grade_value": 4.33,
-"date": "2020-07-25",
-"title": "Captain America: Civil War",
-"year": 2016,
-"slug": "captain-america-civil-war-2016"
-},
-{
-"sequence": 865,
-"grade_value": 2.67,
-"date": "2020-09-05",
-"title": "Spider-Man: Homecoming",
-"year": 2017,
-"slug": "spider-man-homecoming-2017"
-},
-{
-"sequence": 893,
-"grade_value": 5.33,
-"date": "2020-10-17",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018"
-},
-{
-"sequence": 918,
-"grade_value": 5,
-"date": "2020-11-14",
-"title": "Avengers: Endgame",
-"year": 2019,
-"slug": "avengers-endgame-2019"
+"sequence": 1306,
+"grade_value": 3.67,
+"date": "2022-07-23",
+"title": "Doctor Strange in the Multiverse of Madness",
+"year": 2022,
+"slug": "doctor-strange-in-the-multiverse-of-madness-2022"
 }
 ]
 },
@@ -486,6 +445,63 @@
 "title": "Hard Eight",
 "year": 1996,
 "slug": "hard-eight-1996"
+}
+]
+},
+{
+"imdb_id": "nm0001772",
+"full_name": "Patrick Stewart",
+"slug": null,
+"average_grade_value": 3.1666666666666665,
+"review_count": 6,
+"reviews": [
+{
+"sequence": 978,
+"grade_value": 4,
+"date": "2021-01-09",
+"title": "X-Men",
+"year": 2000,
+"slug": "x-men-2000"
+},
+{
+"sequence": 986,
+"grade_value": 3,
+"date": "2021-01-16",
+"title": "X2: X-Men United",
+"year": 2003,
+"slug": "x2-x-men-united-2003"
+},
+{
+"sequence": 995,
+"grade_value": 1,
+"date": "2021-01-23",
+"title": "X-Men: The Last Stand",
+"year": 2006,
+"slug": "x-men-the-last-stand-2006"
+},
+{
+"sequence": 1024,
+"grade_value": 3.33,
+"date": "2021-02-20",
+"title": "X-Men: Days of Future Past",
+"year": 2014,
+"slug": "x-men-days-of-future-past-2014"
+},
+{
+"sequence": 1048,
+"grade_value": 4,
+"date": "2021-03-13",
+"title": "Logan",
+"year": 2017,
+"slug": "logan-2017"
+},
+{
+"sequence": 1306,
+"grade_value": 3.67,
+"date": "2022-07-23",
+"title": "Doctor Strange in the Multiverse of Madness",
+"year": 2022,
+"slug": "doctor-strange-in-the-multiverse-of-madness-2022"
 }
 ]
 },
