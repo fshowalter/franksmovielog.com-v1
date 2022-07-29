@@ -36,23 +36,6 @@
 ]
 },
 {
-"imdb_id": "nm1867674",
-"full_name": "Jo Nesb\u00f8",
-"slug": null,
-"average_grade_value": 4.67,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1225,
-"grade_value": 4.67,
-"date": "2022-01-05",
-"title": "Headhunters",
-"year": 2011,
-"slug": "jo-nesbos-headhunters-2011"
-}
-]
-},
-{
 "imdb_id": "nm0252155",
 "full_name": "Philip Eisner",
 "slug": null,
@@ -145,8 +128,8 @@
 ]
 },
 {
-"imdb_id": "nm1191481",
-"full_name": "Leigh Whannell",
+"imdb_id": "nm1490123",
+"full_name": "James Wan",
 "slug": null,
 "average_grade_value": 3.335,
 "review_count": 2,
@@ -160,12 +143,45 @@
 "slug": "saw-2004"
 },
 {
-"sequence": 1305,
+"sequence": 1307,
 "grade_value": 3,
+"date": "2022-07-28",
+"title": "Saw III",
+"year": 2006,
+"slug": "saw-iii-2006"
+}
+]
+},
+{
+"imdb_id": "nm1191481",
+"full_name": "Leigh Whannell",
+"slug": null,
+"average_grade_value": 3.1133333333333333,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1301,
+"grade_value": 3.67,
+"date": "2022-07-08",
+"title": "Saw",
+"year": 2004,
+"slug": "saw-2004"
+},
+{
+"sequence": 1305,
+"grade_value": 2.67,
 "date": "2022-07-22",
 "title": "Saw II",
 "year": 2005,
 "slug": "saw-ii-2005"
+},
+{
+"sequence": 1307,
+"grade_value": 3,
+"date": "2022-07-28",
+"title": "Saw III",
+"year": 2006,
+"slug": "saw-iii-2006"
 }
 ]
 },
