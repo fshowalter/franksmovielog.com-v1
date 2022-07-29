@@ -8,7 +8,6 @@
 
 import { Link } from "gatsby";
 import React from "react";
-import { Helmet } from "react-helmet";
 import ScreenReaderOnly from "../ScreenReaderOnly";
 import SvgIcon from "../SvgIcon";
 import {
@@ -72,13 +71,6 @@ export default function Layout({
         Skip to content
       </a>
       <div className={containerCss}>
-        <Helmet>
-          <html lang="en-us" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-        </Helmet>
         <header className={mastHeaderCss}>
           <h1 className={mastTitleCss}>
             <Link to="/">Frank&apos;s Movie Log</Link>

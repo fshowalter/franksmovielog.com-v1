@@ -1,7 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
-import React from "react";
-import GonePage from "./gone";
+import GonePage, { Head } from "./gone";
 import data from "./gone.fixtures";
 
 describe("/gone", () => {
@@ -11,16 +10,9 @@ describe("/gone", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(<GonePage data={data} />);
+  it("sets page title", () => {
+    render(<Head />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("410: Gone");
-      done();
-    });
+    expect(document.title).toStrictEqual("410: Gone");
   });
 });

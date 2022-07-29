@@ -1,6 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
-import React from "react";
 import StatsPage from "./StatsPage";
 import data, { yearWithNoMostWatched } from "./StatsPage.fixtures";
 

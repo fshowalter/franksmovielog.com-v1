@@ -1,27 +1,29 @@
 import { graphql } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
 import ArticlePage from "../components/ArticlePage";
-import Seo from "../components/Seo";
+import HeadBuilder from "../components/HeadBuilder";
+
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="How I Grade"
+      description="The criteria I use to rate movies on this site."
+      image={null}
+      article
+    />
+  );
+}
 
 export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
   const { backdrop, page } = data;
 
   return (
-    <>
-      <Seo
-        pageTitle="How I Grade"
-        description="The criteria I use to rate movies on this site."
-        image={null}
-        article
-      />
-      <ArticlePage
-        image={backdrop.childImageSharp.gatsbyImageData}
-        alt="Empty cinema seats."
-        articleText={page.html}
-        title={page.frontmatter.title}
-      />
-    </>
+    <ArticlePage
+      image={backdrop.childImageSharp.gatsbyImageData}
+      alt="Empty cinema seats."
+      articleText={page.html}
+      title={page.frontmatter.title}
+    />
   );
 }
 

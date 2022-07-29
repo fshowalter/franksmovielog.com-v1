@@ -1,9 +1,9 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import React from "react";
 import WatchlistEntityIndexPage, {
   EntityType,
+  Head,
 } from "./WatchlistEntityIndexPage";
 import data from "./WatchlistEntityIndexPage.fixtures";
 
@@ -72,22 +72,10 @@ describe("/watchlist/directors/", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(
-      <WatchlistEntityIndexPage
-        data={data}
-        pageContext={{ entityType: EntityType.DIRECTOR }}
-      />
-    );
+  it("sets page title", () => {
+    render(<Head pageContext={{ entityType: EntityType.DIRECTOR }} />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Watchlist Directors");
-      done();
-    });
+    expect(document.title).toStrictEqual("Watchlist Directors");
   });
 });
 
@@ -103,22 +91,10 @@ describe("/watchlist/performers/", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(
-      <WatchlistEntityIndexPage
-        data={data}
-        pageContext={{ entityType: EntityType.PERFORMER }}
-      />
-    );
+  it("sets page title", () => {
+    render(<Head pageContext={{ entityType: EntityType.PERFORMER }} />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Watchlist Performers");
-      done();
-    });
+    expect(document.title).toStrictEqual("Watchlist Performers");
   });
 });
 
@@ -134,22 +110,10 @@ describe("/watchlist/writers/", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(
-      <WatchlistEntityIndexPage
-        data={data}
-        pageContext={{ entityType: EntityType.WRITER }}
-      />
-    );
+  it("sets page title", () => {
+    render(<Head pageContext={{ entityType: EntityType.WRITER }} />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Watchlist Writers");
-      done();
-    });
+    expect(document.title).toStrictEqual("Watchlist Writers");
   });
 });
 
@@ -165,21 +129,9 @@ describe("/watchlist/collections/", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(
-      <WatchlistEntityIndexPage
-        data={data}
-        pageContext={{ entityType: EntityType.COLLECTION }}
-      />
-    );
+  it("sets page title", () => {
+    render(<Head pageContext={{ entityType: EntityType.COLLECTION }} />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Watchlist Collections");
-      done();
-    });
+    expect(document.title).toStrictEqual("Watchlist Collections");
   });
 });

@@ -1,7 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
-import React from "react";
-import ReviewPage from "./ReviewPage";
+import ReviewPage, { Head } from "./ReviewPage";
 import data from "./ReviewPage.fixtures";
 
 describe("/reviews/{slug}", () => {
@@ -11,16 +10,9 @@ describe("/reviews/{slug}", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(<ReviewPage data={data} />);
+  it("sets page title", () => {
+    render(<Head data={data} />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Rio Bravo (1959)");
-      done();
-    });
+    expect(document.title).toStrictEqual("Rio Bravo (1959)");
   });
 });

@@ -1,27 +1,29 @@
 import { graphql } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
 import ArticlePage from "../components/ArticlePage";
-import Seo from "../components/Seo";
+import HeadBuilder from "../components/HeadBuilder";
+
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="404: Not Found"
+      description="Dick Laurent is dead."
+      image={null}
+      article
+    />
+  );
+}
 
 export default function NotFoundPage({ data }: PageQueryResult): JSX.Element {
   const { backdrop, page } = data;
 
   return (
-    <>
-      <Seo
-        pageTitle="404: Not Found"
-        description="Dick Laurent is dead."
-        image={null}
-        article
-      />
-      <ArticlePage
-        image={backdrop.childImageSharp.gatsbyImageData}
-        alt="A lost highway."
-        articleText={page.html}
-        title={page.frontmatter.title}
-      />
-    </>
+    <ArticlePage
+      image={backdrop.childImageSharp.gatsbyImageData}
+      alt="A lost highway."
+      articleText={page.html}
+      title={page.frontmatter.title}
+    />
   );
 }
 

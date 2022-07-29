@@ -1,16 +1,16 @@
 import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useReducer, useRef } from "react";
+import { useReducer, useRef } from "react";
 import Select from "react-select";
 import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import GradeInput from "../GradeInput";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
 import { SelectField, SelectOptions } from "../SelectField";
-import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
   calloutCss,
@@ -119,6 +119,17 @@ function groupViewings({
   return groupedViewings;
 }
 
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="Reviews"
+      description="A sortable and filterable list of every movie I've watched and reviewed since 2012."
+      image={null}
+      article={false}
+    />
+  );
+}
+
 /**
  * Renders the reviews page.
  */
@@ -144,12 +155,6 @@ export default function ReviewsIndexPage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle="Reviews"
-        description="A sortable and filterable list of every movie I've watched and reviewed since 2012."
-        image={null}
-        article={false}
-      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader

@@ -1,13 +1,12 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
+import HeadBuilder from "../HeadBuilder";
 import HeroImage from "../HeroImage";
 import Layout from "../Layout";
 import PageTitle from "../PageTitle";
 import RenderedMarkdown from "../RenderedMarkdown";
-import Seo from "../Seo";
 import Credits from "./Credits";
 import RelatedMovies from "./RelatedMovies";
 import {
@@ -212,6 +211,19 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
   );
 }
 
+export function Head({ data }: { data: PageQueryResult }): JSX.Element {
+  const { movie } = data;
+
+  return (
+    <HeadBuilder
+      pageTitle={`${movie.title} (${movie.year})`}
+      description={`A review of the ${movie.year} film ${movie.title}.`}
+      image={movie.seoImage.childImageSharp.resize.src}
+      article
+    />
+  );
+}
+
 /**
  * Renders a review page.
  */
@@ -225,12 +237,6 @@ export default function ReviewPage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle={`${movie.title} (${movie.year})`}
-        description={`A review of the ${movie.year} film ${movie.title}.`}
-        image={movie.seoImage.childImageSharp.resize.src}
-        article
-      />
       <main id="top" className={containerCss}>
         <header className={headerContainerCss}>
           <PageTitle>{movie.title}</PageTitle>

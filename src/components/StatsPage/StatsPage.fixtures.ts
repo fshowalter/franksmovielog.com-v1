@@ -8,6 +8,7 @@ export default {
   },
   reviewStats: {
     reviewCount: 130,
+    watchlistTitlesReviewed: 70,
   },
   decade: {
     stats: [
