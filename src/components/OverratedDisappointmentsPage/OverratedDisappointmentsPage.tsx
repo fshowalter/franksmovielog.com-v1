@@ -1,15 +1,15 @@
 import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useReducer, useRef } from "react";
+import { useReducer, useRef } from "react";
 import Select from "react-select";
 import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
 import { SelectField } from "../SelectField";
-import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
   containerCss,
@@ -94,6 +94,17 @@ function groupMovies({
   return groupedMovies;
 }
 
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="Overrated Disappointments"
+      description="One and two star movies with an above-average IMDb rating and vote count."
+      image={null}
+      article={false}
+    />
+  );
+}
+
 /**
  * Renders the underseen gems page.
  */
@@ -119,12 +130,6 @@ export default function OverratedDisappointmentsPage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle="Overrated Disappointments"
-        description="One and two star movies with an above-average IMDb rating and vote count."
-        image={null}
-        article={false}
-      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader

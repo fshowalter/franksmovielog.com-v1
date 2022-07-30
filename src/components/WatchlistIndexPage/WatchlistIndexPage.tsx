@@ -6,10 +6,10 @@ import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import ProgressGraph from "../ProgressGraph";
 import { SelectField, SelectOptions } from "../SelectField";
-import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
   containerCss,
@@ -313,6 +313,17 @@ function WatchlistMoviePoster({
   return <div className={listItemPosterCss}>{poster}</div>;
 }
 
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="Watchlist"
+      description="My movie review bucketlist."
+      image={null}
+      article={false}
+    />
+  );
+}
+
 /**
  * Renders the watchlist page.
  */
@@ -338,12 +349,6 @@ export default function WatchlistIndexPage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle="Watchlist"
-        description="My movie review bucketlist."
-        image={null}
-        article={false}
-      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader

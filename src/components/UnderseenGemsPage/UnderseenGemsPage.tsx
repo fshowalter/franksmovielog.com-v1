@@ -1,15 +1,15 @@
 import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useReducer, useRef } from "react";
+import { useReducer, useRef } from "react";
 import Select from "react-select";
 import Button from "../Button";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import { Poster, PosterList } from "../PosterList";
 import { SelectField } from "../SelectField";
-import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
   containerCss,
@@ -91,6 +91,17 @@ function groupMovies({
   return groupedMovies;
 }
 
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="Underseen Gems"
+      description="Four and five star movies with a below average number of votes on the IMDb."
+      image={null}
+      article={false}
+    />
+  );
+}
+
 /**
  * Renders the underseen gems page.
  */
@@ -116,12 +127,6 @@ export default function UnderseenGemsPage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle="Underseen Gems"
-        description="Four and five star movies with a below average number of votes on the IMDb."
-        image={null}
-        article={false}
-      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader

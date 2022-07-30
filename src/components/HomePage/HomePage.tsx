@@ -1,12 +1,12 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
-import Seo from "../Seo";
 import WatchlistLinks from "../WatchlistLinks";
 import {
   articleBodyCss,
@@ -27,16 +27,37 @@ import {
 } from "./HomePage.module.scss";
 import Pagination from "./Pagination";
 
+interface PageContext {
+  limit: number;
+  skip: number;
+  numberOfItems: number;
+  currentPage: number;
+}
+
+export function Head({
+  pageContext,
+}: {
+  pageContext: PageContext;
+}): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle={
+        pageContext.currentPage === 1
+          ? "Frank's Movie Log: My Life at the Movies"
+          : `Page ${pageContext.currentPage}`
+      }
+      description="Reviews of current, cult, classic, and forgotten films."
+      article={false}
+      image={null}
+    />
+  );
+}
+
 export default function HomePage({
   pageContext,
   data,
 }: {
-  pageContext: {
-    limit: number;
-    skip: number;
-    numberOfItems: number;
-    currentPage: number;
-  };
+  pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
   const listHeader = useRef<HTMLDivElement>(null);
@@ -46,16 +67,6 @@ export default function HomePage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle={
-          pageContext.currentPage === 1
-            ? "Frank's Movie Log: My Life at the Movies"
-            : `Page ${pageContext.currentPage}`
-        }
-        description="Reviews of current, cult, classic, and forgotten films."
-        article={false}
-        image={null}
-      />
       <main className={containerCss} ref={listHeader}>
         <ol className={listCss}>
           {updates.map((update, index) => {

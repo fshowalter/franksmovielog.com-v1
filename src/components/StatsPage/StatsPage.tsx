@@ -1,8 +1,8 @@
 import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import PageTitle from "../PageTitle";
-import Seo from "../Seo";
 import ByReleaseYear from "./ByReleaseYear";
 import Callouts from "./Callouts";
 import GradeDistribution from "./GradeDistribution";
@@ -85,6 +85,26 @@ function SubHeading({
   );
 }
 
+export function Head({
+  pageContext,
+}: {
+  pageContext: PageContext;
+}): JSX.Element {
+  const { yearScope } = pageContext;
+
+  const pageTitle =
+    yearScope === "all" ? "All-Time Stats" : `${yearScope} Stats`;
+
+  return (
+    <HeadBuilder
+      pageTitle={pageTitle}
+      description={`My most-watched performers, directors and writers for ${yearScope}.`}
+      article={false}
+      image={null}
+    />
+  );
+}
+
 /**
  * Renders the all-time review stats template.
  */
@@ -113,56 +133,48 @@ export default function StatsPage({
     yearScope === "all" ? "All-Time Stats" : `${yearScope} Stats`;
 
   return (
-    <>
-      <Seo
-        pageTitle={pageTitle}
-        description={`My most-watched performers, directors and writers for ${yearScope}.`}
-        article={false}
-        image={null}
-      />
-      <Layout>
-        <main className={containerCss}>
-          <header className={headerCss}>
-            <PageTitle className={headingCss}>{pageTitle}</PageTitle>
-            <div className={taglineCss}>
-              <SubHeading
-                yearScope={yearScope}
-                years={viewing.years.sort().reverse()}
-              />
-            </div>
-          </header>
-          <div className={contentCss}>
-            {" "}
-            <Callouts
-              viewingCount={viewingStats.viewingCount}
-              movieCount={viewingStats.movieCount}
-              newMovieCount={viewingStats.newMovieCount}
-              reviewCount={reviewStats?.reviewCount}
-              watchlistTitlesReviewed={reviewStats?.watchlistTitlesReviewed}
-            />
-            <MostWatchedMovies movies={movies.mostWatched} />
-            <ByReleaseYear decades={decade.stats} />
-            <TopVenues venues={venue.stats} />
-            {grade && <GradeDistribution distributions={grade.distributions} />}
-            <MostWatchedPeople
-              people={directors.mostWatched}
-              header="Most Watched Directors"
-              nameRenderer={DirectorName}
-            />
-            <MostWatchedPeople
-              people={performers.mostWatched}
-              header="Most Watched Performers"
-              nameRenderer={PerformerName}
-            />
-            <MostWatchedPeople
-              people={writers.mostWatched}
-              header="Most Watched Writers"
-              nameRenderer={WriterName}
+    <Layout>
+      <main className={containerCss}>
+        <header className={headerCss}>
+          <PageTitle className={headingCss}>{pageTitle}</PageTitle>
+          <div className={taglineCss}>
+            <SubHeading
+              yearScope={yearScope}
+              years={viewing.years.sort().reverse()}
             />
           </div>
-        </main>
-      </Layout>
-    </>
+        </header>
+        <div className={contentCss}>
+          {" "}
+          <Callouts
+            viewingCount={viewingStats.viewingCount}
+            movieCount={viewingStats.movieCount}
+            newMovieCount={viewingStats.newMovieCount}
+            reviewCount={reviewStats?.reviewCount}
+            watchlistTitlesReviewed={reviewStats?.watchlistTitlesReviewed}
+          />
+          <MostWatchedMovies movies={movies.mostWatched} />
+          <ByReleaseYear decades={decade.stats} />
+          <TopVenues venues={venue.stats} />
+          {grade && <GradeDistribution distributions={grade.distributions} />}
+          <MostWatchedPeople
+            people={directors.mostWatched}
+            header="Most Watched Directors"
+            nameRenderer={DirectorName}
+          />
+          <MostWatchedPeople
+            people={performers.mostWatched}
+            header="Most Watched Performers"
+            nameRenderer={PerformerName}
+          />
+          <MostWatchedPeople
+            people={writers.mostWatched}
+            header="Most Watched Writers"
+            nameRenderer={WriterName}
+          />
+        </div>
+      </main>
+    </Layout>
   );
 }
 

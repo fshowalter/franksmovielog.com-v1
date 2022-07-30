@@ -1,7 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
-import React from "react";
-import HomePage from "./HomePage";
+import HomePage, { Head } from "./HomePage";
 import data from "./HomePage.fixtures";
 
 describe("/", () => {
@@ -21,14 +20,9 @@ describe("/", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title for first page", (done) => {
-    expect.hasAssertions();
+  it("sets page title for first page", () => {
     render(
-      <HomePage
-        data={data}
+      <Head
         pageContext={{
           limit: 10,
           skip: 0,
@@ -38,22 +32,14 @@ describe("/", () => {
       />
     );
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual(
-        "Frank's Movie Log: My Life at the Movies"
-      );
-      done();
-    });
+    expect(document.title).toStrictEqual(
+      "Frank's Movie Log: My Life at the Movies"
+    );
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title for not-first page", (done) => {
-    expect.hasAssertions();
+  it("sets page title for not-first page", () => {
     render(
-      <HomePage
-        data={data}
+      <Head
         pageContext={{
           limit: 10,
           skip: 10,
@@ -63,10 +49,7 @@ describe("/", () => {
       />
     );
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Page 2");
-      done();
-    });
+    expect(document.title).toStrictEqual("Page 2");
   });
 
   it("can render last page", () => {

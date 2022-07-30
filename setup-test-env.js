@@ -2,4 +2,4 @@ import "@testing-library/jest-dom/extend-expect"; // eslint-disable-line import/
 
 Element.prototype.scrollIntoView = () => {}; //eslint-disable-line no-undef
 
-jest.mock("./src/components/Seo/Seo.tsx");
+jest.mock("./src/components/HeadBuilder/HeadBuilder.tsx");

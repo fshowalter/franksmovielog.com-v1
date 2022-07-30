@@ -1,27 +1,29 @@
 import { graphql } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
 import ArticlePage from "../components/ArticlePage";
-import Seo from "../components/Seo";
+import HeadBuilder from "../components/HeadBuilder";
+
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="About"
+      description="I have come here to chew bubblegum and kick ass. And I'm all out of bubblegum."
+      image={null}
+      article
+    />
+  );
+}
 
 export default function AboutPage({ data }: PageQueryResult): JSX.Element {
   const { backdrop, page } = data;
 
   return (
-    <>
-      <Seo
-        pageTitle="About"
-        description="I have come here to chew bubblegum and kick ass. And I'm all out of bubblegum."
-        image={null}
-        article
-      />
-      <ArticlePage
-        image={backdrop.childImageSharp.gatsbyImageData}
-        alt="A coffee cup with the word BEGIN on it."
-        articleText={page.html}
-        title={page.frontmatter.title}
-      />
-    </>
+    <ArticlePage
+      image={backdrop.childImageSharp.gatsbyImageData}
+      alt="A coffee cup with the word BEGIN on it."
+      articleText={page.html}
+      title={page.frontmatter.title}
+    />
   );
 }
 
