@@ -927,63 +927,6 @@
 ]
 },
 {
-"imdb_id": "nm0573688",
-"full_name": "J. Patrick McNamara",
-"slug": null,
-"average_grade_value": 2.723333333333333,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 1091,
-"grade_value": 3.67,
-"date": "2021-04-24",
-"title": "Bill & Ted's Excellent Adventure",
-"year": 1989,
-"slug": "bill-and-teds-excellent-adventure-1989"
-},
-{
-"sequence": 1096,
-"grade_value": 2.33,
-"date": "2021-05-01",
-"title": "Bill & Ted's Bogus Journey",
-"year": 1991,
-"slug": "bill-and-teds-bogus-journey-1991"
-},
-{
-"sequence": 1138,
-"grade_value": 2.33,
-"date": "2021-08-02",
-"title": "Obsession",
-"year": 1976,
-"slug": "obsession-1976"
-},
-{
-"sequence": 1172,
-"grade_value": 1.67,
-"date": "2021-10-01",
-"title": "The Fury",
-"year": 1978,
-"slug": "the-fury-1978"
-},
-{
-"sequence": 1239,
-"grade_value": 3.67,
-"date": "2022-01-31",
-"title": "Blow Out",
-"year": 1981,
-"slug": "blow-out-1981"
-},
-{
-"sequence": 1304,
-"grade_value": 2.67,
-"date": "2022-07-21",
-"title": "Phantasm II",
-"year": 1988,
-"slug": "phantasm-ii-1988"
-}
-]
-},
-{
 "imdb_id": "nm0278073",
 "full_name": "William Finley",
 "slug": null,
@@ -1304,6 +1247,63 @@
 "title": "Murders in the Rue Morgue",
 "year": 1932,
 "slug": "murders-in-the-rue-morgue-1932"
+}
+]
+},
+{
+"imdb_id": "nm0007214",
+"full_name": "Frank Albertson",
+"slug": null,
+"average_grade_value": 2.441666666666667,
+"review_count": 6,
+"reviews": [
+{
+"sequence": 867,
+"grade_value": 2.33,
+"date": "2020-09-11",
+"title": "Born Reckless",
+"year": 1930,
+"slug": "born-reckless-1930"
+},
+{
+"sequence": 868,
+"grade_value": 3.33,
+"date": "2020-09-11",
+"title": "Men Without Women",
+"year": 1930,
+"slug": "men-without-women-1930"
+},
+{
+"sequence": 883,
+"grade_value": 2.33,
+"date": "2020-10-09",
+"title": "Salute",
+"year": 1929,
+"slug": "salute-1929"
+},
+{
+"sequence": 922,
+"grade_value": 2.33,
+"date": "2020-11-24",
+"title": "Wild Company",
+"year": 1930,
+"slug": "wild-company-1930"
+},
+{
+"sequence": 1081,
+"grade_value": 2.33,
+"date": "2021-04-14",
+"title": "Way Back Home",
+"year": 1931,
+"slug": "way-back-home-1931"
+},
+{
+"sequence": 1308,
+"grade_value": 2,
+"date": "2022-07-29",
+"title": "The Brat",
+"year": 1931,
+"slug": "the-brat-1931"
 }
 ]
 },
