@@ -310,55 +310,6 @@
 ]
 },
 {
-"imdb_id": "nm0000406",
-"full_name": "John Ford",
-"slug": "john-ford",
-"average_grade_value": 2.334,
-"review_count": 5,
-"reviews": [
-{
-"sequence": 1292,
-"grade_value": 3,
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"slug": "pilgrimage-1933"
-},
-{
-"sequence": 1293,
-"grade_value": 3,
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"slug": "steamboat-round-the-bend-1935"
-},
-{
-"sequence": 1294,
-"grade_value": 1,
-"date": "2022-06-27",
-"title": "The Plough and the Stars",
-"year": 1936,
-"slug": "the-plough-and-the-stars-1936"
-},
-{
-"sequence": 1295,
-"grade_value": 2.67,
-"date": "2022-06-29",
-"title": "Doctor Bull",
-"year": 1933,
-"slug": "doctor-bull-1933"
-},
-{
-"sequence": 1308,
-"grade_value": 2,
-"date": "2022-07-29",
-"title": "The Brat",
-"year": 1931,
-"slug": "the-brat-1931"
-}
-]
-},
-{
 "imdb_id": "nm0950109",
 "full_name": "Terence Young",
 "slug": null,
@@ -440,6 +391,55 @@
 "title": "Inside",
 "year": 2007,
 "slug": "inside-2007"
+}
+]
+},
+{
+"imdb_id": "nm0000406",
+"full_name": "John Ford",
+"slug": "john-ford",
+"average_grade_value": 2.268,
+"review_count": 5,
+"reviews": [
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
+},
+{
+"sequence": 1293,
+"grade_value": 3,
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935"
+},
+{
+"sequence": 1294,
+"grade_value": 1,
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936"
+},
+{
+"sequence": 1295,
+"grade_value": 2.67,
+"date": "2022-06-29",
+"title": "Doctor Bull",
+"year": 1933,
+"slug": "doctor-bull-1933"
+},
+{
+"sequence": 1308,
+"grade_value": 1.67,
+"date": "2022-07-29",
+"title": "The Brat",
+"year": 1931,
+"slug": "the-brat-1931"
 }
 ]
 },
