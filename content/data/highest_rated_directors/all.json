@@ -889,111 +889,6 @@
 ]
 },
 {
-"imdb_id": "nm0000406",
-"full_name": "John Ford",
-"slug": "john-ford",
-"average_grade_value": 2.4158333333333335,
-"review_count": 12,
-"reviews": [
-{
-"sequence": 840,
-"grade_value": 1,
-"date": "2020-07-12",
-"title": "The Black Watch",
-"year": 1929,
-"slug": "the-black-watch-1929"
-},
-{
-"sequence": 867,
-"grade_value": 2.33,
-"date": "2020-09-11",
-"title": "Born Reckless",
-"year": 1930,
-"slug": "born-reckless-1930"
-},
-{
-"sequence": 868,
-"grade_value": 3.33,
-"date": "2020-09-11",
-"title": "Men Without Women",
-"year": 1930,
-"slug": "men-without-women-1930"
-},
-{
-"sequence": 883,
-"grade_value": 2.33,
-"date": "2020-10-09",
-"title": "Salute",
-"year": 1929,
-"slug": "salute-1929"
-},
-{
-"sequence": 912,
-"grade_value": 3.67,
-"date": "2020-11-06",
-"title": "Up the River",
-"year": 1930,
-"slug": "up-the-river-1930"
-},
-{
-"sequence": 975,
-"grade_value": 2.33,
-"date": "2021-01-07",
-"title": "Seas Beneath",
-"year": 1931,
-"slug": "seas-beneath-1931"
-},
-{
-"sequence": 1088,
-"grade_value": 2.33,
-"date": "2021-04-21",
-"title": "Arrowsmith",
-"year": 1931,
-"slug": "arrowsmith-1931"
-},
-{
-"sequence": 1292,
-"grade_value": 3,
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"slug": "pilgrimage-1933"
-},
-{
-"sequence": 1293,
-"grade_value": 3,
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"slug": "steamboat-round-the-bend-1935"
-},
-{
-"sequence": 1294,
-"grade_value": 1,
-"date": "2022-06-27",
-"title": "The Plough and the Stars",
-"year": 1936,
-"slug": "the-plough-and-the-stars-1936"
-},
-{
-"sequence": 1295,
-"grade_value": 2.67,
-"date": "2022-06-29",
-"title": "Doctor Bull",
-"year": 1933,
-"slug": "doctor-bull-1933"
-},
-{
-"sequence": 1308,
-"grade_value": 2,
-"date": "2022-07-29",
-"title": "The Brat",
-"year": 1931,
-"slug": "the-brat-1931"
-}
-]
-},
-{
 "imdb_id": "nm0000343",
 "full_name": "David Cronenberg",
 "slug": "david-cronenberg",
@@ -1104,6 +999,111 @@
 "title": "A Nightmare on Elm Street",
 "year": 1984,
 "slug": "a-nightmare-on-elm-street-1984"
+}
+]
+},
+{
+"imdb_id": "nm0000406",
+"full_name": "John Ford",
+"slug": "john-ford",
+"average_grade_value": 2.3883333333333336,
+"review_count": 12,
+"reviews": [
+{
+"sequence": 840,
+"grade_value": 1,
+"date": "2020-07-12",
+"title": "The Black Watch",
+"year": 1929,
+"slug": "the-black-watch-1929"
+},
+{
+"sequence": 867,
+"grade_value": 2.33,
+"date": "2020-09-11",
+"title": "Born Reckless",
+"year": 1930,
+"slug": "born-reckless-1930"
+},
+{
+"sequence": 868,
+"grade_value": 3.33,
+"date": "2020-09-11",
+"title": "Men Without Women",
+"year": 1930,
+"slug": "men-without-women-1930"
+},
+{
+"sequence": 883,
+"grade_value": 2.33,
+"date": "2020-10-09",
+"title": "Salute",
+"year": 1929,
+"slug": "salute-1929"
+},
+{
+"sequence": 912,
+"grade_value": 3.67,
+"date": "2020-11-06",
+"title": "Up the River",
+"year": 1930,
+"slug": "up-the-river-1930"
+},
+{
+"sequence": 975,
+"grade_value": 2.33,
+"date": "2021-01-07",
+"title": "Seas Beneath",
+"year": 1931,
+"slug": "seas-beneath-1931"
+},
+{
+"sequence": 1088,
+"grade_value": 2.33,
+"date": "2021-04-21",
+"title": "Arrowsmith",
+"year": 1931,
+"slug": "arrowsmith-1931"
+},
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
+},
+{
+"sequence": 1293,
+"grade_value": 3,
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935"
+},
+{
+"sequence": 1294,
+"grade_value": 1,
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936"
+},
+{
+"sequence": 1295,
+"grade_value": 2.67,
+"date": "2022-06-29",
+"title": "Doctor Bull",
+"year": 1933,
+"slug": "doctor-bull-1933"
+},
+{
+"sequence": 1308,
+"grade_value": 1.67,
+"date": "2022-07-29",
+"title": "The Brat",
+"year": 1931,
+"slug": "the-brat-1931"
 }
 ]
 },
