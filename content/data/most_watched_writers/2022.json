@@ -264,6 +264,32 @@
 ]
 },
 {
+"imdb_id": "nm0169540",
+"full_name": "Larry Cohen",
+"slug": null,
+"viewing_count": 2,
+"viewings": [
+{
+"sequence": 1256,
+"venue": "Criterion Channel",
+"date": "2022-02-18",
+"title": "God Told Me To",
+"year": 1976,
+"slug": "god-told-me-to-1976",
+"imdb_id": "tt0075930"
+},
+{
+"sequence": 1311,
+"venue": "Criterion Channel",
+"date": "2022-08-02",
+"title": "Bone",
+"year": 1972,
+"slug": "bone-1972",
+"imdb_id": "tt0068306"
+}
+]
+},
+{
 "imdb_id": "nm0000850",
 "full_name": "Clive Barker",
 "slug": "clive-barker",
@@ -286,32 +312,6 @@
 "year": 1986,
 "slug": "rawhead-rex-1986",
 "imdb_id": "tt0091829"
-}
-]
-},
-{
-"imdb_id": "nm0337773",
-"full_name": "David Gordon Green",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1261,
-"venue": "4k UHD Blu-ray",
-"date": "2022-03-03",
-"title": "Halloween",
-"year": 2018,
-"slug": "halloween-2018",
-"imdb_id": "tt1502407"
-},
-{
-"sequence": 1262,
-"venue": "4k UHD Blu-ray",
-"date": "2022-03-03",
-"title": "Halloween Kills",
-"year": 2021,
-"slug": "halloween-kills-2021",
-"imdb_id": "tt10665338"
 }
 ]
 }
