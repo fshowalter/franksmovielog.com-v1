@@ -153,6 +153,31 @@
 ]
 },
 {
+"imdb_id": "nm0169540",
+"full_name": "Larry Cohen",
+"slug": null,
+"average_grade_value": 3.165,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1256,
+"grade_value": 2.33,
+"date": "2022-02-18",
+"title": "God Told Me To",
+"year": 1976,
+"slug": "god-told-me-to-1976"
+},
+{
+"sequence": 1311,
+"grade_value": 4,
+"date": "2022-08-02",
+"title": "Bone",
+"year": 1972,
+"slug": "bone-1972"
+}
+]
+},
+{
 "imdb_id": "nm1135423",
 "full_name": "Darren Lynn Bousman",
 "slug": null,
@@ -363,23 +388,6 @@
 {
 "imdb_id": "nm2376614",
 "full_name": "Alexandre Bustillo",
-"slug": null,
-"average_grade_value": 2.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1240,
-"grade_value": 2.33,
-"date": "2022-02-01",
-"title": "Inside",
-"year": 2007,
-"slug": "inside-2007"
-}
-]
-},
-{
-"imdb_id": "nm2377660",
-"full_name": "Julien Maury",
 "slug": null,
 "average_grade_value": 2.33,
 "review_count": 1,

@@ -19,23 +19,6 @@
 ]
 },
 {
-"imdb_id": "nm0752968",
-"full_name": "Ulf Ryberg",
-"slug": null,
-"average_grade_value": 4.67,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1225,
-"grade_value": 4.67,
-"date": "2022-01-05",
-"title": "Headhunters",
-"year": 2011,
-"slug": "jo-nesbos-headhunters-2011"
-}
-]
-},
-{
 "imdb_id": "nm0252155",
 "full_name": "Philip Eisner",
 "slug": null,
@@ -149,6 +132,31 @@
 "title": "Saw III",
 "year": 2006,
 "slug": "saw-iii-2006"
+}
+]
+},
+{
+"imdb_id": "nm0169540",
+"full_name": "Larry Cohen",
+"slug": null,
+"average_grade_value": 3.165,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1256,
+"grade_value": 2.33,
+"date": "2022-02-18",
+"title": "God Told Me To",
+"year": 1976,
+"slug": "god-told-me-to-1976"
+},
+{
+"sequence": 1311,
+"grade_value": 4,
+"date": "2022-08-02",
+"title": "Bone",
+"year": 1972,
+"slug": "bone-1972"
 }
 ]
 },

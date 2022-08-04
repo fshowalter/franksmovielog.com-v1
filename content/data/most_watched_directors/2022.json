@@ -256,6 +256,32 @@
 ]
 },
 {
+"imdb_id": "nm0169540",
+"full_name": "Larry Cohen",
+"slug": null,
+"viewing_count": 2,
+"viewings": [
+{
+"sequence": 1256,
+"venue": "Criterion Channel",
+"date": "2022-02-18",
+"title": "God Told Me To",
+"year": 1976,
+"slug": "god-told-me-to-1976",
+"imdb_id": "tt0075930"
+},
+{
+"sequence": 1311,
+"venue": "Criterion Channel",
+"date": "2022-08-02",
+"title": "Bone",
+"year": 1972,
+"slug": "bone-1972",
+"imdb_id": "tt0068306"
+}
+]
+},
+{
 "imdb_id": "nm0667767",
 "full_name": "George Pavlou",
 "slug": null,
@@ -304,32 +330,6 @@
 "year": 2021,
 "slug": "halloween-kills-2021",
 "imdb_id": "tt10665338"
-}
-]
-},
-{
-"imdb_id": "nm1135423",
-"full_name": "Darren Lynn Bousman",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1305,
-"venue": "Blu-ray",
-"date": "2022-07-22",
-"title": "Saw II",
-"year": 2005,
-"slug": "saw-ii-2005",
-"imdb_id": "tt0432348"
-},
-{
-"sequence": 1307,
-"venue": "Blu-ray",
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006",
-"imdb_id": "tt0489270"
 }
 ]
 }
