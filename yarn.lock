@@ -12793,10 +12793,10 @@ react-refresh@^0.9.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.9.0.tgz#71863337adc3e5c2f8a6bfddd12ae3bfe32aafbf"
   integrity sha512-Gvzk7OZpiqKSkxsQvO/mbTN1poglhmAV7gR/DdIrRrSMXraRQQlfikRJOr3Nb9GTMPC5kof948Zy6jJZIFtDvQ==
 
-react-select-event@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/react-select-event/-/react-select-event-5.5.0.tgz#148067f75846f6bf07254c453083f2d3d59935f6"
-  integrity sha512-BwGjWL9wJxfug32mcIjj9arw9C8vBuW/pGijocFsS0NA8n6QSTmgvs27N1tVk7Pb5cJ1iFpQ5EcjqtO61sA02g==
+react-select-event@^5.5.1:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/react-select-event/-/react-select-event-5.5.1.tgz#d67e04a6a51428b1534b15ecb1b82afbe5edddcb"
+  integrity sha512-goAx28y0+iYrbqZA2FeRTreHHs/ZtSuKxtA+J5jpKT5RHPCbVZJ4MqACfPnWyFXsEec+3dP5bCrNTxIX8oYe9A==
   dependencies:
     "@testing-library/dom" ">=7"
 
