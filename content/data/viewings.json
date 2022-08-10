@@ -9031,7 +9031,7 @@
 "venue": "Netflix",
 "sort_title": "Guest (2014)",
 "year": 2014,
-"slug": null,
+"slug": "the-guest-2014",
 "grade": null,
 "genres": [
 "Action",
@@ -9679,7 +9679,7 @@
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
 "sort_title": "Witch (2015)",
 "year": 2015,
-"slug": null,
+"slug": "the-witch-2015",
 "grade": null,
 "genres": [
 "Drama",
@@ -9986,7 +9986,7 @@
 "venue": "Amazon",
 "sort_title": "Witch (2015)",
 "year": 2015,
-"slug": null,
+"slug": "the-witch-2015",
 "grade": null,
 "genres": [
 "Drama",
@@ -23386,6 +23386,59 @@
 "Comedy",
 "Drama",
 "Thriller"
+]
+},
+{
+"imdb_id": "tt2980592",
+"title": "The Guest",
+"release_date": "2014-01-17",
+"viewing_date": "2022-08-04",
+"viewing_year": "2022",
+"sequence": 1312,
+"venue": "4k UHD Blu-ray",
+"sort_title": "Guest (2014)",
+"year": 2014,
+"slug": "the-guest-2014",
+"grade": "A",
+"genres": [
+"Action",
+"Mystery",
+"Thriller"
+]
+},
+{
+"imdb_id": "tt4263482",
+"title": "The Witch",
+"release_date": "2015-01-23",
+"viewing_date": "2022-08-04",
+"viewing_year": "2022",
+"sequence": 1313,
+"venue": "4k UHD Blu-ray",
+"sort_title": "Witch (2015)",
+"year": 2015,
+"slug": "the-witch-2015",
+"grade": "A",
+"genres": [
+"Drama",
+"Horror",
+"Mystery"
+]
+},
+{
+"imdb_id": "tt0102690",
+"title": "Popcorn",
+"release_date": "1991-02-01",
+"viewing_date": "2022-08-05",
+"viewing_year": "2022",
+"sequence": 1314,
+"venue": "Blu-ray",
+"sort_title": "Popcorn (1991)",
+"year": 1991,
+"slug": "popcorn-1991",
+"grade": "C-",
+"genres": [
+"Comedy",
+"Horror"
 ]
 }
 ]
