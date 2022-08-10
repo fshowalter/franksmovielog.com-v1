@@ -453,8 +453,8 @@
 "imdb_id": "nm0908914",
 "full_name": "Dee Wallace",
 "slug": null,
-"average_grade_value": 2.5566666666666666,
-"review_count": 3,
+"average_grade_value": 2.585,
+"review_count": 4,
 "reviews": [
 {
 "sequence": 1228,
@@ -479,6 +479,14 @@
 "title": "Halloween",
 "year": 2007,
 "slug": "halloween-2007"
+},
+{
+"sequence": 1314,
+"grade_value": 2.67,
+"date": "2022-08-05",
+"title": "Popcorn",
+"year": 1991,
+"slug": "popcorn-1991"
 }
 ]
 },

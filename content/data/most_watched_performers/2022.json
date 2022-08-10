@@ -2,6 +2,50 @@
 "viewing_year": "2022",
 "most_watched": [
 {
+"imdb_id": "nm0908914",
+"full_name": "Dee Wallace",
+"slug": null,
+"viewing_count": 4,
+"viewings": [
+{
+"sequence": 1228,
+"venue": "4k UHD Blu-ray",
+"date": "2022-01-12",
+"title": "The Hills Have Eyes",
+"year": 1977,
+"slug": "the-hills-have-eyes-1977",
+"imdb_id": "tt0077681"
+},
+{
+"sequence": 1231,
+"venue": "iTunes",
+"date": "2022-01-17",
+"title": "3 from Hell",
+"year": 2019,
+"slug": "3-from-hell-2019",
+"imdb_id": "tt8134742"
+},
+{
+"sequence": 1267,
+"venue": "iTunes",
+"date": "2022-03-31",
+"title": "Halloween",
+"year": 2007,
+"slug": "halloween-2007",
+"imdb_id": "tt0373883"
+},
+{
+"sequence": 1314,
+"venue": "Blu-ray",
+"date": "2022-08-05",
+"title": "Popcorn",
+"year": 1991,
+"slug": "popcorn-1991",
+"imdb_id": "tt0102690"
+}
+]
+},
+{
 "imdb_id": "nm0077720",
 "full_name": "Michael Berryman",
 "slug": null,
@@ -33,41 +77,6 @@
 "year": 1984,
 "slug": "the-hills-have-eyes-part-ii-1984",
 "imdb_id": "tt0089274"
-}
-]
-},
-{
-"imdb_id": "nm0908914",
-"full_name": "Dee Wallace",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 1228,
-"venue": "4k UHD Blu-ray",
-"date": "2022-01-12",
-"title": "The Hills Have Eyes",
-"year": 1977,
-"slug": "the-hills-have-eyes-1977",
-"imdb_id": "tt0077681"
-},
-{
-"sequence": 1231,
-"venue": "iTunes",
-"date": "2022-01-17",
-"title": "3 from Hell",
-"year": 2019,
-"slug": "3-from-hell-2019",
-"imdb_id": "tt8134742"
-},
-{
-"sequence": 1267,
-"venue": "iTunes",
-"date": "2022-03-31",
-"title": "Halloween",
-"year": 2007,
-"slug": "halloween-2007",
-"imdb_id": "tt0373883"
 }
 ]
 },
