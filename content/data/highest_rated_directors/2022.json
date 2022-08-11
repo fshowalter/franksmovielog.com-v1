@@ -178,31 +178,6 @@
 ]
 },
 {
-"imdb_id": "nm1135423",
-"full_name": "Darren Lynn Bousman",
-"slug": null,
-"average_grade_value": 2.835,
-"review_count": 2,
-"reviews": [
-{
-"sequence": 1305,
-"grade_value": 2.67,
-"date": "2022-07-22",
-"title": "Saw II",
-"year": 2005,
-"slug": "saw-ii-2005"
-},
-{
-"sequence": 1307,
-"grade_value": 3,
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006"
-}
-]
-},
-{
 "imdb_id": "nm0957772",
 "full_name": "Rob Zombie",
 "slug": null,
@@ -232,6 +207,39 @@
 "title": "Halloween II",
 "year": 2009,
 "slug": "halloween-ii-2009"
+}
+]
+},
+{
+"imdb_id": "nm1135423",
+"full_name": "Darren Lynn Bousman",
+"slug": null,
+"average_grade_value": 2.5566666666666666,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1305,
+"grade_value": 2.67,
+"date": "2022-07-22",
+"title": "Saw II",
+"year": 2005,
+"slug": "saw-ii-2005"
+},
+{
+"sequence": 1307,
+"grade_value": 3,
+"date": "2022-07-28",
+"title": "Saw III",
+"year": 2006,
+"slug": "saw-iii-2006"
+},
+{
+"sequence": 1315,
+"grade_value": 2,
+"date": "2022-08-10",
+"title": "Saw IV",
+"year": 2007,
+"slug": "saw-iv-2007"
 }
 ]
 },
