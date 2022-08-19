@@ -1308,11 +1308,68 @@
 ]
 },
 {
+"imdb_id": "nm0000012",
+"full_name": "Bette Davis",
+"slug": "bette-davis",
+"average_grade_value": 2.3333333333333335,
+"review_count": 6,
+"reviews": [
+{
+"sequence": 924,
+"grade_value": 2.33,
+"date": "2020-11-25",
+"title": "Bad Sister",
+"year": 1931,
+"slug": "the-bad-sister-1931"
+},
+{
+"sequence": 1029,
+"grade_value": 2.67,
+"date": "2021-02-25",
+"title": "Waterloo Bridge",
+"year": 1931,
+"slug": "waterloo-bridge-1931"
+},
+{
+"sequence": 1081,
+"grade_value": 2.33,
+"date": "2021-04-14",
+"title": "Way Back Home",
+"year": 1931,
+"slug": "way-back-home-1931"
+},
+{
+"sequence": 1103,
+"grade_value": 2.67,
+"date": "2021-05-14",
+"title": "Hell's House",
+"year": 1932,
+"slug": "hells-house-1932"
+},
+{
+"sequence": 1133,
+"grade_value": 2,
+"date": "2021-07-18",
+"title": "The Man Who Played God",
+"year": 1932,
+"slug": "the-man-who-played-god-1932"
+},
+{
+"sequence": 1220,
+"grade_value": 2,
+"date": "2021-12-22",
+"title": "The Rich Are Always with Us",
+"year": 1932,
+"slug": "the-rich-are-always-with-us-1932"
+}
+]
+},
+{
 "imdb_id": "nm0000078",
 "full_name": "John Wayne",
 "slug": "john-wayne",
-"average_grade_value": 2.367,
-"review_count": 10,
+"average_grade_value": 2.303636363636364,
+"review_count": 11,
 "reviews": [
 {
 "sequence": 863,
@@ -1393,63 +1450,14 @@
 "title": "Haunted Gold",
 "year": 1932,
 "slug": "haunted-gold-1932"
-}
-]
 },
 {
-"imdb_id": "nm0000012",
-"full_name": "Bette Davis",
-"slug": "bette-davis",
-"average_grade_value": 2.3333333333333335,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 924,
-"grade_value": 2.33,
-"date": "2020-11-25",
-"title": "Bad Sister",
-"year": 1931,
-"slug": "the-bad-sister-1931"
-},
-{
-"sequence": 1029,
-"grade_value": 2.67,
-"date": "2021-02-25",
-"title": "Waterloo Bridge",
-"year": 1931,
-"slug": "waterloo-bridge-1931"
-},
-{
-"sequence": 1081,
-"grade_value": 2.33,
-"date": "2021-04-14",
-"title": "Way Back Home",
-"year": 1931,
-"slug": "way-back-home-1931"
-},
-{
-"sequence": 1103,
-"grade_value": 2.67,
-"date": "2021-05-14",
-"title": "Hell's House",
-"year": 1932,
-"slug": "hells-house-1932"
-},
-{
-"sequence": 1133,
-"grade_value": 2,
-"date": "2021-07-18",
-"title": "The Man Who Played God",
-"year": 1932,
-"slug": "the-man-who-played-god-1932"
-},
-{
-"sequence": 1220,
-"grade_value": 2,
-"date": "2021-12-22",
-"title": "The Rich Are Always with Us",
-"year": 1932,
-"slug": "the-rich-are-always-with-us-1932"
+"sequence": 1322,
+"grade_value": 1.67,
+"date": "2022-08-18",
+"title": "The Man from Monterey",
+"year": 1933,
+"slug": "the-man-from-monterey-1933"
 }
 ]
 }

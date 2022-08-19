@@ -394,23 +394,6 @@
 ]
 },
 {
-"imdb_id": "nm2376614",
-"full_name": "Alexandre Bustillo",
-"slug": null,
-"average_grade_value": 2.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1240,
-"grade_value": 2.33,
-"date": "2022-02-01",
-"title": "Inside",
-"year": 2007,
-"slug": "inside-2007"
-}
-]
-},
-{
 "imdb_id": "nm0000406",
 "full_name": "John Ford",
 "slug": "john-ford",
@@ -498,6 +481,31 @@
 "title": "Death Screams",
 "year": 1982,
 "slug": "death-screams-1982"
+}
+]
+},
+{
+"imdb_id": "nm0942611",
+"full_name": "Mack V. Wright",
+"slug": null,
+"average_grade_value": 1.335,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1288,
+"grade_value": 1,
+"date": "2022-06-19",
+"title": "Haunted Gold",
+"year": 1932,
+"slug": "haunted-gold-1932"
+},
+{
+"sequence": 1322,
+"grade_value": 1.67,
+"date": "2022-08-18",
+"title": "The Man from Monterey",
+"year": 1933,
+"slug": "the-man-from-monterey-1933"
 }
 ]
 }
