@@ -339,105 +339,6 @@
 ]
 },
 {
-"imdb_id": "nm0541908",
-"full_name": "Costas Mandylor",
-"slug": null,
-"average_grade_value": 2.776666666666667,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1307,
-"grade_value": 3,
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006"
-},
-{
-"sequence": 1315,
-"grade_value": 2,
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007"
-},
-{
-"sequence": 1319,
-"grade_value": 3.33,
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008"
-}
-]
-},
-{
-"imdb_id": "nm0751018",
-"full_name": "Betsy Russell",
-"slug": null,
-"average_grade_value": 2.776666666666667,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1307,
-"grade_value": 3,
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006"
-},
-{
-"sequence": 1315,
-"grade_value": 2,
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007"
-},
-{
-"sequence": 1319,
-"grade_value": 3.33,
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008"
-}
-]
-},
-{
-"imdb_id": "nm1083156",
-"full_name": "Bill Vibert",
-"slug": null,
-"average_grade_value": 2.776666666666667,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1307,
-"grade_value": 3,
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006"
-},
-{
-"sequence": 1315,
-"grade_value": 2,
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007"
-},
-{
-"sequence": 1319,
-"grade_value": 3.33,
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008"
-}
-]
-},
-{
 "imdb_id": "nm0005531",
 "full_name": "Donnie Wahlberg",
 "slug": null,
@@ -660,6 +561,39 @@
 ]
 },
 {
+"imdb_id": "nm0285643",
+"full_name": "Francis Ford",
+"slug": null,
+"average_grade_value": 2.5566666666666666,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1292,
+"grade_value": 3,
+"date": "2022-06-21",
+"title": "Pilgrimage",
+"year": 1933,
+"slug": "pilgrimage-1933"
+},
+{
+"sequence": 1293,
+"grade_value": 3,
+"date": "2022-06-22",
+"title": "Steamboat Round the Bend",
+"year": 1935,
+"slug": "steamboat-round-the-bend-1935"
+},
+{
+"sequence": 1322,
+"grade_value": 1.67,
+"date": "2022-08-18",
+"title": "The Man from Monterey",
+"year": 1933,
+"slug": "the-man-from-monterey-1933"
+}
+]
+},
+{
 "imdb_id": "nm0428540",
 "full_name": "Kelly Jones",
 "slug": null,
@@ -722,6 +656,72 @@
 "title": "The Hills Have Eyes Part II",
 "year": 1984,
 "slug": "the-hills-have-eyes-part-ii-1984"
+}
+]
+},
+{
+"imdb_id": "nm0000078",
+"full_name": "John Wayne",
+"slug": "john-wayne",
+"average_grade_value": 1.5566666666666666,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1287,
+"grade_value": 2,
+"date": "2022-06-19",
+"title": "Ride Him, Cowboy",
+"year": 1932,
+"slug": "ride-him-cowboy-1932"
+},
+{
+"sequence": 1288,
+"grade_value": 1,
+"date": "2022-06-19",
+"title": "Haunted Gold",
+"year": 1932,
+"slug": "haunted-gold-1932"
+},
+{
+"sequence": 1322,
+"grade_value": 1.67,
+"date": "2022-08-18",
+"title": "The Man from Monterey",
+"year": 1933,
+"slug": "the-man-from-monterey-1933"
+}
+]
+},
+{
+"imdb_id": "nm1349117",
+"full_name": "Duke",
+"slug": null,
+"average_grade_value": 1.5566666666666666,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1287,
+"grade_value": 2,
+"date": "2022-06-19",
+"title": "Ride Him, Cowboy",
+"year": 1932,
+"slug": "ride-him-cowboy-1932"
+},
+{
+"sequence": 1288,
+"grade_value": 1,
+"date": "2022-06-19",
+"title": "Haunted Gold",
+"year": 1932,
+"slug": "haunted-gold-1932"
+},
+{
+"sequence": 1322,
+"grade_value": 1.67,
+"date": "2022-08-18",
+"title": "The Man from Monterey",
+"year": 1933,
+"slug": "the-man-from-monterey-1933"
 }
 ]
 }
