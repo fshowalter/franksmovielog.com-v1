@@ -13,57 +13,58 @@
 /sitemap.xml /sitemap/sitemap-index.xml 301
 
 # old cast-and-crew to new watchlist entries
+/browse/dario-argento /watchlist/directors/dario-argento 301
+/cast-and-crew/boris-karloff-i /watchlist/performers/boris-karloff 301
 /cast-and-crew/christopher-lee-i /watchlist/performers/christopher-lee 301
 /cast-and-crew/humphrey-bogart /watchlist/performers/humphrey-bogart 301
 /cast-and-crew/john-wayne-i /watchlist/performers/john-wayne 301
-/cast-and-crew/sam-peckinpah /watchlist/directors/sam-peckinpah 301
-/browse/dario-argento /watchlist/directors/dario-argento 301
-/cast-and-crew/boris-karloff-i /watchlist/performers/boris-karloff 301
 /cast-and-crew/peter-cushing /watchlist/performers/peter-cushing 301
-/cast-and-crew/william-powell-i /watchlist/performers/william-powell 301
 /cast-and-crew/robert-mitchum-i /watchlist/performers/robert-mitchum 301
+/cast-and-crew/sam-peckinpah /watchlist/directors/sam-peckinpah 301
+/cast-and-crew/william-powell-i /watchlist/performers/william-powell 301
 
 # old review links to new
-/browse/reviews/dont-torture-a-duckling-1972 /reviews/dont-torture-a-duckling-1972 301
-/browse/reviews/up-the-river-1930 /reviews/up-the-river-1930 301
-/browse/reviews/kill-a-dragon-1967 /reviews/kill-a-dragon-1967 301
-/reviews/island-of-death-1977 /reviews/island-of-death-1976 301
-/reviews/curse-of-the-demon-1958 /reviews/curse-of-the-demon-1957 301
-/reviews/l-age-d-or-1930 /reviews/lage-dor-1930 301
-/movies/the-cabin-in-the-woods-2011 /reviews/the-cabin-in-the-woods-2011 301
-/browse/reviews/friday-the-13th-part-iii-1982 /reviews/friday-the-13th-part-iii-1982 301
-/browse/reviews/higher-and-higher-1943 /reviews/higher-and-higher-1943 301
-/browse/reviews/golden-boy-1939 /reviews/golden-boy-1939 301
-/reviews/jason-lives-friday-the-13th-part-vi-1986 /reviews/friday-the-13th-part-vi-jason-lives-1986 301
-/browse/reviews/watchmen-2009 /reviews/watchmen-2009 301
-/browse/reviews/high-pressure-1932 /reviews/high-pressure-1932 301
-/browse/reviews/race-with-the-devil-1975 /reviews/race-with-the-devil-1975 301
 /browse/reviews/24-hour-party-people-2002 /reviews/24-hour-party-people-2002 301
 /browse/reviews/better-off-dead-1985 /reviews/better-off-dead-1985 301
-/reviews/the-brute-and-the-beast-1966 /reviews/massacre-time-1966 301
-/reviews/bill-ted-face-the-music-2020 /reviews/bill-and-ted-face-the-music-2020 301
-/browse/reviews/the-last-house-on-the-left-1972 /reviews/the-last-house-on-the-left-1972 301
-/browse/reviews/the-crowd-roars-1932 /reviews/the-crowd-roars-1932 301
-/browse/reviews/scarface-1983 /reviews/scarface-1983 301
-/browse/reviews/halloween-2007 /reviews/halloween-2007 301
-/movies/jewel-robbery-1932 /reviews/jewel-robbery-1932 301
-/browse/reviews/pilgrimage-1933 /reviews/pilgrimage-1933 301
 /browse/reviews/doctor-bull-1933 /reviews/doctor-bull-1933 301
+/browse/reviews/dont-torture-a-duckling-1972 /reviews/dont-torture-a-duckling-1972 301
+/browse/reviews/friday-the-13th-part-iii-1982 /reviews/friday-the-13th-part-iii-1982 301
+/browse/reviews/golden-boy-1939 /reviews/golden-boy-1939 301
+/browse/reviews/halloween-2007 /reviews/halloween-2007 301
+/browse/reviews/high-pressure-1932 /reviews/high-pressure-1932 301
+/browse/reviews/higher-and-higher-1943 /reviews/higher-and-higher-1943 301
+/browse/reviews/kill-a-dragon-1967 /reviews/kill-a-dragon-1967 301
+/browse/reviews/pilgrimage-1933 /reviews/pilgrimage-1933 301
+/browse/reviews/race-with-the-devil-1975 /reviews/race-with-the-devil-1975 301
+/browse/reviews/scarface-1983 /reviews/scarface-1983 301
+/browse/reviews/the-crowd-roars-1932 /reviews/the-crowd-roars-1932 301
+/browse/reviews/the-last-house-on-the-left-1972 /reviews/the-last-house-on-the-left-1972 301
+/browse/reviews/up-the-river-1930 /reviews/up-the-river-1930 301
+/browse/reviews/watchmen-2009 /reviews/watchmen-2009 301
+/movies/jewel-robbery-1932 /reviews/jewel-robbery-1932 301
+/movies/the-cabin-in-the-woods-2011 /reviews/the-cabin-in-the-woods-2011 301
+/movies/virginia-city-1940 /reviews/virginia-city-1940 301
+/reviews/bill-ted-face-the-music-2020 /reviews/bill-and-ted-face-the-music-2020 301
+/reviews/curse-of-the-demon-1958 /reviews/curse-of-the-demon-1957 301
+/reviews/island-of-death-1977 /reviews/island-of-death-1976 301
+/reviews/jason-lives-friday-the-13th-part-vi-1986 /reviews/friday-the-13th-part-vi-jason-lives-1986 301
+/reviews/l-age-d-or-1930 /reviews/lage-dor-1930 301
+/reviews/the-brute-and-the-beast-1966 /reviews/massacre-time-1966 301
 
 # misc spam
-/config.bak.php /gone 410
-/wp-admin/config.bak.php /gone 410
-/wp-content/config.bak.php /gone 410
-/wp-login.php /gone 410
-/wp-content/wp-1ogin_bak.php /gone 410
-/.env /gone 410
-/wp-content /gone 410
-/admin /gone 410
-/wlwmanifest.xml /gone 410
 */wlwmanifest.xml /gone 410
-/xmlrpc.php /gone 410
-//xmlrpc.php /gone 410
+/.env /gone 410
 // /gone 410
+//xmlrpc.php /gone 410
+/admin /gone 410
+/config.bak.php /gone 410
+/wlwmanifest.xml /gone 410
+/wp-admin/config.bak.php /gone 410
+/wp-content /gone 410
+/wp-content/config.bak.php /gone 410
+/wp-content/wp-1ogin_bak.php /gone 410
+/wp-login.php /gone 410
+/xmlrpc.php /gone 410
 
 
 # old favicons
@@ -75,20 +76,20 @@
 /apple-touch-icon-precomposed.png /gone 410
 
 # old cast and crew links we're not bringing back
-/cast-and-crew/yakima-canutt /gone 410
 /cast-and-crew/betta-st-john /gone 410
-/cast-and-crew/robin-atkin-downes /gone 410
-/cast-and-crew/maureen-o-sullivan-i /gone 410
-/watchlist/cast/bill-murray /gone 410
 /cast-and-crew/bill-finger-ii /gone 410
-/cast-and-crew/martin-kitrosser /gone 410
-/cast-and-crew/frank-forsyth-i /gone 410
 /cast-and-crew/bob-kane-i /gone 410
 /cast-and-crew/corey-feldman-i /gone 410
-/cast-and-crew/joan-blondell /gone 410
-/cast-and-crew/len-wein /gone 410
 /cast-and-crew/daniel-johns-ii /gone 410
+/cast-and-crew/frank-forsyth-i /gone 410
+/cast-and-crew/joan-blondell /gone 410
 /cast-and-crew/john-byrne-vi /gone 410
+/cast-and-crew/len-wein /gone 410
+/cast-and-crew/martin-kitrosser /gone 410
+/cast-and-crew/maureen-o-sullivan-i /gone 410
+/cast-and-crew/robin-atkin-downes /gone 410
+/cast-and-crew/yakima-canutt /gone 410
+/watchlist/cast/bill-murray /gone 410
 
 # misc old links
 /images/5-stars-4661cb2a.svg /gone 410
@@ -98,14 +99,25 @@
 /ads.txt /gone 410
 
 # resized images
-/static/858407fbd7fb987b9370046790b1b13f/c3c10/the-black-watch-1929.jpg /gone 410
-/static/5e11eb0dc0e8e553d88f11406119e75c/5dbd5/the-bird-with-the-crystal-plumage-1970.jpg /gone 410
-/static/d0e873e54a1fdf5942de30af5a43281d/5dbd5/iron-man-1931.jpg /gone 410
-/static/9b24450a272c100c7eb6117cb00d33ba/5dbd5/up-the-river-1930.jpg /gone 410
+/static/0a25337eb65debb8e3cc2494aaab3ecd/e34c3/lilith-1964.jpg /gone 410
+/static/0b05ab0400c27a2b949fbf6da0a2bd10/8a152/stereo-tile-3b-of-a-caee-educational-mosaic-1969.jpg /gone 410
+/static/0b05ab0400c27a2b949fbf6da0a2bd10/d5f84/stereo-tile-3b-of-a-caee-educational-mosaic-1969.jpg /gone 410
 /static/25c9a3a2762194db43074862666ca4a1/c3c10/hellraiser-1987.jpg /gone 410
-/static/8a7671d38bd11ec7ee4ee4541b3ba435/c3c10/christmas-evil-1980.jpg /gone 410
-/static/c128365073d59f5914889150b7c65963/5dbd5/murder-1930.jpg /gone 410
-/static/7ad1ba6d2a2a9f332859ca537e0f666a/5dbd5/hocus-pocus-1993.jpg /gone 410
 /static/35316c8b3d780c3741cc191b16feeeaf/5dbd5/hatchet-iii-2013.jpg /gone 410
+/static/3f6ee8b9c5f9225728d371d02053522c/c3c10/seed-of-chucky-2004.jpg /gone 410
 /static/43f5a4f3cb82d0da663765eeffb8d8ab/d5f84/the-bad-sister-1931.jpg /gone 410
+/static/4b3ceecf101f36c29c230945f2c8ab27/d5f84/dracula-1931.jpg /gone 410
+/static/5e11eb0dc0e8e553d88f11406119e75c/5dbd5/the-bird-with-the-crystal-plumage-1970.jpg /gone 410
+/static/7ad1ba6d2a2a9f332859ca537e0f666a/5dbd5/hocus-pocus-1993.jpg /gone 410
+/static/837f0e7da9ab85f5004c2c4142f008a2/5dbd5/big-city-blues-1932.jpg /gone 410
+/static/858407fbd7fb987b9370046790b1b13f/c3c10/the-black-watch-1929.jpg /gone 410
+/static/8a7671d38bd11ec7ee4ee4541b3ba435/c3c10/christmas-evil-1980.jpg /gone 410
+/static/9b24450a272c100c7eb6117cb00d33ba/5dbd5/up-the-river-1930.jpg /gone 410
+/static/9fdc5437ca57b21b15abcfa7cd37a946/d5f84/bride-of-chucky-1998.jpg /gone 410
+/static/b88cdc25766c013ae5f34d44c7d8ec6e/5dbd5/golden-boy-1939.jpg /gone 410
+/static/c128365073d59f5914889150b7c65963/5dbd5/murder-1930.jpg /gone 410
+/static/c471fc59a0d1e628ef8e580de080ec94/936aa/the-wedding-party-1969.jpg /gone 410
 /static/cc73dd17189f653a28459a9080c92c3c/936aa/the-bad-sister-1931.jpg /gone 410
+/static/d0e873e54a1fdf5942de30af5a43281d/5dbd5/iron-man-1931.jpg /gone 410
+/static/ee240c9077a1177453de096a33213005/5dbd5/the-big-trail-1930.jpg /gone 410
+/static/fe7d906b5e92641d7e9f305a93a0a6db/5dbd5/the-cat-o-nine-tails-1971.jpg /gone 410
