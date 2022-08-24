@@ -449,63 +449,6 @@
 ]
 },
 {
-"imdb_id": "nm0001772",
-"full_name": "Patrick Stewart",
-"slug": null,
-"average_grade_value": 3.1666666666666665,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 978,
-"grade_value": 4,
-"date": "2021-01-09",
-"title": "X-Men",
-"year": 2000,
-"slug": "x-men-2000"
-},
-{
-"sequence": 986,
-"grade_value": 3,
-"date": "2021-01-16",
-"title": "X2: X-Men United",
-"year": 2003,
-"slug": "x2-x-men-united-2003"
-},
-{
-"sequence": 995,
-"grade_value": 1,
-"date": "2021-01-23",
-"title": "X-Men: The Last Stand",
-"year": 2006,
-"slug": "x-men-the-last-stand-2006"
-},
-{
-"sequence": 1024,
-"grade_value": 3.33,
-"date": "2021-02-20",
-"title": "X-Men: Days of Future Past",
-"year": 2014,
-"slug": "x-men-days-of-future-past-2014"
-},
-{
-"sequence": 1048,
-"grade_value": 4,
-"date": "2021-03-13",
-"title": "Logan",
-"year": 2017,
-"slug": "logan-2017"
-},
-{
-"sequence": 1306,
-"grade_value": 3.67,
-"date": "2022-07-23",
-"title": "Doctor Strange in the Multiverse of Madness",
-"year": 2022,
-"slug": "doctor-strange-in-the-multiverse-of-madness-2022"
-}
-]
-},
-{
 "imdb_id": "nm0413168",
 "full_name": "Hugh Jackman",
 "slug": null,
@@ -1255,6 +1198,63 @@
 "title": "Murders in the Rue Morgue",
 "year": 1932,
 "slug": "murders-in-the-rue-morgue-1932"
+}
+]
+},
+{
+"imdb_id": "nm0000007",
+"full_name": "Humphrey Bogart",
+"slug": "humphrey-bogart",
+"average_grade_value": 2.445,
+"review_count": 6,
+"reviews": [
+{
+"sequence": 912,
+"grade_value": 3.67,
+"date": "2020-11-06",
+"title": "Up the River",
+"year": 1930,
+"slug": "up-the-river-1930"
+},
+{
+"sequence": 924,
+"grade_value": 2.33,
+"date": "2020-11-25",
+"title": "Bad Sister",
+"year": 1931,
+"slug": "the-bad-sister-1931"
+},
+{
+"sequence": 928,
+"grade_value": 1,
+"date": "2020-11-27",
+"title": "A Holy Terror",
+"year": 1931,
+"slug": "a-holy-terror-1931"
+},
+{
+"sequence": 1003,
+"grade_value": 2.33,
+"date": "2021-01-31",
+"title": "Isle of Fury",
+"year": 1936,
+"slug": "isle-of-fury-1936"
+},
+{
+"sequence": 1204,
+"grade_value": 2.67,
+"date": "2021-12-10",
+"title": "Love Affair",
+"year": 1932,
+"slug": "love-affair-1932"
+},
+{
+"sequence": 1324,
+"grade_value": 2.67,
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940"
 }
 ]
 },
