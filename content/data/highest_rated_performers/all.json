@@ -2,6 +2,63 @@
 "review_year": "all",
 "highest_rated": [
 {
+"imdb_id": "nm0000489",
+"full_name": "Christopher Lee",
+"slug": "christopher-lee",
+"average_grade_value": 4.4433333333333325,
+"review_count": 6,
+"reviews": [
+{
+"sequence": 872,
+"grade_value": 5,
+"date": "2020-09-19",
+"title": "The Curse of Frankenstein",
+"year": 1957,
+"slug": "the-curse-of-frankenstein-1957"
+},
+{
+"sequence": 907,
+"grade_value": 5.33,
+"date": "2020-10-31",
+"title": "Fright Night",
+"year": 1985,
+"slug": "fright-night-1985"
+},
+{
+"sequence": 936,
+"grade_value": 4.67,
+"date": "2020-12-08",
+"title": "Horror of Dracula",
+"year": 1958,
+"slug": "horror-of-dracula-1958"
+},
+{
+"sequence": 1168,
+"grade_value": 5.33,
+"date": "2021-09-28",
+"title": "Fright Night",
+"year": 1985,
+"slug": "fright-night-1985"
+},
+{
+"sequence": 1227,
+"grade_value": 2.33,
+"date": "2022-01-10",
+"title": "Corridor of Mirrors",
+"year": 1948,
+"slug": "corridor-of-mirrors-1948"
+},
+{
+"sequence": 1325,
+"grade_value": 4,
+"date": "2022-08-20",
+"title": "Hannie Caulder",
+"year": 1971,
+"slug": "hannie-caulder-1971"
+}
+]
+},
+{
 "imdb_id": "nm1212722",
 "full_name": "Benedict Cumberbatch",
 "slug": null,
@@ -874,63 +931,6 @@
 "title": "Halloween II",
 "year": 2009,
 "slug": "halloween-ii-2009"
-}
-]
-},
-{
-"imdb_id": "nm0278073",
-"full_name": "William Finley",
-"slug": null,
-"average_grade_value": 2.6666666666666665,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 969,
-"grade_value": 3.67,
-"date": "2021-01-01",
-"title": "Murder \u00e0 la Mod",
-"year": 1968,
-"slug": "murder-a-la-mod-1968"
-},
-{
-"sequence": 1038,
-"grade_value": 2.33,
-"date": "2021-03-04",
-"title": "The Wedding Party",
-"year": 1969,
-"slug": "the-wedding-party-1969"
-},
-{
-"sequence": 1056,
-"grade_value": 1,
-"date": "2021-03-21",
-"title": "Dionysus in '69",
-"year": 1970,
-"slug": "dionysus-in-69-1970"
-},
-{
-"sequence": 1095,
-"grade_value": 3.33,
-"date": "2021-04-29",
-"title": "Sisters",
-"year": 1972,
-"slug": "sisters-1972"
-},
-{
-"sequence": 1122,
-"grade_value": 4,
-"date": "2021-07-01",
-"title": "Phantom of the Paradise",
-"year": 1974,
-"slug": "phantom-of-the-paradise-1974"
-},
-{
-"sequence": 1172,
-"grade_value": 1.67,
-"date": "2021-10-01",
-"title": "The Fury",
-"year": 1978,
-"slug": "the-fury-1978"
 }
 ]
 },
