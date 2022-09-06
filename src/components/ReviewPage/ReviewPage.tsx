@@ -113,16 +113,14 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              {performer.avatar && (
-                <GatsbyImage
-                  image={performer.avatar.childImageSharp.gatsbyImageData}
-                  alt={performer.name}
-                  className={relatedAvaterCss}
-                />
-              )}{" "}
               <span>
                 More with{" "}
-                <span className={relatedNameCss}>{performer.name}</span>
+                <Link
+                  to={`/watchlist/performers/${performer.slug}/`}
+                  className={relatedNameCss}
+                >
+                  {performer.name}
+                </Link>
               </span>
             </h3>
             <Link

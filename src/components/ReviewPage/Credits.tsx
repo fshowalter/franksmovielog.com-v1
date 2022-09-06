@@ -1,5 +1,4 @@
 import { GatsbyImage } from "gatsby-plugin-image";
-import React from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import WatchlistLinks from "../WatchlistLinks";
 import {

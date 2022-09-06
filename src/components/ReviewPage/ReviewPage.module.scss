@@ -255,8 +255,7 @@
 }
 
 .relatedNameCss {
-  color: var(--color-fg-muted);
-  font-weight: 600;
+  color: var(--color-fg-accent);
   letter-spacing: 0.2px;
 }
 
@@ -264,7 +263,7 @@
   border-radius: 50%;
   box-shadow: 0 0 0 1px var(--color-border-default);
   display: none;
-  margin-right: 1ch;
+  margin-left: 1ch;
   transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
 
   @media (min-width: breakpoints.$tablet) {
