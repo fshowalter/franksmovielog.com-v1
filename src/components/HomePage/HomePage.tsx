@@ -143,16 +143,6 @@ export default function HomePage({
   );
 }
 
-interface WatchlistEntity {
-  name: string;
-  slug: string;
-  avatar: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
 interface PageQueryResult {
   update: {
     nodes: {
@@ -173,12 +163,6 @@ interface PageQueryResult {
           childImageSharp: {
             gatsbyImageData: IGatsbyImageData;
           };
-        };
-        watchlist: {
-          performers: WatchlistEntity[];
-          directors: WatchlistEntity[];
-          writers: WatchlistEntity[];
-          collections: WatchlistEntity[];
         };
       };
     }[];
@@ -215,72 +199,6 @@ export const pageQuery = graphql`
                 width: 640
                 placeholder: TRACED_SVG
               )
-            }
-          }
-          watchlist {
-            directors {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-            }
-            writers {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-            }
-            performers {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-            }
-            collections {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
             }
           }
         }
