@@ -7,7 +7,6 @@ import Grade from "../Grade";
 import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
-import WatchlistLinks from "../WatchlistLinks";
 import {
   articleBodyCss,
   articleFooterCss,
@@ -23,7 +22,6 @@ import {
   reviewGradeCss,
   reviewHeaderCss,
   reviewYearCss,
-  watchlistLinksCss,
 } from "./HomePage.module.scss";
 import Pagination from "./Pagination";
 
@@ -125,10 +123,6 @@ export default function HomePage({
                     <div className={dateCss}>
                       <DateIcon /> {review.frontmatter.date}
                     </div>
-                    <WatchlistLinks
-                      movie={movie}
-                      className={watchlistLinksCss}
-                    />
                   </footer>
                 </article>
               </li>
