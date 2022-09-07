@@ -210,11 +210,11 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
 }
 
 const gradeMap: Record<string, string> = {
-  A: "&#9733;&#9733;&#9733;&#9733;&#9733;",
-  B: "&#9733;&#9733;&#9733;&#9733;",
-  C: "&#9733;&#9733;&#9733;",
-  D: "&#9733;&#9733;",
-  F: "&#9733;",
+  A: "★★★★★",
+  B: "★★★★",
+  C: "★★★",
+  D: "★★",
+  F: "★",
 };
 
 function starsForGrade(grade: string) {
