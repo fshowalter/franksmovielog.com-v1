@@ -52,7 +52,7 @@ function HeadBuilder({
   };
   return (
     <>
-      <title>{meta.title}</title>
+      <title>{buildTitle(pageTitle, siteTitle)}</title>
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -61,7 +61,7 @@ function HeadBuilder({
       <meta name="og:image" content={meta.image} />
       <meta property="og:url" content={meta.url} />
       {article && <meta property="og:type" content="article" />}
-      <meta property="og:title" content={meta.title} />
+      <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={meta.description} />
     </>
   );
