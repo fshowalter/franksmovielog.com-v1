@@ -43,36 +43,36 @@ describe("HeadBuilder", () => {
     );
 
     expect(document.head).toMatchInlineSnapshot(`
-        <head>
-          <title>
-            Test Page | Frank's Movie Log
-          </title>
-          <meta
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-            name="viewport"
-          />
-          <meta
-            content="A generic description."
-            name="description"
-          />
-          <meta
-            content="https://www.franksmovielog.com/assets/default_og.jpg"
-            name="og:image"
-          />
-          <meta
-            content="https://www.franksmovielog.com/test"
-            property="og:url"
-          />
-          <meta
-            content="Test Page | Frank's Movie Log"
-            property="og:title"
-          />
-          <meta
-            content="A generic description."
-            property="og:description"
-          />
-        </head>
-      `);
+      <head>
+        <title>
+          Test Page | Frank's Movie Log
+        </title>
+        <meta
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name="viewport"
+        />
+        <meta
+          content="A generic description."
+          name="description"
+        />
+        <meta
+          content="https://www.franksmovielog.com/assets/default_og.jpg"
+          name="og:image"
+        />
+        <meta
+          content="https://www.franksmovielog.com/test"
+          property="og:url"
+        />
+        <meta
+          content="Test Page"
+          property="og:title"
+        />
+        <meta
+          content="A generic description."
+          property="og:description"
+        />
+      </head>
+    `);
   });
 
   // Helmet uses requestAnimationFrame to ensure DOM is synced.
@@ -94,40 +94,40 @@ describe("HeadBuilder", () => {
     );
 
     expect(document.head).toMatchInlineSnapshot(`
-          <head>
-            <title>
-              Test Page | Frank's Movie Log
-            </title>
-            <meta
-              content="width=device-width, initial-scale=1, shrink-to-fit=no"
-              name="viewport"
-            />
-            <meta
-              content="A generic description."
-              name="description"
-            />
-            <meta
-              content="https://www.franksmovielog.com/assets/default_og.jpg"
-              name="og:image"
-            />
-            <meta
-              content="https://www.franksmovielog.com/test"
-              property="og:url"
-            />
-            <meta
-              content="article"
-              property="og:type"
-            />
-            <meta
-              content="Test Page | Frank's Movie Log"
-              property="og:title"
-            />
-            <meta
-              content="A generic description."
-              property="og:description"
-            />
-          </head>
-        `);
+      <head>
+        <title>
+          Test Page | Frank's Movie Log
+        </title>
+        <meta
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name="viewport"
+        />
+        <meta
+          content="A generic description."
+          name="description"
+        />
+        <meta
+          content="https://www.franksmovielog.com/assets/default_og.jpg"
+          name="og:image"
+        />
+        <meta
+          content="https://www.franksmovielog.com/test"
+          property="og:url"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="Test Page"
+          property="og:title"
+        />
+        <meta
+          content="A generic description."
+          property="og:description"
+        />
+      </head>
+    `);
   });
 
   it("does not set sub-title on root", () => {
