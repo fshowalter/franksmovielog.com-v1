@@ -209,13 +209,32 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
   );
 }
 
+const gradeMap: Record<string, string> = {
+  A: "&#9733;&#9733;&#9733;&#9733;&#9733;",
+  B: "&#9733;&#9733;&#9733;&#9733;",
+  C: "&#9733;&#9733;&#9733;",
+  D: "&#9733;&#9733;",
+  F: "&#9733;",
+};
+
+function starsForGrade(grade: string) {
+  if (grade in gradeMap) {
+    return gradeMap[grade];
+  }
+
+  return "";
+}
+
 export function Head({ data }: { data: PageQueryResult }): JSX.Element {
   const { movie } = data;
+  const mostRecentReview = movie.reviews[0];
 
   return (
     <HeadBuilder
       pageTitle={`${movie.title} (${movie.year})`}
-      description={`A review of the ${movie.year} film ${movie.title}.`}
+      description={`${starsForGrade(mostRecentReview.frontmatter.grade[0])} ${
+        mostRecentReview.excerpt
+      }`}
       image={movie.seoImage.childImageSharp.resize.src}
       article
     />
@@ -396,6 +415,7 @@ export interface Movie {
       sequence: number;
     };
     linkedHtml: string;
+    excerpt: string;
   }[];
   olderViewings: {
     venue: string;
@@ -456,6 +476,7 @@ export const pageQuery = graphql`
           venueNotes: venue_notes
         }
         linkedHtml
+        excerpt
       }
       browseMore {
         imdbId: imdb_id
