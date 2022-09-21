@@ -388,39 +388,6 @@
 ]
 },
 {
-"imdb_id": "nm0621176",
-"full_name": "Tony Nappo",
-"slug": null,
-"average_grade_value": 2.6666666666666665,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1305,
-"grade_value": 2.67,
-"date": "2022-07-22",
-"title": "Saw II",
-"year": 2005,
-"slug": "saw-ii-2005"
-},
-{
-"sequence": 1315,
-"grade_value": 2,
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007"
-},
-{
-"sequence": 1319,
-"grade_value": 3.33,
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008"
-}
-]
-},
-{
 "imdb_id": "nm0908914",
 "full_name": "Dee Wallace",
 "slug": null,
@@ -594,11 +561,44 @@
 ]
 },
 {
+"imdb_id": "nm0610253",
+"full_name": "Alan Mowbray",
+"slug": null,
+"average_grade_value": 2.4466666666666668,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1289,
+"grade_value": 2.67,
+"date": "2022-06-19",
+"title": "Jewel Robbery",
+"year": 1932,
+"slug": "jewel-robbery-1932"
+},
+{
+"sequence": 1329,
+"grade_value": 3.67,
+"date": "2022-08-26",
+"title": "Topper",
+"year": 1937,
+"slug": "topper-1937"
+},
+{
+"sequence": 1337,
+"grade_value": 1,
+"date": "2022-09-02",
+"title": "Every Girl Should Be Married",
+"year": 1948,
+"slug": "every-girl-should-be-married-1948"
+}
+]
+},
+{
 "imdb_id": "nm0000026",
 "full_name": "Cary Grant",
 "slug": "cary-grant",
-"average_grade_value": 2.223333333333333,
-"review_count": 3,
+"average_grade_value": 1.9175,
+"review_count": 4,
 "reviews": [
 {
 "sequence": 1266,
@@ -623,6 +623,14 @@
 "title": "Penny Serenade",
 "year": 1941,
 "slug": "penny-serenade-1941"
+},
+{
+"sequence": 1337,
+"grade_value": 1,
+"date": "2022-09-02",
+"title": "Every Girl Should Be Married",
+"year": 1948,
+"slug": "every-girl-should-be-married-1948"
 }
 ]
 },
