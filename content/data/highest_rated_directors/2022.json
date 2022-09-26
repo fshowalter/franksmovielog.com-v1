@@ -178,6 +178,31 @@
 ]
 },
 {
+"imdb_id": "nm0002031",
+"full_name": "Michael Curtiz",
+"slug": null,
+"average_grade_value": 2.67,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1324,
+"grade_value": 2.67,
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940"
+},
+{
+"sequence": 1339,
+"grade_value": 2.67,
+"date": "2022-09-06",
+"title": "Force of Arms",
+"year": 1951,
+"slug": "force-of-arms-1951"
+}
+]
+},
+{
 "imdb_id": "nm0957772",
 "full_name": "Rob Zombie",
 "slug": null,
@@ -373,23 +398,6 @@
 "title": "Black Widow",
 "year": 2021,
 "slug": "black-widow-2021"
-}
-]
-},
-{
-"imdb_id": "nm0219136",
-"full_name": "Claire Denis",
-"slug": null,
-"average_grade_value": 2.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1238,
-"grade_value": 2.33,
-"date": "2022-01-30",
-"title": "Trouble Every Day",
-"year": 2001,
-"slug": "trouble-every-day-2001"
 }
 ]
 },
