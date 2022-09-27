@@ -2472,7 +2472,7 @@
 "imdb_id": "nm0000053",
 "full_name": "Robert Mitchum",
 "slug": "robert-mitchum",
-"viewing_count": 25,
+"viewing_count": 26,
 "viewings": [
 {
 "sequence": 38,
@@ -2615,7 +2615,7 @@
 "date": "2015-01-09",
 "title": "Rachel and the Stranger",
 "year": 1948,
-"slug": null,
+"slug": "rachel-and-the-stranger-1948",
 "imdb_id": "tt0040720"
 },
 {
@@ -2698,6 +2698,15 @@
 "year": 1943,
 "slug": "colt-comrades-1943",
 "imdb_id": "tt0035744"
+},
+{
+"sequence": 1340,
+"venue": "Watch TCM",
+"date": "2022-09-06",
+"title": "Rachel and the Stranger",
+"year": 1948,
+"slug": "rachel-and-the-stranger-1948",
+"imdb_id": "tt0040720"
 }
 ]
 },
