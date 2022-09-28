@@ -39,6 +39,7 @@ import {
   reviewGradeCss,
   reviewsListCss,
   reviewsListItemCss,
+  reviewsWrapCss,
   slugContainerCss,
   slugDateCss,
   slugFootnoteCss,
@@ -292,74 +293,79 @@ export default function ReviewPage({
             alt={`A still from ${movie.title} (${movie.year})`}
           />
         )}
-        <ul className={reviewsListCss}>
-          {movie.reviews.map((review) => (
-            <li
-              className={reviewsListItemCss}
-              key={review.frontmatter.sequence}
-            >
-              <article>
-                <header
-                  className={slugContainerCss}
-                  id={review.frontmatter.sequence.toString()}
-                >
-                  <DateIcon className={reviewDateIconCss} />{" "}
-                  <Grade
-                    grade={review.frontmatter.grade}
-                    className={reviewGradeCss}
+        <div className={reviewsWrapCss}>
+          <ul className={reviewsListCss}>
+            {movie.reviews.map((review) => (
+              <li
+                className={reviewsListItemCss}
+                key={review.frontmatter.sequence}
+              >
+                <article>
+                  <header
+                    className={slugContainerCss}
+                    id={review.frontmatter.sequence.toString()}
+                  >
+                    <DateIcon className={reviewDateIconCss} />{" "}
+                    <Grade
+                      grade={review.frontmatter.grade}
+                      className={reviewGradeCss}
+                    />
+                    <div>
+                      <span className={slugOnCss}> on </span>
+                      <span className={slugDateCss}>
+                        {review.frontmatter.date}
+                      </span>
+                      <span className={slugViaCss}>
+                        {" "}
+                        via {review.frontmatter.venue}
+                        {review.frontmatter.venueNotes && (
+                          <span className={slugFootnoteCss}>
+                            {" "}
+                            <sup id={`fnref:${review.frontmatter.sequence}-v`}>
+                              <a href={`#fn:${review.frontmatter.sequence}-v`}>
+                                V
+                              </a>
+                            </sup>
+                          </span>
+                        )}
+                      </span>
+                    </div>
+                  </header>
+                  <RenderedMarkdown
+                    className={reviewContentCss}
+                    // eslint-disable-next-line react/no-danger
+                    text={review.linkedHtml}
                   />
-                  <div>
-                    <span className={slugOnCss}> on </span>
-                    <span className={slugDateCss}>
-                      {review.frontmatter.date}
+                </article>
+              </li>
+            ))}
+          </ul>
+          {movie.olderViewings.length > 0 && (
+            <div className={olderViewingsContainerCss}>
+              <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>
+              <ul className={olderViewingsListCss}>
+                {movie.olderViewings.map((viewing) => (
+                  <li
+                    key={viewing.sequence}
+                    className={olderViewingsListItemCss}
+                  >
+                    <DateIcon className={olderViewingsDateIconCss} />{" "}
+                    <span className={olderViewingSlugCss}>
+                      <span className={olderViewingsDateCss}>
+                        {viewing.viewingDate}
+                      </span>{" "}
+                      <span className={olderViewingsViaCss}>via</span>{" "}
+                      <span className={olderViewingsVenueCss}>
+                        {viewing.venue}
+                      </span>
                     </span>
-                    <span className={slugViaCss}>
-                      {" "}
-                      via {review.frontmatter.venue}
-                      {review.frontmatter.venueNotes && (
-                        <span className={slugFootnoteCss}>
-                          {" "}
-                          <sup id={`fnref:${review.frontmatter.sequence}-v`}>
-                            <a href={`#fn:${review.frontmatter.sequence}-v`}>
-                              V
-                            </a>
-                          </sup>
-                        </span>
-                      )}
-                    </span>
-                  </div>
-                </header>
-                <RenderedMarkdown
-                  className={reviewContentCss}
-                  // eslint-disable-next-line react/no-danger
-                  text={review.linkedHtml}
-                />
-              </article>
-            </li>
-          ))}
-        </ul>
-        {movie.olderViewings.length > 0 && (
-          <div className={olderViewingsContainerCss}>
-            <h3 className={olderViewingsHeadingCss}>Older Viewings</h3>
-            <ul className={olderViewingsListCss}>
-              {movie.olderViewings.map((viewing) => (
-                <li key={viewing.sequence} className={olderViewingsListItemCss}>
-                  <DateIcon className={olderViewingsDateIconCss} />{" "}
-                  <span className={olderViewingSlugCss}>
-                    <span className={olderViewingsDateCss}>
-                      {viewing.viewingDate}
-                    </span>{" "}
-                    <span className={olderViewingsViaCss}>via</span>{" "}
-                    <span className={olderViewingsVenueCss}>
-                      {viewing.venue}
-                    </span>
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        <Credits movie={movie} className={creditsCss} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <Credits movie={movie} className={creditsCss} />
+        </div>
         <Related movie={movie} />
       </main>
       {structuredData && (

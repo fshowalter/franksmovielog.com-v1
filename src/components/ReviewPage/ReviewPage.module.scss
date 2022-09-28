@@ -12,7 +12,7 @@
   margin: 0 auto;
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
+    grid-template-areas: "image image image" "title title title" "reviews reviews reviews" "related related related";
     grid-template-columns: minmax(auto, 66ch) 1fr calc((100% - 72px) / 4);
     grid-template-rows: none;
     max-width: unset;
@@ -37,7 +37,7 @@
 }
 
 .reviewsListCss {
-  grid-area: reviews;
+  grid-area: list;
   padding-top: layout.$spacer-4;
 
   @media (min-width: breakpoints.$desktop) {
@@ -183,6 +183,8 @@
 }
 
 .reviewContentCss {
+  display: flex;
+  flex-direction: column;
   margin-top: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
@@ -348,14 +350,30 @@
   margin-top: layout.$spacer-7;
 
   @media (min-width: breakpoints.$desktop) {
+    align-self: start;
     background-color: unset;
     border: none;
     margin: unset;
+    position: sticky;
+    top: layout.$spacer-7;
   }
 }
 
 .hideDesktopCss {
   @media (min-width: breakpoints.$desktop) {
     display: none;
+  }
+}
+
+.reviewsWrapCss {
+  grid-area: reviews;
+
+  @media (min-width: breakpoints.$desktop) {
+    display: grid;
+    grid-template-areas: "list . credits" "viewings . credits";
+    grid-template-columns: minmax(auto, 66ch) 1fr calc((100% - 72px) / 4);
+    grid-template-rows: none;
+    max-width: unset;
+    row-gap: 3rem;
   }
 }
