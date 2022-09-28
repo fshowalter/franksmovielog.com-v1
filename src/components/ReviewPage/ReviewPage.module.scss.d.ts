@@ -28,6 +28,7 @@ export const reviewDateIconCss: string;
 export const reviewGradeCss: string;
 export const reviewsListCss: string;
 export const reviewsListItemCss: string;
+export const reviewsWrapCss: string;
 export const slugContainerCss: string;
 export const slugDateCss: string;
 export const slugFootnoteCss: string;

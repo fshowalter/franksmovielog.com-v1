@@ -12,5 +12,3 @@ export const reviewCss: string;
 export const reviewGradeCss: string;
 export const reviewHeaderCss: string;
 export const reviewYearCss: string;
-export const watchlistLinksCss: string;
-export const wideCss: string;
