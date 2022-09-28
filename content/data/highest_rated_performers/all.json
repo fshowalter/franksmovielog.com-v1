@@ -2,63 +2,6 @@
 "review_year": "all",
 "highest_rated": [
 {
-"imdb_id": "nm0000489",
-"full_name": "Christopher Lee",
-"slug": "christopher-lee",
-"average_grade_value": 4.4433333333333325,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 872,
-"grade_value": 5,
-"date": "2020-09-19",
-"title": "The Curse of Frankenstein",
-"year": 1957,
-"slug": "the-curse-of-frankenstein-1957"
-},
-{
-"sequence": 907,
-"grade_value": 5.33,
-"date": "2020-10-31",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985"
-},
-{
-"sequence": 936,
-"grade_value": 4.67,
-"date": "2020-12-08",
-"title": "Horror of Dracula",
-"year": 1958,
-"slug": "horror-of-dracula-1958"
-},
-{
-"sequence": 1168,
-"grade_value": 5.33,
-"date": "2021-09-28",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985"
-},
-{
-"sequence": 1227,
-"grade_value": 2.33,
-"date": "2022-01-10",
-"title": "Corridor of Mirrors",
-"year": 1948,
-"slug": "corridor-of-mirrors-1948"
-},
-{
-"sequence": 1325,
-"grade_value": 4,
-"date": "2022-08-20",
-"title": "Hannie Caulder",
-"year": 1971,
-"slug": "hannie-caulder-1971"
-}
-]
-},
-{
 "imdb_id": "nm1212722",
 "full_name": "Benedict Cumberbatch",
 "slug": null,
@@ -1186,20 +1129,12 @@
 ]
 },
 {
-"imdb_id": "nm0000007",
-"full_name": "Humphrey Bogart",
-"slug": "humphrey-bogart",
-"average_grade_value": 2.4771428571428573,
+"imdb_id": "nm0000012",
+"full_name": "Bette Davis",
+"slug": "bette-davis",
+"average_grade_value": 2.5242857142857145,
 "review_count": 7,
 "reviews": [
-{
-"sequence": 912,
-"grade_value": 3.67,
-"date": "2020-11-06",
-"title": "Up the River",
-"year": 1930,
-"slug": "up-the-river-1930"
-},
 {
 "sequence": 924,
 "grade_value": 2.33,
@@ -1209,44 +1144,52 @@
 "slug": "the-bad-sister-1931"
 },
 {
-"sequence": 928,
-"grade_value": 1,
-"date": "2020-11-27",
-"title": "A Holy Terror",
+"sequence": 1029,
+"grade_value": 2.67,
+"date": "2021-02-25",
+"title": "Waterloo Bridge",
 "year": 1931,
-"slug": "a-holy-terror-1931"
+"slug": "waterloo-bridge-1931"
 },
 {
-"sequence": 1003,
+"sequence": 1081,
 "grade_value": 2.33,
-"date": "2021-01-31",
-"title": "Isle of Fury",
-"year": 1936,
-"slug": "isle-of-fury-1936"
+"date": "2021-04-14",
+"title": "Way Back Home",
+"year": 1931,
+"slug": "way-back-home-1931"
 },
 {
-"sequence": 1204,
+"sequence": 1103,
 "grade_value": 2.67,
-"date": "2021-12-10",
-"title": "Love Affair",
+"date": "2021-05-14",
+"title": "Hell's House",
 "year": 1932,
-"slug": "love-affair-1932"
+"slug": "hells-house-1932"
 },
 {
-"sequence": 1324,
-"grade_value": 2.67,
-"date": "2022-08-20",
-"title": "Virginia City",
-"year": 1940,
-"slug": "virginia-city-1940"
+"sequence": 1133,
+"grade_value": 2,
+"date": "2021-07-18",
+"title": "The Man Who Played God",
+"year": 1932,
+"slug": "the-man-who-played-god-1932"
 },
 {
-"sequence": 1341,
-"grade_value": 2.67,
+"sequence": 1220,
+"grade_value": 2,
+"date": "2021-12-22",
+"title": "The Rich Are Always with Us",
+"year": 1932,
+"slug": "the-rich-are-always-with-us-1932"
+},
+{
+"sequence": 1342,
+"grade_value": 3.67,
 "date": "2022-09-07",
-"title": "Invisible Stripes",
-"year": 1939,
-"slug": "invisible-stripes-1939"
+"title": "The Corn Is Green",
+"year": 1945,
+"slug": "the-corn-is-green-1945"
 }
 ]
 },
@@ -1320,6 +1263,71 @@
 "title": "Murders in the Rue Morgue",
 "year": 1932,
 "slug": "murders-in-the-rue-morgue-1932"
+}
+]
+},
+{
+"imdb_id": "nm0000007",
+"full_name": "Humphrey Bogart",
+"slug": "humphrey-bogart",
+"average_grade_value": 2.4285714285714284,
+"review_count": 7,
+"reviews": [
+{
+"sequence": 912,
+"grade_value": 3.67,
+"date": "2020-11-06",
+"title": "Up the River",
+"year": 1930,
+"slug": "up-the-river-1930"
+},
+{
+"sequence": 924,
+"grade_value": 2.33,
+"date": "2020-11-25",
+"title": "Bad Sister",
+"year": 1931,
+"slug": "the-bad-sister-1931"
+},
+{
+"sequence": 928,
+"grade_value": 1,
+"date": "2020-11-27",
+"title": "A Holy Terror",
+"year": 1931,
+"slug": "a-holy-terror-1931"
+},
+{
+"sequence": 1003,
+"grade_value": 2.33,
+"date": "2021-01-31",
+"title": "Isle of Fury",
+"year": 1936,
+"slug": "isle-of-fury-1936"
+},
+{
+"sequence": 1204,
+"grade_value": 2.67,
+"date": "2021-12-10",
+"title": "Love Affair",
+"year": 1932,
+"slug": "love-affair-1932"
+},
+{
+"sequence": 1324,
+"grade_value": 2.67,
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940"
+},
+{
+"sequence": 1341,
+"grade_value": 2.33,
+"date": "2022-09-07",
+"title": "Invisible Stripes",
+"year": 1939,
+"slug": "invisible-stripes-1939"
 }
 ]
 },
