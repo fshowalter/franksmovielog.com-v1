@@ -1186,6 +1186,71 @@
 ]
 },
 {
+"imdb_id": "nm0000007",
+"full_name": "Humphrey Bogart",
+"slug": "humphrey-bogart",
+"average_grade_value": 2.4771428571428573,
+"review_count": 7,
+"reviews": [
+{
+"sequence": 912,
+"grade_value": 3.67,
+"date": "2020-11-06",
+"title": "Up the River",
+"year": 1930,
+"slug": "up-the-river-1930"
+},
+{
+"sequence": 924,
+"grade_value": 2.33,
+"date": "2020-11-25",
+"title": "Bad Sister",
+"year": 1931,
+"slug": "the-bad-sister-1931"
+},
+{
+"sequence": 928,
+"grade_value": 1,
+"date": "2020-11-27",
+"title": "A Holy Terror",
+"year": 1931,
+"slug": "a-holy-terror-1931"
+},
+{
+"sequence": 1003,
+"grade_value": 2.33,
+"date": "2021-01-31",
+"title": "Isle of Fury",
+"year": 1936,
+"slug": "isle-of-fury-1936"
+},
+{
+"sequence": 1204,
+"grade_value": 2.67,
+"date": "2021-12-10",
+"title": "Love Affair",
+"year": 1932,
+"slug": "love-affair-1932"
+},
+{
+"sequence": 1324,
+"grade_value": 2.67,
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940"
+},
+{
+"sequence": 1341,
+"grade_value": 2.67,
+"date": "2022-09-07",
+"title": "Invisible Stripes",
+"year": 1939,
+"slug": "invisible-stripes-1939"
+}
+]
+},
+{
 "imdb_id": "nm0000509",
 "full_name": "Bela Lugosi",
 "slug": "bela-lugosi",
@@ -1255,63 +1320,6 @@
 "title": "Murders in the Rue Morgue",
 "year": 1932,
 "slug": "murders-in-the-rue-morgue-1932"
-}
-]
-},
-{
-"imdb_id": "nm0000007",
-"full_name": "Humphrey Bogart",
-"slug": "humphrey-bogart",
-"average_grade_value": 2.445,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 912,
-"grade_value": 3.67,
-"date": "2020-11-06",
-"title": "Up the River",
-"year": 1930,
-"slug": "up-the-river-1930"
-},
-{
-"sequence": 924,
-"grade_value": 2.33,
-"date": "2020-11-25",
-"title": "Bad Sister",
-"year": 1931,
-"slug": "the-bad-sister-1931"
-},
-{
-"sequence": 928,
-"grade_value": 1,
-"date": "2020-11-27",
-"title": "A Holy Terror",
-"year": 1931,
-"slug": "a-holy-terror-1931"
-},
-{
-"sequence": 1003,
-"grade_value": 2.33,
-"date": "2021-01-31",
-"title": "Isle of Fury",
-"year": 1936,
-"slug": "isle-of-fury-1936"
-},
-{
-"sequence": 1204,
-"grade_value": 2.67,
-"date": "2021-12-10",
-"title": "Love Affair",
-"year": 1932,
-"slug": "love-affair-1932"
-},
-{
-"sequence": 1324,
-"grade_value": 2.67,
-"date": "2022-08-20",
-"title": "Virginia City",
-"year": 1940,
-"slug": "virginia-city-1940"
 }
 ]
 },

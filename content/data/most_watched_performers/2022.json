@@ -328,6 +328,50 @@
 ]
 },
 {
+"imdb_id": "nm0000034",
+"full_name": "William Holden",
+"slug": "william-holden",
+"viewing_count": 4,
+"viewings": [
+{
+"sequence": 1321,
+"venue": "Watch TCM",
+"date": "2022-08-18",
+"title": "Dear Ruth",
+"year": 1947,
+"slug": "dear-ruth-1947",
+"imdb_id": "tt0039307"
+},
+{
+"sequence": 1339,
+"venue": "Watch TCM",
+"date": "2022-09-06",
+"title": "Force of Arms",
+"year": 1951,
+"slug": "force-of-arms-1951",
+"imdb_id": "tt0043553"
+},
+{
+"sequence": 1340,
+"venue": "Watch TCM",
+"date": "2022-09-06",
+"title": "Rachel and the Stranger",
+"year": 1948,
+"slug": "rachel-and-the-stranger-1948",
+"imdb_id": "tt0040720"
+},
+{
+"sequence": 1341,
+"venue": "Watch TCM",
+"date": "2022-09-07",
+"title": "Invisible Stripes",
+"year": 1939,
+"slug": "invisible-stripes-1939",
+"imdb_id": "tt0032636"
+}
+]
+},
+{
 "imdb_id": "nm0077720",
 "full_name": "Michael Berryman",
 "slug": null,
@@ -394,41 +438,6 @@
 "year": 2007,
 "slug": "halloween-2007",
 "imdb_id": "tt0373883"
-}
-]
-},
-{
-"imdb_id": "nm0600667",
-"full_name": "Sheri Moon Zombie",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 1231,
-"venue": "iTunes",
-"date": "2022-01-17",
-"title": "3 from Hell",
-"year": 2019,
-"slug": "3-from-hell-2019",
-"imdb_id": "tt8134742"
-},
-{
-"sequence": 1267,
-"venue": "iTunes",
-"date": "2022-03-31",
-"title": "Halloween",
-"year": 2007,
-"slug": "halloween-2007",
-"imdb_id": "tt0373883"
-},
-{
-"sequence": 1268,
-"venue": "iTunes",
-"date": "2022-03-31",
-"title": "Halloween II",
-"year": 2009,
-"slug": "halloween-ii-2009",
-"imdb_id": "tt1311067"
 }
 ]
 }
