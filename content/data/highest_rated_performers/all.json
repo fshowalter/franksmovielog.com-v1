@@ -2,6 +2,63 @@
 "review_year": "all",
 "highest_rated": [
 {
+"imdb_id": "nm1165110",
+"full_name": "Chris Hemsworth",
+"slug": null,
+"average_grade_value": 4.386666666666667,
+"review_count": 6,
+"reviews": [
+{
+"sequence": 839,
+"grade_value": 3.33,
+"date": "2020-07-11",
+"title": "Avengers: Age of Ultron",
+"year": 2015,
+"slug": "avengers-age-of-ultron-2015"
+},
+{
+"sequence": 875,
+"grade_value": 5,
+"date": "2020-09-26",
+"title": "Thor: Ragnarok",
+"year": 2017,
+"slug": "thor-ragnarok-2017"
+},
+{
+"sequence": 893,
+"grade_value": 5.33,
+"date": "2020-10-17",
+"title": "Avengers: Infinity War",
+"year": 2018,
+"slug": "avengers-infinity-war-2018"
+},
+{
+"sequence": 918,
+"grade_value": 5,
+"date": "2020-11-14",
+"title": "Avengers: Endgame",
+"year": 2019,
+"slug": "avengers-endgame-2019"
+},
+{
+"sequence": 956,
+"grade_value": 5.33,
+"date": "2020-12-22",
+"title": "The Cabin in the Woods",
+"year": 2011,
+"slug": "the-cabin-in-the-woods-2011"
+},
+{
+"sequence": 1343,
+"grade_value": 2.33,
+"date": "2022-09-08",
+"title": "Thor: Love and Thunder",
+"year": 2022,
+"slug": "thor-love-and-thunder-2022"
+}
+]
+},
+{
 "imdb_id": "nm1212722",
 "full_name": "Benedict Cumberbatch",
 "slug": null,
@@ -337,7 +394,7 @@
 "sequence": 847,
 "grade_value": 3,
 "date": "2020-08-01",
-"title": "Star Wars",
+"title": "Star Wars: Episode IV - A New Hope",
 "year": 1977,
 "slug": "star-wars-episode-iv-a-new-hope-1977"
 },
@@ -362,7 +419,7 @@
 "grade_value": 2.33,
 "date": "2020-10-06",
 "title": "A Chump at Oxford",
-"year": 1939,
+"year": 1940,
 "slug": "a-chump-at-oxford-1939"
 },
 {
@@ -1328,63 +1385,6 @@
 "title": "Invisible Stripes",
 "year": 1939,
 "slug": "invisible-stripes-1939"
-}
-]
-},
-{
-"imdb_id": "nm0007214",
-"full_name": "Frank Albertson",
-"slug": null,
-"average_grade_value": 2.3866666666666667,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 867,
-"grade_value": 2.33,
-"date": "2020-09-11",
-"title": "Born Reckless",
-"year": 1930,
-"slug": "born-reckless-1930"
-},
-{
-"sequence": 868,
-"grade_value": 3.33,
-"date": "2020-09-11",
-"title": "Men Without Women",
-"year": 1930,
-"slug": "men-without-women-1930"
-},
-{
-"sequence": 883,
-"grade_value": 2.33,
-"date": "2020-10-09",
-"title": "Salute",
-"year": 1929,
-"slug": "salute-1929"
-},
-{
-"sequence": 922,
-"grade_value": 2.33,
-"date": "2020-11-24",
-"title": "Wild Company",
-"year": 1930,
-"slug": "wild-company-1930"
-},
-{
-"sequence": 1081,
-"grade_value": 2.33,
-"date": "2021-04-14",
-"title": "Way Back Home",
-"year": 1931,
-"slug": "way-back-home-1931"
-},
-{
-"sequence": 1308,
-"grade_value": 1.67,
-"date": "2022-07-29",
-"title": "The Brat",
-"year": 1931,
-"slug": "the-brat-1931"
 }
 ]
 },

@@ -111,22 +111,6 @@
 ]
 },
 {
-"imdb_id": "tt0058333",
-"title": "The Masque of the Red Death",
-"release_date": "1964-06-24",
-"viewing_date": "2012-01-12",
-"viewing_year": "2012",
-"sequence": 7,
-"venue": "TCM HD",
-"sort_title": "Masque of the Red Death (1964)",
-"year": 1964,
-"slug": null,
-"grade": null,
-"genres": [
-"Horror"
-]
-},
-{
 "imdb_id": "tt0037549",
 "title": "The Body Snatcher",
 "release_date": "1945-02-16",
@@ -2770,25 +2754,6 @@
 ]
 },
 {
-"imdb_id": "tt0047542",
-"title": "Suddenly",
-"release_date": "1954-09-17",
-"viewing_date": "2012-04-09",
-"viewing_year": "2012",
-"sequence": 155,
-"venue": "TCM HD",
-"sort_title": "Suddenly (1954)",
-"year": 1954,
-"slug": null,
-"grade": null,
-"genres": [
-"Crime",
-"Drama",
-"Film-Noir",
-"Thriller"
-]
-},
-{
 "imdb_id": "tt0039286",
 "title": "Crossfire",
 "release_date": "1947-07-22",
@@ -4746,7 +4711,7 @@
 "sequence": 265,
 "venue": "TCM HD",
 "sort_title": "Angel Face (1953)",
-"year": 1953,
+"year": 1952,
 "slug": null,
 "grade": null,
 "genres": [
@@ -7198,7 +7163,7 @@
 },
 {
 "imdb_id": "tt0088708",
-"title": "American Warrior",
+"title": "American Ninja",
 "release_date": "1985-08-30",
 "viewing_date": "2014-07-02",
 "viewing_year": "2014",
@@ -7745,7 +7710,7 @@
 "sequence": 433,
 "venue": "TCM",
 "sort_title": "British Intelligence (1940)",
-"year": 1940,
+"year": 1939,
 "slug": null,
 "grade": null,
 "genres": [
@@ -9741,7 +9706,7 @@
 },
 {
 "imdb_id": "tt0076759",
-"title": "Star Wars",
+"title": "Star Wars: Episode IV - A New Hope",
 "release_date": "1977-05-25",
 "viewing_date": "2016-05-04",
 "viewing_year": "2016",
@@ -13819,7 +13784,7 @@
 },
 {
 "imdb_id": "tt7131622",
-"title": "Once Upon a Time... In Hollywood",
+"title": "Once Upon a Time... in Hollywood",
 "release_date": "2019-05-21",
 "viewing_date": "2019-08-22",
 "viewing_year": "2019",
@@ -13949,7 +13914,7 @@
 },
 {
 "imdb_id": "tt7131622",
-"title": "Once Upon a Time... In Hollywood",
+"title": "Once Upon a Time... in Hollywood",
 "release_date": "2019-05-21",
 "viewing_date": "2019-09-09",
 "viewing_year": "2019",
@@ -14630,7 +14595,7 @@
 },
 {
 "imdb_id": "tt0103874",
-"title": "Bram Stoker's Dracula",
+"title": "Dracula",
 "release_date": "1992-11-10",
 "viewing_date": "2020-02-25",
 "viewing_year": "2020",
@@ -15158,7 +15123,7 @@
 },
 {
 "imdb_id": "tt0076759",
-"title": "Star Wars",
+"title": "Star Wars: Episode IV - A New Hope",
 "release_date": "1977-05-25",
 "viewing_date": "2020-08-01",
 "viewing_year": "2020",
@@ -15793,7 +15758,7 @@
 "sequence": 882,
 "venue": "Watch TCM",
 "sort_title": "Chump at Oxford (1939)",
-"year": 1939,
+"year": 1940,
 "slug": "a-chump-at-oxford-1939",
 "grade": "D+",
 "genres": [
@@ -18005,7 +17970,7 @@
 "sequence": 1008,
 "venue": "Blu-ray",
 "sort_title": "Nekromantik (1987)",
-"year": 1987,
+"year": 1988,
 "slug": "nekromantik-1987",
 "grade": "D-",
 "genres": [
@@ -22466,7 +22431,7 @@
 },
 {
 "imdb_id": "tt0073778",
-"title": "Switchblade Sisters",
+"title": "The Jezebels",
 "release_date": "1975-05-01",
 "viewing_date": "2022-02-21",
 "viewing_year": "2022",
@@ -23337,7 +23302,7 @@
 },
 {
 "imdb_id": "tt0103874",
-"title": "Bram Stoker's Dracula",
+"title": "Dracula",
 "release_date": "1992-11-10",
 "viewing_date": "2022-07-30",
 "viewing_year": "2022",
@@ -23941,6 +23906,27 @@
 "grade": "B-",
 "genres": [
 "Drama"
+]
+},
+{
+"imdb_id": "tt10648342",
+"title": "Thor: Love and Thunder",
+"release_date": "2022-06-23",
+"viewing_date": "2022-09-08",
+"viewing_year": "2022",
+"sequence": 1343,
+"venue": "Disney+",
+"sort_title": "Thor: Love and Thunder (2022)",
+"year": 2022,
+"slug": "thor-love-and-thunder-2022",
+"grade": "D+",
+"genres": [
+"Action",
+"Adventure",
+"Comedy",
+"Fantasy",
+"Romance",
+"Sci-Fi"
 ]
 }
 ]

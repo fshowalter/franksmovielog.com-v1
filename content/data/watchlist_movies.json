@@ -1,5 +1,40 @@
 [
 {
+"imdb_id": null,
+"title": null,
+"year": null,
+"sort_title": "Wild Child (1970)",
+"release_date": null,
+"director_imdb_ids": [
+"nm0000076",
+"nm0001379",
+"nm0836328",
+"nm0000339",
+"nm0553941"
+],
+"performer_imdb_ids": [
+"nm0424565",
+"nm0000489",
+"nm0000489",
+"nm0001509",
+"nm0000069",
+"nm0000336",
+"nm0000071",
+"nm0001088",
+"nm0000053",
+"nm0000125",
+"nm0001637",
+"nm0001637"
+],
+"writer_imdb_ids": [
+"nm0000175"
+],
+"collection_names": [
+"Hammer Films",
+"Universal Monsters"
+]
+},
+{
 "imdb_id": "tt0019035",
 "title": "Interference",
 "year": 1928,
@@ -3502,7 +3537,7 @@
 },
 {
 "imdb_id": "tt0028227",
-"title": "Sea Spoilers",
+"title": "The Sea Spoilers",
 "year": 1936,
 "sort_title": "Sea Spoilers (1936)",
 "release_date": "1936-09-28",
@@ -4536,7 +4571,7 @@
 {
 "imdb_id": "tt0032339",
 "title": "A Chump at Oxford",
-"year": 1939,
+"year": 1940,
 "sort_title": "Chump at Oxford (1939)",
 "release_date": "1939-01-01",
 "director_imdb_ids": [],
@@ -5215,7 +5250,7 @@
 {
 "imdb_id": "tt0032283",
 "title": "British Intelligence",
-"year": 1940,
+"year": 1939,
 "sort_title": "British Intelligence (1940)",
 "release_date": "1940-01-29",
 "director_imdb_ids": [],
@@ -6449,19 +6484,6 @@
 "performer_imdb_ids": [],
 "writer_imdb_ids": [],
 "collection_names": []
-},
-{
-"imdb_id": "tt0034902",
-"title": "Invisible Agent",
-"year": 1942,
-"sort_title": "Invisible Agent (1942)",
-"release_date": "1942-07-31",
-"director_imdb_ids": [],
-"performer_imdb_ids": [],
-"writer_imdb_ids": [],
-"collection_names": [
-"Universal Monsters"
-]
 },
 {
 "imdb_id": "tt0035417",
@@ -11795,7 +11817,7 @@
 {
 "imdb_id": "tt0044357",
 "title": "Angel Face",
-"year": 1953,
+"year": 1952,
 "sort_title": "Angel Face (1953)",
 "release_date": "1953-01-02",
 "director_imdb_ids": [],
@@ -12747,19 +12769,6 @@
 "collection_names": []
 },
 {
-"imdb_id": "tt0047542",
-"title": "Suddenly",
-"year": 1954,
-"sort_title": "Suddenly (1954)",
-"release_date": "1954-09-17",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0000069"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
 "imdb_id": "tt0046754",
 "title": "The Barefoot Contessa",
 "year": 1954,
@@ -12947,7 +12956,7 @@
 {
 "imdb_id": "tt0047579",
 "title": "Three Cases of Murder",
-"year": 1955,
+"year": 1954,
 "sort_title": "Three Cases of Murder (1955)",
 "release_date": "1955-02-11",
 "director_imdb_ids": [
@@ -13832,7 +13841,7 @@
 },
 {
 "imdb_id": "tt0047925",
-"title": "That Is the Dawn",
+"title": "It's Called Day Break",
 "year": 1956,
 "sort_title": "That Is the Dawn (1956)",
 "release_date": "1956-05-09",
@@ -14196,19 +14205,6 @@
 "collection_names": []
 },
 {
-"imdb_id": "tt0048990",
-"title": "Pursuit of the Graf Spee",
-"year": 1956,
-"sort_title": "Pursuit of the Graf Spee (1956)",
-"release_date": "1956-10-29",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0000489"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
 "imdb_id": "tt0049005",
 "title": "Beyond Mombasa",
 "year": 1956,
@@ -14480,21 +14476,6 @@
 "director_imdb_ids": [],
 "performer_imdb_ids": [
 "nm0000489"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
-"imdb_id": "tt0050490",
-"title": "Heaven Knows, Mr. Allison",
-"year": 1957,
-"sort_title": "Heaven Knows, Mr. Allison (1957)",
-"release_date": "1957-03-13",
-"director_imdb_ids": [
-"nm0001379"
-],
-"performer_imdb_ids": [
-"nm0000053"
 ],
 "writer_imdb_ids": [],
 "collection_names": []
@@ -15239,19 +15220,6 @@
 "collection_names": []
 },
 {
-"imdb_id": "tt0050923",
-"title": "Saddle the Wind",
-"year": 1958,
-"sort_title": "Saddle the Wind (1958)",
-"release_date": "1958-03-05",
-"director_imdb_ids": [
-"nm0836328"
-],
-"performer_imdb_ids": [],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
 "imdb_id": "tt0051878",
 "title": "The Long, Hot Summer",
 "year": 1958,
@@ -15852,7 +15820,7 @@
 },
 {
 "imdb_id": "tt0052295",
-"title": "Der Tiger von Eschnapur",
+"title": "The Tiger of Eschnapur",
 "year": 1959,
 "sort_title": "Tigress of Bengal (1959)",
 "release_date": "1959-01-22",
@@ -16268,19 +16236,6 @@
 "director_imdb_ids": [],
 "performer_imdb_ids": [
 "nm0000489"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
-"imdb_id": "tt0053219",
-"title": "Return of the Fly",
-"year": 1959,
-"sort_title": "Return of the Fly (1959)",
-"release_date": "1959-07-22",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0001637"
 ],
 "writer_imdb_ids": [],
 "collection_names": []
@@ -17381,7 +17336,7 @@
 {
 "imdb_id": "tt0056668",
 "title": "A View from the Bridge",
-"year": 1961,
+"year": 1962,
 "sort_title": "View from the Bridge (1961)",
 "release_date": "1961-03-13",
 "director_imdb_ids": [
@@ -19634,21 +19589,6 @@
 "collection_names": []
 },
 {
-"imdb_id": "tt0058333",
-"title": "The Masque of the Red Death",
-"year": 1964,
-"sort_title": "Masque of the Red Death (1964)",
-"release_date": "1964-06-24",
-"director_imdb_ids": [
-"nm0000339"
-],
-"performer_imdb_ids": [
-"nm0001637"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
 "imdb_id": "tt0058529",
 "title": "Robin and the 7 Hoods",
 "year": 1964,
@@ -20712,7 +20652,7 @@
 {
 "imdb_id": "tt0060050",
 "title": "7 Women",
-"year": 1966,
+"year": 1965,
 "sort_title": "7 Women (1966)",
 "release_date": "1966-01-05",
 "director_imdb_ids": [
@@ -22222,19 +22162,6 @@
 "director_imdb_ids": [],
 "performer_imdb_ids": [
 "nm0000336"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
-"imdb_id": "tt0061411",
-"title": "The Blood Beast Terror",
-"year": 1968,
-"sort_title": "Blood Beast Terror (1968)",
-"release_date": "1968-01-01",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0001088"
 ],
 "writer_imdb_ids": [],
 "collection_names": []
@@ -23779,19 +23706,6 @@
 "collection_names": []
 },
 {
-"imdb_id": "tt0066090",
-"title": "The Molly Maguires",
-"year": 1970,
-"sort_title": "Molly Maguires (1970)",
-"release_date": "1970-01-27",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0000125"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
 "imdb_id": "tt0065950",
 "title": "The Kremlin Letter",
 "year": 1970,
@@ -23833,7 +23747,7 @@
 {
 "imdb_id": "tt0061494",
 "title": "Cauldron of Blood",
-"year": 1970,
+"year": 1968,
 "sort_title": "Cauldron of Blood (1970)",
 "release_date": "1970-02-16",
 "director_imdb_ids": [],
@@ -23853,19 +23767,6 @@
 "performer_imdb_ids": [
 "nm0000489"
 ],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
-"imdb_id": "tt0064285",
-"title": "The Wild Child",
-"year": 1970,
-"sort_title": "Wild Child (1970)",
-"release_date": "1970-02-26",
-"director_imdb_ids": [
-"nm0000076"
-],
-"performer_imdb_ids": [],
 "writer_imdb_ids": [],
 "collection_names": []
 },
@@ -24146,19 +24047,6 @@
 ]
 },
 {
-"imdb_id": "tt0065542",
-"title": "The Cheyenne Social Club",
-"year": 1970,
-"sort_title": "Cheyenne Social Club (1970)",
-"release_date": "1970-06-12",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0000071"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
 "imdb_id": "tt0066181",
 "title": "On a Clear Day You Can See Forever",
 "year": 1970,
@@ -24431,21 +24319,6 @@
 "release_date": "1970-11-08",
 "director_imdb_ids": [],
 "performer_imdb_ids": [],
-"writer_imdb_ids": [],
-"collection_names": [
-"Hammer Films"
-]
-},
-{
-"imdb_id": "tt0067713",
-"title": "Scars of Dracula",
-"year": 1970,
-"sort_title": "Scars of Dracula (1970)",
-"release_date": "1970-11-08",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0000489"
-],
 "writer_imdb_ids": [],
 "collection_names": [
 "Hammer Films"
@@ -25172,20 +25045,6 @@
 "collection_names": []
 },
 {
-"imdb_id": "tt0068022",
-"title": "Something Big",
-"year": 1971,
-"sort_title": "Something Big (1971)",
-"release_date": "1971-11-11",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0424565",
-"nm0001509"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
 "imdb_id": "tt0067146",
 "title": "Going Home",
 "year": 1971,
@@ -25408,19 +25267,6 @@
 "collection_names": [
 "Shaw Brothers"
 ]
-},
-{
-"imdb_id": "tt0069390",
-"title": "All the Colors of the Dark",
-"year": 1972,
-"sort_title": "All the Colors of the Dark (1972)",
-"release_date": "1972-02-28",
-"director_imdb_ids": [
-"nm0553941"
-],
-"performer_imdb_ids": [],
-"writer_imdb_ids": [],
-"collection_names": []
 },
 {
 "imdb_id": "tt0068413",
@@ -28786,7 +28632,7 @@
 },
 {
 "imdb_id": "tt0076759",
-"title": "Star Wars",
+"title": "Star Wars: Episode IV - A New Hope",
 "year": 1977,
 "sort_title": "Star Wars: Episode IV - A New Hope (1977)",
 "release_date": "1977-05-25",
@@ -34958,19 +34804,6 @@
 "collection_names": []
 },
 {
-"imdb_id": "tt0099697",
-"title": "Graveyard Shift",
-"year": 1990,
-"sort_title": "Graveyard Shift (1990)",
-"release_date": "1990-10-26",
-"director_imdb_ids": [],
-"performer_imdb_ids": [],
-"writer_imdb_ids": [
-"nm0000175"
-],
-"collection_names": []
-},
-{
 "imdb_id": "tt0099612",
 "title": "Frankenstein Unbound",
 "year": 1990,
@@ -36171,7 +36004,7 @@
 },
 {
 "imdb_id": "tt0109592",
-"title": "Dellamorte Dellamore",
+"title": "Dellamorte dellamore",
 "year": 1994,
 "sort_title": "Dellamorte Dellamore (1994)",
 "release_date": "1994-03-25",
@@ -37032,19 +36865,6 @@
 "director_imdb_ids": [],
 "performer_imdb_ids": [
 "nm0000608"
-],
-"writer_imdb_ids": [],
-"collection_names": []
-},
-{
-"imdb_id": "tt0117218",
-"title": "The Nutty Professor",
-"year": 1996,
-"sort_title": "Nutty Professor (1996)",
-"release_date": "1996-06-27",
-"director_imdb_ids": [],
-"performer_imdb_ids": [
-"nm0000336"
 ],
 "writer_imdb_ids": [],
 "collection_names": []
@@ -40624,7 +40444,7 @@
 },
 {
 "imdb_id": "tt1111422",
-"title": "The Taking of Pelham 1 2 3",
+"title": "The Taking of Pelham 123",
 "year": 2009,
 "sort_title": "Taking of Pelham 123 (2009)",
 "release_date": "2009-06-04",
@@ -40923,7 +40743,7 @@
 },
 {
 "imdb_id": "tt1477076",
-"title": "Saw: The Final Chapter",
+"title": "Saw 3D",
 "year": 2010,
 "sort_title": "Saw: The Final Chapter (2010)",
 "release_date": "2010-10-22",
@@ -41666,8 +41486,8 @@
 },
 {
 "imdb_id": "tt3970280",
-"title": "A Magic Christmas",
-"year": 2014,
+"title": "A Sun for Christmas",
+"year": 2013,
 "sort_title": "Magic Christmas (2014)",
 "release_date": "2014-10-28",
 "director_imdb_ids": [],
@@ -42264,7 +42084,7 @@
 },
 {
 "imdb_id": "tt7131622",
-"title": "Once Upon a Time... In Hollywood",
+"title": "Once Upon a Time... in Hollywood",
 "year": 2019,
 "sort_title": "Once Upon a Time... In Hollywood (2019)",
 "release_date": "2019-05-21",
@@ -42550,7 +42370,7 @@
 },
 {
 "imdb_id": "tt10935560",
-"title": "Black Glasses",
+"title": "Dark Glasses",
 "year": 2022,
 "sort_title": "Dark Glasses (2022)",
 "release_date": "2022-02-11",
