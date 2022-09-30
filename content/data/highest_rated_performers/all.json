@@ -1327,8 +1327,8 @@
 "imdb_id": "nm0000007",
 "full_name": "Humphrey Bogart",
 "slug": "humphrey-bogart",
-"average_grade_value": 2.4285714285714284,
-"review_count": 7,
+"average_grade_value": 2.41625,
+"review_count": 8,
 "reviews": [
 {
 "sequence": 912,
@@ -1385,6 +1385,14 @@
 "title": "Invisible Stripes",
 "year": 1939,
 "slug": "invisible-stripes-1939"
+},
+{
+"sequence": 1344,
+"grade_value": 2.33,
+"date": "2022-09-09",
+"title": "King of the Underworld",
+"year": 1939,
+"slug": "king-of-the-underworld-1939"
 }
 ]
 },
