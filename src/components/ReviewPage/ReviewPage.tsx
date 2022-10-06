@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
 import HeadBuilder from "../HeadBuilder";
@@ -27,7 +27,6 @@ import {
   olderViewingSlugCss,
   olderViewingsVenueCss,
   olderViewingsViaCss,
-  relatedAvaterCss,
   relatedCss,
   relatedHeaderCss,
   relatedHeadingCss,
@@ -86,13 +85,6 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              {collection.avatar && (
-                <GatsbyImage
-                  image={collection.avatar.childImageSharp.gatsbyImageData}
-                  alt={collection.name}
-                  className={relatedAvaterCss}
-                />
-              )}{" "}
               <span>
                 More <span className={relatedNameCss}>{collection.name}</span>
               </span>
@@ -141,13 +133,6 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              {director.avatar && (
-                <GatsbyImage
-                  image={director.avatar.childImageSharp.gatsbyImageData}
-                  alt={director.name}
-                  className={relatedAvaterCss}
-                />
-              )}{" "}
               <span>
                 More directed by{" "}
                 <span className={relatedNameCss}>{director.name}</span>
@@ -170,13 +155,6 @@ function Related(pageData: PageQueryResult): JSX.Element | null {
         >
           <header className={relatedHeaderCss}>
             <h3 className={relatedHeadingCss}>
-              {writer.avatar && (
-                <GatsbyImage
-                  image={writer.avatar.childImageSharp.gatsbyImageData}
-                  alt={writer.name}
-                  className={relatedAvaterCss}
-                />
-              )}{" "}
               <span>
                 More written by{" "}
                 <span className={relatedNameCss}>{writer.name}</span>

@@ -137,8 +137,8 @@
 "imdb_id": "nm0068551",
 "full_name": "Tobin Bell",
 "slug": null,
-"average_grade_value": 2.934,
-"review_count": 5,
+"average_grade_value": 2.9450000000000003,
+"review_count": 6,
 "reviews": [
 {
 "sequence": 1301,
@@ -179,6 +179,14 @@
 "title": "Saw V",
 "year": 2008,
 "slug": "saw-v-2008"
+},
+{
+"sequence": 1346,
+"grade_value": 3,
+"date": "2022-09-10",
+"title": "Saw VI",
+"year": 2009,
+"slug": "saw-vi-2009"
 }
 ]
 },
@@ -186,8 +194,8 @@
 "imdb_id": "nm0809938",
 "full_name": "Shawnee Smith",
 "slug": null,
-"average_grade_value": 2.934,
-"review_count": 5,
+"average_grade_value": 2.9450000000000003,
+"review_count": 6,
 "reviews": [
 {
 "sequence": 1301,
@@ -228,6 +236,14 @@
 "title": "Saw V",
 "year": 2008,
 "slug": "saw-v-2008"
+},
+{
+"sequence": 1346,
+"grade_value": 3,
+"date": "2022-09-10",
+"title": "Saw VI",
+"year": 2009,
+"slug": "saw-vi-2009"
 }
 ]
 },
@@ -269,6 +285,88 @@
 "title": "Saw IV",
 "year": 2007,
 "slug": "saw-iv-2007"
+}
+]
+},
+{
+"imdb_id": "nm0541908",
+"full_name": "Costas Mandylor",
+"slug": null,
+"average_grade_value": 2.8325,
+"review_count": 4,
+"reviews": [
+{
+"sequence": 1307,
+"grade_value": 3,
+"date": "2022-07-28",
+"title": "Saw III",
+"year": 2006,
+"slug": "saw-iii-2006"
+},
+{
+"sequence": 1315,
+"grade_value": 2,
+"date": "2022-08-10",
+"title": "Saw IV",
+"year": 2007,
+"slug": "saw-iv-2007"
+},
+{
+"sequence": 1319,
+"grade_value": 3.33,
+"date": "2022-08-12",
+"title": "Saw V",
+"year": 2008,
+"slug": "saw-v-2008"
+},
+{
+"sequence": 1346,
+"grade_value": 3,
+"date": "2022-09-10",
+"title": "Saw VI",
+"year": 2009,
+"slug": "saw-vi-2009"
+}
+]
+},
+{
+"imdb_id": "nm0751018",
+"full_name": "Betsy Russell",
+"slug": null,
+"average_grade_value": 2.8325,
+"review_count": 4,
+"reviews": [
+{
+"sequence": 1307,
+"grade_value": 3,
+"date": "2022-07-28",
+"title": "Saw III",
+"year": 2006,
+"slug": "saw-iii-2006"
+},
+{
+"sequence": 1315,
+"grade_value": 2,
+"date": "2022-08-10",
+"title": "Saw IV",
+"year": 2007,
+"slug": "saw-iv-2007"
+},
+{
+"sequence": 1319,
+"grade_value": 3.33,
+"date": "2022-08-12",
+"title": "Saw V",
+"year": 2008,
+"slug": "saw-v-2008"
+},
+{
+"sequence": 1346,
+"grade_value": 3,
+"date": "2022-09-10",
+"title": "Saw VI",
+"year": 2009,
+"slug": "saw-vi-2009"
 }
 ]
 },
@@ -462,68 +560,35 @@
 ]
 },
 {
-"imdb_id": "nm0285643",
-"full_name": "Francis Ford",
+"imdb_id": "nm0796662",
+"full_name": "Sylvia Sidney",
 "slug": null,
-"average_grade_value": 2.5566666666666666,
+"average_grade_value": 2.3333333333333335,
 "review_count": 3,
 "reviews": [
 {
-"sequence": 1292,
-"grade_value": 3,
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"slug": "pilgrimage-1933"
+"sequence": 1256,
+"grade_value": 2.33,
+"date": "2022-02-18",
+"title": "God Told Me To",
+"year": 1976,
+"slug": "god-told-me-to-1976"
 },
 {
-"sequence": 1293,
-"grade_value": 3,
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"slug": "steamboat-round-the-bend-1935"
-},
-{
-"sequence": 1322,
-"grade_value": 1.67,
-"date": "2022-08-18",
-"title": "The Man from Monterey",
-"year": 1933,
-"slug": "the-man-from-monterey-1933"
-}
-]
-},
-{
-"imdb_id": "nm0610253",
-"full_name": "Alan Mowbray",
-"slug": null,
-"average_grade_value": 2.4466666666666668,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1289,
-"grade_value": 2.67,
-"date": "2022-06-19",
-"title": "Jewel Robbery",
+"sequence": 1266,
+"grade_value": 2,
+"date": "2022-03-28",
+"title": "Merrily We Go to Hell",
 "year": 1932,
-"slug": "jewel-robbery-1932"
+"slug": "merrily-we-go-to-hell-1932"
 },
 {
-"sequence": 1329,
-"grade_value": 3.67,
-"date": "2022-08-26",
-"title": "Topper",
-"year": 1937,
-"slug": "topper-1937"
-},
-{
-"sequence": 1337,
-"grade_value": 1,
-"date": "2022-09-02",
-"title": "Every Girl Should Be Married",
-"year": 1948,
-"slug": "every-girl-should-be-married-1948"
+"sequence": 1345,
+"grade_value": 2.67,
+"date": "2022-09-10",
+"title": "Fury",
+"year": 1936,
+"slug": "fury-1936"
 }
 ]
 },
@@ -679,39 +744,6 @@
 "imdb_id": "nm0000078",
 "full_name": "John Wayne",
 "slug": "john-wayne",
-"average_grade_value": 1.5566666666666666,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1287,
-"grade_value": 2,
-"date": "2022-06-19",
-"title": "Ride Him, Cowboy",
-"year": 1932,
-"slug": "ride-him-cowboy-1932"
-},
-{
-"sequence": 1288,
-"grade_value": 1,
-"date": "2022-06-19",
-"title": "Haunted Gold",
-"year": 1932,
-"slug": "haunted-gold-1932"
-},
-{
-"sequence": 1322,
-"grade_value": 1.67,
-"date": "2022-08-18",
-"title": "The Man from Monterey",
-"year": 1933,
-"slug": "the-man-from-monterey-1933"
-}
-]
-},
-{
-"imdb_id": "nm1349117",
-"full_name": "Duke",
-"slug": null,
 "average_grade_value": 1.5566666666666666,
 "review_count": 3,
 "reviews": [

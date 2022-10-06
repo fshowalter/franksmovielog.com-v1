@@ -59,63 +59,6 @@
 ]
 },
 {
-"imdb_id": "nm1212722",
-"full_name": "Benedict Cumberbatch",
-"slug": null,
-"average_grade_value": 4.221666666666667,
-"review_count": 6,
-"reviews": [
-{
-"sequence": 857,
-"grade_value": 3,
-"date": "2020-08-22",
-"title": "Doctor Strange",
-"year": 2016,
-"slug": "doctor-strange-2016"
-},
-{
-"sequence": 875,
-"grade_value": 5,
-"date": "2020-09-26",
-"title": "Thor: Ragnarok",
-"year": 2017,
-"slug": "thor-ragnarok-2017"
-},
-{
-"sequence": 893,
-"grade_value": 5.33,
-"date": "2020-10-17",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018"
-},
-{
-"sequence": 918,
-"grade_value": 5,
-"date": "2020-11-14",
-"title": "Avengers: Endgame",
-"year": 2019,
-"slug": "avengers-endgame-2019"
-},
-{
-"sequence": 1297,
-"grade_value": 3.33,
-"date": "2022-07-02",
-"title": "Spider-Man: No Way Home",
-"year": 2021,
-"slug": "spider-man-no-way-home-2021"
-},
-{
-"sequence": 1306,
-"grade_value": 3.67,
-"date": "2022-07-23",
-"title": "Doctor Strange in the Multiverse of Madness",
-"year": 2022,
-"slug": "doctor-strange-in-the-multiverse-of-madness-2022"
-}
-]
-},
-{
 "imdb_id": "nm0424060",
 "full_name": "Scarlett Johansson",
 "slug": null,
@@ -1320,6 +1263,71 @@
 "title": "Murders in the Rue Morgue",
 "year": 1932,
 "slug": "murders-in-the-rue-morgue-1932"
+}
+]
+},
+{
+"imdb_id": "nm0007214",
+"full_name": "Frank Albertson",
+"slug": null,
+"average_grade_value": 2.4271428571428575,
+"review_count": 7,
+"reviews": [
+{
+"sequence": 867,
+"grade_value": 2.33,
+"date": "2020-09-11",
+"title": "Born Reckless",
+"year": 1930,
+"slug": "born-reckless-1930"
+},
+{
+"sequence": 868,
+"grade_value": 3.33,
+"date": "2020-09-11",
+"title": "Men Without Women",
+"year": 1930,
+"slug": "men-without-women-1930"
+},
+{
+"sequence": 883,
+"grade_value": 2.33,
+"date": "2020-10-09",
+"title": "Salute",
+"year": 1929,
+"slug": "salute-1929"
+},
+{
+"sequence": 922,
+"grade_value": 2.33,
+"date": "2020-11-24",
+"title": "Wild Company",
+"year": 1930,
+"slug": "wild-company-1930"
+},
+{
+"sequence": 1081,
+"grade_value": 2.33,
+"date": "2021-04-14",
+"title": "Way Back Home",
+"year": 1931,
+"slug": "way-back-home-1931"
+},
+{
+"sequence": 1308,
+"grade_value": 1.67,
+"date": "2022-07-29",
+"title": "The Brat",
+"year": 1931,
+"slug": "the-brat-1931"
+},
+{
+"sequence": 1345,
+"grade_value": 2.67,
+"date": "2022-09-10",
+"title": "Fury",
+"year": 1936,
+"slug": "fury-1936"
 }
 ]
 },
