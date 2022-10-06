@@ -160,6 +160,76 @@
 ]
 },
 {
+"imdb_id": "nm1729303",
+"full_name": "Marcus Dunstan",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 1315,
+"venue": "Blu-ray",
+"date": "2022-08-10",
+"title": "Saw IV",
+"year": 2007,
+"slug": "saw-iv-2007",
+"imdb_id": "tt0890870"
+},
+{
+"sequence": 1319,
+"venue": "Blu-ray",
+"date": "2022-08-12",
+"title": "Saw V",
+"year": 2008,
+"slug": "saw-v-2008",
+"imdb_id": "tt1132626"
+},
+{
+"sequence": 1346,
+"venue": "Blu-ray",
+"date": "2022-09-10",
+"title": "Saw VI",
+"year": 2009,
+"slug": "saw-vi-2009",
+"imdb_id": "tt1233227"
+}
+]
+},
+{
+"imdb_id": "nm1733317",
+"full_name": "Patrick Melton",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 1315,
+"venue": "Blu-ray",
+"date": "2022-08-10",
+"title": "Saw IV",
+"year": 2007,
+"slug": "saw-iv-2007",
+"imdb_id": "tt0890870"
+},
+{
+"sequence": 1319,
+"venue": "Blu-ray",
+"date": "2022-08-12",
+"title": "Saw V",
+"year": 2008,
+"slug": "saw-v-2008",
+"imdb_id": "tt1132626"
+},
+{
+"sequence": 1346,
+"venue": "Blu-ray",
+"date": "2022-09-10",
+"title": "Saw VI",
+"year": 2009,
+"slug": "saw-vi-2009",
+"imdb_id": "tt1233227"
+}
+]
+},
+{
 "imdb_id": "nm4469445",
 "full_name": "Julia Ducournau",
 "slug": null,
@@ -260,58 +330,6 @@
 "year": 1979,
 "slug": "the-brood-1979",
 "imdb_id": "tt0078908"
-}
-]
-},
-{
-"imdb_id": "nm0169540",
-"full_name": "Larry Cohen",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1256,
-"venue": "Criterion Channel",
-"date": "2022-02-18",
-"title": "God Told Me To",
-"year": 1976,
-"slug": "god-told-me-to-1976",
-"imdb_id": "tt0075930"
-},
-{
-"sequence": 1311,
-"venue": "Criterion Channel",
-"date": "2022-08-02",
-"title": "Bone",
-"year": 1972,
-"slug": "bone-1972",
-"imdb_id": "tt0068306"
-}
-]
-},
-{
-"imdb_id": "nm0000850",
-"full_name": "Clive Barker",
-"slug": "clive-barker",
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1258,
-"venue": "Amazon",
-"date": "2022-02-20",
-"title": "Underworld",
-"year": 1985,
-"slug": "underworld-1985",
-"imdb_id": "tt0090233"
-},
-{
-"sequence": 1259,
-"venue": "Arrow Player",
-"date": "2022-02-20",
-"title": "Rawhead Rex",
-"year": 1986,
-"slug": "rawhead-rex-1986",
-"imdb_id": "tt0091829"
 }
 ]
 }
