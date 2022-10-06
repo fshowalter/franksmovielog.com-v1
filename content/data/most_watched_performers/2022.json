@@ -64,68 +64,6 @@
 ]
 },
 {
-"imdb_id": "nm0809938",
-"full_name": "Shawnee Smith",
-"slug": null,
-"viewing_count": 6,
-"viewings": [
-{
-"sequence": 1301,
-"venue": "Blu-ray",
-"date": "2022-07-08",
-"title": "Saw",
-"year": 2004,
-"slug": "saw-2004",
-"imdb_id": "tt0387564"
-},
-{
-"sequence": 1305,
-"venue": "Blu-ray",
-"date": "2022-07-22",
-"title": "Saw II",
-"year": 2005,
-"slug": "saw-ii-2005",
-"imdb_id": "tt0432348"
-},
-{
-"sequence": 1307,
-"venue": "Blu-ray",
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006",
-"imdb_id": "tt0489270"
-},
-{
-"sequence": 1315,
-"venue": "Blu-ray",
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007",
-"imdb_id": "tt0890870"
-},
-{
-"sequence": 1319,
-"venue": "Blu-ray",
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008",
-"imdb_id": "tt1132626"
-},
-{
-"sequence": 1346,
-"venue": "Blu-ray",
-"date": "2022-09-10",
-"title": "Saw VI",
-"year": 2009,
-"slug": "saw-vi-2009",
-"imdb_id": "tt1233227"
-}
-]
-},
-{
 "imdb_id": "nm0908914",
 "full_name": "Dee Wallace",
 "slug": null,
@@ -258,11 +196,20 @@
 ]
 },
 {
-"imdb_id": "nm0005531",
-"full_name": "Donnie Wahlberg",
+"imdb_id": "nm0809938",
+"full_name": "Shawnee Smith",
 "slug": null,
 "viewing_count": 4,
 "viewings": [
+{
+"sequence": 1301,
+"venue": "Blu-ray",
+"date": "2022-07-08",
+"title": "Saw",
+"year": 2004,
+"slug": "saw-2004",
+"imdb_id": "tt0387564"
+},
 {
 "sequence": 1305,
 "venue": "Blu-ray",
@@ -282,66 +229,13 @@
 "imdb_id": "tt0489270"
 },
 {
-"sequence": 1315,
+"sequence": 1346,
 "venue": "Blu-ray",
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007",
-"imdb_id": "tt0890870"
-},
-{
-"sequence": 1319,
-"venue": "Blu-ray",
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008",
-"imdb_id": "tt1132626"
-}
-]
-},
-{
-"imdb_id": "nm0072713",
-"full_name": "Lyriq Bent",
-"slug": null,
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 1305,
-"venue": "Blu-ray",
-"date": "2022-07-22",
-"title": "Saw II",
-"year": 2005,
-"slug": "saw-ii-2005",
-"imdb_id": "tt0432348"
-},
-{
-"sequence": 1307,
-"venue": "Blu-ray",
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006",
-"imdb_id": "tt0489270"
-},
-{
-"sequence": 1315,
-"venue": "Blu-ray",
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007",
-"imdb_id": "tt0890870"
-},
-{
-"sequence": 1319,
-"venue": "Blu-ray",
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008",
-"imdb_id": "tt1132626"
+"date": "2022-09-10",
+"title": "Saw VI",
+"year": 2009,
+"slug": "saw-vi-2009",
+"imdb_id": "tt1233227"
 }
 ]
 },
@@ -474,6 +368,76 @@
 "year": 1939,
 "slug": "invisible-stripes-1939",
 "imdb_id": "tt0032636"
+}
+]
+},
+{
+"imdb_id": "nm0077720",
+"full_name": "Michael Berryman",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 1228,
+"venue": "4k UHD Blu-ray",
+"date": "2022-01-12",
+"title": "The Hills Have Eyes",
+"year": 1977,
+"slug": "the-hills-have-eyes-1977",
+"imdb_id": "tt0077681"
+},
+{
+"sequence": 1230,
+"venue": "Blu-ray",
+"date": "2022-01-14",
+"title": "Deadly Blessing",
+"year": 1981,
+"slug": "deadly-blessing-1981",
+"imdb_id": "tt0082245"
+},
+{
+"sequence": 1241,
+"venue": "Arrow Player",
+"date": "2022-02-02",
+"title": "The Hills Have Eyes Part II",
+"year": 1984,
+"slug": "the-hills-have-eyes-part-ii-1984",
+"imdb_id": "tt0089274"
+}
+]
+},
+{
+"imdb_id": "nm0001803",
+"full_name": "Danny Trejo",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 1231,
+"venue": "iTunes",
+"date": "2022-01-17",
+"title": "3 from Hell",
+"year": 2019,
+"slug": "3-from-hell-2019",
+"imdb_id": "tt8134742"
+},
+{
+"sequence": 1263,
+"venue": "iTunes",
+"date": "2022-03-12",
+"title": "Heat",
+"year": 1995,
+"slug": "heat-1995",
+"imdb_id": "tt0113277"
+},
+{
+"sequence": 1267,
+"venue": "iTunes",
+"date": "2022-03-31",
+"title": "Halloween",
+"year": 2007,
+"slug": "halloween-2007",
+"imdb_id": "tt0373883"
 }
 ]
 }

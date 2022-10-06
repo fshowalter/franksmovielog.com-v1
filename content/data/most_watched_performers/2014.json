@@ -213,41 +213,6 @@
 ]
 },
 {
-"imdb_id": "nm0558726",
-"full_name": "Thom Mathews",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 366,
-"venue": "Blu-ray",
-"date": "2014-01-25",
-"title": "The Return of the Living Dead",
-"year": 1985,
-"slug": null,
-"imdb_id": "tt0089907"
-},
-{
-"sequence": 458,
-"venue": "Netflix",
-"date": "2014-12-20",
-"title": "Friday the 13th Part VI: Jason Lives",
-"year": 1986,
-"slug": "friday-the-13th-part-vi-jason-lives-1986",
-"imdb_id": "tt0091080"
-},
-{
-"sequence": 460,
-"venue": "Netflix",
-"date": "2014-12-27",
-"title": "Friday the 13th Part VII: The New Blood",
-"year": 1988,
-"slug": "friday-the-13th-part-vii-the-new-blood-1988",
-"imdb_id": "tt0095179"
-}
-]
-},
-{
 "imdb_id": "nm0000194",
 "full_name": "Julianne Moore",
 "slug": null,
@@ -384,6 +349,41 @@
 "year": 2014,
 "slug": null,
 "imdb_id": "tt2562232"
+}
+]
+},
+{
+"imdb_id": "nm0000353",
+"full_name": "Willem Dafoe",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 392,
+"venue": "Angelika Film Center Mosaic",
+"date": "2014-05-29",
+"title": "The Grand Budapest Hotel",
+"year": 2014,
+"slug": null,
+"imdb_id": "tt2278388"
+},
+{
+"sequence": 425,
+"venue": "Alamo Drafthouse Cinema - One Loudoun",
+"date": "2014-09-11",
+"title": "A Most Wanted Man",
+"year": 2014,
+"slug": null,
+"imdb_id": "tt1972571"
+},
+{
+"sequence": 445,
+"venue": "Alamo Drafthouse Cinema - One Loudoun",
+"date": "2014-11-06",
+"title": "John Wick",
+"year": 2014,
+"slug": null,
+"imdb_id": "tt2911666"
 }
 ]
 }

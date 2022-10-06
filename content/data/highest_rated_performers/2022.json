@@ -560,39 +560,6 @@
 ]
 },
 {
-"imdb_id": "nm0796662",
-"full_name": "Sylvia Sidney",
-"slug": null,
-"average_grade_value": 2.3333333333333335,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1256,
-"grade_value": 2.33,
-"date": "2022-02-18",
-"title": "God Told Me To",
-"year": 1976,
-"slug": "god-told-me-to-1976"
-},
-{
-"sequence": 1266,
-"grade_value": 2,
-"date": "2022-03-28",
-"title": "Merrily We Go to Hell",
-"year": 1932,
-"slug": "merrily-we-go-to-hell-1932"
-},
-{
-"sequence": 1345,
-"grade_value": 2.67,
-"date": "2022-09-10",
-"title": "Fury",
-"year": 1936,
-"slug": "fury-1936"
-}
-]
-},
-{
 "imdb_id": "nm0000034",
 "full_name": "William Holden",
 "slug": "william-holden",
@@ -630,6 +597,39 @@
 "title": "Invisible Stripes",
 "year": 1939,
 "slug": "invisible-stripes-1939"
+}
+]
+},
+{
+"imdb_id": "nm0796662",
+"full_name": "Sylvia Sidney",
+"slug": null,
+"average_grade_value": 2.22,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1256,
+"grade_value": 2.33,
+"date": "2022-02-18",
+"title": "God Told Me To",
+"year": 1976,
+"slug": "god-told-me-to-1976"
+},
+{
+"sequence": 1266,
+"grade_value": 2,
+"date": "2022-03-28",
+"title": "Merrily We Go to Hell",
+"year": 1932,
+"slug": "merrily-we-go-to-hell-1932"
+},
+{
+"sequence": 1345,
+"grade_value": 2.33,
+"date": "2022-09-10",
+"title": "Fury",
+"year": 1936,
+"slug": "fury-1936"
 }
 ]
 },

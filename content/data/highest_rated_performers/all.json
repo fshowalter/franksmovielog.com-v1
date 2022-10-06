@@ -1267,71 +1267,6 @@
 ]
 },
 {
-"imdb_id": "nm0007214",
-"full_name": "Frank Albertson",
-"slug": null,
-"average_grade_value": 2.4271428571428575,
-"review_count": 7,
-"reviews": [
-{
-"sequence": 867,
-"grade_value": 2.33,
-"date": "2020-09-11",
-"title": "Born Reckless",
-"year": 1930,
-"slug": "born-reckless-1930"
-},
-{
-"sequence": 868,
-"grade_value": 3.33,
-"date": "2020-09-11",
-"title": "Men Without Women",
-"year": 1930,
-"slug": "men-without-women-1930"
-},
-{
-"sequence": 883,
-"grade_value": 2.33,
-"date": "2020-10-09",
-"title": "Salute",
-"year": 1929,
-"slug": "salute-1929"
-},
-{
-"sequence": 922,
-"grade_value": 2.33,
-"date": "2020-11-24",
-"title": "Wild Company",
-"year": 1930,
-"slug": "wild-company-1930"
-},
-{
-"sequence": 1081,
-"grade_value": 2.33,
-"date": "2021-04-14",
-"title": "Way Back Home",
-"year": 1931,
-"slug": "way-back-home-1931"
-},
-{
-"sequence": 1308,
-"grade_value": 1.67,
-"date": "2022-07-29",
-"title": "The Brat",
-"year": 1931,
-"slug": "the-brat-1931"
-},
-{
-"sequence": 1345,
-"grade_value": 2.67,
-"date": "2022-09-10",
-"title": "Fury",
-"year": 1936,
-"slug": "fury-1936"
-}
-]
-},
-{
 "imdb_id": "nm0000007",
 "full_name": "Humphrey Bogart",
 "slug": "humphrey-bogart",
@@ -1401,6 +1336,71 @@
 "title": "King of the Underworld",
 "year": 1939,
 "slug": "king-of-the-underworld-1939"
+}
+]
+},
+{
+"imdb_id": "nm0007214",
+"full_name": "Frank Albertson",
+"slug": null,
+"average_grade_value": 2.3785714285714286,
+"review_count": 7,
+"reviews": [
+{
+"sequence": 867,
+"grade_value": 2.33,
+"date": "2020-09-11",
+"title": "Born Reckless",
+"year": 1930,
+"slug": "born-reckless-1930"
+},
+{
+"sequence": 868,
+"grade_value": 3.33,
+"date": "2020-09-11",
+"title": "Men Without Women",
+"year": 1930,
+"slug": "men-without-women-1930"
+},
+{
+"sequence": 883,
+"grade_value": 2.33,
+"date": "2020-10-09",
+"title": "Salute",
+"year": 1929,
+"slug": "salute-1929"
+},
+{
+"sequence": 922,
+"grade_value": 2.33,
+"date": "2020-11-24",
+"title": "Wild Company",
+"year": 1930,
+"slug": "wild-company-1930"
+},
+{
+"sequence": 1081,
+"grade_value": 2.33,
+"date": "2021-04-14",
+"title": "Way Back Home",
+"year": 1931,
+"slug": "way-back-home-1931"
+},
+{
+"sequence": 1308,
+"grade_value": 1.67,
+"date": "2022-07-29",
+"title": "The Brat",
+"year": 1931,
+"slug": "the-brat-1931"
+},
+{
+"sequence": 1345,
+"grade_value": 2.33,
+"date": "2022-09-10",
+"title": "Fury",
+"year": 1936,
+"slug": "fury-1936"
 }
 ]
 },

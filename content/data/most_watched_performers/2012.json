@@ -396,149 +396,6 @@
 ]
 },
 {
-"imdb_id": "nm0000489",
-"full_name": "Christopher Lee",
-"slug": "christopher-lee",
-"viewing_count": 15,
-"viewings": [
-{
-"sequence": 20,
-"venue": "TCM HD",
-"date": "2012-01-15",
-"title": "The Gorgon",
-"year": 1964,
-"slug": null,
-"imdb_id": "tt0058155"
-},
-{
-"sequence": 21,
-"venue": "Netflix",
-"date": "2012-01-15",
-"title": "The Crimson Cult",
-"year": 1968,
-"slug": null,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 48,
-"venue": "Blu-ray",
-"date": "2012-01-28",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-},
-{
-"sequence": 50,
-"venue": "TCM HD",
-"date": "2012-01-29",
-"title": "She",
-"year": 1965,
-"slug": null,
-"imdb_id": "tt0059710"
-},
-{
-"sequence": 125,
-"venue": "TCM HD",
-"date": "2012-03-25",
-"title": "Horror Express",
-"year": 1972,
-"slug": null,
-"imdb_id": "tt0068713"
-},
-{
-"sequence": 126,
-"venue": "TCM HD",
-"date": "2012-03-25",
-"title": "Death Line",
-"year": 1972,
-"slug": null,
-"imdb_id": "tt0068458"
-},
-{
-"sequence": 180,
-"venue": "AMC Tysons Corner 16",
-"date": "2012-06-07",
-"title": "Dark Shadows",
-"year": 2012,
-"slug": null,
-"imdb_id": "tt1077368"
-},
-{
-"sequence": 197,
-"venue": "AFI Silver",
-"date": "2012-07-07",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-},
-{
-"sequence": 199,
-"venue": "AFI Silver",
-"date": "2012-07-08",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-},
-{
-"sequence": 210,
-"venue": "The Black Cat",
-"date": "2012-07-30",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-},
-{
-"sequence": 233,
-"venue": "TCM HD",
-"date": "2012-10-28",
-"title": "The Hound of the Baskervilles",
-"year": 1959,
-"slug": null,
-"imdb_id": "tt0052905"
-},
-{
-"sequence": 240,
-"venue": "TCM HD",
-"date": "2012-11-02",
-"title": "The Devil Rides Out",
-"year": 1968,
-"slug": null,
-"imdb_id": "tt0062885"
-},
-{
-"sequence": 242,
-"venue": "TCM HD",
-"date": "2012-11-03",
-"title": "Dracula: Prince of Darkness",
-"year": 1966,
-"slug": null,
-"imdb_id": "tt0059127"
-},
-{
-"sequence": 244,
-"venue": "TCM HD",
-"date": "2012-11-09",
-"title": "Dracula Has Risen from the Grave",
-"year": 1968,
-"slug": null,
-"imdb_id": "tt0062909"
-},
-{
-"sequence": 252,
-"venue": "AMC Tysons Corner 16",
-"date": "2012-12-13",
-"title": "The Hobbit: An Unexpected Journey",
-"year": 2012,
-"slug": null,
-"imdb_id": "tt0903624"
-}
-]
-},
-{
 "imdb_id": "nm0134831",
 "full_name": "Yakima Canutt",
 "slug": null,
@@ -660,6 +517,113 @@
 "year": 1939,
 "slug": null,
 "imdb_id": "tt0031971"
+}
+]
+},
+{
+"imdb_id": "nm0000489",
+"full_name": "Christopher Lee",
+"slug": "christopher-lee",
+"viewing_count": 11,
+"viewings": [
+{
+"sequence": 20,
+"venue": "TCM HD",
+"date": "2012-01-15",
+"title": "The Gorgon",
+"year": 1964,
+"slug": null,
+"imdb_id": "tt0058155"
+},
+{
+"sequence": 21,
+"venue": "Netflix",
+"date": "2012-01-15",
+"title": "The Crimson Cult",
+"year": 1968,
+"slug": null,
+"imdb_id": "tt0062833"
+},
+{
+"sequence": 50,
+"venue": "TCM HD",
+"date": "2012-01-29",
+"title": "She",
+"year": 1965,
+"slug": null,
+"imdb_id": "tt0059710"
+},
+{
+"sequence": 125,
+"venue": "TCM HD",
+"date": "2012-03-25",
+"title": "Horror Express",
+"year": 1972,
+"slug": null,
+"imdb_id": "tt0068713"
+},
+{
+"sequence": 126,
+"venue": "TCM HD",
+"date": "2012-03-25",
+"title": "Death Line",
+"year": 1972,
+"slug": null,
+"imdb_id": "tt0068458"
+},
+{
+"sequence": 180,
+"venue": "AMC Tysons Corner 16",
+"date": "2012-06-07",
+"title": "Dark Shadows",
+"year": 2012,
+"slug": null,
+"imdb_id": "tt1077368"
+},
+{
+"sequence": 233,
+"venue": "TCM HD",
+"date": "2012-10-28",
+"title": "The Hound of the Baskervilles",
+"year": 1959,
+"slug": null,
+"imdb_id": "tt0052905"
+},
+{
+"sequence": 240,
+"venue": "TCM HD",
+"date": "2012-11-02",
+"title": "The Devil Rides Out",
+"year": 1968,
+"slug": null,
+"imdb_id": "tt0062885"
+},
+{
+"sequence": 242,
+"venue": "TCM HD",
+"date": "2012-11-03",
+"title": "Dracula: Prince of Darkness",
+"year": 1966,
+"slug": null,
+"imdb_id": "tt0059127"
+},
+{
+"sequence": 244,
+"venue": "TCM HD",
+"date": "2012-11-09",
+"title": "Dracula Has Risen from the Grave",
+"year": 1968,
+"slug": null,
+"imdb_id": "tt0062909"
+},
+{
+"sequence": 252,
+"venue": "AMC Tysons Corner 16",
+"date": "2012-12-13",
+"title": "The Hobbit: An Unexpected Journey",
+"year": 2012,
+"slug": null,
+"imdb_id": "tt0903624"
 }
 ]
 },
