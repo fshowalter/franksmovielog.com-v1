@@ -494,6 +494,47 @@
 ]
 },
 {
+"imdb_id": "nm0000007",
+"full_name": "Humphrey Bogart",
+"slug": "humphrey-bogart",
+"average_grade_value": 2.5825,
+"review_count": 4,
+"reviews": [
+{
+"sequence": 1324,
+"grade_value": 2.67,
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940"
+},
+{
+"sequence": 1341,
+"grade_value": 2.33,
+"date": "2022-09-07",
+"title": "Invisible Stripes",
+"year": 1939,
+"slug": "invisible-stripes-1939"
+},
+{
+"sequence": 1344,
+"grade_value": 2.33,
+"date": "2022-09-09",
+"title": "King of the Underworld",
+"year": 1939,
+"slug": "king-of-the-underworld-1939"
+},
+{
+"sequence": 1347,
+"grade_value": 3,
+"date": "2022-09-11",
+"title": "The Big Shot",
+"year": 1942,
+"slug": "the-big-shot-1942"
+}
+]
+},
+{
 "imdb_id": "nm0600667",
 "full_name": "Sheri Moon Zombie",
 "slug": null,
@@ -737,39 +778,6 @@
 "title": "King of the Underworld",
 "year": 1939,
 "slug": "king-of-the-underworld-1939"
-}
-]
-},
-{
-"imdb_id": "nm0000078",
-"full_name": "John Wayne",
-"slug": "john-wayne",
-"average_grade_value": 1.5566666666666666,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1287,
-"grade_value": 2,
-"date": "2022-06-19",
-"title": "Ride Him, Cowboy",
-"year": 1932,
-"slug": "ride-him-cowboy-1932"
-},
-{
-"sequence": 1288,
-"grade_value": 1,
-"date": "2022-06-19",
-"title": "Haunted Gold",
-"year": 1932,
-"slug": "haunted-gold-1932"
-},
-{
-"sequence": 1322,
-"grade_value": 1.67,
-"date": "2022-08-18",
-"title": "The Man from Monterey",
-"year": 1933,
-"slug": "the-man-from-monterey-1933"
 }
 ]
 }
