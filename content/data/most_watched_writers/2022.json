@@ -230,6 +230,41 @@
 ]
 },
 {
+"imdb_id": "nm0122446",
+"full_name": "W.R. Burnett",
+"slug": null,
+"viewing_count": 3,
+"viewings": [
+{
+"sequence": 1327,
+"venue": "Watch TCM",
+"date": "2022-08-22",
+"title": "Dangerous Mission",
+"year": 1954,
+"slug": "dangerous-mission-1954",
+"imdb_id": "tt0046891"
+},
+{
+"sequence": 1344,
+"venue": "Watch TCM",
+"date": "2022-09-09",
+"title": "King of the Underworld",
+"year": 1939,
+"slug": "king-of-the-underworld-1939",
+"imdb_id": "tt0031536"
+},
+{
+"sequence": 1349,
+"venue": "Watch TCM",
+"date": "2022-09-13",
+"title": "High Sierra",
+"year": 1941,
+"slug": "high-sierra-1941",
+"imdb_id": "tt0033717"
+}
+]
+},
+{
 "imdb_id": "nm4469445",
 "full_name": "Julia Ducournau",
 "slug": null,
@@ -304,32 +339,6 @@
 "year": 1984,
 "slug": "body-double-1984",
 "imdb_id": "tt0086984"
-}
-]
-},
-{
-"imdb_id": "nm0000343",
-"full_name": "David Cronenberg",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1246,
-"venue": "Blu-ray",
-"date": "2022-02-08",
-"title": "Fast Company",
-"year": 1979,
-"slug": "fast-company-1979",
-"imdb_id": "tt0079138"
-},
-{
-"sequence": 1286,
-"venue": "Blu-ray",
-"date": "2022-06-18",
-"title": "The Brood",
-"year": 1979,
-"slug": "the-brood-1979",
-"imdb_id": "tt0078908"
 }
 ]
 }

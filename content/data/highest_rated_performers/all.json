@@ -1129,76 +1129,11 @@
 ]
 },
 {
-"imdb_id": "nm0000012",
-"full_name": "Bette Davis",
-"slug": "bette-davis",
-"average_grade_value": 2.5242857142857145,
-"review_count": 7,
-"reviews": [
-{
-"sequence": 924,
-"grade_value": 2.33,
-"date": "2020-11-25",
-"title": "Bad Sister",
-"year": 1931,
-"slug": "the-bad-sister-1931"
-},
-{
-"sequence": 1029,
-"grade_value": 2.67,
-"date": "2021-02-25",
-"title": "Waterloo Bridge",
-"year": 1931,
-"slug": "waterloo-bridge-1931"
-},
-{
-"sequence": 1081,
-"grade_value": 2.33,
-"date": "2021-04-14",
-"title": "Way Back Home",
-"year": 1931,
-"slug": "way-back-home-1931"
-},
-{
-"sequence": 1103,
-"grade_value": 2.67,
-"date": "2021-05-14",
-"title": "Hell's House",
-"year": 1932,
-"slug": "hells-house-1932"
-},
-{
-"sequence": 1133,
-"grade_value": 2,
-"date": "2021-07-18",
-"title": "The Man Who Played God",
-"year": 1932,
-"slug": "the-man-who-played-god-1932"
-},
-{
-"sequence": 1220,
-"grade_value": 2,
-"date": "2021-12-22",
-"title": "The Rich Are Always with Us",
-"year": 1932,
-"slug": "the-rich-are-always-with-us-1932"
-},
-{
-"sequence": 1342,
-"grade_value": 3.67,
-"date": "2022-09-07",
-"title": "The Corn Is Green",
-"year": 1945,
-"slug": "the-corn-is-green-1945"
-}
-]
-},
-{
 "imdb_id": "nm0000007",
 "full_name": "Humphrey Bogart",
 "slug": "humphrey-bogart",
-"average_grade_value": 2.481111111111111,
-"review_count": 9,
+"average_grade_value": 2.6,
+"review_count": 10,
 "reviews": [
 {
 "sequence": 912,
@@ -1271,6 +1206,79 @@
 "title": "The Big Shot",
 "year": 1942,
 "slug": "the-big-shot-1942"
+},
+{
+"sequence": 1349,
+"grade_value": 3.67,
+"date": "2022-09-13",
+"title": "High Sierra",
+"year": 1941,
+"slug": "high-sierra-1941"
+}
+]
+},
+{
+"imdb_id": "nm0000012",
+"full_name": "Bette Davis",
+"slug": "bette-davis",
+"average_grade_value": 2.5242857142857145,
+"review_count": 7,
+"reviews": [
+{
+"sequence": 924,
+"grade_value": 2.33,
+"date": "2020-11-25",
+"title": "Bad Sister",
+"year": 1931,
+"slug": "the-bad-sister-1931"
+},
+{
+"sequence": 1029,
+"grade_value": 2.67,
+"date": "2021-02-25",
+"title": "Waterloo Bridge",
+"year": 1931,
+"slug": "waterloo-bridge-1931"
+},
+{
+"sequence": 1081,
+"grade_value": 2.33,
+"date": "2021-04-14",
+"title": "Way Back Home",
+"year": 1931,
+"slug": "way-back-home-1931"
+},
+{
+"sequence": 1103,
+"grade_value": 2.67,
+"date": "2021-05-14",
+"title": "Hell's House",
+"year": 1932,
+"slug": "hells-house-1932"
+},
+{
+"sequence": 1133,
+"grade_value": 2,
+"date": "2021-07-18",
+"title": "The Man Who Played God",
+"year": 1932,
+"slug": "the-man-who-played-god-1932"
+},
+{
+"sequence": 1220,
+"grade_value": 2,
+"date": "2021-12-22",
+"title": "The Rich Are Always with Us",
+"year": 1932,
+"slug": "the-rich-are-always-with-us-1932"
+},
+{
+"sequence": 1342,
+"grade_value": 3.67,
+"date": "2022-09-07",
+"title": "The Corn Is Green",
+"year": 1945,
+"slug": "the-corn-is-green-1945"
 }
 ]
 },

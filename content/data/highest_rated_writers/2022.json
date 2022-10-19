@@ -77,31 +77,6 @@
 ]
 },
 {
-"imdb_id": "nm1490123",
-"full_name": "James Wan",
-"slug": null,
-"average_grade_value": 3.335,
-"review_count": 2,
-"reviews": [
-{
-"sequence": 1301,
-"grade_value": 3.67,
-"date": "2022-07-08",
-"title": "Saw",
-"year": 2004,
-"slug": "saw-2004"
-},
-{
-"sequence": 1307,
-"grade_value": 3,
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006"
-}
-]
-},
-{
 "imdb_id": "nm0169540",
 "full_name": "Larry Cohen",
 "slug": null,
@@ -372,6 +347,39 @@
 "title": "Saw VI",
 "year": 2009,
 "slug": "saw-vi-2009"
+}
+]
+},
+{
+"imdb_id": "nm0122446",
+"full_name": "W.R. Burnett",
+"slug": null,
+"average_grade_value": 2.6666666666666665,
+"review_count": 3,
+"reviews": [
+{
+"sequence": 1327,
+"grade_value": 2,
+"date": "2022-08-22",
+"title": "Dangerous Mission",
+"year": 1954,
+"slug": "dangerous-mission-1954"
+},
+{
+"sequence": 1344,
+"grade_value": 2.33,
+"date": "2022-09-09",
+"title": "King of the Underworld",
+"year": 1939,
+"slug": "king-of-the-underworld-1939"
+},
+{
+"sequence": 1349,
+"grade_value": 3.67,
+"date": "2022-09-13",
+"title": "High Sierra",
+"year": 1941,
+"slug": "high-sierra-1941"
 }
 ]
 },
