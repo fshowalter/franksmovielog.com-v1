@@ -935,6 +935,103 @@
 ]
 },
 {
+"imdb_id": "nm0000007",
+"full_name": "Humphrey Bogart",
+"slug": "humphrey-bogart",
+"average_grade_value": 2.666363636363636,
+"review_count": 11,
+"reviews": [
+{
+"sequence": 912,
+"grade_value": 3.67,
+"date": "2020-11-06",
+"title": "Up the River",
+"year": 1930,
+"slug": "up-the-river-1930"
+},
+{
+"sequence": 924,
+"grade_value": 2.33,
+"date": "2020-11-25",
+"title": "Bad Sister",
+"year": 1931,
+"slug": "the-bad-sister-1931"
+},
+{
+"sequence": 928,
+"grade_value": 1,
+"date": "2020-11-27",
+"title": "A Holy Terror",
+"year": 1931,
+"slug": "a-holy-terror-1931"
+},
+{
+"sequence": 1003,
+"grade_value": 2.33,
+"date": "2021-01-31",
+"title": "Isle of Fury",
+"year": 1936,
+"slug": "isle-of-fury-1936"
+},
+{
+"sequence": 1204,
+"grade_value": 2.67,
+"date": "2021-12-10",
+"title": "Love Affair",
+"year": 1932,
+"slug": "love-affair-1932"
+},
+{
+"sequence": 1324,
+"grade_value": 2.67,
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940"
+},
+{
+"sequence": 1341,
+"grade_value": 2.33,
+"date": "2022-09-07",
+"title": "Invisible Stripes",
+"year": 1939,
+"slug": "invisible-stripes-1939"
+},
+{
+"sequence": 1344,
+"grade_value": 2.33,
+"date": "2022-09-09",
+"title": "King of the Underworld",
+"year": 1939,
+"slug": "king-of-the-underworld-1939"
+},
+{
+"sequence": 1347,
+"grade_value": 3,
+"date": "2022-09-11",
+"title": "The Big Shot",
+"year": 1942,
+"slug": "the-big-shot-1942"
+},
+{
+"sequence": 1349,
+"grade_value": 3.67,
+"date": "2022-09-13",
+"title": "High Sierra",
+"year": 1941,
+"slug": "high-sierra-1941"
+},
+{
+"sequence": 1350,
+"grade_value": 3.33,
+"date": "2022-09-14",
+"title": "Dead Reckoning",
+"year": 1947,
+"slug": "dead-reckoning-1947"
+}
+]
+},
+{
 "imdb_id": "nm0540311",
 "full_name": "Birger Malmsten",
 "slug": null,
@@ -1125,95 +1222,6 @@
 "title": "Scarface",
 "year": 1932,
 "slug": "scarface-1932"
-}
-]
-},
-{
-"imdb_id": "nm0000007",
-"full_name": "Humphrey Bogart",
-"slug": "humphrey-bogart",
-"average_grade_value": 2.6,
-"review_count": 10,
-"reviews": [
-{
-"sequence": 912,
-"grade_value": 3.67,
-"date": "2020-11-06",
-"title": "Up the River",
-"year": 1930,
-"slug": "up-the-river-1930"
-},
-{
-"sequence": 924,
-"grade_value": 2.33,
-"date": "2020-11-25",
-"title": "Bad Sister",
-"year": 1931,
-"slug": "the-bad-sister-1931"
-},
-{
-"sequence": 928,
-"grade_value": 1,
-"date": "2020-11-27",
-"title": "A Holy Terror",
-"year": 1931,
-"slug": "a-holy-terror-1931"
-},
-{
-"sequence": 1003,
-"grade_value": 2.33,
-"date": "2021-01-31",
-"title": "Isle of Fury",
-"year": 1936,
-"slug": "isle-of-fury-1936"
-},
-{
-"sequence": 1204,
-"grade_value": 2.67,
-"date": "2021-12-10",
-"title": "Love Affair",
-"year": 1932,
-"slug": "love-affair-1932"
-},
-{
-"sequence": 1324,
-"grade_value": 2.67,
-"date": "2022-08-20",
-"title": "Virginia City",
-"year": 1940,
-"slug": "virginia-city-1940"
-},
-{
-"sequence": 1341,
-"grade_value": 2.33,
-"date": "2022-09-07",
-"title": "Invisible Stripes",
-"year": 1939,
-"slug": "invisible-stripes-1939"
-},
-{
-"sequence": 1344,
-"grade_value": 2.33,
-"date": "2022-09-09",
-"title": "King of the Underworld",
-"year": 1939,
-"slug": "king-of-the-underworld-1939"
-},
-{
-"sequence": 1347,
-"grade_value": 3,
-"date": "2022-09-11",
-"title": "The Big Shot",
-"year": 1942,
-"slug": "the-big-shot-1942"
-},
-{
-"sequence": 1349,
-"grade_value": 3.67,
-"date": "2022-09-13",
-"title": "High Sierra",
-"year": 1941,
-"slug": "high-sierra-1941"
 }
 ]
 },
