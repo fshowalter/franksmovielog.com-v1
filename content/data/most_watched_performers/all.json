@@ -445,7 +445,7 @@
 "imdb_id": "nm0000007",
 "full_name": "Humphrey Bogart",
 "slug": "humphrey-bogart",
-"viewing_count": 41,
+"viewing_count": 42,
 "viewings": [
 {
 "sequence": 29,
@@ -615,7 +615,7 @@
 "date": "2012-11-01",
 "title": "Dead Reckoning",
 "year": 1947,
-"slug": null,
+"slug": "dead-reckoning-1947",
 "imdb_id": "tt0039305"
 },
 {
@@ -723,7 +723,7 @@
 "date": "2018-08-04",
 "title": "Dead Reckoning",
 "year": 1947,
-"slug": null,
+"slug": "dead-reckoning-1947",
 "imdb_id": "tt0039305"
 },
 {
@@ -815,6 +815,15 @@
 "year": 1941,
 "slug": "high-sierra-1941",
 "imdb_id": "tt0033717"
+},
+{
+"sequence": 1350,
+"venue": "Watch TCM",
+"date": "2022-09-14",
+"title": "Dead Reckoning",
+"year": 1947,
+"slug": "dead-reckoning-1947",
+"imdb_id": "tt0039305"
 }
 ]
 },
