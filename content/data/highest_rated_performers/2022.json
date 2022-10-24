@@ -735,8 +735,8 @@
 "imdb_id": "nm0077720",
 "full_name": "Michael Berryman",
 "slug": null,
-"average_grade_value": 1.78,
-"review_count": 3,
+"average_grade_value": 1.835,
+"review_count": 4,
 "reviews": [
 {
 "sequence": 1228,
@@ -761,6 +761,14 @@
 "title": "The Hills Have Eyes Part II",
 "year": 1984,
 "slug": "the-hills-have-eyes-part-ii-1984"
+},
+{
+"sequence": 1353,
+"grade_value": 2,
+"date": "2022-09-16",
+"title": "New York Ninja",
+"year": 2021,
+"slug": "new-york-ninja-2021"
 }
 ]
 },
