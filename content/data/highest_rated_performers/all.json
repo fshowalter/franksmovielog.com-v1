@@ -720,8 +720,8 @@
 "imdb_id": "nm0001635",
 "full_name": "William Powell",
 "slug": "william-powell",
-"average_grade_value": 2.7912500000000002,
-"review_count": 16,
+"average_grade_value": 2.7641176470588236,
+"review_count": 17,
 "reviews": [
 {
 "sequence": 841,
@@ -850,6 +850,14 @@
 "title": "The Hoodlum Saint",
 "year": 1946,
 "slug": "the-hoodlum-saint-1946"
+},
+{
+"sequence": 1354,
+"grade_value": 2.33,
+"date": "2022-09-17",
+"title": "The Great Ziegfeld",
+"year": 1936,
+"slug": "the-great-ziegfeld-1936"
 }
 ]
 },
