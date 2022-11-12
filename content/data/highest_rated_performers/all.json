@@ -720,7 +720,7 @@
 "imdb_id": "nm0001635",
 "full_name": "William Powell",
 "slug": "william-powell",
-"average_grade_value": 2.7641176470588236,
+"average_grade_value": 2.7447058823529416,
 "review_count": 17,
 "reviews": [
 {
@@ -853,7 +853,7 @@
 },
 {
 "sequence": 1354,
-"grade_value": 2.33,
+"grade_value": 2,
 "date": "2022-09-17",
 "title": "The Great Ziegfeld",
 "year": 1936,
@@ -1440,8 +1440,8 @@
 "imdb_id": "nm0000078",
 "full_name": "John Wayne",
 "slug": "john-wayne",
-"average_grade_value": 2.303636363636364,
-"review_count": 11,
+"average_grade_value": 2.1950000000000003,
+"review_count": 12,
 "reviews": [
 {
 "sequence": 863,
@@ -1530,6 +1530,14 @@
 "title": "The Man from Monterey",
 "year": 1933,
 "slug": "the-man-from-monterey-1933"
+},
+{
+"sequence": 1355,
+"grade_value": 1,
+"date": "2022-09-18",
+"title": "Reunion in France",
+"year": 1942,
+"slug": "reunion-in-france-1942"
 }
 ]
 }

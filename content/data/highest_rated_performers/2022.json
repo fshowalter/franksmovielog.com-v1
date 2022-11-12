@@ -101,39 +101,6 @@
 ]
 },
 {
-"imdb_id": "nm0942482",
-"full_name": "Jeffrey Wright",
-"slug": null,
-"average_grade_value": 3.0,
-"review_count": 3,
-"reviews": [
-{
-"sequence": 1272,
-"grade_value": 3.33,
-"date": "2022-04-28",
-"title": "The Batman",
-"year": 2022,
-"slug": "the-batman-2022"
-},
-{
-"sequence": 1283,
-"grade_value": 3.67,
-"date": "2022-06-15",
-"title": "Casino Royale",
-"year": 2006,
-"slug": "casino-royale-2006"
-},
-{
-"sequence": 1284,
-"grade_value": 2,
-"date": "2022-06-16",
-"title": "No Time to Die",
-"year": 2021,
-"slug": "no-time-to-die-2021"
-}
-]
-},
-{
 "imdb_id": "nm0068551",
 "full_name": "Tobin Bell",
 "slug": null,
@@ -773,35 +740,84 @@
 ]
 },
 {
-"imdb_id": "nm0222797",
-"full_name": "Joe Devlin",
+"imdb_id": "nm0647752",
+"full_name": "Moroni Olsen",
 "slug": null,
-"average_grade_value": 1.7766666666666666,
-"review_count": 3,
+"average_grade_value": 1.75,
+"review_count": 4,
 "reviews": [
 {
-"sequence": 1281,
+"sequence": 1294,
 "grade_value": 1,
-"date": "2022-06-13",
-"title": "Good Times",
-"year": 1967,
-"slug": "good-times-1967"
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936"
 },
 {
-"sequence": 1323,
-"grade_value": 2,
-"date": "2022-08-19",
-"title": "The Hoodlum Saint",
-"year": 1946,
-"slug": "the-hoodlum-saint-1946"
+"sequence": 1324,
+"grade_value": 2.67,
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940"
 },
 {
-"sequence": 1344,
+"sequence": 1341,
 "grade_value": 2.33,
-"date": "2022-09-09",
-"title": "King of the Underworld",
+"date": "2022-09-07",
+"title": "Invisible Stripes",
 "year": 1939,
-"slug": "king-of-the-underworld-1939"
+"slug": "invisible-stripes-1939"
+},
+{
+"sequence": 1355,
+"grade_value": 1,
+"date": "2022-09-18",
+"title": "Reunion in France",
+"year": 1942,
+"slug": "reunion-in-france-1942"
+}
+]
+},
+{
+"imdb_id": "nm0000078",
+"full_name": "John Wayne",
+"slug": "john-wayne",
+"average_grade_value": 1.4175,
+"review_count": 4,
+"reviews": [
+{
+"sequence": 1287,
+"grade_value": 2,
+"date": "2022-06-19",
+"title": "Ride Him, Cowboy",
+"year": 1932,
+"slug": "ride-him-cowboy-1932"
+},
+{
+"sequence": 1288,
+"grade_value": 1,
+"date": "2022-06-19",
+"title": "Haunted Gold",
+"year": 1932,
+"slug": "haunted-gold-1932"
+},
+{
+"sequence": 1322,
+"grade_value": 1.67,
+"date": "2022-08-18",
+"title": "The Man from Monterey",
+"year": 1933,
+"slug": "the-man-from-monterey-1933"
+},
+{
+"sequence": 1355,
+"grade_value": 1,
+"date": "2022-09-18",
+"title": "Reunion in France",
+"year": 1942,
+"slug": "reunion-in-france-1942"
 }
 ]
 }
