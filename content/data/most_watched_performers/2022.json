@@ -258,6 +258,94 @@
 ]
 },
 {
+"imdb_id": "nm0000078",
+"full_name": "John Wayne",
+"slug": "john-wayne",
+"viewing_count": 4,
+"viewings": [
+{
+"sequence": 1287,
+"venue": "iTunes",
+"date": "2022-06-19",
+"title": "Ride Him, Cowboy",
+"year": 1932,
+"slug": "ride-him-cowboy-1932",
+"imdb_id": "tt0023396"
+},
+{
+"sequence": 1288,
+"venue": "iTunes",
+"date": "2022-06-19",
+"title": "Haunted Gold",
+"year": 1932,
+"slug": "haunted-gold-1932",
+"imdb_id": "tt0022981"
+},
+{
+"sequence": 1322,
+"venue": "Watch TCM",
+"date": "2022-08-18",
+"title": "The Man from Monterey",
+"year": 1933,
+"slug": "the-man-from-monterey-1933",
+"imdb_id": "tt0024293"
+},
+{
+"sequence": 1355,
+"venue": "Watch TCM",
+"date": "2022-09-18",
+"title": "Reunion in France",
+"year": 1942,
+"slug": "reunion-in-france-1942",
+"imdb_id": "tt0035250"
+}
+]
+},
+{
+"imdb_id": "nm0647752",
+"full_name": "Moroni Olsen",
+"slug": null,
+"viewing_count": 4,
+"viewings": [
+{
+"sequence": 1294,
+"venue": "Criterion Channel",
+"date": "2022-06-27",
+"title": "The Plough and the Stars",
+"year": 1936,
+"slug": "the-plough-and-the-stars-1936",
+"imdb_id": "tt0028112"
+},
+{
+"sequence": 1324,
+"venue": "Watch TCM",
+"date": "2022-08-20",
+"title": "Virginia City",
+"year": 1940,
+"slug": "virginia-city-1940",
+"imdb_id": "tt0033226"
+},
+{
+"sequence": 1341,
+"venue": "Watch TCM",
+"date": "2022-09-07",
+"title": "Invisible Stripes",
+"year": 1939,
+"slug": "invisible-stripes-1939",
+"imdb_id": "tt0032636"
+},
+{
+"sequence": 1355,
+"venue": "Watch TCM",
+"date": "2022-09-18",
+"title": "Reunion in France",
+"year": 1942,
+"slug": "reunion-in-france-1942",
+"imdb_id": "tt0035250"
+}
+]
+},
+{
 "imdb_id": "nm0000539",
 "full_name": "Dina Meyer",
 "slug": null,
@@ -386,94 +474,6 @@
 "year": 2009,
 "slug": "saw-vi-2009",
 "imdb_id": "tt1233227"
-}
-]
-},
-{
-"imdb_id": "nm0751018",
-"full_name": "Betsy Russell",
-"slug": null,
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 1307,
-"venue": "Blu-ray",
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006",
-"imdb_id": "tt0489270"
-},
-{
-"sequence": 1315,
-"venue": "Blu-ray",
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007",
-"imdb_id": "tt0890870"
-},
-{
-"sequence": 1319,
-"venue": "Blu-ray",
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"slug": "saw-v-2008",
-"imdb_id": "tt1132626"
-},
-{
-"sequence": 1346,
-"venue": "Blu-ray",
-"date": "2022-09-10",
-"title": "Saw VI",
-"year": 2009,
-"slug": "saw-vi-2009",
-"imdb_id": "tt1233227"
-}
-]
-},
-{
-"imdb_id": "nm0000034",
-"full_name": "William Holden",
-"slug": "william-holden",
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 1321,
-"venue": "Watch TCM",
-"date": "2022-08-18",
-"title": "Dear Ruth",
-"year": 1947,
-"slug": "dear-ruth-1947",
-"imdb_id": "tt0039307"
-},
-{
-"sequence": 1339,
-"venue": "Watch TCM",
-"date": "2022-09-06",
-"title": "Force of Arms",
-"year": 1951,
-"slug": "force-of-arms-1951",
-"imdb_id": "tt0043553"
-},
-{
-"sequence": 1340,
-"venue": "Watch TCM",
-"date": "2022-09-06",
-"title": "Rachel and the Stranger",
-"year": 1948,
-"slug": "rachel-and-the-stranger-1948",
-"imdb_id": "tt0040720"
-},
-{
-"sequence": 1341,
-"venue": "Watch TCM",
-"date": "2022-09-07",
-"title": "Invisible Stripes",
-"year": 1939,
-"slug": "invisible-stripes-1939",
-"imdb_id": "tt0032636"
 }
 ]
 }
