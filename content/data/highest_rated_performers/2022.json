@@ -658,47 +658,6 @@
 ]
 },
 {
-"imdb_id": "nm0000026",
-"full_name": "Cary Grant",
-"slug": "cary-grant",
-"average_grade_value": 1.9175,
-"review_count": 4,
-"reviews": [
-{
-"sequence": 1266,
-"grade_value": 2,
-"date": "2022-03-28",
-"title": "Merrily We Go to Hell",
-"year": 1932,
-"slug": "merrily-we-go-to-hell-1932"
-},
-{
-"sequence": 1329,
-"grade_value": 3.67,
-"date": "2022-08-26",
-"title": "Topper",
-"year": 1937,
-"slug": "topper-1937"
-},
-{
-"sequence": 1334,
-"grade_value": 1,
-"date": "2022-08-31",
-"title": "Penny Serenade",
-"year": 1941,
-"slug": "penny-serenade-1941"
-},
-{
-"sequence": 1337,
-"grade_value": 1,
-"date": "2022-09-02",
-"title": "Every Girl Should Be Married",
-"year": 1948,
-"slug": "every-girl-should-be-married-1948"
-}
-]
-},
-{
 "imdb_id": "nm0647752",
 "full_name": "Moroni Olsen",
 "slug": null,
@@ -736,6 +695,55 @@
 "title": "Reunion in France",
 "year": 1942,
 "slug": "reunion-in-france-1942"
+}
+]
+},
+{
+"imdb_id": "nm0000026",
+"full_name": "Cary Grant",
+"slug": "cary-grant",
+"average_grade_value": 1.8679999999999999,
+"review_count": 5,
+"reviews": [
+{
+"sequence": 1266,
+"grade_value": 2,
+"date": "2022-03-28",
+"title": "Merrily We Go to Hell",
+"year": 1932,
+"slug": "merrily-we-go-to-hell-1932"
+},
+{
+"sequence": 1329,
+"grade_value": 3.67,
+"date": "2022-08-26",
+"title": "Topper",
+"year": 1937,
+"slug": "topper-1937"
+},
+{
+"sequence": 1334,
+"grade_value": 1,
+"date": "2022-08-31",
+"title": "Penny Serenade",
+"year": 1941,
+"slug": "penny-serenade-1941"
+},
+{
+"sequence": 1337,
+"grade_value": 1,
+"date": "2022-09-02",
+"title": "Every Girl Should Be Married",
+"year": 1948,
+"slug": "every-girl-should-be-married-1948"
+},
+{
+"sequence": 1358,
+"grade_value": 1.67,
+"date": "2022-09-20",
+"title": "Suzy",
+"year": 1936,
+"slug": "suzy-1936"
 }
 ]
 },

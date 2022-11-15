@@ -36,23 +36,6 @@
 ]
 },
 {
-"imdb_id": "nm1052791",
-"full_name": "Pascal Laugier",
-"slug": null,
-"average_grade_value": 4.33,
-"review_count": 1,
-"reviews": [
-{
-"sequence": 1233,
-"grade_value": 4.33,
-"date": "2022-01-20",
-"title": "Martyrs",
-"year": 2008,
-"slug": "martyrs-2008"
-}
-]
-},
-{
 "imdb_id": "nm0027271",
 "full_name": "Paul W.S. Anderson",
 "slug": null,
@@ -480,6 +463,31 @@
 "title": "Holiday Affair",
 "year": 1949,
 "slug": "holiday-affair-1949"
+}
+]
+},
+{
+"imdb_id": "nm0000485",
+"full_name": "Fritz Lang",
+"slug": "fritz-lang",
+"average_grade_value": 2.0,
+"review_count": 2,
+"reviews": [
+{
+"sequence": 1345,
+"grade_value": 2.33,
+"date": "2022-09-10",
+"title": "Fury",
+"year": 1936,
+"slug": "fury-1936"
+},
+{
+"sequence": 1359,
+"grade_value": 1.67,
+"date": "2022-09-22",
+"title": "The Blue Gardenia",
+"year": 1953,
+"slug": "the-blue-gardenia-1953"
 }
 ]
 },
