@@ -126,6 +126,59 @@
 ]
 },
 {
+"imdb_id": "nm0000026",
+"full_name": "Cary Grant",
+"slug": "cary-grant",
+"viewing_count": 5,
+"viewings": [
+{
+"sequence": 1266,
+"venue": "Criterion Channel",
+"date": "2022-03-28",
+"title": "Merrily We Go to Hell",
+"year": 1932,
+"slug": "merrily-we-go-to-hell-1932",
+"imdb_id": "tt0023213"
+},
+{
+"sequence": 1329,
+"venue": "Watch TCM",
+"date": "2022-08-26",
+"title": "Topper",
+"year": 1937,
+"slug": "topper-1937",
+"imdb_id": "tt0029682"
+},
+{
+"sequence": 1334,
+"venue": "Watch TCM",
+"date": "2022-08-31",
+"title": "Penny Serenade",
+"year": 1941,
+"slug": "penny-serenade-1941",
+"imdb_id": "tt0034012"
+},
+{
+"sequence": 1337,
+"venue": "Watch TCM",
+"date": "2022-09-02",
+"title": "Every Girl Should Be Married",
+"year": 1948,
+"slug": "every-girl-should-be-married-1948",
+"imdb_id": "tt0040331"
+},
+{
+"sequence": 1358,
+"venue": "Watch TCM",
+"date": "2022-09-20",
+"title": "Suzy",
+"year": 1936,
+"slug": "suzy-1936",
+"imdb_id": "tt0028330"
+}
+]
+},
+{
 "imdb_id": "nm0077720",
 "full_name": "Michael Berryman",
 "slug": null,
@@ -210,50 +263,6 @@
 "year": 1991,
 "slug": "popcorn-1991",
 "imdb_id": "tt0102690"
-}
-]
-},
-{
-"imdb_id": "nm0000026",
-"full_name": "Cary Grant",
-"slug": "cary-grant",
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 1266,
-"venue": "Criterion Channel",
-"date": "2022-03-28",
-"title": "Merrily We Go to Hell",
-"year": 1932,
-"slug": "merrily-we-go-to-hell-1932",
-"imdb_id": "tt0023213"
-},
-{
-"sequence": 1329,
-"venue": "Watch TCM",
-"date": "2022-08-26",
-"title": "Topper",
-"year": 1937,
-"slug": "topper-1937",
-"imdb_id": "tt0029682"
-},
-{
-"sequence": 1334,
-"venue": "Watch TCM",
-"date": "2022-08-31",
-"title": "Penny Serenade",
-"year": 1941,
-"slug": "penny-serenade-1941",
-"imdb_id": "tt0034012"
-},
-{
-"sequence": 1337,
-"venue": "Watch TCM",
-"date": "2022-09-02",
-"title": "Every Girl Should Be Married",
-"year": 1948,
-"slug": "every-girl-should-be-married-1948",
-"imdb_id": "tt0040331"
 }
 ]
 },

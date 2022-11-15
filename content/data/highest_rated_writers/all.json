@@ -182,47 +182,6 @@
 ]
 },
 {
-"imdb_id": "nm0589316",
-"full_name": "Seton I. Miller",
-"slug": null,
-"average_grade_value": 3.335,
-"review_count": 4,
-"reviews": [
-{
-"sequence": 869,
-"grade_value": 3.67,
-"date": "2020-09-13",
-"title": "The Dawn Patrol",
-"year": 1930,
-"slug": "the-dawn-patrol-1930"
-},
-{
-"sequence": 919,
-"grade_value": 3.33,
-"date": "2020-11-18",
-"title": "The Criminal Code",
-"year": 1930,
-"slug": "the-criminal-code-1930"
-},
-{
-"sequence": 1217,
-"grade_value": 3.67,
-"date": "2021-12-20",
-"title": "Scarface",
-"year": 1932,
-"slug": "scarface-1932"
-},
-{
-"sequence": 1219,
-"grade_value": 2.67,
-"date": "2021-12-22",
-"title": "The Crowd Roars",
-"year": 1932,
-"slug": "the-crowd-roars-1932"
-}
-]
-},
-{
 "imdb_id": "nm0002086",
 "full_name": "Lucio Fulci",
 "slug": null,
@@ -991,6 +950,47 @@
 "title": "Spider-Man: No Way Home",
 "year": 2021,
 "slug": "spider-man-no-way-home-2021"
+}
+]
+},
+{
+"imdb_id": "nm0542534",
+"full_name": "Herman J. Mankiewicz",
+"slug": null,
+"average_grade_value": 2.5,
+"review_count": 4,
+"reviews": [
+{
+"sequence": 841,
+"grade_value": 3,
+"date": "2020-07-17",
+"title": "The Canary Murder Case",
+"year": 1929,
+"slug": "the-canary-murder-case-1929"
+},
+{
+"sequence": 925,
+"grade_value": 3,
+"date": "2020-11-25",
+"title": "Ladies' Man",
+"year": 1931,
+"slug": "ladies-man-1931"
+},
+{
+"sequence": 980,
+"grade_value": 2.33,
+"date": "2021-01-10",
+"title": "Man of the World",
+"year": 1931,
+"slug": "man-of-the-world-1931"
+},
+{
+"sequence": 1358,
+"grade_value": 1.67,
+"date": "2022-09-20",
+"title": "Suzy",
+"year": 1936,
+"slug": "suzy-1936"
 }
 ]
 },
