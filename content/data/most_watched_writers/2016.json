@@ -10,19 +10,21 @@
 {
 "sequence": 542,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2016-03-10",
 "title": "The Witch",
 "year": 2015,
-"slug": "the-witch-2015",
+"review_slug": "the-witch-2015",
 "imdb_id": "tt4263482"
 },
 {
 "sequence": 559,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2016-09-17",
 "title": "The Witch",
 "year": 2015,
-"slug": "the-witch-2015",
+"review_slug": "the-witch-2015",
 "imdb_id": "tt4263482"
 }
 ]
@@ -36,19 +38,21 @@
 {
 "sequence": 547,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2016-05-12",
 "title": "Captain America: Civil War",
 "year": 2016,
-"slug": "captain-america-civil-war-2016",
+"review_slug": "captain-america-civil-war-2016",
 "imdb_id": "tt3498820"
 },
 {
 "sequence": 569,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2016-11-12",
 "title": "Captain America: Civil War",
 "year": 2016,
-"slug": "captain-america-civil-war-2016",
+"review_slug": "captain-america-civil-war-2016",
 "imdb_id": "tt3498820"
 }
 ]
@@ -62,19 +66,21 @@
 {
 "sequence": 547,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2016-05-12",
 "title": "Captain America: Civil War",
 "year": 2016,
-"slug": "captain-america-civil-war-2016",
+"review_slug": "captain-america-civil-war-2016",
 "imdb_id": "tt3498820"
 },
 {
 "sequence": 569,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2016-11-12",
 "title": "Captain America: Civil War",
 "year": 2016,
-"slug": "captain-america-civil-war-2016",
+"review_slug": "captain-america-civil-war-2016",
 "imdb_id": "tt3498820"
 }
 ]

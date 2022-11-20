@@ -12,6 +12,42 @@ import {
   listItemTitleYearCss,
 } from "./PosterList.module.scss";
 
+function MediumAndVenue({
+  medium,
+  venue,
+}: {
+  medium?: string | null;
+  venue?: string | null;
+}): JSX.Element | null {
+  if (medium && venue) {
+    return (
+      <>
+        <div>
+          {medium} at {venue}
+        </div>
+      </>
+    );
+  }
+
+  if (medium) {
+    return (
+      <>
+        <div>{medium}</div>
+      </>
+    );
+  }
+
+  if (venue) {
+    return (
+      <>
+        <div>{venue}</div>
+      </>
+    );
+  }
+
+  return null;
+}
+
 export function Poster({
   slug,
   image,
@@ -20,16 +56,18 @@ export function Poster({
   grade,
   date,
   venue,
+  medium,
   details,
   showTitle = true,
 }: {
-  slug: string | null;
+  slug?: string | null;
   image: Image;
   title: string;
   year: number;
   grade?: string | null;
   date?: string;
-  venue?: string;
+  venue?: string | null;
+  medium?: string | null;
   showTitle?: boolean;
   details?: React.ReactNode;
 }): JSX.Element {
@@ -55,7 +93,7 @@ export function Poster({
             <div className={listItemSlugCss}>
               {grade && <Grade grade={grade} className={listItemGradeCss} />}
               {date && <div>{date}</div>}
-              {venue && <div>{venue}</div>}
+              <MediumAndVenue medium={medium} venue={venue} />
             </div>
           </>
         )}
@@ -79,7 +117,7 @@ export function Poster({
           </div>
           <div className={listItemSlugCss}>
             {date && <div>{date}</div>}
-            {venue && <div>{venue}</div>}
+            <MediumAndVenue medium={medium} venue={venue} />
           </div>
         </>
       )}

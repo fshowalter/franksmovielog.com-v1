@@ -4,7 +4,6 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
-import type { WatchlistMovie } from "./WatchlistIndexPage";
 
 export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
@@ -25,10 +24,16 @@ export type SortType = "release-date-asc" | "release-date-desc" | "title";
  * @param titles The collection to sort.
  * @param sortOrder The sort function key.
  */
-function sortMovies(titles: WatchlistMovie[], sortOrder: SortType) {
+function sortMovies(
+  titles: Queries.WatchlistMovieFragment[],
+  sortOrder: SortType
+) {
   const sortMap: Record<
     SortType,
-    (a: WatchlistMovie, b: WatchlistMovie) => number
+    (
+      a: Queries.WatchlistMovieFragment,
+      b: Queries.WatchlistMovieFragment
+    ) => number
   > = {
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
@@ -43,7 +48,7 @@ function sortMovies(titles: WatchlistMovie[], sortOrder: SortType) {
  * Parses the given watchlist movies and returns the [min, max] release years.
  * @param titles The watchlist movies to parse.
  */
-function minMaxReleaseYearsForMovies(movies: WatchlistMovie[]) {
+function minMaxReleaseYearsForMovies(movies: Queries.WatchlistMovieFragment[]) {
   const releaseYears = movies
     .map((movie) => {
       return movie.year;
@@ -58,13 +63,13 @@ function minMaxReleaseYearsForMovies(movies: WatchlistMovie[]) {
 
 type State = {
   /** All possible watchlist movies. */
-  allMovies: WatchlistMovie[];
+  allMovies: Queries.WatchlistMovieFragment[];
   /** Watchlist movies matching the current filters. */
-  filteredMovies: WatchlistMovie[];
+  filteredMovies: Queries.WatchlistMovieFragment[];
   /** Number of movies to show on the page. */
   showCount: number;
   /** The active filters. */
-  filters: Record<string, (movie: WatchlistMovie) => boolean>;
+  filters: Record<string, (movie: Queries.WatchlistMovieFragment) => boolean>;
   /** The minimum year for the release date filter. */
   minYear: number;
   /** The maximum year for the release date filter. */
@@ -80,7 +85,11 @@ const SHOW_COUNT_DEFAULT = 24;
 /**
  * Initializes the page state.
  */
-export function initState({ movies }: { movies: WatchlistMovie[] }): State {
+export function initState({
+  movies,
+}: {
+  movies: Queries.WatchlistMovieFragment[];
+}): State {
   const [minYear, maxYear] = minMaxReleaseYearsForMovies(movies);
 
   return {
@@ -179,12 +188,15 @@ export default function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (movie: WatchlistMovie) => {
+        title: (movie: Queries.WatchlistMovieFragment) => {
           return regex.test(movie.title);
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -197,7 +209,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionType.FILTER_DIRECTOR: {
       filters = {
         ...state.filters,
-        director: (movie: WatchlistMovie) => {
+        director: (movie: Queries.WatchlistMovieFragment) => {
           if (action.value === "All") {
             return true;
           }
@@ -206,7 +218,10 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -219,7 +234,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionType.FILTER_PERFORMER: {
       filters = {
         ...state.filters,
-        performer: (movie: WatchlistMovie) => {
+        performer: (movie: Queries.WatchlistMovieFragment) => {
           if (action.value === "All") {
             return true;
           }
@@ -228,7 +243,10 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -241,7 +259,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionType.FILTER_WRITER: {
       filters = {
         ...state.filters,
-        writer: (movie: WatchlistMovie) => {
+        writer: (movie: Queries.WatchlistMovieFragment) => {
           if (action.value === "All") {
             return true;
           }
@@ -250,7 +268,10 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -263,7 +284,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionType.FILTER_COLLECTION: {
       filters = {
         ...state.filters,
-        collection: (movie: WatchlistMovie) => {
+        collection: (movie: Queries.WatchlistMovieFragment) => {
           if (action.value === "All") {
             return true;
           }
@@ -272,7 +293,10 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -285,7 +309,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionType.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (movie: WatchlistMovie) => {
+        releaseYear: (movie: Queries.WatchlistMovieFragment) => {
           const releaseYear = movie.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
@@ -293,7 +317,10 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -327,13 +354,16 @@ export default function reducer(state: State, action: Action): State {
       } else {
         filters = {
           ...state.filters,
-          reviewed: (movie: WatchlistMovie) => {
-            return movie.reviewedMovieSlug === null;
+          reviewed: (movie: Queries.WatchlistMovieFragment) => {
+            return !movie.reviewedMovie?.slug;
           },
         };
       }
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {

@@ -19,7 +19,7 @@ export default function YearInput({
 }: {
   /** The label text. */
   label: string;
-  years: string[];
+  years: readonly string[];
   /** Handler called when the control changes. */
   onChange: (values: [number, number]) => void;
 }): JSX.Element {

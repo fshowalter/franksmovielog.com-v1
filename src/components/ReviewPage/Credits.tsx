@@ -1,6 +1,6 @@
+import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import toSentenceArray from "../../utils/to-sentence-array";
-import WatchlistLinks from "../WatchlistLinks";
 import {
   backToTopArrowCss,
   backToTopContainerCss,
@@ -13,18 +13,18 @@ import {
   titleCss,
   watchlistCss,
 } from "./Credits.module.scss";
-import type { Movie } from "./ReviewPage";
+import WatchlistLinks from "./WatchlistLinks";
 
 export default function Credits({
   movie,
   className,
 }: {
-  movie: Movie;
+  movie: Queries.CreditsFragment;
   className: string;
-}) {
+}): JSX.Element {
   return (
     <aside id="credits" className={[className, containerCss].join(" ")}>
-      {movie.poster && (
+      {movie.poster?.childImageSharp && (
         <GatsbyImage
           className={posterCss}
           image={movie.poster.childImageSharp.gatsbyImageData}
@@ -73,3 +73,27 @@ export default function Credits({
     </aside>
   );
 }
+
+export const query = graphql`
+  fragment Credits on ReviewedMoviesJson {
+    title
+    year
+    originalTitle: original_title
+    countries
+    runtimeMinutes: runtime_minutes
+    directorNames: director_names
+    principalCastNames: principal_cast_names
+    poster {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 248
+          placeholder: TRACED_SVG
+        )
+      }
+    }
+    ...WatchlistLinks
+  }
+`;

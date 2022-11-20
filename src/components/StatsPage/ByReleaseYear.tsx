@@ -1,4 +1,3 @@
-import React from "react";
 import Bar from "./Bar";
 import StatHeading from "./StatHeading";
 import type { DecadeStat } from "./StatsPage";

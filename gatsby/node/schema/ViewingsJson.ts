@@ -8,10 +8,10 @@ import type {
 import findDefaultPosterNode from "./utils/findDefaultPosterNode";
 import findReviewedMovieNode from "./utils/findReviewedMovieNode";
 import resolveFieldForNode from "./utils/resolveFieldForNode";
-import valueForGrade from "./utils/valueForGrade";
 
 export interface ViewingNode extends GatsbyNode {
   imdb_id: string;
+  sequence: number;
 }
 
 export default {
@@ -30,11 +30,42 @@ export default {
     },
     viewing_year: "Int!",
     sequence: "Int!",
-    venue: "String!",
+    venue: "String",
+    medium: "String",
+    medium_notes: "String",
     sort_title: "String!",
-    slug: "String",
-    grade: "String",
     genres: "[String!]!",
+    reviewedMovie: {
+      type: SchemaNames.REVIEWED_MOVIES_JSON,
+      resolve: async (
+        source: ViewingNode,
+        _args: GatsbyResolveArgs,
+        context: GatsbyNodeContext
+      ) => {
+        return await findReviewedMovieNode(source.imdb_id, context.nodeModel);
+      },
+    },
+    viewingNotes: {
+      type: SchemaNames.MARKDOWN_REMARK,
+      resolve: async (
+        source: ViewingNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        return await context.nodeModel.findOne({
+          type: SchemaNames.MARKDOWN_REMARK,
+          query: {
+            filter: {
+              fileAbsolutePath: {
+                regex: `//viewing_notes/${source.sequence
+                  .toString()
+                  .padStart(4, "0")}-.*/`,
+              },
+            },
+          },
+        });
+      },
+    },
     poster: {
       type: "File",
       resolve: async (
@@ -59,25 +90,6 @@ export default {
           info,
           args
         );
-      },
-    },
-    gradeValue: {
-      type: "Int",
-      resolve: async (
-        source: ViewingNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const grade = await resolveFieldForNode<string>(
-          "grade",
-          source,
-          context,
-          info,
-          args
-        );
-
-        return valueForGrade(grade);
       },
     },
   },

@@ -5,7 +5,9 @@ export type GatsbyNode = Node;
 
 export interface GatsbyNodeModel {
   findOne: <T>(args: object) => Promise<T>;
-  findAll: <T>(args: object) => Promise<{ entries: T[] }>;
+  findAll: <T>(
+    args: object
+  ) => Promise<{ entries: T[]; totalCount: () => Promise<number> }>;
 }
 
 export interface GatsbyResolveArgs {

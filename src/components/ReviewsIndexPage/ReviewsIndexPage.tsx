@@ -81,7 +81,7 @@ function groupForViewing(movie: Movie, sortValue: SortType): string {
     }
     case "grade-asc":
     case "grade-desc": {
-      return movie.grade || "Unrated";
+      return movie.reviewedMovie?.grade || "Unrated";
     }
     case "title": {
       const letter = movie.sortTitle.substring(0, 1);
@@ -226,7 +226,7 @@ export default function ReviewsIndexPage({
                 }
               />
               <SelectField
-                label="Venue"
+                label="Media"
                 onChange={(e) =>
                   dispatch({
                     type: ActionTypes.FILTER_VENUE,
@@ -234,7 +234,7 @@ export default function ReviewsIndexPage({
                   })
                 }
               >
-                <SelectOptions options={data.movie.venues} />
+                <SelectOptions options={data.movie.media} />
               </SelectField>
               <div className={genresWrapCss}>
                 <label htmlFor="genres" className={genresSelectLabelCss}>
@@ -321,10 +321,11 @@ export default function ReviewsIndexPage({
                           key={viewing.sequence}
                           title={viewing.title}
                           year={viewing.year}
-                          grade={viewing.grade}
+                          grade={viewing.reviewedMovie?.grade}
                           date={viewing.viewingDate}
                           venue={viewing.venue}
-                          slug={viewing.slug}
+                          medium={viewing.medium}
+                          slug={viewing.reviewedMovie?.slug}
                           image={viewing.poster}
                         />
                       );
@@ -362,11 +363,14 @@ export interface Movie {
   viewingYear: number;
   sequence: number;
   venue: string;
+  medium: string;
   sortTitle: string;
   genres: string[];
-  slug: string | null;
-  grade: string | null;
-  gradeValue: number | null;
+  reviewedMovie: {
+    slug: string;
+    grade: string;
+    gradeValue: number;
+  } | null;
   poster: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
@@ -383,14 +387,14 @@ interface PageQueryResult {
     viewingYears: string[];
     releaseYears: string[];
     genres: string[];
-    venues: string[];
+    media: string[];
   };
 }
 
 export const pageQuery = graphql`
   query {
-    reviews: allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
-      totalCount
+    reviews: reviewStatsJson(review_year: { eq: "all" }) {
+      totalCount: reviews_created
     }
     movie: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
@@ -399,12 +403,15 @@ export const pageQuery = graphql`
         viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
         releaseDate: release_date
         title
+        medium
         venue
         year
         sortTitle: sort_title
-        slug
-        grade
-        gradeValue
+        reviewedMovie {
+          slug
+          grade
+          gradeValue: grade_value
+        }
         genres
         poster {
           childImageSharp {
@@ -418,7 +425,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      venues: distinct(field: venue)
+      media: distinct(field: medium)
       viewingYears: distinct(field: viewing_year)
       releaseYears: distinct(field: year)
       genres: distinct(field: genres)

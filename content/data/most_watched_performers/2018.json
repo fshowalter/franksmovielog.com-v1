@@ -10,55 +10,61 @@
 {
 "sequence": 641,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-02-22",
 "title": "Black Panther",
 "year": 2018,
-"slug": "black-panther-2018",
+"review_slug": "black-panther-2018",
 "imdb_id": "tt1825683"
 },
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 700,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2018-09-08",
 "title": "Wonder Woman",
 "year": 2017,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0451279"
 }
 ]
@@ -71,56 +77,62 @@
 "viewings": [
 {
 "sequence": 643,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2018-03-10",
 "title": "Moon",
 "year": 2009,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1182345"
 },
 {
 "sequence": 647,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-03-19",
 "title": "Annihilation",
 "year": 2018,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt2798920"
 },
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 }
 ]
@@ -134,46 +146,51 @@
 {
 "sequence": 641,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-02-22",
 "title": "Black Panther",
 "year": 2018,
-"slug": "black-panther-2018",
+"review_slug": "black-panther-2018",
 "imdb_id": "tt1825683"
 },
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 }
 ]
@@ -187,46 +204,51 @@
 {
 "sequence": 641,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-02-22",
 "title": "Black Panther",
 "year": 2018,
-"slug": "black-panther-2018",
+"review_slug": "black-panther-2018",
 "imdb_id": "tt1825683"
 },
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 }
 ]
@@ -240,46 +262,51 @@
 {
 "sequence": 641,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-02-22",
 "title": "Black Panther",
 "year": 2018,
-"slug": "black-panther-2018",
+"review_slug": "black-panther-2018",
 "imdb_id": "tt1825683"
 },
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 }
 ]
@@ -293,46 +320,51 @@
 {
 "sequence": 641,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-02-22",
 "title": "Black Panther",
 "year": 2018,
-"slug": "black-panther-2018",
+"review_slug": "black-panther-2018",
 "imdb_id": "tt1825683"
 },
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 }
 ]
@@ -345,47 +377,52 @@
 "viewings": [
 {
 "sequence": 654,
-"venue": "TCM",
+"venue": null,
+"medium": "TCM",
 "date": "2018-03-25",
 "title": "Kid Galahad",
 "year": 1937,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0029080"
 },
 {
 "sequence": 663,
-"venue": "TCM",
+"venue": null,
+"medium": "TCM",
 "date": "2018-04-14",
 "title": "The Wagons Roll at Night",
 "year": 1941,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0034370"
 },
 {
 "sequence": 666,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2018-04-19",
 "title": "Beat the Devil",
 "year": 1953,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0046414"
 },
 {
 "sequence": 673,
-"venue": "TCM HD",
+"venue": null,
+"medium": "TCM HD",
 "date": "2018-05-02",
 "title": "China Clipper",
 "year": 1936,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0027445"
 },
 {
 "sequence": 692,
-"venue": "TCM HD",
+"venue": null,
+"medium": "TCM HD",
 "date": "2018-08-04",
 "title": "Dead Reckoning",
 "year": 1947,
-"slug": "dead-reckoning-1947",
+"review_slug": "dead-reckoning-1947",
 "imdb_id": "tt0039305"
 }
 ]
@@ -399,46 +436,51 @@
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 684,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-14",
 "title": "Deadpool 2",
 "year": 2018,
-"slug": "deadpool-2-2018",
+"review_slug": "deadpool-2-2018",
 "imdb_id": "tt5463162"
 }
 ]
@@ -452,46 +494,51 @@
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 711,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-10-21",
 "title": "Bad Times at the El Royale",
 "year": 2018,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt6628394"
 }
 ]
@@ -504,47 +551,52 @@
 "viewings": [
 {
 "sequence": 685,
-"venue": "Hulu",
+"venue": null,
+"medium": "Hulu",
 "date": "2018-06-16",
 "title": "Mom and Dad",
 "year": 2017,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt5462326"
 },
 {
 "sequence": 702,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-09-16",
 "title": "Mandy",
 "year": 2018,
-"slug": "mandy-2018",
+"review_slug": "mandy-2018",
 "imdb_id": "tt6998518"
 },
 {
 "sequence": 703,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-09-18",
 "title": "Mandy",
 "year": 2018,
-"slug": "mandy-2018",
+"review_slug": "mandy-2018",
 "imdb_id": "tt6998518"
 },
 {
 "sequence": 720,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-12-19",
 "title": "Vampire's Kiss",
 "year": 1988,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0098577"
 },
 {
 "sequence": 722,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-12-26",
 "title": "Face/Off",
 "year": 1997,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0119094"
 }
 ]

@@ -1,4 +1,5 @@
 import path from "path";
+import type { ReviewedMovieNode } from "./ReviewedMoviesJson";
 import { SchemaNames } from "./schemaNames";
 import type {
   GatsbyNode,
@@ -17,6 +18,7 @@ export interface WatchlistMovieNode extends GatsbyNode {
   director_imdb_ids: string[];
   writer_imdb_ids: string[];
   collection_names: string[];
+  reviewedMovie: ReviewedMovieNode | null;
 }
 
 const WatchlistMoviesJson = {
@@ -99,104 +101,14 @@ const WatchlistMoviesJson = {
         return Array.from(entries.map((node) => node.name));
       },
     },
-    lastReviewDate: {
-      type: "Date",
-      extensions: {
-        dateformat: {},
-      },
+    reviewedMovie: {
+      type: SchemaNames.REVIEWED_MOVIES_JSON,
       resolve: async (
         source: WatchlistMovieNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const reviewedMovie = await findReviewedMovieNode(
-          source.imdb_id,
-          context.nodeModel
-        );
-
-        if (!reviewedMovie) {
-          return null;
-        }
-
-        return resolveFieldForNode(
-          "lastReviewDate",
-          reviewedMovie,
-          context,
-          info,
-          args
-        );
-      },
-    },
-    lastReviewGrade: {
-      type: "String",
-      resolve: async (
-        source: WatchlistMovieNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const reviewedMovie = await findReviewedMovieNode(
-          source.imdb_id,
-          context.nodeModel
-        );
-
-        if (!reviewedMovie) {
-          return null;
-        }
-
-        return resolveFieldForNode(
-          "lastReviewGrade",
-          reviewedMovie,
-          context,
-          info,
-          args
-        );
-      },
-    },
-    lastReviewGradeValue: {
-      type: "Int",
-      resolve: async (
-        source: WatchlistMovieNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const reviewedMovie = await findReviewedMovieNode(
-          source.imdb_id,
-          context.nodeModel
-        );
-
-        if (!reviewedMovie) {
-          return null;
-        }
-
-        return resolveFieldForNode(
-          "lastReviewGradeValue",
-          reviewedMovie,
-          context,
-          info,
-          args
-        );
-      },
-    },
-    reviewedMovieSlug: {
-      type: "String",
-      resolve: async (
-        source: WatchlistMovieNode,
-        _args: unknown,
+        _args: GatsbyResolveArgs,
         context: GatsbyNodeContext
       ) => {
-        const reviewedMovie = await findReviewedMovieNode(
-          source.imdb_id,
-          context.nodeModel
-        );
-
-        if (!reviewedMovie) {
-          return null;
-        }
-
-        return reviewedMovie.slug;
+        return await findReviewedMovieNode(source.imdb_id, context.nodeModel);
       },
     },
     poster: {

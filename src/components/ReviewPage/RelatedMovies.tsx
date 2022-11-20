@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Grade from "../Grade";
@@ -10,13 +10,16 @@ import {
   listItemTitleCss,
   listItemTitleYearCss,
 } from "./RelatedMovies.module.scss";
-import type { RelatedMovie } from "./ReviewPage";
 
-function Movie({ movie }: { movie: RelatedMovie }): JSX.Element {
+function Movie({
+  movie,
+}: {
+  movie: Queries.RelatedMoviesFragment;
+}): JSX.Element {
   return (
     <>
       <Link className={listItemImageLinkCss} to={`/reviews/${movie.slug}/`}>
-        {movie.backdrop && (
+        {movie.backdrop?.childImageSharp && (
           <GatsbyImage
             image={movie.backdrop.childImageSharp.gatsbyImageData}
             alt={`A still from ${movie.title} (${movie.year})`}
@@ -29,7 +32,7 @@ function Movie({ movie }: { movie: RelatedMovie }): JSX.Element {
           <span className={listItemTitleYearCss}>{movie.year}</span>
         </Link>
       </div>
-      <Grade grade={movie.lastReviewGrade} className={listItemGradeCss} />
+      <Grade grade={movie.grade} className={listItemGradeCss} />
     </>
   );
 }
@@ -39,7 +42,7 @@ export default function RelatedMovies({
   children,
   className,
 }: {
-  movies: RelatedMovie[];
+  movies: readonly Queries.RelatedMoviesFragment[];
   children: React.ReactNode;
   className: string;
 }): JSX.Element | null {
@@ -62,3 +65,24 @@ export default function RelatedMovies({
     </nav>
   );
 }
+
+export const query = graphql`
+  fragment RelatedMovies on ReviewedMoviesJson {
+    imdbId: imdb_id
+    title
+    grade
+    slug
+    year
+    backdrop {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          placeholder: TRACED_SVG
+          width: 248
+        )
+      }
+    }
+  }
+`;

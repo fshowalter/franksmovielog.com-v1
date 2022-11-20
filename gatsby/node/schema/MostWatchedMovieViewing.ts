@@ -9,9 +9,10 @@ const MostWatchedMovieViewing = {
         dateformat: {},
       },
     },
-    venue: "String!",
+    venue: "String",
+    medium: "String",
     sequence: "Int!",
-    slug: "String",
+    review_slug: "String",
   },
 };
 

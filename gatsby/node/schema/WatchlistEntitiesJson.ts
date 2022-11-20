@@ -24,7 +24,6 @@ const WatchlistEntitiesJson = {
     name: "String!",
     slug: "String!",
     title_count: "Int!",
-    review_count: "Int!",
     entity_type: "String!",
     avatar: {
       type: "File",
@@ -43,6 +42,43 @@ const WatchlistEntitiesJson = {
             },
           },
         });
+      },
+    },
+    reviewCount: {
+      type: `Int!`,
+      resolve: async (
+        source: WatchlistEntityNode,
+        _args: unknown,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const watchlistMovies = await resolveFieldForNode<WatchlistMovieNode[]>(
+          "watchlistMovies",
+          source,
+          context,
+          info,
+          {}
+        );
+
+        if (!watchlistMovies) {
+          return 0;
+        }
+
+        return Array.from(watchlistMovies).reduce(
+          async (accumulator, movie): Promise<number> => {
+            let count = await accumulator;
+            const reviewedMovie = await resolveFieldForNode<ReviewedMovieNode>(
+              "reviewedMovie",
+              movie,
+              context,
+              info,
+              {}
+            );
+
+            return reviewedMovie ? (count += 1) : count;
+          },
+          Promise.resolve(0)
+        );
       },
     },
     watchlistMovies: {
@@ -77,7 +113,7 @@ const WatchlistEntitiesJson = {
       },
     },
     browseMore: {
-      type: `[${SchemaNames.REVIEWED_MOVIES_JSON}]`,
+      type: `[${SchemaNames.REVIEWED_MOVIES_JSON}!]!`,
       args: {
         movieImdbId: "String!",
       },

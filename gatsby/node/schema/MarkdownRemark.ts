@@ -15,7 +15,6 @@ import type {
 } from "./type-definitions";
 import findReviewedMovieNode from "./utils/findReviewedMovieNode";
 import resolveFieldForNode from "./utils/resolveFieldForNode";
-import valueForGrade from "./utils/valueForGrade";
 
 export interface MarkdownNode extends GatsbyNode {
   fileAbsolutePath: string;
@@ -129,7 +128,7 @@ function addVenueNotesFootnote(
     element.children.push({
       type: "element",
       tagName: "div",
-      proprties: {
+      properties: {
         className: ["footnotes"],
       },
       children: [
@@ -231,42 +230,6 @@ const MarkdownRemark = {
   name: SchemaNames.MARKDOWN_REMARK,
   interfaces: ["Node"],
   fields: {
-    postType: {
-      type: "String",
-      resolve: (source: MarkdownNode) => {
-        if (source.fileAbsolutePath.includes("/reviews/")) {
-          return "REVIEW";
-        }
-
-        return null;
-      },
-    },
-    reviewedMovie: {
-      type: SchemaNames.REVIEWED_MOVIES_JSON,
-      resolve: async (
-        source: MarkdownNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const postType = await resolveFieldForNode<string>(
-          "postType",
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (postType !== "REVIEW") {
-          return;
-        }
-
-        return await findReviewedMovieNode(
-          source.frontmatter.imdb_id,
-          context.nodeModel
-        );
-      },
-    },
     linkedExcerpt: {
       type: "String",
       resolve: async (
@@ -357,29 +320,6 @@ const MarkdownRemark = {
         });
 
         return addReviewLinks(html, context.nodeModel);
-      },
-    },
-    gradeValue: {
-      type: "Int",
-      resolve: async (
-        source: MarkdownNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!frontMatter) {
-          return null;
-        }
-
-        return valueForGrade(frontMatter.grade);
       },
     },
   },

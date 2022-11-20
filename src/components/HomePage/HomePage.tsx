@@ -1,5 +1,5 @@
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import DateIcon from "../DateIcon";
@@ -56,26 +56,29 @@ export default function HomePage({
   data,
 }: {
   pageContext: PageContext;
-  data: PageQueryResult;
+  data: Queries.HomePageQuery;
 }): JSX.Element {
   const listHeader = useRef<HTMLDivElement>(null);
   const {
-    update: { nodes: updates },
+    viewing: { nodes: viewings },
   } = data;
 
   return (
     <Layout>
       <main className={containerCss} ref={listHeader}>
         <ol className={listCss}>
-          {updates.map((update, index) => {
-            const review = update;
+          {viewings.map((viewing, index) => {
             const listItemValue =
               pageContext.numberOfItems - pageContext.skip - index;
-            const movie = update.reviewedMovie;
+            const reviewedMovie = viewing.reviewedMovie;
+
+            if (!reviewedMovie) {
+              return null;
+            }
 
             return (
               <li
-                key={review.frontmatter.sequence}
+                key={viewing.sequence}
                 value={listItemValue}
                 className={`${listItemCss}`}
               >
@@ -83,12 +86,14 @@ export default function HomePage({
                   <Link
                     rel="canonical"
                     className={imageLinkCss}
-                    to={`/reviews/${review.frontmatter.slug}/`}
+                    to={`/reviews/${reviewedMovie.slug}/`}
                   >
-                    {movie.backdrop && (
+                    {reviewedMovie.backdrop?.childImageSharp && (
                       <GatsbyImage
-                        image={movie.backdrop.childImageSharp.gatsbyImageData}
-                        alt={`A still from ${movie.title} (${movie.year})`}
+                        image={
+                          reviewedMovie.backdrop.childImageSharp.gatsbyImageData
+                        }
+                        alt={`A still from ${reviewedMovie.title} (${reviewedMovie.year})`}
                         loading={index === 0 ? "eager" : "lazy"}
                       />
                     )}
@@ -96,32 +101,35 @@ export default function HomePage({
                   <header className={reviewHeaderCss}>
                     <h2 className={articleHeadingCss}>
                       <Link
-                        to={`/reviews/${review.frontmatter.slug}/`}
+                        to={`/reviews/${reviewedMovie.slug}/`}
                         rel="canonical"
                       >
-                        {movie.title}{" "}
-                        <span className={reviewYearCss}>{movie.year}</span>
+                        {reviewedMovie.title}{" "}
+                        <span className={reviewYearCss}>
+                          {reviewedMovie.year}
+                        </span>
                       </Link>
                     </h2>
                     <Grade
-                      grade={review.frontmatter.grade}
+                      grade={reviewedMovie.grade}
                       className={reviewGradeCss}
                       width={140}
                       height={28}
                     />
                     <p className={reviewCreditsCss}>
-                      Directed by {toSentenceArray(movie.directorNames)}.
-                      Starring {toSentenceArray(movie.principalCastNames)}.
+                      Directed by {toSentenceArray(reviewedMovie.directorNames)}
+                      . Starring{" "}
+                      {toSentenceArray(reviewedMovie.principalCastNames)}.
                     </p>
                   </header>
                   <RenderedMarkdown
                     className={articleBodyCss}
-                    text={review.linkedExcerpt}
+                    text={reviewedMovie.review.linkedExcerpt}
                     tag="main"
                   />
                   <footer className={articleFooterCss}>
                     <div className={dateCss}>
-                      <DateIcon /> {review.frontmatter.date}
+                      <DateIcon /> {viewing.date}
                     </div>
                   </footer>
                 </article>
@@ -143,53 +151,28 @@ export default function HomePage({
   );
 }
 
-interface PageQueryResult {
-  update: {
-    nodes: {
-      frontmatter: {
-        imdbId: string;
-        slug: string;
-        grade: string;
-        date: string;
-        sequence: number;
-      };
-      linkedExcerpt: string;
-      reviewedMovie: {
-        title: string;
-        year: number;
-        principalCastNames: string[];
-        directorNames: string[];
-        backdrop: {
-          childImageSharp: {
-            gatsbyImageData: IGatsbyImageData;
-          };
-        };
-      };
-    }[];
-  };
-}
-
 export const pageQuery = graphql`
-  query ($skip: Int!, $limit: Int!) {
-    update: allMarkdownRemark(
-      sort: { fields: [frontmatter___sequence], order: DESC }
+  query HomePage($skip: Int!, $limit: Int!) {
+    viewing: allViewingsJson(
+      sort: { fields: sequence, order: DESC }
       limit: $limit
       skip: $skip
-      filter: { postType: { eq: "REVIEW" } }
+      filter: { reviewedMovie: { id: { ne: null } } }
     ) {
       nodes {
-        frontmatter {
-          date(formatString: "DD MMM, YYYY")
-          grade
-          slug
-          sequence
-          imdbId: imdb_id
-        }
+        imdbId: imdb_id
+        sequence
+        date: viewing_date(formatString: "DD MMM, YYYY")
         reviewedMovie {
+          slug
+          grade
           title
           year
           principalCastNames: principal_cast_names
           directorNames: director_names
+          review {
+            linkedExcerpt
+          }
           backdrop {
             childImageSharp {
               gatsbyImageData(
@@ -202,7 +185,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        linkedExcerpt
       }
     }
   }

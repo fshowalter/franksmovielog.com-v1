@@ -1,4 +1,3 @@
-import React from "react";
 import { renderedMarkdownCss } from "./RenderedMarkdown.module.scss";
 
 export default function RenderedMarkdown({
@@ -6,10 +5,14 @@ export default function RenderedMarkdown({
   className,
   tag,
 }: {
-  text: string;
+  text?: string | null;
   className: string;
   tag?: keyof JSX.IntrinsicElements;
-}): JSX.Element {
+}): JSX.Element | null {
+  if (!text) {
+    return null;
+  }
+
   const Tag = tag || "div";
 
   return (

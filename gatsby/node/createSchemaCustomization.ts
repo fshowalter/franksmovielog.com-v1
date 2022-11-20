@@ -1,9 +1,4 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
-import HighestRatedDirectorsJson from "./schema/HighestRatedDirectorsJson";
-import HighestRatedPerformersJson from "./schema/HighestRatedPerformersJson";
-import HighestRatedPerson from "./schema/HighestRatedPerson";
-import HighestRatedPersonReview from "./schema/HighestRatedPersonReview";
-import HighestRatedWritersJson from "./schema/HighestRatedWritersJson";
 import MarkdownRemark from "./schema/MarkdownRemark";
 import MostWatchedDirectorsJson from "./schema/MostWatchedDirectorsJson";
 import MostWatchedMovie from "./schema/MostWatchedMovie";
@@ -45,11 +40,6 @@ export default function createSchemaCustomization({
     schema.buildObjectType(MostWatchedDirectorsJson),
     schema.buildObjectType(MostWatchedPerformersJson),
     schema.buildObjectType(MostWatchedWritersJson),
-    schema.buildObjectType(HighestRatedPersonReview),
-    schema.buildObjectType(HighestRatedPerson),
-    schema.buildObjectType(HighestRatedDirectorsJson),
-    schema.buildObjectType(HighestRatedPerformersJson),
-    schema.buildObjectType(HighestRatedWritersJson),
     schema.buildObjectType(UnderseenGemsJson),
     schema.buildObjectType(OverratedDisappointmentsJson),
   ];

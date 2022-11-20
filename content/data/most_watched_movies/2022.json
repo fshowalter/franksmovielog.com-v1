@@ -5,21 +5,22 @@
 "viewings": [
 {
 "date": "2022-01-28",
-"venue": "HBO Max",
-"sequence": 1236,
-"slug": "event-horizon-1997"
+"venue": null,
+"medium": "HBO Max",
+"sequence": 1236
 },
 {
 "date": "2022-05-29",
 "venue": "Prince Charles Cinema",
-"sequence": 1277,
-"slug": "event-horizon-1997"
+"medium": "35mm",
+"sequence": 1277
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt0119081",
 "title": "Event Horizon",
-"year": 1997
+"year": 1997,
+"review_slug": "event-horizon-1997"
 }
 ]
 }

@@ -21,25 +21,7 @@ const MostWatchedMovie = {
     title: "String!",
     year: "Int!",
     viewings: `[${SchemaNames.MOST_WATCHED_MOVIE_VIEWING}!]!`,
-    slug: {
-      type: "String",
-      resolve: async (
-        source: MostWatchedMovieNode,
-        _args: GatsbyResolveArgs,
-        context: GatsbyNodeContext
-      ) => {
-        const reviewedMovie = await findReviewedMovieNode(
-          source.imdb_id,
-          context.nodeModel
-        );
-
-        if (!reviewedMovie) {
-          return null;
-        }
-
-        return reviewedMovie.slug;
-      },
-    },
+    review_slug: "String",
     poster: {
       type: "File",
       resolve: async (

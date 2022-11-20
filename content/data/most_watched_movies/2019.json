@@ -6,86 +6,90 @@
 {
 "date": "2019-05-13",
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 750,
-"slug": null
+"medium": null,
+"sequence": 750
 },
 {
 "date": "2019-05-16",
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 751,
-"slug": null
+"medium": null,
+"sequence": 751
 },
 {
 "date": "2019-06-03",
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 756,
-"slug": null
+"medium": null,
+"sequence": 756
 }
 ],
 "viewing_count": 3,
 "imdb_id": "tt4154796",
 "title": "Avengers: Endgame",
-"year": 2019
+"year": 2019,
+"review_slug": "avengers-endgame-2019"
 },
 {
 "viewings": [
 {
 "date": "2019-02-01",
-"venue": "Vudu",
-"sequence": 730,
-"slug": null
+"venue": null,
+"medium": "Vudu",
+"sequence": 730
 },
 {
 "date": "2019-10-22",
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 790,
-"slug": null
+"medium": null,
+"sequence": 790
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt0085636",
 "title": "Halloween III: Season of the Witch",
-"year": 1982
+"year": 1982,
+"review_slug": null
 },
 {
 "viewings": [
 {
 "date": "2019-02-16",
-"venue": "Netflix",
-"sequence": 739,
-"slug": null
+"venue": null,
+"medium": "Netflix",
+"sequence": 739
 },
 {
 "date": "2019-12-13",
-"venue": "Vudu",
-"sequence": 801,
-"slug": null
+"venue": null,
+"medium": "Vudu",
+"sequence": 801
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt0211443",
 "title": "Jason X",
-"year": 2001
+"year": 2001,
+"review_slug": null
 },
 {
 "viewings": [
 {
 "date": "2019-08-22",
 "venue": "AFI Silver",
-"sequence": 773,
-"slug": null
+"medium": null,
+"sequence": 773
 },
 {
 "date": "2019-09-09",
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 780,
-"slug": null
+"medium": null,
+"sequence": 780
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt7131622",
 "title": "Once Upon a Time... In Hollywood",
-"year": 2019
+"year": 2019,
+"review_slug": null
 }
 ]
 }

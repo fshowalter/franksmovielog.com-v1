@@ -25,9 +25,15 @@ function sortViewings(viewings: Movie[], sortOrder: SortType) {
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) =>
-      sortNumberAsc(a.gradeValue || 50, b.gradeValue || 50),
+      sortNumberAsc(
+        a.reviewedMovie?.gradeValue || 50,
+        b.reviewedMovie?.gradeValue || 50
+      ),
     "grade-desc": (a, b) =>
-      sortNumberDesc(a.gradeValue || -1, b.gradeValue || -1),
+      sortNumberDesc(
+        a.reviewedMovie?.gradeValue || -1,
+        b.reviewedMovie?.gradeValue || -1
+      ),
   };
 
   const comparer = sortMap[sortOrder];
@@ -249,8 +255,8 @@ export default function reducer(state: State, action: Action): State {
       filters = {
         ...state.filters,
         grade: (movie: Movie) => {
-          const gradeValue = movie.gradeValue;
-          if (gradeValue == null) {
+          const gradeValue = movie.reviewedMovie?.gradeValue;
+          if (!gradeValue) {
             return action.includeNonReviewed;
           }
           return (

@@ -6,20 +6,21 @@
 {
 "date": "2017-06-18",
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 598,
-"slug": null
+"medium": null,
+"sequence": 598
 },
 {
 "date": "2017-12-09",
-"venue": "Blu-ray",
-"sequence": 622,
-"slug": null
+"venue": null,
+"medium": "Blu-ray",
+"sequence": 622
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt0053221",
 "title": "Rio Bravo",
-"year": 1959
+"year": 1959,
+"review_slug": "rio-bravo-1959"
 }
 ]
 }

@@ -18,7 +18,8 @@ const MostWatchedPersonViewing = {
   fields: {
     sequence: "Int!",
     imdb_id: "String!",
-    venue: "String!",
+    venue: "String",
+    medium: "String",
     date: {
       type: "Date!",
       extensions: {
@@ -27,7 +28,7 @@ const MostWatchedPersonViewing = {
     },
     title: "String!",
     year: "Int!",
-    slug: "String",
+    review_slug: "String",
     poster: {
       type: "File",
       resolve: async (

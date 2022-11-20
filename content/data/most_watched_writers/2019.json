@@ -9,38 +9,42 @@
 "viewings": [
 {
 "sequence": 728,
-"venue": "Shudder",
+"venue": null,
+"medium": "Shudder",
 "date": "2019-01-31",
 "title": "Halloween",
 "year": 1978,
-"slug": "halloween-1978",
+"review_slug": "halloween-1978",
 "imdb_id": "tt0077651"
 },
 {
 "sequence": 729,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2019-01-31",
 "title": "Halloween II",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082495"
 },
 {
 "sequence": 730,
-"venue": "Vudu",
+"venue": null,
+"medium": "Vudu",
 "date": "2019-02-01",
 "title": "Halloween III: Season of the Witch",
 "year": 1982,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0085636"
 },
 {
 "sequence": 790,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-10-22",
 "title": "Halloween III: Season of the Witch",
 "year": 1982,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0085636"
 }
 ]
@@ -54,28 +58,31 @@
 {
 "sequence": 736,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-02-12",
 "title": "My Bloody Valentine",
 "year": 2009,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1179891"
 },
 {
 "sequence": 739,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2019-02-16",
 "title": "Jason X",
 "year": 2001,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0211443"
 },
 {
 "sequence": 801,
-"venue": "Vudu",
+"venue": null,
+"medium": "Vudu",
 "date": "2019-12-13",
 "title": "Jason X",
 "year": 2001,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0211443"
 }
 ]
@@ -89,28 +96,31 @@
 {
 "sequence": 750,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-05-13",
 "title": "Avengers: Endgame",
 "year": 2019,
-"slug": "avengers-endgame-2019",
+"review_slug": "avengers-endgame-2019",
 "imdb_id": "tt4154796"
 },
 {
 "sequence": 751,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-05-16",
 "title": "Avengers: Endgame",
 "year": 2019,
-"slug": "avengers-endgame-2019",
+"review_slug": "avengers-endgame-2019",
 "imdb_id": "tt4154796"
 },
 {
 "sequence": 756,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-06-03",
 "title": "Avengers: Endgame",
 "year": 2019,
-"slug": "avengers-endgame-2019",
+"review_slug": "avengers-endgame-2019",
 "imdb_id": "tt4154796"
 }
 ]
@@ -124,28 +134,31 @@
 {
 "sequence": 750,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-05-13",
 "title": "Avengers: Endgame",
 "year": 2019,
-"slug": "avengers-endgame-2019",
+"review_slug": "avengers-endgame-2019",
 "imdb_id": "tt4154796"
 },
 {
 "sequence": 751,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-05-16",
 "title": "Avengers: Endgame",
 "year": 2019,
-"slug": "avengers-endgame-2019",
+"review_slug": "avengers-endgame-2019",
 "imdb_id": "tt4154796"
 },
 {
 "sequence": 756,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-06-03",
 "title": "Avengers: Endgame",
 "year": 2019,
-"slug": "avengers-endgame-2019",
+"review_slug": "avengers-endgame-2019",
 "imdb_id": "tt4154796"
 }
 ]
@@ -158,29 +171,32 @@
 "viewings": [
 {
 "sequence": 807,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2019-12-28",
 "title": "Skyfall",
 "year": 2012,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1074638"
 },
 {
 "sequence": 808,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2019-12-29",
 "title": "Casino Royale",
 "year": 2006,
-"slug": "casino-royale-2006",
+"review_slug": "casino-royale-2006",
 "imdb_id": "tt0381061"
 },
 {
 "sequence": 809,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2019-12-30",
 "title": "Quantum of Solace",
 "year": 2008,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0830515"
 }
 ]
@@ -193,29 +209,32 @@
 "viewings": [
 {
 "sequence": 807,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2019-12-28",
 "title": "Skyfall",
 "year": 2012,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1074638"
 },
 {
 "sequence": 808,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2019-12-29",
 "title": "Casino Royale",
 "year": 2006,
-"slug": "casino-royale-2006",
+"review_slug": "casino-royale-2006",
 "imdb_id": "tt0381061"
 },
 {
 "sequence": 809,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2019-12-30",
 "title": "Quantum of Solace",
 "year": 2008,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0830515"
 }
 ]
@@ -228,20 +247,22 @@
 "viewings": [
 {
 "sequence": 728,
-"venue": "Shudder",
+"venue": null,
+"medium": "Shudder",
 "date": "2019-01-31",
 "title": "Halloween",
 "year": 1978,
-"slug": "halloween-1978",
+"review_slug": "halloween-1978",
 "imdb_id": "tt0077651"
 },
 {
 "sequence": 729,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2019-01-31",
 "title": "Halloween II",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082495"
 }
 ]
@@ -254,20 +275,22 @@
 "viewings": [
 {
 "sequence": 730,
-"venue": "Vudu",
+"venue": null,
+"medium": "Vudu",
 "date": "2019-02-01",
 "title": "Halloween III: Season of the Witch",
 "year": 1982,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0085636"
 },
 {
 "sequence": 790,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-10-22",
 "title": "Halloween III: Season of the Witch",
 "year": 1982,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0085636"
 }
 ]
@@ -280,20 +303,22 @@
 "viewings": [
 {
 "sequence": 730,
-"venue": "Vudu",
+"venue": null,
+"medium": "Vudu",
 "date": "2019-02-01",
 "title": "Halloween III: Season of the Witch",
 "year": 1982,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0085636"
 },
 {
 "sequence": 790,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2019-10-22",
 "title": "Halloween III: Season of the Witch",
 "year": 1982,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0085636"
 }
 ]
@@ -306,20 +331,22 @@
 "viewings": [
 {
 "sequence": 746,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2019-04-13",
 "title": "Freddy vs. Jason",
 "year": 2003,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0329101"
 },
 {
 "sequence": 748,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2019-04-27",
 "title": "Friday the 13th",
 "year": 2009,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0758746"
 }
 ]

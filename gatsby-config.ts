@@ -82,6 +82,14 @@ const gatsbySourceFileSystemReviews = {
   },
 };
 
+const gatsbySourceFileSystemViewingNotes = {
+  resolve: `gatsby-source-filesystem`,
+  options: {
+    path: path.resolve("content/viewing_notes"),
+    name: `reviews`,
+  },
+};
+
 const gatsbyTransformerRemark = {
   resolve: `gatsby-transformer-remark`,
   options: {
@@ -114,6 +122,9 @@ const gatsbyPluginManifest = {
 
 const config: GatsbyConfig = {
   jsxRuntime: "automatic",
+  graphqlTypegen: {
+    generateOnBuild: true,
+  },
   siteMetadata: siteMetadata,
   plugins: [
     gatsbyPluginPageCreator,
@@ -129,6 +140,7 @@ const config: GatsbyConfig = {
     gatsbySourceFileSystemData,
     gatsbySourceFileSystemPages,
     gatsbySourceFileSystemReviews,
+    gatsbySourceFileSystemViewingNotes,
     gatsbyTransformerRemark,
     gatsbyPluginCatchLinks,
     gatsbyPluginManifest,

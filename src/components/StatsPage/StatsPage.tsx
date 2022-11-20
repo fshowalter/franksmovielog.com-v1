@@ -15,7 +15,7 @@ import {
   headingCss,
   taglineCss,
 } from "./StatsPage.module.scss";
-import TopVenues from "./TopVenues";
+import TopMedia from "./TopMedia";
 import YearNavigation from "./YearNavigation";
 
 function DirectorName({ person }: { person: Person }): JSX.Element {
@@ -91,14 +91,18 @@ export function Head({
   pageContext: PageContext;
 }): JSX.Element {
   const { yearScope } = pageContext;
+  let pageTitle = `${yearScope} Stats`;
+  let description = `My most-watched performers, directors, writers and other stats for ${yearScope}.`;
 
-  const pageTitle =
-    yearScope === "all" ? "All-Time Stats" : `${yearScope} Stats`;
+  if (yearScope === "all") {
+    pageTitle = "All-Time Stats";
+    description = `My most-watched performers, directors, writers and other stats.`;
+  }
 
   return (
     <HeadBuilder
       pageTitle={pageTitle}
-      description={`My most-watched performers, directors and writers for ${yearScope}.`}
+      description={description}
       article={false}
       image={null}
     />
@@ -122,9 +126,9 @@ export default function StatsPage({
     directors,
     writers,
     decade,
-    grade,
+    gradeDistribution,
     movies,
-    venue,
+    medium,
     viewing,
   } = data;
   const { yearScope } = pageContext;
@@ -155,8 +159,10 @@ export default function StatsPage({
           />
           <MostWatchedMovies movies={movies.mostWatched} />
           <ByReleaseYear decades={decade.stats} />
-          <TopVenues venues={venue.stats} />
-          {grade && <GradeDistribution distributions={grade.distributions} />}
+          <TopMedia stats={medium.stats} />
+          {gradeDistribution && (
+            <GradeDistribution distributions={gradeDistribution.nodes} />
+          )}
           <MostWatchedPeople
             people={directors.mostWatched}
             header="Most Watched Directors"
@@ -192,10 +198,11 @@ export interface Person {
 export interface Viewing {
   sequence: number;
   viewingDate: string;
-  venue: string;
+  venue: string | null;
+  medium: string | null;
   title: string;
   year: number;
-  slug: string | null;
+  reviewSlug: string | null;
   poster: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
@@ -216,11 +223,11 @@ interface PageQueryResult {
   decade: {
     stats: DecadeStat[];
   };
-  venue: {
-    stats: VenueStat[];
+  medium: {
+    stats: MediumStat[];
   };
-  grade: {
-    distributions: GradeDistribution[];
+  gradeDistribution: {
+    nodes: GradeDistribution[];
   } | null;
   movies: {
     mostWatched: Movie[];
@@ -243,7 +250,7 @@ export interface Movie {
   imdbId: string;
   title: string;
   year: number;
-  slug: string | null;
+  reviewSlug: string | null;
   viewingCount: number;
   poster: {
     childImageSharp: {
@@ -252,7 +259,7 @@ export interface Movie {
   };
 }
 
-export interface VenueStat {
+export interface MediumStat {
   name: string;
   viewingCount: number;
 }
@@ -268,14 +275,14 @@ export interface DecadeStat {
 }
 
 export const pageQuery = graphql`
-  query ($yearScope: String) {
+  query ($yearScope: String!, $isYear: Boolean!) {
     viewingStats: viewingStatsJson(viewing_year: { eq: $yearScope }) {
       movieCount: movie_count
       newMovieCount: new_movie_count
       viewingCount: viewing_count
     }
     reviewStats: reviewStatsJson(review_year: { eq: $yearScope }) {
-      reviewCount: total_review_count
+      reviewCount: reviews_created
       watchlistTitlesReviewed: watchlist_titles_reviewed
     }
     decade: viewingCountsForDecadesJson(viewing_year: { eq: $yearScope }) {
@@ -284,13 +291,13 @@ export const pageQuery = graphql`
         viewingCount: viewing_count
       }
     }
-    grade: gradeDistributionsJson(review_year: { eq: $yearScope }) {
-      distributions {
+    gradeDistribution: allGradeDistributionsJson @skip(if: $isYear) {
+      nodes {
         grade
         reviewCount: review_count
       }
     }
-    venue: topVenuesJson(viewing_year: { eq: $yearScope }) {
+    medium: topMediaJson(viewing_year: { eq: $yearScope }) {
       stats {
         name
         viewingCount: viewing_count
@@ -301,7 +308,7 @@ export const pageQuery = graphql`
         imdbId: imdb_id
         title
         year
-        slug
+        reviewSlug: review_slug
         poster {
           childImageSharp {
             gatsbyImageData(
@@ -325,9 +332,10 @@ export const pageQuery = graphql`
           sequence
           viewingDate: date(formatString: "ddd MMM D, YYYY")
           venue
+          medium
           title
           year
-          slug
+          reviewSlug: review_slug
           poster {
             childImageSharp {
               gatsbyImageData(
@@ -351,9 +359,10 @@ export const pageQuery = graphql`
           sequence
           viewingDate: date(formatString: "ddd MMM D, YYYY")
           venue
+          medium
           title
           year
-          slug
+          reviewSlug: review_slug
           poster {
             childImageSharp {
               gatsbyImageData(
@@ -377,9 +386,10 @@ export const pageQuery = graphql`
           sequence
           viewingDate: date(formatString: "ddd MMM D, YYYY")
           venue
+          medium
           title
           year
-          slug
+          reviewSlug: review_slug
           poster {
             childImageSharp {
               gatsbyImageData(

@@ -9,29 +9,32 @@
 "viewings": [
 {
 "sequence": 368,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2014-02-01",
 "title": "Dracula 3D",
 "year": 2012,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1852770"
 },
 {
 "sequence": 388,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2014-05-17",
 "title": "The Bird with the Crystal Plumage",
 "year": 1970,
-"slug": "the-bird-with-the-crystal-plumage-1970",
+"review_slug": "the-bird-with-the-crystal-plumage-1970",
 "imdb_id": "tt0065143"
 },
 {
 "sequence": 393,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2014-05-31",
 "title": "Inferno",
 "year": 1980,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0080923"
 }
 ]
@@ -44,20 +47,22 @@
 "viewings": [
 {
 "sequence": 360,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2014-01-11",
 "title": "Ninja: Shadow of a Tear",
 "year": 2013,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt2458106"
 },
 {
 "sequence": 367,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2014-01-27",
 "title": "Ninja",
 "year": 2009,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1182921"
 }
 ]
@@ -70,20 +75,22 @@
 "viewings": [
 {
 "sequence": 372,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2014-02-16",
 "title": "Kill Bill: Vol. 1",
 "year": 2003,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0266697"
 },
 {
 "sequence": 378,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2014-03-29",
 "title": "Kill Bill: Vol. 2",
 "year": 2004,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0378194"
 }
 ]
@@ -96,20 +103,22 @@
 "viewings": [
 {
 "sequence": 418,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2014-08-16",
 "title": "Horror of Dracula",
 "year": 1958,
-"slug": "horror-of-dracula-1958",
+"review_slug": "horror-of-dracula-1958",
 "imdb_id": "tt0051554"
 },
 {
 "sequence": 456,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2014-12-20",
 "title": "Horror of Dracula",
 "year": 1958,
-"slug": "horror-of-dracula-1958",
+"review_slug": "horror-of-dracula-1958",
 "imdb_id": "tt0051554"
 }
 ]
@@ -122,20 +131,22 @@
 "viewings": [
 {
 "sequence": 420,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2014-08-22",
 "title": "You're Next",
 "year": 2011,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1853739"
 },
 {
 "sequence": 440,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2014-10-25",
 "title": "V/H/S/2",
 "year": 2013,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt2450186"
 }
 ]
@@ -148,20 +159,22 @@
 "viewings": [
 {
 "sequence": 436,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2014-10-18",
 "title": "The Face of Fu Manchu",
 "year": 1965,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0059162"
 },
 {
 "sequence": 437,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2014-10-18",
 "title": "The Brides of Fu Manchu",
 "year": 1966,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0060188"
 }
 ]
@@ -175,19 +188,21 @@
 {
 "sequence": 440,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2014-10-25",
 "title": "V/H/S/2",
 "year": 2013,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt2450186"
 },
 {
 "sequence": 441,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2014-10-26",
 "title": "Exists",
 "year": 2014,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1988621"
 }
 ]

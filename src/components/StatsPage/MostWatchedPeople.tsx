@@ -75,11 +75,11 @@ export default function MostWatchedPeople({
                           key={viewing.sequence}
                           image={viewing.poster}
                           title={viewing.title}
-                          slug={viewing.slug}
+                          slug={viewing.reviewSlug}
                           year={viewing.year}
                           date={viewing.viewingDate}
                           venue={viewing.venue}
-                          showTitle={false}
+                          medium={viewing.medium}
                         />
                       );
                     })}

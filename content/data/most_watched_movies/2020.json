@@ -5,41 +5,43 @@
 "viewings": [
 {
 "date": "2020-02-08",
-"venue": "4k UHD Blu-ray",
-"sequence": 815,
-"slug": null
+"venue": null,
+"medium": "4k UHD Blu-ray",
+"sequence": 815
 },
 {
 "date": "2020-12-22",
-"venue": "4k UHD Blu-ray",
-"sequence": 956,
-"slug": "the-cabin-in-the-woods-2011"
+"venue": null,
+"medium": "4k UHD Blu-ray",
+"sequence": 956
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt1259521",
 "title": "The Cabin in the Woods",
-"year": 2011
+"year": 2011,
+"review_slug": "the-cabin-in-the-woods-2011"
 },
 {
 "viewings": [
 {
 "date": "2020-03-28",
-"venue": "4k UHD Blu-ray",
-"sequence": 824,
-"slug": null
+"venue": null,
+"medium": "4k UHD Blu-ray",
+"sequence": 824
 },
 {
 "date": "2020-10-17",
-"venue": "4k UHD Blu-ray",
-"sequence": 893,
-"slug": "avengers-infinity-war-2018"
+"venue": null,
+"medium": "4k UHD Blu-ray",
+"sequence": 893
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt4154756",
 "title": "Avengers: Infinity War",
-"year": 2018
+"year": 2018,
+"review_slug": "avengers-infinity-war-2018"
 }
 ]
 }

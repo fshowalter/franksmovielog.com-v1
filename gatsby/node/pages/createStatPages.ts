@@ -44,6 +44,7 @@ export default async function createStatPages({
       component: path.resolve("./src/components/StatsPage/StatsPage.tsx"),
       context: {
         yearScope: year,
+        isYear: year !== "all",
       },
     });
   });

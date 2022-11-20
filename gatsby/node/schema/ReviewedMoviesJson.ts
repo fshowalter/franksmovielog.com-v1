@@ -1,40 +1,13 @@
 import path from "path";
 import type { MarkdownNode } from "./MarkdownRemark";
 import { SchemaNames } from "./schemaNames";
-import type {
-  GatsbyNode,
-  GatsbyNodeContext,
-  GatsbyResolveArgs,
-  GatsbyResolveInfo,
-} from "./type-definitions";
-import resolveFieldForNode from "./utils/resolveFieldForNode";
+import type { GatsbyNode, GatsbyNodeContext } from "./type-definitions";
 import sliceMoviesForBrowseMore from "./utils/sliceMoviesForBrowseMore";
 import type { WatchlistMovieNode } from "./WatchlistMoviesJson";
 
 export interface ReviewedMovieNode extends GatsbyNode {
   slug: string;
   imdb_id: string;
-}
-
-async function resolveMostRecentReview(
-  source: ReviewedMovieNode,
-  context: GatsbyNodeContext,
-  info: GatsbyResolveInfo,
-  args: GatsbyResolveArgs
-) {
-  const reviews = await resolveFieldForNode<MarkdownNode[]>(
-    "reviews",
-    source,
-    context,
-    info,
-    args
-  );
-
-  if (!reviews) {
-    return null;
-  }
-
-  return Array.from(reviews)[0];
 }
 
 const ReviewedMoviesJson = {
@@ -46,117 +19,36 @@ const ReviewedMoviesJson = {
     year: "Int!",
     release_date: "String!",
     sort_title: "String!",
-    slug: "String",
+    slug: "String!",
+    grade: "String!",
+    grade_value: "Int!",
     runtime_minutes: "Int!",
     director_names: "[String!]!",
     principal_cast_names: "[String!]!",
     original_title: "String",
     countries: "[String!]!",
-    reviews: {
-      type: `[${SchemaNames.MARKDOWN_REMARK}!]!`,
+    review_grade: "String!",
+    review: {
+      type: `${SchemaNames.MARKDOWN_REMARK}!`,
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
         context: GatsbyNodeContext
       ) => {
-        const { entries } = await context.nodeModel.findAll({
+        return await context.nodeModel.findOne<MarkdownNode>({
           type: SchemaNames.MARKDOWN_REMARK,
           query: {
             filter: {
-              postType: {
-                eq: "REVIEW",
-              },
               frontmatter: {
                 imdb_id: { eq: source.imdb_id },
               },
             },
-            sort: {
-              fields: ["frontmatter.sequence"],
-              order: ["DESC"],
-            },
           },
         });
-
-        return entries;
-      },
-    },
-    lastReviewDate: {
-      type: "Date",
-      extensions: {
-        dateformat: {},
-      },
-      resolve: async (
-        source: ReviewedMovieNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const mostRecentReview = await resolveMostRecentReview(
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!mostRecentReview) {
-          return null;
-        }
-
-        return mostRecentReview.frontmatter.date;
-      },
-    },
-    lastReviewGrade: {
-      type: "String",
-      resolve: async (
-        source: ReviewedMovieNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const mostRecentReview = await resolveMostRecentReview(
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!mostRecentReview) {
-          return null;
-        }
-
-        return mostRecentReview.frontmatter.grade;
-      },
-    },
-    lastReviewGradeValue: {
-      type: "Int",
-      resolve: async (
-        source: ReviewedMovieNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const mostRecentReview = await resolveMostRecentReview(
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!mostRecentReview) {
-          return null;
-        }
-
-        return resolveFieldForNode(
-          "gradeValue",
-          mostRecentReview,
-          context,
-          info,
-          args
-        );
       },
     },
     browseMore: {
-      type: `[${SchemaNames.REVIEWED_MOVIES_JSON}]`,
+      type: `[${SchemaNames.REVIEWED_MOVIES_JSON}!]!`,
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
@@ -179,8 +71,8 @@ const ReviewedMoviesJson = {
         return sliceMoviesForBrowseMore(Array.from(entries), source.imdb_id);
       },
     },
-    olderViewings: {
-      type: `[${SchemaNames.VIEWINGS_JSON}]`,
+    viewings: {
+      type: `[${SchemaNames.VIEWINGS_JSON}!]!`,
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
@@ -192,9 +84,6 @@ const ReviewedMoviesJson = {
             filter: {
               imdb_id: {
                 eq: source.imdb_id,
-              },
-              sequence: {
-                lt: 836,
               },
             },
             sort: {
@@ -248,7 +137,7 @@ const ReviewedMoviesJson = {
       },
     },
     watchlist: {
-      type: SchemaNames.REVIEWED_MOVIES_WATCHLIST_ENTITIES,
+      type: `${SchemaNames.REVIEWED_MOVIES_WATCHLIST_ENTITIES}!`,
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,

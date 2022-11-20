@@ -1,5 +1,5 @@
-import { graphql, Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { graphql, Link, PageProps } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import Button from "../Button";
@@ -56,7 +56,10 @@ function ListInfo({
   return <div className={listInfoCss}>{showingText}</div>;
 }
 
-function groupForMovie(movie: WatchlistMovie, sortValue: SortType): string {
+function groupForMovie(
+  movie: Queries.WatchlistMovieFragment,
+  sortValue: SortType
+): string {
   switch (sortValue) {
     case "release-date-asc":
     case "release-date-desc": {
@@ -79,10 +82,11 @@ function groupMovies({
   movies,
   sortValue,
 }: {
-  movies: WatchlistMovie[];
+  movies: Queries.WatchlistMovieFragment[];
   sortValue: SortType;
-}): Map<string, WatchlistMovie[]> {
-  const groupedMovies: Map<string, WatchlistMovie[]> = new Map();
+}): Map<string, Queries.WatchlistMovieFragment[]> {
+  const groupedMovies: Map<string, Queries.WatchlistMovieFragment[]> =
+    new Map();
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortValue);
@@ -105,7 +109,7 @@ function WatchlistMovieTitle({
   movie,
 }: {
   /** The movie to render */
-  movie: WatchlistMovie;
+  movie: Queries.WatchlistMovieFragment;
 }): JSX.Element {
   let title = (
     <>
@@ -113,11 +117,11 @@ function WatchlistMovieTitle({
     </>
   );
 
-  if (movie.reviewedMovieSlug) {
+  if (movie.reviewedMovie?.slug) {
     title = (
       <Link
         rel="canonical"
-        to={`/reviews/${movie.reviewedMovieSlug}/`}
+        to={`/reviews/${movie.reviewedMovie.slug}/`}
         className={listItemTitleLinkCss}
       >
         {title}
@@ -131,9 +135,9 @@ function WatchlistMovieTitle({
 function WatchlistMovieCheckMark({
   movie,
 }: {
-  movie: WatchlistMovie;
+  movie: Queries.WatchlistMovieFragment;
 }): JSX.Element {
-  if (movie.reviewedMovieSlug) {
+  if (movie.reviewedMovie?.slug) {
     return (
       <svg
         className={listItemCheckmarkCss}
@@ -162,7 +166,7 @@ function WatchlistMovieCheckMark({
  * @param suffix The suffix to append to the formed sentence.
  */
 function formatPeopleNames(
-  names: string[],
+  names: readonly string[],
   suffix: string | string[]
 ): string[] {
   if (names.length === 0) {
@@ -185,7 +189,7 @@ function formatPeopleNames(
  * commas and conjunction if necessary.
  * @param collections The collections to format.
  */
-function formatCollectionNames(names: string[]): string | string[] {
+function formatCollectionNames(names: readonly string[]): string | string[] {
   if (names.length === 0) {
     return "";
   }
@@ -198,7 +202,11 @@ function formatCollectionNames(names: string[]): string | string[] {
 /**
  * Renders a watchlist title slug.
  */
-function WatchlistMovieSlug({ movie }: { movie: WatchlistMovie }): JSX.Element {
+function WatchlistMovieSlug({
+  movie,
+}: {
+  movie: Queries.WatchlistMovieFragment;
+}): JSX.Element {
   const credits = [
     ...formatPeopleNames(movie.directorNames, "directed"),
     ...formatPeopleNames(movie.performerNames, "performed"),
@@ -231,8 +239,10 @@ function WatchlistProgress({
   );
 }
 
-function reviewedMovieCount(filteredMovies: WatchlistMovie[]): number {
-  const reviewedMovies = filteredMovies.filter((m) => m.reviewedMovieSlug);
+function reviewedMovieCount(
+  filteredMovies: Queries.WatchlistMovieFragment[]
+): number {
+  const reviewedMovies = filteredMovies.filter((m) => m.reviewedMovie?.slug);
 
   return reviewedMovies.length;
 }
@@ -288,21 +298,25 @@ function WatchlistCollectionLinkItem({
 function WatchlistMoviePoster({
   movie,
 }: {
-  movie: WatchlistMovie;
+  movie: Queries.WatchlistMovieFragment;
 }): JSX.Element {
-  const poster = (
-    <GatsbyImage
-      className={listItemPosterCss}
-      image={movie.poster.childImageSharp.gatsbyImageData}
-      alt={`A poster from ${movie.title} (${movie.year})`}
-    />
-  );
+  let poster = null;
 
-  if (movie.reviewedMovieSlug) {
+  if (movie.poster?.childImageSharp) {
+    poster = (
+      <GatsbyImage
+        className={listItemPosterCss}
+        image={movie.poster.childImageSharp.gatsbyImageData}
+        alt={`A poster from ${movie.title} (${movie.year})`}
+      />
+    );
+  }
+
+  if (movie.reviewedMovie?.slug) {
     return (
       <Link
         rel="canonical"
-        to={`/reviews/${movie.reviewedMovieSlug}/`}
+        to={`/reviews/${movie.reviewedMovie.slug}/`}
         className={listItemPosterCss}
       >
         {poster}
@@ -329,9 +343,7 @@ export function Head(): JSX.Element {
  */
 export default function WatchlistIndexPage({
   data,
-}: {
-  data: PageQueryResult;
-}): JSX.Element {
+}: PageProps<Queries.WatchlistIndexPageQuery>): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -530,62 +542,39 @@ export default function WatchlistIndexPage({
   );
 }
 
-export interface WatchlistMovie {
-  collectionNames: string[];
-  directorNames: string[];
-  imdbId: string;
-  performerNames: string[];
-  title: string;
-  writerNames: string[];
-  year: number;
-  reviewedMovieSlug: string | null;
-  sortTitle: string;
-  releaseDate: string;
-  poster: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
-interface PageQueryResult {
-  watchlist: {
-    nodes: WatchlistMovie[];
-    releaseYears: string[];
-    directors: string[];
-    performers: string[];
-    writers: string[];
-    collections: string[];
-  };
-}
-
 export const pageQuery = graphql`
-  query {
+  fragment WatchlistMovie on WatchlistMoviesJson {
+    imdbId: imdb_id
+    title
+    year
+    releaseDate: release_date
+    sortTitle: sort_title
+    reviewedMovie {
+      slug
+    }
+    directorNames
+    performerNames
+    writerNames
+    collectionNames: collection_names
+    poster {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 48
+          placeholder: TRACED_SVG
+        )
+      }
+    }
+  }
+
+  query WatchlistIndexPage {
     watchlist: allWatchlistMoviesJson(
       sort: { fields: [release_date], order: ASC }
     ) {
       nodes {
-        imdbId: imdb_id
-        title
-        year
-        releaseDate: release_date
-        sortTitle: sort_title
-        reviewedMovieSlug
-        directorNames
-        performerNames
-        writerNames
-        collectionNames: collection_names
-        poster {
-          childImageSharp {
-            gatsbyImageData(
-              layout: FIXED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 48
-              placeholder: TRACED_SVG
-            )
-          }
-        }
+        ...WatchlistMovie
       }
       releaseYears: distinct(field: year)
       directors: distinct(field: directorNames)

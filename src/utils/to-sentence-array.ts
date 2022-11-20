@@ -2,7 +2,9 @@
  * Takes an array of words and returns a new array that includes (if needed) commas and a conjunction.
  * @param array The array to parse.
  */
-export default function toSentenceArray(array: string[]): string[] {
+export default function toSentenceArray(
+  array: string[] | readonly string[]
+): string[] {
   const words = array.filter(Boolean);
 
   if (words.length < 2) {

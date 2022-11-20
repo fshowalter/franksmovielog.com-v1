@@ -9,29 +9,32 @@
 "viewings": [
 {
 "sequence": 475,
-"venue": "Netflix",
+"venue": null,
+"medium": "Netflix",
 "date": "2015-01-31",
 "title": "The Crimson Cult",
 "year": 1968,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0062833"
 },
 {
 "sequence": 503,
 "venue": "Alamo Drafthouse Cinema - Winchester",
+"medium": null,
 "date": "2015-06-23",
 "title": "The Beyond",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082307"
 },
 {
 "sequence": 532,
 "venue": "AFI Silver",
+"medium": null,
 "date": "2015-11-05",
 "title": "The Beyond",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082307"
 }
 ]
@@ -45,28 +48,31 @@
 {
 "sequence": 503,
 "venue": "Alamo Drafthouse Cinema - Winchester",
+"medium": null,
 "date": "2015-06-23",
 "title": "The Beyond",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082307"
 },
 {
 "sequence": 531,
-"venue": "Shudder",
+"venue": null,
+"medium": "Shudder",
 "date": "2015-10-31",
 "title": "Demons",
 "year": 1985,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0089013"
 },
 {
 "sequence": 532,
 "venue": "AFI Silver",
+"medium": null,
 "date": "2015-11-05",
 "title": "The Beyond",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082307"
 }
 ]
@@ -79,20 +85,22 @@
 "viewings": [
 {
 "sequence": 471,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2015-01-17",
 "title": "The Devil Rides Out",
 "year": 1968,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0062885"
 },
 {
 "sequence": 481,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2015-02-21",
 "title": "To the Devil a Daughter",
 "year": 1976,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0075334"
 }
 ]
@@ -105,20 +113,22 @@
 "viewings": [
 {
 "sequence": 473,
-"venue": "TCM HD",
+"venue": null,
+"medium": "TCM HD",
 "date": "2015-01-31",
 "title": "The Big Steal",
 "year": 1949,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0041178"
 },
 {
 "sequence": 499,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2015-06-06",
 "title": "Out of the Past",
 "year": 1947,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0039689"
 }
 ]
@@ -131,20 +141,22 @@
 "viewings": [
 {
 "sequence": 476,
-"venue": "TCM HD",
+"venue": null,
+"medium": "TCM HD",
 "date": "2015-02-07",
 "title": "Where Danger Lives",
 "year": 1950,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0043131"
 },
 {
 "sequence": 483,
-"venue": "TCM HD",
+"venue": null,
+"medium": "TCM HD",
 "date": "2015-02-28",
 "title": "Dangerous Mission",
 "year": 1954,
-"slug": "dangerous-mission-1954",
+"review_slug": "dangerous-mission-1954",
 "imdb_id": "tt0046891"
 }
 ]
@@ -157,20 +169,22 @@
 "viewings": [
 {
 "sequence": 479,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2015-02-14",
 "title": "Indiana Jones and the Raiders of the Lost Ark",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082971"
 },
 {
 "sequence": 536,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2015-12-21",
 "title": "Star Wars: Episode VII - The Force Awakens",
 "year": 2015,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt2488496"
 }
 ]
@@ -184,19 +198,21 @@
 {
 "sequence": 492,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2015-04-30",
 "title": "Avengers: Age of Ultron",
 "year": 2015,
-"slug": "avengers-age-of-ultron-2015",
+"review_slug": "avengers-age-of-ultron-2015",
 "imdb_id": "tt2395427"
 },
 {
 "sequence": 529,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2015-10-31",
 "title": "The Cabin in the Woods",
 "year": 2011,
-"slug": "the-cabin-in-the-woods-2011",
+"review_slug": "the-cabin-in-the-woods-2011",
 "imdb_id": "tt1259521"
 }
 ]
@@ -209,20 +225,22 @@
 "viewings": [
 {
 "sequence": 498,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2015-06-06",
 "title": "The City of the Dead",
 "year": 1960,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0053719"
 },
 {
 "sequence": 530,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2015-10-31",
 "title": "Vampire Circus",
 "year": 1972,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0067924"
 }
 ]
@@ -235,20 +253,22 @@
 "viewings": [
 {
 "sequence": 498,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2015-06-06",
 "title": "The City of the Dead",
 "year": 1960,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0053719"
 },
 {
 "sequence": 514,
-"venue": "Shudder",
+"venue": null,
+"medium": "Shudder",
 "date": "2015-08-11",
 "title": "I, Monster",
 "year": 1971,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0068727"
 }
 ]
@@ -262,19 +282,21 @@
 {
 "sequence": 502,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2015-06-22",
 "title": "Inside Out",
 "year": 2015,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt2096673"
 },
 {
 "sequence": 536,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2015-12-21",
 "title": "Star Wars: Episode VII - The Force Awakens",
 "year": 2015,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt2488496"
 }
 ]

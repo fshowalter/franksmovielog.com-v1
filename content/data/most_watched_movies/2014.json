@@ -5,21 +5,22 @@
 "viewings": [
 {
 "date": "2014-08-16",
-"venue": "DVD",
-"sequence": 418,
-"slug": null
+"venue": null,
+"medium": "DVD",
+"sequence": 418
 },
 {
 "date": "2014-12-20",
-"venue": "Blu-ray",
-"sequence": 456,
-"slug": null
+"venue": null,
+"medium": "Blu-ray",
+"sequence": 456
 }
 ],
 "viewing_count": 2,
 "imdb_id": "tt0051554",
 "title": "Horror of Dracula",
-"year": 1958
+"year": 1958,
+"review_slug": "horror-of-dracula-1958"
 }
 ]
 }

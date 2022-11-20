@@ -10,37 +10,41 @@
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 }
 ]
@@ -54,37 +58,41 @@
 {
 "sequence": 677,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-18",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 679,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-22",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 681,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-27",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 },
 {
 "sequence": 683,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-06-13",
 "title": "Avengers: Infinity War",
 "year": 2018,
-"slug": "avengers-infinity-war-2018",
+"review_slug": "avengers-infinity-war-2018",
 "imdb_id": "tt4154756"
 }
 ]
@@ -97,29 +105,32 @@
 "viewings": [
 {
 "sequence": 644,
-"venue": "Shudder",
+"venue": null,
+"medium": "Shudder",
 "date": "2018-03-10",
 "title": "Tenebrae",
 "year": 1982,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0084777"
 },
 {
 "sequence": 649,
 "venue": "AFI Silver",
+"medium": null,
 "date": "2018-03-23",
 "title": "The Bird with the Crystal Plumage",
 "year": 1970,
-"slug": "the-bird-with-the-crystal-plumage-1970",
+"review_slug": "the-bird-with-the-crystal-plumage-1970",
 "imdb_id": "tt0065143"
 },
 {
 "sequence": 715,
 "venue": "Alamo Drafthouse Cinema - Woodbridge",
+"medium": null,
 "date": "2018-10-27",
 "title": "Deep Red",
 "year": 1975,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0073582"
 }
 ]
@@ -132,29 +143,32 @@
 "viewings": [
 {
 "sequence": 657,
-"venue": "TCM",
+"venue": null,
+"medium": "TCM",
 "date": "2018-03-28",
 "title": "The Crowd Roars",
 "year": 1932,
-"slug": "the-crowd-roars-1932",
+"review_slug": "the-crowd-roars-1932",
 "imdb_id": "tt0022792"
 },
 {
 "sequence": 671,
-"venue": "DVD",
+"venue": null,
+"medium": "DVD",
 "date": "2018-05-01",
 "title": "Land of the Pharaohs",
 "year": 1955,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0048283"
 },
 {
 "sequence": 686,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2018-06-17",
 "title": "Rio Bravo",
 "year": 1959,
-"slug": "rio-bravo-1959",
+"review_slug": "rio-bravo-1959",
 "imdb_id": "tt0053221"
 }
 ]
@@ -168,19 +182,21 @@
 {
 "sequence": 633,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-01-20",
 "title": "Zombie 3",
 "year": 1988,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0096511"
 },
 {
 "sequence": 710,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-10-13",
 "title": "Zombie",
 "year": 1979,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0080057"
 }
 ]
@@ -194,19 +210,21 @@
 {
 "sequence": 635,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-01-31",
 "title": "Wolfcop",
 "year": 2014,
-"slug": "wolfcop-2014",
+"review_slug": "wolfcop-2014",
 "imdb_id": "tt2781516"
 },
 {
 "sequence": 636,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-01-31",
 "title": "Another WolfCop",
 "year": 2017,
-"slug": "another-wolfcop-2017",
+"review_slug": "another-wolfcop-2017",
 "imdb_id": "tt4515762"
 }
 ]
@@ -219,20 +237,22 @@
 "viewings": [
 {
 "sequence": 654,
-"venue": "TCM",
+"venue": null,
+"medium": "TCM",
 "date": "2018-03-25",
 "title": "Kid Galahad",
 "year": 1937,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0029080"
 },
 {
 "sequence": 695,
-"venue": "TCM",
+"venue": null,
+"medium": "TCM",
 "date": "2018-08-05",
 "title": "Private Detective 62",
 "year": 1933,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0024471"
 }
 ]
@@ -246,19 +266,21 @@
 {
 "sequence": 662,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-04-13",
 "title": "Friday the 13th: The Final Chapter",
 "year": 1984,
-"slug": "friday-the-13th-the-final-chapter-1984",
+"review_slug": "friday-the-13th-the-final-chapter-1984",
 "imdb_id": "tt0087298"
 },
 {
 "sequence": 701,
-"venue": "Amazon",
+"venue": null,
+"medium": "Amazon",
 "date": "2018-09-15",
 "title": "The Prowler",
 "year": 1981,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0082951"
 }
 ]
@@ -271,20 +293,22 @@
 "viewings": [
 {
 "sequence": 663,
-"venue": "TCM",
+"venue": null,
+"medium": "TCM",
 "date": "2018-04-14",
 "title": "The Wagons Roll at Night",
 "year": 1941,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0034370"
 },
 {
 "sequence": 673,
-"venue": "TCM HD",
+"venue": null,
+"medium": "TCM HD",
 "date": "2018-05-02",
 "title": "China Clipper",
 "year": 1936,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt0027445"
 }
 ]
@@ -298,19 +322,21 @@
 {
 "sequence": 675,
 "venue": "Alamo Drafthouse Cinema - One Loudoun",
+"medium": null,
 "date": "2018-05-09",
 "title": "The Endless",
 "year": 2017,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt3986820"
 },
 {
 "sequence": 678,
-"venue": "Shudder",
+"venue": null,
+"medium": "Shudder",
 "date": "2018-05-19",
 "title": "Resolution",
 "year": 2012,
-"slug": null,
+"review_slug": null,
 "imdb_id": "tt1977895"
 }
 ]

@@ -9,56 +9,62 @@
 "viewings": [
 {
 "sequence": 1301,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-08",
 "title": "Saw",
 "year": 2004,
-"slug": "saw-2004",
+"review_slug": "saw-2004",
 "imdb_id": "tt0387564"
 },
 {
 "sequence": 1305,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-22",
 "title": "Saw II",
 "year": 2005,
-"slug": "saw-ii-2005",
+"review_slug": "saw-ii-2005",
 "imdb_id": "tt0432348"
 },
 {
 "sequence": 1307,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-28",
 "title": "Saw III",
 "year": 2006,
-"slug": "saw-iii-2006",
+"review_slug": "saw-iii-2006",
 "imdb_id": "tt0489270"
 },
 {
 "sequence": 1315,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-08-10",
 "title": "Saw IV",
 "year": 2007,
-"slug": "saw-iv-2007",
+"review_slug": "saw-iv-2007",
 "imdb_id": "tt0890870"
 },
 {
 "sequence": 1319,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-08-12",
 "title": "Saw V",
 "year": 2008,
-"slug": "saw-v-2008",
+"review_slug": "saw-v-2008",
 "imdb_id": "tt1132626"
 },
 {
 "sequence": 1346,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-09-10",
 "title": "Saw VI",
 "year": 2009,
-"slug": "saw-vi-2009",
+"review_slug": "saw-vi-2009",
 "imdb_id": "tt1233227"
 }
 ]
@@ -71,56 +77,62 @@
 "viewings": [
 {
 "sequence": 1324,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-08-20",
 "title": "Virginia City",
 "year": 1940,
-"slug": "virginia-city-1940",
+"review_slug": "virginia-city-1940",
 "imdb_id": "tt0033226"
 },
 {
 "sequence": 1341,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-07",
 "title": "Invisible Stripes",
 "year": 1939,
-"slug": "invisible-stripes-1939",
+"review_slug": "invisible-stripes-1939",
 "imdb_id": "tt0032636"
 },
 {
 "sequence": 1344,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-09",
 "title": "King of the Underworld",
 "year": 1939,
-"slug": "king-of-the-underworld-1939",
+"review_slug": "king-of-the-underworld-1939",
 "imdb_id": "tt0031536"
 },
 {
 "sequence": 1347,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-11",
 "title": "The Big Shot",
 "year": 1942,
-"slug": "the-big-shot-1942",
+"review_slug": "the-big-shot-1942",
 "imdb_id": "tt0034513"
 },
 {
 "sequence": 1349,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-13",
 "title": "High Sierra",
 "year": 1941,
-"slug": "high-sierra-1941",
+"review_slug": "high-sierra-1941",
 "imdb_id": "tt0033717"
 },
 {
 "sequence": 1350,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-14",
 "title": "Dead Reckoning",
 "year": 1947,
-"slug": "dead-reckoning-1947",
+"review_slug": "dead-reckoning-1947",
 "imdb_id": "tt0039305"
 }
 ]
@@ -133,47 +145,52 @@
 "viewings": [
 {
 "sequence": 1266,
-"venue": "Criterion Channel",
+"venue": null,
+"medium": "Criterion Channel",
 "date": "2022-03-28",
 "title": "Merrily We Go to Hell",
 "year": 1932,
-"slug": "merrily-we-go-to-hell-1932",
+"review_slug": "merrily-we-go-to-hell-1932",
 "imdb_id": "tt0023213"
 },
 {
 "sequence": 1329,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-08-26",
 "title": "Topper",
 "year": 1937,
-"slug": "topper-1937",
+"review_slug": "topper-1937",
 "imdb_id": "tt0029682"
 },
 {
 "sequence": 1334,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-08-31",
 "title": "Penny Serenade",
 "year": 1941,
-"slug": "penny-serenade-1941",
+"review_slug": "penny-serenade-1941",
 "imdb_id": "tt0034012"
 },
 {
 "sequence": 1337,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-02",
 "title": "Every Girl Should Be Married",
 "year": 1948,
-"slug": "every-girl-should-be-married-1948",
+"review_slug": "every-girl-should-be-married-1948",
 "imdb_id": "tt0040331"
 },
 {
 "sequence": 1358,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-20",
 "title": "Suzy",
 "year": 1936,
-"slug": "suzy-1936",
+"review_slug": "suzy-1936",
 "imdb_id": "tt0028330"
 }
 ]
@@ -186,38 +203,42 @@
 "viewings": [
 {
 "sequence": 1228,
-"venue": "4k UHD Blu-ray",
+"venue": null,
+"medium": "4k UHD Blu-ray",
 "date": "2022-01-12",
 "title": "The Hills Have Eyes",
 "year": 1977,
-"slug": "the-hills-have-eyes-1977",
+"review_slug": "the-hills-have-eyes-1977",
 "imdb_id": "tt0077681"
 },
 {
 "sequence": 1230,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-01-14",
 "title": "Deadly Blessing",
 "year": 1981,
-"slug": "deadly-blessing-1981",
+"review_slug": "deadly-blessing-1981",
 "imdb_id": "tt0082245"
 },
 {
 "sequence": 1241,
-"venue": "Arrow Player",
+"venue": null,
+"medium": "Arrow Player",
 "date": "2022-02-02",
 "title": "The Hills Have Eyes Part II",
 "year": 1984,
-"slug": "the-hills-have-eyes-part-ii-1984",
+"review_slug": "the-hills-have-eyes-part-ii-1984",
 "imdb_id": "tt0089274"
 },
 {
 "sequence": 1353,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-09-16",
 "title": "New York Ninja",
 "year": 2021,
-"slug": "new-york-ninja-2021",
+"review_slug": "new-york-ninja-2021",
 "imdb_id": "tt15358226"
 }
 ]
@@ -230,38 +251,42 @@
 "viewings": [
 {
 "sequence": 1228,
-"venue": "4k UHD Blu-ray",
+"venue": null,
+"medium": "4k UHD Blu-ray",
 "date": "2022-01-12",
 "title": "The Hills Have Eyes",
 "year": 1977,
-"slug": "the-hills-have-eyes-1977",
+"review_slug": "the-hills-have-eyes-1977",
 "imdb_id": "tt0077681"
 },
 {
 "sequence": 1231,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2022-01-17",
 "title": "3 from Hell",
 "year": 2019,
-"slug": "3-from-hell-2019",
+"review_slug": "3-from-hell-2019",
 "imdb_id": "tt8134742"
 },
 {
 "sequence": 1267,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2022-03-31",
 "title": "Halloween",
 "year": 2007,
-"slug": "halloween-2007",
+"review_slug": "halloween-2007",
 "imdb_id": "tt0373883"
 },
 {
 "sequence": 1314,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-08-05",
 "title": "Popcorn",
 "year": 1991,
-"slug": "popcorn-1991",
+"review_slug": "popcorn-1991",
 "imdb_id": "tt0102690"
 }
 ]
@@ -274,38 +299,42 @@
 "viewings": [
 {
 "sequence": 1287,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2022-06-19",
 "title": "Ride Him, Cowboy",
 "year": 1932,
-"slug": "ride-him-cowboy-1932",
+"review_slug": "ride-him-cowboy-1932",
 "imdb_id": "tt0023396"
 },
 {
 "sequence": 1288,
-"venue": "iTunes",
+"venue": null,
+"medium": "iTunes",
 "date": "2022-06-19",
 "title": "Haunted Gold",
 "year": 1932,
-"slug": "haunted-gold-1932",
+"review_slug": "haunted-gold-1932",
 "imdb_id": "tt0022981"
 },
 {
 "sequence": 1322,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-08-18",
 "title": "The Man from Monterey",
 "year": 1933,
-"slug": "the-man-from-monterey-1933",
+"review_slug": "the-man-from-monterey-1933",
 "imdb_id": "tt0024293"
 },
 {
 "sequence": 1355,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-18",
 "title": "Reunion in France",
 "year": 1942,
-"slug": "reunion-in-france-1942",
+"review_slug": "reunion-in-france-1942",
 "imdb_id": "tt0035250"
 }
 ]
@@ -318,38 +347,42 @@
 "viewings": [
 {
 "sequence": 1294,
-"venue": "Criterion Channel",
+"venue": null,
+"medium": "Criterion Channel",
 "date": "2022-06-27",
 "title": "The Plough and the Stars",
 "year": 1936,
-"slug": "the-plough-and-the-stars-1936",
+"review_slug": "the-plough-and-the-stars-1936",
 "imdb_id": "tt0028112"
 },
 {
 "sequence": 1324,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-08-20",
 "title": "Virginia City",
 "year": 1940,
-"slug": "virginia-city-1940",
+"review_slug": "virginia-city-1940",
 "imdb_id": "tt0033226"
 },
 {
 "sequence": 1341,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-07",
 "title": "Invisible Stripes",
 "year": 1939,
-"slug": "invisible-stripes-1939",
+"review_slug": "invisible-stripes-1939",
 "imdb_id": "tt0032636"
 },
 {
 "sequence": 1355,
-"venue": "Watch TCM",
+"venue": null,
+"medium": "Watch TCM",
 "date": "2022-09-18",
 "title": "Reunion in France",
 "year": 1942,
-"slug": "reunion-in-france-1942",
+"review_slug": "reunion-in-france-1942",
 "imdb_id": "tt0035250"
 }
 ]
@@ -362,38 +395,42 @@
 "viewings": [
 {
 "sequence": 1301,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-08",
 "title": "Saw",
 "year": 2004,
-"slug": "saw-2004",
+"review_slug": "saw-2004",
 "imdb_id": "tt0387564"
 },
 {
 "sequence": 1305,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-22",
 "title": "Saw II",
 "year": 2005,
-"slug": "saw-ii-2005",
+"review_slug": "saw-ii-2005",
 "imdb_id": "tt0432348"
 },
 {
 "sequence": 1307,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-28",
 "title": "Saw III",
 "year": 2006,
-"slug": "saw-iii-2006",
+"review_slug": "saw-iii-2006",
 "imdb_id": "tt0489270"
 },
 {
 "sequence": 1315,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-08-10",
 "title": "Saw IV",
 "year": 2007,
-"slug": "saw-iv-2007",
+"review_slug": "saw-iv-2007",
 "imdb_id": "tt0890870"
 }
 ]
@@ -406,38 +443,42 @@
 "viewings": [
 {
 "sequence": 1301,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-08",
 "title": "Saw",
 "year": 2004,
-"slug": "saw-2004",
+"review_slug": "saw-2004",
 "imdb_id": "tt0387564"
 },
 {
 "sequence": 1305,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-22",
 "title": "Saw II",
 "year": 2005,
-"slug": "saw-ii-2005",
+"review_slug": "saw-ii-2005",
 "imdb_id": "tt0432348"
 },
 {
 "sequence": 1307,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-28",
 "title": "Saw III",
 "year": 2006,
-"slug": "saw-iii-2006",
+"review_slug": "saw-iii-2006",
 "imdb_id": "tt0489270"
 },
 {
 "sequence": 1346,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-09-10",
 "title": "Saw VI",
 "year": 2009,
-"slug": "saw-vi-2009",
+"review_slug": "saw-vi-2009",
 "imdb_id": "tt1233227"
 }
 ]
@@ -450,38 +491,42 @@
 "viewings": [
 {
 "sequence": 1307,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-07-28",
 "title": "Saw III",
 "year": 2006,
-"slug": "saw-iii-2006",
+"review_slug": "saw-iii-2006",
 "imdb_id": "tt0489270"
 },
 {
 "sequence": 1315,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-08-10",
 "title": "Saw IV",
 "year": 2007,
-"slug": "saw-iv-2007",
+"review_slug": "saw-iv-2007",
 "imdb_id": "tt0890870"
 },
 {
 "sequence": 1319,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-08-12",
 "title": "Saw V",
 "year": 2008,
-"slug": "saw-v-2008",
+"review_slug": "saw-v-2008",
 "imdb_id": "tt1132626"
 },
 {
 "sequence": 1346,
-"venue": "Blu-ray",
+"venue": null,
+"medium": "Blu-ray",
 "date": "2022-09-10",
 "title": "Saw VI",
 "year": 2009,
-"slug": "saw-vi-2009",
+"review_slug": "saw-vi-2009",
 "imdb_id": "tt1233227"
 }
 ]

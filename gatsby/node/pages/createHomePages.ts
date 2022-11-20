@@ -3,27 +3,21 @@ import path from "path";
 
 const query = `
 {
-  reviews: allMarkdownRemark(
-    filter: { postType: { eq: "REVIEW" } }
-    sort: { fields: frontmatter___sequence, order: DESC }
+  viewing: allViewingsJson(
+    filter: { reviewedMovie: { id: { ne: null } } }
+    sort: {fields: sequence, order: DESC}
   ) {
     nodes {
-      frontmatter {
-        imdb_id
-        slug
-      }
+      sequence
     }
   }
 }
 `;
 
 interface QueryResult {
-  reviews: {
+  viewing: {
     nodes: {
-      frontmatter: {
-        imdb_id: string;
-        slug: string;
-      };
+      sequence: string;
     }[];
   };
 }
@@ -43,7 +37,7 @@ export default async function createHomePages({
     return;
   }
 
-  const updates = queryResult.data.reviews.nodes;
+  const updates = queryResult.data.viewing.nodes;
   const perPage = 10;
   const numPages = Math.ceil(updates.length / perPage);
   Array.from({ length: numPages }).forEach((_, i) => {
