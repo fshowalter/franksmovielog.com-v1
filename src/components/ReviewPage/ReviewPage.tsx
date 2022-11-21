@@ -1,4 +1,4 @@
-import { graphql, Link, PageProps } from "gatsby";
+import { graphql, Link } from "gatsby";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
 import HeadBuilder from "../HeadBuilder";
@@ -175,7 +175,9 @@ function starsForGrade(grade: string) {
 
 export function Head({
   data,
-}: Pick<PageProps<Queries.ReviewPageQuery>, "data">): JSX.Element {
+}: {
+  data: NonNullable<Queries.ReviewPageQuery>;
+}): JSX.Element {
   const movie = data.movie;
 
   return (
@@ -195,7 +197,9 @@ export function Head({
  */
 export default function ReviewPage({
   data,
-}: Pick<PageProps<Queries.ReviewPageQuery>, "data">): JSX.Element {
+}: {
+  data: NonNullable<Queries.ReviewPageQuery>;
+}): JSX.Element {
   const movie = data.movie;
 
   return (

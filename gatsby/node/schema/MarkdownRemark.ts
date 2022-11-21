@@ -232,9 +232,15 @@ const MarkdownRemark = {
   fields: {
     linkedExcerpt: {
       type: "String",
+      args: {
+        includeCssClass: {
+          type: "Boolean",
+          defaultValue: true,
+        },
+      },
       resolve: async (
         source: MarkdownNode,
-        _args: unknown,
+        args: { includeCssClass: true },
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
@@ -274,7 +280,11 @@ const MarkdownRemark = {
           excerpt = excerpt.replace(/\n+$/, "");
           excerpt = excerpt.replace(
             /<\/p>$/,
-            ` <a class="globalExcerptLinkCss" href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
+            ` <a ${
+              args.includeCssClass ? 'class="globalExcerptLinkCss"' : ""
+            } href="/reviews/${
+              source.frontmatter.slug
+            }/">Continue reading...</a></p>`
           );
         }
 
