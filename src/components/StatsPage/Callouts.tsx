@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import {
   calloutContainerCss,
   containerCss,
@@ -21,29 +22,46 @@ function Callout({
 }
 
 export default function Callouts({
-  viewingCount,
-  movieCount,
-  newMovieCount,
-  reviewCount,
-  watchlistTitlesReviewed,
+  viewingCallouts,
+  reviewCallouts,
 }: {
-  viewingCount: number;
-  movieCount: number;
-  newMovieCount: number;
-  reviewCount: number | undefined;
-  watchlistTitlesReviewed: number | undefined;
+  viewingCallouts: Queries.ViewingCalloutsFragment | null;
+  reviewCallouts: Queries.ReviewCalloutsFragment | null;
 }): JSX.Element {
   return (
     <div className={containerCss}>
-      <Callout label="Viewings" stat={viewingCount} />
-      <Callout label="Movies" stat={movieCount} />
-      {movieCount != newMovieCount && (
-        <Callout label="New Movies" stat={newMovieCount} />
+      {viewingCallouts && (
+        <>
+          <Callout label="Viewings" stat={viewingCallouts.viewingCount} />
+          <Callout label="Movies" stat={viewingCallouts.movieCount} />)
+        </>
       )}
-      {reviewCount && <Callout label="Reviews" stat={reviewCount} />}
-      {watchlistTitlesReviewed && (
-        <Callout label="From Watchlist" stat={watchlistTitlesReviewed} />
+      {viewingCallouts &&
+        viewingCallouts.movieCount != viewingCallouts.newMovieCount && (
+          <Callout label="New Movies" stat={viewingCallouts.newMovieCount} />
+        )}
+      {reviewCallouts && (
+        <>
+          <Callout label="Reviews" stat={reviewCallouts.reviewCount} />
+          <Callout
+            label="From Watchlist"
+            stat={reviewCallouts.watchlistTitlesReviewed}
+          />
+        </>
       )}
     </div>
   );
 }
+
+export const query = graphql`
+  fragment ViewingCallouts on ViewingStatsJson {
+    movieCount: movie_count
+    newMovieCount: new_movie_count
+    viewingCount: viewing_count
+  }
+
+  fragment ReviewCallouts on ReviewStatsJson {
+    reviewCount: reviews_created
+    watchlistTitlesReviewed
+  }
+`;

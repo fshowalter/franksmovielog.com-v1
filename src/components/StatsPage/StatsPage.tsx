@@ -1,13 +1,14 @@
-import { graphql, Link } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import PageTitle from "../PageTitle";
-import ByReleaseYear from "./ByReleaseYear";
+import ByDecade from "./ByDecade";
 import Callouts from "./Callouts";
 import GradeDistribution from "./GradeDistribution";
+import MostWatchedDirectors from "./MostWatchedDirectors";
 import MostWatchedMovies from "./MostWatchedMovies";
-import MostWatchedPeople from "./MostWatchedPeople";
+import MostWatchedPerformers from "./MostWatchedPerformers";
+import MostWatchedWriters from "./MostWatchedWriters";
 import {
   containerCss,
   contentCss,
@@ -17,38 +18,6 @@ import {
 } from "./StatsPage.module.scss";
 import TopMedia from "./TopMedia";
 import YearNavigation from "./YearNavigation";
-
-function DirectorName({ person }: { person: Person }): JSX.Element {
-  if (person.slug) {
-    return (
-      <Link to={`/watchlist/directors/${person.slug}/`}>{person.fullName}</Link>
-    );
-  }
-
-  return <>{person.fullName}</>;
-}
-
-function WriterName({ person }: { person: Person }): JSX.Element {
-  if (person.slug) {
-    return (
-      <Link to={`/watchlist/writers/${person.slug}/`}>{person.fullName}</Link>
-    );
-  }
-
-  return <>{person.fullName}</>;
-}
-
-function PerformerName({ person }: { person: Person }): JSX.Element {
-  if (person.slug) {
-    return (
-      <Link to={`/watchlist/performers/${person.slug}/`}>
-        {person.fullName}
-      </Link>
-    );
-  }
-
-  return <>{person.fullName}</>;
-}
 
 function SubHeading({
   yearScope,
@@ -109,6 +78,8 @@ export function Head({
   );
 }
 
+type AllStatsPageQuery = Omit<Queries.StatsPageQuery, "gradeDistribution">;
+
 /**
  * Renders the all-time review stats template.
  */
@@ -117,20 +88,26 @@ export default function StatsPage({
   data,
 }: {
   pageContext: PageContext;
-  data: PageQueryResult;
+  data: Queries.StatsPageQuery | AllStatsPageQuery;
 }): JSX.Element {
   const {
-    viewingStats,
-    reviewStats,
+    viewingCallouts,
+    reviewCallouts,
     performers,
     directors,
     writers,
-    decade,
-    gradeDistribution,
+    decades,
     movies,
-    medium,
+    topMedia,
     viewing,
   } = data;
+
+  let gradeDistribution;
+
+  if ("gradeDistribution" in data) {
+    ({ gradeDistribution } = data);
+  }
+
   const { yearScope } = pageContext;
 
   const pageTitle =
@@ -144,40 +121,23 @@ export default function StatsPage({
           <div className={taglineCss}>
             <SubHeading
               yearScope={yearScope}
-              years={viewing.years.sort().reverse()}
+              years={[...viewing.years].sort().reverse()}
             />
           </div>
         </header>
         <div className={contentCss}>
           {" "}
           <Callouts
-            viewingCount={viewingStats.viewingCount}
-            movieCount={viewingStats.movieCount}
-            newMovieCount={viewingStats.newMovieCount}
-            reviewCount={reviewStats?.reviewCount}
-            watchlistTitlesReviewed={reviewStats?.watchlistTitlesReviewed}
+            viewingCallouts={viewingCallouts}
+            reviewCallouts={reviewCallouts}
           />
-          <MostWatchedMovies movies={movies.mostWatched} />
-          <ByReleaseYear decades={decade.stats} />
-          <TopMedia stats={medium.stats} />
-          {gradeDistribution && (
-            <GradeDistribution distributions={gradeDistribution.nodes} />
-          )}
-          <MostWatchedPeople
-            people={directors.mostWatched}
-            header="Most Watched Directors"
-            nameRenderer={DirectorName}
-          />
-          <MostWatchedPeople
-            people={performers.mostWatched}
-            header="Most Watched Performers"
-            nameRenderer={PerformerName}
-          />
-          <MostWatchedPeople
-            people={writers.mostWatched}
-            header="Most Watched Writers"
-            nameRenderer={WriterName}
-          />
+          <MostWatchedMovies movies={movies} />
+          <ByDecade decades={decades} />
+          <TopMedia topMedia={topMedia} />
+          <GradeDistribution distributions={gradeDistribution?.nodes} />
+          <MostWatchedDirectors directors={directors} />
+          <MostWatchedPerformers performers={performers} />
+          <MostWatchedWriters writers={writers} />
         </div>
       </main>
     </Layout>
@@ -188,221 +148,36 @@ export interface PageContext {
   yearScope: string;
 }
 
-export interface Person {
-  fullName: string;
-  slug: string | null;
-  viewingCount: number;
-  viewings: Viewing[];
-}
-
-export interface Viewing {
-  sequence: number;
-  viewingDate: string;
-  venue: string | null;
-  medium: string | null;
-  title: string;
-  year: number;
-  reviewSlug: string | null;
-  poster: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
-interface PageQueryResult {
-  viewingStats: {
-    viewingCount: number;
-    movieCount: number;
-    newMovieCount: number;
-  };
-  reviewStats: {
-    reviewCount: number;
-    watchlistTitlesReviewed: number;
-  } | null;
-  decade: {
-    stats: DecadeStat[];
-  };
-  medium: {
-    stats: MediumStat[];
-  };
-  gradeDistribution: {
-    nodes: GradeDistribution[];
-  } | null;
-  movies: {
-    mostWatched: Movie[];
-  };
-  directors: {
-    mostWatched: Person[];
-  };
-  performers: {
-    mostWatched: Person[];
-  };
-  writers: {
-    mostWatched: Person[];
-  };
-  viewing: {
-    years: string[];
-  };
-}
-
-export interface Movie {
-  imdbId: string;
-  title: string;
-  year: number;
-  reviewSlug: string | null;
-  viewingCount: number;
-  poster: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
-export interface MediumStat {
-  name: string;
-  viewingCount: number;
-}
-
-export interface GradeDistribution {
-  grade: string;
-  reviewCount: number;
-}
-
-export interface DecadeStat {
-  decade: string;
-  viewingCount: number;
-}
-
 export const pageQuery = graphql`
-  query ($yearScope: String!, $isYear: Boolean!) {
-    viewingStats: viewingStatsJson(viewing_year: { eq: $yearScope }) {
-      movieCount: movie_count
-      newMovieCount: new_movie_count
-      viewingCount: viewing_count
+  query StatsPage($yearScope: String!, $isYear: Boolean!) {
+    viewingCallouts: viewingStatsJson(viewing_year: { eq: $yearScope }) {
+      ...ViewingCallouts
     }
-    reviewStats: reviewStatsJson(review_year: { eq: $yearScope }) {
-      reviewCount: reviews_created
-      watchlistTitlesReviewed: watchlist_titles_reviewed
+    reviewCallouts: reviewStatsJson(review_year: { eq: $yearScope }) {
+      ...ReviewCallouts
     }
-    decade: viewingCountsForDecadesJson(viewing_year: { eq: $yearScope }) {
-      stats {
-        decade
-        viewingCount: viewing_count
-      }
+    decades: viewingCountsForDecadesJson(viewing_year: { eq: $yearScope }) {
+      ...ByDecade
     }
     gradeDistribution: allGradeDistributionsJson @skip(if: $isYear) {
       nodes {
-        grade
-        reviewCount: review_count
+        ...GradeDistribution
       }
     }
-    medium: topMediaJson(viewing_year: { eq: $yearScope }) {
-      stats {
-        name
-        viewingCount: viewing_count
-      }
+    topMedia: topMediaJson(viewing_year: { eq: $yearScope }) {
+      ...TopMedia
     }
     movies: mostWatchedMoviesJson(viewing_year: { eq: $yearScope }) {
-      mostWatched: most_watched {
-        imdbId: imdb_id
-        title
-        year
-        reviewSlug: review_slug
-        poster {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 200
-              placeholder: TRACED_SVG
-            )
-          }
-        }
-        viewingCount: viewing_count
-      }
+      ...MostWatchedMovies
     }
     directors: mostWatchedDirectorsJson(viewing_year: { eq: $yearScope }) {
-      mostWatched: most_watched {
-        fullName: full_name
-        slug
-        viewingCount: viewing_count
-        viewings {
-          sequence
-          viewingDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          medium
-          title
-          year
-          reviewSlug: review_slug
-          poster {
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                formats: [JPG, AVIF]
-                quality: 80
-                width: 200
-                placeholder: TRACED_SVG
-              )
-            }
-          }
-        }
-      }
+      ...MostWatchedDirectors
     }
     performers: mostWatchedPerformersJson(viewing_year: { eq: $yearScope }) {
-      mostWatched: most_watched {
-        fullName: full_name
-        slug: slug
-        viewingCount: viewing_count
-        viewings {
-          sequence
-          viewingDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          medium
-          title
-          year
-          reviewSlug: review_slug
-          poster {
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                formats: [JPG, AVIF]
-                quality: 80
-                width: 200
-                placeholder: TRACED_SVG
-              )
-            }
-          }
-        }
-      }
+      ...MostWatchedPerformers
     }
     writers: mostWatchedWritersJson(viewing_year: { eq: $yearScope }) {
-      mostWatched: most_watched {
-        fullName: full_name
-        slug: slug
-        viewingCount: viewing_count
-        viewings {
-          sequence
-          viewingDate: date(formatString: "ddd MMM D, YYYY")
-          venue
-          medium
-          title
-          year
-          reviewSlug: review_slug
-          poster {
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                formats: [JPG, AVIF]
-                quality: 80
-                width: 200
-                placeholder: TRACED_SVG
-              )
-            }
-          }
-        }
-      }
+      ...MostWatchedWriters
     }
     viewing: allViewingStatsJson(sort: { fields: viewing_year, order: DESC }) {
       years: distinct(field: viewing_year)

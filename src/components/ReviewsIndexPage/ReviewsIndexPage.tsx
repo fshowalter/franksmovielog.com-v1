@@ -1,5 +1,4 @@
 import { graphql, Link } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
 import { useReducer, useRef } from "react";
 import Select from "react-select";
 import Button from "../Button";
@@ -47,7 +46,10 @@ function ListInfo({
   return <div className={listInfoCss}>{showingText}</div>;
 }
 
-function groupForViewing(movie: Movie, sortValue: SortType): string {
+function groupForViewing(
+  viewing: Queries.ReviewsIndexViewingFragment,
+  sortValue: SortType
+): string {
   const shortMonthToLong: { [key: string]: string } = {
     Jan: "January",
     Feb: "February",
@@ -66,11 +68,11 @@ function groupForViewing(movie: Movie, sortValue: SortType): string {
   switch (sortValue) {
     case "release-date-asc":
     case "release-date-desc": {
-      return movie.releaseDate.substring(0, 4);
+      return viewing.releaseDate.substring(0, 4);
     }
     case "viewing-date-asc":
     case "viewing-date-desc": {
-      const match = movie.viewingDate.match(
+      const match = viewing.viewingDate.match(
         /[A-Za-z]{3} ([A-Za-z]{3}) \d{1,2}, (\d{4})/
       );
       if (!match) {
@@ -81,16 +83,16 @@ function groupForViewing(movie: Movie, sortValue: SortType): string {
     }
     case "grade-asc":
     case "grade-desc": {
-      return movie.reviewedMovie?.grade || "Unrated";
+      return viewing.reviewedMovie?.grade || "Unrated";
     }
     case "title": {
-      const letter = movie.sortTitle.substring(0, 1);
+      const letter = viewing.sortTitle.substring(0, 1);
 
       if (letter.toLowerCase() == letter.toUpperCase()) {
         return "#";
       }
 
-      return movie.sortTitle.substring(0, 1).toLocaleUpperCase();
+      return viewing.sortTitle.substring(0, 1).toLocaleUpperCase();
     }
     // no default
   }
@@ -100,10 +102,11 @@ function groupViewings({
   viewings,
   sortValue,
 }: {
-  viewings: Movie[];
+  viewings: Queries.ReviewsIndexViewingFragment[];
   sortValue: SortType;
-}): Map<string, Movie[]> {
-  const groupedViewings: Map<string, Movie[]> = new Map();
+}): Map<string, Queries.ReviewsIndexViewingFragment[]> {
+  const groupedViewings: Map<string, Queries.ReviewsIndexViewingFragment[]> =
+    new Map();
 
   viewings.map((viewing) => {
     const group = groupForViewing(viewing, sortValue);
@@ -136,7 +139,7 @@ export function Head(): JSX.Element {
 export default function ReviewsIndexPage({
   data,
 }: {
-  data: PageQueryResult;
+  data: Queries.ReviewsIndexPageQuery;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -170,7 +173,7 @@ export default function ReviewsIndexPage({
                   </span>{" "}
                   movies since 2012 and published{" "}
                   <span className={calloutCss}>
-                    {data.reviews.totalCount.toLocaleString()}
+                    {data.reviews?.totalCount.toLocaleString()}
                   </span>{" "}
                   reviews since 2020.
                 </p>
@@ -355,75 +358,43 @@ export default function ReviewsIndexPage({
   );
 }
 
-export interface Movie {
-  title: string;
-  year: number;
-  releaseDate: string;
-  viewingDate: string;
-  viewingYear: number;
-  sequence: number;
-  venue: string;
-  medium: string;
-  sortTitle: string;
-  genres: string[];
-  reviewedMovie: {
-    slug: string;
-    grade: string;
-    gradeValue: number;
-  } | null;
-  poster: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
-interface PageQueryResult {
-  reviews: {
-    totalCount: number;
-  };
-  movie: {
-    nodes: Movie[];
-    viewingYears: string[];
-    releaseYears: string[];
-    genres: string[];
-    media: string[];
-  };
-}
-
 export const pageQuery = graphql`
-  query {
+  fragment ReviewsIndexViewing on ViewingsJson {
+    sequence
+    viewingYear: viewing_year
+    viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
+    releaseDate: release_date
+    title
+    medium
+    venue
+    year
+    sortTitle: sort_title
+    reviewedMovie {
+      slug
+      grade
+      gradeValue: grade_value
+    }
+    genres
+    poster {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 200
+          placeholder: TRACED_SVG
+        )
+      }
+    }
+  }
+
+  query ReviewsIndexPage {
     reviews: reviewStatsJson(review_year: { eq: "all" }) {
       totalCount: reviews_created
     }
     movie: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
-        sequence
-        viewingYear: viewing_year
-        viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
-        releaseDate: release_date
-        title
-        medium
-        venue
-        year
-        sortTitle: sort_title
-        reviewedMovie {
-          slug
-          grade
-          gradeValue: grade_value
-        }
-        genres
-        poster {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 200
-              placeholder: TRACED_SVG
-            )
-          }
-        }
+        ...ReviewsIndexViewing
       }
       media: distinct(field: medium)
       viewingYears: distinct(field: viewing_year)

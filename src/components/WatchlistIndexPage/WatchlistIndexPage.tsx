@@ -1,4 +1,4 @@
-import { graphql, Link, PageProps } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
@@ -343,7 +343,9 @@ export function Head(): JSX.Element {
  */
 export default function WatchlistIndexPage({
   data,
-}: PageProps<Queries.WatchlistIndexPageQuery>): JSX.Element {
+}: {
+  data: Queries.WatchlistIndexPageQuery;
+}): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {

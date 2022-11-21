@@ -1,6 +1,6 @@
+import { graphql } from "gatsby";
 import Bar from "./Bar";
 import StatHeading from "./StatHeading";
-import type { MediumStat } from "./StatsPage";
 import {
   Table,
   TableDataCell,
@@ -10,10 +10,16 @@ import {
 } from "./Table";
 
 export default function TopMedia({
-  stats,
+  topMedia,
 }: {
-  stats: MediumStat[];
-}): JSX.Element {
+  topMedia: Queries.TopMediaFragment | null;
+}): JSX.Element | null {
+  if (!topMedia) {
+    return null;
+  }
+
+  const { stats } = topMedia;
+
   const maxBar = stats.reduce((acc, stat) => {
     const value = stat.viewingCount;
     return acc > value ? acc : value;
@@ -47,3 +53,12 @@ export default function TopMedia({
     </section>
   );
 }
+
+export const query = graphql`
+  fragment TopMedia on TopMediaJson {
+    stats {
+      name
+      viewingCount: viewing_count
+    }
+  }
+`;

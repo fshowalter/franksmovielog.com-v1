@@ -28,9 +28,18 @@ const MostWatchedPersonViewing = {
     },
     title: "String!",
     year: "Int!",
-    review_slug: "String",
+    reviewedMovie: {
+      type: SchemaNames.REVIEWED_MOVIES_JSON,
+      resolve: async (
+        source: MostWatchedPersonViewingNode,
+        _args: GatsbyResolveArgs,
+        context: GatsbyNodeContext
+      ) => {
+        return await findReviewedMovieNode(source.imdb_id, context.nodeModel);
+      },
+    },
     poster: {
-      type: "File",
+      type: "File!",
       resolve: async (
         source: MostWatchedPersonViewingNode,
         args: GatsbyResolveArgs,

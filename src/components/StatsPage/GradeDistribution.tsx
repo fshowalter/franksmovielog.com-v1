@@ -1,6 +1,6 @@
+import { graphql } from "gatsby";
 import Bar from "./Bar";
 import StatHeading from "./StatHeading";
-import type { GradeDistribution } from "./StatsPage";
 import {
   Table,
   TableDataCell,
@@ -12,8 +12,12 @@ import {
 export default function GradeDistributions({
   distributions,
 }: {
-  distributions: GradeDistribution[];
-}): JSX.Element {
+  distributions?: readonly Queries.GradeDistributionFragment[] | null;
+}): JSX.Element | null {
+  if (!distributions) {
+    return null;
+  }
+
   const maxBar = distributions.reduce((acc, stat) => {
     const value = stat.reviewCount;
     return acc > value ? acc : value;
@@ -49,3 +53,10 @@ export default function GradeDistributions({
     </section>
   );
 }
+
+export const query = graphql`
+  fragment GradeDistribution on GradeDistributionsJson {
+    grade
+    reviewCount: review_count
+  }
+`;

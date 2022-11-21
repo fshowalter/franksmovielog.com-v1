@@ -18,7 +18,7 @@ async function createDirectorPages(
     `
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entity_type: { eq: "director" }, review_count: { gt: 0 } }
+          filter: { entity_type: { eq: "director" }, reviewCount: { gt: 0 } }
         ) {
           nodes {
             slug
@@ -66,7 +66,7 @@ async function createPerformerPages(
     `
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entity_type: { eq: "performer" }, review_count: { gt: 0 } }
+          filter: { entity_type: { eq: "performer" }, reviewCount: { gt: 0 } }
         ) {
           nodes {
             slug
@@ -114,7 +114,7 @@ async function createWriterPages(
     `
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entity_type: { eq: "writer" }, review_count: { gt: 0 } }
+          filter: { entity_type: { eq: "writer" }, reviewCount: { gt: 0 } }
         ) {
           nodes {
             slug
@@ -162,7 +162,7 @@ async function createCollectionPages(
     `
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entity_type: { eq: "collection" }, review_count: { gt: 0 } }
+          filter: { entity_type: { eq: "collection" }, reviewCount: { gt: 0 } }
         ) {
           nodes {
             slug

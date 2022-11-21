@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import Grade from "../Grade";
+import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import {
   listCss,
   listItemCss,
@@ -61,7 +61,7 @@ export function Poster({
   showTitle = true,
 }: {
   slug?: string | null;
-  image: Image;
+  image: IGraphqlImage;
   title: string;
   year: number;
   grade?: string | null;
@@ -75,8 +75,8 @@ export function Poster({
     return (
       <li className={listItemCss}>
         <Link className={listItemImageWrapCss} to={`/reviews/${slug}/`}>
-          <GatsbyImage
-            image={image.childImageSharp.gatsbyImageData}
+          <GraphqlImage
+            image={image}
             alt={`A poster from ${title} (${year})`}
           />
         </Link>
@@ -104,10 +104,7 @@ export function Poster({
   return (
     <li className={listItemCss}>
       <div className={listItemImageWrapCss}>
-        <GatsbyImage
-          image={image.childImageSharp.gatsbyImageData}
-          alt="An unreviewed title."
-        />
+        <GraphqlImage image={image} alt="An unreviewed title." />
       </div>
       {details && details}
       {typeof details === "undefined" && (
@@ -131,10 +128,4 @@ export function PosterList({
   children: React.ReactNode;
 }): JSX.Element {
   return <ol className={listCss}>{children}</ol>;
-}
-
-interface Image {
-  childImageSharp: {
-    gatsbyImageData: IGatsbyImageData;
-  };
 }

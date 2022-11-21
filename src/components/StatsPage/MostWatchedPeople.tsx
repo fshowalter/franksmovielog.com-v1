@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import React from "react";
 import { Poster, PosterList } from "../PosterList";
 import {
@@ -15,7 +16,6 @@ import {
   viewingsCss,
   viewingsHeaderCss,
 } from "./MostWatchedPeople.module.scss";
-import type { Person } from "./StatsPage";
 
 function BarGraph({
   value,
@@ -41,10 +41,18 @@ export default function MostWatchedPeople({
   nameRenderer,
 }: {
   header: string;
-  people: Person[];
-  nameRenderer: ({ person }: { person: Person }) => JSX.Element;
-}): JSX.Element {
-  const maxBar = people.reduce((acc, person) => {
+  people: Queries.MostWatchedPeopleFragment | null;
+  nameRenderer: ({
+    person,
+  }: {
+    person: Queries.MostWatchedPersonFragment;
+  }) => JSX.Element;
+}): JSX.Element | null {
+  if (!people) {
+    return null;
+  }
+
+  const maxBar = people.mostWatched.reduce((acc, person) => {
     const value = person.viewingCount;
     return acc > value ? acc : value;
   }, 0);
@@ -57,7 +65,7 @@ export default function MostWatchedPeople({
         <span className={viewingsHeaderCss}>Viewings</span>
       </header>
       <ol className={parentListCss}>
-        {people.map((person) => {
+        {people.mostWatched.map((person) => {
           return (
             <li key={person.fullName} className={parentListItemCss}>
               <span className={nameCss}>{nameRenderer({ person })}</span>
@@ -75,7 +83,7 @@ export default function MostWatchedPeople({
                           key={viewing.sequence}
                           image={viewing.poster}
                           title={viewing.title}
-                          slug={viewing.reviewSlug}
+                          slug={viewing.reviewedMovie?.slug}
                           year={viewing.year}
                           date={viewing.viewingDate}
                           venue={viewing.venue}
@@ -93,3 +101,39 @@ export default function MostWatchedPeople({
     </section>
   );
 }
+
+export const query = graphql`
+  fragment MostWatchedPerson on MostWatchedPerson {
+    fullName: full_name
+    slug: slug
+    viewingCount: viewing_count
+    viewings {
+      sequence
+      viewingDate: date(formatString: "ddd MMM D, YYYY")
+      venue
+      medium
+      title
+      year
+      reviewedMovie {
+        slug
+      }
+      poster {
+        childImageSharp {
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
+            quality: 80
+            width: 200
+            placeholder: TRACED_SVG
+          )
+        }
+      }
+    }
+  }
+
+  fragment MostWatchedPeople on MostWatchedPeople {
+    mostWatched: most_watched {
+      ...MostWatchedPerson
+    }
+  }
+`;

@@ -411,9 +411,11 @@ export const pageQuery = graphql`
           imdbId: imdb_id
           title
           year
-          lastReviewGrade
-          lastReviewGradeValue
-          reviewedMovieSlug
+          reviewedMovie {
+            grade
+            gradeValue: grade_value
+            slug
+          }
           sortTitle: sort_title
           releaseDate: release_date
           poster {

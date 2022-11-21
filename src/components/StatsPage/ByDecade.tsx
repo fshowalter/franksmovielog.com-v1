@@ -1,6 +1,6 @@
+import { graphql } from "gatsby";
 import Bar from "./Bar";
 import StatHeading from "./StatHeading";
-import type { DecadeStat } from "./StatsPage";
 import {
   Table,
   TableDataCell,
@@ -12,9 +12,15 @@ import {
 export default function ByReleaseYear({
   decades,
 }: {
-  decades: DecadeStat[];
-}): JSX.Element {
-  const maxBar = decades.reduce((acc, stat) => {
+  decades: Queries.ByDecadeFragment | null;
+}): JSX.Element | null {
+  if (!decades) {
+    return null;
+  }
+
+  const { stats } = decades;
+
+  const maxBar = stats.reduce((acc, stat) => {
     const value = stat.viewingCount;
     return acc > value ? acc : value;
   }, 0);
@@ -31,7 +37,7 @@ export default function ByReleaseYear({
           </tr>
         </TableHead>
         <tbody>
-          {decades.map((stat) => {
+          {stats.map((stat) => {
             return (
               <TableRow key={stat.decade}>
                 <TableDataCell align="left">{stat.decade}</TableDataCell>
@@ -47,3 +53,12 @@ export default function ByReleaseYear({
     </section>
   );
 }
+
+export const query = graphql`
+  fragment ByDecade on ViewingCountsForDecadesJson {
+    stats {
+      decade
+      viewingCount: viewing_count
+    }
+  }
+`;

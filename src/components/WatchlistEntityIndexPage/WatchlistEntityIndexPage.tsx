@@ -281,7 +281,6 @@ export const pageQuery = graphql`
         name
         slug
         titleCount: title_count
-        reviewCount: review_count
         avatar {
           childImageSharp {
             gatsbyImageData(

@@ -67,7 +67,7 @@ export default {
       },
     },
     poster: {
-      type: "File",
+      type: "File!",
       resolve: async (
         source: ViewingNode,
         args: GatsbyResolveArgs,

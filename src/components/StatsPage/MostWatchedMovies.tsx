@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import { Poster, PosterList } from "../PosterList";
 import {
   containerCss,
@@ -6,9 +7,12 @@ import {
   listItemTitleYearCss,
 } from "./MostWatchedMovies.module.scss";
 import StatHeading from "./StatHeading";
-import type { Movie } from "./StatsPage";
 
-function ListItemDetails({ movie }: { movie: Movie }): JSX.Element {
+function ListItemDetails({
+  movie,
+}: {
+  movie: Queries.MostWatchedMovieFragment;
+}): JSX.Element {
   if (movie.reviewSlug) {
     return (
       <div className={listItemSlugCss}>
@@ -32,9 +36,15 @@ function ListItemDetails({ movie }: { movie: Movie }): JSX.Element {
 export default function MostWatchedMovies({
   movies,
 }: {
-  movies: Movie[];
+  movies: Queries.MostWatchedMoviesFragment | null;
 }): JSX.Element | null {
-  if (movies.length === 0) {
+  if (!movies) {
+    return null;
+  }
+
+  const { mostWatched } = movies;
+
+  if (mostWatched.length === 0) {
     return null;
   }
 
@@ -43,7 +53,7 @@ export default function MostWatchedMovies({
       <StatHeading>Most Watched Movies</StatHeading>
       <div className={containerCss}>
         <PosterList>
-          {movies.map((movie) => {
+          {mostWatched.map((movie) => {
             return (
               <Poster
                 key={movie.imdbId}
@@ -60,3 +70,30 @@ export default function MostWatchedMovies({
     </>
   );
 }
+
+export const query = graphql`
+  fragment MostWatchedMovie on MostWatchedMovie {
+    imdbId: imdb_id
+    title
+    year
+    reviewSlug: review_slug
+    poster {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 200
+          placeholder: TRACED_SVG
+        )
+      }
+    }
+    viewingCount: viewing_count
+  }
+
+  fragment MostWatchedMovies on MostWatchedMoviesJson {
+    mostWatched: most_watched {
+      ...MostWatchedMovie
+    }
+  }
+`;
