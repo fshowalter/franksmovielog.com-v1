@@ -4615,10 +4615,10 @@ create-gatsby@^2.24.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-create-gatsby@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-3.0.0.tgz#4802bc54fc340cbf8af3c899ef7d8ea7ad52f3e7"
-  integrity sha512-w8GIrX+5hEoHP2O5HKYAEfpJKdYJD4LDaquJEtvzTEaMdG6m3qSgOEIDEy9GaqBrPGZGJVzQtJxAc4kmZnGP0A==
+create-gatsby@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-3.1.0.tgz#992d3b00ba60feab7ef0f82a637a57a7c9601f05"
+  integrity sha512-Y0lLXRoVGfzvpST3epWli+PONq8Oj3kiJdmGAhvbaHP4wjydrZyzfNRXGCtgc/xJuai1o8tIjNcDBxVco0JN+A==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -6537,10 +6537,10 @@ gatsby-cli@^4.24.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-cli@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-5.0.0.tgz#00ca65537e52b6a46b6c6fc72100dc2b4042a66f"
-  integrity sha512-10HjIbryhBvXN7N5RI9H3ue84gBA1KX0nnr5rJQgqx0qB/Aev/4DetLFIipu5wi/+NHs2nqkQM4IWkbaSf2iNA==
+gatsby-cli@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-5.1.0.tgz#2f85a78f6564030d4ab147c30ba2a3af309f2c27"
+  integrity sha512-vsLdB4DwiHwoPmfPTv7JUQG+MQ8BbodvxOwYMSfISlq9/1sVmieQZHhboQmDG7fnH/Ha82mK3zoCDt6gb5x/3g==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -6558,13 +6558,13 @@ gatsby-cli@^5.0.0:
     clipboardy "^2.3.0"
     common-tags "^1.8.2"
     convert-hrtime "^3.0.0"
-    create-gatsby "^3.0.0"
+    create-gatsby "^3.1.0"
     envinfo "^7.8.1"
     execa "^5.1.1"
     fs-exists-cached "^1.0.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^4.0.0"
-    gatsby-telemetry "^4.0.0"
+    gatsby-core-utils "^4.1.0"
+    gatsby-telemetry "^4.1.0"
     hosted-git-info "^3.0.8"
     is-valid-path "^0.1.1"
     joi "^17.4.2"
@@ -6605,10 +6605,10 @@ gatsby-core-utils@^3.24.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.0.0.tgz#28bdcb82a5b2f81214e160012f2d3530f4e9aa04"
-  integrity sha512-ucrEUfVWVUMTEfqZO4o9XHZgVg2airwm2WJSSFUroIAZ2/7YjEiKtZV3RDO1iEqB1beNjrSLa+eZ1LJhbvsHDQ==
+gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.1.0.tgz#ab9567234c220dc1cf5cd75223a797b05d61e1cc"
+  integrity sha512-SWiRbX/S9+TWaF61IsYxhEMFsAm3O7oN9zf1Bf3DxRQdSyDGFHYkflLznuwHVmdRF01qksuMp8Vz/+xL9bFc/g==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -6906,10 +6906,10 @@ gatsby-telemetry@^3.24.0:
     lodash "^4.17.21"
     node-fetch "^2.6.7"
 
-gatsby-telemetry@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-4.0.0.tgz#fbce91df9fee86f7dc11f5d2b79e7854c24f5dea"
-  integrity sha512-SLDftlcRx/G5ORXGxigr+RISpTOQawB6Cy7KZHTBzci6BS0d70R+biE0Bf8hPrBGHqy2em82+skFBinw0nLOaA==
+gatsby-telemetry@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-4.1.0.tgz#547070a27ed0d03ffc716978209128d1002b8223"
+  integrity sha512-nZUOFQY/FP/fTj7aSVAimjqVfSg3UHenv1SQeEeWDYt7JBgTvHucLzIR+Uzb27rcKSycGAY78vHILlurxFljoA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/runtime" "^7.15.4"
@@ -6918,7 +6918,7 @@ gatsby-telemetry@^4.0.0:
     boxen "^4.2.0"
     configstore "^5.0.1"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^4.0.0"
+    gatsby-core-utils "^4.1.0"
     git-up "^7.0.0"
     is-docker "^2.2.1"
     lodash "^4.17.21"
