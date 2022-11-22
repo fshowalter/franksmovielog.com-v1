@@ -5,484 +5,116 @@
 "imdb_id": "nm0000489",
 "full_name": "Christopher Lee",
 "viewing_count": 11,
-"viewings": [
-{
-"sequence": 466,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2015-01-08",
-"title": "The Hobbit: The Battle of the Five Armies",
-"year": 2014,
-"imdb_id": "tt2310332"
-},
-{
-"sequence": 471,
-"venue": null,
-"medium": "DVD",
-"date": "2015-01-17",
-"title": "The Devil Rides Out",
-"year": 1968,
-"imdb_id": "tt0062885"
-},
-{
-"sequence": 472,
-"venue": null,
-"medium": "DVD",
-"date": "2015-01-17",
-"title": "Rasputin: The Mad Monk",
-"year": 1966,
-"imdb_id": "tt0059635"
-},
-{
-"sequence": 475,
-"venue": null,
-"medium": "Netflix",
-"date": "2015-01-31",
-"title": "The Crimson Cult",
-"year": 1968,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 481,
-"venue": null,
-"medium": "DVD",
-"date": "2015-02-21",
-"title": "To the Devil a Daughter",
-"year": 1976,
-"imdb_id": "tt0075334"
-},
-{
-"sequence": 498,
-"venue": null,
-"medium": "DVD",
-"date": "2015-06-06",
-"title": "The City of the Dead",
-"year": 1960,
-"imdb_id": "tt0053719"
-},
-{
-"sequence": 514,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-11",
-"title": "I, Monster",
-"year": 1971,
-"imdb_id": "tt0068727"
-},
-{
-"sequence": 519,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-29",
-"title": "The Whip and the Body",
-"year": 1963,
-"imdb_id": "tt0057078"
-},
-{
-"sequence": 520,
-"venue": null,
-"medium": "Amazon",
-"date": "2015-09-05",
-"title": "The House That Dripped Blood",
-"year": 1971,
-"imdb_id": "tt0065854"
-},
-{
-"sequence": 525,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2015-10-13",
-"title": "The Creeping Flesh",
-"year": 1973,
-"imdb_id": "tt0068424"
-},
-{
-"sequence": 527,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-10-24",
-"title": "The Curse of Frankenstein",
-"year": 1957,
-"imdb_id": "tt0050280"
-}
+"viewing_sequence_ids": [
+466,
+471,
+472,
+475,
+481,
+498,
+514,
+519,
+520,
+525,
+527
 ]
 },
 {
 "imdb_id": "nm0001088",
 "full_name": "Peter Cushing",
 "viewing_count": 7,
-"viewings": [
-{
-"sequence": 514,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-11",
-"title": "I, Monster",
-"year": 1971,
-"imdb_id": "tt0068727"
-},
-{
-"sequence": 515,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-13",
-"title": "And Now the Screaming Starts!",
-"year": 1973,
-"imdb_id": "tt0069715"
-},
-{
-"sequence": 517,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-15",
-"title": "Shock Waves",
-"year": 1977,
-"imdb_id": "tt0076704"
-},
-{
-"sequence": 520,
-"venue": null,
-"medium": "Amazon",
-"date": "2015-09-05",
-"title": "The House That Dripped Blood",
-"year": 1971,
-"imdb_id": "tt0065854"
-},
-{
-"sequence": 521,
-"venue": null,
-"medium": "Amazon",
-"date": "2015-09-19",
-"title": "Asylum",
-"year": 1972,
-"imdb_id": "tt0068230"
-},
-{
-"sequence": 525,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2015-10-13",
-"title": "The Creeping Flesh",
-"year": 1973,
-"imdb_id": "tt0068424"
-},
-{
-"sequence": 527,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-10-24",
-"title": "The Curse of Frankenstein",
-"year": 1957,
-"imdb_id": "tt0050280"
-}
+"viewing_sequence_ids": [
+514,
+515,
+517,
+520,
+521,
+525,
+527
 ]
 },
 {
 "imdb_id": "nm0000053",
 "full_name": "Robert Mitchum",
 "viewing_count": 6,
-"viewings": [
-{
-"sequence": 463,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-03",
-"title": "She Couldn't Say No",
-"year": 1953,
-"imdb_id": "tt0047476"
-},
-{
-"sequence": 467,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-09",
-"title": "Rachel and the Stranger",
-"year": 1948,
-"imdb_id": "tt0040720"
-},
-{
-"sequence": 468,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-10",
-"title": "The Angry Hills",
-"year": 1959,
-"imdb_id": "tt0052563"
-},
-{
-"sequence": 473,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-31",
-"title": "The Big Steal",
-"year": 1949,
-"imdb_id": "tt0041178"
-},
-{
-"sequence": 476,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-02-07",
-"title": "Where Danger Lives",
-"year": 1950,
-"imdb_id": "tt0043131"
-},
-{
-"sequence": 499,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-06-06",
-"title": "Out of the Past",
-"year": 1947,
-"imdb_id": "tt0039689"
-}
+"viewing_sequence_ids": [
+463,
+467,
+468,
+473,
+476,
+499
 ]
 },
 {
 "imdb_id": "nm0000168",
 "full_name": "Samuel L. Jackson",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 465,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-01-04",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 477,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-02-12",
-"title": "Kingsman: The Secret Service",
-"year": 2014,
-"imdb_id": "tt2802144"
-},
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 537,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2015-12-29",
-"title": "The Hateful Eight",
-"year": 2015,
-"imdb_id": "tt3460252"
-}
+"viewing_sequence_ids": [
+465,
+477,
+492,
+537
 ]
 },
 {
 "imdb_id": "nm0001637",
 "full_name": "Vincent Price",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 480,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-02-14",
-"title": "The Long Night",
-"year": 1947,
-"imdb_id": "tt0039581"
-},
-{
-"sequence": 483,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-02-28",
-"title": "Dangerous Mission",
-"year": 1954,
-"imdb_id": "tt0046891"
-},
-{
-"sequence": 486,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-03-26",
-"title": "House on Haunted Hill",
-"year": 1959,
-"imdb_id": "tt0051744"
-},
-{
-"sequence": 523,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-10-08",
-"title": "House of Wax",
-"year": 1953,
-"imdb_id": "tt0045888"
-}
+"viewing_sequence_ids": [
+480,
+483,
+486,
+523
 ]
 },
 {
 "imdb_id": "nm1107001",
 "full_name": "Anthony Mackie",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 465,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-01-04",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 508,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-07-30",
-"title": "Ant-Man",
-"year": 2015,
-"imdb_id": "tt0478970"
-}
+"viewing_sequence_ids": [
+465,
+492,
+508
 ]
 },
 {
 "imdb_id": "nm2017943",
 "full_name": "Hayley Atwell",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 465,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-01-04",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 508,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-07-30",
-"title": "Ant-Man",
-"year": 2015,
-"imdb_id": "tt0478970"
-}
+"viewing_sequence_ids": [
+465,
+492,
+508
 ]
 },
 {
 "imdb_id": "nm0001186",
 "full_name": "Denholm Elliott",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 479,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-02-14",
-"title": "Indiana Jones and the Raiders of the Lost Ark",
-"year": 1981,
-"imdb_id": "tt0082971"
-},
-{
-"sequence": 481,
-"venue": null,
-"medium": "DVD",
-"date": "2015-02-21",
-"title": "To the Devil a Daughter",
-"year": 1976,
-"imdb_id": "tt0075334"
-},
-{
-"sequence": 520,
-"venue": null,
-"medium": "Amazon",
-"date": "2015-09-05",
-"title": "The House That Dripped Blood",
-"year": 1971,
-"imdb_id": "tt0065854"
-}
+"viewing_sequence_ids": [
+479,
+481,
+520
 ]
 },
 {
 "imdb_id": "nm0352778",
 "full_name": "Bill Hader",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 502,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-06-22",
-"title": "Inside Out",
-"year": 2015,
-"imdb_id": "tt2096673"
-},
-{
-"sequence": 509,
-"venue": null,
-"medium": "Netflix",
-"date": "2015-08-01",
-"title": "The Skeleton Twins",
-"year": 2014,
-"imdb_id": "tt1571249"
-},
-{
-"sequence": 534,
-"venue": null,
-"medium": "Amazon",
-"date": "2015-12-12",
-"title": "Trainwreck",
-"year": 2015,
-"imdb_id": "tt3152624"
-}
+"viewing_sequence_ids": [
+502,
+509,
+534
 ]
 },
 {
 "imdb_id": "nm0241589",
 "full_name": "Ralph Dumke",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 463,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-03",
-"title": "She Couldn't Say No",
-"year": 1953,
-"imdb_id": "tt0047476"
-},
-{
-"sequence": 476,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-02-07",
-"title": "Where Danger Lives",
-"year": 1950,
-"imdb_id": "tt0043131"
-}
+"viewing_sequence_ids": [
+463,
+476
 ]
 }
 ]

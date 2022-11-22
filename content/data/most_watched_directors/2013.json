@@ -5,234 +5,82 @@
 "imdb_id": "nm0591171",
 "full_name": "Steve Miner",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 259,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-05",
-"title": "Warlock",
-"year": 1989,
-"imdb_id": "tt0098622"
-},
-{
-"sequence": 317,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-09-21",
-"title": "Friday the 13th Part 2",
-"year": 1981,
-"imdb_id": "tt0082418"
-},
-{
-"sequence": 318,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-09-27",
-"title": "Friday the 13th Part III",
-"year": 1982,
-"imdb_id": "tt0083972"
-}
+"viewing_sequence_ids": [
+259,
+317,
+318
 ]
 },
 {
 "imdb_id": "nm0000118",
 "full_name": "John Carpenter",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 268,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-20",
-"title": "Prince of Darkness",
-"year": 1987,
-"imdb_id": "tt0093777"
-},
-{
-"sequence": 309,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-08-08",
-"title": "Escape from New York",
-"year": 1981,
-"imdb_id": "tt0082340"
-}
+"viewing_sequence_ids": [
+268,
+309
 ]
 },
 {
 "imdb_id": "nm0906476",
 "full_name": "David Wain",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 269,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-20",
-"title": "Wet Hot American Summer",
-"year": 2001,
-"imdb_id": "tt0243655"
-},
-{
-"sequence": 324,
-"venue": null,
-"medium": "HBO HD",
-"date": "2013-10-13",
-"title": "Wanderlust",
-"year": 2012,
-"imdb_id": "tt1655460"
-}
+"viewing_sequence_ids": [
+269,
+324
 ]
 },
 {
 "imdb_id": "nm0000697",
 "full_name": "Billy Wilder",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 271,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-27",
-"title": "Double Indemnity",
-"year": 1944,
-"imdb_id": "tt0036775"
-},
-{
-"sequence": 291,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-03-09",
-"title": "One, Two, Three",
-"year": 1961,
-"imdb_id": "tt0055256"
-}
+"viewing_sequence_ids": [
+271,
+291
 ]
 },
 {
 "imdb_id": "nm0384335",
 "full_name": "Jack Hill",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 273,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-31",
-"title": "The Big Doll House",
-"year": 1971,
-"imdb_id": "tt0066830"
-},
-{
-"sequence": 288,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-03-05",
-"title": "The Terror",
-"year": 1963,
-"imdb_id": "tt0057569"
-}
+"viewing_sequence_ids": [
+273,
+288
 ]
 },
 {
 "imdb_id": "nm0269463",
 "full_name": "Jon Favreau",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 283,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man",
-"year": 2008,
-"imdb_id": "tt0371746"
-},
-{
-"sequence": 284,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-}
+"viewing_sequence_ids": [
+283,
+284
 ]
 },
 {
 "imdb_id": "nm0019247",
 "full_name": "Tomas Alfredson",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 298,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-04-30",
-"title": "Tinker Tailor Soldier Spy",
-"year": 2011,
-"imdb_id": "tt1340800"
-},
-{
-"sequence": 330,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-10-31",
-"title": "Let the Right One In",
-"year": 2008,
-"imdb_id": "tt1139797"
-}
+"viewing_sequence_ids": [
+298,
+330
 ]
 },
 {
 "imdb_id": "nm2947553",
 "full_name": "Na Hong-jin",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 328,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-10-29",
-"title": "The Chaser",
-"year": 2008,
-"imdb_id": "tt1190539"
-},
-{
-"sequence": 355,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-28",
-"title": "The Yellow Sea",
-"year": 2010,
-"imdb_id": "tt1230385"
-}
+"viewing_sequence_ids": [
+328,
+355
 ]
 },
 {
 "imdb_id": "nm0716347",
 "full_name": "Nicolas Winding Refn",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 338,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-11-16",
-"title": "Only God Forgives",
-"year": 2013,
-"imdb_id": "tt1602613"
-},
-{
-"sequence": 347,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-08",
-"title": "Bronson",
-"year": 2008,
-"imdb_id": "tt1172570"
-}
+"viewing_sequence_ids": [
+338,
+347
 ]
 }
 ]

@@ -164,7 +164,9 @@ export default {
         imdbId: "tt0089175",
         title: "Fright Night",
         year: 1985,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "fright-night-1985",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -200,7 +202,9 @@ export default {
         imdbId: "tt1259521",
         title: "The Cabin in the Woods",
         year: 2011,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "the-cabin-in-the-woods-2011",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -236,7 +240,9 @@ export default {
         imdbId: "tt4154756",
         title: "Avengers: Infinity War",
         year: 2018,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "avengers-infinity-war-2018",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -272,7 +278,9 @@ export default {
         imdbId: "tt3850590",
         title: "Krampus",
         year: 2015,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "krampus-2015",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -308,7 +316,9 @@ export default {
         imdbId: "tt0077651",
         title: "Halloween",
         year: 1978,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "halloween-1978",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -344,7 +354,9 @@ export default {
         imdbId: "tt0065143",
         title: "The Bird with the Crystal Plumage",
         year: 1970,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "the-bird-with-the-crystal-plumage-1970",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -380,7 +392,9 @@ export default {
         imdbId: "tt0051554",
         title: "Horror of Dracula",
         year: 1958,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "horror-of-dracula-1958",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -416,7 +430,9 @@ export default {
         imdbId: "tt0081793",
         title: "Christmas Evil",
         year: 1980,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "christmas-evil-1980",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -452,7 +468,9 @@ export default {
         imdbId: "tt0053221",
         title: "Rio Bravo",
         year: 1959,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "rio-bravo-1959",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -488,7 +506,9 @@ export default {
         imdbId: "tt4154796",
         title: "Avengers: Endgame",
         year: 2019,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "avengers-endgame-2019",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -524,7 +544,9 @@ export default {
         imdbId: "tt0050766",
         title: "Curse of the Demon",
         year: 1957,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "curse-of-the-demon-1957",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -560,7 +582,9 @@ export default {
         imdbId: "tt0022321",
         title: "The Road to Singapore",
         year: 1931,
-        reviewSlug: null,
+        reviewedMovie: {
+          slug: "the-road-to-singapore-1931",
+        },
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -598,7 +622,7 @@ export default {
     mostWatched: [
       {
         fullName: "John Ford",
-        slug: null,
+        slug: "john-ford",
         viewingCount: 27,
         viewings: [
           {
@@ -1657,7 +1681,7 @@ export default {
       },
       {
         fullName: "Ingmar Bergman",
-        slug: null,
+        slug: "ingmar-bergman",
         viewingCount: 21,
         viewings: [
           {
@@ -2504,7 +2528,7 @@ export default {
       },
       {
         fullName: "John Carpenter",
-        slug: null,
+        slug: "john-carpenter",
         viewingCount: 17,
         viewings: [
           {
@@ -3171,7 +3195,7 @@ export default {
       },
       {
         fullName: "Howard Hawks",
-        slug: null,
+        slug: "howard-hawks",
         viewingCount: 17,
         viewings: [
           {
@@ -5124,7 +5148,7 @@ export default {
       },
       {
         fullName: "Brian De Palma",
-        slug: null,
+        slug: "brian-de-palma",
         viewingCount: 16,
         viewings: [
           {
@@ -5771,7 +5795,7 @@ export default {
       },
       {
         fullName: "Lucio Fulci",
-        slug: null,
+        slug: "lucio-fulci",
         viewingCount: 15,
         viewings: [
           {
@@ -6364,7 +6388,7 @@ export default {
       },
       {
         fullName: "Dario Argento",
-        slug: null,
+        slug: "dario-argento",
         viewingCount: 14,
         viewings: [
           {
@@ -6917,7 +6941,7 @@ export default {
       },
       {
         fullName: "Alfred Hitchcock",
-        slug: null,
+        slug: "alfred-hitchcock",
         viewingCount: 13,
         viewings: [
           {
@@ -7432,7 +7456,7 @@ export default {
     mostWatched: [
       {
         fullName: "John Wayne",
-        slug: null,
+        slug: "john-wayne",
         viewingCount: 49,
         viewings: [
           {
@@ -9337,7 +9361,7 @@ export default {
       },
       {
         fullName: "Humphrey Bogart",
-        slug: null,
+        slug: "humphrey-bogart",
         viewingCount: 42,
         viewings: [
           {
@@ -10970,7 +10994,7 @@ export default {
       },
       {
         fullName: "Christopher Lee",
-        slug: null,
+        slug: "christopher-lee",
         viewingCount: 34,
         viewings: [
           {
@@ -12285,7 +12309,7 @@ export default {
       },
       {
         fullName: "William Powell",
-        slug: null,
+        slug: "william-powell",
         viewingCount: 33,
         viewings: [
           {
@@ -13592,7 +13616,7 @@ export default {
       },
       {
         fullName: "Boris Karloff",
-        slug: null,
+        slug: "boris-karloff",
         viewingCount: 28,
         viewings: [
           {
@@ -16901,7 +16925,7 @@ export default {
       },
       {
         fullName: "Robert Mitchum",
-        slug: null,
+        slug: "robert-mitchum",
         viewingCount: 27,
         viewings: [
           {
@@ -26393,7 +26417,7 @@ export const yearWithNoMostWatched = {
       },
       {
         fullName: "John Carpenter",
-        slug: null,
+        slug: "john-carpenter",
         viewingCount: 2,
         viewings: [
           {
@@ -26559,7 +26583,7 @@ export const yearWithNoMostWatched = {
       },
       {
         fullName: "Billy Wilder",
-        slug: null,
+        slug: "billy-wilder",
         viewingCount: 2,
         viewings: [
           {
@@ -28026,7 +28050,7 @@ export const yearWithNoMostWatched = {
       },
       {
         fullName: "Robert Mitchum",
-        slug: null,
+        slug: "robert-mitchum",
         viewingCount: 3,
         viewings: [
           {
@@ -28725,7 +28749,7 @@ export const yearWithNoMostWatched = {
       },
       {
         fullName: "David Mamet",
-        slug: null,
+        slug: "david-mamet",
         viewingCount: 2,
         viewings: [
           {

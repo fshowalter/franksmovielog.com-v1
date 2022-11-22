@@ -5,520 +5,120 @@
 "imdb_id": "nm0102908",
 "full_name": "Robert N. Bradbury",
 "viewing_count": 8,
-"viewings": [
-{
-"sequence": 91,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-25",
-"title": "Riders of Destiny",
-"year": 1933,
-"imdb_id": "tt0024500"
-},
-{
-"sequence": 93,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-26",
-"title": "The Lawless Frontier",
-"year": 1934,
-"imdb_id": "tt0025373"
-},
-{
-"sequence": 96,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-27",
-"title": "West of the Divide",
-"year": 1934,
-"imdb_id": "tt0025969"
-},
-{
-"sequence": 100,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Star Packer",
-"year": 1934,
-"imdb_id": "tt0025830"
-},
-{
-"sequence": 102,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Lucky Texan",
-"year": 1934,
-"imdb_id": "tt0025440"
-},
-{
-"sequence": 103,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "Texas Terror",
-"year": 1935,
-"imdb_id": "tt0027087"
-},
-{
-"sequence": 106,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "Blue Steel",
-"year": 1934,
-"imdb_id": "tt0024902"
-},
-{
-"sequence": 107,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Dawn Rider",
-"year": 1935,
-"imdb_id": "tt0026267"
-}
+"viewing_sequence_ids": [
+91,
+93,
+96,
+100,
+102,
+103,
+106,
+107
 ]
 },
 {
 "imdb_id": "nm0001379",
 "full_name": "John Huston",
 "viewing_count": 6,
-"viewings": [
-{
-"sequence": 31,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-25",
-"title": "Murders in the Rue Morgue",
-"year": 1932,
-"imdb_id": "tt0023249"
-},
-{
-"sequence": 61,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-04",
-"title": "Key Largo",
-"year": 1948,
-"imdb_id": "tt0040506"
-},
-{
-"sequence": 66,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-05",
-"title": "The Night of the Iguana",
-"year": 1964,
-"imdb_id": "tt0058404"
-},
-{
-"sequence": 111,
-"venue": "Landmark E Street Cinema",
-"medium": null,
-"date": "2012-03-10",
-"title": "The Maltese Falcon",
-"year": 1941,
-"imdb_id": "tt0033870"
-},
-{
-"sequence": 142,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-01",
-"title": "The Asphalt Jungle",
-"year": 1950,
-"imdb_id": "tt0042208"
-},
-{
-"sequence": 153,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-09",
-"title": "The Amazing Dr. Clitterhouse",
-"year": 1938,
-"imdb_id": "tt0029864"
-}
+"viewing_sequence_ids": [
+31,
+61,
+66,
+111,
+142,
+153
 ]
 },
 {
 "imdb_id": "nm0629580",
 "full_name": "Dudley Nichols",
 "viewing_count": 6,
-"viewings": [
-{
-"sequence": 68,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-10",
-"title": "The Long Voyage Home",
-"year": 1940,
-"imdb_id": "tt0032728"
-},
-{
-"sequence": 69,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-10",
-"title": "The Big Sky",
-"year": 1952,
-"imdb_id": "tt0044419"
-},
-{
-"sequence": 75,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-15",
-"title": "Air Force",
-"year": 1943,
-"imdb_id": "tt0035616"
-},
-{
-"sequence": 113,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-12",
-"title": "The Hurricane",
-"year": 1937,
-"imdb_id": "tt0029030"
-},
-{
-"sequence": 137,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-31",
-"title": "Mary of Scotland",
-"year": 1936,
-"imdb_id": "tt0027948"
-},
-{
-"sequence": 143,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-06",
-"title": "Stagecoach",
-"year": 1939,
-"imdb_id": "tt0031971"
-}
+"viewing_sequence_ids": [
+68,
+69,
+75,
+113,
+137,
+143
 ]
 },
 {
 "imdb_id": "nm0663858",
 "full_name": "Lindsley Parsons",
 "viewing_count": 6,
-"viewings": [
-{
-"sequence": 94,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-26",
-"title": "Sagebrush Trail",
-"year": 1933,
-"imdb_id": "tt0024516"
-},
-{
-"sequence": 95,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-27",
-"title": "The Man from Utah",
-"year": 1934,
-"imdb_id": "tt0025455"
-},
-{
-"sequence": 97,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-27",
-"title": "Paradise Canyon",
-"year": 1935,
-"imdb_id": "tt0026846"
-},
-{
-"sequence": 101,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Trail Beyond",
-"year": 1934,
-"imdb_id": "tt0025903"
-},
-{
-"sequence": 104,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Desert Trail",
-"year": 1935,
-"imdb_id": "tt0026273"
-},
-{
-"sequence": 105,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "Randy Rides Alone",
-"year": 1934,
-"imdb_id": "tt0025699"
-}
+"viewing_sequence_ids": [
+94,
+95,
+97,
+101,
+104,
+105
 ]
 },
 {
 "imdb_id": "nm0071657",
 "full_name": "Charles Bennett",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 3,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-11",
-"title": "Curse of the Demon",
-"year": 1957,
-"imdb_id": "tt0050766"
-},
-{
-"sequence": 60,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-04",
-"title": "Reap the Wild Wind",
-"year": 1942,
-"imdb_id": "tt0035244"
-},
-{
-"sequence": 182,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-06-10",
-"title": "Foreign Correspondent",
-"year": 1940,
-"imdb_id": "tt0032484"
-},
-{
-"sequence": 237,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-01",
-"title": "The Big Circus",
-"year": 1959,
-"imdb_id": "tt0052626"
-}
+"viewing_sequence_ids": [
+3,
+60,
+182,
+237
 ]
 },
 {
 "imdb_id": "nm0000590",
 "full_name": "Edgar Allan Poe",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 6,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-12",
-"title": "The Pit and the Pendulum",
-"year": 1961,
-"imdb_id": "tt0055304"
-},
-{
-"sequence": 7,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-12",
-"title": "The Masque of the Red Death",
-"year": 1964,
-"imdb_id": "tt0058333"
-},
-{
-"sequence": 31,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-25",
-"title": "Murders in the Rue Morgue",
-"year": 1932,
-"imdb_id": "tt0023249"
-},
-{
-"sequence": 35,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-26",
-"title": "The Black Cat",
-"year": 1934,
-"imdb_id": "tt0024894"
-}
+"viewing_sequence_ids": [
+6,
+7,
+31,
+35
 ]
 },
 {
 "imdb_id": "nm0558577",
 "full_name": "Richard Matheson",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 6,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-12",
-"title": "The Pit and the Pendulum",
-"year": 1961,
-"imdb_id": "tt0055304"
-},
-{
-"sequence": 13,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-01-13",
-"title": "The Comedy of Terrors",
-"year": 1963,
-"imdb_id": "tt0056943"
-},
-{
-"sequence": 221,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-09-08",
-"title": "The Legend of Hell House",
-"year": 1973,
-"imdb_id": "tt0070294"
-},
-{
-"sequence": 240,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-02",
-"title": "The Devil Rides Out",
-"year": 1968,
-"imdb_id": "tt0062885"
-}
+"viewing_sequence_ids": [
+6,
+13,
+221,
+240
 ]
 },
 {
 "imdb_id": "nm0151452",
 "full_name": "Raymond Chandler",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 10,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-13",
-"title": "Murder, My Sweet",
-"year": 1944,
-"imdb_id": "tt0037101"
-},
-{
-"sequence": 171,
-"venue": "Landmark E Street Cinema",
-"medium": null,
-"date": "2012-04-27",
-"title": "The Big Sleep",
-"year": 1946,
-"imdb_id": "tt0038355"
-},
-{
-"sequence": 172,
-"venue": "Landmark E Street Cinema",
-"medium": null,
-"date": "2012-04-28",
-"title": "The Big Sleep",
-"year": 1946,
-"imdb_id": "tt0038355"
-},
-{
-"sequence": 256,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-12-30",
-"title": "The Long Goodbye",
-"year": 1973,
-"imdb_id": "tt0070334"
-}
+"viewing_sequence_ids": [
+10,
+171,
+172,
+256
 ]
 },
 {
 "imdb_id": "nm0385573",
 "full_name": "Anthony Hinds",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 14,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-13",
-"title": "The Reptile",
-"year": 1966,
-"imdb_id": "tt0060893"
-},
-{
-"sequence": 213,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-08-10",
-"title": "Frankenstein and the Monster from Hell",
-"year": 1974,
-"imdb_id": "tt0071519"
-},
-{
-"sequence": 242,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-03",
-"title": "Dracula: Prince of Darkness",
-"year": 1966,
-"imdb_id": "tt0059127"
-},
-{
-"sequence": 244,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-09",
-"title": "Dracula Has Risen from the Grave",
-"year": 1968,
-"imdb_id": "tt0062909"
-}
+"viewing_sequence_ids": [
+14,
+213,
+242,
+244
 ]
 },
 {
 "imdb_id": "nm0522454",
 "full_name": "H.P. Lovecraft",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 21,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-01-15",
-"title": "The Crimson Cult",
-"year": 1968,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 67,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-05",
-"title": "Die, Monster, Die!",
-"year": 1965,
-"imdb_id": "tt0059465"
-},
-{
-"sequence": 175,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2012-05-04",
-"title": "The House by the Cemetery",
-"year": 1981,
-"imdb_id": "tt0082966"
-},
-{
-"sequence": 191,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2012-06-14",
-"title": "City of the Living Dead",
-"year": 1980,
-"imdb_id": "tt0081318"
-}
+"viewing_sequence_ids": [
+21,
+67,
+175,
+191
 ]
 }
 ]

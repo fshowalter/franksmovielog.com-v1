@@ -5,184 +5,64 @@
 "imdb_id": "nm0000783",
 "full_name": "Dario Argento",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 368,
-"venue": null,
-"medium": "Netflix",
-"date": "2014-02-01",
-"title": "Dracula 3D",
-"year": 2012,
-"imdb_id": "tt1852770"
-},
-{
-"sequence": 388,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-05-17",
-"title": "The Bird with the Crystal Plumage",
-"year": 1970,
-"imdb_id": "tt0065143"
-},
-{
-"sequence": 393,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-05-31",
-"title": "Inferno",
-"year": 1980,
-"imdb_id": "tt0080923"
-}
+"viewing_sequence_ids": [
+368,
+388,
+393
 ]
 },
 {
 "imdb_id": "nm0282708",
 "full_name": "Isaac Florentine",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 360,
-"venue": null,
-"medium": "Netflix",
-"date": "2014-01-11",
-"title": "Ninja: Shadow of a Tear",
-"year": 2013,
-"imdb_id": "tt2458106"
-},
-{
-"sequence": 367,
-"venue": null,
-"medium": "Amazon",
-"date": "2014-01-27",
-"title": "Ninja",
-"year": 2009,
-"imdb_id": "tt1182921"
-}
+"viewing_sequence_ids": [
+360,
+367
 ]
 },
 {
 "imdb_id": "nm0000233",
 "full_name": "Quentin Tarantino",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 372,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-02-16",
-"title": "Kill Bill: Vol. 1",
-"year": 2003,
-"imdb_id": "tt0266697"
-},
-{
-"sequence": 378,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-03-29",
-"title": "Kill Bill: Vol. 2",
-"year": 2004,
-"imdb_id": "tt0378194"
-}
+"viewing_sequence_ids": [
+372,
+378
 ]
 },
 {
 "imdb_id": "nm0279807",
 "full_name": "Terence Fisher",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 418,
-"venue": null,
-"medium": "DVD",
-"date": "2014-08-16",
-"title": "Horror of Dracula",
-"year": 1958,
-"imdb_id": "tt0051554"
-},
-{
-"sequence": 456,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-12-20",
-"title": "Horror of Dracula",
-"year": 1958,
-"imdb_id": "tt0051554"
-}
+"viewing_sequence_ids": [
+418,
+456
 ]
 },
 {
 "imdb_id": "nm1417392",
 "full_name": "Adam Wingard",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 420,
-"venue": null,
-"medium": "Netflix",
-"date": "2014-08-22",
-"title": "You're Next",
-"year": 2011,
-"imdb_id": "tt1853739"
-},
-{
-"sequence": 440,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2014-10-25",
-"title": "V/H/S/2",
-"year": 2013,
-"imdb_id": "tt2450186"
-}
+"viewing_sequence_ids": [
+420,
+440
 ]
 },
 {
 "imdb_id": "nm0789033",
 "full_name": "Don Sharp",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 436,
-"venue": null,
-"medium": "DVD",
-"date": "2014-10-18",
-"title": "The Face of Fu Manchu",
-"year": 1965,
-"imdb_id": "tt0059162"
-},
-{
-"sequence": 437,
-"venue": null,
-"medium": "DVD",
-"date": "2014-10-18",
-"title": "The Brides of Fu Manchu",
-"year": 1966,
-"imdb_id": "tt0060188"
-}
+"viewing_sequence_ids": [
+436,
+437
 ]
 },
 {
 "imdb_id": "nm0844896",
 "full_name": "Eduardo S\u00e1nchez",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 440,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2014-10-25",
-"title": "V/H/S/2",
-"year": 2013,
-"imdb_id": "tt2450186"
-},
-{
-"sequence": 441,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2014-10-26",
-"title": "Exists",
-"year": 2014,
-"imdb_id": "tt1988621"
-}
+"viewing_sequence_ids": [
+440,
+441
 ]
 }
 ]

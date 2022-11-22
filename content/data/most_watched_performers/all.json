@@ -5,2950 +5,390 @@
 "imdb_id": "nm0000078",
 "full_name": "John Wayne",
 "viewing_count": 49,
-"viewings": [
-{
-"sequence": 52,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-29",
-"title": "Tycoon",
-"year": 1947,
-"imdb_id": "tt0039927"
-},
-{
-"sequence": 60,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-04",
-"title": "Reap the Wild Wind",
-"year": 1942,
-"imdb_id": "tt0035244"
-},
-{
-"sequence": 68,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-10",
-"title": "The Long Voyage Home",
-"year": 1940,
-"imdb_id": "tt0032728"
-},
-{
-"sequence": 76,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-15",
-"title": "They Were Expendable",
-"year": 1945,
-"imdb_id": "tt0038160"
-},
-{
-"sequence": 91,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-25",
-"title": "Riders of Destiny",
-"year": 1933,
-"imdb_id": "tt0024500"
-},
-{
-"sequence": 92,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-25",
-"title": "His Private Secretary",
-"year": 1933,
-"imdb_id": "tt0024124"
-},
-{
-"sequence": 93,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-26",
-"title": "The Lawless Frontier",
-"year": 1934,
-"imdb_id": "tt0025373"
-},
-{
-"sequence": 94,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-26",
-"title": "Sagebrush Trail",
-"year": 1933,
-"imdb_id": "tt0024516"
-},
-{
-"sequence": 95,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-27",
-"title": "The Man from Utah",
-"year": 1934,
-"imdb_id": "tt0025455"
-},
-{
-"sequence": 96,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-27",
-"title": "West of the Divide",
-"year": 1934,
-"imdb_id": "tt0025969"
-},
-{
-"sequence": 97,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-27",
-"title": "Paradise Canyon",
-"year": 1935,
-"imdb_id": "tt0026846"
-},
-{
-"sequence": 99,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "'Neath the Arizona Skies",
-"year": 1934,
-"imdb_id": "tt0024805"
-},
-{
-"sequence": 100,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Star Packer",
-"year": 1934,
-"imdb_id": "tt0025830"
-},
-{
-"sequence": 101,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Trail Beyond",
-"year": 1934,
-"imdb_id": "tt0025903"
-},
-{
-"sequence": 102,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Lucky Texan",
-"year": 1934,
-"imdb_id": "tt0025440"
-},
-{
-"sequence": 103,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "Texas Terror",
-"year": 1935,
-"imdb_id": "tt0027087"
-},
-{
-"sequence": 104,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Desert Trail",
-"year": 1935,
-"imdb_id": "tt0026273"
-},
-{
-"sequence": 105,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "Randy Rides Alone",
-"year": 1934,
-"imdb_id": "tt0025699"
-},
-{
-"sequence": 106,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "Blue Steel",
-"year": 1934,
-"imdb_id": "tt0024902"
-},
-{
-"sequence": 107,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-28",
-"title": "The Dawn Rider",
-"year": 1935,
-"imdb_id": "tt0026267"
-},
-{
-"sequence": 116,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-17",
-"title": "Flying Tigers",
-"year": 1942,
-"imdb_id": "tt0034742"
-},
-{
-"sequence": 143,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-06",
-"title": "Stagecoach",
-"year": 1939,
-"imdb_id": "tt0031971"
-},
-{
-"sequence": 266,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-19",
-"title": "McLintock!",
-"year": 1963,
-"imdb_id": "tt0057298"
-},
-{
-"sequence": 293,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-03-23",
-"title": "El Dorado",
-"year": 1966,
-"imdb_id": "tt0061619"
-},
-{
-"sequence": 500,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-06-10",
-"title": "The Searchers",
-"year": 1956,
-"imdb_id": "tt0049730"
-},
-{
-"sequence": 555,
-"venue": null,
-"medium": "TCM",
-"date": "2016-08-22",
-"title": "Haunted Gold",
-"year": 1932,
-"imdb_id": "tt0022981"
-},
-{
-"sequence": 558,
-"venue": null,
-"medium": "TCM",
-"date": "2016-09-04",
-"title": "Ride Him, Cowboy",
-"year": 1932,
-"imdb_id": "tt0023396"
-},
-{
-"sequence": 560,
-"venue": null,
-"medium": "Amazon",
-"date": "2016-09-17",
-"title": "Riders of Destiny",
-"year": 1933,
-"imdb_id": "tt0024500"
-},
-{
-"sequence": 568,
-"venue": null,
-"medium": "Amazon",
-"date": "2016-11-09",
-"title": "Sagebrush Trail",
-"year": 1933,
-"imdb_id": "tt0024516"
-},
-{
-"sequence": 578,
-"venue": null,
-"medium": "TCM",
-"date": "2017-01-10",
-"title": "The Big Stampede",
-"year": 1932,
-"imdb_id": "tt0022681"
-},
-{
-"sequence": 580,
-"venue": null,
-"medium": "TCM",
-"date": "2017-01-17",
-"title": "The Telegraph Trail",
-"year": 1933,
-"imdb_id": "tt0024647"
-},
-{
-"sequence": 598,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2017-06-18",
-"title": "Rio Bravo",
-"year": 1959,
-"imdb_id": "tt0053221"
-},
-{
-"sequence": 622,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2017-12-09",
-"title": "Rio Bravo",
-"year": 1959,
-"imdb_id": "tt0053221"
-},
-{
-"sequence": 672,
-"venue": null,
-"medium": "TCM",
-"date": "2018-05-02",
-"title": "Somewhere in Sonora",
-"year": 1933,
-"imdb_id": "tt0024592"
-},
-{
-"sequence": 674,
-"venue": null,
-"medium": "TCM HD",
-"date": "2018-05-03",
-"title": "Baby Face",
-"year": 1933,
-"imdb_id": "tt0023775"
-},
-{
-"sequence": 686,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2018-06-17",
-"title": "Rio Bravo",
-"year": 1959,
-"imdb_id": "tt0053221"
-},
-{
-"sequence": 757,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-16",
-"title": "Stagecoach",
-"year": 1939,
-"imdb_id": "tt0031971"
-},
-{
-"sequence": 863,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2020-08-29",
-"title": "The Big Trail",
-"year": 1930,
-"imdb_id": "tt0020691"
-},
-{
-"sequence": 991,
-"venue": null,
-"medium": "DVD",
-"date": "2021-01-20",
-"title": "Arizona",
-"year": 1931,
-"imdb_id": "tt0022134"
-},
-{
-"sequence": 1001,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-01-29",
-"title": "Rio Bravo",
-"year": 1959,
-"imdb_id": "tt0053221"
-},
-{
-"sequence": 1045,
-"venue": null,
-"medium": "DVD",
-"date": "2021-03-12",
-"title": "The Range Feud",
-"year": 1931,
-"imdb_id": "tt0022293"
-},
-{
-"sequence": 1051,
-"venue": null,
-"medium": "YouTube",
-"date": "2021-03-16",
-"title": "Maker of Men",
-"year": 1931,
-"imdb_id": "tt0022109"
-},
-{
-"sequence": 1143,
-"venue": null,
-"medium": "DVD",
-"date": "2021-08-11",
-"title": "Texas Cyclone",
-"year": 1932,
-"imdb_id": "tt0023567"
-},
-{
-"sequence": 1196,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2021-11-28",
-"title": "The Big Stampede",
-"year": 1932,
-"imdb_id": "tt0022681"
-},
-{
-"sequence": 1221,
-"venue": null,
-"medium": "DVD",
-"date": "2021-12-22",
-"title": "Two-Fisted Law",
-"year": 1932,
-"imdb_id": "tt0023631"
-},
-{
-"sequence": 1287,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-06-19",
-"title": "Ride Him, Cowboy",
-"year": 1932,
-"imdb_id": "tt0023396"
-},
-{
-"sequence": 1288,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-06-19",
-"title": "Haunted Gold",
-"year": 1932,
-"imdb_id": "tt0022981"
-},
-{
-"sequence": 1322,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-08-18",
-"title": "The Man from Monterey",
-"year": 1933,
-"imdb_id": "tt0024293"
-},
-{
-"sequence": 1355,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-18",
-"title": "Reunion in France",
-"year": 1942,
-"imdb_id": "tt0035250"
-}
+"viewing_sequence_ids": [
+52,
+60,
+68,
+76,
+91,
+92,
+93,
+94,
+95,
+96,
+97,
+99,
+100,
+101,
+102,
+103,
+104,
+105,
+106,
+107,
+116,
+143,
+266,
+293,
+500,
+555,
+558,
+560,
+568,
+578,
+580,
+598,
+622,
+672,
+674,
+686,
+757,
+863,
+991,
+1001,
+1045,
+1051,
+1143,
+1196,
+1221,
+1287,
+1288,
+1322,
+1355
 ]
 },
 {
 "imdb_id": "nm0000007",
 "full_name": "Humphrey Bogart",
 "viewing_count": 42,
-"viewings": [
-{
-"sequence": 29,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-25",
-"title": "Kid Galahad",
-"year": 1937,
-"imdb_id": "tt0029080"
-},
-{
-"sequence": 30,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-25",
-"title": "Crime School",
-"year": 1938,
-"imdb_id": "tt0030026"
-},
-{
-"sequence": 44,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-28",
-"title": "Passage to Marseille",
-"year": 1944,
-"imdb_id": "tt0037166"
-},
-{
-"sequence": 55,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-30",
-"title": "Conflict",
-"year": 1945,
-"imdb_id": "tt0037611"
-},
-{
-"sequence": 56,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-30",
-"title": "All Through the Night",
-"year": 1942,
-"imdb_id": "tt0034449"
-},
-{
-"sequence": 61,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-04",
-"title": "Key Largo",
-"year": 1948,
-"imdb_id": "tt0040506"
-},
-{
-"sequence": 78,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-17",
-"title": "The Caine Mutiny",
-"year": 1954,
-"imdb_id": "tt0046816"
-},
-{
-"sequence": 111,
-"venue": "Landmark E Street Cinema",
-"medium": null,
-"date": "2012-03-10",
-"title": "The Maltese Falcon",
-"year": 1941,
-"imdb_id": "tt0033870"
-},
-{
-"sequence": 118,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-18",
-"title": "Virginia City",
-"year": 1940,
-"imdb_id": "tt0033226"
-},
-{
-"sequence": 119,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-18",
-"title": "Racket Busters",
-"year": 1938,
-"imdb_id": "tt0030650"
-},
-{
-"sequence": 153,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-09",
-"title": "The Amazing Dr. Clitterhouse",
-"year": 1938,
-"imdb_id": "tt0029864"
-},
-{
-"sequence": 154,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-09",
-"title": "They Drive by Night",
-"year": 1940,
-"imdb_id": "tt0033149"
-},
-{
-"sequence": 168,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-23",
-"title": "Invisible Stripes",
-"year": 1939,
-"imdb_id": "tt0032636"
-},
-{
-"sequence": 171,
-"venue": "Landmark E Street Cinema",
-"medium": null,
-"date": "2012-04-27",
-"title": "The Big Sleep",
-"year": 1946,
-"imdb_id": "tt0038355"
-},
-{
-"sequence": 172,
-"venue": "Landmark E Street Cinema",
-"medium": null,
-"date": "2012-04-28",
-"title": "The Big Sleep",
-"year": 1946,
-"imdb_id": "tt0038355"
-},
-{
-"sequence": 186,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-06-13",
-"title": "The Wagons Roll at Night",
-"year": 1941,
-"imdb_id": "tt0034370"
-},
-{
-"sequence": 188,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-06-14",
-"title": "Black Legion",
-"year": 1937,
-"imdb_id": "tt0027367"
-},
-{
-"sequence": 189,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-06-14",
-"title": "Men Are Such Fools",
-"year": 1938,
-"imdb_id": "tt0030433"
-},
-{
-"sequence": 238,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-01",
-"title": "Dead Reckoning",
-"year": 1947,
-"imdb_id": "tt0039305"
-},
-{
-"sequence": 257,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-12-30",
-"title": "The Barefoot Contessa",
-"year": 1954,
-"imdb_id": "tt0046754"
-},
-{
-"sequence": 267,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-20",
-"title": "The Left Hand of God",
-"year": 1955,
-"imdb_id": "tt0048291"
-},
-{
-"sequence": 404,
-"venue": null,
-"medium": "TCM HD",
-"date": "2014-07-03",
-"title": "Crime School",
-"year": 1938,
-"imdb_id": "tt0030026"
-},
-{
-"sequence": 484,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-03-07",
-"title": "Three on a Match",
-"year": 1932,
-"imdb_id": "tt0023590"
-},
-{
-"sequence": 539,
-"venue": null,
-"medium": "TCM",
-"date": "2016-01-21",
-"title": "Chain Lightning",
-"year": 1950,
-"imdb_id": "tt0042324"
-},
-{
-"sequence": 540,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2016-02-28",
-"title": "Casablanca",
-"year": 1942,
-"imdb_id": "tt0034583"
-},
-{
-"sequence": 581,
-"venue": null,
-"medium": "TCM",
-"date": "2017-01-24",
-"title": "Men Are Such Fools",
-"year": 1938,
-"imdb_id": "tt0030433"
-},
-{
-"sequence": 654,
-"venue": null,
-"medium": "TCM",
-"date": "2018-03-25",
-"title": "Kid Galahad",
-"year": 1937,
-"imdb_id": "tt0029080"
-},
-{
-"sequence": 663,
-"venue": null,
-"medium": "TCM",
-"date": "2018-04-14",
-"title": "The Wagons Roll at Night",
-"year": 1941,
-"imdb_id": "tt0034370"
-},
-{
-"sequence": 666,
-"venue": null,
-"medium": "Amazon",
-"date": "2018-04-19",
-"title": "Beat the Devil",
-"year": 1953,
-"imdb_id": "tt0046414"
-},
-{
-"sequence": 673,
-"venue": null,
-"medium": "TCM HD",
-"date": "2018-05-02",
-"title": "China Clipper",
-"year": 1936,
-"imdb_id": "tt0027445"
-},
-{
-"sequence": 692,
-"venue": null,
-"medium": "TCM HD",
-"date": "2018-08-04",
-"title": "Dead Reckoning",
-"year": 1947,
-"imdb_id": "tt0039305"
-},
-{
-"sequence": 912,
-"venue": null,
-"medium": "iTunes",
-"date": "2020-11-06",
-"title": "Up the River",
-"year": 1930,
-"imdb_id": "tt0021508"
-},
-{
-"sequence": 924,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-11-25",
-"title": "Bad Sister",
-"year": 1931,
-"imdb_id": "tt0021636"
-},
-{
-"sequence": 928,
-"venue": null,
-"medium": "YouTube",
-"date": "2020-11-27",
-"title": "A Holy Terror",
-"year": 1931,
-"imdb_id": "tt0021966"
-},
-{
-"sequence": 1003,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2021-01-31",
-"title": "Isle of Fury",
-"year": 1936,
-"imdb_id": "tt0027805"
-},
-{
-"sequence": 1204,
-"venue": null,
-"medium": "iTunes",
-"date": "2021-12-10",
-"title": "Love Affair",
-"year": 1932,
-"imdb_id": "tt0023153"
-},
-{
-"sequence": 1324,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-08-20",
-"title": "Virginia City",
-"year": 1940,
-"imdb_id": "tt0033226"
-},
-{
-"sequence": 1341,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-07",
-"title": "Invisible Stripes",
-"year": 1939,
-"imdb_id": "tt0032636"
-},
-{
-"sequence": 1344,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-09",
-"title": "King of the Underworld",
-"year": 1939,
-"imdb_id": "tt0031536"
-},
-{
-"sequence": 1347,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-11",
-"title": "The Big Shot",
-"year": 1942,
-"imdb_id": "tt0034513"
-},
-{
-"sequence": 1349,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-13",
-"title": "High Sierra",
-"year": 1941,
-"imdb_id": "tt0033717"
-},
-{
-"sequence": 1350,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-14",
-"title": "Dead Reckoning",
-"year": 1947,
-"imdb_id": "tt0039305"
-}
+"viewing_sequence_ids": [
+29,
+30,
+44,
+55,
+56,
+61,
+78,
+111,
+118,
+119,
+153,
+154,
+168,
+171,
+172,
+186,
+188,
+189,
+238,
+257,
+267,
+404,
+484,
+539,
+540,
+581,
+654,
+663,
+666,
+673,
+692,
+912,
+924,
+928,
+1003,
+1204,
+1324,
+1341,
+1344,
+1347,
+1349,
+1350
 ]
 },
 {
 "imdb_id": "nm0000489",
 "full_name": "Christopher Lee",
 "viewing_count": 34,
-"viewings": [
-{
-"sequence": 20,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-15",
-"title": "The Gorgon",
-"year": 1964,
-"imdb_id": "tt0058155"
-},
-{
-"sequence": 21,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-01-15",
-"title": "The Crimson Cult",
-"year": 1968,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 50,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-29",
-"title": "She",
-"year": 1965,
-"imdb_id": "tt0059710"
-},
-{
-"sequence": 125,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-25",
-"title": "Horror Express",
-"year": 1972,
-"imdb_id": "tt0068713"
-},
-{
-"sequence": 126,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-25",
-"title": "Death Line",
-"year": 1972,
-"imdb_id": "tt0068458"
-},
-{
-"sequence": 180,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-06-07",
-"title": "Dark Shadows",
-"year": 2012,
-"imdb_id": "tt1077368"
-},
-{
-"sequence": 233,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-10-28",
-"title": "The Hound of the Baskervilles",
-"year": 1959,
-"imdb_id": "tt0052905"
-},
-{
-"sequence": 240,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-02",
-"title": "The Devil Rides Out",
-"year": 1968,
-"imdb_id": "tt0062885"
-},
-{
-"sequence": 242,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-03",
-"title": "Dracula: Prince of Darkness",
-"year": 1966,
-"imdb_id": "tt0059127"
-},
-{
-"sequence": 244,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-11-09",
-"title": "Dracula Has Risen from the Grave",
-"year": 1968,
-"imdb_id": "tt0062909"
-},
-{
-"sequence": 252,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-12-13",
-"title": "The Hobbit: An Unexpected Journey",
-"year": 2012,
-"imdb_id": "tt0903624"
-},
-{
-"sequence": 406,
-"venue": null,
-"medium": "TCM",
-"date": "2014-07-03",
-"title": "Horror Castle",
-"year": 1963,
-"imdb_id": "tt0057646"
-},
-{
-"sequence": 414,
-"venue": null,
-"medium": "DVD",
-"date": "2014-08-02",
-"title": "The Bloody Judge",
-"year": 1970,
-"imdb_id": "tt0064727"
-},
-{
-"sequence": 416,
-"venue": null,
-"medium": "DVD",
-"date": "2014-08-09",
-"title": "Psycho-Circus",
-"year": 1966,
-"imdb_id": "tt0060865"
-},
-{
-"sequence": 418,
-"venue": null,
-"medium": "DVD",
-"date": "2014-08-16",
-"title": "Horror of Dracula",
-"year": 1958,
-"imdb_id": "tt0051554"
-},
-{
-"sequence": 436,
-"venue": null,
-"medium": "DVD",
-"date": "2014-10-18",
-"title": "The Face of Fu Manchu",
-"year": 1965,
-"imdb_id": "tt0059162"
-},
-{
-"sequence": 437,
-"venue": null,
-"medium": "DVD",
-"date": "2014-10-18",
-"title": "The Brides of Fu Manchu",
-"year": 1966,
-"imdb_id": "tt0060188"
-},
-{
-"sequence": 456,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-12-20",
-"title": "Horror of Dracula",
-"year": 1958,
-"imdb_id": "tt0051554"
-},
-{
-"sequence": 466,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2015-01-08",
-"title": "The Hobbit: The Battle of the Five Armies",
-"year": 2014,
-"imdb_id": "tt2310332"
-},
-{
-"sequence": 471,
-"venue": null,
-"medium": "DVD",
-"date": "2015-01-17",
-"title": "The Devil Rides Out",
-"year": 1968,
-"imdb_id": "tt0062885"
-},
-{
-"sequence": 472,
-"venue": null,
-"medium": "DVD",
-"date": "2015-01-17",
-"title": "Rasputin: The Mad Monk",
-"year": 1966,
-"imdb_id": "tt0059635"
-},
-{
-"sequence": 475,
-"venue": null,
-"medium": "Netflix",
-"date": "2015-01-31",
-"title": "The Crimson Cult",
-"year": 1968,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 481,
-"venue": null,
-"medium": "DVD",
-"date": "2015-02-21",
-"title": "To the Devil a Daughter",
-"year": 1976,
-"imdb_id": "tt0075334"
-},
-{
-"sequence": 498,
-"venue": null,
-"medium": "DVD",
-"date": "2015-06-06",
-"title": "The City of the Dead",
-"year": 1960,
-"imdb_id": "tt0053719"
-},
-{
-"sequence": 514,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-11",
-"title": "I, Monster",
-"year": 1971,
-"imdb_id": "tt0068727"
-},
-{
-"sequence": 519,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-29",
-"title": "The Whip and the Body",
-"year": 1963,
-"imdb_id": "tt0057078"
-},
-{
-"sequence": 520,
-"venue": null,
-"medium": "Amazon",
-"date": "2015-09-05",
-"title": "The House That Dripped Blood",
-"year": 1971,
-"imdb_id": "tt0065854"
-},
-{
-"sequence": 525,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2015-10-13",
-"title": "The Creeping Flesh",
-"year": 1973,
-"imdb_id": "tt0068424"
-},
-{
-"sequence": 527,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-10-24",
-"title": "The Curse of Frankenstein",
-"year": 1957,
-"imdb_id": "tt0050280"
-},
-{
-"sequence": 721,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2018-12-25",
-"title": "Horror of Dracula",
-"year": 1958,
-"imdb_id": "tt0051554"
-},
-{
-"sequence": 872,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2020-09-19",
-"title": "The Curse of Frankenstein",
-"year": 1957,
-"imdb_id": "tt0050280"
-},
-{
-"sequence": 936,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2020-12-08",
-"title": "Horror of Dracula",
-"year": 1958,
-"imdb_id": "tt0051554"
-},
-{
-"sequence": 1227,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-01-10",
-"title": "Corridor of Mirrors",
-"year": 1948,
-"imdb_id": "tt0040246"
-},
-{
-"sequence": 1325,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-08-20",
-"title": "Hannie Caulder",
-"year": 1971,
-"imdb_id": "tt0068675"
-}
+"viewing_sequence_ids": [
+20,
+21,
+50,
+125,
+126,
+180,
+233,
+240,
+242,
+244,
+252,
+406,
+414,
+416,
+418,
+436,
+437,
+456,
+466,
+471,
+472,
+475,
+481,
+498,
+514,
+519,
+520,
+525,
+527,
+721,
+872,
+936,
+1227,
+1325
 ]
 },
 {
 "imdb_id": "nm0001635",
 "full_name": "William Powell",
 "viewing_count": 33,
-"viewings": [
-{
-"sequence": 11,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-13",
-"title": "Fashions of 1934",
-"year": 1934,
-"imdb_id": "tt0025101"
-},
-{
-"sequence": 25,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-21",
-"title": "High Pressure",
-"year": 1932,
-"imdb_id": "tt0023007"
-},
-{
-"sequence": 26,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-21",
-"title": "The Road to Singapore",
-"year": 1931,
-"imdb_id": "tt0022321"
-},
-{
-"sequence": 27,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-21",
-"title": "The Key",
-"year": 1934,
-"imdb_id": "tt0025346"
-},
-{
-"sequence": 34,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-26",
-"title": "The Girl Who Had Everything",
-"year": 1953,
-"imdb_id": "tt0045816"
-},
-{
-"sequence": 74,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-15",
-"title": "Life with Father",
-"year": 1947,
-"imdb_id": "tt0039566"
-},
-{
-"sequence": 144,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-06",
-"title": "Jewel Robbery",
-"year": 1932,
-"imdb_id": "tt0023074"
-},
-{
-"sequence": 145,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-07",
-"title": "The Ex-Mrs. Bradford",
-"year": 1936,
-"imdb_id": "tt0027593"
-},
-{
-"sequence": 196,
-"venue": "Landmark E Street Cinema",
-"medium": null,
-"date": "2012-07-06",
-"title": "The Thin Man",
-"year": 1934,
-"imdb_id": "tt0025878"
-},
-{
-"sequence": 263,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-19",
-"title": "I Love You Again",
-"year": 1940,
-"imdb_id": "tt0032617"
-},
-{
-"sequence": 431,
-"venue": null,
-"medium": "TCM",
-"date": "2014-10-04",
-"title": "For the Defense",
-"year": 1930,
-"imdb_id": "tt0020896"
-},
-{
-"sequence": 434,
-"venue": null,
-"medium": "TCM",
-"date": "2014-10-11",
-"title": "The Road to Singapore",
-"year": 1931,
-"imdb_id": "tt0022321"
-},
-{
-"sequence": 653,
-"venue": null,
-"medium": "TCM",
-"date": "2018-03-25",
-"title": "The Hoodlum Saint",
-"year": 1946,
-"imdb_id": "tt0038615"
-},
-{
-"sequence": 655,
-"venue": null,
-"medium": "TCM",
-"date": "2018-03-25",
-"title": "It's a Big Country: An American Anthology",
-"year": 1951,
-"imdb_id": "tt0043680"
-},
-{
-"sequence": 693,
-"venue": null,
-"medium": "TCM HD",
-"date": "2018-08-05",
-"title": "Lawyer Man",
-"year": 1932,
-"imdb_id": "tt0023125"
-},
-{
-"sequence": 695,
-"venue": null,
-"medium": "TCM",
-"date": "2018-08-05",
-"title": "Private Detective 62",
-"year": 1933,
-"imdb_id": "tt0024471"
-},
-{
-"sequence": 841,
-"venue": null,
-"medium": "YouTube",
-"date": "2020-07-17",
-"title": "The Canary Murder Case",
-"year": 1929,
-"imdb_id": "tt0019745"
-},
-{
-"sequence": 845,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-07-30",
-"title": "Charming Sinners",
-"year": 1929,
-"imdb_id": "tt0019758"
-},
-{
-"sequence": 846,
-"venue": null,
-"medium": "YouTube",
-"date": "2020-07-30",
-"title": "The Greene Murder Case",
-"year": 1929,
-"imdb_id": "tt0019949"
-},
-{
-"sequence": 849,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-08-02",
-"title": "Pointed Heels",
-"year": 1929,
-"imdb_id": "tt0020278"
-},
-{
-"sequence": 858,
-"venue": null,
-"medium": "archive.org",
-"date": "2020-08-22",
-"title": "Behind the Make-Up",
-"year": 1930,
-"imdb_id": "tt0020677"
-},
-{
-"sequence": 859,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-08-22",
-"title": "Interference",
-"year": 1928,
-"imdb_id": "tt0019035"
-},
-{
-"sequence": 860,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-08-26",
-"title": "The Benson Murder Case",
-"year": 1930,
-"imdb_id": "tt0020679"
-},
-{
-"sequence": 870,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-09-13",
-"title": "For the Defense",
-"year": 1930,
-"imdb_id": "tt0020896"
-},
-{
-"sequence": 877,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-09-30",
-"title": "Street of Chance",
-"year": 1930,
-"imdb_id": "tt0021420"
-},
-{
-"sequence": 885,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-10-10",
-"title": "Shadow of the Law",
-"year": 1930,
-"imdb_id": "tt0021359"
-},
-{
-"sequence": 925,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-11-25",
-"title": "Ladies' Man",
-"year": 1931,
-"imdb_id": "tt0022043"
-},
-{
-"sequence": 980,
-"venue": null,
-"medium": "DVD",
-"date": "2021-01-10",
-"title": "Man of the World",
-"year": 1931,
-"imdb_id": "tt0022119"
-},
-{
-"sequence": 1036,
-"venue": null,
-"medium": "DVD",
-"date": "2021-03-02",
-"title": "The Road to Singapore",
-"year": 1931,
-"imdb_id": "tt0022321"
-},
-{
-"sequence": 1100,
-"venue": null,
-"medium": "DVD",
-"date": "2021-05-12",
-"title": "High Pressure",
-"year": 1932,
-"imdb_id": "tt0023007"
-},
-{
-"sequence": 1289,
-"venue": null,
-"medium": "DVD",
-"date": "2022-06-19",
-"title": "Jewel Robbery",
-"year": 1932,
-"imdb_id": "tt0023074"
-},
-{
-"sequence": 1323,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-08-19",
-"title": "The Hoodlum Saint",
-"year": 1946,
-"imdb_id": "tt0038615"
-},
-{
-"sequence": 1354,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-17",
-"title": "The Great Ziegfeld",
-"year": 1936,
-"imdb_id": "tt0027698"
-}
+"viewing_sequence_ids": [
+11,
+25,
+26,
+27,
+34,
+74,
+144,
+145,
+196,
+263,
+431,
+434,
+653,
+655,
+693,
+695,
+841,
+845,
+846,
+849,
+858,
+859,
+860,
+870,
+877,
+885,
+925,
+980,
+1036,
+1100,
+1289,
+1323,
+1354
 ]
 },
 {
 "imdb_id": "nm0000472",
 "full_name": "Boris Karloff",
 "viewing_count": 28,
-"viewings": [
-{
-"sequence": 5,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-12",
-"title": "The Ghoul",
-"year": 1933,
-"imdb_id": "tt0024055"
-},
-{
-"sequence": 8,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-12",
-"title": "The Body Snatcher",
-"year": 1945,
-"imdb_id": "tt0037549"
-},
-{
-"sequence": 12,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-13",
-"title": "Isle of the Dead",
-"year": 1945,
-"imdb_id": "tt0037820"
-},
-{
-"sequence": 13,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-01-13",
-"title": "The Comedy of Terrors",
-"year": 1963,
-"imdb_id": "tt0056943"
-},
-{
-"sequence": 17,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-14",
-"title": "Bedlam",
-"year": 1946,
-"imdb_id": "tt0038343"
-},
-{
-"sequence": 21,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-01-15",
-"title": "The Crimson Cult",
-"year": 1968,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 35,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-26",
-"title": "The Black Cat",
-"year": 1934,
-"imdb_id": "tt0024894"
-},
-{
-"sequence": 67,
-"venue": null,
-"medium": "Netflix",
-"date": "2012-02-05",
-"title": "Die, Monster, Die!",
-"year": 1965,
-"imdb_id": "tt0059465"
-},
-{
-"sequence": 230,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-10-24",
-"title": "Frankenstein",
-"year": 1931,
-"imdb_id": "tt0021884"
-},
-{
-"sequence": 231,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-10-24",
-"title": "The Bride of Frankenstein",
-"year": 1935,
-"imdb_id": "tt0026138"
-},
-{
-"sequence": 286,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-03-01",
-"title": "The Boogie Man Will Get You",
-"year": 1942,
-"imdb_id": "tt0034540"
-},
-{
-"sequence": 288,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-03-05",
-"title": "The Terror",
-"year": 1963,
-"imdb_id": "tt0057569"
-},
-{
-"sequence": 433,
-"venue": null,
-"medium": "TCM",
-"date": "2014-10-11",
-"title": "British Intelligence",
-"year": 1940,
-"imdb_id": "tt0032283"
-},
-{
-"sequence": 475,
-"venue": null,
-"medium": "Netflix",
-"date": "2015-01-31",
-"title": "The Crimson Cult",
-"year": 1968,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 837,
-"venue": null,
-"medium": "YouTube",
-"date": "2020-07-09",
-"title": "Behind That Curtain",
-"year": 1929,
-"imdb_id": "tt0019684"
-},
-{
-"sequence": 889,
-"venue": null,
-"medium": "OK.ru",
-"date": "2020-10-11",
-"title": "Cracked Nuts",
-"year": 1931,
-"imdb_id": "tt0021768"
-},
-{
-"sequence": 895,
-"venue": null,
-"medium": "TCM",
-"date": "2020-10-22",
-"title": "The Sea Bat",
-"year": 1930,
-"imdb_id": "tt0021345"
-},
-{
-"sequence": 919,
-"venue": null,
-"medium": "DVD",
-"date": "2020-11-18",
-"title": "The Criminal Code",
-"year": 1930,
-"imdb_id": "tt0021770"
-},
-{
-"sequence": 984,
-"venue": null,
-"medium": "DVD",
-"date": "2021-01-14",
-"title": "The Utah Kid",
-"year": 1930,
-"imdb_id": "tt0021509"
-},
-{
-"sequence": 1022,
-"venue": null,
-"medium": "DVD",
-"date": "2021-02-18",
-"title": "The Public Defender",
-"year": 1931,
-"imdb_id": "tt0022285"
-},
-{
-"sequence": 1030,
-"venue": null,
-"medium": "iTunes",
-"date": "2021-02-25",
-"title": "Five Star Final",
-"year": 1931,
-"imdb_id": "tt0021873"
-},
-{
-"sequence": 1031,
-"venue": null,
-"medium": "DVD",
-"date": "2021-02-26",
-"title": "I Like Your Nerve",
-"year": 1931,
-"imdb_id": "tt0021986"
-},
-{
-"sequence": 1046,
-"venue": null,
-"medium": "DVD",
-"date": "2021-03-12",
-"title": "The Guilty Generation",
-"year": 1931,
-"imdb_id": "tt0021932"
-},
-{
-"sequence": 1087,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-04-20",
-"title": "Frankenstein",
-"year": 1931,
-"imdb_id": "tt0021884"
-},
-{
-"sequence": 1097,
-"venue": null,
-"medium": "DVD",
-"date": "2021-05-03",
-"title": "Tonight or Never",
-"year": 1931,
-"imdb_id": "tt0022489"
-},
-{
-"sequence": 1120,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2021-06-29",
-"title": "The Sea Bat",
-"year": 1930,
-"imdb_id": "tt0021345"
-},
-{
-"sequence": 1156,
-"venue": null,
-"medium": "DVD",
-"date": "2021-09-12",
-"title": "Behind the Mask",
-"year": 1932,
-"imdb_id": "tt0022663"
-},
-{
-"sequence": 1217,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-12-20",
-"title": "Scarface",
-"year": 1932,
-"imdb_id": "tt0023427"
-}
+"viewing_sequence_ids": [
+5,
+8,
+12,
+13,
+17,
+21,
+35,
+67,
+230,
+231,
+286,
+288,
+433,
+475,
+837,
+889,
+895,
+919,
+984,
+1022,
+1030,
+1031,
+1046,
+1087,
+1097,
+1120,
+1156,
+1217
 ]
 },
 {
 "imdb_id": "nm0000168",
 "full_name": "Samuel L. Jackson",
 "viewing_count": 28,
-"viewings": [
-{
-"sequence": 79,
-"venue": null,
-"medium": "Encore HD",
-"date": "2012-02-18",
-"title": "The Other Guys",
-"year": 2010,
-"imdb_id": "tt1386588"
-},
-{
-"sequence": 174,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-05-03",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 258,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2013-01-03",
-"title": "Django Unchained",
-"year": 2012,
-"imdb_id": "tt1853728"
-},
-{
-"sequence": 284,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 345,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-06",
-"title": "Hard Eight",
-"year": 1996,
-"imdb_id": "tt0119256"
-},
-{
-"sequence": 378,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-03-29",
-"title": "Kill Bill: Vol. 2",
-"year": 2004,
-"imdb_id": "tt0378194"
-},
-{
-"sequence": 379,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2014-04-10",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 465,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-01-04",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 477,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-02-12",
-"title": "Kingsman: The Secret Service",
-"year": 2014,
-"imdb_id": "tt2802144"
-},
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 537,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2015-12-29",
-"title": "The Hateful Eight",
-"year": 2015,
-"imdb_id": "tt3460252"
-},
-{
-"sequence": 605,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2017-08-17",
-"title": "Goodfellas",
-"year": 1990,
-"imdb_id": "tt0099685"
-},
-{
-"sequence": 723,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2018-12-31",
-"title": "Unbreakable",
-"year": 2000,
-"imdb_id": "tt0217869"
-},
-{
-"sequence": 741,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-03-16",
-"title": "Captain Marvel",
-"year": 2019,
-"imdb_id": "tt4154664"
-},
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 760,
-"venue": null,
-"medium": "iTunes",
-"date": "2019-06-23",
-"title": "The Hitman's Bodyguard",
-"year": 2017,
-"imdb_id": "tt1959563"
-},
-{
-"sequence": 827,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-02",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 829,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-16",
-"title": "Captain America: The First Avenger",
-"year": 2011,
-"imdb_id": "tt0458339"
-},
-{
-"sequence": 830,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-23",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 834,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-06-13",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 839,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 913,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-11-08",
-"title": "Captain Marvel",
-"year": 2019,
-"imdb_id": "tt4154664"
-},
-{
-"sequence": 918,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-11-14",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 921,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-11-21",
-"title": "Spider-Man: Far from Home",
-"year": 2019,
-"imdb_id": "tt6320628"
-},
-{
-"sequence": 966,
-"venue": null,
-"medium": "HBO Max",
-"date": "2020-12-31",
-"title": "Glass",
-"year": 2019,
-"imdb_id": "tt6823368"
-},
-{
-"sequence": 1127,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-07-08",
-"title": "Hard Eight",
-"year": 1996,
-"imdb_id": "tt0119256"
-}
+"viewing_sequence_ids": [
+79,
+174,
+258,
+284,
+345,
+378,
+379,
+465,
+477,
+492,
+537,
+605,
+723,
+741,
+750,
+751,
+756,
+760,
+827,
+829,
+830,
+834,
+839,
+913,
+918,
+921,
+966,
+1127
 ]
 },
 {
 "imdb_id": "nm1165110",
 "full_name": "Chris Hemsworth",
 "viewing_count": 28,
-"viewings": [
-{
-"sequence": 158,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-04-12",
-"title": "The Cabin in the Woods",
-"year": 2011,
-"imdb_id": "tt1259521"
-},
-{
-"sequence": 174,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-05-03",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 280,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-16",
-"title": "The Cabin in the Woods",
-"year": 2011,
-"imdb_id": "tt1259521"
-},
-{
-"sequence": 342,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2013-11-25",
-"title": "Thor: The Dark World",
-"year": 2013,
-"imdb_id": "tt1981115"
-},
-{
-"sequence": 462,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-12-31",
-"title": "Thor: The Dark World",
-"year": 2013,
-"imdb_id": "tt1981115"
-},
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 529,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-10-31",
-"title": "The Cabin in the Woods",
-"year": 2011,
-"imdb_id": "tt1259521"
-},
-{
-"sequence": 565,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2016-10-26",
-"title": "The Cabin in the Woods",
-"year": 2011,
-"imdb_id": "tt1259521"
-},
-{
-"sequence": 623,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2017-12-13",
-"title": "Thor: Ragnarok",
-"year": 2017,
-"imdb_id": "tt3501632"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 711,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-10-21",
-"title": "Bad Times at the El Royale",
-"year": 2018,
-"imdb_id": "tt6628394"
-},
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 815,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-02-08",
-"title": "The Cabin in the Woods",
-"year": 2011,
-"imdb_id": "tt1259521"
-},
-{
-"sequence": 824,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-03-28",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 828,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-09",
-"title": "Thor",
-"year": 2011,
-"imdb_id": "tt0800369"
-},
-{
-"sequence": 830,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-23",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 832,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-06-06",
-"title": "Thor: The Dark World",
-"year": 2013,
-"imdb_id": "tt1981115"
-},
-{
-"sequence": 839,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 875,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-09-26",
-"title": "Thor: Ragnarok",
-"year": 2017,
-"imdb_id": "tt3501632"
-},
-{
-"sequence": 893,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-10-17",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 918,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-11-14",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 956,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-12-22",
-"title": "The Cabin in the Woods",
-"year": 2011,
-"imdb_id": "tt1259521"
-},
-{
-"sequence": 1343,
-"venue": null,
-"medium": "Disney+",
-"date": "2022-09-08",
-"title": "Thor: Love and Thunder",
-"year": 2022,
-"imdb_id": "tt10648342"
-}
+"viewing_sequence_ids": [
+158,
+174,
+280,
+342,
+462,
+492,
+529,
+565,
+623,
+677,
+679,
+681,
+683,
+711,
+750,
+751,
+756,
+815,
+824,
+828,
+830,
+832,
+839,
+875,
+893,
+918,
+956,
+1343
 ]
 },
 {
 "imdb_id": "nm0000053",
 "full_name": "Robert Mitchum",
 "viewing_count": 27,
-"viewings": [
-{
-"sequence": 38,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-27",
-"title": "Bandido!",
-"year": 1956,
-"imdb_id": "tt0048983"
-},
-{
-"sequence": 39,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-01-27",
-"title": "Undercurrent",
-"year": 1946,
-"imdb_id": "tt0039066"
-},
-{
-"sequence": 89,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-02-25",
-"title": "The Sundowners",
-"year": 1960,
-"imdb_id": "tt0054353"
-},
-{
-"sequence": 117,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-17",
-"title": "Desire Me",
-"year": 1947,
-"imdb_id": "tt0039312"
-},
-{
-"sequence": 136,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-03-30",
-"title": "Cape Fear",
-"year": 1962,
-"imdb_id": "tt0055824"
-},
-{
-"sequence": 141,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-01",
-"title": "Going Home",
-"year": 1971,
-"imdb_id": "tt0067146"
-},
-{
-"sequence": 156,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-09",
-"title": "Crossfire",
-"year": 1947,
-"imdb_id": "tt0039286"
-},
-{
-"sequence": 159,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-13",
-"title": "River of No Return",
-"year": 1954,
-"imdb_id": "tt0047422"
-},
-{
-"sequence": 161,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-14",
-"title": "Rampage",
-"year": 1963,
-"imdb_id": "tt0057447"
-},
-{
-"sequence": 165,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-21",
-"title": "Home from the Hill",
-"year": 1960,
-"imdb_id": "tt0053917"
-},
-{
-"sequence": 170,
-"venue": null,
-"medium": "TCM HD",
-"date": "2012-04-25",
-"title": "The Night Fighters",
-"year": 1960,
-"imdb_id": "tt0054120"
-},
-{
-"sequence": 264,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-19",
-"title": "Second Chance",
-"year": 1953,
-"imdb_id": "tt0046288"
-},
-{
-"sequence": 265,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-19",
-"title": "Angel Face",
-"year": 1953,
-"imdb_id": "tt0044357"
-},
-{
-"sequence": 293,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-03-23",
-"title": "El Dorado",
-"year": 1966,
-"imdb_id": "tt0061619"
-},
-{
-"sequence": 463,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-03",
-"title": "She Couldn't Say No",
-"year": 1953,
-"imdb_id": "tt0047476"
-},
-{
-"sequence": 467,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-09",
-"title": "Rachel and the Stranger",
-"year": 1948,
-"imdb_id": "tt0040720"
-},
-{
-"sequence": 468,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-10",
-"title": "The Angry Hills",
-"year": 1959,
-"imdb_id": "tt0052563"
-},
-{
-"sequence": 473,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-31",
-"title": "The Big Steal",
-"year": 1949,
-"imdb_id": "tt0041178"
-},
-{
-"sequence": 476,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-02-07",
-"title": "Where Danger Lives",
-"year": 1950,
-"imdb_id": "tt0043131"
-},
-{
-"sequence": 499,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-06-06",
-"title": "Out of the Past",
-"year": 1947,
-"imdb_id": "tt0039689"
-},
-{
-"sequence": 656,
-"venue": null,
-"medium": "TCM",
-"date": "2018-03-27",
-"title": "The Locket",
-"year": 1946,
-"imdb_id": "tt0038700"
-},
-{
-"sequence": 658,
-"venue": null,
-"medium": "TCM HD",
-"date": "2018-04-01",
-"title": "His Kind of Woman",
-"year": 1951,
-"imdb_id": "tt0043643"
-},
-{
-"sequence": 931,
-"venue": null,
-"medium": "Amazon",
-"date": "2020-12-02",
-"title": "Hoppy Serves a Writ",
-"year": 1943,
-"imdb_id": "tt0036016"
-},
-{
-"sequence": 932,
-"venue": null,
-"medium": "Amazon",
-"date": "2020-12-02",
-"title": "Border Patrol",
-"year": 1943,
-"imdb_id": "tt0035692"
-},
-{
-"sequence": 938,
-"venue": null,
-"medium": "Amazon",
-"date": "2020-12-10",
-"title": "Colt Comrades",
-"year": 1943,
-"imdb_id": "tt0035744"
-},
-{
-"sequence": 1340,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-06",
-"title": "Rachel and the Stranger",
-"year": 1948,
-"imdb_id": "tt0040720"
-},
-{
-"sequence": 1351,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-15",
-"title": "Holiday Affair",
-"year": 1949,
-"imdb_id": "tt0041473"
-}
+"viewing_sequence_ids": [
+38,
+39,
+89,
+117,
+136,
+141,
+156,
+159,
+161,
+165,
+170,
+264,
+265,
+293,
+463,
+467,
+468,
+473,
+476,
+499,
+656,
+658,
+931,
+932,
+938,
+1340,
+1351
 ]
 },
 {
 "imdb_id": "nm0000375",
 "full_name": "Robert Downey Jr.",
 "viewing_count": 26,
-"viewings": [
-{
-"sequence": 22,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-01-19",
-"title": "Sherlock Holmes: A Game of Shadows",
-"year": 2011,
-"imdb_id": "tt1515091"
-},
-{
-"sequence": 174,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-05-03",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 283,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man",
-"year": 2008,
-"imdb_id": "tt0371746"
-},
-{
-"sequence": 284,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 299,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-05-02",
-"title": "Iron Man 3",
-"year": 2013,
-"imdb_id": "tt1300854"
-},
-{
-"sequence": 459,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2014-12-24",
-"title": "Iron Man 3",
-"year": 2013,
-"imdb_id": "tt1300854"
-},
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 547,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2016-05-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 569,
-"venue": null,
-"medium": "Amazon",
-"date": "2016-11-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 824,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-03-28",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 825,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-04-04",
-"title": "Iron Man",
-"year": 2008,
-"imdb_id": "tt0371746"
-},
-{
-"sequence": 827,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-02",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 830,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-23",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 831,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-31",
-"title": "Iron Man 3",
-"year": 2013,
-"imdb_id": "tt1300854"
-},
-{
-"sequence": 839,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 844,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-07-25",
-"title": "Captain America: Civil War",
-"year": 2016,
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 865,
-"venue": null,
-"medium": "iTunes",
-"date": "2020-09-05",
-"title": "Spider-Man: Homecoming",
-"year": 2017,
-"imdb_id": "tt2250912"
-},
-{
-"sequence": 893,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-10-17",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 918,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-11-14",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-}
+"viewing_sequence_ids": [
+22,
+174,
+283,
+284,
+299,
+459,
+492,
+547,
+569,
+677,
+679,
+681,
+683,
+750,
+751,
+756,
+824,
+825,
+827,
+830,
+831,
+839,
+844,
+865,
+893,
+918
 ]
 },
 {
 "imdb_id": "nm0424060",
 "full_name": "Scarlett Johansson",
 "viewing_count": 25,
-"viewings": [
-{
-"sequence": 174,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2012-05-03",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 284,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 379,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2014-04-10",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 383,
-"venue": null,
-"medium": "Netflix",
-"date": "2014-04-26",
-"title": "Don Jon",
-"year": 2013,
-"imdb_id": "tt2229499"
-},
-{
-"sequence": 465,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-01-04",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 547,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2016-05-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 569,
-"venue": null,
-"medium": "Amazon",
-"date": "2016-11-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 824,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-03-28",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 827,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-02",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 830,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-05-23",
-"title": "The Avengers",
-"year": 2012,
-"imdb_id": "tt0848228"
-},
-{
-"sequence": 834,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-06-13",
-"title": "Captain America: The Winter Soldier",
-"year": 2014,
-"imdb_id": "tt1843866"
-},
-{
-"sequence": 839,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-07-11",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 844,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-07-25",
-"title": "Captain America: Civil War",
-"year": 2016,
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 893,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-10-17",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 918,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2020-11-14",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 1237,
-"venue": null,
-"medium": "Disney+",
-"date": "2022-01-29",
-"title": "Black Widow",
-"year": 2021,
-"imdb_id": "tt3480822"
-},
-{
-"sequence": 1302,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-07-10",
-"title": "Under the Skin",
-"year": 2013,
-"imdb_id": "tt1441395"
-}
+"viewing_sequence_ids": [
+174,
+284,
+379,
+383,
+465,
+492,
+547,
+569,
+677,
+679,
+681,
+683,
+750,
+751,
+756,
+824,
+827,
+830,
+834,
+839,
+844,
+893,
+918,
+1237,
+1302
 ]
 }
 ]

@@ -5,7 +5,7 @@ const MostWatchedWritersJson = {
   interfaces: [SchemaNames.MOST_WATCHED_PEOPLE, "Node"],
   fields: {
     viewing_year: "String!",
-    most_watched: `[${SchemaNames.MOST_WATCHED_PERSON}!]!`,
+    most_watched: `[${SchemaNames.MOST_WATCHED_WRITER}!]!`,
   },
   extensions: {
     infer: false,

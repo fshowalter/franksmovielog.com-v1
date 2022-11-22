@@ -5,268 +5,92 @@
 "imdb_id": "nm0751577",
 "full_name": "Anthony Russo",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-}
+"viewing_sequence_ids": [
+750,
+751,
+756
 ]
 },
 {
 "imdb_id": "nm0751648",
 "full_name": "Joe Russo",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-}
+"viewing_sequence_ids": [
+750,
+751,
+756
 ]
 },
 {
 "imdb_id": "nm0742819",
 "full_name": "Rick Rosenthal",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 729,
-"venue": null,
-"medium": "Amazon",
-"date": "2019-01-31",
-"title": "Halloween II",
-"year": 1981,
-"imdb_id": "tt0082495"
-},
-{
-"sequence": 737,
-"venue": null,
-"medium": "Hulu",
-"date": "2019-02-15",
-"title": "Halloween: Resurrection",
-"year": 2002,
-"imdb_id": "tt0220506"
-}
+"viewing_sequence_ids": [
+729,
+737
 ]
 },
 {
 "imdb_id": "nm0908890",
 "full_name": "Tommy Lee Wallace",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 730,
-"venue": null,
-"medium": "Vudu",
-"date": "2019-02-01",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-},
-{
-"sequence": 790,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-10-22",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-}
+"viewing_sequence_ids": [
+730,
+790
 ]
 },
 {
 "imdb_id": "nm0591171",
 "full_name": "Steve Miner",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 735,
-"venue": null,
-"medium": "Vudu",
-"date": "2019-02-09",
-"title": "Halloween H20: 20 Years Later",
-"year": 1998,
-"imdb_id": "tt0120694"
-},
-{
-"sequence": 782,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-09-13",
-"title": "Friday the 13th Part 2",
-"year": 1981,
-"imdb_id": "tt0082418"
-}
+"viewing_sequence_ids": [
+735,
+782
 ]
 },
 {
 "imdb_id": "nm0410494",
 "full_name": "James Isaac",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 739,
-"venue": null,
-"medium": "Netflix",
-"date": "2019-02-16",
-"title": "Jason X",
-"year": 2001,
-"imdb_id": "tt0211443"
-},
-{
-"sequence": 801,
-"venue": null,
-"medium": "Vudu",
-"date": "2019-12-13",
-"title": "Jason X",
-"year": 2001,
-"imdb_id": "tt0211443"
-}
+"viewing_sequence_ids": [
+739,
+801
 ]
 },
 {
 "imdb_id": "nm0716347",
 "full_name": "Nicolas Winding Refn",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 755,
-"venue": null,
-"medium": "Shudder",
-"date": "2019-05-25",
-"title": "Pusher",
-"year": 1996,
-"imdb_id": "tt0117407"
-},
-{
-"sequence": 767,
-"venue": "Prince Charles Cinema",
-"medium": null,
-"date": "2019-08-05",
-"title": "Drive",
-"year": 2011,
-"imdb_id": "tt0780504"
-}
+"viewing_sequence_ids": [
+755,
+767
 ]
 },
 {
 "imdb_id": "nm0639321",
 "full_name": "Dan O'Bannon",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 763,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2019-07-20",
-"title": "The Resurrected",
-"year": 1991,
-"imdb_id": "tt0105242"
-},
-{
-"sequence": 764,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-07-23",
-"title": "The Return of the Living Dead",
-"year": 1985,
-"imdb_id": "tt0089907"
-}
+"viewing_sequence_ids": [
+763,
+764
 ]
 },
 {
 "imdb_id": "nm0000233",
 "full_name": "Quentin Tarantino",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 773,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2019-08-22",
-"title": "Once Upon a Time... In Hollywood",
-"year": 2019,
-"imdb_id": "tt7131622"
-},
-{
-"sequence": 780,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-09-09",
-"title": "Once Upon a Time... In Hollywood",
-"year": 2019,
-"imdb_id": "tt7131622"
-}
+"viewing_sequence_ids": [
+773,
+780
 ]
 },
 {
 "imdb_id": "nm0001361",
 "full_name": "Tobe Hooper",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 776,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-08-27",
-"title": "The Texas Chain Saw Massacre",
-"year": 1974,
-"imdb_id": "tt0072271"
-},
-{
-"sequence": 777,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-08-27",
-"title": "The Texas Chainsaw Massacre 2",
-"year": 1986,
-"imdb_id": "tt0092076"
-}
+"viewing_sequence_ids": [
+776,
+777
 ]
 }
 ]

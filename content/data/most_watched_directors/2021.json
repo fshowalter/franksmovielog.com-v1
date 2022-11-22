@@ -5,610 +5,130 @@
 "imdb_id": "nm0000005",
 "full_name": "Ingmar Bergman",
 "viewing_count": 18,
-"viewings": [
-{
-"sequence": 976,
-"venue": null,
-"medium": "DVD",
-"date": "2021-01-08",
-"title": "Music in Darkness",
-"year": 1948,
-"imdb_id": "tt0040622"
-},
-{
-"sequence": 981,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-01-11",
-"title": "Port of Call",
-"year": 1948,
-"imdb_id": "tt0040418"
-},
-{
-"sequence": 1004,
-"venue": null,
-"medium": "DVD",
-"date": "2021-02-01",
-"title": "Prison",
-"year": 1949,
-"imdb_id": "tt0041399"
-},
-{
-"sequence": 1021,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-02-17",
-"title": "Thirst",
-"year": 1949,
-"imdb_id": "tt0041998"
-},
-{
-"sequence": 1035,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-03-01",
-"title": "To Joy",
-"year": 1950,
-"imdb_id": "tt0043048"
-},
-{
-"sequence": 1050,
-"venue": null,
-"medium": "YouTube",
-"date": "2021-03-15",
-"title": "This Can't Happen Here",
-"year": 1950,
-"imdb_id": "tt0043019"
-},
-{
-"sequence": 1058,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-03-24",
-"title": "Summer Interlude",
-"year": 1951,
-"imdb_id": "tt0044060"
-},
-{
-"sequence": 1069,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-04-01",
-"title": "Kvinnors v\u00e4ntan",
-"year": 1952,
-"imdb_id": "tt0044811"
-},
-{
-"sequence": 1079,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-04-12",
-"title": "Summer with Monika",
-"year": 1953,
-"imdb_id": "tt0046345"
-},
-{
-"sequence": 1089,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-04-22",
-"title": "Sawdust and Tinsel",
-"year": 1953,
-"imdb_id": "tt0045848"
-},
-{
-"sequence": 1094,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-04-28",
-"title": "A Lesson in Love",
-"year": 1954,
-"imdb_id": "tt0047167"
-},
-{
-"sequence": 1098,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-05-04",
-"title": "Dreams",
-"year": 1955,
-"imdb_id": "tt0048272"
-},
-{
-"sequence": 1121,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-06-30",
-"title": "Smiles of a Summer Night",
-"year": 1955,
-"imdb_id": "tt0048641"
-},
-{
-"sequence": 1142,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-08-09",
-"title": "The Seventh Seal",
-"year": 1957,
-"imdb_id": "tt0050976"
-},
-{
-"sequence": 1154,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-09-10",
-"title": "Wild Strawberries",
-"year": 1957,
-"imdb_id": "tt0050986"
-},
-{
-"sequence": 1161,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-09-19",
-"title": "Brink of Life",
-"year": 1958,
-"imdb_id": "tt0052017"
-},
-{
-"sequence": 1174,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-10-03",
-"title": "The Magician",
-"year": 1958,
-"imdb_id": "tt0051365"
-},
-{
-"sequence": 1180,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-10-10",
-"title": "The Virgin Spring",
-"year": 1960,
-"imdb_id": "tt0053976"
-}
+"viewing_sequence_ids": [
+976,
+981,
+1004,
+1021,
+1035,
+1050,
+1058,
+1069,
+1079,
+1089,
+1094,
+1098,
+1121,
+1142,
+1154,
+1161,
+1174,
+1180
 ]
 },
 {
 "imdb_id": "nm0000361",
 "full_name": "Brian De Palma",
 "viewing_count": 13,
-"viewings": [
-{
-"sequence": 969,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-01-01",
-"title": "Murder \u00e0 la Mod",
-"year": 1968,
-"imdb_id": "tt0163114"
-},
-{
-"sequence": 1006,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-02-03",
-"title": "Greetings",
-"year": 1968,
-"imdb_id": "tt0063036"
-},
-{
-"sequence": 1038,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-03-04",
-"title": "The Wedding Party",
-"year": 1969,
-"imdb_id": "tt0065198"
-},
-{
-"sequence": 1056,
-"venue": null,
-"medium": "DVD",
-"date": "2021-03-21",
-"title": "Dionysus in '69",
-"year": 1970,
-"imdb_id": "tt0065641"
-},
-{
-"sequence": 1068,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-03-31",
-"title": "Hi, Mom!",
-"year": 1970,
-"imdb_id": "tt0065836"
-},
-{
-"sequence": 1082,
-"venue": null,
-"medium": "DVD",
-"date": "2021-04-15",
-"title": "Get to Know Your Rabbit",
-"year": 1972,
-"imdb_id": "tt0068637"
-},
-{
-"sequence": 1095,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-04-29",
-"title": "Sisters",
-"year": 1972,
-"imdb_id": "tt0070698"
-},
-{
-"sequence": 1122,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-07-01",
-"title": "Phantom of the Paradise",
-"year": 1974,
-"imdb_id": "tt0071994"
-},
-{
-"sequence": 1138,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-08-02",
-"title": "Obsession",
-"year": 1976,
-"imdb_id": "tt0074991"
-},
-{
-"sequence": 1157,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-09-15",
-"title": "Carrie",
-"year": 1976,
-"imdb_id": "tt0074285"
-},
-{
-"sequence": 1172,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-10-01",
-"title": "The Fury",
-"year": 1978,
-"imdb_id": "tt0077588"
-},
-{
-"sequence": 1199,
-"venue": null,
-"medium": "DVD",
-"date": "2021-12-01",
-"title": "Home Movies",
-"year": 1979,
-"imdb_id": "tt0079302"
-},
-{
-"sequence": 1213,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-12-17",
-"title": "Dressed to Kill",
-"year": 1980,
-"imdb_id": "tt0080661"
-}
+"viewing_sequence_ids": [
+969,
+1006,
+1038,
+1056,
+1068,
+1082,
+1095,
+1122,
+1138,
+1157,
+1172,
+1199,
+1213
 ]
 },
 {
 "imdb_id": "nm0359734",
 "full_name": "Michael Haneke",
 "viewing_count": 5,
-"viewings": [
-{
-"sequence": 998,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-01-26",
-"title": "The Seventh Continent",
-"year": 1989,
-"imdb_id": "tt0098327"
-},
-{
-"sequence": 1053,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-03-18",
-"title": "Benny's Video",
-"year": 1992,
-"imdb_id": "tt0103793"
-},
-{
-"sequence": 1067,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-03-29",
-"title": "71 Fragments of a Chronology of Chance",
-"year": 1994,
-"imdb_id": "tt0109020"
-},
-{
-"sequence": 1117,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-06-24",
-"title": "Funny Games",
-"year": 1997,
-"imdb_id": "tt0119167"
-},
-{
-"sequence": 1132,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-07-17",
-"title": "Code Unknown",
-"year": 2000,
-"imdb_id": "tt0216625"
-}
+"viewing_sequence_ids": [
+998,
+1053,
+1067,
+1117,
+1132
 ]
 },
 {
 "imdb_id": "nm0001741",
 "full_name": "Bryan Singer",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 978,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-01-09",
-"title": "X-Men",
-"year": 2000,
-"imdb_id": "tt0120903"
-},
-{
-"sequence": 986,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-01-16",
-"title": "X2: X-Men United",
-"year": 2003,
-"imdb_id": "tt0290334"
-},
-{
-"sequence": 1024,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-02-20",
-"title": "X-Men: Days of Future Past",
-"year": 2014,
-"imdb_id": "tt1877832"
-},
-{
-"sequence": 1040,
-"venue": null,
-"medium": "Disney+",
-"date": "2021-03-06",
-"title": "X-Men: Apocalypse",
-"year": 2016,
-"imdb_id": "tt3385516"
-}
+"viewing_sequence_ids": [
+978,
+986,
+1024,
+1040
 ]
 },
 {
 "imdb_id": "nm0000783",
 "full_name": "Dario Argento",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 994,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-01-22",
-"title": "The Bird with the Crystal Plumage",
-"year": 1970,
-"imdb_id": "tt0065143"
-},
-{
-"sequence": 1009,
-"venue": null,
-"medium": "iTunes",
-"date": "2021-02-05",
-"title": "The Cat o' Nine Tails",
-"year": 1971,
-"imdb_id": "tt0065761"
-},
-{
-"sequence": 1123,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-07-02",
-"title": "Four Flies on Grey Velvet",
-"year": 1971,
-"imdb_id": "tt0066735"
-},
-{
-"sequence": 1208,
-"venue": null,
-"medium": "DVD",
-"date": "2021-12-14",
-"title": "The Five Days",
-"year": 1973,
-"imdb_id": "tt0069884"
-}
+"viewing_sequence_ids": [
+994,
+1009,
+1123,
+1208
 ]
 },
 {
 "imdb_id": "nm0503777",
 "full_name": "Mervyn LeRoy",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 1030,
-"venue": null,
-"medium": "iTunes",
-"date": "2021-02-25",
-"title": "Five Star Final",
-"year": 1931,
-"imdb_id": "tt0021873"
-},
-{
-"sequence": 1034,
-"venue": null,
-"medium": "DVD",
-"date": "2021-02-28",
-"title": "Broadminded",
-"year": 1931,
-"imdb_id": "tt0021697"
-},
-{
-"sequence": 1097,
-"venue": null,
-"medium": "DVD",
-"date": "2021-05-03",
-"title": "Tonight or Never",
-"year": 1931,
-"imdb_id": "tt0022489"
-},
-{
-"sequence": 1100,
-"venue": null,
-"medium": "DVD",
-"date": "2021-05-12",
-"title": "High Pressure",
-"year": 1932,
-"imdb_id": "tt0023007"
-}
+"viewing_sequence_ids": [
+1030,
+1034,
+1097,
+1100
 ]
 },
 {
 "imdb_id": "nm0115218",
 "full_name": "Tod Browning",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 967,
-"venue": null,
-"medium": "VHS-rip",
-"date": "2021-01-01",
-"title": "Outside the Law",
-"year": 1930,
-"imdb_id": "tt0021224"
-},
-{
-"sequence": 988,
-"venue": null,
-"medium": "OK.ru",
-"date": "2021-01-17",
-"title": "Iron Man",
-"year": 1931,
-"imdb_id": "tt0022002"
-},
-{
-"sequence": 1136,
-"venue": null,
-"medium": "Vudu",
-"date": "2021-07-31",
-"title": "Freaks",
-"year": 1932,
-"imdb_id": "tt0022913"
-}
+"viewing_sequence_ids": [
+967,
+988,
+1136
 ]
 },
 {
 "imdb_id": "nm0000343",
 "full_name": "David Cronenberg",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 972,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2021-01-03",
-"title": "Crimes of the Future",
-"year": 1970,
-"imdb_id": "tt0065591"
-},
-{
-"sequence": 1000,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-01-28",
-"title": "Shivers",
-"year": 1975,
-"imdb_id": "tt0073705"
-},
-{
-"sequence": 1007,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-02-04",
-"title": "Rabid",
-"year": 1977,
-"imdb_id": "tt0076590"
-}
+"viewing_sequence_ids": [
+972,
+1000,
+1007
 ]
 },
 {
 "imdb_id": "nm0337586",
 "full_name": "Alfred E. Green",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 999,
-"venue": null,
-"medium": "DVD",
-"date": "2021-01-27",
-"title": "Smart Money",
-"year": 1931,
-"imdb_id": "tt0022403"
-},
-{
-"sequence": 1036,
-"venue": null,
-"medium": "DVD",
-"date": "2021-03-02",
-"title": "The Road to Singapore",
-"year": 1931,
-"imdb_id": "tt0022321"
-},
-{
-"sequence": 1220,
-"venue": null,
-"medium": "DVD",
-"date": "2021-12-22",
-"title": "The Rich Are Always with Us",
-"year": 1932,
-"imdb_id": "tt0023394"
-}
+"viewing_sequence_ids": [
+999,
+1036,
+1220
 ]
 },
 {
 "imdb_id": "nm0001328",
 "full_name": "Howard Hawks",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 1001,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-01-29",
-"title": "Rio Bravo",
-"year": 1959,
-"imdb_id": "tt0053221"
-},
-{
-"sequence": 1217,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2021-12-20",
-"title": "Scarface",
-"year": 1932,
-"imdb_id": "tt0023427"
-},
-{
-"sequence": 1219,
-"venue": null,
-"medium": "DVD",
-"date": "2021-12-22",
-"title": "The Crowd Roars",
-"year": 1932,
-"imdb_id": "tt0022792"
-}
+"viewing_sequence_ids": [
+1001,
+1217,
+1219
 ]
 }
 ]

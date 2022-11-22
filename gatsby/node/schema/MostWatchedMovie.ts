@@ -6,8 +6,10 @@ import type {
   GatsbyResolveInfo,
 } from "./type-definitions";
 import findDefaultPosterNode from "./utils/findDefaultPosterNode";
-import findReviewedMovieNode from "./utils/findReviewedMovieNode";
 import resolveFieldForNode from "./utils/resolveFieldForNode";
+import reviewedMovieResolver, {
+  findReviewedMovieNode,
+} from "./utils/reviewedMovieResolver";
 
 export interface MostWatchedMovieNode extends GatsbyNode {
   imdb_id: string;
@@ -20,8 +22,7 @@ const MostWatchedMovie = {
     imdb_id: "String!",
     title: "String!",
     year: "Int!",
-    viewings: `[${SchemaNames.MOST_WATCHED_MOVIE_VIEWING}!]!`,
-    review_slug: "String",
+    reviewedMovie: reviewedMovieResolver,
     poster: {
       type: "File",
       resolve: async (

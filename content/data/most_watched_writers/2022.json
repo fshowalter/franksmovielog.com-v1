@@ -5,331 +5,99 @@
 "imdb_id": "nm0000127",
 "full_name": "Wes Craven",
 "viewing_count": 5,
-"viewings": [
-{
-"sequence": 1228,
-"venue": null,
-"medium": "4k UHD Blu-ray",
-"date": "2022-01-12",
-"title": "The Hills Have Eyes",
-"year": 1977,
-"imdb_id": "tt0077681"
-},
-{
-"sequence": 1230,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-01-14",
-"title": "Deadly Blessing",
-"year": 1981,
-"imdb_id": "tt0082245"
-},
-{
-"sequence": 1235,
-"venue": null,
-"medium": "Amazon",
-"date": "2022-01-26",
-"title": "Swamp Thing",
-"year": 1982,
-"imdb_id": "tt0084745"
-},
-{
-"sequence": 1241,
-"venue": null,
-"medium": "Arrow Player",
-"date": "2022-02-02",
-"title": "The Hills Have Eyes Part II",
-"year": 1984,
-"imdb_id": "tt0089274"
-},
-{
-"sequence": 1247,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-02-09",
-"title": "A Nightmare on Elm Street",
-"year": 1984,
-"imdb_id": "tt0087800"
-}
+"viewing_sequence_ids": [
+1228,
+1230,
+1235,
+1241,
+1247
 ]
 },
 {
 "imdb_id": "nm0957772",
 "full_name": "Rob Zombie",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 1231,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-01-17",
-"title": "3 from Hell",
-"year": 2019,
-"imdb_id": "tt8134742"
-},
-{
-"sequence": 1267,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-03-31",
-"title": "Halloween",
-"year": 2007,
-"imdb_id": "tt0373883"
-},
-{
-"sequence": 1268,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-03-31",
-"title": "Halloween II",
-"year": 2009,
-"imdb_id": "tt1311067"
-}
+"viewing_sequence_ids": [
+1231,
+1267,
+1268
 ]
 },
 {
 "imdb_id": "nm0629580",
 "full_name": "Dudley Nichols",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 1292,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"imdb_id": "tt0024453"
-},
-{
-"sequence": 1293,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"imdb_id": "tt0027042"
-},
-{
-"sequence": 1294,
-"venue": null,
-"medium": "Criterion Channel",
-"date": "2022-06-27",
-"title": "The Plough and the Stars",
-"year": 1936,
-"imdb_id": "tt0028112"
-}
+"viewing_sequence_ids": [
+1292,
+1293,
+1294
 ]
 },
 {
 "imdb_id": "nm1191481",
 "full_name": "Leigh Whannell",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 1301,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-07-08",
-"title": "Saw",
-"year": 2004,
-"imdb_id": "tt0387564"
-},
-{
-"sequence": 1305,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-07-22",
-"title": "Saw II",
-"year": 2005,
-"imdb_id": "tt0432348"
-},
-{
-"sequence": 1307,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"imdb_id": "tt0489270"
-}
+"viewing_sequence_ids": [
+1301,
+1305,
+1307
 ]
 },
 {
 "imdb_id": "nm1729303",
 "full_name": "Marcus Dunstan",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 1315,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"imdb_id": "tt0890870"
-},
-{
-"sequence": 1319,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"imdb_id": "tt1132626"
-},
-{
-"sequence": 1346,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-09-10",
-"title": "Saw VI",
-"year": 2009,
-"imdb_id": "tt1233227"
-}
+"viewing_sequence_ids": [
+1315,
+1319,
+1346
 ]
 },
 {
 "imdb_id": "nm1733317",
 "full_name": "Patrick Melton",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 1315,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"imdb_id": "tt0890870"
-},
-{
-"sequence": 1319,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-08-12",
-"title": "Saw V",
-"year": 2008,
-"imdb_id": "tt1132626"
-},
-{
-"sequence": 1346,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-09-10",
-"title": "Saw VI",
-"year": 2009,
-"imdb_id": "tt1233227"
-}
+"viewing_sequence_ids": [
+1315,
+1319,
+1346
 ]
 },
 {
 "imdb_id": "nm0122446",
 "full_name": "W.R. Burnett",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 1327,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-08-22",
-"title": "Dangerous Mission",
-"year": 1954,
-"imdb_id": "tt0046891"
-},
-{
-"sequence": 1344,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-09",
-"title": "King of the Underworld",
-"year": 1939,
-"imdb_id": "tt0031536"
-},
-{
-"sequence": 1349,
-"venue": null,
-"medium": "Watch TCM",
-"date": "2022-09-13",
-"title": "High Sierra",
-"year": 1941,
-"imdb_id": "tt0033717"
-}
+"viewing_sequence_ids": [
+1327,
+1344,
+1349
 ]
 },
 {
 "imdb_id": "nm4469445",
 "full_name": "Julia Ducournau",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 1226,
-"venue": null,
-"medium": "Netflix",
-"date": "2022-01-09",
-"title": "Raw",
-"year": 2016,
-"imdb_id": "tt4954522"
-},
-{
-"sequence": 1232,
-"venue": null,
-"medium": "iTunes",
-"date": "2022-01-20",
-"title": "Titane",
-"year": 2021,
-"imdb_id": "tt10944760"
-}
+"viewing_sequence_ids": [
+1226,
+1232
 ]
 },
 {
 "imdb_id": "nm0252155",
 "full_name": "Philip Eisner",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 1236,
-"venue": null,
-"medium": "HBO Max",
-"date": "2022-01-28",
-"title": "Event Horizon",
-"year": 1997,
-"imdb_id": "tt0119081"
-},
-{
-"sequence": 1277,
-"venue": "Prince Charles Cinema",
-"medium": "35mm",
-"date": "2022-05-29",
-"title": "Event Horizon",
-"year": 1997,
-"imdb_id": "tt0119081"
-}
+"viewing_sequence_ids": [
+1236,
+1277
 ]
 },
 {
 "imdb_id": "nm0000361",
 "full_name": "Brian De Palma",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 1239,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-01-31",
-"title": "Blow Out",
-"year": 1981,
-"imdb_id": "tt0082085"
-},
-{
-"sequence": 1269,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2022-04-04",
-"title": "Body Double",
-"year": 1984,
-"imdb_id": "tt0086984"
-}
+"viewing_sequence_ids": [
+1239,
+1269
 ]
 }
 ]

@@ -33,7 +33,7 @@ export default function Callouts({
       {viewingCallouts && (
         <>
           <Callout label="Viewings" stat={viewingCallouts.viewingCount} />
-          <Callout label="Movies" stat={viewingCallouts.movieCount} />)
+          <Callout label="Movies" stat={viewingCallouts.movieCount} />
         </>
       )}
       {viewingCallouts &&

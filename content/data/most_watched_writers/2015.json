@@ -5,268 +5,92 @@
 "imdb_id": "nm0522454",
 "full_name": "H.P. Lovecraft",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 475,
-"venue": null,
-"medium": "Netflix",
-"date": "2015-01-31",
-"title": "The Crimson Cult",
-"year": 1968,
-"imdb_id": "tt0062833"
-},
-{
-"sequence": 503,
-"venue": "Alamo Drafthouse Cinema - Winchester",
-"medium": null,
-"date": "2015-06-23",
-"title": "The Beyond",
-"year": 1981,
-"imdb_id": "tt0082307"
-},
-{
-"sequence": 532,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2015-11-05",
-"title": "The Beyond",
-"year": 1981,
-"imdb_id": "tt0082307"
-}
+"viewing_sequence_ids": [
+475,
+503,
+532
 ]
 },
 {
 "imdb_id": "nm0332417",
 "full_name": "Dardano Sacchetti",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 503,
-"venue": "Alamo Drafthouse Cinema - Winchester",
-"medium": null,
-"date": "2015-06-23",
-"title": "The Beyond",
-"year": 1981,
-"imdb_id": "tt0082307"
-},
-{
-"sequence": 531,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-10-31",
-"title": "Demons",
-"year": 1985,
-"imdb_id": "tt0089013"
-},
-{
-"sequence": 532,
-"venue": "AFI Silver",
-"medium": null,
-"date": "2015-11-05",
-"title": "The Beyond",
-"year": 1981,
-"imdb_id": "tt0082307"
-}
+"viewing_sequence_ids": [
+503,
+531,
+532
 ]
 },
 {
 "imdb_id": "nm0923676",
 "full_name": "Dennis Wheatley",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 471,
-"venue": null,
-"medium": "DVD",
-"date": "2015-01-17",
-"title": "The Devil Rides Out",
-"year": 1968,
-"imdb_id": "tt0062885"
-},
-{
-"sequence": 481,
-"venue": null,
-"medium": "DVD",
-"date": "2015-02-21",
-"title": "To the Devil a Daughter",
-"year": 1976,
-"imdb_id": "tt0075334"
-}
+"viewing_sequence_ids": [
+471,
+481
 ]
 },
 {
 "imdb_id": "nm0537784",
 "full_name": "Daniel Mainwaring",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 473,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-01-31",
-"title": "The Big Steal",
-"year": 1949,
-"imdb_id": "tt0041178"
-},
-{
-"sequence": 499,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-06-06",
-"title": "Out of the Past",
-"year": 1947,
-"imdb_id": "tt0039689"
-}
+"viewing_sequence_ids": [
+473,
+499
 ]
 },
 {
 "imdb_id": "nm0071657",
 "full_name": "Charles Bennett",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 476,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-02-07",
-"title": "Where Danger Lives",
-"year": 1950,
-"imdb_id": "tt0043131"
-},
-{
-"sequence": 483,
-"venue": null,
-"medium": "TCM HD",
-"date": "2015-02-28",
-"title": "Dangerous Mission",
-"year": 1954,
-"imdb_id": "tt0046891"
-}
+"viewing_sequence_ids": [
+476,
+483
 ]
 },
 {
 "imdb_id": "nm0001410",
 "full_name": "Lawrence Kasdan",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 479,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-02-14",
-"title": "Indiana Jones and the Raiders of the Lost Ark",
-"year": 1981,
-"imdb_id": "tt0082971"
-},
-{
-"sequence": 536,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-12-21",
-"title": "Star Wars: Episode VII - The Force Awakens",
-"year": 2015,
-"imdb_id": "tt2488496"
-}
+"viewing_sequence_ids": [
+479,
+536
 ]
 },
 {
 "imdb_id": "nm0923736",
 "full_name": "Joss Whedon",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 492,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-04-30",
-"title": "Avengers: Age of Ultron",
-"year": 2015,
-"imdb_id": "tt2395427"
-},
-{
-"sequence": 529,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-10-31",
-"title": "The Cabin in the Woods",
-"year": 2011,
-"imdb_id": "tt1259521"
-}
+"viewing_sequence_ids": [
+492,
+529
 ]
 },
 {
 "imdb_id": "nm0062658",
 "full_name": "George Baxt",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 498,
-"venue": null,
-"medium": "DVD",
-"date": "2015-06-06",
-"title": "The City of the Dead",
-"year": 1960,
-"imdb_id": "tt0053719"
-},
-{
-"sequence": 530,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2015-10-31",
-"title": "Vampire Circus",
-"year": 1972,
-"imdb_id": "tt0067924"
-}
+"viewing_sequence_ids": [
+498,
+530
 ]
 },
 {
 "imdb_id": "nm0836988",
 "full_name": "Milton Subotsky",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 498,
-"venue": null,
-"medium": "DVD",
-"date": "2015-06-06",
-"title": "The City of the Dead",
-"year": 1960,
-"imdb_id": "tt0053719"
-},
-{
-"sequence": 514,
-"venue": null,
-"medium": "Shudder",
-"date": "2015-08-11",
-"title": "I, Monster",
-"year": 1971,
-"imdb_id": "tt0068727"
-}
+"viewing_sequence_ids": [
+498,
+514
 ]
 },
 {
 "imdb_id": "nm1578335",
 "full_name": "Michael Arndt",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 502,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-06-22",
-"title": "Inside Out",
-"year": 2015,
-"imdb_id": "tt2096673"
-},
-{
-"sequence": 536,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2015-12-21",
-"title": "Star Wars: Episode VII - The Force Awakens",
-"year": 2015,
-"imdb_id": "tt2488496"
-}
+"viewing_sequence_ids": [
+502,
+536
 ]
 }
 ]

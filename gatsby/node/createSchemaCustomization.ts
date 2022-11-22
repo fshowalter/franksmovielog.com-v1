@@ -3,14 +3,15 @@ import DecadeStat from "./schema/DecadeStat";
 import GradeDistributionsJson from "./schema/GradeDistributionsJson";
 import MarkdownRemark from "./schema/MarkdownRemark";
 import MediumStat from "./schema/MediumStat";
+import MostWatchedDirector from "./schema/MostWatchedDirector";
 import MostWatchedDirectorsJson from "./schema/MostWatchedDirectorsJson";
 import MostWatchedMovie from "./schema/MostWatchedMovie";
 import MostWatchedMoviesJson from "./schema/MostWatchedMoviesJson";
-import MostWatchedMovieViewing from "./schema/MostWatchedMovieViewing";
 import MostWatchedPeopleInterface from "./schema/MostWatchedPeopleInterface";
+import MostWatchedPerformer from "./schema/MostWatchedPerformer";
 import MostWatchedPerformersJson from "./schema/MostWatchedPerformersJson";
-import MostWatchedPerson from "./schema/MostWatchedPerson";
-import MostWatchedPersonViewing from "./schema/MostWatchedPersonViewing";
+import MostWatchedPersonInterface from "./schema/MostWatchedPersonInterface";
+import MostWatchedWriter from "./schema/MostWatchedWriter";
 import MostWatchedWritersJson from "./schema/MostWatchedWritersJson";
 import OverratedDisappointmentsJson from "./schema/OverratedDisappointmentsJson";
 import ReviewedMoviesJson from "./schema/ReviewedMoviesJson";
@@ -33,6 +34,7 @@ export default function createSchemaCustomization({
   const { createTypes } = actions;
 
   const typeDefs = [
+    schema.buildInterfaceType(MostWatchedPersonInterface),
     schema.buildInterfaceType(MostWatchedPeopleInterface),
     schema.buildObjectType(ReviewedMovieWatchlistEntities),
     schema.buildObjectType(ViewingsJson),
@@ -44,13 +46,13 @@ export default function createSchemaCustomization({
     schema.buildObjectType(MediumStat),
     schema.buildObjectType(TopVenuesJson),
     schema.buildObjectType(TopMediaJson),
-    schema.buildObjectType(MostWatchedMovieViewing),
     schema.buildObjectType(MostWatchedMovie),
     schema.buildObjectType(MostWatchedMoviesJson),
-    schema.buildObjectType(MostWatchedPersonViewing),
-    schema.buildObjectType(MostWatchedPerson),
+    schema.buildObjectType(MostWatchedDirector),
     schema.buildObjectType(MostWatchedDirectorsJson),
+    schema.buildObjectType(MostWatchedPerformer),
     schema.buildObjectType(MostWatchedPerformersJson),
+    schema.buildObjectType(MostWatchedWriter),
     schema.buildObjectType(MostWatchedWritersJson),
     schema.buildObjectType(UnderseenGemsJson),
     schema.buildObjectType(OverratedDisappointmentsJson),

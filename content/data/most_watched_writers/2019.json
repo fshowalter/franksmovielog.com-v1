@@ -5,313 +5,97 @@
 "imdb_id": "nm0000118",
 "full_name": "John Carpenter",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 728,
-"venue": null,
-"medium": "Shudder",
-"date": "2019-01-31",
-"title": "Halloween",
-"year": 1978,
-"imdb_id": "tt0077651"
-},
-{
-"sequence": 729,
-"venue": null,
-"medium": "Amazon",
-"date": "2019-01-31",
-"title": "Halloween II",
-"year": 1981,
-"imdb_id": "tt0082495"
-},
-{
-"sequence": 730,
-"venue": null,
-"medium": "Vudu",
-"date": "2019-02-01",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-},
-{
-"sequence": 790,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-10-22",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-}
+"viewing_sequence_ids": [
+728,
+729,
+730,
+790
 ]
 },
 {
 "imdb_id": "nm0267805",
 "full_name": "Todd Farmer",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 736,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-02-12",
-"title": "My Bloody Valentine",
-"year": 2009,
-"imdb_id": "tt1179891"
-},
-{
-"sequence": 739,
-"venue": null,
-"medium": "Netflix",
-"date": "2019-02-16",
-"title": "Jason X",
-"year": 2001,
-"imdb_id": "tt0211443"
-},
-{
-"sequence": 801,
-"venue": null,
-"medium": "Vudu",
-"date": "2019-12-13",
-"title": "Jason X",
-"year": 2001,
-"imdb_id": "tt0211443"
-}
+"viewing_sequence_ids": [
+736,
+739,
+801
 ]
 },
 {
 "imdb_id": "nm1321655",
 "full_name": "Christopher Markus",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-}
+"viewing_sequence_ids": [
+750,
+751,
+756
 ]
 },
 {
 "imdb_id": "nm1321656",
 "full_name": "Stephen McFeely",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 750,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-13",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 751,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-05-16",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-},
-{
-"sequence": 756,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-06-03",
-"title": "Avengers: Endgame",
-"year": 2019,
-"imdb_id": "tt4154796"
-}
+"viewing_sequence_ids": [
+750,
+751,
+756
 ]
 },
 {
 "imdb_id": "nm0701031",
 "full_name": "Neal Purvis",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 807,
-"venue": null,
-"medium": "iTunes",
-"date": "2019-12-28",
-"title": "Skyfall",
-"year": 2012,
-"imdb_id": "tt1074638"
-},
-{
-"sequence": 808,
-"venue": null,
-"medium": "iTunes",
-"date": "2019-12-29",
-"title": "Casino Royale",
-"year": 2006,
-"imdb_id": "tt0381061"
-},
-{
-"sequence": 809,
-"venue": null,
-"medium": "iTunes",
-"date": "2019-12-30",
-"title": "Quantum of Solace",
-"year": 2008,
-"imdb_id": "tt0830515"
-}
+"viewing_sequence_ids": [
+807,
+808,
+809
 ]
 },
 {
 "imdb_id": "nm0905498",
 "full_name": "Robert Wade",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 807,
-"venue": null,
-"medium": "iTunes",
-"date": "2019-12-28",
-"title": "Skyfall",
-"year": 2012,
-"imdb_id": "tt1074638"
-},
-{
-"sequence": 808,
-"venue": null,
-"medium": "iTunes",
-"date": "2019-12-29",
-"title": "Casino Royale",
-"year": 2006,
-"imdb_id": "tt0381061"
-},
-{
-"sequence": 809,
-"venue": null,
-"medium": "iTunes",
-"date": "2019-12-30",
-"title": "Quantum of Solace",
-"year": 2008,
-"imdb_id": "tt0830515"
-}
+"viewing_sequence_ids": [
+807,
+808,
+809
 ]
 },
 {
 "imdb_id": "nm0384185",
 "full_name": "Debra Hill",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 728,
-"venue": null,
-"medium": "Shudder",
-"date": "2019-01-31",
-"title": "Halloween",
-"year": 1978,
-"imdb_id": "tt0077651"
-},
-{
-"sequence": 729,
-"venue": null,
-"medium": "Amazon",
-"date": "2019-01-31",
-"title": "Halloween II",
-"year": 1981,
-"imdb_id": "tt0082495"
-}
+"viewing_sequence_ids": [
+728,
+729
 ]
 },
 {
 "imdb_id": "nm0460600",
 "full_name": "Nigel Kneale",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 730,
-"venue": null,
-"medium": "Vudu",
-"date": "2019-02-01",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-},
-{
-"sequence": 790,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-10-22",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-}
+"viewing_sequence_ids": [
+730,
+790
 ]
 },
 {
 "imdb_id": "nm0908890",
 "full_name": "Tommy Lee Wallace",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 730,
-"venue": null,
-"medium": "Vudu",
-"date": "2019-02-01",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-},
-{
-"sequence": 790,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2019-10-22",
-"title": "Halloween III: Season of the Witch",
-"year": 1982,
-"imdb_id": "tt0085636"
-}
+"viewing_sequence_ids": [
+730,
+790
 ]
 },
 {
 "imdb_id": "nm1226735",
 "full_name": "Damian Shannon",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 746,
-"venue": null,
-"medium": "Netflix",
-"date": "2019-04-13",
-"title": "Freddy vs. Jason",
-"year": 2003,
-"imdb_id": "tt0329101"
-},
-{
-"sequence": 748,
-"venue": null,
-"medium": "Netflix",
-"date": "2019-04-27",
-"title": "Friday the 13th",
-"year": 2009,
-"imdb_id": "tt0758746"
-}
+"viewing_sequence_ids": [
+746,
+748
 ]
 }
 ]

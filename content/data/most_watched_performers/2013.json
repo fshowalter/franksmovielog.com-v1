@@ -5,367 +5,103 @@
 "imdb_id": "nm0000569",
 "full_name": "Gwyneth Paltrow",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 283,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man",
-"year": 2008,
-"imdb_id": "tt0371746"
-},
-{
-"sequence": 284,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 299,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-05-02",
-"title": "Iron Man 3",
-"year": 2013,
-"imdb_id": "tt1300854"
-},
-{
-"sequence": 345,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-06",
-"title": "Hard Eight",
-"year": 1996,
-"imdb_id": "tt0119256"
-}
+"viewing_sequence_ids": [
+283,
+284,
+299,
+345
 ]
 },
 {
 "imdb_id": "nm0269463",
 "full_name": "Jon Favreau",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 283,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man",
-"year": 2008,
-"imdb_id": "tt0371746"
-},
-{
-"sequence": 284,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 299,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-05-02",
-"title": "Iron Man 3",
-"year": 2013,
-"imdb_id": "tt1300854"
-},
-{
-"sequence": 354,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-12-27",
-"title": "The Wolf of Wall Street",
-"year": 2013,
-"imdb_id": "tt0993846"
-}
+"viewing_sequence_ids": [
+283,
+284,
+299,
+354
 ]
 },
 {
 "imdb_id": "nm0362766",
 "full_name": "Tom Hardy",
 "viewing_count": 4,
-"viewings": [
-{
-"sequence": 289,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-03-06",
-"title": "Lawless",
-"year": 2012,
-"imdb_id": "tt1212450"
-},
-{
-"sequence": 298,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-04-30",
-"title": "Tinker Tailor Soldier Spy",
-"year": 2011,
-"imdb_id": "tt1340800"
-},
-{
-"sequence": 335,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-11-04",
-"title": "Warrior",
-"year": 2011,
-"imdb_id": "tt1291584"
-},
-{
-"sequence": 347,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-08",
-"title": "Bronson",
-"year": 2008,
-"imdb_id": "tt1172570"
-}
+"viewing_sequence_ids": [
+289,
+298,
+335,
+347
 ]
 },
 {
 "imdb_id": "nm0000168",
 "full_name": "Samuel L. Jackson",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 258,
-"venue": "AMC Tysons Corner 16",
-"medium": null,
-"date": "2013-01-03",
-"title": "Django Unchained",
-"year": 2012,
-"imdb_id": "tt1853728"
-},
-{
-"sequence": 284,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-02-17",
-"title": "Iron Man 2",
-"year": 2010,
-"imdb_id": "tt1228705"
-},
-{
-"sequence": 345,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-06",
-"title": "Hard Eight",
-"year": 1996,
-"imdb_id": "tt0119256"
-}
+"viewing_sequence_ids": [
+258,
+284,
+345
 ]
 },
 {
 "imdb_id": "nm0001862",
 "full_name": "Mary Woronov",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 259,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-05",
-"title": "Warlock",
-"year": 1989,
-"imdb_id": "tt0098622"
-},
-{
-"sequence": 261,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-12",
-"title": "TerrorVision",
-"year": 1986,
-"imdb_id": "tt0092074"
-},
-{
-"sequence": 343,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-11-30",
-"title": "The House of the Devil",
-"year": 2009,
-"imdb_id": "tt1172994"
-}
+"viewing_sequence_ids": [
+259,
+261,
+343
 ]
 },
 {
 "imdb_id": "nm0040662",
 "full_name": "Tom Atkins",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 260,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-12",
-"title": "Night of the Creeps",
-"year": 1986,
-"imdb_id": "tt0091630"
-},
-{
-"sequence": 309,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-08-08",
-"title": "Escape from New York",
-"year": 1981,
-"imdb_id": "tt0082340"
-},
-{
-"sequence": 333,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-11-02",
-"title": "Drive Angry",
-"year": 2011,
-"imdb_id": "tt1502404"
-}
+"viewing_sequence_ids": [
+260,
+309,
+333
 ]
 },
 {
 "imdb_id": "nm0588241",
 "full_name": "Dick Miller",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 260,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-12",
-"title": "Night of the Creeps",
-"year": 1986,
-"imdb_id": "tt0091630"
-},
-{
-"sequence": 288,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-03-05",
-"title": "The Terror",
-"year": 1963,
-"imdb_id": "tt0057569"
-},
-{
-"sequence": 313,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-09-01",
-"title": "Tales from the Crypt: Demon Knight",
-"year": 1995,
-"imdb_id": "tt0114608"
-}
+"viewing_sequence_ids": [
+260,
+288,
+313
 ]
 },
 {
 "imdb_id": "nm0000053",
 "full_name": "Robert Mitchum",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 264,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-19",
-"title": "Second Chance",
-"year": 1953,
-"imdb_id": "tt0046288"
-},
-{
-"sequence": 265,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-19",
-"title": "Angel Face",
-"year": 1953,
-"imdb_id": "tt0044357"
-},
-{
-"sequence": 293,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-03-23",
-"title": "El Dorado",
-"year": 1966,
-"imdb_id": "tt0061619"
-}
+"viewing_sequence_ids": [
+264,
+265,
+293
 ]
 },
 {
 "imdb_id": "nm0000587",
 "full_name": "Donald Pleasence",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 268,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-20",
-"title": "Prince of Darkness",
-"year": 1987,
-"imdb_id": "tt0093777"
-},
-{
-"sequence": 309,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-08-08",
-"title": "Escape from New York",
-"year": 1981,
-"imdb_id": "tt0082340"
-},
-{
-"sequence": 325,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-10-25",
-"title": "Wake in Fright",
-"year": 1971,
-"imdb_id": "tt0067541"
-}
+"viewing_sequence_ids": [
+268,
+309,
+325
 ]
 },
 {
 "imdb_id": "nm0748620",
 "full_name": "Paul Rudd",
 "viewing_count": 3,
-"viewings": [
-{
-"sequence": 269,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-20",
-"title": "Wet Hot American Summer",
-"year": 2001,
-"imdb_id": "tt0243655"
-},
-{
-"sequence": 324,
-"venue": null,
-"medium": "HBO HD",
-"date": "2013-10-13",
-"title": "Wanderlust",
-"year": 2012,
-"imdb_id": "tt1655460"
-},
-{
-"sequence": 353,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-12-27",
-"title": "Anchorman 2: The Legend Continues",
-"year": 2013,
-"imdb_id": "tt1229340"
-}
+"viewing_sequence_ids": [
+269,
+324,
+353
 ]
 }
 ]

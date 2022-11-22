@@ -109,7 +109,7 @@ export const query = graphql`
     viewingCount: viewing_count
     viewings {
       sequence
-      viewingDate: date(formatString: "ddd MMM D, YYYY")
+      viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
       venue
       medium
       title

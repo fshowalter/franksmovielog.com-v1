@@ -13,7 +13,7 @@ function ListItemDetails({
 }: {
   movie: Queries.MostWatchedMovieFragment;
 }): JSX.Element {
-  if (movie.reviewSlug) {
+  if (movie.reviewedMovie?.slug) {
     return (
       <div className={listItemSlugCss}>
         <div>{movie.viewingCount.toLocaleString()} times</div>
@@ -57,7 +57,7 @@ export default function MostWatchedMovies({
             return (
               <Poster
                 key={movie.imdbId}
-                slug={movie.reviewSlug}
+                slug={movie.reviewedMovie?.slug}
                 image={movie.poster}
                 title={movie.title}
                 year={movie.year}
@@ -76,7 +76,9 @@ export const query = graphql`
     imdbId: imdb_id
     title
     year
-    reviewSlug: review_slug
+    reviewedMovie {
+      slug
+    }
     poster {
       childImageSharp {
         gatsbyImageData(

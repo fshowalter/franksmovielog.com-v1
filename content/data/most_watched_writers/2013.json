@@ -5,250 +5,90 @@
 "imdb_id": "nm0587743",
 "full_name": "Oscar Millard",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 264,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-19",
-"title": "Second Chance",
-"year": 1953,
-"imdb_id": "tt0046288"
-},
-{
-"sequence": 265,
-"venue": null,
-"medium": "TCM HD",
-"date": "2013-01-19",
-"title": "Angel Face",
-"year": 1953,
-"imdb_id": "tt0044357"
-}
+"viewing_sequence_ids": [
+264,
+265
 ]
 },
 {
 "imdb_id": "nm0000118",
 "full_name": "John Carpenter",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 268,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-20",
-"title": "Prince of Darkness",
-"year": 1987,
-"imdb_id": "tt0093777"
-},
-{
-"sequence": 309,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-08-08",
-"title": "Escape from New York",
-"year": 1981,
-"imdb_id": "tt0082340"
-}
+"viewing_sequence_ids": [
+268,
+309
 ]
 },
 {
 "imdb_id": "nm0906476",
 "full_name": "David Wain",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 269,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-20",
-"title": "Wet Hot American Summer",
-"year": 2001,
-"imdb_id": "tt0243655"
-},
-{
-"sequence": 324,
-"venue": null,
-"medium": "HBO HD",
-"date": "2013-10-13",
-"title": "Wanderlust",
-"year": 2012,
-"imdb_id": "tt1655460"
-}
+"viewing_sequence_ids": [
+269,
+324
 ]
 },
 {
 "imdb_id": "nm0000697",
 "full_name": "Billy Wilder",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 271,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-01-27",
-"title": "Double Indemnity",
-"year": 1944,
-"imdb_id": "tt0036775"
-},
-{
-"sequence": 291,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-03-09",
-"title": "One, Two, Three",
-"year": 1961,
-"imdb_id": "tt0055256"
-}
+"viewing_sequence_ids": [
+271,
+291
 ]
 },
 {
 "imdb_id": "nm0000519",
 "full_name": "David Mamet",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 294,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-04-05",
-"title": "Glengarry Glen Ross",
-"year": 1992,
-"imdb_id": "tt0104348"
-},
-{
-"sequence": 307,
-"venue": null,
-"medium": "HBO HD",
-"date": "2013-07-05",
-"title": "Heist",
-"year": 2001,
-"imdb_id": "tt0252503"
-}
+"viewing_sequence_ids": [
+294,
+307
 ]
 },
 {
 "imdb_id": "nm0413826",
 "full_name": "Ron Kurz",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 315,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-09-13",
-"title": "Friday the 13th",
-"year": 1980,
-"imdb_id": "tt0080761"
-},
-{
-"sequence": 317,
-"venue": null,
-"medium": "Blu-ray",
-"date": "2013-09-21",
-"title": "Friday the 13th Part 2",
-"year": 1981,
-"imdb_id": "tt0082418"
-}
+"viewing_sequence_ids": [
+315,
+317
 ]
 },
 {
 "imdb_id": "nm0570912",
 "full_name": "Adam McKay",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 316,
-"venue": null,
-"medium": "HBO HD",
-"date": "2013-09-14",
-"title": "The Campaign",
-"year": 2012,
-"imdb_id": "tt1790886"
-},
-{
-"sequence": 353,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"medium": null,
-"date": "2013-12-27",
-"title": "Anchorman 2: The Legend Continues",
-"year": 2013,
-"imdb_id": "tt1229340"
-}
+"viewing_sequence_ids": [
+316,
+353
 ]
 },
 {
 "imdb_id": "nm2947553",
 "full_name": "Na Hong-jin",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 328,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-10-29",
-"title": "The Chaser",
-"year": 2008,
-"imdb_id": "tt1190539"
-},
-{
-"sequence": 355,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-28",
-"title": "The Yellow Sea",
-"year": 2010,
-"imdb_id": "tt1230385"
-}
+"viewing_sequence_ids": [
+328,
+355
 ]
 },
 {
 "imdb_id": "nm2974384",
 "full_name": "Won-Chan Hong",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 328,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-10-29",
-"title": "The Chaser",
-"year": 2008,
-"imdb_id": "tt1190539"
-},
-{
-"sequence": 355,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-28",
-"title": "The Yellow Sea",
-"year": 2010,
-"imdb_id": "tt1230385"
-}
+"viewing_sequence_ids": [
+328,
+355
 ]
 },
 {
 "imdb_id": "nm0716347",
 "full_name": "Nicolas Winding Refn",
 "viewing_count": 2,
-"viewings": [
-{
-"sequence": 338,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-11-16",
-"title": "Only God Forgives",
-"year": 2013,
-"imdb_id": "tt1602613"
-},
-{
-"sequence": 347,
-"venue": null,
-"medium": "Netflix",
-"date": "2013-12-08",
-"title": "Bronson",
-"year": 2008,
-"imdb_id": "tt1172570"
-}
+"viewing_sequence_ids": [
+338,
+347
 ]
 }
 ]
