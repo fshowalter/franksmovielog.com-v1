@@ -1,22 +1,86 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import path from "path";
 import { SchemaNames } from "./schemaNames";
-import type { GatsbyNode, GatsbyNodeContext } from "./type-definitions";
+import type {
+  GatsbyNode,
+  GatsbyNodeContext,
+  GatsbyResolveInfo,
+} from "./type-definitions";
+import resolveFieldForNode from "./utils/resolveFieldForNode";
 import sliceMoviesForBrowseMore from "./utils/sliceMoviesForBrowseMore";
+import { WatchlistEntityNode } from "./WatchlistEntitiesJson";
 import type { WatchlistMovieNode } from "./WatchlistMoviesJson";
 
 export interface ReviewedMovieNode extends GatsbyNode {
   slug: string;
   imdbId: string;
 }
+// change to resolve browse more at schema build, not as resolver, i.e. performers.browseMore = resolver code.
+const ReviewedMovieWatchlistEntity = {
+  name: "ReviewedMovieWatchlistEntity",
+  fields: {
+    name: "String!",
+    slug: "String!",
+    avatar: "File!",
+    browseMore: {
+      type: `[${SchemaNames.REVIEWED_MOVIES_JSON}!]!`,
+      args: {
+        movieImdbId: "String!",
+      },
+      resolve: async (
+        source: WatchlistEntityNode,
+        args: { movieImdbId: string },
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const watchlistMovies = await resolveFieldForNode<WatchlistMovieNode[]>(
+          "watchlistMovies",
+          source,
+          context,
+          info,
+          args
+        );
+
+        if (!watchlistMovies) {
+          return [];
+        }
+
+        const watchlistMovieImdbIds = Array.from(watchlistMovies).map(
+          (movie) => movie.imdb_id
+        );
+
+        const { entries } = await context.nodeModel.findAll<ReviewedMovieNode>({
+          type: SchemaNames.REVIEWED_MOVIES_JSON,
+          query: {
+            filter: {
+              imdbId: {
+                in: watchlistMovieImdbIds,
+              },
+            },
+            sort: {
+              fields: ["releaseDate"],
+              order: ["ASC"],
+            },
+          },
+        });
+
+        if (!entries) {
+          return [];
+        }
+
+        return sliceMoviesForBrowseMore(Array.from(entries), args.movieImdbId);
+      },
+    },
+  },
+};
 
 const ReviewedMovieWatchlistEntities = {
   name: "ReviewedMovieWatchlistEntities",
   fields: {
-    performers: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
-    directors: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
-    writers: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
-    collections: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
+    performers: `[ReviewedMovieWatchlistEntity!]!`,
+    directors: `[ReviewedMovieWatchlistEntity!]!`,
+    writers: `[ReviewedMovieWatchlistEntity!]!`,
+    collections: `[ReviewedMovieWatchlistEntity!]!`,
   },
 };
 
@@ -210,7 +274,7 @@ const ReviewedMoviesJson = {
             type: SchemaNames.WATCHLIST_MOVIES_JSON,
             query: {
               filter: {
-                imdb_id: { eq: source.imdb_id },
+                imdbId: { eq: source.imdb_id },
               },
             },
           });
@@ -218,6 +282,27 @@ const ReviewedMoviesJson = {
         if (!watchlistMovie) {
           return watchlist;
         }
+
+        const { entries } =
+          await context.nodeModel.findAll<WatchlistEntityNode>({
+            type: SchemaNames.WATCHLIST_ENTITIES_JSON,
+            query: {
+              filter: {
+                imdb_id: { in: watchlistMovie.performer_imdb_ids },
+                entity_type: { eq: "performer" },
+              },
+            },
+          });
+
+        // const performers = Array.from(
+        //   entries.map((entry) => {
+        //     return {
+        //       name: entry.name,
+        //       avatar: entry.avatar,
+        //       slug: entry.slug,
+        //     };
+        //   })
+        // );
 
         ({ entries: watchlist.performers } = await context.nodeModel.findAll({
           type: SchemaNames.WATCHLIST_ENTITIES_JSON,
@@ -229,35 +314,36 @@ const ReviewedMoviesJson = {
           },
         }));
 
-        ({ entries: watchlist.directors } = await context.nodeModel.findAll({
-          type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-          query: {
-            filter: {
-              imdb_id: { in: watchlistMovie.director_imdb_ids },
-              entity_type: { eq: "director" },
-            },
-          },
-        }));
+        // ({ entries: watchlist.directors } = await context.nodeModel.findAll({
+        //     type: SchemaNames.WATCHLIST_ENTITIES_JSON,
+        //     query: {
+        //       filter: {
+        //         imdb_id: { in: watchlistMovie.director_imdb_ids },
+        //         entity_type: { eq: "director" },
+        //       },
+        //     },
+        //   }))
+        // );
 
-        ({ entries: watchlist.writers } = await context.nodeModel.findAll({
-          type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-          query: {
-            filter: {
-              imdb_id: { in: watchlistMovie.writer_imdb_ids },
-              entity_type: { eq: "writer" },
-            },
-          },
-        }));
+        // ({ entries: watchlist.writers } = await context.nodeModel.findAll({
+        //   type: SchemaNames.WATCHLIST_ENTITIES_JSON,
+        //   query: {
+        //     filter: {
+        //       imdb_id: { in: watchlistMovie.writer_imdb_ids },
+        //       entity_type: { eq: "writer" },
+        //     },
+        //   },
+        // }));
 
-        ({ entries: watchlist.collections } = await context.nodeModel.findAll({
-          type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-          query: {
-            filter: {
-              name: { in: watchlistMovie.collectionNames },
-              entity_type: { eq: "collection" },
-            },
-          },
-        }));
+        // ({ entries: watchlist.collections } = await context.nodeModel.findAll({
+        //   type: SchemaNames.WATCHLIST_ENTITIES_JSON,
+        //   query: {
+        //     filter: {
+        //       name: { in: watchlistMovie.collectionNames },
+        //       entity_type: { eq: "collection" },
+        //     },
+        //   },
+        // }));
 
         return watchlist;
       },
@@ -272,6 +358,7 @@ export default function buildReviewedMoviesJsonSchema(
   schema: NodePluginSchema
 ): GatsbyGraphQLObjectType[] {
   return [
+    schema.buildObjectType(ReviewedMovieWatchlistEntity),
     schema.buildObjectType(ReviewedMovieWatchlistEntities),
     schema.buildObjectType(ReviewedMoviesJson),
   ];
