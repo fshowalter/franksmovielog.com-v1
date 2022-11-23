@@ -73,7 +73,7 @@ export default function MostWatchedMovies({
 
 export const query = graphql`
   fragment MostWatchedMovie on MostWatchedMovie {
-    imdbId: imdb_id
+    imdbId
     title
     year
     reviewedMovie {
@@ -90,7 +90,7 @@ export const query = graphql`
         )
       }
     }
-    viewingCount: viewing_count
+    viewingCount
   }
 
   fragment MostWatchedMovies on MostWatchedMoviesJson {

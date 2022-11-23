@@ -1,15 +1,37 @@
-import { SchemaNames } from "./schemaNames";
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
+import { MOST_WATCHED_PEOPLE, MOST_WATCHED_PERSON } from "./MostWatchedPeople";
+import fieldsForMostWatchedType from "./utils/fieldsForMostWatchedType";
+
+const MostWatchedWriter = {
+  name: "MostWatchedWriter",
+  interfaces: [MOST_WATCHED_PERSON],
+  fields: fieldsForMostWatchedType("writer"),
+};
 
 const MostWatchedWritersJson = {
-  name: SchemaNames.MOST_WATCHED_WRITERS_JSON,
-  interfaces: [SchemaNames.MOST_WATCHED_PEOPLE, "Node"],
+  name: "MostWatchedWritersJson",
+  interfaces: [MOST_WATCHED_PEOPLE, "Node"],
   fields: {
     viewing_year: "String!",
-    most_watched: `[${SchemaNames.MOST_WATCHED_WRITER}!]!`,
+    mostWatched: {
+      type: `[MostWatchedDirector!]!`,
+      extensions: {
+        proxy: {
+          from: "most_watched",
+        },
+      },
+    },
   },
   extensions: {
     infer: false,
   },
 };
 
-export default MostWatchedWritersJson;
+export default function buildMostWatchedWritersJsonSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [
+    schema.buildObjectType(MostWatchedWriter),
+    schema.buildObjectType(MostWatchedWritersJson),
+  ];
+}

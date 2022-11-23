@@ -1,3 +1,4 @@
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import path from "path";
 import { ReviewedMovieNode } from "./ReviewedMoviesJson";
 import { SchemaNames } from "./schemaNames";
@@ -12,19 +13,69 @@ import type { WatchlistMovieNode } from "./WatchlistMoviesJson";
 
 export interface WatchlistEntityNode extends GatsbyNode {
   name: string;
-  slug: string;
+  slug: string | null;
   entity_type: string;
+  imdbId: string;
 }
 
 const WatchlistEntitiesJson = {
   name: SchemaNames.WATCHLIST_ENTITIES_JSON,
   interfaces: ["Node"],
   fields: {
-    imdb_id: "String",
     name: "String!",
-    slug: "String!",
-    title_count: "Int!",
-    entity_type: "String!",
+    imdbId: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "imdb_id",
+        },
+      },
+    },
+    entityType: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "entity_type",
+        },
+      },
+    },
+    titleCount: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "title_count",
+        },
+      },
+    },
+    slug: {
+      type: "String",
+      resolve: async (
+        source: WatchlistEntityNode,
+        _args: unknown,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const slug = source.slug;
+        const reviewCount = await resolveFieldForNode<number>(
+          "reviewCount",
+          source,
+          context,
+          info,
+          {}
+        );
+
+        if (reviewCount && reviewCount > 0) {
+          return slug;
+        }
+
+        return null;
+      },
+      extensions: {
+        proxy: {
+          from: "slug",
+        },
+      },
+    },
     avatar: {
       type: "File",
       resolve: async (
@@ -32,6 +83,10 @@ const WatchlistEntitiesJson = {
         _args: unknown,
         context: GatsbyNodeContext
       ) => {
+        if (!source.slug) {
+          return null;
+        }
+
         return await context.nodeModel.findOne({
           type: "File",
           query: {
@@ -64,21 +119,21 @@ const WatchlistEntitiesJson = {
           return 0;
         }
 
-        return Array.from(watchlistMovies).reduce(
-          async (accumulator, movie): Promise<number> => {
-            let count = await accumulator;
-            const reviewedMovie = await resolveFieldForNode<ReviewedMovieNode>(
-              "reviewedMovie",
-              movie,
-              context,
-              info,
-              {}
-            );
-
-            return reviewedMovie ? (count += 1) : count;
-          },
-          Promise.resolve(0)
+        const watchlistMovieImdbIds = Array.from(
+          watchlistMovies.map((movie) => movie.imdb_id)
         );
+
+        const { totalCount } =
+          await context.nodeModel.findAll<ReviewedMovieNode>({
+            type: SchemaNames.REVIEWED_MOVIES_JSON,
+            query: {
+              filter: {
+                imdbId: { in: watchlistMovieImdbIds },
+              },
+            },
+          });
+
+        return totalCount();
       },
     },
     watchlistMovies: {
@@ -93,7 +148,7 @@ const WatchlistEntitiesJson = {
             type: SchemaNames.WATCHLIST_MOVIES_JSON,
             query: {
               filter: {
-                collection_names: { in: [source.name] },
+                collectionNames: { in: [source.name] },
               },
             },
           });
@@ -136,14 +191,14 @@ const WatchlistEntitiesJson = {
         }
 
         const watchlistMovieImdbIds = Array.from(watchlistMovies).map(
-          (movie) => movie.imdb_id
+          (movie) => movie.imdbId
         );
 
         const { entries } = await context.nodeModel.findAll<ReviewedMovieNode>({
           type: SchemaNames.REVIEWED_MOVIES_JSON,
           query: {
             filter: {
-              imdb_id: {
+              imdbId: {
                 in: watchlistMovieImdbIds,
               },
             },
@@ -164,4 +219,8 @@ const WatchlistEntitiesJson = {
   },
 };
 
-export default WatchlistEntitiesJson;
+export default function buildWatchlistEntitiesJsonSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [schema.buildObjectType(WatchlistEntitiesJson)];
+}

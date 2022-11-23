@@ -1,5 +1,5 @@
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import path from "path";
-import type { MarkdownNode } from "./MarkdownRemark";
 import { SchemaNames } from "./schemaNames";
 import type { GatsbyNode, GatsbyNodeContext } from "./type-definitions";
 import sliceMoviesForBrowseMore from "./utils/sliceMoviesForBrowseMore";
@@ -7,44 +7,99 @@ import type { WatchlistMovieNode } from "./WatchlistMoviesJson";
 
 export interface ReviewedMovieNode extends GatsbyNode {
   slug: string;
-  imdb_id: string;
+  imdbId: string;
 }
+
+const ReviewedMovieWatchlistEntities = {
+  name: "ReviewedMovieWatchlistEntities",
+  fields: {
+    performers: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
+    directors: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
+    writers: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
+    collections: `[${SchemaNames.WATCHLIST_ENTITIES_JSON}!]!`,
+  },
+};
 
 const ReviewedMoviesJson = {
   name: SchemaNames.REVIEWED_MOVIES_JSON,
   interfaces: ["Node"],
   fields: {
-    imdb_id: "String!",
     title: "String!",
     year: "Int!",
-    release_date: "String!",
-    sort_title: "String!",
     slug: "String!",
     grade: "String!",
-    grade_value: "Int!",
-    runtime_minutes: "Int!",
-    director_names: "[String!]!",
-    principal_cast_names: "[String!]!",
-    original_title: "String",
     countries: "[String!]!",
-    review_grade: "String!",
+    imdbId: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "imdb_id",
+        },
+      },
+    },
+    releaseDate: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "release_date",
+        },
+      },
+    },
+    sortTitle: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "sort_title",
+        },
+      },
+    },
+    originalTitle: {
+      type: "String",
+      extensions: {
+        proxy: {
+          from: "original_title",
+        },
+      },
+    },
+    gradeValue: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "grade_value",
+        },
+      },
+    },
+    runtimeMinutes: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "runtime_minutes",
+        },
+      },
+    },
+    directorNames: {
+      type: "[String!]!",
+      extensions: {
+        proxy: {
+          from: "director_names",
+        },
+      },
+    },
+    principalCastNames: {
+      type: "[String!]!",
+      extensions: {
+        proxy: {
+          from: "principal_cast_names",
+        },
+      },
+    },
     review: {
       type: `${SchemaNames.MARKDOWN_REMARK}!`,
-      resolve: async (
-        source: ReviewedMovieNode,
-        _args: unknown,
-        context: GatsbyNodeContext
-      ) => {
-        return await context.nodeModel.findOne<MarkdownNode>({
-          type: SchemaNames.MARKDOWN_REMARK,
-          query: {
-            filter: {
-              frontmatter: {
-                imdb_id: { eq: source.imdb_id },
-              },
-            },
-          },
-        });
+      extensions: {
+        link: {
+          from: "imdb_id",
+          by: "frontmatter.imdb_id",
+        },
       },
     },
     browseMore: {
@@ -68,7 +123,7 @@ const ReviewedMoviesJson = {
           return [];
         }
 
-        return sliceMoviesForBrowseMore(Array.from(entries), source.imdb_id);
+        return sliceMoviesForBrowseMore(Array.from(entries), source.imdbId);
       },
     },
     viewings: {
@@ -137,7 +192,7 @@ const ReviewedMoviesJson = {
       },
     },
     watchlist: {
-      type: `${SchemaNames.REVIEWED_MOVIES_WATCHLIST_ENTITIES}!`,
+      type: `ReviewedMovieWatchlistEntities!`,
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
@@ -198,7 +253,7 @@ const ReviewedMoviesJson = {
           type: SchemaNames.WATCHLIST_ENTITIES_JSON,
           query: {
             filter: {
-              name: { in: watchlistMovie.collection_names },
+              name: { in: watchlistMovie.collectionNames },
               entity_type: { eq: "collection" },
             },
           },
@@ -213,4 +268,11 @@ const ReviewedMoviesJson = {
   },
 };
 
-export default ReviewedMoviesJson;
+export default function buildReviewedMoviesJsonSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [
+    schema.buildObjectType(ReviewedMovieWatchlistEntities),
+    schema.buildObjectType(ReviewedMoviesJson),
+  ];
+}

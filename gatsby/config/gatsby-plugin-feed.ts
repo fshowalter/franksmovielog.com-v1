@@ -3,18 +3,18 @@ const query = `#graphql
   viewing: allViewingsJson(
     sort: {order: DESC, fields: sequence}
     limit: 25
-    filter: {reviewedMovie: {imdb_id: {ne: null}}}
+    filter: {reviewedMovie: {imdbId: {ne: null}}}
   ) {
     nodes {
       sequence
-      date: viewing_date
+      date: viewingDate
       reviewedMovie {
         title
         year
         slug
         grade
-        principalCastNames: principal_cast_names
-        directorNames: director_names
+        principalCastNames
+        directorNames
         image: backdrop {
           childImageSharp {
             resize(toFormat: JPG, width: 1200, quality: 80) {

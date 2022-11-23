@@ -1,31 +1,22 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
-import DecadeStat from "./schema/DecadeStat";
-import GradeDistributionsJson from "./schema/GradeDistributionsJson";
-import MarkdownRemark from "./schema/MarkdownRemark";
-import MediumStat from "./schema/MediumStat";
-import MostWatchedDirector from "./schema/MostWatchedDirector";
-import MostWatchedDirectorsJson from "./schema/MostWatchedDirectorsJson";
-import MostWatchedMovie from "./schema/MostWatchedMovie";
-import MostWatchedMoviesJson from "./schema/MostWatchedMoviesJson";
-import MostWatchedPeopleInterface from "./schema/MostWatchedPeopleInterface";
-import MostWatchedPerformer from "./schema/MostWatchedPerformer";
-import MostWatchedPerformersJson from "./schema/MostWatchedPerformersJson";
-import MostWatchedPersonInterface from "./schema/MostWatchedPersonInterface";
-import MostWatchedWriter from "./schema/MostWatchedWriter";
-import MostWatchedWritersJson from "./schema/MostWatchedWritersJson";
-import OverratedDisappointmentsJson from "./schema/OverratedDisappointmentsJson";
-import ReviewedMoviesJson from "./schema/ReviewedMoviesJson";
-import ReviewedMovieWatchlistEntities from "./schema/ReviewedMoviesWatchlistEntities";
-import ReviewStatsJson from "./schema/ReviewStatsJson";
-import TopMediaJson from "./schema/TopMediaJson";
-import TopVenuesJson from "./schema/TopVenuesJson";
-import UnderseenGemsJson from "./schema/UnderseenGemsJson";
-import VenueStat from "./schema/VenueStat";
-import ViewingCountsForDecadesJson from "./schema/ViewingCountsForDecadesJson";
-import ViewingsJson from "./schema/ViewingsJson";
-import ViewingStatsJson from "./schema/ViewingStatsJson";
-import WatchlistEntitiesJson from "./schema/WatchlistEntitiesJson";
-import WatchlistMoviesJson from "./schema/WatchlistMoviesJson";
+import buildGradeDistributionsJsonSchema from "./schema/GradeDistributionsJson";
+import buildMarkdownRemarkSchema from "./schema/MarkdownRemark";
+import buildMostWatchedDirectorsJsonSchema from "./schema/MostWatchedDirectorsJson";
+import buildMostWatchedMoviesJsonSchema from "./schema/MostWatchedMoviesJson";
+import buildMostWatchedPeopleSchema from "./schema/MostWatchedPeople";
+import buildMostWatchedPerformersJsonSchema from "./schema/MostWatchedPerformersJson";
+import buildMostWatchedWritersJsonSchema from "./schema/MostWatchedWritersJson";
+import buildOverratedDisappointmentsJsonSchema from "./schema/OverratedDisappointmentsJson";
+import buildReviewedMoviesJsonSchema from "./schema/ReviewedMoviesJson";
+import buildReviewStatsJsonSchema from "./schema/ReviewStatsJson";
+import buildTopMediaJsonSchema from "./schema/TopMediaJson";
+import buildTopVenuesJsonSchema from "./schema/TopVenuesJson";
+import buildUnderseenGemsJsonSchema from "./schema/UnderseenGemsJson";
+import buildViewingCountsForDecadesJsonSchema from "./schema/ViewingCountsForDecadesJson";
+import buildViewingsJsonSchema from "./schema/ViewingsJson";
+import buildViewingStatsJsonSchema from "./schema/ViewingStatsJson";
+import buildWatchlistEntitiesJsonSchema from "./schema/WatchlistEntitiesJson";
+import buildWatchlistMoviesJsonSchema from "./schema/WatchlistMoviesJson";
 
 export default function createSchemaCustomization({
   actions,
@@ -34,33 +25,24 @@ export default function createSchemaCustomization({
   const { createTypes } = actions;
 
   const typeDefs = [
-    schema.buildInterfaceType(MostWatchedPersonInterface),
-    schema.buildInterfaceType(MostWatchedPeopleInterface),
-    schema.buildObjectType(ReviewedMovieWatchlistEntities),
-    schema.buildObjectType(ViewingsJson),
-    schema.buildObjectType(WatchlistMoviesJson),
-    schema.buildObjectType(MarkdownRemark),
-    schema.buildObjectType(ReviewedMoviesJson),
-    schema.buildObjectType(WatchlistEntitiesJson),
-    schema.buildObjectType(VenueStat),
-    schema.buildObjectType(MediumStat),
-    schema.buildObjectType(TopVenuesJson),
-    schema.buildObjectType(TopMediaJson),
-    schema.buildObjectType(MostWatchedMovie),
-    schema.buildObjectType(MostWatchedMoviesJson),
-    schema.buildObjectType(MostWatchedDirector),
-    schema.buildObjectType(MostWatchedDirectorsJson),
-    schema.buildObjectType(MostWatchedPerformer),
-    schema.buildObjectType(MostWatchedPerformersJson),
-    schema.buildObjectType(MostWatchedWriter),
-    schema.buildObjectType(MostWatchedWritersJson),
-    schema.buildObjectType(UnderseenGemsJson),
-    schema.buildObjectType(OverratedDisappointmentsJson),
-    schema.buildObjectType(GradeDistributionsJson),
-    schema.buildObjectType(DecadeStat),
-    schema.buildObjectType(ViewingCountsForDecadesJson),
-    schema.buildObjectType(ReviewStatsJson),
-    schema.buildObjectType(ViewingStatsJson),
+    ...buildViewingCountsForDecadesJsonSchema(schema),
+    ...buildMostWatchedPeopleSchema(schema),
+    ...buildViewingsJsonSchema(schema),
+    ...buildWatchlistMoviesJsonSchema(schema),
+    ...buildMarkdownRemarkSchema(schema),
+    ...buildReviewedMoviesJsonSchema(schema),
+    ...buildWatchlistEntitiesJsonSchema(schema),
+    ...buildTopVenuesJsonSchema(schema),
+    ...buildTopMediaJsonSchema(schema),
+    ...buildMostWatchedMoviesJsonSchema(schema),
+    ...buildMostWatchedDirectorsJsonSchema(schema),
+    ...buildMostWatchedPerformersJsonSchema(schema),
+    ...buildMostWatchedWritersJsonSchema(schema),
+    ...buildUnderseenGemsJsonSchema(schema),
+    ...buildOverratedDisappointmentsJsonSchema(schema),
+    ...buildGradeDistributionsJsonSchema(schema),
+    ...buildReviewStatsJsonSchema(schema),
+    ...buildViewingStatsJsonSchema(schema),
   ];
 
   createTypes(typeDefs);

@@ -160,16 +160,16 @@ export const pageQuery = graphql`
       filter: { reviewedMovie: { id: { ne: null } } }
     ) {
       nodes {
-        imdbId: imdb_id
+        imdbId
         sequence
-        date: viewing_date(formatString: "DD MMM, YYYY")
+        date: viewingDate(formatString: "DD MMM, YYYY")
         reviewedMovie {
           slug
           grade
           title
           year
-          principalCastNames: principal_cast_names
-          directorNames: director_names
+          principalCastNames
+          directorNames
           review {
             linkedExcerpt
           }

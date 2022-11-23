@@ -78,11 +78,11 @@ export const query = graphql`
   fragment Credits on ReviewedMoviesJson {
     title
     year
-    originalTitle: original_title
+    originalTitle
     countries
-    runtimeMinutes: runtime_minutes
-    directorNames: director_names
-    principalCastNames: principal_cast_names
+    runtimeMinutes
+    directorNames
+    principalCastNames
     poster {
       childImageSharp {
         gatsbyImageData(
@@ -94,6 +94,8 @@ export const query = graphql`
         )
       }
     }
-    ...WatchlistLinks
+    watchlist {
+      ...WatchlistLinks
+    }
   }
 `;

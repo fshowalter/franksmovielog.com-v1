@@ -546,18 +546,18 @@ export default function WatchlistIndexPage({
 
 export const pageQuery = graphql`
   fragment WatchlistMovie on WatchlistMoviesJson {
-    imdbId: imdb_id
+    imdbId
     title
     year
-    releaseDate: release_date
-    sortTitle: sort_title
+    releaseDate
+    sortTitle
     reviewedMovie {
       slug
     }
     directorNames
     performerNames
     writerNames
-    collectionNames: collection_names
+    collectionNames
     poster {
       childImageSharp {
         gatsbyImageData(
@@ -573,7 +573,7 @@ export const pageQuery = graphql`
 
   query WatchlistIndexPage {
     watchlist: allWatchlistMoviesJson(
-      sort: { fields: [release_date], order: ASC }
+      sort: { fields: [releaseDate], order: ASC }
     ) {
       nodes {
         ...WatchlistMovie
@@ -582,7 +582,7 @@ export const pageQuery = graphql`
       directors: distinct(field: directorNames)
       performers: distinct(field: performerNames)
       writers: distinct(field: writerNames)
-      collections: distinct(field: collection_names)
+      collections: distinct(field: collectionNames)
     }
   }
 `;

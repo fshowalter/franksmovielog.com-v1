@@ -42,7 +42,7 @@ export default function Callouts({
         )}
       {reviewCallouts && (
         <>
-          <Callout label="Reviews" stat={reviewCallouts.reviewCount} />
+          <Callout label="Reviews" stat={reviewCallouts.reviewsCreated} />
           <Callout
             label="From Watchlist"
             stat={reviewCallouts.watchlistTitlesReviewed}
@@ -55,13 +55,13 @@ export default function Callouts({
 
 export const query = graphql`
   fragment ViewingCallouts on ViewingStatsJson {
-    movieCount: movie_count
-    newMovieCount: new_movie_count
-    viewingCount: viewing_count
+    movieCount
+    newMovieCount
+    viewingCount
   }
 
   fragment ReviewCallouts on ReviewStatsJson {
-    reviewCount: reviews_created
+    reviewsCreated
     watchlistTitlesReviewed
   }
 `;

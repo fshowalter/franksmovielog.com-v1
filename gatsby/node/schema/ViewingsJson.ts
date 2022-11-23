@@ -1,48 +1,79 @@
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import { SchemaNames } from "./schemaNames";
-import type {
-  GatsbyNode,
-  GatsbyNodeContext,
-  GatsbyResolveArgs,
-  GatsbyResolveInfo,
-} from "./type-definitions";
-import findDefaultPosterNode from "./utils/findDefaultPosterNode";
-import findReviewedMovieNode from "./utils/findReviewedMovieNode";
-import resolveFieldForNode from "./utils/resolveFieldForNode";
+import type { GatsbyNode, GatsbyNodeContext } from "./type-definitions";
+import posterResolver from "./utils/posterResolver";
 
 export interface ViewingNode extends GatsbyNode {
-  imdb_id: string;
+  imdbId: string;
   sequence: number;
 }
 
-export default {
+const ViewingsJson = {
   name: SchemaNames.VIEWINGS_JSON,
   interfaces: ["Node"],
   fields: {
-    imdb_id: "String!",
     title: "String!",
     year: "Int!",
-    release_date: "String!",
-    viewing_date: {
-      type: "Date!",
-      extensions: {
-        dateformat: {},
-      },
-    },
-    viewing_year: "Int!",
     sequence: "Int!",
     venue: "String",
     medium: "String",
-    medium_notes: "String",
-    sort_title: "String!",
+    imdbId: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "imdb_id",
+        },
+      },
+    },
+    releaseDate: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "release_date",
+        },
+      },
+    },
+    viewingDate: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+        proxy: {
+          from: "viewing_date",
+        },
+      },
+    },
+    viewingYear: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "viewing_year",
+        },
+      },
+    },
+    mediumNotes: {
+      type: "String",
+      extensions: {
+        proxy: {
+          from: "medium_notes",
+        },
+      },
+    },
+    sortTitle: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "sort_title",
+        },
+      },
+    },
     genres: "[String!]!",
     reviewedMovie: {
-      type: SchemaNames.REVIEWED_MOVIES_JSON,
-      resolve: async (
-        source: ViewingNode,
-        _args: GatsbyResolveArgs,
-        context: GatsbyNodeContext
-      ) => {
-        return await findReviewedMovieNode(source.imdb_id, context.nodeModel);
+      type: `${SchemaNames.REVIEWED_MOVIES_JSON}`,
+      extensions: {
+        link: {
+          from: "imdb_id",
+          by: "imdbId",
+        },
       },
     },
     viewingNotes: {
@@ -66,34 +97,15 @@ export default {
         });
       },
     },
-    poster: {
-      type: "File!",
-      resolve: async (
-        source: ViewingNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const reviewedMovie = await findReviewedMovieNode(
-          source.imdb_id,
-          context.nodeModel
-        );
-
-        if (!reviewedMovie) {
-          return await findDefaultPosterNode(context.nodeModel);
-        }
-
-        return resolveFieldForNode(
-          "poster",
-          reviewedMovie,
-          context,
-          info,
-          args
-        );
-      },
-    },
+    poster: posterResolver,
   },
   extensions: {
     infer: false,
   },
 };
+
+export default function buildViewingsJsonSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [schema.buildObjectType(ViewingsJson)];
+}

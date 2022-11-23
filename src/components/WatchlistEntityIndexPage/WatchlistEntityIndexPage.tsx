@@ -1,9 +1,9 @@
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useReducer } from "react";
 import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
+import { GraphqlImage } from "../GraphqlImage";
 import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import { SelectField } from "../SelectField";
@@ -31,7 +31,11 @@ import {
   SortValue,
 } from "./WatchlistEntityIndexPage.reducer";
 
-function Progress({ entity }: { entity: WatchlistEntity }): JSX.Element {
+function Progress({
+  entity,
+}: {
+  entity: Queries.WatchlistEntityIndexItemFragment;
+}): JSX.Element {
   const percent = entity.reviewCount / entity.titleCount;
   const circumference = 17.5 * 2 * Math.PI;
 
@@ -67,7 +71,7 @@ function ListItem({
   entity,
   slugPath,
 }: {
-  entity: WatchlistEntity;
+  entity: Queries.WatchlistEntityIndexItemFragment;
   slugPath: string;
 }): JSX.Element {
   if (entity.avatar) {
@@ -77,13 +81,11 @@ function ListItem({
           className={listItemLinkCss}
           to={`/watchlist/${slugPath}/${entity.slug}/`}
         >
-          {entity.avatar && (
-            <GatsbyImage
-              image={entity.avatar.childImageSharp.gatsbyImageData}
-              className={listItemAvatarCss}
-              alt={`An image of ${entity.name}`}
-            />
-          )}
+          <GraphqlImage
+            image={entity.avatar}
+            className={listItemAvatarCss}
+            alt={`An image of ${entity.name}`}
+          />
           <Progress entity={entity} />
         </Link>
         <div className={listItemTitleCss}>
@@ -184,7 +186,7 @@ export default function WatchlistEntityIndexPage({
   data,
 }: {
   pageContext: PageContext;
-  data: PageQueryResult;
+  data: Queries.WatchlistEntityIndexPageQuery;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -253,46 +255,33 @@ interface PageContext {
   entityType: EntityType;
 }
 
-export interface WatchlistEntity {
-  name: string;
-  slug: string;
-  titleCount: number;
-  reviewCount: number;
-  avatar: null | {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
-interface PageQueryResult {
-  entity: {
-    nodes: WatchlistEntity[];
-  };
-}
-
 export const pageQuery = graphql`
-  query ($entityType: String!) {
+  fragment WatchlistEntityIndexItem on WatchlistEntitiesJson {
+    name
+    slug
+    titleCount
+    reviewCount
+    avatar {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 160
+          height: 160
+          placeholder: TRACED_SVG
+        )
+      }
+    }
+  }
+
+  query WatchlistEntityIndexPage($entityType: String!) {
     entity: allWatchlistEntitiesJson(
       sort: { fields: [name], order: ASC }
-      filter: { entity_type: { eq: $entityType } }
+      filter: { entityType: { eq: $entityType } }
     ) {
       nodes {
-        name
-        slug
-        titleCount: title_count
-        avatar {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 160
-              height: 160
-              placeholder: TRACED_SVG
-            )
-          }
-        }
+        ...WatchlistEntityIndexItem
       }
     }
   }

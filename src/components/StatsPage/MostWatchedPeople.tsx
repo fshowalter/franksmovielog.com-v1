@@ -104,12 +104,12 @@ export default function MostWatchedPeople({
 
 export const query = graphql`
   fragment MostWatchedPerson on MostWatchedPerson {
-    fullName: full_name
-    slug: slug
-    viewingCount: viewing_count
+    fullName
+    slug
+    viewingCount
     viewings {
       sequence
-      viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
+      viewingDate(formatString: "ddd MMM D, YYYY")
       venue
       medium
       title
@@ -132,7 +132,7 @@ export const query = graphql`
   }
 
   fragment MostWatchedPeople on MostWatchedPeople {
-    mostWatched: most_watched {
+    mostWatched {
       ...MostWatchedPerson
     }
   }

@@ -1,16 +1,34 @@
-import { SchemaNames } from "./schemaNames";
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 
 const GradeDistributionsJson = {
-  name: SchemaNames.GRADE_DISTRIBUTIONS_JSON,
+  name: "GradeDistributionsJson",
   interfaces: ["Node"],
   fields: {
     grade: "String!",
-    grade_value: "Int!",
-    review_count: "Int!",
+    gradeValue: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "grade_value",
+        },
+      },
+    },
+    reviewCount: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "review_count",
+        },
+      },
+    },
   },
   extensions: {
     infer: false,
   },
 };
 
-export default GradeDistributionsJson;
+export default function buildGradeDistributionsJsonSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [schema.buildObjectType(GradeDistributionsJson)];
+}

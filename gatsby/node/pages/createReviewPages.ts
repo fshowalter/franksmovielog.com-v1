@@ -34,11 +34,11 @@ function createOverratedDisappointmentsPage(createPage: Actions["createPage"]) {
   });
 }
 
-const query = `
+const query = `#graphql
 {
   reviews: allReviewedMoviesJson {
     nodes {
-      imdb_id
+      imdbId
       slug
     }
   }
@@ -48,7 +48,7 @@ const query = `
 interface QueryResult {
   reviews: {
     nodes: {
-      imdb_id: string;
+      imdbId: string;
       slug: string;
     }[];
   };
@@ -74,7 +74,7 @@ async function createIndividualReviewPages(
       path: `/reviews/${node.slug}/`,
       component: path.resolve("./src/components/ReviewPage/ReviewPage.tsx"),
       context: {
-        imdbId: node.imdb_id,
+        imdbId: node.imdbId,
       },
     });
   });

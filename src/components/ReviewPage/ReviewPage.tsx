@@ -290,17 +290,17 @@ export default function ReviewPage({
 
 export const pageQuery = graphql`
   query ReviewPage($imdbId: String!) {
-    movie: reviewedMovie(imdbId: $imdbId) {
+    movie: reviewedMoviesJson(imdbId: { eq: $imdbId }) {
       ...StructuredData
-      imdbId: imdb_id
+      imdbId
       title
       year
       countries
-      runtimeMinutes: runtime_minutes
+      runtimeMinutes
       grade
-      originalTitle: original_title
-      principalCastNames: principal_cast_names
-      directorNames: director_names
+      originalTitle
+      principalCastNames
+      directorNames
       review {
         linkedHtml
         excerpt
@@ -309,10 +309,10 @@ export const pageQuery = graphql`
         ...RelatedMovies
       }
       viewings {
-        date: viewing_date(formatString: "ddd MMM DD, YYYY")
+        date: viewingDate(formatString: "ddd MMM DD, YYYY")
         venue
         medium
-        mediumNotes: medium_notes
+        mediumNotes
         viewingNotes {
           linkedHtml
         }

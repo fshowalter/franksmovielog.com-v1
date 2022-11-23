@@ -68,7 +68,7 @@ export default function RelatedMovies({
 
 export const query = graphql`
   fragment RelatedMovies on ReviewedMoviesJson {
-    imdbId: imdb_id
+    imdbId
     title
     grade
     slug

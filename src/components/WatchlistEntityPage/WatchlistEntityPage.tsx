@@ -408,16 +408,16 @@ export const pageQuery = graphql`
           }
         }
         watchlistMovies {
-          imdbId: imdb_id
+          imdbId
           title
           year
           reviewedMovie {
             grade
-            gradeValue: grade_value
+            gradeValue
             slug
           }
-          sortTitle: sort_title
-          releaseDate: release_date
+          sortTitle
+          releaseDate
           poster {
             childImageSharp {
               gatsbyImageData(

@@ -1,16 +1,31 @@
-import { SchemaNames } from "./schemaNames";
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 
-const TopMediaJson = {
-  name: SchemaNames.VIEWING_COUNTS_FOR_DECADES_JSON,
+const ViewingCountsForDecadesJsonStat = {
+  name: "ViewingCountsForDecadesJsonStat",
+  fields: {
+    decade: "String!",
+    viewing_count: "Int!",
+  },
+};
+
+const ViewingCountsForDecadesJson = {
+  name: "ViewingCountsForDecadesJson",
   interfaces: ["Node"],
   fields: {
     viewing_year: "String!",
     total_viewing_count: "Int!",
-    stats: `[${SchemaNames.DECADE_STAT}!]!`,
+    stats: `[ViewingCountsForDecadesJsonStat!]!`,
   },
   extensions: {
     infer: false,
   },
 };
 
-export default TopMediaJson;
+export default function buildViewingCountsForDecadesJsonSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [
+    schema.buildObjectType(ViewingCountsForDecadesJsonStat),
+    schema.buildObjectType(ViewingCountsForDecadesJson),
+  ];
+}

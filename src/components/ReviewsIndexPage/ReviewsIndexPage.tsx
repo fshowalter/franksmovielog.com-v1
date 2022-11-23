@@ -361,18 +361,18 @@ export default function ReviewsIndexPage({
 export const pageQuery = graphql`
   fragment ReviewsIndexViewing on ViewingsJson {
     sequence
-    viewingYear: viewing_year
-    viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
-    releaseDate: release_date
+    viewingYear
+    viewingDate(formatString: "ddd MMM D, YYYY")
+    releaseDate
     title
     medium
     venue
     year
-    sortTitle: sort_title
+    sortTitle
     reviewedMovie {
       slug
       grade
-      gradeValue: grade_value
+      gradeValue
     }
     genres
     poster {
@@ -390,14 +390,14 @@ export const pageQuery = graphql`
 
   query ReviewsIndexPage {
     reviews: reviewStatsJson(review_year: { eq: "all" }) {
-      totalCount: reviews_created
+      totalCount: reviewsCreated
     }
     movie: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
       nodes {
         ...ReviewsIndexViewing
       }
       media: distinct(field: medium)
-      viewingYears: distinct(field: viewing_year)
+      viewingYears: distinct(field: viewingYear)
       releaseYears: distinct(field: year)
       genres: distinct(field: genres)
     }

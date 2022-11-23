@@ -300,30 +300,35 @@ interface PageQueryResult {
 
 export const pageQuery = graphql`
   query {
-    movie: allUnderseenGemsJson(sort: { fields: [release_date], order: DESC }) {
+    movie: allUnderseenGemsJson(
+      sort: { fields: [reviewedMovie___releaseDate], order: DESC }
+    ) {
       nodes {
-        imdbId: imdb_id
-        releaseDate: release_date
-        title
-        year
-        sortTitle: sort_title
-        slug
-        grade
-        gradeValue
+        imdbId
         genres
-        poster {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 200
-              placeholder: TRACED_SVG
-            )
+        reviewedMovie {
+          releaseDate
+          title
+          year
+          sortTitle
+          slug
+          grade
+          gradeValue
+
+          poster {
+            childImageSharp {
+              gatsbyImageData(
+                layout: CONSTRAINED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 200
+                placeholder: TRACED_SVG
+              )
+            }
           }
         }
       }
-      releaseYears: distinct(field: year)
+      releaseYears: distinct(field: reviewedMovie___year)
       genres: distinct(field: genres)
     }
   }

@@ -9,9 +9,11 @@ export type IGraphqlImage = {
 export function GraphqlImage({
   image,
   alt,
+  className,
 }: {
   image: IGraphqlImage;
   alt: string;
+  className?: string;
 }): JSX.Element | null {
   const gatsbyImageData = image?.childImageSharp?.gatsbyImageData;
 
@@ -19,5 +21,7 @@ export function GraphqlImage({
     return null;
   }
 
-  return <GatsbyImage image={gatsbyImageData} alt={alt} />;
+  return (
+    <GatsbyImage className={className} image={gatsbyImageData} alt={alt} />
+  );
 }

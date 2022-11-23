@@ -1,8 +1,6 @@
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import { Element } from "hast";
-import { selectAll } from "hast-util-select";
 import toHtml from "hast-util-to-html";
-import toHast from "mdast-util-to-hast";
-import remark from "remark";
 import { Parent } from "unist";
 import visit from "unist-util-visit";
 import { SchemaNames } from "./schemaNames";
@@ -28,136 +26,6 @@ interface FrontMatter {
   venue_notes: string;
   grade: string;
   date: string;
-}
-
-function fixFootnoteRefs(element: Element, sequence: number) {
-  const sups = selectAll("sup[id^=fnref]", element);
-  for (const sup of sups) {
-    sup.properties.id = sup.properties.id.replace(
-      "fnref-",
-      `fnref:${sequence}-`
-    );
-  }
-
-  const supAnchors = selectAll("a[href^=#fn-]", element);
-  for (const supAnchor of supAnchors) {
-    supAnchor.properties.href = supAnchor.properties.href.replace(
-      "#fn-",
-      `#fn:${sequence}-`
-    );
-  }
-
-  const listItems = selectAll("li[id^=fn-]", element);
-  for (const listItem of listItems) {
-    listItem.properties.id = listItem.properties.id.replace(
-      "fn-",
-      `fn:${sequence}-`
-    );
-  }
-
-  const returnAnchors = selectAll("a[href^=#fnref-]", element);
-  for (const returnAnchor of returnAnchors) {
-    returnAnchor.properties.href = returnAnchor.properties.href.replace(
-      "#fnref-",
-      `#fnref:${sequence}-`
-    );
-  }
-
-  return element;
-}
-
-function addVenueNotesFootnote(
-  element: Element,
-  sequence: number,
-  venueNotes: string
-) {
-  if (!venueNotes) {
-    return element;
-  }
-
-  const mdast = remark().parse(venueNotes);
-
-  const footNoteItemHast = toHast(mdast, {
-    allowDangerousHtml: true,
-  }) as Element;
-
-  if (footNoteItemHast && footNoteItemHast.children) {
-    const firstChild = footNoteItemHast.children[0] as Element;
-    footNoteItemHast.children = firstChild.children;
-  }
-
-  const venueFootnote: Element[] = [
-    {
-      type: "element",
-      tagName: "li",
-      properties: { id: `fn:${sequence}-v` },
-      children: [
-        { type: "text", value: "\n" },
-        footNoteItemHast,
-        {
-          type: "element",
-          tagName: "a",
-          properties: {
-            href: `#fnref:${sequence}-v`,
-            className: ["footnote-backref"],
-          },
-          children: [
-            {
-              type: "text",
-              value: "↩",
-            },
-          ],
-        },
-        { type: "text", value: "\n" },
-      ],
-    },
-  ];
-
-  const lastElement = element.children[element.children.length - 1] as Element;
-  let footNotesListElement: Element;
-
-  if (
-    lastElement &&
-    lastElement.properties &&
-    lastElement.properties.className &&
-    lastElement.properties.className === typeof "string" &&
-    lastElement.properties.className.includes("footnotes")
-  ) {
-    footNotesListElement = lastElement.children[3] as Element;
-  } else {
-    element.children.push({
-      type: "element",
-      tagName: "div",
-      properties: {
-        className: ["footnotes"],
-      },
-      children: [
-        { type: "text", value: "\n" },
-        { type: "element", tagName: "hr", properties: {}, children: [] },
-        { type: "text", value: "\n" },
-        {
-          type: "element",
-          tagName: "ol",
-          properties: {},
-          children: [{ type: "text", value: "\n" }],
-        },
-        { type: "text", value: "\n" },
-      ],
-    });
-
-    footNotesListElement = (
-      element.children[element.children.length - 1] as Element
-    ).children[3] as Element;
-  }
-
-  footNotesListElement.children.push(...venueFootnote);
-
-  return element;
-}
-
-function fixFootnotes(element: Element, sequence: number, venueNotes: string) {
-  fixFootnoteRefs(element, sequence);
-  addVenueNotesFootnote(element, sequence, venueNotes);
 }
 
 async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
@@ -323,8 +191,6 @@ const MarkdownRemark = {
           return null;
         }
 
-        fixFootnotes(htmlAst, frontMatter.sequence, frontMatter.venue_notes);
-
         const html = toHtml(htmlAst, {
           allowDangerousHtml: true,
         });
@@ -335,4 +201,8 @@ const MarkdownRemark = {
   },
 };
 
-export default MarkdownRemark;
+export default function buildMarkdownRemarkSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [schema.buildObjectType(MarkdownRemark)];
+}

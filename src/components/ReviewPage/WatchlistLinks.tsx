@@ -34,19 +34,19 @@ function WatchlistItem({
 }
 
 export default function WatchlistLinks({
-  movie,
+  watchlist,
   className = null,
 }: {
-  movie: Queries.WatchlistLinksFragment;
+  watchlist: Queries.WatchlistLinksFragment;
   className?: string | null;
 }): JSX.Element | null {
   return (
     <div className={`${containerCss} ${className || ""}`}>
       <ul className={listCss}>
-        {movie.watchlist.collections.map((collection) => {
+        {watchlist.collections.map((collection) => {
           return (
             <WatchlistItem
-              to={`/watchlist/collections/${collection.slug}/`}
+              to={`/watchlist/collections/${collection.slug!}/`}
               entity={collection}
               key={collection.slug}
             >
@@ -54,7 +54,7 @@ export default function WatchlistLinks({
             </WatchlistItem>
           );
         })}
-        {movie.watchlist.directors.map((director) => {
+        {watchlist.directors.map((director) => {
           return (
             <WatchlistItem
               entity={director}
@@ -65,7 +65,7 @@ export default function WatchlistLinks({
             </WatchlistItem>
           );
         })}
-        {movie.watchlist.performers.map((performer) => {
+        {watchlist.performers.map((performer) => {
           return (
             <WatchlistItem
               entity={performer}
@@ -76,7 +76,7 @@ export default function WatchlistLinks({
             </WatchlistItem>
           );
         })}
-        {movie.watchlist.writers.map((writer) => {
+        {watchlist.writers.map((writer) => {
           return (
             <WatchlistItem
               entity={writer}
@@ -91,6 +91,17 @@ export default function WatchlistLinks({
     </div>
   );
 }
+
+type WatchlistEntity = Queries.WatchlistLinkEntityFragment & {
+  slug: string;
+};
+
+type WatchlistLinks = Queries.WatchlistLinksFragment & {
+  performers: WatchlistEntity[];
+  directors: WatchlistEntity[];
+  writers: WatchlistEntity[];
+  collections: WatchlistEntity[];
+};
 
 export const query = graphql`
   fragment WatchlistLinkEntity on WatchlistEntitiesJson {
@@ -110,20 +121,18 @@ export const query = graphql`
     }
   }
 
-  fragment WatchlistLinks on ReviewedMoviesJson {
-    watchlist {
-      performers {
-        ...WatchlistLinkEntity
-      }
-      directors {
-        ...WatchlistLinkEntity
-      }
-      writers {
-        ...WatchlistLinkEntity
-      }
-      collections {
-        ...WatchlistLinkEntity
-      }
+  fragment WatchlistLinks on ReviewedMovieWatchlistEntities {
+    performers {
+      ...WatchlistLinkEntity
+    }
+    directors {
+      ...WatchlistLinkEntity
+    }
+    writers {
+      ...WatchlistLinkEntity
+    }
+    collections {
+      ...WatchlistLinkEntity
     }
   }
 `;

@@ -1,5 +1,4 @@
 import { graphql, Link } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
 import { useReducer, useRef } from "react";
 import Select from "react-select";
 import Button from "../Button";
@@ -48,24 +47,27 @@ function ListInfo({
   return <div className={listInfoCss}>{showingText}</div>;
 }
 
-function groupForMovie(movie: Movie, sortValue: SortType): string {
+function groupForMovie(
+  movie: Queries.OverratedDisappointmentsPageNodeFragment,
+  sortValue: SortType
+): string {
   switch (sortValue) {
     case "release-date-asc":
     case "release-date-desc": {
-      return movie.releaseDate.substring(0, 4);
+      return movie.reviewedMovie.releaseDate.substring(0, 4);
     }
     case "grade-asc":
     case "grade-desc": {
-      return movie.grade || "Unrated";
+      return movie.reviewedMovie.grade || "Unrated";
     }
     case "title": {
-      const letter = movie.sortTitle.substring(0, 1);
+      const letter = movie.reviewedMovie.sortTitle.substring(0, 1);
 
       if (letter.toLowerCase() == letter.toUpperCase()) {
         return "#";
       }
 
-      return movie.sortTitle.substring(0, 1).toLocaleUpperCase();
+      return movie.reviewedMovie.sortTitle.substring(0, 1).toLocaleUpperCase();
     }
     // no default
   }
@@ -75,10 +77,13 @@ function groupMovies({
   movies,
   sortValue,
 }: {
-  movies: Movie[];
+  movies: Queries.OverratedDisappointmentsPageNodeFragment[];
   sortValue: SortType;
-}): Map<string, Movie[]> {
-  const groupedMovies: Map<string, Movie[]> = new Map();
+}): Map<string, Queries.OverratedDisappointmentsPageNodeFragment[]> {
+  const groupedMovies: Map<
+    string,
+    Queries.OverratedDisappointmentsPageNodeFragment[]
+  > = new Map();
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortValue);
@@ -111,7 +116,7 @@ export function Head(): JSX.Element {
 export default function OverratedDisappointmentsPage({
   data,
 }: {
-  data: PageQueryResult;
+  data: Queries.OverratedDisappointmentsPageQuery;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -243,11 +248,11 @@ export default function OverratedDisappointmentsPage({
                       return (
                         <Poster
                           key={movie.imdbId}
-                          title={movie.title}
-                          year={movie.year}
-                          grade={movie.grade}
-                          slug={movie.slug}
-                          image={movie.poster}
+                          title={movie.reviewedMovie.title}
+                          year={movie.reviewedMovie.year}
+                          grade={movie.reviewedMovie.grade}
+                          slug={movie.reviewedMovie.slug}
+                          image={movie.reviewedMovie.poster}
                         />
                       );
                     })}
@@ -276,59 +281,40 @@ export default function OverratedDisappointmentsPage({
   );
 }
 
-export interface Movie {
-  imdbId: string;
-  title: string;
-  year: number;
-  releaseDate: string;
-  sortTitle: string;
-  genres: string[];
-  slug: string;
-  grade: string;
-  gradeValue: number;
-  poster: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
-interface PageQueryResult {
-  movie: {
-    nodes: Movie[];
-    releaseYears: string[];
-    genres: string[];
-  };
-}
-
 export const pageQuery = graphql`
-  query {
-    movie: allOverratedDisappointmentsJson(
-      sort: { fields: [release_date], order: DESC }
-    ) {
-      nodes {
-        imdbId: imdb_id
-        releaseDate: release_date
-        title
-        year
-        sortTitle: sort_title
-        slug
-        grade
-        gradeValue
-        genres
-        poster {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 200
-              placeholder: TRACED_SVG
-            )
-          }
+  fragment OverratedDisappointmentsPageNode on OverratedDisappointmentsJson {
+    imdbId
+    genres
+    reviewedMovie {
+      releaseDate
+      title
+      year
+      sortTitle
+      slug
+      grade
+      gradeValue
+      poster {
+        childImageSharp {
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
+            quality: 80
+            width: 200
+            placeholder: TRACED_SVG
+          )
         }
       }
-      releaseYears: distinct(field: year)
+    }
+  }
+
+  query OverratedDisappointmentsPage {
+    movie: allOverratedDisappointmentsJson(
+      sort: { fields: [reviewedMovie___releaseDate], order: DESC }
+    ) {
+      nodes {
+        ...OverratedDisappointmentsPageNode
+      }
+      releaseYears: distinct(field: reviewedMovie___year)
       genres: distinct(field: genres)
     }
   }

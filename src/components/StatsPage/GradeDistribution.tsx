@@ -57,6 +57,6 @@ export default function GradeDistributions({
 export const query = graphql`
   fragment GradeDistribution on GradeDistributionsJson {
     grade
-    reviewCount: review_count
+    reviewCount
   }
 `;

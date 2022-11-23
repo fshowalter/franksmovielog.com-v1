@@ -3,23 +3,38 @@ import type { GatsbyNodeContext, GatsbyResolveArgs } from "../type-definitions";
 import { ViewingNode } from "../ViewingsJson";
 import { WatchlistEntityNode } from "../WatchlistEntitiesJson";
 
-interface MostWatchedPersonNode {
-  imdb_id: string;
-  viewing_sequence_ids: number[];
-}
-
 export default function fieldsForMostWatchedType(
   type: "director" | "writer" | "performer"
 ) {
   return {
-    imdb_id: "String!",
-    full_name: "String!",
-    viewing_count: "Int!",
-    viewing_sequence_ids: `[Int!]!`,
+    imdbId: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "imdb_id",
+        },
+      },
+    },
+    fullName: {
+      type: "String!",
+      extensions: {
+        proxy: {
+          from: "full_name",
+        },
+      },
+    },
+    viewingCount: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "viewing_count",
+        },
+      },
+    },
     viewings: {
       type: `[${SchemaNames.VIEWINGS_JSON}!]!`,
       resolve: async (
-        source: MostWatchedPersonNode,
+        source: { viewing_sequence_ids: number[] },
         _args: GatsbyResolveArgs,
         context: GatsbyNodeContext
       ) => {
@@ -38,11 +53,16 @@ export default function fieldsForMostWatchedType(
 
         return entries;
       },
+      extensions: {
+        proxy: {
+          from: "viewing_sequence_ids",
+        },
+      },
     },
     slug: {
       type: "String",
       resolve: async (
-        source: MostWatchedPersonNode,
+        source: { imdbId: string },
         _args: GatsbyResolveArgs,
         context: GatsbyNodeContext
       ) => {
@@ -51,8 +71,8 @@ export default function fieldsForMostWatchedType(
           query: {
             filter: {
               reviewCount: { gte: 1 },
-              imdb_id: { eq: source.imdb_id },
-              entity_type: { eq: type },
+              imdbId: { eq: source.imdbId },
+              entityType: { eq: type },
             },
           },
         });

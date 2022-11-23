@@ -1,26 +1,26 @@
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import { MarkdownNode } from "./MarkdownRemark";
 import { SchemaNames } from "./schemaNames";
-import type {
-  GatsbyNode,
-  GatsbyNodeContext,
-  GatsbyResolveArgs,
-} from "./type-definitions";
+import type { GatsbyNodeContext, GatsbyResolveArgs } from "./type-definitions";
 import { WatchlistMovieNode } from "./WatchlistMoviesJson";
 
-export interface ReviewStatsNode extends GatsbyNode {
-  review_year: string;
-}
-
 const ReviewStatsJson = {
-  name: SchemaNames.REVIEW_STATS_JSON,
+  name: "ReviewStatsJson",
   interfaces: ["Node"],
   fields: {
     review_year: "String!",
-    reviews_created: "Int!",
+    reviewsCreated: {
+      type: "Int!",
+      extensions: {
+        proxy: {
+          from: "reviews_created",
+        },
+      },
+    },
     watchlistTitlesReviewed: {
       type: "Int!",
       resolve: async (
-        source: ReviewStatsNode,
+        source: { review_year: string },
         _args: GatsbyResolveArgs,
         context: GatsbyNodeContext
       ) => {
@@ -55,7 +55,7 @@ const ReviewStatsJson = {
           }));
         }
 
-        const imdb_ids = Array.from(entries).map((review) => {
+        const imdbIds = Array.from(entries).map((review) => {
           return review.frontmatter.imdb_id;
         });
 
@@ -64,7 +64,7 @@ const ReviewStatsJson = {
             type: SchemaNames.WATCHLIST_MOVIES_JSON,
             query: {
               filter: {
-                imdb_id: { in: imdb_ids },
+                imdbId: { in: imdbIds },
               },
             },
           });
@@ -78,4 +78,8 @@ const ReviewStatsJson = {
   },
 };
 
-export default ReviewStatsJson;
+export default function buildReviewStatsJsonSchema(
+  schema: NodePluginSchema
+): GatsbyGraphQLObjectType[] {
+  return [schema.buildObjectType(ReviewStatsJson)];
+}

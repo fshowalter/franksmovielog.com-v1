@@ -14,7 +14,7 @@ export default async function findReviewedMovieNode(
     type: SchemaNames.REVIEWED_MOVIES_JSON,
     query: {
       filter: {
-        imdb_id: {
+        imdbId: {
           eq: imdbId,
         },
       },

@@ -44,11 +44,11 @@ export default function StructuredData({
 
 export const query = graphql`
   fragment StructuredData on ReviewedMoviesJson {
-    imdbId: imdb_id
+    imdbId
     title
     year
     grade
-    directorNames: director_names
+    directorNames
     seoImage: backdrop {
       childImageSharp {
         resize(toFormat: JPG, width: 1200, quality: 80) {
