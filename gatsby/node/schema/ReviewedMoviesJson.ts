@@ -1,5 +1,6 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import path from "path";
+import { MarkdownNode } from "./MarkdownRemark";
 import { SchemaNames } from "./schemaNames";
 import type {
   GatsbyNode,
@@ -19,6 +20,7 @@ export interface ReviewedMovieNode extends GatsbyNode {
 const ReviewedMovieWatchlistEntity = {
   name: "ReviewedMovieWatchlistEntity",
   fields: {
+    imdb_id: "String!",
     name: "String!",
     slug: "String!",
     avatar: "File!",
@@ -88,6 +90,7 @@ const ReviewedMoviesJson = {
   name: SchemaNames.REVIEWED_MOVIES_JSON,
   interfaces: ["Node"],
   fields: {
+    imdb_id: "String!",
     title: "String!",
     year: "Int!",
     slug: "String!",
@@ -159,11 +162,23 @@ const ReviewedMoviesJson = {
     },
     review: {
       type: `${SchemaNames.MARKDOWN_REMARK}!`,
-      extensions: {
-        link: {
-          from: "imdb_id",
-          by: "frontmatter.imdb_id",
-        },
+      resolve: async (
+        source: ReviewedMovieNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        return await context.nodeModel.findOne<MarkdownNode>({
+          type: SchemaNames.MARKDOWN_REMARK,
+          query: {
+            filter: {
+              frontmatter: {
+                imdb_id: {
+                  eq: source.imdb_id,
+                },
+              },
+            },
+          },
+        });
       },
     },
     browseMore: {

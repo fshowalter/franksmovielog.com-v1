@@ -1,5 +1,5 @@
 import type { Node } from "gatsby";
-import type { GraphQLResolveInfo } from "graphql";
+import type { GraphQLFieldConfig, GraphQLResolveInfo } from "graphql";
 
 export type GatsbyNode = Node;
 
@@ -15,6 +15,11 @@ export interface GatsbyResolveArgs {
 }
 
 export type GatsbyResolveInfo = GraphQLResolveInfo;
+export type GatsbyFieldConfig = GraphQLFieldConfig<
+  GatsbyNode,
+  GatsbyNodeContext,
+  object
+>;
 
 export interface GatsbyNodeContext {
   nodeModel: GatsbyNodeModel;

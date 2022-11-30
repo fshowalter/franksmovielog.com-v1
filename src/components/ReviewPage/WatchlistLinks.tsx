@@ -104,7 +104,7 @@ type WatchlistLinks = Queries.WatchlistLinksFragment & {
 };
 
 export const query = graphql`
-  fragment WatchlistLinkEntity on WatchlistEntitiesJson {
+  fragment WatchlistLinkEntity on ReviewedMovieWatchlistEntity {
     name
     slug
     avatar {

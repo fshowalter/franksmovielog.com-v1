@@ -1,25 +1,18 @@
 import type { CreatePagesArgs } from "gatsby";
 import path from "path";
 
-const query = `
+const query = `#graphql
 {
-  viewing: allViewingsJson(
-    filter: { reviewedMovie: { id: { ne: null } } }
-    sort: {fields: sequence, order: DESC}
-  ) {
-    nodes {
-      sequence
-    }
+  viewings: viewingsWithReviews {
+    id
   }
 }
 `;
 
 interface QueryResult {
-  viewing: {
-    nodes: {
-      sequence: string;
-    }[];
-  };
+  viewings: {
+    id: string;
+  }[];
 }
 
 export default async function createHomePages({
@@ -37,7 +30,7 @@ export default async function createHomePages({
     return;
   }
 
-  const updates = queryResult.data.viewing.nodes;
+  const updates = queryResult.data.viewings;
   const perPage = 10;
   const numPages = Math.ceil(updates.length / perPage);
   Array.from({ length: numPages }).forEach((_, i) => {

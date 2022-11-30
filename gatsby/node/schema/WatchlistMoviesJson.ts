@@ -1,8 +1,8 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
+import posterResolver from "./resolvers/posterResolver";
 import type { ReviewedMovieNode } from "./ReviewedMoviesJson";
 import { SchemaNames } from "./schemaNames";
 import type { GatsbyNode, GatsbyNodeContext } from "./type-definitions";
-import posterResolver from "./utils/posterResolver";
 import type { WatchlistEntityNode } from "./WatchlistEntitiesJson";
 
 export interface WatchlistMovieNode extends GatsbyNode {

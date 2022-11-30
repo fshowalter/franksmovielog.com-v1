@@ -390,7 +390,7 @@ interface PageQueryResult {
 export const pageQuery = graphql`
   query ($slug: String!, $entityType: String!) {
     entity: allWatchlistEntitiesJson(
-      filter: { entity_type: { eq: $entityType }, slug: { eq: $slug } }
+      filter: { entityType: { eq: $entityType }, slug: { eq: $slug } }
       limit: 1
     ) {
       nodes {

@@ -10,10 +10,12 @@ export function GraphqlImage({
   image,
   alt,
   className,
+  loading = "lazy",
 }: {
   image: IGraphqlImage;
   alt: string;
   className?: string;
+  loading: "eager" | "lazy";
 }): JSX.Element | null {
   const gatsbyImageData = image?.childImageSharp?.gatsbyImageData;
 
@@ -22,6 +24,11 @@ export function GraphqlImage({
   }
 
   return (
-    <GatsbyImage className={className} image={gatsbyImageData} alt={alt} />
+    <GatsbyImage
+      className={className}
+      image={gatsbyImageData}
+      alt={alt}
+      loading={loading}
+    />
   );
 }

@@ -1,9 +1,9 @@
 import { graphql, Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 import { useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import DateIcon from "../DateIcon";
 import Grade from "../Grade";
+import { GraphqlImage } from "../GraphqlImage";
 import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
@@ -56,12 +56,10 @@ export default function HomePage({
   data,
 }: {
   pageContext: PageContext;
-  data: Queries.HomePageQuery;
+  data: NonNullable<Queries.HomePageQuery>;
 }): JSX.Element {
   const listHeader = useRef<HTMLDivElement>(null);
-  const {
-    viewing: { nodes: viewings },
-  } = data;
+  const { viewings } = data;
 
   return (
     <Layout>
@@ -70,11 +68,6 @@ export default function HomePage({
           {viewings.map((viewing, index) => {
             const listItemValue =
               pageContext.numberOfItems - pageContext.skip - index;
-            const reviewedMovie = viewing.reviewedMovie;
-
-            if (!reviewedMovie) {
-              return null;
-            }
 
             return (
               <li
@@ -86,45 +79,35 @@ export default function HomePage({
                   <Link
                     rel="canonical"
                     className={imageLinkCss}
-                    to={`/reviews/${reviewedMovie.slug}/`}
+                    to={`/reviews/${viewing.slug}/`}
                   >
-                    {reviewedMovie.backdrop?.childImageSharp && (
-                      <GatsbyImage
-                        image={
-                          reviewedMovie.backdrop.childImageSharp.gatsbyImageData
-                        }
-                        alt={`A still from ${reviewedMovie.title} (${reviewedMovie.year})`}
-                        loading={index === 0 ? "eager" : "lazy"}
-                      />
-                    )}
+                    <GraphqlImage
+                      image={viewing.backdrop}
+                      alt={`A still from ${viewing.title} (${viewing.year})`}
+                      loading={index === 0 ? "eager" : "lazy"}
+                    />
                   </Link>
                   <header className={reviewHeaderCss}>
                     <h2 className={articleHeadingCss}>
-                      <Link
-                        to={`/reviews/${reviewedMovie.slug}/`}
-                        rel="canonical"
-                      >
-                        {reviewedMovie.title}{" "}
-                        <span className={reviewYearCss}>
-                          {reviewedMovie.year}
-                        </span>
+                      <Link to={`/reviews/${viewing.slug}/`} rel="canonical">
+                        {viewing.title}{" "}
+                        <span className={reviewYearCss}>{viewing.year}</span>
                       </Link>
                     </h2>
                     <Grade
-                      grade={reviewedMovie.grade}
+                      grade={viewing.grade}
                       className={reviewGradeCss}
                       width={140}
                       height={28}
                     />
                     <p className={reviewCreditsCss}>
-                      Directed by {toSentenceArray(reviewedMovie.directorNames)}
-                      . Starring{" "}
-                      {toSentenceArray(reviewedMovie.principalCastNames)}.
+                      Directed by {toSentenceArray(viewing.directorNames)}.
+                      Starring {toSentenceArray(viewing.principalCastNames)}.
                     </p>
                   </header>
                   <RenderedMarkdown
                     className={articleBodyCss}
-                    text={reviewedMovie.review.linkedExcerpt}
+                    text={viewing.excerpt}
                     tag="main"
                   />
                   <footer className={articleFooterCss}>
@@ -153,37 +136,30 @@ export default function HomePage({
 
 export const pageQuery = graphql`
   query HomePage($skip: Int!, $limit: Int!) {
-    viewing: allViewingsJson(
-      sort: { fields: sequence, order: DESC }
+    viewings: viewingsWithReviews(
+      sort: { fields: sequence, order: ASC }
       limit: $limit
       skip: $skip
-      filter: { reviewedMovie: { id: { ne: null } } }
     ) {
-      nodes {
-        imdbId
-        sequence
-        date: viewingDate(formatString: "DD MMM, YYYY")
-        reviewedMovie {
-          slug
-          grade
-          title
-          year
-          principalCastNames
-          directorNames
-          review {
-            linkedExcerpt
-          }
-          backdrop {
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                formats: [JPG, AVIF]
-                quality: 80
-                width: 640
-                placeholder: TRACED_SVG
-              )
-            }
-          }
+      imdbId
+      sequence
+      title
+      year
+      date: viewingDate(formatString: "DD MMM, YYYY")
+      slug
+      grade
+      principalCastNames
+      directorNames
+      excerpt
+      backdrop {
+        childImageSharp {
+          gatsbyImageData(
+            layout: CONSTRAINED
+            formats: [JPG, AVIF]
+            quality: 80
+            width: 640
+            placeholder: TRACED_SVG
+          )
         }
       }
     }

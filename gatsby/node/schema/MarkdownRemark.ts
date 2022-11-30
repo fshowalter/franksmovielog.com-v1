@@ -1,8 +1,7 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import { Element } from "hast";
 import toHtml from "hast-util-to-html";
-import { Parent } from "unist";
-import visit from "unist-util-visit";
+import excerptHtmlResolver from "./resolvers/excerptHtmlResolver";
 import { SchemaNames } from "./schemaNames";
 import type {
   GatsbyNode,
@@ -54,51 +53,17 @@ async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
   return result;
 }
 
-function removeFootnotes(element: Element) {
-  visit(
-    element,
-    "element",
-    function (
-      element: Element,
-      index: number | null,
-      parent: Parent | undefined
-    ) {
-      if (
-        parent &&
-        index &&
-        element.tagName === "div" &&
-        element.properties &&
-        element.properties.className &&
-        typeof element.properties.className === "string" &&
-        element.properties.className.includes("footnotes")
-      ) {
-        parent.children.splice(index, 1);
-        return [visit.SKIP, index];
-      }
-
-      if (
-        parent &&
-        index &&
-        element.tagName === "sup" &&
-        element.properties &&
-        element.properties.id &&
-        typeof element.properties.id === "string" &&
-        element.properties.id.startsWith("fnref-")
-      ) {
-        parent.children.splice(index, 1);
-        return [visit.SKIP, index];
-      }
-    }
-  );
-
-  return element;
-}
-
 const MarkdownRemark = {
   name: SchemaNames.MARKDOWN_REMARK,
   interfaces: ["Node"],
   fields: {
-    linkedExcerpt: {
+    html: {
+      type: "String!",
+      extensions: {
+        linkReviewedMovies: {},
+      },
+    },
+    excerptHtml: {
       type: "String",
       args: {
         includeCssClass: {
@@ -106,57 +71,9 @@ const MarkdownRemark = {
           defaultValue: true,
         },
       },
-      resolve: async (
-        source: MarkdownNode,
-        args: { includeCssClass: true },
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const rawMarkdownBody = await resolveFieldForNode<string>(
-          "rawMarkdownBody",
-          source,
-          context,
-          info,
-          { format: "HTML", pruneLength: 20000, truncate: false }
-        );
-
-        if (!rawMarkdownBody) {
-          return null;
-        }
-
-        const hasExcerptBreak = rawMarkdownBody.includes("<!-- end -->");
-
-        const excerptAst = await resolveFieldForNode<Element>(
-          "excerptAst",
-          source,
-          context,
-          info,
-          { pruneLength: 20000, truncate: false }
-        );
-
-        if (!excerptAst) {
-          return null;
-        }
-
-        removeFootnotes(excerptAst);
-
-        let excerpt = toHtml(excerptAst, {
-          allowDangerousHtml: true,
-        });
-
-        if (hasExcerptBreak) {
-          excerpt = excerpt.replace(/\n+$/, "");
-          excerpt = excerpt.replace(
-            /<\/p>$/,
-            ` <a ${
-              args.includeCssClass ? 'class="globalExcerptLinkCss"' : ""
-            } href="/reviews/${
-              source.frontmatter.slug
-            }/">Continue reading...</a></p>`
-          );
-        }
-
-        return addReviewLinks(excerpt, context.nodeModel);
+      resolve: excerptHtmlResolver(),
+      extensions: {
+        linkReviewedMovies: {},
       },
     },
     linkedHtml: {

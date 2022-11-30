@@ -313,7 +313,7 @@ export const pageQuery = graphql`
         venue
         medium
         mediumNotes
-        viewingNotes {
+        viewingNote {
           linkedHtml
         }
         sequence

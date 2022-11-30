@@ -24,5 +24,8 @@ export default async function resolveFieldForNode<T>(
     return null;
   }
 
-  return (await resolver(nodeItem, args, context, { ...info, fieldName })) as T;
+  return (await resolver(nodeItem, args, context, {
+    ...info,
+    fieldName,
+  })) as T;
 }

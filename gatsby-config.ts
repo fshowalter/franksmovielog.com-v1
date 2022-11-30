@@ -145,7 +145,7 @@ const config: GatsbyConfig = {
     gatsbyPluginCatchLinks,
     gatsbyPluginManifest,
     gatsbyPluginFeed,
-    "gatsby-plugin-preact",
+    "gatsby-plugin-vanilla-extract",
   ],
 };
 

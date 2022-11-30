@@ -4,8 +4,8 @@ import {
   GatsbyResolveArgs,
   GatsbyResolveInfo,
 } from "../type-definitions";
-import findReviewedMovieNode from "./findReviewedMovieNode";
-import resolveFieldForNode from "./resolveFieldForNode";
+import findReviewedMovieNode from "../utils/findReviewedMovieNode";
+import resolveFieldForNode from "../utils/resolveFieldForNode";
 
 export default {
   type: "File!",

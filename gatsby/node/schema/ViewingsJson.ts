@@ -1,111 +1,284 @@
-import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
+import type { Actions, CreateResolversArgs, NodePluginSchema } from "gatsby";
+import { MarkdownNode } from "./MarkdownRemark";
+import posterResolver from "./resolvers/posterResolver";
+import {
+  findReviewedMovieNode,
+  reviewedMovieResolver,
+} from "./resolvers/reviewedMovieResolver";
 import { SchemaNames } from "./schemaNames";
-import type { GatsbyNode, GatsbyNodeContext } from "./type-definitions";
-import posterResolver from "./utils/posterResolver";
+import type {
+  GatsbyNode,
+  GatsbyNodeContext,
+  GatsbyResolveInfo,
+} from "./type-definitions";
+import resolveFieldForNode from "./utils/resolveFieldForNode";
 
 export interface ViewingNode extends GatsbyNode {
   imdbId: string;
   sequence: number;
 }
 
+const commonFields = {
+  imdbId: "String!",
+  title: "String!",
+  year: "Int!",
+  sequence: "Int!",
+  venue: "String",
+  medium: "String",
+  genres: "[String!]!",
+  releaseDate: "String!",
+  viewingDate: {
+    type: "Date!",
+    extensions: {
+      dateformat: {},
+    },
+  },
+  viewingYear: "Int!",
+  mediumNotes: "String",
+  sortTitle: "String!",
+  backdrop: {
+    type: "File",
+    extensions: {
+      proxyToReviewedMovie: {
+        fieldName: "backdrop",
+      },
+    },
+  },
+  viewingNote: {
+    type: SchemaNames.MARKDOWN_REMARK,
+    resolve: async (
+      source: ViewingNode,
+      _args: unknown,
+      context: GatsbyNodeContext
+    ) => {
+      return await context.nodeModel.findOne({
+        type: SchemaNames.MARKDOWN_REMARK,
+        query: {
+          filter: {
+            fileAbsolutePath: {
+              regex: `//viewing_notes/${source.sequence
+                .toString()
+                .padStart(4, "0")}-.*/`,
+            },
+          },
+        },
+      });
+    },
+  },
+  excerpt: {
+    type: "String",
+    resolve: async (
+      source: ViewingNode,
+      args: { includeCssClass: true },
+      context: GatsbyNodeContext,
+      info: GatsbyResolveInfo
+    ) => {
+      const reviewedMovieNode = await findReviewedMovieNode(
+        source.imdbId,
+        context.nodeModel
+      );
+
+      if (!reviewedMovieNode) {
+        return null;
+      }
+
+      const { totalCount } = await context.nodeModel.findAll<ViewingNode>({
+        type: SchemaNames.VIEWINGS_JSON,
+        query: {
+          filter: {
+            imdbId: {
+              eq: source.imdbId,
+            },
+          },
+        },
+      });
+
+      if ((await totalCount()) > 1) {
+        const viewingNoteNode = await resolveFieldForNode<MarkdownNode>(
+          "viewingNote",
+          source,
+          context,
+          info,
+          args
+        );
+
+        if (viewingNoteNode) {
+          return resolveFieldForNode<string>(
+            "html",
+            viewingNoteNode,
+            context,
+            info,
+            args
+          );
+        }
+      }
+
+      const reviewNode = await resolveFieldForNode<MarkdownNode>(
+        "review",
+        reviewedMovieNode,
+        context,
+        info,
+        args
+      );
+
+      if (!reviewNode) {
+        return null;
+      }
+
+      return await resolveFieldForNode<string>(
+        "excerptHtml",
+        reviewNode,
+        context,
+        info,
+        args
+      );
+    },
+  },
+  poster: posterResolver,
+};
+
 const ViewingsJson = {
   name: SchemaNames.VIEWINGS_JSON,
   interfaces: ["Node"],
   fields: {
-    title: "String!",
-    year: "Int!",
-    sequence: "Int!",
-    venue: "String",
-    medium: "String",
-    imdbId: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "imdb_id",
-        },
-      },
-    },
-    releaseDate: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "release_date",
-        },
-      },
-    },
-    viewingDate: {
-      type: "Date!",
-      extensions: {
-        dateformat: {},
-        proxy: {
-          from: "viewing_date",
-        },
-      },
-    },
-    viewingYear: {
-      type: "Int!",
-      extensions: {
-        proxy: {
-          from: "viewing_year",
-        },
-      },
-    },
-    mediumNotes: {
-      type: "String",
-      extensions: {
-        proxy: {
-          from: "medium_notes",
-        },
-      },
-    },
-    sortTitle: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "sort_title",
-        },
-      },
-    },
-    genres: "[String!]!",
+    ...commonFields,
     reviewedMovie: {
       type: `${SchemaNames.REVIEWED_MOVIES_JSON}`,
+      resolve: reviewedMovieResolver(),
+    },
+    slug: {
+      type: "String",
       extensions: {
-        link: {
-          from: "imdb_id",
-          by: "imdbId",
+        proxyToReviewedMovie: {
+          fieldName: "slug",
         },
       },
     },
-    viewingNotes: {
-      type: SchemaNames.MARKDOWN_REMARK,
-      resolve: async (
-        source: ViewingNode,
-        _args: unknown,
-        context: GatsbyNodeContext
-      ) => {
-        return await context.nodeModel.findOne({
-          type: SchemaNames.MARKDOWN_REMARK,
-          query: {
-            filter: {
-              fileAbsolutePath: {
-                regex: `//viewing_notes/${source.sequence
-                  .toString()
-                  .padStart(4, "0")}-.*/`,
-              },
-            },
-          },
-        });
+    grade: {
+      type: "String",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "grade",
+        },
       },
     },
-    poster: posterResolver,
+    principalCastNames: {
+      type: "[String!]",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "principalCastNames",
+        },
+      },
+    },
+    directorNames: {
+      type: "[String!]",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "directorNames",
+        },
+      },
+    },
   },
   extensions: {
     infer: false,
   },
 };
 
-export default function buildViewingsJsonSchema(
-  schema: NodePluginSchema
-): GatsbyGraphQLObjectType[] {
-  return [schema.buildObjectType(ViewingsJson)];
+const ViewingWithReview = {
+  name: `ViewingWithReview`,
+  interfaces: ["Node"],
+  fields: {
+    ...commonFields,
+    reviewedMovie: {
+      type: `${SchemaNames.REVIEWED_MOVIES_JSON}!`,
+      resolve: reviewedMovieResolver(),
+    },
+    slug: {
+      type: "String!",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "slug",
+        },
+      },
+    },
+    grade: {
+      type: "String!",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "grade",
+        },
+      },
+    },
+    principalCastNames: {
+      type: "[String!]!",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "principalCastNames",
+        },
+      },
+    },
+    directorNames: {
+      type: "[String!]!",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "directorNames",
+        },
+      },
+    },
+  },
+};
+
+export function buildViewingsJsonSchema(
+  schema: NodePluginSchema,
+  createTypes: Actions["createTypes"]
+) {
+  createTypes([
+    schema.buildObjectType(ViewingsJson),
+    schema.buildObjectType(ViewingWithReview),
+  ]);
+}
+
+export function buildViewingsWithReviewQuery(
+  createResolvers: CreateResolversArgs["createResolvers"]
+) {
+  createResolvers({
+    Query: {
+      viewingsWithReviews: {
+        type: `[ViewingWithReview!]!`,
+        args: {
+          limit: "Int",
+          skip: "Int",
+          sort: "ViewingWithReviewSortInput",
+        },
+        resolve: async (
+          _source: unknown,
+          args: {
+            limit: number;
+            skip: number;
+            sort: {
+              fields: Array<string>;
+              order: Array<boolean | "asc" | "desc" | "ASC" | "DESC">;
+            };
+          },
+          context: GatsbyNodeContext
+        ) => {
+          const { limit = 0, skip = 0, sort } = args || {};
+
+          const { fields = ["sequence"], order = ["DESC"] } = sort || {};
+
+          const { entries } = await context.nodeModel.findAll({
+            type: "ViewingsJson",
+            query: {
+              filter: { reviewedMovie: { id: { ne: null } } },
+              limit: limit,
+              skip: skip,
+              sort: { fields: fields, order: order },
+            },
+          });
+
+          return entries;
+        },
+      },
+    },
+  });
 }

@@ -1,4 +1,9 @@
-import type { CreateSchemaCustomizationArgs } from "gatsby";
+import type {
+  CreateResolversArgs,
+  CreateSchemaCustomizationArgs,
+} from "gatsby";
+import buildLinkReviewedMoviesExtension from "./schema/extensions/linkReviewedMovies";
+import buildProxyToReviewedMovieExtension from "./schema/extensions/proxyToReviewedMovie";
 import buildGradeDistributionsJsonSchema from "./schema/GradeDistributionsJson";
 import buildMarkdownRemarkSchema from "./schema/MarkdownRemark";
 import buildMostWatchedDirectorsJsonSchema from "./schema/MostWatchedDirectorsJson";
@@ -13,21 +18,27 @@ import buildTopMediaJsonSchema from "./schema/TopMediaJson";
 import buildTopVenuesJsonSchema from "./schema/TopVenuesJson";
 import buildUnderseenGemsJsonSchema from "./schema/UnderseenGemsJson";
 import buildViewingCountsForDecadesJsonSchema from "./schema/ViewingCountsForDecadesJson";
-import buildViewingsJsonSchema from "./schema/ViewingsJson";
+import {
+  buildViewingsJsonSchema,
+  buildViewingsWithReviewQuery,
+} from "./schema/ViewingsJson";
 import buildViewingStatsJsonSchema from "./schema/ViewingStatsJson";
 import buildWatchlistEntitiesJsonSchema from "./schema/WatchlistEntitiesJson";
 import buildWatchlistMoviesJsonSchema from "./schema/WatchlistMoviesJson";
 
-export default function createSchemaCustomization({
+export function createSchemaCustomization({
   actions,
   schema,
 }: CreateSchemaCustomizationArgs) {
-  const { createTypes } = actions;
+  const { createTypes, createFieldExtension } = actions;
+
+  buildProxyToReviewedMovieExtension(createFieldExtension);
+  buildLinkReviewedMoviesExtension(createFieldExtension);
+  buildViewingsJsonSchema(schema, createTypes);
 
   const typeDefs = [
     ...buildViewingCountsForDecadesJsonSchema(schema),
     ...buildMostWatchedPeopleSchema(schema),
-    ...buildViewingsJsonSchema(schema),
     ...buildWatchlistMoviesJsonSchema(schema),
     ...buildMarkdownRemarkSchema(schema),
     ...buildReviewedMoviesJsonSchema(schema),
@@ -46,4 +57,8 @@ export default function createSchemaCustomization({
   ];
 
   createTypes(typeDefs);
+}
+
+export function createResolvers({ createResolvers }: CreateResolversArgs) {
+  buildViewingsWithReviewQuery(createResolvers);
 }
