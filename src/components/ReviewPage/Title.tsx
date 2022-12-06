@@ -39,12 +39,12 @@ function Details({ movie }: { movie: Queries.ReviewTitleFragment }) {
       }, null)}{" "}
       <span>|</span> {movie.runtimeMinutes}
       &#x02009;min{" "}
-      <span>
+      <Box as="span" display={{ desktop: "none" }}>
         <span>|</span>{" "}
         <Box as="a" href="#credits" color="accent" textDecoration="none">
           More...
         </Box>
-      </span>
+      </Box>
     </Box>
   );
 }
@@ -53,13 +53,13 @@ export default function Title({ movie, ...rest }: IHeaderProps) {
   return (
     <Box as="header" {...rest}>
       <Grid>
-        <GridArea name="title" textAlign="center">
+        <GridArea name="title">
           <PageTitle>{movie.title}</PageTitle>
         </GridArea>
-        <GridArea name="originalTitle" textAlign="center">
+        <GridArea name="originalTitle">
           <OriginalTitle originalTitle={movie.originalTitle} />
         </GridArea>
-        <GridArea name="details" textAlign="center">
+        <GridArea name="details">
           <Details movie={movie} />
         </GridArea>
       </Grid>

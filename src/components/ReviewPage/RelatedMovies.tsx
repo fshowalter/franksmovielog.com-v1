@@ -4,13 +4,13 @@ import Grade from "../Grade";
 import { GraphqlImage } from "../GraphqlImage";
 import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
-import { Spacer } from "../Spacer";
 import {
   gradeStyle,
   gridAreas,
   gridStyle,
   listItemGridAreas,
   listItemGridStyle,
+  movieListStyle,
   stillStyle,
 } from "./RelatedMovies.css";
 
@@ -36,7 +36,6 @@ function SectionHeading({
       as="header"
       display="flex"
       justifyContent="space-between"
-      boxShadow="borderBottom"
       lineHeight={2}
     >
       <Box as="h3" fontWeight="normal" fontSize="normal">
@@ -54,9 +53,9 @@ function SectionHeading({
 
 function ListItem({ movie }: { movie: Queries.RelatedMovieDetailsFragment }) {
   return (
-    <ListItemGrid as="li" key={movie.imdbId} background="zebra">
+    <ListItemGrid as="li" key={movie.imdbId}>
       <ListItemGridArea name="still">
-        <Link to={`/reviews/${movie.slug}/`} flex={1} className={stillStyle}>
+        <Link to={`/reviews/${movie.slug}/`} className={stillStyle}>
           <GraphqlImage
             image={movie.backdrop}
             alt={`A still from ${movie.title} (${movie.year})`}
@@ -101,14 +100,7 @@ function MovieList({
   }
 
   return (
-    <Box
-      as="ul"
-      display="flex"
-      padding={0}
-      justifyContent="space-between"
-      flexDirection="column"
-      margin="center"
-    >
+    <Box as="ul" className={movieListStyle}>
       {movies.map((movie) => {
         return <ListItem key={movie.imdbId} movie={movie} />;
       })}
@@ -126,18 +118,20 @@ export default function RelatedMovies({
 }: IRelatedMoviesProps) {
   console.log(relatedMovies);
   return (
-    <Box {...rest}>
+    <Box {...rest} display="flex" flexDirection="column" rowGap={64}>
       {relatedMovies.watchlist.collections.map((collection) => (
-        <Box as="nav" key={collection.name}>
-          <SectionHeading
-            leadText="More"
-            boldText={collection.name}
-            linkTarget={`/watchlist/collections/${collection.slug}/`}
-          />
-          <Spacer axis="vertical" size={8} />
-          <MovieList movies={collection.browseMore} />
-          <Spacer axis="vertical" size={48} />
-        </Box>
+        <Grid as="nav" key={collection.name}>
+          <GridArea name="heading" boxShadow="borderBottom">
+            <SectionHeading
+              leadText="More"
+              boldText={collection.name}
+              linkTarget={`/watchlist/collections/${collection.slug}/`}
+            />
+          </GridArea>
+          <GridArea name="list">
+            <MovieList movies={collection.browseMore} />
+          </GridArea>
+        </Grid>
       ))}
       {relatedMovies.watchlist.performers.map((performer) => (
         <Box as="nav" key={performer.slug}>
@@ -170,7 +164,7 @@ export default function RelatedMovies({
         </Box>
       ))}
       <Grid as="nav">
-        <GridArea name="heading">
+        <GridArea name="heading" boxShadow="borderBottom">
           <SectionHeading
             leadText="More"
             boldText="Reviews"
@@ -199,7 +193,7 @@ export const query = graphql`
           formats: [JPG, AVIF]
           quality: 80
           placeholder: TRACED_SVG
-          width: 224
+          width: 248
         )
       }
     }

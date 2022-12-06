@@ -1,15 +1,19 @@
 import { style, styleVariants } from "@vanilla-extract/css";
-import { minMediaQuery } from "../../styles/breakpoints";
+import { breakpoints, minMediaQuery } from "../../styles/breakpoints";
+import {
+  MAX_CONTENT_WIDTH_WITH_GUTTERS,
+  MAX_STILL_WIDTH,
+} from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const pageCanvasStyle = style({
   minHeight: "100dvh",
-  maxWidth: "1408px",
+  maxWidth: `clamp(${MAX_STILL_WIDTH}, 95vw, ${breakpoints.max})`,
   margin: "0 auto",
 });
 
 export const contentStyle = style({
-  maxWidth: "1280px",
+  // maxWidth: "1280px",
   position: "relative",
 });
 
@@ -26,9 +30,9 @@ export const gridStyle = style({
           ["children", "header"],
           ["children", SPACER],
         ],
-        columns: ["992px", "224px"],
+        columns: [MAX_CONTENT_WIDTH_WITH_GUTTERS, "224px"],
       }),
-      columnGap: "64px",
+      columnGap: "32px",
     },
   },
 });

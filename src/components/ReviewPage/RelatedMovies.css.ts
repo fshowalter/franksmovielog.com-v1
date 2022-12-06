@@ -1,6 +1,7 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { GUTTER, space } from "../../styles/spacing";
+import { backgroundColors } from "../../styles/colors.css";
+import { GUTTER, MAX_POSTER_WIDTH, size } from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gradeStyle = style({
@@ -12,7 +13,19 @@ export const gradeStyle = style({
 export const stillStyle = style({
   borderRadius: "8px",
   overflow: "hidden",
-  maxWidth: "224px",
+  maxWidth: MAX_POSTER_WIDTH,
+  display: "block",
+});
+
+export const movieListStyle = style({
+  padding: 0,
+  "@media": {
+    [minMediaQuery("desktop")]: {
+      display: "grid",
+      gridTemplateColumns: "repeat(4,1fr)",
+      columnGap: size[24],
+    },
+  },
 });
 
 export const gridStyle = style({
@@ -22,17 +35,25 @@ export const gridStyle = style({
       [SPACER, "heading", SPACER],
       ["list", "list", "list"],
     ],
-    columns: [GUTTER, "calc(100% - 40px)", GUTTER],
+    columns: [GUTTER, "auto", GUTTER],
   }),
   "@media": {
     [minMediaQuery("desktop")]: {
-      ...gridTemplate<GridAreas, 3>({
+      padding: `0 ${GUTTER}`,
+      ...gridTemplate<GridAreas, 1>({
         rows: [
-          [SPACER, "heading", SPACER],
-          ["list", "list", "list"],
+          { [size[8]]: SPACER },
+          ["heading"],
+          { [size[8]]: SPACER },
+          ["list"],
         ],
-        columns: [GUTTER, "calc(100% - 40px)", GUTTER],
+        columns: ["auto"],
       }),
+      selectors: {
+        "&:nth-child(odd)": {
+          backgroundColor: backgroundColors.subtle,
+        },
+      },
     },
   },
 });
@@ -54,24 +75,37 @@ export const listItemGridStyle = style({
   display: "grid",
   ...gridTemplate<ListItemGridAreas, 5>({
     rows: [
-      { [space[24]]: SPACER },
+      { [size[24]]: SPACER },
       [SPACER, "title", SPACER, "still", SPACER],
+      { [size[8]]: [SPACER, SPACER, SPACER, "still", SPACER] },
       [SPACER, "grade", SPACER, "still", SPACER],
-      { [space[24]]: SPACER },
+      [SPACER, SPACER, SPACER, "still", SPACER],
+      { [size[24]]: SPACER },
     ],
-    columns: [GUTTER, "8fr", "24px", "8fr", GUTTER],
+    columns: [GUTTER, " 1fr", "24px", "1fr", GUTTER],
   }),
+  selectors: {
+    "&:nth-child(even)": {
+      backgroundColor: backgroundColors.subtle,
+    },
+  },
   "@media": {
     [minMediaQuery("desktop")]: {
-      ...gridTemplate<ListItemGridAreas, 4>({
+      ...gridTemplate<ListItemGridAreas, 1>({
         rows: [
-          { [space[24]]: SPACER },
-          [SPACER, "title", "still", SPACER],
-          [SPACER, "grade", "still", SPACER],
-          { [space[24]]: SPACER },
+          { [size[16]]: SPACER },
+          ["still"],
+          ["title"],
+          { "1fr": ["grade"] },
+          { [size[24]]: SPACER },
         ],
-        columns: [GUTTER, "auto", "auto", GUTTER],
+        columns: ["auto"],
       }),
+      selectors: {
+        "&:nth-child(even)": {
+          backgroundColor: "unset",
+        },
+      },
     },
   },
 });

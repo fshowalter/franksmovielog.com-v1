@@ -86,10 +86,12 @@ function ViewingNote({
     return null;
   }
   return (
-    <RenderedMarkdown
-      // eslint-disable-next-line react/no-danger
-      text={viewing.viewingNote.linkedHtml}
-    />
+    <Box paddingBottom={24}>
+      <RenderedMarkdown
+        // eslint-disable-next-line react/no-danger
+        text={viewing.viewingNote.linkedHtml}
+      />
+    </Box>
   );
 }
 function ListItem({
@@ -104,9 +106,6 @@ function ListItem({
       </ListItemGridArea>
       <ListItemGridArea name="date">
         <Date viewing={viewing} />
-      </ListItemGridArea>
-      <ListItemGridArea name="medium">
-        <Medium viewing={viewing} />
       </ListItemGridArea>
       <ListItemGridArea name="medium" color="subtle">
         <Medium viewing={viewing} />

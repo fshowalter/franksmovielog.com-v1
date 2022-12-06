@@ -18,7 +18,7 @@ type GridAreaTemplate<A, C> =
 
 type GridAreaTemplateWithSpace<A, C> = Record<
   string,
-  typeof SPACER | Array<GridAreaTemplate<A, C> | typeof SPACER> | [never]
+  typeof SPACER | GridAreaTemplate<A, C>
 >;
 
 interface GridTemplateArgs<A, C> {

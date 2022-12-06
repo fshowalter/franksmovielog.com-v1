@@ -18,23 +18,22 @@ const GridArea = gridAreaComponent(gridAreas);
 
 const Grid = gridComponent(gridStyle);
 
-function Credit({
-  title,
-  value,
-}: {
+interface ICreditProps extends IBoxProps {
   title: string;
   value: string | number | string[];
-}) {
+}
+
+function Credit({ title, value, ...rest }: ICreditProps) {
   return (
-    <>
-      <Box as="dt" fontWeight="bold">
+    <Box {...rest}>
+      <Box as="dt" fontWeight="bold" color="subtle">
         {title}
       </Box>
-      <Box as="dd">
+      <Box as="dd" color="subtle">
         {value}
         <Spacer axis="vertical" size={24} />
       </Box>
-    </>
+    </Box>
   );
 }
 
@@ -47,13 +46,7 @@ export default function Credits({
   ...rest
 }: ICreditsProps): JSX.Element {
   return (
-    <Grid
-      as="aside"
-      id="credits"
-      backgroundColor="subtle"
-      position="relative"
-      {...rest}
-    >
+    <Grid as="aside" id="credits" position="relative" {...rest}>
       <GridArea name="poster">
         <GraphqlImage
           image={movie.poster}
@@ -62,16 +55,32 @@ export default function Credits({
         />
       </GridArea>
       <GridArea name="meta">
-        <Box as="header" fontSize="large">
+        <Box as="header" fontSize="large" display={{ desktop: "none" }}>
           {movie.title}
         </Box>
         <dl>
-          <Credit title="Year" value={movie.year} />
+          <Credit
+            title="Year"
+            value={movie.year}
+            display={{ desktop: "none" }}
+          />
           {movie.originalTitle && (
-            <Credit title="Original Title" value={movie.originalTitle} />
+            <Credit
+              title="Original Title"
+              value={movie.originalTitle}
+              display={{ desktop: "none" }}
+            />
           )}
-          <Credit title="Financing" value={toSentenceArray(movie.countries)} />
-          <Credit title="Running Time" value={`${movie.runtimeMinutes} min`} />
+          <Credit
+            title="Financing"
+            value={toSentenceArray(movie.countries)}
+            display={{ desktop: "none" }}
+          />
+          <Credit
+            title="Running Time"
+            value={`${movie.runtimeMinutes} min`}
+            display={{ desktop: "none" }}
+          />
           <Credit
             title="Directed by"
             value={toSentenceArray(movie.directorNames)}
@@ -85,7 +94,7 @@ export default function Credits({
       <GridArea name="watchlistLinks">
         <WatchlistLinks watchlist={movie.watchlist} />
       </GridArea>
-      <GridArea name="backToTop">
+      <GridArea name="backToTop" display={{ desktop: "none" }}>
         <a href="#top" className={backToTopContainerStyle}>
           <div className={backToTopInnerStyle}>
             <svg viewBox="0 0 24 24" className={backToTopArrowStyle}>
@@ -113,7 +122,7 @@ export const query = graphql`
           layout: CONSTRAINED
           formats: [JPG, AVIF]
           quality: 80
-          width: 224
+          width: 248
           placeholder: TRACED_SVG
         )
       }

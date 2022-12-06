@@ -1,6 +1,7 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { minMediaQuery } from "./breakpoints";
 import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
+import { size } from "./sizes";
 import { space } from "./spacing";
 import {
   fontSizes,
@@ -21,6 +22,7 @@ const baseProperties = defineProperties({
     boxShadow: {
       borderBottom: `0px 1px ${borderColors.default}`,
     },
+    paddingBottom: size,
     whiteSpace: ["nowrap"],
     overflow: ["hidden"],
     fontWeight: fontWeights,

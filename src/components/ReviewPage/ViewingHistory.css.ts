@@ -1,6 +1,5 @@
 import { style, styleVariants } from "@vanilla-extract/css";
-import { minMediaQuery } from "../../styles/breakpoints";
-import { GUTTER, space } from "../../styles/spacing";
+import { GRID, GUTTER, size } from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gridStyle = style({
@@ -10,19 +9,19 @@ export const gridStyle = style({
       [SPACER, "heading", SPACER],
       ["list", "list", "list"],
     ],
-    columns: [GUTTER, "calc(100% - 40px)", GUTTER],
+    columns: [GUTTER, `1fr`, GUTTER],
   }),
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      ...gridTemplate<GridAreas, 3>({
-        rows: [
-          [SPACER, "heading", SPACER],
-          ["list", "list", "list"],
-        ],
-        columns: [GUTTER, "auto", GUTTER],
-      }),
-    },
-  },
+  // "@media": {
+  //   [minMediaQuery("desktop")]: {
+  //     ...gridTemplate<GridAreas, 3>({
+  //       rows: [
+  //         [SPACER, "heading", SPACER],
+  //         ["list", "list", "list"],
+  //       ],
+  //       columns: [GRID.GUTTER, "1fr", GRID.GUTTER],
+  //     }),
+  //   },
+  // },
 });
 
 const gridAreaStyles = {
@@ -42,7 +41,7 @@ export const listItemGridStyle = style({
   display: "grid",
   ...gridTemplate<ListItemGridAreas, 7>({
     rows: [
-      { [space[16]]: SPACER },
+      { [size[16]]: SPACER },
       [SPACER, "icon", SPACER, "date", SPACER, "medium", SPACER],
       [
         SPACER,
@@ -54,21 +53,19 @@ export const listItemGridStyle = style({
         SPACER,
       ],
       [SPACER, "icon", SPACER, "venue", "venue", "venue", SPACER],
-      { [space[16]]: SPACER },
+      { [size[16]]: SPACER },
+      [
+        SPACER,
+        SPACER,
+        SPACER,
+        "viewingNote",
+        "viewingNote",
+        "viewingNote",
+        SPACER,
+      ],
     ],
-    columns: [GUTTER, "16px", "1ch", "auto", ".5ch", "10fr", GUTTER],
+    columns: [GRID.GUTTER, "16px", "1ch", "auto", ".5ch", "10fr", GRID.GUTTER],
   }),
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      ...gridTemplate<GridAreas, 3>({
-        rows: [
-          [SPACER, "heading", SPACER],
-          ["list", "list", "list"],
-        ],
-        columns: [GUTTER, "auto", GUTTER],
-      }),
-    },
-  },
 });
 
 const listItemGridAreaStyles = {

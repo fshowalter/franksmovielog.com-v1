@@ -7,6 +7,11 @@ export const gradeStyle = style({
   height: space[32],
   width: "auto",
   margin: "0 auto",
+  "@media": {
+    [minMediaQuery("desktop")]: {
+      margin: 0,
+    },
+  },
 });
 
 export const gridStyle = style({
@@ -28,7 +33,7 @@ export const gridStyle = style({
         rows: [
           { [space[24]]: SPACER },
           ["grade"],
-          { [space[16]]: SPACER },
+          { [space[8]]: SPACER },
           ["date"],
           { [space[32]]: SPACER },
           ["text"],
@@ -49,6 +54,14 @@ const gridAreaStyles = {
     display: "flex",
     flexDirection: "column" as const,
     alignItems: "center",
+    fontWeight: 700,
+    "@media": {
+      [minMediaQuery("desktop")]: {
+        flexDirection: "row" as const,
+        marginLeft: "4px",
+        fontWeight: "normal",
+      },
+    },
   },
   text: {
     gridArea: "text",
