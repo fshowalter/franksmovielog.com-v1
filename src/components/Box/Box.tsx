@@ -1,4 +1,6 @@
 import { createBox } from "@dessert-box/react";
-import { atoms } from "../../styles/atoms.css";
+import { sprinkles } from "../../styles/sprinkles.css";
 
-export default createBox({ atoms });
+export const Box = createBox({ atoms: sprinkles });
+
+export type IBoxProps = React.ComponentPropsWithRef<typeof Box>;

@@ -1,4 +1,12 @@
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { Box, IBoxProps } from "../Box";
+
+export interface IGraphqlImageProps extends IBoxProps {
+  image: IGraphqlImage;
+  className?: string;
+  alt: string;
+  loading?: "lazy" | "eager";
+}
 
 export type IGraphqlImage = {
   readonly childImageSharp: {
@@ -8,27 +16,16 @@ export type IGraphqlImage = {
 
 export function GraphqlImage({
   image,
-  alt,
   className,
-  loading = "lazy",
-}: {
-  image: IGraphqlImage;
-  alt: string;
-  className?: string;
-  loading: "eager" | "lazy";
-}): JSX.Element | null {
+  ...rest
+}: IGraphqlImageProps): JSX.Element {
   const gatsbyImageData = image?.childImageSharp?.gatsbyImageData;
 
   if (!gatsbyImageData) {
-    return null;
+    return <Box className={className} {...rest} />;
   }
 
-  return (
-    <GatsbyImage
-      className={className}
-      image={gatsbyImageData}
-      alt={alt}
-      loading={loading}
-    />
-  );
+  const newProps = { image: gatsbyImageData, ...rest };
+
+  return <Box as={GatsbyImage} className={className} {...newProps} />;
 }

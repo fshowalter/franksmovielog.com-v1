@@ -1,4 +1,5 @@
-import { globalStyle } from "@vanilla-extract/css";
+import { createVar, globalStyle } from "@vanilla-extract/css";
+import { backgroundColors, foregroundColors } from "./colors.css";
 
 globalStyle(`*, *::before, *::after`, {
   boxSizing: `border-box`,
@@ -13,6 +14,8 @@ globalStyle(`body`, {
   lineHeight: 1.5,
   WebkitFontSmoothing: `antialiased`,
   fontFamily: `"Charter", "Iowan Old Style", "Georgia", "Cambria", "Times New Roman", "Times", "serif"`,
+  backgroundColor: backgroundColors.canvas,
+  color: foregroundColors.default,
 });
 
 globalStyle(`img, picture, video, canvas, svg`, {
@@ -26,8 +29,28 @@ globalStyle(`input, button, textarea, select`, {
 
 globalStyle(`p, h1, h2, h3, h4, h5, h6`, {
   overflowWrap: `break-word`,
+  textRendering: "optimizeLegibility",
 });
 
 globalStyle(`#root`, {
   isolation: `isolate`,
+});
+
+const imageFilter = createVar();
+
+globalStyle(`img`, {
+  filter: imageFilter,
+});
+
+globalStyle(":root", {
+  vars: {
+    [imageFilter]: "initial",
+  },
+  "@media": {
+    "(prefers-color-scheme: dark)": {
+      vars: {
+        [imageFilter]: "brightness(0.8) contrast(1.2)",
+      },
+    },
+  },
 });

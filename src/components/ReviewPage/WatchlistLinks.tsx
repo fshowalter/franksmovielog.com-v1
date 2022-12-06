@@ -1,12 +1,8 @@
-import { graphql, Link } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-import React from "react";
-import {
-  avatarCss,
-  containerCss,
-  linkCss,
-  listCss,
-} from "./WatchlistLinks.module.scss";
+import { graphql } from "gatsby";
+import { Box, IBoxProps } from "../Box";
+import { GraphqlImage } from "../GraphqlImage";
+import { Link } from "../Link";
+import { avatarStyle, linkStyle } from "./WatchlistLinks.css";
 
 function WatchlistItem({
   to,
@@ -18,90 +14,92 @@ function WatchlistItem({
   children: React.ReactNode;
 }): JSX.Element | null {
   return (
-    <li>
-      <Link to={to} className={linkCss}>
-        {entity.avatar?.childImageSharp && (
-          <GatsbyImage
-            image={entity.avatar.childImageSharp.gatsbyImageData}
-            alt={`More ${entity.name} reviews`}
-            className={avatarCss}
-          />
-        )}
+    <Box as="li" display="block">
+      <Link
+        to={to}
+        backgroundColor="subtle"
+        display="flex"
+        alignItems="center"
+        whiteSpace="nowrap"
+        border="all"
+        paddingX={16}
+        paddingY={8}
+        color="accent"
+        textDecoration="none"
+        className={linkStyle}
+      >
+        <GraphqlImage
+          image={entity.avatar}
+          alt={`More ${entity.name} reviews`}
+          className={avatarStyle}
+        />
         {children}
       </Link>
-    </li>
+    </Box>
   );
+}
+
+interface IWatchlistLinksProps extends IBoxProps {
+  watchlist: Queries.WatchlistLinksFragment;
 }
 
 export default function WatchlistLinks({
   watchlist,
-  className = null,
-}: {
-  watchlist: Queries.WatchlistLinksFragment;
-  className?: string | null;
-}): JSX.Element | null {
+  ...rest
+}: IWatchlistLinksProps): JSX.Element {
+  console.log(watchlist);
+  if (!watchlist) {
+    return <Box {...rest} />;
+  }
   return (
-    <div className={`${containerCss} ${className || ""}`}>
-      <ul className={listCss}>
-        {watchlist.collections.map((collection) => {
-          return (
-            <WatchlistItem
-              to={`/watchlist/collections/${collection.slug!}/`}
-              entity={collection}
-              key={collection.slug}
-            >
-              {collection.name}
-            </WatchlistItem>
-          );
-        })}
-        {watchlist.directors.map((director) => {
-          return (
-            <WatchlistItem
-              entity={director}
-              key={director.slug}
-              to={`/watchlist/directors/${director.slug}/`}
-            >
-              {director.name}
-            </WatchlistItem>
-          );
-        })}
-        {watchlist.performers.map((performer) => {
-          return (
-            <WatchlistItem
-              entity={performer}
-              key={performer.slug}
-              to={`/watchlist/performers/${performer.slug}/`}
-            >
-              {performer.name}
-            </WatchlistItem>
-          );
-        })}
-        {watchlist.writers.map((writer) => {
-          return (
-            <WatchlistItem
-              entity={writer}
-              key={writer.slug}
-              to={`/watchlist/writers/${writer.slug}/`}
-            >
-              {writer.name}
-            </WatchlistItem>
-          );
-        })}
-      </ul>
-    </div>
+    <Box as="ul" display="flex" padding={0} {...rest}>
+      {watchlist.collections.map((collection) => {
+        return (
+          <WatchlistItem
+            to={`/watchlist/collections/${collection.slug}/`}
+            entity={collection}
+            key={collection.slug}
+          >
+            {collection.name}
+          </WatchlistItem>
+        );
+      })}
+      {watchlist.directors.map((director) => {
+        return (
+          <WatchlistItem
+            entity={director}
+            key={director.slug}
+            to={`/watchlist/directors/${director.slug}/`}
+          >
+            {director.name}
+          </WatchlistItem>
+        );
+      })}
+      {watchlist.performers.map((performer) => {
+        return (
+          <WatchlistItem
+            entity={performer}
+            key={performer.slug}
+            to={`/watchlist/performers/${performer.slug}/`}
+          >
+            {performer.name}
+          </WatchlistItem>
+        );
+      })}
+      {watchlist.writers.map((writer) => {
+        return (
+          <WatchlistItem
+            entity={writer}
+            key={writer.slug}
+            to={`/watchlist/writers/${writer.slug}/`}
+          >
+            {writer.name}
+          </WatchlistItem>
+        );
+      })}
+    </Box>
   );
 }
-
-type WatchlistEntity = Queries.WatchlistLinkEntityFragment & {
-  slug: string;
-};
-
-type WatchlistLinks = Queries.WatchlistLinksFragment & {
-  performers: WatchlistEntity[];
-  directors: WatchlistEntity[];
-  writers: WatchlistEntity[];
-  collections: WatchlistEntity[];
-};
 
 export const query = graphql`
   fragment WatchlistLinkEntity on ReviewedMovieWatchlistEntity {

@@ -1,5 +1,6 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import posterResolver from "./resolvers/posterResolver";
+import { reviewedMovieResolver } from "./resolvers/reviewedMovieResolver";
 import type { ReviewedMovieNode } from "./ReviewedMoviesJson";
 import { SchemaNames } from "./schemaNames";
 import type { GatsbyNode, GatsbyNodeContext } from "./type-definitions";
@@ -7,9 +8,9 @@ import type { WatchlistEntityNode } from "./WatchlistEntitiesJson";
 
 export interface WatchlistMovieNode extends GatsbyNode {
   imdbId: string;
-  performer_imdb_ids: string[];
-  director_imdb_ids: string[];
-  writer_imdb_ids: string[];
+  performerImdbIds: string[];
+  directorImdbIds: string[];
+  writerImdbIds: string[];
   collectionNames: string[];
   reviewedMovie: ReviewedMovieNode | null;
 }
@@ -20,41 +21,13 @@ const WatchlistMoviesJson = {
   fields: {
     title: "String!",
     year: "Int!",
-    imdbId: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "imdb_id",
-        },
-      },
-    },
-    sortTitle: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "sort_title",
-        },
-      },
-    },
-    releaseDate: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "release_date",
-        },
-      },
-    },
-    collectionNames: {
-      type: "[String!]!",
-      extensions: {
-        proxy: {
-          from: "collection_names",
-        },
-      },
-    },
-    director_imdb_ids: "[String!]!",
-    performer_imdb_ids: "[String!]!",
-    writer_imdb_ids: "[String!]!",
+    imdbId: "String!",
+    sortTitle: "String!",
+    releaseDate: "String!",
+    collectionNames: "[String!]!",
+    directorImdbIds: "[String!]!",
+    performerImdbIds: "[String!]!",
+    writerImdbIds: "[String!]!",
     directorNames: {
       type: "[String!]!",
       resolve: async (
@@ -66,7 +39,7 @@ const WatchlistMoviesJson = {
           await context.nodeModel.findAll<WatchlistEntityNode>({
             query: {
               filter: {
-                imdbId: { in: source.director_imdb_ids },
+                imdbId: { in: source.directorImdbIds },
                 entityType: { eq: "director" },
               },
             },
@@ -91,7 +64,7 @@ const WatchlistMoviesJson = {
           await context.nodeModel.findAll<WatchlistEntityNode>({
             query: {
               filter: {
-                imdbId: { in: source.performer_imdb_ids },
+                imdbId: { in: source.performerImdbIds },
                 entityType: { eq: "performer" },
               },
             },
@@ -112,8 +85,8 @@ const WatchlistMoviesJson = {
           await context.nodeModel.findAll<WatchlistEntityNode>({
             query: {
               filter: {
-                imdb_id: { in: source.writer_imdb_ids },
-                entity_type: { eq: "writer" },
+                imdbId: { in: source.writerImdbIds },
+                entityType: { eq: "writer" },
               },
             },
             type: SchemaNames.WATCHLIST_ENTITIES_JSON,
@@ -124,12 +97,7 @@ const WatchlistMoviesJson = {
     },
     reviewedMovie: {
       type: `${SchemaNames.REVIEWED_MOVIES_JSON}`,
-      extensions: {
-        link: {
-          from: "imdb_id",
-          by: "imdbId",
-        },
-      },
+      resolve: reviewedMovieResolver(),
     },
     poster: posterResolver,
   },

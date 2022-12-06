@@ -12,7 +12,9 @@ import buildMostWatchedPeopleSchema from "./schema/MostWatchedPeople";
 import buildMostWatchedPerformersJsonSchema from "./schema/MostWatchedPerformersJson";
 import buildMostWatchedWritersJsonSchema from "./schema/MostWatchedWritersJson";
 import buildOverratedDisappointmentsJsonSchema from "./schema/OverratedDisappointmentsJson";
-import buildReviewedMoviesJsonSchema from "./schema/ReviewedMoviesJson";
+import buildReviewedMoviesJsonSchema, {
+  buildReviewedMovieQuery,
+} from "./schema/ReviewedMoviesJson";
 import buildReviewStatsJsonSchema from "./schema/ReviewStatsJson";
 import buildTopMediaJsonSchema from "./schema/TopMediaJson";
 import buildTopVenuesJsonSchema from "./schema/TopVenuesJson";
@@ -61,4 +63,5 @@ export function createSchemaCustomization({
 
 export function createResolvers({ createResolvers }: CreateResolversArgs) {
   buildViewingsWithReviewQuery(createResolvers);
+  buildReviewedMovieQuery(createResolvers);
 }

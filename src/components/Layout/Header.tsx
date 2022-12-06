@@ -1,42 +1,42 @@
-import { Link } from "gatsby";
-import composeClassNames from "../../utils/composeClassNames";
-import Box from "../Box";
-import {
-  gridAreaNavStyle,
-  gridAreaSearchStyle,
-  gridAreaTaglineStyle,
-  gridAreaTitleStyle,
-  gridContainerStyle,
-  taglineStyle,
-} from "./Header.css";
+import { Box, IBoxProps } from "../Box";
+import { gridAreaComponent, gridComponent } from "../Grid";
+import { Link } from "../Link";
+import { gridAreas, gridStyle, taglineStyle, titleStyle } from "./Header.css";
 import Nav from "./Nav";
 import SearchForm from "./SearchForm";
 
-export default function Header({ className }: { className: string }) {
+const Grid = gridComponent(gridStyle);
+const GridArea = gridAreaComponent(gridAreas);
+
+export default function Header({ ...rest }: IBoxProps) {
   return (
-    <Box
-      as="header"
-      className={composeClassNames(className, gridContainerStyle)}
-    >
-      <Box
-        as="h1"
-        fontSize={{ mobile: "3", desktop: "4", max: "3" }}
-        lineHeight="5"
-        whiteSpace="nowrap"
-        className={gridAreaTitleStyle}
-      >
-        <Link to="/">Frank&apos;s Movie Log</Link>
-      </Box>
-      <Box
-        as="p"
-        lineHeight={{ mobile: "3", desktop: "4" }}
-        color="muted"
-        className={composeClassNames(gridAreaTaglineStyle, taglineStyle)}
-      >
-        My life at the movies.
-      </Box>
-      <SearchForm className={gridAreaSearchStyle} />
-      <Nav className={gridAreaNavStyle} />
+    <Box as="header" {...rest} display="flex" flexDirection="column">
+      <Grid>
+        <GridArea name="title">
+          <Box
+            as="h1"
+            lineHeight={32}
+            whiteSpace="nowrap"
+            fontWeight="normal"
+            className={titleStyle}
+          >
+            <Link color="default" textDecoration="none" to="/">
+              Frank&apos;s Movie Log
+            </Link>
+          </Box>
+        </GridArea>
+        <GridArea name="tagline">
+          <Box as="p" color="muted" className={taglineStyle}>
+            My life at the movies.
+          </Box>
+        </GridArea>
+        <GridArea name="search">
+          <SearchForm />
+        </GridArea>
+        <GridArea name="nav">
+          <Nav variant="header" />
+        </GridArea>
+      </Grid>
     </Box>
   );
 }

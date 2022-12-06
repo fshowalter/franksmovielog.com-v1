@@ -1,6 +1,11 @@
-import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
+import type {
+  CreateResolversArgs,
+  GatsbyGraphQLObjectType,
+  NodePluginSchema,
+} from "gatsby";
 import path from "path";
 import { MarkdownNode } from "./MarkdownRemark";
+import { findReviewedMovieNode } from "./resolvers/reviewedMovieResolver";
 import { SchemaNames } from "./schemaNames";
 import type {
   GatsbyNode,
@@ -20,10 +25,32 @@ export interface ReviewedMovieNode extends GatsbyNode {
 const ReviewedMovieWatchlistEntity = {
   name: "ReviewedMovieWatchlistEntity",
   fields: {
-    imdb_id: "String!",
+    imdbId: "String!",
     name: "String!",
     slug: "String!",
-    avatar: "File!",
+    avatar: {
+      type: "File!",
+      resolve: async (
+        source: WatchlistEntityNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        if (!source.slug) {
+          return null;
+        }
+
+        return await context.nodeModel.findOne({
+          type: "File",
+          query: {
+            filter: {
+              absolutePath: {
+                eq: path.resolve(`./content/assets/avatars/${source.slug}.png`),
+              },
+            },
+          },
+        });
+      },
+    },
     browseMore: {
       type: `[${SchemaNames.REVIEWED_MOVIES_JSON}!]!`,
       args: {
@@ -48,7 +75,7 @@ const ReviewedMovieWatchlistEntity = {
         }
 
         const watchlistMovieImdbIds = Array.from(watchlistMovies).map(
-          (movie) => movie.imdb_id
+          (movie) => movie.imdbId
         );
 
         const { entries } = await context.nodeModel.findAll<ReviewedMovieNode>({
@@ -90,76 +117,19 @@ const ReviewedMoviesJson = {
   name: SchemaNames.REVIEWED_MOVIES_JSON,
   interfaces: ["Node"],
   fields: {
-    imdb_id: "String!",
+    imdbId: "String!",
     title: "String!",
     year: "Int!",
     slug: "String!",
     grade: "String!",
     countries: "[String!]!",
-    imdbId: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "imdb_id",
-        },
-      },
-    },
-    releaseDate: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "release_date",
-        },
-      },
-    },
-    sortTitle: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "sort_title",
-        },
-      },
-    },
-    originalTitle: {
-      type: "String",
-      extensions: {
-        proxy: {
-          from: "original_title",
-        },
-      },
-    },
-    gradeValue: {
-      type: "Int!",
-      extensions: {
-        proxy: {
-          from: "grade_value",
-        },
-      },
-    },
-    runtimeMinutes: {
-      type: "Int!",
-      extensions: {
-        proxy: {
-          from: "runtime_minutes",
-        },
-      },
-    },
-    directorNames: {
-      type: "[String!]!",
-      extensions: {
-        proxy: {
-          from: "director_names",
-        },
-      },
-    },
-    principalCastNames: {
-      type: "[String!]!",
-      extensions: {
-        proxy: {
-          from: "principal_cast_names",
-        },
-      },
-    },
+    releaseDate: "String!",
+    sortTitle: "String!",
+    originalTitle: "String",
+    gradeValue: "Int!",
+    runtimeMinutes: "Int!",
+    directorNames: "[String!]!",
+    principalCastNames: "[String!]!",
     review: {
       type: `${SchemaNames.MARKDOWN_REMARK}!`,
       resolve: async (
@@ -173,7 +143,7 @@ const ReviewedMoviesJson = {
             filter: {
               frontmatter: {
                 imdb_id: {
-                  eq: source.imdb_id,
+                  eq: source.imdbId,
                 },
               },
             },
@@ -192,7 +162,7 @@ const ReviewedMoviesJson = {
           type: SchemaNames.REVIEWED_MOVIES_JSON,
           query: {
             sort: {
-              fields: ["sort_title"],
+              fields: ["sortTitle"],
               order: ["ASC"],
             },
           },
@@ -216,8 +186,8 @@ const ReviewedMoviesJson = {
           type: SchemaNames.VIEWINGS_JSON,
           query: {
             filter: {
-              imdb_id: {
-                eq: source.imdb_id,
+              imdbId: {
+                eq: source.imdbId,
               },
             },
             sort: {
@@ -289,7 +259,7 @@ const ReviewedMoviesJson = {
             type: SchemaNames.WATCHLIST_MOVIES_JSON,
             query: {
               filter: {
-                imdbId: { eq: source.imdb_id },
+                imdbId: { eq: source.imdbId },
               },
             },
           });
@@ -298,67 +268,47 @@ const ReviewedMoviesJson = {
           return watchlist;
         }
 
-        const { entries } =
-          await context.nodeModel.findAll<WatchlistEntityNode>({
-            type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-            query: {
-              filter: {
-                imdb_id: { in: watchlistMovie.performer_imdb_ids },
-                entity_type: { eq: "performer" },
-              },
-            },
-          });
-
-        // const performers = Array.from(
-        //   entries.map((entry) => {
-        //     return {
-        //       name: entry.name,
-        //       avatar: entry.avatar,
-        //       slug: entry.slug,
-        //     };
-        //   })
-        // );
-
         ({ entries: watchlist.performers } = await context.nodeModel.findAll({
           type: SchemaNames.WATCHLIST_ENTITIES_JSON,
           query: {
             filter: {
-              imdb_id: { in: watchlistMovie.performer_imdb_ids },
-              entity_type: { eq: "performer" },
+              imdbId: { in: watchlistMovie.performerImdbIds },
+              entityType: { eq: "performer" },
             },
           },
         }));
 
-        // ({ entries: watchlist.directors } = await context.nodeModel.findAll({
-        //     type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-        //     query: {
-        //       filter: {
-        //         imdb_id: { in: watchlistMovie.director_imdb_ids },
-        //         entity_type: { eq: "director" },
-        //       },
-        //     },
-        //   }))
-        // );
+        console.log(Array.from(watchlist.performers));
 
-        // ({ entries: watchlist.writers } = await context.nodeModel.findAll({
-        //   type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-        //   query: {
-        //     filter: {
-        //       imdb_id: { in: watchlistMovie.writer_imdb_ids },
-        //       entity_type: { eq: "writer" },
-        //     },
-        //   },
-        // }));
+        ({ entries: watchlist.directors } = await context.nodeModel.findAll({
+          type: SchemaNames.WATCHLIST_ENTITIES_JSON,
+          query: {
+            filter: {
+              imdbId: { in: watchlistMovie.directorImdbIds },
+              entityType: { eq: "director" },
+            },
+          },
+        }));
 
-        // ({ entries: watchlist.collections } = await context.nodeModel.findAll({
-        //   type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-        //   query: {
-        //     filter: {
-        //       name: { in: watchlistMovie.collectionNames },
-        //       entity_type: { eq: "collection" },
-        //     },
-        //   },
-        // }));
+        ({ entries: watchlist.writers } = await context.nodeModel.findAll({
+          type: SchemaNames.WATCHLIST_ENTITIES_JSON,
+          query: {
+            filter: {
+              imdbId: { in: watchlistMovie.writerImdbIds },
+              entityType: { eq: "writer" },
+            },
+          },
+        }));
+
+        ({ entries: watchlist.collections } = await context.nodeModel.findAll({
+          type: SchemaNames.WATCHLIST_ENTITIES_JSON,
+          query: {
+            filter: {
+              name: { in: watchlistMovie.collectionNames },
+              entityType: { eq: "collection" },
+            },
+          },
+        }));
 
         return watchlist;
       },
@@ -377,4 +327,28 @@ export default function buildReviewedMoviesJsonSchema(
     schema.buildObjectType(ReviewedMovieWatchlistEntities),
     schema.buildObjectType(ReviewedMoviesJson),
   ];
+}
+
+export function buildReviewedMovieQuery(
+  createResolvers: CreateResolversArgs["createResolvers"]
+) {
+  createResolvers({
+    Query: {
+      reviewedMovie: {
+        type: `${SchemaNames.REVIEWED_MOVIES_JSON}!`,
+        args: {
+          imdbId: "String!",
+        },
+        resolve: async (
+          _source: unknown,
+          args: {
+            imdbId: string;
+          },
+          context: GatsbyNodeContext
+        ) => {
+          return findReviewedMovieNode(args.imdbId, context.nodeModel);
+        },
+      },
+    },
+  });
 }

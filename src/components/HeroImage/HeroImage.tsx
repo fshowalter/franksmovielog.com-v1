@@ -1,22 +1,22 @@
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
+import composeClassNames from "../../utils/composeClassNames";
+import { IBoxProps } from "../Box";
+import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { imageCss } from "./HeroImage.module.scss";
+
+interface IHeroImageProps extends IBoxProps {
+  image: IGraphqlImage;
+  className?: string;
+  alt: string;
+}
 
 export default function HeroImage({
   className,
-  image,
-  alt,
-}: {
-  image: IGatsbyImageData;
-  className?: string;
-  alt: string;
-}): JSX.Element {
+  ...rest
+}: IHeroImageProps): JSX.Element {
   return (
-    <GatsbyImage
-      className={[imageCss, className].join(" ")}
-      image={image}
-      alt={alt}
-      loading="eager"
+    <GraphqlImage
+      className={composeClassNames(className, imageCss)}
+      {...rest}
     />
   );
 }

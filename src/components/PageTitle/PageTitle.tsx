@@ -1,12 +1,10 @@
-import React from "react";
-import { titleCss } from "./PageTitle.module.scss";
+import { Box, IBoxProps } from "../Box";
+import { headingStyle } from "./PageTitle.css";
 
-export default function PageTitle({
-  className,
-  children,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}): JSX.Element {
-  return <h1 className={[titleCss, className].join(" ")}>{children}</h1>;
+export function PageTitle({ children }: IBoxProps): JSX.Element {
+  return (
+    <Box as="h1" className={headingStyle}>
+      {children}
+    </Box>
+  );
 }

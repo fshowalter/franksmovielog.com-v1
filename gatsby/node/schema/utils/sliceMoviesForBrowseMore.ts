@@ -1,5 +1,5 @@
 interface MovieNode {
-  imdb_id: string;
+  imdbId: string;
 }
 
 export default function sliceMoviesForBrowseMore(
@@ -14,14 +14,14 @@ export default function sliceMoviesForBrowseMore(
   }
 
   const movieIsNotTitle = (movie: MovieNode) => {
-    return movie.imdb_id !== titleImdbId;
+    return movie.imdbId !== titleImdbId;
   };
 
   if (arraySize === windowSize) {
     return movies.filter(movieIsNotTitle);
   }
 
-  const titleIndex = movies.findIndex((movie) => movie.imdb_id === titleImdbId);
+  const titleIndex = movies.findIndex((movie) => movie.imdbId === titleImdbId);
 
   if (titleIndex + 3 <= arraySize && titleIndex - 2 >= 0) {
     return movies.slice(titleIndex - 2, titleIndex + 3).filter(movieIsNotTitle);

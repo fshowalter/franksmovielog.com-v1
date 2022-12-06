@@ -2,9 +2,10 @@ import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors } from "../../styles/colors.css";
 
-export const labelStyle = style({
+export const formStyle = style({
   border: `solid 1px ${borderColors.default}`,
   borderRadius: "4px",
+  width: "100%",
 });
 
 export const searchInputStyle = style({

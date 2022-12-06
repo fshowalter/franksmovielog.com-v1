@@ -1,20 +1,25 @@
-export const spacing = {
-  "0": 0,
-  "1": "4px",
-  "2": "8px",
-  "3": "16px",
-  "4": "24px",
-  "5": "32px",
-  "6": "40px",
-  "7": "48px",
-  "8": "64px",
-  "9": "80px",
-  "10": "96px",
-  "11": "112px",
-  "12": "128px",
+export const space = {
+  px: "1px",
+  full: "100%",
+  half: "50%",
+  0: 0,
+  4: "4px",
+  8: "8px",
+  16: "16px",
+  24: "24px",
+  32: "32px",
+  40: "40px",
+  48: "48px",
+  64: "64px",
+  80: "80px",
+  96: "96px",
+  112: "112px",
+  128: "128px",
 };
 
-export const relativeSpacing = {
+export const GUTTER = "minmax(20px, 1fr)";
+
+export const relativeSpace = {
   "0": 0,
   "1": "0.25rem",
   "2": ".5rem",
@@ -28,10 +33,4 @@ export const relativeSpacing = {
   "10": "6rem",
   "11": "7rem",
   "12": "8rem",
-};
-
-export const letterSpacing = {
-  "2": "0.0125rem",
-  "3": "0.01875rem",
-  "5": "0.03125rem",
 };

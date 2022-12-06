@@ -1,30 +1,25 @@
-import composeClassNames from "../../utils/composeClassNames";
-import Box from "../Box";
+import { Box, IBoxProps } from "../Box";
 import ScreenReaderOnly from "../ScreenReaderOnly";
 import SvgIcon from "../SvgIcon";
 import {
+  formStyle,
   iconStyle,
-  labelStyle,
   searchInputStyle,
   submitButtonStyle,
 } from "./SearchForm.css";
 
-export default function SearchForm({ className }: { className: string }) {
+export default function SearchForm({ ...rest }: IBoxProps) {
   return (
-    <form
+    <Box
+      as="form"
       action="https://www.google.com/search"
       acceptCharset="UTF-8"
       method="get"
       role="search"
-      className={composeClassNames(className)}
+      className={formStyle}
+      {...rest}
     >
-      <Box
-        as="label"
-        htmlFor="search"
-        display="flex"
-        overflow="hidden"
-        className={labelStyle}
-      >
+      <Box as="label" htmlFor="search" display="flex" overflow="hidden">
         <ScreenReaderOnly>Search</ScreenReaderOnly>
         <Box
           as="input"
@@ -34,10 +29,10 @@ export default function SearchForm({ className }: { className: string }) {
           placeholder="Search..."
           backgroundColor="subtle"
           color="default"
-          fontSize="2"
+          fontSize="normal"
           fontWeight="light"
-          lineHeight="4"
-          flexGrow={{ mobile: 1, max: "unset" }}
+          lineHeight={24}
+          flexGrow={1}
           className={searchInputStyle}
         />
         <input type="hidden" name="q" value="site:www.franksmovielog.com" />
@@ -61,6 +56,6 @@ export default function SearchForm({ className }: { className: string }) {
           </SvgIcon>
         </Box>
       </Box>
-    </form>
+    </Box>
   );
 }

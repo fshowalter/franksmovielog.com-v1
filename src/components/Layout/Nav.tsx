@@ -1,53 +1,60 @@
 import { Link } from "gatsby";
-import composeClassNames from "../../utils/composeClassNames";
-import Box from "../Box";
-import { activeLinkStyle, linkStyle } from "./Nav.css";
+import { Box, IBoxProps } from "../Box";
+import {
+  activeLinkVariants,
+  linkVariants,
+  listItemVariants,
+  listVariants,
+  NavVariants,
+} from "./Nav.css";
 
 type NavItemProps = {
   to: string;
   children: React.ReactNode;
+  variant: NavVariants;
 };
 
-function NavItem({ to, children }: NavItemProps): JSX.Element {
+function NavItem({ to, children, variant }: NavItemProps): JSX.Element {
   return (
-    <Box
-      as="li"
-      color="accent"
-      display="block"
-      position="relative"
-      whiteSpace="nowrap"
-    >
-      <Link to={to} className={linkStyle} activeClassName={activeLinkStyle}>
+    <Box as="li" className={listItemVariants[variant]}>
+      <Link
+        to={to}
+        className={linkVariants[variant]}
+        activeClassName={activeLinkVariants[variant]}
+      >
         {children}
       </Link>
     </Box>
   );
 }
 
-export default function Nav({ className }: { className: string }) {
+interface NavProps extends IBoxProps {
+  variant: NavVariants;
+}
+
+export default function Nav({ variant, ...rest }: NavProps) {
   return (
-    <nav className={composeClassNames(className)}>
-      <Box
-        as="ul"
-        display="flex"
-        columnGap={{ mobile: "3", tablet: "4" }}
-        flexDirection={{ mobile: "row", max: "column" }}
-        flexWrap="wrap"
-        fontSize="2"
-        justifyContent={{ mobile: "center", desktop: "flex-start" }}
-        rowGap="2"
-        lineHeight="4"
-        whiteSpace="nowrap"
-        letterSpacing="5"
-        paddingX={{ tablet: "4", desktop: "0" }}
-      >
-        <NavItem to="/">Home</NavItem>
-        <NavItem to="/about/">About</NavItem>
-        <NavItem to="/how-i-grade/">How I Grade</NavItem>
-        <NavItem to="/reviews/">Reviews</NavItem>
-        <NavItem to="/stats/">Stats</NavItem>
-        <NavItem to="/watchlist/">Watchlist</NavItem>
+    <Box as="nav" {...rest}>
+      <Box as="ul" className={listVariants[variant]}>
+        <NavItem variant={variant} to="/">
+          Home
+        </NavItem>
+        <NavItem to="/about/" variant={variant}>
+          About
+        </NavItem>
+        <NavItem to="/how-i-grade/" variant={variant}>
+          How I Grade
+        </NavItem>
+        <NavItem to="/reviews/" variant={variant}>
+          Reviews
+        </NavItem>
+        <NavItem to="/stats/" variant={variant}>
+          Stats
+        </NavItem>
+        <NavItem to="/watchlist/" variant={variant}>
+          Watchlist
+        </NavItem>
       </Box>
-    </nav>
+    </Box>
   );
 }

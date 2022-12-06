@@ -8,13 +8,12 @@ import type {
   GatsbyResolveInfo,
 } from "./type-definitions";
 import resolveFieldForNode from "./utils/resolveFieldForNode";
-import sliceMoviesForBrowseMore from "./utils/sliceMoviesForBrowseMore";
 import type { WatchlistMovieNode } from "./WatchlistMoviesJson";
 
 export interface WatchlistEntityNode extends GatsbyNode {
   name: string;
   slug: string | null;
-  entity_type: string;
+  entityType: string;
   imdbId: string;
 }
 
@@ -23,30 +22,9 @@ const WatchlistEntitiesJson = {
   interfaces: ["Node"],
   fields: {
     name: "String!",
-    imdbId: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "imdb_id",
-        },
-      },
-    },
-    entityType: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "entity_type",
-        },
-      },
-    },
-    titleCount: {
-      type: "Int!",
-      extensions: {
-        proxy: {
-          from: "title_count",
-        },
-      },
-    },
+    imdbId: "String!",
+    entityType: "String!",
+    titleCount: "Int!",
     slug: {
       type: "String",
       resolve: async (
@@ -69,11 +47,6 @@ const WatchlistEntitiesJson = {
         }
 
         return null;
-      },
-      extensions: {
-        proxy: {
-          from: "slug",
-        },
       },
     },
     avatar: {
@@ -120,7 +93,7 @@ const WatchlistEntitiesJson = {
         }
 
         const watchlistMovieImdbIds = Array.from(
-          watchlistMovies.map((movie) => movie.imdb_id)
+          watchlistMovies.map((movie) => movie.imdbId)
         );
 
         const { totalCount } =
@@ -143,7 +116,7 @@ const WatchlistEntitiesJson = {
         _args: unknown,
         context: GatsbyNodeContext
       ) => {
-        if (source.entity_type == "collection") {
+        if (source.entityType == "collection") {
           const { entries } = await context.nodeModel.findAll({
             type: SchemaNames.WATCHLIST_MOVIES_JSON,
             query: {
@@ -159,61 +132,12 @@ const WatchlistEntitiesJson = {
           type: SchemaNames.WATCHLIST_MOVIES_JSON,
           query: {
             filter: {
-              [`${source.entity_type}_imdb_ids`]: { in: [source.imdb_id] },
+              [`${source.entityType}ImdbIds`]: { in: [source.imdbId] },
             },
           },
         });
 
         return entries;
-      },
-    },
-    browseMore: {
-      type: `[${SchemaNames.REVIEWED_MOVIES_JSON}!]!`,
-      args: {
-        movieImdbId: "String!",
-      },
-      resolve: async (
-        source: WatchlistEntityNode,
-        args: { movieImdbId: string },
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const watchlistMovies = await resolveFieldForNode<WatchlistMovieNode[]>(
-          "watchlistMovies",
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!watchlistMovies) {
-          return [];
-        }
-
-        const watchlistMovieImdbIds = Array.from(watchlistMovies).map(
-          (movie) => movie.imdbId
-        );
-
-        const { entries } = await context.nodeModel.findAll<ReviewedMovieNode>({
-          type: SchemaNames.REVIEWED_MOVIES_JSON,
-          query: {
-            filter: {
-              imdbId: {
-                in: watchlistMovieImdbIds,
-              },
-            },
-            sort: {
-              fields: ["release_date"],
-              order: ["ASC"],
-            },
-          },
-        });
-
-        if (!entries) {
-          return [];
-        }
-
-        return sliceMoviesForBrowseMore(Array.from(entries), args.movieImdbId);
       },
     },
   },

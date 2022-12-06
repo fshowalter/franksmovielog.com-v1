@@ -1,76 +1,100 @@
 import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 import toSentenceArray from "../../utils/to-sentence-array";
+import { Box, IBoxProps } from "../Box";
+import { GraphqlImage } from "../GraphqlImage";
+import { gridAreaComponent, gridComponent } from "../Grid";
+import { Spacer } from "../Spacer";
 import {
-  backToTopArrowCss,
-  backToTopContainerCss,
-  backToTopInnerCss,
-  containerCss,
-  hideDesktopCss,
-  listCss,
-  posterCss,
-  termCss,
-  titleCss,
-  watchlistCss,
-} from "./Credits.module.scss";
+  backToTopArrowStyle,
+  backToTopContainerStyle,
+  backToTopInnerStyle,
+  gridAreas,
+  gridStyle,
+  posterStyle,
+} from "./Credits.css";
 import WatchlistLinks from "./WatchlistLinks";
+
+const GridArea = gridAreaComponent(gridAreas);
+
+const Grid = gridComponent(gridStyle);
+
+function Credit({
+  title,
+  value,
+}: {
+  title: string;
+  value: string | number | string[];
+}) {
+  return (
+    <>
+      <Box as="dt" fontWeight="bold">
+        {title}
+      </Box>
+      <Box as="dd">
+        {value}
+        <Spacer axis="vertical" size={24} />
+      </Box>
+    </>
+  );
+}
+
+interface ICreditsProps extends IBoxProps {
+  movie: Queries.CreditsFragment;
+}
 
 export default function Credits({
   movie,
-  className,
-}: {
-  movie: Queries.CreditsFragment;
-  className: string;
-}): JSX.Element {
+  ...rest
+}: ICreditsProps): JSX.Element {
   return (
-    <aside id="credits" className={[className, containerCss].join(" ")}>
-      {movie.poster?.childImageSharp && (
-        <GatsbyImage
-          className={posterCss}
-          image={movie.poster.childImageSharp.gatsbyImageData}
+    <Grid
+      as="aside"
+      id="credits"
+      backgroundColor="subtle"
+      position="relative"
+      {...rest}
+    >
+      <GridArea name="poster">
+        <GraphqlImage
+          image={movie.poster}
           alt={`A poster from ${movie.title} (${movie.year})`}
-          loading="eager"
+          className={posterStyle}
         />
-      )}
-      <div className={listCss}>
-        <div className={hideDesktopCss}>
-          <div className={titleCss}>{movie.title}</div>
-        </div>
+      </GridArea>
+      <GridArea name="meta">
+        <Box as="header" fontSize="large">
+          {movie.title}
+        </Box>
         <dl>
-          <div className={hideDesktopCss}>
-            <dt className={termCss}>Year</dt>
-            <dd>{movie.year}</dd>
-            {movie.originalTitle && (
-              <>
-                <dt className={termCss}>Original Title</dt>
-                <dd>{movie.originalTitle}</dd>
-              </>
-            )}
-            <dt className={termCss}>Financing</dt>
-            <dd>{toSentenceArray(movie.countries)}</dd>
-            <dt className={termCss}>Running Time</dt>
-            <dd>{movie.runtimeMinutes} min</dd>
-          </div>
-          <dt className={termCss}>Directed by</dt>
-          <dd>{toSentenceArray(movie.directorNames)}</dd>
-          <dt className={termCss}>Starring</dt>
-          <dd>{toSentenceArray(movie.principalCastNames)}</dd>
+          <Credit title="Year" value={movie.year} />
+          {movie.originalTitle && (
+            <Credit title="Original Title" value={movie.originalTitle} />
+          )}
+          <Credit title="Financing" value={toSentenceArray(movie.countries)} />
+          <Credit title="Running Time" value={`${movie.runtimeMinutes} min`} />
+          <Credit
+            title="Directed by"
+            value={toSentenceArray(movie.directorNames)}
+          />
+          <Credit
+            title="Starring"
+            value={toSentenceArray(movie.principalCastNames)}
+          />
         </dl>
-      </div>
-      <div className={watchlistCss}>
-        <WatchlistLinks movie={movie} />
-      </div>
-      <a
-        href="#top"
-        className={[backToTopContainerCss, hideDesktopCss].join(" ")}
-      >
-        <div className={backToTopInnerCss}>
-          <svg viewBox="0 0 24 24" className={backToTopArrowCss}>
-            <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
-          </svg>
-        </div>
-      </a>
-    </aside>
+      </GridArea>
+      <GridArea name="watchlistLinks">
+        <WatchlistLinks watchlist={movie.watchlist} />
+      </GridArea>
+      <GridArea name="backToTop">
+        <a href="#top" className={backToTopContainerStyle}>
+          <div className={backToTopInnerStyle}>
+            <svg viewBox="0 0 24 24" className={backToTopArrowStyle}>
+              <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
+            </svg>
+          </div>
+        </a>
+      </GridArea>
+    </Grid>
   );
 }
 
@@ -89,7 +113,7 @@ export const query = graphql`
           layout: CONSTRAINED
           formats: [JPG, AVIF]
           quality: 80
-          width: 248
+          width: 224
           placeholder: TRACED_SVG
         )
       }
