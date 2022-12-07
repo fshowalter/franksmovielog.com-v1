@@ -22,6 +22,10 @@ const baseProperties = defineProperties({
     boxShadow: {
       borderBottom: `0px 1px ${borderColors.default}`,
     },
+    display: {
+      flex: "flex",
+      block: "block",
+    },
     paddingBottom: size,
     whiteSpace: ["nowrap"],
     overflow: ["hidden"],
@@ -64,11 +68,11 @@ const responsiveProperties = defineProperties({
   defaultCondition: "mobile",
   responsiveArray: ["mobile", "tablet", "desktop", "max"],
   properties: {
+    display: ["block", "none", "flex"],
     justifySelf: ["center", "unset"],
     padding: space,
     fontSize: fontSizes,
     lineHeight: lineHeights,
-    display: ["flex", "block", "grid", "none"],
     alignItems: ["stretch", "center", "start"],
     alignSelf: ["start"],
     flexGrow: [0, 1, "unset"],

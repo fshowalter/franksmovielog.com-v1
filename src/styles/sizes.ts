@@ -25,8 +25,8 @@ export const GRID = {
 
 export const MAX_STILL_WIDTH = "992px";
 export const MAX_POSTER_WIDTH = "248px";
-export const PROSE_CONTENT_WIDTH = "max(32.5em, 58.5ch)";
-export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `max(calc((${GUTTER} * 2) + 32.5em), calc((${GUTTER} * 2) + 58.5ch))`;
+export const PROSE_CONTENT_WIDTH = "max(32.5em, 60ch)";
+export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `max(calc((${GUTTER} * 2) + 32.5em), calc((${GUTTER} * 2) + 60ch))`;
 export const MAX_CONTENT_WIDTH_WITH_GUTTERS = `calc((${GUTTER} * 2) + ${MAX_STILL_WIDTH})`;
 
 export const relativeSize = {

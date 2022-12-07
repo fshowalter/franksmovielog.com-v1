@@ -1,55 +1,23 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { useRef } from "react";
-import toSentenceArray from "../../utils/to-sentence-array";
-import DateIcon from "../DateIcon";
-import Grade from "../Grade";
-import { GraphqlImage } from "../GraphqlImage";
-import HeadBuilder from "../HeadBuilder";
+import { gridAreaComponent, gridComponent } from "../Grid";
 import Layout from "../Layout";
-import RenderedMarkdown from "../RenderedMarkdown";
-import {
-  articleBodyCss,
-  articleFooterCss,
-  articleHeadingCss,
-  containerCss,
-  dateCss,
-  imageLinkCss,
-  listCss,
-  listItemCss,
-  paginationCss,
-  reviewCreditsCss,
-  reviewCss,
-  reviewGradeCss,
-  reviewHeaderCss,
-  reviewYearCss,
-} from "./HomePage.module.scss";
+import { gridAreas, gridStyle } from "./HomePage.css";
+import Item from "./Item";
 import Pagination from "./Pagination";
 
-interface PageContext {
+const GridArea = gridAreaComponent(gridAreas);
+
+const Grid = gridComponent(gridStyle);
+
+export interface PageContext {
   limit: number;
   skip: number;
   numberOfItems: number;
   currentPage: number;
 }
 
-export function Head({
-  pageContext,
-}: {
-  pageContext: PageContext;
-}): JSX.Element {
-  return (
-    <HeadBuilder
-      pageTitle={
-        pageContext.currentPage === 1
-          ? "Frank's Movie Log: My Life at the Movies"
-          : `Page ${pageContext.currentPage}`
-      }
-      description="Reviews of current, cult, classic, and forgotten films."
-      article={false}
-      image={null}
-    />
-  );
-}
+export { Head } from "./Head";
 
 export default function HomePage({
   pageContext,
@@ -63,73 +31,34 @@ export default function HomePage({
 
   return (
     <Layout>
-      <main className={containerCss} ref={listHeader}>
-        <ol className={listCss}>
-          {viewings.map((viewing, index) => {
-            const listItemValue =
-              pageContext.numberOfItems - pageContext.skip - index;
-
-            return (
-              <li
-                key={viewing.sequence}
-                value={listItemValue}
-                className={`${listItemCss}`}
-              >
-                <article className={`${reviewCss}`}>
-                  <Link
-                    rel="canonical"
-                    className={imageLinkCss}
-                    to={`/reviews/${viewing.slug}/`}
-                  >
-                    <GraphqlImage
-                      image={viewing.backdrop}
-                      alt={`A still from ${viewing.title} (${viewing.year})`}
-                      loading={index === 0 ? "eager" : "lazy"}
-                    />
-                  </Link>
-                  <header className={reviewHeaderCss}>
-                    <h2 className={articleHeadingCss}>
-                      <Link to={`/reviews/${viewing.slug}/`} rel="canonical">
-                        {viewing.title}{" "}
-                        <span className={reviewYearCss}>{viewing.year}</span>
-                      </Link>
-                    </h2>
-                    <Grade
-                      grade={viewing.grade}
-                      className={reviewGradeCss}
-                      width={140}
-                      height={28}
-                    />
-                    <p className={reviewCreditsCss}>
-                      Directed by {toSentenceArray(viewing.directorNames)}.
-                      Starring {toSentenceArray(viewing.principalCastNames)}.
-                    </p>
-                  </header>
-                  <RenderedMarkdown
-                    className={articleBodyCss}
-                    text={viewing.excerpt}
-                    tag="main"
-                  />
-                  <footer className={articleFooterCss}>
-                    <div className={dateCss}>
-                      <DateIcon /> {viewing.date}
-                    </div>
-                  </footer>
-                </article>
-              </li>
-            );
-          })}
-        </ol>
-        <Pagination
-          className={paginationCss}
-          currentPage={pageContext.currentPage}
-          urlRoot="/"
-          perPage={pageContext.limit}
-          numberOfItems={pageContext.numberOfItems}
-          prevText="Newer"
-          nextText="Older"
-        />
-      </main>
+      <Grid as="main" ref={listHeader}>
+        <GridArea name="list">
+          <ol>
+            {viewings.map((viewing, index) => {
+              return (
+                <Item
+                  key={viewing.sequence}
+                  viewing={viewing}
+                  eagerLoadImage={index === 0}
+                  counterValue={
+                    pageContext.numberOfItems - pageContext.skip - index
+                  }
+                />
+              );
+            })}
+          </ol>
+        </GridArea>
+        <GridArea name="pagination">
+          <Pagination
+            currentPage={pageContext.currentPage}
+            urlRoot="/"
+            perPage={pageContext.limit}
+            numberOfItems={pageContext.numberOfItems}
+            prevText="Newer"
+            nextText="Older"
+          />
+        </GridArea>
+      </Grid>
     </Layout>
   );
 }
@@ -137,7 +66,7 @@ export default function HomePage({
 export const pageQuery = graphql`
   query HomePage($skip: Int!, $limit: Int!) {
     viewings: viewingsWithReviews(
-      sort: { fields: sequence, order: ASC }
+      sort: { fields: sequence, order: DESC }
       limit: $limit
       skip: $skip
     ) {

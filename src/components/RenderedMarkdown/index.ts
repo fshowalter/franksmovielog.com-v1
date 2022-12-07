@@ -1,3 +1,1 @@
-import RenderedMarkdown from "./RenderedMarkdown";
-
-export default RenderedMarkdown;
+export { RenderedMarkdown } from "./RenderedMarkdown";

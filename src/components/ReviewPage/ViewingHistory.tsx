@@ -1,8 +1,8 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
-import DateIcon from "../DateIcon";
+import { DateIcon } from "../DateIcon";
 import { gridAreaComponent, gridComponent } from "../Grid";
-import RenderedMarkdown from "../RenderedMarkdown";
+import { RenderedMarkdown } from "../RenderedMarkdown";
 import {
   gridAreas,
   gridStyle,

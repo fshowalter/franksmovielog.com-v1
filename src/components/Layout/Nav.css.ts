@@ -1,7 +1,7 @@
 import { style, StyleRule, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { space } from "../../styles/spacing";
+import { size } from "../../styles/sizes";
 
 const linkBaseStyles = style({
   textDecoration: "none",
@@ -14,7 +14,7 @@ export const linkStyles = {
       [minMediaQuery("max")]: {
         borderBottom: `1px solid ${borderColors.default}`,
         display: "block",
-        lineHeight: space[48],
+        lineHeight: size[48],
         whiteSpace: "nowrap",
         marginBottom: "-1px",
       },

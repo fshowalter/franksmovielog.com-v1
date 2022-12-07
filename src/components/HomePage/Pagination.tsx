@@ -1,5 +1,4 @@
 import { Link } from "gatsby";
-import React from "react";
 import ScreenReaderOnly from "../ScreenReaderOnly";
 import {
   containerCss,
@@ -13,7 +12,6 @@ export default function Pagination({
   perPage,
   numberOfItems,
   urlRoot,
-  className,
   prevText,
   nextText,
 }: {
@@ -21,7 +19,6 @@ export default function Pagination({
   perPage: number;
   numberOfItems: number;
   urlRoot: string;
-  className: string;
   prevText: string;
   nextText: string;
 }): JSX.Element {
@@ -88,7 +85,7 @@ export default function Pagination({
     );
 
   return (
-    <section className={`${containerCss} ${className}`}>
+    <section className={`${containerCss}`}>
       <ScreenReaderOnly>
         <h3>Pagination</h3>
       </ScreenReaderOnly>

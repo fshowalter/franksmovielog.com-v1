@@ -1,7 +1,7 @@
 import composeClassNames from "../../utils/composeClassNames";
-import { renderedMarkdownCss } from "./RenderedMarkdown.module.scss";
+import { renderedMarkdownStyle } from "./RenderedMarkdown.css";
 
-export default function RenderedMarkdown({
+export function RenderedMarkdown({
   text,
   className,
   tag,
@@ -18,7 +18,7 @@ export default function RenderedMarkdown({
 
   return (
     <Tag
-      className={composeClassNames(renderedMarkdownCss, className)}
+      className={composeClassNames(renderedMarkdownStyle, className)}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: text,

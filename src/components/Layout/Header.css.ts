@@ -1,17 +1,17 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { space } from "../../styles/spacing";
+import { GRID, size } from "../../styles/sizes";
 import { fontSizes } from "../../styles/typography.css";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const taglineStyle = style({
   fontStyle: "italic",
-  lineHeight: space[16],
+  lineHeight: size[16],
   "@media": {
     [minMediaQuery("desktop")]: {
       fontSize: "15px",
       paddingLeft: "1px",
-      lineHeight: space[24],
+      lineHeight: size[24],
     },
     [minMediaQuery("max")]: {
       order: "unset",
@@ -36,16 +36,16 @@ export const gridStyle = style({
   display: "grid",
   ...gridTemplate<GridAreas, 3>({
     rows: [
-      { [space[24]]: SPACER },
+      { [size[24]]: SPACER },
       [SPACER, "title", SPACER],
       [SPACER, "tagline", SPACER],
-      { [space[24]]: SPACER },
+      { [size[24]]: SPACER },
       [SPACER, "search", SPACER],
-      { [space[24]]: SPACER },
+      { [size[24]]: SPACER },
       [SPACER, "nav", SPACER],
-      { [space[24]]: SPACER },
+      { [size[24]]: SPACER },
     ],
-    columns: ["minmax(20px, 1fr)", "auto", "minmax(20px, 1fr)"],
+    columns: [GRID.GUTTER, "auto", GRID.GUTTER],
   }),
   textAlign: "center",
   "@media": {
@@ -53,12 +53,12 @@ export const gridStyle = style({
       textAlign: "unset",
       ...gridTemplate<GridAreas, 4>({
         rows: [
-          { [space[48]]: SPACER },
+          { [size[48]]: SPACER },
           [SPACER, "title", "search", SPACER],
           [SPACER, "tagline", SPACER, SPACER],
-          { [space[32]]: SPACER },
+          { [size[32]]: SPACER },
           [SPACER, "nav", "nav", SPACER],
-          { [space[40]]: SPACER },
+          { [size[40]]: SPACER },
         ],
         columns: ["1fr", "704px", "288px", "1fr"],
       }),
@@ -68,9 +68,9 @@ export const gridStyle = style({
         rows: [
           ["title"],
           ["tagline"],
-          { [space[24]]: SPACER },
+          { [size[24]]: SPACER },
           ["search"],
-          { [space[48]]: SPACER },
+          { [size[48]]: SPACER },
           ["nav"],
         ],
         columns: ["auto"],

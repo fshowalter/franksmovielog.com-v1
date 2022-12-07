@@ -47,7 +47,6 @@ export default function WatchlistLinks({
   watchlist,
   ...rest
 }: IWatchlistLinksProps): JSX.Element {
-  console.log(watchlist);
   if (!watchlist) {
     return <Box {...rest} />;
   }

@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
-import Grade from "../Grade";
+import { Grade } from "../Grade";
 import { GraphqlImage } from "../GraphqlImage";
 import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
@@ -116,7 +116,6 @@ export default function RelatedMovies({
   relatedMovies,
   ...rest
 }: IRelatedMoviesProps) {
-  console.log(relatedMovies);
   return (
     <Box {...rest} display="flex" flexDirection="column" rowGap={64}>
       {relatedMovies.watchlist.collections.map((collection) => (
@@ -134,34 +133,44 @@ export default function RelatedMovies({
         </Grid>
       ))}
       {relatedMovies.watchlist.performers.map((performer) => (
-        <Box as="nav" key={performer.slug}>
-          <SectionHeading
-            leadText="More with"
-            boldText={performer.name}
-            linkTarget={`/watchlist/performers/${performer.slug}/`}
-          />
-          <MovieList movies={performer.browseMore} />
-        </Box>
+        <Grid as="nav" key={performer.slug}>
+          <GridArea name="heading" boxShadow="borderBottom">
+            <SectionHeading
+              leadText="More with"
+              boldText={performer.name}
+              linkTarget={`/watchlist/performers/${performer.slug}/`}
+            />
+          </GridArea>
+          <GridArea name="list">
+            <MovieList movies={performer.browseMore} />
+          </GridArea>
+        </Grid>
       ))}
       {relatedMovies.watchlist.directors.map((director) => (
-        <Box as="nav" key={director.slug}>
-          <SectionHeading
-            leadText="More directed by"
-            boldText={director.name}
-            linkTarget={`/watchlist/directors/${director.slug}/`}
-          />
-          <MovieList movies={director.browseMore} />
-        </Box>
+        <Grid as="nav" key={director.slug}>
+          <GridArea name="heading" boxShadow="borderBottom">
+            <SectionHeading
+              leadText="More directed by"
+              boldText={director.name}
+              linkTarget={`/watchlist/directors/${director.slug}/`}
+            />
+          </GridArea>
+          <GridArea name="list">
+            <MovieList movies={director.browseMore} />
+          </GridArea>
+        </Grid>
       ))}
       {relatedMovies.watchlist.writers.map((writer) => (
-        <Box as="nav" key={writer.slug}>
+        <Grid as="nav" key={writer.slug}>
           <SectionHeading
             leadText="More written by"
             boldText={writer.name}
             linkTarget={`/watchlist/writers/${writer.slug}/`}
           />
-          <MovieList movies={writer.browseMore} />
-        </Box>
+          <GridArea name="list">
+            <MovieList movies={writer.browseMore} />
+          </GridArea>
+        </Grid>
       ))}
       <Grid as="nav">
         <GridArea name="heading" boxShadow="borderBottom">

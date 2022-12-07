@@ -10,6 +10,7 @@ import React from "react";
 import "../../styles/global.css";
 import { Box } from "../Box";
 import { gridAreaComponent, gridComponent } from "../Grid";
+import ScreenReaderOnly from "../ScreenReaderOnly";
 import Footer from "./Footer";
 import Header from "./Header";
 import {
@@ -18,7 +19,6 @@ import {
   gridStyle,
   pageCanvasStyle,
 } from "./Layout.css";
-import { skipLinkCss } from "./Layout.module.scss";
 
 const Grid = gridComponent(gridStyle);
 const GridArea = gridAreaComponent(gridAreas);
@@ -30,9 +30,9 @@ export default function Layout({
 }): JSX.Element {
   return (
     <>
-      <a className={skipLinkCss} href="#content">
-        Skip to content
-      </a>
+      <ScreenReaderOnly>
+        <a href="#content">Skip to content</a>
+      </ScreenReaderOnly>
       <Box backgroundColor="default" className={pageCanvasStyle}>
         <Box backgroundImage="ripNotComingSoon" minHeight={16}></Box>
         <Box

@@ -55,31 +55,33 @@ export default function Credits({
         />
       </GridArea>
       <GridArea name="meta">
-        <Box as="header" fontSize="large" display={{ desktop: "none" }}>
+        <Box
+          as="header"
+          fontSize="large"
+          lineHeight={32}
+          hideOn="desktop"
+          paddingBottom={24}
+        >
           {movie.title}
         </Box>
         <dl>
-          <Credit
-            title="Year"
-            value={movie.year}
-            display={{ desktop: "none" }}
-          />
+          <Credit title="Year" value={movie.year} hideOn="desktop" />
           {movie.originalTitle && (
             <Credit
               title="Original Title"
               value={movie.originalTitle}
-              display={{ desktop: "none" }}
+              hideOn="desktop"
             />
           )}
           <Credit
             title="Financing"
             value={toSentenceArray(movie.countries)}
-            display={{ desktop: "none" }}
+            hideOn="desktop"
           />
           <Credit
             title="Running Time"
             value={`${movie.runtimeMinutes} min`}
-            display={{ desktop: "none" }}
+            hideOn="desktop"
           />
           <Credit
             title="Directed by"
@@ -94,7 +96,7 @@ export default function Credits({
       <GridArea name="watchlistLinks">
         <WatchlistLinks watchlist={movie.watchlist} />
       </GridArea>
-      <GridArea name="backToTop" display={{ desktop: "none" }}>
+      <GridArea name="backToTop" hideOn="desktop">
         <a href="#top" className={backToTopContainerStyle}>
           <div className={backToTopInnerStyle}>
             <svg viewBox="0 0 24 24" className={backToTopArrowStyle}>

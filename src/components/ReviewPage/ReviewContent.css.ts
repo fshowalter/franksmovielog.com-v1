@@ -1,41 +1,43 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { space } from "../../styles/spacing";
+import { PROSE_CONTENT_WIDTH, size } from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gradeStyle = style({
-  height: space[32],
+  height: size[32],
   width: "auto",
   margin: "0 auto",
   "@media": {
     [minMediaQuery("desktop")]: {
-      margin: 0,
+      margin: "0 0 0 -2px",
     },
   },
 });
 
 export const gridStyle = style({
   display: "grid",
-  maxWidth: "max(32.5em, 58.5ch)",
+  maxWidth: PROSE_CONTENT_WIDTH,
+  margin: "0 auto",
   ...gridTemplate<GridAreas, 1>({
     rows: [
-      { [space[24]]: SPACER },
+      { [size[24]]: SPACER },
       ["grade"],
       ["date"],
-      { [space[32]]: SPACER },
+      { [size[32]]: SPACER },
       ["text"],
     ],
     columns: ["auto"],
   }),
   "@media": {
     [minMediaQuery("desktop")]: {
+      margin: 0,
       ...gridTemplate<GridAreas, 1>({
         rows: [
-          { [space[24]]: SPACER },
+          { [size[24]]: SPACER },
           ["grade"],
-          { [space[8]]: SPACER },
+          { [size[16]]: SPACER },
           ["date"],
-          { [space[32]]: SPACER },
+          { [size[32]]: SPACER },
           ["text"],
         ],
         columns: ["auto"],
@@ -58,13 +60,17 @@ const gridAreaStyles = {
     "@media": {
       [minMediaQuery("desktop")]: {
         flexDirection: "row" as const,
-        marginLeft: "4px",
         fontWeight: "normal",
       },
     },
   },
   text: {
     gridArea: "text",
+    "@media": {
+      [minMediaQuery("desktop")]: {
+        marginLeft: "calc(16px + 1ch)",
+      },
+    },
   },
 };
 

@@ -1,9 +1,9 @@
 import { graphql } from "gatsby";
 import { Box } from "../Box";
-import DateIcon from "../DateIcon";
-import Grade from "../Grade";
+import { DateIcon } from "../DateIcon";
+import { Grade } from "../Grade";
 import { gridAreaComponent, gridComponent } from "../Grid";
-import RenderedMarkdown from "../RenderedMarkdown";
+import { RenderedMarkdown } from "../RenderedMarkdown";
 import { gradeStyle, gridAreas, gridStyle } from "./ReviewContent.css";
 
 const GridArea = gridAreaComponent(gridAreas);
@@ -21,15 +21,10 @@ export default function ReviewContent({
         <Grade grade={movie.grade} className={gradeStyle} />
       </GridArea>
       <GridArea name="date" color="muted">
-        <Box display={{ mobile: "none", desktop: "block" }}>
+        <Box hideOn="mobile">
           <DateIcon />
         </Box>
-        <Box
-          as="span"
-          fontWeight="normal"
-          color="subtle"
-          display={{ desktop: "none" }}
-        >
+        <Box as="span" fontWeight="normal" color="subtle" hideOn="desktop">
           on
         </Box>{" "}
         <Box as="span">{movie.viewings[0].date}</Box>

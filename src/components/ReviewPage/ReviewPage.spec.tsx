@@ -13,6 +13,6 @@ describe("/reviews/{slug}", () => {
   it("sets page title", () => {
     render(<Head data={data} />);
 
-    expect(document.title).toStrictEqual("Rio Bravo (1959)");
+    expect(document.title).toStrictEqual("The Seventh Continent (1989)");
   });
 });

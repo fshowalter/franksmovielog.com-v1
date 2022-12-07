@@ -10,17 +10,6 @@ import {
   size,
 } from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
-import { reviewContainerName } from "./breakpoints.css";
-
-export const containerStyle = style({
-  containerType: "inline-size",
-  containerName: reviewContainerName,
-});
-
-export const creditsStyle = style({
-  // flexBasis: "min-content",
-  // flexGrow: 1,
-});
 
 export const gridStyle = style({
   display: "grid",
@@ -120,7 +109,9 @@ const gridAreaStyles = {
     width: size["full"],
     "@media": {
       [minMediaQuery("desktop")]: {
-        marginLeft: `calc(-2 * ${GUTTER})`,
+        marginLeft: `calc(-1 * ${GUTTER})`,
+        width: PROSE_CONTENT_WIDTH_WITH_GUTTERS,
+        justifySelf: "unset",
       },
     },
   },

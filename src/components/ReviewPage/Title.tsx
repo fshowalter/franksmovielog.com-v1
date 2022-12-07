@@ -39,7 +39,7 @@ function Details({ movie }: { movie: Queries.ReviewTitleFragment }) {
       }, null)}{" "}
       <span>|</span> {movie.runtimeMinutes}
       &#x02009;min{" "}
-      <Box as="span" display={{ desktop: "none" }}>
+      <Box as="span" hideOn="desktop">
         <span>|</span>{" "}
         <Box as="a" href="#credits" color="accent" textDecoration="none">
           More...

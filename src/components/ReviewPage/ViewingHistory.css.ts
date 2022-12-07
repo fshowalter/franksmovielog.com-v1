@@ -11,17 +11,6 @@ export const gridStyle = style({
     ],
     columns: [GUTTER, `1fr`, GUTTER],
   }),
-  // "@media": {
-  //   [minMediaQuery("desktop")]: {
-  //     ...gridTemplate<GridAreas, 3>({
-  //       rows: [
-  //         [SPACER, "heading", SPACER],
-  //         ["list", "list", "list"],
-  //       ],
-  //       columns: [GRID.GUTTER, "1fr", GRID.GUTTER],
-  //     }),
-  //   },
-  // },
 });
 
 const gridAreaStyles = {
