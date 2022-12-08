@@ -21,9 +21,6 @@ function WatchlistItem({
         display="flex"
         alignItems="center"
         whiteSpace="nowrap"
-        border="all"
-        paddingX={16}
-        paddingY={8}
         color="accent"
         textDecoration="none"
         className={linkStyle}
@@ -43,7 +40,7 @@ interface IWatchlistLinksProps extends IBoxProps {
   watchlist: Queries.WatchlistLinksFragment;
 }
 
-export default function WatchlistLinks({
+export function WatchlistLinks({
   watchlist,
   ...rest
 }: IWatchlistLinksProps): JSX.Element {

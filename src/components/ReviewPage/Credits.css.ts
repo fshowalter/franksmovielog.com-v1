@@ -1,5 +1,4 @@
 import { style, styleVariants } from "@vanilla-extract/css";
-import { minMediaQuery } from "../../styles/breakpoints";
 import { backgroundColors, foregroundColors } from "../../styles/colors.css";
 import { GUTTER, MAX_POSTER_WIDTH, size } from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
@@ -7,12 +6,6 @@ import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 export const posterStyle = style({
   maxWidth: MAX_POSTER_WIDTH,
   borderRadius: size[8],
-
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      borderRadius: 0,
-    },
-  },
 });
 
 export const backToTopContainerStyle = style({
@@ -79,27 +72,12 @@ export const gridStyle = style({
     rows: [
       { [size[48]]: SPACER },
       [SPACER, "poster", SPACER, "meta", SPACER],
+      { [size[24]]: SPACER },
       [SPACER, "watchlistLinks", "watchlistLinks", "backToTop", SPACER],
       { [size[48]]: SPACER },
     ],
     columns: [GUTTER, "10fr", size[24], "10fr", GUTTER],
   }),
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      ...gridTemplate<GridAreas, 1>({
-        rows: [
-          ["poster"],
-          { [size[24]]: SPACER },
-          ["meta"],
-          ["watchlistLinks"],
-        ],
-        columns: ["auto"],
-      }),
-      backgroundColor: "unset",
-      position: "sticky",
-      top: size[48],
-    },
-  },
 });
 
 const gridAreaStyles = {

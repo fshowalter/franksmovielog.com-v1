@@ -3,7 +3,6 @@ import toSentenceArray from "../../utils/to-sentence-array";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { gridAreaComponent, gridComponent } from "../Grid";
-import { Spacer } from "../Spacer";
 import {
   backToTopArrowStyle,
   backToTopContainerStyle,
@@ -12,7 +11,7 @@ import {
   gridStyle,
   posterStyle,
 } from "./Credits.css";
-import WatchlistLinks from "./WatchlistLinks";
+import { WatchlistLinks } from "./WatchlistLinks";
 
 const GridArea = gridAreaComponent(gridAreas);
 
@@ -31,7 +30,6 @@ function Credit({ title, value, ...rest }: ICreditProps) {
       </Box>
       <Box as="dd" color="subtle">
         {value}
-        <Spacer axis="vertical" size={24} />
       </Box>
     </Box>
   );
@@ -41,71 +39,66 @@ interface ICreditsProps extends IBoxProps {
   movie: Queries.CreditsFragment;
 }
 
-export default function Credits({
-  movie,
-  ...rest
-}: ICreditsProps): JSX.Element {
+export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
   return (
-    <Grid as="aside" id="credits" position="relative" {...rest}>
-      <GridArea name="poster">
-        <GraphqlImage
-          image={movie.poster}
-          alt={`A poster from ${movie.title} (${movie.year})`}
-          className={posterStyle}
-        />
-      </GridArea>
-      <GridArea name="meta">
-        <Box
-          as="header"
-          fontSize="large"
-          lineHeight={32}
-          hideOn="desktop"
-          paddingBottom={24}
-        >
-          {movie.title}
+    <Box
+      as="aside"
+      id="credits"
+      position="relative"
+      {...rest}
+      paddingX="gutter"
+      paddingY={32}
+      backgroundColor="subtle"
+    >
+      <Box
+        display="flex"
+        columnGap={{ mobile: 24, desktop: 32 }}
+        paddingBottom={24}
+      >
+        <Box flex={1} maxWidth="poster">
+          <GraphqlImage
+            image={movie.poster}
+            alt={`A poster from ${movie.title} (${movie.year})`}
+            className={posterStyle}
+          />
         </Box>
-        <dl>
-          <Credit title="Year" value={movie.year} hideOn="desktop" />
-          {movie.originalTitle && (
+        <Box flex={1}>
+          <Box as="header" fontSize={25} lineHeight={32} paddingBottom={24}>
+            {movie.title}
+          </Box>
+          <Box as="dl" display="flex" flexDirection="column" rowGap={24}>
+            <Credit title="Year" value={movie.year} />
+            {movie.originalTitle && (
+              <Credit title="Original Title" value={movie.originalTitle} />
+            )}
             <Credit
-              title="Original Title"
-              value={movie.originalTitle}
-              hideOn="desktop"
+              title="Financing"
+              value={toSentenceArray(movie.countries)}
             />
-          )}
-          <Credit
-            title="Financing"
-            value={toSentenceArray(movie.countries)}
-            hideOn="desktop"
-          />
-          <Credit
-            title="Running Time"
-            value={`${movie.runtimeMinutes} min`}
-            hideOn="desktop"
-          />
-          <Credit
-            title="Directed by"
-            value={toSentenceArray(movie.directorNames)}
-          />
-          <Credit
-            title="Starring"
-            value={toSentenceArray(movie.principalCastNames)}
-          />
-        </dl>
-      </GridArea>
-      <GridArea name="watchlistLinks">
-        <WatchlistLinks watchlist={movie.watchlist} />
-      </GridArea>
-      <GridArea name="backToTop" hideOn="desktop">
-        <a href="#top" className={backToTopContainerStyle}>
-          <div className={backToTopInnerStyle}>
-            <svg viewBox="0 0 24 24" className={backToTopArrowStyle}>
-              <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
-            </svg>
-          </div>
-        </a>
-      </GridArea>
-    </Grid>
+            <Credit
+              title="Running Time"
+              value={`${movie.runtimeMinutes} min`}
+            />
+            <Credit
+              title="Directed by"
+              value={toSentenceArray(movie.directorNames)}
+            />
+            <Credit
+              title="Starring"
+              value={toSentenceArray(movie.principalCastNames)}
+            />
+          </Box>
+        </Box>
+      </Box>
+      <WatchlistLinks watchlist={movie.watchlist} />
+      <a href="#top" className={backToTopContainerStyle}>
+        <div className={backToTopInnerStyle}>
+          <svg viewBox="0 0 24 24" className={backToTopArrowStyle}>
+            <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
+          </svg>
+        </div>
+      </a>
+    </Box>
   );
 }
 

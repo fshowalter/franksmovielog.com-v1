@@ -1,7 +1,6 @@
 import { style, StyleRule, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { size } from "../../styles/sizes";
+import { foregroundColors } from "../../styles/colors.css";
 
 const linkBaseStyles = style({
   textDecoration: "none",
@@ -10,15 +9,15 @@ const linkBaseStyles = style({
 
 export const linkStyles = {
   header: {
-    "@media": {
-      [minMediaQuery("max")]: {
-        borderBottom: `1px solid ${borderColors.default}`,
-        display: "block",
-        lineHeight: size[48],
-        whiteSpace: "nowrap",
-        marginBottom: "-1px",
-      },
-    },
+    // "@media": {
+    //   [minMediaQuery("max")]: {
+    //     borderBottom: `1px solid ${borderColors.default}`,
+    //     display: "block",
+    //     lineHeight: size[48],
+    //     whiteSpace: "nowrap",
+    //     marginBottom: "-1px",
+    //   },
+    // },
   },
   footer: {},
 };
@@ -68,9 +67,7 @@ const listStyles = {
     "@media": {
       [minMediaQuery("desktop")]: {
         justifyContent: "flex-start",
-      },
-      [minMediaQuery("max")]: {
-        flexDirection: "column",
+        flexWrap: "nowrap",
       },
     },
   },

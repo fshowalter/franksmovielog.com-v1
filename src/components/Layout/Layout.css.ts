@@ -1,10 +1,6 @@
-import { style, styleVariants } from "@vanilla-extract/css";
+import { style } from "@vanilla-extract/css";
 import { breakpoints, minMediaQuery } from "../../styles/breakpoints";
-import {
-  MAX_CONTENT_WIDTH_WITH_GUTTERS,
-  MAX_STILL_WIDTH,
-} from "../../styles/sizes";
-import { gridTemplate, SPACER } from "../../utils/gridTemplate";
+import { MAX_STILL_WIDTH } from "../../styles/sizes";
 
 export const pageCanvasStyle = style({
   minHeight: "100dvh",
@@ -12,46 +8,25 @@ export const pageCanvasStyle = style({
   margin: "0 auto",
 });
 
-export const contentStyle = style({
-  // maxWidth: "1280px",
-  position: "relative",
-});
+export const bandStickyStyle = style({
+  maxWidth: `clamp(${MAX_STILL_WIDTH}, 95vw, ${breakpoints.max})`,
+  margin: "0 auto",
 
-export const gridStyle = style({
-  display: "grid",
-  ...gridTemplate<GridAreas, 1>({
-    rows: [["header"], ["children"]],
-    columns: ["auto"],
-  }),
   "@media": {
-    [minMediaQuery("max")]: {
-      ...gridTemplate<GridAreas, 2>({
-        rows: [
-          ["children", "header"],
-          ["children", SPACER],
-        ],
-        columns: [MAX_CONTENT_WIDTH_WITH_GUTTERS, "224px"],
-      }),
-      columnGap: "32px",
+    [minMediaQuery("desktop")]: {
+      position: "sticky",
+      top: "0",
+      zIndex: 200,
     },
   },
 });
 
-const gridAreaStyles = {
-  header: {
-    gridArea: "header",
-    "@media": {
-      [minMediaQuery("max")]: {
-        position: "sticky" as const,
-        top: "80px",
-      },
+export const headerStickyStyle = style({
+  "@media": {
+    [minMediaQuery("desktop")]: {
+      position: "sticky",
+      top: "16px",
+      zIndex: 200,
     },
   },
-  children: {
-    gridArea: "children",
-  },
-};
-
-export type GridAreas = "header" | "children";
-
-export const gridAreas = styleVariants(gridAreaStyles);
+});

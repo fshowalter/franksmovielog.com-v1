@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import HeadBuilder from "../HeadBuilder";
+import { HeadBuilder } from "../HeadBuilder";
 
 const gradeMap: Record<string, string> = {
   A: "★★★★★",
@@ -40,7 +40,7 @@ export const query = graphql`
     review {
       excerpt
     }
-    seoImage: backdrop {
+    seoImage: still {
       childImageSharp {
         resize(toFormat: JPG, width: 1200, quality: 80) {
           src

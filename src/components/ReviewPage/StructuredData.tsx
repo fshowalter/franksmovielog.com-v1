@@ -8,7 +8,7 @@ const gradeMap: { [index: string]: number } = {
   F: 1,
 };
 
-export default function StructuredData({
+export function StructuredData({
   data,
 }: {
   data: Queries.StructuredDataFragment;
@@ -49,7 +49,7 @@ export const query = graphql`
     year
     grade
     directorNames
-    seoImage: backdrop {
+    seoImage: still {
       childImageSharp {
         resize(toFormat: JPG, width: 1200, quality: 80) {
           src

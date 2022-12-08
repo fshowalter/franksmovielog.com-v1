@@ -1,11 +1,18 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors } from "../../styles/colors.css";
+import { PROSE_CONTENT_WIDTH } from "../../styles/sizes";
 
 export const formStyle = style({
   border: `solid 1px ${borderColors.default}`,
   borderRadius: "4px",
   width: "100%",
+  maxWidth: PROSE_CONTENT_WIDTH,
+  "@media": {
+    [minMediaQuery("desktop")]: {
+      width: "unset",
+    },
+  },
 });
 
 export const searchInputStyle = style({

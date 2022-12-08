@@ -1,29 +1,38 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { backgroundColors } from "../../styles/colors.css";
-import { GUTTER, MAX_POSTER_WIDTH, size } from "../../styles/sizes";
+import {
+  GUTTER,
+  PROSE_CONTENT_WIDTH,
+  QUAD_POSTER,
+  size,
+} from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
-export const gradeStyle = style({
-  height: "24px",
-  width: "auto",
-  padding: "3px 0",
-});
-
-export const stillStyle = style({
-  borderRadius: "8px",
+export const avatarStyle = style({
+  borderRadius: "50%",
+  display: "block !important",
+  height: "40px",
+  marginRight: "1ch",
+  transform: "translateZ(0)", // Fix Safari border-radius with hidden overflow.
+  width: "40px",
   overflow: "hidden",
-  maxWidth: MAX_POSTER_WIDTH,
-  display: "block",
 });
 
 export const movieListStyle = style({
   padding: 0,
+  maxWidth: PROSE_CONTENT_WIDTH,
   "@media": {
+    [minMediaQuery("tablet")]: {
+      display: "grid",
+      gridTemplateColumns: "repeat(2,1fr)",
+      columnGap: size[24],
+    },
     [minMediaQuery("desktop")]: {
+      maxWidth: QUAD_POSTER,
       display: "grid",
       gridTemplateColumns: "repeat(4,1fr)",
-      columnGap: size[24],
+      columnGap: size[32],
     },
   },
 });
@@ -38,7 +47,7 @@ export const gridStyle = style({
     columns: [GUTTER, "auto", GUTTER],
   }),
   "@media": {
-    [minMediaQuery("desktop")]: {
+    [minMediaQuery("tablet")]: {
       padding: `0 ${GUTTER}`,
       ...gridTemplate<GridAreas, 1>({
         rows: [
@@ -70,58 +79,3 @@ const gridAreaStyles = {
 export type GridAreas = "heading" | "list";
 
 export const gridAreas = styleVariants(gridAreaStyles);
-
-export const listItemGridStyle = style({
-  display: "grid",
-  ...gridTemplate<ListItemGridAreas, 5>({
-    rows: [
-      { [size[24]]: SPACER },
-      [SPACER, "title", SPACER, "still", SPACER],
-      { [size[8]]: [SPACER, SPACER, SPACER, "still", SPACER] },
-      [SPACER, "grade", SPACER, "still", SPACER],
-      [SPACER, SPACER, SPACER, "still", SPACER],
-      { [size[24]]: SPACER },
-    ],
-    columns: [GUTTER, " 1fr", "24px", "1fr", GUTTER],
-  }),
-  selectors: {
-    "&:nth-child(even)": {
-      backgroundColor: backgroundColors.subtle,
-    },
-  },
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      ...gridTemplate<ListItemGridAreas, 1>({
-        rows: [
-          { [size[16]]: SPACER },
-          ["still"],
-          ["title"],
-          { "1fr": ["grade"] },
-          { [size[24]]: SPACER },
-        ],
-        columns: ["auto"],
-      }),
-      selectors: {
-        "&:nth-child(even)": {
-          backgroundColor: "unset",
-        },
-      },
-    },
-  },
-});
-
-const listItemGridAreaStyles = {
-  title: {
-    gridArea: "title",
-  },
-  grade: {
-    gridArea: "grade",
-  },
-  still: {
-    gridArea: "still",
-  },
-};
-
-export type ListItemGridAreas = "title" | "grade" | "still";
-
-export const listItemGridAreas = styleVariants(listItemGridAreaStyles);

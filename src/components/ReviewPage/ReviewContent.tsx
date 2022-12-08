@@ -1,41 +1,38 @@
 import { graphql } from "gatsby";
-import { Box } from "../Box";
-import { DateIcon } from "../DateIcon";
+import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
-import { gridAreaComponent, gridComponent } from "../Grid";
 import { RenderedMarkdown } from "../RenderedMarkdown";
-import { gradeStyle, gridAreas, gridStyle } from "./ReviewContent.css";
 
-const GridArea = gridAreaComponent(gridAreas);
-
-const Grid = gridComponent(gridStyle);
-
-export default function ReviewContent({
-  movie,
-}: {
+interface IReviewContentProps extends IBoxProps {
   movie: Queries.ReviewContentFragment;
-}) {
+}
+
+export function ReviewContent({ movie, ...rest }: IReviewContentProps) {
   return (
-    <Grid>
-      <GridArea name="grade">
-        <Grade grade={movie.grade} className={gradeStyle} />
-      </GridArea>
-      <GridArea name="date" color="muted">
-        <Box hideOn="mobile">
-          <DateIcon />
+    <Box display="flex" flexDirection="column" rowGap={32} {...rest}>
+      <Box
+        display="flex"
+        flexDirection="column"
+        rowGap={8}
+        alignItems="inherit"
+      >
+        <Grade grade={movie.grade} height={32} width={160} />
+        <Box
+          display="flex"
+          flexDirection="column"
+          color="muted"
+          alignItems="inherit"
+          rowGap={8}
+        >
+          <span>on</span> {movie.viewings[0].date}
         </Box>
-        <Box as="span" fontWeight="normal" color="subtle" hideOn="desktop">
-          on
-        </Box>{" "}
-        <Box as="span">{movie.viewings[0].date}</Box>
-      </GridArea>
-      <GridArea name="text">
-        <RenderedMarkdown
-          // eslint-disable-next-line react/no-danger
-          text={movie.review.linkedHtml}
-        />
-      </GridArea>
-    </Grid>
+      </Box>
+      <RenderedMarkdown
+        maxWidth="prose"
+        // eslint-disable-next-line react/no-danger
+        text={movie.review.linkedHtml}
+      />
+    </Box>
   );
 }
 

@@ -8,7 +8,7 @@ import resolveFieldForNode from "../utils/resolveFieldForNode";
 export default function excerptHtmlResolver() {
   return async (
     source: MarkdownNode,
-    args: Record<string, unknown>,
+    _args: Record<string, unknown>,
     context: GatsbyNodeContext,
     info: GatsbyResolveInfo
   ) => {
@@ -48,11 +48,7 @@ export default function excerptHtmlResolver() {
       excerpt = excerpt.replace(/\n+$/, "");
       excerpt = excerpt.replace(
         /<\/p>$/,
-        ` <a ${
-          args.includeCssClass ? 'class="globalExcerptLinkCss"' : ""
-        } href="/reviews/${
-          source.frontmatter.slug
-        }/">Continue reading...</a></p>`
+        ` <a data-continue-reading href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
       );
     }
 

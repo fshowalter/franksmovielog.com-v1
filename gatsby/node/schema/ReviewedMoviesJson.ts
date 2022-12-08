@@ -200,7 +200,7 @@ const ReviewedMoviesJson = {
         return entries;
       },
     },
-    backdrop: {
+    still: {
       type: "File",
       resolve: async (
         source: ReviewedMovieNode,
@@ -212,9 +212,7 @@ const ReviewedMoviesJson = {
           query: {
             filter: {
               absolutePath: {
-                eq: path.resolve(
-                  `./content/assets/backdrops/${source.slug}.png`
-                ),
+                eq: path.resolve(`./content/assets/stills/${source.slug}.png`),
               },
             },
           },

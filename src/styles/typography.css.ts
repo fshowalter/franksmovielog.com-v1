@@ -22,10 +22,12 @@ export const lineHeights = {
   16: "1rem",
   24: "1.5rem",
   32: "2rem",
+  40: "2.5rem",
 };
 
 export const letterSpacing = {
   0.2: "0.0125rem",
+  0.25: "0.015625rem",
   0.3: "0.01875rem",
   0.5: "0.03125rem",
 };

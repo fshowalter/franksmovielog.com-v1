@@ -23,24 +23,25 @@ export const GRID = {
   GUTTER: `minmax(${GUTTER}, 1fr)`,
 };
 
-export const MAX_STILL_WIDTH = "992px";
+export const MAX_STILL_WIDTH = "960px";
 export const MAX_POSTER_WIDTH = "248px";
-export const PROSE_CONTENT_WIDTH = "max(32.5em, 60ch)";
-export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `max(calc((${GUTTER} * 2) + 32.5em), calc((${GUTTER} * 2) + 60ch))`;
+export const PROSE_CONTENT_WIDTH = "33rem"; //"max(32.5rem, 58ch)";
+export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `calc((${GUTTER} * 2) + 33em)`;
 export const MAX_CONTENT_WIDTH_WITH_GUTTERS = `calc((${GUTTER} * 2) + ${MAX_STILL_WIDTH})`;
+export const QUAD_POSTER = "1088px";
+
+function toRem(px: number) {
+  return `${px / 16}rem`;
+}
 
 export const relativeSize = {
   0: 0,
-  0.25: "0.25rem",
-  0.5: ".5rem",
-  1: "1rem",
-  1.5: "1.5rem",
-  2: "2rem",
-  2.5: "2.5rem",
-  3: "3rem",
-  4: "4rem",
-  5: "5rem",
-  6: "6rem",
-  7: "7rem",
-  8: "8rem",
+  8: toRem(8),
+  14: toRem(14),
+  16: toRem(16),
+  18: toRem(18),
+  19: toRem(19),
+  20: toRem(20),
+  25: toRem(25),
+  26: toRem(26),
 };

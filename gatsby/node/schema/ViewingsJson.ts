@@ -1,4 +1,8 @@
 import type { Actions, CreateResolversArgs, NodePluginSchema } from "gatsby";
+import { Node } from "hast";
+import toHtml from "hast-util-to-html";
+import toHast from "mdast-util-to-hast";
+import remark from "remark";
 import { MarkdownNode } from "./MarkdownRemark";
 import posterResolver from "./resolvers/posterResolver";
 import {
@@ -16,6 +20,13 @@ import resolveFieldForNode from "./utils/resolveFieldForNode";
 export interface ViewingNode extends GatsbyNode {
   imdbId: string;
   sequence: number;
+  mediumNotes: string | null;
+}
+
+interface IHastNode extends Node {
+  children: {
+    tagName: string;
+  }[];
 }
 
 const commonFields = {
@@ -34,16 +45,25 @@ const commonFields = {
     },
   },
   viewingYear: "Int!",
-  mediumNotes: "String",
-  sortTitle: "String!",
-  backdrop: {
-    type: "File",
-    extensions: {
-      proxyToReviewedMovie: {
-        fieldName: "backdrop",
-      },
+  mediumNotes: {
+    type: "String",
+    resolve: (source: ViewingNode) => {
+      if (!source.mediumNotes) {
+        return null;
+      }
+
+      const mdast = remark().parse(source.mediumNotes);
+
+      const hast = toHast(mdast, {
+        allowDangerousHtml: true,
+      }) as IHastNode;
+
+      hast.children[0].tagName = "span";
+
+      return toHtml(hast);
     },
   },
+  sortTitle: "String!",
   viewingNote: {
     type: SchemaNames.MARKDOWN_REMARK,
     resolve: async (
@@ -222,6 +242,14 @@ const ViewingWithReview = {
       extensions: {
         proxyToReviewedMovie: {
           fieldName: "directorNames",
+        },
+      },
+    },
+    still: {
+      type: "File",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "still",
         },
       },
     },

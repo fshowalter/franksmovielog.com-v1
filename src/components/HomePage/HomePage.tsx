@@ -1,14 +1,9 @@
 import { graphql } from "gatsby";
 import { useRef } from "react";
-import { gridAreaComponent, gridComponent } from "../Grid";
+import { Box } from "../Box";
 import Layout from "../Layout";
-import { gridAreas, gridStyle } from "./HomePage.css";
 import Item from "./Item";
 import Pagination from "./Pagination";
-
-const GridArea = gridAreaComponent(gridAreas);
-
-const Grid = gridComponent(gridStyle);
 
 export interface PageContext {
   limit: number;
@@ -31,34 +26,33 @@ export default function HomePage({
 
   return (
     <Layout>
-      <Grid as="main" ref={listHeader}>
-        <GridArea name="list">
-          <ol>
-            {viewings.map((viewing, index) => {
-              return (
-                <Item
-                  key={viewing.sequence}
-                  viewing={viewing}
-                  eagerLoadImage={index === 0}
-                  counterValue={
-                    pageContext.numberOfItems - pageContext.skip - index
-                  }
-                />
-              );
-            })}
-          </ol>
-        </GridArea>
-        <GridArea name="pagination">
-          <Pagination
-            currentPage={pageContext.currentPage}
-            urlRoot="/"
-            perPage={pageContext.limit}
-            numberOfItems={pageContext.numberOfItems}
-            prevText="Newer"
-            nextText="Older"
-          />
-        </GridArea>
-      </Grid>
+      <Box as="main" ref={listHeader}>
+        <Box as="ol" display="flex" flexDirection="column" padding={0}>
+          {viewings.map((viewing, index) => {
+            return (
+              <Item
+                key={viewing.sequence}
+                viewing={viewing}
+                eagerLoadImage={index === 0}
+                counterValue={
+                  pageContext.numberOfItems - pageContext.skip - index
+                }
+              />
+            );
+          })}
+        </Box>
+        <Pagination
+          currentPage={pageContext.currentPage}
+          urlRoot="/"
+          perPage={pageContext.limit}
+          numberOfItems={pageContext.numberOfItems}
+          prevText="Newer"
+          nextText="Older"
+          paddingX="gutter"
+          paddingY={40}
+          justifyContent="center"
+        />
+      </Box>
     </Layout>
   );
 }
@@ -80,13 +74,13 @@ export const pageQuery = graphql`
       principalCastNames
       directorNames
       excerpt
-      backdrop {
+      still {
         childImageSharp {
           gatsbyImageData(
             layout: CONSTRAINED
             formats: [JPG, AVIF]
             quality: 80
-            width: 640
+            width: 512
             placeholder: TRACED_SVG
           )
         }

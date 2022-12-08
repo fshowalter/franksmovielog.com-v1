@@ -34,11 +34,11 @@ const gatsbyPluginSitemap = {
   },
 };
 
-const gatsbySourceFileSystemBackdrops = {
+const gatsbySourceFileSystemStills = {
   resolve: "gatsby-source-filesystem",
   options: {
-    name: "backdrops",
-    path: path.resolve("content/assets/backdrops/"),
+    name: "stills",
+    path: path.resolve("content/assets/stills/"),
   },
 };
 
@@ -133,7 +133,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    gatsbySourceFileSystemBackdrops,
+    gatsbySourceFileSystemStills,
     gatsbySourceFileSystemPosters,
     gatsbySourceFileSystemAvatars,
     "gatsby-transformer-json",

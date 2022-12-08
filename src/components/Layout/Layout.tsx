@@ -9,19 +9,13 @@
 import React from "react";
 import "../../styles/global.css";
 import { Box } from "../Box";
-import { gridAreaComponent, gridComponent } from "../Grid";
-import ScreenReaderOnly from "../ScreenReaderOnly";
 import Footer from "./Footer";
 import Header from "./Header";
 import {
-  contentStyle,
-  gridAreas,
-  gridStyle,
+  bandStickyStyle,
+  headerStickyStyle,
   pageCanvasStyle,
 } from "./Layout.css";
-
-const Grid = gridComponent(gridStyle);
-const GridArea = gridAreaComponent(gridAreas);
 
 export default function Layout({
   children,
@@ -30,25 +24,42 @@ export default function Layout({
 }): JSX.Element {
   return (
     <>
-      <ScreenReaderOnly>
-        <a href="#content">Skip to content</a>
-      </ScreenReaderOnly>
-      <Box backgroundColor="default" className={pageCanvasStyle}>
-        <Box backgroundImage="ripNotComingSoon" minHeight={16}></Box>
-        <Box
-          position="relative"
-          className={contentStyle}
-          flex={1}
-          margin="center"
-        >
-          <Grid>
-            <GridArea name="header">
-              <Header alignSelf={{ max: "start" }} />
-            </GridArea>
-            <GridArea name="children">{children}</GridArea>
-          </Grid>
-        </Box>
-        <Footer />
+      <Box as="a" href="#content" screenReaderOnly={true}>
+        Skip to content
+      </Box>
+      <Box
+        backgroundImage="ripNotComingSoon"
+        minHeight={16}
+        width="full"
+        className={bandStickyStyle}
+      />
+
+      <Box
+        backgroundColor="default"
+        className={pageCanvasStyle}
+        display="flex"
+        flexDirection="column"
+      >
+        <Header
+          flexDirection={{ mobile: "column", desktop: "row" }}
+          rowGap={24}
+          paddingX="gutter"
+          paddingY={32}
+          alignItems="center"
+          boxShadow="borderBottom"
+          backgroundColor="default"
+          justifyContent={{ desktop: "space-between" }}
+          textAlign={{ mobile: "center", desktop: "left" }}
+          className={headerStickyStyle}
+        />
+        <Box flexGrow={1}>{children}</Box>
+        <Footer
+          paddingX="gutter"
+          paddingY={32}
+          rowGap={24}
+          alignItems="center"
+          flexDirection="column"
+        />
       </Box>
     </>
   );

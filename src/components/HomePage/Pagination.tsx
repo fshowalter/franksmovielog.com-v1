@@ -1,11 +1,32 @@
-import { Link } from "gatsby";
-import ScreenReaderOnly from "../ScreenReaderOnly";
-import {
-  containerCss,
-  currentPageCss,
-  elipsisCss,
-  paginationLinkCss,
-} from "./Pagination.module.scss";
+import { navigate } from "gatsby";
+import { ChangeEvent } from "react";
+import { Box, IBoxProps } from "../Box";
+import { gridAreaComponent, gridComponent } from "../Grid";
+import { Link } from "../Link";
+import { gridAreas, gridStyle } from "./Pagination.css";
+
+const GridArea = gridAreaComponent(gridAreas);
+
+const Grid = gridComponent(gridStyle);
+
+interface IPaginationProps extends IBoxProps {
+  currentPage: number;
+  perPage: number;
+  numberOfItems: number;
+  urlRoot: string;
+  prevText: string;
+  nextText: string;
+}
+
+function onSelectPage(e: ChangeEvent<HTMLSelectElement>) {
+  e.preventDefault();
+
+  if (e.target.value === "1") {
+    return void navigate(`/`);
+  }
+
+  void navigate(`/page-${e.target.value}/`);
+}
 
 export default function Pagination({
   currentPage,
@@ -14,14 +35,8 @@ export default function Pagination({
   urlRoot,
   prevText,
   nextText,
-}: {
-  currentPage: number;
-  perPage: number;
-  numberOfItems: number;
-  urlRoot: string;
-  prevText: string;
-  nextText: string;
-}): JSX.Element {
+  ...rest
+}: IPaginationProps): JSX.Element {
   const numPages = Math.ceil(numberOfItems / perPage);
 
   const isFirst = currentPage === 1;
@@ -33,67 +48,41 @@ export default function Pagination({
   const nextPageUrl = `${urlRoot}page-${currentPage + 1}/`;
 
   const prev = isFirst ? null : (
-    <Link to={prevPageUrl} className={paginationLinkCss}>
-      {`← ${prevText}`}
-    </Link>
+    <Link
+      to={prevPageUrl}
+      color="accent"
+      textDecoration="none"
+    >{`← ${prevText}`}</Link>
   );
 
   const next = isLast ? null : (
-    <Link to={nextPageUrl} className={paginationLinkCss}>
-      {`${nextText} →`}
-    </Link>
+    <Link
+      to={nextPageUrl}
+      color="accent"
+      textDecoration="none"
+    >{`${nextText} →`}</Link>
   );
-
-  const firstPage =
-    currentPage - 1 > 1 ? (
-      <Link className={paginationLinkCss} to={urlRoot}>
-        1
-      </Link>
-    ) : (
-      ""
-    );
-
-  const prevDots =
-    currentPage - 2 > 1 ? <span className={elipsisCss}>…</span> : "";
-
-  const prevPage = isFirst ? (
-    <span />
-  ) : (
-    <Link to={prevPageUrl} className={paginationLinkCss}>
-      {currentPage - 1}
-    </Link>
-  );
-
-  const nextPage = isLast ? (
-    <span />
-  ) : (
-    <Link to={nextPageUrl} className={paginationLinkCss}>
-      {currentPage + 1}
-    </Link>
-  );
-
-  const nextDots =
-    currentPage + 2 < numPages ? <span className={elipsisCss}>…</span> : "";
-
-  const lastPage =
-    currentPage + 1 < numPages ? (
-      <Link to={`${urlRoot}page-${numPages}/`} className={paginationLinkCss}>
-        {numPages}
-      </Link>
-    ) : (
-      ""
-    );
 
   return (
-    <section className={`${containerCss}`}>
-      <ScreenReaderOnly>
-        <h3>Pagination</h3>
-      </ScreenReaderOnly>
-      {prev} {firstPage} {prevDots} {prevPage}
-      <span className={currentPageCss} aria-current="page">
-        {currentPage}
-      </span>
-      {nextPage} {nextDots} {lastPage} {next}
-    </section>
+    <Grid as="section" fontSize={20} {...rest}>
+      <Box as="h3" screenReaderOnly={true}>
+        Pagination
+      </Box>
+      <GridArea name="prev">{prev}</GridArea>
+      <GridArea name="pages">
+        Page{" "}
+        <Box as="select" value={currentPage} onChange={onSelectPage}>
+          {Array.from({ length: numPages }, (_, i) => i + 1).map((num) => {
+            return (
+              <option key={num} value={num}>
+                {num}
+              </option>
+            );
+          })}
+        </Box>{" "}
+        of {numPages}
+      </GridArea>
+      <GridArea name="next">{next}</GridArea>
+    </Grid>
   );
 }

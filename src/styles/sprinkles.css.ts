@@ -1,131 +1,38 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
+import { atomicProperties } from "./atomicProperties";
 import { minMediaQuery } from "./breakpoints";
-import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
-import { size } from "./sizes";
-import { space } from "./spacing";
-import {
-  fontSizes,
-  fontWeights,
-  letterSpacing,
-  lineHeights,
-} from "./typography.css";
 
-export const borderWidths = {
-  "0": 0,
-  "1": "1px",
-};
-
-const baseProperties = defineProperties({
-  properties: {
-    backgroundColor: backgroundColors,
-    color: foregroundColors,
-    boxShadow: {
-      borderBottom: `0px 1px ${borderColors.default}`,
-    },
-    display: {
-      flex: "flex",
-      block: "block",
-    },
-    paddingBottom: size,
-    whiteSpace: ["nowrap"],
-    overflow: ["hidden"],
-    fontWeight: fontWeights,
-    letterSpacing: letterSpacing,
-    textDecoration: ["none"],
-    justifyItems: ["center"],
-    maxWidth: {
-      prose: "32.5rem",
-    },
-    backgroundImage: {
-      ripNotComingSoon: {
-        background: `#202020 url("/assets/ripnotcomingsoon.jpg") repeat`,
-        "@media": {
-          "(prefers-color-scheme: dark)": {
-            filter: "brightness(0.8) contrast(1.2)",
-          },
-        },
-      },
-    },
-    background: {
-      zebra: {
-        selectors: {
-          "&:nth-child(even)": {
-            backgroundColor: backgroundColors.subtle,
-          },
-        },
-      },
-    },
-  },
-});
-
-const responsiveProperties = defineProperties({
-  conditions: {
-    mobile: {},
-    tablet: { "@media": minMediaQuery("tablet") },
-    desktop: { "@media": minMediaQuery("desktop") },
-    max: { "@media": minMediaQuery("max") },
-  },
-  defaultCondition: "mobile",
-  responsiveArray: ["mobile", "tablet", "desktop", "max"],
-  properties: {
-    display: ["block", "none", "flex"],
-    justifySelf: ["center", "unset"],
-    padding: space,
-    fontSize: fontSizes,
-    lineHeight: lineHeights,
-    alignItems: ["stretch", "center", "start"],
-    alignSelf: ["start"],
-    flexGrow: [0, 1, "unset"],
-    flexDirection: ["row", "column", "row-reverse"],
-    columnGap: space,
-    rowGap: space,
-    flexWrap: ["wrap"],
-    justifyContent: ["center", "flex-start", "space-between"],
-    margin: {
-      center: "0 auto",
-      0: "0",
-    },
-    flex: [1],
-    paddingLeft: space,
-    paddingRight: space,
-    paddingTop: space,
-    paddingBottom: space,
-    position: ["relative", "sticky"],
-    gridAutoRows: {
-      48: `min-content`,
-    },
-    textAlign: ["center", "left"],
-    border: {
-      all: {
-        borderWidth: `1px`,
-        borderColor: borderColors.default,
-        borderStyle: "solid",
-        margin: `-1px`,
-      },
-      bottom: {
-        borderBottomWidth: `1px`,
-        borderBottomColor: borderColors.default,
-        borderBottomStyle: "solid",
-        marginBottom: `-1px`,
-      },
-      0: "0",
-    },
-    marginLeft: ["auto"],
-    marginRight: ["auto"],
-    top: space,
-    width: space,
-    minWidth: space,
-    minHeight: space,
-    height: space,
-    flexBasis: [0],
-  },
+const unresponsiveAtomicProperties = defineProperties({
+  properties: atomicProperties,
   shorthands: {
     paddingX: [`paddingLeft`, `paddingRight`],
-    paddingY: [`paddingTop`, `paddingBottom`],
-    marginX: [`marginLeft`, `marginRight`],
   },
 });
 
-export const sprinkles = createSprinkles(baseProperties, responsiveProperties);
+const responsiveAtomicProperties = defineProperties({
+  defaultCondition: `mobile`,
+  conditions: {
+    mobile: {},
+    desktop: {
+      "@media": minMediaQuery("desktop"),
+    },
+  },
+  properties: {
+    flexDirection: ["row", "column", "row-reverse"],
+    justifyContent: ["space-between", "center", "flex-end"],
+    textAlign: ["left", "center", "inherit"],
+    paddingTop: [8, 24, 32, 40, 48, 128],
+    paddingBottom: [8, 24, 32, 40, 48, 128],
+    columnGap: [".5ch", 24, 32, 64],
+  },
+  shorthands: {
+    paddingY: [`paddingTop`, `paddingBottom`],
+  },
+});
+
+export const sprinkles = createSprinkles(
+  unresponsiveAtomicProperties,
+  responsiveAtomicProperties
+);
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];

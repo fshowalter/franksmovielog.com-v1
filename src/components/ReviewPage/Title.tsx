@@ -1,12 +1,6 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
-import { gridAreaComponent, gridComponent } from "../Grid";
 import { PageTitle } from "../PageTitle";
-import { gridAreas, gridStyle } from "./Title.css";
-
-const GridArea = gridAreaComponent(gridAreas);
-
-const Grid = gridComponent(gridStyle);
 
 interface IHeaderProps extends IBoxProps {
   movie: Queries.ReviewTitleFragment;
@@ -39,7 +33,7 @@ function Details({ movie }: { movie: Queries.ReviewTitleFragment }) {
       }, null)}{" "}
       <span>|</span> {movie.runtimeMinutes}
       &#x02009;min{" "}
-      <Box as="span" hideOn="desktop">
+      <Box as="span">
         <span>|</span>{" "}
         <Box as="a" href="#credits" color="accent" textDecoration="none">
           More...
@@ -49,20 +43,20 @@ function Details({ movie }: { movie: Queries.ReviewTitleFragment }) {
   );
 }
 
-export default function Title({ movie, ...rest }: IHeaderProps) {
+export function Title({ movie, ...rest }: IHeaderProps) {
   return (
-    <Box as="header" {...rest}>
-      <Grid>
-        <GridArea name="title">
-          <PageTitle>{movie.title}</PageTitle>
-        </GridArea>
-        <GridArea name="originalTitle">
-          <OriginalTitle originalTitle={movie.originalTitle} />
-        </GridArea>
-        <GridArea name="details">
-          <Details movie={movie} />
-        </GridArea>
-      </Grid>
+    <Box
+      as="header"
+      {...rest}
+      display="flex"
+      flexDirection="column"
+      rowGap={16}
+    >
+      <Box textAlign="inherit">
+        <PageTitle>{movie.title}</PageTitle>
+        <OriginalTitle originalTitle={movie.originalTitle} />
+      </Box>
+      <Details movie={movie} />
     </Box>
   );
 }

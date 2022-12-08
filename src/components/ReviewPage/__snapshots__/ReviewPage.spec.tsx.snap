@@ -2,271 +2,351 @@
 
 exports[`/reviews/{slug} renders 1`] = `
 <DocumentFragment>
-  <div
-    class="ScreenReaderOnly_srOnlyCss__rm0eez0"
+  <a
+    class="Box_screenReaderOnlyStyle__1isqo402"
+    href="#content"
   >
-    <a
-      href="#content"
-    >
-      Skip to content
-    </a>
-  </div>
+    Skip to content
+  </a>
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk2"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2i sprinkles_minHeight_16__8lcvdk1h sprinkles_width_full__8lcvdk2g"
+  />
+  <div
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk8 sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o"
   >
-    <div
-      class="sprinkles_backgroundImage_ripNotComingSoon__8lcvdk17 sprinkles_minHeight_16_mobile__8lcvdkod"
-    />
-    <div
-      class="Layout_contentStyle__1965ugi1 sprinkles_position_relative_mobile__8lcvdkhl sprinkles_flex_1_mobile__8lcvdkad sprinkles_margin_center_mobile__8lcvdka9"
+    <header
+      class="Layout_headerStickyStyle__1965ugi2 sprinkles_paddingLeft_gutter__8lcvdk2a sprinkles_paddingRight_gutter__8lcvdk2b sprinkles_paddingTop_32_mobile__8lcvdk38 sprinkles_paddingBottom_32_mobile__8lcvdk3k sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_flexDirection_row_desktop__8lcvdk2n sprinkles_rowGap_24__8lcvdk1c sprinkles_alignItems_center__8lcvdk17 sprinkles_boxShadow_borderBottom__8lcvdk2h sprinkles_backgroundColor_default__8lcvdk8 sprinkles_justifyContent_space-between_desktop__8lcvdk2t sprinkles_textAlign_center_mobile__8lcvdk30 sprinkles_textAlign_left_desktop__8lcvdk2z"
     >
       <div
-        class="Layout_gridStyle__1965ugi2"
+        class="sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_alignItems_inherit__8lcvdk18 sprinkles_justifyItems_inherit__8lcvdk16"
       >
-        <div
-          class="Layout_gridAreas_header__1965ugi3"
+        <h1
+          class="sprinkles_whiteSpace_nowrap__8lcvdkz sprinkles_fontWeight_normal__8lcvdk1m sprinkles_fontSize_25__8lcvdk1v sprinkles_lineHeight_32__8lcvdk22"
         >
-          <header
-            class="sprinkles_alignSelf_start_max__8lcvdk5g sprinkles_display_flex_mobile__8lcvdk1h sprinkles_flexDirection_column_mobile__8lcvdk5x"
+          <a
+            class="sprinkles_color_default__8lcvdkd sprinkles_textDecoration_none__8lcvdk29"
+            href="/"
           >
-            <div
-              class="Header_gridStyle__1tt5yzz2"
+            Frank's Movie Log
+          </a>
+        </h1>
+        <p
+          class="Header_taglineStyle__1tt5yzz0 sprinkles_color_muted__8lcvdke sprinkles_fontStyle_italic__8lcvdk14 sprinkles_lineHeight_16__8lcvdk20 sprinkles_width_full__8lcvdk2g"
+        >
+          My life at the movies.
+        </p>
+      </div>
+      <nav>
+        <ul
+          class="Nav_listVariants_header__mkdjqm7 Nav_listBaseStyles__mkdjqm2"
+        >
+          <li
+            class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
+              href="/"
             >
-              <div
-                class="Header_gridAreas_title__1tt5yzz3"
-              >
-                <h1
-                  class="Header_titleStyle__1tt5yzz1 sprinkles_lineHeight_32_mobile__8lcvdk4t sprinkles_whiteSpace_nowrap__8lcvdkv sprinkles_fontWeight_normal__8lcvdky"
-                >
-                  <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_textDecoration_none__8lcvdk14"
-                    href="/"
-                  >
-                    Frank's Movie Log
-                  </a>
-                </h1>
-              </div>
-              <div
-                class="Header_gridAreas_tagline__1tt5yzz4"
-              >
-                <p
-                  class="Header_taglineStyle__1tt5yzz0 sprinkles_color_muted__8lcvdk7"
-                >
-                  My life at the movies.
-                </p>
-              </div>
-              <div
-                class="Header_gridAreas_search__1tt5yzz5"
-              >
-                <form
-                  accept-charset="UTF-8"
-                  action="https://www.google.com/search"
-                  class="SearchForm_formStyle__b35bo70"
-                  method="get"
-                  role="search"
-                >
-                  <label
-                    class="sprinkles_display_flex_mobile__8lcvdk1h sprinkles_overflow_hidden__8lcvdkw"
-                    for="search"
-                  >
-                    <div
-                      class="ScreenReaderOnly_srOnlyCss__rm0eez0"
-                    >
-                      Search
-                    </div>
-                    <input
-                      class="SearchForm_searchInputStyle__b35bo71 sprinkles_backgroundColor_subtle__8lcvdk4 sprinkles_color_default__8lcvdk6 sprinkles_fontSize_normal_mobile__8lcvdk3p sprinkles_fontWeight_light__8lcvdkx sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_flexGrow_1_mobile__8lcvdk5l"
-                      id="search"
-                      name="q"
-                      placeholder="Search..."
-                      type="text"
-                    />
-                    <input
-                      name="q"
-                      type="hidden"
-                      value="site:www.franksmovielog.com"
-                    />
-                    <button
-                      aria-label="Search"
-                      class="SearchForm_submitButtonStyle__b35bo72 sprinkles_backgroundColor_subtle__8lcvdk4"
-                      type="submit"
-                      value="Search"
-                    >
-                      <svg
-                        class="SearchForm_iconStyle__b35bo73 SvgIcon_iconStyle__agywp20"
-                        height="1em"
-                        viewBox="0 0 16 16"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                          fill-rule="evenodd"
-                        />
-                        <path
-                          d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                          fill-rule="evenodd"
-                        />
-                      </svg>
-                    </button>
-                  </label>
-                </form>
-              </div>
-              <div
-                class="Header_gridAreas_nav__1tt5yzz6"
-              >
-                <nav>
-                  <ul
-                    class="Nav_listVariants_header__mkdjqm7 Nav_listBaseStyles__mkdjqm2"
-                  >
-                    <li
-                      class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
-                    >
-                      <a
-                        class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
-                        href="/"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li
-                      class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
-                    >
-                      <a
-                        class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
-                        href="/about/"
-                      >
-                        About
-                      </a>
-                    </li>
-                    <li
-                      class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
-                    >
-                      <a
-                        class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
-                        href="/how-i-grade/"
-                      >
-                        How I Grade
-                      </a>
-                    </li>
-                    <li
-                      class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
-                    >
-                      <a
-                        class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
-                        href="/reviews/"
-                      >
-                        Reviews
-                      </a>
-                    </li>
-                    <li
-                      class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
-                    >
-                      <a
-                        class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
-                        href="/stats/"
-                      >
-                        Stats
-                      </a>
-                    </li>
-                    <li
-                      class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
-                    >
-                      <a
-                        class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
-                        href="/watchlist/"
-                      >
-                        Watchlist
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              Home
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
+              href="/about/"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
+              href="/stats/"
+            >
+              Stats
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_header__mkdjqm9 Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_header__mkdjqm5 Nav_linkBaseStyles__mkdjqm0"
+              href="/watchlist/"
+            >
+              Watchlist
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <form
+        accept-charset="UTF-8"
+        action="https://www.google.com/search"
+        class="SearchForm_formStyle__b35bo70 sprinkles_maxWidth_prose__8lcvdk2c"
+        method="get"
+        role="search"
+      >
+        <label
+          class="sprinkles_display_flex__8lcvdk2 sprinkles_overflow_hidden__8lcvdk10"
+          for="search"
+        >
+          <div
+            class="ScreenReaderOnly_srOnlyCss__rm0eez0"
+          >
+            Search
+          </div>
+          <input
+            class="SearchForm_searchInputStyle__b35bo71 sprinkles_backgroundColor_subtle__8lcvdka sprinkles_color_default__8lcvdkd sprinkles_fontSize_16__8lcvdk1s sprinkles_fontWeight_light__8lcvdk1l sprinkles_lineHeight_24__8lcvdk21 sprinkles_flexGrow_1__8lcvdk12"
+            id="search"
+            name="q"
+            placeholder="Search..."
+            type="text"
+          />
+          <input
+            name="q"
+            type="hidden"
+            value="site:www.franksmovielog.com"
+          />
+          <button
+            aria-label="Search"
+            class="SearchForm_submitButtonStyle__b35bo72 sprinkles_backgroundColor_subtle__8lcvdka"
+            type="submit"
+            value="Search"
+          >
+            <svg
+              class="SearchForm_iconStyle__b35bo73 SvgIcon_iconStyle__agywp20"
+              height="1em"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                fill-rule="evenodd"
+              />
+              <path
+                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </label>
+      </form>
+    </header>
+    <div
+      class="sprinkles_flexGrow_1__8lcvdk12"
+    >
+      <main
+        class="sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_alignItems_center__8lcvdk17 sprinkles_paddingBottom_128_mobile__8lcvdk3q"
+        id="top"
+      >
+        <header
+          class="sprinkles_paddingLeft_gutter__8lcvdk2a sprinkles_paddingRight_gutter__8lcvdk2b sprinkles_paddingTop_24_mobile__8lcvdk36 sprinkles_paddingTop_32_desktop__8lcvdk39 sprinkles_paddingBottom_24_mobile__8lcvdk3i sprinkles_paddingBottom_32_desktop__8lcvdk3l sprinkles_textAlign_center_mobile__8lcvdk30 sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_rowGap_16__8lcvdk1b"
+        >
+          <div
+            class="sprinkles_textAlign_inherit_mobile__8lcvdk32"
+          >
+            <h1
+              class="PageTitle_headingStyle__lk643y0"
+            >
+              The Seventh Continent
+            </h1>
+            <div
+              class="sprinkles_color_muted__8lcvdke"
+            >
+              (Der siebente Kontinent)
             </div>
-          </header>
+          </div>
+          <div
+            class="sprinkles_color_muted__8lcvdke"
+          >
+            1989 
+            <span>
+              |
+            </span>
+             Austria 
+            <span>
+              |
+            </span>
+             104 min 
+            <span>
+              <span>
+                |
+              </span>
+               
+              <a
+                class="sprinkles_color_accent__8lcvdkc sprinkles_textDecoration_none__8lcvdk29"
+                href="#credits"
+              >
+                More...
+              </a>
+            </span>
+          </div>
+        </header>
+        <div
+          alt="A still from The Seventh Continent (1989)"
+        />
+        <div
+          class="sprinkles_paddingLeft_gutter__8lcvdk2a sprinkles_paddingRight_gutter__8lcvdk2b sprinkles_paddingTop_32_mobile__8lcvdk38 sprinkles_paddingBottom_32_mobile__8lcvdk3k sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_rowGap_32__8lcvdk1d sprinkles_alignItems_center__8lcvdk17"
+        >
+          <div
+            class="sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_rowGap_8__8lcvdk1a sprinkles_alignItems_inherit__8lcvdk18"
+          >
+            <img
+              alt="A-: 5 stars (out of 5)"
+              height="32"
+              src="/svg/5-stars.svg"
+              width="160"
+            />
+            <div
+              class="sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_color_muted__8lcvdke sprinkles_alignItems_inherit__8lcvdk18 sprinkles_rowGap_8__8lcvdk1a"
+            >
+              <span>
+                on
+              </span>
+               Tue Jan 26, 2021
+            </div>
+          </div>
+          <div
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_maxWidth_prose__8lcvdk2c"
+          >
+            <p>
+              <strong>
+                Michael Haneke’s devastating feature debut.
+              </strong>
+               Calm waters of menacing monotony surrender to a crushing tsunami of bleak emotion. As the third act unfolded, I struggled to watch. It’s not what Haneke shows, but what he 
+              <em>
+                doesn’t
+              </em>
+               show. We fill the gaps with ourselves. The dread overwhelms. I went in cold, only aware that it concerned a middle-class couple. I suggest you do the same, although I’ve already said too much.
+            </p>
+          </div>
         </div>
         <div
-          class="Layout_gridAreas_children__1965ugi4"
+          class="sprinkles_maxWidth_proseWithGutters__8lcvdk2d sprinkles_width_full__8lcvdk2g sprinkles_marginTop_48__8lcvdk1i"
         >
-          <main
-            class="ReviewPage_gridStyle__x6guia0"
-            id="top"
+          <h3
+            class="sprinkles_paddingLeft_gutter__8lcvdk2a sprinkles_paddingRight_gutter__8lcvdk2b sprinkles_color_subtle__8lcvdkg sprinkles_fontSize_16__8lcvdk1s sprinkles_fontWeight_semiBold__8lcvdk1n sprinkles_letterSpacing_0.2__8lcvdk25 sprinkles_lineHeight_2__8lcvdk1z sprinkles_boxShadow_borderBottom__8lcvdk2h"
+          >
+            Viewing History
+          </h3>
+          <ul
+            class="sprinkles_padding_0__8lcvdkj"
           >
             <div
-              class="ReviewPage_gridAreas_title__x6guia1"
-            >
-              <header>
-                <div
-                  class="Title_gridStyle__1n3yrpj0"
-                >
-                  <div
-                    class="Title_gridAreas_title__1n3yrpj1"
-                  >
-                    <h1
-                      class="PageTitle_headingStyle__lk643y0"
-                    >
-                      The Seventh Continent
-                    </h1>
-                  </div>
-                  <div
-                    class="Title_gridAreas_originalTitle__1n3yrpj2"
-                  >
-                    <div
-                      class="sprinkles_color_muted__8lcvdk7"
-                    >
-                      (Der siebente Kontinent)
-                    </div>
-                  </div>
-                  <div
-                    class="Title_gridAreas_details__1n3yrpj3"
-                  >
-                    <div
-                      class="sprinkles_color_muted__8lcvdk7"
-                    >
-                      1989 
-                      <span>
-                        |
-                      </span>
-                       Austria 
-                      <span>
-                        |
-                      </span>
-                       104 min 
-                      <span
-                        class="Box_mobileOnlyStyle__1isqo400"
-                      >
-                        <span>
-                          |
-                        </span>
-                         
-                        <a
-                          class="sprinkles_color_accent__8lcvdk5 sprinkles_textDecoration_none__8lcvdk14"
-                          href="#credits"
-                        >
-                          More...
-                        </a>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </header>
-            </div>
-            <div
-              class="ReviewPage_gridAreas_still__x6guia2"
+              class="ViewingHistoryEntry_gridStyle__1yeq2c40 sprinkles_backgroundColor_zebra__8lcvdkb sprinkles_display_block__8lcvdk0"
             >
               <div
-                class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_margin_center_mobile__8lcvdka9"
+                class="ViewingHistoryEntry_gridAreas_icon__1yeq2c41"
+              >
+                <svg
+                  class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    Watched on
+                  </title>
+                  <path
+                    d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
+                    fill-rule="evenodd"
+                  />
+                  <path
+                    d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
+                    fill-rule="evenodd"
+                  />
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                 
+              </div>
+              <div
+                class="ViewingHistoryEntry_gridAreas_date__1yeq2c42"
+              >
+                <span
+                  class="sprinkles_fontWeight_bold__8lcvdk1o"
+                >
+                  Tue Jan 26, 2021
+                </span>
+                 
+              </div>
+              <div
+                class="ViewingHistoryEntry_gridAreas_medium__1yeq2c43 sprinkles_color_subtle__8lcvdkg"
+              >
+                <div
+                  class="sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke"
+                >
+                  <span>
+                    via
+                  </span>
+                   
+                  <span>
+                    Criterion Channel
+                  </span>
+                </div>
+              </div>
+              <div
+                class="ViewingHistoryEntry_gridAreas_mediumNotes__1yeq2c44"
+              />
+              <div
+                class="ViewingHistoryEntry_gridAreas_venue__1yeq2c45"
+              />
+              <div
+                class="ViewingHistoryEntry_gridAreas_viewingNote__1yeq2c46"
+              />
+            </div>
+          </ul>
+        </div>
+        <aside
+          class="sprinkles_paddingLeft_gutter__8lcvdk2a sprinkles_paddingRight_gutter__8lcvdk2b sprinkles_paddingTop_32_mobile__8lcvdk38 sprinkles_paddingBottom_32_mobile__8lcvdk3k sprinkles_position_relative__8lcvdk5 sprinkles_maxWidth_proseWithGutters__8lcvdk2d sprinkles_marginTop_128__8lcvdk1k sprinkles_backgroundColor_subtle__8lcvdka"
+          id="credits"
+        >
+          <div
+            class="sprinkles_display_flex__8lcvdk2 sprinkles_columnGap_24_mobile__8lcvdk3u sprinkles_columnGap_32_desktop__8lcvdk3x sprinkles_paddingBottom_24_mobile__8lcvdk3i"
+          >
+            <div
+              class="sprinkles_flex_1__8lcvdk11 sprinkles_maxWidth_poster__8lcvdk2e"
+            >
+              <div
+                class="gatsby-image-wrapper gatsby-image-wrapper-constrained Credits_posterStyle__1m1qj360"
                 data-gatsby-image-wrapper=""
                 style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
               >
                 <div
-                  style="max-width: 998px; display: block;"
+                  style="max-width: 248px; display: block;"
                 >
                   <img
                     alt=""
                     aria-hidden="true"
                     role="presentation"
-                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='561' width='998' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
                     style="max-width: 100%; display: block; position: static;"
                   />
                 </div>
@@ -275,24 +355,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   aria-hidden="true"
                   data-placeholder-image=""
                   decoding="async"
-                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2029v29l11-1a278%20278%200%200%200%2038-3c0-1%2025-2%2027-1%203%201%2010%200%2011-2%201-1%2017-2%2038-2%2023%200%2025%200%2023-3l-6-1c-4%201-5%201-7-2-3-4-11-9-14-9-2%200-2%200-1-1l4-2c2-2%202-2%200-3-6-3-7-7-2-7l3-2%204-3%202-2h13c3%200%204%200%203%201-3%201%206%204%208%203h12l14-1%2014-1%206-1h15c8-1%2010%200%2013%202l5%203%203%202%204%201%207%204-1%201h-1l-1%202v2c1%201%200%202-4%203l-2%201h2c5%200%201%206-4%206l-4%201-2%201h-1c1%201%200%202-3%203s-4%202-3%203h9l4%201c4%200%2011%202%2011%203l-3%201c-6%200-8%205-2%205%202%200%202%200%200%201l-5%201-2%202%204%202%206%202%201%201c1%205%202-18%202-41V0H0v29m225%2045v1l2%202-1%201-1%201h4l3-2c2-1%202-1%201%201v3c1%201-6%207-9%207v1l1%203c0%202%200%202-2%200l-6-3c-3-2-4-3-1-3%202-1%203-2%200-4-1-2-4%201-4%204l-1%202c-1%201%200%201%201%202%202%201%202%201-1%201-4%200-4%200-3%202l4%201c3%200%206%201%206%203h-1c-3-2-6%201-6%206v6c-4%205-7%207-10%208l-4%201-2%201c-4%201-8%209-5%209%206%200%2018-3%2020-6l4-2%204-2h16l3%201-3-2c-2-2-3-3%200-7%202-4%203-4%209-4h5V96c0-5%200-8-1-7%200%201-1%203-3%203l-3%202h-1l-1-1c-2%200-4-3-4-5l1-2%201-1v-2l2%202c0%202%201%202%204%201l2-2%201-2c2%200%202-1%202-5%200-5%200-6-3-4h-11c-2%202-3%202-5%200-2-1-2-1-4%201M125%2087l-2%201-2%201c-1%202%200%202%201%202%203-1%203%203%201%204l-11%201-12%203h-4l-4%203h-3l3%201%2014-1%2015-1c5%200%2012-2%2022-7%203-1%203-1%202-3-2-2-7-2-8%200s-3%202-6%200l-2-1v4c-2%200-2-5%200-5l1-2h-5m110%208c-1%201-2%202-5%201s-4%200-5%201h-4c-2%201-2%201%200%201l2%202v3l1%203%202%202%201-1c-1-1%200-2%202-3%202%200%203-2%200-2l1-1%202-2h2c2%200%206-2%205-4h-4'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='372'%20viewBox='0%200%20248%20372'%20preserveAspectRatio='none'%3e%3cpath%20d='M96%2028c0%203%200%204%202%204s3%200%203%2015v16h-4c-3%200-4%200-4%202l4%2023c2%2020%203%2021%205%2021s2%200%202%2017l1%2017h8v-34h3c2%200%202%200%202-3%200-4%200-4-3-4h-4l3-17%202-19c1-3%201-3-3-3h-3V31h3c2%200%202%200%202-3v-3l-10-1h-9v4m23%2017%201%2020%202%2039%201%2039h8v-19c0-19%200-20%202-20s2%201%202%2020v19h9v-17l3%208c3%208%203%209%206%209h4v-19c0-19%200-20%202-20s2%201%202%2020v19h18v-3c0-4%200-4-4-4h-5v-13h5c4%200%204%200%204-3%200-4%200-4-4-4-5%200-5%200-5-3%200-4%200-4%205-4%204%200%204%200%204-2s1-3%202-3c2-1%202%200%202%2019v20h9v-17l3%208c3%208%203%209%206%209h4v-19c0-19%200-20%202-20%201%200%202%201%202%203s1%202%203%202h2v34h9v-34h3c2%200%202%200%202-3v-4h-14V63h-9v7c0%207%200%207-2%207-3%200-3%200-3-7v-7h-8v39h-9V70h3c2%200%202%200%202-3v-4h-19v4c0%203%200%203%203%203h2v32h-9V83l-1-20-1-2c0-3%200-3-5-3h-5V46h5c4%200%205-1%205-4s0-3-5-3c-4%200-4-1-4-4s0-4%204-4%205%200%205-3v-3l-9-1h-9v19l-1%2020-1%2020c0%2018%200%2019-2%2019l-2-2c0-3%200-3-5-3h-4V85h4c4%200%205-1%205-4s-1-4-5-4-4-1-4-3c0-3%200-4%204-4%205%200%205%200%205-3l1-2%201-20V25l-5-1h-4v8c0%207%200%207-2%207s-3-1-3-8v-7h-8v21M48%2066c-5%205-4%2012%204%2019%206%205%208%209%206%2011-3%202-5%200-5-5%200-3%200-3-4-3h-4v5c0%204%200%206%203%208%203%203%203%203%201%205s-2%204-2%2016v15l3%203c4%204%2012%204%2016-1l3-2v-29l-3-3c-3-3-3-3-1-5s3-9%201-12l-7-9c-6-6-7-8-3-9%202%200%204%203%203%205-1%201%201%201%203%201%205%200%205%200%205-3%200-9-12-13-19-7m23%2018%201%2020%201%2019%201%2020h8v-18l3%209%203%209h7v-41h-3c-3%200-3%200-3-2%200-3%200-3-4-3h-5V85h9v-8h-4c-5%200-5%200-5-3%200-4%200-4%205-4%204%200%204%200%204-3v-4H71v21m-43%2018c-6%202-8%206-8%2020s1%2017%206%2019c5%203%2010%202%2014-1%202-2%202-4%202-9l1-5-5-1h-4v4c0%205-2%208-4%206l-1-14c0-11%201-11%203-11%201%200%202%200%202%204v4h9v-5c-1-8-7-13-15-11m28%209c-2%205-1%2022%200%2023%203%204%204%201%204-12%200-12%200-13-2-13l-2%202m61%2073c-4%205-5%2010-3%2012s4-2%203-4l-1-3%202%201c0%202%201%201%205-1%208-5%2011%200%205%209s-11%2011-15%205l-2-2-6%202c-12%204-12%205-11%2023%200%2012%201%2014%204%2018%201%201%202%203%202%207%200%206%203%209%209%2011%204%201%207%206%204%206l-2%201c-1%201%200%201%201%201l6%201c4%202%207%200%207-3%201-4%208%208%2011%2017%202%208%202%2013%200%207l-3-5-5-7-3-5h-14l-15-1c-2-2%200-4%203-4l5-1c1-1%200-1-3-1-6%200-6-1-3-8l1-4c-1%200-2%201-2%203l-2%202c-1-1-6%202-7%204l-1%201c0-2-7-1-8%201l-3%202-2%202c-2%202-2%202-2-1l-1%205c0%208%200%209%202%209a630%20630%200%200%200%2044%205c0%201%201%201-27%201l-20%201c0%202-5%201-6-1l-1-8c0-6%200-7-1-2l-1%207v2H42l-31-2H0v85h249v-38l-1-48v-9h-9l-9-1h-2c-3%203-71%201-76-2-6-3-4-3%2024-2h38l-36-2c-32-1-34-1-35-3-3-3-2-5%202-5%204-1%204-1%202-2l-2-1h2c3-1%203-1%201-4l-1-2h36l51%202h14v-31h-11l-14-1h-3l4%201%205%201c1%202-2%2019-3%2020l-14%203v-23l2-1c1-1-1-1-3-1h-4l-1%208c0%2015-1%2017-4%2018a2921%202921%200%200%200-26%200l-10-2c-10-1-12-3-12-14%200-12%200-11-7-12-2%200-3-1-3-5l1-7v-2c-2%200-2-3%201-6%201-2-1-3-6-3s-1-2%205-2c5%200%207-2%204-2l-6-1c-4%200-4%200-5-3-1-8-5-11-13-11-3%200-4%201-8%205m5%2045-5%206-3%204h13c14%201%2021%200%2011-1-8-2-11-2-10-4l-3-7-3%202m6%2030c-2%204%203%2011%2014%2022l11%2013c2%203%205%204%207%201l-1-1c-3-1-6-5-13-16-3-5-4-6-6-6s-3-2-6-8c-4-8-4-8-6-5M2%20293c0%204%202%206%205%206l4%201c1%202%205%202%2015%202%2013%200%2019-1%2016-2s-1-3%202-2c2%200%203%200%202-1%200-3%203-4%209-4h5l-40-3H2v3m79%2033c0%202%200%202-1%200s-1-2-1%200v2l-1-2c-1-2-1-1-1%202s0%204%201%203c1-2%201-2%201%200s5%203%205%200h1c2%202%206%203%206%201l1-1%201-3-2-4-1%204-1%204v-8h-2c-2%202-2%202-2%200-1-1-1%200-1%202v4l-1-4-2-3v3m-47%2016c0%204%200%205%202%205l3-1%201-2c1-1%201-1%201%201s0%202%201-1l1-3v3c0%202%200%203%202%203l2-1v-4c0-3%200-4-1-3l-1-1h-7l-4-1v5m92%200c0%203%200%205%201%204h3l2-1h1c1%202%204%202%204-1h1c0%202%202%202%205%203h5l-1-5v-4l-1%204c-1%205-2%204-1-1%200-4-2-4-2%200-1%202-1%202-1-1v-3l-1%204-2%205v-4c0-4%200-4-1-2h-1c0-2-3-3-4-2h-2c-2-1-2-1-2%201v3l-1-3c-1-3-2-2-2%203m50-4h-2l-1%205c0%202%200%204%201%203h4l1-2h1c1%203%206%204%206%201h1c1%202%201%202%202%201l2-1c0%201%201%202%203%202s2-1%202-3l-1-5-1%202-2%205v-4c0-3%200-4-1-3l-1-1-1-1v5c0%204%200%203-1-1l-2-3-1%203c0%202%200%202-1-1l-1-3-1%204-1%205v-4c0-4%200-4-1-2h-1l-1-2h-2'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
                   style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
                 />
                 <picture>
                   <source
-                    data-srcset="/static/7b341f916a362be7ba7e9c56a2c70e75/fdfcf/the-seventh-continent-1989.avif 250w,/static/7b341f916a362be7ba7e9c56a2c70e75/9ffc8/the-seventh-continent-1989.avif 499w,/static/7b341f916a362be7ba7e9c56a2c70e75/510d6/the-seventh-continent-1989.avif 998w,/static/7b341f916a362be7ba7e9c56a2c70e75/c8d26/the-seventh-continent-1989.avif 1996w"
-                    sizes="(min-width: 998px) 998px, 100vw"
+                    data-srcset="/static/ba2886541a5be37910b030bc440cd9c0/6b3a6/the-seventh-continent-1989.avif 62w,/static/ba2886541a5be37910b030bc440cd9c0/3c542/the-seventh-continent-1989.avif 124w,/static/ba2886541a5be37910b030bc440cd9c0/c155b/the-seventh-continent-1989.avif 248w,/static/ba2886541a5be37910b030bc440cd9c0/1ad14/the-seventh-continent-1989.avif 496w"
+                    sizes="(min-width: 248px) 248px, 100vw"
                     type="image/avif"
                   />
                   <img
-                    alt="A still from The Seventh Continent (1989)"
+                    alt="A poster from The Seventh Continent (1989)"
                     data-gatsby-image-ssr=""
                     data-main-image=""
-                    data-src="/static/7b341f916a362be7ba7e9c56a2c70e75/bd2c8/the-seventh-continent-1989.jpg"
-                    data-srcset="/static/7b341f916a362be7ba7e9c56a2c70e75/2af26/the-seventh-continent-1989.jpg 250w,/static/7b341f916a362be7ba7e9c56a2c70e75/46eca/the-seventh-continent-1989.jpg 499w,/static/7b341f916a362be7ba7e9c56a2c70e75/bd2c8/the-seventh-continent-1989.jpg 998w,/static/7b341f916a362be7ba7e9c56a2c70e75/f5302/the-seventh-continent-1989.jpg 1996w"
+                    data-src="/static/ba2886541a5be37910b030bc440cd9c0/31a1c/the-seventh-continent-1989.jpg"
+                    data-srcset="/static/ba2886541a5be37910b030bc440cd9c0/5bc78/the-seventh-continent-1989.jpg 62w,/static/ba2886541a5be37910b030bc440cd9c0/59d5c/the-seventh-continent-1989.jpg 124w,/static/ba2886541a5be37910b030bc440cd9c0/31a1c/the-seventh-continent-1989.jpg 248w,/static/ba2886541a5be37910b030bc440cd9c0/a5166/the-seventh-continent-1989.jpg 496w"
                     decoding="async"
                     loading="lazy"
-                    sizes="(min-width: 998px) 998px, 100vw"
+                    sizes="(min-width: 248px) 248px, 100vw"
                     style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
                   />
                 </picture>
@@ -305,1286 +385,642 @@ exports[`/reviews/{slug} renders 1`] = `
               </div>
             </div>
             <div
-              class="ReviewPage_gridAreas_content__x6guia3"
+              class="sprinkles_flex_1__8lcvdk11"
             >
-              <div
-                class="ReviewContent_gridStyle__cgzl4a1"
+              <header
+                class="sprinkles_fontSize_25__8lcvdk1v sprinkles_lineHeight_32__8lcvdk22 sprinkles_paddingBottom_24_mobile__8lcvdk3i"
+              >
+                The Seventh Continent
+              </header>
+              <dl
+                class="sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_rowGap_24__8lcvdk1c"
+              >
+                <div>
+                  <dt
+                    class="sprinkles_fontWeight_bold__8lcvdk1o sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Year
+                  </dt>
+                  <dd
+                    class="sprinkles_color_subtle__8lcvdkg"
+                  >
+                    1989
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="sprinkles_fontWeight_bold__8lcvdk1o sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Original Title
+                  </dt>
+                  <dd
+                    class="sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Der siebente Kontinent
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="sprinkles_fontWeight_bold__8lcvdk1o sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Financing
+                  </dt>
+                  <dd
+                    class="sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Austria
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="sprinkles_fontWeight_bold__8lcvdk1o sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Running Time
+                  </dt>
+                  <dd
+                    class="sprinkles_color_subtle__8lcvdkg"
+                  >
+                    104 min
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="sprinkles_fontWeight_bold__8lcvdk1o sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Directed by
+                  </dt>
+                  <dd
+                    class="sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Michael Haneke
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="sprinkles_fontWeight_bold__8lcvdk1o sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Starring
+                  </dt>
+                  <dd
+                    class="sprinkles_color_subtle__8lcvdkg"
+                  >
+                    Birgit Doll, Dieter Berner, Leni Tanzer,  and Udo Samel
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <ul
+            class="sprinkles_display_flex__8lcvdk2 sprinkles_padding_0__8lcvdkj"
+          >
+            <li
+              class="sprinkles_display_block__8lcvdk0"
+            >
+              <a
+                class="WatchlistLinks_linkStyle__sz6ovu1 sprinkles_backgroundColor_subtle__8lcvdka sprinkles_display_flex__8lcvdk2 sprinkles_alignItems_center__8lcvdk17 sprinkles_whiteSpace_nowrap__8lcvdkz sprinkles_color_accent__8lcvdkc sprinkles_textDecoration_none__8lcvdk29"
+                href="/watchlist/directors/michael-haneke/"
               >
                 <div
-                  class="ReviewContent_gridAreas_grade__cgzl4a2"
+                  class="gatsby-image-wrapper WatchlistLinks_avatarStyle__sz6ovu0"
+                  data-gatsby-image-wrapper=""
+                  style="position: relative; overflow: hidden; width: 40px; height: 40px;"
                 >
                   <img
-                    alt="A-: 5 stars (out of 5)"
-                    class="ReviewContent_gradeStyle__cgzl4a0"
-                    src="/svg/5-stars.svg"
+                    alt=""
+                    aria-hidden="true"
+                    data-placeholder-image=""
+                    decoding="async"
+                    src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20preserveAspectRatio='none'%3e%3cpath%20d='M27%206c0%205%200%206%202%206l2%202-1%201c-1-1-1%200-1%203l-2%206v3c1%203%201%204-1%206-4%204-12%203-13-2l-2-2-2-1c-1-1-1-1-2%202-2%204-7%206-5%201l-1-2-1%206v5h41V28c-1-5-1-5-3-4-2%200-3%202-3%203l-1%202c-2%201-1-7%202-10%202-2%203-6%201-4l-1-2c0-3-6-12-8-12l-1%205'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                    style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
                   />
-                </div>
-                <div
-                  class="ReviewContent_gridAreas_date__cgzl4a3 sprinkles_color_muted__8lcvdk7"
-                >
-                  <div
-                    class="Box_desktopOnlyStyle__1isqo401"
-                  >
-                    <svg
-                      class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>
-                        Watched on
-                      </title>
-                      <path
-                        d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                        fill-rule="evenodd"
-                      />
-                      <path
-                        d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                        fill-rule="evenodd"
-                      />
-                      <path
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <span
-                    class="Box_mobileOnlyStyle__1isqo400 sprinkles_fontWeight_normal__8lcvdky sprinkles_color_subtle__8lcvdk9"
-                  >
-                    on
-                  </span>
-                   
-                  <span>
-                    Tue Jan 26, 2021
-                  </span>
-                </div>
-                <div
-                  class="ReviewContent_gridAreas_text__cgzl4a4"
-                >
-                  <div
-                    class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0"
-                  >
-                    <p>
-                      <strong>
-                        Michael Haneke’s devastating feature debut.
-                      </strong>
-                       Calm waters of menacing monotony surrender to a crushing tsunami of bleak emotion. As the third act unfolded, I struggled to watch. It’s not what Haneke shows, but what he 
-                      <em>
-                        doesn’t
-                      </em>
-                       show. We fill the gaps with ourselves. The dread overwhelms. I went in cold, only aware that it concerned a middle-class couple. I suggest you do the same, although I’ve already said too much.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReviewPage_gridAreas_viewings__x6guia4"
-            >
-              <div
-                class="ViewingHistory_gridStyle__eggbk20"
-              >
-                <div
-                  class="ViewingHistory_gridAreas_heading__eggbk21"
-                >
-                  <h3
-                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_normal_mobile__8lcvdk3p sprinkles_fontWeight_semiBold__8lcvdkz sprinkles_letterSpacing_0.2__8lcvdk11 sprinkles_lineHeight_2_mobile__8lcvdk4h sprinkles_boxShadow_borderBottom__8lcvdkc"
-                  >
-                    Viewing History
-                  </h3>
-                </div>
-                <div
-                  class="ViewingHistory_gridAreas_list__eggbk22"
-                >
-                  <ul
-                    class="sprinkles_padding_0_mobile__8lcvdk1t"
-                  >
-                    <li
-                      class="ViewingHistory_listItemGridStyle__eggbk23 sprinkles_background_zebra__8lcvdk18 sprinkles_display_block_mobile__8lcvdk19"
-                    >
-                      <div
-                        class="ViewingHistory_listItemGridAreas_icon__eggbk24"
-                      >
-                        <svg
-                          class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
-                          height="1em"
-                          viewBox="0 0 16 16"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <title>
-                            Watched on
-                          </title>
-                          <path
-                            d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                            fill-rule="evenodd"
-                          />
-                          <path
-                            d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                            fill-rule="evenodd"
-                          />
-                          <path
-                            d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                            fill-rule="evenodd"
-                          />
-                        </svg>
-                         
-                      </div>
-                      <div
-                        class="ViewingHistory_listItemGridAreas_date__eggbk25"
-                      >
-                        <span
-                          class="sprinkles_fontWeight_bold__8lcvdk10"
-                        >
-                          Tue Jan 26, 2021
-                        </span>
-                         
-                      </div>
-                      <div
-                        class="ViewingHistory_listItemGridAreas_medium__eggbk26 sprinkles_color_subtle__8lcvdk9"
-                      >
-                        <div
-                          class="sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7"
-                        >
-                          <span>
-                            via
-                          </span>
-                           
-                          <span>
-                            Criterion Channel
-                          </span>
-                        </div>
-                      </div>
-                      <div
-                        class="ViewingHistory_listItemGridAreas_mediumNotes__eggbk27"
-                      />
-                      <div
-                        class="ViewingHistory_listItemGridAreas_venue__eggbk28"
-                      />
-                      <div
-                        class="ViewingHistory_listItemGridAreas_viewingNote__eggbk29"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReviewPage_gridAreas_credits__x6guia5"
-            >
-              <aside
-                class="Credits_gridStyle__1m1qj364 sprinkles_position_relative_mobile__8lcvdkhl"
-                id="credits"
-              >
-                <div
-                  class="Credits_gridAreas_poster__1m1qj365"
-                >
-                  <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained Credits_posterStyle__1m1qj360"
-                    data-gatsby-image-wrapper=""
-                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                  >
-                    <div
-                      style="max-width: 248px; display: block;"
-                    >
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                        style="max-width: 100%; display: block; position: static;"
-                      />
-                    </div>
-                    <img
-                      alt=""
-                      aria-hidden="true"
-                      data-placeholder-image=""
-                      decoding="async"
-                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='372'%20viewBox='0%200%20248%20372'%20preserveAspectRatio='none'%3e%3cpath%20d='M96%2028c0%203%200%204%202%204s3%200%203%2015v16h-4c-3%200-4%200-4%202l4%2023c2%2020%203%2021%205%2021s2%200%202%2017l1%2017h8v-34h3c2%200%202%200%202-3%200-4%200-4-3-4h-4l3-17%202-19c1-3%201-3-3-3h-3V31h3c2%200%202%200%202-3v-3l-10-1h-9v4m23%2017%201%2020%202%2039%201%2039h8v-19c0-19%200-20%202-20s2%201%202%2020v19h9v-17l3%208c3%208%203%209%206%209h4v-19c0-19%200-20%202-20s2%201%202%2020v19h18v-3c0-4%200-4-4-4h-5v-13h5c4%200%204%200%204-3%200-4%200-4-4-4-5%200-5%200-5-3%200-4%200-4%205-4%204%200%204%200%204-2s1-3%202-3c2-1%202%200%202%2019v20h9v-17l3%208c3%208%203%209%206%209h4v-19c0-19%200-20%202-20%201%200%202%201%202%203s1%202%203%202h2v34h9v-34h3c2%200%202%200%202-3v-4h-14V63h-9v7c0%207%200%207-2%207-3%200-3%200-3-7v-7h-8v39h-9V70h3c2%200%202%200%202-3v-4h-19v4c0%203%200%203%203%203h2v32h-9V83l-1-20-1-2c0-3%200-3-5-3h-5V46h5c4%200%205-1%205-4s0-3-5-3c-4%200-4-1-4-4s0-4%204-4%205%200%205-3v-3l-9-1h-9v19l-1%2020-1%2020c0%2018%200%2019-2%2019l-2-2c0-3%200-3-5-3h-4V85h4c4%200%205-1%205-4s-1-4-5-4-4-1-4-3c0-3%200-4%204-4%205%200%205%200%205-3l1-2%201-20V25l-5-1h-4v8c0%207%200%207-2%207s-3-1-3-8v-7h-8v21M48%2066c-5%205-4%2012%204%2019%206%205%208%209%206%2011-3%202-5%200-5-5%200-3%200-3-4-3h-4v5c0%204%200%206%203%208%203%203%203%203%201%205s-2%204-2%2016v15l3%203c4%204%2012%204%2016-1l3-2v-29l-3-3c-3-3-3-3-1-5s3-9%201-12l-7-9c-6-6-7-8-3-9%202%200%204%203%203%205-1%201%201%201%203%201%205%200%205%200%205-3%200-9-12-13-19-7m23%2018%201%2020%201%2019%201%2020h8v-18l3%209%203%209h7v-41h-3c-3%200-3%200-3-2%200-3%200-3-4-3h-5V85h9v-8h-4c-5%200-5%200-5-3%200-4%200-4%205-4%204%200%204%200%204-3v-4H71v21m-43%2018c-6%202-8%206-8%2020s1%2017%206%2019c5%203%2010%202%2014-1%202-2%202-4%202-9l1-5-5-1h-4v4c0%205-2%208-4%206l-1-14c0-11%201-11%203-11%201%200%202%200%202%204v4h9v-5c-1-8-7-13-15-11m28%209c-2%205-1%2022%200%2023%203%204%204%201%204-12%200-12%200-13-2-13l-2%202m61%2073c-4%205-5%2010-3%2012s4-2%203-4l-1-3%202%201c0%202%201%201%205-1%208-5%2011%200%205%209s-11%2011-15%205l-2-2-6%202c-12%204-12%205-11%2023%200%2012%201%2014%204%2018%201%201%202%203%202%207%200%206%203%209%209%2011%204%201%207%206%204%206l-2%201c-1%201%200%201%201%201l6%201c4%202%207%200%207-3%201-4%208%208%2011%2017%202%208%202%2013%200%207l-3-5-5-7-3-5h-14l-15-1c-2-2%200-4%203-4l5-1c1-1%200-1-3-1-6%200-6-1-3-8l1-4c-1%200-2%201-2%203l-2%202c-1-1-6%202-7%204l-1%201c0-2-7-1-8%201l-3%202-2%202c-2%202-2%202-2-1l-1%205c0%208%200%209%202%209a630%20630%200%200%200%2044%205c0%201%201%201-27%201l-20%201c0%202-5%201-6-1l-1-8c0-6%200-7-1-2l-1%207v2H42l-31-2H0v85h249v-38l-1-48v-9h-9l-9-1h-2c-3%203-71%201-76-2-6-3-4-3%2024-2h38l-36-2c-32-1-34-1-35-3-3-3-2-5%202-5%204-1%204-1%202-2l-2-1h2c3-1%203-1%201-4l-1-2h36l51%202h14v-31h-11l-14-1h-3l4%201%205%201c1%202-2%2019-3%2020l-14%203v-23l2-1c1-1-1-1-3-1h-4l-1%208c0%2015-1%2017-4%2018a2921%202921%200%200%200-26%200l-10-2c-10-1-12-3-12-14%200-12%200-11-7-12-2%200-3-1-3-5l1-7v-2c-2%200-2-3%201-6%201-2-1-3-6-3s-1-2%205-2c5%200%207-2%204-2l-6-1c-4%200-4%200-5-3-1-8-5-11-13-11-3%200-4%201-8%205m5%2045-5%206-3%204h13c14%201%2021%200%2011-1-8-2-11-2-10-4l-3-7-3%202m6%2030c-2%204%203%2011%2014%2022l11%2013c2%203%205%204%207%201l-1-1c-3-1-6-5-13-16-3-5-4-6-6-6s-3-2-6-8c-4-8-4-8-6-5M2%20293c0%204%202%206%205%206l4%201c1%202%205%202%2015%202%2013%200%2019-1%2016-2s-1-3%202-2c2%200%203%200%202-1%200-3%203-4%209-4h5l-40-3H2v3m79%2033c0%202%200%202-1%200s-1-2-1%200v2l-1-2c-1-2-1-1-1%202s0%204%201%203c1-2%201-2%201%200s5%203%205%200h1c2%202%206%203%206%201l1-1%201-3-2-4-1%204-1%204v-8h-2c-2%202-2%202-2%200-1-1-1%200-1%202v4l-1-4-2-3v3m-47%2016c0%204%200%205%202%205l3-1%201-2c1-1%201-1%201%201s0%202%201-1l1-3v3c0%202%200%203%202%203l2-1v-4c0-3%200-4-1-3l-1-1h-7l-4-1v5m92%200c0%203%200%205%201%204h3l2-1h1c1%202%204%202%204-1h1c0%202%202%202%205%203h5l-1-5v-4l-1%204c-1%205-2%204-1-1%200-4-2-4-2%200-1%202-1%202-1-1v-3l-1%204-2%205v-4c0-4%200-4-1-2h-1c0-2-3-3-4-2h-2c-2-1-2-1-2%201v3l-1-3c-1-3-2-2-2%203m50-4h-2l-1%205c0%202%200%204%201%203h4l1-2h1c1%203%206%204%206%201h1c1%202%201%202%202%201l2-1c0%201%201%202%203%202s2-1%202-3l-1-5-1%202-2%205v-4c0-3%200-4-1-3l-1-1-1-1v5c0%204%200%203-1-1l-2-3-1%203c0%202%200%202-1-1l-1-3-1%204-1%205v-4c0-4%200-4-1-2h-1l-1-2h-2'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                  <picture>
+                    <source
+                      data-srcset="/static/eb73617c5f981a3325f002fbac383a50/5bae1/michael-haneke.avif 40w,/static/eb73617c5f981a3325f002fbac383a50/d60a5/michael-haneke.avif 80w"
+                      sizes="40px"
+                      type="image/avif"
                     />
-                    <picture>
-                      <source
-                        data-srcset="/static/ba2886541a5be37910b030bc440cd9c0/6b3a6/the-seventh-continent-1989.avif 62w,/static/ba2886541a5be37910b030bc440cd9c0/3c542/the-seventh-continent-1989.avif 124w,/static/ba2886541a5be37910b030bc440cd9c0/c155b/the-seventh-continent-1989.avif 248w,/static/ba2886541a5be37910b030bc440cd9c0/1ad14/the-seventh-continent-1989.avif 496w"
-                        sizes="(min-width: 248px) 248px, 100vw"
-                        type="image/avif"
-                      />
-                      <img
-                        alt="A poster from The Seventh Continent (1989)"
-                        data-gatsby-image-ssr=""
-                        data-main-image=""
-                        data-src="/static/ba2886541a5be37910b030bc440cd9c0/31a1c/the-seventh-continent-1989.jpg"
-                        data-srcset="/static/ba2886541a5be37910b030bc440cd9c0/5bc78/the-seventh-continent-1989.jpg 62w,/static/ba2886541a5be37910b030bc440cd9c0/59d5c/the-seventh-continent-1989.jpg 124w,/static/ba2886541a5be37910b030bc440cd9c0/31a1c/the-seventh-continent-1989.jpg 248w,/static/ba2886541a5be37910b030bc440cd9c0/a5166/the-seventh-continent-1989.jpg 496w"
-                        decoding="async"
-                        loading="lazy"
-                        sizes="(min-width: 248px) 248px, 100vw"
-                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                      />
-                    </picture>
-                    <noscript />
-                    <script
-                      type="module"
-                    >
-                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                    </script>
-                  </div>
+                    <img
+                      alt="More Michael Haneke reviews"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/eb73617c5f981a3325f002fbac383a50/5e3dc/michael-haneke.jpg"
+                      data-srcset="/static/eb73617c5f981a3325f002fbac383a50/5e3dc/michael-haneke.jpg 40w,/static/eb73617c5f981a3325f002fbac383a50/d18de/michael-haneke.jpg 80w"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="40px"
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                    />
+                  </picture>
+                  <noscript />
+                  <script
+                    type="module"
+                  >
+                    const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                  </script>
                 </div>
-                <div
-                  class="Credits_gridAreas_meta__1m1qj366"
-                >
-                  <header
-                    class="Box_mobileOnlyStyle__1isqo400 sprinkles_fontSize_large_mobile__8lcvdk3x sprinkles_lineHeight_32_mobile__8lcvdk4t sprinkles_paddingBottom_24_mobile__8lcvdkg9"
-                  >
-                    The Seventh Continent
-                  </header>
-                  <dl>
-                    <div
-                      class="Box_mobileOnlyStyle__1isqo400"
-                    >
-                      <dt
-                        class="sprinkles_fontWeight_bold__8lcvdk10 sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Year
-                      </dt>
-                      <dd
-                        class="sprinkles_color_subtle__8lcvdk9"
-                      >
-                        1989
-                        <span
-                          class="sprinkles_width_px_mobile__8lcvdklx sprinkles_height_24_mobile__8lcvdkq9 sprinkles_minWidth_px_mobile__8lcvdknp sprinkles_minHeight_24_mobile__8lcvdkoh sprinkles_display_block_mobile__8lcvdk19"
-                        />
-                      </dd>
-                    </div>
-                    <div
-                      class="Box_mobileOnlyStyle__1isqo400"
-                    >
-                      <dt
-                        class="sprinkles_fontWeight_bold__8lcvdk10 sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Original Title
-                      </dt>
-                      <dd
-                        class="sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Der siebente Kontinent
-                        <span
-                          class="sprinkles_width_px_mobile__8lcvdklx sprinkles_height_24_mobile__8lcvdkq9 sprinkles_minWidth_px_mobile__8lcvdknp sprinkles_minHeight_24_mobile__8lcvdkoh sprinkles_display_block_mobile__8lcvdk19"
-                        />
-                      </dd>
-                    </div>
-                    <div
-                      class="Box_mobileOnlyStyle__1isqo400"
-                    >
-                      <dt
-                        class="sprinkles_fontWeight_bold__8lcvdk10 sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Financing
-                      </dt>
-                      <dd
-                        class="sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Austria
-                        <span
-                          class="sprinkles_width_px_mobile__8lcvdklx sprinkles_height_24_mobile__8lcvdkq9 sprinkles_minWidth_px_mobile__8lcvdknp sprinkles_minHeight_24_mobile__8lcvdkoh sprinkles_display_block_mobile__8lcvdk19"
-                        />
-                      </dd>
-                    </div>
-                    <div
-                      class="Box_mobileOnlyStyle__1isqo400"
-                    >
-                      <dt
-                        class="sprinkles_fontWeight_bold__8lcvdk10 sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Running Time
-                      </dt>
-                      <dd
-                        class="sprinkles_color_subtle__8lcvdk9"
-                      >
-                        104 min
-                        <span
-                          class="sprinkles_width_px_mobile__8lcvdklx sprinkles_height_24_mobile__8lcvdkq9 sprinkles_minWidth_px_mobile__8lcvdknp sprinkles_minHeight_24_mobile__8lcvdkoh sprinkles_display_block_mobile__8lcvdk19"
-                        />
-                      </dd>
-                    </div>
-                    <div>
-                      <dt
-                        class="sprinkles_fontWeight_bold__8lcvdk10 sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Directed by
-                      </dt>
-                      <dd
-                        class="sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Michael Haneke
-                        <span
-                          class="sprinkles_width_px_mobile__8lcvdklx sprinkles_height_24_mobile__8lcvdkq9 sprinkles_minWidth_px_mobile__8lcvdknp sprinkles_minHeight_24_mobile__8lcvdkoh sprinkles_display_block_mobile__8lcvdk19"
-                        />
-                      </dd>
-                    </div>
-                    <div>
-                      <dt
-                        class="sprinkles_fontWeight_bold__8lcvdk10 sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Starring
-                      </dt>
-                      <dd
-                        class="sprinkles_color_subtle__8lcvdk9"
-                      >
-                        Birgit Doll, Dieter Berner, Leni Tanzer,  and Udo Samel
-                        <span
-                          class="sprinkles_width_px_mobile__8lcvdklx sprinkles_height_24_mobile__8lcvdkq9 sprinkles_minWidth_px_mobile__8lcvdknp sprinkles_minHeight_24_mobile__8lcvdkoh sprinkles_display_block_mobile__8lcvdk19"
-                        />
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-                <div
-                  class="Credits_gridAreas_watchlistLinks__1m1qj367"
-                >
-                  <ul
-                    class="sprinkles_display_flex_mobile__8lcvdk1h sprinkles_padding_0_mobile__8lcvdk1t"
-                  >
-                    <li
-                      class="sprinkles_display_block_mobile__8lcvdk19"
-                    >
-                      <a
-                        class="WatchlistLinks_linkStyle__sz6ovu1 sprinkles_paddingLeft_16_mobile__8lcvdkat sprinkles_paddingRight_16_mobile__8lcvdkcl sprinkles_paddingTop_8_mobile__8lcvdke9 sprinkles_paddingBottom_8_mobile__8lcvdkg1 sprinkles_backgroundColor_subtle__8lcvdk4 sprinkles_display_flex_mobile__8lcvdk1h sprinkles_alignItems_center_mobile__8lcvdk55 sprinkles_whiteSpace_nowrap__8lcvdkv sprinkles_border_all_mobile__8lcvdki9 sprinkles_color_accent__8lcvdk5 sprinkles_textDecoration_none__8lcvdk14"
-                        href="/watchlist/directors/michael-haneke/"
-                      >
-                        <div
-                          class="gatsby-image-wrapper WatchlistLinks_avatarStyle__sz6ovu0"
-                          data-gatsby-image-wrapper=""
-                          style="position: relative; overflow: hidden; width: 40px; height: 40px;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            data-placeholder-image=""
-                            decoding="async"
-                            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20preserveAspectRatio='none'%3e%3cpath%20d='M27%206c0%205%200%206%202%206l2%202-1%201c-1-1-1%200-1%203l-2%206v3c1%203%201%204-1%206-4%204-12%203-13-2l-2-2-2-1c-1-1-1-1-2%202-2%204-7%206-5%201l-1-2-1%206v5h41V28c-1-5-1-5-3-4-2%200-3%202-3%203l-1%202c-2%201-1-7%202-10%202-2%203-6%201-4l-1-2c0-3-6-12-8-12l-1%205'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                          />
-                          <picture>
-                            <source
-                              data-srcset="/static/eb73617c5f981a3325f002fbac383a50/5bae1/michael-haneke.avif 40w,/static/eb73617c5f981a3325f002fbac383a50/d60a5/michael-haneke.avif 80w"
-                              sizes="40px"
-                              type="image/avif"
-                            />
-                            <img
-                              alt="More Michael Haneke reviews"
-                              data-gatsby-image-ssr=""
-                              data-main-image=""
-                              data-src="/static/eb73617c5f981a3325f002fbac383a50/5e3dc/michael-haneke.jpg"
-                              data-srcset="/static/eb73617c5f981a3325f002fbac383a50/5e3dc/michael-haneke.jpg 40w,/static/eb73617c5f981a3325f002fbac383a50/d18de/michael-haneke.jpg 80w"
-                              decoding="async"
-                              loading="lazy"
-                              sizes="40px"
-                              style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                            />
-                          </picture>
-                          <noscript />
-                          <script
-                            type="module"
-                          >
-                            const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                          </script>
-                        </div>
-                        Michael Haneke
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="Box_mobileOnlyStyle__1isqo400 Credits_gridAreas_backToTop__1m1qj368"
-                >
-                  <a
-                    class="Credits_backToTopContainerStyle__1m1qj361"
-                    href="#top"
-                  >
-                    <div
-                      class="Credits_backToTopInnerStyle__1m1qj362"
-                    >
-                      <svg
-                        class="Credits_backToTopArrowStyle__1m1qj363"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"
-                        />
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </aside>
-            </div>
-            <div
-              class="ReviewPage_gridAreas_related__x6guia6"
-            >
-              <div
-                class="sprinkles_display_flex_mobile__8lcvdk1h sprinkles_flexDirection_column_mobile__8lcvdk5x sprinkles_rowGap_64_mobile__8lcvdk8t"
-              >
-                <nav
-                  class="RelatedMovies_gridStyle__ybjqoi3"
-                >
-                  <div
-                    class="RelatedMovies_gridAreas_heading__ybjqoi4 sprinkles_boxShadow_borderBottom__8lcvdkc"
-                  >
-                    <header
-                      class="sprinkles_display_flex_mobile__8lcvdk1h sprinkles_justifyContent_space-between_mobile__8lcvdka1 sprinkles_lineHeight_2_mobile__8lcvdk4h"
-                    >
-                      <h3
-                        class="sprinkles_fontWeight_normal__8lcvdky sprinkles_fontSize_normal_mobile__8lcvdk3p"
-                      >
-                        More directed by 
-                        <a
-                          class="sprinkles_color_accent__8lcvdk5 sprinkles_textDecoration_none__8lcvdk14"
-                          href="/watchlist/directors/michael-haneke/"
-                        >
-                          Michael Haneke
-                        </a>
-                      </h3>
-                      <a
-                        class="sprinkles_color_accent__8lcvdk5 sprinkles_textDecoration_none__8lcvdk14"
-                        href="/watchlist/directors/michael-haneke/"
-                      >
-                        See All »
-                      </a>
-                    </header>
-                  </div>
-                  <div
-                    class="RelatedMovies_gridAreas_list__ybjqoi5"
-                  >
-                    <ul
-                      class="RelatedMovies_movieListStyle__ybjqoi2"
-                    >
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/bennys-video-1992/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='m246%2010-20%2016c-6%204-6%204-3%206%205%204%207%2022%203%2032-4%209-3%2030%201%2034l1%203c0%202%201%202%207%204%202%200%203%201%203%202%200%202%201%203%205%204l4%203%201%201a443%20443%200%200%200-2-47c0%2017%200%2019-3%2019l-3-2h-1l-1%201-1-5c0-7-2-9-2-2%200%204-1%204-2%204-3%200-3%200-4-16l1-14c5%200%205%201%205%2010v9l1-10c1-10%201-10%204-9%204%201%206%200%206-4l1-5c1-1%201%200%201%206v5-44c0-2-2-2-2-1M1%2033v21h7c8%200%2012%201%209%203v2c-1%201%200%203%205%209l1%202v1c1%200%202%201%202%204%201%203%208%2016%2011%2016h2l4-1h3l-2%204-2%206v2c1%202%200%203-6%202-8%200-9-1-5-5%205-3%205-3%200-4h-3c0%202-2%204-3%202s-3%200-3%202l-1%202h-3c-4%201-6%203-6%209l-1%207-2%208c0%203%200%204-2%204l-3%201H1c-1-1-1%200-1%204%200%206%202%207%202%202%200-4%201-4%202-2%202%201%202%201%201%203s-1%202%2064%202h66l-1-2c-2-3-1-3%202%200s19%203%2018%200l-2-6c-3-14-5-20-8-21-2%200-8-8-9-10l3-5c2-2%202-3%202-6v-6c-1-5-1-6%201-8s3-7%201-10c-3-3-2-5%201-5%202%200%202%200%201-1l-3-1c-2-2-5-1-5%200%201%201%200%202-1%202-2%201-2%201-2-1l2-2%201-2c0-2%200-2%204-1%205%202%208%205%208%207l4%205%204%205%202%205%202%203v3c1%201%203%200%205-4%201-2%202-2%204-2%202%201%203%201%203-2l-1-4a14%2014%200%200%201-7-17v-4c-2-2-2-3-1-6%201-1%201-2-1-2-3-1-1-4%203-4%203%200%202-1-3-3-3-1-3-1-3%203%200%203-1%204-4%204s-4-1-1-2l2-2v-3c0-3%201-3%204-3%207%200%2013%202%2015%205%202%202%202%203%202%209v5l1%204%2020-1%2020-1%201-39a2925%202925%200%200%200-121%204c4%200%207%202%204%202-1%200-1%201%202%203l3%205c-1%201%200%201%201%201%202%200%205%203%204%204v2c2%201%202%202%201%203v1c2%200%201%203-1%204l-2%202h-4c-1-2-1-2%201-2%201%200%202-1%202-3%201-3-6-10-10-10l-2-2-1-2-1-1-4-2-4-2-2-1c-2-1-2-1%200%201l1%202h-2c-1%201-3%200-5-2s-4-2-4%201c0%202-3%201-5-1s-8-3-6-1%201%203-1%203h-5l-3-1H45c-1-2-3%200-3%203v4l-2-4c-1-3-1-3-2-2l1%204c1%201%201%201-4%207-4%204-7%202-7-5%200-2%201-3%205-6%206-3%208-5%208-8%200-1-2-2-20-2H1v21m102%2017c0%203%201%205%205%209l5%206%201%201%202%201%201%201v-3c-1-3%200-7%202-8%203-3%201-4-7-4-7%200-7-1-8-3s-1-2-1%200m5%2034v7c3%202-4%204-13%204-6%200-7%201-8%202v3c2%200%201%202-2%206s-3%204-2%206l2%203c-1%202%2010%2013%2011%2011v-4c3%201%201-3-4-7l-4-6%205%204c3%204%204%204%204%202l-1-2-3-14%202-2c13-1%2017-2%2016-8l-1-5h-2m53%2026c0%204%203%2012%205%2014l1%202%202%207%202%206h16l-2-6-4-7-2-5c0-4-1-4-2-3-8%202-11-1-7-5l3-3-4-2c-7-3-8-3-8%202'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/89e9dd47975ec10daf9624d373d510af/ee463/bennys-video-1992.avif 62w,/static/89e9dd47975ec10daf9624d373d510af/eaf25/bennys-video-1992.avif 124w,/static/89e9dd47975ec10daf9624d373d510af/6297a/bennys-video-1992.avif 248w,/static/89e9dd47975ec10daf9624d373d510af/c0abc/bennys-video-1992.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from Benny's Video (1992)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/89e9dd47975ec10daf9624d373d510af/ced04/bennys-video-1992.jpg"
-                                  data-srcset="/static/89e9dd47975ec10daf9624d373d510af/41793/bennys-video-1992.jpg 62w,/static/89e9dd47975ec10daf9624d373d510af/6a789/bennys-video-1992.jpg 124w,/static/89e9dd47975ec10daf9624d373d510af/ced04/bennys-video-1992.jpg 248w,/static/89e9dd47975ec10daf9624d373d510af/9025e/bennys-video-1992.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/bennys-video-1992/"
-                          >
-                            Benny's Video 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              1992
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="A-: 5 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/5-stars.svg"
-                          />
-                        </div>
-                      </li>
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/71-fragments-of-a-chronology-of-chance-1994/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='m143%201%203%202c3%201%204%202%204%204l-1%203v1c2%203%203%208%201%2010-1%201-5%200-5-1h-1c-1%201-1%201-2-1l-2-3c-2%200-6-4-6-6l-1-1c-1%201-5%200-9-2-3-2-8-3-10-3l-5-1c-1-2-2-2-4-1l-5%202c-3%201-3%201-2%202l1%201-7%202-2%201c-1-1-1%200-1%201l-1%202-4%202-1%202%201%201h-1l-2-1v1c1%201-1%202-3%201v1l-1%201-2%201h-1c0-1-21-3-24-2-2%201-4%205-4%2010v4h13a326%20326%200%200%201%2020%200v-2l1-2h1v-2l1-1c1%201%201%200%201-1l2-2v1c-2%200-1%202%201%201l1-1%201-1c3%200%201%203-3%205-4%203-6%207-5%2010l-1%202c-1%200-2%205-1%206v1l-1%202-1%202V38H46v13l-1%2016c-1%206%202%209%2013%209l15%201c7%200%208%200%207%202l-2%205c0%202%200%202-2%200-1-1-1-1-1%201v3l-1-2c0-2-1-3-8-3-4-1-5%200-5%201l-2%201v-1c0-2-4-2-26-3-14-1-16-2-16-7%200-3%200-4-2-4-2-1-2-1-2-3l2-6%201-7%202-6c0-6%200-6-4-8-3-2-5-3-9-3H0v102h6l6-1-1-2v-3c1-3%201-3%209-3s8%200%205-1c-5-2-4-2%2011-2h12l1-3c1-3%201-3-1-3l-2-2c0-2%201-3%203-1%201%202%202%201%203-2%201-1%202-3%204-3h7l4%202%203%201h-4c-3-1-4%200-8%202-8%203-8%206-3%2016l2%205h48v-6l2-8c2-2%201-3-1-2-3%202-3%201-1-2l5-3c3-1%204%200%202%202l-3%207-2%209v3h29l29-1h7l17%201%2010-1h-6l-2-5c-3-8-6-11-11-16-4-4-4-6%201-3%201%201%202%200%204-2%203-2%204-3%204%200v3l1%202c-1%201%200%201%202%201l3-1c0-3%2012-5%2020-3%208%201%209%202%208%204l1%201v1l4%205c3%203%203%203%201%205-1%202-1%202%201%204%202%201%202%201%201%202-4%202-2%203%208%203h10V87l-1-41v43h-10l-65-3h-5v-3l1-7%202-13c1-7%203-14%203-9h6c2%202%202%202%202-1%200-4%200-4-4-5l-4-1c-2%200-5-5-5-8%200-2%201-2%204-2a474%20474%200%200%200%207-2h-11V17l1-17h-13l-14%201m58%2043-3%202-5%202c-4%201-4%201-4%205v4l-1%201%201%201v20c-1%201%209%203%2021%203h10v-8c2-26%201-29-11-30h-8m-93%202c-5%202-5%203%200%203%206%200%208%201%206%204l-4%204c-2%202-4%202-9%201s-4-3%201-4c2-1%202-3-1-3s-10%207-11%2011c-2%209%203%2022%2010%2025%202%200%205%203%207%205%204%204%206%205%2010%202%203-3%203-3-4-3h-5l3-2%207-2c7-1%207-3%201-3h-7c-6%201%202-5%209-6%204%200%206-2%203-2l-8-2-2-2%205-2c5-2%205-2%203-7l-2-7c0-3-2-8-3-8l-1-1c0-2-3-2-8-1'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/dcc3eb65978e0aa870a0945c66d6fa40/ee463/71-fragments-of-a-chronology-of-chance-1994.avif 62w,/static/dcc3eb65978e0aa870a0945c66d6fa40/eaf25/71-fragments-of-a-chronology-of-chance-1994.avif 124w,/static/dcc3eb65978e0aa870a0945c66d6fa40/6297a/71-fragments-of-a-chronology-of-chance-1994.avif 248w,/static/dcc3eb65978e0aa870a0945c66d6fa40/c0abc/71-fragments-of-a-chronology-of-chance-1994.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from 71 Fragments of a Chronology of Chance (1994)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/dcc3eb65978e0aa870a0945c66d6fa40/ced04/71-fragments-of-a-chronology-of-chance-1994.jpg"
-                                  data-srcset="/static/dcc3eb65978e0aa870a0945c66d6fa40/41793/71-fragments-of-a-chronology-of-chance-1994.jpg 62w,/static/dcc3eb65978e0aa870a0945c66d6fa40/6a789/71-fragments-of-a-chronology-of-chance-1994.jpg 124w,/static/dcc3eb65978e0aa870a0945c66d6fa40/ced04/71-fragments-of-a-chronology-of-chance-1994.jpg 248w,/static/dcc3eb65978e0aa870a0945c66d6fa40/9025e/71-fragments-of-a-chronology-of-chance-1994.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/71-fragments-of-a-chronology-of-chance-1994/"
-                          >
-                            71 Fragments of a Chronology of Chance 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              1994
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="C+: 3 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/3-stars.svg"
-                          />
-                        </div>
-                      </li>
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/funny-games-1997/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2070v69h151l4-8c6-12%2017-20%2028-22l5-3c1-2%200-3-2%200-2%202-3%201-3-1l2-3%201-2%202-1%205-2%203-1%201-1c2-2%202-1%203%209%201%204%202%205%206%201l6-3c2%200%204%204%204%206-1%203%206%2010%2011%2012%206%202%2019%2012%2021%2017l1-68V0H0v70m133-48-4%201-13%202c-3%202-2%203%203%203l5%202%201%201%204%202v2l-1%201-2%202-11%204v2l15%203c6%200%2017%205%2016%206l1%202v1c-1%201-1%201%201%203l2%203-2%201-5%201h-2l-5%203c-6%203-8%205-5%206l2%201v3l3%201v1l3%203%204%205%201%202%201-1c0-2%203-2%204%200h3c2%200%203%202%201%204h-2l-1-2-1%203-1%203v2l2%204c0%202%200%203%201%202%201-4%2010-10%2010-7l-1%202v1h1l1%201c-1%204%201%206%202%202%201-3%203-4%203-2h5c2%203%209-11%207-16l1-2c2%201%209-1%209-2l1-1%201%201c0%202%200%202%203-2%204-4%207-10%207-13h-1l-2-4c-1-5-3-7-5-4%200%202-1%202-3%201h-4l-11%202h-8l-4-6-5-7c-2%200-5-8-5-13%201-10-4-13-14-12h-4c0-2-1-3-2-1M66%2060l-2%202c0%202%201%202%207%203a690%20690%200%200%201%2026%200v-3c-2-2-26-4-31-2m47%200-3%205-4%209c-3%207-3%206%207%209l8%202%202-3v-3l1-2%203-4%202-3-5-3-5-4c-1-2-4-4-6-3M59%2078c-4%204-1%206%209%207%2010%200%2014-3%2010-7-3-3-17-3-19%200m27%201c-2%202-1%208%202%2012l3%204%202%201c3%200%203-5-1-6-4-2-3-5%203-6%206%200%208-1%208-2%200-4-15-6-17-3'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/da8c1b1d82060b4e2db73b4710bc896c/ee463/funny-games-1997.avif 62w,/static/da8c1b1d82060b4e2db73b4710bc896c/eaf25/funny-games-1997.avif 124w,/static/da8c1b1d82060b4e2db73b4710bc896c/6297a/funny-games-1997.avif 248w,/static/da8c1b1d82060b4e2db73b4710bc896c/c0abc/funny-games-1997.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from Funny Games (1997)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/da8c1b1d82060b4e2db73b4710bc896c/ced04/funny-games-1997.jpg"
-                                  data-srcset="/static/da8c1b1d82060b4e2db73b4710bc896c/41793/funny-games-1997.jpg 62w,/static/da8c1b1d82060b4e2db73b4710bc896c/6a789/funny-games-1997.jpg 124w,/static/da8c1b1d82060b4e2db73b4710bc896c/ced04/funny-games-1997.jpg 248w,/static/da8c1b1d82060b4e2db73b4710bc896c/9025e/funny-games-1997.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/funny-games-1997/"
-                          >
-                            Funny Games 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              1997
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="A: 5 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/5-stars.svg"
-                          />
-                        </div>
-                      </li>
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/code-unknown-2000/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='m118%2064-11%203c-7%201-12%205-10%208l1%203v3c1%201%200%202-2%204-4%202-6%206-6%2012l-3%208c-2%203-2%203-1%204v2c2%201%202%201%201%203s-3%202-44%202H0v23h249v-24l-55%201h-55v-11l-5-2c-4-1-5-2-6-4l-2-2%201-2c2-2%202-8%200-8s-2%201-2%203c0%203-2%204-2%202-2-4-2-12-1-11h1c-1-2%205-7%208-6%202%200%200-8-3-10s-4-2-10-1'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/73f4c59e25b396119f9bf06ed83d428b/ee463/code-unknown-2000.avif 62w,/static/73f4c59e25b396119f9bf06ed83d428b/eaf25/code-unknown-2000.avif 124w,/static/73f4c59e25b396119f9bf06ed83d428b/6297a/code-unknown-2000.avif 248w,/static/73f4c59e25b396119f9bf06ed83d428b/c0abc/code-unknown-2000.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from Code Unknown (2000)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/73f4c59e25b396119f9bf06ed83d428b/ced04/code-unknown-2000.jpg"
-                                  data-srcset="/static/73f4c59e25b396119f9bf06ed83d428b/41793/code-unknown-2000.jpg 62w,/static/73f4c59e25b396119f9bf06ed83d428b/6a789/code-unknown-2000.jpg 124w,/static/73f4c59e25b396119f9bf06ed83d428b/ced04/code-unknown-2000.jpg 248w,/static/73f4c59e25b396119f9bf06ed83d428b/9025e/code-unknown-2000.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/code-unknown-2000/"
-                          >
-                            Code Unknown 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              2000
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="B+: 4 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/4-stars.svg"
-                          />
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-                <nav
-                  class="RelatedMovies_gridStyle__ybjqoi3"
-                >
-                  <div
-                    class="RelatedMovies_gridAreas_heading__ybjqoi4 sprinkles_boxShadow_borderBottom__8lcvdkc"
-                  >
-                    <header
-                      class="sprinkles_display_flex_mobile__8lcvdk1h sprinkles_justifyContent_space-between_mobile__8lcvdka1 sprinkles_lineHeight_2_mobile__8lcvdk4h"
-                    >
-                      <h3
-                        class="sprinkles_fontWeight_normal__8lcvdky sprinkles_fontSize_normal_mobile__8lcvdk3p"
-                      >
-                        More 
-                        <a
-                          class="sprinkles_color_accent__8lcvdk5 sprinkles_textDecoration_none__8lcvdk14"
-                          href="/reviews/"
-                        >
-                          Reviews
-                        </a>
-                      </h3>
-                      <a
-                        class="sprinkles_color_accent__8lcvdk5 sprinkles_textDecoration_none__8lcvdk14"
-                        href="/reviews/"
-                      >
-                        See All »
-                      </a>
-                    </header>
-                  </div>
-                  <div
-                    class="RelatedMovies_gridAreas_list__ybjqoi5"
-                  >
-                    <ul
-                      class="RelatedMovies_movieListStyle__ybjqoi2"
-                    >
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/seed-of-chucky-2004/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2028c0%2022%200%2027%201%2026%201-2%204-2%2023-2%2025%200%2024-1%2027%2013a2719%202719%200%200%200%206%2023v4h-6l-38-3c-2%200-3-1-4-3L1%2061%200%2097v42h70l2-3%203-3%205-1h6c2%200%202%200%201-2h2l5%203c3%203%203%203%201%203-3-1-4%200-2%202l6%201c5-1%205-1%203-2-4-1-6-4-5-4l9%202%204%201h1c-1-1-1-1%201-1l2%202h4c2%203%2010%203%209%200l1-2%202-3c1-3%205-4%205-2l1%201%201%201c2%203%207%204%209%202%202-1%200-5-2-5l-3-1c-1-1-2-2-3-1l-1-1%202-6%203-5c2-1%208%201%207%203l2%202h-3c-5%200-5%200-1%203%206%203%209%203%2011-3%204-9%204-14-3-23-5-6-3-8%203-4l6%204c6%201%2013%206%2014%2011%202%208%2012%2017%2020%2017l3%202c2%203%204%203%204%201l-2-3%201-3c2-2%202-2%201-6l-2-5c1-1%200-3-1-5-3-10-7-34-4-32%201%200%204-6%204-10%200-3-3-10-8-18l-7-13c-1-4-2-6-4-7l-3-2c0-2-16-9-21-9l-4-1-2%201h-2l-1%201v1c-1%200-5%202-8%206l-9%207v2l-1%207-2%2013-1%209-1%203c0%202%200%203-2%202-2%200-2-2%200-9%203-12%204-24%202-26v-4l1-6v-3l1%203%201%202%202-2%203-3%203-3%202-1%203-3%204-2%203-1%2011-2c2-1%202-1-1-1-4%201-4%201-6-2l-1-3h-18l-18%201v4l1%206v31c-2%204-3%203-6-11l-3-8c-1-2-3-14-2-15%201-2%202-1%202%202l1%204v4c0%201%201%202%202%201v-2c1-1%201-2-1-9l-1-8h-8v8a256%20256%200%200%200-2-6c0-2-2-2-7-2l-8%201%201%208%202%209-1%202-1-6-2-6V1L42%200H0v28m152%202-5%203c-3%202-5%2011-4%2012v1c-3%201-1%204%201%204%204%200%207%201%206%202h-1l-1%201-3%201c-5%201-7%204-7%2010%200%2010%206%2021%2012%2025%204%202%2010-1%2013-5%200-2%201-3%202-3%202%200%204-6%204-8-1-2%200-5%203-10l3-8h-3c-1%202-6%202-8-1h-3c0-2%201-3%204-3%202%200%203-1%202-2l2-1c2%200%202%200%201-1-4-1-10%203-10%206-2%206-2%209-1%209%202%200%203%205%202%206h-7v-3l2-7c1-9%203-11%2010-12%207-2%208-2%207-8-2-8-10-11-21-8m48%2010%202%204%201%202h17l17-1%206-1c5%200%205%200%205-2v-3h-24l-24%201m7%208-1%201c-2%200-2%200%201%209%204%2010%204%2010%207%2011l3%201-3%202h-1l5%2012%204-4%201-1c3%200%203%204%201%205-1%201-1%201%203%201%204-1%204-1%204%208l-1%207c-2%200-2-1-2-4%200-4%200-4-4-4h-4l4%208c7%2017%2011%2030%2011%2034%200%205%201%205%204%205%202%200%203%200%204-3%200-3%201-3%203-3l2%201V93h-6c-6%200-6%200-7-2-1-5%200-6%207-6%205%201%206%201%206-1l-2-2v-1c2%200%202-1%202-16V49h-16a284%20284%200%200%201-25-1m-58%2025c-2%201-2%202-1%205%202%203%205%205%209%204%203-1%207-6%205-7-1-2-12-3-13-2m-32%201h-5l2%203c4%205%204%206%203%206l-3-3c-1-3-6-6-7-4v1l1%203c0%202%200%202-1%201%200-1-1-2-2-1v-1l-1-2-2%202c-1%202-2%201-2-2v-2l-4%202-4%206c0%203-5%209-6%208l-3%202c-3%204-2%204%204%202s7-1%204%201c-2%202-5%203-7%203l-3%202c0%202%205%201%209-1l3-2-1%205c0%206-1%207-1%203%200-5%200-5-5-1-4%202-5%203-6%201-1-1-3-2-3%200s6%208%207%208c2%200%203%201%204%207l2%207h5c6%200%206%200%205-1l-2-2c-2%200-7-4-7-5l2%201c2%202%202%200%201-5-3-7-2-8%200-2l7%2010%204%203c5%203%207%203%209-2%202-4%202-4%200-6h-8c-1-1-1-2%202-4l3-3-3-4c-3-3-4-3-5-2s-1%201-1-1l1-2%201-3c0-1%200-2%201-1l2-2%201-2h2c2-2%203-1%201%201-1%201-1%201%201%201s2-1%202-4l-1-4%202%202c3%204%204%204%207-2l3-5-1-3-2-3v-3l-5-1'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/3f6ee8b9c5f9225728d371d02053522c/ee463/seed-of-chucky-2004.avif 62w,/static/3f6ee8b9c5f9225728d371d02053522c/eaf25/seed-of-chucky-2004.avif 124w,/static/3f6ee8b9c5f9225728d371d02053522c/6297a/seed-of-chucky-2004.avif 248w,/static/3f6ee8b9c5f9225728d371d02053522c/c0abc/seed-of-chucky-2004.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from Seed of Chucky (2004)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/3f6ee8b9c5f9225728d371d02053522c/ced04/seed-of-chucky-2004.jpg"
-                                  data-srcset="/static/3f6ee8b9c5f9225728d371d02053522c/41793/seed-of-chucky-2004.jpg 62w,/static/3f6ee8b9c5f9225728d371d02053522c/6a789/seed-of-chucky-2004.jpg 124w,/static/3f6ee8b9c5f9225728d371d02053522c/ced04/seed-of-chucky-2004.jpg 248w,/static/3f6ee8b9c5f9225728d371d02053522c/9025e/seed-of-chucky-2004.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/seed-of-chucky-2004/"
-                          >
-                            Seed of Chucky 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              2004
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="C+: 3 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/3-stars.svg"
-                          />
-                        </div>
-                      </li>
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/service-de-luxe-1938/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='m190%201%202%203%201%203%202%204%202%201v3l2%201c2%200%204%205%202%206-1%201%201%205%203%205s5%205%206%208c0%203%205%207%206%206h5c1%201%206%200%207-1%200-1%201-2%203-2s2%200%200-1l-2-1c1-4%200-5-4-5-5-1-5-1-5-5l-2-6-2-7c-1-3-2-4-2-2l-1%202c-1%201-12-11-12-12l-6-1c-5%200-6%200-5%201M95%203c-1%201%201%205%203%206l10%203%208%201%2013%202%2013%201%205-2%206-3c3%200%203-3%202-6-1-2-1-2-3-1-1%202-4%202-11%202-10%200-10%200-11%203%200%203-9%203-10-1%200-2-1-2-11-2-9%200-11-1-12-2l-2-1m66%205c-3%202-2%203%202%202%203%200%203%200%202%202s-1%202-3%201h-3l-3%202v1h5c1%203%201%206-2%209l-3%203h3l4%201h3l2%201%2012%201c2%200%202%200%202-2%200-1%200-2-1-1%200%202-2%201-3-1%200-2-2-3-3-3l-3-2%202-1c3%201%203%200%201-3-3-2-7-2-9-1v-3l2-4c0-3-2-4-7-2m-98%202h-5c-3-1-9%205-9%2010%200%204%203%2010%204%2010l3-4%203-1c3%200%204-1%204-2l1-4v-2c-1-2%202-4%206-4l1-2-1-2-7%201M2%2018l1%203%201-1h3c3%202%203%203%200%203s-4%202-4%209c0%204%201%205%204%206%204%201%203%204-3%204l-4%201h24c0%202%206%202%208-1%201-1%201-1%201%202v4l-1%2010-1%209-2-4c-2-6-3-3%200%202l2%204-2%201c-3%201-3%202-3%206%200%208%202%209%2011%209%206%200%207%200%208%202l2%204%201%203%202%208c2%207%202%207%201%208l-2%202%201%201c1-1%201%200%201%202l1%204v2c-1%202-1%202%201%202l3%205c0%205%200%205-4%205a1990%201990%200%200%201-16%202c-3-1-3-1-2-5%201-5%201-5-1-5-3%200-3%201-4%205v5l-2%202c-6%201%200%202%2019%202%2020%200%2022%200%2021-2l5-1c3%200%205%201%205%202l2%201c2%200%202%200%201-4-2-3-2-4%200-4%201-1%201%200%201%202%200%204%200%204%205%204l5-1%201%201c1%202%202%202%2011%202h9v-4l-1-11v-7l4-1%205-3h4c5%200%208-2%208-8v-4h-10l-11%201-2-1%201-2h12c10%200%2011%200%2011-2%200-8%205-13%2018-16%208-2%208-2%208-5%200-6-1-8-7-9l-8-2-2-1c-1%201-6-1-6-2l2-2c2%200%203-2%201-2-1-1%200-1%202-1%204%200%206-2%203-3h2l7%202c5%203%205%203%205-4%200-12%203-13%203-1%200%206%201%208%202%209l1-10V39l-5-1c-16-6-40-7-58-4-12%203-11%203%203%201%2011-1%2018-1%2027%201%204%201%203%201-8%201-20%200-40%205-41%209%200%202%200%202%202%201%204-3%2017-6%2023-6%205%200%205%200-5%202-15%203-16%203-16%207%200%203%201%203%202%203%202%200%202%201%202%2016v16l-3-1-3-1-1-1c-1%201-2-5-2-7%201-2-1-5-6-7-3-2-4-2-3-5v-2l-1-2%201-1c1%201%203-10%203-15%200-3-3-7-6-7-1%200-1%203%201%206l1%201-2%202c-2%200-3%202-3%206%200%208-1%2013-2%2013-2%200-8-18-8-21h-2c-3%201-3%201-3-4-1-7-2-7-7-5-3%200-7%202-8%204l-6%203h-4V18h-7L6%2017l-4%201m212%2042%201%201v12c0%2014%201%2017%202%206l1-8v7c0%2014%202%209%202-5V59h-3l-3%201m-101%208c-3%206%203%208%207%204l2-1c-1%203%201%206%203%205l3-4v-3h-3c-1%200-1-1%201-1%204-2%202-3-5-3s-7%200-8%203m86%209c1%207%201%209%203%207l4-1c2%200%206-3%206-6h1l1-1-6-1-7-2-2-2v6m-92-1-2%201c-3-1-4%202-3%206%201%202%203%203%203%200s0-4%202-3l2%202c-1%201%200%201%201%201l4%201h5c3%200%204%200%203-1h2l1-1c-1-1%200-2%201-3l3-2-3%201-8-1c-4-2-5-2-5%200h-1c-1-2-4-3-5-1m115%2022-17%201h-3v6c0%206%200%206%206%207%203%201%204%201%204-1h1l1%209c0%206%201%208%202%209l1-2v-8c0-6%200-6%203-6h3c1-2%203%200%203%202l1%203v15c0%202%200%202-5%200l-5-2c-1-2-17-1-17%200l-1%205v3h44l-1-3c-1-4%201-17%202-16%203%202%205-1%204-7l-1-6-4-4h3c2%200%203-2%201-3v-2h-25m-146%207c-2%202-2%202-1%203%203%200%202%202%200%202s-2%200%200%206c1%205%203%209%203%206h1c3%203%205-2%204-8l-2-7c-1-5-2-6-5-2m161%2013c1%201%201%201-2%201l-4-1v8c-1%209-1%2010%205%2010%204-1%205-2%204-13-1-5-2-6-3-6v1'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/4564ba9cfdd2cce709c41705b0061ecb/ee463/service-de-luxe-1938.avif 62w,/static/4564ba9cfdd2cce709c41705b0061ecb/eaf25/service-de-luxe-1938.avif 124w,/static/4564ba9cfdd2cce709c41705b0061ecb/6297a/service-de-luxe-1938.avif 248w,/static/4564ba9cfdd2cce709c41705b0061ecb/c0abc/service-de-luxe-1938.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from Service de Luxe (1938)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/4564ba9cfdd2cce709c41705b0061ecb/ced04/service-de-luxe-1938.jpg"
-                                  data-srcset="/static/4564ba9cfdd2cce709c41705b0061ecb/41793/service-de-luxe-1938.jpg 62w,/static/4564ba9cfdd2cce709c41705b0061ecb/6a789/service-de-luxe-1938.jpg 124w,/static/4564ba9cfdd2cce709c41705b0061ecb/ced04/service-de-luxe-1938.jpg 248w,/static/4564ba9cfdd2cce709c41705b0061ecb/9025e/service-de-luxe-1938.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/service-de-luxe-1938/"
-                          >
-                            Service de Luxe 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              1938
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="C-: 3 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/3-stars.svg"
-                          />
-                        </div>
-                      </li>
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/the-seventh-seal-1957/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2070v69h42a409%20409%200%200%200%2039-1l2-2c3-4%208-5%2014-4l5%201c1%201-1%203-2%202l-4%203h10v-7h-2l4-2%206-3%202-1%201%201h1l-1%201c-2%201-1%203%203%204%203%200%203%200%201%202h-2l-1%201c0%201%204%202%205%201s2%200%205%201c5%204%207%204%2018-2a553%20553%200%200%201%2016-11v-2c4-3%209-3%2018-2%2011%201%2014%203%2019%208%204%204%206%208%203%205l-3-1h-3l-1%201v1l-3%201c-5%202-7%202-7%201%201-1%200-1-1-1-2%200-2%200%200-1%201-2%201-2-1-2-1%200-2%200-1-1l-1-2v1h-4l2%201%201%201h-4l-1%201-1-1-1-1v1c1%202%201%203-1%203v-1l-1-2c-3-3-3%200-1%204l2%204h11l11-1c2-2%2010-2%2013-1%203%202%207%202%2023%202h19V0H0v70M132%206c-5%203-12%209-12%2011l1%201v7c-1%202-1%202-1-2v-5l-2%204c-3%2011-1%2032%203%2037%204%204%205%203%203-3-2-3-2-5-1-7%201-1%201%200%203%206l1%207c-2%200-1%202%201%204s3%203%203%201c-1-1%200-1%201-1l6-2c3%200%2011-8%2011-11l-1-9v-1l1-4c0-2%200-2%201-1%202%201%202%200%203-2s1-3%203-3c1%201%201%200%201-3l1-7%201%2021%201%208%203-13%201-2%203-1c2-2%202-2-2-7l-6-9c0-2-4-6-7-10-8-7-13-9-20-4m69%2062c-1%201-1%201%200%200l1%201v1c4%200%204%203-2%2014l-6%2012-6-2c-5-2-6-3-6-1v3c-2%201-1%202%205%203%206%202%206%202%204%204l-1%205-1%206c-3%204-2%205%201%204%204-3%206-6%204-8h1c2%200%203%200%203-3%201-4%201-4%207%200%207%204%207%204%206%201l1-3c3-1%202-3-4-4l-6-2%204-10c3-12%204-14%201-14-1-1%200-1%201-1l3-1%202-1v-2c-2-1-2-2-1-2v-1h-2l-3%201-2%201-1-1c-1-2-3-3-3%200m-82%201-6%201c-9%200-15%2016-8%2021%206%203%2014-4%2014-13%200-6%201-7%203-3%203%203%205%203%204-1%200-5-4-7-7-5m-16%2029c0%206%200%206%202%206s2%200%200%201l-1%201%202%201h-1l-2%201%203%201h2l-3%201c-2%200-3%202%200%202v1c-2%201-2%201%201%201%202%200%202%200%201%201-3%200-5%202-3%202l1%201h2c3%200%203%200%202%201l-2%201h2v2l-1%201h-1v1l8-1%202-1%203-2-2-1c-1%201-1%201%200%200l1-2%201-3v-1h-2l2-1v-1c-1%200-2-1-1-2l-1-2v-2l-1-1h-1l-1-3c-3%201-8%200-7-1%201%200%201-1-1-4l-2-3-1-1-1%206'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/b10a3280ad103de8c406b05398215e03/ee463/the-seventh-seal-1957.avif 62w,/static/b10a3280ad103de8c406b05398215e03/eaf25/the-seventh-seal-1957.avif 124w,/static/b10a3280ad103de8c406b05398215e03/6297a/the-seventh-seal-1957.avif 248w,/static/b10a3280ad103de8c406b05398215e03/c0abc/the-seventh-seal-1957.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from The Seventh Seal (1957)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/b10a3280ad103de8c406b05398215e03/ced04/the-seventh-seal-1957.jpg"
-                                  data-srcset="/static/b10a3280ad103de8c406b05398215e03/41793/the-seventh-seal-1957.jpg 62w,/static/b10a3280ad103de8c406b05398215e03/6a789/the-seventh-seal-1957.jpg 124w,/static/b10a3280ad103de8c406b05398215e03/ced04/the-seventh-seal-1957.jpg 248w,/static/b10a3280ad103de8c406b05398215e03/9025e/the-seventh-seal-1957.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/the-seventh-seal-1957/"
-                          >
-                            The Seventh Seal 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              1957
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="B+: 4 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/4-stars.svg"
-                          />
-                        </div>
-                      </li>
-                      <li
-                        class="RelatedMovies_listItemGridStyle__ybjqoi6"
-                      >
-                        <div
-                          class="RelatedMovies_listItemGridAreas_still__ybjqoi9"
-                        >
-                          <a
-                            class="RelatedMovies_stillStyle__ybjqoi1"
-                            href="/reviews/shadow-of-the-law-1930/"
-                          >
-                            <div
-                              class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                              data-gatsby-image-wrapper=""
-                              style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                            >
-                              <div
-                                style="max-width: 248px; display: block;"
-                              >
-                                <img
-                                  alt=""
-                                  aria-hidden="true"
-                                  role="presentation"
-                                  src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                                  style="max-width: 100%; display: block; position: static;"
-                                />
-                              </div>
-                              <img
-                                alt=""
-                                aria-hidden="true"
-                                data-placeholder-image=""
-                                decoding="async"
-                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='248'%20height='139'%20viewBox='0%200%20248%20139'%20preserveAspectRatio='none'%3e%3cpath%20d='m13%202-1%201-2%203-1%202c-1%200-2%204%200%205l-1%202c-1%201-1%202%201%204%201%201%203%202%204%201l1%201%202%201%201%201c0%201%2014%201%2017-1l6-1%205-1%203%201-1%201h-3l-3%201-3%201%2014-1v-2l-1-1c0-2-1-3-2-3l-5-2c1-1%208%201%208%203%201%201%201-1%201-3%200-4%200-5-2-5l-1-2%201-5-7-1-6-2c-5%200-5%200-4%203l-1%205-2%203%202%201c3%200%203%201-1%203l-3%202L18%206l-1-3c-2-3-4-4-4-1m94%205c0%207%200%208-2%2011s-3%206-1%2010c1%203%204%205%205%203h3c2%200%204-3%204-5-1-1%200-2%201-2%203-1%202-8-1-9h-4l-4-1V0c-2%200-2%202-1%207m23%200c2%2022%202%2025%200%2031-1%205-2%206-2%204-1-1-1%201-1%205v11c0%203-1%201-1-8-1-16-2-22-3-22l-1%202-1%205%201%205%202%206%201%2020c2%207%202%209%201%209-4%202%200%207%204%207h3l2%2010a489%20489%200%200%200%203%2033l-2-2-4-1c-2%200-2%200-1%203v3l-1%202-1%202c-2%201-3%203-1%203l1%202v2h58l2-7%202-6h-5c-6%200-7-1-3-12l6-11c2-3%200-29-2-31l-5-10h1c1%201%202-1%204-9l1-5-1-2-2-1c-1-1-1-1-2%202v3l-1-3-1-10v-8l-1%207c-1%206-1%206-1-4%200-7%200-10%201-8s1%202%201-2V9l1-8-14-1h-14v4l2%207c2%204%202%2011-1%2016-1%203-6%205-8%203-2-1-4-1-7%201l-2%201-1-16V0h-7v7m79%206v18c0%203%200%204%202%204l2-1%201-6%201%204c0%203%201%204%202%205h2l1%203c2%202%202%202%202-6%200-5%200-8%201-7l1%202%201%201-1%202v9c0%209%201%2016%203%2016v5c0%205-2%206-9%208h-4l2%203%202%2014c1%2010%202%2013%205%2020l3%208%2011%201%2011%201a1555%201555%200%200%200-1-59l-2-2-8-1h-9l-1-25c0-21-1-25-2-26V1l-2-1a692%20692%200%200%200-2%205c0-5%200-5-3-5-3%201-3%200-3%2013l-1%209V0h-5v13M83%204c-4%203-5%206-3%2011l2%203%201-3c1-3%202-3%204-3%203%201%206-2%206-5l2-3-1-2c-3-2-8-1-11%202m-8%2020-6%203c-6%203-8%205-9%2014l-2%209c-3%206-2%2016%202%2016%203%200%203%202%202%204l-2%207-1%208c-1%203%200%207%202%207l1%203-1%202v2c2%201%202%204%202%2014l1%2018c0%205%200%205-3%206-2%202-1%202%2016%202h19l1-3v-6l-1-6v-5l-1-4v-7l1-7%201-12c0-5%201-7%202-8v-1c-2-1-2-2-2-5l1-4%201-1c1-2%202-2%204-2%203%200%205-1%205-2l-2-1c-1%201-2%200-3-2s-1-2%201-2h2c0-3-5-2-7%200l-7%202c-4%200-5%200-5%202-1%204-4%201-4-5l1-3h3c4-1%204-2%201-12l-4-13c-2-4-2-4%200-4l2%201%202%201c2%200%204%206%205%2015%201%208%202%2010%206%207%202-2%202-2-1-7-4-5-7-13-7-16%200-2%200-2-1-1s-3%200-7-3c-6-4-5-3-8-1m72%2010-1%201a505%20505%200%200%201%202%2022l4-19-2-4h-3M1%2065c0%2016%200%2019%202%2019%201%201%202-1%201-3l3-2%204-1H4l1-5%202-7c1-2%201-2-1-2s-2%200-2-3v-3l-2-6c-1-5-1-3-1%2013m226%2052c0%201%201%203%205%204l3%202h-3c-2%200-3%200-2%202%201%203%202%204%2010%204%2010%201%2010%200%203-3l-5-3h10l1-2-1-2-8-1a147%20147%200%200%201-13-1m1%2016c2%205%204%205%2012%206l8-1-5-1h-4l4-1c8-2%207-3-2-4l-9-1c-4%200-4%200-4%202'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-                                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                              />
-                              <picture>
-                                <source
-                                  data-srcset="/static/5b702d796b15de0dc34ae1279332347e/ee463/shadow-of-the-law-1930.avif 62w,/static/5b702d796b15de0dc34ae1279332347e/eaf25/shadow-of-the-law-1930.avif 124w,/static/5b702d796b15de0dc34ae1279332347e/6297a/shadow-of-the-law-1930.avif 248w,/static/5b702d796b15de0dc34ae1279332347e/c0abc/shadow-of-the-law-1930.avif 496w"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  type="image/avif"
-                                />
-                                <img
-                                  alt="A still from Shadow of the Law (1930)"
-                                  data-gatsby-image-ssr=""
-                                  data-main-image=""
-                                  data-src="/static/5b702d796b15de0dc34ae1279332347e/ced04/shadow-of-the-law-1930.jpg"
-                                  data-srcset="/static/5b702d796b15de0dc34ae1279332347e/41793/shadow-of-the-law-1930.jpg 62w,/static/5b702d796b15de0dc34ae1279332347e/6a789/shadow-of-the-law-1930.jpg 124w,/static/5b702d796b15de0dc34ae1279332347e/ced04/shadow-of-the-law-1930.jpg 248w,/static/5b702d796b15de0dc34ae1279332347e/9025e/shadow-of-the-law-1930.jpg 496w"
-                                  decoding="async"
-                                  loading="lazy"
-                                  sizes="(min-width: 248px) 248px, 100vw"
-                                  style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                                />
-                              </picture>
-                              <noscript />
-                              <script
-                                type="module"
-                              >
-                                const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                              </script>
-                            </div>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_title__ybjqoi7"
-                        >
-                          <a
-                            class="sprinkles_fontSize_medium_mobile__8lcvdk3t sprinkles_textDecoration_none__8lcvdk14 sprinkles_color_default__8lcvdk6 sprinkles_lineHeight_24_mobile__8lcvdk4p sprinkles_display_block_mobile__8lcvdk19"
-                            href="/reviews/shadow-of-the-law-1930/"
-                          >
-                            Shadow of the Law 
-                            <span
-                              class="sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_fontWeight_light__8lcvdkx sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_1_mobile__8lcvdk4d"
-                            >
-                              1930
-                            </span>
-                          </a>
-                        </div>
-                        <div
-                          class="RelatedMovies_listItemGridAreas_grade__ybjqoi8"
-                        >
-                          <img
-                            alt="C+: 3 stars (out of 5)"
-                            class="RelatedMovies_gradeStyle__ybjqoi0 sprinkles_width_96_mobile__8lcvdkll"
-                            src="/svg/3-stars.svg"
-                          />
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </main>
-          <script
-            type="application/ld+json"
-          >
-            {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"The Seventh Continent","sameAs":"http://www.imdb.com/title/tt0098327/","image":"/static/7b341f916a362be7ba7e9c56a2c70e75/8c3c2/the-seventh-continent-1989.jpg","dateCreated":1989,"director":{"@type":"Person","name":"Michael Haneke"}},"reviewRating":{"@type":"Rating","ratingValue":5}}
-          </script>
-        </div>
-      </div>
-    </div>
-    <footer
-      class="Footer_gridStyle__nu7w5t0 sprinkles_color_inverse__8lcvdka sprinkles_backgroundImage_ripNotComingSoon__8lcvdk17"
-    >
-      <div
-        class="Footer_gridAreas_nav__nu7w5t2"
-      >
-        <nav>
-          <ul
-            class="Nav_listVariants_footer__mkdjqm8 Nav_listBaseStyles__mkdjqm2"
-          >
-            <li
-              class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
-            >
-              <a
-                class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
-            >
-              <a
-                class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
-                href="/about/"
-              >
-                About
-              </a>
-            </li>
-            <li
-              class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
-            >
-              <a
-                class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
-            >
-              <a
-                class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
-            >
-              <a
-                class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
-                href="/stats/"
-              >
-                Stats
-              </a>
-            </li>
-            <li
-              class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
-            >
-              <a
-                class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
-                href="/watchlist/"
-              >
-                Watchlist
+                Michael Haneke
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
-      <div
-        class="Footer_gridAreas_fairUse__nu7w5t1"
-      >
-        <p
-          class="sprinkles_fontWeight_light__8lcvdkx sprinkles_fontSize_small_mobile__8lcvdk3l sprinkles_lineHeight_16_mobile__8lcvdk4l"
-        >
-          All stills used in accordance with the 
           <a
-            class="sprinkles_color_inherit__8lcvdkb sprinkles_textDecoration_none__8lcvdk14"
-            href="http://www.copyright.gov/title17/92chap1.html#107"
+            class="Credits_backToTopContainerStyle__1m1qj361"
+            href="#top"
           >
-            Fair Use Law.
+            <div
+              class="Credits_backToTopInnerStyle__1m1qj362"
+            >
+              <svg
+                class="Credits_backToTopArrowStyle__1m1qj363"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"
+                />
+              </svg>
+            </div>
           </a>
-        </p>
-      </div>
+        </aside>
+        <div
+          class="sprinkles_marginTop_128__8lcvdk1k sprinkles_display_flex__8lcvdk2 sprinkles_flexDirection_column_mobile__8lcvdk2o sprinkles_rowGap_48__8lcvdk1e"
+        >
+          <nav
+            class="RelatedMovies_gridStyle__ybjqoi2"
+          >
+            <div
+              class="RelatedMovies_gridAreas_heading__ybjqoi3 sprinkles_boxShadow_borderBottom__8lcvdk2h"
+            >
+              <header
+                class="sprinkles_paddingTop_8_mobile__8lcvdk34 sprinkles_paddingBottom_8_mobile__8lcvdk3g sprinkles_display_block__8lcvdk0 sprinkles_lineHeight_40__8lcvdk23"
+              >
+                <h3
+                  class="sprinkles_fontWeight_normal__8lcvdk1m sprinkles_fontSize_18__8lcvdk1t sprinkles_color_muted__8lcvdke"
+                >
+                  More directed by 
+                  <a
+                    class="sprinkles_color_accent__8lcvdkc sprinkles_textDecoration_none__8lcvdk29 sprinkles_display_inline-flex__8lcvdk3 sprinkles_columnGap_.5ch_mobile__8lcvdk3s"
+                    href="/watchlist/directors/michael-haneke/"
+                  >
+                    Michael Haneke
+                  </a>
+                </h3>
+              </header>
+            </div>
+            <div
+              class="RelatedMovies_gridAreas_list__ybjqoi4"
+            >
+              <ul
+                class="RelatedMovies_movieListStyle__ybjqoi1"
+              >
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/bennys-video-1992/"
+                    >
+                      <div
+                        alt="A still from Benny's Video (1992)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/bennys-video-1992/"
+                    >
+                      Benny's Video 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        1992
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="A-: 5 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/5-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/71-fragments-of-a-chronology-of-chance-1994/"
+                    >
+                      <div
+                        alt="A still from 71 Fragments of a Chronology of Chance (1994)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/71-fragments-of-a-chronology-of-chance-1994/"
+                    >
+                      71 Fragments of a Chronology of Chance 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        1994
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/funny-games-1997/"
+                    >
+                      <div
+                        alt="A still from Funny Games (1997)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/funny-games-1997/"
+                    >
+                      Funny Games 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        1997
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="A: 5 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/5-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/code-unknown-2000/"
+                    >
+                      <div
+                        alt="A still from Code Unknown (2000)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/code-unknown-2000/"
+                    >
+                      Code Unknown 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        2000
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="B+: 4 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+          <nav
+            class="RelatedMovies_gridStyle__ybjqoi2"
+          >
+            <div
+              class="RelatedMovies_gridAreas_heading__ybjqoi3 sprinkles_boxShadow_borderBottom__8lcvdk2h"
+            >
+              <header
+                class="sprinkles_paddingTop_8_mobile__8lcvdk34 sprinkles_paddingBottom_8_mobile__8lcvdk3g sprinkles_display_block__8lcvdk0 sprinkles_lineHeight_40__8lcvdk23"
+              >
+                <h3
+                  class="sprinkles_fontWeight_normal__8lcvdk1m sprinkles_fontSize_18__8lcvdk1t sprinkles_color_muted__8lcvdke"
+                >
+                  More 
+                  <a
+                    class="sprinkles_color_accent__8lcvdkc sprinkles_textDecoration_none__8lcvdk29 sprinkles_display_inline-flex__8lcvdk3 sprinkles_columnGap_.5ch_mobile__8lcvdk3s"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </h3>
+              </header>
+            </div>
+            <div
+              class="RelatedMovies_gridAreas_list__ybjqoi4"
+            >
+              <ul
+                class="RelatedMovies_movieListStyle__ybjqoi1"
+              >
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/seed-of-chucky-2004/"
+                    >
+                      <div
+                        alt="A still from Seed of Chucky (2004)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/seed-of-chucky-2004/"
+                    >
+                      Seed of Chucky 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        2004
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/service-de-luxe-1938/"
+                    >
+                      <div
+                        alt="A still from Service de Luxe (1938)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/service-de-luxe-1938/"
+                    >
+                      Service de Luxe 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        1938
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="C-: 3 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/the-seventh-seal-1957/"
+                    >
+                      <div
+                        alt="A still from The Seventh Seal (1957)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/the-seventh-seal-1957/"
+                    >
+                      The Seventh Seal 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        1957
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="B+: 4 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="RelatedMovie_gridStyle__1997ilm2"
+                >
+                  <div
+                    class="RelatedMovie_gridAreas_still__1997ilm5"
+                  >
+                    <a
+                      class="RelatedMovie_stillStyle__1997ilm1"
+                      href="/reviews/shadow-of-the-law-1930/"
+                    >
+                      <div
+                        alt="A still from Shadow of the Law (1930)"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_title__1997ilm3"
+                  >
+                    <a
+                      class="sprinkles_fontSize_18__8lcvdk1t sprinkles_textDecoration_none__8lcvdk29 sprinkles_color_default__8lcvdkd sprinkles_lineHeight_24__8lcvdk21 sprinkles_display_block__8lcvdk0"
+                      href="/reviews/shadow-of-the-law-1930/"
+                    >
+                      Shadow of the Law 
+                      <span
+                        class="sprinkles_fontSize_14__8lcvdk1r sprinkles_fontWeight_light__8lcvdk1l sprinkles_color_muted__8lcvdke sprinkles_lineHeight_1__8lcvdk1y"
+                      >
+                        1930
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="RelatedMovie_gridAreas_grade__1997ilm4"
+                  >
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="RelatedMovie_gradeStyle__1997ilm0"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </main>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"http://schema.org","@type":"Review","itemReviewed":{"@type":"Movie","name":"The Seventh Continent","sameAs":"http://www.imdb.com/title/tt0098327/","image":"/static/7b341f916a362be7ba7e9c56a2c70e75/8c3c2/the-seventh-continent-1989.jpg","dateCreated":1989,"director":{"@type":"Person","name":"Michael Haneke"}},"reviewRating":{"@type":"Rating","ratingValue":5}}
+      </script>
+    </div>
+    <footer
+      class="sprinkles_paddingLeft_gutter__8lcvdk2a sprinkles_paddingRight_gutter__8lcvdk2b sprinkles_paddingTop_32_mobile__8lcvdk38 sprinkles_paddingBottom_32_mobile__8lcvdk3k sprinkles_color_inverse__8lcvdkh sprinkles_display_flex__8lcvdk2 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2i sprinkles_rowGap_24__8lcvdk1c sprinkles_alignItems_center__8lcvdk17 sprinkles_flexDirection_column_mobile__8lcvdk2o"
+    >
+      <nav>
+        <ul
+          class="Nav_listVariants_footer__mkdjqm8 Nav_listBaseStyles__mkdjqm2"
+        >
+          <li
+            class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
+              href="/about/"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
+              href="/stats/"
+            >
+              Stats
+            </a>
+          </li>
+          <li
+            class="Nav_listItemVariants_footer__mkdjqma Nav_listItemBaseStyles__mkdjqm1"
+          >
+            <a
+              class="Nav_linkVariants_footer__mkdjqm6 Nav_linkBaseStyles__mkdjqm0"
+              href="/watchlist/"
+            >
+              Watchlist
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p
+        class="sprinkles_fontWeight_light__8lcvdk1l sprinkles_fontSize_14__8lcvdk1r sprinkles_lineHeight_16__8lcvdk20"
+      >
+        All stills used in accordance with the 
+        <a
+          class="sprinkles_color_inherit__8lcvdki sprinkles_textDecoration_none__8lcvdk29"
+          href="http://www.copyright.gov/title17/92chap1.html#107"
+        >
+          Fair Use Law.
+        </a>
+      </p>
       <a
         class="Box_screenReaderOnlyStyle__1isqo402"
         href="#top"

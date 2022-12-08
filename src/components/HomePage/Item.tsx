@@ -1,49 +1,106 @@
 import toSentenceArray from "../../utils/to-sentence-array";
+import { Box, IBoxProps } from "../Box";
 import { DateIcon } from "../DateIcon";
 import { Grade } from "../Grade";
+import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
 import { RenderedMarkdown } from "../RenderedMarkdown";
 import { Still } from "../Still";
+import {
+  excerptContinueReadingLinkStyle,
+  gridAreas,
+  gridStyle,
+  stillBorderStyle,
+} from "./Item.css";
+
+const GridArea = gridAreaComponent(gridAreas);
+
+const Grid = gridComponent(gridStyle);
+
+interface IItemProps extends IBoxProps {
+  viewing: Queries.HomePageQuery["viewings"][0];
+  counterValue: number;
+  eagerLoadImage: boolean;
+}
 
 export default function Item({
   viewing,
   counterValue,
   eagerLoadImage,
-}: {
-  viewing: Queries.HomePageQuery["viewings"][0];
-  counterValue: number;
-  eagerLoadImage: boolean;
-}) {
+}: IItemProps) {
   return (
-    <li key={viewing.sequence} value={counterValue}>
-      <article>
-        <Link rel="canonical" to={`/reviews/${viewing.slug}/`}>
-          <Still
-            title={viewing.title}
-            year={viewing.year}
-            image={viewing.backdrop}
-            loading={eagerLoadImage ? "eager" : "lazy"}
-          />
-        </Link>
-        <header>
-          <h2>
-            <Link to={`/reviews/${viewing.slug}/`} rel="canonical">
-              {viewing.title} <span>{viewing.year}</span>
+    <Box as="li" value={counterValue} display="block" backgroundColor="zebra">
+      <Grid as="article" paddingX="gutter">
+        <GridArea name="still" maxWidth="prose">
+          <Link rel="canonical" to={`/reviews/${viewing.slug}/`}>
+            <Still
+              title={viewing.title}
+              year={viewing.year}
+              image={viewing.still}
+              loading={eagerLoadImage ? "eager" : "lazy"}
+              className={stillBorderStyle}
+            />
+          </Link>
+        </GridArea>
+        <GridArea
+          name="excerpt"
+          display="flex"
+          rowGap={24}
+          flexDirection="column"
+          maxWidth="prose"
+        >
+          <Box as="h2" fontWeight="bold" fontSize={26} lineHeight={32}>
+            <Link
+              to={`/reviews/${viewing.slug}/`}
+              rel="canonical"
+              textDecoration="none"
+              color="default"
+            >
+              {viewing.title}{" "}
+              <Box
+                as="span"
+                color="subtle"
+                display="inline-block"
+                fontSize={16}
+                fontWeight="light"
+                lineHeight={1}
+              >
+                {viewing.year}
+              </Box>
             </Link>
-          </h2>
-          <Grade grade={viewing.grade} width={140} height={28} />
-          <p>
+          </Box>
+          <Grade grade={viewing.grade} width={160} height={32} />
+          <Box
+            as="p"
+            fontSize={16}
+            fontWeight="normal"
+            color="subtle"
+            letterSpacing={0.25}
+            lineHeight="default"
+          >
             Directed by {toSentenceArray(viewing.directorNames)}. Starring{" "}
             {toSentenceArray(viewing.principalCastNames)}.
-          </p>
-        </header>
-        <RenderedMarkdown text={viewing.excerpt} tag="main" />
-        <footer>
-          <div>
+          </Box>
+          <RenderedMarkdown
+            text={viewing.excerpt}
+            className={excerptContinueReadingLinkStyle}
+          />
+        </GridArea>
+        <GridArea name="date">
+          <Box
+            display="flex"
+            fontSize={14}
+            fontWeight="light"
+            letterSpacing={0.25}
+            whiteSpace="nowrap"
+            color="subtle"
+            lineHeight={32}
+            alignItems="center"
+          >
             <DateIcon /> {viewing.date}
-          </div>
-        </footer>
-      </article>
-    </li>
+          </Box>
+        </GridArea>
+      </Grid>
+    </Box>
   );
 }

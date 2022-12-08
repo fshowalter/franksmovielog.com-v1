@@ -1,28 +1,31 @@
 import composeClassNames from "../../utils/composeClassNames";
+import { Box, IBoxProps } from "../Box";
 import { renderedMarkdownStyle } from "./RenderedMarkdown.css";
 
+interface IRenderedMarkdownProps extends IBoxProps {
+  text: string | null;
+}
+
 export function RenderedMarkdown({
-  text,
   className,
-  tag,
-}: {
-  text?: string | null;
-  className?: string;
-  tag?: keyof JSX.IntrinsicElements;
-}): JSX.Element | null {
+  text,
+  ...rest
+}: IRenderedMarkdownProps): JSX.Element | null {
   if (!text) {
     return null;
   }
 
-  const Tag = tag || "div";
-
   return (
-    <Tag
+    <Box
+      fontWeight="light"
+      letterSpacing={0.3}
+      fontSize={19}
       className={composeClassNames(renderedMarkdownStyle, className)}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: text,
       }}
+      {...rest}
     />
   );
 }

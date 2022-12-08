@@ -13,7 +13,7 @@ import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gridStyle = style({
   display: "grid",
-  boxShadow: `0px -1px ${borderColors.default}`,
+  // boxShadow: `0px -1px ${borderColors.default}`,
   maxWidth: MAX_CONTENT_WIDTH_WITH_GUTTERS,
   margin: "0 auto",
   ...gridTemplate<GridAreas, 3>({
