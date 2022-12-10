@@ -1,9 +1,9 @@
 import { graphql } from "gatsby";
 import { useRef } from "react";
 import { Box } from "../Box";
-import Layout from "../Layout";
-import Item from "./Item";
-import Pagination from "./Pagination";
+import { Layout } from "../Layout";
+import { Item } from "./Item";
+import { Pagination } from "./Pagination";
 
 export interface PageContext {
   limit: number;
@@ -26,7 +26,7 @@ export default function HomePage({
 
   return (
     <Layout>
-      <Box as="main" ref={listHeader}>
+      <Box as="main" innerRef={listHeader}>
         <Box as="ol" display="flex" flexDirection="column" padding={0}>
           {viewings.map((viewing, index) => {
             return (

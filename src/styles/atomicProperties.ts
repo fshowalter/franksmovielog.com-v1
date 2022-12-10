@@ -1,17 +1,21 @@
+import { minMediaQuery } from "./breakpoints";
 import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
 import {
-  GUTTER,
   MAX_POSTER_WIDTH,
   PROSE_CONTENT_WIDTH,
   PROSE_CONTENT_WIDTH_WITH_GUTTERS,
   relativeSize,
   size,
 } from "./sizes";
-import { fontWeights, letterSpacing, lineHeights } from "./typography.css";
+import {
+  fontSizes,
+  fontWeights,
+  letterSpacing,
+  lineHeights,
+} from "./typography.css";
 
 export const atomicProperties = {
   display: ["block", "none", "flex", "inline-flex", "inline-block"],
-  position: ["relative"],
   backgroundColor: {
     ...backgroundColors,
     zebra: {
@@ -22,6 +26,7 @@ export const atomicProperties = {
       },
     },
   },
+  borderRadius: size,
   color: foregroundColors,
   padding: size,
   whiteSpace: ["nowrap"],
@@ -31,37 +36,75 @@ export const atomicProperties = {
   flexWrap: ["wrap"],
   fontStyle: ["italic"],
   justifyItems: ["center", "inherit"],
-  alignItems: ["center", "inherit", "flex-start"],
-  rowGap: [8, 16, 24, 32, 48, 64, 96],
-  minHeight: {
-    16: "16px",
-  },
+  alignItems: ["center", "inherit", "flex-start", "baseline"],
+  rowGap: [4, 8, 16, 24, 32, 48, 64, 96],
+  minHeight: size,
+  height: size,
   marginTop: [48, 64, 128],
   fontWeight: fontWeights,
-  fontSize: relativeSize,
+  transform: {
+    safariBorderRadiusFix: {
+      transform: "translateZ(0)",
+    },
+  },
+  fontSize: {
+    ...relativeSize,
+    ...fontSizes,
+    label: {
+      fontSize: "0.875rem",
+      lineHeight: 1,
+    },
+    xSmall: {
+      fontSize: "0.75rem",
+      lineHeight: 1,
+    },
+    legend: {
+      fontSize: "1.125rem",
+      lineHeight: "1.5rem",
+    },
+    groupHeading: {
+      fontSize: "1.125rem",
+      lineHeight: "1.5rem",
+    },
+    posterTitle: {
+      fontSize: "1rem",
+      lineHeight: "1.25rem",
+    },
+    posterSlug: {
+      fontSize: "0.75rem",
+      lineHeight: "1rem",
+    },
+    pageTitle: {
+      fontSize: "2rem",
+      fontWeight: "normal",
+      lineHeight: 1,
+
+      "@media": {
+        [minMediaQuery("desktop")]: {
+          fontSize: "2.25rem",
+        },
+      },
+    },
+  },
   lineHeight: lineHeights,
   letterSpacing: letterSpacing,
   textDecoration: ["none"],
-  paddingLeft: {
-    gutter: GUTTER,
-  },
-  paddingRight: {
-    gutter: GUTTER,
-  },
   maxWidth: {
+    512: "512px",
     prose: PROSE_CONTENT_WIDTH,
     proseWithGutters: PROSE_CONTENT_WIDTH_WITH_GUTTERS,
     poster: MAX_POSTER_WIDTH,
   },
-  width: {
-    px: "1px",
-    full: "100%",
-  },
+  minWidth: size,
   boxShadow: {
     borderBottom: {
       boxShadow: `0px 1px ${borderColors.default}`,
     },
+    borderAll: {
+      boxShadow: `0 0 0 1px ${borderColors.default}`,
+    },
   },
+  border: [0],
   backgroundImage: {
     ripNotComingSoon: {
       backgroundImage: `url("/assets/ripnotcomingsoon.jpg")`,
@@ -74,4 +117,10 @@ export const atomicProperties = {
   },
   backgroundRepeat: ["repeat-x", "repeat"],
   backgroundPositionY: [16],
+  justifyContent: ["space-between", "center", "flex-end"],
+  textAlign: ["left", "center", "inherit"],
+
+  columnGap: [".5ch", 8, 16, 24, 32, 64],
+  flexBasis: size,
+  flexShrink: [0],
 } as const;

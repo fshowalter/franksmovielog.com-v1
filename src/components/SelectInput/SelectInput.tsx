@@ -1,24 +1,29 @@
 import React, { ChangeEvent } from "react";
-import { selectInputCss } from "./SelectInput.module.scss";
+import { Box, IBoxProps } from "../Box";
+import { inputSyle } from "./SelectInput.css";
 
-export default function SelectInput({
-  value,
-  onChange,
-  children,
-  className,
-}: {
+interface ISelectInputProps extends IBoxProps {
   value?: string | number;
   children: React.ReactNode;
   onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
   className?: string;
-}): JSX.Element {
+}
+
+export function SelectInput({
+  value,
+  onChange,
+  children,
+  ...rest
+}: ISelectInputProps): JSX.Element {
   return (
-    <select
+    <Box
+      as="select"
       value={value}
-      className={[selectInputCss, className].join(" ")}
+      className={inputSyle}
       onChange={onChange}
+      {...rest}
     >
       {children}
-    </select>
+    </Box>
   );
 }

@@ -4,19 +4,19 @@ import {
   GatsbyResolveArgs,
   GatsbyResolveInfo,
 } from "../type-definitions";
-import findReviewedMovieNode from "../utils/findReviewedMovieNode";
 import resolveFieldForNode from "../utils/resolveFieldForNode";
+import { findReviewedMovieNode } from "./reviewedMovieResolver";
 
 export default {
   type: "File!",
   resolve: async (
-    source: { imdb_id: string },
+    source: { imdbId: string },
     args: GatsbyResolveArgs,
     context: GatsbyNodeContext,
     info: GatsbyResolveInfo
   ) => {
     const reviewedMovie = await findReviewedMovieNode(
-      source.imdb_id,
+      source.imdbId,
       context.nodeModel
     );
 

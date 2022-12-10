@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
-import { PageTitle } from "../PageTitle";
 
 interface IHeaderProps extends IBoxProps {
   movie: Queries.ReviewTitleFragment;
@@ -53,7 +52,9 @@ export function Title({ movie, ...rest }: IHeaderProps) {
       rowGap={16}
     >
       <Box textAlign="inherit">
-        <PageTitle>{movie.title}</PageTitle>
+        <Box as="h1" fontSize="pageTitle">
+          {movie.title}
+        </Box>
         <OriginalTitle originalTitle={movie.originalTitle} />
       </Box>
       <Details movie={movie} />

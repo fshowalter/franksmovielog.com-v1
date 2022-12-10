@@ -7,7 +7,7 @@ import {
 } from "@gatsbyjs/reach-router";
 import { render } from "@testing-library/react";
 import { useStaticQuery } from "gatsby";
-import HeadBuilder from "./HeadBuilder";
+import { HeadBuilder } from "./HeadBuilder";
 
 const source = createMemorySource("test");
 const history = createHistory(source);

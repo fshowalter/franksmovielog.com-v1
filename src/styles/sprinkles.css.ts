@@ -1,31 +1,39 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { atomicProperties } from "./atomicProperties";
 import { minMediaQuery } from "./breakpoints";
+import { GUTTER, size } from "./sizes";
 
 const unresponsiveAtomicProperties = defineProperties({
   properties: atomicProperties,
-  shorthands: {
-    paddingX: [`paddingLeft`, `paddingRight`],
-  },
 });
 
 const responsiveAtomicProperties = defineProperties({
-  defaultCondition: `mobile`,
+  defaultCondition: `default`,
   conditions: {
-    mobile: {},
+    default: {},
     desktop: {
       "@media": minMediaQuery("desktop"),
     },
   },
   properties: {
-    flexDirection: ["row", "column", "row-reverse"],
-    justifyContent: ["space-between", "center", "flex-end"],
-    textAlign: ["left", "center", "inherit"],
-    paddingTop: [8, 24, 32, 40, 48, 128],
-    paddingBottom: [8, 24, 32, 40, 48, 128],
-    columnGap: [".5ch", 24, 32, 64],
+    display: ["block", "none", "flex", "inline-flex", "inline-block"],
+    flexDirection: ["row", "column"],
+    paddingBottom: [0, 8, 24, 32, 40, 48, 128],
+    paddingLeft: {
+      ...size,
+      gutter: GUTTER,
+    },
+    paddingRight: {
+      ...size,
+      gutter: GUTTER,
+    },
+    paddingTop: [0, 8, 16, 24, 32, 40, 48, 128],
+    position: ["relative", "sticky"],
+    top: size,
+    width: size,
   },
   shorthands: {
+    paddingX: [`paddingLeft`, `paddingRight`],
     paddingY: [`paddingTop`, `paddingBottom`],
   },
 });

@@ -13,7 +13,6 @@ function SectionHeading({
   leadText,
   boldText,
   linkTarget,
-  avatar,
 }: {
   leadText: string;
   boldText: string;

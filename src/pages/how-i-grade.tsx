@@ -1,7 +1,6 @@
 import { graphql } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
-import ArticlePage from "../components/ArticlePage";
-import HeadBuilder from "../components/HeadBuilder";
+import { ArticlePage } from "../components/ArticlePage";
+import { HeadBuilder } from "../components/HeadBuilder";
 
 export function Head(): JSX.Element {
   return (
@@ -14,38 +13,26 @@ export function Head(): JSX.Element {
   );
 }
 
-export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
-  const { backdrop, page } = data;
+export default function HowIGradePage({
+  data,
+}: {
+  data: Queries.HowIGradePageQuery;
+}): JSX.Element {
+  const { still, page } = data;
 
   return (
     <ArticlePage
-      image={backdrop.childImageSharp.gatsbyImageData}
+      image={still}
       alt="Empty cinema seats."
-      articleText={page.html}
-      title={page.frontmatter.title}
+      articleText={page?.html}
+      title={page?.frontmatter?.title}
     />
   );
 }
 
-type PageQueryResult = {
-  data: {
-    backdrop: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    page: {
-      html: string;
-      frontmatter: {
-        title: string;
-      };
-    };
-  };
-};
-
 export const pageQuery = graphql`
-  query {
-    backdrop: file(absolutePath: { regex: "/backdrops/how-i-grade.png$/" }) {
+  query HowIGradePage {
+    still: file(absolutePath: { regex: "/stills/how-i-grade.png$/" }) {
       childImageSharp {
         gatsbyImageData(
           layout: CONSTRAINED

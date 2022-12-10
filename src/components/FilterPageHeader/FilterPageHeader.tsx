@@ -1,6 +1,6 @@
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
-import PageTitle from "../PageTitle";
+import { PageTitle } from "../PageTitle";
 import {
   avatarCss,
   breadcrumbCss,

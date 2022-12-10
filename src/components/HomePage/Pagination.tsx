@@ -28,7 +28,7 @@ function onSelectPage(e: ChangeEvent<HTMLSelectElement>) {
   void navigate(`/page-${e.target.value}/`);
 }
 
-export default function Pagination({
+export function Pagination({
   currentPage,
   perPage,
   numberOfItems,

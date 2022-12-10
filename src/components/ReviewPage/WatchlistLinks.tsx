@@ -17,7 +17,7 @@ function WatchlistItem({
     <Box as="li" display="block">
       <Link
         to={to}
-        backgroundColor="subtle"
+        backgroundColor="inverse"
         display="flex"
         alignItems="center"
         whiteSpace="nowrap"

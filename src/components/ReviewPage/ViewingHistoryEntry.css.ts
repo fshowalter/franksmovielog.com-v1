@@ -1,58 +1,18 @@
 import { style, styleVariants } from "@vanilla-extract/css";
-import { GRID, size } from "../../styles/sizes";
+import { size } from "../../styles/sizes";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gridStyle = style({
   display: "grid",
-  ...gridTemplate<GridAreas, 9>({
+  ...gridTemplate<GridAreas, 3>({
     rows: [
       { [size[16]]: SPACER },
-      [
-        SPACER,
-        "icon",
-        SPACER,
-        "date",
-        SPACER,
-        "medium",
-        SPACER,
-        "mediumNotes",
-        SPACER,
-      ],
-      [
-        SPACER,
-        "icon",
-        SPACER,
-        "venue",
-        "venue",
-        "venue",
-        "venue",
-        "venue",
-        SPACER,
-      ],
+      ["icon", SPACER, "date"],
+      ["icon", SPACER, "venue"],
       { [size[16]]: SPACER },
-      [
-        SPACER,
-        SPACER,
-        SPACER,
-        "viewingNote",
-        "viewingNote",
-        "viewingNote",
-        "viewingNote",
-        "viewingNote",
-        SPACER,
-      ],
+      [SPACER, SPACER, "viewingNote"],
     ],
-    columns: [
-      GRID.GUTTER,
-      "16px",
-      "1ch",
-      "auto",
-      ".75ch",
-      "auto",
-      ".5ch",
-      "10fr",
-      GRID.GUTTER,
-    ],
+    columns: ["16px", "1ch", "1fr"],
   }),
 });
 

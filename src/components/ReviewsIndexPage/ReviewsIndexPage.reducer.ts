@@ -149,7 +149,7 @@ interface ShowMoreAction {
   type: ActionTypes.SHOW_MORE;
 }
 
-type Action =
+export type Action =
   | FilterTitleAction
   | FilterReleaseYearAction
   | FilterViewingYearAction
@@ -164,7 +164,7 @@ type Action =
  * @param state The current state.
  * @param action The action to apply.
  */
-export default function reducer(state: State, action: Action): State {
+export function reducer(state: State, action: Action): State {
   // eslint-disable-line consistent-return
   let filters;
   let filteredViewings;

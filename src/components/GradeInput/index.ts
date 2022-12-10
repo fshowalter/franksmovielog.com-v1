@@ -1,3 +1,1 @@
-import GradeInput from "./GradeInput";
-
-export default GradeInput;
+export { GradeInput } from "./GradeInput";

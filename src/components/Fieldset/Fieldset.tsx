@@ -1,17 +1,35 @@
-import React from "react";
-import { fieldsetCss, legendCss, wrapperCss } from "./Fieldset.module.scss";
+import { Box, IBoxProps } from "../Box";
+import {
+  fieldsetCss,
+  legendPaddingStyle,
+  responsiveFlexStyle,
+} from "./Fieldset.css";
 
-export default function Label({
-  legend,
-  children,
-}: {
+interface IFieldSetProps extends IBoxProps {
   legend: string;
-  children: React.ReactNode;
-}): JSX.Element {
+}
+
+export function Fieldset({ legend, children }: IFieldSetProps): JSX.Element {
   return (
-    <fieldset className={fieldsetCss}>
-      <legend className={legendCss}>{legend}</legend>
-      <div className={wrapperCss}>{children}</div>
-    </fieldset>
+    <Box as="fieldset" className={fieldsetCss}>
+      <Box
+        as="legend"
+        textAlign="center"
+        fontSize="legend"
+        className={legendPaddingStyle}
+        backgroundColor="default"
+      >
+        {legend}
+      </Box>
+      <Box
+        display="flex"
+        flexWrap="wrap"
+        justifyContent="space-between"
+        className={responsiveFlexStyle}
+        padding={24}
+      >
+        {children}
+      </Box>
+    </Box>
   );
 }

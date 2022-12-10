@@ -286,7 +286,7 @@ describe("/reviews", () => {
 
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.click(screen.getByText("Show More"));
+    await userEvent.click(screen.getByText("Show More..."));
 
     expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });

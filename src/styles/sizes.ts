@@ -15,7 +15,13 @@ export const size = {
   96: "96px",
   112: "112px",
   128: "128px",
+  256: "256px",
+  320: "320px",
+  384: "384px",
+  512: "512px",
 };
+
+export const HEADER_HEIGHT = 128;
 
 export const GUTTER = "clamp(20px, 4vw, 64px)";
 

@@ -21,9 +21,15 @@ export const bandStickyStyle = style({
   },
 });
 
-export const headerStickyStyle = style({
+export const headerLayoutStyle = style({
+  flexDirection: "column",
+  textAlign: "center",
+
   "@media": {
     [minMediaQuery("desktop")]: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      textAlign: "left",
       position: "sticky",
       top: "16px",
       zIndex: 200,

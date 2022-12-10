@@ -1,5 +1,6 @@
 import { createVar, globalStyle } from "@vanilla-extract/css";
 import { backgroundColors, foregroundColors } from "./colors.css";
+import { size } from "./sizes";
 
 globalStyle(`*, *::before, *::after`, {
   boxSizing: `border-box`,
@@ -14,6 +15,8 @@ globalStyle(`body`, {
   lineHeight: 1.5,
   WebkitFontSmoothing: `antialiased`,
   fontFamily: `"Charter", "Iowan Old Style", "Georgia", "Cambria", "Times New Roman", "Times", "serif"`,
+  fontFeatureSettings: `"kern","liga","clig","calt"`,
+  fontKerning: "normal",
   backgroundColor: backgroundColors.canvas,
   color: foregroundColors.default,
 });
@@ -53,4 +56,17 @@ globalStyle(":root", {
       },
     },
   },
+});
+
+globalStyle(".reactSelect__dropdown-indicator > svg", {
+  color: foregroundColors.accent,
+});
+
+globalStyle(".reactSelect__value-container", {
+  lineHeight: size[24],
+  padding: "7px 31px 7px 15px !important",
+});
+
+globalStyle(".reactSelect__placeholder", {
+  padding: 0,
 });

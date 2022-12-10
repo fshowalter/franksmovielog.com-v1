@@ -1,9 +1,14 @@
 import { Box, IBoxProps } from "../Box";
-import { headingStyle } from "./PageTitle.css";
 
-export function PageTitle({ children }: IBoxProps): JSX.Element {
+export function PageTitle({ children, ...rest }: IBoxProps): JSX.Element {
   return (
-    <Box as="h1" className={headingStyle}>
+    <Box
+      as="h1"
+      paddingY={{ default: 24, desktop: 32 }}
+      fontSize="pageTitle"
+      textAlign="center"
+      {...rest}
+    >
       {children}
     </Box>
   );

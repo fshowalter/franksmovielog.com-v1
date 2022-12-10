@@ -1,24 +1,26 @@
-import React, { ChangeEvent } from "react";
-import SelectInput from "../SelectInput";
-import { labelCss } from "./SelectField.module.scss";
+import { ChangeEvent } from "react";
+import { Box, IBoxProps } from "../Box";
+import { LabelText } from "../LabelText";
+import { SelectInput } from "../SelectInput";
 
-export default function SelectField({
+interface SelectFieldProps extends IBoxProps {
+  label: string;
+  value?: string;
+  onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
+}
+
+export function SelectField({
   label,
   value,
   onChange,
   children,
-}: {
-  label: string;
-  value?: string;
-  children: React.ReactNode;
-  onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
-}): JSX.Element {
+}: SelectFieldProps): JSX.Element {
   return (
-    <label className={labelCss}>
-      {label}
+    <Box as="label" display="flex" flexDirection="column">
+      <LabelText text={label} />
       <SelectInput value={value?.toString()} onChange={onChange}>
         {children}
       </SelectInput>
-    </label>
+    </Box>
   );
 }

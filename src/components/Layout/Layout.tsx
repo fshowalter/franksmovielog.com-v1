@@ -13,11 +13,11 @@ import Footer from "./Footer";
 import Header from "./Header";
 import {
   bandStickyStyle,
-  headerStickyStyle,
+  headerLayoutStyle,
   pageCanvasStyle,
 } from "./Layout.css";
 
-export default function Layout({
+export function Layout({
   children,
 }: {
   children: React.ReactNode;
@@ -41,16 +41,13 @@ export default function Layout({
         flexDirection="column"
       >
         <Header
-          flexDirection={{ mobile: "column", desktop: "row" }}
           rowGap={24}
           paddingX="gutter"
           paddingY={32}
           alignItems="center"
           boxShadow="borderBottom"
           backgroundColor="default"
-          justifyContent={{ desktop: "space-between" }}
-          textAlign={{ mobile: "center", desktop: "left" }}
-          className={headerStickyStyle}
+          className={headerLayoutStyle}
         />
         <Box flexGrow={1}>{children}</Box>
         <Footer

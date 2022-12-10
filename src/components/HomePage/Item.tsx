@@ -23,11 +23,7 @@ interface IItemProps extends IBoxProps {
   eagerLoadImage: boolean;
 }
 
-export default function Item({
-  viewing,
-  counterValue,
-  eagerLoadImage,
-}: IItemProps) {
+export function Item({ viewing, counterValue, eagerLoadImage }: IItemProps) {
   return (
     <Box as="li" value={counterValue} display="block" backgroundColor="zebra">
       <Grid as="article" paddingX="gutter">

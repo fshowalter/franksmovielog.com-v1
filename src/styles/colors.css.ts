@@ -9,12 +9,15 @@ const fgMuted = createVar();
 const fgOnAccent = createVar();
 const fgSubtle = createVar();
 const fgInverse = createVar();
+const fgEmphasis = createVar();
 
 const bgAccent = createVar();
 const bgDefault = createVar();
 const bgCanvas = createVar();
 const bgProgress = createVar();
 const bgSubtle = createVar();
+const bgInverse = createVar();
+const bgStripe = createVar();
 
 export const borderColors = {
   default: borderDefault,
@@ -29,6 +32,7 @@ export const foregroundColors = {
   subtle: fgSubtle,
   inverse: fgInverse,
   inherit: "inherit",
+  emphasis: fgEmphasis,
 };
 
 export const backgroundColors = {
@@ -37,6 +41,8 @@ export const backgroundColors = {
   default: bgDefault,
   progress: bgProgress,
   subtle: bgSubtle,
+  inverse: bgInverse,
+  stripe: bgStripe,
 };
 
 globalStyle(":root", {
@@ -54,6 +60,9 @@ globalStyle(":root", {
     [bgProgress]: "#14bd41",
     [bgSubtle]: "#fafafa",
     [fgInverse]: "rgb(255 255 255 / 75%)",
+    [bgInverse]: "rgb(255 255 255 / 75%)",
+    [fgEmphasis]: "rgb(0 0 0 / 95%)",
+    [bgStripe]: "#f7f5f3",
   },
   "@media": {
     "(prefers-color-scheme: dark)": {
@@ -70,6 +79,9 @@ globalStyle(":root", {
         [bgCanvas]: "#484745",
         [bgProgress]: "#379634",
         [bgSubtle]: "#373434",
+        [bgInverse]: "#322f2f",
+        [fgEmphasis]: "rgb(255 255 255 / 95%)",
+        [bgStripe]: "#48474563",
       },
     },
   },

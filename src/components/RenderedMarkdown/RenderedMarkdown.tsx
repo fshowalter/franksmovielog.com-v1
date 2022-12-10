@@ -3,7 +3,7 @@ import { Box, IBoxProps } from "../Box";
 import { renderedMarkdownStyle } from "./RenderedMarkdown.css";
 
 interface IRenderedMarkdownProps extends IBoxProps {
-  text: string | null;
+  text?: string | null;
 }
 
 export function RenderedMarkdown({

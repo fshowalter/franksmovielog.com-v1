@@ -16,7 +16,7 @@ function Date({
 }) {
   return (
     <>
-      <Box as="span" fontWeight="bold">
+      <Box as="span" color="emphasis" display="inline-block">
         {viewing.date}
       </Box>{" "}
     </>
@@ -32,7 +32,7 @@ function Medium({
     return null;
   }
   return (
-    <Box fontWeight="light" color="muted">
+    <Box as="span" fontWeight="light" color="muted">
       <span>via</span> <span>{viewing.medium}</span>
     </Box>
   );
@@ -47,7 +47,7 @@ function MediumNotes({
     return null;
   }
   return (
-    <Box fontWeight="light" color="subtle">
+    <Box as="span" fontWeight="light" color="subtle">
       (
       <RenderedMarkdown
         // eslint-disable-next-line react/no-danger
@@ -99,18 +99,13 @@ interface IIViewingHistoryItemProps extends IBoxProps {
 
 export function ViewingHistoryEntry({ viewing }: IIViewingHistoryItemProps) {
   return (
-    <Grid backgroundColor="zebra" display="block">
+    <Grid backgroundColor="zebra" display="block" paddingX="gutter">
       <GridArea name="icon">
         <DateIcon />{" "}
       </GridArea>
       <GridArea name="date">
         <Date viewing={viewing} />
-      </GridArea>
-      <GridArea name="medium" color="subtle">
-        <Medium viewing={viewing} />
-      </GridArea>
-      <GridArea name="mediumNotes">
-        <MediumNotes viewing={viewing} />
+        <Medium viewing={viewing} /> <MediumNotes viewing={viewing} />
       </GridArea>
       <GridArea name="venue">
         <Venue viewing={viewing} />

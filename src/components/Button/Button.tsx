@@ -1,16 +1,39 @@
-import React from "react";
-import { buttonCss } from "./Button.module.scss";
+import composeClassNames from "../../utils/composeClassNames";
+import { Box, IBoxProps } from "../Box";
+import { hoverStyle, iconLayoutStyle } from "./Button.css";
 
-export default function Button({
+interface IButtonProps extends IBoxProps {
+  onClick: () => void;
+}
+
+export function Button({
   onClick,
   children,
-}: {
-  children: React.ReactNode;
-  onClick: () => void;
-}): JSX.Element {
+  ...rest
+}: IButtonProps): JSX.Element {
   return (
-    <button type="button" className={buttonCss} onClick={onClick}>
+    <Box
+      as="button"
+      type="button"
+      onClick={onClick}
+      backgroundColor="subtle"
+      borderRadius={24}
+      fontSize="normal"
+      whiteSpace="nowrap"
+      lineHeight={24}
+      border={0}
+      boxShadow="borderAll"
+      paddingY={8}
+      paddingX={16}
+      color="default"
+      className={composeClassNames(hoverStyle, iconLayoutStyle)}
+      maxWidth={512}
+      width="full"
+      display="flex"
+      justifyContent="center"
+      {...rest}
+    >
       {children}
-    </button>
+    </Box>
   );
 }

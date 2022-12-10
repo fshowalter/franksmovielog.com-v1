@@ -1,16 +1,9 @@
-import { Link } from "gatsby";
-import React from "react";
-import Grade from "../Grade";
+import { Box, IBoxProps } from "../Box";
+import { Grade } from "../Grade";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
-import {
-  listCss,
-  listItemCss,
-  listItemGradeCss,
-  listItemImageWrapCss,
-  listItemSlugCss,
-  listItemTitleCss,
-  listItemTitleYearCss,
-} from "./PosterList.module.scss";
+import { Link } from "../Link";
+import { Spacer } from "../Spacer";
+import { gridStyle } from "./PosterList.css";
 
 function MediumAndVenue({
   medium,
@@ -73,59 +66,93 @@ export function Poster({
 }): JSX.Element {
   if (slug) {
     return (
-      <li className={listItemCss}>
-        <Link className={listItemImageWrapCss} to={`/reviews/${slug}/`}>
+      <Box as="li" display="flex" flexDirection="column">
+        <Link
+          borderRadius={8}
+          overflow="hidden"
+          maxWidth="poster"
+          to={`/reviews/${slug}/`}
+          transform="safariBorderRadiusFix"
+        >
           <GraphqlImage
             image={image}
             alt={`A poster from ${title} (${year})`}
           />
         </Link>
-        {details && details}
-        {typeof details === "undefined" && (
-          <>
-            {showTitle && (
-              <div className={listItemTitleCss}>
-                <Link to={`/reviews/${slug}/`}>
-                  {title} <span className={listItemTitleYearCss}>{year}</span>
-                </Link>
-              </div>
-            )}
-            <div className={listItemSlugCss}>
-              {grade && <Grade grade={grade} className={listItemGradeCss} />}
-              {date && <div>{date}</div>}
-              <MediumAndVenue medium={medium} venue={venue} />
-            </div>
-          </>
+        <Spacer axis="vertical" size={8} />
+        {showTitle && (
+          <Box fontSize="posterTitle">
+            <Link color="accent" textDecoration="none" to={`/reviews/${slug}/`}>
+              {title}{" "}
+              <Box
+                as="span"
+                fontSize="xSmall"
+                color="subtle"
+                fontWeight="light"
+              >
+                {year}
+              </Box>
+            </Link>
+          </Box>
         )}
-      </li>
+        <Spacer axis="vertical" size={4} />
+        <Box
+          color="subtle"
+          display="flex"
+          flexDirection="column"
+          fontSize="posterSlug"
+          fontWeight="light"
+          rowGap={4}
+        >
+          {grade && (
+            <Grade grade={grade} height={12} width={60} flexBasis={16} />
+          )}
+          {date && <div>{date}</div>}
+          <MediumAndVenue medium={medium} venue={venue} />
+        </Box>
+        {details && details}
+      </Box>
     );
   }
 
   return (
-    <li className={listItemCss}>
-      <div className={listItemImageWrapCss}>
+    <Box as="li" display="flex" flexDirection="column">
+      <Box
+        borderRadius={8}
+        overflow="hidden"
+        maxWidth="poster"
+        transform="safariBorderRadiusFix"
+      >
         <GraphqlImage image={image} alt="An unreviewed title." />
-      </div>
+      </Box>
+      <Spacer axis="vertical" size={8} />
+      <Box fontSize="posterTitle">
+        {title}{" "}
+        <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
+          {year}
+        </Box>
+      </Box>
+      <Spacer axis="vertical" size={8} />
+      <Box
+        color="subtle"
+        display="flex"
+        flexDirection="column"
+        fontSize="posterSlug"
+        fontWeight="light"
+        rowGap={4}
+      >
+        {date && <div>{date}</div>}
+        <MediumAndVenue medium={medium} venue={venue} />
+      </Box>
       {details && details}
-      {typeof details === "undefined" && (
-        <>
-          <div className={listItemTitleCss}>
-            {title} <span className={listItemTitleYearCss}>{year}</span>
-          </div>
-          <div className={listItemSlugCss}>
-            {date && <div>{date}</div>}
-            <MediumAndVenue medium={medium} venue={venue} />
-          </div>
-        </>
-      )}
-    </li>
+    </Box>
   );
 }
 
-export function PosterList({
-  children,
-}: {
-  children: React.ReactNode;
-}): JSX.Element {
-  return <ol className={listCss}>{children}</ol>;
+export function PosterList({ children, ...rest }: IBoxProps): JSX.Element {
+  return (
+    <Box as="ol" className={gridStyle} padding={0} {...rest}>
+      {children}
+    </Box>
+  );
 }
