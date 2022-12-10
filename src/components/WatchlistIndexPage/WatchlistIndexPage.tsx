@@ -469,7 +469,7 @@ export default function WatchlistIndexPage({
         </Box>
         <Box
           name="list"
-          ref={listHeader}
+          innerRef={listHeader}
           display="flex"
           flexDirection="column"
           flexGrow={1}

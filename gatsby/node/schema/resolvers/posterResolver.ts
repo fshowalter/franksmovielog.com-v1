@@ -7,7 +7,7 @@ import {
 import resolveFieldForNode from "../utils/resolveFieldForNode";
 import { findReviewedMovieNode } from "./reviewedMovieResolver";
 
-export default {
+export const posterResolver = {
   type: "File!",
   resolve: async (
     source: { imdbId: string },

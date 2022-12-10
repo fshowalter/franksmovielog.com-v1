@@ -1,5 +1,5 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
-import posterResolver from "./resolvers/posterResolver";
+import { posterResolver } from "./resolvers/posterResolver";
 import { SchemaNames } from "./schemaNames";
 
 const MostWatchedMovie = {

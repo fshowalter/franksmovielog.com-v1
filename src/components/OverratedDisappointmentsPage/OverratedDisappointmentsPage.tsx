@@ -1,28 +1,24 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { useReducer, useRef } from "react";
 import Select from "react-select";
-import Button from "../Button";
-import DebouncedInput from "../DebouncedInput/DebouncedInput";
-import Fieldset from "../Fieldset";
-import FilterPageHeader from "../FilterPageHeader";
-import HeadBuilder from "../HeadBuilder";
-import Layout from "../Layout";
+import {
+  backgroundColors,
+  borderColors,
+  foregroundColors,
+} from "../../styles/colors.css";
+import { HEADER_HEIGHT } from "../../styles/sizes";
+import { Box } from "../Box";
+import { Button } from "../Button";
+import { DebouncedInput } from "../DebouncedInput/DebouncedInput";
+import { Fieldset } from "../Fieldset";
+import { HeadBuilder } from "../HeadBuilder";
+import { LabelText } from "../LabelText";
+import { Layout } from "../Layout";
+import { Link } from "../Link";
 import { Poster, PosterList } from "../PosterList";
 import { SelectField } from "../SelectField";
-import YearInput from "../YearInput";
-import {
-  containerCss,
-  filtersCss,
-  genresSelectLabelCss,
-  genresWrapCss,
-  leftCss,
-  listHeaderGroupCss,
-  listInfoCss,
-  pageHeaderCss,
-  quoteCss,
-  rightCss,
-  showMoreCss,
-} from "./OverratedDisappointmentsPage.module.scss";
+import { Spacer } from "../Spacer";
+import { YearInput } from "../YearInput";
 import type { SortType } from "./OverratedDisappointmentsPage.reducer";
 import reducer, {
   ActionTypes,
@@ -44,30 +40,30 @@ function ListInfo({
     showingText = `Showing 1-${visible} of ${total.toLocaleString()}`;
   }
 
-  return <div className={listInfoCss}>{showingText}</div>;
+  return <div>{showingText}</div>;
 }
 
 function groupForMovie(
-  movie: Queries.OverratedDisappointmentsPageNodeFragment,
+  movie: Queries.OverratedDisappointmentsMovieFragment,
   sortValue: SortType
 ): string {
   switch (sortValue) {
     case "release-date-asc":
     case "release-date-desc": {
-      return movie.reviewedMovie.releaseDate.substring(0, 4);
+      return movie.releaseDate.substring(0, 4);
     }
     case "grade-asc":
     case "grade-desc": {
-      return movie.reviewedMovie.grade || "Unrated";
+      return movie.grade;
     }
     case "title": {
-      const letter = movie.reviewedMovie.sortTitle.substring(0, 1);
+      const letter = movie.sortTitle.substring(0, 1);
 
       if (letter.toLowerCase() == letter.toUpperCase()) {
         return "#";
       }
 
-      return movie.reviewedMovie.sortTitle.substring(0, 1).toLocaleUpperCase();
+      return movie.sortTitle.substring(0, 1).toLocaleUpperCase();
     }
     // no default
   }
@@ -77,12 +73,12 @@ function groupMovies({
   movies,
   sortValue,
 }: {
-  movies: Queries.OverratedDisappointmentsPageNodeFragment[];
+  movies: Queries.OverratedDisappointmentsMovieFragment[];
   sortValue: SortType;
-}): Map<string, Queries.OverratedDisappointmentsPageNodeFragment[]> {
+}): Map<string, Queries.OverratedDisappointmentsMovieFragment[]> {
   const groupedMovies: Map<
     string,
-    Queries.OverratedDisappointmentsPageNodeFragment[]
+    Queries.OverratedDisappointmentsMovieFragment[]
   > = new Map();
 
   movies.map((movie) => {
@@ -135,46 +131,59 @@ export default function OverratedDisappointmentsPage({
 
   return (
     <Layout>
-      <main className={containerCss}>
-        <div className={leftCss}>
-          <FilterPageHeader
-            className={pageHeaderCss}
-            heading="Overrated Disappointments"
-            breadcrumb={
-              <div>
-                <Link to="/reviews/">Reviews</Link>
-              </div>
-            }
-            tagline={
-              <>
-                <q className={quoteCss}>Sorry don&apos;t get it done, Dude.</q>
-                <p>
-                  One and two star movies with an above-average IMDb rating and
-                  vote count.
-                </p>
-              </>
-            }
-          />
-          <div className={filtersCss}>
+      <Box
+        as="main"
+        display="flex"
+        flexDirection={{ default: "column", desktop: "row" }}
+        paddingX={{ default: 0, desktop: "gutter" }}
+        columnGap={64}
+      >
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          paddingX={{ default: "gutter", desktop: 0 }}
+          paddingTop={32}
+          flexBasis={320}
+        >
+          <Box maxWidth="prose">
+            <Link color="accent" textDecoration="none" to="/reviews/">
+              Reviews
+            </Link>
+            <Spacer axis="vertical" size={16} />
+            <Box as="h1" fontSize="pageTitle">
+              Underseen Gems
+            </Box>
+            <Spacer axis="vertical" size={16} />
+            <Box color="subtle">
+              <Box as="q" fontWeight="semiBold">
+                Sorry don&apos;t get it done, Dude.
+              </Box>
+              <p>
+                One and two star movies with an above-average IMDb rating and
+                vote count.
+              </p>
+            </Box>
+          </Box>
+          <Spacer axis="vertical" size={32} />
+          <Box>
             <Fieldset legend="Filter & Sort">
               <DebouncedInput
                 label="Title"
                 placeholder="Enter all or part of a title"
-                onChange={(value) =>
+                onInputChange={(value) =>
                   dispatch({ type: ActionTypes.FILTER_TITLE, value })
                 }
               />
               <YearInput
                 label="Release Year"
                 years={data.movie.releaseYears}
-                onChange={(values) =>
+                onYearChange={(values) =>
                   dispatch({ type: ActionTypes.FILTER_RELEASE_YEAR, values })
                 }
               />
-              <div className={genresWrapCss}>
-                <label htmlFor="genres" className={genresSelectLabelCss}>
-                  Genres
-                </label>
+              <Box display="flex" flexDirection="column" textAlign="left">
+                <LabelText text="Genres" as="label" htmlFor="genres" />
                 <Select
                   inputId="genres"
                   theme={(theme) => ({
@@ -182,11 +191,11 @@ export default function OverratedDisappointmentsPage({
                     borderRadius: 4,
                     colors: {
                       ...theme.colors,
-                      neutral0: "var(--color-bg-subtle)",
-                      neutral20: "var(--color-border-default)",
-                      neutral50: "var(--color-fg-subtle)",
-                      danger: "var(--color-fg-accent)",
-                      primary25: "var(--color-bg-stripe)",
+                      neutral0: backgroundColors.subtle,
+                      neutral20: borderColors.default,
+                      neutral50: foregroundColors.subtle,
+                      danger: foregroundColors.accent,
+                      primary25: backgroundColors.stripe,
                     },
                   })}
                   classNamePrefix="reactSelect"
@@ -202,7 +211,7 @@ export default function OverratedDisappointmentsPage({
                     return { value: genre, label: genre };
                   })}
                 />
-              </div>
+              </Box>
               <SelectField
                 value={state.sortValue}
                 label="Order By"
@@ -224,97 +233,129 @@ export default function OverratedDisappointmentsPage({
                 <option value="grade-asc">Grade (Worst First)</option>
               </SelectField>
             </Fieldset>
-            <div className={listInfoCss}>
+            <Box color="subtle" paddingX="gutter" textAlign="center">
+              <Spacer axis="vertical" size={32} />
               <ListInfo
                 visible={state.showCount}
                 total={state.filteredMovies.length}
               />
-            </div>
-          </div>
-        </div>
-        <div className={rightCss} ref={listHeader}>
-          <ol data-testid="movies-list">
+              <Spacer axis="vertical" size={32} />
+            </Box>
+          </Box>
+        </Box>
+        <Box
+          name="list"
+          innerRef={listHeader}
+          display="flex"
+          flexDirection="column"
+          flexGrow={1}
+        >
+          <Box as="ol" data-testid="movies-list" padding={0}>
             {[...groupedMovies].map(([group, movies], index) => {
               return (
-                <li key={group}>
-                  <div
-                    className={listHeaderGroupCss}
+                <Box as="li" key={group} display="block">
+                  <Box
+                    fontSize="groupHeading"
                     style={{ zIndex: index + 100 }}
+                    paddingTop={{ default: 0, desktop: 16 }}
+                    position="sticky"
+                    backgroundColor="default"
+                    top={{ default: 0, desktop: HEADER_HEIGHT }}
                   >
-                    {group}
-                  </div>
-                  <PosterList>
+                    <Box
+                      backgroundColor="canvas"
+                      paddingY={8}
+                      paddingX={{ default: "gutter", desktop: 24 }}
+                    >
+                      {group}
+                    </Box>
+                  </Box>
+                  <Spacer axis="vertical" size={16} />
+                  <PosterList
+                    paddingLeft={{ default: "gutter", desktop: 24 }}
+                    paddingRight={{ default: "gutter", desktop: 0 }}
+                  >
                     {movies.map((movie) => {
                       return (
                         <Poster
                           key={movie.imdbId}
-                          title={movie.reviewedMovie.title}
-                          year={movie.reviewedMovie.year}
-                          grade={movie.reviewedMovie.grade}
-                          slug={movie.reviewedMovie.slug}
-                          image={movie.reviewedMovie.poster}
+                          title={movie.title}
+                          year={movie.year}
+                          grade={movie.grade}
+                          slug={movie.slug}
+                          image={movie.poster}
                         />
                       );
                     })}
                   </PosterList>
-                </li>
+                </Box>
               );
             })}
-          </ol>
-          <div className={showMoreCss}>
+          </Box>
+          <Box display="flex" flexDirection="column" alignItems="center">
+            <Spacer axis="vertical" size={32} />
             {state.filteredMovies.length > state.showCount && (
-              <Button onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}>
-                <svg
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+              <>
+                <Button
+                  paddingX="gutter"
+                  onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}
+                  display="flex"
+                  columnGap={16}
                 >
-                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
-                </svg>
-                Show More
-              </Button>
+                  <svg
+                    width="24"
+                    height="24"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill={foregroundColors.accent}
+                  >
+                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                  </svg>
+                  Show More...
+                </Button>
+                <Spacer axis="vertical" size={32} />
+              </>
             )}
-          </div>
-        </div>
-      </main>
+          </Box>
+        </Box>
+      </Box>
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
-  fragment OverratedDisappointmentsPageNode on OverratedDisappointmentsJson {
+  fragment OverratedDisappointmentsMovie on OverratedDisappointmentsJson {
     imdbId
     genres
-    reviewedMovie {
-      releaseDate
-      title
-      year
-      sortTitle
-      slug
-      grade
-      gradeValue
-      poster {
-        childImageSharp {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            formats: [JPG, AVIF]
-            quality: 80
-            width: 200
-            placeholder: TRACED_SVG
-          )
-        }
+    releaseDate
+    title
+    year
+    sortTitle
+    slug
+    grade
+    gradeValue
+    poster {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 200
+          placeholder: TRACED_SVG
+        )
       }
     }
   }
 
   query OverratedDisappointmentsPage {
     movie: allOverratedDisappointmentsJson(
-      sort: { fields: [reviewedMovie___releaseDate], order: DESC }
+      sort: { fields: [releaseDate], order: DESC }
     ) {
       nodes {
-        ...OverratedDisappointmentsPageNode
+        ...OverratedDisappointmentsMovie
       }
-      releaseYears: distinct(field: reviewedMovie___year)
+      releaseYears: distinct(field: year)
       genres: distinct(field: genres)
     }
   }

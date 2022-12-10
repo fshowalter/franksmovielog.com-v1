@@ -4,7 +4,7 @@ import toHtml from "hast-util-to-html";
 import toHast from "mdast-util-to-hast";
 import remark from "remark";
 import { MarkdownNode } from "./MarkdownRemark";
-import posterResolver from "./resolvers/posterResolver";
+import { posterResolver } from "./resolvers/posterResolver";
 import {
   findReviewedMovieNode,
   reviewedMovieResolver,

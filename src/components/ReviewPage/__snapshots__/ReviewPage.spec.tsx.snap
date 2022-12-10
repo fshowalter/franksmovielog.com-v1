@@ -9,16 +9,16 @@ exports[`/reviews/{slug} renders 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5b sprinkles_minHeight_16__8lcvdk2c sprinkles_width_full_default__8lcvdkc4"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5c sprinkles_minHeight_16__8lcvdk2c sprinkles_width_full_default__8lcvdkc5"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk7 sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk7 sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_paddingTop_32_default__8lcvdk9o sprinkles_paddingBottom_32_default__8lcvdk6w sprinkles_display_flex_default__8lcvdk6g sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_boxShadow_borderBottom__8lcvdk58 sprinkles_backgroundColor_default__8lcvdk7"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_paddingTop_32_default__8lcvdk9p sprinkles_paddingBottom_32_default__8lcvdk6x sprinkles_display_flex_default__8lcvdk6h sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_boxShadow_borderBottom__8lcvdk59 sprinkles_backgroundColor_default__8lcvdk7"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_alignItems_inherit__8lcvdk1y sprinkles_justifyItems_inherit__8lcvdk1w"
+        class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_alignItems_inherit__8lcvdk1y sprinkles_justifyItems_inherit__8lcvdk1w"
       >
         <h1
           class="sprinkles_whiteSpace_nowrap__8lcvdk1p sprinkles_fontWeight_normal__8lcvdk3h sprinkles_fontSize_25__8lcvdk3s sprinkles_lineHeight_32__8lcvdk4c"
@@ -31,7 +31,7 @@ exports[`/reviews/{slug} renders 1`] = `
           </a>
         </h1>
         <p
-          class="Header_taglineStyle__1tt5yzz0 sprinkles_color_muted__8lcvdkz sprinkles_fontStyle_italic__8lcvdk1u sprinkles_lineHeight_16__8lcvdk4a sprinkles_width_full_default__8lcvdkc4"
+          class="Header_taglineStyle__1tt5yzz0 sprinkles_color_muted__8lcvdkz sprinkles_fontStyle_italic__8lcvdk1u sprinkles_lineHeight_16__8lcvdk4a sprinkles_width_full_default__8lcvdkc5"
         >
           My life at the movies.
         </p>
@@ -105,12 +105,12 @@ exports[`/reviews/{slug} renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="SearchForm_formStyle__b35bo70 sprinkles_maxWidth_prose__8lcvdk4l"
+        class="SearchForm_formStyle__b35bo70 sprinkles_maxWidth_prose__8lcvdk4m"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk6g sprinkles_overflow_hidden__8lcvdk1q"
+          class="sprinkles_display_flex_default__8lcvdk6h sprinkles_overflow_hidden__8lcvdk1q"
           for="search"
         >
           <div
@@ -160,14 +160,14 @@ exports[`/reviews/{slug} renders 1`] = `
       class="sprinkles_flexGrow_1__8lcvdk1s"
     >
       <main
-        class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_alignItems_center__8lcvdk1x"
+        class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_alignItems_center__8lcvdk1x"
         id="top"
       >
         <header
-          class="ReviewPage_titleLayoutStyle__x6guia0 sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_textAlign_center__8lcvdk5j sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_rowGap_16__8lcvdk23"
+          class="ReviewPage_titleLayoutStyle__x6guia0 sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_textAlign_center__8lcvdk5k sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_rowGap_16__8lcvdk23"
         >
           <div
-            class="sprinkles_textAlign_inherit__8lcvdk5k"
+            class="sprinkles_textAlign_inherit__8lcvdk5l"
           >
             <h1
               class="sprinkles_fontSize_pageTitle__8lcvdk46"
@@ -210,13 +210,13 @@ exports[`/reviews/{slug} renders 1`] = `
           alt="A still from The Seventh Continent (1989)"
         />
         <span
-          class="sprinkles_width_px_default__8lcvdkc2 sprinkles_height_32__8lcvdk2y sprinkles_minWidth_px__8lcvdk55 sprinkles_minHeight_32__8lcvdk2e sprinkles_display_block_default__8lcvdk6c"
+          class="sprinkles_width_px_default__8lcvdkc3 sprinkles_height_32__8lcvdk2y sprinkles_minWidth_px__8lcvdk56 sprinkles_minHeight_32__8lcvdk2e sprinkles_display_block_default__8lcvdk6d"
         />
         <div
-          class="sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_rowGap_32__8lcvdk25 sprinkles_alignItems_center__8lcvdk1x"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_rowGap_32__8lcvdk25 sprinkles_alignItems_center__8lcvdk1x"
         >
           <div
-            class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_rowGap_8__8lcvdk22 sprinkles_alignItems_inherit__8lcvdk1y"
+            class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_rowGap_8__8lcvdk22 sprinkles_alignItems_inherit__8lcvdk1y"
           >
             <img
               alt="A-: 5 stars (out of 5)"
@@ -224,7 +224,7 @@ exports[`/reviews/{slug} renders 1`] = `
               style="height: 32px; width: 160px;"
             />
             <div
-              class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_color_muted__8lcvdkz sprinkles_alignItems_inherit__8lcvdk1y sprinkles_rowGap_8__8lcvdk22"
+              class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_color_muted__8lcvdkz sprinkles_alignItems_inherit__8lcvdk1y sprinkles_rowGap_8__8lcvdk22"
             >
               <span>
                 on
@@ -233,7 +233,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <div
-            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk3g sprinkles_letterSpacing_0.3__8lcvdk4h sprinkles_fontSize_19__8lcvdk3q sprinkles_maxWidth_prose__8lcvdk4l"
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk3g sprinkles_letterSpacing_0.3__8lcvdk4h sprinkles_fontSize_19__8lcvdk3q sprinkles_maxWidth_prose__8lcvdk4m"
           >
             <p>
               <strong>
@@ -248,13 +248,13 @@ exports[`/reviews/{slug} renders 1`] = `
           </div>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdkc2 sprinkles_height_80__8lcvdk32 sprinkles_minWidth_px__8lcvdk55 sprinkles_minHeight_80__8lcvdk2i sprinkles_display_block_default__8lcvdk6c"
+          class="sprinkles_width_px_default__8lcvdkc3 sprinkles_height_80__8lcvdk32 sprinkles_minWidth_px__8lcvdk56 sprinkles_minHeight_80__8lcvdk2i sprinkles_display_block_default__8lcvdk6d"
         />
         <div
-          class="sprinkles_maxWidth_proseWithGutters__8lcvdk4m sprinkles_width_full_default__8lcvdkc4"
+          class="sprinkles_maxWidth_proseWithGutters__8lcvdk4n sprinkles_width_full_default__8lcvdkc5"
         >
           <h3
-            class="sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_color_subtle__8lcvdk11 sprinkles_fontSize_16__8lcvdk3o sprinkles_fontWeight_semiBold__8lcvdk3i sprinkles_letterSpacing_0.2__8lcvdk4f sprinkles_lineHeight_2__8lcvdk49 sprinkles_boxShadow_borderBottom__8lcvdk58"
+            class="sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_color_subtle__8lcvdk11 sprinkles_fontSize_16__8lcvdk3o sprinkles_fontWeight_semiBold__8lcvdk3i sprinkles_letterSpacing_0.2__8lcvdk4f sprinkles_lineHeight_2__8lcvdk49 sprinkles_boxShadow_borderBottom__8lcvdk59"
           >
             Viewing History
           </h3>
@@ -262,7 +262,7 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_padding_0__8lcvdk15"
           >
             <div
-              class="ViewingHistoryEntry_gridStyle__1yeq2c40 sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_backgroundColor_zebra__8lcvdkc sprinkles_display_block_default__8lcvdk6c"
+              class="ViewingHistoryEntry_gridStyle__1yeq2c40 sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_backgroundColor_zebra__8lcvdkc sprinkles_display_block_default__8lcvdk6d"
             >
               <div
                 class="ViewingHistoryEntry_gridAreas_icon__1yeq2c41"
@@ -296,7 +296,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 class="ViewingHistoryEntry_gridAreas_date__1yeq2c42"
               >
                 <span
-                  class="sprinkles_color_emphasis__8lcvdk14 sprinkles_display_inline-block_default__8lcvdk6k"
+                  class="sprinkles_color_emphasis__8lcvdk14 sprinkles_display_inline-block_default__8lcvdk6l"
                 >
                   Tue Jan 26, 2021
                 </span>
@@ -324,10 +324,10 @@ exports[`/reviews/{slug} renders 1`] = `
           </ul>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdkc2 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk55 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6c"
+          class="sprinkles_width_px_default__8lcvdkc3 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk56 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6d"
         />
         <aside
-          class="Credits_gridStyle__1m1qj364 sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_paddingTop_32_default__8lcvdk9o sprinkles_paddingBottom_32_default__8lcvdk6w sprinkles_position_relative_default__8lcvdk9w sprinkles_maxWidth_proseWithGutters__8lcvdk4m sprinkles_backgroundColor_subtle__8lcvdk9"
+          class="Credits_gridStyle__1m1qj364 sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_paddingTop_32_default__8lcvdk9p sprinkles_paddingBottom_32_default__8lcvdk6x sprinkles_position_relative_default__8lcvdk9x sprinkles_maxWidth_proseWithGutters__8lcvdk4n sprinkles_backgroundColor_subtle__8lcvdk9"
           id="credits"
         >
           <div
@@ -387,12 +387,12 @@ exports[`/reviews/{slug} renders 1`] = `
             class="Credits_gridAreas_meta__1m1qj366"
           >
             <header
-              class="sprinkles_fontSize_25__8lcvdk3s sprinkles_lineHeight_32__8lcvdk4c sprinkles_paddingBottom_24_default__8lcvdk6u"
+              class="sprinkles_fontSize_25__8lcvdk3s sprinkles_lineHeight_32__8lcvdk4c sprinkles_paddingBottom_24_default__8lcvdk6v"
             >
               The Seventh Continent
             </header>
             <dl
-              class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_rowGap_24__8lcvdk24"
+              class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_rowGap_24__8lcvdk24"
             >
               <div>
                 <dt
@@ -472,13 +472,13 @@ exports[`/reviews/{slug} renders 1`] = `
             class="Credits_gridAreas_watchlistLinks__1m1qj367"
           >
             <ul
-              class="sprinkles_display_flex_default__8lcvdk6g sprinkles_padding_0__8lcvdk15"
+              class="sprinkles_display_flex_default__8lcvdk6h sprinkles_padding_0__8lcvdk15"
             >
               <li
-                class="sprinkles_display_block_default__8lcvdk6c"
+                class="sprinkles_display_block_default__8lcvdk6d"
               >
                 <a
-                  class="WatchlistLinks_linkStyle__sz6ovu1 sprinkles_backgroundColor_inverse__8lcvdka sprinkles_display_flex_default__8lcvdk6g sprinkles_alignItems_center__8lcvdk1x sprinkles_whiteSpace_nowrap__8lcvdk1p sprinkles_color_accent__8lcvdkx sprinkles_textDecoration_none__8lcvdk4j"
+                  class="WatchlistLinks_linkStyle__sz6ovu1 sprinkles_backgroundColor_inverse__8lcvdka sprinkles_display_flex_default__8lcvdk6h sprinkles_alignItems_center__8lcvdk1x sprinkles_whiteSpace_nowrap__8lcvdk1p sprinkles_color_accent__8lcvdkx sprinkles_textDecoration_none__8lcvdk4j"
                   href="/watchlist/directors/michael-haneke/"
                 >
                   <div
@@ -547,26 +547,26 @@ exports[`/reviews/{slug} renders 1`] = `
           </div>
         </aside>
         <span
-          class="sprinkles_width_px_default__8lcvdkc2 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk55 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6c"
+          class="sprinkles_width_px_default__8lcvdkc3 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk56 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6d"
         />
         <div
-          class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_rowGap_48__8lcvdk26"
+          class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_rowGap_48__8lcvdk26"
         >
           <nav
             class="RelatedMovies_gridStyle__ybjqoi2"
           >
             <div
-              class="RelatedMovies_gridAreas_heading__ybjqoi3 sprinkles_boxShadow_borderBottom__8lcvdk58"
+              class="RelatedMovies_gridAreas_heading__ybjqoi3 sprinkles_boxShadow_borderBottom__8lcvdk59"
             >
               <header
-                class="sprinkles_paddingTop_8_default__8lcvdk9i sprinkles_paddingBottom_8_default__8lcvdk6s sprinkles_display_block_default__8lcvdk6c sprinkles_lineHeight_40__8lcvdk4d"
+                class="sprinkles_paddingTop_8_default__8lcvdk9j sprinkles_paddingBottom_8_default__8lcvdk6t sprinkles_display_block_default__8lcvdk6d sprinkles_lineHeight_40__8lcvdk4d"
               >
                 <h3
                   class="sprinkles_fontWeight_normal__8lcvdk3h sprinkles_fontSize_18__8lcvdk3p sprinkles_color_muted__8lcvdkz"
                 >
                   More directed by 
                   <a
-                    class="sprinkles_color_accent__8lcvdkx sprinkles_textDecoration_none__8lcvdk4j sprinkles_display_inline-flex_default__8lcvdk6i sprinkles_columnGap_.5ch__8lcvdk5l"
+                    class="sprinkles_color_accent__8lcvdkx sprinkles_textDecoration_none__8lcvdk4j sprinkles_display_inline-flex_default__8lcvdk6j sprinkles_columnGap_.5ch__8lcvdk5m"
                     href="/watchlist/directors/michael-haneke/"
                   >
                     Michael Haneke
@@ -599,7 +599,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/bennys-video-1992/"
                     >
                       Benny's Video 
@@ -640,7 +640,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/71-fragments-of-a-chronology-of-chance-1994/"
                     >
                       71 Fragments of a Chronology of Chance 
@@ -681,7 +681,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/funny-games-1997/"
                     >
                       Funny Games 
@@ -722,7 +722,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/code-unknown-2000/"
                     >
                       Code Unknown 
@@ -751,17 +751,17 @@ exports[`/reviews/{slug} renders 1`] = `
             class="RelatedMovies_gridStyle__ybjqoi2"
           >
             <div
-              class="RelatedMovies_gridAreas_heading__ybjqoi3 sprinkles_boxShadow_borderBottom__8lcvdk58"
+              class="RelatedMovies_gridAreas_heading__ybjqoi3 sprinkles_boxShadow_borderBottom__8lcvdk59"
             >
               <header
-                class="sprinkles_paddingTop_8_default__8lcvdk9i sprinkles_paddingBottom_8_default__8lcvdk6s sprinkles_display_block_default__8lcvdk6c sprinkles_lineHeight_40__8lcvdk4d"
+                class="sprinkles_paddingTop_8_default__8lcvdk9j sprinkles_paddingBottom_8_default__8lcvdk6t sprinkles_display_block_default__8lcvdk6d sprinkles_lineHeight_40__8lcvdk4d"
               >
                 <h3
                   class="sprinkles_fontWeight_normal__8lcvdk3h sprinkles_fontSize_18__8lcvdk3p sprinkles_color_muted__8lcvdkz"
                 >
                   More 
                   <a
-                    class="sprinkles_color_accent__8lcvdkx sprinkles_textDecoration_none__8lcvdk4j sprinkles_display_inline-flex_default__8lcvdk6i sprinkles_columnGap_.5ch__8lcvdk5l"
+                    class="sprinkles_color_accent__8lcvdkx sprinkles_textDecoration_none__8lcvdk4j sprinkles_display_inline-flex_default__8lcvdk6j sprinkles_columnGap_.5ch__8lcvdk5m"
                     href="/reviews/"
                   >
                     Reviews
@@ -794,7 +794,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/seed-of-chucky-2004/"
                     >
                       Seed of Chucky 
@@ -835,7 +835,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/service-de-luxe-1938/"
                     >
                       Service de Luxe 
@@ -876,7 +876,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/the-seventh-seal-1957/"
                     >
                       The Seventh Seal 
@@ -917,7 +917,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="RelatedMovie_gridAreas_title__1997ilm3"
                   >
                     <a
-                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6c"
+                      class="sprinkles_fontSize_18__8lcvdk3p sprinkles_textDecoration_none__8lcvdk4j sprinkles_color_default__8lcvdky sprinkles_lineHeight_24__8lcvdk4b sprinkles_display_block_default__8lcvdk6d"
                       href="/reviews/shadow-of-the-law-1930/"
                     >
                       Shadow of the Law 
@@ -944,7 +944,7 @@ exports[`/reviews/{slug} renders 1`] = `
           </nav>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdkc2 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk55 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6c"
+          class="sprinkles_width_px_default__8lcvdkc3 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk56 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6d"
         />
       </main>
       <script
@@ -954,7 +954,7 @@ exports[`/reviews/{slug} renders 1`] = `
       </script>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_paddingTop_32_default__8lcvdk9o sprinkles_paddingBottom_32_default__8lcvdk6w sprinkles_color_inverse__8lcvdk12 sprinkles_display_flex_default__8lcvdk6g sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5b sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_flexDirection_column_default__8lcvdk6o"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_paddingTop_32_default__8lcvdk9p sprinkles_paddingBottom_32_default__8lcvdk6x sprinkles_color_inverse__8lcvdk12 sprinkles_display_flex_default__8lcvdk6h sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5c sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_flexDirection_column_default__8lcvdk6p"
     >
       <nav>
         <ul

@@ -1,28 +1,20 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
-import { SchemaNames } from "./schemaNames";
+import { posterResolver } from "./resolvers/posterResolver";
 
 const UnderseenGemsJson = {
   name: "UnderseenGemsJson",
   interfaces: ["Node"],
   fields: {
-    imdbId: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "imdb_id",
-        },
-      },
-    },
+    imdbId: "String!",
     genres: "[String!]!",
-    reviewedMovie: {
-      type: `${SchemaNames.REVIEWED_MOVIES_JSON}!`,
-      extensions: {
-        link: {
-          from: "imdbId",
-          by: "imdbId",
-        },
-      },
-    },
+    slug: "String!",
+    sortTitle: "String!",
+    title: "String!",
+    year: "Int!",
+    grade: "String!",
+    gradeValue: "Int!",
+    releaseDate: "String!",
+    poster: posterResolver,
   },
   extensions: {
     infer: false,

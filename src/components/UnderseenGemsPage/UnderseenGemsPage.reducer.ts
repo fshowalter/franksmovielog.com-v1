@@ -6,7 +6,6 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
-import type { Movie } from "./UnderseenGemsPage";
 
 export type SortType =
   | "release-date-desc"
@@ -15,8 +14,17 @@ export type SortType =
   | "grade-asc"
   | "grade-desc";
 
-function sortMovies(viewings: Movie[], sortOrder: SortType) {
-  const sortMap: Record<SortType, (a: Movie, b: Movie) => number> = {
+function sortMovies(
+  viewings: Queries.UnderseenGemsMovieFragment[],
+  sortOrder: SortType
+) {
+  const sortMap: Record<
+    SortType,
+    (
+      a: Queries.UnderseenGemsMovieFragment,
+      b: Queries.UnderseenGemsMovieFragment
+    ) => number
+  > = {
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
@@ -33,11 +41,14 @@ function sortMovies(viewings: Movie[], sortOrder: SortType) {
 /** The page state. */
 type State = {
   /** All possible movies. */
-  allMovies: Movie[];
+  allMovies: Queries.UnderseenGemsMovieFragment[];
   /** Movies matching the current filters. */
-  filteredMovies: Movie[];
+  filteredMovies: Queries.UnderseenGemsMovieFragment[];
   /** The active filters. */
-  filters: Record<string, (movie: Movie) => boolean>;
+  filters: Record<
+    string,
+    (movie: Queries.UnderseenGemsMovieFragment) => boolean
+  >;
   /** The number of movies to show. */
   showCount: number;
   /** The active sort value. */
@@ -49,7 +60,11 @@ const SHOW_COUNT_DEFAULT = 24;
 /**
  * Initializes the page state.
  */
-export function initState({ movies }: { movies: Movie[] }): State {
+export function initState({
+  movies,
+}: {
+  movies: Queries.UnderseenGemsMovieFragment[];
+}): State {
   return {
     allMovies: movies,
     filteredMovies: movies,
@@ -122,12 +137,15 @@ export default function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (movie: Movie) => {
+        title: (movie: Queries.UnderseenGemsMovieFragment) => {
           return regex.test(movie.title);
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<Movie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.UnderseenGemsMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -139,7 +157,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (movie: Movie) => {
+        releaseYear: (movie: Queries.UnderseenGemsMovieFragment) => {
           const releaseYear = movie.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
@@ -147,7 +165,10 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<Movie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.UnderseenGemsMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {
@@ -159,12 +180,15 @@ export default function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_GENRES: {
       filters = {
         ...state.filters,
-        genres: (movie: Movie) => {
+        genres: (movie: Queries.UnderseenGemsMovieFragment) => {
           return action.values.every((genre) => movie.genres.includes(genre));
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<Movie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.UnderseenGemsMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortValue
       );
       return {

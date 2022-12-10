@@ -9,16 +9,16 @@ exports[`/how-i-grade renders 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5b sprinkles_minHeight_16__8lcvdk2c sprinkles_width_full_default__8lcvdkc4"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5c sprinkles_minHeight_16__8lcvdk2c sprinkles_width_full_default__8lcvdkc5"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk7 sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk7 sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_paddingTop_32_default__8lcvdk9o sprinkles_paddingBottom_32_default__8lcvdk6w sprinkles_display_flex_default__8lcvdk6g sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_boxShadow_borderBottom__8lcvdk58 sprinkles_backgroundColor_default__8lcvdk7"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_paddingTop_32_default__8lcvdk9p sprinkles_paddingBottom_32_default__8lcvdk6x sprinkles_display_flex_default__8lcvdk6h sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_boxShadow_borderBottom__8lcvdk59 sprinkles_backgroundColor_default__8lcvdk7"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_alignItems_inherit__8lcvdk1y sprinkles_justifyItems_inherit__8lcvdk1w"
+        class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_alignItems_inherit__8lcvdk1y sprinkles_justifyItems_inherit__8lcvdk1w"
       >
         <h1
           class="sprinkles_whiteSpace_nowrap__8lcvdk1p sprinkles_fontWeight_normal__8lcvdk3h sprinkles_fontSize_25__8lcvdk3s sprinkles_lineHeight_32__8lcvdk4c"
@@ -31,7 +31,7 @@ exports[`/how-i-grade renders 1`] = `
           </a>
         </h1>
         <p
-          class="Header_taglineStyle__1tt5yzz0 sprinkles_color_muted__8lcvdkz sprinkles_fontStyle_italic__8lcvdk1u sprinkles_lineHeight_16__8lcvdk4a sprinkles_width_full_default__8lcvdkc4"
+          class="Header_taglineStyle__1tt5yzz0 sprinkles_color_muted__8lcvdkz sprinkles_fontStyle_italic__8lcvdk1u sprinkles_lineHeight_16__8lcvdk4a sprinkles_width_full_default__8lcvdkc5"
         >
           My life at the movies.
         </p>
@@ -105,12 +105,12 @@ exports[`/how-i-grade renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="SearchForm_formStyle__b35bo70 sprinkles_maxWidth_prose__8lcvdk4l"
+        class="SearchForm_formStyle__b35bo70 sprinkles_maxWidth_prose__8lcvdk4m"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk6g sprinkles_overflow_hidden__8lcvdk1q"
+          class="sprinkles_display_flex_default__8lcvdk6h sprinkles_overflow_hidden__8lcvdk1q"
           for="search"
         >
           <div
@@ -161,10 +161,10 @@ exports[`/how-i-grade renders 1`] = `
     >
       <main>
         <article
-          class="sprinkles_display_flex_default__8lcvdk6g sprinkles_flexDirection_column_default__8lcvdk6o sprinkles_alignItems_center__8lcvdk1x"
+          class="sprinkles_display_flex_default__8lcvdk6h sprinkles_flexDirection_column_default__8lcvdk6p sprinkles_alignItems_center__8lcvdk1x"
         >
           <h1
-            class="sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_paddingTop_24_default__8lcvdk9m sprinkles_paddingTop_32_desktop__8lcvdk9p sprinkles_paddingBottom_24_default__8lcvdk6u sprinkles_paddingBottom_32_desktop__8lcvdk6x sprinkles_fontSize_pageTitle__8lcvdk46 sprinkles_textAlign_center__8lcvdk5j"
+            class="sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_paddingTop_24_default__8lcvdk9n sprinkles_paddingTop_32_desktop__8lcvdk9q sprinkles_paddingBottom_24_default__8lcvdk6v sprinkles_paddingBottom_32_desktop__8lcvdk6y sprinkles_fontSize_pageTitle__8lcvdk46 sprinkles_textAlign_center__8lcvdk5k"
           >
             How I Grade
           </h1>
@@ -218,10 +218,10 @@ exports[`/how-i-grade renders 1`] = `
             </script>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkc2 sprinkles_height_64__8lcvdk31 sprinkles_minWidth_px__8lcvdk55 sprinkles_minHeight_64__8lcvdk2h sprinkles_display_block_default__8lcvdk6c"
+            class="sprinkles_width_px_default__8lcvdkc3 sprinkles_height_64__8lcvdk31 sprinkles_minWidth_px__8lcvdk56 sprinkles_minHeight_64__8lcvdk2h sprinkles_display_block_default__8lcvdk6d"
           />
           <div
-            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_fontWeight_light__8lcvdk3g sprinkles_letterSpacing_0.3__8lcvdk4h sprinkles_fontSize_19__8lcvdk3q sprinkles_maxWidth_proseWithGutters__8lcvdk4m"
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_fontWeight_light__8lcvdk3g sprinkles_letterSpacing_0.3__8lcvdk4h sprinkles_fontSize_19__8lcvdk3q sprinkles_maxWidth_proseWithGutters__8lcvdk4n"
           >
             <ul>
               
@@ -529,13 +529,13 @@ exports[`/how-i-grade renders 1`] = `
             </div>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkc2 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk55 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6c"
+            class="sprinkles_width_px_default__8lcvdkc3 sprinkles_height_128__8lcvdk35 sprinkles_minWidth_px__8lcvdk56 sprinkles_minHeight_128__8lcvdk2l sprinkles_display_block_default__8lcvdk6d"
           />
         </article>
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdk88 sprinkles_paddingRight_gutter_default__8lcvdk9e sprinkles_paddingTop_32_default__8lcvdk9o sprinkles_paddingBottom_32_default__8lcvdk6w sprinkles_color_inverse__8lcvdk12 sprinkles_display_flex_default__8lcvdk6g sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5b sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_flexDirection_column_default__8lcvdk6o"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdk89 sprinkles_paddingRight_gutter_default__8lcvdk9f sprinkles_paddingTop_32_default__8lcvdk9p sprinkles_paddingBottom_32_default__8lcvdk6x sprinkles_color_inverse__8lcvdk12 sprinkles_display_flex_default__8lcvdk6h sprinkles_backgroundImage_ripNotComingSoon__8lcvdk5c sprinkles_rowGap_24__8lcvdk24 sprinkles_alignItems_center__8lcvdk1x sprinkles_flexDirection_column_default__8lcvdk6p"
     >
       <nav>
         <ul

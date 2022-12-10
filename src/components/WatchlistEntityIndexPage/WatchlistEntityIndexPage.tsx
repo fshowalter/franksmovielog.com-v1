@@ -1,29 +1,20 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { useReducer } from "react";
-import DebouncedInput from "../DebouncedInput";
-import Fieldset from "../Fieldset";
-import FilterPageHeader from "../FilterPageHeader";
+import { backgroundColors, borderColors } from "../../styles/colors.css";
+import { Box } from "../Box";
+import { DebouncedInput } from "../DebouncedInput";
+import { Fieldset } from "../Fieldset";
 import { GraphqlImage } from "../GraphqlImage";
-import HeadBuilder from "../HeadBuilder";
-import Layout from "../Layout";
+import { HeadBuilder } from "../HeadBuilder";
+import { Layout } from "../Layout";
+import { Link } from "../Link";
 import { SelectField } from "../SelectField";
+import { Spacer } from "../Spacer";
 import {
-  containerCss,
-  defaultImageCss,
-  filtersCss,
-  leftCss,
-  listCss,
-  listItemAvatarCss,
-  listItemCss,
-  listItemLinkCss,
-  listItemTitleCss,
-  pageHeaderCss,
-  percentBackgroundCss,
-  percentProgressCss,
-  progressRingCss,
-  progressStatsCss,
-  rightCss,
-} from "./WatchlistEntityIndexPage.module.scss";
+  gridStyle,
+  progressRingPostionStyle,
+  progressRingTransformStyle,
+} from "./WatchlistEntityIndexPage.css";
 import {
   ActionType,
   initState,
@@ -42,7 +33,7 @@ function Progress({
   return (
     <svg
       viewBox="0 0 36 36"
-      className={progressRingCss}
+      className={progressRingPostionStyle}
       preserveAspectRatio="none"
     >
       <g id="circles" strokeWidth="1">
@@ -51,7 +42,8 @@ function Progress({
           cx="18"
           cy="18"
           fill="none"
-          className={percentBackgroundCss}
+          strokeWidth={1}
+          stroke={borderColors.default}
         />
         <circle
           r="17.5"
@@ -60,7 +52,11 @@ function Progress({
           fill="none"
           strokeDasharray={`${circumference} ${circumference}`}
           strokeDashoffset={circumference - percent * circumference}
-          className={percentProgressCss}
+          stroke={backgroundColors.progress}
+          strokeLinecap="round"
+          strokeWidth={0.8}
+          transform="rotate(-90)"
+          className={progressRingTransformStyle}
         />
       </g>
     </svg>
@@ -74,39 +70,53 @@ function ListItem({
   entity: Queries.WatchlistEntityIndexItemFragment;
   slugPath: string;
 }): JSX.Element {
-  if (entity.avatar) {
+  if (entity.avatar && entity.slug) {
     return (
-      <li className={listItemCss}>
+      <Box as="li" display="flex" flexDirection="column">
         <Link
-          className={listItemLinkCss}
           to={`/watchlist/${slugPath}/${entity.slug}/`}
+          max-width={160}
+          borderRadius="half"
+          transform="safariBorderRadiusFix"
+          width="full"
+          overflow="hidden"
         >
           <GraphqlImage
             image={entity.avatar}
-            className={listItemAvatarCss}
             alt={`An image of ${entity.name}`}
           />
           <Progress entity={entity} />
         </Link>
-        <div className={listItemTitleCss}>
-          <Link to={`/watchlist/${slugPath}/${entity.slug}/`}>
-            {entity.name}
-          </Link>
-        </div>
-        <div className={progressStatsCss}>
+        <Spacer axis="vertical" size={8} />
+        <Link
+          to={`/watchlist/${slugPath}/${entity.slug}/`}
+          color="accent"
+          textDecoration="none"
+          fontSize="normal"
+          textAlign="center"
+          display="block"
+        >
+          {entity.name}
+        </Link>
+        <Box color="subtle" fontSize="normal" textAlign="center">
           {entity.reviewCount} / {entity.titleCount}
-        </div>
-      </li>
+        </Box>
+      </Box>
     );
   }
   return (
-    <li className={listItemCss}>
-      <div className={listItemLinkCss}>
+    <Box as="li" display="flex" flexDirection="column">
+      <Box
+        maxWidth={160}
+        borderRadius="half"
+        transform="safariBorderRadiusFix"
+        overflow="hidden"
+      >
         <svg
-          className={`${listItemAvatarCss} ${defaultImageCss}`}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
-          fill="currentColor"
+          fill={backgroundColors.subtle}
+          width="auto"
         >
           <path
             clipRule="evenodd"
@@ -115,12 +125,15 @@ function ListItem({
           />
         </svg>
         <Progress entity={entity} />
-      </div>
-      <div className={listItemTitleCss}>{entity.name}</div>
-      <div className={progressStatsCss}>
+      </Box>
+      <Spacer axis="vertical" size={8} />
+      <Box fontSize="normal" textAlign="center" display="block">
+        {entity.name}
+      </Box>
+      <Box color="subtle" fontSize="normal" textAlign="center">
         {entity.reviewCount} / {entity.titleCount}
-      </div>
-    </li>
+      </Box>
+    </Box>
   );
 }
 
@@ -200,20 +213,41 @@ export default function WatchlistEntityIndexPage({
 
   return (
     <Layout>
-      <main className={containerCss}>
-        <div className={leftCss}>
-          <FilterPageHeader
-            className={pageHeaderCss}
-            heading={entityDetails.pluralName}
-            tagline={<q>{entityDetails.tagLine}</q>}
-            breadcrumb={<Link to="/watchlist/">Watchlist</Link>}
-          />
-          <div className={filtersCss}>
+      <Box
+        as="main"
+        display="flex"
+        flexDirection={{ default: "column", desktop: "row" }}
+        paddingX={{ default: 0, desktop: "gutter" }}
+        columnGap={64}
+      >
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          paddingX={{ default: "gutter", desktop: 0 }}
+          paddingTop={32}
+          flexBasis={320}
+        >
+          <Box maxWidth="prose">
+            <Link color="accent" textDecoration="none" to="/watchlist/">
+              Watchlist
+            </Link>
+            <Spacer axis="vertical" size={16} />
+            <Box as="h1" fontSize="pageTitle">
+              {entityDetails.pluralName}
+            </Box>
+            <Spacer axis="vertical" size={16} />
+            <Box color="subtle">
+              <q>{entityDetails.tagLine}</q>
+            </Box>
+          </Box>
+          <Spacer axis="vertical" size={32} />
+          <Box>
             <Fieldset legend="Filter & Sort">
               <DebouncedInput
                 label="Name"
                 placeholder="Enter all or part of a name"
-                onChange={(value) =>
+                onInputChange={(value) =>
                   dispatch({ type: ActionType.FILTER_NAME, value })
                 }
               />
@@ -231,10 +265,16 @@ export default function WatchlistEntityIndexPage({
                 <option value="reviews">Review Count</option>
               </SelectField>
             </Fieldset>
-          </div>
-        </div>
-        <div className={rightCss}>
-          <ul data-testid="entity-list" className={listCss}>
+          </Box>
+        </Box>
+        <Box display="flex" flexDirection="column" flexGrow={1}>
+          <Spacer axis="vertical" size={32} />
+          <Box
+            as="ol"
+            data-testid="entity-list"
+            padding={0}
+            className={gridStyle}
+          >
             {state.filteredEntities.map((entity) => {
               return (
                 <ListItem
@@ -244,9 +284,10 @@ export default function WatchlistEntityIndexPage({
                 />
               );
             })}
-          </ul>
-        </div>
-      </main>
+          </Box>
+          <Spacer axis="vertical" size={128} />
+        </Box>
+      </Box>
     </Layout>
   );
 }

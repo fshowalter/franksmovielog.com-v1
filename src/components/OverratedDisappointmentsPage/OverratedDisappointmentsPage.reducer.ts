@@ -15,32 +15,23 @@ export type SortType =
   | "grade-desc";
 
 function sortMovies(
-  viewings: Queries.OverratedDisappointmentsPageNodeFragment[],
+  viewings: Queries.OverratedDisappointmentsMovieFragment[],
   sortOrder: SortType
 ) {
   const sortMap: Record<
     SortType,
     (
-      a: Queries.OverratedDisappointmentsPageNodeFragment,
-      b: Queries.OverratedDisappointmentsPageNodeFragment
+      a: Queries.OverratedDisappointmentsMovieFragment,
+      b: Queries.OverratedDisappointmentsMovieFragment
     ) => number
   > = {
-    "release-date-desc": (a, b) =>
-      sortStringDesc(a.reviewedMovie.releaseDate, b.reviewedMovie.releaseDate),
-    "release-date-asc": (a, b) =>
-      sortStringAsc(a.reviewedMovie.releaseDate, b.reviewedMovie.releaseDate),
-    title: (a, b) =>
-      collator.compare(a.reviewedMovie.sortTitle, b.reviewedMovie.sortTitle),
+    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
+    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
+    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) =>
-      sortNumberAsc(
-        a.reviewedMovie.gradeValue || 50,
-        b.reviewedMovie.gradeValue || 50
-      ),
+      sortNumberAsc(a.gradeValue || 50, b.gradeValue || 50),
     "grade-desc": (a, b) =>
-      sortNumberDesc(
-        a.reviewedMovie.gradeValue || -1,
-        b.reviewedMovie.gradeValue || -1
-      ),
+      sortNumberDesc(a.gradeValue || -1, b.gradeValue || -1),
   };
 
   const comparer = sortMap[sortOrder];
@@ -50,13 +41,13 @@ function sortMovies(
 /** The page state. */
 type State = {
   /** All possible movies. */
-  allMovies: Queries.OverratedDisappointmentsPageNodeFragment[];
+  allMovies: Queries.OverratedDisappointmentsMovieFragment[];
   /** Movies matching the current filters. */
-  filteredMovies: Queries.OverratedDisappointmentsPageNodeFragment[];
+  filteredMovies: Queries.OverratedDisappointmentsMovieFragment[];
   /** The active filters. */
   filters: Record<
     string,
-    (movie: Queries.OverratedDisappointmentsPageNodeFragment) => boolean
+    (movie: Queries.OverratedDisappointmentsMovieFragment) => boolean
   >;
   /** The number of movies to show. */
   showCount: number;
@@ -72,7 +63,7 @@ const SHOW_COUNT_DEFAULT = 24;
 export function initState({
   movies,
 }: {
-  movies: Queries.OverratedDisappointmentsPageNodeFragment[];
+  movies: Queries.OverratedDisappointmentsMovieFragment[];
 }): State {
   return {
     allMovies: movies,
@@ -146,12 +137,12 @@ export default function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (movie: Queries.OverratedDisappointmentsPageNodeFragment) => {
-          return regex.test(movie.reviewedMovie.title);
+        title: (movie: Queries.OverratedDisappointmentsMovieFragment) => {
+          return regex.test(movie.title);
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<Queries.OverratedDisappointmentsPageNodeFragment>({
+        applyFilters<Queries.OverratedDisappointmentsMovieFragment>({
           collection: state.allMovies,
           filters,
         }),
@@ -166,17 +157,15 @@ export default function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (
-          movie: Queries.OverratedDisappointmentsPageNodeFragment
-        ) => {
-          const releaseYear = movie.reviewedMovie.year;
+        releaseYear: (movie: Queries.OverratedDisappointmentsMovieFragment) => {
+          const releaseYear = movie.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
           );
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<Queries.OverratedDisappointmentsPageNodeFragment>({
+        applyFilters<Queries.OverratedDisappointmentsMovieFragment>({
           collection: state.allMovies,
           filters,
         }),
@@ -191,12 +180,12 @@ export default function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_GENRES: {
       filters = {
         ...state.filters,
-        genres: (movie: Queries.OverratedDisappointmentsPageNodeFragment) => {
+        genres: (movie: Queries.OverratedDisappointmentsMovieFragment) => {
           return action.values.every((genre) => movie.genres.includes(genre));
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<Queries.OverratedDisappointmentsPageNodeFragment>({
+        applyFilters<Queries.OverratedDisappointmentsMovieFragment>({
           collection: state.allMovies,
           filters,
         }),

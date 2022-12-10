@@ -90,6 +90,7 @@ export const atomicProperties = {
   letterSpacing: letterSpacing,
   textDecoration: ["none"],
   maxWidth: {
+    160: "160px",
     512: "512px",
     prose: PROSE_CONTENT_WIDTH,
     proseWithGutters: PROSE_CONTENT_WIDTH_WITH_GUTTERS,

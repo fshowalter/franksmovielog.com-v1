@@ -336,7 +336,7 @@ export default function ReviewsIndexPage({
         </Box>
         <Box
           name="list"
-          ref={listHeader}
+          innerRef={listHeader}
           display="flex"
           flexDirection="column"
           flexGrow={1}
