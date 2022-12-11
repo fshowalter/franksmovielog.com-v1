@@ -2,7 +2,7 @@
   "name": "franksmovielog.com",
   "private": true,
   "description": "My life at the movies.",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "author": "Frank Showalter <fshowalter@gmail.com>",
   "dependencies": {
     "@dessert-box/react": "^0.4.0",
@@ -13,11 +13,11 @@
     "@vanilla-extract/webpack-plugin": "^2.2.0",
     "babel-preset-gatsby": "^3.0.0",
     "gatsby": "^4.24.8",
+    "gatsby-cli": "^5.2.0",
     "gatsby-plugin-catch-links": "^4.24.0",
     "gatsby-plugin-feed": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
-    "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-plugin-sitemap": "^5.24.0",
     "gatsby-plugin-vanilla-extract": "^4.0.0",
@@ -34,10 +34,8 @@
     "react-dom": "^17.0.2",
     "react-select": "^5.6.1",
     "remark": "^13.0.0",
-    "sass": "^1.56.1",
     "typescript": "^4.9.3",
-    "unist-util-visit": "2.0.3",
-    "gatsby-cli": "^5.2.0"
+    "unist-util-visit": "2.0.3"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.19.0",
@@ -74,14 +72,7 @@
     "lint-staged": ">=13.0.3",
     "prettier": "2.8.0",
     "react-select-event": "^5.5.1",
-    "react-test-renderer": "^17.0.2",
-    "stylelint": "^14.15.0",
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-recommended": "^9.0.0",
-    "stylelint-config-sass-guidelines": "^9.0.0",
-    "stylelint-config-standard-scss": "^6.1.0",
-    "stylelint-order": "^5.0.0",
-    "typed-scss-modules": "^7.0.1"
+    "react-test-renderer": "^17.0.2"
   },
   "keywords": [
     "gatsby"
@@ -93,14 +84,12 @@
     "format": "yarn prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "yarn gatsby serve",
     "clean": "yarn gatsby clean",
-    "lint": "yarn run lint:js && yarn run lint:css",
+    "lint": "yarn run lint:js",
     "lint:js": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:css": "yarn stylelint './src/**/*.?(s)css'",
     "format:check": "yarn prettier --check \"**/*.{json,js,css,scss,md,ts,tsx,jsx}\"",
     "test": "yarn jest",
     "test:watch": "yarn jest --watch",
     "type-check": "yarn tsc --noEmit",
-    "type-css": "yarn typed-scss-modules src/ --exportType named",
     "sync": "./sync-movielog.js",
     "prepare": "husky install"
   },
@@ -118,6 +107,6 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.?(s)css": "stylelint --fix",
-    "*.{json,js,css,scss,md,ts,tsx,jsx,yml}": "prettier --write"
+    "*.{json,js,css,md,ts,tsx,jsx,yml}": "prettier --write"
   }
 }

@@ -129,7 +129,6 @@ const config: GatsbyConfig = {
   plugins: [
     gatsbyPluginPageCreator,
     gatsbyPluginSitemap,
-    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
