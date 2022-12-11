@@ -38,6 +38,25 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "yarn"
 
+      # `--prefer-offline` gives cache priority
+      - name: install dependencies
+        run: yarn install --prefer-offline --frozen-lockfile
+
+      - name: lint js
+        run: yarn lint:js
+
+  type-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: "yarn"
+
       - name: get gatsby cache
         id: gatsby-cache-build
         uses: actions/cache@v3
@@ -59,10 +78,7 @@ jobs:
           CI: true
 
       - name: lint js
-        run: yarn lint:js
-
-      - name: lint css
-        run: yarn lint:css
+        run: yarn type-check
 
   test:
     runs-on: ubuntu-latest
