@@ -276,8 +276,6 @@ const ReviewedMoviesJson = {
           },
         }));
 
-        console.log(Array.from(watchlist.performers));
-
         ({ entries: watchlist.directors } = await context.nodeModel.findAll({
           type: SchemaNames.WATCHLIST_ENTITIES_JSON,
           query: {
