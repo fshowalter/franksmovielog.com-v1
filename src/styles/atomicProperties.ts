@@ -15,12 +15,18 @@ import {
 } from "./typography.css";
 
 export const atomicProperties = {
-  display: ["block", "none", "flex", "inline-flex", "inline-block"],
   backgroundColor: {
     ...backgroundColors,
     zebra: {
       selectors: {
         "&:nth-child(even)": {
+          backgroundColor: backgroundColors.subtle,
+        },
+      },
+    },
+    zebraOdd: {
+      selectors: {
+        "&:nth-child(odd)": {
           backgroundColor: backgroundColors.subtle,
         },
       },
@@ -74,6 +80,18 @@ export const atomicProperties = {
       fontSize: "0.75rem",
       lineHeight: "1rem",
     },
+    yearNavigation: {
+      fontSize: "1.125rem",
+      lineHeight: "1.5rem",
+    },
+    statNumber: {
+      fontSize: "2rem",
+      lineHeight: 1,
+    },
+    statHeading: {
+      fontSize: "1.125rem",
+      lineHeight: "1.5rem",
+    },
     pageTitle: {
       fontSize: "2rem",
       fontWeight: "normal",
@@ -91,6 +109,7 @@ export const atomicProperties = {
   textDecoration: ["none"],
   maxWidth: {
     160: "160px",
+    200: "200px",
     512: "512px",
     prose: PROSE_CONTENT_WIDTH,
     proseWithGutters: PROSE_CONTENT_WIDTH_WITH_GUTTERS,
@@ -119,9 +138,10 @@ export const atomicProperties = {
   backgroundRepeat: ["repeat-x", "repeat"],
   backgroundPositionY: [16],
   justifyContent: ["space-between", "center", "flex-end"],
-  textAlign: ["left", "center", "inherit"],
+  textAlign: ["left", "right", "center", "inherit"],
 
-  columnGap: [".5ch", 8, 16, 24, 32, 64],
+  columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
   flexBasis: size,
   flexShrink: [0],
+  zIndex: [100],
 } as const;

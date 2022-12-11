@@ -1,39 +1,22 @@
 import { graphql } from "gatsby";
+import { Box } from "../Box";
 import { Poster, PosterList } from "../PosterList";
-import {
-  containerCss,
-  listItemSlugCss,
-  listItemTitleCss,
-  listItemTitleYearCss,
-} from "./MostWatchedMovies.module.scss";
-import StatHeading from "./StatHeading";
+import { Spacer } from "../Spacer";
+import { StatHeading } from "./StatHeading";
 
 function ListItemDetails({
   movie,
 }: {
   movie: Queries.MostWatchedMovieFragment;
 }): JSX.Element {
-  if (movie.reviewedMovie?.slug) {
-    return (
-      <div className={listItemSlugCss}>
-        <div>{movie.viewingCount.toLocaleString()} times</div>
-      </div>
-    );
-  }
-
   return (
-    <>
-      <div className={listItemTitleCss}>
-        {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
-      </div>
-      <div className={listItemSlugCss}>
-        <div>{movie.viewingCount.toLocaleString()} times</div>
-      </div>
-    </>
+    <Box fontSize="normal" color="subtle" textAlign="center">
+      <div>{movie.viewingCount.toLocaleString()} times</div>
+    </Box>
   );
 }
 
-export default function MostWatchedMovies({
+export function MostWatchedMovies({
   movies,
 }: {
   movies: Queries.MostWatchedMoviesFragment | null;
@@ -51,7 +34,8 @@ export default function MostWatchedMovies({
   return (
     <>
       <StatHeading>Most Watched Movies</StatHeading>
-      <div className={containerCss}>
+      <Box>
+        <Spacer axis="vertical" size={16} />
         <PosterList>
           {mostWatched.map((movie) => {
             return (
@@ -62,11 +46,13 @@ export default function MostWatchedMovies({
                 title={movie.title}
                 year={movie.year}
                 details={<ListItemDetails movie={movie} />}
+                showTitle={!movie.reviewedMovie?.slug}
               />
             );
           })}
         </PosterList>
-      </div>
+        <Spacer axis="vertical" size={16} />
+      </Box>
     </>
   );
 }
@@ -94,7 +80,7 @@ export const query = graphql`
   }
 
   fragment MostWatchedMovies on MostWatchedMoviesJson {
-    mostWatched: most_watched {
+    mostWatched {
       ...MostWatchedMovie
     }
   }

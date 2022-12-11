@@ -1,11 +1,5 @@
-import { Link } from "gatsby";
-import React from "react";
-import {
-  allTimeCss,
-  listCss,
-  listItemCss,
-  listItemLinkCss,
-} from "./YearNavigation.module.scss";
+import { Box } from "../Box";
+import { Link } from "../Link";
 
 function AllTimeLink({
   currentYear,
@@ -19,11 +13,11 @@ function AllTimeLink({
   }
 
   return (
-    <li className={allTimeCss}>
-      <Link to={linkFunc("all")} className={listItemLinkCss}>
+    <Box as="li" display="block">
+      <Link color="accent" textDecoration="none" to={linkFunc("all")}>
         All-Time
       </Link>
-    </li>
+    </Box>
   );
 }
 
@@ -41,19 +35,23 @@ function YearLink({
   }
 
   if (year === currentYear) {
-    return <li className={listItemCss}>{year}</li>;
+    return (
+      <Box as="li" display="block">
+        {year}
+      </Box>
+    );
   }
 
   return (
-    <li className={listItemCss}>
-      <Link to={linkFunc(year)} className={listItemLinkCss}>
+    <Box as="li" display="block">
+      <Link color="accent" textDecoration="none" to={linkFunc(year)}>
         {year}
       </Link>
-    </li>
+    </Box>
   );
 }
 
-export default function YearNavigation({
+export function YearNavigation({
   currentYear,
   years,
   linkFunc,
@@ -63,7 +61,13 @@ export default function YearNavigation({
   linkFunc: (year: string) => string;
 }): JSX.Element {
   return (
-    <ul className={listCss}>
+    <Box
+      as="ul"
+      padding={0}
+      display="flex"
+      fontSize="yearNavigation"
+      columnGap={16}
+    >
       <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
       {years.map((year) => {
         return (
@@ -75,6 +79,6 @@ export default function YearNavigation({
           />
         );
       })}
-    </ul>
+    </Box>
   );
 }

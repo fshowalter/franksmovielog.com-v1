@@ -6,7 +6,6 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
-import type { WatchlistMovie } from "./WatchlistEntityPage";
 
 export type SortType =
   | "release-date-asc"
@@ -15,21 +14,24 @@ export type SortType =
   | "grade-asc"
   | "grade-desc";
 
-function sortMovies(titles: WatchlistMovie[], sortType: SortType) {
+function sortMovies(
+  titles: Queries.WatchlistEntityMovieFragment[],
+  sortType: SortType
+) {
   const sortMap: Record<
     SortType,
-    (a: WatchlistMovie, b: WatchlistMovie) => number
+    (
+      a: Queries.WatchlistEntityMovieFragment,
+      b: Queries.WatchlistEntityMovieFragment
+    ) => number
   > = {
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) =>
-      sortNumberAsc(a.lastReviewGradeValue || 50, b.lastReviewGradeValue || 50),
+      sortNumberAsc(a.gradeValue || 50, b.gradeValue || 50),
     "grade-desc": (a, b) =>
-      sortNumberDesc(
-        a.lastReviewGradeValue || -1,
-        b.lastReviewGradeValue || -1
-      ),
+      sortNumberDesc(a.gradeValue || -1, b.gradeValue || -1),
   };
 
   const comparer = sortMap[sortType];
@@ -37,8 +39,10 @@ function sortMovies(titles: WatchlistMovie[], sortType: SortType) {
   return titles.sort(comparer);
 }
 
-function reviewedMovieCount(movies: WatchlistMovie[]): number {
-  return movies.filter((movie) => movie.reviewedMovieSlug).length;
+function reviewedMovieCount(
+  movies: Queries.WatchlistEntityMovieFragment[]
+): number {
+  return movies.filter((movie) => movie.slug).length;
 }
 
 /**
@@ -46,13 +50,16 @@ function reviewedMovieCount(movies: WatchlistMovie[]): number {
  */
 type State = {
   /** All possible reviews. */
-  allMovies: WatchlistMovie[];
+  allMovies: Queries.WatchlistEntityMovieFragment[];
   /** Reviews matching the current filters. */
-  filteredMovies: WatchlistMovie[];
+  filteredMovies: Queries.WatchlistEntityMovieFragment[];
   /** Number of movies to show on the page. */
   showCount: number;
   /** The active filters. */
-  filters: Record<string, (title: WatchlistMovie) => boolean>;
+  filters: Record<
+    string,
+    (title: Queries.WatchlistEntityMovieFragment) => boolean
+  >;
   /** The reviewed movie count */
   reviewedMovieCount: number;
   /** The active sort type. */
@@ -61,7 +68,11 @@ type State = {
 
 const SHOW_COUNT_DEFAULT = 24;
 
-export function initState({ movies }: { movies: WatchlistMovie[] }): State {
+export function initState({
+  movies,
+}: {
+  movies: Queries.WatchlistEntityMovieFragment[];
+}): State {
   return {
     allMovies: movies,
     filteredMovies: movies,
@@ -124,12 +135,15 @@ export default function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (review: WatchlistMovie) => {
+        title: (review: Queries.WatchlistEntityMovieFragment) => {
           return regex.test(review.title);
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistEntityMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortType
       );
       return {
@@ -142,7 +156,7 @@ export default function reducer(state: State, action: Action): State {
     case ActionType.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (review: WatchlistMovie) => {
+        releaseYear: (review: Queries.WatchlistEntityMovieFragment) => {
           const releaseYear = review.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
@@ -150,7 +164,10 @@ export default function reducer(state: State, action: Action): State {
         },
       };
       filteredMovies = sortMovies(
-        applyFilters<WatchlistMovie>({ collection: state.allMovies, filters }),
+        applyFilters<Queries.WatchlistEntityMovieFragment>({
+          collection: state.allMovies,
+          filters,
+        }),
         state.sortType
       );
       return {

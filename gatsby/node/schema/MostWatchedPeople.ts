@@ -21,7 +21,7 @@ const MostWatchedPeople = {
   interfaces: ["Node"],
   fields: {
     id: "ID!",
-    viewing_year: "String!",
+    viewingYear: "String!",
     mostWatched: `[MostWatchedPerson!]!`,
   },
   extensions: {

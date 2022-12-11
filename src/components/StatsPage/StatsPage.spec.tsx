@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import StatsPage from "./StatsPage";
-import data, { yearWithNoMostWatched } from "./StatsPage.fixtures";
+import { data } from "./StatsPage.fixtures";
 
 describe("/stats/{year}", () => {
   it("renders for legacy year", () => {
@@ -27,17 +27,6 @@ describe("/stats/", () => {
   it("renders all-time", () => {
     const { asFragment } = render(
       <StatsPage data={data} pageContext={{ yearScope: "all" }} />
-    );
-
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("doesn't render most watched movies if non exist for year", () => {
-    const { asFragment } = render(
-      <StatsPage
-        data={yearWithNoMostWatched}
-        pageContext={{ yearScope: "all" }}
-      />
     );
 
     expect(asFragment()).toMatchSnapshot();

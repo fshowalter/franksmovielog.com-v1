@@ -1,5 +1,6 @@
-import { graphql, Link } from "gatsby";
-import MostWatchedPeople from "./MostWatchedPeople";
+import { graphql } from "gatsby";
+import { Link } from "../Link";
+import { MostWatchedPeople } from "./MostWatchedPeople";
 
 function PerformerName({
   person,
@@ -8,7 +9,11 @@ function PerformerName({
 }): JSX.Element {
   if (person.slug) {
     return (
-      <Link to={`/watchlist/performers/${person.slug}/`}>
+      <Link
+        textDecoration="none"
+        color="accent"
+        to={`/watchlist/performers/${person.slug}/`}
+      >
         {person.fullName}
       </Link>
     );
@@ -17,7 +22,7 @@ function PerformerName({
   return <>{person.fullName}</>;
 }
 
-export default function MostWatchedPerformers({
+export function MostWatchedPerformers({
   performers,
 }: {
   performers: Queries.MostWatchedPerformersFragment | null;

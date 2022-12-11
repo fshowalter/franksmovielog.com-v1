@@ -257,7 +257,7 @@ export default function ReviewsIndexPage({
                 }
               />
               <SelectField
-                label="Media"
+                label="Medium"
                 onChange={(e) =>
                   dispatch({
                     type: ActionTypes.FILTER_VENUE,

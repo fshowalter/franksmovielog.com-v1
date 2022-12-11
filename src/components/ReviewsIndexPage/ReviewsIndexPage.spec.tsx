@@ -30,28 +30,28 @@ describe("/reviews", () => {
     expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 
-  it("can filter by venue", async () => {
+  it("can filter by medium", async () => {
     expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Venue"),
+      screen.getByLabelText("Medium"),
       "Arrow Player"
     );
 
     expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
 
-  it("can filter by venue then show all", async () => {
+  it("can filter by medium then show all", async () => {
     expect.hasAssertions();
 
     render(<ReviewsIndexPage data={data} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Venue"),
+      screen.getByLabelText("Medium"),
       "Arrow Player"
     );
-    await userEvent.selectOptions(screen.getByLabelText("Venue"), "All");
+    await userEvent.selectOptions(screen.getByLabelText("Medium"), "All");
 
     expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
@@ -149,7 +149,7 @@ describe("/reviews", () => {
 
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Venue"), "Shudder");
+    await userEvent.selectOptions(screen.getByLabelText("Medium"), "Shudder");
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),

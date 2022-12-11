@@ -1,31 +1,29 @@
 import { graphql } from "gatsby";
-import HeadBuilder from "../HeadBuilder";
-import Layout from "../Layout";
-import PageTitle from "../PageTitle";
-import ByDecade from "./ByDecade";
-import Callouts from "./Callouts";
-import GradeDistribution from "./GradeDistribution";
-import MostWatchedDirectors from "./MostWatchedDirectors";
-import MostWatchedMovies from "./MostWatchedMovies";
-import MostWatchedPerformers from "./MostWatchedPerformers";
-import MostWatchedWriters from "./MostWatchedWriters";
-import {
-  containerCss,
-  contentCss,
-  headerCss,
-  headingCss,
-  taglineCss,
-} from "./StatsPage.module.scss";
-import TopMedia from "./TopMedia";
-import YearNavigation from "./YearNavigation";
+import { Box, IBoxProps } from "../Box";
+import { HeadBuilder } from "../HeadBuilder";
+import { Layout } from "../Layout";
+import { PageTitle } from "../PageTitle";
+import { Spacer } from "../Spacer";
+import { ByDecade } from "./ByDecade";
+import { Callouts } from "./Callouts";
+import { GradeDistribution } from "./GradeDistribution";
+import { MostWatchedDirectors } from "./MostWatchedDirectors";
+import { MostWatchedMovies } from "./MostWatchedMovies";
+import { MostWatchedPerformers } from "./MostWatchedPerformers";
+import { MostWatchedWriters } from "./MostWatchedWriters";
+import { TopMedia } from "./TopMedia";
+import { YearNavigation } from "./YearNavigation";
+
+interface ISubHeadingProps extends IBoxProps {
+  yearScope: string;
+  years: string[];
+}
 
 function SubHeading({
   yearScope,
   years,
-}: {
-  yearScope: string;
-  years: string[];
-}): JSX.Element {
+  ...rest
+}: ISubHeadingProps): JSX.Element {
   let subTitle = "A Year in Review";
 
   if (yearScope === "all") {
@@ -37,8 +35,9 @@ function SubHeading({
   }
 
   return (
-    <>
+    <Box {...rest}>
       {subTitle}
+      <Spacer axis="vertical" size={24} />
       <YearNavigation
         currentYear={yearScope}
         linkFunc={(year: string) => {
@@ -50,7 +49,7 @@ function SubHeading({
         }}
         years={years}
       />
-    </>
+    </Box>
   );
 }
 
@@ -115,31 +114,39 @@ export default function StatsPage({
 
   return (
     <Layout>
-      <main className={containerCss}>
-        <header className={headerCss}>
-          <PageTitle className={headingCss}>{pageTitle}</PageTitle>
-          <div className={taglineCss}>
-            <SubHeading
-              yearScope={yearScope}
-              years={[...viewing.years].sort().reverse()}
-            />
-          </div>
-        </header>
-        <div className={contentCss}>
-          {" "}
+      <Box as="main" paddingX="gutter">
+        <Box as="header">
+          <PageTitle textAlign="left" paddingBottom={0}>
+            {pageTitle}
+          </PageTitle>
+          <SubHeading
+            yearScope={yearScope}
+            years={[...viewing.years].sort().reverse()}
+            color="subtle"
+          />
+        </Box>
+        <div>
+          <Spacer axis="vertical" size={32} />
           <Callouts
             viewingCallouts={viewingCallouts}
             reviewCallouts={reviewCallouts}
           />
+          <Spacer axis="vertical" size={32} />
           <MostWatchedMovies movies={movies} />
           <ByDecade decades={decades} />
+          <Spacer axis="vertical" size={32} />
           <TopMedia topMedia={topMedia} />
+          <Spacer axis="vertical" size={32} />
           <GradeDistribution distributions={gradeDistribution?.nodes} />
+          <Spacer axis="vertical" size={32} />
           <MostWatchedDirectors directors={directors} />
+          <Spacer axis="vertical" size={32} />
           <MostWatchedPerformers performers={performers} />
+          <Spacer axis="vertical" size={32} />
           <MostWatchedWriters writers={writers} />
+          <Spacer axis="vertical" size={64} />
         </div>
-      </main>
+      </Box>
     </Layout>
   );
 }
@@ -167,16 +174,16 @@ export const pageQuery = graphql`
     topMedia: topMediaJson(viewing_year: { eq: $yearScope }) {
       ...TopMedia
     }
-    movies: mostWatchedMoviesJson(viewing_year: { eq: $yearScope }) {
+    movies: mostWatchedMoviesJson(viewingYear: { eq: $yearScope }) {
       ...MostWatchedMovies
     }
-    directors: mostWatchedDirectorsJson(viewing_year: { eq: $yearScope }) {
+    directors: mostWatchedDirectorsJson(viewingYear: { eq: $yearScope }) {
       ...MostWatchedDirectors
     }
-    performers: mostWatchedPerformersJson(viewing_year: { eq: $yearScope }) {
+    performers: mostWatchedPerformersJson(viewingYear: { eq: $yearScope }) {
       ...MostWatchedPerformers
     }
-    writers: mostWatchedWritersJson(viewing_year: { eq: $yearScope }) {
+    writers: mostWatchedWritersJson(viewingYear: { eq: $yearScope }) {
       ...MostWatchedWriters
     }
     viewing: allViewingStatsJson(sort: { fields: viewing_year, order: DESC }) {

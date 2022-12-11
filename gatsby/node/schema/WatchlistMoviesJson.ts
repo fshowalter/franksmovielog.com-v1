@@ -99,6 +99,30 @@ const WatchlistMoviesJson = {
       type: `${SchemaNames.REVIEWED_MOVIES_JSON}`,
       resolve: reviewedMovieResolver(),
     },
+    grade: {
+      type: "String",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "grade",
+        },
+      },
+    },
+    gradeValue: {
+      type: "Int",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "gradeValue",
+        },
+      },
+    },
+    slug: {
+      type: "String",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "slug",
+        },
+      },
+    },
     poster: posterResolver,
   },
   extensions: {

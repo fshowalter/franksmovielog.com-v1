@@ -1,28 +1,20 @@
-import { graphql, Link } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 import { useReducer } from "react";
-import Button from "../Button";
-import DebouncedInput from "../DebouncedInput";
-import Fieldset from "../Fieldset";
-import FilterPageHeader from "../FilterPageHeader";
-import HeadBuilder from "../HeadBuilder";
-import Layout from "../Layout";
+import { foregroundColors } from "../../styles/colors.css";
+import { HEADER_HEIGHT } from "../../styles/sizes";
+import { Box } from "../Box";
+import { Button } from "../Button";
+import { DebouncedInput } from "../DebouncedInput";
+import { Fieldset } from "../Fieldset";
+import { GraphqlImage } from "../GraphqlImage";
+import { HeadBuilder } from "../HeadBuilder";
+import { Layout } from "../Layout";
+import { Link } from "../Link";
 import { Poster, PosterList } from "../PosterList";
 import ProgressGraph from "../ProgressGraph";
 import { SelectField } from "../SelectField";
-import YearInput from "../YearInput";
-import {
-  containerCss,
-  filtersCss,
-  leftCss,
-  listHeaderGroupCss,
-  listInfoCss,
-  pageHeaderCss,
-  percentCss,
-  percentTotalsCss,
-  rightCss,
-  showMoreCss,
-} from "./WatchlistEntityPage.module.scss";
+import { Spacer } from "../Spacer";
+import { YearInput } from "../YearInput";
 import reducer, {
   ActionType,
   initState,
@@ -44,10 +36,13 @@ function ListInfo({
     showingText = `Showing 1-${visible} of ${total.toLocaleString()}`;
   }
 
-  return <div className={listInfoCss}>{showingText}</div>;
+  return <div>{showingText}</div>;
 }
 
-function groupForMovie(movie: WatchlistMovie, sortType: SortType): string {
+function groupForMovie(
+  movie: Queries.WatchlistEntityMovieFragment,
+  sortType: SortType
+): string {
   switch (sortType) {
     case "release-date-asc":
     case "release-date-desc": {
@@ -55,7 +50,7 @@ function groupForMovie(movie: WatchlistMovie, sortType: SortType): string {
     }
     case "grade-asc":
     case "grade-desc": {
-      return movie.lastReviewGrade || "Unrated";
+      return movie.grade || "Unrated";
     }
     case "title": {
       const letter = movie.sortTitle.substring(0, 1);
@@ -74,10 +69,11 @@ function groupMovies({
   movies,
   sortType,
 }: {
-  movies: WatchlistMovie[];
+  movies: Queries.WatchlistEntityMovieFragment[];
   sortType: SortType;
-}): Map<string, WatchlistMovie[]> {
-  const groupedMovies: Map<string, WatchlistMovie[]> = new Map();
+}): Map<string, Queries.WatchlistEntityMovieFragment[]> {
+  const groupedMovies: Map<string, Queries.WatchlistEntityMovieFragment[]> =
+    new Map();
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortType);
@@ -91,23 +87,6 @@ function groupMovies({
   });
 
   return groupedMovies;
-}
-
-function WatchlistEntityProgress({
-  total,
-  reviewed,
-}: {
-  total: number;
-  reviewed: number;
-}): JSX.Element {
-  return (
-    <>
-      <ProgressGraph total={total} complete={reviewed} />
-      <div className={percentTotalsCss}>
-        {reviewed}/{total} Reviewed
-      </div>
-    </>
-  );
 }
 
 export enum EntityType {
@@ -167,9 +146,9 @@ export function Head({
   data,
 }: {
   pageContext: PageContext;
-  data: PageQueryResult;
+  data: Queries.WatchlistEntityPageQuery;
 }): JSX.Element {
-  const entity = data.entity.nodes[0];
+  const entity = data.entity;
 
   const entityDetails = detailsForEntityType(
     pageContext.entityType,
@@ -195,9 +174,9 @@ export default function WatchlistEntityPage({
   data,
 }: {
   pageContext: PageContext;
-  data: PageQueryResult;
+  data: Queries.WatchlistEntityPageQuery;
 }): JSX.Element {
-  const entity = data.entity.nodes[0];
+  const entity = data.entity;
 
   const [state, dispatch] = useReducer(
     reducer,
@@ -206,10 +185,6 @@ export default function WatchlistEntityPage({
     },
     initState
   );
-
-  if (!entity.avatar) {
-    throw Error(`No avatar found for ${entity.name}.`);
-  }
 
   const entityDetails = detailsForEntityType(
     pageContext.entityType,
@@ -224,36 +199,57 @@ export default function WatchlistEntityPage({
 
   return (
     <Layout>
-      <main className={containerCss}>
-        <div className={leftCss}>
-          <FilterPageHeader
-            className={pageHeaderCss}
-            avatar={entity.avatar.childImageSharp.gatsbyImageData}
-            alt={`An image of ${entity.name}`}
-            heading={entity.name}
-            tagline={entityDetails.tagLine}
-            breadcrumb={
-              <div>
-                <Link to="/watchlist/">Watchlist</Link> /{" "}
-                <Link to={`/watchlist/${entityDetails.kind.toLowerCase()}`}>
-                  {entityDetails.kind}
-                </Link>
-              </div>
-            }
-          />
-          <div className={filtersCss}>
+      <Box
+        as="main"
+        display="flex"
+        flexDirection={{ default: "column", desktop: "row" }}
+        paddingX={{ default: 0, desktop: "gutter" }}
+        columnGap={64}
+      >
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          paddingX={{ default: "gutter", desktop: 0 }}
+          paddingTop={32}
+          flexBasis={320}
+        >
+          <Box maxWidth="prose">
+            <Box>
+              <Link to="/watchlist/">Watchlist</Link> /{" "}
+              <Link to={`/watchlist/${entityDetails.kind.toLowerCase()}`}>
+                {entityDetails.kind}
+              </Link>
+            </Box>
+            <Spacer axis="vertical" size={16} />
+            <GraphqlImage
+              image={entity.avatar}
+              alt={entity.name}
+              maxWidth={200}
+              borderRadius="half"
+              transform="safariBorderRadiusFix"
+            />
+            <Spacer axis="vertical" size={16} />
+            <Box as="h1" fontSize="pageTitle">
+              {entity.name}
+            </Box>
+            <Spacer axis="vertical" size={24} />
+            <Box color="subtle">{entityDetails.tagLine}</Box>
+          </Box>
+          <Spacer axis="vertical" size={32} />
+          <Box>
             <Fieldset legend="Filter & Sort">
               <DebouncedInput
                 label="Title"
                 placeholder="Enter all or part of a title"
-                onChange={(value) =>
+                onInputChange={(value) =>
                   dispatch({ type: ActionType.FILTER_TITLE, value })
                 }
               />
               <YearInput
                 label="Release Year"
-                years={data.entity.releaseYears}
-                onChange={(values) =>
+                years={data.distinct.releaseYears}
+                onYearChange={(values) =>
                   dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
                 }
               />
@@ -278,65 +274,100 @@ export default function WatchlistEntityPage({
                 <option value="grade-asc">Grade (Worst First)</option>
               </SelectField>
             </Fieldset>
-            <div className={listInfoCss}>
+            <Box color="subtle" paddingX="gutter" textAlign="center">
+              <Spacer axis="vertical" size={32} />
               <ListInfo
                 visible={state.showCount}
                 total={state.filteredMovies.length}
               />
-            </div>
-            <div className={percentCss}>
-              <WatchlistEntityProgress
+              <Spacer axis="vertical" size={32} />
+            </Box>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <ProgressGraph
                 total={state.filteredMovies.length}
-                reviewed={state.reviewedMovieCount}
+                complete={state.reviewedMovieCount}
+                width={160}
+                height={160}
               />
-            </div>
-          </div>
-        </div>
-        <div className={rightCss}>
-          <ol data-testid="movie-list">
+              <Spacer axis="vertical" size={24} />
+              <Box color="subtle" textAlign="center" fontSize="normal">
+                {state.reviewedMovieCount}/
+                {state.filteredMovies.length.toLocaleString()} Reviewed
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+        <Box name="list" display="flex" flexDirection="column" flexGrow={1}>
+          <Box as="ol" data-testid="movie-list" padding={0}>
             {[...groupedMovies].map(([group, movies], index) => {
               return (
-                <li key={group}>
-                  <div
-                    className={listHeaderGroupCss}
+                <Box as="li" key={group} display="block">
+                  <Box
+                    fontSize="groupHeading"
                     style={{ zIndex: index + 100 }}
+                    paddingTop={{ default: 0, desktop: 16 }}
+                    position="sticky"
+                    backgroundColor="default"
+                    top={{ default: 0, desktop: HEADER_HEIGHT }}
                   >
-                    {group}
-                  </div>
-                  <PosterList>
+                    <Box
+                      backgroundColor="canvas"
+                      paddingY={8}
+                      paddingX={{ default: "gutter", desktop: 24 }}
+                    >
+                      {group}
+                    </Box>
+                  </Box>
+                  <Spacer axis="vertical" size={16} />
+                  <PosterList
+                    paddingLeft={{ default: "gutter", desktop: 24 }}
+                    paddingRight={{ default: "gutter", desktop: 0 }}
+                  >
                     {movies.map((movie) => {
                       return (
                         <Poster
                           key={movie.imdbId}
                           title={movie.title}
                           year={movie.year}
-                          slug={movie.reviewedMovieSlug}
-                          grade={movie.lastReviewGrade}
+                          slug={movie.slug}
+                          grade={movie.grade}
                           image={movie.poster}
                         />
                       );
                     })}
                   </PosterList>
-                </li>
+                </Box>
               );
             })}
-          </ol>
-          <div className={showMoreCss}>
+          </Box>
+          <Box display="flex" flexDirection="column" alignItems="center">
+            <Spacer axis="vertical" size={32} />
             {state.filteredMovies.length > state.showCount && (
-              <Button onClick={() => dispatch({ type: ActionType.SHOW_MORE })}>
-                <svg
-                  focusable="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+              <>
+                <Button
+                  paddingX="gutter"
+                  onClick={() => dispatch({ type: ActionType.SHOW_MORE })}
+                  display="flex"
+                  columnGap={16}
                 >
-                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
-                </svg>
-                Show More
-              </Button>
+                  <svg
+                    width="24"
+                    height="24"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill={foregroundColors.accent}
+                  >
+                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                  </svg>
+                  Show More...
+                </Button>
+                <Spacer axis="vertical" size={32} />
+              </>
             )}
-          </div>
-        </div>
-      </main>
+          </Box>
+        </Box>
+      </Box>
     </Layout>
   );
 }
@@ -345,93 +376,53 @@ interface PageContext {
   entityType: EntityType;
 }
 
-type WatchlistMovieBase = {
-  imdbId: string;
-  title: string;
-  year: number;
-  sortTitle: string;
-  releaseDate: string;
-  poster: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-};
-
-type UnreviewedWatchlistMovie = {
-  lastReviewGrade: null;
-  lastReviewGradeValue: null;
-  reviewedMovieSlug: null;
-} & WatchlistMovieBase;
-
-type ReviewedWatchlistMovie = {
-  lastReviewGrade: string;
-  lastReviewGradeValue: number;
-  reviewedMovieSlug: string;
-} & WatchlistMovieBase;
-
-export type WatchlistMovie = UnreviewedWatchlistMovie | ReviewedWatchlistMovie;
-
-interface PageQueryResult {
-  entity: {
-    nodes: {
-      name: string;
-      avatar: null | {
-        childImageSharp: {
-          gatsbyImageData: IGatsbyImageData;
-        };
-      };
-      watchlistMovies: WatchlistMovie[];
-    }[];
-    releaseYears: string[];
-  };
-}
-
 export const pageQuery = graphql`
-  query ($slug: String!, $entityType: String!) {
-    entity: allWatchlistEntitiesJson(
+  fragment WatchlistEntityMovie on WatchlistMoviesJson {
+    imdbId
+    title
+    year
+    grade
+    gradeValue
+    slug
+    sortTitle
+    releaseDate
+    poster {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 200
+          placeholder: TRACED_SVG
+        )
+      }
+    }
+  }
+
+  query WatchlistEntityPage($slug: String!, $entityType: String!) {
+    distinct: allWatchlistEntitiesJson(
       filter: { entityType: { eq: $entityType }, slug: { eq: $slug } }
       limit: 1
     ) {
-      nodes {
-        name
-        avatar {
-          childImageSharp {
-            gatsbyImageData(
-              layout: FIXED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 200
-              height: 200
-              placeholder: TRACED_SVG
-            )
-          }
-        }
-        watchlistMovies {
-          imdbId
-          title
-          year
-          reviewedMovie {
-            grade
-            gradeValue
-            slug
-          }
-          sortTitle
-          releaseDate
-          poster {
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                formats: [JPG, AVIF]
-                quality: 80
-                width: 200
-                placeholder: TRACED_SVG
-              )
-            }
-          }
+      releaseYears: distinct(field: watchlistMovies___year)
+    }
+    entity: watchlistEntity(entityType: $entityType, slug: $slug) {
+      name
+      avatar {
+        childImageSharp {
+          gatsbyImageData(
+            layout: FIXED
+            formats: [JPG, AVIF]
+            quality: 80
+            width: 200
+            height: 200
+            placeholder: TRACED_SVG
+          )
         }
       }
-      releaseYears: distinct(field: watchlistMovies___year)
+      watchlistMovies {
+        ...WatchlistEntityMovie
+      }
     }
   }
 `;

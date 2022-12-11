@@ -529,9 +529,9 @@ export default function WatchlistIndexPage({
             })}
           </Box>
           <Box display="flex" flexDirection="column" alignItems="center">
+            <Spacer axis="vertical" size={32} />
             {state.filteredMovies.length > state.showCount && (
               <>
-                <Spacer axis="vertical" size={32} />
                 <Button
                   paddingX="gutter"
                   onClick={() => dispatch({ type: ActionType.SHOW_MORE })}

@@ -1,5 +1,6 @@
-import { graphql, Link } from "gatsby";
-import MostWatchedPeople from "./MostWatchedPeople";
+import { graphql } from "gatsby";
+import { Link } from "../Link";
+import { MostWatchedPeople } from "./MostWatchedPeople";
 
 function DirectorName({
   person,
@@ -8,14 +9,20 @@ function DirectorName({
 }): JSX.Element {
   if (person.slug) {
     return (
-      <Link to={`/watchlist/directors/${person.slug}/`}>{person.fullName}</Link>
+      <Link
+        color="accent"
+        textDecoration="none"
+        to={`/watchlist/directors/${person.slug}/`}
+      >
+        {person.fullName}
+      </Link>
     );
   }
 
   return <>{person.fullName}</>;
 }
 
-export default function MostWatchedDirectors({
+export function MostWatchedDirectors({
   directors,
 }: {
   directors: Queries.MostWatchedDirectorsFragment | null;

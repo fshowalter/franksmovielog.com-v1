@@ -1,7 +1,8 @@
 import React from "react";
-import { barCss, hideOnSmallScreensCss } from "./Bar.module.scss";
+import { Box } from "../Box";
+import { gradientBackgroundStyle } from "./Bar.css";
 
-export default function Bar({
+export function Bar({
   value,
   maxValue,
   hideOnSmallScreens = false,
@@ -14,15 +15,15 @@ export default function Bar({
     "--bar-percent": `${(value / maxValue) * 100}%`,
   } as React.CSSProperties;
 
-  const classNames = [barCss];
+  // const classNames = [barCss];
 
-  if (hideOnSmallScreens) {
-    classNames.push(hideOnSmallScreensCss);
-  }
+  // if (hideOnSmallScreens) {
+  //   classNames.push(hideOnSmallScreensCss);
+  // }
 
   return (
-    <div className={classNames.join(" ")} style={barPercentProperty}>
+    <Box className={gradientBackgroundStyle} style={barPercentProperty}>
       &nbsp;
-    </div>
+    </Box>
   );
 }

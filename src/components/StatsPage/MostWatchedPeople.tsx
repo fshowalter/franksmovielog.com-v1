@@ -1,41 +1,15 @@
 import { graphql } from "gatsby";
-import React from "react";
+import { Box } from "../Box";
 import { Poster, PosterList } from "../PosterList";
+import { Spacer } from "../Spacer";
 import {
-  barCss,
-  barSpaceCss,
-  containerCss,
-  detailsLabelCss,
-  detailsRowCss,
-  headerCss,
-  headerRowCss,
-  nameCss,
-  nameHeaderCss,
-  parentListCss,
-  parentListItemCss,
-  viewingsCss,
-  viewingsHeaderCss,
-} from "./MostWatchedPeople.module.scss";
+  detailsRowGridStyle,
+  gridStyle,
+  stickyHeaderStyle,
+} from "./MostWatchedPeople.css";
+import { StatHeading } from "./StatHeading";
 
-function BarGraph({
-  value,
-  maxValue,
-}: {
-  value: number;
-  maxValue: number;
-}): JSX.Element {
-  const barPercentProperty = {
-    "--bar-percent": `${(value / maxValue) * 100}%`,
-  } as React.CSSProperties;
-
-  return (
-    <div className={barCss} style={barPercentProperty}>
-      &nbsp;
-    </div>
-  );
-}
-
-export default function MostWatchedPeople({
+export function MostWatchedPeople({
   people,
   header,
   nameRenderer,
@@ -52,30 +26,58 @@ export default function MostWatchedPeople({
     return null;
   }
 
-  const maxBar = people.mostWatched.reduce((acc, person) => {
-    const value = person.viewingCount;
-    return acc > value ? acc : value;
-  }, 0);
-
   return (
-    <section className={containerCss}>
-      <h3 className={headerCss}>{header}</h3>
-      <header className={headerRowCss}>
-        <span className={nameHeaderCss}>Name</span>
-        <span className={viewingsHeaderCss}>Viewings</span>
-      </header>
-      <ol className={parentListCss}>
+    <Box as="section" boxShadow="borderAll">
+      <StatHeading>{header}</StatHeading>
+      <Box
+        as="header"
+        backgroundColor="default"
+        display="flex"
+        justifyContent="space-between"
+        paddingX={24}
+        className={stickyHeaderStyle}
+        fontWeight="bold"
+      >
+        <Box as="span" textAlign="left" lineHeight={40}>
+          Name
+        </Box>
+        <Box as="span" textAlign="right" lineHeight={40}>
+          Viewings
+        </Box>
+      </Box>
+      <Box as="ol" padding={0} className={gridStyle}>
         {people.mostWatched.map((person) => {
           return (
-            <li key={person.fullName} className={parentListItemCss}>
-              <span className={nameCss}>{nameRenderer({ person })}</span>
-              <span className={barSpaceCss}>
-                <BarGraph value={person.viewingCount} maxValue={maxBar} />
-              </span>
-              <span className={viewingsCss}>{person.viewingCount}</span>
-              <div className={detailsRowCss}>
+            <Box as="li" key={person.fullName} display="contents">
+              <Box
+                as="span"
+                lineHeight={40}
+                backgroundColor="stripe"
+                paddingX={24}
+              >
+                {nameRenderer({ person })}
+              </Box>
+              <Box as="span" lineHeight={40} backgroundColor="stripe">
+                &nbsp;
+              </Box>
+              <Box
+                as="span"
+                lineHeight={40}
+                backgroundColor="stripe"
+                paddingRight={24}
+                textAlign="right"
+              >
+                {person.viewingCount}
+              </Box>
+              <Box
+                paddingX={24}
+                lineHeight={40}
+                className={detailsRowGridStyle}
+              >
                 <details>
-                  <summary className={detailsLabelCss}>Details</summary>
+                  <Box as="summary" color="subtle" letterSpacing={0.2}>
+                    Details
+                  </Box>
                   <PosterList>
                     {person.viewings.map((viewing) => {
                       return (
@@ -92,13 +94,14 @@ export default function MostWatchedPeople({
                       );
                     })}
                   </PosterList>
+                  <Spacer axis="vertical" size={32} />
                 </details>
-              </div>
-            </li>
+              </Box>
+            </Box>
           );
         })}
-      </ol>
-    </section>
+      </Box>
+    </Box>
   );
 }
 

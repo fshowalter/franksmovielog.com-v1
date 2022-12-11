@@ -12,15 +12,8 @@ const MostWatchedPerformersJson = {
   name: "MostWatchedPerformersJson",
   interfaces: [MOST_WATCHED_PEOPLE, "Node"],
   fields: {
-    viewing_year: "String!",
-    mostWatched: {
-      type: `[MostWatchedDirector!]!`,
-      extensions: {
-        proxy: {
-          from: "most_watched",
-        },
-      },
-    },
+    viewingYear: "String!",
+    mostWatched: `[MostWatchedPerformer!]!`,
   },
   extensions: {
     infer: false,

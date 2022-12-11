@@ -1,36 +1,18 @@
 import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import { posterResolver } from "./resolvers/posterResolver";
+import { reviewedMovieResolver } from "./resolvers/reviewedMovieResolver";
 import { SchemaNames } from "./schemaNames";
 
 const MostWatchedMovie = {
   name: "MostWatchedMovie",
   fields: {
-    viewingCount: {
-      type: "Int!",
-      extensions: {
-        proxy: {
-          from: "viewing_count",
-        },
-      },
-    },
-    imdbId: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "imdb_id",
-        },
-      },
-    },
+    viewingCount: "Int!",
+    imdbId: "String!",
     title: "String!",
     year: "Int!",
     reviewedMovie: {
       type: `${SchemaNames.REVIEWED_MOVIES_JSON}`,
-      extensions: {
-        link: {
-          from: "imdbId",
-          by: "imdbId",
-        },
-      },
+      resolve: reviewedMovieResolver(),
     },
     poster: posterResolver,
   },
@@ -40,8 +22,8 @@ const MostWatchedMoviesJson = {
   name: "MostWatchedMoviesJson",
   interfaces: ["Node"],
   fields: {
-    viewing_year: "String!",
-    most_watched: `[MostWatchedMovie!]!`,
+    viewingYear: "String!",
+    mostWatched: `[MostWatchedMovie!]!`,
   },
   extensions: {
     infer: false,

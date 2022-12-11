@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
-import Bar from "./Bar";
-import StatHeading from "./StatHeading";
+import { Bar } from "./Bar";
+import { StatHeading } from "./StatHeading";
 import {
   Table,
   TableDataCell,
@@ -9,7 +9,7 @@ import {
   TableRow,
 } from "./Table";
 
-export default function ByReleaseYear({
+export function ByDecade({
   decades,
 }: {
   decades: Queries.ByDecadeFragment | null;

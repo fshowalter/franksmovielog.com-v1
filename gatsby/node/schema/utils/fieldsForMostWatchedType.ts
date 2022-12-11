@@ -7,30 +7,9 @@ export default function fieldsForMostWatchedType(
   type: "director" | "writer" | "performer"
 ) {
   return {
-    imdbId: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "imdb_id",
-        },
-      },
-    },
-    fullName: {
-      type: "String!",
-      extensions: {
-        proxy: {
-          from: "full_name",
-        },
-      },
-    },
-    viewingCount: {
-      type: "Int!",
-      extensions: {
-        proxy: {
-          from: "viewing_count",
-        },
-      },
-    },
+    imdbId: "String!",
+    fullName: "String!",
+    viewingCount: "Int!",
     viewings: {
       type: `[${SchemaNames.VIEWINGS_JSON}!]!`,
       resolve: async (

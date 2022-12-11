@@ -79,9 +79,9 @@ export function Poster({
             alt={`A poster from ${title} (${year})`}
           />
         </Link>
-        <Spacer axis="vertical" size={8} />
         {showTitle && (
           <Box fontSize="posterTitle">
+            <Spacer axis="vertical" size={8} />
             <Link color="accent" textDecoration="none" to={`/reviews/${slug}/`}>
               {title}{" "}
               <Box
@@ -95,7 +95,6 @@ export function Poster({
             </Link>
           </Box>
         )}
-        <Spacer axis="vertical" size={4} />
         <Box
           color="subtle"
           display="flex"
@@ -104,6 +103,7 @@ export function Poster({
           fontWeight="light"
           rowGap={4}
         >
+          <Spacer axis="vertical" size={4} />
           {grade && (
             <Grade grade={grade} height={12} width={60} flexBasis={16} />
           )}

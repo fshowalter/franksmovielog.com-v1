@@ -1,10 +1,6 @@
 import { graphql } from "gatsby";
-import {
-  calloutContainerCss,
-  containerCss,
-  legendCss,
-  numberCss,
-} from "./Callouts.module.scss";
+import { Box } from "../Box";
+import { borderStyle } from "./Callouts.css";
 
 function Callout({
   stat,
@@ -14,14 +10,22 @@ function Callout({
   label: string;
 }): JSX.Element {
   return (
-    <div className={calloutContainerCss}>
-      <span className={numberCss}>{stat.toLocaleString()}</span>{" "}
-      <span className={legendCss}>{label}</span>
-    </div>
+    <Box
+      className={borderStyle}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      height={144}
+      width={144}
+      textAlign="center"
+    >
+      <Box fontSize="statNumber">{stat.toLocaleString()}</Box>{" "}
+      <Box color="subtle">{label}</Box>
+    </Box>
   );
 }
 
-export default function Callouts({
+export function Callouts({
   viewingCallouts,
   reviewCallouts,
 }: {
@@ -29,7 +33,7 @@ export default function Callouts({
   reviewCallouts: Queries.ReviewCalloutsFragment | null;
 }): JSX.Element {
   return (
-    <div className={containerCss}>
+    <Box display="flex" columnGap={40} justifyContent="center">
       {viewingCallouts && (
         <>
           <Callout label="Viewings" stat={viewingCallouts.viewingCount} />
@@ -49,7 +53,7 @@ export default function Callouts({
           />
         </>
       )}
-    </div>
+    </Box>
   );
 }
 

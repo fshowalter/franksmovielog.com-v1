@@ -25,7 +25,10 @@ import {
   buildViewingsWithReviewQuery,
 } from "./schema/ViewingsJson";
 import buildViewingStatsJsonSchema from "./schema/ViewingStatsJson";
-import buildWatchlistEntitiesJsonSchema from "./schema/WatchlistEntitiesJson";
+import {
+  buildWatchlistEntitiesJsonSchema,
+  buildWatchlistEntityQuery,
+} from "./schema/WatchlistEntitiesJson";
 import buildWatchlistMoviesJsonSchema from "./schema/WatchlistMoviesJson";
 
 export function createSchemaCustomization({
@@ -64,4 +67,5 @@ export function createSchemaCustomization({
 export function createResolvers({ createResolvers }: CreateResolversArgs) {
   buildViewingsWithReviewQuery(createResolvers);
   buildReviewedMovieQuery(createResolvers);
+  buildWatchlistEntityQuery(createResolvers);
 }

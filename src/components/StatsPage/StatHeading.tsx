@@ -1,10 +1,24 @@
-import React from "react";
-import { headingCss } from "./StatHeading.module.scss";
+import { HEADER_HEIGHT } from "../../styles/sizes";
+import { Box } from "../Box";
 
-export default function StatHeading({
+export function StatHeading({
   children,
 }: {
   children: React.ReactNode;
 }): JSX.Element {
-  return <h3 className={headingCss}>{children}</h3>;
+  return (
+    <Box
+      as="h3"
+      backgroundColor="canvas"
+      fontSize="statHeading"
+      position="sticky"
+      top={HEADER_HEIGHT}
+      paddingX={24}
+      paddingY={8}
+      zIndex={100}
+      fontWeight="normal"
+    >
+      {children}
+    </Box>
+  );
 }

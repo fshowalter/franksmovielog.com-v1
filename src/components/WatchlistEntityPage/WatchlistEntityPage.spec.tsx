@@ -2,7 +2,7 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import WatchlistEntityPage, { EntityType, Head } from "./WatchlistEntityPage";
-import data, { dataNoAvatar } from "./WatchlistEntityPage.fixtures";
+import { data } from "./WatchlistEntityPage.fixtures";
 
 describe("/watchlist/directors/{slug}", () => {
   it("renders", () => {
@@ -14,27 +14,6 @@ describe("/watchlist/directors/{slug}", () => {
     );
 
     expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("raises an error if avatar is null", () => {
-    // Even though the error is caught, it still gets printed to the console
-    // so we mock that out to avoid the wall of red text.
-    // https://github.com/facebook/jest/issues/5785
-    const spy = jest.spyOn(console, "error");
-    spy.mockImplementation(() => {
-      // stub
-    });
-
-    expect(() => {
-      render(
-        <WatchlistEntityPage
-          data={dataNoAvatar}
-          pageContext={{ entityType: EntityType.DIRECTOR }}
-        />
-      );
-    }).toThrow("No avatar found for John Ford.");
-
-    spy.mockRestore();
   });
 
   it("sets page title", () => {
@@ -182,7 +161,7 @@ describe("/watchlist/directors/{slug}", () => {
       />
     );
 
-    await userEvent.click(screen.getByText("Show More"));
+    await userEvent.click(screen.getByText("Show More..."));
 
     expect(screen.getByTestId("movie-list")).toMatchSnapshot();
   });
