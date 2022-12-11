@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import HomePage, { Head } from "./HomePage";
 import data from "./HomePage.fixtures";

@@ -2,9 +2,9 @@
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node",
-    "target": "esnext",
+    "target": "ES2020",
     "jsx": "preserve",
-    "lib": ["dom", "esnext"],
+    "lib": ["dom", "ES2020"],
     "strict": true,
     "noEmit": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,7 +18,7 @@
     "strictNullChecks": true,
     "noImplicitAny": true
   },
-  "include": ["./src/**/*", "./gatsby/**/*", "./*.js", "*.ts"],
+  "include": ["./src/**/*", "./gatsby/**/*", "*.ts"],
   "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"],
   "typeRoots": ["./src/types", "./node_modules/@types/"]
 }

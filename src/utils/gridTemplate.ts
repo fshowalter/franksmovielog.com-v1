@@ -12,9 +12,7 @@ function gridAreaTemplateToString<A, C>(template: GridAreaTemplate<A, C>) {
   return `"${templateTransformed.join(" ")}"`;
 }
 
-type GridAreaTemplate<A, C> =
-  | (Array<A | typeof SPACER> & { length: C })
-  | [never];
+type GridAreaTemplate<A, C> = ((A | typeof SPACER)[] & { length: C }) | [never];
 
 type GridAreaTemplateWithSpace<A, C> = Record<
   string,
@@ -22,9 +20,7 @@ type GridAreaTemplateWithSpace<A, C> = Record<
 >;
 
 interface GridTemplateArgs<A, C> {
-  rows:
-    | Array<GridAreaTemplateWithSpace<A, C> | GridAreaTemplate<A, C>>
-    | [never];
+  rows: (GridAreaTemplateWithSpace<A, C> | GridAreaTemplate<A, C>)[] | [never];
   columns: (readonly string[] & { readonly length: C }) | [never];
 }
 
@@ -48,10 +44,6 @@ export function gridTemplate<A extends string, C extends number>({
 
       rowsSizes.push(Object.keys(row)[0]);
       const templateArray = Object.values(row)[0];
-
-      if (!templateArray) {
-        return null;
-      }
 
       if (templateArray === SPACER) {
         return `"${". ".repeat(columns.length).trim()}"`;

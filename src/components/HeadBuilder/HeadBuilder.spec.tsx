@@ -1,5 +1,4 @@
 jest.unmock("./HeadBuilder");
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {
   createHistory,
   createMemorySource,

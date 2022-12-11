@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import ReviewPage, { Head } from "./ReviewPage";
 import { data } from "./ReviewPage.fixtures";

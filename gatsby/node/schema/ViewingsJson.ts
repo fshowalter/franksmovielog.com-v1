@@ -281,18 +281,18 @@ export function buildViewingsWithReviewQuery(
         resolve: async (
           _source: unknown,
           args: {
-            limit: number;
-            skip: number;
-            sort: {
-              fields: Array<string>;
-              order: Array<boolean | "asc" | "desc" | "ASC" | "DESC">;
+            limit?: number;
+            skip?: number;
+            sort?: {
+              fields: string[];
+              order: (boolean | "asc" | "desc" | "ASC" | "DESC")[];
             };
           },
           context: GatsbyNodeContext
         ) => {
-          const { limit = 0, skip = 0, sort } = args || {};
+          const { limit = 0, skip = 0, sort } = args;
 
-          const { fields = ["sequence"], order = ["DESC"] } = sort || {};
+          const { fields = ["sequence"], order = ["DESC"] } = sort ?? {};
 
           const { entries } = await context.nodeModel.findAll({
             type: "ViewingsJson",

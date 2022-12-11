@@ -1,33 +1,26 @@
 const query = `#graphql
 {
-  viewing: allViewingsJson(
+  viewings: viewingsWithReviews(
     sort: {order: DESC, fields: sequence}
     limit: 25
-    filter: {reviewedMovie: {imdbId: {ne: null}}}
   ) {
-    nodes {
       sequence
       date: viewingDate
-      reviewedMovie {
-        title
-        year
-        slug
-        grade
-        principalCastNames
-        directorNames
-        image: backdrop {
-          childImageSharp {
-            resize(toFormat: JPG, width: 1200, quality: 80) {
-              src
-            }
+      title
+      year
+      slug
+      grade
+      principalCastNames
+      directorNames
+      still {
+        childImageSharp {
+          resize(toFormat: JPG, width: 1200, quality: 80) {
+            src
           }
         }
-        review {
-          linkedExcerpt(includeCssClass: false)
-        }
       }
+      excerpt
     }
-  }
 }`;
 
 interface QueryResult {
@@ -38,32 +31,26 @@ interface QueryResult {
       siteUrl: string;
     };
   };
-  viewing: {
-    nodes: ViewingNode[];
-  };
+  viewings: ViewingNode[];
 }
 
 interface ViewingNode {
   sequence: number;
   date: string;
-  reviewedMovie: {
-    title: string;
-    year: string;
-    slug: string;
-    grade: string;
-    directorNames: string[];
-    principalCastNames: string[];
-    image: {
-      childImageSharp: {
-        resize: {
-          src: string;
-        };
+  title: string;
+  year: string;
+  slug: string;
+  grade: string;
+  directorNames: string[];
+  principalCastNames: string[];
+  still: {
+    childImageSharp: {
+      resize: {
+        src: string;
       };
     };
-    review: {
-      linkedExcerpt: string;
-    };
   };
+  excerpt: string;
 }
 
 const gradeMap: Record<string, string> = {
@@ -84,10 +71,10 @@ function starsForGrade(grade: string) {
 
 function addMetaToExcerpt(excerpt: string, viewing: ViewingNode) {
   const meta = `${starsForGrade(
-    viewing.reviewedMovie.grade[0]
-  )} D: ${viewing.reviewedMovie.directorNames.join(
+    viewing.grade[0]
+  )} D: ${viewing.directorNames.join(", ")}. ${viewing.principalCastNames.join(
     ", "
-  )}. ${viewing.reviewedMovie.principalCastNames.join(", ")}.`;
+  )}.`;
 
   return `<p>${meta}</p>${excerpt}`;
 }
@@ -105,20 +92,18 @@ function setup(options: Record<string, unknown>) {
 }
 
 function serialize({ query }: { query: QueryResult }) {
-  return query.viewing.nodes.map((viewing) => {
+  return query.viewings.map((viewing) => {
     return {
-      title: `${viewing.reviewedMovie.title} (${viewing.reviewedMovie.year})`,
+      title: `${viewing.title} (${viewing.year})`,
       date: viewing.date,
-      url: `${query.site.siteMetadata.siteUrl}/reviews/${viewing.reviewedMovie.slug}/`,
-      guid: `${query.site.siteMetadata.siteUrl}/${viewing.sequence}-${viewing.reviewedMovie.slug}`,
+      url: `${query.site.siteMetadata.siteUrl}/reviews/${viewing.slug}/`,
+      guid: `${query.site.siteMetadata.siteUrl}/${viewing.sequence}-${viewing.slug}`,
       custom_elements: [
         {
           "content:encoded": `<img src="${
-            viewing.reviewedMovie.image.childImageSharp.resize.src
-          }" alt="A still from ${
-            viewing.reviewedMovie.title
-          }">${addMetaToExcerpt(
-            viewing.reviewedMovie.review.linkedExcerpt,
+            viewing.still.childImageSharp.resize.src
+          }" alt="A still from ${viewing.title}">${addMetaToExcerpt(
+            viewing.excerpt,
             viewing
           )}`,
         },

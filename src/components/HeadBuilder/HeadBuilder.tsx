@@ -1,4 +1,4 @@
-import { useLocation } from "@gatsbyjs/reach-router"; // eslint-disable-line import/no-extraneous-dependencies
+import { useLocation } from "@gatsbyjs/reach-router";
 import { graphql, useStaticQuery } from "gatsby";
 
 export interface QueryResult {
@@ -12,7 +12,7 @@ export interface QueryResult {
 }
 
 function buildTitle(pageTitle: string, siteTitle: string): string {
-  if (pageTitle?.startsWith(siteTitle)) {
+  if (pageTitle.startsWith(siteTitle)) {
     return pageTitle;
   }
 
@@ -47,7 +47,7 @@ export function HeadBuilder({
   const meta = {
     title: buildTitle(pageTitle, siteTitle),
     description,
-    image: `${siteUrl}${image || siteImage}`,
+    image: `${siteUrl}${image ?? siteImage}`,
     url: `${siteUrl}${pathname}`,
   };
   return (

@@ -1,12 +1,12 @@
-import { isObjectType } from "graphql"; // eslint-disable-line import/no-extraneous-dependencies
+import { isObjectType } from "graphql";
 import type { GatsbyNode, GatsbyResolveInfo } from "../type-definitions";
 
 export default async function resolveFieldForNode<T>(
   fieldName: string,
-  nodeItem: GatsbyNode,
+  nodeItem: GatsbyNode | null,
   context: unknown,
   info: GatsbyResolveInfo,
-  args: { [key: string]: unknown }
+  args: Record<string, unknown>
 ): Promise<T | null> {
   if (!nodeItem) {
     return null;

@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-const chokidar = require("chokidar"); // eslint-disable-line import/no-extraneous-dependencies
+const chokidar = require("chokidar");
 const fs = require("fs");
 const path = require("path");
 
