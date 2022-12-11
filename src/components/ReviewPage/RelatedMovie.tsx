@@ -30,16 +30,15 @@ export function RelatedMovie({ movie }: IRelatedMovieProps) {
       <GridArea name="title">
         <Link
           to={`/reviews/${movie.slug}/`}
-          fontSize={18}
+          fontSize="relatedMovieTitle"
           textDecoration="none"
           color="default"
-          lineHeight={24}
           display="block"
         >
           {movie.title}{" "}
           <Box
             as="span"
-            fontSize={14}
+            fontSize="small"
             fontWeight="light"
             color="muted"
             lineHeight={1}
@@ -49,7 +48,12 @@ export function RelatedMovie({ movie }: IRelatedMovieProps) {
         </Link>
       </GridArea>
       <GridArea name="grade">
-        <Grade grade={movie.grade} width={80} className={gradeStyle} />
+        <Grade
+          grade={movie.grade}
+          width={80}
+          height={16}
+          className={gradeStyle}
+        />
       </GridArea>
     </Grid>
   );

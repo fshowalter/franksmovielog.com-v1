@@ -58,7 +58,7 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
         />
       </GridArea>
       <GridArea name="meta">
-        <Box as="header" fontSize={25} lineHeight={32} paddingBottom={24}>
+        <Box as="header" fontSize="creditsTitle" paddingBottom={24}>
           {movie.title}
         </Box>
         <Box as="dl" display="flex" flexDirection="column" rowGap={24}>

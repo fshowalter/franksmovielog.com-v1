@@ -12,7 +12,7 @@ export default function Footer({ ...rest }: IBoxProps) {
       {...rest}
     >
       <Nav variant="footer" />
-      <Box as="p" fontWeight="light" fontSize={14} lineHeight={16}>
+      <Box as="p" fontWeight="light" fontSize="small" lineHeight={16}>
         All stills used in accordance with the{" "}
         <ExternalLink
           href="http://www.copyright.gov/title17/92chap1.html#107"

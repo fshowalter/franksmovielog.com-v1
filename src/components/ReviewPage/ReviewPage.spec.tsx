@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import ReviewPage, { Head } from "./ReviewPage";
-import data from "./ReviewPage.fixtures";
+import { data } from "./ReviewPage.fixtures";
 
 describe("/reviews/{slug}", () => {
   it("renders", () => {
@@ -13,6 +13,6 @@ describe("/reviews/{slug}", () => {
   it("sets page title", () => {
     render(<Head data={data} />);
 
-    expect(document.title).toStrictEqual("The Seventh Continent (1989)");
+    expect(document.title).toStrictEqual("Fright Night (1985)");
   });
 });

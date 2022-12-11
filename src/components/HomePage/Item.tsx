@@ -45,7 +45,7 @@ export function Item({ viewing, counterValue, eagerLoadImage }: IItemProps) {
           flexDirection="column"
           maxWidth="prose"
         >
-          <Box as="h2" fontWeight="bold" fontSize={26} lineHeight={32}>
+          <Box as="h2" fontWeight="bold" fontSize="homePageTitle">
             <Link
               to={`/reviews/${viewing.slug}/`}
               rel="canonical"
@@ -57,7 +57,7 @@ export function Item({ viewing, counterValue, eagerLoadImage }: IItemProps) {
                 as="span"
                 color="subtle"
                 display="inline-block"
-                fontSize={16}
+                fontSize="normal"
                 fontWeight="light"
                 lineHeight={1}
               >
@@ -68,7 +68,7 @@ export function Item({ viewing, counterValue, eagerLoadImage }: IItemProps) {
           <Grade grade={viewing.grade} width={160} height={32} />
           <Box
             as="p"
-            fontSize={16}
+            fontSize="normal"
             fontWeight="normal"
             color="subtle"
             letterSpacing={0.25}
@@ -85,7 +85,7 @@ export function Item({ viewing, counterValue, eagerLoadImage }: IItemProps) {
         <GridArea name="date">
           <Box
             display="flex"
-            fontSize={14}
+            fontSize="small"
             fontWeight="light"
             letterSpacing={0.25}
             whiteSpace="nowrap"

@@ -5,7 +5,6 @@ import { gradientBackgroundStyle } from "./Bar.css";
 export function Bar({
   value,
   maxValue,
-  hideOnSmallScreens = false,
 }: {
   value: number;
   maxValue: number;
@@ -14,12 +13,6 @@ export function Bar({
   const barPercentProperty = {
     "--bar-percent": `${(value / maxValue) * 100}%`,
   } as React.CSSProperties;
-
-  // const classNames = [barCss];
-
-  // if (hideOnSmallScreens) {
-  //   classNames.push(hideOnSmallScreensCss);
-  // }
 
   return (
     <Box className={gradientBackgroundStyle} style={barPercentProperty}>

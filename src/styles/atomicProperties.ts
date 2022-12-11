@@ -1,12 +1,6 @@
 import { minMediaQuery } from "./breakpoints";
 import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
-import {
-  MAX_POSTER_WIDTH,
-  PROSE_CONTENT_WIDTH,
-  PROSE_CONTENT_WIDTH_WITH_GUTTERS,
-  relativeSize,
-  size,
-} from "./sizes";
+import { relativeSize, size } from "./sizes";
 import {
   fontSizes,
   fontWeights,
@@ -44,8 +38,6 @@ export const atomicProperties = {
   justifyItems: ["center", "inherit"],
   alignItems: ["center", "inherit", "flex-start", "baseline"],
   rowGap: [4, 8, 16, 24, 32, 48, 64, 96],
-  minHeight: size,
-  height: size,
   marginTop: [48, 64, 128],
   fontWeight: fontWeights,
   transform: {
@@ -88,9 +80,37 @@ export const atomicProperties = {
       fontSize: "2rem",
       lineHeight: 1,
     },
+    homePageTitle: {
+      fontSize: "1.625rem",
+      lineHeight: "2rem",
+    },
     statHeading: {
       fontSize: "1.125rem",
       lineHeight: "1.5rem",
+    },
+    pagination: {
+      fontSize: "1.25rem",
+      lineHeight: "1.5rem",
+    },
+    relatedMovieTitle: {
+      fontSize: "1.1875rem",
+      lineHeight: "1.5rem",
+    },
+    relatedMoviesHeader: {
+      fontSize: "1.1875rem",
+      lineHeight: "2.5rem",
+    },
+    prose: {
+      fontSize: "1.1875rem",
+      lineHeight: 1.5,
+    },
+    logo: {
+      fontSize: "1.5625rem",
+      lineHeight: "2rem",
+    },
+    creditsTitle: {
+      fontSize: "1.5625rem",
+      lineHeight: "2rem",
     },
     pageTitle: {
       fontSize: "2rem",
@@ -107,15 +127,6 @@ export const atomicProperties = {
   lineHeight: lineHeights,
   letterSpacing: letterSpacing,
   textDecoration: ["none"],
-  maxWidth: {
-    160: "160px",
-    200: "200px",
-    512: "512px",
-    prose: PROSE_CONTENT_WIDTH,
-    proseWithGutters: PROSE_CONTENT_WIDTH_WITH_GUTTERS,
-    poster: MAX_POSTER_WIDTH,
-  },
-  minWidth: size,
   boxShadow: {
     borderBottom: {
       boxShadow: `0px 1px ${borderColors.default}`,

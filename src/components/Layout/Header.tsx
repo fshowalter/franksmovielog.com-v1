@@ -13,13 +13,7 @@ export default function Header({ ...rest }: IBoxProps) {
         alignItems="inherit"
         justifyItems="inherit"
       >
-        <Box
-          as="h1"
-          whiteSpace="nowrap"
-          fontWeight="normal"
-          fontSize={25}
-          lineHeight={32}
-        >
+        <Box as="h1" whiteSpace="nowrap" fontWeight="normal" fontSize="logo">
           <Link color="default" textDecoration="none" to="/">
             Frank&apos;s Movie Log
           </Link>

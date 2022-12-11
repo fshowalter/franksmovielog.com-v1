@@ -11,7 +11,7 @@ export function ViewingHistory({ movie, ...rest }: IIViewingHistoryProps) {
       <Box
         as="h3"
         color="subtle"
-        fontSize={16}
+        fontSize="normal"
         fontWeight="semiBold"
         letterSpacing={0.2}
         lineHeight={2}

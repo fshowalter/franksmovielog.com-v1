@@ -19,8 +19,13 @@ function SectionHeading({
   linkTarget: string;
 }) {
   return (
-    <Box as="header" display="block" lineHeight={40} paddingY={8}>
-      <Box as="h3" fontWeight="normal" fontSize={18} color="muted">
+    <Box as="header" display="block" paddingY={8}>
+      <Box
+        as="h3"
+        fontWeight="normal"
+        fontSize="relatedMoviesHeader"
+        color="muted"
+      >
         {leadText}{" "}
         <Link
           to={linkTarget}
@@ -73,7 +78,6 @@ function Directors({
                   leadText="More directed by"
                   boldText={director.name}
                   linkTarget={`/watchlist/directors/${director.slug}/`}
-                  avatar={director.avatar}
                 />
               </GridArea>
               <GridArea name="list">

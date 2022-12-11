@@ -52,7 +52,7 @@ function MediumNotes({
       <RenderedMarkdown
         // eslint-disable-next-line react/no-danger
         text={viewing.mediumNotes}
-        fontSize={16}
+        fontSize="normal"
         as="span"
       />
       )

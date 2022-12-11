@@ -64,7 +64,7 @@ export function Pagination({
   );
 
   return (
-    <Grid as="section" fontSize={20} {...rest}>
+    <Grid as="section" fontSize="pagination" {...rest}>
       <Box as="h3" screenReaderOnly={true}>
         Pagination
       </Box>
