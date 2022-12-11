@@ -38,9 +38,25 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "yarn"
 
+      - name: get gatsby cache
+        id: gatsby-cache-build
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-buildv4-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-buildv4-
+
       # `--prefer-offline` gives cache priority
       - name: install dependencies
         run: yarn install --prefer-offline --frozen-lockfile
+
+      - name: build
+        run: yarn build
+        env:
+          CI: true
 
       - name: lint js
         run: yarn lint:js
@@ -77,7 +93,7 @@ jobs:
         env:
           CI: true
 
-      - name: lint js
+      - name: type-check
         run: yarn type-check
 
   test:
