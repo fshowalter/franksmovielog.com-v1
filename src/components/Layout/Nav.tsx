@@ -8,11 +8,11 @@ import {
   NavVariants,
 } from "./Nav.css";
 
-type NavItemProps = {
+interface NavItemProps {
   to: string;
   children: React.ReactNode;
   variant: NavVariants;
-};
+}
 
 function NavItem({ to, children, variant }: NavItemProps): JSX.Element {
   return (

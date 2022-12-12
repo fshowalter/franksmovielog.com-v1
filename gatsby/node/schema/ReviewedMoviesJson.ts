@@ -93,10 +93,6 @@ const ReviewedMovieWatchlistEntity = {
           },
         });
 
-        if (!entries) {
-          return [];
-        }
-
         return sliceMoviesForBrowseMore(Array.from(entries), args.movieImdbId);
       },
     },
@@ -167,10 +163,6 @@ const ReviewedMoviesJson = {
             },
           },
         });
-
-        if (!entries) {
-          return [];
-        }
 
         return sliceMoviesForBrowseMore(Array.from(entries), source.imdbId);
       },

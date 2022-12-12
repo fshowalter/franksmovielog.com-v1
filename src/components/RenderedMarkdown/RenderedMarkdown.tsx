@@ -1,4 +1,4 @@
-import composeClassNames from "../../utils/composeClassNames";
+import { composeClassNames } from "../../utils/composeClassNames";
 import { Box, IBoxProps } from "../Box";
 import { renderedMarkdownStyle } from "./RenderedMarkdown.css";
 

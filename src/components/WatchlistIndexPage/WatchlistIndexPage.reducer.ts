@@ -61,7 +61,7 @@ function minMaxReleaseYearsForMovies(movies: Queries.WatchlistMovieFragment[]) {
   return [minYear, maxYear];
 }
 
-type State = {
+interface State {
   /** All possible watchlist movies. */
   allMovies: Queries.WatchlistMovieFragment[];
   /** Watchlist movies matching the current filters. */
@@ -78,7 +78,7 @@ type State = {
   sortValue: SortType;
   /** True if reviewed items are currently hidden. */
   hideReviewed: boolean;
-};
+}
 
 const SHOW_COUNT_DEFAULT = 24;
 

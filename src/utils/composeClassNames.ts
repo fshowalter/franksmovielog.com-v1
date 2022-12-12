@@ -1,12 +1,11 @@
-export default function composeClassNames(
-  ...classNames: Array<string | undefined>
-) {
+export function composeClassNames(...classNames: (string | undefined)[]) {
   const classes = classNames
     .filter((className) => {
       return Boolean(className) && className !== " ";
     })
     .map((className) => {
       return className?.toString().trim();
-    }) as Array<string>;
+    }) as string[];
+
   return classes.length === 0 ? undefined : classes.join(" ");
 }

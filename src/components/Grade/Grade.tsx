@@ -3,7 +3,7 @@ import { Box, IBoxProps } from "../Box";
 /**
  * Maps grade letters to their letter and alt-text.
  */
-const gradeMap: { [key: string]: [string, string] } = {
+const gradeMap: Record<string, [string, string]> = {
   A: ["/svg/5-stars.svg", "5 stars (out of 5)"],
   B: ["/svg/4-stars.svg", "4 stars (out of 5)"],
   C: ["/svg/3-stars.svg", "3 stars (out of 5)"],

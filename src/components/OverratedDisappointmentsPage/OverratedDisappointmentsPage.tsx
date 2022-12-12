@@ -76,10 +76,10 @@ function groupMovies({
   movies: Queries.OverratedDisappointmentsMovieFragment[];
   sortValue: SortType;
 }): Map<string, Queries.OverratedDisappointmentsMovieFragment[]> {
-  const groupedMovies: Map<
+  const groupedMovies = new Map<
     string,
     Queries.OverratedDisappointmentsMovieFragment[]
-  > = new Map();
+  >();
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortValue);

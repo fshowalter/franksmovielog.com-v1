@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Box, IBoxProps } from "../Box";
 import { SelectInput } from "../SelectInput";
 
@@ -56,9 +56,9 @@ export function GradeInput({
   label,
   onGradeChange,
 }: IGradeFilterProps): JSX.Element {
-  const [minValue, setMinValue] = React.useState(1);
-  const [maxValue, setMaxValue] = React.useState(13);
-  const [checkedValue, setCheckedValue] = React.useState(true);
+  const [minValue, setMinValue] = useState(1);
+  const [maxValue, setMaxValue] = useState(13);
+  const [checkedValue, setCheckedValue] = useState(true);
 
   const handleMinChange = (value: string) => {
     const newMin = parseInt(value, 10);

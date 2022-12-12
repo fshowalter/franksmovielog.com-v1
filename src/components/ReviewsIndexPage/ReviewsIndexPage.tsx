@@ -45,7 +45,7 @@ function groupForViewing(
   viewing: Queries.ReviewsIndexViewingFragment,
   sortValue: SortType
 ): string {
-  const shortMonthToLong: { [key: string]: string } = {
+  const shortMonthToLong: Record<string, string> = {
     Jan: "January",
     Feb: "February",
     Mar: "March",
@@ -78,7 +78,7 @@ function groupForViewing(
     }
     case "grade-asc":
     case "grade-desc": {
-      return viewing.reviewedMovie?.grade || "Unrated";
+      return viewing.reviewedMovie?.grade ?? "Unrated";
     }
     case "title": {
       const letter = viewing.sortTitle.substring(0, 1);
@@ -100,8 +100,10 @@ function groupViewings({
   viewings: Queries.ReviewsIndexViewingFragment[];
   sortValue: SortType;
 }): Map<string, Queries.ReviewsIndexViewingFragment[]> {
-  const groupedViewings: Map<string, Queries.ReviewsIndexViewingFragment[]> =
-    new Map();
+  const groupedViewings = new Map<
+    string,
+    Queries.ReviewsIndexViewingFragment[]
+  >();
 
   viewings.map((viewing) => {
     const group = groupForViewing(viewing, sortValue);

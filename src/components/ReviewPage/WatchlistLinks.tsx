@@ -44,9 +44,6 @@ export function WatchlistLinks({
   watchlist,
   ...rest
 }: IWatchlistLinksProps): JSX.Element {
-  if (!watchlist) {
-    return <Box {...rest} />;
-  }
   return (
     <Box as="ul" display="flex" padding={0} {...rest}>
       {watchlist.collections.map((collection) => {

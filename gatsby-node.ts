@@ -11,10 +11,10 @@ import {
   createResolvers as CreateResolvers,
   createSchemaCustomization as CreateSchemaCustomization,
 } from "./gatsby/node/createSchemaCustomization";
-import CreateWebpackConfig from "./gatsby/node/createWebpackConfig";
+import { createWebpackConfig } from "./gatsby/node/createWebpackConfig";
 
 export const createPages = CreatePages;
 export const createSchemaCustomization = CreateSchemaCustomization;
-export const onCreateWebpackConfig = CreateWebpackConfig;
+export const onCreateWebpackConfig = createWebpackConfig;
 
 export const createResolvers = CreateResolvers;

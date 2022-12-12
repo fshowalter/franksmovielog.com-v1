@@ -34,13 +34,13 @@ function sortViewings(
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) =>
       sortNumberAsc(
-        a.reviewedMovie?.gradeValue || 50,
-        b.reviewedMovie?.gradeValue || 50
+        a.reviewedMovie?.gradeValue ?? 50,
+        b.reviewedMovie?.gradeValue ?? 50
       ),
     "grade-desc": (a, b) =>
       sortNumberDesc(
-        a.reviewedMovie?.gradeValue || -1,
-        b.reviewedMovie?.gradeValue || -1
+        a.reviewedMovie?.gradeValue ?? -1,
+        b.reviewedMovie?.gradeValue ?? -1
       ),
   };
 
@@ -49,7 +49,7 @@ function sortViewings(
 }
 
 /** The page state. */
-type State = {
+interface State {
   /** All possible viewings. */
   allViewings: Queries.ReviewsIndexViewingFragment[];
   /** Viewings matching the current filters. */
@@ -63,7 +63,7 @@ type State = {
   showCount: number;
   /** The active sort value. */
   sortValue: SortType;
-};
+}
 
 const SHOW_COUNT_DEFAULT = 24;
 

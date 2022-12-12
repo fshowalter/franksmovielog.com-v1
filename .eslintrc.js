@@ -21,13 +21,14 @@ module.exports = {
         "plugin:prettier/recommended",
         "plugin:jest/recommended",
         "plugin:jsx-a11y/recommended",
+        "plugin:import/recommended",
         "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@typescript-eslint/strict",
       ],
       parser: "@typescript-eslint/parser",
-      plugins: ["@typescript-eslint", "prettier", "react-hooks"],
+      plugins: ["@typescript-eslint", "prettier", "react-hooks", "import"],
       parserOptions: {
         ecmaVersion: 2018,
         sourceType: "module",
@@ -39,6 +40,13 @@ module.exports = {
       settings: {
         react: {
           version: "detect",
+        },
+        "import/resolver": {
+          typescript: {
+            alwaysTryTypes: true,
+            project: ["tsconfig.json"],
+          },
+          node: true,
         },
       },
     },

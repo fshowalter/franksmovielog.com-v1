@@ -50,7 +50,7 @@ function groupForMovie(
     }
     case "grade-asc":
     case "grade-desc": {
-      return movie.grade || "Unrated";
+      return movie.grade ?? "Unrated";
     }
     case "title": {
       const letter = movie.sortTitle.substring(0, 1);
@@ -72,8 +72,10 @@ function groupMovies({
   movies: Queries.WatchlistEntityMovieFragment[];
   sortType: SortType;
 }): Map<string, Queries.WatchlistEntityMovieFragment[]> {
-  const groupedMovies: Map<string, Queries.WatchlistEntityMovieFragment[]> =
-    new Map();
+  const groupedMovies = new Map<
+    string,
+    Queries.WatchlistEntityMovieFragment[]
+  >();
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortType);

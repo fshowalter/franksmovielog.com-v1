@@ -73,8 +73,7 @@ function groupMovies({
   movies: Queries.UnderseenGemsMovieFragment[];
   sortValue: SortType;
 }): Map<string, Queries.UnderseenGemsMovieFragment[]> {
-  const groupedMovies: Map<string, Queries.UnderseenGemsMovieFragment[]> =
-    new Map();
+  const groupedMovies = new Map<string, Queries.UnderseenGemsMovieFragment[]>();
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortValue);

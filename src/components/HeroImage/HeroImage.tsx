@@ -1,4 +1,4 @@
-import composeClassNames from "../../utils/composeClassNames";
+import { composeClassNames } from "../../utils/composeClassNames";
 import { IBoxProps } from "../Box";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { imageCss } from "./HeroImage.module.scss";

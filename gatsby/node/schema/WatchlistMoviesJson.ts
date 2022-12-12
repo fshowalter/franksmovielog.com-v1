@@ -46,10 +46,6 @@ const WatchlistMoviesJson = {
             type: SchemaNames.WATCHLIST_ENTITIES_JSON,
           });
 
-        if (!entries) {
-          return [];
-        }
-
         return Array.from(entries.map((node) => node.name));
       },
     },

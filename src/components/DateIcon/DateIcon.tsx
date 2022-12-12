@@ -1,6 +1,6 @@
+import { composeClassNames } from "../../utils/composeClassNames";
 import SvgIcon from "../SvgIcon";
 import { iconStyle } from "./DateIcon.css";
-
 /**
  * Renders a calendar icon.
  */
@@ -11,7 +11,7 @@ export function DateIcon({
   className?: string;
 }): JSX.Element {
   return (
-    <SvgIcon className={`${iconStyle} ${className || ""}`}>
+    <SvgIcon className={composeClassNames(iconStyle, className)}>
       <title>Watched on</title>
       <path
         fillRule="evenodd"

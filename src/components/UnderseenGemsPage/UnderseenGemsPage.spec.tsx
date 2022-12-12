@@ -1,6 +1,6 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import selectEvent from "react-select-event";
+import { select } from "react-select-event";
 import UnderseenGemsPage, { Head } from "./UnderseenGemsPage";
 import data from "./UnderseenGemsPage.fixtures";
 
@@ -127,9 +127,9 @@ describe("/reviews/underseen/", () => {
     expect.hasAssertions();
     render(<UnderseenGemsPage data={data} />);
 
-    const select = screen.getByLabelText("Genres");
+    const selectElement = screen.getByLabelText("Genres");
 
-    await selectEvent.select(select, ["Horror", "Comedy"]);
+    await select(selectElement, ["Horror", "Comedy"]);
 
     expect(screen.getByTestId("movies-list")).toMatchSnapshot();
   });

@@ -29,9 +29,9 @@ function sortMovies(
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) =>
-      sortNumberAsc(a.gradeValue || 50, b.gradeValue || 50),
+      sortNumberAsc(a.gradeValue ?? 50, b.gradeValue ?? 50),
     "grade-desc": (a, b) =>
-      sortNumberDesc(a.gradeValue || -1, b.gradeValue || -1),
+      sortNumberDesc(a.gradeValue ?? -1, b.gradeValue ?? -1),
   };
 
   const comparer = sortMap[sortType];
@@ -48,7 +48,7 @@ function reviewedMovieCount(
 /**
  * The page state.
  */
-type State = {
+interface State {
   /** All possible reviews. */
   allMovies: Queries.WatchlistEntityMovieFragment[];
   /** Reviews matching the current filters. */
@@ -64,7 +64,7 @@ type State = {
   reviewedMovieCount: number;
   /** The active sort type. */
   sortType: SortType;
-};
+}
 
 const SHOW_COUNT_DEFAULT = 24;
 

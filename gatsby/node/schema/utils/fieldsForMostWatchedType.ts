@@ -26,11 +26,7 @@ export default function fieldsForMostWatchedType(
           },
         });
 
-        if (!entries) {
-          return [];
-        }
-
-        return entries;
+        return Array.from(entries);
       },
       extensions: {
         proxy: {

@@ -3,11 +3,6 @@ declare module "*.svg" {
   export default content;
 }
 
-declare module "*.scss" {
-  const classes: { [key: string]: string };
-  export = classes;
-}
-
 declare module "@gatsbyjs/reach-router" {
   export interface HLocation<S = unknown> {
     pathname: string;
@@ -67,7 +62,7 @@ declare module "hast-util-select" {
   import type { Node } from "unist";
   export interface HastNode extends Node {
     tagName: string;
-    properties: { [key: string]: string };
+    properties: Record<string, string>;
   }
   export function matches(
     selector: string,

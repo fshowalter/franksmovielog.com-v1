@@ -1,4 +1,4 @@
-import composeClassNames from "../../utils/composeClassNames";
+import { composeClassNames } from "../../utils/composeClassNames";
 import { Box, IBoxProps } from "../Box";
 import { hoverStyle, iconLayoutStyle } from "./Button.css";
 

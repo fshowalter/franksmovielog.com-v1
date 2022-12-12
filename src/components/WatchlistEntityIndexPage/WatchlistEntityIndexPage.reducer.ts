@@ -31,7 +31,7 @@ function sortEntities(
 /**
  * The page state.
  */
-type State = {
+interface State {
   /** All possible reviews. */
   allEntities: Queries.WatchlistEntityIndexItemFragment[];
   /** People matching the current filters. */
@@ -43,7 +43,7 @@ type State = {
   >;
   /** The active sort value. */
   sortValue: SortValue;
-};
+}
 
 export function initState({
   entities,

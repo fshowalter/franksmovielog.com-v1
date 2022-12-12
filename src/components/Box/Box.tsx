@@ -1,6 +1,6 @@
 import { createBox } from "@dessert-box/react";
 import { sprinkles } from "../../styles/sprinkles.css";
-import composeClassNames from "../../utils/composeClassNames";
+import { composeClassNames } from "../../utils/composeClassNames";
 import { screenReaderOnlyStyle } from "./Box.css";
 
 const BaseBox = createBox({ atoms: sprinkles });

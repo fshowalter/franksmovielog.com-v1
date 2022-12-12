@@ -1,5 +1,5 @@
 import { GatsbyLinkProps, Link as GatsbyLink } from "gatsby";
-import composeClassNames from "../../utils/composeClassNames";
+import { composeClassNames } from "../../utils/composeClassNames";
 import { Box, IBoxProps } from "../Box";
 
 interface ILinkProps extends IBoxProps {

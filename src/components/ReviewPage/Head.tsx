@@ -24,7 +24,7 @@ export function Head({ data }: { data: Queries.ReviewPageQuery }): JSX.Element {
     <HeadBuilder
       pageTitle={`${movie.title} (${movie.year})`}
       description={`${starsForGrade(movie.grade[0])} ${
-        movie.review?.excerpt || ""
+        movie.review.excerpt ?? ""
       }`}
       image={movie.seoImage?.childImageSharp?.resize?.src}
       article

@@ -1,1 +1,0 @@
-export { HorizontalRule } from "./HorizontalRule";

@@ -1,5 +1,5 @@
 import React from "react";
-import composeClassNames from "../../utils/composeClassNames";
+import { composeClassNames } from "../../utils/composeClassNames";
 import { Box } from "../Box";
 import {
   hideOnSmallScreensStyle,

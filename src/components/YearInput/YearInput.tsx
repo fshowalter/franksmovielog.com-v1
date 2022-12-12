@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Box, IBoxProps } from "../Box";
 import { LabelText } from "../LabelText";
 import { SelectInput } from "../SelectInput";
@@ -14,10 +14,8 @@ export function YearInput({
   years,
   onYearChange,
 }: IYearInputProps): JSX.Element {
-  const [minYear, setMinYear] = React.useState(parseInt(years[0], 10));
-  const [maxYear, setMaxYear] = React.useState(
-    parseInt(years[years.length - 1], 10)
-  );
+  const [minYear, setMinYear] = useState(parseInt(years[0], 10));
+  const [maxYear, setMaxYear] = useState(parseInt(years[years.length - 1], 10));
 
   const handleMinChange = (value: string) => {
     const newMin = parseInt(value, 10);

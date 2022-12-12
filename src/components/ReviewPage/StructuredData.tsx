@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 
-const gradeMap: { [index: string]: number } = {
+const gradeMap: Record<string, number> = {
   A: 5,
   B: 4,
   C: 3,

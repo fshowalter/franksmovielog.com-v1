@@ -1,6 +1,6 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import selectEvent from "react-select-event";
+import { select } from "react-select-event";
 import ReviewsIndexPage, { Head } from "./ReviewsIndexPage";
 import { data } from "./ReviewsIndexPage.fixtures";
 
@@ -241,9 +241,9 @@ describe("/reviews", () => {
     expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    const select = screen.getByLabelText("Genres");
+    const selectElement = screen.getByLabelText("Genres");
 
-    await selectEvent.select(select, ["Horror", "Comedy"]);
+    await select(selectElement, ["Horror", "Comedy"]);
 
     expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });

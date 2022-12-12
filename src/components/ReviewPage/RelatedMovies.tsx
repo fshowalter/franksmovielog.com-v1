@@ -48,7 +48,7 @@ function MovieList({
 }: {
   movies: readonly Queries.RelatedMovieFragment[];
 }): JSX.Element | null {
-  if (!movies || movies.length < 4) {
+  if (movies.length < 4) {
     return null;
   }
 

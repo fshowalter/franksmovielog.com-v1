@@ -39,7 +39,7 @@ function sortMovies(
 }
 
 /** The page state. */
-type State = {
+interface State {
   /** All possible movies. */
   allMovies: Queries.UnderseenGemsMovieFragment[];
   /** Movies matching the current filters. */
@@ -53,7 +53,7 @@ type State = {
   showCount: number;
   /** The active sort value. */
   sortValue: SortType;
-};
+}
 
 const SHOW_COUNT_DEFAULT = 24;
 
