@@ -1,7 +1,7 @@
 /**
  * Applies the given filter to the given collection of T.
  */
-export default function applyFilters<T>({
+export function applyFilters<T>({
   collection,
   filters,
 }: {

@@ -87,7 +87,7 @@ export default async function createReviewPages({
 }: CreatePagesArgs) {
   const { createPage } = actions;
 
-  createReviewsIndexPage(createPage);
+  // createReviewsIndexPage(createPage);
   createUnderseenGemsPage(createPage);
   createOverratedDisappointmentsPage(createPage);
   await createIndividualReviewPages(createPage, graphql, reporter);

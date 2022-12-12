@@ -22,7 +22,7 @@ const gatsbyPluginPageCreator = {
   options: {
     path: path.resolve("src/pages"),
     ignore: {
-      patterns: [`*.fixtures.ts`],
+      patterns: [`*.fixtures.ts`, `*.reducer.ts`],
     },
   },
 };

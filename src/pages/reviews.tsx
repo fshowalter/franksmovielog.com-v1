@@ -2,26 +2,30 @@ import { graphql } from "gatsby";
 import { useReducer, useRef } from "react";
 import Select from "react-select";
 import {
+  Box,
+  Button,
+  DebouncedInput,
+  Fieldset,
+  GradeInput,
+  HeadBuilder,
+  LabelText,
+  Layout,
+  Link,
+  Poster,
+  PosterList,
+  SelectField,
+  SelectOptions,
+  Spacer,
+  YearInput,
+} from "../components";
+import {
   backgroundColors,
   borderColors,
   foregroundColors,
-} from "../../styles/colors.css";
-import { HEADER_HEIGHT } from "../../styles/sizes";
-import { Box } from "../Box";
-import { Button } from "../Button";
-import { DebouncedInput } from "../DebouncedInput";
-import { Fieldset } from "../Fieldset";
-import { GradeInput } from "../GradeInput";
-import { HeadBuilder } from "../HeadBuilder";
-import { LabelText } from "../LabelText";
-import { Layout } from "../Layout";
-import { Link } from "../Link";
-import { Poster, PosterList } from "../PosterList";
-import { SelectField, SelectOptions } from "../SelectField";
-import { Spacer } from "../Spacer";
-import { YearInput } from "../YearInput";
-import type { SortType } from "./ReviewsIndexPage.reducer";
-import { ActionTypes, initState, reducer } from "./ReviewsIndexPage.reducer";
+} from "../styles/colors.css";
+import { HEADER_HEIGHT } from "../styles/sizes";
+import type { SortType } from "./reviews.reducer";
+import { ActionTypes, initState, reducer } from "./reviews.reducer";
 
 function ListInfo({
   visible,

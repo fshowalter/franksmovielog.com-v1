@@ -1,8 +1,8 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { select } from "react-select-event";
-import ReviewsIndexPage, { Head } from "./ReviewsIndexPage";
-import { data } from "./ReviewsIndexPage.fixtures";
+import ReviewsIndexPage, { Head } from "./reviews";
+import { data } from "./reviews.fixtures";
 
 describe("/reviews", () => {
   it("renders", () => {

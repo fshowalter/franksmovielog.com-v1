@@ -1,4 +1,4 @@
-import applyFilters from "../../utils/apply-filters";
+import { applyFilters } from "../../utils/applyFilters";
 import {
   collator,
   sortNumberAsc,

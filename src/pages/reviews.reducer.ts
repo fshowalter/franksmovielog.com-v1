@@ -1,11 +1,11 @@
-import applyFilters from "../../utils/apply-filters";
 import {
+  applyFilters,
   collator,
   sortNumberAsc,
   sortNumberDesc,
   sortStringAsc,
   sortStringDesc,
-} from "../../utils/sort-utils";
+} from "../utils/";
 
 export type SortType =
   | "viewing-date-desc"
