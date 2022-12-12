@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
-import HomePage, { Head } from "./HomePage";
-import data from "./HomePage.fixtures";
+import HomePage, { Head } from "./home";
+import { data } from "./home.fixtures";
 
 describe("/", () => {
   it("renders", () => {

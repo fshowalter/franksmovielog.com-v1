@@ -1,9 +1,8 @@
 import { graphql } from "gatsby";
 import { useRef } from "react";
-import { Box } from "../Box";
-import { Layout } from "../Layout";
-import { Item } from "./Item";
-import { Pagination } from "./Pagination";
+import { Box, HeadBuilder, Layout } from "../components";
+import { Item } from "../components/HomePage/Item";
+import { Pagination } from "../components/HomePage/Pagination";
 
 export interface PageContext {
   limit: number;
@@ -12,7 +11,24 @@ export interface PageContext {
   currentPage: number;
 }
 
-export { Head } from "./Head";
+export function Head({
+  pageContext,
+}: {
+  pageContext: PageContext;
+}): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle={
+        pageContext.currentPage === 1
+          ? "Frank's Movie Log: My Life at the Movies"
+          : `Page ${pageContext.currentPage}`
+      }
+      description="Reviews of current, cult, classic, and forgotten films."
+      article={false}
+      image={null}
+    />
+  );
+}
 
 export default function HomePage({
   pageContext,

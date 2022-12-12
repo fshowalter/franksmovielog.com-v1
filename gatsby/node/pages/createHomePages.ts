@@ -40,7 +40,7 @@ export default async function createHomePages({
 
     createPage({
       path: i === 0 ? `/` : `/page-${i + 1}/`,
-      component: path.resolve("./src/components/HomePage/HomePage.tsx"),
+      component: path.resolve("./src/templates/home.tsx"),
       context: {
         limit: perPage,
         skip,

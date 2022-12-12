@@ -1,4 +1,4 @@
-export default {
+export const data = {
   viewings: [
     {
       imdbId: "tt0045564",
