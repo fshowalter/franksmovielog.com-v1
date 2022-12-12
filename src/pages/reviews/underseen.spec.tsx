@@ -1,8 +1,8 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { select } from "react-select-event";
-import UnderseenGemsPage, { Head } from "./UnderseenGemsPage";
-import data from "./UnderseenGemsPage.fixtures";
+import UnderseenGemsPage, { Head } from "./underseen";
+import { data } from "./underseen.fixtures";
 
 describe("/reviews/underseen/", () => {
   it("renders", () => {

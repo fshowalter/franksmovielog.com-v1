@@ -1,6 +1,6 @@
 import type { GatsbyNode } from "gatsby";
 import createHomePages from "./pages/createHomePages";
-import createReviewPages from "./pages/createReviewPages";
+import { createReviewPages } from "./pages/createReviewPages";
 import createStatPages from "./pages/createStatPages";
 import createWatchlistPages from "./pages/createWatchlistPages";
 

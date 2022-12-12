@@ -1,27 +1,5 @@
-import type { Actions, CreatePagesArgs } from "gatsby";
+import type { CreatePagesArgs } from "gatsby";
 import path from "path";
-
-function createUnderseenGemsPage(createPage: Actions["createPage"]) {
-  // Index page
-  createPage({
-    context: null,
-    path: `/reviews/underseen/`,
-    component: path.resolve(
-      "./src/components/UnderseenGemsPage/UnderseenGemsPage.tsx"
-    ),
-  });
-}
-
-function createOverratedDisappointmentsPage(createPage: Actions["createPage"]) {
-  // Index page
-  createPage({
-    context: null,
-    path: `/reviews/overrated/`,
-    component: path.resolve(
-      "./src/components/OverratedDisappointmentsPage/OverratedDisappointmentsPage.tsx"
-    ),
-  });
-}
 
 const query = `#graphql
 {
@@ -43,11 +21,13 @@ interface QueryResult {
   };
 }
 
-async function createIndividualReviewPages(
-  createPage: Actions["createPage"],
-  graphql: CreatePagesArgs["graphql"],
-  reporter: CreatePagesArgs["reporter"]
-) {
+export async function createReviewPages({
+  graphql,
+  reporter,
+  actions,
+}: CreatePagesArgs) {
+  const { createPage } = actions;
+
   const queryResult = await graphql<QueryResult>(query);
 
   if (!queryResult.data || queryResult.errors) {
@@ -67,16 +47,4 @@ async function createIndividualReviewPages(
       },
     });
   });
-}
-
-export default async function createReviewPages({
-  graphql,
-  reporter,
-  actions,
-}: CreatePagesArgs) {
-  const { createPage } = actions;
-
-  createUnderseenGemsPage(createPage);
-  // createOverratedDisappointmentsPage(createPage);
-  await createIndividualReviewPages(createPage, graphql, reporter);
 }

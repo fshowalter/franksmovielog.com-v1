@@ -2,25 +2,28 @@ import { graphql } from "gatsby";
 import { useReducer, useRef } from "react";
 import Select from "react-select";
 import {
+  Box,
+  Button,
+  DebouncedInput,
+  Fieldset,
+  HeadBuilder,
+  LabelText,
+  Layout,
+  Link,
+  Poster,
+  PosterList,
+  SelectField,
+  Spacer,
+  YearInput,
+} from "../../components";
+import {
   backgroundColors,
   borderColors,
   foregroundColors,
 } from "../../styles/colors.css";
 import { HEADER_HEIGHT } from "../../styles/sizes";
-import { Box } from "../Box";
-import { Button } from "../Button";
-import { DebouncedInput } from "../DebouncedInput/DebouncedInput";
-import { Fieldset } from "../Fieldset";
-import { HeadBuilder } from "../HeadBuilder";
-import { LabelText } from "../LabelText";
-import { Layout } from "../Layout";
-import { Link } from "../Link";
-import { Poster, PosterList } from "../PosterList";
-import { SelectField } from "../SelectField";
-import { Spacer } from "../Spacer";
-import { YearInput } from "../YearInput";
-import type { SortType } from "./UnderseenGemsPage.reducer";
-import reducer, { ActionTypes, initState } from "./UnderseenGemsPage.reducer";
+import type { SortType } from "./underseen.reducer";
+import reducer, { ActionTypes, initState } from "./underseen.reducer";
 
 function ListInfo({
   visible,
