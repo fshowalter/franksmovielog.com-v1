@@ -1,26 +1,22 @@
-const query = `#graphql
-{
-  viewings: viewingsWithReviews(
-    sort: {order: DESC, fields: sequence}
-    limit: 25
-  ) {
-      sequence
-      date: viewingDate
-      title
-      year
-      slug
-      grade
-      principalCastNames
-      directorNames
-      still {
-        childImageSharp {
-          resize(toFormat: JPG, width: 1200, quality: 80) {
-            src
-          }
+const query = `{
+  viewings: viewingsWithReviews(sort: {sequence: DESC}, limit: 25) {
+    sequence
+    date: viewingDate
+    title
+    year
+    slug
+    grade
+    principalCastNames
+    directorNames
+    still {
+      childImageSharp {
+        resize(toFormat: JPG, width: 1200, quality: 80) {
+          src
         }
       }
-      excerpt
     }
+    excerpt
+  }
 }`;
 
 interface QueryResult {

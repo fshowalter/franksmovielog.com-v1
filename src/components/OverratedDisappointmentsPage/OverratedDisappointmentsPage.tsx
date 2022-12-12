@@ -349,14 +349,12 @@ export const pageQuery = graphql`
   }
 
   query OverratedDisappointmentsPage {
-    movie: allOverratedDisappointmentsJson(
-      sort: { fields: [releaseDate], order: DESC }
-    ) {
+    movie: allOverratedDisappointmentsJson(sort: { releaseDate: DESC }) {
       nodes {
         ...OverratedDisappointmentsMovie
       }
-      releaseYears: distinct(field: year)
-      genres: distinct(field: genres)
+      releaseYears: distinct(field: { year: SELECT })
+      genres: distinct(field: { genres: SELECT })
     }
   }
 `;

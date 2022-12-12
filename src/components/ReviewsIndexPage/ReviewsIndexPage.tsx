@@ -454,14 +454,14 @@ export const pageQuery = graphql`
     reviews: reviewStatsJson(review_year: { eq: "all" }) {
       totalCount: reviewsCreated
     }
-    movie: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
+    movie: allViewingsJson(sort: { sequence: DESC }) {
       nodes {
         ...ReviewsIndexViewing
       }
-      media: distinct(field: medium)
-      viewingYears: distinct(field: viewingYear)
-      releaseYears: distinct(field: year)
-      genres: distinct(field: genres)
+      media: distinct(field: { medium: SELECT })
+      viewingYears: distinct(field: { viewingYear: SELECT })
+      releaseYears: distinct(field: { year: SELECT })
+      genres: distinct(field: { genres: SELECT })
     }
   }
 `;

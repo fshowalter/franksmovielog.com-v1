@@ -406,7 +406,7 @@ export const pageQuery = graphql`
       filter: { entityType: { eq: $entityType }, slug: { eq: $slug } }
       limit: 1
     ) {
-      releaseYears: distinct(field: watchlistMovies___year)
+      releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
     }
     entity: watchlistEntity(entityType: $entityType, slug: $slug) {
       name

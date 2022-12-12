@@ -587,17 +587,15 @@ export const pageQuery = graphql`
   }
 
   query WatchlistIndexPage {
-    watchlist: allWatchlistMoviesJson(
-      sort: { fields: [releaseDate], order: ASC }
-    ) {
+    watchlist: allWatchlistMoviesJson(sort: { releaseDate: ASC }) {
       nodes {
         ...WatchlistMovie
       }
-      releaseYears: distinct(field: year)
-      directors: distinct(field: directorNames)
-      performers: distinct(field: performerNames)
-      writers: distinct(field: writerNames)
-      collections: distinct(field: collectionNames)
+      releaseYears: distinct(field: { year: SELECT })
+      directors: distinct(field: { directorNames: SELECT })
+      performers: distinct(field: { performerNames: SELECT })
+      writers: distinct(field: { writerNames: SELECT })
+      collections: distinct(field: { collectionNames: SELECT })
     }
   }
 `;

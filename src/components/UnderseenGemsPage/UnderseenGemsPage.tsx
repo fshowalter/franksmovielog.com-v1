@@ -344,12 +344,12 @@ export const pageQuery = graphql`
   }
 
   query UnderseenGemsPage {
-    movie: allUnderseenGemsJson(sort: { fields: [releaseDate], order: DESC }) {
+    movie: allUnderseenGemsJson(sort: { releaseDate: DESC }) {
       nodes {
         ...UnderseenGemsMovie
       }
-      releaseYears: distinct(field: year)
-      genres: distinct(field: genres)
+      releaseYears: distinct(field: { year: SELECT })
+      genres: distinct(field: { genres: SELECT })
     }
   }
 `;

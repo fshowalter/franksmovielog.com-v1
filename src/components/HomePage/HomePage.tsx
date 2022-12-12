@@ -60,7 +60,7 @@ export default function HomePage({
 export const pageQuery = graphql`
   query HomePage($skip: Int!, $limit: Int!) {
     viewings: viewingsWithReviews(
-      sort: { fields: sequence, order: DESC }
+      sort: { sequence: DESC }
       limit: $limit
       skip: $skip
     ) {

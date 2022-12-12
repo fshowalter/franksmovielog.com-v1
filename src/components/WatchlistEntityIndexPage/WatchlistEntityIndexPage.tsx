@@ -318,7 +318,7 @@ export const pageQuery = graphql`
 
   query WatchlistEntityIndexPage($entityType: String!) {
     entity: allWatchlistEntitiesJson(
-      sort: { fields: [name], order: ASC }
+      sort: { name: ASC }
       filter: { entityType: { eq: $entityType } }
     ) {
       nodes {

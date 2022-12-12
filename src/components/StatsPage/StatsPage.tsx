@@ -186,8 +186,8 @@ export const pageQuery = graphql`
     writers: mostWatchedWritersJson(viewingYear: { eq: $yearScope }) {
       ...MostWatchedWriters
     }
-    viewing: allViewingStatsJson(sort: { fields: viewing_year, order: DESC }) {
-      years: distinct(field: viewing_year)
+    viewing: allViewingStatsJson(sort: { viewing_year: DESC }) {
+      years: distinct(field: { viewing_year: SELECT })
     }
   }
 `;
