@@ -104,7 +104,6 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.?(s)css": "stylelint --fix",
     "*.{json,js,css,md,ts,tsx,jsx,yml}": "prettier --write"
   }
 }

@@ -20,4 +20,9 @@ module.exports = {
   setupFiles: ["<rootDir>/loadershim.js"],
   setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"],
   testEnvironment: "jsdom",
+  collectCoverageFrom: [
+    "**/*.{ts,tsx}",
+    "!**/node_modules/**",
+    "!**/**.css.ts",
+  ],
 };
