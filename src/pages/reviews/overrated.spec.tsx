@@ -1,10 +1,8 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { select } from "react-select-event";
-import OverratedDisappointmentsPage, {
-  Head,
-} from "./OverratedDisappointmentsPage";
-import data from "./OverratedDisappointmentsPage.fixtures";
+import OverratedDisappointmentsPage, { Head } from "./overrated";
+import { data } from "./overrated.fixtures";
 
 describe("/reviews/underseen/", () => {
   it("renders", () => {
