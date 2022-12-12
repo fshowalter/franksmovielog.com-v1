@@ -1,4 +1,5 @@
 export { Box } from "./Box";
+export type { IBoxProps } from "./Box";
 export { Button } from "./Button";
 export { DebouncedInput } from "./DebouncedInput";
 export { Fieldset } from "./Fieldset";
@@ -8,6 +9,7 @@ export { LabelText } from "./LabelText";
 export { Layout } from "./Layout";
 export { Link } from "./Link";
 export { Poster, PosterList } from "./PosterList";
+export { ProgressGraph } from "./ProgressGraph";
 export { SelectField, SelectOptions } from "./SelectField";
 export { Spacer } from "./Spacer";
 export { YearInput } from "./YearInput";

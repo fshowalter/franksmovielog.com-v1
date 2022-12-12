@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { toSentenceArray } from "../../utils/to-sentence-array";
+import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { gridAreaComponent, gridComponent } from "../Grid";

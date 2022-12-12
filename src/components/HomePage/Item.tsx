@@ -1,4 +1,4 @@
-import { toSentenceArray } from "../../utils/to-sentence-array";
+import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
 import { DateIcon } from "../DateIcon";
 import { Grade } from "../Grade";

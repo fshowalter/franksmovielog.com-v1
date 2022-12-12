@@ -11,7 +11,7 @@ import { HeadBuilder } from "../HeadBuilder";
 import { Layout } from "../Layout";
 import { Link } from "../Link";
 import { Poster, PosterList } from "../PosterList";
-import ProgressGraph from "../ProgressGraph";
+import { ProgressGraph } from "../ProgressGraph";
 import { SelectField } from "../SelectField";
 import { Spacer } from "../Spacer";
 import { YearInput } from "../YearInput";

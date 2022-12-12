@@ -1,3 +1,1 @@
-import ProgressGraph from "./ProgressGraph";
-
-export default ProgressGraph;
+export { ProgressGraph } from "./ProgressGraph";

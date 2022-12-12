@@ -6,3 +6,4 @@ export {
   sortStringAsc,
   sortStringDesc,
 } from "./sort-utils";
+export { toSentenceArray } from "./toSentenceArray";

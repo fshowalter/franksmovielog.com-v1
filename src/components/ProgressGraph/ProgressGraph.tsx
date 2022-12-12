@@ -5,7 +5,7 @@ interface IProgressGraphProps extends React.SVGProps<SVGSVGElement> {
   complete: number;
 }
 
-export default function ProgressGraph({
+export function ProgressGraph({
   total,
   complete,
   ...rest
