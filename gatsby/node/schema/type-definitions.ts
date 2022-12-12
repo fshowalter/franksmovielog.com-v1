@@ -5,6 +5,7 @@ export type GatsbyNode = Node;
 
 export interface GatsbyNodeModel {
   findOne: <T>(args: object) => Promise<T | null>;
+  getNodeById: <T>({ id }: { id: string }) => T | null;
   findAll: <T>(
     args: object
   ) => Promise<{ entries: T[]; totalCount: () => Promise<number> }>;

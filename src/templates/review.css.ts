@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
-import { minMediaQuery } from "../../styles/breakpoints";
-import { size } from "../../styles/sizes";
+import { minMediaQuery } from "../styles/breakpoints";
+import { size } from "../styles/sizes";
 
 export const titleLayoutStyle = style({
   paddingTop: size[24],

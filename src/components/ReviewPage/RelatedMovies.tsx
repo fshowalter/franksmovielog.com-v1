@@ -221,21 +221,21 @@ export const query = graphql`
       performers {
         name
         slug
-        browseMore(movieImdbId: $imdbId) {
+        browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }
       }
       directors {
         name
         slug
-        browseMore(movieImdbId: $imdbId) {
+        browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }
       }
       writers {
         name
         slug
-        browseMore(movieImdbId: $imdbId) {
+        browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }
       }
@@ -243,7 +243,7 @@ export const query = graphql`
       collections {
         name
         slug
-        browseMore(movieImdbId: $imdbId) {
+        browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }
       }

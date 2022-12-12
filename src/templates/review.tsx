@@ -1,17 +1,17 @@
 import { graphql } from "gatsby";
-import { Box } from "../Box";
-import { Layout } from "../Layout";
-import { Spacer } from "../Spacer";
-import { Still } from "../Still";
-import { Credits } from "./Credits";
-import { RelatedMovies } from "./RelatedMovies";
-import { ReviewContent } from "./ReviewContent";
-import { titleLayoutStyle } from "./ReviewPage.css";
-import { StructuredData } from "./StructuredData";
-import { Title } from "./Title";
-import { ViewingHistory } from "./ViewingHistory";
+import { Box } from "../components/Box";
+import { Layout } from "../components/Layout";
+import { Credits } from "../components/ReviewPage/Credits";
+import { RelatedMovies } from "../components/ReviewPage/RelatedMovies";
+import { ReviewContent } from "../components/ReviewPage/ReviewContent";
+import { StructuredData } from "../components/ReviewPage/StructuredData";
+import { Title } from "../components/ReviewPage/Title";
+import { ViewingHistory } from "../components/ReviewPage/ViewingHistory";
+import { Spacer } from "../components/Spacer";
+import { Still } from "../components/Still";
+import { titleLayoutStyle } from "./review.css";
 
-export { Head } from "./Head";
+export { Head } from "../components/ReviewPage/Head";
 
 export default function ReviewPage({
   data,
@@ -56,8 +56,8 @@ export default function ReviewPage({
 }
 
 export const pageQuery = graphql`
-  query ReviewPage($imdbId: String!) {
-    movie: reviewedMovie(imdbId: $imdbId) {
+  query ReviewPage($id: String!) {
+    movie: reviewedMovie(id: $id) {
       still {
         childImageSharp {
           gatsbyImageData(
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
             formats: [JPG, AVIF]
             quality: 80
             width: 960
-            placeholder: TRACED_SVG
+            placeholder: BLURRED
           )
         }
       }

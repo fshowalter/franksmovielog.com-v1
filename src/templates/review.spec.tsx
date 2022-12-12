@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
-import ReviewPage, { Head } from "./ReviewPage";
-import { data } from "./ReviewPage.fixtures";
+import ReviewPage, { Head } from "./review";
+import { data } from "./review.fixtures";
 
 describe("/reviews/{slug}", () => {
   it("renders", () => {

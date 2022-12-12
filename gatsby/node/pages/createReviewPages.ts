@@ -1,17 +1,6 @@
 import type { Actions, CreatePagesArgs } from "gatsby";
 import path from "path";
 
-function createReviewsIndexPage(createPage: Actions["createPage"]) {
-  // Index page
-  createPage({
-    context: null,
-    path: `/reviews/`,
-    component: path.resolve(
-      "./src/components/ReviewsIndexPage/ReviewsIndexPage.tsx"
-    ),
-  });
-}
-
 function createUnderseenGemsPage(createPage: Actions["createPage"]) {
   // Index page
   createPage({
@@ -38,7 +27,7 @@ const query = `#graphql
 {
   reviews: allReviewedMoviesJson {
     nodes {
-      imdbId
+      id
       slug
     }
   }
@@ -48,7 +37,7 @@ const query = `#graphql
 interface QueryResult {
   reviews: {
     nodes: {
-      imdbId: string;
+      id: string;
       slug: string;
     }[];
   };
@@ -72,9 +61,9 @@ async function createIndividualReviewPages(
   queryResult.data.reviews.nodes.forEach((node) => {
     createPage({
       path: `/reviews/${node.slug}/`,
-      component: path.resolve("./src/components/ReviewPage/ReviewPage.tsx"),
+      component: path.resolve("./src/templates/review.tsx"),
       context: {
-        imdbId: node.imdbId,
+        id: node.id,
       },
     });
   });

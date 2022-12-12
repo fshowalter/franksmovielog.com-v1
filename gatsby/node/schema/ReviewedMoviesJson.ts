@@ -5,7 +5,6 @@ import type {
 } from "gatsby";
 import path from "path";
 import { MarkdownNode } from "./MarkdownRemark";
-import { findReviewedMovieNode } from "./resolvers/reviewedMovieResolver";
 import { SchemaNames } from "./schemaNames";
 import type {
   GatsbyNode,
@@ -54,11 +53,11 @@ const ReviewedMovieWatchlistEntity = {
     browseMore: {
       type: `[${SchemaNames.REVIEWED_MOVIES_JSON}!]!`,
       args: {
-        movieImdbId: "String!",
+        sourceReviewId: "String!",
       },
       resolve: async (
         source: WatchlistEntityNode,
-        args: { movieImdbId: string },
+        args: { sourceReviewId: string },
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
@@ -93,7 +92,10 @@ const ReviewedMovieWatchlistEntity = {
           },
         });
 
-        return sliceMoviesForBrowseMore(Array.from(entries), args.movieImdbId);
+        return sliceMoviesForBrowseMore(
+          Array.from(entries),
+          args.sourceReviewId
+        );
       },
     },
   },
@@ -164,7 +166,7 @@ const ReviewedMoviesJson = {
           },
         });
 
-        return sliceMoviesForBrowseMore(Array.from(entries), source.imdbId);
+        return sliceMoviesForBrowseMore(Array.from(entries), source.id);
       },
     },
     viewings: {
@@ -325,16 +327,18 @@ export function buildReviewedMovieQuery(
       reviewedMovie: {
         type: `${SchemaNames.REVIEWED_MOVIES_JSON}!`,
         args: {
-          imdbId: "String!",
+          id: "String!",
         },
-        resolve: async (
+        resolve: (
           _source: unknown,
           args: {
-            imdbId: string;
+            id: string;
           },
           context: GatsbyNodeContext
         ) => {
-          return findReviewedMovieNode(args.imdbId, context.nodeModel);
+          return context.nodeModel.getNodeById<ReviewedMovieNode>({
+            id: args.id,
+          });
         },
       },
     },
