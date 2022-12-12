@@ -4,6 +4,7 @@ export { Button } from "./Button";
 export { DebouncedInput } from "./DebouncedInput";
 export { Fieldset } from "./Fieldset";
 export { GradeInput } from "./GradeInput";
+export { GraphqlImage } from "./GraphqlImage";
 export { HeadBuilder } from "./HeadBuilder";
 export { LabelText } from "./LabelText";
 export { Layout } from "./Layout";

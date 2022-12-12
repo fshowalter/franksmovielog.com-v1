@@ -1,25 +1,28 @@
 import { graphql } from "gatsby";
 import { useReducer } from "react";
-import { foregroundColors } from "../../styles/colors.css";
-import { HEADER_HEIGHT } from "../../styles/sizes";
-import { Box } from "../Box";
-import { Button } from "../Button";
-import { DebouncedInput } from "../DebouncedInput";
-import { Fieldset } from "../Fieldset";
-import { GraphqlImage } from "../GraphqlImage";
-import { HeadBuilder } from "../HeadBuilder";
-import { Layout } from "../Layout";
-import { Link } from "../Link";
-import { Poster, PosterList } from "../PosterList";
-import { ProgressGraph } from "../ProgressGraph";
-import { SelectField } from "../SelectField";
-import { Spacer } from "../Spacer";
-import { YearInput } from "../YearInput";
+import {
+  Box,
+  Button,
+  DebouncedInput,
+  Fieldset,
+  GraphqlImage,
+  HeadBuilder,
+  Layout,
+  Link,
+  Poster,
+  PosterList,
+  ProgressGraph,
+  SelectField,
+  Spacer,
+  YearInput,
+} from "../components";
+import { foregroundColors } from "../styles/colors.css";
+import { HEADER_HEIGHT } from "../styles/sizes";
 import reducer, {
   ActionType,
   initState,
   SortType,
-} from "./WatchlistEntityPage.reducer";
+} from "./watchlistEntity.reducer";
 
 function ListInfo({
   visible,

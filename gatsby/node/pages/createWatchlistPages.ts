@@ -46,9 +46,7 @@ async function createDirectorPages(
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/directors/${node.slug}/`,
-      component: path.resolve(
-        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
-      ),
+      component: path.resolve("./src/templates/watchlistEntity.tsx"),
       context: {
         slug: node.slug,
         entityType: "director",
@@ -94,9 +92,7 @@ async function createPerformerPages(
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/performers/${node.slug}/`,
-      component: path.resolve(
-        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
-      ),
+      component: path.resolve("./src/templates/watchlistEntity.tsx"),
       context: {
         slug: node.slug,
         entityType: "performer",
@@ -143,9 +139,7 @@ async function createWriterPages(
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/writers/${node.slug}/`,
-      component: path.resolve(
-        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
-      ),
+      component: path.resolve("./src/templates/watchlistEntity.tsx"),
       context: {
         slug: node.slug,
         entityType: "writer",
@@ -191,9 +185,7 @@ async function createCollectionPages(
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/collections/${node.slug}/`,
-      component: path.resolve(
-        "./src/components/WatchlistEntityPage/WatchlistEntityPage.tsx"
-      ),
+      component: path.resolve("./src/templates/watchlistEntity.tsx"),
       context: {
         slug: node.slug,
         entityType: "collection",
