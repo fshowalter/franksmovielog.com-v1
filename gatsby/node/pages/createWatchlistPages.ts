@@ -202,16 +202,6 @@ async function createCollectionPages(
   });
 }
 
-function createIndexPage(createPage: Actions["createPage"]) {
-  createPage({
-    path: `/watchlist/`,
-    context: null,
-    component: path.resolve(
-      "./src/components/WatchlistIndexPage/WatchlistIndexPage.tsx"
-    ),
-  });
-}
-
 export default async function createWatchlistPages({
   graphql,
   reporter,
@@ -219,7 +209,6 @@ export default async function createWatchlistPages({
 }: CreatePagesArgs) {
   const { createPage } = actions;
 
-  createIndexPage(createPage);
   await createDirectorPages(graphql, reporter, createPage);
   await createPerformerPages(graphql, reporter, createPage);
   await createWriterPages(graphql, reporter, createPage);
