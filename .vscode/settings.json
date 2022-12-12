@@ -17,8 +17,9 @@
   "scss.validate": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
+
     "source.fixAll": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.eslint": true
   },
   "files.autoSaveDelay": 500,
   "stylelint.packageManager": "yarn",

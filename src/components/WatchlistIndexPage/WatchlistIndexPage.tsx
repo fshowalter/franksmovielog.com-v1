@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { useReducer, useRef } from "react";
 import { foregroundColors } from "../../styles/colors.css";
 import { HEADER_HEIGHT } from "../../styles/sizes";
-import toSentenceArray from "../../utils/to-sentence-array";
+import { toSentenceArray } from "../../utils/to-sentence-array";
 import { Box, IBoxProps } from "../Box";
 import { Button } from "../Button";
 import { DebouncedInput } from "../DebouncedInput/DebouncedInput";
@@ -65,8 +65,7 @@ function groupMovies({
   movies: Queries.WatchlistMovieFragment[];
   sortValue: SortType;
 }): Map<string, Queries.WatchlistMovieFragment[]> {
-  const groupedMovies: Map<string, Queries.WatchlistMovieFragment[]> =
-    new Map();
+  const groupedMovies = new Map<string, Queries.WatchlistMovieFragment[]>();
 
   movies.map((movie) => {
     const group = groupForMovie(movie, sortValue);

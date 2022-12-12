@@ -2,7 +2,7 @@ import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import selectEvent from "react-select-event";
 import ReviewsIndexPage, { Head } from "./ReviewsIndexPage";
-import data from "./ReviewsIndexPage.fixtures";
+import { data } from "./ReviewsIndexPage.fixtures";
 
 describe("/reviews", () => {
   it("renders", () => {
@@ -199,8 +199,8 @@ describe("/reviews", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "2012");
-    await userEvent.selectOptions(toInput, "2015");
+    await userEvent.selectOptions(fromInput, "2020");
+    await userEvent.selectOptions(toInput, "2021");
 
     expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
@@ -214,10 +214,10 @@ describe("/reviews", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "2013");
-    await userEvent.selectOptions(toInput, "2015");
-    await userEvent.selectOptions(fromInput, "2017");
-    await userEvent.selectOptions(toInput, "2012");
+    await userEvent.selectOptions(fromInput, "2020");
+    await userEvent.selectOptions(toInput, "2021");
+    await userEvent.selectOptions(fromInput, "2022");
+    await userEvent.selectOptions(toInput, "2020");
 
     expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
   });
