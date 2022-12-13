@@ -1,0 +1,42 @@
+import { graphql } from "gatsby";
+import { HeadBuilder } from "../../components/HeadBuilder";
+import { WatchlistEntitiesView } from "../../views/WatchlistEntitiesView";
+
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle={`Watchlist Collections`}
+      description={`A sortable and filterable list of watchlist collections.`}
+      image={null}
+      article={false}
+    />
+  );
+}
+
+export default function WatchlistCollectionsPage({
+  data,
+}: {
+  data: Queries.WatchlistCollectionsPageQuery;
+}): JSX.Element {
+  return (
+    <WatchlistEntitiesView
+      title="Collections"
+      tagline="Round up the usual suspects."
+      slugPath="collections"
+      entities={data.entity.nodes}
+    />
+  );
+}
+
+export const pageQuery = graphql`
+  query WatchlistCollectionsPage {
+    entity: allWatchlistEntitiesJson(
+      sort: { name: ASC }
+      filter: { entityType: { eq: "collection" } }
+    ) {
+      nodes {
+        ...WatchlistEntitiesViewItem
+      }
+    }
+  }
+`;

@@ -322,25 +322,5 @@ export default function buildReviewedMoviesJsonSchema(
 export function buildReviewedMovieQuery(
   createResolvers: CreateResolversArgs["createResolvers"]
 ) {
-  createResolvers({
-    Query: {
-      reviewedMovie: {
-        type: `${SchemaNames.REVIEWED_MOVIES_JSON}!`,
-        args: {
-          id: "String!",
-        },
-        resolve: (
-          _source: unknown,
-          args: {
-            id: string;
-          },
-          context: GatsbyNodeContext
-        ) => {
-          return context.nodeModel.getNodeById<ReviewedMovieNode>({
-            id: args.id,
-          });
-        },
-      },
-    },
-  });
+  createResolvers();
 }

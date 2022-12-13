@@ -3,7 +3,7 @@ import type { GatsbyNodeContext } from "../schema/type-definitions";
 export const reviewedMovieQuery = {
   Query: {
     reviewedMovie: {
-      type: "ReviewedMoviesJson",
+      type: "ReviewedMoviesJson!",
       args: {
         id: "String!",
       },

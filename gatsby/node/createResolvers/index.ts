@@ -7,11 +7,11 @@ import { watchlistEntityQuery } from "./watchlistEntityQuery";
 import type { CreateResolversArgs } from "gatsby";
 
 export function createResolvers({ createResolvers }: CreateResolversArgs) {
-  createResolvers([
+  [
     allTimeStatsQuery,
     statsForYearQuery,
     viewingsWithReviewQuery,
     reviewedMovieQuery,
     watchlistEntityQuery,
-  ]);
+  ].forEach((resolver) => void createResolvers(resolver));
 }

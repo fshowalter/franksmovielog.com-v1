@@ -6,7 +6,7 @@ export function applyFilters<T>({
   filters,
 }: {
   /** The collection to filter. */
-  collection: T[];
+  collection: readonly T[];
   /** The filters to apply. */
   filters: Record<string, (arg0: T) => boolean>;
 }): T[] {

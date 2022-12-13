@@ -1,31 +1,30 @@
 import { graphql } from "gatsby";
 import { useReducer } from "react";
+import { Box } from "../../components/Box";
+import { DebouncedInput } from "../../components/DebouncedInput";
+import { Fieldset } from "../../components/Fieldset";
+import { GraphqlImage } from "../../components/GraphqlImage";
+import { Layout } from "../../components/Layout";
+import { Link } from "../../components/Link";
+import { SelectField } from "../../components/SelectField";
+import { Spacer } from "../../components/Spacer";
 import { backgroundColors, borderColors } from "../../styles/colors.css";
-import { Box } from "../Box";
-import { DebouncedInput } from "../DebouncedInput";
-import { Fieldset } from "../Fieldset";
-import { GraphqlImage } from "../GraphqlImage";
-import { HeadBuilder } from "../HeadBuilder";
-import { Layout } from "../Layout";
-import { Link } from "../Link";
-import { SelectField } from "../SelectField";
-import { Spacer } from "../Spacer";
 import {
   gridStyle,
   progressRingPostionStyle,
   progressRingTransformStyle,
-} from "./WatchlistEntityIndexPage.css";
+} from "./WatchlistEntitiesView.css";
 import {
   ActionType,
   initState,
   reducer,
   SortValue,
-} from "./WatchlistEntityIndexPage.reducer";
+} from "./WatchlistEntitiesView.reducer";
 
 function Progress({
   entity,
 }: {
-  entity: Queries.WatchlistEntityIndexItemFragment;
+  entity: Queries.WatchlistEntitiesViewItemFragment;
 }): JSX.Element {
   const percent = entity.reviewCount / entity.titleCount;
   const circumference = 17.5 * 2 * Math.PI;
@@ -67,7 +66,7 @@ function ListItem({
   entity,
   slugPath,
 }: {
-  entity: Queries.WatchlistEntityIndexItemFragment;
+  entity: Queries.WatchlistEntitiesViewItemFragment;
   slugPath: string;
 }): JSX.Element {
   if (entity.avatar && entity.slug) {
@@ -116,7 +115,7 @@ function ListItem({
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill={backgroundColors.subtle}
-          width="auto"
+          width="100%"
         >
           <path
             clipRule="evenodd"
@@ -137,79 +136,24 @@ function ListItem({
   );
 }
 
-export enum EntityType {
-  DIRECTOR = "director",
-  PERFORMER = "performer",
-  WRITER = "writer",
-  COLLECTION = "collection",
-}
-
-function detailsForEntityType(entityType: EntityType) {
-  const details = {
-    tagLine: "",
-    pluralName: "",
-  };
-
-  switch (entityType) {
-    case EntityType.DIRECTOR: {
-      details.pluralName = "Directors";
-      details.tagLine = "Drama is life with the dull bits cut out.";
-      return details;
-    }
-    case EntityType.PERFORMER: {
-      details.pluralName = "Performers";
-      details.tagLine = "Talk low, talk slow, and don't talk too much.";
-      return details;
-    }
-    case EntityType.WRITER: {
-      details.pluralName = "Writers";
-      details.tagLine = "It's not a lie. It's a gift for fiction.";
-      return details;
-    }
-    case EntityType.COLLECTION: {
-      details.pluralName = "Collections";
-      details.tagLine = "Round up the usual suspects.";
-      return details;
-    }
-  }
-}
-
-export function Head({
-  pageContext,
+export function WatchlistEntitiesView({
+  entities,
+  slugPath,
+  title,
+  tagline,
 }: {
-  pageContext: PageContext;
-}): JSX.Element {
-  const entityDetails = detailsForEntityType(pageContext.entityType);
-
-  return (
-    <HeadBuilder
-      pageTitle={`Watchlist ${entityDetails.pluralName}`}
-      description={`A sortable and filterable list of watchlist ${entityDetails.pluralName.toLocaleLowerCase()}.`}
-      image={null}
-      article={false}
-    />
-  );
-}
-
-/**
- * Renders an index page for watchlist entities.
- */
-export default function WatchlistEntityIndexPage({
-  pageContext,
-  data,
-}: {
-  pageContext: PageContext;
-  data: Queries.WatchlistEntityIndexPageQuery;
+  entities: readonly Queries.WatchlistEntitiesViewItemFragment[];
+  slugPath: string;
+  title: string;
+  tagline: string;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      entities: [...data.entity.nodes],
+      entities,
     },
     initState
   );
-
-  const entityDetails = detailsForEntityType(pageContext.entityType);
 
   return (
     <Layout>
@@ -234,11 +178,11 @@ export default function WatchlistEntityIndexPage({
             </Link>
             <Spacer axis="vertical" size={16} />
             <Box as="h1" fontSize="pageTitle">
-              {entityDetails.pluralName}
+              {title}
             </Box>
             <Spacer axis="vertical" size={16} />
             <Box color="subtle">
-              <q>{entityDetails.tagLine}</q>
+              <q>{tagline}</q>
             </Box>
           </Box>
           <Spacer axis="vertical" size={32} />
@@ -278,9 +222,9 @@ export default function WatchlistEntityIndexPage({
             {state.filteredEntities.map((entity) => {
               return (
                 <ListItem
-                  key={entity.slug}
+                  key={entity.name}
                   entity={entity}
-                  slugPath={entityDetails.pluralName.toLowerCase()}
+                  slugPath={slugPath}
                 />
               );
             })}
@@ -292,12 +236,8 @@ export default function WatchlistEntityIndexPage({
   );
 }
 
-interface PageContext {
-  entityType: EntityType;
-}
-
 export const pageQuery = graphql`
-  fragment WatchlistEntityIndexItem on WatchlistEntitiesJson {
+  fragment WatchlistEntitiesViewItem on WatchlistEntitiesJson {
     name
     slug
     titleCount
@@ -310,19 +250,8 @@ export const pageQuery = graphql`
           quality: 80
           width: 160
           height: 160
-          placeholder: TRACED_SVG
+          placeholder: BLURRED
         )
-      }
-    }
-  }
-
-  query WatchlistEntityIndexPage($entityType: String!) {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: $entityType } }
-    ) {
-      nodes {
-        ...WatchlistEntityIndexItem
       }
     }
   }

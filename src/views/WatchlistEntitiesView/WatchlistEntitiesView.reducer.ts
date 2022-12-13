@@ -9,14 +9,14 @@ export enum ActionType {
 export type SortValue = "name" | "reviews";
 
 function sortEntities(
-  titles: Queries.WatchlistEntityIndexItemFragment[],
+  entities: Queries.WatchlistEntitiesViewItemFragment[],
   sortOrder: SortValue
-) {
+): Queries.WatchlistEntitiesViewItemFragment[] {
   const sortMap: Record<
     SortValue,
     (
-      a: Queries.WatchlistEntityIndexItemFragment,
-      b: Queries.WatchlistEntityIndexItemFragment
+      a: Queries.WatchlistEntitiesViewItemFragment,
+      b: Queries.WatchlistEntitiesViewItemFragment
     ) => number
   > = {
     name: (a, b) => sortStringAsc(a.name, b.name),
@@ -25,7 +25,7 @@ function sortEntities(
 
   const comparer = sortMap[sortOrder];
 
-  return titles.sort(comparer);
+  return entities.sort(comparer);
 }
 
 /**
@@ -33,13 +33,13 @@ function sortEntities(
  */
 interface State {
   /** All possible reviews. */
-  allEntities: Queries.WatchlistEntityIndexItemFragment[];
+  allEntities: Queries.WatchlistEntitiesViewItemFragment[];
   /** People matching the current filters. */
-  filteredEntities: Queries.WatchlistEntityIndexItemFragment[];
+  filteredEntities: Queries.WatchlistEntitiesViewItemFragment[];
   /** The active filters. */
   filters: Record<
     string,
-    (entity: Queries.WatchlistEntityIndexItemFragment) => boolean
+    (entity: Queries.WatchlistEntitiesViewItemFragment) => boolean
   >;
   /** The active sort value. */
   sortValue: SortValue;
@@ -48,11 +48,11 @@ interface State {
 export function initState({
   entities,
 }: {
-  entities: Queries.WatchlistEntityIndexItemFragment[];
+  entities: readonly Queries.WatchlistEntitiesViewItemFragment[];
 }): State {
   return {
-    allEntities: entities,
-    filteredEntities: entities,
+    allEntities: [...entities],
+    filteredEntities: [...entities],
     filters: {},
     sortValue: "name",
   };
@@ -87,12 +87,12 @@ export function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        name: (person: Queries.WatchlistEntityIndexItemFragment) => {
+        name: (person: Queries.WatchlistEntitiesViewItemFragment) => {
           return regex.test(person.name);
         },
       };
       filteredEntities = sortEntities(
-        applyFilters<Queries.WatchlistEntityIndexItemFragment>({
+        applyFilters<Queries.WatchlistEntitiesViewItemFragment>({
           collection: state.allEntities,
           filters,
         }),
