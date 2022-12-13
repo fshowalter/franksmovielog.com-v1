@@ -151,7 +151,7 @@ export function Head({
   data,
 }: {
   pageContext: PageContext;
-  data: Queries.WatchlistEntityPageQuery;
+  data: Queries.WatchlistEntityTemplateQuery;
 }): JSX.Element {
   const entity = data.entity;
 
@@ -174,12 +174,12 @@ export function Head({
 /**
  * Renders a page for a watchlist director.
  */
-export default function WatchlistEntityPage({
+export default function WatchlistEntityTemplate({
   pageContext,
   data,
 }: {
   pageContext: PageContext;
-  data: Queries.WatchlistEntityPageQuery;
+  data: Queries.WatchlistEntityTemplateQuery;
 }): JSX.Element {
   const entity = data.entity;
 
@@ -404,7 +404,7 @@ export const pageQuery = graphql`
     }
   }
 
-  query WatchlistEntityPage($slug: String!, $entityType: String!) {
+  query WatchlistEntityTemplate($slug: String!, $entityType: String!) {
     distinct: allWatchlistEntitiesJson(
       filter: { entityType: { eq: $entityType }, slug: { eq: $slug } }
       limit: 1

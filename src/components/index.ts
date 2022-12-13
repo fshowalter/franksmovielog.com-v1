@@ -13,4 +13,5 @@ export { Poster, PosterList } from "./PosterList";
 export { ProgressGraph } from "./ProgressGraph";
 export { SelectField, SelectOptions } from "./SelectField";
 export { Spacer } from "./Spacer";
+export { StatsPage } from "./StatsPage/StatsPage";
 export { YearInput } from "./YearInput";

@@ -17,7 +17,11 @@ function starsForGrade(grade: string) {
   return "";
 }
 
-export function Head({ data }: { data: Queries.ReviewPageQuery }): JSX.Element {
+export function Head({
+  data,
+}: {
+  data: Queries.ReviewTemplateQuery;
+}): JSX.Element {
   const movie = data.movie;
 
   return (

@@ -19,7 +19,7 @@ export default async function createStatPages({
   const queryResult = await graphql<QueryResult>(
     `
       {
-        viewing: allViewingStatsJson {
+        viewing: allViewingStatsJson(filter: { viewing_year: { ne: "all" } }) {
           nodes {
             year: viewing_year
           }
@@ -37,14 +37,11 @@ export default async function createStatPages({
 
   const years = queryResult.data.viewing.nodes.map((node) => node.year);
   years.forEach((year) => {
-    const pagePath = year === "all" ? `/stats/` : `/stats/${year}/`;
-
     createPage({
-      path: pagePath,
-      component: path.resolve("./src/components/StatsPage/StatsPage.tsx"),
+      path: `/stats/${year}/`,
+      component: path.resolve("./src/templates/statsForYear.tsx"),
       context: {
-        yearScope: year,
-        isYear: year !== "all",
+        year: year,
       },
     });
   });

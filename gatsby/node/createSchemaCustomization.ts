@@ -1,7 +1,4 @@
-import type {
-  CreateResolversArgs,
-  CreateSchemaCustomizationArgs,
-} from "gatsby";
+import type { CreateSchemaCustomizationArgs } from "gatsby";
 import buildLinkReviewedMoviesExtension from "./schema/extensions/linkReviewedMovies";
 import buildProxyToReviewedMovieExtension from "./schema/extensions/proxyToReviewedMovie";
 import buildGradeDistributionsJsonSchema from "./schema/GradeDistributionsJson";
@@ -12,23 +9,17 @@ import buildMostWatchedPeopleSchema from "./schema/MostWatchedPeople";
 import buildMostWatchedPerformersJsonSchema from "./schema/MostWatchedPerformersJson";
 import buildMostWatchedWritersJsonSchema from "./schema/MostWatchedWritersJson";
 import buildOverratedDisappointmentsJsonSchema from "./schema/OverratedDisappointmentsJson";
-import buildReviewedMoviesJsonSchema, {
-  buildReviewedMovieQuery,
-} from "./schema/ReviewedMoviesJson";
+import buildReviewedMoviesJsonSchema from "./schema/ReviewedMoviesJson";
 import buildReviewStatsJsonSchema from "./schema/ReviewStatsJson";
 import buildTopMediaJsonSchema from "./schema/TopMediaJson";
 import buildTopVenuesJsonSchema from "./schema/TopVenuesJson";
+import { AllTimeStats } from "./schema/types/AllTimeStats";
+import { StatsForYear } from "./schema/types/StatsForYear";
 import buildUnderseenGemsJsonSchema from "./schema/UnderseenGemsJson";
 import buildViewingCountsForDecadesJsonSchema from "./schema/ViewingCountsForDecadesJson";
-import {
-  buildViewingsJsonSchema,
-  buildViewingsWithReviewQuery,
-} from "./schema/ViewingsJson";
+import { buildViewingsJsonSchema } from "./schema/ViewingsJson";
 import buildViewingStatsJsonSchema from "./schema/ViewingStatsJson";
-import {
-  buildWatchlistEntitiesJsonSchema,
-  buildWatchlistEntityQuery,
-} from "./schema/WatchlistEntitiesJson";
+import { buildWatchlistEntitiesJsonSchema } from "./schema/WatchlistEntitiesJson";
 import buildWatchlistMoviesJsonSchema from "./schema/WatchlistMoviesJson";
 
 export function createSchemaCustomization({
@@ -42,6 +33,8 @@ export function createSchemaCustomization({
   buildViewingsJsonSchema(schema, createTypes);
 
   const typeDefs = [
+    schema.buildObjectType(AllTimeStats),
+    schema.buildObjectType(StatsForYear),
     ...buildViewingCountsForDecadesJsonSchema(schema),
     ...buildMostWatchedPeopleSchema(schema),
     ...buildWatchlistMoviesJsonSchema(schema),
@@ -62,10 +55,4 @@ export function createSchemaCustomization({
   ];
 
   createTypes(typeDefs);
-}
-
-export function createResolvers({ createResolvers }: CreateResolversArgs) {
-  buildViewingsWithReviewQuery(createResolvers);
-  buildReviewedMovieQuery(createResolvers);
-  buildWatchlistEntityQuery(createResolvers);
 }

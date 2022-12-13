@@ -7,14 +7,10 @@
 // You can delete this file if you're not using it
 
 import CreatePages from "./gatsby/node/createPages";
-import {
-  createResolvers as CreateResolvers,
-  createSchemaCustomization as CreateSchemaCustomization,
-} from "./gatsby/node/createSchemaCustomization";
+import { createSchemaCustomization as CreateSchemaCustomization } from "./gatsby/node/createSchemaCustomization";
 import { createWebpackConfig } from "./gatsby/node/createWebpackConfig";
+export { createResolvers } from "./gatsby/node/createResolvers";
 
 export const createPages = CreatePages;
 export const createSchemaCustomization = CreateSchemaCustomization;
 export const onCreateWebpackConfig = createWebpackConfig;
-
-export const createResolvers = CreateResolvers;

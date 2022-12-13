@@ -13,10 +13,10 @@ import { titleLayoutStyle } from "./review.css";
 
 export { Head } from "../components/ReviewPage/Head";
 
-export default function ReviewPage({
+export default function ReviewTemplate({
   data,
 }: {
-  data: Queries.ReviewPageQuery;
+  data: Queries.ReviewTemplateQuery;
 }): JSX.Element {
   const movie = data.movie;
 
@@ -56,7 +56,7 @@ export default function ReviewPage({
 }
 
 export const pageQuery = graphql`
-  query ReviewPage($id: String!) {
+  query ReviewTemplate($id: String!) {
     movie: reviewedMovie(id: $id) {
       still {
         childImageSharp {

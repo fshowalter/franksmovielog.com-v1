@@ -1,1 +1,1 @@
-export { PosterListWithFilters } from "./PosterListWithFilters";
+export { PosterListWithFiltersLayout } from "./PosterListWithFilters";

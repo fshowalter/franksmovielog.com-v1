@@ -18,7 +18,7 @@ const GridArea = gridAreaComponent(gridAreas);
 const Grid = gridComponent(gridStyle);
 
 interface IItemProps extends IBoxProps {
-  viewing: Queries.HomePageQuery["viewings"][0];
+  viewing: Queries.HomeTemplateQuery["viewings"][0];
   counterValue: number;
   eagerLoadImage: boolean;
 }

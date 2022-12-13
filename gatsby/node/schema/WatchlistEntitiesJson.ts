@@ -1,8 +1,4 @@
-import type {
-  CreateResolversArgs,
-  GatsbyGraphQLObjectType,
-  NodePluginSchema,
-} from "gatsby";
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import path from "path";
 import { ReviewedMovieNode } from "./ReviewedMoviesJson";
 import { SchemaNames } from "./schemaNames";
@@ -151,38 +147,4 @@ export function buildWatchlistEntitiesJsonSchema(
   schema: NodePluginSchema
 ): GatsbyGraphQLObjectType[] {
   return [schema.buildObjectType(WatchlistEntitiesJson)];
-}
-
-export function buildWatchlistEntityQuery(
-  createResolvers: CreateResolversArgs["createResolvers"]
-) {
-  createResolvers({
-    Query: {
-      watchlistEntity: {
-        type: `${SchemaNames.WATCHLIST_ENTITIES_JSON}!`,
-        args: {
-          entityType: "String!",
-          slug: "String!",
-        },
-        resolve: async (
-          _source: unknown,
-          args: {
-            entityType: string;
-            slug: string;
-          },
-          context: GatsbyNodeContext
-        ) => {
-          return context.nodeModel.findOne<WatchlistEntityNode>({
-            type: SchemaNames.WATCHLIST_ENTITIES_JSON,
-            query: {
-              filter: {
-                entityType: { eq: args.entityType },
-                slug: { eq: args.slug },
-              },
-            },
-          });
-        },
-      },
-    },
-  });
 }

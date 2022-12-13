@@ -30,12 +30,12 @@ export function Head({
   );
 }
 
-export default function HomePage({
+export default function HomeTemplate({
   pageContext,
   data,
 }: {
   pageContext: PageContext;
-  data: NonNullable<Queries.HomePageQuery>;
+  data: NonNullable<Queries.HomeTemplateQuery>;
 }): JSX.Element {
   const listHeader = useRef<HTMLDivElement>(null);
   const { viewings } = data;
@@ -74,7 +74,7 @@ export default function HomePage({
 }
 
 export const pageQuery = graphql`
-  query HomePage($skip: Int!, $limit: Int!) {
+  query HomeTemplate($skip: Int!, $limit: Int!) {
     viewings: viewingsWithReviews(
       sort: { sequence: DESC }
       limit: $limit

@@ -48,7 +48,7 @@ function ListInfo({
 }
 
 function groupForItem(
-  item: IPosterListWithFiltersItem,
+  item: IPosterListWithFiltersLayoutItem,
   sortValue: Sort
 ): string {
   const shortMonthToLong: Record<string, string> = {
@@ -106,10 +106,10 @@ function groupItems({
   items,
   sortValue,
 }: {
-  items: IPosterListWithFiltersItem[];
+  items: IPosterListWithFiltersLayoutItem[];
   sortValue: Sort;
-}): Map<string, IPosterListWithFiltersItem[]> {
-  const groupedItems = new Map<string, IPosterListWithFiltersItem[]>();
+}): Map<string, IPosterListWithFiltersLayoutItem[]> {
+  const groupedItems = new Map<string, IPosterListWithFiltersLayoutItem[]>();
 
   items.map((item) => {
     const group = groupForItem(item, sortValue);
@@ -136,8 +136,8 @@ export function Head(): JSX.Element {
   );
 }
 
-interface IPosterListWithFiltersProps {
-  items: readonly IPosterListWithFiltersItem[];
+interface IPosterListWithFiltersLayoutProps {
+  items: readonly IPosterListWithFiltersLayoutItem[];
   children: React.ReactNode;
   distinctMedia?: readonly string[];
   distinctViewingYears?: readonly string[];
@@ -147,7 +147,7 @@ interface IPosterListWithFiltersProps {
   initialSort: Sort;
 }
 
-export function PosterListWithFilters({
+export function PosterListWithFiltersLayout({
   items,
   children,
   distinctMedia,
@@ -156,7 +156,7 @@ export function PosterListWithFilters({
   distinctViewingYears,
   distinctGenres,
   initialSort,
-}: IPosterListWithFiltersProps): JSX.Element {
+}: IPosterListWithFiltersLayoutProps): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -393,7 +393,7 @@ export function PosterListWithFilters({
   );
 }
 
-export interface IPosterListWithFiltersItem {
+export interface IPosterListWithFiltersLayoutItem {
   sequence?: number;
   imdbId?: string;
   viewingYear?: number;

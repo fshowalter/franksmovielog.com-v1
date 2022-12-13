@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { Box, HeadBuilder, Link, Spacer } from "../../components";
-import { PosterListWithFilters } from "../../components/layouts";
+import { PosterListWithFiltersLayout } from "../../components/layouts";
 
 export function Head(): JSX.Element {
   return (
@@ -22,7 +22,7 @@ export default function UnderseenGemsPage({
   data: Queries.UnderseenGemsPageQuery;
 }): JSX.Element {
   return (
-    <PosterListWithFilters
+    <PosterListWithFiltersLayout
       items={data.underseen.nodes}
       distinctReleaseYears={data.underseen.releaseYears}
       distinctGenres={data.underseen.genres}
@@ -45,7 +45,7 @@ export default function UnderseenGemsPage({
           Four and five star movies with a below average number of IMDb votes.
         </p>
       </Box>
-    </PosterListWithFilters>
+    </PosterListWithFiltersLayout>
   );
 }
 

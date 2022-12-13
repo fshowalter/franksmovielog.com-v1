@@ -57,7 +57,7 @@ export function YearNavigation({
   linkFunc,
 }: {
   currentYear: string;
-  years: string[];
+  years: readonly string[];
   linkFunc: (year: string) => string;
 }): JSX.Element {
   return (
@@ -69,7 +69,7 @@ export function YearNavigation({
       columnGap={16}
     >
       <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
-      {years.map((year) => {
+      {[...years].reverse().map((year) => {
         return (
           <YearLink
             key={year}
