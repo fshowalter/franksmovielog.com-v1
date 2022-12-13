@@ -15,19 +15,19 @@ import {
   SelectOptions,
   Spacer,
   YearInput,
-} from "..";
+} from "../../components";
 import {
   backgroundColors,
   borderColors,
   foregroundColors,
 } from "../../styles/colors.css";
 import { HEADER_HEIGHT } from "../../styles/sizes";
-import type { Sort } from "./PosterListWithFilters.reducer";
+import type { Sort } from "./PosterListWithFiltersView.reducer";
 import {
   ActionTypes,
   initState,
   reducer,
-} from "./PosterListWithFilters.reducer";
+} from "./PosterListWithFiltersView.reducer";
 
 function ListInfo({
   visible,
@@ -48,7 +48,7 @@ function ListInfo({
 }
 
 function groupForItem(
-  item: IPosterListWithFiltersLayoutItem,
+  item: IPosterListWithFiltersViewItem,
   sortValue: Sort
 ): string {
   const shortMonthToLong: Record<string, string> = {
@@ -106,10 +106,10 @@ function groupItems({
   items,
   sortValue,
 }: {
-  items: IPosterListWithFiltersLayoutItem[];
+  items: IPosterListWithFiltersViewItem[];
   sortValue: Sort;
-}): Map<string, IPosterListWithFiltersLayoutItem[]> {
-  const groupedItems = new Map<string, IPosterListWithFiltersLayoutItem[]>();
+}): Map<string, IPosterListWithFiltersViewItem[]> {
+  const groupedItems = new Map<string, IPosterListWithFiltersViewItem[]>();
 
   items.map((item) => {
     const group = groupForItem(item, sortValue);
@@ -136,18 +136,7 @@ export function Head(): JSX.Element {
   );
 }
 
-interface IPosterListWithFiltersLayoutProps {
-  items: readonly IPosterListWithFiltersLayoutItem[];
-  children: React.ReactNode;
-  distinctMedia?: readonly string[];
-  distinctViewingYears?: readonly string[];
-  distinctReleaseYears: readonly string[];
-  distinctGenres: readonly string[];
-  distinctGrades?: readonly (string | null)[];
-  initialSort: Sort;
-}
-
-export function PosterListWithFiltersLayout({
+export function PosterListWithFiltersView({
   items,
   children,
   distinctMedia,
@@ -156,7 +145,16 @@ export function PosterListWithFiltersLayout({
   distinctViewingYears,
   distinctGenres,
   initialSort,
-}: IPosterListWithFiltersLayoutProps): JSX.Element {
+}: {
+  items: readonly IPosterListWithFiltersViewItem[];
+  children: React.ReactNode;
+  distinctMedia?: readonly string[];
+  distinctViewingYears?: readonly string[];
+  distinctReleaseYears: readonly string[];
+  distinctGenres: readonly string[];
+  distinctGrades?: readonly (string | null)[];
+  initialSort: Sort;
+}): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -393,7 +391,7 @@ export function PosterListWithFiltersLayout({
   );
 }
 
-export interface IPosterListWithFiltersLayoutItem {
+export interface IPosterListWithFiltersViewItem {
   sequence?: number;
   imdbId?: string;
   viewingYear?: number;

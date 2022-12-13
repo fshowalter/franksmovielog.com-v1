@@ -6,7 +6,7 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils";
-import type { IPosterListWithFiltersLayoutItem } from "./PosterListWithFilters";
+import type { IPosterListWithFiltersViewItem } from "./PosterListWithFiltersView";
 
 export type Sort =
   | "viewing-date-desc"
@@ -17,12 +17,12 @@ export type Sort =
   | "grade-asc"
   | "grade-desc";
 
-function sortItems(items: IPosterListWithFiltersLayoutItem[], sortOrder: Sort) {
+function sortItems(items: IPosterListWithFiltersViewItem[], sortOrder: Sort) {
   const sortMap: Record<
     Sort,
     (
-      a: IPosterListWithFiltersLayoutItem,
-      b: IPosterListWithFiltersLayoutItem
+      a: IPosterListWithFiltersViewItem,
+      b: IPosterListWithFiltersViewItem
     ) => number
   > = {
     "viewing-date-desc": (a, b) =>
@@ -45,11 +45,11 @@ function sortItems(items: IPosterListWithFiltersLayoutItem[], sortOrder: Sort) {
 /** The page state. */
 interface State {
   /** All possible viewings. */
-  allItems: IPosterListWithFiltersLayoutItem[];
+  allItems: IPosterListWithFiltersViewItem[];
   /** Viewings matching the current filters. */
-  filteredItems: IPosterListWithFiltersLayoutItem[];
+  filteredItems: IPosterListWithFiltersViewItem[];
   /** The active filters. */
-  filters: Record<string, (item: IPosterListWithFiltersLayoutItem) => boolean>;
+  filters: Record<string, (item: IPosterListWithFiltersViewItem) => boolean>;
   /** The number of viewings to show. */
   showCount: number;
   /** The active sort value. */
@@ -65,7 +65,7 @@ export function initState({
   items,
   sort,
 }: {
-  items: IPosterListWithFiltersLayoutItem[];
+  items: IPosterListWithFiltersViewItem[];
   sort: Sort;
 }): State {
   return {
@@ -167,12 +167,12 @@ export function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (item: IPosterListWithFiltersLayoutItem) => {
+        title: (item: IPosterListWithFiltersViewItem) => {
           return regex.test(item.title);
         },
       };
       filteredItems = sortItems(
-        applyFilters<IPosterListWithFiltersLayoutItem>({
+        applyFilters<IPosterListWithFiltersViewItem>({
           collection: state.allItems,
           filters,
         }),
@@ -187,7 +187,7 @@ export function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_VENUE: {
       filters = {
         ...state.filters,
-        venue: (item: IPosterListWithFiltersLayoutItem) => {
+        venue: (item: IPosterListWithFiltersViewItem) => {
           if (action.value === "All") {
             return true;
           }
@@ -196,7 +196,7 @@ export function reducer(state: State, action: Action): State {
         },
       };
       filteredItems = sortItems(
-        applyFilters<IPosterListWithFiltersLayoutItem>({
+        applyFilters<IPosterListWithFiltersViewItem>({
           collection: state.allItems,
           filters,
         }),
@@ -211,7 +211,7 @@ export function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (item: IPosterListWithFiltersLayoutItem) => {
+        releaseYear: (item: IPosterListWithFiltersViewItem) => {
           const releaseYear = item.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
@@ -219,7 +219,7 @@ export function reducer(state: State, action: Action): State {
         },
       };
       filteredItems = sortItems(
-        applyFilters<IPosterListWithFiltersLayoutItem>({
+        applyFilters<IPosterListWithFiltersViewItem>({
           collection: state.allItems,
           filters,
         }),
@@ -234,12 +234,12 @@ export function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_GENRES: {
       filters = {
         ...state.filters,
-        genres: (item: IPosterListWithFiltersLayoutItem) => {
+        genres: (item: IPosterListWithFiltersViewItem) => {
           return action.values.every((genre) => item.genres.includes(genre));
         },
       };
       filteredItems = sortItems(
-        applyFilters<IPosterListWithFiltersLayoutItem>({
+        applyFilters<IPosterListWithFiltersViewItem>({
           collection: state.allItems,
           filters,
         }),
@@ -254,7 +254,7 @@ export function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_VIEWING_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (item: IPosterListWithFiltersLayoutItem) => {
+        releaseYear: (item: IPosterListWithFiltersViewItem) => {
           const viewingYear = item.viewingYear;
           if (!viewingYear) {
             return true;
@@ -265,7 +265,7 @@ export function reducer(state: State, action: Action): State {
         },
       };
       filteredItems = sortItems(
-        applyFilters<IPosterListWithFiltersLayoutItem>({
+        applyFilters<IPosterListWithFiltersViewItem>({
           collection: state.allItems,
           filters,
         }),
@@ -280,7 +280,7 @@ export function reducer(state: State, action: Action): State {
     case ActionTypes.FILTER_GRADE: {
       filters = {
         ...state.filters,
-        grade: (item: IPosterListWithFiltersLayoutItem) => {
+        grade: (item: IPosterListWithFiltersViewItem) => {
           const gradeValue = item.gradeValue;
           if (!gradeValue) {
             return action.includeNonReviewed;
@@ -291,7 +291,7 @@ export function reducer(state: State, action: Action): State {
         },
       };
       filteredItems = sortItems(
-        applyFilters<IPosterListWithFiltersLayoutItem>({
+        applyFilters<IPosterListWithFiltersViewItem>({
           collection: state.allItems,
           filters,
         }),

@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { Box, HeadBuilder, Link, Spacer } from "../../components";
-import { PosterListWithFiltersLayout } from "../../components/layouts";
+import { PosterListWithFiltersView } from "../../views/PosterListWithFiltersView";
 
 export function Head(): JSX.Element {
   return (
@@ -22,7 +22,7 @@ export default function OverratedDisappointmentsPage({
   data: Queries.OverratedDisappointmentsPageQuery;
 }): JSX.Element {
   return (
-    <PosterListWithFiltersLayout
+    <PosterListWithFiltersView
       initialSort="release-date-desc"
       items={data.disappointment.nodes}
       distinctReleaseYears={data.disappointment.releaseYears}
@@ -45,7 +45,7 @@ export default function OverratedDisappointmentsPage({
           count.
         </p>
       </Box>
-    </PosterListWithFiltersLayout>
+    </PosterListWithFiltersView>
   );
 }
 
