@@ -182,6 +182,14 @@ const ViewingsJson = {
         },
       },
     },
+    gradeValue: {
+      type: "Int",
+      extensions: {
+        proxyToReviewedMovie: {
+          fieldName: "gradeValue",
+        },
+      },
+    },
     principalCastNames: {
       type: "[String!]",
       extensions: {

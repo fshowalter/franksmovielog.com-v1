@@ -26,19 +26,16 @@ describe("/reviews", () => {
       await new Promise((r) => setTimeout(r, 500));
     });
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by medium", async () => {
     expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Medium"),
-      "Arrow Player"
-    );
+    await userEvent.selectOptions(screen.getByLabelText("Medium"), "Blu-ray");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by medium then show all", async () => {
@@ -46,13 +43,10 @@ describe("/reviews", () => {
 
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.selectOptions(
-      screen.getByLabelText("Medium"),
-      "Arrow Player"
-    );
+    await userEvent.selectOptions(screen.getByLabelText("Medium"), "Blu-ray");
     await userEvent.selectOptions(screen.getByLabelText("Medium"), "All");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can sort by viewing date with newest first", async () => {
@@ -65,7 +59,7 @@ describe("/reviews", () => {
       "Viewing Date (Newest First)"
     );
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can sort by viewing date with oldest first", async () => {
@@ -78,7 +72,7 @@ describe("/reviews", () => {
       "Viewing Date (Oldest First)"
     );
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can sort by title", async () => {
@@ -88,7 +82,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can sort by release date with oldest first", async () => {
@@ -101,7 +95,7 @@ describe("/reviews", () => {
       "Release Date (Oldest First)"
     );
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can sort by release date with newest first", async () => {
@@ -114,7 +108,7 @@ describe("/reviews", () => {
       "Release Date (Newest First)"
     );
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can sort by grade with best first", async () => {
@@ -127,7 +121,7 @@ describe("/reviews", () => {
       "Grade (Best First)"
     );
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can sort by grade with worst first", async () => {
@@ -140,7 +134,7 @@ describe("/reviews", () => {
       "Grade (Worst First)"
     );
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("sorts unrated movies last", async () => {
@@ -148,14 +142,14 @@ describe("/reviews", () => {
 
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Medium"), "Shudder");
+    await userEvent.selectOptions(screen.getByLabelText("Medium"), "Blu-ray");
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Worst First)"
     );
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by release year", async () => {
@@ -167,10 +161,10 @@ describe("/reviews", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1980");
-    await userEvent.selectOptions(toInput, "2010");
+    await userEvent.selectOptions(fromInput, "1973");
+    await userEvent.selectOptions(toInput, "2021");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by release year reversed", async () => {
@@ -182,12 +176,12 @@ describe("/reviews", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1980");
-    await userEvent.selectOptions(toInput, "2010");
-    await userEvent.selectOptions(fromInput, "2011");
-    await userEvent.selectOptions(toInput, "1981");
+    await userEvent.selectOptions(fromInput, "1973");
+    await userEvent.selectOptions(toInput, "2021");
+    await userEvent.selectOptions(fromInput, "2009");
+    await userEvent.selectOptions(toInput, "1972");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by viewing year", async () => {
@@ -202,7 +196,7 @@ describe("/reviews", () => {
     await userEvent.selectOptions(fromInput, "2020");
     await userEvent.selectOptions(toInput, "2021");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by viewing year reversed", async () => {
@@ -219,7 +213,7 @@ describe("/reviews", () => {
     await userEvent.selectOptions(fromInput, "2022");
     await userEvent.selectOptions(toInput, "2020");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by grade", async () => {
@@ -234,7 +228,7 @@ describe("/reviews", () => {
     await userEvent.selectOptions(fromInput, "B-");
     await userEvent.selectOptions(toInput, "A+");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by genres", async () => {
@@ -245,7 +239,7 @@ describe("/reviews", () => {
 
     await select(selectElement, ["Horror", "Comedy"]);
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can filter by grade reversed", async () => {
@@ -262,7 +256,7 @@ describe("/reviews", () => {
     await userEvent.selectOptions(fromInput, "A-");
     await userEvent.selectOptions(toInput, "B-");
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can exclude unrated titles", async () => {
@@ -277,7 +271,7 @@ describe("/reviews", () => {
 
     await userEvent.click(screen.getByLabelText("Include unrated viewings"));
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
   it("can show more titles", async () => {
@@ -287,6 +281,6 @@ describe("/reviews", () => {
 
     await userEvent.click(screen.getByText("Show More..."));
 
-    expect(screen.getByTestId("viewings-list")).toMatchSnapshot();
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 });

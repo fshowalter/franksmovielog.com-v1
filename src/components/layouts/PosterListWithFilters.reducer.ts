@@ -5,9 +5,10 @@ import {
   sortNumberDesc,
   sortStringAsc,
   sortStringDesc,
-} from "../utils/";
+} from "../../utils";
+import type { IPosterListWithFiltersItem } from "./PosterListWithFilters";
 
-export type SortType =
+export type Sort =
   | "viewing-date-desc"
   | "viewing-date-asc"
   | "release-date-desc"
@@ -16,53 +17,40 @@ export type SortType =
   | "grade-asc"
   | "grade-desc";
 
-function sortViewings(
-  viewings: Queries.ReviewsIndexViewingFragment[],
-  sortOrder: SortType
-) {
+function sortItems(items: IPosterListWithFiltersItem[], sortOrder: Sort) {
   const sortMap: Record<
-    SortType,
-    (
-      a: Queries.ReviewsIndexViewingFragment,
-      b: Queries.ReviewsIndexViewingFragment
-    ) => number
+    Sort,
+    (a: IPosterListWithFiltersItem, b: IPosterListWithFiltersItem) => number
   > = {
-    "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
-    "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
+    "viewing-date-desc": (a, b) =>
+      sortNumberDesc(a.sequence ?? 0, b.sequence ?? 0),
+    "viewing-date-asc": (a, b) =>
+      sortNumberAsc(a.sequence ?? 0, b.sequence ?? 0),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) =>
-      sortNumberAsc(
-        a.reviewedMovie?.gradeValue ?? 50,
-        b.reviewedMovie?.gradeValue ?? 50
-      ),
+      sortNumberAsc(a.gradeValue ?? 50, b.gradeValue ?? 50),
     "grade-desc": (a, b) =>
-      sortNumberDesc(
-        a.reviewedMovie?.gradeValue ?? -1,
-        b.reviewedMovie?.gradeValue ?? -1
-      ),
+      sortNumberDesc(a.gradeValue ?? -1, b.gradeValue ?? -1),
   };
 
   const comparer = sortMap[sortOrder];
-  return viewings.sort(comparer);
+  return items.sort(comparer);
 }
 
 /** The page state. */
 interface State {
   /** All possible viewings. */
-  allViewings: Queries.ReviewsIndexViewingFragment[];
+  allItems: IPosterListWithFiltersItem[];
   /** Viewings matching the current filters. */
-  filteredViewings: Queries.ReviewsIndexViewingFragment[];
+  filteredItems: IPosterListWithFiltersItem[];
   /** The active filters. */
-  filters: Record<
-    string,
-    (viewing: Queries.ReviewsIndexViewingFragment) => boolean
-  >;
+  filters: Record<string, (item: IPosterListWithFiltersItem) => boolean>;
   /** The number of viewings to show. */
   showCount: number;
   /** The active sort value. */
-  sortValue: SortType;
+  sortValue: Sort;
 }
 
 const SHOW_COUNT_DEFAULT = 24;
@@ -71,16 +59,18 @@ const SHOW_COUNT_DEFAULT = 24;
  * Initializes the page state.
  */
 export function initState({
-  viewings,
+  items,
+  sort,
 }: {
-  viewings: Queries.ReviewsIndexViewingFragment[];
+  items: IPosterListWithFiltersItem[];
+  sort: Sort;
 }): State {
   return {
-    allViewings: viewings,
-    filteredViewings: viewings,
+    allItems: items,
+    filteredItems: items,
     filters: {},
     showCount: SHOW_COUNT_DEFAULT,
-    sortValue: "viewing-date-desc",
+    sortValue: sort,
   };
 }
 
@@ -142,7 +132,7 @@ interface FilterViewingYearAction {
 interface SortAction {
   type: ActionTypes.SORT;
   /** The sorter to apply. */
-  value: SortType;
+  value: Sort;
 }
 
 interface ShowMoreAction {
@@ -167,20 +157,20 @@ export type Action =
 export function reducer(state: State, action: Action): State {
   // eslint-disable-line consistent-return
   let filters;
-  let filteredViewings;
+  let filteredItems;
 
   switch (action.type) {
     case ActionTypes.FILTER_TITLE: {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (viewing: Queries.ReviewsIndexViewingFragment) => {
-          return regex.test(viewing.title);
+        title: (item: IPosterListWithFiltersItem) => {
+          return regex.test(item.title);
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Queries.ReviewsIndexViewingFragment>({
-          collection: state.allViewings,
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
           filters,
         }),
         state.sortValue
@@ -188,23 +178,23 @@ export function reducer(state: State, action: Action): State {
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredItems,
       };
     }
     case ActionTypes.FILTER_VENUE: {
       filters = {
         ...state.filters,
-        venue: (viewing: Queries.ReviewsIndexViewingFragment) => {
+        venue: (item: IPosterListWithFiltersItem) => {
           if (action.value === "All") {
             return true;
           }
 
-          return viewing.venue === action.value;
+          return item.venue === action.value;
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Queries.ReviewsIndexViewingFragment>({
-          collection: state.allViewings,
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
           filters,
         }),
         state.sortValue
@@ -212,22 +202,22 @@ export function reducer(state: State, action: Action): State {
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredItems,
       };
     }
     case ActionTypes.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (viewing: Queries.ReviewsIndexViewingFragment) => {
-          const releaseYear = viewing.year;
+        releaseYear: (item: IPosterListWithFiltersItem) => {
+          const releaseYear = item.year;
           return (
             releaseYear >= action.values[0] && releaseYear <= action.values[1]
           );
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Queries.ReviewsIndexViewingFragment>({
-          collection: state.allViewings,
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
           filters,
         }),
         state.sortValue
@@ -235,19 +225,19 @@ export function reducer(state: State, action: Action): State {
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredItems,
       };
     }
     case ActionTypes.FILTER_GENRES: {
       filters = {
         ...state.filters,
-        genres: (movie: Queries.ReviewsIndexViewingFragment) => {
-          return action.values.every((genre) => movie.genres.includes(genre));
+        genres: (item: IPosterListWithFiltersItem) => {
+          return action.values.every((genre) => item.genres.includes(genre));
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Queries.ReviewsIndexViewingFragment>({
-          collection: state.allViewings,
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
           filters,
         }),
         state.sortValue
@@ -255,22 +245,25 @@ export function reducer(state: State, action: Action): State {
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredItems,
       };
     }
     case ActionTypes.FILTER_VIEWING_YEAR: {
       filters = {
         ...state.filters,
-        releaseYear: (viewing: Queries.ReviewsIndexViewingFragment) => {
-          const viewingYear = viewing.viewingYear;
+        releaseYear: (item: IPosterListWithFiltersItem) => {
+          const viewingYear = item.viewingYear;
+          if (!viewingYear) {
+            return true;
+          }
           return (
             viewingYear >= action.values[0] && viewingYear <= action.values[1]
           );
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Queries.ReviewsIndexViewingFragment>({
-          collection: state.allViewings,
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
           filters,
         }),
         state.sortValue
@@ -278,14 +271,14 @@ export function reducer(state: State, action: Action): State {
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredItems,
       };
     }
     case ActionTypes.FILTER_GRADE: {
       filters = {
         ...state.filters,
-        grade: (movie: Queries.ReviewsIndexViewingFragment) => {
-          const gradeValue = movie.reviewedMovie?.gradeValue;
+        grade: (item: IPosterListWithFiltersItem) => {
+          const gradeValue = item.gradeValue;
           if (!gradeValue) {
             return action.includeNonReviewed;
           }
@@ -294,9 +287,9 @@ export function reducer(state: State, action: Action): State {
           );
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Queries.ReviewsIndexViewingFragment>({
-          collection: state.allViewings,
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
           filters,
         }),
         state.sortValue
@@ -304,15 +297,15 @@ export function reducer(state: State, action: Action): State {
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredItems,
       };
     }
     case ActionTypes.SORT: {
-      filteredViewings = sortViewings(state.filteredViewings, action.value);
+      filteredItems = sortItems(state.filteredItems, action.value);
       return {
         ...state,
         sortValue: action.value,
-        filteredViewings,
+        filteredItems,
       };
     }
     case ActionTypes.SHOW_MORE: {
