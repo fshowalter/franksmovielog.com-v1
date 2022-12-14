@@ -1,17 +1,33 @@
 import { graphql } from "gatsby";
 import { Box } from "../components/Box";
+import { HeadBuilder } from "../components/HeadBuilder";
 import { Layout } from "../components/Layout";
+import { ReviewContent } from "../components/ReviewContent";
+import { ReviewHeader } from "../components/ReviewHeader";
 import { Credits } from "../components/ReviewPage/Credits";
 import { RelatedMovies } from "../components/ReviewPage/RelatedMovies";
-import { ReviewContent } from "../components/ReviewPage/ReviewContent";
 import { StructuredData } from "../components/ReviewPage/StructuredData";
-import { Title } from "../components/ReviewPage/Title";
 import { ViewingHistory } from "../components/ReviewPage/ViewingHistory";
 import { Spacer } from "../components/Spacer";
 import { Still } from "../components/Still";
-import { titleLayoutStyle } from "./review.css";
+import { stillMarginStyle } from "./review.css";
 
-export { Head } from "../components/ReviewPage/Head";
+export function Head({
+  data,
+}: {
+  data: Queries.ReviewTemplateQuery;
+}): JSX.Element {
+  const movie = data.movie;
+
+  return (
+    <HeadBuilder
+      pageTitle={`${movie.title} (${movie.year})`}
+      description={`${movie.gradeStars} ${movie.review.excerpt ?? ""}`}
+      image={movie.seoImage?.childImageSharp?.resize?.src}
+      article
+    />
+  );
+}
 
 export default function ReviewTemplate({
   data,
@@ -29,15 +45,20 @@ export default function ReviewTemplate({
         flexDirection="column"
         alignItems="center"
       >
-        <Title
+        <ReviewHeader
           movie={movie}
           paddingX="gutter"
           textAlign="center"
-          className={titleLayoutStyle}
+          paddingY={{ default: 24, desktop: 32 }}
         />
-        <Still image={movie.still} title={movie.title} year={movie.year} />
-        <Spacer axis="vertical" size={32} />
-        <ReviewContent movie={movie} paddingX="gutter" alignItems="center" />
+        <Still
+          image={movie.still}
+          title={movie.title}
+          year={movie.year}
+          className={stillMarginStyle}
+        />
+        <Spacer axis="vertical" size={{ default: 24, tablet: 32 }} />
+        <ReviewContent review={movie} paddingX="gutter" alignItems="center" />
         <Spacer axis="vertical" size={80} />
         <ViewingHistory
           movie={movie}
@@ -58,6 +79,19 @@ export default function ReviewTemplate({
 export const pageQuery = graphql`
   query ReviewTemplate($id: String!) {
     movie: reviewedMovie(id: $id) {
+      title
+      year
+      gradeStars
+      review {
+        excerpt
+      }
+      seoImage: still {
+        childImageSharp {
+          resize(toFormat: JPG, width: 1200, quality: 80) {
+            src
+          }
+        }
+      }
       still {
         childImageSharp {
           gatsbyImageData(
@@ -69,9 +103,8 @@ export const pageQuery = graphql`
           )
         }
       }
-      ...ReviewHead
       ...ReviewContent
-      ...ReviewTitle
+      ...ReviewHeader
       ...ViewingHistory
       ...Credits
       ...RelatedMovies

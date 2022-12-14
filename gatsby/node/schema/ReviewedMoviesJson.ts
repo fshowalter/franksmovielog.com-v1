@@ -1,8 +1,4 @@
-import type {
-  CreateResolversArgs,
-  GatsbyGraphQLObjectType,
-  NodePluginSchema,
-} from "gatsby";
+import type { GatsbyGraphQLObjectType, NodePluginSchema } from "gatsby";
 import path from "path";
 import { MarkdownNode } from "./MarkdownRemark";
 import { SchemaNames } from "./schemaNames";
@@ -19,6 +15,7 @@ import type { WatchlistMovieNode } from "./WatchlistMoviesJson";
 export interface ReviewedMovieNode extends GatsbyNode {
   slug: string;
   imdbId: string;
+  grade: string;
 }
 // change to resolve browse more at schema build, not as resolver, i.e. performers.browseMore = resolver code.
 const ReviewedMovieWatchlistEntity = {
@@ -147,6 +144,24 @@ const ReviewedMoviesJson = {
             },
           },
         });
+      },
+    },
+    gradeStars: {
+      type: `String!`,
+      resolve: (source: ReviewedMovieNode) => {
+        const gradeMap: Record<string, string> = {
+          A: "★★★★★",
+          B: "★★★★",
+          C: "★★★",
+          D: "★★",
+          F: "★",
+        };
+
+        if (source.grade && source.grade[0] in gradeMap) {
+          return gradeMap[source.grade[0]];
+        }
+
+        return "";
       },
     },
     browseMore: {
@@ -317,10 +332,4 @@ export default function buildReviewedMoviesJsonSchema(
     schema.buildObjectType(ReviewedMovieWatchlistEntities),
     schema.buildObjectType(ReviewedMoviesJson),
   ];
-}
-
-export function buildReviewedMovieQuery(
-  createResolvers: CreateResolversArgs["createResolvers"]
-) {
-  createResolvers();
 }

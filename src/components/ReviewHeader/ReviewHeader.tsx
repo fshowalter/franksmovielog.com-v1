@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 
 interface IHeaderProps extends IBoxProps {
-  movie: Queries.ReviewTitleFragment;
+  movie: Queries.ReviewHeaderFragment;
 }
 
 function OriginalTitle({ originalTitle }: { originalTitle: string | null }) {
@@ -13,7 +13,7 @@ function OriginalTitle({ originalTitle }: { originalTitle: string | null }) {
   return <Box color="muted">({originalTitle})</Box>;
 }
 
-function Details({ movie }: { movie: Queries.ReviewTitleFragment }) {
+function Meta({ movie }: { movie: Queries.ReviewHeaderFragment }) {
   return (
     <Box color="muted">
       {movie.year} <span>|</span>{" "}
@@ -42,7 +42,7 @@ function Details({ movie }: { movie: Queries.ReviewTitleFragment }) {
   );
 }
 
-export function Title({ movie, ...rest }: IHeaderProps) {
+export function ReviewHeader({ movie, ...rest }: IHeaderProps) {
   return (
     <Box
       as="header"
@@ -57,13 +57,13 @@ export function Title({ movie, ...rest }: IHeaderProps) {
         </Box>
         <OriginalTitle originalTitle={movie.originalTitle} />
       </Box>
-      <Details movie={movie} />
+      <Meta movie={movie} />
     </Box>
   );
 }
 
 export const query = graphql`
-  fragment ReviewTitle on ReviewedMoviesJson {
+  fragment ReviewHeader on ReviewedMoviesJson {
     title
     year
     originalTitle

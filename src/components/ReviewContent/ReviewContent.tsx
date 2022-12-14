@@ -4,33 +4,28 @@ import { Grade } from "../Grade";
 import { RenderedMarkdown } from "../RenderedMarkdown";
 
 interface IReviewContentProps extends IBoxProps {
-  movie: Queries.ReviewContentFragment;
+  review: Queries.ReviewContentFragment;
 }
 
-export function ReviewContent({ movie, ...rest }: IReviewContentProps) {
+export function ReviewContent({ review, ...rest }: IReviewContentProps) {
   return (
     <Box display="flex" flexDirection="column" rowGap={32} {...rest}>
-      <Box
-        display="flex"
-        flexDirection="column"
-        rowGap={8}
-        alignItems="inherit"
-      >
-        <Grade grade={movie.grade} height={32} width={160} />
+      <Box display="flex" flexDirection="column" alignItems="inherit">
+        <Grade grade={review.grade} height={32} width={160} />
         <Box
           display="flex"
           flexDirection="column"
-          color="muted"
+          color="subtle"
           alignItems="inherit"
-          rowGap={8}
+          letterSpacing={0.5}
         >
-          <span>on</span> {movie.viewings[0].date}
+          <span>on</span> {review.viewings[0].date}
         </Box>
       </Box>
       <RenderedMarkdown
         maxWidth="prose"
         // eslint-disable-next-line react/no-danger
-        text={movie.review.linkedHtml}
+        text={review.review.linkedHtml}
       />
     </Box>
   );
