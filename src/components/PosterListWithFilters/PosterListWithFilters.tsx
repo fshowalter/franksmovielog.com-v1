@@ -22,12 +22,12 @@ import {
   foregroundColors,
 } from "../../styles/colors.css";
 import { HEADER_HEIGHT } from "../../styles/sizes";
-import type { Sort } from "./PosterListWithFiltersView.reducer";
+import type { Sort } from "./PosterListWithFilters.reducer";
 import {
   ActionTypes,
   initState,
   reducer,
-} from "./PosterListWithFiltersView.reducer";
+} from "./PosterListWithFilters.reducer";
 
 function ListInfo({
   visible,
@@ -48,7 +48,7 @@ function ListInfo({
 }
 
 function groupForItem(
-  item: IPosterListWithFiltersViewItem,
+  item: IPosterListWithFiltersItem,
   sortValue: Sort
 ): string {
   const shortMonthToLong: Record<string, string> = {
@@ -106,10 +106,10 @@ function groupItems({
   items,
   sortValue,
 }: {
-  items: IPosterListWithFiltersViewItem[];
+  items: IPosterListWithFiltersItem[];
   sortValue: Sort;
-}): Map<string, IPosterListWithFiltersViewItem[]> {
-  const groupedItems = new Map<string, IPosterListWithFiltersViewItem[]>();
+}): Map<string, IPosterListWithFiltersItem[]> {
+  const groupedItems = new Map<string, IPosterListWithFiltersItem[]>();
 
   items.map((item) => {
     const group = groupForItem(item, sortValue);
@@ -136,7 +136,7 @@ export function Head(): JSX.Element {
   );
 }
 
-export function PosterListWithFiltersView({
+export function PosterListWithFilters({
   items,
   children,
   distinctMedia,
@@ -146,7 +146,7 @@ export function PosterListWithFiltersView({
   distinctGenres,
   initialSort,
 }: {
-  items: readonly IPosterListWithFiltersViewItem[];
+  items: readonly IPosterListWithFiltersItem[];
   children: React.ReactNode;
   distinctMedia?: readonly string[];
   distinctViewingYears?: readonly string[];
@@ -391,7 +391,7 @@ export function PosterListWithFiltersView({
   );
 }
 
-export interface IPosterListWithFiltersViewItem {
+export interface IPosterListWithFiltersItem {
   sequence?: number;
   imdbId?: string;
   viewingYear?: number;

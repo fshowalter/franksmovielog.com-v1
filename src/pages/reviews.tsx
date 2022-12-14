@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { Box, HeadBuilder, Link, Spacer } from "../components";
-import { PosterListWithFiltersView } from "../components/PosterListWithFiltersView";
+import { PosterListWithFilters } from "../components/PosterListWithFilters";
 
 export function Head(): JSX.Element {
   return (
@@ -22,7 +22,7 @@ export default function ReviewsIndexPage({
   data: Queries.ReviewsIndexPageQuery;
 }): JSX.Element {
   return (
-    <PosterListWithFiltersView
+    <PosterListWithFilters
       items={data.viewing.nodes}
       distinctGenres={data.viewing.genres}
       distinctGrades={data.viewing.grades}
@@ -75,7 +75,7 @@ export default function ReviewsIndexPage({
           .
         </p>
       </Box>
-    </PosterListWithFiltersView>
+    </PosterListWithFilters>
   );
 }
 
