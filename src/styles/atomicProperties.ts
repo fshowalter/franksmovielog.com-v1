@@ -9,9 +9,6 @@ import {
 } from "./typography.css";
 
 export const atomicProperties = {
-  borderRadius: {
-    4: "4px",
-  },
   backgroundColor: {
     ...backgroundColors,
     zebra: {

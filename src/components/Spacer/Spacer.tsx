@@ -2,7 +2,7 @@ import { Sprinkles } from "../../styles/sprinkles.css";
 import { Box } from "../Box";
 
 interface ISpacerProps extends Sprinkles {
-  size: Sprinkles["width"];
+  size: Omit<Sprinkles["width"], "unset">;
   axis: "vertical" | "horizontal";
 }
 

@@ -40,6 +40,7 @@ export const gridStyle = style({
   }),
   "@media": {
     [minMediaQuery("desktop")]: {
+      width: "100%",
       ...gridTemplate<GridAreas, 5>({
         rows: [
           { [size[40]]: SPACER },
