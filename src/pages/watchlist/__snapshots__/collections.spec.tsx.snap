@@ -2,7 +2,7 @@
 
 exports[`/watchlist/collections can filter by name 1`] = `
 <ol
-  class="WatchlistEntitiesView_gridStyle__10qtbst0 sprinkles_padding_0__8lcvdk12"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdk12"
   data-testid="entity-list"
 >
   <li
@@ -63,7 +63,7 @@ exports[`/watchlist/collections can filter by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -80,7 +80,7 @@ exports[`/watchlist/collections can filter by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -117,7 +117,7 @@ exports[`/watchlist/collections can filter by name 1`] = `
 
 exports[`/watchlist/collections can sort by name 1`] = `
 <ol
-  class="WatchlistEntitiesView_gridStyle__10qtbst0 sprinkles_padding_0__8lcvdk12"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdk12"
   data-testid="entity-list"
 >
   <li
@@ -178,7 +178,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -195,7 +195,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -285,7 +285,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -302,7 +302,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -392,7 +392,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -409,7 +409,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -499,7 +499,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -516,7 +516,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -606,7 +606,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -623,7 +623,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -713,7 +713,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -730,7 +730,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -820,7 +820,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -837,7 +837,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -927,7 +927,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -944,7 +944,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1034,7 +1034,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1051,7 +1051,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1141,7 +1141,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1158,7 +1158,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1195,7 +1195,7 @@ exports[`/watchlist/collections can sort by name 1`] = `
 
 exports[`/watchlist/collections can sort by review count 1`] = `
 <ol
-  class="WatchlistEntitiesView_gridStyle__10qtbst0 sprinkles_padding_0__8lcvdk12"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdk12"
   data-testid="entity-list"
 >
   <li
@@ -1256,7 +1256,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1273,7 +1273,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1363,7 +1363,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1380,7 +1380,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1470,7 +1470,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1487,7 +1487,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1577,7 +1577,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1594,7 +1594,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1684,7 +1684,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1701,7 +1701,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1791,7 +1791,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1808,7 +1808,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -1898,7 +1898,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -1915,7 +1915,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -2005,7 +2005,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -2022,7 +2022,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -2112,7 +2112,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -2129,7 +2129,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"
@@ -2219,7 +2219,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
         </script>
       </div>
       <svg
-        class="WatchlistEntitiesView_progressRingPostionStyle__10qtbst1"
+        class="WatchlistEntityAvatarListWithFilters_progressRingPostionStyle__wigtux1"
         preserveAspectRatio="none"
         viewBox="0 0 36 36"
       >
@@ -2236,7 +2236,7 @@ exports[`/watchlist/collections can sort by review count 1`] = `
             stroke-width="1"
           />
           <circle
-            class="WatchlistEntitiesView_progressRingTransformStyle__10qtbst2"
+            class="WatchlistEntityAvatarListWithFilters_progressRingTransformStyle__wigtux2"
             cx="18"
             cy="18"
             fill="none"

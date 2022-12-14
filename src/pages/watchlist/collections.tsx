@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { HeadBuilder } from "../../components/HeadBuilder";
-import { WatchlistEntitiesView } from "../../views/WatchlistEntitiesView";
+import { WatchlistEntityAvatarListWithFilters } from "../../components/WatchlistEntityAvatarListWithFilters";
 
 export function Head(): JSX.Element {
   return (
@@ -19,7 +19,7 @@ export default function WatchlistCollectionsPage({
   data: Queries.WatchlistCollectionsPageQuery;
 }): JSX.Element {
   return (
-    <WatchlistEntitiesView
+    <WatchlistEntityAvatarListWithFilters
       title="Collections"
       tagline="Round up the usual suspects."
       slugPath="collections"
@@ -35,7 +35,7 @@ export const pageQuery = graphql`
       filter: { entityType: { eq: "collection" } }
     ) {
       nodes {
-        ...WatchlistEntitiesViewItem
+        ...WatchlistEntityAvatarListItem
       }
     }
   }

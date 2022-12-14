@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { HeadBuilder } from "../../components/HeadBuilder";
-import { WatchlistEntitiesView } from "../../views/WatchlistEntitiesView";
+import { WatchlistEntityAvatarListWithFilters } from "../../components/WatchlistEntityAvatarListWithFilters";
 
 export function Head(): JSX.Element {
   return (
@@ -19,7 +19,7 @@ export default function WatchlistDirectorsPage({
   data: Queries.WatchlistDirectorsPageQuery;
 }): JSX.Element {
   return (
-    <WatchlistEntitiesView
+    <WatchlistEntityAvatarListWithFilters
       title="Directors"
       tagline="Drama is life with the dull bits cut out."
       slugPath="directors"
@@ -35,7 +35,7 @@ export const pageQuery = graphql`
       filter: { entityType: { eq: "director" } }
     ) {
       nodes {
-        ...WatchlistEntitiesViewItem
+        ...WatchlistEntityAvatarListItem
       }
     }
   }

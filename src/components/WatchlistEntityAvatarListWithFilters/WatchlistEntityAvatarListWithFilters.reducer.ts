@@ -9,14 +9,14 @@ export enum ActionType {
 export type SortValue = "name" | "reviews";
 
 function sortEntities(
-  entities: Queries.WatchlistEntitiesViewItemFragment[],
+  entities: Queries.WatchlistEntityAvatarListItemFragment[],
   sortOrder: SortValue
-): Queries.WatchlistEntitiesViewItemFragment[] {
+): Queries.WatchlistEntityAvatarListItemFragment[] {
   const sortMap: Record<
     SortValue,
     (
-      a: Queries.WatchlistEntitiesViewItemFragment,
-      b: Queries.WatchlistEntitiesViewItemFragment
+      a: Queries.WatchlistEntityAvatarListItemFragment,
+      b: Queries.WatchlistEntityAvatarListItemFragment
     ) => number
   > = {
     name: (a, b) => sortStringAsc(a.name, b.name),
@@ -33,13 +33,13 @@ function sortEntities(
  */
 interface State {
   /** All possible reviews. */
-  allEntities: Queries.WatchlistEntitiesViewItemFragment[];
+  allEntities: Queries.WatchlistEntityAvatarListItemFragment[];
   /** People matching the current filters. */
-  filteredEntities: Queries.WatchlistEntitiesViewItemFragment[];
+  filteredEntities: Queries.WatchlistEntityAvatarListItemFragment[];
   /** The active filters. */
   filters: Record<
     string,
-    (entity: Queries.WatchlistEntitiesViewItemFragment) => boolean
+    (entity: Queries.WatchlistEntityAvatarListItemFragment) => boolean
   >;
   /** The active sort value. */
   sortValue: SortValue;
@@ -48,7 +48,7 @@ interface State {
 export function initState({
   entities,
 }: {
-  entities: readonly Queries.WatchlistEntitiesViewItemFragment[];
+  entities: readonly Queries.WatchlistEntityAvatarListItemFragment[];
 }): State {
   return {
     allEntities: [...entities],
@@ -87,12 +87,12 @@ export function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        name: (person: Queries.WatchlistEntitiesViewItemFragment) => {
+        name: (person: Queries.WatchlistEntityAvatarListItemFragment) => {
           return regex.test(person.name);
         },
       };
       filteredEntities = sortEntities(
-        applyFilters<Queries.WatchlistEntitiesViewItemFragment>({
+        applyFilters<Queries.WatchlistEntityAvatarListItemFragment>({
           collection: state.allEntities,
           filters,
         }),

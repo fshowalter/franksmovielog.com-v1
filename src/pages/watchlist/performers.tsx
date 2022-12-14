@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { HeadBuilder } from "../../components/HeadBuilder";
-import { WatchlistEntitiesView } from "../../views/WatchlistEntitiesView";
+import { WatchlistEntityAvatarListWithFilters } from "../../components/WatchlistEntityAvatarListWithFilters";
 
 export function Head(): JSX.Element {
   return (
@@ -19,7 +19,7 @@ export default function WatchlistPerformersPage({
   data: Queries.WatchlistPerformersPageQuery;
 }): JSX.Element {
   return (
-    <WatchlistEntitiesView
+    <WatchlistEntityAvatarListWithFilters
       title="Performers"
       tagline="Talk low, talk slow, and don't talk too much."
       slugPath="directors"
@@ -35,7 +35,7 @@ export const pageQuery = graphql`
       filter: { entityType: { eq: "performer" } }
     ) {
       nodes {
-        ...WatchlistEntitiesViewItem
+        ...WatchlistEntityAvatarListItem
       }
     }
   }

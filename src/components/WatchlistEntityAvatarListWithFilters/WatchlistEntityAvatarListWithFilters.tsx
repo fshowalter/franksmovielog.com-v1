@@ -1,30 +1,30 @@
 import { graphql } from "gatsby";
 import { useReducer } from "react";
-import { Box } from "../../components/Box";
-import { DebouncedInput } from "../../components/DebouncedInput";
-import { Fieldset } from "../../components/Fieldset";
-import { GraphqlImage } from "../../components/GraphqlImage";
-import { Layout } from "../../components/Layout";
-import { Link } from "../../components/Link";
-import { SelectField } from "../../components/SelectField";
-import { Spacer } from "../../components/Spacer";
 import { backgroundColors, borderColors } from "../../styles/colors.css";
+import { Box } from "../Box";
+import { DebouncedInput } from "../DebouncedInput";
+import { Fieldset } from "../Fieldset";
+import { GraphqlImage } from "../GraphqlImage";
+import { Layout } from "../Layout";
+import { Link } from "../Link";
+import { SelectField } from "../SelectField";
+import { Spacer } from "../Spacer";
 import {
   gridStyle,
   progressRingPostionStyle,
   progressRingTransformStyle,
-} from "./WatchlistEntitiesView.css";
+} from "./WatchlistEntityAvatarListWithFilters.css";
 import {
   ActionType,
   initState,
   reducer,
   SortValue,
-} from "./WatchlistEntitiesView.reducer";
+} from "./WatchlistEntityAvatarListWithFilters.reducer";
 
 function Progress({
   entity,
 }: {
-  entity: Queries.WatchlistEntitiesViewItemFragment;
+  entity: Queries.WatchlistEntityAvatarListItemFragment;
 }): JSX.Element {
   const percent = entity.reviewCount / entity.titleCount;
   const circumference = 17.5 * 2 * Math.PI;
@@ -66,7 +66,7 @@ function ListItem({
   entity,
   slugPath,
 }: {
-  entity: Queries.WatchlistEntitiesViewItemFragment;
+  entity: Queries.WatchlistEntityAvatarListItemFragment;
   slugPath: string;
 }): JSX.Element {
   if (entity.avatar && entity.slug) {
@@ -136,13 +136,13 @@ function ListItem({
   );
 }
 
-export function WatchlistEntitiesView({
+export function WatchlistEntityAvatarListWithFilters({
   entities,
   slugPath,
   title,
   tagline,
 }: {
-  entities: readonly Queries.WatchlistEntitiesViewItemFragment[];
+  entities: readonly Queries.WatchlistEntityAvatarListItemFragment[];
   slugPath: string;
   title: string;
   tagline: string;
@@ -237,7 +237,7 @@ export function WatchlistEntitiesView({
 }
 
 export const pageQuery = graphql`
-  fragment WatchlistEntitiesViewItem on WatchlistEntitiesJson {
+  fragment WatchlistEntityAvatarListItem on WatchlistEntitiesJson {
     name
     slug
     titleCount

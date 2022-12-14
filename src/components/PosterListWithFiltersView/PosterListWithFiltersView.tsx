@@ -15,7 +15,7 @@ import {
   SelectOptions,
   Spacer,
   YearInput,
-} from "../../components";
+} from "..";
 import {
   backgroundColors,
   borderColors,
