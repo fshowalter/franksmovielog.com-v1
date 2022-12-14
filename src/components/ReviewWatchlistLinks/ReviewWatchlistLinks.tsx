@@ -45,7 +45,15 @@ export function ReviewWatchlistLinks({
   ...rest
 }: IWatchlistLinksProps): JSX.Element {
   return (
-    <Box as="ul" display="flex" padding={0} {...rest}>
+    <Box
+      as="ul"
+      display="flex"
+      flexWrap="wrap"
+      columnGap={8}
+      rowGap={8}
+      padding={0}
+      {...rest}
+    >
       {watchlist.collections.map((collection) => {
         return (
           <WatchlistItem

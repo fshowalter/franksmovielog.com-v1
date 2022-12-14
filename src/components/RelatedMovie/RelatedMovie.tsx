@@ -21,7 +21,7 @@ interface IRelatedMovieProps extends IBoxProps {
 
 export function RelatedMovie({ movie }: IRelatedMovieProps) {
   return (
-    <Grid key={movie.imdbId}>
+    <Grid key={movie.imdbId} paddingX={{ default: "popoutGutter", tablet: 0 }}>
       <GridArea name="still">
         <Link to={`/reviews/${movie.slug}/`} className={stillStyle}>
           <Still image={movie.still} title={movie.title} year={movie.year} />

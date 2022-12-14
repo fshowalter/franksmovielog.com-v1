@@ -1,9 +1,16 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
+import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
-import { RelatedMovie } from "./RelatedMovie";
-import { gridAreas, gridStyle, movieListStyle } from "./RelatedMovies.css";
+import { RelatedMovie } from "../RelatedMovie";
+import { ReviewSubHeading } from "../ReviewSubHeading";
+import {
+  avatarStyle,
+  gridAreas,
+  gridStyle,
+  movieListStyle,
+} from "./RelatedMovies.css";
 
 const GridArea = gridAreaComponent(gridAreas);
 
@@ -13,19 +20,23 @@ function SectionHeading({
   leadText,
   boldText,
   linkTarget,
+  avatar,
 }: {
   leadText: string;
   boldText: string;
   linkTarget: string;
+  avatar?: IGraphqlImage;
 }) {
   return (
-    <Box as="header" display="block" paddingY={8}>
-      <Box
-        as="h3"
-        fontWeight="normal"
-        fontSize="relatedMoviesHeader"
-        color="muted"
-      >
+    <ReviewSubHeading paddingX="popoutGutter" display="flex" paddingY={8}>
+      {avatar && (
+        <GraphqlImage
+          image={avatar}
+          alt={`More ${boldText} reviews`}
+          className={avatarStyle}
+        />
+      )}
+      <span>
         {leadText}{" "}
         <Link
           to={linkTarget}
@@ -36,11 +47,8 @@ function SectionHeading({
         >
           {boldText}
         </Link>
-      </Box>
-      {/* <Link to={linkTarget} color="accent" fontSize={18} textDecoration="none">
-        See All &raquo;
-      </Link> */}
-    </Box>
+      </span>
+    </ReviewSubHeading>
   );
 }
 function MovieList({
@@ -75,6 +83,7 @@ function Directors({
             <Grid as="nav" key={director.slug}>
               <GridArea name="heading" boxShadow="borderBottom">
                 <SectionHeading
+                  avatar={director.avatar}
                   leadText="More directed by"
                   boldText={director.name}
                   linkTarget={`/watchlist/directors/${director.slug}/`}
@@ -131,6 +140,7 @@ function Performers({
             <Grid as="nav" key={performer.slug}>
               <GridArea name="heading" boxShadow="borderBottom">
                 <SectionHeading
+                  avatar={performer.avatar}
                   leadText="More with"
                   boldText={performer.name}
                   linkTarget={`/watchlist/performers/${performer.slug}/`}
@@ -160,6 +170,7 @@ function Collections({
             <Grid as="nav" key={collection.name}>
               <GridArea name="heading" boxShadow="borderBottom">
                 <SectionHeading
+                  avatar={collection.avatar}
                   leadText="More"
                   boldText={collection.name}
                   linkTarget={`/watchlist/collections/${collection.slug}/`}
@@ -221,6 +232,18 @@ export const query = graphql`
       performers {
         name
         slug
+        avatar {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FIXED
+              formats: [JPG, AVIF]
+              quality: 80
+              width: 40
+              height: 40
+              placeholder: TRACED_SVG
+            )
+          }
+        }
         browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }
@@ -228,6 +251,18 @@ export const query = graphql`
       directors {
         name
         slug
+        avatar {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FIXED
+              formats: [JPG, AVIF]
+              quality: 80
+              width: 40
+              height: 40
+              placeholder: TRACED_SVG
+            )
+          }
+        }
         browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }
@@ -235,6 +270,18 @@ export const query = graphql`
       writers {
         name
         slug
+        avatar {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FIXED
+              formats: [JPG, AVIF]
+              quality: 80
+              width: 40
+              height: 40
+              placeholder: TRACED_SVG
+            )
+          }
+        }
         browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }
@@ -243,6 +290,18 @@ export const query = graphql`
       collections {
         name
         slug
+        avatar {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FIXED
+              formats: [JPG, AVIF]
+              quality: 80
+              width: 40
+              height: 40
+              placeholder: TRACED_SVG
+            )
+          }
+        }
         browseMore(sourceReviewId: $id) {
           ...RelatedMovie
         }

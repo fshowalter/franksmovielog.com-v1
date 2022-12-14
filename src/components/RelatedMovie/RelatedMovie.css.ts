@@ -1,11 +1,11 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { backgroundColors } from "../../styles/colors.css";
-import { GUTTER, MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
+import { MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gradeStyle = style({
-  padding: "3px 0",
+  // padding: "3px 0",
 });
 
 export const stillStyle = style({
@@ -17,16 +17,16 @@ export const stillStyle = style({
 
 export const gridStyle = style({
   display: "grid",
-  ...gridTemplate<GridAreas, 5>({
+  ...gridTemplate<GridAreas, 3>({
     rows: [
       { [size[24]]: SPACER },
-      [SPACER, "title", SPACER, "still", SPACER],
-      { [size[8]]: [SPACER, SPACER, SPACER, "still", SPACER] },
-      [SPACER, "grade", SPACER, "still", SPACER],
-      [SPACER, SPACER, SPACER, "still", SPACER],
+      ["title", SPACER, "still"],
+      { [size[8]]: [SPACER, SPACER, "still"] },
+      ["grade", SPACER, "still"],
+      [SPACER, SPACER, "still"],
       { [size[24]]: SPACER },
     ],
-    columns: [GUTTER, " 1fr", "24px", "1fr", GUTTER],
+    columns: [" 1fr", "24px", "1fr"],
   }),
   selectors: {
     "&:nth-child(even)": {

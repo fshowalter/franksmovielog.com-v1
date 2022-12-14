@@ -3,9 +3,9 @@ import { Box } from "../components/Box";
 import { Credits } from "../components/Credits";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Layout } from "../components/Layout";
+import { RelatedMovies } from "../components/RelatedMovies";
 import { ReviewContent } from "../components/ReviewContent";
 import { ReviewHeader } from "../components/ReviewHeader";
-import { RelatedMovies } from "../components/ReviewPage/RelatedMovies";
 import { StructuredData } from "../components/ReviewPage/StructuredData";
 import { Spacer } from "../components/Spacer";
 import { Still } from "../components/Still";
@@ -62,9 +62,9 @@ export default function ReviewTemplate({
         <Spacer axis="vertical" size={80} />
         <ViewingHistory movie={movie} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
-        <Credits movie={movie} maxWidth="proseWithGutters" />
+        <Credits movie={movie} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
-        <RelatedMovies relatedMovies={movie} />
+        <RelatedMovies relatedMovies={movie} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
       </Box>
       <StructuredData data={movie} />

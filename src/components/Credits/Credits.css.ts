@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { minMediaQuery } from "../../styles/breakpoints";
 import { foregroundColors } from "../../styles/colors.css";
 import { MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
 
@@ -11,6 +12,12 @@ export const posterFloatStyle = style({
   float: "left" as const,
   maxWidth: "50%",
   marginRight: "24px",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      marginRight: "32px",
+    },
+  },
 });
 
 export const creditStyle = style({

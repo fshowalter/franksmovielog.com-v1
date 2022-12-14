@@ -1,0 +1,1 @@
+export { RelatedMovies } from "./RelatedMovies";
