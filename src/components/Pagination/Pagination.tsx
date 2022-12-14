@@ -1,13 +1,7 @@
 import { navigate } from "gatsby";
 import { ChangeEvent } from "react";
 import { Box, IBoxProps } from "../Box";
-import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
-import { gridAreas, gridStyle } from "./Pagination.css";
-
-const GridArea = gridAreaComponent(gridAreas);
-
-const Grid = gridComponent(gridStyle);
 
 interface IPaginationProps extends IBoxProps {
   currentPage: number;
@@ -33,8 +27,8 @@ export function Pagination({
   perPage,
   numberOfItems,
   urlRoot,
-  prevText,
-  nextText,
+  prevText = "newer",
+  nextText = "older",
   ...rest
 }: IPaginationProps): JSX.Element {
   const numPages = Math.ceil(numberOfItems / perPage);
@@ -47,29 +41,38 @@ export function Pagination({
 
   const nextPageUrl = `${urlRoot}page-${currentPage + 1}/`;
 
-  const prev = isFirst ? null : (
+  const prev = isFirst ? (
+    <span />
+  ) : (
     <Link
       to={prevPageUrl}
       color="accent"
       textDecoration="none"
+      textAlign="left"
     >{`← ${prevText}`}</Link>
   );
 
-  const next = isLast ? null : (
+  const next = isLast ? (
+    <span />
+  ) : (
     <Link
       to={nextPageUrl}
       color="accent"
       textDecoration="none"
+      textAlign="right"
     >{`${nextText} →`}</Link>
   );
 
   return (
-    <Grid as="section" fontSize="pagination" {...rest}>
+    <Box as="section" fontSize="pagination" {...rest}>
       <Box as="h3" screenReaderOnly={true}>
         Pagination
       </Box>
-      <GridArea name="prev">{prev}</GridArea>
-      <GridArea name="pages">
+      <Box display="flex" justifyContent="space-between">
+        {prev}
+        {next}
+      </Box>
+      <Box textAlign="right">
         Page{" "}
         <Box as="select" value={currentPage} onChange={onSelectPage}>
           {Array.from({ length: numPages }, (_, i) => i + 1).map((num) => {
@@ -81,8 +84,7 @@ export function Pagination({
           })}
         </Box>{" "}
         of {numPages}
-      </GridArea>
-      <GridArea name="next">{next}</GridArea>
-    </Grid>
+      </Box>
+    </Box>
   );
 }
