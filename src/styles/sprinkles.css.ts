@@ -2,12 +2,12 @@ import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { atomicProperties } from "./atomicProperties";
 import { minMediaQuery } from "./breakpoints";
 import {
-  GUTTER,
+  gutterWidth,
   MAX_POSTER_WIDTH,
   PROSE_CONTENT_WIDTH,
   PROSE_CONTENT_WIDTH_WITH_GUTTERS,
   size,
-} from "./sizes";
+} from "./sizes.css";
 
 const unresponsiveAtomicProperties = defineProperties({
   properties: atomicProperties,
@@ -17,11 +17,15 @@ const responsiveAtomicProperties = defineProperties({
   defaultCondition: `default`,
   conditions: {
     default: {},
+    tablet: {
+      "@media": minMediaQuery("tablet"),
+    },
     desktop: {
       "@media": minMediaQuery("desktop"),
     },
   },
   properties: {
+    columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
     display: [
       "block",
       "none",
@@ -66,16 +70,17 @@ const responsiveAtomicProperties = defineProperties({
     paddingBottom: [0, 8, 24, 32, 40, 48, 128],
     paddingLeft: {
       ...size,
-      gutter: GUTTER,
+      gutter: gutterWidth,
     },
     paddingRight: {
       ...size,
-      gutter: GUTTER,
+      gutter: gutterWidth,
     },
     paddingTop: [0, 8, 16, 24, 32, 40, 48, 128],
     position: ["relative", "sticky"],
     top: size,
     width: {
+      unset: "unset",
       160: "160px",
       200: "200px",
       prose: PROSE_CONTENT_WIDTH,

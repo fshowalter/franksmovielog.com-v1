@@ -1,4 +1,4 @@
-import { HEADER_HEIGHT } from "../../styles/sizes";
+import { HEADER_HEIGHT } from "../../styles/sizes.css";
 import { Box } from "../Box";
 
 export function StatHeading({

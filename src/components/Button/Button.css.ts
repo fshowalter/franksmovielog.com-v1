@@ -1,6 +1,6 @@
 import { globalStyle, style } from "@vanilla-extract/css";
 import { borderColors } from "../../styles/colors.css";
-import { size } from "../../styles/sizes";
+import { size } from "../../styles/sizes.css";
 
 export const hoverStyle = style({
   cursor: "pointer",

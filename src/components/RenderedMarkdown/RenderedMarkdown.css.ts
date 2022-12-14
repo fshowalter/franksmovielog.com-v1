@@ -13,7 +13,7 @@ globalStyle(`${renderedMarkdownStyle} a`, {
 });
 
 globalStyle(`${renderedMarkdownStyle}  p`, {
-  lineHeight: "28px",
+  lineHeight: "1.75rem",
   marginBottom: "24px",
 });
 

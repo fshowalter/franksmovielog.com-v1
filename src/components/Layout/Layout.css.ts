@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { breakpoints, minMediaQuery } from "../../styles/breakpoints";
-import { MAX_STILL_WIDTH } from "../../styles/sizes";
+import { MAX_STILL_WIDTH } from "../../styles/sizes.css";
 
 export const pageCanvasStyle = style({
   minHeight: "100dvh",

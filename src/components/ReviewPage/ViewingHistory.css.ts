@@ -1,5 +1,5 @@
 import { style, styleVariants } from "@vanilla-extract/css";
-import { GRID, GUTTER, size } from "../../styles/sizes";
+import { GRID, GUTTER, size } from "../../styles/sizes.css";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gridStyle = style({

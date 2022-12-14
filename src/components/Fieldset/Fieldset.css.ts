@@ -1,7 +1,7 @@
 import { globalStyle, style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { size } from "../../styles/sizes";
+import { size } from "../../styles/sizes.css";
 
 export const fieldsetCss = style({
   border: 0,

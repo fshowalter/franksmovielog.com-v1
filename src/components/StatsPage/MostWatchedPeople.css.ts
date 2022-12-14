@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { HEADER_HEIGHT } from "../../styles/sizes";
+import { HEADER_HEIGHT } from "../../styles/sizes.css";
 
 export const stickyHeaderStyle = style({
   position: "sticky",

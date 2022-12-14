@@ -17,7 +17,7 @@ import {
   YearInput,
 } from "../components";
 import { foregroundColors } from "../styles/colors.css";
-import { HEADER_HEIGHT } from "../styles/sizes";
+import { HEADER_HEIGHT } from "../styles/sizes.css";
 import reducer, {
   ActionType,
   initState,

@@ -1,10 +1,10 @@
 import { Box, IBoxProps } from "../Box";
 import { Link } from "../Link";
-import { taglineStyle } from "./Header.css";
-import Nav from "./Nav";
-import SearchForm from "./SearchForm";
+import { Nav } from "../Nav";
+import { SiteSearchForm } from "../SiteSearchForm";
+import { navActiveLinkStyle, orderStyle, taglineStyle } from "./Mast.css";
 
-export default function Header({ ...rest }: IBoxProps) {
+export function Mast({ ...rest }: IBoxProps) {
   return (
     <Box as="header" display="flex" {...rest}>
       <Box
@@ -25,12 +25,17 @@ export default function Header({ ...rest }: IBoxProps) {
           lineHeight={16}
           className={taglineStyle}
           width="full"
+          fontSize="small"
         >
           My life at the movies.
         </Box>
       </Box>
-      <Nav variant="header" />
-      <SearchForm maxWidth="prose" />
+      <SiteSearchForm maxWidth="prose" className={orderStyle} />
+      <Nav
+        activeClassName={navActiveLinkStyle}
+        color="accent"
+        justifyContent="center"
+      />
     </Box>
   );
 }

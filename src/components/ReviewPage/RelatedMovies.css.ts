@@ -6,7 +6,7 @@ import {
   PROSE_CONTENT_WIDTH,
   QUAD_POSTER,
   size,
-} from "../../styles/sizes";
+} from "../../styles/sizes.css";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const avatarStyle = style({

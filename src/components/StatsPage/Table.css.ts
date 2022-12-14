@@ -1,6 +1,6 @@
 import { globalStyle, style } from "@vanilla-extract/css";
 import { breakpoints, minMediaQuery } from "../../styles/breakpoints";
-import { HEADER_HEIGHT } from "../../styles/sizes";
+import { HEADER_HEIGHT } from "../../styles/sizes.css";
 
 export const stickyTableHeaderStyle = style({
   position: "sticky",

@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { size } from "../../styles/sizes";
+import { size } from "../../styles/sizes.css";
 
 export const gridStyle = style({
   display: "grid",

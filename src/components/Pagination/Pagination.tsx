@@ -2,6 +2,7 @@ import { navigate } from "gatsby";
 import { ChangeEvent } from "react";
 import { Box, IBoxProps } from "../Box";
 import { Link } from "../Link";
+import { Spacer } from "../Spacer";
 
 interface IPaginationProps extends IBoxProps {
   currentPage: number;
@@ -72,7 +73,8 @@ export function Pagination({
         {prev}
         {next}
       </Box>
-      <Box textAlign="right">
+      <Spacer axis="vertical" size={24} />
+      <Box textAlign="right" color="subtle">
         Page{" "}
         <Box as="select" value={currentPage} onChange={onSelectPage}>
           {Array.from({ length: numPages }, (_, i) => i + 1).map((num) => {

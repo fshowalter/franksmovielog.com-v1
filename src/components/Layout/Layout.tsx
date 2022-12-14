@@ -9,8 +9,8 @@
 import React from "react";
 import "../../styles/global.css";
 import { Box } from "../Box";
-import Footer from "./Footer";
-import Header from "./Header";
+import { Footer } from "../Footer";
+import { Mast } from "../Mast";
 import {
   bandStickyStyle,
   headerLayoutStyle,
@@ -40,10 +40,10 @@ export function Layout({
         display="flex"
         flexDirection="column"
       >
-        <Header
+        <Mast
           rowGap={24}
           paddingX="gutter"
-          paddingY={32}
+          paddingY={{ default: 24, desktop: 32 }}
           alignItems="center"
           boxShadow="borderBottom"
           backgroundColor="default"

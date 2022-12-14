@@ -1,8 +1,8 @@
 import { Box, IBoxProps } from "../Box";
 import { ExternalLink } from "../Link";
-import Nav from "./Nav";
+import { Nav } from "../Nav";
 
-export default function Footer({ ...rest }: IBoxProps) {
+export function Footer({ ...rest }: IBoxProps) {
   return (
     <Box
       as="footer"
@@ -11,7 +11,7 @@ export default function Footer({ ...rest }: IBoxProps) {
       backgroundImage="ripNotComingSoon"
       {...rest}
     >
-      <Nav variant="footer" />
+      <Nav justifyContent="center" />
       <Box as="p" fontWeight="light" fontSize="small" lineHeight={16}>
         All stills used in accordance with the{" "}
         <ExternalLink

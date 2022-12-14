@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import { useRef } from "react";
 import { Box, HeadBuilder, Layout } from "../components";
-import { Item } from "../components/HomePage/Item";
+import { HomePageItem } from "../components/HomePageItem";
 import { Pagination } from "../components/Pagination";
 
 export interface PageContext {
@@ -46,7 +46,7 @@ export default function HomeTemplate({
         <Box as="ol" display="flex" flexDirection="column" padding={0}>
           {viewings.map((viewing, index) => {
             return (
-              <Item
+              <HomePageItem
                 key={viewing.sequence}
                 viewing={viewing}
                 eagerLoadImage={index === 0}
@@ -80,27 +80,7 @@ export const pageQuery = graphql`
       limit: $limit
       skip: $skip
     ) {
-      imdbId
-      sequence
-      title
-      year
-      date: viewingDate(formatString: "DD MMM, YYYY")
-      slug
-      grade
-      principalCastNames
-      directorNames
-      excerpt
-      still {
-        childImageSharp {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            formats: [JPG, AVIF]
-            quality: 80
-            width: 512
-            placeholder: TRACED_SVG
-          )
-        }
-      }
+      ...HomePageItem
     }
   }
 `;

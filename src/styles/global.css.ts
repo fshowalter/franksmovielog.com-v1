@@ -1,6 +1,6 @@
 import { createVar, globalStyle } from "@vanilla-extract/css";
 import { backgroundColors, foregroundColors } from "./colors.css";
-import { size } from "./sizes";
+import { size } from "./sizes.css";
 
 globalStyle(`*, *::before, *::after`, {
   boxSizing: `border-box`,

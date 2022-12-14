@@ -21,7 +21,7 @@ import {
   borderColors,
   foregroundColors,
 } from "../../styles/colors.css";
-import { HEADER_HEIGHT } from "../../styles/sizes";
+import { HEADER_HEIGHT } from "../../styles/sizes.css";
 import type { Sort } from "./PosterListWithFilters.reducer";
 import {
   ActionTypes,

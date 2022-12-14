@@ -1,6 +1,6 @@
 import { minMediaQuery } from "./breakpoints";
 import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
-import { relativeSize, size } from "./sizes";
+import { relativeSize, size } from "./sizes.css";
 import {
   fontSizes,
   fontWeights,
@@ -9,6 +9,9 @@ import {
 } from "./typography.css";
 
 export const atomicProperties = {
+  borderRadius: {
+    4: "4px",
+  },
   backgroundColor: {
     ...backgroundColors,
     zebra: {
@@ -151,7 +154,7 @@ export const atomicProperties = {
   justifyContent: ["space-between", "center", "flex-end"],
   textAlign: ["left", "right", "center", "inherit"],
 
-  columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
+  // columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
   flexBasis: size,
   flexShrink: [0],
   zIndex: [100],

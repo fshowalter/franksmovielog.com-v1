@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
 import { DateIcon } from "../DateIcon";
@@ -11,21 +12,25 @@ import {
   gridAreas,
   gridStyle,
   stillBorderStyle,
-} from "./Item.css";
+} from "./HomePageItem.css";
 
 const GridArea = gridAreaComponent(gridAreas);
 
 const Grid = gridComponent(gridStyle);
 
 interface IItemProps extends IBoxProps {
-  viewing: Queries.HomeTemplateQuery["viewings"][0];
+  viewing: Queries.HomePageItemFragment;
   counterValue: number;
   eagerLoadImage: boolean;
 }
 
-export function Item({ viewing, counterValue, eagerLoadImage }: IItemProps) {
+export function HomePageItem({
+  viewing,
+  counterValue,
+  eagerLoadImage,
+}: IItemProps) {
   return (
-    <Box as="li" value={counterValue} display="block" backgroundColor="zebra">
+    <Box as="li" value={counterValue} display="flex" backgroundColor="zebra">
       <Grid as="article" paddingX="gutter">
         <GridArea name="still" maxWidth="prose">
           <Link rel="canonical" to={`/reviews/${viewing.slug}/`}>
@@ -100,3 +105,29 @@ export function Item({ viewing, counterValue, eagerLoadImage }: IItemProps) {
     </Box>
   );
 }
+
+export const query = graphql`
+  fragment HomePageItem on ViewingWithReview {
+    imdbId
+    sequence
+    title
+    year
+    date: viewingDate(formatString: "DD MMM YYYY")
+    slug
+    grade
+    principalCastNames
+    directorNames
+    excerpt
+    still {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 512
+          placeholder: BLURRED
+        )
+      }
+    }
+  }
+`;

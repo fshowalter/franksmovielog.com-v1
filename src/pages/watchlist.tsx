@@ -18,7 +18,7 @@ import {
   YearInput,
 } from "../components";
 import { foregroundColors } from "../styles/colors.css";
-import { HEADER_HEIGHT } from "../styles/sizes";
+import { HEADER_HEIGHT } from "../styles/sizes.css";
 import { toSentenceArray } from "../utils";
 import type { SortType } from "./watchlist.reducer";
 import reducer, { ActionType, initState } from "./watchlist.reducer";

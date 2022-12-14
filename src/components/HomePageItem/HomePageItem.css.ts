@@ -1,11 +1,12 @@
 import { globalStyle, style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { GRID, relativeSize, size } from "../../styles/sizes";
+import { relativeSize, size } from "../../styles/sizes.css";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const stillBorderStyle = style({
   border: `solid 8px ${borderColors.default}`,
+  marginBottom: "4.57px",
 });
 
 export const excerptContinueReadingLinkStyle = style({
@@ -25,17 +26,17 @@ globalStyle(`${excerptContinueReadingLinkStyle} a[data-continue-reading]`, {
 export const gridStyle = style({
   display: "grid",
   margin: "0 auto",
-  ...gridTemplate<GridAreas, 3>({
+  ...gridTemplate<GridAreas, 1>({
     rows: [
       { [size[40]]: SPACER },
-      [SPACER, "still", SPACER],
+      ["still"],
       { [size[16]]: SPACER },
-      { "1fr": [SPACER, "excerpt", SPACER] },
+      { "1fr": ["excerpt"] },
       { [size[24]]: SPACER },
-      [SPACER, "date", SPACER],
+      ["date"],
       { [size[40]]: SPACER },
     ],
-    columns: [GRID.GUTTER, "auto", GRID.GUTTER],
+    columns: ["auto"],
   }),
   "@media": {
     [minMediaQuery("desktop")]: {

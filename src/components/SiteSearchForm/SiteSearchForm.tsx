@@ -2,13 +2,12 @@ import { Box, IBoxProps } from "../Box";
 import ScreenReaderOnly from "../ScreenReaderOnly";
 import SvgIcon from "../SvgIcon";
 import {
-  formStyle,
   iconStyle,
   searchInputStyle,
   submitButtonStyle,
-} from "./SearchForm.css";
+} from "./SiteSearchForm.css";
 
-export default function SearchForm({ ...rest }: IBoxProps) {
+export function SiteSearchForm({ ...rest }: IBoxProps) {
   return (
     <Box
       as="form"
@@ -16,7 +15,11 @@ export default function SearchForm({ ...rest }: IBoxProps) {
       acceptCharset="UTF-8"
       method="get"
       role="search"
-      className={formStyle}
+      boxShadow="borderAll"
+      borderRadius={4}
+      overflow="hidden"
+      width={{ default: "full", desktop: "unset" }}
+      maxWidth="prose"
       {...rest}
     >
       <Box as="label" htmlFor="search" display="flex" overflow="hidden">
@@ -33,6 +36,8 @@ export default function SearchForm({ ...rest }: IBoxProps) {
           fontWeight="light"
           lineHeight={24}
           flexGrow={1}
+          paddingX={16}
+          paddingY={8}
           className={searchInputStyle}
         />
         <input type="hidden" name="q" value="site:www.franksmovielog.com" />

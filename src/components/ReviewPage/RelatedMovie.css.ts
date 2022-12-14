@@ -1,7 +1,7 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { backgroundColors } from "../../styles/colors.css";
-import { GUTTER, MAX_POSTER_WIDTH, size } from "../../styles/sizes";
+import { GUTTER, MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gradeStyle = style({

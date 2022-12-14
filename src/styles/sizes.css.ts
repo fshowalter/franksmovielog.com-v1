@@ -1,3 +1,26 @@
+import { createVar, globalStyle } from "@vanilla-extract/css";
+import { minMediaQuery } from "./breakpoints";
+
+export const gutterWidth = createVar();
+
+globalStyle(":root", {
+  vars: {
+    [gutterWidth]: "20px",
+  },
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      vars: {
+        [gutterWidth]: "48px",
+      },
+    },
+    [minMediaQuery("desktop")]: {
+      vars: {
+        [gutterWidth]: "64px",
+      },
+    },
+  },
+});
+
 export const size = {
   px: "1px",
   full: "100%",
@@ -27,7 +50,7 @@ export const HEADER_HEIGHT = 128;
 export const GUTTER = "clamp(20px, 4vw, 64px)";
 
 export const GRID = {
-  GUTTER: `minmax(${GUTTER}, 1fr)`,
+  GUTTER: `minmax(${gutterWidth}, 1fr)`,
 };
 
 export const MAX_STILL_WIDTH = "960px";
