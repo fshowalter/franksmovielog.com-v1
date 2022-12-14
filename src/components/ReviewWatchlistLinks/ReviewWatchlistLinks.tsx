@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
-import { avatarStyle, linkStyle } from "./WatchlistLinks.css";
+import { avatarStyle, linkStyle } from "./ReviewWatchlistLinks.css";
 
 function WatchlistItem({
   to,
@@ -40,7 +40,7 @@ interface IWatchlistLinksProps extends IBoxProps {
   watchlist: Queries.WatchlistLinksFragment;
 }
 
-export function WatchlistLinks({
+export function ReviewWatchlistLinks({
   watchlist,
   ...rest
 }: IWatchlistLinksProps): JSX.Element {

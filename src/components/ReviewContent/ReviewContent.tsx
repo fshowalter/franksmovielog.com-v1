@@ -24,6 +24,7 @@ export function ReviewContent({ review, ...rest }: IReviewContentProps) {
       </Box>
       <RenderedMarkdown
         maxWidth="prose"
+        lineHeight="prose"
         // eslint-disable-next-line react/no-danger
         text={review.review.linkedHtml}
       />

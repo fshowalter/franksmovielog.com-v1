@@ -10,10 +10,24 @@ export const gridStyle = style({
       ["icon", SPACER, "date"],
       ["icon", SPACER, "venue"],
       { [size[16]]: SPACER },
-      [SPACER, SPACER, "viewingNote"],
+      ["viewingNote", "viewingNote", "viewingNote"],
     ],
     columns: ["16px", "1ch", "1fr"],
   }),
+  "@media": {
+    // [minMediaQuery("tablet")]: {
+    //   ...gridTemplate<GridAreas, 3>({
+    //     rows: [
+    //       { [size[16]]: SPACER },
+    //       ["icon", SPACER, "date"],
+    //       ["icon", SPACER, "venue"],
+    //       { [size[16]]: SPACER },
+    //       [SPACER, SPACER, "viewingNote"],
+    //     ],
+    //     columns: ["16px", "1ch", "1fr"],
+    //   }),
+    // },
+  },
 });
 
 const gridAreaStyles = {

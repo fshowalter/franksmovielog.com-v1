@@ -2,20 +2,24 @@ import { createVar, globalStyle } from "@vanilla-extract/css";
 import { minMediaQuery } from "./breakpoints";
 
 export const gutterWidth = createVar();
+export const popoutGutterWidth = createVar();
 
 globalStyle(":root", {
   vars: {
     [gutterWidth]: "20px",
+    [popoutGutterWidth]: "20px",
   },
   "@media": {
     [minMediaQuery("tablet")]: {
       vars: {
         [gutterWidth]: "48px",
+        [popoutGutterWidth]: "24px",
       },
     },
     [minMediaQuery("desktop")]: {
       vars: {
         [gutterWidth]: "64px",
+        [popoutGutterWidth]: "32px",
       },
     },
   },
@@ -56,7 +60,9 @@ export const GRID = {
 export const MAX_STILL_WIDTH = "960px";
 export const MAX_POSTER_WIDTH = "248px";
 export const PROSE_CONTENT_WIDTH = "33rem"; //"max(32.5rem, 58ch)";
-export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `calc((${GUTTER} * 2) + 33em)`;
+
+export const POPOUT_WIDTH = `calc((${popoutGutterWidth} * 2) + 33rem)`;
+export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `calc((${gutterWidth} * 2) + 33em)`;
 export const MAX_CONTENT_WIDTH_WITH_GUTTERS = `calc((${GUTTER} * 2) + ${MAX_STILL_WIDTH})`;
 export const QUAD_POSTER = "1088px";
 

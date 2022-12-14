@@ -1,12 +1,21 @@
-import { style, styleVariants } from "@vanilla-extract/css";
-import { minMediaQuery } from "../../styles/breakpoints";
-import { backgroundColors, foregroundColors } from "../../styles/colors.css";
+import { style } from "@vanilla-extract/css";
+import { foregroundColors } from "../../styles/colors.css";
 import { MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
-import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const posterStyle = style({
   maxWidth: MAX_POSTER_WIDTH,
   borderRadius: size[8],
+});
+
+export const posterFloatStyle = style({
+  float: "left" as const,
+  maxWidth: "50%",
+  marginRight: "24px",
+});
+
+export const creditStyle = style({
+  marginBottom: size[16],
+  overflow: "hidden",
 });
 
 export const backToTopContainerStyle = style({
@@ -65,47 +74,3 @@ export const backToTopArrowStyle = style({
   width: "31.5px",
   zIndex: 2,
 });
-
-export const gridStyle = style({
-  display: "grid",
-  backgroundColor: backgroundColors.subtle,
-  ...gridTemplate<GridAreas, 3>({
-    rows: [
-      ["poster", SPACER, "meta"],
-      { [size[24]]: SPACER },
-      ["watchlistLinks", "watchlistLinks", "backToTop"],
-    ],
-    columns: ["1fr", size[24], "1fr"],
-  }),
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      ...gridTemplate<GridAreas, 3>({
-        rows: [
-          ["poster", SPACER, "meta"],
-          { [size[24]]: SPACER },
-          ["watchlistLinks", "watchlistLinks", "backToTop"],
-        ],
-        columns: ["1fr", size[32], "1fr"],
-      }),
-    },
-  },
-});
-
-const gridAreaStyles = {
-  poster: {
-    gridArea: "poster",
-  },
-  meta: {
-    gridArea: "meta",
-  },
-  watchlistLinks: {
-    gridArea: "watchlistLinks",
-  },
-  backToTop: {
-    gridArea: "backToTop",
-  },
-};
-
-export type GridAreas = "poster" | "meta" | "watchlistLinks" | "backToTop";
-
-export const gridAreas = styleVariants(gridAreaStyles);

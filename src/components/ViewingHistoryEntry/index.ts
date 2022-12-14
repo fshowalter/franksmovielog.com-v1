@@ -1,0 +1,1 @@
+export { ViewingHistoryEntry } from "./ViewingHistoryEntry";

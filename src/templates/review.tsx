@@ -1,15 +1,15 @@
 import { graphql } from "gatsby";
 import { Box } from "../components/Box";
+import { Credits } from "../components/Credits";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Layout } from "../components/Layout";
 import { ReviewContent } from "../components/ReviewContent";
 import { ReviewHeader } from "../components/ReviewHeader";
-import { Credits } from "../components/ReviewPage/Credits";
 import { RelatedMovies } from "../components/ReviewPage/RelatedMovies";
 import { StructuredData } from "../components/ReviewPage/StructuredData";
-import { ViewingHistory } from "../components/ReviewPage/ViewingHistory";
 import { Spacer } from "../components/Spacer";
 import { Still } from "../components/Still";
+import { ViewingHistory } from "../components/ViewingHistory";
 import { stillMarginStyle } from "./review.css";
 
 export function Head({
@@ -60,11 +60,7 @@ export default function ReviewTemplate({
         <Spacer axis="vertical" size={{ default: 24, tablet: 32 }} />
         <ReviewContent review={movie} paddingX="gutter" alignItems="center" />
         <Spacer axis="vertical" size={80} />
-        <ViewingHistory
-          movie={movie}
-          maxWidth="proseWithGutters"
-          width="full"
-        />
+        <ViewingHistory movie={movie} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
         <Credits movie={movie} maxWidth="proseWithGutters" />
         <Spacer axis="vertical" size={128} />

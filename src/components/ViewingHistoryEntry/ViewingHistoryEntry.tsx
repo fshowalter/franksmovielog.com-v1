@@ -16,7 +16,7 @@ function Date({
 }) {
   return (
     <>
-      <Box as="span" color="emphasis" display="inline-block">
+      <Box as="span" color="default" display="inline-block">
         {viewing.date}
       </Box>{" "}
     </>
@@ -47,12 +47,19 @@ function MediumNotes({
     return null;
   }
   return (
-    <Box as="span" fontWeight="light" color="subtle">
+    <Box
+      as="span"
+      fontWeight="light"
+      color="subtle"
+      fontSize="small"
+      lineHeight={1}
+    >
       (
       <RenderedMarkdown
         // eslint-disable-next-line react/no-danger
         text={viewing.mediumNotes}
-        fontSize="normal"
+        fontSize="small"
+        lineHeight={1}
         as="span"
       />
       )
@@ -86,6 +93,8 @@ function ViewingNote({
   return (
     <Box paddingBottom={24}>
       <RenderedMarkdown
+        fontSize="normal"
+        lineHeight="default"
         // eslint-disable-next-line react/no-danger
         text={viewing.viewingNote.linkedHtml}
       />
@@ -99,7 +108,7 @@ interface IIViewingHistoryItemProps extends IBoxProps {
 
 export function ViewingHistoryEntry({ viewing }: IIViewingHistoryItemProps) {
   return (
-    <Grid backgroundColor="zebra" display="block" paddingX="gutter">
+    <Grid backgroundColor="zebra" display="block" paddingX="popoutGutter">
       <GridArea name="icon">
         <DateIcon />{" "}
       </GridArea>

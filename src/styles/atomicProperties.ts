@@ -92,6 +92,10 @@ export const atomicProperties = {
       fontSize: "1.25rem",
       lineHeight: "1.5rem",
     },
+    reviewSubHeading: {
+      fontSize: "1.1875rem",
+      lineHeight: "2.5rem",
+    },
     relatedMovieTitle: {
       fontSize: "1.1875rem",
       lineHeight: "1.5rem",

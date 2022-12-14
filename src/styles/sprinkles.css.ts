@@ -4,6 +4,8 @@ import { minMediaQuery } from "./breakpoints";
 import {
   gutterWidth,
   MAX_POSTER_WIDTH,
+  popoutGutterWidth,
+  POPOUT_WIDTH,
   PROSE_CONTENT_WIDTH,
   PROSE_CONTENT_WIDTH_WITH_GUTTERS,
   size,
@@ -46,6 +48,7 @@ const responsiveAtomicProperties = defineProperties({
     maxWidth: {
       160: "160px",
       200: "200px",
+      popout: POPOUT_WIDTH,
       prose: PROSE_CONTENT_WIDTH,
       proseWithGutters: PROSE_CONTENT_WIDTH_WITH_GUTTERS,
       poster: MAX_POSTER_WIDTH,
@@ -71,10 +74,12 @@ const responsiveAtomicProperties = defineProperties({
     paddingLeft: {
       ...size,
       gutter: gutterWidth,
+      popoutGutter: popoutGutterWidth,
     },
     paddingRight: {
       ...size,
       gutter: gutterWidth,
+      popoutGutter: popoutGutterWidth,
     },
     paddingTop: [0, 8, 16, 24, 32, 40, 48, 128],
     position: ["relative", "sticky"],

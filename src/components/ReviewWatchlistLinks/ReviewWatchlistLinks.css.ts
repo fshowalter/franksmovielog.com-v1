@@ -13,7 +13,7 @@ export const avatarStyle = style({
 export const linkStyle = style({
   borderRadius: "0.5rem",
   border: `solid 1px ${borderColors.default}`,
-  padding: `8px 16px`,
+  padding: `7px 15px`,
   selectors: {
     "&:hover": {
       borderColor: borderColors.accent,
