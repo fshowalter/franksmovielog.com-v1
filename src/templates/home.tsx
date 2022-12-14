@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import { useRef } from "react";
 import { Box, HeadBuilder, Layout } from "../components";
 import { Item } from "../components/HomePage/Item";
-import { Pagination } from "../components/HomePage/Pagination";
+import { Pagination } from "../components/Pagination";
 
 export interface PageContext {
   limit: number;

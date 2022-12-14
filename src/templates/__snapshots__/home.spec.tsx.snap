@@ -1589,7 +1589,7 @@ exports[`/ can render last page 1`] = `
           </li>
         </ol>
         <section
-          class="Pagination_gridStyle__1idltk90 sprinkles_paddingLeft_gutter_default__8lcvdkco sprinkles_paddingRight_gutter_default__8lcvdkdw sprinkles_paddingTop_40_default__8lcvdke8 sprinkles_paddingBottom_40_default__8lcvdkbc sprinkles_fontSize_pagination__8lcvdk34 sprinkles_justifyContent_center__8lcvdk3w"
+          class="Pagination_gridStyle__1dqlkf90 sprinkles_paddingLeft_gutter_default__8lcvdkco sprinkles_paddingRight_gutter_default__8lcvdkdw sprinkles_paddingTop_40_default__8lcvdke8 sprinkles_paddingBottom_40_default__8lcvdkbc sprinkles_fontSize_pagination__8lcvdk34 sprinkles_justifyContent_center__8lcvdk3w"
         >
           <h3
             class="Box_screenReaderOnlyStyle__1isqo402"
@@ -1597,7 +1597,7 @@ exports[`/ can render last page 1`] = `
             Pagination
           </h3>
           <div
-            class="Pagination_gridAreas_prev__1idltk91"
+            class="Pagination_gridAreas_prev__1dqlkf91"
           >
             <a
               class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3n"
@@ -1607,7 +1607,7 @@ exports[`/ can render last page 1`] = `
             </a>
           </div>
           <div
-            class="Pagination_gridAreas_pages__1idltk93"
+            class="Pagination_gridAreas_pages__1dqlkf93"
           >
             Page 
             <select>
@@ -1670,7 +1670,7 @@ exports[`/ can render last page 1`] = `
              of 11
           </div>
           <div
-            class="Pagination_gridAreas_next__1idltk92"
+            class="Pagination_gridAreas_next__1dqlkf92"
           />
         </section>
       </main>
@@ -3355,7 +3355,7 @@ exports[`/ renders 1`] = `
           </li>
         </ol>
         <section
-          class="Pagination_gridStyle__1idltk90 sprinkles_paddingLeft_gutter_default__8lcvdkco sprinkles_paddingRight_gutter_default__8lcvdkdw sprinkles_paddingTop_40_default__8lcvdke8 sprinkles_paddingBottom_40_default__8lcvdkbc sprinkles_fontSize_pagination__8lcvdk34 sprinkles_justifyContent_center__8lcvdk3w"
+          class="Pagination_gridStyle__1dqlkf90 sprinkles_paddingLeft_gutter_default__8lcvdkco sprinkles_paddingRight_gutter_default__8lcvdkdw sprinkles_paddingTop_40_default__8lcvdke8 sprinkles_paddingBottom_40_default__8lcvdkbc sprinkles_fontSize_pagination__8lcvdk34 sprinkles_justifyContent_center__8lcvdk3w"
         >
           <h3
             class="Box_screenReaderOnlyStyle__1isqo402"
@@ -3363,10 +3363,10 @@ exports[`/ renders 1`] = `
             Pagination
           </h3>
           <div
-            class="Pagination_gridAreas_prev__1idltk91"
+            class="Pagination_gridAreas_prev__1dqlkf91"
           />
           <div
-            class="Pagination_gridAreas_pages__1idltk93"
+            class="Pagination_gridAreas_pages__1dqlkf93"
           >
             Page 
             <select>
@@ -3429,7 +3429,7 @@ exports[`/ renders 1`] = `
              of 11
           </div>
           <div
-            class="Pagination_gridAreas_next__1idltk92"
+            class="Pagination_gridAreas_next__1dqlkf92"
           >
             <a
               class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3n"
