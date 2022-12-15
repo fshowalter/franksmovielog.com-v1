@@ -4,6 +4,7 @@ export const data = {
       {
         name: "Abel Ferrara",
         slug: "abel-ferrara",
+        entityType: "director" as const,
         titleCount: 22,
         reviewCount: 1,
         avatar: {
@@ -39,6 +40,7 @@ export const data = {
       {
         name: "Akira Kurosawa",
         slug: "akira-kurosawa",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 32,
         reviewCount: 1,
         avatar: {
@@ -74,6 +76,7 @@ export const data = {
       {
         name: "Alfred Hitchcock",
         slug: "alfred-hitchcock",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 44,
         reviewCount: 5,
         avatar: {
@@ -109,6 +112,7 @@ export const data = {
       {
         name: "Billy Wilder",
         slug: "billy-wilder",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 26,
         reviewCount: 2,
         avatar: {
@@ -144,6 +148,7 @@ export const data = {
       {
         name: "Brian De Palma",
         slug: "brian-de-palma",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 30,
         reviewCount: 16,
         avatar: {
@@ -179,6 +184,7 @@ export const data = {
       {
         name: "Dario Argento",
         slug: "dario-argento",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 20,
         reviewCount: 4,
         avatar: {
@@ -214,6 +220,7 @@ export const data = {
       {
         name: "David Cronenberg",
         slug: "david-cronenberg",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 23,
         reviewCount: 6,
         avatar: {
@@ -249,6 +256,7 @@ export const data = {
       {
         name: "David Lean",
         slug: "david-lean",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 17,
         reviewCount: 1,
         avatar: {
@@ -284,6 +292,7 @@ export const data = {
       {
         name: "François Truffaut",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 23,
         reviewCount: 0,
         avatar: null,
@@ -291,6 +300,7 @@ export const data = {
       {
         name: "Fritz Lang",
         slug: "fritz-lang",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 31,
         reviewCount: 3,
         avatar: {
@@ -326,6 +336,7 @@ export const data = {
       {
         name: "George A. Romero",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 17,
         reviewCount: 0,
         avatar: null,
@@ -333,6 +344,7 @@ export const data = {
       {
         name: "Howard Hawks",
         slug: "howard-hawks",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 38,
         reviewCount: 5,
         avatar: {
@@ -368,6 +380,7 @@ export const data = {
       {
         name: "Ingmar Bergman",
         slug: "ingmar-bergman",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 38,
         reviewCount: 21,
         avatar: {
@@ -403,6 +416,7 @@ export const data = {
       {
         name: "John Boorman",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 17,
         reviewCount: 0,
         avatar: null,
@@ -410,6 +424,7 @@ export const data = {
       {
         name: "John Carpenter",
         slug: "john-carpenter",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 18,
         reviewCount: 3,
         avatar: {
@@ -445,6 +460,7 @@ export const data = {
       {
         name: "John Ford",
         slug: "john-ford",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 62,
         reviewCount: 12,
         avatar: {
@@ -480,6 +496,7 @@ export const data = {
       {
         name: "John Frankenheimer",
         slug: "john-frankenheimer",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 29,
         reviewCount: 1,
         avatar: {
@@ -515,6 +532,7 @@ export const data = {
       {
         name: "John Huston",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 41,
         reviewCount: 0,
         avatar: null,
@@ -522,6 +540,7 @@ export const data = {
       {
         name: "John Sturges",
         slug: "john-sturges",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 43,
         reviewCount: 1,
         avatar: {
@@ -557,6 +576,7 @@ export const data = {
       {
         name: "Ken Russell",
         slug: "ken-russell",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 22,
         reviewCount: 1,
         avatar: {
@@ -592,6 +612,7 @@ export const data = {
       {
         name: "Lucio Fulci",
         slug: "lucio-fulci",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 28,
         reviewCount: 8,
         avatar: {
@@ -627,6 +648,7 @@ export const data = {
       {
         name: "Luis Buñuel",
         slug: "luis-bunuel",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 31,
         reviewCount: 1,
         avatar: {
@@ -662,6 +684,7 @@ export const data = {
       {
         name: "Mario Bava",
         slug: "mario-bava",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 31,
         reviewCount: 2,
         avatar: {
@@ -697,6 +720,7 @@ export const data = {
       {
         name: "Martin Scorsese",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 27,
         reviewCount: 0,
         avatar: null,
@@ -704,6 +728,7 @@ export const data = {
       {
         name: "Michael Haneke",
         slug: "michael-haneke",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 12,
         reviewCount: 5,
         avatar: {
@@ -739,6 +764,7 @@ export const data = {
       {
         name: "Michele Soavi",
         slug: "michele-soavi",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 7,
         reviewCount: 1,
         avatar: {
@@ -774,6 +800,7 @@ export const data = {
       {
         name: "Mike Nichols",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 19,
         reviewCount: 0,
         avatar: null,
@@ -781,6 +808,7 @@ export const data = {
       {
         name: "Orson Welles",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 18,
         reviewCount: 0,
         avatar: null,
@@ -788,6 +816,7 @@ export const data = {
       {
         name: "Paul Mazursky",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 15,
         reviewCount: 0,
         avatar: null,
@@ -795,6 +824,7 @@ export const data = {
       {
         name: "Paul Thomas Anderson",
         slug: "paul-thomas-anderson",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 9,
         reviewCount: 1,
         avatar: {
@@ -830,6 +860,7 @@ export const data = {
       {
         name: "Paul Verhoeven",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 17,
         reviewCount: 0,
         avatar: null,
@@ -837,6 +868,7 @@ export const data = {
       {
         name: "Quentin Tarantino",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 14,
         reviewCount: 0,
         avatar: null,
@@ -844,6 +876,7 @@ export const data = {
       {
         name: "Ridley Scott",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 28,
         reviewCount: 0,
         avatar: null,
@@ -851,6 +884,7 @@ export const data = {
       {
         name: "Robert Altman",
         slug: "robert-altman",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 36,
         reviewCount: 1,
         avatar: {
@@ -886,6 +920,7 @@ export const data = {
       {
         name: "Roger Corman",
         slug: "roger-corman",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 56,
         reviewCount: 1,
         avatar: {
@@ -921,6 +956,7 @@ export const data = {
       {
         name: "Roman Polanski",
         slug: "roman-polanski",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 23,
         reviewCount: 1,
         avatar: {
@@ -956,6 +992,7 @@ export const data = {
       {
         name: "Sam Peckinpah",
         slug: "sam-peckinpah",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 14,
         reviewCount: 1,
         avatar: {
@@ -991,6 +1028,7 @@ export const data = {
       {
         name: "Sergio Leone",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 7,
         reviewCount: 0,
         avatar: null,
@@ -998,6 +1036,7 @@ export const data = {
       {
         name: "Sergio Martino",
         slug: "sergio-martino",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 15,
         reviewCount: 1,
         avatar: {
@@ -1033,6 +1072,7 @@ export const data = {
       {
         name: "Sidney Lumet",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 43,
         reviewCount: 0,
         avatar: null,
@@ -1040,6 +1080,7 @@ export const data = {
       {
         name: "Stanley Kubrick",
         slug: "stanley-kubrick",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 13,
         reviewCount: 1,
         avatar: {
@@ -1075,6 +1116,7 @@ export const data = {
       {
         name: "The Coen Brothers",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 21,
         reviewCount: 0,
         avatar: null,
@@ -1082,6 +1124,7 @@ export const data = {
       {
         name: "Tobe Hooper",
         slug: "tobe-hooper",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 15,
         reviewCount: 1,
         avatar: {
@@ -1117,6 +1160,7 @@ export const data = {
       {
         name: "Tod Browning",
         slug: "tod-browning",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 9,
         reviewCount: 5,
         avatar: {
@@ -1152,6 +1196,7 @@ export const data = {
       {
         name: "Tony Scott",
         slug: "tony-scott",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 17,
         reviewCount: 1,
         avatar: {
@@ -1187,6 +1232,7 @@ export const data = {
       {
         name: "Wes Anderson",
         slug: null,
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 10,
         reviewCount: 0,
         avatar: null,
@@ -1194,6 +1240,7 @@ export const data = {
       {
         name: "Wes Craven",
         slug: "wes-craven",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 21,
         reviewCount: 6,
         avatar: {
@@ -1229,6 +1276,7 @@ export const data = {
       {
         name: "William Friedkin",
         slug: "william-friedkin",
+        entityType: "director" as Queries.WatchlistEntityType,
         titleCount: 19,
         reviewCount: 1,
         avatar: {

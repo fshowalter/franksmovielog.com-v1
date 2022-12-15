@@ -37,7 +37,6 @@ export const gridStyle = style({
     [minMediaQuery("tablet")]: {
       ...gridTemplate<GridAreas, 1>({
         rows: [
-          { [size[24]]: SPACER },
           ["still"],
           { [size[8]]: SPACER },
           ["title"],
@@ -54,7 +53,6 @@ export const gridStyle = style({
     [minMediaQuery("desktop")]: {
       ...gridTemplate<GridAreas, 1>({
         rows: [
-          { [size[32]]: SPACER },
           ["still"],
           { [size[8]]: SPACER },
           ["title"],

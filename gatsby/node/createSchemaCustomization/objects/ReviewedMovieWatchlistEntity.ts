@@ -13,6 +13,7 @@ export const ReviewedMovieWatchlistEntity = {
     imdbId: "String!",
     name: "String!",
     slug: "String!",
+    entityType: `${SchemaNames.WatchlistEntityType}!`,
     avatar: {
       type: "File!",
       resolve: async (

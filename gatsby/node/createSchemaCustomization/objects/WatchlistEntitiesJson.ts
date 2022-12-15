@@ -22,7 +22,7 @@ export const WatchlistEntitiesJson = {
   fields: {
     name: "String!",
     imdbId: "String!",
-    entityType: "String!",
+    entityType: `${SchemaNames.WatchlistEntityType}!`,
     titleCount: "Int!",
     slug: {
       type: "String",

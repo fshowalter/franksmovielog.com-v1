@@ -1,0 +1,1 @@
+export { RelatedMoviesNav } from "./RelatedMoviesNav";

@@ -22,7 +22,6 @@ export default function WatchlistCollectionsPage({
     <WatchlistEntityAvatarListWithFilters
       title="Collections"
       tagline="Round up the usual suspects."
-      slugPath="collections"
       entities={data.entity.nodes}
     />
   );
@@ -32,7 +31,7 @@ export const pageQuery = graphql`
   query WatchlistCollectionsPage {
     entity: allWatchlistEntitiesJson(
       sort: { name: ASC }
-      filter: { entityType: { eq: "collection" } }
+      filter: { entityType: { eq: collection } }
     ) {
       nodes {
         ...WatchlistEntityAvatarListItem

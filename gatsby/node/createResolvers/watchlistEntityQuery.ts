@@ -6,26 +6,16 @@ export const watchlistEntityQuery = {
     watchlistEntity: {
       type: `${SchemaNames.WatchlistEntitiesJson}!`,
       args: {
-        entityType: "String!",
-        slug: "String!",
+        id: "String!",
       },
-      resolve: async (
+      resolve: (
         _source: unknown,
         args: {
-          entityType: string;
-          slug: string;
+          id: string;
         },
         context: GatsbyNodeContext
       ) => {
-        return context.nodeModel.findOne({
-          type: SchemaNames.WatchlistEntitiesJson,
-          query: {
-            filter: {
-              entityType: { eq: args.entityType },
-              slug: { eq: args.slug },
-            },
-          },
-        });
+        return context.nodeModel.getNodeById({ id: args.id });
       },
     },
   },

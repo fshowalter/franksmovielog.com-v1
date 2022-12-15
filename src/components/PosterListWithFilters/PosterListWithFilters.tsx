@@ -151,7 +151,7 @@ export function PosterListWithFilters({
   distinctMedia?: readonly string[];
   distinctViewingYears?: readonly string[];
   distinctReleaseYears: readonly string[];
-  distinctGenres: readonly string[];
+  distinctGenres?: readonly string[];
   distinctGrades?: readonly (string | null)[];
   initialSort: Sort;
 }): JSX.Element {
@@ -240,36 +240,38 @@ export function PosterListWithFilters({
                   <SelectOptions options={distinctMedia} />
                 </SelectField>
               )}
-              <Box display="flex" flexDirection="column" textAlign="left">
-                <LabelText text="Genres" as="label" htmlFor="genres" />
-                <Select
-                  inputId="genres"
-                  theme={(theme) => ({
-                    ...theme,
-                    borderRadius: 4,
-                    colors: {
-                      ...theme.colors,
-                      neutral0: backgroundColors.subtle,
-                      neutral20: borderColors.default,
-                      neutral50: foregroundColors.subtle,
-                      danger: foregroundColors.accent,
-                      primary25: backgroundColors.stripe,
-                    },
-                  })}
-                  classNamePrefix="reactSelect"
-                  isSearchable={false}
-                  onChange={(e) =>
-                    dispatch({
-                      type: ActionTypes.FILTER_GENRES,
-                      values: e.map((selection) => selection.value),
-                    })
-                  }
-                  isMulti={true}
-                  options={distinctGenres.map((genre) => {
-                    return { value: genre, label: genre };
-                  })}
-                />
-              </Box>
+              {distinctGenres && (
+                <Box display="flex" flexDirection="column" textAlign="left">
+                  <LabelText text="Genres" as="label" htmlFor="genres" />
+                  <Select
+                    inputId="genres"
+                    theme={(theme) => ({
+                      ...theme,
+                      borderRadius: 4,
+                      colors: {
+                        ...theme.colors,
+                        neutral0: backgroundColors.subtle,
+                        neutral20: borderColors.default,
+                        neutral50: foregroundColors.subtle,
+                        danger: foregroundColors.accent,
+                        primary25: backgroundColors.stripe,
+                      },
+                    })}
+                    classNamePrefix="reactSelect"
+                    isSearchable={false}
+                    onChange={(e) =>
+                      dispatch({
+                        type: ActionTypes.FILTER_GENRES,
+                        values: e.map((selection) => selection.value),
+                      })
+                    }
+                    isMulti={true}
+                    options={distinctGenres.map((genre) => {
+                      return { value: genre, label: genre };
+                    })}
+                  />
+                </Box>
+              )}
               <SelectField
                 value={state.sortValue}
                 label="Order By"
@@ -280,12 +282,16 @@ export function PosterListWithFilters({
                   })
                 }
               >
-                <option value="viewing-date-desc">
-                  Viewing Date (Newest First)
-                </option>
-                <option value="viewing-date-asc">
-                  Viewing Date (Oldest First)
-                </option>
+                {distinctViewingYears && (
+                  <>
+                    <option value="viewing-date-desc">
+                      Viewing Date (Newest First)
+                    </option>
+                    <option value="viewing-date-asc">
+                      Viewing Date (Oldest First)
+                    </option>
+                  </>
+                )}
                 <option value="release-date-desc">
                   Release Date (Newest First)
                 </option>
@@ -402,7 +408,7 @@ export interface IPosterListWithFiltersItem {
   venue?: string | null;
   year: number;
   sortTitle: string;
-  genres: readonly string[];
+  genres?: readonly string[];
   slug: string | null;
   grade: string | null;
   gradeValue: number | null;

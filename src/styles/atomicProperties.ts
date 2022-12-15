@@ -1,5 +1,5 @@
 import { minMediaQuery } from "./breakpoints";
-import { backgroundColors, foregroundColors } from "./colors.css";
+import { foregroundColors } from "./colors.css";
 import { relativeSize, size } from "./sizes.css";
 import {
   fontSizes,
@@ -9,23 +9,6 @@ import {
 } from "./typography.css";
 
 export const atomicProperties = {
-  backgroundColor: {
-    ...backgroundColors,
-    zebra: {
-      selectors: {
-        "&:nth-child(even)": {
-          backgroundColor: backgroundColors.subtle,
-        },
-      },
-    },
-    zebraOdd: {
-      selectors: {
-        "&:nth-child(odd)": {
-          backgroundColor: backgroundColors.subtle,
-        },
-      },
-    },
-  },
   borderRadius: size,
   color: foregroundColors,
   padding: size,
@@ -37,7 +20,7 @@ export const atomicProperties = {
   fontStyle: ["italic"],
   justifyItems: ["center", "inherit"],
   alignItems: ["center", "inherit", "flex-start", "baseline"],
-  rowGap: [4, 8, 16, 24, 32, 48, 64, 96],
+
   marginTop: [48, 64, 128],
   fontWeight: fontWeights,
   transform: {

@@ -4,6 +4,7 @@ export const data = {
       {
         name: "Child's Play",
         slug: "childs-play",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 8,
         reviewCount: 8,
         avatar: {
@@ -39,6 +40,7 @@ export const data = {
       {
         name: "Friday the 13th",
         slug: "friday-the-13th",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 12,
         reviewCount: 9,
         avatar: {
@@ -74,6 +76,7 @@ export const data = {
       {
         name: "Halloween",
         slug: "halloween",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 12,
         reviewCount: 5,
         avatar: {
@@ -109,6 +112,7 @@ export const data = {
       {
         name: "Hammer Films",
         slug: "hammer-films",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 94,
         reviewCount: 7,
         avatar: {
@@ -144,6 +148,7 @@ export const data = {
       {
         name: "Hatchet",
         slug: "hatchet",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 4,
         reviewCount: 4,
         avatar: {
@@ -179,6 +184,7 @@ export const data = {
       {
         name: "James Bond",
         slug: "james-bond",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 27,
         reviewCount: 6,
         avatar: {
@@ -214,6 +220,7 @@ export const data = {
       {
         name: "Phantasm",
         slug: "phantasm",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 5,
         reviewCount: 2,
         avatar: {
@@ -249,6 +256,7 @@ export const data = {
       {
         name: "Saw",
         slug: "saw",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 9,
         reviewCount: 6,
         avatar: {
@@ -284,6 +292,7 @@ export const data = {
       {
         name: "Shaw Brothers",
         slug: "shaw-brothers",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 4,
         reviewCount: 4,
         avatar: {
@@ -319,6 +328,7 @@ export const data = {
       {
         name: "Universal Monsters",
         slug: "universal-monsters",
+        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 29,
         reviewCount: 3,
         avatar: {

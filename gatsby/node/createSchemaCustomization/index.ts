@@ -1,4 +1,5 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
+import { WatchlistEntityTypeEnum } from "./enums/WatchlistEntityTypeEnum";
 import { linkReviewedMoviesExtension } from "./extensions/linkReviewedMovies";
 import { proxyToReviewedMovieExtension } from "./extensions/proxyToReviewedMovie";
 import { MostWatchedPeople } from "./interfaces/MostWatchedPeople";
@@ -43,6 +44,7 @@ export function createSchemaCustomization({
   createFieldExtension(proxyToReviewedMovieExtension);
 
   const typeDefs = [
+    schema.buildEnumType(WatchlistEntityTypeEnum),
     schema.buildInterfaceType(MostWatchedPerson),
     schema.buildInterfaceType(MostWatchedPeople),
     schema.buildObjectType(AllTimeStats),

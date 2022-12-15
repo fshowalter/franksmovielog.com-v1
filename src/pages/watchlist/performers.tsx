@@ -22,7 +22,6 @@ export default function WatchlistPerformersPage({
     <WatchlistEntityAvatarListWithFilters
       title="Performers"
       tagline="Talk low, talk slow, and don't talk too much."
-      slugPath="directors"
       entities={data.entity.nodes}
     />
   );
@@ -32,7 +31,7 @@ export const pageQuery = graphql`
   query WatchlistPerformersPage {
     entity: allWatchlistEntitiesJson(
       sort: { name: ASC }
-      filter: { entityType: { eq: "performer" } }
+      filter: { entityType: { eq: performer } }
     ) {
       nodes {
         ...WatchlistEntityAvatarListItem

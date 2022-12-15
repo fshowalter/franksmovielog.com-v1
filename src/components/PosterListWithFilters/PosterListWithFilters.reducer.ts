@@ -232,7 +232,7 @@ export function reducer(state: State, action: Action): State {
       filters = {
         ...state.filters,
         genres: (item: IPosterListWithFiltersItem) => {
-          return action.values.every((genre) => item.genres.includes(genre));
+          return action.values.every((genre) => item.genres?.includes(genre));
         },
       };
       filteredItems = sortItems(

@@ -4,35 +4,43 @@ import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { avatarStyle, linkStyle } from "./ReviewWatchlistLinks.css";
 
-function WatchlistItem({
-  to,
-  entity,
-  children,
+function ListItemsForEntities({
+  entities,
 }: {
-  to: string;
-  entity: Queries.WatchlistLinkEntityFragment;
-  children: React.ReactNode;
-}): JSX.Element | null {
+  entities: readonly Queries.WatchlistLinkEntityFragment[];
+}) {
   return (
-    <Box as="li" display="block">
-      <Link
-        to={to}
-        backgroundColor="inverse"
-        display="flex"
-        alignItems="center"
-        whiteSpace="nowrap"
-        color="accent"
-        textDecoration="none"
-        className={linkStyle}
-      >
-        <GraphqlImage
-          image={entity.avatar}
-          alt={`More ${entity.name} reviews`}
-          className={avatarStyle}
-        />
-        {children}
-      </Link>
-    </Box>
+    <>
+      {entities
+        .filter((entity) => entity.browseMore.length < 3)
+        .map((entity) => {
+          return (
+            <Box
+              as="li"
+              display="block"
+              key={`${entity.entityType}s/${entity.slug}`}
+            >
+              <Link
+                to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
+                backgroundColor="inverse"
+                display="flex"
+                alignItems="center"
+                whiteSpace="nowrap"
+                color="accent"
+                textDecoration="none"
+                className={linkStyle}
+              >
+                <GraphqlImage
+                  image={entity.avatar}
+                  alt={`More ${entity.name} reviews`}
+                  className={avatarStyle}
+                />
+                {entity.name}
+              </Link>
+            </Box>
+          );
+        })}
+    </>
   );
 }
 
@@ -54,50 +62,10 @@ export function ReviewWatchlistLinks({
       padding={0}
       {...rest}
     >
-      {watchlist.collections.map((collection) => {
-        return (
-          <WatchlistItem
-            to={`/watchlist/collections/${collection.slug}/`}
-            entity={collection}
-            key={collection.slug}
-          >
-            {collection.name}
-          </WatchlistItem>
-        );
-      })}
-      {watchlist.directors.map((director) => {
-        return (
-          <WatchlistItem
-            entity={director}
-            key={director.slug}
-            to={`/watchlist/directors/${director.slug}/`}
-          >
-            {director.name}
-          </WatchlistItem>
-        );
-      })}
-      {watchlist.performers.map((performer) => {
-        return (
-          <WatchlistItem
-            entity={performer}
-            key={performer.slug}
-            to={`/watchlist/performers/${performer.slug}/`}
-          >
-            {performer.name}
-          </WatchlistItem>
-        );
-      })}
-      {watchlist.writers.map((writer) => {
-        return (
-          <WatchlistItem
-            entity={writer}
-            key={writer.slug}
-            to={`/watchlist/writers/${writer.slug}/`}
-          >
-            {writer.name}
-          </WatchlistItem>
-        );
-      })}
+      <ListItemsForEntities entities={watchlist.collections} />
+      <ListItemsForEntities entities={watchlist.directors} />
+      <ListItemsForEntities entities={watchlist.performers} />
+      <ListItemsForEntities entities={watchlist.writers} />
     </Box>
   );
 }
@@ -106,6 +74,7 @@ export const query = graphql`
   fragment WatchlistLinkEntity on ReviewedMovieWatchlistEntity {
     name
     slug
+    entityType
     avatar {
       childImageSharp {
         gatsbyImageData(
@@ -114,9 +83,12 @@ export const query = graphql`
           quality: 80
           width: 40
           height: 40
-          placeholder: TRACED_SVG
+          placeholder: BLURRED
         )
       }
+    }
+    browseMore(sourceReviewId: $id) {
+      slug
     }
   }
 

@@ -2,22 +2,22 @@
 
 exports[`/watchlist/performers/ can filter by name 1`] = `
 <ol
-  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdk12"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdkt"
   data-testid="entity-list"
 />
 `;
 
 exports[`/watchlist/performers/ can sort by name 1`] = `
 <ol
-  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdk12"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdkt"
   data-testid="entity-list"
 >
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/childs-play/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/childs-play/"
       max-width="160"
     >
       <div
@@ -103,16 +103,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/childs-play/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/childs-play/"
     >
       Child's Play
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       8
        / 
@@ -120,11 +120,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/friday-the-13th/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/friday-the-13th/"
       max-width="160"
     >
       <div
@@ -210,16 +210,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/friday-the-13th/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/friday-the-13th/"
     >
       Friday the 13th
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       9
        / 
@@ -227,11 +227,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/halloween/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/halloween/"
       max-width="160"
     >
       <div
@@ -317,16 +317,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/halloween/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/halloween/"
     >
       Halloween
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       5
        / 
@@ -334,11 +334,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/hammer-films/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/hammer-films/"
       max-width="160"
     >
       <div
@@ -424,16 +424,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/hammer-films/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/hammer-films/"
     >
       Hammer Films
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       7
        / 
@@ -441,11 +441,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/hatchet/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/hatchet/"
       max-width="160"
     >
       <div
@@ -531,16 +531,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/hatchet/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/hatchet/"
     >
       Hatchet
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       4
        / 
@@ -548,11 +548,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/james-bond/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/james-bond/"
       max-width="160"
     >
       <div
@@ -638,16 +638,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/james-bond/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/james-bond/"
     >
       James Bond
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       6
        / 
@@ -655,11 +655,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/phantasm/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/phantasm/"
       max-width="160"
     >
       <div
@@ -745,16 +745,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/phantasm/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/phantasm/"
     >
       Phantasm
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       2
        / 
@@ -762,11 +762,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/saw/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/saw/"
       max-width="160"
     >
       <div
@@ -852,16 +852,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/saw/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/saw/"
     >
       Saw
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       6
        / 
@@ -869,11 +869,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/shaw-brothers/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/shaw-brothers/"
       max-width="160"
     >
       <div
@@ -959,16 +959,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/shaw-brothers/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/shaw-brothers/"
     >
       Shaw Brothers
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       4
        / 
@@ -976,11 +976,11 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/universal-monsters/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/universal-monsters/"
       max-width="160"
     >
       <div
@@ -1066,16 +1066,16 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/universal-monsters/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/universal-monsters/"
     >
       Universal Monsters
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       3
        / 
@@ -1087,15 +1087,15 @@ exports[`/watchlist/performers/ can sort by name 1`] = `
 
 exports[`/watchlist/performers/ can sort by review count 1`] = `
 <ol
-  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdk12"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_padding_0__8lcvdkt"
   data-testid="entity-list"
 >
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/friday-the-13th/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/friday-the-13th/"
       max-width="160"
     >
       <div
@@ -1181,16 +1181,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/friday-the-13th/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/friday-the-13th/"
     >
       Friday the 13th
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       9
        / 
@@ -1198,11 +1198,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/childs-play/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/childs-play/"
       max-width="160"
     >
       <div
@@ -1288,16 +1288,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/childs-play/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/childs-play/"
     >
       Child's Play
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       8
        / 
@@ -1305,11 +1305,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/hammer-films/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/hammer-films/"
       max-width="160"
     >
       <div
@@ -1395,16 +1395,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/hammer-films/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/hammer-films/"
     >
       Hammer Films
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       7
        / 
@@ -1412,11 +1412,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/james-bond/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/james-bond/"
       max-width="160"
     >
       <div
@@ -1502,16 +1502,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/james-bond/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/james-bond/"
     >
       James Bond
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       6
        / 
@@ -1519,11 +1519,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/saw/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/saw/"
       max-width="160"
     >
       <div
@@ -1609,16 +1609,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/saw/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/saw/"
     >
       Saw
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       6
        / 
@@ -1626,11 +1626,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/halloween/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/halloween/"
       max-width="160"
     >
       <div
@@ -1716,16 +1716,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/halloween/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/halloween/"
     >
       Halloween
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       5
        / 
@@ -1733,11 +1733,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/hatchet/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/hatchet/"
       max-width="160"
     >
       <div
@@ -1823,16 +1823,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/hatchet/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/hatchet/"
     >
       Hatchet
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       4
        / 
@@ -1840,11 +1840,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/shaw-brothers/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/shaw-brothers/"
       max-width="160"
     >
       <div
@@ -1930,16 +1930,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/shaw-brothers/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/shaw-brothers/"
     >
       Shaw Brothers
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       4
        / 
@@ -1947,11 +1947,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/universal-monsters/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/universal-monsters/"
       max-width="160"
     >
       <div
@@ -2037,16 +2037,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/universal-monsters/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/universal-monsters/"
     >
       Universal Monsters
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       3
        / 
@@ -2054,11 +2054,11 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
     </div>
   </li>
   <li
-    class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
+    class="sprinkles_display_flex_default__8lcvdk5z sprinkles_flexDirection_column_default__8lcvdk6e"
   >
     <a
-      class="sprinkles_borderRadius_half__8lcvdkt sprinkles_transform_safariBorderRadiusFix__8lcvdk2e sprinkles_width_full_default__8lcvdko4 sprinkles_overflow_hidden__8lcvdk1o"
-      href="/watchlist/directors/phantasm/"
+      class="sprinkles_borderRadius_half__8lcvdkk sprinkles_transform_safariBorderRadiusFix__8lcvdk1x sprinkles_width_full_default__8lcvdkp2 sprinkles_overflow_hidden__8lcvdk1f"
+      href="/watchlist/collections/phantasm/"
       max-width="160"
     >
       <div
@@ -2144,16 +2144,16 @@ exports[`/watchlist/performers/ can sort by review count 1`] = `
       </svg>
     </a>
     <span
-      class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_8_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_8_default__8lcvdkas sprinkles_display_block_default__8lcvdk5j"
+      class="sprinkles_width_px_default__8lcvdkoz sprinkles_height_8_default__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkez sprinkles_minHeight_8_default__8lcvdkb2 sprinkles_display_block_default__8lcvdk5t"
     />
     <a
-      class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40 sprinkles_display_block_default__8lcvdk5j"
-      href="/watchlist/directors/phantasm/"
+      class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk38 sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j sprinkles_display_block_default__8lcvdk5t"
+      href="/watchlist/collections/phantasm/"
     >
       Phantasm
     </a>
     <div
-      class="sprinkles_color_subtle__8lcvdky sprinkles_fontSize_normal__8lcvdk2p sprinkles_textAlign_center__8lcvdk40"
+      class="sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_normal__8lcvdk28 sprinkles_textAlign_center__8lcvdk3j"
     >
       2
        / 

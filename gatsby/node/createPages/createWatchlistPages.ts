@@ -4,6 +4,7 @@ import path from "path";
 interface EntityQueryResult {
   entity: {
     nodes: {
+      id: string;
       slug: string;
     }[];
   };
@@ -18,9 +19,10 @@ async function createDirectorPages(
     `
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: "director" }, reviewCount: { gt: 0 } }
+          filter: { entityType: { eq: director }, reviewCount: { gt: 0 } }
         ) {
           nodes {
+            id
             slug
           }
         }
@@ -29,17 +31,18 @@ async function createDirectorPages(
   );
 
   if (!queryResult.data || queryResult.errors) {
-    reporter.panicOnBuild(`Error while running query watchlist directors.`);
+    reporter.panicOnBuild(
+      `Error while running query for watchlist director pages.`
+    );
     return;
   }
 
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/directors/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlistEntity.tsx"),
+      component: path.resolve("./src/templates/director.tsx"),
       context: {
-        slug: node.slug,
-        entityType: "director",
+        id: node.id,
       },
     });
   });
@@ -54,9 +57,10 @@ async function createPerformerPages(
     `
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: "performer" }, reviewCount: { gt: 0 } }
+          filter: { entityType: { eq: performer }, reviewCount: { gt: 0 } }
         ) {
           nodes {
+            id
             slug
           }
         }
@@ -65,17 +69,18 @@ async function createPerformerPages(
   );
 
   if (!queryResult.data || queryResult.errors) {
-    reporter.panicOnBuild(`Error while running query watchlist performers.`);
+    reporter.panicOnBuild(
+      `Error while running query watchlist performer pages.`
+    );
     return;
   }
 
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/performers/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlistEntity.tsx"),
+      component: path.resolve("./src/templates/performer.tsx"),
       context: {
-        slug: node.slug,
-        entityType: "performer",
+        id: node.id,
       },
     });
   });
@@ -88,12 +93,12 @@ async function createWriterPages(
 ) {
   const queryResult = await graphql<EntityQueryResult>(
     `
-      #graphql
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: "writer" }, reviewCount: { gt: 0 } }
+          filter: { entityType: { eq: writer }, reviewCount: { gt: 0 } }
         ) {
           nodes {
+            id
             slug
           }
         }
@@ -102,17 +107,16 @@ async function createWriterPages(
   );
 
   if (!queryResult.data || queryResult.errors) {
-    reporter.panicOnBuild(`Error while running query watchlist writers.`);
+    reporter.panicOnBuild(`Error while running query watchlist writer pages.`);
     return;
   }
 
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/writers/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlistEntity.tsx"),
+      component: path.resolve("./src/templates/writer.tsx"),
       context: {
-        slug: node.slug,
-        entityType: "writer",
+        id: node.id,
       },
     });
   });
@@ -127,9 +131,10 @@ async function createCollectionPages(
     `
       {
         entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: "collection" }, reviewCount: { gt: 0 } }
+          filter: { entityType: { eq: collection }, reviewCount: { gt: 0 } }
         ) {
           nodes {
+            id
             slug
           }
         }
@@ -138,17 +143,18 @@ async function createCollectionPages(
   );
 
   if (!queryResult.data || queryResult.errors) {
-    reporter.panicOnBuild(`Error while running query watchlist collections.`);
+    reporter.panicOnBuild(
+      `Error while running query watchlist collection pages.`
+    );
     return;
   }
 
   queryResult.data.entity.nodes.forEach((node) => {
     createPage({
       path: `/watchlist/collections/${node.slug}/`,
-      component: path.resolve("./src/templates/watchlistEntity.tsx"),
+      component: path.resolve("./src/templates/collection.tsx"),
       context: {
-        slug: node.slug,
-        entityType: "collection",
+        id: node.id,
       },
     });
   });

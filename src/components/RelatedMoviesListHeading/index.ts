@@ -1,0 +1,1 @@
+export { RelatedMoviesListHeading } from "./RelatedMoviesListHeading";

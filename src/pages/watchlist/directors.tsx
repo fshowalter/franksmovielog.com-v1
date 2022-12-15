@@ -22,7 +22,6 @@ export default function WatchlistDirectorsPage({
     <WatchlistEntityAvatarListWithFilters
       title="Directors"
       tagline="Drama is life with the dull bits cut out."
-      slugPath="directors"
       entities={data.entity.nodes}
     />
   );
@@ -32,7 +31,7 @@ export const pageQuery = graphql`
   query WatchlistDirectorsPage {
     entity: allWatchlistEntitiesJson(
       sort: { name: ASC }
-      filter: { entityType: { eq: "director" } }
+      filter: { entityType: { eq: director } }
     ) {
       nodes {
         ...WatchlistEntityAvatarListItem

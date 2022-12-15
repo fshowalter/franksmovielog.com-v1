@@ -14,6 +14,8 @@ export enum SchemaNames {
   MostWatchedWritersJson = "MostWatchedWritersJson",
   OverratedDisappointmentsJson = "OverratedDisappointmentsJson",
   ReviewedMoviesJson = "ReviewedMoviesJson",
+  ReviewedMovieWatchlistEntities = "ReviewedMovieWatchlistEntities",
+  ReviewedMovieWatchlistEntity = "ReviewedMovieWatchlistEntity",
   ReviewStatsJson = "ReviewStatsJson",
   StatsForYear = "StatsForYear",
   TopMediaJson = "TopMediaJson",
@@ -27,7 +29,6 @@ export enum SchemaNames {
   ViewingStatsJson = "ViewingStatsJson",
   ViewingWithReview = "ViewingWithReview",
   WatchlistEntitiesJson = "WatchlistEntitiesJson",
+  WatchlistEntityType = "WatchlistEntityType",
   WatchlistMoviesJson = "WatchlistMoviesJson",
-  ReviewedMovieWatchlistEntity = "ReviewedMovieWatchlistEntity",
-  ReviewedMovieWatchlistEntities = "ReviewedMovieWatchlistEntities",
 }

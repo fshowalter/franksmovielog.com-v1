@@ -22,7 +22,6 @@ export default function WatchlistWritersPage({
     <WatchlistEntityAvatarListWithFilters
       title="Writers"
       tagline="It's not a lie. It's a gift for fiction."
-      slugPath="writers"
       entities={data.entity.nodes}
     />
   );
@@ -32,7 +31,7 @@ export const pageQuery = graphql`
   query WatchlistWritersPage {
     entity: allWatchlistEntitiesJson(
       sort: { name: ASC }
-      filter: { entityType: { eq: "writer" } }
+      filter: { entityType: { eq: writer } }
     ) {
       nodes {
         ...WatchlistEntityAvatarListItem

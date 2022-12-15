@@ -64,16 +64,14 @@ function Progress({
 
 function ListItem({
   entity,
-  slugPath,
 }: {
   entity: Queries.WatchlistEntityAvatarListItemFragment;
-  slugPath: string;
 }): JSX.Element {
   if (entity.avatar && entity.slug) {
     return (
       <Box as="li" display="flex" flexDirection="column">
         <Link
-          to={`/watchlist/${slugPath}/${entity.slug}/`}
+          to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
           max-width={160}
           borderRadius="half"
           transform="safariBorderRadiusFix"
@@ -88,7 +86,7 @@ function ListItem({
         </Link>
         <Spacer axis="vertical" size={8} />
         <Link
-          to={`/watchlist/${slugPath}/${entity.slug}/`}
+          to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
           color="accent"
           textDecoration="none"
           fontSize="normal"
@@ -138,12 +136,10 @@ function ListItem({
 
 export function WatchlistEntityAvatarListWithFilters({
   entities,
-  slugPath,
   title,
   tagline,
 }: {
   entities: readonly Queries.WatchlistEntityAvatarListItemFragment[];
-  slugPath: string;
   title: string;
   tagline: string;
 }): JSX.Element {
@@ -220,13 +216,7 @@ export function WatchlistEntityAvatarListWithFilters({
             className={gridStyle}
           >
             {state.filteredEntities.map((entity) => {
-              return (
-                <ListItem
-                  key={entity.name}
-                  entity={entity}
-                  slugPath={slugPath}
-                />
-              );
+              return <ListItem key={entity.name} entity={entity} />;
             })}
           </Box>
           <Spacer axis="vertical" size={128} />
@@ -240,6 +230,7 @@ export const pageQuery = graphql`
   fragment WatchlistEntityAvatarListItem on WatchlistEntitiesJson {
     name
     slug
+    entityType
     titleCount
     reviewCount
     avatar {

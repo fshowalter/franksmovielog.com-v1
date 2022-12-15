@@ -1,0 +1,1 @@
+export { RelatedMoviesForWatchlistEntities } from "./RelatedMoviesForWatchlistEntities";

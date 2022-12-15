@@ -105,11 +105,15 @@ export const data = {
         {
           name: "Christopher Lee",
           slug: "christopher-lee",
+          entityType: "performer" as const,
           avatar: {
             childImageSharp: {
               gatsbyImageData: {
                 layout: "fixed" as const,
-                backgroundColor: "#989898",
+                placeholder: {
+                  fallback:
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADxUlEQVQ4y01UWU9VZxQ9/8IQFJnRxpeKVAQRpMzz7EUKIkgQKfM8zzNS5nkGrRoFRJCCVIoENRZtiEnjc6tvxr+wzFrmEG/y5Z577v7WXnvttbcxMTGG6elJzM/PYm5uRs8LC3NYXJzH2NgIurs70drajKGhAf0eHh7E7dtdetfS0oT6+lpUVVWguLgQRUUFMPr6flPw6OgwCE5gBkREhCE4OBABAX7w9fVBZWU5amurUVFRJrDGxnpUV1eitLQYBQV5yMvLQU5O9jfA/v5eZSYrvnR0tIeDgx1OnXKGq+uP8PS8AHf3n5Cefh2dne1iVlNTpSRlZSViRsDs7CwYBBsc7Mfk5LhYnj7tAhcXJ/j5+cLH55LAyNbf/2ecO3cWqakpGBjoU4lkSMYlJUViKYb8kyWTXVNTA7y8PHHtWjK8vb30nJaWqmTUlRc9PNxhsSToMuPJlKBMQJYC5OGFW7duihkZm7ru7PyJ9+8P8e7dAV6/fonCwnyVn5AQJ8C6uhppSy3z83Nh8DLP7Ow0btxIUwMow9raqsBevdoX2P7+Ht6+/VsaEpASNDTUCdBsDpMZbAYPASl2UFCAAh8/Xsb6+hPs7e3qrKws4dmzTbS1tSAqKkIAZMhYWscs3aC3qJHpw9jYaERHR8p/d+4soKenW1JkZWUq6YMH91Ta8vKjo47zEJilGwThxbt3FxWUlJSI8+fd5L/29lb09vYgIyNdotP029tbiiNjSsPEXV0dR940yOx7QHqKfmPHyG5r6w8Bra6uYGNjHZubG2JKIgRkQsZ1dLShubnxG0N2mKBLSw9Fn6A8lIK6mWAsl7F0AJ3BZnIwOIosnywNk939+7+LIX/TY/QiR3FmZupotglAzflMS/GYoGbZBrtJBuzo06dreP58WwH0Y0rKLwpkFSMjQyrNHFOWyNKnpiYESpbU02Ap1ImlUXDTb5mZGZoIlkJQswG8SBBahAnImMBkSxkMgr148RcOD//BwcEb6UT9Ll/2ln3Ky0sVSD1pYErCRnIIaGQmprkpA98bHz78K7Dx8VHExETB2dkRVlbHcOKEteaZG4WdZBJ67dOn/2Xiq1ctcgNHMDQ0GLm5v4qtwY5xjAhgbW2lteXk5AB7e1utLwIlJyepxC9fPoME4uJi5Fc2jlXQsyEhQfKr4ebmCltbG9jZndQeJJB5mIQbxmKJx+7uDvghgcjIcAGSZXh4qADDwkI0ZQa38sWLHjhz5gcxIzDBCG5jc1wXuCNp2o8f/9M6ozSJiVcQHx+rXRkY6K9vvv8KUOjfZYP42QwAAAAASUVORK5CYII=",
+                },
                 images: {
                   fallback: {
                     src: "/static/d769b0ebb1cc04b4bd2d0897efcf3233/5e3dc/christopher-lee.jpg",
@@ -136,11 +140,15 @@ export const data = {
         {
           name: "Peter Cushing",
           slug: "peter-cushing",
+          entityType: "performer" as const,
           avatar: {
             childImageSharp: {
               gatsbyImageData: {
                 layout: "fixed" as const,
-                backgroundColor: "#e8e8e8",
+                placeholder: {
+                  fallback:
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADwklEQVQ4y21USSj1URy9kZJSNqzsZKFkoViwkXqSeLKzILKxYEeSkhdFUViY53nMkHnOPD/zPGR+5lkoeufr/L7e+zbfrdv//d+9/3PP75zzu2p7extbW1tYX1/HysoKFhYWMDs7i83NTdTX10Or1SI8PBw5OTno6enB/v4+3t7ecHNzg7u7Ozw+PuL+/l6ez8/PUMfHxzg8PMTOzg42Njag1+vld0ZGBmxtbaGUMk8rKyu4uLigqKgIHAR+enrCy8uLTL6ri4sLnJ2d4ejoCHt7ezg5OUFzczMsLS0FxMLCAtbW1rCxsYG9vT3s7Ozkv+joaBgMBnx+fgrY6+vrX0BS58L5+TkuLy+FbXBwsHzk7OwsAAR3dHSEl5cXUlNT4enpKYeFhobi+/tbgAj4/v4O9fDwIBpcX1/j4+MDDQ0NsplgSUlJKCkpQUxMDLKystDf3y/6lpeXw8HBQVhPTEzAaDT+AyRdiknQr68vFBcXCyBZVFRUiEmUglVQjunpaTFHo9GIFH19faInAUlI8QcnQSnw7e0tXF1d4e3tjfb2dszNzYFJoLsEZhK6u7sRFBQkB4+MjPwfkExZ/s/PD6KiouDr64uOjg6JDwFNoIzX+Pi4rBNwfn5eviEh4igTGNkRkK7V1tbCz88PsbGxyM7OFiCWSu343tvbK/rGxcVJOigXK+PTrCHBGFS+T01NIT4+Hk1NTRLoxsZGLC8vo7OzE/n5+bLe1taGgYEB7O7uymQFlMTsMk+4uroS8VkGw8ug5+Xlobq62vwB40UdW1tbZR9dHhoakgQMDw9DEYhZZMDpIruEk0DcQIY0geAHBwcyx8bGUFdXJ6WzPWtqamTyEEVWp6enogV7miaYANPS0pCZmWkujesE7urqEmPIrLS0FFVVVSLP4OAgFFkRjBolJibKTE5ORnp6OnQ6nZhA7WjK5OSkBJuArGxxcREtLS2SS5a+trYGRQepS25uLpycnCSD7u7usonMqCXZUC8eSlZkyu5gNSyTkqyurkrrKpZC0JSUFPj4+MDNzQ1lZWXiOENNtnTVFJ2lpSVJBAHZ9zyAHUXWrFYY0jXmKiIiAoGBgSIBP2IeIyMjJX8EIzANZFY5qCd7nYDcy65RvLpGR0cREhKCgoICBAQEyGXw+/srp1InVkF3CWpqNQ5KUVhYKI5XVlZKNhXZsFz2JvVISEiAh4eH9DGBKDTzR+d5UVA33iocMzMzEno6bIqOYpYI5u/vLwxZQlhYmGhHOQhAUDrNJ294msXB252B5jvXCf4HXwTLhXVrJjUAAAAASUVORK5CYII=",
+                },
                 images: {
                   fallback: {
                     src: "/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5e3dc/peter-cushing.jpg",
@@ -164,16 +172,19 @@ export const data = {
           },
           browseMore: [
             {
+              slug: "a-chump-at-oxford-1939",
               imdbId: "tt0032339",
               title: "A Chump at Oxford",
               grade: "D+",
-              slug: "a-chump-at-oxford-1939",
               year: 1939,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#080808",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACVElEQVQoz01Tv0uCURR9ZlqSqfRbSyUaiop+EVQIChEmiiDikLRFZYRBLTUEDi4tQbREk/gHGI5CQWZbOBmBOAktgZuIgosnzgWjD973vXd/nHPfvedTNpsNFosFAwMDUErh4OAA39/fMJvN0Gg00Ol0GBwclNXf3y/n19dX1Go1dHMnJydlPzY2BmUymbCysoKdnR0x3t7eol6vw2q1QqvVQq/XY3R0FCMjI0JqMBjw8vICPpubm1IESRhHQsVgt9uNQCCA2dlZ5PN5tFotIWEyg5xOJ+x2OyYmJjA+Po7n52cBjJ+doaenR2zEoV/xtbu7C5/PJ8A/Pz9ot9vY398XAofDgcXFRczMzGB6elrAc7mcAKbTaSHa2NjA1tYWVldXoXjv7e1teL1enJycoNlsotPp4OLiAmtrawLEQIIuLCxgbm7uD/Dr60t8Ho8H0WhUilBDQ0NwuVwCeH5+jlKphM/PT1xfXyMUCmF4eFj6t7y8jKWlJWnF09PTH2AwGJR8grEIxSnNz88L+/HxMSqVCt7e3rC3tycARqMRfX19UuH6+rrEXV5e4v39HalUCn6/X1p1dHSEZDIJRXlw7Ax8fHxEsVjEx8cHTk9P5Sr09fb2CikBw+EwstksMpmMgN7d3Ulr4vE4EokEFPVF6XBShUIBDw8PaDQaODw8FDDKhxXy2pRRJBJBtVrF/f09yuUyrq6uRDocWCwWg6KGOHoap6amcHNz86cvCpvVUWM8c3HPatkSVkwbCfmllhWTusF0kKkL9t/Xtf2P7e75Q1DHHNwv25aSb+iyO9wAAAAASUVORK5CYII=",
+                    },
                     images: {
                       fallback: {
                         src: "/static/ad962d786f01a5675ee8b482c20121ae/ced04/a-chump-at-oxford-1939.jpg",
@@ -197,16 +208,19 @@ export const data = {
               },
             },
             {
+              slug: "the-man-in-the-iron-mask-1939",
               imdbId: "tt0031619",
               title: "The Man in the Iron Mask",
               grade: "C",
-              slug: "the-man-in-the-iron-mask-1939",
               year: 1939,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#080808",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACRElEQVQozzVTXS+CYRh+RmU5aMxH8xHKfBUpiSTN90cLDbXoQArT5EQcWFa25qRT8zOYzZk/5Gdcdl2bg3u9vc99X1/385qnpyc8Pj7i/PwcmUwG+/v72N7exsbGBorFIl5fX3V+cHAAn8+HeDyOUCiEiYkJTE9PY3Z2Fn6/H9FoVDPm/v4ehUIBx8fHODw8xNbWFpaWlhAMBjW4trYG9nx+furc6/UKYHR0VDUzMyMi9kYiEZi7uztcXl4il8upqGRnZ0e//f39UvTw8ICvry8VlQ0PD8Ptdov45ORERAsLCwI3V1dXKJVKsnx6eopYLIZUKoW3tzdZon2qr1ar+Pn50bvx8XGMjIxgcnJSvQQeGBjQsyFQIpFQkYUDBKjVasqEGV1cXKBer+Pj40PKV1dXZd3pdKKnpwd9fX1YXFwUqalUKjg6OsL6+rpy29vbw/LyslipltYajYaq2WwqK5fLhaGhIXg8HrS1tWFqagqBQEBLNWSm7f9FUBWz6+3thdVqFWA2m8XZ2Rmur6/hcDjQ2dkpJx0dHWhtbRU4QVdWVmAYODMkM0NlLvPz8xpob28X8ObmpizzNlgsFhhjYLfbYbPZ9Myi/bm5ORjetXQ6jXA4jLGxMWXGgP8bWXyfz+fx8vIicjohKZUxy5aWFvVRsUkmkwqalgjGBtpijsyzq6tL14SB//7+4vv7WxlSPRfx/v4uNwSUem759vZWoBwcHBxUwOVyGbu7u9r8/1fELG9ubtDd3S0Anj0/P+uu8j9J/gCwWoKA2cR/ZwAAAABJRU5ErkJggg==",
+                    },
                     images: {
                       fallback: {
                         src: "/static/72e1049a47f867a235658ede6890f3f4/ced04/the-man-in-the-iron-mask-1939.jpg",
@@ -230,16 +244,19 @@ export const data = {
               },
             },
             {
+              slug: "the-abominable-snowman-1957",
               imdbId: "tt0050095",
               title: "The Abominable Snowman",
               grade: "D+",
-              slug: "the-abominable-snowman-1957",
               year: 1957,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#d8d8d8",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACkUlEQVQozzWSyyu8cRTG3z+BbLAy2bhkNxaaZmHhkgXlspFLbqUUFi4TUaSR66TkntvCuJS7kEQmZuTOyAzGGCZl4W/4/Dqnfou39337nu9zPs85j3F6esrOzg4HBwfIt9vt5ujoiMvLS15eXnh6eiI/P5/x8XG+v7+5vb3l5ORE/1tbW6muriY3N5fU1FRqa2sxpOD8/Jzr62tubm54e3vTBna7ndfXVxYXF8nKyqKkpITp6Wk8Hg8bGxvMzMxQX19PU1MTQ0NDOJ1Onp+fMYTi7u4On8/H/f29Eo6MjFBeXk5dXR0Wi4W8vDwaGhrIyMjQ80AgoO/j42P29/fZ3NxkaWmJtbU1jPf3d4LBoKqLhba2Npqbm0lLS1Oy0tJStVVWVkZERASNjY18fHywt7fH8vKykgpAS0sLHR0dGCImsxHCiooKsrOzlSgmJoaUlBQKCwvJyckhMjKSzMxMFQmFQvj9fra2tnQ0NptNYbq6ujA+Pz91buFwmPn5eRUxmUzExcURHx9PUVER6enpREdH67zOzs4YHh5mampK7a6srDA5OUl/fz+9vb0YX19f2k2EDw8PSUpKIjk5WYWjoqJITEzEbDaTkJBAQUEBNTU1VFVV0dPTw8LCArOzsyoui5KZGkIm0fB6vVxcXGC1WtWuCBUXF2uxWJMLQiIuJFYul4vt7W09F7q+vj4VN35/f9WyPCIomYuNjaW9vZ2rqyuNieRTsre6ukp3d7daE4HBwUGtk0ajo6MqbMhC/s9wd3dXBSUeclkSIPRyLnkVMsnlxMQEc3NzutXKykqNV2dnp+bRkOKBgQHtOjY2plbk8t/fHz8/P/rIfCWvj4+PSry+vq4LEQBZigg7HA4eHh74B2K1X2BzmJtGAAAAAElFTkSuQmCC",
+                    },
                     images: {
                       fallback: {
                         src: "/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg",
@@ -263,16 +280,19 @@ export const data = {
               },
             },
             {
+              slug: "violent-playground-1958",
               imdbId: "tt0052367",
               title: "Violent Playground",
               grade: "B-",
-              slug: "violent-playground-1958",
               year: 1958,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#080808",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoklEQVQozz2TSSj1YRjF3wUyZrrYCBljoa55niJjobiZIveahyiZ0mdcCUmyQEhsvmuhpKTIsJCFjYV8VhbWygLZ/b6e56vv3bz/91/vOec557ymoqICT09PfH198ff3JzY2lpycHHp7e7Hb7URERFBfX8/W1hbn5+dsbm6ysLDA6uoqk5OT1NTU0NnZSV9fH4ODg5iAgAAF9PHx0d3Dw4OysjJubm6orq4mNDSUkZERNjY2WFxcpK2tjdraWtLS0khMTCQpKYn09HQyMzNpamrCxMXFERgYiLu7O5GRkczOzrK8vMzR0RENDQ309PQwOjrK3t4eJycnSiL/7+7uuL+/p7W1lby8PIqLixkaGsI0NjZSXl5OUFAQ3t7eOpKMJqAzMzMMDAzQ39+vYz48PHB4eMj0r2ne3t74/PxUVfn5+ara4XBghL20tBRjDF5eXrS0tOD87VR2+Rbm7e1txsbGODs74/T0lMLCQiX4+flhbm6O+Ph4BRZQMz4+TkpKCjExMbi6uhIcHKyGX19fU1VVhcPuUP92d3e5uLjg6uqK9fV19fXr64v9/X1WVlZYWloiNzcXU1JSQkJCAjs7OxwfH1NZWfn/QnR0NAUFBQwPD2ui8/PzCi7qpqam1EcheH9/V4+joqIwIlc8kpEkWVmvr690dXWp6uzsbLq7uzUcaYL41NzcrHcuLy/5+Pjg6emJlz8v/zysq6tTNdIl8UBAJWGpjsVioaioCKfTqWc/Pz/taVZWlibb3t6uU8l6fHzk+fkZ09HRofIFzGaz6VgCIBdcXFxwc3MjOTmZ8PBwQkJCtFoZGRmqPCwsTMsvpZdGfH9/Y+RFrK2tacsFdGJigoODA7VAXo6kL4UXtbILiNVqVd/F49TUVCWR0G5vb/kLNOnnjHBjo5cAAAAASUVORK5CYII=",
+                    },
                     images: {
                       fallback: {
                         src: "/static/43911ba31a9c763d3303839831f62556/ced04/violent-playground-1958.jpg",
@@ -304,11 +324,15 @@ export const data = {
         {
           name: "Hammer Films",
           slug: "hammer-films",
+          entityType: "collection" as const,
           avatar: {
             childImageSharp: {
               gatsbyImageData: {
                 layout: "fixed" as const,
-                backgroundColor: "#181818",
+                placeholder: {
+                  fallback:
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVQ4y+2SvUoEQRCE9xHEO8/drppxf+ZnF73cwMTIQDBVjATBMxBEDkWEC0QMBEETETTQ4DAw8BV8NXHWWxbNNDE4qKCp7m+giolA9WtFU/gPsLRmTpxmSCb6DjOsVYucJ5Pg9Eih0lSGOqPKWy9GSXCHYraQ7yDfR3EAM0AxQHEC+yLVJvIL2Gcpz+Eu4W7hD2HQwDnVnfgnKa/gHsSPpbyGuxf/KP5Nqhu4Map3WTyCOYN9leoUpkOqGrbUI7FrSEewG8hWka4j89R96BWkjnqZC9vId1Ecww5h9lDM1nCdZ4kaVDFVl+wExZ+x1VxI3iNnyG44EKp+OP4qTMJdUxVDT81Qm7pVZ/yz7enf/ufwB15WlS6gxriOAAAAAElFTkSuQmCC",
+                },
                 images: {
                   fallback: {
                     src: "/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg",
@@ -332,16 +356,19 @@ export const data = {
           },
           browseMore: [
             {
+              slug: "the-quatermass-xperiment-1955",
               imdbId: "tt0049646",
               title: "The Quatermass Xperiment",
               grade: "B-",
-              slug: "the-quatermass-xperiment-1955",
               year: 1955,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#080808",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCUlEQVQoz22SzUpqcRTFRdL8SNNSzKL8KDNR/BY1HQSORMlIRBEUlRwoDQWHDsKB2EACk16gJ+gZfB+HjlasfTneutwDi8P5n71/e/333qr9/X3odDro9fpfMhgM0Gg0uLy8RCAQgFqtxvn5OfL5PK6vr1GpVDAYDCTWaDTi4OBApFKA/0IJVMTkVColCWdnZ/D5fOh0Onh5eYFWq93BDg8P/w8khFUp/qejfr+PUqmEq6srJJNJPD09YbFYSJ7JZILZbIbdbv8L/Onq5xUYeHR0JK56vR6azabAxuMxXl9fcXx8LHEWi0XifgEVAK0zwGq14uTkBG63G7FYDMViEa1WC6PRCKvVCtPpFIlEQqBKvIowxZVimwBlGOFwGNlsFvf399K3arUqTtfrNTabDT4+PnBzcyOFd0BKATqdToRCIUSjURQKBTw+PqJcLuPh4QGTyQRvb2/odrv4/PwEn+12KwVogEZUvKrH45EqLpdLesXGU3RWr9dlPdLpNGq1Gt7f30XPz8+Yz+f4+vrCcrlEo9GQ4ak4ISZfXFzA7/eLK4rwTCaD29tbzGYz2T+HwyHuhsMhvF6vbIDNZsPd3d0uR4A85JUJ5aR4bS5xLpdDPB6XybL5/McettttBINB6dvp6akUjkQif4DsG6WMnodMZCv29vakv1xeFub0OUB+880cntMpxZxvI/5RAHeTQGIAAAAASUVORK5CYII=",
+                    },
                     images: {
                       fallback: {
                         src: "/static/28861d007b93206a8c7209a41d35620b/ced04/the-quatermass-xperiment-1955.jpg",
@@ -365,16 +392,19 @@ export const data = {
               },
             },
             {
+              slug: "x-the-unknown-1956",
               imdbId: "tt0049967",
               title: "X the Unknown",
               grade: "C+",
-              slug: "x-the-unknown-1956",
               year: 1956,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#080808",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQElEQVQozzWT3UqyQRSFBzwwwlBLzdRK08i0Qs3Eyt9KykpNQRI0JOnHKEHsAgRBEjwQpBPpTLyLurf1sfaHBwP6zp41z1p7j3p4eMDu7i6i0ShSqRQSiQR8Ph+Ojo7w8fGBy8tLpNNpXF1d4fz8HDc3Nzg5OYHf78f6+joKhQKGw6GcnU6nUI+Pj3C73YhEIvKRwjs7O7i/v8fb2xu2t7exvLwsNf1+H39/fzg7OxOIzc1NfH5+YjKZ4P39HbPZDKrRaMBmsyEQCEhhMBgU4XK5jFKpBJfLBbvdLvuj0QjPz884Pj7G/v6+CI7HY3x/f6PVauHn5wfq9fUVJpMJHo8H4XAYuVwOLy8vIDmJqtWq2CZ5vV5HLBYDIShqNBpxe3uLTqcj1geDwX/CxcVFGAwGEarVakLZbrfFNm+mLWZNQR7kb7rR6XRIJpNSk8/n0ev1oLLZLDQaDbxeL4rFItbW1mSRyOFwyOG7uzuhInWlUsH19bVkuLq6ikwmI/HQHffU4eEhlFLSFNpeWloSK1qtFlarFc1mU7q6t7cnB5klFyfBbDZLJF9fX5L309MTFEUoeHp6KgdZRPuMgSPCfCg8H5G5YCgUEsvsAclJTVrFTpFqa2tLFjvOJi0sLODi4kKK9Xq9CHS7XWkG3dAiu8+u//7+SpacCGWxWOQmUpFkZWVFFv9vbGzIzRz2+Tc6YLa8nHFxZknOPcIpZsGAOVekm1vmIDOCeDyOg4MDISIdXwvrSMfX43Q6xQFfDgH+AZA/exuL06cPAAAAAElFTkSuQmCC",
+                    },
                     images: {
                       fallback: {
                         src: "/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ced04/x-the-unknown-1956.jpg",
@@ -398,16 +428,19 @@ export const data = {
               },
             },
             {
+              slug: "quatermass-2-1957",
               imdbId: "tt0050873",
               title: "Quatermass 2",
               grade: "D+",
-              slug: "quatermass-2-1957",
               year: 1957,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#484848",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUUlEQVQozz1SSUuqYRT+Vi2ESlwUlWlBc2KkmWYDFIVm5ZhTJZpZagOVQy00TNoUltImCNy48xe4Ffxjz+U5l3sXH+c773nfZ+IoU1NT4GcwGDAzM4Pp6WmYTCasr6/L2dDQECYnJ7G4uAi73Y6dnR04HA64XC5sbGzIudlsxurqKhYWFqCMjIygr68Pw8PDGBgYgFqtFsC1tTUYjUYMDg5idHQUExMT0Ov1WFlZEaDl5WVoNBrMzc0hGo3i7OxMiBSy9/f3Q6vVQqfTQaVSwWq1Cij7sbEx7O3t4fz8HLOzs1haWpJ+d3dXSNgfHR3B6/Vie3sbChk4YKUiqqE6WhgfH0cwGESpVMLX1xdubm7EMgEODw+FlNaTySSurq7g8Xig+Hw+PD4+Ip1OIxaLoVgsSuWFl5cXASHgx8cHfn9/8f39jVqtJgSfn5+oVCq4u7tDPp8XIiWbzaJareLn5wflchnv7+9oNBqo1+tIJBLY398XwufnZwHtdrvodDpot9vo9XpoNpu4vb3F/f09Tk5OoPByOBzG9fW1qKFSKkulUpIJ+0KhICr9fr8oa7Va/9VSDF09PDz8BaR/MhwfHwvw6empDNgzH85yuZx8/4hfX1/x9vYmlYAUcnl5KVlKhrz49PSEeDwOp9MpgQcCAakMmitCIs75mKAEYGahUEjI2dOtwgNaZEbMa2trS6wSjD1Vzs/PCykBM5kMIpGI7N7m5qa44T8FUa1is9ngdrvFAlVZLBZZmYODA1HLyjkf8TH3kcr4T2JuBHO+uLiQHP8A7je2KJzi/6oAAAAASUVORK5CYII=",
+                    },
                     images: {
                       fallback: {
                         src: "/static/6f63e41ae0c98ead43616222c68d4177/ced04/quatermass-2-1957.jpg",
@@ -431,16 +464,19 @@ export const data = {
               },
             },
             {
+              slug: "the-abominable-snowman-1957",
               imdbId: "tt0050095",
               title: "The Abominable Snowman",
               grade: "D+",
-              slug: "the-abominable-snowman-1957",
               year: 1957,
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
-                    backgroundColor: "#d8d8d8",
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACkUlEQVQozzWSyyu8cRTG3z+BbLAy2bhkNxaaZmHhkgXlspFLbqUUFi4TUaSR66TkntvCuJS7kEQmZuTOyAzGGCZl4W/4/Dqnfou39337nu9zPs85j3F6esrOzg4HBwfIt9vt5ujoiMvLS15eXnh6eiI/P5/x8XG+v7+5vb3l5ORE/1tbW6muriY3N5fU1FRqa2sxpOD8/Jzr62tubm54e3vTBna7ndfXVxYXF8nKyqKkpITp6Wk8Hg8bGxvMzMxQX19PU1MTQ0NDOJ1Onp+fMYTi7u4On8/H/f29Eo6MjFBeXk5dXR0Wi4W8vDwaGhrIyMjQ80AgoO/j42P29/fZ3NxkaWmJtbU1jPf3d4LBoKqLhba2Npqbm0lLS1Oy0tJStVVWVkZERASNjY18fHywt7fH8vKykgpAS0sLHR0dGCImsxHCiooKsrOzlSgmJoaUlBQKCwvJyckhMjKSzMxMFQmFQvj9fra2tnQ0NptNYbq6ujA+Pz91buFwmPn5eRUxmUzExcURHx9PUVER6enpREdH67zOzs4YHh5mampK7a6srDA5OUl/fz+9vb0YX19f2k2EDw8PSUpKIjk5WYWjoqJITEzEbDaTkJBAQUEBNTU1VFVV0dPTw8LCArOzsyoui5KZGkIm0fB6vVxcXGC1WtWuCBUXF2uxWJMLQiIuJFYul4vt7W09F7q+vj4VN35/f9WyPCIomYuNjaW9vZ2rqyuNieRTsre6ukp3d7daE4HBwUGtk0ajo6MqbMhC/s9wd3dXBSUeclkSIPRyLnkVMsnlxMQEc3NzutXKykqNV2dnp+bRkOKBgQHtOjY2plbk8t/fHz8/P/rIfCWvj4+PSry+vq4LEQBZigg7HA4eHh74B2K1X2BzmJtGAAAAAElFTkSuQmCC",
+                    },
                     images: {
                       fallback: {
                         src: "/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg",
@@ -478,7 +514,10 @@ export const data = {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
-              backgroundColor: "#080808",
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnklEQVQoz02SyU9UWRSHz733vcerV3M9qCoESpBiEEQFirEJNAgljgXpVrAMUUhQpBN64dANEXogaXrRYQOJiWlNHOKml71w4X9g4t/0mVdVJixOTs7ifvl+9xyJGUXUKDytiGqh0JWlNNnN5dE8xeF2Cp0ZOk4lWJg8y9J0L422JqEVvlaVHq+8qzGMQqKWIqhgiGlhpLuR0lQ3V8c76G1J4FtCzrNIiZBSQtbWFWgATJoqNIBFgrIUkrAV8QAYgI0wW2hjbWGIYiFHgxIWehp4PNtOR8QiFzJkHE2bZ6pQo0hZilhNKmorxHcUSUdX6GEt3JjoYufBPIsjzXSGhc2pVp7Nd9GTsMm5irStyUcMp+sMKa1IBZZW1TCAStIOgFVdV4QfL/Xx1883KX+X5VK7x+HyINc7fKbaXAbSNs2OJh81dMVtMrX/jJ+MnLSqkYPBqQDP83Rlku/zHmPNHh82Z9gab2NlqJ7JVo8+32aoqY7RXIgm15CsAb/tQnxXUx/SRIzGiFC+Osj26gyzPSnOJYX1iXaOlkco9SYpdnr0ZxzGciEmzoTJOrqy5YQ5EbmlXtOU0NR7Gs8ID27P8P6fRzxeHmb8tEOLK+wtDvBH6Rw/nI9X7C5mHPqbo6RDDmElxPSJyLmYIe1qTiUMjUlh616R/1//xtHuPaY7o8z0pvnpxgDvtm+xXR5nc6HAylwf6zcLXBnO09eUqpxbuGYp2bBNtk6RDRl8V/jzSZkvn97w6mCDp3dG+e9wk9f7q7x4Xubol1vsrM1xvLPM7vo8d4oXuTbSje9YeCJEVGDYavA9TcrWWCLsbZX5/PElr/bv8/bvVY6f3+XtwRr//n6X+9cG2Vgc5fjXJfYezrM0d4HSxFkaXIeQCGGt+Aojmj3dV2BncQAAAABJRU5ErkJggg==",
+              },
               images: {
                 fallback: {
                   src: "/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ced04/cult-of-chucky-2017.jpg",
@@ -511,7 +550,10 @@ export const data = {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
-              backgroundColor: "#080808",
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACwUlEQVQoz0WQWW8bVQBG78TjZebOdmc89ow9jms7jjec1thOnTROIUmTKCXNwkPSCgGKQlkeEAIEFcsDqKhiESo8REVCfQCBVCR+Rn/XQbEq8fC9Hp3ziVG3zKRfYfValfVhnVfHdfoLRULX4GozYqUTUSta9KsuW8OEXi1EuZK8snBtg6ioKPg2obLwHQNxJVZUI0Wl4FKLPMa9hMFCgUE95Oz2Mkev9OjVQ1oVjxv9iGY1j3IMAtfEcwzm52PCwMHOpvBdA7G5XONyG8MKd9Ya3L3VZ2+5yaf3bvP3w084vtmnV3FolxxGiaRbsvFcOTNSnqTeqFAIFemUICoGiHrsUCva1CObxbLLwVqHw0mfD/Zv8ej8DdqxTzu02Lza4P3XbnA+bdGLHZQjZ6bz1TJK2WhCYMssYqUXsjFK2Js2Odhos7vaYNKucLYzZdSYJ8imGNRijtcH/P7FORcfnrBT94iUhZnVSUoFimGAkdEpBC7ij++2ePbzPn/9csKPD7YZLJYpKYeXajGhY5Aoye6wxfnuCg/vn/L4vSPudjy6iY9j5WbpeU/OPg19G/Hs8SH//HrIvxevc7rbx9RtXFOizBwF5ZI3s1xfLPPo3WOeP/maH872ub+kWF0okMumcWUGR2awzSyulUP8+f0Ov327zZNvthi1YoTQmRMaUgYU8wmOKtIMFV++fcLFR29yMzL5eFLiWjVA0zTSc3M4ho6RTZFKzSHWl68wWkroLsYoyySTNrB9hQwSfL9MqT0lLSOGK+tMp2ucLOR4ZxQR+zYZPYWuabP/9EuYEIi46JJXknxgE1uSWr6AtD1k2qDs+2yPxxxsbjB5eY2v7pzy2XKLpbI9S7wEzSAvdmksbFPHMnU8maZT6VCzFEJo1KMK17tN9sZLPH/6Ew/eusfh6JSjo88JPBPbyJB7AdS0/6H/Ae7hPu3AfebNAAAAAElFTkSuQmCC",
+              },
               images: {
                 fallback: {
                   src: "/static/bb69a5da74a51e571c086d75b8bd4459/ced04/curse-of-chucky-2013.jpg",
@@ -544,7 +586,10 @@ export const data = {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
-              backgroundColor: "#181818",
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZklEQVQozz1S20qyURD9HsCKSIsipcKQyiBLiRAxJKJAs7JCCS/EJNGOIEhS3WSmHREKT1SEmUKQeN0zdNErRHfiM6yfNT90MXyzvz17zZpZS/n8/MTZ2RkymQwuLi5QqVTw/v6O09NT3NzcyPnl5QWvr68oFovI5/MoFAqSl0olHB8f4+7uDufn50gkElC+v79xfX2NXC6Hh4cHNBoNXF1dYWZmRprUajUBe3t7kyYEYEPW8e7y8lLuCE5g5ff3F/f396hWq3h6ekIgEMDGxoaAsYDBBuFwGPv7+8IiFovh4OAA8Xgcfr8fe3t7ODw8RDQahdJsNgX94+MDHo8HGo0Gw8PD8Pl8ApRMJv/WcXR0hFAoJCCLi4vwer3ydblc2NzclK/SarVQLpdlL0ajEVqtVgDNZjNOTk6QTqdlHdlsVs4E3N3dxdLSkuTr6+uYnp4W4Pn5+f8Mn5+f8fj4iNHRUeh0OoyMjEgeDAaRSqVkDWS4trYGvV4Pp9OJ5eVlOXMSsiPrSCQC5efnR8TgeAaDAT09PRgYGBBQsuDIfMDiqakpjI+PY3t7W5gNDQ1JTuZbW1viFuXr6wu3t7fyoLe3VwAZg4ODsNlssniOY7FY4HA4JDgqRSJLu92OhYUFuSdbpV6vix34k4L09/eju7sbnZ2dWF1dxcrKiuyUDchwcnJS9ktAWojCjI2NSVitVig0LtlNTEwIYF9fnwB2dHSISOw8OzsrI5KNyWSS2rm5ORGMtuJErG9vb4dCU9Mu3EdXV5dcqtVqtLW1QaVSYWdnRwTjFBTJ7XYLKI3PCegAepM5RfoHCA3eRQAVq4YAAAAASUVORK5CYII=",
+              },
               images: {
                 fallback: {
                   src: "/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ced04/curse-of-the-demon-1957.jpg",
@@ -577,7 +622,10 @@ export const data = {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
-              backgroundColor: "#080808",
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1ElEQVQozyXD+08aBwDA8VNRsQquApX3o4e74w6Ux3EHB8fLA4VSCwNk6UO0zLm01WRtXMzsYrb+0GRNmv26Zen+1O+S7ZN8hMb5B+yrz5SfvsMTiLDuuoeYr5I9GFE/u2Hw/m8GP//J6O4fxndfmNx9YXT7F4/ffab75iPti19pzd9TP73BenGN0Pz+N9qXn0jkqjidy/9dW10iHI+jD17Se/sHh1ef/n/5OwevP2JffKD53R3N+S80Xt5Sm91QfX5NefojgjW7oXF2y6bHi3NJQAwFCAX9JCUZuWKT7Ywp9GeYk1dY0ze0Zte0Zj9hfXtFZfwKa3xBsX+C1j9DH/yAYExeo08vCURiKLJEqWigl6qIYpK9/SNy7SPKwxOM/lMK9hDjYIjRm2I+eUbOfkL+8BhzcEJtPKcyOkfY7Z5SPprx6HhGp/uYTFpBURXkvE5p8BxzdIo5mmNOztGsfaSHUcIBH3vVBoXDIdrhN1jjOdXJnEJ3jDC060ytND1rD900STwMs5fPoxh1JL1OTEqTzFUoPnpGs96kuCsT2lohGvah1mx2611Us4NSbpOpHSAcKW7a0jpt9T7FVACP10djv4dZsxFzOlJeI6HmyDZ77FsVNDWB6HcT2L6PXGqhWh2UagepbCMWmwi12DKGX6CWWKWueEnGo+R20xQLGrlai2ypQlk30Bpt0kqKjOhFDHxFILiB2i6hmPukzBZSqY5YqCCYIQeFLYHS9gIN2YWqSMQjQcR4kJicxheKoRgVxKxBPJdGjLgJuhzI1jb1t1mStQSBnTRBeZdQKo9gPFgk6xbQPAJVcQ2/x8XyygoutxvHsgPnxjo7BYuMXSXVCvPAu0xwe4XsKEHxhYTc3ySWV4mmdSIZDUHzLJDZWEDbEtCi9/BuuhAEgaXFBRyORRzOVTw+PxlbJKq5CMTWiOy4yR3H+Lq1gT+zQjS7RyRdJKTm+ReU8Wl/MV4n7QAAAABJRU5ErkJggg==",
+              },
               images: {
                 fallback: {
                   src: "/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ced04/dagon-2001.jpg",
