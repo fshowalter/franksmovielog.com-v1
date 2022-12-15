@@ -1,71 +1,72 @@
-import type { GatsbyNodeContext } from "../schema/type-definitions";
+import { SchemaNames } from "../createSchemaCustomization/schemaNames";
+import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
 export const allTimeStatsQuery = {
   Query: {
     allTimeStats: {
-      type: "AllTimeStats!",
+      type: `${SchemaNames.AllTimeStats}!`,
       resolve: async (
         _source: unknown,
         _args: unknown,
         context: GatsbyNodeContext
       ) => {
         const viewingStats = await context.nodeModel.findOne({
-          type: "ViewingStatsJson",
+          type: SchemaNames.ViewingStatsJson,
           query: {
-            filter: { viewing_year: { eq: "all" } },
+            filter: { viewingYear: { eq: "all" } },
           },
         });
 
         const reviewStats = await context.nodeModel.findOne({
-          type: "ReviewStatsJson",
+          type: SchemaNames.ReviewStatsJson,
           query: {
-            filter: { review_year: { eq: "all" } },
+            filter: { reviewYear: { eq: "all" } },
           },
         });
 
         const decadeStats = await context.nodeModel.findOne({
-          type: "ViewingCountsForDecadesJson",
+          type: SchemaNames.ViewingCountsForDecadesJson,
           query: {
-            filter: { viewing_year: { eq: "all" } },
+            filter: { viewingYear: { eq: "all" } },
           },
         });
 
         const { entries: gradeDistributions } = await context.nodeModel.findAll(
           {
-            type: "GradeDistributionsJson",
+            type: SchemaNames.GradeDistributionsJson,
           }
         );
 
         const mostWatchedMedia = await context.nodeModel.findOne({
-          type: "TopMediaJson",
+          type: SchemaNames.TopMediaJson,
           query: {
-            filter: { viewing_year: { eq: "all" } },
+            filter: { viewingYear: { eq: "all" } },
           },
         });
 
         const movies = await context.nodeModel.findOne({
-          type: "MostWatchedMoviesJson",
+          type: SchemaNames.MostWatchedMoviesJson,
           query: {
             filter: { viewingYear: { eq: "all" } },
           },
         });
 
         const directors = await context.nodeModel.findOne({
-          type: "MostWatchedDirectorsJson",
+          type: SchemaNames.MostWatchedDirectorsJson,
           query: {
             filter: { viewingYear: { eq: "all" } },
           },
         });
 
         const performers = await context.nodeModel.findOne({
-          type: "MostWatchedPerformersJson",
+          type: SchemaNames.MostWatchedPerformersJson,
           query: {
             filter: { viewingYear: { eq: "all" } },
           },
         });
 
         const writers = await context.nodeModel.findOne({
-          type: "MostWatchedWritersJson",
+          type: SchemaNames.MostWatchedWritersJson,
           query: {
             filter: { viewingYear: { eq: "all" } },
           },

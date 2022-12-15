@@ -19,9 +19,9 @@ export default async function createStatPages({
   const queryResult = await graphql<QueryResult>(
     `
       {
-        viewing: allViewingStatsJson(filter: { viewing_year: { ne: "all" } }) {
+        viewing: allViewingStatsJson(filter: { viewingYear: { ne: "all" } }) {
           nodes {
-            year: viewing_year
+            year: viewingYear
           }
         }
       }

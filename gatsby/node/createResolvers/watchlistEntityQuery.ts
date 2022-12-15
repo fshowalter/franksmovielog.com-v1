@@ -1,9 +1,10 @@
-import type { GatsbyNodeContext } from "../schema/type-definitions";
+import { SchemaNames } from "../createSchemaCustomization/schemaNames";
+import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
 export const watchlistEntityQuery = {
   Query: {
     watchlistEntity: {
-      type: "WatchlistEntitiesJson!",
+      type: `${SchemaNames.WatchlistEntitiesJson}!`,
       args: {
         entityType: "String!",
         slug: "String!",
@@ -17,7 +18,7 @@ export const watchlistEntityQuery = {
         context: GatsbyNodeContext
       ) => {
         return context.nodeModel.findOne({
-          type: "WatchlistEntitiesJson",
+          type: SchemaNames.WatchlistEntitiesJson,
           query: {
             filter: {
               entityType: { eq: args.entityType },

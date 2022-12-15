@@ -72,7 +72,7 @@ export const pageQuery = graphql`
     }
 
     viewing: allViewingStatsJson {
-      years: distinct(field: { viewing_year: SELECT })
+      years: distinct(field: { viewingYear: SELECT })
     }
   }
 `;

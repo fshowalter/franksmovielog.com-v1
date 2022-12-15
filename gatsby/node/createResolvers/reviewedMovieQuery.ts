@@ -1,9 +1,10 @@
-import type { GatsbyNodeContext } from "../schema/type-definitions";
+import { SchemaNames } from "../createSchemaCustomization/schemaNames";
+import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
 export const reviewedMovieQuery = {
   Query: {
     reviewedMovie: {
-      type: "ReviewedMoviesJson!",
+      type: `${SchemaNames.ReviewedMoviesJson}!`,
       args: {
         id: "String!",
       },

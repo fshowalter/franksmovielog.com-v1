@@ -1,9 +1,10 @@
-import type { GatsbyNodeContext } from "../schema/type-definitions";
+import { SchemaNames } from "../createSchemaCustomization/schemaNames";
+import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
 export const statsForYearQuery = {
   Query: {
     statsForYear: {
-      type: "StatsForYear!",
+      type: `${SchemaNames.StatsForYear}!`,
       args: {
         year: "String!",
       },
@@ -13,49 +14,49 @@ export const statsForYearQuery = {
         context: GatsbyNodeContext
       ) => {
         const viewingStats = await context.nodeModel.findOne({
-          type: "ViewingStatsJson",
+          type: SchemaNames.ViewingStatsJson,
           query: {
-            filter: { viewing_year: { eq: args.year } },
+            filter: { viewingYear: { eq: args.year } },
           },
         });
 
         const decadeStats = await context.nodeModel.findOne({
-          type: "ViewingCountsForDecadesJson",
+          type: SchemaNames.ViewingCountsForDecadesJson,
           query: {
-            filter: { viewing_year: { eq: args.year } },
+            filter: { viewingYear: { eq: args.year } },
           },
         });
 
         const mostWatchedMedia = await context.nodeModel.findOne({
-          type: "TopMediaJson",
+          type: SchemaNames.TopMediaJson,
           query: {
-            filter: { viewing_year: { eq: args.year } },
+            filter: { viewingYear: { eq: args.year } },
           },
         });
 
         const movies = await context.nodeModel.findOne({
-          type: "MostWatchedMoviesJson",
+          type: SchemaNames.MostWatchedMoviesJson,
           query: {
             filter: { viewingYear: { eq: args.year } },
           },
         });
 
         const directors = await context.nodeModel.findOne({
-          type: "MostWatchedDirectorsJson",
+          type: SchemaNames.MostWatchedDirectorsJson,
           query: {
             filter: { viewingYear: { eq: args.year } },
           },
         });
 
         const performers = await context.nodeModel.findOne({
-          type: "MostWatchedPerformersJson",
+          type: SchemaNames.MostWatchedPerformersJson,
           query: {
             filter: { viewingYear: { eq: args.year } },
           },
         });
 
         const writers = await context.nodeModel.findOne({
-          type: "MostWatchedWritersJson",
+          type: SchemaNames.MostWatchedWritersJson,
           query: {
             filter: { viewingYear: { eq: args.year } },
           },

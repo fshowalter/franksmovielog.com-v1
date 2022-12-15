@@ -1,13 +1,14 @@
-import type { GatsbyNodeContext } from "../schema/type-definitions";
+import { SchemaNames } from "../createSchemaCustomization/schemaNames";
+import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
 export const viewingsWithReviewQuery = {
   Query: {
     viewingsWithReviews: {
-      type: `[ViewingWithReview!]!`,
+      type: `[${SchemaNames.ViewingWithReview}!]!`,
       args: {
         limit: "Int",
         skip: "Int",
-        sort: "ViewingWithReviewSortInput",
+        sort: `${SchemaNames.ViewingWithReview}SortInput`,
       },
       resolve: async (
         _source: unknown,
@@ -26,7 +27,7 @@ export const viewingsWithReviewQuery = {
         const { fields = ["sequence"], order = ["DESC"] } = sort ?? {};
 
         const { entries } = await context.nodeModel.findAll({
-          type: "ViewingsJson",
+          type: SchemaNames.ViewingsJson,
           query: {
             filter: { reviewedMovie: { id: { ne: null } } },
             limit: limit,

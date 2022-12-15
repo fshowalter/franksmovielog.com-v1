@@ -58,7 +58,7 @@ export const query = graphql`
   fragment ByDecade on ViewingCountsForDecadesJson {
     stats {
       decade
-      viewingCount: viewing_count
+      viewingCount: viewingCount
     }
   }
 `;

@@ -76,7 +76,7 @@ export const query = graphql`
           layout: CONSTRAINED
           formats: [JPG, AVIF]
           quality: 80
-          placeholder: TRACED_SVG
+          placeholder: BLURRED
           width: 248
         )
       }

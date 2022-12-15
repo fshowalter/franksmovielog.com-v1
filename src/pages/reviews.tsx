@@ -81,7 +81,7 @@ export default function ReviewsIndexPage({
 
 export const pageQuery = graphql`
   query ReviewsIndexPage {
-    reviews: reviewStatsJson(review_year: { eq: "all" }) {
+    reviews: reviewStatsJson(reviewYear: { eq: "all" }) {
       totalCount: reviewsCreated
     }
     viewing: allViewingsJson(sort: { sequence: DESC }) {

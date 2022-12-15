@@ -58,7 +58,7 @@ export const query = graphql`
   fragment TopMedia on TopMediaJson {
     stats {
       name
-      viewingCount: viewing_count
+      viewingCount: viewingCount
     }
   }
 `;

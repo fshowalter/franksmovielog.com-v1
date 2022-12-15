@@ -78,7 +78,7 @@ function MovieList({
         display="block"
         textAlign="center"
         className={seeAllLinkGridStyle}
-        paddingY={{ default: 16, tablet: 24 }}
+        paddingY={{ default: 16, tablet: 24, desktop: 32 }}
         boxShadow={{ default: "borderBottom", tablet: "unset" }}
       >
         <Link

@@ -8,8 +8,5 @@
 
 export { createPages } from "./gatsby/node/createPages";
 export { createResolvers } from "./gatsby/node/createResolvers";
-import { createSchemaCustomization as CreateSchemaCustomization } from "./gatsby/node/createSchemaCustomization";
-import { createWebpackConfig } from "./gatsby/node/createWebpackConfig";
-
-export const createSchemaCustomization = CreateSchemaCustomization;
-export const onCreateWebpackConfig = createWebpackConfig;
+export { createSchemaCustomization } from "./gatsby/node/createSchemaCustomization";
+export { onCreateWebpackConfig } from "./gatsby/node/onCreateWebpackConfig";
