@@ -1,5 +1,5 @@
 import { minMediaQuery } from "./breakpoints";
-import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
+import { backgroundColors, foregroundColors } from "./colors.css";
 import { relativeSize, size } from "./sizes.css";
 import {
   fontSizes,
@@ -131,14 +131,6 @@ export const atomicProperties = {
   lineHeight: lineHeights,
   letterSpacing: letterSpacing,
   textDecoration: ["none"],
-  boxShadow: {
-    borderBottom: {
-      boxShadow: `0px 1px ${borderColors.default}`,
-    },
-    borderAll: {
-      boxShadow: `0 0 0 1px ${borderColors.default}`,
-    },
-  },
   border: [0],
   backgroundImage: {
     ripNotComingSoon: {

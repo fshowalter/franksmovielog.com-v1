@@ -1,17 +1,28 @@
-import { style, styleVariants } from "@vanilla-extract/css";
+import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { backgroundColors } from "../../styles/colors.css";
-import { popoutGutterWidth, QUAD_POSTER, size } from "../../styles/sizes.css";
-import { gridTemplate, SPACER } from "../../utils/gridTemplate";
+import {
+  MAX_POSTER_WIDTH,
+  popoutGutterWidth,
+  size,
+} from "../../styles/sizes.css";
 
 export const avatarStyle = style({
-  borderRadius: "50%",
-  display: "block !important",
-  height: "40px",
-  marginRight: "1ch",
-  transform: "translateZ(0)", // Fix Safari border-radius with hidden overflow.
-  width: "40px",
-  overflow: "hidden",
+  display: "none",
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      borderRadius: "50%",
+      display: "block !important",
+      height: "40px",
+      marginRight: "1ch",
+      transform: "translateZ(0)", // Fix Safari border-radius with hidden overflow.
+      width: "40px",
+      overflow: "hidden",
+    },
+  },
+});
+
+export const seeAllLinkGridStyle = style({
+  gridColumn: "1 / -1",
 });
 
 export const movieListStyle = style({
@@ -24,49 +35,10 @@ export const movieListStyle = style({
       columnGap: size[32],
     },
     [minMediaQuery("desktop")]: {
-      maxWidth: QUAD_POSTER,
+      maxWidth: `calc((${MAX_POSTER_WIDTH} * 4) + (${size[32]} * 3) + (${size[32]} * 2))`,
       display: "grid",
       gridTemplateColumns: "repeat(4,1fr)",
       columnGap: size[32],
     },
   },
 });
-
-export const gridStyle = style({
-  display: "grid",
-  ...gridTemplate<GridAreas, 1>({
-    rows: [["heading"], ["list"]],
-    columns: ["auto"],
-  }),
-  "@media": {
-    [minMediaQuery("tablet")]: {
-      ...gridTemplate<GridAreas, 1>({
-        rows: [
-          { [size[8]]: SPACER },
-          ["heading"],
-          { [size[8]]: SPACER },
-          ["list"],
-        ],
-        columns: ["auto"],
-      }),
-      selectors: {
-        "&:nth-child(even)": {
-          backgroundColor: backgroundColors.subtle,
-        },
-      },
-    },
-  },
-});
-
-const gridAreaStyles = {
-  heading: {
-    gridArea: "heading",
-  },
-  list: {
-    gridArea: "list",
-  },
-};
-
-export type GridAreas = "heading" | "list";
-
-export const gridAreas = styleVariants(gridAreaStyles);

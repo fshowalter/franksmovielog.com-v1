@@ -9,16 +9,16 @@ exports[`/reviews/{slug} renders 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3t sprinkles_minHeight_16_default__8lcvdkao sprinkles_width_full_default__8lcvdknu"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3r sprinkles_minHeight_16_default__8lcvdkav sprinkles_width_full_default__8lcvdko4"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk2 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk2 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_paddingTop_24_default__8lcvdkjf sprinkles_paddingTop_32_desktop__8lcvdkjk sprinkles_paddingBottom_24_default__8lcvdkex sprinkles_paddingBottom_32_desktop__8lcvdkf2 sprinkles_display_flex_default__8lcvdk5i sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_boxShadow_borderBottom__8lcvdk3q sprinkles_backgroundColor_default__8lcvdk2"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_paddingTop_24_default__8lcvdkjp sprinkles_paddingTop_32_desktop__8lcvdkju sprinkles_paddingBottom_24_default__8lcvdkf7 sprinkles_paddingBottom_32_desktop__8lcvdkfc sprinkles_display_flex_default__8lcvdk5p sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_backgroundColor_default__8lcvdk2"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_alignItems_inherit__8lcvdk1w sprinkles_justifyItems_inherit__8lcvdk1u"
+        class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_alignItems_inherit__8lcvdk1w sprinkles_justifyItems_inherit__8lcvdk1u"
       >
         <h1
           class="sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_fontWeight_normal__8lcvdk2b sprinkles_fontSize_logo__8lcvdk39"
@@ -31,7 +31,7 @@ exports[`/reviews/{slug} renders 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdkw sprinkles_fontStyle_italic__8lcvdk1s sprinkles_lineHeight_16__8lcvdk3f sprinkles_width_full_default__8lcvdknu sprinkles_fontSize_small__8lcvdk2o"
+          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdkw sprinkles_fontStyle_italic__8lcvdk1s sprinkles_lineHeight_16__8lcvdk3f sprinkles_width_full_default__8lcvdko4 sprinkles_fontSize_small__8lcvdk2o"
         >
           My life at the movies.
         </p>
@@ -39,12 +39,12 @@ exports[`/reviews/{slug} renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll__8lcvdk3r sprinkles_borderRadius_4__8lcvdka sprinkles_overflow_hidden__8lcvdk1o sprinkles_width_full_default__8lcvdknu sprinkles_width_unset_desktop__8lcvdknh sprinkles_maxWidth_prose_default__8lcvdk9x"
+        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll_default__8lcvdk4v sprinkles_borderRadius_4__8lcvdka sprinkles_overflow_hidden__8lcvdk1o sprinkles_width_full_default__8lcvdko4 sprinkles_width_unset_desktop__8lcvdknr sprinkles_maxWidth_prose_default__8lcvdka4"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk5i sprinkles_overflow_hidden__8lcvdk1o"
+          class="sprinkles_display_flex_default__8lcvdk5p sprinkles_overflow_hidden__8lcvdk1o"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/reviews/{slug} renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdkfl sprinkles_paddingRight_16_default__8lcvdkhi sprinkles_paddingTop_8_default__8lcvdkj9 sprinkles_paddingBottom_8_default__8lcvdkeu sprinkles_backgroundColor_subtle__8lcvdk4 sprinkles_color_default__8lcvdkv sprinkles_fontSize_normal__8lcvdk2p sprinkles_fontWeight_light__8lcvdk2a sprinkles_lineHeight_24__8lcvdk3g sprinkles_flexGrow_1__8lcvdk1q"
+            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdkfv sprinkles_paddingRight_16_default__8lcvdkhs sprinkles_paddingTop_8_default__8lcvdkjj sprinkles_paddingBottom_8_default__8lcvdkf1 sprinkles_backgroundColor_subtle__8lcvdk4 sprinkles_color_default__8lcvdkv sprinkles_fontSize_normal__8lcvdk2p sprinkles_fontWeight_light__8lcvdk2a sprinkles_lineHeight_24__8lcvdk3g sprinkles_flexGrow_1__8lcvdk1q"
             id="search"
             name="q"
             placeholder="Search..."
@@ -93,10 +93,10 @@ exports[`/reviews/{slug} renders 1`] = `
         class="sprinkles_color_accent__8lcvdku"
       >
         <ul
-          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3y sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk4x sprinkles_columnGap_24_tablet__8lcvdk51"
+          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3w sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk54 sprinkles_columnGap_24_tablet__8lcvdk58"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -106,7 +106,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -116,7 +116,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -126,7 +126,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -136,7 +136,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -146,7 +146,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -162,14 +162,14 @@ exports[`/reviews/{slug} renders 1`] = `
       class="sprinkles_flexGrow_1__8lcvdk1q"
     >
       <main
-        class="sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_alignItems_center__8lcvdk1v"
+        class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_alignItems_center__8lcvdk1v"
         id="top"
       >
         <header
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_paddingTop_24_default__8lcvdkjf sprinkles_paddingTop_32_desktop__8lcvdkjk sprinkles_paddingBottom_24_default__8lcvdkex sprinkles_paddingBottom_32_desktop__8lcvdkf2 sprinkles_textAlign_center__8lcvdk42 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_rowGap_16__8lcvdk21"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_paddingTop_24_default__8lcvdkjp sprinkles_paddingTop_32_desktop__8lcvdkju sprinkles_paddingBottom_24_default__8lcvdkf7 sprinkles_paddingBottom_32_desktop__8lcvdkfc sprinkles_textAlign_center__8lcvdk40 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_rowGap_16__8lcvdk21"
         >
           <div
-            class="sprinkles_textAlign_inherit__8lcvdk43"
+            class="sprinkles_textAlign_inherit__8lcvdk41"
           >
             <h1
               class="sprinkles_fontSize_pageTitle__8lcvdk3b"
@@ -253,13 +253,13 @@ exports[`/reviews/{slug} renders 1`] = `
           </script>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdknr sprinkles_height_24_default__8lcvdk6c sprinkles_height_32_tablet__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_24_default__8lcvdkar sprinkles_minHeight_32_tablet__8lcvdkav sprinkles_display_block_default__8lcvdk5c"
+          class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_24_default__8lcvdk6j sprinkles_height_32_tablet__8lcvdk6n sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_24_default__8lcvdkay sprinkles_minHeight_32_tablet__8lcvdkb2 sprinkles_display_block_default__8lcvdk5j"
         />
         <div
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_rowGap_32__8lcvdk23 sprinkles_alignItems_center__8lcvdk1v"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_rowGap_32__8lcvdk23 sprinkles_alignItems_center__8lcvdk1v"
         >
           <div
-            class="sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_alignItems_inherit__8lcvdk1w"
+            class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_alignItems_inherit__8lcvdk1w"
           >
             <img
               alt="A: 5 stars (out of 5)"
@@ -267,7 +267,7 @@ exports[`/reviews/{slug} renders 1`] = `
               style="height: 32px; width: 160px;"
             />
             <div
-              class="sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_color_subtle__8lcvdky sprinkles_alignItems_inherit__8lcvdk1w sprinkles_letterSpacing_0.5__8lcvdk3o"
+              class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_color_subtle__8lcvdky sprinkles_alignItems_inherit__8lcvdk1w sprinkles_letterSpacing_0.5__8lcvdk3o"
             >
               <span>
                 on
@@ -276,7 +276,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <div
-            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk2a sprinkles_letterSpacing_0.3__8lcvdk3n sprinkles_fontSize_prose__8lcvdk38 sprinkles_maxWidth_prose_default__8lcvdk9x sprinkles_lineHeight_prose__8lcvdk3k"
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk2a sprinkles_letterSpacing_0.3__8lcvdk3n sprinkles_fontSize_prose__8lcvdk38 sprinkles_maxWidth_prose_default__8lcvdka4 sprinkles_lineHeight_prose__8lcvdk3k"
           >
             <p>
               For Peter Cushing and Christopher Lee’s first film for Hammer, 
@@ -343,13 +343,13 @@ exports[`/reviews/{slug} renders 1`] = `
           </div>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdknr sprinkles_height_80_default__8lcvdk6r sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_80_default__8lcvdkb6 sprinkles_display_block_default__8lcvdk5c"
+          class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_80_default__8lcvdk6y sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_80_default__8lcvdkbd sprinkles_display_block_default__8lcvdk5j"
         />
         <div
-          class="sprinkles_maxWidth_popout_default__8lcvdk9u sprinkles_width_full_default__8lcvdknu"
+          class="sprinkles_maxWidth_popout_default__8lcvdka1 sprinkles_width_full_default__8lcvdko4"
         >
           <h2
-            class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom__8lcvdk3q"
+            class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom_default__8lcvdk4s"
           >
             Viewing History
           </h2>
@@ -357,7 +357,7 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_padding_0__8lcvdk12"
           >
             <div
-              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_backgroundColor_zebra__8lcvdk7 sprinkles_display_block_default__8lcvdk5c"
+              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_backgroundColor_zebra__8lcvdk7 sprinkles_display_block_default__8lcvdk5j"
             >
               <div
                 class="ViewingHistoryEntry_gridAreas_icon__2vsig51"
@@ -391,7 +391,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 class="ViewingHistoryEntry_gridAreas_date__2vsig52"
               >
                 <span
-                  class="sprinkles_color_default__8lcvdkv sprinkles_display_inline-block_default__8lcvdk5o"
+                  class="sprinkles_color_default__8lcvdkv sprinkles_display_inline-block_default__8lcvdk5v"
                 >
                   Sat Sep 19, 2020
                 </span>
@@ -430,7 +430,7 @@ exports[`/reviews/{slug} renders 1`] = `
               />
             </div>
             <div
-              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_backgroundColor_zebra__8lcvdk7 sprinkles_display_block_default__8lcvdk5c"
+              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_backgroundColor_zebra__8lcvdk7 sprinkles_display_block_default__8lcvdk5j"
             >
               <div
                 class="ViewingHistoryEntry_gridAreas_icon__2vsig51"
@@ -464,7 +464,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 class="ViewingHistoryEntry_gridAreas_date__2vsig52"
               >
                 <span
-                  class="sprinkles_color_default__8lcvdkv sprinkles_display_inline-block_default__8lcvdk5o"
+                  class="sprinkles_color_default__8lcvdkv sprinkles_display_inline-block_default__8lcvdk5v"
                 >
                   Sat Oct 24, 2015
                 </span>
@@ -492,10 +492,10 @@ exports[`/reviews/{slug} renders 1`] = `
           </ul>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdknr sprinkles_height_128_default__8lcvdk70 sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_128_default__8lcvdkbf sprinkles_display_block_default__8lcvdk5c"
+          class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_128_default__8lcvdk77 sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_128_default__8lcvdkbm sprinkles_display_block_default__8lcvdk5j"
         />
         <aside
-          class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingTop_32_default__8lcvdkji sprinkles_paddingBottom_32_default__8lcvdkf0 sprinkles_position_relative_default__8lcvdkju sprinkles_maxWidth_popout_default__8lcvdk9u sprinkles_width_full_default__8lcvdknu sprinkles_backgroundColor_subtle__8lcvdk4"
+          class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingTop_32_default__8lcvdkjs sprinkles_paddingBottom_32_default__8lcvdkfa sprinkles_position_relative_default__8lcvdkk4 sprinkles_maxWidth_popout_default__8lcvdka1 sprinkles_width_full_default__8lcvdko4 sprinkles_backgroundColor_subtle__8lcvdk4"
           id="credits"
         >
           <div
@@ -549,12 +549,12 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <header
-            class="sprinkles_fontSize_creditsTitle__8lcvdk3a sprinkles_paddingBottom_24_default__8lcvdkex"
+            class="sprinkles_fontSize_creditsTitle__8lcvdk3a sprinkles_paddingBottom_24_default__8lcvdkf7"
           >
             The Curse of Frankenstein
           </header>
           <dl
-            class="sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_rowGap_24__8lcvdk22"
+            class="sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_rowGap_24__8lcvdk22"
           >
             <div
               class="Credits_creditStyle__1l00qpw2"
@@ -628,16 +628,16 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </dl>
           <span
-            class="sprinkles_width_px_default__8lcvdknr sprinkles_height_32_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_32_default__8lcvdkau sprinkles_display_block_default__8lcvdk5c"
+            class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_32_default__8lcvdk6m sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_32_default__8lcvdkb1 sprinkles_display_block_default__8lcvdk5j"
           />
           <ul
-            class="sprinkles_display_flex_default__8lcvdk5i sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_columnGap_8_default__8lcvdk4u sprinkles_rowGap_8__8lcvdk20 sprinkles_padding_0__8lcvdk12"
+            class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_columnGap_8_default__8lcvdk51 sprinkles_rowGap_8__8lcvdk20 sprinkles_padding_0__8lcvdk12"
           >
             <li
-              class="sprinkles_display_block_default__8lcvdk5c"
+              class="sprinkles_display_block_default__8lcvdk5j"
             >
               <a
-                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk5i sprinkles_alignItems_center__8lcvdk1v sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p"
+                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk5p sprinkles_alignItems_center__8lcvdk1v sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p"
                 href="/watchlist/collections/hammer-films/"
               >
                 <div
@@ -679,10 +679,10 @@ exports[`/reviews/{slug} renders 1`] = `
               </a>
             </li>
             <li
-              class="sprinkles_display_block_default__8lcvdk5c"
+              class="sprinkles_display_block_default__8lcvdk5j"
             >
               <a
-                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk5i sprinkles_alignItems_center__8lcvdk1v sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p"
+                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk5p sprinkles_alignItems_center__8lcvdk1v sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p"
                 href="/watchlist/performers/christopher-lee/"
               >
                 <div
@@ -724,10 +724,10 @@ exports[`/reviews/{slug} renders 1`] = `
               </a>
             </li>
             <li
-              class="sprinkles_display_block_default__8lcvdk5c"
+              class="sprinkles_display_block_default__8lcvdk5j"
             >
               <a
-                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk5i sprinkles_alignItems_center__8lcvdk1v sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p"
+                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk5p sprinkles_alignItems_center__8lcvdk1v sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p"
                 href="/watchlist/performers/peter-cushing/"
               >
                 <div
@@ -788,1179 +788,1179 @@ exports[`/reviews/{slug} renders 1`] = `
           </a>
         </aside>
         <span
-          class="sprinkles_width_px_default__8lcvdknr sprinkles_height_128_default__8lcvdk70 sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_128_default__8lcvdkbf sprinkles_display_block_default__8lcvdk5c"
+          class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_128_default__8lcvdk77 sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_128_default__8lcvdkbm sprinkles_display_block_default__8lcvdk5j"
         />
         <div
-          class="sprinkles_maxWidth_popout_default__8lcvdk9u sprinkles_width_full_default__8lcvdknu sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_rowGap_48__8lcvdk24"
+          class="sprinkles_maxWidth_popout_default__8lcvdka1 sprinkles_maxWidth_full_desktop__8lcvdkai sprinkles_width_full_default__8lcvdko4 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_rowGap_48__8lcvdk24 sprinkles_alignItems_center__8lcvdk1v"
         >
-          <nav
-            class="RelatedMovies_gridStyle__wf72yw2"
-          >
-            <div
-              class="RelatedMovies_gridAreas_heading__wf72yw3 sprinkles_boxShadow_borderBottom__8lcvdk3q"
+          <nav>
+            <h2
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingTop_8_default__8lcvdkjj sprinkles_paddingBottom_8_default__8lcvdkf1 sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_boxShadow_unset_tablet__8lcvdk4q sprinkles_textAlign_center__8lcvdk40 sprinkles_display_flex_default__8lcvdk5p sprinkles_justifyContent_center__8lcvdk3w"
             >
-              <h2
-                class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingTop_8_default__8lcvdkj9 sprinkles_paddingBottom_8_default__8lcvdkeu sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom__8lcvdk3q sprinkles_display_flex_default__8lcvdk5i"
+              <div
+                class="gatsby-image-wrapper RelatedMovies_avatarStyle__wf72yw0"
+                data-gatsby-image-wrapper=""
+                style="position: relative; overflow: hidden; width: 40px; height: 40px;"
               >
                 <div
-                  class="gatsby-image-wrapper RelatedMovies_avatarStyle__wf72yw0"
-                  data-gatsby-image-wrapper=""
-                  style="position: relative; overflow: hidden; width: 40px; height: 40px;"
-                >
-                  <div
-                    aria-hidden="true"
-                    data-placeholder-image=""
-                    style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                  aria-hidden="true"
+                  data-placeholder-image=""
+                  style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/e919b03855219e9e019a1dac518d405d/5bae1/hammer-films.avif 40w,/static/e919b03855219e9e019a1dac518d405d/d60a5/hammer-films.avif 80w"
+                    sizes="40px"
+                    type="image/avif"
                   />
-                  <picture>
-                    <source
-                      data-srcset="/static/e919b03855219e9e019a1dac518d405d/5bae1/hammer-films.avif 40w,/static/e919b03855219e9e019a1dac518d405d/d60a5/hammer-films.avif 80w"
-                      sizes="40px"
-                      type="image/avif"
-                    />
-                    <img
-                      alt="More Hammer Films reviews"
-                      data-gatsby-image-ssr=""
-                      data-main-image=""
-                      data-src="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg"
-                      data-srcset="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg 40w,/static/e919b03855219e9e019a1dac518d405d/d18de/hammer-films.jpg 80w"
-                      decoding="async"
-                      loading="lazy"
-                      sizes="40px"
-                      style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                    />
-                  </picture>
-                  <noscript />
-                  <script
-                    type="module"
-                  >
-                    const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                  </script>
-                </div>
-                <span>
-                  More 
-                  <a
-                    class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_display_inline-flex_default__8lcvdk5l sprinkles_columnGap_.5ch_default__8lcvdk4r"
-                    href="/watchlist/collections/hammer-films/"
-                  >
-                    Hammer Films
-                  </a>
-                </span>
-              </h2>
-            </div>
-            <div
-              class="RelatedMovies_gridAreas_list__wf72yw4"
-            >
-              <ul
-                class="RelatedMovies_movieListStyle__wf72yw1"
-              >
-                <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
-                >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
-                  >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/the-quatermass-xperiment-1955/"
-                    >
-                      <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                      >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
-                          aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                        />
-                        <picture>
-                          <source
-                            data-srcset="/static/28861d007b93206a8c7209a41d35620b/ee463/the-quatermass-xperiment-1955.avif 62w,/static/28861d007b93206a8c7209a41d35620b/eaf25/the-quatermass-xperiment-1955.avif 124w,/static/28861d007b93206a8c7209a41d35620b/6297a/the-quatermass-xperiment-1955.avif 248w,/static/28861d007b93206a8c7209a41d35620b/c0abc/the-quatermass-xperiment-1955.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from The Quatermass Xperiment (1955)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/28861d007b93206a8c7209a41d35620b/ced04/the-quatermass-xperiment-1955.jpg"
-                            data-srcset="/static/28861d007b93206a8c7209a41d35620b/41793/the-quatermass-xperiment-1955.jpg 62w,/static/28861d007b93206a8c7209a41d35620b/6a789/the-quatermass-xperiment-1955.jpg 124w,/static/28861d007b93206a8c7209a41d35620b/ced04/the-quatermass-xperiment-1955.jpg 248w,/static/28861d007b93206a8c7209a41d35620b/9025e/the-quatermass-xperiment-1955.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/the-quatermass-xperiment-1955/"
-                    >
-                      The Quatermass Xperiment 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
-                      >
-                        1955
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="B-: 4 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/4-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
-                >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
-                  >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/x-the-unknown-1956/"
-                    >
-                      <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                      >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
-                          aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                        />
-                        <picture>
-                          <source
-                            data-srcset="/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ee463/x-the-unknown-1956.avif 62w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/eaf25/x-the-unknown-1956.avif 124w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/6297a/x-the-unknown-1956.avif 248w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/c0abc/x-the-unknown-1956.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from X the Unknown (1956)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ced04/x-the-unknown-1956.jpg"
-                            data-srcset="/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/41793/x-the-unknown-1956.jpg 62w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/6a789/x-the-unknown-1956.jpg 124w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ced04/x-the-unknown-1956.jpg 248w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/9025e/x-the-unknown-1956.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/x-the-unknown-1956/"
-                    >
-                      X the Unknown 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
-                      >
-                        1956
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="C+: 3 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/3-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
-                >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
-                  >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/quatermass-2-1957/"
-                    >
-                      <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                      >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
-                          aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                        />
-                        <picture>
-                          <source
-                            data-srcset="/static/6f63e41ae0c98ead43616222c68d4177/ee463/quatermass-2-1957.avif 62w,/static/6f63e41ae0c98ead43616222c68d4177/eaf25/quatermass-2-1957.avif 124w,/static/6f63e41ae0c98ead43616222c68d4177/6297a/quatermass-2-1957.avif 248w,/static/6f63e41ae0c98ead43616222c68d4177/c0abc/quatermass-2-1957.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from Quatermass 2 (1957)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/6f63e41ae0c98ead43616222c68d4177/ced04/quatermass-2-1957.jpg"
-                            data-srcset="/static/6f63e41ae0c98ead43616222c68d4177/41793/quatermass-2-1957.jpg 62w,/static/6f63e41ae0c98ead43616222c68d4177/6a789/quatermass-2-1957.jpg 124w,/static/6f63e41ae0c98ead43616222c68d4177/ced04/quatermass-2-1957.jpg 248w,/static/6f63e41ae0c98ead43616222c68d4177/9025e/quatermass-2-1957.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/quatermass-2-1957/"
-                    >
-                      Quatermass 2 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
-                      >
-                        1957
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="D+: 2 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/2-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
-                >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
-                  >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/the-abominable-snowman-1957/"
-                    >
-                      <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                      >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
-                          aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                        />
-                        <picture>
-                          <source
-                            data-srcset="/static/1c1dbef182e8e74925e612887a718990/ee463/the-abominable-snowman-1957.avif 62w,/static/1c1dbef182e8e74925e612887a718990/eaf25/the-abominable-snowman-1957.avif 124w,/static/1c1dbef182e8e74925e612887a718990/6297a/the-abominable-snowman-1957.avif 248w,/static/1c1dbef182e8e74925e612887a718990/c0abc/the-abominable-snowman-1957.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from The Abominable Snowman (1957)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg"
-                            data-srcset="/static/1c1dbef182e8e74925e612887a718990/41793/the-abominable-snowman-1957.jpg 62w,/static/1c1dbef182e8e74925e612887a718990/6a789/the-abominable-snowman-1957.jpg 124w,/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg 248w,/static/1c1dbef182e8e74925e612887a718990/9025e/the-abominable-snowman-1957.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/the-abominable-snowman-1957/"
-                    >
-                      The Abominable Snowman 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
-                      >
-                        1957
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="D+: 2 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/2-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
-                </div>
-              </ul>
-            </div>
-          </nav>
-          <nav
-            class="RelatedMovies_gridStyle__wf72yw2"
-          >
-            <div
-              class="RelatedMovies_gridAreas_heading__wf72yw3 sprinkles_boxShadow_borderBottom__8lcvdk3q"
-            >
-              <h2
-                class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingTop_8_default__8lcvdkj9 sprinkles_paddingBottom_8_default__8lcvdkeu sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom__8lcvdk3q sprinkles_display_flex_default__8lcvdk5i"
-              >
-                <div
-                  class="gatsby-image-wrapper RelatedMovies_avatarStyle__wf72yw0"
-                  data-gatsby-image-wrapper=""
-                  style="position: relative; overflow: hidden; width: 40px; height: 40px;"
-                >
-                  <div
-                    aria-hidden="true"
-                    data-placeholder-image=""
-                    style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                  <img
+                    alt="More Hammer Films reviews"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg"
+                    data-srcset="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg 40w,/static/e919b03855219e9e019a1dac518d405d/d18de/hammer-films.jpg 80w"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="40px"
+                    style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
                   />
-                  <picture>
-                    <source
-                      data-srcset="/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5bae1/peter-cushing.avif 40w,/static/1fcd3f8f7ecd00d2b869761c641e8d5f/d60a5/peter-cushing.avif 80w"
-                      sizes="40px"
-                      type="image/avif"
-                    />
-                    <img
-                      alt="More Peter Cushing reviews"
-                      data-gatsby-image-ssr=""
-                      data-main-image=""
-                      data-src="/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5e3dc/peter-cushing.jpg"
-                      data-srcset="/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5e3dc/peter-cushing.jpg 40w,/static/1fcd3f8f7ecd00d2b869761c641e8d5f/d18de/peter-cushing.jpg 80w"
-                      decoding="async"
-                      loading="lazy"
-                      sizes="40px"
-                      style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                    />
-                  </picture>
-                  <noscript />
-                  <script
-                    type="module"
-                  >
-                    const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                  </script>
-                </div>
-                <span>
-                  More with 
-                  <a
-                    class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_display_inline-flex_default__8lcvdk5l sprinkles_columnGap_.5ch_default__8lcvdk4r"
-                    href="/watchlist/performers/peter-cushing/"
-                  >
-                    Peter Cushing
-                  </a>
-                </span>
-              </h2>
-            </div>
-            <div
-              class="RelatedMovies_gridAreas_list__wf72yw4"
+                </picture>
+                <noscript />
+                <script
+                  type="module"
+                >
+                  const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                </script>
+              </div>
+              <span>
+                More 
+                <a
+                  class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_display_inline-flex_default__8lcvdk5s sprinkles_columnGap_.5ch_default__8lcvdk4y"
+                  href="/watchlist/collections/hammer-films/"
+                >
+                  Hammer Films
+                </a>
+              </span>
+            </h2>
+            <ul
+              class="RelatedMovies_movieListStyle__wf72yw2 sprinkles_boxShadow_unset_default__8lcvdk4p sprinkles_boxShadow_borderAll_tablet__8lcvdk4w sprinkles_borderRadius_8__8lcvdkb"
             >
-              <ul
-                class="RelatedMovies_movieListStyle__wf72yw1"
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
               >
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_still__21r47v5"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/the-quatermass-xperiment-1955/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/a-chump-at-oxford-1939/"
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                     >
                       <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                        style="max-width: 248px; display: block;"
                       >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
+                        <img
+                          alt=""
                           aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
                         />
-                        <picture>
-                          <source
-                            data-srcset="/static/ad962d786f01a5675ee8b482c20121ae/ee463/a-chump-at-oxford-1939.avif 62w,/static/ad962d786f01a5675ee8b482c20121ae/eaf25/a-chump-at-oxford-1939.avif 124w,/static/ad962d786f01a5675ee8b482c20121ae/6297a/a-chump-at-oxford-1939.avif 248w,/static/ad962d786f01a5675ee8b482c20121ae/c0abc/a-chump-at-oxford-1939.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from A Chump at Oxford (1939)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/ad962d786f01a5675ee8b482c20121ae/ced04/a-chump-at-oxford-1939.jpg"
-                            data-srcset="/static/ad962d786f01a5675ee8b482c20121ae/41793/a-chump-at-oxford-1939.jpg 62w,/static/ad962d786f01a5675ee8b482c20121ae/6a789/a-chump-at-oxford-1939.jpg 124w,/static/ad962d786f01a5675ee8b482c20121ae/ced04/a-chump-at-oxford-1939.jpg 248w,/static/ad962d786f01a5675ee8b482c20121ae/9025e/a-chump-at-oxford-1939.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
                       </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/a-chump-at-oxford-1939/"
-                    >
-                      A Chump at Oxford 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/28861d007b93206a8c7209a41d35620b/ee463/the-quatermass-xperiment-1955.avif 62w,/static/28861d007b93206a8c7209a41d35620b/eaf25/the-quatermass-xperiment-1955.avif 124w,/static/28861d007b93206a8c7209a41d35620b/6297a/the-quatermass-xperiment-1955.avif 248w,/static/28861d007b93206a8c7209a41d35620b/c0abc/the-quatermass-xperiment-1955.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from The Quatermass Xperiment (1955)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/28861d007b93206a8c7209a41d35620b/ced04/the-quatermass-xperiment-1955.jpg"
+                          data-srcset="/static/28861d007b93206a8c7209a41d35620b/41793/the-quatermass-xperiment-1955.jpg 62w,/static/28861d007b93206a8c7209a41d35620b/6a789/the-quatermass-xperiment-1955.jpg 124w,/static/28861d007b93206a8c7209a41d35620b/ced04/the-quatermass-xperiment-1955.jpg 248w,/static/28861d007b93206a8c7209a41d35620b/9025e/the-quatermass-xperiment-1955.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
                       >
-                        1939
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="D+: 2 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/2-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_title__21r47v3"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/the-quatermass-xperiment-1955/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/the-man-in-the-iron-mask-1939/"
+                    The Quatermass Xperiment 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
                     >
-                      <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                      >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
-                          aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                        />
-                        <picture>
-                          <source
-                            data-srcset="/static/72e1049a47f867a235658ede6890f3f4/ee463/the-man-in-the-iron-mask-1939.avif 62w,/static/72e1049a47f867a235658ede6890f3f4/eaf25/the-man-in-the-iron-mask-1939.avif 124w,/static/72e1049a47f867a235658ede6890f3f4/6297a/the-man-in-the-iron-mask-1939.avif 248w,/static/72e1049a47f867a235658ede6890f3f4/c0abc/the-man-in-the-iron-mask-1939.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from The Man in the Iron Mask (1939)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/72e1049a47f867a235658ede6890f3f4/ced04/the-man-in-the-iron-mask-1939.jpg"
-                            data-srcset="/static/72e1049a47f867a235658ede6890f3f4/41793/the-man-in-the-iron-mask-1939.jpg 62w,/static/72e1049a47f867a235658ede6890f3f4/6a789/the-man-in-the-iron-mask-1939.jpg 124w,/static/72e1049a47f867a235658ede6890f3f4/ced04/the-man-in-the-iron-mask-1939.jpg 248w,/static/72e1049a47f867a235658ede6890f3f4/9025e/the-man-in-the-iron-mask-1939.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/the-man-in-the-iron-mask-1939/"
-                    >
-                      The Man in the Iron Mask 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
-                      >
-                        1939
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="C: 3 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/3-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                      1955
+                    </span>
+                  </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <img
+                    alt="B-: 4 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/4-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/x-the-unknown-1956/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/the-abominable-snowman-1957/"
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                     >
                       <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                        style="max-width: 248px; display: block;"
                       >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
+                        <img
+                          alt=""
                           aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
                         />
-                        <picture>
-                          <source
-                            data-srcset="/static/1c1dbef182e8e74925e612887a718990/ee463/the-abominable-snowman-1957.avif 62w,/static/1c1dbef182e8e74925e612887a718990/eaf25/the-abominable-snowman-1957.avif 124w,/static/1c1dbef182e8e74925e612887a718990/6297a/the-abominable-snowman-1957.avif 248w,/static/1c1dbef182e8e74925e612887a718990/c0abc/the-abominable-snowman-1957.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from The Abominable Snowman (1957)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg"
-                            data-srcset="/static/1c1dbef182e8e74925e612887a718990/41793/the-abominable-snowman-1957.jpg 62w,/static/1c1dbef182e8e74925e612887a718990/6a789/the-abominable-snowman-1957.jpg 124w,/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg 248w,/static/1c1dbef182e8e74925e612887a718990/9025e/the-abominable-snowman-1957.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
                       </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/the-abominable-snowman-1957/"
-                    >
-                      The Abominable Snowman 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ee463/x-the-unknown-1956.avif 62w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/eaf25/x-the-unknown-1956.avif 124w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/6297a/x-the-unknown-1956.avif 248w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/c0abc/x-the-unknown-1956.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from X the Unknown (1956)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ced04/x-the-unknown-1956.jpg"
+                          data-srcset="/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/41793/x-the-unknown-1956.jpg 62w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/6a789/x-the-unknown-1956.jpg 124w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ced04/x-the-unknown-1956.jpg 248w,/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/9025e/x-the-unknown-1956.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
                       >
-                        1957
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="D+: 2 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/2-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_title__21r47v3"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/x-the-unknown-1956/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/violent-playground-1958/"
+                    X the Unknown 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      1956
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="C+: 3 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/3-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/quatermass-2-1957/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                     >
                       <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                        style="max-width: 248px; display: block;"
                       >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
+                        <img
+                          alt=""
                           aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
                         />
-                        <picture>
-                          <source
-                            data-srcset="/static/43911ba31a9c763d3303839831f62556/ee463/violent-playground-1958.avif 62w,/static/43911ba31a9c763d3303839831f62556/eaf25/violent-playground-1958.avif 124w,/static/43911ba31a9c763d3303839831f62556/6297a/violent-playground-1958.avif 248w,/static/43911ba31a9c763d3303839831f62556/c0abc/violent-playground-1958.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from Violent Playground (1958)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/43911ba31a9c763d3303839831f62556/ced04/violent-playground-1958.jpg"
-                            data-srcset="/static/43911ba31a9c763d3303839831f62556/41793/violent-playground-1958.jpg 62w,/static/43911ba31a9c763d3303839831f62556/6a789/violent-playground-1958.jpg 124w,/static/43911ba31a9c763d3303839831f62556/ced04/violent-playground-1958.jpg 248w,/static/43911ba31a9c763d3303839831f62556/9025e/violent-playground-1958.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
                       </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/violent-playground-1958/"
-                    >
-                      Violent Playground 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/6f63e41ae0c98ead43616222c68d4177/ee463/quatermass-2-1957.avif 62w,/static/6f63e41ae0c98ead43616222c68d4177/eaf25/quatermass-2-1957.avif 124w,/static/6f63e41ae0c98ead43616222c68d4177/6297a/quatermass-2-1957.avif 248w,/static/6f63e41ae0c98ead43616222c68d4177/c0abc/quatermass-2-1957.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Quatermass 2 (1957)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/6f63e41ae0c98ead43616222c68d4177/ced04/quatermass-2-1957.jpg"
+                          data-srcset="/static/6f63e41ae0c98ead43616222c68d4177/41793/quatermass-2-1957.jpg 62w,/static/6f63e41ae0c98ead43616222c68d4177/6a789/quatermass-2-1957.jpg 124w,/static/6f63e41ae0c98ead43616222c68d4177/ced04/quatermass-2-1957.jpg 248w,/static/6f63e41ae0c98ead43616222c68d4177/9025e/quatermass-2-1957.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
                       >
-                        1958
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="B-: 4 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/4-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
                 </div>
-              </ul>
-            </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/quatermass-2-1957/"
+                  >
+                    Quatermass 2 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      1957
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="D+: 2 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/2-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/the-abominable-snowman-1957/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 248px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/ee463/the-abominable-snowman-1957.avif 62w,/static/1c1dbef182e8e74925e612887a718990/eaf25/the-abominable-snowman-1957.avif 124w,/static/1c1dbef182e8e74925e612887a718990/6297a/the-abominable-snowman-1957.avif 248w,/static/1c1dbef182e8e74925e612887a718990/c0abc/the-abominable-snowman-1957.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from The Abominable Snowman (1957)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg"
+                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/41793/the-abominable-snowman-1957.jpg 62w,/static/1c1dbef182e8e74925e612887a718990/6a789/the-abominable-snowman-1957.jpg 124w,/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg 248w,/static/1c1dbef182e8e74925e612887a718990/9025e/the-abominable-snowman-1957.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/the-abominable-snowman-1957/"
+                  >
+                    The Abominable Snowman 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      1957
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="D+: 2 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/2-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovies_seeAllLinkGridStyle__wf72yw1 sprinkles_paddingTop_16_default__8lcvdkjm sprinkles_paddingTop_24_tablet__8lcvdkjq sprinkles_paddingBottom_16_default__8lcvdkf4 sprinkles_paddingBottom_24_tablet__8lcvdkf8 sprinkles_display_block_default__8lcvdk5j sprinkles_textAlign_center__8lcvdk40 sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_boxShadow_unset_tablet__8lcvdk4q"
+              >
+                <a
+                  class="sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_accent__8lcvdku sprinkles_fontSize_relatedMovieTitle__8lcvdk36"
+                  href="/watchlist/collections/hammer-films/"
+                >
+                  See all →
+                </a>
+              </li>
+            </ul>
           </nav>
-          <nav
-            class="RelatedMovies_gridStyle__wf72yw2"
-          >
-            <div
-              class="RelatedMovies_gridAreas_heading__wf72yw3 sprinkles_boxShadow_borderBottom__8lcvdk3q"
+          <nav>
+            <h2
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingTop_8_default__8lcvdkjj sprinkles_paddingBottom_8_default__8lcvdkf1 sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_boxShadow_unset_tablet__8lcvdk4q sprinkles_textAlign_center__8lcvdk40 sprinkles_display_flex_default__8lcvdk5p sprinkles_justifyContent_center__8lcvdk3w"
             >
-              <h2
-                class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingTop_8_default__8lcvdkj9 sprinkles_paddingBottom_8_default__8lcvdkeu sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom__8lcvdk3q sprinkles_display_flex_default__8lcvdk5i"
+              <div
+                class="gatsby-image-wrapper RelatedMovies_avatarStyle__wf72yw0"
+                data-gatsby-image-wrapper=""
+                style="position: relative; overflow: hidden; width: 40px; height: 40px;"
               >
-                <span>
-                  More 
+                <div
+                  aria-hidden="true"
+                  data-placeholder-image=""
+                  style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5bae1/peter-cushing.avif 40w,/static/1fcd3f8f7ecd00d2b869761c641e8d5f/d60a5/peter-cushing.avif 80w"
+                    sizes="40px"
+                    type="image/avif"
+                  />
+                  <img
+                    alt="More Peter Cushing reviews"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5e3dc/peter-cushing.jpg"
+                    data-srcset="/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5e3dc/peter-cushing.jpg 40w,/static/1fcd3f8f7ecd00d2b869761c641e8d5f/d18de/peter-cushing.jpg 80w"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="40px"
+                    style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                  />
+                </picture>
+                <noscript />
+                <script
+                  type="module"
+                >
+                  const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                </script>
+              </div>
+              <span>
+                More with 
+                <a
+                  class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_display_inline-flex_default__8lcvdk5s sprinkles_columnGap_.5ch_default__8lcvdk4y"
+                  href="/watchlist/performers/peter-cushing/"
+                >
+                  Peter Cushing
+                </a>
+              </span>
+            </h2>
+            <ul
+              class="RelatedMovies_movieListStyle__wf72yw2 sprinkles_boxShadow_unset_default__8lcvdk4p sprinkles_boxShadow_borderAll_tablet__8lcvdk4w sprinkles_borderRadius_8__8lcvdkb"
+            >
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
                   <a
-                    class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_display_inline-flex_default__8lcvdk5l sprinkles_columnGap_.5ch_default__8lcvdk4r"
-                    href="/reviews/"
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/a-chump-at-oxford-1939/"
                   >
-                    Reviews
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 248px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/ad962d786f01a5675ee8b482c20121ae/ee463/a-chump-at-oxford-1939.avif 62w,/static/ad962d786f01a5675ee8b482c20121ae/eaf25/a-chump-at-oxford-1939.avif 124w,/static/ad962d786f01a5675ee8b482c20121ae/6297a/a-chump-at-oxford-1939.avif 248w,/static/ad962d786f01a5675ee8b482c20121ae/c0abc/a-chump-at-oxford-1939.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from A Chump at Oxford (1939)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/ad962d786f01a5675ee8b482c20121ae/ced04/a-chump-at-oxford-1939.jpg"
+                          data-srcset="/static/ad962d786f01a5675ee8b482c20121ae/41793/a-chump-at-oxford-1939.jpg 62w,/static/ad962d786f01a5675ee8b482c20121ae/6a789/a-chump-at-oxford-1939.jpg 124w,/static/ad962d786f01a5675ee8b482c20121ae/ced04/a-chump-at-oxford-1939.jpg 248w,/static/ad962d786f01a5675ee8b482c20121ae/9025e/a-chump-at-oxford-1939.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
                   </a>
-                </span>
-              </h2>
-            </div>
-            <div
-              class="RelatedMovies_gridAreas_list__wf72yw4"
-            >
-              <ul
-                class="RelatedMovies_movieListStyle__wf72yw1"
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/a-chump-at-oxford-1939/"
+                  >
+                    A Chump at Oxford 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      1939
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="D+: 2 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/2-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
               >
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_still__21r47v5"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/the-man-in-the-iron-mask-1939/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/cult-of-chucky-2017/"
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                     >
                       <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                        style="max-width: 248px; display: block;"
                       >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
+                        <img
+                          alt=""
                           aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
                         />
-                        <picture>
-                          <source
-                            data-srcset="/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ee463/cult-of-chucky-2017.avif 62w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/eaf25/cult-of-chucky-2017.avif 124w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/6297a/cult-of-chucky-2017.avif 248w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/c0abc/cult-of-chucky-2017.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from Cult of Chucky (2017)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ced04/cult-of-chucky-2017.jpg"
-                            data-srcset="/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/41793/cult-of-chucky-2017.jpg 62w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/6a789/cult-of-chucky-2017.jpg 124w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ced04/cult-of-chucky-2017.jpg 248w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/9025e/cult-of-chucky-2017.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
                       </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/cult-of-chucky-2017/"
-                    >
-                      Cult of Chucky 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/72e1049a47f867a235658ede6890f3f4/ee463/the-man-in-the-iron-mask-1939.avif 62w,/static/72e1049a47f867a235658ede6890f3f4/eaf25/the-man-in-the-iron-mask-1939.avif 124w,/static/72e1049a47f867a235658ede6890f3f4/6297a/the-man-in-the-iron-mask-1939.avif 248w,/static/72e1049a47f867a235658ede6890f3f4/c0abc/the-man-in-the-iron-mask-1939.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from The Man in the Iron Mask (1939)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/72e1049a47f867a235658ede6890f3f4/ced04/the-man-in-the-iron-mask-1939.jpg"
+                          data-srcset="/static/72e1049a47f867a235658ede6890f3f4/41793/the-man-in-the-iron-mask-1939.jpg 62w,/static/72e1049a47f867a235658ede6890f3f4/6a789/the-man-in-the-iron-mask-1939.jpg 124w,/static/72e1049a47f867a235658ede6890f3f4/ced04/the-man-in-the-iron-mask-1939.jpg 248w,/static/72e1049a47f867a235658ede6890f3f4/9025e/the-man-in-the-iron-mask-1939.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
                       >
-                        2017
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="C-: 3 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/3-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_title__21r47v3"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/the-man-in-the-iron-mask-1939/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/curse-of-chucky-2013/"
+                    The Man in the Iron Mask 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
                     >
-                      <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                      >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
-                          aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                        />
-                        <picture>
-                          <source
-                            data-srcset="/static/bb69a5da74a51e571c086d75b8bd4459/ee463/curse-of-chucky-2013.avif 62w,/static/bb69a5da74a51e571c086d75b8bd4459/eaf25/curse-of-chucky-2013.avif 124w,/static/bb69a5da74a51e571c086d75b8bd4459/6297a/curse-of-chucky-2013.avif 248w,/static/bb69a5da74a51e571c086d75b8bd4459/c0abc/curse-of-chucky-2013.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from Curse of Chucky (2013)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/bb69a5da74a51e571c086d75b8bd4459/ced04/curse-of-chucky-2013.jpg"
-                            data-srcset="/static/bb69a5da74a51e571c086d75b8bd4459/41793/curse-of-chucky-2013.jpg 62w,/static/bb69a5da74a51e571c086d75b8bd4459/6a789/curse-of-chucky-2013.jpg 124w,/static/bb69a5da74a51e571c086d75b8bd4459/ced04/curse-of-chucky-2013.jpg 248w,/static/bb69a5da74a51e571c086d75b8bd4459/9025e/curse-of-chucky-2013.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/curse-of-chucky-2013/"
-                    >
-                      Curse of Chucky 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
-                      >
-                        2013
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="C+: 3 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/3-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                      1939
+                    </span>
+                  </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <img
+                    alt="C: 3 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/3-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/the-abominable-snowman-1957/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/curse-of-the-demon-1957/"
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                     >
                       <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                        style="max-width: 248px; display: block;"
                       >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
+                        <img
+                          alt=""
                           aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
                         />
-                        <picture>
-                          <source
-                            data-srcset="/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ee463/curse-of-the-demon-1957.avif 62w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/eaf25/curse-of-the-demon-1957.avif 124w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/6297a/curse-of-the-demon-1957.avif 248w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/c0abc/curse-of-the-demon-1957.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from Curse of the Demon (1957)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ced04/curse-of-the-demon-1957.jpg"
-                            data-srcset="/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/41793/curse-of-the-demon-1957.jpg 62w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/6a789/curse-of-the-demon-1957.jpg 124w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ced04/curse-of-the-demon-1957.jpg 248w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/9025e/curse-of-the-demon-1957.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
                       </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/curse-of-the-demon-1957/"
-                    >
-                      Curse of the Demon 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/ee463/the-abominable-snowman-1957.avif 62w,/static/1c1dbef182e8e74925e612887a718990/eaf25/the-abominable-snowman-1957.avif 124w,/static/1c1dbef182e8e74925e612887a718990/6297a/the-abominable-snowman-1957.avif 248w,/static/1c1dbef182e8e74925e612887a718990/c0abc/the-abominable-snowman-1957.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from The Abominable Snowman (1957)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg"
+                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/41793/the-abominable-snowman-1957.jpg 62w,/static/1c1dbef182e8e74925e612887a718990/6a789/the-abominable-snowman-1957.jpg 124w,/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg 248w,/static/1c1dbef182e8e74925e612887a718990/9025e/the-abominable-snowman-1957.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
                       >
-                        1957
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="B: 4 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/4-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkh6 sprinkles_paddingLeft_0_tablet__8lcvdkfd sprinkles_paddingRight_popoutGutter_default__8lcvdkj3 sprinkles_paddingRight_0_tablet__8lcvdkha"
+                  class="RelatedMovie_gridAreas_title__21r47v3"
                 >
-                  <div
-                    class="RelatedMovie_gridAreas_still__21r47v5"
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/the-abominable-snowman-1957/"
                   >
-                    <a
-                      class="RelatedMovie_stillStyle__21r47v1"
-                      href="/reviews/dagon-2001/"
+                    The Abominable Snowman 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      1957
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="D+: 2 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/2-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/violent-playground-1958/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                     >
                       <div
-                        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                        data-gatsby-image-wrapper=""
-                        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                        style="max-width: 248px; display: block;"
                       >
-                        <div
-                          style="max-width: 248px; display: block;"
-                        >
-                          <img
-                            alt=""
-                            aria-hidden="true"
-                            role="presentation"
-                            src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
-                            style="max-width: 100%; display: block; position: static;"
-                          />
-                        </div>
-                        <div
+                        <img
+                          alt=""
                           aria-hidden="true"
-                          data-placeholder-image=""
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
                         />
-                        <picture>
-                          <source
-                            data-srcset="/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ee463/dagon-2001.avif 62w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/eaf25/dagon-2001.avif 124w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/6297a/dagon-2001.avif 248w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/c0abc/dagon-2001.avif 496w"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            type="image/avif"
-                          />
-                          <img
-                            alt="A still from Dagon (2001)"
-                            data-gatsby-image-ssr=""
-                            data-main-image=""
-                            data-src="/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ced04/dagon-2001.jpg"
-                            data-srcset="/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/41793/dagon-2001.jpg 62w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/6a789/dagon-2001.jpg 124w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ced04/dagon-2001.jpg 248w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/9025e/dagon-2001.jpg 496w"
-                            decoding="async"
-                            loading="lazy"
-                            sizes="(min-width: 248px) 248px, 100vw"
-                            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                          />
-                        </picture>
-                        <noscript />
-                        <script
-                          type="module"
-                        >
-                          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                        </script>
                       </div>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_title__21r47v3"
-                  >
-                    <a
-                      class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5c"
-                      href="/reviews/dagon-2001/"
-                    >
-                      Dagon 
-                      <span
-                        class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/43911ba31a9c763d3303839831f62556/ee463/violent-playground-1958.avif 62w,/static/43911ba31a9c763d3303839831f62556/eaf25/violent-playground-1958.avif 124w,/static/43911ba31a9c763d3303839831f62556/6297a/violent-playground-1958.avif 248w,/static/43911ba31a9c763d3303839831f62556/c0abc/violent-playground-1958.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Violent Playground (1958)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/43911ba31a9c763d3303839831f62556/ced04/violent-playground-1958.jpg"
+                          data-srcset="/static/43911ba31a9c763d3303839831f62556/41793/violent-playground-1958.jpg 62w,/static/43911ba31a9c763d3303839831f62556/6a789/violent-playground-1958.jpg 124w,/static/43911ba31a9c763d3303839831f62556/ced04/violent-playground-1958.jpg 248w,/static/43911ba31a9c763d3303839831f62556/9025e/violent-playground-1958.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
                       >
-                        2001
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="RelatedMovie_gridAreas_grade__21r47v4"
-                  >
-                    <img
-                      alt="B: 4 stars (out of 5)"
-                      class="RelatedMovie_gradeStyle__21r47v0"
-                      src="/svg/4-stars.svg"
-                      style="height: 16px; width: 80px;"
-                    />
-                  </div>
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
                 </div>
-              </ul>
-            </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/violent-playground-1958/"
+                  >
+                    Violent Playground 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      1958
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="B-: 4 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/4-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovies_seeAllLinkGridStyle__wf72yw1 sprinkles_paddingTop_16_default__8lcvdkjm sprinkles_paddingTop_24_tablet__8lcvdkjq sprinkles_paddingBottom_16_default__8lcvdkf4 sprinkles_paddingBottom_24_tablet__8lcvdkf8 sprinkles_display_block_default__8lcvdk5j sprinkles_textAlign_center__8lcvdk40 sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_boxShadow_unset_tablet__8lcvdk4q"
+              >
+                <a
+                  class="sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_accent__8lcvdku sprinkles_fontSize_relatedMovieTitle__8lcvdk36"
+                  href="/watchlist/performers/peter-cushing/"
+                >
+                  See all →
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <h2
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingTop_8_default__8lcvdkjj sprinkles_paddingBottom_8_default__8lcvdkf1 sprinkles_color_subtle__8lcvdky sprinkles_fontSize_reviewSubHeading__8lcvdk35 sprinkles_fontWeight_normal__8lcvdk2b sprinkles_letterSpacing_0.2__8lcvdk3l sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_boxShadow_unset_tablet__8lcvdk4q sprinkles_textAlign_center__8lcvdk40 sprinkles_display_flex_default__8lcvdk5p sprinkles_justifyContent_center__8lcvdk3w"
+            >
+              <span>
+                More 
+                <a
+                  class="sprinkles_color_accent__8lcvdku sprinkles_textDecoration_none__8lcvdk3p sprinkles_display_inline-flex_default__8lcvdk5s sprinkles_columnGap_.5ch_default__8lcvdk4y"
+                  href="/reviews/"
+                >
+                  Reviews
+                </a>
+              </span>
+            </h2>
+            <ul
+              class="RelatedMovies_movieListStyle__wf72yw2 sprinkles_boxShadow_unset_default__8lcvdk4p sprinkles_boxShadow_borderAll_tablet__8lcvdk4w sprinkles_borderRadius_8__8lcvdkb"
+            >
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/cult-of-chucky-2017/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 248px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ee463/cult-of-chucky-2017.avif 62w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/eaf25/cult-of-chucky-2017.avif 124w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/6297a/cult-of-chucky-2017.avif 248w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/c0abc/cult-of-chucky-2017.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Cult of Chucky (2017)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ced04/cult-of-chucky-2017.jpg"
+                          data-srcset="/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/41793/cult-of-chucky-2017.jpg 62w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/6a789/cult-of-chucky-2017.jpg 124w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ced04/cult-of-chucky-2017.jpg 248w,/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/9025e/cult-of-chucky-2017.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/cult-of-chucky-2017/"
+                  >
+                    Cult of Chucky 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      2017
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="C-: 3 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/3-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/curse-of-chucky-2013/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 248px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/bb69a5da74a51e571c086d75b8bd4459/ee463/curse-of-chucky-2013.avif 62w,/static/bb69a5da74a51e571c086d75b8bd4459/eaf25/curse-of-chucky-2013.avif 124w,/static/bb69a5da74a51e571c086d75b8bd4459/6297a/curse-of-chucky-2013.avif 248w,/static/bb69a5da74a51e571c086d75b8bd4459/c0abc/curse-of-chucky-2013.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Curse of Chucky (2013)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/bb69a5da74a51e571c086d75b8bd4459/ced04/curse-of-chucky-2013.jpg"
+                          data-srcset="/static/bb69a5da74a51e571c086d75b8bd4459/41793/curse-of-chucky-2013.jpg 62w,/static/bb69a5da74a51e571c086d75b8bd4459/6a789/curse-of-chucky-2013.jpg 124w,/static/bb69a5da74a51e571c086d75b8bd4459/ced04/curse-of-chucky-2013.jpg 248w,/static/bb69a5da74a51e571c086d75b8bd4459/9025e/curse-of-chucky-2013.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/curse-of-chucky-2013/"
+                  >
+                    Curse of Chucky 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      2013
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="C+: 3 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/3-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/curse-of-the-demon-1957/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 248px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ee463/curse-of-the-demon-1957.avif 62w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/eaf25/curse-of-the-demon-1957.avif 124w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/6297a/curse-of-the-demon-1957.avif 248w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/c0abc/curse-of-the-demon-1957.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Curse of the Demon (1957)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ced04/curse-of-the-demon-1957.jpg"
+                          data-srcset="/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/41793/curse-of-the-demon-1957.jpg 62w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/6a789/curse-of-the-demon-1957.jpg 124w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ced04/curse-of-the-demon-1957.jpg 248w,/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/9025e/curse-of-the-demon-1957.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/curse-of-the-demon-1957/"
+                  >
+                    Curse of the Demon 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      1957
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="B: 4 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/4-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkhg sprinkles_paddingLeft_0_tablet__8lcvdkfn sprinkles_paddingRight_popoutGutter_default__8lcvdkjd sprinkles_paddingRight_0_tablet__8lcvdkhk"
+              >
+                <div
+                  class="RelatedMovie_gridAreas_still__21r47v5"
+                >
+                  <a
+                    class="RelatedMovie_stillStyle__21r47v1"
+                    href="/reviews/dagon-2001/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 248px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg height='140' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ee463/dagon-2001.avif 62w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/eaf25/dagon-2001.avif 124w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/6297a/dagon-2001.avif 248w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/c0abc/dagon-2001.avif 496w"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Dagon (2001)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ced04/dagon-2001.jpg"
+                          data-srcset="/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/41793/dagon-2001.jpg 62w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/6a789/dagon-2001.jpg 124w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ced04/dagon-2001.jpg 248w,/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/9025e/dagon-2001.jpg 496w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 248px) 248px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_title__21r47v3"
+                >
+                  <a
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk36 sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_default__8lcvdkv sprinkles_display_block_default__8lcvdk5j"
+                    href="/reviews/dagon-2001/"
+                  >
+                    Dagon 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdk2o sprinkles_fontWeight_light__8lcvdk2a sprinkles_color_muted__8lcvdkw sprinkles_lineHeight_1__8lcvdk3d"
+                    >
+                      2001
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="RelatedMovie_gridAreas_grade__21r47v4"
+                >
+                  <img
+                    alt="B: 4 stars (out of 5)"
+                    class="RelatedMovie_gradeStyle__21r47v0"
+                    src="/svg/4-stars.svg"
+                    style="height: 16px; width: 80px;"
+                  />
+                </div>
+              </li>
+              <li
+                class="RelatedMovies_seeAllLinkGridStyle__wf72yw1 sprinkles_paddingTop_16_default__8lcvdkjm sprinkles_paddingTop_24_tablet__8lcvdkjq sprinkles_paddingBottom_16_default__8lcvdkf4 sprinkles_paddingBottom_24_tablet__8lcvdkf8 sprinkles_display_block_default__8lcvdk5j sprinkles_textAlign_center__8lcvdk40 sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_boxShadow_unset_tablet__8lcvdk4q"
+              >
+                <a
+                  class="sprinkles_textDecoration_none__8lcvdk3p sprinkles_color_accent__8lcvdku sprinkles_fontSize_relatedMovieTitle__8lcvdk36"
+                  href="/reviews/"
+                >
+                  See all →
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdknr sprinkles_height_128_default__8lcvdk70 sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_128_default__8lcvdkbf sprinkles_display_block_default__8lcvdk5c"
+          class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_128_default__8lcvdk77 sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_128_default__8lcvdkbm sprinkles_display_block_default__8lcvdk5j"
         />
       </main>
       <script
@@ -1970,14 +1970,14 @@ exports[`/reviews/{slug} renders 1`] = `
       </script>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_paddingTop_32_default__8lcvdkji sprinkles_paddingBottom_32_default__8lcvdkf0 sprinkles_color_inverse__8lcvdkz sprinkles_display_flex_default__8lcvdk5i sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3t sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_flexDirection_column_default__8lcvdk5x"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_paddingTop_32_default__8lcvdkjs sprinkles_paddingBottom_32_default__8lcvdkfa sprinkles_color_inverse__8lcvdkz sprinkles_display_flex_default__8lcvdk5p sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3r sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_flexDirection_column_default__8lcvdk64"
     >
       <nav>
         <ul
-          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3y sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk4x sprinkles_columnGap_24_tablet__8lcvdk51"
+          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3w sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk54 sprinkles_columnGap_24_tablet__8lcvdk58"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -1987,7 +1987,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -1997,7 +1997,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -2007,7 +2007,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -2017,7 +2017,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -2027,7 +2027,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"

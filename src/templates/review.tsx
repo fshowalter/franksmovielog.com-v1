@@ -64,7 +64,11 @@ export default function ReviewTemplate({
         <Spacer axis="vertical" size={128} />
         <Credits movie={movie} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
-        <RelatedMovies relatedMovies={movie} maxWidth="popout" width="full" />
+        <RelatedMovies
+          relatedMovies={movie}
+          maxWidth={{ default: "popout", desktop: "full" }}
+          width="full"
+        />
         <Spacer axis="vertical" size={128} />
       </Box>
       <StructuredData data={movie} />

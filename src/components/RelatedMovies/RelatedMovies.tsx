@@ -1,20 +1,14 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
-import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
 import { RelatedMovie } from "../RelatedMovie";
 import { ReviewSubHeading } from "../ReviewSubHeading";
 import {
   avatarStyle,
-  gridAreas,
-  gridStyle,
   movieListStyle,
+  seeAllLinkGridStyle,
 } from "./RelatedMovies.css";
-
-const GridArea = gridAreaComponent(gridAreas);
-
-const Grid = gridComponent(gridStyle);
 
 function SectionHeading({
   leadText,
@@ -28,7 +22,14 @@ function SectionHeading({
   avatar?: IGraphqlImage;
 }) {
   return (
-    <ReviewSubHeading paddingX="popoutGutter" display="flex" paddingY={8}>
+    <ReviewSubHeading
+      paddingX="popoutGutter"
+      textAlign="center"
+      boxShadow={{ default: "borderBottom", tablet: "unset" }}
+      display="flex"
+      justifyContent="center"
+      paddingY={8}
+    >
       {avatar && (
         <GraphqlImage
           image={avatar}
@@ -53,18 +54,42 @@ function SectionHeading({
 }
 function MovieList({
   movies,
+  slug,
 }: {
   movies: readonly Queries.RelatedMovieFragment[];
+  slug: string;
 }): JSX.Element | null {
   if (movies.length < 4) {
     return null;
   }
 
   return (
-    <Box as="ul" className={movieListStyle}>
+    <Box
+      as="ul"
+      className={movieListStyle}
+      boxShadow={{ default: "unset", tablet: "borderAll" }}
+      borderRadius={8}
+    >
       {movies.map((movie) => {
         return <RelatedMovie as="li" key={movie.imdbId} movie={movie} />;
       })}
+      <Box
+        as="li"
+        display="block"
+        textAlign="center"
+        className={seeAllLinkGridStyle}
+        paddingY={{ default: 16, tablet: 24 }}
+        boxShadow={{ default: "borderBottom", tablet: "unset" }}
+      >
+        <Link
+          textDecoration="none"
+          color="accent"
+          to={slug}
+          fontSize="relatedMovieTitle"
+        >
+          See all &#8594;
+        </Link>
+      </Box>
     </Box>
   );
 }
@@ -80,19 +105,18 @@ function Directors({
         .filter((director) => director.browseMore.length === 4)
         .map((director) => {
           return (
-            <Grid as="nav" key={director.slug}>
-              <GridArea name="heading" boxShadow="borderBottom">
-                <SectionHeading
-                  avatar={director.avatar}
-                  leadText="More directed by"
-                  boldText={director.name}
-                  linkTarget={`/watchlist/directors/${director.slug}/`}
-                />
-              </GridArea>
-              <GridArea name="list">
-                <MovieList movies={director.browseMore} />
-              </GridArea>
-            </Grid>
+            <Box as="nav" key={director.slug}>
+              <SectionHeading
+                avatar={director.avatar}
+                leadText="More directed by"
+                boldText={director.name}
+                linkTarget={`/watchlist/directors/${director.slug}/`}
+              />
+              <MovieList
+                movies={director.browseMore}
+                slug={`/watchlist/directors/${director.slug}/`}
+              />
+            </Box>
           );
         })}
     </>
@@ -110,16 +134,17 @@ function Writers({
         .filter((writer) => writer.browseMore.length === 4)
         .map((writer) => {
           return (
-            <Grid as="nav" key={writer.slug}>
+            <Box as="nav" key={writer.slug}>
               <SectionHeading
                 leadText="More written by"
                 boldText={writer.name}
                 linkTarget={`/watchlist/writers/${writer.slug}/`}
               />
-              <GridArea name="list">
-                <MovieList movies={writer.browseMore} />
-              </GridArea>
-            </Grid>
+              <MovieList
+                movies={writer.browseMore}
+                slug={`/watchlist/writers/${writer.slug}/`}
+              />
+            </Box>
           );
         })}
     </>
@@ -137,19 +162,18 @@ function Performers({
         .filter((performer) => performer.browseMore.length === 4)
         .map((performer) => {
           return (
-            <Grid as="nav" key={performer.slug}>
-              <GridArea name="heading" boxShadow="borderBottom">
-                <SectionHeading
-                  avatar={performer.avatar}
-                  leadText="More with"
-                  boldText={performer.name}
-                  linkTarget={`/watchlist/performers/${performer.slug}/`}
-                />
-              </GridArea>
-              <GridArea name="list">
-                <MovieList movies={performer.browseMore} />
-              </GridArea>
-            </Grid>
+            <Box as="nav" key={performer.slug}>
+              <SectionHeading
+                avatar={performer.avatar}
+                leadText="More with"
+                boldText={performer.name}
+                linkTarget={`/watchlist/performers/${performer.slug}/`}
+              />
+              <MovieList
+                movies={performer.browseMore}
+                slug={`/watchlist/performers/${performer.slug}/`}
+              />
+            </Box>
           );
         })}
     </>
@@ -167,19 +191,18 @@ function Collections({
         .filter((collection) => collection.browseMore.length === 4)
         .map((collection) => {
           return (
-            <Grid as="nav" key={collection.name}>
-              <GridArea name="heading" boxShadow="borderBottom">
-                <SectionHeading
-                  avatar={collection.avatar}
-                  leadText="More"
-                  boldText={collection.name}
-                  linkTarget={`/watchlist/collections/${collection.slug}/`}
-                />
-              </GridArea>
-              <GridArea name="list">
-                <MovieList movies={collection.browseMore} />
-              </GridArea>
-            </Grid>
+            <Box as="nav" key={collection.name}>
+              <SectionHeading
+                avatar={collection.avatar}
+                leadText="More"
+                boldText={collection.name}
+                linkTarget={`/watchlist/collections/${collection.slug}/`}
+              />
+              <MovieList
+                movies={collection.browseMore}
+                slug={`/watchlist/collections/${collection.slug}/`}
+              />
+            </Box>
           );
         })}
     </>
@@ -192,18 +215,14 @@ function Reviews({
   reviews: Queries.RelatedMoviesFragment["browseMore"];
 }) {
   return (
-    <Grid as="nav">
-      <GridArea name="heading" boxShadow="borderBottom">
-        <SectionHeading
-          leadText="More"
-          boldText="Reviews"
-          linkTarget={`/reviews/`}
-        />
-      </GridArea>
-      <GridArea name="list">
-        <MovieList movies={reviews} />
-      </GridArea>
-    </Grid>
+    <Box as="nav">
+      <SectionHeading
+        leadText="More"
+        boldText="Reviews"
+        linkTarget={`/reviews/`}
+      />
+      <MovieList movies={reviews} slug="/reviews/" />
+    </Box>
   );
 }
 
@@ -213,7 +232,13 @@ interface IRelatedMoviesProps extends IBoxProps {
 
 export function RelatedMovies({ relatedMovies, ...rest }: IRelatedMoviesProps) {
   return (
-    <Box {...rest} display="flex" flexDirection="column" rowGap={48}>
+    <Box
+      {...rest}
+      display="flex"
+      flexDirection="column"
+      rowGap={48}
+      alignItems="center"
+    >
       <Collections collections={relatedMovies.watchlist.collections} />
       <Performers performers={relatedMovies.watchlist.performers} />
       <Directors directors={relatedMovies.watchlist.directors} />

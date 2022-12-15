@@ -1,6 +1,7 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { atomicProperties } from "./atomicProperties";
 import { minMediaQuery } from "./breakpoints";
+import { borderColors } from "./colors.css";
 import {
   gutterWidth,
   MAX_POSTER_WIDTH,
@@ -27,6 +28,15 @@ const responsiveAtomicProperties = defineProperties({
     },
   },
   properties: {
+    boxShadow: {
+      unset: "unset",
+      borderBottom: {
+        boxShadow: `0px 1px ${borderColors.default}`,
+      },
+      borderAll: {
+        boxShadow: `0 0 0 1px ${borderColors.default}`,
+      },
+    },
     columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
     display: [
       "block",
@@ -70,7 +80,7 @@ const responsiveAtomicProperties = defineProperties({
       poster: MAX_POSTER_WIDTH,
       ...size,
     },
-    paddingBottom: [0, 8, 24, 32, 40, 48, 128],
+    paddingBottom: [0, 8, 16, 24, 32, 40, 48, 128],
     paddingLeft: {
       ...size,
       gutter: gutterWidth,

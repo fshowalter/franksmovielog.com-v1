@@ -9,16 +9,16 @@ exports[`/about renders 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3t sprinkles_minHeight_16_default__8lcvdkao sprinkles_width_full_default__8lcvdknu"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3r sprinkles_minHeight_16_default__8lcvdkav sprinkles_width_full_default__8lcvdko4"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk2 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default__8lcvdk2 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_paddingTop_24_default__8lcvdkjf sprinkles_paddingTop_32_desktop__8lcvdkjk sprinkles_paddingBottom_24_default__8lcvdkex sprinkles_paddingBottom_32_desktop__8lcvdkf2 sprinkles_display_flex_default__8lcvdk5i sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_boxShadow_borderBottom__8lcvdk3q sprinkles_backgroundColor_default__8lcvdk2"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_paddingTop_24_default__8lcvdkjp sprinkles_paddingTop_32_desktop__8lcvdkju sprinkles_paddingBottom_24_default__8lcvdkf7 sprinkles_paddingBottom_32_desktop__8lcvdkfc sprinkles_display_flex_default__8lcvdk5p sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_boxShadow_borderBottom_default__8lcvdk4s sprinkles_backgroundColor_default__8lcvdk2"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_alignItems_inherit__8lcvdk1w sprinkles_justifyItems_inherit__8lcvdk1u"
+        class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_alignItems_inherit__8lcvdk1w sprinkles_justifyItems_inherit__8lcvdk1u"
       >
         <h1
           class="sprinkles_whiteSpace_nowrap__8lcvdk1n sprinkles_fontWeight_normal__8lcvdk2b sprinkles_fontSize_logo__8lcvdk39"
@@ -31,7 +31,7 @@ exports[`/about renders 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdkw sprinkles_fontStyle_italic__8lcvdk1s sprinkles_lineHeight_16__8lcvdk3f sprinkles_width_full_default__8lcvdknu sprinkles_fontSize_small__8lcvdk2o"
+          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdkw sprinkles_fontStyle_italic__8lcvdk1s sprinkles_lineHeight_16__8lcvdk3f sprinkles_width_full_default__8lcvdko4 sprinkles_fontSize_small__8lcvdk2o"
         >
           My life at the movies.
         </p>
@@ -39,12 +39,12 @@ exports[`/about renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll__8lcvdk3r sprinkles_borderRadius_4__8lcvdka sprinkles_overflow_hidden__8lcvdk1o sprinkles_width_full_default__8lcvdknu sprinkles_width_unset_desktop__8lcvdknh sprinkles_maxWidth_prose_default__8lcvdk9x"
+        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll_default__8lcvdk4v sprinkles_borderRadius_4__8lcvdka sprinkles_overflow_hidden__8lcvdk1o sprinkles_width_full_default__8lcvdko4 sprinkles_width_unset_desktop__8lcvdknr sprinkles_maxWidth_prose_default__8lcvdka4"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk5i sprinkles_overflow_hidden__8lcvdk1o"
+          class="sprinkles_display_flex_default__8lcvdk5p sprinkles_overflow_hidden__8lcvdk1o"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/about renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdkfl sprinkles_paddingRight_16_default__8lcvdkhi sprinkles_paddingTop_8_default__8lcvdkj9 sprinkles_paddingBottom_8_default__8lcvdkeu sprinkles_backgroundColor_subtle__8lcvdk4 sprinkles_color_default__8lcvdkv sprinkles_fontSize_normal__8lcvdk2p sprinkles_fontWeight_light__8lcvdk2a sprinkles_lineHeight_24__8lcvdk3g sprinkles_flexGrow_1__8lcvdk1q"
+            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdkfv sprinkles_paddingRight_16_default__8lcvdkhs sprinkles_paddingTop_8_default__8lcvdkjj sprinkles_paddingBottom_8_default__8lcvdkf1 sprinkles_backgroundColor_subtle__8lcvdk4 sprinkles_color_default__8lcvdkv sprinkles_fontSize_normal__8lcvdk2p sprinkles_fontWeight_light__8lcvdk2a sprinkles_lineHeight_24__8lcvdk3g sprinkles_flexGrow_1__8lcvdk1q"
             id="search"
             name="q"
             placeholder="Search..."
@@ -93,10 +93,10 @@ exports[`/about renders 1`] = `
         class="sprinkles_color_accent__8lcvdku"
       >
         <ul
-          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3y sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk4x sprinkles_columnGap_24_tablet__8lcvdk51"
+          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3w sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk54 sprinkles_columnGap_24_tablet__8lcvdk58"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -106,7 +106,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -116,7 +116,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -126,7 +126,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -136,7 +136,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -146,7 +146,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -163,10 +163,10 @@ exports[`/about renders 1`] = `
     >
       <main>
         <article
-          class="sprinkles_display_flex_default__8lcvdk5i sprinkles_flexDirection_column_default__8lcvdk5x sprinkles_alignItems_center__8lcvdk1v"
+          class="sprinkles_display_flex_default__8lcvdk5p sprinkles_flexDirection_column_default__8lcvdk64 sprinkles_alignItems_center__8lcvdk1v"
         >
           <h1
-            class="sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_paddingTop_24_default__8lcvdkjf sprinkles_paddingTop_32_desktop__8lcvdkjk sprinkles_paddingBottom_24_default__8lcvdkex sprinkles_paddingBottom_32_desktop__8lcvdkf2 sprinkles_fontSize_pageTitle__8lcvdk3b sprinkles_textAlign_center__8lcvdk42"
+            class="sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_paddingTop_24_default__8lcvdkjp sprinkles_paddingTop_32_desktop__8lcvdkju sprinkles_paddingBottom_24_default__8lcvdkf7 sprinkles_paddingBottom_32_desktop__8lcvdkfc sprinkles_fontSize_pageTitle__8lcvdk3b sprinkles_textAlign_center__8lcvdk40"
           >
             About the Movie Log
           </h1>
@@ -220,10 +220,10 @@ exports[`/about renders 1`] = `
             </script>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdknr sprinkles_height_64_default__8lcvdk6o sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_64_default__8lcvdkb3 sprinkles_display_block_default__8lcvdk5c"
+            class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_64_default__8lcvdk6v sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_64_default__8lcvdkba sprinkles_display_block_default__8lcvdk5j"
           />
           <div
-            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_fontWeight_light__8lcvdk2a sprinkles_letterSpacing_0.3__8lcvdk3n sprinkles_fontSize_prose__8lcvdk38 sprinkles_maxWidth_proseWithGutters_default__8lcvdka0"
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_fontWeight_light__8lcvdk2a sprinkles_letterSpacing_0.3__8lcvdk3n sprinkles_fontSize_prose__8lcvdk38 sprinkles_maxWidth_proseWithGutters_default__8lcvdka7"
           >
             <p>
               Been a long time, huh?
@@ -314,20 +314,20 @@ exports[`/about renders 1`] = `
             </p>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdknr sprinkles_height_128_default__8lcvdk70 sprinkles_minWidth_px_default__8lcvdkei sprinkles_minHeight_128_default__8lcvdkbf sprinkles_display_block_default__8lcvdk5c"
+            class="sprinkles_width_px_default__8lcvdko1 sprinkles_height_128_default__8lcvdk77 sprinkles_minWidth_px_default__8lcvdkep sprinkles_minHeight_128_default__8lcvdkbm sprinkles_display_block_default__8lcvdk5j"
           />
         </article>
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkh3 sprinkles_paddingRight_gutter_default__8lcvdkj0 sprinkles_paddingTop_32_default__8lcvdkji sprinkles_paddingBottom_32_default__8lcvdkf0 sprinkles_color_inverse__8lcvdkz sprinkles_display_flex_default__8lcvdk5i sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3t sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_flexDirection_column_default__8lcvdk5x"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkhd sprinkles_paddingRight_gutter_default__8lcvdkja sprinkles_paddingTop_32_default__8lcvdkjs sprinkles_paddingBottom_32_default__8lcvdkfa sprinkles_color_inverse__8lcvdkz sprinkles_display_flex_default__8lcvdk5p sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3r sprinkles_rowGap_24__8lcvdk22 sprinkles_alignItems_center__8lcvdk1v sprinkles_flexDirection_column_default__8lcvdk64"
     >
       <nav>
         <ul
-          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5i sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3y sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk4x sprinkles_columnGap_24_tablet__8lcvdk51"
+          class="sprinkles_padding_0__8lcvdk12 sprinkles_display_flex_default__8lcvdk5p sprinkles_flexWrap_wrap__8lcvdk1r sprinkles_justifyContent_center__8lcvdk3w sprinkles_rowGap_8__8lcvdk20 sprinkles_columnGap_16_default__8lcvdk54 sprinkles_columnGap_24_tablet__8lcvdk58"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -337,7 +337,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -347,7 +347,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -357,7 +357,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -367,7 +367,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
@@ -377,7 +377,7 @@ exports[`/about renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5c sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
+            class="sprinkles_display_block_default__8lcvdk5j sprinkles_letterSpacing_0.5__8lcvdk3o sprinkles_whiteSpace_nowrap__8lcvdk1n"
           >
             <a
               class="sprinkles_color_inherit__8lcvdk10 sprinkles_textDecoration_none__8lcvdk3p"
