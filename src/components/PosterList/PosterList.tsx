@@ -1,9 +1,14 @@
+import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { Spacer } from "../Spacer";
-import { gridStyle } from "./PosterList.css";
+import {
+  gradeStyle,
+  gridStyle,
+  posterBackgroundColorStyle,
+} from "./PosterList.css";
 
 function MediumAndVenue({
   medium,
@@ -66,51 +71,83 @@ export function Poster({
 }): JSX.Element {
   if (slug) {
     return (
-      <Box as="li" display="flex" flexDirection="column">
+      <Box
+        as="li"
+        display="flex"
+        flexDirection={{ default: "row", tablet: "column" }}
+        columnGap={24}
+        backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
+        paddingX={{ default: "popoutGutter", tablet: 0 }}
+        paddingY={{ default: 16, tablet: 0 }}
+      >
         <Link
           borderRadius={8}
           overflow="hidden"
-          maxWidth="poster"
+          maxWidth={{ default: 48, tablet: "poster" }}
           to={`/reviews/${slug}/`}
           transform="safariBorderRadiusFix"
         >
           <GraphqlImage
             image={image}
             alt={`A poster from ${title} (${year})`}
+            className={posterBackgroundColorStyle}
           />
         </Link>
-        {showTitle && (
-          <Box fontSize="posterTitle">
-            <Spacer axis="vertical" size={8} />
-            <Link color="accent" textDecoration="none" to={`/reviews/${slug}/`}>
-              {title}{" "}
-              <Box
-                as="span"
-                fontSize="xSmall"
-                color="subtle"
-                fontWeight="light"
+        <Box flexGrow={1}>
+          {showTitle && (
+            <Box fontSize="posterTitle">
+              <Spacer axis="vertical" size={{ default: 0, tablet: 8 }} />
+              <Link
+                color="accent"
+                textDecoration="none"
+                to={`/reviews/${slug}/`}
               >
-                {year}
-              </Box>
-            </Link>
-          </Box>
-        )}
-        <Box
-          color="subtle"
-          display="flex"
-          flexDirection="column"
-          fontSize="posterSlug"
-          fontWeight="light"
-          rowGap={4}
-        >
-          <Spacer axis="vertical" size={4} />
-          {grade && (
-            <Grade grade={grade} height={12} width={60} flexBasis={16} />
+                {title}{" "}
+                <Box
+                  as="span"
+                  fontSize="posterYear"
+                  color="subtle"
+                  fontWeight="light"
+                >
+                  {year}
+                </Box>
+              </Link>
+            </Box>
           )}
-          {date && <div>{date}</div>}
-          <MediumAndVenue medium={medium} venue={venue} />
+          <Box
+            color="subtle"
+            display="flex"
+            flexDirection="column"
+            fontSize="posterSlug"
+            fontWeight="light"
+            // rowGap={{ default: 0, tablet: 4 }}
+            letterSpacing={0.5}
+            lineHeight={16}
+          >
+            {grade && (
+              <Box
+                height={{ default: 16, tablet: 24 }}
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+              >
+                <Grade
+                  grade={grade}
+                  height={14}
+                  width={60}
+                  className={gradeStyle}
+                />
+              </Box>
+            )}
+            <Box>
+              <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
+              {date && <Box>{date}</Box>}
+              <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
+              <MediumAndVenue medium={medium} venue={venue} />
+            </Box>
+          </Box>
+          {details && details}
         </Box>
-        {details && details}
       </Box>
     );
   }
@@ -151,8 +188,22 @@ export function Poster({
 
 export function PosterList({ children, ...rest }: IBoxProps): JSX.Element {
   return (
-    <Box as="ol" className={gridStyle} padding={0} {...rest}>
+    <Box as="ol" className={gridStyle} paddingX={0} {...rest}>
       {children}
     </Box>
   );
 }
+
+export const query = graphql`
+  fragment PosterListPoster on File {
+    childImageSharp {
+      gatsbyImageData(
+        layout: CONSTRAINED
+        formats: [JPG, AVIF]
+        quality: 80
+        width: 200
+        placeholder: NONE
+      )
+    }
+  }
+`;

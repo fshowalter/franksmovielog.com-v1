@@ -9,29 +9,29 @@ exports[`/reviews/{slug} renders 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3b sprinkles_minHeight_16_default__8lcvdkbf sprinkles_width_full_default__8lcvdkpc"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3e sprinkles_minHeight_16_default__8lcvdkbn sprinkles_width_full_default__8lcvdkpn"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk4c sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk4h sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkhx sprinkles_paddingRight_gutter_default__8lcvdkju sprinkles_paddingTop_24_default__8lcvdkk9 sprinkles_paddingTop_32_desktop__8lcvdkke sprinkles_paddingBottom_24_default__8lcvdkfr sprinkles_paddingBottom_32_desktop__8lcvdkfw sprinkles_display_flex_default__8lcvdk5x sprinkles_rowGap_24_default__8lcvdkl3 sprinkles_alignItems_center__8lcvdk1m sprinkles_boxShadow_borderBottom_default__8lcvdk50 sprinkles_backgroundColor_default_default__8lcvdk4c"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdki5 sprinkles_paddingRight_gutter_default__8lcvdkk2 sprinkles_paddingTop_24_default__8lcvdkkh sprinkles_paddingTop_32_desktop__8lcvdkkm sprinkles_paddingBottom_24_default__8lcvdkfz sprinkles_paddingBottom_32_desktop__8lcvdkg4 sprinkles_display_flex_default__8lcvdk65 sprinkles_rowGap_24_default__8lcvdkle sprinkles_alignItems_center__8lcvdk1m sprinkles_boxShadow_borderBottom_default__8lcvdk58 sprinkles_backgroundColor_default_default__8lcvdk4h"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_alignItems_inherit__8lcvdk1n sprinkles_justifyItems_inherit__8lcvdk1l"
+        class="sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_alignItems_inherit__8lcvdk1n sprinkles_justifyItems_inherit__8lcvdk1l"
       >
         <h1
-          class="sprinkles_whiteSpace_nowrap__8lcvdk1e sprinkles_fontWeight_normal__8lcvdk1u sprinkles_fontSize_logo__8lcvdk2s"
+          class="sprinkles_whiteSpace_nowrap__8lcvdk1e sprinkles_fontWeight_normal__8lcvdk1u sprinkles_fontSize_logo__8lcvdk2t"
         >
           <a
-            class="sprinkles_color_default__8lcvdkm sprinkles_textDecoration_none__8lcvdk39"
+            class="sprinkles_color_default__8lcvdkm sprinkles_textDecoration_none__8lcvdk3c"
             href="/"
           >
             Frank's Movie Log
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdkn sprinkles_fontStyle_italic__8lcvdk1j sprinkles_lineHeight_16__8lcvdk2y sprinkles_width_full_default__8lcvdkpc sprinkles_fontSize_small__8lcvdk27"
+          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdkn sprinkles_fontStyle_italic__8lcvdk1j sprinkles_lineHeight_16__8lcvdk2z sprinkles_width_full_default__8lcvdkpn sprinkles_fontSize_small__8lcvdk27"
         >
           My life at the movies.
         </p>
@@ -39,12 +39,12 @@ exports[`/reviews/{slug} renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll_default__8lcvdk53 sprinkles_borderRadius_4__8lcvdk1 sprinkles_overflow_hidden__8lcvdk1f sprinkles_width_full_default__8lcvdkpc sprinkles_width_unset_desktop__8lcvdkoz sprinkles_maxWidth_prose_default__8lcvdkao"
+        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll_default__8lcvdk5b sprinkles_borderRadius_4__8lcvdk1 sprinkles_overflow_hidden__8lcvdk1f sprinkles_width_full_default__8lcvdkpn sprinkles_width_unset_desktop__8lcvdkpa sprinkles_maxWidth_prose_default__8lcvdkaw"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk5x sprinkles_overflow_hidden__8lcvdk1f"
+          class="sprinkles_display_flex_default__8lcvdk65 sprinkles_overflow_hidden__8lcvdk1f"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/reviews/{slug} renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdkgf sprinkles_paddingRight_16_default__8lcvdkic sprinkles_paddingTop_8_default__8lcvdkk3 sprinkles_paddingBottom_8_default__8lcvdkfl sprinkles_backgroundColor_subtle_default__8lcvdk4i sprinkles_color_default__8lcvdkm sprinkles_fontSize_normal__8lcvdk28 sprinkles_fontWeight_light__8lcvdk1t sprinkles_lineHeight_24__8lcvdk2z sprinkles_flexGrow_1__8lcvdk1h"
+            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdkgn sprinkles_paddingRight_16_default__8lcvdkik sprinkles_paddingTop_8_default__8lcvdkkb sprinkles_paddingBottom_8_default__8lcvdkft sprinkles_backgroundColor_subtle_default__8lcvdk4n sprinkles_color_default__8lcvdkm sprinkles_fontSize_normal__8lcvdk28 sprinkles_fontWeight_light__8lcvdk1t sprinkles_lineHeight_24__8lcvdk30 sprinkles_flexGrow_1__8lcvdk1h"
             id="search"
             name="q"
             placeholder="Search..."
@@ -66,7 +66,7 @@ exports[`/reviews/{slug} renders 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__i7f1b1 sprinkles_backgroundColor_subtle_default__8lcvdk4i"
+            class="SiteSearchForm_submitButtonStyle__i7f1b1 sprinkles_backgroundColor_subtle_default__8lcvdk4n"
             type="submit"
             value="Search"
           >
@@ -93,63 +93,63 @@ exports[`/reviews/{slug} renders 1`] = `
         class="sprinkles_color_accent__8lcvdkl"
       >
         <ul
-          class="sprinkles_padding_0__8lcvdkt sprinkles_display_flex_default__8lcvdk5x sprinkles_flexWrap_wrap__8lcvdk1i sprinkles_justifyContent_center_default__8lcvdk8o sprinkles_rowGap_8_default__8lcvdkkx sprinkles_columnGap_16_default__8lcvdk5c sprinkles_columnGap_24_tablet__8lcvdk5g"
+          class="sprinkles_padding_0__8lcvdkt sprinkles_display_flex_default__8lcvdk65 sprinkles_flexWrap_wrap__8lcvdk1i sprinkles_justifyContent_center_default__8lcvdk8w sprinkles_rowGap_8_default__8lcvdkl8 sprinkles_columnGap_16_default__8lcvdk5k sprinkles_columnGap_24_tablet__8lcvdk5o"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/watchlist/"
             >
               Watchlist
@@ -162,17 +162,17 @@ exports[`/reviews/{slug} renders 1`] = `
       class="sprinkles_flexGrow_1__8lcvdk1h"
     >
       <main
-        class="sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_alignItems_center__8lcvdk1m"
+        class="sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_alignItems_center__8lcvdk1m"
         id="top"
       >
         <header
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkhx sprinkles_paddingRight_gutter_default__8lcvdkju sprinkles_paddingTop_24_default__8lcvdkk9 sprinkles_paddingTop_32_desktop__8lcvdkke sprinkles_paddingBottom_24_default__8lcvdkfr sprinkles_paddingBottom_32_desktop__8lcvdkfw sprinkles_textAlign_center__8lcvdk3h sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_rowGap_16_default__8lcvdkl0"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdki5 sprinkles_paddingRight_gutter_default__8lcvdkk2 sprinkles_paddingTop_24_default__8lcvdkkh sprinkles_paddingTop_32_desktop__8lcvdkkm sprinkles_paddingBottom_24_default__8lcvdkfz sprinkles_paddingBottom_32_desktop__8lcvdkg4 sprinkles_textAlign_center__8lcvdk3k sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_rowGap_16_default__8lcvdklb"
         >
           <div
-            class="sprinkles_textAlign_inherit__8lcvdk3i"
+            class="sprinkles_textAlign_inherit__8lcvdk3l"
           >
             <h1
-              class="sprinkles_fontSize_pageTitle__8lcvdk2u"
+              class="sprinkles_fontSize_pageTitle__8lcvdk2v"
             >
               The Curse of Frankenstein
             </h1>
@@ -195,7 +195,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </span>
                
               <a
-                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk39"
+                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk3c"
                 href="#credits"
               >
                 More...
@@ -253,13 +253,13 @@ exports[`/reviews/{slug} renders 1`] = `
           </script>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdkp9 sprinkles_height_24_default__8lcvdk6r sprinkles_height_32_tablet__8lcvdk6v sprinkles_minWidth_px_default__8lcvdkf9 sprinkles_minHeight_24_default__8lcvdkbi sprinkles_minHeight_32_tablet__8lcvdkbm sprinkles_display_block_default__8lcvdk5r"
+          class="sprinkles_width_px_default__8lcvdkpk sprinkles_height_24_default__8lcvdk6z sprinkles_height_32_tablet__8lcvdk73 sprinkles_minWidth_px_default__8lcvdkfh sprinkles_minHeight_24_default__8lcvdkbq sprinkles_minHeight_32_tablet__8lcvdkbu sprinkles_display_block_default__8lcvdk5z"
         />
         <div
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkhx sprinkles_paddingRight_gutter_default__8lcvdkju sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_rowGap_32_default__8lcvdkl6 sprinkles_alignItems_center__8lcvdk1m"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdki5 sprinkles_paddingRight_gutter_default__8lcvdkk2 sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_rowGap_32_default__8lcvdklh sprinkles_alignItems_center__8lcvdk1m"
         >
           <div
-            class="sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_alignItems_inherit__8lcvdk1n"
+            class="sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_alignItems_inherit__8lcvdk1n"
           >
             <img
               alt="A: 5 stars (out of 5)"
@@ -267,7 +267,7 @@ exports[`/reviews/{slug} renders 1`] = `
               style="height: 32px; width: 160px;"
             />
             <div
-              class="sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_color_subtle__8lcvdkp sprinkles_alignItems_inherit__8lcvdk1n sprinkles_letterSpacing_0.5__8lcvdk38"
+              class="sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_color_subtle__8lcvdkp sprinkles_alignItems_inherit__8lcvdk1n sprinkles_letterSpacing_0.5__8lcvdk3a"
             >
               <span>
                 on
@@ -276,7 +276,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <div
-            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk1t sprinkles_letterSpacing_0.3__8lcvdk37 sprinkles_fontSize_prose__8lcvdk2r sprinkles_maxWidth_prose_default__8lcvdkao sprinkles_lineHeight_prose__8lcvdk33"
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk1t sprinkles_letterSpacing_0.3__8lcvdk39 sprinkles_fontSize_prose__8lcvdk2s sprinkles_maxWidth_prose_default__8lcvdkaw sprinkles_lineHeight_prose__8lcvdk35"
           >
             <p>
               For Peter Cushing and Christopher Lee’s first film for Hammer, 
@@ -343,13 +343,13 @@ exports[`/reviews/{slug} renders 1`] = `
           </div>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdkp9 sprinkles_height_80_default__8lcvdk76 sprinkles_minWidth_px_default__8lcvdkf9 sprinkles_minHeight_80_default__8lcvdkbx sprinkles_display_block_default__8lcvdk5r"
+          class="sprinkles_width_px_default__8lcvdkpk sprinkles_height_80_default__8lcvdk7e sprinkles_minWidth_px_default__8lcvdkfh sprinkles_minHeight_80_default__8lcvdkc5 sprinkles_display_block_default__8lcvdk5z"
         />
         <div
-          class="sprinkles_maxWidth_popout_default__8lcvdkal sprinkles_width_full_default__8lcvdkpc"
+          class="sprinkles_maxWidth_popout_default__8lcvdkat sprinkles_width_full_default__8lcvdkpn"
         >
           <h2
-            class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_reviewSubHeading__8lcvdk2o sprinkles_fontWeight_normal__8lcvdk1u sprinkles_letterSpacing_0.2__8lcvdk35 sprinkles_boxShadow_borderBottom_default__8lcvdk50"
+            class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_reviewSubHeading__8lcvdk2p sprinkles_fontWeight_normal__8lcvdk1u sprinkles_letterSpacing_0.2__8lcvdk37 sprinkles_boxShadow_borderBottom_default__8lcvdk58"
           >
             Viewing History
           </h2>
@@ -357,7 +357,7 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_padding_0__8lcvdkt"
           >
             <div
-              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_backgroundColor_zebra_default__8lcvdk4r sprinkles_display_block_default__8lcvdk5r"
+              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_backgroundColor_zebra_default__8lcvdk4w sprinkles_display_block_default__8lcvdk5z"
             >
               <div
                 class="ViewingHistoryEntry_gridAreas_icon__2vsig51"
@@ -391,7 +391,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 class="ViewingHistoryEntry_gridAreas_date__2vsig52"
               >
                 <span
-                  class="sprinkles_color_default__8lcvdkm sprinkles_display_inline-block_default__8lcvdk63"
+                  class="sprinkles_color_default__8lcvdkm sprinkles_display_inline-block_default__8lcvdk6b"
                 >
                   Sat Sep 19, 2020
                 </span>
@@ -409,11 +409,11 @@ exports[`/reviews/{slug} renders 1`] = `
                 </span>
                  
                 <span
-                  class="sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_small__8lcvdk27 sprinkles_lineHeight_1__8lcvdk2w"
+                  class="sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_subtle__8lcvdkp sprinkles_fontSize_small__8lcvdk27 sprinkles_lineHeight_1__8lcvdk2x"
                 >
                   (
                   <span
-                    class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk1t sprinkles_letterSpacing_0.3__8lcvdk37 sprinkles_fontSize_small__8lcvdk27 sprinkles_lineHeight_1__8lcvdk2w"
+                    class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_fontWeight_light__8lcvdk1t sprinkles_letterSpacing_0.3__8lcvdk39 sprinkles_fontSize_small__8lcvdk27 sprinkles_lineHeight_1__8lcvdk2x"
                   >
                     <span>
                       2012 | Lionsgate Films | Academy ratio
@@ -430,7 +430,7 @@ exports[`/reviews/{slug} renders 1`] = `
               />
             </div>
             <div
-              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_backgroundColor_zebra_default__8lcvdk4r sprinkles_display_block_default__8lcvdk5r"
+              class="ViewingHistoryEntry_gridStyle__2vsig50 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_backgroundColor_zebra_default__8lcvdk4w sprinkles_display_block_default__8lcvdk5z"
             >
               <div
                 class="ViewingHistoryEntry_gridAreas_icon__2vsig51"
@@ -464,7 +464,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 class="ViewingHistoryEntry_gridAreas_date__2vsig52"
               >
                 <span
-                  class="sprinkles_color_default__8lcvdkm sprinkles_display_inline-block_default__8lcvdk63"
+                  class="sprinkles_color_default__8lcvdkm sprinkles_display_inline-block_default__8lcvdk6b"
                 >
                   Sat Oct 24, 2015
                 </span>
@@ -492,10 +492,10 @@ exports[`/reviews/{slug} renders 1`] = `
           </ul>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdkp9 sprinkles_height_128_default__8lcvdk7f sprinkles_minWidth_px_default__8lcvdkf9 sprinkles_minHeight_128_default__8lcvdkc6 sprinkles_display_block_default__8lcvdk5r"
+          class="sprinkles_width_px_default__8lcvdkpk sprinkles_height_128_default__8lcvdk7n sprinkles_minWidth_px_default__8lcvdkfh sprinkles_minHeight_128_default__8lcvdkce sprinkles_display_block_default__8lcvdk5z"
         />
         <aside
-          class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_paddingTop_32_default__8lcvdkkc sprinkles_paddingBottom_32_default__8lcvdkfu sprinkles_position_relative_default__8lcvdkko sprinkles_maxWidth_popout_default__8lcvdkal sprinkles_width_full_default__8lcvdkpc sprinkles_backgroundColor_subtle_default__8lcvdk4i"
+          class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_paddingTop_32_default__8lcvdkkk sprinkles_paddingBottom_32_default__8lcvdkg2 sprinkles_position_relative_default__8lcvdkkw sprinkles_maxWidth_popout_default__8lcvdkat sprinkles_width_full_default__8lcvdkpn sprinkles_backgroundColor_subtle_default__8lcvdk4n"
           id="credits"
         >
           <div
@@ -549,12 +549,12 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <header
-            class="sprinkles_fontSize_creditsTitle__8lcvdk2t sprinkles_paddingBottom_24_default__8lcvdkfr"
+            class="sprinkles_fontSize_creditsTitle__8lcvdk2u sprinkles_paddingBottom_24_default__8lcvdkfz"
           >
             The Curse of Frankenstein
           </header>
           <dl
-            class="sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_rowGap_24_default__8lcvdkl3"
+            class="sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_rowGap_24_default__8lcvdkle"
           >
             <div
               class="Credits_creditStyle__1l00qpw2"
@@ -628,16 +628,16 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </dl>
           <span
-            class="sprinkles_width_px_default__8lcvdkp9 sprinkles_height_32_default__8lcvdk6u sprinkles_minWidth_px_default__8lcvdkf9 sprinkles_minHeight_32_default__8lcvdkbl sprinkles_display_block_default__8lcvdk5r"
+            class="sprinkles_width_px_default__8lcvdkpk sprinkles_height_32_default__8lcvdk72 sprinkles_minWidth_px_default__8lcvdkfh sprinkles_minHeight_32_default__8lcvdkbt sprinkles_display_block_default__8lcvdk5z"
           />
           <ul
-            class="sprinkles_display_flex_default__8lcvdk5x sprinkles_flexWrap_wrap__8lcvdk1i sprinkles_columnGap_8_default__8lcvdk59 sprinkles_rowGap_8_default__8lcvdkkx sprinkles_padding_0__8lcvdkt"
+            class="sprinkles_display_flex_default__8lcvdk65 sprinkles_flexWrap_wrap__8lcvdk1i sprinkles_columnGap_8_default__8lcvdk5h sprinkles_rowGap_8_default__8lcvdkl8 sprinkles_padding_0__8lcvdkt"
           >
             <li
-              class="sprinkles_display_block_default__8lcvdk5r"
+              class="sprinkles_display_block_default__8lcvdk5z"
             >
               <a
-                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse_default__8lcvdk4l sprinkles_display_flex_default__8lcvdk5x sprinkles_alignItems_center__8lcvdk1m sprinkles_whiteSpace_nowrap__8lcvdk1e sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk39"
+                class="ReviewWatchlistLinks_linkStyle__rp00b61 sprinkles_backgroundColor_inverse_default__8lcvdk4q sprinkles_display_flex_default__8lcvdk65 sprinkles_alignItems_center__8lcvdk1m sprinkles_whiteSpace_nowrap__8lcvdk1e sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk3c"
                 href="/watchlist/performers/christopher-lee/"
               >
                 <div
@@ -701,16 +701,16 @@ exports[`/reviews/{slug} renders 1`] = `
           </a>
         </aside>
         <span
-          class="sprinkles_width_px_default__8lcvdkp9 sprinkles_height_128_default__8lcvdk7f sprinkles_minWidth_px_default__8lcvdkf9 sprinkles_minHeight_128_default__8lcvdkc6 sprinkles_display_block_default__8lcvdk5r"
+          class="sprinkles_width_px_default__8lcvdkpk sprinkles_height_128_default__8lcvdk7n sprinkles_minWidth_px_default__8lcvdkfh sprinkles_minHeight_128_default__8lcvdkce sprinkles_display_block_default__8lcvdk5z"
         />
         <div
-          class="sprinkles_maxWidth_popout_default__8lcvdkal sprinkles_maxWidth_full_tablet__8lcvdkb1 sprinkles_width_full_default__8lcvdkpc sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_rowGap_48_default__8lcvdkl9 sprinkles_rowGap_96_desktop__8lcvdklh sprinkles_alignItems_center__8lcvdk1m sprinkles_backgroundColor_default_default__8lcvdk4c sprinkles_backgroundColor_subtle_tablet__8lcvdk4j sprinkles_paddingTop_0_default__8lcvdkk0 sprinkles_paddingTop_32_tablet__8lcvdkkd sprinkles_paddingBottom_0_default__8lcvdkfi sprinkles_paddingBottom_128_tablet__8lcvdkg4"
+          class="sprinkles_maxWidth_popout_default__8lcvdkat sprinkles_maxWidth_full_tablet__8lcvdkb9 sprinkles_width_full_default__8lcvdkpn sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_rowGap_48_default__8lcvdklk sprinkles_rowGap_96_desktop__8lcvdkls sprinkles_alignItems_center__8lcvdk1m sprinkles_backgroundColor_default_default__8lcvdk4h sprinkles_backgroundColor_subtle_tablet__8lcvdk4o sprinkles_paddingTop_0_default__8lcvdkk8 sprinkles_paddingTop_32_tablet__8lcvdkkl sprinkles_paddingBottom_0_default__8lcvdkfq sprinkles_paddingBottom_128_tablet__8lcvdkgc"
         >
           <nav
-            class="sprinkles_position_relative_default__8lcvdkko sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_alignItems_center__8lcvdk1m"
+            class="sprinkles_position_relative_default__8lcvdkkw sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_alignItems_center__8lcvdk1m"
           >
             <div
-              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingLeft_gutter_desktop__8lcvdkhz sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_paddingRight_gutter_desktop__8lcvdkjw sprinkles_paddingTop_8_default__8lcvdkk3 sprinkles_paddingTop_16_tablet__8lcvdkk7 sprinkles_paddingBottom_8_default__8lcvdkfl sprinkles_paddingBottom_16_tablet__8lcvdkfp sprinkles_boxShadow_borderBottom_default__8lcvdk50 sprinkles_boxShadow_unset_tablet__8lcvdk4y sprinkles_letterSpacing_1__8lcvdk34 sprinkles_fontSize_small__8lcvdk27 sprinkles_width_full_default__8lcvdkpc"
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingLeft_gutter_desktop__8lcvdki7 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_desktop__8lcvdkk4 sprinkles_paddingTop_8_default__8lcvdkkb sprinkles_paddingTop_16_tablet__8lcvdkkf sprinkles_paddingBottom_8_default__8lcvdkft sprinkles_paddingBottom_16_tablet__8lcvdkfx sprinkles_boxShadow_borderBottom_default__8lcvdk58 sprinkles_boxShadow_unset_tablet__8lcvdk56 sprinkles_letterSpacing_1__8lcvdk36 sprinkles_fontSize_small__8lcvdk27 sprinkles_width_full_default__8lcvdkpn"
             >
               <span
                 class="sprinkles_fontWeight_semiBold__8lcvdk1v sprinkles_color_muted__8lcvdkn"
@@ -718,7 +718,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 More 
               </span>
               <a
-                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk39 sprinkles_display_inline-flex_default__8lcvdk60 sprinkles_columnGap_.5ch_default__8lcvdk56"
+                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk3c sprinkles_display_inline-flex_default__8lcvdk68 sprinkles_columnGap_.5ch_default__8lcvdk5e"
                 href="/watchlist/collections/hammer-films"
               >
                 Hammer Films
@@ -728,7 +728,7 @@ exports[`/reviews/{slug} renders 1`] = `
               class="RelatedMoviesList_movieListStyle__mj07pw1"
             >
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -792,12 +792,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/the-quatermass-xperiment-1955/"
                   >
                     The Quatermass Xperiment 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1955
                     </span>
@@ -815,7 +815,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -879,12 +879,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/x-the-unknown-1956/"
                   >
                     X the Unknown 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1956
                     </span>
@@ -902,7 +902,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -966,12 +966,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/quatermass-2-1957/"
                   >
                     Quatermass 2 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1957
                     </span>
@@ -989,7 +989,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1053,12 +1053,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/the-abominable-snowman-1957/"
                   >
                     The Abominable Snowman 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1957
                     </span>
@@ -1076,10 +1076,10 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMoviesList_seeAllLinkGridStyle__mj07pw0 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_paddingTop_8_default__8lcvdkk3 sprinkles_paddingTop_16_tablet__8lcvdkk7 sprinkles_paddingBottom_8_default__8lcvdkfl sprinkles_paddingBottom_16_tablet__8lcvdkfp sprinkles_display_block_default__8lcvdk5r sprinkles_textAlign_right__8lcvdk3g sprinkles_boxShadow_borderBottom_default__8lcvdk50 sprinkles_boxShadow_unset_tablet__8lcvdk4y"
+                class="RelatedMoviesList_seeAllLinkGridStyle__mj07pw0 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_paddingTop_8_default__8lcvdkkb sprinkles_paddingTop_16_tablet__8lcvdkkf sprinkles_paddingBottom_8_default__8lcvdkft sprinkles_paddingBottom_16_tablet__8lcvdkfx sprinkles_display_block_default__8lcvdk5z sprinkles_textAlign_right__8lcvdk3j sprinkles_boxShadow_borderBottom_default__8lcvdk58 sprinkles_boxShadow_unset_tablet__8lcvdk56"
               >
                 <a
-                  class="sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_accent__8lcvdkl sprinkles_fontSize_small__8lcvdk27 sprinkles_letterSpacing_1__8lcvdk34"
+                  class="sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_accent__8lcvdkl sprinkles_fontSize_small__8lcvdk27 sprinkles_letterSpacing_1__8lcvdk36"
                   href="/watchlist/collections/hammer-films/"
                 >
                   All  Hammer Films →
@@ -1088,10 +1088,10 @@ exports[`/reviews/{slug} renders 1`] = `
             </ul>
           </nav>
           <nav
-            class="sprinkles_position_relative_default__8lcvdkko sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_alignItems_center__8lcvdk1m"
+            class="sprinkles_position_relative_default__8lcvdkkw sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_alignItems_center__8lcvdk1m"
           >
             <div
-              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingLeft_gutter_desktop__8lcvdkhz sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_paddingRight_gutter_desktop__8lcvdkjw sprinkles_paddingTop_8_default__8lcvdkk3 sprinkles_paddingTop_16_tablet__8lcvdkk7 sprinkles_paddingBottom_8_default__8lcvdkfl sprinkles_paddingBottom_16_tablet__8lcvdkfp sprinkles_boxShadow_borderBottom_default__8lcvdk50 sprinkles_boxShadow_unset_tablet__8lcvdk4y sprinkles_letterSpacing_1__8lcvdk34 sprinkles_fontSize_small__8lcvdk27 sprinkles_width_full_default__8lcvdkpc"
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingLeft_gutter_desktop__8lcvdki7 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_desktop__8lcvdkk4 sprinkles_paddingTop_8_default__8lcvdkkb sprinkles_paddingTop_16_tablet__8lcvdkkf sprinkles_paddingBottom_8_default__8lcvdkft sprinkles_paddingBottom_16_tablet__8lcvdkfx sprinkles_boxShadow_borderBottom_default__8lcvdk58 sprinkles_boxShadow_unset_tablet__8lcvdk56 sprinkles_letterSpacing_1__8lcvdk36 sprinkles_fontSize_small__8lcvdk27 sprinkles_width_full_default__8lcvdkpn"
             >
               <span
                 class="sprinkles_fontWeight_semiBold__8lcvdk1v sprinkles_color_muted__8lcvdkn"
@@ -1099,7 +1099,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 More with 
               </span>
               <a
-                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk39 sprinkles_display_inline-flex_default__8lcvdk60 sprinkles_columnGap_.5ch_default__8lcvdk56"
+                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk3c sprinkles_display_inline-flex_default__8lcvdk68 sprinkles_columnGap_.5ch_default__8lcvdk5e"
                 href="/watchlist/performers/peter-cushing"
               >
                 Peter Cushing
@@ -1109,7 +1109,7 @@ exports[`/reviews/{slug} renders 1`] = `
               class="RelatedMoviesList_movieListStyle__mj07pw1"
             >
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1173,12 +1173,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/a-chump-at-oxford-1939/"
                   >
                     A Chump at Oxford 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1939
                     </span>
@@ -1196,7 +1196,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1260,12 +1260,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/the-man-in-the-iron-mask-1939/"
                   >
                     The Man in the Iron Mask 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1939
                     </span>
@@ -1283,7 +1283,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1347,12 +1347,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/the-abominable-snowman-1957/"
                   >
                     The Abominable Snowman 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1957
                     </span>
@@ -1370,7 +1370,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1434,12 +1434,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/violent-playground-1958/"
                   >
                     Violent Playground 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1958
                     </span>
@@ -1457,10 +1457,10 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMoviesList_seeAllLinkGridStyle__mj07pw0 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_paddingTop_8_default__8lcvdkk3 sprinkles_paddingTop_16_tablet__8lcvdkk7 sprinkles_paddingBottom_8_default__8lcvdkfl sprinkles_paddingBottom_16_tablet__8lcvdkfp sprinkles_display_block_default__8lcvdk5r sprinkles_textAlign_right__8lcvdk3g sprinkles_boxShadow_borderBottom_default__8lcvdk50 sprinkles_boxShadow_unset_tablet__8lcvdk4y"
+                class="RelatedMoviesList_seeAllLinkGridStyle__mj07pw0 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_paddingTop_8_default__8lcvdkkb sprinkles_paddingTop_16_tablet__8lcvdkkf sprinkles_paddingBottom_8_default__8lcvdkft sprinkles_paddingBottom_16_tablet__8lcvdkfx sprinkles_display_block_default__8lcvdk5z sprinkles_textAlign_right__8lcvdk3j sprinkles_boxShadow_borderBottom_default__8lcvdk58 sprinkles_boxShadow_unset_tablet__8lcvdk56"
               >
                 <a
-                  class="sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_accent__8lcvdkl sprinkles_fontSize_small__8lcvdk27 sprinkles_letterSpacing_1__8lcvdk34"
+                  class="sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_accent__8lcvdkl sprinkles_fontSize_small__8lcvdk27 sprinkles_letterSpacing_1__8lcvdk36"
                   href="/watchlist/performers/peter-cushing/"
                 >
                   All  with Peter Cushing →
@@ -1469,10 +1469,10 @@ exports[`/reviews/{slug} renders 1`] = `
             </ul>
           </nav>
           <nav
-            class="sprinkles_position_relative_default__8lcvdkko sprinkles_display_flex_default__8lcvdk5x sprinkles_flexDirection_column_default__8lcvdk6c sprinkles_alignItems_center__8lcvdk1m"
+            class="sprinkles_position_relative_default__8lcvdkkw sprinkles_display_flex_default__8lcvdk65 sprinkles_flexDirection_column_default__8lcvdk6k sprinkles_alignItems_center__8lcvdk1m"
           >
             <div
-              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingLeft_gutter_desktop__8lcvdkhz sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_paddingRight_gutter_desktop__8lcvdkjw sprinkles_paddingTop_8_default__8lcvdkk3 sprinkles_paddingTop_16_tablet__8lcvdkk7 sprinkles_paddingBottom_8_default__8lcvdkfl sprinkles_paddingBottom_16_tablet__8lcvdkfp sprinkles_boxShadow_borderBottom_default__8lcvdk50 sprinkles_boxShadow_unset_tablet__8lcvdk4y sprinkles_letterSpacing_1__8lcvdk34 sprinkles_fontSize_small__8lcvdk27 sprinkles_width_full_default__8lcvdkpc"
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingLeft_gutter_desktop__8lcvdki7 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_desktop__8lcvdkk4 sprinkles_paddingTop_8_default__8lcvdkkb sprinkles_paddingTop_16_tablet__8lcvdkkf sprinkles_paddingBottom_8_default__8lcvdkft sprinkles_paddingBottom_16_tablet__8lcvdkfx sprinkles_boxShadow_borderBottom_default__8lcvdk58 sprinkles_boxShadow_unset_tablet__8lcvdk56 sprinkles_letterSpacing_1__8lcvdk36 sprinkles_fontSize_small__8lcvdk27 sprinkles_width_full_default__8lcvdkpn"
             >
               <span
                 class="sprinkles_fontWeight_semiBold__8lcvdk1v sprinkles_color_muted__8lcvdkn"
@@ -1480,7 +1480,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 More 
               </span>
               <a
-                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk39 sprinkles_display_inline-flex_default__8lcvdk60 sprinkles_columnGap_.5ch_default__8lcvdk56"
+                class="sprinkles_color_accent__8lcvdkl sprinkles_textDecoration_none__8lcvdk3c sprinkles_display_inline-flex_default__8lcvdk68 sprinkles_columnGap_.5ch_default__8lcvdk5e"
                 href="/reviews/"
               >
                 Reviews
@@ -1490,7 +1490,7 @@ exports[`/reviews/{slug} renders 1`] = `
               class="RelatedMoviesList_movieListStyle__mj07pw1"
             >
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1554,12 +1554,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/cult-of-chucky-2017/"
                   >
                     Cult of Chucky 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       2017
                     </span>
@@ -1577,7 +1577,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1641,12 +1641,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/curse-of-chucky-2013/"
                   >
                     Curse of Chucky 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       2013
                     </span>
@@ -1664,7 +1664,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1728,12 +1728,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/curse-of-the-demon-1957/"
                   >
                     Curse of the Demon 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       1957
                     </span>
@@ -1751,7 +1751,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx"
+                class="RelatedMovie_gridStyle__21r47v2 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5"
               >
                 <div
                   class="RelatedMovie_gridAreas_still__21r47v5"
@@ -1815,12 +1815,12 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="RelatedMovie_gridAreas_title__21r47v3"
                 >
                   <a
-                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2p sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5r"
+                    class="sprinkles_fontSize_relatedMovieTitle__8lcvdk2q sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_default__8lcvdkm sprinkles_display_block_default__8lcvdk5z"
                     href="/reviews/dagon-2001/"
                   >
                     Dagon 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2w"
+                      class="sprinkles_fontSize_small__8lcvdk27 sprinkles_fontWeight_light__8lcvdk1t sprinkles_color_muted__8lcvdkn sprinkles_lineHeight_1__8lcvdk2x"
                     >
                       2001
                     </span>
@@ -1838,10 +1838,10 @@ exports[`/reviews/{slug} renders 1`] = `
                 </div>
               </li>
               <li
-                class="RelatedMoviesList_seeAllLinkGridStyle__mj07pw0 sprinkles_paddingLeft_popoutGutter_default__8lcvdki0 sprinkles_paddingRight_popoutGutter_default__8lcvdkjx sprinkles_paddingTop_8_default__8lcvdkk3 sprinkles_paddingTop_16_tablet__8lcvdkk7 sprinkles_paddingBottom_8_default__8lcvdkfl sprinkles_paddingBottom_16_tablet__8lcvdkfp sprinkles_display_block_default__8lcvdk5r sprinkles_textAlign_right__8lcvdk3g sprinkles_boxShadow_borderBottom_default__8lcvdk50 sprinkles_boxShadow_unset_tablet__8lcvdk4y"
+                class="RelatedMoviesList_seeAllLinkGridStyle__mj07pw0 sprinkles_paddingLeft_popoutGutter_default__8lcvdki8 sprinkles_paddingRight_popoutGutter_default__8lcvdkk5 sprinkles_paddingTop_8_default__8lcvdkkb sprinkles_paddingTop_16_tablet__8lcvdkkf sprinkles_paddingBottom_8_default__8lcvdkft sprinkles_paddingBottom_16_tablet__8lcvdkfx sprinkles_display_block_default__8lcvdk5z sprinkles_textAlign_right__8lcvdk3j sprinkles_boxShadow_borderBottom_default__8lcvdk58 sprinkles_boxShadow_unset_tablet__8lcvdk56"
               >
                 <a
-                  class="sprinkles_textDecoration_none__8lcvdk39 sprinkles_color_accent__8lcvdkl sprinkles_fontSize_small__8lcvdk27 sprinkles_letterSpacing_1__8lcvdk34"
+                  class="sprinkles_textDecoration_none__8lcvdk3c sprinkles_color_accent__8lcvdkl sprinkles_fontSize_small__8lcvdk27 sprinkles_letterSpacing_1__8lcvdk36"
                   href="/reviews/"
                 >
                   All Reviews →
@@ -1851,7 +1851,7 @@ exports[`/reviews/{slug} renders 1`] = `
           </nav>
         </div>
         <span
-          class="sprinkles_width_px_default__8lcvdkp9 sprinkles_height_128_default__8lcvdk7f sprinkles_height_0_tablet__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkf9 sprinkles_minHeight_128_default__8lcvdkc6 sprinkles_minHeight_0_tablet__8lcvdkb7 sprinkles_display_block_default__8lcvdk5r"
+          class="sprinkles_width_px_default__8lcvdkpk sprinkles_height_128_default__8lcvdk7n sprinkles_height_0_tablet__8lcvdk6o sprinkles_minWidth_px_default__8lcvdkfh sprinkles_minHeight_128_default__8lcvdkce sprinkles_minHeight_0_tablet__8lcvdkbf sprinkles_display_block_default__8lcvdk5z"
         />
       </main>
       <script
@@ -1861,67 +1861,67 @@ exports[`/reviews/{slug} renders 1`] = `
       </script>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkhx sprinkles_paddingRight_gutter_default__8lcvdkju sprinkles_paddingTop_32_default__8lcvdkkc sprinkles_paddingBottom_32_default__8lcvdkfu sprinkles_color_inverse__8lcvdkq sprinkles_display_flex_default__8lcvdk5x sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3b sprinkles_rowGap_24_default__8lcvdkl3 sprinkles_alignItems_center__8lcvdk1m sprinkles_flexDirection_column_default__8lcvdk6c"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdki5 sprinkles_paddingRight_gutter_default__8lcvdkk2 sprinkles_paddingTop_32_default__8lcvdkkk sprinkles_paddingBottom_32_default__8lcvdkg2 sprinkles_color_inverse__8lcvdkq sprinkles_display_flex_default__8lcvdk65 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk3e sprinkles_rowGap_24_default__8lcvdkle sprinkles_alignItems_center__8lcvdk1m sprinkles_flexDirection_column_default__8lcvdk6k"
     >
       <nav>
         <ul
-          class="sprinkles_padding_0__8lcvdkt sprinkles_display_flex_default__8lcvdk5x sprinkles_flexWrap_wrap__8lcvdk1i sprinkles_justifyContent_center_default__8lcvdk8o sprinkles_rowGap_8_default__8lcvdkkx sprinkles_columnGap_16_default__8lcvdk5c sprinkles_columnGap_24_tablet__8lcvdk5g"
+          class="sprinkles_padding_0__8lcvdkt sprinkles_display_flex_default__8lcvdk65 sprinkles_flexWrap_wrap__8lcvdk1i sprinkles_justifyContent_center_default__8lcvdk8w sprinkles_rowGap_8_default__8lcvdkl8 sprinkles_columnGap_16_default__8lcvdk5k sprinkles_columnGap_24_tablet__8lcvdk5o"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk5r sprinkles_letterSpacing_0.5__8lcvdk38 sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk5z sprinkles_letterSpacing_0.5__8lcvdk3a sprinkles_whiteSpace_nowrap__8lcvdk1e"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+              class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
               href="/watchlist/"
             >
               Watchlist
@@ -1930,11 +1930,11 @@ exports[`/reviews/{slug} renders 1`] = `
         </ul>
       </nav>
       <p
-        class="sprinkles_fontWeight_light__8lcvdk1t sprinkles_fontSize_small__8lcvdk27 sprinkles_lineHeight_16__8lcvdk2y"
+        class="sprinkles_fontWeight_light__8lcvdk1t sprinkles_fontSize_small__8lcvdk27 sprinkles_lineHeight_16__8lcvdk2z"
       >
         All stills used in accordance with the 
         <a
-          class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk39"
+          class="sprinkles_color_inherit__8lcvdkr sprinkles_textDecoration_none__8lcvdk3c"
           href="http://www.copyright.gov/title17/92chap1.html#107"
         >
           Fair Use Law.

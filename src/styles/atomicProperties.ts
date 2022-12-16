@@ -48,12 +48,36 @@ export const atomicProperties = {
       lineHeight: "1.5rem",
     },
     posterTitle: {
-      fontSize: "1rem",
-      lineHeight: "1.25rem",
+      fontSize: "1.1875rem",
+      lineHeight: "1.5rem",
+
+      "@media": {
+        [minMediaQuery("tablet")]: {
+          fontSize: "1rem",
+          lineHeight: "1.25rem",
+        },
+      },
+    },
+    posterYear: {
+      fontSize: ".75rem",
+      lineHeight: 1,
+
+      "@media": {
+        [minMediaQuery("tablet")]: {
+          fontSize: "0.75rem",
+        },
+      },
     },
     posterSlug: {
-      fontSize: "0.75rem",
+      fontSize: ".875rem",
       lineHeight: "1rem",
+
+      "@media": {
+        [minMediaQuery("tablet")]: {
+          fontSize: "0.75rem",
+          lineHeight: "1rem",
+        },
+      },
     },
     yearNavigation: {
       fontSize: "1.125rem",
@@ -129,9 +153,9 @@ export const atomicProperties = {
   backgroundPositionY: [16],
 
   textAlign: ["left", "right", "center", "inherit"],
-
+  textUnderlinePosition: ["under"],
   // columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
   flexBasis: size,
   flexShrink: [0],
-  zIndex: [100],
+  zIndex: [100, 1000],
 } as const;

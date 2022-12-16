@@ -22,6 +22,10 @@ import {
   foregroundColors,
 } from "../../styles/colors.css";
 import { HEADER_HEIGHT } from "../../styles/sizes.css";
+import {
+  stickyFiltersStyle,
+  stickyHeaderStyle,
+} from "./PosterListWithFilters.css";
 import type { Sort } from "./PosterListWithFilters.reducer";
 import {
   ActionTypes,
@@ -190,7 +194,7 @@ export function PosterListWithFilters({
         >
           <Box maxWidth="prose">{children}</Box>
           <Spacer axis="vertical" size={32} />
-          <Box>
+          <Box className={stickyFiltersStyle}>
             <Fieldset legend="Filter & Sort">
               <DebouncedInput
                 label="Title"
@@ -232,7 +236,7 @@ export function PosterListWithFilters({
                   label="Medium"
                   onChange={(e) =>
                     dispatch({
-                      type: ActionTypes.FILTER_VENUE,
+                      type: ActionTypes.FILTER_MEDIUM,
                       value: e.target.value,
                     })
                   }
@@ -303,15 +307,8 @@ export function PosterListWithFilters({
                 <option value="grade-asc">Grade (Worst First)</option>
               </SelectField>
             </Fieldset>
-            <Box color="subtle" paddingX="gutter" textAlign="center">
-              <Spacer axis="vertical" size={32} />
-              <ListInfo
-                visible={state.showCount}
-                total={state.filteredItems.length}
-              />
-              <Spacer axis="vertical" size={32} />
-            </Box>
           </Box>
+          <Spacer axis="vertical" size={32} />
         </Box>
         <Box
           name="list"
@@ -320,6 +317,22 @@ export function PosterListWithFilters({
           flexDirection="column"
           flexGrow={1}
         >
+          <Box
+            color="subtle"
+            paddingX="gutter"
+            textAlign="center"
+            position="sticky"
+            top={{ default: 0, desktop: HEADER_HEIGHT }}
+            backgroundColor="default"
+            zIndex={1000}
+            lineHeight={36}
+          >
+            <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
+            <ListInfo
+              visible={state.showCount}
+              total={state.filteredItems.length}
+            />
+          </Box>
           <Box as="ol" data-testid="poster-list" padding={0}>
             {[...groupedItems].map(([group, items], index) => {
               return (
@@ -328,9 +341,8 @@ export function PosterListWithFilters({
                     fontSize="groupHeading"
                     style={{ zIndex: index + 100 }}
                     paddingTop={{ default: 0, desktop: 16 }}
-                    position="sticky"
                     backgroundColor="default"
-                    top={{ default: 0, desktop: HEADER_HEIGHT }}
+                    className={stickyHeaderStyle}
                   >
                     <Box
                       backgroundColor="canvas"
@@ -342,8 +354,8 @@ export function PosterListWithFilters({
                   </Box>
                   <Spacer axis="vertical" size={16} />
                   <PosterList
-                    paddingLeft={{ default: "gutter", desktop: 24 }}
-                    paddingRight={{ default: "gutter", desktop: 0 }}
+                    paddingLeft={{ default: 0, tablet: "gutter", desktop: 24 }}
+                    paddingRight={{ default: 0, tablet: "gutter", desktop: 0 }}
                   >
                     {items.map((item) => {
                       return (
@@ -361,11 +373,17 @@ export function PosterListWithFilters({
                       );
                     })}
                   </PosterList>
+                  <Spacer axis="vertical" size={16} />
                 </Box>
               );
             })}
           </Box>
-          <Box display="flex" flexDirection="column" alignItems="center">
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            paddingX="gutter"
+          >
             {state.filteredItems.length > state.showCount && (
               <>
                 <Spacer axis="vertical" size={32} />

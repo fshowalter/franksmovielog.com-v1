@@ -76,7 +76,7 @@ export function initState({
 
 export enum ActionTypes {
   FILTER_TITLE = "FILTER_TITLE",
-  FILTER_VENUE = "FILTER_VENUE",
+  FILTER_MEDIUM = "FILTER_MEDIUM",
   FILTER_GRADE = "FILTER_GRADE",
   FILTER_GENRES = "FILTER_GENRES",
   FILTER_VIEWING_YEAR = "FILTER_VIEWING_YEAR",
@@ -93,8 +93,8 @@ interface FilterTitleAction {
 }
 
 /** Action to filter by venue. */
-interface FilterVenueAction {
-  type: ActionTypes.FILTER_VENUE;
+interface FilterMediumAction {
+  type: ActionTypes.FILTER_MEDIUM;
   /** The value to filter on. */
   value: string;
 }
@@ -143,7 +143,7 @@ export type Action =
   | FilterTitleAction
   | FilterReleaseYearAction
   | FilterViewingYearAction
-  | FilterVenueAction
+  | FilterMediumAction
   | FilterGradeAction
   | FilterGenresAction
   | SortAction
@@ -181,7 +181,7 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.FILTER_VENUE: {
+    case ActionTypes.FILTER_MEDIUM: {
       filters = {
         ...state.filters,
         venue: (item: IPosterListWithFiltersItem) => {
@@ -189,7 +189,7 @@ export function reducer(state: State, action: Action): State {
             return true;
           }
 
-          return item.venue === action.value;
+          return item.medium === action.value;
         },
       };
       filteredItems = sortItems(

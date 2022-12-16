@@ -44,6 +44,16 @@ const responsiveAtomicProperties = defineProperties({
           },
         },
       },
+      zebraOff: {
+        selectors: {
+          "&:nth-child(odd)": {
+            backgroundColor: "inherit",
+          },
+          "&:nth-child(even)": {
+            backgroundColor: "inherit",
+          },
+        },
+      },
     },
     boxShadow: {
       unset: "unset",
@@ -111,7 +121,7 @@ const responsiveAtomicProperties = defineProperties({
     },
     paddingTop: [0, 8, 16, 24, 32, 40, 48, 128],
     position: ["relative", "sticky"],
-    rowGap: [4, 8, 16, 24, 32, 48, 64, 96],
+    rowGap: [0, 4, 8, 16, 24, 32, 48, 64, 96],
     top: size,
     width: {
       unset: "unset",

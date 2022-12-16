@@ -31,25 +31,32 @@ export default function ReviewsIndexPage({
       distinctViewingYears={data.viewing.viewingYears}
       initialSort="viewing-date-desc"
     >
-      <Box as="h1" fontSize="pageTitle">
+      <Box as="h1" fontSize="pageTitle" textAlign="center">
         Reviews
       </Box>
-      <Spacer axis="vertical" size={24} />
+      <Box
+        as="q"
+        // fontWeight="semiBold"
+        display="block"
+        textAlign="center"
+        color="subtle"
+      >
+        We have such sights to show you.
+      </Box>
+      <Spacer axis="vertical" size={16} />
+
       <Box color="subtle">
-        <Box as="q" fontWeight="semiBold">
-          We have such sights to show you.
-        </Box>
         <Spacer axis="vertical" size={16} />
         <p>
-          I&apos;ve watched{" "}
+          Since 2012, I&apos;ve watched{" "}
           <Box as="span" color="emphasis">
             {data.viewing.nodes.length.toLocaleString()}
           </Box>{" "}
-          movies since 2012 and published{" "}
+          movies and published{" "}
           <Box as="span" color="emphasis">
             {data.reviews?.totalCount.toLocaleString()}
           </Box>{" "}
-          reviews since 2020.
+          reviews.
         </p>
         <Spacer axis="vertical" size={16} />
         <p>
@@ -57,7 +64,7 @@ export default function ReviewsIndexPage({
             Looking for something new?
           </Box>
           <br /> Peruse my list of{" "}
-          <Link color="accent" textDecoration="none" to="/reviews/underseen/">
+          <Link textDecoration="none" color="accent" to="/reviews/underseen/">
             underseen gems
           </Link>
           .
@@ -69,7 +76,7 @@ export default function ReviewsIndexPage({
           </Box>
           <br />
           Behold my list of{" "}
-          <Link color="accent" textDecoration="none" to="/reviews/overrated/">
+          <Link textDecoration="none" color="accent" to="/reviews/overrated/">
             overrated disappointments
           </Link>
           .
@@ -100,15 +107,7 @@ export const pageQuery = graphql`
         gradeValue
         genres
         poster {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 200
-              placeholder: BLURRED
-            )
-          }
+          ...PosterListPoster
         }
       }
       media: distinct(field: { medium: SELECT })
