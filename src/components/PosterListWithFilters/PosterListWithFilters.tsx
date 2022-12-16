@@ -21,10 +21,10 @@ import {
   borderColors,
   foregroundColors,
 } from "../../styles/colors.css";
-import { HEADER_HEIGHT } from "../../styles/sizes.css";
 import {
   stickyFiltersStyle,
   stickyHeaderStyle,
+  stickyListInfoStyle,
 } from "./PosterListWithFilters.css";
 import type { Sort } from "./PosterListWithFilters.reducer";
 import {
@@ -317,17 +317,15 @@ export function PosterListWithFilters({
           flexDirection="column"
           flexGrow={1}
         >
+          <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
           <Box
             color="subtle"
             paddingX="gutter"
             textAlign="center"
-            position="sticky"
-            top={{ default: 0, desktop: HEADER_HEIGHT }}
             backgroundColor="default"
-            zIndex={1000}
             lineHeight={36}
+            className={stickyListInfoStyle}
           >
-            <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
             <ListInfo
               visible={state.showCount}
               total={state.filteredItems.length}
@@ -352,7 +350,7 @@ export function PosterListWithFilters({
                       {group}
                     </Box>
                   </Box>
-                  <Spacer axis="vertical" size={16} />
+                  <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
                   <PosterList
                     paddingLeft={{ default: 0, tablet: "gutter", desktop: 24 }}
                     paddingRight={{ default: 0, tablet: "gutter", desktop: 0 }}
@@ -373,7 +371,7 @@ export function PosterListWithFilters({
                       );
                     })}
                   </PosterList>
-                  <Spacer axis="vertical" size={16} />
+                  <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
                 </Box>
               );
             })}
