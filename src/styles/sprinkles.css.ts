@@ -72,6 +72,7 @@ const responsiveAtomicProperties = defineProperties({
       poster: MAX_POSTER_WIDTH,
       ...size,
     },
+    justifyContent: ["space-between", "center", "flex-end", "flex-start"],
     maxWidth: {
       160: "160px",
       200: "200px",

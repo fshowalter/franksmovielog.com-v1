@@ -1,7 +1,7 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { backgroundColors } from "../../styles/colors.css";
-import { MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
+import { backgroundColors, borderColors } from "../../styles/colors.css";
+import { size } from "../../styles/sizes.css";
 import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gradeStyle = style({
@@ -11,8 +11,14 @@ export const gradeStyle = style({
 export const stillStyle = style({
   borderRadius: "8px",
   overflow: "hidden",
-  maxWidth: MAX_POSTER_WIDTH,
+  maxWidth: "312px",
   display: "block",
+
+  "@media": {
+    [minMediaQuery("desktop")]: {
+      borderRadius: "unset",
+    },
+  },
 });
 
 export const gridStyle = style({
@@ -34,23 +40,26 @@ export const gridStyle = style({
     },
   },
   "@media": {
-    [minMediaQuery("tablet")]: {
-      ...gridTemplate<GridAreas, 1>({
-        rows: [
-          ["still"],
-          { [size[8]]: SPACER },
-          ["title"],
-          { "1fr": ["grade"] },
-        ],
-        columns: ["auto"],
-      }),
-      selectors: {
-        "&:nth-child(even)": {
-          backgroundColor: "unset",
-        },
-      },
-    },
+    // [minMediaQuery("tablet")]: {
+    //   ...gridTemplate<GridAreas, 1>({
+    //     rows: [
+    //       ["still"],
+    //       { [size[8]]: SPACER },
+    //       ["title"],
+    //       { "1fr": ["grade"] },
+    //     ],
+    //     columns: ["auto"],
+    //   }),
+    //   selectors: {
+    //     "&:nth-child(even)": {
+    //       backgroundColor: "unset",
+    //     },
+    //   },
+    // },
     [minMediaQuery("desktop")]: {
+      padding: 0,
+      backgroundColor: backgroundColors.default,
+      boxShadow: `0 0 0 1px ${borderColors.default}`,
       ...gridTemplate<GridAreas, 1>({
         rows: [
           ["still"],
@@ -62,7 +71,7 @@ export const gridStyle = style({
       }),
       selectors: {
         "&:nth-child(even)": {
-          backgroundColor: "unset",
+          backgroundColor: backgroundColors.default,
         },
       },
     },
@@ -72,9 +81,19 @@ export const gridStyle = style({
 const gridAreaStyles = {
   title: {
     gridArea: "title",
+    "@media": {
+      [minMediaQuery("desktop")]: {
+        padding: `${size[24]} ${size[24]} ${size[8]}`,
+      },
+    },
   },
   grade: {
     gridArea: "grade",
+    "@media": {
+      [minMediaQuery("desktop")]: {
+        padding: `0 ${size[24]} ${size[64]}`,
+      },
+    },
   },
   still: {
     gridArea: "still",

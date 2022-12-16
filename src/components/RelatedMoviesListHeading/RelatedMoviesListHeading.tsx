@@ -17,12 +17,11 @@ export function RelatedMoviesListHeading({
 }) {
   return (
     <ReviewSubHeading
-      paddingX="popoutGutter"
-      textAlign="center"
       boxShadow={{ default: "borderBottom", tablet: "unset" }}
       display="flex"
-      justifyContent="center"
-      paddingY={{ default: 8, tablet: 24 }}
+      justifyContent={{ default: "center", desktop: "flex-start" }}
+      paddingY={{ default: 8, desktop: 16 }}
+      paddingX={{ default: "popoutGutter", desktop: "gutter" }}
     >
       {avatar && (
         <GraphqlImage

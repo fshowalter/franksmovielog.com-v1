@@ -127,7 +127,7 @@ export const atomicProperties = {
   },
   backgroundRepeat: ["repeat-x", "repeat"],
   backgroundPositionY: [16],
-  justifyContent: ["space-between", "center", "flex-end"],
+
   textAlign: ["left", "right", "center", "inherit"],
 
   // columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
