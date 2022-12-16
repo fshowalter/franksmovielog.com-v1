@@ -1,15 +1,17 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { borderColors } from "../../styles/colors.css";
-import { gutterWidth, size } from "../../styles/sizes.css";
+import { gutterWidth, popoutGutterWidth, size } from "../../styles/sizes.css";
 
 export const seeAllLinkGridStyle = style({
   gridColumn: "1 / -1",
   "@media": {
-    [minMediaQuery("desktop")]: {
+    [minMediaQuery("tablet")]: {
       position: "absolute",
-      top: size[8],
-      right: gutterWidth,
+      top: 0,
+      right: 0,
+    },
+    [minMediaQuery("desktop")]: {
+      right: popoutGutterWidth,
     },
   },
 });
@@ -18,21 +20,17 @@ export const movieListStyle = style({
   padding: 0,
   "@media": {
     [minMediaQuery("tablet")]: {
-      //   padding: `${size[32]} ${popoutGutterWidth} 0`,
-      //   display: "grid",
-      //   gridTemplateColumns: "repeat(2,1fr)",
-      //   columnGap: size[32],
-      boxShadow: `0 0 0 1px ${borderColors.default}`,
-      //   borderRadius: size[8],
+      padding: `0 ${popoutGutterWidth}`,
+      display: "grid",
+      gridTemplateColumns: "repeat(2, minmax(100px, 312px))",
+      columnGap: size[32],
+      rowGap: size[32],
+      maxWidth: `calc(656px + ${popoutGutterWidth})`,
     },
     [minMediaQuery("desktop")]: {
-      paddingTop: 0,
-      padding: `0 ${gutterWidth}`,
+      padding: `${size[8]} ${gutterWidth} 0`,
       maxWidth: "unset",
-      display: "grid",
       gridTemplateColumns: "repeat(4,1fr)",
-      columnGap: size[32],
-      boxShadow: "unset",
     },
   },
 });

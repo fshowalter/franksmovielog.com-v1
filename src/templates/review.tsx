@@ -66,10 +66,10 @@ export default function ReviewTemplate({
         <Spacer axis="vertical" size={128} />
         <RelatedMovies
           relatedMovies={movie}
-          maxWidth={{ default: "popout", desktop: "full" }}
+          maxWidth={{ default: "popout", tablet: "full" }}
           width="full"
         />
-        <Spacer axis="vertical" size={128} />
+        <Spacer axis="vertical" size={{ default: 128, tablet: 0 }} />
       </Box>
       <StructuredData data={movie} />
     </Layout>

@@ -15,7 +15,7 @@ export const stillStyle = style({
   display: "block",
 
   "@media": {
-    [minMediaQuery("desktop")]: {
+    [minMediaQuery("tablet")]: {
       borderRadius: "unset",
     },
   },
@@ -40,26 +40,11 @@ export const gridStyle = style({
     },
   },
   "@media": {
-    // [minMediaQuery("tablet")]: {
-    //   ...gridTemplate<GridAreas, 1>({
-    //     rows: [
-    //       ["still"],
-    //       { [size[8]]: SPACER },
-    //       ["title"],
-    //       { "1fr": ["grade"] },
-    //     ],
-    //     columns: ["auto"],
-    //   }),
-    //   selectors: {
-    //     "&:nth-child(even)": {
-    //       backgroundColor: "unset",
-    //     },
-    //   },
-    // },
-    [minMediaQuery("desktop")]: {
+    [minMediaQuery("tablet")]: {
       padding: 0,
       backgroundColor: backgroundColors.default,
       boxShadow: `0 0 0 1px ${borderColors.default}`,
+      maxWidth: "312px",
       ...gridTemplate<GridAreas, 1>({
         rows: [
           ["still"],
@@ -82,15 +67,15 @@ const gridAreaStyles = {
   title: {
     gridArea: "title",
     "@media": {
-      [minMediaQuery("desktop")]: {
-        padding: `${size[24]} ${size[24]} ${size[8]}`,
+      [minMediaQuery("tablet")]: {
+        padding: `${size[8]} ${size[24]} ${size[8]}`,
       },
     },
   },
   grade: {
     gridArea: "grade",
     "@media": {
-      [minMediaQuery("desktop")]: {
+      [minMediaQuery("tablet")]: {
         padding: `0 ${size[24]} ${size[64]}`,
       },
     },

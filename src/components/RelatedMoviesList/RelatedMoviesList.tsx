@@ -24,16 +24,18 @@ export function RelatedMoviesList({
       <Box
         as="li"
         display="block"
-        textAlign="center"
+        textAlign="right"
+        paddingX="popoutGutter"
         className={seeAllLinkGridStyle}
-        paddingY={{ default: 16, tablet: 24, desktop: 32 }}
+        paddingY={{ default: 8, tablet: 16 }}
         boxShadow={{ default: "borderBottom", tablet: "unset" }}
       >
         <Link
           textDecoration="none"
           color="accent"
           to={seeAllLinkTarget}
-          fontSize="relatedMovieTitle"
+          fontSize="small"
+          letterSpacing={1}
         >
           All {seeAllLinkText} &#8594;
         </Link>

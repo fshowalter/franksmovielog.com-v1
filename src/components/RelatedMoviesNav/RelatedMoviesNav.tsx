@@ -5,11 +5,10 @@ export function RelatedMoviesNav({ children }: IBoxProps) {
   return (
     <Box
       as="nav"
-      // boxShadow={{ default: "unset", desktop: "borderAll" }}
-      borderRadius={8}
-      // backgroundColor={{ default: "default", desktop: "zebra" }}
-      width={{ default: "unset", desktop: "full" }}
       position="relative"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
     >
       {children}
     </Box>

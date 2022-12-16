@@ -1,47 +1,36 @@
-import type { IGraphqlImage } from "../GraphqlImage";
-import { GraphqlImage } from "../GraphqlImage";
+import { Box } from "../Box";
 import { Link } from "../Link";
-import { ReviewSubHeading } from "../ReviewSubHeading";
-import { avatarStyle } from "./RelatedMoviesListHeading.css";
 
 export function RelatedMoviesListHeading({
   leadText,
   linkText,
   linkTarget,
-  avatar,
 }: {
   leadText: string;
   linkText: string;
   linkTarget: string;
-  avatar?: IGraphqlImage;
 }) {
   return (
-    <ReviewSubHeading
+    <Box
       boxShadow={{ default: "borderBottom", tablet: "unset" }}
-      display="flex"
-      justifyContent={{ default: "center", desktop: "flex-start" }}
-      paddingY={{ default: 8, desktop: 16 }}
+      paddingY={{ default: 8, tablet: 16 }}
       paddingX={{ default: "popoutGutter", desktop: "gutter" }}
+      letterSpacing={1}
+      fontSize="small"
+      width="full"
     >
-      {avatar && (
-        <GraphqlImage
-          image={avatar}
-          alt={`More ${linkText} reviews`}
-          className={avatarStyle}
-        />
-      )}
-      <span>
+      <Box as="span" fontWeight="semiBold" color="muted">
         {leadText}{" "}
-        <Link
-          to={linkTarget}
-          color="accent"
-          textDecoration="none"
-          display="inline-flex"
-          columnGap=".5ch"
-        >
-          {linkText}
-        </Link>
-      </span>
-    </ReviewSubHeading>
+      </Box>
+      <Link
+        to={linkTarget}
+        color="accent"
+        textDecoration="none"
+        display="inline-flex"
+        columnGap=".5ch"
+      >
+        {linkText}
+      </Link>
+    </Box>
   );
 }

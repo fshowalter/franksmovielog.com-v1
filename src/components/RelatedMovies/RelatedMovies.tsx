@@ -37,9 +37,9 @@ export function RelatedMovies({ relatedMovies, ...rest }: IRelatedMoviesProps) {
       flexDirection="column"
       rowGap={{ default: 48, desktop: 96 }}
       alignItems="center"
-      backgroundColor={{ default: "default", desktop: "subtle" }}
-      paddingTop={{ default: 0, desktop: 32 }}
-      paddingBottom={{ default: 0, desktop: 128 }}
+      backgroundColor={{ default: "default", tablet: "subtle" }}
+      paddingTop={{ default: 0, tablet: 32 }}
+      paddingBottom={{ default: 0, tablet: 128 }}
     >
       <RelatedMoviesForWatchlistEntities
         entities={relatedMovies.watchlist.collections}

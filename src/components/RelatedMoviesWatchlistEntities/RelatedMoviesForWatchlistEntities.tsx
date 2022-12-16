@@ -26,7 +26,6 @@ export function RelatedMoviesForWatchlistEntities({
                 leadText={`More${leadText[entity.entityType]}`}
                 linkTarget={`/watchlist/${entity.entityType}s/${entity.slug}`}
                 linkText={entity.name}
-                avatar={entity.avatar}
               />
               <RelatedMoviesList
                 movies={entity.browseMore}
@@ -45,18 +44,6 @@ export const query = graphql`
     name
     slug
     entityType
-    avatar {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 40
-          height: 40
-          placeholder: BLURRED
-        )
-      }
-    }
     browseMore(sourceReviewId: $id) {
       ...RelatedMovie
     }
