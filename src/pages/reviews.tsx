@@ -1,6 +1,9 @@
 import { graphql } from "gatsby";
-import { Box, HeadBuilder, Link, Spacer } from "../components";
+import { Box } from "../components/Box";
+import { HeadBuilder } from "../components/HeadBuilder";
+import { Link } from "../components/Link";
 import { PosterListWithFilters } from "../components/PosterListWithFilters";
+import { Spacer } from "../components/Spacer";
 
 export function Head(): JSX.Element {
   return (

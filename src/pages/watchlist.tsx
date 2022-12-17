@@ -1,22 +1,18 @@
 import { graphql } from "gatsby";
 import { useReducer, useRef } from "react";
-import type { IBoxProps } from "../components";
-import {
-  Box,
-  Button,
-  DebouncedInput,
-  Fieldset,
-  HeadBuilder,
-  Layout,
-  Link,
-  Poster,
-  PosterList,
-  ProgressGraph,
-  SelectField,
-  SelectOptions,
-  Spacer,
-  YearInput,
-} from "../components";
+import type { IBoxProps } from "../components/Box";
+import { Box } from "../components/Box";
+import { Button } from "../components/Button";
+import { DebouncedInput } from "../components/DebouncedInput";
+import { Fieldset } from "../components/Fieldset";
+import { HeadBuilder } from "../components/HeadBuilder";
+import { Layout } from "../components/Layout";
+import { Link } from "../components/Link";
+import { Poster, PosterList } from "../components/PosterList";
+import { ProgressGraph } from "../components/ProgressGraph";
+import { SelectField, SelectOptions } from "../components/SelectField";
+import { Spacer } from "../components/Spacer";
+import { YearInput } from "../components/YearInput";
 import { foregroundColors } from "../styles/colors.css";
 import { HEADER_HEIGHT } from "../styles/sizes.css";
 import { toSentenceArray } from "../utils";

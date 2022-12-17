@@ -1,15 +1,15 @@
 import { Box } from "../Box";
+import { ByReleaseYearStats } from "../ByReleaseYearStats";
+import { GradeDistributionStats } from "../GradeDistributionStats";
 import { Layout } from "../Layout";
+import { MostWatchedDirectors } from "../MostWatchedDirectors";
+import { MostWatchedMovies } from "../MostWatchedMovies";
+import { MostWatchedPerformers } from "../MostWatchedPerformers";
+import { MostWatchedWriters } from "../MostWatchedWriters";
 import { Spacer } from "../Spacer";
-import { ByDecade } from "./ByDecade";
-import { Callouts } from "./Callouts";
-import { GradeDistribution } from "./GradeDistribution";
-import { MostWatchedDirectors } from "./MostWatchedDirectors";
-import { MostWatchedMovies } from "./MostWatchedMovies";
-import { MostWatchedPerformers } from "./MostWatchedPerformers";
-import { MostWatchedWriters } from "./MostWatchedWriters";
-import { TopMedia } from "./TopMedia";
-import { YearNavigation } from "./YearNavigation";
+import { StatsCallouts } from "../StatsCallouts";
+import { StatsNavigation } from "../StatsNavigation";
+import { TopMedia } from "../TopMedia";
 
 export function StatsPage({
   title,
@@ -67,7 +67,7 @@ export function StatsPage({
               {tagline}
             </Box>
             <Spacer axis="vertical" size={24} />
-            <YearNavigation
+            <StatsNavigation
               currentYear={year}
               linkFunc={(year: string) => {
                 if (year === "all") {
@@ -81,7 +81,7 @@ export function StatsPage({
           </Box>
           <Box>
             <Spacer axis="vertical" size={32} />
-            <Callouts
+            <StatsCallouts
               viewingCallouts={viewingCallouts}
               reviewCallouts={reviewCallouts ?? null}
             />
@@ -92,12 +92,12 @@ export function StatsPage({
         >
           <Spacer axis="vertical" size={32} />
           <MostWatchedMovies movies={mostWatchedMovies} />
-          <ByDecade decades={viewingsCountsByDecade} />
+          <ByReleaseYearStats decades={viewingsCountsByDecade} />
           <Spacer axis="vertical" size={32} />
           <TopMedia topMedia={mostWatchedMedia} />
           <Spacer axis="vertical" size={32} />
           {gradeDistributions && (
-            <GradeDistribution distributions={gradeDistributions} />
+            <GradeDistributionStats distributions={gradeDistributions} />
           )}
           <Spacer axis="vertical" size={32} />
           <MostWatchedDirectors directors={mostWatchedDirectors} />

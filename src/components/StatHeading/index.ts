@@ -1,0 +1,1 @@
+export { StatHeading } from "./StatHeading";

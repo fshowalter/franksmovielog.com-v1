@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
-import { HeadBuilder, StatsPage } from "../components";
+import { HeadBuilder } from "../components/HeadBuilder";
+import { StatsPage } from "../components/StatsPage";
 
 export function Head({
   pageContext,

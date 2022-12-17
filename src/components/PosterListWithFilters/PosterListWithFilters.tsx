@@ -1,21 +1,17 @@
 import { useReducer, useRef } from "react";
 import Select from "react-select";
-import {
-  Box,
-  Button,
-  DebouncedInput,
-  Fieldset,
-  GradeInput,
-  HeadBuilder,
-  LabelText,
-  Layout,
-  Poster,
-  PosterList,
-  SelectField,
-  SelectOptions,
-  Spacer,
-  YearInput,
-} from "..";
+import { Box } from "../Box";
+import { Button } from "../Button";
+import { DebouncedInput } from "../DebouncedInput";
+import { Fieldset } from "../Fieldset";
+import { GradeInput } from "../GradeInput";
+import { LabelText } from "../LabelText";
+import { Layout } from "../Layout";
+import { Poster, PosterList } from "../PosterList/PosterList";
+import { SelectField, SelectOptions } from "../SelectField";
+import { Spacer } from "../Spacer";
+import { YearInput } from "../YearInput";
+
 import {
   backgroundColors,
   borderColors,
@@ -127,17 +123,6 @@ function groupItems({
   });
 
   return groupedItems;
-}
-
-export function Head(): JSX.Element {
-  return (
-    <HeadBuilder
-      pageTitle="Reviews"
-      description="A sortable and filterable list of every movie I've watched and reviewed since 2012."
-      image={null}
-      article={false}
-    />
-  );
 }
 
 export function PosterListWithFilters({

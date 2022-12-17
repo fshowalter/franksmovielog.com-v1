@@ -1,7 +1,9 @@
 import { graphql } from "gatsby";
 import { useRef } from "react";
-import { Box, HeadBuilder, Layout } from "../components";
+import { Box } from "../components/Box";
+import { HeadBuilder } from "../components/HeadBuilder";
 import { HomePageItem } from "../components/HomePageItem";
+import { Layout } from "../components/Layout";
 import { Pagination } from "../components/Pagination";
 
 export interface PageContext {

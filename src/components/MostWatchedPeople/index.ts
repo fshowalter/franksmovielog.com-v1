@@ -1,0 +1,1 @@
+export { MostWatchedPeople } from "./MostWatchedPeople";
