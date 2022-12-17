@@ -8,7 +8,7 @@ const gradeMap: Record<string, number> = {
   F: 1,
 };
 
-export function StructuredData({
+export function ReviewStructuredData({
   data,
 }: {
   data: Queries.StructuredDataFragment;

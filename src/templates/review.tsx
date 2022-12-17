@@ -6,7 +6,7 @@ import { Layout } from "../components/Layout";
 import { RelatedMovies } from "../components/RelatedMovies";
 import { ReviewContent } from "../components/ReviewContent";
 import { ReviewHeader } from "../components/ReviewHeader";
-import { StructuredData } from "../components/ReviewPage/StructuredData";
+import { ReviewStructuredData } from "../components/ReviewStructuredData/";
 import { Spacer } from "../components/Spacer";
 import { Still } from "../components/Still";
 import { ViewingHistory } from "../components/ViewingHistory";
@@ -71,7 +71,7 @@ export default function ReviewTemplate({
         />
         <Spacer axis="vertical" size={{ default: 128, tablet: 0 }} />
       </Box>
-      <StructuredData data={movie} />
+      <ReviewStructuredData data={movie} />
     </Layout>
   );
 }

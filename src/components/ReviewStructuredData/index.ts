@@ -1,0 +1,1 @@
+export { ReviewStructuredData } from "./ReviewStructuredData";
