@@ -4,9 +4,15 @@ import { HEADER_HEIGHT } from "../../styles/sizes.css";
 
 export const stickyTableHeaderStyle = style({
   position: "sticky",
-  top: `calc(${HEADER_HEIGHT}px + 2.5rem)`,
+  top: "2.5rem",
   zIndex: 100,
   lineHeight: "calc(2.5rem - 2px)",
+
+  "@media": {
+    [minMediaQuery("desktop")]: {
+      top: `calc(${HEADER_HEIGHT}px + 2.5rem)`,
+    },
+  },
 });
 
 export const tableBorderStyle = style({

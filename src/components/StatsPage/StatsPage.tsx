@@ -11,25 +11,6 @@ import { MostWatchedWriters } from "./MostWatchedWriters";
 import { TopMedia } from "./TopMedia";
 import { YearNavigation } from "./YearNavigation";
 
-interface IStatsLayoutProps {
-  year: string;
-  viewingCallouts: Queries.ViewingCalloutsFragment;
-  reviewCallouts?: Queries.ReviewCalloutsFragment;
-  mostWatchedPerformers: Queries.MostWatchedPerformersFragment;
-  mostWatchedDirectors: Queries.MostWatchedDirectorsFragment;
-  mostWatchedWriters: Queries.MostWatchedWritersFragment;
-  viewingsCountsByDecade: Queries.ByDecadeFragment;
-  mostWatchedMovies: Queries.MostWatchedMoviesFragment;
-  mostWatchedMedia: Queries.TopMediaFragment;
-  gradeDistributions?: readonly Queries.GradeDistributionFragment[];
-  allYears: readonly string[];
-  title: string;
-  tagline: string;
-}
-
-/**
- * Renders the all-time review stats template.
- */
 export function StatsPage({
   title,
   tagline,
@@ -44,38 +25,71 @@ export function StatsPage({
   mostWatchedMedia,
   gradeDistributions,
   allYears,
-}: IStatsLayoutProps): JSX.Element {
+}: {
+  year: string;
+  viewingCallouts: Queries.ViewingCalloutsFragment;
+  reviewCallouts?: Queries.ReviewCalloutsFragment;
+  mostWatchedPerformers: Queries.MostWatchedPerformersFragment;
+  mostWatchedDirectors: Queries.MostWatchedDirectorsFragment;
+  mostWatchedWriters: Queries.MostWatchedWritersFragment;
+  viewingsCountsByDecade: Queries.ByDecadeFragment;
+  mostWatchedMovies: Queries.MostWatchedMoviesFragment;
+  mostWatchedMedia: Queries.TopMediaFragment;
+  gradeDistributions?: readonly Queries.GradeDistributionFragment[];
+  allYears: readonly string[];
+  title: string;
+  tagline: string;
+}): JSX.Element {
   return (
     <Layout>
-      <Box as="main" paddingX="gutter">
-        <Box as="header">
+      <Box as="main">
+        <Box
+          as="header"
+          display="flex"
+          flexDirection={{ default: "column", desktop: "row" }}
+          justifyContent="space-between"
+          flexWrap="wrap"
+          paddingX="gutter"
+        >
           <Box
-            as="h1"
-            paddingTop={{ default: 24, desktop: 32 }}
-            fontSize="pageTitle"
+            display="flex"
+            flexDirection="column"
+            alignItems={{ default: "center", desktop: "flex-start" }}
           >
-            {title}
-          </Box>
-          {tagline}
-          <Spacer axis="vertical" size={24} />
-          <YearNavigation
-            currentYear={year}
-            linkFunc={(year: string) => {
-              if (year === "all") {
-                return "/stats/";
-              }
+            <Box
+              as="h1"
+              paddingTop={{ default: 24, desktop: 32 }}
+              fontSize="pageTitle"
+            >
+              {title}
+            </Box>
+            <Box as="p" color="subtle">
+              {tagline}
+            </Box>
+            <Spacer axis="vertical" size={24} />
+            <YearNavigation
+              currentYear={year}
+              linkFunc={(year: string) => {
+                if (year === "all") {
+                  return "/stats/";
+                }
 
-              return `/stats/${year}/`;
-            }}
-            years={allYears}
-          />
+                return `/stats/${year}/`;
+              }}
+              years={allYears}
+            />
+          </Box>
+          <Box>
+            <Spacer axis="vertical" size={32} />
+            <Callouts
+              viewingCallouts={viewingCallouts}
+              reviewCallouts={reviewCallouts ?? null}
+            />
+          </Box>
         </Box>
-        <div>
-          <Spacer axis="vertical" size={32} />
-          <Callouts
-            viewingCallouts={viewingCallouts}
-            reviewCallouts={reviewCallouts ?? null}
-          />
+        <Box
+          paddingX={{ default: 0, tablet: "popoutGutter", desktop: "gutter" }}
+        >
           <Spacer axis="vertical" size={32} />
           <MostWatchedMovies movies={mostWatchedMovies} />
           <ByDecade decades={viewingsCountsByDecade} />
@@ -92,7 +106,7 @@ export function StatsPage({
           <Spacer axis="vertical" size={32} />
           <MostWatchedWriters writers={mostWatchedWriters} />
           <Spacer axis="vertical" size={64} />
-        </div>
+        </Box>
       </Box>
     </Layout>
   );

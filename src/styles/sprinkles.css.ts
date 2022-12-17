@@ -28,6 +28,7 @@ const responsiveAtomicProperties = defineProperties({
     },
   },
   properties: {
+    alignItems: ["center", "inherit", "flex-start", "baseline"],
     backgroundColor: {
       ...backgroundColors,
       zebra: {
@@ -55,6 +56,7 @@ const responsiveAtomicProperties = defineProperties({
         },
       },
     },
+    borderRadius: size,
     boxShadow: {
       unset: "unset",
       borderBottom: {
@@ -74,6 +76,7 @@ const responsiveAtomicProperties = defineProperties({
       "contents",
     ],
     flexDirection: ["row", "column"],
+    flexWrap: ["wrap", "nowrap"],
     height: {
       160: "160px",
       200: "200px",

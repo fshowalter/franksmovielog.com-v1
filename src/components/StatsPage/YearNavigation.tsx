@@ -67,6 +67,9 @@ export function YearNavigation({
       display="flex"
       fontSize="yearNavigation"
       columnGap={16}
+      rowGap={16}
+      flexWrap={{ default: "wrap", desktop: "nowrap" }}
+      justifyContent="center"
     >
       <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
       {[...years].reverse().map((year) => {

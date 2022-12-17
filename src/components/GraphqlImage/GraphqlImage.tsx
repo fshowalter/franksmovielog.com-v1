@@ -1,7 +1,7 @@
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { Box, IBoxProps } from "../Box";
 
-export interface IGraphqlImageProps extends IBoxProps {
+export interface IGraphqlImageProps extends Omit<IBoxProps, "backgroundColor"> {
   image: IGraphqlImage;
   className?: string;
   alt: string;
@@ -25,7 +25,10 @@ export function GraphqlImage({
     return <Box className={className} {...rest} />;
   }
 
-  const newProps = { image: gatsbyImageData, ...rest };
+  const newProps = {
+    image: gatsbyImageData,
+    ...rest,
+  };
 
   return <Box as={GatsbyImage} className={className} {...newProps} />;
 }

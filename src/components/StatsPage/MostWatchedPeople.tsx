@@ -4,8 +4,8 @@ import { Poster, PosterList } from "../PosterList";
 import { Spacer } from "../Spacer";
 import {
   detailsRowGridStyle,
-  gridStyle,
   stickyHeaderStyle,
+  stickyRowHeaderStyle,
 } from "./MostWatchedPeople.css";
 import { StatHeading } from "./StatHeading";
 
@@ -34,7 +34,7 @@ export function MostWatchedPeople({
         backgroundColor="default"
         display="flex"
         justifyContent="space-between"
-        paddingX={24}
+        paddingX="popoutGutter"
         className={stickyHeaderStyle}
         fontWeight="bold"
       >
@@ -45,40 +45,42 @@ export function MostWatchedPeople({
           Viewings
         </Box>
       </Box>
-      <Box as="ol" padding={0} className={gridStyle}>
-        {people.mostWatched.map((person) => {
+      <Box as="ol" padding={0}>
+        {people.mostWatched.map((person, index) => {
           return (
-            <Box as="li" key={person.fullName} display="contents">
+            <Box as="li" key={person.fullName} display="block">
               <Box
-                as="span"
-                lineHeight={40}
+                className={stickyRowHeaderStyle}
+                style={{ zIndex: 200 + index }}
+                paddingX="popoutGutter"
                 backgroundColor="stripe"
-                paddingX={24}
               >
-                {nameRenderer({ person })}
+                <Box as="span" lineHeight={40}>
+                  {nameRenderer({ person })}
+                </Box>
+                <Box as="span" lineHeight={40}>
+                  &nbsp;
+                </Box>
+                <Box
+                  as="span"
+                  lineHeight={40}
+                  backgroundColor="stripe"
+                  textAlign="right"
+                >
+                  {person.viewingCount}
+                </Box>
               </Box>
-              <Box as="span" lineHeight={40} backgroundColor="stripe">
-                &nbsp;
-              </Box>
-              <Box
-                as="span"
-                lineHeight={40}
-                backgroundColor="stripe"
-                paddingRight={24}
-                textAlign="right"
-              >
-                {person.viewingCount}
-              </Box>
-              <Box
-                paddingX={24}
-                lineHeight={40}
-                className={detailsRowGridStyle}
-              >
+              <Box lineHeight={40} className={detailsRowGridStyle}>
                 <details>
-                  <Box as="summary" color="subtle" letterSpacing={0.2}>
+                  <Box
+                    as="summary"
+                    color="subtle"
+                    letterSpacing={0.2}
+                    paddingX="popoutGutter"
+                  >
                     Details
                   </Box>
-                  <PosterList>
+                  <PosterList paddingX={{ default: 0, tablet: "popoutGutter" }}>
                     {person.viewings.map((viewing) => {
                       return (
                         <Poster
@@ -94,7 +96,7 @@ export function MostWatchedPeople({
                       );
                     })}
                   </PosterList>
-                  <Spacer axis="vertical" size={32} />
+                  <Spacer axis="vertical" size={{ default: 0, tablet: 32 }} />
                 </details>
               </Box>
             </Box>

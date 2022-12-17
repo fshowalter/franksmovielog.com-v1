@@ -19,6 +19,7 @@ export function Table({
       position="relative"
       boxShadow="borderAll"
       className={composeClassNames(tableBorderStyle, tableWhiteSpaceStyle)}
+      width="full"
     >
       {children}
     </Box>
@@ -48,7 +49,7 @@ export function TableRow({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <Box as="tr" backgroundColor="zebraOdd">
+    <Box as="tr" lineHeight={40} backgroundColor="zebraOdd">
       {children}
     </Box>
   );
@@ -63,14 +64,14 @@ export function TableHeaderCell({
 }): JSX.Element {
   if (align === "left") {
     return (
-      <Box as="th" textAlign="left" paddingLeft={24}>
+      <Box as="th" textAlign="left" paddingLeft="popoutGutter">
         {children}
       </Box>
     );
   }
 
   return (
-    <Box as="th" textAlign="right" paddingRight={24}>
+    <Box as="th" textAlign="right" paddingRight="popoutGutter">
       {children}
     </Box>
   );
@@ -89,7 +90,7 @@ export function TableDataCell({
 
   if (align === "fill") {
     return (
-      <Box as="td" width="full" className={className}>
+      <Box as="td" width="full" paddingY={0} className={className}>
         {children}
       </Box>
     );
@@ -97,14 +98,26 @@ export function TableDataCell({
 
   if (align === "left") {
     return (
-      <Box as="td" textAlign="left" paddingX={24} className={className}>
+      <Box
+        as="td"
+        textAlign="left"
+        paddingY={0}
+        paddingX="popoutGutter"
+        className={className}
+      >
         {children}
       </Box>
     );
   }
 
   return (
-    <Box as="td" textAlign="right" paddingRight={24} className={className}>
+    <Box
+      as="td"
+      textAlign="right"
+      paddingY={0}
+      paddingRight="popoutGutter"
+      className={className}
+    >
       {children}
     </Box>
   );

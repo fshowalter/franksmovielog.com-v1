@@ -9,17 +9,15 @@ import {
 } from "./typography.css";
 
 export const atomicProperties = {
-  borderRadius: size,
   color: foregroundColors,
   padding: size,
   whiteSpace: ["nowrap"],
   overflow: ["hidden"],
   flex: [1],
   flexGrow: [1],
-  flexWrap: ["wrap"],
+
   fontStyle: ["italic"],
   justifyItems: ["center", "inherit"],
-  alignItems: ["center", "inherit", "flex-start", "baseline"],
 
   marginTop: [48, 64, 128],
   fontWeight: fontWeights,
@@ -157,5 +155,5 @@ export const atomicProperties = {
   // columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
   flexBasis: size,
   flexShrink: [0],
-  zIndex: [100, 1000],
+  zIndex: [100, 500, 1000],
 } as const;

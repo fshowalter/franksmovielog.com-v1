@@ -16,7 +16,7 @@ export const bandStickyStyle = style({
     [minMediaQuery("desktop")]: {
       position: "sticky",
       top: "0",
-      zIndex: 200,
+      zIndex: 1000,
     },
   },
 });
@@ -32,7 +32,7 @@ export const headerLayoutStyle = style({
       textAlign: "left",
       position: "sticky",
       top: "16px",
-      zIndex: 200,
+      zIndex: 1000,
     },
   },
 });

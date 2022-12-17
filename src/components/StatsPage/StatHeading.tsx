@@ -12,10 +12,10 @@ export function StatHeading({
       backgroundColor="canvas"
       fontSize="statHeading"
       position="sticky"
-      top={HEADER_HEIGHT}
-      paddingX={24}
+      top={{ default: 0, desktop: HEADER_HEIGHT }}
+      paddingX="popoutGutter"
       paddingY={8}
-      zIndex={100}
+      zIndex={500}
       fontWeight="normal"
     >
       {children}

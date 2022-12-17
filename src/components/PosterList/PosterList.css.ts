@@ -22,6 +22,11 @@ export const gradeStyle = style({
   },
 });
 
-export const posterBackgroundColorStyle = style({
-  backgroundColor: "#e1e1e1",
+export const showTitleOnMobileOnlyStyle = style({
+  display: "block",
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      display: "none",
+    },
+  },
 });

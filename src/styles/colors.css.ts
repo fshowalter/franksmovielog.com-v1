@@ -81,7 +81,7 @@ globalStyle(":root", {
         [bgSubtle]: "#373434",
         [bgInverse]: "#322f2f",
         [fgEmphasis]: "rgb(255 255 255 / 95%)",
-        [bgStripe]: "#48474563",
+        [bgStripe]: "#3C393A",
       },
     },
   },

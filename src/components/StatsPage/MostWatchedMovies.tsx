@@ -10,7 +10,12 @@ function ListItemDetails({
   movie: Queries.MostWatchedMovieFragment;
 }): JSX.Element {
   return (
-    <Box fontSize="normal" color="subtle" textAlign="center">
+    <Box
+      fontSize="normal"
+      color="subtle"
+      display="flex"
+      justifyContent={{ default: "flex-start", tablet: "center" }}
+    >
       <div>{movie.viewingCount.toLocaleString()} times</div>
     </Box>
   );
@@ -35,7 +40,7 @@ export function MostWatchedMovies({
     <>
       <StatHeading>Most Watched Movies</StatHeading>
       <Box>
-        <Spacer axis="vertical" size={16} />
+        <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
         <PosterList>
           {mostWatched.map((movie) => {
             return (
@@ -51,7 +56,7 @@ export function MostWatchedMovies({
             );
           })}
         </PosterList>
-        <Spacer axis="vertical" size={16} />
+        <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
       </Box>
     </>
   );
@@ -66,15 +71,7 @@ export const query = graphql`
       slug
     }
     poster {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 200
-          placeholder: TRACED_SVG
-        )
-      }
+      ...PosterListPoster
     }
     viewingCount
   }

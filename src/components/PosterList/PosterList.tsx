@@ -7,7 +7,7 @@ import { Spacer } from "../Spacer";
 import {
   gradeStyle,
   gridStyle,
-  posterBackgroundColorStyle,
+  showTitleOnMobileOnlyStyle,
 } from "./PosterList.css";
 
 function MediumAndVenue({
@@ -46,6 +46,71 @@ function MediumAndVenue({
   return null;
 }
 
+function Image({
+  slug,
+  image,
+  title,
+  year,
+}: {
+  slug: string | null | undefined;
+  image: IGraphqlImage;
+  title: string;
+  year: number;
+}) {
+  if (slug) {
+    return (
+      <Link
+        borderRadius={{ default: 0, tablet: 8 }}
+        overflow="hidden"
+        maxWidth={{ default: 48, tablet: "poster" }}
+        to={`/reviews/${slug}/`}
+        transform="safariBorderRadiusFix"
+      >
+        <GraphqlImage image={image} alt={`A poster from ${title} (${year})`} />
+      </Link>
+    );
+  }
+
+  return (
+    <GraphqlImage
+      image={image}
+      alt="An unreviewed title."
+      maxWidth={{ default: 48, tablet: "poster" }}
+      borderRadius={{ default: 0, tablet: 8 }}
+      overflow="hidden"
+    />
+  );
+}
+
+function Title({
+  title,
+  year,
+  slug,
+}: {
+  title: string;
+  year: number;
+  slug: string | null | undefined;
+}) {
+  const yearBox = (
+    <Box as="span" fontSize="posterYear" color="subtle" fontWeight="light">
+      {year}
+    </Box>
+  );
+
+  if (slug)
+    return (
+      <Link color="accent" textDecoration="none" to={`/reviews/${slug}/`}>
+        {title} {yearBox}
+      </Link>
+    );
+
+  return (
+    <>
+      {title} {yearBox}
+    </>
+  );
+}
+
 export function Poster({
   slug,
   image,
@@ -69,119 +134,59 @@ export function Poster({
   showTitle?: boolean;
   details?: React.ReactNode;
 }): JSX.Element {
-  if (slug) {
-    return (
-      <Box
-        as="li"
-        display="flex"
-        flexDirection={{ default: "row", tablet: "column" }}
-        columnGap={24}
-        backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
-        paddingX={{ default: "popoutGutter", tablet: 0 }}
-        paddingY={{ default: 16, tablet: 0 }}
-      >
-        <Link
-          borderRadius={8}
-          overflow="hidden"
-          maxWidth={{ default: 48, tablet: "poster" }}
-          to={`/reviews/${slug}/`}
-          transform="safariBorderRadiusFix"
+  return (
+    <Box
+      as="li"
+      display="flex"
+      flexDirection={{ default: "row", tablet: "column" }}
+      columnGap={24}
+      backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
+      paddingX={{ default: "popoutGutter", tablet: 0 }}
+      paddingY={{ default: 16, tablet: 0 }}
+    >
+      <Image slug={slug} image={image} title={title} year={year} />
+      <Box flexGrow={1}>
+        <Box
+          fontSize="posterTitle"
+          className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}
         >
-          <GraphqlImage
-            image={image}
-            alt={`A poster from ${title} (${year})`}
-            className={posterBackgroundColorStyle}
-          />
-        </Link>
-        <Box flexGrow={1}>
-          {showTitle && (
-            <Box fontSize="posterTitle">
-              <Spacer axis="vertical" size={{ default: 0, tablet: 8 }} />
-              <Link
-                color="accent"
-                textDecoration="none"
-                to={`/reviews/${slug}/`}
-              >
-                {title}{" "}
-                <Box
-                  as="span"
-                  fontSize="posterYear"
-                  color="subtle"
-                  fontWeight="light"
-                >
-                  {year}
-                </Box>
-              </Link>
+          <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
+          <Title title={title} year={year} slug={slug} />
+          <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
+        </Box>
+        <Box
+          color="subtle"
+          display="flex"
+          flexDirection="column"
+          fontSize="posterSlug"
+          fontWeight="light"
+          letterSpacing={0.5}
+          lineHeight={16}
+        >
+          {grade && (
+            <Box
+              height={{ default: 16, tablet: 24 }}
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+            >
+              <Grade
+                grade={grade}
+                height={14}
+                width={60}
+                className={gradeStyle}
+              />
             </Box>
           )}
-          <Box
-            color="subtle"
-            display="flex"
-            flexDirection="column"
-            fontSize="posterSlug"
-            fontWeight="light"
-            // rowGap={{ default: 0, tablet: 4 }}
-            letterSpacing={0.5}
-            lineHeight={16}
-          >
-            {grade && (
-              <Box
-                height={{ default: 16, tablet: 24 }}
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-              >
-                <Grade
-                  grade={grade}
-                  height={14}
-                  width={60}
-                  className={gradeStyle}
-                />
-              </Box>
-            )}
-            <Box>
-              <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
-              {date && <Box>{date}</Box>}
-              <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
-              <MediumAndVenue medium={medium} venue={venue} />
-            </Box>
+          <Box>
+            <Spacer axis="vertical" size={4} />
+            {date && <Box>{date}</Box>}
+            <Spacer axis="vertical" size={4} />
+            <MediumAndVenue medium={medium} venue={venue} />
           </Box>
-          {details && details}
         </Box>
+        {details && details}
       </Box>
-    );
-  }
-
-  return (
-    <Box as="li" display="flex" flexDirection="column">
-      <Box
-        borderRadius={8}
-        overflow="hidden"
-        maxWidth="poster"
-        transform="safariBorderRadiusFix"
-      >
-        <GraphqlImage image={image} alt="An unreviewed title." />
-      </Box>
-      <Spacer axis="vertical" size={8} />
-      <Box fontSize="posterTitle">
-        {title}{" "}
-        <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
-          {year}
-        </Box>
-      </Box>
-      <Spacer axis="vertical" size={8} />
-      <Box
-        color="subtle"
-        display="flex"
-        flexDirection="column"
-        fontSize="posterSlug"
-        fontWeight="light"
-        rowGap={4}
-      >
-        {date && <div>{date}</div>}
-        <MediumAndVenue medium={medium} venue={venue} />
-      </Box>
-      {details && details}
     </Box>
   );
 }

@@ -33,7 +33,13 @@ export function Callouts({
   reviewCallouts: Queries.ReviewCalloutsFragment | null;
 }): JSX.Element {
   return (
-    <Box display="flex" columnGap={40} justifyContent="center">
+    <Box
+      display="flex"
+      columnGap={24}
+      rowGap={24}
+      justifyContent="center"
+      flexWrap={{ default: "wrap", desktop: "nowrap" }}
+    >
       {viewingCallouts && (
         <>
           <Callout label="Viewings" stat={viewingCallouts.viewingCount} />
