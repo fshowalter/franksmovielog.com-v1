@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { Bar } from "./Bar";
+import { BarGradient } from "../BarGradient";
 import { StatHeading } from "./StatHeading";
 import {
   Table,
@@ -40,7 +40,10 @@ export function GradeDistribution({
               <TableRow key={distribution.grade}>
                 <TableDataCell align="left">{distribution.grade}</TableDataCell>
                 <TableDataCell align="fill">
-                  <Bar value={distribution.reviewCount} maxValue={maxBar} />
+                  <BarGradient
+                    value={distribution.reviewCount}
+                    maxValue={maxBar}
+                  />
                 </TableDataCell>
                 <TableDataCell align="right">
                   {distribution.reviewCount}

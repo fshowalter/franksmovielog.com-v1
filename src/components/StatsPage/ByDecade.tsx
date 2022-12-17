@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { Bar } from "./Bar";
+import { BarGradient } from "../BarGradient";
 import { StatHeading } from "./StatHeading";
 import {
   Table,
@@ -42,7 +42,7 @@ export function ByDecade({
               <TableRow key={stat.decade}>
                 <TableDataCell align="left">{stat.decade}</TableDataCell>
                 <TableDataCell align="fill">
-                  <Bar value={stat.viewingCount} maxValue={maxBar} />
+                  <BarGradient value={stat.viewingCount} maxValue={maxBar} />
                 </TableDataCell>
                 <TableDataCell align="right">{stat.viewingCount}</TableDataCell>
               </TableRow>
