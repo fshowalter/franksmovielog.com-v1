@@ -185,7 +185,7 @@ export function PosterListWithFilters({
           alignItems="center"
           paddingX={{ default: "popoutGutter", desktop: 0 }}
           paddingTop={32}
-          flexBasis={320}
+          flexBasis={352}
         >
           <Box maxWidth="prose">{children}</Box>
           <Spacer axis="vertical" size={32} />
@@ -193,6 +193,7 @@ export function PosterListWithFilters({
             <Fieldset legend="Filter & Sort">
               {toggleReviewed && (
                 <Button
+                  alignSelf="end"
                   onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
                 >
                   {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}

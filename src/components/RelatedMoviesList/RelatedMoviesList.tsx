@@ -27,7 +27,7 @@ export function RelatedMoviesList({
         textAlign="right"
         paddingX="popoutGutter"
         className={seeAllLinkGridStyle}
-        paddingY={{ default: 8, tablet: 16 }}
+        paddingY={16}
         boxShadow={{ default: "borderBottom", tablet: "unset" }}
       >
         <Link

@@ -153,7 +153,8 @@ export const atomicProperties = {
   textAlign: ["left", "right", "center", "inherit"],
   textUnderlinePosition: ["under"],
   // columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
-  flexBasis: size,
+  flexBasis: { ...size, 352: "352px" },
   flexShrink: [0],
   zIndex: [100, 500, 1000],
+  alignSelf: ["end"],
 } as const;

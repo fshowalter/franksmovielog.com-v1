@@ -25,7 +25,7 @@ export function PosterListWithFiltersForWatchlistEntity({
       distinctReleaseYears={distinctReleaseYears}
       initialSort="release-date-asc"
     >
-      <Box textAlign="center">
+      <Box textAlign="center" lineHeight={36}>
         <Link color="accent" textDecoration="none" to="/watchlist/">
           Watchlist
         </Link>{" "}

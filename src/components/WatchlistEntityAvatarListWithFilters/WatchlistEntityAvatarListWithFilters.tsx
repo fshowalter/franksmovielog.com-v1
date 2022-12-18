@@ -142,7 +142,7 @@ export function WatchlistEntityAvatarListWithFilters({
           alignItems={{ default: "center", desktop: "flex-start" }}
           paddingX={{ default: "gutter", desktop: 0 }}
           paddingTop={32}
-          flexBasis={320}
+          flexBasis={352}
         >
           <Box
             maxWidth="prose"
