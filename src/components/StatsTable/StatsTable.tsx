@@ -1,5 +1,6 @@
 import React from "react";
 import { composeClassNames } from "../../utils/composeClassNames";
+import type { IBoxProps } from "../Box";
 import { Box } from "../Box";
 import {
   hideOnSmallScreensStyle,
@@ -77,20 +78,22 @@ export function TableHeaderCell({
   );
 }
 
+interface ITableDataCellProps extends IBoxProps {
+  hideOnSmallScreens?: boolean;
+  align: "left" | "right" | "fill";
+}
+
 export function TableDataCell({
   align,
   children,
   hideOnSmallScreens = false,
-}: {
-  hideOnSmallScreens?: boolean;
-  align: "left" | "right" | "fill";
-  children: React.ReactNode;
-}): JSX.Element {
+  ...rest
+}: ITableDataCellProps): JSX.Element {
   const className = hideOnSmallScreens ? hideOnSmallScreensStyle : undefined;
 
   if (align === "fill") {
     return (
-      <Box as="td" width="full" paddingY={0} className={className}>
+      <Box as="td" width="full" paddingY={0} className={className} {...rest}>
         {children}
       </Box>
     );
@@ -104,6 +107,7 @@ export function TableDataCell({
         paddingY={0}
         paddingX="popoutGutter"
         className={className}
+        {...rest}
       >
         {children}
       </Box>
@@ -117,6 +121,7 @@ export function TableDataCell({
       paddingY={0}
       paddingRight="popoutGutter"
       className={className}
+      {...rest}
     >
       {children}
     </Box>

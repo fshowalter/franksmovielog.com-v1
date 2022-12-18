@@ -1,0 +1,3511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/watchlist/progress/ renders watchlist progress 1`] = `
+<DocumentFragment>
+  <a
+    class="Box_screenReaderOnlyStyle__1isqo402"
+    href="#content"
+  >
+    Skip to content
+  </a>
+  <div
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2q sprinkles_minHeight_16_default__8lcvdkd9 sprinkles_width_full_default__8lcvdkr9"
+  />
+  <div
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk46 sprinkles_display_flex_default__8lcvdk7l sprinkles_flexDirection_column_default__8lcvdk80"
+  >
+    <header
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkjr sprinkles_paddingRight_gutter_default__8lcvdklo sprinkles_paddingTop_24_default__8lcvdkm3 sprinkles_paddingTop_32_desktop__8lcvdkm8 sprinkles_paddingBottom_24_default__8lcvdkhl sprinkles_paddingBottom_32_desktop__8lcvdkhq sprinkles_display_flex_default__8lcvdk7l sprinkles_rowGap_24_default__8lcvdkn0 sprinkles_alignItems_center_default__8lcvdk3o sprinkles_boxShadow_borderBottom_default__8lcvdk6o sprinkles_backgroundColor_default_default__8lcvdk46"
+    >
+      <div
+        class="sprinkles_display_flex_default__8lcvdk7l sprinkles_flexDirection_column_default__8lcvdk80 sprinkles_alignItems_inherit_default__8lcvdk3r sprinkles_justifyItems_inherit__8lcvdk10"
+      >
+        <h1
+          class="sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_fontWeight_normal__8lcvdk15 sprinkles_fontSize_logo__8lcvdk24"
+        >
+          <a
+            class="sprinkles_color_default__8lcvdk1 sprinkles_textDecoration_none__8lcvdk2o"
+            href="/"
+          >
+            Frank's Movie Log
+          </a>
+        </h1>
+        <p
+          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2a sprinkles_width_full_default__8lcvdkr9 sprinkles_fontSize_small__8lcvdk1i"
+        >
+          My life at the movies.
+        </p>
+      </div>
+      <form
+        accept-charset="UTF-8"
+        action="https://www.google.com/search"
+        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll_default__8lcvdk6r sprinkles_borderRadius_4_default__8lcvdk4x sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkr9 sprinkles_width_unset_desktop__8lcvdkqw sprinkles_maxWidth_prose_default__8lcvdkci"
+        method="get"
+        role="search"
+      >
+        <label
+          class="sprinkles_display_flex_default__8lcvdk7l sprinkles_overflow_hidden__8lcvdkv"
+          for="search"
+        >
+          <div
+            class="ScreenReaderOnly_srOnlyCss__rm0eez0"
+          >
+            Search
+          </div>
+          <input
+            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdki9 sprinkles_paddingRight_16_default__8lcvdkk6 sprinkles_paddingTop_8_default__8lcvdklx sprinkles_paddingBottom_8_default__8lcvdkhf sprinkles_backgroundColor_subtle_default__8lcvdk4c sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_24__8lcvdk2b sprinkles_flexGrow_1__8lcvdkx"
+            id="search"
+            name="q"
+            placeholder="Search..."
+            type="text"
+          />
+          <input
+            name="q"
+            type="hidden"
+            value="site:www.franksmovielog.com"
+          />
+          <button
+            aria-label="Search"
+            class="SiteSearchForm_submitButtonStyle__i7f1b1 sprinkles_backgroundColor_subtle_default__8lcvdk4c"
+            type="submit"
+            value="Search"
+          >
+            <svg
+              class="SiteSearchForm_iconStyle__i7f1b2 SvgIcon_iconStyle__agywp20"
+              height="1em"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                fill-rule="evenodd"
+              />
+              <path
+                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </label>
+      </form>
+      <nav
+        class="sprinkles_color_accent__8lcvdk0"
+      >
+        <ul
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7l sprinkles_flexWrap_wrap_default__8lcvdk83 sprinkles_justifyContent_center_default__8lcvdkai sprinkles_rowGap_8_default__8lcvdkmu sprinkles_columnGap_16_default__8lcvdk70 sprinkles_columnGap_24_tablet__8lcvdk74"
+        >
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/about/"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/stats/"
+            >
+              Stats
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/watchlist/"
+            >
+              Watchlist
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="sprinkles_flexGrow_1__8lcvdkx"
+    >
+      <main>
+        <header
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkjr sprinkles_paddingRight_gutter_default__8lcvdklo sprinkles_display_flex_default__8lcvdk7l sprinkles_flexDirection_column_default__8lcvdk80 sprinkles_flexDirection_row_desktop__8lcvdk7z sprinkles_flexWrap_wrap_default__8lcvdk83 sprinkles_columnGap_32_default__8lcvdk76 sprinkles_justifyContent_space-between_default__8lcvdkaf"
+        >
+          <div
+            class="sprinkles_display_flex_default__8lcvdk7l sprinkles_flexDirection_column_default__8lcvdk80 sprinkles_alignItems_center_default__8lcvdk3o sprinkles_alignItems_flex-start_desktop__8lcvdk3w"
+          >
+            <h1
+              class="sprinkles_paddingTop_24_default__8lcvdkm3 sprinkles_paddingTop_32_desktop__8lcvdkm8 sprinkles_fontSize_pageTitle__8lcvdk26 sprinkles_lineHeight_40__8lcvdk2e"
+            >
+              Watchlist Progress
+            </h1>
+            <q
+              class="sprinkles_color_subtle__8lcvdk4"
+            >
+              I find your lack of faith disturbing.
+            </q>
+            <span
+              class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_16_default__8lcvdk8i sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_16_default__8lcvdkd9 sprinkles_display_block_default__8lcvdk7f"
+            />
+            <div
+              class="sprinkles_color_subtle__8lcvdk4"
+            >
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_16_default__8lcvdk8i sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_16_default__8lcvdkd9 sprinkles_display_block_default__8lcvdk7f"
+              />
+              <p>
+                My progress working through 
+                <a
+                  class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                  href="/watchlist/"
+                >
+                  my movie-review bucketlist
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+          <div
+            class="sprinkles_display_flex_default__8lcvdk7l sprinkles_flexWrap_wrap_default__8lcvdk83 sprinkles_columnGap_32_default__8lcvdk76 sprinkles_justifyContent_center_default__8lcvdkai"
+          >
+            <div
+              class="sprinkles_minWidth_full_default__8lcvdkh6 sprinkles_minWidth_0_tablet__8lcvdkf7 sprinkles_display_flex_default__8lcvdk7l sprinkles_flexDirection_column_default__8lcvdk80 sprinkles_alignItems_center_default__8lcvdk3o"
+            >
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_32_default__8lcvdk8o sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_32_default__8lcvdkdf sprinkles_display_block_default__8lcvdk7f"
+              />
+              <svg
+                height="144"
+                viewBox="0 0 36 36"
+                width="144"
+              >
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgCanvas__1atywg6b)"
+                  stroke-width="3.8"
+                />
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgProgress__1atywg6c)"
+                  stroke-dasharray="8, 100"
+                  stroke-linecap="round"
+                  stroke-width="2.8"
+                />
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".5em"
+                  text-anchor="middle"
+                  x="18"
+                  y="17"
+                >
+                  8%
+                </text>
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="23"
+                >
+                  Total Progress
+                </text>
+                <text
+                  fill="var(--fgSubtle__1atywg66)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="27"
+                />
+              </svg>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_8_default__8lcvdk8f sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_8_default__8lcvdkd6 sprinkles_display_block_default__8lcvdk7f"
+              />
+              <div
+                class="sprinkles_color_subtle__8lcvdk4 sprinkles_textAlign_center__8lcvdk2w"
+              >
+                <div>
+                  287/3,217
+                </div>
+                <div
+                  class="sprinkles_fontSize_small__8lcvdk1i"
+                >
+                  Reviewed
+                </div>
+              </div>
+            </div>
+            <div>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_32_default__8lcvdk8o sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_32_default__8lcvdkdf sprinkles_display_block_default__8lcvdk7f"
+              />
+              <svg
+                height="144"
+                viewBox="0 0 36 36"
+                width="144"
+              >
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgCanvas__1atywg6b)"
+                  stroke-width="3.8"
+                />
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgProgress__1atywg6c)"
+                  stroke-dasharray="10, 100"
+                  stroke-linecap="round"
+                  stroke-width="2.8"
+                />
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".5em"
+                  text-anchor="middle"
+                  x="18"
+                  y="17"
+                >
+                  10%
+                </text>
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="23"
+                >
+                  Director
+                </text>
+                <text
+                  fill="var(--fgSubtle__1atywg66)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="27"
+                >
+                  Titles
+                </text>
+              </svg>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_8_default__8lcvdk8f sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_8_default__8lcvdkd6 sprinkles_display_block_default__8lcvdk7f"
+              />
+              <div
+                class="sprinkles_color_subtle__8lcvdk4 sprinkles_textAlign_center__8lcvdk2w"
+              >
+                <div>
+                  121/1,168
+                </div>
+                <div
+                  class="sprinkles_fontSize_small__8lcvdk1i"
+                >
+                  Reviewed
+                </div>
+              </div>
+            </div>
+            <div>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_32_default__8lcvdk8o sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_32_default__8lcvdkdf sprinkles_display_block_default__8lcvdk7f"
+              />
+              <svg
+                height="144"
+                viewBox="0 0 36 36"
+                width="144"
+              >
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgCanvas__1atywg6b)"
+                  stroke-width="3.8"
+                />
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgProgress__1atywg6c)"
+                  stroke-dasharray="5, 100"
+                  stroke-linecap="round"
+                  stroke-width="2.8"
+                />
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".5em"
+                  text-anchor="middle"
+                  x="18"
+                  y="17"
+                >
+                  5%
+                </text>
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="23"
+                >
+                  Performer
+                </text>
+                <text
+                  fill="var(--fgSubtle__1atywg66)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="27"
+                >
+                  Titles
+                </text>
+              </svg>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_8_default__8lcvdk8f sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_8_default__8lcvdkd6 sprinkles_display_block_default__8lcvdk7f"
+              />
+              <div
+                class="sprinkles_color_subtle__8lcvdk4 sprinkles_textAlign_center__8lcvdk2w"
+              >
+                <div>
+                  127/2,137
+                </div>
+                <div
+                  class="sprinkles_fontSize_small__8lcvdk1i"
+                >
+                  Reviewed
+                </div>
+              </div>
+            </div>
+            <div>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_32_default__8lcvdk8o sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_32_default__8lcvdkdf sprinkles_display_block_default__8lcvdk7f"
+              />
+              <svg
+                height="144"
+                viewBox="0 0 36 36"
+                width="144"
+              >
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgCanvas__1atywg6b)"
+                  stroke-width="3.8"
+                />
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgProgress__1atywg6c)"
+                  stroke-dasharray="5, 100"
+                  stroke-linecap="round"
+                  stroke-width="2.8"
+                />
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".5em"
+                  text-anchor="middle"
+                  x="18"
+                  y="17"
+                >
+                  5%
+                </text>
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="23"
+                >
+                  Writer
+                </text>
+                <text
+                  fill="var(--fgSubtle__1atywg66)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="27"
+                >
+                  Titles
+                </text>
+              </svg>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_8_default__8lcvdk8f sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_8_default__8lcvdkd6 sprinkles_display_block_default__8lcvdk7f"
+              />
+              <div
+                class="sprinkles_color_subtle__8lcvdk4 sprinkles_textAlign_center__8lcvdk2w"
+              >
+                <div>
+                  8/145
+                </div>
+                <div
+                  class="sprinkles_fontSize_small__8lcvdk1i"
+                >
+                  Reviewed
+                </div>
+              </div>
+            </div>
+            <div>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_32_default__8lcvdk8o sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_32_default__8lcvdkdf sprinkles_display_block_default__8lcvdk7f"
+              />
+              <svg
+                height="144"
+                viewBox="0 0 36 36"
+                width="144"
+              >
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgCanvas__1atywg6b)"
+                  stroke-width="3.8"
+                />
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgProgress__1atywg6c)"
+                  stroke-dasharray="26, 100"
+                  stroke-linecap="round"
+                  stroke-width="2.8"
+                />
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".5em"
+                  text-anchor="middle"
+                  x="18"
+                  y="17"
+                >
+                  26%
+                </text>
+                <text
+                  fill="var(--fgDefault__1atywg63)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="23"
+                >
+                  Collection
+                </text>
+                <text
+                  fill="var(--fgSubtle__1atywg66)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="27"
+                >
+                  Titles
+                </text>
+              </svg>
+              <span
+                class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_8_default__8lcvdk8f sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_8_default__8lcvdkd6 sprinkles_display_block_default__8lcvdk7f"
+              />
+              <div
+                class="sprinkles_color_subtle__8lcvdk4 sprinkles_textAlign_center__8lcvdk2w"
+              >
+                <div>
+                  54/204
+                </div>
+                <div
+                  class="sprinkles_fontSize_small__8lcvdk1i"
+                >
+                  Reviewed
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div
+          class="sprinkles_paddingLeft_0_default__8lcvdki0 sprinkles_paddingLeft_popoutGutter_tablet__8lcvdkjv sprinkles_paddingLeft_gutter_desktop__8lcvdkjt sprinkles_paddingRight_0_default__8lcvdkjx sprinkles_paddingRight_popoutGutter_tablet__8lcvdkls sprinkles_paddingRight_gutter_desktop__8lcvdklq"
+        >
+          <span
+            class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_32_default__8lcvdk8o sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_32_default__8lcvdkdf sprinkles_display_block_default__8lcvdk7f"
+          />
+          <section>
+            <h3
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_8_default__8lcvdklx sprinkles_paddingBottom_8_default__8lcvdkhf sprinkles_backgroundColor_canvas_default__8lcvdk43 sprinkles_fontSize_statHeading__8lcvdk1y sprinkles_position_sticky_default__8lcvdkml sprinkles_top_0_default__8lcvdknf sprinkles_top_128_desktop__8lcvdkoh sprinkles_zIndex_500__8lcvdk3m sprinkles_fontWeight_normal__8lcvdk15"
+            >
+              Director Progress
+            </h3>
+            <table
+              class="StatsTable_tableBorderStyle__iwohur1 StatsTable_tableWhiteSpaceStyle__iwohur2 sprinkles_position_relative_default__8lcvdkmi sprinkles_boxShadow_borderAll_default__8lcvdk6r sprinkles_width_full_default__8lcvdkr9"
+            >
+              <thead
+                class="StatsTable_stickyTableHeaderStyle__iwohur0 sprinkles_paddingLeft_24_default__8lcvdkic sprinkles_paddingRight_24_default__8lcvdkk9 sprinkles_backgroundColor_default_default__8lcvdk46"
+              >
+                <tr>
+                  <th
+                    class="sprinkles_textAlign_left__8lcvdk2u sprinkles_paddingLeft_popoutGutter_default__8lcvdkju"
+                  >
+                    Name
+                  </th>
+                  <th>
+                     
+                  </th>
+                  <th
+                    class="sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    Progress
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/abel-ferrara/"
+                    >
+                      Abel Ferrara
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 4.545454545454546%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/22
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/akira-kurosawa/"
+                    >
+                      Akira Kurosawa
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.125%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/32
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/alfred-hitchcock/"
+                    >
+                      Alfred Hitchcock
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 11.363636363636363%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/44
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/billy-wilder/"
+                    >
+                      Billy Wilder
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 7.6923076923076925%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/26
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/brian-de-palma/"
+                    >
+                      Brian De Palma
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 53.333333333333336%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    16/30
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/dario-argento/"
+                    >
+                      Dario Argento
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 20%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    4/20
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/david-cronenberg/"
+                    >
+                      David Cronenberg
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 26.08695652173913%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    6/23
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/david-lean/"
+                    >
+                      David Lean
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 5.88235294117647%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/17
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      François Truffaut
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/23
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/fritz-lang/"
+                    >
+                      Fritz Lang
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 9.67741935483871%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    3/31
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      George A. Romero
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/17
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/howard-hawks/"
+                    >
+                      Howard Hawks
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 13.157894736842104%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/38
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/ingmar-bergman/"
+                    >
+                      Ingmar Bergman
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 55.26315789473685%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    21/38
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      The Coen Brothers
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/21
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      John Boorman
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/17
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/john-carpenter/"
+                    >
+                      John Carpenter
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 16.666666666666664%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    3/18
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/john-ford/"
+                    >
+                      John Ford
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 19.35483870967742%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    12/62
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/john-frankenheimer/"
+                    >
+                      John Frankenheimer
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.4482758620689653%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/29
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      John Huston
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/41
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/john-sturges/"
+                    >
+                      John Sturges
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 2.3255813953488373%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/43
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/ken-russell/"
+                    >
+                      Ken Russell
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 4.545454545454546%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/22
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/lucio-fulci/"
+                    >
+                      Lucio Fulci
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 28.57142857142857%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    8/28
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/luis-bunuel/"
+                    >
+                      Luis Buñuel
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.225806451612903%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/31
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/mario-bava/"
+                    >
+                      Mario Bava
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 6.451612903225806%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/31
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Martin Scorsese
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/27
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/michael-haneke/"
+                    >
+                      Michael Haneke
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 41.66666666666667%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/12
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/michele-soavi/"
+                    >
+                      Michele Soavi
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 14.285714285714285%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/7
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Mike Nichols
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/19
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Orson Welles
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/18
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Paul Mazursky
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/15
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/paul-thomas-anderson/"
+                    >
+                      Paul Thomas Anderson
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 11.11111111111111%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/9
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Paul Verhoeven
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/17
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Quentin Tarantino
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/14
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Ridley Scott
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/28
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/robert-altman/"
+                    >
+                      Robert Altman
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 2.7777777777777777%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/36
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/roger-corman/"
+                    >
+                      Roger Corman
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 1.7857142857142856%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/56
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/roman-polanski/"
+                    >
+                      Roman Polanski
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 4.3478260869565215%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/23
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/sam-peckinpah/"
+                    >
+                      Sam Peckinpah
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 7.142857142857142%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/14
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Sergio Leone
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/7
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/sergio-martino/"
+                    >
+                      Sergio Martino
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 6.666666666666667%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/15
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Sidney Lumet
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/43
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/stanley-kubrick/"
+                    >
+                      Stanley Kubrick
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 7.6923076923076925%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/13
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/tobe-hooper/"
+                    >
+                      Tobe Hooper
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 6.666666666666667%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/15
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/tod-browning/"
+                    >
+                      Tod Browning
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 55.55555555555556%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/9
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/tony-scott/"
+                    >
+                      Tony Scott
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 5.88235294117647%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/17
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Wes Anderson
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/10
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/wes-craven/"
+                    >
+                      Wes Craven
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 28.57142857142857%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    6/21
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/directors/william-friedkin/"
+                    >
+                      William Friedkin
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 5.263157894736842%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/19
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <span
+            class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_64_default__8lcvdk8x sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_64_default__8lcvdkdo sprinkles_display_block_default__8lcvdk7f"
+          />
+          <section>
+            <h3
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_8_default__8lcvdklx sprinkles_paddingBottom_8_default__8lcvdkhf sprinkles_backgroundColor_canvas_default__8lcvdk43 sprinkles_fontSize_statHeading__8lcvdk1y sprinkles_position_sticky_default__8lcvdkml sprinkles_top_0_default__8lcvdknf sprinkles_top_128_desktop__8lcvdkoh sprinkles_zIndex_500__8lcvdk3m sprinkles_fontWeight_normal__8lcvdk15"
+            >
+              Performer Progress
+            </h3>
+            <table
+              class="StatsTable_tableBorderStyle__iwohur1 StatsTable_tableWhiteSpaceStyle__iwohur2 sprinkles_position_relative_default__8lcvdkmi sprinkles_boxShadow_borderAll_default__8lcvdk6r sprinkles_width_full_default__8lcvdkr9"
+            >
+              <thead
+                class="StatsTable_stickyTableHeaderStyle__iwohur0 sprinkles_paddingLeft_24_default__8lcvdkic sprinkles_paddingRight_24_default__8lcvdkk9 sprinkles_backgroundColor_default_default__8lcvdk46"
+              >
+                <tr>
+                  <th
+                    class="sprinkles_textAlign_left__8lcvdk2u sprinkles_paddingLeft_popoutGutter_default__8lcvdkju"
+                  >
+                    Name
+                  </th>
+                  <th>
+                     
+                  </th>
+                  <th
+                    class="sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    Progress
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/bela-lugosi/"
+                    >
+                      Bela Lugosi
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 12.698412698412698%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    8/63
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Ben Johnson
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/55
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/bette-davis/"
+                    >
+                      Bette Davis
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 8.045977011494253%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    7/87
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/boris-karloff/"
+                    >
+                      Boris Karloff
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 18.367346938775512%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    18/98
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/burt-reynolds/"
+                    >
+                      Burt Reynolds
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 2%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/100
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/cary-grant/"
+                    >
+                      Cary Grant
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 8.21917808219178%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    6/73
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/christopher-lee/"
+                    >
+                      Christopher Lee
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 2.1739130434782608%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    4/184
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/dean-martin/"
+                    >
+                      Dean Martin
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 2.564102564102564%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/39
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/errol-flynn/"
+                    >
+                      Errol Flynn
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.7037037037037033%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/54
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/frank-sinatra/"
+                    >
+                      Frank Sinatra
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.6363636363636362%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/55
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/gene-hackman/"
+                    >
+                      Gene Hackman
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 1.282051282051282%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/78
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/humphrey-bogart/"
+                    >
+                      Humphrey Bogart
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 16.43835616438356%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    12/73
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/jack-lemmon/"
+                    >
+                      Jack Lemmon
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 5.263157894736842%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    3/57
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/jack-nicholson/"
+                    >
+                      Jack Nicholson
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.225806451612903%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/62
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/james-coburn/"
+                    >
+                      James Coburn
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 2.9850746268656714%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/67
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      James Garner
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/49
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/james-stewart/"
+                    >
+                      James Stewart
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 1.2658227848101267%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/79
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/john-wayne/"
+                    >
+                      John Wayne
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 8.904109589041095%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    13/146
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Lee Marvin
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/51
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/marilyn-monroe/"
+                    >
+                      Marilyn Monroe
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.8461538461538463%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/26
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Paul Newman
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/57
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/peter-cushing/"
+                    >
+                      Peter Cushing
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 7.954545454545454%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    7/88
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/robert-mitchum/"
+                    >
+                      Robert Mitchum
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 4.672897196261682%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/107
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Sean Connery
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/68
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Steve McQueen
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/27
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Tom Atkins
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/26
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/vincent-price/"
+                    >
+                      Vincent Price
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.061224489795918%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    3/98
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/warren-oates/"
+                    >
+                      Warren Oates
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 12.195121951219512%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/41
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/william-holden/"
+                    >
+                      William Holden
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 7.246376811594203%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/69
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/performers/william-powell/"
+                    >
+                      William Powell
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 28.333333333333332%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    17/60
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <span
+            class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_64_default__8lcvdk8x sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_64_default__8lcvdkdo sprinkles_display_block_default__8lcvdk7f"
+          />
+          <section>
+            <h3
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_8_default__8lcvdklx sprinkles_paddingBottom_8_default__8lcvdkhf sprinkles_backgroundColor_canvas_default__8lcvdk43 sprinkles_fontSize_statHeading__8lcvdk1y sprinkles_position_sticky_default__8lcvdkml sprinkles_top_0_default__8lcvdknf sprinkles_top_128_desktop__8lcvdkoh sprinkles_zIndex_500__8lcvdk3m sprinkles_fontWeight_normal__8lcvdk15"
+            >
+              Writer Progress
+            </h3>
+            <table
+              class="StatsTable_tableBorderStyle__iwohur1 StatsTable_tableWhiteSpaceStyle__iwohur2 sprinkles_position_relative_default__8lcvdkmi sprinkles_boxShadow_borderAll_default__8lcvdk6r sprinkles_width_full_default__8lcvdkr9"
+            >
+              <thead
+                class="StatsTable_stickyTableHeaderStyle__iwohur0 sprinkles_paddingLeft_24_default__8lcvdkic sprinkles_paddingRight_24_default__8lcvdkk9 sprinkles_backgroundColor_default_default__8lcvdk46"
+              >
+                <tr>
+                  <th
+                    class="sprinkles_textAlign_left__8lcvdk2u sprinkles_paddingLeft_popoutGutter_default__8lcvdkju"
+                  >
+                    Name
+                  </th>
+                  <th>
+                     
+                  </th>
+                  <th
+                    class="sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    Progress
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Anthony Shaffer
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/12
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/writers/clive-barker/"
+                    >
+                      Clive Barker
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 30.76923076923077%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    4/13
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/writers/david-mamet/"
+                    >
+                      David Mamet
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 3.8461538461538463%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/26
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/writers/leigh-brackett/"
+                    >
+                      Leigh Brackett
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 8.333333333333332%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/12
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/writers/neil-labute/"
+                    >
+                      Neil LaBute
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 10%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/10
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk4"
+                    >
+                      Raymond Chandler
+                    </span>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 0%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_subtle__8lcvdk4"
+                  >
+                    0/15
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/writers/stephen-king/"
+                    >
+                      Stephen King
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 1.7543859649122806%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    1/57
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <span
+            class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_64_default__8lcvdk8x sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_64_default__8lcvdkdo sprinkles_display_block_default__8lcvdk7f"
+          />
+          <section>
+            <h3
+              class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_8_default__8lcvdklx sprinkles_paddingBottom_8_default__8lcvdkhf sprinkles_backgroundColor_canvas_default__8lcvdk43 sprinkles_fontSize_statHeading__8lcvdk1y sprinkles_position_sticky_default__8lcvdkml sprinkles_top_0_default__8lcvdknf sprinkles_top_128_desktop__8lcvdkoh sprinkles_zIndex_500__8lcvdk3m sprinkles_fontWeight_normal__8lcvdk15"
+            >
+              Collection Progress
+            </h3>
+            <table
+              class="StatsTable_tableBorderStyle__iwohur1 StatsTable_tableWhiteSpaceStyle__iwohur2 sprinkles_position_relative_default__8lcvdkmi sprinkles_boxShadow_borderAll_default__8lcvdk6r sprinkles_width_full_default__8lcvdkr9"
+            >
+              <thead
+                class="StatsTable_stickyTableHeaderStyle__iwohur0 sprinkles_paddingLeft_24_default__8lcvdkic sprinkles_paddingRight_24_default__8lcvdkk9 sprinkles_backgroundColor_default_default__8lcvdk46"
+              >
+                <tr>
+                  <th
+                    class="sprinkles_textAlign_left__8lcvdk2u sprinkles_paddingLeft_popoutGutter_default__8lcvdkju"
+                  >
+                    Name
+                  </th>
+                  <th>
+                     
+                  </th>
+                  <th
+                    class="sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    Progress
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/childs-play/"
+                    >
+                      Child's Play
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 100%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_progress__8lcvdk8"
+                  >
+                    8/8
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/friday-the-13th/"
+                    >
+                      Friday the 13th
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 75%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    9/12
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/halloween/"
+                    >
+                      Halloween
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 41.66666666666667%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    5/12
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/hammer-films/"
+                    >
+                      Hammer Films
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 7.446808510638298%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    7/94
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/hatchet/"
+                    >
+                      Hatchet
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 100%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_progress__8lcvdk8"
+                  >
+                    4/4
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/james-bond/"
+                    >
+                      James Bond
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 22.22222222222222%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    6/27
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/phantasm/"
+                    >
+                      Phantasm
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 40%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    2/5
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/saw/"
+                    >
+                      Saw
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 66.66666666666666%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    6/9
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/shaw-brothers/"
+                    >
+                      Shaw Brothers
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 100%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_color_progress__8lcvdk8"
+                  >
+                    4/4
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__8lcvdk2e sprinkles_backgroundColor_zebraOdd_default__8lcvdk4o"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkju sprinkles_paddingRight_popoutGutter_default__8lcvdklr sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_left__8lcvdk2u"
+                  >
+                    <a
+                      class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2o"
+                      href="/watchlist/collections/universal-monsters/"
+                    >
+                      Universal Monsters
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__iwohur3 sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_width_full_default__8lcvdkr9"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__168pyz00"
+                      style="--bar-percent: 10.344827586206897%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__8lcvdklu sprinkles_paddingBottom_0_default__8lcvdkhc sprinkles_textAlign_right__8lcvdk2v sprinkles_paddingRight_popoutGutter_default__8lcvdklr"
+                  >
+                    3/29
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <span
+            class="sprinkles_width_px_default__8lcvdkr6 sprinkles_height_64_default__8lcvdk8x sprinkles_minWidth_px_default__8lcvdkh3 sprinkles_minHeight_64_default__8lcvdkdo sprinkles_display_block_default__8lcvdk7f"
+          />
+        </div>
+      </main>
+    </div>
+    <footer
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkjr sprinkles_paddingRight_gutter_default__8lcvdklo sprinkles_paddingTop_32_default__8lcvdkm6 sprinkles_paddingBottom_32_default__8lcvdkho sprinkles_color_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk7l sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2q sprinkles_rowGap_24_default__8lcvdkn0 sprinkles_alignItems_center_default__8lcvdk3o sprinkles_flexDirection_column_default__8lcvdk80"
+    >
+      <nav>
+        <ul
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7l sprinkles_flexWrap_wrap_default__8lcvdk83 sprinkles_justifyContent_center_default__8lcvdkai sprinkles_rowGap_8_default__8lcvdkmu sprinkles_columnGap_16_default__8lcvdk70 sprinkles_columnGap_24_tablet__8lcvdk74"
+        >
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/about/"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/stats/"
+            >
+              Stats
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk7f sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              href="/watchlist/"
+            >
+              Watchlist
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p
+        class="sprinkles_fontWeight_light__8lcvdk14 sprinkles_fontSize_small__8lcvdk1i sprinkles_lineHeight_16__8lcvdk2a"
+      >
+        All stills used in accordance with the 
+        <a
+          class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+          href="http://www.copyright.gov/title17/92chap1.html#107"
+        >
+          Fair Use Law.
+        </a>
+      </p>
+      <a
+        class="Box_screenReaderOnlyStyle__1isqo402"
+        href="#top"
+      >
+        To the top ↑
+      </a>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

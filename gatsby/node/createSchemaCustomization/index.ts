@@ -33,6 +33,7 @@ import { ViewingStatsJson } from "./objects/ViewingStatsJson";
 import { ViewingWithReview } from "./objects/ViewingWithReview";
 import { WatchlistEntitiesJson } from "./objects/WatchlistEntitiesJson";
 import { WatchlistMoviesJson } from "./objects/WatchlistMoviesJson";
+import { WatchlistProgress } from "./objects/WatchlistProgress";
 
 export function createSchemaCustomization({
   actions,
@@ -76,6 +77,7 @@ export function createSchemaCustomization({
     schema.buildObjectType(GradeDistributionsJson),
     schema.buildObjectType(ReviewStatsJson),
     schema.buildObjectType(ViewingStatsJson),
+    schema.buildObjectType(WatchlistProgress),
   ];
 
   createTypes(typeDefs);

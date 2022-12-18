@@ -33,6 +33,7 @@ export const foregroundColors = {
   inverse: fgInverse,
   inherit: "inherit",
   emphasis: fgEmphasis,
+  progress: "#379634",
 };
 
 export const backgroundColors = {

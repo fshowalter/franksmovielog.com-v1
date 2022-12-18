@@ -31,4 +31,5 @@ export enum SchemaNames {
   WatchlistEntitiesJson = "WatchlistEntitiesJson",
   WatchlistEntityType = "WatchlistEntityType",
   WatchlistMoviesJson = "WatchlistMoviesJson",
+  WatchlistProgress = "WatchlistProgress",
 }

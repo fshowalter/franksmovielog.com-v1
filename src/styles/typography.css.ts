@@ -24,6 +24,7 @@ export const lineHeights = {
   32: "2rem",
   36: "2.25rem",
   40: "2.5rem",
+  48: "3rem",
   prose: "1.75rem",
 };
 
