@@ -1,86 +1,12 @@
 import { graphql } from "gatsby";
-import { useReducer, useRef } from "react";
 import type { IBoxProps } from "../components/Box";
 import { Box } from "../components/Box";
-import { Button } from "../components/Button";
-import { DebouncedInput } from "../components/DebouncedInput";
-import { Fieldset } from "../components/Fieldset";
 import { HeadBuilder } from "../components/HeadBuilder";
-import { Layout } from "../components/Layout";
 import { Link } from "../components/Link";
-import { Poster, PosterList } from "../components/PosterList";
-import { ProgressGraph } from "../components/ProgressGraph";
-import { SelectField, SelectOptions } from "../components/SelectField";
+import { PosterListWithFilters } from "../components/PosterListWithFilters";
 import { Spacer } from "../components/Spacer";
-import { YearInput } from "../components/YearInput";
 import { foregroundColors } from "../styles/colors.css";
-import { HEADER_HEIGHT } from "../styles/sizes.css";
 import { toSentenceArray } from "../utils";
-import type { SortType } from "./watchlist.reducer";
-import reducer, { ActionType, initState } from "./watchlist.reducer";
-
-function ListInfo({
-  visible,
-  total,
-}: {
-  visible: number;
-  total: number;
-}): JSX.Element {
-  let showingText;
-
-  if (visible > total) {
-    showingText = `Showing ${total} of ${total}`;
-  } else {
-    showingText = `Showing 1-${visible} of ${total.toLocaleString()}`;
-  }
-
-  return <Box>{showingText}</Box>;
-}
-
-function groupForMovie(
-  movie: Queries.WatchlistMovieFragment,
-  sortValue: SortType
-): string {
-  switch (sortValue) {
-    case "release-date-asc":
-    case "release-date-desc": {
-      return movie.releaseDate.substring(0, 4);
-    }
-    case "title": {
-      const letter = movie.sortTitle.substring(0, 1);
-
-      if (letter.toLowerCase() == letter.toUpperCase()) {
-        return "#";
-      }
-
-      return movie.sortTitle.substring(0, 1).toLocaleUpperCase();
-    }
-    // no default
-  }
-}
-
-function groupMovies({
-  movies,
-  sortValue,
-}: {
-  movies: Queries.WatchlistMovieFragment[];
-  sortValue: SortType;
-}): Map<string, Queries.WatchlistMovieFragment[]> {
-  const groupedMovies = new Map<string, Queries.WatchlistMovieFragment[]>();
-
-  movies.map((movie) => {
-    const group = groupForMovie(movie, sortValue);
-    let groupValue = groupedMovies.get(group);
-
-    if (!groupValue) {
-      groupValue = [];
-      groupedMovies.set(group, groupValue);
-    }
-    groupValue.push(movie);
-  });
-
-  return groupedMovies;
-}
 
 /**
  * Formats a given collection of watchlist person names to a sentence with
@@ -141,44 +67,16 @@ function WatchlistMovieSlug({
   ];
 
   return (
-    <Box color="subtle" fontSize="xSmall" fontWeight="light" lineHeight={16}>
+    <Box
+      color="subtle"
+      fontSize="small"
+      fontWeight="light"
+      lineHeight={16}
+      letterSpacing={0.5}
+    >
       Because {toSentenceArray(credits)}.
     </Box>
   );
-}
-
-interface IWatchlistProgressProps extends IBoxProps {
-  total: number;
-  reviewed: number;
-}
-
-function WatchlistProgress({
-  total,
-  reviewed,
-  ...rest
-}: IWatchlistProgressProps): JSX.Element {
-  return (
-    <Box {...rest}>
-      <ProgressGraph
-        total={total}
-        complete={reviewed}
-        width={160}
-        height={160}
-      />
-      <Spacer axis="vertical" size={24} />
-      <Box color="subtle" textAlign="center" fontSize="normal">
-        {reviewed}/{total.toLocaleString()} Reviewed
-      </Box>
-    </Box>
-  );
-}
-
-function reviewedMovieCount(
-  filteredMovies: Queries.WatchlistMovieFragment[]
-): number {
-  const reviewedMovies = filteredMovies.filter((m) => m.reviewedMovie?.slug);
-
-  return reviewedMovies.length;
 }
 
 interface IWatchlistEntityTypeLinkItem extends IBoxProps {
@@ -202,6 +100,8 @@ function WatchlistPeopleLinkItem({
         paddingY={8}
         borderRadius={8}
         textDecoration="none"
+        alignItems="center"
+        minWidth={128}
       >
         <Box flexShrink={0}>
           <svg
@@ -237,6 +137,8 @@ function WatchlistCollectionLinkItem({
         paddingY={8}
         borderRadius={8}
         textDecoration="none"
+        alignItems="center"
+        minWidth={128}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -272,291 +174,72 @@ export default function WatchlistIndexPage({
 }: {
   data: Queries.WatchlistIndexPageQuery;
 }): JSX.Element {
-  const [state, dispatch] = useReducer(
-    reducer,
-    {
-      movies: [...data.watchlist.nodes],
-    },
-    initState
-  );
-
-  const listHeader = useRef<HTMLDivElement>(null);
-  const reviewedCount = reviewedMovieCount(state.filteredMovies);
-  const groupedMovies = groupMovies({
-    movies: state.filteredMovies.slice(0, state.showCount),
-    sortValue: state.sortValue,
-  });
-
   return (
-    <Layout>
-      <Box
-        as="main"
-        display="flex"
-        flexDirection={{ default: "column", desktop: "row" }}
-        paddingX={{ default: 0, desktop: "gutter" }}
-        columnGap={64}
-      >
-        <Box
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          paddingX={{ default: "gutter", desktop: 0 }}
-          paddingTop={32}
-          flexBasis={320}
-        >
-          <Box maxWidth="prose">
-            <Box as="h1" fontSize="pageTitle">
-              Watchlist
-            </Box>
-            <Spacer axis="vertical" size={24} />
-            <Box color="subtle">
-              <q>A man&apos;s got to know his limitations.</q>
-              <p>
-                My movie review bucketlist.{" "}
-                {state.allMovies.length.toLocaleString()} titles. No silents or
-                documentaries.{" "}
-              </p>
-            </Box>
-          </Box>
-          <Spacer axis="vertical" size={32} />
-          <Box
-            as="ul"
-            padding={0}
-            display="flex"
-            flexWrap="wrap"
-            columnGap={32}
-            rowGap={24}
-          >
-            <WatchlistPeopleLinkItem
-              flexGrow={1}
-              flexShrink={0}
-              to="/watchlist/directors/"
-            >
-              Directors
-            </WatchlistPeopleLinkItem>
-
-            <WatchlistPeopleLinkItem
-              flexGrow={1}
-              flexShrink={0}
-              to="/watchlist/performers/"
-            >
-              Performers
-            </WatchlistPeopleLinkItem>
-
-            <WatchlistPeopleLinkItem
-              flexGrow={1}
-              flexShrink={0}
-              to="/watchlist/writers/"
-            >
-              Writers
-            </WatchlistPeopleLinkItem>
-
-            <WatchlistCollectionLinkItem
-              flexGrow={1}
-              flexShrink={0}
-              to="/watchlist/collections/"
-            >
-              Collections
-            </WatchlistCollectionLinkItem>
-          </Box>
-          <Spacer axis="vertical" size={32} />
-          <Box>
-            <Fieldset legend="Filter & Sort">
-              <DebouncedInput
-                label="Title"
-                placeholder="Enter all or part of a title"
-                onInputChange={(value) =>
-                  dispatch({ type: ActionType.FILTER_TITLE, value })
-                }
-              />
-              <SelectField
-                label="Director"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_DIRECTOR,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <SelectOptions options={data.watchlist.directors} />
-              </SelectField>
-              <SelectField
-                label="Performer"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_PERFORMER,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <SelectOptions options={data.watchlist.performers} />
-              </SelectField>
-              <SelectField
-                label="Writer"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_WRITER,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <SelectOptions options={data.watchlist.writers} />
-              </SelectField>
-              <SelectField
-                label="Collection"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.FILTER_COLLECTION,
-                    value: e.target.value,
-                  })
-                }
-              >
-                <SelectOptions options={data.watchlist.collections} />
-              </SelectField>
-              <YearInput
-                label="Release Year"
-                years={data.watchlist.releaseYears}
-                onYearChange={(values) =>
-                  dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
-                }
-              />
-              <SelectField
-                label="Order By"
-                onChange={(e) =>
-                  dispatch({
-                    type: ActionType.SORT,
-                    value: e.target.value as SortType,
-                  })
-                }
-              >
-                <option value="release-date-asc">
-                  Release Date (Oldest First)
-                </option>
-                <option value="release-date-desc">
-                  Release Date (Newest First)
-                </option>
-                <option value="title">Title</option>
-              </SelectField>
-            </Fieldset>
-            <Box color="subtle" paddingX="gutter" textAlign="center">
-              <Spacer axis="vertical" size={32} />
-              <ListInfo
-                visible={state.showCount}
-                total={state.filteredMovies.length}
-              />
-              <Spacer axis="vertical" size={32} />
-            </Box>
-            <Box display="flex" flexDirection="column" alignItems="center">
-              <WatchlistProgress
-                total={state.filteredMovies.length}
-                reviewed={reviewedCount}
-              />
-              {(reviewedCount > 0 || state.hideReviewed) && (
-                <>
-                  <Spacer axis="vertical" size={24} />
-                  <Button
-                    paddingX={24}
-                    onClick={() =>
-                      dispatch({ type: ActionType.TOGGLE_REVIEWED })
-                    }
-                  >
-                    {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-                  </Button>
-                </>
-              )}
-            </Box>
-          </Box>
+    <PosterListWithFilters
+      distinctDirectors={data.watchlist.directors}
+      distinctPerformers={data.watchlist.performers}
+      distinctWriters={data.watchlist.writers}
+      distinctCollections={data.watchlist.collections}
+      distinctReleaseYears={data.watchlist.releaseYears}
+      items={data.watchlist.nodes}
+      initialSort="release-date-asc"
+      toggleReviewed={true}
+      posterDetails={(movie) => (
+        <WatchlistMovieSlug movie={movie as Queries.WatchlistMovieFragment} />
+      )}
+    >
+      <Box as="h1" fontSize="pageTitle" textAlign="center">
+        Watchlist
+      </Box>
+      <Box color="subtle">
+        <Box as="q" display="block" textAlign="center" color="subtle">
+          A man&apos;s got to know his limitations.
         </Box>
-        <Box
-          name="list"
-          innerRef={listHeader}
-          display="flex"
-          flexDirection="column"
-          flexGrow={1}
-        >
-          <Box as="ol" data-testid="movies-list" padding={0}>
-            {[...groupedMovies].map(([group, movies], index) => {
-              return (
-                <Box as="li" key={group} display="block">
-                  <Box
-                    fontSize="groupHeading"
-                    style={{ zIndex: index + 100 }}
-                    paddingTop={{ default: 0, desktop: 16 }}
-                    position="sticky"
-                    backgroundColor="default"
-                    top={{ default: 0, desktop: HEADER_HEIGHT }}
-                  >
-                    <Box
-                      backgroundColor="canvas"
-                      paddingY={8}
-                      paddingX={{ default: "gutter", desktop: 24 }}
-                    >
-                      {group}
-                    </Box>
-                  </Box>
-                  <Spacer axis="vertical" size={16} />
-                  <PosterList
-                    paddingLeft={{ default: "gutter", desktop: 24 }}
-                    paddingRight={{ default: "gutter", desktop: 0 }}
-                  >
-                    {movies.map((movie) => {
-                      return (
-                        <Poster
-                          key={movie.imdbId}
-                          title={movie.title}
-                          year={movie.year}
-                          slug={movie.reviewedMovie?.slug}
-                          image={movie.poster}
-                          details={<WatchlistMovieSlug movie={movie} />}
-                        />
-                      );
-                    })}
-                  </PosterList>
-                  {/* <ol>
-                    {movies.map((movie) => {
-                      return (
-                        <li key={movie.imdbId} className={listItemCss}>
-                          <WatchlistMoviePoster movie={movie} />
-                          <WatchlistMovieTitle movie={movie} />
-                          <WatchlistMovieSlug movie={movie} />
-                          <WatchlistMovieCheckMark movie={movie} />
-                        </li>
-                      );
-                    })}
-                  </ol> */}
-                </Box>
-              );
-            })}
-          </Box>
-          <Box display="flex" flexDirection="column" alignItems="center">
-            <Spacer axis="vertical" size={32} />
-            {state.filteredMovies.length > state.showCount && (
-              <>
-                <Button
-                  paddingX="gutter"
-                  onClick={() => dispatch({ type: ActionType.SHOW_MORE })}
-                  display="flex"
-                  columnGap={16}
-                >
-                  <svg
-                    width="24"
-                    height="24"
-                    focusable="false"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill={foregroundColors.accent}
-                  >
-                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
-                  </svg>
-                  Show More
-                </Button>
-                <Spacer axis="vertical" size={32} />
-              </>
-            )}
-          </Box>
+        <Spacer axis="vertical" size={16} />
+        <Box color="subtle">
+          <Spacer axis="vertical" size={16} />
+          <p>
+            My movie review bucketlist.{" "}
+            {data.watchlist.nodes.length.toLocaleString()} titles. No silents or
+            documentaries.{" "}
+          </p>
+          <Spacer axis="vertical" size={16} />
+          <p>
+            Track my{" "}
+            <Link
+              textDecoration="none"
+              color="accent"
+              to="/watchlist/progress/"
+            >
+              progress
+            </Link>
+            .
+          </p>
         </Box>
       </Box>
-    </Layout>
+      <Spacer axis="vertical" size={32} />
+      <Box
+        as="ul"
+        padding={0}
+        display="flex"
+        flexWrap="wrap"
+        columnGap={32}
+        rowGap={24}
+      >
+        <WatchlistPeopleLinkItem flex={1} to="/watchlist/directors/">
+          Directors
+        </WatchlistPeopleLinkItem>
+        <WatchlistPeopleLinkItem flex={1} to="/watchlist/performers/">
+          Performers
+        </WatchlistPeopleLinkItem>
+        <WatchlistPeopleLinkItem flex={1} to="/watchlist/writers/">
+          Writers
+        </WatchlistPeopleLinkItem>
+        <WatchlistCollectionLinkItem flex={1} to="/watchlist/collections/">
+          Collections
+        </WatchlistCollectionLinkItem>
+      </Box>
+    </PosterListWithFilters>
   );
 }
 
@@ -567,23 +250,15 @@ export const pageQuery = graphql`
     year
     releaseDate
     sortTitle
-    reviewedMovie {
-      slug
-    }
+    slug
+    grade
+    gradeValue
     directorNames
     performerNames
     writerNames
     collectionNames
     poster {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 200
-          placeholder: TRACED_SVG
-        )
-      }
+      ...PosterListPoster
     }
   }
 

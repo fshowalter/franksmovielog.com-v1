@@ -9,7 +9,7 @@ export const stickyHeaderStyle = style({
   lineHeight: "calc(2.5rem - 2px)",
 
   "@media": {
-    [minMediaQuery("tablet")]: {
+    [minMediaQuery("desktop")]: {
       top: `calc(${HEADER_HEIGHT}px + 2.5rem)`,
     },
   },

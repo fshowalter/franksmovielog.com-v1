@@ -100,13 +100,13 @@ function Title({
   if (slug)
     return (
       <Link color="accent" textDecoration="none" to={`/reviews/${slug}/`}>
-        {title} {yearBox}
+        {title}&nbsp;{yearBox}
       </Link>
     );
 
   return (
     <>
-      {title} {yearBox}
+      {title}&nbsp;{yearBox}
     </>
   );
 }
@@ -143,6 +143,7 @@ export function Poster({
       backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
       paddingX={{ default: "popoutGutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
+      alignItems={{ default: "center" }}
     >
       <Image slug={slug} image={image} title={title} year={year} />
       <Box flexGrow={1}>

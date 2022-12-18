@@ -24,7 +24,7 @@ import {
 } from "./PosterListWithFilters.css";
 import type { Sort } from "./PosterListWithFilters.reducer";
 import {
-  ActionTypes,
+  ActionType,
   initState,
   reducer,
 } from "./PosterListWithFilters.reducer";
@@ -133,7 +133,13 @@ export function PosterListWithFilters({
   distinctReleaseYears,
   distinctViewingYears,
   distinctGenres,
+  distinctDirectors,
+  distinctPerformers,
+  distinctWriters,
+  distinctCollections,
   initialSort,
+  toggleReviewed = false,
+  posterDetails,
 }: {
   items: readonly IPosterListWithFiltersItem[];
   children: React.ReactNode;
@@ -142,16 +148,20 @@ export function PosterListWithFilters({
   distinctReleaseYears: readonly string[];
   distinctGenres?: readonly string[];
   distinctGrades?: readonly (string | null)[];
+  distinctDirectors?: readonly string[];
+  distinctPerformers?: readonly string[];
+  distinctWriters?: readonly string[];
+  distinctCollections?: readonly string[];
   initialSort: Sort;
+  toggleReviewed?: boolean;
+  posterDetails?: (item: IPosterListWithFiltersItem) => React.ReactNode;
 }): JSX.Element {
-  const [state, dispatch] = useReducer(
-    reducer,
-    {
-      items: [...items],
-      sort: initialSort,
-    },
-    initState
-  );
+  const is = initState({
+    items: [...items],
+    sort: initialSort,
+  });
+
+  const [state, dispatch] = useReducer(reducer, is);
 
   const listHeader = useRef<HTMLDivElement>(null);
 
@@ -173,7 +183,7 @@ export function PosterListWithFilters({
           display="flex"
           flexDirection="column"
           alignItems="center"
-          paddingX={{ default: "gutter", desktop: 0 }}
+          paddingX={{ default: "popoutGutter", desktop: 0 }}
           paddingTop={32}
           flexBasis={320}
         >
@@ -181,18 +191,77 @@ export function PosterListWithFilters({
           <Spacer axis="vertical" size={32} />
           <Box className={stickyFiltersStyle}>
             <Fieldset legend="Filter & Sort">
+              {toggleReviewed && (
+                <Button
+                  onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
+                >
+                  {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+                </Button>
+              )}
               <DebouncedInput
                 label="Title"
                 placeholder="Enter all or part of a title"
                 onInputChange={(value) =>
-                  dispatch({ type: ActionTypes.FILTER_TITLE, value })
+                  dispatch({ type: ActionType.FILTER_TITLE, value })
                 }
               />
+              {distinctDirectors && (
+                <SelectField
+                  label="Director"
+                  onChange={(e) =>
+                    dispatch({
+                      type: ActionType.FILTER_DIRECTOR,
+                      value: e.target.value,
+                    })
+                  }
+                >
+                  <SelectOptions options={distinctDirectors} />
+                </SelectField>
+              )}
+              {distinctPerformers && (
+                <SelectField
+                  label="Performer"
+                  onChange={(e) =>
+                    dispatch({
+                      type: ActionType.FILTER_PERFORMER,
+                      value: e.target.value,
+                    })
+                  }
+                >
+                  <SelectOptions options={distinctPerformers} />
+                </SelectField>
+              )}
+              {distinctWriters && (
+                <SelectField
+                  label="Writer"
+                  onChange={(e) =>
+                    dispatch({
+                      type: ActionType.FILTER_WRITER,
+                      value: e.target.value,
+                    })
+                  }
+                >
+                  <SelectOptions options={distinctWriters} />
+                </SelectField>
+              )}
+              {distinctCollections && (
+                <SelectField
+                  label="Collection"
+                  onChange={(e) =>
+                    dispatch({
+                      type: ActionType.FILTER_COLLECTION,
+                      value: e.target.value,
+                    })
+                  }
+                >
+                  <SelectOptions options={distinctCollections} />
+                </SelectField>
+              )}
               <YearInput
                 label="Release Year"
                 years={distinctReleaseYears}
                 onYearChange={(values) =>
-                  dispatch({ type: ActionTypes.FILTER_RELEASE_YEAR, values })
+                  dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
                 }
               />
               {distinctViewingYears && (
@@ -200,7 +269,7 @@ export function PosterListWithFilters({
                   label="Viewing Year"
                   years={distinctViewingYears}
                   onYearChange={(values) =>
-                    dispatch({ type: ActionTypes.FILTER_VIEWING_YEAR, values })
+                    dispatch({ type: ActionType.FILTER_VIEWING_YEAR, values })
                   }
                 />
               )}
@@ -209,7 +278,7 @@ export function PosterListWithFilters({
                   label="Grade"
                   onGradeChange={(values, includeNonReviewed) =>
                     dispatch({
-                      type: ActionTypes.FILTER_GRADE,
+                      type: ActionType.FILTER_GRADE,
                       values,
                       includeNonReviewed,
                     })
@@ -221,7 +290,7 @@ export function PosterListWithFilters({
                   label="Medium"
                   onChange={(e) =>
                     dispatch({
-                      type: ActionTypes.FILTER_MEDIUM,
+                      type: ActionType.FILTER_MEDIUM,
                       value: e.target.value,
                     })
                   }
@@ -250,7 +319,7 @@ export function PosterListWithFilters({
                     isSearchable={false}
                     onChange={(e) =>
                       dispatch({
-                        type: ActionTypes.FILTER_GENRES,
+                        type: ActionType.FILTER_GENRES,
                         values: e.map((selection) => selection.value),
                       })
                     }
@@ -266,7 +335,7 @@ export function PosterListWithFilters({
                 label="Order By"
                 onChange={(e) =>
                   dispatch({
-                    type: ActionTypes.SORT,
+                    type: ActionType.SORT,
                     value: e.target.value as Sort,
                   })
                 }
@@ -305,7 +374,7 @@ export function PosterListWithFilters({
           <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
           <Box
             color="subtle"
-            paddingX="gutter"
+            paddingX="popoutGutter"
             textAlign="center"
             backgroundColor="default"
             lineHeight={36}
@@ -330,16 +399,13 @@ export function PosterListWithFilters({
                     <Box
                       backgroundColor="canvas"
                       paddingY={8}
-                      paddingX={{ default: "gutter", desktop: 24 }}
+                      paddingX={{ default: "popoutGutter", desktop: 24 }}
                     >
                       {group}
                     </Box>
                   </Box>
                   <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
-                  <PosterList
-                    paddingLeft={{ default: 0, tablet: "gutter", desktop: 24 }}
-                    paddingRight={{ default: 0, tablet: "gutter", desktop: 0 }}
-                  >
+                  <PosterList>
                     {items.map((item) => {
                       return (
                         <Poster
@@ -352,6 +418,9 @@ export function PosterListWithFilters({
                           medium={item.medium}
                           slug={item.slug}
                           image={item.poster}
+                          details={
+                            posterDetails ? posterDetails(item) : undefined
+                          }
                         />
                       );
                     })}
@@ -372,7 +441,7 @@ export function PosterListWithFilters({
                 <Spacer axis="vertical" size={32} />
                 <Button
                   paddingX="gutter"
-                  onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}
+                  onClick={() => dispatch({ type: ActionType.SHOW_MORE })}
                   display="flex"
                   columnGap={16}
                 >
@@ -413,6 +482,10 @@ export interface IPosterListWithFiltersItem {
   slug: string | null;
   grade: string | null;
   gradeValue: number | null;
+  directorNames?: readonly string[];
+  performerNames?: readonly string[];
+  writerNames?: readonly string[];
+  collectionNames?: readonly string[];
   poster: {
     childImageSharp: {
       gatsbyImageData: import("gatsby-plugin-image").IGatsbyImageData;

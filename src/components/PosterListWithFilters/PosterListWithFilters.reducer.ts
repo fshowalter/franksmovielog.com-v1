@@ -51,6 +51,7 @@ interface State {
   showCount: number;
   /** The active sort value. */
   sortValue: Sort;
+  hideReviewed: boolean;
 }
 
 const SHOW_COUNT_DEFAULT = 24;
@@ -71,44 +72,78 @@ export function initState({
     filters: {},
     showCount: SHOW_COUNT_DEFAULT,
     sortValue: sort,
+    hideReviewed: false,
   };
 }
 
-export enum ActionTypes {
+export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
   FILTER_MEDIUM = "FILTER_MEDIUM",
   FILTER_GRADE = "FILTER_GRADE",
   FILTER_GENRES = "FILTER_GENRES",
   FILTER_VIEWING_YEAR = "FILTER_VIEWING_YEAR",
   FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
+  FILTER_DIRECTOR = "FILTER_DIRECTOR",
+  FILTER_PERFORMER = "FILTER_PERFORMER",
+  FILTER_WRITER = "FILTER_WRITER",
+  FILTER_COLLECTION = "FILTER_COLLECTION",
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
+  TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
 }
 
 /** Action to filter by title. */
 interface FilterTitleAction {
-  type: ActionTypes.FILTER_TITLE;
+  type: ActionType.FILTER_TITLE;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by collection. */
+interface FilterCollectionAction {
+  type: ActionType.FILTER_COLLECTION;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by director. */
+interface FilterDirectorAction {
+  type: ActionType.FILTER_DIRECTOR;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by performer. */
+interface FilterPerformerAction {
+  type: ActionType.FILTER_PERFORMER;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by writer. */
+interface FilterWriterAction {
+  type: ActionType.FILTER_WRITER;
   /** The value to filter on. */
   value: string;
 }
 
 /** Action to filter by venue. */
 interface FilterMediumAction {
-  type: ActionTypes.FILTER_MEDIUM;
+  type: ActionType.FILTER_MEDIUM;
   /** The value to filter on. */
   value: string;
 }
 
 /** Action to filter by venue. */
 interface FilterGenresAction {
-  type: ActionTypes.FILTER_GENRES;
+  type: ActionType.FILTER_GENRES;
   /** The value to filter on. */
   values: string[];
 }
 
 /** Action to filter by grade. */
 interface FilterGradeAction {
-  type: ActionTypes.FILTER_GRADE;
+  type: ActionType.FILTER_GRADE;
   /** The values to filter on. */
   values: [number, number];
   includeNonReviewed: boolean;
@@ -116,38 +151,48 @@ interface FilterGradeAction {
 
 /** Action to filter by release year. */
 interface FilterReleaseYearAction {
-  type: ActionTypes.FILTER_RELEASE_YEAR;
+  type: ActionType.FILTER_RELEASE_YEAR;
   /** The minimum and maximum years to bound the filter window. */
   values: [number, number];
 }
 
 /** Action to filter by viewing year. */
 interface FilterViewingYearAction {
-  type: ActionTypes.FILTER_VIEWING_YEAR;
+  type: ActionType.FILTER_VIEWING_YEAR;
   /** The minimum and maximum years to bound the filter window. */
   values: [number, number];
 }
 
 /** Action to sort. */
 interface SortAction {
-  type: ActionTypes.SORT;
+  type: ActionType.SORT;
   /** The sorter to apply. */
   value: Sort;
 }
 
 interface ShowMoreAction {
-  type: ActionTypes.SHOW_MORE;
+  type: ActionType.SHOW_MORE;
+}
+
+/** Action to toggle reviewed. */
+interface ToggleReviewedAction {
+  type: ActionType.TOGGLE_REVIEWED;
 }
 
 export type Action =
   | FilterTitleAction
+  | FilterDirectorAction
+  | FilterPerformerAction
+  | FilterWriterAction
+  | FilterCollectionAction
   | FilterReleaseYearAction
   | FilterViewingYearAction
   | FilterMediumAction
   | FilterGradeAction
   | FilterGenresAction
   | SortAction
-  | ShowMoreAction;
+  | ShowMoreAction
+  | ToggleReviewedAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -160,7 +205,7 @@ export function reducer(state: State, action: Action): State {
   let filteredItems;
 
   switch (action.type) {
-    case ActionTypes.FILTER_TITLE: {
+    case ActionType.FILTER_TITLE: {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
@@ -181,7 +226,107 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.FILTER_MEDIUM: {
+    case ActionType.FILTER_DIRECTOR: {
+      filters = {
+        ...state.filters,
+        director: (item: IPosterListWithFiltersItem) => {
+          if (action.value === "All" || !item.directorNames) {
+            return true;
+          }
+
+          return item.directorNames.includes(action.value);
+        },
+      };
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredItems,
+        showCount: SHOW_COUNT_DEFAULT,
+      };
+    }
+    case ActionType.FILTER_PERFORMER: {
+      filters = {
+        ...state.filters,
+        performer: (item: IPosterListWithFiltersItem) => {
+          if (action.value === "All" || !item.performerNames) {
+            return true;
+          }
+
+          return item.performerNames.includes(action.value);
+        },
+      };
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredItems,
+        showCount: SHOW_COUNT_DEFAULT,
+      };
+    }
+    case ActionType.FILTER_WRITER: {
+      filters = {
+        ...state.filters,
+        writer: (item: IPosterListWithFiltersItem) => {
+          if (action.value === "All" || !item.writerNames) {
+            return true;
+          }
+
+          return item.writerNames.includes(action.value);
+        },
+      };
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredItems,
+        showCount: SHOW_COUNT_DEFAULT,
+      };
+    }
+    case ActionType.FILTER_COLLECTION: {
+      filters = {
+        ...state.filters,
+        collection: (item: IPosterListWithFiltersItem) => {
+          if (action.value === "All" || !item.collectionNames) {
+            return true;
+          }
+
+          return item.collectionNames.includes(action.value);
+        },
+      };
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredItems,
+        showCount: SHOW_COUNT_DEFAULT,
+      };
+    }
+    case ActionType.FILTER_MEDIUM: {
       filters = {
         ...state.filters,
         venue: (item: IPosterListWithFiltersItem) => {
@@ -205,7 +350,7 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.FILTER_RELEASE_YEAR: {
+    case ActionType.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
         releaseYear: (item: IPosterListWithFiltersItem) => {
@@ -228,7 +373,7 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.FILTER_GENRES: {
+    case ActionType.FILTER_GENRES: {
       filters = {
         ...state.filters,
         genres: (item: IPosterListWithFiltersItem) => {
@@ -248,7 +393,7 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.FILTER_VIEWING_YEAR: {
+    case ActionType.FILTER_VIEWING_YEAR: {
       filters = {
         ...state.filters,
         releaseYear: (item: IPosterListWithFiltersItem) => {
@@ -274,7 +419,7 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.FILTER_GRADE: {
+    case ActionType.FILTER_GRADE: {
       filters = {
         ...state.filters,
         grade: (item: IPosterListWithFiltersItem) => {
@@ -300,7 +445,7 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.SORT: {
+    case ActionType.SORT: {
       filteredItems = sortItems(state.filteredItems, action.value);
       return {
         ...state,
@@ -308,10 +453,38 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
-    case ActionTypes.SHOW_MORE: {
+    case ActionType.SHOW_MORE: {
       return {
         ...state,
         showCount: state.showCount + SHOW_COUNT_DEFAULT,
+      };
+    }
+    case ActionType.TOGGLE_REVIEWED: {
+      if (state.hideReviewed) {
+        filters = {
+          ...state.filters,
+        };
+        delete filters.reviewed;
+      } else {
+        filters = {
+          ...state.filters,
+          reviewed: (item: IPosterListWithFiltersItem) => {
+            return item.slug === null;
+          },
+        };
+      }
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredItems,
+        hideReviewed: !state.hideReviewed,
       };
     }
     // no default

@@ -37,13 +37,7 @@ export default function ReviewsIndexPage({
       <Box as="h1" fontSize="pageTitle" textAlign="center">
         Reviews
       </Box>
-      <Box
-        as="q"
-        // fontWeight="semiBold"
-        display="block"
-        textAlign="center"
-        color="subtle"
-      >
+      <Box as="q" display="block" textAlign="center" color="subtle">
         We have such sights to show you.
       </Box>
       <Spacer axis="vertical" size={16} />
