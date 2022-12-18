@@ -405,7 +405,13 @@ export function PosterListWithFilters({
                     </Box>
                   </Box>
                   <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
-                  <PosterList>
+                  <PosterList
+                    paddingX={{
+                      default: 0,
+                      tablet: "popoutGutter",
+                      desktop: 0,
+                    }}
+                  >
                     {items.map((item) => {
                       return (
                         <Poster

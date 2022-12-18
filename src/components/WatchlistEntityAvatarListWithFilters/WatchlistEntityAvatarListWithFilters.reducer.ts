@@ -1,12 +1,12 @@
 import { applyFilters } from "../../utils/applyFilters";
-import { sortNumberDesc, sortStringAsc } from "../../utils/sort-utils";
+import { sortStringAsc, sortStringDesc } from "../../utils/sort-utils";
 
 export enum ActionType {
   FILTER_NAME = "FILTER_NAME",
   SORT = "SORT",
 }
 
-export type SortValue = "name" | "reviews";
+export type SortValue = "name-asc" | "name-desc";
 
 function sortEntities(
   entities: Queries.WatchlistEntityAvatarListItemFragment[],
@@ -19,8 +19,8 @@ function sortEntities(
       b: Queries.WatchlistEntityAvatarListItemFragment
     ) => number
   > = {
-    name: (a, b) => sortStringAsc(a.name, b.name),
-    reviews: (a, b) => sortNumberDesc(a.reviewCount, b.reviewCount),
+    "name-asc": (a, b) => sortStringAsc(a.name, b.name),
+    "name-desc": (a, b) => sortStringDesc(a.name, b.name),
   };
 
   const comparer = sortMap[sortOrder];
@@ -54,7 +54,7 @@ export function initState({
     allEntities: [...entities],
     filteredEntities: [...entities],
     filters: {},
-    sortValue: "name",
+    sortValue: "name-asc",
   };
 }
 

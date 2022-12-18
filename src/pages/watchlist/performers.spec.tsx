@@ -17,24 +17,14 @@ describe("/watchlist/performers/", () => {
     expect(screen.getByTestId("entity-list")).toMatchSnapshot();
   });
 
-  it("can sort by name", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPerformersPage data={data} />);
-
-    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Name");
-
-    expect(screen.getByTestId("entity-list")).toMatchSnapshot();
-  });
-
-  it("can sort by review count", async () => {
+  it("can sort by name desc", async () => {
     expect.hasAssertions();
 
     render(<WatchlistPerformersPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Review Count"
+      "Name (Z-&gt;A)"
     );
 
     expect(screen.getByTestId("entity-list")).toMatchSnapshot();

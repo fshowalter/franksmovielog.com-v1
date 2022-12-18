@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { useReducer } from "react";
-import { backgroundColors, borderColors } from "../../styles/colors.css";
+import { backgroundColors } from "../../styles/colors.css";
 import { Box } from "../Box";
 import { DebouncedInput } from "../DebouncedInput";
 import { Fieldset } from "../Fieldset";
@@ -9,11 +9,7 @@ import { Layout } from "../Layout";
 import { Link } from "../Link";
 import { SelectField } from "../SelectField";
 import { Spacer } from "../Spacer";
-import {
-  gridStyle,
-  progressRingPostionStyle,
-  progressRingTransformStyle,
-} from "./WatchlistEntityAvatarListWithFilters.css";
+import { gridStyle } from "./WatchlistEntityAvatarListWithFilters.css";
 import {
   ActionType,
   initState,
@@ -21,44 +17,74 @@ import {
   SortValue,
 } from "./WatchlistEntityAvatarListWithFilters.reducer";
 
-function Progress({
+function Avatar({
   entity,
 }: {
   entity: Queries.WatchlistEntityAvatarListItemFragment;
-}): JSX.Element {
-  const percent = entity.reviewCount / entity.titleCount;
-  const circumference = 17.5 * 2 * Math.PI;
+}) {
+  if (entity.avatar && entity.slug) {
+    return (
+      <Link
+        to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
+        maxWidth={{ default: 40, tablet: 160 }}
+        borderRadius="half"
+        transform="safariBorderRadiusFix"
+        overflow="hidden"
+        boxShadow="borderAll"
+      >
+        <GraphqlImage
+          image={entity.avatar}
+          alt={`An image of ${entity.name}`}
+        />
+      </Link>
+    );
+  }
 
   return (
-    <svg
-      viewBox="0 0 36 36"
-      className={progressRingPostionStyle}
-      preserveAspectRatio="none"
-    >
-      <g id="circles" strokeWidth="1">
-        <circle
-          r="17.5"
-          cx="18"
-          cy="18"
-          fill="none"
-          strokeWidth={1}
-          stroke={borderColors.default}
+    <Box maxWidth={{ default: 40, tablet: 160 }}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        fill={backgroundColors.subtle}
+        width="100%"
+      >
+        <path
+          clipRule="evenodd"
+          d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+          fillRule="evenodd"
         />
-        <circle
-          r="17.5"
-          cx="18"
-          cy="18"
-          fill="none"
-          strokeDasharray={`${circumference} ${circumference}`}
-          strokeDashoffset={circumference - percent * circumference}
-          stroke={backgroundColors.progress}
-          strokeLinecap="round"
-          strokeWidth={0.8}
-          transform="rotate(-90)"
-          className={progressRingTransformStyle}
-        />
-      </g>
-    </svg>
+      </svg>
+    </Box>
+  );
+}
+
+function EntityName({
+  entity,
+}: {
+  entity: Queries.WatchlistEntityAvatarListItemFragment;
+}) {
+  if (entity.slug) {
+    return (
+      <Link
+        to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
+        color="accent"
+        textDecoration="none"
+        fontSize="posterTitle"
+        textAlign="center"
+      >
+        <Spacer axis="vertical" size={4} />
+        <Box lineHeight="default">{entity.name}</Box>
+        <Spacer axis="vertical" size={4} />
+      </Link>
+    );
+  }
+
+  return (
+    <Box color="subtle" fontSize="posterTitle" textAlign="center">
+      <Spacer axis="vertical" size={4} />
+      <Box lineHeight="default">{entity.name}</Box>
+      <Spacer axis="vertical" size={4} />
+    </Box>
   );
 }
 
@@ -67,69 +93,19 @@ function ListItem({
 }: {
   entity: Queries.WatchlistEntityAvatarListItemFragment;
 }): JSX.Element {
-  if (entity.avatar && entity.slug) {
-    return (
-      <Box as="li" display="flex" flexDirection="column">
-        <Link
-          to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-          max-width={160}
-          borderRadius="half"
-          transform="safariBorderRadiusFix"
-          width="full"
-          overflow="hidden"
-        >
-          <GraphqlImage
-            image={entity.avatar}
-            alt={`An image of ${entity.name}`}
-          />
-          <Progress entity={entity} />
-        </Link>
-        <Spacer axis="vertical" size={8} />
-        <Link
-          to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-          color="accent"
-          textDecoration="none"
-          fontSize="normal"
-          textAlign="center"
-          display="block"
-        >
-          {entity.name}
-        </Link>
-        <Box color="subtle" fontSize="normal" textAlign="center">
-          {entity.reviewCount} / {entity.titleCount}
-        </Box>
-      </Box>
-    );
-  }
   return (
-    <Box as="li" display="flex" flexDirection="column">
-      <Box
-        maxWidth={160}
-        borderRadius="half"
-        transform="safariBorderRadiusFix"
-        overflow="hidden"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 16 16"
-          fill={backgroundColors.subtle}
-          width="100%"
-        >
-          <path
-            clipRule="evenodd"
-            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-            fillRule="evenodd"
-          />
-        </svg>
-        <Progress entity={entity} />
-      </Box>
-      <Spacer axis="vertical" size={8} />
-      <Box fontSize="normal" textAlign="center" display="block">
-        {entity.name}
-      </Box>
-      <Box color="subtle" fontSize="normal" textAlign="center">
-        {entity.reviewCount} / {entity.titleCount}
-      </Box>
+    <Box
+      as="li"
+      display="flex"
+      flexDirection={{ default: "row", tablet: "column" }}
+      columnGap={32}
+      backgroundColor={{ default: "zebraOdd", tablet: "zebraOff" }}
+      paddingX={{ default: "popoutGutter", tablet: 0 }}
+      paddingY={{ default: 16, tablet: 0 }}
+      alignItems={{ default: "center" }}
+    >
+      <Avatar entity={entity} />
+      <EntityName entity={entity} />
     </Box>
   );
 }
@@ -163,12 +139,17 @@ export function WatchlistEntityAvatarListWithFilters({
         <Box
           display="flex"
           flexDirection="column"
-          alignItems="center"
+          alignItems={{ default: "center", desktop: "flex-start" }}
           paddingX={{ default: "gutter", desktop: 0 }}
           paddingTop={32}
           flexBasis={320}
         >
-          <Box maxWidth="prose">
+          <Box
+            maxWidth="prose"
+            display="flex"
+            flexDirection="column"
+            alignItems={{ default: "center", desktop: "flex-start" }}
+          >
             <Link color="accent" textDecoration="none" to="/watchlist/">
               Watchlist
             </Link>
@@ -201,18 +182,22 @@ export function WatchlistEntityAvatarListWithFilters({
                   })
                 }
               >
-                <option value="name">Name</option>
-                <option value="reviews">Review Count</option>
+                <option value="name-asc">Name (A-&gt;Z)</option>
+                <option value="name-desc">Name (Z-&gt;A)</option>
               </SelectField>
             </Fieldset>
           </Box>
         </Box>
         <Box display="flex" flexDirection="column" flexGrow={1}>
-          <Spacer axis="vertical" size={32} />
+          <Spacer axis="vertical" size={{ default: 32, tablet: 64 }} />
           <Box
             as="ol"
             data-testid="entity-list"
-            padding={0}
+            paddingX={{
+              default: 0,
+              tablet: "gutter",
+              desktop: 0,
+            }}
             className={gridStyle}
           >
             {state.filteredEntities.map((entity) => {
