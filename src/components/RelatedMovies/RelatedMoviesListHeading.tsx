@@ -15,19 +15,12 @@ export function RelatedMoviesListHeading({
       boxShadow={{ default: "borderBottom", tablet: "unset" }}
       paddingY={{ default: 8, tablet: 16 }}
       paddingX={{ default: "popoutGutter", desktop: "gutter" }}
-      letterSpacing={0.5}
       width="full"
     >
       <Box as="span" fontWeight="semiBold" color="muted">
         {leadText}{" "}
       </Box>
-      <Link
-        to={linkTarget}
-        color="accent"
-        textDecoration="none"
-        display="inline-flex"
-        columnGap=".5ch"
-      >
+      <Link to={linkTarget} color="accent" textDecoration="none">
         {linkText}
       </Link>
     </Box>

@@ -71,6 +71,7 @@ const responsiveAtomicProperties = defineProperties({
       "block",
       "none",
       "flex",
+      "inline",
       "inline-flex",
       "inline-block",
       "contents",

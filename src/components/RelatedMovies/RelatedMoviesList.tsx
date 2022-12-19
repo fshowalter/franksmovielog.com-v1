@@ -30,13 +30,15 @@ export function RelatedMoviesList({
         paddingY={16}
         boxShadow={{ default: "borderBottom", tablet: "unset" }}
       >
-        <Link
-          textDecoration="none"
-          color="accent"
-          to={seeAllLinkTarget}
-          letterSpacing={0.5}
-        >
-          All {seeAllLinkText} &#8594;
+        <Link textDecoration="none" color="accent" to={seeAllLinkTarget}>
+          All{" "}
+          <Box
+            as="span"
+            display={{ default: "inline", tablet: "none", desktop: "inline" }}
+          >
+            {seeAllLinkText}
+          </Box>{" "}
+          &#8594;
         </Link>
       </Box>
     </Box>
