@@ -9,29 +9,29 @@ exports[`/404 renders 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2q sprinkles_minHeight_16_default__8lcvdkdh sprinkles_width_full_default__8lcvdkrh"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2r sprinkles_minHeight_16_default__8lcvdkdj sprinkles_width_full_default__8lcvdkrj"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk48 sprinkles_display_flex_default__8lcvdk7n sprinkles_flexDirection_column_default__8lcvdk82"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk4a sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk84"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkjz sprinkles_paddingRight_gutter_default__8lcvdklw sprinkles_paddingTop_24_default__8lcvdkmb sprinkles_paddingTop_32_desktop__8lcvdkmg sprinkles_paddingBottom_24_default__8lcvdkht sprinkles_paddingBottom_32_desktop__8lcvdkhy sprinkles_display_flex_default__8lcvdk7n sprinkles_rowGap_24_default__8lcvdkn8 sprinkles_alignItems_center_default__8lcvdk3q sprinkles_boxShadow_borderBottom_default__8lcvdk6q sprinkles_backgroundColor_default_default__8lcvdk48"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkk1 sprinkles_paddingRight_gutter_default__8lcvdkly sprinkles_paddingTop_24_default__8lcvdkmd sprinkles_paddingTop_32_desktop__8lcvdkmi sprinkles_paddingBottom_24_default__8lcvdkhv sprinkles_paddingBottom_32_desktop__8lcvdki0 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdkna sprinkles_alignItems_center_default__8lcvdk3s sprinkles_boxShadow_borderBottom_default__8lcvdk6s sprinkles_backgroundColor_default_default__8lcvdk4a"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk7n sprinkles_flexDirection_column_default__8lcvdk82 sprinkles_alignItems_inherit_default__8lcvdk3t sprinkles_justifyItems_inherit__8lcvdk10"
+        class="sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk84 sprinkles_alignItems_inherit_default__8lcvdk3v sprinkles_justifyItems_inherit__8lcvdk10"
       >
         <h1
           class="sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_fontWeight_normal__8lcvdk15 sprinkles_fontSize_logo__8lcvdk24"
         >
           <a
-            class="sprinkles_color_default__8lcvdk1 sprinkles_textDecoration_none__8lcvdk2o"
+            class="sprinkles_color_default__8lcvdk1 sprinkles_textDecoration_none__8lcvdk2p"
             href="/"
           >
             Frank's Movie Log
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2a sprinkles_width_full_default__8lcvdkrh sprinkles_fontSize_small__8lcvdk1i"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2a sprinkles_width_full_default__8lcvdkrj sprinkles_fontSize_small__8lcvdk1i"
         >
           My life at the movies.
         </p>
@@ -39,12 +39,12 @@ exports[`/404 renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk6t sprinkles_borderRadius_4_default__8lcvdk4z sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrh sprinkles_width_unset_desktop__8lcvdkr4 sprinkles_maxWidth_prose_default__8lcvdkcq"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk6v sprinkles_borderRadius_4_default__8lcvdk51 sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrj sprinkles_width_unset_desktop__8lcvdkr6 sprinkles_maxWidth_prose_default__8lcvdkcs"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk7n sprinkles_overflow_hidden__8lcvdkv"
+          class="sprinkles_display_flex_default__8lcvdk7p sprinkles_overflow_hidden__8lcvdkv"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/404 renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkih sprinkles_paddingRight_16_default__8lcvdkke sprinkles_paddingTop_8_default__8lcvdkm5 sprinkles_paddingBottom_8_default__8lcvdkhn sprinkles_backgroundColor_subtle_default__8lcvdk4e sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_24__8lcvdk2b sprinkles_flexGrow_1__8lcvdkx"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkij sprinkles_paddingRight_16_default__8lcvdkkg sprinkles_paddingTop_8_default__8lcvdkm7 sprinkles_paddingBottom_8_default__8lcvdkhp sprinkles_backgroundColor_subtle_default__8lcvdk4g sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_24__8lcvdk2b sprinkles_flexGrow_1__8lcvdkx"
             id="search"
             name="q"
             placeholder="Search..."
@@ -66,7 +66,7 @@ exports[`/404 renders 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk4e"
+            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk4g"
             type="submit"
             value="Search"
           >
@@ -93,63 +93,63 @@ exports[`/404 renders 1`] = `
         class="sprinkles_color_accent__8lcvdk0"
       >
         <ul
-          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7n sprinkles_flexWrap_wrap_default__8lcvdk8b sprinkles_justifyContent_center_default__8lcvdkaq sprinkles_rowGap_8_default__8lcvdkn2 sprinkles_columnGap_16_default__8lcvdk72 sprinkles_columnGap_24_tablet__8lcvdk76"
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7p sprinkles_flexWrap_wrap_default__8lcvdk8d sprinkles_justifyContent_center_default__8lcvdkas sprinkles_rowGap_8_default__8lcvdkn4 sprinkles_columnGap_16_default__8lcvdk74 sprinkles_columnGap_24_tablet__8lcvdk78"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/watchlist/"
             >
               Watchlist
@@ -163,10 +163,10 @@ exports[`/404 renders 1`] = `
     >
       <main>
         <article
-          class="sprinkles_display_flex_default__8lcvdk7n sprinkles_flexDirection_column_default__8lcvdk82 sprinkles_alignItems_center_default__8lcvdk3q"
+          class="sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk84 sprinkles_alignItems_center_default__8lcvdk3s"
         >
           <h1
-            class="sprinkles_paddingLeft_gutter_default__8lcvdkjz sprinkles_paddingRight_gutter_default__8lcvdklw sprinkles_paddingTop_24_default__8lcvdkmb sprinkles_paddingTop_32_desktop__8lcvdkmg sprinkles_paddingBottom_24_default__8lcvdkht sprinkles_paddingBottom_32_desktop__8lcvdkhy sprinkles_fontSize_pageTitle__8lcvdk26 sprinkles_textAlign_center__8lcvdk2w"
+            class="sprinkles_paddingLeft_gutter_default__8lcvdkk1 sprinkles_paddingRight_gutter_default__8lcvdkly sprinkles_paddingTop_24_default__8lcvdkmd sprinkles_paddingTop_32_desktop__8lcvdkmi sprinkles_paddingBottom_24_default__8lcvdkhv sprinkles_paddingBottom_32_desktop__8lcvdki0 sprinkles_fontSize_pageTitle__8lcvdk26 sprinkles_textAlign_center__8lcvdk2x"
           >
             404 Not Found
           </h1>
@@ -220,10 +220,10 @@ exports[`/404 renders 1`] = `
             </script>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkre sprinkles_height_64_default__8lcvdk95 sprinkles_minWidth_px_default__8lcvdkhb sprinkles_minHeight_64_default__8lcvdkdw sprinkles_display_block_default__8lcvdk7h"
+            class="sprinkles_width_px_default__8lcvdkrg sprinkles_height_64_default__8lcvdk97 sprinkles_minWidth_px_default__8lcvdkhd sprinkles_minHeight_64_default__8lcvdkdy sprinkles_display_block_default__8lcvdk7j"
           />
           <div
-            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_paddingLeft_gutter_default__8lcvdkjz sprinkles_paddingRight_gutter_default__8lcvdklw sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23 sprinkles_maxWidth_proseWithGutters_default__8lcvdkct"
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 sprinkles_paddingLeft_gutter_default__8lcvdkk1 sprinkles_paddingRight_gutter_default__8lcvdkly sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23 sprinkles_maxWidth_proseWithGutters_default__8lcvdkcv"
           >
             <p>
               This is probably my fault. Are you looking for one of my old reviews? I’m in the process of touching them up
@@ -253,73 +253,73 @@ and reposting them. In the mean time, you can find them in the site’s
             </p>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkre sprinkles_height_128_default__8lcvdk9h sprinkles_minWidth_px_default__8lcvdkhb sprinkles_minHeight_128_default__8lcvdke8 sprinkles_display_block_default__8lcvdk7h"
+            class="sprinkles_width_px_default__8lcvdkrg sprinkles_height_128_default__8lcvdk9j sprinkles_minWidth_px_default__8lcvdkhd sprinkles_minHeight_128_default__8lcvdkea sprinkles_display_block_default__8lcvdk7j"
           />
         </article>
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkjz sprinkles_paddingRight_gutter_default__8lcvdklw sprinkles_paddingTop_32_default__8lcvdkme sprinkles_paddingBottom_32_default__8lcvdkhw sprinkles_color_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk7n sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2q sprinkles_rowGap_24_default__8lcvdkn8 sprinkles_alignItems_center_default__8lcvdk3q sprinkles_flexDirection_column_default__8lcvdk82"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkk1 sprinkles_paddingRight_gutter_default__8lcvdkly sprinkles_paddingTop_32_default__8lcvdkmg sprinkles_paddingBottom_32_default__8lcvdkhy sprinkles_color_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2r sprinkles_rowGap_24_default__8lcvdkna sprinkles_alignItems_center_default__8lcvdk3s sprinkles_flexDirection_column_default__8lcvdk84"
     >
       <nav>
         <ul
-          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7n sprinkles_flexWrap_wrap_default__8lcvdk8b sprinkles_justifyContent_center_default__8lcvdkaq sprinkles_rowGap_8_default__8lcvdkn2 sprinkles_columnGap_16_default__8lcvdk72 sprinkles_columnGap_24_tablet__8lcvdk76"
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7p sprinkles_flexWrap_wrap_default__8lcvdk8d sprinkles_justifyContent_center_default__8lcvdkas sprinkles_rowGap_8_default__8lcvdkn4 sprinkles_columnGap_16_default__8lcvdk74 sprinkles_columnGap_24_tablet__8lcvdk78"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7h sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
               href="/watchlist/"
             >
               Watchlist
@@ -332,7 +332,7 @@ and reposting them. In the mean time, you can find them in the site’s
       >
         All stills used in accordance with the 
         <a
-          class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2o"
+          class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
           href="http://www.copyright.gov/title17/92chap1.html#107"
         >
           Fair Use Law.
