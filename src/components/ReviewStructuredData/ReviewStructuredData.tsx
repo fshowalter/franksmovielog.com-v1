@@ -31,6 +31,10 @@ export function ReviewStructuredData({
       "@type": "Rating",
       ratingValue: gradeMap[data.grade[0]],
     },
+    author: {
+      "@type": "Person",
+      name: "Frank Showalter",
+    },
   };
 
   return (
