@@ -17260,6 +17260,12 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
               <div
                 class="Fieldset_responsiveFlexStyle__n7trcp1 sprinkles_display_flex_default__8lcvdk7n sprinkles_flexWrap_wrap_default__8lcvdk85 sprinkles_justifyContent_space-between_default__8lcvdkah sprinkles_padding_24__8lcvdkd"
               >
+                <button
+                  class="Button_hoverStyle__17ebh4m0 Button_iconLayoutStyle__17ebh4m1 sprinkles_paddingLeft_16_default__8lcvdkib sprinkles_paddingRight_16_default__8lcvdkk8 sprinkles_paddingTop_8_default__8lcvdklz sprinkles_paddingBottom_8_default__8lcvdkhh sprinkles_backgroundColor_subtle_default__8lcvdk4e sprinkles_borderRadius_24_default__8lcvdk58 sprinkles_fontSize_normal__8lcvdk1j sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_lineHeight_24__8lcvdk2b sprinkles_border_0__8lcvdk2p sprinkles_boxShadow_borderAll_default__8lcvdk6t sprinkles_color_default__8lcvdk1 sprinkles_maxWidth_512_default__8lcvdkce sprinkles_width_full_default__8lcvdkrb sprinkles_display_flex_default__8lcvdk7n sprinkles_justifyContent_center_default__8lcvdkak sprinkles_alignSelf_end__8lcvdk3p"
+                  type="button"
+                >
+                  Hide Reviewed
+                </button>
                 <label
                   class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_flex_default__8lcvdk7n sprinkles_flexDirection_column_default__8lcvdk82"
                 >
