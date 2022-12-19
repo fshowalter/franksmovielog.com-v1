@@ -34,8 +34,7 @@ export function RelatedMoviesList({
           textDecoration="none"
           color="accent"
           to={seeAllLinkTarget}
-          fontSize="small"
-          letterSpacing={1}
+          letterSpacing={0.5}
         >
           All {seeAllLinkText} &#8594;
         </Link>
