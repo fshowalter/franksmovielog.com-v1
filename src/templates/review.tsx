@@ -10,6 +10,7 @@ import { ReviewStructuredData } from "../components/ReviewStructuredData/";
 import { Spacer } from "../components/Spacer";
 import { Still } from "../components/Still";
 import { ViewingHistory } from "../components/ViewingHistory";
+import { stickyHeaderScrollMarginTopStyle } from "../styles/utils.css";
 import { stillMarginStyle } from "./review.css";
 
 export function Head({
@@ -44,6 +45,7 @@ export default function ReviewTemplate({
         display="flex"
         flexDirection="column"
         alignItems="center"
+        className={stickyHeaderScrollMarginTopStyle}
       >
         <ReviewHeader
           movie={movie}

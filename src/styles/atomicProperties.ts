@@ -20,6 +20,7 @@ export const atomicProperties = {
   justifyItems: ["center", "inherit"],
 
   marginTop: [48, 64, 128],
+  marginLeft: ["auto"],
   fontWeight: fontWeights,
   transform: {
     safariBorderRadiusFix: {

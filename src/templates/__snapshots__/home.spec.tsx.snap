@@ -9,29 +9,29 @@ exports[`/ can render last page 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2r sprinkles_minHeight_16_default__8lcvdkdm sprinkles_width_full_default__8lcvdkrm"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_minHeight_16_default__8lcvdkdn sprinkles_width_full_default__8lcvdkrn"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk4a sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk87"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk4b sprinkles_display_flex_default__8lcvdk7q sprinkles_flexDirection_column_default__8lcvdk88"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1 sprinkles_paddingTop_24_default__8lcvdkmg sprinkles_paddingTop_32_desktop__8lcvdkml sprinkles_paddingBottom_24_default__8lcvdkhy sprinkles_paddingBottom_32_desktop__8lcvdki3 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_alignItems_center_default__8lcvdk3s sprinkles_boxShadow_borderBottom_default__8lcvdk6s sprinkles_backgroundColor_default_default__8lcvdk4a"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_24_default__8lcvdkmh sprinkles_paddingTop_32_desktop__8lcvdkmm sprinkles_paddingBottom_24_default__8lcvdkhz sprinkles_paddingBottom_32_desktop__8lcvdki4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_alignItems_center_default__8lcvdk3t sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_backgroundColor_default_default__8lcvdk4b"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_alignItems_inherit_default__8lcvdk3v sprinkles_justifyItems_inherit__8lcvdk10"
+        class="sprinkles_display_flex_default__8lcvdk7q sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_alignItems_inherit_default__8lcvdk3w sprinkles_justifyItems_inherit__8lcvdk10"
       >
         <h1
-          class="sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_fontWeight_normal__8lcvdk15 sprinkles_fontSize_logo__8lcvdk24"
+          class="sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_fontWeight_normal__8lcvdk16 sprinkles_fontSize_logo__8lcvdk25"
         >
           <a
-            class="sprinkles_color_default__8lcvdk1 sprinkles_textDecoration_none__8lcvdk2p"
+            class="sprinkles_color_default__8lcvdk1 sprinkles_textDecoration_none__8lcvdk2q"
             href="/"
           >
             Frank's Movie Log
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2a sprinkles_width_full_default__8lcvdkrm sprinkles_fontSize_small__8lcvdk1i"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2b sprinkles_width_full_default__8lcvdkrn sprinkles_fontSize_small__8lcvdk1j"
         >
           My life at the movies.
         </p>
@@ -39,12 +39,12 @@ exports[`/ can render last page 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk6v sprinkles_borderRadius_4_default__8lcvdk51 sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrm sprinkles_width_unset_desktop__8lcvdkr9 sprinkles_maxWidth_prose_default__8lcvdkcv"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_4_default__8lcvdk52 sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrn sprinkles_width_unset_desktop__8lcvdkra sprinkles_maxWidth_prose_default__8lcvdkcw"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk7p sprinkles_overflow_hidden__8lcvdkv"
+          class="sprinkles_display_flex_default__8lcvdk7q sprinkles_overflow_hidden__8lcvdkv"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/ can render last page 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkim sprinkles_paddingRight_16_default__8lcvdkkj sprinkles_paddingTop_8_default__8lcvdkma sprinkles_paddingBottom_8_default__8lcvdkhs sprinkles_backgroundColor_subtle_default__8lcvdk4g sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_24__8lcvdk2b sprinkles_flexGrow_1__8lcvdkx"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_backgroundColor_subtle_default__8lcvdk4h sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_24__8lcvdk2c sprinkles_flexGrow_1__8lcvdkx"
             id="search"
             name="q"
             placeholder="Search..."
@@ -66,7 +66,7 @@ exports[`/ can render last page 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk4g"
+            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk4h"
             type="submit"
             value="Search"
           >
@@ -93,63 +93,63 @@ exports[`/ can render last page 1`] = `
         class="sprinkles_color_accent__8lcvdk0"
       >
         <ul
-          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7p sprinkles_flexWrap_wrap_default__8lcvdk8g sprinkles_justifyContent_center_default__8lcvdkav sprinkles_rowGap_8_default__8lcvdkn7 sprinkles_columnGap_16_default__8lcvdk74 sprinkles_columnGap_24_tablet__8lcvdk78"
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7q sprinkles_flexWrap_wrap_default__8lcvdk8h sprinkles_justifyContent_center_default__8lcvdkaw sprinkles_rowGap_8_default__8lcvdkn8 sprinkles_columnGap_16_default__8lcvdk75 sprinkles_columnGap_24_tablet__8lcvdk79"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/watchlist/"
             >
               Watchlist
@@ -163,17 +163,17 @@ exports[`/ can render last page 1`] = `
     >
       <main>
         <ol
-          class="sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_padding_0__8lcvdk9"
+          class="sprinkles_display_flex_default__8lcvdk7q sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_padding_0__8lcvdk9"
         >
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="2"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/the-blue-gardenia-1953/"
@@ -231,19 +231,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/the-blue-gardenia-1953/"
                     rel="canonical"
                   >
                     The Blue Gardenia 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1953
                     </span>
@@ -255,12 +255,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Fritz Lang. Starring Anne Baxter, Richard Conte, Ann Sothern,  and Raymond Burr.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Anne Baxter plays Norah Larkin, a Los Angeles telephone operator who wakes up after a drunken night to discover she killed a man in self-defense, but can’t prove it. 
@@ -277,10 +277,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -313,14 +313,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="1"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/suzy-1936/"
@@ -378,19 +378,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/suzy-1936/"
                     rel="canonical"
                   >
                     Suzy 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1936
                     </span>
@@ -402,12 +402,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by George Fitzmaurice. Starring Jean Harlow, Franchot Tone, Cary Grant,  and Lewis Stone.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Jean Harlow plays Suzy, an American show girl in London who falls for inventor Franchot Tone, flees a murder accusation, marries a philandering French air ace played by Cary Grant, then helps foil an espionage ring. 
@@ -424,10 +424,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -460,14 +460,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="0"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/pot-o-gold-1941/"
@@ -525,19 +525,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/pot-o-gold-1941/"
                     rel="canonical"
                   >
                     Pot o' Gold 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1941
                     </span>
@@ -549,12 +549,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by George Marshall. Starring James Stewart, Paulette Goddard, Horace Heidt,  and Charles Winninger.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Jimmy Stewart opens as the owner of a struggling music store who ends up having to give away one-thousand dollars of his wealthy uncle’s money every week on a nationwide radio show. 
@@ -571,10 +571,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -607,14 +607,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="-1"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/the-whistler-1944/"
@@ -672,19 +672,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/the-whistler-1944/"
                     rel="canonical"
                   >
                     The Whistler 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1944
                     </span>
@@ -696,12 +696,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by William Castle. Starring Richard Dix, Gloria Stuart, J. Carrol Naish,  and Alan Dinehart.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Richard Dix plays a grieving widower who hires a hitman to kill him only to discover his wife is alive, and he has no way of rescinding his execution request. 
@@ -718,10 +718,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -754,14 +754,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="-2"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/reunion-in-france-1942/"
@@ -819,19 +819,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/reunion-in-france-1942/"
                     rel="canonical"
                   >
                     Reunion in France 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1942
                     </span>
@@ -843,12 +843,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Jules Dassin. Starring Joan Crawford, John Wayne, Philip Dorn,  and Reginald Owen.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Joan Crawford plays a French heiress hiding a downed American pilot played by John Wayne from the Nazis in occupied Paris. 
@@ -865,10 +865,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -901,14 +901,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="-3"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/the-great-ziegfeld-1936/"
@@ -966,19 +966,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/the-great-ziegfeld-1936/"
                     rel="canonical"
                   >
                     The Great Ziegfeld 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1936
                     </span>
@@ -990,12 +990,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Robert Z. Leonard. Starring William Powell, Myrna Loy, Luise Rainer,  and Frank Morgan.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     William Powell stars as famed impresario Florenz Ziegfeld. The film traces his career from sideshow barker to Broadway mogul, at one point having four hits at once, only to die broke after losing everything in the crash of ‘29. 
@@ -1012,10 +1012,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -1048,14 +1048,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="-4"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/new-york-ninja-2021/"
@@ -1113,19 +1113,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/new-york-ninja-2021/"
                     rel="canonical"
                   >
                     New York Ninja 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       2021
                     </span>
@@ -1137,12 +1137,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by John Liu and Kurtis Spieler. Starring Don Wilson, Michael Berryman, Linnea Quigley,  and Leon Isaac Kennedy.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Kurtis Spieler, an employee at cult distribution company Vinegar Syndrome, discovered reels of footage in their vaults for an abandoned film. Shot in 1984 by star John Liu, it lacked audio or a shooting script. Undaunted, Spieler reconstructed the footage, commissioned a soundtrack, and enlisted an array of exploitation stars to dub the audio. 
@@ -1159,10 +1159,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -1195,14 +1195,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="-5"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/x-2022/"
@@ -1260,19 +1260,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/x-2022/"
                     rel="canonical"
                   >
                     X 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       2022
                     </span>
@@ -1284,12 +1284,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Ti West. Starring Mia Goth, Jenna Ortega, Brittany Snow,  and Kid Cudi.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     In 1979, a group of amateur filmmakers travels to a remote Texas farm to film an adult movie, unaware of the horrors that await. 
@@ -1310,10 +1310,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -1346,14 +1346,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="-6"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/holiday-affair-1949/"
@@ -1411,19 +1411,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/holiday-affair-1949/"
                     rel="canonical"
                   >
                     Holiday Affair 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1949
                     </span>
@@ -1435,12 +1435,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Don Hartman. Starring Robert Mitchum, Janet Leigh, Wendell Corey,  and Gordon Gebert.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Robert Mitchum plays a veteran working as a temporary salesman during the Christmas season in the toy department of a bustling New York City department store. Janet Leigh pushes her way through the crowd to purchase an expensive—around a thousand dollars in today’s money—train set. When she returns the next day for a refund, Mitchum pegs her for a comparison shopper. But upon learning she’s a war widow supporting an elementary-school aged son, instead of reporting her, he invites her to lunch. 
@@ -1457,10 +1457,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -1493,14 +1493,14 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="-7"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/dead-reckoning-1947/"
@@ -1558,19 +1558,19 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/dead-reckoning-1947/"
                     rel="canonical"
                   >
                     Dead Reckoning 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1947
                     </span>
@@ -1582,12 +1582,12 @@ exports[`/ can render last page 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by John Cromwell. Starring Humphrey Bogart, Lizabeth Scott, Morris Carnovsky,  and Charles Cane.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Humphrey Bogart plays Rip Murdoch, a paratrooper investigating his buddy’s disappearance following their return to the states. The trail leads to a shady club owner named Martinelli, and a dangerous blonde played by Lizabeth Scott. 
@@ -1604,10 +1604,10 @@ exports[`/ can render last page 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -1641,7 +1641,7 @@ exports[`/ can render last page 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1 sprinkles_paddingTop_40_default__8lcvdkmm sprinkles_paddingBottom_40_default__8lcvdki4 sprinkles_fontSize_pagination__8lcvdk1z sprinkles_justifyContent_center_default__8lcvdkav"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_40_default__8lcvdkmn sprinkles_paddingBottom_40_default__8lcvdki5 sprinkles_fontSize_pagination__8lcvdk20 sprinkles_justifyContent_center_default__8lcvdkaw"
         >
           <h3
             class="Box_screenReaderOnlyStyle__1isqo402"
@@ -1649,10 +1649,10 @@ exports[`/ can render last page 1`] = `
             Pagination
           </h3>
           <div
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_justifyContent_space-between_default__8lcvdkas"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_justifyContent_space-between_default__8lcvdkat"
           >
             <a
-              class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2p sprinkles_textAlign_left__8lcvdk2v"
+              class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2q sprinkles_textAlign_left__8lcvdk2w"
               href="/page-10/"
             >
               ← Newer
@@ -1660,10 +1660,10 @@ exports[`/ can render last page 1`] = `
             <span />
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkrj sprinkles_height_24_default__8lcvdk8y sprinkles_minWidth_px_default__8lcvdkhg sprinkles_minHeight_24_default__8lcvdkdp sprinkles_display_block_default__8lcvdk7j"
+            class="sprinkles_width_px_default__8lcvdkrk sprinkles_height_24_default__8lcvdk8z sprinkles_minWidth_px_default__8lcvdkhh sprinkles_minHeight_24_default__8lcvdkdq sprinkles_display_block_default__8lcvdk7k"
           />
           <div
-            class="sprinkles_textAlign_right__8lcvdk2w sprinkles_color_subtle__8lcvdk4"
+            class="sprinkles_textAlign_right__8lcvdk2x sprinkles_color_subtle__8lcvdk4"
           >
             Page 
             <select>
@@ -1729,67 +1729,67 @@ exports[`/ can render last page 1`] = `
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1 sprinkles_paddingTop_32_default__8lcvdkmj sprinkles_paddingBottom_32_default__8lcvdki1 sprinkles_color_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2r sprinkles_rowGap_24_default__8lcvdknd sprinkles_alignItems_center_default__8lcvdk3s sprinkles_flexDirection_column_default__8lcvdk87"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_32_default__8lcvdkmk sprinkles_paddingBottom_32_default__8lcvdki2 sprinkles_color_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_rowGap_24_default__8lcvdkne sprinkles_alignItems_center_default__8lcvdk3t sprinkles_flexDirection_column_default__8lcvdk88"
     >
       <nav>
         <ul
-          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7p sprinkles_flexWrap_wrap_default__8lcvdk8g sprinkles_justifyContent_center_default__8lcvdkav sprinkles_rowGap_8_default__8lcvdkn7 sprinkles_columnGap_16_default__8lcvdk74 sprinkles_columnGap_24_tablet__8lcvdk78"
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7q sprinkles_flexWrap_wrap_default__8lcvdk8h sprinkles_justifyContent_center_default__8lcvdkaw sprinkles_rowGap_8_default__8lcvdkn8 sprinkles_columnGap_16_default__8lcvdk75 sprinkles_columnGap_24_tablet__8lcvdk79"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/watchlist/"
             >
               Watchlist
@@ -1798,11 +1798,11 @@ exports[`/ can render last page 1`] = `
         </ul>
       </nav>
       <p
-        class="sprinkles_fontWeight_light__8lcvdk14 sprinkles_fontSize_small__8lcvdk1i sprinkles_lineHeight_16__8lcvdk2a"
+        class="sprinkles_fontWeight_light__8lcvdk15 sprinkles_fontSize_small__8lcvdk1j sprinkles_lineHeight_16__8lcvdk2b"
       >
         All stills used in accordance with the 
         <a
-          class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+          class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
           href="http://www.copyright.gov/title17/92chap1.html#107"
         >
           Fair Use Law.
@@ -1828,29 +1828,29 @@ exports[`/ renders 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2r sprinkles_minHeight_16_default__8lcvdkdm sprinkles_width_full_default__8lcvdkrm"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_minHeight_16_default__8lcvdkdn sprinkles_width_full_default__8lcvdkrn"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk4a sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk87"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk4b sprinkles_display_flex_default__8lcvdk7q sprinkles_flexDirection_column_default__8lcvdk88"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1 sprinkles_paddingTop_24_default__8lcvdkmg sprinkles_paddingTop_32_desktop__8lcvdkml sprinkles_paddingBottom_24_default__8lcvdkhy sprinkles_paddingBottom_32_desktop__8lcvdki3 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_alignItems_center_default__8lcvdk3s sprinkles_boxShadow_borderBottom_default__8lcvdk6s sprinkles_backgroundColor_default_default__8lcvdk4a"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_24_default__8lcvdkmh sprinkles_paddingTop_32_desktop__8lcvdkmm sprinkles_paddingBottom_24_default__8lcvdkhz sprinkles_paddingBottom_32_desktop__8lcvdki4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_alignItems_center_default__8lcvdk3t sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_backgroundColor_default_default__8lcvdk4b"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_alignItems_inherit_default__8lcvdk3v sprinkles_justifyItems_inherit__8lcvdk10"
+        class="sprinkles_display_flex_default__8lcvdk7q sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_alignItems_inherit_default__8lcvdk3w sprinkles_justifyItems_inherit__8lcvdk10"
       >
         <h1
-          class="sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_fontWeight_normal__8lcvdk15 sprinkles_fontSize_logo__8lcvdk24"
+          class="sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_fontWeight_normal__8lcvdk16 sprinkles_fontSize_logo__8lcvdk25"
         >
           <a
-            class="sprinkles_color_default__8lcvdk1 sprinkles_textDecoration_none__8lcvdk2p"
+            class="sprinkles_color_default__8lcvdk1 sprinkles_textDecoration_none__8lcvdk2q"
             href="/"
           >
             Frank's Movie Log
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2a sprinkles_width_full_default__8lcvdkrm sprinkles_fontSize_small__8lcvdk1i"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2b sprinkles_width_full_default__8lcvdkrn sprinkles_fontSize_small__8lcvdk1j"
         >
           My life at the movies.
         </p>
@@ -1858,12 +1858,12 @@ exports[`/ renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk6v sprinkles_borderRadius_4_default__8lcvdk51 sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrm sprinkles_width_unset_desktop__8lcvdkr9 sprinkles_maxWidth_prose_default__8lcvdkcv"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_4_default__8lcvdk52 sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrn sprinkles_width_unset_desktop__8lcvdkra sprinkles_maxWidth_prose_default__8lcvdkcw"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk7p sprinkles_overflow_hidden__8lcvdkv"
+          class="sprinkles_display_flex_default__8lcvdk7q sprinkles_overflow_hidden__8lcvdkv"
           for="search"
         >
           <div
@@ -1872,7 +1872,7 @@ exports[`/ renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkim sprinkles_paddingRight_16_default__8lcvdkkj sprinkles_paddingTop_8_default__8lcvdkma sprinkles_paddingBottom_8_default__8lcvdkhs sprinkles_backgroundColor_subtle_default__8lcvdk4g sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_24__8lcvdk2b sprinkles_flexGrow_1__8lcvdkx"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_backgroundColor_subtle_default__8lcvdk4h sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_24__8lcvdk2c sprinkles_flexGrow_1__8lcvdkx"
             id="search"
             name="q"
             placeholder="Search..."
@@ -1885,7 +1885,7 @@ exports[`/ renders 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk4g"
+            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk4h"
             type="submit"
             value="Search"
           >
@@ -1912,63 +1912,63 @@ exports[`/ renders 1`] = `
         class="sprinkles_color_accent__8lcvdk0"
       >
         <ul
-          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7p sprinkles_flexWrap_wrap_default__8lcvdk8g sprinkles_justifyContent_center_default__8lcvdkav sprinkles_rowGap_8_default__8lcvdkn7 sprinkles_columnGap_16_default__8lcvdk74 sprinkles_columnGap_24_tablet__8lcvdk78"
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7q sprinkles_flexWrap_wrap_default__8lcvdk8h sprinkles_justifyContent_center_default__8lcvdkaw sprinkles_rowGap_8_default__8lcvdkn8 sprinkles_columnGap_16_default__8lcvdk75 sprinkles_columnGap_24_tablet__8lcvdk79"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/watchlist/"
             >
               Watchlist
@@ -1982,17 +1982,17 @@ exports[`/ renders 1`] = `
     >
       <main>
         <ol
-          class="sprinkles_display_flex_default__8lcvdk7p sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_padding_0__8lcvdk9"
+          class="sprinkles_display_flex_default__8lcvdk7q sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_padding_0__8lcvdk9"
         >
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="102"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/the-blue-gardenia-1953/"
@@ -2050,19 +2050,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/the-blue-gardenia-1953/"
                     rel="canonical"
                   >
                     The Blue Gardenia 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1953
                     </span>
@@ -2074,12 +2074,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Fritz Lang. Starring Anne Baxter, Richard Conte, Ann Sothern,  and Raymond Burr.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Anne Baxter plays Norah Larkin, a Los Angeles telephone operator who wakes up after a drunken night to discover she killed a man in self-defense, but can’t prove it. 
@@ -2096,10 +2096,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -2132,14 +2132,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="101"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/suzy-1936/"
@@ -2197,19 +2197,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/suzy-1936/"
                     rel="canonical"
                   >
                     Suzy 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1936
                     </span>
@@ -2221,12 +2221,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by George Fitzmaurice. Starring Jean Harlow, Franchot Tone, Cary Grant,  and Lewis Stone.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Jean Harlow plays Suzy, an American show girl in London who falls for inventor Franchot Tone, flees a murder accusation, marries a philandering French air ace played by Cary Grant, then helps foil an espionage ring. 
@@ -2243,10 +2243,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -2279,14 +2279,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="100"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/pot-o-gold-1941/"
@@ -2344,19 +2344,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/pot-o-gold-1941/"
                     rel="canonical"
                   >
                     Pot o' Gold 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1941
                     </span>
@@ -2368,12 +2368,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by George Marshall. Starring James Stewart, Paulette Goddard, Horace Heidt,  and Charles Winninger.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Jimmy Stewart opens as the owner of a struggling music store who ends up having to give away one-thousand dollars of his wealthy uncle’s money every week on a nationwide radio show. 
@@ -2390,10 +2390,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -2426,14 +2426,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="99"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/the-whistler-1944/"
@@ -2491,19 +2491,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/the-whistler-1944/"
                     rel="canonical"
                   >
                     The Whistler 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1944
                     </span>
@@ -2515,12 +2515,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by William Castle. Starring Richard Dix, Gloria Stuart, J. Carrol Naish,  and Alan Dinehart.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Richard Dix plays a grieving widower who hires a hitman to kill him only to discover his wife is alive, and he has no way of rescinding his execution request. 
@@ -2537,10 +2537,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -2573,14 +2573,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="98"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/reunion-in-france-1942/"
@@ -2638,19 +2638,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/reunion-in-france-1942/"
                     rel="canonical"
                   >
                     Reunion in France 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1942
                     </span>
@@ -2662,12 +2662,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Jules Dassin. Starring Joan Crawford, John Wayne, Philip Dorn,  and Reginald Owen.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Joan Crawford plays a French heiress hiding a downed American pilot played by John Wayne from the Nazis in occupied Paris. 
@@ -2684,10 +2684,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -2720,14 +2720,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="97"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/the-great-ziegfeld-1936/"
@@ -2785,19 +2785,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/the-great-ziegfeld-1936/"
                     rel="canonical"
                   >
                     The Great Ziegfeld 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1936
                     </span>
@@ -2809,12 +2809,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Robert Z. Leonard. Starring William Powell, Myrna Loy, Luise Rainer,  and Frank Morgan.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     William Powell stars as famed impresario Florenz Ziegfeld. The film traces his career from sideshow barker to Broadway mogul, at one point having four hits at once, only to die broke after losing everything in the crash of ‘29. 
@@ -2831,10 +2831,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -2867,14 +2867,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="96"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/new-york-ninja-2021/"
@@ -2932,19 +2932,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/new-york-ninja-2021/"
                     rel="canonical"
                   >
                     New York Ninja 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       2021
                     </span>
@@ -2956,12 +2956,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by John Liu and Kurtis Spieler. Starring Don Wilson, Michael Berryman, Linnea Quigley,  and Leon Isaac Kennedy.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Kurtis Spieler, an employee at cult distribution company Vinegar Syndrome, discovered reels of footage in their vaults for an abandoned film. Shot in 1984 by star John Liu, it lacked audio or a shooting script. Undaunted, Spieler reconstructed the footage, commissioned a soundtrack, and enlisted an array of exploitation stars to dub the audio. 
@@ -2978,10 +2978,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -3014,14 +3014,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="95"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/x-2022/"
@@ -3079,19 +3079,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/x-2022/"
                     rel="canonical"
                   >
                     X 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       2022
                     </span>
@@ -3103,12 +3103,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Ti West. Starring Mia Goth, Jenna Ortega, Brittany Snow,  and Kid Cudi.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     In 1979, a group of amateur filmmakers travels to a remote Texas farm to film an adult movie, unaware of the horrors that await. 
@@ -3129,10 +3129,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -3165,14 +3165,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="94"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/holiday-affair-1949/"
@@ -3230,19 +3230,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/holiday-affair-1949/"
                     rel="canonical"
                   >
                     Holiday Affair 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1949
                     </span>
@@ -3254,12 +3254,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by Don Hartman. Starring Robert Mitchum, Janet Leigh, Wendell Corey,  and Gordon Gebert.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Robert Mitchum plays a veteran working as a temporary salesman during the Christmas season in the toy department of a bustling New York City department store. Janet Leigh pushes her way through the crowd to purchase an expensive—around a thousand dollars in today’s money—train set. When she returns the next day for a refund, Mitchum pegs her for a comparison shopper. But upon learning she’s a war widow supporting an elementary-school aged son, instead of reporting her, he invites her to lunch. 
@@ -3276,10 +3276,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -3312,14 +3312,14 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundColor_zebra_default__8lcvdk4p"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundColor_zebra_default__8lcvdk4q"
             value="93"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1"
+              class="HomePageItem_gridStyle__94yx1k2 sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_still__94yx1k3 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <a
                   href="/reviews/dead-reckoning-1947/"
@@ -3377,19 +3377,19 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7p sprinkles_rowGap_24_default__8lcvdknd sprinkles_flexDirection_column_default__8lcvdk87 sprinkles_maxWidth_prose_default__8lcvdkcv"
+                class="HomePageItem_gridAreas_excerpt__94yx1k4 sprinkles_display_flex_default__8lcvdk7q sprinkles_rowGap_24_default__8lcvdkne sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_maxWidth_prose_default__8lcvdkcw"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdk17 sprinkles_fontSize_homePageTitle__8lcvdk1x"
+                  class="sprinkles_fontWeight_bold__8lcvdk18 sprinkles_fontSize_homePageTitle__8lcvdk1y"
                 >
                   <a
-                    class="sprinkles_textDecoration_none__8lcvdk2p sprinkles_color_default__8lcvdk1"
+                    class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1"
                     href="/reviews/dead-reckoning-1947/"
                     rel="canonical"
                   >
                     Dead Reckoning 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7y sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_1__8lcvdk28"
+                      class="sprinkles_color_subtle__8lcvdk4 sprinkles_display_inline-block_default__8lcvdk7z sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_light__8lcvdk15 sprinkles_lineHeight_1__8lcvdk29"
                     >
                       1947
                     </span>
@@ -3401,12 +3401,12 @@ exports[`/ renders 1`] = `
                   style="height: 32px; width: 160px;"
                 />
                 <p
-                  class="sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_normal__8lcvdk15 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2k sprinkles_lineHeight_default__8lcvdk2g"
+                  class="sprinkles_fontSize_normal__8lcvdk1k sprinkles_fontWeight_normal__8lcvdk16 sprinkles_color_subtle__8lcvdk4 sprinkles_letterSpacing_0.25__8lcvdk2l sprinkles_lineHeight_default__8lcvdk2h"
                 >
                   Directed by John Cromwell. Starring Humphrey Bogart, Lizabeth Scott, Morris Carnovsky,  and Charles Cane.
                 </p>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.3__8lcvdk2l sprinkles_fontSize_prose__8lcvdk23"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__94yx1k1 sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.3__8lcvdk2m sprinkles_fontSize_prose__8lcvdk24"
                 >
                   <p>
                     Humphrey Bogart plays Rip Murdoch, a paratrooper investigating his buddy’s disappearance following their return to the states. The trail leads to a shady club owner named Martinelli, and a dangerous blonde played by Lizabeth Scott. 
@@ -3423,10 +3423,10 @@ exports[`/ renders 1`] = `
                 class="HomePageItem_gridAreas_date__94yx1k5"
               >
                 <div
-                  class="sprinkles_display_flex_default__8lcvdk7p sprinkles_fontSize_small__8lcvdk1i sprinkles_fontWeight_light__8lcvdk14 sprinkles_letterSpacing_0.75__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2c sprinkles_alignItems_center_default__8lcvdk3s sprinkles_textTransform_uppercase__8lcvdk3r"
+                  class="sprinkles_display_flex_default__8lcvdk7q sprinkles_fontSize_small__8lcvdk1j sprinkles_fontWeight_light__8lcvdk15 sprinkles_letterSpacing_0.75__8lcvdk2o sprinkles_whiteSpace_nowrap__8lcvdku sprinkles_color_subtle__8lcvdk4 sprinkles_lineHeight_32__8lcvdk2d sprinkles_alignItems_center_default__8lcvdk3t sprinkles_textTransform_uppercase__8lcvdk3s"
                 >
                   <div
-                    class="sprinkles_display_block_default__8lcvdk7j sprinkles_display_none_desktop__8lcvdk7o"
+                    class="sprinkles_display_block_default__8lcvdk7k sprinkles_display_none_desktop__8lcvdk7p"
                   >
                     <svg
                       class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -3460,7 +3460,7 @@ exports[`/ renders 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1 sprinkles_paddingTop_40_default__8lcvdkmm sprinkles_paddingBottom_40_default__8lcvdki4 sprinkles_fontSize_pagination__8lcvdk1z sprinkles_justifyContent_center_default__8lcvdkav"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_40_default__8lcvdkmn sprinkles_paddingBottom_40_default__8lcvdki5 sprinkles_fontSize_pagination__8lcvdk20 sprinkles_justifyContent_center_default__8lcvdkaw"
         >
           <h3
             class="Box_screenReaderOnlyStyle__1isqo402"
@@ -3468,21 +3468,21 @@ exports[`/ renders 1`] = `
             Pagination
           </h3>
           <div
-            class="sprinkles_display_flex_default__8lcvdk7p sprinkles_justifyContent_space-between_default__8lcvdkas"
+            class="sprinkles_display_flex_default__8lcvdk7q sprinkles_justifyContent_space-between_default__8lcvdkat"
           >
             <span />
             <a
-              class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2p sprinkles_textAlign_right__8lcvdk2w"
+              class="sprinkles_color_accent__8lcvdk0 sprinkles_textDecoration_none__8lcvdk2q sprinkles_textAlign_right__8lcvdk2x"
               href="/page-2/"
             >
               Older →
             </a>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkrj sprinkles_height_24_default__8lcvdk8y sprinkles_minWidth_px_default__8lcvdkhg sprinkles_minHeight_24_default__8lcvdkdp sprinkles_display_block_default__8lcvdk7j"
+            class="sprinkles_width_px_default__8lcvdkrk sprinkles_height_24_default__8lcvdk8z sprinkles_minWidth_px_default__8lcvdkhh sprinkles_minHeight_24_default__8lcvdkdq sprinkles_display_block_default__8lcvdk7k"
           />
           <div
-            class="sprinkles_textAlign_right__8lcvdk2w sprinkles_color_subtle__8lcvdk4"
+            class="sprinkles_textAlign_right__8lcvdk2x sprinkles_color_subtle__8lcvdk4"
           >
             Page 
             <select>
@@ -3548,67 +3548,67 @@ exports[`/ renders 1`] = `
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkk4 sprinkles_paddingRight_gutter_default__8lcvdkm1 sprinkles_paddingTop_32_default__8lcvdkmj sprinkles_paddingBottom_32_default__8lcvdki1 sprinkles_color_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk7p sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2r sprinkles_rowGap_24_default__8lcvdknd sprinkles_alignItems_center_default__8lcvdk3s sprinkles_flexDirection_column_default__8lcvdk87"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_32_default__8lcvdkmk sprinkles_paddingBottom_32_default__8lcvdki2 sprinkles_color_inverse__8lcvdk5 sprinkles_display_flex_default__8lcvdk7q sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_rowGap_24_default__8lcvdkne sprinkles_alignItems_center_default__8lcvdk3t sprinkles_flexDirection_column_default__8lcvdk88"
     >
       <nav>
         <ul
-          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7p sprinkles_flexWrap_wrap_default__8lcvdk8g sprinkles_justifyContent_center_default__8lcvdkav sprinkles_rowGap_8_default__8lcvdkn7 sprinkles_columnGap_16_default__8lcvdk74 sprinkles_columnGap_24_tablet__8lcvdk78"
+          class="sprinkles_padding_0__8lcvdk9 sprinkles_display_flex_default__8lcvdk7q sprinkles_flexWrap_wrap_default__8lcvdk8h sprinkles_justifyContent_center_default__8lcvdkaw sprinkles_rowGap_8_default__8lcvdkn8 sprinkles_columnGap_16_default__8lcvdk75 sprinkles_columnGap_24_tablet__8lcvdk79"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/about/"
             >
               About
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/stats/"
             >
               Stats
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk7j sprinkles_letterSpacing_0.5__8lcvdk2m sprinkles_whiteSpace_nowrap__8lcvdku"
+            class="sprinkles_display_block_default__8lcvdk7k sprinkles_letterSpacing_0.5__8lcvdk2n sprinkles_whiteSpace_nowrap__8lcvdku"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+              class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
               href="/watchlist/"
             >
               Watchlist
@@ -3617,11 +3617,11 @@ exports[`/ renders 1`] = `
         </ul>
       </nav>
       <p
-        class="sprinkles_fontWeight_light__8lcvdk14 sprinkles_fontSize_small__8lcvdk1i sprinkles_lineHeight_16__8lcvdk2a"
+        class="sprinkles_fontWeight_light__8lcvdk15 sprinkles_fontSize_small__8lcvdk1j sprinkles_lineHeight_16__8lcvdk2b"
       >
         All stills used in accordance with the 
         <a
-          class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2p"
+          class="sprinkles_color_inherit__8lcvdk6 sprinkles_textDecoration_none__8lcvdk2q"
           href="http://www.copyright.gov/title17/92chap1.html#107"
         >
           Fair Use Law.

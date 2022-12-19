@@ -1,12 +1,12 @@
 import { graphql } from "gatsby";
+import { stickyHeaderScrollMarginTopStyle } from "../../styles/utils.css";
 import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Spacer } from "../Spacer";
 import {
   backToTopArrowStyle,
-  backToTopContainerStyle,
-  backToTopInnerStyle,
+  backToTopHoverStyle,
   creditStyle,
   posterFloatStyle,
   posterStyle,
@@ -45,6 +45,7 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
       paddingX="popoutGutter"
       paddingY={32}
       backgroundColor="subtle"
+      className={stickyHeaderScrollMarginTopStyle}
     >
       <Box className={posterFloatStyle}>
         <GraphqlImage
@@ -74,13 +75,27 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
       </Box>
       <Spacer axis="vertical" size={32} />
       <ReviewWatchlistLinks watchlist={movie.watchlist} />
-      <a href="#top" className={backToTopContainerStyle}>
-        <div className={backToTopInnerStyle}>
-          <svg viewBox="0 0 24 24" className={backToTopArrowStyle}>
-            <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
-          </svg>
-        </div>
-      </a>
+      <Spacer axis="vertical" size={32} />
+      <Box
+        as="a"
+        href="#top"
+        color="accent"
+        className={backToTopHoverStyle}
+        borderRadius={8}
+        boxShadow="borderAll"
+        textDecoration="none"
+        display="flex"
+        maxWidth="half"
+        lineHeight={40}
+        alignItems="center"
+        justifyContent="center"
+        marginLeft="auto"
+      >
+        Back to Top
+        <svg viewBox="0 0 24 24" className={backToTopArrowStyle}>
+          <path d="M7.997 10l3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10 13 10.001V18h-2v-7.999L7.997 10z"></path>
+        </svg>
+      </Box>
     </Box>
   );
 }
