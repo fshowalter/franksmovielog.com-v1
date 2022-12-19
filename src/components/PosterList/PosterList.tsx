@@ -5,7 +5,6 @@ import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { Spacer } from "../Spacer";
 import {
-  defaultGridStyle,
   gradeStyle,
   gridStyle,
   showTitleOnMobileOnlyStyle,
@@ -47,17 +46,14 @@ function MediumAndVenue({
   return null;
 }
 
-function Image({
-  slug,
-  image,
-  title,
-  year,
-}: {
+interface IImageProps extends IBoxProps {
   slug: string | null | undefined;
   image: IGraphqlImage;
   title: string;
   year: number;
-}) {
+}
+
+function Image({ slug, image, title, year, ...rest }: IImageProps) {
   if (slug) {
     return (
       <Link
@@ -66,6 +62,7 @@ function Image({
         maxWidth={{ default: 48, tablet: "poster" }}
         to={`/reviews/${slug}/`}
         transform="safariBorderRadiusFix"
+        {...rest}
       >
         <GraphqlImage image={image} alt={`A poster from ${title} (${year})`} />
       </Link>
@@ -144,9 +141,15 @@ export function Poster({
       paddingX={{ default: "popoutGutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
       alignItems={{ default: "center" }}
-      className={defaultGridStyle}
+      display="flex"
     >
-      <Image slug={slug} image={image} title={title} year={year} />
+      <Image
+        slug={slug}
+        image={image}
+        title={title}
+        year={year}
+        flexShrink={0}
+      />
       <Box flexGrow={1}>
         <Box
           fontSize="posterTitle"

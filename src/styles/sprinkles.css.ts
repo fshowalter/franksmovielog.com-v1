@@ -76,6 +76,7 @@ const responsiveAtomicProperties = defineProperties({
       "contents",
     ],
     flexDirection: ["row", "column"],
+    flexShrink: [0, "auto"],
     flexWrap: ["wrap", "nowrap"],
     height: {
       160: "160px",
