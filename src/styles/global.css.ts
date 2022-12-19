@@ -7,6 +7,10 @@ globalStyle(`*, *::before, *::after`, {
   margin: 0,
 });
 
+globalStyle(`:root`, {
+  WebkitTextSizeAdjust: "none",
+});
+
 globalStyle(`html, body`, {
   height: `100%`,
 });
