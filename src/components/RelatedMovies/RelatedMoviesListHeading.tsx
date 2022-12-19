@@ -15,8 +15,8 @@ export function RelatedMoviesListHeading({
       boxShadow={{ default: "borderBottom", tablet: "unset" }}
       paddingY={{ default: 8, tablet: 16 }}
       paddingX={{ default: "popoutGutter", desktop: "gutter" }}
-      letterSpacing={1}
-      fontSize="small"
+      // letterSpacing={1}
+      fontSize="normal"
       width="full"
     >
       <Box as="span" fontWeight="semiBold" color="muted">
