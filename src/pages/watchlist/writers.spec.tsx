@@ -1,7 +1,7 @@
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { data } from "./collections.fixtures";
 import WatchlistWritersPage, { Head } from "./writers";
+import { data } from "./writers.fixtures";
 
 describe("/watchlist/performers/", () => {
   it("can filter by name", async () => {

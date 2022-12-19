@@ -2,7 +2,6 @@ import { graphql } from "gatsby";
 import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
-import { ReviewWatchlistLinks } from "../ReviewWatchlistLinks";
 import { Spacer } from "../Spacer";
 import {
   backToTopArrowStyle,
@@ -12,6 +11,7 @@ import {
   posterFloatStyle,
   posterStyle,
 } from "./Credits.css";
+import { ReviewWatchlistLinks } from "./ReviewWatchlistLinks";
 
 interface ICreditProps extends IBoxProps {
   title: string;

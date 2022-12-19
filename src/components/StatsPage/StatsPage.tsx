@@ -1,15 +1,15 @@
 import { Box } from "../Box";
-import { ByReleaseYearStats } from "../ByReleaseYearStats";
-import { GradeDistributionStats } from "../GradeDistributionStats";
 import { Layout } from "../Layout";
-import { MostWatchedDirectors } from "../MostWatchedDirectors";
-import { MostWatchedMovies } from "../MostWatchedMovies";
-import { MostWatchedPerformers } from "../MostWatchedPerformers";
-import { MostWatchedWriters } from "../MostWatchedWriters";
 import { Spacer } from "../Spacer";
-import { StatsCallouts } from "../StatsCallouts";
-import { StatsNavigation } from "../StatsNavigation";
-import { TopMedia } from "../TopMedia";
+import { ByReleaseYearStats } from "./ByReleaseYearStats";
+import { GradeDistributionStats } from "./GradeDistributionStats";
+import { MostWatchedDirectors } from "./MostWatchedDirectors";
+import { MostWatchedMovies } from "./MostWatchedMovies";
+import { MostWatchedPerformers } from "./MostWatchedPerformers";
+import { MostWatchedWriters } from "./MostWatchedWriters";
+import { StatsCallouts } from "./StatsCallouts";
+import { StatsNavigation } from "./StatsNavigation";
+import { TopMedia } from "./TopMedia";
 
 export function StatsPage({
   title,

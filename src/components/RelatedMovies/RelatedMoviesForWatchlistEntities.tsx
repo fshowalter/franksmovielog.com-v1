@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
-import { RelatedMoviesList } from "../RelatedMoviesList";
-import { RelatedMoviesListHeading } from "../RelatedMoviesListHeading";
-import { RelatedMoviesNav } from "../RelatedMoviesNav";
+import { RelatedMoviesList } from "./RelatedMoviesList";
+import { RelatedMoviesListHeading } from "./RelatedMoviesListHeading";
+import { RelatedMoviesNav } from "./RelatedMoviesNav";
 
 const leadText: Record<Queries.WatchlistEntityType, string> = {
   director: " directed by",

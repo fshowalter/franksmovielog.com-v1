@@ -4,6 +4,7 @@ export const data = {
       {
         name: "Anthony Shaffer",
         slug: null,
+        entityType: "writer" as const,
         titleCount: 12,
         reviewCount: 0,
         avatar: null,
@@ -11,6 +12,7 @@ export const data = {
       {
         name: "Clive Barker",
         slug: "clive-barker",
+        entityType: "writer" as const,
         titleCount: 13,
         reviewCount: 4,
         avatar: {
@@ -46,6 +48,7 @@ export const data = {
       {
         name: "David Mamet",
         slug: "david-mamet",
+        entityType: "writer" as const,
         titleCount: 26,
         reviewCount: 1,
         avatar: {
@@ -81,6 +84,7 @@ export const data = {
       {
         name: "Leigh Brackett",
         slug: "leigh-brackett",
+        entityType: "writer" as const,
         titleCount: 12,
         reviewCount: 1,
         avatar: {
@@ -116,6 +120,7 @@ export const data = {
       {
         name: "Neil LaBute",
         slug: "neil-labute",
+        entityType: "writer" as const,
         titleCount: 10,
         reviewCount: 1,
         avatar: {
@@ -151,6 +156,7 @@ export const data = {
       {
         name: "Raymond Chandler",
         slug: null,
+        entityType: "writer" as const,
         titleCount: 15,
         reviewCount: 0,
         avatar: null,
@@ -158,6 +164,7 @@ export const data = {
       {
         name: "Stephen King",
         slug: "stephen-king",
+        entityType: "writer" as const,
         titleCount: 57,
         reviewCount: 1,
         avatar: {

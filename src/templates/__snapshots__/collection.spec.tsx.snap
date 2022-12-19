@@ -19293,7 +19293,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__1tgpev20 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2a sprinkles_width_full_default__8lcvdkrh sprinkles_fontSize_small__8lcvdk1i"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk2 sprinkles_fontStyle_italic__8lcvdky sprinkles_lineHeight_16__8lcvdk2a sprinkles_width_full_default__8lcvdkrh sprinkles_fontSize_small__8lcvdk1i"
         >
           My life at the movies.
         </p>
@@ -19301,7 +19301,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__1tgpev22 sprinkles_boxShadow_borderAll_default__8lcvdk6t sprinkles_borderRadius_4_default__8lcvdk4z sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrh sprinkles_width_unset_desktop__8lcvdkr4 sprinkles_maxWidth_prose_default__8lcvdkcq"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk6t sprinkles_borderRadius_4_default__8lcvdk4z sprinkles_overflow_hidden__8lcvdkv sprinkles_width_full_default__8lcvdkrh sprinkles_width_unset_desktop__8lcvdkr4 sprinkles_maxWidth_prose_default__8lcvdkcq"
         method="get"
         role="search"
       >
@@ -19315,7 +19315,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__i7f1b0 sprinkles_paddingLeft_16_default__8lcvdkih sprinkles_paddingRight_16_default__8lcvdkke sprinkles_paddingTop_8_default__8lcvdkm5 sprinkles_paddingBottom_8_default__8lcvdkhn sprinkles_backgroundColor_subtle_default__8lcvdk4e sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_24__8lcvdk2b sprinkles_flexGrow_1__8lcvdkx"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkih sprinkles_paddingRight_16_default__8lcvdkke sprinkles_paddingTop_8_default__8lcvdkm5 sprinkles_paddingBottom_8_default__8lcvdkhn sprinkles_backgroundColor_subtle_default__8lcvdk4e sprinkles_color_default__8lcvdk1 sprinkles_fontSize_normal__8lcvdk1j sprinkles_fontWeight_light__8lcvdk14 sprinkles_lineHeight_24__8lcvdk2b sprinkles_flexGrow_1__8lcvdkx"
             id="search"
             name="q"
             placeholder="Search..."
@@ -19328,12 +19328,12 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__i7f1b1 sprinkles_backgroundColor_subtle_default__8lcvdk4e"
+            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk4e"
             type="submit"
             value="Search"
           >
             <svg
-              class="SiteSearchForm_iconStyle__i7f1b2 SvgIcon_iconStyle__agywp20"
+              class="SiteSearchForm_iconStyle__1pnfbha2 SvgIcon_iconStyle__agywp20"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"

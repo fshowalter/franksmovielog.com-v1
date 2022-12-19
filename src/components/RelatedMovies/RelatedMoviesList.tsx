@@ -1,6 +1,6 @@
 import { Box } from "../Box";
 import { Link } from "../Link";
-import { RelatedMovie } from "../RelatedMovie/RelatedMovie";
+import { RelatedMovie } from "./RelatedMovie";
 import { movieListStyle, seeAllLinkGridStyle } from "./RelatedMoviesList.css";
 
 export function RelatedMoviesList({

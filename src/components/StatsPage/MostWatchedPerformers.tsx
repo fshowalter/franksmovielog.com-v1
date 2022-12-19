@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { Link } from "../Link";
-import { MostWatchedPeople } from "../MostWatchedPeople";
+import { MostWatchedPeople } from "./MostWatchedPeople";
 
 function PerformerName({
   person,

@@ -85,7 +85,7 @@
     "lint": "yarn run lint:js",
     "lint:js": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
     "format:check": "yarn prettier --check \"**/*.{json,js,css,scss,md,ts,tsx,jsx}\"",
-    "test": "yarn jest",
+    "test": "yarn jest src",
     "test:watch": "yarn jest --watch",
     "type-check": "yarn tsc --noEmit",
     "sync": "./sync-movielog.js",

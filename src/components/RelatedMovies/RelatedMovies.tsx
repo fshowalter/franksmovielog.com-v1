@@ -1,9 +1,9 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
-import { RelatedMoviesList } from "../RelatedMoviesList";
-import { RelatedMoviesListHeading } from "../RelatedMoviesListHeading";
-import { RelatedMoviesNav } from "../RelatedMoviesNav";
-import { RelatedMoviesForWatchlistEntities } from "../RelatedMoviesWatchlistEntities";
+import { RelatedMoviesForWatchlistEntities } from "./RelatedMoviesForWatchlistEntities";
+import { RelatedMoviesList } from "./RelatedMoviesList";
+import { RelatedMoviesListHeading } from "./RelatedMoviesListHeading";
+import { RelatedMoviesNav } from "./RelatedMoviesNav";
 function MoreReviews({
   reviews,
 }: {

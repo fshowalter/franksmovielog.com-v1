@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { ReviewSubHeading } from "../ReviewSubHeading";
-import { ViewingHistoryEntry } from "../ViewingHistoryEntry";
+import { ViewingHistoryEntry } from "./ViewingHistoryEntry";
 
 interface IIViewingHistoryProps extends IBoxProps {
   movie: Queries.ViewingHistoryFragment;

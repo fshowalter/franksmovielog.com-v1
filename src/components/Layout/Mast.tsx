@@ -1,8 +1,8 @@
 import { Box, IBoxProps } from "../Box";
 import { Link } from "../Link";
-import { Nav } from "../Nav";
-import { SiteSearchForm } from "../SiteSearchForm";
 import { navActiveLinkStyle, orderStyle, taglineStyle } from "./Mast.css";
+import { Nav } from "./Nav";
+import { SiteSearchForm } from "./SiteSearchForm";
 
 export function Mast({ ...rest }: IBoxProps) {
   return (

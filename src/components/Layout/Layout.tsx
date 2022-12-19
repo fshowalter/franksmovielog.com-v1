@@ -9,13 +9,13 @@
 import React from "react";
 import "../../styles/global.css";
 import { Box } from "../Box";
-import { Footer } from "../Footer";
-import { Mast } from "../Mast";
+import { Footer } from "./Footer";
 import {
   bandStickyStyle,
   headerLayoutStyle,
   pageCanvasStyle,
 } from "./Layout.css";
+import { Mast } from "./Mast";
 
 export function Layout({
   children,

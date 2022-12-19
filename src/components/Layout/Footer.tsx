@@ -1,6 +1,6 @@
 import { Box, IBoxProps } from "../Box";
 import { ExternalLink } from "../Link";
-import { Nav } from "../Nav";
+import { Nav } from "./Nav";
 
 export function Footer({ ...rest }: IBoxProps) {
   return (

@@ -1,8 +1,8 @@
 import { graphql } from "gatsby";
 import { Link } from "../Link";
-import { MostWatchedPeople } from "../MostWatchedPeople";
+import { MostWatchedPeople } from "./MostWatchedPeople";
 
-function DirectorName({
+function WriterName({
   person,
 }: {
   person: Queries.MostWatchedPersonFragment;
@@ -10,9 +10,9 @@ function DirectorName({
   if (person.slug) {
     return (
       <Link
-        color="accent"
         textDecoration="none"
-        to={`/watchlist/directors/${person.slug}/`}
+        color="accent"
+        to={`/watchlist/writers/${person.slug}/`}
       >
         {person.fullName}
       </Link>
@@ -22,22 +22,22 @@ function DirectorName({
   return <>{person.fullName}</>;
 }
 
-export function MostWatchedDirectors({
-  directors,
+export function MostWatchedWriters({
+  writers,
 }: {
-  directors: Queries.MostWatchedDirectorsFragment | null;
+  writers: Queries.MostWatchedWritersFragment | null;
 }): JSX.Element | null {
   return (
     <MostWatchedPeople
-      people={directors}
-      header="Most Watched Directors"
-      nameRenderer={DirectorName}
+      people={writers}
+      header="Most Watched Writers"
+      nameRenderer={WriterName}
     />
   );
 }
 
 export const query = graphql`
-  fragment MostWatchedDirectors on MostWatchedDirectorsJson {
+  fragment MostWatchedWriters on MostWatchedWritersJson {
     ...MostWatchedPeople
   }
 `;

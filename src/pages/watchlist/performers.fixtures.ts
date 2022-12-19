@@ -4,6 +4,7 @@ export const data = {
       {
         name: "Bela Lugosi",
         slug: "bela-lugosi",
+        entityType: "performer" as const,
         titleCount: 63,
         reviewCount: 8,
         avatar: {
@@ -39,6 +40,7 @@ export const data = {
       {
         name: "Ben Johnson",
         slug: null,
+        entityType: "performer" as const,
         titleCount: 55,
         reviewCount: 0,
         avatar: null,
@@ -46,6 +48,7 @@ export const data = {
       {
         name: "Bette Davis",
         slug: "bette-davis",
+        entityType: "performer" as const,
         titleCount: 87,
         reviewCount: 7,
         avatar: {
@@ -81,6 +84,7 @@ export const data = {
       {
         name: "Boris Karloff",
         slug: "boris-karloff",
+        entityType: "performer" as const,
         titleCount: 98,
         reviewCount: 18,
         avatar: {
@@ -116,6 +120,7 @@ export const data = {
       {
         name: "Burt Reynolds",
         slug: "burt-reynolds",
+        entityType: "performer" as const,
         titleCount: 100,
         reviewCount: 2,
         avatar: {
@@ -151,6 +156,7 @@ export const data = {
       {
         name: "Cary Grant",
         slug: "cary-grant",
+        entityType: "performer" as const,
         titleCount: 73,
         reviewCount: 6,
         avatar: {
@@ -186,6 +192,7 @@ export const data = {
       {
         name: "Christopher Lee",
         slug: "christopher-lee",
+        entityType: "performer" as const,
         titleCount: 184,
         reviewCount: 4,
         avatar: {
@@ -221,6 +228,7 @@ export const data = {
       {
         name: "Dean Martin",
         slug: "dean-martin",
+        entityType: "performer" as const,
         titleCount: 39,
         reviewCount: 1,
         avatar: {
@@ -256,6 +264,7 @@ export const data = {
       {
         name: "Errol Flynn",
         slug: "errol-flynn",
+        entityType: "performer" as const,
         titleCount: 54,
         reviewCount: 2,
         avatar: {
@@ -291,6 +300,7 @@ export const data = {
       {
         name: "Frank Sinatra",
         slug: "frank-sinatra",
+        entityType: "performer" as const,
         titleCount: 55,
         reviewCount: 2,
         avatar: {
@@ -326,6 +336,7 @@ export const data = {
       {
         name: "Gene Hackman",
         slug: "gene-hackman",
+        entityType: "performer" as const,
         titleCount: 78,
         reviewCount: 1,
         avatar: {
@@ -361,6 +372,7 @@ export const data = {
       {
         name: "Humphrey Bogart",
         slug: "humphrey-bogart",
+        entityType: "performer" as const,
         titleCount: 73,
         reviewCount: 12,
         avatar: {
@@ -396,6 +408,7 @@ export const data = {
       {
         name: "Jack Lemmon",
         slug: "jack-lemmon",
+        entityType: "performer" as const,
         titleCount: 57,
         reviewCount: 3,
         avatar: {
@@ -431,6 +444,7 @@ export const data = {
       {
         name: "Jack Nicholson",
         slug: "jack-nicholson",
+        entityType: "performer" as const,
         titleCount: 62,
         reviewCount: 2,
         avatar: {
@@ -466,6 +480,7 @@ export const data = {
       {
         name: "James Coburn",
         slug: "james-coburn",
+        entityType: "performer" as const,
         titleCount: 67,
         reviewCount: 2,
         avatar: {
@@ -501,6 +516,7 @@ export const data = {
       {
         name: "James Garner",
         slug: null,
+        entityType: "performer" as const,
         titleCount: 49,
         reviewCount: 0,
         avatar: null,
@@ -508,6 +524,7 @@ export const data = {
       {
         name: "James Stewart",
         slug: "james-stewart",
+        entityType: "performer" as const,
         titleCount: 79,
         reviewCount: 1,
         avatar: {
@@ -543,6 +560,7 @@ export const data = {
       {
         name: "John Wayne",
         slug: "john-wayne",
+        entityType: "performer" as const,
         titleCount: 146,
         reviewCount: 13,
         avatar: {
@@ -578,6 +596,7 @@ export const data = {
       {
         name: "Lee Marvin",
         slug: null,
+        entityType: "performer" as const,
         titleCount: 51,
         reviewCount: 0,
         avatar: null,
@@ -585,6 +604,7 @@ export const data = {
       {
         name: "Marilyn Monroe",
         slug: "marilyn-monroe",
+        entityType: "performer" as const,
         titleCount: 26,
         reviewCount: 1,
         avatar: {
@@ -620,6 +640,7 @@ export const data = {
       {
         name: "Paul Newman",
         slug: null,
+        entityType: "performer" as const,
         titleCount: 57,
         reviewCount: 0,
         avatar: null,
@@ -627,6 +648,7 @@ export const data = {
       {
         name: "Peter Cushing",
         slug: "peter-cushing",
+        entityType: "performer" as const,
         titleCount: 88,
         reviewCount: 7,
         avatar: {
@@ -662,6 +684,7 @@ export const data = {
       {
         name: "Robert Mitchum",
         slug: "robert-mitchum",
+        entityType: "performer" as const,
         titleCount: 107,
         reviewCount: 5,
         avatar: {
@@ -697,6 +720,7 @@ export const data = {
       {
         name: "Sean Connery",
         slug: null,
+        entityType: "performer" as const,
         titleCount: 68,
         reviewCount: 0,
         avatar: null,
@@ -704,6 +728,7 @@ export const data = {
       {
         name: "Steve McQueen",
         slug: null,
+        entityType: "performer" as const,
         titleCount: 27,
         reviewCount: 0,
         avatar: null,
@@ -711,6 +736,7 @@ export const data = {
       {
         name: "Tom Atkins",
         slug: null,
+        entityType: "performer" as const,
         titleCount: 26,
         reviewCount: 0,
         avatar: null,
@@ -718,6 +744,7 @@ export const data = {
       {
         name: "Vincent Price",
         slug: "vincent-price",
+        entityType: "performer" as const,
         titleCount: 98,
         reviewCount: 3,
         avatar: {
@@ -753,6 +780,7 @@ export const data = {
       {
         name: "Warren Oates",
         slug: "warren-oates",
+        entityType: "performer" as const,
         titleCount: 41,
         reviewCount: 5,
         avatar: {
@@ -788,6 +816,7 @@ export const data = {
       {
         name: "William Holden",
         slug: "william-holden",
+        entityType: "performer" as const,
         titleCount: 69,
         reviewCount: 5,
         avatar: {
@@ -823,6 +852,7 @@ export const data = {
       {
         name: "William Powell",
         slug: "william-powell",
+        entityType: "performer" as const,
         titleCount: 60,
         reviewCount: 17,
         avatar: {

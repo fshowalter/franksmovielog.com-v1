@@ -21,7 +21,7 @@ module.exports = {
   setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"],
   testEnvironment: "jsdom",
   collectCoverageFrom: [
-    "**/*.{ts,tsx}",
+    "src/**/*.{ts,tsx}",
     "!**/node_modules/**",
     "!**/**.css.ts",
   ],
