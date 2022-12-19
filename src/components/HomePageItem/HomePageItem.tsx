@@ -92,13 +92,17 @@ export function HomePageItem({
             display="flex"
             fontSize="small"
             fontWeight="light"
-            letterSpacing={0.25}
+            letterSpacing={0.75}
             whiteSpace="nowrap"
             color="subtle"
             lineHeight={32}
             alignItems="center"
+            textTransform="uppercase"
           >
-            <DateIcon /> {viewing.date}
+            <Box display={{ default: "block", desktop: "none" }}>
+              <DateIcon />{" "}
+            </Box>
+            {viewing.date}
           </Box>
         </GridArea>
       </Grid>

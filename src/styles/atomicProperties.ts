@@ -157,4 +157,5 @@ export const atomicProperties = {
   flexShrink: [0],
   zIndex: [100, 500, 1000],
   alignSelf: ["end"],
+  textTransform: ["uppercase"],
 } as const;

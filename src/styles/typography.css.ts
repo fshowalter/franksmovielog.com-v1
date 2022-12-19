@@ -33,6 +33,7 @@ export const letterSpacing = {
   0.25: "0.015625rem",
   0.3: "0.01875rem",
   0.5: "0.03125rem",
+  0.75: "0.046875rem",
   1: "1px",
   normal: "normal",
 };
