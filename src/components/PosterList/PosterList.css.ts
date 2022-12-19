@@ -30,3 +30,13 @@ export const showTitleOnMobileOnlyStyle = style({
     },
   },
 });
+
+export const defaultGridStyle = style({
+  display: "grid",
+  gridTemplateColumns: `auto 1fr`,
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      display: "flex",
+    },
+  },
+});

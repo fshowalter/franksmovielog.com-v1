@@ -5,6 +5,7 @@ import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { Spacer } from "../Spacer";
 import {
+  defaultGridStyle,
   gradeStyle,
   gridStyle,
   showTitleOnMobileOnlyStyle,
@@ -137,13 +138,13 @@ export function Poster({
   return (
     <Box
       as="li"
-      display="flex"
       flexDirection={{ default: "row", tablet: "column" }}
       columnGap={24}
       backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
       paddingX={{ default: "popoutGutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
       alignItems={{ default: "center" }}
+      className={defaultGridStyle}
     >
       <Image slug={slug} image={image} title={title} year={year} />
       <Box flexGrow={1}>
