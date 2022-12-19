@@ -39,7 +39,7 @@ export const pageQuery = graphql`
           formats: [JPG, AVIF]
           quality: 80
           width: 1000
-          placeholder: TRACED_SVG
+          placeholder: BLURRED
         )
       }
     }

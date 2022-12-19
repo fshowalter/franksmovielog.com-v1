@@ -1,6 +1,6 @@
 export const data = {
-  progress: {
-    reviewedCount: 287,
+  reviewedMovies: {
+    totalCount: 287,
   },
   watchlistMovies: {
     totalCount: 3217,

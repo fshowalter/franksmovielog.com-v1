@@ -199,7 +199,7 @@ export default function WatchlistProgressPage({
               <Spacer axis="vertical" size={32} />
               <ProgressCallout
                 total={data.watchlistMovies.totalCount}
-                reviewed={data.progress.reviewedCount}
+                reviewed={data.reviewedMovies.totalCount}
                 label="Total Progress"
               />
             </Box>
@@ -281,8 +281,8 @@ export const pageQuery = graphql`
   }
 
   query WatchlistProgressPage {
-    progress: watchlistProgress {
-      reviewedCount
+    reviewedMovies: allWatchlistMoviesJson(filter: { slug: { ne: null } }) {
+      totalCount
     }
     watchlistMovies: allWatchlistMoviesJson {
       totalCount

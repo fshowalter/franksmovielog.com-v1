@@ -123,15 +123,7 @@ export const query = graphql`
         slug
       }
       poster {
-        childImageSharp {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            formats: [JPG, AVIF]
-            quality: 80
-            width: 200
-            placeholder: TRACED_SVG
-          )
-        }
+        ...PosterListPoster
       }
     }
   }

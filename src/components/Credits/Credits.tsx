@@ -101,7 +101,7 @@ export const query = graphql`
           formats: [JPG, AVIF]
           quality: 80
           width: 248
-          placeholder: TRACED_SVG
+          placeholder: BLURRED
         )
       }
     }
