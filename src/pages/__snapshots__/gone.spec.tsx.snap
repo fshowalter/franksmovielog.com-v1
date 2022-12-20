@@ -2,12 +2,15 @@
 
 exports[`/gone renders 1`] = `
 <DocumentFragment>
-  <a
-    class="Box_screenReaderOnlyStyle__1isqo402"
-    href="#content"
+  <div
+    class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
   >
-    Skip to content
-  </a>
+    <a
+      href="#content"
+    >
+      Skip to content
+    </a>
+  </div>
   <div
     class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_minHeight_16_default__8lcvdkdn sprinkles_width_full_default__8lcvdkrn"
   />
@@ -48,7 +51,7 @@ exports[`/gone renders 1`] = `
           for="search"
         >
           <div
-            class="ScreenReaderOnly_srOnlyCss__rm0eez0"
+            class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
           >
             Search
           </div>
@@ -160,6 +163,7 @@ exports[`/gone renders 1`] = `
     </header>
     <div
       class="sprinkles_flexGrow_1__8lcvdkx"
+      id="#content"
     >
       <main>
         <article
@@ -706,12 +710,15 @@ exports[`/gone renders 1`] = `
           Fair Use Law.
         </a>
       </p>
-      <a
-        class="Box_screenReaderOnlyStyle__1isqo402"
-        href="#top"
+      <div
+        class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
       >
-        To the top ↑
-      </a>
+        <a
+          href="#top"
+        >
+          To the top ↑
+        </a>
+      </div>
     </footer>
   </div>
 </DocumentFragment>

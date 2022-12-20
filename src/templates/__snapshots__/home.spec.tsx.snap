@@ -2,12 +2,15 @@
 
 exports[`/ can render last page 1`] = `
 <DocumentFragment>
-  <a
-    class="Box_screenReaderOnlyStyle__1isqo402"
-    href="#content"
+  <div
+    class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
   >
-    Skip to content
-  </a>
+    <a
+      href="#content"
+    >
+      Skip to content
+    </a>
+  </div>
   <div
     class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_minHeight_16_default__8lcvdkdn sprinkles_width_full_default__8lcvdkrn"
   />
@@ -48,7 +51,7 @@ exports[`/ can render last page 1`] = `
           for="search"
         >
           <div
-            class="ScreenReaderOnly_srOnlyCss__rm0eez0"
+            class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
           >
             Search
           </div>
@@ -160,6 +163,7 @@ exports[`/ can render last page 1`] = `
     </header>
     <div
       class="sprinkles_flexGrow_1__8lcvdkx"
+      id="#content"
     >
       <main>
         <ol
@@ -1643,11 +1647,13 @@ exports[`/ can render last page 1`] = `
         <section
           class="sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_40_default__8lcvdkmn sprinkles_paddingBottom_40_default__8lcvdki5 sprinkles_fontSize_pagination__8lcvdk20 sprinkles_justifyContent_center_default__8lcvdkaw"
         >
-          <h3
-            class="Box_screenReaderOnlyStyle__1isqo402"
+          <div
+            class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
           >
-            Pagination
-          </h3>
+            <h3>
+              Pagination
+            </h3>
+          </div>
           <div
             class="sprinkles_display_flex_default__8lcvdk7q sprinkles_justifyContent_space-between_default__8lcvdkat"
           >
@@ -1808,12 +1814,15 @@ exports[`/ can render last page 1`] = `
           Fair Use Law.
         </a>
       </p>
-      <a
-        class="Box_screenReaderOnlyStyle__1isqo402"
-        href="#top"
+      <div
+        class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
       >
-        To the top ↑
-      </a>
+        <a
+          href="#top"
+        >
+          To the top ↑
+        </a>
+      </div>
     </footer>
   </div>
 </DocumentFragment>
@@ -1821,12 +1830,15 @@ exports[`/ can render last page 1`] = `
 
 exports[`/ renders 1`] = `
 <DocumentFragment>
-  <a
-    class="Box_screenReaderOnlyStyle__1isqo402"
-    href="#content"
+  <div
+    class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
   >
-    Skip to content
-  </a>
+    <a
+      href="#content"
+    >
+      Skip to content
+    </a>
+  </div>
   <div
     class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_minHeight_16_default__8lcvdkdn sprinkles_width_full_default__8lcvdkrn"
   />
@@ -1867,7 +1879,7 @@ exports[`/ renders 1`] = `
           for="search"
         >
           <div
-            class="ScreenReaderOnly_srOnlyCss__rm0eez0"
+            class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
           >
             Search
           </div>
@@ -1979,6 +1991,7 @@ exports[`/ renders 1`] = `
     </header>
     <div
       class="sprinkles_flexGrow_1__8lcvdkx"
+      id="#content"
     >
       <main>
         <ol
@@ -3462,11 +3475,13 @@ exports[`/ renders 1`] = `
         <section
           class="sprinkles_paddingLeft_gutter_default__8lcvdkk5 sprinkles_paddingRight_gutter_default__8lcvdkm2 sprinkles_paddingTop_40_default__8lcvdkmn sprinkles_paddingBottom_40_default__8lcvdki5 sprinkles_fontSize_pagination__8lcvdk20 sprinkles_justifyContent_center_default__8lcvdkaw"
         >
-          <h3
-            class="Box_screenReaderOnlyStyle__1isqo402"
+          <div
+            class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
           >
-            Pagination
-          </h3>
+            <h3>
+              Pagination
+            </h3>
+          </div>
           <div
             class="sprinkles_display_flex_default__8lcvdk7q sprinkles_justifyContent_space-between_default__8lcvdkat"
           >
@@ -3627,12 +3642,15 @@ exports[`/ renders 1`] = `
           Fair Use Law.
         </a>
       </p>
-      <a
-        class="Box_screenReaderOnlyStyle__1isqo402"
-        href="#top"
+      <div
+        class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
       >
-        To the top ↑
-      </a>
+        <a
+          href="#top"
+        >
+          To the top ↑
+        </a>
+      </div>
     </footer>
   </div>
 </DocumentFragment>
