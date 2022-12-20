@@ -1,6 +1,6 @@
 import { Box, IBoxProps } from "../Box";
 import {
-  fieldsetCss,
+  fieldsetStyle,
   legendPaddingStyle,
   responsiveFlexStyle,
 } from "./Fieldset.css";
@@ -11,7 +11,7 @@ interface IFieldSetProps extends IBoxProps {
 
 export function Fieldset({ legend, children }: IFieldSetProps): JSX.Element {
   return (
-    <Box as="fieldset" className={fieldsetCss}>
+    <Box as="fieldset" className={fieldsetStyle}>
       <Box
         as="legend"
         textAlign="center"
@@ -26,7 +26,6 @@ export function Fieldset({ legend, children }: IFieldSetProps): JSX.Element {
         flexWrap="wrap"
         justifyContent="space-between"
         className={responsiveFlexStyle}
-        padding={24}
       >
         {children}
       </Box>

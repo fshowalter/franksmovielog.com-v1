@@ -102,7 +102,13 @@ export function GradeInput({
         {label}
       </Box>
       <Box display="flex" alignItems="baseline" flexWrap="wrap">
-        <Box as="label" display="flex" flex={1} alignItems="center">
+        <Box
+          as="label"
+          display="flex"
+          flex={1}
+          alignItems="center"
+          columnGap=".5ch"
+        >
           <Box
             as="span"
             fontSize="small"

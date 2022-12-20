@@ -43,7 +43,13 @@ export function YearInput({
     <Box as="fieldset" border={0} padding={0}>
       <LabelText as="legend" text={label} />
       <Box display="flex" alignItems="baseline">
-        <Box as="label" display="flex" flex={1} alignItems="center">
+        <Box
+          as="label"
+          display="flex"
+          flex={1}
+          columnGap=".5ch"
+          alignItems="center"
+        >
           <Box
             as="span"
             fontSize="small"
