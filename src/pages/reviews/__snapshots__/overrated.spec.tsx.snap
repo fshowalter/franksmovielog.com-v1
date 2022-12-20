@@ -19035,7 +19035,7 @@ exports[`/reviews/overrated/ renders 1`] = `
             <h1
               class="sprinkles_fontSize_pageTitle__8lcvdk27"
             >
-              Underseen Gems
+              Overrated Disappointments
             </h1>
             <span
               class="sprinkles_width_px_default__8lcvdkrk sprinkles_height_16_default__8lcvdk8w sprinkles_minWidth_px_default__8lcvdkhh sprinkles_minHeight_16_default__8lcvdkdn sprinkles_display_block_default__8lcvdk7k"
@@ -19048,6 +19048,9 @@ exports[`/reviews/overrated/ renders 1`] = `
               >
                 Sorry don't get it done, Dude.
               </q>
+              <span
+                class="sprinkles_width_px_default__8lcvdkrk sprinkles_height_16_default__8lcvdk8w sprinkles_minWidth_px_default__8lcvdkhh sprinkles_minHeight_16_default__8lcvdkdn sprinkles_display_block_default__8lcvdk7k"
+              />
               <p>
                 One and two star movies with an above-average IMDb rating and vote count.
               </p>

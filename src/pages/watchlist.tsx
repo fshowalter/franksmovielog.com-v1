@@ -1,11 +1,10 @@
 import { graphql } from "gatsby";
-import type { IBoxProps } from "../components/Box";
 import { Box } from "../components/Box";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Link } from "../components/Link";
 import { PosterListWithFilters } from "../components/PosterListWithFilters";
 import { Spacer } from "../components/Spacer";
-import { foregroundColors } from "../styles/colors.css";
+import { WatchlistEntityTypeLink } from "../components/WatchlistEntityTypeLink";
 import { toSentenceArray } from "../utils";
 
 /**
@@ -75,82 +74,6 @@ function WatchlistMovieSlug({
       letterSpacing={0.5}
     >
       Because {toSentenceArray(credits)}.
-    </Box>
-  );
-}
-
-interface IWatchlistEntityTypeLinkItem extends IBoxProps {
-  to: string;
-}
-
-function WatchlistPeopleLinkItem({
-  to,
-  children,
-  ...rest
-}: IWatchlistEntityTypeLinkItem): JSX.Element {
-  return (
-    <Box as="li" display="block" {...rest}>
-      <Link
-        to={to}
-        display="flex"
-        columnGap={16}
-        color="accent"
-        boxShadow="borderAll"
-        paddingX={16}
-        paddingY={8}
-        borderRadius={8}
-        textDecoration="none"
-        alignItems="center"
-        minWidth={128}
-      >
-        <Box flexShrink={0}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill={foregroundColors.default}
-            width={20}
-            height={20}
-          >
-            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-          </svg>
-        </Box>
-        {children}
-      </Link>
-    </Box>
-  );
-}
-
-function WatchlistCollectionLinkItem({
-  to,
-  children,
-  ...rest
-}: IWatchlistEntityTypeLinkItem): JSX.Element {
-  return (
-    <Box as="li" display="block" {...rest}>
-      <Link
-        to={to}
-        display="flex"
-        columnGap={16}
-        color="accent"
-        boxShadow="borderAll"
-        paddingX={16}
-        paddingY={8}
-        borderRadius={8}
-        textDecoration="none"
-        alignItems="center"
-        minWidth={128}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill={foregroundColors.default}
-          width={20}
-          height={20}
-        >
-          <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
-        </svg>
-        {children}
-      </Link>
     </Box>
   );
 }
@@ -226,18 +149,10 @@ export default function WatchlistIndexPage({
         columnGap={32}
         rowGap={24}
       >
-        <WatchlistPeopleLinkItem flex={1} to="/watchlist/directors/">
-          Directors
-        </WatchlistPeopleLinkItem>
-        <WatchlistPeopleLinkItem flex={1} to="/watchlist/performers/">
-          Performers
-        </WatchlistPeopleLinkItem>
-        <WatchlistPeopleLinkItem flex={1} to="/watchlist/writers/">
-          Writers
-        </WatchlistPeopleLinkItem>
-        <WatchlistCollectionLinkItem flex={1} to="/watchlist/collections/">
-          Collections
-        </WatchlistCollectionLinkItem>
+        <WatchlistEntityTypeLink as="li" flex={1} entityType="director" />
+        <WatchlistEntityTypeLink as="li" flex={1} entityType="performer" />
+        <WatchlistEntityTypeLink as="li" flex={1} entityType="writer" />
+        <WatchlistEntityTypeLink as="li" flex={1} entityType="collection" />
       </Box>
     </PosterListWithFilters>
   );

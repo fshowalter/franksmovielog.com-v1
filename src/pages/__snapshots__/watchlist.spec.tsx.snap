@@ -39798,24 +39798,20 @@ exports[`/watchlist renders 1`] = `
                 class="sprinkles_display_block_default__8lcvdk7k sprinkles_flex_1__8lcvdkw"
               >
                 <a
-                  class="sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
+                  class="WatchlistEntityTypeLink_hoverStyle__1u6zh280 sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
                   href="/watchlist/directors/"
                 >
-                  <div
-                    class="sprinkles_flexShrink_0_default__8lcvdk8b"
+                  <svg
+                    fill="var(--fgDefault__1atywg63)"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      fill="var(--fgDefault__1atywg63)"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                    />
+                  </svg>
                   Directors
                 </a>
               </li>
@@ -39823,24 +39819,20 @@ exports[`/watchlist renders 1`] = `
                 class="sprinkles_display_block_default__8lcvdk7k sprinkles_flex_1__8lcvdkw"
               >
                 <a
-                  class="sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
+                  class="WatchlistEntityTypeLink_hoverStyle__1u6zh280 sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
                   href="/watchlist/performers/"
                 >
-                  <div
-                    class="sprinkles_flexShrink_0_default__8lcvdk8b"
+                  <svg
+                    fill="var(--fgDefault__1atywg63)"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      fill="var(--fgDefault__1atywg63)"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                    />
+                  </svg>
                   Performers
                 </a>
               </li>
@@ -39848,24 +39840,20 @@ exports[`/watchlist renders 1`] = `
                 class="sprinkles_display_block_default__8lcvdk7k sprinkles_flex_1__8lcvdkw"
               >
                 <a
-                  class="sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
+                  class="WatchlistEntityTypeLink_hoverStyle__1u6zh280 sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
                   href="/watchlist/writers/"
                 >
-                  <div
-                    class="sprinkles_flexShrink_0_default__8lcvdk8b"
+                  <svg
+                    fill="var(--fgDefault__1atywg63)"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      fill="var(--fgDefault__1atywg63)"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                    />
+                  </svg>
                   Writers
                 </a>
               </li>
@@ -39873,7 +39861,7 @@ exports[`/watchlist renders 1`] = `
                 class="sprinkles_display_block_default__8lcvdk7k sprinkles_flex_1__8lcvdkw"
               >
                 <a
-                  class="sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
+                  class="WatchlistEntityTypeLink_hoverStyle__1u6zh280 sprinkles_paddingLeft_16_default__8lcvdkin sprinkles_paddingRight_16_default__8lcvdkkk sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_display_flex_default__8lcvdk7q sprinkles_columnGap_16_default__8lcvdk75 sprinkles_color_accent__8lcvdk0 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_textDecoration_none__8lcvdk2q sprinkles_alignItems_center_default__8lcvdk3t sprinkles_minWidth_128_default__8lcvdkgk"
                   href="/watchlist/collections/"
                 >
                   <svg

@@ -3,7 +3,7 @@ import HomePage, { Head } from "./home";
 import { data } from "./home.fixtures";
 
 describe("/", () => {
-  it("renders", () => {
+  it("renders first page", () => {
     const { asFragment } = render(
       <HomePage
         data={data}
@@ -12,6 +12,38 @@ describe("/", () => {
           skip: 0,
           numberOfItems: 102,
           currentPage: 1,
+        }}
+      />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders last page", () => {
+    const { asFragment } = render(
+      <HomePage
+        data={data}
+        pageContext={{
+          limit: 10,
+          skip: 10,
+          numberOfItems: 102,
+          currentPage: 102,
+        }}
+      />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders middle page", () => {
+    const { asFragment } = render(
+      <HomePage
+        data={data}
+        pageContext={{
+          limit: 10,
+          skip: 10,
+          numberOfItems: 102,
+          currentPage: 51,
         }}
       />
     );

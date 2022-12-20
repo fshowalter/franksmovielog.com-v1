@@ -36,13 +36,14 @@ export default function OverratedDisappointmentsPage({
       </Link>
       <Spacer axis="vertical" size={16} />
       <Box as="h1" fontSize="pageTitle">
-        Underseen Gems
+        Overrated Disappointments
       </Box>
       <Spacer axis="vertical" size={16} />
       <Box color="subtle">
         <Box as="q" fontWeight="semiBold">
           Sorry don&apos;t get it done, Dude.
         </Box>
+        <Spacer axis="vertical" size={16} />
         <p>
           One and two star movies with an above-average IMDb rating and vote
           count.
