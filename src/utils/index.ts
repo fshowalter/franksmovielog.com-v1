@@ -5,5 +5,5 @@ export {
   sortNumberDesc,
   sortStringAsc,
   sortStringDesc,
-} from "./sort-utils";
+} from "./sortUtils";
 export { toSentenceArray } from "./toSentenceArray";

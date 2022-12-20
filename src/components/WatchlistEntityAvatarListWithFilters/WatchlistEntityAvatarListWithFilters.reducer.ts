@@ -1,5 +1,4 @@
-import { applyFilters } from "../../utils/applyFilters";
-import { sortStringAsc, sortStringDesc } from "../../utils/sort-utils";
+import { applyFilters, sortStringAsc, sortStringDesc } from "../../utils";
 
 export enum ActionType {
   FILTER_NAME = "FILTER_NAME",
