@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 
-export const srOnlyCss = style({
+export const screenReaderOnlyStyle = style({
   borderWidth: "0",
   clip: "rect(0, 0, 0, 0)",
   height: "1px",

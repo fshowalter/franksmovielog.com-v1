@@ -1,5 +1,6 @@
 import { Box, IBoxProps } from "../Box";
 import { ExternalLink } from "../Link";
+import ScreenReaderOnly from "../ScreenReaderOnly";
 import { Nav } from "./Nav";
 
 export function Footer({ ...rest }: IBoxProps) {
@@ -22,9 +23,9 @@ export function Footer({ ...rest }: IBoxProps) {
           Fair Use Law.
         </ExternalLink>
       </Box>
-      <Box as="a" href="#top" screenReaderOnly={true}>
-        To the top ↑
-      </Box>
+      <ScreenReaderOnly>
+        <a href="#top">To the top ↑</a>
+      </ScreenReaderOnly>
     </Box>
   );
 }

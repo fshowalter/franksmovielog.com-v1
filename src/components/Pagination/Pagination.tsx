@@ -2,6 +2,7 @@ import { navigate } from "gatsby";
 import { ChangeEvent } from "react";
 import { Box, IBoxProps } from "../Box";
 import { Link } from "../Link";
+import ScreenReaderOnly from "../ScreenReaderOnly";
 import { Spacer } from "../Spacer";
 
 interface IPaginationProps extends IBoxProps {
@@ -66,9 +67,9 @@ export function Pagination({
 
   return (
     <Box as="section" fontSize="pagination" {...rest}>
-      <Box as="h3" screenReaderOnly={true}>
-        Pagination
-      </Box>
+      <ScreenReaderOnly>
+        <h3>Pagination</h3>
+      </ScreenReaderOnly>
       <Box display="flex" justifyContent="space-between">
         {prev}
         {next}

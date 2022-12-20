@@ -8,7 +8,7 @@ export function StillList({
   seeAllLinkText,
   seeAllLinkTarget,
 }: {
-  movies: readonly Queries.RelatedMovieFragment[];
+  movies: readonly Queries.StillListMovieFragment[];
   seeAllLinkText: string;
   seeAllLinkTarget: string;
 }): JSX.Element | null {

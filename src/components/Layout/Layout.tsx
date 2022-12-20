@@ -9,6 +9,7 @@
 import React from "react";
 import "../../styles/global.css";
 import { Box } from "../Box";
+import ScreenReaderOnly from "../ScreenReaderOnly";
 import { Footer } from "./Footer";
 import {
   bandStickyStyle,
@@ -24,9 +25,9 @@ export function Layout({
 }): JSX.Element {
   return (
     <>
-      <Box as="a" href="#content" screenReaderOnly={true}>
-        Skip to content
-      </Box>
+      <ScreenReaderOnly>
+        <a href="#content">Skip to content</a>
+      </ScreenReaderOnly>
       <Box
         backgroundImage="ripNotComingSoon"
         minHeight={16}
@@ -49,7 +50,9 @@ export function Layout({
           backgroundColor="default"
           className={headerLayoutStyle}
         />
-        <Box flexGrow={1}>{children}</Box>
+        <Box flexGrow={1} id="#content">
+          {children}
+        </Box>
         <Footer
           paddingX="gutter"
           paddingY={32}
