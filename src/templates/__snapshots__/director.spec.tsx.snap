@@ -17488,15 +17488,12 @@ exports[`/watchlist/directors/{slug} can view more titles 1`] = `
 
 exports[`/watchlist/directors/{slug} renders 1`] = `
 <DocumentFragment>
-  <div
-    class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
+  <a
+    class="Layout_skipToMainContentStyle__1965ugi3"
+    href="#content"
   >
-    <a
-      href="#content"
-    >
-      Skip to content
-    </a>
-  </div>
+    Skip to content
+  </a>
   <div
     class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_minHeight_16_default__8lcvdkdn sprinkles_width_full_default__8lcvdkrn"
   />
@@ -17649,7 +17646,7 @@ exports[`/watchlist/directors/{slug} renders 1`] = `
     </header>
     <div
       class="sprinkles_flexGrow_1__8lcvdkx"
-      id="#content"
+      id="content"
     >
       <main
         class="sprinkles_paddingLeft_0_default__8lcvdkie sprinkles_paddingLeft_gutter_desktop__8lcvdkk7 sprinkles_paddingRight_0_default__8lcvdkkb sprinkles_paddingRight_gutter_desktop__8lcvdkm4 sprinkles_display_flex_default__8lcvdk7q sprinkles_flexDirection_column_default__8lcvdk88 sprinkles_flexDirection_row_desktop__8lcvdk87 sprinkles_columnGap_64_default__8lcvdk7h"

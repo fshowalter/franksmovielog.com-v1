@@ -9,12 +9,12 @@
 import React from "react";
 import "../../styles/global.css";
 import { Box } from "../Box";
-import ScreenReaderOnly from "../ScreenReaderOnly";
 import { Footer } from "./Footer";
 import {
   bandStickyStyle,
   headerLayoutStyle,
   pageCanvasStyle,
+  skipToMainContentStyle,
 } from "./Layout.css";
 import { Mast } from "./Mast";
 
@@ -25,9 +25,9 @@ export function Layout({
 }): JSX.Element {
   return (
     <>
-      <ScreenReaderOnly>
-        <a href="#content">Skip to content</a>
-      </ScreenReaderOnly>
+      <a className={skipToMainContentStyle} href="#content">
+        Skip to content
+      </a>
       <Box
         backgroundImage="ripNotComingSoon"
         minHeight={16}
@@ -50,7 +50,7 @@ export function Layout({
           backgroundColor="default"
           className={headerLayoutStyle}
         />
-        <Box flexGrow={1} id="#content">
+        <Box flexGrow={1} id="content">
           {children}
         </Box>
         <Footer

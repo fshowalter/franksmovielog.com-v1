@@ -2,15 +2,12 @@
 
 exports[`/how-i-grade renders 1`] = `
 <DocumentFragment>
-  <div
-    class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
+  <a
+    class="Layout_skipToMainContentStyle__1965ugi3"
+    href="#content"
   >
-    <a
-      href="#content"
-    >
-      Skip to content
-    </a>
-  </div>
+    Skip to content
+  </a>
   <div
     class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk2s sprinkles_minHeight_16_default__8lcvdkdn sprinkles_width_full_default__8lcvdkrn"
   />
@@ -163,7 +160,7 @@ exports[`/how-i-grade renders 1`] = `
     </header>
     <div
       class="sprinkles_flexGrow_1__8lcvdkx"
-      id="#content"
+      id="content"
     >
       <main>
         <article
