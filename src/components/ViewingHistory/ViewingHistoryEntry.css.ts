@@ -1,6 +1,6 @@
 import { style, styleVariants } from "@vanilla-extract/css";
+import { gridTemplate, SPACER } from "../../styles/grid";
 import { size } from "../../styles/sizes.css";
-import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gridStyle = style({
   display: "grid",

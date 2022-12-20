@@ -1,8 +1,8 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { backgroundColors, borderColors } from "../../styles/colors.css";
+import { gridTemplate, SPACER } from "../../styles/grid";
 import { size } from "../../styles/sizes.css";
-import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const gradeStyle = style({
   // padding: "3px 0",

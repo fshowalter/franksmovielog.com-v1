@@ -1,4 +1,4 @@
-import { composeClassNames } from "../../utils/composeClassNames";
+import { composeClassNames } from "../../styles/composeClassNames";
 import { Box, IBoxProps } from "../Box";
 
 export interface IGridAreaProps<T extends string> extends IBoxProps {

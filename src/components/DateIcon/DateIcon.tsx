@@ -1,4 +1,4 @@
-import { composeClassNames } from "../../utils/composeClassNames";
+import { composeClassNames } from "../../styles/composeClassNames";
 import SvgIcon from "../SvgIcon";
 import { iconStyle } from "./DateIcon.css";
 /**

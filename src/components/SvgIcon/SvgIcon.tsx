@@ -1,5 +1,5 @@
 import React from "react";
-import { composeClassNames } from "../../utils/composeClassNames";
+import { composeClassNames } from "../../styles/composeClassNames";
 import { iconStyle } from "./SvgIcon.css";
 
 /**

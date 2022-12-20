@@ -1,8 +1,8 @@
 import { globalStyle, style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
+import { gridTemplate, SPACER } from "../../styles/grid";
 import { relativeSize, size } from "../../styles/sizes.css";
-import { gridTemplate, SPACER } from "../../utils/gridTemplate";
 
 export const stillBorderStyle = style({
   border: `solid 8px ${borderColors.default}`,

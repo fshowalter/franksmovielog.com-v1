@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
+import { composeClassNames } from "../../styles/composeClassNames";
 import { stickyHeaderScrollMarginTopStyle } from "../../styles/utils.css";
-import { composeClassNames } from "../../utils/composeClassNames";
 import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
