@@ -1,7 +1,5 @@
 import { graphql } from "gatsby";
-import { RelatedMoviesList } from "./RelatedMoviesList";
-import { RelatedMoviesListHeading } from "./RelatedMoviesListHeading";
-import { RelatedMoviesNav } from "./RelatedMoviesNav";
+import { StillList, StillListHeading, StillListNav } from "../StillList";
 
 const leadText: Record<Queries.WatchlistEntityType, string> = {
   director: " directed by",
@@ -21,18 +19,18 @@ export function RelatedMoviesForWatchlistEntities({
         .filter((entity) => entity.browseMore.length === 4)
         .map((entity) => {
           return (
-            <RelatedMoviesNav key={`${entity.entityType}s/${entity.slug}`}>
-              <RelatedMoviesListHeading
+            <StillListNav key={`${entity.entityType}s/${entity.slug}`}>
+              <StillListHeading
                 leadText={`More${leadText[entity.entityType]}`}
                 linkTarget={`/watchlist/${entity.entityType}s/${entity.slug}`}
                 linkText={entity.name}
               />
-              <RelatedMoviesList
+              <StillList
                 movies={entity.browseMore}
                 seeAllLinkTarget={`/watchlist/${entity.entityType}s/${entity.slug}/`}
                 seeAllLinkText={`${leadText[entity.entityType]} ${entity.name}`}
               />
-            </RelatedMoviesNav>
+            </StillListNav>
           );
         })}
     </>
@@ -45,7 +43,7 @@ export const query = graphql`
     slug
     entityType
     browseMore(sourceReviewId: $id) {
-      ...RelatedMovie
+      ...StillListMovie
     }
   }
 `;

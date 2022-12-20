@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import GonePage, { Head } from "./gone";
-import data from "./gone.fixtures";
+import { data } from "./gone.fixtures";
 
 describe("/gone", () => {
   it("renders", () => {

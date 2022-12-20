@@ -1,33 +1,184 @@
-export default {
+export const data = {
   still: {
     childImageSharp: {
       gatsbyImageData: {
         layout: "constrained" as const,
-        placeholder: {
-          fallback:
-            "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1000'%20height='563'%20viewBox='0%200%201000%20563'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2039v39h19c4-1%205-1%207%202l2%203c-1%200%208%208%2012%209l4%202%202-2%207-5c3-1%205-3%206-5%202-4%205-7%205-6l2-1c2-2%203-8%202-18l2-9%202-6h2l2-1c0-3%209-7%2013-6h19l9-6c5-4%2012-9%2013-8l1-1%202-1%203-1v-2l1-2%201-2%201-2c1-3%200-10-2-8l-1-1-68-1H0v39M237%202l1%201%201%201%202%204%202%204%201%204a169%20169%200%20017%2014l3%206%203%205%201%201v6l1%205v10l1%2018%201%2017a1190%201190%200%20001%2035c-3%202%201%204%207%203%205%200%206%200%205%202v1l1-1h2l1%202%202%201h3l-2%201c-1%201-1%201%201%201l4%202%203%202%201%201c0%202%201%202%202%202%201-1%201-1%201%201v5c2-1%206%203%206%206%200%202%200%202%201%201%202-2%204-1%204%201-1%201%200%201%201%201%202%200%202%200%201%201v1l5%201h3c0-2%200-2%202-1l2%203c0%202%202%203%204%201%201-1%201-1%200%200v2l1-1h1l1-1v-1l1%201%202%201h4c1%200%202%200%201%201l-1%201h6l2%201c2%200%202%200%201-1v-1h2l1-1%201%201%201%202h8l2%201%201%201%202%201h1l1%201v1c1%200%202-1%201-2h1c1%200%202%201%201%202h3l3%201%203-1h1l1-1c-1-1%201-1%204-1l2-2c0-2%200-2%201-1h3l2-1%204-2c2-2%204-2%205-2l2-1%201-2c1-1%202-2%203-1l14-1h13l2-1h1c0%202%202%202%203%201h2l2%201h9l2%201h6l4%201%201%201%201%201h3l5%201%202%201%201%201%2021%201h4l1%201v-1l1-1h7l1%201h1l3%201h2c0%202%202%201%203-1h4l1%201%203%201h6l1-2c1%205%202%206%203%204h4l-1%201c-1%201-1%201%202%201h4l-2%201%201%201h3l1%201%203%202%202%203%202%202%201%201%201%201%202%201%203%201c3%201%205%202%203%202v1c1%201%202%202%203%201l1%201%201%201h2l6%205c2%200%203%203%203%205l1%201v2l1%201%203%203%202%203%201%201v3c4%205%205%206%204%207l2%201%203%201c0%201%201%202%203%202l3%203%202%201%201%201%201%201h1c0%201%204%202%209%202l2%201h8l2%201%2012%201%204%202%204%202h2l-2%201v1h5l4%202%205%202%205%201h3l3%201c1%201%202%202%203%201h1l2%201c1-1%201-1%200%200v1h3l4%201%202%202c0%202%2020%202%2021%200h2l5%201h26l9-1a572%20572%200%200195%203c4%200%209-3%209-6a665%20665%200%200012-70%20574%20574%200%200010-64%20205%20205%200%20012-13%20197%20197%200%20012-20%201664%201664%200%200112-74l1-10c2-11%203-10-12-10l-14%201a200%20200%200%2001-7%2043l-1%204-1%202-1%202-2%201c-2%200-2-1-2-4%200-4-1-6-4-6l-6-2c-2-2-5-3-8-3a296%20296%200%2001-64-8l-15-1a94%2094%200%2001-40-7h-3l-2-1-4-1-1-1h-3l-4-1-2-1c1-1%201-1-1-1h-4l-4-2-4-1-7-1-7-2c-3%201-7-3-7-6h-1l-1-1-1-1c-1%201-3%200-4-1l-26-1h-23v2l1%206c0%203%200%203%201%201%201-1%201-1%201%201l1%202c1-1%201%200%201%201l3%206c3%201%204%203%203%204l1%201%202%201s0%202%202%203c2%204%202%2014%200%2025v6a288%20288%200%20012%208l1%208%201%2015c-1%204-4%2010-7%2010l-2-1-1-1h-5l-1-1-2-1h-1l-1-1h-2c-3%202-11-1-11-4l-2-4-2-23-1-5-1-8-1-4V36l1-7%201-4c0-5%200-6%202-8v-2l1-5V9l1-1%201-3c4-4%202-5-24-5h-23l1%204%202%206%201%203%201%208c2%207%202%2010%201%2030l-2%2013-2%208-2%203v2l-1%202c-1%200-5%2010-5%2014l-3%206-1%205-1%2010-1%201%201%201%201%202-1%203-1%204c0%207-1%209-2%208l-2%202-1%202-1%202-2%202-2%201h-3c-1%200-2-1-2-3s1-3%202-3l1-2v-2l1-7-1-5%201-5%201-1-1-1c-1%201-3-10-4-19a452%20452%200%20012-74l-1-2-8-2-12-2-9-3-5-1h-3l-4-1-7-1c-4%200-10-3-13-5l-3-3H347c-98%200-111%200-110%202m683-1l-2%2010a2181%202181%200%2001-16%20105%20704%20704%200%2001-6%2042%20261%20261%200%2001-5%2041%20395%20395%200%2001-2%2014%20964%20964%200%2001-7%2059v12l8%204%2018%208%206%202%207%203%201%201%202%201%206%202%204%201%201%201%208%203%2010%204%205%202%203%201%204%203%207%202%2010%204a152%20152%200%200113%205h3c1%200%202-19%202-165V0h-40l-40%201M274%2047c-2%202-2%202%200%202l-1%201c-3%200-3%201-3%203l-1%202-1%205c0%204%200%205%201%204l1-1a37%2037%200%20001%204l1-1c1-1%201-1%203%201s3%203%202%200l1-1%201%203%202-1h2c-1%201%200%202%201%202%202%201%202%201%202-1h3l3-1c4-1%206-4%206-8l-4-9v-1l-1-2-1%202-1%201v-1l-1-2h-3c-2-2-4-3-4-1l-1%201h-1l-1%201v-2c0-2%200-2-1-1h-2l-3%201m516%2054l-2%201-7%201-4%201-3%201-4%201-3%201c-1%200-2%200-1%201l-1%201h-2c-3%202-11%203-13%203l-3%201h-49l-1-1-1-1-9%202c-4%200-5%202-2%204v2l2%202c2%200%202%201%201%201-2%200-2%200-1%202l3%201c1-1%201%200%201%201l1%205%203%201%204%202%201%202v2c0%201%200%202%201%201%200-2%203-1%203%201l1%201%201%201%201%202c2%202%203%203%202%204h1c1-1%202%200%203%202l4%202%203%201%204%201%201%201c0%201%202%202%202%200h2c1%202%201%202%203%201h3c0%201%201%202%202%201v-1l-1-2%202%201c2%201%202%201%202-1v-2l2%202c1%202%202%202%201%200l2-1h2l-2-1c-3%200-3%200%203-4l1-2%205-2%201-2%201-3v-3h2c1%202%202%201%201-1%200-2%201-2%202-2h1l1-1%202-3%202-1h2l3-1c5%200%207-1%209-2h19c2-1%202-1%203%201%200%202%201%203%202%202l1%201h1l4%202c2%203%206%203%204%201l1-2v-1c-2%200-2%200-1-2l2-1%201-1c0-1%201-2%203-1%201%200%202%200%201-1v-4l-1-4c-1%200-2-1-1-2l-1-1-1-1-2-2-3-3c-2-3-6-5-9-4l-2-1-2-1-2%201h-8m-752%203l-1%202-2%201-1%202v3c-1%203%201%208%203%208l5-3c3-3%203-3%202-5l-1-3-1-2c-1%200-2-1-1-2%200-2-1-3-3-1m556%2037c-3%202-5%209-5%2021-1%2011%202%2015%2011%2014l1-1v-1l1-1c-1-1%200-3%202-4%202%200%203-1%203-2l2-3c2-3%202-6%200-8l-1-4-1-3-4-4-3-3-1-1h-5m-339%205l-2%202h-3l-2%203-1%201-1%201v1l-2%204v2l-1%202-1%207h-1l-1%201%201%201v3l-1%203-2%202-2%203v4l-1%201-1%202h5l1-1h4l2-1c2%200%202%200%201%201s-1%201%201%201h10c0-1%204-2%206-1h9l1-2c1-3%203-4%203-2h1v-1c-1-1-1-1%201-1%202%201%202%200%202-2s1-3%202-1h1c0-2%200-2%202-1h1c0-1%200-2-1-1l-1-1h-1l-1-1%201-1v-1l-2%201-1%201v-2l-1-2-1%202v1h-2l-1-1-2-2-1-1%201-1%201-1-2-2-1-2-1-1c-1%201-3-1-2-3l-1-1-1-1c-1-1-2-2-3-1l-1-1%202-1v-1h-3c-2%200-2%200-1-2l1-3c0-1-5-4-7-3m-114%2046c-3%201-10%204-11%206s2%205%204%205l2%201%202%201%202%201h4l5%201h1l12-3%202-2c0-1-3-5-5-5v-1l-1-2-1%201-3-1c-5-2-8-3-13-2m636%2040l3%203%201%201%201%201%203%201c4%202%207%204%2016%206%2012%204%2021%203%2012-1l-4-2-1-1-4-1-4-2-4-1h-1l-1-1-1-1c0%201-4%200-7-2-12-4-13-4-9%200m-231%2045c-21%203-29%205-49%2013l-5%202%204%201c20%205%2080%207%20108%204%2016-2%2034-7%2033-9l-51-11h-40M16%20371l-2%205-2%204v2l-2%202-1%202v5l1%204%208%206c1%201%200%205-4%209-3%203-12%208-13%207l-1%2014v14l2-3%203-3%201-2%202-2%205-4%202-2a117%20117%200%2001-11%2020l-2%203c-2%202-2%203-2%209l1%207%202-6c1-4%204-9%206-11l5-9c1-4%202-5%203-5%201%201%202%200%202-1v-2l-1-2h1c1%201%201%201%203-1%202-3%203-5%201-5l-1%201-1%201v-3c0-3%200-3-2-2-2%202-6%203-5%201l-1-1-1-1%201-1a60%2060%200%200016-17v-1l-2-4c0-3-1-3-3-4-3%200-7-7-6-9l1-10-1-2c1-4%200-5-2-3m44%2018l-6%201-13%205-1%201-1%201-2%201c-2%200-3%200-3%202l-5%209c-5%208-7%2011-3%207%201-1%203-2%204-1%203%200%206-2%206-5l3-3v-1l-1-1%201-2h1l1-1c-1-1%206-1%2012%201%207%203%2010%203%2015%200%204-3%205-3%205-7-1-3-1-4-4-5-3-2-8-3-9-2m-4%2039a213%20213%200%2000-3%2022l-2%2011a177%20177%200%2001-5%2032v-20h-1c-2%204-3%2011-3%2018%200%202%200%203-1%202l-1-5c2-8%202-13%201-14%200-2-2%201-2%204l-1%202v-7l2-2%203-3c1-5%201-6%202-2l1%204%201-3%201-4v-2c1-1%200-4-2-3l-1%201-1%202h-1l-1%201h-3c1-1%200-1-3-1-1%200-2%201-3%205-4%2016-8%2027-9%2027l4-18c3-9%203-15%202-15l-3%208a62%2062%200%2001-4%2012v3l-4%205%203-16c5-14%205-16%204-16l-3%205-2%205-1%204-1%203-1%204-3%205c-1%202-1%202-1%200l4-11%201-5%201-2%203-10-1-1c-1-1-2%203-6%2015l-2%203-1%202c0%202%200%202-1%201l2-10a70%2070%200%20004-16l1-1c0-2-3%201-3%203l-1-1c-2-2-2-2-3%201a837%20837%200%2001-10%2023c-1%201-2%205-2%2046v44h284l-1-2v-2l1%202c1%202%202%202%207%202h5l-1-3v-3l1%203c2%203%207%205%205%202l1-2%201%201%203%202c2%200%202%200%200-4v-5l4%206c0%203%201%203%204%203h4l-1-4c-4-10-2-9%202%201%201%202%201%202%202%201l1-4c-2-4%201-3%202%202%203%206%204%204%202-4l-2-7%201%201%206%2014v-7l-2-6h2l1%201v2l3%206c1%204%203%205%203%202l-2-11v-4c-1-1-2-2-1-3a323%20323%200%20007%2015c3%206%205%207%204%200l-2-5v-7c2-1%202%200%205%208s4%209%206%209c3%200%203-2%201-8-2-3-2-9-1-9l1-2c0-2%204-2%205-1s1%200%202-1c1-3%207-7%209-6%202%202%201%206-1%207-2%200-2%200%200%201%202%202%205%207%206%2012l2%203%203%202c1%202%208%203%208%200%203-5-9-23-14-23-2%200-2%200-1-1v-1l1-2%202%201%203-1c3-2%203-2%205-1%201%202%201%202%202%201%200-2%200-2%204%200l3%202%204%206%203%206%201%202%203%205%204%203%202%202%202%203c2%200-1-5-6-13-4-5-8-15-7-16v-1l1-2%202%202%201%201c1%200%203%201%203%203l5%205-2-6c-4-6-4-6-1-5%203%200%209%207%2010%2010s5%206%205%204l-1-2c-2-1-7-12-6-13h3l6%208%206%208-7-13c-2-3-2-4-1-4%202%200%205%204%206%206l1%201c1-1%200-2-1-4-3-4-2-5%202-2l2%201c-1-3%200-2%202%200s2%202%200-2l1-2v1l1%201%203%201%202%203-1-4c-3-4-1-4%203%201%203%204%204%203%201-1-2-3-2-4-1-4l5%206%205%205-2-4c-4-5-4-7-2-7v1l1%201c0-1%202%200%203%202%203%205%205%205%202%200l-1-4%208%208%202%202-2-5c-4-5-4-6%200-4l2%201-1-1-1-2c0-1%202%200%203%203%204%203%205%203%202%200l-1-3c0-2%203%201%206%205l3%204-2-5c-4-5-4-6%200-3%201%202%202%202%202%201l3%202%203%202-1-1-1-2h2c1%201%201%201%201-1l1%201%203%201-1-1-1-2%202%202%203%201-1-1-1-2h3l3%202%203%202-1-1-1-2h2c1%201%201%201%201-1-1-2-1-2%202%201l3%202-1-1-1-2h4l2%202v-2h4l1-1h5l3%202%202%201-1-2-2-2h2c0%202%201%202%201%201l6-1%207-1h1l3%201h1v1h4l1-1h3l6-1%204-1h3l3-1%2013-2%202-1%203-1c4%200%2011-1%2016-3h7l1-1%202-1h1l2-1%204-1%202-1%207-3c5-2%203-2-8%201a200%20200%200%2001-78%203l-9-1-9-1-4-1-6-2c-11-2-26-9-35-17-11-9-13-14-15-38-1-12-1-13-11-12-10%200-14%201-20%203l-6%201c-1-1-10%201-10%202l-3%201h-10l-15%203-1%201-6%201-10%201-6%201h-5c-3-2-6-2-6%200s-2%201-7-2c-6-5-6-5-6-1%201%203-1%205-2%203l-2-1c-2%200-4-1-4-3l-2-2-1-2-2-2c-4-1-4-1-4%203l-5%2015h-3c-2-1-2-1-4%201-1%202-2%202-4%200h-8l-4%201h-6c-4%200-6-1-7-2h-2c-1%201-3%202-5%201l-4%201-2%201-3%201h-1l-1-1-1%202c0%201-2%202-2%200%200-1-2-1-5%201h-5c-1-2-2-2-4-1l-3%201-1-1-3-1-2-1h-1l-1%203c0%205%200%206-1%204l-2-1-1-1c0-2-3-1-6%201-1%202-3%203-3%202l-1%202c0%201-1%201-3-2-3-3-6-4-6-1h-3c-2-2-3-2-5%200-3%202-6%201-7-2%200-2-5-5-6-4l-1-1-1-2-2-1-2-2-2%201c1%201-4%201-5-1l-2-4-2-2-2-3-2-3-1%204-2%209v6c0%202-4%203-5%202h-7l-1%201v-2l-1-2-1%201c-1%202-2%202-2%201h-5v9l-1%201h-1l-1-2v-4l-1-3v-1l-1-3c0-2%200-2-1-1v4c0%203%200%203-3%201l-4-1-1-1h-2l-1%201h-1v3l-1%201v6c-2%202-3%202-3-1l-1-2c-1%200-2-1-2-4-1-4-1-4-1-1v3l-1-4-2-3v2l-2%201-2-1-1-1h-2c-1-1-1-1-1%203%200%203%200%203-1%202s-2-1-2%201l-2%201c-1-1-1%200-1%201l-1%202-1-6v-6l-1-1c-2%200-2%201-2%207v8l-1-2c-1-12-2-16-4-16l-2-2-2-6-1%201a4296%204296%200%2000-3%2026c-1-11-3-18-3-10v3l-1-3-2-3-1-1v-4c-1-3-1-3-1-1l-1%203c-2%200-2%201-2%204s0%203%201%202c3-3%203-2%203%207v10l-1-7c-2-10-4-6-4%207l-1%207-1-5-1-7c-1-2-1-1-1%205l-1%204c0%203-2%202-2-2%200-16-1-20-2-7l-3%2017c-1%201-1-18%201-35%201-23-3-11-5%2014-1%2012-1%2014-3%2018v-11l1-15v-12a74%2074%200%20012-15l1-9c0-6-1-9-2-3m735%2079l1%201%205%205c6%205%2014%2010%2014%207%201-2%202-1%209%207l9%2011%202%203%202%203%204%203-1-2-3-5-2-4-2-4-2-2-1-1-2-5-2-1c0-1%201-2%202-1l1-1c-1-1%202-2%204-1%202%202%203%200%201-2l-1-2-1-1c-1%201-1%200-1-1l-1-2h-4c-3-1-5-2-3-2l1-1-2-1v1h-2c-3-2-4-1-1%202%203%204%204%205%201%205l-13-4h-2l-2-1-8-4m-64%2015l-8%201h-5l3%201h4l-4%201c-3%202-7%205-6%206l3-1c2-2%203-2%202%200%200%202%202%205%204%204v-3l3-4%201%202c0%202%201%203%203%205l4%204%202%201%201-1%201-1c1%201%208%200%207-1l1-1c3%200%202%203-1%204-1%201-2%201-1%202l4-2%203-1%203%206-2-1h-2l2%202c2%203%206%204%204%202h2v4h2c1%201%206%206%206%208%200%201%205%204%208%204%201%200%202%200%201-2h1l3%202-2-4-5-2c-1%202-3%201-8-5-10-12-10-11-9-16%201-4%201-4%203-3h1l-2-1-1-1h-1l-1-1-6-4-5-3%201-1h-14m204%208c1%201%201%201-3%201h-4l-3%201c-2%200-2%200-1%201%203%201%200%202-5%201-7%200-10%201-6%203%201%201%201%201-1%201l-3%201-1%201-3%201-3%202v1l-2%201c-3%200-2%201%202%201l8%203%206%202%207%206c0%201-4%202-6%201h-3l5%203c7%202%2055%203%2053%201%200-1%208-1%2025%201h7v-11c0-10%200-11-2-10l-2-1-1-1h-5l-6-2-10-1-2-1-2-1c2-2-14-7-20-5h-6l-3%201h-1l-1-1-2-1h-5c-3-1-3-1-1%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
-        },
+        backgroundColor: "#c8c8b8",
         images: {
           fallback: {
-            src: "/static/f5aba40fd9013c55103643e8e13011f8/f4320/about.jpg",
+            src: "/static/f5aba40fd9013c55103643e8e13011f8/acfae/about.jpg",
             srcSet:
-              "/static/f5aba40fd9013c55103643e8e13011f8/2af26/about.jpg 250w,\n/static/f5aba40fd9013c55103643e8e13011f8/a5dc9/about.jpg 500w,\n/static/f5aba40fd9013c55103643e8e13011f8/f4320/about.jpg 1000w,\n/static/f5aba40fd9013c55103643e8e13011f8/f2565/about.jpg 2000w",
-            sizes: "(min-width: 1000px) 1000px, 100vw",
+              "/static/f5aba40fd9013c55103643e8e13011f8/7f89c/about.jpg 240w,\n/static/f5aba40fd9013c55103643e8e13011f8/82753/about.jpg 480w,\n/static/f5aba40fd9013c55103643e8e13011f8/acfae/about.jpg 960w,\n/static/f5aba40fd9013c55103643e8e13011f8/a464d/about.jpg 1920w",
+            sizes: "(min-width: 960px) 960px, 100vw",
           },
           sources: [
             {
               srcSet:
-                "/static/f5aba40fd9013c55103643e8e13011f8/fdfcf/about.avif 250w,\n/static/f5aba40fd9013c55103643e8e13011f8/b400f/about.avif 500w,\n/static/f5aba40fd9013c55103643e8e13011f8/70674/about.avif 1000w,\n/static/f5aba40fd9013c55103643e8e13011f8/31a81/about.avif 2000w",
+                "/static/f5aba40fd9013c55103643e8e13011f8/23bcc/about.avif 240w,\n/static/f5aba40fd9013c55103643e8e13011f8/2df83/about.avif 480w,\n/static/f5aba40fd9013c55103643e8e13011f8/3beec/about.avif 960w,\n/static/f5aba40fd9013c55103643e8e13011f8/d25bd/about.avif 1920w",
               type: "image/avif",
-              sizes: "(min-width: 1000px) 1000px, 100vw",
+              sizes: "(min-width: 960px) 960px, 100vw",
             },
           ],
         },
-        width: 1000,
-        height: 563,
+        width: 960,
+        height: 540,
       },
     },
   },
+  latestViewings: [
+    {
+      reviewedMovie: {
+        imdbId: "tt0045564",
+        title: "The Blue Gardenia",
+        grade: "D-",
+        slug: "the-blue-gardenia-1953",
+        year: 1953,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQozz2SzUqyURSF39Qo0SzNFKU00yy1RDANyiAK7U+zKBAqiFAKox91ouCkgQM1bOLEHGgURCniwFlQs+gSvIQuY33s3VeDzcvL2fs5a62zBYvFgpGREajVav76/X7s7Ozg/Pwc5XIZZ2dn0Ov1sNlsWFhYQDAYxNraGrxeL5aXl+F0OhEKhXiWSlhdXeXDlZUVbt7Y2MDR0RGur6/Rbrfx+vqK09NTHB8fIxKJYHt7G9PT09BoNFAoFDCZTHxGXwbSbYuLi9jf3wfBZ2dnEY1GcXd3h5eXF3x8fCCTySCdTjN4fHwcUqkUfX19EAQBo6Oj3D85OQmdTgeBLJK6WCzGVmmI1FWrVbRaLdTrdeRyOVQqFWSzWQwNDWFwcBAymQw9PT0YGxtDPB6H1WpluBAIBLC1tYVisch5ka18Po9ms4lut4uHhwfc3Nzg+fmZ7ZvNZsjl8j8gQS4uLmC322EwGCBsbm5id3cX9/f3SCaTnEU4HGZln5+fSKVSeHp6QqlUwuHhIS4vLzlrtvff8tXVFVwuF+iBBbK5vr7O+bndbszMzPChx+Nh+zT8/v7OPfR4b29vKBQKWFpa+gMmEgnMz89jamrqx7JWq4VKpeL1mJiY4OCNRiMPOBwO1Go1dDodzvXr6wuPj48MlEgkPEMK5+bmfoAEoBdTKpWcDa0DBU3/9AD03dvbw/f3NxqNBud6cHDAlxGQ9vfk5ISdEUugcHt7e9Hf389FDaSQbh4YGOAh6vH5fKzu9vaWYSKRCGKxGMPDw7ybpI5dEYSGSCUVDZNCCvhXNRVByCYt8y+QiqKi1aM9JOA/qZqH3l4xhqQAAAAASUVORK5CYII=",
+              },
+              images: {
+                fallback: {
+                  src: "/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg",
+                  srcSet:
+                    "/static/416c95d938442a4ba50939190044112e/43c32/the-blue-gardenia-1953.jpg 78w,\n/static/416c95d938442a4ba50939190044112e/78def/the-blue-gardenia-1953.jpg 156w,\n/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg 312w,\n/static/416c95d938442a4ba50939190044112e/a02d5/the-blue-gardenia-1953.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/416c95d938442a4ba50939190044112e/08742/the-blue-gardenia-1953.avif 78w,\n/static/416c95d938442a4ba50939190044112e/1c619/the-blue-gardenia-1953.avif 156w,\n/static/416c95d938442a4ba50939190044112e/c02e5/the-blue-gardenia-1953.avif 312w,\n/static/416c95d938442a4ba50939190044112e/81026/the-blue-gardenia-1953.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0028330",
+        title: "Suzy",
+        grade: "D-",
+        slug: "suzy-1936",
+        year: 1936,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVQozz2SzUuyURDF7x/gxrUSuGmlSxEMEcSVImHQLonI1mmFUlZIRQjZB1aWmghFZJSgCRFkWtl32qYgqUULcRGFUVkUFudlBnovzOa58/zOzDlXJBIJhEIhhMNhpNNpZDIZnJ6eolKp4OTkBO3t7TAajfB4PFhbW8Pq6iq2trZQLBYxOTkJi8WC/v5+9PX1cY/Y3t7G+Pg4ZmZmQPB8Po/Ly0vkcjlsbGxgb2+P76anp7G5ucnCOzs7uL6+RqFQQDweh8PhQEdHBwYHByFSqRSGh4cxPz+P9fV1HB0dMfT4+JiBu7u7DKWiXvpGE1Jls1mcn59zr81mY7Dw+/1wu93w+XwIBoMMo+bR0VG0tbXB6XRidnYWsViMxaLRKNfKygqmpqZ4yu/vb9zf3/N/YmxsjCf885I82t/f5/VcLhevMTc3h4ODA5ydnfE0y8vLLN7V1YVyuQw6BH1/f4cIBAJMfn5+xu3tLYNLpRJubm4QiUR4OrKDeghWrVZ5fQqP1q3Vav+BHx8fEHa7HclkktXJbFr56uqKE/Z6vVhcXOQVW1tbOXG6/zsE+Pz8ZFi9XucSVquVvaFACEK1tLTE6XV2dqK5uRkGgwFqtRpyuRyNjY2cOvXTlAR8fX3F7+8vgwWZe3h4CFqdngR5StXd3Q2FQgGZTAapVAqVSoWGhgaYTCZOm2AkeHd3h7e3N3x9feHn5wdiYWGBzaVEaRqdTgeNRgO9Xo+mpib09PRgYmICQ0ND7O/T0xMnS4GRGL2Sx8dHvLy8MFRotVoolUqYzWb09vZy0iMjI6w+MDDAYZEynYeHB7S0tEAikUAIwUXeXlxccNq09j+17nkHwSTf1AAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg",
+                  srcSet:
+                    "/static/8eb90295d536719fa7d58f5eadb27aae/43c32/suzy-1936.jpg 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/78def/suzy-1936.jpg 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/a02d5/suzy-1936.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/8eb90295d536719fa7d58f5eadb27aae/08742/suzy-1936.avif 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/1c619/suzy-1936.avif 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/c02e5/suzy-1936.avif 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/81026/suzy-1936.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0034055",
+        title: "Pot o' Gold",
+        grade: "F",
+        slug: "pot-o-gold-1941",
+        year: 1941,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQozyVTS0syURieX9DPiIRoY2RRlEqhYTcxSUWx1CSykqAoKkkqNRWRsIiwi6ndICIok4ha5aJo1Q+oxF2rlkGL5+N5v83MmTkzz/U9yvHxMfL5PA4PD5FIJLCysoJQKITp6Wk0NDSgrq4OKpUKPp8PMzMzmJqaQiAQgN1ux8bGBmKxGCKRCFZXV7G2tgaFQMViEXt7ewIWDAbhdDoxNjaGeDyOiYkJaLVa2Gw2+XF3dxebm5tYXl7G1dUVHh4esLW1he3tbcFQTk9PcXt7i5ubG2QyGWEdGRnB/Pw8Dg4OhIyk0WgUhUIBX19foKvJyUkhuLi4EIfZbBbn5+dQLi8vcX9/j+fnZwHlRy6XC+FwWCxQIX8iyOzsLK6vr8XJ6OioAAwODsoz9wXw7OwMT09PeHl5Qa1WE0sOh0MUWK1W9Pb2ilpa5Jrvuru7MT4+ju/vbywsLKCnp0cA9/f3odAmJTOXz89PVCoVeL1eDAwMwGKxwGg0CgBjYLZmsxkajQYGgwGlUgmLi4vQ6XRIp9PiTmGQyWQSer0e5XIZb29vUgxZh4eHBZR3AnLd2dkphdHB+vo6Pj4+RNDr6+v/UnihZebElzs7O+jr60N7e7uAUhVtDg0NiarW1lYZFeZ9dHSE9/d3nJyc4Pf3VxpXcrkcWAwbZI7M1OPxoKmpCS0tLWKR9jk6VEd7c3Nzoqparcq4EPTv708mQuFocMbq6+vhdrtlRKiEIGT2+/2SI1WzFAIuLS2J0o6ODqjVaink5+cHqVQKCi/coMXGxkY5BQy4ubkZd3d3ws5T0d/fD5PJJGRsvKurS1S3tbXJqaLax8dH/ANuTyEdFFIL7AAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg",
+                  srcSet:
+                    "/static/ae790f0cea379c229ff81a50f90ce566/43c32/pot-o-gold-1941.jpg 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/78def/pot-o-gold-1941.jpg 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/a02d5/pot-o-gold-1941.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ae790f0cea379c229ff81a50f90ce566/08742/pot-o-gold-1941.avif 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/1c619/pot-o-gold-1941.avif 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/c02e5/pot-o-gold-1941.avif 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/81026/pot-o-gold-1941.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0037461",
+        title: "The Whistler",
+        grade: "C-",
+        slug: "the-whistler-1944",
+        year: 1944,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQoz1VSv0uyYRR9J4cmFwkCJYygJGzIxH6QUYZUmqYlWRamViZCCZoVpdEikiiIikJziIiBYtDQIBFRhENLkIObQmt/wPm4F74PvuHyXp73ec4599wjzM3NYWRkBAMDAzCbzQgGg+jr64NUKoVarcb6+jr8fj/29vbgdruxs7ODzc1NbGxsYG1tDaurq7BYLNxTCUajETqdjn/QZer1ej00Gg3S6TSy2SxcLheOj4/h8/mwv7/PX6/XyyQOh4MJ7HY7kwiETiqtVisrWFpaYoBisYhWq4VGo8Hnp6enCIfD/1UgEGCC7e1tBiQMYWZmBmNjY5iYmMDu7i6rnJ2dxcXFBd7e3nB0dASaglQcHh4iFoshHo9z73Q6WSmB0jsGnJ6exvj4OBYXF/mAFA4PD0OlUmFlZQWjo6MwGAxsCY13dnaGaDTKBPSGLCILDg4OWKUwOTkJKpPJxMoUCgWDyWQySCSSf2TkK5lOSyPQl5cXpFIpKJVKJiM/iUQgBtokeUmPSR2NeH19jaenJxQKBVxdXSEUCrGPpC6Xy+H19RWlUgnz8/N8n9RRSoSFhQVsbW3xqKSQ/KTIkEf1eh3VahUPDw+sKJPJ4OTkBI+Pj+h0Ovj6+sLl5SWWl5cZlIoV/h1Xq9Wywf39/dzf39/j4+MD7+/vSCaTHCXK5vn5OcrlMp/XajVUKhXOKtkiUGSmpqZYIeXI4/Ew6+3tLW5ubpDP53l8uVzOftHoiUSCfaRIfX9/4/PzE8/Pz2yFMDQ0xJuk+NBWbTYbgw8ODqKnpwdisRgikQi9vb1oNpv4/f3Fz88Put0u2u02IpEI7u7uGJCs+QNiQuSQgft1lAAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg",
+                  srcSet:
+                    "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/43c32/the-whistler-1944.jpg 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/78def/the-whistler-1944.jpg 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/a02d5/the-whistler-1944.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/08742/the-whistler-1944.avif 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/1c619/the-whistler-1944.avif 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/c02e5/the-whistler-1944.avif 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/81026/the-whistler-1944.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+  ],
   page: {
     html: '<p>Been a long time, huh?</p>\n<p>I know what you’re thinking, constant reader, but I’m serious this time. Okay, maybe not serious, but at least pragmatic.</p>\n<p>The first time around, I cranked out 100-200 word reviews of everything I watched. The result proved underwhelming. Lots of cliches and telling versus showing.</p>\n<p>The second time around, I prioritized quality over quantity. My writing got better, but my output suffered, slowing to one review a week, then one review every couple of weeks, then one review a month, then none for years. Writing a definitive review proved so daunting, I’d write and rewrite until I lost all perspective.</p>\n<p>This time, I’m going for a middle ground. Looking back on the first iteration, I got better the more I wrote, but I can’t crank out several hundred words of definitive analysis for every movie I watch. So I’m giving myself an out: a one or two paragraph impression <em>of that viewing</em> is okay. I’m leaving the door open to re-visit the film later and add another review—building on the first, or rethinking my earlier ideas.</p>\n<p>But wait, there’s more.</p>\n<p>My time left on this planet is less than the time I’ve spent here, so I’ve compiled a bucket list based on my favorite stars, directors, and writers. I call it the <a href="/watchlist/">Watchlist</a>. Three thousand plus titles means I won’t get through them all, but I’m gonna try.</p>\n<p>The ground rules:</p>\n<ol>\n<li>No silents or documentaries. I consider these different art forms.</li>\n<li>I’ll watch as much in order as possible. There’s value in watching artists evolve and placing disparate works in their chronological context.</li>\n<li>I’ll do my best to watch the best-available version <em>within reason</em>. I won’t pay $100 for an out-of-print Blu-Ray with the original 1.66:1 aspect-ratio when there’s a 1.85:1 print streaming on Netflix. Okay, maybe I will, but I don’t <em>have</em> to.</li>\n</ol>\n<p>Lastly, you may ask, “Why bother?” I’m not delusional, constant reader, I know you are me. No one else reads this site. We’re doing this for our kids. When they’re our age and we’ve long departed this world, they’ll have these words—connecting us across time, our middle-aged self to theirs.</p>\n<p>So, future reader, I beg you: place these reviews in their time. Today’s innocuous joke may be tomorrow’s offensive trigger. I mean no ill-will. If you disagree with my opinions, that’s fine—maybe even expected. I only hope you’ll find the writing rewarding.</p>',
     frontmatter: {

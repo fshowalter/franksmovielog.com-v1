@@ -62,7 +62,7 @@ export const MAX_POSTER_WIDTH = "248px";
 export const PROSE_CONTENT_WIDTH = "33rem"; //"max(32.5rem, 58ch)";
 
 export const POPOUT_WIDTH = `calc((${popoutGutterWidth} * 2) + 33rem)`;
-export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `calc((${gutterWidth} * 2) + 33em)`;
+export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `calc((${gutterWidth} * 2) + 33rem)`;
 export const MAX_CONTENT_WIDTH_WITH_GUTTERS = `calc((${GUTTER} * 2) + ${MAX_STILL_WIDTH})`;
 export const QUAD_POSTER = "1088px";
 

@@ -95,15 +95,7 @@ export const pageQuery = graphql`
         }
       }
       still {
-        childImageSharp {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            formats: [JPG, AVIF]
-            quality: 80
-            width: 960
-            placeholder: BLURRED
-          )
-        }
+        ...StillSplash
       }
       ...ReviewContent
       ...ReviewHeader

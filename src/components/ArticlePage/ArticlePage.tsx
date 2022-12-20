@@ -4,17 +4,20 @@ import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
 import { RenderedMarkdown } from "../RenderedMarkdown";
 import { Spacer } from "../Spacer";
+import { StillList, StillListHeading, StillListNav } from "../StillList";
 
 export function ArticlePage({
   image,
   alt,
   title,
   articleText,
+  moreReviews,
 }: {
   image: IGraphqlImage;
   alt: string;
   articleText?: string | null;
   title?: string | null;
+  moreReviews: Queries.StillListMovieFragment[];
 }): JSX.Element {
   return (
     <Layout>
@@ -34,6 +37,29 @@ export function ArticlePage({
             text={articleText}
           />
           <Spacer axis="vertical" size={128} />
+        </Box>
+        <Box
+          maxWidth={{ default: "popout", tablet: "full" }}
+          width="full"
+          display="flex"
+          alignItems="center"
+          backgroundColor={{ default: "default", tablet: "subtle" }}
+          paddingTop={{ default: 0, tablet: 32 }}
+          paddingBottom={{ default: 0, tablet: 128 }}
+          justifyContent="center"
+        >
+          <StillListNav>
+            <StillListHeading
+              leadText="Latest"
+              linkText="Reviews"
+              linkTarget={`/reviews/`}
+            />
+            <StillList
+              movies={moreReviews}
+              seeAllLinkTarget="/reviews/"
+              seeAllLinkText="Reviews"
+            />
+          </StillListNav>
         </Box>
       </main>
     </Layout>

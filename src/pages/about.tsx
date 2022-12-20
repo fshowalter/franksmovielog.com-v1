@@ -18,14 +18,13 @@ export default function AboutPage({
 }: {
   data: Queries.AboutPageQuery;
 }): JSX.Element {
-  const { still, page } = data;
-
   return (
     <ArticlePage
-      image={still}
+      image={data.still}
       alt="A coffee cup with the word BEGIN on it."
-      articleText={page?.html}
-      title={page?.frontmatter?.title}
+      articleText={data.page?.html}
+      title={data.page?.frontmatter?.title}
+      moreReviews={data.latestViewings.map((viewing) => viewing.reviewedMovie)}
     />
   );
 }
@@ -33,14 +32,11 @@ export default function AboutPage({
 export const pageQuery = graphql`
   query AboutPage {
     still: file(absolutePath: { regex: "/stills/about.png$/" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 960
-          placeholder: TRACED_SVG
-        )
+      ...StillSplash
+    }
+    latestViewings: viewingsWithReviews(sort: { sequence: DESC }, limit: 4) {
+      reviewedMovie {
+        ...StillListMovie
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "about" } }) {

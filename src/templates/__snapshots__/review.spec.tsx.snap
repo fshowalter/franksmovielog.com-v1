@@ -725,16 +725,16 @@ exports[`/reviews/{slug} renders 1`] = `
               </a>
             </div>
             <ul
-              class="RelatedMoviesList_movieListStyle__1vaj93y1"
+              class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/the-quatermass-xperiment-1955/"
                   >
                     <div
@@ -789,7 +789,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -804,24 +804,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="B-: 4 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/4-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/x-the-unknown-1956/"
                   >
                     <div
@@ -876,7 +876,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -891,24 +891,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/3-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/quatermass-2-1957/"
                   >
                     <div
@@ -963,7 +963,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -978,24 +978,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="D+: 2 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/2-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/the-abominable-snowman-1957/"
                   >
                     <div
@@ -1050,7 +1050,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1065,18 +1065,18 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="D+: 2 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/2-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMoviesList_seeAllLinkGridStyle__1vaj93y0 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_paddingTop_16_default__8lcvdkme sprinkles_paddingBottom_16_default__8lcvdkhw sprinkles_display_block_default__8lcvdk7k sprinkles_textAlign_right__8lcvdk2x sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_boxShadow_unset_tablet__8lcvdk6r"
+                class="StillList_seeAllLinkGridStyle__v7difm0 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_paddingTop_16_default__8lcvdkme sprinkles_paddingBottom_16_default__8lcvdkhw sprinkles_display_block_default__8lcvdk7k sprinkles_textAlign_right__8lcvdk2x sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_boxShadow_unset_tablet__8lcvdk6r"
               >
                 <a
                   class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_accent__8lcvdk0"
@@ -1112,16 +1112,16 @@ exports[`/reviews/{slug} renders 1`] = `
               </a>
             </div>
             <ul
-              class="RelatedMoviesList_movieListStyle__1vaj93y1"
+              class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/a-chump-at-oxford-1939/"
                   >
                     <div
@@ -1176,7 +1176,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1191,24 +1191,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="D+: 2 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/2-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/the-man-in-the-iron-mask-1939/"
                   >
                     <div
@@ -1263,7 +1263,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1278,24 +1278,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="C: 3 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/3-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/the-abominable-snowman-1957/"
                   >
                     <div
@@ -1350,7 +1350,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1365,24 +1365,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="D+: 2 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/2-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/violent-playground-1958/"
                   >
                     <div
@@ -1437,7 +1437,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1452,18 +1452,18 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="B-: 4 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/4-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMoviesList_seeAllLinkGridStyle__1vaj93y0 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_paddingTop_16_default__8lcvdkme sprinkles_paddingBottom_16_default__8lcvdkhw sprinkles_display_block_default__8lcvdk7k sprinkles_textAlign_right__8lcvdk2x sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_boxShadow_unset_tablet__8lcvdk6r"
+                class="StillList_seeAllLinkGridStyle__v7difm0 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_paddingTop_16_default__8lcvdkme sprinkles_paddingBottom_16_default__8lcvdkhw sprinkles_display_block_default__8lcvdk7k sprinkles_textAlign_right__8lcvdk2x sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_boxShadow_unset_tablet__8lcvdk6r"
               >
                 <a
                   class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_accent__8lcvdk0"
@@ -1499,16 +1499,16 @@ exports[`/reviews/{slug} renders 1`] = `
               </a>
             </div>
             <ul
-              class="RelatedMoviesList_movieListStyle__1vaj93y1"
+              class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/cult-of-chucky-2017/"
                   >
                     <div
@@ -1563,7 +1563,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1578,24 +1578,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="C-: 3 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/3-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/curse-of-chucky-2013/"
                   >
                     <div
@@ -1650,7 +1650,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1665,24 +1665,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/3-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/curse-of-the-demon-1957/"
                   >
                     <div
@@ -1737,7 +1737,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1752,24 +1752,24 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="B: 4 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/4-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMovie_gridStyle__14he78y2 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5"
               >
                 <div
-                  class="RelatedMovie_gridAreas_still__14he78y5"
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
                 >
                   <a
-                    class="RelatedMovie_stillStyle__14he78y1"
+                    class="StillListMovie_stillStyle__1ug8mv51"
                     href="/reviews/dagon-2001/"
                   >
                     <div
@@ -1824,7 +1824,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_title__14he78y3"
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
                 >
                   <a
                     class="sprinkles_fontSize_relatedMovieTitle__8lcvdk22 sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_default__8lcvdk1 sprinkles_display_block_default__8lcvdk7k"
@@ -1839,18 +1839,18 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="RelatedMovie_gridAreas_grade__14he78y4"
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
                     alt="B: 4 stars (out of 5)"
-                    class="RelatedMovie_gradeStyle__14he78y0"
+                    class="StillListMovie_gradeStyle__1ug8mv50"
                     src="/svg/4-stars.svg"
                     style="height: 16px; width: 80px;"
                   />
                 </div>
               </li>
               <li
-                class="RelatedMoviesList_seeAllLinkGridStyle__1vaj93y0 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_paddingTop_16_default__8lcvdkme sprinkles_paddingBottom_16_default__8lcvdkhw sprinkles_display_block_default__8lcvdk7k sprinkles_textAlign_right__8lcvdk2x sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_boxShadow_unset_tablet__8lcvdk6r"
+                class="StillList_seeAllLinkGridStyle__v7difm0 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_paddingTop_16_default__8lcvdkme sprinkles_paddingBottom_16_default__8lcvdkhw sprinkles_display_block_default__8lcvdk7k sprinkles_textAlign_right__8lcvdk2x sprinkles_boxShadow_borderBottom_default__8lcvdk6t sprinkles_boxShadow_unset_tablet__8lcvdk6r"
               >
                 <a
                   class="sprinkles_textDecoration_none__8lcvdk2q sprinkles_color_accent__8lcvdk0"

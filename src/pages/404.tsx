@@ -18,14 +18,13 @@ export default function NotFoundPage({
 }: {
   data: Queries.NotFoundPageQuery;
 }): JSX.Element {
-  const { still, page } = data;
-
   return (
     <ArticlePage
-      image={still}
+      image={data.still}
       alt="A lost highway."
-      articleText={page?.html}
-      title={page?.frontmatter?.title}
+      articleText={data.page?.html}
+      title={data.page?.frontmatter?.title}
+      moreReviews={data.latestViewings.map((viewing) => viewing.reviewedMovie)}
     />
   );
 }
@@ -33,14 +32,11 @@ export default function NotFoundPage({
 export const pageQuery = graphql`
   query NotFoundPage {
     still: file(absolutePath: { regex: "/stills/not-found.png$/" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 960
-          placeholder: BLURRED
-        )
+      ...StillSplash
+    }
+    latestViewings: viewingsWithReviews(sort: { sequence: DESC }, limit: 4) {
+      reviewedMovie {
+        ...StillListMovie
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "not-found" } }) {

@@ -1,9 +1,9 @@
 import { Box } from "../Box";
 import { Link } from "../Link";
-import { RelatedMovie } from "./RelatedMovie";
-import { movieListStyle, seeAllLinkGridStyle } from "./RelatedMoviesList.css";
+import { movieListStyle, seeAllLinkGridStyle } from "./StillList.css";
+import { StillListMovie } from "./StillListMovie";
 
-export function RelatedMoviesList({
+export function StillList({
   movies,
   seeAllLinkText,
   seeAllLinkTarget,
@@ -19,7 +19,7 @@ export function RelatedMoviesList({
   return (
     <Box as="ul" className={movieListStyle}>
       {movies.map((movie) => {
-        return <RelatedMovie as="li" key={movie.imdbId} movie={movie} />;
+        return <StillListMovie as="li" key={movie.imdbId} movie={movie} />;
       })}
       <Box
         as="li"

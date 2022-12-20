@@ -18,14 +18,13 @@ export default function GonePage({
 }: {
   data: Queries.GonePageQuery;
 }): JSX.Element {
-  const { still, page } = data;
-
   return (
     <ArticlePage
-      image={still}
+      image={data.still}
       alt="Jake Gittes walks away."
-      articleText={page?.html}
-      title={page?.frontmatter?.title}
+      articleText={data.page?.html}
+      title={data.page?.frontmatter?.title}
+      moreReviews={data.latestViewings.map((viewing) => viewing.reviewedMovie)}
     />
   );
 }
@@ -33,14 +32,11 @@ export default function GonePage({
 export const pageQuery = graphql`
   query GonePage {
     still: file(absolutePath: { regex: "/stills/gone.png$/" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 960
-          placeholder: BLURRED
-        )
+      ...StillSplash
+    }
+    latestViewings: viewingsWithReviews(sort: { sequence: DESC }, limit: 4) {
+      reviewedMovie {
+        ...StillListMovie
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "gone" } }) {

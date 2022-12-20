@@ -18,14 +18,13 @@ export default function HowIGradePage({
 }: {
   data: Queries.HowIGradePageQuery;
 }): JSX.Element {
-  const { still, page } = data;
-
   return (
     <ArticlePage
-      image={still}
+      image={data.still}
       alt="Empty cinema seats."
-      articleText={page?.html}
-      title={page?.frontmatter?.title}
+      articleText={data.page?.html}
+      title={data.page?.frontmatter?.title}
+      moreReviews={data.latestViewings.map((viewing) => viewing.reviewedMovie)}
     />
   );
 }
@@ -33,14 +32,11 @@ export default function HowIGradePage({
 export const pageQuery = graphql`
   query HowIGradePage {
     still: file(absolutePath: { regex: "/stills/how-i-grade.png$/" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 1000
-          placeholder: BLURRED
-        )
+      ...StillSplash
+    }
+    latestViewings: viewingsWithReviews(sort: { sequence: DESC }, limit: 4) {
+      reviewedMovie {
+        ...StillListMovie
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "how-i-grade" } }) {

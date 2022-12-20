@@ -1,27 +1,25 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
+import { StillList, StillListHeading, StillListNav } from "../StillList";
 import { RelatedMoviesForWatchlistEntities } from "./RelatedMoviesForWatchlistEntities";
-import { RelatedMoviesList } from "./RelatedMoviesList";
-import { RelatedMoviesListHeading } from "./RelatedMoviesListHeading";
-import { RelatedMoviesNav } from "./RelatedMoviesNav";
 function MoreReviews({
   reviews,
 }: {
   reviews: Queries.RelatedMoviesFragment["browseMore"];
 }) {
   return (
-    <RelatedMoviesNav>
-      <RelatedMoviesListHeading
+    <StillListNav>
+      <StillListHeading
         leadText="More"
         linkText="Reviews"
         linkTarget={`/reviews/`}
       />
-      <RelatedMoviesList
+      <StillList
         movies={reviews}
         seeAllLinkTarget="/reviews/"
         seeAllLinkText="Reviews"
       />
-    </RelatedMoviesNav>
+    </StillListNav>
   );
 }
 
@@ -61,7 +59,7 @@ export function RelatedMovies({ relatedMovies, ...rest }: IRelatedMoviesProps) {
 export const query = graphql`
   fragment RelatedMovies on ReviewedMoviesJson {
     browseMore {
-      ...RelatedMovie
+      ...StillListMovie
     }
     watchlist {
       performers {

@@ -1,7 +1,7 @@
 import type { IBoxProps } from "../Box";
 import { Box } from "../Box";
 
-export function RelatedMoviesNav({ children }: IBoxProps) {
+export function StillListNav({ children }: IBoxProps) {
   return (
     <Box
       as="nav"

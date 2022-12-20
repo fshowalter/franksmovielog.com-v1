@@ -1,7 +1,7 @@
 import { Box } from "../Box";
 import { Link } from "../Link";
 
-export function RelatedMoviesListHeading({
+export function StillListHeading({
   leadText,
   linkText,
   linkTarget,

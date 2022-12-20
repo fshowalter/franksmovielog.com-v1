@@ -9,17 +9,17 @@ import {
   gridAreas,
   gridStyle,
   stillStyle,
-} from "./RelatedMovie.css";
+} from "./StillListMovie.css";
 
 const GridArea = gridAreaComponent(gridAreas);
 
 const Grid = gridComponent(gridStyle);
 
-interface IRelatedMovieProps extends IBoxProps {
-  movie: Queries.RelatedMovieFragment;
+interface IStillListMovieProps extends IBoxProps {
+  movie: Queries.StillListMovieFragment;
 }
 
-export function RelatedMovie({ movie, ...rest }: IRelatedMovieProps) {
+export function StillListMovie({ movie, ...rest }: IStillListMovieProps) {
   return (
     <Grid key={movie.imdbId} paddingX={{ default: "popoutGutter" }} {...rest}>
       <GridArea name="still">
@@ -60,7 +60,7 @@ export function RelatedMovie({ movie, ...rest }: IRelatedMovieProps) {
 }
 
 export const query = graphql`
-  fragment RelatedMovie on ReviewedMoviesJson {
+  fragment StillListMovie on ReviewedMoviesJson {
     imdbId
     title
     grade

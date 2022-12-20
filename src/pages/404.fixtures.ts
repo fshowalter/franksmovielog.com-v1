@@ -1,33 +1,187 @@
-export default {
+export const data = {
   still: {
     childImageSharp: {
       gatsbyImageData: {
         layout: "constrained" as const,
         placeholder: {
           fallback:
-            "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1000'%20height='563'%20viewBox='0%200%201000%20563'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20282v281h1001V0H0v282m483%20100c-10%202-12%206-19%2040-3%2015-3%2020-3%2026v51h3l4-3c4%200%207-2%208-4%200-2%201-2%204%202%204%204%205%205%2011%205%204%201%206%201%208%204l3%202c1%200%205%205%205%207%200%203%208%209%209%206%201-1%201%200%201%202%200%204%201%204%207%201l5-2v-11a202%20202%200%2000-4-33%20481%20481%200%2000-8-51l-1-7-3-10c-2-7-3-10-8-19-4-7-7-8-22-6m162%205l-4%203-10%201c-7-1-9%200-10%201s-7%202-9%201l-5%201-7%201-6%202c-2%202-4%203-6%202-3%200-3%200-3%205%200%204%200%204-2%204l-2%201c0%202-3%202-5%201h-4l2%202v5c-1%201-4%200-7-3h-1v2l1%207c1%209%205%2016%2010%2016%202%201%204%205%204%208%200%202%200%203%202%203l4%201%204%202%204%202c0%203%201%203%204%204l5%202%204%203%204%203c4%205%207%206%208%203%200-2%201-2%203%200%202%201%202%201%200%203v2h3c0-3%204-2%205%200%202%203%208%204%208%201%200-2%203-2%206%201h4c2-1%203-1%2011%203a195%20195%200%200011%206c1%202%207%205%2011%206%202%200%204%202%205%203s2%202%203%201l2%201h2c1-2%202-2%203-1l6%201c5%200%205%201%205%203%201%205%207%205%208%200l1-1c5%200%2010%202%2012%203h4c2-1%204-1%204%202s2%203%209%204c6%200%208%200%209%202s3%202%207%202c9%200%2022%201%2027%203l10%202%209%201h21l5%201c0%202%202%203%202%201%201-2%204-2%208%200%203%202%2014%203%2016%202l1-4c-1-1-1-2%202-1%202%200%203%202%201%202v1l5-1h3c2%202%205%203%205%201l2-1c2%201%203%200%204-1%202-2%204-1%205%201s1%202%203%201l7-1h5c0-2%2010-4%2013-3l2-1%205-1%208-1h2l1-2c-1-2-1-3%203-3l4%201h1v-1l2-2c2-1%202-1%200-3l-4-3c-1-1-1-1%201-1l4%201h4c2-1%202-1%204%201%201%202%202%202%203%201%202%200%202-1%201-1-2-2-1-3%203-3h5l-3-1-4-1-2-5c-3-3-3-4-1-5%201-2%201-2-2-3l-4-2-7-5c-5-3-6-5-6-6v-3l-3-4-3-2-5-2-4-2-4-2-3-3c-3%200-4%200-4-2s-1-3-5-4l-13-6c-4-2-8-4-11-4l-3-2-2-2-6-2-7-3-4-1-4-2a189%20189%200%2001-32-12l-7-2-9-2-6-2h-2l-12-3-3-1-17-4a244%20244%200%2001-22-4l-17-4-9-1-11-1-12-1-12-1h-3l-11%201-11%201-4-1c-3-2-4-2-10%200m-337%201h-2l-12%201c-3%202-15%203-17%202-1-1-2%200-2%201-1%202-7%203-14%202l-6%202-10%203-8%202-6%201-6%201-5%202-3%201c0%201-2%202-10%204-7%201-13%203-15%205l-5%202-7%202-6%202-3%202-2%202-5%202h-5l-2%202-2%202-14%206-4%202-5%202-3%201h-2l-4%202c-2%200-3%201-3%202s-2%202-5%202c-3%201-5%202-6%204s-3%203-4%202l-3%203c-1%203-1%203-3%202h-2l-3%203-3%203c0%201-8%206-10%206s-7%205-7%207l-3%202c-3%200-9%203-9%204h1l2%202c1%203%201%203%203%202l3-1c1%201%200%204-1%204-3-1-4%203-3%206v4h-3l-1%201c-2%202%208%201%2010-1l14-1h6l2-1-2%203c-3%202-2%203%202%202h5c0%201%201%201%202-1%202-1%204-1%204%202%200%202%203%203%207%200l11-2%2011-2%205-1c2%201%202%200%202-1%200-2%200-2%204-2h3c0-2%202-1%203%202s3%204%205%202l3-1%203-1c0-2%201-2%204-1l4-1h11l6-2c4%200%205-2%207-5l4-1%206-1h8l4-1%207%201c2%201%207-2%2011-5%202-2%204-3%207-3s4%200%205-2l3-2h3c1-2%201-2%203-1h4l4-1c2-1%202-1%201-2h-3v-2l2-2%201%201c2%202%207%204%207%202l2-1%203-1%203-2%204-2%205-2c1%200%202%200%208-6l5-3%203-2%203-2%204-2c1-2%203-3%205-3l2-2%201-2%201%202v2c2%201%205%200%206-3%200-2%201-2%204-2s3%200%203-3%200-3%204-3l5-1%203-2%201-2%202-1%204-1%205-10%201-1c2%200%2012-13%2011-14l-4%201c-3%202-4%202-4%201-1-2-1-3%202-5%203-4%202-5-5-5-5%201-6%201-6-1h-2l-4%201-3%201h-7l2-2c2-2%200-4-5-4l-7-1h-3c-1%202-2%202-7%201l-7-2-2%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVQoz+2QyS8DcRiG56c1HdOZlm7G0umGWiISaUOIisZyEdXGEkGUWA6IhFRoYjnYInFxkThxcpA4uBB/hqOrP+QRW+KgN0eH9/I9yfO++SRJkvjj/As/In7kFyYKsT9YKMR3QQGhsGmoXpPSQBNOswHZ7ccw/WgeA8VVhW7UYPeFkB1eJGEtsFC246huoK5nku75QwZzFySXjon2TqCGYpzux1laGaKuf5nUxiVzZ48snj8xvntNPLOMO9SMsMqfQj3QTG3PBMmFEzL5K4Y2L+mc2sIf60P2mgjNy1HOxfpKIxWtaZLTeWYObtm+eebo4ZXduxeyp/fE0qu4wy1IgY4UjQOzNA1kCXcM46lv+xTZS5EUB4ruYLjXRl9Cw+I00CoilNe3E+0aoy2zRmJ6h0R2j/jIOpHEKJJaGUE1wtg8fqxOH0WqE2GzU6RoH69QdZ1oWCYSVLB83d65KNGxaC6KywwUn4lSHqTECPEGAw4THSimzpAAAAAASUVORK5CYII=",
         },
         images: {
           fallback: {
-            src: "/static/1b59d2a682b5e99753024caedc9d1323/f4320/not-found.jpg",
+            src: "/static/1b59d2a682b5e99753024caedc9d1323/acfae/not-found.jpg",
             srcSet:
-              "/static/1b59d2a682b5e99753024caedc9d1323/2af26/not-found.jpg 250w,\n/static/1b59d2a682b5e99753024caedc9d1323/a5dc9/not-found.jpg 500w,\n/static/1b59d2a682b5e99753024caedc9d1323/f4320/not-found.jpg 1000w,\n/static/1b59d2a682b5e99753024caedc9d1323/f2565/not-found.jpg 2000w",
-            sizes: "(min-width: 1000px) 1000px, 100vw",
+              "/static/1b59d2a682b5e99753024caedc9d1323/7f89c/not-found.jpg 240w,\n/static/1b59d2a682b5e99753024caedc9d1323/82753/not-found.jpg 480w,\n/static/1b59d2a682b5e99753024caedc9d1323/acfae/not-found.jpg 960w,\n/static/1b59d2a682b5e99753024caedc9d1323/a464d/not-found.jpg 1920w",
+            sizes: "(min-width: 960px) 960px, 100vw",
           },
           sources: [
             {
               srcSet:
-                "/static/1b59d2a682b5e99753024caedc9d1323/fdfcf/not-found.avif 250w,\n/static/1b59d2a682b5e99753024caedc9d1323/b400f/not-found.avif 500w,\n/static/1b59d2a682b5e99753024caedc9d1323/70674/not-found.avif 1000w,\n/static/1b59d2a682b5e99753024caedc9d1323/31a81/not-found.avif 2000w",
+                "/static/1b59d2a682b5e99753024caedc9d1323/23bcc/not-found.avif 240w,\n/static/1b59d2a682b5e99753024caedc9d1323/2df83/not-found.avif 480w,\n/static/1b59d2a682b5e99753024caedc9d1323/3beec/not-found.avif 960w,\n/static/1b59d2a682b5e99753024caedc9d1323/d25bd/not-found.avif 1920w",
               type: "image/avif",
-              sizes: "(min-width: 1000px) 1000px, 100vw",
+              sizes: "(min-width: 960px) 960px, 100vw",
             },
           ],
         },
-        width: 1000,
-        height: 563,
+        width: 960,
+        height: 540,
       },
     },
   },
+  latestViewings: [
+    {
+      reviewedMovie: {
+        imdbId: "tt0045564",
+        title: "The Blue Gardenia",
+        grade: "D-",
+        slug: "the-blue-gardenia-1953",
+        year: 1953,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQozz2SzUqyURSF39Qo0SzNFKU00yy1RDANyiAK7U+zKBAqiFAKox91ouCkgQM1bOLEHGgURCniwFlQs+gSvIQuY33s3VeDzcvL2fs5a62zBYvFgpGREajVav76/X7s7Ozg/Pwc5XIZZ2dn0Ov1sNlsWFhYQDAYxNraGrxeL5aXl+F0OhEKhXiWSlhdXeXDlZUVbt7Y2MDR0RGur6/Rbrfx+vqK09NTHB8fIxKJYHt7G9PT09BoNFAoFDCZTHxGXwbSbYuLi9jf3wfBZ2dnEY1GcXd3h5eXF3x8fCCTySCdTjN4fHwcUqkUfX19EAQBo6Oj3D85OQmdTgeBLJK6WCzGVmmI1FWrVbRaLdTrdeRyOVQqFWSzWQwNDWFwcBAymQw9PT0YGxtDPB6H1WpluBAIBLC1tYVisch5ka18Po9ms4lut4uHhwfc3Nzg+fmZ7ZvNZsjl8j8gQS4uLmC322EwGCBsbm5id3cX9/f3SCaTnEU4HGZln5+fSKVSeHp6QqlUwuHhIS4vLzlrtvff8tXVFVwuF+iBBbK5vr7O+bndbszMzPChx+Nh+zT8/v7OPfR4b29vKBQKWFpa+gMmEgnMz89jamrqx7JWq4VKpeL1mJiY4OCNRiMPOBwO1Go1dDodzvXr6wuPj48MlEgkPEMK5+bmfoAEoBdTKpWcDa0DBU3/9AD03dvbw/f3NxqNBud6cHDAlxGQ9vfk5ISdEUugcHt7e9Hf389FDaSQbh4YGOAh6vH5fKzu9vaWYSKRCGKxGMPDw7ybpI5dEYSGSCUVDZNCCvhXNRVByCYt8y+QiqKi1aM9JOA/qZqH3l4xhqQAAAAASUVORK5CYII=",
+              },
+              images: {
+                fallback: {
+                  src: "/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg",
+                  srcSet:
+                    "/static/416c95d938442a4ba50939190044112e/43c32/the-blue-gardenia-1953.jpg 78w,\n/static/416c95d938442a4ba50939190044112e/78def/the-blue-gardenia-1953.jpg 156w,\n/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg 312w,\n/static/416c95d938442a4ba50939190044112e/a02d5/the-blue-gardenia-1953.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/416c95d938442a4ba50939190044112e/08742/the-blue-gardenia-1953.avif 78w,\n/static/416c95d938442a4ba50939190044112e/1c619/the-blue-gardenia-1953.avif 156w,\n/static/416c95d938442a4ba50939190044112e/c02e5/the-blue-gardenia-1953.avif 312w,\n/static/416c95d938442a4ba50939190044112e/81026/the-blue-gardenia-1953.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0028330",
+        title: "Suzy",
+        grade: "D-",
+        slug: "suzy-1936",
+        year: 1936,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVQozz2SzUuyURDF7x/gxrUSuGmlSxEMEcSVImHQLonI1mmFUlZIRQjZB1aWmghFZJSgCRFkWtl32qYgqUULcRGFUVkUFudlBnovzOa58/zOzDlXJBIJhEIhhMNhpNNpZDIZnJ6eolKp4OTkBO3t7TAajfB4PFhbW8Pq6iq2trZQLBYxOTkJi8WC/v5+9PX1cY/Y3t7G+Pg4ZmZmQPB8Po/Ly0vkcjlsbGxgb2+P76anp7G5ucnCOzs7uL6+RqFQQDweh8PhQEdHBwYHByFSqRSGh4cxPz+P9fV1HB0dMfT4+JiBu7u7DKWiXvpGE1Jls1mcn59zr81mY7Dw+/1wu93w+XwIBoMMo+bR0VG0tbXB6XRidnYWsViMxaLRKNfKygqmpqZ4yu/vb9zf3/N/YmxsjCf885I82t/f5/VcLhevMTc3h4ODA5ydnfE0y8vLLN7V1YVyuQw6BH1/f4cIBAJMfn5+xu3tLYNLpRJubm4QiUR4OrKDeghWrVZ5fQqP1q3Vav+BHx8fEHa7HclkktXJbFr56uqKE/Z6vVhcXOQVW1tbOXG6/zsE+Pz8ZFi9XucSVquVvaFACEK1tLTE6XV2dqK5uRkGgwFqtRpyuRyNjY2cOvXTlAR8fX3F7+8vgwWZe3h4CFqdngR5StXd3Q2FQgGZTAapVAqVSoWGhgaYTCZOm2AkeHd3h7e3N3x9feHn5wdiYWGBzaVEaRqdTgeNRgO9Xo+mpib09PRgYmICQ0ND7O/T0xMnS4GRGL2Sx8dHvLy8MFRotVoolUqYzWb09vZy0iMjI6w+MDDAYZEynYeHB7S0tEAikUAIwUXeXlxccNq09j+17nkHwSTf1AAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg",
+                  srcSet:
+                    "/static/8eb90295d536719fa7d58f5eadb27aae/43c32/suzy-1936.jpg 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/78def/suzy-1936.jpg 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/a02d5/suzy-1936.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/8eb90295d536719fa7d58f5eadb27aae/08742/suzy-1936.avif 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/1c619/suzy-1936.avif 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/c02e5/suzy-1936.avif 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/81026/suzy-1936.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0034055",
+        title: "Pot o' Gold",
+        grade: "F",
+        slug: "pot-o-gold-1941",
+        year: 1941,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQozyVTS0syURieX9DPiIRoY2RRlEqhYTcxSUWx1CSykqAoKkkqNRWRsIiwi6ndICIok4ha5aJo1Q+oxF2rlkGL5+N5v83MmTkzz/U9yvHxMfL5PA4PD5FIJLCysoJQKITp6Wk0NDSgrq4OKpUKPp8PMzMzmJqaQiAQgN1ux8bGBmKxGCKRCFZXV7G2tgaFQMViEXt7ewIWDAbhdDoxNjaGeDyOiYkJaLVa2Gw2+XF3dxebm5tYXl7G1dUVHh4esLW1he3tbcFQTk9PcXt7i5ubG2QyGWEdGRnB/Pw8Dg4OhIyk0WgUhUIBX19foKvJyUkhuLi4EIfZbBbn5+dQLi8vcX9/j+fnZwHlRy6XC+FwWCxQIX8iyOzsLK6vr8XJ6OioAAwODsoz9wXw7OwMT09PeHl5Qa1WE0sOh0MUWK1W9Pb2ilpa5Jrvuru7MT4+ju/vbywsLKCnp0cA9/f3odAmJTOXz89PVCoVeL1eDAwMwGKxwGg0CgBjYLZmsxkajQYGgwGlUgmLi4vQ6XRIp9PiTmGQyWQSer0e5XIZb29vUgxZh4eHBZR3AnLd2dkphdHB+vo6Pj4+RNDr6+v/UnihZebElzs7O+jr60N7e7uAUhVtDg0NiarW1lYZFeZ9dHSE9/d3nJyc4Pf3VxpXcrkcWAwbZI7M1OPxoKmpCS0tLWKR9jk6VEd7c3Nzoqparcq4EPTv708mQuFocMbq6+vhdrtlRKiEIGT2+/2SI1WzFAIuLS2J0o6ODqjVaink5+cHqVQKCi/coMXGxkY5BQy4ubkZd3d3ws5T0d/fD5PJJGRsvKurS1S3tbXJqaLax8dH/ANuTyEdFFIL7AAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg",
+                  srcSet:
+                    "/static/ae790f0cea379c229ff81a50f90ce566/43c32/pot-o-gold-1941.jpg 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/78def/pot-o-gold-1941.jpg 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/a02d5/pot-o-gold-1941.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ae790f0cea379c229ff81a50f90ce566/08742/pot-o-gold-1941.avif 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/1c619/pot-o-gold-1941.avif 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/c02e5/pot-o-gold-1941.avif 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/81026/pot-o-gold-1941.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0037461",
+        title: "The Whistler",
+        grade: "C-",
+        slug: "the-whistler-1944",
+        year: 1944,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQoz1VSv0uyYRR9J4cmFwkCJYygJGzIxH6QUYZUmqYlWRamViZCCZoVpdEikiiIikJziIiBYtDQIBFRhENLkIObQmt/wPm4F74PvuHyXp73ec4599wjzM3NYWRkBAMDAzCbzQgGg+jr64NUKoVarcb6+jr8fj/29vbgdruxs7ODzc1NbGxsYG1tDaurq7BYLNxTCUajETqdjn/QZer1ej00Gg3S6TSy2SxcLheOj4/h8/mwv7/PX6/XyyQOh4MJ7HY7kwiETiqtVisrWFpaYoBisYhWq4VGo8Hnp6enCIfD/1UgEGCC7e1tBiQMYWZmBmNjY5iYmMDu7i6rnJ2dxcXFBd7e3nB0dASaglQcHh4iFoshHo9z73Q6WSmB0jsGnJ6exvj4OBYXF/mAFA4PD0OlUmFlZQWjo6MwGAxsCY13dnaGaDTKBPSGLCILDg4OWKUwOTkJKpPJxMoUCgWDyWQySCSSf2TkK5lOSyPQl5cXpFIpKJVKJiM/iUQgBtokeUmPSR2NeH19jaenJxQKBVxdXSEUCrGPpC6Xy+H19RWlUgnz8/N8n9RRSoSFhQVsbW3xqKSQ/KTIkEf1eh3VahUPDw+sKJPJ4OTkBI+Pj+h0Ovj6+sLl5SWWl5cZlIoV/h1Xq9Wywf39/dzf39/j4+MD7+/vSCaTHCXK5vn5OcrlMp/XajVUKhXOKtkiUGSmpqZYIeXI4/Ew6+3tLW5ubpDP53l8uVzOftHoiUSCfaRIfX9/4/PzE8/Pz2yFMDQ0xJuk+NBWbTYbgw8ODqKnpwdisRgikQi9vb1oNpv4/f3Fz88Put0u2u02IpEI7u7uGJCs+QNiQuSQgft1lAAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg",
+                  srcSet:
+                    "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/43c32/the-whistler-1944.jpg 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/78def/the-whistler-1944.jpg 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/a02d5/the-whistler-1944.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/08742/the-whistler-1944.avif 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/1c619/the-whistler-1944.avif 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/c02e5/the-whistler-1944.avif 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/81026/the-whistler-1944.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+  ],
   page: {
     html: '<p>This is probably my fault. Are you looking for one of my old reviews? I’m in the process of touching them up\nand reposting them. In the mean time, you can find them in the site’s <a href="https://github.com/fshowalter/franksmovielog.com/">GitHub repo</a>.</p>\n<p>If you still can’t find what you need, <a href="https://github.com/fshowalter/franksmovielog.com/issues/new/choose">open an issue on GitHub</a> and I’ll try to help.</p>\n<p>My apologies, and thanks for stopping by.</p>',
     frontmatter: {
