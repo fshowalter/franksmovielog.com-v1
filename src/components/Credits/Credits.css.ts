@@ -6,6 +6,7 @@ import { MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
 export const posterStyle = style({
   maxWidth: MAX_POSTER_WIDTH,
   borderRadius: size[8],
+  marginBottom: "16px",
 });
 
 export const posterFloatStyle = style({
@@ -29,6 +30,16 @@ export const backToTopArrowStyle = style({
   fill: foregroundColors.accent,
   height: "24px",
   width: "24px",
+});
+
+export const backToTopWidthStyle = style({
+  width: "calc(50% - 24px)",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      width: "calc(100% - 280px)",
+    },
+  },
 });
 
 export const backToTopHoverStyle = style({

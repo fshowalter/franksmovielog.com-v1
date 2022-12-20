@@ -495,7 +495,7 @@ exports[`/reviews/{slug} renders 1`] = `
           class="sprinkles_width_px_default__8lcvdkrk sprinkles_height_128_default__8lcvdk9n sprinkles_minWidth_px_default__8lcvdkhh sprinkles_minHeight_128_default__8lcvdkee sprinkles_display_block_default__8lcvdk7k"
         />
         <aside
-          class="utils_stickyHeaderScrollMarginTopStyle__506800 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_paddingTop_32_default__8lcvdkmk sprinkles_paddingBottom_32_default__8lcvdki2 sprinkles_position_relative_default__8lcvdkmw sprinkles_maxWidth_popout_default__8lcvdkct sprinkles_width_full_default__8lcvdkrn sprinkles_backgroundColor_subtle_default__8lcvdk4h"
+          class="utils_stickyHeaderScrollMarginTopStyle__506800 sprinkles_paddingLeft_popoutGutter_default__8lcvdkk8 sprinkles_paddingRight_popoutGutter_default__8lcvdkm5 sprinkles_position_relative_default__8lcvdkmw sprinkles_maxWidth_popout_default__8lcvdkct sprinkles_width_full_default__8lcvdkrn sprinkles_paddingTop_48_default__8lcvdkmq sprinkles_paddingBottom_32_default__8lcvdki2 sprinkles_backgroundColor_subtle_default__8lcvdk4h"
           id="credits"
         >
           <div
@@ -686,7 +686,7 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_width_px_default__8lcvdkrk sprinkles_height_32_default__8lcvdk92 sprinkles_minWidth_px_default__8lcvdkhh sprinkles_minHeight_32_default__8lcvdkdt sprinkles_display_block_default__8lcvdk7k"
           />
           <a
-            class="Credits_backToTopHoverStyle__1l00qpw4 sprinkles_color_accent__8lcvdk0 sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_textDecoration_none__8lcvdk2q sprinkles_display_flex_default__8lcvdk7q sprinkles_maxWidth_half_default__8lcvdkdb sprinkles_lineHeight_40__8lcvdk2f sprinkles_alignItems_center_default__8lcvdk3t sprinkles_justifyContent_center_default__8lcvdkaw sprinkles_marginLeft_auto__8lcvdk14"
+            class="Credits_backToTopHoverStyle__1l00qpw5 Credits_backToTopWidthStyle__1l00qpw4 sprinkles_paddingLeft_8_default__8lcvdkik sprinkles_paddingRight_8_default__8lcvdkkh sprinkles_paddingTop_8_default__8lcvdkmb sprinkles_paddingBottom_8_default__8lcvdkht sprinkles_color_accent__8lcvdk0 sprinkles_borderRadius_8_default__8lcvdk55 sprinkles_boxShadow_borderAll_default__8lcvdk6w sprinkles_textDecoration_none__8lcvdk2q sprinkles_display_flex_default__8lcvdk7q sprinkles_maxWidth_half_default__8lcvdkdb sprinkles_alignItems_center_default__8lcvdk3t sprinkles_justifyContent_center_default__8lcvdkaw sprinkles_marginLeft_auto__8lcvdk14"
             href="#top"
           >
             Back to Top
