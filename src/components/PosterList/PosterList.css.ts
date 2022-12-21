@@ -30,3 +30,13 @@ export const showTitleOnMobileOnlyStyle = style({
     },
   },
 });
+
+export const posterBorderRadiusStyle = style({
+  borderRadius: 0,
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      borderRadius: size[8],
+    },
+  },
+});

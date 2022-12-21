@@ -19,6 +19,7 @@ export function SelectInput({
     <Box
       as="select"
       value={value}
+      borderRadius={4}
       className={inputSyle}
       onChange={onChange}
       {...rest}

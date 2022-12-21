@@ -1,5 +1,6 @@
 import { Box, IBoxProps } from "../Box";
 import { Link } from "../Link";
+import { navColumnGapStyle } from "./Nav.css";
 
 function NavItem({
   to,
@@ -32,7 +33,7 @@ export function Nav({ activeClassName, justifyContent, ...rest }: INavProps) {
         flexWrap="wrap"
         justifyContent={justifyContent}
         rowGap={8}
-        columnGap={{ default: 16, tablet: 24 }}
+        className={navColumnGapStyle}
       >
         <NavItem activeClassName={activeClassName} to="/">
           Home

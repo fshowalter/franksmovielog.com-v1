@@ -5,7 +5,6 @@ import { MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
 
 export const posterStyle = style({
   maxWidth: MAX_POSTER_WIDTH,
-  borderRadius: size[8],
   marginBottom: "16px",
 });
 

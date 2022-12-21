@@ -70,11 +70,15 @@ export function DebouncedInput({
       >
         {label}
       </Box>
-      <input
+      <Box
+        as="input"
+        borderRadius={4}
         className={inputStyle}
         type="text"
         placeholder={placeholder}
-        onChange={(e) => debouncedHandleChange(e.target.value)}
+        onChange={(e) =>
+          debouncedHandleChange((e.target as HTMLInputElement).value)
+        }
       />
     </Box>
   );

@@ -138,6 +138,7 @@ const unresponsiveAtomicProperties = defineProperties({
         },
       },
     },
+    borderRadius: { half: "50%", 4: "4px", 8: "8px", 24: "24px" },
     color: foregroundColors,
     flex: [1],
     flexBasis: { 352: "352px" },
@@ -200,7 +201,6 @@ const responsiveAtomicProperties = defineProperties({
         },
       },
     },
-    borderRadius: size,
     boxShadow: {
       unset: "unset",
       borderBottom: {
@@ -210,7 +210,7 @@ const responsiveAtomicProperties = defineProperties({
         boxShadow: `0 0 0 1px ${borderColors.default}`,
       },
     },
-    columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
+    columnGap: [".5ch", 8, 16, 24, 32, 64],
     display: [
       "block",
       "none",
@@ -221,7 +221,6 @@ const responsiveAtomicProperties = defineProperties({
       "contents",
     ],
     flexDirection: ["row", "column"],
-    flexShrink: [0, "auto"],
     flexWrap: ["wrap", "nowrap"],
     height: {
       160: "160px",

@@ -52,6 +52,8 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
         <GraphqlImage
           image={movie.poster}
           alt={`A poster from ${movie.title} (${movie.year})`}
+          borderRadius={8}
+          transform="safariBorderRadiusFix"
           className={posterStyle}
         />
       </Box>

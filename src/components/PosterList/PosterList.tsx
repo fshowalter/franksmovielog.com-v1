@@ -7,6 +7,7 @@ import { Spacer } from "../Spacer";
 import {
   gradeStyle,
   gridStyle,
+  posterBorderRadiusStyle,
   showTitleOnMobileOnlyStyle,
 } from "./PosterList.css";
 
@@ -57,7 +58,7 @@ function Image({ slug, image, title, year, ...rest }: IImageProps) {
   if (slug) {
     return (
       <Link
-        borderRadius={{ default: 0, tablet: 8 }}
+        className={posterBorderRadiusStyle}
         overflow="hidden"
         maxWidth={{ default: 48, tablet: "poster" }}
         to={`/reviews/${slug}/`}
@@ -74,7 +75,7 @@ function Image({ slug, image, title, year, ...rest }: IImageProps) {
       image={image}
       alt="An unreviewed title."
       maxWidth={{ default: 48, tablet: "poster" }}
-      borderRadius={{ default: 0, tablet: 8 }}
+      className={posterBorderRadiusStyle}
       overflow="hidden"
     />
   );

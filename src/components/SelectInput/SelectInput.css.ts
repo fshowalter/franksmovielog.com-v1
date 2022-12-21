@@ -14,7 +14,6 @@ export const inputSyle = style({
   backgroundRepeat: "no-repeat",
   border: 0,
   boxShadow: `0 0 0 1px ${borderColors.default}`,
-  borderRadius: "4px",
   color: foregroundColors.subtle,
   fontSize: "1rem",
   lineHeight: "24px",

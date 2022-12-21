@@ -27,11 +27,17 @@ function ListItemsForEntities({
                 alignItems="center"
                 whiteSpace="nowrap"
                 className={linkStyle}
+                boxShadow="borderAll"
+                borderRadius={8}
+                paddingY={8}
+                paddingX={16}
               >
                 <GraphqlImage
                   image={entity.avatar}
                   alt={`More ${entity.name} reviews`}
+                  borderRadius="half"
                   className={avatarStyle}
+                  transform="safariBorderRadiusFix"
                 />
                 {entity.name}
               </Link>

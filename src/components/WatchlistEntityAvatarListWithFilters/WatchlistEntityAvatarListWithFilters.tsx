@@ -27,10 +27,10 @@ function Avatar({
       <Link
         to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
         maxWidth={{ default: 40, tablet: 160 }}
-        borderRadius="half"
         transform="safariBorderRadiusFix"
         overflow="hidden"
         boxShadow="borderAll"
+        borderRadius="half"
       >
         <GraphqlImage
           image={entity.avatar}

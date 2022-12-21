@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
 import { Box } from "../Box";
-import { borderStyle } from "./StatsCallouts.css";
 
 function Callout({
   stat,
@@ -11,7 +10,8 @@ function Callout({
 }): JSX.Element {
   return (
     <Box
-      className={borderStyle}
+      boxShadow="borderAll"
+      borderRadius="half"
       display="flex"
       flexDirection="column"
       justifyContent="center"
