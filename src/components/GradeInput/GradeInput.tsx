@@ -88,7 +88,7 @@ export function GradeInput({
   };
 
   return (
-    <Box as="fieldset" border={0} padding={0}>
+    <Box as="fieldset" border={0}>
       <Box
         as="legend"
         fontSize="label"
@@ -97,7 +97,6 @@ export function GradeInput({
         letterSpacing={0.5}
         height={24}
         textAlign="left"
-        padding={0}
       >
         {label}
       </Box>

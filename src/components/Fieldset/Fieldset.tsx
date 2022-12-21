@@ -1,9 +1,5 @@
 import { Box, IBoxProps } from "../Box";
-import {
-  fieldsetStyle,
-  legendPaddingStyle,
-  responsiveFlexStyle,
-} from "./Fieldset.css";
+import { legendPaddingStyle, responsiveFlexStyle } from "./Fieldset.css";
 
 interface IFieldSetProps extends IBoxProps {
   legend: string;
@@ -11,7 +7,15 @@ interface IFieldSetProps extends IBoxProps {
 
 export function Fieldset({ legend, children }: IFieldSetProps): JSX.Element {
   return (
-    <Box as="fieldset" className={fieldsetStyle}>
+    <Box
+      as="fieldset"
+      boxShadow="borderAll"
+      borderRadius={4}
+      color="subtle"
+      paddingX="popoutGutter"
+      paddingTop={24}
+      paddingBottom={32}
+    >
       <Box
         as="legend"
         textAlign="center"

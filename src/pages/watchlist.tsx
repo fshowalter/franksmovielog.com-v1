@@ -141,14 +141,7 @@ export default function WatchlistIndexPage({
         </Box>
       </Box>
       <Spacer axis="vertical" size={32} />
-      <Box
-        as="ul"
-        padding={0}
-        display="flex"
-        flexWrap="wrap"
-        columnGap={32}
-        rowGap={24}
-      >
+      <Box as="ul" display="flex" flexWrap="wrap" columnGap={32} rowGap={24}>
         <WatchlistEntityTypeLink as="li" flex={1} entityType="director" />
         <WatchlistEntityTypeLink as="li" flex={1} entityType="performer" />
         <WatchlistEntityTypeLink as="li" flex={1} entityType="writer" />

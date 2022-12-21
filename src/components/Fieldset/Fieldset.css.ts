@@ -1,20 +1,6 @@
 import { globalStyle, style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { popoutGutterWidth, size } from "../../styles/sizes.css";
-
-export const fieldsetStyle = style({
-  border: 0,
-  boxShadow: `0 0 0 1px ${borderColors.default}`,
-  borderRadius: "4px",
-  color: foregroundColors.subtle,
-  marginInlineEnd: 0,
-  paddingBlockEnd: 0,
-  paddingBlockStart: 0,
-  paddingInlineEnd: 0,
-  paddingInlineStart: 0,
-  padding: `${size[24]} ${popoutGutterWidth}`,
-});
+import { size } from "../../styles/sizes.css";
 
 export const responsiveFlexStyle = style({
   gap: size[24],

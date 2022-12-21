@@ -45,7 +45,7 @@ export function MostWatchedPeople({
           Viewings
         </Box>
       </Box>
-      <Box as="ol" padding={0}>
+      <Box as="ol">
         {people.mostWatched.map((person, index) => {
           return (
             <Box as="li" key={person.fullName} display="block">

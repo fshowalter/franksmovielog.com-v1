@@ -386,7 +386,7 @@ export function PosterListWithFilters({
               total={state.filteredItems.length}
             />
           </Box>
-          <Box as="ol" data-testid="poster-list" padding={0}>
+          <Box as="ol" data-testid="poster-list">
             {[...groupedItems].map(([group, items], index) => {
               return (
                 <Box as="li" key={group} display="block">

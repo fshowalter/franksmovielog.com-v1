@@ -33,7 +33,6 @@ export function Nav({ activeClassName, justifyContent, ...rest }: INavProps) {
     <Box as="nav" {...rest}>
       <Box
         as="ul"
-        padding={0}
         display="flex"
         flexWrap="wrap"
         justifyContent={justifyContent}

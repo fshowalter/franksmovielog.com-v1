@@ -59,7 +59,6 @@ export function ReviewWatchlistLinks({
       flexWrap="wrap"
       columnGap={8}
       rowGap={8}
-      padding={0}
       {...rest}
     >
       <ListItemsForEntities entities={watchlist.collections} />

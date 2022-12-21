@@ -63,7 +63,6 @@ export function StatsNavigation({
   return (
     <Box
       as="ul"
-      padding={0}
       display="flex"
       fontSize="yearNavigation"
       columnGap={16}

@@ -45,7 +45,7 @@ export default function HomeTemplate({
   return (
     <Layout>
       <Box as="main" innerRef={listHeader}>
-        <Box as="ol" display="flex" flexDirection="column" padding={0}>
+        <Box as="ol" display="flex" flexDirection="column">
           {viewings.map((viewing, index) => {
             return (
               <HomePageItem

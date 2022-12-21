@@ -21,7 +21,6 @@ import {
 const unresponsiveAtomicProperties = defineProperties({
   properties: {
     color: foregroundColors,
-    padding: [0],
     whiteSpace: ["nowrap"],
     overflow: ["hidden"],
     flex: [1],

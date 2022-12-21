@@ -12,7 +12,7 @@ export function ViewingHistory({ movie, ...rest }: IIViewingHistoryProps) {
       <ReviewSubHeading paddingX="popoutGutter">
         Viewing History
       </ReviewSubHeading>
-      <Box as="ul" padding={0}>
+      <Box as="ul">
         {movie.viewings.map((viewing) => (
           <ViewingHistoryEntry
             as="li"

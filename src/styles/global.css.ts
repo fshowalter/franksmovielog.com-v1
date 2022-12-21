@@ -30,8 +30,22 @@ globalStyle(`img, picture, video, canvas, svg`, {
   maxWidth: `100%`,
 });
 
+globalStyle(`ol, ul`, {
+  padding: 0,
+});
+
 globalStyle(`input, button, textarea, select`, {
   font: `inherit`,
+});
+
+globalStyle(`fieldset`, {
+  border: 0,
+  marginInlineEnd: 0,
+  paddingBlockEnd: 0,
+  paddingBlockStart: 0,
+  paddingInlineEnd: 0,
+  paddingInlineStart: 0,
+  padding: 0,
 });
 
 globalStyle(`p, h1, h2, h3, h4, h5, h6`, {
