@@ -67,8 +67,6 @@ function EntityName({
     return (
       <Link
         to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-        color="accent"
-        textDecoration="none"
         fontSize="posterTitle"
         textAlign="center"
       >
@@ -150,9 +148,7 @@ export function WatchlistEntityAvatarListWithFilters({
             flexDirection="column"
             alignItems={{ default: "center", desktop: "flex-start" }}
           >
-            <Link color="accent" textDecoration="none" to="/watchlist/">
-              Watchlist
-            </Link>
+            <Link to="/watchlist/">Watchlist</Link>
             <Spacer axis="vertical" size={16} />
             <Box as="h1" fontSize="pageTitle">
               {title}

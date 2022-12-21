@@ -128,15 +128,7 @@ export default function WatchlistIndexPage({
           </p>
           <Spacer axis="vertical" size={16} />
           <p>
-            Track my{" "}
-            <Link
-              textDecoration="none"
-              color="accent"
-              to="/watchlist/progress/"
-            >
-              progress
-            </Link>
-            .
+            Track my <Link to="/watchlist/progress/">progress</Link>.
           </p>
         </Box>
       </Box>

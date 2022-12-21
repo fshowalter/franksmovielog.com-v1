@@ -31,9 +31,7 @@ export default function UnderseenGemsPage({
       distinctGenres={data.underseen.genres}
       initialSort="release-date-desc"
     >
-      <Link color="accent" textDecoration="none" to="/reviews/">
-        Reviews
-      </Link>
+      <Link to="/reviews/">Reviews</Link>
       <Spacer axis="vertical" size={16} />
       <Box as="h1" fontSize="pageTitle">
         Underseen Gems

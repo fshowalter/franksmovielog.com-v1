@@ -40,7 +40,7 @@ export function YearInput({
   };
 
   return (
-    <Box as="fieldset" border={0}>
+    <Box as="fieldset">
       <LabelText as="legend" text={label} />
       <Box display="flex" alignItems="baseline">
         <Box

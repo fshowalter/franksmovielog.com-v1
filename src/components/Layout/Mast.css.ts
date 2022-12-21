@@ -3,6 +3,8 @@ import { minMediaQuery } from "../../styles/breakpoints";
 import { foregroundColors } from "../../styles/colors.css";
 
 export const taglineStyle = style({
+  fontStyle: "italic",
+
   "@media": {
     [minMediaQuery("desktop")]: {
       paddingLeft: "1px",

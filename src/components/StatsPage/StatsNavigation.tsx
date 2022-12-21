@@ -14,9 +14,7 @@ function AllTimeLink({
 
   return (
     <Box as="li" display="block">
-      <Link color="accent" textDecoration="none" to={linkFunc("all")}>
-        All-Time
-      </Link>
+      <Link to={linkFunc("all")}>All-Time</Link>
     </Box>
   );
 }
@@ -44,9 +42,7 @@ function YearLink({
 
   return (
     <Box as="li" display="block">
-      <Link color="accent" textDecoration="none" to={linkFunc(year)}>
-        {year}
-      </Link>
+      <Link to={linkFunc(year)}>{year}</Link>
     </Box>
   );
 }

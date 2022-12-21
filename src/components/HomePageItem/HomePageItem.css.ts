@@ -14,13 +14,15 @@ export const excerptContinueReadingLinkStyle = style({
   fontSize: relativeSize[18],
 });
 
+export const dateLetterSpacingStyle = style({
+  letterSpacing: "0.046875rem",
+});
+
 globalStyle(`${excerptContinueReadingLinkStyle} a[data-continue-reading]`, {
-  color: foregroundColors.accent,
   fontSize: relativeSize[14],
   lineHeight: 1,
   textTransform: "uppercase",
   whiteSpace: "nowrap",
-  textDecoration: "none",
 });
 
 export const gridStyle = style({

@@ -1,5 +1,4 @@
 import { graphql } from "gatsby";
-import { composeClassNames } from "../../styles/composeClassNames";
 import { stickyHeaderScrollMarginTopStyle } from "../../styles/utils.css";
 import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
@@ -7,8 +6,7 @@ import { GraphqlImage } from "../GraphqlImage";
 import { Spacer } from "../Spacer";
 import {
   backToTopArrowStyle,
-  backToTopHoverStyle,
-  backToTopWidthStyle,
+  backToTopContainerStyle,
   creditStyle,
   posterFloatStyle,
   posterStyle,
@@ -82,17 +80,14 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
       <Box
         as="a"
         href="#top"
-        color="accent"
-        className={composeClassNames(backToTopHoverStyle, backToTopWidthStyle)}
+        className={backToTopContainerStyle}
         borderRadius={8}
         boxShadow="borderAll"
-        textDecoration="none"
         display="flex"
         maxWidth="half"
         paddingY={8}
         alignItems="center"
         justifyContent="center"
-        marginLeft="auto"
         paddingX={8}
       >
         Back to Top

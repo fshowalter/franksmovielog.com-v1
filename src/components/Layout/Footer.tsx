@@ -18,7 +18,6 @@ export function Footer({ ...rest }: IBoxProps) {
         <ExternalLink
           href="http://www.copyright.gov/title17/92chap1.html#107"
           color="inherit"
-          textDecoration="none"
         >
           Fair Use Law.
         </ExternalLink>

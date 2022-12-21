@@ -25,6 +25,11 @@ globalStyle(`body`, {
   color: foregroundColors.default,
 });
 
+globalStyle(`a`, {
+  color: foregroundColors.accent,
+  textDecoration: "none",
+});
+
 globalStyle(`img, picture, video, canvas, svg`, {
   display: `block`,
   maxWidth: `100%`,
@@ -57,6 +62,10 @@ globalStyle(`#root`, {
   isolation: `isolate`,
 });
 
+globalStyle(`button`, {
+  border: 0,
+});
+
 const imageFilter = createVar();
 
 globalStyle(`img`, {
@@ -77,7 +86,7 @@ globalStyle(":root", {
 });
 
 globalStyle(".reactSelect__dropdown-indicator > svg", {
-  color: foregroundColors.accent,
+  color: "#054a93",
 });
 
 globalStyle(".reactSelect__value-container", {

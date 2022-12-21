@@ -32,20 +32,18 @@ export const backToTopArrowStyle = style({
   width: "24px",
 });
 
-export const backToTopWidthStyle = style({
+export const backToTopContainerStyle = style({
+  cursor: "pointer",
+  marginLeft: "auto",
   width: "calc(50% - 24px)",
+
+  ":hover": {
+    boxShadow: `0 0 0 1px ${borderColors.accent}`,
+  },
 
   "@media": {
     [minMediaQuery("tablet")]: {
       width: "calc(100% - 280px)",
     },
-  },
-});
-
-export const backToTopHoverStyle = style({
-  cursor: "pointer",
-
-  ":hover": {
-    boxShadow: `0 0 0 1px ${borderColors.accent}`,
   },
 });

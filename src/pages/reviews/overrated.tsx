@@ -31,9 +31,7 @@ export default function OverratedDisappointmentsPage({
       distinctReleaseYears={data.disappointment.releaseYears}
       distinctGenres={data.disappointment.genres}
     >
-      <Link color="accent" textDecoration="none" to="/reviews/">
-        Reviews
-      </Link>
+      <Link to="/reviews/">Reviews</Link>
       <Spacer axis="vertical" size={16} />
       <Box as="h1" fontSize="pageTitle">
         Overrated Disappointments

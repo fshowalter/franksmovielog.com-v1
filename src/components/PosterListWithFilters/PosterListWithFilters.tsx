@@ -193,7 +193,6 @@ export function PosterListWithFilters({
             <Fieldset legend="Filter & Sort">
               {toggleReviewed && (
                 <Button
-                  alignSelf="end"
                   onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
                 >
                   {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}

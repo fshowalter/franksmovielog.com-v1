@@ -21,7 +21,6 @@ export function Button({
       fontSize="normal"
       whiteSpace="nowrap"
       lineHeight={24}
-      border={0}
       boxShadow="borderAll"
       paddingY={8}
       paddingX={16}

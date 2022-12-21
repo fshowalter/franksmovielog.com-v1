@@ -20,9 +20,7 @@ export function StillListHeading({
       <Box as="span" fontWeight="semiBold" color="muted">
         {leadText}{" "}
       </Box>
-      <Link to={linkTarget} color="accent" textDecoration="none">
-        {linkText}
-      </Link>
+      <Link to={linkTarget}>{linkText}</Link>
     </Box>
   );
 }

@@ -8,6 +8,7 @@ import { Link } from "../Link";
 import { RenderedMarkdown } from "../RenderedMarkdown";
 import { Still } from "../Still";
 import {
+  dateLetterSpacingStyle,
   excerptContinueReadingLinkStyle,
   gridAreas,
   gridStyle,
@@ -54,7 +55,6 @@ export function HomePageItem({
             <Link
               to={`/reviews/${viewing.slug}/`}
               rel="canonical"
-              textDecoration="none"
               color="default"
             >
               {viewing.title}{" "}
@@ -92,12 +92,12 @@ export function HomePageItem({
             display="flex"
             fontSize="small"
             fontWeight="light"
-            letterSpacing={0.75}
             whiteSpace="nowrap"
             color="subtle"
             lineHeight={32}
             alignItems="center"
             textTransform="uppercase"
+            className={dateLetterSpacingStyle}
           >
             <Box display={{ default: "block", desktop: "none" }}>
               <DateIcon />{" "}

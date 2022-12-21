@@ -75,7 +75,7 @@ export function MostWatchedPeople({
                   <Box
                     as="summary"
                     color="subtle"
-                    letterSpacing={0.2}
+                    letterSpacing={0.25}
                     paddingX="popoutGutter"
                   >
                     Details

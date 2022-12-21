@@ -20,23 +20,6 @@ import {
 
 const unresponsiveAtomicProperties = defineProperties({
   properties: {
-    color: foregroundColors,
-    whiteSpace: ["nowrap"],
-    overflow: ["hidden"],
-    flex: [1],
-    flexGrow: [1],
-
-    fontStyle: ["italic"],
-    justifyItems: ["center", "inherit"],
-
-    marginTop: [48, 64, 128],
-    marginLeft: ["auto"],
-    fontWeight: fontWeights,
-    transform: {
-      safariBorderRadiusFix: {
-        transform: "translateZ(0)",
-      },
-    },
     fontSize: {
       ...relativeSize,
       ...fontSizes,
@@ -145,9 +128,6 @@ const unresponsiveAtomicProperties = defineProperties({
       },
     },
     lineHeight: lineHeights,
-    letterSpacing: letterSpacing,
-    textDecoration: ["none"],
-    border: [0],
     backgroundImage: {
       ripNotComingSoon: {
         backgroundImage: `url("/assets/ripnotcomingsoon.jpg")`,
@@ -158,17 +138,25 @@ const unresponsiveAtomicProperties = defineProperties({
         },
       },
     },
-    backgroundRepeat: ["repeat-x", "repeat"],
-    backgroundPositionY: [16],
-
-    textAlign: ["left", "right", "center", "inherit"],
-    textUnderlinePosition: ["under"],
-    // columnGap: [".5ch", 8, 16, 24, 32, 40, 64],
-    flexBasis: { ...size, 352: "352px" },
+    color: foregroundColors,
+    flex: [1],
+    flexBasis: { 352: "352px" },
+    flexGrow: [1],
     flexShrink: [0],
-    zIndex: [100, 500, 1000],
-    alignSelf: ["end"],
+    fontWeight: fontWeights,
+    justifyItems: ["center", "inherit"],
+    letterSpacing: letterSpacing,
+    overflow: ["hidden"],
+    textAlign: ["left", "right", "center", "inherit"],
     textTransform: ["uppercase"],
+    textUnderlinePosition: ["under"],
+    transform: {
+      safariBorderRadiusFix: {
+        transform: "translateZ(0)",
+      },
+    },
+    whiteSpace: ["nowrap"],
+    zIndex: [100, 500, 1000],
   },
 });
 

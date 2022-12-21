@@ -9,13 +9,7 @@ function WriterName({
 }): JSX.Element {
   if (person.slug) {
     return (
-      <Link
-        textDecoration="none"
-        color="accent"
-        to={`/watchlist/writers/${person.slug}/`}
-      >
-        {person.fullName}
-      </Link>
+      <Link to={`/watchlist/writers/${person.slug}/`}>{person.fullName}</Link>
     );
   }
 

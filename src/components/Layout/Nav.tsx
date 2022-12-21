@@ -12,12 +12,7 @@ function NavItem({
 }): JSX.Element {
   return (
     <Box as="li" display="block" letterSpacing={0.5} whiteSpace="nowrap">
-      <Link
-        color="inherit"
-        textDecoration="none"
-        activeClassName={activeClassName}
-        to={to}
-      >
+      <Link color="inherit" activeClassName={activeClassName} to={to}>
         {children}
       </Link>
     </Box>

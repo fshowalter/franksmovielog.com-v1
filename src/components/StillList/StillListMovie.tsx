@@ -31,7 +31,6 @@ export function StillListMovie({ movie, ...rest }: IStillListMovieProps) {
         <Link
           to={`/reviews/${movie.slug}/`}
           fontSize="relatedMovieTitle"
-          textDecoration="none"
           color="default"
           display="block"
         >

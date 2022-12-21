@@ -88,7 +88,7 @@ export function GradeInput({
   };
 
   return (
-    <Box as="fieldset" border={0}>
+    <Box as="fieldset">
       <Box
         as="legend"
         fontSize="label"

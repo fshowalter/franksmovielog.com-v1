@@ -67,12 +67,10 @@ export function WatchlistEntityTypeLink({
         to={props.to}
         display="flex"
         columnGap={16}
-        color="accent"
         boxShadow="borderAll"
         paddingX={16}
         paddingY={8}
         borderRadius={8}
-        textDecoration="none"
         alignItems="center"
         minWidth={128}
         className={hoverStyle}

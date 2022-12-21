@@ -30,7 +30,7 @@ export function StillList({
         paddingY={16}
         boxShadow={{ default: "borderBottom", tablet: "unset" }}
       >
-        <Link textDecoration="none" color="accent" to={seeAllLinkTarget}>
+        <Link to={seeAllLinkTarget}>
           All{" "}
           <Box
             as="span"

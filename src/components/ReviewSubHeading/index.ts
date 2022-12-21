@@ -1,1 +1,0 @@
-export { ReviewSubHeading } from "./ReviewSubHeading";

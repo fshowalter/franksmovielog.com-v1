@@ -13,6 +13,7 @@ export const stillStyle = style({
   overflow: "hidden",
   maxWidth: "312px",
   display: "block",
+  transform: "translateZ(0)",
 
   "@media": {
     [minMediaQuery("tablet")]: {

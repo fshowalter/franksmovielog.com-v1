@@ -9,11 +9,7 @@ function PerformerName({
 }): JSX.Element {
   if (person.slug) {
     return (
-      <Link
-        textDecoration="none"
-        color="accent"
-        to={`/watchlist/performers/${person.slug}/`}
-      >
+      <Link to={`/watchlist/performers/${person.slug}/`}>
         {person.fullName}
       </Link>
     );

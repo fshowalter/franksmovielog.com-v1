@@ -2,10 +2,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
 
 export const renderedMarkdownStyle = style({
-  // color: foregroundColors.default,
-  // fontSize: "19px",
-  // fontWeight: "300",
-  // letterSpacing: "0.3px",
+  letterSpacing: "0.3px",
 });
 
 globalStyle(`${renderedMarkdownStyle} a`, {

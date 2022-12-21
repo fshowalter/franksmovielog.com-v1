@@ -27,17 +27,8 @@ export function PosterListWithFiltersForWatchlistEntity({
       toggleReviewed={true}
     >
       <Box textAlign="center" lineHeight={36}>
-        <Link color="accent" textDecoration="none" to="/watchlist/">
-          Watchlist
-        </Link>{" "}
-        /{" "}
-        <Link
-          color="accent"
-          textDecoration="none"
-          to={`/watchlist/${entity.entityType}s/`}
-        >
-          {breadcrumb}
-        </Link>
+        <Link to="/watchlist/">Watchlist</Link> /{" "}
+        <Link to={`/watchlist/${entity.entityType}s/`}>{breadcrumb}</Link>
       </Box>
       <Spacer axis="vertical" size={16} />
       <Box display="flex" flexDirection="column" alignItems="center">

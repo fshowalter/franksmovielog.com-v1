@@ -18,7 +18,6 @@ export function RenderedMarkdown({
   return (
     <Box
       fontWeight="light"
-      letterSpacing={0.3}
       fontSize="prose"
       className={composeClassNames(renderedMarkdownStyle, className)}
       // eslint-disable-next-line react/no-danger

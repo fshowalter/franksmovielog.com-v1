@@ -61,10 +61,7 @@ export default function ReviewsIndexPage({
             Looking for something new?
           </Box>
           <br /> Peruse my list of{" "}
-          <Link textDecoration="none" color="accent" to="/reviews/underseen/">
-            underseen gems
-          </Link>
-          .
+          <Link to="/reviews/underseen/">underseen gems</Link>.
         </p>
         <Spacer axis="vertical" size={16} />
         <p>
@@ -73,10 +70,7 @@ export default function ReviewsIndexPage({
           </Box>
           <br />
           Behold my list of{" "}
-          <Link textDecoration="none" color="accent" to="/reviews/overrated/">
-            overrated disappointments
-          </Link>
-          .
+          <Link to="/reviews/overrated/">overrated disappointments</Link>.
         </p>
       </Box>
     </PosterListWithFilters>

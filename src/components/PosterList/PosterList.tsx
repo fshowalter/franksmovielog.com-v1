@@ -97,7 +97,7 @@ function Title({
 
   if (slug)
     return (
-      <Link color="accent" textDecoration="none" to={`/reviews/${slug}/`}>
+      <Link to={`/reviews/${slug}/`}>
         {title}&nbsp;{yearBox}
       </Link>
     );

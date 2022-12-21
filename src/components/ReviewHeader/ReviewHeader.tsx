@@ -34,7 +34,7 @@ function Meta({ movie }: { movie: Queries.ReviewHeaderFragment }) {
       &#x02009;min{" "}
       <Box as="span">
         <span>|</span>{" "}
-        <Box as="a" href="#credits" color="accent" textDecoration="none">
+        <Box as="a" href="#credits">
           More...
         </Box>
       </Box>

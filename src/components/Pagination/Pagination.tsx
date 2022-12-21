@@ -46,23 +46,13 @@ export function Pagination({
   const prev = isFirst ? (
     <span />
   ) : (
-    <Link
-      to={prevPageUrl}
-      color="accent"
-      textDecoration="none"
-      textAlign="left"
-    >{`← ${prevText}`}</Link>
+    <Link to={prevPageUrl} textAlign="left">{`← ${prevText}`}</Link>
   );
 
   const next = isLast ? (
     <span />
   ) : (
-    <Link
-      to={nextPageUrl}
-      color="accent"
-      textDecoration="none"
-      textAlign="right"
-    >{`${nextText} →`}</Link>
+    <Link to={nextPageUrl} textAlign="right">{`${nextText} →`}</Link>
   );
 
   return (

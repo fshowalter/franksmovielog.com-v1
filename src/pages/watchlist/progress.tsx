@@ -65,11 +65,7 @@ function EntityName({
 }) {
   if (entity.slug)
     return (
-      <Link
-        to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-        color="accent"
-        textDecoration="none"
-      >
+      <Link to={`/watchlist/${entity.entityType}s/${entity.slug}/`}>
         {entity.name}
       </Link>
     );
@@ -177,10 +173,7 @@ export default function WatchlistProgressPage({
               <Spacer axis="vertical" size={16} />
               <p>
                 My progress working through{" "}
-                <Link color="accent" textDecoration="none" to="/watchlist/">
-                  my movie-review bucketlist
-                </Link>
-                .
+                <Link to="/watchlist/">my movie-review bucketlist</Link>.
               </p>
             </Box>
           </Box>

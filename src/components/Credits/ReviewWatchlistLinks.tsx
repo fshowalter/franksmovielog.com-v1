@@ -26,8 +26,6 @@ function ListItemsForEntities({
                 display="flex"
                 alignItems="center"
                 whiteSpace="nowrap"
-                color="accent"
-                textDecoration="none"
                 className={linkStyle}
               >
                 <GraphqlImage

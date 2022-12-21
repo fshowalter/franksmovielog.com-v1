@@ -14,14 +14,13 @@ export function Mast({ ...rest }: IBoxProps) {
         justifyItems="inherit"
       >
         <Box as="h1" whiteSpace="nowrap" fontWeight="normal" fontSize="logo">
-          <Link color="default" textDecoration="none" to="/">
+          <Link color="default" to="/">
             Frank&apos;s Movie Log
           </Link>
         </Box>
         <Box
           as="p"
           color="muted"
-          fontStyle="italic"
           lineHeight={16}
           className={taglineStyle}
           width="full"
