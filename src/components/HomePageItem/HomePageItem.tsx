@@ -70,7 +70,7 @@ export function HomePageItem({
               </Box>
             </Link>
           </Box>
-          <Grade grade={viewing.grade} width={160} height={32} />
+          <Grade grade={viewing.grade} height={32} />
           <Box
             as="p"
             fontSize="normal"

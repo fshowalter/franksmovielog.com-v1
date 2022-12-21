@@ -1,5 +1,3 @@
-import { Box, IBoxProps } from "../Box";
-
 /**
  * Maps grade letters to their letter and alt-text.
  */
@@ -11,30 +9,26 @@ const gradeMap: Record<string, [string, string]> = {
   F: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
 
-// React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>,HTMLImageElement>
-
-interface IGradeProps extends Omit<IBoxProps, "width" | "height"> {
-  grade: string;
-  height: number;
-  width: number;
-}
-
 export function Grade({
   grade,
-  width,
   height,
-  ...rest
-}: IGradeProps): JSX.Element | null {
+  className,
+}: {
+  grade: string;
+  height: 32 | 16;
+  className?: string;
+}): JSX.Element | null {
   const [src, alt] = gradeMap[grade[0]];
 
+  const width = height * 5;
+
   return (
-    <Box
-      as="img"
+    <img
       src={src}
       alt={`${grade}: ${alt}`}
-      __height={height}
-      __width={width}
-      {...rest}
+      height={height}
+      width={width}
+      className={className}
     />
   );
 }

@@ -59,7 +59,7 @@ export const GRID = {
 
 export const MAX_STILL_WIDTH = "960px";
 export const MAX_POSTER_WIDTH = "248px";
-export const PROSE_CONTENT_WIDTH = "33rem"; //"max(32.5rem, 58ch)";
+export const PROSE_CONTENT_WIDTH = "33rem";
 
 export const POPOUT_WIDTH = `calc((${popoutGutterWidth} * 2) + 33rem)`;
 export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `calc((${gutterWidth} * 2) + 33rem)`;

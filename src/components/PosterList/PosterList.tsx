@@ -176,12 +176,7 @@ export function Poster({
               flexDirection="column"
               justifyContent="center"
             >
-              <Grade
-                grade={grade}
-                height={14}
-                width={60}
-                className={gradeStyle}
-              />
+              <Grade grade={grade} height={16} className={gradeStyle} />
             </Box>
           )}
           <Box>

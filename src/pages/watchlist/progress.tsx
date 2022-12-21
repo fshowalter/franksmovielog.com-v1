@@ -52,7 +52,9 @@ function ProgressCallout({
         <Box>
           {reviewed?.toLocaleString()}/{total?.toLocaleString()}
         </Box>
-        <Box fontSize="small">Reviewed</Box>
+        <Box fontSize="small" lineHeight={16}>
+          Reviewed
+        </Box>
       </Box>
     </>
   );

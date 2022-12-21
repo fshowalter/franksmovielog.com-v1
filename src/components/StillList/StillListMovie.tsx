@@ -47,12 +47,7 @@ export function StillListMovie({ movie, ...rest }: IStillListMovieProps) {
         </Link>
       </GridArea>
       <GridArea name="grade">
-        <Grade
-          grade={movie.grade}
-          width={80}
-          height={16}
-          className={gradeStyle}
-        />
+        <Grade grade={movie.grade} height={16} className={gradeStyle} />
       </GridArea>
     </Grid>
   );

@@ -11,7 +11,7 @@ export function ReviewContent({ review, ...rest }: IReviewContentProps) {
   return (
     <Box display="flex" flexDirection="column" rowGap={32} {...rest}>
       <Box display="flex" flexDirection="column" alignItems="inherit">
-        <Grade grade={review.grade} height={32} width={160} />
+        <Grade grade={review.grade} height={32} />
         <Box
           display="flex"
           flexDirection="column"

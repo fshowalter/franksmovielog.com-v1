@@ -16,7 +16,7 @@ function Callout({
       flexDirection="column"
       justifyContent="center"
       height={144}
-      width={144}
+      width="144r"
       textAlign="center"
     >
       <Box fontSize="statNumber">{stat.toLocaleString()}</Box>{" "}

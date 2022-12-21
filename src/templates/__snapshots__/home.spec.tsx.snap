@@ -9,13 +9,13 @@ exports[`/ can render last page 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdka5 sprinkles_width_full_default__8lcvdko5"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdk8t sprinkles_width_full_default__8lcvdkmw"
   />
   <div
     class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk2t sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_24_default__8lcvdkiz sprinkles_paddingTop_32_desktop__8lcvdkj4 sprinkles_paddingBottom_24_default__8lcvdkeh sprinkles_paddingBottom_32_desktop__8lcvdkem sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_24_default__8lcvdkhn sprinkles_paddingTop_32_desktop__8lcvdkhs sprinkles_paddingBottom_24_default__8lcvdkd5 sprinkles_paddingBottom_32_desktop__8lcvdkda sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
     >
       <div
         class="sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_alignItems_inherit_default__8lcvdk2e sprinkles_justifyItems_inherit__8lcvdk1w"
@@ -31,7 +31,7 @@ exports[`/ can render last page 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdko5 sprinkles_fontSize_small__8lcvdk9"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdkmw sprinkles_fontSize_small__8lcvdk9"
         >
           My life at the movies.
         </p>
@@ -39,7 +39,7 @@ exports[`/ can render last page 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdko5 sprinkles_width_unset_desktop__8lcvdkns sprinkles_maxWidth_prose_default__8lcvdk9e"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdkmw sprinkles_width_unset_desktop__8lcvdkmg sprinkles_maxWidth_prose_default__8lcvdk82"
         method="get"
         role="search"
       >
@@ -53,7 +53,7 @@ exports[`/ can render last page 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkf5 sprinkles_paddingRight_16_default__8lcvdkh2 sprinkles_paddingTop_8_default__8lcvdkit sprinkles_paddingBottom_8_default__8lcvdkeb sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkdt sprinkles_paddingRight_16_default__8lcvdkfq sprinkles_paddingTop_8_default__8lcvdkhh sprinkles_paddingBottom_8_default__8lcvdkcz sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
             id="search"
             name="q"
             placeholder="Search..."
@@ -93,7 +93,7 @@ exports[`/ can render last page 1`] = `
         class="sprinkles_color_accent__8lcvdk1e"
       >
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
@@ -171,10 +171,10 @@ exports[`/ can render last page 1`] = `
             value="2"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-blue-gardenia-1953/"
@@ -232,7 +232,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -252,8 +252,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -318,10 +319,10 @@ exports[`/ can render last page 1`] = `
             value="1"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/suzy-1936/"
@@ -379,7 +380,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -399,8 +400,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -465,10 +467,10 @@ exports[`/ can render last page 1`] = `
             value="0"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/pot-o-gold-1941/"
@@ -526,7 +528,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -546,8 +548,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="F: 1 star (out of 5)"
+                  height="32"
                   src="/svg/1-star.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -612,10 +615,10 @@ exports[`/ can render last page 1`] = `
             value="-1"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-whistler-1944/"
@@ -673,7 +676,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -693,8 +696,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="C-: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -759,10 +763,10 @@ exports[`/ can render last page 1`] = `
             value="-2"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/reunion-in-france-1942/"
@@ -820,7 +824,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -840,8 +844,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -906,10 +911,10 @@ exports[`/ can render last page 1`] = `
             value="-3"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-great-ziegfeld-1936/"
@@ -967,7 +972,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -987,8 +992,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -1053,10 +1059,10 @@ exports[`/ can render last page 1`] = `
             value="-4"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/new-york-ninja-2021/"
@@ -1114,7 +1120,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -1134,8 +1140,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -1200,10 +1207,10 @@ exports[`/ can render last page 1`] = `
             value="-5"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/x-2022/"
@@ -1261,7 +1268,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -1281,8 +1288,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -1351,10 +1359,10 @@ exports[`/ can render last page 1`] = `
             value="-6"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/holiday-affair-1949/"
@@ -1412,7 +1420,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -1432,8 +1440,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="C: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -1498,10 +1507,10 @@ exports[`/ can render last page 1`] = `
             value="-7"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/dead-reckoning-1947/"
@@ -1559,7 +1568,7 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -1579,8 +1588,9 @@ exports[`/ can render last page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -1642,7 +1652,7 @@ exports[`/ can render last page 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_40_default__8lcvdkj5 sprinkles_paddingBottom_40_default__8lcvdken sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk7e"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_40_default__8lcvdkht sprinkles_paddingBottom_40_default__8lcvdkdb sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk62"
         >
           <div
             class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
@@ -1652,7 +1662,7 @@ exports[`/ can render last page 1`] = `
             </h3>
           </div>
           <div
-            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk7b"
+            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk5z"
           >
             <a
               class="sprinkles_textAlign_left__8lcvdk20"
@@ -1663,7 +1673,7 @@ exports[`/ can render last page 1`] = `
             <span />
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_24_default__8lcvdka8 sprinkles_display_block_default__8lcvdk48"
+            class="sprinkles_width_px_default__8lcvdkmt sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkcn sprinkles_minHeight_24_default__8lcvdk8w sprinkles_display_block_default__8lcvdk48"
           />
           <div
             class="sprinkles_textAlign_right__8lcvdk21 sprinkles_color_subtle__8lcvdk1i"
@@ -1732,11 +1742,11 @@ exports[`/ can render last page 1`] = `
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_32_default__8lcvdkj2 sprinkles_paddingBottom_32_default__8lcvdkek sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_32_default__8lcvdkhq sprinkles_paddingBottom_32_default__8lcvdkd8 sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
     >
       <nav>
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
@@ -1834,13 +1844,13 @@ exports[`/ renders first page 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdka5 sprinkles_width_full_default__8lcvdko5"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdk8t sprinkles_width_full_default__8lcvdkmw"
   />
   <div
     class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk2t sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_24_default__8lcvdkiz sprinkles_paddingTop_32_desktop__8lcvdkj4 sprinkles_paddingBottom_24_default__8lcvdkeh sprinkles_paddingBottom_32_desktop__8lcvdkem sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_24_default__8lcvdkhn sprinkles_paddingTop_32_desktop__8lcvdkhs sprinkles_paddingBottom_24_default__8lcvdkd5 sprinkles_paddingBottom_32_desktop__8lcvdkda sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
     >
       <div
         class="sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_alignItems_inherit_default__8lcvdk2e sprinkles_justifyItems_inherit__8lcvdk1w"
@@ -1856,7 +1866,7 @@ exports[`/ renders first page 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdko5 sprinkles_fontSize_small__8lcvdk9"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdkmw sprinkles_fontSize_small__8lcvdk9"
         >
           My life at the movies.
         </p>
@@ -1864,7 +1874,7 @@ exports[`/ renders first page 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdko5 sprinkles_width_unset_desktop__8lcvdkns sprinkles_maxWidth_prose_default__8lcvdk9e"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdkmw sprinkles_width_unset_desktop__8lcvdkmg sprinkles_maxWidth_prose_default__8lcvdk82"
         method="get"
         role="search"
       >
@@ -1878,7 +1888,7 @@ exports[`/ renders first page 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkf5 sprinkles_paddingRight_16_default__8lcvdkh2 sprinkles_paddingTop_8_default__8lcvdkit sprinkles_paddingBottom_8_default__8lcvdkeb sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkdt sprinkles_paddingRight_16_default__8lcvdkfq sprinkles_paddingTop_8_default__8lcvdkhh sprinkles_paddingBottom_8_default__8lcvdkcz sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
             id="search"
             name="q"
             placeholder="Search..."
@@ -1918,7 +1928,7 @@ exports[`/ renders first page 1`] = `
         class="sprinkles_color_accent__8lcvdk1e"
       >
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
@@ -1996,10 +2006,10 @@ exports[`/ renders first page 1`] = `
             value="102"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-blue-gardenia-1953/"
@@ -2057,7 +2067,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -2077,8 +2087,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -2143,10 +2154,10 @@ exports[`/ renders first page 1`] = `
             value="101"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/suzy-1936/"
@@ -2204,7 +2215,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -2224,8 +2235,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -2290,10 +2302,10 @@ exports[`/ renders first page 1`] = `
             value="100"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/pot-o-gold-1941/"
@@ -2351,7 +2363,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -2371,8 +2383,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="F: 1 star (out of 5)"
+                  height="32"
                   src="/svg/1-star.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -2437,10 +2450,10 @@ exports[`/ renders first page 1`] = `
             value="99"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-whistler-1944/"
@@ -2498,7 +2511,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -2518,8 +2531,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="C-: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -2584,10 +2598,10 @@ exports[`/ renders first page 1`] = `
             value="98"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/reunion-in-france-1942/"
@@ -2645,7 +2659,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -2665,8 +2679,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -2731,10 +2746,10 @@ exports[`/ renders first page 1`] = `
             value="97"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-great-ziegfeld-1936/"
@@ -2792,7 +2807,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -2812,8 +2827,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -2878,10 +2894,10 @@ exports[`/ renders first page 1`] = `
             value="96"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/new-york-ninja-2021/"
@@ -2939,7 +2955,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -2959,8 +2975,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -3025,10 +3042,10 @@ exports[`/ renders first page 1`] = `
             value="95"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/x-2022/"
@@ -3086,7 +3103,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -3106,8 +3123,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -3176,10 +3194,10 @@ exports[`/ renders first page 1`] = `
             value="94"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/holiday-affair-1949/"
@@ -3237,7 +3255,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -3257,8 +3275,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="C: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -3323,10 +3342,10 @@ exports[`/ renders first page 1`] = `
             value="93"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/dead-reckoning-1947/"
@@ -3384,7 +3403,7 @@ exports[`/ renders first page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -3404,8 +3423,9 @@ exports[`/ renders first page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -3467,7 +3487,7 @@ exports[`/ renders first page 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_40_default__8lcvdkj5 sprinkles_paddingBottom_40_default__8lcvdken sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk7e"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_40_default__8lcvdkht sprinkles_paddingBottom_40_default__8lcvdkdb sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk62"
         >
           <div
             class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
@@ -3477,7 +3497,7 @@ exports[`/ renders first page 1`] = `
             </h3>
           </div>
           <div
-            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk7b"
+            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk5z"
           >
             <span />
             <a
@@ -3488,7 +3508,7 @@ exports[`/ renders first page 1`] = `
             </a>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_24_default__8lcvdka8 sprinkles_display_block_default__8lcvdk48"
+            class="sprinkles_width_px_default__8lcvdkmt sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkcn sprinkles_minHeight_24_default__8lcvdk8w sprinkles_display_block_default__8lcvdk48"
           />
           <div
             class="sprinkles_textAlign_right__8lcvdk21 sprinkles_color_subtle__8lcvdk1i"
@@ -3557,11 +3577,11 @@ exports[`/ renders first page 1`] = `
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_32_default__8lcvdkj2 sprinkles_paddingBottom_32_default__8lcvdkek sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_32_default__8lcvdkhq sprinkles_paddingBottom_32_default__8lcvdkd8 sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
     >
       <nav>
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
@@ -3659,13 +3679,13 @@ exports[`/ renders last page 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdka5 sprinkles_width_full_default__8lcvdko5"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdk8t sprinkles_width_full_default__8lcvdkmw"
   />
   <div
     class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk2t sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_24_default__8lcvdkiz sprinkles_paddingTop_32_desktop__8lcvdkj4 sprinkles_paddingBottom_24_default__8lcvdkeh sprinkles_paddingBottom_32_desktop__8lcvdkem sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_24_default__8lcvdkhn sprinkles_paddingTop_32_desktop__8lcvdkhs sprinkles_paddingBottom_24_default__8lcvdkd5 sprinkles_paddingBottom_32_desktop__8lcvdkda sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
     >
       <div
         class="sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_alignItems_inherit_default__8lcvdk2e sprinkles_justifyItems_inherit__8lcvdk1w"
@@ -3681,7 +3701,7 @@ exports[`/ renders last page 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdko5 sprinkles_fontSize_small__8lcvdk9"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdkmw sprinkles_fontSize_small__8lcvdk9"
         >
           My life at the movies.
         </p>
@@ -3689,7 +3709,7 @@ exports[`/ renders last page 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdko5 sprinkles_width_unset_desktop__8lcvdkns sprinkles_maxWidth_prose_default__8lcvdk9e"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdkmw sprinkles_width_unset_desktop__8lcvdkmg sprinkles_maxWidth_prose_default__8lcvdk82"
         method="get"
         role="search"
       >
@@ -3703,7 +3723,7 @@ exports[`/ renders last page 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkf5 sprinkles_paddingRight_16_default__8lcvdkh2 sprinkles_paddingTop_8_default__8lcvdkit sprinkles_paddingBottom_8_default__8lcvdkeb sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkdt sprinkles_paddingRight_16_default__8lcvdkfq sprinkles_paddingTop_8_default__8lcvdkhh sprinkles_paddingBottom_8_default__8lcvdkcz sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
             id="search"
             name="q"
             placeholder="Search..."
@@ -3743,7 +3763,7 @@ exports[`/ renders last page 1`] = `
         class="sprinkles_color_accent__8lcvdk1e"
       >
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
@@ -3821,10 +3841,10 @@ exports[`/ renders last page 1`] = `
             value="92"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-blue-gardenia-1953/"
@@ -3882,7 +3902,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -3902,8 +3922,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -3968,10 +3989,10 @@ exports[`/ renders last page 1`] = `
             value="91"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/suzy-1936/"
@@ -4029,7 +4050,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -4049,8 +4070,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -4115,10 +4137,10 @@ exports[`/ renders last page 1`] = `
             value="90"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/pot-o-gold-1941/"
@@ -4176,7 +4198,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -4196,8 +4218,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="F: 1 star (out of 5)"
+                  height="32"
                   src="/svg/1-star.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -4262,10 +4285,10 @@ exports[`/ renders last page 1`] = `
             value="89"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-whistler-1944/"
@@ -4323,7 +4346,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -4343,8 +4366,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="C-: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -4409,10 +4433,10 @@ exports[`/ renders last page 1`] = `
             value="88"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/reunion-in-france-1942/"
@@ -4470,7 +4494,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -4490,8 +4514,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -4556,10 +4581,10 @@ exports[`/ renders last page 1`] = `
             value="87"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-great-ziegfeld-1936/"
@@ -4617,7 +4642,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -4637,8 +4662,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -4703,10 +4729,10 @@ exports[`/ renders last page 1`] = `
             value="86"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/new-york-ninja-2021/"
@@ -4764,7 +4790,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -4784,8 +4810,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -4850,10 +4877,10 @@ exports[`/ renders last page 1`] = `
             value="85"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/x-2022/"
@@ -4911,7 +4938,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -4931,8 +4958,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -5001,10 +5029,10 @@ exports[`/ renders last page 1`] = `
             value="84"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/holiday-affair-1949/"
@@ -5062,7 +5090,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -5082,8 +5110,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="C: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -5148,10 +5177,10 @@ exports[`/ renders last page 1`] = `
             value="83"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/dead-reckoning-1947/"
@@ -5209,7 +5238,7 @@ exports[`/ renders last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -5229,8 +5258,9 @@ exports[`/ renders last page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -5292,7 +5322,7 @@ exports[`/ renders last page 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_40_default__8lcvdkj5 sprinkles_paddingBottom_40_default__8lcvdken sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk7e"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_40_default__8lcvdkht sprinkles_paddingBottom_40_default__8lcvdkdb sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk62"
         >
           <div
             class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
@@ -5302,7 +5332,7 @@ exports[`/ renders last page 1`] = `
             </h3>
           </div>
           <div
-            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk7b"
+            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk5z"
           >
             <a
               class="sprinkles_textAlign_left__8lcvdk20"
@@ -5318,7 +5348,7 @@ exports[`/ renders last page 1`] = `
             </a>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_24_default__8lcvdka8 sprinkles_display_block_default__8lcvdk48"
+            class="sprinkles_width_px_default__8lcvdkmt sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkcn sprinkles_minHeight_24_default__8lcvdk8w sprinkles_display_block_default__8lcvdk48"
           />
           <div
             class="sprinkles_textAlign_right__8lcvdk21 sprinkles_color_subtle__8lcvdk1i"
@@ -5387,11 +5417,11 @@ exports[`/ renders last page 1`] = `
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_32_default__8lcvdkj2 sprinkles_paddingBottom_32_default__8lcvdkek sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_32_default__8lcvdkhq sprinkles_paddingBottom_32_default__8lcvdkd8 sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
     >
       <nav>
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
@@ -5489,13 +5519,13 @@ exports[`/ renders middle page 1`] = `
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdka5 sprinkles_width_full_default__8lcvdko5"
+    class="Layout_bandStickyStyle__1965ugi1 sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_minHeight_16_default__8lcvdk8t sprinkles_width_full_default__8lcvdkmw"
   />
   <div
     class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk2t sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_24_default__8lcvdkiz sprinkles_paddingTop_32_desktop__8lcvdkj4 sprinkles_paddingBottom_24_default__8lcvdkeh sprinkles_paddingBottom_32_desktop__8lcvdkem sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_24_default__8lcvdkhn sprinkles_paddingTop_32_desktop__8lcvdkhs sprinkles_paddingBottom_24_default__8lcvdkd5 sprinkles_paddingBottom_32_desktop__8lcvdkda sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_boxShadow_borderBottom_default__8lcvdk3k sprinkles_backgroundColor_default_default__8lcvdk2t"
     >
       <div
         class="sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_alignItems_inherit_default__8lcvdk2e sprinkles_justifyItems_inherit__8lcvdk1w"
@@ -5511,7 +5541,7 @@ exports[`/ renders middle page 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdko5 sprinkles_fontSize_small__8lcvdk9"
+          class="Mast_taglineStyle__17la42y0 sprinkles_color_muted__8lcvdk1g sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdkmw sprinkles_fontSize_small__8lcvdk9"
         >
           My life at the movies.
         </p>
@@ -5519,7 +5549,7 @@ exports[`/ renders middle page 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdko5 sprinkles_width_unset_desktop__8lcvdkns sprinkles_maxWidth_prose_default__8lcvdk9e"
+        class="Mast_orderStyle__17la42y2 sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_4__8lcvdk1a sprinkles_overflow_hidden__8lcvdk1z sprinkles_width_full_default__8lcvdkmw sprinkles_width_unset_desktop__8lcvdkmg sprinkles_maxWidth_prose_default__8lcvdk82"
         method="get"
         role="search"
       >
@@ -5533,7 +5563,7 @@ exports[`/ renders middle page 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkf5 sprinkles_paddingRight_16_default__8lcvdkh2 sprinkles_paddingTop_8_default__8lcvdkit sprinkles_paddingBottom_8_default__8lcvdkeb sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkdt sprinkles_paddingRight_16_default__8lcvdkfq sprinkles_paddingTop_8_default__8lcvdkhh sprinkles_paddingBottom_8_default__8lcvdkcz sprinkles_backgroundColor_subtle_default__8lcvdk2z sprinkles_color_default__8lcvdk1f sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_light__8lcvdk1r sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdk1p"
             id="search"
             name="q"
             placeholder="Search..."
@@ -5573,7 +5603,7 @@ exports[`/ renders middle page 1`] = `
         class="sprinkles_color_accent__8lcvdk1e"
       >
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
@@ -5651,10 +5681,10 @@ exports[`/ renders middle page 1`] = `
             value="92"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-blue-gardenia-1953/"
@@ -5712,7 +5742,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -5732,8 +5762,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -5798,10 +5829,10 @@ exports[`/ renders middle page 1`] = `
             value="91"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/suzy-1936/"
@@ -5859,7 +5890,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -5879,8 +5910,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -5945,10 +5977,10 @@ exports[`/ renders middle page 1`] = `
             value="90"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/pot-o-gold-1941/"
@@ -6006,7 +6038,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -6026,8 +6058,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="F: 1 star (out of 5)"
+                  height="32"
                   src="/svg/1-star.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -6092,10 +6125,10 @@ exports[`/ renders middle page 1`] = `
             value="89"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-whistler-1944/"
@@ -6153,7 +6186,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -6173,8 +6206,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="C-: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -6239,10 +6273,10 @@ exports[`/ renders middle page 1`] = `
             value="88"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/reunion-in-france-1942/"
@@ -6300,7 +6334,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -6320,8 +6354,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="D-: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -6386,10 +6421,10 @@ exports[`/ renders middle page 1`] = `
             value="87"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/the-great-ziegfeld-1936/"
@@ -6447,7 +6482,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -6467,8 +6502,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -6533,10 +6569,10 @@ exports[`/ renders middle page 1`] = `
             value="86"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/new-york-ninja-2021/"
@@ -6594,7 +6630,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -6614,8 +6650,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="D: 2 stars (out of 5)"
+                  height="32"
                   src="/svg/2-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -6680,10 +6717,10 @@ exports[`/ renders middle page 1`] = `
             value="85"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/x-2022/"
@@ -6741,7 +6778,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -6761,8 +6798,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -6831,10 +6869,10 @@ exports[`/ renders middle page 1`] = `
             value="84"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/holiday-affair-1949/"
@@ -6892,7 +6930,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -6912,8 +6950,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="C: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -6978,10 +7017,10 @@ exports[`/ renders middle page 1`] = `
             value="83"
           >
             <article
-              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik"
+              class="HomePageItem_gridStyle__94yx1k3 sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8"
             >
               <div
-                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_still__94yx1k4 sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <a
                   href="/reviews/dead-reckoning-1947/"
@@ -7039,7 +7078,7 @@ exports[`/ renders middle page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkjw sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk9e"
+                class="HomePageItem_gridAreas_excerpt__94yx1k5 sprinkles_display_flex_default__8lcvdk4e sprinkles_rowGap_24_default__8lcvdkik sprinkles_flexDirection_column_default__8lcvdk4w sprinkles_maxWidth_prose_default__8lcvdk82"
               >
                 <h2
                   class="sprinkles_fontWeight_bold__8lcvdk1u sprinkles_fontSize_homePageTitle__8lcvdko"
@@ -7059,8 +7098,9 @@ exports[`/ renders middle page 1`] = `
                 </h2>
                 <img
                   alt="C+: 3 stars (out of 5)"
+                  height="32"
                   src="/svg/3-stars.svg"
-                  style="height: 32px; width: 160px;"
+                  width="160"
                 />
                 <p
                   class="sprinkles_fontSize_normal__8lcvdka sprinkles_fontWeight_normal__8lcvdk1s sprinkles_color_subtle__8lcvdk1i sprinkles_letterSpacing_0.25__8lcvdk1x sprinkles_lineHeight_default__8lcvdk17"
@@ -7122,7 +7162,7 @@ exports[`/ renders middle page 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_40_default__8lcvdkj5 sprinkles_paddingBottom_40_default__8lcvdken sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk7e"
+          class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_40_default__8lcvdkht sprinkles_paddingBottom_40_default__8lcvdkdb sprinkles_fontSize_pagination__8lcvdkq sprinkles_justifyContent_center_default__8lcvdk62"
         >
           <div
             class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
@@ -7132,7 +7172,7 @@ exports[`/ renders middle page 1`] = `
             </h3>
           </div>
           <div
-            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk7b"
+            class="sprinkles_display_flex_default__8lcvdk4e sprinkles_justifyContent_space-between_default__8lcvdk5z"
           >
             <a
               class="sprinkles_textAlign_left__8lcvdk20"
@@ -7148,7 +7188,7 @@ exports[`/ renders middle page 1`] = `
             </a>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_24_default__8lcvdka8 sprinkles_display_block_default__8lcvdk48"
+            class="sprinkles_width_px_default__8lcvdkmt sprinkles_height_24_default__8lcvdk5h sprinkles_minWidth_px_default__8lcvdkcn sprinkles_minHeight_24_default__8lcvdk8w sprinkles_display_block_default__8lcvdk48"
           />
           <div
             class="sprinkles_textAlign_right__8lcvdk21 sprinkles_color_subtle__8lcvdk1i"
@@ -7217,11 +7257,11 @@ exports[`/ renders middle page 1`] = `
       </main>
     </div>
     <footer
-      class="sprinkles_paddingLeft_gutter_default__8lcvdkgn sprinkles_paddingRight_gutter_default__8lcvdkik sprinkles_paddingTop_32_default__8lcvdkj2 sprinkles_paddingBottom_32_default__8lcvdkek sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkjw sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
+      class="sprinkles_paddingLeft_gutter_default__8lcvdkfb sprinkles_paddingRight_gutter_default__8lcvdkh8 sprinkles_paddingTop_32_default__8lcvdkhq sprinkles_paddingBottom_32_default__8lcvdkd8 sprinkles_color_inverse__8lcvdk1j sprinkles_display_flex_default__8lcvdk4e sprinkles_backgroundImage_ripNotComingSoon__8lcvdk19 sprinkles_rowGap_24_default__8lcvdkik sprinkles_alignItems_center_default__8lcvdk2b sprinkles_flexDirection_column_default__8lcvdk4w"
     >
       <nav>
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk7e sprinkles_rowGap_8_default__8lcvdkjq"
+          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexWrap_wrap_default__8lcvdk4z sprinkles_justifyContent_center_default__8lcvdk62 sprinkles_rowGap_8_default__8lcvdkie"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk48 sprinkles_letterSpacing_0.5__8lcvdk1y sprinkles_whiteSpace_nowrap__8lcvdk27"
