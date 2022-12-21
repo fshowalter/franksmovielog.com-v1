@@ -14,3 +14,12 @@ export const gridStyle = style({
     },
   },
 });
+
+export const avatarMaxWidthStyle = style({
+  maxWidth: "40px",
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      maxWidth: "160px",
+    },
+  },
+});

@@ -9,7 +9,10 @@ import { Layout } from "../Layout";
 import { Link } from "../Link";
 import { SelectField } from "../SelectField";
 import { Spacer } from "../Spacer";
-import { gridStyle } from "./WatchlistEntityAvatarListWithFilters.css";
+import {
+  avatarMaxWidthStyle,
+  gridStyle,
+} from "./WatchlistEntityAvatarListWithFilters.css";
 import {
   ActionType,
   initState,
@@ -26,7 +29,7 @@ function Avatar({
     return (
       <Link
         to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-        maxWidth={{ default: 40, tablet: 160 }}
+        className={avatarMaxWidthStyle}
         transform="safariBorderRadiusFix"
         overflow="hidden"
         boxShadow="borderAll"
@@ -41,7 +44,7 @@ function Avatar({
   }
 
   return (
-    <Box maxWidth={{ default: 40, tablet: 160 }}>
+    <Box className={avatarMaxWidthStyle}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"

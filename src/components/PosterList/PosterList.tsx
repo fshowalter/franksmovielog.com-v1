@@ -7,7 +7,7 @@ import { Spacer } from "../Spacer";
 import {
   gradeStyle,
   gridStyle,
-  posterBorderRadiusStyle,
+  posterStyle,
   showTitleOnMobileOnlyStyle,
 } from "./PosterList.css";
 
@@ -58,9 +58,8 @@ function Image({ slug, image, title, year, ...rest }: IImageProps) {
   if (slug) {
     return (
       <Link
-        className={posterBorderRadiusStyle}
+        className={posterStyle}
         overflow="hidden"
-        maxWidth={{ default: 48, tablet: "poster" }}
         to={`/reviews/${slug}/`}
         transform="safariBorderRadiusFix"
         {...rest}
@@ -74,9 +73,9 @@ function Image({ slug, image, title, year, ...rest }: IImageProps) {
     <GraphqlImage
       image={image}
       alt="An unreviewed title."
-      maxWidth={{ default: 48, tablet: "poster" }}
-      className={posterBorderRadiusStyle}
+      className={posterStyle}
       overflow="hidden"
+      transform="safariBorderRadiusFix"
     />
   );
 }

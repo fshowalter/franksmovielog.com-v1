@@ -1,6 +1,5 @@
-import { composeClassNames } from "../../styles/composeClassNames";
 import { Box, IBoxProps } from "../Box";
-import { hoverStyle, iconLayoutStyle } from "./Button.css";
+import { buttonStyle } from "./Button.css";
 
 interface IButtonProps extends IBoxProps {
   onClick: () => void;
@@ -25,8 +24,7 @@ export function Button({
       paddingY={8}
       paddingX={16}
       color="default"
-      className={composeClassNames(hoverStyle, iconLayoutStyle)}
-      maxWidth={512}
+      className={buttonStyle}
       width="full"
       display="flex"
       justifyContent="center"

@@ -31,11 +31,9 @@ export function ArticlePage({
           <PageTitle paddingX="gutter">{title}</PageTitle>
           <GraphqlImage image={image} alt={alt} />
           <Spacer axis="vertical" size={64} />
-          <RenderedMarkdown
-            paddingX="gutter"
-            maxWidth="proseWithGutters"
-            text={articleText}
-          />
+          <Box paddingX="gutter">
+            <RenderedMarkdown maxWidth="prose" text={articleText} />
+          </Box>
           <Spacer axis="vertical" size={128} />
         </Box>
         <Box

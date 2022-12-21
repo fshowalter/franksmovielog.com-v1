@@ -1,10 +1,10 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { MAX_POSTER_WIDTH, size } from "../../styles/sizes.css";
+import { POSTER_WIDTH, size } from "../../styles/sizes.css";
 
 export const posterStyle = style({
-  maxWidth: MAX_POSTER_WIDTH,
+  maxWidth: POSTER_WIDTH,
   marginBottom: "16px",
 });
 

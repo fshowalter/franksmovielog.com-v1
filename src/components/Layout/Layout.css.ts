@@ -1,16 +1,16 @@
 import { style } from "@vanilla-extract/css";
 import { breakpoints, minMediaQuery } from "../../styles/breakpoints";
 import { backgroundColors, foregroundColors } from "../../styles/colors.css";
-import { MAX_STILL_WIDTH, size } from "../../styles/sizes.css";
+import { size, STILL_WIDTH } from "../../styles/sizes.css";
 
 export const pageCanvasStyle = style({
   minHeight: "100dvh",
-  maxWidth: `clamp(${MAX_STILL_WIDTH}, 95vw, ${breakpoints.max})`,
+  maxWidth: `clamp(${STILL_WIDTH}, 95vw, ${breakpoints.max})`,
   margin: "0 auto",
 });
 
 export const bandStickyStyle = style({
-  maxWidth: `clamp(${MAX_STILL_WIDTH}, 95vw, ${breakpoints.max})`,
+  maxWidth: `clamp(${STILL_WIDTH}, 95vw, ${breakpoints.max})`,
   margin: "0 auto",
 
   "@media": {

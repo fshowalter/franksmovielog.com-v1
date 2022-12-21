@@ -5,6 +5,7 @@ import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { PosterListWithFilters } from "../PosterListWithFilters";
 import { Spacer } from "../Spacer";
+import { avatarStyle } from "./PosterListWithFiltersForWatchlistEntity.css";
 
 interface IPosterListWithFiltersForWatchlistEntityProps extends IBoxProps {
   entity: Queries.PosterListWithFiltersForWatchlistEntityFragment;
@@ -35,9 +36,9 @@ export function PosterListWithFiltersForWatchlistEntity({
         <GraphqlImage
           image={entity.avatar}
           alt={entity.name}
-          maxWidth={200}
           borderRadius="half"
           transform="safariBorderRadiusFix"
+          className={avatarStyle}
         />
       </Box>
       <Spacer axis="vertical" size={16} />
@@ -79,15 +80,7 @@ export const query = graphql`
       sortTitle
       releaseDate
       poster {
-        childImageSharp {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            formats: [JPG, AVIF]
-            quality: 80
-            width: 200
-            placeholder: BLURRED
-          )
-        }
+        ...PosterListPoster
       }
     }
   }

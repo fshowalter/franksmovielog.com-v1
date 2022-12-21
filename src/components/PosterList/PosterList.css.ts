@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { size } from "../../styles/sizes.css";
+import { POSTER_WIDTH, size } from "../../styles/sizes.css";
 
 export const gridStyle = style({
   "@media": {
@@ -31,12 +31,14 @@ export const showTitleOnMobileOnlyStyle = style({
   },
 });
 
-export const posterBorderRadiusStyle = style({
+export const posterStyle = style({
   borderRadius: 0,
+  maxWidth: "48px",
 
   "@media": {
     [minMediaQuery("tablet")]: {
       borderRadius: size[8],
+      maxWidth: POSTER_WIDTH,
     },
   },
 });
