@@ -2,14 +2,14 @@
 
 exports[`/watchlist/performers/ can filter by name 1`] = `
 <ol
-  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_paddingLeft_0_default__8lcvdkgs sprinkles_paddingLeft_gutter_tablet__8lcvdkik sprinkles_paddingLeft_0_desktop__8lcvdkgu sprinkles_paddingRight_0_default__8lcvdkip sprinkles_paddingRight_gutter_tablet__8lcvdkkh sprinkles_paddingRight_0_desktop__8lcvdkir"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_paddingLeft_0_default__8lcvdkew sprinkles_paddingLeft_gutter_tablet__8lcvdkgo sprinkles_paddingLeft_0_desktop__8lcvdkey sprinkles_paddingRight_0_default__8lcvdkgt sprinkles_paddingRight_gutter_tablet__8lcvdkil sprinkles_paddingRight_0_desktop__8lcvdkgv"
   data-testid="entity-list"
 >
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <div
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u"
     >
       <svg
         fill="var(--bgSubtle__1atywg6d)"
@@ -25,10 +25,10 @@ exports[`/watchlist/performers/ can filter by name 1`] = `
       </svg>
     </div>
     <div
-      class="sprinkles_color_subtle__8lcvdk1e sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_color_subtle__8lcvdk1i sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -36,7 +36,7 @@ exports[`/watchlist/performers/ can filter by name 1`] = `
         Raymond Chandler
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </div>
   </li>
@@ -45,14 +45,14 @@ exports[`/watchlist/performers/ can filter by name 1`] = `
 
 exports[`/watchlist/performers/ can sort by name desc 1`] = `
 <ol
-  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_paddingLeft_0_default__8lcvdkgs sprinkles_paddingLeft_gutter_tablet__8lcvdkik sprinkles_paddingLeft_0_desktop__8lcvdkgu sprinkles_paddingRight_0_default__8lcvdkip sprinkles_paddingRight_gutter_tablet__8lcvdkkh sprinkles_paddingRight_0_desktop__8lcvdkir"
+  class="WatchlistEntityAvatarListWithFilters_gridStyle__wigtux0 sprinkles_paddingLeft_0_default__8lcvdkew sprinkles_paddingLeft_gutter_tablet__8lcvdkgo sprinkles_paddingLeft_0_desktop__8lcvdkey sprinkles_paddingRight_0_default__8lcvdkgt sprinkles_paddingRight_gutter_tablet__8lcvdkil sprinkles_paddingRight_0_desktop__8lcvdkgv"
   data-testid="entity-list"
 >
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <a
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq sprinkles_borderRadius_half_default__8lcvdk51 sprinkles_transform_safariBorderRadiusFix__8lcvdk22 sprinkles_overflow_hidden__8lcvdk1v sprinkles_boxShadow_borderAll_default__8lcvdk5a"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u sprinkles_transform_safariBorderRadiusFix__8lcvdk26 sprinkles_overflow_hidden__8lcvdk1z sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_half__8lcvdk1d"
       href="/watchlist/writers/stephen-king/"
     >
       <div
@@ -106,11 +106,11 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
       </div>
     </a>
     <a
-      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
       href="/watchlist/writers/stephen-king/"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -118,15 +118,15 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
         Stephen King
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </a>
   </li>
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <div
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u"
     >
       <svg
         fill="var(--bgSubtle__1atywg6d)"
@@ -142,10 +142,10 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
       </svg>
     </div>
     <div
-      class="sprinkles_color_subtle__8lcvdk1e sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_color_subtle__8lcvdk1i sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -153,15 +153,15 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
         Raymond Chandler
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </div>
   </li>
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <a
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq sprinkles_borderRadius_half_default__8lcvdk51 sprinkles_transform_safariBorderRadiusFix__8lcvdk22 sprinkles_overflow_hidden__8lcvdk1v sprinkles_boxShadow_borderAll_default__8lcvdk5a"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u sprinkles_transform_safariBorderRadiusFix__8lcvdk26 sprinkles_overflow_hidden__8lcvdk1z sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_half__8lcvdk1d"
       href="/watchlist/writers/neil-labute/"
     >
       <div
@@ -215,11 +215,11 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
       </div>
     </a>
     <a
-      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
       href="/watchlist/writers/neil-labute/"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -227,15 +227,15 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
         Neil LaBute
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </a>
   </li>
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <a
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq sprinkles_borderRadius_half_default__8lcvdk51 sprinkles_transform_safariBorderRadiusFix__8lcvdk22 sprinkles_overflow_hidden__8lcvdk1v sprinkles_boxShadow_borderAll_default__8lcvdk5a"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u sprinkles_transform_safariBorderRadiusFix__8lcvdk26 sprinkles_overflow_hidden__8lcvdk1z sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_half__8lcvdk1d"
       href="/watchlist/writers/leigh-brackett/"
     >
       <div
@@ -289,11 +289,11 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
       </div>
     </a>
     <a
-      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
       href="/watchlist/writers/leigh-brackett/"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -301,15 +301,15 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
         Leigh Brackett
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </a>
   </li>
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <a
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq sprinkles_borderRadius_half_default__8lcvdk51 sprinkles_transform_safariBorderRadiusFix__8lcvdk22 sprinkles_overflow_hidden__8lcvdk1v sprinkles_boxShadow_borderAll_default__8lcvdk5a"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u sprinkles_transform_safariBorderRadiusFix__8lcvdk26 sprinkles_overflow_hidden__8lcvdk1z sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_half__8lcvdk1d"
       href="/watchlist/writers/david-mamet/"
     >
       <div
@@ -363,11 +363,11 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
       </div>
     </a>
     <a
-      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
       href="/watchlist/writers/david-mamet/"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -375,15 +375,15 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
         David Mamet
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </a>
   </li>
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <a
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq sprinkles_borderRadius_half_default__8lcvdk51 sprinkles_transform_safariBorderRadiusFix__8lcvdk22 sprinkles_overflow_hidden__8lcvdk1v sprinkles_boxShadow_borderAll_default__8lcvdk5a"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u sprinkles_transform_safariBorderRadiusFix__8lcvdk26 sprinkles_overflow_hidden__8lcvdk1z sprinkles_boxShadow_borderAll_default__8lcvdk3n sprinkles_borderRadius_half__8lcvdk1d"
       href="/watchlist/writers/clive-barker/"
     >
       <div
@@ -437,11 +437,11 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
       </div>
     </a>
     <a
-      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
       href="/watchlist/writers/clive-barker/"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -449,15 +449,15 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
         Clive Barker
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </a>
   </li>
   <li
-    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkim sprinkles_paddingLeft_0_tablet__8lcvdkgt sprinkles_paddingRight_popoutGutter_default__8lcvdkkj sprinkles_paddingRight_0_tablet__8lcvdkiq sprinkles_paddingTop_16_default__8lcvdkks sprinkles_paddingTop_0_tablet__8lcvdkkn sprinkles_paddingBottom_16_default__8lcvdkga sprinkles_paddingBottom_0_tablet__8lcvdkg5 sprinkles_display_flex_default__8lcvdk64 sprinkles_flexDirection_row_default__8lcvdk6j sprinkles_flexDirection_column_tablet__8lcvdk6n sprinkles_columnGap_32_default__8lcvdk5p sprinkles_backgroundColor_zebraOdd_default__8lcvdk37 sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3b sprinkles_alignItems_center_default__8lcvdk27"
+    class="sprinkles_paddingLeft_popoutGutter_default__8lcvdkgq sprinkles_paddingLeft_0_tablet__8lcvdkex sprinkles_paddingRight_popoutGutter_default__8lcvdkin sprinkles_paddingRight_0_tablet__8lcvdkgu sprinkles_paddingTop_16_default__8lcvdkiw sprinkles_paddingTop_0_tablet__8lcvdkir sprinkles_paddingBottom_16_default__8lcvdkee sprinkles_paddingBottom_0_tablet__8lcvdke9 sprinkles_display_flex_default__8lcvdk4e sprinkles_flexDirection_row_default__8lcvdk4t sprinkles_flexDirection_column_tablet__8lcvdk4x sprinkles_columnGap_32_default__8lcvdk42 sprinkles_backgroundColor_zebraOdd_default__8lcvdk3b sprinkles_backgroundColor_zebraOff_tablet__8lcvdk3f sprinkles_alignItems_center_default__8lcvdk2b"
   >
     <div
-      class="sprinkles_maxWidth_40_default__8lcvdka1 sprinkles_maxWidth_160_tablet__8lcvdkaq"
+      class="sprinkles_maxWidth_40_default__8lcvdk85 sprinkles_maxWidth_160_tablet__8lcvdk8u"
     >
       <svg
         fill="var(--bgSubtle__1atywg6d)"
@@ -473,10 +473,10 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
       </svg>
     </div>
     <div
-      class="sprinkles_color_subtle__8lcvdk1e sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk1y"
+      class="sprinkles_color_subtle__8lcvdk1i sprinkles_fontSize_posterTitle__8lcvdkj sprinkles_textAlign_center__8lcvdk22"
     >
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
       <div
         class="sprinkles_lineHeight_default__8lcvdk17"
@@ -484,7 +484,7 @@ exports[`/watchlist/performers/ can sort by name desc 1`] = `
         Anthony Shaffer
       </div>
       <span
-        class="sprinkles_width_px_default__8lcvdkpy sprinkles_height_4_default__8lcvdk74 sprinkles_minWidth_px_default__8lcvdkfv sprinkles_minHeight_4_default__8lcvdkbv sprinkles_display_block_default__8lcvdk5y"
+        class="sprinkles_width_px_default__8lcvdko2 sprinkles_height_4_default__8lcvdk58 sprinkles_minWidth_px_default__8lcvdkdz sprinkles_minHeight_4_default__8lcvdk9z sprinkles_display_block_default__8lcvdk48"
       />
     </div>
   </li>
