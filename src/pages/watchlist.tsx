@@ -69,7 +69,7 @@ function WatchlistMovieSlug({
   return (
     <Box
       color="subtle"
-      fontSize="small"
+      fontSize="xSmall"
       fontWeight="light"
       lineHeight={16}
       letterSpacing={0.5}
