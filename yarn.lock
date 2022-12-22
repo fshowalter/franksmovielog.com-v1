@@ -1116,7 +1116,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/template@^7.12.13", "@babel/template@^7.16.7", "@babel/template@^7.18.10", "@babel/template@^7.3.3":
+"@babel/template@^7.16.7", "@babel/template@^7.18.10", "@babel/template@^7.3.3":
   version "7.18.10"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.18.10.tgz#6f9134835970d1dbf0835c0d100c9f38de0c5e71"
   integrity sha512-TI+rCtooWHr3QJ27kJxfjutghu44DLnasDMwpDqCXVTal9RLp3RSYNh4NdBrRP2cQAoG9A8juOQl6P6oZG4JxA==
@@ -3137,16 +3137,7 @@
   dependencies:
     "@babel/core" "^7.13.10"
 
-"@vanilla-extract/babel-plugin@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin/-/babel-plugin-1.2.0.tgz#a8f31c0536ec180f8ddb9901b2712d17825aa758"
-  integrity sha512-4R+hqoyzoyJIrE+NgrYxZuL6GqGH28hiBrPUOxwtvqnJJ5WnUl2/WzItLDDH9YT1Auwl3cIR7pcbrV6HIchORA==
-  dependencies:
-    "@babel/core" "^7.13.10"
-    "@babel/template" "^7.12.13"
-    "@vanilla-extract/integration" "^5.0.0"
-
-"@vanilla-extract/css@^1.7.2", "@vanilla-extract/css@^1.9.2":
+"@vanilla-extract/css@^1.9.2":
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.9.2.tgz#2c4bcc58f3c7441a1d041083c76bf5c3e2c77675"
   integrity sha512-CE5+R89LOl9XG5dRwEIvVyl/YcS2GkqjdE/XnGJ+p7Fp6Exu08fifv7tY87XxFeCIRAbc9psM+h4lF+wC3Y0fg==
@@ -3161,19 +3152,6 @@
     deep-object-diff "^1.1.0"
     deepmerge "^4.2.2"
     media-query-parser "^2.0.2"
-    outdent "^0.8.0"
-
-"@vanilla-extract/integration@^5.0.0":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-5.0.1.tgz#d94fd1e7179325495f099b8e1a921930ac7e3e76"
-  integrity sha512-HRV/HvC/lihb9wT3x5s7pf5qLjqxSd9nBePJ10juOuMB5cl2ZClEcts076m9BuRKM3wRK2h7KuwkNsaUtjujxQ==
-  dependencies:
-    "@vanilla-extract/css" "^1.7.2"
-    esbuild "^0.11.16"
-    eval "0.1.6"
-    find-up "^5.0.0"
-    javascript-stringify "^2.0.1"
-    lodash "^4.17.21"
     outdent "^0.8.0"
 
 "@vanilla-extract/integration@^6.0.0":
@@ -6666,6 +6644,14 @@ gatsby-plugin-page-creator@^5.2.0:
     globby "^11.1.0"
     lodash "^4.17.21"
 
+gatsby-plugin-postcss@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-6.3.0.tgz#899c1834f75127aa831d07fe08c98c555ded2f86"
+  integrity sha512-u9fwymSYUoLjjpdbSX3PNqK5Tb1foIj+2VpghDliuWJS3pIj+2EGBniTlTeeX9q3kbrqlVEBl1aeRDKpUICdVg==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    postcss-loader "^7.0.1"
+
 gatsby-plugin-sharp@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.2.0.tgz#fd954f7c63f99e63197dd4794558bc3af742618b"
@@ -8737,7 +8723,7 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-klona@^2.0.4:
+klona@^2.0.4, klona@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
   integrity sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==
@@ -10338,6 +10324,15 @@ postcss-loader@^5.3.0:
     klona "^2.0.4"
     semver "^7.3.4"
 
+postcss-loader@^7.0.1:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-7.0.2.tgz#b53ff44a26fba3688eee92a048c7f2d4802e23bb"
+  integrity sha512-fUJzV/QH7NXUAqV8dWJ9Lg4aTkDCezpTS5HgJ2DvqznexTbSTxgi/dTECvTZ15BwKTtk8G/bqI/QTu2HPd3ZCg==
+  dependencies:
+    cosmiconfig "^7.0.0"
+    klona "^2.0.5"
+    semver "^7.3.8"
+
 postcss-merge-longhand@^5.1.6:
   version "5.1.6"
   resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-5.1.6.tgz#f378a8a7e55766b7b644f48e5d8c789ed7ed51ce"
@@ -10510,6 +10505,13 @@ postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
+postcss-sort-media-queries@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/postcss-sort-media-queries/-/postcss-sort-media-queries-4.3.0.tgz#f48a77d6ce379e86676fc3f140cf1b10a06f6051"
+  integrity sha512-jAl8gJM2DvuIJiI9sL1CuiHtKM4s5aEIomkU8G3LFvbP+p8i7Sz8VV63uieTgoewGqKbi+hxBTiOKJlB35upCg==
+  dependencies:
+    sort-css-media-queries "2.1.0"
+
 postcss-svgo@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/postcss-svgo/-/postcss-svgo-5.1.0.tgz#0a317400ced789f233a28826e77523f15857d80d"
@@ -10534,6 +10536,15 @@ postcss@^8.2.15, postcss@^8.2.9, postcss@^8.3.11:
   version "8.4.19"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.19.tgz#61178e2add236b17351897c8bcc0b4c8ecab56fc"
   integrity sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==
+  dependencies:
+    nanoid "^3.3.4"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
+
+postcss@^8.4.20:
+  version "8.4.20"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.20.tgz#64c52f509644cecad8567e949f4081d98349dc56"
+  integrity sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g==
   dependencies:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
@@ -11481,7 +11492,7 @@ semver@^6.0.0, semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-semver@^7.2.1, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7:
+semver@^7.2.1, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8:
   version "7.3.8"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.8.tgz#07a78feafb3f7b32347d725e33de7e2a2df67798"
   integrity sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==
@@ -11755,6 +11766,11 @@ socket.io@3.1.2:
     engine.io "~4.1.0"
     socket.io-adapter "~2.1.0"
     socket.io-parser "~4.0.3"
+
+sort-css-media-queries@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sort-css-media-queries/-/sort-css-media-queries-2.1.0.tgz#7c85e06f79826baabb232f5560e9745d7a78c4ce"
+  integrity sha512-IeWvo8NkNiY2vVYdPa27MCQiR0MN0M80johAYFVxWWXQ44KU84WNxjslwBHmc/7ZL2ccwkM7/e6S5aiKZXm7jA==
 
 source-list-map@^2.0.0:
   version "2.0.1"

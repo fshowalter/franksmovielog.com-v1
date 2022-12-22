@@ -1,18 +1,3 @@
-export const fontSizes = {
-  small: "0.875rem",
-  normal: "1rem",
-  large: "1.5625rem",
-  xLarge: "1.875rem",
-  xxLarge: "2rem",
-};
-
-export const fontWeights = {
-  light: 300,
-  normal: 400,
-  semiBold: 600,
-  bold: 700,
-};
-
 export const lineHeights = {
   0: 0,
   1: 1,
@@ -25,9 +10,4 @@ export const lineHeights = {
   40: "2.5rem",
   48: "3rem",
   prose: "1.75rem",
-};
-
-export const letterSpacing = {
-  0.25: "0.015625rem",
-  0.5: "0.03125rem",
 };

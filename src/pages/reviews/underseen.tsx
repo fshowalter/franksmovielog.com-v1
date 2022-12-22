@@ -31,17 +31,20 @@ export default function UnderseenGemsPage({
       distinctGenres={data.underseen.genres}
       initialSort="release-date-desc"
     >
-      <Link to="/reviews/">Reviews</Link>
-      <Spacer axis="vertical" size={16} />
-      <Box as="h1" fontSize="pageTitle">
-        Underseen Gems
-      </Box>
-      <Spacer axis="vertical" size={16} />
-      <Box color="subtle">
-        <Box as="q" fontWeight="semiBold">
-          My God, it&apos;s full of stars!
+      <Box display="flex" flexDirection="column" alignItems="center">
+        <Link to="/reviews/">Reviews</Link>
+        <Box as="h1" fontSize="pageTitle">
+          Underseen Gems
+          <Spacer axis="vertical" size={8} />
         </Box>
-        <Spacer axis="vertical" size={16} />
+        <Box color="subtle">
+          <Box as="q" display="block" textAlign="center" color="subtle">
+            My God, it&apos;s full of stars!
+          </Box>
+          <Spacer axis="vertical" size={32} />
+        </Box>
+      </Box>
+      <Box color="subtle">
         <p>
           Four and five star movies with a below average number of IMDb votes.
         </p>

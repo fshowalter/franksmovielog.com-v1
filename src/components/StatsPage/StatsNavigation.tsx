@@ -63,7 +63,7 @@ export function StatsNavigation({
       fontSize="medium"
       columnGap={16}
       rowGap={16}
-      flexWrap={{ default: "wrap", desktop: "nowrap" }}
+      flexWrap="wrap"
       justifyContent="center"
     >
       <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />

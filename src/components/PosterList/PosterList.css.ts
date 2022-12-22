@@ -13,11 +13,26 @@ export const gridStyle = style({
   },
 });
 
-export const gradeStyle = style({
+export const slugTypographyStyle = style({
+  fontSize: ".875rem",
+  lineHeight: "1rem",
+
   "@media": {
     [minMediaQuery("tablet")]: {
-      width: "80px !important",
-      height: "16px !important",
+      fontSize: "0.75rem",
+      lineHeight: "1rem",
+    },
+  },
+});
+
+export const titleTypographyStyle = style({
+  fontSize: "1.1875rem",
+  lineHeight: "1.5rem",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      fontSize: "1rem",
+      lineHeight: "1.5rem",
     },
   },
 });

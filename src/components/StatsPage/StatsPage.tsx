@@ -90,6 +90,7 @@ export function StatsPage({
         <Box paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}>
           <Spacer axis="vertical" size={32} />
           <MostWatchedMovies movies={mostWatchedMovies} />
+          <Spacer axis="vertical" size={32} />
           <ByReleaseYearStats decades={viewingsCountsByDecade} />
           <Spacer axis="vertical" size={32} />
           <TopMedia topMedia={mostWatchedMedia} />

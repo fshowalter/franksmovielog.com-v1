@@ -9,6 +9,7 @@ export const flagTypographyStyle = style({
 
 export const taglineStyle = style({
   fontStyle: "italic",
+  lineHeight: "1rem",
 
   "@media": {
     [minMediaQuery("desktop")]: {

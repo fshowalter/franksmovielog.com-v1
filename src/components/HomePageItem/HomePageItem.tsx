@@ -90,11 +90,10 @@ export function HomePageItem({
         <GridArea name="date">
           <Box
             display="flex"
-            fontSize="small"
             fontWeight="light"
             whiteSpace="nowrap"
             color="subtle"
-            lineHeight={32}
+            fontSize="small"
             alignItems="center"
             textTransform="uppercase"
             className={dateLetterSpacingStyle}
@@ -102,7 +101,7 @@ export function HomePageItem({
             <Box display={{ default: "block", desktop: "none" }}>
               <DateIcon />{" "}
             </Box>
-            {viewing.date}
+            <Box lineHeight={32}>{viewing.date}</Box>
           </Box>
         </GridArea>
       </Grid>

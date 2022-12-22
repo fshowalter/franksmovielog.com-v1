@@ -31,21 +31,24 @@ export default function OverratedDisappointmentsPage({
       distinctReleaseYears={data.disappointment.releaseYears}
       distinctGenres={data.disappointment.genres}
     >
-      <Link to="/reviews/">Reviews</Link>
-      <Spacer axis="vertical" size={16} />
-      <Box as="h1" fontSize="pageTitle">
-        Overrated Disappointments
-      </Box>
-      <Spacer axis="vertical" size={16} />
-      <Box color="subtle">
-        <Box as="q" fontWeight="semiBold">
-          Sorry don&apos;t get it done, Dude.
+      <Box display="flex" flexDirection="column" alignItems="center">
+        <Link to="/reviews/">Reviews</Link>
+        <Box as="h1" fontSize="pageTitle" textAlign="center">
+          Overrated Disappointments
+          <Spacer axis="vertical" size={8} />
         </Box>
-        <Spacer axis="vertical" size={16} />
-        <p>
-          One and two star movies with an above-average IMDb rating and vote
-          count.
-        </p>
+        <Box color="subtle">
+          <Box as="q" display="block" textAlign="center" color="subtle">
+            My God, it&apos;s full of stars!
+          </Box>
+          <Spacer axis="vertical" size={32} />
+        </Box>
+        <Box color="subtle">
+          <p>
+            One and two star movies with an above-average IMDb rating and vote
+            count.
+          </p>
+        </Box>
       </Box>
     </PosterListWithFilters>
   );

@@ -140,25 +140,23 @@ export function WatchlistEntityAvatarListWithFilters({
         <Box
           display="flex"
           flexDirection="column"
-          alignItems={{ default: "center", desktop: "flex-start" }}
+          alignItems="center"
           paddingX={{ default: "pageMargin", desktop: 0 }}
           paddingTop={32}
           flexBasis={352}
         >
-          <Box
-            maxWidth="prose"
-            display="flex"
-            flexDirection="column"
-            alignItems={{ default: "center", desktop: "flex-start" }}
-          >
-            <Link to="/watchlist/">Watchlist</Link>
-            <Spacer axis="vertical" size={16} />
-            <Box as="h1" fontSize="pageTitle">
-              {title}
-            </Box>
-            <Spacer axis="vertical" size={16} />
-            <Box color="subtle">
-              <q>{tagline}</q>
+          <Box maxWidth="prose">
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Link to="/watchlist/">Watchlist</Link>
+              <Box as="h1" fontSize="pageTitle" textAlign="center">
+                {title}
+                <Spacer axis="vertical" size={8} />
+              </Box>
+              <Box color="subtle">
+                <Box as="q" display="block" textAlign="center" color="subtle">
+                  {tagline}
+                </Box>
+              </Box>
             </Box>
           </Box>
           <Spacer axis="vertical" size={32} />

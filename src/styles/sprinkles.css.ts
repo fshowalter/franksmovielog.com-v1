@@ -2,71 +2,10 @@ import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { minMediaQuery } from "./breakpoints";
 import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
 import { height, relativeSize, size, width } from "./sizes.css";
-import { fontWeights, letterSpacing, lineHeights } from "./typography.css";
+import { lineHeights } from "./typography.css";
 
 const unresponsiveAtomicProperties = defineProperties({
   properties: {
-    fontSize: {
-      ...relativeSize,
-      posterSlug: {
-        fontSize: ".875rem",
-        lineHeight: "1rem",
-
-        "@media": {
-          [minMediaQuery("tablet")]: {
-            fontSize: "0.75rem",
-            lineHeight: "1rem",
-          },
-        },
-      },
-      xSmall: {
-        fontSize: "0.75rem",
-        lineHeight: 1,
-      },
-      small: {
-        fontSize: "0.875rem",
-        lineHeight: 1,
-      },
-      default: {
-        fontSize: "1rem",
-        lineHeight: "1.5rem",
-      },
-      medium: {
-        fontSize: "1.1875rem",
-        lineHeight: "1.5rem",
-
-        "@media": {
-          [minMediaQuery("desktop")]: {
-            fontSize: "1.25rem",
-          },
-        },
-      },
-      large: {
-        fontSize: "1.625rem",
-        lineHeight: "2rem",
-
-        "@media": {
-          [minMediaQuery("desktop")]: {
-            fontSize: "1.875rem",
-          },
-        },
-      },
-      xLarge: {
-        fontSize: "2rem",
-        lineHeight: 1,
-      },
-      pageTitle: {
-        fontSize: "2rem",
-        fontWeight: "normal",
-        lineHeight: 1,
-
-        "@media": {
-          [minMediaQuery("desktop")]: {
-            fontSize: "2.25rem",
-          },
-        },
-      },
-    },
     lineHeight: lineHeights,
     backgroundImage: {
       ripNotComingSoon: {
@@ -84,9 +23,55 @@ const unresponsiveAtomicProperties = defineProperties({
     flexBasis: { 352: "352px" },
     flexGrow: [1],
     flexShrink: [0],
-    fontWeight: fontWeights,
+    fontSize: {
+      ...relativeSize,
+      xSmall: {
+        fontSize: "0.75rem",
+        lineHeight: 1,
+      },
+      small: {
+        fontSize: "0.875rem",
+        lineHeight: 1,
+      },
+      default: {
+        fontSize: "1rem",
+        lineHeight: "1.5rem",
+      },
+      medium: {
+        fontSize: "1.1875rem",
+        lineHeight: "1.5rem",
+      },
+      large: {
+        fontSize: "1.625rem",
+        lineHeight: "2rem",
+      },
+      xLarge: {
+        fontSize: "2rem",
+        lineHeight: 1,
+      },
+      pageTitle: {
+        fontSize: "2rem",
+        fontWeight: "normal",
+        lineHeight: 1,
+
+        "@media": {
+          [minMediaQuery("desktop")]: {
+            fontSize: "2.25rem",
+          },
+        },
+      },
+    },
+    fontWeight: {
+      light: 300,
+      normal: 400,
+      semiBold: 600,
+      bold: 700,
+    },
     justifyItems: ["center", "inherit"],
-    letterSpacing: letterSpacing,
+    letterSpacing: {
+      0.25: "0.015625rem",
+      0.5: "0.03125rem",
+    },
     overflow: ["hidden"],
     textAlign: ["left", "right", "center", "inherit"],
     textTransform: ["uppercase"],

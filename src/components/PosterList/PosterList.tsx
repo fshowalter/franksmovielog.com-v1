@@ -5,10 +5,11 @@ import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { Spacer } from "../Spacer";
 import {
-  gradeStyle,
   gridStyle,
   posterStyle,
   showTitleOnMobileOnlyStyle,
+  slugTypographyStyle,
+  titleTypographyStyle,
 } from "./PosterList.css";
 
 function MediumAndVenue({
@@ -97,7 +98,11 @@ function Title({
 
   if (slug)
     return (
-      <Link to={`/reviews/${slug}/`}>
+      <Link
+        to={`/reviews/${slug}/`}
+        className={titleTypographyStyle}
+        display="inline-block"
+      >
         {title}&nbsp;{yearBox}
       </Link>
     );
@@ -140,7 +145,7 @@ export function Poster({
       backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
       paddingX={{ default: "gutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
-      alignItems={{ default: "center" }}
+      alignItems={{ default: "center", tablet: "flex-start" }}
       display="flex"
     >
       <Image
@@ -151,10 +156,7 @@ export function Poster({
         flexShrink={0}
       />
       <Box flexGrow={1}>
-        <Box
-          fontSize="medium"
-          className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}
-        >
+        <Box className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}>
           <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
           <Title title={title} year={year} slug={slug} />
           <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
@@ -163,10 +165,9 @@ export function Poster({
           color="subtle"
           display="flex"
           flexDirection="column"
-          fontSize="posterSlug"
+          className={slugTypographyStyle}
           fontWeight="light"
           letterSpacing={0.5}
-          lineHeight={16}
         >
           {grade && (
             <Box
@@ -175,7 +176,7 @@ export function Poster({
               flexDirection="column"
               justifyContent="center"
             >
-              <Grade grade={grade} height={16} className={gradeStyle} />
+              <Grade grade={grade} height={16} />
             </Box>
           )}
           <Box>

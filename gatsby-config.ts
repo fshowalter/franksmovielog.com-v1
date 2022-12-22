@@ -145,6 +145,7 @@ const config: GatsbyConfig = {
     gatsbyPluginManifest,
     gatsbyPluginFeed,
     "gatsby-plugin-vanilla-extract",
+    "gatsby-plugin-postcss",
   ],
 };
 

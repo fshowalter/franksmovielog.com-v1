@@ -6,20 +6,20 @@ export const gutterWidth = createVar();
 
 globalStyle(":root", {
   vars: {
-    [pageMarginWidth]: "20px",
     [gutterWidth]: "20px",
+    [pageMarginWidth]: "20px",
   },
   "@media": {
     [minMediaQuery("tablet")]: {
       vars: {
-        [pageMarginWidth]: "48px",
         [gutterWidth]: "24px",
+        [pageMarginWidth]: "48px",
       },
     },
     [minMediaQuery("desktop")]: {
       vars: {
-        [pageMarginWidth]: "64px",
         [gutterWidth]: "32px",
+        [pageMarginWidth]: "64px",
       },
     },
   },
@@ -116,8 +116,8 @@ export const width = {
   full: "100%",
   half: "50%",
   unset: "unset",
-  pageMargin: pageMarginWidth,
-  gutter: gutterWidth,
   popout: POPOUT_WIDTH,
   prose: PROSE_CONTENT_WIDTH,
+  gutter: gutterWidth,
+  pageMargin: pageMarginWidth,
 };
