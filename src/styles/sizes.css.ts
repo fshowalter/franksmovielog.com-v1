@@ -25,6 +25,22 @@ globalStyle(":root", {
   },
 });
 
+export const HEADER_HEIGHT = 128;
+
+export const STILL_WIDTH = "960px";
+export const POSTER_WIDTH = "248px";
+export const PROSE_CONTENT_WIDTH = "36rem";
+export const POPOUT_WIDTH = `calc((${gutterWidth} * 2) + ${PROSE_CONTENT_WIDTH})`;
+
+function toRem(px: number) {
+  return `${px / 16}rem`;
+}
+
+export const relativeSize = {
+  14: toRem(14),
+  18: toRem(18),
+};
+
 export const size = {
   px: "1px",
   full: "100%",
@@ -47,40 +63,6 @@ export const size = {
   320: "320px",
   384: "384px",
   512: "512px",
-};
-
-export const HEADER_HEIGHT = 128;
-
-export const GUTTER = "clamp(20px, 4vw, 64px)";
-
-export const GRID = {
-  GUTTER: `minmax(${gutterWidth}, 1fr)`,
-};
-
-export const STILL_WIDTH = "960px";
-export const POSTER_WIDTH = "248px";
-export const PROSE_CONTENT_WIDTH = "36rem";
-
-export const POPOUT_WIDTH = `calc((${gutterWidth} * 2) + ${PROSE_CONTENT_WIDTH})`;
-// export const PROSE_CONTENT_WIDTH_WITH_GUTTERS = `calc((${gutterWidth} * 2) + 33rem)`;
-// export const MAX_CONTENT_WIDTH_WITH_GUTTERS = `calc((${GUTTER} * 2) + ${STILL_WIDTH})`;
-// export const QUAD_POSTER = "1088px";
-
-function toRem(px: number) {
-  return `${px / 16}rem`;
-}
-
-export const relativeSize = {
-  0: 0,
-  8: toRem(8),
-  14: toRem(14),
-  16: toRem(16),
-  18: toRem(18),
-  19: toRem(19),
-  20: toRem(20),
-  24: toRem(24),
-  25: toRem(25),
-  26: toRem(26),
 };
 
 export const height = {
