@@ -1,7 +1,8 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 
-export const reviewTypographyStyle = style({
+export const typographyStyle = style({
+  letterSpacing: "0.3px",
   fontSize: "1.125rem",
   lineHeight: "1.75rem",
 

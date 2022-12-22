@@ -1,8 +1,7 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
-import { RenderedMarkdown } from "../RenderedMarkdown";
-import { reviewTypographyStyle } from "./ReviewContent.css";
+import { LongFormText } from "../LongFormText";
 
 interface IReviewContentProps extends IBoxProps {
   review: Queries.ReviewContentFragment;
@@ -23,9 +22,8 @@ export function ReviewContent({ review, ...rest }: IReviewContentProps) {
           <span>on</span> {review.viewings[0].date}
         </Box>
       </Box>
-      <RenderedMarkdown
+      <LongFormText
         maxWidth="prose"
-        className={reviewTypographyStyle}
         // eslint-disable-next-line react/no-danger
         text={review.review.linkedHtml}
       />

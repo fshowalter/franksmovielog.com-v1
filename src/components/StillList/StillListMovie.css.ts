@@ -45,6 +45,8 @@ export const gridStyle = style({
       padding: 0,
       backgroundColor: backgroundColors.default,
       boxShadow: `0 0 0 1px ${borderColors.default}`,
+      borderRadius: "8px",
+      overflow: "hidden",
       maxWidth: "312px",
       ...gridTemplate<GridAreas, 1>({
         rows: [

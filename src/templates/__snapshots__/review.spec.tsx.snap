@@ -277,7 +277,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <div
-            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 ReviewContent_reviewTypographyStyle__1inbz680 sprinkles_fontWeight_light__8lcvdkm sprinkles_maxWidth_prose_default__8lcvdk8b"
+            class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 LongFormText_typographyStyle__1ddgr590 sprinkles_fontWeight_light__8lcvdkm sprinkles_maxWidth_prose_default__8lcvdk8b"
           >
             <p>
               For Peter Cushing and Christopher Lee’s first film for Hammer, 
@@ -359,10 +359,10 @@ exports[`/reviews/{slug} renders 1`] = `
           </h3>
           <ul>
             <div
-              class="ViewingHistoryEntry_gridStyle__7xjb260 sprinkles_paddingLeft_gutter_default__8lcvdke2 sprinkles_paddingRight_gutter_default__8lcvdkfq sprinkles_backgroundColor_zebra_default__8lcvdk2b sprinkles_display_block_default__8lcvdk4h"
+              class="ViewingHistoryEntry_gridStyle__7xjb261 sprinkles_paddingLeft_gutter_default__8lcvdke2 sprinkles_paddingRight_gutter_default__8lcvdkfq sprinkles_backgroundColor_zebra_default__8lcvdk2b sprinkles_display_block_default__8lcvdk4h"
             >
               <div
-                class="ViewingHistoryEntry_gridAreas_icon__7xjb261"
+                class="ViewingHistoryEntry_gridAreas_icon__7xjb262"
               >
                 <svg
                   class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -390,7 +390,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__7xjb262"
+                class="ViewingHistoryEntry_gridAreas_date__7xjb263"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk5 sprinkles_display_inline-block_default__8lcvdk4w"
@@ -425,17 +425,17 @@ exports[`/reviews/{slug} renders 1`] = `
                 </span>
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_venue__7xjb265"
+                class="ViewingHistoryEntry_gridAreas_venue__7xjb266"
               />
               <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__7xjb266"
+                class="ViewingHistoryEntry_gridAreas_viewingNote__7xjb267"
               />
             </div>
             <div
-              class="ViewingHistoryEntry_gridStyle__7xjb260 sprinkles_paddingLeft_gutter_default__8lcvdke2 sprinkles_paddingRight_gutter_default__8lcvdkfq sprinkles_backgroundColor_zebra_default__8lcvdk2b sprinkles_display_block_default__8lcvdk4h"
+              class="ViewingHistoryEntry_gridStyle__7xjb261 sprinkles_paddingLeft_gutter_default__8lcvdke2 sprinkles_paddingRight_gutter_default__8lcvdkfq sprinkles_backgroundColor_zebra_default__8lcvdk2b sprinkles_display_block_default__8lcvdk4h"
             >
               <div
-                class="ViewingHistoryEntry_gridAreas_icon__7xjb261"
+                class="ViewingHistoryEntry_gridAreas_icon__7xjb262"
               >
                 <svg
                   class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -463,7 +463,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__7xjb262"
+                class="ViewingHistoryEntry_gridAreas_date__7xjb263"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk5 sprinkles_display_inline-block_default__8lcvdk4w"
@@ -485,10 +485,10 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_venue__7xjb265"
+                class="ViewingHistoryEntry_gridAreas_venue__7xjb266"
               />
               <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__7xjb266"
+                class="ViewingHistoryEntry_gridAreas_viewingNote__7xjb267"
               />
             </div>
           </ul>

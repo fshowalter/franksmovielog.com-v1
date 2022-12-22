@@ -1,8 +1,8 @@
 import { Box } from "../Box";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Layout } from "../Layout";
+import { LongFormText } from "../LongFormText";
 import { PageTitle } from "../PageTitle";
-import { RenderedMarkdown } from "../RenderedMarkdown";
 import { Spacer } from "../Spacer";
 import { StillList, StillListHeading, StillListNav } from "../StillList";
 
@@ -38,7 +38,7 @@ export function ArticlePage({
           <GraphqlImage image={image} alt={alt} />
           <Spacer axis="vertical" size={64} />
           <Box paddingX="pageMargin">
-            <RenderedMarkdown maxWidth="prose" text={articleText} />
+            <LongFormText maxWidth="prose" text={articleText} />
           </Box>
           <Spacer axis="vertical" size={128} />
         </Box>

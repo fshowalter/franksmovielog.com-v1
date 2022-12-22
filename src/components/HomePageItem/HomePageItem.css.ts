@@ -13,6 +13,7 @@ export const excerptContinueReadingLinkStyle = style({
   color: foregroundColors.muted,
   fontSize: relativeSize[18],
   lineHeight: 1.5,
+  letterSpacing: "0.3px",
 });
 
 export const dateLetterSpacingStyle = style({

@@ -1,6 +1,10 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 import { gridTemplate, SPACER } from "../../styles/grid";
-import { size } from "../../styles/sizes.css";
+import { relativeSize, size } from "../../styles/sizes.css";
+
+export const mediumNotesTypography = style({
+  fontSize: relativeSize[14],
+});
 
 export const gridStyle = style({
   display: "grid",
