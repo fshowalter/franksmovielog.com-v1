@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import { Box } from "../../components/Box";
 import { HeadBuilder } from "../../components/HeadBuilder";
 import { Link } from "../../components/Link";
+import { PageTitle } from "../../components/PageTitle";
 import { PosterListWithFilters } from "../../components/PosterListWithFilters";
 import { Spacer } from "../../components/Spacer";
 
@@ -33,10 +34,10 @@ export default function OverratedDisappointmentsPage({
     >
       <Box display="flex" flexDirection="column" alignItems="center">
         <Link to="/reviews/">Reviews</Link>
-        <Box as="h1" fontSize="pageTitle" textAlign="center">
+        <PageTitle textAlign="center">
           Overrated Disappointments
           <Spacer axis="vertical" size={8} />
-        </Box>
+        </PageTitle>
         <Box color="subtle">
           <Box as="q" display="block" textAlign="center" color="subtle">
             My God, it&apos;s full of stars!

@@ -3,6 +3,7 @@ import type { IBoxProps } from "../Box";
 import { Box } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
+import { PageTitle } from "../PageTitle";
 import { PosterListWithFilters } from "../PosterListWithFilters";
 import { Spacer } from "../Spacer";
 import { avatarStyle } from "./PosterListWithFiltersForWatchlistEntity.css";
@@ -42,9 +43,7 @@ export function PosterListWithFiltersForWatchlistEntity({
         />
       </Box>
       <Spacer axis="vertical" size={16} />
-      <Box as="h1" fontSize="pageTitle" textAlign="center">
-        {entity.name}
-      </Box>
+      <PageTitle textAlign="center">{entity.name}</PageTitle>
       <Spacer axis="vertical" size={24} />
       <Box
         color="subtle"

@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import { Box } from "../components/Box";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Link } from "../components/Link";
+import { PageTitle } from "../components/PageTitle";
 import { PosterListWithFilters } from "../components/PosterListWithFilters";
 import { Spacer } from "../components/Spacer";
 
@@ -34,9 +35,7 @@ export default function ReviewsIndexPage({
       distinctViewingYears={data.viewing.viewingYears}
       initialSort="viewing-date-desc"
     >
-      <Box as="h1" fontSize="pageTitle" textAlign="center">
-        Reviews
-      </Box>
+      <PageTitle textAlign="center">Reviews</PageTitle>
       <Box as="q" display="block" textAlign="center" color="subtle">
         We have such sights to show you.
       </Box>

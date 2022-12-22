@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import { Box } from "../components/Box";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Link } from "../components/Link";
+import { PageTitle } from "../components/PageTitle";
 import { PosterListWithFilters } from "../components/PosterListWithFilters";
 import { Spacer } from "../components/Spacer";
 import { WatchlistEntityTypeLink } from "../components/WatchlistEntityTypeLink";
@@ -111,9 +112,7 @@ export default function WatchlistIndexPage({
         <WatchlistMovieSlug movie={movie as Queries.WatchlistMovieFragment} />
       )}
     >
-      <Box as="h1" fontSize="pageTitle" textAlign="center">
-        Watchlist
-      </Box>
+      <PageTitle textAlign="center">Watchlist</PageTitle>
       <Box color="subtle">
         <Box as="q" display="block" textAlign="center" color="subtle">
           A man&apos;s got to know his limitations.

@@ -1,5 +1,6 @@
 import { Box } from "../Box";
 import { Layout } from "../Layout";
+import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
 import { ByReleaseYearStats } from "./ByReleaseYearStats";
 import { GradeDistributionStats } from "./GradeDistributionStats";
@@ -56,13 +57,9 @@ export function StatsPage({
             flexDirection="column"
             alignItems={{ default: "center", desktop: "flex-start" }}
           >
-            <Box
-              as="h1"
-              paddingTop={{ default: 24, desktop: 32 }}
-              fontSize="pageTitle"
-            >
+            <PageTitle paddingTop={{ default: 24, desktop: 32 }}>
               {title}
-            </Box>
+            </PageTitle>
             <Box as="p" color="subtle">
               {tagline}
             </Box>

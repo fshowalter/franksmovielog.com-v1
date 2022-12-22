@@ -7,8 +7,10 @@
  */
 
 import React from "react";
+import { composeClassNames } from "../../styles/composeClassNames";
 import "../../styles/global.css";
 import { Box } from "../Box";
+import { ripNotComingSoonBackgroundImageStyle } from "./backgroundImage.css";
 import { Footer } from "./Footer";
 import {
   bandStickyStyle,
@@ -29,10 +31,12 @@ export function Layout({
         Skip to content
       </a>
       <Box
-        backgroundImage="ripNotComingSoon"
         minHeight={16}
         width="full"
-        className={bandStickyStyle}
+        className={composeClassNames(
+          bandStickyStyle,
+          ripNotComingSoonBackgroundImageStyle
+        )}
       />
 
       <Box
@@ -59,6 +63,7 @@ export function Layout({
           rowGap={24}
           alignItems="center"
           flexDirection="column"
+          className={ripNotComingSoonBackgroundImageStyle}
         />
       </Box>
     </>

@@ -7,6 +7,7 @@ import { Fieldset } from "../Fieldset";
 import { GraphqlImage } from "../GraphqlImage";
 import { Layout } from "../Layout";
 import { Link } from "../Link";
+import { PageTitle } from "../PageTitle";
 import { SelectField } from "../SelectField";
 import { Spacer } from "../Spacer";
 import {
@@ -148,10 +149,10 @@ export function WatchlistEntityAvatarListWithFilters({
           <Box maxWidth="prose">
             <Box display="flex" flexDirection="column" alignItems="center">
               <Link to="/watchlist/">Watchlist</Link>
-              <Box as="h1" fontSize="pageTitle" textAlign="center">
+              <PageTitle textAlign="center">
                 {title}
                 <Spacer axis="vertical" size={8} />
-              </Box>
+              </PageTitle>
               <Box color="subtle">
                 <Box as="q" display="block" textAlign="center" color="subtle">
                   {tagline}

@@ -28,7 +28,13 @@ export function ArticlePage({
           flexDirection="column"
           alignItems="center"
         >
-          <PageTitle paddingX="pageMargin">{title}</PageTitle>
+          <PageTitle
+            paddingX="pageMargin"
+            paddingY={{ default: 24, desktop: 32 }}
+            textAlign="center"
+          >
+            {title}
+          </PageTitle>
           <GraphqlImage image={image} alt={alt} />
           <Spacer axis="vertical" size={64} />
           <Box paddingX="pageMargin">

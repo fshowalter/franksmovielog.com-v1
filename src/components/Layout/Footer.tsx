@@ -5,13 +5,7 @@ import { Nav } from "./Nav";
 
 export function Footer({ ...rest }: IBoxProps) {
   return (
-    <Box
-      as="footer"
-      color="inverse"
-      display="flex"
-      backgroundImage="ripNotComingSoon"
-      {...rest}
-    >
+    <Box as="footer" color="inverse" display="flex" {...rest}>
       <Nav justifyContent="center" />
       <Box as="p" fontWeight="light" fontSize="small" lineHeight={16}>
         All stills used in accordance with the{" "}

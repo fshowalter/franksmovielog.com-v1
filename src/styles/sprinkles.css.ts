@@ -5,16 +5,6 @@ import { height, size, width } from "./sizes.css";
 
 const unresponsiveAtomicProperties = defineProperties({
   properties: {
-    backgroundImage: {
-      ripNotComingSoon: {
-        backgroundImage: `url("/assets/ripnotcomingsoon.jpg")`,
-        "@media": {
-          "(prefers-color-scheme: dark)": {
-            filter: "brightness(0.8) contrast(1.2)",
-          },
-        },
-      },
-    },
     borderRadius: { half: "50%", 4: "4px", 8: "8px", 24: "24px" },
     color: foregroundColors,
     flex: [1],
@@ -45,17 +35,6 @@ const unresponsiveAtomicProperties = defineProperties({
       xLarge: {
         fontSize: "2rem",
         lineHeight: 1,
-      },
-      pageTitle: {
-        fontSize: "2rem",
-        fontWeight: "normal",
-        lineHeight: 1,
-
-        "@media": {
-          [minMediaQuery("desktop")]: {
-            fontSize: "2.25rem",
-          },
-        },
       },
     },
     fontWeight: {

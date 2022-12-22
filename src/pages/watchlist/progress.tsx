@@ -4,6 +4,7 @@ import { Box } from "../../components/Box";
 import { HeadBuilder } from "../../components/HeadBuilder";
 import { Layout } from "../../components/Layout";
 import { Link } from "../../components/Link";
+import { PageTitle } from "../../components/PageTitle";
 import { ProgressRing } from "../../components/ProgressRing";
 import { Spacer } from "../../components/Spacer";
 import { StatHeading } from "../../components/StatHeading";
@@ -159,14 +160,12 @@ export default function WatchlistProgressPage({
             flexDirection="column"
             alignItems={{ default: "center", desktop: "flex-start" }}
           >
-            <Box
-              as="h1"
+            <PageTitle
               paddingTop={{ default: 24, desktop: 32 }}
-              fontSize="pageTitle"
               lineHeight={40}
             >
               Watchlist Progress
-            </Box>
+            </PageTitle>
             <Box as="q" color="subtle">
               I find your lack of faith disturbing.
             </Box>
