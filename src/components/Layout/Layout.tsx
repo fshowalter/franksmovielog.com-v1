@@ -27,9 +27,18 @@ export function Layout({
 }): JSX.Element {
   return (
     <>
-      <a className={skipToMainContentStyle} href="#content">
+      <Box
+        as="a"
+        className={skipToMainContentStyle}
+        href="#content"
+        paddingX={24}
+        paddingY={8}
+        backgroundColor="subtle"
+        color="accent"
+        textAlign="center"
+      >
         Skip to content
-      </a>
+      </Box>
       <Box
         minHeight={16}
         width="full"

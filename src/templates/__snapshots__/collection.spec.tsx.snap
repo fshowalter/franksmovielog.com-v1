@@ -18855,7 +18855,7 @@ exports[`/watchlist/collections/{slug} can view more titles 1`] = `
 exports[`/watchlist/collections/{slug} renders 1`] = `
 <DocumentFragment>
   <a
-    class="Layout_skipToMainContentStyle__1965ugi3"
+    class="Layout_skipToMainContentStyle__1965ugi3 sprinkles_paddingLeft_24_default__8lcvdkcw sprinkles_paddingRight_24_default__8lcvdkek sprinkles_paddingTop_8_default__8lcvdkg2 sprinkles_paddingBottom_8_default__8lcvdkbk sprinkles_backgroundColor_subtle_default__8lcvdk22 sprinkles_color_accent__8lcvdk4 sprinkles_textAlign_center__8lcvdk15"
     href="#content"
   >
     Skip to content
@@ -18945,7 +18945,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
         class="sprinkles_color_accent__8lcvdk4"
       >
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4n sprinkles_flexWrap_wrap_default__8lcvdk58 sprinkles_justifyContent_center_default__8lcvdk6n sprinkles_rowGap_8_default__8lcvdkhe"
+          class="sprinkles_display_flex_default__8lcvdk4n sprinkles_flexWrap_wrap_default__8lcvdk58 sprinkles_justifyContent_center_default__8lcvdk6n sprinkles_rowGap_8_default__8lcvdkhe sprinkles_columnGap_16_default__8lcvdk32 sprinkles_columnGap_24_tablet__8lcvdk36"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk4h sprinkles_letterSpacing_0.5__8lcvdkt sprinkles_whiteSpace_nowrap__8lcvdk1a"
@@ -21783,7 +21783,7 @@ exports[`/watchlist/collections/{slug} renders 1`] = `
     >
       <nav>
         <ul
-          class="Nav_navColumnGapStyle__mkdjqm0 sprinkles_display_flex_default__8lcvdk4n sprinkles_flexWrap_wrap_default__8lcvdk58 sprinkles_justifyContent_center_default__8lcvdk6n sprinkles_rowGap_8_default__8lcvdkhe"
+          class="sprinkles_display_flex_default__8lcvdk4n sprinkles_flexWrap_wrap_default__8lcvdk58 sprinkles_justifyContent_center_default__8lcvdk6n sprinkles_rowGap_8_default__8lcvdkhe sprinkles_columnGap_16_default__8lcvdk32 sprinkles_columnGap_24_tablet__8lcvdk36"
         >
           <li
             class="sprinkles_display_block_default__8lcvdk4h sprinkles_letterSpacing_0.5__8lcvdkt sprinkles_whiteSpace_nowrap__8lcvdk1a"

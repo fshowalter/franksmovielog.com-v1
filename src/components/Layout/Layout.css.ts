@@ -1,7 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { breakpoints, minMediaQuery } from "../../styles/breakpoints";
-import { backgroundColors, foregroundColors } from "../../styles/colors.css";
-import { size, STILL_WIDTH } from "../../styles/sizes.css";
+import { STILL_WIDTH } from "../../styles/sizes.css";
 
 export const pageCanvasStyle = style({
   minHeight: "100dvh",
@@ -39,13 +38,9 @@ export const headerLayoutStyle = style({
 });
 
 export const skipToMainContentStyle = style({
-  background: backgroundColors.subtle,
-  color: foregroundColors.accent,
   left: "50%",
   margin: "0 auto",
-  padding: `${size[8]} ${size[24]}`,
   position: "absolute",
-  textAlign: "center",
   top: "2px",
   transform: "translate(-50%, calc(-100% - 2px))",
   zIndex: 10000,
