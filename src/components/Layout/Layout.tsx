@@ -43,7 +43,7 @@ export function Layout({
       >
         <Mast
           rowGap={24}
-          paddingX="gutter"
+          paddingX="pageMargin"
           paddingY={{ default: 24, desktop: 32 }}
           alignItems="center"
           boxShadow="borderBottom"
@@ -54,7 +54,7 @@ export function Layout({
           {children}
         </Box>
         <Footer
-          paddingX="gutter"
+          paddingX="pageMargin"
           paddingY={32}
           rowGap={24}
           alignItems="center"

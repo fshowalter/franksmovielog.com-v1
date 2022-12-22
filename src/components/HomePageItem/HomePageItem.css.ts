@@ -68,6 +68,7 @@ const gridAreaStyles = {
   },
   excerpt: {
     gridArea: "excerpt",
+    maxWidth: "33rem",
   },
   date: {
     gridArea: "date",

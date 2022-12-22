@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
+import { Spacer } from "../Spacer";
 import { ViewingHistoryEntry } from "./ViewingHistoryEntry";
 
 interface IIViewingHistoryProps extends IBoxProps {
@@ -11,13 +12,14 @@ export function ViewingHistory({ movie, ...rest }: IIViewingHistoryProps) {
       <Box
         as="h3"
         color="subtle"
-        fontSize="reviewSubHeading"
+        fontSize="medium"
         fontWeight="normal"
-        paddingX="popoutGutter"
+        paddingX="gutter"
         boxShadow="borderBottom"
         {...rest}
       >
         Viewing History
+        <Spacer size={8} axis="vertical" />
       </Box>
       <Box as="ul">
         {movie.viewings.map((viewing) => (

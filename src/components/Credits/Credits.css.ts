@@ -43,6 +43,7 @@ export const backToTopContainerStyle = style({
   "@media": {
     [minMediaQuery("tablet")]: {
       width: "calc(100% - 280px)",
+      maxWidth: "unset",
     },
   },
 });

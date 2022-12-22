@@ -11,7 +11,7 @@ function ListItemDetails({
 }): JSX.Element {
   return (
     <Box
-      fontSize="normal"
+      fontSize="default"
       color="subtle"
       display="flex"
       justifyContent={{ default: "flex-start", tablet: "center" }}

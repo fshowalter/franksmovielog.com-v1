@@ -60,7 +60,7 @@ export function StatsNavigation({
     <Box
       as="ul"
       display="flex"
-      fontSize="yearNavigation"
+      fontSize="medium"
       columnGap={16}
       rowGap={16}
       flexWrap={{ default: "wrap", desktop: "nowrap" }}

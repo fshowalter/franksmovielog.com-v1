@@ -56,7 +56,7 @@ export function Pagination({
   );
 
   return (
-    <Box as="section" fontSize="pagination" {...rest}>
+    <Box as="section" fontSize="medium" {...rest}>
       <ScreenReaderOnly>
         <h3>Pagination</h3>
       </ScreenReaderOnly>
@@ -66,7 +66,7 @@ export function Pagination({
       </Box>
       <Spacer axis="vertical" size={24} />
       <Box textAlign="right" color="subtle">
-        Page{" "}
+        Page&nbsp;
         <Box as="select" value={currentPage} onChange={onSelectPage}>
           {Array.from({ length: numPages }, (_, i) => i + 1).map((num) => {
             return (

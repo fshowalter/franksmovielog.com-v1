@@ -10,10 +10,10 @@ export function StatHeading({
     <Box
       as="h3"
       backgroundColor="canvas"
-      fontSize="statHeading"
+      fontSize="medium"
       position="sticky"
       top={{ default: 0, desktop: HEADER_HEIGHT }}
-      paddingX="popoutGutter"
+      paddingX="gutter"
       paddingY={8}
       zIndex={500}
       fontWeight="normal"

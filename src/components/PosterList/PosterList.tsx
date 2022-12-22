@@ -90,7 +90,7 @@ function Title({
   slug: string | null | undefined;
 }) {
   const yearBox = (
-    <Box as="span" fontSize="posterYear" color="subtle" fontWeight="light">
+    <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
       {year}
     </Box>
   );
@@ -138,7 +138,7 @@ export function Poster({
       flexDirection={{ default: "row", tablet: "column" }}
       columnGap={24}
       backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
-      paddingX={{ default: "popoutGutter", tablet: 0 }}
+      paddingX={{ default: "gutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
       alignItems={{ default: "center" }}
       display="flex"
@@ -152,7 +152,7 @@ export function Poster({
       />
       <Box flexGrow={1}>
         <Box
-          fontSize="posterTitle"
+          fontSize="medium"
           className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}
         >
           <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />

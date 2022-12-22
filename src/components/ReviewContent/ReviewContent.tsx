@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
 import { RenderedMarkdown } from "../RenderedMarkdown";
+import { reviewTypographyStyle } from "./ReviewContent.css";
 
 interface IReviewContentProps extends IBoxProps {
   review: Queries.ReviewContentFragment;
@@ -24,7 +25,7 @@ export function ReviewContent({ review, ...rest }: IReviewContentProps) {
       </Box>
       <RenderedMarkdown
         maxWidth="prose"
-        lineHeight="prose"
+        className={reviewTypographyStyle}
         // eslint-disable-next-line react/no-danger
         text={review.review.linkedHtml}
       />

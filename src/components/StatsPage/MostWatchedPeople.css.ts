@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { HEADER_HEIGHT, popoutGutterWidth } from "../../styles/sizes.css";
+import { gutterWidth, HEADER_HEIGHT } from "../../styles/sizes.css";
 
 export const stickyHeaderStyle = style({
   position: "sticky",
@@ -31,7 +31,7 @@ export const stickyRowHeaderStyle = style({
   lineHeight: "2.5rem",
   width: "100%",
   display: "grid",
-  gridTemplateColumns: `auto 1fr calc(6ch + ${popoutGutterWidth})`,
+  gridTemplateColumns: `auto 1fr calc(6ch + ${gutterWidth})`,
 
   "@media": {
     [minMediaQuery("desktop")]: {

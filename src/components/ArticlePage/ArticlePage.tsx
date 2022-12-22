@@ -28,10 +28,10 @@ export function ArticlePage({
           flexDirection="column"
           alignItems="center"
         >
-          <PageTitle paddingX="gutter">{title}</PageTitle>
+          <PageTitle paddingX="pageMargin">{title}</PageTitle>
           <GraphqlImage image={image} alt={alt} />
           <Spacer axis="vertical" size={64} />
-          <Box paddingX="gutter">
+          <Box paddingX="pageMargin">
             <RenderedMarkdown maxWidth="prose" text={articleText} />
           </Box>
           <Spacer axis="vertical" size={128} />

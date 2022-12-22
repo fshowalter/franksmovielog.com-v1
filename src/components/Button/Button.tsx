@@ -17,7 +17,7 @@ export function Button({
       onClick={onClick}
       backgroundColor="subtle"
       borderRadius={24}
-      fontSize="normal"
+      fontSize="default"
       whiteSpace="nowrap"
       lineHeight={24}
       boxShadow="borderAll"

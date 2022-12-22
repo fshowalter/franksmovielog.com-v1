@@ -25,7 +25,7 @@ export function StillList({
         as="li"
         display="block"
         textAlign="right"
-        paddingX="popoutGutter"
+        paddingX="gutter"
         className={seeAllLinkGridStyle}
         paddingY={16}
         boxShadow={{ default: "borderBottom", tablet: "unset" }}

@@ -42,7 +42,7 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
       id="credits"
       position="relative"
       {...rest}
-      paddingX="popoutGutter"
+      paddingX="gutter"
       paddingTop={48}
       paddingBottom={32}
       backgroundColor="subtle"
@@ -57,7 +57,7 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
           className={posterStyle}
         />
       </Box>
-      <Box as="header" fontSize="creditsTitle" paddingBottom={24}>
+      <Box as="header" fontSize="large" paddingBottom={24}>
         {movie.title}
       </Box>
       <Box as="dl" flexDirection="column" rowGap={24}>

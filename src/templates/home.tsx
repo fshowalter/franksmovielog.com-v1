@@ -66,7 +66,7 @@ export default function HomeTemplate({
           numberOfItems={pageContext.numberOfItems}
           prevText="Newer"
           nextText="Older"
-          paddingX="gutter"
+          paddingX="pageMargin"
           paddingY={40}
           justifyContent="center"
         />

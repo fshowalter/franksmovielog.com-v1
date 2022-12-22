@@ -70,7 +70,7 @@ function EntityName({
     return (
       <Link
         to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-        fontSize="posterTitle"
+        fontSize="medium"
         textAlign="center"
       >
         <Spacer axis="vertical" size={4} />
@@ -81,7 +81,7 @@ function EntityName({
   }
 
   return (
-    <Box color="subtle" fontSize="posterTitle" textAlign="center">
+    <Box color="subtle" fontSize="medium" textAlign="center">
       <Spacer axis="vertical" size={4} />
       <Box lineHeight="default">{entity.name}</Box>
       <Spacer axis="vertical" size={4} />
@@ -101,7 +101,7 @@ function ListItem({
       flexDirection={{ default: "row", tablet: "column" }}
       columnGap={32}
       backgroundColor={{ default: "zebraOdd", tablet: "zebraOff" }}
-      paddingX={{ default: "popoutGutter", tablet: 0 }}
+      paddingX={{ default: "gutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
       alignItems={{ default: "center" }}
     >
@@ -134,14 +134,14 @@ export function WatchlistEntityAvatarListWithFilters({
         as="main"
         display="flex"
         flexDirection={{ default: "column", desktop: "row" }}
-        paddingX={{ default: 0, desktop: "gutter" }}
+        paddingX={{ default: 0, desktop: "pageMargin" }}
         columnGap={64}
       >
         <Box
           display="flex"
           flexDirection="column"
           alignItems={{ default: "center", desktop: "flex-start" }}
-          paddingX={{ default: "gutter", desktop: 0 }}
+          paddingX={{ default: "pageMargin", desktop: 0 }}
           paddingTop={32}
           flexBasis={352}
         >
@@ -194,7 +194,7 @@ export function WatchlistEntityAvatarListWithFilters({
             data-testid="entity-list"
             paddingX={{
               default: 0,
-              tablet: "gutter",
+              tablet: "pageMargin",
               desktop: 0,
             }}
             className={gridStyle}

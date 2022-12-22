@@ -34,7 +34,7 @@ export function MostWatchedPeople({
         backgroundColor="default"
         display="flex"
         justifyContent="space-between"
-        paddingX="popoutGutter"
+        paddingX="gutter"
         className={stickyHeaderStyle}
         fontWeight="bold"
       >
@@ -52,7 +52,7 @@ export function MostWatchedPeople({
               <Box
                 className={stickyRowHeaderStyle}
                 style={{ zIndex: 200 + index }}
-                paddingX="popoutGutter"
+                paddingX="gutter"
                 backgroundColor="stripe"
               >
                 <Box as="span" lineHeight={40}>
@@ -76,11 +76,11 @@ export function MostWatchedPeople({
                     as="summary"
                     color="subtle"
                     letterSpacing={0.25}
-                    paddingX="popoutGutter"
+                    paddingX="gutter"
                   >
                     Details
                   </Box>
-                  <PosterList paddingX={{ default: 0, tablet: "popoutGutter" }}>
+                  <PosterList paddingX={{ default: 0, tablet: "gutter" }}>
                     {person.viewings.map((viewing) => {
                       return (
                         <Poster

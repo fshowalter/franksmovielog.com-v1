@@ -61,7 +61,7 @@ export function DebouncedInput({
     <Box as="label" color="subtle" display="flex" flexDirection="column">
       <Box
         as="span"
-        fontSize="label"
+        fontSize="small"
         display="inline-block"
         letterSpacing={0.5}
         textAlign="left"

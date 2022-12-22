@@ -2,7 +2,7 @@ import { foregroundColors } from "../../styles/colors.css";
 import type { IBoxProps } from "../Box";
 import { Box } from "../Box";
 import { Link } from "../Link";
-import { hoverStyle } from "./WatchlistEntityTypeLink.css";
+import { linkStyle } from "./WatchlistEntityTypeLink.css";
 
 const PeopleIcon = (
   <svg
@@ -72,8 +72,7 @@ export function WatchlistEntityTypeLink({
         paddingY={8}
         borderRadius={8}
         alignItems="center"
-        minWidth={128}
-        className={hoverStyle}
+        className={linkStyle}
       >
         {props.icon}
         {props.label}

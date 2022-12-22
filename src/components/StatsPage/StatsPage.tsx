@@ -49,7 +49,7 @@ export function StatsPage({
           flexDirection={{ default: "column", desktop: "row" }}
           justifyContent="space-between"
           flexWrap="wrap"
-          paddingX="gutter"
+          paddingX="pageMargin"
         >
           <Box
             display="flex"
@@ -87,9 +87,7 @@ export function StatsPage({
             />
           </Box>
         </Box>
-        <Box
-          paddingX={{ default: 0, tablet: "popoutGutter", desktop: "gutter" }}
-        >
+        <Box paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}>
           <Spacer axis="vertical" size={32} />
           <MostWatchedMovies movies={mostWatchedMovies} />
           <ByReleaseYearStats decades={viewingsCountsByDecade} />

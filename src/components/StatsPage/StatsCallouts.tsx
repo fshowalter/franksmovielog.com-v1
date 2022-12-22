@@ -16,10 +16,10 @@ function Callout({
       flexDirection="column"
       justifyContent="center"
       height={144}
-      width="144r"
+      width={144}
       textAlign="center"
     >
-      <Box fontSize="statNumber">{stat.toLocaleString()}</Box>{" "}
+      <Box fontSize="xLarge">{stat.toLocaleString()}</Box>{" "}
       <Box color="subtle">{label}</Box>
     </Box>
   );

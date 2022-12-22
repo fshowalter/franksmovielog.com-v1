@@ -91,7 +91,7 @@ export function GradeInput({
     <Box as="fieldset">
       <Box
         as="legend"
-        fontSize="label"
+        fontSize="small"
         color="subtle"
         fontWeight="bold"
         letterSpacing={0.5}

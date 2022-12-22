@@ -1,6 +1,11 @@
 import { Box, IBoxProps } from "../Box";
 import { Link } from "../Link";
-import { navActiveLinkStyle, orderStyle, taglineStyle } from "./Mast.css";
+import {
+  flagTypographyStyle,
+  navActiveLinkStyle,
+  orderStyle,
+  taglineStyle,
+} from "./Mast.css";
 import { Nav } from "./Nav";
 import { SiteSearchForm } from "./SiteSearchForm";
 
@@ -13,7 +18,12 @@ export function Mast({ ...rest }: IBoxProps) {
         alignItems="inherit"
         justifyItems="inherit"
       >
-        <Box as="h1" whiteSpace="nowrap" fontWeight="normal" fontSize="logo">
+        <Box
+          as="h1"
+          whiteSpace="nowrap"
+          fontWeight="normal"
+          className={flagTypographyStyle}
+        >
           <Link color="default" to="/">
             Frank&apos;s Movie Log
           </Link>

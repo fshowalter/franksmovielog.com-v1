@@ -1,7 +1,6 @@
 export const fontSizes = {
   small: "0.875rem",
   normal: "1rem",
-  medium: "1.25rem",
   large: "1.5625rem",
   xLarge: "1.875rem",
   xxLarge: "2rem",

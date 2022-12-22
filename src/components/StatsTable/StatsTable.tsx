@@ -65,14 +65,14 @@ export function TableHeaderCell({
 }): JSX.Element {
   if (align === "left") {
     return (
-      <Box as="th" textAlign="left" paddingLeft="popoutGutter">
+      <Box as="th" textAlign="left" paddingLeft="gutter">
         {children}
       </Box>
     );
   }
 
   return (
-    <Box as="th" textAlign="right" paddingRight="popoutGutter">
+    <Box as="th" textAlign="right" paddingRight="gutter">
       {children}
     </Box>
   );
@@ -105,7 +105,7 @@ export function TableDataCell({
         as="td"
         textAlign="left"
         paddingY={0}
-        paddingX="popoutGutter"
+        paddingX="gutter"
         className={className}
         {...rest}
       >
@@ -119,7 +119,7 @@ export function TableDataCell({
       as="td"
       textAlign="right"
       paddingY={0}
-      paddingRight="popoutGutter"
+      paddingRight="gutter"
       className={className}
       {...rest}
     >

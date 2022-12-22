@@ -32,7 +32,7 @@ export function HomePageItem({
 }: IItemProps) {
   return (
     <Box as="li" value={counterValue} display="flex" backgroundColor="zebra">
-      <Grid as="article" paddingX="gutter">
+      <Grid as="article" paddingX="pageMargin">
         <GridArea name="still" maxWidth="prose">
           <Link rel="canonical" to={`/reviews/${viewing.slug}/`}>
             <Still
@@ -49,20 +49,20 @@ export function HomePageItem({
           display="flex"
           rowGap={24}
           flexDirection="column"
-          maxWidth="prose"
         >
-          <Box as="h2" fontWeight="bold" fontSize="homePageTitle">
+          <Box as="h2" fontWeight="bold" fontSize="large">
             <Link
               to={`/reviews/${viewing.slug}/`}
               rel="canonical"
               color="default"
+              display="inline-block"
             >
               {viewing.title}{" "}
               <Box
                 as="span"
                 color="subtle"
                 display="inline-block"
-                fontSize="normal"
+                fontSize="default"
                 fontWeight="light"
                 lineHeight={1}
               >
@@ -73,7 +73,7 @@ export function HomePageItem({
           <Grade grade={viewing.grade} height={32} />
           <Box
             as="p"
-            fontSize="normal"
+            fontSize="default"
             fontWeight="normal"
             color="subtle"
             letterSpacing={0.25}

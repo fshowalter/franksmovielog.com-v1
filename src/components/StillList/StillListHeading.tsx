@@ -14,7 +14,7 @@ export function StillListHeading({
     <Box
       boxShadow={{ default: "borderBottom", tablet: "unset" }}
       paddingY={{ default: 8, tablet: 16 }}
-      paddingX={{ default: "popoutGutter", desktop: "gutter" }}
+      paddingX={{ default: "gutter", desktop: "pageMargin" }}
       width="full"
     >
       <Box as="span" fontWeight="semiBold" color="muted">

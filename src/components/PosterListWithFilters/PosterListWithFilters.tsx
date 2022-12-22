@@ -176,14 +176,14 @@ export function PosterListWithFilters({
         as="main"
         display="flex"
         flexDirection={{ default: "column", desktop: "row" }}
-        paddingX={{ default: 0, desktop: "gutter" }}
+        paddingX={{ default: 0, desktop: "pageMargin" }}
         columnGap={64}
       >
         <Box
           display="flex"
           flexDirection="column"
           alignItems="center"
-          paddingX={{ default: "popoutGutter", desktop: 0 }}
+          paddingX={{ default: "gutter", desktop: 0 }}
           paddingTop={32}
           flexBasis={352}
         >
@@ -374,7 +374,7 @@ export function PosterListWithFilters({
           <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
           <Box
             color="subtle"
-            paddingX="popoutGutter"
+            paddingX="gutter"
             textAlign="center"
             backgroundColor="default"
             lineHeight={36}
@@ -390,7 +390,7 @@ export function PosterListWithFilters({
               return (
                 <Box as="li" key={group} display="block">
                   <Box
-                    fontSize="groupHeading"
+                    fontSize="medium"
                     style={{ zIndex: index + 100 }}
                     paddingTop={{ default: 0, desktop: 16 }}
                     backgroundColor="default"
@@ -399,7 +399,7 @@ export function PosterListWithFilters({
                     <Box
                       backgroundColor="canvas"
                       paddingY={8}
-                      paddingX={{ default: "popoutGutter", desktop: 24 }}
+                      paddingX={{ default: "gutter", desktop: 24 }}
                     >
                       {group}
                     </Box>
@@ -408,7 +408,7 @@ export function PosterListWithFilters({
                   <PosterList
                     paddingX={{
                       default: 0,
-                      tablet: "popoutGutter",
+                      tablet: "gutter",
                       desktop: 0,
                     }}
                   >
@@ -440,13 +440,13 @@ export function PosterListWithFilters({
             display="flex"
             flexDirection="column"
             alignItems="center"
-            paddingX="gutter"
+            paddingX="pageMargin"
           >
             {state.filteredItems.length > state.showCount && (
               <>
                 <Spacer axis="vertical" size={32} />
                 <Button
-                  paddingX="gutter"
+                  paddingX="pageMargin"
                   onClick={() => dispatch({ type: ActionType.SHOW_MORE })}
                   display="flex"
                   columnGap={16}

@@ -32,7 +32,7 @@ export function SiteSearchForm({ ...rest }: IBoxProps) {
           placeholder="Search..."
           backgroundColor="subtle"
           color="default"
-          fontSize="normal"
+          fontSize="default"
           fontWeight="light"
           lineHeight={24}
           flexGrow={1}

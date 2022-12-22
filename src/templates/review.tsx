@@ -49,7 +49,7 @@ export default function ReviewTemplate({
       >
         <ReviewHeader
           movie={movie}
-          paddingX="gutter"
+          paddingX="pageMargin"
           textAlign="center"
           paddingY={{ default: 24, desktop: 32 }}
         />
@@ -60,7 +60,11 @@ export default function ReviewTemplate({
           className={stillMarginStyle}
         />
         <Spacer axis="vertical" size={{ default: 24, tablet: 32 }} />
-        <ReviewContent review={movie} paddingX="gutter" alignItems="center" />
+        <ReviewContent
+          review={movie}
+          paddingX="pageMargin"
+          alignItems="center"
+        />
         <Spacer axis="vertical" size={80} />
         <ViewingHistory movie={movie} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />

@@ -12,14 +12,14 @@ export function Fieldset({ legend, children }: IFieldSetProps): JSX.Element {
       boxShadow="borderAll"
       borderRadius={4}
       color="subtle"
-      paddingX="popoutGutter"
+      paddingX="gutter"
       paddingTop={24}
       paddingBottom={32}
     >
       <Box
         as="legend"
         textAlign="center"
-        fontSize="legend"
+        fontSize="medium"
         className={legendPaddingStyle}
         backgroundColor="default"
       >

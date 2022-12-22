@@ -236,9 +236,7 @@ export default function WatchlistProgressPage({
             </Box>
           </Box>
         </Box>
-        <Box
-          paddingX={{ default: 0, tablet: "popoutGutter", desktop: "gutter" }}
-        >
+        <Box paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}>
           <Spacer axis="vertical" size={32} />
           <WatchlistEntityProgressTable
             label="Director Progress"

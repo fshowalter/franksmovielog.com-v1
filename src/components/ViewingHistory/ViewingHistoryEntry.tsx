@@ -93,7 +93,7 @@ function ViewingNote({
   return (
     <Box paddingBottom={24}>
       <RenderedMarkdown
-        fontSize="normal"
+        fontSize="default"
         lineHeight="default"
         // eslint-disable-next-line react/no-danger
         text={viewing.viewingNote.linkedHtml}
@@ -108,7 +108,7 @@ interface IIViewingHistoryItemProps extends IBoxProps {
 
 export function ViewingHistoryEntry({ viewing }: IIViewingHistoryItemProps) {
   return (
-    <Grid backgroundColor="zebra" display="block" paddingX="popoutGutter">
+    <Grid backgroundColor="zebra" display="block" paddingX="gutter">
       <GridArea name="icon">
         <DateIcon />{" "}
       </GridArea>

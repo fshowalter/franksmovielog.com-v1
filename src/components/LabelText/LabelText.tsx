@@ -8,7 +8,7 @@ export function LabelText({ text, ...rest }: ILabelTextProps) {
   return (
     <Box
       as="span"
-      fontSize="label"
+      fontSize="small"
       display="inline-block"
       letterSpacing={0.5}
       textAlign="left"

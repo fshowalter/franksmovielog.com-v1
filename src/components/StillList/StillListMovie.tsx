@@ -21,7 +21,7 @@ interface IStillListMovieProps extends IBoxProps {
 
 export function StillListMovie({ movie, ...rest }: IStillListMovieProps) {
   return (
-    <Grid key={movie.imdbId} paddingX={{ default: "popoutGutter" }} {...rest}>
+    <Grid key={movie.imdbId} paddingX={{ default: "gutter" }} {...rest}>
       <GridArea name="still">
         <Link to={`/reviews/${movie.slug}/`} className={stillStyle}>
           <Still image={movie.still} title={movie.title} year={movie.year} />
@@ -30,7 +30,7 @@ export function StillListMovie({ movie, ...rest }: IStillListMovieProps) {
       <GridArea name="title">
         <Link
           to={`/reviews/${movie.slug}/`}
-          fontSize="relatedMovieTitle"
+          fontSize="medium"
           color="default"
           display="block"
         >
