@@ -78,6 +78,7 @@ export const relativeSize = {
   18: toRem(18),
   19: toRem(19),
   20: toRem(20),
+  24: toRem(24),
   25: toRem(25),
   26: toRem(26),
 };

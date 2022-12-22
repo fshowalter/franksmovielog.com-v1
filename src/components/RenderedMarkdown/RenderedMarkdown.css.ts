@@ -1,8 +1,18 @@
 import { globalStyle, style } from "@vanilla-extract/css";
+import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
 
 export const renderedMarkdownStyle = style({
   letterSpacing: "0.3px",
+  fontSize: "1.125rem",
+  lineHeight: "1.75rem",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      fontSize: "1.25rem",
+      lineHeight: "2rem",
+    },
+  },
 });
 
 globalStyle(`${renderedMarkdownStyle} a`, {

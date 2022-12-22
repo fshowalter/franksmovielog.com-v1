@@ -6,7 +6,6 @@ const borderAccent = createVar();
 const fgAccent = createVar();
 const fgDefault = createVar();
 const fgMuted = createVar();
-const fgOnAccent = createVar();
 const fgSubtle = createVar();
 const fgInverse = createVar();
 const fgEmphasis = createVar();
@@ -28,7 +27,6 @@ export const foregroundColors = {
   accent: fgAccent,
   default: fgDefault,
   muted: fgMuted,
-  onAccent: fgOnAccent,
   subtle: fgSubtle,
   inverse: fgInverse,
   inherit: "inherit",
@@ -53,7 +51,6 @@ globalStyle(":root", {
     [fgAccent]: "#0056b3",
     [fgDefault]: "rgb(0 0 0 / 75%)",
     [fgMuted]: "rgb(0 0 0 / 65%)",
-    [fgOnAccent]: "#fff",
     [fgSubtle]: "rgb(0 0 0 / 60%)",
     [bgAccent]: "#0056b3",
     [bgDefault]: "#fff",
@@ -73,7 +70,6 @@ globalStyle(":root", {
         [fgAccent]: "#499ef8",
         [fgDefault]: "rgb(255 255 255 / 75%)",
         [fgMuted]: "rgb(255 255 255 / 65%)",
-        [fgOnAccent]: "#fff",
         [fgSubtle]: "rgb(255 255 255 / 60%)",
         [bgAccent]: "#0056b3",
         [bgDefault]: "#322f2f",
