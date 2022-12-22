@@ -1,12 +1,10 @@
 import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 import { minMediaQuery } from "./breakpoints";
 import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
-import { height, relativeSize, size, width } from "./sizes.css";
-import { lineHeights } from "./typography.css";
+import { height, size, width } from "./sizes.css";
 
 const unresponsiveAtomicProperties = defineProperties({
   properties: {
-    lineHeight: lineHeights,
     backgroundImage: {
       ripNotComingSoon: {
         backgroundImage: `url("/assets/ripnotcomingsoon.jpg")`,
@@ -24,7 +22,6 @@ const unresponsiveAtomicProperties = defineProperties({
     flexGrow: [1],
     flexShrink: [0],
     fontSize: {
-      ...relativeSize,
       xSmall: {
         fontSize: "0.75rem",
         lineHeight: 1,
@@ -71,6 +68,16 @@ const unresponsiveAtomicProperties = defineProperties({
     letterSpacing: {
       0.25: "0.015625rem",
       0.5: "0.03125rem",
+    },
+    lineHeight: {
+      1: 1,
+      default: 1.5,
+      16: "1rem",
+      24: "1.5rem",
+      32: "2rem",
+      36: "2.25rem",
+      40: "2.5rem",
+      48: "3rem",
     },
     overflow: ["hidden"],
     textAlign: ["left", "right", "center", "inherit"],
