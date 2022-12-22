@@ -25,7 +25,7 @@ const unresponsiveAtomicProperties = defineProperties({
         lineHeight: "1.5rem",
       },
       medium: {
-        fontSize: "1.1875rem",
+        fontSize: "1.125rem",
         lineHeight: "1.5rem",
       },
       large: {

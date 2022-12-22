@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
-import { POSTER_WIDTH, size } from "../../styles/sizes.css";
+import { POSTER_WIDTH, relativeSize, size } from "../../styles/sizes.css";
 
 export const gridStyle = style({
   "@media": {
@@ -27,7 +27,7 @@ export const slugTypographyStyle = style({
 });
 
 export const titleTypographyStyle = style({
-  fontSize: "1.1875rem",
+  fontSize: relativeSize[18],
   lineHeight: "1.5rem",
 
   "@media": {
