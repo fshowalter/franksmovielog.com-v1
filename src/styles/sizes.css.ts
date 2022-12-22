@@ -42,9 +42,6 @@ export const relativeSize = {
 };
 
 export const size = {
-  px: "1px",
-  full: "100%",
-  half: "50%",
   0: 0,
   4: "4px",
   8: "8px",
@@ -54,15 +51,7 @@ export const size = {
   40: "40px",
   48: "48px",
   64: "64px",
-  80: "80px",
-  96: "96px",
-  112: "112px",
   128: "128px",
-  144: "144px",
-  256: "256px",
-  320: "320px",
-  384: "384px",
-  512: "512px",
 };
 
 export const height = {
