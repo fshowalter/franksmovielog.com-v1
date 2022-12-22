@@ -1,35 +1,187 @@
-import { Layout } from "gatsby-plugin-image";
-
-export default {
-  backdrop: {
+export const data = {
+  still: {
     childImageSharp: {
       gatsbyImageData: {
-        layout: "constrained" as Layout,
+        layout: "constrained" as const,
         placeholder: {
           fallback:
-            "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1000'%20height='563'%20viewBox='0%200%201000%20563'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20199v200l3%206%204%2010c0%202%201%205%203%207%205%207%209%2018%209%2022-1%207%203%2013%209%2015%207%202%205%209-2%209-3%200-4%200-6%203l-2%203-4%205c-4%207-8%2010-10%208-4-2-4-1-4%2015v15l8-7c21-18%2028-23%2047-29%207-2%2019-8%2020-10%201-1%2024-12%2031-14%202-1%202-2%202-3a256%20256%200%200019-27c10-17%2011-17%2015-17l7%203%204%202c1%200%206-8%206-10l4-7c4-7%204-9%201-8s-3%200-2-3v-2c-2%200-5-4-5-6l2-4v-6c-2-5%201-9%206-9v5h2c1-2%202-2%203-2%201%201%204%200%206-2%204-3%204-3%204-8v-9c-2-5-2-15%200-17%201-1%201-1%203%202%204%203%209%205%2019%206l11%203c4%202%209%203%209%201l-3-3-6-3-9-2-10-2c-5-3-14-12-15-17l-3-5c-4-4-7-24-4-34s12-17%2025-17l8-2c3-3%205-3%205%200%200%202%200%202%203%202%202%200%203%201%203%202l-2%201c-2%200-2%200-2%202l1%202%202-1c2-1%203%200%205%203l2%202%204%203c2%205%204%207%209%207%203%200%205%201%205%202%201%202%202%202%202%201h4c3%200%203%200%203-2-3-6-3-9-1-12%203-4%208-6%2012-5h29c25-1%2025-1%2034%201%2012%203%2014%204%2014%206l1%208v5l2%205%204%208c3%208%204%209%202%209l-1%201c2%202%200%208-4%2012-5%205-8%2010-9%2014v9l2-6c0-4%201-5%203-7l4-3%203-1%201-1%202-1c3%200%205-2%203-2-1-1-1-2%201-3l3-4%204-3%206-1h1c0%202%202%202%205%201l3-1c1%201%202%200%202-1h3l1-1-1-2-10%202c-3%202-3%200%201-3%202-4%208-15%208-18%200-2%203-1%203%201%201%201%202%203%204%203%203%202%203%208%200%208l-2%202-2%203h2c2%200%203-1%203-2l2-1%202%201%201%202c-1%202%202%205%205%205l3%201%203%201c5%200%209%2011%205%2016l-1%203-2%201-2%201c0%202-4-2-4-4%200-3-1-4-4-5-10-3-23-2-23%201%200%201%205%203%2011%203%204%201%207%201%207%203l5%201c5%200%205%202%200%204-6%202-7%202-9%201h-2l-6%201c-2%201-2%202%200%205l3%203%201%206c2%205%202%205%200%204-4-3-12-4-19-4l-10%201-9%201c-5%202-6%202-7%200h-2c-1%201-2%2011-1%2013s5-1%205-3%203-3%206-2l4%202%207%204%206%204%204%202%204%202c2%200%2010%207%2010%208l-3-1c-2-1-2-1-4%201l-1%203c0%202-10%208-12%206-1-2-7-5-8-5-2%201%200%205%203%205l5%204%204%202c2-2%203-1%204%202l3%202c1-1%201%200%201%203s1%205%203%207c3%203%204%209%201%2012l-4%205c-3%203-3%203-5%202h-4c-1%202-1%201-1-3l-2-5-3-3-2-1c-1%200-1%205%202%208l1%202%201%206c2%205%202%206%200%209-3%204-11%2011-15%2013l-4%202h-2c-4-1-6-1-5%203l-1%201-2-1c0-3-2-2-5%200-5%203-6%207-4%209v3c-2%200-3-2-3-4%200-1-1-2-3-2-3%200-3%206%200%207%204%201%201%202-5%202h-6v3c0%204%202%206%204%204l1%201c-1%201-2%202-5%202-4%200-8%201-13%205l-4%203-3%204-3%204c-4%200-8%2010-6%2013s6%201%206-2c0-2%200-2%201-1v4c-2%203-2%203%201%204l4%202%202%201c0%202%208%206%2012%206%202%200%204%201%206%204%204%204%209%204%2012%200%202-3%205%203%206%2012l3%2011%202%206%202%203h64a709%20709%200%200067-1h28l2-1%201-1%201-2%204-5%203-5c2%200%205-3%204-5l3-4%201%202%201%201%201-2c-1-1%200-2%202-4%203-3%204-6%202-5-1%201-2%200-2-1l1-1%202-1%202-2%201%202c0%202%202%201%203-1l2-4c4-5-1-7-5-2-2%202-3%202-5%201l-4%201c0%202-1%202-2%201-2-1-5%202-7%206l-3%203c-3%200-3%200-2%202%200%203-3%205-6%203-1-1-2%200-4%205-2%204-3%205-4%204l-4%202-4%202c-2-1-4%200-4%201l-2%203-2%201-4%204%207-14%203-4%201-1%203-5a256%20256%200%20013-10c-3-6-3-7-3-13l1-9%204-21c3-20%203-23%207-27%204-5%2016-14%2018-14%203%200%206-5%207-11l1-9c1-4%200-5-3-9-3-5-5-9-5-17%200-9%202-11%207-7%203%202%204%202%205%201%203-2%204-2%206-1s2%2017-1%2021v5c1%200%202%202%202%205l3%208c4%205%206%2014%204%2018-1%203-1%203%205-1%207-4%2015-5%2025-3%204%200%2012-2%2021-7l10-4%209-4%206-2%209-4a1042%201042%200%200120-10c5-4%206-5%206-2%200%201%202%201%207-1l4-2%207-3%202-1%204-3%2010-7%2015-8c6-4%207-4%2012-4%206%200%206-1%206-3-1-2-1-2%201-3l4-2c1-3%206-3%208-1%202%203%203%202%203-2-1-3%201-5%209-7l6-4%202-1h1c0-3-2-3-7-1l-8%201-3%202c0%201-4%204-6%203l-5%201h-5c-1-2-1-2-1%201-2%207-12%2010-18%205l-2-2%204-2%206-5%204-3%202-1c2-3%203-2%202%201%200%202%200%202%201%201%202-1%202-3%201-4%200-3%200-3%202-3l5-2%204-2%205-3%205-5c3-1%204-4%202-4l-10%206a99%2099%200%2001-13%208l-6%204c-3%201-8%204-10%207-8%207-15%2011-16%2011-2-1-6%202-12%208-9%209-10%209-17%209l-6%201h-1c-2-1-2-1-3%201h-2c0-2-3-1-3%201s-6%203-7%201c-1-1-6%200-7%202l-4%201-4%201h-4l-4%201-3%201-2%201-7%203-3%201c-3%201-3%200-4-2s-2-3-4%200v1l-7%204-6%202-3-1c-2-2-4-2-10-2-14%200-17-2-18-12-1-3-1-6%201-10l2-9c0-2%200-2%205-2%204%200%205%200%203-3l-8-4-8-3c-4-2-6-3-7-2l-9%205c-8%204-19%2013-19%2016%200%204-3-2-4-8%200-7%202-13%208-18%207-6%209-6%2016-6%208%200%2010%201%209%206l1%202c1%200%202-2%202-5l1-2h6c3-1%207-2%209-1%203%200%205%200%207-2h14l3-1c1-1-2-2-8-4l-13-5h-9l-5%201c-6-1-8-7-7-15%201-6%202-7%204-4%203%206%204%200%201-7-3-5-2-5-12-7l-10-2-5-2c-3-1-6-5-6-9s3-10%209-17l6-10%205-7c10-12%2011-17%206-29-3-9-4-11-1-12l3-5c3-6%204-5%204%204%200%2014-1%2013%207%2014%2010%200%2013%202%2015%208%202%204%203%207%205%208%203%202%204%206%202%207s0%209%203%2011%204%201%202-2%201-9%205-10c3-1%204-3%201-3-2%200-4-2-4-5-1-4%201-4%204%200%204%205%206%205%2011%200l5-4c3%201%200-2-4-4l-4-2c0-1-9-5-10-4l-4-1c-1-1-2-1-4%201-2%201-2%201-3-1%200-2-1-2-2-1h-2c-2-2%204-11%209-13l5-3-2-3c-3-2-7-2-7%200l-1%201-3%201c-1%202-11%205-15%205s-5-1-5-5c0-5%201-6%2012-8l14-3%2041-1h33l7%203c3%202%208%204%209%206a226%20226%200%200013%2013l5%205c3%201%203%204%200%204-2%200-2%200-2%202l1%205%201%207c1%207%201%208%205%208l2%202h-1c-2-1-3%202-2%204s2%202%205%202h7c4%201%204%201%208-3l4-5%203-3%202-7c0-4%204-8%208-8%201%200%202-1%201-2%200-2%200-2%202-2%201%200%204-1%205-3%202-2%204-2%209-2%206-1%207-1%208-3l4-3%201-1v-5c2-2%2012-1%2016%202%208%205%2012%2018%2010%2030-3%2018-7%2028-14%2037-4%206-5%208-2%205%203-2%2010-3%2011-1l-11%2012-11%2013c0%202%205-2%209-5l10-7c6-2%207%200%205%205l-2%204-7%208c-12%2010-13%2012-12%2012h1l6-4%206-4c0-2%2016-13%2019-13s6%202%206%204l2%203c2%202%202%203%202%208-1%205-1%205%203%207%203%202%204%204%205%208l7%2013%204%208%202%204%202%205v1c2%200%201%204-1%204l-14%202a392%20392%200%2001-19%204h7c15-3%2029-1%2028%204l1%205c3%204%203%206%200%206-2%200-5%204-3%205l2-1c3-2%2010-3%2014-3s5%200%206-2l4-2h4l11-1c12-1%2017%201%2016%206v2l2%201c0%202%2010%2013%2013%2013%202%200%203%201%201%203-1%200%206%207%208%207l2%203c1%204%204%205%206%202%201-1%202-2%204-1%203%201%203-2-1-5s-4-5%200-5c3%201%2012%207%2011%209-1%201%203%206%205%206%203%200%203%202%202%204v2l1%203v1l1-1%201-4c2-2%204%200%203%203-1%202%202%204%206%203%204%200%2010%205%208%208-1%202-1%204%201%204l3%203%201%201c1-2%201-2%205%200%204%201%204%201%206-1a216%20216%200%200115-18l3-3%203%203%204%205%201%201%208%206c3%202%201%205-4%208l-4%203c0%206-8%2014-8%207-1-13-5-9-5%206l-2%202v7l-1%206-2%201c0%202%203%204%205%203l1%203%202%205v5h-1l-2-4-3-4-1-2v7c2%201%201%203-1%203l-1%201h4c3-1%205%200%202%203-2%201-2%205%201%204h1l-3%204c-3%200-6%203-2%203v1l-1%204v1c-3%200-5%200-5%202s-3%202-5%201h-1c0%202%200%202%205%202%202%201%203%205%200%205-2%201-3%203-1%205%202%200%201%202-1%202-2%201-2%202-2%204%200%204%200%206-2%206l-6-25-1-5-1-2-1-2-1-1c1-4%200-8-1-8-2%200-2%201-2%2015l1%209v2h-3c-1-1-1-1-1%202a232%20232%200%20014%2021l1%203h64l1-282V0H0v199m259-88a163%20163%200%2000-43%2016%20141%20141%200%2000-29%2020v10l-2%203c0%201%201%202%202%201h8l3%201%203-1-1-1-2-3c0-2%200-2-2%200-1%202-3%202-5%201s-2-11%200-10l3-2c0-2%203-4%204-4%203-2%203-2%203%200l-3%204-4%202-1%204c0%202%200%202%204%202l5%201h2l-1-1v-3c2-1%202-1%204%201s5%203%203%201v-2l-1-2c-2-1-2-2-1-2%203-1%205-1%206%202l1%203%201-4c0-5%202-5%202-1%200%203%205%204%206%202l3-3%205-5c1-3%204-4%203-1l1%202%201-1c0-2%201-3%202-1l4%201c2%200%203-2%201-4l2-2c3-2%203-2%203%200-1%202-1%203%201%204s2%201%203-2c0-3%201-4%203-1%202%202%206%200%207-4l2-2c2%200%204%202%203%204%200%203%201%202%205%200l3-1%201%201%201-1-2-2-1-1%204-1%201-1%201-1c1%200%202-1%201-2l2-4%203-4%205-5c3%200%203-2%201-2-4-1-27-1-34%201m-13%2048l-4%202c-5%200-15%203-17%204l-10%203c-10%204-12%204-10%206%201%201%202%201%206-1%207-3%2019-7%2029-9l11-4c-1-2-3-2-5-1m313%209l-8%201-15%202-13%202-10%202-7%202-24%206c-6%202-6%204-1%203%209-2%2014-2%2023-2l10-2%209-1a1266%201266%200%200037-1c37-2%2071-2%20104%201%2011%200%208-1-10-6a316%20316%200%2000-95-7m-364%209a440%20440%200%2000-31%2015l-10%206-3%201c-2%201-7%206-6%207l3-2%204-2%203-2%204-3a490%20490%200%200036-20m752%2035l-1%2022-1%2018v27c-1%202-2%202-4%201-3-2-6-2-6%201%200%200-1%202-3%202l-2%203-1%201-2-1c0-3-3-8-6-9-2-1-7%200-7%202l-4%202-3%203-1%202h-3v3l-1%203-6%202c-9%203-10%2019%200%2016s15-7%2014-12c-1-3-1-3%201-2h11c2-2%208%200%209%202l2%202a932%20932%200%200017%201c3-2%203-96%200-96l-3%207m-649-2c-1%202-5%203-6%201s-9-2-17%200c-5%201-7%203-3%203l2%201c0%201-3%203-6%203-4%200-8%202-10%205l-5%202c-2%200-4%204-3%207%200%202-3%202-4%201s-3%200-6%203l-10%208c-7%204-9%207-4%208%204%200%207%204%203%204-1%200-2%200-1%201l4%201h4l-1-3-1-4c1-1%203%201%203%204s1%203%203%203c3%200%203%200%202-1-1-2-1-5%201-5l1%204%202%202%201-2c-1-1%200-2%201-2%201-1%201%200%201%202s0%202%2013%200l37-1h32l2%202c2%202%203%203%205%202%203%200%203%200%203%202%200%203%203%203%204%200%201-2%200-5-2-5-1%201-2-4%200-5%201-1%202-6%201-7l-1-2-2-4-2-2-1-2-3-4c0-2%200-3%201-2s7%204%208%203%201-4-1-4l-4-2-2-4c-2-3-3-4-1-3v-6l-2-2h-1c-1-1-2-2-3-1l-2-1c-2-2-8-1-8%201h-1c-2-1-2%203-1%204l1%203h-3l-2-3v-1l1-2c0-4-14-4-17%200m663%207a815%20815%200%20005%2079c0%2011%201%2012%209%2012l7-1h4c3%200%202%205%200%207-3%202-2%205%201%207l4%204%201%204c2%202%201%2037-2%2041-1%202%200%2012%201%2014l5%206%204%202v-28a132%20132%200%2000-1-31l1-12v-11l-4-4-7-6c-1-1-1-1%201-1l3-1%204-3%203-1v-24c0-22%200-24-2-25l-2-4%202-1c2%200%202-1%202-7v-7l-4-2a430%20430%200%2000-26-11c-8-5-9-4-9%204m-38%2020l-1%208c-2%203-2%204%200%206l2%202%206-4v-17l-3-1h-3l-1%206m-62%206l-3%203-1%201h-1l-1-1-2-1h-3l-8%203c0-2-3-1-5%201-2%201-2%201-4-2-4-10-14-3-12%209%201%203%201%203-1%202-7-4-13%2010-6%2017%201%202%202%203%202%207%200%208%202%2012%207%2012%203%200%205-1%207-3l6-3c4-1%209-4%2011-7s3-4%204-3c2%202%204%202%205-1l1-3%204%203c7%205%209%201%209-18%200-11%200-12-2-15s-5-4-7-1m31%207c-2%202-3%208-1%2010%204%205%2012-3%209-9-1-3-5-4-8-1m-525%2017v2c0%201-1%202-3%202s-2%200-3%204c-1%203%200%205%201%206v19c2%201%205-3%205-6%200-6%200-6%202-6s2-1%202-3l1-5c3-2%203-5%200-9-3-5-5-6-5-4m432%2015l-2%205c-1%202-2%205-4%206-2%203-2%206%201%206l3%203c4%208%2010%209%2015%202%203-5%202-16-3-21-2-2-8-3-10-1m-286%2014v4c0%204%202%205%207%203%202-2%208-2%2013-1%204%202%204%200%200-3l-9-1c-4%201-5%201-7-1-1-2-4-3-4-1m351%2021l-3%202c-3%200-14%209-15%2012l-2%204c-2%200-5%2011-5%2016%200%208%202%2011%206%2011l6%203%204%203%207-1c10-1%2013-6%206-11-8-5-12-11-9-14v-1c-2%200%201-10%205-15%202-3%204-11%202-11l-2%202m-464%2016c-6%203-8%206-8%2012l3%2021c3%202%207%203%208%202%202%200%206-8%206-10s3-1%204%202c3%205%207%203%209-4%200-4-1-8-4-9-2-1-3-2-3-6-1-10-6-12-15-8m-311%208l1%206v3c-1%201-3%2015-2%2017s-4%203-17%203l-13-2-2%201H43c-7-1-8%200-6%204l6%2014%206%208%205-4c7-5%209-3%209%209%200%208%201%2014%203%2014l6%201%205-1v-4c0-4-2-7-4-7l-3-8%203-2c2-1%202-1%202-4%200-2%200-3%203-4%206-2%207%201%207%2015%201%2013%201%2014%205%2011%202-3%205-15%205-28a1120%201120%200%20010-36c1-3%201-4-2-7-3-4-4-4-4%201m360%209c-4%201-5%2011-1%2014%203%204%208%200%208-7%200-4-4-8-7-7m-99%203c-2%201-2%202%200%204s2%202%206%201h3l5%202c5%200%205%200%208%203l4%203v-2l-1-3-2-3c-1-4-2-5-13-6l-10%201m538%203c-2%201-6%209-7%2014-2%208-4%2010-6%206-2-7-5-1-5%2013v10l5%202%207%202c4%200%2019%209%2027%2016%204%205%209%208%209%208%203%200%204-2%203-4-2-3%202-6%206-6h3l-4-3c-6-5-6-8%200-12h10c1%201%201%200%201-1%200-2%201-4%203-5%202-2%202-2%201-3l-2-4c0-2-4-5-7-5l-4-3c-3-5-6-5-11%201l-5%204-1%202v2c-2%200-2-2-1-6v-5c-4-1-5-4-4-8%201-5-1-11-6-15h-12m71%2026l-5%201c-3%200-3%202%200%205l1%202%202%203%202%203v2l-2%202h-3c0-2-4-4-5-2l-2%201c-1%200-1%203%201%204l1%202c0%202%200%202%202%202%204-1%2011-6%2011-7l3-5c3-3%204-11%202-14h-1c0%202-1%202-3%201h-4m-549%206l-6%206c-4%204-4%204-5%2013v8l3%204%205%203c2%200%205-3%205-4l2-3%202-7v-12c2-8-1-11-6-8m38%203c-2%203-3%208-3%2010%202%206%208%208%2011%203%201-2%201-2%203%200%203%205%208%201%208-6s-5-11-8-6c-1%202-1%202-4%200-2-4-5-4-7-1m126%2031l-1%202-1%202c-1%200-1%201%201%202%203%203%2011%203%2012%200%200-4-8-9-11-6m314%2043l-1%203-3%205c-3%204-2%2019%202%2024l7%207-2-10c-1-4-2-18%200-21l1-2v-2c1-3-1-6-4-4m-124%203l-3%204c-1%203%204%2012%208%2015a346%20346%200%200118%2013l9%206%2010%208%2010%207c13%2010%2022%2015%2021%2011l-1-3c0-2-1-2-2-2l-4-2-3-3-4-2-8-5-11-9c-2-3-8-7-11-9-22-13-25-16-24-27%200-5-1-5-5-2m-442%2011c1%202%201%202-1%203l-2%202%201%202%201%201%201-1c0-1%201-2%202-1%203%200%204%203%202%204s-2%202%201%203l2%203c-1%201%200%201%201%201l3%203c1%202%202%203%203%202%202%200%201-2-1-6-2-1-3-4-4-6l-2-3-3-5-3-4c-2%200-2%200-1%202m-177%2017a478%20478%200%200020%2038l-1%203c-1%200-1%201%202%205s4%205%201%205-3%200-2%202l2%202c0%201%2010%202%2017%201l16%202%2010%201%209%203c2%201%203%203%201%202l-4%201h-2c1-2-1-3-2-1l-3-1-3-2h-8l-2%201c-1-1-2%202-2%204a660%20660%200%200082-3c-5%201-8%200-7-1l-3-4c-4-3-5-2-2%201v4c-2%201-2%201-4-1l-3-2-4-3-2-2-2%202-1%203-2-2c-3-2-3-2-5%200-1%201-2%202-1%203%200%202%200%202-2%202s-4-3-1-4c1%200%201-5-1-6l-1-1c1-5%200-7-2-8l-3-1-1-1c-1%200-2%204-1%207v5h-7l-2-1c0-2-3-3-6-3l-3-1c-1-1-2-1-4%201l-4%201a1873%201873%200%2000-20-2l-3%201c-2%201-2%201-5-2l-4-7-1-5-9-18-3-5-4-7-5-6-4-6-3-4%204%2010m619%2010c-3%203-3%206-2%2012%200%207%203%2012%2012%2019%208%207%2010%208%2019%2018l7%208h12c10%200%2011-1%208-2l-6-3-7-4c-2%200-4-2-4-3-2-3-11-12-16-14-6-3-16-14-19-19l-1-9c1-5%200-7-3-3m-171%2034l1%206-1%202-1-1-1-2-1%201h-1l-1-3c1-3%201-3-1-3s-2%201-2%203v1h-9l-2-1c-1%201-1%200-2-1-1-3-2-2-1%201l-1%204c-1%201-1%200-1-3l-1-5-1%203c0%205-2%207-5%206l-4-1c-1-2-5-1-6%201l-7%206-4%203c-3%203-5%203-8%202h-1l-1%201-2%202%2048%201h48v-2l-1-3-1-4v-3l-3%203c-3%203-4%204-3%201l-1-3-3-3-3-3c-2-1-3-3%200-3l1-3c0-2%200-2-2-2l-2%201-3%203-1%204-1-3%201-4c1-2%200-3-2-1s-5%202-7%200-2-2-1%202m-458%209l-7%201-13%202h-13c-1%201%200%201%202%201s3%200%202%202l3%201c7-2%209-2%209-1l-15%204c-4%200-4%200-2-2h-3c-4%200-5%200-4-1l-1-2c-2%200-2-1-1-2%200-2%200-2-2-2s-2%201-2%203l-3%203c-3%201-3%201%201%201%205%200%205%200%205%203%200%202%200%203%204%203l7-1h19l8-2%208-2c3-1%207-1%205%201l-8%201c-15%201-13%203%204%203h15l-2-2c-2-2-2-2%200-4%203-2-1-2-11-1h-12v-2c-1-1-1-1%201-2s6-1%205%201v1l1-1%204-2c3-1%204-3%200-3l-4%201m26%206l-4%201-3%201c-1%202%201%202%203%201h1c-1%203%202%206%204%204h2c0%202%207%201%207%200l2-2%201%202c-1%201%200%201%204%201s5-1%203-4h-2l-1-1c-1-2-2-2-2-1h-2v-1l-1-1-3%204-3%203v-1l1-3v-3h-7'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC5UlEQVQoz02QbU+TBxSGHxm0z0ufvkGLfbGvNFAfCy2FUiwtKmyCDtrRZoVKNXZQa7V0FDbnpkhYjDBnljnnFxMzF9Qtmhg/mG3Jst+wf3QthS3ZhzsnOfd9Xzk5giRJtCXL8sHs0uno0ukR/921JYoiVqsFLRwm6A/g93kJ9wex9/SgF8XDnKIgG1WE/8MkSSbkDzA2qGG3mhDFQ0+v12OzmEiEQ4xpGoNBLzFNw+fxHXjtjGIwoFq7Ef6DtctaKEAqeoKQy4bDbMBiMiLL0kHY4zzGSH8//c5evDYzrh4zdqsZqd1vX6koSAblENiW1WLGrCp0i13kR8OUT0ZwqRKqIiPKBkb8TpozSb5pVgm5ehkL+wm5e9FJIkaTEeNRJ9G5RQRJllBV48HvTsdj3JpL8+TTMnvLcwz3WpBEHZKs8MXCafYbOf56vM0Pm1d5e7fFmaEBcp9cYTyTYjQ6wJVHLxD6jho5ZlUROt6jmEnwZqvGk/USd3MxWpkofU43Rzq7uJyJ8253nde7n/Hu4T321yvMJEZIn5ogNqQR8DqIRwcQIn4Hs8kEqkHl4mSSZ2tlHq/OcK+QoJGJk4iO0O1wkEuledm6xI/V83y1MMlqfomlQg2P18dH2Tya30Ofy4bgdzvwuR0EAxpPn//Ony9f8Kg8y3dLkxQG/QRcDtwuB++Pp8iPDbM4Nc1K5Uvqaw+o1XYoFutc/LjCtbMTjAftCKlIEF9omOVLd6g3H/LrH3/z28/PuXDCQ4/JSEeHwEAkyer1PSrVHT7fesaN209Za33P9sYdfrq/S6NylcVzWUZjEYRsvk61dp/y8i3mz1UplTbZrN9k1G7DLMt06jqJD6eprtygcX2HRuNr1jceUG/usVVvsL/T4tW3t9lqrOH1BRDmsivMTC9wZuJDpk5lSSenKBaqnM9eoLPjCLKsMHRcI3s2x8noceY/mKVcqlMqXSM/v8RGYZpftpvcvFzEZrPxD7NpccG4Yio6AAAAAElFTkSuQmCC",
         },
         images: {
           fallback: {
-            src: "/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg",
+            src: "/static/feaee0b15b37d41bd89f3440e7cf8b6a/acfae/gone.jpg",
             srcSet:
-              "/static/feaee0b15b37d41bd89f3440e7cf8b6a/2af26/gone.jpg 250w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/a5dc9/gone.jpg 500w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg 1000w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/f2565/gone.jpg 2000w",
-            sizes: "(min-width: 1000px) 1000px, 100vw",
+              "/static/feaee0b15b37d41bd89f3440e7cf8b6a/7f89c/gone.jpg 240w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/82753/gone.jpg 480w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/acfae/gone.jpg 960w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/a464d/gone.jpg 1920w",
+            sizes: "(min-width: 960px) 960px, 100vw",
           },
           sources: [
             {
               srcSet:
-                "/static/feaee0b15b37d41bd89f3440e7cf8b6a/fdfcf/gone.avif 250w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/b400f/gone.avif 500w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/70674/gone.avif 1000w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/31a81/gone.avif 2000w",
+                "/static/feaee0b15b37d41bd89f3440e7cf8b6a/23bcc/gone.avif 240w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/2df83/gone.avif 480w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/3beec/gone.avif 960w,\n/static/feaee0b15b37d41bd89f3440e7cf8b6a/d25bd/gone.avif 1920w",
               type: "image/avif",
-              sizes: "(min-width: 1000px) 1000px, 100vw",
+              sizes: "(min-width: 960px) 960px, 100vw",
             },
           ],
         },
-        width: 1000,
-        height: 563,
+        width: 960,
+        height: 540,
       },
     },
   },
+  latestViewings: [
+    {
+      reviewedMovie: {
+        imdbId: "tt0045564",
+        title: "The Blue Gardenia",
+        grade: "D-",
+        slug: "the-blue-gardenia-1953",
+        year: 1953,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQozz2SzUqyURSF39Qo0SzNFKU00yy1RDANyiAK7U+zKBAqiFAKox91ouCkgQM1bOLEHGgURCniwFlQs+gSvIQuY33s3VeDzcvL2fs5a62zBYvFgpGREajVav76/X7s7Ozg/Pwc5XIZZ2dn0Ov1sNlsWFhYQDAYxNraGrxeL5aXl+F0OhEKhXiWSlhdXeXDlZUVbt7Y2MDR0RGur6/Rbrfx+vqK09NTHB8fIxKJYHt7G9PT09BoNFAoFDCZTHxGXwbSbYuLi9jf3wfBZ2dnEY1GcXd3h5eXF3x8fCCTySCdTjN4fHwcUqkUfX19EAQBo6Oj3D85OQmdTgeBLJK6WCzGVmmI1FWrVbRaLdTrdeRyOVQqFWSzWQwNDWFwcBAymQw9PT0YGxtDPB6H1WpluBAIBLC1tYVisch5ka18Po9ms4lut4uHhwfc3Nzg+fmZ7ZvNZsjl8j8gQS4uLmC322EwGCBsbm5id3cX9/f3SCaTnEU4HGZln5+fSKVSeHp6QqlUwuHhIS4vLzlrtvff8tXVFVwuF+iBBbK5vr7O+bndbszMzPChx+Nh+zT8/v7OPfR4b29vKBQKWFpa+gMmEgnMz89jamrqx7JWq4VKpeL1mJiY4OCNRiMPOBwO1Go1dDodzvXr6wuPj48MlEgkPEMK5+bmfoAEoBdTKpWcDa0DBU3/9AD03dvbw/f3NxqNBud6cHDAlxGQ9vfk5ISdEUugcHt7e9Hf389FDaSQbh4YGOAh6vH5fKzu9vaWYSKRCGKxGMPDw7ybpI5dEYSGSCUVDZNCCvhXNRVByCYt8y+QiqKi1aM9JOA/qZqH3l4xhqQAAAAASUVORK5CYII=",
+              },
+              images: {
+                fallback: {
+                  src: "/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg",
+                  srcSet:
+                    "/static/416c95d938442a4ba50939190044112e/43c32/the-blue-gardenia-1953.jpg 78w,\n/static/416c95d938442a4ba50939190044112e/78def/the-blue-gardenia-1953.jpg 156w,\n/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg 312w,\n/static/416c95d938442a4ba50939190044112e/a02d5/the-blue-gardenia-1953.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/416c95d938442a4ba50939190044112e/08742/the-blue-gardenia-1953.avif 78w,\n/static/416c95d938442a4ba50939190044112e/1c619/the-blue-gardenia-1953.avif 156w,\n/static/416c95d938442a4ba50939190044112e/c02e5/the-blue-gardenia-1953.avif 312w,\n/static/416c95d938442a4ba50939190044112e/81026/the-blue-gardenia-1953.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0028330",
+        title: "Suzy",
+        grade: "D-",
+        slug: "suzy-1936",
+        year: 1936,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVQozz2SzUuyURDF7x/gxrUSuGmlSxEMEcSVImHQLonI1mmFUlZIRQjZB1aWmghFZJSgCRFkWtl32qYgqUULcRGFUVkUFudlBnovzOa58/zOzDlXJBIJhEIhhMNhpNNpZDIZnJ6eolKp4OTkBO3t7TAajfB4PFhbW8Pq6iq2trZQLBYxOTkJi8WC/v5+9PX1cY/Y3t7G+Pg4ZmZmQPB8Po/Ly0vkcjlsbGxgb2+P76anp7G5ucnCOzs7uL6+RqFQQDweh8PhQEdHBwYHByFSqRSGh4cxPz+P9fV1HB0dMfT4+JiBu7u7DKWiXvpGE1Jls1mcn59zr81mY7Dw+/1wu93w+XwIBoMMo+bR0VG0tbXB6XRidnYWsViMxaLRKNfKygqmpqZ4yu/vb9zf3/N/YmxsjCf885I82t/f5/VcLhevMTc3h4ODA5ydnfE0y8vLLN7V1YVyuQw6BH1/f4cIBAJMfn5+xu3tLYNLpRJubm4QiUR4OrKDeghWrVZ5fQqP1q3Vav+BHx8fEHa7HclkktXJbFr56uqKE/Z6vVhcXOQVW1tbOXG6/zsE+Pz8ZFi9XucSVquVvaFACEK1tLTE6XV2dqK5uRkGgwFqtRpyuRyNjY2cOvXTlAR8fX3F7+8vgwWZe3h4CFqdngR5StXd3Q2FQgGZTAapVAqVSoWGhgaYTCZOm2AkeHd3h7e3N3x9feHn5wdiYWGBzaVEaRqdTgeNRgO9Xo+mpib09PRgYmICQ0ND7O/T0xMnS4GRGL2Sx8dHvLy8MFRotVoolUqYzWb09vZy0iMjI6w+MDDAYZEynYeHB7S0tEAikUAIwUXeXlxccNq09j+17nkHwSTf1AAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg",
+                  srcSet:
+                    "/static/8eb90295d536719fa7d58f5eadb27aae/43c32/suzy-1936.jpg 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/78def/suzy-1936.jpg 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/a02d5/suzy-1936.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/8eb90295d536719fa7d58f5eadb27aae/08742/suzy-1936.avif 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/1c619/suzy-1936.avif 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/c02e5/suzy-1936.avif 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/81026/suzy-1936.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0034055",
+        title: "Pot o' Gold",
+        grade: "F",
+        slug: "pot-o-gold-1941",
+        year: 1941,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQozyVTS0syURieX9DPiIRoY2RRlEqhYTcxSUWx1CSykqAoKkkqNRWRsIiwi6ndICIok4ha5aJo1Q+oxF2rlkGL5+N5v83MmTkzz/U9yvHxMfL5PA4PD5FIJLCysoJQKITp6Wk0NDSgrq4OKpUKPp8PMzMzmJqaQiAQgN1ux8bGBmKxGCKRCFZXV7G2tgaFQMViEXt7ewIWDAbhdDoxNjaGeDyOiYkJaLVa2Gw2+XF3dxebm5tYXl7G1dUVHh4esLW1he3tbcFQTk9PcXt7i5ubG2QyGWEdGRnB/Pw8Dg4OhIyk0WgUhUIBX19foKvJyUkhuLi4EIfZbBbn5+dQLi8vcX9/j+fnZwHlRy6XC+FwWCxQIX8iyOzsLK6vr8XJ6OioAAwODsoz9wXw7OwMT09PeHl5Qa1WE0sOh0MUWK1W9Pb2ilpa5Jrvuru7MT4+ju/vbywsLKCnp0cA9/f3odAmJTOXz89PVCoVeL1eDAwMwGKxwGg0CgBjYLZmsxkajQYGgwGlUgmLi4vQ6XRIp9PiTmGQyWQSer0e5XIZb29vUgxZh4eHBZR3AnLd2dkphdHB+vo6Pj4+RNDr6+v/UnihZebElzs7O+jr60N7e7uAUhVtDg0NiarW1lYZFeZ9dHSE9/d3nJyc4Pf3VxpXcrkcWAwbZI7M1OPxoKmpCS0tLWKR9jk6VEd7c3Nzoqparcq4EPTv708mQuFocMbq6+vhdrtlRKiEIGT2+/2SI1WzFAIuLS2J0o6ODqjVaink5+cHqVQKCi/coMXGxkY5BQy4ubkZd3d3ws5T0d/fD5PJJGRsvKurS1S3tbXJqaLax8dH/ANuTyEdFFIL7AAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg",
+                  srcSet:
+                    "/static/ae790f0cea379c229ff81a50f90ce566/43c32/pot-o-gold-1941.jpg 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/78def/pot-o-gold-1941.jpg 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/a02d5/pot-o-gold-1941.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ae790f0cea379c229ff81a50f90ce566/08742/pot-o-gold-1941.avif 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/1c619/pot-o-gold-1941.avif 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/c02e5/pot-o-gold-1941.avif 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/81026/pot-o-gold-1941.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+    {
+      reviewedMovie: {
+        imdbId: "tt0037461",
+        title: "The Whistler",
+        grade: "C-",
+        slug: "the-whistler-1944",
+        year: 1944,
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQoz1VSv0uyYRR9J4cmFwkCJYygJGzIxH6QUYZUmqYlWRamViZCCZoVpdEikiiIikJziIiBYtDQIBFRhENLkIObQmt/wPm4F74PvuHyXp73ec4599wjzM3NYWRkBAMDAzCbzQgGg+jr64NUKoVarcb6+jr8fj/29vbgdruxs7ODzc1NbGxsYG1tDaurq7BYLNxTCUajETqdjn/QZer1ej00Gg3S6TSy2SxcLheOj4/h8/mwv7/PX6/XyyQOh4MJ7HY7kwiETiqtVisrWFpaYoBisYhWq4VGo8Hnp6enCIfD/1UgEGCC7e1tBiQMYWZmBmNjY5iYmMDu7i6rnJ2dxcXFBd7e3nB0dASaglQcHh4iFoshHo9z73Q6WSmB0jsGnJ6exvj4OBYXF/mAFA4PD0OlUmFlZQWjo6MwGAxsCY13dnaGaDTKBPSGLCILDg4OWKUwOTkJKpPJxMoUCgWDyWQySCSSf2TkK5lOSyPQl5cXpFIpKJVKJiM/iUQgBtokeUmPSR2NeH19jaenJxQKBVxdXSEUCrGPpC6Xy+H19RWlUgnz8/N8n9RRSoSFhQVsbW3xqKSQ/KTIkEf1eh3VahUPDw+sKJPJ4OTkBI+Pj+h0Ovj6+sLl5SWWl5cZlIoV/h1Xq9Wywf39/dzf39/j4+MD7+/vSCaTHCXK5vn5OcrlMp/XajVUKhXOKtkiUGSmpqZYIeXI4/Ew6+3tLW5ubpDP53l8uVzOftHoiUSCfaRIfX9/4/PzE8/Pz2yFMDQ0xJuk+NBWbTYbgw8ODqKnpwdisRgikQi9vb1oNpv4/f3Fz88Put0u2u02IpEI7u7uGJCs+QNiQuSQgft1lAAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg",
+                  srcSet:
+                    "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/43c32/the-whistler-1944.jpg 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/78def/the-whistler-1944.jpg 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/a02d5/the-whistler-1944.jpg 624w",
+                  sizes: "(min-width: 312px) 312px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/08742/the-whistler-1944.avif 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/1c619/the-whistler-1944.avif 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/c02e5/the-whistler-1944.avif 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/81026/the-whistler-1944.avif 624w",
+                    type: "image/avif",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                ],
+              },
+              width: 312,
+              height: 176,
+            },
+          },
+        },
+      },
+    },
+  ],
   page: {
     html: "<p>Forget it, Jake. It’s Chinatown.</p>",
     frontmatter: {

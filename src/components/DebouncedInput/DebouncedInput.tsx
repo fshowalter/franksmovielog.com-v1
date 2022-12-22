@@ -1,5 +1,5 @@
-import React from "react";
-import { inputCss, labelCss, labelTextCss } from "./DebouncedInput.module.scss";
+import { Box, IBoxProps } from "../Box";
+import { inputStyle } from "./DebouncedInput.css";
 
 export type onChangeHandler = (value: string) => void;
 
@@ -44,26 +44,42 @@ function underscoreDebounce<F extends onChangeHandler>(
   };
 }
 
-export default function DebouncedInput({
-  label,
-  placeholder,
-  onChange,
-}: {
+interface IDebouncedInputProps extends IBoxProps {
   label: string;
   placeholder: string;
-  onChange: onChangeHandler;
-}): JSX.Element {
-  const debouncedHandleChange = underscoreDebounce(onChange, 150);
+  onInputChange: onChangeHandler;
+}
+
+export function DebouncedInput({
+  label,
+  placeholder,
+  onInputChange,
+}: IDebouncedInputProps): JSX.Element {
+  const debouncedHandleChange = underscoreDebounce(onInputChange, 150);
 
   return (
-    <label className={labelCss}>
-      <span className={labelTextCss}>{label}</span>
-      <input
-        className={inputCss}
+    <Box as="label" color="subtle" display="flex" flexDirection="column">
+      <Box
+        as="span"
+        fontSize="small"
+        display="inline-block"
+        letterSpacing={0.5}
+        textAlign="left"
+        fontWeight="semiBold"
+        height={24}
+      >
+        {label}
+      </Box>
+      <Box
+        as="input"
+        borderRadius={4}
+        className={inputStyle}
         type="text"
         placeholder={placeholder}
-        onChange={(e) => debouncedHandleChange(e.target.value)}
+        onChange={(e) =>
+          debouncedHandleChange((e.target as HTMLInputElement).value)
+        }
       />
-    </label>
+    </Box>
   );
 }

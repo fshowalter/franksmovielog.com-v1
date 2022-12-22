@@ -1,309 +1,99 @@
 {
-"viewing_year": "2018",
-"most_watched": [
+"viewingYear": "2018",
+"mostWatched": [
 {
-"imdb_id": "nm1321655",
-"full_name": "Christopher Markus",
-"slug": null,
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm1321655",
+"fullName": "Christopher Markus",
+"viewingCount": 4,
+"viewing_sequence_ids": [
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm1321656",
-"full_name": "Stephen McFeely",
-"slug": null,
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm1321656",
+"fullName": "Stephen McFeely",
+"viewingCount": 4,
+"viewing_sequence_ids": [
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm0000783",
-"full_name": "Dario Argento",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 644,
-"venue": "Shudder",
-"date": "2018-03-10",
-"title": "Tenebrae",
-"year": 1982,
-"slug": null,
-"imdb_id": "tt0084777"
-},
-{
-"sequence": 649,
-"venue": "AFI Silver",
-"date": "2018-03-23",
-"title": "The Bird with the Crystal Plumage",
-"year": 1970,
-"slug": "the-bird-with-the-crystal-plumage-1970",
-"imdb_id": "tt0065143"
-},
-{
-"sequence": 715,
-"venue": "Alamo Drafthouse Cinema - Woodbridge",
-"date": "2018-10-27",
-"title": "Deep Red",
-"year": 1975,
-"slug": null,
-"imdb_id": "tt0073582"
-}
+"imdbId": "nm0000783",
+"fullName": "Dario Argento",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+644,
+649,
+715
 ]
 },
 {
-"imdb_id": "nm3366745",
-"full_name": "Lowell Dean",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 635,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-01-31",
-"title": "Wolfcop",
-"year": 2014,
-"slug": "wolfcop-2014",
-"imdb_id": "tt2781516"
-},
-{
-"sequence": 636,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-01-31",
-"title": "Another WolfCop",
-"year": 2017,
-"slug": "another-wolfcop-2017",
-"imdb_id": "tt4515762"
-}
+"imdbId": "nm3366745",
+"fullName": "Lowell Dean",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+635,
+636
 ]
 },
 {
-"imdb_id": "nm0915693",
-"full_name": "Frank Wead",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 653,
-"venue": "TCM",
-"date": "2018-03-25",
-"title": "The Hoodlum Saint",
-"year": 1946,
-"slug": "the-hoodlum-saint-1946",
-"imdb_id": "tt0038615"
-},
-{
-"sequence": 673,
-"venue": "TCM HD",
-"date": "2018-05-02",
-"title": "China Clipper",
-"year": 1936,
-"slug": null,
-"imdb_id": "tt0027445"
-}
+"imdbId": "nm0915693",
+"fullName": "Frank Wead",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+653,
+673
 ]
 },
 {
-"imdb_id": "nm0589316",
-"full_name": "Seton I. Miller",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 654,
-"venue": "TCM",
-"date": "2018-03-25",
-"title": "Kid Galahad",
-"year": 1937,
-"slug": null,
-"imdb_id": "tt0029080"
-},
-{
-"sequence": 657,
-"venue": "TCM",
-"date": "2018-03-28",
-"title": "The Crowd Roars",
-"year": 1932,
-"slug": "the-crowd-roars-1932",
-"imdb_id": "tt0022792"
-}
+"imdbId": "nm0589316",
+"fullName": "Seton I. Miller",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+654,
+657
 ]
 },
 {
-"imdb_id": "nm1383748",
-"full_name": "Francis Wallace",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 654,
-"venue": "TCM",
-"date": "2018-03-25",
-"title": "Kid Galahad",
-"year": 1937,
-"slug": null,
-"imdb_id": "tt0029080"
-},
-{
-"sequence": 663,
-"venue": "TCM",
-"date": "2018-04-14",
-"title": "The Wagons Roll at Night",
-"year": 1941,
-"slug": null,
-"imdb_id": "tt0034370"
-}
+"imdbId": "nm1383748",
+"fullName": "Francis Wallace",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+654,
+663
 ]
 },
 {
-"imdb_id": "nm0729694",
-"full_name": "Allen Rivkin",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 655,
-"venue": "TCM",
-"date": "2018-03-25",
-"title": "It's a Big Country: An American Anthology",
-"year": 1951,
-"slug": null,
-"imdb_id": "tt0043680"
-},
-{
-"sequence": 692,
-"venue": "TCM HD",
-"date": "2018-08-04",
-"title": "Dead Reckoning",
-"year": 1947,
-"slug": "dead-reckoning-1947",
-"imdb_id": "tt0039305"
-}
+"imdbId": "nm0729694",
+"fullName": "Allen Rivkin",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+655,
+692
 ]
 },
 {
-"imdb_id": "nm0010987",
-"full_name": "Gerald Drayson Adams",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 658,
-"venue": "TCM HD",
-"date": "2018-04-01",
-"title": "His Kind of Woman",
-"year": 1951,
-"slug": null,
-"imdb_id": "tt0043643"
-},
-{
-"sequence": 692,
-"venue": "TCM HD",
-"date": "2018-08-04",
-"title": "Dead Reckoning",
-"year": 1947,
-"slug": "dead-reckoning-1947",
-"imdb_id": "tt0039305"
-}
+"imdbId": "nm0010987",
+"fullName": "Gerald Drayson Adams",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+658,
+692
 ]
 },
 {
-"imdb_id": "nm1918140",
-"full_name": "Justin Benson",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 675,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-09",
-"title": "The Endless",
-"year": 2017,
-"slug": null,
-"imdb_id": "tt3986820"
-},
-{
-"sequence": 678,
-"venue": "Shudder",
-"date": "2018-05-19",
-"title": "Resolution",
-"year": 2012,
-"slug": null,
-"imdb_id": "tt1977895"
-}
+"imdbId": "nm1918140",
+"fullName": "Justin Benson",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+675,
+678
 ]
 }
 ]

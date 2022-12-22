@@ -1,390 +1,108 @@
 {
-"viewing_year": "2014",
-"most_watched": [
+"viewingYear": "2014",
+"mostWatched": [
 {
-"imdb_id": "nm0000489",
-"full_name": "Christopher Lee",
-"slug": "christopher-lee",
-"viewing_count": 7,
-"viewings": [
-{
-"sequence": 406,
-"venue": "TCM",
-"date": "2014-07-03",
-"title": "Horror Castle",
-"year": 1963,
-"slug": null,
-"imdb_id": "tt0057646"
-},
-{
-"sequence": 414,
-"venue": "DVD",
-"date": "2014-08-02",
-"title": "The Bloody Judge",
-"year": 1970,
-"slug": null,
-"imdb_id": "tt0064727"
-},
-{
-"sequence": 416,
-"venue": "DVD",
-"date": "2014-08-09",
-"title": "Psycho-Circus",
-"year": 1966,
-"slug": null,
-"imdb_id": "tt0060865"
-},
-{
-"sequence": 418,
-"venue": "DVD",
-"date": "2014-08-16",
-"title": "Horror of Dracula",
-"year": 1958,
-"slug": "horror-of-dracula-1958",
-"imdb_id": "tt0051554"
-},
-{
-"sequence": 436,
-"venue": "DVD",
-"date": "2014-10-18",
-"title": "The Face of Fu Manchu",
-"year": 1965,
-"slug": null,
-"imdb_id": "tt0059162"
-},
-{
-"sequence": 437,
-"venue": "DVD",
-"date": "2014-10-18",
-"title": "The Brides of Fu Manchu",
-"year": 1966,
-"slug": null,
-"imdb_id": "tt0060188"
-},
-{
-"sequence": 456,
-"venue": "Blu-ray",
-"date": "2014-12-20",
-"title": "Horror of Dracula",
-"year": 1958,
-"slug": "horror-of-dracula-1958",
-"imdb_id": "tt0051554"
-}
+"imdbId": "nm0000489",
+"fullName": "Christopher Lee",
+"viewingCount": 7,
+"viewing_sequence_ids": [
+406,
+414,
+416,
+418,
+436,
+437,
+456
 ]
 },
 {
-"imdb_id": "nm2225369",
-"full_name": "Jennifer Lawrence",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 357,
-"venue": "AMC Tysons Corner 16",
-"date": "2014-01-02",
-"title": "American Hustle",
-"year": 2013,
-"slug": null,
-"imdb_id": "tt1800241"
-},
-{
-"sequence": 390,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-05-22",
-"title": "X-Men: Days of Future Past",
-"year": 2014,
-"slug": "x-men-days-of-future-past-2014",
-"imdb_id": "tt1877832"
-},
-{
-"sequence": 448,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-12-03",
-"title": "The Hunger Games: Mockingjay - Part 1",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt1951265"
-}
+"imdbId": "nm2225369",
+"fullName": "Jennifer Lawrence",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+357,
+390,
+448
 ]
 },
 {
-"imdb_id": "nm0001780",
-"full_name": "Peter Stormare",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 359,
-"venue": "Netflix",
-"date": "2014-01-11",
-"title": "The Last Stand",
-"year": 2013,
-"slug": null,
-"imdb_id": "tt1549920"
-},
-{
-"sequence": 387,
-"venue": "Netflix",
-"date": "2014-05-11",
-"title": "Pain & Gain",
-"year": 2013,
-"slug": null,
-"imdb_id": "tt1980209"
-},
-{
-"sequence": 398,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-06-19",
-"title": "22 Jump Street",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt2294449"
-}
+"imdbId": "nm0001780",
+"fullName": "Peter Stormare",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+359,
+387,
+398
 ]
 },
 {
-"imdb_id": "nm0837452",
-"full_name": "Shun Sugata",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 360,
-"venue": "Netflix",
-"date": "2014-01-11",
-"title": "Ninja: Shadow of a Tear",
-"year": 2013,
-"slug": null,
-"imdb_id": "tt2458106"
-},
-{
-"sequence": 372,
-"venue": "Blu-ray",
-"date": "2014-02-16",
-"title": "Kill Bill: Vol. 1",
-"year": 2003,
-"slug": null,
-"imdb_id": "tt0266697"
-},
-{
-"sequence": 378,
-"venue": "Blu-ray",
-"date": "2014-03-29",
-"title": "Kill Bill: Vol. 2",
-"year": 2004,
-"slug": null,
-"imdb_id": "tt0378194"
-}
+"imdbId": "nm0837452",
+"fullName": "Shun Sugata",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+360,
+372,
+378
 ]
 },
 {
-"imdb_id": "nm0141307",
-"full_name": "Price Carson",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 363,
-"venue": "Netflix",
-"date": "2014-01-18",
-"title": "Wrong",
-"year": 2012,
-"slug": null,
-"imdb_id": "tt1901040"
-},
-{
-"sequence": 417,
-"venue": "Netflix",
-"date": "2014-08-16",
-"title": "The Master",
-"year": 2012,
-"slug": null,
-"imdb_id": "tt1560747"
-},
-{
-"sequence": 444,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-11-06",
-"title": "Nightcrawler",
-"year": 2014,
-"slug": "nightcrawler-2014",
-"imdb_id": "tt2872718"
-}
+"imdbId": "nm0141307",
+"fullName": "Price Carson",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+363,
+417,
+444
 ]
 },
 {
-"imdb_id": "nm0000194",
-"full_name": "Julianne Moore",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 371,
-"venue": "Netflix",
-"date": "2014-02-15",
-"title": "Tales from the Darkside: The Movie",
-"year": 1990,
-"slug": null,
-"imdb_id": "tt0100740"
-},
-{
-"sequence": 383,
-"venue": "Netflix",
-"date": "2014-04-26",
-"title": "Don Jon",
-"year": 2013,
-"slug": null,
-"imdb_id": "tt2229499"
-},
-{
-"sequence": 448,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-12-03",
-"title": "The Hunger Games: Mockingjay - Part 1",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt1951265"
-}
+"imdbId": "nm0000194",
+"fullName": "Julianne Moore",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+371,
+383,
+448
 ]
 },
 {
-"imdb_id": "nm0001016",
-"full_name": "David Carradine",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 372,
-"venue": "Blu-ray",
-"date": "2014-02-16",
-"title": "Kill Bill: Vol. 1",
-"year": 2003,
-"slug": null,
-"imdb_id": "tt0266697"
-},
-{
-"sequence": 377,
-"venue": "Netflix",
-"date": "2014-03-29",
-"title": "Death Race 2000",
-"year": 1975,
-"slug": null,
-"imdb_id": "tt0072856"
-},
-{
-"sequence": 378,
-"venue": "Blu-ray",
-"date": "2014-03-29",
-"title": "Kill Bill: Vol. 2",
-"year": 2004,
-"slug": null,
-"imdb_id": "tt0378194"
-}
+"imdbId": "nm0001016",
+"fullName": "David Carradine",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+372,
+377,
+378
 ]
 },
 {
-"imdb_id": "nm0000206",
-"full_name": "Keanu Reeves",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 375,
-"venue": "Netflix",
-"date": "2014-03-22",
-"title": "Man of Tai Chi",
-"year": 2013,
-"slug": null,
-"imdb_id": "tt2016940"
-},
-{
-"sequence": 395,
-"venue": "Blu-ray",
-"date": "2014-06-14",
-"title": "The Matrix",
-"year": 1999,
-"slug": null,
-"imdb_id": "tt0133093"
-},
-{
-"sequence": 445,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-11-06",
-"title": "John Wick",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt2911666"
-}
+"imdbId": "nm0000206",
+"fullName": "Keanu Reeves",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+375,
+395,
+445
 ]
 },
 {
-"imdb_id": "nm0585485",
-"full_name": "Clark Middleton",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 378,
-"venue": "Blu-ray",
-"date": "2014-03-29",
-"title": "Kill Bill: Vol. 2",
-"year": 2004,
-"slug": null,
-"imdb_id": "tt0378194"
-},
-{
-"sequence": 412,
-"venue": "Angelika Film Center Mosaic",
-"date": "2014-07-17",
-"title": "Snowpiercer",
-"year": 2013,
-"slug": null,
-"imdb_id": "tt1706620"
-},
-{
-"sequence": 447,
-"venue": "Angelika Film Center Mosaic",
-"date": "2014-11-20",
-"title": "Birdman or (The Unexpected Virtue of Ignorance)",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt2562232"
-}
+"imdbId": "nm0585485",
+"fullName": "Clark Middleton",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+378,
+412,
+447
 ]
 },
 {
-"imdb_id": "nm0000353",
-"full_name": "Willem Dafoe",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 392,
-"venue": "Angelika Film Center Mosaic",
-"date": "2014-05-29",
-"title": "The Grand Budapest Hotel",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt2278388"
-},
-{
-"sequence": 425,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-09-11",
-"title": "A Most Wanted Man",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt1972571"
-},
-{
-"sequence": 445,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2014-11-06",
-"title": "John Wick",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt2911666"
-}
+"imdbId": "nm0000353",
+"fullName": "Willem Dafoe",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+392,
+425,
+445
 ]
 }
 ]

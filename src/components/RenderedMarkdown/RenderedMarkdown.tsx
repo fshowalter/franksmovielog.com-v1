@@ -1,24 +1,29 @@
-import React from "react";
-import { renderedMarkdownCss } from "./RenderedMarkdown.module.scss";
+import { composeClassNames } from "../../styles/composeClassNames";
+import { Box, IBoxProps } from "../Box";
+import { renderedMarkdownStyle } from "./RenderedMarkdown.css";
 
-export default function RenderedMarkdown({
-  text,
+interface IRenderedMarkdownProps extends IBoxProps {
+  text?: string | null;
+}
+
+export function RenderedMarkdown({
   className,
-  tag,
-}: {
-  text: string;
-  className: string;
-  tag?: keyof JSX.IntrinsicElements;
-}): JSX.Element {
-  const Tag = tag || "div";
+  text,
+  ...rest
+}: IRenderedMarkdownProps): JSX.Element | null {
+  if (!text) {
+    return null;
+  }
 
   return (
-    <Tag
-      className={`${renderedMarkdownCss} ${className}`}
+    <Box
+      fontWeight="light"
+      className={composeClassNames(renderedMarkdownStyle, className)}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: text,
       }}
+      {...rest}
     />
   );
 }

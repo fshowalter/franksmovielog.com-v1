@@ -1,3 +1,1 @@
-import DateIcon from "./DateIcon";
-
-export default DateIcon;
+export { DateIcon } from "./DateIcon";

@@ -1,7 +1,6 @@
 import { graphql } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
-import ArticlePage from "../components/ArticlePage";
-import HeadBuilder from "../components/HeadBuilder";
+import { ArticlePage } from "../components/ArticlePage";
+import { HeadBuilder } from "../components/HeadBuilder";
 
 export function Head(): JSX.Element {
   return (
@@ -14,46 +13,30 @@ export function Head(): JSX.Element {
   );
 }
 
-export default function GonePage({ data }: PageQueryResult): JSX.Element {
-  const { backdrop, page } = data;
-
+export default function GonePage({
+  data,
+}: {
+  data: Queries.GonePageQuery;
+}): JSX.Element {
   return (
     <ArticlePage
-      image={backdrop.childImageSharp.gatsbyImageData}
+      image={data.still}
       alt="Jake Gittes walks away."
-      articleText={page.html}
-      title={page.frontmatter.title}
+      articleText={data.page?.html}
+      title={data.page?.frontmatter?.title}
+      moreReviews={data.latestViewings.map((viewing) => viewing.reviewedMovie)}
     />
   );
 }
 
-type PageQueryResult = {
-  data: {
-    backdrop: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    page: {
-      html: string;
-      frontmatter: {
-        title: string;
-      };
-    };
-  };
-};
-
 export const pageQuery = graphql`
-  query {
-    backdrop: file(absolutePath: { regex: "/backdrops/gone.png$/" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 1000
-          placeholder: TRACED_SVG
-        )
+  query GonePage {
+    still: file(absolutePath: { regex: "/stills/gone.png$/" }) {
+      ...StillSplash
+    }
+    latestViewings: viewingsWithReviews(sort: { sequence: DESC }, limit: 4) {
+      reviewedMovie {
+        ...StillListMovie
       }
     }
     page: markdownRemark(frontmatter: { slug: { eq: "gone" } }) {

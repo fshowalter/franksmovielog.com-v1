@@ -1,32 +1,21 @@
-const query = `
-{
-  review: allMarkdownRemark(
-    sort: { order: DESC, fields: [frontmatter___sequence] },
-    limit: 25,
-    filter: { postType: { eq: "REVIEW" } }
-  ) {
-    nodes {
-      linkedExcerpt
-      frontmatter {
-          date
-          sequence
-          grade
-      }
-      reviewedMovie {
-        title
-        year
-        slug
-        principalCastNames: principal_cast_names
-        directorNames: director_names
-        image: backdrop {
-          childImageSharp {
-            resize(toFormat: JPG, width: 1200, quality: 80) {
-              src
-            }
-          }
+const query = `{
+  viewings: viewingsWithReviews(sort: {sequence: DESC}, limit: 25) {
+    sequence
+    date: viewingDate
+    title
+    year
+    slug
+    grade
+    principalCastNames
+    directorNames
+    still {
+      childImageSharp {
+        resize(toFormat: JPG, width: 1200, quality: 80) {
+          src
         }
       }
     }
+    excerpt
   }
 }`;
 
@@ -38,32 +27,26 @@ interface QueryResult {
       siteUrl: string;
     };
   };
-  review: {
-    nodes: Review[];
-  };
+  viewings: ViewingNode[];
 }
 
-interface Review {
-  frontmatter: {
-    grade: string;
-    date: string;
-    sequence: number;
-  };
-  reviewedMovie: {
-    directorNames: string[];
-    principalCastNames: string[];
-    title: string;
-    year: string;
-    slug: string;
-    image: {
-      childImageSharp: {
-        resize: {
-          src: string;
-        };
+interface ViewingNode {
+  sequence: number;
+  date: string;
+  title: string;
+  year: string;
+  slug: string;
+  grade: string;
+  directorNames: string[];
+  principalCastNames: string[];
+  still: {
+    childImageSharp: {
+      resize: {
+        src: string;
       };
     };
   };
-  linkedExcerpt: string;
+  excerpt: string;
 }
 
 const gradeMap: Record<string, string> = {
@@ -82,12 +65,12 @@ function starsForGrade(grade: string) {
   return "";
 }
 
-function addMetaToExcerpt(excerpt: string, review: Review) {
+function addMetaToExcerpt(excerpt: string, viewing: ViewingNode) {
   const meta = `${starsForGrade(
-    review.frontmatter.grade[0]
-  )} D: ${review.reviewedMovie.directorNames.join(
+    viewing.grade[0]
+  )} D: ${viewing.directorNames.join(", ")}. ${viewing.principalCastNames.join(
     ", "
-  )}. ${review.reviewedMovie.principalCastNames.join(", ")}.`;
+  )}.`;
 
   return `<p>${meta}</p>${excerpt}`;
 }
@@ -105,19 +88,19 @@ function setup(options: Record<string, unknown>) {
 }
 
 function serialize({ query }: { query: QueryResult }) {
-  return query.review.nodes.map((node) => {
+  return query.viewings.map((viewing) => {
     return {
-      title: `${node.reviewedMovie.title} (${node.reviewedMovie.year})`,
-      date: node.frontmatter.date,
-      url: `${query.site.siteMetadata.siteUrl}/reviews/${node.reviewedMovie.slug}/`,
-      guid: `${query.site.siteMetadata.siteUrl}/${node.frontmatter.sequence}-${node.reviewedMovie.slug}`,
+      title: `${viewing.title} (${viewing.year})`,
+      date: viewing.date,
+      url: `${query.site.siteMetadata.siteUrl}/reviews/${viewing.slug}/`,
+      guid: `${query.site.siteMetadata.siteUrl}/${viewing.sequence}-${viewing.slug}`,
       custom_elements: [
         {
           "content:encoded": `<img src="${
-            node.reviewedMovie.image.childImageSharp.resize.src
-          }" alt="A still from ${node.reviewedMovie.title}">${addMetaToExcerpt(
-            node.linkedExcerpt,
-            node
+            viewing.still.childImageSharp.resize.src
+          }" alt="A still from ${viewing.title}">${addMetaToExcerpt(
+            viewing.excerpt,
+            viewing
           )}`,
         },
       ],

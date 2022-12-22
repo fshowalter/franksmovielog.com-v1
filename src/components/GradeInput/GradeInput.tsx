@@ -1,14 +1,6 @@
-import React from "react";
-import SelectInput from "../SelectInput";
-import {
-  checkboxLabelCss,
-  containerCss,
-  fromCss,
-  inputLabelCss,
-  legendCss,
-  toCss,
-  wrapperCss,
-} from "./GradeInput.module.scss";
+import { useState } from "react";
+import { Box, IBoxProps } from "../Box";
+import { SelectInput } from "../SelectInput";
 
 const options = [
   <option key={13} value={13}>
@@ -52,30 +44,30 @@ const options = [
   </option>,
 ];
 
-/**
- * Renders a dual-handle range slider.
- */
-export default function GradeFilter({
-  label,
-  onChange,
-}: {
-  /** The label text. */
+interface IGradeFilterProps extends IBoxProps {
   label: string;
-  /** Handler called when the control changes. */
-  onChange: (values: [number, number], includeNonReviewed: boolean) => void;
-}): JSX.Element {
-  const [minValue, setMinValue] = React.useState(1);
-  const [maxValue, setMaxValue] = React.useState(13);
-  const [checkedValue, setCheckedValue] = React.useState(true);
+  onGradeChange: (
+    values: [number, number],
+    includeNonReviewed: boolean
+  ) => void;
+}
+
+export function GradeInput({
+  label,
+  onGradeChange,
+}: IGradeFilterProps): JSX.Element {
+  const [minValue, setMinValue] = useState(1);
+  const [maxValue, setMaxValue] = useState(13);
+  const [checkedValue, setCheckedValue] = useState(true);
 
   const handleMinChange = (value: string) => {
     const newMin = parseInt(value, 10);
     setMinValue(newMin);
 
     if (newMin <= maxValue) {
-      onChange([newMin, maxValue], checkedValue);
+      onGradeChange([newMin, maxValue], checkedValue);
     } else {
-      onChange([maxValue, newMin], checkedValue);
+      onGradeChange([maxValue, newMin], checkedValue);
     }
   };
 
@@ -84,48 +76,94 @@ export default function GradeFilter({
     setMaxValue(newMax);
 
     if (minValue <= newMax) {
-      onChange([minValue, newMax], checkedValue);
+      onGradeChange([minValue, newMax], checkedValue);
     } else {
-      onChange([newMax, minValue], checkedValue);
+      onGradeChange([newMax, minValue], checkedValue);
     }
   };
 
   const handleCheckedChange = (value: boolean) => {
     setCheckedValue(value);
-    onChange([minValue, maxValue], value);
+    onGradeChange([minValue, maxValue], value);
   };
 
   return (
-    <fieldset className={containerCss}>
-      <legend className={legendCss}>{label}</legend>
-      <div className={wrapperCss}>
-        <label className={inputLabelCss}>
-          <span className={fromCss}>From</span>
+    <Box as="fieldset">
+      <Box
+        as="legend"
+        fontSize="small"
+        color="subtle"
+        fontWeight="bold"
+        letterSpacing={0.5}
+        height={24}
+        textAlign="left"
+      >
+        {label}
+      </Box>
+      <Box display="flex" alignItems="baseline" flexWrap="wrap">
+        <Box
+          as="label"
+          display="flex"
+          flex={1}
+          alignItems="center"
+          columnGap=".5ch"
+        >
+          <Box
+            as="span"
+            fontSize="small"
+            minWidth={40}
+            textAlign="left"
+            letterSpacing={0.5}
+          >
+            From
+          </Box>
           <SelectInput
             value={minValue}
             onChange={(e) => handleMinChange(e.target.value)}
           >
             {options.slice().reverse()}
           </SelectInput>
-        </label>
-        <label className={inputLabelCss}>
-          <span className={toCss}>to</span>
+        </Box>
+        <Box as="label" display="flex" flex={1} alignItems="center">
+          <Box
+            as="span"
+            fontSize="small"
+            minWidth={40}
+            textAlign="center"
+            letterSpacing={0.5}
+          >
+            to
+          </Box>
           <SelectInput
             value={maxValue}
             onChange={(e) => handleMaxChange(e.target.value)}
           >
             {options.slice()}
           </SelectInput>
-        </label>
-        <label className={checkboxLabelCss}>
-          <input
-            onChange={(e) => handleCheckedChange(e.target.checked)}
-            type="checkbox"
-            checked={checkedValue}
-          />
-          Include unrated viewings
-        </label>
-      </div>
-    </fieldset>
+        </Box>
+        <Box minWidth="full" textAlign="left" height={24}>
+          <Box
+            as="label"
+            flex={1}
+            lineHeight={24}
+            height={24}
+            display="inline-flex"
+            columnGap=".5ch"
+            textAlign="left"
+            fontWeight="semiBold"
+            alignItems="center"
+            fontSize="small"
+            color="subtle"
+          >
+            <input
+              onChange={(e) => handleCheckedChange(e.target.checked)}
+              type="checkbox"
+              checked={checkedValue}
+            />
+            Include unrated viewings
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 }

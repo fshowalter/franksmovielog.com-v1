@@ -1,10 +1,10 @@
 import React from "react";
-import { srOnlyCss } from "./ScreenReaderOnly.module.scss";
+import { screenReaderOnlyStyle } from "./ScreenReaderOnly.css";
 
 export default function ScreenReaderOnly({
   children,
 }: {
   children: React.ReactNode;
 }): JSX.Element {
-  return <div className={srOnlyCss}>{children}</div>;
+  return <div className={screenReaderOnlyStyle}>{children}</div>;
 }

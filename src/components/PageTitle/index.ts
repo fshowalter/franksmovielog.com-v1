@@ -1,3 +1,1 @@
-import PageTitle from "./PageTitle";
-
-export default PageTitle;
+export { PageTitle } from "./PageTitle";

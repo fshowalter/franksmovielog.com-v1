@@ -1,425 +1,77 @@
 {
-"viewing_year": "all",
-"most_watched": [
+"viewingYear": "all",
+"mostWatched": [
 {
-"viewings": [
-{
-"date": "2012-01-28",
-"venue": "Blu-ray",
-"sequence": 48,
-"slug": null
-},
-{
-"date": "2012-07-07",
-"venue": "AFI Silver",
-"sequence": 197,
-"slug": null
-},
-{
-"date": "2012-07-08",
-"venue": "AFI Silver",
-"sequence": 199,
-"slug": null
-},
-{
-"date": "2012-07-30",
-"venue": "The Black Cat",
-"sequence": 210,
-"slug": null
-},
-{
-"date": "2015-08-22",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 518,
-"slug": null
-},
-{
-"date": "2020-10-31",
-"venue": "Blu-ray",
-"sequence": 907,
-"slug": "fright-night-1985"
-},
-{
-"date": "2021-09-28",
-"venue": "Blu-ray",
-"sequence": 1168,
-"slug": "fright-night-1985"
-}
-],
-"viewing_count": 7,
-"imdb_id": "tt0089175",
+"imdbId": "tt0089175",
 "title": "Fright Night",
-"year": 1985
+"year": 1985,
+"viewingCount": 7
 },
 {
-"viewings": [
-{
-"date": "2012-04-12",
-"venue": "AMC Tysons Corner 16",
-"sequence": 158,
-"slug": null
-},
-{
-"date": "2013-02-16",
-"venue": "Blu-ray",
-"sequence": 280,
-"slug": null
-},
-{
-"date": "2015-10-31",
-"venue": "Blu-ray",
-"sequence": 529,
-"slug": null
-},
-{
-"date": "2016-10-26",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 565,
-"slug": null
-},
-{
-"date": "2020-02-08",
-"venue": "4k UHD Blu-ray",
-"sequence": 815,
-"slug": null
-},
-{
-"date": "2020-12-22",
-"venue": "4k UHD Blu-ray",
-"sequence": 956,
-"slug": "the-cabin-in-the-woods-2011"
-}
-],
-"viewing_count": 6,
-"imdb_id": "tt1259521",
+"imdbId": "tt1259521",
 "title": "The Cabin in the Woods",
-"year": 2011
+"year": 2011,
+"viewingCount": 6
 },
 {
-"viewings": [
-{
-"date": "2018-05-18",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 677,
-"slug": null
-},
-{
-"date": "2018-05-22",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 679,
-"slug": null
-},
-{
-"date": "2018-05-27",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 681,
-"slug": null
-},
-{
-"date": "2018-06-13",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 683,
-"slug": null
-},
-{
-"date": "2020-03-28",
-"venue": "4k UHD Blu-ray",
-"sequence": 824,
-"slug": null
-},
-{
-"date": "2020-10-17",
-"venue": "4k UHD Blu-ray",
-"sequence": 893,
-"slug": "avengers-infinity-war-2018"
-}
-],
-"viewing_count": 6,
-"imdb_id": "tt4154756",
+"imdbId": "tt4154756",
 "title": "Avengers: Infinity War",
-"year": 2018
+"year": 2018,
+"viewingCount": 6
 },
 {
-"viewings": [
-{
-"date": "2016-12-23",
-"venue": "Blu-ray",
-"sequence": 576,
-"slug": null
-},
-{
-"date": "2017-12-24",
-"venue": "Blu-ray",
-"sequence": 627,
-"slug": null
-},
-{
-"date": "2019-12-22",
-"venue": "Blu-ray",
-"sequence": 804,
-"slug": null
-},
-{
-"date": "2020-12-25",
-"venue": "iTunes",
-"sequence": 960,
-"slug": "krampus-2015"
-},
-{
-"date": "2021-12-16",
-"venue": "4k UHD Blu-ray",
-"sequence": 1212,
-"slug": "krampus-2015"
-}
-],
-"viewing_count": 5,
-"imdb_id": "tt3850590",
+"imdbId": "tt3850590",
 "title": "Krampus",
-"year": 2015
+"year": 2015,
+"viewingCount": 5
 },
 {
-"viewings": [
-{
-"date": "2012-10-30",
-"venue": "Landmark E Street Cinema",
-"sequence": 235,
-"slug": null
-},
-{
-"date": "2015-02-13",
-"venue": "Blu-ray",
-"sequence": 478,
-"slug": null
-},
-{
-"date": "2019-01-31",
-"venue": "Shudder",
-"sequence": 728,
-"slug": null
-},
-{
-"date": "2021-10-30",
-"venue": "4k UHD Blu-ray",
-"sequence": 1190,
-"slug": "halloween-1978"
-}
-],
-"viewing_count": 4,
-"imdb_id": "tt0077651",
+"imdbId": "tt0077651",
 "title": "Halloween",
-"year": 1978
+"year": 1978,
+"viewingCount": 4
 },
 {
-"viewings": [
-{
-"date": "2014-05-17",
-"venue": "Blu-ray",
-"sequence": 388,
-"slug": null
-},
-{
-"date": "2017-01-31",
-"venue": "Blu-ray",
-"sequence": 582,
-"slug": null
-},
-{
-"date": "2018-03-23",
-"venue": "AFI Silver",
-"sequence": 649,
-"slug": null
-},
-{
-"date": "2021-01-22",
-"venue": "Blu-ray",
-"sequence": 994,
-"slug": "the-bird-with-the-crystal-plumage-1970"
-}
-],
-"viewing_count": 4,
-"imdb_id": "tt0065143",
+"imdbId": "tt0065143",
 "title": "The Bird with the Crystal Plumage",
-"year": 1970
+"year": 1970,
+"viewingCount": 4
 },
 {
-"viewings": [
-{
-"date": "2014-08-16",
-"venue": "DVD",
-"sequence": 418,
-"slug": null
-},
-{
-"date": "2014-12-20",
-"venue": "Blu-ray",
-"sequence": 456,
-"slug": null
-},
-{
-"date": "2018-12-25",
-"venue": "Blu-ray",
-"sequence": 721,
-"slug": null
-},
-{
-"date": "2020-12-08",
-"venue": "Blu-ray",
-"sequence": 936,
-"slug": "horror-of-dracula-1958"
-}
-],
-"viewing_count": 4,
-"imdb_id": "tt0051554",
+"imdbId": "tt0051554",
 "title": "Horror of Dracula",
-"year": 1958
+"year": 1958,
+"viewingCount": 4
 },
 {
-"viewings": [
-{
-"date": "2016-12-28",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 577,
-"slug": null
-},
-{
-"date": "2017-12-24",
-"venue": "Shudder",
-"sequence": 629,
-"slug": null
-},
-{
-"date": "2020-12-11",
-"venue": "Blu-ray",
-"sequence": 940,
-"slug": "christmas-evil-1980"
-},
-{
-"date": "2021-12-24",
-"venue": "Blu-ray",
-"sequence": 1222,
-"slug": "christmas-evil-1980"
-}
-],
-"viewing_count": 4,
-"imdb_id": "tt0081793",
+"imdbId": "tt0081793",
 "title": "Christmas Evil",
-"year": 1980
+"year": 1980,
+"viewingCount": 4
 },
 {
-"viewings": [
-{
-"date": "2017-06-18",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 598,
-"slug": null
-},
-{
-"date": "2017-12-09",
-"venue": "Blu-ray",
-"sequence": 622,
-"slug": null
-},
-{
-"date": "2018-06-17",
-"venue": "Blu-ray",
-"sequence": 686,
-"slug": null
-},
-{
-"date": "2021-01-29",
-"venue": "Blu-ray",
-"sequence": 1001,
-"slug": "rio-bravo-1959"
-}
-],
-"viewing_count": 4,
-"imdb_id": "tt0053221",
+"imdbId": "tt0053221",
 "title": "Rio Bravo",
-"year": 1959
+"year": 1959,
+"viewingCount": 4
 },
 {
-"viewings": [
-{
-"date": "2019-05-13",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 750,
-"slug": null
-},
-{
-"date": "2019-05-16",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 751,
-"slug": null
-},
-{
-"date": "2019-06-03",
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"sequence": 756,
-"slug": null
-},
-{
-"date": "2020-11-14",
-"venue": "4k UHD Blu-ray",
-"sequence": 918,
-"slug": "avengers-endgame-2019"
-}
-],
-"viewing_count": 4,
-"imdb_id": "tt4154796",
+"imdbId": "tt4154796",
 "title": "Avengers: Endgame",
-"year": 2019
+"year": 2019,
+"viewingCount": 4
 },
 {
-"viewings": [
-{
-"date": "2012-01-11",
-"venue": "TCM HD",
-"sequence": 3,
-"slug": null
-},
-{
-"date": "2016-10-29",
-"venue": "Shudder",
-"sequence": 566,
-"slug": null
-},
-{
-"date": "2020-10-19",
-"venue": "Blu-ray",
-"sequence": 894,
-"slug": "curse-of-the-demon-1957"
-}
-],
-"viewing_count": 3,
-"imdb_id": "tt0050766",
+"imdbId": "tt0050766",
 "title": "Curse of the Demon",
-"year": 1957
+"year": 1957,
+"viewingCount": 3
 },
 {
-"viewings": [
-{
-"date": "2012-01-21",
-"venue": "TCM HD",
-"sequence": 26,
-"slug": null
-},
-{
-"date": "2014-10-11",
-"venue": "TCM",
-"sequence": 434,
-"slug": null
-},
-{
-"date": "2021-03-02",
-"venue": "DVD",
-"sequence": 1036,
-"slug": "the-road-to-singapore-1931"
-}
-],
-"viewing_count": 3,
-"imdb_id": "tt0022321",
+"imdbId": "tt0022321",
 "title": "The Road to Singapore",
-"year": 1931
+"year": 1931,
+"viewingCount": 3
 }
 ]
 }

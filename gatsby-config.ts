@@ -22,7 +22,7 @@ const gatsbyPluginPageCreator = {
   options: {
     path: path.resolve("src/pages"),
     ignore: {
-      patterns: [`*.fixtures.ts`],
+      patterns: [`**.fixtures.ts`, `**.reducer.ts`],
     },
   },
 };
@@ -34,11 +34,11 @@ const gatsbyPluginSitemap = {
   },
 };
 
-const gatsbySourceFileSystemBackdrops = {
+const gatsbySourceFileSystemStills = {
   resolve: "gatsby-source-filesystem",
   options: {
-    name: "backdrops",
-    path: path.resolve("content/assets/backdrops/"),
+    name: "stills",
+    path: path.resolve("content/assets/stills/"),
   },
 };
 
@@ -82,6 +82,14 @@ const gatsbySourceFileSystemReviews = {
   },
 };
 
+const gatsbySourceFileSystemViewingNotes = {
+  resolve: `gatsby-source-filesystem`,
+  options: {
+    path: path.resolve("content/viewing_notes"),
+    name: `reviews`,
+  },
+};
+
 const gatsbyTransformerRemark = {
   resolve: `gatsby-transformer-remark`,
   options: {
@@ -114,26 +122,30 @@ const gatsbyPluginManifest = {
 
 const config: GatsbyConfig = {
   jsxRuntime: "automatic",
+  graphqlTypegen: {
+    generateOnBuild: true,
+  },
   siteMetadata: siteMetadata,
   plugins: [
     gatsbyPluginPageCreator,
     gatsbyPluginSitemap,
-    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    gatsbySourceFileSystemBackdrops,
+    gatsbySourceFileSystemStills,
     gatsbySourceFileSystemPosters,
     gatsbySourceFileSystemAvatars,
     "gatsby-transformer-json",
     gatsbySourceFileSystemData,
     gatsbySourceFileSystemPages,
     gatsbySourceFileSystemReviews,
+    gatsbySourceFileSystemViewingNotes,
     gatsbyTransformerRemark,
     gatsbyPluginCatchLinks,
     gatsbyPluginManifest,
     gatsbyPluginFeed,
-    "gatsby-plugin-preact",
+    "gatsby-plugin-vanilla-extract",
+    "gatsby-plugin-postcss",
   ],
 };
 

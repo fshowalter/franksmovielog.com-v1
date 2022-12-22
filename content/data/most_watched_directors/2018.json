@@ -1,318 +1,100 @@
 {
-"viewing_year": "2018",
-"most_watched": [
+"viewingYear": "2018",
+"mostWatched": [
 {
-"imdb_id": "nm0751577",
-"full_name": "Anthony Russo",
-"slug": null,
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm0751577",
+"fullName": "Anthony Russo",
+"viewingCount": 4,
+"viewing_sequence_ids": [
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm0751648",
-"full_name": "Joe Russo",
-"slug": null,
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm0751648",
+"fullName": "Joe Russo",
+"viewingCount": 4,
+"viewing_sequence_ids": [
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm0000783",
-"full_name": "Dario Argento",
-"slug": "dario-argento",
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 644,
-"venue": "Shudder",
-"date": "2018-03-10",
-"title": "Tenebrae",
-"year": 1982,
-"slug": null,
-"imdb_id": "tt0084777"
-},
-{
-"sequence": 649,
-"venue": "AFI Silver",
-"date": "2018-03-23",
-"title": "The Bird with the Crystal Plumage",
-"year": 1970,
-"slug": "the-bird-with-the-crystal-plumage-1970",
-"imdb_id": "tt0065143"
-},
-{
-"sequence": 715,
-"venue": "Alamo Drafthouse Cinema - Woodbridge",
-"date": "2018-10-27",
-"title": "Deep Red",
-"year": 1975,
-"slug": null,
-"imdb_id": "tt0073582"
-}
+"imdbId": "nm0000783",
+"fullName": "Dario Argento",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+644,
+649,
+715
 ]
 },
 {
-"imdb_id": "nm0001328",
-"full_name": "Howard Hawks",
-"slug": "howard-hawks",
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 657,
-"venue": "TCM",
-"date": "2018-03-28",
-"title": "The Crowd Roars",
-"year": 1932,
-"slug": "the-crowd-roars-1932",
-"imdb_id": "tt0022792"
-},
-{
-"sequence": 671,
-"venue": "DVD",
-"date": "2018-05-01",
-"title": "Land of the Pharaohs",
-"year": 1955,
-"slug": null,
-"imdb_id": "tt0048283"
-},
-{
-"sequence": 686,
-"venue": "Blu-ray",
-"date": "2018-06-17",
-"title": "Rio Bravo",
-"year": 1959,
-"slug": "rio-bravo-1959",
-"imdb_id": "tt0053221"
-}
+"imdbId": "nm0001328",
+"fullName": "Howard Hawks",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+657,
+671,
+686
 ]
 },
 {
-"imdb_id": "nm0002086",
-"full_name": "Lucio Fulci",
-"slug": "lucio-fulci",
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 633,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-01-20",
-"title": "Zombie 3",
-"year": 1988,
-"slug": null,
-"imdb_id": "tt0096511"
-},
-{
-"sequence": 710,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-10-13",
-"title": "Zombie",
-"year": 1979,
-"slug": null,
-"imdb_id": "tt0080057"
-}
+"imdbId": "nm0002086",
+"fullName": "Lucio Fulci",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+633,
+710
 ]
 },
 {
-"imdb_id": "nm3366745",
-"full_name": "Lowell Dean",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 635,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-01-31",
-"title": "Wolfcop",
-"year": 2014,
-"slug": "wolfcop-2014",
-"imdb_id": "tt2781516"
-},
-{
-"sequence": 636,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-01-31",
-"title": "Another WolfCop",
-"year": 2017,
-"slug": "another-wolfcop-2017",
-"imdb_id": "tt4515762"
-}
+"imdbId": "nm3366745",
+"fullName": "Lowell Dean",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+635,
+636
 ]
 },
 {
-"imdb_id": "nm0002031",
-"full_name": "Michael Curtiz",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 654,
-"venue": "TCM",
-"date": "2018-03-25",
-"title": "Kid Galahad",
-"year": 1937,
-"slug": null,
-"imdb_id": "tt0029080"
-},
-{
-"sequence": 695,
-"venue": "TCM",
-"date": "2018-08-05",
-"title": "Private Detective 62",
-"year": 1933,
-"slug": null,
-"imdb_id": "tt0024471"
-}
+"imdbId": "nm0002031",
+"fullName": "Michael Curtiz",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+654,
+695
 ]
 },
 {
-"imdb_id": "nm0957263",
-"full_name": "Joseph Zito",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 662,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-04-13",
-"title": "Friday the 13th: The Final Chapter",
-"year": 1984,
-"slug": "friday-the-13th-the-final-chapter-1984",
-"imdb_id": "tt0087298"
-},
-{
-"sequence": 701,
-"venue": "Amazon",
-"date": "2018-09-15",
-"title": "The Prowler",
-"year": 1981,
-"slug": null,
-"imdb_id": "tt0082951"
-}
+"imdbId": "nm0957263",
+"fullName": "Joseph Zito",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+662,
+701
 ]
 },
 {
-"imdb_id": "nm0258015",
-"full_name": "Ray Enright",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 663,
-"venue": "TCM",
-"date": "2018-04-14",
-"title": "The Wagons Roll at Night",
-"year": 1941,
-"slug": null,
-"imdb_id": "tt0034370"
-},
-{
-"sequence": 673,
-"venue": "TCM HD",
-"date": "2018-05-02",
-"title": "China Clipper",
-"year": 1936,
-"slug": null,
-"imdb_id": "tt0027445"
-}
+"imdbId": "nm0258015",
+"fullName": "Ray Enright",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+663,
+673
 ]
 },
 {
-"imdb_id": "nm1823264",
-"full_name": "Aaron Moorhead",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 675,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-09",
-"title": "The Endless",
-"year": 2017,
-"slug": null,
-"imdb_id": "tt3986820"
-},
-{
-"sequence": 678,
-"venue": "Shudder",
-"date": "2018-05-19",
-"title": "Resolution",
-"year": 2012,
-"slug": null,
-"imdb_id": "tt1977895"
-}
+"imdbId": "nm1823264",
+"fullName": "Aaron Moorhead",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+675,
+678
 ]
 }
 ]

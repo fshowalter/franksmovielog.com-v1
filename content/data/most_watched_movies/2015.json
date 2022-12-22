@@ -1,25 +1,11 @@
 {
-"viewing_year": "2015",
-"most_watched": [
+"viewingYear": "2015",
+"mostWatched": [
 {
-"viewings": [
-{
-"date": "2015-06-23",
-"venue": "Alamo Drafthouse Cinema - Winchester",
-"sequence": 503,
-"slug": null
-},
-{
-"date": "2015-11-05",
-"venue": "AFI Silver",
-"sequence": 532,
-"slug": null
-}
-],
-"viewing_count": 2,
-"imdb_id": "tt0082307",
+"imdbId": "tt0082307",
 "title": "The Beyond",
-"year": 1981
+"year": 1981,
+"viewingCount": 2
 }
 ]
 }

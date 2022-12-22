@@ -1,552 +1,126 @@
 {
-"viewing_year": "2018",
-"most_watched": [
+"viewingYear": "2018",
+"mostWatched": [
 {
-"imdb_id": "nm0441042",
-"full_name": "Florence Kasumba",
-"slug": null,
-"viewing_count": 6,
-"viewings": [
-{
-"sequence": 641,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-02-22",
-"title": "Black Panther",
-"year": 2018,
-"slug": "black-panther-2018",
-"imdb_id": "tt1825683"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 700,
-"venue": "Blu-ray",
-"date": "2018-09-08",
-"title": "Wonder Woman",
-"year": 2017,
-"slug": null,
-"imdb_id": "tt0451279"
-}
+"imdbId": "nm0441042",
+"fullName": "Florence Kasumba",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+641,
+677,
+679,
+681,
+683,
+700
 ]
 },
 {
-"imdb_id": "nm0938950",
-"full_name": "Benedict Wong",
-"slug": null,
-"viewing_count": 6,
-"viewings": [
-{
-"sequence": 643,
-"venue": "Netflix",
-"date": "2018-03-10",
-"title": "Moon",
-"year": 2009,
-"slug": null,
-"imdb_id": "tt1182345"
-},
-{
-"sequence": 647,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-03-19",
-"title": "Annihilation",
-"year": 2018,
-"slug": null,
-"imdb_id": "tt2798920"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm0938950",
+"fullName": "Benedict Wong",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+643,
+647,
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm1569276",
-"full_name": "Chadwick Boseman",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 641,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-02-22",
-"title": "Black Panther",
-"year": 2018,
-"slug": "black-panther-2018",
-"imdb_id": "tt1825683"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm1569276",
+"fullName": "Chadwick Boseman",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+641,
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm1775091",
-"full_name": "Danai Gurira",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 641,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-02-22",
-"title": "Black Panther",
-"year": 2018,
-"slug": "black-panther-2018",
-"imdb_id": "tt1825683"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm1775091",
+"fullName": "Danai Gurira",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+641,
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm4004793",
-"full_name": "Letitia Wright",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 641,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-02-22",
-"title": "Black Panther",
-"year": 2018,
-"slug": "black-panther-2018",
-"imdb_id": "tt1825683"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm4004793",
+"fullName": "Letitia Wright",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+641,
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm6328300",
-"full_name": "Winston Duke",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 641,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-02-22",
-"title": "Black Panther",
-"year": 2018,
-"slug": "black-panther-2018",
-"imdb_id": "tt1825683"
-},
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-}
+"imdbId": "nm6328300",
+"fullName": "Winston Duke",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+641,
+677,
+679,
+681,
+683
 ]
 },
 {
-"imdb_id": "nm0000007",
-"full_name": "Humphrey Bogart",
-"slug": "humphrey-bogart",
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 654,
-"venue": "TCM",
-"date": "2018-03-25",
-"title": "Kid Galahad",
-"year": 1937,
-"slug": null,
-"imdb_id": "tt0029080"
-},
-{
-"sequence": 663,
-"venue": "TCM",
-"date": "2018-04-14",
-"title": "The Wagons Roll at Night",
-"year": 1941,
-"slug": null,
-"imdb_id": "tt0034370"
-},
-{
-"sequence": 666,
-"venue": "Amazon",
-"date": "2018-04-19",
-"title": "Beat the Devil",
-"year": 1953,
-"slug": null,
-"imdb_id": "tt0046414"
-},
-{
-"sequence": 673,
-"venue": "TCM HD",
-"date": "2018-05-02",
-"title": "China Clipper",
-"year": 1936,
-"slug": null,
-"imdb_id": "tt0027445"
-},
-{
-"sequence": 692,
-"venue": "TCM HD",
-"date": "2018-08-04",
-"title": "Dead Reckoning",
-"year": 1947,
-"slug": "dead-reckoning-1947",
-"imdb_id": "tt0039305"
-}
+"imdbId": "nm0000007",
+"fullName": "Humphrey Bogart",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+654,
+663,
+666,
+673,
+692
 ]
 },
 {
-"imdb_id": "nm0000982",
-"full_name": "Josh Brolin",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 684,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-14",
-"title": "Deadpool 2",
-"year": 2018,
-"slug": "deadpool-2-2018",
-"imdb_id": "tt5463162"
-}
+"imdbId": "nm0000982",
+"fullName": "Josh Brolin",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+677,
+679,
+681,
+683,
+684
 ]
 },
 {
-"imdb_id": "nm1165110",
-"full_name": "Chris Hemsworth",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 677,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-18",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 679,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-22",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 681,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-05-27",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 683,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-06-13",
-"title": "Avengers: Infinity War",
-"year": 2018,
-"slug": "avengers-infinity-war-2018",
-"imdb_id": "tt4154756"
-},
-{
-"sequence": 711,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-10-21",
-"title": "Bad Times at the El Royale",
-"year": 2018,
-"slug": null,
-"imdb_id": "tt6628394"
-}
+"imdbId": "nm1165110",
+"fullName": "Chris Hemsworth",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+677,
+679,
+681,
+683,
+711
 ]
 },
 {
-"imdb_id": "nm0000115",
-"full_name": "Nicolas Cage",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 685,
-"venue": "Hulu",
-"date": "2018-06-16",
-"title": "Mom and Dad",
-"year": 2017,
-"slug": null,
-"imdb_id": "tt5462326"
-},
-{
-"sequence": 702,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-09-16",
-"title": "Mandy",
-"year": 2018,
-"slug": "mandy-2018",
-"imdb_id": "tt6998518"
-},
-{
-"sequence": 703,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-09-18",
-"title": "Mandy",
-"year": 2018,
-"slug": "mandy-2018",
-"imdb_id": "tt6998518"
-},
-{
-"sequence": 720,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-12-19",
-"title": "Vampire's Kiss",
-"year": 1988,
-"slug": null,
-"imdb_id": "tt0098577"
-},
-{
-"sequence": 722,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2018-12-26",
-"title": "Face/Off",
-"year": 1997,
-"slug": null,
-"imdb_id": "tt0119094"
-}
+"imdbId": "nm0000115",
+"fullName": "Nicolas Cage",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+685,
+702,
+703,
+720,
+722
 ]
 }
 ]

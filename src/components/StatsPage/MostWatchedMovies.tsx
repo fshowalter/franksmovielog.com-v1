@@ -1,63 +1,84 @@
-import React from "react";
+import { graphql } from "gatsby";
+import { Box } from "../Box";
 import { Poster, PosterList } from "../PosterList";
-import {
-  containerCss,
-  listItemSlugCss,
-  listItemTitleCss,
-  listItemTitleYearCss,
-} from "./MostWatchedMovies.module.scss";
-import StatHeading from "./StatHeading";
-import type { Movie } from "./StatsPage";
+import { Spacer } from "../Spacer";
+import { StatHeading } from "../StatHeading/StatHeading";
 
-function ListItemDetails({ movie }: { movie: Movie }): JSX.Element {
-  if (movie.slug) {
-    return (
-      <div className={listItemSlugCss}>
-        <div>{movie.viewingCount.toLocaleString()} times</div>
-      </div>
-    );
-  }
-
+function ListItemDetails({
+  movie,
+}: {
+  movie: Queries.MostWatchedMovieFragment;
+}): JSX.Element {
   return (
-    <>
-      <div className={listItemTitleCss}>
-        {movie.title} <span className={listItemTitleYearCss}>{movie.year}</span>
-      </div>
-      <div className={listItemSlugCss}>
-        <div>{movie.viewingCount.toLocaleString()} times</div>
-      </div>
-    </>
+    <Box
+      fontSize="default"
+      color="subtle"
+      display="flex"
+      justifyContent={{ default: "flex-start", tablet: "center" }}
+    >
+      <div>{movie.viewingCount.toLocaleString()} times</div>
+    </Box>
   );
 }
 
-export default function MostWatchedMovies({
+export function MostWatchedMovies({
   movies,
 }: {
-  movies: Movie[];
+  movies: Queries.MostWatchedMoviesFragment | null;
 }): JSX.Element | null {
-  if (movies.length === 0) {
+  if (!movies) {
+    return null;
+  }
+
+  const { mostWatched } = movies;
+
+  if (mostWatched.length === 0) {
     return null;
   }
 
   return (
     <>
       <StatHeading>Most Watched Movies</StatHeading>
-      <div className={containerCss}>
+      <Box>
+        <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
         <PosterList>
-          {movies.map((movie) => {
+          {mostWatched.map((movie) => {
             return (
               <Poster
                 key={movie.imdbId}
-                slug={movie.slug}
+                slug={movie.reviewedMovie?.slug}
                 image={movie.poster}
                 title={movie.title}
                 year={movie.year}
                 details={<ListItemDetails movie={movie} />}
+                showTitle={!movie.reviewedMovie?.slug}
               />
             );
           })}
         </PosterList>
-      </div>
+        <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
+      </Box>
     </>
   );
 }
+
+export const query = graphql`
+  fragment MostWatchedMovie on MostWatchedMovie {
+    imdbId
+    title
+    year
+    reviewedMovie {
+      slug
+    }
+    poster {
+      ...PosterListPoster
+    }
+    viewingCount
+  }
+
+  fragment MostWatchedMovies on MostWatchedMoviesJson {
+    mostWatched {
+      ...MostWatchedMovie
+    }
+  }
+`;

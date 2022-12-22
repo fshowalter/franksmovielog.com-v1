@@ -1,95 +1,136 @@
-import React from "react";
+import { graphql } from "gatsby";
+import { Box } from "../Box";
 import { Poster, PosterList } from "../PosterList";
+import { Spacer } from "../Spacer";
+import { StatHeading } from "../StatHeading";
 import {
-  barCss,
-  barSpaceCss,
-  containerCss,
-  detailsLabelCss,
-  detailsRowCss,
-  headerCss,
-  headerRowCss,
-  nameCss,
-  nameHeaderCss,
-  parentListCss,
-  parentListItemCss,
-  viewingsCss,
-  viewingsHeaderCss,
-} from "./MostWatchedPeople.module.scss";
-import type { Person } from "./StatsPage";
+  detailsRowGridStyle,
+  stickyHeaderStyle,
+  stickyRowHeaderStyle,
+} from "./MostWatchedPeople.css";
 
-function BarGraph({
-  value,
-  maxValue,
-}: {
-  value: number;
-  maxValue: number;
-}): JSX.Element {
-  const barPercentProperty = {
-    "--bar-percent": `${(value / maxValue) * 100}%`,
-  } as React.CSSProperties;
-
-  return (
-    <div className={barCss} style={barPercentProperty}>
-      &nbsp;
-    </div>
-  );
-}
-
-export default function MostWatchedPeople({
+export function MostWatchedPeople({
   people,
   header,
   nameRenderer,
 }: {
   header: string;
-  people: Person[];
-  nameRenderer: ({ person }: { person: Person }) => JSX.Element;
-}): JSX.Element {
-  const maxBar = people.reduce((acc, person) => {
-    const value = person.viewingCount;
-    return acc > value ? acc : value;
-  }, 0);
+  people: Queries.MostWatchedPeopleFragment | null;
+  nameRenderer: ({
+    person,
+  }: {
+    person: Queries.MostWatchedPersonFragment;
+  }) => JSX.Element;
+}): JSX.Element | null {
+  if (!people) {
+    return null;
+  }
 
   return (
-    <section className={containerCss}>
-      <h3 className={headerCss}>{header}</h3>
-      <header className={headerRowCss}>
-        <span className={nameHeaderCss}>Name</span>
-        <span className={viewingsHeaderCss}>Viewings</span>
-      </header>
-      <ol className={parentListCss}>
-        {people.map((person) => {
+    <Box as="section" boxShadow="borderAll">
+      <StatHeading>{header}</StatHeading>
+      <Box
+        as="header"
+        backgroundColor="default"
+        display="flex"
+        justifyContent="space-between"
+        paddingX="gutter"
+        className={stickyHeaderStyle}
+        fontWeight="bold"
+      >
+        <Box as="span" textAlign="left" lineHeight={40}>
+          Name
+        </Box>
+        <Box as="span" textAlign="right" lineHeight={40}>
+          Viewings
+        </Box>
+      </Box>
+      <Box as="ol">
+        {people.mostWatched.map((person, index) => {
           return (
-            <li key={person.fullName} className={parentListItemCss}>
-              <span className={nameCss}>{nameRenderer({ person })}</span>
-              <span className={barSpaceCss}>
-                <BarGraph value={person.viewingCount} maxValue={maxBar} />
-              </span>
-              <span className={viewingsCss}>{person.viewingCount}</span>
-              <div className={detailsRowCss}>
+            <Box as="li" key={person.fullName} display="block">
+              <Box
+                className={stickyRowHeaderStyle}
+                style={{ zIndex: 200 + index }}
+                paddingX="gutter"
+                backgroundColor="stripe"
+              >
+                <Box as="span" lineHeight={40}>
+                  {nameRenderer({ person })}
+                </Box>
+                <Box as="span" lineHeight={40}>
+                  &nbsp;
+                </Box>
+                <Box
+                  as="span"
+                  lineHeight={40}
+                  backgroundColor="stripe"
+                  textAlign="right"
+                >
+                  {person.viewingCount}
+                </Box>
+              </Box>
+              <Box lineHeight={40} className={detailsRowGridStyle}>
                 <details>
-                  <summary className={detailsLabelCss}>Details</summary>
-                  <PosterList>
+                  <Box
+                    as="summary"
+                    color="subtle"
+                    letterSpacing={0.25}
+                    paddingX="gutter"
+                  >
+                    Details
+                  </Box>
+                  <PosterList paddingX={{ default: 0, tablet: "gutter" }}>
                     {person.viewings.map((viewing) => {
                       return (
                         <Poster
                           key={viewing.sequence}
                           image={viewing.poster}
                           title={viewing.title}
-                          slug={viewing.slug}
+                          slug={viewing.reviewedMovie?.slug}
                           year={viewing.year}
                           date={viewing.viewingDate}
                           venue={viewing.venue}
-                          showTitle={false}
+                          medium={viewing.medium}
                         />
                       );
                     })}
                   </PosterList>
+                  <Spacer axis="vertical" size={{ default: 0, tablet: 32 }} />
                 </details>
-              </div>
-            </li>
+              </Box>
+            </Box>
           );
         })}
-      </ol>
-    </section>
+      </Box>
+    </Box>
   );
 }
+
+export const query = graphql`
+  fragment MostWatchedPerson on MostWatchedPerson {
+    fullName
+    slug
+    viewingCount
+    viewings {
+      sequence
+      viewingDate(formatString: "ddd MMM D, YYYY")
+      venue
+      medium
+      title
+      year
+      reviewedMovie {
+        slug
+      }
+      poster {
+        ...PosterListPoster
+      }
+    }
+  }
+
+  fragment MostWatchedPeople on MostWatchedPeople {
+    mostWatched {
+      ...MostWatchedPerson
+    }
+  }
+`;

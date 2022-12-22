@@ -1,0 +1,86 @@
+import { graphql } from "gatsby";
+import type { IBoxProps } from "../Box";
+import { Box } from "../Box";
+import { GraphqlImage } from "../GraphqlImage";
+import { Link } from "../Link";
+import { PageTitle } from "../PageTitle";
+import { PosterListWithFilters } from "../PosterListWithFilters";
+import { Spacer } from "../Spacer";
+import { avatarStyle } from "./PosterListWithFiltersForWatchlistEntity.css";
+
+interface IPosterListWithFiltersForWatchlistEntityProps extends IBoxProps {
+  entity: Queries.PosterListWithFiltersForWatchlistEntityFragment;
+  distinctReleaseYears: readonly string[];
+  tagline: string;
+  breadcrumb: string;
+}
+
+export function PosterListWithFiltersForWatchlistEntity({
+  entity,
+  distinctReleaseYears,
+  tagline,
+  breadcrumb,
+}: IPosterListWithFiltersForWatchlistEntityProps): JSX.Element {
+  return (
+    <PosterListWithFilters
+      items={entity.watchlistMovies}
+      distinctReleaseYears={distinctReleaseYears}
+      initialSort="release-date-asc"
+      toggleReviewed={true}
+    >
+      <Box textAlign="center" lineHeight={36}>
+        <Link to="/watchlist/">Watchlist</Link> /{" "}
+        <Link to={`/watchlist/${entity.entityType}s/`}>{breadcrumb}</Link>
+      </Box>
+      <Spacer axis="vertical" size={16} />
+      <Box display="flex" flexDirection="column" alignItems="center">
+        <GraphqlImage
+          image={entity.avatar}
+          alt={entity.name}
+          borderRadius="half"
+          transform="safariBorderRadiusFix"
+          className={avatarStyle}
+        />
+      </Box>
+      <Spacer axis="vertical" size={16} />
+      <PageTitle textAlign="center">{entity.name}</PageTitle>
+      <Spacer axis="vertical" size={24} />
+      <Box
+        color="subtle"
+        textAlign="center"
+      >{`${tagline} ${entity.watchlistMovies.length} watchlist movies.`}</Box>
+    </PosterListWithFilters>
+  );
+}
+
+export const query = graphql`
+  fragment PosterListWithFiltersForWatchlistEntity on WatchlistEntitiesJson {
+    name
+    entityType
+    avatar {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          formats: [JPG, AVIF]
+          quality: 80
+          width: 200
+          height: 200
+          placeholder: BLURRED
+        )
+      }
+    }
+    watchlistMovies {
+      imdbId
+      title
+      year
+      grade
+      gradeValue
+      slug
+      sortTitle
+      releaseDate
+      poster {
+        ...PosterListPoster
+      }
+    }
+  }
+`;

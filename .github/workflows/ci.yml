@@ -38,15 +38,63 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "yarn"
 
+      - name: get gatsby cache
+        id: gatsby-cache-build
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-buildv4-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-buildv4-
+
       # `--prefer-offline` gives cache priority
       - name: install dependencies
         run: yarn install --prefer-offline --frozen-lockfile
 
+      - name: build
+        run: yarn build
+        env:
+          CI: true
+
       - name: lint js
         run: yarn lint:js
 
-      - name: lint css
-        run: yarn lint:css
+  type-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: "yarn"
+
+      - name: get gatsby cache
+        id: gatsby-cache-build
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-buildv4-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-buildv4-
+
+      # `--prefer-offline` gives cache priority
+      - name: install dependencies
+        run: yarn install --prefer-offline --frozen-lockfile
+
+      - name: build
+        run: yarn build
+        env:
+          CI: true
+
+      - name: type-check
+        run: yarn type-check
 
   test:
     runs-on: ubuntu-latest

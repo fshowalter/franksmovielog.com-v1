@@ -6,10 +6,7 @@
 
 // You can delete this file if you're not using it
 
-import CreatePages from "./gatsby/node/createPages";
-import CreateSchemaCustomization from "./gatsby/node/createSchemaCustomization";
-import CreateWebpackConfig from "./gatsby/node/createWebpackConfig";
-
-export const createPages = CreatePages;
-export const createSchemaCustomization = CreateSchemaCustomization;
-export const onCreateWebpackConfig = CreateWebpackConfig;
+export { createPages } from "./gatsby/node/createPages";
+export { createResolvers } from "./gatsby/node/createResolvers";
+export { createSchemaCustomization } from "./gatsby/node/createSchemaCustomization";
+export { onCreateWebpackConfig } from "./gatsby/node/onCreateWebpackConfig";

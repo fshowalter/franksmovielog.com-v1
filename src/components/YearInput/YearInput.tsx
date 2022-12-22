@@ -1,41 +1,30 @@
-import React from "react";
-import SelectInput from "../SelectInput";
-import {
-  containerCss,
-  fromCss,
-  inputLabelCss,
-  legendCss,
-  toCss,
-  wrapperCss,
-} from "./YearInput.module.scss";
+import { useState } from "react";
+import { Box, IBoxProps } from "../Box";
+import { LabelText } from "../LabelText";
+import { SelectInput } from "../SelectInput";
 
-/**
- * Renders a dual-handle range slider.
- */
-export default function YearInput({
+interface IYearInputProps extends IBoxProps {
+  label: string;
+  years: readonly string[];
+  onYearChange: (values: [number, number]) => void;
+}
+
+export function YearInput({
   label,
   years,
-  onChange,
-}: {
-  /** The label text. */
-  label: string;
-  years: string[];
-  /** Handler called when the control changes. */
-  onChange: (values: [number, number]) => void;
-}): JSX.Element {
-  const [minYear, setMinYear] = React.useState(parseInt(years[0], 10));
-  const [maxYear, setMaxYear] = React.useState(
-    parseInt(years[years.length - 1], 10)
-  );
+  onYearChange,
+}: IYearInputProps): JSX.Element {
+  const [minYear, setMinYear] = useState(parseInt(years[0], 10));
+  const [maxYear, setMaxYear] = useState(parseInt(years[years.length - 1], 10));
 
   const handleMinChange = (value: string) => {
     const newMin = parseInt(value, 10);
     setMinYear(newMin);
 
     if (newMin <= maxYear) {
-      onChange([newMin, maxYear]);
+      onYearChange([newMin, maxYear]);
     } else {
-      onChange([maxYear, newMin]);
+      onYearChange([maxYear, newMin]);
     }
   };
 
@@ -44,18 +33,32 @@ export default function YearInput({
     setMaxYear(newMax);
 
     if (minYear <= newMax) {
-      onChange([minYear, newMax]);
+      onYearChange([minYear, newMax]);
     } else {
-      onChange([newMax, minYear]);
+      onYearChange([newMax, minYear]);
     }
   };
 
   return (
-    <fieldset className={containerCss}>
-      <legend className={legendCss}>{label}</legend>
-      <div className={wrapperCss}>
-        <label className={inputLabelCss}>
-          <span className={fromCss}>From</span>
+    <Box as="fieldset">
+      <LabelText as="legend" text={label} />
+      <Box display="flex" alignItems="baseline">
+        <Box
+          as="label"
+          display="flex"
+          flex={1}
+          columnGap=".5ch"
+          alignItems="center"
+        >
+          <Box
+            as="span"
+            fontSize="small"
+            minWidth={40}
+            textAlign="left"
+            letterSpacing={0.5}
+          >
+            From
+          </Box>
           <SelectInput
             value={minYear}
             onChange={(e) => handleMinChange(e.target.value)}
@@ -68,9 +71,17 @@ export default function YearInput({
               );
             })}
           </SelectInput>
-        </label>
-        <label className={inputLabelCss}>
-          <span className={toCss}>to</span>
+        </Box>
+        <Box as="label" display="flex" flex={1} alignItems="center">
+          <Box
+            as="span"
+            fontSize="small"
+            minWidth={40}
+            textAlign="center"
+            letterSpacing={0.5}
+          >
+            to
+          </Box>
           <SelectInput
             value={maxYear}
             onChange={(e) => handleMaxChange(e.target.value)}
@@ -86,8 +97,8 @@ export default function YearInput({
                 );
               })}
           </SelectInput>
-        </label>
-      </div>
-    </fieldset>
+        </Box>
+      </Box>
+    </Box>
   );
 }

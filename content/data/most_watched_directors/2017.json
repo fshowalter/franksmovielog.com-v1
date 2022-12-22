@@ -1,134 +1,49 @@
 {
-"viewing_year": "2017",
-"most_watched": [
+"viewingYear": "2017",
+"mostWatched": [
 {
-"imdb_id": "nm0942862",
-"full_name": "Tenny Wright",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 578,
-"venue": "TCM",
-"date": "2017-01-10",
-"title": "The Big Stampede",
-"year": 1932,
-"slug": "the-big-stampede-1932",
-"imdb_id": "tt0022681"
-},
-{
-"sequence": 580,
-"venue": "TCM",
-"date": "2017-01-17",
-"title": "The Telegraph Trail",
-"year": 1933,
-"slug": null,
-"imdb_id": "tt0024647"
-}
+"imdbId": "nm0942862",
+"fullName": "Tenny Wright",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+578,
+580
 ]
 },
 {
-"imdb_id": "nm0000783",
-"full_name": "Dario Argento",
-"slug": "dario-argento",
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 582,
-"venue": "Blu-ray",
-"date": "2017-01-31",
-"title": "The Bird with the Crystal Plumage",
-"year": 1970,
-"slug": "the-bird-with-the-crystal-plumage-1970",
-"imdb_id": "tt0065143"
-},
-{
-"sequence": 613,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2017-10-21",
-"title": "Suspiria",
-"year": 1977,
-"slug": null,
-"imdb_id": "tt0076786"
-}
+"imdbId": "nm0000783",
+"fullName": "Dario Argento",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+582,
+613
 ]
 },
 {
-"imdb_id": "nm0169806",
-"full_name": "Taika Waititi",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 588,
-"venue": "Amazon",
-"date": "2017-03-01",
-"title": "What We Do in the Shadows",
-"year": 2014,
-"slug": null,
-"imdb_id": "tt3416742"
-},
-{
-"sequence": 623,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2017-12-13",
-"title": "Thor: Ragnarok",
-"year": 2017,
-"slug": "thor-ragnarok-2017",
-"imdb_id": "tt3501632"
-}
+"imdbId": "nm0169806",
+"fullName": "Taika Waititi",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+588,
+623
 ]
 },
 {
-"imdb_id": "nm0001328",
-"full_name": "Howard Hawks",
-"slug": "howard-hawks",
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 598,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2017-06-18",
-"title": "Rio Bravo",
-"year": 1959,
-"slug": "rio-bravo-1959",
-"imdb_id": "tt0053221"
-},
-{
-"sequence": 622,
-"venue": "Blu-ray",
-"date": "2017-12-09",
-"title": "Rio Bravo",
-"year": 1959,
-"slug": "rio-bravo-1959",
-"imdb_id": "tt0053221"
-}
+"imdbId": "nm0001328",
+"fullName": "Howard Hawks",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+598,
+622
 ]
 },
 {
-"imdb_id": "nm0868219",
-"full_name": "Guillermo del Toro",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 618,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2017-11-13",
-"title": "Hellboy",
-"year": 2004,
-"slug": null,
-"imdb_id": "tt0167190"
-},
-{
-"sequence": 619,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2017-11-13",
-"title": "Hellboy II: The Golden Army",
-"year": 2008,
-"slug": null,
-"imdb_id": "tt0411477"
-}
+"imdbId": "nm0868219",
+"fullName": "Guillermo del Toro",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+618,
+619
 ]
 }
 ]

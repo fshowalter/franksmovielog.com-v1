@@ -1,651 +1,137 @@
 {
-"viewing_year": "2012",
-"most_watched": [
+"viewingYear": "2012",
+"mostWatched": [
 {
-"imdb_id": "nm0000406",
-"full_name": "John Ford",
-"slug": "john-ford",
-"viewing_count": 12,
-"viewings": [
-{
-"sequence": 28,
-"venue": "TCM HD",
-"date": "2012-01-25",
-"title": "The World Moves On",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0026008"
-},
-{
-"sequence": 45,
-"venue": "TCM HD",
-"date": "2012-01-28",
-"title": "Sergeant Rutledge",
-"year": 1960,
-"slug": null,
-"imdb_id": "tt0054292"
-},
-{
-"sequence": 68,
-"venue": "TCM HD",
-"date": "2012-02-10",
-"title": "The Long Voyage Home",
-"year": 1940,
-"slug": null,
-"imdb_id": "tt0032728"
-},
-{
-"sequence": 76,
-"venue": "TCM HD",
-"date": "2012-02-15",
-"title": "They Were Expendable",
-"year": 1945,
-"slug": null,
-"imdb_id": "tt0038160"
-},
-{
-"sequence": 82,
-"venue": "TCM HD",
-"date": "2012-02-19",
-"title": "Mogambo",
-"year": 1953,
-"slug": null,
-"imdb_id": "tt0046085"
-},
-{
-"sequence": 86,
-"venue": "TCM HD",
-"date": "2012-02-24",
-"title": "Arrowsmith",
-"year": 1931,
-"slug": "arrowsmith-1931",
-"imdb_id": "tt0021622"
-},
-{
-"sequence": 113,
-"venue": "TCM HD",
-"date": "2012-03-12",
-"title": "The Hurricane",
-"year": 1937,
-"slug": null,
-"imdb_id": "tt0029030"
-},
-{
-"sequence": 134,
-"venue": "TCM HD",
-"date": "2012-03-30",
-"title": "The Whole Town's Talking",
-"year": 1935,
-"slug": null,
-"imdb_id": "tt0027214"
-},
-{
-"sequence": 137,
-"venue": "TCM HD",
-"date": "2012-03-31",
-"title": "Mary of Scotland",
-"year": 1936,
-"slug": null,
-"imdb_id": "tt0027948"
-},
-{
-"sequence": 138,
-"venue": "TCM HD",
-"date": "2012-03-31",
-"title": "The Rising of the Moon",
-"year": 1957,
-"slug": null,
-"imdb_id": "tt0050902"
-},
-{
-"sequence": 139,
-"venue": "TCM HD",
-"date": "2012-04-01",
-"title": "The Last Hurrah",
-"year": 1958,
-"slug": null,
-"imdb_id": "tt0051845"
-},
-{
-"sequence": 143,
-"venue": "TCM HD",
-"date": "2012-04-06",
-"title": "Stagecoach",
-"year": 1939,
-"slug": null,
-"imdb_id": "tt0031971"
-}
+"imdbId": "nm0000406",
+"fullName": "John Ford",
+"viewingCount": 12,
+"viewing_sequence_ids": [
+28,
+45,
+68,
+76,
+82,
+86,
+113,
+134,
+137,
+138,
+139,
+143
 ]
 },
 {
-"imdb_id": "nm0102908",
-"full_name": "Robert N. Bradbury",
-"slug": null,
-"viewing_count": 10,
-"viewings": [
-{
-"sequence": 91,
-"venue": "Netflix",
-"date": "2012-02-25",
-"title": "Riders of Destiny",
-"year": 1933,
-"slug": null,
-"imdb_id": "tt0024500"
-},
-{
-"sequence": 93,
-"venue": "Netflix",
-"date": "2012-02-26",
-"title": "The Lawless Frontier",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0025373"
-},
-{
-"sequence": 95,
-"venue": "Netflix",
-"date": "2012-02-27",
-"title": "The Man from Utah",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0025455"
-},
-{
-"sequence": 96,
-"venue": "Netflix",
-"date": "2012-02-27",
-"title": "West of the Divide",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0025969"
-},
-{
-"sequence": 100,
-"venue": "Netflix",
-"date": "2012-02-28",
-"title": "The Star Packer",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0025830"
-},
-{
-"sequence": 101,
-"venue": "Netflix",
-"date": "2012-02-28",
-"title": "The Trail Beyond",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0025903"
-},
-{
-"sequence": 102,
-"venue": "Netflix",
-"date": "2012-02-28",
-"title": "The Lucky Texan",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0025440"
-},
-{
-"sequence": 103,
-"venue": "Netflix",
-"date": "2012-02-28",
-"title": "Texas Terror",
-"year": 1935,
-"slug": null,
-"imdb_id": "tt0027087"
-},
-{
-"sequence": 106,
-"venue": "Netflix",
-"date": "2012-02-28",
-"title": "Blue Steel",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0024902"
-},
-{
-"sequence": 107,
-"venue": "Netflix",
-"date": "2012-02-28",
-"title": "The Dawn Rider",
-"year": 1935,
-"slug": null,
-"imdb_id": "tt0026267"
-}
+"imdbId": "nm0102908",
+"fullName": "Robert N. Bradbury",
+"viewingCount": 10,
+"viewing_sequence_ids": [
+91,
+93,
+95,
+96,
+100,
+101,
+102,
+103,
+106,
+107
 ]
 },
 {
-"imdb_id": "nm0000118",
-"full_name": "John Carpenter",
-"slug": "john-carpenter",
-"viewing_count": 6,
-"viewings": [
-{
-"sequence": 23,
-"venue": "TCM HD",
-"date": "2012-01-20",
-"title": "They Live",
-"year": 1988,
-"slug": null,
-"imdb_id": "tt0096256"
-},
-{
-"sequence": 122,
-"venue": "Blu-ray",
-"date": "2012-03-24",
-"title": "Big Trouble in Little China",
-"year": 1986,
-"slug": null,
-"imdb_id": "tt0090728"
-},
-{
-"sequence": 123,
-"venue": "Encore HD",
-"date": "2012-03-24",
-"title": "In the Mouth of Madness",
-"year": 1994,
-"slug": null,
-"imdb_id": "tt0113409"
-},
-{
-"sequence": 176,
-"venue": "TCM HD",
-"date": "2012-05-05",
-"title": "Escape from New York",
-"year": 1981,
-"slug": null,
-"imdb_id": "tt0082340"
-},
-{
-"sequence": 194,
-"venue": "The Black Cat",
-"date": "2012-07-02",
-"title": "The Thing",
-"year": 1982,
-"slug": null,
-"imdb_id": "tt0084787"
-},
-{
-"sequence": 235,
-"venue": "Landmark E Street Cinema",
-"date": "2012-10-30",
-"title": "Halloween",
-"year": 1978,
-"slug": "halloween-1978",
-"imdb_id": "tt0077651"
-}
+"imdbId": "nm0000118",
+"fullName": "John Carpenter",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+23,
+122,
+123,
+176,
+194,
+235
 ]
 },
 {
-"imdb_id": "nm0002031",
-"full_name": "Michael Curtiz",
-"slug": null,
-"viewing_count": 6,
-"viewings": [
-{
-"sequence": 27,
-"venue": "TCM HD",
-"date": "2012-01-21",
-"title": "The Key",
-"year": 1934,
-"slug": null,
-"imdb_id": "tt0025346"
-},
-{
-"sequence": 29,
-"venue": "TCM HD",
-"date": "2012-01-25",
-"title": "Kid Galahad",
-"year": 1937,
-"slug": null,
-"imdb_id": "tt0029080"
-},
-{
-"sequence": 44,
-"venue": "TCM HD",
-"date": "2012-01-28",
-"title": "Passage to Marseille",
-"year": 1944,
-"slug": null,
-"imdb_id": "tt0037166"
-},
-{
-"sequence": 74,
-"venue": "TCM HD",
-"date": "2012-02-15",
-"title": "Life with Father",
-"year": 1947,
-"slug": null,
-"imdb_id": "tt0039566"
-},
-{
-"sequence": 118,
-"venue": "TCM HD",
-"date": "2012-03-18",
-"title": "Virginia City",
-"year": 1940,
-"slug": "virginia-city-1940",
-"imdb_id": "tt0033226"
-},
-{
-"sequence": 188,
-"venue": "TCM HD",
-"date": "2012-06-14",
-"title": "Black Legion",
-"year": 1937,
-"slug": null,
-"imdb_id": "tt0027367"
-}
+"imdbId": "nm0002031",
+"fullName": "Michael Curtiz",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+27,
+29,
+44,
+74,
+118,
+188
 ]
 },
 {
-"imdb_id": "nm0000033",
-"full_name": "Alfred Hitchcock",
-"slug": "alfred-hitchcock",
-"viewing_count": 6,
-"viewings": [
-{
-"sequence": 59,
-"venue": "TCM HD",
-"date": "2012-02-04",
-"title": "Suspicion",
-"year": 1941,
-"slug": null,
-"imdb_id": "tt0034248"
-},
-{
-"sequence": 73,
-"venue": "Encore HD",
-"date": "2012-02-14",
-"title": "Rear Window",
-"year": 1954,
-"slug": null,
-"imdb_id": "tt0047396"
-},
-{
-"sequence": 149,
-"venue": "TCM HD",
-"date": "2012-04-08",
-"title": "I Confess",
-"year": 1953,
-"slug": null,
-"imdb_id": "tt0045897"
-},
-{
-"sequence": 182,
-"venue": "TCM HD",
-"date": "2012-06-10",
-"title": "Foreign Correspondent",
-"year": 1940,
-"slug": null,
-"imdb_id": "tt0032484"
-},
-{
-"sequence": 184,
-"venue": "TCM HD",
-"date": "2012-06-12",
-"title": "Under Capricorn",
-"year": 1949,
-"slug": null,
-"imdb_id": "tt0042004"
-},
-{
-"sequence": 198,
-"venue": "AFI Silver",
-"date": "2012-07-08",
-"title": "Vertigo",
-"year": 1958,
-"slug": null,
-"imdb_id": "tt0052357"
-}
+"imdbId": "nm0000033",
+"fullName": "Alfred Hitchcock",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+59,
+73,
+149,
+182,
+184,
+198
 ]
 },
 {
-"imdb_id": "nm0001328",
-"full_name": "Howard Hawks",
-"slug": "howard-hawks",
-"viewing_count": 6,
-"viewings": [
-{
-"sequence": 69,
-"venue": "TCM HD",
-"date": "2012-02-10",
-"title": "The Big Sky",
-"year": 1952,
-"slug": null,
-"imdb_id": "tt0044419"
-},
-{
-"sequence": 75,
-"venue": "TCM HD",
-"date": "2012-02-15",
-"title": "Air Force",
-"year": 1943,
-"slug": null,
-"imdb_id": "tt0035616"
-},
-{
-"sequence": 90,
-"venue": "TCM HD",
-"date": "2012-02-25",
-"title": "Only Angels Have Wings",
-"year": 1939,
-"slug": null,
-"imdb_id": "tt0031762"
-},
-{
-"sequence": 130,
-"venue": "TCM HD",
-"date": "2012-03-26",
-"title": "I Was a Male War Bride",
-"year": 1949,
-"slug": null,
-"imdb_id": "tt0041498"
-},
-{
-"sequence": 171,
-"venue": "Landmark E Street Cinema",
-"date": "2012-04-27",
-"title": "The Big Sleep",
-"year": 1946,
-"slug": null,
-"imdb_id": "tt0038355"
-},
-{
-"sequence": 172,
-"venue": "Landmark E Street Cinema",
-"date": "2012-04-28",
-"title": "The Big Sleep",
-"year": 1946,
-"slug": null,
-"imdb_id": "tt0038355"
-}
+"imdbId": "nm0001328",
+"fullName": "Howard Hawks",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+69,
+75,
+90,
+130,
+171,
+172
 ]
 },
 {
-"imdb_id": "nm0279807",
-"full_name": "Terence Fisher",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 20,
-"venue": "TCM HD",
-"date": "2012-01-15",
-"title": "The Gorgon",
-"year": 1964,
-"slug": null,
-"imdb_id": "tt0058155"
-},
-{
-"sequence": 213,
-"venue": "Netflix",
-"date": "2012-08-10",
-"title": "Frankenstein and the Monster from Hell",
-"year": 1974,
-"slug": null,
-"imdb_id": "tt0071519"
-},
-{
-"sequence": 233,
-"venue": "TCM HD",
-"date": "2012-10-28",
-"title": "The Hound of the Baskervilles",
-"year": 1959,
-"slug": null,
-"imdb_id": "tt0052905"
-},
-{
-"sequence": 240,
-"venue": "TCM HD",
-"date": "2012-11-02",
-"title": "The Devil Rides Out",
-"year": 1968,
-"slug": null,
-"imdb_id": "tt0062885"
-},
-{
-"sequence": 242,
-"venue": "TCM HD",
-"date": "2012-11-03",
-"title": "Dracula: Prince of Darkness",
-"year": 1966,
-"slug": null,
-"imdb_id": "tt0059127"
-}
+"imdbId": "nm0279807",
+"fullName": "Terence Fisher",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+20,
+213,
+233,
+240,
+242
 ]
 },
 {
-"imdb_id": "nm0001379",
-"full_name": "John Huston",
-"slug": null,
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 61,
-"venue": "TCM HD",
-"date": "2012-02-04",
-"title": "Key Largo",
-"year": 1948,
-"slug": null,
-"imdb_id": "tt0040506"
-},
-{
-"sequence": 65,
-"venue": "TCM HD",
-"date": "2012-02-05",
-"title": "Under the Volcano",
-"year": 1984,
-"slug": null,
-"imdb_id": "tt0088322"
-},
-{
-"sequence": 66,
-"venue": "TCM HD",
-"date": "2012-02-05",
-"title": "The Night of the Iguana",
-"year": 1964,
-"slug": null,
-"imdb_id": "tt0058404"
-},
-{
-"sequence": 111,
-"venue": "Landmark E Street Cinema",
-"date": "2012-03-10",
-"title": "The Maltese Falcon",
-"year": 1941,
-"slug": null,
-"imdb_id": "tt0033870"
-},
-{
-"sequence": 142,
-"venue": "TCM HD",
-"date": "2012-04-01",
-"title": "The Asphalt Jungle",
-"year": 1950,
-"slug": null,
-"imdb_id": "tt0042208"
-}
+"imdbId": "nm0001379",
+"fullName": "John Huston",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+61,
+65,
+66,
+111,
+142
 ]
 },
 {
-"imdb_id": "nm0276169",
-"full_name": "Tom Holland",
-"slug": null,
-"viewing_count": 4,
-"viewings": [
-{
-"sequence": 48,
-"venue": "Blu-ray",
-"date": "2012-01-28",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-},
-{
-"sequence": 197,
-"venue": "AFI Silver",
-"date": "2012-07-07",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-},
-{
-"sequence": 199,
-"venue": "AFI Silver",
-"date": "2012-07-08",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-},
-{
-"sequence": 210,
-"venue": "The Black Cat",
-"date": "2012-07-30",
-"title": "Fright Night",
-"year": 1985,
-"slug": "fright-night-1985",
-"imdb_id": "tt0089175"
-}
+"imdbId": "nm0276169",
+"fullName": "Tom Holland",
+"viewingCount": 4,
+"viewing_sequence_ids": [
+48,
+197,
+199,
+210
 ]
 },
 {
-"imdb_id": "nm0000339",
-"full_name": "Roger Corman",
-"slug": "roger-corman",
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 6,
-"venue": "TCM HD",
-"date": "2012-01-12",
-"title": "The Pit and the Pendulum",
-"year": 1961,
-"slug": null,
-"imdb_id": "tt0055304"
-},
-{
-"sequence": 7,
-"venue": "TCM HD",
-"date": "2012-01-12",
-"title": "The Masque of the Red Death",
-"year": 1964,
-"slug": null,
-"imdb_id": "tt0058333"
-},
-{
-"sequence": 124,
-"venue": "Encore HD",
-"date": "2012-03-24",
-"title": "Frankenstein Unbound",
-"year": 1990,
-"slug": null,
-"imdb_id": "tt0099612"
-}
+"imdbId": "nm0000339",
+"fullName": "Roger Corman",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+6,
+7,
+124
 ]
 }
 ]

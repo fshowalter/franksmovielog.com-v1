@@ -1,345 +1,103 @@
 {
-"viewing_year": "2022",
-"most_watched": [
+"viewingYear": "2022",
+"mostWatched": [
 {
-"imdb_id": "nm0000127",
-"full_name": "Wes Craven",
-"slug": "wes-craven",
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 1228,
-"venue": "4k UHD Blu-ray",
-"date": "2022-01-12",
-"title": "The Hills Have Eyes",
-"year": 1977,
-"slug": "the-hills-have-eyes-1977",
-"imdb_id": "tt0077681"
-},
-{
-"sequence": 1230,
-"venue": "Blu-ray",
-"date": "2022-01-14",
-"title": "Deadly Blessing",
-"year": 1981,
-"slug": "deadly-blessing-1981",
-"imdb_id": "tt0082245"
-},
-{
-"sequence": 1235,
-"venue": "Amazon",
-"date": "2022-01-26",
-"title": "Swamp Thing",
-"year": 1982,
-"slug": "swamp-thing-1982",
-"imdb_id": "tt0084745"
-},
-{
-"sequence": 1241,
-"venue": "Arrow Player",
-"date": "2022-02-02",
-"title": "The Hills Have Eyes Part II",
-"year": 1984,
-"slug": "the-hills-have-eyes-part-ii-1984",
-"imdb_id": "tt0089274"
-},
-{
-"sequence": 1247,
-"venue": "Blu-ray",
-"date": "2022-02-09",
-"title": "A Nightmare on Elm Street",
-"year": 1984,
-"slug": "a-nightmare-on-elm-street-1984",
-"imdb_id": "tt0087800"
-}
+"imdbId": "nm0000127",
+"fullName": "Wes Craven",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1228,
+1230,
+1235,
+1241,
+1247
 ]
 },
 {
-"imdb_id": "nm0000406",
-"full_name": "John Ford",
-"slug": "john-ford",
-"viewing_count": 5,
-"viewings": [
-{
-"sequence": 1292,
-"venue": "Criterion Channel",
-"date": "2022-06-21",
-"title": "Pilgrimage",
-"year": 1933,
-"slug": "pilgrimage-1933",
-"imdb_id": "tt0024453"
-},
-{
-"sequence": 1293,
-"venue": "Criterion Channel",
-"date": "2022-06-22",
-"title": "Steamboat Round the Bend",
-"year": 1935,
-"slug": "steamboat-round-the-bend-1935",
-"imdb_id": "tt0027042"
-},
-{
-"sequence": 1294,
-"venue": "Criterion Channel",
-"date": "2022-06-27",
-"title": "The Plough and the Stars",
-"year": 1936,
-"slug": "the-plough-and-the-stars-1936",
-"imdb_id": "tt0028112"
-},
-{
-"sequence": 1295,
-"venue": "Criterion Channel",
-"date": "2022-06-29",
-"title": "Doctor Bull",
-"year": 1933,
-"slug": "doctor-bull-1933",
-"imdb_id": "tt0023955"
-},
-{
-"sequence": 1308,
-"venue": "OK.ru",
-"date": "2022-07-29",
-"title": "The Brat",
-"year": 1931,
-"slug": "the-brat-1931",
-"imdb_id": "tt0021695"
-}
+"imdbId": "nm0000406",
+"fullName": "John Ford",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1292,
+1293,
+1294,
+1295,
+1308
 ]
 },
 {
-"imdb_id": "nm0957772",
-"full_name": "Rob Zombie",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 1231,
-"venue": "iTunes",
-"date": "2022-01-17",
-"title": "3 from Hell",
-"year": 2019,
-"slug": "3-from-hell-2019",
-"imdb_id": "tt8134742"
-},
-{
-"sequence": 1267,
-"venue": "iTunes",
-"date": "2022-03-31",
-"title": "Halloween",
-"year": 2007,
-"slug": "halloween-2007",
-"imdb_id": "tt0373883"
-},
-{
-"sequence": 1268,
-"venue": "iTunes",
-"date": "2022-03-31",
-"title": "Halloween II",
-"year": 2009,
-"slug": "halloween-ii-2009",
-"imdb_id": "tt1311067"
-}
+"imdbId": "nm0957772",
+"fullName": "Rob Zombie",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+1231,
+1267,
+1268
 ]
 },
 {
-"imdb_id": "nm0000361",
-"full_name": "Brian De Palma",
-"slug": "brian-de-palma",
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 1239,
-"venue": "Blu-ray",
-"date": "2022-01-31",
-"title": "Blow Out",
-"year": 1981,
-"slug": "blow-out-1981",
-"imdb_id": "tt0082085"
-},
-{
-"sequence": 1250,
-"venue": "4k UHD Blu-ray",
-"date": "2022-02-12",
-"title": "Scarface",
-"year": 1983,
-"slug": "scarface-1983",
-"imdb_id": "tt0086250"
-},
-{
-"sequence": 1269,
-"venue": "Blu-ray",
-"date": "2022-04-04",
-"title": "Body Double",
-"year": 1984,
-"slug": "body-double-1984",
-"imdb_id": "tt0086984"
-}
+"imdbId": "nm0000361",
+"fullName": "Brian De Palma",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+1239,
+1250,
+1269
 ]
 },
 {
-"imdb_id": "nm1135423",
-"full_name": "Darren Lynn Bousman",
-"slug": null,
-"viewing_count": 3,
-"viewings": [
-{
-"sequence": 1305,
-"venue": "Blu-ray",
-"date": "2022-07-22",
-"title": "Saw II",
-"year": 2005,
-"slug": "saw-ii-2005",
-"imdb_id": "tt0432348"
-},
-{
-"sequence": 1307,
-"venue": "Blu-ray",
-"date": "2022-07-28",
-"title": "Saw III",
-"year": 2006,
-"slug": "saw-iii-2006",
-"imdb_id": "tt0489270"
-},
-{
-"sequence": 1315,
-"venue": "Blu-ray",
-"date": "2022-08-10",
-"title": "Saw IV",
-"year": 2007,
-"slug": "saw-iv-2007",
-"imdb_id": "tt0890870"
-}
+"imdbId": "nm1135423",
+"fullName": "Darren Lynn Bousman",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+1305,
+1307,
+1315
 ]
 },
 {
-"imdb_id": "nm4469445",
-"full_name": "Julia Ducournau",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1226,
-"venue": "Netflix",
-"date": "2022-01-09",
-"title": "Raw",
-"year": 2016,
-"slug": "raw-2016",
-"imdb_id": "tt4954522"
-},
-{
-"sequence": 1232,
-"venue": "iTunes",
-"date": "2022-01-20",
-"title": "Titane",
-"year": 2021,
-"slug": "titane-2021",
-"imdb_id": "tt10944760"
-}
+"imdbId": "nm4469445",
+"fullName": "Julia Ducournau",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+1226,
+1232
 ]
 },
 {
-"imdb_id": "nm0027271",
-"full_name": "Paul W.S. Anderson",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1236,
-"venue": "HBO Max",
-"date": "2022-01-28",
-"title": "Event Horizon",
-"year": 1997,
-"slug": "event-horizon-1997",
-"imdb_id": "tt0119081"
-},
-{
-"sequence": 1277,
-"venue": "Prince Charles Cinema",
-"date": "2022-05-29",
-"title": "Event Horizon",
-"year": 1997,
-"slug": "event-horizon-1997",
-"imdb_id": "tt0119081"
-}
+"imdbId": "nm0027271",
+"fullName": "Paul W.S. Anderson",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+1236,
+1277
 ]
 },
 {
-"imdb_id": "nm0000343",
-"full_name": "David Cronenberg",
-"slug": "david-cronenberg",
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1246,
-"venue": "Blu-ray",
-"date": "2022-02-08",
-"title": "Fast Company",
-"year": 1979,
-"slug": "fast-company-1979",
-"imdb_id": "tt0079138"
-},
-{
-"sequence": 1286,
-"venue": "Blu-ray",
-"date": "2022-06-18",
-"title": "The Brood",
-"year": 1979,
-"slug": "the-brood-1979",
-"imdb_id": "tt0078908"
-}
+"imdbId": "nm0000343",
+"fullName": "David Cronenberg",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+1246,
+1286
 ]
 },
 {
-"imdb_id": "nm0169540",
-"full_name": "Larry Cohen",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1256,
-"venue": "Criterion Channel",
-"date": "2022-02-18",
-"title": "God Told Me To",
-"year": 1976,
-"slug": "god-told-me-to-1976",
-"imdb_id": "tt0075930"
-},
-{
-"sequence": 1311,
-"venue": "Criterion Channel",
-"date": "2022-08-02",
-"title": "Bone",
-"year": 1972,
-"slug": "bone-1972",
-"imdb_id": "tt0068306"
-}
+"imdbId": "nm0169540",
+"fullName": "Larry Cohen",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+1256,
+1311
 ]
 },
 {
-"imdb_id": "nm0667767",
-"full_name": "George Pavlou",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 1258,
-"venue": "Amazon",
-"date": "2022-02-20",
-"title": "Underworld",
-"year": 1985,
-"slug": "underworld-1985",
-"imdb_id": "tt0090233"
-},
-{
-"sequence": 1259,
-"venue": "Arrow Player",
-"date": "2022-02-20",
-"title": "Rawhead Rex",
-"year": 1986,
-"slug": "rawhead-rex-1986",
-"imdb_id": "tt0091829"
-}
+"imdbId": "nm0667767",
+"fullName": "George Pavlou",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+1258,
+1259
 ]
 }
 ]

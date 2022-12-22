@@ -1,82 +1,31 @@
 {
-"viewing_year": "2016",
-"most_watched": [
+"viewingYear": "2016",
+"mostWatched": [
 {
-"imdb_id": "nm3211470",
-"full_name": "Robert Eggers",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 542,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2016-03-10",
-"title": "The Witch",
-"year": 2015,
-"slug": "the-witch-2015",
-"imdb_id": "tt4263482"
-},
-{
-"sequence": 559,
-"venue": "Amazon",
-"date": "2016-09-17",
-"title": "The Witch",
-"year": 2015,
-"slug": "the-witch-2015",
-"imdb_id": "tt4263482"
-}
+"imdbId": "nm3211470",
+"fullName": "Robert Eggers",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+542,
+559
 ]
 },
 {
-"imdb_id": "nm1321655",
-"full_name": "Christopher Markus",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 547,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2016-05-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"slug": "captain-america-civil-war-2016",
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 569,
-"venue": "Amazon",
-"date": "2016-11-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"slug": "captain-america-civil-war-2016",
-"imdb_id": "tt3498820"
-}
+"imdbId": "nm1321655",
+"fullName": "Christopher Markus",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+547,
+569
 ]
 },
 {
-"imdb_id": "nm1321656",
-"full_name": "Stephen McFeely",
-"slug": null,
-"viewing_count": 2,
-"viewings": [
-{
-"sequence": 547,
-"venue": "Alamo Drafthouse Cinema - One Loudoun",
-"date": "2016-05-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"slug": "captain-america-civil-war-2016",
-"imdb_id": "tt3498820"
-},
-{
-"sequence": 569,
-"venue": "Amazon",
-"date": "2016-11-12",
-"title": "Captain America: Civil War",
-"year": 2016,
-"slug": "captain-america-civil-war-2016",
-"imdb_id": "tt3498820"
-}
+"imdbId": "nm1321656",
+"fullName": "Stephen McFeely",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+547,
+569
 ]
 }
 ]

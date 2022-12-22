@@ -1,4 +1,2 @@
-import SelectField from "./SelectField";
-import SelectOptions from "./SelectOptions";
-
-export { SelectField, SelectOptions };
+export { SelectField } from "./SelectField";
+export { SelectOptions } from "./SelectOptions";

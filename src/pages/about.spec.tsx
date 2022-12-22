@@ -1,7 +1,6 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import AboutPage, { Head } from "./about";
-import data from "./about.fixtures";
+import { data } from "./about.fixtures";
 
 describe("/about", () => {
   it("renders", () => {

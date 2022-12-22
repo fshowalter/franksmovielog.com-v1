@@ -1,7 +1,6 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { render } from "@testing-library/react";
 import HowIGradePage, { Head } from "./how-i-grade";
-import data from "./how-i-grade.fixtures";
+import { data } from "./how-i-grade.fixtures";
 
 describe("/how-i-grade", () => {
   it("renders", () => {
