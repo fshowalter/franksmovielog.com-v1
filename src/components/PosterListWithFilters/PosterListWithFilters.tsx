@@ -192,11 +192,19 @@ export function PosterListWithFilters({
           <Box className={stickyFiltersStyle}>
             <Fieldset legend="Filter & Sort">
               {toggleReviewed && (
-                <Button
-                  onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="flex-end"
                 >
-                  {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-                </Button>
+                  <Button
+                    onClick={() =>
+                      dispatch({ type: ActionType.TOGGLE_REVIEWED })
+                    }
+                  >
+                    {state.hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+                  </Button>
+                </Box>
               )}
               <DebouncedInput
                 label="Title"

@@ -40,6 +40,7 @@ function MediumAndVenue({
   if (venue) {
     return (
       <>
+        <Spacer axis="vertical" size={8} />
         <div>{venue}</div>
       </>
     );
@@ -101,16 +102,16 @@ function Title({
       <Link
         to={`/reviews/${slug}/`}
         className={titleTypographyStyle}
-        display="inline-block"
+        display="block"
       >
         {title}&nbsp;{yearBox}
       </Link>
     );
 
   return (
-    <>
+    <Box className={titleTypographyStyle}>
       {title}&nbsp;{yearBox}
-    </>
+    </Box>
   );
 }
 
@@ -155,7 +156,7 @@ export function Poster({
         year={year}
         flexShrink={0}
       />
-      <Box flexGrow={1}>
+      <Box flexGrow={1} width={{ tablet: "full" }}>
         <Box className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}>
           <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
           <Title title={title} year={year} slug={slug} />
@@ -176,13 +177,15 @@ export function Poster({
               flexDirection="column"
               justifyContent="center"
             >
+              {!medium && !venue && !details && (
+                <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
+              )}
               <Grade grade={grade} height={16} />
             </Box>
           )}
           <Box>
-            <Spacer axis="vertical" size={4} />
+            <Spacer axis="vertical" size={8} />
             {date && <Box>{date}</Box>}
-            <Spacer axis="vertical" size={4} />
             <MediumAndVenue medium={medium} venue={venue} />
           </Box>
         </Box>
