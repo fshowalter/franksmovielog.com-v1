@@ -24,7 +24,7 @@ describe("/watchlist/collections", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Name (Z-&gt;A)"
+      "Name (Z ← A)"
     );
 
     expect(screen.getByTestId("entity-list")).toMatchSnapshot();

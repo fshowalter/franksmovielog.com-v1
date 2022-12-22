@@ -180,8 +180,8 @@ export function WatchlistEntityAvatarListWithFilters({
                   })
                 }
               >
-                <option value="name-asc">Name (A-&gt;Z)</option>
-                <option value="name-desc">Name (Z-&gt;A)</option>
+                <option value="name-asc">Name (A &rarr; Z)</option>
+                <option value="name-desc">Name (Z &larr; A)</option>
               </SelectField>
             </Fieldset>
           </Box>

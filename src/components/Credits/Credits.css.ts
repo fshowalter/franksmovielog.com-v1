@@ -1,7 +1,7 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { POSTER_WIDTH, size } from "../../styles/sizes.css";
+import { gutterWidth, POSTER_WIDTH, size } from "../../styles/sizes.css";
 
 export const posterStyle = style({
   maxWidth: POSTER_WIDTH,
@@ -11,13 +11,7 @@ export const posterStyle = style({
 export const posterFloatStyle = style({
   float: "left" as const,
   maxWidth: "50%",
-  marginRight: "24px",
-
-  "@media": {
-    [minMediaQuery("tablet")]: {
-      marginRight: "32px",
-    },
-  },
+  marginRight: gutterWidth,
 });
 
 export const creditStyle = style({
@@ -34,7 +28,8 @@ export const backToTopArrowStyle = style({
 export const backToTopContainerStyle = style({
   cursor: "pointer",
   marginLeft: "auto",
-  width: "calc(50% - 24px)",
+  width: `calc(50% - ${gutterWidth})`,
+  maxWidth: "unset",
 
   ":hover": {
     boxShadow: `0 0 0 1px ${borderColors.accent}`,
@@ -42,8 +37,7 @@ export const backToTopContainerStyle = style({
 
   "@media": {
     [minMediaQuery("tablet")]: {
-      width: "calc(100% - 280px)",
-      maxWidth: "unset",
+      width: `calc(100% - ${POSTER_WIDTH} - ${gutterWidth})`,
     },
   },
 });

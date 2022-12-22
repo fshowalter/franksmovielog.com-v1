@@ -151,7 +151,7 @@ export default function WatchlistProgressPage({
           display="flex"
           flexDirection={{ default: "column", desktop: "row" }}
           flexWrap="wrap"
-          paddingX="gutter"
+          paddingX="pageMargin"
           columnGap={32}
           justifyContent="space-between"
         >
