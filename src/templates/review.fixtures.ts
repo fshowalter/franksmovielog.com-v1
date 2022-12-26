@@ -4,6 +4,7 @@ export const data = {
     year: 1957,
     gradeStars: "★★★★★",
     review: {
+      date: "Sat Sep 19, 2020",
       excerpt:
         "For Peter Cushing and Christopher Lee’s first film for Hammer, a guest review from the good Baron himself:",
       linkedHtml:

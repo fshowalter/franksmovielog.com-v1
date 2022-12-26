@@ -62,6 +62,28 @@ export const MarkdownRemark = {
         linkReviewedMovies: {},
       },
     },
+    date: {
+      type: "Date!",
+      resolve: async (
+        source: MarkdownNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const frontMatter = await resolveFieldForNode<FrontMatter>(
+          "frontmatter",
+          source,
+          context,
+          info,
+          args
+        );
+
+        return frontMatter ? frontMatter.date : null;
+      },
+      extensions: {
+        dateformat: {},
+      },
+    },
     excerptHtml: excerptHtmlFieldResolver,
     linkedHtml: {
       type: "String",

@@ -19,7 +19,7 @@ export function ReviewContent({ review, ...rest }: IReviewContentProps) {
           alignItems="inherit"
           letterSpacing={0.5}
         >
-          <span>on</span> {review.viewings[0].date}
+          <span>on</span> {review.review.date}
         </Box>
       </Box>
       <LongFormText
@@ -34,11 +34,9 @@ export function ReviewContent({ review, ...rest }: IReviewContentProps) {
 export const query = graphql`
   fragment ReviewContent on ReviewedMoviesJson {
     grade
-    viewings {
-      date: viewingDate(formatString: "ddd MMM DD, YYYY")
-    }
     review {
       linkedHtml
+      date(formatString: "ddd MMM DD, YYYY")
     }
   }
 `;
