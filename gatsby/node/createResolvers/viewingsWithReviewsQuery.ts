@@ -1,7 +1,7 @@
 import { SchemaNames } from "../createSchemaCustomization/schemaNames";
 import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
-export const viewingsWithReviewQuery = {
+export const viewingsWithReviewsQuery = {
   Query: {
     viewingsWithReviews: {
       type: `[${SchemaNames.ViewingWithReview}!]!`,
