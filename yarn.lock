@@ -6671,10 +6671,10 @@ gatsby-plugin-utils@^4.3.1:
     joi "^17.7.0"
     mime "^3.0.0"
 
-gatsby-plugin-vanilla-extract@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-vanilla-extract/-/gatsby-plugin-vanilla-extract-4.0.0.tgz#1e83cec7723fcd222a993ad12c2f0f9b8a433141"
-  integrity sha512-my4qJTbsDXuQq5Uw7Bh1fKIDDzvQp5zI3+OFeF/zvwWk2XPHkxaun+YIWLQ3V6G4GqBB/CvTlQR0440lSrbM9Q==
+gatsby-plugin-vanilla-extract@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-vanilla-extract/-/gatsby-plugin-vanilla-extract-4.0.1.tgz#cf8f90b615c7c4826f1d1f03b8e5309766248242"
+  integrity sha512-j8zsyg/vnsgQPEJmun4d4FYtKqVqnoeC8f6kSUZNohPkjLD8aCHCyDjJzHrsc1Th6I+SiFXkGyHIdK8ZAX0RkQ==
 
 gatsby-react-router-scroll@^6.3.0:
   version "6.3.0"
