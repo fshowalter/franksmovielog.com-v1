@@ -104,13 +104,13 @@ function Title({
         className={titleTypographyStyle}
         display="block"
       >
-        {title}&nbsp;{yearBox}
+        {title}&#8239;&#8239;{yearBox}
       </Link>
     );
 
   return (
     <Box className={titleTypographyStyle}>
-      {title}&nbsp;{yearBox}
+      {title}&#8239;&#8239;{yearBox}
     </Box>
   );
 }
@@ -160,7 +160,7 @@ export function Poster({
         <Box className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}>
           <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
           <Title title={title} year={year} slug={slug} />
-          <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
+          <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
         </Box>
         <Box
           color="subtle"
@@ -171,21 +171,14 @@ export function Poster({
           letterSpacing={0.5}
         >
           {grade && (
-            <Box
-              height={{ default: 16, tablet: 24 }}
-              display="flex"
-              flexDirection="column"
-              justifyContent="center"
-            >
-              {!medium && !venue && !details && (
-                <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
-              )}
+            <Box display="flex" flexDirection="column" justifyContent="center">
               <Grade grade={grade} height={16} />
+              <Spacer axis="vertical" size={8} />
             </Box>
           )}
           <Box>
-            <Spacer axis="vertical" size={8} />
             {date && <Box>{date}</Box>}
+            <Spacer axis="vertical" size={8} />
             <MediumAndVenue medium={medium} venue={venue} />
           </Box>
         </Box>

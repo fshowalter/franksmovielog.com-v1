@@ -16,6 +16,7 @@ export const gridStyle = style({
 export const slugTypographyStyle = style({
   fontSize: ".875rem",
   lineHeight: "1rem",
+  letterSpacing: "0.5px",
 
   "@media": {
     [minMediaQuery("tablet")]: {
@@ -33,7 +34,7 @@ export const titleTypographyStyle = style({
   "@media": {
     [minMediaQuery("tablet")]: {
       fontSize: "1rem",
-      lineHeight: "1.5rem",
+      lineHeight: "1.25rem",
     },
   },
 });
