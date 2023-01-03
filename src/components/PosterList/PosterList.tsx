@@ -40,7 +40,6 @@ function MediumAndVenue({
   if (venue) {
     return (
       <>
-        <Spacer axis="vertical" size={8} />
         <div>{venue}</div>
       </>
     );
@@ -177,9 +176,17 @@ export function Poster({
             </Box>
           )}
           <Box>
-            {date && <Box>{date}</Box>}
-            <Spacer axis="vertical" size={8} />
-            <MediumAndVenue medium={medium} venue={venue} />
+            {date && (
+              <>
+                <Box>{date}</Box>
+                <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
+              </>
+            )}
+            {(medium || venue) && (
+              <>
+                <MediumAndVenue medium={medium} venue={venue} />
+              </>
+            )}
           </Box>
         </Box>
         {details && details}
