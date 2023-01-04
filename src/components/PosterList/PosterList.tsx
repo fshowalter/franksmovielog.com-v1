@@ -145,7 +145,7 @@ export function Poster({
       backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
       paddingX={{ default: "gutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
-      alignItems={{ default: "center", tablet: "flex-start" }}
+      alignItems="flex-start"
       display="flex"
     >
       <Image

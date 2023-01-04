@@ -1,0 +1,1 @@
+export { WatchlistMovieSlug } from "./WatchlistMovieSlug";
