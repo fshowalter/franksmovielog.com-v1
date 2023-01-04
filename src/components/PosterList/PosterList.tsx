@@ -175,6 +175,9 @@ export function Poster({
               <Spacer axis="vertical" size={8} />
             </Box>
           )}
+          {!grade && (
+            <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
+          )}
           <Box>
             {date && (
               <>
