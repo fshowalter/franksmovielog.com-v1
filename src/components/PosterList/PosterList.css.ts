@@ -50,7 +50,7 @@ export const showTitleOnMobileOnlyStyle = style({
 
 export const posterStyle = style({
   borderRadius: 0,
-  maxWidth: "48px",
+  maxWidth: "72px",
 
   "@media": {
     [minMediaQuery("tablet")]: {
