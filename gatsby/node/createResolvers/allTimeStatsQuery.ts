@@ -34,6 +34,9 @@ export const allTimeStatsQuery = {
         const { entries: gradeDistributions } = await context.nodeModel.findAll(
           {
             type: SchemaNames.GradeDistributionsJson,
+            query: {
+              sort: { fields: ["gradeValue"], order: [`desc`] },
+            },
           }
         );
 
