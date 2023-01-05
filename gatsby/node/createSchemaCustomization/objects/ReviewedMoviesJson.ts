@@ -54,10 +54,10 @@ export const ReviewedMoviesJson = {
       resolve: (source: ReviewedMovieNode) => {
         const gradeMap: Record<string, string> = {
           A: "★★★★★",
-          B: "★★★★",
-          C: "★★★",
-          D: "★★",
-          F: "★",
+          B: "★★★★☆",
+          C: "★★★☆☆",
+          D: "★★☆☆☆",
+          F: "★☆☆☆☆",
         };
 
         if (source.grade && source.grade[0] in gradeMap) {
