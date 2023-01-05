@@ -4,7 +4,7 @@
 {
 "imdbId": "nm0000007",
 "fullName": "Humphrey Bogart",
-"viewingCount": 9,
+"viewingCount": 19,
 "viewing_sequence_ids": [
 1324,
 1341,
@@ -14,7 +14,17 @@
 1350,
 1361,
 1362,
-1368
+1368,
+1369,
+1370,
+1371,
+1372,
+1373,
+1375,
+1376,
+1378,
+1379,
+1380
 ]
 },
 {
@@ -55,6 +65,66 @@
 ]
 },
 {
+"imdbId": "nm0647752",
+"fullName": "Moroni Olsen",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1294,
+1324,
+1341,
+1355,
+1385
+]
+},
+{
+"imdbId": "nm0570451",
+"fullName": "Frank McHugh",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1323,
+1324,
+1363,
+1370,
+1378
+]
+},
+{
+"imdbId": "nm0642180",
+"fullName": "Henry O'Neill",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1323,
+1341,
+1351,
+1371,
+1379
+]
+},
+{
+"imdbId": "nm0001637",
+"fullName": "Vincent Price",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1327,
+1338,
+1374,
+1385,
+1402
+]
+},
+{
+"imdbId": "nm0000012",
+"fullName": "Bette Davis",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1342,
+1368,
+1377,
+1386,
+1390
+]
+},
+{
 "imdbId": "nm0077720",
 "fullName": "Michael Berryman",
 "viewingCount": 4,
@@ -63,61 +133,6 @@
 1230,
 1241,
 1353
-]
-},
-{
-"imdbId": "nm0908914",
-"fullName": "Dee Wallace",
-"viewingCount": 4,
-"viewing_sequence_ids": [
-1228,
-1231,
-1267,
-1314
-]
-},
-{
-"imdbId": "nm0000078",
-"fullName": "John Wayne",
-"viewingCount": 4,
-"viewing_sequence_ids": [
-1287,
-1288,
-1322,
-1355
-]
-},
-{
-"imdbId": "nm0330435",
-"fullName": "Mary Gordon",
-"viewingCount": 4,
-"viewing_sequence_ids": [
-1294,
-1323,
-1357,
-1360
-]
-},
-{
-"imdbId": "nm0647752",
-"fullName": "Moroni Olsen",
-"viewingCount": 4,
-"viewing_sequence_ids": [
-1294,
-1324,
-1341,
-1355
-]
-},
-{
-"imdbId": "nm0000539",
-"fullName": "Dina Meyer",
-"viewingCount": 4,
-"viewing_sequence_ids": [
-1301,
-1305,
-1307,
-1315
 ]
 }
 ]
