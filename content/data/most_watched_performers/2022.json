@@ -41,6 +41,19 @@
 ]
 },
 {
+"imdbId": "nm0000012",
+"fullName": "Bette Davis",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+1342,
+1368,
+1377,
+1386,
+1390,
+1418
+]
+},
+{
 "imdbId": "nm0000026",
 "fullName": "Cary Grant",
 "viewingCount": 5,
@@ -50,6 +63,18 @@
 1334,
 1337,
 1358
+]
+},
+{
+"imdbId": "nm0000078",
+"fullName": "John Wayne",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1287,
+1288,
+1322,
+1355,
+1416
 ]
 },
 {
@@ -110,29 +135,6 @@
 1374,
 1385,
 1402
-]
-},
-{
-"imdbId": "nm0000012",
-"fullName": "Bette Davis",
-"viewingCount": 5,
-"viewing_sequence_ids": [
-1342,
-1368,
-1377,
-1386,
-1390
-]
-},
-{
-"imdbId": "nm0077720",
-"fullName": "Michael Berryman",
-"viewingCount": 4,
-"viewing_sequence_ids": [
-1228,
-1230,
-1241,
-1353
 ]
 }
 ]
