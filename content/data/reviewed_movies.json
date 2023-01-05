@@ -15,7 +15,7 @@
 "Steve Coogan",
 "Lennie James",
 "John Thomson",
-"Paul Popplewell"
+"Nigel Pivaro"
 ],
 "countries": [
 "United Kingdom"
@@ -550,7 +550,7 @@
 "Conrad Nagel",
 "Sidney Fox",
 "Bette Davis",
-"Humphrey Bogart"
+"Zasu Pitts"
 ],
 "countries": [
 "United States"
@@ -614,7 +614,7 @@
 "releaseDate": "2016-03-12",
 "slug": "batman-v-superman-dawn-of-justice-2016",
 "sortTitle": "Batman v Superman: Dawn of Justice (2016)",
-"runtimeMinutes": 152,
+"runtimeMinutes": 151,
 "directorNames": [
 "Zack Snyder"
 ],
@@ -686,7 +686,7 @@
 "releaseDate": "1930-01-11",
 "slug": "behind-the-make-up-1930",
 "sortTitle": "Behind the Make-Up (1930)",
-"runtimeMinutes": 70,
+"runtimeMinutes": 65,
 "directorNames": [
 "Dorothy Arzner",
 "Henry Hathaway",
@@ -2185,7 +2185,7 @@
 "imdbId": "tt0032339",
 "title": "A Chump at Oxford",
 "originalTitle": null,
-"year": 1939,
+"year": 1940,
 "releaseDate": "1939-01-01",
 "slug": "a-chump-at-oxford-1939",
 "sortTitle": "Chump at Oxford (1939)",
@@ -3325,9 +3325,9 @@
 ],
 "principalCastNames": [
 "Benedict Cumberbatch",
-"Rachel McAdams",
 "Elizabeth Olsen",
-"Patrick Stewart"
+"Chiwetel Ejiofor",
+"Benedict Wong"
 ],
 "countries": [
 "United States"
@@ -3434,8 +3434,8 @@
 },
 {
 "imdbId": "tt0103874",
-"title": "Bram Stoker's Dracula",
-"originalTitle": "Dracula",
+"title": "Dracula",
+"originalTitle": null,
 "year": 1992,
 "releaseDate": "1992-11-10",
 "slug": "bram-stokers-dracula-1992",
@@ -3803,7 +3803,7 @@
 "releaseDate": "2000-10-12",
 "slug": "faust-2000",
 "sortTitle": "Faust (2000)",
-"runtimeMinutes": 98,
+"runtimeMinutes": 101,
 "directorNames": [
 "Brian Yuzna"
 ],
@@ -4258,7 +4258,7 @@
 {
 "imdbId": "tt0091080",
 "title": "Friday the 13th Part VI: Jason Lives",
-"originalTitle": null,
+"originalTitle": "Jason Lives: Friday the 13th Part VI",
 "year": 1986,
 "releaseDate": "1986-08-01",
 "slug": "friday-the-13th-part-vi-jason-lives-1986",
@@ -4318,8 +4318,8 @@
 "principalCastNames": [
 "Jensen Daggett",
 "Kane Hodder",
-"Scott Reeves",
-"Tim Mirkovich"
+"Todd Caldecott",
+"Tiffany Paulsen"
 ],
 "countries": [
 "Canada",
@@ -4577,7 +4577,7 @@
 "releaseDate": "1979-12-31",
 "slug": "giallo-a-venezia-1979",
 "sortTitle": "Giallo in Venice (1979)",
-"runtimeMinutes": 91,
+"runtimeMinutes": 98,
 "directorNames": [
 "Mario Landi"
 ],
@@ -6405,8 +6405,8 @@
 "principalCastNames": [
 "Lee Yeong-ae",
 "Lee Byung-hun",
-"Kang-ho Song",
-"Kim Tae-Woo"
+"Song Kang-ho",
+"Kim Tae-woo"
 ],
 "countries": [
 "South Korea"
@@ -6686,7 +6686,7 @@
 "releaseDate": "1931-05-01",
 "slug": "ladies-man-1931",
 "sortTitle": "Ladies' Man (1931)",
-"runtimeMinutes": 70,
+"runtimeMinutes": 75,
 "directorNames": [
 "Lothar Mendes"
 ],
@@ -7712,7 +7712,7 @@
 {
 "imdbId": "tt0163114",
 "title": "Murder \u00e0 la Mod",
-"originalTitle": null,
+"originalTitle": "Murder a la Mod",
 "year": 1968,
 "releaseDate": "1968-05-01",
 "slug": "murder-a-la-mod-1968",
@@ -7885,7 +7885,7 @@
 "imdbId": "tt0093608",
 "title": "Nekromantik",
 "originalTitle": null,
-"year": 1987,
+"year": 1988,
 "releaseDate": "1987-01-01",
 "slug": "nekromantik-1987",
 "sortTitle": "Nekromantik (1987)",
@@ -8976,10 +8976,10 @@
 "principalCastNames": [
 "Marilyn Chambers",
 "Frank Moore",
+"Terry Schonblum",
 "Joe Silver",
 "Howard Ryshpan",
-"Patricia Gage",
-"Susan Roman"
+"Patricia Gage"
 ],
 "countries": [
 "Canada"
@@ -9392,13 +9392,10 @@
 "Rob Jabbaz"
 ],
 "principalCastNames": [
-"Ying-Ru Chen",
-"Ralf Chiu",
-"Wei-Hua Lan",
+"Berant Zhu",
 "Regina Lei",
-"Emerson Tsai",
-"Tzu-Chiang Wang",
-"Berant Zhu"
+"Ying-Ru Chen",
+"Tzu-Chiang Wang"
 ],
 "countries": [
 "Taiwan"
@@ -10360,8 +10357,8 @@
 },
 {
 "imdbId": "tt0076759",
-"title": "Star Wars",
-"originalTitle": null,
+"title": "Star Wars: Episode IV - A New Hope",
+"originalTitle": "Star Wars",
 "year": 1977,
 "releaseDate": "1977-05-25",
 "slug": "star-wars-episode-iv-a-new-hope-1977",
@@ -10657,8 +10654,8 @@
 },
 {
 "imdbId": "tt0073778",
-"title": "Switchblade Sisters",
-"originalTitle": "The Jezebels",
+"title": "The Jezebels",
+"originalTitle": null,
 "year": 1975,
 "releaseDate": "1975-05-01",
 "slug": "switchblade-sisters-1975",
@@ -10985,10 +10982,10 @@
 "Mervyn LeRoy"
 ],
 "principalCastNames": [
-"Virginia Davis",
 "Joan Blondell",
-"Anne Shirley",
-"Ann Dvorak"
+"Ann Dvorak",
+"Bette Davis",
+"Warren William"
 ],
 "countries": [
 "United States"
@@ -11204,7 +11201,7 @@
 ],
 "principalCastNames": [
 "Gong Yoo",
-"Yu-mi Jung",
+"Jung Yu-mi",
 "Ma Dong-seok",
 "Su-an Kim"
 ],
@@ -11403,8 +11400,8 @@
 ],
 "principalCastNames": [
 "Hideko Takamine",
-"Kamatari Fujiwara",
 "Chieko Takehisa",
+"Kamatari Fujiwara",
 "Kaoru Futaba"
 ],
 "countries": [
