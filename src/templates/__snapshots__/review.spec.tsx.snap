@@ -497,11 +497,11 @@ exports[`/reviews/{slug} renders 1`] = `
           class="sprinkles_width_px_default__8lcvdkk5 sprinkles_height_128_default__8lcvdk6b sprinkles_minWidth_px_default__8lcvdkan sprinkles_minHeight_128_default__8lcvdk9h sprinkles_display_block_default__8lcvdk4h"
         />
         <aside
-          class="utils_stickyHeaderScrollMarginTopStyle__506800 sprinkles_paddingLeft_gutter_default__8lcvdke2 sprinkles_paddingRight_gutter_default__8lcvdkfq sprinkles_position_relative_default__8lcvdkh2 sprinkles_maxWidth_popout_default__8lcvdk88 sprinkles_width_full_default__8lcvdkkb sprinkles_paddingTop_48_default__8lcvdkgh sprinkles_paddingBottom_32_default__8lcvdkbt sprinkles_backgroundColor_subtle_default__8lcvdk22"
+          class="utils_stickyHeaderScrollMarginTopStyle__506800 sprinkles_paddingLeft_gutter_default__8lcvdke2 sprinkles_paddingRight_gutter_default__8lcvdkfq sprinkles_position_relative_default__8lcvdkh2 sprinkles_maxWidth_popout_default__8lcvdk88 sprinkles_width_full_default__8lcvdkkb sprinkles_paddingTop_32_default__8lcvdkgb sprinkles_paddingTop_48_tablet__8lcvdkgi sprinkles_paddingBottom_32_default__8lcvdkbt sprinkles_backgroundColor_subtle_default__8lcvdk22"
           id="credits"
         >
           <div
-            class="Credits_posterFloatStyle__1l00qpw1"
+            class="Credits_posterFloatStyle__1l00qpw2"
           >
             <div
               class="gatsby-image-wrapper gatsby-image-wrapper-constrained Credits_posterStyle__1l00qpw0 sprinkles_borderRadius_8__8lcvdk1 sprinkles_transform_safariBorderRadiusFix__8lcvdk19"
@@ -551,7 +551,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <header
-            class="sprinkles_fontSize_large__8lcvdkk sprinkles_paddingBottom_24_default__8lcvdkbq"
+            class="Credits_titleStyle__1l00qpw1 sprinkles_fontSize_large__8lcvdkk sprinkles_paddingBottom_24_default__8lcvdkbq"
           >
             The Curse of Frankenstein
           </header>
@@ -559,7 +559,7 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_flexDirection_column_default__8lcvdk55 sprinkles_rowGap_24_default__8lcvdkhk"
           >
             <div
-              class="Credits_creditStyle__1l00qpw2"
+              class="Credits_creditStyle__1l00qpw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdkp sprinkles_color_subtle__8lcvdk7"
@@ -573,7 +573,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw2"
+              class="Credits_creditStyle__1l00qpw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdkp sprinkles_color_subtle__8lcvdk7"
@@ -587,7 +587,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw2"
+              class="Credits_creditStyle__1l00qpw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdkp sprinkles_color_subtle__8lcvdk7"
@@ -601,7 +601,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw2"
+              class="Credits_creditStyle__1l00qpw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdkp sprinkles_color_subtle__8lcvdk7"
@@ -615,7 +615,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw2"
+              class="Credits_creditStyle__1l00qpw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdkp sprinkles_color_subtle__8lcvdk7"
@@ -688,12 +688,12 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_width_px_default__8lcvdkk5 sprinkles_height_32_default__8lcvdk5t sprinkles_minWidth_px_default__8lcvdkan sprinkles_minHeight_32_default__8lcvdk8z sprinkles_display_block_default__8lcvdk4h"
           />
           <a
-            class="Credits_backToTopContainerStyle__1l00qpw4 sprinkles_paddingLeft_8_default__8lcvdkcq sprinkles_paddingRight_8_default__8lcvdkee sprinkles_paddingTop_8_default__8lcvdkg2 sprinkles_paddingBottom_8_default__8lcvdkbk sprinkles_borderRadius_8__8lcvdk1 sprinkles_boxShadow_borderAll_default__8lcvdk2q sprinkles_display_flex_default__8lcvdk4n sprinkles_maxWidth_half_default__8lcvdk82 sprinkles_alignItems_center_default__8lcvdk1e sprinkles_justifyContent_center_default__8lcvdk6n"
+            class="Credits_backToTopContainerStyle__1l00qpw5 sprinkles_paddingLeft_8_default__8lcvdkcq sprinkles_paddingRight_8_default__8lcvdkee sprinkles_paddingTop_8_default__8lcvdkg2 sprinkles_paddingBottom_8_default__8lcvdkbk sprinkles_borderRadius_8__8lcvdk1 sprinkles_boxShadow_borderAll_default__8lcvdk2q sprinkles_display_flex_default__8lcvdk4n sprinkles_maxWidth_half_default__8lcvdk82 sprinkles_alignItems_center_default__8lcvdk1e sprinkles_justifyContent_center_default__8lcvdk6n"
             href="#top"
           >
             Back to Top
             <svg
-              class="Credits_backToTopArrowStyle__1l00qpw3"
+              class="Credits_backToTopArrowStyle__1l00qpw4"
               viewBox="0 0 24 24"
             >
               <path
