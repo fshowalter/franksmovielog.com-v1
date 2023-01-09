@@ -10,6 +10,7 @@ import {
   creditStyle,
   posterFloatStyle,
   posterStyle,
+  titleStyle,
 } from "./Credits.css";
 import { ReviewWatchlistLinks } from "./ReviewWatchlistLinks";
 
@@ -43,7 +44,7 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
       position="relative"
       {...rest}
       paddingX="gutter"
-      paddingTop={48}
+      paddingTop={{ default: 32, tablet: 48 }}
       paddingBottom={32}
       backgroundColor="subtle"
       className={stickyHeaderScrollMarginTopStyle}
@@ -57,7 +58,12 @@ export function Credits({ movie, ...rest }: ICreditsProps): JSX.Element {
           className={posterStyle}
         />
       </Box>
-      <Box as="header" fontSize="large" paddingBottom={24}>
+      <Box
+        as="header"
+        fontSize="large"
+        paddingBottom={24}
+        className={titleStyle}
+      >
         {movie.title}
       </Box>
       <Box as="dl" flexDirection="column" rowGap={24}>
