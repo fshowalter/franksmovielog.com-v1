@@ -5,13 +5,38 @@ import { gutterWidth, POSTER_WIDTH, size } from "../../styles/sizes.css";
 
 export const posterStyle = style({
   maxWidth: POSTER_WIDTH,
-  marginBottom: "16px",
+  margin: "0 auto 16px",
+  display: "block",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      marginLeft: "unset",
+      marginRight: "unset",
+    },
+  },
+});
+
+export const titleStyle = style({
+  textAlign: "center",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      textAlign: "left",
+    },
+  },
 });
 
 export const posterFloatStyle = style({
-  float: "left" as const,
-  maxWidth: "50%",
-  marginRight: gutterWidth,
+  display: "block",
+  margin: "0 auto",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      float: "left" as const,
+      maxWidth: "50%",
+      marginRight: gutterWidth,
+    },
+  },
 });
 
 export const creditStyle = style({
@@ -27,8 +52,7 @@ export const backToTopArrowStyle = style({
 
 export const backToTopContainerStyle = style({
   cursor: "pointer",
-  marginLeft: "auto",
-  width: `calc(50% - ${gutterWidth})`,
+  width: "100%",
   maxWidth: "unset",
 
   ":hover": {
@@ -37,6 +61,7 @@ export const backToTopContainerStyle = style({
 
   "@media": {
     [minMediaQuery("tablet")]: {
+      marginLeft: "auto",
       width: `calc(100% - ${POSTER_WIDTH} - ${gutterWidth})`,
     },
   },
