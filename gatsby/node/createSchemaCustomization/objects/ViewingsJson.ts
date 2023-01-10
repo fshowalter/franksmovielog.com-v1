@@ -123,7 +123,7 @@ export const commonViewingFields = {
 
         if (viewingNoteNode) {
           return resolveFieldForNode<string>(
-            "html",
+            "excerptHtml",
             viewingNoteNode,
             context,
             info,
