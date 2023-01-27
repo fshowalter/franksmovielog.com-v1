@@ -1198,18 +1198,6 @@
   resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.7.5.tgz#f501e3db37a5ac659f21ba0c2e61b278e58b64b9"
   integrity sha512-Zbr2Eo0AQ4yzmQr/36/h+6LKjmdVBB3Q5cGzO6rtlIKB/IOpbQVUZW+XAnhpJmJr9sIF97OZjgbhG9k7Sjn4yw==
 
-"@dessert-box/core@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@dessert-box/core/-/core-0.2.0.tgz#66dba99a816051c7a5fda67f05c35f90217f1a3a"
-  integrity sha512-Vqaec6i0cvS1r54kU6CfOQECi6dPWzz6DVVxJABOxqPmVk8fOSy6pIKsK0YyPFGRpZK/FXkJ1YhURUOW1OxOVQ==
-
-"@dessert-box/react@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@dessert-box/react/-/react-0.4.0.tgz#be319645d9d1e80301321e6e69755cf54a782a6c"
-  integrity sha512-r2sqkX4y+fDLtRGGpCitI5ckzLZl3DPMUhKBstf3qoZbfoAVHB0HRHgrfRni3F0qZZgXowR880lL8IDpPpRiGg==
-  dependencies:
-    "@dessert-box/core" "^0.2.0"
-
 "@emotion/babel-plugin@^11.10.0":
   version "11.10.2"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.10.2.tgz#879db80ba622b3f6076917a1e6f648b1c7d008c7"
