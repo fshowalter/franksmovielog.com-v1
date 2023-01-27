@@ -6804,19 +6804,19 @@ gatsby-plugin-postcss@^6.5.0:
     "@babel/runtime" "^7.20.7"
     postcss-loader "^7.0.2"
 
-gatsby-plugin-sharp@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.4.0.tgz#a70d694b7775c437046d7c19e4a2b7b6a2189952"
-  integrity sha512-QFGMP3skMyiLBx/1JGs296ZT0aWkzP2SsEp+5MA/Yg23T8Hrb/bBmxe+cAD0PoALQl9lmEA7NPawuh0q1HaGPw==
+gatsby-plugin-sharp@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.5.0.tgz#b9c92dc11b6e0afbc1e112a1d2fdc6e31f35dc97"
+  integrity sha512-XtRjproz7FT3df8HetkpKlUFfQfPu+KdCsyXwnlAu6vm94+86ZgN/6O4gioG8GLZvoOF/1Zud47xagBPbvzLLg==
   dependencies:
     "@babel/runtime" "^7.20.7"
     async "^3.2.4"
     bluebird "^3.7.2"
     debug "^4.3.4"
     filenamify "^4.3.0"
-    fs-extra "^10.1.0"
-    gatsby-core-utils "^4.4.0"
-    gatsby-plugin-utils "^4.4.0"
+    fs-extra "^11.1.0"
+    gatsby-core-utils "^4.5.0"
+    gatsby-plugin-utils "^4.5.0"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
     semver "^7.3.8"
@@ -6845,7 +6845,7 @@ gatsby-plugin-typescript@^5.5.0:
     "@babel/runtime" "^7.20.7"
     babel-plugin-remove-graphql-queries "^5.5.0"
 
-gatsby-plugin-utils@^4.4.0, gatsby-plugin-utils@^4.5.0:
+gatsby-plugin-utils@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.5.0.tgz#259f6c751a9b2a61ef9f62c7d9111004c4d98541"
   integrity sha512-FNWLzlrjwBb5NGtpHB72DC8dwCGmBAqJW5vvhnmY7eH+h178NidSs8JI7ntHu2Dtl8sOFYua+2n5eAN7HkEY8Q==
