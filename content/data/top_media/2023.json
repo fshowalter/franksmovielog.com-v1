@@ -1,10 +1,14 @@
 {
 "viewingYear": "2023",
-"totalViewingCount": 7,
+"totalViewingCount": 8,
 "stats": [
 {
 "name": "Blu-ray",
 "viewingCount": 3
+},
+{
+"name": "iTunes",
+"viewingCount": 2
 },
 {
 "name": "4k UHD Blu-ray",
@@ -16,10 +20,6 @@
 },
 {
 "name": "HBO Max",
-"viewingCount": 1
-},
-{
-"name": "iTunes",
 "viewingCount": 1
 }
 ]
