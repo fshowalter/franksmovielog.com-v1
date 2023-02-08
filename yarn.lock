@@ -3279,10 +3279,10 @@
     lodash "^4.17.21"
     outdent "^0.8.0"
 
-"@vanilla-extract/jest-transform@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/jest-transform/-/jest-transform-1.0.2.tgz#f46f8db2af237bf06cf4e87867cf28a1efa29647"
-  integrity sha512-rrOeo2UTVrlRrhs/uslz81qGqdGarxlZ02Arw+XfJvkBafm3/10crAjQ6j2C365GWov14WDKzDmn66QmNYOVpA==
+"@vanilla-extract/jest-transform@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/jest-transform/-/jest-transform-1.1.0.tgz#a16ea51c00328ca024d9b5038eacf30266fbc27c"
+  integrity sha512-yjk/IXMOGrvFXW48eF/JmMua/KumbT8HI1OtCHfod4MFiJq9F7i0qF+UCoNwAMTwywu0eFWnHbTU/3jd8phUjA==
   dependencies:
     "@vanilla-extract/integration" "^6.0.2"
     esbuild "^0.16.3"
