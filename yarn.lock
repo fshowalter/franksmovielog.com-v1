@@ -6799,12 +6799,12 @@ gatsby-react-router-scroll@^6.6.0:
     "@babel/runtime" "^7.20.13"
     prop-types "^15.8.1"
 
-gatsby-remark-smartypants@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-6.5.0.tgz#a2bf57f18c83616187a2cc82f7a352432b16723d"
-  integrity sha512-qFLZyaIWHfmyVO8rgFI73cC2Gp/pEi+y/ZaSARaKfMmSqT1gDSvlLy6YSkmbMxP5JvB6UPNQOOhsHcEiuv+xEw==
+gatsby-remark-smartypants@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-6.6.0.tgz#6e5f66d904f54079c1da67193bd675a700b92a2f"
+  integrity sha512-XjqG745gOdOtFoKwYpI3ELXAM1f2XMwjscONo+Cudgf4XvlsEwrqQ7nwJff4BnJe9OVwb+ZfaxWWAyAI1Zuf+Q==
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.20.13"
     retext "^7.0.1"
     retext-smartypants "^4.0.0"
     unist-util-visit "^2.0.3"
