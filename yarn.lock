@@ -6660,16 +6660,16 @@ gatsby-plugin-catch-links@^5.6.0:
     "@babel/runtime" "^7.20.13"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-feed@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-5.5.0.tgz#ebddd6fa3b64b4403993949f94b65f8e21ff7efd"
-  integrity sha512-ZoPKxsByNJBmGSYXOFygAu2dzrLDpP0E5PEXM+aDI47KZSoRxFmKcX9MEwLCzVnj6Y/kIYZ3GZyeBkHoauya1g==
+gatsby-plugin-feed@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-5.6.0.tgz#d84f35389d33c59f05d0c37fcaacbb8281a42e68"
+  integrity sha512-cjubbcmdbf3WLQCU5yTL2Ax+vXegrMEkk8NfkEsj/n30YgdaD9WrocUvrpEeR+qNREBUU/oKi7lc9hpBPJy5fw==
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.20.13"
     "@hapi/joi" "^15.1.1"
     common-tags "^1.8.2"
     fs-extra "^11.1.0"
-    gatsby-plugin-utils "^4.5.0"
+    gatsby-plugin-utils "^4.6.0"
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
