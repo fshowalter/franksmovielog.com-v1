@@ -6755,12 +6755,12 @@ gatsby-plugin-sharp@^5.6.0:
     semver "^7.3.8"
     sharp "^0.31.3"
 
-gatsby-plugin-sitemap@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-6.5.0.tgz#c380917691f03a7361c1b23f21cf48ef13ed72f4"
-  integrity sha512-Rgh3V6Gc0HrSGw0jcqrtQZ+SCUqjorfM5/S5kxe6e3QloR2mYLnrPZdZhqyPhDmRy7+BUg0pAgKlN8DW0tUm3g==
+gatsby-plugin-sitemap@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-6.6.0.tgz#6e51f9ffa14eac048dcb76aa4bc1f261bc050082"
+  integrity sha512-VtaoQMDGRBnySNetbgXcszt3w5B8MyTzJXXzUu5v6ljIwMoHvU9xVbheAG0OOUXsBO/RXag2ZqhLeV7/6rLj6g==
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.20.13"
     common-tags "^1.8.2"
     minimatch "^3.1.2"
     sitemap "^7.1.1"
