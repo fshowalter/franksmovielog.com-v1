@@ -6,7 +6,7 @@ import { gutterWidth, POSTER_WIDTH, size } from "../../styles/sizes.css";
 export const posterStyle = style({
   maxWidth: POSTER_WIDTH,
   margin: "0 auto 16px",
-  display: "block",
+  display: "block !important",
 
   "@media": {
     [minMediaQuery("tablet")]: {
