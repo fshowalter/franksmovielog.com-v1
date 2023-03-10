@@ -3373,23 +3373,6 @@
     media-query-parser "^2.0.2"
     outdent "^0.8.0"
 
-"@vanilla-extract/css@^1.9.5":
-  version "1.9.5"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.9.5.tgz#c5361c04045e6f01502564c2fb6b82177b97f6bc"
-  integrity sha512-aVSv6q24zelKRtWx/l9yshU3gD1uCDMZ2ZGcIiYnAcPfyLryrG/1X5DxtyiPKcyI/hZWoteHofsN//2q9MvzOA==
-  dependencies:
-    "@emotion/hash" "^0.9.0"
-    "@vanilla-extract/private" "^1.0.3"
-    ahocorasick "1.0.2"
-    chalk "^4.1.1"
-    css-what "^5.0.1"
-    cssesc "^3.0.0"
-    csstype "^3.0.7"
-    deep-object-diff "^1.1.9"
-    deepmerge "^4.2.2"
-    media-query-parser "^2.0.2"
-    outdent "^0.8.0"
-
 "@vanilla-extract/integration@^6.0.0", "@vanilla-extract/integration@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.2.0.tgz#b45927c5e9efb78a8c3c66ccc2aacdfb996a6b9e"
