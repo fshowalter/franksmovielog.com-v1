@@ -1,6 +1,6 @@
 {
 "viewingYear": "2023",
-"totalViewingCount": 24,
+"totalViewingCount": 25,
 "stats": [
 {
 "name": "Blu-ray",
@@ -24,6 +24,10 @@
 },
 {
 "name": "VHS-rip",
+"viewingCount": 1
+},
+{
+"name": "DVD",
 "viewingCount": 1
 }
 ]
