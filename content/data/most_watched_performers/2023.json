@@ -4,11 +4,22 @@
 {
 "imdbId": "nm0000007",
 "fullName": "Humphrey Bogart",
-"viewingCount": 3,
+"viewingCount": 4,
 "viewing_sequence_ids": [
 1443,
 1465,
-1466
+1466,
+1468
+]
+},
+{
+"imdbId": "nm0642180",
+"fullName": "Henry O'Neill",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+1465,
+1466,
+1468
 ]
 },
 {
@@ -27,6 +38,15 @@
 "viewing_sequence_ids": [
 1441,
 1463
+]
+},
+{
+"imdbId": "nm0282390",
+"fullName": "Helen Flint",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+1443,
+1468
 ]
 },
 {
@@ -72,24 +92,6 @@
 "viewing_sequence_ids": [
 1444,
 1457
-]
-},
-{
-"imdbId": "nm3064027",
-"fullName": "You-Hsing Lai",
-"viewingCount": 2,
-"viewing_sequence_ids": [
-1444,
-1457
-]
-},
-{
-"imdbId": "nm0492342",
-"fullName": "John Phillip Law",
-"viewingCount": 2,
-"viewing_sequence_ids": [
-1450,
-1455
 ]
 }
 ]

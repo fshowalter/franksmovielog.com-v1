@@ -1,6 +1,6 @@
 {
 "viewingYear": "2023",
-"totalViewingCount": 38,
+"totalViewingCount": 40,
 "stats": [
 {
 "name": "Blu-ray",
@@ -8,7 +8,7 @@
 },
 {
 "name": "Watch TCM",
-"viewingCount": 7
+"viewingCount": 8
 },
 {
 "name": "iTunes",
@@ -28,6 +28,10 @@
 },
 {
 "name": "DVD",
+"viewingCount": 1
+},
+{
+"name": "Amazon",
 "viewingCount": 1
 }
 ]
