@@ -6801,10 +6801,10 @@ gatsby-parcel-config@^1.9.0:
     "@parcel/transformer-js" "2.8.3"
     "@parcel/transformer-json" "2.8.3"
 
-gatsby-plugin-catch-links@^5.8.0:
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-5.8.0.tgz#eabc1448e85dae421ce982b6cab94116d4b892ed"
-  integrity sha512-6zzoQcKgRHPktVx6tBLLNMx3pkQ0svWPSvQoQvVQ33Ip5JYbRtraGOc/p4+TusYEvn+REeLHWR0O+fz9UlSxEg==
+gatsby-plugin-catch-links@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-5.9.0.tgz#851f0982962ea985b05172be0b429ec66e92f37a"
+  integrity sha512-u54jKQhWrTn0TDIQlb60SvMvp2EI5NMf6WIctSO6EDEOWYBH90vzdQHlzxJ2dudgvqN9/hk/mmsHKCiCrr0Pyg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     escape-string-regexp "^1.0.5"
