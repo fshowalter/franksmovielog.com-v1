@@ -1,6 +1,6 @@
 {
 "viewingYear": "2023",
-"totalViewingCount": 43,
+"totalViewingCount": 44,
 "stats": [
 {
 "name": "Blu-ray",
@@ -32,6 +32,10 @@
 },
 {
 "name": "Amazon",
+"viewingCount": 1
+},
+{
+"name": "Arrow Player",
 "viewingCount": 1
 }
 ]
