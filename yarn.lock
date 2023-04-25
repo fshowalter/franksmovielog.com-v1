@@ -10771,10 +10771,10 @@ postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
-postcss-sort-media-queries@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-sort-media-queries/-/postcss-sort-media-queries-5.0.1.tgz#602cd3cca0c32281c9813b4f170eed62e8125e46"
-  integrity sha512-ApYAxBoJuEL1uwlc4r2Nf1OqltWN6Y/hbH9OQA3MItMMo6WoyctFTdht9+SzB6S26SKvNATOjS7ezC5Uzin6QQ==
+postcss-sort-media-queries@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-sort-media-queries/-/postcss-sort-media-queries-5.1.0.tgz#00d76d52c98fa2092112faa8ba5e4f13443289ab"
+  integrity sha512-rFreOvLh4m2s3ADxt3PzW4y3bvbAWNrwj6dGZnQb1BCCa+k13E/0jE6QWOfHZdH+G5PIyu5y1Ku+T1+mYFcM3Q==
   dependencies:
     sort-css-media-queries "2.2.0"
 
