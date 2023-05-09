@@ -1,7 +1,7 @@
 import { allTimeStatsQuery } from "./allTimeStatsQuery";
 import { reviewedMovieQuery } from "./reviewedMovieQuery";
 import { statsForYearQuery } from "./statsForYearQuery";
-import { viewingsWithReviewsQuery } from "./viewingsWithReviewsQuery";
+import { viewingsWithReviewOrNoteQuery } from "./viewingsWithReviewOrNoteQuery";
 import { watchlistEntityQuery } from "./watchlistEntityQuery";
 
 import type { CreateResolversArgs } from "gatsby";
@@ -10,7 +10,7 @@ export function createResolvers({ createResolvers }: CreateResolversArgs) {
   [
     allTimeStatsQuery,
     statsForYearQuery,
-    viewingsWithReviewsQuery,
+    viewingsWithReviewOrNoteQuery,
     reviewedMovieQuery,
     watchlistEntityQuery,
   ].forEach((resolver) => void createResolvers(resolver));

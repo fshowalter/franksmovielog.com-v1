@@ -1,5 +1,5 @@
 const query = `{
-  viewings: viewingsWithReviews(sort: {sequence: DESC}, limit: 25) {
+  viewings: viewingsWithReviewOrNote(sort: {sequence: DESC}, limit: 25) {
     sequence
     date: viewingDate
     title

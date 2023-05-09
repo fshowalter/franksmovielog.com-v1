@@ -9,17 +9,18 @@ import type {
   GatsbyResolveInfo,
 } from "../type-definitions";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
+import { MarkdownNode } from "./MarkdownRemark";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 import {
   findReviewedMovieNode,
   reviewedMovieFieldResolver,
 } from "./fieldResolvers/reviewedMovieFieldResolver";
-import { MarkdownNode } from "./MarkdownRemark";
 
 export interface ViewingNode extends GatsbyNode {
   imdbId: string;
   sequence: number;
   mediumNotes: string | null;
+  viewingDate: string;
 }
 
 interface IHastNode extends Node {
@@ -151,6 +152,66 @@ export const commonViewingFields = {
         info,
         args
       );
+    },
+  },
+  hasReviewOrNote: {
+    type: "Boolean!",
+    resolve: async (
+      source: ViewingNode,
+      args: Record<string, unknown>,
+      context: GatsbyNodeContext,
+      info: GatsbyResolveInfo
+    ) => {
+      const reviewedMovieNode = await findReviewedMovieNode(
+        source.imdbId,
+        context.nodeModel
+      );
+
+      if (!reviewedMovieNode) {
+        return false;
+      }
+
+      const reviewNode = await resolveFieldForNode<MarkdownNode>(
+        "review",
+        reviewedMovieNode,
+        context,
+        info,
+        args
+      );
+
+      if (!reviewNode) {
+        return false;
+      }
+
+      const reviewDate = await resolveFieldForNode<string>(
+        "date",
+        reviewNode,
+        context,
+        info,
+        { formatString: "YYYY-MM-DD" }
+      );
+
+      if (!reviewDate) {
+        return false;
+      }
+
+      if (reviewDate === source.viewingDate) {
+        return true;
+      }
+
+      const viewingNoteNode = await resolveFieldForNode<MarkdownNode>(
+        "viewingNote",
+        source,
+        context,
+        info,
+        args
+      );
+
+      if (viewingNoteNode) {
+        return true;
+      }
+
+      return false;
     },
   },
   poster: posterFieldResolver,

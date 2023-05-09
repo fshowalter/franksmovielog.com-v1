@@ -1,9 +1,9 @@
 import { SchemaNames } from "../createSchemaCustomization/schemaNames";
 import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
-export const viewingsWithReviewsQuery = {
+export const viewingsWithReviewOrNoteQuery = {
   Query: {
-    viewingsWithReviews: {
+    viewingsWithReviewOrNote: {
       type: `[${SchemaNames.ViewingWithReview}!]!`,
       args: {
         limit: "Int",
@@ -29,7 +29,7 @@ export const viewingsWithReviewsQuery = {
         const { entries } = await context.nodeModel.findAll({
           type: SchemaNames.ViewingsJson,
           query: {
-            filter: { reviewedMovie: { id: { ne: null } } },
+            filter: { hasReviewOrNote: { eq: true } },
             limit: limit,
             skip: skip,
             sort: { fields: fields, order: order },
