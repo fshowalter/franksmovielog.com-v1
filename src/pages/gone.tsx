@@ -34,7 +34,10 @@ export const pageQuery = graphql`
     still: file(absolutePath: { regex: "/stills/gone.png$/" }) {
       ...StillSplash
     }
-    latestViewings: viewingsWithReviews(sort: { sequence: DESC }, limit: 4) {
+    latestViewings: viewingsWithReviewOrNote(
+      sort: { sequence: DESC }
+      limit: 4
+    ) {
       reviewedMovie {
         ...StillListMovie
       }

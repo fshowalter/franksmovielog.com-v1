@@ -3,7 +3,7 @@ import path from "path";
 
 const query = `#graphql
 {
-  viewings: viewingsWithReviews {
+  viewings: viewingsWithReviewOrNote {
     id
   }
 }

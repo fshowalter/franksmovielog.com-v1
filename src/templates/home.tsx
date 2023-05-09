@@ -77,7 +77,7 @@ export default function HomeTemplate({
 
 export const pageQuery = graphql`
   query HomeTemplate($skip: Int!, $limit: Int!) {
-    viewings: viewingsWithReviews(
+    viewings: viewingsWithReviewOrNote(
       sort: { sequence: DESC }
       limit: $limit
       skip: $skip
