@@ -24,22 +24,23 @@
 ]
 },
 {
+"imdbId": "nm0000012",
+"fullName": "Bette Davis",
+"viewingCount": 4,
+"viewing_sequence_ids": [
+1469,
+1474,
+1478,
+1480
+]
+},
+{
 "imdbId": "nm0570451",
 "fullName": "Frank McHugh",
 "viewingCount": 3,
 "viewing_sequence_ids": [
 1463,
 1466,
-1478
-]
-},
-{
-"imdbId": "nm0000012",
-"fullName": "Bette Davis",
-"viewingCount": 3,
-"viewing_sequence_ids": [
-1469,
-1474,
 1478
 ]
 },
@@ -71,6 +72,15 @@
 ]
 },
 {
+"imdbId": "nm0847939",
+"fullName": "Lyle Talbot",
+"viewingCount": 2,
+"viewing_sequence_ids": [
+1441,
+1480
+]
+},
+{
 "imdbId": "nm0282390",
 "fullName": "Helen Flint",
 "viewingCount": 2,
@@ -86,15 +96,6 @@
 "viewing_sequence_ids": [
 1443,
 1465
-]
-},
-{
-"imdbId": "nm0910979",
-"fullName": "Lung-Wei Wang",
-"viewingCount": 2,
-"viewing_sequence_ids": [
-1444,
-1457
 ]
 }
 ]

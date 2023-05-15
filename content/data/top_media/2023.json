@@ -1,6 +1,6 @@
 {
 "viewingYear": "2023",
-"totalViewingCount": 50,
+"totalViewingCount": 52,
 "stats": [
 {
 "name": "Blu-ray",
@@ -8,7 +8,7 @@
 },
 {
 "name": "Watch TCM",
-"viewingCount": 14
+"viewingCount": 15
 },
 {
 "name": "iTunes",
@@ -17,6 +17,10 @@
 {
 "name": "4k UHD Blu-ray",
 "viewingCount": 5
+},
+{
+"name": "Amazon",
+"viewingCount": 2
 },
 {
 "name": "HBO Max",
@@ -28,10 +32,6 @@
 },
 {
 "name": "DVD",
-"viewingCount": 1
-},
-{
-"name": "Amazon",
 "viewingCount": 1
 },
 {
