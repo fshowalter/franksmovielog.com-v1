@@ -6826,10 +6826,10 @@ gatsby-plugin-postcss@^6.9.0:
     "@babel/runtime" "^7.20.13"
     postcss-loader "^7.1.0"
 
-gatsby-plugin-sharp@^5.9.0:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.9.0.tgz#72b97bb27a4d4c936621a0c7f1eda77f4715b4da"
-  integrity sha512-RXiRmuAwRZf7uqzoqBoG+7qbWWXCuf359Td+yKBLC7M+ktsfw9FMfivS6PpY6v+XmEztO8so1n+Sx+nOU5FScw==
+gatsby-plugin-sharp@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.10.0.tgz#abd9fd8d761a12924fb5876a04609efc130899d4"
+  integrity sha512-hG95JQrpByH8w7Ey25zlFsvgyi99NFmk1+0hmKjMkfh43BxNsTuvhcB2kcbcO2FaZdO9OK89pilRGbLaeA0gew==
   dependencies:
     "@babel/runtime" "^7.20.13"
     async "^3.2.4"
@@ -6837,12 +6837,12 @@ gatsby-plugin-sharp@^5.9.0:
     debug "^4.3.4"
     filenamify "^4.3.0"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.9.0"
-    gatsby-plugin-utils "^4.9.0"
+    gatsby-core-utils "^4.10.0"
+    gatsby-plugin-utils "^4.10.0"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
-    semver "^7.3.8"
-    sharp "^0.31.3"
+    semver "^7.5.0"
+    sharp "^0.32.1"
 
 gatsby-plugin-sitemap@^6.9.0:
   version "6.9.0"
