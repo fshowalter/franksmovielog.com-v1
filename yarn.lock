@@ -97,16 +97,7 @@
     eslint-visitor-keys "^2.1.0"
     semver "^6.3.0"
 
-"@babel/generator@^7.14.0", "@babel/generator@^7.20.7", "@babel/generator@^7.7.2":
-  version "7.20.7"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.20.7.tgz#f8ef57c8242665c5929fe2e8d82ba75460187b4a"
-  integrity sha512-7wqMOJq8doJMZmP4ApXTzLxSr7+oO2jroJURrVEp6XShrQUObV8Tq/D0NCcoYg2uHqUrjzO0zwBjoYzelxK+sw==
-  dependencies:
-    "@babel/types" "^7.20.7"
-    "@jridgewell/gen-mapping" "^0.3.2"
-    jsesc "^2.5.1"
-
-"@babel/generator@^7.20.14":
+"@babel/generator@^7.14.0", "@babel/generator@^7.20.14", "@babel/generator@^7.20.7", "@babel/generator@^7.7.2":
   version "7.20.14"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.20.14.tgz#9fa772c9f86a46c6ac9b321039400712b96f64ce"
   integrity sha512-AEmuXHdcD3A52HHXxaTmYlb8q/xMEhoRP67B3T4Oq7lbmSoqroMZzjnGj3+i1io3pdnF8iBYVu4Ilj+c4hBxYg==
@@ -2123,10 +2114,10 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
   integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
 
-"@jridgewell/trace-mapping@^0.3.12", "@jridgewell/trace-mapping@^0.3.14", "@jridgewell/trace-mapping@^0.3.15", "@jridgewell/trace-mapping@^0.3.17", "@jridgewell/trace-mapping@^0.3.9":
-  version "0.3.17"
-  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.17.tgz#793041277af9073b0951a7fe0f0d8c4c98c36985"
-  integrity sha512-MCNzAp77qzKca9+W/+I0+sEpaUnZoeasnghNeVc41VZCEKaCH73Vq3BZZ/SzWIgrqE4H4ceI+p+b6C0mHf9T4g==
+"@jridgewell/trace-mapping@^0.3.12", "@jridgewell/trace-mapping@^0.3.14", "@jridgewell/trace-mapping@^0.3.15", "@jridgewell/trace-mapping@^0.3.17", "@jridgewell/trace-mapping@^0.3.18", "@jridgewell/trace-mapping@^0.3.9":
+  version "0.3.18"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.18.tgz#25783b2086daf6ff1dcb53c9249ae480e4dd4cd6"
+  integrity sha512-w+niJYzMHdd7USdiH2U6869nqhD2nbfZXND5Yp93qIbEmnDNk7PD48o+YchRVpzMU7M6jVCbenTR7PA1FLQ9pA==
   dependencies:
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
@@ -4903,10 +4894,10 @@ cosmiconfig@^8.1.3:
     parse-json "^5.0.0"
     path-type "^4.0.0"
 
-create-gatsby@^3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-3.9.0.tgz#29f3505350e4dcac6ba4878f1f47a9ba0a3245f5"
-  integrity sha512-44BJv3u+0yM0DaWH4iw98yaFxHN47qO0iReHB3R/ux1WKula9BkPm2q+qw/ASz1rT4L4Ar9Sm7xNseg7ptQRqg==
+create-gatsby@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-3.10.0.tgz#eb246547db8cce0934dc2b1fa07e7fd1e09ad099"
+  integrity sha512-ZKkibIo8B75yxw0/IobjMITZKdZJ+m24mbFY/nLwrMcN6RfkZ98Pa4DNTmUIyfA4AFF4nZCDgVkl+3sfoNk8iQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
 
@@ -6644,10 +6635,10 @@ functions-have-names@^1.2.2:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
-gatsby-cli@^5.7.0, gatsby-cli@^5.9.0:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-5.9.0.tgz#8c7f4695c6aa2d18458a2b9d037d185323e180f9"
-  integrity sha512-yuUF5k6oqTdo81fhak/gaOQcFtc3FZtIEs8E2egcn+u5XlPXSa6/6opjj2jon/qc6A42KEQ3osBQk2eUjujrhA==
+gatsby-cli@^5.10.0, gatsby-cli@^5.9.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-5.10.0.tgz#f3971ce42afa6cae3139baab13e3b6bf6f5685e3"
+  integrity sha512-k8Z5l+2pAzf09/w1YgODAExjJKnZCd8WON6pxsHV1nht9I+zXE3sqB5FbsitckufaHhoOer6ezsQjxLVAe4+mA==
   dependencies:
     "@babel/code-frame" "^7.18.6"
     "@babel/core" "^7.20.12"
@@ -6657,7 +6648,7 @@ gatsby-cli@^5.7.0, gatsby-cli@^5.9.0:
     "@babel/runtime" "^7.20.13"
     "@babel/template" "^7.20.7"
     "@babel/types" "^7.20.7"
-    "@jridgewell/trace-mapping" "^0.3.17"
+    "@jridgewell/trace-mapping" "^0.3.18"
     "@types/common-tags" "^1.8.1"
     better-opn "^2.1.1"
     boxen "^5.1.2"
@@ -6665,16 +6656,16 @@ gatsby-cli@^5.7.0, gatsby-cli@^5.9.0:
     clipboardy "^2.3.0"
     common-tags "^1.8.2"
     convert-hrtime "^3.0.0"
-    create-gatsby "^3.9.0"
+    create-gatsby "^3.10.0"
     envinfo "^7.8.1"
     execa "^5.1.1"
     fs-exists-cached "^1.0.0"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.9.0"
-    gatsby-telemetry "^4.9.0"
+    gatsby-core-utils "^4.10.0"
+    gatsby-telemetry "^4.10.0"
     hosted-git-info "^3.0.8"
     is-valid-path "^0.1.1"
-    joi "^17.9.1"
+    joi "^17.9.2"
     lodash "^4.17.21"
     node-fetch "^2.6.9"
     opentracing "^0.14.7"
@@ -6683,7 +6674,7 @@ gatsby-cli@^5.7.0, gatsby-cli@^5.9.0:
     prompts "^2.4.2"
     redux "4.2.1"
     resolve-cwd "^3.0.0"
-    semver "^7.3.8"
+    semver "^7.5.0"
     signal-exit "^3.0.7"
     stack-trace "^0.0.10"
     strip-ansi "^6.0.1"
@@ -6959,10 +6950,10 @@ gatsby-source-filesystem@^5.10.0:
     valid-url "^1.0.9"
     xstate "^4.37.2"
 
-gatsby-telemetry@^4.9.0:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-4.9.0.tgz#49ee1ff1fff03a5127d708bbaa16bed9f57c3280"
-  integrity sha512-sz2Zsr/6T6bIG5xamiPa4hG8SYsFrhWlLc0skF5UNmk9rPXrIJpxqCkaR8KPFpuxC+FufGSFcTnll9hOF3vJ9A==
+gatsby-telemetry@^4.10.0, gatsby-telemetry@^4.9.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-4.10.0.tgz#a49c204d6b66259c1b26f640922f049e6c9cc7a2"
+  integrity sha512-t3QRGZdRWIxMQ3yHtdON8KgihkMgq1VROjRb+fqzJtHRFIQu8wsrpXCrYmaYv2oWoWH9fWymMu5PhrSywjGuGQ==
   dependencies:
     "@babel/code-frame" "^7.18.6"
     "@babel/runtime" "^7.20.13"
@@ -6971,7 +6962,7 @@ gatsby-telemetry@^4.9.0:
     boxen "^5.1.2"
     configstore "^5.0.1"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.9.0"
+    gatsby-core-utils "^4.10.0"
     git-up "^7.0.0"
     is-docker "^2.2.1"
     lodash "^4.17.21"
@@ -8764,18 +8755,7 @@ jest@^29.5.0:
     import-local "^3.0.2"
     jest-cli "^29.5.0"
 
-joi@^17.7.0, joi@^17.9.1:
-  version "17.9.1"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.9.1.tgz#74899b9fa3646904afa984a11df648eca66c9018"
-  integrity sha512-FariIi9j6QODKATGBrEX7HZcja8Bsh3rfdGYy/Sb65sGlZWK/QWesU1ghk7aJWDj95knjXlQfSmzFSPPkLVsfw==
-  dependencies:
-    "@hapi/hoek" "^9.0.0"
-    "@hapi/topo" "^5.0.0"
-    "@sideway/address" "^4.1.3"
-    "@sideway/formula" "^3.0.1"
-    "@sideway/pinpoint" "^2.0.0"
-
-joi@^17.9.2:
+joi@^17.7.0, joi@^17.9.2:
   version "17.9.2"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.9.2.tgz#8b2e4724188369f55451aebd1d0b1d9482470690"
   integrity sha512-Itk/r+V4Dx0V3c7RLFdRh12IOjySm2/WGPMubBT92cQvRfYZhPM2W0hZlctjj72iES8jsRCwp7S/cRmWBnJ4nw==
