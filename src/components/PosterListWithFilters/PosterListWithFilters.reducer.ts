@@ -87,6 +87,7 @@ export enum ActionType {
   FILTER_PERFORMER = "FILTER_PERFORMER",
   FILTER_WRITER = "FILTER_WRITER",
   FILTER_COLLECTION = "FILTER_COLLECTION",
+  FILTER_VENUE = "FILTER_VENUE",
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
   TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
@@ -127,9 +128,16 @@ interface FilterWriterAction {
   value: string;
 }
 
-/** Action to filter by venue. */
+/** Action to filter by medium. */
 interface FilterMediumAction {
   type: ActionType.FILTER_MEDIUM;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by venue. */
+interface FilterVenueAction {
+  type: ActionType.FILTER_VENUE;
   /** The value to filter on. */
   value: string;
 }
@@ -146,7 +154,6 @@ interface FilterGradeAction {
   type: ActionType.FILTER_GRADE;
   /** The values to filter on. */
   values: [number, number];
-  includeNonReviewed: boolean;
 }
 
 /** Action to filter by release year. */
@@ -188,6 +195,7 @@ export type Action =
   | FilterReleaseYearAction
   | FilterViewingYearAction
   | FilterMediumAction
+  | FilterVenueAction
   | FilterGradeAction
   | FilterGenresAction
   | SortAction
@@ -350,6 +358,30 @@ export function reducer(state: State, action: Action): State {
         filteredItems,
       };
     }
+    case ActionType.FILTER_VENUE: {
+      filters = {
+        ...state.filters,
+        venue: (item: IPosterListWithFiltersItem) => {
+          if (action.value === "All") {
+            return true;
+          }
+
+          return item.venue === action.value;
+        },
+      };
+      filteredItems = sortItems(
+        applyFilters<IPosterListWithFiltersItem>({
+          collection: state.allItems,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredItems,
+      };
+    }
     case ActionType.FILTER_RELEASE_YEAR: {
       filters = {
         ...state.filters,
@@ -425,7 +457,7 @@ export function reducer(state: State, action: Action): State {
         grade: (item: IPosterListWithFiltersItem) => {
           const gradeValue = item.gradeValue;
           if (!gradeValue) {
-            return action.includeNonReviewed;
+            return false;
           }
           return (
             gradeValue >= action.values[0] && gradeValue <= action.values[1]

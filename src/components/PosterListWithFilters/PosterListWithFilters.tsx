@@ -144,6 +144,7 @@ export function PosterListWithFilters({
   items: readonly IPosterListWithFiltersItem[];
   children: React.ReactNode;
   distinctMedia?: readonly string[];
+  distinctVenues?: readonly string[];
   distinctViewingYears?: readonly string[];
   distinctReleaseYears: readonly string[];
   distinctGenres?: readonly string[];
@@ -284,11 +285,10 @@ export function PosterListWithFilters({
               {distinctGrades && (
                 <GradeInput
                   label="Grade"
-                  onGradeChange={(values, includeNonReviewed) =>
+                  onGradeChange={(values) =>
                     dispatch({
                       type: ActionType.FILTER_GRADE,
                       values,
-                      includeNonReviewed,
                     })
                   }
                 />
@@ -494,8 +494,8 @@ export interface IPosterListWithFiltersItem {
   sortTitle: string;
   genres?: readonly string[];
   slug: string | null;
-  grade: string | null;
-  gradeValue: number | null;
+  grade?: string;
+  gradeValue?: number;
   directorNames?: readonly string[];
   performerNames?: readonly string[];
   writerNames?: readonly string[];

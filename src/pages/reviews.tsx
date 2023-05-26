@@ -3,14 +3,14 @@ import { Box } from "../components/Box";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Link } from "../components/Link";
 import { PageTitle } from "../components/PageTitle";
-import { PosterListWithFilters } from "../components/PosterListWithFilters";
+import { ReviewIndex } from "../components/ReviewIndex";
 import { Spacer } from "../components/Spacer";
 
 export function Head(): JSX.Element {
   return (
     <HeadBuilder
       pageTitle="Reviews"
-      description="A sortable and filterable list of every movie I've watched and reviewed since 2012."
+      description="A sortable and filterable list of every movie I've reviewed since 2012."
       image={null}
       article={false}
     />
@@ -26,14 +26,11 @@ export default function ReviewsIndexPage({
   data: Queries.ReviewsIndexPageQuery;
 }): JSX.Element {
   return (
-    <PosterListWithFilters
-      items={data.viewing.nodes}
-      distinctGenres={data.viewing.genres}
-      distinctGrades={data.viewing.grades}
-      distinctMedia={data.viewing.media}
-      distinctReleaseYears={data.viewing.releaseYears}
-      distinctViewingYears={data.viewing.viewingYears}
-      initialSort="viewing-date-desc"
+    <ReviewIndex
+      items={data.review.nodes}
+      distinctGenres={data.review.genres}
+      distinctReleaseYears={data.review.releaseYears}
+      distinctReviewYears={data.review.reviewYears}
     >
       <PageTitle textAlign="center">Reviews</PageTitle>
       <Box as="q" display="block" textAlign="center" color="subtle">
@@ -44,13 +41,9 @@ export default function ReviewsIndexPage({
       <Box color="subtle">
         <Spacer axis="vertical" size={16} />
         <p>
-          Since 2012, I&apos;ve watched{" "}
+          Since 2012, I&apos;ve published{" "}
           <Box as="span" color="emphasis">
-            {data.viewing.nodes.length.toLocaleString()}
-          </Box>{" "}
-          movies and published{" "}
-          <Box as="span" color="emphasis">
-            {data.reviews?.totalCount.toLocaleString()}
+            {data.review.nodes.length.toLocaleString()}
           </Box>{" "}
           reviews.
         </p>
@@ -72,39 +65,19 @@ export default function ReviewsIndexPage({
           <Link to="/reviews/overrated/">overrated disappointments</Link>.
         </p>
       </Box>
-    </PosterListWithFilters>
+    </ReviewIndex>
   );
 }
 
 export const pageQuery = graphql`
   query ReviewsIndexPage {
-    reviews: reviewStatsJson(reviewYear: { eq: "all" }) {
-      totalCount: reviewsCreated
-    }
-    viewing: allViewingsJson(sort: { sequence: DESC }) {
+    review: allReviewedMoviesJson(sort: { sortTitle: ASC }) {
       nodes {
-        sequence
-        viewingYear
-        viewingDate(formatString: "ddd MMM D, YYYY")
-        releaseDate
-        title
-        medium
-        venue
-        year
-        sortTitle
-        slug
-        grade
-        gradeValue
-        genres
-        poster {
-          ...PosterListPoster
-        }
+        ...ReviewIndexItem
       }
-      media: distinct(field: { medium: SELECT })
-      viewingYears: distinct(field: { viewingYear: SELECT })
+      reviewYears: distinct(field: { reviewYear: SELECT })
       releaseYears: distinct(field: { year: SELECT })
       genres: distinct(field: { genres: SELECT })
-      grades: distinct(field: { genres: SELECT })
     }
   }
 `;
