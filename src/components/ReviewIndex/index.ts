@@ -1,1 +1,0 @@
-export { ReviewIndex } from "./ReviewIndex";

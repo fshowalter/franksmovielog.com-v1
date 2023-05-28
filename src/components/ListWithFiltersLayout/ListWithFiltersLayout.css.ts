@@ -20,3 +20,14 @@ export const stickyListInfoStyle = style({
     },
   },
 });
+
+export const stickyGroupHeaderStyle = style({
+  top: "2rem",
+  position: "sticky",
+  "@media": {
+    [minMediaQuery("desktop")]: {
+      paddingTop: 0,
+      top: "165px",
+    },
+  },
+});

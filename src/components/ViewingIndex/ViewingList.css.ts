@@ -1,34 +1,33 @@
 import { style } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 
-export const stickyHeaderStyle = style({
-  top: "2rem",
-  position: "sticky",
+export const slugTypographyStyle = style({
+  fontSize: ".875rem",
+  lineHeight: "1rem",
+  letterSpacing: "0.5px",
+});
+
+export const titleTypographyStyle = style({
+  fontSize: "1rem",
+  lineHeight: "1.5rem",
+});
+
+export const posterStyle = style({
+  borderRadius: "4px",
+  maxWidth: "64px",
+  minWidth: "64px",
+
   "@media": {
-    [minMediaQuery("desktop")]: {
-      paddingTop: 0,
-      top: "165px",
+    [minMediaQuery("tablet")]: {
+      // maxWidth: "80px",
+      // minWidth: "80px",
     },
   },
 });
 
-export const stickyFiltersStyle = style({
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      position: "sticky",
-      top: "155px",
-    },
-  },
-});
-
-export const stickyListInfoStyle = style({
-  top: "0",
-  position: "sticky",
-  zIndex: "1000",
-  "@media": {
-    [minMediaQuery("desktop")]: {
-      top: "129px",
-    },
+export const listItemStyle = style({
+  ":last-of-type": {
+    boxShadow: "none",
   },
 });
 

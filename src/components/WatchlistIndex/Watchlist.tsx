@@ -1,14 +1,16 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
+import { Grade } from "../Grade";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { Spacer } from "../Spacer";
 import {
-  listItemStyle,
+  gridStyle,
   posterStyle,
+  showTitleOnMobileOnlyStyle,
   slugTypographyStyle,
   titleTypographyStyle,
-} from "./CalendarPosterList.css";
+} from "./Watchlist.css";
 
 function MediumAndVenue({
   medium,
@@ -112,32 +114,39 @@ function Title({
   );
 }
 
-export function CalendarPoster({
+export function Poster({
   slug,
   image,
   title,
   year,
+  grade,
+  date,
   venue,
   medium,
+  details,
+  showTitle = true,
 }: {
   slug?: string | null;
   image: IGraphqlImage;
   title: string;
   year: number;
+  grade?: string | null;
+  date?: string;
   venue?: string | null;
   medium?: string | null;
+  showTitle?: boolean;
+  details?: React.ReactNode;
 }): JSX.Element {
   return (
     <Box
       as="li"
-      flexDirection="row"
-      columnGap={{ default: 16, tablet: 24 }}
+      flexDirection={{ default: "row", tablet: "column" }}
+      columnGap={24}
+      backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
+      paddingX={{ default: "gutter", tablet: 0 }}
+      paddingY={{ default: 16, tablet: 0 }}
       alignItems="flex-start"
       display="flex"
-      paddingRight="gutter"
-      boxShadow="borderBottom"
-      paddingBottom={16}
-      className={listItemStyle}
     >
       <Image
         slug={slug}
@@ -145,10 +154,10 @@ export function CalendarPoster({
         title={title}
         year={year}
         flexShrink={0}
-        boxShadow="borderAll"
       />
-      <Box flexGrow={1}>
-        <Box>
+      <Box flexGrow={1} width={{ tablet: "full" }}>
+        <Box className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}>
+          <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
           <Title title={title} year={year} slug={slug} />
           <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
         </Box>
@@ -160,35 +169,51 @@ export function CalendarPoster({
           fontWeight="light"
           letterSpacing={0.5}
         >
-          <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
+          {grade && (
+            <Box display="flex" flexDirection="column" justifyContent="center">
+              <Grade grade={grade} height={16} />
+              <Spacer axis="vertical" size={8} />
+            </Box>
+          )}
+          {!grade && (
+            <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
+          )}
           <Box>
-            <MediumAndVenue medium={medium} venue={venue} />
+            {date && (
+              <>
+                <Box>{date}</Box>
+                <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
+              </>
+            )}
+            {(medium || venue) && (
+              <>
+                <MediumAndVenue medium={medium} venue={venue} />
+              </>
+            )}
           </Box>
         </Box>
+        {details && details}
       </Box>
     </Box>
   );
 }
 
-export function CalendarPosterList({
-  children,
-  ...rest
-}: IBoxProps): JSX.Element {
+export function PosterList({ children, ...rest }: IBoxProps): JSX.Element {
   return (
-    <Box as="ol" paddingX={0} {...rest}>
+    <Box as="ol" className={gridStyle} paddingX={0} {...rest}>
       {children}
     </Box>
   );
 }
 
 export const query = graphql`
-  fragment CalendarPoster on File {
+  fragment PosterListPoster on File {
     childImageSharp {
       gatsbyImageData(
         layout: CONSTRAINED
         formats: [JPG, AVIF]
         quality: 80
-        width: 80
+        width: 200
         placeholder: NONE
       )
     }

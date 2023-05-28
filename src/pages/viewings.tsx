@@ -3,7 +3,7 @@ import { Box } from "../components/Box";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { PageTitle } from "../components/PageTitle";
 import { Spacer } from "../components/Spacer";
-import { ViewingsPage } from "../components/ViewingsPage";
+import { ViewingIndex } from "../components/ViewingIndex";
 
 export function Head(): JSX.Element {
   return (
@@ -25,7 +25,7 @@ export default function ViewingsIndexPage({
   data: Queries.ViewingsIndexPageQuery;
 }): JSX.Element {
   return (
-    <ViewingsPage
+    <ViewingIndex
       items={data.viewing.nodes}
       distinctGenres={data.viewing.genres}
       distinctMedia={data.viewing.media}
@@ -50,7 +50,7 @@ export default function ViewingsIndexPage({
           movies.
         </p>
       </Box>
-    </ViewingsPage>
+    </ViewingIndex>
   );
 }
 

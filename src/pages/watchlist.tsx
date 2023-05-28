@@ -3,9 +3,9 @@ import { Box } from "../components/Box";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Link } from "../components/Link";
 import { PageTitle } from "../components/PageTitle";
-import { PosterListWithFilters } from "../components/PosterListWithFilters";
 import { Spacer } from "../components/Spacer";
 import { WatchlistEntityTypeLink } from "../components/WatchlistEntityTypeLink";
+import { WatchlistIndex } from "../components/WatchlistIndex";
 import { WatchlistMovieSlug } from "../components/WatchlistMovieSlug";
 
 export function Head(): JSX.Element {
@@ -28,7 +28,7 @@ export default function WatchlistIndexPage({
   data: Queries.WatchlistIndexPageQuery;
 }): JSX.Element {
   return (
-    <PosterListWithFilters
+    <WatchlistIndex
       distinctDirectors={data.watchlist.directors}
       distinctPerformers={data.watchlist.performers}
       distinctWriters={data.watchlist.writers}
@@ -67,7 +67,7 @@ export default function WatchlistIndexPage({
         <WatchlistEntityTypeLink as="li" flex={1} entityType="writer" />
         <WatchlistEntityTypeLink as="li" flex={1} entityType="collection" />
       </Box>
-    </PosterListWithFilters>
+    </WatchlistIndex>
   );
 }
 
