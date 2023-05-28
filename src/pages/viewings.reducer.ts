@@ -10,83 +10,76 @@ import {
 const SHOW_COUNT_DEFAULT = 24;
 
 export type Sort =
+  | "viewing-date-desc"
+  | "viewing-date-asc"
   | "release-date-desc"
   | "release-date-asc"
-  | "review-date-desc"
-  | "review-date-asc"
-  | "title-asc"
-  | "title-desc"
-  | "grade-asc"
-  | "grade-desc";
+  | "title";
 
-function sortItems(items: Queries.ReviewsPageItemFragment[], sortOrder: Sort) {
+function sortItems(items: Queries.ViewingsPageItemFragment[], sortOrder: Sort) {
   const sortMap: Record<
     Sort,
     (
-      a: Queries.ReviewsPageItemFragment,
-      b: Queries.ReviewsPageItemFragment
+      a: Queries.ViewingsPageItemFragment,
+      b: Queries.ViewingsPageItemFragment
     ) => number
   > = {
+    "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
+    "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
     "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
     "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
-    "review-date-desc": (a, b) => sortStringDesc(a.reviewDate, b.reviewDate),
-    "review-date-asc": (a, b) => sortStringAsc(a.reviewDate, b.reviewDate),
-    "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-    "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
-    "grade-asc": (a, b) => sortNumberAsc(a.gradeValue, b.gradeValue),
-    "grade-desc": (a, b) => sortNumberDesc(a.gradeValue, b.gradeValue),
+    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
   };
 
   const comparer = sortMap[sortOrder];
   return items.sort(comparer);
 }
 
-function groupForItem(
-  item: Queries.ReviewsPageItemFragment,
-  sortValue: Sort
-): string {
-  switch (sortValue) {
-    case "release-date-asc":
-    case "release-date-desc": {
-      return item.year.toString();
-    }
-    case "review-date-asc":
-    case "review-date-desc": {
-      return `${item.reviewMonth} ${item.reviewYear}`;
-    }
-    case "grade-asc":
-    case "grade-desc": {
-      return item.grade;
-    }
-    case "title-asc":
-    case "title-desc": {
-      const letter = item.sortTitle.substring(0, 1);
-
-      if (letter.toLowerCase() == letter.toUpperCase()) {
-        return "#";
-      }
-
-      return item.sortTitle.substring(0, 1).toLocaleUpperCase();
-    }
-    // no default
-  }
-}
-
 function groupItems(
-  items: Queries.ReviewsPageItemFragment[],
-  sortValue: Sort
-): Map<string, Queries.ReviewsPageItemFragment[]> {
-  const groupedItems = new Map<string, Queries.ReviewsPageItemFragment[]>();
+  items: Queries.ViewingsPageItemFragment[]
+): Map<string, Map<string, Queries.ViewingsPageItemFragment[]>> {
+  const shortMonthToLong: Record<string, string> = {
+    Jan: "January",
+    Feb: "February",
+    Mar: "March",
+    Apr: "April",
+    May: "May",
+    Jun: "June",
+    Jul: "July",
+    Aug: "August",
+    Sep: "September",
+    Oct: "October",
+    Nov: "November",
+    Dec: "December",
+  };
+
+  const groupedItems = new Map<
+    string,
+    Map<string, Queries.ViewingsPageItemFragment[]>
+  >();
 
   items.map((item) => {
-    const group = groupForItem(item, sortValue);
-    let groupValue = groupedItems.get(group);
+    const monthYearGroup = `${shortMonthToLong[item.viewingMonth]} ${
+      item.viewingYear
+    }`;
+
+    let groupValue = groupedItems.get(monthYearGroup);
 
     if (!groupValue) {
-      groupValue = [];
-      groupedItems.set(group, groupValue);
+      groupValue = new Map<string, Queries.ViewingsPageItemFragment[]>();
+      groupedItems.set(monthYearGroup, groupValue);
     }
-    groupValue.push(item);
+
+    const dayGroup = `${item.viewingDay}-${item.viewingDate}`;
+
+    let dayGroupValue = groupValue.get(dayGroup);
+
+    if (!dayGroupValue) {
+      dayGroupValue = [];
+      groupValue.set(dayGroup, dayGroupValue);
+    }
+
+    dayGroupValue.push(item);
   });
 
   return groupedItems;
@@ -95,7 +88,7 @@ function groupItems(
 function updateFilter(
   currentState: State,
   key: string,
-  handler: (item: Queries.ReviewsPageItemFragment) => boolean
+  handler: (item: Queries.ViewingsPageItemFragment) => boolean
 ): State {
   const filters = {
     ...currentState.filters,
@@ -111,8 +104,7 @@ function updateFilter(
   );
 
   const groupedItems = groupItems(
-    filteredItems.slice(0, currentState.showCount),
-    currentState.sortValue
+    filteredItems.slice(0, currentState.showCount)
   );
 
   return {
@@ -124,10 +116,10 @@ function updateFilter(
 }
 
 export interface State {
-  allItems: Queries.ReviewsPageItemFragment[];
-  filteredItems: Queries.ReviewsPageItemFragment[];
-  groupedItems: Map<string, Queries.ReviewsPageItemFragment[]>;
-  filters: Record<string, (item: Queries.ReviewsPageItemFragment) => boolean>;
+  allItems: Queries.ViewingsPageItemFragment[];
+  filteredItems: Queries.ViewingsPageItemFragment[];
+  filters: Record<string, (item: Queries.ViewingsPageItemFragment) => boolean>;
+  groupedItems: Map<string, Map<string, Queries.ViewingsPageItemFragment[]>>;
   showCount: number;
   sortValue: Sort;
 }
@@ -139,14 +131,14 @@ export function initState({
   items,
   sort,
 }: {
-  items: Queries.ReviewsPageItemFragment[];
+  items: Queries.ViewingsPageItemFragment[];
   sort: Sort;
 }): State {
   return {
     allItems: items,
     filteredItems: items,
-    groupedItems: groupItems(items.slice(0, SHOW_COUNT_DEFAULT), sort),
     filters: {},
+    groupedItems: groupItems(items.slice(0, SHOW_COUNT_DEFAULT)),
     showCount: SHOW_COUNT_DEFAULT,
     sortValue: sort,
   };
@@ -154,10 +146,11 @@ export function initState({
 
 export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
-  FILTER_GRADE = "FILTER_GRADE",
+  FILTER_MEDIUM = "FILTER_MEDIUM",
   FILTER_GENRES = "FILTER_GENRES",
-  FILTER_REVIEW_YEAR = "FILTER_REVIEW_YEAR",
+  FILTER_VIEWING_YEAR = "FILTER_VIEWING_YEAR",
   FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
+  FILTER_VENUE = "FILTER_VENUE",
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
 }
@@ -167,14 +160,19 @@ interface FilterTitleAction {
   value: string;
 }
 
+interface FilterMediumAction {
+  type: ActionType.FILTER_MEDIUM;
+  value: string;
+}
+
+interface FilterVenueAction {
+  type: ActionType.FILTER_VENUE;
+  value: string;
+}
+
 interface FilterGenresAction {
   type: ActionType.FILTER_GENRES;
   values: string[];
-}
-
-interface FilterGradeAction {
-  type: ActionType.FILTER_GRADE;
-  values: [number, number];
 }
 
 interface FilterReleaseYearAction {
@@ -182,8 +180,8 @@ interface FilterReleaseYearAction {
   values: [number, number];
 }
 
-interface FilterReviewYearAction {
-  type: ActionType.FILTER_REVIEW_YEAR;
+interface FilterViewingYearAction {
+  type: ActionType.FILTER_VIEWING_YEAR;
   values: [number, number];
 }
 
@@ -199,8 +197,9 @@ interface ShowMoreAction {
 export type Action =
   | FilterTitleAction
   | FilterReleaseYearAction
-  | FilterReviewYearAction
-  | FilterGradeAction
+  | FilterViewingYearAction
+  | FilterMediumAction
+  | FilterVenueAction
   | FilterGenresAction
   | SortAction
   | ShowMoreAction;
@@ -211,8 +210,8 @@ export type Action =
  * @param action The action to apply.
  */
 export function reducer(state: State, action: Action): State {
-  let filteredItems;
   let groupedItems;
+  let filteredItems;
 
   switch (action.type) {
     case ActionType.FILTER_TITLE: {
@@ -229,29 +228,43 @@ export function reducer(state: State, action: Action): State {
         );
       });
     }
+    case ActionType.FILTER_MEDIUM: {
+      return updateFilter(state, "medium", (item) => {
+        if (action.value === "All") {
+          return true;
+        }
+
+        return item.medium === action.value;
+      });
+    }
+    case ActionType.FILTER_VENUE: {
+      return updateFilter(state, "venue", (item) => {
+        if (action.value === "All") {
+          return true;
+        }
+
+        return item.venue === action.value;
+      });
+    }
     case ActionType.FILTER_GENRES: {
       return updateFilter(state, "genres", (item) => {
         return action.values.every((genre) => item.genres.includes(genre));
       });
     }
-    case ActionType.FILTER_REVIEW_YEAR: {
-      return updateFilter(state, "releaseYear", (item) => {
-        const reviewYear = item.reviewYear;
-        return reviewYear >= action.values[0] && reviewYear <= action.values[1];
-      });
-    }
-    case ActionType.FILTER_GRADE: {
-      return updateFilter(state, "grade", (item) => {
-        const gradeValue = item.gradeValue;
-        return gradeValue >= action.values[0] && gradeValue <= action.values[1];
+    case ActionType.FILTER_VIEWING_YEAR: {
+      return updateFilter(state, "viewingYear", (item) => {
+        const viewingYear = item.viewingYear;
+        if (!viewingYear) {
+          return true;
+        }
+        return (
+          viewingYear >= action.values[0] && viewingYear <= action.values[1]
+        );
       });
     }
     case ActionType.SORT: {
       filteredItems = sortItems(state.filteredItems, action.value);
-      groupedItems = groupItems(
-        filteredItems.slice(0, state.showCount),
-        action.value
-      );
+      groupedItems = groupItems(filteredItems.slice(0, state.showCount));
       return {
         ...state,
         sortValue: action.value,
@@ -262,10 +275,7 @@ export function reducer(state: State, action: Action): State {
     case ActionType.SHOW_MORE: {
       const showCount = state.showCount + SHOW_COUNT_DEFAULT;
 
-      groupedItems = groupItems(
-        state.filteredItems.slice(0, showCount),
-        state.sortValue
-      );
+      groupedItems = groupItems(state.filteredItems.slice(0, showCount));
 
       return {
         ...state,

@@ -7,9 +7,11 @@ import { Spacer } from "../Spacer";
 
 import { foregroundColors } from "../../styles/colors.css";
 import {
+  stickyCalendarStyle,
   stickyFiltersStyle,
   stickyGroupHeaderStyle,
   stickyListInfoStyle,
+  subListItemStyle,
 } from "./ListWithFiltersLayout.css";
 
 function ListInfo({
@@ -63,14 +65,14 @@ function GroupingListItem({
   );
 }
 
-interface GroupedListProps<T> extends IBoxProps {
-  items: Map<string, T[]>;
-  render: (item: T) => React.ReactNode;
+interface GroupedListProps<T> extends Omit<IBoxProps, "children"> {
+  items: Map<string, Iterable<T>>;
+  children: (item: T) => React.ReactNode;
 }
 
 export function GroupedList<T>({
   items,
-  render,
+  children,
   ...rest
 }: GroupedListProps<T>): JSX.Element {
   return (
@@ -86,8 +88,8 @@ export function GroupedList<T>({
                 desktop: 0,
               }}
             >
-              {groupItems.map((item) => {
-                return render(item);
+              {[...groupItems].map((item) => {
+                return children(item);
               })}
             </Box>
           </GroupingListItem>
@@ -107,6 +109,73 @@ export function GroupedListItem({ children }: { children: React.ReactNode }) {
       paddingLeft={{ default: "gutter", desktop: 16 }}
       paddingY={16}
       display="flex"
+    >
+      {children}
+    </Box>
+  );
+}
+
+export function GroupedCalendarListItem<T>({
+  day,
+  date,
+  items,
+  children,
+}: {
+  day: string;
+  date: string;
+  items: T[];
+  children: (items: T) => React.ReactNode;
+}) {
+  return (
+    <GroupedListItem>
+      <Box alignSelf="flex-start" className={stickyCalendarStyle}>
+        <Box boxShadow="borderAll" borderRadius={4}>
+          <Box
+            backgroundColor="canvas"
+            textAlign="center"
+            width={{ default: 40 }}
+            paddingY={{ default: 4 }}
+            textTransform="uppercase"
+            fontSize="xSmall"
+          >
+            {day}
+          </Box>
+          <Box textAlign="center" fontSize="medium">
+            {date}
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        as="ul"
+        display="flex"
+        flexDirection="column"
+        rowGap={16}
+        flexGrow={1}
+      >
+        {items.map((item) => {
+          return children(item);
+        })}
+      </Box>
+    </GroupedListItem>
+  );
+}
+
+export function GroupedCalendarSubListItem({
+  children,
+}: {
+  children: React.ReactNode;
+}): JSX.Element {
+  return (
+    <Box
+      as="li"
+      flexDirection="row"
+      columnGap={{ default: 16, tablet: 24 }}
+      alignItems="flex-start"
+      display="flex"
+      paddingRight="gutter"
+      boxShadow="borderBottom"
+      paddingBottom={16}
+      className={subListItemStyle}
     >
       {children}
     </Box>

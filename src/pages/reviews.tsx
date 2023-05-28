@@ -44,7 +44,7 @@ export function Head(): JSX.Element {
   );
 }
 
-function Header({ data }: { data: Queries.ReviewsIndexPageQuery }) {
+function Header({ data }: { data: Queries.ReviewsPageQuery }) {
   return (
     <>
       <PageTitle textAlign="center">Reviews</PageTitle>
@@ -91,7 +91,7 @@ function Filters({
 }: {
   dispatch: React.Dispatch<Action>;
   state: State;
-  data: Queries.ReviewsIndexPageQuery;
+  data: Queries.ReviewsPageQuery;
 }) {
   return (
     <>
@@ -180,18 +180,16 @@ function Filters({
 
 function List({ state }: { state: State }) {
   return (
-    <GroupedList
-      data-testid="poster-list"
-      items={state.groupedItems}
-      render={(item) => <ListItem item={item} key={item.imdbId} />}
-    />
+    <GroupedList data-testid="poster-list" items={state.groupedItems}>
+      {(item) => <ListItem item={item} key={item.imdbId} />}
+    </GroupedList>
   );
 }
 
 function ListItem({
   item,
 }: {
-  item: Queries.ReviewIndexItemFragment;
+  item: Queries.ReviewsPageItemFragment;
 }): JSX.Element {
   return (
     <GroupedListItem>
@@ -217,7 +215,7 @@ function ListItem({
 export default function ReviewsIndexPage({
   data,
 }: {
-  data: Queries.ReviewsIndexPageQuery;
+  data: Queries.ReviewsPageQuery;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -243,7 +241,7 @@ export default function ReviewsIndexPage({
 }
 
 export const query = graphql`
-  fragment ReviewIndexItem on ReviewedMoviesJson {
+  fragment ReviewsPageItem on ReviewedMoviesJson {
     year
     imdbId
     reviewDate(formatString: "YYYY-MM-DD")
@@ -264,10 +262,10 @@ export const query = graphql`
 `;
 
 export const pageQuery = graphql`
-  query ReviewsIndexPage {
+  query ReviewsPage {
     review: allReviewedMoviesJson(sort: { sortTitle: ASC }) {
       nodes {
-        ...ReviewIndexItem
+        ...ReviewsPageItem
       }
       reviewYears: distinct(field: { reviewYear: SELECT })
       releaseYears: distinct(field: { year: SELECT })

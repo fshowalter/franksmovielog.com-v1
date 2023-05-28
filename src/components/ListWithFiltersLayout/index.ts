@@ -1,4 +1,5 @@
 export {
+  GroupedCalendarListItem,
   GroupedList,
   GroupedListItem,
   ListWithFiltersLayout,

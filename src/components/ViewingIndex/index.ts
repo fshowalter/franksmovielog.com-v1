@@ -1,1 +1,0 @@
-export { ViewingIndex } from "./ViewingIndex";

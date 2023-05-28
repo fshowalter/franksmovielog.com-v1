@@ -8,7 +8,7 @@ export function ListItemTitle({
 }: {
   title: string;
   year: number;
-  slug: string;
+  slug: string | null;
 }) {
   const yearBox = (
     <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
@@ -16,9 +16,17 @@ export function ListItemTitle({
     </Box>
   );
 
+  if (slug) {
+    return (
+      <Link to={`/reviews/${slug}/`} fontSize="default" display="block">
+        {title}&#8239;&#8239;{yearBox}
+      </Link>
+    );
+  }
+
   return (
-    <Link to={`/reviews/${slug}/`} fontSize="default" display="block">
+    <Box as="span" fontSize="default" display="block">
       {title}&#8239;&#8239;{yearBox}
-    </Link>
+    </Box>
   );
 }
