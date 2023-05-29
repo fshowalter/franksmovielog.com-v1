@@ -18,14 +18,14 @@ export function ListItemTitle({
 
   if (slug) {
     return (
-      <Link to={`/reviews/${slug}/`} fontSize="default" display="block">
+      <Link to={`/reviews/${slug}/`} fontSize="medium" display="block">
         {title}&#8239;&#8239;{yearBox}
       </Link>
     );
   }
 
   return (
-    <Box as="span" fontSize="default" display="block">
+    <Box as="span" fontSize="medium" display="block">
       {title}&#8239;&#8239;{yearBox}
     </Box>
   );

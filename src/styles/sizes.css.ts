@@ -82,6 +82,7 @@ export const width = {
   32: toRem(32),
   40: toRem(40),
   48: toRem(48),
+  56: toRem(56),
   64: toRem(64),
   80: toRem(80),
   96: toRem(96),

@@ -3,3 +3,4 @@ node_modules
 public
 gatsby-types.d.ts
 __mocks__/**
+*.fixtures.ts

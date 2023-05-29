@@ -22,8 +22,8 @@ export function ListItemPoster({
     transform: "safariBorderRadiusFix",
     boxShadow: "borderAll",
     borderRadius: 8,
-    maxWidth: 64,
-    minWidth: 64,
+    maxWidth: 56,
+    minWidth: 56,
     ...rest,
   } as const;
 
@@ -45,7 +45,7 @@ export const query = graphql`
         layout: FIXED
         formats: [JPG, AVIF]
         quality: 80
-        width: 64
+        width: 56
         placeholder: NONE
       )
     }

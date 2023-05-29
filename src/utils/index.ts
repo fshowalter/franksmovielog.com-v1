@@ -1,4 +1,4 @@
-export { applyFilters } from "./applyFilters";
+export { filterCollection } from "./filterCollection";
 export {
   collator,
   sortNumberAsc,
