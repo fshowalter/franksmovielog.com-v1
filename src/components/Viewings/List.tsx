@@ -66,7 +66,7 @@ export function SubListItem({
   item: Queries.ViewingsItemFragment;
 }): JSX.Element {
   return (
-    <GroupedCalendarSubListItem>
+    <GroupedCalendarSubListItem alignItems="center">
       <ListItemPoster
         slug={item.slug}
         image={item.poster}
@@ -93,6 +93,7 @@ export function SubListItem({
             <MediumAndVenue medium={item.medium} venue={item.venue} />
           </Box>
         </Box>
+        <Spacer axis="vertical" size={{ default: 8, tablet: 16 }} />
       </Box>
     </GroupedCalendarSubListItem>
   );

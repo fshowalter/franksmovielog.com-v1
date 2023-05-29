@@ -7,7 +7,7 @@ import { Header } from "./Header";
 import { List } from "./List";
 import { initState, reducer } from "./Viewings.reducer";
 
-export default function Viewings({
+export function Viewings({
   items,
   distinctGenres,
   distinctMedia,

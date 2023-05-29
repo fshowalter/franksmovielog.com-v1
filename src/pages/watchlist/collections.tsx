@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder } from "../../components/HeadBuilder";
-import { WatchlistEntities } from "../../components/WatchlistEntities";
+import { HeadBuilder, WatchlistEntities } from "../../components/";
 
 export function Head(): JSX.Element {
   return (

@@ -1,4 +1,4 @@
-import { Box } from "../Box";
+import { Box, IBoxProps } from "../Box";
 import { ListItem } from "./List";
 
 import {
@@ -53,9 +53,8 @@ export function GroupedCalendarListItem<T>({
 
 export function GroupedCalendarSubListItem({
   children,
-}: {
-  children: React.ReactNode;
-}): JSX.Element {
+  ...rest
+}: IBoxProps): JSX.Element {
   return (
     <ListItem
       alignItems="flex-start"
@@ -63,6 +62,7 @@ export function GroupedCalendarSubListItem({
       paddingTop={0}
       className={subListItemStyle}
       backgroundColor="unset"
+      {...rest}
     >
       {children}
     </ListItem>

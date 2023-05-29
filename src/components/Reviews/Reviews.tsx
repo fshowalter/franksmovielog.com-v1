@@ -6,7 +6,7 @@ import { Header } from "./Header";
 import { List } from "./List";
 import { initState, reducer } from "./Reviews.reducer";
 
-export default function Reviews({
+export function Reviews({
   items,
   distinctGenres,
   distinctReleaseYears,

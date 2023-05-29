@@ -36,7 +36,7 @@ function ReviewListItem({
   item: Queries.ReviewsItemFragment;
 }): JSX.Element {
   return (
-    <ListItem>
+    <ListItem alignItems="center">
       <ListItemPoster
         slug={item.slug}
         image={item.poster}
@@ -54,6 +54,7 @@ function ReviewListItem({
           <Spacer axis="vertical" size={4} />
           <Grade grade={item.grade} height={18} />
           <Spacer axis="vertical" size={4} />
+          <Spacer axis="vertical" size={8} />
         </Box>
       </Box>
     </ListItem>

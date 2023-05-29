@@ -38,7 +38,7 @@ function WatchlistItem({
   item: Queries.WatchlistEntityItemFragment;
 }): JSX.Element {
   return (
-    <ListItem>
+    <ListItem alignItems="center">
       <ListItemPoster
         slug={item.slug}
         image={item.poster}
@@ -55,7 +55,7 @@ function WatchlistItem({
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
           {item.grade && <Grade grade={item.grade} height={18} />}
-          <Spacer axis="vertical" size={4} />
+          <Spacer axis="vertical" size={8} />
         </Box>
       </Box>
     </ListItem>
