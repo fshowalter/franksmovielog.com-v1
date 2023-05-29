@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { HeadBuilder } from "../components/HeadBuilder";
-import { PosterListWithFiltersForWatchlistEntity } from "../components/PosterListWithFiltersForWatchlistEntity";
+import { WatchlistEntity } from "../components/WatchlistEntity";
 
 export function Head({
   data,
@@ -23,7 +23,7 @@ export default function DirectorTemplate({
   data: Queries.DirectorTemplateQuery;
 }): JSX.Element {
   return (
-    <PosterListWithFiltersForWatchlistEntity
+    <WatchlistEntity
       entity={data.director}
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Director of"
@@ -40,7 +40,7 @@ export const pageQuery = graphql`
       releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
     }
     director: watchlistEntity(id: $id) {
-      ...PosterListWithFiltersForWatchlistEntity
+      ...WatchlistEntity
     }
   }
 `;

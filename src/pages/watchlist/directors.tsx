@@ -34,7 +34,7 @@ export const pageQuery = graphql`
       filter: { entityType: { eq: director } }
     ) {
       nodes {
-        ...WatchlistEntityAvatarListItem
+        ...WatchlistEntitiesItem
       }
     }
   }

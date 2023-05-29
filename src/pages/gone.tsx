@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { ArticlePage } from "../components/ArticlePage";
+import { ArticleLayout } from "../components/ArticleLayout";
 import { HeadBuilder } from "../components/HeadBuilder";
 
 export function Head(): JSX.Element {
@@ -19,7 +19,7 @@ export default function GonePage({
   data: Queries.GonePageQuery;
 }): JSX.Element {
   return (
-    <ArticlePage
+    <ArticleLayout
       image={data.still}
       alt="Jake Gittes walks away."
       articleText={data.page?.html}

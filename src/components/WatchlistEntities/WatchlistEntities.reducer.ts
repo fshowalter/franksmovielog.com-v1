@@ -92,12 +92,12 @@ export function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        name: (person: Queries.WatchlistEntityAvatarListItemFragment) => {
+        name: (person: Queries.WatchlistEntitiesItemFragment) => {
           return regex.test(person.name);
         },
       };
       filteredEntities = sortEntities(
-        filterCollection<Queries.WatchlistEntityAvatarListItemFragment>({
+        filterCollection<Queries.WatchlistEntitiesItemFragment>({
           collection: state.allEntities,
           filters,
         }),

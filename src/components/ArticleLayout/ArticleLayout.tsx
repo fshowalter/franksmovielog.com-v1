@@ -6,7 +6,7 @@ import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
 import { StillList, StillListHeading, StillListNav } from "../StillList";
 
-export function ArticlePage({
+export function ArticleLayout({
   image,
   alt,
   title,

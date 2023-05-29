@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { ArticlePage } from "../components/ArticlePage";
+import { ArticleLayout } from "../components/ArticleLayout";
 import { HeadBuilder } from "../components/HeadBuilder";
 
 export function Head(): JSX.Element {
@@ -19,7 +19,7 @@ export default function AboutPage({
   data: Queries.AboutPageQuery;
 }): JSX.Element {
   return (
-    <ArticlePage
+    <ArticleLayout
       image={data.still}
       alt="A coffee cup with the word BEGIN on it."
       articleText={data.page?.html}
