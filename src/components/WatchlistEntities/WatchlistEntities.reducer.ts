@@ -1,0 +1,122 @@
+import {
+  filterCollection,
+  sortNumberAsc,
+  sortNumberDesc,
+  sortStringAsc,
+  sortStringDesc,
+} from "../../utils";
+
+export enum ActionType {
+  FILTER_NAME = "FILTER_NAME",
+  SORT = "SORT",
+}
+
+export type SortValue =
+  | "name-asc"
+  | "name-desc"
+  | "title-count-asc"
+  | "title-count-desc"
+  | "review-count-asc"
+  | "review-count-desc";
+
+function sortEntities(
+  entities: Queries.WatchlistEntitiesItemFragment[],
+  sortOrder: SortValue
+): Queries.WatchlistEntitiesItemFragment[] {
+  const sortMap: Record<
+    SortValue,
+    (
+      a: Queries.WatchlistEntitiesItemFragment,
+      b: Queries.WatchlistEntitiesItemFragment
+    ) => number
+  > = {
+    "name-asc": (a, b) => sortStringAsc(a.name, b.name),
+    "name-desc": (a, b) => sortStringDesc(a.name, b.name),
+    "title-count-asc": (a, b) => sortNumberAsc(a.titleCount, b.titleCount),
+    "title-count-desc": (a, b) => sortNumberDesc(a.titleCount, b.titleCount),
+    "review-count-asc": (a, b) => sortNumberAsc(a.reviewCount, b.reviewCount),
+    "review-count-desc": (a, b) => sortNumberDesc(a.reviewCount, b.reviewCount),
+  };
+
+  const comparer = sortMap[sortOrder];
+
+  return entities.sort(comparer);
+}
+
+interface State {
+  allEntities: Queries.WatchlistEntitiesItemFragment[];
+  filteredEntities: Queries.WatchlistEntitiesItemFragment[];
+  filters: Record<
+    string,
+    (entity: Queries.WatchlistEntitiesItemFragment) => boolean
+  >;
+  sortValue: SortValue;
+}
+
+export function initState({
+  entities,
+}: {
+  entities: readonly Queries.WatchlistEntitiesItemFragment[];
+}): State {
+  return {
+    allEntities: [...entities],
+    filteredEntities: [...entities],
+    filters: {},
+    sortValue: "name-asc",
+  };
+}
+
+interface FilterNameAction {
+  type: ActionType.FILTER_NAME;
+  value: string;
+}
+
+interface SortAction {
+  type: ActionType.SORT;
+  value: SortValue;
+}
+
+export type Action = FilterNameAction | SortAction;
+
+/**
+ * Applies the given action to the given state, returning a new State object.
+ * @param state The current state.
+ * @param action The action to apply.
+ */
+export function reducer(state: State, action: Action): State {
+  let filters;
+  let filteredEntities;
+
+  switch (action.type) {
+    case ActionType.FILTER_NAME: {
+      const regex = new RegExp(action.value, "i");
+      filters = {
+        ...state.filters,
+        name: (person: Queries.WatchlistEntityAvatarListItemFragment) => {
+          return regex.test(person.name);
+        },
+      };
+      filteredEntities = sortEntities(
+        filterCollection<Queries.WatchlistEntityAvatarListItemFragment>({
+          collection: state.allEntities,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredEntities,
+      };
+    }
+    case ActionType.SORT: {
+      filteredEntities = sortEntities(state.filteredEntities, action.value);
+      return {
+        ...state,
+        sortValue: action.value,
+        filteredEntities,
+      };
+    }
+    // no default
+  }
+}
