@@ -30,6 +30,7 @@ export const HEADER_HEIGHT = 128;
 export const STILL_WIDTH = "960px";
 export const POSTER_WIDTH = "248px";
 export const PROSE_CONTENT_WIDTH = "36rem";
+export const SHORT_FORM_CONTENT_WIDTH = "20rem";
 export const POPOUT_WIDTH = `calc((${gutterWidth} * 2) + ${PROSE_CONTENT_WIDTH})`;
 
 function toRem(px: number) {
@@ -95,4 +96,5 @@ export const width = {
   prose: PROSE_CONTENT_WIDTH,
   gutter: gutterWidth,
   pageMargin: pageMarginWidth,
+  shortForm: SHORT_FORM_CONTENT_WIDTH,
 };

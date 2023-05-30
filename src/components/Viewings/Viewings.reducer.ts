@@ -63,7 +63,7 @@ function groupItems(
     let groupValue = groupedItems.get(monthYearGroup);
 
     if (!groupValue) {
-      groupValue = new Map<string, Queries.ViewingsPageItemFragment[]>();
+      groupValue = new Map<string, Queries.ViewingsItemFragment[]>();
       groupedItems.set(monthYearGroup, groupValue);
     }
 

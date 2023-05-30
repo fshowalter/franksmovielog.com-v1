@@ -1,12 +1,9 @@
 import { Box } from "../Box";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
-import {
-  GroupedCalendarListItem,
-  GroupedCalendarSubListItem,
-  GroupedList,
-} from "../ListWithFiltersLayout";
+import { GroupedList, ListItem } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
+import { subListItemBoxShadowStyle } from "./List.css";
 import { Action, ActionType } from "./Viewings.reducer";
 
 export function List({
@@ -52,11 +49,36 @@ function DateListItem({
   const [day, date] = dayAndDate.split("-");
 
   return (
-    <GroupedCalendarListItem day={day} date={date} items={items}>
-      {(item) => {
-        return <SubListItem item={item} key={item.sequence} />;
-      }}
-    </GroupedCalendarListItem>
+    <ListItem paddingBottom={0}>
+      <Box alignSelf="flex-start">
+        <Box boxShadow="borderAll" borderRadius={4}>
+          <Box
+            backgroundColor="canvas"
+            textAlign="center"
+            width={48}
+            paddingY={8}
+            textTransform="uppercase"
+            fontSize="small"
+          >
+            {day}
+          </Box>
+          <Box textAlign="center" fontSize="large">
+            {date}
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        as="ul"
+        display="flex"
+        flexDirection="column"
+        rowGap={16}
+        flexGrow={1}
+      >
+        {items.map((item) => {
+          return <SubListItem item={item} key={item.sequence} />;
+        })}
+      </Box>
+    </ListItem>
   );
 }
 
@@ -66,7 +88,13 @@ export function SubListItem({
   item: Queries.ViewingsItemFragment;
 }): JSX.Element {
   return (
-    <GroupedCalendarSubListItem alignItems="center">
+    <ListItem
+      alignItems="flex-start"
+      boxShadow="borderBottom"
+      paddingTop={0}
+      className={subListItemBoxShadowStyle}
+      backgroundColor="unset"
+    >
       <ListItemPoster
         slug={item.slug}
         image={item.poster}
@@ -95,7 +123,7 @@ export function SubListItem({
         </Box>
         <Spacer axis="vertical" size={{ default: 8, tablet: 16 }} />
       </Box>
-    </GroupedCalendarSubListItem>
+    </ListItem>
   );
 }
 

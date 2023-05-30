@@ -32,7 +32,9 @@ export function ListWithFiltersLayout({
           paddingTop={32}
           flexBasis={360}
         >
-          <Box maxWidth="prose">{header}</Box>
+          <Box alignItems="center" display="flex" flexDirection="column">
+            {header}
+          </Box>
           <Spacer axis="vertical" size={32} />
           <Filters>{filters}</Filters>
           <Spacer axis="vertical" size={32} />

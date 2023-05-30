@@ -77,7 +77,7 @@ function BrowseEntityTypeLink({
         className={linkStyle}
         justifyContent="center"
       >
-        {props.icon}
+        <Box flexShrink={0}>{props.icon}</Box>
         {props.label}
       </Link>
     </Box>
@@ -88,22 +88,18 @@ export function Header({ titleCount }: { titleCount: number }): JSX.Element {
   return (
     <>
       <PageTitle textAlign="center">Watchlist</PageTitle>
-      <Box color="subtle">
-        <Box as="q" display="block" textAlign="center" color="subtle">
-          A man&apos;s got to know his limitations.
-        </Box>
-        <Spacer axis="vertical" size={16} />
-        <Box color="subtle">
-          <Spacer axis="vertical" size={16} />
-          <p>
-            My movie review bucketlist. {titleCount.toLocaleString()} titles. No
-            silents or documentaries.{" "}
-          </p>
-          <Spacer axis="vertical" size={16} />
-          <p>
-            Track my <Link to="/watchlist/progress/">progress</Link>.
-          </p>
-        </Box>
+      <Box as="q" display="block" textAlign="center" color="subtle">
+        A man&apos;s got to know his limitations.
+      </Box>
+      <Spacer axis="vertical" size={32} />
+
+      <Box as="p" color="subtle" maxWidth="shortForm">
+        My movie review bucketlist. {titleCount.toLocaleString()} titles. No
+        silents or documentaries.{" "}
+      </Box>
+      <Spacer axis="vertical" size={16} />
+      <Box as="p" color="subtle">
+        Track my <Link to="/watchlist/progress/">progress</Link>.
       </Box>
       <Spacer axis="vertical" size={32} />
       <Box as="ul" display="flex" flexWrap="wrap" columnGap={32} rowGap={24}>
