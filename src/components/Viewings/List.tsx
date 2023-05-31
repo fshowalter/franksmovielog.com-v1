@@ -1,7 +1,9 @@
 import { Box } from "../Box";
+import { ListItem } from "../ListItem";
+import { ListItemMediumAndVenue } from "../ListItemMediumAndVenue";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
-import { GroupedList, ListItem } from "../ListWithFiltersLayout";
+import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
 import { subListItemBoxShadowStyle } from "./List.css";
 import { Action, ActionType } from "./Viewings.reducer";
@@ -118,47 +120,11 @@ export function SubListItem({
         >
           <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
           <Box>
-            <MediumAndVenue medium={item.medium} venue={item.venue} />
+            <ListItemMediumAndVenue medium={item.medium} venue={item.venue} />
           </Box>
         </Box>
         <Spacer axis="vertical" size={{ default: 8, tablet: 16 }} />
       </Box>
     </ListItem>
   );
-}
-
-function MediumAndVenue({
-  medium,
-  venue,
-}: {
-  medium?: string | null;
-  venue?: string | null;
-}): JSX.Element | null {
-  if (medium && venue) {
-    return (
-      <>
-        <div>
-          {medium} at {venue}
-        </div>
-      </>
-    );
-  }
-
-  if (medium) {
-    return (
-      <>
-        <div>{medium}</div>
-      </>
-    );
-  }
-
-  if (venue) {
-    return (
-      <>
-        <div>{venue}</div>
-      </>
-    );
-  }
-
-  return null;
 }

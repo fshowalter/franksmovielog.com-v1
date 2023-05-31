@@ -61,7 +61,7 @@ export const query = graphql`
     sortTitle
     releaseDate
     poster {
-      ...PosterListPoster
+      ...ListItemPoster
     }
   }
 

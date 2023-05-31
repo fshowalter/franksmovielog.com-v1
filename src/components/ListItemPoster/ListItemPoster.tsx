@@ -4,7 +4,7 @@ import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 
 interface IListItemPosterProps extends IBoxProps {
-  slug: string | null;
+  slug: string | null | undefined;
   image: IGraphqlImage;
   title: string;
   year: number;

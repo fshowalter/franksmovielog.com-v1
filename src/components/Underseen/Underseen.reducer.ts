@@ -1,7 +1,8 @@
 import {
+  FilterableState,
   buildGroupItems,
-  buildUpdateFilter,
   collator,
+  filterTools,
   sortNumberAsc,
   sortNumberDesc,
   sortStringAsc,
@@ -19,7 +20,7 @@ export type Sort =
   | "grade-desc";
 
 const groupItems = buildGroupItems(groupForItem);
-const updateFilter = buildUpdateFilter(sortItems, groupItems);
+const { updateFilter } = filterTools(sortItems, groupItems);
 
 function sortItems(items: Queries.UnderseenItemFragment[], sortOrder: Sort) {
   const sortMap: Record<
@@ -68,14 +69,11 @@ function groupForItem(
   }
 }
 
-export interface State {
-  allItems: Queries.UnderseenItemFragment[];
-  filteredItems: Queries.UnderseenItemFragment[];
-  groupedItems: Map<string, Queries.UnderseenItemFragment[]>;
-  filters: Record<string, (item: Queries.UnderseenItemFragment) => boolean>;
-  showCount: number;
-  sortValue: Sort;
-}
+export type State = FilterableState<
+  Queries.UnderseenItemFragment,
+  Sort,
+  Map<string, Queries.UnderseenItemFragment[]>
+>;
 
 export function initState({
   items,

@@ -8,7 +8,7 @@ export function ListItemTitle({
 }: {
   title: string;
   year: number;
-  slug: string | null;
+  slug: string | null | undefined;
 }) {
   const yearBox = (
     <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">

@@ -1,8 +1,9 @@
 import { Box } from "../Box";
 import { Grade } from "../Grade";
+import { ListItem } from "../ListItem";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
-import { GroupedList, ListItem } from "../ListWithFiltersLayout";
+import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
 import { Action, ActionType } from "./Reviews.reducer";
 

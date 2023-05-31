@@ -1,6 +1,8 @@
 import {
+  FilterableState,
+  buildGroupItems,
   collator,
-  filterCollection,
+  filterTools,
   sortNumberAsc,
   sortNumberDesc,
   sortStringAsc,
@@ -15,6 +17,9 @@ export type Sort =
   | "grade-desc";
 
 const SHOW_COUNT_DEFAULT = 100;
+
+const groupItems = buildGroupItems(groupForItem);
+const { updateFilter, applyFilters } = filterTools(sortItems, groupItems);
 
 function sortItems(
   items: Queries.WatchlistEntityItemFragment[],
@@ -66,77 +71,12 @@ function groupForItem(
   }
 }
 
-function groupItems(
-  items: Queries.WatchlistEntityItemFragment[],
-  sortValue: Sort
-): Map<string, Queries.WatchlistEntityItemFragment[]> {
-  const groupedItems = new Map<string, Queries.WatchlistEntityItemFragment[]>();
-
-  items.map((item) => {
-    const group = groupForItem(item, sortValue);
-    let groupValue = groupedItems.get(group);
-
-    if (!groupValue) {
-      groupValue = [];
-      groupedItems.set(group, groupValue);
-    }
-    groupValue.push(item);
-  });
-
-  return groupedItems;
-}
-
-function applyFilters(
-  newFilters: Record<
-    string,
-    (item: Queries.WatchlistEntityItemFragment) => boolean
-  >,
-  currentState: State
-): State {
-  const filteredItems = sortItems(
-    filterCollection({
-      collection: currentState.allItems,
-      filters: newFilters,
-    }),
-    currentState.sortValue
-  );
-
-  const groupedItems = groupItems(
-    filteredItems.slice(0, currentState.showCount),
-    currentState.sortValue
-  );
-
-  return {
-    ...currentState,
-    filters: newFilters,
-    filteredItems,
-    groupedItems,
-  };
-}
-
-function updateFilter(
-  currentState: State,
-  key: string,
-  handler: (item: Queries.WatchlistEntityItemFragment) => boolean
-): State {
-  const newFilters = {
-    ...currentState.filters,
-    [key]: handler,
-  };
-
-  return applyFilters(newFilters, currentState);
-}
-
-export interface State {
-  allItems: Queries.WatchlistEntityItemFragment[];
-  filteredItems: Queries.WatchlistEntityItemFragment[];
-  groupedItems: Map<string, Queries.WatchlistEntityItemFragment[]>;
-  filters: Record<
-    string,
-    (item: Queries.WatchlistEntityItemFragment) => boolean
-  >;
-  showCount: number;
-  sortValue: Sort;
+export interface State
+  extends FilterableState<
+    Queries.WatchlistEntityItemFragment,
+    Sort,
+    Map<string, Queries.WatchlistEntityItemFragment[]>
+  > {
   hideReviewed: boolean;
 }
 

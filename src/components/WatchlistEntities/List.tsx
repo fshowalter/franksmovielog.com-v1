@@ -2,7 +2,7 @@ import { backgroundColors } from "../../styles/colors.css";
 import { Box } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
-import { ListItem } from "../ListWithFiltersLayout";
+import { ListItem } from "../ListItem";
 import { ListInfo } from "../ListWithFiltersLayout/ListInfo";
 import { Spacer } from "../Spacer";
 import { countMarginStyle } from "./List.css";

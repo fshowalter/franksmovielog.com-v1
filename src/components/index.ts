@@ -2,6 +2,7 @@ export * from "./Article";
 export * from "./HeadBuilder";
 export * from "./Overrated";
 export * from "./Reviews";
+export * from "./Stats";
 export * from "./Underseen";
 export * from "./Viewings";
 export * from "./Watchlist";

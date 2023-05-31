@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder } from "../components/HeadBuilder";
-import { StatsPage } from "../components/StatsPage";
+import { HeadBuilder, Stats } from "../components";
 
 export function Head({
   pageContext,
@@ -28,7 +27,7 @@ export default function StatsForYearTemplate({
   data: Queries.StatsForYearTemplateQuery;
 }): JSX.Element {
   return (
-    <StatsPage
+    <Stats
       title={`${pageContext.year} Stats`}
       tagline={
         [...data.viewing.years].reverse()[1] === pageContext.year

@@ -1,6 +1,5 @@
 import { Box, IBoxProps } from "../Box";
 import { Spacer } from "../Spacer";
-import { List } from "./List";
 
 import { stickyGroupHeaderStyle } from "./GroupedList.css";
 import { ListInfo } from "./ListInfo";
@@ -26,8 +25,8 @@ export function GroupedList<T>({
     <>
       <ListInfo visibleCount={visibleCount} totalCount={totalCount} />
 
-      <List items={groupedItems} {...rest}>
-        {(groupedItem, index) => {
+      <Box as="ol" {...rest}>
+        {[...groupedItems].map((groupedItem, index) => {
           const [group, groupItems] = groupedItem;
 
           return (
@@ -36,20 +35,11 @@ export function GroupedList<T>({
               key={group}
               zIndex={index + 100}
             >
-              <Box
-                as="ol"
-                paddingX={{
-                  default: 0,
-                  tablet: "gutter",
-                  desktop: 0,
-                }}
-              >
-                {[...groupItems].map(children)}
-              </Box>
+              <Box as="ol">{[...groupItems].map(children)}</Box>
             </GroupingListItem>
           );
-        }}
-      </List>
+        })}
+      </Box>
       <Box
         display="flex"
         flexDirection="column"
@@ -89,7 +79,7 @@ function GroupingListItem({
         <Box
           backgroundColor="canvas"
           paddingY={8}
-          paddingX={{ default: "gutter", desktop: 24 }}
+          paddingX={{ default: "gutter", tablet: 24 }}
         >
           {groupText}
         </Box>

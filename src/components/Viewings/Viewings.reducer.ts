@@ -1,6 +1,7 @@
 import {
+  FilterableState,
   collator,
-  filterCollection,
+  filterTools,
   sortNumberAsc,
   sortNumberDesc,
   sortStringAsc,
@@ -15,6 +16,8 @@ export type Sort =
   | "release-date-desc"
   | "release-date-asc"
   | "title";
+
+const { updateFilter } = filterTools(sortItems, groupItems);
 
 function sortItems(items: Queries.ViewingsItemFragment[], sortOrder: Sort) {
   const sortMap: Record<
@@ -82,44 +85,11 @@ function groupItems(
   return groupedItems;
 }
 
-function updateFilter(
-  currentState: State,
-  key: string,
-  handler: (item: Queries.ViewingsItemFragment) => boolean
-): State {
-  const filters = {
-    ...currentState.filters,
-    [key]: handler,
-  };
-
-  const filteredItems = sortItems(
-    filterCollection({
-      collection: currentState.allItems,
-      filters,
-    }),
-    currentState.sortValue
-  );
-
-  const groupedItems = groupItems(
-    filteredItems.slice(0, currentState.showCount)
-  );
-
-  return {
-    ...currentState,
-    filters,
-    filteredItems,
-    groupedItems,
-  };
-}
-
-export interface State {
-  allItems: Queries.ViewingsItemFragment[];
-  filteredItems: Queries.ViewingsItemFragment[];
-  filters: Record<string, (item: Queries.ViewingsItemFragment) => boolean>;
-  groupedItems: Map<string, Map<string, Queries.ViewingsItemFragment[]>>;
-  showCount: number;
-  sortValue: Sort;
-}
+export type State = FilterableState<
+  Queries.ViewingsItemFragment,
+  Sort,
+  Map<string, Map<string, Queries.ViewingsItemFragment[]>>
+>;
 
 /**
  * Initializes the page state.

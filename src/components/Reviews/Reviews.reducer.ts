@@ -1,6 +1,8 @@
 import {
+  FilterableState,
+  buildGroupItems,
   collator,
-  filterCollection,
+  filterTools,
   sortNumberAsc,
   sortNumberDesc,
   sortStringAsc,
@@ -18,6 +20,9 @@ export type Sort =
   | "title-desc"
   | "grade-asc"
   | "grade-desc";
+
+const groupItems = buildGroupItems(groupForItem);
+const { updateFilter } = filterTools(sortItems, groupItems);
 
 function sortItems(items: Queries.ReviewsItemFragment[], sortOrder: Sort) {
   const sortMap: Record<
@@ -69,72 +74,11 @@ function groupForItem(
   }
 }
 
-function groupItems(
-  items: Queries.ReviewsItemFragment[],
-  sortValue: Sort
-): Map<string, Queries.ReviewsItemFragment[]> {
-  const groupedItems = new Map<string, Queries.ReviewsItemFragment[]>();
-
-  items.map((item) => {
-    const group = groupForItem(item, sortValue);
-    let groupValue = groupedItems.get(group);
-
-    if (!groupValue) {
-      groupValue = [];
-      groupedItems.set(group, groupValue);
-    }
-    groupValue.push(item);
-  });
-
-  return groupedItems;
-}
-
-function applyFilters(
-  newFilters: Record<string, (item: Queries.ReviewsItemFragment) => boolean>,
-  currentState: State
-): State {
-  const filteredItems = sortItems(
-    filterCollection({
-      collection: currentState.allItems,
-      filters: newFilters,
-    }),
-    currentState.sortValue
-  );
-
-  const groupedItems = groupItems(
-    filteredItems.slice(0, currentState.showCount),
-    currentState.sortValue
-  );
-
-  return {
-    ...currentState,
-    filters: newFilters,
-    filteredItems,
-    groupedItems,
-  };
-}
-
-function updateFilter(
-  currentState: State,
-  key: string,
-  handler: (item: Queries.ReviewsItemFragment) => boolean
-): State {
-  const newFilters = {
-    ...currentState.filters,
-    [key]: handler,
-  };
-
-  return applyFilters(newFilters, currentState);
-}
-
-export interface State {
-  allItems: Queries.ReviewsItemFragment[];
-  filteredItems: Queries.ReviewsItemFragment[];
-  groupedItems: Map<string, Queries.ReviewsItemFragment[]>;
-  filters: Record<string, (item: Queries.ReviewsItemFragment) => boolean>;
-  showCount: number;
-  sortValue: Sort;
-}
+export type State = FilterableState<
+  Queries.ReviewsItemFragment,
+  Sort,
+  Map<string, Queries.ReviewsItemFragment[]>
+>;
 
 export function initState({
   items,
