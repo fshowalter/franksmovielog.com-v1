@@ -163,7 +163,7 @@ export const query = graphql`
       slug
     }
     poster {
-      ...PosterListPoster
+      ...ListItemPoster
     }
   }
 

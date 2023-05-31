@@ -1,8 +1,9 @@
 import { Box } from "../Box";
 import { Grade } from "../Grade";
+import { ListItem } from "../ListItem";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
-import { GroupedList, ListItem } from "../ListWithFiltersLayout";
+import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
 import { Action, ActionType } from "./Underseen.reducer";
 
@@ -12,7 +13,7 @@ export function List({
   visibleCount,
   dispatch,
 }: {
-  groupedItems: Map<string, Queries.UnderseenGemsItemFragment[]>;
+  groupedItems: Map<string, Queries.UnderseenItemFragment[]>;
   totalCount: number;
   visibleCount: number;
   dispatch: React.Dispatch<Action>;
@@ -33,7 +34,7 @@ export function List({
 function UnderseenGemsListItem({
   item,
 }: {
-  item: Queries.UnderseenGemsItemFragment;
+  item: Queries.UnderseenItemFragment;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">
