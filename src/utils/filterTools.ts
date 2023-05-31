@@ -26,6 +26,23 @@ export function filterTools<T, S, G>(
 
       return applyFilters(filters, currentState);
     },
+    clearFilter: function clearFilter<State extends FilterableState<T, S, G>>(
+      value: string,
+      currentState: State,
+      key: string
+    ): State | null {
+      if (value != "All") {
+        return null;
+      }
+
+      const filters = {
+        ...currentState.filters,
+      };
+
+      delete filters[key]; // eslint-disable-line @typescript-eslint/no-dynamic-delete
+
+      return applyFilters(filters, currentState);
+    },
     applyFilters,
   };
 }

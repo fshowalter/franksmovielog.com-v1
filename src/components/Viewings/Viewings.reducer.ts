@@ -17,7 +17,7 @@ export type Sort =
   | "release-date-asc"
   | "title";
 
-const { updateFilter } = filterTools(sortItems, groupItems);
+const { updateFilter, clearFilter } = filterTools(sortItems, groupItems);
 
 function sortItems(items: Queries.ViewingsItemFragment[], sortOrder: Sort) {
   const sortMap: Record<
@@ -196,22 +196,20 @@ export function reducer(state: State, action: Action): State {
       });
     }
     case ActionType.FILTER_MEDIUM: {
-      return updateFilter(state, "medium", (item) => {
-        if (action.value === "All") {
-          return true;
-        }
-
-        return item.medium === action.value;
-      });
+      return (
+        clearFilter(action.value, state, "medium") ??
+        updateFilter(state, "medium", (item) => {
+          return item.medium === action.value;
+        })
+      );
     }
     case ActionType.FILTER_VENUE: {
-      return updateFilter(state, "venue", (item) => {
-        if (action.value === "All") {
-          return true;
-        }
-
-        return item.venue === action.value;
-      });
+      return (
+        clearFilter(action.value, state, "venue") ??
+        updateFilter(state, "venue", (item) => {
+          return item.venue === action.value;
+        })
+      );
     }
     case ActionType.FILTER_GENRES: {
       return updateFilter(state, "genres", (item) => {
@@ -220,12 +218,9 @@ export function reducer(state: State, action: Action): State {
     }
     case ActionType.FILTER_VIEWING_YEAR: {
       return updateFilter(state, "viewingYear", (item) => {
-        const viewingYear = item.viewingYear;
-        if (!viewingYear) {
-          return true;
-        }
         return (
-          viewingYear >= action.values[0] && viewingYear <= action.values[1]
+          item.viewingYear >= action.values[0] &&
+          item.viewingYear <= action.values[1]
         );
       });
     }
