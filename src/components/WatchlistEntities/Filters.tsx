@@ -29,7 +29,7 @@ export function Filters({
         }
       >
         <option value="name-asc">Name (A &rarr; Z)</option>
-        <option value="name-desc">Name (Z &larr; A)</option>
+        <option value="name-desc">Name (Z &rarr; A)</option>
         <option value="title-count-desc">Title Count (Most First)</option>
         <option value="title-count-asc">Title Count (Fewest First)</option>
         <option value="review-count-desc">Review Count (Most First)</option>

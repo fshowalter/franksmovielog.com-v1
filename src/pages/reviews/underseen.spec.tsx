@@ -29,12 +29,28 @@ describe("/reviews/underseen/", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
-  it("can sort by title", async () => {
+  it("can sort by title (A → Z)", async () => {
     expect.hasAssertions();
 
     render(<UnderseenGemsPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (A → Z)"
+    );
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can sort by title (Z → A)", async () => {
+    expect.hasAssertions();
+
+    render(<UnderseenGemsPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (Z → A)"
+    );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });

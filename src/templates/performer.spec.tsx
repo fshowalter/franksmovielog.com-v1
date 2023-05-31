@@ -13,7 +13,7 @@ describe("/watchlist/performers/{slug}", () => {
   it("sets page title", () => {
     render(<Head data={data} />);
 
-    expect(document.title).toStrictEqual("Cary Grant");
+    expect(document.title).toStrictEqual("John Wayne");
   });
 
   it("can filter by title", async () => {
@@ -21,7 +21,7 @@ describe("/watchlist/performers/{slug}", () => {
     render(<PerformerTemplate data={data} />);
 
     await act(async () => {
-      await userEvent.type(screen.getByLabelText("Title"), "Suzy");
+      await userEvent.type(screen.getByLabelText("Title"), "Rio Bravo");
       await new Promise((r) => setTimeout(r, 500));
     });
 
@@ -101,6 +101,27 @@ describe("/watchlist/performers/{slug}", () => {
 
     await userEvent.selectOptions(fromInput, "1959");
     await userEvent.selectOptions(toInput, "1962");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can hide reviewed titles", async () => {
+    expect.hasAssertions();
+
+    render(<PerformerTemplate data={data} />);
+
+    await userEvent.click(screen.getByText("Hide Reviewed"));
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show hidden reviewed titles", async () => {
+    expect.hasAssertions();
+
+    render(<PerformerTemplate data={data} />);
+
+    await userEvent.click(screen.getByText("Hide Reviewed"));
+    await userEvent.click(screen.getByText("Show Reviewed"));
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });

@@ -14,7 +14,7 @@ describe("/viewings", () => {
   it("sets page title", () => {
     render(<Head />);
 
-    expect(document.title).toStrictEqual("Reviews");
+    expect(document.title).toStrictEqual("Viewing Log");
   });
 
   it("can filter by title", async () => {
@@ -22,7 +22,7 @@ describe("/viewings", () => {
     render(<ViewingsIndexPage data={data} />);
 
     await act(async () => {
-      await userEvent.type(screen.getByLabelText("Title"), "Human Tornado");
+      await userEvent.type(screen.getByLabelText("Title"), "Rio Bravo");
       await new Promise((r) => setTimeout(r, 500));
     });
 
@@ -84,8 +84,8 @@ describe("/viewings", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1973");
-    await userEvent.selectOptions(toInput, "2021");
+    await userEvent.selectOptions(fromInput, "1959");
+    await userEvent.selectOptions(toInput, "1970");
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
@@ -99,10 +99,10 @@ describe("/viewings", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1973");
-    await userEvent.selectOptions(toInput, "2021");
-    await userEvent.selectOptions(fromInput, "2009");
-    await userEvent.selectOptions(toInput, "1972");
+    await userEvent.selectOptions(fromInput, "1945");
+    await userEvent.selectOptions(toInput, "1959");
+    await userEvent.selectOptions(fromInput, "1976");
+    await userEvent.selectOptions(toInput, "1950");
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });

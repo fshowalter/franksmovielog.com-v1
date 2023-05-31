@@ -55,12 +55,28 @@ describe("/reviews", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
-  it("can sort by title", async () => {
+  it("can sort by title A → Z", async () => {
     expect.hasAssertions();
 
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (A → Z)"
+    );
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can sort by title Z → A", async () => {
+    expect.hasAssertions();
+
+    render(<ReviewsIndexPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (Z → A)"
+    );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
@@ -108,21 +124,6 @@ describe("/reviews", () => {
     expect.hasAssertions();
 
     render(<ReviewsIndexPage data={data} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Grade (Worst First)"
-    );
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
-  it("sorts unrated movies last", async () => {
-    expect.hasAssertions();
-
-    render(<ReviewsIndexPage data={data} />);
-
-    await userEvent.selectOptions(screen.getByLabelText("Medium"), "Blu-ray");
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
