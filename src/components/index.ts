@@ -8,3 +8,4 @@ export * from "./Viewings";
 export * from "./Watchlist";
 export * from "./WatchlistEntities";
 export * from "./WatchlistEntity";
+export * from "./WatchlistProgress";
