@@ -209,346 +209,346 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
               </p>
             </div>
           </div>
+        </header>
+        <section
+          class="sprinkles_display_flex_default__8lcvdk57 sprinkles_flexWrap_wrap_default__8lcvdk5s sprinkles_columnGap_32_default__8lcvdk3d sprinkles_justifyContent_center_default__8lcvdk77"
+        >
           <div
-            class="sprinkles_display_flex_default__8lcvdk57 sprinkles_flexWrap_wrap_default__8lcvdk5s sprinkles_columnGap_32_default__8lcvdk3d sprinkles_justifyContent_center_default__8lcvdk77"
+            class="sprinkles_minWidth_full_default__8lcvdkc4 sprinkles_minWidth_0_tablet__8lcvdkaq sprinkles_display_flex_default__8lcvdk57 sprinkles_flexDirection_column_default__8lcvdk5p sprinkles_alignItems_center_default__8lcvdk1g"
           >
-            <div
-              class="sprinkles_minWidth_full_default__8lcvdkc4 sprinkles_minWidth_0_tablet__8lcvdkaq sprinkles_display_flex_default__8lcvdk57 sprinkles_flexDirection_column_default__8lcvdk5p sprinkles_alignItems_center_default__8lcvdk1g"
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
+            />
+            <svg
+              height="144"
+              viewBox="0 0 36 36"
+              width="144"
             >
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgCanvas__1atywg6a)"
+                stroke-width="3.8"
               />
-              <svg
-                height="144"
-                viewBox="0 0 36 36"
-                width="144"
-              >
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgCanvas__1atywg6a)"
-                  stroke-width="3.8"
-                />
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgProgress__1atywg6b)"
-                  stroke-dasharray="8, 100"
-                  stroke-linecap="round"
-                  stroke-width="2.8"
-                />
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".5em"
-                  text-anchor="middle"
-                  x="18"
-                  y="17"
-                >
-                  8%
-                </text>
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="23"
-                >
-                  Total Progress
-                </text>
-                <text
-                  fill="var(--fgSubtle__1atywg65)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="27"
-                />
-              </svg>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgProgress__1atywg6b)"
+                stroke-dasharray="8, 100"
+                stroke-linecap="round"
+                stroke-width="2.8"
               />
-              <div
-                class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".5em"
+                text-anchor="middle"
+                x="18"
+                y="17"
               >
-                <div>
-                  287/3,217
-                </div>
-                <div
-                  class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
-                >
-                  Reviewed
-                </div>
+                8%
+              </text>
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="23"
+              >
+                Total Progress
+              </text>
+              <text
+                fill="var(--fgSubtle__1atywg65)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="27"
+              />
+            </svg>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
+            />
+            <div
+              class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
+            >
+              <div>
+                287/3,217
               </div>
-            </div>
-            <div>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
-              />
-              <svg
-                height="144"
-                viewBox="0 0 36 36"
-                width="144"
-              >
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgCanvas__1atywg6a)"
-                  stroke-width="3.8"
-                />
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgProgress__1atywg6b)"
-                  stroke-dasharray="10, 100"
-                  stroke-linecap="round"
-                  stroke-width="2.8"
-                />
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".5em"
-                  text-anchor="middle"
-                  x="18"
-                  y="17"
-                >
-                  10%
-                </text>
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="23"
-                >
-                  Director
-                </text>
-                <text
-                  fill="var(--fgSubtle__1atywg65)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="27"
-                >
-                  Titles
-                </text>
-              </svg>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
-              />
               <div
-                class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
+                class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
               >
-                <div>
-                  121/1,168
-                </div>
-                <div
-                  class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
-                >
-                  Reviewed
-                </div>
-              </div>
-            </div>
-            <div>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
-              />
-              <svg
-                height="144"
-                viewBox="0 0 36 36"
-                width="144"
-              >
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgCanvas__1atywg6a)"
-                  stroke-width="3.8"
-                />
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgProgress__1atywg6b)"
-                  stroke-dasharray="5, 100"
-                  stroke-linecap="round"
-                  stroke-width="2.8"
-                />
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".5em"
-                  text-anchor="middle"
-                  x="18"
-                  y="17"
-                >
-                  5%
-                </text>
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="23"
-                >
-                  Performer
-                </text>
-                <text
-                  fill="var(--fgSubtle__1atywg65)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="27"
-                >
-                  Titles
-                </text>
-              </svg>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
-              />
-              <div
-                class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
-              >
-                <div>
-                  127/2,137
-                </div>
-                <div
-                  class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
-                >
-                  Reviewed
-                </div>
-              </div>
-            </div>
-            <div>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
-              />
-              <svg
-                height="144"
-                viewBox="0 0 36 36"
-                width="144"
-              >
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgCanvas__1atywg6a)"
-                  stroke-width="3.8"
-                />
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgProgress__1atywg6b)"
-                  stroke-dasharray="5, 100"
-                  stroke-linecap="round"
-                  stroke-width="2.8"
-                />
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".5em"
-                  text-anchor="middle"
-                  x="18"
-                  y="17"
-                >
-                  5%
-                </text>
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="23"
-                >
-                  Writer
-                </text>
-                <text
-                  fill="var(--fgSubtle__1atywg65)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="27"
-                >
-                  Titles
-                </text>
-              </svg>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
-              />
-              <div
-                class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
-              >
-                <div>
-                  8/145
-                </div>
-                <div
-                  class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
-                >
-                  Reviewed
-                </div>
-              </div>
-            </div>
-            <div>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
-              />
-              <svg
-                height="144"
-                viewBox="0 0 36 36"
-                width="144"
-              >
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgCanvas__1atywg6a)"
-                  stroke-width="3.8"
-                />
-                <path
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="var(--bgProgress__1atywg6b)"
-                  stroke-dasharray="26, 100"
-                  stroke-linecap="round"
-                  stroke-width="2.8"
-                />
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".5em"
-                  text-anchor="middle"
-                  x="18"
-                  y="17"
-                >
-                  26%
-                </text>
-                <text
-                  fill="var(--fgDefault__1atywg63)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="23"
-                >
-                  Collection
-                </text>
-                <text
-                  fill="var(--fgSubtle__1atywg65)"
-                  font-size=".225em"
-                  text-anchor="middle"
-                  x="18"
-                  y="27"
-                >
-                  Titles
-                </text>
-              </svg>
-              <span
-                class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
-              />
-              <div
-                class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
-              >
-                <div>
-                  54/204
-                </div>
-                <div
-                  class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
-                >
-                  Reviewed
-                </div>
+                Reviewed
               </div>
             </div>
           </div>
-        </header>
+          <div>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
+            />
+            <svg
+              height="144"
+              viewBox="0 0 36 36"
+              width="144"
+            >
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgCanvas__1atywg6a)"
+                stroke-width="3.8"
+              />
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgProgress__1atywg6b)"
+                stroke-dasharray="10, 100"
+                stroke-linecap="round"
+                stroke-width="2.8"
+              />
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".5em"
+                text-anchor="middle"
+                x="18"
+                y="17"
+              >
+                10%
+              </text>
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="23"
+              >
+                Director
+              </text>
+              <text
+                fill="var(--fgSubtle__1atywg65)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="27"
+              >
+                Titles
+              </text>
+            </svg>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
+            />
+            <div
+              class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
+            >
+              <div>
+                121/1,168
+              </div>
+              <div
+                class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
+              >
+                Reviewed
+              </div>
+            </div>
+          </div>
+          <div>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
+            />
+            <svg
+              height="144"
+              viewBox="0 0 36 36"
+              width="144"
+            >
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgCanvas__1atywg6a)"
+                stroke-width="3.8"
+              />
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgProgress__1atywg6b)"
+                stroke-dasharray="5, 100"
+                stroke-linecap="round"
+                stroke-width="2.8"
+              />
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".5em"
+                text-anchor="middle"
+                x="18"
+                y="17"
+              >
+                5%
+              </text>
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="23"
+              >
+                Performer
+              </text>
+              <text
+                fill="var(--fgSubtle__1atywg65)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="27"
+              >
+                Titles
+              </text>
+            </svg>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
+            />
+            <div
+              class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
+            >
+              <div>
+                127/2,137
+              </div>
+              <div
+                class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
+              >
+                Reviewed
+              </div>
+            </div>
+          </div>
+          <div>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
+            />
+            <svg
+              height="144"
+              viewBox="0 0 36 36"
+              width="144"
+            >
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgCanvas__1atywg6a)"
+                stroke-width="3.8"
+              />
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgProgress__1atywg6b)"
+                stroke-dasharray="5, 100"
+                stroke-linecap="round"
+                stroke-width="2.8"
+              />
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".5em"
+                text-anchor="middle"
+                x="18"
+                y="17"
+              >
+                5%
+              </text>
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="23"
+              >
+                Writer
+              </text>
+              <text
+                fill="var(--fgSubtle__1atywg65)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="27"
+              >
+                Titles
+              </text>
+            </svg>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
+            />
+            <div
+              class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
+            >
+              <div>
+                8/145
+              </div>
+              <div
+                class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
+              >
+                Reviewed
+              </div>
+            </div>
+          </div>
+          <div>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_32_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_32_default__8lcvdk9y sprinkles_display_block_default__8lcvdk51"
+            />
+            <svg
+              height="144"
+              viewBox="0 0 36 36"
+              width="144"
+            >
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgCanvas__1atywg6a)"
+                stroke-width="3.8"
+              />
+              <path
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                fill="none"
+                stroke="var(--bgProgress__1atywg6b)"
+                stroke-dasharray="26, 100"
+                stroke-linecap="round"
+                stroke-width="2.8"
+              />
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".5em"
+                text-anchor="middle"
+                x="18"
+                y="17"
+              >
+                26%
+              </text>
+              <text
+                fill="var(--fgDefault__1atywg63)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="23"
+              >
+                Collection
+              </text>
+              <text
+                fill="var(--fgSubtle__1atywg65)"
+                font-size=".225em"
+                text-anchor="middle"
+                x="18"
+                y="27"
+              >
+                Titles
+              </text>
+            </svg>
+            <span
+              class="sprinkles_width_px_default__8lcvdkmp sprinkles_height_8_default__8lcvdk64 sprinkles_minWidth_px_default__8lcvdkby sprinkles_minHeight_8_default__8lcvdk9p sprinkles_display_block_default__8lcvdk51"
+            />
+            <div
+              class="sprinkles_color_subtle__8lcvdk8 sprinkles_textAlign_center__8lcvdk17"
+            >
+              <div>
+                54/204
+              </div>
+              <div
+                class="sprinkles_fontSize_small__8lcvdkj sprinkles_lineHeight_16__8lcvdkx"
+              >
+                Reviewed
+              </div>
+            </div>
+          </div>
+        </section>
         <div
           class="sprinkles_paddingLeft_0_default__8lcvdkdy sprinkles_paddingLeft_gutter_tablet__8lcvdkft sprinkles_paddingLeft_pageMargin_desktop__8lcvdkfx sprinkles_paddingRight_0_default__8lcvdkg1 sprinkles_paddingRight_gutter_tablet__8lcvdkhw sprinkles_paddingRight_pageMargin_desktop__8lcvdki0"
         >
@@ -607,7 +607,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/22
                   </td>
@@ -635,7 +635,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/32
                   </td>
@@ -663,7 +663,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/44
                   </td>
@@ -691,7 +691,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/26
                   </td>
@@ -719,7 +719,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     16/30
                   </td>
@@ -747,7 +747,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     4/20
                   </td>
@@ -775,7 +775,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     6/23
                   </td>
@@ -803,7 +803,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/17
                   </td>
@@ -859,7 +859,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     3/31
                   </td>
@@ -915,7 +915,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/38
                   </td>
@@ -943,7 +943,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     21/38
                   </td>
@@ -1027,7 +1027,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     3/18
                   </td>
@@ -1055,7 +1055,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     12/62
                   </td>
@@ -1083,7 +1083,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/29
                   </td>
@@ -1139,7 +1139,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/43
                   </td>
@@ -1167,7 +1167,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/22
                   </td>
@@ -1195,7 +1195,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     8/28
                   </td>
@@ -1223,7 +1223,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/31
                   </td>
@@ -1251,7 +1251,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/31
                   </td>
@@ -1307,7 +1307,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/12
                   </td>
@@ -1335,7 +1335,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/7
                   </td>
@@ -1447,7 +1447,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/9
                   </td>
@@ -1559,7 +1559,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/36
                   </td>
@@ -1587,7 +1587,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/56
                   </td>
@@ -1615,7 +1615,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/23
                   </td>
@@ -1643,7 +1643,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/14
                   </td>
@@ -1699,7 +1699,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/15
                   </td>
@@ -1755,7 +1755,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/13
                   </td>
@@ -1783,7 +1783,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/15
                   </td>
@@ -1811,7 +1811,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/9
                   </td>
@@ -1839,7 +1839,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/17
                   </td>
@@ -1895,7 +1895,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     6/21
                   </td>
@@ -1923,7 +1923,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/19
                   </td>
@@ -1986,7 +1986,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     8/63
                   </td>
@@ -2042,7 +2042,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     7/87
                   </td>
@@ -2070,7 +2070,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     18/98
                   </td>
@@ -2098,7 +2098,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/100
                   </td>
@@ -2126,7 +2126,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     6/73
                   </td>
@@ -2154,7 +2154,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     4/184
                   </td>
@@ -2182,7 +2182,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/39
                   </td>
@@ -2210,7 +2210,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/54
                   </td>
@@ -2238,7 +2238,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/55
                   </td>
@@ -2266,7 +2266,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/78
                   </td>
@@ -2294,7 +2294,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     12/73
                   </td>
@@ -2322,7 +2322,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     3/57
                   </td>
@@ -2350,7 +2350,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/62
                   </td>
@@ -2378,7 +2378,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/67
                   </td>
@@ -2434,7 +2434,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/79
                   </td>
@@ -2462,7 +2462,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     13/146
                   </td>
@@ -2518,7 +2518,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/26
                   </td>
@@ -2574,7 +2574,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     7/88
                   </td>
@@ -2602,7 +2602,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/107
                   </td>
@@ -2714,7 +2714,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     3/98
                   </td>
@@ -2742,7 +2742,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/41
                   </td>
@@ -2770,7 +2770,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/69
                   </td>
@@ -2798,7 +2798,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     17/60
                   </td>
@@ -2889,7 +2889,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     4/13
                   </td>
@@ -2917,7 +2917,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/26
                   </td>
@@ -2945,7 +2945,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/12
                   </td>
@@ -2973,7 +2973,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/10
                   </td>
@@ -3029,7 +3029,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     1/57
                   </td>
@@ -3120,7 +3120,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     9/12
                   </td>
@@ -3148,7 +3148,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     5/12
                   </td>
@@ -3176,7 +3176,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     7/94
                   </td>
@@ -3232,7 +3232,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     6/27
                   </td>
@@ -3260,7 +3260,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     2/5
                   </td>
@@ -3288,7 +3288,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     6/9
                   </td>
@@ -3344,7 +3344,7 @@ exports[`/watchlist/progress/ renders watchlist progress 1`] = `
                     </div>
                   </td>
                   <td
-                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv"
+                    class="sprinkles_paddingTop_0_default__8lcvdki4 sprinkles_paddingBottom_0_default__8lcvdkcs sprinkles_textAlign_right__8lcvdk16 sprinkles_paddingRight_gutter_default__8lcvdkhv sprinkles_color_subtle__8lcvdk8"
                   >
                     3/29
                   </td>
