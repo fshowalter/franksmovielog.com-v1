@@ -1,18 +1,24 @@
 import { isObjectType } from "graphql";
 import type { GatsbyNode, GatsbyResolveInfo } from "../type-definitions";
 
-export async function resolveFieldForNode<T>(
-  fieldName: string,
-  nodeItem: GatsbyNode | null,
-  context: unknown,
-  info: GatsbyResolveInfo,
-  args: Record<string, unknown>
-): Promise<T | null> {
-  if (!nodeItem) {
+export async function resolveFieldForNode<T>({
+  fieldName,
+  source,
+  context,
+  info,
+  args = {},
+}: {
+  fieldName: string;
+  source: GatsbyNode | null;
+  context: unknown;
+  info: GatsbyResolveInfo;
+  args?: Record<string, unknown>;
+}): Promise<T | null> {
+  if (!source) {
     return null;
   }
 
-  const type = info.schema.getType(nodeItem.internal.type);
+  const type = info.schema.getType(source.internal.type);
 
   if (!isObjectType(type)) {
     return null;
@@ -24,7 +30,7 @@ export async function resolveFieldForNode<T>(
     return null;
   }
 
-  return (await resolver(nodeItem, args, context, {
+  return (await resolver(source, args, context, {
     ...info,
     fieldName,
   })) as T;

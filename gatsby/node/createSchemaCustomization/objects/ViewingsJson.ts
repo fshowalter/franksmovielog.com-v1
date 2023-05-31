@@ -114,44 +114,44 @@ export const commonViewingFields = {
       });
 
       if ((await totalCount()) > 1) {
-        const viewingNoteNode = await resolveFieldForNode<MarkdownNode>(
-          "viewingNote",
+        const viewingNoteNode = await resolveFieldForNode<MarkdownNode>({
+          fieldName: "viewingNote",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         if (viewingNoteNode) {
-          return resolveFieldForNode<string>(
-            "excerptHtml",
-            viewingNoteNode,
+          return resolveFieldForNode<string>({
+            fieldName: "excerptHtml",
+            source: viewingNoteNode,
             context,
             info,
-            args
-          );
+            args,
+          });
         }
       }
 
-      const reviewNode = await resolveFieldForNode<MarkdownNode>(
-        "review",
-        reviewedMovieNode,
+      const reviewNode = await resolveFieldForNode<MarkdownNode>({
+        fieldName: "review",
+        source: reviewedMovieNode,
         context,
         info,
-        args
-      );
+        args,
+      });
 
       if (!reviewNode) {
         return null;
       }
 
-      return await resolveFieldForNode<string>(
-        "excerptHtml",
-        reviewNode,
+      return await resolveFieldForNode<string>({
+        fieldName: "excerptHtml",
+        source: reviewNode,
         context,
         info,
-        args
-      );
+        args,
+      });
     },
   },
   hasReviewOrNote: {
@@ -171,25 +171,25 @@ export const commonViewingFields = {
         return false;
       }
 
-      const reviewNode = await resolveFieldForNode<MarkdownNode>(
-        "review",
-        reviewedMovieNode,
+      const reviewNode = await resolveFieldForNode<MarkdownNode>({
+        fieldName: "review",
+        source: reviewedMovieNode,
         context,
         info,
-        args
-      );
+        args,
+      });
 
       if (!reviewNode) {
         return false;
       }
 
-      const reviewDate = await resolveFieldForNode<string>(
-        "date",
-        reviewNode,
+      const reviewDate = await resolveFieldForNode<string>({
+        fieldName: "date",
+        source: reviewNode,
         context,
         info,
-        { formatString: "YYYY-MM-DD" }
-      );
+        args: { formatString: "YYYY-MM-DD" },
+      });
 
       if (!reviewDate) {
         return false;
@@ -199,13 +199,13 @@ export const commonViewingFields = {
         return true;
       }
 
-      const viewingNoteNode = await resolveFieldForNode<MarkdownNode>(
-        "viewingNote",
+      const viewingNoteNode = await resolveFieldForNode<MarkdownNode>({
+        fieldName: "viewingNote",
         source,
         context,
         info,
-        args
-      );
+        args,
+      });
 
       if (viewingNoteNode) {
         return true;

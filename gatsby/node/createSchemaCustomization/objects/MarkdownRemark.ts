@@ -70,13 +70,13 @@ export const MarkdownRemark = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         return frontMatter ? frontMatter.date : null;
       },
@@ -93,25 +93,25 @@ export const MarkdownRemark = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         if (!frontMatter) {
           return null;
         }
 
-        const htmlAst = await resolveFieldForNode<Element>(
-          "htmlAst",
+        const htmlAst = await resolveFieldForNode<Element>({
+          fieldName: "htmlAst",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         if (!htmlAst) {
           return null;
