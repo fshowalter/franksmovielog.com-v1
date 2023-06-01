@@ -5,5 +5,20 @@
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["at any time"]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "remark",
+        "mdast-util-to-hast",
+        "hast-util-to-html",
+        "unist-util-visit"
+      ],
+      "groupName": "esm dependent"
+    },
+    {
+      "matchPackageNames": ["@typescript-eslint/*"],
+      "groupName": "@typescript/eslint"
+    }
+  ]
 }
