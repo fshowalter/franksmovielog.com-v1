@@ -8,13 +8,14 @@
   },
   "packageRules": [
     {
+      "groupName": "esm dependent",
+      "enabled": false,
       "matchPackageNames": [
         "remark",
         "mdast-util-to-hast",
         "hast-util-to-html",
         "unist-util-visit"
-      ],
-      "groupName": "esm dependent"
+      ]
     },
     {
       "matchPackageNames": ["@typescript-eslint/*"],
