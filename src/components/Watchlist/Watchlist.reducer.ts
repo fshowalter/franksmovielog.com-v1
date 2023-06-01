@@ -3,10 +3,8 @@ import {
   buildGroupItems,
   collator,
   filterTools,
-  sortNumberAsc,
-  sortNumberDesc,
-  sortStringAsc,
-  sortStringDesc,
+  sortNumber,
+  sortString,
 } from "../../utils";
 
 export type Sort =
@@ -29,13 +27,13 @@ function sortItems(items: Queries.WatchlistItemFragment[], sortOrder: Sort) {
       b: Queries.WatchlistItemFragment
     ) => number
   > = {
-    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
-    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
+    "release-date-desc": (a, b) =>
+      sortString(a.releaseDate, b.releaseDate) * -1,
+    "release-date-asc": (a, b) => sortString(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-    "grade-asc": (a, b) =>
-      sortNumberAsc(a.gradeValue ?? 50, b.gradeValue ?? 50),
+    "grade-asc": (a, b) => sortNumber(a.gradeValue ?? 50, b.gradeValue ?? 50),
     "grade-desc": (a, b) =>
-      sortNumberDesc(a.gradeValue ?? -1, b.gradeValue ?? -1),
+      sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
   };
 
   const comparer = sortMap[sortOrder];

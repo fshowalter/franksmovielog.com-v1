@@ -1,4 +1,4 @@
-export { buildGroupItems } from "./buildGroupItems";
+export * from "./buildGroupItems";
 export * from "./filterTools";
-export * from "./sortUtils";
-export { toSentenceArray } from "./toSentenceArray";
+export * from "./sortTools";
+export * from "./toSentenceArray";

@@ -2,10 +2,8 @@ import {
   FilterableState,
   collator,
   filterTools,
-  sortNumberAsc,
-  sortNumberDesc,
-  sortStringAsc,
-  sortStringDesc,
+  sortNumber,
+  sortString,
 } from "../../utils";
 
 const SHOW_COUNT_DEFAULT = 100;
@@ -24,10 +22,11 @@ function sortItems(items: Queries.ViewingsItemFragment[], sortOrder: Sort) {
     Sort,
     (a: Queries.ViewingsItemFragment, b: Queries.ViewingsItemFragment) => number
   > = {
-    "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
-    "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
-    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
-    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
+    "viewing-date-desc": (a, b) => sortNumber(a.sequence, b.sequence) * -1,
+    "viewing-date-asc": (a, b) => sortNumber(a.sequence, b.sequence),
+    "release-date-desc": (a, b) =>
+      sortString(a.releaseDate, b.releaseDate) * -1,
+    "release-date-asc": (a, b) => sortString(a.releaseDate, b.releaseDate),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
   };
 

@@ -3,10 +3,8 @@ import {
   buildGroupItems,
   collator,
   filterTools,
-  sortNumberAsc,
-  sortNumberDesc,
-  sortStringAsc,
-  sortStringDesc,
+  sortNumber,
+  sortString,
 } from "../../utils";
 
 const SHOW_COUNT_DEFAULT = 100;
@@ -30,12 +28,13 @@ function sortItems(items: Queries.UnderseenItemFragment[], sortOrder: Sort) {
       b: Queries.UnderseenItemFragment
     ) => number
   > = {
-    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
-    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
+    "release-date-desc": (a, b) =>
+      sortString(a.releaseDate, b.releaseDate) * -1,
+    "release-date-asc": (a, b) => sortString(a.releaseDate, b.releaseDate),
     "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
-    "grade-asc": (a, b) => sortNumberAsc(a.gradeValue, b.gradeValue),
-    "grade-desc": (a, b) => sortNumberDesc(a.gradeValue, b.gradeValue),
+    "grade-asc": (a, b) => sortNumber(a.gradeValue, b.gradeValue),
+    "grade-desc": (a, b) => sortNumber(a.gradeValue, b.gradeValue) * -1,
   };
 
   const comparer = sortMap[sortOrder];

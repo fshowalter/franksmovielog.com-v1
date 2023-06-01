@@ -1,10 +1,4 @@
-import {
-  filterCollection,
-  sortNumberAsc,
-  sortNumberDesc,
-  sortStringAsc,
-  sortStringDesc,
-} from "../../utils";
+import { filterCollection, sortNumber, sortString } from "../../utils";
 
 export enum ActionType {
   FILTER_NAME = "FILTER_NAME",
@@ -30,12 +24,13 @@ function sortEntities(
       b: Queries.WatchlistEntitiesItemFragment
     ) => number
   > = {
-    "name-asc": (a, b) => sortStringAsc(a.name, b.name),
-    "name-desc": (a, b) => sortStringDesc(a.name, b.name),
-    "title-count-asc": (a, b) => sortNumberAsc(a.titleCount, b.titleCount),
-    "title-count-desc": (a, b) => sortNumberDesc(a.titleCount, b.titleCount),
-    "review-count-asc": (a, b) => sortNumberAsc(a.reviewCount, b.reviewCount),
-    "review-count-desc": (a, b) => sortNumberDesc(a.reviewCount, b.reviewCount),
+    "name-asc": (a, b) => sortString(a.name, b.name),
+    "name-desc": (a, b) => sortString(a.name, b.name) * -1,
+    "title-count-asc": (a, b) => sortNumber(a.titleCount, b.titleCount),
+    "title-count-desc": (a, b) => sortNumber(a.titleCount, b.titleCount) * -1,
+    "review-count-asc": (a, b) => sortNumber(a.reviewCount, b.reviewCount),
+    "review-count-desc": (a, b) =>
+      sortNumber(a.reviewCount, b.reviewCount) * -1,
   };
 
   const comparer = sortMap[sortOrder];
