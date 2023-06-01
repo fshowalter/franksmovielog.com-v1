@@ -3,11 +3,11 @@ import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
 import { LongFormText } from "../LongFormText";
 
-interface IReviewContentProps extends IBoxProps {
+interface IContentProps extends IBoxProps {
   review: Queries.ReviewContentFragment;
 }
 
-export function ReviewContent({ review, ...rest }: IReviewContentProps) {
+export function Content({ review, ...rest }: IContentProps) {
   return (
     <Box display="flex" flexDirection="column" rowGap={32} {...rest}>
       <Box display="flex" flexDirection="column" alignItems="inherit">

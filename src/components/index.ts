@@ -1,6 +1,7 @@
 export * from "./Article";
 export * from "./HeadBuilder";
 export * from "./Overrated";
+export * from "./Review";
 export * from "./Reviews";
 export * from "./Stats";
 export * from "./Underseen";

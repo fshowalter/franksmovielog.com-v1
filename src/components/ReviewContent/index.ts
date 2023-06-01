@@ -1,1 +1,0 @@
-export { ReviewContent } from "./ReviewContent";

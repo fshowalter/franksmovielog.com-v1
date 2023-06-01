@@ -2,7 +2,32 @@ import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
-import { avatarStyle, linkStyle } from "./ReviewWatchlistLinks.css";
+import { avatarStyle, linkStyle } from "./WatchlistLinks.css";
+
+interface IWatchlistLinksProps extends IBoxProps {
+  watchlist: Queries.WatchlistLinksFragment;
+}
+
+export function WatchlistLinks({
+  watchlist,
+  ...rest
+}: IWatchlistLinksProps): JSX.Element {
+  return (
+    <Box
+      as="ul"
+      display="flex"
+      flexWrap="wrap"
+      columnGap={8}
+      rowGap={8}
+      {...rest}
+    >
+      <ListItemsForEntities entities={watchlist.collections} />
+      <ListItemsForEntities entities={watchlist.directors} />
+      <ListItemsForEntities entities={watchlist.performers} />
+      <ListItemsForEntities entities={watchlist.writers} />
+    </Box>
+  );
+}
 
 function ListItemsForEntities({
   entities,
@@ -45,31 +70,6 @@ function ListItemsForEntities({
           );
         })}
     </>
-  );
-}
-
-interface IWatchlistLinksProps extends IBoxProps {
-  watchlist: Queries.WatchlistLinksFragment;
-}
-
-export function ReviewWatchlistLinks({
-  watchlist,
-  ...rest
-}: IWatchlistLinksProps): JSX.Element {
-  return (
-    <Box
-      as="ul"
-      display="flex"
-      flexWrap="wrap"
-      columnGap={8}
-      rowGap={8}
-      {...rest}
-    >
-      <ListItemsForEntities entities={watchlist.collections} />
-      <ListItemsForEntities entities={watchlist.directors} />
-      <ListItemsForEntities entities={watchlist.performers} />
-      <ListItemsForEntities entities={watchlist.writers} />
-    </Box>
   );
 }
 

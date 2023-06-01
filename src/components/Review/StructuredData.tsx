@@ -8,28 +8,28 @@ const gradeMap: Record<string, number> = {
   F: 1,
 };
 
-export function ReviewStructuredData({
-  data,
+export function StructuredData({
+  review,
 }: {
-  data: Queries.StructuredDataFragment;
+  review: Queries.StructuredDataFragment;
 }) {
   const structuredData = {
     "@context": "http://schema.org",
     "@type": "Review",
     itemReviewed: {
       "@type": "Movie",
-      name: data.title,
-      sameAs: `http://www.imdb.com/title/${data.imdbId}/`,
-      image: data.seoImage?.childImageSharp?.resize?.src,
-      dateCreated: data.year,
+      name: review.title,
+      sameAs: `http://www.imdb.com/title/${review.imdbId}/`,
+      image: review.seoImage?.childImageSharp?.resize?.src,
+      dateCreated: review.year,
       director: {
         "@type": "Person",
-        name: data.directorNames[0],
+        name: review.directorNames[0],
       },
     },
     reviewRating: {
       "@type": "Rating",
-      ratingValue: gradeMap[data.grade[0]],
+      ratingValue: gradeMap[review.grade[0]],
     },
     author: {
       "@type": "Person",

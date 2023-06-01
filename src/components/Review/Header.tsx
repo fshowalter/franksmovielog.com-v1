@@ -3,7 +3,25 @@ import { Box, IBoxProps } from "../Box";
 import { PageTitle } from "../PageTitle";
 
 interface IHeaderProps extends IBoxProps {
-  movie: Queries.ReviewHeaderFragment;
+  review: Queries.ReviewHeaderFragment;
+}
+
+export function Header({ review, ...rest }: IHeaderProps) {
+  return (
+    <Box
+      as="header"
+      {...rest}
+      display="flex"
+      flexDirection="column"
+      rowGap={16}
+    >
+      <Box textAlign="inherit">
+        <PageTitle>{review.title}</PageTitle>
+        <OriginalTitle originalTitle={review.originalTitle} />
+      </Box>
+      <Meta review={review} />
+    </Box>
+  );
 }
 
 function OriginalTitle({ originalTitle }: { originalTitle: string | null }) {
@@ -14,11 +32,11 @@ function OriginalTitle({ originalTitle }: { originalTitle: string | null }) {
   return <Box color="muted">({originalTitle})</Box>;
 }
 
-function Meta({ movie }: { movie: Queries.ReviewHeaderFragment }) {
+function Meta({ review }: { review: Queries.ReviewHeaderFragment }) {
   return (
     <Box color="muted">
-      {movie.year} <span>|</span>{" "}
-      {movie.countries.reduce<JSX.Element | null>((acc, country) => {
+      {review.year} <span>|</span>{" "}
+      {review.countries.reduce<JSX.Element | null>((acc, country) => {
         if (acc === null) {
           return <>{country}</>;
         }
@@ -31,7 +49,7 @@ function Meta({ movie }: { movie: Queries.ReviewHeaderFragment }) {
           </>
         );
       }, null)}{" "}
-      <span>|</span> {movie.runtimeMinutes}
+      <span>|</span> {review.runtimeMinutes}
       &#x02009;min{" "}
       <Box as="span">
         <span>|</span>{" "}
@@ -39,24 +57,6 @@ function Meta({ movie }: { movie: Queries.ReviewHeaderFragment }) {
           More...
         </Box>
       </Box>
-    </Box>
-  );
-}
-
-export function ReviewHeader({ movie, ...rest }: IHeaderProps) {
-  return (
-    <Box
-      as="header"
-      {...rest}
-      display="flex"
-      flexDirection="column"
-      rowGap={16}
-    >
-      <Box textAlign="inherit">
-        <PageTitle>{movie.title}</PageTitle>
-        <OriginalTitle originalTitle={movie.originalTitle} />
-      </Box>
-      <Meta movie={movie} />
     </Box>
   );
 }

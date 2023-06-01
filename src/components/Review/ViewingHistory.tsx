@@ -4,9 +4,9 @@ import { Spacer } from "../Spacer";
 import { ViewingHistoryEntry } from "./ViewingHistoryEntry";
 
 interface IIViewingHistoryProps extends IBoxProps {
-  movie: Queries.ViewingHistoryFragment;
+  review: Queries.ViewingHistoryFragment;
 }
-export function ViewingHistory({ movie, ...rest }: IIViewingHistoryProps) {
+export function ViewingHistory({ review, ...rest }: IIViewingHistoryProps) {
   return (
     <Box {...rest}>
       <Box
@@ -22,7 +22,7 @@ export function ViewingHistory({ movie, ...rest }: IIViewingHistoryProps) {
         <Spacer size={8} axis="vertical" />
       </Box>
       <Box as="ul">
-        {movie.viewings.map((viewing) => (
+        {review.viewings.map((viewing) => (
           <ViewingHistoryEntry
             as="li"
             key={viewing.sequence}

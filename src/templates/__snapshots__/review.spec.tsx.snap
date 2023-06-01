@@ -214,7 +214,7 @@ exports[`/reviews/{slug} renders 1`] = `
           </div>
         </header>
         <div
-          class="gatsby-image-wrapper gatsby-image-wrapper-constrained review_stillMarginStyle__12i0kws0"
+          class="gatsby-image-wrapper gatsby-image-wrapper-constrained Review_stillMarginStyle__1glpsbl0"
           data-gatsby-image-wrapper=""
           style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
         >
@@ -369,10 +369,10 @@ exports[`/reviews/{slug} renders 1`] = `
           </h3>
           <ul>
             <div
-              class="ViewingHistoryEntry_gridStyle__7xjb261 sprinkles_paddingLeft_gutter_default__8lcvdkfw sprinkles_paddingRight_gutter_default__8lcvdkhz sprinkles_backgroundColor_zebra_default__8lcvdk2k sprinkles_display_block_default__8lcvdk55"
+              class="ViewingHistoryEntry_gridStyle__8ppdi31 sprinkles_paddingLeft_gutter_default__8lcvdkfw sprinkles_paddingRight_gutter_default__8lcvdkhz sprinkles_backgroundColor_zebra_default__8lcvdk2k sprinkles_display_block_default__8lcvdk55"
             >
               <div
-                class="ViewingHistoryEntry_gridAreas_icon__7xjb262"
+                class="ViewingHistoryEntry_gridAreas_icon__8ppdi32"
               >
                 <svg
                   class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -400,7 +400,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__7xjb263"
+                class="ViewingHistoryEntry_gridAreas_date__8ppdi33"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5k"
@@ -435,17 +435,17 @@ exports[`/reviews/{slug} renders 1`] = `
                 </span>
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_venue__7xjb266"
+                class="ViewingHistoryEntry_gridAreas_venue__8ppdi36"
               />
               <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__7xjb267"
+                class="ViewingHistoryEntry_gridAreas_viewingNote__8ppdi37"
               />
             </div>
             <div
-              class="ViewingHistoryEntry_gridStyle__7xjb261 sprinkles_paddingLeft_gutter_default__8lcvdkfw sprinkles_paddingRight_gutter_default__8lcvdkhz sprinkles_backgroundColor_zebra_default__8lcvdk2k sprinkles_display_block_default__8lcvdk55"
+              class="ViewingHistoryEntry_gridStyle__8ppdi31 sprinkles_paddingLeft_gutter_default__8lcvdkfw sprinkles_paddingRight_gutter_default__8lcvdkhz sprinkles_backgroundColor_zebra_default__8lcvdk2k sprinkles_display_block_default__8lcvdk55"
             >
               <div
-                class="ViewingHistoryEntry_gridAreas_icon__7xjb262"
+                class="ViewingHistoryEntry_gridAreas_icon__8ppdi32"
               >
                 <svg
                   class="DateIcon_iconStyle__793whb0 SvgIcon_iconStyle__agywp20"
@@ -473,7 +473,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__7xjb263"
+                class="ViewingHistoryEntry_gridAreas_date__8ppdi33"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5k"
@@ -495,10 +495,10 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_venue__7xjb266"
+                class="ViewingHistoryEntry_gridAreas_venue__8ppdi36"
               />
               <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__7xjb267"
+                class="ViewingHistoryEntry_gridAreas_viewingNote__8ppdi37"
               />
             </div>
           </ul>
@@ -511,10 +511,10 @@ exports[`/reviews/{slug} renders 1`] = `
           id="credits"
         >
           <div
-            class="Credits_posterFloatStyle__1l00qpw2"
+            class="Credits_posterFloatStyle__183gtw2"
           >
             <div
-              class="gatsby-image-wrapper gatsby-image-wrapper-constrained Credits_posterStyle__1l00qpw0 sprinkles_borderRadius_8__8lcvdk2 sprinkles_transform_safariBorderRadiusFix__8lcvdk1c"
+              class="gatsby-image-wrapper gatsby-image-wrapper-constrained Credits_posterStyle__183gtw0 sprinkles_borderRadius_8__8lcvdk2 sprinkles_transform_safariBorderRadiusFix__8lcvdk1c"
               data-gatsby-image-wrapper=""
               style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
             >
@@ -561,7 +561,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </div>
           </div>
           <header
-            class="Credits_titleStyle__1l00qpw1 sprinkles_fontSize_large__8lcvdkn sprinkles_paddingBottom_24_default__8lcvdkd8"
+            class="Credits_titleStyle__183gtw1 sprinkles_fontSize_large__8lcvdkn sprinkles_paddingBottom_24_default__8lcvdkd8"
           >
             The Curse of Frankenstein
           </header>
@@ -569,7 +569,7 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_flexDirection_column_default__8lcvdk5t sprinkles_rowGap_24_default__8lcvdkjw"
           >
             <div
-              class="Credits_creditStyle__1l00qpw3"
+              class="Credits_creditStyle__183gtw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdks sprinkles_color_subtle__8lcvdk8"
@@ -583,7 +583,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw3"
+              class="Credits_creditStyle__183gtw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdks sprinkles_color_subtle__8lcvdk8"
@@ -597,7 +597,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw3"
+              class="Credits_creditStyle__183gtw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdks sprinkles_color_subtle__8lcvdk8"
@@ -611,7 +611,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw3"
+              class="Credits_creditStyle__183gtw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdks sprinkles_color_subtle__8lcvdk8"
@@ -625,7 +625,7 @@ exports[`/reviews/{slug} renders 1`] = `
               </dd>
             </div>
             <div
-              class="Credits_creditStyle__1l00qpw3"
+              class="Credits_creditStyle__183gtw3"
             >
               <dt
                 class="sprinkles_fontWeight_bold__8lcvdks sprinkles_color_subtle__8lcvdk8"
@@ -649,11 +649,11 @@ exports[`/reviews/{slug} renders 1`] = `
               class="sprinkles_display_block_default__8lcvdk55"
             >
               <a
-                class="ReviewWatchlistLinks_linkStyle__b06mtq1 sprinkles_paddingLeft_16_default__8lcvdkeb sprinkles_paddingRight_16_default__8lcvdkge sprinkles_paddingTop_8_default__8lcvdkie sprinkles_paddingBottom_8_default__8lcvdkd2 sprinkles_backgroundColor_inverse_default__8lcvdk2b sprinkles_display_flex_default__8lcvdk5b sprinkles_alignItems_center_default__8lcvdk1h sprinkles_whiteSpace_nowrap__8lcvdk1d sprinkles_boxShadow_borderAll_default__8lcvdk2z sprinkles_borderRadius_8__8lcvdk2"
+                class="WatchlistLinks_linkStyle__1xyfy2x1 sprinkles_paddingLeft_16_default__8lcvdkeb sprinkles_paddingRight_16_default__8lcvdkge sprinkles_paddingTop_8_default__8lcvdkie sprinkles_paddingBottom_8_default__8lcvdkd2 sprinkles_backgroundColor_inverse_default__8lcvdk2b sprinkles_display_flex_default__8lcvdk5b sprinkles_alignItems_center_default__8lcvdk1h sprinkles_whiteSpace_nowrap__8lcvdk1d sprinkles_boxShadow_borderAll_default__8lcvdk2z sprinkles_borderRadius_8__8lcvdk2"
                 href="/watchlist/performers/christopher-lee/"
               >
                 <div
-                  class="gatsby-image-wrapper ReviewWatchlistLinks_avatarStyle__b06mtq0 sprinkles_borderRadius_half__8lcvdk4 sprinkles_transform_safariBorderRadiusFix__8lcvdk1c"
+                  class="gatsby-image-wrapper WatchlistLinks_avatarStyle__1xyfy2x0 sprinkles_borderRadius_half__8lcvdk4 sprinkles_transform_safariBorderRadiusFix__8lcvdk1c"
                   data-gatsby-image-wrapper=""
                   style="position: relative; overflow: hidden; width: 40px; height: 40px;"
                 >
@@ -698,12 +698,12 @@ exports[`/reviews/{slug} renders 1`] = `
             class="sprinkles_width_px_default__8lcvdkmt sprinkles_height_32_default__8lcvdk6h sprinkles_minWidth_px_default__8lcvdkc2 sprinkles_minHeight_32_default__8lcvdka2 sprinkles_display_block_default__8lcvdk55"
           />
           <a
-            class="Credits_backToTopContainerStyle__1l00qpw5 sprinkles_paddingLeft_8_default__8lcvdke8 sprinkles_paddingRight_8_default__8lcvdkgb sprinkles_paddingTop_8_default__8lcvdkie sprinkles_paddingBottom_8_default__8lcvdkd2 sprinkles_borderRadius_8__8lcvdk2 sprinkles_boxShadow_borderAll_default__8lcvdk2z sprinkles_display_flex_default__8lcvdk5b sprinkles_maxWidth_half_default__8lcvdk92 sprinkles_alignItems_center_default__8lcvdk1h sprinkles_justifyContent_center_default__8lcvdk7b"
+            class="Credits_backToTopContainerStyle__183gtw5 sprinkles_paddingLeft_8_default__8lcvdke8 sprinkles_paddingRight_8_default__8lcvdkgb sprinkles_paddingTop_8_default__8lcvdkie sprinkles_paddingBottom_8_default__8lcvdkd2 sprinkles_borderRadius_8__8lcvdk2 sprinkles_boxShadow_borderAll_default__8lcvdk2z sprinkles_display_flex_default__8lcvdk5b sprinkles_maxWidth_half_default__8lcvdk92 sprinkles_alignItems_center_default__8lcvdk1h sprinkles_justifyContent_center_default__8lcvdk7b"
             href="#top"
           >
             Back to Top
             <svg
-              class="Credits_backToTopArrowStyle__1l00qpw4"
+              class="Credits_backToTopArrowStyle__183gtw4"
               viewBox="0 0 24 24"
             >
               <path

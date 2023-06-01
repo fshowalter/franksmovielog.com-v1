@@ -1,5 +1,5 @@
 export const data = {
-  movie: {
+  review: {
     title: "The Curse of Frankenstein",
     year: 1957,
     gradeStars: "★★★★★",
