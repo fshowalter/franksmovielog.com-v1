@@ -11,6 +11,15 @@ module.exports = {
     node: true,
     jest: true,
   },
+  rules: {
+    complexity: ["error"],
+    "max-lines": ["error", 375],
+    "max-depth": ["error"],
+    "max-params": ["error", 4],
+    "max-nested-callbacks": ["error"],
+    "max-statements": ["error", 25],
+    "max-lines-per-function": ["error", 120],
+  },
   overrides: [
     {
       files: ["*.ts", "**/*.ts", "**/*.tsx"],
@@ -48,6 +57,12 @@ module.exports = {
           },
           node: true,
         },
+      },
+    },
+    {
+      files: ["**/*.spec.ts", "**/*.spec.tsx"],
+      rules: {
+        "max-lines-per-function": ["off"],
       },
     },
   ],

@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { ArticlePage } from "../components/ArticlePage";
-import { HeadBuilder } from "../components/HeadBuilder";
+import { Article, HeadBuilder } from "../components";
 
 export function Head(): JSX.Element {
   return (
@@ -19,7 +18,7 @@ export default function HowIGradePage({
   data: Queries.HowIGradePageQuery;
 }): JSX.Element {
   return (
-    <ArticlePage
+    <Article
       image={data.still}
       alt="Empty cinema seats."
       articleText={data.page?.html}

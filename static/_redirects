@@ -1,9 +1,6 @@
 # feed
 /feed/ /feed.xml 301
 
-# viewings to reviews
-/viewings /reviews 301
-
 # stats 
 /viewings/stats /reviews/stats 301
 /viewings/stats/* /stats/:splat 301

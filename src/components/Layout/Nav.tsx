@@ -46,6 +46,9 @@ export function Nav({ activeClassName, justifyContent, ...rest }: INavProps) {
         <NavItem activeClassName={activeClassName} to="/reviews/">
           Reviews
         </NavItem>
+        <NavItem activeClassName={activeClassName} to="/viewings/">
+          Viewing Log
+        </NavItem>
         <NavItem activeClassName={activeClassName} to="/stats/">
           Stats
         </NavItem>

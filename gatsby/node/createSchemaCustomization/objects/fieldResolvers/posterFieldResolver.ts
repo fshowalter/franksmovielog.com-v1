@@ -33,6 +33,12 @@ export const posterFieldResolver = {
       });
     }
 
-    return resolveFieldForNode("poster", reviewedMovie, context, info, args);
+    return resolveFieldForNode({
+      fieldName: "poster",
+      source: reviewedMovie,
+      context,
+      info,
+      args,
+    });
   },
 };

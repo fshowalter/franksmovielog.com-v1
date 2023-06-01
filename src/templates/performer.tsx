@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder } from "../components/HeadBuilder";
-import { PosterListWithFiltersForWatchlistEntity } from "../components/PosterListWithFiltersForWatchlistEntity";
+import { HeadBuilder, WatchlistEntity } from "../components";
 
 export function Head({
   data,
@@ -23,7 +22,7 @@ export default function PerformerTemplate({
   data: Queries.PerformerTemplateQuery;
 }): JSX.Element {
   return (
-    <PosterListWithFiltersForWatchlistEntity
+    <WatchlistEntity
       entity={data.performer}
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Performer in"
@@ -40,7 +39,7 @@ export const pageQuery = graphql`
       releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
     }
     performer: watchlistEntity(id: $id) {
-      ...PosterListWithFiltersForWatchlistEntity
+      ...WatchlistEntity
     }
   }
 `;

@@ -19,25 +19,24 @@ export const proxyToReviewedMovieExtension = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const reviewedMovieNode = await resolveFieldForNode<ReviewedMovieNode>(
-          "reviewedMovie",
+        const reviewedMovieNode = await resolveFieldForNode<ReviewedMovieNode>({
+          fieldName: "reviewedMovie",
           source,
           context,
           info,
-          {}
-        );
+        });
 
         if (!reviewedMovieNode) {
           return null;
         }
 
-        return await resolveFieldForNode(
+        return await resolveFieldForNode({
           fieldName,
-          reviewedMovieNode,
+          source: reviewedMovieNode,
           context,
           info,
-          args
-        );
+          args,
+        });
       },
     };
   },

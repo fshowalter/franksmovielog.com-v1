@@ -49,11 +49,7 @@ export const ReviewedMovieWatchlistEntity = {
         info: GatsbyResolveInfo
       ) => {
         const watchlistMovies = await resolveFieldForNode<WatchlistMovieNode[]>(
-          "watchlistMovies",
-          source,
-          context,
-          info,
-          args
+          { fieldName: "watchlistMovies", source, context, info, args }
         );
 
         if (!watchlistMovies) {

@@ -33,13 +33,12 @@ export const WatchlistEntitiesJson = {
         info: GatsbyResolveInfo
       ) => {
         const slug = source.slug;
-        const reviewCount = await resolveFieldForNode<number>(
-          "reviewCount",
+        const reviewCount = await resolveFieldForNode<number>({
+          fieldName: "reviewCount",
           source,
           context,
           info,
-          {}
-        );
+        });
 
         if (reviewCount && reviewCount > 0) {
           return slug;
@@ -80,11 +79,7 @@ export const WatchlistEntitiesJson = {
         info: GatsbyResolveInfo
       ) => {
         const watchlistMovies = await resolveFieldForNode<WatchlistMovieNode[]>(
-          "watchlistMovies",
-          source,
-          context,
-          info,
-          {}
+          { fieldName: "watchlistMovies", source, context, info }
         );
 
         if (!watchlistMovies) {

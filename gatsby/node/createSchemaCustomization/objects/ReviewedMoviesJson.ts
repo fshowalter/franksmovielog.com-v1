@@ -21,6 +21,7 @@ export const ReviewedMoviesJson = {
     slug: "String!",
     grade: "String!",
     countries: "[String!]!",
+    genres: "[String!]!",
     releaseDate: "String!",
     sortTitle: "String!",
     originalTitle: "String",
@@ -28,6 +29,13 @@ export const ReviewedMoviesJson = {
     runtimeMinutes: "Int!",
     directorNames: "[String!]!",
     principalCastNames: "[String!]!",
+    reviewDate: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+    },
+    reviewYear: "Int!",
     review: {
       type: `${SchemaNames.MarkdownRemark}!`,
       resolve: async (

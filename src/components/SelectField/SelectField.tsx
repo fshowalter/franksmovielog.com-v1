@@ -14,9 +14,10 @@ export function SelectField({
   value,
   onChange,
   children,
+  ...rest
 }: SelectFieldProps): JSX.Element {
   return (
-    <Box as="label" display="flex" flexDirection="column">
+    <Box as="label" display="flex" flexDirection="column" {...rest}>
       <LabelText text={label} />
       <SelectInput value={value?.toString()} onChange={onChange}>
         {children}

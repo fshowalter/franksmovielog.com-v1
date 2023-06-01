@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder } from "../components/HeadBuilder";
-import { StatsPage } from "../components/StatsPage";
+import { HeadBuilder, Stats } from "../components";
 
 export function Head(): JSX.Element {
   return (
@@ -22,7 +21,7 @@ export default function AllTimeStatsPage({
   data: Queries.AllTimeStatsPageQuery;
 }): JSX.Element {
   return (
-    <StatsPage
+    <Stats
       title="All-Time Stats"
       tagline={`${(data.viewing.years.length - 1).toString()} Years in Review`}
       year="all"

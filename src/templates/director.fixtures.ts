@@ -33,17 +33,20 @@ export const data = {
       "1963",
       "1964",
       "1965",
-      "1966",
     ],
   },
   director: {
     name: "John Ford",
-    entityType: "director" as Queries.WatchlistEntityType,
+    entityType: "director" as const,
+    reviewCount: 12,
     avatar: {
       childImageSharp: {
         gatsbyImageData: {
           layout: "fixed" as const,
-          backgroundColor: "#d8d8d8",
+          placeholder: {
+            fallback:
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR42j1UWSigYRT98yCRePBGKCl58IKakjReSMx4IKJkp0wZW1lSmGnGkiWRkJ3Jlp3sY2eMfd+N3TSyG9vDmc6dePj6/v/7v3vuOefe+ytXV1e4vLwE94eHB1n39/eyPz8/4+npCXd3d7i9vcXfv39f183NDS4uLnB6eoqTkxM547vy588fOeS6vr6WxctM8uvXLywuLmJ8fBxjY2NYWlrCzs6OfHuJ29/fl50EGKscHR3h8PBQsvAi2ezu7mJgYACDg4OYmJjAyMgISktLUVxcjP7+flkEJyiTEpBqGKvs7e0JwMHBAc7OzoQdQTIzM9HZ2Ynt7W38+PED9fX1yM3NxefPn5GQkICMjAwBI0PG0hpapWxtbYGLUo6Pj8UHMmMw5a6trWFmZgZ9fX2orq7Gly9fkJycDD8/P7S0tEgMST0+Pv4HXF1dxcrKCjY2NkT6+fk5Ojo6UFFRIYk2Nzfx8+dPtLe3o7W1FZWVlfj27Ru+fv2KhoYG0DKqeCmWQjD6sby8LPR///6NtrY2YckkTMiiNDU1CSN6yWS0Y3JyUkgwMf0TQKJTFkHpBdnQr6GhIYyOjuLTp0/iJ0F4npeXJ+Dfv38Xm+j/C6BIpn7KIlNWiwWhtMbGRqSkpMDNzQ1v3rxBWFgYHB0dYWVlJZKZjICM504wASTl9fV1LCwsCH2y5PPc3BzKy8sREhICT09PKYauri7MzMwQGhqKtLQ0UUGLCEi5r4D0j368SKZnBJ2fn5cWaW5uFrnW1tZ4+/at2FBYWCjKCMZ4NjWnSWEh6CEB2G8EoEdkTZ/YIpRIRsHBwUhMTERtba0QYMGmp6eFKavN4ZBJITN6kpqaioCAABQVFYnRZWVlKCkpkf4LDw+Hq6urJGAHTE1NSQyTsn1oEUkoRK2rq5OLsbGxCAoKgo+PjzQzL1ZVVSEmJgYeHh6y8vPzZSx7enrQ1dUlxaPXTEKLFJqalJSEwMBAREVFIT4+Hra2tvD39xdvyIRyIyIi8OHDB2kbgrBXa2pqpC+ZhPM9Ozv7H5Bd7+XlhY8fP0ogq6qpqQkXFxepbmRkJHx9fYV5Tk6OMCJz/izoL896e3tFtjI8PCwHzs7OwpJBdnZ2MDU1haqqKlRUVKClpQUjIyOxgwzpNe9TBSeGnnd3d0thFXrHA8okI3d3d3k2MTGBnp6egHHp6+u/9h8LZ2BgID8IqisoKBBfOW1Keno64uLiZAo4EU5OTnBwcIChoSF0dHSgra0NDQ0N2b29vREdHS2WGBsbw8bGBu/fv0d2dra0Dj1XsrKyBOzdu3ewsLCAvb29vJubmwtDnqmpqUFdXV2SsHVY7ZfvlpaWUlQOBNvmHwQkqDCHLtv6AAAAAElFTkSuQmCC",
+          },
           images: {
             fallback: {
               src: "/static/28c691cfc6ec7ba6cad3b120bcf05f1d/448fd/john-ford.jpg",
@@ -78,26 +81,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#080828",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/08050f439b01b2a7f5b2563b3f5b3ad4/10b75/the-black-watch-1929.jpg",
+                  src: "/static/08050f439b01b2a7f5b2563b3f5b3ad4/76ee4/the-black-watch-1929.jpg",
                   srcSet:
-                    "/static/08050f439b01b2a7f5b2563b3f5b3ad4/0cf61/the-black-watch-1929.jpg 50w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/4cfec/the-black-watch-1929.jpg 100w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/10b75/the-black-watch-1929.jpg 200w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/d5b68/the-black-watch-1929.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/08050f439b01b2a7f5b2563b3f5b3ad4/76ee4/the-black-watch-1929.jpg 56w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/a7533/the-black-watch-1929.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/08050f439b01b2a7f5b2563b3f5b3ad4/998c5/the-black-watch-1929.avif 50w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/520c2/the-black-watch-1929.avif 100w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/af163/the-black-watch-1929.avif 200w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/81c8e/the-black-watch-1929.avif 400w",
+                      "/static/08050f439b01b2a7f5b2563b3f5b3ad4/b5dba/the-black-watch-1929.avif 56w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/ab5a1/the-black-watch-1929.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -114,26 +116,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/3251f70a0604bd387a4cae82bf806ffb/10b75/salute-1929.jpg",
+                  src: "/static/3251f70a0604bd387a4cae82bf806ffb/76ee4/salute-1929.jpg",
                   srcSet:
-                    "/static/3251f70a0604bd387a4cae82bf806ffb/0cf61/salute-1929.jpg 50w,\n/static/3251f70a0604bd387a4cae82bf806ffb/4cfec/salute-1929.jpg 100w,\n/static/3251f70a0604bd387a4cae82bf806ffb/10b75/salute-1929.jpg 200w,\n/static/3251f70a0604bd387a4cae82bf806ffb/d5b68/salute-1929.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/3251f70a0604bd387a4cae82bf806ffb/76ee4/salute-1929.jpg 56w,\n/static/3251f70a0604bd387a4cae82bf806ffb/a7533/salute-1929.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/3251f70a0604bd387a4cae82bf806ffb/998c5/salute-1929.avif 50w,\n/static/3251f70a0604bd387a4cae82bf806ffb/520c2/salute-1929.avif 100w,\n/static/3251f70a0604bd387a4cae82bf806ffb/af163/salute-1929.avif 200w,\n/static/3251f70a0604bd387a4cae82bf806ffb/81c8e/salute-1929.avif 400w",
+                      "/static/3251f70a0604bd387a4cae82bf806ffb/b5dba/salute-1929.avif 56w,\n/static/3251f70a0604bd387a4cae82bf806ffb/ab5a1/salute-1929.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -150,26 +151,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#f8d868",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/dbc56d5f031a66a9333f79c3d27e214f/10b75/men-without-women-1930.jpg",
+                  src: "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg",
                   srcSet:
-                    "/static/dbc56d5f031a66a9333f79c3d27e214f/0cf61/men-without-women-1930.jpg 50w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/4cfec/men-without-women-1930.jpg 100w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/10b75/men-without-women-1930.jpg 200w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/d5b68/men-without-women-1930.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/a7533/men-without-women-1930.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/dbc56d5f031a66a9333f79c3d27e214f/998c5/men-without-women-1930.avif 50w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/520c2/men-without-women-1930.avif 100w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/af163/men-without-women-1930.avif 200w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/81c8e/men-without-women-1930.avif 400w",
+                      "/static/dbc56d5f031a66a9333f79c3d27e214f/b5dba/men-without-women-1930.avif 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/ab5a1/men-without-women-1930.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -186,26 +186,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#482818",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/e1a8d3caa79b0213ebde9f5e87a9591e/10b75/born-reckless-1930.jpg",
+                  src: "/static/e1a8d3caa79b0213ebde9f5e87a9591e/76ee4/born-reckless-1930.jpg",
                   srcSet:
-                    "/static/e1a8d3caa79b0213ebde9f5e87a9591e/0cf61/born-reckless-1930.jpg 50w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/4cfec/born-reckless-1930.jpg 100w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/10b75/born-reckless-1930.jpg 200w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/d5b68/born-reckless-1930.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/e1a8d3caa79b0213ebde9f5e87a9591e/76ee4/born-reckless-1930.jpg 56w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/a7533/born-reckless-1930.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/e1a8d3caa79b0213ebde9f5e87a9591e/998c5/born-reckless-1930.avif 50w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/520c2/born-reckless-1930.avif 100w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/af163/born-reckless-1930.avif 200w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/81c8e/born-reckless-1930.avif 400w",
+                      "/static/e1a8d3caa79b0213ebde9f5e87a9591e/b5dba/born-reckless-1930.avif 56w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/ab5a1/born-reckless-1930.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -222,26 +221,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#f8f8f8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/9b24450a272c100c7eb6117cb00d33ba/10b75/up-the-river-1930.jpg",
+                  src: "/static/9b24450a272c100c7eb6117cb00d33ba/76ee4/up-the-river-1930.jpg",
                   srcSet:
-                    "/static/9b24450a272c100c7eb6117cb00d33ba/0cf61/up-the-river-1930.jpg 50w,\n/static/9b24450a272c100c7eb6117cb00d33ba/4cfec/up-the-river-1930.jpg 100w,\n/static/9b24450a272c100c7eb6117cb00d33ba/10b75/up-the-river-1930.jpg 200w,\n/static/9b24450a272c100c7eb6117cb00d33ba/d5b68/up-the-river-1930.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/9b24450a272c100c7eb6117cb00d33ba/76ee4/up-the-river-1930.jpg 56w,\n/static/9b24450a272c100c7eb6117cb00d33ba/a7533/up-the-river-1930.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/9b24450a272c100c7eb6117cb00d33ba/998c5/up-the-river-1930.avif 50w,\n/static/9b24450a272c100c7eb6117cb00d33ba/520c2/up-the-river-1930.avif 100w,\n/static/9b24450a272c100c7eb6117cb00d33ba/af163/up-the-river-1930.avif 200w,\n/static/9b24450a272c100c7eb6117cb00d33ba/81c8e/up-the-river-1930.avif 400w",
+                      "/static/9b24450a272c100c7eb6117cb00d33ba/b5dba/up-the-river-1930.avif 56w,\n/static/9b24450a272c100c7eb6117cb00d33ba/ab5a1/up-the-river-1930.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -258,26 +256,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#181828",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/b69aa80c0559af9cdfa586657a7b9c95/10b75/seas-beneath-1931.jpg",
+                  src: "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg",
                   srcSet:
-                    "/static/b69aa80c0559af9cdfa586657a7b9c95/0cf61/seas-beneath-1931.jpg 50w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/4cfec/seas-beneath-1931.jpg 100w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/10b75/seas-beneath-1931.jpg 200w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/d5b68/seas-beneath-1931.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/a7533/seas-beneath-1931.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/b69aa80c0559af9cdfa586657a7b9c95/998c5/seas-beneath-1931.avif 50w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/520c2/seas-beneath-1931.avif 100w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/af163/seas-beneath-1931.avif 200w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/81c8e/seas-beneath-1931.avif 400w",
+                      "/static/b69aa80c0559af9cdfa586657a7b9c95/b5dba/seas-beneath-1931.avif 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/ab5a1/seas-beneath-1931.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -294,26 +291,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#3878c8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/3b1ce9e29d651bdb030317c5aa03cc8f/10b75/the-brat-1931.jpg",
+                  src: "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg",
                   srcSet:
-                    "/static/3b1ce9e29d651bdb030317c5aa03cc8f/0cf61/the-brat-1931.jpg 50w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/4cfec/the-brat-1931.jpg 100w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/10b75/the-brat-1931.jpg 200w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/d5b68/the-brat-1931.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/a7533/the-brat-1931.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/3b1ce9e29d651bdb030317c5aa03cc8f/998c5/the-brat-1931.avif 50w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/520c2/the-brat-1931.avif 100w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/af163/the-brat-1931.avif 200w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/81c8e/the-brat-1931.avif 400w",
+                      "/static/3b1ce9e29d651bdb030317c5aa03cc8f/b5dba/the-brat-1931.avif 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/ab5a1/the-brat-1931.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -330,26 +326,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#f8e858",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/20549b2a916b4a602590dfd4d98e2875/10b75/arrowsmith-1931.jpg",
+                  src: "/static/20549b2a916b4a602590dfd4d98e2875/76ee4/arrowsmith-1931.jpg",
                   srcSet:
-                    "/static/20549b2a916b4a602590dfd4d98e2875/0cf61/arrowsmith-1931.jpg 50w,\n/static/20549b2a916b4a602590dfd4d98e2875/4cfec/arrowsmith-1931.jpg 100w,\n/static/20549b2a916b4a602590dfd4d98e2875/10b75/arrowsmith-1931.jpg 200w,\n/static/20549b2a916b4a602590dfd4d98e2875/d5b68/arrowsmith-1931.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/20549b2a916b4a602590dfd4d98e2875/76ee4/arrowsmith-1931.jpg 56w,\n/static/20549b2a916b4a602590dfd4d98e2875/a7533/arrowsmith-1931.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/20549b2a916b4a602590dfd4d98e2875/998c5/arrowsmith-1931.avif 50w,\n/static/20549b2a916b4a602590dfd4d98e2875/520c2/arrowsmith-1931.avif 100w,\n/static/20549b2a916b4a602590dfd4d98e2875/af163/arrowsmith-1931.avif 200w,\n/static/20549b2a916b4a602590dfd4d98e2875/81c8e/arrowsmith-1931.avif 400w",
+                      "/static/20549b2a916b4a602590dfd4d98e2875/b5dba/arrowsmith-1931.avif 56w,\n/static/20549b2a916b4a602590dfd4d98e2875/ab5a1/arrowsmith-1931.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -366,26 +361,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -402,26 +396,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -438,26 +431,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#080868",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/2eb7f841948a8b76e88d5d3637f8266a/10b75/pilgrimage-1933.jpg",
+                  src: "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg",
                   srcSet:
-                    "/static/2eb7f841948a8b76e88d5d3637f8266a/0cf61/pilgrimage-1933.jpg 50w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/4cfec/pilgrimage-1933.jpg 100w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/10b75/pilgrimage-1933.jpg 200w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/d5b68/pilgrimage-1933.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/a7533/pilgrimage-1933.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/2eb7f841948a8b76e88d5d3637f8266a/998c5/pilgrimage-1933.avif 50w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/520c2/pilgrimage-1933.avif 100w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/af163/pilgrimage-1933.avif 200w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/81c8e/pilgrimage-1933.avif 400w",
+                      "/static/2eb7f841948a8b76e88d5d3637f8266a/b5dba/pilgrimage-1933.avif 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/ab5a1/pilgrimage-1933.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -474,26 +466,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e84808",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/36be61541148066ebb4877325e6ffad4/10b75/doctor-bull-1933.jpg",
+                  src: "/static/36be61541148066ebb4877325e6ffad4/76ee4/doctor-bull-1933.jpg",
                   srcSet:
-                    "/static/36be61541148066ebb4877325e6ffad4/0cf61/doctor-bull-1933.jpg 50w,\n/static/36be61541148066ebb4877325e6ffad4/4cfec/doctor-bull-1933.jpg 100w,\n/static/36be61541148066ebb4877325e6ffad4/10b75/doctor-bull-1933.jpg 200w,\n/static/36be61541148066ebb4877325e6ffad4/d5b68/doctor-bull-1933.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/36be61541148066ebb4877325e6ffad4/76ee4/doctor-bull-1933.jpg 56w,\n/static/36be61541148066ebb4877325e6ffad4/a7533/doctor-bull-1933.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/36be61541148066ebb4877325e6ffad4/998c5/doctor-bull-1933.avif 50w,\n/static/36be61541148066ebb4877325e6ffad4/520c2/doctor-bull-1933.avif 100w,\n/static/36be61541148066ebb4877325e6ffad4/af163/doctor-bull-1933.avif 200w,\n/static/36be61541148066ebb4877325e6ffad4/81c8e/doctor-bull-1933.avif 400w",
+                      "/static/36be61541148066ebb4877325e6ffad4/b5dba/doctor-bull-1933.avif 56w,\n/static/36be61541148066ebb4877325e6ffad4/ab5a1/doctor-bull-1933.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -510,26 +501,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -546,26 +536,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -582,26 +571,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -618,26 +606,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -654,26 +641,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -690,26 +676,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#f8f8f8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/6fe4258194a6025d59fd85f5f526655d/10b75/steamboat-round-the-bend-1935.jpg",
+                  src: "/static/6fe4258194a6025d59fd85f5f526655d/76ee4/steamboat-round-the-bend-1935.jpg",
                   srcSet:
-                    "/static/6fe4258194a6025d59fd85f5f526655d/0cf61/steamboat-round-the-bend-1935.jpg 50w,\n/static/6fe4258194a6025d59fd85f5f526655d/4cfec/steamboat-round-the-bend-1935.jpg 100w,\n/static/6fe4258194a6025d59fd85f5f526655d/10b75/steamboat-round-the-bend-1935.jpg 200w,\n/static/6fe4258194a6025d59fd85f5f526655d/d5b68/steamboat-round-the-bend-1935.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/6fe4258194a6025d59fd85f5f526655d/76ee4/steamboat-round-the-bend-1935.jpg 56w,\n/static/6fe4258194a6025d59fd85f5f526655d/a7533/steamboat-round-the-bend-1935.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/6fe4258194a6025d59fd85f5f526655d/998c5/steamboat-round-the-bend-1935.avif 50w,\n/static/6fe4258194a6025d59fd85f5f526655d/520c2/steamboat-round-the-bend-1935.avif 100w,\n/static/6fe4258194a6025d59fd85f5f526655d/af163/steamboat-round-the-bend-1935.avif 200w,\n/static/6fe4258194a6025d59fd85f5f526655d/81c8e/steamboat-round-the-bend-1935.avif 400w",
+                      "/static/6fe4258194a6025d59fd85f5f526655d/b5dba/steamboat-round-the-bend-1935.avif 56w,\n/static/6fe4258194a6025d59fd85f5f526655d/ab5a1/steamboat-round-the-bend-1935.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -726,26 +711,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -762,26 +746,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -798,26 +781,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#f8e8c8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/7015b5e4fcb39aaf7d2fcfc4106674da/10b75/the-plough-and-the-stars-1936.jpg",
+                  src: "/static/7015b5e4fcb39aaf7d2fcfc4106674da/76ee4/the-plough-and-the-stars-1936.jpg",
                   srcSet:
-                    "/static/7015b5e4fcb39aaf7d2fcfc4106674da/0cf61/the-plough-and-the-stars-1936.jpg 50w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/4cfec/the-plough-and-the-stars-1936.jpg 100w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/10b75/the-plough-and-the-stars-1936.jpg 200w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/d5b68/the-plough-and-the-stars-1936.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/7015b5e4fcb39aaf7d2fcfc4106674da/76ee4/the-plough-and-the-stars-1936.jpg 56w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/a7533/the-plough-and-the-stars-1936.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/7015b5e4fcb39aaf7d2fcfc4106674da/998c5/the-plough-and-the-stars-1936.avif 50w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/520c2/the-plough-and-the-stars-1936.avif 100w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/af163/the-plough-and-the-stars-1936.avif 200w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/81c8e/the-plough-and-the-stars-1936.avif 400w",
+                      "/static/7015b5e4fcb39aaf7d2fcfc4106674da/b5dba/the-plough-and-the-stars-1936.avif 56w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/ab5a1/the-plough-and-the-stars-1936.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -834,26 +816,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -870,26 +851,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -906,26 +886,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -942,26 +921,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -978,26 +956,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1014,26 +991,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1050,26 +1026,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1086,26 +1061,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1122,26 +1096,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1158,26 +1131,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1194,26 +1166,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1230,26 +1201,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1266,26 +1236,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1302,26 +1271,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1338,26 +1306,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1374,26 +1341,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1410,26 +1376,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1446,26 +1411,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1482,26 +1446,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1518,26 +1481,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1554,26 +1516,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1590,26 +1551,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1626,26 +1586,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1662,26 +1621,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1698,26 +1656,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1734,26 +1691,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1770,26 +1726,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1806,26 +1761,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1842,26 +1796,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1878,26 +1831,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1914,26 +1866,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1950,26 +1901,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -1986,26 +1936,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2022,26 +1971,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2058,26 +2006,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2094,26 +2041,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2130,26 +2076,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2166,26 +2111,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2202,26 +2146,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2238,26 +2181,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },
@@ -2265,7 +2207,7 @@ export const data = {
       {
         imdbId: "tt0060050",
         title: "7 Women",
-        year: 1966,
+        year: 1965,
         grade: null,
         gradeValue: null,
         slug: null,
@@ -2274,26 +2216,25 @@ export const data = {
         poster: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              backgroundColor: "#e8e8e8",
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg",
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/0cf61/default.jpg 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/4cfec/default.jpg 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/10b75/default.jpg 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/d5b68/default.jpg 400w",
-                  sizes: "(min-width: 200px) 200px, 100vw",
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/998c5/default.avif 50w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/520c2/default.avif 100w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/af163/default.avif 200w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/81c8e/default.avif 400w",
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
                     type: "image/avif",
-                    sizes: "(min-width: 200px) 200px, 100vw",
+                    sizes: "56px",
                   },
                 ],
               },
-              width: 200,
-              height: 300,
+              width: 56,
+              height: 84,
             },
           },
         },

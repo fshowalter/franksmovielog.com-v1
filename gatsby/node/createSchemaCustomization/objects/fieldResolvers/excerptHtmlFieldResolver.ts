@@ -22,13 +22,13 @@ export const excerptHtmlFieldResolver = {
     context: GatsbyNodeContext,
     info: GatsbyResolveInfo
   ) => {
-    const rawMarkdownBody = await resolveFieldForNode<string>(
-      "rawMarkdownBody",
+    const rawMarkdownBody = await resolveFieldForNode<string>({
+      fieldName: "rawMarkdownBody",
       source,
       context,
       info,
-      { format: "HTML", pruneLength: 20000, truncate: false }
-    );
+      args: { format: "HTML", pruneLength: 20000, truncate: false },
+    });
 
     if (!rawMarkdownBody) {
       return null;
@@ -36,13 +36,13 @@ export const excerptHtmlFieldResolver = {
 
     const hasExcerptBreak = rawMarkdownBody.includes("<!-- end -->");
 
-    const excerptAst = await resolveFieldForNode<Element>(
-      "excerptAst",
+    const excerptAst = await resolveFieldForNode<Element>({
+      fieldName: "excerptAst",
       source,
       context,
       info,
-      { pruneLength: 20000, truncate: false }
-    );
+      args: { pruneLength: 20000, truncate: false },
+    });
 
     if (!excerptAst) {
       return null;

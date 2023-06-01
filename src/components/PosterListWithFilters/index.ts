@@ -1,1 +1,0 @@
-export { PosterListWithFilters } from "./PosterListWithFilters";

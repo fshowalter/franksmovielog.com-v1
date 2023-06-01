@@ -30,6 +30,7 @@ export const HEADER_HEIGHT = 128;
 export const STILL_WIDTH = "960px";
 export const POSTER_WIDTH = "248px";
 export const PROSE_CONTENT_WIDTH = "36rem";
+export const SHORT_FORM_CONTENT_WIDTH = "20rem";
 export const POPOUT_WIDTH = `calc((${gutterWidth} * 2) + ${PROSE_CONTENT_WIDTH})`;
 
 function toRem(px: number) {
@@ -39,6 +40,7 @@ function toRem(px: number) {
 export const relativeSize = {
   14: toRem(14),
   18: toRem(18),
+  960: toRem(960),
 };
 
 export const size = {
@@ -81,10 +83,14 @@ export const width = {
   24: toRem(24),
   32: toRem(32),
   40: toRem(40),
+  48: toRem(48),
+  56: toRem(56),
   64: toRem(64),
   80: toRem(80),
+  96: toRem(96),
   128: toRem(128),
   144: toRem(144),
+  960: toRem(960),
   full: "100%",
   half: "50%",
   unset: "unset",
@@ -92,4 +98,5 @@ export const width = {
   prose: PROSE_CONTENT_WIDTH,
   gutter: gutterWidth,
   pageMargin: pageMarginWidth,
+  shortForm: SHORT_FORM_CONTENT_WIDTH,
 };

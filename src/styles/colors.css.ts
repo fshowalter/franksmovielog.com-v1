@@ -42,6 +42,7 @@ export const backgroundColors = {
   subtle: bgSubtle,
   inverse: bgInverse,
   stripe: bgStripe,
+  unset: "unset",
 };
 
 globalStyle(":root", {

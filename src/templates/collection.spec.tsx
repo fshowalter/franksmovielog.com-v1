@@ -105,12 +105,23 @@ describe("/watchlist/collections/{slug}", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
-  it("can view more titles", async () => {
+  it("can hide reviewed titles", async () => {
     expect.hasAssertions();
 
     render(<CollectionTemplate data={data} />);
 
-    await userEvent.click(screen.getByText("Show More..."));
+    await userEvent.click(screen.getByText("Hide Reviewed"));
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show hidden reviewed titles", async () => {
+    expect.hasAssertions();
+
+    render(<CollectionTemplate data={data} />);
+
+    await userEvent.click(screen.getByText("Hide Reviewed"));
+    await userEvent.click(screen.getByText("Show Reviewed"));
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
