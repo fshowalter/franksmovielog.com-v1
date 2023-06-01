@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { Overrated } from "../../components";
-import { HeadBuilder } from "../../components/HeadBuilder";
+import { HeadBuilder, Overrated } from "../../components";
 
 export function Head(): JSX.Element {
   return (

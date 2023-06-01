@@ -1,1 +1,0 @@
-export { HomePageItem } from "./HomePageItem";

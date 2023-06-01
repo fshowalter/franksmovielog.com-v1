@@ -1,5 +1,5 @@
 export const data = {
-  viewings: [
+  items: [
     {
       imdbId: "tt0045564",
       sequence: 1359,

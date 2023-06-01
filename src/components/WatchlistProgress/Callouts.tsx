@@ -1,6 +1,6 @@
 import { Box } from "../Box";
-import { ProgressRing } from "../ProgressRing";
 import { Spacer } from "../Spacer";
+import { ProgressRing } from "./ProgressRing";
 
 function Callout({
   total,

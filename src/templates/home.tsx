@@ -1,10 +1,5 @@
 import { graphql } from "gatsby";
-import { useRef } from "react";
-import { Box } from "../components/Box";
-import { HeadBuilder } from "../components/HeadBuilder";
-import { HomePageItem } from "../components/HomePageItem";
-import { Layout } from "../components/Layout";
-import { Pagination } from "../components/Pagination";
+import { HeadBuilder, Home } from "../components";
 
 export interface PageContext {
   limit: number;
@@ -39,45 +34,20 @@ export default function HomeTemplate({
   pageContext: PageContext;
   data: NonNullable<Queries.HomeTemplateQuery>;
 }): JSX.Element {
-  const listHeader = useRef<HTMLDivElement>(null);
-  const { viewings } = data;
-
   return (
-    <Layout>
-      <Box as="main" innerRef={listHeader}>
-        <Box as="ol" display="flex" flexDirection="column">
-          {viewings.map((viewing, index) => {
-            return (
-              <HomePageItem
-                key={viewing.sequence}
-                viewing={viewing}
-                eagerLoadImage={index === 0}
-                counterValue={
-                  pageContext.numberOfItems - pageContext.skip - index
-                }
-              />
-            );
-          })}
-        </Box>
-        <Pagination
-          currentPage={pageContext.currentPage}
-          urlRoot="/"
-          perPage={pageContext.limit}
-          numberOfItems={pageContext.numberOfItems}
-          prevText="Newer"
-          nextText="Older"
-          paddingX="pageMargin"
-          paddingY={40}
-          justifyContent="center"
-        />
-      </Box>
-    </Layout>
+    <Home
+      items={data.items}
+      limit={pageContext.limit}
+      skip={pageContext.skip}
+      numberOfItems={pageContext.numberOfItems}
+      currentPageNumber={pageContext.currentPage}
+    />
   );
 }
 
 export const pageQuery = graphql`
   query HomeTemplate($skip: Int!, $limit: Int!) {
-    viewings: viewingsWithReviewOrNote(
+    items: viewingsWithReviewOrNote(
       sort: { sequence: DESC }
       limit: $limit
       skip: $skip

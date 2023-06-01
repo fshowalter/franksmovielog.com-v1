@@ -1,15 +1,15 @@
 import { graphql } from "gatsby";
-import { BarGradient } from "../../components/BarGradient";
-import { Box } from "../../components/Box";
-import { Link } from "../../components/Link";
-import { StatHeading } from "../../components/StatHeading";
+import { BarGradient } from "../BarGradient";
+import { Box } from "../Box";
+import { Link } from "../Link";
+import { StatHeading } from "../StatHeading";
 import {
   Table,
   TableDataCell,
   TableHead,
   TableHeaderCell,
   TableRow,
-} from "../../components/StatsTable";
+} from "../StatsTable";
 
 export function WatchlistProgressForEntities({
   label,

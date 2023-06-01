@@ -20,13 +20,13 @@ const GridArea = gridAreaComponent(gridAreas);
 const Grid = gridComponent(gridStyle);
 
 interface IItemProps extends IBoxProps {
-  viewing: Queries.HomePageItemFragment;
+  item: Queries.HomePageItemFragment;
   counterValue: number;
   eagerLoadImage: boolean;
 }
 
 export function HomePageItem({
-  viewing,
+  item,
   counterValue,
   eagerLoadImage,
 }: IItemProps) {
@@ -34,11 +34,11 @@ export function HomePageItem({
     <Box as="li" value={counterValue} display="flex" backgroundColor="zebra">
       <Grid as="article" paddingX="pageMargin">
         <GridArea name="still" maxWidth="prose">
-          <Link rel="canonical" to={`/reviews/${viewing.slug}/`}>
+          <Link rel="canonical" to={`/reviews/${item.slug}/`}>
             <Still
-              title={viewing.title}
-              year={viewing.year}
-              image={viewing.still}
+              title={item.title}
+              year={item.year}
+              image={item.still}
               loading={eagerLoadImage ? "eager" : "lazy"}
               className={stillBorderStyle}
             />
@@ -52,12 +52,12 @@ export function HomePageItem({
         >
           <Box as="h2" fontWeight="bold" fontSize="large">
             <Link
-              to={`/reviews/${viewing.slug}/`}
+              to={`/reviews/${item.slug}/`}
               rel="canonical"
               color="default"
               display="inline-block"
             >
-              {viewing.title}{" "}
+              {item.title}{" "}
               <Box
                 as="span"
                 color="subtle"
@@ -66,11 +66,11 @@ export function HomePageItem({
                 fontWeight="light"
                 lineHeight={1}
               >
-                {viewing.year}
+                {item.year}
               </Box>
             </Link>
           </Box>
-          <Grade grade={viewing.grade} height={32} />
+          <Grade grade={item.grade} height={32} />
           <Box
             as="p"
             fontSize="default"
@@ -79,11 +79,11 @@ export function HomePageItem({
             letterSpacing={0.25}
             lineHeight="default"
           >
-            Directed by {toSentenceArray(viewing.directorNames)}. Starring{" "}
-            {toSentenceArray(viewing.principalCastNames)}.
+            Directed by {toSentenceArray(item.directorNames)}. Starring{" "}
+            {toSentenceArray(item.principalCastNames)}.
           </Box>
           <RenderedMarkdown
-            text={viewing.excerpt}
+            text={item.excerpt}
             className={excerptContinueReadingLinkStyle}
           />
         </GridArea>
@@ -101,7 +101,7 @@ export function HomePageItem({
             <Box display={{ default: "block", desktop: "none" }}>
               <DateIcon />{" "}
             </Box>
-            <Box lineHeight={32}>{viewing.date}</Box>
+            <Box lineHeight={32}>{item.date}</Box>
           </Box>
         </GridArea>
       </Grid>

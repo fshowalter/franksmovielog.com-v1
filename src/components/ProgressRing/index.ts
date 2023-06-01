@@ -1,1 +1,0 @@
-export { ProgressRing } from "./ProgressRing";
