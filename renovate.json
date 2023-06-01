@@ -2,8 +2,25 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["at any time"]
-  }
+  },
+  "packageRules": [
+    {
+      "groupName": "esm dependent",
+      "enabled": false,
+      "matchPackageNames": [
+        "remark",
+        "mdast-util-to-hast",
+        "hast-util-to-html",
+        "unist-util-visit"
+      ]
+    },
+    {
+      "matchPackageNames": ["@typescript-eslint/*"],
+      "groupName": "@typescript/eslint"
+    }
+  ]
 }
