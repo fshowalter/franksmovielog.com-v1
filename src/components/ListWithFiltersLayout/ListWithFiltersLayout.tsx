@@ -24,7 +24,7 @@ export function ListWithFiltersLayout({
           flexDirection={{ default: "column", desktop: "row" }}
           paddingX={{ default: 0, desktop: "pageMargin" }}
           columnGap={96}
-          alignItems={{ default: "center", desktop: "flex-start" }}
+          alignItems={{ default: "stretch", desktop: "flex-start" }}
           maxWidth={{ default: 960, desktop: "unset" }}
           width="full"
         >
@@ -49,7 +49,6 @@ export function ListWithFiltersLayout({
             display="flex"
             flexDirection="column"
             flexGrow={1}
-            width={{ default: "full", desktop: "unset" }}
           >
             <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
             {list}

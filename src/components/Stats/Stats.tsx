@@ -8,7 +8,6 @@ import { MostWatchedDirectors } from "./MostWatchedDirectors";
 import { MostWatchedMovies } from "./MostWatchedMovies";
 import { MostWatchedPerformers } from "./MostWatchedPerformers";
 import { MostWatchedWriters } from "./MostWatchedWriters";
-import { maxWidthStyle } from "./Stats.css";
 import { StatsCallouts } from "./StatsCallouts";
 import { StatsNavigation } from "./StatsNavigation";
 import { TopMedia } from "./TopMedia";
@@ -44,7 +43,7 @@ export function Stats({
 }): JSX.Element {
   return (
     <Layout>
-      <Box as="main">
+      <Box as="main" display="flex" alignItems="center" flexDirection="column">
         <Box
           as="header"
           display="flex"
@@ -84,10 +83,12 @@ export function Stats({
         <Box
           paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}
           paddingY={32}
-          className={maxWidthStyle}
           display="flex"
           flexDirection="column"
           rowGap={32}
+          alignItems="stretch"
+          maxWidth={960}
+          width="full"
         >
           <MostWatchedMovies movies={mostWatchedMovies} />
           <ByReleaseYearStats decades={viewingsCountsByDecade} />

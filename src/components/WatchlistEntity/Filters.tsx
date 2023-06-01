@@ -18,7 +18,13 @@ export function Filters({
 }): JSX.Element {
   return (
     <>
-      <Box display="flex" flexDirection="column" justifyContent="flex-end">
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="flex-end"
+        flexBasis="full"
+        alignItems="center"
+      >
         <Button onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}>
           {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
         </Button>
@@ -39,6 +45,7 @@ export function Filters({
         }
       />
       <SelectField
+        flexBasis="full"
         value={sortValue}
         label="Order By"
         onChange={(e) =>

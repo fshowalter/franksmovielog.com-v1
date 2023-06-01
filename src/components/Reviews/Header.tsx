@@ -12,7 +12,7 @@ export function Header({ reviewCount }: { reviewCount: number }): JSX.Element {
       </Box>
       <Spacer axis="vertical" size={16} />
 
-      <Box color="subtle">
+      <Box color="subtle" textAlign="center">
         <Spacer axis="vertical" size={16} />
         <p>
           Since 2012, I&apos;ve published{" "}

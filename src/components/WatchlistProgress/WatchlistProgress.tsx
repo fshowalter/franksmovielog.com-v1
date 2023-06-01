@@ -38,8 +38,9 @@ export function WatchlistProgress({
 }): JSX.Element {
   return (
     <Layout>
-      <Box as="main">
+      <Box as="main" display="flex" flexDirection="column" alignItems="center">
         <Header />
+        <Spacer axis="vertical" size={32} />
         <Callouts
           movieCount={movieCount}
           reviewedMovieCount={reviewedMovieCount}
@@ -52,7 +53,15 @@ export function WatchlistProgress({
           collectionMovieCount={collectionMovieCount}
           collectionReviewedMovieCount={collectionReviewedMovieCount}
         />
-        <Box paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}>
+        <Spacer axis="vertical" size={32} />
+        <Box
+          paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}
+          width="full"
+          display="flex"
+          flexDirection="column"
+          alignItems="stretch"
+          maxWidth={960}
+        >
           <Spacer axis="vertical" size={32} />
           <WatchlistProgressForEntities
             label="Director Progress"
