@@ -21,7 +21,7 @@ jobs:
 
       # `--prefer-offline` gives cache priority
       - name: install dependencies
-        run: yarn install --prefer-offline --frozen-lockfile
+        run: yarn install --immutable
 
       - name: prettier check
         run: yarn format:check
@@ -51,7 +51,7 @@ jobs:
 
       # `--prefer-offline` gives cache priority
       - name: install dependencies
-        run: yarn install --prefer-offline --frozen-lockfile
+        run: yarn install --immutable
 
       - name: build
         run: yarn build
@@ -86,7 +86,7 @@ jobs:
 
       # `--prefer-offline` gives cache priority
       - name: install dependencies
-        run: yarn install --prefer-offline --frozen-lockfile
+        run: yarn install --immutable
 
       - name: build
         run: yarn build
@@ -110,7 +110,7 @@ jobs:
 
       # `--prefer-offline` gives cache priority
       - name: install dependencies
-        run: yarn install --prefer-offline --frozen-lockfile
+        run: yarn install --immutable
 
       - name: run tests
         run: yarn test
@@ -140,7 +140,7 @@ jobs:
 
       # `--prefer-offline` gives cache priority
       - name: install dependencies
-        run: yarn install --prefer-offline --frozen-lockfile
+        run: yarn install --immutable
 
       - name: build
         run: yarn build
