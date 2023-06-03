@@ -490,8 +490,8 @@ __metadata:
   linkType: hard
 
 "@babel/plugin-proposal-private-property-in-object@npm:^7.21.0":
-  version: 7.21.0
-  resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.21.0"
+  version: 7.21.10
+  resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.21.10"
   dependencies:
     "@babel/helper-annotate-as-pure": ^7.18.6
     "@babel/helper-create-class-features-plugin": ^7.21.0
@@ -499,7 +499,7 @@ __metadata:
     "@babel/plugin-syntax-private-property-in-object": ^7.14.5
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: add881a6a836635c41d2710551fdf777e2c07c0b691bf2baacc5d658dd64107479df1038680d6e67c468bfc6f36fb8920025d6bac2a1df0a81b867537d40ae78
+  checksum: 979c58e9c7fceef1842e5e79e43609851b9b847314fc19f367a71bbb3a047dd36192defa8de9725afb2cd1be92c15314ac56c4f294a83a3f54ceab470f908015
   languageName: node
   linkType: hard
 
@@ -7369,9 +7369,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.411":
-  version: 1.4.418
-  resolution: "electron-to-chromium@npm:1.4.418"
-  checksum: 6e1f40fb91c41cf96c04d2d942b3e8d1b65a78ca3f05197401e79f050b4b35a9e58485583900172c6307edfd9321fdb2a7b8ab45a7a3b6f93eaa2b5dfb8c0271
+  version: 1.4.419
+  resolution: "electron-to-chromium@npm:1.4.419"
+  checksum: fb0e3226dbddbfca55a5d08bff6a9842d5ae3463e2dcd92d73988133f0a81272dd9b6f32d30ae25bcd8f3c2af37dcc7babaa7694b61d8a4b75614566b9e2bd81
   languageName: node
   linkType: hard
 
@@ -12829,11 +12829,11 @@ __metadata:
   linkType: hard
 
 "memfs@npm:^3.1.2, memfs@npm:^3.2.2":
-  version: 3.5.1
-  resolution: "memfs@npm:3.5.1"
+  version: 3.5.2
+  resolution: "memfs@npm:3.5.2"
   dependencies:
     fs-monkey: ^1.0.3
-  checksum: fcd037566a4bbb00d61dc991858395ccc06267ab5fe9471aeff28433f2a210bf5dd999e64e8b5473f8244f00dfb7ff3221b5c2fe41ff98af1439e5e2168fc410
+  checksum: 411a8271fc9dafbf1913d0fb99ae8e703ded8e153ed427de5b6a41ed782b958a81c1d636f4370a3da85e26f76cb180a51cf43de2371368d54cbea0eba2643a11
   languageName: node
   linkType: hard
 
@@ -13294,14 +13294,14 @@ __metadata:
   linkType: hard
 
 "msgpackr@npm:^1.5.4":
-  version: 1.9.2
-  resolution: "msgpackr@npm:1.9.2"
+  version: 1.9.3
+  resolution: "msgpackr@npm:1.9.3"
   dependencies:
     msgpackr-extract: ^3.0.2
   dependenciesMeta:
     msgpackr-extract:
       optional: true
-  checksum: e4538271e2fcba5622c24486cca64fadae92c5c698fff6956c6869d405ec54b9264bd4db7d0e8875ae133732931272241624e69f595f633ee22dff71567bb981
+  checksum: ee42be70a738b8eb47f7309f745bb32effe256537d99ea28258f5dd963a237076e0d6f948e67f3b168226d9add783362be7953d4cbae651bb690d9d8a80b7609
   languageName: node
   linkType: hard
 
@@ -17286,9 +17286,9 @@ __metadata:
   linkType: hard
 
 "tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.5.0":
-  version: 2.5.2
-  resolution: "tslib@npm:2.5.2"
-  checksum: 4d3c1e238b94127ed0e88aa0380db3c2ddae581dc0f4bae5a982345e9f50ee5eda90835b8bfba99b02df10a5734470be197158c36f9129ac49fdc14a6a9da222
+  version: 2.5.3
+  resolution: "tslib@npm:2.5.3"
+  checksum: 88902b309afaf83259131c1e13da1dceb0ad1682a213143a1346a649143924d78cf3760c448b84d796938fd76127183894f8d85cbb3bf9c4fddbfcc140c0003c
   languageName: node
   linkType: hard
 
@@ -18156,9 +18156,9 @@ __metadata:
   linkType: hard
 
 "webpack-stats-plugin@npm:^1.1.1":
-  version: 1.1.2
-  resolution: "webpack-stats-plugin@npm:1.1.2"
-  checksum: 0e062e209f2643ba0b034ae39073f9c835566e70be307126719e21925cbcc441acad0855ea9547937a68cb5df276a0ac0d352797498cd12b0aec8957890cf1d9
+  version: 1.1.3
+  resolution: "webpack-stats-plugin@npm:1.1.3"
+  checksum: 9a71d329c5d55e33105abfe4c72d715a0a6ce4ab8da6faa2bc5a65953915d656cdf3c420b3fc0628b0d9859cc59c09e49f731645746739e417da531130a7a9a8
   languageName: node
   linkType: hard
 
