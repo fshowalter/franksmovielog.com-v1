@@ -10110,11 +10110,11 @@ __metadata:
   linkType: hard
 
 "graphql-http@npm:^1.18.0":
-  version: 1.18.0
-  resolution: "graphql-http@npm:1.18.0"
+  version: 1.19.0
+  resolution: "graphql-http@npm:1.19.0"
   peerDependencies:
     graphql: ">=0.11 <=16"
-  checksum: 79bee0c0497df11f9c4009e9b19caa53d7c9c51a21554c3545ef0cf08d4d0dedb0f2568c1d326f2119e2a96cdbcf2492331fa763d9ba34e487ec77136834a974
+  checksum: 180613682ffcffc2ea91bb27ecf8a01f1a1b7b034768a22e0bd94df6d22adfb3340025b779e168dbec541cc5ecb81b03c8f690e6e06a37368a0f8c9e735b5ee7
   languageName: node
   linkType: hard
 
@@ -17202,14 +17202,14 @@ __metadata:
   linkType: hard
 
 "tough-cookie@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "tough-cookie@npm:4.1.2"
+  version: 4.1.3
+  resolution: "tough-cookie@npm:4.1.3"
   dependencies:
     psl: ^1.1.33
     punycode: ^2.1.1
     universalify: ^0.2.0
     url-parse: ^1.5.3
-  checksum: a7359e9a3e875121a84d6ba40cc184dec5784af84f67f3a56d1d2ae39b87c0e004e6ba7c7331f9622a7d2c88609032473488b28fe9f59a1fec115674589de39a
+  checksum: c9226afff36492a52118432611af083d1d8493a53ff41ec4ea48e5b583aec744b989e4280bcf476c910ec1525a89a4a0f1cae81c08b18fb2ec3a9b3a72b91dcc
   languageName: node
   linkType: hard
 
@@ -18163,8 +18163,8 @@ __metadata:
   linkType: hard
 
 "webpack@npm:^5.81.0":
-  version: 5.85.0
-  resolution: "webpack@npm:5.85.0"
+  version: 5.85.1
+  resolution: "webpack@npm:5.85.1"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^1.0.0
@@ -18195,7 +18195,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: b013be9fbc7f6810d1f229f570c70710ddbc7290f817411acffe4214b2b6c783a041ab1f2005d9e1109f4ab21c136f0f8d8c067a5fb64f20a82dcbc1ee0d3f42
+  checksum: 6fa659ef5e53211e6eeaed1987ac415ddd219584414b2d5ca0d528f0c7dd49be5363a9840e1def33efe1b3305ef3ad3c91f803bd87e41d2771b125340caa4df7
   languageName: node
   linkType: hard
 
