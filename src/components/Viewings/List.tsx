@@ -51,8 +51,8 @@ function DateListItem({
   const [day, date] = dayAndDate.split("-");
 
   return (
-    <ListItem paddingBottom={0}>
-      <Box alignSelf="flex-start">
+    <ListItem paddingBottom={0} alignItems="center">
+      <Box>
         <Box boxShadow="borderAll" borderRadius={4}>
           <Box
             backgroundColor="canvas"
@@ -68,6 +68,7 @@ function DateListItem({
             {date}
           </Box>
         </Box>
+        <Spacer axis="vertical" size={16} />
       </Box>
       <Box
         as="ul"
@@ -91,7 +92,7 @@ export function SubListItem({
 }): JSX.Element {
   return (
     <ListItem
-      alignItems="flex-start"
+      alignItems="center"
       boxShadow="borderBottom"
       paddingTop={0}
       className={subListItemBoxShadowStyle}
@@ -123,7 +124,7 @@ export function SubListItem({
             <ListItemMediumAndVenue medium={item.medium} venue={item.venue} />
           </Box>
         </Box>
-        <Spacer axis="vertical" size={{ default: 8, tablet: 16 }} />
+        <Spacer axis="vertical" size={8} />
       </Box>
     </ListItem>
   );
