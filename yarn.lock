@@ -7357,9 +7357,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.411":
-  version: 1.4.426
-  resolution: "electron-to-chromium@npm:1.4.426"
-  checksum: 9f9d37d7768b6ef1cda5356b6fb308b4a8ce5cd33992a1d7fadb7c0066595dd65ffbf0c17f8b440b16b07d7852d5be4cbbb7d7f1718f6593ef556dbe7b2c2518
+  version: 1.4.427
+  resolution: "electron-to-chromium@npm:1.4.427"
+  checksum: 5f8493e6071bed2f34c701a62bd81453e41cee7ab9bda0f93b6039d1456d15f9aa6a4b59eda4e5afe5e035311b6b9043c7c9275c631c690bd202ae3226a1df66
   languageName: node
   linkType: hard
 
@@ -13413,11 +13413,11 @@ __metadata:
   linkType: hard
 
 "node-abi@npm:^3.3.0":
-  version: 3.44.0
-  resolution: "node-abi@npm:3.44.0"
+  version: 3.45.0
+  resolution: "node-abi@npm:3.45.0"
   dependencies:
     semver: ^7.3.5
-  checksum: b617b54523c18848a6f94c018d731ac2f2c18a9e9eea2bb6c611fa300ce5669991380a1955d7ed186aeee2b6db1557fec48a2043b65d37e1edb2c99547f854c8
+  checksum: 18c4305d7de5f1132741a2a66ba652941518210d02c9268702abe97ce1c166db468b4fc3e85fff04b9c19218c2e47f4e295f9a46422dc834932f4e11443400cd
   languageName: node
   linkType: hard
 
