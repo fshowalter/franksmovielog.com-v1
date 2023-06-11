@@ -5857,9 +5857,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001464, caniuse-lite@npm:^1.0.30001489":
-  version: 1.0.30001498
-  resolution: "caniuse-lite@npm:1.0.30001498"
-  checksum: f58d0a66db9d44178210af05c51954bc2de8e1869a3e638f0f5f2a42d6575c82d1477d5706c1ebb0e363564b09510b5343b753774a30df498a3cc42600f48a6f
+  version: 1.0.30001499
+  resolution: "caniuse-lite@npm:1.0.30001499"
+  checksum: 3ff07cb04f5a3b93e01f6bc87dbf8e6c704b72c1389930b1ebd0527ee0bf23dfdd7129d147b439616dc17384b516519cda965f62f8c02c73aadf0339dcf2dc73
   languageName: node
   linkType: hard
 
@@ -15861,8 +15861,8 @@ __metadata:
   linkType: hard
 
 "rollup@npm:^3.21.0":
-  version: 3.24.1
-  resolution: "rollup@npm:3.24.1"
+  version: 3.25.0
+  resolution: "rollup@npm:3.25.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -15870,7 +15870,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 77d56127f2e0242581055d9f1b7e1ca6a03c57f077bdfbbd1185a7196883ef776b6ea2decb3d14c9fe0286f303a7ae6d570ba3091e23e12d383f61ee01eb30e9
+  checksum: 66c0fb4fcdb74bdbf7ed372f293164d351ed8ea1a2ed99af7953544d7acd4708b8d6c9e58fcb226adfbc77aa4c6b73c866c8d10f52e3608096b82c0b27e22907
   languageName: node
   linkType: hard
 
