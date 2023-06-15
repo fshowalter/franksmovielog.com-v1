@@ -1,19 +1,8 @@
-import {
-  FilterableState,
-  collator,
-  filterTools,
-  sortNumber,
-  sortString,
-} from "../../utils";
+import { FilterableState, filterTools, sortNumber } from "../../utils";
 
 const SHOW_COUNT_DEFAULT = 100;
 
-export type Sort =
-  | "viewing-date-desc"
-  | "viewing-date-asc"
-  | "release-date-desc"
-  | "release-date-asc"
-  | "title";
+export type Sort = "viewing-date-desc" | "viewing-date-asc";
 
 const { updateFilter, clearFilter } = filterTools(sortItems, groupItems);
 
@@ -24,10 +13,6 @@ function sortItems(items: Queries.ViewingsItemFragment[], sortOrder: Sort) {
   > = {
     "viewing-date-desc": (a, b) => sortNumber(a.sequence, b.sequence) * -1,
     "viewing-date-asc": (a, b) => sortNumber(a.sequence, b.sequence),
-    "release-date-desc": (a, b) =>
-      sortString(a.releaseDate, b.releaseDate) * -1,
-    "release-date-asc": (a, b) => sortString(a.releaseDate, b.releaseDate),
-    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
   };
 
   const comparer = sortMap[sortOrder];
@@ -90,9 +75,6 @@ export type State = FilterableState<
   Map<string, Map<string, Queries.ViewingsItemFragment[]>>
 >;
 
-/**
- * Initializes the page state.
- */
 export function initState({
   items,
   sort,
