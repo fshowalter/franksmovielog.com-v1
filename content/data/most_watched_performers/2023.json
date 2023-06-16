@@ -2,6 +2,31 @@
 "viewingYear": "2023",
 "mostWatched": [
 {
+"imdbId": "nm0642180",
+"fullName": "Henry O'Neill",
+"viewingCount": 6,
+"viewing_sequence_ids": [
+1465,
+1466,
+1468,
+1478,
+1491,
+1492
+]
+},
+{
+"imdbId": "nm0000007",
+"fullName": "Humphrey Bogart",
+"viewingCount": 5,
+"viewing_sequence_ids": [
+1443,
+1465,
+1466,
+1468,
+1492
+]
+},
+{
 "imdbId": "nm0001635",
 "fullName": "William Powell",
 "viewingCount": 5,
@@ -14,37 +39,25 @@
 ]
 },
 {
-"imdbId": "nm0642180",
-"fullName": "Henry O'Neill",
-"viewingCount": 5,
-"viewing_sequence_ids": [
-1465,
-1466,
-1468,
-1478,
-1491
-]
-},
-{
-"imdbId": "nm0000007",
-"fullName": "Humphrey Bogart",
-"viewingCount": 4,
-"viewing_sequence_ids": [
-1443,
-1465,
-1466,
-1468
-]
-},
-{
 "imdbId": "nm0000012",
 "fullName": "Bette Davis",
-"viewingCount": 4,
+"viewingCount": 5,
 "viewing_sequence_ids": [
 1469,
 1474,
 1478,
-1480
+1480,
+1492
+]
+},
+{
+"imdbId": "nm0420765",
+"fullName": "Allen Jenkins",
+"viewingCount": 3,
+"viewing_sequence_ids": [
+1431,
+1485,
+1492
 ]
 },
 {
@@ -75,15 +88,6 @@
 1475,
 1477,
 1488
-]
-},
-{
-"imdbId": "nm0420765",
-"fullName": "Allen Jenkins",
-"viewingCount": 2,
-"viewing_sequence_ids": [
-1431,
-1485
 ]
 },
 {
