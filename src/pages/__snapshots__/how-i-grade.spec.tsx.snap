@@ -652,10 +652,10 @@ exports[`/how-i-grade renders 1`] = `
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
-                    alt="D-: 2 stars (out of 5)"
+                    alt="D-: 1.5 stars (out of 5)"
                     class="StillListMovie_gradeStyle__1ug8mv50"
                     height="16"
-                    src="/svg/2-stars.svg"
+                    src="/svg/1-half-stars.svg"
                     width="80"
                   />
                 </div>
@@ -740,10 +740,10 @@ exports[`/how-i-grade renders 1`] = `
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
-                    alt="D-: 2 stars (out of 5)"
+                    alt="D-: 1.5 stars (out of 5)"
                     class="StillListMovie_gradeStyle__1ug8mv50"
                     height="16"
-                    src="/svg/2-stars.svg"
+                    src="/svg/1-half-stars.svg"
                     width="80"
                   />
                 </div>
@@ -916,10 +916,10 @@ exports[`/how-i-grade renders 1`] = `
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
                   <img
-                    alt="C-: 3 stars (out of 5)"
+                    alt="C-: 2.5 stars (out of 5)"
                     class="StillListMovie_gradeStyle__1ug8mv50"
                     height="16"
-                    src="/svg/3-stars.svg"
+                    src="/svg/2-half-stars.svg"
                     width="80"
                   />
                 </div>

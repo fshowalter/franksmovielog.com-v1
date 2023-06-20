@@ -51,9 +51,17 @@ interface ViewingNode {
 
 const gradeMap: Record<string, string> = {
   A: "&#9733;&#9733;&#9733;&#9733;&#9733;",
+  "A+": "&#9733;&#9733;&#9733;&#9733;&#9733;",
+  "A-": "&#9733;&#9733;&#9733;&#9733;&#189;",
   B: "&#9733;&#9733;&#9733;&#9733;",
+  "B+": "&#9733;&#9733;&#9733;&#9733;",
+  "B-": "&#9733;&#9733;&#9733;&#189;",
   C: "&#9733;&#9733;&#9733;",
+  "C+": "&#9733;&#9733;&#9733;",
+  "C=": "&#9733;&#9733;&#189;",
   D: "&#9733;&#9733;",
+  "D+": "&#9733;&#9733;",
+  "D-": "&#9733;&#189;",
   F: "&#9733;",
 };
 
@@ -66,11 +74,9 @@ function starsForGrade(grade: string) {
 }
 
 function addMetaToExcerpt(excerpt: string, viewing: ViewingNode) {
-  const meta = `${starsForGrade(
-    viewing.grade[0]
-  )} D: ${viewing.directorNames.join(", ")}. ${viewing.principalCastNames.join(
+  const meta = `${starsForGrade(viewing.grade)} D: ${viewing.directorNames.join(
     ", "
-  )}.`;
+  )}. ${viewing.principalCastNames.join(", ")}.`;
 
   return `<p>${meta}</p>${excerpt}`;
 }
