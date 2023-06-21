@@ -2124,11 +2124,11 @@ __metadata:
   linkType: hard
 
 "@floating-ui/dom@npm:^1.0.1":
-  version: 1.4.1
-  resolution: "@floating-ui/dom@npm:1.4.1"
+  version: 1.4.2
+  resolution: "@floating-ui/dom@npm:1.4.2"
   dependencies:
     "@floating-ui/core": ^1.3.1
-  checksum: 5e0a27174d8e143670d3fbeffc927cc8f1824a08f4dacefa8fa1526ba4de2bffbd643efefd03cc68d3144ee110369bf5b726cc0198a6f07128a610d679130aec
+  checksum: aede0dbdba0772782fbc284d086cc6a922bd97bdb72ee72a75d0623683d3898af85aa8c71c6ef1b6bfc1bba54398898ccdee51f49c33e317142c9593ee250d06
   languageName: node
   linkType: hard
 
@@ -5821,9 +5821,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001464, caniuse-lite@npm:^1.0.30001503":
-  version: 1.0.30001505
-  resolution: "caniuse-lite@npm:1.0.30001505"
-  checksum: 994a48945d797603e04641aa54d2368d1405feea249dfc51a1dbfc39cbaf51ab0df8ec03c944448289597bd7046ab5dbc6dff7ee3cbfec0e70a83b164395e805
+  version: 1.0.30001506
+  resolution: "caniuse-lite@npm:1.0.30001506"
+  checksum: 0a090745824622df146e2f6dde79c7f7920a899dec1b3a599d2ef9acf41cef5e179fd133bb59f2030286a4ea935f4230e05438d7394694c414e8ada345eb5268
   languageName: node
   linkType: hard
 
@@ -10148,9 +10148,9 @@ __metadata:
   linkType: hard
 
 "graphql@npm:^16.6.0":
-  version: 16.6.0
-  resolution: "graphql@npm:16.6.0"
-  checksum: bf1d9e3c1938ce3c1a81e909bd3ead1ae4707c577f91cff1ca2eca474bfbc7873d5d7b942e1e9777ff5a8304421dba57a4b76d7a29eb19de8711cb70e3c2415e
+  version: 16.7.0
+  resolution: "graphql@npm:16.7.0"
+  checksum: 46199d850ac6d972e03bc6ac402c9a86ff47e0abf99ce96ac94a97d2469d94d33217047582a3e37b8c6bd5af3d16e5842cd7eb3c663f521b5553ac752da31cdb
   languageName: node
   linkType: hard
 
@@ -15990,8 +15990,8 @@ __metadata:
   linkType: hard
 
 "sanitize-html@npm:^2.10.0":
-  version: 2.10.0
-  resolution: "sanitize-html@npm:2.10.0"
+  version: 2.11.0
+  resolution: "sanitize-html@npm:2.11.0"
   dependencies:
     deepmerge: ^4.2.2
     escape-string-regexp: ^4.0.0
@@ -15999,7 +15999,7 @@ __metadata:
     is-plain-object: ^5.0.0
     parse-srcset: ^1.0.2
     postcss: ^8.3.11
-  checksum: 0cb2bb330ed966a4d667b1890322dd868a67f527f87c04d7e3be1688fcfda20f7452a9a7744870751f51e255742e7264a287d9bcfcd64d4cd74a3c99f99c73d2
+  checksum: 44807f22b0feb5a6a883b4bc04bcd8690ec3bbd6dacb24d6e52226ffe0c0e4fad43d6a882ce60e3884a327fae2de01e67e566e3a211491add50ff0160be2e98a
   languageName: node
   linkType: hard
 
