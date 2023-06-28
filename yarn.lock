@@ -5,6 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@aashutoshrathi/word-wrap@npm:^1.2.3":
+  version: 1.2.5
+  resolution: "@aashutoshrathi/word-wrap@npm:1.2.5"
+  checksum: 06e2e20959a4dbbb06f9d324dc2f877c7fb1b5317237daf08a2ddfcbca6ddcaec67bcf0c9e8e1b7764d5b17b480dc4ef61ecb4f362644d0db5a33192df27680b
+  languageName: node
+  linkType: hard
+
 "@adobe/css-tools@npm:^4.0.1":
   version: 4.2.0
   resolution: "@adobe/css-tools@npm:4.2.0"
@@ -5814,9 +5821,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001464, caniuse-lite@npm:^1.0.30001503":
-  version: 1.0.30001508
-  resolution: "caniuse-lite@npm:1.0.30001508"
-  checksum: 0a083ed92194d87e608fc35cac65830a27900249729eb8a68e270f866f2c4f83396c2e54eb47b0ef71360682174dd74e2e68eac0b8d407d125611c7bc12488eb
+  version: 1.0.30001509
+  resolution: "caniuse-lite@npm:1.0.30001509"
+  checksum: b08a98bf884182741d015569173162e5dfb804da22a14cb18c052be6b5f04e32312ff849b31f787b85091d1b1dfd58b128d9878c96e3bb632a1a0a8761548407
   languageName: node
   linkType: hard
 
@@ -13886,16 +13893,16 @@ __metadata:
   linkType: hard
 
 "optionator@npm:^0.9.1":
-  version: 0.9.1
-  resolution: "optionator@npm:0.9.1"
+  version: 0.9.2
+  resolution: "optionator@npm:0.9.2"
   dependencies:
+    "@aashutoshrathi/word-wrap": ^1.2.3
     deep-is: ^0.1.3
     fast-levenshtein: ^2.0.6
     levn: ^0.4.1
     prelude-ls: ^1.2.1
     type-check: ^0.4.0
-    word-wrap: ^1.2.3
-  checksum: dbc6fa065604b24ea57d734261914e697bd73b69eff7f18e967e8912aa2a40a19a9f599a507fa805be6c13c24c4eae8c71306c239d517d42d4c041c942f508a0
+  checksum: ed9b12f526915c52cac5e9aa6f4cf11ffeab4db733913604215d68e99d1f5cb5b0e3869481dd9ecca94e9440020b4c94ae97f2cd11a5ed28a6696c51d52d9350
   languageName: node
   linkType: hard
 
@@ -18362,7 +18369,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"word-wrap@npm:^1.2.3, word-wrap@npm:~1.2.3":
+"word-wrap@npm:~1.2.3":
   version: 1.2.3
   resolution: "word-wrap@npm:1.2.3"
   checksum: 30b48f91fcf12106ed3186ae4fa86a6a1842416df425be7b60485de14bec665a54a68e4b5156647dec3a70f25e84d270ca8bc8cd23182ed095f5c7206a938c1f
