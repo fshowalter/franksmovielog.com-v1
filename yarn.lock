@@ -4421,12 +4421,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/sprinkles@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@vanilla-extract/sprinkles@npm:1.6.0"
+"@vanilla-extract/sprinkles@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@vanilla-extract/sprinkles@npm:1.6.1"
   peerDependencies:
     "@vanilla-extract/css": ^1.0.0
-  checksum: ab30ce88f9124f1eacbb5d5fb4f70534cda1ef0fdb992049657b4b480714f340e6b248b12a9c58451d4c7e7cdf55bf2e7a4bfc7c2fc60873ac0da28dc132d32f
+  checksum: 13c53a94b19f9226c2684b0da06b98022d2faaf504cb5a4a8e5a0abae499aaa7855c17aa6d88534800d9427696b3248f4fc1a5332bde336c445d837017569f3b
   languageName: node
   linkType: hard
 
@@ -8946,7 +8946,7 @@ __metadata:
     "@typescript-eslint/parser": 5.60.1
     "@vanilla-extract/css": 1.11.1
     "@vanilla-extract/jest-transform": 1.1.1
-    "@vanilla-extract/sprinkles": 1.6.0
+    "@vanilla-extract/sprinkles": 1.6.1
     "@vanilla-extract/webpack-plugin": 2.2.0
     babel-jest: 29.5.0
     babel-preset-gatsby: 3.11.0
