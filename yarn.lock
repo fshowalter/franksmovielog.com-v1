@@ -2131,11 +2131,11 @@ __metadata:
   linkType: hard
 
 "@floating-ui/dom@npm:^1.0.1":
-  version: 1.4.2
-  resolution: "@floating-ui/dom@npm:1.4.2"
+  version: 1.4.3
+  resolution: "@floating-ui/dom@npm:1.4.3"
   dependencies:
     "@floating-ui/core": ^1.3.1
-  checksum: aede0dbdba0772782fbc284d086cc6a922bd97bdb72ee72a75d0623683d3898af85aa8c71c6ef1b6bfc1bba54398898ccdee51f49c33e317142c9593ee250d06
+  checksum: f377960b5a61a685c77b2cdda1243122437008e138d29cdf2c5861d74650742057f011fb75580e6eab045a1c6109ad743202dd3f25b832ef70ef49d391b8f4ea
   languageName: node
   linkType: hard
 
@@ -4345,7 +4345,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.11.1, @vanilla-extract/css@npm:^1.10.0":
+"@vanilla-extract/css@npm:1.11.1":
   version: 1.11.1
   resolution: "@vanilla-extract/css@npm:1.11.1"
   dependencies:
@@ -4361,6 +4361,25 @@ __metadata:
     media-query-parser: ^2.0.2
     outdent: ^0.8.0
   checksum: 1498ced4ba1fd78f3e42567a49daac9eea15e0fa1418d39e4ba5a3e84ded66a5567733f5fa364eaf5fe9c0354124bd62a32ffd603427b76e36004ed49b55c7d2
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/css@npm:^1.10.0":
+  version: 1.12.0
+  resolution: "@vanilla-extract/css@npm:1.12.0"
+  dependencies:
+    "@emotion/hash": ^0.9.0
+    "@vanilla-extract/private": ^1.0.3
+    ahocorasick: 1.0.2
+    chalk: ^4.1.1
+    css-what: ^6.1.0
+    cssesc: ^3.0.0
+    csstype: ^3.0.7
+    deep-object-diff: ^1.1.9
+    deepmerge: ^4.2.2
+    media-query-parser: ^2.0.2
+    outdent: ^0.8.0
+  checksum: b8691011b5ee5d4640d1ffb0a792fe97a34a07b0bfab371d23562bd7831f0a89241c0ff3bdde9eea660544aa62ae875a0a6184f9e8461c4b059c63bc185c0bd7
   languageName: node
   linkType: hard
 
@@ -7335,9 +7354,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.431":
-  version: 1.4.444
-  resolution: "electron-to-chromium@npm:1.4.444"
-  checksum: 3ad79cac6b453dfda6e7c64d335e693470e4da13f6975dc1100c499e0b80943cf32f2ccf02e34b906ad0658ac360c249215f81fd7dcc3e2e949946ba6af32958
+  version: 1.4.445
+  resolution: "electron-to-chromium@npm:1.4.445"
+  checksum: 6f42497e5a7d466fd3a4cf716f7c0c0c71b85d5bdc32cb8988ab969ae46aad1bad6fe267d6ab09877aa5769bf8db7b158a18b9bb67dd8a8a98565fc54cd45a3a
   languageName: node
   linkType: hard
 
