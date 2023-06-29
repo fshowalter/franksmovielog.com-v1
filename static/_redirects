@@ -119,14 +119,14 @@
 /repeater.php /gone 410
 
 # resized images
-/static/*/1015f/*.jpg /gone 410
-/static/*/5dbd5/*.jpg /gone 410
-/static/*/8a152/*.jpg /gone 410
-/static/*/8ab54/*.jpg /gone 410
-/static/*/936aa/*.jpg /gone 410
-/static/*/c3c10/*.jpg /gone 410
-/static/*/d5f84/*.jpg /gone 410
-/static/*/e34c3/*.jpg /gone 410
-/static/*/f249d/*.jpg /gone 410
-/static/*/f2565/*.jpg /gone 410
-/static/*/f4320/*.jpg /gone 410
+/static/:contenthash/1015f/* /gone 410
+/static/:contenthash/5dbd5/* /gone 410
+/static/:contenthash/8a152/* /gone 410
+/static/:contenthash/8ab54/* /gone 410
+/static/:contenthash/936aa/* /gone 410
+/static/:contenthash/c3c10/* /gone 410
+/static/:contenthash/d5f84/* /gone 410
+/static/:contenthash/e34c3/* /gone 410
+/static/:contenthash/f249d/* /gone 410
+/static/:contenthash/f2565/* /gone 410
+/static/:contenthash/f4320/* /gone 410
