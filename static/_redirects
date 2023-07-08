@@ -80,10 +80,11 @@
 /wlwmanifest.xml /gone 410
 /wp-admin/config.bak.php /gone 410
 /wp-content /gone 410
-/wp-content/config.bak.php /gone 410
-/wp-content/wp-1ogin_bak.php /gone 410
+/wp-content/* /gone 410
 /wp-login.php /gone 410
 /xmlrpc.php /gone 410
+/wordpress/ /gone 410
+/wordpress/* /gone 410
 
 
 # old favicons
@@ -106,12 +107,16 @@
 /ads.txt /gone 410
 /repeater.php /gone 410
 
+
 # resized images
 /static/:contenthash/1015f/* /gone 410
 /static/:contenthash/10e3d/* /gone 410
+/static/:contenthash/141a0/* /gone 410
+/static/:contenthash/4006c/* /gone 410
 /static/:contenthash/5dbd5/* /gone 410
 /static/:contenthash/8a152/* /gone 410
 /static/:contenthash/8ab54/* /gone 410
+/static/:contenthash/9025e/* /gone 410
 /static/:contenthash/936aa/* /gone 410
 /static/:contenthash/c3c10/* /gone 410
 /static/:contenthash/ced04/* /gone 410
@@ -120,3 +125,4 @@
 /static/:contenthash/f249d/* /gone 410
 /static/:contenthash/f2565/* /gone 410
 /static/:contenthash/f4320/* /gone 410
+
