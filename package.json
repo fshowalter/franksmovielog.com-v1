@@ -45,6 +45,7 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@types/react-test-renderer": "18.0.0",
+    "@types/unist": "2.0.6",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
     "@vanilla-extract/jest-transform": "1.1.1",
@@ -90,6 +91,9 @@
     "last 2 versions",
     "not dead"
   ],
+  "resolutions": {
+    "@types/unist": "^2.0.6"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
