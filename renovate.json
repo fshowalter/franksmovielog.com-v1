@@ -21,6 +21,11 @@
       ]
     },
     {
+      "groupName": "remark types",
+      "allowedVersions": "<3.0.0",
+      "matchPackageNames": ["@types/hast", "@types/unist"]
+    },
+    {
       "matchPackageNames": ["@typescript-eslint/*"],
       "groupName": "@typescript/eslint"
     }
