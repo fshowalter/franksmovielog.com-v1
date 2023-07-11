@@ -85,6 +85,7 @@
 /xmlrpc.php /gone 410
 /wordpress/ /gone 410
 /wordpress/* /gone 410
+/.aws/credentials /gone 410
 
 
 # old favicons
@@ -110,6 +111,7 @@
 
 # resized images
 /static/:contenthash/1015f/* /gone 410
+/static/:contenthash/10b75/* /gone 410
 /static/:contenthash/10e3d/* /gone 410
 /static/:contenthash/141a0/* /gone 410
 /static/:contenthash/4006c/* /gone 410
@@ -119,6 +121,7 @@
 /static/:contenthash/9025e/* /gone 410
 /static/:contenthash/936aa/* /gone 410
 /static/:contenthash/992e1/* /gone 410
+/static/:contenthash/ad189/* /gone 410
 /static/:contenthash/ad875/* /gone 410
 /static/:contenthash/c3c10/* /gone 410
 /static/:contenthash/ced04/* /gone 410
