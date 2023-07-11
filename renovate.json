@@ -21,6 +21,10 @@
       ]
     },
     {
+      "groupName": "prettier",
+      "matchPackageNames": ["prettier", "eslint-plugin-prettier"]
+    },
+    {
       "groupName": "remark types",
       "allowedVersions": "<3.0.0",
       "matchPackageNames": ["@types/hast", "@types/unist"]
