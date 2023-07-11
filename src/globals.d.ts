@@ -13,6 +13,16 @@ declare module "@gatsbyjs/reach-router" {
   }
   export type WindowLocation<S = unknown> = Window["location"] & HLocation<S>;
 
+  export interface NavigateFn {
+    (to: string, options?: NavigateOptions<object>): Promise<void>;
+    (to: number, options?: undefined): Promise<void>;
+  }
+
+  export interface NavigateOptions<TState> {
+    state?: TState | undefined;
+    replace?: boolean | undefined;
+  }
+
   export type HistoryActionType = "PUSH" | "POP";
   export type HistoryLocation = WindowLocation & { state?: any }; // eslint-disable-line @typescript-eslint/no-explicit-any
   export interface HistoryListenerParameter {
@@ -32,6 +42,15 @@ declare module "@gatsbyjs/reach-router" {
   export interface LocationProviderProps {
     history?: History;
     children?: React.ReactNode | LocationProviderRenderFn;
+  }
+
+  export type LocationProviderRenderFn = (
+    context: LocationContext
+  ) => React.ReactNode;
+
+  export interface LocationContext {
+    location: WindowLocation;
+    navigate: NavigateFn;
   }
 
   export class LocationProvider extends React.Component<LocationProviderProps> {} // eslint-disable-line react/prefer-stateless-function
