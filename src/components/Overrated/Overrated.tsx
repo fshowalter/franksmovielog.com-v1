@@ -23,7 +23,7 @@ export function Overrated({
       items: [...items],
       sort: initialSort,
     },
-    initState
+    initState,
   );
 
   return (

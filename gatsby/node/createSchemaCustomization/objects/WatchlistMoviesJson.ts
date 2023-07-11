@@ -32,7 +32,7 @@ export const WatchlistMoviesJson = {
       resolve: async (
         source: WatchlistMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } =
           await context.nodeModel.findAll<WatchlistEntityNode>({
@@ -53,7 +53,7 @@ export const WatchlistMoviesJson = {
       resolve: async (
         source: WatchlistMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } =
           await context.nodeModel.findAll<WatchlistEntityNode>({
@@ -74,7 +74,7 @@ export const WatchlistMoviesJson = {
       resolve: async (
         source: WatchlistMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } =
           await context.nodeModel.findAll<WatchlistEntityNode>({

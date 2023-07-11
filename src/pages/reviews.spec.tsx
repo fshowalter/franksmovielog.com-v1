@@ -36,7 +36,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Review Date (Newest First)"
+      "Review Date (Newest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -49,7 +49,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Review Date (Oldest First)"
+      "Review Date (Oldest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -62,7 +62,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Title (A → Z)"
+      "Title (A → Z)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -75,7 +75,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Title (Z → A)"
+      "Title (Z → A)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -88,7 +88,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Oldest First)"
+      "Release Date (Oldest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -101,7 +101,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Newest First)"
+      "Release Date (Newest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -114,7 +114,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Best First)"
+      "Grade (Best First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -127,7 +127,7 @@ describe("/reviews", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Worst First)"
+      "Grade (Worst First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();

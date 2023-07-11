@@ -23,7 +23,7 @@ export function WatchlistEntity({
       items: [...entity.watchlistMovies],
       sort: "release-date-asc",
     },
-    initState
+    initState,
   );
   return (
     <ListWithFiltersLayout

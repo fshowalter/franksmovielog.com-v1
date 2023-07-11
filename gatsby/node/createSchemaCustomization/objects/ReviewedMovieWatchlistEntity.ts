@@ -19,7 +19,7 @@ export const ReviewedMovieWatchlistEntity = {
       resolve: async (
         source: WatchlistEntityNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         if (!source.slug) {
           return null;
@@ -46,10 +46,10 @@ export const ReviewedMovieWatchlistEntity = {
         source: WatchlistEntityNode,
         args: { sourceReviewId: string },
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const watchlistMovies = await resolveFieldForNode<WatchlistMovieNode[]>(
-          { fieldName: "watchlistMovies", source, context, info, args }
+          { fieldName: "watchlistMovies", source, context, info, args },
         );
 
         if (!watchlistMovies) {
@@ -57,7 +57,7 @@ export const ReviewedMovieWatchlistEntity = {
         }
 
         const watchlistMovieImdbIds = Array.from(watchlistMovies).map(
-          (movie) => movie.imdbId
+          (movie) => movie.imdbId,
         );
 
         const { entries, totalCount } =
@@ -82,7 +82,7 @@ export const ReviewedMovieWatchlistEntity = {
 
         return sliceMoviesForBrowseMore(
           Array.from(entries),
-          args.sourceReviewId
+          args.sourceReviewId,
         );
       },
     },

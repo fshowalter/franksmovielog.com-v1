@@ -56,7 +56,7 @@ describe("/viewings", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Viewing Date (Newest First)"
+      "Viewing Date (Newest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -69,7 +69,7 @@ describe("/viewings", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Viewing Date (Oldest First)"
+      "Viewing Date (Oldest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();

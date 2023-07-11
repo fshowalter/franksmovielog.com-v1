@@ -4,7 +4,7 @@ interface MovieNode {
 
 export function sliceMoviesForBrowseMore(
   movies: MovieNode[],
-  sourceReviewId: string
+  sourceReviewId: string,
 ) {
   const windowSize = 5;
   const arraySize = movies.length;

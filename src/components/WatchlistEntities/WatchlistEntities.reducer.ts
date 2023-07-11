@@ -15,13 +15,13 @@ export type SortValue =
 
 function sortEntities(
   entities: Queries.WatchlistEntitiesItemFragment[],
-  sortOrder: SortValue
+  sortOrder: SortValue,
 ): Queries.WatchlistEntitiesItemFragment[] {
   const sortMap: Record<
     SortValue,
     (
       a: Queries.WatchlistEntitiesItemFragment,
-      b: Queries.WatchlistEntitiesItemFragment
+      b: Queries.WatchlistEntitiesItemFragment,
     ) => number
   > = {
     "name-asc": (a, b) => sortString(a.name, b.name),
@@ -96,7 +96,7 @@ export function reducer(state: State, action: Action): State {
           collection: state.allEntities,
           filters,
         }),
-        state.sortValue
+        state.sortValue,
       );
       return {
         ...state,

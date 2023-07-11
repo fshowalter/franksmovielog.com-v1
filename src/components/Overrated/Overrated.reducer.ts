@@ -25,7 +25,7 @@ function sortItems(items: Queries.OverratedItemFragment[], sortOrder: Sort) {
     Sort,
     (
       a: Queries.OverratedItemFragment,
-      b: Queries.OverratedItemFragment
+      b: Queries.OverratedItemFragment,
     ) => number
   > = {
     "release-date-desc": (a, b) =>
@@ -43,7 +43,7 @@ function sortItems(items: Queries.OverratedItemFragment[], sortOrder: Sort) {
 
 function groupForItem(
   item: Queries.OverratedItemFragment,
-  sortValue: Sort
+  sortValue: Sort,
 ): string {
   switch (sortValue) {
     case "release-date-asc":
@@ -163,7 +163,7 @@ export function reducer(state: State, action: Action): State {
       filteredItems = sortItems(state.filteredItems, action.value);
       groupedItems = groupItems(
         filteredItems.slice(0, state.showCount),
-        action.value
+        action.value,
       );
       return {
         ...state,
@@ -177,7 +177,7 @@ export function reducer(state: State, action: Action): State {
 
       groupedItems = groupItems(
         state.filteredItems.slice(0, showCount),
-        state.sortValue
+        state.sortValue,
       );
 
       return {

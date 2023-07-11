@@ -32,7 +32,7 @@ export async function createReviewPages({
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphQL query for review pages.`
+      `Error while running GraphQL query for review pages.`,
     );
     return;
   }

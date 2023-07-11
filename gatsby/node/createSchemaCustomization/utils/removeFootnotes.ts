@@ -9,7 +9,7 @@ export function removeFootnotes(element: Element) {
     function (
       element: Element,
       index: number | null,
-      parent: Parent | undefined
+      parent: Parent | undefined,
     ) {
       if (
         parent &&
@@ -36,7 +36,7 @@ export function removeFootnotes(element: Element) {
         parent.children.splice(index, 1);
         return [visit.SKIP, index];
       }
-    }
+    },
   );
 
   return element;

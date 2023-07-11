@@ -44,7 +44,7 @@ export function Layout({
         width="full"
         className={composeClassNames(
           bandStickyStyle,
-          ripNotComingSoonBackgroundImageStyle
+          ripNotComingSoonBackgroundImageStyle,
         )}
       />
 

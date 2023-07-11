@@ -5,7 +5,7 @@ import type { ReviewedMovieNode } from "../ReviewedMoviesJson";
 
 export async function findReviewedMovieNode(
   imdbId: string | null,
-  nodeModel: GatsbyNodeModel
+  nodeModel: GatsbyNodeModel,
 ) {
   if (!imdbId) {
     return null;
@@ -26,7 +26,7 @@ export async function findReviewedMovieNode(
 async function resolver(
   source: { imdbId: string },
   _args: unknown,
-  context: GatsbyNodeContext
+  context: GatsbyNodeContext,
 ) {
   if (!source.imdbId) {
     return null;

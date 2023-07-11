@@ -24,7 +24,7 @@ function sortItems(items: Queries.WatchlistItemFragment[], sortOrder: Sort) {
     Sort,
     (
       a: Queries.WatchlistItemFragment,
-      b: Queries.WatchlistItemFragment
+      b: Queries.WatchlistItemFragment,
     ) => number
   > = {
     "release-date-desc": (a, b) =>
@@ -42,7 +42,7 @@ function sortItems(items: Queries.WatchlistItemFragment[], sortOrder: Sort) {
 
 function groupForItem(
   item: Queries.WatchlistItemFragment,
-  sortValue: Sort
+  sortValue: Sort,
 ): string {
   switch (sortValue) {
     case "release-date-asc":
@@ -162,7 +162,7 @@ export type Action =
 function clearFilter(
   value: string,
   currentState: State,
-  key: string
+  key: string,
 ): State | null {
   if (value != "All") {
     return null;
@@ -238,7 +238,7 @@ export function reducer(state: State, action: Action): State {
       filteredItems = sortItems(state.filteredItems, action.value);
       groupedItems = groupItems(
         filteredItems.slice(0, state.showCount),
-        action.value
+        action.value,
       );
       return {
         ...state,
@@ -252,7 +252,7 @@ export function reducer(state: State, action: Action): State {
 
       groupedItems = groupItems(
         state.filteredItems.slice(0, showCount),
-        state.sortValue
+        state.sortValue,
       );
 
       return {

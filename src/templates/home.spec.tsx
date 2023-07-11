@@ -13,7 +13,7 @@ describe("/", () => {
           numberOfItems: 102,
           currentPage: 1,
         }}
-      />
+      />,
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -29,7 +29,7 @@ describe("/", () => {
           numberOfItems: 102,
           currentPage: 102,
         }}
-      />
+      />,
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -45,7 +45,7 @@ describe("/", () => {
           numberOfItems: 102,
           currentPage: 51,
         }}
-      />
+      />,
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -60,11 +60,11 @@ describe("/", () => {
           numberOfItems: 102,
           currentPage: 1,
         }}
-      />
+      />,
     );
 
     expect(document.title).toStrictEqual(
-      "Frank's Movie Log: My Life at the Movies"
+      "Frank's Movie Log: My Life at the Movies",
     );
   });
 
@@ -77,7 +77,7 @@ describe("/", () => {
           numberOfItems: 102,
           currentPage: 2,
         }}
-      />
+      />,
     );
 
     expect(document.title).toStrictEqual("Page 2");
@@ -93,7 +93,7 @@ describe("/", () => {
           numberOfItems: 102,
           currentPage: 11,
         }}
-      />
+      />,
     );
 
     expect(asFragment()).toMatchSnapshot();

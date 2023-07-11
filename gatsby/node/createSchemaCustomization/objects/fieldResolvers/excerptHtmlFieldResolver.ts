@@ -20,7 +20,7 @@ export const excerptHtmlFieldResolver = {
     source: MarkdownNode,
     _args: Record<string, unknown>,
     context: GatsbyNodeContext,
-    info: GatsbyResolveInfo
+    info: GatsbyResolveInfo,
   ) => {
     const rawMarkdownBody = await resolveFieldForNode<string>({
       fieldName: "rawMarkdownBody",
@@ -58,7 +58,7 @@ export const excerptHtmlFieldResolver = {
       excerpt = excerpt.replace(/\n+$/, "");
       excerpt = excerpt.replace(
         /<\/p>$/,
-        ` <a data-continue-reading href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`
+        ` <a data-continue-reading href="/reviews/${source.frontmatter.slug}/">Continue reading...</a></p>`,
       );
     }
 

@@ -26,8 +26,8 @@ export default async function createHomePages({
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
       `Error while running GraphQL query for home updates: ${JSON.stringify(
-        queryResult.errors
-      )}`
+        queryResult.errors,
+      )}`,
     );
     return;
   }

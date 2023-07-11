@@ -8,7 +8,7 @@ export const allTimeStatsQuery = {
       resolve: async (
         _source: unknown,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const viewingStats = await context.nodeModel.findOne({
           type: SchemaNames.ViewingStatsJson,
@@ -37,7 +37,7 @@ export const allTimeStatsQuery = {
             query: {
               sort: { fields: ["gradeValue"], order: [`desc`] },
             },
-          }
+          },
         );
 
         const mostWatchedMedia = await context.nodeModel.findOne({

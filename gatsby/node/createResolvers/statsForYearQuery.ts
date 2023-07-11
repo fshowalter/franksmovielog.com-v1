@@ -11,7 +11,7 @@ export const statsForYearQuery = {
       resolve: async (
         _source: unknown,
         args: { year: string },
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const viewingStats = await context.nodeModel.findOne({
           type: SchemaNames.ViewingStatsJson,

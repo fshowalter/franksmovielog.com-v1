@@ -3,7 +3,7 @@ import { GatsbyNodeModel } from "../type-definitions";
 
 export default async function addReviewLinks(
   text: string,
-  nodeModel: GatsbyNodeModel
+  nodeModel: GatsbyNodeModel,
 ) {
   let result = text;
 
@@ -17,12 +17,12 @@ export default async function addReviewLinks(
     if (!reviewedMovie) {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
-        match[3]
+        match[3],
       );
     } else {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
-        `<a href="/reviews/${reviewedMovie.slug}/">${match[3]}</a>`
+        `<a href="/reviews/${reviewedMovie.slug}/">${match[3]}</a>`,
       );
     }
   }

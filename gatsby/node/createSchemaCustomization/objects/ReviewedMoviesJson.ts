@@ -41,7 +41,7 @@ export const ReviewedMoviesJson = {
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne<MarkdownNode>({
           type: SchemaNames.MarkdownRemark,
@@ -80,7 +80,7 @@ export const ReviewedMoviesJson = {
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll<ReviewedMovieNode>({
           type: SchemaNames.ReviewedMoviesJson,
@@ -100,7 +100,7 @@ export const ReviewedMoviesJson = {
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll({
           type: SchemaNames.ViewingsJson,
@@ -125,7 +125,7 @@ export const ReviewedMoviesJson = {
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: "File",
@@ -144,7 +144,7 @@ export const ReviewedMoviesJson = {
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: "File",
@@ -163,7 +163,7 @@ export const ReviewedMoviesJson = {
       resolve: async (
         source: ReviewedMovieNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const watchlist = {
           performers: [],

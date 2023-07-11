@@ -45,7 +45,7 @@ describe("/watchlist/collections/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Oldest First)"
+      "Release Date (Oldest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -58,7 +58,7 @@ describe("/watchlist/collections/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Newest First)"
+      "Release Date (Newest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -71,7 +71,7 @@ describe("/watchlist/collections/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Best First)"
+      "Grade (Best First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -84,7 +84,7 @@ describe("/watchlist/collections/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Worst First)"
+      "Grade (Worst First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();

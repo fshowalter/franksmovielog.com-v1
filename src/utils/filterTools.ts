@@ -9,7 +9,7 @@ export interface FilterableState<T, S, G> {
 
 export function filterTools<T, S, G>(
   sorter: (items: T[], sortOrder: S) => T[],
-  grouper: (items: T[], sortOrder: S) => G
+  grouper: (items: T[], sortOrder: S) => G,
 ) {
   const applyFilters = buildApplyFilters(sorter, grouper);
 
@@ -17,7 +17,7 @@ export function filterTools<T, S, G>(
     updateFilter: function updateFilter<State extends FilterableState<T, S, G>>(
       currentState: State,
       key: string,
-      handler: (item: T) => boolean
+      handler: (item: T) => boolean,
     ): State {
       const filters = {
         ...currentState.filters,
@@ -29,7 +29,7 @@ export function filterTools<T, S, G>(
     clearFilter: function clearFilter<State extends FilterableState<T, S, G>>(
       value: string,
       currentState: State,
-      key: string
+      key: string,
     ): State | null {
       if (value != "All") {
         return null;
@@ -49,23 +49,23 @@ export function filterTools<T, S, G>(
 
 function buildApplyFilters<T, S, G>(
   sorter: (items: T[], sortOrder: S) => T[],
-  grouper: (items: T[], sortOrder: S) => G
+  grouper: (items: T[], sortOrder: S) => G,
 ) {
   return function applyFilters<State extends FilterableState<T, S, G>>(
     newFilters: Record<string, (item: T) => boolean>,
-    currentState: State
+    currentState: State,
   ): State {
     const filteredItems = sorter(
       filterCollection({
         collection: currentState.allItems,
         filters: newFilters,
       }),
-      currentState.sortValue
+      currentState.sortValue,
     );
 
     const groupedItems = grouper(
       filteredItems.slice(0, currentState.showCount),
-      currentState.sortValue
+      currentState.sortValue,
     );
 
     return {

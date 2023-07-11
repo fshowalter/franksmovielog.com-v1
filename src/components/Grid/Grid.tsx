@@ -6,7 +6,7 @@ export interface IGridAreaProps<T extends string> extends IBoxProps {
 }
 
 export function gridAreaComponent<T extends string>(
-  gridAreas: Record<T, string>
+  gridAreas: Record<T, string>,
 ): (args: IGridAreaProps<T>) => JSX.Element {
   return function GridArea({ name, ...rest }: IGridAreaProps<T>) {
     return <Box className={gridAreas[name]} {...rest} />;
@@ -14,7 +14,7 @@ export function gridAreaComponent<T extends string>(
 }
 
 export function gridComponent(
-  gridStyle: string
+  gridStyle: string,
 ): (args: IBoxProps) => JSX.Element {
   return function Grid({ className, ...rest }: IBoxProps) {
     return (

@@ -23,7 +23,7 @@ export function Underseen({
       items: [...items],
       sort: initialSort,
     },
-    initState
+    initState,
   );
 
   return (

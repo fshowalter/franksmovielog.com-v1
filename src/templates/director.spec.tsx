@@ -23,7 +23,7 @@ describe("/watchlist/directors/{slug}", () => {
     await act(async () => {
       await userEvent.type(
         screen.getByLabelText("Title"),
-        "Man Who Shot Liberty Valance"
+        "Man Who Shot Liberty Valance",
       );
       await new Promise((r) => setTimeout(r, 500));
     });
@@ -48,7 +48,7 @@ describe("/watchlist/directors/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Oldest First)"
+      "Release Date (Oldest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -61,7 +61,7 @@ describe("/watchlist/directors/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Newest First)"
+      "Release Date (Newest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -74,7 +74,7 @@ describe("/watchlist/directors/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Best First)"
+      "Grade (Best First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -87,7 +87,7 @@ describe("/watchlist/directors/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Worst First)"
+      "Grade (Worst First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();

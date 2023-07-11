@@ -38,7 +38,7 @@ describe("HeadBuilder", () => {
           />
         </LocationProvider>
       </>,
-      { container: document.head }
+      { container: document.head },
     );
 
     expect(document.head).toMatchInlineSnapshot(`
@@ -89,7 +89,7 @@ describe("HeadBuilder", () => {
           />
         </LocationProvider>
       </>,
-      { container: document.head }
+      { container: document.head },
     );
 
     expect(document.head).toMatchInlineSnapshot(`
@@ -141,7 +141,7 @@ describe("HeadBuilder", () => {
           />
         </LocationProvider>
       </>,
-      { container: document.head }
+      { container: document.head },
     );
 
     expect(document.title).toStrictEqual("Frank's Movie Log");

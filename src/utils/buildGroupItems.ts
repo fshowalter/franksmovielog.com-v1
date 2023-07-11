@@ -1,5 +1,5 @@
 export function buildGroupItems<T, S>(
-  itemGrouper: (item: T, sortValue: S) => string
+  itemGrouper: (item: T, sortValue: S) => string,
 ) {
   return function groupItems(items: T[], sortValue: S): Map<string, T[]> {
     const groupedItems = new Map<string, T[]>();
