@@ -49,9 +49,7 @@ type HTMLProperties = Omit<
 >;
 
 type OverrideTokens<T> = {
-  [K in keyof T as K extends string ? `__${K}` : number]:
-    | any
-    | Record<string, unknown>;
+  [K in keyof T as K extends string ? `__${K}` : number]: any;
 };
 
 interface CreateBoxParams<AtomsFn> {
