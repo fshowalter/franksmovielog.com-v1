@@ -27,7 +27,7 @@ export function Watchlist({
       items: [...items],
       sort: "release-date-asc",
     },
-    initState
+    initState,
   );
 
   return (

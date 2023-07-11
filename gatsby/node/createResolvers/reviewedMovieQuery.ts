@@ -13,7 +13,7 @@ export const reviewedMovieQuery = {
         args: {
           id: string;
         },
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return context.nodeModel.getNodeById({
           id: args.id,

@@ -17,7 +17,7 @@ chokidar
       let dest;
       const name = sourcePath.replace(
         /..\/movielog\/(export|reviews|viewing_notes)\//,
-        ""
+        "",
       );
 
       if (/\/reviews\//.test(sourcePath)) {

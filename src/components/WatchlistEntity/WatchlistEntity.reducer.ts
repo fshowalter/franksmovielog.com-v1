@@ -21,13 +21,13 @@ const { updateFilter, applyFilters } = filterTools(sortItems, groupItems);
 
 function sortItems(
   items: Queries.WatchlistEntityItemFragment[],
-  sortOrder: Sort
+  sortOrder: Sort,
 ) {
   const sortMap: Record<
     Sort,
     (
       a: Queries.WatchlistEntityItemFragment,
-      b: Queries.WatchlistEntityItemFragment
+      b: Queries.WatchlistEntityItemFragment,
     ) => number
   > = {
     "release-date-desc": (a, b) =>
@@ -45,7 +45,7 @@ function sortItems(
 
 function groupForItem(
   item: Queries.WatchlistEntityItemFragment,
-  sortValue: Sort
+  sortValue: Sort,
 ): string {
   switch (sortValue) {
     case "release-date-asc":
@@ -163,7 +163,7 @@ export function reducer(state: State, action: Action): State {
       filteredItems = sortItems(state.filteredItems, action.value);
       groupedItems = groupItems(
         filteredItems.slice(0, state.showCount),
-        action.value
+        action.value,
       );
       return {
         ...state,
@@ -177,7 +177,7 @@ export function reducer(state: State, action: Action): State {
 
       groupedItems = groupItems(
         state.filteredItems.slice(0, showCount),
-        state.sortValue
+        state.sortValue,
       );
 
       return {

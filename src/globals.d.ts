@@ -45,7 +45,7 @@ declare module "@gatsbyjs/reach-router" {
   }
 
   export type LocationProviderRenderFn = (
-    context: LocationContext
+    context: LocationContext,
   ) => React.ReactNode;
 
   export interface LocationContext {

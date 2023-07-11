@@ -12,7 +12,7 @@ export type onChangeHandler = (value: string) => void;
 function delay<F extends onChangeHandler>(
   func: F,
   wait: number,
-  value: string
+  value: string,
 ): NodeJS.Timeout {
   return setTimeout(function delayWrap() {
     return func(value);
@@ -26,7 +26,7 @@ function delay<F extends onChangeHandler>(
  */
 function underscoreDebounce<F extends onChangeHandler>(
   func: F,
-  wait: number
+  wait: number,
 ): onChangeHandler {
   let timeout: NodeJS.Timeout | null = null;
 

@@ -21,7 +21,7 @@ export function WatchlistEntities({
       entities,
       sort: "name-asc",
     },
-    initState
+    initState,
   );
 
   return (

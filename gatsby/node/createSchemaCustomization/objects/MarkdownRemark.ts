@@ -39,12 +39,12 @@ async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
     if (!reviewedMovie) {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
-        match[3]
+        match[3],
       );
     } else {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
-        `<a href="/reviews/${reviewedMovie.slug}/">${match[3]}</a>`
+        `<a href="/reviews/${reviewedMovie.slug}/">${match[3]}</a>`,
       );
     }
   }
@@ -68,7 +68,7 @@ export const MarkdownRemark = {
         source: MarkdownNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const frontMatter = await resolveFieldForNode<FrontMatter>({
           fieldName: "frontmatter",
@@ -91,7 +91,7 @@ export const MarkdownRemark = {
         source: MarkdownNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const frontMatter = await resolveFieldForNode<FrontMatter>({
           fieldName: "frontmatter",

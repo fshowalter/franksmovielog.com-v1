@@ -30,7 +30,7 @@ export const WatchlistEntitiesJson = {
         source: WatchlistEntityNode,
         _args: unknown,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const slug = source.slug;
         const reviewCount = await resolveFieldForNode<number>({
@@ -52,7 +52,7 @@ export const WatchlistEntitiesJson = {
       resolve: async (
         source: WatchlistEntityNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         if (!source.slug) {
           return null;
@@ -76,10 +76,10 @@ export const WatchlistEntitiesJson = {
         source: WatchlistEntityNode,
         _args: unknown,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const watchlistMovies = await resolveFieldForNode<WatchlistMovieNode[]>(
-          { fieldName: "watchlistMovies", source, context, info }
+          { fieldName: "watchlistMovies", source, context, info },
         );
 
         if (!watchlistMovies) {
@@ -87,7 +87,7 @@ export const WatchlistEntitiesJson = {
         }
 
         const watchlistMovieImdbIds = Array.from(
-          watchlistMovies.map((movie) => movie.imdbId)
+          watchlistMovies.map((movie) => movie.imdbId),
         );
 
         const { totalCount } =
@@ -108,7 +108,7 @@ export const WatchlistEntitiesJson = {
       resolve: async (
         source: WatchlistEntityNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         if (source.entityType == "collection") {
           const { entries } = await context.nodeModel.findAll({

@@ -13,11 +13,11 @@ export const posterFieldResolver = {
     source: { imdbId: string },
     args: GatsbyResolveArgs,
     context: GatsbyNodeContext,
-    info: GatsbyResolveInfo
+    info: GatsbyResolveInfo,
   ) => {
     const reviewedMovie = await findReviewedMovieNode(
       source.imdbId,
-      context.nodeModel
+      context.nodeModel,
     );
 
     if (!reviewedMovie) {

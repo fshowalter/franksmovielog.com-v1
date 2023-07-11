@@ -13,26 +13,24 @@ interface EntityQueryResult {
 async function createDirectorPages(
   graphql: CreatePagesArgs["graphql"],
   reporter: CreatePagesArgs["reporter"],
-  createPage: Actions["createPage"]
+  createPage: Actions["createPage"],
 ) {
-  const queryResult = await graphql<EntityQueryResult>(
-    `
-      {
-        entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: director }, reviewCount: { gt: 0 } }
-        ) {
-          nodes {
-            id
-            slug
-          }
+  const queryResult = await graphql<EntityQueryResult>(`
+    {
+      entity: allWatchlistEntitiesJson(
+        filter: { entityType: { eq: director }, reviewCount: { gt: 0 } }
+      ) {
+        nodes {
+          id
+          slug
         }
       }
-    `
-  );
+    }
+  `);
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
-      `Error while running query for watchlist director pages.`
+      `Error while running query for watchlist director pages.`,
     );
     return;
   }
@@ -51,26 +49,24 @@ async function createDirectorPages(
 async function createPerformerPages(
   graphql: CreatePagesArgs["graphql"],
   reporter: CreatePagesArgs["reporter"],
-  createPage: Actions["createPage"]
+  createPage: Actions["createPage"],
 ) {
-  const queryResult = await graphql<EntityQueryResult>(
-    `
-      {
-        entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: performer }, reviewCount: { gt: 0 } }
-        ) {
-          nodes {
-            id
-            slug
-          }
+  const queryResult = await graphql<EntityQueryResult>(`
+    {
+      entity: allWatchlistEntitiesJson(
+        filter: { entityType: { eq: performer }, reviewCount: { gt: 0 } }
+      ) {
+        nodes {
+          id
+          slug
         }
       }
-    `
-  );
+    }
+  `);
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
-      `Error while running query watchlist performer pages.`
+      `Error while running query watchlist performer pages.`,
     );
     return;
   }
@@ -89,22 +85,20 @@ async function createPerformerPages(
 async function createWriterPages(
   graphql: CreatePagesArgs["graphql"],
   reporter: CreatePagesArgs["reporter"],
-  createPage: Actions["createPage"]
+  createPage: Actions["createPage"],
 ) {
-  const queryResult = await graphql<EntityQueryResult>(
-    `
-      {
-        entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: writer }, reviewCount: { gt: 0 } }
-        ) {
-          nodes {
-            id
-            slug
-          }
+  const queryResult = await graphql<EntityQueryResult>(`
+    {
+      entity: allWatchlistEntitiesJson(
+        filter: { entityType: { eq: writer }, reviewCount: { gt: 0 } }
+      ) {
+        nodes {
+          id
+          slug
         }
       }
-    `
-  );
+    }
+  `);
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(`Error while running query watchlist writer pages.`);
@@ -125,26 +119,24 @@ async function createWriterPages(
 async function createCollectionPages(
   graphql: CreatePagesArgs["graphql"],
   reporter: CreatePagesArgs["reporter"],
-  createPage: Actions["createPage"]
+  createPage: Actions["createPage"],
 ) {
-  const queryResult = await graphql<EntityQueryResult>(
-    `
-      {
-        entity: allWatchlistEntitiesJson(
-          filter: { entityType: { eq: collection }, reviewCount: { gt: 0 } }
-        ) {
-          nodes {
-            id
-            slug
-          }
+  const queryResult = await graphql<EntityQueryResult>(`
+    {
+      entity: allWatchlistEntitiesJson(
+        filter: { entityType: { eq: collection }, reviewCount: { gt: 0 } }
+      ) {
+        nodes {
+          id
+          slug
         }
       }
-    `
-  );
+    }
+  `);
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
-      `Error while running query watchlist collection pages.`
+      `Error while running query watchlist collection pages.`,
     );
     return;
   }

@@ -20,7 +20,7 @@ function sortItems(items: Queries.ViewingsItemFragment[], sortOrder: Sort) {
 }
 
 function groupItems(
-  items: Queries.ViewingsItemFragment[]
+  items: Queries.ViewingsItemFragment[],
 ): Map<string, Map<string, Queries.ViewingsItemFragment[]>> {
   const shortMonthToLong: Record<string, string> = {
     Jan: "January",

@@ -22,7 +22,7 @@ export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({
     const config = getConfig() as IWebPackConfig;
 
     const miniCssExtractPlugin = config.plugins.find(
-      (plugin) => plugin.constructor.name === "MiniCssExtractPlugin"
+      (plugin) => plugin.constructor.name === "MiniCssExtractPlugin",
     );
 
     if (miniCssExtractPlugin) {

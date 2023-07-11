@@ -14,7 +14,7 @@ export const ReviewStatsJson = {
       resolve: async (
         source: { reviewYear: string },
         _args: GatsbyResolveArgs,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         let entries;
 

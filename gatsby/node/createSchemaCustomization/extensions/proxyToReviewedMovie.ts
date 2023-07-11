@@ -17,7 +17,7 @@ export const proxyToReviewedMovieExtension = {
         source: GatsbyNode,
         args: Record<string, unknown>,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const reviewedMovieNode = await resolveFieldForNode<ReviewedMovieNode>({
           fieldName: "reviewedMovie",

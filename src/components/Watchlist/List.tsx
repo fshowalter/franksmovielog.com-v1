@@ -90,7 +90,7 @@ function Slug({
 
 function formatPeopleNames(
   names: readonly string[],
-  suffix: string | string[]
+  suffix: string | string[],
 ): string[] {
   if (names.length === 0) {
     return [""];

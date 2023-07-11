@@ -75,7 +75,7 @@ function starsForGrade(grade: string) {
 
 function addMetaToExcerpt(excerpt: string, viewing: ViewingNode) {
   const meta = `${starsForGrade(viewing.grade)} D: ${viewing.directorNames.join(
-    ", "
+    ", ",
   )}. ${viewing.principalCastNames.join(", ")}.`;
 
   return `<p>${meta}</p>${excerpt}`;
@@ -106,7 +106,7 @@ function serialize({ query }: { query: QueryResult }) {
             viewing.still.childImageSharp.resize.src
           }" alt="A still from ${viewing.title}">${addMetaToExcerpt(
             viewing.excerpt,
-            viewing
+            viewing,
           )}`,
         },
       ],

@@ -28,7 +28,7 @@ export function Viewings({
       items: [...items],
       sort: "viewing-date-desc",
     },
-    initState
+    initState,
   );
 
   return (

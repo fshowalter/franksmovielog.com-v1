@@ -16,21 +16,19 @@ export default async function createStatPages({
 }: CreatePagesArgs) {
   const { createPage } = actions;
 
-  const queryResult = await graphql<QueryResult>(
-    `
-      {
-        viewing: allViewingStatsJson(filter: { viewingYear: { ne: "all" } }) {
-          nodes {
-            year: viewingYear
-          }
+  const queryResult = await graphql<QueryResult>(`
+    {
+      viewing: allViewingStatsJson(filter: { viewingYear: { ne: "all" } }) {
+        nodes {
+          year: viewingYear
         }
       }
-    `
-  );
+    }
+  `);
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphQL query for viewing stats.`
+      `Error while running GraphQL query for viewing stats.`,
     );
     return;
   }

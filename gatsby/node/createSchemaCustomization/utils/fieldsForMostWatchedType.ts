@@ -4,7 +4,7 @@ import { SchemaNames } from "../schemaNames";
 import type { GatsbyNodeContext, GatsbyResolveArgs } from "../type-definitions";
 
 export function fieldsForMostWatchedType(
-  type: "director" | "writer" | "performer"
+  type: "director" | "writer" | "performer",
 ) {
   return {
     imdbId: "String!",
@@ -15,7 +15,7 @@ export function fieldsForMostWatchedType(
       resolve: async (
         source: { viewing_sequence_ids: number[] },
         _args: GatsbyResolveArgs,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll<ViewingNode>({
           type: SchemaNames.ViewingsJson,
@@ -39,7 +39,7 @@ export function fieldsForMostWatchedType(
       resolve: async (
         source: { imdbId: string },
         _args: GatsbyResolveArgs,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const entity = await context.nodeModel.findOne<WatchlistEntityNode>({
           type: SchemaNames.WatchlistEntitiesJson,

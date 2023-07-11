@@ -5,7 +5,7 @@ import { data } from "./statsForYear.fixtures";
 describe("/stats/{year}", () => {
   it("renders for legacy year", () => {
     const { asFragment } = render(
-      <StatsForYearTemplate data={data} pageContext={{ year: "2021" }} />
+      <StatsForYearTemplate data={data} pageContext={{ year: "2021" }} />,
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -21,7 +21,7 @@ describe("/stats/{year}", () => {
     const thisYear = "2022";
 
     const { asFragment } = render(
-      <StatsForYearTemplate data={data} pageContext={{ year: thisYear }} />
+      <StatsForYearTemplate data={data} pageContext={{ year: thisYear }} />,
     );
 
     expect(asFragment()).toMatchSnapshot();

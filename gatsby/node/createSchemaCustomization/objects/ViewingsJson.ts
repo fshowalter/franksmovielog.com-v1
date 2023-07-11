@@ -69,7 +69,7 @@ export const commonViewingFields = {
     resolve: async (
       source: ViewingNode,
       _args: unknown,
-      context: GatsbyNodeContext
+      context: GatsbyNodeContext,
     ) => {
       return await context.nodeModel.findOne({
         type: SchemaNames.MarkdownRemark,
@@ -91,11 +91,11 @@ export const commonViewingFields = {
       source: ViewingNode,
       args: { includeCssClass: true },
       context: GatsbyNodeContext,
-      info: GatsbyResolveInfo
+      info: GatsbyResolveInfo,
     ) => {
       const reviewedMovieNode = await findReviewedMovieNode(
         source.imdbId,
-        context.nodeModel
+        context.nodeModel,
       );
 
       if (!reviewedMovieNode) {
@@ -160,11 +160,11 @@ export const commonViewingFields = {
       source: ViewingNode,
       args: Record<string, unknown>,
       context: GatsbyNodeContext,
-      info: GatsbyResolveInfo
+      info: GatsbyResolveInfo,
     ) => {
       const reviewedMovieNode = await findReviewedMovieNode(
         source.imdbId,
-        context.nodeModel
+        context.nodeModel,
       );
 
       if (!reviewedMovieNode) {

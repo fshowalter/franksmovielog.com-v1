@@ -21,7 +21,7 @@ interface IAtomsFnBase {
 
 function extractAtomsFromProps<AtomsFn extends IAtomsFnBase>(
   props: Record<string, unknown>,
-  atomsFn: AtomsFn
+  atomsFn: AtomsFn,
 ) {
   let hasAtomProps = false;
   const atomProps: Record<string, unknown> = {};
@@ -73,7 +73,7 @@ function createBox<AtomsFn extends IAtomsFnBase>({
     ({ as: element = "div", className, style, ...props }: BoxProps, ref) => {
       const { atomProps, customProps, otherProps } = extractAtomsFromProps(
         props,
-        atomsFn
+        atomsFn,
       );
 
       /* eslint-disable @typescript-eslint/no-unsafe-assignment */
@@ -86,7 +86,7 @@ function createBox<AtomsFn extends IAtomsFnBase>({
       });
       /* eslint-enable @typescript-eslint/no-unsafe-assignment */
       /* eslint-enable @typescript-eslint/no-unsafe-argument */
-    }
+    },
   );
 
   Box.displayName = "DessertBox";

@@ -26,7 +26,7 @@ globalStyle(
   {
     lineHeight: "1.1",
     marginTop: "1.5rem",
-  }
+  },
 );
 
 globalStyle(`${renderedMarkdownStyle} h2`, {

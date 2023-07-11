@@ -14,7 +14,7 @@ export const linkReviewedMoviesExtension = {
   name: `linkReviewedMovies`,
   extend(
     _options: Record<string, unknown>,
-    prevFieldConfig: GatsbyFieldConfig
+    prevFieldConfig: GatsbyFieldConfig,
   ) {
     const { resolve } = prevFieldConfig;
     return {
@@ -22,7 +22,7 @@ export const linkReviewedMoviesExtension = {
         source: MarkdownNode,
         args: Record<string, unknown>,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         if (!resolve) {
           return "";
@@ -32,7 +32,7 @@ export const linkReviewedMoviesExtension = {
           source,
           args,
           context,
-          info
+          info,
         )) as string;
 
         return await addReviewLinks(fieldValue, context.nodeModel);

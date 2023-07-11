@@ -23,7 +23,7 @@ export function Reviews({
       items: [...items],
       sort: "title-asc",
     },
-    initState
+    initState,
   );
 
   return (

@@ -35,7 +35,7 @@ describe("/watchlist", () => {
     await act(async () => {
       await userEvent.type(
         screen.getByLabelText("Title"),
-        "This movie doesn't exist"
+        "This movie doesn't exist",
       );
       await new Promise((r) => setTimeout(r, 500));
     });
@@ -49,7 +49,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Director"),
-      "Howard Hawks"
+      "Howard Hawks",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -62,7 +62,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Director"),
-      "Howard Hawks"
+      "Howard Hawks",
     );
     await userEvent.selectOptions(screen.getByLabelText("Director"), "All");
 
@@ -75,7 +75,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Performer"),
-      "Bette Davis"
+      "Bette Davis",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -88,7 +88,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Performer"),
-      "Bette Davis"
+      "Bette Davis",
     );
     await userEvent.selectOptions(screen.getByLabelText("Performer"), "All");
 
@@ -101,7 +101,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Writer"),
-      "Leigh Brackett"
+      "Leigh Brackett",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -114,7 +114,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Writer"),
-      "Leigh Brackett"
+      "Leigh Brackett",
     );
 
     await userEvent.selectOptions(screen.getByLabelText("Writer"), "All");
@@ -129,7 +129,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Collection"),
-      "Universal Monsters"
+      "Universal Monsters",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -142,7 +142,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Collection"),
-      "Universal Monsters"
+      "Universal Monsters",
     );
     await userEvent.selectOptions(screen.getByLabelText("Collection"), "All");
 
@@ -166,7 +166,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Oldest First)"
+      "Release Date (Oldest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -179,7 +179,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Release Date (Newest First)"
+      "Release Date (Newest First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -192,7 +192,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Best First)"
+      "Grade (Best First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
@@ -205,7 +205,7 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Grade (Worst First)"
+      "Grade (Worst First)",
     );
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
