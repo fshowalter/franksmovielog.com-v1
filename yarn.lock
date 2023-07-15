@@ -3634,9 +3634,9 @@ __metadata:
   linkType: hard
 
 "@sindresorhus/is@npm:^5.2.0":
-  version: 5.4.1
-  resolution: "@sindresorhus/is@npm:5.4.1"
-  checksum: 178386d27f077dd88885263da2e77f826a3d2c476293a142a994aa876ee7d9b0d1672e5f32a12790e92a034462e17a4d0c743e6b915e0f1bb4e3471b3b17967e
+  version: 5.5.0
+  resolution: "@sindresorhus/is@npm:5.5.0"
+  checksum: 74622f61b6487668b2380e7c51a07b03411e787855ca94d75da31cec5bc9a195f59dd120f4cc63e10d7c3fce82bf523e13f1e97f54a1fb91a48b2445e0f4cc41
   languageName: node
   linkType: hard
 
@@ -7572,9 +7572,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.431":
-  version: 1.4.460
-  resolution: "electron-to-chromium@npm:1.4.460"
-  checksum: 332686067de5ea3d032884bd1343fd0f944c67007717da41095cbb68cfbf3668e4c9a8929940313e1ddb771ab99afaffdabd4daa99785ddea5ef5d91d63e31b9
+  version: 1.4.461
+  resolution: "electron-to-chromium@npm:1.4.461"
+  checksum: 84960b8fe41a1a97f47962f7ec509d94efffc8361286d55f360f81ce0804029af886796c576eb2c0a6011347ba0903c551476808f0614dc94b4564abaf415e70
   languageName: node
   linkType: hard
 
@@ -8362,12 +8362,12 @@ __metadata:
   linkType: hard
 
 "eslint-scope@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "eslint-scope@npm:7.2.0"
+  version: 7.2.1
+  resolution: "eslint-scope@npm:7.2.1"
   dependencies:
     esrecurse: ^4.3.0
     estraverse: ^5.2.0
-  checksum: 64591a2d8b244ade9c690b59ef238a11d5c721a98bcee9e9f445454f442d03d3e04eda88e95a4daec558220a99fa384309d9faae3d459bd40e7a81b4063980ae
+  checksum: dccda5c8909216f6261969b72c77b95e385f9086bed4bc09d8a6276df8439d8f986810fd9ac3bd02c94c0572cefc7fdbeae392c69df2e60712ab8263986522c5
   languageName: node
   linkType: hard
 
@@ -8527,13 +8527,13 @@ __metadata:
   linkType: hard
 
 "espree@npm:^9.6.0":
-  version: 9.6.0
-  resolution: "espree@npm:9.6.0"
+  version: 9.6.1
+  resolution: "espree@npm:9.6.1"
   dependencies:
     acorn: ^8.9.0
     acorn-jsx: ^5.3.2
     eslint-visitor-keys: ^3.4.1
-  checksum: 1287979510efb052a6a97c73067ea5d0a40701b29adde87bbe2d3eb1667e39ca55e8129e20e2517fed3da570150e7ef470585228459a8f3e3755f45007a1c662
+  checksum: eb8c149c7a2a77b3f33a5af80c10875c3abd65450f60b8af6db1bfcfa8f101e21c1e56a561c6dc13b848e18148d43469e7cd208506238554fb5395a9ea5a1ab9
   languageName: node
   linkType: hard
 
