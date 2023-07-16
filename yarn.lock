@@ -3634,9 +3634,9 @@ __metadata:
   linkType: hard
 
 "@sindresorhus/is@npm:^5.2.0":
-  version: 5.5.0
-  resolution: "@sindresorhus/is@npm:5.5.0"
-  checksum: 74622f61b6487668b2380e7c51a07b03411e787855ca94d75da31cec5bc9a195f59dd120f4cc63e10d7c3fce82bf523e13f1e97f54a1fb91a48b2445e0f4cc41
+  version: 5.5.1
+  resolution: "@sindresorhus/is@npm:5.5.1"
+  checksum: b0b09bed999fe61645b6b4f9fd314db90c7912fea413203fa0b2d8e4cdb4e72da8f632d866fa8fc72d8081b1f5da5d78781af33230c5c237112c7f37e6a2c96b
   languageName: node
   linkType: hard
 
@@ -12339,11 +12339,11 @@ __metadata:
   linkType: hard
 
 "keyv@npm:^4.0.0, keyv@npm:^4.5.2":
-  version: 4.5.2
-  resolution: "keyv@npm:4.5.2"
+  version: 4.5.3
+  resolution: "keyv@npm:4.5.3"
   dependencies:
     json-buffer: 3.0.1
-  checksum: 13ad58303acd2261c0d4831b4658451603fd159e61daea2121fcb15feb623e75ee328cded0572da9ca76b7b3ceaf8e614f1806c6b3af5db73c9c35a345259651
+  checksum: 3ffb4d5b72b6b4b4af443bbb75ca2526b23c750fccb5ac4c267c6116888b4b65681015c2833cb20d26cf3e6e32dac6b988c77f7f022e1a571b7d90f1442257da
   languageName: node
   linkType: hard
 
