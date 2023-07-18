@@ -3634,9 +3634,9 @@ __metadata:
   linkType: hard
 
 "@sindresorhus/is@npm:^5.2.0":
-  version: 5.5.1
-  resolution: "@sindresorhus/is@npm:5.5.1"
-  checksum: b0b09bed999fe61645b6b4f9fd314db90c7912fea413203fa0b2d8e4cdb4e72da8f632d866fa8fc72d8081b1f5da5d78781af33230c5c237112c7f37e6a2c96b
+  version: 5.5.2
+  resolution: "@sindresorhus/is@npm:5.5.2"
+  checksum: 609a38ed040ed4c13560862aa0fcc67452bea6928edc60600cd78fb84f2f6e335148e0a8b2ca27ba70fabb102c1fbeab860579b24a505b7ab71ba900ac8642c6
   languageName: node
   linkType: hard
 
@@ -7584,9 +7584,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.431":
-  version: 1.4.462
-  resolution: "electron-to-chromium@npm:1.4.462"
-  checksum: ee6e0318ca1144077131036ad87630f8b68c9c4d2c2ce97359731dc676df3518cb88223dc8057187d97e018983e08c003b64d03fba27f98fa53698e758672771
+  version: 1.4.463
+  resolution: "electron-to-chromium@npm:1.4.463"
+  checksum: 0f8d9b7ac7bcd48ae1963827a752d8c1d1f36d84e778e818a8027ea708f81b58faa0b599c964777e8245277f06ac45828515975fc7e1e08ed20e360571600c2c
   languageName: node
   linkType: hard
 
@@ -11455,15 +11455,15 @@ __metadata:
   linkType: hard
 
 "is-typed-array@npm:^1.1.10, is-typed-array@npm:^1.1.9":
-  version: 1.1.10
-  resolution: "is-typed-array@npm:1.1.10"
+  version: 1.1.11
+  resolution: "is-typed-array@npm:1.1.11"
   dependencies:
     available-typed-arrays: ^1.0.5
     call-bind: ^1.0.2
     for-each: ^0.3.3
     gopd: ^1.0.1
     has-tostringtag: ^1.0.0
-  checksum: aac6ecb59d4c56a1cdeb69b1f129154ef462bbffe434cb8a8235ca89b42f258b7ae94073c41b3cb7bce37f6a1733ad4499f07882d5d5093a7ba84dfc4ebb8017
+  checksum: 19e442eb1c29d7701d7ab0de391924dd6576d5efba125b5468c87f0b7f408154d7f9405356ccda419084a20e5fb83e03128d7d48d674497419d4bd10cdd5e8cf
   languageName: node
   linkType: hard
 
@@ -18509,8 +18509,8 @@ __metadata:
   linkType: hard
 
 "webpack@npm:^5.85.0":
-  version: 5.88.1
-  resolution: "webpack@npm:5.88.1"
+  version: 5.88.2
+  resolution: "webpack@npm:5.88.2"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^1.0.0
@@ -18541,7 +18541,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 726e7e05ab2e7c142609a673dd6aa1a711ed97f349418a2a393d650c5ddad172d191257f60e1e37f6b2a77261571c202aabd5ce9240791a686774f0801cf5ec2
+  checksum: 79476a782da31a21f6dd38fbbd06b68da93baf6a62f0d08ca99222367f3b8668f5a1f2086b7bb78e23172e31fa6df6fa7ab09b25e827866c4fc4dc2b30443ce2
   languageName: node
   linkType: hard
 
