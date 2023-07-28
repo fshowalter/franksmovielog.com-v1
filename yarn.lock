@@ -2118,19 +2118,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@floating-ui/core@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "@floating-ui/core@npm:1.3.1"
-  checksum: fe3b40fcaec95b0825c01a98330ae75b60c61c395ca012055a32f9c22ab97fde8ce1bd14fce3d242beb9dbe4564c90ce4a7a767851911d4215b9ec7721440e5b
+"@floating-ui/core@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@floating-ui/core@npm:1.4.0"
+  dependencies:
+    "@floating-ui/utils": ^0.1.0
+  checksum: 8549ad349dab33498d79a3fb558616eb80c2d0301ee7739832e49d51398da6e7fa2b2e4f4088af2c346c011ce2c4a61a2d1348838c6e0119e15e81a827ba00a7
   languageName: node
   linkType: hard
 
 "@floating-ui/dom@npm:^1.0.1":
-  version: 1.4.5
-  resolution: "@floating-ui/dom@npm:1.4.5"
+  version: 1.5.0
+  resolution: "@floating-ui/dom@npm:1.5.0"
   dependencies:
-    "@floating-ui/core": ^1.3.1
-  checksum: 8e25c75b9fde158c2314cb30a9e0a9ce97f8eff4d3c892c85d73a5acbd845fe5dd97ae70ef8d43f7db8036df1c75a51cd3e1ac0999196d40363797002c07efb1
+    "@floating-ui/core": ^1.4.0
+    "@floating-ui/utils": ^0.1.0
+  checksum: 61e97e0625279deb2e9fba9d7f85491ce3bfdbaf0adc31f2ee101a82e2879dd62945ee9ea0c83cf82481a711af9a43ccfd31b9ec017718be8b9028ff2a1da5b2
+  languageName: node
+  linkType: hard
+
+"@floating-ui/utils@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@floating-ui/utils@npm:0.1.0"
+  checksum: 71c865f0c6ab3f0a66355b80ca1b6438ea4bbf3aaa66421fc9bbddea08e814b94a75b25cb9c0cba09fd8775b8952b8e59affecf5db4dc3235849e25b2c011dbe
   languageName: node
   linkType: hard
 
@@ -7687,12 +7697,12 @@ __metadata:
   linkType: hard
 
 "enquirer@npm:^2.3.5":
-  version: 2.4.0
-  resolution: "enquirer@npm:2.4.0"
+  version: 2.4.1
+  resolution: "enquirer@npm:2.4.1"
   dependencies:
     ansi-colors: ^4.1.1
     strip-ansi: ^6.0.1
-  checksum: bbdecde92679ed847c751dc5337ff39ce0c32d85e76fb2e47245e831e9cc7f84c12bd35b70f7b1de9b9e1c730d90cccd04201e69f1ecf7986a7a70d8d39349db
+  checksum: f080f11a74209647dbf347a7c6a83c8a47ae1ebf1e75073a808bc1088eb780aa54075bfecd1bcdb3e3c724520edb8e6ee05da031529436b421b71066fcc48cb5
   languageName: node
   linkType: hard
 
@@ -8241,7 +8251,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:2.28.0":
+"eslint-plugin-import@npm:2.28.0, eslint-plugin-import@npm:^2.27.5":
   version: 2.28.0
   resolution: "eslint-plugin-import@npm:2.28.0"
   dependencies:
@@ -8266,31 +8276,6 @@ __metadata:
   peerDependencies:
     eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
   checksum: f9eba311b93ca1bb89311856b1f7285bd79e0181d7eb70fe115053ff77e2235fea749b30f538b78927dc65769340b5be61f4c9581d1c82bcdcccb2061f440ad1
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-import@npm:^2.27.5":
-  version: 2.27.5
-  resolution: "eslint-plugin-import@npm:2.27.5"
-  dependencies:
-    array-includes: ^3.1.6
-    array.prototype.flat: ^1.3.1
-    array.prototype.flatmap: ^1.3.1
-    debug: ^3.2.7
-    doctrine: ^2.1.0
-    eslint-import-resolver-node: ^0.3.7
-    eslint-module-utils: ^2.7.4
-    has: ^1.0.3
-    is-core-module: ^2.11.0
-    is-glob: ^4.0.3
-    minimatch: ^3.1.2
-    object.values: ^1.1.6
-    resolve: ^1.22.1
-    semver: ^6.3.0
-    tsconfig-paths: ^3.14.1
-  peerDependencies:
-    eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
-  checksum: f500571a380167e25d72a4d925ef9a7aae8899eada57653e5f3051ec3d3c16d08271fcefe41a30a9a2f4fefc232f066253673ee4ea77b30dba65ae173dade85d
   languageName: node
   linkType: hard
 
@@ -17615,7 +17600,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-paths@npm:^3.14.1, tsconfig-paths@npm:^3.14.2":
+"tsconfig-paths@npm:^3.14.2":
   version: 3.14.2
   resolution: "tsconfig-paths@npm:3.14.2"
   dependencies:
