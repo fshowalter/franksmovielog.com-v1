@@ -83,14 +83,27 @@
 /admin /gone 410
 /admin/* /gone 410
 /adminer.php /gone 410
+/backup /gone 410
 /blog/* /gone 410
+/cms /gone 410
 /config.bak.php /gone 410
+/demo /gone 410
+/dev /gone 410
+/home /gone 410
 /main/* /gone 410
 /new/* /gone 410
+/newsite /gone 410
 /old/* /gone 410
+/portal /gone 410
+/site /gone 410
+/test /gone 410
+/testing /gone 410
+/tmp /gone 410
+/web /gone 410
 /wlwmanifest.xml /gone 410
 /wordpress /gone 410
 /wordpress/* /gone 410
+/wp /gone 410
 /wp-admin /gone 410
 /wp-admin/* /gone 410
 /wp-content /gone 410
@@ -98,9 +111,9 @@
 /wp-includes /gone 410
 /wp-includes/* /gone 410
 /wp-login.php /gone 410
-/wp /gone 410
 /wp/* /gone 410
 /xmlrpc.php /gone 410
+
 
 # old favicons
 /favicon.ico /gone 410
