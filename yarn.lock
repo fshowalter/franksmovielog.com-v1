@@ -4123,14 +4123,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.4.5
-  resolution: "@types/node@npm:20.4.5"
-  checksum: 36a0304a8dc346a1b2d2edac4c4633eecf70875793d61a5274d0df052d7a7af7a8e34f29884eac4fbd094c4f0201477dcb39c0ecd3307ca141688806538d1138
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.4.6":
+"@types/node@npm:*, @types/node@npm:20.4.6, @types/node@npm:>=10.0.0":
   version: 20.4.6
   resolution: "@types/node@npm:20.4.6"
   checksum: 28dfc13da87f579264840bc5b8a2cde2dcb93662464a0d58f0fa98eba1aae978e3c73e893474238c4a1226d0b1a14e3936520ff9795e1c4e06fad3282be83d18
@@ -7596,9 +7589,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.480
-  resolution: "electron-to-chromium@npm:1.4.480"
-  checksum: 074b9d81dffa6ca182f604326c62a12d22139ae141d6ffabdb3b267f42fac88ba3e69d3614f9e939f65a0f03a343f0c81f702e24064bc54c4f138e02378b1e54
+  version: 1.4.481
+  resolution: "electron-to-chromium@npm:1.4.481"
+  checksum: 52b7e8d7aeb00046b5eb75fbdb6b1180825e0a83ae9308a31876ef7f1ad3ad82f3ccfdf4d3e3b59ecc73da991d044fbf3d870e41dc3af4c1cec221aa81b7ca03
   languageName: node
   linkType: hard
 
