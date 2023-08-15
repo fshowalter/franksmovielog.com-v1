@@ -84,6 +84,9 @@
 /.env /gone 410
 //* /gone 410
 // /gone 410
+//upl.php /gone 410
+//rxr.php /gone 410
+//upload.php /gone 410
 /admin /gone 410
 /admin/* /gone 410
 /adminer.php /gone 410
@@ -138,7 +141,7 @@
 # misc
 /ads.txt /gone 410
 /repeater.php /gone 410
-/sitemap/sitemap-index.xml /gone 410
+/sitemap/* /sitemap-index.xml 301
 
 # resized images
 /static/:contenthash/0e001/* /gone 410
