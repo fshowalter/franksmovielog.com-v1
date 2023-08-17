@@ -3665,11 +3665,11 @@ __metadata:
   linkType: hard
 
 "@swc/helpers@npm:^0.4.12":
-  version: 0.4.14
-  resolution: "@swc/helpers@npm:0.4.14"
+  version: 0.4.35
+  resolution: "@swc/helpers@npm:0.4.35"
   dependencies:
     tslib: ^2.4.0
-  checksum: 273fd3f3fc461a92f3790cc551ea054745c6d6959afbe1232e6d7aa1c722bbc114d308aab96bef5c78fc0303c85c7b472ef00e2253251cc89737f3b1af56e5a5
+  checksum: 1162181f56544e988f122d1b7786521b2c16334b67aa99f6acb940e4450324f350d297522a0f5c7125f89e79eb490ca2284167a78f580c676c5488b15684c9fa
   languageName: node
   linkType: hard
 
@@ -7585,9 +7585,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.493
-  resolution: "electron-to-chromium@npm:1.4.493"
-  checksum: 0841e5bd7a072d7c75816ece3c32e183508e6deb384dcdc2c044339db6b178c93a507d18260c07440ef44e7930c5d22f09299f037a51e1e9232a111ec9cd4b04
+  version: 1.4.494
+  resolution: "electron-to-chromium@npm:1.4.494"
+  checksum: 95f72d22e0b7c27b79999d70a91201a4b23ad63f00c56adf89a66712a53887f0a4f153ed067d7027556354056642f44820615bf5a3bb1625795847fe58fd4e8e
   languageName: node
   linkType: hard
 
