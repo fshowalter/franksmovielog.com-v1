@@ -3665,11 +3665,12 @@ __metadata:
   linkType: hard
 
 "@swc/helpers@npm:^0.4.12":
-  version: 0.4.35
-  resolution: "@swc/helpers@npm:0.4.35"
+  version: 0.4.36
+  resolution: "@swc/helpers@npm:0.4.36"
   dependencies:
+    legacy-swc-helpers: "npm:@swc/helpers@=0.4.14"
     tslib: ^2.4.0
-  checksum: 1162181f56544e988f122d1b7786521b2c16334b67aa99f6acb940e4450324f350d297522a0f5c7125f89e79eb490ca2284167a78f580c676c5488b15684c9fa
+  checksum: 20b9f021a9711633d709ef1c231423eb079cb7ed14ad191dc9583b0b46684a95d0e87c3efd7472e7673ddbd30eb200c21490ab43ad251df8f845cd09df3d236f
   languageName: node
   linkType: hard
 
@@ -12437,6 +12438,15 @@ __metadata:
   dependencies:
     package-json: ^8.1.0
   checksum: 1f0deba00d5a34394cce4463c938811f51bbb539b131674f4bb2062c63f2cc3b80bccd56ecade3bd5932d04a34cf0a5a8a2ccc4ec9e5e6b285a9a7b3e27d0d66
+  languageName: node
+  linkType: hard
+
+"legacy-swc-helpers@npm:@swc/helpers@=0.4.14":
+  version: 0.4.14
+  resolution: "@swc/helpers@npm:0.4.14"
+  dependencies:
+    tslib: ^2.4.0
+  checksum: 273fd3f3fc461a92f3790cc551ea054745c6d6959afbe1232e6d7aa1c722bbc114d308aab96bef5c78fc0303c85c7b472ef00e2253251cc89737f3b1af56e5a5
   languageName: node
   linkType: hard
 
