@@ -4666,9 +4666,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/webpack-plugin@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@vanilla-extract/webpack-plugin@npm:2.2.0"
+"@vanilla-extract/webpack-plugin@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.0"
   dependencies:
     "@vanilla-extract/integration": ^6.0.0
     chalk: ^4.1.1
@@ -4676,7 +4676,7 @@ __metadata:
     loader-utils: ^2.0.0
   peerDependencies:
     webpack: ^4.30.0 || ^5.20.2
-  checksum: 3e1741062eb849192558718e85c99d2e1aeefab01f17863d2381d493ec337a1a5137b8aef7bb60687ad754facda184d15ba763231f7bdad307170761755abf67
+  checksum: c5542af6bbd072a4f3cefaa3bbbd614c7898559a1eea9109537f0643ed0cdf1758509602a0fa46a1245e344a4b3b59c56a63295e285357dfdfc7b36adafade4e
   languageName: node
   linkType: hard
 
@@ -9297,7 +9297,7 @@ __metadata:
     "@vanilla-extract/css": 1.13.0
     "@vanilla-extract/jest-transform": 1.1.1
     "@vanilla-extract/sprinkles": 1.6.1
-    "@vanilla-extract/webpack-plugin": 2.2.0
+    "@vanilla-extract/webpack-plugin": 2.3.0
     babel-jest: 29.6.3
     babel-preset-gatsby: 3.11.0
     eslint: 8.47.0
