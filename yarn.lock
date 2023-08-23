@@ -4115,14 +4115,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.5.3
-  resolution: "@types/node@npm:20.5.3"
-  checksum: fe67a0fd7402218bdf91523a2b1c2e41d619f7294b1a471e0a778b8bc7bb3fcf291aed12041bcbe9622d50a3d1295a9adea0e7e19bb9386a246bf66071404721
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.5.4":
+"@types/node@npm:*, @types/node@npm:20.5.4, @types/node@npm:>=10.0.0":
   version: 20.5.4
   resolution: "@types/node@npm:20.5.4"
   checksum: 18de76c990e1c298183661cfc7cf16c9384531538c8090cc27bc3cab801e7c46b9f6943591ab0433955dd57961601684cc0fb19ba2deee9609e137c91afd2e25
@@ -7593,9 +7586,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.499
-  resolution: "electron-to-chromium@npm:1.4.499"
-  checksum: 9002f3bcd9018f38b3496c2ced5393c6144d3a09bc5e1ea9866541045f6364841a6d11afe8c5977838835bc70f50f8caee63ba928a910e68ac1eed45afd18120
+  version: 1.4.500
+  resolution: "electron-to-chromium@npm:1.4.500"
+  checksum: fdd56b7f27ccc0aba837614ba80741f20aaaf558dc4eceb1e9525bf5e6ca9010d02d5a9554adeed43506facc60602c1b162b66fbee93d52db3d279a4e1a135db
   languageName: node
   linkType: hard
 
@@ -13813,8 +13806,8 @@ __metadata:
   linkType: hard
 
 "node-fetch@npm:^2.6.11, node-fetch@npm:^2.6.12":
-  version: 2.6.13
-  resolution: "node-fetch@npm:2.6.13"
+  version: 2.7.0
+  resolution: "node-fetch@npm:2.7.0"
   dependencies:
     whatwg-url: ^5.0.0
   peerDependencies:
@@ -13822,7 +13815,7 @@ __metadata:
   peerDependenciesMeta:
     encoding:
       optional: true
-  checksum: 055845ae5b4796c78c7053564745345025cf959563b3568b43c385f67d311779e6b00e5fef6ed1b79f86ba4048e4b4b722e1aa948305521b9353eb7e788912c9
+  checksum: d76d2f5edb451a3f05b15115ec89fc6be39de37c6089f1b6368df03b91e1633fd379a7e01b7ab05089a25034b2023d959b47e59759cb38d88341b2459e89d6e5
   languageName: node
   linkType: hard
 
