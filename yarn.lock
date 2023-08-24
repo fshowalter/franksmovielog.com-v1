@@ -2692,7 +2692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/transform@npm:^29.6.3, @jest/transform@npm:^29.6.4":
+"@jest/transform@npm:^29.6.4":
   version: 29.6.4
   resolution: "@jest/transform@npm:29.6.4"
   dependencies:
@@ -5443,24 +5443,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:29.6.3":
-  version: 29.6.3
-  resolution: "babel-jest@npm:29.6.3"
-  dependencies:
-    "@jest/transform": ^29.6.3
-    "@types/babel__core": ^7.1.14
-    babel-plugin-istanbul: ^6.1.1
-    babel-preset-jest: ^29.6.3
-    chalk: ^4.0.0
-    graceful-fs: ^4.2.9
-    slash: ^3.0.0
-  peerDependencies:
-    "@babel/core": ^7.8.0
-  checksum: 8b4b85d829d8ee010f0c8381cb9d67842da905c32183c1fc6e1e8833447a79b969f8279759d44197bb77001239dc41a49fff0e8222d8e8577f47a8d0428d178e
-  languageName: node
-  linkType: hard
-
-"babel-jest@npm:^29.6.4":
+"babel-jest@npm:29.6.4, babel-jest@npm:^29.6.4":
   version: 29.6.4
   resolution: "babel-jest@npm:29.6.4"
   dependencies:
@@ -9290,7 +9273,7 @@ __metadata:
     "@vanilla-extract/jest-transform": 1.1.1
     "@vanilla-extract/sprinkles": 1.6.1
     "@vanilla-extract/webpack-plugin": 2.3.0
-    babel-jest: 29.6.3
+    babel-jest: 29.6.4
     babel-preset-gatsby: 3.11.0
     eslint: 8.47.0
     eslint-config-airbnb: 19.0.4
