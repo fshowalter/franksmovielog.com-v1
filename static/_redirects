@@ -15,6 +15,8 @@
 # old cast-and-crew to new watchlist entries
 /browse/dario-argento /watchlist/directors/dario-argento 301
 /browse/dario-argento/* /watchlist/directors/dario-argento 301
+/browse/frank-sinatra /watchlist/performers/frank-sinatra 301
+/browse/frank-sinatra/* /watchlist/performers/frank-sinatra 301
 /browse/william-holden /watchlist/performers/william-holden 301
 /browse/william-holden/* /watchlist/performers/william-holden 301
 /cast-and-crew/boris-karloff-i /watchlist/performers/boris-karloff 301
@@ -136,6 +138,7 @@
 # old cast and crew links we're not bringing back
 /cast-and-crew/* /gone 410
 /watchlist/cast/bill-murray /gone 410
+/watchlist/performers/bill-murray /gone 410
 
 # misc old links
 /images/5-stars-4661cb2a.svg /gone 410
