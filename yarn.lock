@@ -4287,10 +4287,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/unist@npm:2.0.7":
-  version: 2.0.7
-  resolution: "@types/unist@npm:2.0.7"
-  checksum: b97a219554e83431f19a93ff113306bf0512909292815e8f32964e47d041c505af1aaa2a381c23e137c4c0b962fad58d4ce9c5c3256642921a466be43c1fc715
+"@types/unist@npm:2.0.8":
+  version: 2.0.8
+  resolution: "@types/unist@npm:2.0.8"
+  checksum: f4852d10a6752dc70df363917ef74453e5d2fd42824c0f6d09d19d530618e1402193977b1207366af4415aaec81d4e262c64d00345402020c4ca179216e553c7
   languageName: node
   linkType: hard
 
@@ -9241,7 +9241,7 @@ __metadata:
     "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
     "@types/react-test-renderer": 18.0.0
-    "@types/unist": 2.0.7
+    "@types/unist": 2.0.8
     "@typescript-eslint/eslint-plugin": 6.5.0
     "@typescript-eslint/parser": 6.5.0
     "@vanilla-extract/css": 1.13.0
