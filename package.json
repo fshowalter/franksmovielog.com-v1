@@ -45,7 +45,7 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "@types/react-test-renderer": "18.0.0",
-    "@types/unist": "2.0.7",
+    "@types/unist": "2.0.8",
     "@typescript-eslint/eslint-plugin": "6.5.0",
     "@typescript-eslint/parser": "6.5.0",
     "@vanilla-extract/jest-transform": "1.1.1",
@@ -92,7 +92,7 @@
     "not dead"
   ],
   "resolutions": {
-    "@types/unist": "2.0.7"
+    "@types/unist": "2.0.8"
   },
   "repository": {
     "type": "git",
