@@ -15736,16 +15736,16 @@ __metadata:
   linkType: hard
 
 "reflect.getprototypeof@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "reflect.getprototypeof@npm:1.0.3"
+  version: 1.0.4
+  resolution: "reflect.getprototypeof@npm:1.0.4"
   dependencies:
     call-bind: ^1.0.2
-    define-properties: ^1.1.4
-    es-abstract: ^1.20.4
-    get-intrinsic: ^1.1.1
+    define-properties: ^1.2.0
+    es-abstract: ^1.22.1
+    get-intrinsic: ^1.2.1
     globalthis: ^1.0.3
     which-builtin-type: ^1.1.3
-  checksum: 843e2506c013da66f83635f943c5bd41243bc6c7703298531cfb16eb6baaefd92f83031fa37140ad31c4edc86938b6eb385e6fc85bf1628e79348ed49e044f3d
+  checksum: 16e2361988dbdd23274b53fb2b1b9cefeab876c3941a2543b4cadac6f989e3db3957b07a44aac46cfceb3e06e2871785ec2aac992d824f76292f3b5ee87f66f2
   languageName: node
   linkType: hard
 
