@@ -13668,14 +13668,14 @@ __metadata:
   linkType: hard
 
 "msgpackr@npm:^1.5.4":
-  version: 1.9.7
-  resolution: "msgpackr@npm:1.9.7"
+  version: 1.9.8
+  resolution: "msgpackr@npm:1.9.8"
   dependencies:
     msgpackr-extract: ^3.0.2
   dependenciesMeta:
     msgpackr-extract:
       optional: true
-  checksum: ae84da595ae576842a261f3504454fb8cc2839bc952ff5f7017cb7a9a8722f66d258b3b956db5f30be99a56f4cab61d311de195bad4955a33c2ba6b9cdc09af2
+  checksum: f029be90494814ce83bc01397624e989510d616a600674be16b7bcdbf3fd7107f7fdcf454c4533d07fa0579b8f0aab8756297585098144e7369408a26b99e466
   languageName: node
   linkType: hard
 
@@ -15353,9 +15353,9 @@ __metadata:
   linkType: hard
 
 "pure-rand@npm:^6.0.0":
-  version: 6.0.2
-  resolution: "pure-rand@npm:6.0.2"
-  checksum: 79de33876a4f515d759c48e98d00756bbd916b4ea260cc572d7adfa4b62cace9952e89f0241d0410214554503d25061140fe325c66f845213d2b1728ba8d413e
+  version: 6.0.3
+  resolution: "pure-rand@npm:6.0.3"
+  checksum: d08701cfd1528c5f9cdca996776c498c92767722561f9b8f9e62645d5025c8a3bf60b90f76f262aaab124e6bb1d58e1b0850722dbca2846a19b708801956e56b
   languageName: node
   linkType: hard
 
