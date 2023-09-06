@@ -97,3 +97,7 @@ globalStyle(".reactSelect__value-container", {
 globalStyle(".reactSelect__placeholder", {
   padding: 0,
 });
+
+globalStyle(".littlefoot-footnote__content", {
+  backgroundColor: backgroundColors.default,
+});
