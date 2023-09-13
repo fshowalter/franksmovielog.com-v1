@@ -7270,13 +7270,13 @@ __metadata:
   linkType: hard
 
 "define-data-property@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "define-data-property@npm:1.0.1"
+  version: 1.1.0
+  resolution: "define-data-property@npm:1.1.0"
   dependencies:
     get-intrinsic: ^1.2.1
     gopd: ^1.0.1
     has-property-descriptors: ^1.0.0
-  checksum: 6129cda80ea82198ff22b26ae4624744c7f61b9d664ab78b28156db87849dc893a5c2e76ab8628f1115901bd1c109bd5b943f5901e0f10456254d4aa8b7cd5ae
+  checksum: 7ad4ee84cca8ad427a4831f5693526804b62ce9dfd4efac77214e95a4382aed930072251d4075dc8dc9fc949a353ed51f19f5285a84a788ba9216cc51472a093
   languageName: node
   linkType: hard
 
@@ -16580,12 +16580,13 @@ __metadata:
   linkType: hard
 
 "set-function-name@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "set-function-name@npm:2.0.0"
+  version: 2.0.1
+  resolution: "set-function-name@npm:2.0.1"
   dependencies:
     define-data-property: ^1.0.1
+    functions-have-names: ^1.2.3
     has-property-descriptors: ^1.0.0
-  checksum: d3a3557935b39d32406cc325b23f18656f720f4081900e91c09ad6c4fe11895759e273098c447bb32002c3e21fdbbe48f81b77a7c03f4dcf0a1a48ddef8d31fc
+  checksum: 4975d17d90c40168eee2c7c9c59d023429f0a1690a89d75656306481ece0c3c1fb1ebcc0150ea546d1913e35fbd037bace91372c69e543e51fc5d1f31a9fa126
   languageName: node
   linkType: hard
 
