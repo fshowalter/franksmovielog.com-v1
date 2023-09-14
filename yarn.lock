@@ -4126,12 +4126,12 @@ __metadata:
   linkType: hard
 
 "@types/node-fetch@npm:2":
-  version: 2.6.4
-  resolution: "@types/node-fetch@npm:2.6.4"
+  version: 2.6.5
+  resolution: "@types/node-fetch@npm:2.6.5"
   dependencies:
     "@types/node": "*"
-    form-data: ^3.0.0
-  checksum: f3e1d881bb42269e676ecaf49f0e096ab345e22823a2b2d071d60619414817fe02df48a31a8d05adb23054028a2a65521bdb3906ceb763ab6d3339c8d8775058
+    form-data: ^4.0.0
+  checksum: 686ee0d52bb82d73f82c0da0bb025d4af1ba7bd8df4edd09336f6179eb838b6d4b5f0a524677a8faec2b00918d1b08a1690d50fa592c9741a5df6a8041a52495
   languageName: node
   linkType: hard
 
@@ -4260,9 +4260,9 @@ __metadata:
   linkType: hard
 
 "@types/semver@npm:^7.3.12, @types/semver@npm:^7.5.0":
-  version: 7.5.1
-  resolution: "@types/semver@npm:7.5.1"
-  checksum: 2fffe938c7ac168711f245a16e1856a3578d77161ca17e29a05c3e02c7be3e9c5beefa29a3350f6c1bd982fb70aa28cc52e4845eb7d36246bcdc0377170d584d
+  version: 7.5.2
+  resolution: "@types/semver@npm:7.5.2"
+  checksum: 743aa8a2b58e20b329c19bd2459152cb049d12fafab7279b90ac11e0f268c97efbcb606ea0c681cca03f79015381b40d9b1244349b354270bec3f939ed49f6e9
   languageName: node
   linkType: hard
 
@@ -7880,12 +7880,12 @@ __metadata:
   linkType: hard
 
 "es-iterator-helpers@npm:^1.0.12":
-  version: 1.0.14
-  resolution: "es-iterator-helpers@npm:1.0.14"
+  version: 1.0.15
+  resolution: "es-iterator-helpers@npm:1.0.15"
   dependencies:
     asynciterator.prototype: ^1.0.0
     call-bind: ^1.0.2
-    define-properties: ^1.2.0
+    define-properties: ^1.2.1
     es-abstract: ^1.22.1
     es-set-tostringtag: ^2.0.1
     function-bind: ^1.1.1
@@ -7895,9 +7895,9 @@ __metadata:
     has-proto: ^1.0.1
     has-symbols: ^1.0.3
     internal-slot: ^1.0.5
-    iterator.prototype: ^1.1.0
-    safe-array-concat: ^1.0.0
-  checksum: 484ca398389d5e259855e2d848573233985a7e7a4126c5de62c8a554174495aea47320ae1d2b55b757ece62ac1cb8455532aa61fd123fe4e01d0567eb2d7adfa
+    iterator.prototype: ^1.1.2
+    safe-array-concat: ^1.0.1
+  checksum: 50081ae5c549efe62e5c1d244df0194b40b075f7897fc2116b7e1aa437eb3c41f946d2afda18c33f9b31266ec544765932542765af839f76fa6d7b7855d1e0e1
   languageName: node
   linkType: hard
 
@@ -9217,17 +9217,6 @@ __metadata:
   version: 2.1.4
   resolution: "form-data-encoder@npm:2.1.4"
   checksum: e0b3e5950fb69b3f32c273944620f9861f1933df9d3e42066e038e26dfb343d0f4465de9f27e0ead1a09d9df20bc2eed06a63c2ca2f8f00949e7202bae9e29dd
-  languageName: node
-  linkType: hard
-
-"form-data@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "form-data@npm:3.0.1"
-  dependencies:
-    asynckit: ^0.4.0
-    combined-stream: ^1.0.8
-    mime-types: ^2.1.12
-  checksum: b019e8d35c8afc14a2bd8a7a92fa4f525a4726b6d5a9740e8d2623c30e308fbb58dc8469f90415a856698933c8479b01646a9dff33c87cc4e76d72aedbbf860d
   languageName: node
   linkType: hard
 
@@ -11742,7 +11731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iterator.prototype@npm:^1.1.0":
+"iterator.prototype@npm:^1.1.2":
   version: 1.1.2
   resolution: "iterator.prototype@npm:1.1.2"
   dependencies:
@@ -16349,7 +16338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"safe-array-concat@npm:^1.0.0":
+"safe-array-concat@npm:^1.0.0, safe-array-concat@npm:^1.0.1":
   version: 1.0.1
   resolution: "safe-array-concat@npm:1.0.1"
   dependencies:
