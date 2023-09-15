@@ -2104,11 +2104,11 @@ __metadata:
   linkType: hard
 
 "@floating-ui/core@npm:^1.4.2":
-  version: 1.4.2
-  resolution: "@floating-ui/core@npm:1.4.2"
+  version: 1.5.0
+  resolution: "@floating-ui/core@npm:1.5.0"
   dependencies:
     "@floating-ui/utils": ^0.1.3
-  checksum: ee4de0abf57cb417b6011e05072b30d525783d79a03d2d11d28472f88e2b09b01ab40ea9cd48de0996f40c0391663a55176a9e50cfae8e8d0c71670e9384af97
+  checksum: 54b4fe26b3c228746ac5589f97303abf158b80aa5f8b99027259decd68d1c2030c4c637648ebd33dfe78a4212699453bc2bd7537fd5a594d3bd3e63d362f666f
   languageName: node
   linkType: hard
 
@@ -4135,14 +4135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.6.0
-  resolution: "@types/node@npm:20.6.0"
-  checksum: 52611801af5cf151c6fac1963aa4a8a8ca2e388a9e9ed82b01b70bca762088ded5b32cc789c5564220d5d7dccba2b8dd34446a3d4fc74736805e1f2cf262e29d
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.6.1":
+"@types/node@npm:*, @types/node@npm:20.6.1, @types/node@npm:>=10.0.0":
   version: 20.6.1
   resolution: "@types/node@npm:20.6.1"
   checksum: f9848617221b513d558071c804b006750d1ee1734c5ffea3ada9a0edd1642334ad0812222d6b99b7b8c0e1a5f1e557946ae99444c2705e9afc125abdf9fa36c2
@@ -7643,9 +7636,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.521
-  resolution: "electron-to-chromium@npm:1.4.521"
-  checksum: 4ba1e6ee53f0e303c25ca8f16fc0ded97684c0644c4d19ef5d35be76472f573d613b3ef19fb1b638a744361fce6bbd349a8d614724810e9e0e9dae7155590ea5
+  version: 1.4.522
+  resolution: "electron-to-chromium@npm:1.4.522"
+  checksum: c1e2c7b4d003d03dffcfe782662df1f756b2ee3e17fa5b282b27f65a58085c9f5daa731f2c7347b58bd0d18c15477059c8ccdb60f4ed608d91754cf1afb52178
   languageName: node
   linkType: hard
 
@@ -15776,11 +15769,11 @@ __metadata:
   linkType: hard
 
 "regenerate-unicode-properties@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "regenerate-unicode-properties@npm:10.1.0"
+  version: 10.1.1
+  resolution: "regenerate-unicode-properties@npm:10.1.1"
   dependencies:
     regenerate: ^1.4.2
-  checksum: b1a8929588433ab8b9dc1a34cf3665b3b472f79f2af6ceae00d905fc496b332b9af09c6718fb28c730918f19a00dc1d7310adbaa9b72a2ec7ad2f435da8ace17
+  checksum: b80958ef40f125275824c2c47d5081dfaefebd80bff26c76761e9236767c748a4a95a69c053fe29d2df881177f2ca85df4a71fe70a82360388b31159ef19adcf
   languageName: node
   linkType: hard
 
