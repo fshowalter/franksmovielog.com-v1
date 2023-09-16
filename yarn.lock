@@ -3990,7 +3990,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/hast@npm:2.3.6":
+"@types/hast@npm:2.3.6, @types/hast@npm:^2.0.0":
   version: 2.3.6
   resolution: "@types/hast@npm:2.3.6"
   dependencies:
@@ -3999,28 +3999,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/hast@npm:^2.0.0":
-  version: 2.3.5
-  resolution: "@types/hast@npm:2.3.5"
-  dependencies:
-    "@types/unist": ^2
-  checksum: e435e9fbf6afc616ade377d2246a632fb75f4064be4bfd619b67a1ba0d9935d75968a18fbdb66535dfb5e77ef81f4b9b56fd8f35c1cffa34b48ddb0287fec91e
-  languageName: node
-  linkType: hard
-
 "@types/http-cache-semantics@npm:*, @types/http-cache-semantics@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@types/http-cache-semantics@npm:4.0.1"
-  checksum: 1048aacf627829f0d5f00184e16548205cd9f964bf0841c29b36bc504509230c40bc57c39778703a1c965a6f5b416ae2cbf4c1d4589c889d2838dd9dbfccf6e9
+  version: 4.0.2
+  resolution: "@types/http-cache-semantics@npm:4.0.2"
+  checksum: 513429786a45d8124f93cc7ea1454b692008190ef743e9fec75a6a3c998309782d216f1e67d7d497ffece9c9212310ae05a8c56e8955492ee400eacdd7620e61
   languageName: node
   linkType: hard
 
 "@types/http-proxy@npm:^1.17.11":
-  version: 1.17.11
-  resolution: "@types/http-proxy@npm:1.17.11"
+  version: 1.17.12
+  resolution: "@types/http-proxy@npm:1.17.12"
   dependencies:
     "@types/node": "*"
-  checksum: 38ef4f8c91c7a5b664cf6dd4d90de7863f88549a9f8ef997f2f1184e4f8cf2e7b9b63c04f0b7b962f34a09983073a31a9856de5aae5159b2ddbb905a4c44dc9f
+  checksum: 89700c8e3c8f2c59c87c8db8e7a070c97a3b30a4a38223aca6b8b817e6f2ca931f5a500e16ecadc1ebcfed2676cc60e073d8f887e621d84420298728ec6fd000
   languageName: node
   linkType: hard
 
@@ -4144,14 +4135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.6.1
-  resolution: "@types/node@npm:20.6.1"
-  checksum: f9848617221b513d558071c804b006750d1ee1734c5ffea3ada9a0edd1642334ad0812222d6b99b7b8c0e1a5f1e557946ae99444c2705e9afc125abdf9fa36c2
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.6.2":
+"@types/node@npm:*, @types/node@npm:20.6.2, @types/node@npm:>=10.0.0":
   version: 20.6.2
   resolution: "@types/node@npm:20.6.2"
   checksum: 96fe5303872640a173f3fd43e289a451776ed5b8f0090094447c6790b43f23fb607eea8268af0829cef4d132e5afa0bfa4cd871aa7412e9042a414a698e9e971
@@ -9163,9 +9147,9 @@ __metadata:
   linkType: hard
 
 "flatted@npm:^3.2.7":
-  version: 3.2.7
-  resolution: "flatted@npm:3.2.7"
-  checksum: 427633049d55bdb80201c68f7eb1cbd533e03eac541f97d3aecab8c5526f12a20ccecaeede08b57503e772c769e7f8680b37e8d482d1e5f8d7e2194687f9ea35
+  version: 3.2.9
+  resolution: "flatted@npm:3.2.9"
+  checksum: f14167fbe26a9d20f6fca8d998e8f1f41df72c8e81f9f2c9d61ed2bea058248f5e1cbd05e7f88c0e5087a6a0b822a1e5e2b446e879f3cfbe0b07ba2d7f80b026
   languageName: node
   linkType: hard
 
