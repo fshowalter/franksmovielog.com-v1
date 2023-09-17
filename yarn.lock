@@ -3712,7 +3712,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:9.3.1, @testing-library/dom@npm:>=7, @testing-library/dom@npm:^9.0.0":
+"@testing-library/dom@npm:9.3.2":
+  version: 9.3.2
+  resolution: "@testing-library/dom@npm:9.3.2"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^5.0.1
+    aria-query: 5.1.3
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.9
+    lz-string: ^1.5.0
+    pretty-format: ^27.0.2
+  checksum: 68a68a1e22b99ad036ba58ac85973305269d1c50843bf63b332c29682dc71b017c895e099a60ff29e3ec9feff6e87fbb191318eb26ac92a021c0bdf76d520557
+  languageName: node
+  linkType: hard
+
+"@testing-library/dom@npm:>=7, @testing-library/dom@npm:^9.0.0":
   version: 9.3.1
   resolution: "@testing-library/dom@npm:9.3.1"
   dependencies:
@@ -9250,7 +9266,7 @@ __metadata:
   resolution: "franksmovielog.com@workspace:."
   dependencies:
     "@silvenon/remark-smartypants": 2.0.0
-    "@testing-library/dom": 9.3.1
+    "@testing-library/dom": 9.3.2
     "@testing-library/jest-dom": 6.1.3
     "@testing-library/react": 14.0.0
     "@testing-library/user-event": 14.5.1
