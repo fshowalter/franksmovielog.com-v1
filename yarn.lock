@@ -2789,11 +2789,11 @@ __metadata:
   linkType: hard
 
 "@lezer/lr@npm:^1.0.0":
-  version: 1.3.11
-  resolution: "@lezer/lr@npm:1.3.11"
+  version: 1.3.12
+  resolution: "@lezer/lr@npm:1.3.12"
   dependencies:
     "@lezer/common": ^1.0.0
-  checksum: 7e99e62808273d97889f7a1788ed9fcfa324f8c0db2ad9c98e57ae34ee84bd5759b4dac841a47d68bc6c2f6c43f08839633efbf74a207f2d4c477fcf222b7632
+  checksum: fe875dc23e2bccc8d3dbe4aa94e9f18d1229c19ef0ece22651f3eaacfff94820dcf078a7120254d118ca2c101e1264133b188254aa09f90e639df097cdd7bd2d
   languageName: node
   linkType: hard
 
@@ -10209,11 +10209,11 @@ __metadata:
   linkType: hard
 
 "get-tsconfig@npm:^4.5.0":
-  version: 4.7.1
-  resolution: "get-tsconfig@npm:4.7.1"
+  version: 4.7.2
+  resolution: "get-tsconfig@npm:4.7.2"
   dependencies:
     resolve-pkg-maps: ^1.0.0
-  checksum: 3a050cdc566eb87bf5a9ff9def591295d72ff6e67678136784525f7657923ee7c713b2f36b583064764392731c24a450f554bfa0a2687ec38db79633b2cd840c
+  checksum: 172358903250eff0103943f816e8a4e51d29b8e5449058bdf7266714a908a48239f6884308bd3a6ff28b09f692b9533dbebfd183ab63e4e14f073cda91f1bca9
   languageName: node
   linkType: hard
 
