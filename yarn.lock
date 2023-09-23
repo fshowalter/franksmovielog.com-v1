@@ -4117,32 +4117,25 @@ __metadata:
   linkType: hard
 
 "@types/nlcst@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "@types/nlcst@npm:1.0.1"
+  version: 1.0.2
+  resolution: "@types/nlcst@npm:1.0.2"
   dependencies:
     "@types/unist": ^2
-  checksum: d7232e950b9b74fce341bf5a8f6b01e34cb1b6c1e374a3005cf179384d2add332964fe008bc697d1d1d17d46312955b42019a8ba84d02ed9b99e5f9e130e9732
+  checksum: 2c8bd29841cfb9e7d0e02c99e5a4c0e80073c78c3135ea6030b14ceae3b6bb18b394cd740affda1040671919de8caff4cd9e2bb126df8a0e05681645ba336e15
   languageName: node
   linkType: hard
 
 "@types/node-fetch@npm:2":
-  version: 2.6.5
-  resolution: "@types/node-fetch@npm:2.6.5"
+  version: 2.6.6
+  resolution: "@types/node-fetch@npm:2.6.6"
   dependencies:
     "@types/node": "*"
     form-data: ^4.0.0
-  checksum: 686ee0d52bb82d73f82c0da0bb025d4af1ba7bd8df4edd09336f6179eb838b6d4b5f0a524677a8faec2b00918d1b08a1690d50fa592c9741a5df6a8041a52495
+  checksum: ac66389d9d597ab91f5e5d3724e594965b9f80ae5841ab5da9f0c3bd54ceac084591cfe69b1c413f18bb7efdd97002d05bd7651d58ba0c6c10f804f4fd85e598
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.6.3
-  resolution: "@types/node@npm:20.6.3"
-  checksum: 444a6f1f41cfa8d3e20ce0108e6e43960fb2ae0e481f233bb1c14d6252aa63a92e021de561cd317d9fdb411688f871065f40175a1f18763282dee2613a08f8a3
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.6.4":
+"@types/node@npm:*, @types/node@npm:20.6.4, @types/node@npm:>=10.0.0":
   version: 20.6.4
   resolution: "@types/node@npm:20.6.4"
   checksum: 5fdf81c8760b620a3f3b2cdac1688008f0c73a00af98e067b4621a572d39b831eaeee8fbd7300cd06667dec31d8b032fbb8e1bbedae56ec6ff1230a338b4e8a5
