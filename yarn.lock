@@ -7636,9 +7636,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.526":
-  version: 1.4.528
-  resolution: "electron-to-chromium@npm:1.4.528"
-  checksum: e9b249929e012ce6c25f8d1e1965e7fb19a426cc72fdf72026a0ce010846ec1b0efe2730b1a1f3d1c98bd11200b94b73431bc5279211a9f4a28f2389e690c39c
+  version: 1.4.529
+  resolution: "electron-to-chromium@npm:1.4.529"
+  checksum: 74425f73a96b96b00d2acb755905b26caf5c2858a4dd55f94cf97dc0102ab91a02a9ab67838a68de27400d50930ca8a5ae8c2ce0d5a72ef5eeb52b177d1737d3
   languageName: node
   linkType: hard
 
@@ -16301,13 +16301,13 @@ __metadata:
   linkType: hard
 
 "rimraf@npm:^5.0.1":
-  version: 5.0.2
-  resolution: "rimraf@npm:5.0.2"
+  version: 5.0.4
+  resolution: "rimraf@npm:5.0.4"
   dependencies:
     glob: ^10.3.7
   bin:
     rimraf: dist/esm/bin.mjs
-  checksum: 82c3876635f635769ee69e1d143e425f27eda9b5391d2f0945b59deda836b4b946b0953d0df990e907209046a510a023e060371756a78749ec0f6e86149d1767
+  checksum: 44230119678153dc46f8e634947123e2a516689818cb1ca4b03c470cb8eece0f6a29135b9c8f785d30e50c34175a58927b8033a9eef0e154a9fab81b80712112
   languageName: node
   linkType: hard
 
