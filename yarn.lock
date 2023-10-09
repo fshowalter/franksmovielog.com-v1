@@ -4135,14 +4135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.8.3
-  resolution: "@types/node@npm:20.8.3"
-  checksum: bfb88b341faeb19f8fd37306a3bf433721b876c6491d10fcb0b13fd26601fa36ee45113dd82b1e1c23e3c957dff5b99f81a16493cefa03abe797e41a2487a4f7
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.8.4":
+"@types/node@npm:*, @types/node@npm:20.8.4, @types/node@npm:>=10.0.0":
   version: 20.8.4
   resolution: "@types/node@npm:20.8.4"
   dependencies:
@@ -4195,21 +4188,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.12":
+"@types/react-dom@npm:18.2.12, @types/react-dom@npm:^18.0.0":
   version: 18.2.12
   resolution: "@types/react-dom@npm:18.2.12"
   dependencies:
     "@types/react": "*"
   checksum: 64eaf808e91c1d58270ea92dda0e0cbb671f7289be4a5a4e0ccbd85857dd69394970eaa403d958dfbca739735c0af9cde4cf8fe135ff34434838360beae8d306
-  languageName: node
-  linkType: hard
-
-"@types/react-dom@npm:^18.0.0":
-  version: 18.2.11
-  resolution: "@types/react-dom@npm:18.2.11"
-  dependencies:
-    "@types/react": "*"
-  checksum: 70dbdd2f8836a797ab8a3771c773f51023aab187d4d88ed3733bb3f2cbc2146057788a0095a03637101aeab9a48fce0ea369f96a35fc07e785ef53b8ab870885
   languageName: node
   linkType: hard
 
@@ -4231,18 +4215,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.26
-  resolution: "@types/react@npm:18.2.26"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 5789256cd6238d34c1fa2c23cff90174f050531aff2bf3f7791adb80ec603d56c68492f86c824e96e69c6a9589bffd3569035f16866bf722e1bbc80080f0a2ce
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.27":
+"@types/react@npm:*, @types/react@npm:18.2.27":
   version: 18.2.27
   resolution: "@types/react@npm:18.2.27"
   dependencies:
@@ -7665,9 +7638,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.535":
-  version: 1.4.544
-  resolution: "electron-to-chromium@npm:1.4.544"
-  checksum: 78e88e4c56fc4faaa9a405de5e0b51305531e9cdf2c71bcc9296c2c59fb68001472e5b924f8701c873bc855ab5174cf0340642712d7af05c1d8e92356529397e
+  version: 1.4.545
+  resolution: "electron-to-chromium@npm:1.4.545"
+  checksum: ab420d982b7a357302c3ee86020f908d72f44a1e47b3e8cf8c7716c7b521c11c73ce43ce10d75871f3aca3ff467059847052079dbdcc66b11a225f45bfc2edf4
   languageName: node
   linkType: hard
 
