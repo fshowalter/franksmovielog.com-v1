@@ -102,8 +102,8 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{json,js,css,md,ts,tsx,jsx,yml}": "prettier --write"
+    "*.js": "yarn eslint --cache --fix",
+    "*.{json,js,css,scss,md,ts,tsx,jsx,yml}": "yarn prettier --write"
   },
   "packageManager": "yarn@3.6.4"
 }
