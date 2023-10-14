@@ -4135,16 +4135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.8.5
-  resolution: "@types/node@npm:20.8.5"
-  dependencies:
-    undici-types: ~5.25.1
-  checksum: 4bca4e4f6307a6f5dc78812015eca9c5a998b35fcf3ba4058c9851d3dde2b22c914fa25a85b804eab5af2ab95375d15943dce8e9ba5e01d15f4bf516ca0d2816
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.8.6":
+"@types/node@npm:*, @types/node@npm:20.8.6, @types/node@npm:>=10.0.0":
   version: 20.8.6
   resolution: "@types/node@npm:20.8.6"
   dependencies:
@@ -18693,8 +18684,8 @@ __metadata:
   linkType: hard
 
 "webpack@npm:^5.88.1":
-  version: 5.88.2
-  resolution: "webpack@npm:5.88.2"
+  version: 5.89.0
+  resolution: "webpack@npm:5.89.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^1.0.0
@@ -18725,7 +18716,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 79476a782da31a21f6dd38fbbd06b68da93baf6a62f0d08ca99222367f3b8668f5a1f2086b7bb78e23172e31fa6df6fa7ab09b25e827866c4fc4dc2b30443ce2
+  checksum: 43fe0dbc30e168a685ef5a86759d5016a705f6563b39a240aa00826a80637d4a3deeb8062e709d6a4b05c63e796278244c84b04174704dc4a37bedb0f565c5ed
   languageName: node
   linkType: hard
 
