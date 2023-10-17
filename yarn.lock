@@ -3828,43 +3828,43 @@ __metadata:
   linkType: hard
 
 "@types/babel__core@npm:^7.1.14":
-  version: 7.20.2
-  resolution: "@types/babel__core@npm:7.20.2"
+  version: 7.20.3
+  resolution: "@types/babel__core@npm:7.20.3"
   dependencies:
     "@babel/parser": ^7.20.7
     "@babel/types": ^7.20.7
     "@types/babel__generator": "*"
     "@types/babel__template": "*"
     "@types/babel__traverse": "*"
-  checksum: 564fbaa8ff1305d50807ada0ec227c3e7528bebb2f8fe6b2ed88db0735a31511a74ad18729679c43eeed8025ed29d408f53059289719e95ab1352ed559a100bd
+  checksum: 8d14acc14d99b4b8bf36c00da368f6d597bd9ae3344aa7048f83f0f701b0463fa7c7bf2e50c3e4382fdbcfd1e4187b3452a0f0888b0f3ae8fad975591f7bdb94
   languageName: node
   linkType: hard
 
 "@types/babel__generator@npm:*":
-  version: 7.6.5
-  resolution: "@types/babel__generator@npm:7.6.5"
+  version: 7.6.6
+  resolution: "@types/babel__generator@npm:7.6.6"
   dependencies:
     "@babel/types": ^7.0.0
-  checksum: c7459f5025c4c800eaf58f4db3b24e9d736331fe7df40961d9bc49f31b46e2a3be83dc9276e8688f10a5ed752ae153ad5f1bdd45e2245bac95273730b9115ec2
+  checksum: 36e8838c7e16eff611447579e840526946a8b14c794c82486cee2a5ad2257aa6cad746d8ecff3144e3721178837d2c25d0a435d384391eb67846b933c062b075
   languageName: node
   linkType: hard
 
 "@types/babel__template@npm:*":
-  version: 7.4.2
-  resolution: "@types/babel__template@npm:7.4.2"
+  version: 7.4.3
+  resolution: "@types/babel__template@npm:7.4.3"
   dependencies:
     "@babel/parser": ^7.1.0
     "@babel/types": ^7.0.0
-  checksum: 0fe977b45a3269336c77f3ae4641a6c48abf0fa35ab1a23fb571690786af02d6cec08255a43499b0b25c5633800f7ae882ace450cce905e3060fa9e6995047ae
+  checksum: 55deb814c94d1bfb78c4d1de1de1b73eb17c79374602f3bd8aa14e356a77fca64d01646cebe25ec9b307f53a047acc6d53ad6e931019d0726422f5f911e945aa
   languageName: node
   linkType: hard
 
 "@types/babel__traverse@npm:*, @types/babel__traverse@npm:^7.0.6":
-  version: 7.20.2
-  resolution: "@types/babel__traverse@npm:7.20.2"
+  version: 7.20.3
+  resolution: "@types/babel__traverse@npm:7.20.3"
   dependencies:
     "@babel/types": ^7.20.7
-  checksum: 981340286479524436348d32373eaa3bf993c635cbf70307b4b69463eee83406a959ac4844f683911e0db8ab8d9f0025ab630dc7a8c170fee9ee74144c2a528f
+  checksum: 6d0f70d8972647c9b78b51a54f0b6481c4f23f0bb2699ad276e6070678bd121fede99e8e2c8c3e409d2f31a0bf83ae511abc6fefb91f0630c8d728a3a9136790
   languageName: node
   linkType: hard
 
