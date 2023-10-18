@@ -3990,7 +3990,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/hast@npm:2.3.6, @types/hast@npm:^2.0.0":
+"@types/hast@npm:2.3.7":
+  version: 2.3.7
+  resolution: "@types/hast@npm:2.3.7"
+  dependencies:
+    "@types/unist": ^2
+  checksum: 3e63332825ed88117e7f355ba0cfd35367f1d951a1c381333b56188f7645947c3bbbe96abb4c8239324ba1317fd241d5afdb42e104a3654a424327340d49052c
+  languageName: node
+  linkType: hard
+
+"@types/hast@npm:^2.0.0":
   version: 2.3.6
   resolution: "@types/hast@npm:2.3.6"
   dependencies:
@@ -4318,10 +4327,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/unist@npm:2.0.8":
-  version: 2.0.8
-  resolution: "@types/unist@npm:2.0.8"
-  checksum: f4852d10a6752dc70df363917ef74453e5d2fd42824c0f6d09d19d530618e1402193977b1207366af4415aaec81d4e262c64d00345402020c4ca179216e553c7
+"@types/unist@npm:2.0.9":
+  version: 2.0.9
+  resolution: "@types/unist@npm:2.0.9"
+  checksum: 53e63a9ecebc8dca8b9dbc69cd0369ea0c993188ebb6e3b41c222281b4e95d8e0b524bcb1556fd210ea7f39771551be0c1c8fe0000bdcc0cd184cd2cd2794256
   languageName: node
   linkType: hard
 
@@ -9311,13 +9320,13 @@ __metadata:
     "@testing-library/jest-dom": 6.1.4
     "@testing-library/react": 14.0.0
     "@testing-library/user-event": 14.5.1
-    "@types/hast": 2.3.6
+    "@types/hast": 2.3.7
     "@types/jest": 29.5.6
     "@types/node": 20.8.7
     "@types/react": 18.2.29
     "@types/react-dom": 18.2.14
     "@types/react-test-renderer": 18.0.5
-    "@types/unist": 2.0.8
+    "@types/unist": 2.0.9
     "@typescript-eslint/eslint-plugin": 6.8.0
     "@typescript-eslint/parser": 6.8.0
     "@vanilla-extract/css": 1.13.0
