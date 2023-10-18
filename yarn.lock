@@ -3881,9 +3881,9 @@ __metadata:
   linkType: hard
 
 "@types/common-tags@npm:^1.8.1":
-  version: 1.8.2
-  resolution: "@types/common-tags@npm:1.8.2"
-  checksum: a48f69b24538cbf9e7808f98f1cc2f08a59ccd93501aa64acfe9fb692dcffee6de1ca2ae9970c319c16a032fd71195e30defae5834c8061999e1532e199d0c2d
+  version: 1.8.3
+  resolution: "@types/common-tags@npm:1.8.3"
+  checksum: 36f425b7ea5b59bdb3e3c875ec41d1d1b27608b8e19144ea1477803054652a9f51135542e1d7b7489d45aeafa72cc63ddfdd5c1880832b9e5555626143b3d798
   languageName: node
   linkType: hard
 
@@ -3902,11 +3902,11 @@ __metadata:
   linkType: hard
 
 "@types/cors@npm:^2.8.12":
-  version: 2.8.14
-  resolution: "@types/cors@npm:2.8.14"
+  version: 2.8.15
+  resolution: "@types/cors@npm:2.8.15"
   dependencies:
     "@types/node": "*"
-  checksum: 119b8ea5760db58542cc66635e8b98b9e859d615e9fc7bfd520c0e2c94063e87759033a4242360e2aa66df2d7d092a406838ac35e8ca7034debf1c69abc27811
+  checksum: ef7b0aba4c6a4c1fe9d459bd471ebaa891a75319682c9248daa17720003d1d0d2c59de4bdb6868630596ade9b7c3c949e652d6141b14c6fe4387ffcc520d0f3f
   languageName: node
   linkType: hard
 
