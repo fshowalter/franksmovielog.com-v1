@@ -9331,6 +9331,10 @@ __metadata:
     remark: "npm:^13.0.0"
     typescript: "npm:5.2.2"
     unist-util-visit: "npm:^2.0.3"
+  peerDependencies:
+    "@babel/core": 7.x
+    core-js: 3.x
+    webpack: 5.x
   languageName: unknown
   linkType: soft
 
