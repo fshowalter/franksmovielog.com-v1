@@ -84,7 +84,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.14.0, @babel/core@npm:^7.20.12, @babel/core@npm:^7.20.7":
+"@babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.14.0, @babel/core@npm:^7.20.12, @babel/core@npm:^7.20.7, @babel/core@npm:^7.23.3":
   version: 7.23.3
   resolution: "@babel/core@npm:7.23.3"
   dependencies:
@@ -3859,7 +3859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:^7.1.14":
+"@types/babel__core@npm:^7, @types/babel__core@npm:^7.1.14":
   version: 7.20.4
   resolution: "@types/babel__core@npm:7.20.4"
   dependencies:
@@ -6757,7 +6757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.31.0":
+"core-js@npm:^3.31.0, core-js@npm:^3.33.2":
   version: 3.33.2
   resolution: "core-js@npm:3.33.2"
   checksum: d6a56ad3e134846c805ce936788dd58cb51e861f173ed1f830979735d7865ea6f6a5a437076c36c8d8b842ba0384d052998f160774a8da7712f0f51df60167fe
@@ -9271,11 +9271,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "franksmovielog.com@workspace:."
   dependencies:
+    "@babel/core": "npm:^7.23.3"
     "@silvenon/remark-smartypants": "npm:2.0.0"
     "@testing-library/dom": "npm:9.3.3"
     "@testing-library/jest-dom": "npm:6.1.4"
     "@testing-library/react": "npm:14.1.0"
     "@testing-library/user-event": "npm:14.5.1"
+    "@types/babel__core": "npm:^7"
     "@types/hast": "npm:2.3.8"
     "@types/jest": "npm:29.5.8"
     "@types/node": "npm:20.9.0"
@@ -9291,6 +9293,7 @@ __metadata:
     "@vanilla-extract/webpack-plugin": "npm:2.3.1"
     babel-jest: "npm:29.7.0"
     babel-preset-gatsby: "npm:3.12.1"
+    core-js: "npm:^3.33.2"
     eslint: "npm:8.53.0"
     eslint-config-airbnb: "npm:19.0.4"
     eslint-config-prettier: "npm:9.0.0"
@@ -9331,6 +9334,7 @@ __metadata:
     remark: "npm:^13.0.0"
     typescript: "npm:5.2.2"
     unist-util-visit: "npm:^2.0.3"
+    webpack: "npm:^5.89.0"
   languageName: unknown
   linkType: soft
 
@@ -18714,7 +18718,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.88.1":
+"webpack@npm:^5.88.1, webpack@npm:^5.89.0":
   version: 5.89.0
   resolution: "webpack@npm:5.89.0"
   dependencies:
