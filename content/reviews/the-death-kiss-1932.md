@@ -5,23 +5,22 @@ grade: D
 slug: the-death-kiss-1932
 ---
 
-The Death Kiss reunites three of Dracula's principals, with X playing a screenwriter investigating an on-set murder after his actress girlfriend finds herself under suspicion. Edward Van Sloan plays a director, and Bela Lugosi a studio manager.
+David Manners plays a screenwriter investigating an on-set murder after his actress girlfriend finds herself under suspicion. Edward Van Sloan plays a director, and Bela Lugosi is a studio manager. Despite reuniting three of <span data-imdb-id="tt0021814">_Dracula_</span>’s lead actors, it disappoints.
 
-It starts awful, but this proves deliberate. After a scene featuring stilted dialog leaden with exposition, we witness an overwrought death scene. 
+<!-- end -->
 
-Then, off-screen, Van Sloan calls "Cut!" and the camera pans over to reveal the set's artifice and the studio crew. Sloan orders another take. The crew resets, spouting professional jargon. "When we do it again, silk number ten," says one crew member. "Up high, ninety-nine!" shouts another. It's capped off with Sloan directing the dying man, "When you die this time, let's have less gymnastics--and don't spin like a top when you fall."
+It starts with an awful scene featuring stilted dialog leaden with exposition leading up to a murder.
 
-Then a scream as a crew member discovers the actor isn't playing dead, and we get a dynamic tracking shot as Van Sloan crosses the panicked set to phone Lugosi.
+Then, off-screen, Van Sloan calls “Cut!” and the camera pans, revealing the set’s artifice and the studio crew. Sloan orders another take. The crew resets, spouting professional jargon. “When we do it again, silk number ten,” says one member. “Up high, ninety-nine!” shouts another. It’s capped off with Van Sloan directing the dying man, “When you die this time, let’s have less gymnastics—and don’t spin like a top when you fall.”
 
-It all promises a better movie than the one that follows. There should be a name for movies like this. Not a "bait-and-switch" as much as "false hope."
+Then a scream as a crew member discovers the dying actor isn’t playing dead, and we get a dynamic tracking shot of Van Sloan crossing the panicked set to phone the studio head.
 
-You see, despite this opening scene's condescension to B-movie theatrics, the film wallows in them. 
+This setup promises a better movie than what follows. After this initial condescension toward B-movie theatrics, the script wallows in them. It’s not so much a bait-and-switch as false hope.
 
-X soon arrives, sporting an Errol Flynn-like swagger that's miles away from his stiff turn in Dracula. Decked out in trench coat and hat, je plays amateur sleuth. He's smarter than the cops because the script paints the cops as idiots who miss basic clues like bullets in walls. 
+Manners soon arrives, radiating an Errol Flynn-like swagger that’s miles away from his stiff turn in _Dracula_. Decked out in trench coat and hat, he plays amateur sleuth. He’s smarter than the cops because the script paints the cops as idiots who miss basic clues like bullets in walls.
 
-When William Powell does this in the X movies, he's charming, but X overdoes it, coming across as arrogant as he pick-pockets detectives, and uttering ridiculous lines like, “You know as well as I do that the scribblings a man makes on a piece of paper are as identifying as his signature”
+When William Powell does this in the Philo Vance movies, he charms, but Manners overdoes it, coming across as arrogant. Sporting a patronizing smirk, he talks over his girlfriend, pick-pockets detectives, disturbs evidence, and utters ridiculous lines like, “You know as well as I do that the scribblings a man makes on a piece of paper are as identifying as his signature.”
 
-Lugosi, just x years after Dracula, disappoints in  his supporting role. He delivers his dialogue with mechanical inflection, as though reciting it phonetically, in a part that exists only to proffer another suspect. 
+For his part, Lugosi, a year removed from his star turn in _Dracula_, disappoints in a supporting role that exists only to proffer another suspect. His part as a Hollywood studio manager calls for a fast-talking operator capable of managing large egos. Lugosi’s capable of such a take-charge role—his turn as a detective in Tod Browning’s <span data-imdb-id="tt0020492">_The Thirteenth Chair_</span> proves it—but he struggles here. Consider the scene where he receives news of the murder. He stares, wide-eyed, toward the camera and says, “Myles… Brent….killed,” with the same inflection a villager in _Dracula_ might intone referring to the Count.
 
-For fans of Dracula, this may prove an interesting curio. A one-time watch that offering a surprising performance from X. But said performance's novelty wears off fast, leaving you with an inane whodunit where the villain proves the most charming.
-
+_The Death Kiss_ proves difficult to recommend. Lugosi flounders, but Manners’ performance delivers unexpected flash and the opening scene sparkles. Granted, said flash soon degenerates into conceit as the opening’s hint of originality devolves into an inane whodunit teaming with the same B-movie tropes it sought to satirize. But, for _Dracula_ fans, it may prove an interesting curio. Seeing the three performers operate under director Edwin Marin gave me a new appreciation for Tod Browning's work on _Dracula_.
