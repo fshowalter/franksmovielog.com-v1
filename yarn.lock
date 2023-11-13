@@ -7631,9 +7631,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.535":
-  version: 1.4.581
-  resolution: "electron-to-chromium@npm:1.4.581"
-  checksum: b545ece73fab4be8556873bc6e16da2276ae1c1712e75639d44f94f6210c81d2ff1bce8ebbc41df646e808c7c8bb2efa93e6ba35918b5d02a5d9ebfe493b0f57
+  version: 1.4.582
+  resolution: "electron-to-chromium@npm:1.4.582"
+  checksum: 1943110a9e13cf55bbf8cd6c8151feb1105c42722df94b9a6b48d2130ae3c2210aff44c01bb242a78c45bfa4d56f6ea307813bdb41248bef7e95569dc194dda4
   languageName: node
   linkType: hard
 
@@ -9149,13 +9149,13 @@ __metadata:
   linkType: hard
 
 "flat-cache@npm:^3.0.4":
-  version: 3.1.1
-  resolution: "flat-cache@npm:3.1.1"
+  version: 3.2.0
+  resolution: "flat-cache@npm:3.2.0"
   dependencies:
     flatted: "npm:^3.2.9"
     keyv: "npm:^4.5.3"
     rimraf: "npm:^3.0.2"
-  checksum: 15f7f854830089a903ea660809b67ee25632b8b1965da6a328d3dc59d451abe2e9f16ad0b7523571ece2b5424d1e1979469ba25870f76f49ce3bbffc836072ef
+  checksum: b76f611bd5f5d68f7ae632e3ae503e678d205cf97a17c6ab5b12f6ca61188b5f1f7464503efae6dc18683ed8f0b41460beb48ac4b9ac63fe6201296a91ba2f75
   languageName: node
   linkType: hard
 
@@ -10555,9 +10555,9 @@ __metadata:
   linkType: hard
 
 "hash-wasm@npm:^4.9.0":
-  version: 4.10.0
-  resolution: "hash-wasm@npm:4.10.0"
-  checksum: b79fb832a0e1a2d8395c0095a214993c674e694cd7852c43d9811feaf7f6a173485923526ad2d47fcbbdcb222a14a8ad9064e26275fbc323d49922d07f88aff4
+  version: 4.11.0
+  resolution: "hash-wasm@npm:4.11.0"
+  checksum: ddf87ed2319fc7c9ba745fffccbf008a80e931b5913b4eef42b038efc10705e48458e2bf528601f78142774108dd7b151341721ce05aca9c431179fe5cefbb72
   languageName: node
   linkType: hard
 
@@ -17059,12 +17059,12 @@ __metadata:
   linkType: hard
 
 "streamx@npm:^2.15.0":
-  version: 2.15.4
-  resolution: "streamx@npm:2.15.4"
+  version: 2.15.5
+  resolution: "streamx@npm:2.15.5"
   dependencies:
     fast-fifo: "npm:^1.1.0"
     queue-tick: "npm:^1.0.1"
-  checksum: 878aeea3a82dc2cdfe74055279cea49ac94daebc5abd46468f29ce001bbcd4c9a0cf5bae771971f6abc73e1e3d3156b609cf1702bd63f97eaa7216386a975ef7
+  checksum: 7998d1fa3324131ed94efc4a4e8b22e0f60267b21d8f8fac8c605eaa1a6d6358adbc38c35b407be0eb8cc09a223c641962afb0db29ecbe92118242118946d93c
   languageName: node
   linkType: hard
 
