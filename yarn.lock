@@ -9325,7 +9325,7 @@ __metadata:
     prettier: "npm:3.1.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
-    react-select: "npm:5.7.7"
+    react-select: "npm:5.8.0"
     react-select-event: "npm:5.5.1"
     react-test-renderer: "npm:18.2.0"
     remark: "npm:^13.0.0"
@@ -15599,9 +15599,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-select@npm:5.7.7":
-  version: 5.7.7
-  resolution: "react-select@npm:5.7.7"
+"react-select@npm:5.8.0":
+  version: 5.8.0
+  resolution: "react-select@npm:5.8.0"
   dependencies:
     "@babel/runtime": "npm:^7.12.0"
     "@emotion/cache": "npm:^11.4.0"
@@ -15615,7 +15615,7 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 71797a84e50df204115607e20def193854be465fe0b24ad1dc205a51da14e549d908b6fbdd54a6bf10d641fcb93b4370345e020dbffbfa1e665543629d15e652
+  checksum: b4b98aaf117ee5cc4642871b7bd51fd0e2697988d0b880f30b21e933ca90258959147117d8aada36713b622e0e4cb06bd18ec02069f3f108896e0d31e69e3c16
   languageName: node
   linkType: hard
 
