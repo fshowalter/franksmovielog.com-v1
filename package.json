@@ -109,5 +109,5 @@
     "*.js": "yarn eslint --cache --fix",
     "*.{json,js,css,scss,md,ts,tsx,jsx,yml}": "yarn prettier --write"
   },
-  "packageManager": "yarn@4.0.1"
+  "packageManager": "yarn@4.0.2"
 }
