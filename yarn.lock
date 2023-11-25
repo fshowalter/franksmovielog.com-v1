@@ -4167,12 +4167,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.9.1, @types/node@npm:>=10.0.0":
+"@types/node@npm:*, @types/node@npm:>=10.0.0":
   version: 20.9.1
   resolution: "@types/node@npm:20.9.1"
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 0cb52c0840fe9a2e8f988564da6823bb3141e34fef8cb7264762c851c0dac5d9ef4859db422dfa41cd1a864ad126a9bd3b588d0285bc9af6de814de3280da9b3
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.10.0":
+  version: 20.10.0
+  resolution: "@types/node@npm:20.10.0"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: f379e57d9d28cb5f3d8eab943de0c54a0ca2f95ee356e1fe2a1a4fa718b740103ae522c50ce107cffd52c3642ef3244cfc55bf5369081dd6c48369c8587b21ae
   languageName: node
   linkType: hard
 
@@ -9306,7 +9315,7 @@ __metadata:
     "@testing-library/user-event": "npm:14.5.1"
     "@types/hast": "npm:2.3.8"
     "@types/jest": "npm:29.5.10"
-    "@types/node": "npm:20.9.1"
+    "@types/node": "npm:20.10.0"
     "@types/react": "npm:18.2.38"
     "@types/react-dom": "npm:18.2.17"
     "@types/react-test-renderer": "npm:18.0.7"
