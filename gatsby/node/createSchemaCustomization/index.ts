@@ -1,6 +1,5 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
 import { linkReviewedMoviesExtension } from "./extensions/linkReviewedMovies";
-import { proxyToReviewedMovieExtension } from "./extensions/proxyToReviewedMovie";
 import {
   AllTimeStatsGradeDistribution,
   AllTimeStatsJson,
@@ -37,7 +36,6 @@ export function createSchemaCustomization({
   const { createTypes, createFieldExtension } = actions;
 
   createFieldExtension(linkReviewedMoviesExtension);
-  createFieldExtension(proxyToReviewedMovieExtension);
 
   const typeDefs = [
     schema.buildObjectType(StatsDistribution),
@@ -47,8 +45,8 @@ export function createSchemaCustomization({
     schema.buildObjectType(AllTimeStatsGradeDistribution),
     schema.buildObjectType(AllTimeStatsJson),
     schema.buildObjectType(YearStatsJson),
-    schema.buildObjectType(ViewingsJson),
     schema.buildObjectType(MarkdownRemark),
+    schema.buildObjectType(ViewingsJson),
     schema.buildObjectType(ReviewedTitleViewing),
     schema.buildObjectType(ReviewedTitleMoreTitle),
     schema.buildObjectType(ReviewedTitleMoreEntity),

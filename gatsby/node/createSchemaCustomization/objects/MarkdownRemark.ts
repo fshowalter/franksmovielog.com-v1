@@ -8,9 +8,9 @@ import type {
   GatsbyResolveArgs,
   GatsbyResolveInfo,
 } from "../type-definitions";
+import { findReviewedTitleNode } from "../utils/findReviewedTitleNode";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import { excerptHtmlFieldResolver } from "./fieldResolvers/excerptHtmlFieldResolver";
-import { findReviewedTitleNode } from "./fieldResolvers/reviewedTitleFieldResolver";
 
 export interface MarkdownNode extends GatsbyNode {
   fileAbsolutePath: string;

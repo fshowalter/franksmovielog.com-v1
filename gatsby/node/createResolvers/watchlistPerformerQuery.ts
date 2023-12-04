@@ -1,10 +1,10 @@
 import { SchemaNames } from "../createSchemaCustomization/schemaNames";
 import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
-export const reviewedMovieQuery = {
+export const watchlistPerformerQuery = {
   Query: {
-    reviewedMovie: {
-      type: `${SchemaNames.ReviewedMoviesJson}!`,
+    watchlistDirector: {
+      type: `${SchemaNames.WatchlistPerformersJson}!`,
       args: {
         id: "String!",
       },
@@ -15,9 +15,7 @@ export const reviewedMovieQuery = {
         },
         context: GatsbyNodeContext,
       ) => {
-        return context.nodeModel.getNodeById({
-          id: args.id,
-        });
+        return context.nodeModel.getNodeById({ id: args.id });
       },
     },
   },

@@ -4,6 +4,7 @@ import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 
 export interface ReviewedTitleNode extends GatsbyNode {
   imdbId: string;
+  slug: string;
 }
 
 export const ReviewedTitleViewing = {
@@ -71,6 +72,7 @@ export const ReviewedTitlesJson = {
     year: "Int!",
     viewings: `[${SchemaNames.ReviewedTitleViewing}!]!`,
     poster: posterFieldResolver,
+    more: `${SchemaNames.ReviewedTitleMore}!`,
   },
   extensions: {
     infer: false,

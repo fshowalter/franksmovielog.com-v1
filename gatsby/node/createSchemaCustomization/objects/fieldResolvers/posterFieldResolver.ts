@@ -4,8 +4,8 @@ import {
   GatsbyResolveArgs,
   GatsbyResolveInfo,
 } from "../../type-definitions";
+import { findReviewedTitleNode } from "../../utils/findReviewedTitleNode";
 import { resolveFieldForNode } from "../../utils/resolveFieldForNode";
-import { findReviewedMovieNode } from "./reviewedTitleFieldResolver";
 
 export const posterFieldResolver = {
   type: "File!",
@@ -15,7 +15,7 @@ export const posterFieldResolver = {
     context: GatsbyNodeContext,
     info: GatsbyResolveInfo,
   ) => {
-    const reviewedMovie = await findReviewedMovieNode(
+    const reviewedMovie = await findReviewedTitleNode(
       source.imdbId,
       context.nodeModel,
     );
