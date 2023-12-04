@@ -10,7 +10,7 @@ import type {
 } from "../type-definitions";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import { excerptHtmlFieldResolver } from "./fieldResolvers/excerptHtmlFieldResolver";
-import { findReviewedMovieNode } from "./fieldResolvers/reviewedMovieFieldResolver";
+import { findReviewedTitleNode } from "./fieldResolvers/reviewedTitleFieldResolver";
 
 export interface MarkdownNode extends GatsbyNode {
   fileAbsolutePath: string;
@@ -19,9 +19,7 @@ export interface MarkdownNode extends GatsbyNode {
 
 interface FrontMatter {
   imdb_id: string;
-  sequence: number;
   slug: string;
-  venue_notes: string;
   grade: string;
   date: string;
 }
@@ -34,9 +32,9 @@ async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
   const matches = [...text.matchAll(re)];
 
   for (const match of matches) {
-    const reviewedMovie = await findReviewedMovieNode(match[2], nodeModel);
+    const reviewedTitle = await findReviewedTitleNode(match[2], nodeModel);
 
-    if (!reviewedMovie) {
+    if (!reviewedTitle) {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
         match[3],
@@ -44,7 +42,7 @@ async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
     } else {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
-        `<a href="/reviews/${reviewedMovie.slug}/">${match[3]}</a>`,
+        `<a href="/reviews/${reviewedTitle.slug}/">${match[3]}</a>`,
       );
     }
   }
@@ -60,28 +58,6 @@ export const MarkdownRemark = {
       type: "String!",
       extensions: {
         linkReviewedMovies: {},
-      },
-    },
-    date: {
-      type: "Date!",
-      resolve: async (
-        source: MarkdownNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo,
-      ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>({
-          fieldName: "frontmatter",
-          source,
-          context,
-          info,
-          args,
-        });
-
-        return frontMatter ? frontMatter.date : null;
-      },
-      extensions: {
-        dateformat: {},
       },
     },
     excerptHtml: excerptHtmlFieldResolver,

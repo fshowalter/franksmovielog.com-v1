@@ -3,20 +3,10 @@ import toHtml from "hast-util-to-html";
 import toHast from "mdast-util-to-hast";
 import remark from "remark";
 import { SchemaNames } from "../schemaNames";
-import type {
-  GatsbyNode,
-  GatsbyNodeContext,
-  GatsbyResolveInfo,
-} from "../type-definitions";
-import { resolveFieldForNode } from "../utils/resolveFieldForNode";
-import { MarkdownNode } from "./MarkdownRemark";
+import type { GatsbyNode, GatsbyNodeContext } from "../type-definitions";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
-import {
-  findReviewedMovieNode,
-  reviewedMovieFieldResolver,
-} from "./fieldResolvers/reviewedMovieFieldResolver";
 
-export interface ViewingNode extends GatsbyNode {
+interface ViewingNode extends GatsbyNode {
   imdbId: string;
   sequence: number;
   mediumNotes: string | null;
@@ -29,242 +19,64 @@ interface IHastNode extends Node {
   }[];
 }
 
-export const commonViewingFields = {
-  imdbId: "String!",
-  title: "String!",
-  year: "Int!",
-  sequence: "Int!",
-  venue: "String",
-  medium: "String",
-  genres: "[String!]!",
-  releaseDate: "String!",
-  viewingDate: {
-    type: "Date!",
-    extensions: {
-      dateformat: {},
-    },
-  },
-  viewingYear: "Int!",
-  mediumNotes: {
-    type: "String",
-    resolve: (source: ViewingNode) => {
-      if (!source.mediumNotes) {
-        return null;
-      }
-
-      const mdast = remark().parse(source.mediumNotes);
-
-      const hast = toHast(mdast, {
-        allowDangerousHtml: true,
-      }) as IHastNode;
-
-      hast.children[0].tagName = "span";
-
-      return toHtml(hast);
-    },
-  },
-  sortTitle: "String!",
-  viewingNote: {
-    type: SchemaNames.MarkdownRemark,
-    resolve: async (
-      source: ViewingNode,
-      _args: unknown,
-      context: GatsbyNodeContext,
-    ) => {
-      return await context.nodeModel.findOne({
-        type: SchemaNames.MarkdownRemark,
-        query: {
-          filter: {
-            fileAbsolutePath: {
-              regex: `//viewing_notes/${source.sequence
-                .toString()
-                .padStart(4, "0")}-.*/`,
-            },
-          },
-        },
-      });
-    },
-  },
-  excerpt: {
-    type: "String",
-    resolve: async (
-      source: ViewingNode,
-      args: { includeCssClass: true },
-      context: GatsbyNodeContext,
-      info: GatsbyResolveInfo,
-    ) => {
-      const reviewedMovieNode = await findReviewedMovieNode(
-        source.imdbId,
-        context.nodeModel,
-      );
-
-      if (!reviewedMovieNode) {
-        return null;
-      }
-
-      const { totalCount } = await context.nodeModel.findAll<ViewingNode>({
-        type: SchemaNames.ViewingsJson,
-        query: {
-          filter: {
-            imdbId: {
-              eq: source.imdbId,
-            },
-          },
-        },
-      });
-
-      if ((await totalCount()) > 1) {
-        const viewingNoteNode = await resolveFieldForNode<MarkdownNode>({
-          fieldName: "viewingNote",
-          source,
-          context,
-          info,
-          args,
-        });
-
-        if (viewingNoteNode) {
-          return resolveFieldForNode<string>({
-            fieldName: "excerptHtml",
-            source: viewingNoteNode,
-            context,
-            info,
-            args,
-          });
-        }
-      }
-
-      const reviewNode = await resolveFieldForNode<MarkdownNode>({
-        fieldName: "review",
-        source: reviewedMovieNode,
-        context,
-        info,
-        args,
-      });
-
-      if (!reviewNode) {
-        return null;
-      }
-
-      return await resolveFieldForNode<string>({
-        fieldName: "excerptHtml",
-        source: reviewNode,
-        context,
-        info,
-        args,
-      });
-    },
-  },
-  hasReviewOrNote: {
-    type: "Boolean!",
-    resolve: async (
-      source: ViewingNode,
-      args: Record<string, unknown>,
-      context: GatsbyNodeContext,
-      info: GatsbyResolveInfo,
-    ) => {
-      const reviewedMovieNode = await findReviewedMovieNode(
-        source.imdbId,
-        context.nodeModel,
-      );
-
-      if (!reviewedMovieNode) {
-        return false;
-      }
-
-      const reviewNode = await resolveFieldForNode<MarkdownNode>({
-        fieldName: "review",
-        source: reviewedMovieNode,
-        context,
-        info,
-        args,
-      });
-
-      if (!reviewNode) {
-        return false;
-      }
-
-      const reviewDate = await resolveFieldForNode<string>({
-        fieldName: "date",
-        source: reviewNode,
-        context,
-        info,
-        args: { formatString: "YYYY-MM-DD" },
-      });
-
-      if (!reviewDate) {
-        return false;
-      }
-
-      if (reviewDate === source.viewingDate) {
-        return true;
-      }
-
-      const viewingNoteNode = await resolveFieldForNode<MarkdownNode>({
-        fieldName: "viewingNote",
-        source,
-        context,
-        info,
-        args,
-      });
-
-      if (viewingNoteNode) {
-        return true;
-      }
-
-      return false;
-    },
-  },
-  poster: posterFieldResolver,
-};
-
 export const ViewingsJson = {
   name: SchemaNames.ViewingsJson,
   interfaces: ["Node"],
   fields: {
-    ...commonViewingFields,
-    reviewedMovie: reviewedMovieFieldResolver,
-    slug: {
+    genres: "[String!]!",
+    medium: "String",
+    sequence: "Int!",
+    sortTitle: "String!",
+    title: "String!",
+    venue: "String",
+    viewingYear: "String!",
+    year: "String!",
+    yearAndImdbId: "String!",
+    viewingDate: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+    },
+    mediumNotes: {
       type: "String",
-      extensions: {
-        proxyToReviewedMovie: {
-          fieldName: "slug",
-        },
+      resolve: (source: ViewingNode) => {
+        if (!source.mediumNotes) {
+          return null;
+        }
+
+        const mdast = remark().parse(source.mediumNotes);
+
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as IHastNode;
+
+        hast.children[0].tagName = "span";
+
+        return toHtml(hast);
       },
     },
-    grade: {
-      type: "String",
-      extensions: {
-        proxyToReviewedMovie: {
-          fieldName: "grade",
-        },
+    viewingNote: {
+      type: SchemaNames.MarkdownRemark,
+      resolve: async (
+        source: ViewingNode,
+        _args: unknown,
+        context: GatsbyNodeContext,
+      ) => {
+        return await context.nodeModel.findOne({
+          type: SchemaNames.MarkdownRemark,
+          query: {
+            filter: {
+              fileAbsolutePath: {
+                regex: `//viewing_notes/${source.sequence
+                  .toString()
+                  .padStart(4, "0")}-.*/`,
+              },
+            },
+          },
+        });
       },
     },
-    gradeValue: {
-      type: "Int",
-      extensions: {
-        proxyToReviewedMovie: {
-          fieldName: "gradeValue",
-        },
-      },
-    },
-    principalCastNames: {
-      type: "[String!]",
-      extensions: {
-        proxyToReviewedMovie: {
-          fieldName: "principalCastNames",
-        },
-      },
-    },
-    directorNames: {
-      type: "[String!]",
-      extensions: {
-        proxyToReviewedMovie: {
-          fieldName: "directorNames",
-        },
-      },
-    },
-  },
-  extensions: {
-    infer: false,
+    poster: posterFieldResolver,
   },
 };

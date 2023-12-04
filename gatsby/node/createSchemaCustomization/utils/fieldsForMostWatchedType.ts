@@ -1,5 +1,5 @@
 import { ViewingNode } from "../objects/ViewingsJson";
-import { WatchlistEntityNode } from "../objects/WatchlistEntitiesJson";
+import { WatchlistEntityNode } from "../objects/WatchlistDirectorsJson";
 import { SchemaNames } from "../schemaNames";
 import type { GatsbyNodeContext, GatsbyResolveArgs } from "../type-definitions";
 

@@ -1,4 +1,4 @@
-import { findReviewedMovieNode } from "../objects/fieldResolvers/reviewedMovieFieldResolver";
+import { findReviewedMovieNode } from "../objects/fieldResolvers/reviewedTitleFieldResolver";
 import { GatsbyNodeModel } from "../type-definitions";
 
 export default async function addReviewLinks(

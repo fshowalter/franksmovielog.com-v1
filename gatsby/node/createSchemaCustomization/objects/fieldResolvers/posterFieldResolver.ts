@@ -5,7 +5,7 @@ import {
   GatsbyResolveInfo,
 } from "../../type-definitions";
 import { resolveFieldForNode } from "../../utils/resolveFieldForNode";
-import { findReviewedMovieNode } from "./reviewedMovieFieldResolver";
+import { findReviewedMovieNode } from "./reviewedTitleFieldResolver";
 
 export const posterFieldResolver = {
   type: "File!",
