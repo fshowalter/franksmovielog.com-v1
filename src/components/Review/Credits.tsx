@@ -65,7 +65,7 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
         />
       </Box>
       <Spacer axis="vertical" size={32} />
-      <WatchlistLinks watchlist={review.watchlist} />
+      <WatchlistLinks more={review.more} />
       <Spacer axis="vertical" size={32} />
       <Box
         as="a"

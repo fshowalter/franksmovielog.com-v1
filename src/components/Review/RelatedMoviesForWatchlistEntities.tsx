@@ -9,30 +9,30 @@ const leadText: Record<Queries.WatchlistEntityType, string> = {
 };
 
 export function RelatedMoviesForWatchlistEntities({
+  entityType,
   entities,
 }: {
+  entityType: string;
   entities: readonly Queries.RelatedMoviesForWatchlistEntityFragment[];
 }) {
   return (
     <>
-      {entities
-        .filter((entity) => entity.browseMore.length === 4)
-        .map((entity) => {
-          return (
-            <StillListNav key={`${entity.entityType}s/${entity.slug}`}>
-              <StillListHeading
-                leadText={`More${leadText[entity.entityType]}`}
-                linkTarget={`/watchlist/${entity.entityType}s/${entity.slug}`}
-                linkText={entity.name}
-              />
-              <StillList
-                movies={entity.browseMore}
-                seeAllLinkTarget={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-                seeAllLinkText={`${leadText[entity.entityType]} ${entity.name}`}
-              />
-            </StillListNav>
-          );
-        })}
+      {entities.map((entity) => {
+        return (
+          <StillListNav key={`${entityType}s/${entity.slug}`}>
+            <StillListHeading
+              leadText={`More${leadText[entityType]}`}
+              linkTarget={`/watchlist/${entityType}s/${entity.slug}`}
+              linkText={entity.name}
+            />
+            <StillList
+              movies={entity.titles}
+              seeAllLinkTarget={`/watchlist/${entityType}s/${entity.slug}/`}
+              seeAllLinkText={`${leadText[entityType]} ${entity.name}`}
+            />
+          </StillListNav>
+        );
+      })}
     </>
   );
 }
