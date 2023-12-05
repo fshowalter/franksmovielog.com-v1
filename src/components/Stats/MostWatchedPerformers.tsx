@@ -9,13 +9,11 @@ function PerformerName({
 }): JSX.Element {
   if (person.slug) {
     return (
-      <Link to={`/watchlist/performers/${person.slug}/`}>
-        {person.fullName}
-      </Link>
+      <Link to={`/watchlist/performers/${person.slug}/`}>{person.name}</Link>
     );
   }
 
-  return <>{person.fullName}</>;
+  return <>{person.name}</>;
 }
 
 export function MostWatchedPerformers({

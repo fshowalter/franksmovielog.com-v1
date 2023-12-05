@@ -43,19 +43,19 @@ export function StatsCallouts({
       {viewingCallouts && (
         <>
           <Callout label="Viewings" stat={viewingCallouts.viewingCount} />
-          <Callout label="Movies" stat={viewingCallouts.movieCount} />
+          <Callout label="Movies" stat={viewingCallouts.titleCount} />
         </>
       )}
       {viewingCallouts &&
-        viewingCallouts.movieCount != viewingCallouts.newMovieCount && (
-          <Callout label="New Movies" stat={viewingCallouts.newMovieCount} />
+        viewingCallouts.titleCount != viewingCallouts.newTitleCount && (
+          <Callout label="New Movies" stat={viewingCallouts.newTitleCount} />
         )}
       {reviewCallouts && (
         <>
-          <Callout label="Reviews" stat={reviewCallouts.reviewsCreated} />
+          <Callout label="Reviews" stat={reviewCallouts.reviewCount} />
           <Callout
             label="From Watchlist"
-            stat={reviewCallouts.watchlistTitlesReviewed}
+            stat={reviewCallouts.watchlistTitlesReviewedCount}
           />
         </>
       )}

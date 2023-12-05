@@ -107,32 +107,6 @@ export function Stats({
 }
 
 export const query = graphql`
-  fragment AllTimeStats on AllTimeStatsJson {
-    ...AllTimeViewingCallouts
-    ...ReviewCallouts
-    decadeDistribution {
-      ...DecadeDistribution
-    }
-    gradeDistribution {
-      ...GradeDistribution
-    }
-    mediaDistribution {
-      ...MediaDistribution
-    }
-    mostWatchedTitles {
-      ...MostWatchedMovie
-    }
-    mostWatchedDirectors {
-      ...MostWatchedPerson
-    }
-    mostWatchedWriters {
-      ...MostWatchedPerson
-    }
-    mostWatchedPerformers {
-      ...MostWatchedPerson
-    }
-  }
-
   fragment YearStats on YearStatsJson {
     ...YearViewingCallouts
     decadeDistribution {

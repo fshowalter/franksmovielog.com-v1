@@ -19,7 +19,7 @@ export function GradeDistributionStats({
   }
 
   const maxBar = distributions.reduce((acc, stat) => {
-    const value = stat.reviewCount;
+    const value = stat.count;
     return acc > value ? acc : value;
   }, 0);
 
@@ -37,16 +37,13 @@ export function GradeDistributionStats({
         <tbody>
           {distributions.map((distribution) => {
             return (
-              <TableRow key={distribution.grade}>
-                <TableDataCell align="left">{distribution.grade}</TableDataCell>
+              <TableRow key={distribution.name}>
+                <TableDataCell align="left">{distribution.name}</TableDataCell>
                 <TableDataCell align="fill">
-                  <BarGradient
-                    value={distribution.reviewCount}
-                    maxValue={maxBar}
-                  />
+                  <BarGradient value={distribution.count} maxValue={maxBar} />
                 </TableDataCell>
                 <TableDataCell align="right">
-                  {distribution.reviewCount}
+                  {distribution.count}
                 </TableDataCell>
               </TableRow>
             );

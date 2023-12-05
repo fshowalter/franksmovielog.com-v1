@@ -18,7 +18,7 @@ export function MostWatchedPeople({
   nameRenderer,
 }: {
   header: string;
-  people: Queries.MostWatchedPeopleFragment | null;
+  people: Queries.MostWatchedPersonFragment[] | null;
   nameRenderer: ({
     person,
   }: {
@@ -49,7 +49,7 @@ export function MostWatchedPeople({
         </Box>
       </Box>
       <Box as="ol">
-        {people.mostWatched.map((person, index) => {
+        {people.map((person, index) => {
           return (
             <Box as="li" key={person.fullName} display="block">
               <Box
@@ -70,7 +70,7 @@ export function MostWatchedPeople({
                   backgroundColor="stripe"
                   textAlign="right"
                 >
-                  {person.viewingCount}
+                  {person.count}
                 </Box>
               </Box>
               <Box lineHeight={40} className={detailsRowGridStyle}>
@@ -111,7 +111,7 @@ export function MostWatchedPersonViewingListItem({
   return (
     <ListItem alignItems="center">
       <ListItemPoster
-        slug={viewing.reviewedMovie?.slug}
+        slug={viewing.slug}
         image={viewing.poster}
         title={viewing.title}
         year={viewing.year}
@@ -123,7 +123,7 @@ export function MostWatchedPersonViewingListItem({
           <ListItemTitle
             title={viewing.title}
             year={viewing.year}
-            slug={viewing.reviewedMovie?.slug}
+            slug={viewing.slug}
           />
           <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
         </Box>
@@ -137,7 +137,7 @@ export function MostWatchedPersonViewingListItem({
         >
           <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
           <Box>
-            {viewing.viewingDate}
+            {viewing.date}
             <Spacer axis="vertical" size={8} />
             <ListItemMediumAndVenue
               medium={viewing.medium}

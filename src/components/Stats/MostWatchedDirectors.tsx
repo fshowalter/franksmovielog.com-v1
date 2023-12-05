@@ -9,11 +9,11 @@ function DirectorName({
 }): JSX.Element {
   if (person.slug) {
     return (
-      <Link to={`/watchlist/directors/${person.slug}/`}>{person.fullName}</Link>
+      <Link to={`/watchlist/directors/${person.slug}/`}>{person.name}</Link>
     );
   }
 
-  return <>{person.fullName}</>;
+  return <>{person.name}</>;
 }
 
 export function MostWatchedDirectors({

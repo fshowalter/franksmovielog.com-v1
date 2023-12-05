@@ -10,17 +10,15 @@ import {
 } from "../StatsTable";
 
 export function TopMedia({
-  topMedia,
+  distribution,
 }: {
-  topMedia: Queries.TopMediaFragment | null;
+  distribution: Queries.MediaDistributionFragment[] | null;
 }): JSX.Element | null {
-  if (!topMedia) {
+  if (!distribution) {
     return null;
   }
 
-  const { stats } = topMedia;
-
-  const maxBar = stats.reduce((acc, stat) => {
+  const maxBar = distribution.reduce((acc, stat) => {
     const value = stat.viewingCount;
     return acc > value ? acc : value;
   }, 0);
@@ -37,14 +35,14 @@ export function TopMedia({
           </tr>
         </TableHead>
         <tbody>
-          {stats.map((stat) => {
+          {distribution.map((stat) => {
             return (
               <TableRow key={stat.name}>
                 <TableDataCell align="left">{stat.name}</TableDataCell>
                 <TableDataCell hideOnSmallScreens align="fill">
-                  <BarGradient value={stat.viewingCount} maxValue={maxBar} />
+                  <BarGradient value={stat.count} maxValue={maxBar} />
                 </TableDataCell>
-                <TableDataCell align="right">{stat.viewingCount}</TableDataCell>
+                <TableDataCell align="right">{stat.count}</TableDataCell>
               </TableRow>
             );
           })}

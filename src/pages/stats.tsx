@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder, Stats } from "../components";
+import { AllTimeStats, HeadBuilder } from "../components";
 
 export function Head(): JSX.Element {
   return (
@@ -20,51 +20,13 @@ export default function AllTimeStatsPage({
 }: {
   data: Queries.AllTimeStatsPageQuery;
 }): JSX.Element {
-  return (
-    <Stats
-      title="All-Time Stats"
-      tagline={`${(data.viewing.years.length - 1).toString()} Years in Review`}
-      year="all"
-      viewingCallouts={data.allTimeStats.viewingStats}
-      reviewCallouts={data.allTimeStats.reviewStats}
-      gradeDistributions={data.allTimeStats.gradeDistributions}
-      viewingsCountsByDecade={data.allTimeStats.decadeStats}
-      mostWatchedMovies={data.allTimeStats.movies}
-      mostWatchedDirectors={data.allTimeStats.directors}
-      mostWatchedPerformers={data.allTimeStats.performers}
-      mostWatchedWriters={data.allTimeStats.writers}
-      mostWatchedMedia={data.allTimeStats.mostWatchedMedia}
-      allYears={data.viewing.years}
-    />
-  );
+  return <AllTimeStats stats={data.allTimeStats} statYears={data.stat.years} />;
 }
 
 export const pageQuery = graphql`
-  query AllTimeStats {
+  query AllTimeStatsPage {
     allTimeStats {
-      ...AllTimeViewingCallouts
-      ...ReviewCallouts
-      decadeDistribution {
-        ...DecadeDistribution
-      }
-      gradeDistribution {
-        ...GradeDistribution
-      }
-      mediaDistribution {
-        ...MediaDistribution
-      }
-      mostWatchedTitles {
-        ...MostWatchedMovie
-      }
-      mostWatchedDirectors {
-        ...MostWatchedPerson
-      }
-      mostWatchedWriters {
-        ...MostWatchedPerson
-      }
-      mostWatchedPerformers {
-        ...MostWatchedPerson
-      }
+      ...AllTimeStats
     }
 
     stat: allYearStatsJson {

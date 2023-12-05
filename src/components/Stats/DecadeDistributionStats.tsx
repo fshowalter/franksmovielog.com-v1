@@ -12,15 +12,13 @@ import {
 export function ByReleaseYearStats({
   decades,
 }: {
-  decades: Queries.ByDecadeFragment | null;
+  decades: Queries.DecadeDistribution[] | null;
 }): JSX.Element | null {
   if (!decades) {
     return null;
   }
 
-  const { stats } = decades;
-
-  const maxBar = stats.reduce((acc, stat) => {
+  const maxBar = decades.reduce((acc, stat) => {
     const value = stat.viewingCount;
     return acc > value ? acc : value;
   }, 0);
@@ -37,14 +35,14 @@ export function ByReleaseYearStats({
           </tr>
         </TableHead>
         <tbody>
-          {stats.map((stat) => {
+          {decades.map((stat) => {
             return (
-              <TableRow key={stat.decade}>
-                <TableDataCell align="left">{stat.decade}</TableDataCell>
+              <TableRow key={stat.name}>
+                <TableDataCell align="left">{stat.name}</TableDataCell>
                 <TableDataCell align="fill">
-                  <BarGradient value={stat.viewingCount} maxValue={maxBar} />
+                  <BarGradient value={stat.count} maxValue={maxBar} />
                 </TableDataCell>
-                <TableDataCell align="right">{stat.viewingCount}</TableDataCell>
+                <TableDataCell align="right">{stat.count}</TableDataCell>
               </TableRow>
             );
           })}
