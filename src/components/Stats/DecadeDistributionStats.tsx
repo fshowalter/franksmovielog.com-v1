@@ -19,7 +19,7 @@ export function ByReleaseYearStats({
   }
 
   const maxBar = decades.reduce((acc, stat) => {
-    const value = stat.viewingCount;
+    const value = stat.count;
     return acc > value ? acc : value;
   }, 0);
 

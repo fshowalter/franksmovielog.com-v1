@@ -12,17 +12,15 @@ import {
 } from "./MostWatchedMovies.css";
 
 export function MostWatchedMovies({
-  movies,
+  titles,
 }: {
-  movies: Queries.MostWatchedMoviesFragment | null;
+  titles: Queries.MostWatchedTitlesFragment[] | null;
 }): JSX.Element | null {
-  if (!movies) {
+  if (!titles) {
     return null;
   }
 
-  const { mostWatched } = movies;
-
-  if (mostWatched.length === 0) {
+  if (titles.length === 0) {
     return null;
   }
 
@@ -32,7 +30,7 @@ export function MostWatchedMovies({
       <Box>
         <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
         <List>
-          {mostWatched.map((movie) => {
+          {titles.map((movie) => {
             return <ListItem movie={movie} key={movie.imdbId} />;
           })}
         </List>
@@ -73,7 +71,7 @@ function ListItem({
           <ListItemTitle
             title={movie.title}
             year={movie.year}
-            slug={movie.reviewedMovie?.slug}
+            slug={movie.slug}
           />
           <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
         </Box>
@@ -83,7 +81,7 @@ function ListItem({
           display="flex"
           justifyContent={{ default: "flex-start", tablet: "center" }}
         >
-          <div>{movie.viewingCount.toLocaleString()} times</div>
+          <div>{movie.count.toLocaleString()} times</div>
         </Box>
         <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
       </Box>
@@ -129,7 +127,7 @@ function Poster({ movie, ...rest }: IPosterProps) {
 }
 
 export const query = graphql`
-  fragment MostWatchedMovie on MostWatchedTitle {
+  fragment MostWatchedTitle on MostWatchedTitle {
     imdbId
     title
     year

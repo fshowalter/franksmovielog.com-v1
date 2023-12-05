@@ -4,7 +4,6 @@ import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
 import { ByReleaseYearStats } from "../Stats/DecadeDistributionStats";
-import { GradeDistributionStats } from "../Stats/GradeDistributionStats";
 import { TopMedia } from "../Stats/MediaDistributionStats";
 import { MostWatchedDirectors } from "../Stats/MostWatchedDirectors";
 import { MostWatchedMovies } from "../Stats/MostWatchedMovies";
@@ -13,11 +12,13 @@ import { MostWatchedWriters } from "../Stats/MostWatchedWriters";
 import { StatsNavigation } from "../Stats/StatsNavigation";
 import { Callouts } from "./Callouts";
 
-export function AllTimeStats({
+export function YearStats({
+  year,
   stats,
   statYears,
 }: {
-  stats: Queries.AllTimeStatsFragment;
+  year: string;
+  stats: Queries.YearStatsFragment;
   statYears: readonly string[];
 }): JSX.Element {
   return (
@@ -33,14 +34,16 @@ export function AllTimeStats({
         >
           <Box display="flex" flexDirection="column" alignItems="center">
             <PageTitle paddingTop={{ default: 24, desktop: 32 }}>
-              All-Time Stats
+              {`${year} Stats`}
             </PageTitle>
             <Box as="p" color="subtle">
-              {`${(statYears.length - 1).toString()} Years in Review`}
+              {[...statYears].reverse()[1] === year
+                ? "A year in progress..."
+                : "A Year in Review"}
             </Box>
             <Spacer axis="vertical" size={24} />
             <StatsNavigation
-              currentYear={"all"}
+              currentYear={year}
               linkFunc={(year: string) => {
                 if (year === "all") {
                   return "/stats/";
@@ -69,7 +72,6 @@ export function AllTimeStats({
           <MostWatchedMovies titles={stats.mostWatchedTitles} />
           <ByReleaseYearStats decades={stats.decadeDistribution} />
           <TopMedia topMedia={stats.mediaDistribution} />
-          <GradeDistributionStats distributions={stats.gradeDistribution} />
           <MostWatchedDirectors directors={stats.mostWatchedDirectors} />
           <MostWatchedPerformers performers={stats.mostWatchedPerformers} />
           <MostWatchedWriters writers={stats.mostWatchedWriters} />
@@ -80,13 +82,10 @@ export function AllTimeStats({
 }
 
 export const query = graphql`
-  fragment AllTimeStats on AllTimeStatsJson {
-    ...AllTimeStatsCallouts
+  fragment YearStats on YearStatsJson {
+    ...YearStatsCallouts
     decadeDistribution {
       ...DecadeDistribution
-    }
-    gradeDistribution {
-      ...GradeDistribution
     }
     mediaDistribution {
       ...MediaDistribution

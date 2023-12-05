@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
-import StatsForYearTemplate, { Head } from "./statsForYear";
-import { data } from "./statsForYear.fixtures";
+import StatsForYearTemplate, { Head } from "./yearStats";
+import { data } from "./yearStats.fixtures";
 
 describe("/stats/{year}", () => {
   it("renders for legacy year", () => {

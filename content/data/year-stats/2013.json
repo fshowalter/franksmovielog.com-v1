@@ -27,14 +27,6 @@
   ],
   "decadeDistribution": [
     {
-      "name": "2010s",
-      "count": 40
-    },
-    {
-      "name": "1980s",
-      "count": 13
-    },
-    {
       "name": "1940s",
       "count": 3
     },
@@ -47,16 +39,24 @@
       "count": 5
     },
     {
-      "name": "2000s",
-      "count": 24
-    },
-    {
       "name": "1970s",
       "count": 4
     },
     {
+      "name": "1980s",
+      "count": 13
+    },
+    {
       "name": "1990s",
       "count": 7
+    },
+    {
+      "name": "2000s",
+      "count": 24
+    },
+    {
+      "name": "2010s",
+      "count": 40
     }
   ],
   "mostWatchedTitles": [],

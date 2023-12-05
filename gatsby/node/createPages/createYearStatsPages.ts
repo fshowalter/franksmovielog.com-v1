@@ -9,7 +9,7 @@ interface QueryResult {
   };
 }
 
-export async function createYearStatPages({
+export async function createYearStatsPages({
   graphql,
   reporter,
   actions,
@@ -37,7 +37,7 @@ export async function createYearStatPages({
   years.forEach((year) => {
     createPage({
       path: `/stats/${year}/`,
-      component: path.resolve("./src/templates/statsForYear.tsx"),
+      component: path.resolve("./src/templates/yearStats.tsx"),
       context: {
         year: year,
       },

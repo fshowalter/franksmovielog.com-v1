@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder, Stats } from "../components";
+import { HeadBuilder, YearStats } from "../components";
 
 export function Head({
   pageContext,
@@ -27,22 +27,10 @@ export default function StatsForYearTemplate({
   data: Queries.StatsForYearTemplateQuery;
 }): JSX.Element {
   return (
-    <Stats
-      title={`${pageContext.year} Stats`}
-      tagline={
-        [...data.viewing.years].reverse()[1] === pageContext.year
-          ? "A year in progress..."
-          : "A Year in Review"
-      }
+    <YearStats
       year={pageContext.year}
-      viewingCallouts={data.statsForYear.viewingStats}
-      viewingsCountsByDecade={data.statsForYear.decadeStats}
-      mostWatchedMovies={data.statsForYear.movies}
-      mostWatchedDirectors={data.statsForYear.directors}
-      mostWatchedPerformers={data.statsForYear.performers}
-      mostWatchedWriters={data.statsForYear.writers}
-      mostWatchedMedia={data.statsForYear.mostWatchedMedia}
-      allYears={data.viewing.years}
+      stats={data.yearStats}
+      statYears={data.stat.years}
     />
   );
 }
