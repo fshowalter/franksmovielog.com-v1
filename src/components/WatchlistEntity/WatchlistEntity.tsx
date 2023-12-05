@@ -8,11 +8,13 @@ import { initState, reducer } from "./WatchlistEntity.reducer";
 
 export function WatchlistEntity({
   entity,
+  entityType,
   distinctReleaseYears,
   tagline,
   breadcrumb,
 }: {
   entity: Queries.WatchlistEntityFragment;
+  entityType: string;
   distinctReleaseYears: readonly string[];
   tagline: string;
   breadcrumb: string;
@@ -20,7 +22,7 @@ export function WatchlistEntity({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...entity.watchlistMovies],
+      items: [...entity.titles],
       sort: "release-date-asc",
     },
     initState,
@@ -28,7 +30,12 @@ export function WatchlistEntity({
   return (
     <ListWithFiltersLayout
       header={
-        <Header entity={entity} tagline={tagline} breadcrumb={breadcrumb} />
+        <Header
+          entity={entity}
+          entityType={entityType}
+          tagline={tagline}
+          breadcrumb={breadcrumb}
+        />
       }
       filters={
         <Filters

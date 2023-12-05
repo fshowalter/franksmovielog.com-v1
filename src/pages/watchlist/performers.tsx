@@ -19,6 +19,7 @@ export default function WatchlistPerformersPage({
 }): JSX.Element {
   return (
     <WatchlistEntities
+      entityType="performer"
       title="Performers"
       tagline="Talk low, talk slow, and don't talk too much."
       entities={data.entity.nodes}

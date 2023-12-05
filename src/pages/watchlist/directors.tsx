@@ -19,6 +19,7 @@ export default function WatchlistDirectorsPage({
 }): JSX.Element {
   return (
     <WatchlistEntities
+      entityType="director"
       title="Directors"
       tagline="Drama is life with the dull bits cut out."
       entities={data.entity.nodes}

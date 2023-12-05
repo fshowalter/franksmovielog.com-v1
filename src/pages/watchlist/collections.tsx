@@ -19,6 +19,7 @@ export default function WatchlistCollectionsPage({
 }): JSX.Element {
   return (
     <WatchlistEntities
+      entityType="collection"
       title="Collections"
       tagline="Round up the usual suspects."
       entities={data.entity.nodes}

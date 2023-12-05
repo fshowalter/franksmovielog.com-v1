@@ -19,7 +19,7 @@ function DirectorName({
 export function MostWatchedDirectors({
   directors,
 }: {
-  directors: Queries.MostWatchedDirectorsFragment | null;
+  directors: Queries.MostWatchedDirectorsFragment[] | null;
 }): JSX.Element | null {
   return (
     <MostWatchedPeople
@@ -32,6 +32,6 @@ export function MostWatchedDirectors({
 
 export const query = graphql`
   fragment MostWatchedDirectors on MostWatchedPerson {
-    ...MostWatchedPeople
+    ...MostWatchedPerson
   }
 `;

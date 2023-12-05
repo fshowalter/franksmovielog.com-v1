@@ -17,7 +17,7 @@ function WriterName({
 export function MostWatchedWriters({
   writers,
 }: {
-  writers: Queries.MostWatchedWritersFragment | null;
+  writers: Queries.MostWatchedWritersFragment[] | null;
 }): JSX.Element | null {
   return (
     <MostWatchedPeople
@@ -30,6 +30,6 @@ export function MostWatchedWriters({
 
 export const query = graphql`
   fragment MostWatchedWriters on MostWatchedPerson {
-    ...MostWatchedPeople
+    ...MostWatchedPerson
   }
 `;

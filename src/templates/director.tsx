@@ -18,12 +18,15 @@ export function Head({
 
 export default function DirectorTemplate({
   data,
+  pageContext,
 }: {
   data: Queries.DirectorTemplateQuery;
 }): JSX.Element {
+  console.log(pageContext);
   return (
     <WatchlistEntity
       entity={data.director}
+      entityType="director"
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Director of"
       breadcrumb="Directors"

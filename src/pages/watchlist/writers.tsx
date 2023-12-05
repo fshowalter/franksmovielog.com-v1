@@ -19,6 +19,7 @@ export default function WatchlistWritersPage({
 }): JSX.Element {
   return (
     <WatchlistEntities
+      entityType="writer"
       title="Writers"
       tagline="It's not a lie. It's a gift for fiction."
       entities={data.entity.nodes}
