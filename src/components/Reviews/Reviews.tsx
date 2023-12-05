@@ -51,11 +51,11 @@ export function Reviews({
 }
 
 export const query = graphql`
-  fragment ReviewsItem on ReviewedMoviesJson {
+  fragment ReviewsItem on ReviewedTitlesJson {
     year
     imdbId
     reviewDate(formatString: "YYYY-MM-DD")
-    releaseDate
+    yearAndImdbId
     reviewYear
     reviewMonth: reviewDate(formatString: "MMMM")
     title

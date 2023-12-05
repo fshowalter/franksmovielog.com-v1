@@ -29,7 +29,7 @@ export default function ReviewsPage({
 
 export const pageQuery = graphql`
   query ReviewsPage {
-    review: allReviewedMoviesJson(sort: { sortTitle: ASC }) {
+    review: allReviewedTitlesJson(sort: { sortTitle: ASC }) {
       nodes {
         ...ReviewsItem
       }

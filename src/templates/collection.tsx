@@ -33,12 +33,12 @@ export default function CollectionTemplate({
 
 export const pageQuery = graphql`
   query CollectionTemplate($id: String!) {
-    distinct: allWatchlistEntitiesJson(
+    distinct: allWatchlistCollectionsJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
-      releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
+      releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    collection: watchlistEntity(id: $id) {
+    collection: watchlistCollectionJson(id: $id) {
       ...WatchlistEntity
     }
   }

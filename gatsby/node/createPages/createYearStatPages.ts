@@ -2,14 +2,14 @@ import type { CreatePagesArgs } from "gatsby";
 import path from "path";
 
 interface QueryResult {
-  viewing: {
+  yearStats: {
     nodes: {
       year: string;
     }[];
   };
 }
 
-export default async function createStatPages({
+export async function createYearStatPages({
   graphql,
   reporter,
   actions,
@@ -18,9 +18,9 @@ export default async function createStatPages({
 
   const queryResult = await graphql<QueryResult>(`
     {
-      viewing: allViewingStatsJson(filter: { viewingYear: { ne: "all" } }) {
+      yearStats: allYearStatsJson {
         nodes {
-          year: viewingYear
+          year
         }
       }
     }
@@ -33,7 +33,7 @@ export default async function createStatPages({
     return;
   }
 
-  const years = queryResult.data.viewing.nodes.map((node) => node.year);
+  const years = queryResult.data.yearStats.nodes.map((node) => node.year);
   years.forEach((year) => {
     createPage({
       path: `/stats/${year}/`,

@@ -51,7 +51,7 @@ export function WatchlistEntity({
 }
 
 export const query = graphql`
-  fragment WatchlistEntityItem on WatchlistMoviesJson {
+  fragment WatchlistEntityTitle on WatchlistEntityTitle {
     imdbId
     title
     year
@@ -65,9 +65,8 @@ export const query = graphql`
     }
   }
 
-  fragment WatchlistEntity on WatchlistEntitiesJson {
+  fragment WatchlistEntity on WatchlistEntity {
     name
-    entityType
     reviewCount
     avatar {
       childImageSharp {
@@ -81,8 +80,8 @@ export const query = graphql`
         )
       }
     }
-    watchlistMovies {
-      ...WatchlistEntityItem
+    titles {
+      ...WatchlistEntityTitle
     }
   }
 `;

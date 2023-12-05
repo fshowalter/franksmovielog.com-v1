@@ -58,8 +58,8 @@ export function GradeDistributionStats({
 }
 
 export const query = graphql`
-  fragment GradeDistribution on GradeDistributionsJson {
-    grade
-    reviewCount
+  fragment GradeDistribution on AllTimeStatsGradeDistribution {
+    name
+    count
   }
 `;

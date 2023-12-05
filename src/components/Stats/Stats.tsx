@@ -2,15 +2,15 @@ import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
-import { ByReleaseYearStats } from "./ByReleaseYearStats";
+import { ByReleaseYearStats } from "./DecadeDistributionStats";
 import { GradeDistributionStats } from "./GradeDistributionStats";
+import { TopMedia } from "./MediaDistributionStats";
 import { MostWatchedDirectors } from "./MostWatchedDirectors";
 import { MostWatchedMovies } from "./MostWatchedMovies";
 import { MostWatchedPerformers } from "./MostWatchedPerformers";
 import { MostWatchedWriters } from "./MostWatchedWriters";
 import { StatsCallouts } from "./StatsCallouts";
 import { StatsNavigation } from "./StatsNavigation";
-import { TopMedia } from "./TopMedia";
 
 export function Stats({
   title,

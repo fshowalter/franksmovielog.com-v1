@@ -1,21 +1,19 @@
 import { SchemaNames } from "../createSchemaCustomization/schemaNames";
 import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
-export const watchlistPerformerQuery = {
+export const allTimeStatsQuery = {
   Query: {
-    watchlistPerformer: {
-      type: `${SchemaNames.WatchlistPerformersJson}!`,
-      args: {
-        id: "String!",
-      },
+    allTimeStats: {
+      type: `${SchemaNames.AllTimeStatsJson}!`,
+      args: {},
       resolve: (
         _source: unknown,
-        args: {
-          id: string;
-        },
+        _args: unknown,
         context: GatsbyNodeContext,
       ) => {
-        return context.nodeModel.getNodeById({ id: args.id });
+        return context.nodeModel.findOne({
+          type: SchemaNames.AllTimeStatsJson,
+        });
       },
     },
   },

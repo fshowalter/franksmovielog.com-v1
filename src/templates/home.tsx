@@ -36,7 +36,7 @@ export default function HomeTemplate({
 }): JSX.Element {
   return (
     <Home
-      items={data.items}
+      items={data.review.nodes}
       limit={pageContext.limit}
       skip={pageContext.skip}
       numberOfItems={pageContext.numberOfItems}
@@ -47,12 +47,14 @@ export default function HomeTemplate({
 
 export const pageQuery = graphql`
   query HomeTemplate($skip: Int!, $limit: Int!) {
-    items: viewingsWithReviewOrNote(
+    review: allReviewedTitlesJson(
       sort: { sequence: DESC }
       limit: $limit
       skip: $skip
     ) {
-      ...HomePageItem
+      nodes {
+        ...HomePageItem
+      }
     }
   }
 `;

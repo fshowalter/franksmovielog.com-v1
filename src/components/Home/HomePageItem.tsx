@@ -110,12 +110,12 @@ export function HomePageItem({
 }
 
 export const query = graphql`
-  fragment HomePageItem on ViewingWithReview {
+  fragment HomePageItem on ReviewedTitlesJson {
     imdbId
     sequence
     title
     year
-    date: viewingDate(formatString: "DD MMM YYYY")
+    date: reviewDate(formatString: "DD MMM YYYY")
     slug
     grade
     principalCastNames

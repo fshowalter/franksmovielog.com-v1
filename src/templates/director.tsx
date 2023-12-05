@@ -36,7 +36,7 @@ export const pageQuery = graphql`
     distinct: allWatchlistEntitiesJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
-      releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
+      releaseYears: distinct(field: { titles: { year: SELECT } })
     }
     director: watchlistEntity(id: $id) {
       ...WatchlistEntity

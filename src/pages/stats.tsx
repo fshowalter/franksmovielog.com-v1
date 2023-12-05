@@ -40,39 +40,35 @@ export default function AllTimeStatsPage({
 }
 
 export const pageQuery = graphql`
-  query AllTimeStatsPage {
+  query AllTimeStatsJson {
     allTimeStats {
-      viewingStats {
-        ...ViewingCallouts
+      ...AllTimeViewingCallouts
+      ...ReviewCallouts
+      decadeDistribution {
+        ...DecadeDistribution
       }
-      reviewStats {
-        ...ReviewCallouts
-      }
-      decadeStats {
-        ...ByDecade
-      }
-      gradeDistributions {
+      gradeDistribution {
         ...GradeDistribution
       }
-      mostWatchedMedia {
-        ...TopMedia
+      medidDistribution {
+        ...MediaDistribution
       }
-      movies {
-        ...MostWatchedMovies
+      mostWatchedTitles {
+        ...MostWatchedMovie
       }
-      directors {
-        ...MostWatchedDirectors
+      mostWatchedDirectors {
+        ...MostWatchedPerson
       }
-      performers {
-        ...MostWatchedPerformers
+      mostWatchedWriters {
+        ...MostWatchedPerson
       }
-      writers {
-        ...MostWatchedWriters
+      mostWatchedPerformers {
+        ...MostWatchedPerson
       }
     }
 
-    viewing: allViewingStatsJson {
-      years: distinct(field: { viewingYear: SELECT })
+    viewing: allYearStatsJson {
+      years: distinct(field: { year: SELECT })
     }
   }
 `;

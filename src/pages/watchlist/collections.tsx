@@ -28,10 +28,7 @@ export default function WatchlistCollectionsPage({
 
 export const pageQuery = graphql`
   query WatchlistCollectionsPage {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: collection } }
-    ) {
+    entity: allWatchlistCollectionsJson(sort: { name: ASC }) {
       nodes {
         ...WatchlistEntitiesItem
       }

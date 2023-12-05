@@ -54,7 +54,7 @@ export function StillListMovie({ movie, ...rest }: IStillListMovieProps) {
 }
 
 export const query = graphql`
-  fragment StillListMovie on ReviewedMoviesJson {
+  fragment StillListMovie on ReviewedTitlesJson {
     imdbId
     title
     grade

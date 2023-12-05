@@ -28,10 +28,7 @@ export default function WatchlistWritersPage({
 
 export const pageQuery = graphql`
   query WatchlistWritersPage {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: writer } }
-    ) {
+    entity: allWatchlistWritersJson(sort: { name: ASC }) {
       nodes {
         ...WatchlistEntitiesItem
       }

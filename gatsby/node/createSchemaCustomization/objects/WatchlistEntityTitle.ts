@@ -1,4 +1,5 @@
 import { SchemaNames } from "../schemaNames";
+import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 
 export const WatchlistEntityTitle = {
   name: SchemaNames.WatchlistEntityTitle,
@@ -11,5 +12,6 @@ export const WatchlistEntityTitle = {
     grade: "String",
     gradeValue: "Int",
     yearAndImdbId: "String!",
+    poster: posterFieldResolver,
   },
 };

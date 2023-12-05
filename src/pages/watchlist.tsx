@@ -31,9 +31,9 @@ export default function WatchlistPage({
 
 export const pageQuery = graphql`
   query WatchlistPage {
-    watchlist: allWatchlistMoviesJson(sort: { releaseDate: ASC }) {
+    watchlist: allWatchlistTitlesJson(sort: { yearAndImdbId: ASC }) {
       nodes {
-        ...WatchlistItem
+        ...WatchlistTitle
       }
       releaseYears: distinct(field: { year: SELECT })
       directors: distinct(field: { directorNames: SELECT })

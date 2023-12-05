@@ -58,11 +58,11 @@ export function Watchlist({
 }
 
 export const query = graphql`
-  fragment WatchlistItem on WatchlistMoviesJson {
+  fragment WatchlistTitle on WatchlistTitlesJson {
     imdbId
     title
     year
-    releaseDate
+    yearAndImdbId
     sortTitle
     slug
     grade

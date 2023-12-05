@@ -28,10 +28,7 @@ export default function WatchlistDirectorsPage({
 
 export const pageQuery = graphql`
   query WatchlistDirectorsPage {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: director } }
-    ) {
+    entity: allWatchlistDirectorsJson(sort: { name: ASC }) {
       nodes {
         ...WatchlistEntitiesItem
       }

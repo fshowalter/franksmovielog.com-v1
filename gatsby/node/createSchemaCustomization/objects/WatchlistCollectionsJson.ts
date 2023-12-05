@@ -3,7 +3,7 @@ import { avatarFieldResolver } from "./fieldResolvers/avatarFieldResolver";
 
 export const WatchlistCollectionsJson = {
   name: SchemaNames.WatchlistCollectionsJson,
-  interfaces: ["Node"],
+  interfaces: ["Node", SchemaNames.WatchlistEntity],
   fields: {
     name: "String!",
     titleCount: "Int!",

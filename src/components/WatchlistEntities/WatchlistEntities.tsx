@@ -40,10 +40,9 @@ export function WatchlistEntities({
 }
 
 export const query = graphql`
-  fragment WatchlistEntitiesItem on WatchlistEntitiesJson {
+  fragment WatchlistEntitiesItem on WatchlistEntity {
     name
     slug
-    entityType
     titleCount
     reviewCount
     avatar {

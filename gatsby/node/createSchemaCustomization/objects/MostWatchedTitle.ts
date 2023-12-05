@@ -1,4 +1,5 @@
 import { SchemaNames } from "../schemaNames";
+import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 
 export const MostWatchedTitle = {
   name: SchemaNames.MostWatchedTitle,
@@ -8,5 +9,6 @@ export const MostWatchedTitle = {
     year: "String!",
     slug: "String",
     count: "Int!",
+    poster: posterFieldResolver,
   },
 };

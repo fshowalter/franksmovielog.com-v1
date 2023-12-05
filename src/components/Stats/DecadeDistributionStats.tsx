@@ -9,16 +9,16 @@ import {
   TableRow,
 } from "../StatsTable";
 
-export function TopMedia({
-  topMedia,
+export function ByReleaseYearStats({
+  decades,
 }: {
-  topMedia: Queries.TopMediaFragment | null;
+  decades: Queries.ByDecadeFragment | null;
 }): JSX.Element | null {
-  if (!topMedia) {
+  if (!decades) {
     return null;
   }
 
-  const { stats } = topMedia;
+  const { stats } = decades;
 
   const maxBar = stats.reduce((acc, stat) => {
     const value = stat.viewingCount;
@@ -27,11 +27,11 @@ export function TopMedia({
 
   return (
     <section>
-      <StatHeading>Top Media</StatHeading>
+      <StatHeading>By Release Year</StatHeading>
       <Table>
         <TableHead>
           <tr>
-            <TableHeaderCell align="left">Name</TableHeaderCell>
+            <TableHeaderCell align="left">Decade</TableHeaderCell>
             <th>&nbsp;</th>
             <TableHeaderCell align="right">Viewings</TableHeaderCell>
           </tr>
@@ -39,9 +39,9 @@ export function TopMedia({
         <tbody>
           {stats.map((stat) => {
             return (
-              <TableRow key={stat.name}>
-                <TableDataCell align="left">{stat.name}</TableDataCell>
-                <TableDataCell hideOnSmallScreens align="fill">
+              <TableRow key={stat.decade}>
+                <TableDataCell align="left">{stat.decade}</TableDataCell>
+                <TableDataCell align="fill">
                   <BarGradient value={stat.viewingCount} maxValue={maxBar} />
                 </TableDataCell>
                 <TableDataCell align="right">{stat.viewingCount}</TableDataCell>
@@ -55,10 +55,8 @@ export function TopMedia({
 }
 
 export const query = graphql`
-  fragment TopMedia on TopMediaJson {
-    stats {
-      name
-      viewingCount: viewingCount
-    }
+  fragment DecadeDistribution on StatsDistribution {
+    name
+    count
   }
 `;

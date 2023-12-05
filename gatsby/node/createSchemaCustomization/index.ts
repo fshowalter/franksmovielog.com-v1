@@ -1,5 +1,6 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
 import { linkReviewedMoviesExtension } from "./extensions/linkReviewedMovies";
+import { WatchlistEntity } from "./interfaces/WatchlistEntity";
 import {
   AllTimeStatsGradeDistribution,
   AllTimeStatsJson,
@@ -53,6 +54,7 @@ export function createSchemaCustomization({
     schema.buildObjectType(ReviewedTitleMore),
     schema.buildObjectType(ReviewedTitlesJson),
     schema.buildObjectType(WatchlistEntityTitle),
+    schema.buildInterfaceType(WatchlistEntity),
     schema.buildObjectType(WatchlistCollectionsJson),
     schema.buildObjectType(WatchlistDirectorsJson),
     schema.buildObjectType(WatchlistPerformersJson),

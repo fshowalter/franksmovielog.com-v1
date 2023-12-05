@@ -64,14 +64,19 @@ export function StatsCallouts({
 }
 
 export const query = graphql`
-  fragment ViewingCallouts on ViewingStatsJson {
-    movieCount
-    newMovieCount
+  fragment AllTimeViewingCallouts on AllTimeStatsJson {
+    titleCount
     viewingCount
   }
 
-  fragment ReviewCallouts on ReviewStatsJson {
-    reviewsCreated
-    watchlistTitlesReviewed
+  fragment YearViewingCallouts on YearStatsJson {
+    titleCount
+    newTitleCount
+    viewingCount
+  }
+
+  fragment ReviewCallouts on AllTimeStatsJson {
+    reviewCount
+    watchlistTitlesReviewedCount
   }
 `;

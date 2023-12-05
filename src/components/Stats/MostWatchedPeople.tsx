@@ -152,33 +152,25 @@ export function MostWatchedPersonViewingListItem({
 }
 
 export const query = graphql`
-  fragment MostWatchedPersonViewing on ViewingsJson {
+  fragment MostWatchedPersonViewing on MostWatchedPersonViewing {
     sequence
-    viewingDate(formatString: "ddd MMM D, YYYY")
+    date(formatString: "ddd MMM D, YYYY")
     venue
     medium
     title
     year
-    reviewedMovie {
-      slug
-    }
+    slug
     poster {
       ...ListItemPoster
     }
   }
 
   fragment MostWatchedPerson on MostWatchedPerson {
-    fullName
+    name
     slug
-    viewingCount
+    count
     viewings {
       ...MostWatchedPersonViewing
-    }
-  }
-
-  fragment MostWatchedPeople on MostWatchedPeople {
-    mostWatched {
-      ...MostWatchedPerson
     }
   }
 `;

@@ -28,10 +28,7 @@ export default function WatchlistPerformersPage({
 
 export const pageQuery = graphql`
   query WatchlistPerformersPage {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: performer } }
-    ) {
+    entity: allWatchlistPerformersJson(sort: { name: ASC }) {
       nodes {
         ...WatchlistEntitiesItem
       }

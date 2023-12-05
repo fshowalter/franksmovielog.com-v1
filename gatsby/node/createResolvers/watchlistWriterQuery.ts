@@ -3,7 +3,7 @@ import type { GatsbyNodeContext } from "../createSchemaCustomization/type-defini
 
 export const watchlistWriterQuery = {
   Query: {
-    watchlistDirector: {
+    watchlistWriter: {
       type: `${SchemaNames.WatchlistWritersJson}!`,
       args: {
         id: "String!",

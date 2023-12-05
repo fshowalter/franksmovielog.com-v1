@@ -3,7 +3,7 @@ import path from "path";
 
 const query = `#graphql
 {
-  reviews: allReviewedMoviesJson {
+  reviewedTitles: allReviewedTitlesJson {
     nodes {
       id
       slug
@@ -13,7 +13,7 @@ const query = `#graphql
 `;
 
 interface QueryResult {
-  reviews: {
+  reviewedTitles: {
     nodes: {
       id: string;
       slug: string;
@@ -38,7 +38,7 @@ export async function createReviewPages({
   }
 
   // Review pages
-  queryResult.data.reviews.nodes.forEach((node) => {
+  queryResult.data.reviewedTitles.nodes.forEach((node) => {
     createPage({
       path: `/reviews/${node.slug}/`,
       component: path.resolve("./src/templates/review.tsx"),

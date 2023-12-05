@@ -129,13 +129,11 @@ function Poster({ movie, ...rest }: IPosterProps) {
 }
 
 export const query = graphql`
-  fragment MostWatchedMovie on MostWatchedMovie {
+  fragment MostWatchedMovie on MostWatchedTitle {
     imdbId
     title
     year
-    reviewedMovie {
-      slug
-    }
+    slug
     poster {
       childImageSharp {
         gatsbyImageData(
@@ -147,12 +145,6 @@ export const query = graphql`
         )
       }
     }
-    viewingCount
-  }
-
-  fragment MostWatchedMovies on MostWatchedMoviesJson {
-    mostWatched {
-      ...MostWatchedMovie
-    }
+    count
   }
 `;
