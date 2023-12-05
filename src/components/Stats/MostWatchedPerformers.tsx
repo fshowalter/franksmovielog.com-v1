@@ -33,7 +33,7 @@ export function MostWatchedPerformers({
 }
 
 export const query = graphql`
-  fragment MostWatchedPerformers on MostWatchedPerformersJson {
+  fragment MostWatchedPerformers on MostWatchedPerson {
     ...MostWatchedPeople
   }
 `;

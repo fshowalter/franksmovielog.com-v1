@@ -38,11 +38,10 @@ export function RelatedMoviesForWatchlistEntities({
 }
 
 export const query = graphql`
-  fragment RelatedMoviesForWatchlistEntity on ReviewedMovieWatchlistEntity {
+  fragment RelatedMoviesForWatchlistEntity on ReviewedTitleMoreEntity {
     name
     slug
-    entityType
-    browseMore(sourceReviewId: $id) {
+    titles {
       ...StillListMovie
     }
   }

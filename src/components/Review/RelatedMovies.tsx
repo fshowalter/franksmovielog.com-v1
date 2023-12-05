@@ -56,22 +56,22 @@ function MoreReviews({
 }
 
 export const query = graphql`
-  fragment RelatedMovies on ReviewedMoviesJson {
-    browseMore {
-      ...StillListMovie
-    }
-    watchlist {
-      performers {
+  fragment RelatedMovies on ReviewedTitlesJson {
+    more {
+      withPerformer {
         ...RelatedMoviesForWatchlistEntity
       }
-      directors {
+      directedBy {
         ...RelatedMoviesForWatchlistEntity
       }
-      writers {
+      writtenBy {
         ...RelatedMoviesForWatchlistEntity
       }
-      collections {
+      inCollection {
         ...RelatedMoviesForWatchlistEntity
+      }
+      reviews {
+        ...StillListMovie
       }
     }
   }

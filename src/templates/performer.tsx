@@ -33,12 +33,12 @@ export default function PerformerTemplate({
 
 export const pageQuery = graphql`
   query PerformerTemplate($id: String!) {
-    distinct: allWatchlistEntitiesJson(
+    distinct: allWatchlistPerformersJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
-      releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
+      releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    performer: watchlistEntity(id: $id) {
+    performer: watchlistPerformer(id: $id) {
       ...WatchlistEntity
     }
   }

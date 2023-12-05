@@ -74,10 +74,9 @@ function ListItemsForEntities({
 }
 
 export const query = graphql`
-  fragment WatchlistLinkEntity on ReviewedMovieWatchlistEntity {
+  fragment WatchlistLinkEntity on ReviewedTitleMoreEntity {
     name
     slug
-    entityType
     avatar {
       childImageSharp {
         gatsbyImageData(
@@ -90,22 +89,19 @@ export const query = graphql`
         )
       }
     }
-    browseMore(sourceReviewId: $id) {
-      slug
-    }
   }
 
-  fragment WatchlistLinks on ReviewedMovieWatchlistEntities {
-    performers {
+  fragment WatchlistLinks on ReviewedTitleMore {
+    withPerformer {
       ...WatchlistLinkEntity
     }
-    directors {
+    directedBy {
       ...WatchlistLinkEntity
     }
-    writers {
+    writtenBy {
       ...WatchlistLinkEntity
     }
-    collections {
+    inCollection {
       ...WatchlistLinkEntity
     }
   }

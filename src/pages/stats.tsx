@@ -40,7 +40,7 @@ export default function AllTimeStatsPage({
 }
 
 export const pageQuery = graphql`
-  query AllTimeStatsJson {
+  query AllTimeStats {
     allTimeStats {
       ...AllTimeViewingCallouts
       ...ReviewCallouts
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
       gradeDistribution {
         ...GradeDistribution
       }
-      medidDistribution {
+      mediaDistribution {
         ...MediaDistribution
       }
       mostWatchedTitles {
@@ -67,7 +67,7 @@ export const pageQuery = graphql`
       }
     }
 
-    viewing: allYearStatsJson {
+    stat: allYearStatsJson {
       years: distinct(field: { year: SELECT })
     }
   }

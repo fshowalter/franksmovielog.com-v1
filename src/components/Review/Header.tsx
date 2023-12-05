@@ -62,7 +62,7 @@ function Meta({ review }: { review: Queries.ReviewHeaderFragment }) {
 }
 
 export const query = graphql`
-  fragment ReviewHeader on ReviewedMoviesJson {
+  fragment ReviewHeader on ReviewedTitlesJson {
     title
     year
     originalTitle

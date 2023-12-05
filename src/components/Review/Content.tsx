@@ -32,11 +32,13 @@ export function Content({ review, ...rest }: IContentProps) {
 }
 
 export const query = graphql`
-  fragment ReviewContent on ReviewedMoviesJson {
+  fragment ReviewContent on ReviewedTitlesJson {
     grade
     review {
       linkedHtml
-      date(formatString: "ddd MMM DD, YYYY")
+      frontmatter {
+        date(formatString: "ddd MMM DD, YYYY")
+      }
     }
   }
 `;

@@ -31,7 +31,7 @@ export function MostWatchedDirectors({
 }
 
 export const query = graphql`
-  fragment MostWatchedDirectors on MostWatchedDirectorsJson {
+  fragment MostWatchedDirectors on MostWatchedPerson {
     ...MostWatchedPeople
   }
 `;

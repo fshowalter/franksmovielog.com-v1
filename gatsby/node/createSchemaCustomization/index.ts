@@ -1,5 +1,6 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
 import { linkReviewedMoviesExtension } from "./extensions/linkReviewedMovies";
+import { Title } from "./interfaces/Title";
 import { WatchlistEntity } from "./interfaces/WatchlistEntity";
 import {
   AllTimeStatsGradeDistribution,
@@ -26,6 +27,10 @@ import { WatchlistCollectionsJson } from "./objects/WatchlistCollectionsJson";
 import { WatchlistDirectorsJson } from "./objects/WatchlistDirectorsJson";
 import { WatchlistEntityTitle } from "./objects/WatchlistEntityTitle";
 import { WatchlistPerformersJson } from "./objects/WatchlistPerformersJson";
+import {
+  WatchlistProgressDetail,
+  WatchlistProgressJson,
+} from "./objects/WatchlistProgressJson";
 import { WatchlistTitlesJson } from "./objects/WatchlistTitlesJson";
 import { WatchlistWritersJson } from "./objects/WatchlistWritersJson";
 import { YearStatsJson } from "./objects/YearStatsJson";
@@ -39,6 +44,7 @@ export function createSchemaCustomization({
   createFieldExtension(linkReviewedMoviesExtension);
 
   const typeDefs = [
+    schema.buildInterfaceType(Title),
     schema.buildObjectType(StatsDistribution),
     schema.buildObjectType(MostWatchedPersonViewing),
     schema.buildObjectType(MostWatchedPerson),
@@ -62,6 +68,8 @@ export function createSchemaCustomization({
     schema.buildObjectType(UnderseenGemsJson),
     schema.buildObjectType(OverratedDisappointmentsJson),
     schema.buildObjectType(WatchlistTitlesJson),
+    schema.buildObjectType(WatchlistProgressDetail),
+    schema.buildObjectType(WatchlistProgressJson),
   ];
 
   createTypes(typeDefs);

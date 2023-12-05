@@ -11,12 +11,12 @@ import {
   TableRow,
 } from "../StatsTable";
 
-export function WatchlistProgressForEntities({
+export function WatchlistProgressDetail({
   label,
   entities,
 }: {
   label: string;
-  entities: readonly Queries.WatchlistProgressForEntitiesItemFragment[];
+  entities: readonly Queries.WatchlistProgressDetailFragment[];
 }) {
   return (
     <section>
@@ -64,7 +64,7 @@ export function WatchlistProgressForEntities({
 function EntityName({
   entity,
 }: {
-  entity: Queries.WatchlistProgressForEntitiesItemFragment;
+  entity: Queries.WatchlistProgressDetailFragment;
 }) {
   if (entity.slug)
     return (
@@ -81,11 +81,10 @@ function EntityName({
 }
 
 export const query = graphql`
-  fragment WatchlistProgressForEntitiesItem on WatchlistEntitiesJson {
+  fragment WatchlistProgressDetail on WatchlistProgressDetail {
     name
     reviewCount
     titleCount
     slug
-    entityType
   }
 `;

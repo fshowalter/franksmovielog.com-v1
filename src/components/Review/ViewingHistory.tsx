@@ -35,7 +35,7 @@ export function ViewingHistory({ review, ...rest }: IIViewingHistoryProps) {
 }
 
 export const query = graphql`
-  fragment ViewingHistory on ReviewedMoviesJson {
+  fragment ViewingHistory on ReviewedTitlesJson {
     viewings {
       ...ViewingHistoryEntry
     }

@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
@@ -104,3 +105,53 @@ export function Stats({
     </Layout>
   );
 }
+
+export const query = graphql`
+  fragment AllTimeStats on AllTimeStatsJson {
+    ...AllTimeViewingCallouts
+    ...ReviewCallouts
+    decadeDistribution {
+      ...DecadeDistribution
+    }
+    gradeDistribution {
+      ...GradeDistribution
+    }
+    mediaDistribution {
+      ...MediaDistribution
+    }
+    mostWatchedTitles {
+      ...MostWatchedMovie
+    }
+    mostWatchedDirectors {
+      ...MostWatchedPerson
+    }
+    mostWatchedWriters {
+      ...MostWatchedPerson
+    }
+    mostWatchedPerformers {
+      ...MostWatchedPerson
+    }
+  }
+
+  fragment YearStats on YearStatsJson {
+    ...YearViewingCallouts
+    decadeDistribution {
+      ...DecadeDistribution
+    }
+    mediaDistribution {
+      ...MediaDistribution
+    }
+    mostWatchedTitles {
+      ...MostWatchedMovie
+    }
+    mostWatchedDirectors {
+      ...MostWatchedPerson
+    }
+    mostWatchedWriters {
+      ...MostWatchedPerson
+    }
+    mostWatchedPerformers {
+      ...MostWatchedPerson
+    }
+  }
+`;

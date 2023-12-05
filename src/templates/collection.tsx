@@ -38,7 +38,7 @@ export const pageQuery = graphql`
     ) {
       releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    collection: watchlistCollectionJson(id: $id) {
+    collection: watchlistCollection(id: $id) {
       ...WatchlistEntity
     }
   }

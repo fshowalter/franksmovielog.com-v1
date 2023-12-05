@@ -108,7 +108,7 @@ function Credit({ title, value, ...rest }: ICreditProps) {
 }
 
 export const query = graphql`
-  fragment Credits on ReviewedMoviesJson {
+  fragment Credits on ReviewedTitlesJson {
     title
     year
     originalTitle
@@ -127,7 +127,7 @@ export const query = graphql`
         )
       }
     }
-    watchlist {
+    more {
       ...WatchlistLinks
     }
   }

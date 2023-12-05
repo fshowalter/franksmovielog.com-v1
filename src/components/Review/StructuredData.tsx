@@ -47,7 +47,7 @@ export function StructuredData({
 }
 
 export const query = graphql`
-  fragment StructuredData on ReviewedMoviesJson {
+  fragment StructuredData on ReviewedTitlesJson {
     imdbId
     title
     year

@@ -127,8 +127,8 @@ export function ViewingHistoryEntry({ viewing }: IIViewingHistoryItemProps) {
 }
 
 export const query = graphql`
-  fragment ViewingHistoryEntry on ViewingsJson {
-    date: viewingDate(formatString: "ddd MMM DD, YYYY")
+  fragment ViewingHistoryEntry on ReviewedTitleViewing {
+    date(formatString: "ddd MMM DD, YYYY")
     venue
     medium
     mediumNotes

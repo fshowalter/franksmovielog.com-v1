@@ -59,7 +59,7 @@ export const query = graphql`
     gradeValue
     slug
     sortTitle
-    releaseDate
+    yearAndImdbId
     poster {
       ...ListItemPoster
     }

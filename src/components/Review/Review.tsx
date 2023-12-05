@@ -59,10 +59,9 @@ export function Review({
 }
 
 export const query = graphql`
-  fragment Review on ReviewedMoviesJson {
+  fragment Review on ReviewedTitlesJson {
     title
     year
-    gradeStars
     review {
       excerpt
     }

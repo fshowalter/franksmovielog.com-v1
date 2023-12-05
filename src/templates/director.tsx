@@ -33,12 +33,12 @@ export default function DirectorTemplate({
 
 export const pageQuery = graphql`
   query DirectorTemplate($id: String!) {
-    distinct: allWatchlistEntitiesJson(
+    distinct: allWatchlistDirectorsJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
       releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    director: watchlistEntity(id: $id) {
+    director: watchlistDirector(id: $id) {
       ...WatchlistEntity
     }
   }

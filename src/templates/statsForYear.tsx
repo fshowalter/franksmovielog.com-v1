@@ -53,32 +53,12 @@ interface IPageContext {
 
 export const pageQuery = graphql`
   query StatsForYearTemplate($year: String!) {
-    statsForYear(year: $year) {
-      viewingStats {
-        ...ViewingCallouts
-      }
-      decadeStats {
-        ...ByDecade
-      }
-      mostWatchedMedia {
-        ...TopMedia
-      }
-      movies {
-        ...MostWatchedMovies
-      }
-      directors {
-        ...MostWatchedDirectors
-      }
-      performers {
-        ...MostWatchedPerformers
-      }
-      writers {
-        ...MostWatchedWriters
-      }
+    yearStats(year: $year) {
+      ...YearStats
     }
 
-    viewing: allViewingStatsJson {
-      years: distinct(field: { viewingYear: SELECT })
+    stat: allYearStatsJson {
+      years: distinct(field: { year: SELECT })
     }
   }
 `;

@@ -1,9 +1,10 @@
+import { graphql } from "gatsby";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { Spacer } from "../Spacer";
 import { Callouts } from "./Callouts";
 import { Header } from "./Header";
-import { WatchlistProgressForEntities } from "./WatchlistProgressForEntities";
+import { WatchlistProgressDetail } from "./WatchlistProgressDetail";
 
 export function WatchlistProgress({
   movieCount,
@@ -63,22 +64,22 @@ export function WatchlistProgress({
           maxWidth={960}
         >
           <Spacer axis="vertical" size={32} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Director Progress"
             entities={directorProgress}
           />
           <Spacer axis="vertical" size={64} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Performer Progress"
             entities={performerProgress}
           />
           <Spacer axis="vertical" size={64} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Writer Progress"
             entities={writerProgress}
           />
           <Spacer axis="vertical" size={64} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Collection Progress"
             entities={collectionProgress}
           />
@@ -88,3 +89,30 @@ export function WatchlistProgress({
     </Layout>
   );
 }
+
+export const query = graphql`
+  fragment WatchlistProgress on WatchlistProgressJson {
+    reviewed
+    total
+    directorTotal
+    directorReviewed
+    directorDetails {
+      ...WatchlistProgressDetail
+    }
+    performerTotal
+    performerReviewed
+    performerDetails {
+      ...WatchlistProgressDetail
+    }
+    writerTotal
+    writerReviewed
+    writerDetails {
+      ...WatchlistProgressDetail
+    }
+    collectionTotal
+    collectionReviewed
+    collectionDetails {
+      ...WatchlistProgressDetail
+    }
+  }
+`;

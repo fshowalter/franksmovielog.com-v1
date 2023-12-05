@@ -28,10 +28,9 @@ export default function ReviewTemplate({
 
 export const pageQuery = graphql`
   query ReviewTemplate($id: String!) {
-    review: reviewedMovie(id: $id) {
+    review: reviewedTitle(id: $id) {
       title
       year
-      gradeStars
       review {
         excerpt
       }

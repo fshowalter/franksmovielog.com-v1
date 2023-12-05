@@ -83,7 +83,7 @@ export function HomePageItem({
             {toSentenceArray(item.principalCastNames)}.
           </Box>
           <RenderedMarkdown
-            text={item.excerpt}
+            text={item.review.excerptHtml}
             className={excerptContinueReadingLinkStyle}
           />
         </GridArea>
@@ -120,7 +120,9 @@ export const query = graphql`
     grade
     principalCastNames
     directorNames
-    excerpt
+    review {
+      excerptHtml
+    }
     still {
       childImageSharp {
         gatsbyImageData(

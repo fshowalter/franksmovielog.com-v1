@@ -1,7 +1,9 @@
-import path from "path";
 import { SchemaNames } from "../schemaNames";
 import type { GatsbyNode, GatsbyNodeContext } from "../type-definitions";
+import { MarkdownNode } from "./MarkdownRemark";
+import { avatarFieldResolver } from "./fieldResolvers/avatarFieldResolver";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
+import { stillFieldResolver } from "./fieldResolvers/stillFieldResolver";
 
 export interface ReviewedTitleNode extends GatsbyNode {
   imdbId: string;
@@ -11,22 +13,51 @@ export interface ReviewedTitleNode extends GatsbyNode {
 export const ReviewedTitleViewing = {
   name: SchemaNames.ReviewedTitleViewing,
   fields: {
-    date: "String!",
+    date: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+    },
     venue: "String",
     medium: "String",
     mediumNotes: "String",
     sequence: "Int!",
+    viewingNote: {
+      type: SchemaNames.MarkdownRemark,
+      resolve: async (
+        source: { sequence: number },
+        _args: unknown,
+        context: GatsbyNodeContext,
+      ) => {
+        return await context.nodeModel.findOne({
+          type: SchemaNames.MarkdownRemark,
+          query: {
+            filter: {
+              fileAbsolutePath: {
+                regex: `//viewing_notes/${source.sequence
+                  .toString()
+                  .padStart(4, "0")}-.*/`,
+              },
+            },
+          },
+        });
+      },
+    },
   },
 };
 
 export const ReviewedTitleMoreTitle = {
   name: SchemaNames.ReviewedTitleMoreTitle,
+  interfaces: ["Title"],
   fields: {
     imdbId: "String!",
     title: "String!",
     grade: "String!",
     year: "String!",
     slug: "String!",
+    poster: posterFieldResolver,
+    still: stillFieldResolver,
   },
 };
 
@@ -36,6 +67,7 @@ export const ReviewedTitleMoreEntity = {
     name: "String!",
     slug: "String!",
     titles: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
+    avatar: avatarFieldResolver,
   },
 };
 
@@ -52,9 +84,9 @@ export const ReviewedTitleMore = {
 
 export const ReviewedTitlesJson = {
   name: SchemaNames.ReviewedTitlesJson,
-  interfaces: ["Node"],
+  interfaces: ["Node", "Title"],
   fields: {
-    sequence: "Int!",
+    sequence: "String!",
     reviewDate: {
       type: "Date!",
       extensions: {
@@ -62,6 +94,7 @@ export const ReviewedTitlesJson = {
       },
     },
     reviewYear: "String!",
+    originalTitle: "String!",
     yearAndImdbId: "String!",
     runtimeMinutes: "Int!",
     directorNames: "[String!]!",
@@ -74,23 +107,26 @@ export const ReviewedTitlesJson = {
     slug: "String!",
     sortTitle: "String!",
     title: "String!",
-    year: "Int!",
+    year: "String!",
     viewings: `[${SchemaNames.ReviewedTitleViewing}!]!`,
     more: `${SchemaNames.ReviewedTitleMore}!`,
     poster: posterFieldResolver,
-    still: {
-      type: "File",
+    still: stillFieldResolver,
+    review: {
+      type: `${SchemaNames.MarkdownRemark}!`,
       resolve: async (
-        source: ReviewedTitleNode,
+        source: { imdbId: string },
         _args: unknown,
         context: GatsbyNodeContext,
       ) => {
-        return await context.nodeModel.findOne({
-          type: "File",
+        return await context.nodeModel.findOne<MarkdownNode>({
+          type: SchemaNames.MarkdownRemark,
           query: {
             filter: {
-              absolutePath: {
-                eq: path.resolve(`./content/assets/stills/${source.slug}.png`),
+              frontmatter: {
+                imdb_id: {
+                  eq: source.imdbId,
+                },
               },
             },
           },
