@@ -11,7 +11,7 @@ export function Content({ reviewedTitle, ...rest }: IContentProps) {
   return (
     <Box display="flex" flexDirection="column" rowGap={32} {...rest}>
       <Box display="flex" flexDirection="column" alignItems="inherit">
-        <Grade grade={reviewedTitle.review.frontmatter.grade} height={32} />
+        <Grade grade={reviewedTitle.review.frontmatter?.grade} height={32} />
         <Box
           display="flex"
           flexDirection="column"
@@ -19,7 +19,7 @@ export function Content({ reviewedTitle, ...rest }: IContentProps) {
           alignItems="inherit"
           letterSpacing={0.5}
         >
-          <span>on</span> {reviewedTitle.review.frontmatter.date}
+          <span>on</span> {reviewedTitle.review.frontmatter?.date}
         </Box>
       </Box>
       <LongFormText

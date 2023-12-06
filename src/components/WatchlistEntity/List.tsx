@@ -13,7 +13,7 @@ export function List({
   totalCount,
   visibleCount,
 }: {
-  groupedItems: Map<string, Queries.WatchlistEntityItemFragment[]>;
+  groupedItems: Map<string, Queries.WatchlistEntityTitleFragment[]>;
   dispatch: React.Dispatch<Action>;
   totalCount: number;
   visibleCount: number;
@@ -27,16 +27,16 @@ export function List({
       onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
     >
       {(item) => {
-        return <WatchlistItem item={item} key={item.imdbId} />;
+        return <WatchlistTitle item={item} key={item.imdbId} />;
       }}
     </GroupedList>
   );
 }
 
-function WatchlistItem({
+function WatchlistTitle({
   item,
 }: {
-  item: Queries.WatchlistEntityItemFragment;
+  item: Queries.WatchlistEntityTitleFragment;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">

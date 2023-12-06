@@ -23,7 +23,7 @@ export default function GonePage({
       alt="Jake Gittes walks away."
       articleText={data.page?.html}
       title={data.page?.frontmatter?.title}
-      moreReviews={data.latestViewings.nodes}
+      moreReviewedTitles={data.latestReviewedTitle.nodes}
     />
   );
 }
@@ -33,7 +33,10 @@ export const pageQuery = graphql`
     still: file(absolutePath: { regex: "/stills/gone.png$/" }) {
       ...StillSplash
     }
-    latestReview: allReviewedTitlesJson(sort: { sequence: DESC }, limit: 4) {
+    latestReviewedTitle: allReviewedTitlesJson(
+      sort: { sequence: DESC }
+      limit: 4
+    ) {
       nodes {
         ...StillListMovie
       }

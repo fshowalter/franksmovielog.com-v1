@@ -31,7 +31,7 @@ const CollectionIcon = (
 );
 
 interface IWatchlistEntityTypeLinkProps extends IBoxProps {
-  entityType: Queries.WatchlistEntityType;
+  entityType: "director" | "writer" | "collection" | "performer";
 }
 
 const entityTypeProps = {

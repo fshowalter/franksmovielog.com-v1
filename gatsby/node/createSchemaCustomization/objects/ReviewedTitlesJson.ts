@@ -119,7 +119,6 @@ export const ReviewedTitlesJson = {
         _args: unknown,
         context: GatsbyNodeContext,
       ) => {
-        console.log(source);
         return await context.nodeModel.findOne<MarkdownNode>({
           type: SchemaNames.MarkdownRemark,
           query: {

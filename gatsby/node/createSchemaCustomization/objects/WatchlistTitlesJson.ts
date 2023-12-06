@@ -6,7 +6,7 @@ export const WatchlistTitlesJson = {
   interfaces: ["Node"],
   fields: {
     title: "String!",
-    year: "Int!",
+    year: "String!",
     imdbId: "String!",
     sortTitle: "String!",
     yearAndImdbId: "String!",

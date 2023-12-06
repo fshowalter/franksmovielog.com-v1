@@ -43,7 +43,7 @@ export function RelatedMovies({ review, ...rest }: IRelatedMoviesProps) {
 function MoreReviews({
   reviews,
 }: {
-  reviews: readonly Queries.ReviewedTitleMoreTitle[];
+  reviews: readonly Queries.StillListMovieFragment[];
 }) {
   return (
     <StillListNav>

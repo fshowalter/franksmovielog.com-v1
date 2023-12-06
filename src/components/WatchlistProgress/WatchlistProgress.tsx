@@ -9,7 +9,7 @@ import { WatchlistProgressDetail } from "./WatchlistProgressDetail";
 export function WatchlistProgress({
   progress,
 }: {
-  progress: WatchlistProgressFragment;
+  progress: Queries.WatchlistProgressFragment;
 }): JSX.Element {
   return (
     <Layout>
@@ -40,21 +40,25 @@ export function WatchlistProgress({
           <Spacer axis="vertical" size={32} />
           <WatchlistProgressDetail
             label="Director Progress"
+            entityType="director"
             entities={progress.directorDetails}
           />
           <Spacer axis="vertical" size={64} />
           <WatchlistProgressDetail
             label="Performer Progress"
+            entityType="performer"
             entities={progress.performerDetails}
           />
           <Spacer axis="vertical" size={64} />
           <WatchlistProgressDetail
             label="Writer Progress"
+            entityType="writer"
             entities={progress.writerDetails}
           />
           <Spacer axis="vertical" size={64} />
           <WatchlistProgressDetail
             label="Collection Progress"
+            entityType="collection"
             entities={progress.collectionDetails}
           />
           <Spacer axis="vertical" size={64} />

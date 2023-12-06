@@ -14,7 +14,7 @@ export function Watchlist({
   distinctCollections,
   distinctReleaseYears,
 }: {
-  items: readonly Queries.WatchlistItemFragment[];
+  items: readonly Queries.WatchlistTitleFragment[];
   distinctDirectors: readonly string[];
   distinctPerformers: readonly string[];
   distinctWriters: readonly string[];

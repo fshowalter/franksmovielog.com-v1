@@ -9,11 +9,11 @@ export const UnderseenGemsJson = {
     grade: "String!",
     gradeValue: "Int!",
     imdbId: "String!",
-    releaseDate: "String!",
+    yearAndImdbId: "String!",
     slug: "String!",
     sortTitle: "String!",
     title: "String!",
-    year: "Int!",
+    year: "String!",
     poster: posterFieldResolver,
   },
   extensions: {

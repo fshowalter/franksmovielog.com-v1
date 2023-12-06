@@ -23,7 +23,7 @@ export default function HowIGradePage({
       alt="Empty cinema seats."
       articleText={data.page?.html}
       title={data.page?.frontmatter?.title}
-      moreReviews={data.latestReview.nodes}
+      moreReviewedTitles={data.latestReview.nodes}
     />
   );
 }

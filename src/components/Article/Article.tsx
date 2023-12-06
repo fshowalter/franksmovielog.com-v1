@@ -11,13 +11,13 @@ export function Article({
   alt,
   title,
   articleText,
-  moreReviews,
+  moreReviewedTitles,
 }: {
   image: IGraphqlImage;
   alt: string;
   articleText?: string | null;
   title?: string | null;
-  moreReviews: Queries.StillListMovieFragment[];
+  moreReviewedTitles: readonly Queries.StillListMovieFragment[];
 }): JSX.Element {
   return (
     <Layout>
@@ -59,7 +59,7 @@ export function Article({
               linkTarget={`/reviews/`}
             />
             <StillList
-              movies={moreReviews}
+              movies={moreReviewedTitles}
               seeAllLinkTarget="/reviews/"
               seeAllLinkText="Reviews"
             />

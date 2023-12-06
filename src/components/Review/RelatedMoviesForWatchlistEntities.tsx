@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import { StillList, StillListHeading, StillListNav } from "../StillList";
 
-const leadText: Record<Queries.WatchlistEntityType, string> = {
+const leadText = {
   director: " directed by",
   writer: " written by",
   performer: " with",
@@ -12,7 +12,7 @@ export function RelatedMoviesForWatchlistEntities({
   entityType,
   entities,
 }: {
-  entityType: string;
+  entityType: "director" | "writer" | "performer" | "collection";
   entities: readonly Queries.RelatedMoviesForWatchlistEntityFragment[];
 }) {
   return (

@@ -33,7 +33,7 @@ export default function OverratedDisappointmentsPage({
 export const pageQuery = graphql`
   query OverratedDisappointmentsPage {
     disappointment: allOverratedDisappointmentsJson(
-      sort: { releaseDate: DESC }
+      sort: { yearAndImdbId: DESC }
     ) {
       nodes {
         ...OverratedItem

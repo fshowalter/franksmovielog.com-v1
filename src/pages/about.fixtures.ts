@@ -3,7 +3,10 @@ export const data = {
     childImageSharp: {
       gatsbyImageData: {
         layout: "constrained" as const,
-        backgroundColor: "#c8c8b8",
+        placeholder: {
+          fallback:
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADF0lEQVR42h2T20+bBRjGvz/Da6OJy7zRZB5iPCYeBgU3pg7GYeDEIbGMLKOM1SFyKmyS4IDhYKWlbJx6QCylBdrSUmj5aL+eoC0th6bDxokzMfFw+/ObF8/l+3ufPE8eoeaVZ2msLsc+qyebOyQaCzJ0vYre2kK+V1/G1HIerboOx2Az1u7PcXSWcaP4BD80XWR6WMPS5BCBga/o6m6h7FIlwqhGhc9hIX+UJpPNkHucZ7a/idqi16g59y5X33+eH78oxNJWxWjjadK3z9J95gWKFe9wTaWkrbEKV89FlE1XOFNeipDLpsnvxdmXVtlJhEnsJjB0fM3Hb72I4vUTVH/4En21H3C3oYie0pcRlc+RVp0kd6eGR/0VSN8qcPYrqVI2UFh6HuHJcZ7fHx+x7Zxhc9mIc06HY+gb1nXt+LQ32XrYgzjRg3tIhaurgu4Lp/jk1DO0Xnib5ZslxG+8weJAC+cuN6Aor0JIxkRy+ylCK0ZcevnwQR8r2k7cd68TMHQgmgeJui0kRS+heS0bA42YmxTcqiukvasdc2slk71XebWohNNlFQheu5Go6EHyLeG3jv+vjZ/G8M0OIlruEZy/T3YvgdlqRaPpwONZIRsPkHYbkezTSLZJbDM6Pq2s4M2CAgSnWcfW6gJhn4PQqhXJu0DU7yQZ3SQVD5KS1kmFvKw5rbi9LvJ//MnhoyMyh/vspZMktmPEQ3621t0Y9KMI8+N3cM1NsGl/mqGFsNdObGOZpOQjGfaTiooy0IP49GEkyPFff3NwmGE3GZeBu6RTSWKSSEhcJxRYQzCN3GbRMIh7ahivDPYvGgk4jPhtU7Km8UzKGbpMsuMAiWSEJ//8y69HB+zGt8ikE+xsR4hGI0iRGAFxC+H+rVZ0mmZ07VcYUdcy/l09E21folN9hl7WSN17THdcwrPwkGBwjfzxb+R/OZBdrREWfYSlTSIyMLIjFxvfRWiuLqGtugCNvIzOmo/oqy9m+FopenU50731zA2qmb/XztxYHwumcTbl8kLrS9hMepZ/nmLFZsLrcTJj0PJgTMt/a4F+KTIyHAUAAAAASUVORK5CYII=",
+        },
         images: {
           fallback: {
             src: "/static/f5aba40fd9013c55103643e8e13011f8/acfae/about.jpg",
@@ -25,33 +28,33 @@ export const data = {
       },
     },
   },
-  latestViewings: [
-    {
-      reviewedMovie: {
-        imdbId: "tt0045564",
-        title: "The Blue Gardenia",
-        grade: "D-",
-        slug: "the-blue-gardenia-1953",
-        year: 1953,
+  latestReviewedTitle: {
+    nodes: [
+      {
+        imdbId: "tt0023935",
+        title: "The Death Kiss",
+        grade: "D",
+        slug: "the-death-kiss-1932",
+        year: "1932",
         still: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
               placeholder: {
                 fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQozz2SzUqyURSF39Qo0SzNFKU00yy1RDANyiAK7U+zKBAqiFAKox91ouCkgQM1bOLEHGgURCniwFlQs+gSvIQuY33s3VeDzcvL2fs5a62zBYvFgpGREajVav76/X7s7Ozg/Pwc5XIZZ2dn0Ov1sNlsWFhYQDAYxNraGrxeL5aXl+F0OhEKhXiWSlhdXeXDlZUVbt7Y2MDR0RGur6/Rbrfx+vqK09NTHB8fIxKJYHt7G9PT09BoNFAoFDCZTHxGXwbSbYuLi9jf3wfBZ2dnEY1GcXd3h5eXF3x8fCCTySCdTjN4fHwcUqkUfX19EAQBo6Oj3D85OQmdTgeBLJK6WCzGVmmI1FWrVbRaLdTrdeRyOVQqFWSzWQwNDWFwcBAymQw9PT0YGxtDPB6H1WpluBAIBLC1tYVisch5ka18Po9ms4lut4uHhwfc3Nzg+fmZ7ZvNZsjl8j8gQS4uLmC322EwGCBsbm5id3cX9/f3SCaTnEU4HGZln5+fSKVSeHp6QqlUwuHhIS4vLzlrtvff8tXVFVwuF+iBBbK5vr7O+bndbszMzPChx+Nh+zT8/v7OPfR4b29vKBQKWFpa+gMmEgnMz89jamrqx7JWq4VKpeL1mJiY4OCNRiMPOBwO1Go1dDodzvXr6wuPj48MlEgkPEMK5+bmfoAEoBdTKpWcDa0DBU3/9AD03dvbw/f3NxqNBud6cHDAlxGQ9vfk5ISdEUugcHt7e9Hf389FDaSQbh4YGOAh6vH5fKzu9vaWYSKRCGKxGMPDw7ybpI5dEYSGSCUVDZNCCvhXNRVByCYt8y+QiqKi1aM9JOA/qZqH3l4xhqQAAAAASUVORK5CYII=",
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACR0lEQVR42jWTy0tyURTFD2hmlkRUaljS09RCEEXFULOHkZYZaqJoqVj5mASm4KSoBhXOpEGNRPD/XB9rwzfYnHvuved31157XXV+fo5EIoF0Oo1QKITV1VXY7Xa4XC4cHBzg7u4OpVIJsVgMfPfo6AiHh4dYX1/HysoK1tbWYDabMT8/D4PBAMVDhDWbTTw8PMihnZ0d7O3tycGvry+Mx2OUy2WBhsNh+P1+gXi9XrleXl7G9PQ0ZmZmoDY3NwUQj8cxGAzw+fmJs7MzBAIB+Hw+XF9fYzQa4e/vD8ViUYAWiwULCwt4enrCxcWF7PV6PaampqCsViuMRiPcbjd+f3/x/PyMer2OWq2G09NTZLNZvL+/YzKZCOD+/h67u7tyuFKpoNPpiFqNRiMqlclkEi/YYi6XExVsnYd53Wq1UK1WBdTr9eQ+vVZKScs/Pz94fHwEhel0OqjFxUXZcAgOh0NWDoWeUiWhVHx7e4tGo4F8Po+bmxu0220Mh0MBfn9/y3tarRaKgP39fYGwFSpdWloSD3mYfnJlFQoFRKNRWT8+PsSK19dXvLy84O3tTYao2BKN397eFijXjY0NOJ1OnJycSEwymYyoIogpuLq6kqkzUuyCez7vdrtQ/7PFaRPk8Xjka4wIlfM5Y8XhpFIpJJNJKYqg53weiURk+rRFbW1tSUgZaBYjRBi9ZVipkgoJZV1eXiIYDAqUiukvP8R7tEPRL5bNZhMwBzQ7OyswZo2K2RIVHB8fSzHMhPAP6vf7kgAKm5ubwz9Mp4pso2sFRQAAAABJRU5ErkJggg==",
               },
               images: {
                 fallback: {
-                  src: "/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg",
+                  src: "/static/084f9ba228213fdf053944708d31c608/11456/the-death-kiss-1932.jpg",
                   srcSet:
-                    "/static/416c95d938442a4ba50939190044112e/43c32/the-blue-gardenia-1953.jpg 78w,\n/static/416c95d938442a4ba50939190044112e/78def/the-blue-gardenia-1953.jpg 156w,\n/static/416c95d938442a4ba50939190044112e/11456/the-blue-gardenia-1953.jpg 312w,\n/static/416c95d938442a4ba50939190044112e/a02d5/the-blue-gardenia-1953.jpg 624w",
+                    "/static/084f9ba228213fdf053944708d31c608/43c32/the-death-kiss-1932.jpg 78w,\n/static/084f9ba228213fdf053944708d31c608/78def/the-death-kiss-1932.jpg 156w,\n/static/084f9ba228213fdf053944708d31c608/11456/the-death-kiss-1932.jpg 312w,\n/static/084f9ba228213fdf053944708d31c608/a02d5/the-death-kiss-1932.jpg 624w",
                   sizes: "(min-width: 312px) 312px, 100vw",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/416c95d938442a4ba50939190044112e/08742/the-blue-gardenia-1953.avif 78w,\n/static/416c95d938442a4ba50939190044112e/1c619/the-blue-gardenia-1953.avif 156w,\n/static/416c95d938442a4ba50939190044112e/c02e5/the-blue-gardenia-1953.avif 312w,\n/static/416c95d938442a4ba50939190044112e/81026/the-blue-gardenia-1953.avif 624w",
+                      "/static/084f9ba228213fdf053944708d31c608/08742/the-death-kiss-1932.avif 78w,\n/static/084f9ba228213fdf053944708d31c608/1c619/the-death-kiss-1932.avif 156w,\n/static/084f9ba228213fdf053944708d31c608/c02e5/the-death-kiss-1932.avif 312w,\n/static/084f9ba228213fdf053944708d31c608/81026/the-death-kiss-1932.avif 624w",
                     type: "image/avif",
                     sizes: "(min-width: 312px) 312px, 100vw",
                   },
@@ -63,33 +66,31 @@ export const data = {
           },
         },
       },
-    },
-    {
-      reviewedMovie: {
-        imdbId: "tt0028330",
-        title: "Suzy",
-        grade: "D-",
-        slug: "suzy-1936",
-        year: 1936,
+      {
+        imdbId: "tt0095179",
+        title: "Friday the 13th: The New Blood",
+        grade: "D+",
+        slug: "friday-the-13th-part-vii-the-new-blood-1988",
+        year: "1988",
         still: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
               placeholder: {
                 fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVQozz2SzUuyURDF7x/gxrUSuGmlSxEMEcSVImHQLonI1mmFUlZIRQjZB1aWmghFZJSgCRFkWtl32qYgqUULcRGFUVkUFudlBnovzOa58/zOzDlXJBIJhEIhhMNhpNNpZDIZnJ6eolKp4OTkBO3t7TAajfB4PFhbW8Pq6iq2trZQLBYxOTkJi8WC/v5+9PX1cY/Y3t7G+Pg4ZmZmQPB8Po/Ly0vkcjlsbGxgb2+P76anp7G5ucnCOzs7uL6+RqFQQDweh8PhQEdHBwYHByFSqRSGh4cxPz+P9fV1HB0dMfT4+JiBu7u7DKWiXvpGE1Jls1mcn59zr81mY7Dw+/1wu93w+XwIBoMMo+bR0VG0tbXB6XRidnYWsViMxaLRKNfKygqmpqZ4yu/vb9zf3/N/YmxsjCf885I82t/f5/VcLhevMTc3h4ODA5ydnfE0y8vLLN7V1YVyuQw6BH1/f4cIBAJMfn5+xu3tLYNLpRJubm4QiUR4OrKDeghWrVZ5fQqP1q3Vav+BHx8fEHa7HclkktXJbFr56uqKE/Z6vVhcXOQVW1tbOXG6/zsE+Pz8ZFi9XucSVquVvaFACEK1tLTE6XV2dqK5uRkGgwFqtRpyuRyNjY2cOvXTlAR8fX3F7+8vgwWZe3h4CFqdngR5StXd3Q2FQgGZTAapVAqVSoWGhgaYTCZOm2AkeHd3h7e3N3x9feHn5wdiYWGBzaVEaRqdTgeNRgO9Xo+mpib09PRgYmICQ0ND7O/T0xMnS4GRGL2Sx8dHvLy8MFRotVoolUqYzWb09vZy0iMjI6w+MDDAYZEynYeHB7S0tEAikUAIwUXeXlxccNq09j+17nkHwSTf1AAAAABJRU5ErkJggg==",
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpklEQVR42h2RZ3PiVhSGtYVeDAiQaAIEAhHqii46pphmYDe2N/HYu5PMZDL5/9+f3OXDnTtzynPec15pP+lzmttc76c8bZd8P6x5O+/5+fWRH9czLw9rNgOL78cd/72/8+/rK38/P7Ozu9jlNLOmydKqMW6YHOwe0m7U5jTrcVnafNtMed4v+ON0z8/LjqfVgodeA0tXKcTvuIqa98uW47TDuF6gqysCVL4BZ63feDtskbpminFTZ9ExWQ8bHOcdLqs+/zz/zuvpyNFuM6zqVFJR0Vzgq8hNGlnaRRUrG2NQyTFvmWKAwV/XI9J9v8Z21LzBHsYW+1mbl/2Sy3rDdtBhL1ar5DN4XG70lMph8oVxS8cqJmkJYM/MMq4VxBCD7bCN9LgYshtZbOyGUGYLkC3UfeO8XjEfDlj0emjxOOloGDOjsuxWmH4p0CokaaRjQmmanpFkVM3TMHSk02LAL5X7WZen/Zynw1yYceD1fOXlcOTPxwNWKSuAIcy8xmpQZ1jP0SyoVJMRmrkEHXHLvpHASCeEKZM2970Kp2WPs1C4m3bFzQzeHk9sxxOMXIayUKYnYlSLOVb9KoNqhkZewVTD1DSFekampcnEgz6kjV1nUM9TL2bQkzFyikxRjbGwmnSrJn6PEyUcIhEOIgf81PIqv4ysZ6OYSoiyEsYyNKbt5i0vjVoltFgYNRQg4nPffkPTqGRSLLpt+tUiVS2OIqa7HU58Thd3XjexgBcjGqQQ8TOoGZSzGo4PH5HyaoSoAGWid7ciJeghJYeI+H2UNKGkoCF7XfjdLrxOJxEB8zocBJwOVL9wPuyjqafIxCI4P35GKqVVcZMSHSFbF+vWdI2QaI4HA8g+L57Pn24An3gREZdvQCd+AQ+IWNzjxkzIt3rXJwf/A26sSxw7SBqeAAAAAElFTkSuQmCC",
               },
               images: {
                 fallback: {
-                  src: "/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg",
+                  src: "/static/6120020caf2f1f875502feb23acbd164/11456/friday-the-13th-part-vii-the-new-blood-1988.jpg",
                   srcSet:
-                    "/static/8eb90295d536719fa7d58f5eadb27aae/43c32/suzy-1936.jpg 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/78def/suzy-1936.jpg 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/11456/suzy-1936.jpg 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/a02d5/suzy-1936.jpg 624w",
+                    "/static/6120020caf2f1f875502feb23acbd164/43c32/friday-the-13th-part-vii-the-new-blood-1988.jpg 78w,\n/static/6120020caf2f1f875502feb23acbd164/78def/friday-the-13th-part-vii-the-new-blood-1988.jpg 156w,\n/static/6120020caf2f1f875502feb23acbd164/11456/friday-the-13th-part-vii-the-new-blood-1988.jpg 312w,\n/static/6120020caf2f1f875502feb23acbd164/a02d5/friday-the-13th-part-vii-the-new-blood-1988.jpg 624w",
                   sizes: "(min-width: 312px) 312px, 100vw",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/8eb90295d536719fa7d58f5eadb27aae/08742/suzy-1936.avif 78w,\n/static/8eb90295d536719fa7d58f5eadb27aae/1c619/suzy-1936.avif 156w,\n/static/8eb90295d536719fa7d58f5eadb27aae/c02e5/suzy-1936.avif 312w,\n/static/8eb90295d536719fa7d58f5eadb27aae/81026/suzy-1936.avif 624w",
+                      "/static/6120020caf2f1f875502feb23acbd164/08742/friday-the-13th-part-vii-the-new-blood-1988.avif 78w,\n/static/6120020caf2f1f875502feb23acbd164/1c619/friday-the-13th-part-vii-the-new-blood-1988.avif 156w,\n/static/6120020caf2f1f875502feb23acbd164/c02e5/friday-the-13th-part-vii-the-new-blood-1988.avif 312w,\n/static/6120020caf2f1f875502feb23acbd164/81026/friday-the-13th-part-vii-the-new-blood-1988.avif 624w",
                     type: "image/avif",
                     sizes: "(min-width: 312px) 312px, 100vw",
                   },
@@ -101,33 +102,31 @@ export const data = {
           },
         },
       },
-    },
-    {
-      reviewedMovie: {
-        imdbId: "tt0034055",
-        title: "Pot o' Gold",
-        grade: "F",
-        slug: "pot-o-gold-1941",
-        year: 1941,
+      {
+        imdbId: "tt0404011",
+        title: "Eggshells",
+        grade: "D+",
+        slug: "eggshells-1969",
+        year: "1969",
         still: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
               placeholder: {
                 fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQozyVTS0syURieX9DPiIRoY2RRlEqhYTcxSUWx1CSykqAoKkkqNRWRsIiwi6ndICIok4ha5aJo1Q+oxF2rlkGL5+N5v83MmTkzz/U9yvHxMfL5PA4PD5FIJLCysoJQKITp6Wk0NDSgrq4OKpUKPp8PMzMzmJqaQiAQgN1ux8bGBmKxGCKRCFZXV7G2tgaFQMViEXt7ewIWDAbhdDoxNjaGeDyOiYkJaLVa2Gw2+XF3dxebm5tYXl7G1dUVHh4esLW1he3tbcFQTk9PcXt7i5ubG2QyGWEdGRnB/Pw8Dg4OhIyk0WgUhUIBX19foKvJyUkhuLi4EIfZbBbn5+dQLi8vcX9/j+fnZwHlRy6XC+FwWCxQIX8iyOzsLK6vr8XJ6OioAAwODsoz9wXw7OwMT09PeHl5Qa1WE0sOh0MUWK1W9Pb2ilpa5Jrvuru7MT4+ju/vbywsLKCnp0cA9/f3odAmJTOXz89PVCoVeL1eDAwMwGKxwGg0CgBjYLZmsxkajQYGgwGlUgmLi4vQ6XRIp9PiTmGQyWQSer0e5XIZb29vUgxZh4eHBZR3AnLd2dkphdHB+vo6Pj4+RNDr6+v/UnihZebElzs7O+jr60N7e7uAUhVtDg0NiarW1lYZFeZ9dHSE9/d3nJyc4Pf3VxpXcrkcWAwbZI7M1OPxoKmpCS0tLWKR9jk6VEd7c3Nzoqparcq4EPTv708mQuFocMbq6+vhdrtlRKiEIGT2+/2SI1WzFAIuLS2J0o6ODqjVaink5+cHqVQKCi/coMXGxkY5BQy4ubkZd3d3ws5T0d/fD5PJJGRsvKurS1S3tbXJqaLax8dH/ANuTyEdFFIL7AAAAABJRU5ErkJggg==",
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC9UlEQVR42h2Sy3KadRiHuQGX7Zg0jrW2JY00NBgOIRAOAQKUhFOAj4+PQzhJBEIIw6EjgWJSTal20rE2rU6sk8TxMG6qLqoLV854AW5cufECvITHf7p45rd4Z555T6opjYHXr+u4eEXHxFU9r12YQa1ZJiq3yG+N6d77msPjF4wOT9nuP6S0vYstmOQts5tpt48Zn5dpn5sbfg+zQT+qN7QGLs0YuPj2udSAxV+jsHPCBw9+pXfvZ0YPX/L45A9+/O0v/vn3P37/829qwyN03riQOlE7PVx1OFC7Xa/kqslbJqbeMaC1BZFqT6gPf0F57xh/9IC1xMdEkvsoxQdUdj6n9+Epnb1vuTN+QWV4hs6vcElv4c1FG9Mu1yuxamJOz+U5D9W7P9D/9CWV3in9g+9ZTeyjdzSx+3aIpwaUG/eRiiMi2RF+eUCocEiud4bGFeOCRs+U0cykwYTq2pKL26VDlOZzSp1n2CJ32Wg8IZbdZy05oDd8Tq/zmMHgGdFkFylzB2+8xZy7ij3+EVLjKRM3rVw2elA7AqjMUovl7AH+TJeV9C7WcIvU5ic0+0c8+uIn9sbfsTv4kkppj6QQLXny6F1ZzMEaXmmXYvsEl3CY1gpYYmVU7nIffTSHeT3PYqyGOVIhXtmjPz4TfENn+BX11iO2O0dk8gOW/SUWPFkCiQa2tRq3PNt4lTaZTp3EjhDqEwracIL59SwLyQLGRJYlpYwz08CRauNJj5Crn7HZPea20scRrgoq6Nwy120SU6YIanuQaL1CpFlANS/HmY1F0MbCzMsSBkXCKDDJChY5z0quTbx6n/X3xzhlsZJ4W2SXGysyV5xBJk0urtk9xJo1wufChY0outQqmnWfIIBOCmHOyBhTSazpDdzFLRy5LSxSFWuijjG0KXKL2VVJPHNA/J4PfSyKPZ9iuSyLoxSjGHMh3hXSmzEf2ngAUzomiAtEx2ICazbDUrqINVVkUcriyuTFehKYRc15LiokMaVCmJQo/wOzz8RApc8rUAAAAABJRU5ErkJggg==",
               },
               images: {
                 fallback: {
-                  src: "/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg",
+                  src: "/static/13819517d0a3959e80b359d3835e66a4/11456/eggshells-1969.jpg",
                   srcSet:
-                    "/static/ae790f0cea379c229ff81a50f90ce566/43c32/pot-o-gold-1941.jpg 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/78def/pot-o-gold-1941.jpg 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/11456/pot-o-gold-1941.jpg 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/a02d5/pot-o-gold-1941.jpg 624w",
+                    "/static/13819517d0a3959e80b359d3835e66a4/43c32/eggshells-1969.jpg 78w,\n/static/13819517d0a3959e80b359d3835e66a4/78def/eggshells-1969.jpg 156w,\n/static/13819517d0a3959e80b359d3835e66a4/11456/eggshells-1969.jpg 312w,\n/static/13819517d0a3959e80b359d3835e66a4/a02d5/eggshells-1969.jpg 624w",
                   sizes: "(min-width: 312px) 312px, 100vw",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/ae790f0cea379c229ff81a50f90ce566/08742/pot-o-gold-1941.avif 78w,\n/static/ae790f0cea379c229ff81a50f90ce566/1c619/pot-o-gold-1941.avif 156w,\n/static/ae790f0cea379c229ff81a50f90ce566/c02e5/pot-o-gold-1941.avif 312w,\n/static/ae790f0cea379c229ff81a50f90ce566/81026/pot-o-gold-1941.avif 624w",
+                      "/static/13819517d0a3959e80b359d3835e66a4/08742/eggshells-1969.avif 78w,\n/static/13819517d0a3959e80b359d3835e66a4/1c619/eggshells-1969.avif 156w,\n/static/13819517d0a3959e80b359d3835e66a4/c02e5/eggshells-1969.avif 312w,\n/static/13819517d0a3959e80b359d3835e66a4/81026/eggshells-1969.avif 624w",
                     type: "image/avif",
                     sizes: "(min-width: 312px) 312px, 100vw",
                   },
@@ -139,33 +138,31 @@ export const data = {
           },
         },
       },
-    },
-    {
-      reviewedMovie: {
-        imdbId: "tt0037461",
-        title: "The Whistler",
-        grade: "C-",
-        slug: "the-whistler-1944",
-        year: 1944,
+      {
+        imdbId: "tt10168670",
+        title: "Bones and All",
+        grade: "C+",
+        slug: "bones-and-all-2022",
+        year: "2022",
         still: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
               placeholder: {
                 fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACd0lEQVQoz1VSv0uyYRR9J4cmFwkCJYygJGzIxH6QUYZUmqYlWRamViZCCZoVpdEikiiIikJziIiBYtDQIBFRhENLkIObQmt/wPm4F74PvuHyXp73ec4599wjzM3NYWRkBAMDAzCbzQgGg+jr64NUKoVarcb6+jr8fj/29vbgdruxs7ODzc1NbGxsYG1tDaurq7BYLNxTCUajETqdjn/QZer1ej00Gg3S6TSy2SxcLheOj4/h8/mwv7/PX6/XyyQOh4MJ7HY7kwiETiqtVisrWFpaYoBisYhWq4VGo8Hnp6enCIfD/1UgEGCC7e1tBiQMYWZmBmNjY5iYmMDu7i6rnJ2dxcXFBd7e3nB0dASaglQcHh4iFoshHo9z73Q6WSmB0jsGnJ6exvj4OBYXF/mAFA4PD0OlUmFlZQWjo6MwGAxsCY13dnaGaDTKBPSGLCILDg4OWKUwOTkJKpPJxMoUCgWDyWQySCSSf2TkK5lOSyPQl5cXpFIpKJVKJiM/iUQgBtokeUmPSR2NeH19jaenJxQKBVxdXSEUCrGPpC6Xy+H19RWlUgnz8/N8n9RRSoSFhQVsbW3xqKSQ/KTIkEf1eh3VahUPDw+sKJPJ4OTkBI+Pj+h0Ovj6+sLl5SWWl5cZlIoV/h1Xq9Wywf39/dzf39/j4+MD7+/vSCaTHCXK5vn5OcrlMp/XajVUKhXOKtkiUGSmpqZYIeXI4/Ew6+3tLW5ubpDP53l8uVzOftHoiUSCfaRIfX9/4/PzE8/Pz2yFMDQ0xJuk+NBWbTYbgw8ODqKnpwdisRgikQi9vb1oNpv4/f3Fz88Put0u2u02IpEI7u7uGJCs+QNiQuSQgft1lAAAAABJRU5ErkJggg==",
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADGUlEQVR42h2R/VOTBQDHn1/q+sm4s6C7yK60Iio1PQmuTNjJa94UQ0icAs4H9sLDngFj42UPL7IXcCgwxmQDh27j1USyoeQcIJCQoUX693xa/fD54Xv3vc99777CJfd9Lg/EqBt8hORPYOzwoTG5kP1PMI+vYwokGd+gcWKDpiQtoQ3ao8/pmHqBNbSJOZBAuvkEafQ3jN5HCOKNGPrhh5j+KyteavancujtNyi6INE59xLbnWfYwtu0RbZRpraxR7bQWDwUlmtpGJhFiT5LitewTKzSNBZHkEaXaQzEsd7epMN7F9/FIq4c+4j8MxquPXjF1bk/6J7foWfueTK/xtx1g4Mfp5Ga8iaqU2X0zW/RHV1DCa/RFkogWCfitCeDe3adcPQBK55mDN9/gVayM/pwF88vL/As7nA9yeDSK6anZxm+mMWH76WgKlHjXfobz70tXDNP6YmuIHRFEvRPr7A4EiBYVYlDfZz2H7KZEDW8nBxj5ucEocRrgss7jD/exd7loDn/s/+FBz45QFevC+9UjKFf/2RwYRPBO/+YJWcbd+p/ovxwFqUZmWw5JVYselbaTKx1NTLQ6yayustsLHnUyc85nL6H/e+/w7t7U+guO0JUdxx/sueLLCAEFuLc9fXzT6SV+JBMf00pk7pzjNZW0GfQYCw8gs2k5/7vf9Ena9GeyGCy8xK5X+0jbc9bdEoapif9RFrPM1yZg3DTa8c30sl60IxPV4KpOIepxgoMpfl0N1TSq8kjfN1E1NeAs+woTrGY5VsKoV6RfukME9ckwoFmxoZMuC3nEHQXvsRam03CLxN3VfF1eipl3x7FVaWm5XwuIVlNyFqCo/U09Xo9ruSicLOae30iik1CluuwK2YaWmzUWroRaiuP4TGoGemUiQ0ZmXbWk3Eoi/IiFafysrjdIxJ26flGpUIn1uC0GtGKdSjVJZwuyMXQYkdud9B0dRDZ7kawXz5Jh/o76qsraFNMPF0Mcmu4B1ESSfsgHYfSwO7qDCfyCskpKMVmqKKnuoCgoRhD/kE+zczkx4JszMYrnNVo+RcMihmT0GrC/wAAAABJRU5ErkJggg==",
               },
               images: {
                 fallback: {
-                  src: "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg",
+                  src: "/static/6615177e6d4747091277114c8c429f1f/11456/bones-and-all-2022.jpg",
                   srcSet:
-                    "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/43c32/the-whistler-1944.jpg 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/78def/the-whistler-1944.jpg 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/11456/the-whistler-1944.jpg 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/a02d5/the-whistler-1944.jpg 624w",
+                    "/static/6615177e6d4747091277114c8c429f1f/43c32/bones-and-all-2022.jpg 78w,\n/static/6615177e6d4747091277114c8c429f1f/78def/bones-and-all-2022.jpg 156w,\n/static/6615177e6d4747091277114c8c429f1f/11456/bones-and-all-2022.jpg 312w,\n/static/6615177e6d4747091277114c8c429f1f/a02d5/bones-and-all-2022.jpg 624w",
                   sizes: "(min-width: 312px) 312px, 100vw",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/08742/the-whistler-1944.avif 78w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/1c619/the-whistler-1944.avif 156w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/c02e5/the-whistler-1944.avif 312w,\n/static/886ab5b7b8dfc5ef9b3e60cc8b7e1acf/81026/the-whistler-1944.avif 624w",
+                      "/static/6615177e6d4747091277114c8c429f1f/08742/bones-and-all-2022.avif 78w,\n/static/6615177e6d4747091277114c8c429f1f/1c619/bones-and-all-2022.avif 156w,\n/static/6615177e6d4747091277114c8c429f1f/c02e5/bones-and-all-2022.avif 312w,\n/static/6615177e6d4747091277114c8c429f1f/81026/bones-and-all-2022.avif 624w",
                     type: "image/avif",
                     sizes: "(min-width: 312px) 312px, 100vw",
                   },
@@ -177,8 +174,8 @@ export const data = {
           },
         },
       },
-    },
-  ],
+    ],
+  },
   page: {
     html: '<p>Been a long time, huh?</p>\n<p>I know what you’re thinking, constant reader, but I’m serious this time. Okay, maybe not serious, but at least pragmatic.</p>\n<p>The first time around, I cranked out 100-200 word reviews of everything I watched. The result proved underwhelming. Lots of cliches and telling versus showing.</p>\n<p>The second time around, I prioritized quality over quantity. My writing got better, but my output suffered, slowing to one review a week, then one review every couple of weeks, then one review a month, then none for years. Writing a definitive review proved so daunting, I’d write and rewrite until I lost all perspective.</p>\n<p>This time, I’m going for a middle ground. Looking back on the first iteration, I got better the more I wrote, but I can’t crank out several hundred words of definitive analysis for every movie I watch. So I’m giving myself an out: a one or two paragraph impression <em>of that viewing</em> is okay. I’m leaving the door open to re-visit the film later and add another review—building on the first, or rethinking my earlier ideas.</p>\n<p>But wait, there’s more.</p>\n<p>My time left on this planet is less than the time I’ve spent here, so I’ve compiled a bucket list based on my favorite stars, directors, and writers. I call it the <a href="/watchlist/">Watchlist</a>. Three thousand plus titles means I won’t get through them all, but I’m gonna try.</p>\n<p>The ground rules:</p>\n<ol>\n<li>No silents or documentaries. I consider these different art forms.</li>\n<li>I’ll watch as much in order as possible. There’s value in watching artists evolve and placing disparate works in their chronological context.</li>\n<li>I’ll do my best to watch the best-available version <em>within reason</em>. I won’t pay $100 for an out-of-print Blu-Ray with the original 1.66:1 aspect-ratio when there’s a 1.85:1 print streaming on Netflix. Okay, maybe I will, but I don’t <em>have</em> to.</li>\n</ol>\n<p>Lastly, you may ask, “Why bother?” I’m not delusional, constant reader, I know you are me. No one else reads this site. We’re doing this for our kids. When they’re our age and we’ve long departed this world, they’ll have these words—connecting us across time, our middle-aged self to theirs.</p>\n<p>So, future reader, I beg you: place these reviews in their time. Today’s innocuous joke may be tomorrow’s offensive trigger. I mean no ill-will. If you disagree with my opinions, that’s fine—maybe even expected. I only hope you’ll find the writing rewarding.</p>',
     frontmatter: {

@@ -5,7 +5,7 @@ import { StatsCallout } from "../Stats";
 export function Callouts({
   callouts,
 }: {
-  callouts: Queries.AllTimeStatusCalloutsFragment | null;
+  callouts: Queries.YearStatsCalloutsFragment;
 }): JSX.Element {
   return (
     <Box

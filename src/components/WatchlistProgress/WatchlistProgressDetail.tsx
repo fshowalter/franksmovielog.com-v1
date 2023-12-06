@@ -11,11 +11,15 @@ import {
   TableRow,
 } from "../StatsTable";
 
+type EntityType = "director" | "writer" | "performer" | "collection";
+
 export function WatchlistProgressDetail({
   label,
+  entityType,
   entities,
 }: {
   label: string;
+  entityType: EntityType;
   entities: readonly Queries.WatchlistProgressDetailFragment[];
 }) {
   return (
@@ -34,7 +38,7 @@ export function WatchlistProgressDetail({
             return (
               <TableRow key={entity.name}>
                 <TableDataCell align="left">
-                  <EntityName entity={entity} />
+                  <EntityName entity={entity} entityType={entityType} />
                 </TableDataCell>
                 <TableDataCell hideOnSmallScreens align="fill">
                   <BarGradient
@@ -63,12 +67,14 @@ export function WatchlistProgressDetail({
 
 function EntityName({
   entity,
+  entityType,
 }: {
+  entityType: EntityType;
   entity: Queries.WatchlistProgressDetailFragment;
 }) {
   if (entity.slug)
     return (
-      <Link to={`/watchlist/${entity.entityType}s/${entity.slug}/`}>
+      <Link to={`/watchlist/${entityType}s/${entity.slug}/`}>
         {entity.name}
       </Link>
     );

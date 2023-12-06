@@ -6,7 +6,7 @@ import { SelectInput } from "../SelectInput";
 interface IYearInputProps extends IBoxProps {
   label: string;
   years: readonly string[];
-  onYearChange: (values: [number, number]) => void;
+  onYearChange: (values: [string, string]) => void;
 }
 
 export function YearInput({
@@ -14,11 +14,11 @@ export function YearInput({
   years,
   onYearChange,
 }: IYearInputProps): JSX.Element {
-  const [minYear, setMinYear] = useState(parseInt(years[0], 10));
-  const [maxYear, setMaxYear] = useState(parseInt(years[years.length - 1], 10));
+  const [minYear, setMinYear] = useState(years[0]);
+  const [maxYear, setMaxYear] = useState(years[years.length - 1]);
 
   const handleMinChange = (value: string) => {
-    const newMin = parseInt(value, 10);
+    const newMin = value;
     setMinYear(newMin);
 
     if (newMin <= maxYear) {
@@ -29,7 +29,7 @@ export function YearInput({
   };
 
   const handleMaxChange = (value: string) => {
-    const newMax = parseInt(value, 10);
+    const newMax = value;
     setMaxYear(newMax);
 
     if (minYear <= newMax) {
