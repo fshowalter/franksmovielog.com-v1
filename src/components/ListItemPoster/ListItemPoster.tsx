@@ -7,7 +7,7 @@ interface IListItemPosterProps extends IBoxProps {
   slug: string | null | undefined;
   image: IGraphqlImage;
   title: string;
-  year: number;
+  year: string;
 }
 
 export function ListItemPoster({

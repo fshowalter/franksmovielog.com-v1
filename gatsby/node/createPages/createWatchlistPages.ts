@@ -17,9 +17,7 @@ async function createDirectorPages(
 ) {
   const queryResult = await graphql<EntityQueryResult>(`
     {
-      entity: allWatchlistEntitiesJson(
-        filter: { entityType: { eq: director }, reviewCount: { gt: 0 } }
-      ) {
+      entity: allWatchlistDirectorsJson(filter: { reviewCount: { gt: 0 } }) {
         nodes {
           id
           slug
@@ -53,9 +51,7 @@ async function createPerformerPages(
 ) {
   const queryResult = await graphql<EntityQueryResult>(`
     {
-      entity: allWatchlistEntitiesJson(
-        filter: { entityType: { eq: performer }, reviewCount: { gt: 0 } }
-      ) {
+      entity: allWatchlistPerformersJson(filter: { reviewCount: { gt: 0 } }) {
         nodes {
           id
           slug
@@ -89,9 +85,7 @@ async function createWriterPages(
 ) {
   const queryResult = await graphql<EntityQueryResult>(`
     {
-      entity: allWatchlistEntitiesJson(
-        filter: { entityType: { eq: writer }, reviewCount: { gt: 0 } }
-      ) {
+      entity: allWatchlistWritersJson(filter: { reviewCount: { gt: 0 } }) {
         nodes {
           id
           slug
@@ -123,9 +117,7 @@ async function createCollectionPages(
 ) {
   const queryResult = await graphql<EntityQueryResult>(`
     {
-      entity: allWatchlistEntitiesJson(
-        filter: { entityType: { eq: collection }, reviewCount: { gt: 0 } }
-      ) {
+      entity: allWatchlistCollectionsJson(filter: { reviewCount: { gt: 0 } }) {
         nodes {
           id
           slug
@@ -152,7 +144,7 @@ async function createCollectionPages(
   });
 }
 
-export default async function createWatchlistPages({
+export async function createWatchlistPages({
   graphql,
   reporter,
   actions,

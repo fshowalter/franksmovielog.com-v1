@@ -125,12 +125,12 @@ interface FilterGenresAction {
 
 interface FilterReleaseYearAction {
   type: ActionType.FILTER_RELEASE_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface FilterViewingYearAction {
   type: ActionType.FILTER_VIEWING_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface SortAction {

@@ -1,14 +1,16 @@
 export const data = {
   review: {
     title: "The Curse of Frankenstein",
-    year: 1957,
-    gradeStars: "★★★★★",
+    year: "1957",
     review: {
-      date: "Sat Sep 19, 2020",
       excerpt:
         "For Peter Cushing and Christopher Lee’s first film for Hammer, a guest review from the good Baron himself:",
       linkedHtml:
         "<p>For Peter Cushing and Christopher Lee’s first film for Hammer, <strong>a guest review from the good Baron himself:</strong></p>\n<!-- end -->\n<blockquote>\n<p>Paul, a prominent academic, lands a comfy job tutoring a young orphaned Baron. Years pass and the Baron proves an exceptional student. Together, they reach a scientific breakthrough. They have brought an animal back to life.</p>\n<p>Eager for fame, Paul pushes them to share their findings with the world, but the Baron sees the bigger picture. Their journey has just begun, and sharing now would prove a distraction. Paul relents and the two continue.</p>\n<p>But Paul soon realizes it’s no longer a partnership. The student has surpassed the teacher. Seeing his chance at fame fade, Paul demands the Baron halt his experiments.</p>\n<p>Surprised and disappointed, the Baron resolves to continue alone, certain Paul will change his mind. Paul does not. Driven by feelings of jealousy and inadequacy, Paul sabotages the Baron’s experiments. When the Baron perseveres, Paul then tries to drive a wedge between the Baron and his beautiful fiancé.</p>\n<p>Oblivious to Paul’s machinations, and fearing his experiments may be too much for one man, the Baron pleads for Paul’s help. Paul declines. When—as the Baron feared—an experiment gets out of control, Paul seizes the opportunity and runs to the village. Meanwhile, the Baron faces mortal danger alone and saves his fiancé from certain death.</p>\n<p>Dazzled by Paul’s silver tongue, the villagers arrive, seize the Baron, and sentence him to death. As a last resort, the Baron confides his story to the local priest, who responds with disbelief. Exasperated, the Baron thinks himself at his wit’s end. But then Paul arrives at the jail.</p>\n<p>Though they may have grown apart, the Baron remains sure that Paul, a man of science, will aver his story. But with ice in his veins, Paul turns his back on the Baron and leaves the jail with the Baron’s wife on his arm. Years of living in the Baron’s shadow have driven Paul into a self-righteous delusion. In condemning the Baron he seeks to become him by assuming the Baron’s wife and wealth. The Baron, so close to freeing mankind from the shackles of mortality, faces death. <strong>This</strong> is the Curse of Frankenstein.</p>\n</blockquote>\n<p>Thank you, Baron. And I agree, <strong>Paul is the worst.</strong></p>",
+      frontmatter: {
+        grade: "A",
+        date: "Sat Sep 19, 2020",
+      },
     },
     seoImage: {
       childImageSharp: {
@@ -23,7 +25,7 @@ export const data = {
           layout: "constrained" as const,
           placeholder: {
             fallback:
-              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAADMklEQVQozx3M7VPTBQDA8Z+Q3gUKnnLQKTkcMFhcKDKeIgYObYDMIWxjLAabDHCwAXMOGNsYC3EgTC0xKSKwUwIp4OrwTqPrRXFQUV1E5au6zrvOu7LTrocXvPh21+cP+AipUim5hzKIjYpCEAS2PxXODkGgqiCfnhYnZSV6Rl9/h8pyLenP5ZCXdRSLyYrJ1EpbeydanZHUDDkZsnwSk1IQElMkqOSFiGNi/g/Dw8LYLgj0VWvoaTpHreo0XW1eSrKL8J718P67c/S5erHoLQR7z+Nx+1BW1HK48CSitByEhKQkFBmZyJMlhIUJREQ8zdEUMa+Zjdg0Jto1TZx4UUmm6CDvvTnOg/ubjHR7cVlaMOoaCPYPY7E6kCoq2SvJQnj2wAFUxUrM6kryUhOx1ZlYujHNeHAQp8ZId0UdsiQJMzem+OX+96zfuc1s6BWu9fhw17czNDhKly9IfqWF1PwTCKL4eFpsTow6A6rsLK54A6x99hUXHJ10n3qZjlIthtJS/v17i98fPOSn9RU2Pl5ktq+PgRobDQ4/zQ4/OSU1yORlCIniZGTphyiSZaFTHCdgtbP2ySorS/cYeyGX+rTDXL90mSePHvPnH//w89dfsDo3wczYW5zv8GI/bcdubsZQY6agSImQJJYgFSeQKU2mqkiBS2/gYmMzq3c+YtreiLeknOXFBT6YmebJw0d8d3eGhZF+lm4voteYOaM1YVNrMJRVkHMkDyFBdJB9sXvYH7sbdUEB1pMV9Girmb10lZC7k0CtkcXpm4yPXmHrry2+vbvAhNvF1OVhzEYr2pdOoZMfR5kjJy1NhhAfv5+o6Cj2Ru+iqrCYc3UNjA+FWF1e4e3hEE3HFFx0urg1OcnjX3/j8/kprnedpb1czRl9AyO+AQZ7+zGqK8iVpSPsi4thZ2QkomfiqFaq6Gq0M3dznlvXJpgcGiZgt+K3tLK58QOb69+wsbbKGwE/A9p6rnr66Ha6ULV2kJF1hN07tiHsid7FzohIsp+XYamxcMEXZGH+Hm3VNQw01fLp8ocE7A5+/HKdV4MDjHlsjPnchDx+6htbSDmmIjm/mNi4OMK3CfwHV3jjcuj/45sAAAAASUVORK5CYII=",
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAADMUlEQVR42g2SbVDTBQDG/3CllglqiCmEwIYErEEgcsYYQyFwugFrw7lXYG7CmLwPcAMmg4BAwileQL6ceaCFR9OyupLWJ+uu7roDtNO6PnRZX9Sr67yrru7X/9Pz7Xf3PL9HkEgkFOTtIinueaIEgaeio1i/bi06VQmDbV1Ul1cTCE5gr21kT2E5+kP1eJqP09TZj8HsoKyiitSsPNIz5cRv2YqQkZWJKn8322I3IkQJrF3zNM+IYNf+cnyNXirVVkKT59DuO4jq1VJ0Bwx4nM1YjUfo6+nH5XSTW6hmt6KcDPkuhJQ0KVqlCtn27QgiSIiOZp2YI0Y9XXUtOKqcHDU1UPTSK0yPhbi3ssqbvUN4bC787X4GTwyjt7jIUGqIT8tFSJZIKZLJ0eTlEx+7gcyd6fhtFmbbW/DoLHTXuFDKC6gqVrK0uMDd2xFOdXnpc7dhMzoZGZzA09pDrtpMYo4K4cWEBOqsDpwmK2U5MoY7urn1waeEgm/QabDh1ZhQZMm4u7zKwwcPWL4VJjI/zeVAgIHDHoIjU3QHxinQ1CJTHEBITUrBdNjO62otOkURb/lPcGflJ84Ghgi+pqFJpabNUc+///zH418f8fPydywvhbkyPMpYYw+2Bi8uTw/7Ki0UlhxEkErSyZJKKcyWU1MqirDXszhzgXvfLjNXUYLj5Rzeu3SJH1bv8OfjJ9y/vUTk/CkW371Cu6OVdrubDrMNh8mOQrFXBKamsTM5EZkkCV2xio4aIwNGE+Hpc5z3dTIqThH58Dpz78zw5OHvrHy+wNWRAW5evYbZ6MKsrsFaqkajLCNbJlrekbSDuM2xbNm0gSplMUe1lQRq67h5cZ5Jvw+vrpqLZ0LMTp3h7z/+4pvwZaY7mhnvaqPe3IBDX4tLq6dSWUp+/h6ExIRtxMTEsHXTRvQlZfhdx3hfhH31xdfMnZ6iQfzjaFMrn9z4iEe//MbKlx8z3eejRVXB8To3M2OTDJ0McahaK7ZMQHghbjPPPbue9ORkLFoD/mNeFubDjHf38nZ/LxdOT+A74ubH7+/zWfgGkevXmA0GmHS3c7I/iMFSR7ZGT7IkhTWCwP+3I+AXlIL2UwAAAABJRU5ErkJggg==",
           },
           images: {
             fallback: {
@@ -46,28 +48,27 @@ export const data = {
         },
       },
     },
-    grade: "A",
+    originalTitle: "The Curse of Frankenstein",
+    countries: ["United Kingdom"],
+    runtimeMinutes: 82,
     viewings: [
       {
         date: "Sat Sep 19, 2020",
-        venue: null,
+        venue: "Blu-ray",
         medium: "Blu-ray",
-        mediumNotes: "<span>2012 | Lionsgate Films | Academy ratio</span>",
+        mediumNotes: "2012 | Lionsgate Films | Academy ratio",
         viewingNote: null,
         sequence: 872,
       },
       {
         date: "Sat Oct 24, 2015",
-        venue: null,
+        venue: "Blu-ray",
         medium: "Blu-ray",
         mediumNotes: null,
         viewingNote: null,
         sequence: 527,
       },
     ],
-    originalTitle: null,
-    countries: ["United Kingdom"],
-    runtimeMinutes: 82,
     directorNames: ["Terence Fisher"],
     principalCastNames: [
       "Peter Cushing",
@@ -79,7 +80,10 @@ export const data = {
       childImageSharp: {
         gatsbyImageData: {
           layout: "constrained" as const,
-          backgroundColor: "#181818",
+          placeholder: {
+            fallback:
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAAC4jAAAuIwF4pT92AAAH1UlEQVR42jWVWUxc5xmGDzDgwWAYBmbfzpmdGYYZYFhm2GYGxhibMTAGm3XAdmyClwDG8m6Cd8fGZLcdZ3EcO3vdpNnqKqnSqonSVpGSNpWqqlJT9aK9qHrRi6hX1dMfS714dXT+c/5vfb/3k3RlVejLdBjKdRg1/3/qMVUY8FscOI1WDBX6h+c6AbPWgK3K9PB9DRatEVulCauASXyTnAYrin4NFmSDRXwwYhHG1gxaNEbkSvNDB2aNgaDJQdim4FpzIs7W4DbZiThctLq81FgVpBq7kxq7QrPTQ0ocNrs81LicWIVnV7WCN+LBajTjUhy0RYJEXG58dhmLiNIsnK9lEBN328XdgMhIijicJN0eNnt9TIT9bPL76JyKkziWJL4nRny6he4zG+m90svGk100D0XpPNjx0KGsNROwyXjMdnwWO9VWGSloczLk9zDjcpA73EliezPN6TDN2xpoEpfb93eQnGmjfVcryYUkiT1tJEZbCNX5iUUDNCseOhSRidmGIqKVWl0+2jx+2q1OMoe72HFzgG1PZug51UX2Ui+zL2zl6LkEuQtpJi/1cOp8J7PLKaae7mN4dQtxh5uIKJtbROk2i5THRHQ5v5NGWaSaaWZgWwvDk62kJzvYOxZlZSbCY4+0ML0zTiYXY08yyPSuOOPZBgYGmtjk9dIoyrbWmKSorzTq87DbJ5P1ehiq9ZERz52iAVNWE7caZPa3NBHzhfGYFEZFWV4Mmfmwyc41v5kDTisbRf0DDg9bheGP46LLx6tt3IpYebzaxLVaC3diCi9FLSzE60nFWtDX1KPRmylQlxIw6bjXYOZL8c/nzTJLAQvdbi89ghVZj5uxai/SjWAlt8MmznireK7GxKeNBp5O1OFraack3EjxjinUQ1OsF4alwlL8VTq+EhH+OWbnSLWV8yGZOxELZwJW0YsA0geNdn7ZZmM1ZORqwMyvGo0sTw4RPXiE8JVn0WzJUpabxdifxZJsQxJTNdMV5cl0A3vdDgZ8PraIdId8a9TzC9pUVHA/YeHTDgd/z9j57yEdrywO0vTsHcypjVRtHsSU7EZOt+HNbqa0KYkmuwNDKMhiyMVpgUsiukM+M0t+MXpSgRqVugztBi2HQ3o2dvjQ+sMYewepqq1DqY9gzPZTevlJ5MEtqJZepPzoCo5kF45Ugt6Qm7frrezzWZnzCx4WFhZToFIj5RcJ6+sECgVUrC8pwx6txbB7krzXfob6zV+gzEyJoj+g8MwrFFx+l3WZHG6/mxNh50Om7A44kVRFxeQJYyph2OCRMdUF0Fd7MEUjrJs/gfT+t0jvfYfqjc8oO3se9Z0fo75wg+LxwxR1b6d4dJbORBcT1W52i9mXVIXrkfIKKa7UY4xE0MXjVKTTFCw/jfTuH5De+AbptS9E936H9OD3aFMpyrfvRXr7ezbsu4x2aAJjaxuTQjh2ee0i04K1NCVKHIqomeBcug/1/gNI94WRe78l78YnqM7dpOjyC6iXVikW2li5sELu0SMcbWsl3JfBHUtwTKhS1udCKhIpq4XslIQilCR72bB1FF1TM0WHjiKdX6UkM4wmEEHbnqJKkSkTDbsxsYm/NZVxqr0W1chBWjozTDvtDArFksq70xT19FKY2kLRxBFUJ19F096NelsOafk6eTd/Tt7tr8m/9B6FiT4aFBt3WxUWaxTmmwLsSbcy3GxjqcfJZ92ihoVCvopLNlCqqUTV2k9+1yQFcpAiqxt1sIWi6eOolt+k4OL75J9+iQ19ORShgYpQ504xcseydm6dNjI/6WaqV0xKjd+GP+jDKWbRKZvQV2rwCU5VCPWoFEpeZbZQITTP0dGOYfMQRYvPkHdwBV2wHsWgcG3RzG/u6rl+PEiiNYSUG65jrM/LTFamMdWIbu4YmXPTSLNnyD9wnoL5i0jzV6nbO469O4l07h7rT99kXXKI7Eg9Hz6ncPO4l8Wcn2i4Bml8wM9Xtyv4ZEXH1GgQTW6O2OwONPMXKB2ZpWDyGOV7Ftm1M0xHzEfR1XfJu/M10hMfMX5jH5dmjNx/wsnssJ9AQMzygVEv3766jj++tZ57yzqaol7i7SGaemLENrWh7c8hH73A5ZU4h7dbMY7tJX/XSaRLPyV2/wPunrUz0uOnK15LS6Po8tZ3XuStl+v4z+cS//hQzWi/l2jUj95kxBd0IyfSVF68y/RT+5hKl+Ef2II0fArpyG1q7z9gfCBAtUdsy3o/skt0Oe/+v1l4fopvXsrnmRMVdLU6aI970Nsc6K02gh4z9akY9rYEbnsV2r4Jtl6d5c3rEf75aRmvL1XS3uBFdrqxyILYg7ev8vGFcj5a1TKQ9rCyz8a1ebHwBd8Mdgcb29x0CXUO18gYxTTJvRnOHvBxd66Sb54t5dCYi/5UiJ4OFxcfsSH95Z0yvlit4K3HzfR0iv0QVNg5bKEz7sAq25DHxgl1tdJS7yQqZOr5ZZmFUZfQTBvn91oY6qmhN1HPVH+Qp+YsSD98mc+/3l/H9TkjlWJR6wUOT5vYPWKgQewaY2aEQG4CZeswSyea+P6FQlYetfH9y8U8NiIzN+5jYdxLVuzy6X5B7F/f2sAPD/L5yUUNZtlNdcDNtf123j5jZrBbkD3Vi/GxU3Sf3MeDK3a+PKvlu5Vyvl4t5diInb/+qJw/vVbGwnYnjwxW8z/IMB9iXYS4OAAAAABJRU5ErkJggg==",
+          },
           images: {
             fallback: {
               src: "/static/85e4595d8908ad1b13445c48acce1ea8/31a1c/the-curse-of-frankenstein-1957.jpg",
@@ -101,19 +105,18 @@ export const data = {
         },
       },
     },
-    watchlist: {
-      performers: [
+    more: {
+      withPerformer: [
         {
           name: "Christopher Lee",
           slug: "christopher-lee",
-          entityType: "performer" as const,
           avatar: {
             childImageSharp: {
               gatsbyImageData: {
                 layout: "fixed" as const,
                 placeholder: {
                   fallback:
-                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADxUlEQVQ4y01UWU9VZxQ9/8IQFJnRxpeKVAQRpMzz7EUKIkgQKfM8zzNS5nkGrRoFRJCCVIoENRZtiEnjc6tvxr+wzFrmEG/y5Z577v7WXnvttbcxMTGG6elJzM/PYm5uRs8LC3NYXJzH2NgIurs70drajKGhAf0eHh7E7dtdetfS0oT6+lpUVVWguLgQRUUFMPr6flPw6OgwCE5gBkREhCE4OBABAX7w9fVBZWU5amurUVFRJrDGxnpUV1eitLQYBQV5yMvLQU5O9jfA/v5eZSYrvnR0tIeDgx1OnXKGq+uP8PS8AHf3n5Cefh2dne1iVlNTpSRlZSViRsDs7CwYBBsc7Mfk5LhYnj7tAhcXJ/j5+cLH55LAyNbf/2ecO3cWqakpGBjoU4lkSMYlJUViKYb8kyWTXVNTA7y8PHHtWjK8vb30nJaWqmTUlRc9PNxhsSToMuPJlKBMQJYC5OGFW7duihkZm7ru7PyJ9+8P8e7dAV6/fonCwnyVn5AQJ8C6uhppSy3z83Nh8DLP7Ow0btxIUwMow9raqsBevdoX2P7+Ht6+/VsaEpASNDTUCdBsDpMZbAYPASl2UFCAAh8/Xsb6+hPs7e3qrKws4dmzTbS1tSAqKkIAZMhYWscs3aC3qJHpw9jYaERHR8p/d+4soKenW1JkZWUq6YMH91Ta8vKjo47zEJilGwThxbt3FxWUlJSI8+fd5L/29lb09vYgIyNdotP029tbiiNjSsPEXV0dR940yOx7QHqKfmPHyG5r6w8Bra6uYGNjHZubG2JKIgRkQsZ1dLShubnxG0N2mKBLSw9Fn6A8lIK6mWAsl7F0AJ3BZnIwOIosnywNk939+7+LIX/TY/QiR3FmZupotglAzflMS/GYoGbZBrtJBuzo06dreP58WwH0Y0rKLwpkFSMjQyrNHFOWyNKnpiYESpbU02Ap1ImlUXDTb5mZGZoIlkJQswG8SBBahAnImMBkSxkMgr148RcOD//BwcEb6UT9Ll/2ln3Ky0sVSD1pYErCRnIIaGQmprkpA98bHz78K7Dx8VHExETB2dkRVlbHcOKEteaZG4WdZBJ67dOn/2Xiq1ctcgNHMDQ0GLm5v4qtwY5xjAhgbW2lteXk5AB7e1utLwIlJyepxC9fPoME4uJi5Fc2jlXQsyEhQfKr4ebmCltbG9jZndQeJJB5mIQbxmKJx+7uDvghgcjIcAGSZXh4qADDwkI0ZQa38sWLHjhz5gcxIzDBCG5jc1wXuCNp2o8f/9M6ozSJiVcQHx+rXRkY6K9vvv8KUOjfZYP42QwAAAAASUVORK5CYII=",
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADxUlEQVR42j1UaU9VVxS9P6NFG2TSVG2loC1I1ajMM2gLyCiisczzPM/zPM/TA6RIRUAKhKASp0TRhhDT2Pilfmv8DatZy9z3kp1z3j37rLPW3uscY3R0GOPjo5iZmVJMTo5rnJub1ffu7k60tDRhYKAPzOXY0dGGhoY6RXV1JUpLi5Gfn4ucnCwYXV0d6O/vxeBgP0ZGhjA9PYnGxnrcuBGJ0NBgBAb6w8vrKoqLC1FZWY6SkiKt19RUoaysBAUFecjOzkRmZjrS01O/APb0dAl0dnZap50+fRJ2drY4ccIJrq4/wMPDXXH79i2xqq+vRXl5qXIJmJubjYyMNKSk/AaDYL293RgeHpREFxdngXl6XsHly5fg7v6TWHJ+9qwLEhLiJJsSCUjmnJNlWlrKF0Cyo9TW1mYxiYqKwMWLP2seEfELqIKHkcn5824qBzezfpRN0Ly8HLG0MiQgN5AJi97Z2Y62thY8erSGg4O/sL//Gi9fPreCXr8eLsCKijLJp3TW0SAYg91NTr4rZgRaW3uI3d0dgRDs2bM9vH37RrlkzoMJxkaZzVGXKbevrwcTE2Pqnq+vtxIePFjG+voq9vae4NWrF2K6s7Otw4KDA5GamiyGVVUVVtCiogIYQ0MDssvU1IT8x/qFh4dK9sLCnOpLmQQYGxvB8vKSlCwtLQq8rq5GQXBKNwhksczIyCsrfyAxMQHnzrnKe7W11aplUlKimsDDt7c3BcZcymcjaXzT5IZ5KxiUSdqxsdECoN8IQEvdv/+7ZPM/c+lZAvJAqmlubhRTw5RKlpTDhaysDHmLG1i31dUVbG5uaJ15rDmvJNc5tre3Wlkaptx79+a1gXP66ebNeEnkOi3F7zQ0g9+4xutKUPqU0gVImawHbcKukhEZ+Ph4IT4+Vp2nAsqmPG4mWFNTg5zBB4P5JktjY2MdW1t/qjaMp08fy3esIc3LJJ5OIHMTbw0fCR5gOoRseUkMgtHABHn3bl+FZ3H9/X0REhKkWhKMlqHnyGhxcQF37iTJTrQQv7NJLI1xeHiA9+8PZQXaw9n5exw58jWOHrXBhQseKCzMlyTzNnz8+I/8R78ynyMfD147sjXm5y2IjPwVjo72sLH5Si+Nk5OD/nPkG8cG0dgfPvyNT5/+RUxMlB4Ivjwsi7e3pxSRteHm9iNsbb+xAtnbH1M4ONiJKe9nXFyMmsafxTKrUkRHRyk4ZwPJ8tq1MBh+fj6SdurUtzh+3NEKRoY8KCDAD2fOfKd6ff78n5oVFhYiqXzaTMCgoABd2f8BaGnjP5qwW7EAAAAASUVORK5CYII=",
                 },
                 images: {
                   fallback: {
@@ -136,19 +139,163 @@ export const data = {
               },
             },
           },
-          browseMore: [],
+          titles: [
+            {
+              imdbId: "tt0089308",
+              title: "Howling II: ... Your Sister Is a Werewolf",
+              grade: "F",
+              slug: "howling-ii-your-sister-is-a-werewolf-1985",
+              year: "1985",
+              still: {
+                childImageSharp: {
+                  gatsbyImageData: {
+                    layout: "constrained" as const,
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/UlEQVR42h2SW1NbVRiG919QhzPkfD6S7J3sJGTn0KSQhCQklBToECpYiRjKwYa0gba2SEcYHdEiQWinjmM7Vq+8sTrjDFO99sJ7xzv/x+PS67XW8633+V6pe7DL+adtEppKZ2uZ8/0NpjNR5ktZZso5zFYjgYALk9mI3W7GaDLgdLsIRVSiiQR+WcarqCy+u8Jff18gHT1s8vjhFgtzNVYXq6g+C7JlmPVqmpnSODanjbDsRlW8GAxGKlNl4vE4wzodbr+foBohEA4RSansfbKEdH64wasXn3F/Z4e9ux0axTiVgIGNcoyluSrhmEJGk6kWkmxvb/HPnxc8Pz4ipEbpHxjA7nIRS2ho4yrJcgDp9ger/PzqF7rdb/j14g9enp1SibqI+BwkkzGuzU1Rny2wOFfh5FGb1+d7HO/cIj+Rp6enh6HBIXQGA0azjWDMhfTF8decnH7HR/uP2Wrtc3TyPfc6d5CDHhFHJl/IcCkdZbqS53j3Jj/ur9OqZbmkRegfHKCvr48REX9oeASH14H0/MVPnD35gdW1NtnCFTr3PufD+3tMFRL4gl6i0QCF8RilyQw3rk6yey3Ho1aTZFpj1GdFpxvGIWJbHA7MFivS6dlL3mlsCsFB/EqExtou7zXblIsTyGqQy9koxdwYuWyEqUqVZ191ef3b71SvLrC8tCLAGcxmE6PhIFaHBWlt/S5a+r962HH7/FRqi9xotJidr5PKaARDftwel1jIAw4+PuXJs2/5svuURKZEZea6OI/hEjXyywH0Zj1StXadiWINu9MjXOgZS10WF+vUl5osr6ySSKXxeoMcHD6l8f5tbm5u02o/YPNWB3UsjdMTwOX14h31YbSZkOpvN6mKScMjegYHBnGPyoS1DKnsJNOz8yihEIoS407nkJnZZdR4hvKVBca0FHqDScCCwp1F/FTBIKJLFquoR6YoHsbp7e3FI4CKAHoCIUrCWS6fF53TKFbmGRdLc/sVocfJm2+89T/Q5vTR399PQJExWsz8C+1KornxZy5FAAAAAElFTkSuQmCC",
+                    },
+                    images: {
+                      fallback: {
+                        src: "/static/6952aa842ebbfb07e22cace32491b8e4/11456/howling-ii-your-sister-is-a-werewolf-1985.jpg",
+                        srcSet:
+                          "/static/6952aa842ebbfb07e22cace32491b8e4/43c32/howling-ii-your-sister-is-a-werewolf-1985.jpg 78w,\n/static/6952aa842ebbfb07e22cace32491b8e4/78def/howling-ii-your-sister-is-a-werewolf-1985.jpg 156w,\n/static/6952aa842ebbfb07e22cace32491b8e4/11456/howling-ii-your-sister-is-a-werewolf-1985.jpg 312w,\n/static/6952aa842ebbfb07e22cace32491b8e4/a02d5/howling-ii-your-sister-is-a-werewolf-1985.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
+                      },
+                      sources: [
+                        {
+                          srcSet:
+                            "/static/6952aa842ebbfb07e22cace32491b8e4/08742/howling-ii-your-sister-is-a-werewolf-1985.avif 78w,\n/static/6952aa842ebbfb07e22cace32491b8e4/1c619/howling-ii-your-sister-is-a-werewolf-1985.avif 156w,\n/static/6952aa842ebbfb07e22cace32491b8e4/c02e5/howling-ii-your-sister-is-a-werewolf-1985.avif 312w,\n/static/6952aa842ebbfb07e22cace32491b8e4/81026/howling-ii-your-sister-is-a-werewolf-1985.avif 624w",
+                          type: "image/avif",
+                          sizes: "(min-width: 312px) 312px, 100vw",
+                        },
+                      ],
+                    },
+                    width: 312,
+                    height: 176,
+                  },
+                },
+              },
+            },
+            {
+              imdbId: "tt0040246",
+              title: "Corridor of Mirrors",
+              grade: "D+",
+              slug: "corridor-of-mirrors-1948",
+              year: "1948",
+              still: {
+                childImageSharp: {
+                  gatsbyImageData: {
+                    layout: "constrained" as const,
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACB0lEQVR42l1TzYuxcRR9Vr6Z8f3NYOGbxIJ8bDAlkUyTotRIGSxsSRMbQk02Vv4Pf995O7fM4l3c5/k9v+4995xz76PYbDY4nU6YzWYYjUZYLBZYrVY4HA643W68vr5CrVZDq9X+BXPf3t6QTqcRi8Xg8Xgkn3WK3W6Hy+WSwv8Bea/X6xEKhVAul5HL5QRMp9PJPckEg0F4vd6/fIUHxsvLCwwGgwA/Acmc37PZDIfDAdPpFNVqVUA1Go3kBQIBYUgi4XAYCmX5fD4pZFe+CcauT8DRaITdbifAjFKpJCypiDnEMJlMclaSySTy+bwA8JIy2JEymcDC4XCI4/GI8/mM7XaLSqUi3pEAlbEp5RJDoQQGi0mbcniORqMCziG8v79jtVphMpmI7EQiIXm0yO/3o9frYbFY4PPzE8r39zc2mw3m8zmazSYajQa+vr6wXq+FCYvo1cfHh+T0+335Jjs2KxaLOJ1OErVaDQo9ud1ueDweuN/vwoBs9vs9ut2uyKHx7XZbrCFrekepBKWqbDaLTqeDTCYDhY/xeIzr9YrL5SKG0zMGV4VrEY/HpclgMBB/n2tDYCrgnnLqnIHCZGr/+fkR6YVCQTyr1+tIpVICEIlEhC2bcuIEYDEBCfyUz3uFu9NqtcTU5XIpIPwDCMxJ0i/K41L//v7KAFQqlYCR6TMISJb/AMB0UvLrIeu/AAAAAElFTkSuQmCC",
+                    },
+                    images: {
+                      fallback: {
+                        src: "/static/f7bea02c8076f9272954ad7cdcbb858b/11456/corridor-of-mirrors-1948.jpg",
+                        srcSet:
+                          "/static/f7bea02c8076f9272954ad7cdcbb858b/43c32/corridor-of-mirrors-1948.jpg 78w,\n/static/f7bea02c8076f9272954ad7cdcbb858b/78def/corridor-of-mirrors-1948.jpg 156w,\n/static/f7bea02c8076f9272954ad7cdcbb858b/11456/corridor-of-mirrors-1948.jpg 312w,\n/static/f7bea02c8076f9272954ad7cdcbb858b/a02d5/corridor-of-mirrors-1948.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
+                      },
+                      sources: [
+                        {
+                          srcSet:
+                            "/static/f7bea02c8076f9272954ad7cdcbb858b/08742/corridor-of-mirrors-1948.avif 78w,\n/static/f7bea02c8076f9272954ad7cdcbb858b/1c619/corridor-of-mirrors-1948.avif 156w,\n/static/f7bea02c8076f9272954ad7cdcbb858b/c02e5/corridor-of-mirrors-1948.avif 312w,\n/static/f7bea02c8076f9272954ad7cdcbb858b/81026/corridor-of-mirrors-1948.avif 624w",
+                          type: "image/avif",
+                          sizes: "(min-width: 312px) 312px, 100vw",
+                        },
+                      ],
+                    },
+                    width: 312,
+                    height: 176,
+                  },
+                },
+              },
+            },
+            {
+              imdbId: "tt0051554",
+              title: "Horror of Dracula",
+              grade: "A-",
+              slug: "horror-of-dracula-1958",
+              year: "1958",
+              still: {
+                childImageSharp: {
+                  gatsbyImageData: {
+                    layout: "constrained" as const,
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACMElEQVR42nWTWU/bUBBGfX1t13HsbM5CSJyAyOKE4JCFQNjKIkEb2gBtHyq1qBVSpVb9/8+nNxuVoH0Ya651fWa+b8aapmm8DPGUu/E4mWQC14mhq7OR3kQkqmivcuhOFsvLo1spNOmq+8bsm5cwscyD4hqXw4izfodR2GAt5WFYMYzcNsKtzsMNduZhZusIM/4voIawPEw3z363zdtxj+npPhejHtViHlPqmIUWZnmA8EMyYY9gdILfGmLEkyvgQqLQzYUkt4SXLbLbDjloNbka9xk0azSCgKSXxF5vY5V20GIFTCU5likSz1cwHW/GWfplesh0A+muITN1co0hNydjpvsj9mobhIUc591tSuVNEuHZ3L+5Z4aPpq/802csqSTmVFcbaJaPnmoiKwfk6wO+3075dX/L3XjIUafFt5trWrUWXqGmBrO+gAgbIRMqn0HlDDirkkb3qujpDtKvI4sd/GqXx7tbfijoz+l7Pu4N+XJ9ybi3h1NoquLp1VSXIGNlnXoIS8EiNb02du0QI99Qa+BwdTHh4fSYz+evmSgvvx4dsRv10Oys2gR7JfF5aAsPpNqnhDK23EcYMWRui2jyyMNwxLS7y+ugzKQRslGtLEHW/4CzNlU14aLHK0p6oApYJNoX2H6Ju6jP73f3fBgdcrYTsT1QHYq/iy+ERBo2utqQJ6DQHBUxNRwlxUihmw5mqjS/0I8GfHoz5XR8zFa9SbFSefY3CXRpKKA1f/cHBloRD8+DvtkAAAAASUVORK5CYII=",
+                    },
+                    images: {
+                      fallback: {
+                        src: "/static/91ea37fc9f2f1d22322d0cd7f9195206/11456/horror-of-dracula-1958.jpg",
+                        srcSet:
+                          "/static/91ea37fc9f2f1d22322d0cd7f9195206/43c32/horror-of-dracula-1958.jpg 78w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/78def/horror-of-dracula-1958.jpg 156w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/11456/horror-of-dracula-1958.jpg 312w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/a02d5/horror-of-dracula-1958.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
+                      },
+                      sources: [
+                        {
+                          srcSet:
+                            "/static/91ea37fc9f2f1d22322d0cd7f9195206/08742/horror-of-dracula-1958.avif 78w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/1c619/horror-of-dracula-1958.avif 156w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/c02e5/horror-of-dracula-1958.avif 312w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/81026/horror-of-dracula-1958.avif 624w",
+                          type: "image/avif",
+                          sizes: "(min-width: 312px) 312px, 100vw",
+                        },
+                      ],
+                    },
+                    width: 312,
+                    height: 176,
+                  },
+                },
+              },
+            },
+            {
+              imdbId: "tt0065854",
+              title: "The House That Dripped Blood",
+              grade: "C+",
+              slug: "the-house-that-dripped-blood-1971",
+              year: "1971",
+              still: {
+                childImageSharp: {
+                  gatsbyImageData: {
+                    layout: "constrained" as const,
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACyUlEQVR42iWTS28bZRSGrUpNlcSXuY/HM57xeDwzvkxsJ77FdpwLESqkDVFIlC5whCCii5ay66YiEoUNEl2wYYGQEFvEgj8Av6AbFvwG/gOrhxOz+DSL75z3O+d9n8l9//qA775c8O2rPW6/mNBpVHAsg8CzsW2DZt1lmgUM2z7tukccVAgqltRomLqKaaiUbRXbVJlPYnInRzEP9yMOpiHzgU9cNYmkqRl5K+F61SEJbGquhWubIqKhFYso+U10pYiu/n+8skaz4ZDb3Mxz//46j2cBzdBkbW0dUythaAqGWsKV00uqDLoRSkmh3/T48fUlt5+foBY2paaIoRQw5WvrCjldGvyyyu0nYz58t0noWUS+TSty6aU+Z8OQm/M93txeydRVnry/xT9/Pufv359zetiisJHHNRTKeonA1cntblWZ9mvMhyk3y8dMtlNmg5T93YyHR2MuTmYcz3scTZsMeg3Capmfv3rEv399zcvrGQ8erOOIf7Zs5NoaueVJS15qc3055Yc3L+hnKdtZzHCnSdYKuTjosNcNUEt35psSissv35zxx09LPj3fYWNjQ3xV0JQSloSUW572WIxCzh/1WZ71scWLLAl4Z9Ela9c5HKeMshDfddA1nW5a5e2vn/H2t6e06mWK+TyFu4DuvJQpcy+uR1yebrO8GvHRxQzb0GmLf6NeJOiUiWruKulBJxbhRDyusL9d54PjLoOtkIPdlFSElWIBy5CVby66fPxkyrObQ66vxtJsCYtVktBdCdYFocivsBh0eW8xlruQxK9SMUw8xyIRvPbGsUzrCIsimCUOmawx6Id0Ug/fEfYk6ZrAm4YVEfDIpGnaS5nIhIl46ImXlqox2qpxOI24d29Nah3asXvHYVF8kHE1dSUw7ITsyrrzncbKv6NJImJ1OrEv2NRkAwHeNFYhWQL58SJZ/SWxINVqOPwH06FMdCw/ZacAAAAASUVORK5CYII=",
+                    },
+                    images: {
+                      fallback: {
+                        src: "/static/472d81a715cb78e4b6623a74e2804edc/11456/the-house-that-dripped-blood-1971.jpg",
+                        srcSet:
+                          "/static/472d81a715cb78e4b6623a74e2804edc/43c32/the-house-that-dripped-blood-1971.jpg 78w,\n/static/472d81a715cb78e4b6623a74e2804edc/78def/the-house-that-dripped-blood-1971.jpg 156w,\n/static/472d81a715cb78e4b6623a74e2804edc/11456/the-house-that-dripped-blood-1971.jpg 312w,\n/static/472d81a715cb78e4b6623a74e2804edc/a02d5/the-house-that-dripped-blood-1971.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
+                      },
+                      sources: [
+                        {
+                          srcSet:
+                            "/static/472d81a715cb78e4b6623a74e2804edc/08742/the-house-that-dripped-blood-1971.avif 78w,\n/static/472d81a715cb78e4b6623a74e2804edc/1c619/the-house-that-dripped-blood-1971.avif 156w,\n/static/472d81a715cb78e4b6623a74e2804edc/c02e5/the-house-that-dripped-blood-1971.avif 312w,\n/static/472d81a715cb78e4b6623a74e2804edc/81026/the-house-that-dripped-blood-1971.avif 624w",
+                          type: "image/avif",
+                          sizes: "(min-width: 312px) 312px, 100vw",
+                        },
+                      ],
+                    },
+                    width: 312,
+                    height: 176,
+                  },
+                },
+              },
+            },
+          ],
         },
         {
           name: "Peter Cushing",
           slug: "peter-cushing",
-          entityType: "performer" as const,
           avatar: {
             childImageSharp: {
               gatsbyImageData: {
                 layout: "fixed" as const,
                 placeholder: {
                   fallback:
-                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADwklEQVQ4y21USSj1URy9kZJSNqzsZKFkoViwkXqSeLKzILKxYEeSkhdFUViY53nMkHnOPD/zPGR+5lkoeufr/L7e+zbfrdv//d+9/3PP75zzu2p7extbW1tYX1/HysoKFhYWMDs7i83NTdTX10Or1SI8PBw5OTno6enB/v4+3t7ecHNzg7u7Ozw+PuL+/l6ez8/PUMfHxzg8PMTOzg42Njag1+vld0ZGBmxtbaGUMk8rKyu4uLigqKgIHAR+enrCy8uLTL6ri4sLnJ2d4ejoCHt7ezg5OUFzczMsLS0FxMLCAtbW1rCxsYG9vT3s7Ozkv+joaBgMBnx+fgrY6+vrX0BS58L5+TkuLy+FbXBwsHzk7OwsAAR3dHSEl5cXUlNT4enpKYeFhobi+/tbgAj4/v4O9fDwIBpcX1/j4+MDDQ0NsplgSUlJKCkpQUxMDLKystDf3y/6lpeXw8HBQVhPTEzAaDT+AyRdiknQr68vFBcXCyBZVFRUiEmUglVQjunpaTFHo9GIFH19faInAUlI8QcnQSnw7e0tXF1d4e3tjfb2dszNzYFJoLsEZhK6u7sRFBQkB4+MjPwfkExZ/s/PD6KiouDr64uOjg6JDwFNoIzX+Pi4rBNwfn5eviEh4igTGNkRkK7V1tbCz88PsbGxyM7OFiCWSu343tvbK/rGxcVJOigXK+PTrCHBGFS+T01NIT4+Hk1NTRLoxsZGLC8vo7OzE/n5+bLe1taGgYEB7O7uymQFlMTsMk+4uroS8VkGw8ug5+Xlobq62vwB40UdW1tbZR9dHhoakgQMDw9DEYhZZMDpIruEk0DcQIY0geAHBwcyx8bGUFdXJ6WzPWtqamTyEEVWp6enogV7miaYANPS0pCZmWkujesE7urqEmPIrLS0FFVVVSLP4OAgFFkRjBolJibKTE5ORnp6OnQ6nZhA7WjK5OSkBJuArGxxcREtLS2SS5a+trYGRQepS25uLpycnCSD7u7usonMqCXZUC8eSlZkyu5gNSyTkqyurkrrKpZC0JSUFPj4+MDNzQ1lZWXiOENNtnTVFJ2lpSVJBAHZ9zyAHUXWrFYY0jXmKiIiAoGBgSIBP2IeIyMjJX8EIzANZFY5qCd7nYDcy65RvLpGR0cREhKCgoICBAQEyGXw+/srp1InVkF3CWpqNQ5KUVhYKI5XVlZKNhXZsFz2JvVISEiAh4eH9DGBKDTzR+d5UVA33iocMzMzEno6bIqOYpYI5u/vLwxZQlhYmGhHOQhAUDrNJ294msXB252B5jvXCf4HXwTLhXVrJjUAAAAASUVORK5CYII=",
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADxElEQVR42lVUSSh2YRh9FZGSrCSxtTFFKRsrYaMoViQrbIRSSiJJLIx9KPM8z/Msmed5nofM87zB0Xnq/vW/9fbee797z3POec7zqY2NDXCvrq5ieXkZc3NzmJqawtraGnp6ehAcHIywsDDk5+djZGQER0dHeH19xfX1Ne7u7vDw8CDn/f09Hh8foQ4ODrC/v4+trS2sr69jaWlJrktKSmBlZQWlFPT09OQ0NjaGk5MTioqKwEVggjw/P8vmvTo/P8fp6SkIvLOzg8PDQwwMDMDc3FxA9PX1YWRkJNvMzAympqYwNDREeHg4Li8v8fX1hZeXF9kCSOpXV1cg8NnZmYCHhIQImLW1NUxMTATUwsIC9vb2iImJgaurq/zu5+eHz89PvL29CSBPRe30gKCsMDg4KNIoNyIiAjqdTnyMjY1FU1MTJicnUV5eDktLSxgYGIjPXAR8f3+HovanpycBJf3q6mqpbmdnh7y8PExPT0vTNGsmJibQ398Pb29vAeT7XMT5+PiA0vQTlAYT2MXFBY6OjqirqxNGbNLe3p5sJqG3txcBAQFSuLGx8X+GGiArUP7v7y8iIyPFp5aWFonP5uambKaBSSBLHx8fAdQkk5A0RQMkOwJSNqu6u7tLJzMyMoQZ80l5tKGrqwsJCQni7fb2tmTx9vZWvv/noRZQ3i8uLiIqKkqymJ2djaqqKiwsLAjj9PR0CXhrays6OjokaixIYJ6KQERmBeaK3Wa4yWRlZQXFxcUoKCgQH/nRycmJyG5ubpaJovzh4WFpFE9FIGbx4uJCXuZH3Bw1BpzADQ0NArK7uysDMD4+LqzZnPr6ermuqKgQqxRZMdCcEALRfH7I8UpKShKJlMZn/I0RYiNYjIwKCwtRWlqKmpoaKaC0seOLKSkpSExMlDM1NRXx8fFIS0uTQDOPY2NjmJ2dRXt7u5BghMieBekrvVc0kqCkbGNjAwcHBxmxyspKmZrc3Fxhwjzyg6GhITl/fn6kIZTZ2dkpz1hE8SEZkpGbmxtsbW2RnJwszeFfGmWTGTNIlmzEzc2NZO/4+FiKcRTJmvcCSMP5IXPl6ekpQMwlpQYFBSEnJ0eARkdHpYEcMS76WlZWJn5rihRRGVp/f39kZmbC19cXoaGh+P7+Rnd3t4CwIBtG/9gMThPXzMyMWMLAszHMqWJUsrKy4OXlJRGIi4uDs7OzeEP2zCLlEnB+fl684ohxadNTW1srPeBWZEB2Hh4e8lfFIAcGBiI6OloksfsE7evrEw9pPK+5OOeMCkPd1tYmwH9hic6X8Sp1KQAAAABJRU5ErkJggg==",
                 },
                 images: {
                   fallback: {
@@ -171,147 +318,147 @@ export const data = {
               },
             },
           },
-          browseMore: [
+          titles: [
             {
-              slug: "a-chump-at-oxford-1939",
               imdbId: "tt0032339",
               title: "A Chump at Oxford",
               grade: "D+",
-              year: 1939,
+              slug: "a-chump-at-oxford-1939",
+              year: "1940",
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
                     placeholder: {
                       fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACVElEQVQoz01Tv0uCURR9ZlqSqfRbSyUaiop+EVQIChEmiiDikLRFZYRBLTUEDi4tQbREk/gHGI5CQWZbOBmBOAktgZuIgosnzgWjD973vXd/nHPfvedTNpsNFosFAwMDUErh4OAA39/fMJvN0Gg00Ol0GBwclNXf3y/n19dX1Go1dHMnJydlPzY2BmUymbCysoKdnR0x3t7eol6vw2q1QqvVQq/XY3R0FCMjI0JqMBjw8vICPpubm1IESRhHQsVgt9uNQCCA2dlZ5PN5tFotIWEyg5xOJ+x2OyYmJjA+Po7n52cBjJ+doaenR2zEoV/xtbu7C5/PJ8A/Pz9ot9vY398XAofDgcXFRczMzGB6elrAc7mcAKbTaSHa2NjA1tYWVldXoXjv7e1teL1enJycoNlsotPp4OLiAmtrawLEQIIuLCxgbm7uD/Dr60t8Ho8H0WhUilBDQ0NwuVwCeH5+jlKphM/PT1xfXyMUCmF4eFj6t7y8jKWlJWnF09PTH2AwGJR8grEIxSnNz88L+/HxMSqVCt7e3rC3tycARqMRfX19UuH6+rrEXV5e4v39HalUCn6/X1p1dHSEZDIJRXlw7Ax8fHxEsVjEx8cHTk9P5Sr09fb2CikBw+EwstksMpmMgN7d3Ulr4vE4EokEFPVF6XBShUIBDw8PaDQaODw8FDDKhxXy2pRRJBJBtVrF/f09yuUyrq6uRDocWCwWg6KGOHoap6amcHNz86cvCpvVUWM8c3HPatkSVkwbCfmllhWTusF0kKkL9t/Xtf2P7e75Q1DHHNwv25aSb+iyO9wAAAAASUVORK5CYII=",
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACcUlEQVR42j1SO0jycRT9aaU9LLOiLHv5qOhhpQiV2ku0EILQljBpiKihoKGglsCgpvbWHFoa2pLAUHARJwkcGloao6Ye0CTn+8798BOO/z/3f++595x7VUdHB7q6ugRVVVU4ODjA29sbWlpaoNVqodfr0dzcDKPRiLq6OtTU1CCTyeDz8xP9/f3Q6XQwmUyCpqYmKP5NT08jGo1iYGAAyWQSPz8/6OvrkwYkMJvN6OzsFGLmPz4+gr+VlRUopVBbWyvNGhsboZgYDAaxvLyMkZERPD094ff3F4uLi2hraxMSNuI0PT096O7uRjqdFsJEIiEkDocDVqtVhlCUTLJwOIy1tTV8fX2hXC5jZ2cHTqcTdrsdLpcLQ0NDQmyz2ZBKpYTw/v5eYrOzs1LPIVR7ezvm5+cRCoWwt7eHj48PfH9/4+TkBAsLCzLZ8PAwxsfHBWxSmfD19RV+vx9zc3OIx+PY3d2Fopn0MBAI4PDwEMViEfl8HkdHR1haWhJJBoMBExMT/3F1dYX393fxcnV1FT6fD5ubmzg+PoaiR5RFH7a2tvDy8oL038RIJILJyUm0trbKJsfGxjAzMwO3243T01M8PDzg5uYG6+vrInV/fx/n5+dQPAf6SCmFQgHZbFbOhkXs3NvbK5umV2y6vb2NUqmE6+trPD8/CykXtbGx8W/C+vp6WTtxdnaGy8tL5HI5TE1NoaGhQe6L35jHE/F4PLi7u8PFxQVub2/FP8arq6sRi8WgeGsajUaCLObolMgYweNmMr8TzOfT6/XKSfHdYrFgcHBQFCkWMMhiSiNZpbBCWiEjmE9UmvFJJVzs6Ogo/gBOfY/nkpZM/QAAAABJRU5ErkJggg==",
                     },
                     images: {
                       fallback: {
-                        src: "/static/ad962d786f01a5675ee8b482c20121ae/ced04/a-chump-at-oxford-1939.jpg",
+                        src: "/static/ad962d786f01a5675ee8b482c20121ae/11456/a-chump-at-oxford-1939.jpg",
                         srcSet:
-                          "/static/ad962d786f01a5675ee8b482c20121ae/41793/a-chump-at-oxford-1939.jpg 62w,\n/static/ad962d786f01a5675ee8b482c20121ae/6a789/a-chump-at-oxford-1939.jpg 124w,\n/static/ad962d786f01a5675ee8b482c20121ae/ced04/a-chump-at-oxford-1939.jpg 248w,\n/static/ad962d786f01a5675ee8b482c20121ae/9025e/a-chump-at-oxford-1939.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
+                          "/static/ad962d786f01a5675ee8b482c20121ae/43c32/a-chump-at-oxford-1939.jpg 78w,\n/static/ad962d786f01a5675ee8b482c20121ae/78def/a-chump-at-oxford-1939.jpg 156w,\n/static/ad962d786f01a5675ee8b482c20121ae/11456/a-chump-at-oxford-1939.jpg 312w,\n/static/ad962d786f01a5675ee8b482c20121ae/a02d5/a-chump-at-oxford-1939.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
                       },
                       sources: [
                         {
                           srcSet:
-                            "/static/ad962d786f01a5675ee8b482c20121ae/ee463/a-chump-at-oxford-1939.avif 62w,\n/static/ad962d786f01a5675ee8b482c20121ae/eaf25/a-chump-at-oxford-1939.avif 124w,\n/static/ad962d786f01a5675ee8b482c20121ae/6297a/a-chump-at-oxford-1939.avif 248w,\n/static/ad962d786f01a5675ee8b482c20121ae/c0abc/a-chump-at-oxford-1939.avif 496w",
+                            "/static/ad962d786f01a5675ee8b482c20121ae/08742/a-chump-at-oxford-1939.avif 78w,\n/static/ad962d786f01a5675ee8b482c20121ae/1c619/a-chump-at-oxford-1939.avif 156w,\n/static/ad962d786f01a5675ee8b482c20121ae/c02e5/a-chump-at-oxford-1939.avif 312w,\n/static/ad962d786f01a5675ee8b482c20121ae/81026/a-chump-at-oxford-1939.avif 624w",
                           type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
+                          sizes: "(min-width: 312px) 312px, 100vw",
                         },
                       ],
                     },
-                    width: 248,
-                    height: 140,
+                    width: 312,
+                    height: 176,
                   },
                 },
               },
             },
             {
-              slug: "the-man-in-the-iron-mask-1939",
-              imdbId: "tt0031619",
-              title: "The Man in the Iron Mask",
-              grade: "C",
-              year: 1939,
-              still: {
-                childImageSharp: {
-                  gatsbyImageData: {
-                    layout: "constrained" as const,
-                    placeholder: {
-                      fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACRElEQVQozzVTXS+CYRh+RmU5aMxH8xHKfBUpiSTN90cLDbXoQArT5EQcWFa25qRT8zOYzZk/5Gdcdl2bg3u9vc99X1/385qnpyc8Pj7i/PwcmUwG+/v72N7exsbGBorFIl5fX3V+cHAAn8+HeDyOUCiEiYkJTE9PY3Z2Fn6/H9FoVDPm/v4ehUIBx8fHODw8xNbWFpaWlhAMBjW4trYG9nx+furc6/UKYHR0VDUzMyMi9kYiEZi7uztcXl4il8upqGRnZ0e//f39UvTw8ICvry8VlQ0PD8Ptdov45ORERAsLCwI3V1dXKJVKsnx6eopYLIZUKoW3tzdZon2qr1ar+Pn50bvx8XGMjIxgcnJSvQQeGBjQsyFQIpFQkYUDBKjVasqEGV1cXKBer+Pj40PKV1dXZd3pdKKnpwd9fX1YXFwUqalUKjg6OsL6+rpy29vbw/LyslipltYajYaq2WwqK5fLhaGhIXg8HrS1tWFqagqBQEBLNWSm7f9FUBWz6+3thdVqFWA2m8XZ2Rmur6/hcDjQ2dkpJx0dHWhtbRU4QVdWVmAYODMkM0NlLvPz8xpob28X8ObmpizzNlgsFhhjYLfbYbPZ9Myi/bm5ORjetXQ6jXA4jLGxMWXGgP8bWXyfz+fx8vIicjohKZUxy5aWFvVRsUkmkwqalgjGBtpijsyzq6tL14SB//7+4vv7WxlSPRfx/v4uNwSUem759vZWoBwcHBxUwOVyGbu7u9r8/1fELG9ubtDd3S0Anj0/P+uu8j9J/gCwWoKA2cR/ZwAAAABJRU5ErkJggg==",
-                    },
-                    images: {
-                      fallback: {
-                        src: "/static/72e1049a47f867a235658ede6890f3f4/ced04/the-man-in-the-iron-mask-1939.jpg",
-                        srcSet:
-                          "/static/72e1049a47f867a235658ede6890f3f4/41793/the-man-in-the-iron-mask-1939.jpg 62w,\n/static/72e1049a47f867a235658ede6890f3f4/6a789/the-man-in-the-iron-mask-1939.jpg 124w,\n/static/72e1049a47f867a235658ede6890f3f4/ced04/the-man-in-the-iron-mask-1939.jpg 248w,\n/static/72e1049a47f867a235658ede6890f3f4/9025e/the-man-in-the-iron-mask-1939.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
-                      },
-                      sources: [
-                        {
-                          srcSet:
-                            "/static/72e1049a47f867a235658ede6890f3f4/ee463/the-man-in-the-iron-mask-1939.avif 62w,\n/static/72e1049a47f867a235658ede6890f3f4/eaf25/the-man-in-the-iron-mask-1939.avif 124w,\n/static/72e1049a47f867a235658ede6890f3f4/6297a/the-man-in-the-iron-mask-1939.avif 248w,\n/static/72e1049a47f867a235658ede6890f3f4/c0abc/the-man-in-the-iron-mask-1939.avif 496w",
-                          type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
-                        },
-                      ],
-                    },
-                    width: 248,
-                    height: 140,
-                  },
-                },
-              },
-            },
-            {
-              slug: "the-abominable-snowman-1957",
               imdbId: "tt0050095",
               title: "The Abominable Snowman",
               grade: "D+",
-              year: 1957,
+              slug: "the-abominable-snowman-1957",
+              year: "1957",
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
                     placeholder: {
                       fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACkUlEQVQozzWSyyu8cRTG3z+BbLAy2bhkNxaaZmHhkgXlspFLbqUUFi4TUaSR66TkntvCuJS7kEQmZuTOyAzGGCZl4W/4/Dqnfou39337nu9zPs85j3F6esrOzg4HBwfIt9vt5ujoiMvLS15eXnh6eiI/P5/x8XG+v7+5vb3l5ORE/1tbW6muriY3N5fU1FRqa2sxpOD8/Jzr62tubm54e3vTBna7ndfXVxYXF8nKyqKkpITp6Wk8Hg8bGxvMzMxQX19PU1MTQ0NDOJ1Onp+fMYTi7u4On8/H/f29Eo6MjFBeXk5dXR0Wi4W8vDwaGhrIyMjQ80AgoO/j42P29/fZ3NxkaWmJtbU1jPf3d4LBoKqLhba2Npqbm0lLS1Oy0tJStVVWVkZERASNjY18fHywt7fH8vKykgpAS0sLHR0dGCImsxHCiooKsrOzlSgmJoaUlBQKCwvJyckhMjKSzMxMFQmFQvj9fra2tnQ0NptNYbq6ujA+Pz91buFwmPn5eRUxmUzExcURHx9PUVER6enpREdH67zOzs4YHh5mampK7a6srDA5OUl/fz+9vb0YX19f2k2EDw8PSUpKIjk5WYWjoqJITEzEbDaTkJBAQUEBNTU1VFVV0dPTw8LCArOzsyoui5KZGkIm0fB6vVxcXGC1WtWuCBUXF2uxWJMLQiIuJFYul4vt7W09F7q+vj4VN35/f9WyPCIomYuNjaW9vZ2rqyuNieRTsre6ukp3d7daE4HBwUGtk0ajo6MqbMhC/s9wd3dXBSUeclkSIPRyLnkVMsnlxMQEc3NzutXKykqNV2dnp+bRkOKBgQHtOjY2plbk8t/fHz8/P/rIfCWvj4+PSry+vq4LEQBZigg7HA4eHh74B2K1X2BzmJtGAAAAAElFTkSuQmCC",
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACgklEQVR42jWTSUtyURjH72cowk2tJASDaBPoRkhBXBhEtilEBbFa1EJRXEQmmQvFaCJbWEk0QFqYig0alQNhIVpSDoiN1Krv8H95HngXl8O93PM7/+E5wtXVFaLRKK6vr3F7e4vz83Nen5+fUavV8PT0BJfLhcvLS7y/v6PVauH7+xtnZ2fw+/3wer2YnZ3F4OAg+vr6INzf3yOTyeDm5gaFQoEBBL24uMDb2xsqlQq0Wi08Hg/q9TqKxSJOT0+xvLwMi8UCnU6H0dFR6PV67O3tQahWq3h4eACtr6+vDInFYnxqOp2GzWaDSqXC2NgY7HY7yuUycrkckskkVldXsb29zQeQUxIjNJtNBtFKqiKRCObn5zE+Po6RkREMDQ3BYDDwt4GBAZycnODz8xN3d3ccE1k/PDzE2toatra2IJAiyuTl5YU3Tk5OwuFwQCKRQKlUwmQyMVwmk6GrqwszMzP4+PhgIIHW19c5R6vVirm5OQgUNP1AYKfTCblczkpEIhFDyerw8DA6Ozs5M8qUrJEAiiQQCGBhYYGLo1X4+vri5n5+fhCPx9Hf3w+pVMqN9fT0QK1W87eOjg5MTU1hc3MTZrOZD6esKcv9/X2EQiHs7OxAILvUHkEpE4KJxWL09vYyUKFQMGBiYoIVEohUHR8fs+WNjQ1u/OjoiEdL+P39ZflUTKlUYnvd3d2sbGVlhRvNZrOg8aI2w+EwO0mlUvy+u7vLZSwtLbF64e/vD2SbHgpao9FwfjS0jUYD+XyeZ4+G/eDgAG63G4uLiwyg3IxGI3w+H4LBIJcjtNttVkFB042hpmjD4+Mjl/W/NHJBDugS0GglEgkG0b/T09M8GXTgP1RuXaSSVWqVAAAAAElFTkSuQmCC",
                     },
                     images: {
                       fallback: {
-                        src: "/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg",
+                        src: "/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg",
                         srcSet:
-                          "/static/1c1dbef182e8e74925e612887a718990/41793/the-abominable-snowman-1957.jpg 62w,\n/static/1c1dbef182e8e74925e612887a718990/6a789/the-abominable-snowman-1957.jpg 124w,\n/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg 248w,\n/static/1c1dbef182e8e74925e612887a718990/9025e/the-abominable-snowman-1957.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
+                          "/static/1c1dbef182e8e74925e612887a718990/43c32/the-abominable-snowman-1957.jpg 78w,\n/static/1c1dbef182e8e74925e612887a718990/78def/the-abominable-snowman-1957.jpg 156w,\n/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg 312w,\n/static/1c1dbef182e8e74925e612887a718990/a02d5/the-abominable-snowman-1957.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
                       },
                       sources: [
                         {
                           srcSet:
-                            "/static/1c1dbef182e8e74925e612887a718990/ee463/the-abominable-snowman-1957.avif 62w,\n/static/1c1dbef182e8e74925e612887a718990/eaf25/the-abominable-snowman-1957.avif 124w,\n/static/1c1dbef182e8e74925e612887a718990/6297a/the-abominable-snowman-1957.avif 248w,\n/static/1c1dbef182e8e74925e612887a718990/c0abc/the-abominable-snowman-1957.avif 496w",
+                            "/static/1c1dbef182e8e74925e612887a718990/08742/the-abominable-snowman-1957.avif 78w,\n/static/1c1dbef182e8e74925e612887a718990/1c619/the-abominable-snowman-1957.avif 156w,\n/static/1c1dbef182e8e74925e612887a718990/c02e5/the-abominable-snowman-1957.avif 312w,\n/static/1c1dbef182e8e74925e612887a718990/81026/the-abominable-snowman-1957.avif 624w",
                           type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
+                          sizes: "(min-width: 312px) 312px, 100vw",
                         },
                       ],
                     },
-                    width: 248,
-                    height: 140,
+                    width: 312,
+                    height: 176,
                   },
                 },
               },
             },
             {
-              slug: "violent-playground-1958",
-              imdbId: "tt0052367",
-              title: "Violent Playground",
-              grade: "B-",
-              year: 1958,
+              imdbId: "tt0051554",
+              title: "Horror of Dracula",
+              grade: "A-",
+              slug: "horror-of-dracula-1958",
+              year: "1958",
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
                     placeholder: {
                       fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoklEQVQozz2TSSj1YRjF3wUyZrrYCBljoa55niJjobiZIveahyiZ0mdcCUmyQEhsvmuhpKTIsJCFjYV8VhbWygLZ/b6e56vv3bz/91/vOec557ymoqICT09PfH198ff3JzY2lpycHHp7e7Hb7URERFBfX8/W1hbn5+dsbm6ysLDA6uoqk5OT1NTU0NnZSV9fH4ODg5iAgAAF9PHx0d3Dw4OysjJubm6orq4mNDSUkZERNjY2WFxcpK2tjdraWtLS0khMTCQpKYn09HQyMzNpamrCxMXFERgYiLu7O5GRkczOzrK8vMzR0RENDQ309PQwOjrK3t4eJycnSiL/7+7uuL+/p7W1lby8PIqLixkaGsI0NjZSXl5OUFAQ3t7eOpKMJqAzMzMMDAzQ39+vYz48PHB4eMj0r2ne3t74/PxUVfn5+ara4XBghL20tBRjDF5eXrS0tOD87VR2+Rbm7e1txsbGODs74/T0lMLCQiX4+flhbm6O+Ph4BRZQMz4+TkpKCjExMbi6uhIcHKyGX19fU1VVhcPuUP92d3e5uLjg6uqK9fV19fXr64v9/X1WVlZYWloiNzcXU1JSQkJCAjs7OxwfH1NZWfn/QnR0NAUFBQwPD2ui8/PzCi7qpqam1EcheH9/V4+joqIwIlc8kpEkWVmvr690dXWp6uzsbLq7uzUcaYL41NzcrHcuLy/5+Pjg6emJlz8v/zysq6tTNdIl8UBAJWGpjsVioaioCKfTqWc/Pz/taVZWlibb3t6uU8l6fHzk+fkZ09HRofIFzGaz6VgCIBdcXFxwc3MjOTmZ8PBwQkJCtFoZGRmqPCwsTMsvpZdGfH9/Y+RFrK2tacsFdGJigoODA7VAXo6kL4UXtbILiNVqVd/F49TUVCWR0G5vb/kLNOnnjHBjo5cAAAAASUVORK5CYII=",
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACMElEQVR42nWTWU/bUBBGfX1t13HsbM5CSJyAyOKE4JCFQNjKIkEb2gBtHyq1qBVSpVb9/8+nNxuVoH0Ya651fWa+b8aapmm8DPGUu/E4mWQC14mhq7OR3kQkqmivcuhOFsvLo1spNOmq+8bsm5cwscyD4hqXw4izfodR2GAt5WFYMYzcNsKtzsMNduZhZusIM/4voIawPEw3z363zdtxj+npPhejHtViHlPqmIUWZnmA8EMyYY9gdILfGmLEkyvgQqLQzYUkt4SXLbLbDjloNbka9xk0azSCgKSXxF5vY5V20GIFTCU5likSz1cwHW/GWfplesh0A+muITN1co0hNydjpvsj9mobhIUc591tSuVNEuHZ3L+5Z4aPpq/802csqSTmVFcbaJaPnmoiKwfk6wO+3075dX/L3XjIUafFt5trWrUWXqGmBrO+gAgbIRMqn0HlDDirkkb3qujpDtKvI4sd/GqXx7tbfijoz+l7Pu4N+XJ9ybi3h1NoquLp1VSXIGNlnXoIS8EiNb02du0QI99Qa+BwdTHh4fSYz+evmSgvvx4dsRv10Oys2gR7JfF5aAsPpNqnhDK23EcYMWRui2jyyMNwxLS7y+ugzKQRslGtLEHW/4CzNlU14aLHK0p6oApYJNoX2H6Ju6jP73f3fBgdcrYTsT1QHYq/iy+ERBo2utqQJ6DQHBUxNRwlxUihmw5mqjS/0I8GfHoz5XR8zFa9SbFSefY3CXRpKKA1f/cHBloRD8+DvtkAAAAASUVORK5CYII=",
                     },
                     images: {
                       fallback: {
-                        src: "/static/43911ba31a9c763d3303839831f62556/ced04/violent-playground-1958.jpg",
+                        src: "/static/91ea37fc9f2f1d22322d0cd7f9195206/11456/horror-of-dracula-1958.jpg",
                         srcSet:
-                          "/static/43911ba31a9c763d3303839831f62556/41793/violent-playground-1958.jpg 62w,\n/static/43911ba31a9c763d3303839831f62556/6a789/violent-playground-1958.jpg 124w,\n/static/43911ba31a9c763d3303839831f62556/ced04/violent-playground-1958.jpg 248w,\n/static/43911ba31a9c763d3303839831f62556/9025e/violent-playground-1958.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
+                          "/static/91ea37fc9f2f1d22322d0cd7f9195206/43c32/horror-of-dracula-1958.jpg 78w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/78def/horror-of-dracula-1958.jpg 156w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/11456/horror-of-dracula-1958.jpg 312w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/a02d5/horror-of-dracula-1958.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
                       },
                       sources: [
                         {
                           srcSet:
-                            "/static/43911ba31a9c763d3303839831f62556/ee463/violent-playground-1958.avif 62w,\n/static/43911ba31a9c763d3303839831f62556/eaf25/violent-playground-1958.avif 124w,\n/static/43911ba31a9c763d3303839831f62556/6297a/violent-playground-1958.avif 248w,\n/static/43911ba31a9c763d3303839831f62556/c0abc/violent-playground-1958.avif 496w",
+                            "/static/91ea37fc9f2f1d22322d0cd7f9195206/08742/horror-of-dracula-1958.avif 78w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/1c619/horror-of-dracula-1958.avif 156w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/c02e5/horror-of-dracula-1958.avif 312w,\n/static/91ea37fc9f2f1d22322d0cd7f9195206/81026/horror-of-dracula-1958.avif 624w",
                           type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
+                          sizes: "(min-width: 312px) 312px, 100vw",
                         },
                       ],
                     },
-                    width: 248,
-                    height: 140,
+                    width: 312,
+                    height: 176,
+                  },
+                },
+              },
+            },
+            {
+              imdbId: "tt0052367",
+              title: "Violent Playground",
+              grade: "B-",
+              slug: "violent-playground-1958",
+              year: "1958",
+              still: {
+                childImageSharp: {
+                  gatsbyImageData: {
+                    layout: "constrained" as const,
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjElEQVR42j2SSSj8YRjHXyUpW5oicyBJE5eRbA1ZkpCdbGEMYWRXLrIcUIpGjTENiijZDpaLucyJuLi5ODhREtc5KJfPv+c5/H+n511+3/e7mdraWhISEkhKSiIlJYXMzExyc3Opq6tjZmaG7u5uGhoaODw85P7+nr29PTY3N3l8fMTn81FTU4Pf7+fi4oKzszOMw+EgJiaG+Ph44uLiFLSiogKv10tfXx+JiYn09/ezs7PD6ekpHo+Hubk5Ojs7aWtro7KyEiHV1NREV1cXJjY2lujoaAW1WCxkZGTQ0dHBw8MDVVVV5OXlsby8rAwFTBhVV1czODhIS0sLJSUlCKmioiKGh4cxZWVlZGdnK7u0tDTOz8+5ublhf39fmSwuLupFkfX09MT09LRa8fn5ye/vL6Ojo5SXl9PY2Mjk5CRGLotHwk6YLiwscHV1RSAQYGJigvb2dtbW1nRffLu9vcXtdvP8/MzPzw89PT0UFBSoZKfTiZGL4oMxhqioKOrr67m8vOTt7Q2Xy6Uv7+7usrKywt3dHaFQSKUKqHxyVlxcrI+Ll2Z8fFwlSwA5OTkKurS0xMHBAYWFhQwMDLDt3da1AArDk5MTVldXeX9/11mskPTFbyMg4oFsfHx8aJLBYJCxsTFsNht2u12rI2thu76+rl7Nzs5qjV5fX/U/qY0QM8Jifn6eqakp7dff3x8vLy8qNzU1VS3Y2tpiZGRE2UvCzc3NylwC/Pr6UsDv728NzkjHJDlhIcYeHR1xfHysdZDCZ2VlsbGxoXKk/Onp6Trn5+erJXIWDodVmYRkhoaGVIakJf2TmlxfX9Pa2kpkZCQREREkJydjtVr/91RCKC0t1VnK3dvbqxgC+A8M4u3F9E1KrQAAAABJRU5ErkJggg==",
+                    },
+                    images: {
+                      fallback: {
+                        src: "/static/43911ba31a9c763d3303839831f62556/11456/violent-playground-1958.jpg",
+                        srcSet:
+                          "/static/43911ba31a9c763d3303839831f62556/43c32/violent-playground-1958.jpg 78w,\n/static/43911ba31a9c763d3303839831f62556/78def/violent-playground-1958.jpg 156w,\n/static/43911ba31a9c763d3303839831f62556/11456/violent-playground-1958.jpg 312w,\n/static/43911ba31a9c763d3303839831f62556/a02d5/violent-playground-1958.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
+                      },
+                      sources: [
+                        {
+                          srcSet:
+                            "/static/43911ba31a9c763d3303839831f62556/08742/violent-playground-1958.avif 78w,\n/static/43911ba31a9c763d3303839831f62556/1c619/violent-playground-1958.avif 156w,\n/static/43911ba31a9c763d3303839831f62556/c02e5/violent-playground-1958.avif 312w,\n/static/43911ba31a9c763d3303839831f62556/81026/violent-playground-1958.avif 624w",
+                          type: "image/avif",
+                          sizes: "(min-width: 312px) 312px, 100vw",
+                        },
+                      ],
+                    },
+                    width: 312,
+                    height: 176,
                   },
                 },
               },
@@ -319,20 +466,19 @@ export const data = {
           ],
         },
       ],
-      directors: [],
-      writers: [],
-      collections: [
+      directedBy: [],
+      writtenBy: [],
+      inCollection: [
         {
           name: "Hammer Films",
           slug: "hammer-films",
-          entityType: "collection" as const,
           avatar: {
             childImageSharp: {
               gatsbyImageData: {
                 layout: "fixed" as const,
                 placeholder: {
                   fallback:
-                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVQ4y+2SvUoEQRCE9xHEO8/drppxf+ZnF73cwMTIQDBVjATBMxBEDkWEC0QMBEETETTQ4DAw8BV8NXHWWxbNNDE4qKCp7m+giolA9WtFU/gPsLRmTpxmSCb6DjOsVYucJ5Pg9Eih0lSGOqPKWy9GSXCHYraQ7yDfR3EAM0AxQHEC+yLVJvIL2Gcpz+Eu4W7hD2HQwDnVnfgnKa/gHsSPpbyGuxf/KP5Nqhu4Map3WTyCOYN9leoUpkOqGrbUI7FrSEewG8hWka4j89R96BWkjnqZC9vId1Ecww5h9lDM1nCdZ4kaVDFVl+wExZ+x1VxI3iNnyG44EKp+OP4qTMJdUxVDT81Qm7pVZ/yz7enf/ufwB15WlS6gxriOAAAAAElFTkSuQmCC",
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEklEQVR42u1SvUrEQBjMIwh3XvSbSfaS7CY5BRGvvtLCRsRCtBAELQQVEWzUxp/OwkYEGwULC+19AN/Mz71LiIWFItgcDOzA7sy3M7sBGP0awVj8R2J6NIl8J56uMOWhZJLseF6TqDIKyaFdoH4xo33YZSZbyNaR7sFuIN1GtoPsUcpVJEew91KewymukR/AGsajyWpzg+IJpW7cSvEiPSUPUireZOZOimcp32X2BO4Y9lV6V5KHXjWafCFuBckl8k2kS0jWkM7T9GEW0Z2jGbCrt9hFdgZ3Ku4QtvUZwE/WZYFmGKlNtjzUu0O2PdHYEz555KP2adgsLKz6pD9Rd1OTuNG5mn5pmz95Xo7/9n+IPwAB5JUweJ46+wAAAABJRU5ErkJggg==",
                 },
                 images: {
                   fallback: {
@@ -355,147 +501,147 @@ export const data = {
               },
             },
           },
-          browseMore: [
+          titles: [
             {
-              slug: "the-quatermass-xperiment-1955",
-              imdbId: "tt0049646",
-              title: "The Quatermass Xperiment",
-              grade: "B-",
-              year: 1955,
-              still: {
-                childImageSharp: {
-                  gatsbyImageData: {
-                    layout: "constrained" as const,
-                    placeholder: {
-                      fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCUlEQVQoz22SzUpqcRTFRdL8SNNSzKL8KDNR/BY1HQSORMlIRBEUlRwoDQWHDsKB2EACk16gJ+gZfB+HjlasfTneutwDi8P5n71/e/333qr9/X3odDro9fpfMhgM0Gg0uLy8RCAQgFqtxvn5OfL5PK6vr1GpVDAYDCTWaDTi4OBApFKA/0IJVMTkVColCWdnZ/D5fOh0Onh5eYFWq93BDg8P/w8khFUp/qejfr+PUqmEq6srJJNJPD09YbFYSJ7JZILZbIbdbv8L/Onq5xUYeHR0JK56vR6azabAxuMxXl9fcXx8LHEWi0XifgEVAK0zwGq14uTkBG63G7FYDMViEa1WC6PRCKvVCtPpFIlEQqBKvIowxZVimwBlGOFwGNlsFvf399K3arUqTtfrNTabDT4+PnBzcyOFd0BKATqdToRCIUSjURQKBTw+PqJcLuPh4QGTyQRvb2/odrv4/PwEn+12KwVogEZUvKrH45EqLpdLesXGU3RWr9dlPdLpNGq1Gt7f30XPz8+Yz+f4+vrCcrlEo9GQ4ak4ISZfXFzA7/eLK4rwTCaD29tbzGYz2T+HwyHuhsMhvF6vbIDNZsPd3d0uR4A85JUJ5aR4bS5xLpdDPB6XybL5/McettttBINB6dvp6akUjkQif4DsG6WMnodMZCv29vakv1xeFub0OUB+880cntMpxZxvI/5RAHeTQGIAAAAASUVORK5CYII=",
-                    },
-                    images: {
-                      fallback: {
-                        src: "/static/28861d007b93206a8c7209a41d35620b/ced04/the-quatermass-xperiment-1955.jpg",
-                        srcSet:
-                          "/static/28861d007b93206a8c7209a41d35620b/41793/the-quatermass-xperiment-1955.jpg 62w,\n/static/28861d007b93206a8c7209a41d35620b/6a789/the-quatermass-xperiment-1955.jpg 124w,\n/static/28861d007b93206a8c7209a41d35620b/ced04/the-quatermass-xperiment-1955.jpg 248w,\n/static/28861d007b93206a8c7209a41d35620b/9025e/the-quatermass-xperiment-1955.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
-                      },
-                      sources: [
-                        {
-                          srcSet:
-                            "/static/28861d007b93206a8c7209a41d35620b/ee463/the-quatermass-xperiment-1955.avif 62w,\n/static/28861d007b93206a8c7209a41d35620b/eaf25/the-quatermass-xperiment-1955.avif 124w,\n/static/28861d007b93206a8c7209a41d35620b/6297a/the-quatermass-xperiment-1955.avif 248w,\n/static/28861d007b93206a8c7209a41d35620b/c0abc/the-quatermass-xperiment-1955.avif 496w",
-                          type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
-                        },
-                      ],
-                    },
-                    width: 248,
-                    height: 140,
-                  },
-                },
-              },
-            },
-            {
-              slug: "x-the-unknown-1956",
               imdbId: "tt0049967",
               title: "X the Unknown",
               grade: "C+",
-              year: 1956,
+              slug: "x-the-unknown-1956",
+              year: "1956",
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
                     placeholder: {
                       fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQElEQVQozzWT3UqyQRSFBzwwwlBLzdRK08i0Qs3Eyt9KykpNQRI0JOnHKEHsAgRBEjwQpBPpTLyLurf1sfaHBwP6zp41z1p7j3p4eMDu7i6i0ShSqRQSiQR8Ph+Ojo7w8fGBy8tLpNNpXF1d4fz8HDc3Nzg5OYHf78f6+joKhQKGw6GcnU6nUI+Pj3C73YhEIvKRwjs7O7i/v8fb2xu2t7exvLwsNf1+H39/fzg7OxOIzc1NfH5+YjKZ4P39HbPZDKrRaMBmsyEQCEhhMBgU4XK5jFKpBJfLBbvdLvuj0QjPz884Pj7G/v6+CI7HY3x/f6PVauHn5wfq9fUVJpMJHo8H4XAYuVwOLy8vIDmJqtWq2CZ5vV5HLBYDIShqNBpxe3uLTqcj1geDwX/CxcVFGAwGEarVakLZbrfFNm+mLWZNQR7kb7rR6XRIJpNSk8/n0ev1oLLZLDQaDbxeL4rFItbW1mSRyOFwyOG7uzuhInWlUsH19bVkuLq6ikwmI/HQHffU4eEhlFLSFNpeWloSK1qtFlarFc1mU7q6t7cnB5klFyfBbDZLJF9fX5L309MTFEUoeHp6KgdZRPuMgSPCfCg8H5G5YCgUEsvsAclJTVrFTpFqa2tLFjvOJi0sLODi4kKK9Xq9CHS7XWkG3dAiu8+u//7+SpacCGWxWOQmUpFkZWVFFv9vbGzIzRz2+Tc6YLa8nHFxZknOPcIpZsGAOVekm1vmIDOCeDyOg4MDISIdXwvrSMfX43Q6xQFfDgH+AZA/exuL06cPAAAAAElFTkSuQmCC",
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKElEQVR42jVSS0uCURC94kJIfEQ+k7RCUtRSEx+Uiq8IH6hgLmxhGikSEYpg2E5chKvAtS4E/4C/8MQZaHH5vntn5sw5Z0a9vLzA7/cjlUohl8shm83KPZ1OYzab4e7uDjc3N7i/v0ez2cR8Pkc+n5cct9uNTqeD399f1Go17Pd7qNfXV5yfnyMej6NQKMg3FAqh3+/j6ekJZ2dnMJvNuLy8xHa7xeFwEPDr62t5+/n5wWazkeYC+Pb2BofDIQlkl0gkBKjRaOD9/R2xWEzYJJNJfH194fHxEeVyWVi7XC4sFgusViv0ej2s12uo0WiE4+NjCWYyGdCC5+dnjMdjfH9/4+PjQ5LZjDHKJYlisQij0SiWfH5+CgECKxbrdDpYrVZMp1M8PDzg4uICtKJUKmE4HAooiwjY7XbFNzKmFczhO+tYrzgIjUaDSCQi8gwGA2w2GzwejzAgAJOr1ar4yn+y9fl8YhWHMZlMhHm73YaiF0opMTocDsNkMokFZB0IBIQZm3EA/979n5OTE5HPgdTrdQwGAyjK02q1wo7n9PRUAI+OjqQju1Pa1dWVSOd63d7eSq5er5fBLZdLUUBCitJYQCCuCGVQMgGj0aiAModbQF+DwaAAMsZ/bsRutxM1Xq8XirTpFUGcTicsFos04J3suSacKN9pA5eZA2RjWmG322WtGGe9osmVSkUOOzCRQXrGJadXZELgVqslQ2AewegZv2zAXDL/Awmfe4QH0MoGAAAAAElFTkSuQmCC",
                     },
                     images: {
                       fallback: {
-                        src: "/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ced04/x-the-unknown-1956.jpg",
+                        src: "/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/11456/x-the-unknown-1956.jpg",
                         srcSet:
-                          "/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/41793/x-the-unknown-1956.jpg 62w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/6a789/x-the-unknown-1956.jpg 124w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ced04/x-the-unknown-1956.jpg 248w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/9025e/x-the-unknown-1956.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
+                          "/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/43c32/x-the-unknown-1956.jpg 78w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/78def/x-the-unknown-1956.jpg 156w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/11456/x-the-unknown-1956.jpg 312w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/a02d5/x-the-unknown-1956.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
                       },
                       sources: [
                         {
                           srcSet:
-                            "/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/ee463/x-the-unknown-1956.avif 62w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/eaf25/x-the-unknown-1956.avif 124w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/6297a/x-the-unknown-1956.avif 248w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/c0abc/x-the-unknown-1956.avif 496w",
+                            "/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/08742/x-the-unknown-1956.avif 78w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/1c619/x-the-unknown-1956.avif 156w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/c02e5/x-the-unknown-1956.avif 312w,\n/static/86b9ce6a6dc29ebd77d5a3ff2e44115c/81026/x-the-unknown-1956.avif 624w",
                           type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
+                          sizes: "(min-width: 312px) 312px, 100vw",
                         },
                       ],
                     },
-                    width: 248,
-                    height: 140,
+                    width: 312,
+                    height: 176,
                   },
                 },
               },
             },
             {
-              slug: "quatermass-2-1957",
-              imdbId: "tt0050873",
-              title: "Quatermass 2",
-              grade: "D+",
-              year: 1957,
-              still: {
-                childImageSharp: {
-                  gatsbyImageData: {
-                    layout: "constrained" as const,
-                    placeholder: {
-                      fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUUlEQVQozz1SSUuqYRT+Vi2ESlwUlWlBc2KkmWYDFIVm5ZhTJZpZagOVQy00TNoUltImCNy48xe4Ffxjz+U5l3sXH+c773nfZ+IoU1NT4GcwGDAzM4Pp6WmYTCasr6/L2dDQECYnJ7G4uAi73Y6dnR04HA64XC5sbGzIudlsxurqKhYWFqCMjIygr68Pw8PDGBgYgFqtFsC1tTUYjUYMDg5idHQUExMT0Ov1WFlZEaDl5WVoNBrMzc0hGo3i7OxMiBSy9/f3Q6vVQqfTQaVSwWq1Cij7sbEx7O3t4fz8HLOzs1haWpJ+d3dXSNgfHR3B6/Vie3sbChk4YKUiqqE6WhgfH0cwGESpVMLX1xdubm7EMgEODw+FlNaTySSurq7g8Xig+Hw+PD4+Ip1OIxaLoVgsSuWFl5cXASHgx8cHfn9/8f39jVqtJgSfn5+oVCq4u7tDPp8XIiWbzaJareLn5wflchnv7+9oNBqo1+tIJBLY398XwufnZwHtdrvodDpot9vo9XpoNpu4vb3F/f09Tk5OoPByOBzG9fW1qKFSKkulUpIJ+0KhICr9fr8oa7Va/9VSDF09PDz8BaR/MhwfHwvw6empDNgzH85yuZx8/4hfX1/x9vYmlYAUcnl5KVlKhrz49PSEeDwOp9MpgQcCAakMmitCIs75mKAEYGahUEjI2dOtwgNaZEbMa2trS6wSjD1Vzs/PCykBM5kMIpGI7N7m5qa44T8FUa1is9ngdrvFAlVZLBZZmYODA1HLyjkf8TH3kcr4T2JuBHO+uLiQHP8A7je2KJzi/6oAAAAASUVORK5CYII=",
-                    },
-                    images: {
-                      fallback: {
-                        src: "/static/6f63e41ae0c98ead43616222c68d4177/ced04/quatermass-2-1957.jpg",
-                        srcSet:
-                          "/static/6f63e41ae0c98ead43616222c68d4177/41793/quatermass-2-1957.jpg 62w,\n/static/6f63e41ae0c98ead43616222c68d4177/6a789/quatermass-2-1957.jpg 124w,\n/static/6f63e41ae0c98ead43616222c68d4177/ced04/quatermass-2-1957.jpg 248w,\n/static/6f63e41ae0c98ead43616222c68d4177/9025e/quatermass-2-1957.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
-                      },
-                      sources: [
-                        {
-                          srcSet:
-                            "/static/6f63e41ae0c98ead43616222c68d4177/ee463/quatermass-2-1957.avif 62w,\n/static/6f63e41ae0c98ead43616222c68d4177/eaf25/quatermass-2-1957.avif 124w,\n/static/6f63e41ae0c98ead43616222c68d4177/6297a/quatermass-2-1957.avif 248w,\n/static/6f63e41ae0c98ead43616222c68d4177/c0abc/quatermass-2-1957.avif 496w",
-                          type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
-                        },
-                      ],
-                    },
-                    width: 248,
-                    height: 140,
-                  },
-                },
-              },
-            },
-            {
-              slug: "the-abominable-snowman-1957",
               imdbId: "tt0050095",
               title: "The Abominable Snowman",
               grade: "D+",
-              year: 1957,
+              slug: "the-abominable-snowman-1957",
+              year: "1957",
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
                     layout: "constrained" as const,
                     placeholder: {
                       fallback:
-                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACkUlEQVQozzWSyyu8cRTG3z+BbLAy2bhkNxaaZmHhkgXlspFLbqUUFi4TUaSR66TkntvCuJS7kEQmZuTOyAzGGCZl4W/4/Dqnfou39337nu9zPs85j3F6esrOzg4HBwfIt9vt5ujoiMvLS15eXnh6eiI/P5/x8XG+v7+5vb3l5ORE/1tbW6muriY3N5fU1FRqa2sxpOD8/Jzr62tubm54e3vTBna7ndfXVxYXF8nKyqKkpITp6Wk8Hg8bGxvMzMxQX19PU1MTQ0NDOJ1Onp+fMYTi7u4On8/H/f29Eo6MjFBeXk5dXR0Wi4W8vDwaGhrIyMjQ80AgoO/j42P29/fZ3NxkaWmJtbU1jPf3d4LBoKqLhba2Npqbm0lLS1Oy0tJStVVWVkZERASNjY18fHywt7fH8vKykgpAS0sLHR0dGCImsxHCiooKsrOzlSgmJoaUlBQKCwvJyckhMjKSzMxMFQmFQvj9fra2tnQ0NptNYbq6ujA+Pz91buFwmPn5eRUxmUzExcURHx9PUVER6enpREdH67zOzs4YHh5mampK7a6srDA5OUl/fz+9vb0YX19f2k2EDw8PSUpKIjk5WYWjoqJITEzEbDaTkJBAQUEBNTU1VFVV0dPTw8LCArOzsyoui5KZGkIm0fB6vVxcXGC1WtWuCBUXF2uxWJMLQiIuJFYul4vt7W09F7q+vj4VN35/f9WyPCIomYuNjaW9vZ2rqyuNieRTsre6ukp3d7daE4HBwUGtk0ajo6MqbMhC/s9wd3dXBSUeclkSIPRyLnkVMsnlxMQEc3NzutXKykqNV2dnp+bRkOKBgQHtOjY2plbk8t/fHz8/P/rIfCWvj4+PSry+vq4LEQBZigg7HA4eHh74B2K1X2BzmJtGAAAAAElFTkSuQmCC",
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACgklEQVR42jWTSUtyURjH72cowk2tJASDaBPoRkhBXBhEtilEBbFa1EJRXEQmmQvFaCJbWEk0QFqYig0alQNhIVpSDoiN1Krv8H95HngXl8O93PM7/+E5wtXVFaLRKK6vr3F7e4vz83Nen5+fUavV8PT0BJfLhcvLS7y/v6PVauH7+xtnZ2fw+/3wer2YnZ3F4OAg+vr6INzf3yOTyeDm5gaFQoEBBL24uMDb2xsqlQq0Wi08Hg/q9TqKxSJOT0+xvLwMi8UCnU6H0dFR6PV67O3tQahWq3h4eACtr6+vDInFYnxqOp2GzWaDSqXC2NgY7HY7yuUycrkckskkVldXsb29zQeQUxIjNJtNBtFKqiKRCObn5zE+Po6RkREMDQ3BYDDwt4GBAZycnODz8xN3d3ccE1k/PDzE2toatra2IJAiyuTl5YU3Tk5OwuFwQCKRQKlUwmQyMVwmk6GrqwszMzP4+PhgIIHW19c5R6vVirm5OQgUNP1AYKfTCblczkpEIhFDyerw8DA6Ozs5M8qUrJEAiiQQCGBhYYGLo1X4+vri5n5+fhCPx9Hf3w+pVMqN9fT0QK1W87eOjg5MTU1hc3MTZrOZD6esKcv9/X2EQiHs7OxAILvUHkEpE4KJxWL09vYyUKFQMGBiYoIVEohUHR8fs+WNjQ1u/OjoiEdL+P39ZflUTKlUYnvd3d2sbGVlhRvNZrOg8aI2w+EwO0mlUvy+u7vLZSwtLbF64e/vD2SbHgpao9FwfjS0jUYD+XyeZ4+G/eDgAG63G4uLiwyg3IxGI3w+H4LBIJcjtNttVkFB042hpmjD4+Mjl/W/NHJBDugS0GglEgkG0b/T09M8GXTgP1RuXaSSVWqVAAAAAElFTkSuQmCC",
                     },
                     images: {
                       fallback: {
-                        src: "/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg",
+                        src: "/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg",
                         srcSet:
-                          "/static/1c1dbef182e8e74925e612887a718990/41793/the-abominable-snowman-1957.jpg 62w,\n/static/1c1dbef182e8e74925e612887a718990/6a789/the-abominable-snowman-1957.jpg 124w,\n/static/1c1dbef182e8e74925e612887a718990/ced04/the-abominable-snowman-1957.jpg 248w,\n/static/1c1dbef182e8e74925e612887a718990/9025e/the-abominable-snowman-1957.jpg 496w",
-                        sizes: "(min-width: 248px) 248px, 100vw",
+                          "/static/1c1dbef182e8e74925e612887a718990/43c32/the-abominable-snowman-1957.jpg 78w,\n/static/1c1dbef182e8e74925e612887a718990/78def/the-abominable-snowman-1957.jpg 156w,\n/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg 312w,\n/static/1c1dbef182e8e74925e612887a718990/a02d5/the-abominable-snowman-1957.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
                       },
                       sources: [
                         {
                           srcSet:
-                            "/static/1c1dbef182e8e74925e612887a718990/ee463/the-abominable-snowman-1957.avif 62w,\n/static/1c1dbef182e8e74925e612887a718990/eaf25/the-abominable-snowman-1957.avif 124w,\n/static/1c1dbef182e8e74925e612887a718990/6297a/the-abominable-snowman-1957.avif 248w,\n/static/1c1dbef182e8e74925e612887a718990/c0abc/the-abominable-snowman-1957.avif 496w",
+                            "/static/1c1dbef182e8e74925e612887a718990/08742/the-abominable-snowman-1957.avif 78w,\n/static/1c1dbef182e8e74925e612887a718990/1c619/the-abominable-snowman-1957.avif 156w,\n/static/1c1dbef182e8e74925e612887a718990/c02e5/the-abominable-snowman-1957.avif 312w,\n/static/1c1dbef182e8e74925e612887a718990/81026/the-abominable-snowman-1957.avif 624w",
                           type: "image/avif",
-                          sizes: "(min-width: 248px) 248px, 100vw",
+                          sizes: "(min-width: 312px) 312px, 100vw",
                         },
                       ],
                     },
-                    width: 248,
-                    height: 140,
+                    width: 312,
+                    height: 176,
+                  },
+                },
+              },
+            },
+            {
+              imdbId: "tt0050873",
+              title: "Quatermass 2",
+              grade: "D+",
+              slug: "quatermass-2-1957",
+              year: "1957",
+              still: {
+                childImageSharp: {
+                  gatsbyImageData: {
+                    layout: "constrained" as const,
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVR42j1TS0uqURT9Jk3EgQphaIZhlK8ipZQssNLCHlJmpT3UygwyeqADUzNQSpBA0EGTEASHQQhO8tety9qXeweH7zv7sfZae++j2Gw2LCwswOVyweFwYGJiAk6nEysrK1hcXMT8/Dy8Xi/8fj82NzflHBwcYH9/H3t7ezCbzRgdHZU8i8UChYaxsTG5jI+PY3JyEm63Gz6fTwpoNBoYDIb/9tXVVaytrcnXbrdjdnYW29vb2NnZEQKK0WjEyMiIgOp0OqhUKnEsLS1hbm4OWq0W09PTAqbX68VGtlRFn9VqxfHxMc7OzrC1tQVlampKgEwmk7BQq9XweDySSDsZnJ+f4/n5GYFAQIpRdigUwszMjNwpPRqNil/5x4ZVg8GgSKVjY2MD6+vruL29Ra1WQ6vVwsvLC+LxOC4uLuRQZjKZxMPDA3K5nIAqNNTrdZTLZVxfX6PRaIizUqng7e0NiUQCxWIR1WoVvV4P/X4f3W4XnU4HPz8/aDabuLm5QT6fRzgchkL0x8dHfH5+CgBZtNttvL+/C4Pd3V1hUCgUcH9/j8FggOFwiO/vb/z+/uLr60t8jLm8vPwLSJZcAzaXRhbgP2WzcqlUEgWRSET+Kf/j40NawTvjiXN6egrl5OQE6XQamUwGV1dXiMViODw8xNHRkUhgr1KpFLLZrAzn7u5OBkQgMuOXuYxhvsJGEpBBBOEguFdkQ8k83FEWIjgB2WuqWl5eFj9jn56e8Pr6CoUjpxz2jkAM4ith77hXTODkqYQgHABfCu9ccJLhISCH9wf0TrL4u1e0cgAAAABJRU5ErkJggg==",
+                    },
+                    images: {
+                      fallback: {
+                        src: "/static/6f63e41ae0c98ead43616222c68d4177/11456/quatermass-2-1957.jpg",
+                        srcSet:
+                          "/static/6f63e41ae0c98ead43616222c68d4177/43c32/quatermass-2-1957.jpg 78w,\n/static/6f63e41ae0c98ead43616222c68d4177/78def/quatermass-2-1957.jpg 156w,\n/static/6f63e41ae0c98ead43616222c68d4177/11456/quatermass-2-1957.jpg 312w,\n/static/6f63e41ae0c98ead43616222c68d4177/a02d5/quatermass-2-1957.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
+                      },
+                      sources: [
+                        {
+                          srcSet:
+                            "/static/6f63e41ae0c98ead43616222c68d4177/08742/quatermass-2-1957.avif 78w,\n/static/6f63e41ae0c98ead43616222c68d4177/1c619/quatermass-2-1957.avif 156w,\n/static/6f63e41ae0c98ead43616222c68d4177/c02e5/quatermass-2-1957.avif 312w,\n/static/6f63e41ae0c98ead43616222c68d4177/81026/quatermass-2-1957.avif 624w",
+                          type: "image/avif",
+                          sizes: "(min-width: 312px) 312px, 100vw",
+                        },
+                      ],
+                    },
+                    width: 312,
+                    height: 176,
+                  },
+                },
+              },
+            },
+            {
+              imdbId: "tt0051444",
+              title: "The Camp on Blood Island",
+              grade: "B-",
+              slug: "the-camp-on-blood-island-1958",
+              year: "1958",
+              still: {
+                childImageSharp: {
+                  gatsbyImageData: {
+                    layout: "constrained" as const,
+                    placeholder: {
+                      fallback:
+                        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACG0lEQVR42j1SSUuyURh9164DJQLFFqbiiKY54zyb5ZCkKCJOiRopQYmaG4lE8Ae09W+eOA983+Jyp+ee6bmK0WhEMplEJpP5PxwOB5xOp4x8Po9Op4NWq4Ver4dwOIx6vS573tlsNlxcXECv14NYitfrRSqVQr/flwKu/X4/0uk0Go2GnBNwPp9jvV5jNpvJPYHj8ThqtZoIKpfLyOVyUO7u7hAKhRAMBkUZgXhGcBZEIhE5+/z8xNfXF9rtNqxWK9RqNbRaLWKxGCqVCobDISaTCZR/D10ul0gmGBkJxL3dbkc2m8V+v8dqtZI72tTpdDAYDOKITgqFghArXFxdXeH6+loATCYTLBYLHh8fkUgk4Ha7BXw6nQogyW9vb4X46ekJm80Gp9NJ8qVD5ebmBiqVCpeXl2KDjWA+0WhU1h6PR7JidlRCdYFAQKwS5O3tDaVSCcQxm81QGHqxWBTJVEgL7DQv2Yyfnx+8vr7KPBgMhKBareL+/l5qSUxXdEg3ysfHh9hhEYFpiQ3y+Xw4Ho/4/v4WdWwICRhDs9mURvDrsI6AjI1fR2F32BhmRpUEI/PhcMByuRR15/MZ7+/veH5+FlJaJODDw4O8YSQE02g0UJgHs2LIzIUdHY1GUsy8Xl5e8Pv7i+12K3+NcZCQ6263KyTMlnv+T4VMHGRhHgQiKDvJGMbjMXa7HRaLhZyTmCKojGB8S8Xc0+kfIfifIbe+Rl4AAAAASUVORK5CYII=",
+                    },
+                    images: {
+                      fallback: {
+                        src: "/static/98f907bf24d0312b5bf4f11155b754a0/11456/the-camp-on-blood-island-1958.jpg",
+                        srcSet:
+                          "/static/98f907bf24d0312b5bf4f11155b754a0/43c32/the-camp-on-blood-island-1958.jpg 78w,\n/static/98f907bf24d0312b5bf4f11155b754a0/78def/the-camp-on-blood-island-1958.jpg 156w,\n/static/98f907bf24d0312b5bf4f11155b754a0/11456/the-camp-on-blood-island-1958.jpg 312w,\n/static/98f907bf24d0312b5bf4f11155b754a0/a02d5/the-camp-on-blood-island-1958.jpg 624w",
+                        sizes: "(min-width: 312px) 312px, 100vw",
+                      },
+                      sources: [
+                        {
+                          srcSet:
+                            "/static/98f907bf24d0312b5bf4f11155b754a0/08742/the-camp-on-blood-island-1958.avif 78w,\n/static/98f907bf24d0312b5bf4f11155b754a0/1c619/the-camp-on-blood-island-1958.avif 156w,\n/static/98f907bf24d0312b5bf4f11155b754a0/c02e5/the-camp-on-blood-island-1958.avif 312w,\n/static/98f907bf24d0312b5bf4f11155b754a0/81026/the-camp-on-blood-island-1958.avif 624w",
+                          type: "image/avif",
+                          sizes: "(min-width: 312px) 312px, 100vw",
+                        },
+                      ],
+                    },
+                    width: 312,
+                    height: 176,
                   },
                 },
               },
@@ -503,153 +649,154 @@ export const data = {
           ],
         },
       ],
+      reviews: [
+        {
+          imdbId: "tt0123948",
+          title: "Cure",
+          grade: "C+",
+          slug: "cure-1997",
+          year: "1997",
+          still: {
+            childImageSharp: {
+              gatsbyImageData: {
+                layout: "constrained" as const,
+                placeholder: {
+                  fallback:
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBUlEQVR42h2T7U/aVxiGf11EBEWpVFGYL2UWpep0WnyBUrBgtYAoAoKAIFZ5sUVQ8K0tOqyd69K0qZlL06XbtyZrlmVZTPZfLNlfdO3MTyc5ybmf67nv+0i20T6ckwO4HcP4p82EPRZiCzbWo9M4J0z8fp7l8kOByNwET9Y9bCZnWQ3dp5hZJO63s7p0n0Rwiqj/HmGfDemh4xsWZsbFAysrQQdrUReZxAMKGR/xeQt//hDk388F9jOz5MXd3oaH3Q0fU3dMtKtVuGxDZJMPWY24SCy5kALuSaKL9iuhzTU3xdw8u4UAB6UQlf0YlcRdzuKjfH+8KkgchJ3DuEZ7qJfLkclq0bXdILfmIZvysJFwI8UF7kZihi0xvVwI8nR3merzJOevsvxyvsOndxWKfgefP55RTnsxaJuR1ciprVOgVChpqK8nuTxNKR/icdqP9Cg+Qz49J8QCPNtb5mU1xYtKkqO8nw+vclz+usNPlQVOd0K8LIevaFP3usS6DcjkCmoEZVB4+fwgwVYuiLS5PsfOkwCHpTAvjlPijBBxW3CaTSy6zFx8G+a3izTVYoCoZ5LDmJWL9RHS1g7GujSo5HVYx/o5EoKlQgypkPOzv71E5SDOdyePMI/0oZTJyS+MknGa+OPHAn9/qpCJTDEz3s9fP2/z/iiEe1DL1K1WOq430dncyMmWlzdnOaRSPshhOcKpMP3t600GTAYMaiUVr4k9zwDV7Bxv9v2cbs3x/iTJP5dHnOUfYGrXcLO1mTaR9EhPO9V1O4WEE6lcDFM5XGFvO0J6zcft3ptY9GpeL96mODuAd8KI3aRlovdLSisOPp6EeRwwc8egpUcEpNc04rf2Yh/qpkfXgvS/mSkRt75Ni6ZJzRciwfYmFd4+Lf26ZgZ79KIqQ4zd0jNubONpyo5v0ojFqMPQeh2jToOpo4XOG00MGTuRjp+lmBwf5Nq1GlSqBpTK+qs6NIo6KBQKZLV1DBu78IrfNDX8FaXYXeYFkc2kp6tFTXerGkt/J193iy2G+/gPKIScodBPHO8AAAAASUVORK5CYII=",
+                },
+                images: {
+                  fallback: {
+                    src: "/static/eae4c79ec5565572fbaae0f11cff996d/11456/cure-1997.jpg",
+                    srcSet:
+                      "/static/eae4c79ec5565572fbaae0f11cff996d/43c32/cure-1997.jpg 78w,\n/static/eae4c79ec5565572fbaae0f11cff996d/78def/cure-1997.jpg 156w,\n/static/eae4c79ec5565572fbaae0f11cff996d/11456/cure-1997.jpg 312w,\n/static/eae4c79ec5565572fbaae0f11cff996d/a02d5/cure-1997.jpg 624w",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                  sources: [
+                    {
+                      srcSet:
+                        "/static/eae4c79ec5565572fbaae0f11cff996d/08742/cure-1997.avif 78w,\n/static/eae4c79ec5565572fbaae0f11cff996d/1c619/cure-1997.avif 156w,\n/static/eae4c79ec5565572fbaae0f11cff996d/c02e5/cure-1997.avif 312w,\n/static/eae4c79ec5565572fbaae0f11cff996d/81026/cure-1997.avif 624w",
+                      type: "image/avif",
+                      sizes: "(min-width: 312px) 312px, 100vw",
+                    },
+                  ],
+                },
+                width: 312,
+                height: 176,
+              },
+            },
+          },
+        },
+        {
+          imdbId: "tt2230358",
+          title: "Curse of Chucky",
+          grade: "C+",
+          slug: "curse-of-chucky-2013",
+          year: "2013",
+          still: {
+            childImageSharp: {
+              gatsbyImageData: {
+                layout: "constrained" as const,
+                placeholder: {
+                  fallback:
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACwElEQVR42jWTW28bRRiG1/HZu971nmbdrA/r+BQ3bpTYbWq7NHECTRMVmzaJqqigHiSqQiEhIEolhFQJJARXlSCquOOCywhV6v/ob3r4bImLVzM3887zfu+MNl4v8dH1GpPNFofbbT4ZdxivV2hXPbZ6NUZXQhqLJu3Q4GrLYyXy8Jw8YdGmYGbxPZNgJtfELehoy5FiplZV0akV6XdKtMourpGk17rE5mqJ+qLFlcjm9kaVlSWFbeXmh20rSxj6+HKBJ3vbzKB16wEzrdR8MQi4db0hJmUON7v89vyQB3s9VptyYWhxrWlTL7lClsObG+aIaiGBb5NNxoTcRNu5FrF9NWK8VmZ/uMSD3VUmgw7fHU/559ULPuw1WA5yrMsItluKUVRAzYjsPK5tsLRUxnMLJOIxlLLRlJkmENySqxMFefYHTSYbK5xMdzmZ7BLKnLqLDncGXX794pBX97cYViwcS8c00lQqi3PDmKZh5FJozw6E5mGfl8+2+OHpTW6P6nQqPtPRGhVfaPQUw+Uq97d6nH//hPPTY6YSveKb6JkkYeBKZIeCkZGiXLSL1x/z9vweF2+O+emrTarKR1kmtaKDkjmFEmuv3+Lbgx3+OHvEm6+PeNy16UW+EGalDClI5MwkabR//7zLhejdXwfsDZukYjq5VHquwPUoZNKsyQt4ffYp7//+mZO9Ac/XPUYNRTIRxxDKvETVsynyurT8y+mQl083+OZRn3bZQ9MWiCcSWF6FQFVxy12hdPlsOuXJ/g4fFDRe3CixHNosLCyQEFm5JJl0XM5qaO36Jaolj2JgY2aygu5gK0VGt2WvaF6+geFUWO0POJpM+XLN495ld15KNpUgHovNTWOyzg2VO5tBRprSqTk+DaFJJuUH5G35HUXuDvv8fvo5k/E+P46POLu5TaQMiZkWw6SYxOZm/+s/IC1AGmt+LjUAAAAASUVORK5CYII=",
+                },
+                images: {
+                  fallback: {
+                    src: "/static/bb69a5da74a51e571c086d75b8bd4459/11456/curse-of-chucky-2013.jpg",
+                    srcSet:
+                      "/static/bb69a5da74a51e571c086d75b8bd4459/43c32/curse-of-chucky-2013.jpg 78w,\n/static/bb69a5da74a51e571c086d75b8bd4459/78def/curse-of-chucky-2013.jpg 156w,\n/static/bb69a5da74a51e571c086d75b8bd4459/11456/curse-of-chucky-2013.jpg 312w,\n/static/bb69a5da74a51e571c086d75b8bd4459/a02d5/curse-of-chucky-2013.jpg 624w",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                  sources: [
+                    {
+                      srcSet:
+                        "/static/bb69a5da74a51e571c086d75b8bd4459/08742/curse-of-chucky-2013.avif 78w,\n/static/bb69a5da74a51e571c086d75b8bd4459/1c619/curse-of-chucky-2013.avif 156w,\n/static/bb69a5da74a51e571c086d75b8bd4459/c02e5/curse-of-chucky-2013.avif 312w,\n/static/bb69a5da74a51e571c086d75b8bd4459/81026/curse-of-chucky-2013.avif 624w",
+                      type: "image/avif",
+                      sizes: "(min-width: 312px) 312px, 100vw",
+                    },
+                  ],
+                },
+                width: 312,
+                height: 176,
+              },
+            },
+          },
+        },
+        {
+          imdbId: "tt0050766",
+          title: "Curse of the Demon",
+          grade: "B",
+          slug: "curse-of-the-demon-1957",
+          year: "1957",
+          still: {
+            childImageSharp: {
+              gatsbyImageData: {
+                layout: "constrained" as const,
+                placeholder: {
+                  fallback:
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeElEQVR42h2T2UqCURSF/xeQInJoEMtubLDJMIyU0iQLhyYMExusjBJRifJGLcXCiXBCVCqiSQiiZ6jHiO7Di55hxd4Xhy3nP3udb62zFT4/P3F9fY2bmxtkMhm8vLzg4eEBGxsbSKVSeHt7Q7PZxMfHB0qlEnK5HJ6fn/H6+sqVztTrde5PJBIQvr+/USgUcHd3h8fHR26ORqPY3NxEsVjE/f09Go0G8vk8zs/PEY/Hee/p6Qm3t7e4vLzk75VKhUWF399fVKtVvL+/I51OY2pqCgaDgW8mGhKifb/fj2AwyMvr9fKFBwcHsNvt2Nrawv7+Pu8Jf39/bJHI9Ho9pFIpBgYGYDabWYxskAMiuLi4wPHxMXw+H5aXl+FyuVjQYrHA6XTybxakLGq1GoaGhqBQKKBSqTA+Po5wOMyUlG02m8Xp6SlWV1dxeHiItbU1piaq6elpLC0tYXFxEUKr1eIsaA0PD6O3t5cFaXk8HlxdXXETVZPJhJ6eHm622WzQ6XTY2dnB2dkZk9MZ4efnh1+P7CiVSrZMooODg1hYWEAymeSMiGhmZobzjUQi2N3dxejoKNxuN05OTtgyORK+vr7Y1vb2NiQSCbq6urgSCeUYCoUwNzfHcZAgLaIjkb29Paaen5/HyMgI1tfXIdCcETLdLBaLIZfLmbK9vR0OhwOzs7Po7u6GWq1mixqNBpOTkwxAIGSVAPr6+tDf3w+BXpienAg6Ozshk8lYuK2tjQ8SQSAQ4BExGo3QarUYGxvji8g6ZU/TQZNBuQs0xFarlTc6OjqYjgRFIhHXWCzGI0ODXC6XcXR0hImJCX5ZioQoKX/6Z62srOAfbszZZX2I1+gAAAAASUVORK5CYII=",
+                },
+                images: {
+                  fallback: {
+                    src: "/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/11456/curse-of-the-demon-1957.jpg",
+                    srcSet:
+                      "/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/43c32/curse-of-the-demon-1957.jpg 78w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/78def/curse-of-the-demon-1957.jpg 156w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/11456/curse-of-the-demon-1957.jpg 312w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/a02d5/curse-of-the-demon-1957.jpg 624w",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                  sources: [
+                    {
+                      srcSet:
+                        "/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/08742/curse-of-the-demon-1957.avif 78w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/1c619/curse-of-the-demon-1957.avif 156w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/c02e5/curse-of-the-demon-1957.avif 312w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/81026/curse-of-the-demon-1957.avif 624w",
+                      type: "image/avif",
+                      sizes: "(min-width: 312px) 312px, 100vw",
+                    },
+                  ],
+                },
+                width: 312,
+                height: 176,
+              },
+            },
+          },
+        },
+        {
+          imdbId: "tt0264508",
+          title: "Dagon",
+          grade: "B",
+          slug: "dagon-2001",
+          year: "2001",
+          still: {
+            childImageSharp: {
+              gatsbyImageData: {
+                layout: "constrained" as const,
+                placeholder: {
+                  fallback:
+                    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC00lEQVR42iWRW08bVxSFx5iAMcQQj+wYfDe+zHhs45nxeGzssT2+4NgEErdAQEASmkKvKoqCKhSqVpEiVepLHypVbfpjv57Sh6O1t/ZZ3z5aR3KvPjK6/h3j6QWrsox/xc96OkfBdui8vOHZ3T/s3/7J7O4Tn73/W5y/ePbjH0yvf2Pnm4/0L3/BfXNH99Ut7dMbJPfyA8Nvf2Ujp7H4QCKw7MO/4CWZTrE1Ovjf8OXP9K8+3NcDUbtf/ET39R3uxXv6F7c4p+/YPn6LffADUvvsHc75DSsPA6z5F6kqCqqqkS0IbY/QnBH6+IjG3itazy8YnF3Tf/kW5/ASa3qGvXtKTcyt6SmN2RWS+fwrzIPvKdsd2m0Hu97AslvkFRVzckhzdk735Guhr9F7u5RqDUoijsbeMeZ4JkAv6In54Pw7Wp+/QbInJ+xM9pkdHtMf76IU0hSUPIrVpv6faTQTRgEWl1sdl3IuyXrQh1IpUR0+xRjuYU1eCPCR6PeQTtpFDutxxkYC0ygTSybY7gzQt/ukyjWimSzJoimgRwzdAfUtlVTIT2wjSKkzpNx5QrE5FJ84oNjaQRplfTipBwzVANtqiJAcpNXq0u700ZoOutNF02sY7phu08JQomQ31oiE1yjUewI6ptSb3Oe9afWQnMQC9bCEE5+np8mUiyplNceWplBtuxTKOpZVp9pyyeQVtE2ZTDhAIhvAPDbJ20029SYZ3SZdbSA1170YjzzYYQ+9wjK5TJxwSCYWfUwwssFqOILS7JExLfJOkVjEz+PAHJXdBO6NjjqNEFU0oqpOrKgj1UMetgIearJEM71MaG0Fz5yHRZ+P+XkvC0s+UoqBMW1R6ISIrC8Si/sxjtJU9qOkun5SVolkpUFCZC7V5DlKyx7MoEQ9sURk1Y8kSXi93nvgvACHojLaMELMeEgkLRZUZAFLke8tEa36iFfE60omUc3gXx7oZK6n7svEAAAAAElFTkSuQmCC",
+                },
+                images: {
+                  fallback: {
+                    src: "/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/11456/dagon-2001.jpg",
+                    srcSet:
+                      "/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/43c32/dagon-2001.jpg 78w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/78def/dagon-2001.jpg 156w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/11456/dagon-2001.jpg 312w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/a02d5/dagon-2001.jpg 624w",
+                    sizes: "(min-width: 312px) 312px, 100vw",
+                  },
+                  sources: [
+                    {
+                      srcSet:
+                        "/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/08742/dagon-2001.avif 78w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/1c619/dagon-2001.avif 156w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/c02e5/dagon-2001.avif 312w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/81026/dagon-2001.avif 624w",
+                      type: "image/avif",
+                      sizes: "(min-width: 312px) 312px, 100vw",
+                    },
+                  ],
+                },
+                width: 312,
+                height: 176,
+              },
+            },
+          },
+        },
+      ],
     },
-    browseMore: [
-      {
-        imdbId: "tt3280262",
-        title: "Cult of Chucky",
-        grade: "C-",
-        slug: "cult-of-chucky-2017",
-        year: 2017,
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnklEQVQoz02SyU9UWRSHz733vcerV3M9qCoESpBiEEQFirEJNAgljgXpVrAMUUhQpBN64dANEXogaXrRYQOJiWlNHOKml71w4X9g4t/0mVdVJixOTs7ifvl+9xyJGUXUKDytiGqh0JWlNNnN5dE8xeF2Cp0ZOk4lWJg8y9J0L422JqEVvlaVHq+8qzGMQqKWIqhgiGlhpLuR0lQ3V8c76G1J4FtCzrNIiZBSQtbWFWgATJoqNIBFgrIUkrAV8QAYgI0wW2hjbWGIYiFHgxIWehp4PNtOR8QiFzJkHE2bZ6pQo0hZilhNKmorxHcUSUdX6GEt3JjoYufBPIsjzXSGhc2pVp7Nd9GTsMm5irStyUcMp+sMKa1IBZZW1TCAStIOgFVdV4QfL/Xx1883KX+X5VK7x+HyINc7fKbaXAbSNs2OJh81dMVtMrX/jJ+MnLSqkYPBqQDP83Rlku/zHmPNHh82Z9gab2NlqJ7JVo8+32aoqY7RXIgm15CsAb/tQnxXUx/SRIzGiFC+Osj26gyzPSnOJYX1iXaOlkco9SYpdnr0ZxzGciEmzoTJOrqy5YQ5EbmlXtOU0NR7Gs8ID27P8P6fRzxeHmb8tEOLK+wtDvBH6Rw/nI9X7C5mHPqbo6RDDmElxPSJyLmYIe1qTiUMjUlh616R/1//xtHuPaY7o8z0pvnpxgDvtm+xXR5nc6HAylwf6zcLXBnO09eUqpxbuGYp2bBNtk6RDRl8V/jzSZkvn97w6mCDp3dG+e9wk9f7q7x4Xubol1vsrM1xvLPM7vo8d4oXuTbSje9YeCJEVGDYavA9TcrWWCLsbZX5/PElr/bv8/bvVY6f3+XtwRr//n6X+9cG2Vgc5fjXJfYezrM0d4HSxFkaXIeQCGGt+Aojmj3dV2BncQAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ced04/cult-of-chucky-2017.jpg",
-                  srcSet:
-                    "/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/41793/cult-of-chucky-2017.jpg 62w,\n/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/6a789/cult-of-chucky-2017.jpg 124w,\n/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ced04/cult-of-chucky-2017.jpg 248w,\n/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/9025e/cult-of-chucky-2017.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/ee463/cult-of-chucky-2017.avif 62w,\n/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/eaf25/cult-of-chucky-2017.avif 124w,\n/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/6297a/cult-of-chucky-2017.avif 248w,\n/static/724afb2cf9cf9b4e4b3a0046c5fca8a8/c0abc/cult-of-chucky-2017.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 140,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt2230358",
-        title: "Curse of Chucky",
-        grade: "C+",
-        slug: "curse-of-chucky-2013",
-        year: 2013,
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACwUlEQVQoz0WQWW8bVQBG78TjZebOdmc89ow9jms7jjec1thOnTROIUmTKCXNwkPSCgGKQlkeEAIEFcsDqKhiESo8REVCfQCBVCR+Rn/XQbEq8fC9Hp3ziVG3zKRfYfValfVhnVfHdfoLRULX4GozYqUTUSta9KsuW8OEXi1EuZK8snBtg6ioKPg2obLwHQNxJVZUI0Wl4FKLPMa9hMFCgUE95Oz2Mkev9OjVQ1oVjxv9iGY1j3IMAtfEcwzm52PCwMHOpvBdA7G5XONyG8MKd9Ya3L3VZ2+5yaf3bvP3w084vtmnV3FolxxGiaRbsvFcOTNSnqTeqFAIFemUICoGiHrsUCva1CObxbLLwVqHw0mfD/Zv8ej8DdqxTzu02Lza4P3XbnA+bdGLHZQjZ6bz1TJK2WhCYMssYqUXsjFK2Js2Odhos7vaYNKucLYzZdSYJ8imGNRijtcH/P7FORcfnrBT94iUhZnVSUoFimGAkdEpBC7ij++2ePbzPn/9csKPD7YZLJYpKYeXajGhY5Aoye6wxfnuCg/vn/L4vSPudjy6iY9j5WbpeU/OPg19G/Hs8SH//HrIvxevc7rbx9RtXFOizBwF5ZI3s1xfLPPo3WOeP/maH872ub+kWF0okMumcWUGR2awzSyulUP8+f0Ov327zZNvthi1YoTQmRMaUgYU8wmOKtIMFV++fcLFR29yMzL5eFLiWjVA0zTSc3M4ho6RTZFKzSHWl68wWkroLsYoyySTNrB9hQwSfL9MqT0lLSOGK+tMp2ucLOR4ZxQR+zYZPYWuabP/9EuYEIi46JJXknxgE1uSWr6AtD1k2qDs+2yPxxxsbjB5eY2v7pzy2XKLpbI9S7wEzSAvdmksbFPHMnU8maZT6VCzFEJo1KMK17tN9sZLPH/6Ew/eusfh6JSjo88JPBPbyJB7AdS0/6H/Ae7hPu3AfebNAAAAAElFTkSuQmCC",
-              },
-              images: {
-                fallback: {
-                  src: "/static/bb69a5da74a51e571c086d75b8bd4459/ced04/curse-of-chucky-2013.jpg",
-                  srcSet:
-                    "/static/bb69a5da74a51e571c086d75b8bd4459/41793/curse-of-chucky-2013.jpg 62w,\n/static/bb69a5da74a51e571c086d75b8bd4459/6a789/curse-of-chucky-2013.jpg 124w,\n/static/bb69a5da74a51e571c086d75b8bd4459/ced04/curse-of-chucky-2013.jpg 248w,\n/static/bb69a5da74a51e571c086d75b8bd4459/9025e/curse-of-chucky-2013.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/bb69a5da74a51e571c086d75b8bd4459/ee463/curse-of-chucky-2013.avif 62w,\n/static/bb69a5da74a51e571c086d75b8bd4459/eaf25/curse-of-chucky-2013.avif 124w,\n/static/bb69a5da74a51e571c086d75b8bd4459/6297a/curse-of-chucky-2013.avif 248w,\n/static/bb69a5da74a51e571c086d75b8bd4459/c0abc/curse-of-chucky-2013.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 140,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0050766",
-        title: "Curse of the Demon",
-        grade: "B",
-        slug: "curse-of-the-demon-1957",
-        year: 1957,
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZklEQVQozz1S20qyURD9HsCKSIsipcKQyiBLiRAxJKJAs7JCCS/EJNGOIEhS3WSmHREKT1SEmUKQeN0zdNErRHfiM6yfNT90MXyzvz17zZpZS/n8/MTZ2RkymQwuLi5QqVTw/v6O09NT3NzcyPnl5QWvr68oFovI5/MoFAqSl0olHB8f4+7uDufn50gkElC+v79xfX2NXC6Hh4cHNBoNXF1dYWZmRprUajUBe3t7kyYEYEPW8e7y8lLuCE5g5ff3F/f396hWq3h6ekIgEMDGxoaAsYDBBuFwGPv7+8IiFovh4OAA8Xgcfr8fe3t7ODw8RDQahdJsNgX94+MDHo8HGo0Gw8PD8Pl8ApRMJv/WcXR0hFAoJCCLi4vwer3ydblc2NzclK/SarVQLpdlL0ajEVqtVgDNZjNOTk6QTqdlHdlsVs4E3N3dxdLSkuTr6+uYnp4W4Pn5+f8Mn5+f8fj4iNHRUeh0OoyMjEgeDAaRSqVkDWS4trYGvV4Pp9OJ5eVlOXMSsiPrSCQC5efnR8TgeAaDAT09PRgYGBBQsuDIfMDiqakpjI+PY3t7W5gNDQ1JTuZbW1viFuXr6wu3t7fyoLe3VwAZg4ODsNlssniOY7FY4HA4JDgqRSJLu92OhYUFuSdbpV6vix34k4L09/eju7sbnZ2dWF1dxcrKiuyUDchwcnJS9ktAWojCjI2NSVitVig0LtlNTEwIYF9fnwB2dHSISOw8OzsrI5KNyWSS2rm5ORGMtuJErG9vb4dCU9Mu3EdXV5dcqtVqtLW1QaVSYWdnRwTjFBTJ7XYLKI3PCegAepM5RfoHCA3eRQAVq4YAAAAASUVORK5CYII=",
-              },
-              images: {
-                fallback: {
-                  src: "/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ced04/curse-of-the-demon-1957.jpg",
-                  srcSet:
-                    "/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/41793/curse-of-the-demon-1957.jpg 62w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/6a789/curse-of-the-demon-1957.jpg 124w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ced04/curse-of-the-demon-1957.jpg 248w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/9025e/curse-of-the-demon-1957.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/ee463/curse-of-the-demon-1957.avif 62w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/eaf25/curse-of-the-demon-1957.avif 124w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/6297a/curse-of-the-demon-1957.avif 248w,\n/static/5a026e44b35735dfcbfa1f5c0cf6fb6e/c0abc/curse-of-the-demon-1957.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 140,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0264508",
-        title: "Dagon",
-        grade: "B",
-        slug: "dagon-2001",
-        year: 2001,
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1ElEQVQozyXD+08aBwDA8VNRsQquApX3o4e74w6Ux3EHB8fLA4VSCwNk6UO0zLm01WRtXMzsYrb+0GRNmv26Zen+1O+S7ZN8hMb5B+yrz5SfvsMTiLDuuoeYr5I9GFE/u2Hw/m8GP//J6O4fxndfmNx9YXT7F4/ffab75iPti19pzd9TP73BenGN0Pz+N9qXn0jkqjidy/9dW10iHI+jD17Se/sHh1ef/n/5OwevP2JffKD53R3N+S80Xt5Sm91QfX5NefojgjW7oXF2y6bHi3NJQAwFCAX9JCUZuWKT7Ywp9GeYk1dY0ze0Zte0Zj9hfXtFZfwKa3xBsX+C1j9DH/yAYExeo08vCURiKLJEqWigl6qIYpK9/SNy7SPKwxOM/lMK9hDjYIjRm2I+eUbOfkL+8BhzcEJtPKcyOkfY7Z5SPprx6HhGp/uYTFpBURXkvE5p8BxzdIo5mmNOztGsfaSHUcIBH3vVBoXDIdrhN1jjOdXJnEJ3jDC060ytND1rD900STwMs5fPoxh1JL1OTEqTzFUoPnpGs96kuCsT2lohGvah1mx2611Us4NSbpOpHSAcKW7a0jpt9T7FVACP10djv4dZsxFzOlJeI6HmyDZ77FsVNDWB6HcT2L6PXGqhWh2UagepbCMWmwi12DKGX6CWWKWueEnGo+R20xQLGrlai2ypQlk30Bpt0kqKjOhFDHxFILiB2i6hmPukzBZSqY5YqCCYIQeFLYHS9gIN2YWqSMQjQcR4kJicxheKoRgVxKxBPJdGjLgJuhzI1jb1t1mStQSBnTRBeZdQKo9gPFgk6xbQPAJVcQ2/x8XyygoutxvHsgPnxjo7BYuMXSXVCvPAu0xwe4XsKEHxhYTc3ySWV4mmdSIZDUHzLJDZWEDbEtCi9/BuuhAEgaXFBRyORRzOVTw+PxlbJKq5CMTWiOy4yR3H+Lq1gT+zQjS7RyRdJKTm+ReU8Wl/MV4n7QAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ced04/dagon-2001.jpg",
-                  srcSet:
-                    "/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/41793/dagon-2001.jpg 62w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/6a789/dagon-2001.jpg 124w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ced04/dagon-2001.jpg 248w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/9025e/dagon-2001.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/ee463/dagon-2001.avif 62w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/eaf25/dagon-2001.avif 124w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/6297a/dagon-2001.avif 248w,\n/static/7d7e9ace21c3d412d055c0fbb9a5b3ca/c0abc/dagon-2001.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 140,
-            },
-          },
-        },
-      },
-    ],
     imdbId: "tt0050280",
+    grade: "A",
   },
 };

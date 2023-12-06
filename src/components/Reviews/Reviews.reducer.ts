@@ -28,8 +28,8 @@ function sortItems(items: Queries.ReviewsItemFragment[], sortOrder: Sort) {
     (a: Queries.ReviewsItemFragment, b: Queries.ReviewsItemFragment) => number
   > = {
     "release-date-desc": (a, b) =>
-      sortString(a.releaseDate, b.releaseDate) * -1,
-    "release-date-asc": (a, b) => sortString(a.releaseDate, b.releaseDate),
+      sortString(a.yearAndImdbId, b.yearAndImdbId) * -1,
+    "release-date-asc": (a, b) => sortString(a.yearAndImdbId, b.yearAndImdbId),
     "review-date-desc": (a, b) => sortString(a.reviewDate, b.reviewDate) * -1,
     "review-date-asc": (a, b) => sortString(a.reviewDate, b.reviewDate),
     "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
@@ -123,12 +123,12 @@ interface FilterGradeAction {
 
 interface FilterReleaseYearAction {
   type: ActionType.FILTER_RELEASE_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface FilterReviewYearAction {
   type: ActionType.FILTER_REVIEW_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface SortAction {

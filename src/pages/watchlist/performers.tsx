@@ -19,6 +19,7 @@ export default function WatchlistPerformersPage({
 }): JSX.Element {
   return (
     <WatchlistEntities
+      entityType="performer"
       title="Performers"
       tagline="Talk low, talk slow, and don't talk too much."
       entities={data.entity.nodes}
@@ -28,10 +29,7 @@ export default function WatchlistPerformersPage({
 
 export const pageQuery = graphql`
   query WatchlistPerformersPage {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: performer } }
-    ) {
+    entity: allWatchlistPerformersJson(sort: { name: ASC }) {
       nodes {
         ...WatchlistEntitiesItem
       }

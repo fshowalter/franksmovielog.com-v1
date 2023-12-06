@@ -18,17 +18,13 @@ export function MostWatchedPeople({
   nameRenderer,
 }: {
   header: string;
-  people: Queries.MostWatchedPeopleFragment | null;
+  people: readonly Queries.MostWatchedPersonFragment[];
   nameRenderer: ({
     person,
   }: {
     person: Queries.MostWatchedPersonFragment;
   }) => JSX.Element;
 }): JSX.Element | null {
-  if (!people) {
-    return null;
-  }
-
   return (
     <Box as="section" boxShadow="borderAll">
       <StatHeading>{header}</StatHeading>
@@ -49,9 +45,9 @@ export function MostWatchedPeople({
         </Box>
       </Box>
       <Box as="ol">
-        {people.mostWatched.map((person, index) => {
+        {people.map((person, index) => {
           return (
-            <Box as="li" key={person.fullName} display="block">
+            <Box as="li" key={person.name} display="block">
               <Box
                 className={stickyRowHeaderStyle}
                 style={{ zIndex: 200 + index }}
@@ -70,7 +66,7 @@ export function MostWatchedPeople({
                   backgroundColor="stripe"
                   textAlign="right"
                 >
-                  {person.viewingCount}
+                  {person.count}
                 </Box>
               </Box>
               <Box lineHeight={40} className={detailsRowGridStyle}>
@@ -111,7 +107,7 @@ export function MostWatchedPersonViewingListItem({
   return (
     <ListItem alignItems="center">
       <ListItemPoster
-        slug={viewing.reviewedMovie?.slug}
+        slug={viewing.slug}
         image={viewing.poster}
         title={viewing.title}
         year={viewing.year}
@@ -123,7 +119,7 @@ export function MostWatchedPersonViewingListItem({
           <ListItemTitle
             title={viewing.title}
             year={viewing.year}
-            slug={viewing.reviewedMovie?.slug}
+            slug={viewing.slug}
           />
           <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
         </Box>
@@ -137,7 +133,7 @@ export function MostWatchedPersonViewingListItem({
         >
           <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
           <Box>
-            {viewing.viewingDate}
+            {viewing.date}
             <Spacer axis="vertical" size={8} />
             <ListItemMediumAndVenue
               medium={viewing.medium}
@@ -152,33 +148,25 @@ export function MostWatchedPersonViewingListItem({
 }
 
 export const query = graphql`
-  fragment MostWatchedPersonViewing on ViewingsJson {
+  fragment MostWatchedPersonViewing on MostWatchedPersonViewing {
     sequence
-    viewingDate(formatString: "ddd MMM D, YYYY")
+    date(formatString: "ddd MMM D, YYYY")
     venue
     medium
     title
     year
-    reviewedMovie {
-      slug
-    }
+    slug
     poster {
       ...ListItemPoster
     }
   }
 
   fragment MostWatchedPerson on MostWatchedPerson {
-    fullName
+    name
     slug
-    viewingCount
+    count
     viewings {
       ...MostWatchedPersonViewing
-    }
-  }
-
-  fragment MostWatchedPeople on MostWatchedPeople {
-    mostWatched {
-      ...MostWatchedPerson
     }
   }
 `;

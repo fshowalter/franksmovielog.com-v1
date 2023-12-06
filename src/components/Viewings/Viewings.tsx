@@ -64,7 +64,7 @@ export const query = graphql`
     viewingMonth: viewingDate(formatString: "MMM")
     viewingDay: viewingDate(formatString: "ddd")
     viewingDate(formatString: "D")
-    releaseDate
+    yearAndImdbId
     title
     medium
     venue

@@ -20,16 +20,22 @@ export function RelatedMovies({ review, ...rest }: IRelatedMoviesProps) {
       paddingBottom={{ default: 0, tablet: 128 }}
     >
       <RelatedMoviesForWatchlistEntities
-        entities={review.watchlist.collections}
+        entityType="collection"
+        entities={review.more.inCollection}
       />
       <RelatedMoviesForWatchlistEntities
-        entities={review.watchlist.performers}
+        entityType="performer"
+        entities={review.more.withPerformer}
       />
       <RelatedMoviesForWatchlistEntities
-        entities={review.watchlist.directors}
+        entityType="director"
+        entities={review.more.directedBy}
       />
-      <RelatedMoviesForWatchlistEntities entities={review.watchlist.writers} />
-      <MoreReviews reviews={review.browseMore} />
+      <RelatedMoviesForWatchlistEntities
+        entityType="writer"
+        entities={review.more.writtenBy}
+      />
+      <MoreReviews reviews={review.more.reviews} />
     </Box>
   );
 }
@@ -37,7 +43,7 @@ export function RelatedMovies({ review, ...rest }: IRelatedMoviesProps) {
 function MoreReviews({
   reviews,
 }: {
-  reviews: Queries.RelatedMoviesFragment["browseMore"];
+  reviews: readonly Queries.StillListMovieFragment[];
 }) {
   return (
     <StillListNav>
@@ -56,22 +62,22 @@ function MoreReviews({
 }
 
 export const query = graphql`
-  fragment RelatedMovies on ReviewedMoviesJson {
-    browseMore {
-      ...StillListMovie
-    }
-    watchlist {
-      performers {
+  fragment RelatedMovies on ReviewedTitlesJson {
+    more {
+      withPerformer {
         ...RelatedMoviesForWatchlistEntity
       }
-      directors {
+      directedBy {
         ...RelatedMoviesForWatchlistEntity
       }
-      writers {
+      writtenBy {
         ...RelatedMoviesForWatchlistEntity
       }
-      collections {
+      inCollection {
         ...RelatedMoviesForWatchlistEntity
+      }
+      reviews {
+        ...StillListMovie
       }
     }
   }

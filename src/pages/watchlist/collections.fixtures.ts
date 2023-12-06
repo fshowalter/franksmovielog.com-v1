@@ -4,35 +4,30 @@ export const data = {
       {
         name: "Child's Play",
         slug: "childs-play",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 8,
         reviewCount: 8,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEuElEQVQ4y12Ue0zVZRjH3/d3/50bB8453A6goojCTJE0L2CkoZLiBTUlRcx0IDQVNbMllaCCuvI2mpZkShahpaktpl1sDdPWci5LKS0veaE2nVtbf37q/A4z6o9nz/v7ve/z2XPZ8xVCakRMOl59cFaFxCMkXiFxC4Hb8Qq6VBCOqUglEqMjFD3qI4zIIXqhoiomAcUkLFT6SoW+QiFTKAzRdIaoOlnOt0qSZqJpJkKNxPaAOeb8UFGkToK0yJIqozWDPKEySrGZYLqZ6YulLJjAvGA8M70+Jtou+hsuLNON1E0HGqkqmlh3dj5pMUBqTPbEUB4MUpf/CK/n5lCdlEpVOI3F8WGWh9NYEk6jOiWNObEh0m03psuL1CweVOr0QqqkSpMJnljKEkLsWziZ34810Vk5mwODH2JrZjbNubnUZWVTmRBmTjCZJWnpFAYCxLhdaJbL6aOU3UBLKAzSPEyLiWf9uBxuvLue258d4PreRjqrZ/H5+DzOTingfMUM2sun8eLIYQwOxVMUTibVbaHbLqRmRIcqhIpfKORoXqbHhWivKaXr+JvcOXWIro6PuNm2mWtblnKhchadz87mWl0lV+qXUV0wisRAHJmBWOJi/Si6GQWqQiEoJNnCoqxXCucal9P1aSt3vjxI15mjdJ05wu2TLdx6Zwu/te3k15bN3Giq5ejiUlJTUklLSSElKQnVsKJAUwiCUtJPSKqy+vHTtue5+var/NH6Gvc7DnHv/Anud37DvcvnuHv6CNf3N3JxYw27SopISUsjMTmZpMQkNLMbaAmBX0rCQrAydyCHSotYmTec2plFnFi9gPM76+jYVMulvTtor5jF0hE5TMzoQ0lmBvHhZOISEwnFJ2KYdhSoC4EtJQEhqBk+kPaKqeyu38DChXVMyZ9EZXZ/No4fy7LcQWQnJjBq+GRKSqrZ83Qpg/v0xgqGiAmE0ByghtCEQJUSnxCsKRjKzbatXDq8j8NNe/i6rYUrh3dzp72Fi3sbaNlez9aG7by/5wC/7G5gRcFIzLggnrgAqmFHN8ZQVKSQRMBrH83l8rY1XNvXyP2vDnK3vZmrH+zgeE0ZbVVP8ufZj/nrwhfcOrCBy+sqaSzMxxMM4Y6JRdWtbqCmo6uqs/AzBqRzekExP9Qu4kLDMj6pWcDPrTs5vfVlrjQ3cq62ko6V5ZxbMov3isYwJqMv7kAQ2+1DUc1uodAMdN1wFj05FOSlvIc5NbeY1uKxrHpiHBXFE3hrXS31JcWUDs9hV2kRm/KH8XhmBv6EBFw+P4bpQipGFCgUDUXViYBNr5dB6b1YPSyHk09N4sc9DbQ1ruPq99/SvO4FNpdO4t6JN3hl6mN4A0Fi/HGYlhtNs3oAHQ1UI6k6O+kOBOjfK5Wm6YXc3rGK79ZWs3/RfKoeHU3T/Kl8+Nwz9ElKxB3jx7bc6JqNonSXGwX2EFbNxPL4nL70DofZVJRPx4p5HKuYS33haMpHDKV3cjKGx+fANM12NPRBdlFgD3FUdBTDxnR5sGL8+ANB8vv1YWJ2JkP6puOOjcPy+rBtD7puO4P4D+xfYA+LPNAMVNOF7vIibA/S7UV1eTBsD4bhQo30LDJV5X+x/9jfP/uYsDVWVGgAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/0e001/childs-play.jpg",
+                  src: "/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/46322/childs-play.jpg",
                   srcSet:
-                    "/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/5e3dc/childs-play.jpg 40w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/d18de/childs-play.jpg 80w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/0e001/childs-play.jpg 160w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/4e658/childs-play.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/46322/childs-play.jpg 48w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/aec58/childs-play.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/5bae1/childs-play.avif 40w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/d60a5/childs-play.avif 80w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/2a394/childs-play.avif 160w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/0aca1/childs-play.avif 320w",
+                      "/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/1da62/childs-play.avif 48w,\n/static/9ecf97ce393ea98bb7c4f6d3ec220ef9/9b476/childs-play.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -40,35 +35,30 @@ export const data = {
       {
         name: "Friday the 13th",
         slug: "friday-the-13th",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 12,
-        reviewCount: 9,
+        reviewCount: 10,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACsUlEQVQ4y5VUy0tUURw+z3unuXdeXsfJ1/goS3PEIEFitEU+EB0LhLAsSqIk07QwIqlEiYishQsXZghBEGXQOqG/IFpKi6iIoL8gouUX58ydmWt4x1wczvn9zjnf7/0RQiUoM6D23Hk3i7DCvyyGe8g/cIGLLe/bf8+kgM5BqPg/rxQwYR4HhEdfQAalHJSZWmbcgBABcGHmgZjWmyhP1qG8MglClV5sBS8Asjyg+qQeE0K0Xsmcm6BaJ2HbETilCdeQ0NFtC6guNBhh4IaBtpYaHKgqy94RipgTRzgSAyEib6goYNZ9DtsO49HVc/j+5jZ+vp3B44lexKIhdB1pwYm+HlAR0OGraFT+/AFVYQjHmXQak0c78HJyGB+eXcO7xRHcH+3CUKoRwWAIXATccFUafAApZRo0YoUw1tyK8w1NWBjtw5Mr/VieGsTS+ADmz3aCMK5zmfOweA4JhyEDiBsm6oM2TrXvx6GaEtQYEs/vngY2H+BC5rAulpQq7B1DFloZNk1wQtGajGFlZhDT/W1YnurFn8+L+PjiIioCljZOdypKvrmFgCE5KqWBsY5mrN7M4NVsBl/ez+HX5kOsptswQBwwzrS3dHtACpMJNAkb+3gQjpBoliGcDCawcDyFjZkMfrwex+9vc1gf6sSCrEXaikFQmvV2ew8pUkYIN6wk7kVqccmuwGWzGreidVjvbsfX+RF8mh3Gal0KS/EGTDvViArpPylEVZpxOIaJtBXFfFk91itasBJvxFqiEWt7mzBhVeGYGcXTxEFcL6lGUu7JNrlflak7+Co3reESDXonXo/ucCkaAjaI4CgXJnosB0EqwFTI/m1D3bESoO546UKx3B3Td4K5RnVXCB+2cSu8hfc8O2O5ZjY0cXhlHz7cga23EKzHWHGClbti7Ry5euW/xE7nwVYYKdoAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/59f06504e2fb76b618d37e0ff8e954a1/0e001/friday-the-13th.jpg",
+                  src: "/static/59f06504e2fb76b618d37e0ff8e954a1/46322/friday-the-13th.jpg",
                   srcSet:
-                    "/static/59f06504e2fb76b618d37e0ff8e954a1/5e3dc/friday-the-13th.jpg 40w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/d18de/friday-the-13th.jpg 80w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/0e001/friday-the-13th.jpg 160w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/4e658/friday-the-13th.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/59f06504e2fb76b618d37e0ff8e954a1/46322/friday-the-13th.jpg 48w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/aec58/friday-the-13th.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/59f06504e2fb76b618d37e0ff8e954a1/5bae1/friday-the-13th.avif 40w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/d60a5/friday-the-13th.avif 80w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/2a394/friday-the-13th.avif 160w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/0aca1/friday-the-13th.avif 320w",
+                      "/static/59f06504e2fb76b618d37e0ff8e954a1/1da62/friday-the-13th.avif 48w,\n/static/59f06504e2fb76b618d37e0ff8e954a1/9b476/friday-the-13th.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -76,35 +66,30 @@ export const data = {
       {
         name: "Halloween",
         slug: "halloween",
-        entityType: "collection" as Queries.WatchlistEntityType,
-        titleCount: 12,
-        reviewCount: 5,
+        titleCount: 13,
+        reviewCount: 6,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAC4jAAAuIwF4pT92AAAB0UlEQVQ4y63Uv2tUQRAH8O/bmd2debl30eNx5xkk6kHAS2L8cRpjQvQiByIaEoSAoohlIkZSiUVOTeEfYGFjncpGLDQiFv4ogtUJYizkGit7LcRCeacQEpPLJQjbfnZn57uzsKxbXvjP2NvQs7otYGZFYGE8bGhdskurmFmV9XAm198eF2AcCEacXbeKZexYA5Ysy6Ny6UP1ytL1sfmezqOpEGBL4ppjzwrWU9r2Pht+zIdfJgZ/zF36OjV870xRNaS1urCMpYEvRKkHbGaBp3Hb0sih+rHunwP5akYB723zk0mPeHmhNGPMne25lwcytd70gpPa2b0jsQCyyq9omEu8jAJzPfueDJQfXh389fnmq3JUn+6bzjlAm+Gk4SQInJNo8faNaueuxcqe77MHP13O3wfIbZizSe4GYPLi+PNzJxd2h99G43ddfj4wnoWbYzKeyQO0LbfjzfnK23RYT7tnHEwY1sZD2KBsJkmaB3NrqPS6sPOu1SkE7eT4n7TWGwwBqNjRUTvdX05F+0EgsSQtTRWTUOBgw8eT4yeyMcBMfhM4iQ24NlYZ7u0GYBvXaRVbEgDHS0NdhSIAbh3/rdz4KJVRHzUikE3/JExrsz/4N9fIVnASGrhrAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/7e325285152a9666f3cbdbca48043572/0e001/halloween.jpg",
+                  src: "/static/7e325285152a9666f3cbdbca48043572/46322/halloween.jpg",
                   srcSet:
-                    "/static/7e325285152a9666f3cbdbca48043572/5e3dc/halloween.jpg 40w,\n/static/7e325285152a9666f3cbdbca48043572/d18de/halloween.jpg 80w,\n/static/7e325285152a9666f3cbdbca48043572/0e001/halloween.jpg 160w,\n/static/7e325285152a9666f3cbdbca48043572/4e658/halloween.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/7e325285152a9666f3cbdbca48043572/46322/halloween.jpg 48w,\n/static/7e325285152a9666f3cbdbca48043572/aec58/halloween.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/7e325285152a9666f3cbdbca48043572/5bae1/halloween.avif 40w,\n/static/7e325285152a9666f3cbdbca48043572/d60a5/halloween.avif 80w,\n/static/7e325285152a9666f3cbdbca48043572/2a394/halloween.avif 160w,\n/static/7e325285152a9666f3cbdbca48043572/0aca1/halloween.avif 320w",
+                      "/static/7e325285152a9666f3cbdbca48043572/1da62/halloween.avif 48w,\n/static/7e325285152a9666f3cbdbca48043572/9b476/halloween.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -112,35 +97,30 @@ export const data = {
       {
         name: "Hammer Films",
         slug: "hammer-films",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 94,
         reviewCount: 7,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVQ4y+2SvUoEQRCE9xHEO8/drppxf+ZnF73cwMTIQDBVjATBMxBEDkWEC0QMBEETETTQ4DAw8BV8NXHWWxbNNDE4qKCp7m+giolA9WtFU/gPsLRmTpxmSCb6DjOsVYucJ5Pg9Eih0lSGOqPKWy9GSXCHYraQ7yDfR3EAM0AxQHEC+yLVJvIL2Gcpz+Eu4W7hD2HQwDnVnfgnKa/gHsSPpbyGuxf/KP5Nqhu4Map3WTyCOYN9leoUpkOqGrbUI7FrSEewG8hWka4j89R96BWkjnqZC9vId1Ecww5h9lDM1nCdZ4kaVDFVl+wExZ+x1VxI3iNnyG44EKp+OP4qTMJdUxVDT81Qm7pVZ/yz7enf/ufwB15WlS6gxriOAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/e919b03855219e9e019a1dac518d405d/0e001/hammer-films.jpg",
+                  src: "/static/e919b03855219e9e019a1dac518d405d/46322/hammer-films.jpg",
                   srcSet:
-                    "/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg 40w,\n/static/e919b03855219e9e019a1dac518d405d/d18de/hammer-films.jpg 80w,\n/static/e919b03855219e9e019a1dac518d405d/0e001/hammer-films.jpg 160w,\n/static/e919b03855219e9e019a1dac518d405d/4e658/hammer-films.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/e919b03855219e9e019a1dac518d405d/46322/hammer-films.jpg 48w,\n/static/e919b03855219e9e019a1dac518d405d/aec58/hammer-films.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/e919b03855219e9e019a1dac518d405d/5bae1/hammer-films.avif 40w,\n/static/e919b03855219e9e019a1dac518d405d/d60a5/hammer-films.avif 80w,\n/static/e919b03855219e9e019a1dac518d405d/2a394/hammer-films.avif 160w,\n/static/e919b03855219e9e019a1dac518d405d/0aca1/hammer-films.avif 320w",
+                      "/static/e919b03855219e9e019a1dac518d405d/1da62/hammer-films.avif 48w,\n/static/e919b03855219e9e019a1dac518d405d/9b476/hammer-films.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -148,35 +128,30 @@ export const data = {
       {
         name: "Hatchet",
         slug: "hatchet",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 4,
         reviewCount: 4,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPElEQVQ4y3WT3W/aVhjGffwNtoHGYIy/MMY2OMkgTgBDHGYMBfLBMiKiiHRN0jVB6tQ0kdpVaqttaqMqSadoF5MWaRdbVU2VdrHd7KbdPzCpN/2bptJlalLy6Fyco1e/8zxH73sg6EwwAGEEjaIYhSDQecEQBM72JIyACzUIgnJBajMav8MLBZrxwpFvJGWH49OBIA7e1VEAdjj+uWbc5gXog7sgeLiv0MyLdOZIVgfxxB1ePFG07xVti+PX2JjDhPYT4klSe66ZERQdATs08zoz8UxJ/a5nHwjSPi8cK6kDWT1U1EM5dZrSvxbkI1n9P+k5uEgzJ0rqQFJ+0jNPpOSXsfi9GL8fF15q5qGoPBakVTb6Hj735vcHESceisp1jr+a1P2ZWSFp3C26g2LVNe31CXs3+0knyi1fYS/C//nDMANB7BhXb/e8+V69tXL67f6y5916cGTatalq27RsGsVHwxiGc6Iqq0Zjvtto91aW+493rrVmZ58+PXaba7lCw2924gkJQzFopMpzTV3Piilja6nzZHfvZtPLG2Z1xmkWyulJx7LymjEejoy9Mwcf2edyBVlSJUm7tdj+7qvbgyl7yRhXZC1EEN7VrpV3JSHJMKERMAIQLi6JqjU1Vd6uVhedufa4M6lm0eHA1fyF49/+snIV7KP5G8IwoqqZfKXtzLjX+l8sLHTTciYSFRiK+eHn042a98sff27ePSDx4ActOsuQTiZbTkWfKKy22tu79+1izbCmqQAdjnAvX/395u0/NzZudm/sMfSo2KW0njfMkmG1Kq6/1G98vlnvrNvTTr5Uu/fs10c/vthY37IMC0XQi5kBAAZFR2namymJUU63pufXBt2VfsOdq/vt2WYvX/S8smum0qP7BIYLRhECxWTFaC6u9nrX/WrDKfutpZ4zXexMZs1EIkhRI+YEDP0RAEIEWSr5/e37n/odUzXsUu3h3qPPKu6gVtYliR27pM8QBAVQVAhQV3AyL2oWJ0ZxQgmxdTFla8Z4jEvHeDYUuRSOEQGRoikMZzE8QQZZMiCQQZNmZCbMEiQfZEgMhy4TDiMEjMAwQGAEgREUhmkMj+AkiWJBFEPAub/8L00AjxHbv6lmAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/30dfc7b15c4f5dc5f33f99155ffc6852/0e001/hatchet.jpg",
+                  src: "/static/30dfc7b15c4f5dc5f33f99155ffc6852/46322/hatchet.jpg",
                   srcSet:
-                    "/static/30dfc7b15c4f5dc5f33f99155ffc6852/5e3dc/hatchet.jpg 40w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/d18de/hatchet.jpg 80w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/0e001/hatchet.jpg 160w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/4e658/hatchet.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/30dfc7b15c4f5dc5f33f99155ffc6852/46322/hatchet.jpg 48w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/aec58/hatchet.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/30dfc7b15c4f5dc5f33f99155ffc6852/5bae1/hatchet.avif 40w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/d60a5/hatchet.avif 80w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/2a394/hatchet.avif 160w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/0aca1/hatchet.avif 320w",
+                      "/static/30dfc7b15c4f5dc5f33f99155ffc6852/1da62/hatchet.avif 48w,\n/static/30dfc7b15c4f5dc5f33f99155ffc6852/9b476/hatchet.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -184,35 +159,30 @@ export const data = {
       {
         name: "James Bond",
         slug: "james-bond",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 27,
         reviewCount: 6,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaklEQVQ4y+WSMauCYBSGj18SRNgWOESr5BCEuERBIEhLg4O/oEUa3SIRchAhJKKlKWgRXMJQyx+gP6ClKec2d6ei68W6ceHe4d6pd/q+w/scDu85AG8mDMP+CC4UCgihrJS/0Yey77O+wM9tfjnP3ZZbh8OhYRjVahUAZFmeTCb1et00zfl8vlgsJEmazWar1Wq9XmuaViqV7gyO4wAwHo+jKDIMYzqdapp2OBx0XY+iSJKkbrebJInneefz2XXdwWDQarUeA5bL5cvlwvO8aZphGMZxzDCM4zjL5RIA9vu94zj9fl9RlEqlkmOfcLvdPp1OtVotjuPdbuf7PkVRaZoyDKOq6vF4pGm60+mQJJln+YAbjcZ2u7Vt23XdXq9nWVYQBJvNhmXZ6/XKcRwAZOG/5pq14ThOlmWCIABAEITRaAQAzWZTFEWSJIvF4gv5zVKeHT8u7GFACOE4nl9ItgIMw/Lif57n++gGnxtwn2hRGIIAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/184378d1716cf9f742fd60f6e988a463/0e001/james-bond.jpg",
+                  src: "/static/184378d1716cf9f742fd60f6e988a463/46322/james-bond.jpg",
                   srcSet:
-                    "/static/184378d1716cf9f742fd60f6e988a463/5e3dc/james-bond.jpg 40w,\n/static/184378d1716cf9f742fd60f6e988a463/d18de/james-bond.jpg 80w,\n/static/184378d1716cf9f742fd60f6e988a463/0e001/james-bond.jpg 160w,\n/static/184378d1716cf9f742fd60f6e988a463/4e658/james-bond.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/184378d1716cf9f742fd60f6e988a463/46322/james-bond.jpg 48w,\n/static/184378d1716cf9f742fd60f6e988a463/aec58/james-bond.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/184378d1716cf9f742fd60f6e988a463/5bae1/james-bond.avif 40w,\n/static/184378d1716cf9f742fd60f6e988a463/d60a5/james-bond.avif 80w,\n/static/184378d1716cf9f742fd60f6e988a463/2a394/james-bond.avif 160w,\n/static/184378d1716cf9f742fd60f6e988a463/0aca1/james-bond.avif 320w",
+                      "/static/184378d1716cf9f742fd60f6e988a463/1da62/james-bond.avif 48w,\n/static/184378d1716cf9f742fd60f6e988a463/9b476/james-bond.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -220,35 +190,30 @@ export const data = {
       {
         name: "Phantasm",
         slug: "phantasm",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 5,
-        reviewCount: 2,
+        reviewCount: 5,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC8klEQVQ4y22UyUuyURTGb9lgZWgjhVkJqUEDNC2iQDSqVYsmAg0xSCuKRmimok1QtAg3rVy1a19UELToD4j+oOfjOXzn5RoKx/cO5/7OcM+5pqamBlVVVSJutxuVlZWoqKhAf38/hoeHUVZWJsJ17peXlztrHFOoz73a2loYKuoix8YYdHV1IZfL4fv7G9fX1/D5fHC5XA6MYxUbTqghyLbGxdXVVdze3iKfz+P19RVHR0di0AbZQP1SxxCi1uldIBDAxsYGVlZWcH5+jru7O3x8fEgKuK/6paWljijcATp0YxCJRLC/v4+trS08Pj7i6+sLz8/PmJiYcIAa5l+opMxOLA8Eg0FkMhnxcnt7Gy8vLzg9PUVdXZ0DKgakFHioueB8amoK2WxWgG9vbzg+PkZ1dbUYLCkpcWB6hmuci4f8+2uVSpOTk0gkEnh6esLe3p7AhoaG0NHRIWOWiOZSgTxv7NrSxHKeSqVweXmJ399f7O7uoqenB6FQSKCDg4M4OTmRMeEKFiALWouZYXHOw1dXV1I+DPfi4gJLS0uSy7W1NVl/f3/H/f29AO3aNHSd3UJh4mkpFovh7OxMLqe7u1sKm97yNz09LSXFUnp4eBCgiuSZEB6or6+H1+uVDYZLb+bn59HQ0ACPxyOe/fz8SLjJZBKfn59SXjzHVPAi5+bmYJqamtDS0oLW1lbxkkDm7ODgQLxjGExDY2Mj1tfXJW8LCwu4ubnB+Pg4lpeXMTs7K4aoYwgKh8NyWHuZSouLi05+mAYdU9g19D6dTgt8ZGTEaT/T1tYmr4ou8mBvby8GBgYKIIQydOodHh5KuIxic3NTwOSwfEx7ezvi8ThGR0edEmDZMEwq2H1OIzy8s7MjZcPvzMyM3AF1pVM6OzsRjUbFK7sE7NbSkhAP/t/m2NiYPCQ0rB0khulqX18fmpubC16TYq+KwhWsX92THBLk9/vFqnaKemR7Z0Pt3rfbT+6AdUhhCxKmD26xx/SvkWKG/gGsFDMXtAlPEgAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/f4a6a241894b3da58f84547403d38592/0e001/phantasm.jpg",
+                  src: "/static/f4a6a241894b3da58f84547403d38592/46322/phantasm.jpg",
                   srcSet:
-                    "/static/f4a6a241894b3da58f84547403d38592/5e3dc/phantasm.jpg 40w,\n/static/f4a6a241894b3da58f84547403d38592/d18de/phantasm.jpg 80w,\n/static/f4a6a241894b3da58f84547403d38592/0e001/phantasm.jpg 160w,\n/static/f4a6a241894b3da58f84547403d38592/4e658/phantasm.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/f4a6a241894b3da58f84547403d38592/46322/phantasm.jpg 48w,\n/static/f4a6a241894b3da58f84547403d38592/aec58/phantasm.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/f4a6a241894b3da58f84547403d38592/5bae1/phantasm.avif 40w,\n/static/f4a6a241894b3da58f84547403d38592/d60a5/phantasm.avif 80w,\n/static/f4a6a241894b3da58f84547403d38592/2a394/phantasm.avif 160w,\n/static/f4a6a241894b3da58f84547403d38592/0aca1/phantasm.avif 320w",
+                      "/static/f4a6a241894b3da58f84547403d38592/1da62/phantasm.avif 48w,\n/static/f4a6a241894b3da58f84547403d38592/9b476/phantasm.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -256,35 +221,30 @@ export const data = {
       {
         name: "Saw",
         slug: "saw",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 9,
-        reviewCount: 6,
+        reviewCount: 7,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEYElEQVQ4y2WU+W9UVRiG777N3Fk793am043upZ1pOy3TVdpioZRFQC2C6A+oiWAiYllFJUFjMIAgJiAxBjUsiQZQoKVYIFajCUZNjKn/zmPO7WKjP5ycm3O++5z3e9+TI8magazqKJoRDPGtaga6ZqFr5tJQFB1lYW+pVtP/nVUxG0jKIkw1ln7QRJGsoKoahmGi6wahkIvjuAFcVTQ0ccgyMYtQSV6AiYVFmKIopFIe9fVNeF4aN+xSnq0kmfRIJLwAronDVeN/UGm5XDVQJtPU2EJ/3xCpEo9N6zdw4p3jfHTqNEcPHaZ15Up0TcN1I9hWCFXVWbJNKFx+gmjRsiyKxX7isTijg6u5dvkyM1NTzD58yK+//Mzk7W9pbmxEVVR8P41lOijLFS5vV5Jk0ukMra0dZH2PA6/t4eT7J5iZnuLOrZvcvXObme/vc+bDk6iKEqgsz1Zh6GbQ/nzLC5K1AChRXV1LssSjubGO/vY8viTx+isvc/7sGcbbOxnNFTj81hGqKiuC+pqaehKJ1EJQS6EIg1VkWaLQsYqy8kp6a+u4ev4T3n5zP7u3j3P/3iT7d+7k2Kt7+ObiRRrLyzFNk+qqFaxYURv8L25A4KGiqEEYApguTVNVXcvWljw3zp3ni8ufs/u57czcm+LH2UdM3rrJXxc+Y12+jXhJit5iH2ufHEM3DTR94R5KAUzGti0MQycSjVOZLGHv8zvYPLyaZ8dGeTB5l6tffcn7hw5y4ulxvHAYJ+TQ0d7JxrEtRCIRVF0TQC3wQgzTMjEtnWQyhW6YbNs8xgsjI+zte4JPx3dx841DXL90iVSpH9Qn4nEy6bKg7bDrohkiZUUNNlVVwbFNoq5DNBLGtixG1wxz/PAED767xfTX13h45QoXzpympqKCqOtSVpbFdd3ASwHTDRGKoqIoMn4iQpmfIBYycENWcEixYxXHJiaYnr7N458e8Wh2lsq6eqoqqunp6qeupgHLslE1DU3X0TTRrSKj62oAS8XC6Pr85RbAeDzJBxMnOLvvKAf3TTB3b5YjA2Pkm9ro7hpgw+hWeooDgTKRshiBQk1ViEUcQo5FIpHE83yikQiabfFe6yBzw7uY7trGn/mn+K1hlA09w/T2DNLd2Ud3Vz+O7QShijdAktV5D4UXiUSCuDA6kyUejQXr+/x65gZ2cGr9S9zYdYDrxY0M9Q4z0L+GpoYW2tu6sG0nqJ0HLoQSi0XJZMpwHDswuyyTRbMMCn45V979mB8ez3Hy3CVacwWGBkbIN+WorKim0FHEtu2AIVRKsqBKEpZt4nkeTsgiGo3Q2tJOc1OOiupatoy/yB+//82Wzc/Q2pxnzeA6cpV1ZNJZOtr/C5SFTIlQ2AlUhkIOqiaTzVbQ27OalpV52nKdrB3ZhO+VUuzqo793iJJECenSeaBIevEuSwImPiJRF9/3CYdDCwnHaKhvorPQQy5XCF4g8Vx1dfZRaC8SCoUp9TMUOroxTWsJ+A9nXUrzH0SAQQAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/11ba87e12f66a3b7754ebd10ce6d8ce5/0e001/saw.jpg",
+                  src: "/static/11ba87e12f66a3b7754ebd10ce6d8ce5/46322/saw.jpg",
                   srcSet:
-                    "/static/11ba87e12f66a3b7754ebd10ce6d8ce5/5e3dc/saw.jpg 40w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/d18de/saw.jpg 80w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/0e001/saw.jpg 160w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/4e658/saw.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/11ba87e12f66a3b7754ebd10ce6d8ce5/46322/saw.jpg 48w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/aec58/saw.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/11ba87e12f66a3b7754ebd10ce6d8ce5/5bae1/saw.avif 40w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/d60a5/saw.avif 80w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/2a394/saw.avif 160w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/0aca1/saw.avif 320w",
+                      "/static/11ba87e12f66a3b7754ebd10ce6d8ce5/1da62/saw.avif 48w,\n/static/11ba87e12f66a3b7754ebd10ce6d8ce5/9b476/saw.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -292,35 +252,30 @@ export const data = {
       {
         name: "Shaw Brothers",
         slug: "shaw-brothers",
-        entityType: "collection" as Queries.WatchlistEntityType,
-        titleCount: 4,
-        reviewCount: 4,
+        titleCount: 208,
+        reviewCount: 6,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFKUlEQVQ4yx2US4wbBx2Hh5B0X157ba/fM7bHM37b69d47Jm11+/HZpN9r7P1ZpvuBrJNoRySQAukpKgNKimoIomqhB76iFQRmgs99IgqDgghceIE4kKrSoCExAEJJA4fiu//w/+n3/f7hBlniOlFmRmXwqwrhjWQwakauBNtPKUd7IVtLPEelvQalsQQe6yLO94mkFvHk+jikCvMS0XmAzks/izCtDPMlFNmxqky507gCBdwRAym/QUSqRx9PcOeEWfXTNPIZ5DVLDOihlOp4VKXWQjp2MMV5vxZZjxJhBlHkGmnzJw7hk3K8VVPjgUpy42+zE93Fa72Exy0klxspbjajXN3K8qoICFYQ0z5csyLOWzBMtZgmXkxjzBlDzG1EGTOpTLtinFhJcZP9lReOacSL1fwltss5gz8eht3oUaxovFyP8qrfYV6WuaMK45j8qWBTdIQ5lwx5lwKgiXOOV3ho+clkmUdV6mNpLdIGnVilWXiy20i1Q5ipUPQ7LPSNHn0XJqYJCE4szhlnXmxiGAVs8wHMhx3ojx4TqVqariKTerNMu1mkUDeIKTVKa3UWF/V2dusU+l2iTTPsX2+zb1DjfZSFEtgCatYQBCcaUY1lfuXYkiFKp5Sm2/tZPjL62G+uB3k/pGKJ6NzvK3x17fifPaDNL+9XWS00yG9OsIYDPn51yqUU0nOePMIgkWhkQpwcy8xiZnQK/zxlsw7RwrdWoLPvhMkpxd5YWzwxcMSMaPJ41t1Pn3DINPbIDvY4OaeRlSOT8gQ7GoLUSnw4DBMvGIi5XX+cCvMr2/GkPNF/DkDqdLl2uU6f3tkMn62w2/utnh8y0Sur9Fb6/LKUOWMM4ElkEUIajvMqgNe21IY9TNY0nW2+lm+vBvlH+8ucf2Sjrx8lhtfb/HvJ3X++Ys6/3lcZXezhr++wdXNMqNymFPuPBZfCsGXWWU+fpZuZYm3DxUCWoNk1SRrGHz4vSr/+1hne2/AtZMBf39k0h6u8MlrGu99WyPY3OLOfhpFjjErlidLExyROu5Yh1lfkfuHMrtrGr9/K8fFcY/VzR7//aXByWGDbx61+fyhTtKs8eS7JZ7cSNJvFrneCfIVZxpHqIgtWERwRpt4kx1O+6oMyxHuvVjkhycmXz4o8vnDKr+7o6P1z3L9aIV/vZPmT28m+fPrCuu9PD8axYmKAZ5xpXiKnyvRQBC1PdTGZaT8Gs/4Sty5qHLl0oD10QYvHfVo716gsH7IYPs8x7sGx9sVYmaTF3Z0rix7EWxR7KEiTtUkUN5B8Be3COr7eFJ9FpQGbr/CxzeW6D57iLp+wsrhi+hbBxR2jogOx8zXxgw3h9wbicw4wiyENXxLA8LGiOzuqwjezCpOtYEn2SOYX2cqUMXMqfzq5SU6+wckd65S2BiTWx8jDZ9nuL3GB8dhAh4f1pCGmO0iahuonRNy4zeftjzAodSxy8ZEQ4uRCsJijnpO5vFLcUbj83ha+wR6BxwfdHj/WCaTSHB6MYlHLeNKNPFkBkRal8lsfx9hIWxglUpYxCXmAjlsoRI2Kc8pT4lIKMLbF0R+fCnNz65kub0p4g1nmAsZ2PwpFkIlHBGTxViLkLlP4tw1BLtsYhHzzPrSzHrTzPozWAJ5FuUq0/4yp+wJVksy7XwEwaow7Ulh86exBvO4ost4YvVJMneyjdL7xlMOa1il4mQ2s54UlonKCzgVE0dYmxyf8Ruc9mpYnjrTHsLiTU2Yc8VWcKe6LMZbuOINpOo+/weZqJ/STxD8LgAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/f21c0a62de99061a9f260b9f8429aa3a/0e001/shaw-brothers.jpg",
+                  src: "/static/f21c0a62de99061a9f260b9f8429aa3a/46322/shaw-brothers.jpg",
                   srcSet:
-                    "/static/f21c0a62de99061a9f260b9f8429aa3a/5e3dc/shaw-brothers.jpg 40w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/d18de/shaw-brothers.jpg 80w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/0e001/shaw-brothers.jpg 160w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/4e658/shaw-brothers.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/f21c0a62de99061a9f260b9f8429aa3a/46322/shaw-brothers.jpg 48w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/aec58/shaw-brothers.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/f21c0a62de99061a9f260b9f8429aa3a/5bae1/shaw-brothers.avif 40w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/d60a5/shaw-brothers.avif 80w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/2a394/shaw-brothers.avif 160w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/0aca1/shaw-brothers.avif 320w",
+                      "/static/f21c0a62de99061a9f260b9f8429aa3a/1da62/shaw-brothers.avif 48w,\n/static/f21c0a62de99061a9f260b9f8429aa3a/9b476/shaw-brothers.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -328,35 +283,30 @@ export const data = {
       {
         name: "Universal Monsters",
         slug: "universal-monsters",
-        entityType: "collection" as Queries.WatchlistEntityType,
         titleCount: 29,
         reviewCount: 3,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD30lEQVQ4yz1VRUt1bRQ9JhaKjWCLitjd3V3YYsf7qpjY3Q0mtogoioqO1JkzER0ICgpOdOL/WB9rf9x3sDnx3Gc9e8U+V/nz5w+am5vR1dUl1dbWhu7ubgwODqKzs1Oem5qa8PfvXywvL2N7e1tqa2sLm5ubWF1dld+2trZieHgYytjYGFjj4+OYnp7GzMwMFhYWMDQ0hJGREdlwfHyMg4MDHB0d4ezsTOry8hJXV1c4OTmRtZ2dHTlAITo3TkxMYG5uTsDW19dxcXGBp6cnfH5+4u3tDY+Pj7i9vcXp6SkODw+xu7srwOfn5/KO3RNUqampkW5mZ2cFlKe9vr7i9/dX6uvrCy8vLwLGtampKWExPz8vrJaWlqQzrlEKJSYmBgQdHR2VxefnZ3x8fODn5wff3994f3/Hzc2NdEQGdXV1iIuLQ2JiIoqKilBbWyvAGxsbmJychOLl5YWAgAAUFhbi+voad3d3uL+/x8PDgzxTq/7+fhQUFCA1NRUhISFwcHCAhYUF3N3dUVlZKZLt7+9jbW0Nio+PD2xtbVFRUSFt0729vT2hRHotLS1Csb6+HoaGhtDT04OBgQHMzMxgbW0t7lJzmkcWSkpKCry9veXFysqKUCgrK0NpaSm45ujoiKSkJOlMURSoq6vLlWVkZITMzEyhy/1MgZKcnIzw8HBBp44RERGgDDY2NtIJN6mpqQmAtrY2NDU1oaGh8Q/Uw8ND8kpmjJcSFhYmgA0NDbLQ0dEh98HBwcjIyEBeXp4Y4OvrKzqzIxoZFBSE6Oho+Pn5yf7FxcX/NayurkZjYyMIHBoaiqysLLBrakvQwMBAxMfHw9/fH+Xl5XIAgYqLi6VojJOT079JU3p7eyWH3KyioSotLS3o6+uLo5aWlmIE742NjaVoEmVgSgYGBmQoFLrE2c3JyZFFc3NzuScldp2WlibF2DCDnGsyqqqqgp2dnWjKrkmZo6ukp6dLlhgP6sSTSYm6MXcMPXXLz8+Xg8mI3VAqKysrODs7o6+vT2LGeCkE46aSkhLk5uaKw/wR3fP09ERkZKSAUS8ezq7d3Nwku+yQurN7rvf09EChcyzVOFF4GkMj+I55ZCT4ZSElOs/c0qSoqCjZy0P5jloq1IfZo5uxsbHSTXt7u5xGrUiNNDlefOY6mTD81JRXaq6aOIWdkCJddHV1lVNUNFQfW+rLCaI07Dg7O1s+DDyIH2dKYW9vLwkQQBcXF3GXMTAxMZFFVkJCggBQZ7pKc0iV0pA69SQ7VXempqZQKDDzpaurKyPGYhR0dHREfAJQHwJQeHbGvw3Gh3LRPM47PxSs/wB+0DsXitkl8QAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/25972c16ba9db58a7b3a4acb20adf39a/0e001/universal-monsters.jpg",
+                  src: "/static/25972c16ba9db58a7b3a4acb20adf39a/46322/universal-monsters.jpg",
                   srcSet:
-                    "/static/25972c16ba9db58a7b3a4acb20adf39a/5e3dc/universal-monsters.jpg 40w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/d18de/universal-monsters.jpg 80w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/0e001/universal-monsters.jpg 160w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/4e658/universal-monsters.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/25972c16ba9db58a7b3a4acb20adf39a/46322/universal-monsters.jpg 48w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/aec58/universal-monsters.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/25972c16ba9db58a7b3a4acb20adf39a/5bae1/universal-monsters.avif 40w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/d60a5/universal-monsters.avif 80w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/2a394/universal-monsters.avif 160w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/0aca1/universal-monsters.avif 320w",
+                      "/static/25972c16ba9db58a7b3a4acb20adf39a/1da62/universal-monsters.avif 48w,\n/static/25972c16ba9db58a7b3a4acb20adf39a/9b476/universal-monsters.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },

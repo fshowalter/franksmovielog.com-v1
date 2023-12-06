@@ -1,21 +1,27 @@
+import { textStarsForGrade } from "../../src/utils/textStarsForGrade";
+
 const query = `{
-  viewings: viewingsWithReviewOrNote(sort: {sequence: DESC}, limit: 25) {
-    sequence
-    date: viewingDate
-    title
-    year
-    slug
-    grade
-    principalCastNames
-    directorNames
-    still {
-      childImageSharp {
-        resize(toFormat: JPG, width: 1200, quality: 80) {
-          src
+  reviewedTitle: allReviewedTitlesJson(sort: {sequence: DESC}, limit: 25) {
+    nodes {
+      sequence
+      date: reviewDate
+      title
+      year
+      slug
+      grade
+      principalCastNames
+      directorNames
+      still {
+        childImageSharp {
+          resize(toFormat: JPG, width: 1200, quality: 80) {
+            src
+          }
         }
       }
+      review {
+        excerpt
+      }
     }
-    excerpt
   }
 }`;
 
@@ -27,10 +33,12 @@ interface QueryResult {
       siteUrl: string;
     };
   };
-  viewings: ViewingNode[];
+  reviewedTitle: {
+    nodes: QueryNode[];
+  };
 }
 
-interface ViewingNode {
+interface QueryNode {
   sequence: number;
   date: string;
   title: string;
@@ -46,37 +54,17 @@ interface ViewingNode {
       };
     };
   };
-  excerpt: string;
+  review: {
+    excerpt: string;
+  };
 }
 
-const gradeMap: Record<string, string> = {
-  A: "&#9733;&#9733;&#9733;&#9733;&#9733;",
-  "A+": "&#9733;&#9733;&#9733;&#9733;&#9733;",
-  "A-": "&#9733;&#9733;&#9733;&#9733;&#189;",
-  B: "&#9733;&#9733;&#9733;&#9733;",
-  "B+": "&#9733;&#9733;&#9733;&#9733;",
-  "B-": "&#9733;&#9733;&#9733;&#189;",
-  C: "&#9733;&#9733;&#9733;",
-  "C+": "&#9733;&#9733;&#9733;",
-  "C-": "&#9733;&#9733;&#189;",
-  D: "&#9733;&#9733;",
-  "D+": "&#9733;&#9733;",
-  "D-": "&#9733;&#189;",
-  F: "&#9733;",
-};
-
-function starsForGrade(grade: string) {
-  if (grade in gradeMap) {
-    return gradeMap[grade];
-  }
-
-  return "";
-}
-
-function addMetaToExcerpt(excerpt: string, viewing: ViewingNode) {
-  const meta = `${starsForGrade(viewing.grade)} D: ${viewing.directorNames.join(
+function addMetaToExcerpt(excerpt: string, reviewedTitle: QueryNode) {
+  const meta = `${textStarsForGrade(
+    reviewedTitle.grade,
+  )} D: ${reviewedTitle.directorNames.join(
     ", ",
-  )}. ${viewing.principalCastNames.join(", ")}.`;
+  )}. ${reviewedTitle.principalCastNames.join(", ")}.`;
 
   return `<p>${meta}</p>${excerpt}`;
 }
@@ -94,19 +82,19 @@ function setup(options: Record<string, unknown>) {
 }
 
 function serialize({ query }: { query: QueryResult }) {
-  return query.viewings.map((viewing) => {
+  return query.reviewedTitle.nodes.map((reviewedTitle) => {
     return {
-      title: `${viewing.title} (${viewing.year})`,
-      date: viewing.date,
-      url: `${query.site.siteMetadata.siteUrl}/reviews/${viewing.slug}/`,
-      guid: `${query.site.siteMetadata.siteUrl}/${viewing.sequence}-${viewing.slug}`,
+      title: `${reviewedTitle.title} (${reviewedTitle.year})`,
+      date: reviewedTitle.date,
+      url: `${query.site.siteMetadata.siteUrl}/reviews/${reviewedTitle.slug}/`,
+      guid: `${query.site.siteMetadata.siteUrl}/${reviewedTitle.sequence}-${reviewedTitle.slug}`,
       custom_elements: [
         {
           "content:encoded": `<img src="${
-            viewing.still.childImageSharp.resize.src
-          }" alt="A still from ${viewing.title}">${addMetaToExcerpt(
-            viewing.excerpt,
-            viewing,
+            reviewedTitle.still.childImageSharp.resize.src
+          }" alt="A still from ${reviewedTitle.title}">${addMetaToExcerpt(
+            reviewedTitle.review.excerpt,
+            reviewedTitle,
           )}`,
         },
       ],

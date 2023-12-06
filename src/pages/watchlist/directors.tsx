@@ -19,6 +19,7 @@ export default function WatchlistDirectorsPage({
 }): JSX.Element {
   return (
     <WatchlistEntities
+      entityType="director"
       title="Directors"
       tagline="Drama is life with the dull bits cut out."
       entities={data.entity.nodes}
@@ -28,10 +29,7 @@ export default function WatchlistDirectorsPage({
 
 export const pageQuery = graphql`
   query WatchlistDirectorsPage {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: director } }
-    ) {
+    entity: allWatchlistDirectorsJson(sort: { name: ASC }) {
       nodes {
         ...WatchlistEntitiesItem
       }

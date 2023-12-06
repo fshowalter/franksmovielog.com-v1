@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import { HeadBuilder, Review } from "../components";
+import { textStarsForGrade } from "../utils/textStarsForGrade";
 
 export function Head({
   data,
@@ -11,7 +12,9 @@ export function Head({
   return (
     <HeadBuilder
       pageTitle={`${review.title} (${review.year})`}
-      description={`${review.gradeStars} ${review.review.excerpt ?? ""}`}
+      description={`${textStarsForGrade(review.grade)} ${
+        review.review.excerpt ?? ""
+      }`}
       image={review.seoImage?.childImageSharp?.resize?.src}
       article
     />
@@ -28,10 +31,9 @@ export default function ReviewTemplate({
 
 export const pageQuery = graphql`
   query ReviewTemplate($id: String!) {
-    review: reviewedMovie(id: $id) {
+    review: reviewedTitle(id: $id) {
       title
       year
-      gradeStars
       review {
         excerpt
       }

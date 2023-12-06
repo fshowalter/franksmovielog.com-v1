@@ -14,7 +14,7 @@ export function List({
   totalCount,
   visibleCount,
 }: {
-  groupedItems: Map<string, Queries.WatchlistItemFragment[]>;
+  groupedItems: Map<string, Queries.WatchlistTitleFragment[]>;
   dispatch: React.Dispatch<Action>;
   totalCount: number;
   visibleCount: number;
@@ -28,16 +28,16 @@ export function List({
       onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
     >
       {(item) => {
-        return <WatchlistItem item={item} key={item.imdbId} />;
+        return <WatchlistTitle item={item} key={item.imdbId} />;
       }}
     </GroupedList>
   );
 }
 
-function WatchlistItem({
+function WatchlistTitle({
   item,
 }: {
-  item: Queries.WatchlistItemFragment;
+  item: Queries.WatchlistTitleFragment;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">
@@ -69,7 +69,7 @@ function WatchlistItem({
 function Slug({
   movie,
 }: {
-  movie: Queries.WatchlistItemFragment;
+  movie: Queries.WatchlistTitleFragment;
 }): JSX.Element {
   const credits = [
     ...formatPeopleNames(movie.directorNames, "directed"),

@@ -19,6 +19,7 @@ export default function WatchlistCollectionsPage({
 }): JSX.Element {
   return (
     <WatchlistEntities
+      entityType="collection"
       title="Collections"
       tagline="Round up the usual suspects."
       entities={data.entity.nodes}
@@ -28,10 +29,7 @@ export default function WatchlistCollectionsPage({
 
 export const pageQuery = graphql`
   query WatchlistCollectionsPage {
-    entity: allWatchlistEntitiesJson(
-      sort: { name: ASC }
-      filter: { entityType: { eq: collection } }
-    ) {
+    entity: allWatchlistCollectionsJson(sort: { name: ASC }) {
       nodes {
         ...WatchlistEntitiesItem
       }

@@ -116,8 +116,8 @@ describe("/reviews/underseen/", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1987");
-    await userEvent.selectOptions(toInput, "2013");
+    await userEvent.selectOptions(fromInput, "1975");
+    await userEvent.selectOptions(toInput, "1987");
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
@@ -131,10 +131,10 @@ describe("/reviews/underseen/", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1987");
-    await userEvent.selectOptions(toInput, "2013");
-    await userEvent.selectOptions(fromInput, "2009");
-    await userEvent.selectOptions(toInput, "1989");
+    await userEvent.selectOptions(fromInput, "1975");
+    await userEvent.selectOptions(toInput, "1987");
+    await userEvent.selectOptions(fromInput, "1989");
+    await userEvent.selectOptions(toInput, "1986");
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });

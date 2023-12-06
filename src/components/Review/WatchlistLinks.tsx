@@ -5,11 +5,11 @@ import { Link } from "../Link";
 import { avatarStyle, linkStyle } from "./WatchlistLinks.css";
 
 interface IWatchlistLinksProps extends IBoxProps {
-  watchlist: Queries.WatchlistLinksFragment;
+  more: Queries.WatchlistLinksFragment;
 }
 
 export function WatchlistLinks({
-  watchlist,
+  more,
   ...rest
 }: IWatchlistLinksProps): JSX.Element {
   return (
@@ -21,63 +21,64 @@ export function WatchlistLinks({
       rowGap={8}
       {...rest}
     >
-      <ListItemsForEntities entities={watchlist.collections} />
-      <ListItemsForEntities entities={watchlist.directors} />
-      <ListItemsForEntities entities={watchlist.performers} />
-      <ListItemsForEntities entities={watchlist.writers} />
+      <ListItemsForEntities
+        entities={more.inCollection}
+        entityType="collection"
+      />
+      <ListItemsForEntities entities={more.directedBy} entityType="director" />
+      <ListItemsForEntities
+        entities={more.withPerformer}
+        entityType="performer"
+      />
+      <ListItemsForEntities entities={more.writtenBy} entityType="writer" />
     </Box>
   );
 }
 
 function ListItemsForEntities({
+  entityType,
   entities,
 }: {
+  entityType: string;
   entities: readonly Queries.WatchlistLinkEntityFragment[];
 }) {
   return (
     <>
-      {entities
-        .filter((entity) => entity.browseMore.length < 3)
-        .map((entity) => {
-          return (
-            <Box
-              as="li"
-              display="block"
-              key={`${entity.entityType}s/${entity.slug}`}
+      {entities.map((entity) => {
+        return (
+          <Box as="li" display="block" key={`${entityType}s/${entity.slug}`}>
+            <Link
+              to={`/watchlist/${entityType}s/${entity.slug}/`}
+              backgroundColor="inverse"
+              display="flex"
+              alignItems="center"
+              whiteSpace="nowrap"
+              className={linkStyle}
+              boxShadow="borderAll"
+              borderRadius={8}
+              paddingY={8}
+              paddingX={16}
             >
-              <Link
-                to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-                backgroundColor="inverse"
-                display="flex"
-                alignItems="center"
-                whiteSpace="nowrap"
-                className={linkStyle}
-                boxShadow="borderAll"
-                borderRadius={8}
-                paddingY={8}
-                paddingX={16}
-              >
-                <GraphqlImage
-                  image={entity.avatar}
-                  alt={`More ${entity.name} reviews`}
-                  borderRadius="half"
-                  className={avatarStyle}
-                  transform="safariBorderRadiusFix"
-                />
-                {entity.name}
-              </Link>
-            </Box>
-          );
-        })}
+              <GraphqlImage
+                image={entity.avatar}
+                alt={`More ${entity.name} reviews`}
+                borderRadius="half"
+                className={avatarStyle}
+                transform="safariBorderRadiusFix"
+              />
+              {entity.name}
+            </Link>
+          </Box>
+        );
+      })}
     </>
   );
 }
 
 export const query = graphql`
-  fragment WatchlistLinkEntity on ReviewedMovieWatchlistEntity {
+  fragment WatchlistLinkEntity on ReviewedTitleMoreEntity {
     name
     slug
-    entityType
     avatar {
       childImageSharp {
         gatsbyImageData(
@@ -90,22 +91,19 @@ export const query = graphql`
         )
       }
     }
-    browseMore(sourceReviewId: $id) {
-      slug
-    }
   }
 
-  fragment WatchlistLinks on ReviewedMovieWatchlistEntities {
-    performers {
+  fragment WatchlistLinks on ReviewedTitleMore {
+    withPerformer {
       ...WatchlistLinkEntity
     }
-    directors {
+    directedBy {
       ...WatchlistLinkEntity
     }
-    writers {
+    writtenBy {
       ...WatchlistLinkEntity
     }
-    collections {
+    inCollection {
       ...WatchlistLinkEntity
     }
   }

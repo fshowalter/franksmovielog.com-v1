@@ -83,7 +83,7 @@ export function HomePageItem({
             {toSentenceArray(item.principalCastNames)}.
           </Box>
           <RenderedMarkdown
-            text={item.excerpt}
+            text={item.review.excerptHtml}
             className={excerptContinueReadingLinkStyle}
           />
         </GridArea>
@@ -110,17 +110,19 @@ export function HomePageItem({
 }
 
 export const query = graphql`
-  fragment HomePageItem on ViewingWithReview {
+  fragment HomePageItem on ReviewedTitlesJson {
     imdbId
     sequence
     title
     year
-    date: viewingDate(formatString: "DD MMM YYYY")
+    date: reviewDate(formatString: "DD MMM YYYY")
     slug
     grade
     principalCastNames
     directorNames
-    excerpt
+    review {
+      excerptHtml
+    }
     still {
       childImageSharp {
         gatsbyImageData(

@@ -7,10 +7,12 @@ import { avatarStyle } from "./WatchlistEntity.css";
 
 export function Header({
   entity,
+  entityType,
   tagline,
   breadcrumb,
 }: {
   entity: Queries.WatchlistEntityFragment;
+  entityType: string;
   tagline: string;
   breadcrumb: string;
 }): JSX.Element {
@@ -18,7 +20,7 @@ export function Header({
     <>
       <Box textAlign="center" lineHeight={36}>
         <Link to="/watchlist/">Watchlist</Link> /{" "}
-        <Link to={`/watchlist/${entity.entityType}s/`}>{breadcrumb}</Link>
+        <Link to={`/watchlist/${entityType}s/`}>{breadcrumb}</Link>
       </Box>
       <Spacer axis="vertical" size={16} />
       <Box display="flex" flexDirection="column" alignItems="center">
@@ -36,7 +38,7 @@ export function Header({
       <Box
         color="subtle"
         textAlign="center"
-      >{`${tagline} ${entity.watchlistMovies.length.toLocaleString()} watchlist movies. ${entity.reviewCount.toLocaleString()} reviewed.`}</Box>
+      >{`${tagline} ${entity.titles.length.toLocaleString()} watchlist movies. ${entity.reviewCount.toLocaleString()} reviewed.`}</Box>
     </>
   );
 }

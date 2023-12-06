@@ -3,19 +3,23 @@ import path from "path";
 
 const query = `#graphql
 {
-  viewings: viewingsWithReviewOrNote {
-    id
+  reviewedTitles: allReviewedTitlesJson {
+    nodes {
+      id
+    }
   }
 }
 `;
 
 interface QueryResult {
-  viewings: {
-    id: string;
-  }[];
+  reviewedTitles: {
+    nodes: {
+      id: string;
+    }[];
+  };
 }
 
-export default async function createHomePages({
+export async function createHomePages({
   graphql,
   reporter,
   actions,
@@ -32,9 +36,9 @@ export default async function createHomePages({
     return;
   }
 
-  const updates = queryResult.data.viewings;
+  const reviews = queryResult.data.reviewedTitles.nodes;
   const perPage = 10;
-  const numPages = Math.ceil(updates.length / perPage);
+  const numPages = Math.ceil(reviews.length / perPage);
   Array.from({ length: numPages }).forEach((_, i) => {
     const skip = i * perPage;
 
@@ -44,7 +48,7 @@ export default async function createHomePages({
       context: {
         limit: perPage,
         skip,
-        numberOfItems: updates.length,
+        numberOfItems: reviews.length,
         currentPage: i + 1,
       },
     });

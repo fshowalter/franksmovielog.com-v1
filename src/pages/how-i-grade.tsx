@@ -23,7 +23,7 @@ export default function HowIGradePage({
       alt="Empty cinema seats."
       articleText={data.page?.html}
       title={data.page?.frontmatter?.title}
-      moreReviews={data.latestViewings.map((viewing) => viewing.reviewedMovie)}
+      moreReviewedTitles={data.latestReview.nodes}
     />
   );
 }
@@ -33,11 +33,8 @@ export const pageQuery = graphql`
     still: file(absolutePath: { regex: "/stills/how-i-grade.png$/" }) {
       ...StillSplash
     }
-    latestViewings: viewingsWithReviewOrNote(
-      sort: { sequence: DESC }
-      limit: 4
-    ) {
-      reviewedMovie {
+    latestReview: allReviewedTitlesJson(sort: { sequence: DESC }, limit: 4) {
+      nodes {
         ...StillListMovie
       }
     }

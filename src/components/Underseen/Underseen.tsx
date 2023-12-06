@@ -51,7 +51,7 @@ export function Underseen({
 
 export const query = graphql`
   fragment UnderseenItem on UnderseenGemsJson {
-    releaseDate
+    yearAndImdbId
     title
     year
     sortTitle

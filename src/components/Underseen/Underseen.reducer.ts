@@ -29,8 +29,8 @@ function sortItems(items: Queries.UnderseenItemFragment[], sortOrder: Sort) {
     ) => number
   > = {
     "release-date-desc": (a, b) =>
-      sortString(a.releaseDate, b.releaseDate) * -1,
-    "release-date-asc": (a, b) => sortString(a.releaseDate, b.releaseDate),
+      sortString(a.yearAndImdbId, b.yearAndImdbId) * -1,
+    "release-date-asc": (a, b) => sortString(a.yearAndImdbId, b.yearAndImdbId),
     "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
     "grade-asc": (a, b) => sortNumber(a.gradeValue, b.gradeValue),
@@ -111,7 +111,7 @@ interface FilterGenresAction {
 
 interface FilterReleaseYearAction {
   type: ActionType.FILTER_RELEASE_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface SortAction {

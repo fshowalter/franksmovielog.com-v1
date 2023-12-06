@@ -24,6 +24,7 @@ export default function DirectorTemplate({
   return (
     <WatchlistEntity
       entity={data.director}
+      entityType="director"
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Director of"
       breadcrumb="Directors"
@@ -33,12 +34,12 @@ export default function DirectorTemplate({
 
 export const pageQuery = graphql`
   query DirectorTemplate($id: String!) {
-    distinct: allWatchlistEntitiesJson(
+    distinct: allWatchlistDirectorsJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
-      releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
+      releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    director: watchlistEntity(id: $id) {
+    director: watchlistDirector(id: $id) {
       ...WatchlistEntity
     }
   }

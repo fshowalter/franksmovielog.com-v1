@@ -6,13 +6,17 @@ import { Header } from "./Header";
 import { List } from "./List";
 import { initState, reducer } from "./WatchlistEntity.reducer";
 
+type EntityType = "director" | "performer" | "writer" | "collection";
+
 export function WatchlistEntity({
   entity,
+  entityType,
   distinctReleaseYears,
   tagline,
   breadcrumb,
 }: {
   entity: Queries.WatchlistEntityFragment;
+  entityType: EntityType;
   distinctReleaseYears: readonly string[];
   tagline: string;
   breadcrumb: string;
@@ -20,7 +24,7 @@ export function WatchlistEntity({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...entity.watchlistMovies],
+      items: [...entity.titles],
       sort: "release-date-asc",
     },
     initState,
@@ -28,7 +32,12 @@ export function WatchlistEntity({
   return (
     <ListWithFiltersLayout
       header={
-        <Header entity={entity} tagline={tagline} breadcrumb={breadcrumb} />
+        <Header
+          entity={entity}
+          entityType={entityType}
+          tagline={tagline}
+          breadcrumb={breadcrumb}
+        />
       }
       filters={
         <Filters
@@ -51,7 +60,7 @@ export function WatchlistEntity({
 }
 
 export const query = graphql`
-  fragment WatchlistEntityItem on WatchlistMoviesJson {
+  fragment WatchlistEntityTitle on WatchlistEntityTitle {
     imdbId
     title
     year
@@ -59,15 +68,14 @@ export const query = graphql`
     gradeValue
     slug
     sortTitle
-    releaseDate
+    yearAndImdbId
     poster {
       ...ListItemPoster
     }
   }
 
-  fragment WatchlistEntity on WatchlistEntitiesJson {
+  fragment WatchlistEntity on WatchlistEntity {
     name
-    entityType
     reviewCount
     avatar {
       childImageSharp {
@@ -81,8 +89,8 @@ export const query = graphql`
         )
       }
     }
-    watchlistMovies {
-      ...WatchlistEntityItem
+    titles {
+      ...WatchlistEntityTitle
     }
   }
 `;

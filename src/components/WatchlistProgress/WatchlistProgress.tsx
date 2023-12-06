@@ -1,40 +1,15 @@
+import { graphql } from "gatsby";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { Spacer } from "../Spacer";
 import { Callouts } from "./Callouts";
 import { Header } from "./Header";
-import { WatchlistProgressForEntities } from "./WatchlistProgressForEntities";
+import { WatchlistProgressDetail } from "./WatchlistProgressDetail";
 
 export function WatchlistProgress({
-  movieCount,
-  reviewedMovieCount,
-  directorMovieCount,
-  directorReviewedMovieCount,
-  performerMovieCount,
-  performerReviewedMovieCount,
-  writerMovieCount,
-  writerReviewedMovieCount,
-  collectionMovieCount,
-  collectionReviewedMovieCount,
-  directorProgress,
-  performerProgress,
-  writerProgress,
-  collectionProgress,
+  progress,
 }: {
-  movieCount: number;
-  reviewedMovieCount: number;
-  directorMovieCount: number | null;
-  directorReviewedMovieCount: number | null;
-  performerMovieCount: number | null;
-  performerReviewedMovieCount: number | null;
-  writerMovieCount: number | null;
-  writerReviewedMovieCount: number | null;
-  collectionMovieCount: number | null;
-  collectionReviewedMovieCount: number | null;
-  directorProgress: readonly Queries.WatchlistProgressForEntitiesItemFragment[];
-  performerProgress: readonly Queries.WatchlistProgressForEntitiesItemFragment[];
-  writerProgress: readonly Queries.WatchlistProgressForEntitiesItemFragment[];
-  collectionProgress: readonly Queries.WatchlistProgressForEntitiesItemFragment[];
+  progress: Queries.WatchlistProgressFragment;
 }): JSX.Element {
   return (
     <Layout>
@@ -42,16 +17,16 @@ export function WatchlistProgress({
         <Header />
         <Spacer axis="vertical" size={32} />
         <Callouts
-          movieCount={movieCount}
-          reviewedMovieCount={reviewedMovieCount}
-          directorMovieCount={directorMovieCount}
-          directorReviewedMovieCount={directorReviewedMovieCount}
-          performerMovieCount={performerMovieCount}
-          performerReviewedMovieCount={performerReviewedMovieCount}
-          writerMovieCount={writerMovieCount}
-          writerReviewedMovieCount={writerReviewedMovieCount}
-          collectionMovieCount={collectionMovieCount}
-          collectionReviewedMovieCount={collectionReviewedMovieCount}
+          movieCount={progress.total}
+          reviewedMovieCount={progress.reviewed}
+          directorMovieCount={progress.directorTotal}
+          directorReviewedMovieCount={progress.directorReviewed}
+          performerMovieCount={progress.performerTotal}
+          performerReviewedMovieCount={progress.performerReviewed}
+          writerMovieCount={progress.writerTotal}
+          writerReviewedMovieCount={progress.writerReviewed}
+          collectionMovieCount={progress.collectionTotal}
+          collectionReviewedMovieCount={progress.collectionReviewed}
         />
         <Spacer axis="vertical" size={32} />
         <Box
@@ -63,24 +38,28 @@ export function WatchlistProgress({
           maxWidth={960}
         >
           <Spacer axis="vertical" size={32} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Director Progress"
-            entities={directorProgress}
+            entityType="director"
+            entities={progress.directorDetails}
           />
           <Spacer axis="vertical" size={64} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Performer Progress"
-            entities={performerProgress}
+            entityType="performer"
+            entities={progress.performerDetails}
           />
           <Spacer axis="vertical" size={64} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Writer Progress"
-            entities={writerProgress}
+            entityType="writer"
+            entities={progress.writerDetails}
           />
           <Spacer axis="vertical" size={64} />
-          <WatchlistProgressForEntities
+          <WatchlistProgressDetail
             label="Collection Progress"
-            entities={collectionProgress}
+            entityType="collection"
+            entities={progress.collectionDetails}
           />
           <Spacer axis="vertical" size={64} />
         </Box>
@@ -88,3 +67,30 @@ export function WatchlistProgress({
     </Layout>
   );
 }
+
+export const query = graphql`
+  fragment WatchlistProgress on WatchlistProgressJson {
+    reviewed
+    total
+    directorTotal
+    directorReviewed
+    directorDetails {
+      ...WatchlistProgressDetail
+    }
+    performerTotal
+    performerReviewed
+    performerDetails {
+      ...WatchlistProgressDetail
+    }
+    writerTotal
+    writerReviewed
+    writerDetails {
+      ...WatchlistProgressDetail
+    }
+    collectionTotal
+    collectionReviewed
+    collectionDetails {
+      ...WatchlistProgressDetail
+    }
+  }
+`;

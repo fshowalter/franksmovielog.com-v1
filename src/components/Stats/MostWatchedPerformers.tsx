@@ -9,19 +9,17 @@ function PerformerName({
 }): JSX.Element {
   if (person.slug) {
     return (
-      <Link to={`/watchlist/performers/${person.slug}/`}>
-        {person.fullName}
-      </Link>
+      <Link to={`/watchlist/performers/${person.slug}/`}>{person.name}</Link>
     );
   }
 
-  return <>{person.fullName}</>;
+  return <>{person.name}</>;
 }
 
 export function MostWatchedPerformers({
   performers,
 }: {
-  performers: Queries.MostWatchedPerformersFragment | null;
+  performers: readonly Queries.MostWatchedPerformersFragment[];
 }): JSX.Element | null {
   return (
     <MostWatchedPeople
@@ -33,7 +31,7 @@ export function MostWatchedPerformers({
 }
 
 export const query = graphql`
-  fragment MostWatchedPerformers on MostWatchedPerformersJson {
-    ...MostWatchedPeople
+  fragment MostWatchedPerformers on MostWatchedPerson {
+    ...MostWatchedPerson
   }
 `;

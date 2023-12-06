@@ -19,17 +19,17 @@ const SHOW_COUNT_DEFAULT = 100;
 const groupItems = buildGroupItems(groupForItem);
 const { updateFilter, applyFilters } = filterTools(sortItems, groupItems);
 
-function sortItems(items: Queries.WatchlistItemFragment[], sortOrder: Sort) {
+function sortItems(items: Queries.WatchlistTitleFragment[], sortOrder: Sort) {
   const sortMap: Record<
     Sort,
     (
-      a: Queries.WatchlistItemFragment,
-      b: Queries.WatchlistItemFragment,
+      a: Queries.WatchlistTitleFragment,
+      b: Queries.WatchlistTitleFragment,
     ) => number
   > = {
     "release-date-desc": (a, b) =>
-      sortString(a.releaseDate, b.releaseDate) * -1,
-    "release-date-asc": (a, b) => sortString(a.releaseDate, b.releaseDate),
+      sortString(a.yearAndImdbId, b.yearAndImdbId) * -1,
+    "release-date-asc": (a, b) => sortString(a.yearAndImdbId, b.yearAndImdbId),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) => sortNumber(a.gradeValue ?? 50, b.gradeValue ?? 50),
     "grade-desc": (a, b) =>
@@ -41,7 +41,7 @@ function sortItems(items: Queries.WatchlistItemFragment[], sortOrder: Sort) {
 }
 
 function groupForItem(
-  item: Queries.WatchlistItemFragment,
+  item: Queries.WatchlistTitleFragment,
   sortValue: Sort,
 ): string {
   switch (sortValue) {
@@ -68,9 +68,9 @@ function groupForItem(
 
 export interface State
   extends FilterableState<
-    Queries.WatchlistItemFragment,
+    Queries.WatchlistTitleFragment,
     Sort,
-    Map<string, Queries.WatchlistItemFragment[]>
+    Map<string, Queries.WatchlistTitleFragment[]>
   > {
   hideReviewed: boolean;
 }
@@ -79,7 +79,7 @@ export function initState({
   items,
   sort,
 }: {
-  items: Queries.WatchlistItemFragment[];
+  items: Queries.WatchlistTitleFragment[];
   sort: Sort;
 }): State {
   return {
@@ -132,7 +132,7 @@ interface FilterWriterAction {
 
 interface FilterReleaseYearAction {
   type: ActionType.FILTER_RELEASE_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface SortAction {
@@ -270,7 +270,7 @@ export function reducer(state: State, action: Action): State {
       } else {
         filters = {
           ...state.filters,
-          reviewed: (item: Queries.WatchlistItemFragment) => {
+          reviewed: (item: Queries.WatchlistTitleFragment) => {
             return item.slug === null;
           },
         };

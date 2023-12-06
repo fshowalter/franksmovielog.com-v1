@@ -4,14 +4,14 @@ import { Grade } from "../Grade";
 import { LongFormText } from "../LongFormText";
 
 interface IContentProps extends IBoxProps {
-  review: Queries.ReviewContentFragment;
+  reviewedTitle: Queries.ReviewContentFragment;
 }
 
-export function Content({ review, ...rest }: IContentProps) {
+export function Content({ reviewedTitle, ...rest }: IContentProps) {
   return (
     <Box display="flex" flexDirection="column" rowGap={32} {...rest}>
       <Box display="flex" flexDirection="column" alignItems="inherit">
-        <Grade grade={review.grade} height={32} />
+        <Grade grade={reviewedTitle.review.frontmatter?.grade} height={32} />
         <Box
           display="flex"
           flexDirection="column"
@@ -19,24 +19,26 @@ export function Content({ review, ...rest }: IContentProps) {
           alignItems="inherit"
           letterSpacing={0.5}
         >
-          <span>on</span> {review.review.date}
+          <span>on</span> {reviewedTitle.review.frontmatter?.date}
         </Box>
       </Box>
       <LongFormText
         maxWidth="prose"
         // eslint-disable-next-line react/no-danger
-        text={review.review.linkedHtml}
+        text={reviewedTitle.review.linkedHtml}
       />
     </Box>
   );
 }
 
 export const query = graphql`
-  fragment ReviewContent on ReviewedMoviesJson {
-    grade
+  fragment ReviewContent on ReviewedTitlesJson {
     review {
       linkedHtml
-      date(formatString: "ddd MMM DD, YYYY")
+      frontmatter {
+        grade
+        date(formatString: "ddd MMM DD, YYYY")
+      }
     }
   }
 `;

@@ -14,7 +14,7 @@ export function Watchlist({
   distinctCollections,
   distinctReleaseYears,
 }: {
-  items: readonly Queries.WatchlistItemFragment[];
+  items: readonly Queries.WatchlistTitleFragment[];
   distinctDirectors: readonly string[];
   distinctPerformers: readonly string[];
   distinctWriters: readonly string[];
@@ -58,11 +58,11 @@ export function Watchlist({
 }
 
 export const query = graphql`
-  fragment WatchlistItem on WatchlistMoviesJson {
+  fragment WatchlistTitle on WatchlistTitlesJson {
     imdbId
     title
     year
-    releaseDate
+    yearAndImdbId
     sortTitle
     slug
     grade

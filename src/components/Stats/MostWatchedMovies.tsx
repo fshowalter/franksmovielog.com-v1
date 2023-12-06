@@ -12,17 +12,11 @@ import {
 } from "./MostWatchedMovies.css";
 
 export function MostWatchedMovies({
-  movies,
+  titles,
 }: {
-  movies: Queries.MostWatchedMoviesFragment | null;
+  titles: readonly Queries.MostWatchedTitleFragment[];
 }): JSX.Element | null {
-  if (!movies) {
-    return null;
-  }
-
-  const { mostWatched } = movies;
-
-  if (mostWatched.length === 0) {
+  if (titles.length === 0) {
     return null;
   }
 
@@ -32,7 +26,7 @@ export function MostWatchedMovies({
       <Box>
         <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
         <List>
-          {mostWatched.map((movie) => {
+          {titles.map((movie) => {
             return <ListItem movie={movie} key={movie.imdbId} />;
           })}
         </List>
@@ -53,7 +47,7 @@ function List({ children }: IBoxProps): JSX.Element {
 function ListItem({
   movie,
 }: {
-  movie: Queries.MostWatchedMovieFragment;
+  movie: Queries.MostWatchedTitleFragment;
 }): JSX.Element {
   return (
     <Box
@@ -73,7 +67,7 @@ function ListItem({
           <ListItemTitle
             title={movie.title}
             year={movie.year}
-            slug={movie.reviewedMovie?.slug}
+            slug={movie.slug}
           />
           <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
         </Box>
@@ -83,7 +77,7 @@ function ListItem({
           display="flex"
           justifyContent={{ default: "flex-start", tablet: "center" }}
         >
-          <div>{movie.viewingCount.toLocaleString()} times</div>
+          <div>{movie.count.toLocaleString()} times</div>
         </Box>
         <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
       </Box>
@@ -92,16 +86,16 @@ function ListItem({
 }
 
 interface IPosterProps extends IBoxProps {
-  movie: Queries.MostWatchedMovieFragment;
+  movie: Queries.MostWatchedTitleFragment;
 }
 
 function Poster({ movie, ...rest }: IPosterProps) {
-  if (movie.reviewedMovie) {
+  if (movie.slug) {
     return (
       <Link
         className={posterStyle}
         overflow="hidden"
-        to={`/reviews/${movie.reviewedMovie.slug}/`}
+        to={`/reviews/${movie.slug}/`}
         transform="safariBorderRadiusFix"
         boxShadow="borderAll"
         borderRadius={8}
@@ -129,13 +123,11 @@ function Poster({ movie, ...rest }: IPosterProps) {
 }
 
 export const query = graphql`
-  fragment MostWatchedMovie on MostWatchedMovie {
+  fragment MostWatchedTitle on MostWatchedTitle {
     imdbId
     title
     year
-    reviewedMovie {
-      slug
-    }
+    slug
     poster {
       childImageSharp {
         gatsbyImageData(
@@ -147,12 +139,6 @@ export const query = graphql`
         )
       }
     }
-    viewingCount
-  }
-
-  fragment MostWatchedMovies on MostWatchedMoviesJson {
-    mostWatched {
-      ...MostWatchedMovie
-    }
+    count
   }
 `;

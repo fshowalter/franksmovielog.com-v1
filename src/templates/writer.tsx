@@ -23,6 +23,7 @@ export default function WriterTemplate({
 }): JSX.Element {
   return (
     <WatchlistEntity
+      entityType="writer"
       entity={data.writer}
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Writer on"
@@ -33,12 +34,12 @@ export default function WriterTemplate({
 
 export const pageQuery = graphql`
   query WriterTemplate($id: String!) {
-    distinct: allWatchlistEntitiesJson(
+    distinct: allWatchlistWritersJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
-      releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
+      releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    writer: watchlistEntity(id: $id) {
+    writer: watchlistWriter(id: $id) {
       ...WatchlistEntity
     }
   }

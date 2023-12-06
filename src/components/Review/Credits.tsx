@@ -65,7 +65,7 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
         />
       </Box>
       <Spacer axis="vertical" size={32} />
-      <WatchlistLinks watchlist={review.watchlist} />
+      <WatchlistLinks more={review.more} />
       <Spacer axis="vertical" size={32} />
       <Box
         as="a"
@@ -108,7 +108,7 @@ function Credit({ title, value, ...rest }: ICreditProps) {
 }
 
 export const query = graphql`
-  fragment Credits on ReviewedMoviesJson {
+  fragment Credits on ReviewedTitlesJson {
     title
     year
     originalTitle
@@ -127,7 +127,7 @@ export const query = graphql`
         )
       }
     }
-    watchlist {
+    more {
       ...WatchlistLinks
     }
   }

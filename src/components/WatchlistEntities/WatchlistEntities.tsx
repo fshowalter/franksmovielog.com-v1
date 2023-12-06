@@ -10,10 +10,12 @@ export function WatchlistEntities({
   entities,
   title,
   tagline,
+  entityType,
 }: {
   entities: readonly Queries.WatchlistEntitiesItemFragment[];
   title: string;
   tagline: string;
+  entityType: string;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -30,6 +32,7 @@ export function WatchlistEntities({
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <List
+          entityType={entityType}
           entities={state.filteredEntities}
           totalCount={state.filteredEntities.length}
           visibleCount={state.filteredEntities.length}
@@ -40,10 +43,9 @@ export function WatchlistEntities({
 }
 
 export const query = graphql`
-  fragment WatchlistEntitiesItem on WatchlistEntitiesJson {
+  fragment WatchlistEntitiesItem on WatchlistEntity {
     name
     slug
-    entityType
     titleCount
     reviewCount
     avatar {

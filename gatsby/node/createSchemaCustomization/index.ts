@@ -1,38 +1,39 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
-import { WatchlistEntityTypeEnum } from "./enums/WatchlistEntityTypeEnum";
 import { linkReviewedMoviesExtension } from "./extensions/linkReviewedMovies";
-import { proxyToReviewedMovieExtension } from "./extensions/proxyToReviewedMovie";
-import { MostWatchedPeople } from "./interfaces/MostWatchedPeople";
-import { MostWatchedPerson } from "./interfaces/MostWatchedPerson";
-import { AllTimeStats } from "./objects/AllTimeStats";
-import { GradeDistributionsJson } from "./objects/GradeDistributionsJson";
+import { Title } from "./interfaces/Title";
+import { WatchlistEntity } from "./interfaces/WatchlistEntity";
+import {
+  AllTimeStatsGradeDistribution,
+  AllTimeStatsJson,
+} from "./objects/AllTimeStatsJson";
 import { MarkdownRemark } from "./objects/MarkdownRemark";
-import { MostWatchedDirector } from "./objects/MostWatchedDirector";
-import { MostWatchedDirectorsJson } from "./objects/MostWatchedDirectorsJson";
-import { MostWatchedMovie } from "./objects/MostWatchedMovie";
-import { MostWatchedMoviesJson } from "./objects/MostWatchedMoviesJson";
-import { MostWatchedPerformer } from "./objects/MostWatchedPerformer";
-import { MostWatchedPerformersJson } from "./objects/MostWatchedPerformersJson";
-import { MostWatchedWriter } from "./objects/MostWatchedWriter";
-import { MostWatchedWritersJson } from "./objects/MostWatchedWritersJson";
+import {
+  MostWatchedPerson,
+  MostWatchedPersonViewing,
+} from "./objects/MostWatchedPerson";
+import { MostWatchedTitle } from "./objects/MostWatchedTitle";
 import { OverratedDisappointmentsJson } from "./objects/OverratedDisappointmentsJson";
-import { ReviewStatsJson } from "./objects/ReviewStatsJson";
-import { ReviewedMovieWatchlistEntities } from "./objects/ReviewedMovieWatchlistEntities";
-import { ReviewedMovieWatchlistEntity } from "./objects/ReviewedMovieWatchlistEntity";
-import { ReviewedMoviesJson } from "./objects/ReviewedMoviesJson";
-import { StatsForYear } from "./objects/StatsForYear";
-import { TopMediaJson } from "./objects/TopMediaJson";
-import { TopMedium } from "./objects/TopMedium";
-import { TopVenue } from "./objects/TopVenue";
-import { TopVenuesJson } from "./objects/TopVenuesJson";
+import {
+  ReviewedTitleMore,
+  ReviewedTitleMoreEntity,
+  ReviewedTitleMoreTitle,
+  ReviewedTitleViewing,
+  ReviewedTitlesJson,
+} from "./objects/ReviewedTitlesJson";
+import { StatsDistribution } from "./objects/StatsDistribution";
 import { UnderseenGemsJson } from "./objects/UnderseenGemsJson";
-import { ViewingCountForDecade } from "./objects/ViewingCountForDecade";
-import { ViewingCountsForDecadesJson } from "./objects/ViewingCountsForDecadesJson";
-import { ViewingStatsJson } from "./objects/ViewingStatsJson";
-import { ViewingWithReview } from "./objects/ViewingWithReview";
 import { ViewingsJson } from "./objects/ViewingsJson";
-import { WatchlistEntitiesJson } from "./objects/WatchlistEntitiesJson";
-import { WatchlistMoviesJson } from "./objects/WatchlistMoviesJson";
+import { WatchlistCollectionsJson } from "./objects/WatchlistCollectionsJson";
+import { WatchlistDirectorsJson } from "./objects/WatchlistDirectorsJson";
+import { WatchlistEntityTitle } from "./objects/WatchlistEntityTitle";
+import { WatchlistPerformersJson } from "./objects/WatchlistPerformersJson";
+import {
+  WatchlistProgressDetail,
+  WatchlistProgressJson,
+} from "./objects/WatchlistProgressJson";
+import { WatchlistTitlesJson } from "./objects/WatchlistTitlesJson";
+import { WatchlistWritersJson } from "./objects/WatchlistWritersJson";
+import { YearStatsJson } from "./objects/YearStatsJson";
 
 export function createSchemaCustomization({
   actions,
@@ -41,41 +42,34 @@ export function createSchemaCustomization({
   const { createTypes, createFieldExtension } = actions;
 
   createFieldExtension(linkReviewedMoviesExtension);
-  createFieldExtension(proxyToReviewedMovieExtension);
 
   const typeDefs = [
-    schema.buildEnumType(WatchlistEntityTypeEnum),
-    schema.buildInterfaceType(MostWatchedPerson),
-    schema.buildInterfaceType(MostWatchedPeople),
-    schema.buildObjectType(AllTimeStats),
-    schema.buildObjectType(StatsForYear),
-    schema.buildObjectType(ViewingsJson),
-    schema.buildObjectType(ViewingWithReview),
-    schema.buildObjectType(ViewingCountForDecade),
-    schema.buildObjectType(ViewingCountsForDecadesJson),
-    schema.buildObjectType(WatchlistMoviesJson),
+    schema.buildInterfaceType(Title),
+    schema.buildObjectType(StatsDistribution),
+    schema.buildObjectType(MostWatchedPersonViewing),
+    schema.buildObjectType(MostWatchedPerson),
+    schema.buildObjectType(MostWatchedTitle),
+    schema.buildObjectType(AllTimeStatsGradeDistribution),
+    schema.buildObjectType(AllTimeStatsJson),
+    schema.buildObjectType(YearStatsJson),
     schema.buildObjectType(MarkdownRemark),
-    schema.buildObjectType(ReviewedMovieWatchlistEntity),
-    schema.buildObjectType(ReviewedMovieWatchlistEntities),
-    schema.buildObjectType(ReviewedMoviesJson),
-    schema.buildObjectType(WatchlistEntitiesJson),
-    schema.buildObjectType(TopVenue),
-    schema.buildObjectType(TopVenuesJson),
-    schema.buildObjectType(TopMedium),
-    schema.buildObjectType(TopMediaJson),
-    schema.buildObjectType(MostWatchedMovie),
-    schema.buildObjectType(MostWatchedMoviesJson),
-    schema.buildObjectType(MostWatchedDirector),
-    schema.buildObjectType(MostWatchedDirectorsJson),
-    schema.buildObjectType(MostWatchedPerformer),
-    schema.buildObjectType(MostWatchedPerformersJson),
-    schema.buildObjectType(MostWatchedWriter),
-    schema.buildObjectType(MostWatchedWritersJson),
+    schema.buildObjectType(ViewingsJson),
+    schema.buildObjectType(ReviewedTitleViewing),
+    schema.buildObjectType(ReviewedTitleMoreTitle),
+    schema.buildObjectType(ReviewedTitleMoreEntity),
+    schema.buildObjectType(ReviewedTitleMore),
+    schema.buildObjectType(ReviewedTitlesJson),
+    schema.buildObjectType(WatchlistEntityTitle),
+    schema.buildInterfaceType(WatchlistEntity),
+    schema.buildObjectType(WatchlistCollectionsJson),
+    schema.buildObjectType(WatchlistDirectorsJson),
+    schema.buildObjectType(WatchlistPerformersJson),
+    schema.buildObjectType(WatchlistWritersJson),
     schema.buildObjectType(UnderseenGemsJson),
     schema.buildObjectType(OverratedDisappointmentsJson),
-    schema.buildObjectType(GradeDistributionsJson),
-    schema.buildObjectType(ReviewStatsJson),
-    schema.buildObjectType(ViewingStatsJson),
+    schema.buildObjectType(WatchlistTitlesJson),
+    schema.buildObjectType(WatchlistProgressDetail),
+    schema.buildObjectType(WatchlistProgressJson),
   ];
 
   createTypes(typeDefs);

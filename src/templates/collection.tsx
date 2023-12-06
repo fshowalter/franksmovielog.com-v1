@@ -23,6 +23,7 @@ export default function CollectionTemplate({
 }): JSX.Element {
   return (
     <WatchlistEntity
+      entityType="collection"
       entity={data.collection}
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Collection of"
@@ -33,12 +34,12 @@ export default function CollectionTemplate({
 
 export const pageQuery = graphql`
   query CollectionTemplate($id: String!) {
-    distinct: allWatchlistEntitiesJson(
+    distinct: allWatchlistCollectionsJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
-      releaseYears: distinct(field: { watchlistMovies: { year: SELECT } })
+      releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    collection: watchlistEntity(id: $id) {
+    collection: watchlistCollection(id: $id) {
       ...WatchlistEntity
     }
   }

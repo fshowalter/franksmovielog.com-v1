@@ -1,44 +1,41 @@
 import path from "path";
-import {
-  GatsbyNodeContext,
-  GatsbyResolveArgs,
-  GatsbyResolveInfo,
-} from "../../type-definitions";
-import { resolveFieldForNode } from "../../utils/resolveFieldForNode";
-import { findReviewedMovieNode } from "./reviewedMovieFieldResolver";
+import { GatsbyNodeContext, GatsbyResolveArgs } from "../../type-definitions";
 
 export const posterFieldResolver = {
   type: "File!",
   resolve: async (
-    source: { imdbId: string },
-    args: GatsbyResolveArgs,
+    source: { slug: string },
+    _args: GatsbyResolveArgs,
     context: GatsbyNodeContext,
-    info: GatsbyResolveInfo,
   ) => {
-    const reviewedMovie = await findReviewedMovieNode(
-      source.imdbId,
-      context.nodeModel,
-    );
+    let poster = null;
 
-    if (!reviewedMovie) {
-      return await context.nodeModel.findOne({
+    if (source.slug) {
+      poster = await context.nodeModel.findOne({
         type: "File",
         query: {
           filter: {
             absolutePath: {
-              eq: path.resolve(`./content/assets/posters/default.png`),
+              eq: path.resolve(`./content/assets/posters/${source.slug}.png`),
             },
           },
         },
       });
     }
 
-    return resolveFieldForNode({
-      fieldName: "poster",
-      source: reviewedMovie,
-      context,
-      info,
-      args,
+    if (poster) {
+      return poster;
+    }
+
+    return await context.nodeModel.findOne({
+      type: "File",
+      query: {
+        filter: {
+          absolutePath: {
+            eq: path.resolve(`./content/assets/posters/default.png`),
+          },
+        },
+      },
     });
   },
 };

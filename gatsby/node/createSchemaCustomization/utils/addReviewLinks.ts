@@ -1,5 +1,5 @@
-import { findReviewedMovieNode } from "../objects/fieldResolvers/reviewedMovieFieldResolver";
 import { GatsbyNodeModel } from "../type-definitions";
+import { findReviewedTitleNode } from "./findReviewedTitleNode";
 
 export default async function addReviewLinks(
   text: string,
@@ -12,7 +12,7 @@ export default async function addReviewLinks(
   const matches = [...text.matchAll(re)];
 
   for (const match of matches) {
-    const reviewedMovie = await findReviewedMovieNode(match[2], nodeModel);
+    const reviewedMovie = await findReviewedTitleNode(match[2], nodeModel);
 
     if (!reviewedMovie) {
       result = result.replace(

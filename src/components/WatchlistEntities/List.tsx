@@ -8,10 +8,12 @@ import { Spacer } from "../Spacer";
 import { countMarginStyle } from "./List.css";
 
 export function List({
+  entityType,
   entities,
   totalCount,
   visibleCount,
 }: {
+  entityType: string;
   entities: readonly Queries.WatchlistEntitiesItemFragment[];
   totalCount: number;
   visibleCount: number;
@@ -21,7 +23,13 @@ export function List({
       <ListInfo totalCount={totalCount} visibleCount={visibleCount} />
       <Box as="ol" data-testid="entity-list">
         {entities.map((entity) => {
-          return <EntityListItem key={entity.name} entity={entity} />;
+          return (
+            <EntityListItem
+              key={entity.name}
+              entity={entity}
+              entityType={entityType}
+            />
+          );
         })}
       </Box>
       <Spacer axis="vertical" size={32} />
@@ -31,23 +39,31 @@ export function List({
 
 function EntityListItem({
   entity,
+  entityType,
 }: {
   entity: Queries.WatchlistEntitiesItemFragment;
+  entityType: string;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">
-      <Avatar entity={entity} />
-      <EntityName entity={entity} />
+      <Avatar entity={entity} entityType={entityType} />
+      <EntityName entity={entity} entityType={entityType} />
       <ReviewCount entity={entity} />
     </ListItem>
   );
 }
 
-function Avatar({ entity }: { entity: Queries.WatchlistEntitiesItemFragment }) {
+function Avatar({
+  entity,
+  entityType,
+}: {
+  entity: Queries.WatchlistEntitiesItemFragment;
+  entityType: string;
+}) {
   if (entity.avatar && entity.slug) {
     return (
       <Link
-        to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
+        to={`/watchlist/${entityType}s/${entity.slug}/`}
         transform="safariBorderRadiusFix"
         overflow="hidden"
         boxShadow="borderAll"
@@ -83,15 +99,14 @@ function Avatar({ entity }: { entity: Queries.WatchlistEntitiesItemFragment }) {
 
 function EntityName({
   entity,
+  entityType,
 }: {
   entity: Queries.WatchlistEntitiesItemFragment;
+  entityType: string;
 }) {
   if (entity.slug) {
     return (
-      <Link
-        to={`/watchlist/${entity.entityType}s/${entity.slug}/`}
-        fontSize="medium"
-      >
+      <Link to={`/watchlist/${entityType}s/${entity.slug}/`} fontSize="medium">
         <Box lineHeight="default">{entity.name}</Box>
       </Link>
     );
