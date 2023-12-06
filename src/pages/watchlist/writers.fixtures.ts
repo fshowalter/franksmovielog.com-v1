@@ -4,43 +4,37 @@ export const data = {
       {
         name: "Anthony Shaffer",
         slug: null,
-        entityType: "writer" as const,
-        titleCount: 12,
+        titleCount: 11,
         reviewCount: 0,
         avatar: null,
       },
       {
         name: "Clive Barker",
         slug: "clive-barker",
-        entityType: "writer" as const,
-        titleCount: 13,
-        reviewCount: 4,
+        titleCount: 15,
+        reviewCount: 3,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKUlEQVQ4y01Uayifbxh+nUI5H8aMYWbk9MEhM2dqVuYwMWytsRzKMSPaMooZ4gNfCMkaijSnNIVmVmtSEibjg2OxD8j5MOX6d91r//bW0+/3Ps/7XPd1X/d138rjx4+RnJyM7Oxs5OTkIC8vD/n5+SgqKpKVkZEhZ9wrKChAYWEhcnNzkZaWhpSUFDmPi4vDs2fP8O3bNyj+/v6Ijo5GUlKSLIJnZWUhNjYWN2/ehJaWlixDQ0OYmprCz88Pzc3NGBoawujoKGZmZjA5OYlPnz7hx48fUHx8fBAWFoaEhASJQjaJiYnQ0NCAoihQU1ODuro6VFRUBNjY2FhAKysrsbGxgaWlJQwMDOD9+/dYWFiAEhISgvDwcDx9+hQvXrwQdmZmZgJGUIKZmJjg9u3buHPnDiwtLSUI95j6u3fvJO2KigosLi5CCQoKwsOHDxEfHy/pEpxgmpqakiL3hoeHMTc3Jxemp6dFOwby8PBAdXU1SkpK0NnZiZWVFSh3795FYGAgIiMj8eTJE1hZWQmDa9eugezb29vx69cvHB8f4+zsDFdXVzg9PZUzfltVVYXa2lr09/djc3MTipeXFwICAoRhRESEgOno6EjafG9oaJDIe3t7ODw8xNHREfjU1dXByMgIb968QX19PXp7e0VTxdPTE8HBwcLuwYMHUFVVFVA9PT1hXVNTg/n5eVxcXAjg7u4udnZ20NjYKLKQYUtLi1R9fX0dCnWgdVhhaklAVlRbWxvu7u6IiYmR/cHBQUmdXnz9+rUEunHjhrCjLLTQ8vLyH0DagFYhS11dXSkKGdrb24uRGYyykOnY2Bg+fvyInp4eYfflyxd8+PABnz9/RldXFxSy8PX1FSPT2Obm5gJIDSl8U1MTvn//jnv37mFiYkL0u7y8FE3JaGRkBH19fWhtbZXAAsiUmRot4u3tLWkbGBiI4WlaLgcHB0mbD/U8OTkRzcbHxyXd8vJyPH/+/E9RuHj50aNHEoXsKLijo6N0BFOytbXFq1evxD7n5+fY39+X6rN/v379Kn2fmZkJhRWmFh0dHeju7pYBQT3ZEXZ2dkhNTZVz/lK7nz9/it9YoNXVVTE6paBctJ5Cqv8+FJnR2IbsW1qJrKOioiQoz6emprC1tYW1tTXMzs5KJ92/f190VtLT06UDfv/+LYDb29soLi7Gy5cvJXX2MKcRDUyv0YecMKz2wcGBmJmFYce5uLhAsbCwkLHz96Fpy8rKxGdOTk5iIw6Ft2/fivisONm7ubmJoSkHB4Szs7MUTuFE4bT4y5BPW1ubFIkfcEBcv35dLoSGhso+32lqtp6+vr5ozXNXV1coFJ+plZaW/p8Kpwn7mRcJygrzEocBAxCM//9dt27dkowUTmJGISgjUAIbGxsZTfyQoDwjCIPzjL/c5/q7Z21tLdL8B1GCkE/bsaw2AAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/5779e9401c86d1d76fa35058fee5985b/0e001/clive-barker.jpg",
+                  src: "/static/5779e9401c86d1d76fa35058fee5985b/46322/clive-barker.jpg",
                   srcSet:
-                    "/static/5779e9401c86d1d76fa35058fee5985b/5e3dc/clive-barker.jpg 40w,\n/static/5779e9401c86d1d76fa35058fee5985b/d18de/clive-barker.jpg 80w,\n/static/5779e9401c86d1d76fa35058fee5985b/0e001/clive-barker.jpg 160w,\n/static/5779e9401c86d1d76fa35058fee5985b/4e658/clive-barker.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/5779e9401c86d1d76fa35058fee5985b/46322/clive-barker.jpg 48w,\n/static/5779e9401c86d1d76fa35058fee5985b/aec58/clive-barker.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/5779e9401c86d1d76fa35058fee5985b/5bae1/clive-barker.avif 40w,\n/static/5779e9401c86d1d76fa35058fee5985b/d60a5/clive-barker.avif 80w,\n/static/5779e9401c86d1d76fa35058fee5985b/2a394/clive-barker.avif 160w,\n/static/5779e9401c86d1d76fa35058fee5985b/0aca1/clive-barker.avif 320w",
+                      "/static/5779e9401c86d1d76fa35058fee5985b/1da62/clive-barker.avif 48w,\n/static/5779e9401c86d1d76fa35058fee5985b/9b476/clive-barker.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -48,35 +42,30 @@ export const data = {
       {
         name: "David Mamet",
         slug: "david-mamet",
-        entityType: "writer" as const,
-        titleCount: 26,
+        titleCount: 30,
         reviewCount: 1,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVQ4y42USyt1YRTHN8f9dsj97ji5Jvc7RVGY6NSZiE4GDIRiJqSUogxkQJGJEMU3MDIiBvgCRj7I/+236jkdb8fbO1jtvZ/9PL/9X2v91/ZKS0tVXl6uiooKVVVVqbq6WjU1NWpra1Nvb6/6+vrU3d2t+vp6BYNBtba2qr29XR0dHers7FRXV5d6enpsX39/vzwHrKysNCAwXk5PT2t8fFwDAwN2oK6uTuxlD9D/AqISwOLiopaXlxUKhWxzQ0ODgYqKilRcXGz3gBzQZWLAsrIyAwFtbm7W+vq6webn5zUxMWGpBgIBg+Xm5io/P1/p6elqbGy0UhAAgUWB7uvhcFhPT0+6v7/X7u6uPY+MjGhqasoAfr/foElJSeIc6gE6dWTnoQxgYWGhNjc39fX1pe/vb729ven29lZnZ2fa29vT2NiYqcvKylJiYqLy8vL+DaQ2S0tLenx8NNjr66seHh5M7fb2th1AFSp9Pp8yMjKiDfmRsrMLYBYODw9N6ezsrGZmZqzbvCdNz/OUkpJiMJ4LCgoM+kOhA/J1mrCzs6OhoSGr1ejoqPb395WamqqEhAQDEdnZ2VFwXCBmRiE2uby8tLQPDg50fX2tj48Ps41zAbUGxEe4BxQXiA8x7MXFhd7f3/X8/KzPz0+9vLxYnVDFHiyTlpZmCmtra+MDSRmvlZSUaHV1VVdXV7q7u9PNzY22trZsHQAddjDqh7Fjp+QHkJFDAXN6fHys8/NzS3ljY8OsQXdJE4XJycnmCoBAiCjQzTBpkwLNWVhYMMvMzc1pcHBQTU1NUf+hkBqiEjC1Za6Hh4etmV7sTwEgV6bi9PRUKysrikQidoBJQqELZyOCDzmwAYG4lOkcB0gB6MnJiXmypaXFJsXBMLcDxoINCJ2a4L3MzEzl5OTYgcnJSR0dHZk/aYwzNIEv/wZa0C1ABHWi6FydTdbW1uwHwTpr1M2UxIMR7g8CxBkWlQw/DcCbjB9rZMLeX2GxQA4Do3scZo3UUcY9V+xDLX+DUYY/A0hqIvQQY6YAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/84ba9648d880493cea649e8b0020fadd/0e001/david-mamet.jpg",
+                  src: "/static/84ba9648d880493cea649e8b0020fadd/46322/david-mamet.jpg",
                   srcSet:
-                    "/static/84ba9648d880493cea649e8b0020fadd/5e3dc/david-mamet.jpg 40w,\n/static/84ba9648d880493cea649e8b0020fadd/d18de/david-mamet.jpg 80w,\n/static/84ba9648d880493cea649e8b0020fadd/0e001/david-mamet.jpg 160w,\n/static/84ba9648d880493cea649e8b0020fadd/4e658/david-mamet.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/84ba9648d880493cea649e8b0020fadd/46322/david-mamet.jpg 48w,\n/static/84ba9648d880493cea649e8b0020fadd/aec58/david-mamet.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/84ba9648d880493cea649e8b0020fadd/5bae1/david-mamet.avif 40w,\n/static/84ba9648d880493cea649e8b0020fadd/d60a5/david-mamet.avif 80w,\n/static/84ba9648d880493cea649e8b0020fadd/2a394/david-mamet.avif 160w,\n/static/84ba9648d880493cea649e8b0020fadd/0aca1/david-mamet.avif 320w",
+                      "/static/84ba9648d880493cea649e8b0020fadd/1da62/david-mamet.avif 48w,\n/static/84ba9648d880493cea649e8b0020fadd/9b476/david-mamet.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -84,35 +73,30 @@ export const data = {
       {
         name: "Leigh Brackett",
         slug: "leigh-brackett",
-        entityType: "writer" as const,
         titleCount: 12,
         reviewCount: 1,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADeElEQVQ4y2WUaSu0cRTG78/jE1ibiWzFG9n3bcZOdkLWFJFlkiWKYuySskeWaEgh0YxITNmyFilvrqfr1P9u9Lw43fvvvs451zlabGws4uLiEB8fr0dCQoIcU1JSkJOTg4qKClRXV8sxOzsbJpMJ6enpMJvNEhkZGRJZWVnQCCMgMTFRIjk5WV7Kz89HZ2cn+vr6MDAwgJ6eHjQ1NaGkpESeZWZm6kEQf8SfC1DBqIovFBUVycfd3d2ora3FyMiInFssFrnvCnKF5ebmQiMkKSlJh/KciqkyOjoaERERGBoaQmtrKxobG9HQ0ICysjI9XcJUiEJXCNWGhYXBaDRKncrLyyXt8fFxrK+vY2dnB6urq5I+lRFIVQSp0AhjUGlISAiCgoIEWFBQgLW1Ndze3uLl5QUfHx/4/f3Fz88PDg8PUVpaKlBClMK8vDxobAJVMr2AgAD4+PggMDAQLS0tsNlsuLm5wdPTEz4/P/H9/Y3393e5bmtrkywIVfUUINURylS9vLzg7u4ucKa1t7eH6+trUfj19SXq3t7e8PDwgOnpaaSmpv7psjSFMEZ4eDg8PT3h4eEh6be3t2NjYwN2ux27u7u4uLgQdcfHx5ifn8fy8rLeHJW2KKR5GWyIwWAQlfQZgf39/RgbG8Pw8LB0+vLyUsowMzOD/f19aRgNruzzB0iVhEZGRqKmpkY8Z7Vasbi4iPPzc0mfEKfTiefnZ7y+vso7BKoOU4iWlpYmQDaGNWB3i4uL0dXVhe3tbdzd3UkNz87OxDb39/c4OjqSxvCHBFIZYYWFhdB4g1A1clVVVaisrERdXR0GBwcFROtMTEygt7cXm5ubmJ2dxejoqPiT3/wHdIUSWF9fL6Zubm6Wj5k2x29ubg4nJydYWVnBwsKC1JdLgUBmJzUkiEELEEhvMWgHKqUKdpWjR/DBwQG2traklh0dHXqXCRTbEKRgDK4zGjwqKkqswKVAVbTO1NSUWIndZh0512r8qI7111zVMbgMaB9fX19dOdNng66urqQp9KbD4cDp6ameFWHSZWUbtSR4pMk5z0yF/uJzQllHTsjS0hIeHx/F5KGhoTKqyiWa8qAawZiYGPj5+Yk6Gpdpcz+q9cR9qPxIVd7e3vD395eMCNcUjKYODg6WWXZzc5OxmpyclNrwnAq5D1lDzjI3OaeKINf4B0cL6TIwxde9AAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/fdee0eb395441086c02be1d83329e6a0/0e001/leigh-brackett.jpg",
+                  src: "/static/fdee0eb395441086c02be1d83329e6a0/46322/leigh-brackett.jpg",
                   srcSet:
-                    "/static/fdee0eb395441086c02be1d83329e6a0/5e3dc/leigh-brackett.jpg 40w,\n/static/fdee0eb395441086c02be1d83329e6a0/d18de/leigh-brackett.jpg 80w,\n/static/fdee0eb395441086c02be1d83329e6a0/0e001/leigh-brackett.jpg 160w,\n/static/fdee0eb395441086c02be1d83329e6a0/4e658/leigh-brackett.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/fdee0eb395441086c02be1d83329e6a0/46322/leigh-brackett.jpg 48w,\n/static/fdee0eb395441086c02be1d83329e6a0/aec58/leigh-brackett.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/fdee0eb395441086c02be1d83329e6a0/5bae1/leigh-brackett.avif 40w,\n/static/fdee0eb395441086c02be1d83329e6a0/d60a5/leigh-brackett.avif 80w,\n/static/fdee0eb395441086c02be1d83329e6a0/2a394/leigh-brackett.avif 160w,\n/static/fdee0eb395441086c02be1d83329e6a0/0aca1/leigh-brackett.avif 320w",
+                      "/static/fdee0eb395441086c02be1d83329e6a0/1da62/leigh-brackett.avif 48w,\n/static/fdee0eb395441086c02be1d83329e6a0/9b476/leigh-brackett.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -120,79 +104,92 @@ export const data = {
       {
         name: "Neil LaBute",
         slug: "neil-labute",
-        entityType: "writer" as const,
-        titleCount: 10,
+        titleCount: 15,
         reviewCount: 1,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtElEQVQ4y02USSi+URTG78be3pKViJB5ntmQecwYFoYylgwLRBljgQUlU5ZENogyZ84cmed5HvP8e069X/+3Tu/33fve33nOdNXBwQFoh4eHODo60tn5+Tlub29xeXkp+ysrK9ja2pL/9/f3uLq60hnXLi4u5Iz6H3R8fCzGD/b39zEyMoLKykrk5eUhPz8fWVlZaGlpkcN3d3fi8ObmBtfX1zqw0kAnJyc4PT2VzcXFRVRUVCApKQnx8fFITk5GamoqYmJi4O3tjZycHGxubgr0fzChijCCzs7ORDKNqgICAhAYGIiIiAhERkYiISEBKSkpCAsLg6enJzo7OwX29PQkKdCgijBCCOTG3NwcYmNj4ePjIzBCoqKiRB2h3PP39xeHo6Oj+Pz8xMPDgw6qNGWMnx7b29sRHR0tkKGhIYyPj6Ovrw9jY2OoqalBdnY2XF1d4e7ujubmZgFSJaE8rzSYloO6ujokJiaiqKhI1t/f3/H19SUHqYARpKenw83NTXJJyOvrKx4fH0WlYsUI4se04uJiUcCqslV2d3clgre3N0nL2toaSkpK4OjoiLi4OMk/9zSVAqQ62sfHB/r7+yV/QUFBCAkJkSJkZGSgrKxMiuPn5yfhenh4oLCwULqD6l5eXuStqI4wqnt+fhaPzE14eLhUmW+2UGtrK3x9fUWZnZ2dOJuYmJB+ZatpKpUWLuMnkO+FhQUpBMFdXV1YX1+XcDs6OlBaWirVpuK9vT3Zowjmmip1QMbPBQKZO04J95iGyclJVFdXY2dnR6KpqqpCT08Ptre3sby8LIPBwrE4AmSlGD8X6GljY0MOcCynpqYwPDwsLUTVrDJba3Z2FktLS1Ikhvrz8yNhK3qkKi4y5N/fX1HLnuvu7sb09LRA2I8DAwOor69HbW2tjN7MzIyk4u/vT4BUqQMSpj1tbW0yx5zfxsZGUTk4OCgjGRwcLBWm2tXVVQHxIez7+xuKFeIPLvB6ys3NhYGBgVwKDQ0N8PLyQnl5OZqammSGLSwsYGJiAnt7e3HKdYbKR4DM2fz8PDIzM6UdTE1NYWNjA2dnZ2kLquX8sv/YNrzCrKysYGtrCwcHB5iZmSEtLU06g+lSLD83LC0tBeTi4iLGD3mY1xsr3tvbK8WhY3Nzc2luqqfROa2goACKIXDU2LDW1tbyITcZtqGhofQi08FOCA0NhZ6enjjmvcgUcKa1N4UpqnFycpIwCCXQyMgIxsbG4p1hMi0cSX19fVFPoKaQYAriOv//A0QlnkYXoX25AAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/7c7705068dfb6421313951a347cd9b53/0e001/neil-labute.jpg",
+                  src: "/static/7c7705068dfb6421313951a347cd9b53/46322/neil-labute.jpg",
                   srcSet:
-                    "/static/7c7705068dfb6421313951a347cd9b53/5e3dc/neil-labute.jpg 40w,\n/static/7c7705068dfb6421313951a347cd9b53/d18de/neil-labute.jpg 80w,\n/static/7c7705068dfb6421313951a347cd9b53/0e001/neil-labute.jpg 160w,\n/static/7c7705068dfb6421313951a347cd9b53/4e658/neil-labute.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/7c7705068dfb6421313951a347cd9b53/46322/neil-labute.jpg 48w,\n/static/7c7705068dfb6421313951a347cd9b53/aec58/neil-labute.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/7c7705068dfb6421313951a347cd9b53/5bae1/neil-labute.avif 40w,\n/static/7c7705068dfb6421313951a347cd9b53/d60a5/neil-labute.avif 80w,\n/static/7c7705068dfb6421313951a347cd9b53/2a394/neil-labute.avif 160w,\n/static/7c7705068dfb6421313951a347cd9b53/0aca1/neil-labute.avif 320w",
+                      "/static/7c7705068dfb6421313951a347cd9b53/1da62/neil-labute.avif 48w,\n/static/7c7705068dfb6421313951a347cd9b53/9b476/neil-labute.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
       },
       {
         name: "Raymond Chandler",
-        slug: null,
-        entityType: "writer" as const,
-        titleCount: 15,
-        reviewCount: 0,
-        avatar: null,
-      },
-      {
-        name: "Stephen King",
-        slug: "stephen-king",
-        entityType: "writer" as const,
-        titleCount: 57,
+        slug: "raymond-chandler",
+        titleCount: 20,
         reviewCount: 1,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5UlEQVQ4yz1UWSh3XxS9ichQSBkiylhEeCBz5qTEgwc+nshUeCDlQZRZEcos8zzP8zzPkrEUJXyRlCdv62vtf7//w+nee/Y966y99tpb6e7uxujoKHp7ezEyMiJP7g0ODmJpaQnz8/NYWFjA3t4eDg4OZG92dhbT09MS4zfjKysrWFtbgzI5OYmpqSkMDw+D7wTiAe5lZWUhNjYWiYmJSEhIQEVFBSYmJrC4uCggXHxfX1/Hzs4ONjc3oZDV+Pj4/8H9/X25NS4uDhoaGjAzM4O1tTWMjY1haWkJX19flJaWyv9kSDAyIyCzUMhGdSM3mLKXl5eAGRgYCIiLiwscHR1hZ2cHW1tb2NjYoLq6Gru7uwK2vb0tcpCMwtQIRlYMRkdHw97eHlZWVjA1NUVERIQc9vPzg5GRkQA7ODjAx8dH/l9dXcXW1paAEVQ0nJmZEXYtLS1wdXWVw97e3nB2dkZ6ejp+f39xfn6OnJwc2Xdzc4OhoSGampoEiIBky7SVsbEx0XBjYwO1tbXQ0tKSlDw9PYVlZmYmPj8/8fb2hpeXFxQXF0tcU1NTLjs6OhIdCSgazs3NSVUpcEdHB/T19UU/XV1dSZmX/fz84O/fv/j6+kJra6sUSF1dXRxA/VQ6kqlUWZV2X18fgoKCpAg6Ojry3tnZifb2dlRVVaGxsRF1dXVSLG1tbQGnhtSfYHxXmpub0dPTI2bmgba2NuTl5SE0NBQPDw9gnB5MTU2Vp4eHB5ycnBASEiL2IREWdnl5GcxW4e20CsEqKyuRm5uLoqIihIWF4enpCa+vr3KAwENDQ6ivr0d2drZ85+fni9EJRB3F2GRGhlzUkFUMDw9HcHAwrq6u8Pj4KClRDkpzcnIiF5eXl6Orq0v0Z9sR8PT0FApFHxgYkEUG9Birx/3b21tcXFzg+vpa2NIJNTU1EqNl2K4sCAF56eHh4X+dwpQ4IPj88+eP3E6A4+NjsQV1oiyMUxoWgxnRcmSmqjCto/BnFUsakwPA3d0dBQUFUjUuHqStysrKxNyFhYWSLs+RHc+p2k/p7++XAB1/d3cnwcjISGktTpmGhgaJMzVWkjYiS2pPMvyfzMhUfMjbWcn393cpwv39vViHVWZhAgMDxcDJyclISkqCv78/0tLSpLpcBFN1i1T54+MDz8/PODs7E1HJhNqlpKQgKioKMTExCAgIkHbT09ODmpqadBO9SkZkTZaqSitkxx5lJZk2hwD7lloydZqZE4ftxt42NzeXdxMTEynO5eWljD/VGFS+v78lXS52BkcZxzvTyMjIQHx8vHQGB61qcbxZWFigpKQENzc3kqpKgn8nRTsQeLPpHQAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/b8efcd83f9ce7a0598e4452e55ab31a3/0e001/stephen-king.jpg",
+                  src: "/static/46b050ecddcb740a72af2baa654bc207/46322/raymond-chandler.jpg",
                   srcSet:
-                    "/static/b8efcd83f9ce7a0598e4452e55ab31a3/5e3dc/stephen-king.jpg 40w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/d18de/stephen-king.jpg 80w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/0e001/stephen-king.jpg 160w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/4e658/stephen-king.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/46b050ecddcb740a72af2baa654bc207/46322/raymond-chandler.jpg 48w,\n/static/46b050ecddcb740a72af2baa654bc207/aec58/raymond-chandler.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/b8efcd83f9ce7a0598e4452e55ab31a3/5bae1/stephen-king.avif 40w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/d60a5/stephen-king.avif 80w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/2a394/stephen-king.avif 160w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/0aca1/stephen-king.avif 320w",
+                      "/static/46b050ecddcb740a72af2baa654bc207/1da62/raymond-chandler.avif 48w,\n/static/46b050ecddcb740a72af2baa654bc207/9b476/raymond-chandler.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
+            },
+          },
+        },
+      },
+      {
+        name: "Stephen King",
+        slug: "stephen-king",
+        titleCount: 81,
+        reviewCount: 1,
+        avatar: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/b8efcd83f9ce7a0598e4452e55ab31a3/46322/stephen-king.jpg",
+                  srcSet:
+                    "/static/b8efcd83f9ce7a0598e4452e55ab31a3/46322/stephen-king.jpg 48w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/aec58/stephen-king.jpg 96w",
+                  sizes: "48px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/b8efcd83f9ce7a0598e4452e55ab31a3/1da62/stephen-king.avif 48w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/9b476/stephen-king.avif 96w",
+                    type: "image/avif",
+                    sizes: "48px",
+                  },
+                ],
+              },
+              width: 48,
+              height: 48,
             },
           },
         },

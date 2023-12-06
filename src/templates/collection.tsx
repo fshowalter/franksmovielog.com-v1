@@ -23,6 +23,7 @@ export default function CollectionTemplate({
 }): JSX.Element {
   return (
     <WatchlistEntity
+      entityType="collection"
       entity={data.collection}
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Collection of"

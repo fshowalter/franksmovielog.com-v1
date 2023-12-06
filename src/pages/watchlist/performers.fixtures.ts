@@ -4,79 +4,61 @@ export const data = {
       {
         name: "Bela Lugosi",
         slug: "bela-lugosi",
-        entityType: "performer" as const,
-        titleCount: 63,
-        reviewCount: 8,
+        titleCount: 65,
+        reviewCount: 10,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADs0lEQVQ4y1VVSSi1YRj9EAopc4aUKUOyuNkpkULIQixlzlC3hLJwb3dlHjaIhVmmzPM8hcg8ZhYbeyuUOjrP36v+xdP33nvf77znOec879Vubm5wfHyM/f197OzsYGtrC7u7uxgfH0dDQwPq6+vR0dGBxcVFTE9PY3R0FGNjY1Jcj4yMSKnvtbu7O5ydneHo6AgHBwfY2NiAXq+Hp6cnNE2TsrKyQkxMDHp7e7G6uirArKmpKTl4YmJCanJyEtr9/b0AnpycCMuSkhLodDqYm5sLmJmZGZycnBAeHg6DwSBMlpeXMTc3h9nZWQFVB8zMzEB7fHzE6ekprq+vUVdXh4iICLi5ucHS0hI+Pj4oKyvD4OAgtre3BaC8vFxaJCAZKWYKWHt6esLl5aXomJqaiqSkJOTm5qKgoABNTU3SIn+7urrCy8sLGhsbUVFRgfn5+T8w9RTAh4cH3N7eyobExER0dnYKg+rqavT394vQbJEaU2+2nJGRISAEUIBkKC1TQ4J2d3cjPT1dNrS1tYmWra2tAkiWlITdrK2tIT4+Hn19fUJCtUowyiAuE5TRSE5OltMIVFxcjKqqKgHs6emRIuO9vT0YjUZZM0rUlUVAPoUhWyYIW2EM8vPz4e/vj5CQEJhMJhQVFYlZpaWlAkiTePDS0pKwVI4LQ7bLcFM3GtHV1SXtenh4wMbGBpWVlRJ4GkSnaQ6zurCw8F8pphIb5TJjQ23oZFxcnABTI3ZweHgoOWVmCagYkSGZKlCJzfn5uRTbocu1tbXIzs6W+FBDgnBKqBMHgCYpMBbB1Fp7fn4Whgw3iy63t7cjISEBgYGBKCws/IvGwMCAsFxfXxcQgipgtdZeX19FF7IgS14O1Cs2Nhbe3t4SkZaWFjGCLNkeD+A+1SbdVgdoTD8zpuaZWpIhZ5cuc/yysrIwNDQk0aGenOmamhoB3dzcFMYEFUC2TIZkR0A+KTqjwsnhODY3N2N4eFhYfH9/Iy0tDcHBwUhJSZEUMGp8hweIKRcXF6IfWXKdk5ODvLw8MYUv0f2VlRV8fHyABMg8ICAA7u7usLe3h6+vL6Kjo5GZmfkv2GTFVgjGKXBwcJBbhdPD24Zgn5+f+Pn5EYf9/PzkvqTGLi4usLa2hoWFhdxQYgoBGWga4OzsjNDQUAFn6Nkm4/L+/o6vry/RLCwsTPa5urrK4Y6OjrC1tYWdnR00ahMZGSkf+COffIHtv729iUmMBTNKQP49REVFISgoCF5eXrKfYGTJyfoFl5NTBFTdt0EAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/3d1ea0b909062e838a2b2b17ff5295aa/0e001/bela-lugosi.jpg",
+                  src: "/static/3d1ea0b909062e838a2b2b17ff5295aa/46322/bela-lugosi.jpg",
                   srcSet:
-                    "/static/3d1ea0b909062e838a2b2b17ff5295aa/5e3dc/bela-lugosi.jpg 40w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/d18de/bela-lugosi.jpg 80w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/0e001/bela-lugosi.jpg 160w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/4e658/bela-lugosi.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/3d1ea0b909062e838a2b2b17ff5295aa/46322/bela-lugosi.jpg 48w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/aec58/bela-lugosi.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/3d1ea0b909062e838a2b2b17ff5295aa/5bae1/bela-lugosi.avif 40w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/d60a5/bela-lugosi.avif 80w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/2a394/bela-lugosi.avif 160w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/0aca1/bela-lugosi.avif 320w",
+                      "/static/3d1ea0b909062e838a2b2b17ff5295aa/1da62/bela-lugosi.avif 48w,\n/static/3d1ea0b909062e838a2b2b17ff5295aa/9b476/bela-lugosi.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
       },
       {
-        name: "Ben Johnson",
-        slug: null,
-        entityType: "performer" as const,
-        titleCount: 55,
-        reviewCount: 0,
-        avatar: null,
-      },
-      {
         name: "Bette Davis",
         slug: "bette-davis",
-        entityType: "performer" as const,
-        titleCount: 87,
-        reviewCount: 7,
+        titleCount: 101,
+        reviewCount: 13,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADd0lEQVQ4y02UR0tlbRCE7y/yZ4gbERRxIYg555xzzlkxDmMAIygGzIoRERXFOCaMKAO6clsfT3+cwUVzzr3n7erq6nrblZSUpJ+RnJyslJQUpaenKzMz054ZGRn27kROTo5yc3OVn5+vgoICFRYWKi8vz/5zJSYmKiEhQfHx8Ra8x8XF2ROwmpoaNTY2qrKyUhUVFZbIt7S0NGVnZ/+LrKwsO++CDcwAAzw6OlolJSVqamrSwMCAdnZ2dHh4qImJCQPu6OhQc3OznSUP9k5QxAUqLwATVJ+bm9PFxYVWV1e1tLSkg4MDra2taWhoSHV1dVZsenpaRUVFlvMT1OXoRFBxZmZG29vbOj4+tqTx8XEtLi5qdHRUw8PD6u3ttXO/fv2yQgDSrtO6yxEaZm1tbXp7e7PElZUVzc7OamRkxNoFfHBw0NhFRkbKz89P9/f36uvrM9B/Q6FdwFJTU02rvb09lZaWGght393d6eHhQTc3Nzo7O7Pv7e3t8vX1tfN0g/4AEi7Auru7jf7+/r46OzttKDC6vLzU7e2tgf7580fX19cGgsYkw448dKVLbGRTvrq60sbGhvkrNjbWvIh2MHp6ejLQ8/NznZ6eGgDsy8rK7Nzk5KTm5+etgAFiE5JhRJWgoCA7TNLm5qZNGuv8nDQ6BgYGGgE0Pjo6Uk9Pz/8+DA0NtRaoUl9fbxZiOFSmKvr09/cbOFJ4enrK29tbPj4+8vDwUHV1tZaXly0XQgbY1dVloHzEvGgDMw5hYiYOIJbhP6YZExMjLy8vY9bS0mKThrErPDzcJsytoB2SmDKGZrLohicJ7LS7u2vgSAUAVxMw2JkPw8LCFBwcbKCYF7YYFW3QDVtgbNpqbW3V79+/rXhERIQaGhoMlBtCjvkwJCRETvChuLjYpgUbbg0twbq8vFxRUVGmL6y4dpwjB2bO9jFAGDqg/v7+diNgh44EulZVVdmQpqamzAV05IARfGOVubAJwXCwAlsE772/v5tNtra2TD8Gs7CwYJPGfz/BaBt27EVjiI4O8Pr6ur6/v/X5+anX11eb/tjYmElAmzChKIBOmzydRWtDCQgIsBaYIEAsiL9//+rr68sWQG1trdzd3S2BfUgyToAZwe9/gGxnJkeLMOO+Ei8vL/r4+NDj46NOTk6MIezc3NyswPPzs90gx5eA0cF/uqlEkR5hq4oAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/17620f8a2711e38ade37035d7778b85c/0e001/bette-davis.jpg",
+                  src: "/static/17620f8a2711e38ade37035d7778b85c/46322/bette-davis.jpg",
                   srcSet:
-                    "/static/17620f8a2711e38ade37035d7778b85c/5e3dc/bette-davis.jpg 40w,\n/static/17620f8a2711e38ade37035d7778b85c/d18de/bette-davis.jpg 80w,\n/static/17620f8a2711e38ade37035d7778b85c/0e001/bette-davis.jpg 160w,\n/static/17620f8a2711e38ade37035d7778b85c/4e658/bette-davis.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/17620f8a2711e38ade37035d7778b85c/46322/bette-davis.jpg 48w,\n/static/17620f8a2711e38ade37035d7778b85c/aec58/bette-davis.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/17620f8a2711e38ade37035d7778b85c/5bae1/bette-davis.avif 40w,\n/static/17620f8a2711e38ade37035d7778b85c/d60a5/bette-davis.avif 80w,\n/static/17620f8a2711e38ade37035d7778b85c/2a394/bette-davis.avif 160w,\n/static/17620f8a2711e38ade37035d7778b85c/0aca1/bette-davis.avif 320w",
+                      "/static/17620f8a2711e38ade37035d7778b85c/1da62/bette-davis.avif 48w,\n/static/17620f8a2711e38ade37035d7778b85c/9b476/bette-davis.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -84,35 +66,30 @@ export const data = {
       {
         name: "Boris Karloff",
         slug: "boris-karloff",
-        entityType: "performer" as const,
-        titleCount: 98,
-        reviewCount: 18,
+        titleCount: 97,
+        reviewCount: 15,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADNklEQVQ4y3VUySv1YRj9XVPIlDkp81DIWJJkWBgSNkqZ4g4KISLTAhnCwkaGQiKyseeuqKsoOwvzXcjCv2B3dJ6+53bv5Vu8vb/3vu9z7jnnGQyTyQQfHx/4+vq6lp65+/n5ITQ0FGFhYUhKSkJcXBwMwwDjuNy//50NCVQQAihweHg4CgsLMTQ0hMnJSVgsFmRkZCA1NRURERHQWCXFZfzFMCAgAImJiSgrK0NnZ6eA9fT0oL6+HmazGYuLi8jPzxdAb0WGNzs+Ki4uRltbG0pKSlBRUYHp6WmMjY1hbW0Ndrsdu7u7KCoqkrfKUpUJoLts+rWwsIDLy0ucnZ3h9PRUgPb29nBzc4Orqyu5T09PFxAqdPfeUDP1MjY2Fjs7O7i7u8P7+zs+Pj4E6Pr6Gg6HQ/bR0VEEBwdDybjbZXgng9m0Wq04Pj7GxcUFXl5e8Pr6isfHRzw9PeHt7Q0bGxuIjo4WsJCQEPj7+3tKdqfMy9zcXCwvLwujz89PAXp4eIDT6RTJExMTKCgoEEV8yyR6AKqp8fHxsufk5GB1dRXz8/MYHx/H1taWJGN7extVVVWigpIjIyOlGghMIh6APNDolJQUlJeXIzs7W8BjYmKQmZmJ/f19NDU1ye/8QwIEBQUhMDBQYj0A5cMwJJgS2tvb0d3djaysLAFPSEjA/f09hoeHkZaWJiVFUALyT7l+MVT/WF91dXVYWVnB0tIS+vr6xLOvry8paAKx2FtaWoSdxv0pmSwpubS0FNXV1ZiamsLJyQkODg7w/Pwssru6utDf3y8tqDHKUBpDwbRA+YBZI+DMzAzOz89xeHiI1tZW6Rwmgr1NO3Qw/AmoOy/4kL06MjKC9fV1YUpADgUOjJqaGlcv/xdQl3YMDadP7OHe3l7xsra2VuqvoaEBycnJrl7WOBegFqV+8xHLg0yam5uxubmJubk5GRKcOpTOzKsaVSZn7xmo2SI7JoHBAwMDMiTYJbSBCcnLy3N57p5pQ/VzaQtxQDQ2NuL29lamDOeizWbD7OysdAr9pHT18Bcggbi0nViLHR0dODo6wvf3t8w/zkiO/8rKSgwODiIqKspVGcRgTRLjB8W4eTRUop0QAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/db3592def5a25176b1fd316140a02ef1/0e001/boris-karloff.jpg",
+                  src: "/static/db3592def5a25176b1fd316140a02ef1/46322/boris-karloff.jpg",
                   srcSet:
-                    "/static/db3592def5a25176b1fd316140a02ef1/5e3dc/boris-karloff.jpg 40w,\n/static/db3592def5a25176b1fd316140a02ef1/d18de/boris-karloff.jpg 80w,\n/static/db3592def5a25176b1fd316140a02ef1/0e001/boris-karloff.jpg 160w,\n/static/db3592def5a25176b1fd316140a02ef1/4e658/boris-karloff.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/db3592def5a25176b1fd316140a02ef1/46322/boris-karloff.jpg 48w,\n/static/db3592def5a25176b1fd316140a02ef1/aec58/boris-karloff.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/db3592def5a25176b1fd316140a02ef1/5bae1/boris-karloff.avif 40w,\n/static/db3592def5a25176b1fd316140a02ef1/d60a5/boris-karloff.avif 80w,\n/static/db3592def5a25176b1fd316140a02ef1/2a394/boris-karloff.avif 160w,\n/static/db3592def5a25176b1fd316140a02ef1/0aca1/boris-karloff.avif 320w",
+                      "/static/db3592def5a25176b1fd316140a02ef1/1da62/boris-karloff.avif 48w,\n/static/db3592def5a25176b1fd316140a02ef1/9b476/boris-karloff.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -120,35 +97,30 @@ export const data = {
       {
         name: "Burt Reynolds",
         slug: "burt-reynolds",
-        entityType: "performer" as const,
-        titleCount: 100,
+        titleCount: 113,
         reviewCount: 2,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAELklEQVQ4yz1Ueyiffxh9/1AojJgULTYlQkvJPXM3msvKypBLLvEHyWVbrm2pyaVsykxJNiXmPrMYFkK5bIaFDbmuuc/mssj5dZ5f9sfT9/t5e9/znOec83yUjY0N/PjxA9vb21hcXMT4+Djm5uawubmJiYkJvH37FvX19Whvb5fz6uoqFhYWMDw8jJmZGSwtLcn5y5cv+PbtG5Tl5WXs7Oxgb28Ps7OzUnyppKQEDg4OuHnzJkxMTHD9+nU5R0ZG4vXr19Jwd3dXiLBIjKXwIRmS2dDQEObn53H//n3cuHED0dHRuHfvHoyNjaGpqQkNDQ1cvXoVhoaGiI+Pl+/+/v2LX79+YX9/Xxoo/LOysoKvX7/i9+/fyMnJEYD379+D7PmbnZ2NO3fuwNfXF7a2ttDS0oKiKHBzc8P6+jpOTk7w588f+V45ODgQ+uz2/ft33Lp1C42NjfISG3F86kNgPn/69CkCAgKgo6MjoDExMbi4uMDx8TFOT0+hUD/O/vPnT3R1dSEqKkrM4egsMv/06RPGxsbEoOfPn6OsrAxOTk4CaGBggOnpaRmdxJStrS0xhfX48WMZj2OQHYHpOAH7+/vx6tUrFBYWIi8vTxrr6upCVVUVLS0tOD8/l+YKrea41JIOkgHNGRwclFiwyICRefPmDcrLy5GVlYWQkBDo6+tDRUVFIkVAEvkHSLpJSUl4+PAh7O3tYW1tLUY8e/YML168wKNHjxAWFiYJSE5Ohp+fH65cuQI1NTX09fXh6Ojo/9hMTU1hbW1NxE9PT5eM8Zfm0FWeQ0NDRSuWnp4eXFxcEBERAW1tbUkEZaHLwpDjUK/Pnz/jyZMn0oW6chMGBgZk9MzMTGGekJCA4OBgGZfFbBoZGYnGZ2dnshzK6OiosOvt7RVT2K2trU3G5JpRT2aztrYWPT09Eh0aQ9YMur+/v0h2eHgoAVcaGhpEg8nJSVRVVQmb27dvo6CgQColJUW0ZN6Ki4vx8uVLaeDj4wN1dfV/qaAHwpDOEZRMmpubERcXJ+uWkZEhY3p7e4uWNMPLy0uYhYeHy26bmpqitbVV4kJALoPy4cMHyRH1ampqEoaVlZWSNeaOoycmJsLR0VGcDQwMhIeHB65du4a0tDTRj5vENeVyKASjPtSmu7tbjKmurha9OF5paakApqamCmtPT0/Y2dlJsDs6OkQqMqSx1Fzh1cNQ09nL9SMImTPkzF9+fr6Aubu7w9zcHDY2NqioqJAE8L3L+5BsJdiXOeSDzs5OPHjwQPaVEpA9z9SSYJaWlnB1dUVubq6kgXHjivLbkZERKERmVLhivFHevXsnY3MrgoKCBMjKykruRzMzM2HHFNB1blZNTY0w5cXM+ChE5eVKYDr28eNHGYej0gQLCwthRlCCOTs74+7du+J6bGwsioqKUFdXJ8Zy5P8AGbxf3zVnPs0AAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/40f0d22654f0762f852c2b35550eba74/0e001/burt-reynolds.jpg",
+                  src: "/static/40f0d22654f0762f852c2b35550eba74/46322/burt-reynolds.jpg",
                   srcSet:
-                    "/static/40f0d22654f0762f852c2b35550eba74/5e3dc/burt-reynolds.jpg 40w,\n/static/40f0d22654f0762f852c2b35550eba74/d18de/burt-reynolds.jpg 80w,\n/static/40f0d22654f0762f852c2b35550eba74/0e001/burt-reynolds.jpg 160w,\n/static/40f0d22654f0762f852c2b35550eba74/4e658/burt-reynolds.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/40f0d22654f0762f852c2b35550eba74/46322/burt-reynolds.jpg 48w,\n/static/40f0d22654f0762f852c2b35550eba74/aec58/burt-reynolds.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/40f0d22654f0762f852c2b35550eba74/5bae1/burt-reynolds.avif 40w,\n/static/40f0d22654f0762f852c2b35550eba74/d60a5/burt-reynolds.avif 80w,\n/static/40f0d22654f0762f852c2b35550eba74/2a394/burt-reynolds.avif 160w,\n/static/40f0d22654f0762f852c2b35550eba74/0aca1/burt-reynolds.avif 320w",
+                      "/static/40f0d22654f0762f852c2b35550eba74/1da62/burt-reynolds.avif 48w,\n/static/40f0d22654f0762f852c2b35550eba74/9b476/burt-reynolds.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -156,35 +128,30 @@ export const data = {
       {
         name: "Cary Grant",
         slug: "cary-grant",
-        entityType: "performer" as const,
-        titleCount: 73,
+        titleCount: 72,
         reviewCount: 6,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADvklEQVQ4y2VUSShwXRi+G4SdKRELC1JKhrIjGUNKslAyJAmxMJSFZEEZF8awMKVI5nmKKPOQeZ7nechc9Hw9b11///ct3u655577nPcZzlHm5uawtLSE9fV1bG9vY2dnB0dHRzg5OUFfXx/q6uowODiIsrIyJCUlIT8/H7u7u7i8vMTBwYGsPTw8lPH+/j4UAm1tbWFvb08mz8/Psbm5CV9fX+jr68Pc3Bw5OTmor69HREQENDU1YWVlhYWFBTw+PsrGp6en8mQpBOIOx8fHuL29xfj4OEJDQ+Hq6gpFUaTc3NyQl5eHkJAQmJmZyZyLiwt6e3vx8PCAs7MzaYRPhUDqDu/v70hISJAfiouLER0dDS0tLXnnODk5GYaGhtDR0ZE5U1NTrK6uCujFxYWUQlQWu6M2JiYm0NbWRltbm+jT3t6OyMhIODk5wcjICHp6ejAwMPjtvrq6Gh8fH7i6usL19TUUtsp6fX2Vn7mIdOfn57GysiKb3d/fo6amBn5+fkhPT0dlZSXc3d1lbXZ2Nj4/PwXw5uYGCt0iICfLy8tlUVBQEOg+a2NjQ9wnMLXmOw0pKSmRtZmZmfj6+voPUB3c3d0hKipKFmVlZUl3jBNNY5SYBCZiamoKw8PDojHXEpiApEvZFIJxwCf1sLCwEP3oIHcn1cXFRYkSuyNgc3MzioqKYGxsjM7OTmGn4vwCstO1tTWkpKSgp6cHtbW1YkZgYCDi4+MxNjYmwXZ2doaNjQ08PT0RHh4uUjw9PQnDX0C1lpeX5WR0d3cLXXbKU8Jszs7OorCwUEzhRjExMUKXDhNMLQFU+TNHra2tqKqqEg2ZT2pI/WjQ6OioUJ+YmJCgd3R04O3t7f+ABGOR8vPzM2ZmZkRw/syO+T49PS3GNDY2Spz6+/uRm5srcWKpYEKZA7VLakEAUuPFQFCVamJiItLS0jA5OSlgpEszCKICSmz+BqT4/JGAdLqlpUXm4uLiEBsbi66uLhlTZ+r3DyAnWAw4bw/GwsvLS66rgYEBNDQ0SHRKS0uRmpoq4We3bEClqdYvIPXjR54EuhsWFgYPDw8MDQ0J7aamJskkE8ArjK7zIlEPhAosgNzp5eVFLoaCggJ5Uid7e3v4+/sLZeaS3TIqDg4Ocua/v79/O1ONEVN4KbBD0gwODhYqvMpGRkZgbW0NS0tLCbGPjw8cHR2RkZEBW1tbVFRU4OfnR2LD64tFYIUx8Pb2hoaGBuzs7CQqBGT7dDggIEAuWJ4Y6khtdXV15Rwz4EwFzVRB/wDT+L3nyk7d6QAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/b98304f24cd0fab01ca9c997ad4f8c5d/0e001/cary-grant.jpg",
+                  src: "/static/b98304f24cd0fab01ca9c997ad4f8c5d/46322/cary-grant.jpg",
                   srcSet:
-                    "/static/b98304f24cd0fab01ca9c997ad4f8c5d/5e3dc/cary-grant.jpg 40w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/d18de/cary-grant.jpg 80w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/0e001/cary-grant.jpg 160w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/4e658/cary-grant.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/b98304f24cd0fab01ca9c997ad4f8c5d/46322/cary-grant.jpg 48w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/aec58/cary-grant.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/b98304f24cd0fab01ca9c997ad4f8c5d/5bae1/cary-grant.avif 40w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/d60a5/cary-grant.avif 80w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/2a394/cary-grant.avif 160w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/0aca1/cary-grant.avif 320w",
+                      "/static/b98304f24cd0fab01ca9c997ad4f8c5d/1da62/cary-grant.avif 48w,\n/static/b98304f24cd0fab01ca9c997ad4f8c5d/9b476/cary-grant.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -192,35 +159,30 @@ export const data = {
       {
         name: "Christopher Lee",
         slug: "christopher-lee",
-        entityType: "performer" as const,
-        titleCount: 184,
-        reviewCount: 4,
+        titleCount: 196,
+        reviewCount: 6,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADxUlEQVQ4y01UWU9VZxQ9/8IQFJnRxpeKVAQRpMzz7EUKIkgQKfM8zzNS5nkGrRoFRJCCVIoENRZtiEnjc6tvxr+wzFrmEG/y5Z577v7WXnvttbcxMTGG6elJzM/PYm5uRs8LC3NYXJzH2NgIurs70drajKGhAf0eHh7E7dtdetfS0oT6+lpUVVWguLgQRUUFMPr6flPw6OgwCE5gBkREhCE4OBABAX7w9fVBZWU5amurUVFRJrDGxnpUV1eitLQYBQV5yMvLQU5O9jfA/v5eZSYrvnR0tIeDgx1OnXKGq+uP8PS8AHf3n5Cefh2dne1iVlNTpSRlZSViRsDs7CwYBBsc7Mfk5LhYnj7tAhcXJ/j5+cLH55LAyNbf/2ecO3cWqakpGBjoU4lkSMYlJUViKYb8kyWTXVNTA7y8PHHtWjK8vb30nJaWqmTUlRc9PNxhsSToMuPJlKBMQJYC5OGFW7duihkZm7ru7PyJ9+8P8e7dAV6/fonCwnyVn5AQJ8C6uhppSy3z83Nh8DLP7Ow0btxIUwMow9raqsBevdoX2P7+Ht6+/VsaEpASNDTUCdBsDpMZbAYPASl2UFCAAh8/Xsb6+hPs7e3qrKws4dmzTbS1tSAqKkIAZMhYWscs3aC3qJHpw9jYaERHR8p/d+4soKenW1JkZWUq6YMH91Ta8vKjo47zEJilGwThxbt3FxWUlJSI8+fd5L/29lb09vYgIyNdotP029tbiiNjSsPEXV0dR940yOx7QHqKfmPHyG5r6w8Bra6uYGNjHZubG2JKIgRkQsZ1dLShubnxG0N2mKBLSw9Fn6A8lIK6mWAsl7F0AJ3BZnIwOIosnywNk939+7+LIX/TY/QiR3FmZupotglAzflMS/GYoGbZBrtJBuzo06dreP58WwH0Y0rKLwpkFSMjQyrNHFOWyNKnpiYESpbU02Ap1ImlUXDTb5mZGZoIlkJQswG8SBBahAnImMBkSxkMgr148RcOD//BwcEb6UT9Ll/2ln3Ky0sVSD1pYErCRnIIaGQmprkpA98bHz78K7Dx8VHExETB2dkRVlbHcOKEteaZG4WdZBJ67dOn/2Xiq1ctcgNHMDQ0GLm5v4qtwY5xjAhgbW2lteXk5AB7e1utLwIlJyepxC9fPoME4uJi5Fc2jlXQsyEhQfKr4ebmCltbG9jZndQeJJB5mIQbxmKJx+7uDvghgcjIcAGSZXh4qADDwkI0ZQa38sWLHjhz5gcxIzDBCG5jc1wXuCNp2o8f/9M6ozSJiVcQHx+rXRkY6K9vvv8KUOjfZYP42QwAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/d769b0ebb1cc04b4bd2d0897efcf3233/0e001/christopher-lee.jpg",
+                  src: "/static/d769b0ebb1cc04b4bd2d0897efcf3233/46322/christopher-lee.jpg",
                   srcSet:
-                    "/static/d769b0ebb1cc04b4bd2d0897efcf3233/5e3dc/christopher-lee.jpg 40w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/d18de/christopher-lee.jpg 80w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/0e001/christopher-lee.jpg 160w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/4e658/christopher-lee.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/d769b0ebb1cc04b4bd2d0897efcf3233/46322/christopher-lee.jpg 48w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/aec58/christopher-lee.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/d769b0ebb1cc04b4bd2d0897efcf3233/5bae1/christopher-lee.avif 40w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/d60a5/christopher-lee.avif 80w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/2a394/christopher-lee.avif 160w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/0aca1/christopher-lee.avif 320w",
+                      "/static/d769b0ebb1cc04b4bd2d0897efcf3233/1da62/christopher-lee.avif 48w,\n/static/d769b0ebb1cc04b4bd2d0897efcf3233/9b476/christopher-lee.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -228,35 +190,30 @@ export const data = {
       {
         name: "Dean Martin",
         slug: "dean-martin",
-        entityType: "performer" as const,
-        titleCount: 39,
+        titleCount: 38,
         reviewCount: 1,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE1UlEQVQ4y01UeVCUdRj+punQvzos08BUDi12OZxRkWS5YZdjwYBNSfDAGUXShLSZjLwi0FSKwzgEtACPSq7lEBMEc8UZG0AQsDTkkGPZC/bbE4Se5vcaTjvzzu/9Zr/v+T3v8z7vy+l0OsyFVqOBWqkEPzmJCZ0OPfe7UVxUjPy8PPx4/jzuKG5jqH8AM9YpPLVYMG22YMbCcivlFqMJHAPRqjXQarTQqNTQT0ygorwcu3buhMjTE64uLnBfuxYCJyc642LjUFxYCKvRRCAMbC6mTGZw6nEVNCoVVMpxWC0WlJaUwG75MjjY22OJrQ2WL1sKocAJXiIRVrm5wWOdO5yFQtTK5cDMLIEwlizYBZxqbAwqpRJatZqYBgUGEpCtzWI4CwVY4ehAF7y3cgWdAqf3sfTdJUjatw9GPf+83OcMx0dHoRwZgcVkQkFeHhYvWgg3VxfEbt4Me7vl9DEDWvjWAnpm+coVjvDz9UV3ZxcwMwOLwUhgJt7wDHBseBhWsxmJCQmYP+9luK9dg8br13Hp4kVs27oF4VIpFi96G7Y27xCoo4M9IsIjMDY6CqPBABPPExg/qf8foMmEPZ8k4qUXX8BGmQxNjY3o7elBe1sbrjU0IDQkBPZ2dljl6opwaTiiIiMxMjwM/eQkBQNjJ8f0U7KbeB7x27dj/rxXIBEHoaH+Kjra2nCvowPVVVX4+fJlnMnJQVxsLDmAlaxQKGC1WqHT6qCfeAbKMd+pyHt6fCSTEUNZVBRqa2ooqisrcf7cOVRWVKC+rg6bNm6El8gT3l7eaFUo8HRqmqzG2Bn0PLPNOFiwLh89cgQrHR1QVlqKs/kF+Cw5GR/HxOB4ejp5UxYtw5rVq+Hv54eUL1Mw+LgfVpMFhkk9dZxpyc2BjTx5gqv19UhOSkL5lSsUp06exOcHDpCeN1ta8IGHB4IlEuyIj8e54mIoR5hUBgI0G4ywGI3PjM1AJ7Ra3GhswpmcM/TyndZWAmlpbkbfo0f0HBYaBj8fX0RHRZOmmP2HpGKAbOxYYzmNWg3V+DhNC+t4TbUcOdnZaFXcRk93N2l3r70df/b2EltxkBgxm2LwTWoqXcyYTVusMPMGGkfOwPNgwabkyeAgauRyfHviBH5ruIbjaenI+yEXj/v6qOzDhw7Bx9sb0rAwBAYEkI0yTp3GYH8/ZqemMW02g+u614laeQ1Z4sD+/ZCIJfBcvx4Xyspow1y8cAGKW7dQWV5BtmILgzF0c3WlEWXvJuzcheamJvC6CXDbtm5F1IeRCA+TQhwUBBdnZ1oEjGVdbR3ud3Xhj7t30XzjBnmQ/SfyFNHUONjbQRomReLuRGRlZpKtuNCQUOocO1k5vj4+ZBfmP7YH/374EEMDA9Sc9LQ0Wl8e69bhzQVvQOS5HseOHCWwswUFKPmpBFyIJBihwSEI8A9ASHAw9u39FDvid6CzvQNFhUW4fOkS/nrwAF2dncjLzcV3GRnwcHeHrY0NtsTFUSWZ32dSI9kA/McwmJhFR0YhMWE35b1d98m4TNuC/HzIq6rxe0sLUo99jddfe5Wk2btnLw4fOozsrCwUFRZScBKxmLRjZXiJvIipUCDEzaZmsF/5L79ieGCIcuaEDREbIBQIEODvj4NfHMRXKSk0SazsnKxs/Asv61qo0TRvUwAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/214ebeb3907694ec7751f50e1bc7f897/0e001/dean-martin.jpg",
+                  src: "/static/214ebeb3907694ec7751f50e1bc7f897/46322/dean-martin.jpg",
                   srcSet:
-                    "/static/214ebeb3907694ec7751f50e1bc7f897/5e3dc/dean-martin.jpg 40w,\n/static/214ebeb3907694ec7751f50e1bc7f897/d18de/dean-martin.jpg 80w,\n/static/214ebeb3907694ec7751f50e1bc7f897/0e001/dean-martin.jpg 160w,\n/static/214ebeb3907694ec7751f50e1bc7f897/4e658/dean-martin.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/214ebeb3907694ec7751f50e1bc7f897/46322/dean-martin.jpg 48w,\n/static/214ebeb3907694ec7751f50e1bc7f897/aec58/dean-martin.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/214ebeb3907694ec7751f50e1bc7f897/5bae1/dean-martin.avif 40w,\n/static/214ebeb3907694ec7751f50e1bc7f897/d60a5/dean-martin.avif 80w,\n/static/214ebeb3907694ec7751f50e1bc7f897/2a394/dean-martin.avif 160w,\n/static/214ebeb3907694ec7751f50e1bc7f897/0aca1/dean-martin.avif 320w",
+                      "/static/214ebeb3907694ec7751f50e1bc7f897/1da62/dean-martin.avif 48w,\n/static/214ebeb3907694ec7751f50e1bc7f897/9b476/dean-martin.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -264,35 +221,30 @@ export const data = {
       {
         name: "Errol Flynn",
         slug: "errol-flynn",
-        entityType: "performer" as const,
         titleCount: 54,
         reviewCount: 2,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAERElEQVQ4y1XT3y96fwDH8aNF5sfpKCe/5kdFZKtZfhaT8knHdlatOsrZpyOTFpUuIkocK/pBM2bShFgjGS5cuDH/gh8Xbt2av8Ad36Hts+/z/rH3a3u/3wCdTi8uLs7Ly6P8BAAAjUYTiUQoivb29lZXV8vl8j9//ojF4paWFqFQ2NvbOzQ0pFarjUYjAIJgcXExhUKhUqkAADAYjPHxcbPZ7HK5NBpNXV2dRCJRqVS7u7sul6upqam7u1sul6tUqn84Pz8/Ly+PRqP5fL7x8XEqldrX19ff319UVAQAAJvNViqV29vbGo1GIBDIZDIURQ0GwzcuLS0FAIDL5S4tLYVCIR6PB4JgZWVlWVkZAABUKrWyspLFYhmNxlgs1tPTI5FIhoeHMQwD6HR6SUkJlUoNBAKPj496vb6wsJDD4dTU1DQ0NLDZbA6Hw2KxGhoaUBSNxWIoira3tysUCp1O941pNFpNTY3RaAyHw5FIxOv1ms1mq9VKEASKohKJRCgU8ng8jUbj8/m0Wq1AIJBKpWq1OjebQqF0dHQkk8nX19fj4+NQKLSzs7OwsEAQBIIgCoVCKpXqdDq73U4QBI/H6+npQRDkG4MgWFBQUFtbm8lkXl9fLy8v4/H4wcHBxsbG35+i0WgoFMJxXKlUjo6OikQioVA4MDCQOxkEwfz8fKfT+fX19fj4eHJycnFxsbq6qlQqMQzb2tq6vr4OBoMIgoyMjCAI0tjYKJFIcphOp4MgKBaLHx4etre3Y7HY1taWXq/HMEwul+M4Hg6Hb29v3W63QqEwGAz19fWdnZ252SAIMhgMFou1vLys1WoxDHO73RiGra6uWq3WsbGxQCBwd3e3srKC4/jAwEBtbW1bW1sO0+n08vJyEARTqdT9/f3h4eHOzk53d/f6+nokErFarfF4PJvN7u7u6vV6JpPJZrP5fD7wKyEIqqioKCkpIUny/f39+fn5+vqaz+fPzMwcHh7a7XaSJBOJxM3NTTAYZLPZMAw3Nzfn8O9mCIIGBwfv7+9Pfurr61MoFBaLZXJyUq/XezyedDrt9/uDwSBBEOXl5f8wDMNVVVUVFRWBQCAajW5ubk5MTPzes9/vx3HcYrF4vV632723t/f09DQ1NZXDTCYThuHq6moYhpVKZSqVikajyWTS7/dbLBaSJLVaLY7jXV1dMzMzp6en6XT66Ojof5j50++vfHl5SSQSTqfT4XBYLBaTycTlcsVi8cjISDab3d/fdzqd3xiCIBiGIQji8/kmk4kkybOzs+fn56urK5IkDQYDgiD19fWtra12u91ms2UymbW1NZfL9Y3LysogCOLxeOfn5yRJBgKBj4+Pt7e3eDxOEITZbB4aGhocHJyenrbZbD6fb3Nz0+Vyzc7OAr/Pg0ajLS4uplKpqampRCLx8PDw+fn59PQkk8k8Hs/c3JzD4bD/tLi4OD8/73A4PB7Pf9x1f2KUrn8JAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/7d947966185da5733e4ea8e01c23b9e6/0e001/errol-flynn.jpg",
+                  src: "/static/7d947966185da5733e4ea8e01c23b9e6/46322/errol-flynn.jpg",
                   srcSet:
-                    "/static/7d947966185da5733e4ea8e01c23b9e6/5e3dc/errol-flynn.jpg 40w,\n/static/7d947966185da5733e4ea8e01c23b9e6/d18de/errol-flynn.jpg 80w,\n/static/7d947966185da5733e4ea8e01c23b9e6/0e001/errol-flynn.jpg 160w,\n/static/7d947966185da5733e4ea8e01c23b9e6/4e658/errol-flynn.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/7d947966185da5733e4ea8e01c23b9e6/46322/errol-flynn.jpg 48w,\n/static/7d947966185da5733e4ea8e01c23b9e6/aec58/errol-flynn.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/7d947966185da5733e4ea8e01c23b9e6/5bae1/errol-flynn.avif 40w,\n/static/7d947966185da5733e4ea8e01c23b9e6/d60a5/errol-flynn.avif 80w,\n/static/7d947966185da5733e4ea8e01c23b9e6/2a394/errol-flynn.avif 160w,\n/static/7d947966185da5733e4ea8e01c23b9e6/0aca1/errol-flynn.avif 320w",
+                      "/static/7d947966185da5733e4ea8e01c23b9e6/1da62/errol-flynn.avif 48w,\n/static/7d947966185da5733e4ea8e01c23b9e6/9b476/errol-flynn.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -300,35 +252,30 @@ export const data = {
       {
         name: "Frank Sinatra",
         slug: "frank-sinatra",
-        entityType: "performer" as const,
-        titleCount: 55,
+        titleCount: 53,
         reviewCount: 2,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADqElEQVQ4y22USSivYRTGv7W9REQohIwps7CwVJKkRCmSLIjEhoUhMizMFDbIlHkWmTJTxowL8zzPw3N7Tn3fTfd+dfq//3f4veec55xXOT8/x8XFhWZnZ2did3d3eHp6krmTkxNcX1+LnZ6e4vj4GDx3eXkp61dXV7i/v8fz8zMULqhQdTNtdHQUtbW1yMnJQVZWFlpaWjAwMCBwHuZ+Am9vb/H4+Ciw9/d3KCqIXh0dHclkZ2cnHB0d4erqCjc3Nxk7OzvDy8sLoaGhmJqawuvrq3jMKN7e3vD5+Ymvr6+/QHrFGxsaGuDr6wsnJyf4+/vDwcEBLi4uiIiIQEpKCnx8fOSi4eFhAb28vGgwDUjvmIfV1VWYmpoKqKioCIWFhcjPz0d/fz/29vawtLQk3tPT4OBgDfYLSK8IZB6YJwsLC9TU1GBtbQ37+/vi+eHhIba3twU4OzuL9PR08Zrz/D4+Pn4DGTJzUVdXJ7mqr6/H4uKiQGi7u7uYm5tDe3s7enp6JC3cNz09LUDm/R8Pqdb4+LjkrqKiQg53d3djc3NTPCsvL0d1dbVc2tfXh8DAQPn9L1DNI8Nj8uPj45GZmYnk5GRUVlZiYmICXV1dAi0pKcHQ0JDktq2tTQNpKlN6AgljMRcUFAgoLy8PjY2NaG5uFhihy8vLIhzHnGf5MLLv729NHOXm5kbKRe0G3lxWVobJyUmsr6+Lqhz39vZKLmlMDQXkPM8SxLClsHmDKgzhVVVVouLMzIwIUlpaKsYuoXc0htza2ipw1iKNMBa7wjZSPSRwZGREuoF1SGV5kHW4srKCwcFBMSpNwVhqhBGkFrnCSYLYz/SS7Uc1U1NTJen0mEIQzDDHxsZknhcTxHJjH3OsASmG6iXB/HJzc0VtesK6Y5gsH6YiIyNDHg8WNM+rUHlt1FeCixyzxZKSkuDu7i59m5iYKIe3trakewiLi4vDwcEBfn5+8PDwIKaCpQ43NjbQ0dGBtLQ0+Pn5QUdHB5GRkSIG/0dHRyMhIQEBAQGIioqSC4qLiyWv6kelCVVCQkLg7e0NKysrGBsbw9zcHLq6uggPD5dUsA3DwsIQFBSE2NhYLCwsYGdnBx4eHrC1tZVG4LvJipDCtra2lgUbGxt59+zs7KCvrw9PT095HBjO/Py8eMaCpppNTU0wMTGBmZkZDAwMZL+9vb1EonBACI0NT+NGIyMjKRfmJTs7G4aGhoiJiZGuolh6enoSlaWlpUTFCwj+A01q2/aeSvTMAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/1395fe2470260708632a15d5e98d81d4/0e001/frank-sinatra.jpg",
+                  src: "/static/1395fe2470260708632a15d5e98d81d4/46322/frank-sinatra.jpg",
                   srcSet:
-                    "/static/1395fe2470260708632a15d5e98d81d4/5e3dc/frank-sinatra.jpg 40w,\n/static/1395fe2470260708632a15d5e98d81d4/d18de/frank-sinatra.jpg 80w,\n/static/1395fe2470260708632a15d5e98d81d4/0e001/frank-sinatra.jpg 160w,\n/static/1395fe2470260708632a15d5e98d81d4/4e658/frank-sinatra.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/1395fe2470260708632a15d5e98d81d4/46322/frank-sinatra.jpg 48w,\n/static/1395fe2470260708632a15d5e98d81d4/aec58/frank-sinatra.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/1395fe2470260708632a15d5e98d81d4/5bae1/frank-sinatra.avif 40w,\n/static/1395fe2470260708632a15d5e98d81d4/d60a5/frank-sinatra.avif 80w,\n/static/1395fe2470260708632a15d5e98d81d4/2a394/frank-sinatra.avif 160w,\n/static/1395fe2470260708632a15d5e98d81d4/0aca1/frank-sinatra.avif 320w",
+                      "/static/1395fe2470260708632a15d5e98d81d4/1da62/frank-sinatra.avif 48w,\n/static/1395fe2470260708632a15d5e98d81d4/9b476/frank-sinatra.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -336,35 +283,30 @@ export const data = {
       {
         name: "Gene Hackman",
         slug: "gene-hackman",
-        entityType: "performer" as const,
-        titleCount: 78,
-        reviewCount: 1,
+        titleCount: 79,
+        reviewCount: 2,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADlklEQVQ4y22USSi1cRjFb8qwsJJphY0MmSkWKFHIQsYNMhSSlCjDQuZkKJGFyJAQFihzMi6QecxcpmQeIpnP13m+7s39fG/9u/973/f93fM85/wfxdfXF7g+Pz9lcf/29gblNTIygrS0NMTExKC4uBjLy8v4/v6Wex8fH/j5Pj8V//7w/v4uDx8dHcHf3x8KhUKWoaEhLCws4OnpKfD5+XkVVCmGSwX8CZuamoK+vr6AtLS04OrqiqioKERHRyM+Pl72Xl5emJiYkOf5npKh+F+5tra2AtPW1pZ9WFgYMjIyUFpaivLyctTX1yM7OxsVFRV4eXn5rZAbSue1s7MDXV1daGpqwsXFBd7e3gIsKSlBe3s7hoeHMT4+jtHRUenp4uKiWumKf43o7e0VdZaWlvDw8ICfnx9iY2NRWFiI7u5ubGxs4OrqCnt7e+jo6MDY2JiaQb8UZmVlwdzcXEqlCaGhoWJCTk4OBgYGcH5+jufnZ1xcXGBychKzs7PynprLSjPq6uoERmWOjo6yDwwMFDPy8vLQ398v7nMdHx9jenoau7u7KqCqZCWwpqYGOjo6AnJycoKVlZXEJDw8HMnJydIOKtvf38fZ2ZmUzaUG/Nm/9fV1GBgYQE9PD/b29rCxsYGDg4MAWXZkZKRUsbm5ie3tbQwNDWFlZUXdFKpTJr+rq0sgpqamotLd3R0JCQkIDg6W2CQmJopJLD0lJQWpqak4PDxUB/LL5eWlZIvOmpiYiDoa4uvrK1HhYr947DIzM0VhT0+PmiEqU7a2tuSf3NzcpG+MjLW1tewDAgJQUFAgsKenJ8zMzKCsrAzX19fSSzr+C1hVVYWioiIpgeURaGRkBGdnZ0RERMi9hoYGCXRQUBByc3Nxe3uLpaUlPD4+qkVGSqZ83qytrQXhNEFDQ0MUMjLp6eloaWlBdXU1zMzMRDUnUGdnJ37OAZVCZaYODg7Q1NQkJ4IqjY2NZQDwe2Njo5xdwnmW+RyF8GJCXl9fVUoVzBP7c39/Ly+2tbUhJCRE1cvKyko0NzfLIOjr68Pq6qr0UjlheM3NzeH09FT2ioeHB7Gc0MHBQVGysLAAOzs7gfr4+MgQoKvMKYPMDLJ/SuDa2pq0S4CEUTLlMlM0hippAs0hlLMxLi5OoDc3NwJj1PgOM3xycoL8/Py/QP54d3cnKrlaW1uRlJQkAJ5fZpN5ZP9YMp/hcOAcJJw95PRmWwj8A/EdsExD+2b0AAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/735f0d898ab9b026bfe23a1cc22115e5/0e001/gene-hackman.jpg",
+                  src: "/static/735f0d898ab9b026bfe23a1cc22115e5/46322/gene-hackman.jpg",
                   srcSet:
-                    "/static/735f0d898ab9b026bfe23a1cc22115e5/5e3dc/gene-hackman.jpg 40w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/d18de/gene-hackman.jpg 80w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/0e001/gene-hackman.jpg 160w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/4e658/gene-hackman.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/735f0d898ab9b026bfe23a1cc22115e5/46322/gene-hackman.jpg 48w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/aec58/gene-hackman.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/735f0d898ab9b026bfe23a1cc22115e5/5bae1/gene-hackman.avif 40w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/d60a5/gene-hackman.avif 80w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/2a394/gene-hackman.avif 160w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/0aca1/gene-hackman.avif 320w",
+                      "/static/735f0d898ab9b026bfe23a1cc22115e5/1da62/gene-hackman.avif 48w,\n/static/735f0d898ab9b026bfe23a1cc22115e5/9b476/gene-hackman.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -372,35 +314,30 @@ export const data = {
       {
         name: "Humphrey Bogart",
         slug: "humphrey-bogart",
-        entityType: "performer" as const,
-        titleCount: 73,
-        reviewCount: 12,
+        titleCount: 75,
+        reviewCount: 26,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD9klEQVQ4y01U6SugXxh9v06WiLEkYw9jz75mzTbZCWEsZS1Lss6QJdlCloyyFZJ9iYjIvmQ3xuQLPvgD/Ann13nK9PvwdO9773vPc57zLEpERAQiIyP/Gb8/zvz9/WFnZwdra2s4OjrC09NTzMXFRc5tbGzkztLSEubm5jAxMYESFxeH+Ph4Me5jY2MRHR0Ne3t7fP78GZqammLc6+vrw8jICF+/foW7u7s4cXBwgK2trQBbWFhAycjIwPfv38E1LS1N9m5ublBTUxOQ/wN9+fJF9rq6ugLm7e0tbJ2cnIQxHSkFBQXIz89HXl6erNnZ2TA0NJSHfETwwMBAZGZmory8HEFBQXJHcD8/P3h5ecHV1VX+JVOlrKwMtJKSElRUVCA1NVUYcL+2toaNjQ2cnJzg/v4eNzc3mJyclDC1tbXh4eEBX19fWZ2dneVcqa2txY8fP1BTU4PGxkYkJiaK997eXhwdHeHy8hJ//vzB379/BXBzcxNRUVHQ0NAQZiEhIfDx8ZFkEVRpaWkBrampCR0dHRIaPbW1tWF/fx9nZ2f4/fu3AF5dXWFxcRFhYWGSKAKxGigJwyeo0tPTg+7ubnR1dQmr6upq8ZSeno7+/n7c3d0JyMTEBA4PD7G+vi6PKctHRdBBcHCwnCu/fv3C4OAgBgYGMDQ0hObmZkk/vdH73NwcxsfHJUwmhZrm5uaiuLgY7e3t+Pbtm9yFh4cLqDI6OoqRkREMDw9jbGxMmDKUhoYG0ZRJeHh4kPvZ2VlsbW2BUc3MzIhEMTExwpTOQ0NDoUxPT2NqakoeciVocnKyADDzu7u7kpTj42PRk4CMhMlhJaSkpCApKekfS2V1dRUrKytYXl7G0tKSrCyduro6AeT93t4erq+vRcP5+XlQJsrAsFm/bAaSIFtle3tbvNKoDxlRK3pLSEgQnQ4ODnB+fi7/MIrOzk78/PkTVVVVKC0tBZsjKytL2CosjQ/b2dkRFtQ0ICBAtGHCyJqZZqHzm9pSP0ZRWVn5D5RdplAX2unpqXQEARliTk6OTBt2EXVeWFgQdmTMcmIjMIFkSi0JWlhYCOX29hY0anRxcSGhPT09SaGTJYueUjDD7ChWBXXlsKCzvr4+1NfXCyg1V9gF7NPHx0c8Pz9LV1Ajji+yLCoqEhZMAIv+5eVFillFRUVA2QAMn8x5r7y+vuLt7U36lB3DGlRVVYW6urrsWRKcfSx2dgJZcKRxmLLnuWersthbW1uhUGjGz+n76dMn8cxJwhGmpaUFPT09KQcDAwPZc0SZmZnB1NRUjKA8p3EuKtwQiNOD/amjoyNADIdOGP77+7skgaBWVlYCaGxsLP/QMUH5zTn5H1zwf/BGPTUcAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/a2562cfdcd1ef9d47853e346456456f0/0e001/humphrey-bogart.jpg",
+                  src: "/static/a2562cfdcd1ef9d47853e346456456f0/46322/humphrey-bogart.jpg",
                   srcSet:
-                    "/static/a2562cfdcd1ef9d47853e346456456f0/5e3dc/humphrey-bogart.jpg 40w,\n/static/a2562cfdcd1ef9d47853e346456456f0/d18de/humphrey-bogart.jpg 80w,\n/static/a2562cfdcd1ef9d47853e346456456f0/0e001/humphrey-bogart.jpg 160w,\n/static/a2562cfdcd1ef9d47853e346456456f0/4e658/humphrey-bogart.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/a2562cfdcd1ef9d47853e346456456f0/46322/humphrey-bogart.jpg 48w,\n/static/a2562cfdcd1ef9d47853e346456456f0/aec58/humphrey-bogart.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/a2562cfdcd1ef9d47853e346456456f0/5bae1/humphrey-bogart.avif 40w,\n/static/a2562cfdcd1ef9d47853e346456456f0/d60a5/humphrey-bogart.avif 80w,\n/static/a2562cfdcd1ef9d47853e346456456f0/2a394/humphrey-bogart.avif 160w,\n/static/a2562cfdcd1ef9d47853e346456456f0/0aca1/humphrey-bogart.avif 320w",
+                      "/static/a2562cfdcd1ef9d47853e346456456f0/1da62/humphrey-bogart.avif 48w,\n/static/a2562cfdcd1ef9d47853e346456456f0/9b476/humphrey-bogart.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -408,35 +345,30 @@ export const data = {
       {
         name: "Jack Lemmon",
         slug: "jack-lemmon",
-        entityType: "performer" as const,
-        titleCount: 57,
+        titleCount: 65,
         reviewCount: 3,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEIklEQVQ4y2VUWUiWWxT9HEhDSVE0cEAwURL0KQRNXxwwfepBSX3QHgIlIzUfVNBKxBkccAgEM3JIxSEHUpzNAcdKM6fMnOcc0jSn1mVt+LsX7geb78A5Z52911p7K9vb25idncXY2Bj6+vrw7t07NDQ0oLOzE83NzaitrZWIjo5GWVkZDg4OsLe3h69fv2JiYgIDAwNytqmpCfX19VBOTk7w48cPrKys4PPnz3KgpaUFcXFxuHfvHpydnWFnZwctLS3o6ekhODgYpaWl+P79O4aGhtDd3Y329nZ5nPeUi4sLeXVzcxNzc3P48OEDHj16BCcnJ1hYWODq1avQ1taGjo4Orly5In99fX1kZWVhfHwc/f39ksTw8DC+fPkC5fT0FLu7u1haWsK3b9+kNFtbW7i7u8PU1FQuGxoaCriHhwc8PT2hoaEBMzMzfPz4EfPz81hbWxOMnz9/Qtna2pL0ySPTd3BwQHl5ubzOqKurQ3V1tZTU09OD3t5eoUNRFOTm5uLPnz84OzsDP64VAo2OjgrBz58/x/3792Xj169f+O93eXkpFVC0ysrKv1Wo9nhHAJkF1f306RNiYmKQkZEhKi4sLOD4+Bg7OzugE/inE968eYNXr17h9u3buHXr1v8Bp6enhQu+/uLFCymH2VLxo6MjUX91dRXr6+sYHBwUexQWFsLa2hpeXl4CSGH/AvLl5eVlIZV8PXv2TDw2MjIiYMyUxE9OTqK1tRU1NTWisIuLC54+fSrZnZ+f/wtIQskXg7Z5/fo10tLSEBAQIBylp6cLZ35+fnB0dISbmxsePHiA8PBwKZ8K03bMksCKigMCc4M+pKqPHz9GZGSkrBlJSUnIzs5GSkoKCgoKEBUVJQ/R3DMzM8Lz/v4+FFWqfIHAU1NTYiEeIL98gK3IbLgmvyUlJWL+qqoqtLW1oaOjQwSj/RSCqIKg7JjGxkZsbGzIQfbx+/fvERsbK2t6NTU1Vei4efMmKioqxEr0KTtG+f37t/BHRZny4eGhlJKfny9q0iJPnjyBj48PwsLCkJycjIcPHyIwMFD628rKSoZGV1eX9LR0yuLioqjJlKk6N+lHCsJuYISEhODu3buIj48X87NF7e3tpWNMTEyQl5cnFCn0HzuFHKgEoReZFXljliyRQEVFRbLn7++PhIQEGRTq6uoCygHCSaRQJc6zly9fwtfXV9x/7do1GQY5OTnCD8fV27dvxfjkjmrThwQiIIcF1xI0MMHYStevX5eZx9dsbGwQERGB4uJiAU5MTIS3tzcyMzOlfF4mkJqamoSmpiYMDAygsJ1cXV1lRBkbG8vMIzCnDgHJy507dxAUFCQls5MIRhAVILPkvRs3bkChp5iVrq6uBJUzMjKCpaWlzL7Q0FA5zNFFNVWlEYxADN4hn+bm5vgHkI9SrRyQKAAAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/4ef11c005a3c84bddc4e395d49a6f167/0e001/jack-lemmon.jpg",
+                  src: "/static/4ef11c005a3c84bddc4e395d49a6f167/46322/jack-lemmon.jpg",
                   srcSet:
-                    "/static/4ef11c005a3c84bddc4e395d49a6f167/5e3dc/jack-lemmon.jpg 40w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/d18de/jack-lemmon.jpg 80w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/0e001/jack-lemmon.jpg 160w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/4e658/jack-lemmon.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/4ef11c005a3c84bddc4e395d49a6f167/46322/jack-lemmon.jpg 48w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/aec58/jack-lemmon.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/4ef11c005a3c84bddc4e395d49a6f167/5bae1/jack-lemmon.avif 40w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/d60a5/jack-lemmon.avif 80w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/2a394/jack-lemmon.avif 160w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/0aca1/jack-lemmon.avif 320w",
+                      "/static/4ef11c005a3c84bddc4e395d49a6f167/1da62/jack-lemmon.avif 48w,\n/static/4ef11c005a3c84bddc4e395d49a6f167/9b476/jack-lemmon.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -444,35 +376,30 @@ export const data = {
       {
         name: "Jack Nicholson",
         slug: "jack-nicholson",
-        entityType: "performer" as const,
-        titleCount: 62,
-        reviewCount: 2,
+        titleCount: 61,
+        reviewCount: 3,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEAUlEQVQ4y1VUWSinbxj9UrIk+17KNrJNk72Q3Rg7WWax7/s6dokicSU3bqhJIheUQWS5EJHlCjeGXCBmsoVMiDr/zjNR/4u37/f93vc773nOOc+jZGVlITc3FwUFBSgqKkJxcTEqKipQWVmJvLw8REVFwcXFBR8+fICfnx+Sk5NRXV2N5uZmfP/+HVVVVXKeT/6vZGZmIjs7G/n5+QJYWloqB93c3KCtrQ1DQ0OYm5vDysoKlpaWMDY2hru7Oz59+oTa2loBIeArqADm5OS8MeQhHlZVVZWlo6Mj4E5OTsKY5969ewdFUfDlyxdhWl5e/laVkpGRIYBkyA0+jYyMoKKiAgMDA3h7eyMtLQ1dXV3Y2NjA/v4+JiYmYGFhIezJkBW9slTS09NFw8LCQtkkG11dXQQHB2NwcBCbm5s4PDzExcUFrq6u8Pv3b5yfnyMmJgZmZmZyWX19vbB7K5mAJSUloiXBbG1tpZT19XXs7Ozg169fOD09FdCTkxMsLS2JOWFhYfj48aMwq6urQ01NDRSCEJBmpKSkQENDA+/fv0dfX58Abm1tSZk3NzfCjGzHx8cREBAgDFl2UFCQEHgD5GJcqCUZUh8yIOjMzAwWFhbw8+dPAVpcXMSfP3/g4eEhxnDRuLKyMjH0fy6zbBsbG+jr68PBwUGiMjAwgOnpaSQlJaG7uxutra04ODj4p5eiQFNTU6pildRSXH4NNg9FRETA3t5e/gsJCcHy8jLu7u4wNjaG3d1dTE1NoaOjA0dHR5JLdXV1ySYj19jYCIUusWRmjE4RhMGlntw7Pj4W/ejw379/xZjY2FgBp8YJCQny3tTUhIaGhn+xee0U6kDGPj4+Eu7Q0FCMjIzIxzTn+vpaXG5paRFtecn29rbIQP1ojACyn1815OKNBGUWe3p6JIt7e3uYnJyUUI+OjmJoaEjYv7y8YG5uTqIjgN++fRNWZMhwMz5850AgaHt7O378+IHZ2Vl0dnaKLNR3ZWUFT09PwpqLiZDh8PXrV9GKGpIdb2KefH194eXlhba2NqyurmJ+fl6Yx8fHyz7Nenx8xOXlpWjMfPKskpqaKiUTkL/j4uIQGRkp4aY5/f39EhMyMDU1BStiEsiGvc2S7+/vJQmURklMTJSks92YP2ZKTU0Nzs7O4jjdZvMHBgZCT09PDOSUIXt+u7a2hufnZzw8POD29hYKB6e1tbW0kJaWlsxAPjmimC1+xH1XV1dx/vPnz6Kxo6OjdEt4eLh00NnZmZSvUCtOYjs7O5iYmAggg8rf1JMM2YY0jHGh5ryQ+xxtvIhPVjE8PAyFelETji3qxrLZcrw9Ojoa/v7+6O3tFc1oGktny1EWTnJWyI7hu6enJ/4DiTqKNyUQuNgAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/598d5a054190f46a2bfbd3f3c40ff9d3/0e001/jack-nicholson.jpg",
+                  src: "/static/598d5a054190f46a2bfbd3f3c40ff9d3/46322/jack-nicholson.jpg",
                   srcSet:
-                    "/static/598d5a054190f46a2bfbd3f3c40ff9d3/5e3dc/jack-nicholson.jpg 40w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/d18de/jack-nicholson.jpg 80w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/0e001/jack-nicholson.jpg 160w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/4e658/jack-nicholson.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/598d5a054190f46a2bfbd3f3c40ff9d3/46322/jack-nicholson.jpg 48w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/aec58/jack-nicholson.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/598d5a054190f46a2bfbd3f3c40ff9d3/5bae1/jack-nicholson.avif 40w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/d60a5/jack-nicholson.avif 80w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/2a394/jack-nicholson.avif 160w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/0aca1/jack-nicholson.avif 320w",
+                      "/static/598d5a054190f46a2bfbd3f3c40ff9d3/1da62/jack-nicholson.avif 48w,\n/static/598d5a054190f46a2bfbd3f3c40ff9d3/9b476/jack-nicholson.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -480,35 +407,30 @@ export const data = {
       {
         name: "James Coburn",
         slug: "james-coburn",
-        entityType: "performer" as const,
-        titleCount: 67,
-        reviewCount: 2,
+        titleCount: 84,
+        reviewCount: 5,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEIklEQVQ4y01Uayjffxj9vlleuZRQIrmViCQxl4XGG1Macxczl+QyuWW5W9jIZS4bwrCVa8OIXDd3Y4WS+9zeqIURNS+o8+88av3Vp2+/r+/nPOec5zyPYmtrCx8fHxgYGMDGxgZzc3P4/fs3Tk5OMDIygo6ODrS2tsr5+vUrzs7OwL/b21vc3d3Jk9/n5+fj+fPnUExNTWFnZwcdHR1oaWmhqakJLS0tKCgoQElJCd68eYOkpCSkp6cjJCQEsbGxmJ+fF9CbmxtcXFzg8vJSCgcFBUExMTGBs7MzDA0N4eDggA8fPuDdu3coLy/H27dvUVlZKaAVFRVIS0vD06dP4eXlhaGhIWF3fn6O09NT/Pz5E9HR0fcMLS0t4eHhIQANDQ3y8cTEBGpra+VdQkICIiIi4OLiAgsLC/AOi+/v7+P6+hrHx8c4PDwURYq1tTWMjY1FVl5eHhobGzEwMID6+noUFhYiNDQU3t7ecHV1hba2NvT09KCpqSmHvl5dXeHXr184OjrC+Pg4FCMjIzg6OorUzMxMxMTE4NOnTwKWnZ0t3rx+/VreP378WJiRBD2nGjIk4NbWFlZXV6Gwqpubm1yMj48Hu06vPn78KFVp+uLiothQWlqKlJQUvHz5Evb29uI1/aP0g4MDbG5uQmElelNVVSWGk4Gnpyfa2tokDjU1NdJZWpKTkyPMyTgsLEwK7O3tYX19XVju7u5C0dDQgJOTEzIyMuSj8PBwjI2NSfeGh4fh6+srDaMt/IbRYcz4vrq6GoODg/I9VTBOIpn0s7KyhNmrV69EHr1hZXrL0BKsv78f/v7+MDc3h5+fn7xj98mcFrW3t0Nh/qysrJCbm4vi4mLpNOUSjJPR09MjQFNTU9je3kZzc7OEPDk5GQEBAZJJNo93SUq6zNiQGX0kmx8/fmBhYQFfvnz59xwdHRVZ3d3dUpQNWV5elnvPnj0TxoGBgVBIn4cpn5yclNFjqAlKD/v6+gTw+/fviIuLEwCq4eSkpqYiMTERT548EV+5ExQzMzPwBAcHY2VlRfzr7OyUkFJyXV0dioqKJPCMEwH4m4UJMDMzI0Ogq6sLfX39+1l++PChAHEeKZtxICuyozyyioyMFCaURnbcRBwAjhtHV1GU+6OmpiZb4s+fP9jY2MD79++lk3yyMs0uKysTuYwUn//PJENOoAcPHogFiru7u0jl6LCzHJ/Pnz9LmHmB0rhtuCDIksZTHpv56NEjqKury8JgHrkrFcaBYPSLy3V6eloCykxRXlRUlHhHdlSiqqr6Tx4zTDs4dpyqpaUlKDs7O9LR2dlZASUgu8vscfhfvHgh08GdSRAVFRVZxGS7traGv3//ygwTjHcUsuM/KJc5I3UC9vb2SsAJyidXFZcuC7N5XBy0ikDfvn2TBnZ1deE/tn0DSB1W+D0AAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/f79abb64946657befa5948c0c31a48c0/0e001/james-coburn.jpg",
+                  src: "/static/f79abb64946657befa5948c0c31a48c0/46322/james-coburn.jpg",
                   srcSet:
-                    "/static/f79abb64946657befa5948c0c31a48c0/5e3dc/james-coburn.jpg 40w,\n/static/f79abb64946657befa5948c0c31a48c0/d18de/james-coburn.jpg 80w,\n/static/f79abb64946657befa5948c0c31a48c0/0e001/james-coburn.jpg 160w,\n/static/f79abb64946657befa5948c0c31a48c0/4e658/james-coburn.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/f79abb64946657befa5948c0c31a48c0/46322/james-coburn.jpg 48w,\n/static/f79abb64946657befa5948c0c31a48c0/aec58/james-coburn.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/f79abb64946657befa5948c0c31a48c0/5bae1/james-coburn.avif 40w,\n/static/f79abb64946657befa5948c0c31a48c0/d60a5/james-coburn.avif 80w,\n/static/f79abb64946657befa5948c0c31a48c0/2a394/james-coburn.avif 160w,\n/static/f79abb64946657befa5948c0c31a48c0/0aca1/james-coburn.avif 320w",
+                      "/static/f79abb64946657befa5948c0c31a48c0/1da62/james-coburn.avif 48w,\n/static/f79abb64946657befa5948c0c31a48c0/9b476/james-coburn.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -516,43 +438,37 @@ export const data = {
       {
         name: "James Garner",
         slug: null,
-        entityType: "performer" as const,
-        titleCount: 49,
+        titleCount: 68,
         reviewCount: 0,
         avatar: null,
       },
       {
         name: "James Stewart",
         slug: "james-stewart",
-        entityType: "performer" as const,
-        titleCount: 79,
-        reviewCount: 1,
+        titleCount: 81,
+        reviewCount: 2,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJklEQVQ4y12UWUhWXxTFLxT6UOGDIA5PmiiWAxpOpGLmFGhqaRjihCAJ4oCKFqFGOaDimLOpaU5pTmkaaYEDTg9mggMoKoIGqZA5ZrJi7fj+D/8Lm/txv3N+Z5+1197K7OwsRkZG8OnTJ/T19aGzsxMNDQ1obGxEc3MziouL8fjxY4ny8nLk5ubi+fPnEmlpaXjx4gXy8vJkXV1dHZSFhQUQOjU1hc+fP6O/vx8fPnyQBf7+/nBzc4Ofnx8sLS1x69Yt+V5aWorMzExkZGTIOycnB0VFRaivr4eytLSEb9++YW5uTqBfvnyRPx0cHHD16lUYGRlBT08P165dw6VLlwRcUVGBmpoalJSU/Bf81tTU9A9I2MzMDObn55Geno7AwEDcu3cPJiYmsLa2hpWVFUxNTWFgYIDLly/j0aNHePPmDV69eoWqqioJHkCJlLW1NSwvLwt0cXERN27cQEBAALq6upCYmIjQ0FCEhYWJXtQ3ODgYZmZmAqytrRUQwYyWlhYo379/x+bmJlZXV7G+vi5AX19fjI2NgdnzMOq8srIih3KjtrY2nj17JlACCWZIhvv7+9jb28PW1hZ2dnbg7Ows+vX09AhgY2NDDuNNvn79Kpt0dHQQExODjo4Oqezr16/l3draCuXo6Ag/f/4EM/316xfi4uJEq8rKSrESdZ2enkZ1dTUSEhJQUFCAu3fvil3ev38v1ySora1NZFKOj48F9OPHDxweHsrGK1eu4ObNm3BxcUFUVJSI7uPjI/Z5+fKleJBOGBgYwLt37wREfbu7u/8BmSWv/vv3b1l0/fp1KUZWVpYcMDg4KJp+/PgRk5OTcm2uo197e3tFHhVYYVaMg4MDeW9vb+P27dtiYBaDi7lpdHRUCkQQu4UwNoEKSD3b29uhnJycgHF6eiqZ8mEn3LlzRzQsKyuTjmAXsEV5fV53fHxcMmdQSwLfvn0L5ezsDKpQwfn7wYMH4r3k5GTRj7ZgNdlmNP/ExIRcf2hoSIC8smR4fn6OP3/+4P/P06dPBZqUlITY2FikpqbKVSMiIuQ/DgT2vkpbZiitpwJQP56an5+PkJAQsY6xsTHi4+MFwOqmpKSIR6nn/fv3pYOYOTVklWlyqfLw8DCePHkii1hhfX196YaLFy/Kt8jISAkewNG2u7sLV1dXuLu7S9/Tu9RVxhdnHAeBt7c3goKCYG9vDzU1Nairq0NRFGRnZ+Phw4eSMQvChx1jY2MDLy8vGXHh4eECLSwshMJqMjhRHB0d4eHhAQ0NDVy4cEGA1JEz0dDQUJzAhzcyNzcXe7HvVVAaXrGwsBAIhwKz4GZbW1vpFgK1tLSgqakpRVABaSWONicnJ9nr6ekpjcDWVDhAORA49wjkqdSGehGkq6srenIx7URHREdHy+C1s7MTGKGUjcX8C7XEKVUo9UwrAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/9a3d04b715b101ef6b54d146fcba919e/0e001/james-stewart.jpg",
+                  src: "/static/9a3d04b715b101ef6b54d146fcba919e/46322/james-stewart.jpg",
                   srcSet:
-                    "/static/9a3d04b715b101ef6b54d146fcba919e/5e3dc/james-stewart.jpg 40w,\n/static/9a3d04b715b101ef6b54d146fcba919e/d18de/james-stewart.jpg 80w,\n/static/9a3d04b715b101ef6b54d146fcba919e/0e001/james-stewart.jpg 160w,\n/static/9a3d04b715b101ef6b54d146fcba919e/4e658/james-stewart.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/9a3d04b715b101ef6b54d146fcba919e/46322/james-stewart.jpg 48w,\n/static/9a3d04b715b101ef6b54d146fcba919e/aec58/james-stewart.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/9a3d04b715b101ef6b54d146fcba919e/5bae1/james-stewart.avif 40w,\n/static/9a3d04b715b101ef6b54d146fcba919e/d60a5/james-stewart.avif 80w,\n/static/9a3d04b715b101ef6b54d146fcba919e/2a394/james-stewart.avif 160w,\n/static/9a3d04b715b101ef6b54d146fcba919e/0aca1/james-stewart.avif 320w",
+                      "/static/9a3d04b715b101ef6b54d146fcba919e/1da62/james-stewart.avif 48w,\n/static/9a3d04b715b101ef6b54d146fcba919e/9b476/james-stewart.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -560,79 +476,92 @@ export const data = {
       {
         name: "John Wayne",
         slug: "john-wayne",
-        entityType: "performer" as const,
         titleCount: 146,
-        reviewCount: 13,
+        reviewCount: 16,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzElEQVQ4y11U2Su1bxQ9f4QbuTAnJGMKdyQyiwtCMrsgSVwomSKhzJmSKTInykxmySEZMmWeh2M6Du7W19of38/Pqd37vO95nrXX3mvtR3F8fIyTkxOcnp7i/PwcFxcXuLy8xNXVFa6vr3F7e/sv7u7ucH9/j4eHB6geH/H4FU9PTxLPz89QHB0dCeDZ2ZnET0DG5uYmtra25D8mIBhBVL+AGC8vL1CQIeObIQ/ySUZLS0uYmprC3t4eDg4OsLOzg+3tbQEmEIEJ9BNUAAlCljzIsriR3yYmJuQbk7GS3d1drK2tQalUSiXfYP8DJBCjoKAA8fHxKC8vx/DwMIaGhjAwMIDFxUWsrq5iY2NDwBkrKysC/PSLnZTM0ubn5xEYGAh/f394e3vDy8tL3mNjY5GYmIjU1FQUFRWhp6cH4+PjGBkZEZbqtzc8/mbIJs/OziI8PBwhISFwcXGBtbU1HB0dYWVlBTMzM5ibm8s6ICAAGRkZqKqqQltbG+bm5qBSqQToG1hBGxweHiI5OVlACeTp6Ymamhp0d3ejq6sL9fX1KCwshJ+fHxwcHBAXF4e8vDyUlJSgr69PlP8WSUp+fX1Ff38/wsLC4O7ujsjISAwODkrv9vf3RSDuU66uSktMTU0RHByM9PR05OfnY3R0FK9qtbCVkrlgQ1taWuDj44OoqCg0NDSIymzH5OQkFhYWsLy8jLKyMtjb28PV1RUxMTHSXzKl1aSHBGNQMY1GI8pGREQgLS0NlZWVwpwHKioqpLzm5mZUV1cjNDRUKiJgVlaWeFlUJtjP8eGPKhYXF6OxsRFjY2OYmZkRAWgXWmpFqRRANzc3YdnW3o7nl5e/Jf8cI67Jkgbu6OgQNTkt9ByDpff29qK0tBQeHh4iIoX7JiSAUjKH/Ishad/c3IiqmZmZ6OzslF5OT09L+UzEtqyvr4u6mvd3ed5/XRz/RPkGZbb393cRJTo6WkQgKyrJ6eGaveW5j48PqNVqfH5+yprn/gNUqWTTg0olf9Iuubm5UvbY+Lj0sb29XXrIvtXW1ooQNDitwydbIsbmhUBAZnrTaOTaIqCvr6+oS5HItK6uTsqmZSwsLJCQkICcnBw4OztDX19f/Klgv2hslsqpoAe5gdOipaUFIyMj2NnZiaLZ2dmSxNLSUgA5VSyftnJycpKRVRCM5uXFYGBgIJmMjY3lcrC1tYWenh50dXXlG8G1tbXlnaCc8aCgICk3KSnpL8PW1la5ALiJWW1sbOSdhuXUmJiYwNDQEDo6OgJCFtzHNfcSNCUlBU1NTULqDyjWs6Sl0kJ2AAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/3a67002b5a11844daf73b8866216a9b8/0e001/john-wayne.jpg",
+                  src: "/static/3a67002b5a11844daf73b8866216a9b8/46322/john-wayne.jpg",
                   srcSet:
-                    "/static/3a67002b5a11844daf73b8866216a9b8/5e3dc/john-wayne.jpg 40w,\n/static/3a67002b5a11844daf73b8866216a9b8/d18de/john-wayne.jpg 80w,\n/static/3a67002b5a11844daf73b8866216a9b8/0e001/john-wayne.jpg 160w,\n/static/3a67002b5a11844daf73b8866216a9b8/4e658/john-wayne.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/3a67002b5a11844daf73b8866216a9b8/46322/john-wayne.jpg 48w,\n/static/3a67002b5a11844daf73b8866216a9b8/aec58/john-wayne.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/3a67002b5a11844daf73b8866216a9b8/5bae1/john-wayne.avif 40w,\n/static/3a67002b5a11844daf73b8866216a9b8/d60a5/john-wayne.avif 80w,\n/static/3a67002b5a11844daf73b8866216a9b8/2a394/john-wayne.avif 160w,\n/static/3a67002b5a11844daf73b8866216a9b8/0aca1/john-wayne.avif 320w",
+                      "/static/3a67002b5a11844daf73b8866216a9b8/1da62/john-wayne.avif 48w,\n/static/3a67002b5a11844daf73b8866216a9b8/9b476/john-wayne.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
       },
       {
         name: "Lee Marvin",
-        slug: null,
-        entityType: "performer" as const,
-        titleCount: 51,
-        reviewCount: 0,
-        avatar: null,
+        slug: "lee-marvin",
+        titleCount: 53,
+        reviewCount: 2,
+        avatar: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/e9c8270eed98d0492db5a646ef4d9973/46322/lee-marvin.jpg",
+                  srcSet:
+                    "/static/e9c8270eed98d0492db5a646ef4d9973/46322/lee-marvin.jpg 48w,\n/static/e9c8270eed98d0492db5a646ef4d9973/aec58/lee-marvin.jpg 96w",
+                  sizes: "48px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/e9c8270eed98d0492db5a646ef4d9973/1da62/lee-marvin.avif 48w,\n/static/e9c8270eed98d0492db5a646ef4d9973/9b476/lee-marvin.avif 96w",
+                    type: "image/avif",
+                    sizes: "48px",
+                  },
+                ],
+              },
+              width: 48,
+              height: 48,
+            },
+          },
+        },
       },
       {
         name: "Marilyn Monroe",
         slug: "marilyn-monroe",
-        entityType: "performer" as const,
         titleCount: 26,
         reviewCount: 1,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/klEQVQ4yzVUx0tfYRB8F0FExY6IsZeoF8WLWC8WFEUR9SAiRrArFnKwgSJiwYIlsfduLLH3XrH3RjAqRnPwj5gwCzks7/2+37ezs7OzT5mensbc3BxmZ2cxMDCAHz9+gGfz8/NYXl7GyMgIBgcHMTw8jOrqajQ2NqKqqgrfvn1DYWEh4uLikJycjMTERHz58gXK2NiYAE1NTaG7uxtDQ0P4+fMnZmZmsLq6Ks+lpSVsbW2hq6sL379/R01NjTzz8/MFMCkpSUAjIiKgkBGBxsfH0dbWhp6eHgE/OzvDw8MD/vz5g4+PDzw+PuL8/FyK1dfXo6GhAUVFRUhNTUVaWpo8BZAt9fb2ysXW1lYBPzw8FKD393dhyFZZqLa2Fjc3N9jb20N/fz9KSkqQlZUlgBkZGYiMjIQyOjoqIGy9paVF2vz9+zc2Njbk3d3dHT4+PqJbZWWl6MlCFxcXcj8vLw9fv35FZmYmoqKioFAzAk5OToLg9/f32NzclGE0NzejvLxcEslofX1dijw/P+Pv3784PT0VXQsKCpCbm4vY2FgoHR0dAsjWCMSJU0sW6uvrEy1fX19FgpeXF9zd3UnLx8fHwvTy8lIGQoYJCQlQmNze3i6Mnp6esLCwIFOnLerq6iSRwyHzq6srrK2tSVHah3cPDg4QFBQEKysrWFtbQ2ErZEPNTk5OpL2YmBjRhZGeni7/05vUizJQz/DwcFRUVIimHBZZRkdHQ+F0JyYmRMPt7W15+vv7w8PDA6GhoUhJSZHpUxKal0n0H99zcnLEbrQei1BLhZUJSLHJlqYNDg5GWFiYCE5daZW3tzd5Z5v0KQdQVlaG6+tryf8/QIUrxgu7u7toamqCm5sbjI2NRRcWub29lZbow1+/fslvvtPUBCcg89k6/apwrf6vV3FxMfz8/ODo6AgXFxfRiOdM5pBYlC2yNba4srIiZ/wO0HLUXyELTo1/8BIX3NvbW0C5/KxKwbOzs0USShQfHy8mpq24jouLi3JOdyicLlnwy0J/lZaWIiAgAM7OzggMDJQkakS7MLhiISEhMn22vr+/Lw5hPlkqdD8Pj46ORHwypV0sLS2hq6sLT09PkYJMCcLfvr6+MmEW2NnZkWCndIxCsM7OTrnMyXHCnz9/hrq6OtTU1KCioiKho6MDV1dX2Nvbi86cMLeEO03zU09aTqHP7OzsYGNjI6yMjIxgYGAAfX19aGpqCrCGhoaEqqoqtLS08OnTJ1hYWIje/IxREnZGHRVtbW2YmJjI6hDYwcEB5ubmMDQ0hJ6engARmPcYLMT7pqamEmTs5eUl+0+3KNSJyQxeJFO2TKZMZpDVf0AGOzAzMxMCTk5OsLW1FTm4CP8ACJ8Or+7pvkwAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/16916056183678cf0ba1c2b15f594e49/0e001/marilyn-monroe.jpg",
+                  src: "/static/16916056183678cf0ba1c2b15f594e49/46322/marilyn-monroe.jpg",
                   srcSet:
-                    "/static/16916056183678cf0ba1c2b15f594e49/5e3dc/marilyn-monroe.jpg 40w,\n/static/16916056183678cf0ba1c2b15f594e49/d18de/marilyn-monroe.jpg 80w,\n/static/16916056183678cf0ba1c2b15f594e49/0e001/marilyn-monroe.jpg 160w,\n/static/16916056183678cf0ba1c2b15f594e49/4e658/marilyn-monroe.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/16916056183678cf0ba1c2b15f594e49/46322/marilyn-monroe.jpg 48w,\n/static/16916056183678cf0ba1c2b15f594e49/aec58/marilyn-monroe.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/16916056183678cf0ba1c2b15f594e49/5bae1/marilyn-monroe.avif 40w,\n/static/16916056183678cf0ba1c2b15f594e49/d60a5/marilyn-monroe.avif 80w,\n/static/16916056183678cf0ba1c2b15f594e49/2a394/marilyn-monroe.avif 160w,\n/static/16916056183678cf0ba1c2b15f594e49/0aca1/marilyn-monroe.avif 320w",
+                      "/static/16916056183678cf0ba1c2b15f594e49/1da62/marilyn-monroe.avif 48w,\n/static/16916056183678cf0ba1c2b15f594e49/9b476/marilyn-monroe.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -640,7 +569,6 @@ export const data = {
       {
         name: "Paul Newman",
         slug: null,
-        entityType: "performer" as const,
         titleCount: 57,
         reviewCount: 0,
         avatar: null,
@@ -648,35 +576,30 @@ export const data = {
       {
         name: "Peter Cushing",
         slug: "peter-cushing",
-        entityType: "performer" as const,
-        titleCount: 88,
-        reviewCount: 7,
+        titleCount: 95,
+        reviewCount: 9,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADwklEQVQ4y21USSj1URy9kZJSNqzsZKFkoViwkXqSeLKzILKxYEeSkhdFUViY53nMkHnOPD/zPGR+5lkoeufr/L7e+zbfrdv//d+9/3PP75zzu2p7extbW1tYX1/HysoKFhYWMDs7i83NTdTX10Or1SI8PBw5OTno6enB/v4+3t7ecHNzg7u7Ozw+PuL+/l6ez8/PUMfHxzg8PMTOzg42Njag1+vld0ZGBmxtbaGUMk8rKyu4uLigqKgIHAR+enrCy8uLTL6ri4sLnJ2d4ejoCHt7ezg5OUFzczMsLS0FxMLCAtbW1rCxsYG9vT3s7Ozkv+joaBgMBnx+fgrY6+vrX0BS58L5+TkuLy+FbXBwsHzk7OwsAAR3dHSEl5cXUlNT4enpKYeFhobi+/tbgAj4/v4O9fDwIBpcX1/j4+MDDQ0NsplgSUlJKCkpQUxMDLKystDf3y/6lpeXw8HBQVhPTEzAaDT+AyRdiknQr68vFBcXCyBZVFRUiEmUglVQjunpaTFHo9GIFH19faInAUlI8QcnQSnw7e0tXF1d4e3tjfb2dszNzYFJoLsEZhK6u7sRFBQkB4+MjPwfkExZ/s/PD6KiouDr64uOjg6JDwFNoIzX+Pi4rBNwfn5eviEh4igTGNkRkK7V1tbCz88PsbGxyM7OFiCWSu343tvbK/rGxcVJOigXK+PTrCHBGFS+T01NIT4+Hk1NTRLoxsZGLC8vo7OzE/n5+bLe1taGgYEB7O7uymQFlMTsMk+4uroS8VkGw8ug5+Xlobq62vwB40UdW1tbZR9dHhoakgQMDw9DEYhZZMDpIruEk0DcQIY0geAHBwcyx8bGUFdXJ6WzPWtqamTyEEVWp6enogV7miaYANPS0pCZmWkujesE7urqEmPIrLS0FFVVVSLP4OAgFFkRjBolJibKTE5ORnp6OnQ6nZhA7WjK5OSkBJuArGxxcREtLS2SS5a+trYGRQepS25uLpycnCSD7u7usonMqCXZUC8eSlZkyu5gNSyTkqyurkrrKpZC0JSUFPj4+MDNzQ1lZWXiOENNtnTVFJ2lpSVJBAHZ9zyAHUXWrFYY0jXmKiIiAoGBgSIBP2IeIyMjJX8EIzANZFY5qCd7nYDcy65RvLpGR0cREhKCgoICBAQEyGXw+/srp1InVkF3CWpqNQ5KUVhYKI5XVlZKNhXZsFz2JvVISEiAh4eH9DGBKDTzR+d5UVA33iocMzMzEno6bIqOYpYI5u/vLwxZQlhYmGhHOQhAUDrNJ294msXB252B5jvXCf4HXwTLhXVrJjUAAAAASUVORK5CYII=",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/1fcd3f8f7ecd00d2b869761c641e8d5f/0e001/peter-cushing.jpg",
+                  src: "/static/1fcd3f8f7ecd00d2b869761c641e8d5f/46322/peter-cushing.jpg",
                   srcSet:
-                    "/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5e3dc/peter-cushing.jpg 40w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/d18de/peter-cushing.jpg 80w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/0e001/peter-cushing.jpg 160w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/4e658/peter-cushing.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/1fcd3f8f7ecd00d2b869761c641e8d5f/46322/peter-cushing.jpg 48w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/aec58/peter-cushing.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/1fcd3f8f7ecd00d2b869761c641e8d5f/5bae1/peter-cushing.avif 40w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/d60a5/peter-cushing.avif 80w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/2a394/peter-cushing.avif 160w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/0aca1/peter-cushing.avif 320w",
+                      "/static/1fcd3f8f7ecd00d2b869761c641e8d5f/1da62/peter-cushing.avif 48w,\n/static/1fcd3f8f7ecd00d2b869761c641e8d5f/9b476/peter-cushing.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -684,35 +607,30 @@ export const data = {
       {
         name: "Robert Mitchum",
         slug: "robert-mitchum",
-        entityType: "performer" as const,
-        titleCount: 107,
-        reviewCount: 5,
+        titleCount: 113,
+        reviewCount: 7,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5UlEQVQ4y01UVUttWxhdf8CfcPBJfPFBMRBfRH0SFQsFEQMEMUGwEwu7u46Bndii2M2xUQxsxUDFbtRxGN9l33s3THasuccc9U0lMTERxcXFaG1txdjYGNbX13F4eIibmxt8fX3h5+cHLy8v+Pj4gOr1+vqK+/t7Wdx3cXGBo6Mj7OzsQCkoKEBHRwfm5uawv7+Pq6srPD8/4+zsDPn5+YiMjERERISs0NBQVFRU4Pj4WA57eHjA4+Mjbm9vcXl5iZOTEyhtbW1YWFiQL3xAJvxDdXU19PX1YWBgAGtrazg5OcHKygpaWlowNTXF2toavr+/BZRLBapMTU0JGOlTGjcNDg4iMDAQ3t7esLe3F0BLS0v5TFBtbW04Ojpid3dXCKjkX19fQ9na2hJ0+vL29iYe5eTkQFdXF2ZmZlBTU4O6ujp0dHRgbm6OqKgouLu7Q1NTUw4kCcq+u7v7B5Dy+AMBPz8/8f7+Dl9fXzg4OCAkJETAU1NTxefl5WVMT09jYGAArq6usLOzQ09Pj6giKfqvMKGnpycBZKKU7+zsjJSUFGRnZ2NoaEg8npiYwJ8/f7CysiK/0WN/f3/4+PgIEaYtHqpSJSBfTNrPz09S/f37N8bHxzE/Pw96PTs7i76+PmHV2dkJQ0ND8ZoMCXZ6evofIP3jA3oRHByM+Ph4uLm5ISwsDCMjI5icnBTWycnJIr++vh6/fv0CW0KbaB1DUoj8f8n83tTUJJ2ztbWV6mRkZGBxcVHeY2NjpYstLS0ieXNzU4rNUnOPwqkgK7LkSWRKOUlJSQKQkJCAmJgYmSDKLSsrE/mcrMrKSrGIoLSjv78fCjeen59Lj5g2WTJJJl1XVycJsyqrq6sSyPb2NkZHR0UFveVvw8PDaG9vlwMUPtzY2BBD2SNVp6KjoyXBtLQ0Aa+qqpI/ckS7u7tRXl4ugTEg+llUVCQeK83NzTIZPI3U9/b2hC27xi4GBARI6nl5eWJFb2+vyOWij6WlpcjMzERcXBzCw8OhlJSUoLa2VpKjR+wYPSJzT09PGTUXFxekp6dLySm1oaFBnnd1dUn5qSYoKEhCUrgxKytLGDA91oDmzszMSDA2NjYSSk1NjRhPVpS7tLQk3jMkWsNx9PDwgMLNTJMbKZ2Lk0FQMuHU8HSC8FD2kqp4vanuRQbGIaAiJTc3V+g3NjZKUvSU/hC4sLBQJHMiNDQ0YGJiAi8vL/GXlwLD4wyrLuCDgwMolEEwnk5/OKOUQUlMV09P719AymeSLD/bwPnlpLEd/EzGCmOnd0yLPVKFxH7xUjU2NoaFhQWMjIzkTqS3qluaE0JwLgKT8V9jE8O994ZyqwAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/0b4eb23cfd82b7671a5a476b4369d80d/0e001/robert-mitchum.jpg",
+                  src: "/static/0b4eb23cfd82b7671a5a476b4369d80d/46322/robert-mitchum.jpg",
                   srcSet:
-                    "/static/0b4eb23cfd82b7671a5a476b4369d80d/5e3dc/robert-mitchum.jpg 40w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/d18de/robert-mitchum.jpg 80w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/0e001/robert-mitchum.jpg 160w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/4e658/robert-mitchum.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/0b4eb23cfd82b7671a5a476b4369d80d/46322/robert-mitchum.jpg 48w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/aec58/robert-mitchum.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/0b4eb23cfd82b7671a5a476b4369d80d/5bae1/robert-mitchum.avif 40w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/d60a5/robert-mitchum.avif 80w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/2a394/robert-mitchum.avif 160w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/0aca1/robert-mitchum.avif 320w",
+                      "/static/0b4eb23cfd82b7671a5a476b4369d80d/1da62/robert-mitchum.avif 48w,\n/static/0b4eb23cfd82b7671a5a476b4369d80d/9b476/robert-mitchum.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -720,59 +638,68 @@ export const data = {
       {
         name: "Sean Connery",
         slug: null,
-        entityType: "performer" as const,
-        titleCount: 68,
+        titleCount: 69,
         reviewCount: 0,
         avatar: null,
       },
       {
         name: "Steve McQueen",
-        slug: null,
-        entityType: "performer" as const,
+        slug: "steve-mcqueen",
         titleCount: 27,
-        reviewCount: 0,
-        avatar: null,
-      },
-      {
-        name: "Tom Atkins",
-        slug: null,
-        entityType: "performer" as const,
-        titleCount: 26,
-        reviewCount: 0,
-        avatar: null,
-      },
-      {
-        name: "Vincent Price",
-        slug: "vincent-price",
-        entityType: "performer" as const,
-        titleCount: 98,
-        reviewCount: 3,
+        reviewCount: 1,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD7klEQVQ4y1VUN0ilWxi8arFGBHFZEwiGSgQLCwXFwoCFiriimNMa14w5u4oiKmpjBiPmiAERcygUMYAZxYQJAxYLlvOY7+F9vOJw/597/jnzzcwZhYaGBkJDQ7G4uIiTkxMcHx9ja2tL3oeHh9Ha2orR0VHMzc1hZmYGIyMjGBgYkN/BwUEMDQ0pF98V+vr6SEpKEpCNjQ20t7ejpqYGvr6+sLCwgJmZGVxdXVFbW4v4+HiUlZWhpaVF9o2NjQkID/4CVZiYmCArKws7OzsoLS2Fv78/nJ2doaenB3NzcwG0t7eHh4cHdHV1YWpqCkNDQzmQTL+YKQGNjIxQWFiI9fV1FBcXy7Ofnx+sra1hZ2eHX79+ITo6Wg6ysrKCQqGAqqoqOBn/m5qaEmCCysg/fvyQMVZWVpCRkSHPXGlpabKxp6cHlZWVyM3NhZOTE9TV1UHdCaytrS3yTExMKFkqSL+6ulo+Jrv7+3vc3d3h8vJSdO3u7kZ9fb3IQoaamprQ0tKCmpqagMbExGB6elq+p5YKAwMDVFVViZMU+/PzEx8fHwK6u7srm+vq6oRhZGSkGEWgr/Xz509x/0tP5cirq6vo6+vD379/8f7+jre3N3GduiYnJyMzMxP5+fniNEf+/v073N3dhfn4+Ph/gPyjoKAAe3t7wvLh4QHPz884PT1Feno6HBwc5KPw8HCkpqYiJycHlpaWCAsLk+c/f/4o4yOmMB78gAC3t7doa2sTFjQpJSVFRu3q6kJ2drZkkSw5Jh329vZGSUmJMFQC6ujoyMmHh4d4fX3F5uam0OdveXk5ent7MT8/Lzo1NzfL6ImJiYiNjUVISIhIQobKkb99+4a4uDgcHBzg5eVFQJ+ennB0dCSn0xBqyavGNHDMhIQEWXSYjP+noYqKCgIDA7G9vS2A1JBrf39f9AkICEBTU5MwrKioQF5enkxETYODg2UPc9jf3/8vIK2nWwsLC8Ls8fER5+fncnOopZubG37//i0BJ0MCUluOy1KhtiwSZTkQ0MbGRijTFIJeXFyIKcwlPyAb6tnQ0CAmRUVFISgoSKSingw/Q83MCqCxsbFsPjs7E8Cbmxusra3JRgISpKOjQ5lJgjHkvOOMHLWmtiQlgAwq7y6dJUteP7rOE2dnZzE5OSmRIQj15mJs6DSnIKiPj4/kVkwhKAPc2dkpbhOUY9MousvRWF+enp6SQYaa7cO6I3P2qYuLi5ikYBURkJeeWhGA3UjAq6srLC0tSbCLiopga2srJrFwIyIipIXY6F5eXnB0dJSMKtgaXyzZjawwXkOOTS3JlrG4vr7G8vKyjMsa4+1idTU2NkpK2AfU8B+25vDltcn0awAAAABJRU5ErkJggg==",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/ae0042e83006f5fd435b56ee612d38d8/0e001/vincent-price.jpg",
+                  src: "/static/34664c47e46af49303803ebd7f687657/46322/steve-mcqueen.jpg",
                   srcSet:
-                    "/static/ae0042e83006f5fd435b56ee612d38d8/5e3dc/vincent-price.jpg 40w,\n/static/ae0042e83006f5fd435b56ee612d38d8/d18de/vincent-price.jpg 80w,\n/static/ae0042e83006f5fd435b56ee612d38d8/0e001/vincent-price.jpg 160w,\n/static/ae0042e83006f5fd435b56ee612d38d8/4e658/vincent-price.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/34664c47e46af49303803ebd7f687657/46322/steve-mcqueen.jpg 48w,\n/static/34664c47e46af49303803ebd7f687657/aec58/steve-mcqueen.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/ae0042e83006f5fd435b56ee612d38d8/5bae1/vincent-price.avif 40w,\n/static/ae0042e83006f5fd435b56ee612d38d8/d60a5/vincent-price.avif 80w,\n/static/ae0042e83006f5fd435b56ee612d38d8/2a394/vincent-price.avif 160w,\n/static/ae0042e83006f5fd435b56ee612d38d8/0aca1/vincent-price.avif 320w",
+                      "/static/34664c47e46af49303803ebd7f687657/1da62/steve-mcqueen.avif 48w,\n/static/34664c47e46af49303803ebd7f687657/9b476/steve-mcqueen.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
+            },
+          },
+        },
+      },
+      {
+        name: "Vincent Price",
+        slug: "vincent-price",
+        titleCount: 109,
+        reviewCount: 3,
+        avatar: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ae0042e83006f5fd435b56ee612d38d8/46322/vincent-price.jpg",
+                  srcSet:
+                    "/static/ae0042e83006f5fd435b56ee612d38d8/46322/vincent-price.jpg 48w,\n/static/ae0042e83006f5fd435b56ee612d38d8/aec58/vincent-price.jpg 96w",
+                  sizes: "48px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ae0042e83006f5fd435b56ee612d38d8/1da62/vincent-price.avif 48w,\n/static/ae0042e83006f5fd435b56ee612d38d8/9b476/vincent-price.avif 96w",
+                    type: "image/avif",
+                    sizes: "48px",
+                  },
+                ],
+              },
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -780,35 +707,30 @@ export const data = {
       {
         name: "Warren Oates",
         slug: "warren-oates",
-        entityType: "performer" as const,
-        titleCount: 41,
+        titleCount: 49,
         reviewCount: 5,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEPklEQVQ4yz1Vayiefxh+TJlhzoc5hxybkTnMsab4oG2OjWyYMLS1ZLE5pCxhWGpSy1jYmJWZQ0waTdrIinyQmLNhcxoj+bBc67rr///we3/P8z7vc/2u67qv+36V5eVlTE9PY2pqCn19fUhISMD169fh5+cHLy8veHh4wN/fHxcvXoS9vT1u3ryJt2/fYm1tDQcHB/j16xc2NjZk39/fh7K0tIT5+Xm0t7fjxo0b0NTUhIWFBWxsbKCnpwdTU1M4OTkhMDBQDnB0dIS3tzeamppwenqKP3/+YG9vDzs7O7IL4OLiIu7fvw8HBwecP38eGhoa0NLSkmtdXV3o6+vDyMgIzs7OsLOzk2chISHC7OTkRJgRcHt7G8r6+jqGh4fh6uoqjMiAsjw9PXHu3DmoqqpCTU1NFg8wMDCAtrY2jI2NUVJSgsPDQ2H58+dPka3w4sWLF/JDMsnPz8fXr18xODiIZ8+eIT4+HmFhYbh27ZrIjo6OxuXLl6Guri779+/fcXx8jM3NTWxtbUH58eMHCgoKhB1Nr6+vx8DAAEZHR/Ht2zeMj4+jq6sLLS0teP78ORobG5GYmCheX7hwQQr59+9fkU9yCi9ycnJEhrW1NSoqKvD69WvU1taitbUV79+/F0Au3jc3NyM8PFysIOOVlRX8/v0btI7rfw9ZOYLeu3dP2HR2dqK/v192gpHxxMQEPn/+jJSUFKioqIjPX758ESDGj2qVhYUF0V5eXo4zZ87g1q1bIrmhoQFVVVXyfXFxMfLy8vDo0SMpBFkyQr6+vhgZGZHYzc3NSVoUfhD5zZs3MDExQVZWlsim4VwMenp6Otzd3SUJsbGxYgcPSE1NFckEnJ2dlV0hVS6eEBkZKQUqLCxEREQEfHx8cPv2bemM7Oxs5ObmSmFoCQl8+PBBosKu4fsElSqvrq5id3cXvb29IvHjx48oLS2VCBFscnJSFq349OkTenp6ZOe7tIvVpXUimScwQ3zIBzT53bt34hP37u5ukcUXWGV+x4MJyC5jqMmQYLyXKpMqb8iUwP9F5NWrV1KcJ0+eoLKyEm1tbSgqKkJdXZ2wpI9kTVD6JwwZBYZ3ZmZGvOQBjEZNTY3IZ4wY+EuXLomfLMrTp08FtKysDLa2tujo6JDBwOmjkPrY2BiGhoZQXV2N5ORkKQxf4vS5evWqBJktSE8JQsYcJi9fvoSZmZl0WUxMjJBQjo6OJNhxcXGwsrKS6LBz7t69Kztzl5GRgTt37kihyIzD4/Hjx3LN7jp79qwEnTlWGBX2JCeLubk5DA0NRSajw6FAzx4+fIikpCSxgMDMJtVkZmYKO44z7jo6OlD4wVHEQcrFqUOZZEP5QUFBMvtCQ0MRHBws+UxLSxM/ee/i4iKDgjicnYqlpaUwJBj9IMMHDx4II7YhFbBj3NzccOXKFfk74FAICAiQsEdFRYk6EiHDf0c98LIuengBAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/29ccd2210444f8a634e3e713904b1493/0e001/warren-oates.jpg",
+                  src: "/static/29ccd2210444f8a634e3e713904b1493/46322/warren-oates.jpg",
                   srcSet:
-                    "/static/29ccd2210444f8a634e3e713904b1493/5e3dc/warren-oates.jpg 40w,\n/static/29ccd2210444f8a634e3e713904b1493/d18de/warren-oates.jpg 80w,\n/static/29ccd2210444f8a634e3e713904b1493/0e001/warren-oates.jpg 160w,\n/static/29ccd2210444f8a634e3e713904b1493/4e658/warren-oates.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/29ccd2210444f8a634e3e713904b1493/46322/warren-oates.jpg 48w,\n/static/29ccd2210444f8a634e3e713904b1493/aec58/warren-oates.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/29ccd2210444f8a634e3e713904b1493/5bae1/warren-oates.avif 40w,\n/static/29ccd2210444f8a634e3e713904b1493/d60a5/warren-oates.avif 80w,\n/static/29ccd2210444f8a634e3e713904b1493/2a394/warren-oates.avif 160w,\n/static/29ccd2210444f8a634e3e713904b1493/0aca1/warren-oates.avif 320w",
+                      "/static/29ccd2210444f8a634e3e713904b1493/1da62/warren-oates.avif 48w,\n/static/29ccd2210444f8a634e3e713904b1493/9b476/warren-oates.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -816,35 +738,30 @@ export const data = {
       {
         name: "William Holden",
         slug: "william-holden",
-        entityType: "performer" as const,
         titleCount: 69,
-        reviewCount: 5,
+        reviewCount: 6,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/0lEQVQ4yz1UaSugYRR9/4QyxQdpEh9IyDb2pLF8kyK77IbJPsi+L9NMdrKPfRlmsRtJ9sgHjOyRlC2GBkNzpnPLvHV73uU+5zn3nnNfxdXVFW5ubvDw8ICXlxe8vb3h6+uL0NBQBAcHw9/fHz4+PrIGBgYiJCQEQUFB/+/DwsL+B/coz0AECQgIkMSoqCg4OTnB2NgYZmZmsLe3h7u7uwB7enoKUGRkpMTbt28RHR0tK/cpfn5+cmJ4eDgiIiKQmJgIZ2dnvHz5EiYmJjA3N4ejoyNcXFwE1MbGBq9evRKAlJQUJCUlyfru3TskJCRAIVV+jI2NRXp6uoCrq6tDW1sbBgYGsplg1tbWwpRBUEZRURFyc3ORn5+PnJwcZGVlQSFQcnIyMjIy8PHjRylTRUUFGhoa0NXVhampKfT19aGnpyfM2RIHBweoqakhNTUV1dXVKC0tleB+hXSzs7Pl4f3799DR0ZFkgllaWopYPLm8vBx9fX1ob2+Xd6qqqrLy3adPnySampqgkO6HDx9QX1+PsrIyAaTSBOjq6sLa2hrOzs6wubmJiYkJ9Pb2Ii0tDZqamlL2jx8/MDQ0hO/fv+PLly9Qqqqq0NDQgJ6eHnR3d8PIyEgE4sb5+XkBOjg4wPr6umzkezJ+8eKFqL21tYXFxUWJ2dlZKB0dHRgYGMDo6CgWFhZEUSY2NzdjampKGP78+VM28pm5FRUV0NLSQkxMDLa3t3F4eIi9vT3JUQg0MzOD5eVl7O/vi89oYpY7NjYmDAk6OTmJtrY2tLS0SGuo9ps3b7Czs4Nfv37h/PxcWqMsLS1hY2NDPlxdXYk4r1+/Rnx8vPiK6o2MjPz3G91QUFAgQ/D582dcXl7i7u4Ot7e3EgrByOz4+Bg3NzdYWVmRkykWlWNL2PivX79K04eHh4U9x2xubk7AHh4ecH9/L/fK7u6ugJ2enuL6+hoXFxcoLCwUkdhoqkfAwcFBKZ1RXFwsLmD+4+Mj/vz5I0Fg5ejoSEDI7vfv3+C1uroqnpyenhZv0S40MA9gLzkMrIQXmRH0OZSTkxMQlGXTGmRA87JXZMeespe1tbVSNsvlzOfl5Un/eP39+1fi6ekJyrdv36RPra2tomBdXZ2UxGEnO95zpV8bGxslh/PO+SdrOoQtY/ksW6FReSpN3dnZKf6rrKwU+7BPFIbsuPJwjilnmj+Smpoa2UO1aTG2ROEsEowsuZINmVBFCwsLGUmKMj4+Lsrb2dmJZUpKSsTg/f39AkjR6GmFD8/saFyOIUHZv7i4ONja2sqPlfNtZWUl71gFGTOXNmLus60UghCMoOwjy+c7JlJ5lmtoaCj/xszMTHEAZ5o5tBZZ0QU0P9n+A/48ULhyTT6kAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/604e3bf5654923e342d5a00a68694ffc/0e001/william-holden.jpg",
+                  src: "/static/604e3bf5654923e342d5a00a68694ffc/46322/william-holden.jpg",
                   srcSet:
-                    "/static/604e3bf5654923e342d5a00a68694ffc/5e3dc/william-holden.jpg 40w,\n/static/604e3bf5654923e342d5a00a68694ffc/d18de/william-holden.jpg 80w,\n/static/604e3bf5654923e342d5a00a68694ffc/0e001/william-holden.jpg 160w,\n/static/604e3bf5654923e342d5a00a68694ffc/4e658/william-holden.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/604e3bf5654923e342d5a00a68694ffc/46322/william-holden.jpg 48w,\n/static/604e3bf5654923e342d5a00a68694ffc/aec58/william-holden.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/604e3bf5654923e342d5a00a68694ffc/5bae1/william-holden.avif 40w,\n/static/604e3bf5654923e342d5a00a68694ffc/d60a5/william-holden.avif 80w,\n/static/604e3bf5654923e342d5a00a68694ffc/2a394/william-holden.avif 160w,\n/static/604e3bf5654923e342d5a00a68694ffc/0aca1/william-holden.avif 320w",
+                      "/static/604e3bf5654923e342d5a00a68694ffc/1da62/william-holden.avif 48w,\n/static/604e3bf5654923e342d5a00a68694ffc/9b476/william-holden.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
@@ -852,35 +769,30 @@ export const data = {
       {
         name: "William Powell",
         slug: "william-powell",
-        entityType: "performer" as const,
         titleCount: 60,
-        reviewCount: 17,
+        reviewCount: 27,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEC0lEQVQ4y01Vayiefxh+wqw55qMoojl99EFO5Xy2GoWS08hxTpHDJsdQEpMmPqz4gDFFlBabLccws0XE5HxIQ8z5tK5/173e/ffW3e/teX739V73dV/3/SozMzMYGRnBp0+fMDQ0hM+fP+PDhw/4+PGjPOvr60NXVxe6u7vx9u1bVFRUIC4uDqGhoYiKipLT29sbDg4OsLW1hbKwsIDv37+DwIwvX75gfX0dnZ2dCAkJQXp6OoqLi1FeXo7CwkKUlJSgtLQU4eHhiIyMRFhYmAA6OzvDzs4OyubmJtbW1rC4uIj5+XkBI1MLCwsYGBjIaWJiImdWVtZfRvyRjIwMPHv2DAEBAXBycvoD+PPnT+zt7QnQ6uoqdnZ24O7ujocPH0pSbW2tgPj5+eHly5cwMzODoijIyclBUVERYmJi8OTJE8khqHJ8fIyDgwPs7u7i8PAQs7OzMDc3R0REBHp7ezE+Po7JyUm8e/cOlZWVwk5DQ0PkYOks++nTp8KS75TT01MQ9OjoSM6VlRX4+Pjg+fPn6O/vx9TUlGhLTck4ODhY2EdHR+P169dISUmR5lDLwMBAKOfn5yAo4+TkROLFixeorq6WBHZ3YGBAOswSWRq1zc/PR11dnTQtMTHxf8CLiwuo4vr6WhrU2NiI1tZWxMbGwsvLCwUFBcjNzYWNjQ2MjY1hZGQkDbCyssLjx4/FLm5ubvD394dyeXkJVRCQTaJ29B9LzMzMxJs3b5CUlCQ60W+WlpbQ1dWFpqYmHjx4ADU1NdGVzxSCMK6urv6CLi0t4f379+jp6RFTt7W1SWnUKi8vD9bW1tDX14eenh50dHSgpaUluqqrq0O5vb2FKlSg1HNiYkJ0Gx4eRktLCxISEqSLZGxoaCjsVKDa2toSjx49gnJ/f4+7uzsBvLm5EcDfv3+L0QnU3NyM7OxsmJqaisHj4+PFMvxOUJZLhgRmCOC/QXa/fv3CxsaGgLGbbA71s7e3l+bQGdvb2/Lew8PjD5Ci/Aky+xeQl/f392V6mpqaxBoNDQ1IS0uDp6cnampqRBrOPy1GzWn89vZ2mXWFL1VNYck8aXLOOGea88vtQo+5uLjg1atXskAoCQFZEfNUH7ENWZ2dnYkX+Z3suIVY9ujoKFJTU+Hr64vk5GTRjw4gmOo+J4xBqRRahKxU2nGeuSi+fv0qYGTCMrkbOzo6pHwuEM4/SRCQ4AScm5uDUlVVJSBkyhcUm2Cc4cHBQZnnoKAgMfu3b99keWxtbckAMI8kCMqc+vp6KFyUvMwSyYyMyIZbhgDsKvVjmdPT07LJ+Xx5eVkWCRvIPI4rySmOjo6y5zgRZMUk/g0Q8MePH7KpXV1dUVZWhrGxMblDKWh4dpp3KQW3E+X4D3G8X8r7QJFKAAAAAElFTkSuQmCC",
-              },
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/058955be5ff44df7f43a57a4d2723e6e/0e001/william-powell.jpg",
+                  src: "/static/058955be5ff44df7f43a57a4d2723e6e/46322/william-powell.jpg",
                   srcSet:
-                    "/static/058955be5ff44df7f43a57a4d2723e6e/5e3dc/william-powell.jpg 40w,\n/static/058955be5ff44df7f43a57a4d2723e6e/d18de/william-powell.jpg 80w,\n/static/058955be5ff44df7f43a57a4d2723e6e/0e001/william-powell.jpg 160w,\n/static/058955be5ff44df7f43a57a4d2723e6e/4e658/william-powell.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/058955be5ff44df7f43a57a4d2723e6e/46322/william-powell.jpg 48w,\n/static/058955be5ff44df7f43a57a4d2723e6e/aec58/william-powell.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/058955be5ff44df7f43a57a4d2723e6e/5bae1/william-powell.avif 40w,\n/static/058955be5ff44df7f43a57a4d2723e6e/d60a5/william-powell.avif 80w,\n/static/058955be5ff44df7f43a57a4d2723e6e/2a394/william-powell.avif 160w,\n/static/058955be5ff44df7f43a57a4d2723e6e/0aca1/william-powell.avif 320w",
+                      "/static/058955be5ff44df7f43a57a4d2723e6e/1da62/william-powell.avif 48w,\n/static/058955be5ff44df7f43a57a4d2723e6e/9b476/william-powell.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },

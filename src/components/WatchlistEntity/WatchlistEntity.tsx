@@ -6,6 +6,8 @@ import { Header } from "./Header";
 import { List } from "./List";
 import { initState, reducer } from "./WatchlistEntity.reducer";
 
+type EntityType = "director" | "performer" | "writer" | "collection";
+
 export function WatchlistEntity({
   entity,
   entityType,
@@ -14,7 +16,7 @@ export function WatchlistEntity({
   breadcrumb,
 }: {
   entity: Queries.WatchlistEntityFragment;
-  entityType: string;
+  entityType: EntityType;
   distinctReleaseYears: readonly string[];
   tagline: string;
   breadcrumb: string;

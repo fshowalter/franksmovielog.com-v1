@@ -14,6 +14,7 @@ export const data = {
       "1939",
       "1940",
       "1941",
+      "1944",
       "1945",
       "1946",
       "1947",
@@ -37,7 +38,6 @@ export const data = {
   },
   director: {
     name: "John Ford",
-    entityType: "director" as const,
     reviewCount: 12,
     avatar: {
       childImageSharp: {
@@ -68,16 +68,16 @@ export const data = {
         },
       },
     },
-    watchlistMovies: [
+    titles: [
       {
         imdbId: "tt0019699",
         title: "The Black Watch",
-        year: 1929,
+        year: "1929",
         grade: "F",
         gradeValue: 1,
         slug: "the-black-watch-1929",
-        sortTitle: "Black Watch (1929)",
-        releaseDate: "1929-05-08",
+        sortTitle: "Black Watch, The",
+        yearAndImdbId: "1929tt0019699",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -107,12 +107,12 @@ export const data = {
       {
         imdbId: "tt0020359",
         title: "Salute",
-        year: 1929,
+        year: "1929",
         grade: "D+",
         gradeValue: 4,
         slug: "salute-1929",
-        sortTitle: "Salute (1929)",
-        releaseDate: "1929-09-01",
+        sortTitle: "Salute",
+        yearAndImdbId: "1929tt0020359",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -140,49 +140,14 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0021140",
-        title: "Men Without Women",
-        year: 1930,
-        grade: "C+",
-        gradeValue: 7,
-        slug: "men-without-women-1930",
-        sortTitle: "Men Without Women (1930)",
-        releaseDate: "1930-01-31",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg",
-                  srcSet:
-                    "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/a7533/men-without-women-1930.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/dbc56d5f031a66a9333f79c3d27e214f/b5dba/men-without-women-1930.avif 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/ab5a1/men-without-women-1930.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
         imdbId: "tt0020702",
         title: "Born Reckless",
-        year: 1930,
+        year: "1930",
         grade: "D+",
         gradeValue: 4,
         slug: "born-reckless-1930",
-        sortTitle: "Born Reckless (1930)",
-        releaseDate: "1930-05-11",
+        sortTitle: "Born Reckless",
+        yearAndImdbId: "1930tt0020702",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -210,14 +175,49 @@ export const data = {
         },
       },
       {
+        imdbId: "tt0021140",
+        title: "Men Without Women",
+        year: "1930",
+        grade: "C+",
+        gradeValue: 7,
+        slug: "men-without-women-1930",
+        sortTitle: "Men Without Women",
+        yearAndImdbId: "1930tt0021140",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg",
+                  srcSet:
+                    "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/a7533/men-without-women-1930.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/dbc56d5f031a66a9333f79c3d27e214f/b5dba/men-without-women-1930.avif 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/ab5a1/men-without-women-1930.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
         imdbId: "tt0021508",
         title: "Up the River",
-        year: 1930,
+        year: "1930",
         grade: "B-",
         gradeValue: 8,
         slug: "up-the-river-1930",
-        sortTitle: "Up the River (1930)",
-        releaseDate: "1930-10-10",
+        sortTitle: "Up the River",
+        yearAndImdbId: "1930tt0021508",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -245,84 +245,14 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0022353",
-        title: "Seas Beneath",
-        year: 1931,
-        grade: "D+",
-        gradeValue: 4,
-        slug: "seas-beneath-1931",
-        sortTitle: "Seas Beneath (1931)",
-        releaseDate: "1931-01-30",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg",
-                  srcSet:
-                    "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/a7533/seas-beneath-1931.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/b69aa80c0559af9cdfa586657a7b9c95/b5dba/seas-beneath-1931.avif 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/ab5a1/seas-beneath-1931.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0021695",
-        title: "The Brat",
-        year: 1931,
-        grade: "D-",
-        gradeValue: 2,
-        slug: "the-brat-1931",
-        sortTitle: "Brat (1931)",
-        releaseDate: "1931-08-23",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg",
-                  srcSet:
-                    "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/a7533/the-brat-1931.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3b1ce9e29d651bdb030317c5aa03cc8f/b5dba/the-brat-1931.avif 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/ab5a1/the-brat-1931.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
         imdbId: "tt0021622",
         title: "Arrowsmith",
-        year: 1931,
+        year: "1931",
         grade: "D+",
         gradeValue: 4,
         slug: "arrowsmith-1931",
-        sortTitle: "Arrowsmith (1931)",
-        releaseDate: "1931-12-07",
+        sortTitle: "Arrowsmith",
+        yearAndImdbId: "1931tt0021622",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -350,14 +280,84 @@ export const data = {
         },
       },
       {
+        imdbId: "tt0021695",
+        title: "The Brat",
+        year: "1931",
+        grade: "D-",
+        gradeValue: 2,
+        slug: "the-brat-1931",
+        sortTitle: "Brat, The",
+        yearAndImdbId: "1931tt0021695",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg",
+                  srcSet:
+                    "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/a7533/the-brat-1931.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/3b1ce9e29d651bdb030317c5aa03cc8f/b5dba/the-brat-1931.avif 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/ab5a1/the-brat-1931.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0022353",
+        title: "The Seas Beneath",
+        year: "1931",
+        grade: "D+",
+        gradeValue: 4,
+        slug: "seas-beneath-1931",
+        sortTitle: "Seas Beneath, The",
+        yearAndImdbId: "1931tt0022353",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg",
+                  srcSet:
+                    "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/a7533/seas-beneath-1931.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/b69aa80c0559af9cdfa586657a7b9c95/b5dba/seas-beneath-1931.avif 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/ab5a1/seas-beneath-1931.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
         imdbId: "tt0022615",
         title: "Air Mail",
-        year: 1932,
+        year: "1932",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Air Mail (1932)",
-        releaseDate: "1932-11-03",
+        sortTitle: "Air Mail",
+        yearAndImdbId: "1932tt0022615",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -387,12 +387,12 @@ export const data = {
       {
         imdbId: "tt0022897",
         title: "Flesh",
-        year: 1932,
+        year: "1932",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Flesh (1932)",
-        releaseDate: "1932-12-08",
+        sortTitle: "Flesh",
+        yearAndImdbId: "1932tt0022897",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -420,49 +420,14 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0024453",
-        title: "Pilgrimage",
-        year: 1933,
-        grade: "C",
-        gradeValue: 6,
-        slug: "pilgrimage-1933",
-        sortTitle: "Pilgrimage (1933)",
-        releaseDate: "1933-07-12",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg",
-                  srcSet:
-                    "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/a7533/pilgrimage-1933.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2eb7f841948a8b76e88d5d3637f8266a/b5dba/pilgrimage-1933.avif 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/ab5a1/pilgrimage-1933.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
         imdbId: "tt0023955",
         title: "Doctor Bull",
-        year: 1933,
+        year: "1933",
         grade: "C-",
         gradeValue: 5,
         slug: "doctor-bull-1933",
-        sortTitle: "Doctor Bull (1933)",
-        releaseDate: "1933-09-01",
+        sortTitle: "Doctor Bull",
+        yearAndImdbId: "1933tt0023955",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -490,14 +455,84 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0025423",
-        title: "The Lost Patrol",
-        year: 1934,
+        imdbId: "tt0024453",
+        title: "Pilgrimage",
+        year: "1933",
+        grade: "C",
+        gradeValue: 6,
+        slug: "pilgrimage-1933",
+        sortTitle: "Pilgrimage",
+        yearAndImdbId: "1933tt0024453",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg",
+                  srcSet:
+                    "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/a7533/pilgrimage-1933.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2eb7f841948a8b76e88d5d3637f8266a/b5dba/pilgrimage-1933.avif 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/ab5a1/pilgrimage-1933.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0025335",
+        title: "Judge Priest",
+        year: "1934",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Lost Patrol (1934)",
-        releaseDate: "1934-02-16",
+        sortTitle: "Judge Priest",
+        yearAndImdbId: "1934tt0025335",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0025423",
+        title: "The Lost Patrol",
+        year: "1934",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Lost Patrol, The",
+        yearAndImdbId: "1934tt0025423",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -527,82 +562,12 @@ export const data = {
       {
         imdbId: "tt0026008",
         title: "The World Moves On",
-        year: 1934,
+        year: "1934",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "World Moves On (1934)",
-        releaseDate: "1934-06-27",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0025335",
-        title: "Judge Priest",
-        year: 1934,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Judge Priest (1934)",
-        releaseDate: "1934-09-15",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0027214",
-        title: "The Whole Town's Talking",
-        year: 1935,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Whole Town's Talking (1935)",
-        releaseDate: "1935-02-21",
+        sortTitle: "World Moves On, The",
+        yearAndImdbId: "1934tt0026008",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -632,12 +597,12 @@ export const data = {
       {
         imdbId: "tt0026529",
         title: "The Informer",
-        year: 1935,
+        year: "1935",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Informer (1935)",
-        releaseDate: "1935-05-09",
+        sortTitle: "Informer, The",
+        yearAndImdbId: "1935tt0026529",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -667,12 +632,12 @@ export const data = {
       {
         imdbId: "tt0027042",
         title: "Steamboat Round the Bend",
-        year: 1935,
+        year: "1935",
         grade: "C",
         gradeValue: 6,
         slug: "steamboat-round-the-bend-1935",
-        sortTitle: "Steamboat Round the Bend (1935)",
-        releaseDate: "1935-09-06",
+        sortTitle: "Steamboat Round the Bend",
+        yearAndImdbId: "1935tt0027042",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -700,14 +665,14 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0028141",
-        title: "The Prisoner of Shark Island",
-        year: 1936,
+        imdbId: "tt0027214",
+        title: "The Whole Town's Talking",
+        year: "1935",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Prisoner of Shark Island (1936)",
-        releaseDate: "1936-02-12",
+        sortTitle: "Whole Town's Talking, The",
+        yearAndImdbId: "1935tt0027214",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -737,12 +702,12 @@ export const data = {
       {
         imdbId: "tt0027948",
         title: "Mary of Scotland",
-        year: 1936,
+        year: "1936",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Mary of Scotland (1936)",
-        releaseDate: "1936-07-28",
+        sortTitle: "Mary of Scotland",
+        yearAndImdbId: "1936tt0027948",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -772,12 +737,12 @@ export const data = {
       {
         imdbId: "tt0028112",
         title: "The Plough and the Stars",
-        year: 1936,
+        year: "1936",
         grade: "F",
         gradeValue: 1,
         slug: "the-plough-and-the-stars-1936",
-        sortTitle: "Plough and the Stars (1936)",
-        releaseDate: "1936-12-26",
+        sortTitle: "Plough and the Stars, The",
+        yearAndImdbId: "1936tt0028112",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -805,14 +770,14 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0029751",
-        title: "Wee Willie Winkie",
-        year: 1937,
+        imdbId: "tt0028141",
+        title: "The Prisoner of Shark Island",
+        year: "1936",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Wee Willie Winkie (1937)",
-        releaseDate: "1937-06-25",
+        sortTitle: "Prisoner of Shark Island, The",
+        yearAndImdbId: "1936tt0028141",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -842,12 +807,47 @@ export const data = {
       {
         imdbId: "tt0029030",
         title: "The Hurricane",
-        year: 1937,
+        year: "1937",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Hurricane (1937)",
-        releaseDate: "1937-11-05",
+        sortTitle: "Hurricane, The",
+        yearAndImdbId: "1937tt0029030",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0029751",
+        title: "Wee Willie Winkie",
+        year: "1937",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Wee Willie Winkie",
+        yearAndImdbId: "1937tt0029751",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -877,12 +877,12 @@ export const data = {
       {
         imdbId: "tt0030150",
         title: "Four Men and a Prayer",
-        year: 1938,
+        year: "1938",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Four Men and a Prayer (1938)",
-        releaseDate: "1938-04-29",
+        sortTitle: "Four Men and a Prayer",
+        yearAndImdbId: "1938tt0030150",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -912,82 +912,12 @@ export const data = {
       {
         imdbId: "tt0030808",
         title: "Submarine Patrol",
-        year: 1938,
+        year: "1938",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Submarine Patrol (1938)",
-        releaseDate: "1938-11-09",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0031971",
-        title: "Stagecoach",
-        year: 1939,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Stagecoach (1939)",
-        releaseDate: "1939-02-10",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0032155",
-        title: "Young Mr. Lincoln",
-        year: 1939,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Young Mr. Lincoln (1939)",
-        releaseDate: "1939-05-30",
+        sortTitle: "Submarine Patrol",
+        yearAndImdbId: "1938tt0030808",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1017,12 +947,82 @@ export const data = {
       {
         imdbId: "tt0031252",
         title: "Drums Along the Mohawk",
-        year: 1939,
+        year: "1939",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Drums Along the Mohawk (1939)",
-        releaseDate: "1939-11-02",
+        sortTitle: "Drums Along the Mohawk",
+        yearAndImdbId: "1939tt0031252",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0031971",
+        title: "Stagecoach",
+        year: "1939",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Stagecoach",
+        yearAndImdbId: "1939tt0031971",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0032155",
+        title: "Young Mr. Lincoln",
+        year: "1939",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Young Mr. Lincoln",
+        yearAndImdbId: "1939tt0032155",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1052,12 +1052,12 @@ export const data = {
       {
         imdbId: "tt0032551",
         title: "The Grapes of Wrath",
-        year: 1940,
+        year: "1940",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Grapes of Wrath (1940)",
-        releaseDate: "1940-01-24",
+        sortTitle: "Grapes of Wrath, The",
+        yearAndImdbId: "1940tt0032551",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1087,47 +1087,12 @@ export const data = {
       {
         imdbId: "tt0032728",
         title: "The Long Voyage Home",
-        year: 1940,
+        year: "1940",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Long Voyage Home (1940)",
-        releaseDate: "1940-10-08",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0034297",
-        title: "Tobacco Road",
-        year: 1941,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Tobacco Road (1941)",
-        releaseDate: "1941-02-20",
+        sortTitle: "Long Voyage Home, The",
+        yearAndImdbId: "1940tt0032728",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1157,12 +1122,82 @@ export const data = {
       {
         imdbId: "tt0033729",
         title: "How Green Was My Valley",
-        year: 1941,
+        year: "1941",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "How Green Was My Valley (1941)",
-        releaseDate: "1941-10-28",
+        sortTitle: "How Green Was My Valley",
+        yearAndImdbId: "1941tt0033729",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0034297",
+        title: "Tobacco Road",
+        year: "1941",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Tobacco Road",
+        yearAndImdbId: "1941tt0034297",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0274560",
+        title: "Undercover",
+        year: "1944",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Undercover",
+        yearAndImdbId: "1944tt0274560",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1192,12 +1227,12 @@ export const data = {
       {
         imdbId: "tt0038160",
         title: "They Were Expendable",
-        year: 1945,
+        year: "1945",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "They Were Expendable (1945)",
-        releaseDate: "1945-12-07",
+        sortTitle: "They Were Expendable",
+        yearAndImdbId: "1945tt0038160",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1227,12 +1262,12 @@ export const data = {
       {
         imdbId: "tt0038762",
         title: "My Darling Clementine",
-        year: 1946,
+        year: "1946",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "My Darling Clementine (1946)",
-        releaseDate: "1946-10-16",
+        sortTitle: "My Darling Clementine",
+        yearAndImdbId: "1946tt0038762",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1262,47 +1297,12 @@ export const data = {
       {
         imdbId: "tt0039402",
         title: "The Fugitive",
-        year: 1947,
+        year: "1947",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Fugitive (1947)",
-        releaseDate: "1947-11-11",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0040369",
-        title: "Fort Apache",
-        year: 1948,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Fort Apache (1948)",
-        releaseDate: "1948-03-27",
+        sortTitle: "Fugitive, The",
+        yearAndImdbId: "1947tt0039402",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1332,12 +1332,12 @@ export const data = {
       {
         imdbId: "tt0040064",
         title: "3 Godfathers",
-        year: 1948,
+        year: "1948",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "3 Godfathers (1948)",
-        releaseDate: "1948-11-25",
+        sortTitle: "3 Godfathers",
+        yearAndImdbId: "1948tt0040064",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1365,14 +1365,14 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0041866",
-        title: "She Wore a Yellow Ribbon",
-        year: 1949,
+        imdbId: "tt0040369",
+        title: "Fort Apache",
+        year: "1948",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "She Wore a Yellow Ribbon (1949)",
-        releaseDate: "1949-07-26",
+        sortTitle: "Fort Apache",
+        yearAndImdbId: "1948tt0040369",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1402,12 +1402,12 @@ export const data = {
       {
         imdbId: "tt0041746",
         title: "Pinky",
-        year: 1949,
+        year: "1949",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Pinky (1949)",
-        releaseDate: "1949-09-29",
+        sortTitle: "Pinky",
+        yearAndImdbId: "1949tt0041746",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1435,49 +1435,14 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0043129",
-        title: "When Willie Comes Marching Home",
-        year: 1950,
+        imdbId: "tt0041866",
+        title: "She Wore a Yellow Ribbon",
+        year: "1949",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "When Willie Comes Marching Home (1950)",
-        releaseDate: "1950-02-01",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0043117",
-        title: "Wagon Master",
-        year: 1950,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Wagon Master (1950)",
-        releaseDate: "1950-04-19",
+        sortTitle: "She Wore a Yellow Ribbon",
+        yearAndImdbId: "1949tt0041866",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1507,12 +1472,82 @@ export const data = {
       {
         imdbId: "tt0042895",
         title: "Rio Grande",
-        year: 1950,
+        year: "1950",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Rio Grande (1950)",
-        releaseDate: "1950-11-01",
+        sortTitle: "Rio Grande",
+        yearAndImdbId: "1950tt0042895",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0043117",
+        title: "Wagon Master",
+        year: "1950",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Wagon Master",
+        yearAndImdbId: "1950tt0043117",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0043129",
+        title: "When Willie Comes Marching Home",
+        year: "1950",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "When Willie Comes Marching Home",
+        yearAndImdbId: "1950tt0043129",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1542,12 +1577,12 @@ export const data = {
       {
         imdbId: "tt0045061",
         title: "The Quiet Man",
-        year: 1952,
+        year: "1952",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Quiet Man (1952)",
-        releaseDate: "1952-06-06",
+        sortTitle: "Quiet Man, The",
+        yearAndImdbId: "1952tt0045061",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1577,47 +1612,12 @@ export const data = {
       {
         imdbId: "tt0045323",
         title: "What Price Glory",
-        year: 1952,
+        year: "1952",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "What Price Glory (1952)",
-        releaseDate: "1952-07-25",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0046384",
-        title: "The Sun Shines Bright",
-        year: 1953,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Sun Shines Bright (1953)",
-        releaseDate: "1953-03-13",
+        sortTitle: "What Price Glory",
+        yearAndImdbId: "1952tt0045323",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1647,12 +1647,47 @@ export const data = {
       {
         imdbId: "tt0046085",
         title: "Mogambo",
-        year: 1953,
+        year: "1953",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Mogambo (1953)",
-        releaseDate: "1953-09-23",
+        sortTitle: "Mogambo",
+        yearAndImdbId: "1953tt0046085",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0046384",
+        title: "The Sun Shines Bright",
+        year: "1953",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Sun Shines Bright, The",
+        yearAndImdbId: "1953tt0046384",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1682,12 +1717,12 @@ export const data = {
       {
         imdbId: "tt0048312",
         title: "The Long Gray Line",
-        year: 1955,
+        year: "1955",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Long Gray Line (1955)",
-        releaseDate: "1955-01-04",
+        sortTitle: "Long Gray Line, The",
+        yearAndImdbId: "1955tt0048312",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1717,12 +1752,12 @@ export const data = {
       {
         imdbId: "tt0048380",
         title: "Mister Roberts",
-        year: 1955,
+        year: "1955",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Mister Roberts (1955)",
-        releaseDate: "1955-07-10",
+        sortTitle: "Mister Roberts",
+        yearAndImdbId: "1955tt0048380",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1752,47 +1787,12 @@ export const data = {
       {
         imdbId: "tt0049730",
         title: "The Searchers",
-        year: 1956,
+        year: "1956",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Searchers (1956)",
-        releaseDate: "1956-05-01",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0051198",
-        title: "The Wings of Eagles",
-        year: 1957,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Wings of Eagles (1957)",
-        releaseDate: "1957-01-31",
+        sortTitle: "Searchers, The",
+        yearAndImdbId: "1956tt0049730",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1822,12 +1822,47 @@ export const data = {
       {
         imdbId: "tt0050902",
         title: "The Rising of the Moon",
-        year: 1957,
+        year: "1957",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Rising of the Moon (1957)",
-        releaseDate: "1957-05-17",
+        sortTitle: "Rising of the Moon, The",
+        yearAndImdbId: "1957tt0050902",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0051198",
+        title: "The Wings of Eagles",
+        year: "1957",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Wings of Eagles, The",
+        yearAndImdbId: "1957tt0051198",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1857,12 +1892,12 @@ export const data = {
       {
         imdbId: "tt0051655",
         title: "Gideon of Scotland Yard",
-        year: 1958,
+        year: "1958",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Gideon of Scotland Yard (1958)",
-        releaseDate: "1958-03-21",
+        sortTitle: "Gideon of Scotland Yard",
+        yearAndImdbId: "1958tt0051655",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1892,12 +1927,12 @@ export const data = {
       {
         imdbId: "tt0051845",
         title: "The Last Hurrah",
-        year: 1958,
+        year: "1958",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Last Hurrah (1958)",
-        releaseDate: "1958-10-22",
+        sortTitle: "Last Hurrah, The",
+        yearAndImdbId: "1958tt0051845",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1927,12 +1962,12 @@ export const data = {
       {
         imdbId: "tt0052902",
         title: "The Horse Soldiers",
-        year: 1959,
+        year: "1959",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Horse Soldiers (1959)",
-        releaseDate: "1959-06-17",
+        sortTitle: "Horse Soldiers, The",
+        yearAndImdbId: "1959tt0052902",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1962,12 +1997,12 @@ export const data = {
       {
         imdbId: "tt0054292",
         title: "Sergeant Rutledge",
-        year: 1960,
+        year: "1960",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Sergeant Rutledge (1960)",
-        releaseDate: "1960-05-25",
+        sortTitle: "Sergeant Rutledge",
+        yearAndImdbId: "1960tt0054292",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1997,47 +2032,12 @@ export const data = {
       {
         imdbId: "tt0055558",
         title: "Two Rode Together",
-        year: 1961,
+        year: "1961",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Two Rode Together (1961)",
-        releaseDate: "1961-05-24",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0056217",
-        title: "The Man Who Shot Liberty Valance",
-        year: 1962,
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Man Who Shot Liberty Valance (1962)",
-        releaseDate: "1962-04-13",
+        sortTitle: "Two Rode Together",
+        yearAndImdbId: "1961tt0055558",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2067,12 +2067,47 @@ export const data = {
       {
         imdbId: "tt0056085",
         title: "How the West Was Won",
-        year: 1962,
+        year: "1962",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "How the West Was Won (1962)",
-        releaseDate: "1962-11-01",
+        sortTitle: "How the West Was Won",
+        yearAndImdbId: "1962tt0056085",
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0056217",
+        title: "The Man Who Shot Liberty Valance",
+        year: "1962",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Man Who Shot Liberty Valance, The",
+        yearAndImdbId: "1962tt0056217",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2102,12 +2137,12 @@ export const data = {
       {
         imdbId: "tt0057007",
         title: "Donovan's Reef",
-        year: 1963,
+        year: "1963",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Donovan's Reef (1963)",
-        releaseDate: "1963-06-12",
+        sortTitle: "Donovan's Reef",
+        yearAndImdbId: "1963tt0057007",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2137,12 +2172,12 @@ export const data = {
       {
         imdbId: "tt0057940",
         title: "Cheyenne Autumn",
-        year: 1964,
+        year: "1964",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Cheyenne Autumn (1964)",
-        releaseDate: "1964-10-03",
+        sortTitle: "Cheyenne Autumn",
+        yearAndImdbId: "1964tt0057940",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2172,12 +2207,12 @@ export const data = {
       {
         imdbId: "tt0059930",
         title: "Young Cassidy",
-        year: 1965,
+        year: "1965",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Young Cassidy (1965)",
-        releaseDate: "1965-02-25",
+        sortTitle: "Young Cassidy",
+        yearAndImdbId: "1965tt0059930",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2207,12 +2242,12 @@ export const data = {
       {
         imdbId: "tt0060050",
         title: "7 Women",
-        year: 1965,
+        year: "1965",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "7 Women (1966)",
-        releaseDate: "1966-01-05",
+        sortTitle: "7 Women",
+        yearAndImdbId: "1965tt0060050",
         poster: {
           childImageSharp: {
             gatsbyImageData: {

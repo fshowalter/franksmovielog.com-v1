@@ -23,6 +23,7 @@ export default function WriterTemplate({
 }): JSX.Element {
   return (
     <WatchlistEntity
+      entityType="writer"
       entity={data.writer}
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Writer on"

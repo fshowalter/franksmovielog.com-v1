@@ -23,6 +23,7 @@ export default function PerformerTemplate({
 }): JSX.Element {
   return (
     <WatchlistEntity
+      entityType="performer"
       entity={data.performer}
       distinctReleaseYears={data.distinct.releaseYears}
       tagline="Performer in"
