@@ -1,5 +1,5 @@
 export const data = {
-  review: {
+  reviewedTitle: {
     nodes: [
       {
         imdbId: "tt0023935",
