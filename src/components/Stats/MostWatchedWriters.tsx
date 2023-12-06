@@ -17,7 +17,7 @@ function WriterName({
 export function MostWatchedWriters({
   writers,
 }: {
-  writers: Queries.MostWatchedWritersFragment[] | null;
+  writers: readonly Queries.MostWatchedWritersFragment[];
 }): JSX.Element | null {
   return (
     <MostWatchedPeople

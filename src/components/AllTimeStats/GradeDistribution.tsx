@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { BarGradient } from "../BarGradient";
-import { StatHeading } from "../StatHeading/StatHeading";
+import { StatHeading } from "../StatHeading";
 import {
   Table,
   TableDataCell,
@@ -9,17 +9,13 @@ import {
   TableRow,
 } from "../StatsTable";
 
-export function GradeDistributionStats({
+export function GradeDistribution({
   distributions,
 }: {
-  distributions?: readonly Queries.GradeDistributionFragment[] | null;
+  distributions: readonly Queries.GradeDistributionFragment[];
 }): JSX.Element | null {
-  if (!distributions) {
-    return null;
-  }
-
-  const maxBar = distributions.reduce((acc, stat) => {
-    const value = stat.count;
+  const maxBar = distributions.reduce((acc, distribution) => {
+    const value = distribution.count;
     return acc > value ? acc : value;
   }, 0);
 

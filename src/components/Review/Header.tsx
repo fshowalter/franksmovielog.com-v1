@@ -17,15 +17,24 @@ export function Header({ review, ...rest }: IHeaderProps) {
     >
       <Box textAlign="inherit">
         <PageTitle>{review.title}</PageTitle>
-        <OriginalTitle originalTitle={review.originalTitle} />
+        <OriginalTitle
+          originalTitle={review.originalTitle}
+          title={review.title}
+        />
       </Box>
       <Meta review={review} />
     </Box>
   );
 }
 
-function OriginalTitle({ originalTitle }: { originalTitle: string | null }) {
-  if (!originalTitle) {
+function OriginalTitle({
+  originalTitle,
+  title,
+}: {
+  originalTitle: string;
+  title: string;
+}) {
+  if (originalTitle.localeCompare(title) === 0) {
     return null;
   }
 

@@ -3,10 +3,12 @@ import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
-import { ByReleaseYearStats } from "../Stats/DecadeDistributionStats";
-import { TopMedia } from "../Stats/MediaDistributionStats";
+import {
+  DecadeDistribution,
+  MediaDistribution,
+  MostWatchedMovies,
+} from "../Stats";
 import { MostWatchedDirectors } from "../Stats/MostWatchedDirectors";
-import { MostWatchedMovies } from "../Stats/MostWatchedMovies";
 import { MostWatchedPerformers } from "../Stats/MostWatchedPerformers";
 import { MostWatchedWriters } from "../Stats/MostWatchedWriters";
 import { StatsNavigation } from "../Stats/StatsNavigation";
@@ -70,8 +72,8 @@ export function YearStats({
           width="full"
         >
           <MostWatchedMovies titles={stats.mostWatchedTitles} />
-          <ByReleaseYearStats decades={stats.decadeDistribution} />
-          <TopMedia topMedia={stats.mediaDistribution} />
+          <DecadeDistribution distributions={stats.decadeDistribution} />
+          <MediaDistribution distributions={stats.mediaDistribution} />
           <MostWatchedDirectors directors={stats.mostWatchedDirectors} />
           <MostWatchedPerformers performers={stats.mostWatchedPerformers} />
           <MostWatchedWriters writers={stats.mostWatchedWriters} />

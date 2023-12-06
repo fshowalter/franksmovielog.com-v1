@@ -9,17 +9,17 @@ import {
   TableRow,
 } from "../StatsTable";
 
-export function ByReleaseYearStats({
-  decades,
+export function DecadeDistribution({
+  distributions,
 }: {
-  decades: Queries.DecadeDistribution[] | null;
+  distributions: readonly Queries.DecadeDistributionFragment[] | null;
 }): JSX.Element | null {
-  if (!decades) {
+  if (!distributions) {
     return null;
   }
 
-  const maxBar = decades.reduce((acc, stat) => {
-    const value = stat.count;
+  const maxBar = distributions.reduce((acc, distribution) => {
+    const value = distribution.count;
     return acc > value ? acc : value;
   }, 0);
 
@@ -35,14 +35,16 @@ export function ByReleaseYearStats({
           </tr>
         </TableHead>
         <tbody>
-          {decades.map((stat) => {
+          {distributions.map((distribution) => {
             return (
-              <TableRow key={stat.name}>
-                <TableDataCell align="left">{stat.name}</TableDataCell>
+              <TableRow key={distribution.name}>
+                <TableDataCell align="left">{distribution.name}</TableDataCell>
                 <TableDataCell align="fill">
-                  <BarGradient value={stat.count} maxValue={maxBar} />
+                  <BarGradient value={distribution.count} maxValue={maxBar} />
                 </TableDataCell>
-                <TableDataCell align="right">{stat.count}</TableDataCell>
+                <TableDataCell align="right">
+                  {distribution.count}
+                </TableDataCell>
               </TableRow>
             );
           })}

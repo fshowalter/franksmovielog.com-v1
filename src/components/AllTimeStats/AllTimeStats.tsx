@@ -3,15 +3,17 @@ import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
-import { ByReleaseYearStats } from "../Stats/DecadeDistributionStats";
-import { GradeDistributionStats } from "../Stats/GradeDistributionStats";
-import { TopMedia } from "../Stats/MediaDistributionStats";
+import {
+  DecadeDistribution,
+  MediaDistribution,
+  MostWatchedMovies,
+} from "../Stats";
 import { MostWatchedDirectors } from "../Stats/MostWatchedDirectors";
-import { MostWatchedMovies } from "../Stats/MostWatchedMovies";
 import { MostWatchedPerformers } from "../Stats/MostWatchedPerformers";
 import { MostWatchedWriters } from "../Stats/MostWatchedWriters";
 import { StatsNavigation } from "../Stats/StatsNavigation";
 import { Callouts } from "./Callouts";
+import { GradeDistribution } from "./GradeDistribution";
 
 export function AllTimeStats({
   stats,
@@ -67,9 +69,9 @@ export function AllTimeStats({
           width="full"
         >
           <MostWatchedMovies titles={stats.mostWatchedTitles} />
-          <ByReleaseYearStats decades={stats.decadeDistribution} />
-          <TopMedia topMedia={stats.mediaDistribution} />
-          <GradeDistributionStats distributions={stats.gradeDistribution} />
+          <DecadeDistribution distributions={stats.decadeDistribution} />
+          <MediaDistribution distributions={stats.mediaDistribution} />
+          <GradeDistribution distributions={stats.gradeDistribution} />
           <MostWatchedDirectors directors={stats.mostWatchedDirectors} />
           <MostWatchedPerformers performers={stats.mostWatchedPerformers} />
           <MostWatchedWriters writers={stats.mostWatchedWriters} />

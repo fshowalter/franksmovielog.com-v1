@@ -19,7 +19,7 @@ function PerformerName({
 export function MostWatchedPerformers({
   performers,
 }: {
-  performers: Queries.MostWatchedPerformersFragment[] | null;
+  performers: readonly Queries.MostWatchedPerformersFragment[];
 }): JSX.Element | null {
   return (
     <MostWatchedPeople

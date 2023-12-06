@@ -12,7 +12,6 @@ export function WatchlistLinks({
   more,
   ...rest
 }: IWatchlistLinksProps): JSX.Element {
-  console.log(more);
   return (
     <Box
       as="ul"

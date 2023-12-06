@@ -40,7 +40,11 @@ export function Review({
           className={stillMarginStyle}
         />
         <Spacer axis="vertical" size={{ default: 24, tablet: 32 }} />
-        <Content review={review} paddingX="pageMargin" alignItems="center" />
+        <Content
+          reviewedTitle={review}
+          paddingX="pageMargin"
+          alignItems="center"
+        />
         <Spacer axis="vertical" size={80} />
         <ViewingHistory review={review} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />

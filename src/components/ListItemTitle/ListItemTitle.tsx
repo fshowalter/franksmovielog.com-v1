@@ -7,7 +7,7 @@ export function ListItemTitle({
   slug,
 }: {
   title: string;
-  year: number;
+  year: string;
   slug: string | null | undefined;
 }) {
   const yearBox = (

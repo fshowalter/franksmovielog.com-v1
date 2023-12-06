@@ -18,17 +18,13 @@ export function MostWatchedPeople({
   nameRenderer,
 }: {
   header: string;
-  people: Queries.MostWatchedPersonFragment[] | null;
+  people: readonly Queries.MostWatchedPersonFragment[];
   nameRenderer: ({
     person,
   }: {
     person: Queries.MostWatchedPersonFragment;
   }) => JSX.Element;
 }): JSX.Element | null {
-  if (!people) {
-    return null;
-  }
-
   return (
     <Box as="section" boxShadow="borderAll">
       <StatHeading>{header}</StatHeading>
@@ -51,7 +47,7 @@ export function MostWatchedPeople({
       <Box as="ol">
         {people.map((person, index) => {
           return (
-            <Box as="li" key={person.fullName} display="block">
+            <Box as="li" key={person.name} display="block">
               <Box
                 className={stickyRowHeaderStyle}
                 style={{ zIndex: 200 + index }}

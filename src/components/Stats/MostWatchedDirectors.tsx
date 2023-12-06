@@ -19,7 +19,7 @@ function DirectorName({
 export function MostWatchedDirectors({
   directors,
 }: {
-  directors: Queries.MostWatchedDirectorsFragment[] | null;
+  directors: readonly Queries.MostWatchedDirectorsFragment[];
 }): JSX.Element | null {
   return (
     <MostWatchedPeople

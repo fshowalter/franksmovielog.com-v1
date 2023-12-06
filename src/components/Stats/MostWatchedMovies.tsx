@@ -14,12 +14,8 @@ import {
 export function MostWatchedMovies({
   titles,
 }: {
-  titles: Queries.MostWatchedTitlesFragment[] | null;
+  titles: readonly Queries.MostWatchedTitleFragment[];
 }): JSX.Element | null {
-  if (!titles) {
-    return null;
-  }
-
   if (titles.length === 0) {
     return null;
   }
@@ -51,7 +47,7 @@ function List({ children }: IBoxProps): JSX.Element {
 function ListItem({
   movie,
 }: {
-  movie: Queries.MostWatchedMovieFragment;
+  movie: Queries.MostWatchedTitleFragment;
 }): JSX.Element {
   return (
     <Box
@@ -90,16 +86,16 @@ function ListItem({
 }
 
 interface IPosterProps extends IBoxProps {
-  movie: Queries.MostWatchedMovieFragment;
+  movie: Queries.MostWatchedTitleFragment;
 }
 
 function Poster({ movie, ...rest }: IPosterProps) {
-  if (movie.reviewedMovie) {
+  if (movie.slug) {
     return (
       <Link
         className={posterStyle}
         overflow="hidden"
-        to={`/reviews/${movie.reviewedMovie.slug}/`}
+        to={`/reviews/${movie.slug}/`}
         transform="safariBorderRadiusFix"
         boxShadow="borderAll"
         borderRadius={8}
