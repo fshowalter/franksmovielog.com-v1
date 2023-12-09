@@ -95,7 +95,7 @@ export const ReviewedTitlesJson = {
     },
     reviewYear: "String!",
     originalTitle: "String!",
-    yearAndImdbId: "String!",
+    releaseSequence: "String!",
     runtimeMinutes: "Int!",
     directorNames: "[String!]!",
     principalCastNames: "[String!]!",

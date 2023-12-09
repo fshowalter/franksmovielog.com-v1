@@ -9,7 +9,7 @@ export const OverratedDisappointmentsJson = {
     grade: "String!",
     gradeValue: "Int!",
     imdbId: "String!",
-    yearAndImdbId: "String!",
+    releaseSequence: "String!",
     slug: "String!",
     sortTitle: "String!",
     title: "String!",

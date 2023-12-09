@@ -62,7 +62,7 @@ export const query = graphql`
     imdbId
     title
     year
-    yearAndImdbId
+    releaseSequence
     sortTitle
     slug
     grade

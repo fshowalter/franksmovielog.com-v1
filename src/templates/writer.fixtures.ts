@@ -83,7 +83,7 @@ export const data = {
         gradeValue: 8,
         slug: "carrie-1976",
         sortTitle: "Carrie",
-        yearAndImdbId: "1976tt0074285",
+        releaseSequence: "1976tt0074285",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -118,7 +118,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Shining, The",
-        yearAndImdbId: "1980tt0081505",
+        releaseSequence: "1980tt0081505",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -153,7 +153,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Creepshow",
-        yearAndImdbId: "1982tt0083767",
+        releaseSequence: "1982tt0083767",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -188,7 +188,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Christine",
-        yearAndImdbId: "1983tt0085333",
+        releaseSequence: "1983tt0085333",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -223,7 +223,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Cujo",
-        yearAndImdbId: "1983tt0085382",
+        releaseSequence: "1983tt0085382",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -258,7 +258,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dead Zone, The",
-        yearAndImdbId: "1983tt0085407",
+        releaseSequence: "1983tt0085407",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -293,7 +293,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn",
-        yearAndImdbId: "1984tt0087050",
+        releaseSequence: "1984tt0087050",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -328,7 +328,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Firestarter",
-        yearAndImdbId: "1984tt0087262",
+        releaseSequence: "1984tt0087262",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -363,7 +363,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Cat's Eye",
-        yearAndImdbId: "1985tt0088889",
+        releaseSequence: "1985tt0088889",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -398,7 +398,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Silver Bullet",
-        yearAndImdbId: "1985tt0090021",
+        releaseSequence: "1985tt0090021",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -433,7 +433,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Stephen King's Golden Tales",
-        yearAndImdbId: "1985tt4388650",
+        releaseSequence: "1985tt4388650",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -468,7 +468,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Maximum Overdrive",
-        yearAndImdbId: "1986tt0091499",
+        releaseSequence: "1986tt0091499",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -503,7 +503,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Stand by Me",
-        yearAndImdbId: "1986tt0092005",
+        releaseSequence: "1986tt0092005",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -538,7 +538,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Creepshow 2",
-        yearAndImdbId: "1987tt0092796",
+        releaseSequence: "1987tt0092796",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -573,7 +573,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Running Man, The",
-        yearAndImdbId: "1987tt0093894",
+        releaseSequence: "1987tt0093894",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -608,7 +608,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Carrie",
-        yearAndImdbId: "1988tt19850354",
+        releaseSequence: "1988tt19850354",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -643,7 +643,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Pet Sematary",
-        yearAndImdbId: "1989tt0098084",
+        releaseSequence: "1989tt0098084",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -678,7 +678,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Graveyard Shift",
-        yearAndImdbId: "1990tt0099697",
+        releaseSequence: "1990tt0099697",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -713,7 +713,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Misery",
-        yearAndImdbId: "1990tt0100157",
+        releaseSequence: "1990tt0100157",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -748,7 +748,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Tales from the Darkside: The Movie",
-        yearAndImdbId: "1990tt0100740",
+        releaseSequence: "1990tt0100740",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -783,7 +783,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Sometimes They Come Back",
-        yearAndImdbId: "1991tt0102960",
+        releaseSequence: "1991tt0102960",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -818,7 +818,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Lawnmower Man, The",
-        yearAndImdbId: "1992tt0104692",
+        releaseSequence: "1992tt0104692",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -853,7 +853,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Sleepwalkers",
-        yearAndImdbId: "1992tt0105428",
+        releaseSequence: "1992tt0105428",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -888,7 +888,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn II: The Final Sacrifice",
-        yearAndImdbId: "1992tt0106557",
+        releaseSequence: "1992tt0106557",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -923,7 +923,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dark Half, The",
-        yearAndImdbId: "1993tt0106664",
+        releaseSequence: "1993tt0106664",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -958,7 +958,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Needful Things",
-        yearAndImdbId: "1993tt0107665",
+        releaseSequence: "1993tt0107665",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -993,7 +993,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Shawshank Redemption, The",
-        yearAndImdbId: "1994tt0111161",
+        releaseSequence: "1994tt0111161",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1028,7 +1028,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Nightshift Collection",
-        yearAndImdbId: "1994tt2028526",
+        releaseSequence: "1994tt2028526",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1063,7 +1063,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn III: Urban Harvest",
-        yearAndImdbId: "1995tt0109415",
+        releaseSequence: "1995tt0109415",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1098,7 +1098,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dolores Claiborne",
-        yearAndImdbId: "1995tt0109642",
+        releaseSequence: "1995tt0109642",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1133,7 +1133,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mangler, The",
-        yearAndImdbId: "1995tt0113762",
+        releaseSequence: "1995tt0113762",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1168,7 +1168,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn: The Gathering",
-        yearAndImdbId: "1996tt0115885",
+        releaseSequence: "1996tt0115885",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1203,7 +1203,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Thinner",
-        yearAndImdbId: "1996tt0117894",
+        releaseSequence: "1996tt0117894",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1238,7 +1238,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Night Flier, The",
-        yearAndImdbId: "1997tt0119784",
+        releaseSequence: "1997tt0119784",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1273,7 +1273,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Quicksilver Highway",
-        yearAndImdbId: "1997tt0119975",
+        releaseSequence: "1997tt0119975",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1308,7 +1308,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Trucks",
-        yearAndImdbId: "1997tt0120380",
+        releaseSequence: "1997tt0120380",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1343,7 +1343,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Apt Pupil",
-        yearAndImdbId: "1998tt0118636",
+        releaseSequence: "1998tt0118636",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1378,7 +1378,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn V: Fields of Terror",
-        yearAndImdbId: "1998tt0150111",
+        releaseSequence: "1998tt0150111",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1413,7 +1413,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Green Mile, The",
-        yearAndImdbId: "1999tt0120689",
+        releaseSequence: "1999tt0120689",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1448,7 +1448,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn 666: Isaac's Return",
-        yearAndImdbId: "1999tt0177625",
+        releaseSequence: "1999tt0177625",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1483,7 +1483,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Hearts in Atlantis",
-        yearAndImdbId: "2001tt0252501",
+        releaseSequence: "2001tt0252501",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1518,7 +1518,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Carrie",
-        yearAndImdbId: "2002tt0319970",
+        releaseSequence: "2002tt0319970",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1553,7 +1553,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dead Zone, The",
-        yearAndImdbId: "2002tt0341334",
+        releaseSequence: "2002tt0341334",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1588,7 +1588,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dreamcatcher",
-        yearAndImdbId: "2003tt0285531",
+        releaseSequence: "2003tt0285531",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1623,7 +1623,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Riding the Bullet",
-        yearAndImdbId: "2004tt0355954",
+        releaseSequence: "2004tt0355954",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1658,7 +1658,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Secret Window",
-        yearAndImdbId: "2004tt0363988",
+        releaseSequence: "2004tt0363988",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1693,7 +1693,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Desperation",
-        yearAndImdbId: "2006tt0129871",
+        releaseSequence: "2006tt0129871",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1728,7 +1728,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "1408",
-        yearAndImdbId: "2007tt0450385",
+        releaseSequence: "2007tt0450385",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1763,7 +1763,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mist, The",
-        yearAndImdbId: "2007tt0884328",
+        releaseSequence: "2007tt0884328",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1798,7 +1798,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dolan's Cadillac",
-        yearAndImdbId: "2009tt0963965",
+        releaseSequence: "2009tt0963965",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1833,7 +1833,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn",
-        yearAndImdbId: "2009tt1290135",
+        releaseSequence: "2009tt1290135",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1868,7 +1868,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Everything's Eventual",
-        yearAndImdbId: "2009tt1409829",
+        releaseSequence: "2009tt1409829",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1903,7 +1903,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn: Genesis",
-        yearAndImdbId: "2011tt1745672",
+        releaseSequence: "2011tt1745672",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1938,7 +1938,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Willa",
-        yearAndImdbId: "2012tt2199723",
+        releaseSequence: "2012tt2199723",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1973,7 +1973,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Carrie",
-        yearAndImdbId: "2013tt1939659",
+        releaseSequence: "2013tt1939659",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2008,7 +2008,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Good Marriage, A",
-        yearAndImdbId: "2014tt2180994",
+        releaseSequence: "2014tt2180994",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2043,7 +2043,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mercy",
-        yearAndImdbId: "2014tt2481496",
+        releaseSequence: "2014tt2481496",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2078,7 +2078,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Boogeyman, The",
-        yearAndImdbId: "2014tt3812686",
+        releaseSequence: "2014tt3812686",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2113,7 +2113,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Big Driver",
-        yearAndImdbId: "2014tt3831810",
+        releaseSequence: "2014tt3831810",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2148,7 +2148,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Cell",
-        yearAndImdbId: "2016tt0775440",
+        releaseSequence: "2016tt0775440",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2183,7 +2183,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Lsnienie (Audioplay)",
-        yearAndImdbId: "2016tt15444556",
+        releaseSequence: "2016tt15444556",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2218,7 +2218,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "It",
-        yearAndImdbId: "2017tt1396484",
+        releaseSequence: "2017tt1396484",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2253,7 +2253,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dark Tower, The",
-        yearAndImdbId: "2017tt1648190",
+        releaseSequence: "2017tt1648190",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2288,7 +2288,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Milkman, The",
-        yearAndImdbId: "2017tt2332833",
+        releaseSequence: "2017tt2332833",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2323,7 +2323,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Gerald's Game",
-        yearAndImdbId: "2017tt3748172",
+        releaseSequence: "2017tt3748172",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2358,7 +2358,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "1922",
-        yearAndImdbId: "2017tt6214928",
+        releaseSequence: "2017tt6214928",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2393,7 +2393,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Children of the Corn: Runaway",
-        yearAndImdbId: "2018tt5565634",
+        releaseSequence: "2018tt5565634",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2428,7 +2428,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Doctor's Case, The",
-        yearAndImdbId: "2018tt6952166",
+        releaseSequence: "2018tt6952166",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2463,7 +2463,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mute",
-        yearAndImdbId: "2018tt7286958",
+        releaseSequence: "2018tt7286958",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2498,7 +2498,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Pet Sematary",
-        yearAndImdbId: "2019tt0837563",
+        releaseSequence: "2019tt0837563",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2533,7 +2533,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "In the Tall Grass",
-        yearAndImdbId: "2019tt4687108",
+        releaseSequence: "2019tt4687108",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2568,7 +2568,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Doctor Sleep",
-        yearAndImdbId: "2019tt5606664",
+        releaseSequence: "2019tt5606664",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2603,7 +2603,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "It Chapter Two",
-        yearAndImdbId: "2019tt7349950",
+        releaseSequence: "2019tt7349950",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2638,7 +2638,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Doctor's Case, The",
-        yearAndImdbId: "2019tt7631002",
+        releaseSequence: "2019tt7631002",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2673,7 +2673,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dark Tower, The",
-        yearAndImdbId: "2020tt7215646",
+        releaseSequence: "2020tt7215646",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2708,7 +2708,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Timekeepers of Eternity, The",
-        yearAndImdbId: "2021tt15528116",
+        releaseSequence: "2021tt15528116",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2743,7 +2743,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mr. Harrigan's Phone",
-        yearAndImdbId: "2022tt12908110",
+        releaseSequence: "2022tt12908110",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2778,7 +2778,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Stationary Bike, The",
-        yearAndImdbId: "2022tt16282434",
+        releaseSequence: "2022tt16282434",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2813,7 +2813,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Firestarter",
-        yearAndImdbId: "2022tt1798632",
+        releaseSequence: "2022tt1798632",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2848,7 +2848,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Pet Sematary: Bloodlines",
-        yearAndImdbId: "2023tt14145436",
+        releaseSequence: "2023tt14145436",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2883,7 +2883,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Boogeyman, The",
-        yearAndImdbId: "2023tt3427252",
+        releaseSequence: "2023tt3427252",
         poster: {
           childImageSharp: {
             gatsbyImageData: {

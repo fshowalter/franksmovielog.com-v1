@@ -51,7 +51,7 @@ export function Overrated({
 
 export const query = graphql`
   fragment OverratedItem on OverratedDisappointmentsJson {
-    yearAndImdbId
+    releaseSequence
     title
     year
     sortTitle

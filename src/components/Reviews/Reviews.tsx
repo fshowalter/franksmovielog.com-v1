@@ -55,7 +55,7 @@ export const query = graphql`
     year
     imdbId
     reviewDate(formatString: "YYYY-MM-DD")
-    yearAndImdbId
+    releaseSequence
     reviewYear
     reviewMonth: reviewDate(formatString: "MMMM")
     title
