@@ -32,7 +32,7 @@ export default function UnderseenPage({
 
 export const pageQuery = graphql`
   query UnderseenPage {
-    underseen: allUnderseenGemsJson(sort: { yearAndImdbId: DESC }) {
+    underseen: allUnderseenGemsJson(sort: { releaseSequence: DESC }) {
       nodes {
         ...UnderseenItem
       }

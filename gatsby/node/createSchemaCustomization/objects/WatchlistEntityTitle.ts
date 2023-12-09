@@ -11,7 +11,7 @@ export const WatchlistEntityTitle = {
     slug: "String",
     grade: "String",
     gradeValue: "Int",
-    yearAndImdbId: "String!",
+    releaseSequence: "String!",
     poster: posterFieldResolver,
   },
 };

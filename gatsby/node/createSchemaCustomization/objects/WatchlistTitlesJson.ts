@@ -9,7 +9,7 @@ export const WatchlistTitlesJson = {
     year: "String!",
     imdbId: "String!",
     sortTitle: "String!",
-    yearAndImdbId: "String!",
+    releaseSequence: "String!",
     collectionNames: "[String!]!",
     directorNames: "[String!]!",
     performerNames: "[String!]!",

@@ -31,7 +31,7 @@ export const ViewingsJson = {
     venue: "String",
     viewingYear: "String!",
     year: "String!",
-    yearAndImdbId: "String!",
+    releaseSequence: "String!",
     viewingDate: {
       type: "Date!",
       extensions: {

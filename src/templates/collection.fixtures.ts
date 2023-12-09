@@ -65,7 +65,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Witches, The",
-        yearAndImdbId: "1966tt0060307",
+        releaseSequence: "1966tt0060307",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -100,7 +100,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dracula: Prince of Darkness",
-        yearAndImdbId: "1966tt0059127",
+        releaseSequence: "1966tt0059127",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -135,7 +135,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Shadow of the Cat, The",
-        yearAndImdbId: "1961tt0055438",
+        releaseSequence: "1961tt0055438",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -170,7 +170,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Man at the Top",
-        yearAndImdbId: "1973tt0073342",
+        releaseSequence: "1973tt0073342",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -205,7 +205,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Die! Die! My Darling!",
-        yearAndImdbId: "1965tt0059106",
+        releaseSequence: "1965tt0059106",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -240,7 +240,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Passport to China",
-        yearAndImdbId: "1960tt0055282",
+        releaseSequence: "1960tt0055282",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -275,7 +275,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Taste the Blood of Dracula",
-        yearAndImdbId: "1970tt0065073",
+        releaseSequence: "1970tt0065073",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -310,7 +310,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Evil of Frankenstein, The",
-        yearAndImdbId: "1964tt0058073",
+        releaseSequence: "1964tt0058073",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -345,7 +345,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Wolfshead: The Legend of Robin Hood",
-        yearAndImdbId: "1973tt0065221",
+        releaseSequence: "1973tt0065221",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -380,7 +380,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Frankenstein Created Woman",
-        yearAndImdbId: "1967tt0061683",
+        releaseSequence: "1967tt0061683",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -415,7 +415,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Yesterday's Enemy",
-        yearAndImdbId: "1959tt0053458",
+        releaseSequence: "1959tt0053458",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -450,7 +450,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Moon Zero Two",
-        yearAndImdbId: "1969tt0064691",
+        releaseSequence: "1969tt0064691",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -485,7 +485,7 @@ export const data = {
         gradeValue: 4,
         slug: "the-abominable-snowman-1957",
         sortTitle: "Abominable Snowman, The",
-        yearAndImdbId: "1957tt0050095",
+        releaseSequence: "1957tt0050095",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -520,7 +520,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Two Faces of Dr. Jekyll, The",
-        yearAndImdbId: "1960tt0054416",
+        releaseSequence: "1960tt0054416",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -555,7 +555,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Prehistoric Women",
-        yearAndImdbId: "1967tt0062150",
+        releaseSequence: "1967tt0062150",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -590,7 +590,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Vampire Circus",
-        yearAndImdbId: "1972tt0067924",
+        releaseSequence: "1972tt0067924",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -625,7 +625,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Nanny, The",
-        yearAndImdbId: "1965tt0059496",
+        releaseSequence: "1965tt0059496",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -660,7 +660,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Revenge of Frankenstein, The",
-        yearAndImdbId: "1958tt0050894",
+        releaseSequence: "1958tt0050894",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -695,7 +695,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Stop Me Before I Kill!",
-        yearAndImdbId: "1960tt0054901",
+        releaseSequence: "1960tt0054901",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -730,7 +730,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Steel Bayonet, The",
-        yearAndImdbId: "1957tt0051009",
+        releaseSequence: "1957tt0051009",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -765,7 +765,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Cash on Demand",
-        yearAndImdbId: "1961tt0054731",
+        releaseSequence: "1961tt0054731",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -800,7 +800,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Kiss of the Vampire, The",
-        yearAndImdbId: "1963tt0057226",
+        releaseSequence: "1963tt0057226",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -835,7 +835,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Twins of Evil",
-        yearAndImdbId: "1971tt0069427",
+        releaseSequence: "1971tt0069427",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -870,7 +870,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Lost Continent, The",
-        yearAndImdbId: "1968tt0063240",
+        releaseSequence: "1968tt0063240",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -905,7 +905,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Crescendo",
-        yearAndImdbId: "1970tt0064188",
+        releaseSequence: "1970tt0064188",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -940,7 +940,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Blood from the Mummy's Tomb",
-        yearAndImdbId: "1971tt0068290",
+        releaseSequence: "1971tt0068290",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -975,7 +975,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Man Who Could Cheat Death, The",
-        yearAndImdbId: "1959tt0053041",
+        releaseSequence: "1959tt0053041",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1010,7 +1010,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Hysteria",
-        yearAndImdbId: "1965tt0058216",
+        releaseSequence: "1965tt0058216",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1045,7 +1045,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dracula A.D. 1972",
-        yearAndImdbId: "1972tt0068505",
+        releaseSequence: "1972tt0068505",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1080,7 +1080,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Anniversary, The",
-        yearAndImdbId: "1968tt0062671",
+        releaseSequence: "1968tt0062671",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1115,7 +1115,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Frankenstein and the Monster from Hell",
-        yearAndImdbId: "1974tt0071519",
+        releaseSequence: "1974tt0071519",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1150,7 +1150,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Curse of the Mummy's Tomb, The",
-        yearAndImdbId: "1964tt0057986",
+        releaseSequence: "1964tt0057986",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1185,7 +1185,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Secret of Blood Island, The",
-        yearAndImdbId: "1965tt0059693",
+        releaseSequence: "1965tt0059693",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1220,7 +1220,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Terror of the Tongs, The",
-        yearAndImdbId: "1961tt0055516",
+        releaseSequence: "1961tt0055516",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1255,7 +1255,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Demons of the Mind",
-        yearAndImdbId: "1972tt0066982",
+        releaseSequence: "1972tt0066982",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1290,7 +1290,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Old Dark House, The",
-        yearAndImdbId: "1963tt0057379",
+        releaseSequence: "1963tt0057379",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1325,7 +1325,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Devil Rides Out, The",
-        yearAndImdbId: "1968tt0062885",
+        releaseSequence: "1968tt0062885",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1360,7 +1360,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Satanic Rites of Dracula, The",
-        yearAndImdbId: "1973tt0070634",
+        releaseSequence: "1973tt0070634",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1395,7 +1395,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Challenge for Robin Hood, A",
-        yearAndImdbId: "1967tt0062787",
+        releaseSequence: "1967tt0062787",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1430,7 +1430,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dr Jekyll & Sister Hyde",
-        yearAndImdbId: "1971tt0068502",
+        releaseSequence: "1971tt0068502",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1465,7 +1465,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Damned, The",
-        yearAndImdbId: "1962tt0056576",
+        releaseSequence: "1962tt0056576",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1500,7 +1500,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Journey to Murder",
-        yearAndImdbId: "1971tt0329247",
+        releaseSequence: "1971tt0329247",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1535,7 +1535,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Reptile, The",
-        yearAndImdbId: "1966tt0060893",
+        releaseSequence: "1966tt0060893",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1570,7 +1570,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Stranglers of Bombay, The",
-        yearAndImdbId: "1959tt0054346",
+        releaseSequence: "1959tt0054346",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1605,7 +1605,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "When Dinosaurs Ruled the Earth",
-        yearAndImdbId: "1970tt0066561",
+        releaseSequence: "1970tt0066561",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1640,7 +1640,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Horror of Frankenstein, The",
-        yearAndImdbId: "1970tt0065851",
+        releaseSequence: "1970tt0065851",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1675,7 +1675,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Shatter",
-        yearAndImdbId: "1974tt0074268",
+        releaseSequence: "1974tt0074268",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1710,7 +1710,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Viking Queen, The",
-        yearAndImdbId: "1967tt0062443",
+        releaseSequence: "1967tt0062443",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1745,7 +1745,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mummy, The",
-        yearAndImdbId: "1959tt0053085",
+        releaseSequence: "1959tt0053085",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1780,7 +1780,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Fear in the Night",
-        yearAndImdbId: "1972tt0068577",
+        releaseSequence: "1972tt0068577",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1815,7 +1815,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Gorgon, The",
-        yearAndImdbId: "1964tt0058155",
+        releaseSequence: "1964tt0058155",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1850,7 +1850,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Snorkel, The",
-        yearAndImdbId: "1958tt0052207",
+        releaseSequence: "1958tt0052207",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1885,7 +1885,7 @@ export const data = {
         gradeValue: 8,
         slug: "the-camp-on-blood-island-1958",
         sortTitle: "Camp on Blood Island, The",
-        yearAndImdbId: "1958tt0051444",
+        releaseSequence: "1958tt0051444",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1920,7 +1920,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Scream of Fear",
-        yearAndImdbId: "1961tt0055505",
+        releaseSequence: "1961tt0055505",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1955,7 +1955,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Pirates of Blood River, The",
-        yearAndImdbId: "1962tt0056350",
+        releaseSequence: "1962tt0056350",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1990,7 +1990,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Sword of Sherwood Forest",
-        yearAndImdbId: "1960tt0054358",
+        releaseSequence: "1960tt0054358",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2025,7 +2025,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mummy's Shroud, The",
-        yearAndImdbId: "1967tt0062006",
+        releaseSequence: "1967tt0062006",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2060,7 +2060,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Curse of the Werewolf, The",
-        yearAndImdbId: "1961tt0054777",
+        releaseSequence: "1961tt0054777",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2095,7 +2095,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Paranoiac",
-        yearAndImdbId: "1963tt0057401",
+        releaseSequence: "1963tt0057401",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2130,7 +2130,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Creatures the World Forgot",
-        yearAndImdbId: "1971tt0066955",
+        releaseSequence: "1971tt0066955",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2165,7 +2165,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Vampire Lovers, The",
-        yearAndImdbId: "1970tt0066518",
+        releaseSequence: "1970tt0066518",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2200,7 +2200,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Crimson Blade, The",
-        yearAndImdbId: "1963tt0056963",
+        releaseSequence: "1963tt0056963",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2235,7 +2235,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Never Take Candy from A Stranger",
-        yearAndImdbId: "1960tt0054116",
+        releaseSequence: "1960tt0054116",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2270,7 +2270,7 @@ export const data = {
         gradeValue: 7,
         slug: "x-the-unknown-1956",
         sortTitle: "X the Unknown",
-        yearAndImdbId: "1956tt0049967",
+        releaseSequence: "1956tt0049967",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2305,7 +2305,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Hound of the Baskervilles, The",
-        yearAndImdbId: "1959tt0052905",
+        releaseSequence: "1959tt0052905",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2340,7 +2340,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Lust for a Vampire",
-        yearAndImdbId: "1971tt0067367",
+        releaseSequence: "1971tt0067367",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2375,7 +2375,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Brigand of Kandahar, The",
-        yearAndImdbId: "1965tt0058991",
+        releaseSequence: "1965tt0058991",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2410,7 +2410,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Night Creatures",
-        yearAndImdbId: "1962tt0056277",
+        releaseSequence: "1962tt0056277",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2445,7 +2445,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Ten Seconds to Hell",
-        yearAndImdbId: "1959tt0053341",
+        releaseSequence: "1959tt0053341",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2480,7 +2480,7 @@ export const data = {
         gradeValue: 11,
         slug: "horror-of-dracula-1958",
         sortTitle: "Horror of Dracula",
-        yearAndImdbId: "1958tt0051554",
+        releaseSequence: "1958tt0051554",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2515,7 +2515,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Hands of the Ripper",
-        yearAndImdbId: "1971tt0067176",
+        releaseSequence: "1971tt0067176",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2550,7 +2550,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Quatermass and the Pit",
-        yearAndImdbId: "1967tt0062168",
+        releaseSequence: "1967tt0062168",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2585,7 +2585,7 @@ export const data = {
         gradeValue: 12,
         slug: "the-curse-of-frankenstein-1957",
         sortTitle: "Curse of Frankenstein, The",
-        yearAndImdbId: "1957tt0050280",
+        releaseSequence: "1957tt0050280",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2620,7 +2620,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Plague of the Zombies, The",
-        yearAndImdbId: "1966tt0060841",
+        releaseSequence: "1966tt0060841",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2655,7 +2655,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Maniac",
-        yearAndImdbId: "1963tt0056219",
+        releaseSequence: "1963tt0056219",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2690,7 +2690,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Phantom of the Opera, The",
-        yearAndImdbId: "1962tt0056347",
+        releaseSequence: "1962tt0056347",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2725,7 +2725,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "To the Devil a Daughter",
-        yearAndImdbId: "1976tt0075334",
+        releaseSequence: "1976tt0075334",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2760,7 +2760,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Hell Is a City",
-        yearAndImdbId: "1960tt0053900",
+        releaseSequence: "1960tt0053900",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2795,7 +2795,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Captain Kronos: Vampire Hunter",
-        yearAndImdbId: "1974tt0071276",
+        releaseSequence: "1974tt0071276",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2830,7 +2830,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Vengeance of She, The",
-        yearAndImdbId: "1968tt0063765",
+        releaseSequence: "1968tt0063765",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2865,7 +2865,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Dracula Has Risen from the Grave",
-        yearAndImdbId: "1968tt0062909",
+        releaseSequence: "1968tt0062909",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2900,7 +2900,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Legend of the 7 Golden Vampires, The",
-        yearAndImdbId: "1974tt0070297",
+        releaseSequence: "1974tt0070297",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2935,7 +2935,7 @@ export const data = {
         gradeValue: 8,
         slug: "the-quatermass-xperiment-1955",
         sortTitle: "Quatermass Xperiment, The",
-        yearAndImdbId: "1955tt0049646",
+        releaseSequence: "1955tt0049646",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2970,7 +2970,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Countess Dracula",
-        yearAndImdbId: "1971tt0065580",
+        releaseSequence: "1971tt0065580",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3005,7 +3005,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "One Million Years B.C.",
-        yearAndImdbId: "1966tt0060782",
+        releaseSequence: "1966tt0060782",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3040,7 +3040,7 @@ export const data = {
         gradeValue: 4,
         slug: "quatermass-2-1957",
         sortTitle: "Quatermass 2",
-        yearAndImdbId: "1957tt0050873",
+        releaseSequence: "1957tt0050873",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3075,7 +3075,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Brides of Dracula, The",
-        yearAndImdbId: "1960tt0053677",
+        releaseSequence: "1960tt0053677",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3110,7 +3110,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Devil-Ship Pirates, The",
-        yearAndImdbId: "1964tt0058011",
+        releaseSequence: "1964tt0058011",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3145,7 +3145,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "She",
-        yearAndImdbId: "1965tt0059710",
+        releaseSequence: "1965tt0059710",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3180,7 +3180,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Scars of Dracula",
-        yearAndImdbId: "1970tt0067713",
+        releaseSequence: "1970tt0067713",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3215,7 +3215,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Frankenstein Must Be Destroyed",
-        yearAndImdbId: "1969tt0065738",
+        releaseSequence: "1969tt0065738",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3250,7 +3250,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Straight on Till Morning",
-        yearAndImdbId: "1972tt0069318",
+        releaseSequence: "1972tt0069318",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3285,7 +3285,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Nightmare",
-        yearAndImdbId: "1964tt0058405",
+        releaseSequence: "1964tt0058405",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -3320,7 +3320,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Rasputin: The Mad Monk",
-        yearAndImdbId: "1966tt0059635",
+        releaseSequence: "1966tt0059635",
         poster: {
           childImageSharp: {
             gatsbyImageData: {

@@ -28,8 +28,9 @@ function sortItems(items: Queries.WatchlistTitleFragment[], sortOrder: Sort) {
     ) => number
   > = {
     "release-date-desc": (a, b) =>
-      sortString(a.yearAndImdbId, b.yearAndImdbId) * -1,
-    "release-date-asc": (a, b) => sortString(a.yearAndImdbId, b.yearAndImdbId),
+      sortString(a.releaseSequence, b.releaseSequence) * -1,
+    "release-date-asc": (a, b) =>
+      sortString(a.releaseSequence, b.releaseSequence),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) => sortNumber(a.gradeValue ?? 50, b.gradeValue ?? 50),
     "grade-desc": (a, b) =>

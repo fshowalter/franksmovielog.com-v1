@@ -28,8 +28,9 @@ function sortItems(items: Queries.ReviewsItemFragment[], sortOrder: Sort) {
     (a: Queries.ReviewsItemFragment, b: Queries.ReviewsItemFragment) => number
   > = {
     "release-date-desc": (a, b) =>
-      sortString(a.yearAndImdbId, b.yearAndImdbId) * -1,
-    "release-date-asc": (a, b) => sortString(a.yearAndImdbId, b.yearAndImdbId),
+      sortString(a.releaseSequence, b.releaseSequence) * -1,
+    "release-date-asc": (a, b) =>
+      sortString(a.releaseSequence, b.releaseSequence),
     "review-date-desc": (a, b) => sortString(a.reviewDate, b.reviewDate) * -1,
     "review-date-asc": (a, b) => sortString(a.reviewDate, b.reviewDate),
     "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),

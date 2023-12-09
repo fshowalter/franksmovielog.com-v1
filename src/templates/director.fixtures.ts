@@ -77,7 +77,7 @@ export const data = {
         gradeValue: 1,
         slug: "the-black-watch-1929",
         sortTitle: "Black Watch, The",
-        yearAndImdbId: "1929tt0019699",
+        releaseSequence: "1929tt0019699",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -112,7 +112,7 @@ export const data = {
         gradeValue: 4,
         slug: "salute-1929",
         sortTitle: "Salute",
-        yearAndImdbId: "1929tt0020359",
+        releaseSequence: "1929tt0020359",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -147,7 +147,7 @@ export const data = {
         gradeValue: 4,
         slug: "born-reckless-1930",
         sortTitle: "Born Reckless",
-        yearAndImdbId: "1930tt0020702",
+        releaseSequence: "1930tt0020702",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -182,7 +182,7 @@ export const data = {
         gradeValue: 7,
         slug: "men-without-women-1930",
         sortTitle: "Men Without Women",
-        yearAndImdbId: "1930tt0021140",
+        releaseSequence: "1930tt0021140",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -217,7 +217,7 @@ export const data = {
         gradeValue: 8,
         slug: "up-the-river-1930",
         sortTitle: "Up the River",
-        yearAndImdbId: "1930tt0021508",
+        releaseSequence: "1930tt0021508",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -252,7 +252,7 @@ export const data = {
         gradeValue: 4,
         slug: "arrowsmith-1931",
         sortTitle: "Arrowsmith",
-        yearAndImdbId: "1931tt0021622",
+        releaseSequence: "1931tt0021622",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -287,7 +287,7 @@ export const data = {
         gradeValue: 2,
         slug: "the-brat-1931",
         sortTitle: "Brat, The",
-        yearAndImdbId: "1931tt0021695",
+        releaseSequence: "1931tt0021695",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -322,7 +322,7 @@ export const data = {
         gradeValue: 4,
         slug: "seas-beneath-1931",
         sortTitle: "Seas Beneath, The",
-        yearAndImdbId: "1931tt0022353",
+        releaseSequence: "1931tt0022353",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -357,7 +357,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Air Mail",
-        yearAndImdbId: "1932tt0022615",
+        releaseSequence: "1932tt0022615",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -392,7 +392,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Flesh",
-        yearAndImdbId: "1932tt0022897",
+        releaseSequence: "1932tt0022897",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -427,7 +427,7 @@ export const data = {
         gradeValue: 5,
         slug: "doctor-bull-1933",
         sortTitle: "Doctor Bull",
-        yearAndImdbId: "1933tt0023955",
+        releaseSequence: "1933tt0023955",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -462,7 +462,7 @@ export const data = {
         gradeValue: 6,
         slug: "pilgrimage-1933",
         sortTitle: "Pilgrimage",
-        yearAndImdbId: "1933tt0024453",
+        releaseSequence: "1933tt0024453",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -497,7 +497,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Judge Priest",
-        yearAndImdbId: "1934tt0025335",
+        releaseSequence: "1934tt0025335",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -532,7 +532,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Lost Patrol, The",
-        yearAndImdbId: "1934tt0025423",
+        releaseSequence: "1934tt0025423",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -567,7 +567,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "World Moves On, The",
-        yearAndImdbId: "1934tt0026008",
+        releaseSequence: "1934tt0026008",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -602,7 +602,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Informer, The",
-        yearAndImdbId: "1935tt0026529",
+        releaseSequence: "1935tt0026529",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -637,7 +637,7 @@ export const data = {
         gradeValue: 6,
         slug: "steamboat-round-the-bend-1935",
         sortTitle: "Steamboat Round the Bend",
-        yearAndImdbId: "1935tt0027042",
+        releaseSequence: "1935tt0027042",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -672,7 +672,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Whole Town's Talking, The",
-        yearAndImdbId: "1935tt0027214",
+        releaseSequence: "1935tt0027214",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -707,7 +707,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mary of Scotland",
-        yearAndImdbId: "1936tt0027948",
+        releaseSequence: "1936tt0027948",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -742,7 +742,7 @@ export const data = {
         gradeValue: 1,
         slug: "the-plough-and-the-stars-1936",
         sortTitle: "Plough and the Stars, The",
-        yearAndImdbId: "1936tt0028112",
+        releaseSequence: "1936tt0028112",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -777,7 +777,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Prisoner of Shark Island, The",
-        yearAndImdbId: "1936tt0028141",
+        releaseSequence: "1936tt0028141",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -812,7 +812,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Hurricane, The",
-        yearAndImdbId: "1937tt0029030",
+        releaseSequence: "1937tt0029030",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -847,7 +847,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Wee Willie Winkie",
-        yearAndImdbId: "1937tt0029751",
+        releaseSequence: "1937tt0029751",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -882,7 +882,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Four Men and a Prayer",
-        yearAndImdbId: "1938tt0030150",
+        releaseSequence: "1938tt0030150",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -917,7 +917,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Submarine Patrol",
-        yearAndImdbId: "1938tt0030808",
+        releaseSequence: "1938tt0030808",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -952,7 +952,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Drums Along the Mohawk",
-        yearAndImdbId: "1939tt0031252",
+        releaseSequence: "1939tt0031252",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -987,7 +987,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Stagecoach",
-        yearAndImdbId: "1939tt0031971",
+        releaseSequence: "1939tt0031971",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1022,7 +1022,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Young Mr. Lincoln",
-        yearAndImdbId: "1939tt0032155",
+        releaseSequence: "1939tt0032155",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1057,7 +1057,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Grapes of Wrath, The",
-        yearAndImdbId: "1940tt0032551",
+        releaseSequence: "1940tt0032551",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1092,7 +1092,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Long Voyage Home, The",
-        yearAndImdbId: "1940tt0032728",
+        releaseSequence: "1940tt0032728",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1127,7 +1127,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "How Green Was My Valley",
-        yearAndImdbId: "1941tt0033729",
+        releaseSequence: "1941tt0033729",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1162,7 +1162,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Tobacco Road",
-        yearAndImdbId: "1941tt0034297",
+        releaseSequence: "1941tt0034297",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1197,7 +1197,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Undercover",
-        yearAndImdbId: "1944tt0274560",
+        releaseSequence: "1944tt0274560",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1232,7 +1232,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "They Were Expendable",
-        yearAndImdbId: "1945tt0038160",
+        releaseSequence: "1945tt0038160",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1267,7 +1267,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "My Darling Clementine",
-        yearAndImdbId: "1946tt0038762",
+        releaseSequence: "1946tt0038762",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1302,7 +1302,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Fugitive, The",
-        yearAndImdbId: "1947tt0039402",
+        releaseSequence: "1947tt0039402",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1337,7 +1337,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "3 Godfathers",
-        yearAndImdbId: "1948tt0040064",
+        releaseSequence: "1948tt0040064",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1372,7 +1372,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Fort Apache",
-        yearAndImdbId: "1948tt0040369",
+        releaseSequence: "1948tt0040369",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1407,7 +1407,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Pinky",
-        yearAndImdbId: "1949tt0041746",
+        releaseSequence: "1949tt0041746",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1442,7 +1442,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "She Wore a Yellow Ribbon",
-        yearAndImdbId: "1949tt0041866",
+        releaseSequence: "1949tt0041866",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1477,7 +1477,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Rio Grande",
-        yearAndImdbId: "1950tt0042895",
+        releaseSequence: "1950tt0042895",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1512,7 +1512,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Wagon Master",
-        yearAndImdbId: "1950tt0043117",
+        releaseSequence: "1950tt0043117",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1547,7 +1547,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "When Willie Comes Marching Home",
-        yearAndImdbId: "1950tt0043129",
+        releaseSequence: "1950tt0043129",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1582,7 +1582,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Quiet Man, The",
-        yearAndImdbId: "1952tt0045061",
+        releaseSequence: "1952tt0045061",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1617,7 +1617,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "What Price Glory",
-        yearAndImdbId: "1952tt0045323",
+        releaseSequence: "1952tt0045323",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1652,7 +1652,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mogambo",
-        yearAndImdbId: "1953tt0046085",
+        releaseSequence: "1953tt0046085",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1687,7 +1687,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Sun Shines Bright, The",
-        yearAndImdbId: "1953tt0046384",
+        releaseSequence: "1953tt0046384",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1722,7 +1722,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Long Gray Line, The",
-        yearAndImdbId: "1955tt0048312",
+        releaseSequence: "1955tt0048312",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1757,7 +1757,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Mister Roberts",
-        yearAndImdbId: "1955tt0048380",
+        releaseSequence: "1955tt0048380",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1792,7 +1792,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Searchers, The",
-        yearAndImdbId: "1956tt0049730",
+        releaseSequence: "1956tt0049730",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1827,7 +1827,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Rising of the Moon, The",
-        yearAndImdbId: "1957tt0050902",
+        releaseSequence: "1957tt0050902",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1862,7 +1862,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Wings of Eagles, The",
-        yearAndImdbId: "1957tt0051198",
+        releaseSequence: "1957tt0051198",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1897,7 +1897,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Gideon of Scotland Yard",
-        yearAndImdbId: "1958tt0051655",
+        releaseSequence: "1958tt0051655",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1932,7 +1932,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Last Hurrah, The",
-        yearAndImdbId: "1958tt0051845",
+        releaseSequence: "1958tt0051845",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1967,7 +1967,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Horse Soldiers, The",
-        yearAndImdbId: "1959tt0052902",
+        releaseSequence: "1959tt0052902",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2002,7 +2002,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Sergeant Rutledge",
-        yearAndImdbId: "1960tt0054292",
+        releaseSequence: "1960tt0054292",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2037,7 +2037,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Two Rode Together",
-        yearAndImdbId: "1961tt0055558",
+        releaseSequence: "1961tt0055558",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2072,7 +2072,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "How the West Was Won",
-        yearAndImdbId: "1962tt0056085",
+        releaseSequence: "1962tt0056085",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2107,7 +2107,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Man Who Shot Liberty Valance, The",
-        yearAndImdbId: "1962tt0056217",
+        releaseSequence: "1962tt0056217",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2142,7 +2142,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Donovan's Reef",
-        yearAndImdbId: "1963tt0057007",
+        releaseSequence: "1963tt0057007",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2177,7 +2177,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Cheyenne Autumn",
-        yearAndImdbId: "1964tt0057940",
+        releaseSequence: "1964tt0057940",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2212,7 +2212,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "Young Cassidy",
-        yearAndImdbId: "1965tt0059930",
+        releaseSequence: "1965tt0059930",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2247,7 +2247,7 @@ export const data = {
         gradeValue: null,
         slug: null,
         sortTitle: "7 Women",
-        yearAndImdbId: "1965tt0060050",
+        releaseSequence: "1965tt0060050",
         poster: {
           childImageSharp: {
             gatsbyImageData: {
