@@ -1,3 +1,7 @@
+import { Node } from "hast";
+import toHtml from "hast-util-to-html";
+import toHast from "mdast-util-to-hast";
+import remark from "remark";
 import { SchemaNames } from "../schemaNames";
 import type { GatsbyNode, GatsbyNodeContext } from "../type-definitions";
 import { MarkdownNode } from "./MarkdownRemark";
@@ -8,6 +12,12 @@ import { stillFieldResolver } from "./fieldResolvers/stillFieldResolver";
 export interface ReviewedTitleNode extends GatsbyNode {
   imdbId: string;
   slug: string;
+}
+
+interface IHastNode extends Node {
+  children: {
+    tagName: string;
+  }[];
 }
 
 export const ReviewedTitleViewing = {
@@ -21,7 +31,24 @@ export const ReviewedTitleViewing = {
     },
     venue: "String",
     medium: "String",
-    mediumNotes: "String",
+    mediumNotes: {
+      type: "String",
+      resolve: (source: { mediumNotes: string }) => {
+        if (!source.mediumNotes) {
+          return null;
+        }
+
+        const mdast = remark().parse(source.mediumNotes);
+
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as IHastNode;
+
+        hast.children[0].tagName = "span";
+
+        return toHtml(hast);
+      },
+    },
     sequence: "Int!",
     viewingNote: {
       type: SchemaNames.MarkdownRemark,
