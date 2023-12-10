@@ -1,6 +1,6 @@
 {
-  "viewingCount": 1546,
-  "titleCount": 1269,
+  "viewingCount": 1549,
+  "titleCount": 1270,
   "reviewCount": 632,
   "watchlistTitlesReviewedCount": 346,
   "gradeDistribution": [
@@ -41,12 +41,12 @@
     },
     {
       "name": "C",
-      "count": 55,
+      "count": 56,
       "sortValue": 6
     },
     {
       "name": "C-",
-      "count": 68,
+      "count": 67,
       "sortValue": 5
     },
     {
@@ -139,7 +139,7 @@
     },
     {
       "name": "1980s",
-      "count": 245
+      "count": 247
     },
     {
       "name": "1990s",
@@ -155,7 +155,7 @@
     },
     {
       "name": "2020s",
-      "count": 55
+      "count": 56
     }
   ],
   "mostWatchedTitles": [
@@ -188,6 +188,13 @@
       "slug": "krampus-2015"
     },
     {
+      "title": "Christmas Evil",
+      "imdbId": "tt0081793",
+      "year": "1980",
+      "count": 5,
+      "slug": "christmas-evil-1980"
+    },
+    {
       "title": "Halloween",
       "imdbId": "tt0077651",
       "year": "1978",
@@ -214,13 +221,6 @@
       "year": "1988",
       "count": 4,
       "slug": "die-hard-1988"
-    },
-    {
-      "title": "Christmas Evil",
-      "imdbId": "tt0081793",
-      "year": "1980",
-      "count": 4,
-      "slug": "christmas-evil-1980"
     },
     {
       "title": "Rio Bravo",
