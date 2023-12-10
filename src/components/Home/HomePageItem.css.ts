@@ -1,7 +1,7 @@
 import { globalStyle, style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { gridTemplate, SPACER } from "../../styles/grid";
+import { SPACER, gridTemplate } from "../../styles/grid";
 import { relativeSize, size } from "../../styles/sizes.css";
 
 export const stillBorderStyle = style({
@@ -33,17 +33,29 @@ export const gridStyle = style({
   ...gridTemplate<GridAreas, 1>({
     rows: [
       { [size[40]]: SPACER },
+      ["date"],
+      { [size[24]]: SPACER },
       ["still"],
       { [size[16]]: SPACER },
       { "1fr": ["excerpt"] },
-      { [size[24]]: SPACER },
-      ["date"],
       { [size[40]]: SPACER },
     ],
     columns: ["auto"],
   }),
   "@media": {
     [minMediaQuery("desktop")]: {
+      width: "100%",
+      ...gridTemplate<GridAreas, 3>({
+        rows: [
+          { [size[40]]: SPACER },
+          ["date", SPACER, "still"],
+          { "1fr": ["excerpt", SPACER, "still"] },
+          { [size[40]]: SPACER },
+        ],
+        columns: ["auto", "minmax(64px, 1fr)", "auto"],
+      }),
+    },
+    [minMediaQuery("max")]: {
       width: "100%",
       ...gridTemplate<GridAreas, 5>({
         rows: [
@@ -74,6 +86,14 @@ const gridAreaStyles = {
   },
   date: {
     gridArea: "date",
+    textAlign: "center" as const,
+    "@media": {
+      [minMediaQuery("desktop")]: {
+        textAlign: "left" as const,
+        paddingBottom: "24px",
+        lineHeight: "2rem",
+      },
+    },
   },
 };
 

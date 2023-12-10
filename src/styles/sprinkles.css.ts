@@ -48,6 +48,7 @@ const unresponsiveAtomicProperties = defineProperties({
     letterSpacing: {
       0.25: "0.015625rem",
       0.5: "0.03125rem",
+      0.75: "0.046875rem",
     },
     lineHeight: {
       1: 1,
