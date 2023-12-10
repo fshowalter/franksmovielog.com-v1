@@ -17,9 +17,8 @@
   "scss.validate": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "files.autoSaveDelay": 500,
   "stylelint.packageManager": "yarn",
@@ -40,4 +39,9 @@
     "postcss",
     "scss"
   ],
+  "[typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
 }
