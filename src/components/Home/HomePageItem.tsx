@@ -20,17 +20,12 @@ const Grid = gridComponent(gridStyle);
 
 interface IItemProps extends IBoxProps {
   item: Queries.HomePageItemFragment;
-  counterValue: number;
   eagerLoadImage: boolean;
 }
 
-export function HomePageItem({
-  item,
-  counterValue,
-  eagerLoadImage,
-}: IItemProps) {
+export function HomePageItem({ item, eagerLoadImage }: IItemProps) {
   return (
-    <Box as="li" value={counterValue} display="flex" backgroundColor="zebra">
+    <Box as="li" display="flex" backgroundColor="zebra">
       <Grid as="article" paddingX="pageMargin">
         <GridArea
           name="date"

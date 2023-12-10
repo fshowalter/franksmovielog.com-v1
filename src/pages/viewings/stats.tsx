@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { AllTimeStats, HeadBuilder } from "../components";
+import { AllTimeStats, HeadBuilder } from "../../components";
 
 export function Head(): JSX.Element {
   return (
