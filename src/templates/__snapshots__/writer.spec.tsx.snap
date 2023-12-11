@@ -6652,12 +6652,18 @@ exports[`/watchlist/writers/{slug} can show hidden reviewed titles 1`] = `
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_4_default__8lcvdk66 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_4_default__8lcvdk9r sprinkles_display_block_default__8lcvdk56"
             />
-            <img
-              alt="B-: 3.5 stars (out of 5)"
-              height="18"
-              src="/svg/3-half-stars.svg"
-              width="90"
-            />
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-half-stars-dark.svg"
+              />
+              <img
+                alt="B-: 3.5 stars (out of 5)"
+                height="18"
+                src="/svg/3-half-stars.svg"
+                width="90"
+              />
+            </picture>
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_8_default__8lcvdk69 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_8_default__8lcvdk9u sprinkles_display_block_default__8lcvdk56"
             />
@@ -12551,12 +12557,18 @@ exports[`/watchlist/writers/{slug} can sort by grade with best first 1`] = `
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_4_default__8lcvdk66 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_4_default__8lcvdk9r sprinkles_display_block_default__8lcvdk56"
             />
-            <img
-              alt="B-: 3.5 stars (out of 5)"
-              height="18"
-              src="/svg/3-half-stars.svg"
-              width="90"
-            />
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-half-stars-dark.svg"
+              />
+              <img
+                alt="B-: 3.5 stars (out of 5)"
+                height="18"
+                src="/svg/3-half-stars.svg"
+                width="90"
+              />
+            </picture>
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_8_default__8lcvdk69 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_8_default__8lcvdk9u sprinkles_display_block_default__8lcvdk56"
             />
@@ -17636,12 +17648,18 @@ exports[`/watchlist/writers/{slug} can sort by grade with worst first 1`] = `
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_4_default__8lcvdk66 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_4_default__8lcvdk9r sprinkles_display_block_default__8lcvdk56"
             />
-            <img
-              alt="B-: 3.5 stars (out of 5)"
-              height="18"
-              src="/svg/3-half-stars.svg"
-              width="90"
-            />
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-half-stars-dark.svg"
+              />
+              <img
+                alt="B-: 3.5 stars (out of 5)"
+                height="18"
+                src="/svg/3-half-stars.svg"
+                width="90"
+              />
+            </picture>
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_8_default__8lcvdk69 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_8_default__8lcvdk9u sprinkles_display_block_default__8lcvdk56"
             />
@@ -28517,12 +28535,18 @@ exports[`/watchlist/writers/{slug} can sort by release date with newest first 1`
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_4_default__8lcvdk66 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_4_default__8lcvdk9r sprinkles_display_block_default__8lcvdk56"
             />
-            <img
-              alt="B-: 3.5 stars (out of 5)"
-              height="18"
-              src="/svg/3-half-stars.svg"
-              width="90"
-            />
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-half-stars-dark.svg"
+              />
+              <img
+                alt="B-: 3.5 stars (out of 5)"
+                height="18"
+                src="/svg/3-half-stars.svg"
+                width="90"
+              />
+            </picture>
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_8_default__8lcvdk69 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_8_default__8lcvdk9u sprinkles_display_block_default__8lcvdk56"
             />
@@ -28620,12 +28644,18 @@ exports[`/watchlist/writers/{slug} can sort by release date with oldest first 1`
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_4_default__8lcvdk66 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_4_default__8lcvdk9r sprinkles_display_block_default__8lcvdk56"
             />
-            <img
-              alt="B-: 3.5 stars (out of 5)"
-              height="18"
-              src="/svg/3-half-stars.svg"
-              width="90"
-            />
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-half-stars-dark.svg"
+              />
+              <img
+                alt="B-: 3.5 stars (out of 5)"
+                height="18"
+                src="/svg/3-half-stars.svg"
+                width="90"
+              />
+            </picture>
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_8_default__8lcvdk69 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_8_default__8lcvdk9u sprinkles_display_block_default__8lcvdk56"
             />
@@ -34957,12 +34987,18 @@ exports[`/watchlist/writers/{slug} can sort by title 1`] = `
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_4_default__8lcvdk66 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_4_default__8lcvdk9r sprinkles_display_block_default__8lcvdk56"
             />
-            <img
-              alt="B-: 3.5 stars (out of 5)"
-              height="18"
-              src="/svg/3-half-stars.svg"
-              width="90"
-            />
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-half-stars-dark.svg"
+              />
+              <img
+                alt="B-: 3.5 stars (out of 5)"
+                height="18"
+                src="/svg/3-half-stars.svg"
+                width="90"
+              />
+            </picture>
             <span
               class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_8_default__8lcvdk69 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_8_default__8lcvdk9u sprinkles_display_block_default__8lcvdk56"
             />
@@ -40742,12 +40778,18 @@ exports[`/watchlist/writers/{slug} renders 1`] = `
                         <span
                           class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_4_default__8lcvdk66 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_4_default__8lcvdk9r sprinkles_display_block_default__8lcvdk56"
                         />
-                        <img
-                          alt="B-: 3.5 stars (out of 5)"
-                          height="18"
-                          src="/svg/3-half-stars.svg"
-                          width="90"
-                        />
+                        <picture>
+                          <source
+                            media="(prefers-color-scheme: dark)"
+                            srcset="/svg/3-half-stars-dark.svg"
+                          />
+                          <img
+                            alt="B-: 3.5 stars (out of 5)"
+                            height="18"
+                            src="/svg/3-half-stars.svg"
+                            width="90"
+                          />
+                        </picture>
                         <span
                           class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_8_default__8lcvdk69 sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_8_default__8lcvdk9u sprinkles_display_block_default__8lcvdk56"
                         />

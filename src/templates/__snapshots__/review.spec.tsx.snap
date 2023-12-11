@@ -251,12 +251,18 @@ exports[`/reviews/{slug} renders 1`] = `
           <div
             class="sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_inherit_default__8lcvdk1l"
           >
-            <img
-              alt="A: 5 stars (out of 5)"
-              height="32"
-              src="/svg/5-stars.svg"
-              width="160"
-            />
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/5-stars-dark.svg"
+              />
+              <img
+                alt="A: 5 stars (out of 5)"
+                height="32"
+                src="/svg/5-stars.svg"
+                width="160"
+              />
+            </picture>
             <div
               class="sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_color_subtle__8lcvdk8 sprinkles_alignItems_inherit_default__8lcvdk1l sprinkles_letterSpacing_0.5__8lcvdkw"
             >
@@ -932,13 +938,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="C+: 3 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1020,13 +1032,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D+: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1108,13 +1126,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D+: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1196,13 +1220,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="B-: 3.5 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/3-half-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="B-: 3.5 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1321,13 +1351,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="F: 1 star (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/1-star.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/1-star-dark.svg"
+                    />
+                    <img
+                      alt="F: 1 star (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/1-star.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1409,13 +1445,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D+: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1497,13 +1539,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="A-: 4.5 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/4-half-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="A-: 4.5 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/4-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1585,13 +1633,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="C+: 3 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1710,13 +1764,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D+: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1798,13 +1858,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D+: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1886,13 +1952,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="A-: 4.5 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/4-half-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="A-: 4.5 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/4-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -1974,13 +2046,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="B-: 3.5 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/3-half-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="B-: 3.5 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -2099,13 +2177,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="C+: 3 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -2187,13 +2271,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="C+: 3 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -2275,13 +2365,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="B: 4 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/4-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B: 4 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -2363,13 +2459,19 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="B: 4 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/4-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B: 4 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li

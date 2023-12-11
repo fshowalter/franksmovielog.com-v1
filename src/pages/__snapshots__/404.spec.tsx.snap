@@ -353,13 +353,19 @@ and reposting them. In the mean time, you can find them in the site’s
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -441,13 +447,19 @@ and reposting them. In the mean time, you can find them in the site’s
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D+: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -529,13 +541,19 @@ and reposting them. In the mean time, you can find them in the site’s
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="D+: 2 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
@@ -617,13 +635,19 @@ and reposting them. In the mean time, you can find them in the site’s
                 <div
                   class="StillListMovie_gridAreas_grade__1ug8mv54"
                 >
-                  <img
-                    alt="C+: 3 stars (out of 5)"
-                    class="StillListMovie_gradeStyle__1ug8mv50"
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
                 </div>
               </li>
               <li
