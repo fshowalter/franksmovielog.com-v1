@@ -3,35 +3,35 @@
 exports[`/ renders home page 1`] = `
 <DocumentFragment>
   <a
-    class="Layout_skipToMainContentStyle__1965ugi3 sprinkles_paddingLeft_24_default__8lcvdkef sprinkles_paddingRight_24_default__8lcvdkgi sprinkles_paddingTop_8_default__8lcvdkif sprinkles_paddingBottom_8_default__8lcvdkd3 sprinkles_backgroundColor_subtle_default__8lcvdk29 sprinkles_color_accent__8lcvdk5 sprinkles_textAlign_center__8lcvdk19"
+    class="Layout_skipToMainContentStyle__1965ugi3 sprinkles_paddingLeft_24_default__8lcvdkeg sprinkles_paddingRight_24_default__8lcvdkgj sprinkles_paddingTop_8_default__8lcvdkig sprinkles_paddingBottom_8_default__8lcvdkd4 sprinkles_backgroundColor_subtle_default__8lcvdk2a sprinkles_color_accent__8lcvdk6 sprinkles_textAlign_center__8lcvdk1a"
     href="#content"
   >
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_width_full_default__8lcvdkn0"
+    class="Layout_bandStickyStyle__1965ugi1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_width_full_default__8lcvdkn1"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk23 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk24 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3 sprinkles_paddingTop_24_default__8lcvdkil sprinkles_paddingTop_32_desktop__8lcvdkiq sprinkles_paddingBottom_24_default__8lcvdkd9 sprinkles_paddingBottom_32_desktop__8lcvdkde sprinkles_display_flex_default__8lcvdk5c sprinkles_rowGap_24_default__8lcvdkjx sprinkles_alignItems_center_default__8lcvdk1i sprinkles_boxShadow_borderBottom_default__8lcvdk2x sprinkles_backgroundColor_default_default__8lcvdk23"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_24_default__8lcvdkim sprinkles_paddingTop_32_desktop__8lcvdkir sprinkles_paddingBottom_24_default__8lcvdkda sprinkles_paddingBottom_32_desktop__8lcvdkdf sprinkles_display_flex_default__8lcvdk5d sprinkles_rowGap_24_default__8lcvdkjy sprinkles_alignItems_center_default__8lcvdk1j sprinkles_boxShadow_borderBottom_default__8lcvdk2y sprinkles_backgroundColor_default_default__8lcvdk24"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_inherit_default__8lcvdk1l sprinkles_justifyItems_inherit__8lcvdku"
+        class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_inherit_default__8lcvdk1m sprinkles_justifyItems_inherit__8lcvdkv"
       >
         <h1
-          class="Mast_flagTypographyStyle__17la42y0 sprinkles_whiteSpace_nowrap__8lcvdk1e sprinkles_fontWeight_normal__8lcvdkq"
+          class="Mast_flagTypographyStyle__17la42y0 sprinkles_whiteSpace_nowrap__8lcvdk1f sprinkles_fontWeight_normal__8lcvdkr"
         >
           <a
-            class="sprinkles_color_default__8lcvdk6"
+            class="sprinkles_color_default__8lcvdk7"
             href="/"
           >
             Frank's Movie Log
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y1 sprinkles_color_muted__8lcvdk7 sprinkles_lineHeight_16__8lcvdkz sprinkles_width_full_default__8lcvdkn0 sprinkles_fontSize_small__8lcvdkk"
+          class="Mast_taglineStyle__17la42y1 sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_16__8lcvdk10 sprinkles_width_full_default__8lcvdkn1 sprinkles_fontSize_small__8lcvdkl"
         >
           My life at the movies.
         </p>
@@ -39,12 +39,12 @@ exports[`/ renders home page 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y3 sprinkles_boxShadow_borderAll_default__8lcvdk30 sprinkles_borderRadius_4__8lcvdk1 sprinkles_overflow_hidden__8lcvdk16 sprinkles_width_full_default__8lcvdkn0 sprinkles_width_unset_desktop__8lcvdkn8 sprinkles_maxWidth_prose_default__8lcvdk9c"
+        class="Mast_orderStyle__17la42y3 sprinkles_boxShadow_borderAll_default__8lcvdk31 sprinkles_borderRadius_4__8lcvdk1 sprinkles_overflow_hidden__8lcvdk17 sprinkles_width_full_default__8lcvdkn1 sprinkles_width_unset_desktop__8lcvdkn9 sprinkles_maxWidth_prose_default__8lcvdk9d"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk5c sprinkles_overflow_hidden__8lcvdk16"
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_overflow_hidden__8lcvdk17"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/ renders home page 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkec sprinkles_paddingRight_16_default__8lcvdkgf sprinkles_paddingTop_8_default__8lcvdkif sprinkles_paddingBottom_8_default__8lcvdkd3 sprinkles_backgroundColor_subtle_default__8lcvdk29 sprinkles_color_default__8lcvdk6 sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_24__8lcvdk10 sprinkles_flexGrow_1__8lcvdkh"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdked sprinkles_paddingRight_16_default__8lcvdkgg sprinkles_paddingTop_8_default__8lcvdkig sprinkles_paddingBottom_8_default__8lcvdkd4 sprinkles_backgroundColor_subtle_default__8lcvdk2a sprinkles_color_default__8lcvdk7 sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_24__8lcvdk11 sprinkles_flexGrow_1__8lcvdki"
             id="search"
             name="q"
             placeholder="Search..."
@@ -66,7 +66,7 @@ exports[`/ renders home page 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk29"
+            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk2a"
             type="submit"
             value="Search"
           >
@@ -90,56 +90,56 @@ exports[`/ renders home page 1`] = `
         </label>
       </form>
       <nav
-        class="sprinkles_color_accent__8lcvdk5"
+        class="sprinkles_color_accent__8lcvdk6"
       >
         <ul
-          class="sprinkles_display_flex_default__8lcvdk5c sprinkles_flexWrap_wrap_default__8lcvdk5x sprinkles_justifyContent_center_default__8lcvdk7c sprinkles_rowGap_8_default__8lcvdkjr sprinkles_columnGap_16_default__8lcvdk3c sprinkles_columnGap_24_tablet__8lcvdk3g"
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexWrap_wrap_default__8lcvdk5y sprinkles_justifyContent_center_default__8lcvdk7d sprinkles_rowGap_8_default__8lcvdkjs sprinkles_columnGap_16_default__8lcvdk3d sprinkles_columnGap_24_tablet__8lcvdk3h"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/viewings/"
             >
               Viewing Log
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/watchlist/"
             >
               Watchlist
@@ -149,33 +149,34 @@ exports[`/ renders home page 1`] = `
       </nav>
     </header>
     <div
-      class="sprinkles_flexGrow_1__8lcvdkh"
+      class="sprinkles_flexGrow_1__8lcvdki"
       id="content"
     >
       <main>
         <ol
-          class="sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u"
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v"
         >
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 09 Dec 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/christmas-evil-1980/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -226,26 +227,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/christmas-evil-1980/"
                     rel="canonical"
                   >
                     Christmas Evil 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1980
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -260,18 +261,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by Lewis Jackson. Starring Brandon Maggart, Jeffrey DeMunn, Dianne Hull,  and Andy Fenwick.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     <em>
@@ -290,25 +291,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 09 Dec 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/silent-night-deadly-night-part-2-1987/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -359,26 +361,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/silent-night-deadly-night-part-2-1987/"
                     rel="canonical"
                   >
                     Silent Night, Deadly Night Part 2 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1987
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -393,18 +395,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by Lee Harry. Starring Eric Freeman, James Newman, Elizabeth Kaitan,  and Jean Miller.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     In a psychiatric hospital several years after 
@@ -426,25 +428,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 20 Oct 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/the-death-kiss-1932/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -495,26 +498,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/the-death-kiss-1932/"
                     rel="canonical"
                   >
                     The Death Kiss 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1932
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -529,18 +532,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by Edwin L. Marin. Starring David Manners, Adrienne Ames, Bela Lugosi,  and John Wray.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     David Manners plays a screenwriter investigating an on-set murder after his actress girlfriend finds herself under suspicion. Edward Van Sloan plays a director, and Bela Lugosi is a studio manager. Despite reuniting three of 
@@ -564,25 +567,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 13 Oct 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/friday-the-13th-part-vii-the-new-blood-1988/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -633,26 +637,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/friday-the-13th-part-vii-the-new-blood-1988/"
                     rel="canonical"
                   >
                     Friday the 13th: The New Blood 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1988
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -667,18 +671,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by John Carl Buechler. Starring Jennifer Banko, John Otrin, Susan Blu,  and Lar Park-Lincoln.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     I came with an open mind. I’d heard rumblings this Jason meets 
@@ -702,25 +706,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 10 Oct 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/eggshells-1969/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -771,26 +776,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/eggshells-1969/"
                     rel="canonical"
                   >
                     Eggshells 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1969
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -805,18 +810,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by Tobe Hooper. Starring Mahlon Foreman, Ron Barnhart, Amy Lester,  and Kim Henkel.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     Watch it with the commentary. 
@@ -832,25 +837,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 28 Sep 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/bones-and-all-2022/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -901,26 +907,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/bones-and-all-2022/"
                     rel="canonical"
                   >
                     Bones and All 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       2022
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -935,18 +941,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by Luca Guadagnino. Starring Kendle Coffey, Taylor Russell, André Holland,  and Ellie Parker.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     A convincing performance from Timothée Chalamet, evocative cinematography, and unsettling horror. It’s even set in the 1980s. So why does it underwhelm? 
@@ -966,25 +972,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 25 Sep 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/the-night-they-raided-minskys-1968/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -1035,26 +1042,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/the-night-they-raided-minskys-1968/"
                     rel="canonical"
                   >
                     The Night They Raided Minsky's 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1968
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -1069,18 +1076,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by William Friedkin. Starring Jason Robards, Britt Ekland, Norman Wisdom,  and Forrest Tucker.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     For his second feature, director William Friedkin tries another musical comedy, this one about the waning days of burlesque. He should have known better, but given the circumstances, I understand. 
@@ -1096,25 +1103,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 23 Sep 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/street-of-chance-1930/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -1165,26 +1173,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/street-of-chance-1930/"
                     rel="canonical"
                   >
                     Street of Chance 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1930
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -1199,18 +1207,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by John Cromwell. Starring William Powell, Jean Arthur, Kay Francis,  and Regis Toomey.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     William Powell plays John Marsden, a bond broker who makes his money as “Natural” Davis, New York City’s premier gambler. The story sees him try an exit the gambling life and reconcile with his estranged wife, played by Kay Francis. Conflict arises when Powell’s kid brother arrives from San Francisco, eager to take on the legendary “Natural” Davis, unaware Davis and Marsden are the same man. 
@@ -1226,25 +1234,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 21 Sep 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/night-of-the-demons-1988/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -1295,26 +1304,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/night-of-the-demons-1988/"
                     rel="canonical"
                   >
                     Night of the Demons 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1988
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -1329,18 +1338,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by Kevin Tenney. Starring Hal Havins, Allison Barron, Alvin Alexis,  and Harold Ayer.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     High-school teens stage a Halloween party in an abandoned funeral home only to fall prey to demons who murder them and possess their corpses. Remind you of anything? 
@@ -1356,25 +1365,26 @@ exports[`/ renders home page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__8lcvdk5c sprinkles_backgroundColor_zebra_default__8lcvdk2l"
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
           >
             <article
-              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3"
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
             >
               <div
-                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkp sprinkles_color_subtle__8lcvdk8 sprinkles_fontSize_small__8lcvdkk sprinkles_textTransform_uppercase__8lcvdk1b sprinkles_lineHeight_16__8lcvdkz sprinkles_letterSpacing_0.75__8lcvdkx"
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
               >
                 19 Sep 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9c"
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
               >
                 <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
                   href="/reviews/frankenhooker-1990/"
                   rel="canonical"
                 >
                   <div
-                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained HomePageItem_stillBorderStyle__1ji0yx10"
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
                     data-gatsby-image-wrapper=""
                     style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
                   >
@@ -1425,26 +1435,26 @@ exports[`/ renders home page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5c sprinkles_flexDirection_column_default__8lcvdk5u sprinkles_alignItems_center_default__8lcvdk1i sprinkles_alignItems_flex-start_desktop__8lcvdk1q"
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
               >
                 <h2
-                  class="sprinkles_fontWeight_bold__8lcvdks sprinkles_fontSize_large__8lcvdkn"
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
                 >
                   <a
-                    class="sprinkles_color_default__8lcvdk6 sprinkles_display_inline-block_default__8lcvdk5l"
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
                     href="/reviews/frankenhooker-1990/"
                     rel="canonical"
                   >
                     Frankenhooker 
                     <span
-                      class="sprinkles_color_subtle__8lcvdk8 sprinkles_display_inline-block_default__8lcvdk5l sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_light__8lcvdkp sprinkles_lineHeight_1__8lcvdky"
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
                     >
                       1990
                     </span>
                   </a>
                 </h2>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_16_default__8lcvdk6c sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_16_default__8lcvdk9x sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
                 />
                 <picture>
                   <source
@@ -1459,18 +1469,18 @@ exports[`/ renders home page 1`] = `
                   />
                 </picture>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <p
-                  class="sprinkles_fontSize_default__8lcvdkl sprinkles_fontWeight_normal__8lcvdkq sprinkles_color_subtle__8lcvdk8 sprinkles_letterSpacing_0.25__8lcvdkv sprinkles_lineHeight_default__8lcvdk15"
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
                 >
                   Directed by Frank Henenlotter. Starring James Lorinz, Joanne Ritchie, Patty Mullen,  and J.J. Clark.
                 </p>
                 <span
-                  class="sprinkles_width_px_default__8lcvdkmu sprinkles_height_24_default__8lcvdk6f sprinkles_minWidth_px_default__8lcvdkc3 sprinkles_minHeight_24_default__8lcvdka0 sprinkles_display_block_default__8lcvdk56"
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
                 />
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkp"
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
                 >
                   <p>
                     Don’t let the title fool you. Director and co-writer Frank Henenlotter’s story of a man’s misguided attempt to reanimate his deceased fiancée by attaching her severed head to a sex worker’s body sports a surprising streak of feminist and trans-positive satire beneath its gory black comedy. 
@@ -1491,7 +1501,7 @@ exports[`/ renders home page 1`] = `
           </li>
         </ol>
         <a
-          class="sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3 sprinkles_paddingTop_40_default__8lcvdkir sprinkles_paddingBottom_40_default__8lcvdkdf sprinkles_justifyContent_flex-end_default__8lcvdk7f sprinkles_display_flex_default__8lcvdk5c sprinkles_fontSize_medium__8lcvdkm"
+          class="sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_40_default__8lcvdkis sprinkles_paddingBottom_40_default__8lcvdkdg sprinkles_justifyContent_flex-end_default__8lcvdk7g sprinkles_display_flex_default__8lcvdk5d sprinkles_fontSize_medium__8lcvdkn"
           href="/reviews/"
         >
           All Reviews →
@@ -1499,57 +1509,57 @@ exports[`/ renders home page 1`] = `
       </main>
     </div>
     <footer
-      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_paddingLeft_pageMargin_default__8lcvdkg0 sprinkles_paddingRight_pageMargin_default__8lcvdki3 sprinkles_paddingTop_32_default__8lcvdkio sprinkles_paddingBottom_32_default__8lcvdkdc sprinkles_color_inverse__8lcvdk9 sprinkles_display_flex_default__8lcvdk5c sprinkles_rowGap_24_default__8lcvdkjx sprinkles_alignItems_center_default__8lcvdk1i sprinkles_flexDirection_column_default__8lcvdk5u"
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_32_default__8lcvdkip sprinkles_paddingBottom_32_default__8lcvdkdd sprinkles_color_inverse__8lcvdka sprinkles_display_flex_default__8lcvdk5d sprinkles_rowGap_24_default__8lcvdkjy sprinkles_alignItems_center_default__8lcvdk1j sprinkles_flexDirection_column_default__8lcvdk5v"
     >
       <nav>
         <ul
-          class="sprinkles_display_flex_default__8lcvdk5c sprinkles_flexWrap_wrap_default__8lcvdk5x sprinkles_justifyContent_center_default__8lcvdk7c sprinkles_rowGap_8_default__8lcvdkjr sprinkles_columnGap_16_default__8lcvdk3c sprinkles_columnGap_24_tablet__8lcvdk3g"
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexWrap_wrap_default__8lcvdk5y sprinkles_justifyContent_center_default__8lcvdk7d sprinkles_rowGap_8_default__8lcvdkjs sprinkles_columnGap_16_default__8lcvdk3d sprinkles_columnGap_24_tablet__8lcvdk3h"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/viewings/"
             >
               Viewing Log
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk56 sprinkles_letterSpacing_0.5__8lcvdkw sprinkles_whiteSpace_nowrap__8lcvdk1e"
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
           >
             <a
-              class="sprinkles_color_inherit__8lcvdka"
+              class="sprinkles_color_inherit__8lcvdkb"
               href="/watchlist/"
             >
               Watchlist
@@ -1558,11 +1568,11 @@ exports[`/ renders home page 1`] = `
         </ul>
       </nav>
       <p
-        class="sprinkles_fontWeight_light__8lcvdkp sprinkles_fontSize_small__8lcvdkk sprinkles_lineHeight_16__8lcvdkz"
+        class="sprinkles_fontWeight_light__8lcvdkq sprinkles_fontSize_small__8lcvdkl sprinkles_lineHeight_16__8lcvdk10"
       >
         All stills used in accordance with the 
         <a
-          class="sprinkles_color_inherit__8lcvdka"
+          class="sprinkles_color_inherit__8lcvdkb"
           href="http://www.copyright.gov/title17/92chap1.html#107"
         >
           Fair Use Law.

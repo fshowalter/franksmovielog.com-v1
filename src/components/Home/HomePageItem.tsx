@@ -39,13 +39,18 @@ export function HomePageItem({ item, eagerLoadImage }: IItemProps) {
           {item.date}
         </GridArea>
         <GridArea name="still" maxWidth="prose">
-          <Link rel="canonical" to={`/reviews/${item.slug}/`}>
+          <Link
+            rel="canonical"
+            to={`/reviews/${item.slug}/`}
+            className={stillBorderStyle}
+            display="block"
+          >
             <Still
               title={item.title}
               year={item.year}
               image={item.still}
               loading={eagerLoadImage ? "eager" : "lazy"}
-              className={stillBorderStyle}
+              borderRadius={12}
             />
           </Link>
         </GridArea>

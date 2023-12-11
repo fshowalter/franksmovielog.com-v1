@@ -6,7 +6,7 @@ import { height, size, width } from "./sizes.css";
 const unresponsiveAtomicProperties = defineProperties({
   properties: {
     alignSelf: ["flex-start"],
-    borderRadius: { half: "50%", 4: "4px", 8: "8px", 24: "24px" },
+    borderRadius: { half: "50%", 4: "4px", 8: "8px", 12: "12px", 24: "24px" },
     color: foregroundColors,
     flex: [1],
     flexBasis: { 352: "352px", 360: "424px", full: "100% !important" },
