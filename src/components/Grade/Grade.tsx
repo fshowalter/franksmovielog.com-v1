@@ -35,12 +35,18 @@ export function Grade({
   const width = height * 5;
 
   return (
-    <img
-      src={src}
-      alt={`${grade}: ${alt}`}
-      height={height}
-      width={width}
-      className={className}
-    />
+    <picture>
+      <source
+        srcSet={src.replace(".svg", "-dark.svg")}
+        media="(prefers-color-scheme: dark)"
+      />
+      <img
+        src={src}
+        alt={`${grade}: ${alt}`}
+        height={height}
+        width={width}
+        className={className}
+      />
+    </picture>
   );
 }

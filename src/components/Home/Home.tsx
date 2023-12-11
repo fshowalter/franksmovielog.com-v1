@@ -1,21 +1,13 @@
 import { useRef } from "react";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
+import { Link } from "../Link";
 import { HomePageItem } from "./HomePageItem";
-import { Pagination } from "./Pagination";
 
 export function Home({
   items,
-  currentPageNumber,
-  numberOfItems,
-  skip,
-  limit,
 }: {
   items: readonly Queries.HomePageItemFragment[];
-  currentPageNumber: number;
-  numberOfItems: number;
-  skip: number;
-  limit: number;
 }): JSX.Element {
   const listHeader = useRef<HTMLDivElement>(null);
 
@@ -29,22 +21,20 @@ export function Home({
                 key={item.sequence}
                 item={item}
                 eagerLoadImage={index === 0}
-                counterValue={numberOfItems - skip - index}
               />
             );
           })}
         </Box>
-        <Pagination
-          currentPage={currentPageNumber}
-          urlRoot="/"
-          perPage={limit}
-          numberOfItems={numberOfItems}
-          prevText="Newer"
-          nextText="Older"
+        <Link
+          to="/reviews/"
           paddingX="pageMargin"
           paddingY={40}
-          justifyContent="center"
-        />
+          justifyContent="flex-end"
+          display="flex"
+          fontSize="medium"
+        >
+          All Reviews →
+        </Link>
       </Box>
     </Layout>
   );

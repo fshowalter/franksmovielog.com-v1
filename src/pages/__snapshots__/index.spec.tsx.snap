@@ -1,0 +1,1593 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/ renders home page 1`] = `
+<DocumentFragment>
+  <a
+    class="Layout_skipToMainContentStyle__1965ugi3 sprinkles_paddingLeft_24_default__8lcvdkeg sprinkles_paddingRight_24_default__8lcvdkgj sprinkles_paddingTop_8_default__8lcvdkig sprinkles_paddingBottom_8_default__8lcvdkd4 sprinkles_backgroundColor_subtle_default__8lcvdk2a sprinkles_color_accent__8lcvdk6 sprinkles_textAlign_center__8lcvdk1a"
+    href="#content"
+  >
+    Skip to content
+  </a>
+  <div
+    class="Layout_bandStickyStyle__1965ugi1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_width_full_default__8lcvdkn1"
+  />
+  <div
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk24 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v"
+  >
+    <header
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_24_default__8lcvdkim sprinkles_paddingTop_32_desktop__8lcvdkir sprinkles_paddingBottom_24_default__8lcvdkda sprinkles_paddingBottom_32_desktop__8lcvdkdf sprinkles_display_flex_default__8lcvdk5d sprinkles_rowGap_24_default__8lcvdkjy sprinkles_alignItems_center_default__8lcvdk1j sprinkles_boxShadow_borderBottom_default__8lcvdk2y sprinkles_backgroundColor_default_default__8lcvdk24"
+    >
+      <div
+        class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_inherit_default__8lcvdk1m sprinkles_justifyItems_inherit__8lcvdkv"
+      >
+        <h1
+          class="Mast_flagTypographyStyle__17la42y0 sprinkles_whiteSpace_nowrap__8lcvdk1f sprinkles_fontWeight_normal__8lcvdkr"
+        >
+          <a
+            class="sprinkles_color_default__8lcvdk7"
+            href="/"
+          >
+            Frank's Movie Log
+          </a>
+        </h1>
+        <p
+          class="Mast_taglineStyle__17la42y1 sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_16__8lcvdk10 sprinkles_width_full_default__8lcvdkn1 sprinkles_fontSize_small__8lcvdkl"
+        >
+          My life at the movies.
+        </p>
+      </div>
+      <form
+        accept-charset="UTF-8"
+        action="https://www.google.com/search"
+        class="Mast_orderStyle__17la42y3 sprinkles_boxShadow_borderAll_default__8lcvdk31 sprinkles_borderRadius_4__8lcvdk1 sprinkles_overflow_hidden__8lcvdk17 sprinkles_width_full_default__8lcvdkn1 sprinkles_width_unset_desktop__8lcvdkn9 sprinkles_maxWidth_prose_default__8lcvdk9d"
+        method="get"
+        role="search"
+      >
+        <label
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_overflow_hidden__8lcvdk17"
+          for="search"
+        >
+          <div
+            class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
+          >
+            Search
+          </div>
+          <input
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdked sprinkles_paddingRight_16_default__8lcvdkgg sprinkles_paddingTop_8_default__8lcvdkig sprinkles_paddingBottom_8_default__8lcvdkd4 sprinkles_backgroundColor_subtle_default__8lcvdk2a sprinkles_color_default__8lcvdk7 sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_24__8lcvdk11 sprinkles_flexGrow_1__8lcvdki"
+            id="search"
+            name="q"
+            placeholder="Search..."
+            type="text"
+          />
+          <input
+            name="q"
+            type="hidden"
+            value="site:www.franksmovielog.com"
+          />
+          <button
+            aria-label="Search"
+            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk2a"
+            type="submit"
+            value="Search"
+          >
+            <svg
+              class="SiteSearchForm_iconStyle__1pnfbha2 SvgIcon_iconStyle__agywp20"
+              height="1em"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                fill-rule="evenodd"
+              />
+              <path
+                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </label>
+      </form>
+      <nav
+        class="sprinkles_color_accent__8lcvdk6"
+      >
+        <ul
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexWrap_wrap_default__8lcvdk5y sprinkles_justifyContent_center_default__8lcvdk7d sprinkles_rowGap_8_default__8lcvdkjs sprinkles_columnGap_16_default__8lcvdk3d sprinkles_columnGap_24_tablet__8lcvdk3h"
+        >
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/viewings/"
+            >
+              Viewing Log
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/watchlist/"
+            >
+              Watchlist
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="sprinkles_flexGrow_1__8lcvdki"
+      id="content"
+    >
+      <main>
+        <ol
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v"
+        >
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                09 Dec 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/christmas-evil-1980/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACxUlEQVR42i2S7U/SURiGf7z9QMBCRCUlSSQM8J0U40VFEASkQEwJRTQpWylTW83KrbIPZqi55prNP/bqgH64d87O9lznfu7nkbRaNWpZhVKtbEihVDQkKSQGPB5Wi6u8KJXYfr/H2eUlZ38u6R/wolZKGJtkTAYZS7OWLrMBe7sJSae7Aao0qgZIp9cxEY0xm84wl0xS3FinXNnk0+EXjk+O+Xv1j5NfNdx2G70C4Lpnps9mwWvvwOd2INUdaoRUAlp3ZTabmIzOEs88IzQZJvB4mKmJUZ7Px3m9nGdrpSCgV3w+OGDM7aS/ux2PUN/9dgacXUhNOo0A3jpUqcRdg63bRiAUJpVJ88Q3hL3FgNvaQnrITS7o40N1i4uLc+LTIextRgGz4BIuXffbkPRNamTR9g1QgVYn0/vIQyQaIVMHjg7i6jDjvWdh2mHHJwoXZkPUase8qrykx2qm22qip6uVvh7h0NCkoZ6jUlaiFSF7hoYJJ9Ik5maJzUwx3Odg0u0i4x8nNTpCORYh5h/i6MdXzi8uGBcdWFv0ODpb8Thtty3LAqhR0tXZQT6XJ/98manQBInYDLHJIOHhfgr5BZazWd5XdygtLbC/V+Xq+pq1chlZVqDXazAatQJYdyic1dt22KykvG7WZiJEw09IJxNCc+RyWVZXirwQ0OrONt+OfrC/W6V2ekrt/DdeUSNJEioxXOFQhVpkV38Ye/iQYiDEejBAdNzHVMBPfjFPeWODYmGZUrHA1qtNATzi2/fvHDZW6Scl8VmzXnuzKRZzM97BQR6IwGfE+TG7yPqYD2dbCw/EMKLBCRaeZVhazFIuFalsrPHuTYXd6jaba6vMp+N4Hzm5YzKiqAOTmSzbB4f4/WO4Wu+SFAPwd1oxCNcuWwfBkQFSkTBxkWkulWgA325VWBGfFEb6ebv0lPM/pyQzycYe/wcUsmhzAIsAjgAAAABJRU5ErkJggg=="
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        srcset="/static/8a7671d38bd11ec7ee4ee4541b3ba435/cd5c3/christmas-evil-1980.avif 128w,/static/8a7671d38bd11ec7ee4ee4541b3ba435/8adcb/christmas-evil-1980.avif 256w,/static/8a7671d38bd11ec7ee4ee4541b3ba435/f3f04/christmas-evil-1980.avif 512w,/static/8a7671d38bd11ec7ee4ee4541b3ba435/fc0bd/christmas-evil-1980.avif 1024w"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Christmas Evil (1980)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        decoding="async"
+                        loading="eager"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        src="/static/8a7671d38bd11ec7ee4ee4541b3ba435/825d5/christmas-evil-1980.jpg"
+                        srcset="/static/8a7671d38bd11ec7ee4ee4541b3ba435/52d9c/christmas-evil-1980.jpg 128w,/static/8a7671d38bd11ec7ee4ee4541b3ba435/773a4/christmas-evil-1980.jpg 256w,/static/8a7671d38bd11ec7ee4ee4541b3ba435/825d5/christmas-evil-1980.jpg 512w,/static/8a7671d38bd11ec7ee4ee4541b3ba435/e66e4/christmas-evil-1980.jpg 1024w"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/christmas-evil-1980/"
+                    rel="canonical"
+                  >
+                    Christmas Evil 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1980
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/4-stars-dark.svg"
+                  />
+                  <img
+                    alt="B+: 4 stars (out of 5)"
+                    height="32"
+                    src="/svg/4-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by Lewis Jackson. Starring Brandon Maggart, Jeffrey DeMunn, Dianne Hull,  and Andy Fenwick.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    <em>
+                      Christmas Evil
+                    </em>
+                     isn’t the sleazy Santa slasher you’d expect. 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/christmas-evil-1980/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                09 Dec 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/silent-night-deadly-night-part-2-1987/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAAC60lEQVR42hWS7U9adxiGTynxjQJHkPf3V4HDAWMRAR0IiNpV6BGRg6zW2K3VqrN0L0m3ZY61S9r4YVvmsiVLmu1b92Vftu/L/rNrv/4D13Nf9/1Iqdsh1HqGlU6FsBplobmA9rhDU69T7ZYpbOTofXSHRyOd7cMGpY0sSy2V/FoKpRwnvhjEn/Igu8w4AjakTCXOYmuBTCWNPWgXcIXuSZvBeY/h0z06B5voOw3ajRI/vHpO/3CT3GoSpRQllPbgnXcSygawCuCc14KUa2RJV5LiYpby+0V0AdGfauweaxw+03n705jvz5/w8uSYR5tVDvY2qO1UUESQqOojng8RTDmZdZpw+gQwLxRlt1noLdEXqTp7bfTHPZr3azx8ssNfVy/49/pH/n79HSd3GqTCblGBRrVX5XYri1qOkSlGCCo+LLMzSM6El2nrJNn3ogwuNGrVMgPtLt3hFvc/1PhTgP745Jw3ozO+0btE58yUhE2xlSNXTRITGygrKaL5MBGhLs3I01gcZkzeacaXF1ydnXK20WB/q0r/YYf/fvmVn4dD/hl/yZvjI77e2SKadhNf8JNYFBA1gC/mxhtzUthcRDLLM1jFVWniBsPWKq/adT5dK9DeXuXufoO3337F76cnXOn3+KJVY7dRJJb3ElM8ZJZjIpUPm8tCckmMW88K5aADs82EcdLArt7nolpgUFJJKBEcETunw3scVEtoaoyxtiUWr5EsBCnUsmLteVKFCJ6wHYdfxu2fRXKF5pgSHVrtVmr7x/hss/iSKZzhdyXf4vryOdd6m89X8vz2QZfXlyPW96pklwIE47IAWbG5LZgsk7jeAWXRn+GmhOywozQ1JMnAlMVGWcDXz8f0zl6w3eywls7RUgs8OBrRefaS9QdH4jM0gvMhZkw38QTs2J23kCanjNyQJKFtJbHSwmCcxjgxQWC1g6t2gFzuM6FuY0zUMfiXkbzLWIv7JLTPmO+MKA4+JqpERToZizzF/z5ZcYmFcML+AAAAAElFTkSuQmCC"
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/23447970805e090bfdea161b471806f6/cd5c3/silent-night-deadly-night-part-2-1987.avif 128w,/static/23447970805e090bfdea161b471806f6/8adcb/silent-night-deadly-night-part-2-1987.avif 256w,/static/23447970805e090bfdea161b471806f6/f3f04/silent-night-deadly-night-part-2-1987.avif 512w,/static/23447970805e090bfdea161b471806f6/fc0bd/silent-night-deadly-night-part-2-1987.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Silent Night, Deadly Night Part 2 (1987)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/23447970805e090bfdea161b471806f6/825d5/silent-night-deadly-night-part-2-1987.jpg"
+                        data-srcset="/static/23447970805e090bfdea161b471806f6/52d9c/silent-night-deadly-night-part-2-1987.jpg 128w,/static/23447970805e090bfdea161b471806f6/773a4/silent-night-deadly-night-part-2-1987.jpg 256w,/static/23447970805e090bfdea161b471806f6/825d5/silent-night-deadly-night-part-2-1987.jpg 512w,/static/23447970805e090bfdea161b471806f6/e66e4/silent-night-deadly-night-part-2-1987.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/silent-night-deadly-night-part-2-1987/"
+                    rel="canonical"
+                  >
+                    Silent Night, Deadly Night Part 2 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1987
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C: 3 stars (out of 5)"
+                    height="32"
+                    src="/svg/3-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by Lee Harry. Starring Eric Freeman, James Newman, Elizabeth Kaitan,  and Jean Miller.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    In a psychiatric hospital several years after 
+                    <a
+                      href="/reviews/silent-night-deadly-night-1984/"
+                    >
+                      the first film
+                    </a>
+                    , Ricky, the younger brother of the first film’s killer, recounts the events leading to his incarceration. He begins by re-telling the first movie. I knew going in that this entry recycled a ton of footage. Maybe this lessened the sense of feeling cheated. Regardless, I enjoyed this highlight reel of the first film’s sleazy bits. 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/silent-night-deadly-night-part-2-1987/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                20 Oct 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/the-death-kiss-1932/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACR0lEQVR42jWTy0tyURTFD2hmlkRUaljS09RCEEXFULOHkZYZaqJoqVj5mASm4KSoBhXOpEGNRPD/XB9rwzfYnHvuved31157XXV+fo5EIoF0Oo1QKITV1VXY7Xa4XC4cHBzg7u4OpVIJsVgMfPfo6AiHh4dYX1/HysoK1tbWYDabMT8/D4PBAMVDhDWbTTw8PMihnZ0d7O3tycGvry+Mx2OUy2WBhsNh+P1+gXi9XrleXl7G9PQ0ZmZmoDY3NwUQj8cxGAzw+fmJs7MzBAIB+Hw+XF9fYzQa4e/vD8ViUYAWiwULCwt4enrCxcWF7PV6PaampqCsViuMRiPcbjd+f3/x/PyMer2OWq2G09NTZLNZvL+/YzKZCOD+/h67u7tyuFKpoNPpiFqNRiMqlclkEi/YYi6XExVsnYd53Wq1UK1WBdTr9eQ+vVZKScs/Pz94fHwEhel0OqjFxUXZcAgOh0NWDoWeUiWhVHx7e4tGo4F8Po+bmxu0220Mh0MBfn9/y3tarRaKgP39fYGwFSpdWloSD3mYfnJlFQoFRKNRWT8+PsSK19dXvLy84O3tTYao2BKN397eFijXjY0NOJ1OnJycSEwymYyoIogpuLq6kqkzUuyCez7vdrtQ/7PFaRPk8Xjka4wIlfM5Y8XhpFIpJJNJKYqg53weiURk+rRFbW1tSUgZaBYjRBi9ZVipkgoJZV1eXiIYDAqUiukvP8R7tEPRL5bNZhMwBzQ7OyswZo2K2RIVHB8fSzHMhPAP6vf7kgAKm5ubwz9Mp4pso2sFRQAAAABJRU5ErkJggg=="
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/084f9ba228213fdf053944708d31c608/cd5c3/the-death-kiss-1932.avif 128w,/static/084f9ba228213fdf053944708d31c608/8adcb/the-death-kiss-1932.avif 256w,/static/084f9ba228213fdf053944708d31c608/f3f04/the-death-kiss-1932.avif 512w,/static/084f9ba228213fdf053944708d31c608/fc0bd/the-death-kiss-1932.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from The Death Kiss (1932)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/084f9ba228213fdf053944708d31c608/825d5/the-death-kiss-1932.jpg"
+                        data-srcset="/static/084f9ba228213fdf053944708d31c608/52d9c/the-death-kiss-1932.jpg 128w,/static/084f9ba228213fdf053944708d31c608/773a4/the-death-kiss-1932.jpg 256w,/static/084f9ba228213fdf053944708d31c608/825d5/the-death-kiss-1932.jpg 512w,/static/084f9ba228213fdf053944708d31c608/e66e4/the-death-kiss-1932.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/the-death-kiss-1932/"
+                    rel="canonical"
+                  >
+                    The Death Kiss 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1932
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-stars-dark.svg"
+                  />
+                  <img
+                    alt="D: 2 stars (out of 5)"
+                    height="32"
+                    src="/svg/2-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by Edwin L. Marin. Starring David Manners, Adrienne Ames, Bela Lugosi,  and John Wray.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    David Manners plays a screenwriter investigating an on-set murder after his actress girlfriend finds herself under suspicion. Edward Van Sloan plays a director, and Bela Lugosi is a studio manager. Despite reuniting three of 
+                    <a
+                      href="/reviews/dracula-1931/"
+                    >
+                      <em>
+                        Dracula
+                      </em>
+                    </a>
+                    ’s lead actors, it disappoints. 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/the-death-kiss-1932/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                13 Oct 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/friday-the-13th-part-vii-the-new-blood-1988/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpklEQVR42h2RZ3PiVhSGtYVeDAiQaAIEAhHqii46pphmYDe2N/HYu5PMZDL5/9+f3OXDnTtzynPec15pP+lzmttc76c8bZd8P6x5O+/5+fWRH9czLw9rNgOL78cd/72/8+/rK38/P7Ozu9jlNLOmydKqMW6YHOwe0m7U5jTrcVnafNtMed4v+ON0z8/LjqfVgodeA0tXKcTvuIqa98uW47TDuF6gqysCVL4BZ63feDtskbpminFTZ9ExWQ8bHOcdLqs+/zz/zuvpyNFuM6zqVFJR0Vzgq8hNGlnaRRUrG2NQyTFvmWKAwV/XI9J9v8Z21LzBHsYW+1mbl/2Sy3rDdtBhL1ar5DN4XG70lMph8oVxS8cqJmkJYM/MMq4VxBCD7bCN9LgYshtZbOyGUGYLkC3UfeO8XjEfDlj0emjxOOloGDOjsuxWmH4p0CokaaRjQmmanpFkVM3TMHSk02LAL5X7WZen/Zynw1yYceD1fOXlcOTPxwNWKSuAIcy8xmpQZ1jP0SyoVJMRmrkEHXHLvpHASCeEKZM2970Kp2WPs1C4m3bFzQzeHk9sxxOMXIayUKYnYlSLOVb9KoNqhkZewVTD1DSFekampcnEgz6kjV1nUM9TL2bQkzFyikxRjbGwmnSrJn6PEyUcIhEOIgf81PIqv4ysZ6OYSoiyEsYyNKbt5i0vjVoltFgYNRQg4nPffkPTqGRSLLpt+tUiVS2OIqa7HU58Thd3XjexgBcjGqQQ8TOoGZSzGo4PH5HyaoSoAGWid7ciJeghJYeI+H2UNKGkoCF7XfjdLrxOJxEB8zocBJwOVL9wPuyjqafIxCI4P35GKqVVcZMSHSFbF+vWdI2QaI4HA8g+L57Pn24An3gREZdvQCd+AQ+IWNzjxkzIt3rXJwf/A26sSxw7SBqeAAAAAElFTkSuQmCC"
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/6120020caf2f1f875502feb23acbd164/cd5c3/friday-the-13th-part-vii-the-new-blood-1988.avif 128w,/static/6120020caf2f1f875502feb23acbd164/8adcb/friday-the-13th-part-vii-the-new-blood-1988.avif 256w,/static/6120020caf2f1f875502feb23acbd164/f3f04/friday-the-13th-part-vii-the-new-blood-1988.avif 512w,/static/6120020caf2f1f875502feb23acbd164/fc0bd/friday-the-13th-part-vii-the-new-blood-1988.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Friday the 13th: The New Blood (1988)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/6120020caf2f1f875502feb23acbd164/825d5/friday-the-13th-part-vii-the-new-blood-1988.jpg"
+                        data-srcset="/static/6120020caf2f1f875502feb23acbd164/52d9c/friday-the-13th-part-vii-the-new-blood-1988.jpg 128w,/static/6120020caf2f1f875502feb23acbd164/773a4/friday-the-13th-part-vii-the-new-blood-1988.jpg 256w,/static/6120020caf2f1f875502feb23acbd164/825d5/friday-the-13th-part-vii-the-new-blood-1988.jpg 512w,/static/6120020caf2f1f875502feb23acbd164/e66e4/friday-the-13th-part-vii-the-new-blood-1988.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/friday-the-13th-part-vii-the-new-blood-1988/"
+                    rel="canonical"
+                  >
+                    Friday the 13th: The New Blood 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1988
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-stars-dark.svg"
+                  />
+                  <img
+                    alt="D+: 2 stars (out of 5)"
+                    height="32"
+                    src="/svg/2-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by John Carl Buechler. Starring Jennifer Banko, John Otrin, Susan Blu,  and Lar Park-Lincoln.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    I came with an open mind. I’d heard rumblings this Jason meets 
+                    <a
+                      href="/reviews/carrie-1976/"
+                    >
+                      <em>
+                        Carrie
+                      </em>
+                    </a>
+                     slasher was bad, but rumblings can be wrong. 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/friday-the-13th-part-vii-the-new-blood-1988/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                10 Oct 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/eggshells-1969/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC9UlEQVR42h2Sy3KadRiHuQGX7Zg0jrW2JY00NBgOIRAOAQKUhFOAj4+PQzhJBEIIw6EjgWJSTal20rE2rU6sk8TxMG6qLqoLV854AW5cufECvITHf7p45rd4Z555T6opjYHXr+u4eEXHxFU9r12YQa1ZJiq3yG+N6d77msPjF4wOT9nuP6S0vYstmOQts5tpt48Zn5dpn5sbfg+zQT+qN7QGLs0YuPj2udSAxV+jsHPCBw9+pXfvZ0YPX/L45A9+/O0v/vn3P37/829qwyN03riQOlE7PVx1OFC7Xa/kqslbJqbeMaC1BZFqT6gPf0F57xh/9IC1xMdEkvsoxQdUdj6n9+Epnb1vuTN+QWV4hs6vcElv4c1FG9Mu1yuxamJOz+U5D9W7P9D/9CWV3in9g+9ZTeyjdzSx+3aIpwaUG/eRiiMi2RF+eUCocEiud4bGFeOCRs+U0cykwYTq2pKL26VDlOZzSp1n2CJ32Wg8IZbdZy05oDd8Tq/zmMHgGdFkFylzB2+8xZy7ij3+EVLjKRM3rVw2elA7AqjMUovl7AH+TJeV9C7WcIvU5ic0+0c8+uIn9sbfsTv4kkppj6QQLXny6F1ZzMEaXmmXYvsEl3CY1gpYYmVU7nIffTSHeT3PYqyGOVIhXtmjPz4TfENn+BX11iO2O0dk8gOW/SUWPFkCiQa2tRq3PNt4lTaZTp3EjhDqEwracIL59SwLyQLGRJYlpYwz08CRauNJj5Crn7HZPea20scRrgoq6Nwy120SU6YIanuQaL1CpFlANS/HmY1F0MbCzMsSBkXCKDDJChY5z0quTbx6n/X3xzhlsZJ4W2SXGysyV5xBJk0urtk9xJo1wufChY0outQqmnWfIIBOCmHOyBhTSazpDdzFLRy5LSxSFWuijjG0KXKL2VVJPHNA/J4PfSyKPZ9iuSyLoxSjGHMh3hXSmzEf2ngAUzomiAtEx2ICazbDUrqINVVkUcriyuTFehKYRc15LiokMaVCmJQo/wOzz8RApc8rUAAAAABJRU5ErkJggg=="
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/13819517d0a3959e80b359d3835e66a4/cd5c3/eggshells-1969.avif 128w,/static/13819517d0a3959e80b359d3835e66a4/8adcb/eggshells-1969.avif 256w,/static/13819517d0a3959e80b359d3835e66a4/f3f04/eggshells-1969.avif 512w,/static/13819517d0a3959e80b359d3835e66a4/fc0bd/eggshells-1969.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Eggshells (1969)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/13819517d0a3959e80b359d3835e66a4/825d5/eggshells-1969.jpg"
+                        data-srcset="/static/13819517d0a3959e80b359d3835e66a4/52d9c/eggshells-1969.jpg 128w,/static/13819517d0a3959e80b359d3835e66a4/773a4/eggshells-1969.jpg 256w,/static/13819517d0a3959e80b359d3835e66a4/825d5/eggshells-1969.jpg 512w,/static/13819517d0a3959e80b359d3835e66a4/e66e4/eggshells-1969.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/eggshells-1969/"
+                    rel="canonical"
+                  >
+                    Eggshells 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1969
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-stars-dark.svg"
+                  />
+                  <img
+                    alt="D+: 2 stars (out of 5)"
+                    height="32"
+                    src="/svg/2-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by Tobe Hooper. Starring Mahlon Foreman, Ron Barnhart, Amy Lester,  and Kim Henkel.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    Watch it with the commentary. 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/eggshells-1969/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                28 Sep 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/bones-and-all-2022/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADGUlEQVR42h2R/VOTBQDHn1/q+sm4s6C7yK60Iio1PQmuTNjJa94UQ0icAs4H9sLDngFj42UPL7IXcCgwxmQDh27j1USyoeQcIJCQoUX693xa/fD54Xv3vc99777CJfd9Lg/EqBt8hORPYOzwoTG5kP1PMI+vYwokGd+gcWKDpiQtoQ3ao8/pmHqBNbSJOZBAuvkEafQ3jN5HCOKNGPrhh5j+KyteavancujtNyi6INE59xLbnWfYwtu0RbZRpraxR7bQWDwUlmtpGJhFiT5LitewTKzSNBZHkEaXaQzEsd7epMN7F9/FIq4c+4j8MxquPXjF1bk/6J7foWfueTK/xtx1g4Mfp5Ga8iaqU2X0zW/RHV1DCa/RFkogWCfitCeDe3adcPQBK55mDN9/gVayM/pwF88vL/As7nA9yeDSK6anZxm+mMWH76WgKlHjXfobz70tXDNP6YmuIHRFEvRPr7A4EiBYVYlDfZz2H7KZEDW8nBxj5ucEocRrgss7jD/exd7loDn/s/+FBz45QFevC+9UjKFf/2RwYRPBO/+YJWcbd+p/ovxwFqUZmWw5JVYselbaTKx1NTLQ6yayustsLHnUyc85nL6H/e+/w7t7U+guO0JUdxx/sueLLCAEFuLc9fXzT6SV+JBMf00pk7pzjNZW0GfQYCw8gs2k5/7vf9Ena9GeyGCy8xK5X+0jbc9bdEoapif9RFrPM1yZg3DTa8c30sl60IxPV4KpOIepxgoMpfl0N1TSq8kjfN1E1NeAs+woTrGY5VsKoV6RfukME9ckwoFmxoZMuC3nEHQXvsRam03CLxN3VfF1eipl3x7FVaWm5XwuIVlNyFqCo/U09Xo9ruSicLOae30iik1CluuwK2YaWmzUWroRaiuP4TGoGemUiQ0ZmXbWk3Eoi/IiFafysrjdIxJ26flGpUIn1uC0GtGKdSjVJZwuyMXQYkdud9B0dRDZ7kawXz5Jh/o76qsraFNMPF0Mcmu4B1ESSfsgHYfSwO7qDCfyCskpKMVmqKKnuoCgoRhD/kE+zczkx4JszMYrnNVo+RcMihmT0GrC/wAAAABJRU5ErkJggg=="
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/6615177e6d4747091277114c8c429f1f/cd5c3/bones-and-all-2022.avif 128w,/static/6615177e6d4747091277114c8c429f1f/8adcb/bones-and-all-2022.avif 256w,/static/6615177e6d4747091277114c8c429f1f/f3f04/bones-and-all-2022.avif 512w,/static/6615177e6d4747091277114c8c429f1f/fc0bd/bones-and-all-2022.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Bones and All (2022)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/6615177e6d4747091277114c8c429f1f/825d5/bones-and-all-2022.jpg"
+                        data-srcset="/static/6615177e6d4747091277114c8c429f1f/52d9c/bones-and-all-2022.jpg 128w,/static/6615177e6d4747091277114c8c429f1f/773a4/bones-and-all-2022.jpg 256w,/static/6615177e6d4747091277114c8c429f1f/825d5/bones-and-all-2022.jpg 512w,/static/6615177e6d4747091277114c8c429f1f/e66e4/bones-and-all-2022.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/bones-and-all-2022/"
+                    rel="canonical"
+                  >
+                    Bones and All 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      2022
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C+: 3 stars (out of 5)"
+                    height="32"
+                    src="/svg/3-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by Luca Guadagnino. Starring Kendle Coffey, Taylor Russell, André Holland,  and Ellie Parker.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    A convincing performance from Timothée Chalamet, evocative cinematography, and unsettling horror. It’s even set in the 1980s. So why does it underwhelm? 
+                    <strong>
+                      To explain, I must venture into spoilers.
+                    </strong>
+                     
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/bones-and-all-2022/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                25 Sep 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/the-night-they-raided-minskys-1968/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEklEQVR42iWR7U+bVRiHH9rnpX1aaCltB2RklRobGIs1BmQZW13UMgmWAbYFi7gMssJWhs5KuwphW5etvHSrnTIKSBiavTK2TKNLJEajHySaGBONiSbG+NF/wQ+XB/1wcnJy7lz3dd8/yWQ04NZkqlSFSlXFbVLRDWVcjh/huwfX2PwgTZO7HJeoqzFpqAYDiiRhE+/dZo16XcUiy/8dzWhEsux8mGRRrFCta9QKYKvPQ+f+vTTU1xF42sdYpANfpVXUKTgEpMXnpe0pD3VKGY1WDZuQqVBkzLIA2hUjXrOMx6JSqym4RHeP6DrS1sBUT4CpoJ/eJ3bxos3EAbvO8w1eRl8+RE+rnza3jWfK/5+qSkxpFZaSUzXisyh41DL8tdVk48OM9Q1SHIpyJ95ForWJDtFkwG4iXGEm9+oRvp9P0d7oIbDLQadDp04IuIRMhWBJNZpRaCvsMUi8OzTM1u2HLM4u8OGFy8x1HWR6IMZy/ARvuO0Mu+zcHInxbXac5ViQbqedQQEM2Hd2KYsMhOEeXcEnS4x1BHm8fptLyWmm35pmea7E3NuTzKYv8uePvzDf30ePMM13vsDjzHEyz3mJaQaOO6x0V5kI2FSRww5QlQh5qrlTWOTuwhorM0U21ze4v/QRS7kCucwMX9zc5J3YAGcD+7lxOsr29QS5wSCZZj+jLhtdNo0uh5mWChXJrxuI7HYyFAozOT7Jx8U1Pt94xNb7Wf64Ncen166SP1dgfT7HYjbFV2tJvlk/Q/7NY3y5fIXisT56BaxbjN4tbumwTSEkdnBUpNUrUmvx1uN01NDSuI/PchPkE0NcSM+y8V6R4tlhfnuQ4odPChQm05RSCRLRHpIHniUkgo26rEgv2WXClTrRcoXE3ic5Fz/Jidgo2dNJFibGOdS0j4XZRUoXc9y7muDvr3P89es2N/IzlJJxllJjZA43c1QA+13lSEG7QsRhIawbudTXz8PV+6zmVygJgzP9EV4JtPP79k+kT51i9XyYf36+zvbWJivnJ5h6PcLJUDsjB5t5zWkj5rDyLwl3nE/Upm8UAAAAAElFTkSuQmCC"
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/cd5c3/the-night-they-raided-minskys-1968.avif 128w,/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/8adcb/the-night-they-raided-minskys-1968.avif 256w,/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/f3f04/the-night-they-raided-minskys-1968.avif 512w,/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/fc0bd/the-night-they-raided-minskys-1968.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from The Night They Raided Minsky's (1968)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/825d5/the-night-they-raided-minskys-1968.jpg"
+                        data-srcset="/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/52d9c/the-night-they-raided-minskys-1968.jpg 128w,/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/773a4/the-night-they-raided-minskys-1968.jpg 256w,/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/825d5/the-night-they-raided-minskys-1968.jpg 512w,/static/23fb8c5d0d5aa09ac6eb43ddfde80c86/e66e4/the-night-they-raided-minskys-1968.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/the-night-they-raided-minskys-1968/"
+                    rel="canonical"
+                  >
+                    The Night They Raided Minsky's 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1968
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-stars-dark.svg"
+                  />
+                  <img
+                    alt="D: 2 stars (out of 5)"
+                    height="32"
+                    src="/svg/2-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by William Friedkin. Starring Jason Robards, Britt Ekland, Norman Wisdom,  and Forrest Tucker.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    For his second feature, director William Friedkin tries another musical comedy, this one about the waning days of burlesque. He should have known better, but given the circumstances, I understand. 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/the-night-they-raided-minskys-1968/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                23 Sep 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/street-of-chance-1930/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAAC40lEQVR42iWTV09TUQDHb3wwkRgHKogyFBQRREQfIAY0GsU9EuNCCYoyZJctBUopdUBFaJVNGS2UUfYyKggIBjVGDSPil/l57vHpPJx7/vsqszNT1FS95ID/Hrw93eX5MDaax3ExhIeFEnzIH89dOzgZGY72aQ6GsmIS4x+gKynEUvMKZ58Dp7ObTlsr9bU1KHOzAvB1Jfv8vAgM9ON4+DEOBvjiu3c3HjtdCTl8kMAAP6LOnKSv10GnvY3CghxOn4rgSEgg1uZ6errttLc2Ya42oSzMzwomE/v9vAkJDuBQkL9kHx8dJvlJPO5uW/DydCPm/m3m52f4/m2RXz9/EPfgHm47NqMtzGV4yImjs53mxlqUr4tfeF1VQXDQfvb5enE0NEgwdvJuYpTB/l4uXTzLNteN3I++KZxUYDFXMTE+wnOjnsiIMIzlOhy2Nqm0yvQCZXFxgcoKo8zKx8uda1cvSGsD/T3i7KJImyet3751nYoXRkyVz+l22LB1tEohbdZGzOrZ0iDJlNGRQRIex0p1W7e4SGs94sHk5BgrK0sY9EXs9tgmi7CYX+HosjE+NiRLaKiz0FT3hoZaM80Nb7F3WFGsAvnmjSvi0XZcNqxjr88uCTI40Men6Y9kpj+RREkJcVy5HIXRoMMplDfWv2FkqF8qUzO0t1vpaGtGUX2rAOWGEjGLXJIS48jPzZTy7e0tFORpOBd1ioy0JFKT46l7W422IJux4UH+rq3xTBC0iPxmPn1kYX4ORW1GzalUVyg21c3an1WR43mKRXvVYp+64gK5gmcifNVyjcgrRQCvrizT7+wlOysVTUYKZaVFQrETZXrqPXoBpi/Vig96ZBklRfmU6bRka1IpE+ozhO2crDQeiqloMpK5e+cGavZ6cZeTnY4mM5W0lAQMAkP5PDeDOp3lpd8isw9UvizHJFp/mp8l7TeJsNVJJCU+YtPG9XJWJ8RfoxeKVGf/AVMkebE2j3+/5RcYEJ0oFgAAAABJRU5ErkJggg=="
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/92290f92fc6784f7df1faf84d5c244b3/cd5c3/street-of-chance-1930.avif 128w,/static/92290f92fc6784f7df1faf84d5c244b3/8adcb/street-of-chance-1930.avif 256w,/static/92290f92fc6784f7df1faf84d5c244b3/f3f04/street-of-chance-1930.avif 512w,/static/92290f92fc6784f7df1faf84d5c244b3/fc0bd/street-of-chance-1930.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Street of Chance (1930)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/92290f92fc6784f7df1faf84d5c244b3/825d5/street-of-chance-1930.jpg"
+                        data-srcset="/static/92290f92fc6784f7df1faf84d5c244b3/52d9c/street-of-chance-1930.jpg 128w,/static/92290f92fc6784f7df1faf84d5c244b3/773a4/street-of-chance-1930.jpg 256w,/static/92290f92fc6784f7df1faf84d5c244b3/825d5/street-of-chance-1930.jpg 512w,/static/92290f92fc6784f7df1faf84d5c244b3/e66e4/street-of-chance-1930.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/street-of-chance-1930/"
+                    rel="canonical"
+                  >
+                    Street of Chance 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1930
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-stars-dark.svg"
+                  />
+                  <img
+                    alt="D+: 2 stars (out of 5)"
+                    height="32"
+                    src="/svg/2-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by John Cromwell. Starring William Powell, Jean Arthur, Kay Francis,  and Regis Toomey.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    William Powell plays John Marsden, a bond broker who makes his money as “Natural” Davis, New York City’s premier gambler. The story sees him try an exit the gambling life and reconcile with his estranged wife, played by Kay Francis. Conflict arises when Powell’s kid brother arrives from San Francisco, eager to take on the legendary “Natural” Davis, unaware Davis and Marsden are the same man. 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/street-of-chance-1930/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                21 Sep 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/night-of-the-demons-1988/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACmUlEQVR42h2Sy47jVBRF/RkIClFvJ3Ycu2In8Svx+/qVSqo6XaSqu9LQjeiegMQAJEbUoJmUGCDBRzBjxoSfW5ww2LrXsu46Z5+zNc8cYl0OcEY2sR/y4mbDZr0mWeb0/YqVKE8L0iRH1R11WfOiKPGmMW2ec13XLJOCUv5XixRt34T41gjzXGdqT9gIYHt7Q52XRI6LfT7k4rNTAtujkEd9WdGrhijOSdKSMldkywIlhYq8Qvtl3/CoQhx9IEBbulPs7u7o4pjJ0TG7NOWnx3uWtkssuq5qlAADfymwil3XcFvkrKXQ4Vt73wd8XfsEI5Mrw5TOQlpVU3pTgpNTnvYv+fv3j+yblsiacFsr7lcdSZzRlorXfc2rpmCrKqpCoW2XDl9mHurKJDUHpJ7L7npFv1iQG0Oe91v+evqZH3Z3ZDMpvu745qZjrVqaqpERiFWxrvKD5RrtNhqziR2WzohIFlQ5Fm/7intVUrsuf3x45J/nJ9pwQTaP2PY9jVirBdbJklrVkWcHWEO8KNEyWycVxbbB3DJFI1Sa0BUFmePw/OEN//75K99uOvokFUD7v3LppjmcAsvknskZLwq0wLhkYYlVsRxYBqk7lm4tjj75HH804uP71/z2/Tt+vF9jnOoYhkNZ1Ph+ItEqiUXLRIkqwkOHpYByUSjzC01dYIbM02AoCzn69AseVM53uzX1fIahW2wkg0GQML4KmAt0Nk8IooxAYhQucjR1NUS5Izz9gpl+JtALmqmNOzS4PD6j9n3aIKCVJUWzkFdtgx+kWHbAxI2YSsDNsc9wNGNgTtEKZ0BmD3HOTnDPj5kPTlgFU8KxI/Mc81Iy9iAL+mqzYub5PDQyK4mMbniMx3PJY8zJhcP5YCJQj/8ArJaAlUc1Q94AAAAASUVORK5CYII="
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/4da78c87cd158d5b81a5345b8b731104/cd5c3/night-of-the-demons-1988.avif 128w,/static/4da78c87cd158d5b81a5345b8b731104/8adcb/night-of-the-demons-1988.avif 256w,/static/4da78c87cd158d5b81a5345b8b731104/f3f04/night-of-the-demons-1988.avif 512w,/static/4da78c87cd158d5b81a5345b8b731104/fc0bd/night-of-the-demons-1988.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Night of the Demons (1988)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/4da78c87cd158d5b81a5345b8b731104/825d5/night-of-the-demons-1988.jpg"
+                        data-srcset="/static/4da78c87cd158d5b81a5345b8b731104/52d9c/night-of-the-demons-1988.jpg 128w,/static/4da78c87cd158d5b81a5345b8b731104/773a4/night-of-the-demons-1988.jpg 256w,/static/4da78c87cd158d5b81a5345b8b731104/825d5/night-of-the-demons-1988.jpg 512w,/static/4da78c87cd158d5b81a5345b8b731104/e66e4/night-of-the-demons-1988.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/night-of-the-demons-1988/"
+                    rel="canonical"
+                  >
+                    Night of the Demons 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1988
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-half-stars-dark.svg"
+                  />
+                  <img
+                    alt="C-: 2.5 stars (out of 5)"
+                    height="32"
+                    src="/svg/2-half-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by Kevin Tenney. Starring Hal Havins, Allison Barron, Alvin Alexis,  and Harold Ayer.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    High-school teens stage a Halloween party in an abandoned funeral home only to fall prey to demons who murder them and possess their corpses. Remind you of anything? 
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/night-of-the-demons-1988/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li
+            class="sprinkles_display_flex_default__8lcvdk5d sprinkles_backgroundColor_zebra_default__8lcvdk2m"
+          >
+            <article
+              class="HomePageItem_gridStyle__1ji0yx13 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            >
+              <div
+                class="HomePageItem_gridAreas_date__1ji0yx16 sprinkles_fontWeight_light__8lcvdkq sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_textTransform_uppercase__8lcvdk1c sprinkles_lineHeight_16__8lcvdk10 sprinkles_letterSpacing_0.75__8lcvdky"
+              >
+                19 Sep 2023
+              </div>
+              <div
+                class="HomePageItem_gridAreas_still__1ji0yx14 sprinkles_maxWidth_prose_default__8lcvdk9d"
+              >
+                <a
+                  class="HomePageItem_stillBorderStyle__1ji0yx10 sprinkles_display_block_default__8lcvdk57"
+                  href="/reviews/frankenhooker-1990/"
+                  rel="canonical"
+                >
+                  <div
+                    class="gatsby-image-wrapper gatsby-image-wrapper-constrained sprinkles_borderRadius_12__8lcvdk3"
+                    data-gatsby-image-wrapper=""
+                    style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                  >
+                    <div
+                      style="max-width: 512px; display: block;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        role="presentation"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='288'%20width='512'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                        style="max-width: 100%; display: block; position: static;"
+                      />
+                    </div>
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      data-placeholder-image=""
+                      decoding="async"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzUlEQVR42iWSa1MaZxiG+QntjO04k4k1iSaAMSmVlkSplkVAVFCowLIiyHJmOekSREAW8RBMCNq0nenH/NOrr/rh+XrN/dz3ZVIjGfLpKrlkmWw0R2xzF+ebV/h+WWDDZsH9h4THu8G6240kuQkFwtgtLzkMxOgWLxic3nHeusWo3mDUJpgyexmycoGsUqJ8oOF9v4Zt7if2V+14lyyYn8+yYLEyP/dCAAPkAiEWp79j3eGkr13SLV/SP/rE4PgL/eoYUy6SJ58okxNXUjRCniDuN2bk5besvn7J86nvcS5Ysc/Ns/zKwsGKA9/rOQ5DKr3SkG7l6hHYGGNUPmPKx0sUD2tk93LkIyVKcprClpuET0JasvFs+kd27D+zt7KK48Uzih4XafF+O92iI4CD9h1nlWsBG4mUtyJhrIiW1ykoImW0SK/Ywkgl0RNR1C0vsstJUlqjFY5y5N/ko6LQ2w1RDauPwA8TARrTL10zqN8D5fuEdXL7GplIDj3b5kY75kxA6+EdVPcqYYeDhn+bXiDAXTLN8M8Y9YPqQ3+Dk1uG7b8YinSPwEiRogC1MlXaB1m0aJJGPMW4dsJI08n4fLitVhLvVjAiESZqmtJWkEa6SbcwpKddYRyNOT+a0L/vUE9W+BCV6aQy6HsRVMmF8rsTNRCkm0yxNDODdeoH3s3MciErDBIK/uU12tkzOvkBRlPAmhPOa5/FygI40XuoXh9xyUPe56cWktnfCLIuhigHN7FOT/Hbk6d0tsP8W6lyLFLazVb0ZPPhZUN0aNSEg9qIfl1oMyrXSbjceN7aUF0S9USOWqlFfDtEU5FZWzRjm31KZXuHm4LGqRwj7t9FV09o5w3OO18Zdv4WTn4UCn3ClPL78f9qRxZaFMP7Dy4Oh/8xuPiHL/1rWnKUFfM80qKFxm6AUfmYydU3GuU+l2ffGJ5+fVi6L3rsVm74H2/1zacpYcAWAAAAAElFTkSuQmCC"
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                    />
+                    <picture>
+                      <source
+                        data-srcset="/static/c273204af0ec0ab2b8b87604950e1daa/cd5c3/frankenhooker-1990.avif 128w,/static/c273204af0ec0ab2b8b87604950e1daa/8adcb/frankenhooker-1990.avif 256w,/static/c273204af0ec0ab2b8b87604950e1daa/f3f04/frankenhooker-1990.avif 512w,/static/c273204af0ec0ab2b8b87604950e1daa/fc0bd/frankenhooker-1990.avif 1024w"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        type="image/avif"
+                      />
+                      <img
+                        alt="A still from Frankenhooker (1990)"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        data-src="/static/c273204af0ec0ab2b8b87604950e1daa/825d5/frankenhooker-1990.jpg"
+                        data-srcset="/static/c273204af0ec0ab2b8b87604950e1daa/52d9c/frankenhooker-1990.jpg 128w,/static/c273204af0ec0ab2b8b87604950e1daa/773a4/frankenhooker-1990.jpg 256w,/static/c273204af0ec0ab2b8b87604950e1daa/825d5/frankenhooker-1990.jpg 512w,/static/c273204af0ec0ab2b8b87604950e1daa/e66e4/frankenhooker-1990.jpg 1024w"
+                        decoding="async"
+                        loading="lazy"
+                        sizes="(min-width: 512px) 512px, 100vw"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                      />
+                    </picture>
+                    <noscript />
+                    <script
+                      type="module"
+                    >
+                      const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                    </script>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="HomePageItem_gridAreas_excerpt__1ji0yx15 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j sprinkles_alignItems_flex-start_desktop__8lcvdk1r"
+              >
+                <h2
+                  class="sprinkles_fontWeight_bold__8lcvdkt sprinkles_fontSize_large__8lcvdko"
+                >
+                  <a
+                    class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk5m"
+                    href="/reviews/frankenhooker-1990/"
+                    rel="canonical"
+                  >
+                    Frankenhooker 
+                    <span
+                      class="sprinkles_color_subtle__8lcvdk9 sprinkles_display_inline-block_default__8lcvdk5m sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_1__8lcvdkz"
+                    >
+                      1990
+                    </span>
+                  </a>
+                </h2>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_16_default__8lcvdk6d sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_display_block_default__8lcvdk57"
+                />
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-half-stars-dark.svg"
+                  />
+                  <img
+                    alt="B-: 3.5 stars (out of 5)"
+                    height="32"
+                    src="/svg/3-half-stars.svg"
+                    width="160"
+                  />
+                </picture>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <p
+                  class="sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_normal__8lcvdkr sprinkles_color_subtle__8lcvdk9 sprinkles_letterSpacing_0.25__8lcvdkw sprinkles_lineHeight_default__8lcvdk16"
+                >
+                  Directed by Frank Henenlotter. Starring James Lorinz, Joanne Ritchie, Patty Mullen,  and J.J. Clark.
+                </p>
+                <span
+                  class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_24_default__8lcvdk6g sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_24_default__8lcvdka1 sprinkles_display_block_default__8lcvdk57"
+                />
+                <div
+                  class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 HomePageItem_excerptContinueReadingLinkStyle__1ji0yx11 sprinkles_fontWeight_light__8lcvdkq"
+                >
+                  <p>
+                    Don’t let the title fool you. Director and co-writer Frank Henenlotter’s story of a man’s misguided attempt to reanimate his deceased fiancée by attaching her severed head to a sex worker’s body sports a surprising streak of feminist and trans-positive satire beneath its gory black comedy. 
+                    <strong>
+                      Spoilers follow.
+                    </strong>
+                     
+                    <a
+                      data-continue-reading=""
+                      href="/reviews/frankenhooker-1990/"
+                    >
+                      Continue reading...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ol>
+        <a
+          class="sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_40_default__8lcvdkis sprinkles_paddingBottom_40_default__8lcvdkdg sprinkles_justifyContent_flex-end_default__8lcvdk7g sprinkles_display_flex_default__8lcvdk5d sprinkles_fontSize_medium__8lcvdkn"
+          href="/reviews/"
+        >
+          All Reviews →
+        </a>
+      </main>
+    </div>
+    <footer
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_32_default__8lcvdkip sprinkles_paddingBottom_32_default__8lcvdkdd sprinkles_color_inverse__8lcvdka sprinkles_display_flex_default__8lcvdk5d sprinkles_rowGap_24_default__8lcvdkjy sprinkles_alignItems_center_default__8lcvdk1j sprinkles_flexDirection_column_default__8lcvdk5v"
+    >
+      <nav>
+        <ul
+          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexWrap_wrap_default__8lcvdk5y sprinkles_justifyContent_center_default__8lcvdk7d sprinkles_rowGap_8_default__8lcvdkjs sprinkles_columnGap_16_default__8lcvdk3d sprinkles_columnGap_24_tablet__8lcvdk3h"
+        >
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/viewings/"
+            >
+              Viewing Log
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/watchlist/"
+            >
+              Watchlist
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p
+        class="sprinkles_fontWeight_light__8lcvdkq sprinkles_fontSize_small__8lcvdkl sprinkles_lineHeight_16__8lcvdk10"
+      >
+        All stills used in accordance with the 
+        <a
+          class="sprinkles_color_inherit__8lcvdkb"
+          href="http://www.copyright.gov/title17/92chap1.html#107"
+        >
+          Fair Use Law.
+        </a>
+      </p>
+      <div
+        class="ScreenReaderOnly_screenReaderOnlyStyle__rm0eez0"
+      >
+        <a
+          href="#top"
+        >
+          To the top ↑
+        </a>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

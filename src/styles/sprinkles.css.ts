@@ -6,7 +6,7 @@ import { height, size, width } from "./sizes.css";
 const unresponsiveAtomicProperties = defineProperties({
   properties: {
     alignSelf: ["flex-start"],
-    borderRadius: { half: "50%", 4: "4px", 8: "8px", 24: "24px" },
+    borderRadius: { half: "50%", 4: "4px", 8: "8px", 12: "12px", 24: "24px" },
     color: foregroundColors,
     flex: [1],
     flexBasis: { 352: "352px", 360: "424px", full: "100% !important" },
@@ -48,6 +48,7 @@ const unresponsiveAtomicProperties = defineProperties({
     letterSpacing: {
       0.25: "0.015625rem",
       0.5: "0.03125rem",
+      0.75: "0.046875rem",
     },
     lineHeight: {
       1: 1,

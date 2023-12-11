@@ -1,14 +1,13 @@
 import { graphql } from "gatsby";
 import { toSentenceArray } from "../../utils/toSentenceArray";
 import { Box, IBoxProps } from "../Box";
-import { DateIcon } from "../DateIcon";
 import { Grade } from "../Grade";
 import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
 import { RenderedMarkdown } from "../RenderedMarkdown";
+import { Spacer } from "../Spacer";
 import { Still } from "../Still";
 import {
-  dateLetterSpacingStyle,
   excerptContinueReadingLinkStyle,
   gridAreas,
   gridStyle,
@@ -21,34 +20,45 @@ const Grid = gridComponent(gridStyle);
 
 interface IItemProps extends IBoxProps {
   item: Queries.HomePageItemFragment;
-  counterValue: number;
   eagerLoadImage: boolean;
 }
 
-export function HomePageItem({
-  item,
-  counterValue,
-  eagerLoadImage,
-}: IItemProps) {
+export function HomePageItem({ item, eagerLoadImage }: IItemProps) {
   return (
-    <Box as="li" value={counterValue} display="flex" backgroundColor="zebra">
+    <Box as="li" display="flex" backgroundColor="zebra">
       <Grid as="article" paddingX="pageMargin">
+        <GridArea
+          name="date"
+          fontWeight="light"
+          color="subtle"
+          fontSize="small"
+          textTransform="uppercase"
+          lineHeight={16}
+          letterSpacing={0.75}
+        >
+          {item.date}
+        </GridArea>
         <GridArea name="still" maxWidth="prose">
-          <Link rel="canonical" to={`/reviews/${item.slug}/`}>
+          <Link
+            rel="canonical"
+            to={`/reviews/${item.slug}/`}
+            className={stillBorderStyle}
+            display="block"
+          >
             <Still
               title={item.title}
               year={item.year}
               image={item.still}
               loading={eagerLoadImage ? "eager" : "lazy"}
-              className={stillBorderStyle}
+              borderRadius={12}
             />
           </Link>
         </GridArea>
         <GridArea
           name="excerpt"
           display="flex"
-          rowGap={24}
           flexDirection="column"
+          alignItems={{ default: "center", desktop: "flex-start" }}
         >
           <Box as="h2" fontWeight="bold" fontSize="large">
             <Link
@@ -70,7 +80,9 @@ export function HomePageItem({
               </Box>
             </Link>
           </Box>
+          <Spacer axis="vertical" size={16} />
           <Grade grade={item.grade} height={32} />
+          <Spacer axis="vertical" size={24} />
           <Box
             as="p"
             fontSize="default"
@@ -82,27 +94,11 @@ export function HomePageItem({
             Directed by {toSentenceArray(item.directorNames)}. Starring{" "}
             {toSentenceArray(item.principalCastNames)}.
           </Box>
+          <Spacer axis="vertical" size={24} />
           <RenderedMarkdown
             text={item.review.excerptHtml}
             className={excerptContinueReadingLinkStyle}
           />
-        </GridArea>
-        <GridArea name="date">
-          <Box
-            display="flex"
-            fontWeight="light"
-            whiteSpace="nowrap"
-            color="subtle"
-            fontSize="small"
-            alignItems="center"
-            textTransform="uppercase"
-            className={dateLetterSpacingStyle}
-          >
-            <Box display={{ default: "block", desktop: "none" }}>
-              <DateIcon />{" "}
-            </Box>
-            <Box lineHeight={32}>{item.date}</Box>
-          </Box>
         </GridArea>
       </Grid>
     </Box>

@@ -48,10 +48,10 @@ export function YearStats({
               currentYear={year}
               linkFunc={(year: string) => {
                 if (year === "all") {
-                  return "/stats/";
+                  return "/viewings/stats/";
                 }
 
-                return `/stats/${year}/`;
+                return `/viewings/stats/${year}/`;
               }}
               years={statYears}
             />
