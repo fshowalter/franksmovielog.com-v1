@@ -2,6 +2,104 @@ export const data = {
   reviewedTitle: {
     nodes: [
       {
+        imdbId: "tt0081793",
+        sequence: "2023-12-09-1549",
+        title: "Christmas Evil",
+        year: "1980",
+        date: "09 Dec 2023",
+        slug: "christmas-evil-1980",
+        grade: "B+",
+        principalCastNames: [
+          "Brandon Maggart",
+          "Jeffrey DeMunn",
+          "Dianne Hull",
+          "Andy Fenwick",
+        ],
+        directorNames: ["Lewis Jackson"],
+        review: {
+          excerptHtml:
+            '<p><em>Christmas Evil</em> isn’t the sleazy Santa slasher you’d expect. <a data-continue-reading href="/reviews/christmas-evil-1980/">Continue reading...</a></p>',
+        },
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACxUlEQVR42i2S7U/SURiGf7z9QMBCRCUlSSQM8J0U40VFEASkQEwJRTQpWylTW83KrbIPZqi55prNP/bqgH64d87O9lznfu7nkbRaNWpZhVKtbEihVDQkKSQGPB5Wi6u8KJXYfr/H2eUlZ38u6R/wolZKGJtkTAYZS7OWLrMBe7sJSae7Aao0qgZIp9cxEY0xm84wl0xS3FinXNnk0+EXjk+O+Xv1j5NfNdx2G70C4Lpnps9mwWvvwOd2INUdaoRUAlp3ZTabmIzOEs88IzQZJvB4mKmJUZ7Px3m9nGdrpSCgV3w+OGDM7aS/ux2PUN/9dgacXUhNOo0A3jpUqcRdg63bRiAUJpVJ88Q3hL3FgNvaQnrITS7o40N1i4uLc+LTIextRgGz4BIuXffbkPRNamTR9g1QgVYn0/vIQyQaIVMHjg7i6jDjvWdh2mHHJwoXZkPUase8qrykx2qm22qip6uVvh7h0NCkoZ6jUlaiFSF7hoYJJ9Ik5maJzUwx3Odg0u0i4x8nNTpCORYh5h/i6MdXzi8uGBcdWFv0ODpb8Thtty3LAqhR0tXZQT6XJ/98manQBInYDLHJIOHhfgr5BZazWd5XdygtLbC/V+Xq+pq1chlZVqDXazAatQJYdyic1dt22KykvG7WZiJEw09IJxNCc+RyWVZXirwQ0OrONt+OfrC/W6V2ekrt/DdeUSNJEioxXOFQhVpkV38Ye/iQYiDEejBAdNzHVMBPfjFPeWODYmGZUrHA1qtNATzi2/fvHDZW6Scl8VmzXnuzKRZzM97BQR6IwGfE+TG7yPqYD2dbCw/EMKLBCRaeZVhazFIuFalsrPHuTYXd6jaba6vMp+N4Hzm5YzKiqAOTmSzbB4f4/WO4Wu+SFAPwd1oxCNcuWwfBkQFSkTBxkWkulWgA325VWBGfFEb6ebv0lPM/pyQzycYe/wcUsmhzAIsAjgAAAABJRU5ErkJggg==",
+              },
+              images: {
+                fallback: {
+                  src: "/static/8a7671d38bd11ec7ee4ee4541b3ba435/825d5/christmas-evil-1980.jpg",
+                  srcSet:
+                    "/static/8a7671d38bd11ec7ee4ee4541b3ba435/52d9c/christmas-evil-1980.jpg 128w,\n/static/8a7671d38bd11ec7ee4ee4541b3ba435/773a4/christmas-evil-1980.jpg 256w,\n/static/8a7671d38bd11ec7ee4ee4541b3ba435/825d5/christmas-evil-1980.jpg 512w,\n/static/8a7671d38bd11ec7ee4ee4541b3ba435/e66e4/christmas-evil-1980.jpg 1024w",
+                  sizes: "(min-width: 512px) 512px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/8a7671d38bd11ec7ee4ee4541b3ba435/cd5c3/christmas-evil-1980.avif 128w,\n/static/8a7671d38bd11ec7ee4ee4541b3ba435/8adcb/christmas-evil-1980.avif 256w,\n/static/8a7671d38bd11ec7ee4ee4541b3ba435/f3f04/christmas-evil-1980.avif 512w,\n/static/8a7671d38bd11ec7ee4ee4541b3ba435/fc0bd/christmas-evil-1980.avif 1024w",
+                    type: "image/avif",
+                    sizes: "(min-width: 512px) 512px, 100vw",
+                  },
+                ],
+              },
+              width: 512,
+              height: 288,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0093974",
+        sequence: "2023-12-09-1548",
+        title: "Silent Night, Deadly Night Part 2",
+        year: "1987",
+        date: "09 Dec 2023",
+        slug: "silent-night-deadly-night-part-2-1987",
+        grade: "C",
+        principalCastNames: [
+          "Eric Freeman",
+          "James Newman",
+          "Elizabeth Kaitan",
+          "Jean Miller",
+        ],
+        directorNames: ["Lee Harry"],
+        review: {
+          excerptHtml:
+            '<p>In a psychiatric hospital several years after <a href="/reviews/silent-night-deadly-night-1984/">the first film</a>, Ricky, the younger brother of the first film’s killer, recounts the events leading to his incarceration. He begins by re-telling the first movie. I knew going in that this entry recycled a ton of footage. Maybe this lessened the sense of feeling cheated. Regardless, I enjoyed this highlight reel of the first film’s sleazy bits. <a data-continue-reading href="/reviews/silent-night-deadly-night-part-2-1987/">Continue reading...</a></p>',
+        },
+        still: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAAC60lEQVR42hWS7U9adxiGTynxjQJHkPf3V4HDAWMRAR0IiNpV6BGRg6zW2K3VqrN0L0m3ZY61S9r4YVvmsiVLmu1b92Vftu/L/rNrv/4D13Nf9/1Iqdsh1HqGlU6FsBplobmA9rhDU69T7ZYpbOTofXSHRyOd7cMGpY0sSy2V/FoKpRwnvhjEn/Igu8w4AjakTCXOYmuBTCWNPWgXcIXuSZvBeY/h0z06B5voOw3ajRI/vHpO/3CT3GoSpRQllPbgnXcSygawCuCc14KUa2RJV5LiYpby+0V0AdGfauweaxw+03n705jvz5/w8uSYR5tVDvY2qO1UUESQqOojng8RTDmZdZpw+gQwLxRlt1noLdEXqTp7bfTHPZr3azx8ssNfVy/49/pH/n79HSd3GqTCblGBRrVX5XYri1qOkSlGCCo+LLMzSM6El2nrJNn3ogwuNGrVMgPtLt3hFvc/1PhTgP745Jw3ozO+0btE58yUhE2xlSNXTRITGygrKaL5MBGhLs3I01gcZkzeacaXF1ydnXK20WB/q0r/YYf/fvmVn4dD/hl/yZvjI77e2SKadhNf8JNYFBA1gC/mxhtzUthcRDLLM1jFVWniBsPWKq/adT5dK9DeXuXufoO3337F76cnXOn3+KJVY7dRJJb3ElM8ZJZjIpUPm8tCckmMW88K5aADs82EcdLArt7nolpgUFJJKBEcETunw3scVEtoaoyxtiUWr5EsBCnUsmLteVKFCJ6wHYdfxu2fRXKF5pgSHVrtVmr7x/hss/iSKZzhdyXf4vryOdd6m89X8vz2QZfXlyPW96pklwIE47IAWbG5LZgsk7jeAWXRn+GmhOywozQ1JMnAlMVGWcDXz8f0zl6w3eywls7RUgs8OBrRefaS9QdH4jM0gvMhZkw38QTs2J23kCanjNyQJKFtJbHSwmCcxjgxQWC1g6t2gFzuM6FuY0zUMfiXkbzLWIv7JLTPmO+MKA4+JqpERToZizzF/z5ZcYmFcML+AAAAAElFTkSuQmCC",
+              },
+              images: {
+                fallback: {
+                  src: "/static/23447970805e090bfdea161b471806f6/825d5/silent-night-deadly-night-part-2-1987.jpg",
+                  srcSet:
+                    "/static/23447970805e090bfdea161b471806f6/52d9c/silent-night-deadly-night-part-2-1987.jpg 128w,\n/static/23447970805e090bfdea161b471806f6/773a4/silent-night-deadly-night-part-2-1987.jpg 256w,\n/static/23447970805e090bfdea161b471806f6/825d5/silent-night-deadly-night-part-2-1987.jpg 512w,\n/static/23447970805e090bfdea161b471806f6/e66e4/silent-night-deadly-night-part-2-1987.jpg 1024w",
+                  sizes: "(min-width: 512px) 512px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/23447970805e090bfdea161b471806f6/cd5c3/silent-night-deadly-night-part-2-1987.avif 128w,\n/static/23447970805e090bfdea161b471806f6/8adcb/silent-night-deadly-night-part-2-1987.avif 256w,\n/static/23447970805e090bfdea161b471806f6/f3f04/silent-night-deadly-night-part-2-1987.avif 512w,\n/static/23447970805e090bfdea161b471806f6/fc0bd/silent-night-deadly-night-part-2-1987.avif 1024w",
+                    type: "image/avif",
+                    sizes: "(min-width: 512px) 512px, 100vw",
+                  },
+                ],
+              },
+              width: 512,
+              height: 288,
+            },
+          },
+        },
+      },
+      {
         imdbId: "tt0023935",
         sequence: "2023-10-20-1537",
         title: "The Death Kiss",
@@ -382,596 +480,6 @@ export const data = {
                   {
                     srcSet:
                       "/static/c273204af0ec0ab2b8b87604950e1daa/cd5c3/frankenhooker-1990.avif 128w,\n/static/c273204af0ec0ab2b8b87604950e1daa/8adcb/frankenhooker-1990.avif 256w,\n/static/c273204af0ec0ab2b8b87604950e1daa/f3f04/frankenhooker-1990.avif 512w,\n/static/c273204af0ec0ab2b8b87604950e1daa/fc0bd/frankenhooker-1990.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt11060882",
-        sequence: "2023-09-14-1528",
-        title: "Batman: The Dark Knight Returns",
-        year: "2013",
-        date: "14 Sep 2023",
-        slug: "batman-the-dark-knight-returns-2013",
-        grade: "B",
-        principalCastNames: [
-          "Peter Weller",
-          "Ariel Winter",
-          "Mark Valley",
-          "Maurice LaMarche",
-        ],
-        directorNames: ["Jay Oliva"],
-        review: {
-          excerptHtml:
-            '<p>Peter Weller voices Batman in this animated feature that sees a middle-aged Dark Knight emerge from a ten-year retirement to reclaim a Gotham City overrun by violent gangs. <a data-continue-reading href="/reviews/batman-the-dark-knight-returns-2013/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADDUlEQVR42lWPa0zTZxSH/1wUjVkkRnToErdliUq2Dxp1WUJwzsTxRT9oxE2NJsrKxBuCyQhzrgotdLJWrEDT0ksGAYmFci9Q5NIgSrEildDLYN4QQVhENNSxrs/+KcbED09Ozpvze855BckVC6cLW/km6QSffPElsZ+uJ3rF6hAfrdtAYooUibqe/bIqfiga5JRphONX21E0PSLfOszPFXZOFDcgNfeju/UcYf9vJexIzWLpylgEQRAJe1vniYiIZOu+VBKTZUhrR0Wpg3RjGxdqPOS3jqC7PUHZwEtym1xkXetGOK5t5ntZEWvjt7NoyQfzkshIIhcsDBEeHhF6W7p8Fd9KlCTJzaRqLeQ0PeS82Ul+yxC1w6+wjQUoG3yN8HvbFJkGO3Gbvg4Fw8LD37swLGy+j475kD3phZwydpFR3smx0m725qhJylZyIE9Nmt7MaYMFQWUbJ8vQxdoN8aHgwqgo4jbHk3g4jYPn1GxO3PtOviZuC4obo2j6/Kgds+Q0+sgwNZNmbOKnyi5SNOUIFy39JOyTsCBqMVt3J6Ntv0//LLgDAbrFmrDnSEi2ZcdO1qzfiK5vknIPlLuDXP8TTK4AVx1TKDq8yG0uhDzzALt/lPJLxR00d+bEASh1zVJxf4Za72sSdn7HosVL+PyrbSyP/Yyj5y7RIy5qezpHw9P/KHX7uXzrCeetveR1ehGqPAFuTAbpfgG20QCVQ/9Q1DPNFfvf6BxvSMnWi6KPiV4Ww6Ffr3EgS02db5ohP3j9QZyvgmIeGp4FqXn8BkHWOEjRzTEq3bPUP5ijczxI2xg0PgrQOA4puRpOKs0U9/yLthcK7NNo+2b4Y2COKl8A470ZVO1uLnd5KHaMIJwpaUZe76agYwxZnY9LzcPoeiYwOCYxOafQOybQO1+isE6h7PBzsWYUrfhFVetf5LRMkml5QJqpHUlhJYeVRgRF9V0KrB7ULT7k1S6kFX0iDjKNdtI1NlJVNRzNNbArQ4/0+jPOmoZIL7Eib3Ch6pwgu9YrLvORV+cku7qX/wH7JEVFyHFopwAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/46960983ebf5487bc34764be146bf237/825d5/batman-the-dark-knight-returns-2013.jpg",
-                  srcSet:
-                    "/static/46960983ebf5487bc34764be146bf237/52d9c/batman-the-dark-knight-returns-2013.jpg 128w,\n/static/46960983ebf5487bc34764be146bf237/773a4/batman-the-dark-knight-returns-2013.jpg 256w,\n/static/46960983ebf5487bc34764be146bf237/825d5/batman-the-dark-knight-returns-2013.jpg 512w,\n/static/46960983ebf5487bc34764be146bf237/e66e4/batman-the-dark-knight-returns-2013.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/46960983ebf5487bc34764be146bf237/cd5c3/batman-the-dark-knight-returns-2013.avif 128w,\n/static/46960983ebf5487bc34764be146bf237/8adcb/batman-the-dark-knight-returns-2013.avif 256w,\n/static/46960983ebf5487bc34764be146bf237/f3f04/batman-the-dark-knight-returns-2013.avif 512w,\n/static/46960983ebf5487bc34764be146bf237/fc0bd/batman-the-dark-knight-returns-2013.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0106364",
-        sequence: "2023-09-14-1527",
-        title: "Batman: Mask of the Phantasm",
-        year: "1993",
-        date: "14 Sep 2023",
-        slug: "batman-mask-of-the-phantasm-1993",
-        grade: "B",
-        principalCastNames: ["Stacy Keach"],
-        directorNames: [
-          "Kevin Altieri",
-          "Boyd Kirkland",
-          "Frank Paur",
-          "Dan Riba",
-          "Eric Radomski",
-          "Bruce Timm",
-        ],
-        review: {
-          excerptHtml:
-            '<p>Kevin Conroy voices Batman in this animated feature that sees the Dark Knight investigate a masked assailant murdering members of Gotham’s underworld, while Bruce Wayne grapples with the reemergence of a old flame voiced by Dana Delany. <a data-continue-reading href="/reviews/batman-mask-of-the-phantasm-1993/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACW0lEQVR42j2TWU/bQBhFHUjsGXvG28RLNpI4aVYgbVUKVFWAEioKLRS1ClVFhfrQ//8Tbm8M4uFqPLJ9dL8ztqUHN9CDr1DFFdz+BeLpGmb6E+H4BmF7H/UsRdgcQWZTyHoBaboQcRsizOH4CYRfh9AGQsVlLH/0HV7/M3NJ8BXyxSOyxT+koxWCUMB1LWhtI2ztQTX24CbDEuxEHUIbkAQL/QxlLD26g9s7L6GquESy/xf59BsioyDdCmq2BcdTiIolwu4xdHMONxsT2mfTFkNwwLYltA4rmKw56orAFfTwGsXiBnkjg+tVIGQVds2CR0A4WBF6Br9zQOgbeOkYwuwQuAO5SUS4TmCZ+Z+yneytkA+PkWcGnrLhiAqk0tCttwh6SwTFOeLRF/g7bNk54viLF6ebtnIDpwLL7D6y4TWiwQmS1KBa5YhiqwQK1yaMrfoMVzO543MrXp+UUC+blE7dlF4NFdCrFc8fIYtbJMV7KFWlN5upErgNh/68dAR/cEnIBdL5PdLJNdt+gs/GXuM1vHxOML+A5BWhPQJnD5D9W7THH9DutKB897khgY4FN8gQ9k95ygukrSH8KICODUJC3eYBFJVo3tP5DIqurWC8LoFZ/x0C3y5PtWZXXsZ2RA0mSWFMBCE2zZ8OSvNl1T2Fah/RK6drzKHyKaxw+gve8AeyAWXrLXrbhu08ATfrRkEUh097KRHvHMLjQegmW3WXUJ2PCLh63LvZDFY0+w01WiMdLhFFAjqQL8AyvK4KCW0y6DBARo/53gP/pns2PIO3ARYXbHoIJ9vFf//EHdIWRS1YAAAAAElFTkSuQmCC",
-              },
-              images: {
-                fallback: {
-                  src: "/static/ee2f31e8cb92f5e877aecc4bf39cf28e/825d5/batman-mask-of-the-phantasm-1993.jpg",
-                  srcSet:
-                    "/static/ee2f31e8cb92f5e877aecc4bf39cf28e/52d9c/batman-mask-of-the-phantasm-1993.jpg 128w,\n/static/ee2f31e8cb92f5e877aecc4bf39cf28e/773a4/batman-mask-of-the-phantasm-1993.jpg 256w,\n/static/ee2f31e8cb92f5e877aecc4bf39cf28e/825d5/batman-mask-of-the-phantasm-1993.jpg 512w,\n/static/ee2f31e8cb92f5e877aecc4bf39cf28e/e66e4/batman-mask-of-the-phantasm-1993.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ee2f31e8cb92f5e877aecc4bf39cf28e/cd5c3/batman-mask-of-the-phantasm-1993.avif 128w,\n/static/ee2f31e8cb92f5e877aecc4bf39cf28e/8adcb/batman-mask-of-the-phantasm-1993.avif 256w,\n/static/ee2f31e8cb92f5e877aecc4bf39cf28e/f3f04/batman-mask-of-the-phantasm-1993.avif 512w,\n/static/ee2f31e8cb92f5e877aecc4bf39cf28e/fc0bd/batman-mask-of-the-phantasm-1993.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0026739",
-        sequence: "2023-09-12-1526",
-        title: "The Murder Man",
-        year: "1935",
-        date: "12 Sep 2023",
-        slug: "the-murder-man-1935",
-        grade: "D+",
-        principalCastNames: [
-          "Spencer Tracy",
-          "Virginia Bruce",
-          "Lionel Atwill",
-          "Harvey Stephens",
-        ],
-        directorNames: ["Tim Whelan"],
-        review: {
-          excerptHtml:
-            '<p>Spencer Tracy plays Steve Gray, the titular “Murder Man,” a star reporter for a New York daily who earned his nickname by covering the city’s highest-profile homicide stories. His latest beat involves a crooked businessman shot on a crowded street in broad daylight. Tracy goes to work, leading the police through the investigation while breaking stories with an eerie prescience. But when he finds himself on the stand giving testimony against the accused murder, the stress threatens to break him. <a data-continue-reading href="/reviews/the-murder-man-1935/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR42h2Tu0tCcRTHf4NDujaaaUNIIpJo9hQCsUIpxbQwgsKggkqL8lEWqUE0VCJWKr1Qa+jhJlgEIkVD4NDQ3GDQXxF845zhDpd7Hp/v93uuWFhYQCQSgclkwv39PQ4PD5HNZpFKpbC1tYXJyUlcXFzg/PwcxWIRNzc3uLy8hEajgVQqxcbGBvL5PM7OzpDL5SAeHx9xcHCA2dlZVCoVnJyccEMsFsP6+jpcLhcPLBQKKJVKeH5+xtraGgKBAHZ3d9Hd3c3Drq+v+RG1Wo1potEok83NzWF5eRkvLy94e3vD9PQ0/H4/wuEwN9JwGtxoNPD394fj42OsrKwgFAoxgKhWq9jb28POzg6CwSBLt1qteHp6wvf3Nw/3er08eHt7G/v7+8hkMvz95+eH5a6urmJpaYnJBVEQHRX6fD5otVp0dnaCrCBKg8HA72QJ1ZCao6MjtuD09BRutxvz8/O8jIDE+/s7I6fTad7S2toKtVqNRCLBMsmCkZERlvPw8IC7uzsOi8iJbGZmBj09PVhcXOQe8fn5idfXV5TLZYyOjkKpVKK/v5/DGB4exubmJstNJpNMTLUDAwNoamqC0+lkVV1dXdwTj8chyODf31/eoFKp0NbWhsHBQQwNDcFisTAZLSLf6vU6n05HRwdkMhnMZjN/6+vrg1wuh8fjgSBTp6ameCvdo91uR3t7O4czNjbGNhiNRpZPN0in1dzczAMcDgfGx8eZjiDIHkHHrNfr+WQ+Pj44YfKwpaWF06XDJyJSQKaT+UII9Pb2cqoUCi0nEPJUfH198QZK7urqCjqdDhMTE2w0kVOCCoWCD5kkUa1EIoHNZmNFt7e37DUtp5/hHzix/ujrLaldAAAAAElFTkSuQmCC",
-              },
-              images: {
-                fallback: {
-                  src: "/static/4b96369ac61fe600fec066253920f4f0/825d5/the-murder-man-1935.jpg",
-                  srcSet:
-                    "/static/4b96369ac61fe600fec066253920f4f0/52d9c/the-murder-man-1935.jpg 128w,\n/static/4b96369ac61fe600fec066253920f4f0/773a4/the-murder-man-1935.jpg 256w,\n/static/4b96369ac61fe600fec066253920f4f0/825d5/the-murder-man-1935.jpg 512w,\n/static/4b96369ac61fe600fec066253920f4f0/e66e4/the-murder-man-1935.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/4b96369ac61fe600fec066253920f4f0/cd5c3/the-murder-man-1935.avif 128w,\n/static/4b96369ac61fe600fec066253920f4f0/8adcb/the-murder-man-1935.avif 256w,\n/static/4b96369ac61fe600fec066253920f4f0/f3f04/the-murder-man-1935.avif 512w,\n/static/4b96369ac61fe600fec066253920f4f0/fc0bd/the-murder-man-1935.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt14636190",
-        sequence: "2023-08-31-1525",
-        title: "Aqua Teen Forever: Plantasm",
-        year: "2022",
-        date: "31 Aug 2023",
-        slug: "aqua-teen-forever-plantasm-2022",
-        grade: "C+",
-        principalCastNames: [
-          "Dave Willis",
-          "Matt Maiellaro",
-          "Peter Serafinowicz",
-          "Christopher Powell",
-        ],
-        directorNames: ["Matt Maiellaro", "Dave Willis"],
-        review: {
-          excerptHtml:
-            '<p>For better and worse, it plays like an extended episode of the series. <a data-continue-reading href="/reviews/aqua-teen-forever-plantasm-2022/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADHElEQVR42jWS60+bBRTG33/BxWVTp8LGbrSUla70spb1wqWXDehaer9Ay0ugtEDLda2D0gGdCDM4MBrMjG6YmLgMv6jZNGpClhk0UwR0MVvcko2oiX7xo/rzdYnny/l0nuec83uE2eE2oqercJkrEN0qvJ5a4iEjg6KZC3kXizMhZsZayYomUv5aEi0qRK8BsVWNRVOO7PDTHDm4S+q7Obh/F8JAzEisVUnQISdoq6Q3rGNMtOKyVOBsPEAirESMHycS1hPwG7DqyjEce57SpJuItxatugx97T6Uij2oqvYgRD0aPDaZ5Kon227lwliIYo+ZlvqjqGv24jKp6PP7cLTWoDIepc0hY37SyQ9b01ya93JSewCjdh9q+VMYNC8ipIInyIT0DAbVvP/mJLdvvsf5PjsTPVaSHhn9bhf94TBdcS2+hsO8Vghy/94cOzuzfPtVAY/9ONXqcqptJ6m01yMMh0+QDelYvVzk9537PHpwl9Wr83RHTHx24zpbm9+x+eMG6+uf0xsysJKL8v3SObavTLE2GsNnrOSYdLa8sQ6ZVobgbawk6Kzi6uIoD+7d5a+/4ebqZeJeLY9/+ZX/a+Ob26S8aqZ7TvGwlOTxXJqPx7pQVOzmdJOc9na7BLQOIexQkA5rGU85mF28waW3v6aUz1BIGbiz9cUTsf9MPvxgDq/pBTqd1bzVYeda6gxDHQGJ7l7ONMnIJczk2o0IkVPVDCVM5KWfFWZWmFpYYyITZ6VgZPN6Nw/XlvlHEr32bp4W/TPYtGWEzCpyHieix4BRU0aTRUY6qCPpViL47XJGpcyVMk6miwtMFJc5n3Zy53Urv/10i59vXeHPPx6xvFAk0HgIv03BQFwS85uebFQnUXZaj9AX0NDZrECo1O2noVlJW8RIrtjPK9LgUsHD9hsNbHz5EdufvsP6JxcRF0ZoOOvGPxwgNRwmkffTeVZKQLeFzmgdmYgGi/o5hEP1Mpq6bcReCpItiUyVfCyX7Lw83UKyEGVwPEJ23ENsuoPehSEGxrvIFpP0XEwjvprk3NIIvpFmPN5qzDXP8i9ere2LTieZpQAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/9c976cb2c26df0b68d35d1f8f60defda/825d5/aqua-teen-forever-plantasm-2022.jpg",
-                  srcSet:
-                    "/static/9c976cb2c26df0b68d35d1f8f60defda/52d9c/aqua-teen-forever-plantasm-2022.jpg 128w,\n/static/9c976cb2c26df0b68d35d1f8f60defda/773a4/aqua-teen-forever-plantasm-2022.jpg 256w,\n/static/9c976cb2c26df0b68d35d1f8f60defda/825d5/aqua-teen-forever-plantasm-2022.jpg 512w,\n/static/9c976cb2c26df0b68d35d1f8f60defda/e66e4/aqua-teen-forever-plantasm-2022.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/9c976cb2c26df0b68d35d1f8f60defda/cd5c3/aqua-teen-forever-plantasm-2022.avif 128w,\n/static/9c976cb2c26df0b68d35d1f8f60defda/8adcb/aqua-teen-forever-plantasm-2022.avif 256w,\n/static/9c976cb2c26df0b68d35d1f8f60defda/f3f04/aqua-teen-forever-plantasm-2022.avif 512w,\n/static/9c976cb2c26df0b68d35d1f8f60defda/fc0bd/aqua-teen-forever-plantasm-2022.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt3627704",
-        sequence: "2023-08-31-1524",
-        title: "Phantasm: Ravager",
-        year: "2016",
-        date: "31 Aug 2023",
-        slug: "phantasm-ravager-2016",
-        grade: "C-",
-        principalCastNames: [
-          "A. Michael Baldwin",
-          "Reggie Bannister",
-          "Dawn Cody",
-          "Gloria Lynne Henry",
-        ],
-        directorNames: ["David Hartman"],
-        review: {
-          excerptHtml:
-            '<p>Cut it some slack. <a data-continue-reading href="/reviews/phantasm-ravager-2016/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADLklEQVR42jWRf0zUdRjHv//0Tyvhy8H9gAMR4X7wS5QAJVfgQLSgLk0ZJJ4Fi81VS9ea0sZoslYtqVboqNOzs2be0UKOOzhOKK4jOMT4cYSKUiripUCUP0JLePVZW+/t2fufZ+/n9TyPNHnpHPNz08ADlpb4T7Ohyzhsn7B/TxWVFVsp27qZ50oKKCrKY6OoqsoKjlmPctrbhaejE5ernRN2B4csFqSJC6Pc+iPE4uICiw8W+F93xJBebwvWxndpfO8t6mv3Ulf7Jkcth+hod+F2twv38IPPR6uzDcc333Kw4UOk30JXRdg9/lmY5f5tEfz3bRF2jdmpi8xcnWDqYhDHx/WcPNzA6NAZzg704Xa1YbfbBZmLNqcTh6MZl7uDI1Yb0v2/Zrg1d4XZ6xPcnZtiYf4aM1fOc31yjF/GzzI5PsRrJfnsM29jbHSY7tMesaqHH/0+/D3f43E78X3XzVfHbYLwINKNaUExOcL5kT4CPR4ujPSzdOcGIRF4bqifL6xNlOTlUl1qwvJZI+PBYeZvTrN470/u/h4i4OvC+nkTO3c8T/6GHKTgSICA30Or/Rhv17xBZ6udMz1ufhV0p5qPk5ZmJH55LPqkBFRKBVZLEzenL3NpfJifAr2csNkwPVNMdmYa6akJSNuLN1K+rYCXKraw84VSfF4nHS0n+XnQz4G6/SgiFSgUCsJkmUfCwjGZnqXL28lAr4/BPh/1dbXi+4WsStGhjVYirTFqyUjXkpWTwo7y7QQD3YwN+hjwe6kylyNHRBAWLrMsTOahhx8Vvekc/vQjcTcvLc1fs6uijMzM1aQl69Coo5CSElXodRpycx8jKTGe13dXEhR0E6P91Ox5RdBFEhGlRB2jRY5SUbypkA/eqaXh/QPs27ubDXlr0en0JBsSidNqkDQamZUrY8jIWEVcbBSbitbT3tbCKfuXvPryLp584nGyszLJE56zLpuCtVnUVJupNpdSaioiVb8CrTaWmGiNIFQgqVUyyUY9BqORFfGRrFmt40VzGVsK1vFUbhaG5FR0egPL4xOQldEoZQWGGBVPF65nc34OKYlxRGtUqNUa5PBl/AuTOCxjLzapNQAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/0c59944d9107ab7bfc37d8c35dbb6958/825d5/phantasm-ravager-2016.jpg",
-                  srcSet:
-                    "/static/0c59944d9107ab7bfc37d8c35dbb6958/52d9c/phantasm-ravager-2016.jpg 128w,\n/static/0c59944d9107ab7bfc37d8c35dbb6958/773a4/phantasm-ravager-2016.jpg 256w,\n/static/0c59944d9107ab7bfc37d8c35dbb6958/825d5/phantasm-ravager-2016.jpg 512w,\n/static/0c59944d9107ab7bfc37d8c35dbb6958/e66e4/phantasm-ravager-2016.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/0c59944d9107ab7bfc37d8c35dbb6958/cd5c3/phantasm-ravager-2016.avif 128w,\n/static/0c59944d9107ab7bfc37d8c35dbb6958/8adcb/phantasm-ravager-2016.avif 256w,\n/static/0c59944d9107ab7bfc37d8c35dbb6958/f3f04/phantasm-ravager-2016.avif 512w,\n/static/0c59944d9107ab7bfc37d8c35dbb6958/fc0bd/phantasm-ravager-2016.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0054047",
-        sequence: "2023-08-23-1523",
-        title: "The Magnificent Seven",
-        year: "1960",
-        date: "23 Aug 2023",
-        slug: "the-magnificent-seven-1960",
-        grade: "B",
-        principalCastNames: [
-          "Yul Brynner",
-          "Eli Wallach",
-          "Steve McQueen",
-          "Horst Buchholz",
-        ],
-        directorNames: ["John Sturges"],
-        review: {
-          excerptHtml:
-            '<p>Six are, indeed, magnificent, but Horst Buchholz seems plucked from a lesser movie. <a data-continue-reading href="/reviews/the-magnificent-seven-1960/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKElEQVR42g3S60+bBRTH8f4TRhdNiFtAuYw7lJYKlK4dLQ47GC0UGKsUKDCBQQlQpIyNljvt6HgGtFyGVIQyFJBBg6CbU6PBLC7ELBGzOEDRqS/2wrdfn3cnOcnnd87JkTw9eM53P/7M4/0Djo7/4vj3F/zy6yEHz47E+k8Oj/7g+eEJx2Lv5OQFu6FNOu3XsLdfY2V9g8dP9hEmBJpbm5icnUIyd+8LFj7d5u7i56xufcv61iOmF+6ztLrLzoM9ljcesrXzPWubDzGUGCg2XuBKcS5Xqy7h8twhuLTM5KADqSyamIQzSIT5+0x5XAiuTqZnVxj1LyNML+MLrNPdO0RRqYlhYR5VVgYlmjTqCs6hSIzE1mSlq99LMLjG3uJt+qxa8s/HIZm59xXjfZ0IbRVsLgXxz6/imVigV/iE4UE3/q6rDLnHsJRfZsfXz/aYg5YGMw31Zq7UvI93cpSnj0L8EBznwfYakm92vyY07UVor2TD083iR0u0D0xh7/cxMnILe2M1PTdvEggEmXC242s1MeDqYLTPjr3ZyFCvjUBPCx0lStrMOUjWP9tkbyVAyOfG09ONc2gch8uLc3iCuvoPKDAaKCgswGS2UJifR+m7CrRaFR9W6tiZ7GLOaadcHU1NThTmzDAk/bf8TA3eYLjNgrVETYosnvoaM76pOYQxgcF+F0ZTEXFJsSg12aTIk0iWJaLTyCnTa6jLTRShNzFmvYVZGY7Ee1ugpdZEaZGWRrMOnfQ1zEXnmJ2ZYe7OMI7WWgwiGBv/NtmaTDKy01EopcSHn+KiMlUMvI5FBGs1UeRJxQlHnG3o31OSd0GJozqHXouc6mIVbreHacHN5bJLqHNUxMRG8I4yTQRlSOWJhJ9+hY/9Hl6+/I+GqmIsqkhMMhEs1cupKc8lI+U0jUYZsx0GqsrysFrLMVxUUGWtQKXJIjk1hrT0BFLlZ0lKjiQ6KozdL0P88/e/jHsGKMxNQxv3KhKNNBxfVyW5KadQp0TgvV5Lc5UevVZKekIYNlsT57XZRJx5HY1OLW4j3ln8Q4U0mt+eHbD/0xNu2KxU5GeQefYN/gfn/Q+Uz4njLAAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/403f7c4b4ae295fbf911a52ad7de7cea/825d5/the-magnificent-seven-1960.jpg",
-                  srcSet:
-                    "/static/403f7c4b4ae295fbf911a52ad7de7cea/52d9c/the-magnificent-seven-1960.jpg 128w,\n/static/403f7c4b4ae295fbf911a52ad7de7cea/773a4/the-magnificent-seven-1960.jpg 256w,\n/static/403f7c4b4ae295fbf911a52ad7de7cea/825d5/the-magnificent-seven-1960.jpg 512w,\n/static/403f7c4b4ae295fbf911a52ad7de7cea/e66e4/the-magnificent-seven-1960.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/403f7c4b4ae295fbf911a52ad7de7cea/cd5c3/the-magnificent-seven-1960.avif 128w,\n/static/403f7c4b4ae295fbf911a52ad7de7cea/8adcb/the-magnificent-seven-1960.avif 256w,\n/static/403f7c4b4ae295fbf911a52ad7de7cea/f3f04/the-magnificent-seven-1960.avif 512w,\n/static/403f7c4b4ae295fbf911a52ad7de7cea/fc0bd/the-magnificent-seven-1960.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0814685",
-        sequence: "2023-08-17-1522",
-        title: "Frontier(s)",
-        year: "2007",
-        date: "17 Aug 2023",
-        slug: "frontiers-2007",
-        grade: "C-",
-        principalCastNames: [
-          "Karina Testa",
-          "Samuel Le Bihan",
-          "Estelle Lefébure",
-          "Aurélien Wiik",
-        ],
-        directorNames: ["Xavier Gens"],
-        review: {
-          excerptHtml:
-            '<p>Tobe Hooper knew when to quit. <a data-continue-reading href="/reviews/frontiers-2007/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0ElEQVR42lWS22sUZxiH152ZnePO7M7szuxhNpNdc05ck921cU0ai0qaaI0GRTyAkoBRW4O1KNGUsgqWFlp6wBLQitIDQqH1QsHEi954oTf+C73un/H47a43XvwY+L6X53vfed5YNuUQuK6Ig2OZWLreiaFrmEZCRCFpKZ2vrsnE4xKVksH68hBLR/L0FA1MXSVpaCI6MV8Ac14baAuggSUOzXZEURtomV2gIYCGLhPbJtEYMnlwcyfXT5WYmnBQlESn3tA0AUw75L33O2xfGFqiA0xaKk6y26kmOlQSMs2qTetMxBdHC+ypmqRTGmriHTDnpShmXAoZm1TSxDZ18r4pIF1oPB4nkYh3R1ZldF1hpp5iV6/K4rjOnc+rXFuuYopaTRMjh5kUPb5L6AugGLn9Sn04xf56BlmWOPhhxOzuXAcsibT/YZjTGC3E+PHqJG+2Vnj28xQDoYUkqwKYdSjnXKLAphQkBdjiWDPDgXFXdCTxw5UJnnw9xeLeghBgEQYGjq3y/ZUq///3C8//ucQfXw5yuOFS77eJRYFDJe8yEHnM749YOhQxPWCST+uossyoMPrNuRFWFwv8fXeBpxvzrH86weZf53nx/BqPH53h8e06l+cDTn6UIxYIyyXfY7CSZXwsy/ROl1JWE3JUfLdtXKacVaj1yDy6Nc3W/TmWDudZu1zj7rcH+HXjOA9uNbkwFzDX8LrASugTFT2GtqcZHUiTdcVuqQp7xtPM1FKd/UuK9ZmvWfzZqjI54rB6scnLf6+ztbnG7z99wvJsQJgRUnoCl7HBIr1hhuE+l0pkE3gGtljsQx9kaZ0uU/ANJEnCVGL89lWD5YWItaszvH65zutXd9h8eIyFui2kCGBtpMi+qT7KpQx9vWl2DHsM9zucmCmwcrBM6+yYsNng3EI/s5MhGzd2s/Sxz2crTe5tnOR2a47vVsfYtV1YVnTeAl+0ThhB23IxAAAAAElFTkSuQmCC",
-              },
-              images: {
-                fallback: {
-                  src: "/static/6b6298a7546cac455d7b988185d6ae33/825d5/frontiers-2007.jpg",
-                  srcSet:
-                    "/static/6b6298a7546cac455d7b988185d6ae33/52d9c/frontiers-2007.jpg 128w,\n/static/6b6298a7546cac455d7b988185d6ae33/773a4/frontiers-2007.jpg 256w,\n/static/6b6298a7546cac455d7b988185d6ae33/825d5/frontiers-2007.jpg 512w,\n/static/6b6298a7546cac455d7b988185d6ae33/e66e4/frontiers-2007.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/6b6298a7546cac455d7b988185d6ae33/cd5c3/frontiers-2007.avif 128w,\n/static/6b6298a7546cac455d7b988185d6ae33/8adcb/frontiers-2007.avif 256w,\n/static/6b6298a7546cac455d7b988185d6ae33/f3f04/frontiers-2007.avif 512w,\n/static/6b6298a7546cac455d7b988185d6ae33/fc0bd/frontiers-2007.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0092273",
-        sequence: "2023-08-17-1521",
-        title: "The Seventh Curse",
-        year: "1986",
-        date: "17 Aug 2023",
-        slug: "the-seventh-curse-1986",
-        grade: "B+",
-        principalCastNames: [
-          "Chow Yun-Fat",
-          "Siu-Ho Chin",
-          "Maggie Cheung",
-          "Ken Boyle",
-        ],
-        directorNames: ["Ngai Choi Lam"],
-        review: {
-          excerptHtml:
-            '<p>Imagine a glorious amalgam of Golden Harvest martial arts, Cannon action, and Italian horror wrapped in pulp adventure and cranked to eleven. That’s <em>The Seventh Curse</em>, and I loved it. <a data-continue-reading href="/reviews/the-seventh-curse-1986/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC90lEQVR42h3SyW9bVRTH8ZeUJnFsx/NQ23meYvvFQzzEjqf4eYrjJLXdOHUch7hETQPULaUMBdooKqJFFWqrFgmJYcOCDRISSPkPYM8GiQVb/pIvVyyudDbnc3/3nCvpwgm0kVXM2SPspVMcpROc5VNctQnG5V1mjcto9H4MjhXk/JA5QxCNLc2MPiTqCNbUBq71HnJ9iLf1JpI2FEOn5LAJ6Ir6Lp7GhMXW+3ia9zCEWswbfCiVIQefvubk1a94IlVmtR409lXemJPRuFYwrbZEmJ7oOUSyJPMsxIu4BOBu3cctQFmAcvsjdD6VK4EU2b0HnF/8ycs//qF79xkaAU5fsjEtGQUcxZLvYSvuYil0kUzJHLrlPB4B+K+dETp4Im66g7tyC2Nkk0xjQCS/i0tp0L3zJfuffIPRFmZKMjA9ZWLO5BcjGmAtXsO8toPkKKmYMlU8Wx8S3HtMaPSUpf4jwgdf4Nv6gPGjV+yMP8a5mMQlp3D5C1hFffmykUtTemaMXqwFkTDfwSyOZC2Vcazv4O8JZPSEQO+hAM8IihPYfo+4us9G7zb3nv1Ieesm4dRV/IqKxRVldsaKxh1Ht1LDmG6KlOLJ5lKRxfaQ4OBzlOOviN58QeLt1yTvfi8SPySiDui89Rlr6iGJdIeUekSqOiRd28fsz6BViuhiFXTxCgsClZyNJvaaSNg/J3bykvjJi//nGLx+RrR9zFJ5n1xtTCBcR0lukyjsohQ7+ApXMSRU9PF1FpJVDNmGADeQ/P0B9vUG3uoN4r0J7cc/oD6/wNu+TetwgjvaxLdURZYLhBJNQqkmsmicj6yhj5WYV/Lokyrm0ib6VAMpdjyi893PbH/9G9Xzb0nuvUPq+oRgfUx1dB+nWITDl8MfrYuFZFkMZgnEqzjFJ9eGc8wF0yxkylgqG2KWdaTa858YXfzN+Pd/6f7yF/LWA6KbR6T7t1jpnOJeKmA0BbDaFTy+DLJ/FZdPbLt0A4PSEmgFb3+H8HEXXbrOfx8LcmdrABXOAAAAAElFTkSuQmCC",
-              },
-              images: {
-                fallback: {
-                  src: "/static/152f8e538fb1565d496df48f65331d3c/825d5/the-seventh-curse-1986.jpg",
-                  srcSet:
-                    "/static/152f8e538fb1565d496df48f65331d3c/52d9c/the-seventh-curse-1986.jpg 128w,\n/static/152f8e538fb1565d496df48f65331d3c/773a4/the-seventh-curse-1986.jpg 256w,\n/static/152f8e538fb1565d496df48f65331d3c/825d5/the-seventh-curse-1986.jpg 512w,\n/static/152f8e538fb1565d496df48f65331d3c/e66e4/the-seventh-curse-1986.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/152f8e538fb1565d496df48f65331d3c/cd5c3/the-seventh-curse-1986.avif 128w,\n/static/152f8e538fb1565d496df48f65331d3c/8adcb/the-seventh-curse-1986.avif 256w,\n/static/152f8e538fb1565d496df48f65331d3c/f3f04/the-seventh-curse-1986.avif 512w,\n/static/152f8e538fb1565d496df48f65331d3c/fc0bd/the-seventh-curse-1986.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0450314",
-        sequence: "2023-08-03-1520",
-        title: "Punisher: War Zone",
-        year: "2008",
-        date: "03 Aug 2023",
-        slug: "punisher-war-zone-2008",
-        grade: "C-",
-        principalCastNames: [
-          "Ray Stevenson",
-          "Dominic West",
-          "Doug Hutchison",
-          "Colin Salmon",
-        ],
-        directorNames: ["Lexi Alexander"],
-        review: {
-          excerptHtml:
-            '<p>Ray Stevenson shines as the titular vigilante facing off against a disfigured mobster known as Jigsaw. <a data-continue-reading href="/reviews/punisher-war-zone-2008/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAClklEQVR42lWTW4iMcRiH//9vvpnZGXP+zPm4M7tjdxzWbm4ct8FKrI0lNLgg1krObFgxraK4cIjiZh3uNgpJSkppc0EhUopLFy4op/vHOztDfPXcfH09/d7f+37KpjROpZgk+AVLa+I2Rd6pmeHTdFsm/dFJ7E6HOJ1PcG16iYfLVvJx7C4/f33j85u3PD8ywp3yIi4V86h/hT6tCDWEhSZNu0exOGBjR8LPnnSQUyIcnVriwdKVvL8+xo9vX/j07AXjgwe4NXse5wo5lCGiv0L1R6hJOxRlv8m9jT28OrGVY/kIw5kwV9uL3J5T5uXIeb5//cKHW/d5tKrCzc4uzhQyKHmwC27BKwmDIoyJMGZX9IecjA+s4PXJndxes4iDuTBnW7Lc6JrF48oA765c5+m2PRPpLre1MpyN1IWm4BI8QkCIGJqEXbPQZ3KlexofLxxmbFMvWxJBhpvjnC0WuDq9k9EZXYx2dHCxvZWqvB9MBVFaBDah6Z8erZrQ1ORl7OqUBE82LWeoLcUSy8X27GQO5GJUW7NUi0JLmqFclG0iWyXLU7V0RmPsWkLvREpNULAMxYKQg4FEgP1Ji/UxH6vjftZJ0qNTc+xrTVCRdxuSfnojTcwP2eoJVSPln7HDsuWS2yTntNHhtbE26mWrSA5lYgylYyIJ0Bfz0B120Ze1KFt2ZgdNOv3G/8La2O7aYmTkuX4HlaiHLfEAQ5kox5uTHMnEOZiKsCzsEYGTktdOOe5jps+gzW3Q4jLqS1GNsWuYun5GaYdBj+Vgc8I3UfhIPs3hrBSfnMw0j0nGaZCSb9J2g4KIsg5NSnr/K6yhGxiNLltcmuXSzaAc9V65wV1Cv6Tu8rmwbAYROa8aOfmrUvb6/f4GfVVN0UsDLokAAAAASUVORK5CYII=",
-              },
-              images: {
-                fallback: {
-                  src: "/static/f189901ac9d5aeb311935f50263bf042/825d5/punisher-war-zone-2008.jpg",
-                  srcSet:
-                    "/static/f189901ac9d5aeb311935f50263bf042/52d9c/punisher-war-zone-2008.jpg 128w,\n/static/f189901ac9d5aeb311935f50263bf042/773a4/punisher-war-zone-2008.jpg 256w,\n/static/f189901ac9d5aeb311935f50263bf042/825d5/punisher-war-zone-2008.jpg 512w,\n/static/f189901ac9d5aeb311935f50263bf042/e66e4/punisher-war-zone-2008.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/f189901ac9d5aeb311935f50263bf042/cd5c3/punisher-war-zone-2008.avif 128w,\n/static/f189901ac9d5aeb311935f50263bf042/8adcb/punisher-war-zone-2008.avif 256w,\n/static/f189901ac9d5aeb311935f50263bf042/f3f04/punisher-war-zone-2008.avif 512w,\n/static/f189901ac9d5aeb311935f50263bf042/fc0bd/punisher-war-zone-2008.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt1343727",
-        sequence: "2023-08-03-1519",
-        title: "Dredd",
-        year: "2012",
-        date: "03 Aug 2023",
-        slug: "dredd-2012",
-        grade: "B+",
-        principalCastNames: [
-          "Karl Urban",
-          "Rachel Wood",
-          "Andile Mngadi",
-          "Porteus Xandau",
-        ],
-        directorNames: ["Pete Travis"],
-        review: {
-          excerptHtml:
-            '<p>Often overlooked among the best comic book adaptations, <em>Dredd</em> unfolds in a dystopian alternate timeline with Karl Urban in the titular role as an authoritarian police officer able to judge, sentence, and execute perpetrators on the spot. A routine call sends him and his rookie partner to a 200-story housing block where they find themselves trapped and under siege from a murderous drug gang. <a data-continue-reading href="/reviews/dredd-2012/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+0lEQVR42h2S60+aBxTGWew2BERBLi+vgty9oNzLzfYVRF8VkFariAxmVaTWIrZzms06mnVztWnWpGnMssSkaZMt/bRl+7T9db+92aeTnOQ85znP+ak8zj6CEyamAgKj3kGl2ikVJQpLGVJJH+N+C9ItP9W1aUrLeZZLWRZng8zPTHC+N8O39SS7hQC1Yhyvy4zKOHCDIbEXt2sAu92Aw97PqN9MWhErLsZZkKMU8kGycRNu0chNr4tSPkVtPcfLTo43hzku20UuvtljzC+imho3sZAd5V4xzBerCe5Xp6mvZ6isZJCzAYpymILkJmzXYdJqCBq0lKUwuw2ZF+0srx9meHu6zvurLquFMKqF3Ch7dYmnj8s8Pynz7EmRZDJCIjZJMuxFzqeJhnx4Bz9nxKAhYDYgSyF2ahI/H81wdSTxsjXD9WWLTmsZVWtb5tVPTS5/bCJlRNaKQRzDAnbbIM6REQqFeZo795idtJIY0SJo1MSjAbYbBbrNNN39PM2VGOf787Qf3EVV28jy7KzOd2cNohErlXIIn3cIm82CWRDJ3EpTq5cJBV0MaHvQqm8oi4bYrMgcbM2xWwrSriR4/X2D0lIK1cZ6loMHZc5Pq3S2Mzzen8PnEzEa+9H0fka/XkcqNU4o5MJq1eP12HB7HPj9dsZ8NuSMh/3NONVViVjYjer4cJmtusyT9gone7dpbUkEJhyIgoE+Xa8iqCUS8SoOHcSCAm6nGa3SH7ZbcTqHKean6B4t8mhnSZnNo9pRTp5TmKpWssrnctxOj2Ex9+F0GDEZdGjUnyo4CUwGRogHzQgWHV6fU3HowmDoUwgJcf3mET883eSko2RYLSeo3ElyfLjKu6sjPvzyFfJslEjIQzDuwCbq0evUiKJZYdSEIBiJ3ZxUMjbT0/MJs9NT/PvHNWdf1zjYXUB12l7k7YsGv/3a4a/fu/zz5yv+/njBx3fnfHkgkZ72IJj0yvlqxalIODLB2Lgbi9X4fxwbcwEuju/TeXiXtTsp/gNuCn7CRtYdyQAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/4a2d830b713b06854f0e432b14f52ffd/825d5/dredd-2012.jpg",
-                  srcSet:
-                    "/static/4a2d830b713b06854f0e432b14f52ffd/52d9c/dredd-2012.jpg 128w,\n/static/4a2d830b713b06854f0e432b14f52ffd/773a4/dredd-2012.jpg 256w,\n/static/4a2d830b713b06854f0e432b14f52ffd/825d5/dredd-2012.jpg 512w,\n/static/4a2d830b713b06854f0e432b14f52ffd/e66e4/dredd-2012.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/4a2d830b713b06854f0e432b14f52ffd/cd5c3/dredd-2012.avif 128w,\n/static/4a2d830b713b06854f0e432b14f52ffd/8adcb/dredd-2012.avif 256w,\n/static/4a2d830b713b06854f0e432b14f52ffd/f3f04/dredd-2012.avif 512w,\n/static/4a2d830b713b06854f0e432b14f52ffd/fc0bd/dredd-2012.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0044418",
-        sequence: "2023-07-31-1518",
-        title: "Big Jim McLain",
-        year: "1952",
-        date: "31 Jul 2023",
-        slug: "big-jim-mclain-1952",
-        grade: "C",
-        principalCastNames: [
-          "John Wayne",
-          "Nancy Olson",
-          "James Arness",
-          "Alan Napier",
-        ],
-        directorNames: ["Edward Ludwig"],
-        review: {
-          excerptHtml:
-            '<p>John Wayne’s first production under his Wayne-Fellows Productions company (later renamed Batjac) sees him playing a House UnAmerican Activities investigator ferreting out communists and romancing a war-widow played by Nancy Olson in Hawaii. <a data-continue-reading href="/reviews/big-jim-mclain-1952/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR42lVSS0uyYRB9/0lrQchNZBAiFIFJBJkVLZIKkUAkUiNdFBRK0YVABK1IDIMQFBcm0iLQhYhFLlxkaTeztMsi6AecjzNg8C0OzzDzzJkzF6XZbOL9/R2tVkvejt1oNHBxcYHr62vc3t4iHA7j9PQUr6+veHh4wP39ParVqsT41mo1PD4+Qnl7ewPRIaPNpJeXFwSDQezu7qJcLmNzcxMbGxuo1+sSu7u7+w8d/x9hBySjQtokSSQS+Pz8xP7+PtbX1yWZ6phMRbQJqmauQlVsmwQkIvL5PAKBABYXF7G8vIxoNAqfzwev1wu/3w+r1Srx5+dnPD09CTgicglhu91G5+Unt9uNubk5HB4ewuFwwGKxYGJiAgsLC5iamsLg4CC0Wi3Oz89FPXM6gpRsNoubmxtx/P7+4vLyEmazWQjZIskMBoMQmkwmGI1GDAwMoLu7G0tLS/j5+cHHxwe+v7/x9fUF5fj4GNvb28jlckJMEiqgkrGxMajVavT09GB0dBRDQ0PQ6/Xo7++HSqXCyMgI0uk0isWi5F9dXUGhY3Z2FqFQCJlMBqurq6KEBH19fZiZmZHZUeXw8DB0Oh16e3vFZhcHBweIxWKIRCKSr5CIG+SNcSbJZBJ7e3tyLh6PR5YyPT0tySsrK+LjktgubQpKpVKCeDwOpVQqoVKpoFAogPPkMRNnZ2dSaG1t7e9kOBqXyyVFWJTj4rYZpzAWVHhnR0dHopAfdnZ2pPL8/DzGx8dlAVtbW7Db7TICjUaDrq4uTE5O4uTkBDabDU6nUy6D7z+veHgUdnjS2QAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/6c6374ad1a7c9fcddcf76f89f8080da4/825d5/big-jim-mclain-1952.jpg",
-                  srcSet:
-                    "/static/6c6374ad1a7c9fcddcf76f89f8080da4/52d9c/big-jim-mclain-1952.jpg 128w,\n/static/6c6374ad1a7c9fcddcf76f89f8080da4/773a4/big-jim-mclain-1952.jpg 256w,\n/static/6c6374ad1a7c9fcddcf76f89f8080da4/825d5/big-jim-mclain-1952.jpg 512w,\n/static/6c6374ad1a7c9fcddcf76f89f8080da4/e66e4/big-jim-mclain-1952.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/6c6374ad1a7c9fcddcf76f89f8080da4/cd5c3/big-jim-mclain-1952.avif 128w,\n/static/6c6374ad1a7c9fcddcf76f89f8080da4/8adcb/big-jim-mclain-1952.avif 256w,\n/static/6c6374ad1a7c9fcddcf76f89f8080da4/f3f04/big-jim-mclain-1952.avif 512w,\n/static/6c6374ad1a7c9fcddcf76f89f8080da4/fc0bd/big-jim-mclain-1952.avif 1024w",
-                    type: "image/avif",
-                    sizes: "(min-width: 512px) 512px, 100vw",
-                  },
-                ],
-              },
-              width: 512,
-              height: 288,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0065210",
-        sequence: "2023-07-28-1517",
-        title: "Whirlpool",
-        year: "1970",
-        date: "28 Jul 2023",
-        slug: "whirlpool-1970",
-        grade: "D",
-        principalCastNames: [
-          "Karl Lanchbury",
-          "Vivian Neves",
-          "Pia Andersson",
-          "Johanna Hegger",
-        ],
-        directorNames: ["José Ramón Larraz"],
-        review: {
-          excerptHtml:
-            '<p>In director José Ramón Larraz’s sexploitation debut, young model Tulia accepts an invitation to stay at middle-aged photographer Sarah’s country house. There she meets Sarah’s nephew Theo, also a photographer. The pair try to seduce Tulia, who’s torn between hedonistic desire and cautionary anxiety. As Theo’s methods grow more extreme, Tulia uncovers a mystery surrounding her predecessor, a model named Rhonda. <a data-continue-reading href="/reviews/whirlpool-1970/">Continue reading...</a></p>',
-        },
-        still: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              placeholder: {
-                fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBElEQVR42hWS309aBxTHrxteLly4gFVUmL/mUBQLFUWliMCUKdgCSlWoaKmtq7jWYFvFuXbWZmmZ6YxWm7ZjmV0auzSNT0u2l73u7/rs+nBeTnI+5/v9niP8uFViKZ+jeK9AesxHLh3n6LjCfrlMvM/OD3fz/P3nKRv5DL+/OuSfs098enfCaaXCH2/eUDk64uT4JVNBJ8NdCsL+9n12VvMspGJs3smxXcjy+NEOP+0+JdR9gc3CImdHB9yfTfDu17ecfTjl/W8VPqrQt4cvKW2UeP1ij2+8dgKdKvDRcpa1bIKIx8nN5CiZMS+zU1OUHmzi/8rM3sM7/PfXGR+O9ylcn2PU78PvcZGdusovz8qUHm7xaq9Mwu8g4q5H+H4+ynLiMjdiA4z6nDi+rGd4xEd0fITB3jaery7w78f3HKhOWutkgn0upsfCDLodxK+EGY9FeFJc4dlqjhupCMLPO0V63W2E+9vZmE9wJTrAd9djZGIB2rsaeHp3iRdqFOPebmy2WpKJOIfl58yoEaUmhole7mNtJsVuLk24twMhMOTgc7EKi0XPbv4ar9dvc1K8ycH6CtFogN0HKxyv32IuGlTVt9BYq7A4GaSQTfJ4ZYnthTmGAy5uTYYJOhsQvG47drsJ2SDiaW9ksNPGRH8HW8t5RkNBRI3AxJAXZ5ONcDDE7YVF5iL93JtPspoMcXWoG2dPMwMXm2ip0SJc8rqw1JkxmnQYTBIGRcRolllUB2fT17A12hl0qAMtVp4s59gvfst2JspaKky8x87FRh0OVVBTjUS1RoMg6jRIehGdrMWi2jHIElWCgMdziZnpNKno1+o/dpAKuMmMeMmFvEz7XTisJjqbLXhaLSiiRnVyXtUIslFCqZGRFT2SJKLVilRVfUaNYmRyfAKbWaHLZsKvXjw1pkJjPnq+sFBv1tJuN9LWYMagUxkGCZ32HKjokHQi4vkWsRpZVWu3GnC2mvC5Wuhtq6OnyUxkoJm+Liv2C3qaFYlaoxZFdWW1GDDotZjVnkEW+R8DiIduuifILwAAAABJRU5ErkJggg==",
-              },
-              images: {
-                fallback: {
-                  src: "/static/6d032bb8e8afb79ae161feb2ad5d03d3/825d5/whirlpool-1970.jpg",
-                  srcSet:
-                    "/static/6d032bb8e8afb79ae161feb2ad5d03d3/52d9c/whirlpool-1970.jpg 128w,\n/static/6d032bb8e8afb79ae161feb2ad5d03d3/773a4/whirlpool-1970.jpg 256w,\n/static/6d032bb8e8afb79ae161feb2ad5d03d3/825d5/whirlpool-1970.jpg 512w,\n/static/6d032bb8e8afb79ae161feb2ad5d03d3/e66e4/whirlpool-1970.jpg 1024w",
-                  sizes: "(min-width: 512px) 512px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/6d032bb8e8afb79ae161feb2ad5d03d3/cd5c3/whirlpool-1970.avif 128w,\n/static/6d032bb8e8afb79ae161feb2ad5d03d3/8adcb/whirlpool-1970.avif 256w,\n/static/6d032bb8e8afb79ae161feb2ad5d03d3/f3f04/whirlpool-1970.avif 512w,\n/static/6d032bb8e8afb79ae161feb2ad5d03d3/fc0bd/whirlpool-1970.avif 1024w",
                     type: "image/avif",
                     sizes: "(min-width: 512px) 512px, 100vw",
                   },

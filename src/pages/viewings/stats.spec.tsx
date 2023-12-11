@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import AllTimeStatsPage, { Head } from "./stats";
 import { data } from "./stats.fixtures";
 
-describe("/stats/", () => {
+describe("/viewings/stats/", () => {
   it("sets page title", () => {
     render(<Head />);
 

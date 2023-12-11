@@ -19,10 +19,9 @@ export function Head(): JSX.Element {
   );
 }
 
-export default function HomeTemplate({
+export default function HomePage({
   data,
 }: {
-  pageContext: PageContext;
   data: NonNullable<Queries.HomePageQuery>;
 }): JSX.Element | null {
   return <Home items={data.reviewedTitle.nodes} />;
@@ -30,7 +29,7 @@ export default function HomeTemplate({
 
 export const pageQuery = graphql`
   query HomePage {
-    reviewedTitle: allReviewedTitlesJson(sort: { sequence: DESC }, limit: 15) {
+    reviewedTitle: allReviewedTitlesJson(sort: { sequence: DESC }, limit: 10) {
       nodes {
         ...HomePageItem
       }

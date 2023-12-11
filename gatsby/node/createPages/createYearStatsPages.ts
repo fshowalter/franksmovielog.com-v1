@@ -36,7 +36,7 @@ export async function createYearStatsPages({
   const years = queryResult.data.yearStats.nodes.map((node) => node.year);
   years.forEach((year) => {
     createPage({
-      path: `/stats/${year}/`,
+      path: `/viewings/stats/${year}/`,
       component: path.resolve("./src/templates/yearStats.tsx"),
       context: {
         year: year,
