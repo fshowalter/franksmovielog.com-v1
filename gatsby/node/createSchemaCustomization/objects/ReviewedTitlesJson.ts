@@ -30,6 +30,24 @@ export const ReviewedTitleViewing = {
       },
     },
     venue: "String",
+    venueNotes: {
+      type: "String",
+      resolve: (source: { venueNotes: string }) => {
+        if (!source.venueNotes) {
+          return null;
+        }
+
+        const mdast = remark().parse(source.venueNotes);
+
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as IHastNode;
+
+        hast.children[0].tagName = "span";
+
+        return toHtml(hast);
+      },
+    },
     medium: "String",
     mediumNotes: {
       type: "String",
