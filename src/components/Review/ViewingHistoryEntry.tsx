@@ -67,6 +67,35 @@ function MediumNotes({
   );
 }
 
+function VenueNotes({
+  viewing,
+}: {
+  viewing: Queries.ViewingHistoryFragment["viewings"][0];
+}) {
+  if (!viewing.venueNotes) {
+    return null;
+  }
+  return (
+    <Box
+      as="span"
+      fontWeight="light"
+      color="subtle"
+      fontSize="small"
+      lineHeight={1}
+    >
+      (
+      <RenderedMarkdown
+        // eslint-disable-next-line react/no-danger
+        text={viewing.venueNotes}
+        fontSize="small"
+        lineHeight={1}
+        as="span"
+      />
+      )
+    </Box>
+  );
+}
+
 function Venue({
   viewing,
 }: {
@@ -76,7 +105,7 @@ function Venue({
     return null;
   }
   return (
-    <Box fontWeight="light" color="subtle">
+    <Box fontWeight="light" as="span" color="subtle">
       <span>at</span> <span>{viewing.venue}</span>
     </Box>
   );
@@ -117,7 +146,7 @@ export function ViewingHistoryEntry({ viewing }: IIViewingHistoryItemProps) {
         <Medium viewing={viewing} /> <MediumNotes viewing={viewing} />
       </GridArea>
       <GridArea name="venue">
-        <Venue viewing={viewing} />
+        <Venue viewing={viewing} /> <VenueNotes viewing={viewing} />
       </GridArea>
       <GridArea name="viewingNote">
         <ViewingNote viewing={viewing} />
@@ -130,6 +159,7 @@ export const query = graphql`
   fragment ViewingHistoryEntry on ReviewedTitleViewing {
     date(formatString: "ddd MMM DD, YYYY")
     venue
+    venueNotes
     medium
     mediumNotes
     viewingNote {
