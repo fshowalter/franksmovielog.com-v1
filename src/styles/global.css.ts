@@ -18,6 +18,7 @@ globalStyle(`html, body`, {
 globalStyle(`body`, {
   lineHeight: 1.5,
   WebkitFontSmoothing: `antialiased`,
+  MozOsxFontSmoothing: "grayscale",
   fontFamily: `"Charter", "Iowan Old Style", "Georgia", "Cambria", "Times New Roman", "Times", "serif"`,
   fontFeatureSettings: `"kern","liga","clig","calt"`,
   fontKerning: "normal",
