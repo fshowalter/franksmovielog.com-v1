@@ -148,11 +148,11 @@
           "grade": "C"
         },
         {
-          "title": "Hatchet",
-          "imdbId": "tt0422401",
-          "year": "2006",
-          "slug": "hatchet-2006",
-          "grade": "C"
+          "title": "Harry in Your Pocket",
+          "imdbId": "tt0070158",
+          "year": "1973",
+          "slug": "harry-in-your-pocket-1973",
+          "grade": "C+"
         }
       ]
     }
@@ -3821,11 +3821,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "The Heavenly Body",
-          "imdbId": "tt0035980",
-          "year": "1944",
-          "slug": "the-heavenly-body-1944",
-          "grade": "D-"
+          "title": "Hell Is for Heroes",
+          "imdbId": "tt0056062",
+          "year": "1962",
+          "slug": "hell-is-for-heroes-1962",
+          "grade": "B"
         },
         {
           "title": "Hell Night",
@@ -3899,18 +3899,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Harold & Kumar Go to White Castle",
-          "imdbId": "tt0366551",
-          "year": "2004",
-          "slug": "harold-kumar-go-to-white-castle-2004",
-          "grade": "A-"
-        },
-        {
           "title": "Harry Potter and the Chamber of Secrets",
           "imdbId": "tt0295297",
           "year": "2002",
           "slug": "harry-potter-and-the-chamber-of-secrets-2002",
           "grade": "C"
+        },
+        {
+          "title": "Harry in Your Pocket",
+          "imdbId": "tt0070158",
+          "year": "1973",
+          "slug": "harry-in-your-pocket-1973",
+          "grade": "C+"
         },
         {
           "title": "Hatchet II",
@@ -4452,18 +4452,18 @@
           "grade": "A+"
         },
         {
+          "title": "Hell Is for Heroes",
+          "imdbId": "tt0056062",
+          "year": "1962",
+          "slug": "hell-is-for-heroes-1962",
+          "grade": "B"
+        },
+        {
           "title": "Hell Night",
           "imdbId": "tt0082511",
           "year": "1981",
           "slug": "hell-night-1981",
           "grade": "D"
-        },
-        {
-          "title": "Hell's House",
-          "imdbId": "tt0022991",
-          "year": "1932",
-          "slug": "hells-house-1932",
-          "grade": "C-"
         }
       ]
     }
@@ -6590,11 +6590,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Harry Potter and the Chamber of Secrets",
-          "imdbId": "tt0295297",
-          "year": "2002",
-          "slug": "harry-potter-and-the-chamber-of-secrets-2002",
-          "grade": "C"
+          "title": "Harry in Your Pocket",
+          "imdbId": "tt0070158",
+          "year": "1973",
+          "slug": "harry-in-your-pocket-1973",
+          "grade": "C+"
         },
         {
           "title": "Hatchet",
@@ -7811,6 +7811,118 @@
           "year": "1961",
           "slug": "angel-baby-1961",
           "grade": "C"
+        }
+      ]
+    }
+  },
+  {
+    "imdbId": "tt0056062",
+    "title": "Hell Is for Heroes",
+    "year": "1962",
+    "slug": "hell-is-for-heroes-1962",
+    "grade": "B",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Drama",
+      "War"
+    ],
+    "sortTitle": "Hell Is for Heroes (1962)",
+    "originalTitle": "Hell Is for Heroes",
+    "gradeValue": 9,
+    "runtimeMinutes": 90,
+    "releaseSequence": "1962-06-26tt0056062",
+    "directorNames": [
+      "Don Siegel"
+    ],
+    "principalCastNames": [
+      "Steve McQueen",
+      "Bobby Darin",
+      "Fess Parker",
+      "Harry Guardino"
+    ],
+    "reviewDate": "2015-07-15",
+    "reviewYear": "2015",
+    "sequence": "2015-07-15-504",
+    "viewings": [
+      {
+        "sequence": 504,
+        "medium": "Netflix",
+        "mediumNotes": null,
+        "date": "2015-07-11",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "James Coburn",
+          "slug": "james-coburn",
+          "titles": [
+            {
+              "title": "Ride Lonesome",
+              "imdbId": "tt0053220",
+              "year": "1959",
+              "slug": "ride-lonesome-1959",
+              "grade": "B+"
+            },
+            {
+              "title": "The Magnificent Seven",
+              "imdbId": "tt0054047",
+              "year": "1960",
+              "slug": "the-magnificent-seven-1960",
+              "grade": "B"
+            },
+            {
+              "title": "The Loved One",
+              "imdbId": "tt0059410",
+              "year": "1965",
+              "slug": "the-loved-one-1965",
+              "grade": "C"
+            },
+            {
+              "title": "The Carey Treatment",
+              "imdbId": "tt0068337",
+              "year": "1972",
+              "slug": "the-carey-treatment-1972",
+              "grade": "B-"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Heat",
+          "imdbId": "tt0113277",
+          "year": "1995",
+          "slug": "heat-1995",
+          "grade": "A+"
+        },
+        {
+          "title": "The Heavenly Body",
+          "imdbId": "tt0035980",
+          "year": "1944",
+          "slug": "the-heavenly-body-1944",
+          "grade": "D-"
+        },
+        {
+          "title": "Hell Night",
+          "imdbId": "tt0082511",
+          "year": "1981",
+          "slug": "hell-night-1981",
+          "grade": "D"
+        },
+        {
+          "title": "Hell's House",
+          "imdbId": "tt0022991",
+          "year": "1932",
+          "slug": "hells-house-1932",
+          "grade": "C-"
         }
       ]
     }
@@ -9193,18 +9305,18 @@
           "slug": "james-coburn",
           "titles": [
             {
-              "title": "The Carey Treatment",
-              "imdbId": "tt0068337",
-              "year": "1972",
-              "slug": "the-carey-treatment-1972",
-              "grade": "B-"
-            },
-            {
               "title": "The Last of Sheila",
               "imdbId": "tt0070291",
               "year": "1973",
               "slug": "the-last-of-sheila-1973",
               "grade": "B"
+            },
+            {
+              "title": "Harry in Your Pocket",
+              "imdbId": "tt0070158",
+              "year": "1973",
+              "slug": "harry-in-your-pocket-1973",
+              "grade": "C+"
             },
             {
               "title": "The Magnificent Seven",
@@ -9214,11 +9326,11 @@
               "grade": "B"
             },
             {
-              "title": "The Loved One",
-              "imdbId": "tt0059410",
-              "year": "1965",
-              "slug": "the-loved-one-1965",
-              "grade": "C"
+              "title": "Hell Is for Heroes",
+              "imdbId": "tt0056062",
+              "year": "1962",
+              "slug": "hell-is-for-heroes-1962",
+              "grade": "B"
             }
           ]
         }
@@ -10275,18 +10387,18 @@
           "grade": "A-"
         },
         {
+          "title": "Harry in Your Pocket",
+          "imdbId": "tt0070158",
+          "year": "1973",
+          "slug": "harry-in-your-pocket-1973",
+          "grade": "C+"
+        },
+        {
           "title": "Hatchet",
           "imdbId": "tt0422401",
           "year": "2006",
           "slug": "hatchet-2006",
           "grade": "C"
-        },
-        {
-          "title": "Hatchet II",
-          "imdbId": "tt1270835",
-          "year": "2010",
-          "slug": "hatchet-ii-2010",
-          "grade": "C-"
         }
       ]
     }
@@ -11965,11 +12077,11 @@
           "grade": "D-"
         },
         {
-          "title": "Hell Night",
-          "imdbId": "tt0082511",
-          "year": "1981",
-          "slug": "hell-night-1981",
-          "grade": "D"
+          "title": "Hell Is for Heroes",
+          "imdbId": "tt0056062",
+          "year": "1962",
+          "slug": "hell-is-for-heroes-1962",
+          "grade": "B"
         }
       ]
     }
@@ -20492,10 +20604,10 @@
           "slug": "james-coburn",
           "titles": [
             {
-              "title": "The Magnificent Seven",
-              "imdbId": "tt0054047",
-              "year": "1960",
-              "slug": "the-magnificent-seven-1960",
+              "title": "Hell Is for Heroes",
+              "imdbId": "tt0056062",
+              "year": "1962",
+              "slug": "hell-is-for-heroes-1962",
               "grade": "B"
             },
             {
@@ -20513,11 +20625,11 @@
               "grade": "B"
             },
             {
-              "title": "Ride Lonesome",
-              "imdbId": "tt0053220",
-              "year": "1959",
-              "slug": "ride-lonesome-1959",
-              "grade": "B+"
+              "title": "Harry in Your Pocket",
+              "imdbId": "tt0070158",
+              "year": "1973",
+              "slug": "harry-in-your-pocket-1973",
+              "grade": "C+"
             }
           ]
         }
@@ -27613,18 +27725,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Heat",
-          "imdbId": "tt0113277",
-          "year": "1995",
-          "slug": "heat-1995",
-          "grade": "A+"
-        },
-        {
           "title": "The Heavenly Body",
           "imdbId": "tt0035980",
           "year": "1944",
           "slug": "the-heavenly-body-1944",
           "grade": "D-"
+        },
+        {
+          "title": "Hell Is for Heroes",
+          "imdbId": "tt0056062",
+          "year": "1962",
+          "slug": "hell-is-for-heroes-1962",
+          "grade": "B"
         },
         {
           "title": "Hell's House",
@@ -41906,6 +42018,127 @@
     }
   },
   {
+    "imdbId": "tt0070158",
+    "title": "Harry in Your Pocket",
+    "year": "1973",
+    "slug": "harry-in-your-pocket-1973",
+    "grade": "C+",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "sortTitle": "Harry in Your Pocket (1973)",
+    "originalTitle": "Harry in Your Pocket",
+    "gradeValue": 7,
+    "runtimeMinutes": 103,
+    "releaseSequence": "1973-10-18tt0070158",
+    "directorNames": [
+      "Bruce Geller"
+    ],
+    "principalCastNames": [
+      "James Coburn",
+      "Michael Sarrazin",
+      "Trish Van Devere",
+      "Walter Pidgeon"
+    ],
+    "reviewDate": "2017-07-10",
+    "reviewYear": "2017",
+    "sequence": "2017-07-10-599",
+    "viewings": [
+      {
+        "sequence": 599,
+        "medium": "DVD",
+        "mediumNotes": null,
+        "date": "2017-07-07",
+        "venue": null,
+        "venueNotes": null
+      },
+      {
+        "sequence": 251,
+        "medium": "TCM HD",
+        "mediumNotes": null,
+        "date": "2012-11-23",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "James Coburn",
+          "slug": "james-coburn",
+          "titles": [
+            {
+              "title": "The Carey Treatment",
+              "imdbId": "tt0068337",
+              "year": "1972",
+              "slug": "the-carey-treatment-1972",
+              "grade": "B-"
+            },
+            {
+              "title": "The Last of Sheila",
+              "imdbId": "tt0070291",
+              "year": "1973",
+              "slug": "the-last-of-sheila-1973",
+              "grade": "B"
+            },
+            {
+              "title": "Ride Lonesome",
+              "imdbId": "tt0053220",
+              "year": "1959",
+              "slug": "ride-lonesome-1959",
+              "grade": "B+"
+            },
+            {
+              "title": "The Magnificent Seven",
+              "imdbId": "tt0054047",
+              "year": "1960",
+              "slug": "the-magnificent-seven-1960",
+              "grade": "B"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Harold & Kumar Go to White Castle",
+          "imdbId": "tt0366551",
+          "year": "2004",
+          "slug": "harold-kumar-go-to-white-castle-2004",
+          "grade": "A-"
+        },
+        {
+          "title": "Harry Potter and the Chamber of Secrets",
+          "imdbId": "tt0295297",
+          "year": "2002",
+          "slug": "harry-potter-and-the-chamber-of-secrets-2002",
+          "grade": "C"
+        },
+        {
+          "title": "Hatchet",
+          "imdbId": "tt0422401",
+          "year": "2006",
+          "slug": "hatchet-2006",
+          "grade": "C"
+        },
+        {
+          "title": "Hatchet II",
+          "imdbId": "tt1270835",
+          "year": "2010",
+          "slug": "hatchet-ii-2010",
+          "grade": "C-"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0022293",
     "title": "The Range Feud",
     "year": "1931",
@@ -44729,11 +44962,11 @@
           "slug": "james-coburn",
           "titles": [
             {
-              "title": "The Last of Sheila",
-              "imdbId": "tt0070291",
+              "title": "Harry in Your Pocket",
+              "imdbId": "tt0070158",
               "year": "1973",
-              "slug": "the-last-of-sheila-1973",
-              "grade": "B"
+              "slug": "harry-in-your-pocket-1973",
+              "grade": "C+"
             },
             {
               "title": "Ride Lonesome",
@@ -44743,18 +44976,18 @@
               "grade": "B+"
             },
             {
+              "title": "Hell Is for Heroes",
+              "imdbId": "tt0056062",
+              "year": "1962",
+              "slug": "hell-is-for-heroes-1962",
+              "grade": "B"
+            },
+            {
               "title": "The Loved One",
               "imdbId": "tt0059410",
               "year": "1965",
               "slug": "the-loved-one-1965",
               "grade": "C"
-            },
-            {
-              "title": "The Carey Treatment",
-              "imdbId": "tt0068337",
-              "year": "1972",
-              "slug": "the-carey-treatment-1972",
-              "grade": "B-"
             }
           ]
         }
@@ -50893,18 +51126,18 @@
               "grade": "B-"
             },
             {
+              "title": "Harry in Your Pocket",
+              "imdbId": "tt0070158",
+              "year": "1973",
+              "slug": "harry-in-your-pocket-1973",
+              "grade": "C+"
+            },
+            {
               "title": "Ride Lonesome",
               "imdbId": "tt0053220",
               "year": "1959",
               "slug": "ride-lonesome-1959",
               "grade": "B+"
-            },
-            {
-              "title": "The Magnificent Seven",
-              "imdbId": "tt0054047",
-              "year": "1960",
-              "slug": "the-magnificent-seven-1960",
-              "grade": "B"
             }
           ]
         }
@@ -57429,17 +57662,17 @@
           "slug": "james-coburn",
           "titles": [
             {
-              "title": "Ride Lonesome",
-              "imdbId": "tt0053220",
-              "year": "1959",
-              "slug": "ride-lonesome-1959",
-              "grade": "B+"
-            },
-            {
               "title": "The Magnificent Seven",
               "imdbId": "tt0054047",
               "year": "1960",
               "slug": "the-magnificent-seven-1960",
+              "grade": "B"
+            },
+            {
+              "title": "Hell Is for Heroes",
+              "imdbId": "tt0056062",
+              "year": "1962",
+              "slug": "hell-is-for-heroes-1962",
               "grade": "B"
             },
             {
