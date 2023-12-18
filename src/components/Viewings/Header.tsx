@@ -1,7 +1,9 @@
+import { foregroundColors } from "../../styles/colors.css";
 import { Box } from "../Box";
 import { Link } from "../Link";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
+import { linkStyle } from "./Header.css";
 
 export function Header({
   viewingCount,
@@ -39,6 +41,7 @@ export function Header({
           paddingY={8}
           borderRadius={8}
           alignItems="center"
+          className={linkStyle}
           justifyContent="center"
         >
           <Box flexShrink={0}>
@@ -47,7 +50,7 @@ export function Header({
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
-              fill="currentColor"
+              fill={foregroundColors.default}
               className="bi bi-file-bar-graph"
               viewBox="0 0 16 16"
             >
