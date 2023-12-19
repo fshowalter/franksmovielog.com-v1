@@ -8051,18 +8051,18 @@
           "slug": "peter-cushing",
           "titles": [
             {
-              "title": "Horror of Dracula",
-              "imdbId": "tt0051554",
-              "year": "1958",
-              "slug": "horror-of-dracula-1958",
-              "grade": "A-"
-            },
-            {
               "title": "The House That Dripped Blood",
               "imdbId": "tt0065854",
               "year": "1971",
               "slug": "the-house-that-dripped-blood-1971",
               "grade": "C+"
+            },
+            {
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
+              "year": "1971",
+              "slug": "i-monster-1971",
+              "grade": "D+"
             },
             {
               "title": "And Now the Screaming Starts!",
@@ -14829,11 +14829,11 @@
           "grade": "F"
         },
         {
-          "title": "In Fabric",
-          "imdbId": "tt7464188",
-          "year": "2018",
-          "slug": "in-fabric-2018",
-          "grade": "B"
+          "title": "I, Monster",
+          "imdbId": "tt0068727",
+          "year": "1971",
+          "slug": "i-monster-1971",
+          "grade": "D+"
         }
       ]
     }
@@ -18225,11 +18225,11 @@
           "slug": "peter-cushing",
           "titles": [
             {
-              "title": "The House That Dripped Blood",
-              "imdbId": "tt0065854",
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
               "year": "1971",
-              "slug": "the-house-that-dripped-blood-1971",
-              "grade": "C+"
+              "slug": "i-monster-1971",
+              "grade": "D+"
             },
             {
               "title": "Asylum",
@@ -21142,11 +21142,11 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "Hannie Caulder",
-              "imdbId": "tt0068675",
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
               "year": "1971",
-              "slug": "hannie-caulder-1971",
-              "grade": "B"
+              "slug": "i-monster-1971",
+              "grade": "D+"
             },
             {
               "title": "Howling II: ... Your Sister Is a Werewolf",
@@ -35086,18 +35086,18 @@
               "grade": "C+"
             },
             {
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
+              "year": "1971",
+              "slug": "i-monster-1971",
+              "grade": "D+"
+            },
+            {
               "title": "Howling II: ... Your Sister Is a Werewolf",
               "imdbId": "tt0089308",
               "year": "1985",
               "slug": "howling-ii-your-sister-is-a-werewolf-1985",
               "grade": "F"
-            },
-            {
-              "title": "Corridor of Mirrors",
-              "imdbId": "tt0040246",
-              "year": "1948",
-              "slug": "corridor-of-mirrors-1948",
-              "grade": "D+"
             }
           ]
         }
@@ -36636,18 +36636,18 @@
           "grade": "B"
         },
         {
+          "title": "I, Monster",
+          "imdbId": "tt0068727",
+          "year": "1971",
+          "slug": "i-monster-1971",
+          "grade": "D+"
+        },
+        {
           "title": "In Fabric",
           "imdbId": "tt7464188",
           "year": "2018",
           "slug": "in-fabric-2018",
           "grade": "B"
-        },
-        {
-          "title": "In Which We Serve",
-          "imdbId": "tt0034891",
-          "year": "1942",
-          "slug": "in-which-we-serve-1942",
-          "grade": "C+"
         }
       ]
     }
@@ -39231,10 +39231,10 @@
               "grade": "C+"
             },
             {
-              "title": "Asylum",
-              "imdbId": "tt0068230",
-              "year": "1972",
-              "slug": "asylum-1972",
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
+              "year": "1971",
+              "slug": "i-monster-1971",
               "grade": "D+"
             }
           ]
@@ -40555,6 +40555,151 @@
           "year": "1986",
           "slug": "the-seventh-curse-1986",
           "grade": "B+"
+        }
+      ]
+    }
+  },
+  {
+    "imdbId": "tt0068727",
+    "title": "I, Monster",
+    "year": "1971",
+    "slug": "i-monster-1971",
+    "grade": "D+",
+    "countries": [
+      "United Kingdom"
+    ],
+    "genres": [
+      "Horror"
+    ],
+    "sortTitle": "I, Monster (1971)",
+    "originalTitle": "I, Monster",
+    "gradeValue": 4,
+    "runtimeMinutes": 75,
+    "releaseSequence": "1971-??-??tt0068727",
+    "directorNames": [
+      "Stephen Weeks"
+    ],
+    "principalCastNames": [
+      "Christopher Lee",
+      "Peter Cushing",
+      "Mike Raven",
+      "Richard Hurndall"
+    ],
+    "reviewDate": "2015-09-18",
+    "reviewYear": "2015",
+    "sequence": "2015-09-18-514",
+    "viewings": [
+      {
+        "sequence": 514,
+        "medium": "Shudder",
+        "mediumNotes": null,
+        "date": "2015-08-11",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "Christopher Lee",
+          "slug": "christopher-lee",
+          "titles": [
+            {
+              "title": "The House That Dripped Blood",
+              "imdbId": "tt0065854",
+              "year": "1971",
+              "slug": "the-house-that-dripped-blood-1971",
+              "grade": "C+"
+            },
+            {
+              "title": "Hannie Caulder",
+              "imdbId": "tt0068675",
+              "year": "1971",
+              "slug": "hannie-caulder-1971",
+              "grade": "B"
+            },
+            {
+              "title": "Howling II: ... Your Sister Is a Werewolf",
+              "imdbId": "tt0089308",
+              "year": "1985",
+              "slug": "howling-ii-your-sister-is-a-werewolf-1985",
+              "grade": "F"
+            },
+            {
+              "title": "Corridor of Mirrors",
+              "imdbId": "tt0040246",
+              "year": "1948",
+              "slug": "corridor-of-mirrors-1948",
+              "grade": "D+"
+            }
+          ]
+        },
+        {
+          "name": "Peter Cushing",
+          "slug": "peter-cushing",
+          "titles": [
+            {
+              "title": "Horror of Dracula",
+              "imdbId": "tt0051554",
+              "year": "1958",
+              "slug": "horror-of-dracula-1958",
+              "grade": "A-"
+            },
+            {
+              "title": "The House That Dripped Blood",
+              "imdbId": "tt0065854",
+              "year": "1971",
+              "slug": "the-house-that-dripped-blood-1971",
+              "grade": "C+"
+            },
+            {
+              "title": "Asylum",
+              "imdbId": "tt0068230",
+              "year": "1972",
+              "slug": "asylum-1972",
+              "grade": "D+"
+            },
+            {
+              "title": "And Now the Screaming Starts!",
+              "imdbId": "tt0069715",
+              "year": "1973",
+              "slug": "and-now-the-screaming-starts-1973",
+              "grade": "D+"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "The Hunt",
+          "imdbId": "tt8244784",
+          "year": "2020",
+          "slug": "the-hunt-2020",
+          "grade": "B"
+        },
+        {
+          "title": "I Like Your Nerve",
+          "imdbId": "tt0021986",
+          "year": "1931",
+          "slug": "i-like-your-nerve-1931",
+          "grade": "F"
+        },
+        {
+          "title": "In Fabric",
+          "imdbId": "tt7464188",
+          "year": "2018",
+          "slug": "in-fabric-2018",
+          "grade": "B"
+        },
+        {
+          "title": "In Which We Serve",
+          "imdbId": "tt0034891",
+          "year": "1942",
+          "slug": "in-which-we-serve-1942",
+          "grade": "C+"
         }
       ]
     }
@@ -47568,11 +47713,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "I Like Your Nerve",
-          "imdbId": "tt0021986",
-          "year": "1931",
-          "slug": "i-like-your-nerve-1931",
-          "grade": "F"
+          "title": "I, Monster",
+          "imdbId": "tt0068727",
+          "year": "1971",
+          "slug": "i-monster-1971",
+          "grade": "D+"
         },
         {
           "title": "In Fabric",
@@ -48851,11 +48996,11 @@
               "grade": "B"
             },
             {
-              "title": "Howling II: ... Your Sister Is a Werewolf",
-              "imdbId": "tt0089308",
-              "year": "1985",
-              "slug": "howling-ii-your-sister-is-a-werewolf-1985",
-              "grade": "F"
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
+              "year": "1971",
+              "slug": "i-monster-1971",
+              "grade": "D+"
             }
           ]
         },
@@ -48878,17 +49023,17 @@
               "grade": "A-"
             },
             {
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
+              "year": "1971",
+              "slug": "i-monster-1971",
+              "grade": "D+"
+            },
+            {
               "title": "Asylum",
               "imdbId": "tt0068230",
               "year": "1972",
               "slug": "asylum-1972",
-              "grade": "D+"
-            },
-            {
-              "title": "And Now the Screaming Starts!",
-              "imdbId": "tt0069715",
-              "year": "1973",
-              "slug": "and-now-the-screaming-starts-1973",
               "grade": "D+"
             }
           ]
@@ -56824,18 +56969,18 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "The House That Dripped Blood",
-              "imdbId": "tt0065854",
-              "year": "1971",
-              "slug": "the-house-that-dripped-blood-1971",
-              "grade": "C+"
-            },
-            {
               "title": "Hannie Caulder",
               "imdbId": "tt0068675",
               "year": "1971",
               "slug": "hannie-caulder-1971",
               "grade": "B"
+            },
+            {
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
+              "year": "1971",
+              "slug": "i-monster-1971",
+              "grade": "D+"
             },
             {
               "title": "Corridor of Mirrors",
@@ -59712,18 +59857,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "The Hunt",
-          "imdbId": "tt8244784",
-          "year": "2020",
-          "slug": "the-hunt-2020",
-          "grade": "B"
-        },
-        {
           "title": "I Like Your Nerve",
           "imdbId": "tt0021986",
           "year": "1931",
           "slug": "i-like-your-nerve-1931",
           "grade": "F"
+        },
+        {
+          "title": "I, Monster",
+          "imdbId": "tt0068727",
+          "year": "1971",
+          "slug": "i-monster-1971",
+          "grade": "D+"
         },
         {
           "title": "In Which We Serve",
