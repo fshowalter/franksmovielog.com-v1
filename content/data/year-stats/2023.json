@@ -1,12 +1,12 @@
 {
   "year": "2023",
-  "newTitleCount": 89,
-  "viewingCount": 121,
-  "titleCount": 119,
+  "newTitleCount": 92,
+  "viewingCount": 124,
+  "titleCount": 122,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 40
+      "count": 42
     },
     {
       "name": "Watch TCM",
@@ -72,7 +72,7 @@
     },
     {
       "name": "1990s",
-      "count": 9
+      "count": 11
     },
     {
       "name": "2000s",
@@ -84,7 +84,7 @@
     },
     {
       "name": "2020s",
-      "count": 12
+      "count": 13
     }
   ],
   "mostWatchedTitles": [
@@ -691,6 +691,49 @@
       ]
     },
     {
+      "name": "Reggie Bannister",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1471,
+          "date": "2023-04-13",
+          "slug": "phantasm-iii-lord-of-the-dead-1994",
+          "title": "Phantasm III: Lord of the Dead",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1994"
+        },
+        {
+          "sequence": 1476,
+          "date": "2023-04-27",
+          "slug": "phantasm-iv-oblivion-1998",
+          "title": "Phantasm IV: Oblivion",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1998"
+        },
+        {
+          "sequence": 1524,
+          "date": "2023-08-31",
+          "slug": "phantasm-ravager-2016",
+          "title": "Phantasm: Ravager",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2016"
+        },
+        {
+          "sequence": 1552,
+          "date": "2023-12-17",
+          "slug": null,
+          "title": "Silent Night, Deadly Night 4: Initiation",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1990"
+        }
+      ]
+    },
+    {
       "name": "James Coburn",
       "count": 4,
       "slug": "james-coburn",
@@ -866,40 +909,6 @@
           "medium": "Watch TCM",
           "venue": null,
           "year": "1940"
-        }
-      ]
-    },
-    {
-      "name": "Arthur Hohl",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1441,
-          "date": "2023-02-09",
-          "slug": "the-life-of-jimmy-dolan-1933",
-          "title": "The Life of Jimmy Dolan",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 1486,
-          "date": "2023-05-20",
-          "slug": "private-detective-62-1933",
-          "title": "Private Detective 62",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 1506,
-          "date": "2023-06-29",
-          "slug": "the-kennel-murder-case-1933",
-          "title": "The Kennel Murder Case",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1933"
         }
       ]
     }
