@@ -5084,18 +5084,18 @@
           "grade": "B-"
         },
         {
+          "title": "Sagebrush Trail",
+          "imdbId": "tt0024516",
+          "year": "1933",
+          "slug": "sagebrush-trail-1933",
+          "grade": "C-"
+        },
+        {
           "title": "Saint Maud",
           "imdbId": "tt7557108",
           "year": "2019",
           "slug": "saint-maud-2019",
           "grade": "C"
-        },
-        {
-          "title": "Salute",
-          "imdbId": "tt0020359",
-          "year": "1929",
-          "slug": "salute-1929",
-          "grade": "D+"
         }
       ]
     }
@@ -6170,11 +6170,11 @@
               "grade": "D"
             },
             {
-              "title": "The Star Packer",
-              "imdbId": "tt0025830",
-              "year": "1934",
-              "slug": "the-star-packer-1934",
-              "grade": "D"
+              "title": "Sagebrush Trail",
+              "imdbId": "tt0024516",
+              "year": "1933",
+              "slug": "sagebrush-trail-1933",
+              "grade": "C-"
             }
           ]
         }
@@ -8754,11 +8754,11 @@
           "grade": "B+"
         },
         {
-          "title": "Saint Maud",
-          "imdbId": "tt7557108",
-          "year": "2019",
-          "slug": "saint-maud-2019",
-          "grade": "C"
+          "title": "Sagebrush Trail",
+          "imdbId": "tt0024516",
+          "year": "1933",
+          "slug": "sagebrush-trail-1933",
+          "grade": "C-"
         }
       ]
     }
@@ -10797,11 +10797,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "The Sadness",
-          "imdbId": "tt13872248",
-          "year": "2021",
-          "slug": "the-sadness-2021",
-          "grade": "B+"
+          "title": "Sagebrush Trail",
+          "imdbId": "tt0024516",
+          "year": "1933",
+          "slug": "sagebrush-trail-1933",
+          "grade": "C-"
         },
         {
           "title": "Saint Maud",
@@ -18985,17 +18985,17 @@
               "grade": "D-"
             },
             {
+              "title": "Sagebrush Trail",
+              "imdbId": "tt0024516",
+              "year": "1933",
+              "slug": "sagebrush-trail-1933",
+              "grade": "C-"
+            },
+            {
               "title": "The Star Packer",
               "imdbId": "tt0025830",
               "year": "1934",
               "slug": "the-star-packer-1934",
-              "grade": "D"
-            },
-            {
-              "title": "The Lawless Frontier",
-              "imdbId": "tt0025373",
-              "year": "1934",
-              "slug": "the-lawless-frontier-1934",
               "grade": "D"
             }
           ]
@@ -20103,18 +20103,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "The Road to Singapore",
-          "imdbId": "tt0022321",
-          "year": "1931",
-          "slug": "the-road-to-singapore-1931",
-          "grade": "B-"
-        },
-        {
           "title": "The Sadness",
           "imdbId": "tt13872248",
           "year": "2021",
           "slug": "the-sadness-2021",
           "grade": "B+"
+        },
+        {
+          "title": "Sagebrush Trail",
+          "imdbId": "tt0024516",
+          "year": "1933",
+          "slug": "sagebrush-trail-1933",
+          "grade": "C-"
         },
         {
           "title": "Salute",
@@ -22827,18 +22827,18 @@
           "slug": "john-wayne",
           "titles": [
             {
-              "title": "The Man from Monterey",
-              "imdbId": "tt0024293",
-              "year": "1933",
-              "slug": "the-man-from-monterey-1933",
-              "grade": "D-"
-            },
-            {
               "title": "Riders of Destiny",
               "imdbId": "tt0024500",
               "year": "1933",
               "slug": "riders-of-destiny-1933",
               "grade": "D"
+            },
+            {
+              "title": "Sagebrush Trail",
+              "imdbId": "tt0024516",
+              "year": "1933",
+              "slug": "sagebrush-trail-1933",
+              "grade": "C-"
             },
             {
               "title": "The Lawless Frontier",
@@ -26426,6 +26426,126 @@
           "year": "2011",
           "slug": "jo-nesbos-headhunters-2011",
           "grade": "A-"
+        }
+      ]
+    }
+  },
+  {
+    "imdbId": "tt0024516",
+    "title": "Sagebrush Trail",
+    "year": "1933",
+    "slug": "sagebrush-trail-1933",
+    "grade": "C-",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Drama",
+      "Western"
+    ],
+    "sortTitle": "Sagebrush Trail (1933)",
+    "originalTitle": "Sagebrush Trail",
+    "gradeValue": 5,
+    "runtimeMinutes": 54,
+    "releaseSequence": "1933-12-15tt0024516",
+    "directorNames": [
+      "Armand Schaefer"
+    ],
+    "principalCastNames": [
+      "John Wayne",
+      "Nancy Shubert",
+      "Lane Chandler",
+      "Yakima Canutt"
+    ],
+    "reviewDate": "2016-11-09",
+    "reviewYear": "2016",
+    "sequence": "2016-11-09-568",
+    "viewings": [
+      {
+        "sequence": 568,
+        "medium": "Amazon",
+        "mediumNotes": null,
+        "date": "2016-11-09",
+        "venue": null,
+        "venueNotes": null
+      },
+      {
+        "sequence": 94,
+        "medium": "Netflix",
+        "mediumNotes": null,
+        "date": "2012-02-26",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "John Wayne",
+          "slug": "john-wayne",
+          "titles": [
+            {
+              "title": "The Man from Monterey",
+              "imdbId": "tt0024293",
+              "year": "1933",
+              "slug": "the-man-from-monterey-1933",
+              "grade": "D-"
+            },
+            {
+              "title": "Riders of Destiny",
+              "imdbId": "tt0024500",
+              "year": "1933",
+              "slug": "riders-of-destiny-1933",
+              "grade": "D"
+            },
+            {
+              "title": "The Star Packer",
+              "imdbId": "tt0025830",
+              "year": "1934",
+              "slug": "the-star-packer-1934",
+              "grade": "D"
+            },
+            {
+              "title": "The Lawless Frontier",
+              "imdbId": "tt0025373",
+              "year": "1934",
+              "slug": "the-lawless-frontier-1934",
+              "grade": "D"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "The Road to Singapore",
+          "imdbId": "tt0022321",
+          "year": "1931",
+          "slug": "the-road-to-singapore-1931",
+          "grade": "B-"
+        },
+        {
+          "title": "The Sadness",
+          "imdbId": "tt13872248",
+          "year": "2021",
+          "slug": "the-sadness-2021",
+          "grade": "B+"
+        },
+        {
+          "title": "Saint Maud",
+          "imdbId": "tt7557108",
+          "year": "2019",
+          "slug": "saint-maud-2019",
+          "grade": "C"
+        },
+        {
+          "title": "Salute",
+          "imdbId": "tt0020359",
+          "year": "1929",
+          "slug": "salute-1929",
+          "grade": "D+"
         }
       ]
     }
@@ -42833,11 +42953,11 @@
           "slug": "john-wayne",
           "titles": [
             {
-              "title": "Riders of Destiny",
-              "imdbId": "tt0024500",
+              "title": "Sagebrush Trail",
+              "imdbId": "tt0024516",
               "year": "1933",
-              "slug": "riders-of-destiny-1933",
-              "grade": "D"
+              "slug": "sagebrush-trail-1933",
+              "grade": "C-"
             },
             {
               "title": "The Star Packer",
