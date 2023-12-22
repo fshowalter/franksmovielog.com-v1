@@ -3128,11 +3128,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Ride Lonesome",
-          "imdbId": "tt0053220",
-          "year": "1959",
-          "slug": "ride-lonesome-1959",
-          "grade": "B+"
+          "title": "Riders of Destiny",
+          "imdbId": "tt0024500",
+          "year": "1933",
+          "slug": "riders-of-destiny-1933",
+          "grade": "D"
         },
         {
           "title": "Rio Bravo",
@@ -6163,17 +6163,17 @@
               "grade": "D+"
             },
             {
+              "title": "Riders of Destiny",
+              "imdbId": "tt0024500",
+              "year": "1933",
+              "slug": "riders-of-destiny-1933",
+              "grade": "D"
+            },
+            {
               "title": "The Star Packer",
               "imdbId": "tt0025830",
               "year": "1934",
               "slug": "the-star-packer-1934",
-              "grade": "D"
-            },
-            {
-              "title": "The Lawless Frontier",
-              "imdbId": "tt0025373",
-              "year": "1934",
-              "slug": "the-lawless-frontier-1934",
               "grade": "D"
             }
           ]
@@ -9666,18 +9666,18 @@
           "grade": "D"
         },
         {
+          "title": "Riders of Destiny",
+          "imdbId": "tt0024500",
+          "year": "1933",
+          "slug": "riders-of-destiny-1933",
+          "grade": "D"
+        },
+        {
           "title": "Rio Bravo",
           "imdbId": "tt0053221",
           "year": "1959",
           "slug": "rio-bravo-1959",
           "grade": "A+"
-        },
-        {
-          "title": "The Rise and Fall of Legs Diamond",
-          "imdbId": "tt0054243",
-          "year": "1960",
-          "slug": "the-rise-and-fall-of-legs-diamond-1960",
-          "grade": "C+"
         }
       ]
     }
@@ -10093,18 +10093,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Ride Him, Cowboy",
-          "imdbId": "tt0023396",
-          "year": "1932",
-          "slug": "ride-him-cowboy-1932",
-          "grade": "D"
-        },
-        {
           "title": "Ride Lonesome",
           "imdbId": "tt0053220",
           "year": "1959",
           "slug": "ride-lonesome-1959",
           "grade": "B+"
+        },
+        {
+          "title": "Riders of Destiny",
+          "imdbId": "tt0024500",
+          "year": "1933",
+          "slug": "riders-of-destiny-1933",
+          "grade": "D"
         },
         {
           "title": "The Rise and Fall of Legs Diamond",
@@ -18915,6 +18915,127 @@
     }
   },
   {
+    "imdbId": "tt0024500",
+    "title": "Riders of Destiny",
+    "year": "1933",
+    "slug": "riders-of-destiny-1933",
+    "grade": "D",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Music",
+      "Romance",
+      "Western"
+    ],
+    "sortTitle": "Riders of Destiny (1933)",
+    "originalTitle": "Riders of Destiny",
+    "gradeValue": 3,
+    "runtimeMinutes": 53,
+    "releaseSequence": "1933-10-10tt0024500",
+    "directorNames": [
+      "Robert N. Bradbury"
+    ],
+    "principalCastNames": [
+      "John Wayne",
+      "Cecilia Parker",
+      "Forrest Taylor",
+      "George 'Gabby' Hayes"
+    ],
+    "reviewDate": "2016-09-17",
+    "reviewYear": "2016",
+    "sequence": "2016-09-17-560",
+    "viewings": [
+      {
+        "sequence": 560,
+        "medium": "Amazon",
+        "mediumNotes": null,
+        "date": "2016-09-17",
+        "venue": null,
+        "venueNotes": null
+      },
+      {
+        "sequence": 91,
+        "medium": "Netflix",
+        "mediumNotes": null,
+        "date": "2012-02-25",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "John Wayne",
+          "slug": "john-wayne",
+          "titles": [
+            {
+              "title": "His Private Secretary",
+              "imdbId": "tt0024124",
+              "year": "1933",
+              "slug": "his-private-secretary-1933",
+              "grade": "D+"
+            },
+            {
+              "title": "The Man from Monterey",
+              "imdbId": "tt0024293",
+              "year": "1933",
+              "slug": "the-man-from-monterey-1933",
+              "grade": "D-"
+            },
+            {
+              "title": "The Star Packer",
+              "imdbId": "tt0025830",
+              "year": "1934",
+              "slug": "the-star-packer-1934",
+              "grade": "D"
+            },
+            {
+              "title": "The Lawless Frontier",
+              "imdbId": "tt0025373",
+              "year": "1934",
+              "slug": "the-lawless-frontier-1934",
+              "grade": "D"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Ride Him, Cowboy",
+          "imdbId": "tt0023396",
+          "year": "1932",
+          "slug": "ride-him-cowboy-1932",
+          "grade": "D"
+        },
+        {
+          "title": "Ride Lonesome",
+          "imdbId": "tt0053220",
+          "year": "1959",
+          "slug": "ride-lonesome-1959",
+          "grade": "B+"
+        },
+        {
+          "title": "Rio Bravo",
+          "imdbId": "tt0053221",
+          "year": "1959",
+          "slug": "rio-bravo-1959",
+          "grade": "A+"
+        },
+        {
+          "title": "The Rise and Fall of Legs Diamond",
+          "imdbId": "tt0054243",
+          "year": "1960",
+          "slug": "the-rise-and-fall-of-legs-diamond-1960",
+          "grade": "C+"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt7914416",
     "title": "One Cut of the Dead",
     "year": "2017",
@@ -22706,18 +22827,18 @@
           "slug": "john-wayne",
           "titles": [
             {
-              "title": "His Private Secretary",
-              "imdbId": "tt0024124",
-              "year": "1933",
-              "slug": "his-private-secretary-1933",
-              "grade": "D+"
-            },
-            {
               "title": "The Man from Monterey",
               "imdbId": "tt0024293",
               "year": "1933",
               "slug": "the-man-from-monterey-1933",
               "grade": "D-"
+            },
+            {
+              "title": "Riders of Destiny",
+              "imdbId": "tt0024500",
+              "year": "1933",
+              "slug": "riders-of-destiny-1933",
+              "grade": "D"
             },
             {
               "title": "The Lawless Frontier",
@@ -37599,10 +37720,10 @@
               "grade": "D-"
             },
             {
-              "title": "The Star Packer",
-              "imdbId": "tt0025830",
-              "year": "1934",
-              "slug": "the-star-packer-1934",
+              "title": "Riders of Destiny",
+              "imdbId": "tt0024500",
+              "year": "1933",
+              "slug": "riders-of-destiny-1933",
               "grade": "D"
             }
           ]
@@ -42712,11 +42833,11 @@
           "slug": "john-wayne",
           "titles": [
             {
-              "title": "The Man from Monterey",
-              "imdbId": "tt0024293",
+              "title": "Riders of Destiny",
+              "imdbId": "tt0024500",
               "year": "1933",
-              "slug": "the-man-from-monterey-1933",
-              "grade": "D-"
+              "slug": "riders-of-destiny-1933",
+              "grade": "D"
             },
             {
               "title": "The Star Packer",
@@ -50350,11 +50471,11 @@
           "grade": "B+"
         },
         {
-          "title": "Rio Bravo",
-          "imdbId": "tt0053221",
-          "year": "1959",
-          "slug": "rio-bravo-1959",
-          "grade": "A+"
+          "title": "Riders of Destiny",
+          "imdbId": "tt0024500",
+          "year": "1933",
+          "slug": "riders-of-destiny-1933",
+          "grade": "D"
         }
       ]
     }
