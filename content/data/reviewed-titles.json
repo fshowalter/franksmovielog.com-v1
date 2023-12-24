@@ -4880,10 +4880,10 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Shock",
-          "imdbId": "tt0038937",
-          "year": "1946",
-          "slug": "shock-1946",
+          "title": "Shock Waves",
+          "imdbId": "tt0076704",
+          "year": "1977",
+          "slug": "shock-waves-1977",
           "grade": "D+"
         },
         {
@@ -13157,17 +13157,17 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Shivers",
-          "imdbId": "tt0073705",
-          "year": "1975",
-          "slug": "shivers-1975",
-          "grade": "C-"
-        },
-        {
           "title": "Shock",
           "imdbId": "tt0038937",
           "year": "1946",
           "slug": "shock-1946",
+          "grade": "D+"
+        },
+        {
+          "title": "Shock Waves",
+          "imdbId": "tt0076704",
+          "year": "1977",
+          "slug": "shock-waves-1977",
           "grade": "D+"
         },
         {
@@ -18752,11 +18752,11 @@
               "grade": "C"
             },
             {
-              "title": "The Man in the Iron Mask",
-              "imdbId": "tt0031619",
-              "year": "1939",
-              "slug": "the-man-in-the-iron-mask-1939",
-              "grade": "C"
+              "title": "Shock Waves",
+              "imdbId": "tt0076704",
+              "year": "1977",
+              "slug": "shock-waves-1977",
+              "grade": "D+"
             }
           ]
         }
@@ -28144,18 +28144,18 @@
           "grade": "C-"
         },
         {
+          "title": "Shock Waves",
+          "imdbId": "tt0076704",
+          "year": "1977",
+          "slug": "shock-waves-1977",
+          "grade": "D+"
+        },
+        {
           "title": "Sightseers",
           "imdbId": "tt2023690",
           "year": "2012",
           "slug": "sightseers-2012",
           "grade": "B"
-        },
-        {
-          "title": "Silent Night, Deadly Night",
-          "imdbId": "tt0088117",
-          "year": "1984",
-          "slug": "silent-night-deadly-night-1984",
-          "grade": "C"
         }
       ]
     }
@@ -30356,18 +30356,18 @@
               "grade": "D+"
             },
             {
+              "title": "Shock Waves",
+              "imdbId": "tt0076704",
+              "year": "1977",
+              "slug": "shock-waves-1977",
+              "grade": "D+"
+            },
+            {
               "title": "The Man in the Iron Mask",
               "imdbId": "tt0031619",
               "year": "1939",
               "slug": "the-man-in-the-iron-mask-1939",
               "grade": "C"
-            },
-            {
-              "title": "A Chump at Oxford",
-              "imdbId": "tt0032339",
-              "year": "1940",
-              "slug": "a-chump-at-oxford-1939",
-              "grade": "D+"
             }
           ]
         }
@@ -46451,6 +46451,119 @@
     }
   },
   {
+    "imdbId": "tt0076704",
+    "title": "Shock Waves",
+    "year": "1977",
+    "slug": "shock-waves-1977",
+    "grade": "D+",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "sortTitle": "Shock Waves (1977)",
+    "originalTitle": "Shock Waves",
+    "gradeValue": 4,
+    "runtimeMinutes": 85,
+    "releaseSequence": "1977-07-15tt0076704",
+    "directorNames": [
+      "Ken Wiederhorn"
+    ],
+    "principalCastNames": [
+      "Peter Cushing",
+      "John Carradine",
+      "Brooke Adams",
+      "Fred Buch"
+    ],
+    "reviewDate": "2015-08-15",
+    "reviewYear": "2015",
+    "sequence": "2015-08-15-517",
+    "viewings": [
+      {
+        "sequence": 517,
+        "medium": "Shudder",
+        "mediumNotes": null,
+        "date": "2015-08-15",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "Peter Cushing",
+          "slug": "peter-cushing",
+          "titles": [
+            {
+              "title": "And Now the Screaming Starts!",
+              "imdbId": "tt0069715",
+              "year": "1973",
+              "slug": "and-now-the-screaming-starts-1973",
+              "grade": "D+"
+            },
+            {
+              "title": "Star Wars: Episode IV - A New Hope",
+              "imdbId": "tt0076759",
+              "year": "1977",
+              "slug": "star-wars-episode-iv-a-new-hope-1977",
+              "grade": "C"
+            },
+            {
+              "title": "The Man in the Iron Mask",
+              "imdbId": "tt0031619",
+              "year": "1939",
+              "slug": "the-man-in-the-iron-mask-1939",
+              "grade": "C"
+            },
+            {
+              "title": "A Chump at Oxford",
+              "imdbId": "tt0032339",
+              "year": "1940",
+              "slug": "a-chump-at-oxford-1939",
+              "grade": "D+"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Shivers",
+          "imdbId": "tt0073705",
+          "year": "1975",
+          "slug": "shivers-1975",
+          "grade": "C-"
+        },
+        {
+          "title": "Shock",
+          "imdbId": "tt0038937",
+          "year": "1946",
+          "slug": "shock-1946",
+          "grade": "D+"
+        },
+        {
+          "title": "Sightseers",
+          "imdbId": "tt2023690",
+          "year": "2012",
+          "slug": "sightseers-2012",
+          "grade": "B"
+        },
+        {
+          "title": "Silent Night, Deadly Night",
+          "imdbId": "tt0088117",
+          "year": "1984",
+          "slug": "silent-night-deadly-night-1984",
+          "grade": "C"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0023899",
     "title": "College Coach",
     "year": "1933",
@@ -49390,11 +49503,11 @@
           "slug": "peter-cushing",
           "titles": [
             {
-              "title": "Star Wars: Episode IV - A New Hope",
-              "imdbId": "tt0076759",
+              "title": "Shock Waves",
+              "imdbId": "tt0076704",
               "year": "1977",
-              "slug": "star-wars-episode-iv-a-new-hope-1977",
-              "grade": "C"
+              "slug": "shock-waves-1977",
+              "grade": "D+"
             },
             {
               "title": "The Man in the Iron Mask",
@@ -49921,18 +50034,18 @@
           "slug": "peter-cushing",
           "titles": [
             {
-              "title": "And Now the Screaming Starts!",
-              "imdbId": "tt0069715",
-              "year": "1973",
-              "slug": "and-now-the-screaming-starts-1973",
-              "grade": "D+"
-            },
-            {
               "title": "Star Wars: Episode IV - A New Hope",
               "imdbId": "tt0076759",
               "year": "1977",
               "slug": "star-wars-episode-iv-a-new-hope-1977",
               "grade": "C"
+            },
+            {
+              "title": "Shock Waves",
+              "imdbId": "tt0076704",
+              "year": "1977",
+              "slug": "shock-waves-1977",
+              "grade": "D+"
             },
             {
               "title": "A Chump at Oxford",
@@ -57649,11 +57762,11 @@
           "grade": "D+"
         },
         {
-          "title": "Sightseers",
-          "imdbId": "tt2023690",
-          "year": "2012",
-          "slug": "sightseers-2012",
-          "grade": "B"
+          "title": "Shock Waves",
+          "imdbId": "tt0076704",
+          "year": "1977",
+          "slug": "shock-waves-1977",
+          "grade": "D+"
         }
       ]
     }
