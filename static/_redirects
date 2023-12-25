@@ -2,9 +2,9 @@
 /feed/ /feed.xml 301
 
 # stats 
-/viewings/stats /reviews/stats 301
-/viewings/stats/* /stats/:splat 301
-/reviews/stats/* /stats/:splat 301
+/reviews/stats /viewings/stats 301
+/reviews/stats/* /viewings/:splat 301
+/stats/* /viewings/stats/:splat 301
 
 # cast links to performers
 /watchlist/cast/* /watchlist/performers/:splat 301
