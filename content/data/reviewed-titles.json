@@ -445,18 +445,18 @@
           "grade": "D+"
         },
         {
+          "title": "The Pit",
+          "imdbId": "tt0086113",
+          "year": "1981",
+          "slug": "the-pit-1981",
+          "grade": "C+"
+        },
+        {
           "title": "Play Motel",
           "imdbId": "tt0148615",
           "year": "1979",
           "slug": "play-motel-1979",
           "grade": "D+"
-        },
-        {
-          "title": "The Plough and the Stars",
-          "imdbId": "tt0028112",
-          "year": "1936",
-          "slug": "the-plough-and-the-stars-1936",
-          "grade": "F"
         }
       ]
     }
@@ -17953,6 +17953,91 @@
           "year": "1988",
           "slug": "die-hard-1988",
           "grade": "A+"
+        }
+      ]
+    }
+  },
+  {
+    "imdbId": "tt0086113",
+    "title": "The Pit",
+    "year": "1981",
+    "slug": "the-pit-1981",
+    "grade": "C+",
+    "countries": [
+      "Canada"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "sortTitle": "Pit (1981)",
+    "originalTitle": "The Pit",
+    "gradeValue": 7,
+    "runtimeMinutes": 96,
+    "releaseSequence": "1981-10-23tt0086113",
+    "directorNames": [
+      "Lew Lehman"
+    ],
+    "principalCastNames": [
+      "Sammy Snyders",
+      "Jeannie Elias",
+      "Sonja Smits",
+      "Laura Hollingsworth"
+    ],
+    "reviewDate": "2016-10-01",
+    "reviewYear": "2016",
+    "sequence": "2016-10-01-1546",
+    "viewings": [
+      {
+        "sequence": 1546,
+        "medium": "Blu-ray",
+        "mediumNotes": "Kino Lorber, 2016",
+        "date": "2023-11-09",
+        "venue": null,
+        "venueNotes": null
+      },
+      {
+        "sequence": 563,
+        "medium": null,
+        "mediumNotes": null,
+        "date": "2016-10-01",
+        "venue": "Alamo Drafthouse Cinema - One Loudoun",
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Pig",
+          "imdbId": "tt11003218",
+          "year": "2021",
+          "slug": "pig-2021",
+          "grade": "D+"
+        },
+        {
+          "title": "Pilgrimage",
+          "imdbId": "tt0024453",
+          "year": "1933",
+          "slug": "pilgrimage-1933",
+          "grade": "C"
+        },
+        {
+          "title": "Play Motel",
+          "imdbId": "tt0148615",
+          "year": "1979",
+          "slug": "play-motel-1979",
+          "grade": "D+"
+        },
+        {
+          "title": "The Plough and the Stars",
+          "imdbId": "tt0028112",
+          "year": "1936",
+          "slug": "the-plough-and-the-stars-1936",
+          "grade": "F"
         }
       ]
     }
@@ -40535,11 +40620,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Pilgrimage",
-          "imdbId": "tt0024453",
-          "year": "1933",
-          "slug": "pilgrimage-1933",
-          "grade": "C"
+          "title": "The Pit",
+          "imdbId": "tt0086113",
+          "year": "1981",
+          "slug": "the-pit-1981",
+          "grade": "C+"
         },
         {
           "title": "Play Motel",
@@ -59988,18 +60073,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Pig",
-          "imdbId": "tt11003218",
-          "year": "2021",
-          "slug": "pig-2021",
-          "grade": "D+"
-        },
-        {
           "title": "Pilgrimage",
           "imdbId": "tt0024453",
           "year": "1933",
           "slug": "pilgrimage-1933",
           "grade": "C"
+        },
+        {
+          "title": "The Pit",
+          "imdbId": "tt0086113",
+          "year": "1981",
+          "slug": "the-pit-1981",
+          "grade": "C+"
         },
         {
           "title": "The Plough and the Stars",
@@ -60572,11 +60657,11 @@
           "grade": "C"
         },
         {
-          "title": "Play Motel",
-          "imdbId": "tt0148615",
-          "year": "1979",
-          "slug": "play-motel-1979",
-          "grade": "D+"
+          "title": "The Pit",
+          "imdbId": "tt0086113",
+          "year": "1981",
+          "slug": "the-pit-1981",
+          "grade": "C+"
         }
       ]
     }
