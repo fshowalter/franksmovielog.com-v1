@@ -11180,6 +11180,160 @@
     }
   },
   {
+    "imdbId": "tt0062885",
+    "title": "The Devil Rides Out",
+    "year": "1968",
+    "slug": "the-devil-rides-out-1968",
+    "grade": "B",
+    "countries": [
+      "United Kingdom"
+    ],
+    "genres": [
+      "Horror"
+    ],
+    "sortTitle": "Devil Rides Out (1968)",
+    "originalTitle": "The Devil Rides Out",
+    "gradeValue": 9,
+    "runtimeMinutes": 96,
+    "releaseSequence": "1968-08-01tt0062885",
+    "directorNames": [
+      "Terence Fisher"
+    ],
+    "principalCastNames": [
+      "Christopher Lee",
+      "Charles Gray",
+      "Nike Arrighi",
+      "Leon Greene"
+    ],
+    "reviewDate": "2015-01-29",
+    "reviewYear": "2015",
+    "sequence": "2015-01-29-471",
+    "viewings": [
+      {
+        "sequence": 471,
+        "medium": "DVD",
+        "mediumNotes": null,
+        "date": "2015-01-17",
+        "venue": null,
+        "venueNotes": null
+      },
+      {
+        "sequence": 240,
+        "medium": "TCM HD",
+        "mediumNotes": null,
+        "date": "2012-11-02",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "Christopher Lee",
+          "slug": "christopher-lee",
+          "titles": [
+            {
+              "title": "Rasputin: The Mad Monk",
+              "imdbId": "tt0059635",
+              "year": "1966",
+              "slug": "rasputin-the-mad-monk-1966",
+              "grade": "D+"
+            },
+            {
+              "title": "Psycho-Circus",
+              "imdbId": "tt0060865",
+              "year": "1966",
+              "slug": "psycho-circus-1966",
+              "grade": "C"
+            },
+            {
+              "title": "The Crimson Cult",
+              "imdbId": "tt0062833",
+              "year": "1968",
+              "slug": "the-crimson-cult-1968",
+              "grade": "D+"
+            },
+            {
+              "title": "The Bloody Judge",
+              "imdbId": "tt0064727",
+              "year": "1970",
+              "slug": "the-bloody-judge-1970",
+              "grade": "D"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [
+        {
+          "name": "Hammer Films",
+          "slug": "hammer-films",
+          "titles": [
+            {
+              "title": "Horror of Dracula",
+              "imdbId": "tt0051554",
+              "year": "1958",
+              "slug": "horror-of-dracula-1958",
+              "grade": "A-"
+            },
+            {
+              "title": "Rasputin: The Mad Monk",
+              "imdbId": "tt0059635",
+              "year": "1966",
+              "slug": "rasputin-the-mad-monk-1966",
+              "grade": "D+"
+            },
+            {
+              "title": "The Quatermass Xperiment",
+              "imdbId": "tt0049646",
+              "year": "1955",
+              "slug": "the-quatermass-xperiment-1955",
+              "grade": "B-"
+            },
+            {
+              "title": "X the Unknown",
+              "imdbId": "tt0049967",
+              "year": "1956",
+              "slug": "x-the-unknown-1956",
+              "grade": "C+"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "title": "Deathtrap",
+          "imdbId": "tt0083806",
+          "year": "1982",
+          "slug": "deathtrap-1982",
+          "grade": "B-"
+        },
+        {
+          "title": "Delirio di sangue",
+          "imdbId": "tt0094762",
+          "year": "1988",
+          "slug": "blood-delirium-1988",
+          "grade": "D"
+        },
+        {
+          "title": "The Devil's Rejects",
+          "imdbId": "tt0395584",
+          "year": "2005",
+          "slug": "the-devils-rejects-2005",
+          "grade": "C+"
+        },
+        {
+          "title": "Diabolique",
+          "imdbId": "tt0046911",
+          "year": "1955",
+          "slug": "diabolique-1955",
+          "grade": "C+"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0109020",
     "title": "71 Fragments of a Chronology of Chance",
     "year": "1994",
@@ -16131,18 +16285,18 @@
               "grade": "D+"
             },
             {
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
+              "year": "1968",
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
+            },
+            {
               "title": "The Crimson Cult",
               "imdbId": "tt0062833",
               "year": "1968",
               "slug": "the-crimson-cult-1968",
               "grade": "D+"
-            },
-            {
-              "title": "The Bloody Judge",
-              "imdbId": "tt0064727",
-              "year": "1970",
-              "slug": "the-bloody-judge-1970",
-              "grade": "D"
             }
           ]
         }
@@ -17571,18 +17725,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Deathtrap",
-          "imdbId": "tt0083806",
-          "year": "1982",
-          "slug": "deathtrap-1982",
-          "grade": "B-"
-        },
-        {
           "title": "Delirio di sangue",
           "imdbId": "tt0094762",
           "year": "1988",
           "slug": "blood-delirium-1988",
           "grade": "D"
+        },
+        {
+          "title": "The Devil Rides Out",
+          "imdbId": "tt0062885",
+          "year": "1968",
+          "slug": "the-devil-rides-out-1968",
+          "grade": "B"
         },
         {
           "title": "Diabolique",
@@ -26389,18 +26543,18 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "Rasputin: The Mad Monk",
-              "imdbId": "tt0059635",
-              "year": "1966",
-              "slug": "rasputin-the-mad-monk-1966",
-              "grade": "D+"
-            },
-            {
               "title": "Psycho-Circus",
               "imdbId": "tt0060865",
               "year": "1966",
               "slug": "psycho-circus-1966",
               "grade": "C"
+            },
+            {
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
+              "year": "1968",
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
             },
             {
               "title": "The Bloody Judge",
@@ -32319,11 +32473,11 @@
           "slug": "hammer-films",
           "titles": [
             {
-              "title": "Rasputin: The Mad Monk",
-              "imdbId": "tt0059635",
-              "year": "1966",
-              "slug": "rasputin-the-mad-monk-1966",
-              "grade": "D+"
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
+              "year": "1968",
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
             },
             {
               "title": "The Quatermass Xperiment",
@@ -35111,11 +35265,11 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "Psycho-Circus",
-              "imdbId": "tt0060865",
-              "year": "1966",
-              "slug": "psycho-circus-1966",
-              "grade": "C"
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
+              "year": "1968",
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
             },
             {
               "title": "The Crimson Cult",
@@ -35314,17 +35468,17 @@
           "grade": "B-"
         },
         {
+          "title": "The Devil Rides Out",
+          "imdbId": "tt0062885",
+          "year": "1968",
+          "slug": "the-devil-rides-out-1968",
+          "grade": "B"
+        },
+        {
           "title": "The Devil's Rejects",
           "imdbId": "tt0395584",
           "year": "2005",
           "slug": "the-devils-rejects-2005",
-          "grade": "C+"
-        },
-        {
-          "title": "Diabolique",
-          "imdbId": "tt0046911",
-          "year": "1955",
-          "slug": "diabolique-1955",
           "grade": "C+"
         }
       ]
@@ -39156,11 +39310,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Delirio di sangue",
-          "imdbId": "tt0094762",
-          "year": "1988",
-          "slug": "blood-delirium-1988",
-          "grade": "D"
+          "title": "The Devil Rides Out",
+          "imdbId": "tt0062885",
+          "year": "1968",
+          "slug": "the-devil-rides-out-1968",
+          "grade": "B"
         },
         {
           "title": "The Devil's Rejects",
@@ -40740,11 +40894,11 @@
               "grade": "D+"
             },
             {
-              "title": "The Quatermass Xperiment",
-              "imdbId": "tt0049646",
-              "year": "1955",
-              "slug": "the-quatermass-xperiment-1955",
-              "grade": "B-"
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
+              "year": "1968",
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
             }
           ]
         }
@@ -44649,11 +44803,11 @@
           "grade": "D"
         },
         {
-          "title": "The Devil's Rejects",
-          "imdbId": "tt0395584",
-          "year": "2005",
-          "slug": "the-devils-rejects-2005",
-          "grade": "C+"
+          "title": "The Devil Rides Out",
+          "imdbId": "tt0062885",
+          "year": "1968",
+          "slug": "the-devil-rides-out-1968",
+          "grade": "B"
         }
       ]
     }
@@ -54940,11 +55094,11 @@
               "grade": "C"
             },
             {
-              "title": "The Crimson Cult",
-              "imdbId": "tt0062833",
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
               "year": "1968",
-              "slug": "the-crimson-cult-1968",
-              "grade": "D+"
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
             }
           ]
         }
@@ -54970,18 +55124,18 @@
               "grade": "A-"
             },
             {
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
+              "year": "1968",
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
+            },
+            {
               "title": "The Quatermass Xperiment",
               "imdbId": "tt0049646",
               "year": "1955",
               "slug": "the-quatermass-xperiment-1955",
               "grade": "B-"
-            },
-            {
-              "title": "X the Unknown",
-              "imdbId": "tt0049967",
-              "year": "1956",
-              "slug": "x-the-unknown-1956",
-              "grade": "C+"
             }
           ]
         }
@@ -55259,18 +55413,18 @@
           "slug": "hammer-films",
           "titles": [
             {
-              "title": "Horror of Dracula",
-              "imdbId": "tt0051554",
-              "year": "1958",
-              "slug": "horror-of-dracula-1958",
-              "grade": "A-"
-            },
-            {
               "title": "Rasputin: The Mad Monk",
               "imdbId": "tt0059635",
               "year": "1966",
               "slug": "rasputin-the-mad-monk-1966",
               "grade": "D+"
+            },
+            {
+              "title": "The Devil Rides Out",
+              "imdbId": "tt0062885",
+              "year": "1968",
+              "slug": "the-devil-rides-out-1968",
+              "grade": "B"
             },
             {
               "title": "X the Unknown",
