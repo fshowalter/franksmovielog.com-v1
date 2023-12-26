@@ -65,6 +65,7 @@ export const backToTopContainerStyle = style({
   "@media": {
     [minMediaQuery("tablet")]: {
       marginLeft: "auto",
+      marginRight: "auto",
       width: `calc(100% - ${POSTER_WIDTH} - ${gutterWidth})`,
     },
   },
