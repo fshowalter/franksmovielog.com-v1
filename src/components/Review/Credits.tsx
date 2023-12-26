@@ -50,7 +50,7 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
       </Box>
       <Box as="dl" flexDirection="column" rowGap={24}>
         <Credit title="Year" value={review.year} />
-        {review.originalTitle && (
+        {review.originalTitle != review.title && (
           <Credit title="Original Title" value={review.originalTitle} />
         )}
         <Credit title="Financing" value={toSentenceArray(review.countries)} />
