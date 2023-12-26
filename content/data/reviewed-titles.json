@@ -8516,6 +8516,126 @@
     }
   },
   {
+    "imdbId": "tt0039581",
+    "title": "The Long Night",
+    "year": "1947",
+    "slug": "the-long-night-1947",
+    "grade": "D+",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Drama",
+      "Film-Noir"
+    ],
+    "sortTitle": "Long Night (1947)",
+    "originalTitle": "The Long Night",
+    "gradeValue": 4,
+    "runtimeMinutes": 101,
+    "releaseSequence": "1947-05-28tt0039581",
+    "directorNames": [
+      "Anatole Litvak"
+    ],
+    "principalCastNames": [
+      "Henry Fonda",
+      "Barbara Bel Geddes",
+      "Vincent Price",
+      "Ann Dvorak"
+    ],
+    "reviewDate": "2015-02-14",
+    "reviewYear": "2015",
+    "sequence": "2015-02-14-1385",
+    "viewings": [
+      {
+        "sequence": 1385,
+        "medium": "Watch TCM",
+        "mediumNotes": null,
+        "date": "2022-10-16",
+        "venue": null,
+        "venueNotes": null
+      },
+      {
+        "sequence": 480,
+        "medium": "TCM HD",
+        "mediumNotes": null,
+        "date": "2015-02-14",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "Vincent Price",
+          "slug": "vincent-price",
+          "titles": [
+            {
+              "title": "Service de Luxe",
+              "imdbId": "tt0030732",
+              "year": "1938",
+              "slug": "service-de-luxe-1938",
+              "grade": "C-"
+            },
+            {
+              "title": "Shock",
+              "imdbId": "tt0038937",
+              "year": "1946",
+              "slug": "shock-1946",
+              "grade": "D+"
+            },
+            {
+              "title": "The Three Musketeers",
+              "imdbId": "tt0040876",
+              "year": "1948",
+              "slug": "the-three-musketeers-1948",
+              "grade": "D"
+            },
+            {
+              "title": "Dangerous Mission",
+              "imdbId": "tt0046891",
+              "year": "1954",
+              "slug": "dangerous-mission-1954",
+              "grade": "D"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Locke",
+          "imdbId": "tt2692904",
+          "year": "2013",
+          "slug": "locke-2013",
+          "grade": "B"
+        },
+        {
+          "title": "Logan",
+          "imdbId": "tt3315342",
+          "year": "2017",
+          "slug": "logan-2017",
+          "grade": "B"
+        },
+        {
+          "title": "Lords of Chaos",
+          "imdbId": "tt4669296",
+          "year": "2018",
+          "slug": "lords-of-chaos-2018",
+          "grade": "B+"
+        },
+        {
+          "title": "Love Affair",
+          "imdbId": "tt0023153",
+          "year": "1932",
+          "slug": "love-affair-1932",
+          "grade": "C-"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0022681",
     "title": "The Big Stampede",
     "year": "1932",
@@ -10880,18 +11000,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Locke",
-          "imdbId": "tt2692904",
-          "year": "2013",
-          "slug": "locke-2013",
-          "grade": "B"
-        },
-        {
           "title": "Logan",
           "imdbId": "tt3315342",
           "year": "2017",
           "slug": "logan-2017",
           "grade": "B"
+        },
+        {
+          "title": "The Long Night",
+          "imdbId": "tt0039581",
+          "year": "1947",
+          "slug": "the-long-night-1947",
+          "grade": "D+"
         },
         {
           "title": "Love Affair",
@@ -16406,18 +16526,18 @@
           "grade": "B"
         },
         {
+          "title": "The Long Night",
+          "imdbId": "tt0039581",
+          "year": "1947",
+          "slug": "the-long-night-1947",
+          "grade": "D+"
+        },
+        {
           "title": "Lords of Chaos",
           "imdbId": "tt4669296",
           "year": "2018",
           "slug": "lords-of-chaos-2018",
           "grade": "B+"
-        },
-        {
-          "title": "Love Affair",
-          "imdbId": "tt0023153",
-          "year": "1932",
-          "slug": "love-affair-1932",
-          "grade": "C-"
         }
       ]
     }
@@ -22650,7 +22770,42 @@
     ],
     "more": {
       "directedBy": [],
-      "withPerformer": [],
+      "withPerformer": [
+        {
+          "name": "Vincent Price",
+          "slug": "vincent-price",
+          "titles": [
+            {
+              "title": "Shock",
+              "imdbId": "tt0038937",
+              "year": "1946",
+              "slug": "shock-1946",
+              "grade": "D+"
+            },
+            {
+              "title": "The Long Night",
+              "imdbId": "tt0039581",
+              "year": "1947",
+              "slug": "the-long-night-1947",
+              "grade": "D+"
+            },
+            {
+              "title": "Dangerous Mission",
+              "imdbId": "tt0046891",
+              "year": "1954",
+              "slug": "dangerous-mission-1954",
+              "grade": "D"
+            },
+            {
+              "title": "Service de Luxe",
+              "imdbId": "tt0030732",
+              "year": "1938",
+              "slug": "service-de-luxe-1938",
+              "grade": "C-"
+            }
+          ]
+        }
+      ],
       "writtenBy": [],
       "inCollection": [],
       "reviews": [
@@ -28736,7 +28891,42 @@
     ],
     "more": {
       "directedBy": [],
-      "withPerformer": [],
+      "withPerformer": [
+        {
+          "name": "Vincent Price",
+          "slug": "vincent-price",
+          "titles": [
+            {
+              "title": "Dangerous Mission",
+              "imdbId": "tt0046891",
+              "year": "1954",
+              "slug": "dangerous-mission-1954",
+              "grade": "D"
+            },
+            {
+              "title": "Service de Luxe",
+              "imdbId": "tt0030732",
+              "year": "1938",
+              "slug": "service-de-luxe-1938",
+              "grade": "C-"
+            },
+            {
+              "title": "The Long Night",
+              "imdbId": "tt0039581",
+              "year": "1947",
+              "slug": "the-long-night-1947",
+              "grade": "D+"
+            },
+            {
+              "title": "The Three Musketeers",
+              "imdbId": "tt0040876",
+              "year": "1948",
+              "slug": "the-three-musketeers-1948",
+              "grade": "D"
+            }
+          ]
+        }
+      ],
       "writtenBy": [],
       "inCollection": [],
       "reviews": [
@@ -34000,7 +34190,42 @@
     ],
     "more": {
       "directedBy": [],
-      "withPerformer": [],
+      "withPerformer": [
+        {
+          "name": "Vincent Price",
+          "slug": "vincent-price",
+          "titles": [
+            {
+              "title": "The Long Night",
+              "imdbId": "tt0039581",
+              "year": "1947",
+              "slug": "the-long-night-1947",
+              "grade": "D+"
+            },
+            {
+              "title": "The Three Musketeers",
+              "imdbId": "tt0040876",
+              "year": "1948",
+              "slug": "the-three-musketeers-1948",
+              "grade": "D"
+            },
+            {
+              "title": "Service de Luxe",
+              "imdbId": "tt0030732",
+              "year": "1938",
+              "slug": "service-de-luxe-1938",
+              "grade": "C-"
+            },
+            {
+              "title": "Shock",
+              "imdbId": "tt0038937",
+              "year": "1946",
+              "slug": "shock-1946",
+              "grade": "D+"
+            }
+          ]
+        }
+      ],
       "writtenBy": [],
       "inCollection": [],
       "reviews": [
@@ -37605,11 +37830,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Logan",
-          "imdbId": "tt3315342",
-          "year": "2017",
-          "slug": "logan-2017",
-          "grade": "B"
+          "title": "The Long Night",
+          "imdbId": "tt0039581",
+          "year": "1947",
+          "slug": "the-long-night-1947",
+          "grade": "D+"
         },
         {
           "title": "Lords of Chaos",
@@ -38565,11 +38790,11 @@
           "grade": "B"
         },
         {
-          "title": "Lords of Chaos",
-          "imdbId": "tt4669296",
-          "year": "2018",
-          "slug": "lords-of-chaos-2018",
-          "grade": "B+"
+          "title": "The Long Night",
+          "imdbId": "tt0039581",
+          "year": "1947",
+          "slug": "the-long-night-1947",
+          "grade": "D+"
         }
       ]
     }
@@ -42228,7 +42453,42 @@
     ],
     "more": {
       "directedBy": [],
-      "withPerformer": [],
+      "withPerformer": [
+        {
+          "name": "Vincent Price",
+          "slug": "vincent-price",
+          "titles": [
+            {
+              "title": "The Three Musketeers",
+              "imdbId": "tt0040876",
+              "year": "1948",
+              "slug": "the-three-musketeers-1948",
+              "grade": "D"
+            },
+            {
+              "title": "Dangerous Mission",
+              "imdbId": "tt0046891",
+              "year": "1954",
+              "slug": "dangerous-mission-1954",
+              "grade": "D"
+            },
+            {
+              "title": "Shock",
+              "imdbId": "tt0038937",
+              "year": "1946",
+              "slug": "shock-1946",
+              "grade": "D+"
+            },
+            {
+              "title": "The Long Night",
+              "imdbId": "tt0039581",
+              "year": "1947",
+              "slug": "the-long-night-1947",
+              "grade": "D+"
+            }
+          ]
+        }
+      ],
       "writtenBy": [],
       "inCollection": [],
       "reviews": [
