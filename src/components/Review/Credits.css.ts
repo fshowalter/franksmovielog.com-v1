@@ -48,7 +48,7 @@ export const creditStyle = style({
 });
 
 export const backToTopArrowStyle = style({
-  fill: foregroundColors.accent,
+  fill: foregroundColors.default,
   height: "24px",
   width: "24px",
 });
