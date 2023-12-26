@@ -5615,18 +5615,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Bone",
-          "imdbId": "tt0068306",
-          "year": "1972",
-          "slug": "bone-1972",
-          "grade": "B"
-        },
-        {
           "title": "Bones and All",
           "imdbId": "tt10168670",
           "year": "2022",
           "slug": "bones-and-all-2022",
           "grade": "C+"
+        },
+        {
+          "title": "The Boogie Man Will Get You",
+          "imdbId": "tt0034540",
+          "year": "1942",
+          "slug": "the-boogie-man-will-get-you-1942",
+          "grade": "D+"
         },
         {
           "title": "Born Reckless",
@@ -13370,10 +13370,10 @@
           "grade": "C+"
         },
         {
-          "title": "Border Patrol",
-          "imdbId": "tt0035692",
-          "year": "1943",
-          "slug": "border-patrol-1943",
+          "title": "The Boogie Man Will Get You",
+          "imdbId": "tt0034540",
+          "year": "1942",
+          "slug": "the-boogie-man-will-get-you-1942",
           "grade": "D+"
         }
       ]
@@ -15642,10 +15642,10 @@
               "grade": "D"
             },
             {
-              "title": "Behind That Curtain",
-              "imdbId": "tt0019684",
-              "year": "1929",
-              "slug": "behind-that-curtain-1929",
+              "title": "The Boogie Man Will Get You",
+              "imdbId": "tt0034540",
+              "year": "1942",
+              "slug": "the-boogie-man-will-get-you-1942",
               "grade": "D+"
             }
           ]
@@ -17410,6 +17410,118 @@
     }
   },
   {
+    "imdbId": "tt0034540",
+    "title": "The Boogie Man Will Get You",
+    "year": "1942",
+    "slug": "the-boogie-man-will-get-you-1942",
+    "grade": "D+",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "sortTitle": "Boogie Man Will Get You (1942)",
+    "originalTitle": "The Boogie Man Will Get You",
+    "gradeValue": 4,
+    "runtimeMinutes": 66,
+    "releaseSequence": "1942-??-??tt0034540",
+    "directorNames": [
+      "Lew Landers"
+    ],
+    "principalCastNames": [
+      "Boris Karloff",
+      "Peter Lorre",
+      "Maxie Rosenbloom",
+      "Larry Parks"
+    ],
+    "reviewDate": "2013-03-01",
+    "reviewYear": "2013",
+    "sequence": "2013-03-01-286",
+    "viewings": [
+      {
+        "sequence": 286,
+        "medium": "TCM HD",
+        "mediumNotes": null,
+        "date": "2013-03-01",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "Boris Karloff",
+          "slug": "boris-karloff",
+          "titles": [
+            {
+              "title": "The Invisible Menace",
+              "imdbId": "tt0030277",
+              "year": "1938",
+              "slug": "the-invisible-menace-1938",
+              "grade": "D"
+            },
+            {
+              "title": "British Intelligence",
+              "imdbId": "tt0032283",
+              "year": "1939",
+              "slug": "british-intelligence-1940",
+              "grade": "D"
+            },
+            {
+              "title": "Behind That Curtain",
+              "imdbId": "tt0019684",
+              "year": "1929",
+              "slug": "behind-that-curtain-1929",
+              "grade": "D+"
+            },
+            {
+              "title": "The Sea Bat",
+              "imdbId": "tt0021345",
+              "year": "1930",
+              "slug": "the-sea-bat-1930",
+              "grade": "D+"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Bone",
+          "imdbId": "tt0068306",
+          "year": "1972",
+          "slug": "bone-1972",
+          "grade": "B"
+        },
+        {
+          "title": "Bones and All",
+          "imdbId": "tt10168670",
+          "year": "2022",
+          "slug": "bones-and-all-2022",
+          "grade": "C+"
+        },
+        {
+          "title": "Border Patrol",
+          "imdbId": "tt0035692",
+          "year": "1943",
+          "slug": "border-patrol-1943",
+          "grade": "D+"
+        },
+        {
+          "title": "Born Reckless",
+          "imdbId": "tt0020702",
+          "year": "1930",
+          "slug": "born-reckless-1930",
+          "grade": "D+"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0395584",
     "title": "The Devil's Rejects",
     "year": "2005",
@@ -18107,17 +18219,17 @@
               "grade": "D"
             },
             {
+              "title": "The Boogie Man Will Get You",
+              "imdbId": "tt0034540",
+              "year": "1942",
+              "slug": "the-boogie-man-will-get-you-1942",
+              "grade": "D+"
+            },
+            {
               "title": "Behind That Curtain",
               "imdbId": "tt0019684",
               "year": "1929",
               "slug": "behind-that-curtain-1929",
-              "grade": "D+"
-            },
-            {
-              "title": "The Sea Bat",
-              "imdbId": "tt0021345",
-              "year": "1930",
-              "slug": "the-sea-bat-1930",
               "grade": "D+"
             }
           ]
@@ -28828,11 +28940,11 @@
           "slug": "boris-karloff",
           "titles": [
             {
-              "title": "British Intelligence",
-              "imdbId": "tt0032283",
-              "year": "1939",
-              "slug": "british-intelligence-1940",
-              "grade": "D"
+              "title": "The Boogie Man Will Get You",
+              "imdbId": "tt0034540",
+              "year": "1942",
+              "slug": "the-boogie-man-will-get-you-1942",
+              "grade": "D+"
             },
             {
               "title": "Behind That Curtain",
@@ -44987,18 +45099,18 @@
           "slug": "boris-karloff",
           "titles": [
             {
-              "title": "The Invisible Menace",
-              "imdbId": "tt0030277",
-              "year": "1938",
-              "slug": "the-invisible-menace-1938",
-              "grade": "D"
-            },
-            {
               "title": "British Intelligence",
               "imdbId": "tt0032283",
               "year": "1939",
               "slug": "british-intelligence-1940",
               "grade": "D"
+            },
+            {
+              "title": "The Boogie Man Will Get You",
+              "imdbId": "tt0034540",
+              "year": "1942",
+              "slug": "the-boogie-man-will-get-you-1942",
+              "grade": "D+"
             },
             {
               "title": "The Sea Bat",
@@ -51839,11 +51951,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Bones and All",
-          "imdbId": "tt10168670",
-          "year": "2022",
-          "slug": "bones-and-all-2022",
-          "grade": "C+"
+          "title": "The Boogie Man Will Get You",
+          "imdbId": "tt0034540",
+          "year": "1942",
+          "slug": "the-boogie-man-will-get-you-1942",
+          "grade": "D+"
         },
         {
           "title": "Border Patrol",
@@ -58149,17 +58261,17 @@
           "grade": "B"
         },
         {
+          "title": "The Boogie Man Will Get You",
+          "imdbId": "tt0034540",
+          "year": "1942",
+          "slug": "the-boogie-man-will-get-you-1942",
+          "grade": "D+"
+        },
+        {
           "title": "Border Patrol",
           "imdbId": "tt0035692",
           "year": "1943",
           "slug": "border-patrol-1943",
-          "grade": "D+"
-        },
-        {
-          "title": "Born Reckless",
-          "imdbId": "tt0020702",
-          "year": "1930",
-          "slug": "born-reckless-1930",
           "grade": "D+"
         }
       ]
