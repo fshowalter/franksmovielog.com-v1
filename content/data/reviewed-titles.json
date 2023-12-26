@@ -11799,18 +11799,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Christmas Evil",
-          "imdbId": "tt0081793",
-          "year": "1980",
-          "slug": "christmas-evil-1980",
-          "grade": "B+"
-        },
-        {
           "title": "A Chump at Oxford",
           "imdbId": "tt0032339",
           "year": "1940",
           "slug": "a-chump-at-oxford-1939",
           "grade": "D+"
+        },
+        {
+          "title": "The City of the Dead",
+          "imdbId": "tt0053719",
+          "year": "1960",
+          "slug": "the-city-of-the-dead-1960",
+          "grade": "B"
         },
         {
           "title": "Code Unknown",
@@ -16117,11 +16117,11 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "Horror of Dracula",
-              "imdbId": "tt0051554",
-              "year": "1958",
-              "slug": "horror-of-dracula-1958",
-              "grade": "A-"
+              "title": "The City of the Dead",
+              "imdbId": "tt0053719",
+              "year": "1960",
+              "slug": "the-city-of-the-dead-1960",
+              "grade": "B"
             },
             {
               "title": "Rasputin: The Mad Monk",
@@ -29800,11 +29800,11 @@
               "grade": "A-"
             },
             {
-              "title": "Rasputin: The Mad Monk",
-              "imdbId": "tt0059635",
-              "year": "1966",
-              "slug": "rasputin-the-mad-monk-1966",
-              "grade": "D+"
+              "title": "The City of the Dead",
+              "imdbId": "tt0053719",
+              "year": "1960",
+              "slug": "the-city-of-the-dead-1960",
+              "grade": "B"
             }
           ]
         },
@@ -40509,18 +40509,18 @@
               "grade": "A"
             },
             {
+              "title": "The City of the Dead",
+              "imdbId": "tt0053719",
+              "year": "1960",
+              "slug": "the-city-of-the-dead-1960",
+              "grade": "B"
+            },
+            {
               "title": "Rasputin: The Mad Monk",
               "imdbId": "tt0059635",
               "year": "1966",
               "slug": "rasputin-the-mad-monk-1966",
               "grade": "D+"
-            },
-            {
-              "title": "Psycho-Circus",
-              "imdbId": "tt0060865",
-              "year": "1966",
-              "slug": "psycho-circus-1966",
-              "grade": "C"
             }
           ]
         },
@@ -49892,18 +49892,18 @@
           "grade": "B+"
         },
         {
+          "title": "The City of the Dead",
+          "imdbId": "tt0053719",
+          "year": "1960",
+          "slug": "the-city-of-the-dead-1960",
+          "grade": "B"
+        },
+        {
           "title": "Cocaine Cowboys",
           "imdbId": "tt0078980",
           "year": "1979",
           "slug": "cocaine-cowboys-1979",
           "grade": "F"
-        },
-        {
-          "title": "Code Unknown",
-          "imdbId": "tt0216625",
-          "year": "2000",
-          "slug": "code-unknown-2000",
-          "grade": "B+"
         }
       ]
     }
@@ -50086,11 +50086,11 @@
           "grade": "D+"
         },
         {
-          "title": "Cocaine Cowboys",
-          "imdbId": "tt0078980",
-          "year": "1979",
-          "slug": "cocaine-cowboys-1979",
-          "grade": "F"
+          "title": "The City of the Dead",
+          "imdbId": "tt0053719",
+          "year": "1960",
+          "slug": "the-city-of-the-dead-1960",
+          "grade": "B"
         }
       ]
     }
@@ -54605,6 +54605,119 @@
     }
   },
   {
+    "imdbId": "tt0053719",
+    "title": "The City of the Dead",
+    "year": "1960",
+    "slug": "the-city-of-the-dead-1960",
+    "grade": "B",
+    "countries": [
+      "United Kingdom"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "sortTitle": "City of the Dead (1960)",
+    "originalTitle": "The City of the Dead",
+    "gradeValue": 9,
+    "runtimeMinutes": 78,
+    "releaseSequence": "1960-??-??tt0053719",
+    "directorNames": [
+      "John Llewellyn Moxey"
+    ],
+    "principalCastNames": [
+      "Dennis Lotis",
+      "Christopher Lee",
+      "Patricia Jessel",
+      "Tom Naylor"
+    ],
+    "reviewDate": "2015-06-06",
+    "reviewYear": "2015",
+    "sequence": "2015-06-06-498",
+    "viewings": [
+      {
+        "sequence": 498,
+        "medium": "DVD",
+        "mediumNotes": null,
+        "date": "2015-06-06",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "Christopher Lee",
+          "slug": "christopher-lee",
+          "titles": [
+            {
+              "title": "The Curse of Frankenstein",
+              "imdbId": "tt0050280",
+              "year": "1957",
+              "slug": "the-curse-of-frankenstein-1957",
+              "grade": "A"
+            },
+            {
+              "title": "Horror of Dracula",
+              "imdbId": "tt0051554",
+              "year": "1958",
+              "slug": "horror-of-dracula-1958",
+              "grade": "A-"
+            },
+            {
+              "title": "Rasputin: The Mad Monk",
+              "imdbId": "tt0059635",
+              "year": "1966",
+              "slug": "rasputin-the-mad-monk-1966",
+              "grade": "D+"
+            },
+            {
+              "title": "Psycho-Circus",
+              "imdbId": "tt0060865",
+              "year": "1966",
+              "slug": "psycho-circus-1966",
+              "grade": "C"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Christmas Evil",
+          "imdbId": "tt0081793",
+          "year": "1980",
+          "slug": "christmas-evil-1980",
+          "grade": "B+"
+        },
+        {
+          "title": "A Chump at Oxford",
+          "imdbId": "tt0032339",
+          "year": "1940",
+          "slug": "a-chump-at-oxford-1939",
+          "grade": "D+"
+        },
+        {
+          "title": "Cocaine Cowboys",
+          "imdbId": "tt0078980",
+          "year": "1979",
+          "slug": "cocaine-cowboys-1979",
+          "grade": "F"
+        },
+        {
+          "title": "Code Unknown",
+          "imdbId": "tt0216625",
+          "year": "2000",
+          "slug": "code-unknown-2000",
+          "grade": "B+"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0059635",
     "title": "Rasputin: The Mad Monk",
     "year": "1966",
@@ -54653,18 +54766,18 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "The Curse of Frankenstein",
-              "imdbId": "tt0050280",
-              "year": "1957",
-              "slug": "the-curse-of-frankenstein-1957",
-              "grade": "A"
-            },
-            {
               "title": "Horror of Dracula",
               "imdbId": "tt0051554",
               "year": "1958",
               "slug": "horror-of-dracula-1958",
               "grade": "A-"
+            },
+            {
+              "title": "The City of the Dead",
+              "imdbId": "tt0053719",
+              "year": "1960",
+              "slug": "the-city-of-the-dead-1960",
+              "grade": "B"
             },
             {
               "title": "Psycho-Circus",
@@ -63404,11 +63517,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "A Chump at Oxford",
-          "imdbId": "tt0032339",
-          "year": "1940",
-          "slug": "a-chump-at-oxford-1939",
-          "grade": "D+"
+          "title": "The City of the Dead",
+          "imdbId": "tt0053719",
+          "year": "1960",
+          "slug": "the-city-of-the-dead-1960",
+          "grade": "B"
         },
         {
           "title": "Cocaine Cowboys",
