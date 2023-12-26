@@ -12886,18 +12886,18 @@
           "grade": "C-"
         },
         {
+          "title": "The Sentinel",
+          "imdbId": "tt0076683",
+          "year": "1977",
+          "slug": "the-sentinel-1977",
+          "grade": "C+"
+        },
+        {
           "title": "Service de Luxe",
           "imdbId": "tt0030732",
           "year": "1938",
           "slug": "service-de-luxe-1938",
           "grade": "C-"
-        },
-        {
-          "title": "The Seventh Continent",
-          "imdbId": "tt0098327",
-          "year": "1989",
-          "slug": "the-seventh-continent-1989",
-          "grade": "A-"
         }
       ]
     }
@@ -19117,11 +19117,11 @@
           "grade": "C+"
         },
         {
-          "title": "Service de Luxe",
-          "imdbId": "tt0030732",
-          "year": "1938",
-          "slug": "service-de-luxe-1938",
-          "grade": "C-"
+          "title": "The Sentinel",
+          "imdbId": "tt0076683",
+          "year": "1977",
+          "slug": "the-sentinel-1977",
+          "grade": "C+"
         }
       ]
     }
@@ -31455,10 +31455,10 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Seed of Chucky",
-          "imdbId": "tt0387575",
-          "year": "2004",
-          "slug": "seed-of-chucky-2004",
+          "title": "The Sentinel",
+          "imdbId": "tt0076683",
+          "year": "1977",
+          "slug": "the-sentinel-1977",
           "grade": "C+"
         },
         {
@@ -42808,17 +42808,17 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Secrets of Women",
-          "imdbId": "tt0044811",
-          "year": "1952",
-          "slug": "waiting-women-1952",
-          "grade": "C-"
-        },
-        {
           "title": "Seed of Chucky",
           "imdbId": "tt0387575",
           "year": "2004",
           "slug": "seed-of-chucky-2004",
+          "grade": "C+"
+        },
+        {
+          "title": "The Sentinel",
+          "imdbId": "tt0076683",
+          "year": "1977",
+          "slug": "the-sentinel-1977",
           "grade": "C+"
         },
         {
@@ -46836,6 +46836,90 @@
           "year": "1974",
           "slug": "california-split-1974",
           "grade": "A"
+        }
+      ]
+    }
+  },
+  {
+    "imdbId": "tt0076683",
+    "title": "The Sentinel",
+    "year": "1977",
+    "slug": "the-sentinel-1977",
+    "grade": "C+",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Horror"
+    ],
+    "sortTitle": "Sentinel (1977)",
+    "originalTitle": "The Sentinel",
+    "gradeValue": 7,
+    "runtimeMinutes": 92,
+    "releaseSequence": "1977-02-11tt0076683",
+    "directorNames": [
+      "Michael Winner"
+    ],
+    "principalCastNames": [
+      "Chris Sarandon",
+      "Cristina Raines",
+      "Martin Balsam",
+      "John Carradine"
+    ],
+    "reviewDate": "2016-10-29",
+    "reviewYear": "2016",
+    "sequence": "2016-10-29-567",
+    "viewings": [
+      {
+        "sequence": 567,
+        "medium": "Amazon",
+        "mediumNotes": null,
+        "date": "2016-10-29",
+        "venue": null,
+        "venueNotes": null
+      },
+      {
+        "sequence": 9,
+        "medium": "Netflix",
+        "mediumNotes": null,
+        "date": "2012-01-12",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Secrets of Women",
+          "imdbId": "tt0044811",
+          "year": "1952",
+          "slug": "waiting-women-1952",
+          "grade": "C-"
+        },
+        {
+          "title": "Seed of Chucky",
+          "imdbId": "tt0387575",
+          "year": "2004",
+          "slug": "seed-of-chucky-2004",
+          "grade": "C+"
+        },
+        {
+          "title": "Service de Luxe",
+          "imdbId": "tt0030732",
+          "year": "1938",
+          "slug": "service-de-luxe-1938",
+          "grade": "C-"
+        },
+        {
+          "title": "The Seventh Continent",
+          "imdbId": "tt0098327",
+          "year": "1989",
+          "slug": "the-seventh-continent-1989",
+          "grade": "A-"
         }
       ]
     }
