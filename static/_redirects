@@ -152,7 +152,7 @@
 # misc
 /ads.txt /gone 410
 /inputs.php /gone 410
-/page- /reviews 301
+/page-* /reviews 301
 /repeater.php /gone 410
 /sitemap/* /sitemap-index.xml 301
 
