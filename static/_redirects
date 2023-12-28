@@ -155,6 +155,7 @@
 /page-* /reviews 301
 /repeater.php /gone 410
 /sitemap/* /sitemap-index.xml 301
+/watchlist/writers/ingmar-bergman /watchlist/directors/ingmar-bergman 301
 
 # resized images
 /static/:contenthash/0e001/* /gone 410
