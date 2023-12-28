@@ -1,8 +1,8 @@
 {
   "total": 3599,
-  "reviewed": 375,
+  "reviewed": 376,
   "directorTotal": 1249,
-  "directorReviewed": 136,
+  "directorReviewed": 137,
   "directorDetails": [
     {
       "name": "Abel Ferrara",
@@ -38,7 +38,7 @@
       "name": "Dario Argento",
       "titleCount": 21,
       "slug": "dario-argento",
-      "reviewCount": 4
+      "reviewCount": 5
     },
     {
       "name": "David Cronenberg",
@@ -67,8 +67,8 @@
     {
       "name": "George A. Romero",
       "titleCount": 17,
-      "slug": null,
-      "reviewCount": 0
+      "slug": "george-a-romero",
+      "reviewCount": 1
     },
     {
       "name": "Howard Hawks",
