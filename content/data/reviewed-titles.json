@@ -14272,18 +14272,18 @@
           "grade": "C"
         },
         {
+          "title": "The Girl with the Dragon Tattoo",
+          "imdbId": "tt1568346",
+          "year": "2011",
+          "slug": "the-girl-with-the-dragon-tattoo-2011",
+          "grade": "D"
+        },
+        {
           "title": "Glass",
           "imdbId": "tt6823368",
           "year": "2019",
           "slug": "glass-2019",
           "grade": "D-"
-        },
-        {
-          "title": "God Told Me To",
-          "imdbId": "tt0075930",
-          "year": "1976",
-          "slug": "god-told-me-to-1976",
-          "grade": "D+"
         }
       ]
     }
@@ -23498,11 +23498,11 @@
           "grade": "C+"
         },
         {
-          "title": "Glass",
-          "imdbId": "tt6823368",
-          "year": "2019",
-          "slug": "glass-2019",
-          "grade": "D-"
+          "title": "The Girl with the Dragon Tattoo",
+          "imdbId": "tt1568346",
+          "year": "2011",
+          "slug": "the-girl-with-the-dragon-tattoo-2011",
+          "grade": "D"
         }
       ]
     }
@@ -27170,18 +27170,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "The Girl Who Had Everything",
-          "imdbId": "tt0045816",
-          "year": "1953",
-          "slug": "the-girl-who-had-everything-1953",
-          "grade": "C"
-        },
-        {
           "title": "The Girl with the Dragon Tattoo",
           "imdbId": "tt1132620",
           "year": "2009",
           "slug": "the-girl-with-the-dragon-tattoo-2009",
           "grade": "C+"
+        },
+        {
+          "title": "The Girl with the Dragon Tattoo",
+          "imdbId": "tt1568346",
+          "year": "2011",
+          "slug": "the-girl-with-the-dragon-tattoo-2011",
+          "grade": "D"
         },
         {
           "title": "God Told Me To",
@@ -45561,6 +45561,87 @@
     }
   },
   {
+    "imdbId": "tt1568346",
+    "title": "The Girl with the Dragon Tattoo",
+    "year": "2011",
+    "slug": "the-girl-with-the-dragon-tattoo-2011",
+    "grade": "D",
+    "countries": [
+      "United States",
+      "Sweden",
+      "Norway"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "sortTitle": "Girl with the Dragon Tattoo (2011)",
+    "originalTitle": "The Girl with the Dragon Tattoo",
+    "gradeValue": 3,
+    "runtimeMinutes": 158,
+    "releaseSequence": "2011-12-21tt1568346",
+    "directorNames": [
+      "David Fincher"
+    ],
+    "principalCastNames": [
+      "Daniel Craig",
+      "Rooney Mara",
+      "Christopher Plummer",
+      "Stellan Skarsg\u00e5rd"
+    ],
+    "reviewDate": "2012-01-05",
+    "reviewYear": "2012",
+    "sequence": "2012-01-05-1",
+    "viewings": [
+      {
+        "sequence": 1,
+        "medium": null,
+        "mediumNotes": null,
+        "date": "2012-01-05",
+        "venue": "AMC Tysons Corner 16",
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "The Girl Who Had Everything",
+          "imdbId": "tt0045816",
+          "year": "1953",
+          "slug": "the-girl-who-had-everything-1953",
+          "grade": "C"
+        },
+        {
+          "title": "The Girl with the Dragon Tattoo",
+          "imdbId": "tt1132620",
+          "year": "2009",
+          "slug": "the-girl-with-the-dragon-tattoo-2009",
+          "grade": "C+"
+        },
+        {
+          "title": "Glass",
+          "imdbId": "tt6823368",
+          "year": "2019",
+          "slug": "glass-2019",
+          "grade": "D-"
+        },
+        {
+          "title": "God Told Me To",
+          "imdbId": "tt0075930",
+          "year": "1976",
+          "slug": "god-told-me-to-1976",
+          "grade": "D+"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0097388",
     "title": "Friday the 13th Part VIII: Jason Takes Manhattan",
     "year": "1989",
@@ -62450,10 +62531,10 @@
       "reviews": [
         {
           "title": "The Girl with the Dragon Tattoo",
-          "imdbId": "tt1132620",
-          "year": "2009",
-          "slug": "the-girl-with-the-dragon-tattoo-2009",
-          "grade": "C+"
+          "imdbId": "tt1568346",
+          "year": "2011",
+          "slug": "the-girl-with-the-dragon-tattoo-2011",
+          "grade": "D"
         },
         {
           "title": "Glass",
