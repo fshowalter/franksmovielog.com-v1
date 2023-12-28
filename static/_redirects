@@ -74,6 +74,7 @@
 /movies/life-with-father-1947 /reviews/life-with-father-1947 301
 /movies/murders-in-the-rue-morgue-1932 /reviews/murders-in-the-rue-morgue-1932 301
 /movies/the-cabin-in-the-woods-2011 /reviews/the-cabin-in-the-woods-2011 301
+/movies/the-girl-with-the-dragon-tattoo-2011 /reviews/the-girl-with-the-dragon-tattoo-2011 301
 /movies/the-key-1934 /reviews/the-key-1934 301
 /movies/the-lawless-frontier-1934 /reviews/the-lawless-frontier-1934 301
 /movies/the-three-musketeers-1948 /reviews/the-three-musketeers-1948 301
@@ -149,8 +150,9 @@
 
 # misc
 /ads.txt /gone 410
-/repeater.php /gone 410
 /inputs.php /gone 410
+/page- /reviews 301
+/repeater.php /gone 410
 /sitemap/* /sitemap-index.xml 301
 
 # resized images
