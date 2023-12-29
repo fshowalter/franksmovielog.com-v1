@@ -11566,6 +11566,117 @@
     }
   },
   {
+    "imdbId": "tt0081318",
+    "title": "City of the Living Dead",
+    "year": "1980",
+    "slug": "city-of-the-living-dead-1980",
+    "grade": "B+",
+    "countries": [
+      "Italy"
+    ],
+    "genres": [
+      "Horror"
+    ],
+    "sortTitle": "City of the Living Dead (1980)",
+    "originalTitle": "Paura nella citt\u00e0 dei morti viventi",
+    "gradeValue": 10,
+    "runtimeMinutes": 93,
+    "releaseSequence": "1980-??-??tt0081318",
+    "directorNames": [
+      "Lucio Fulci"
+    ],
+    "principalCastNames": [
+      "Christopher George",
+      "Catriona MacColl",
+      "Carlo De Mejo",
+      "Antonella Interlenghi"
+    ],
+    "reviewDate": "2014-05-20",
+    "reviewYear": "2014",
+    "sequence": "2014-05-20-191",
+    "viewings": [
+      {
+        "sequence": 191,
+        "medium": "Blu-ray",
+        "mediumNotes": null,
+        "date": "2012-06-14",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [
+        {
+          "name": "Lucio Fulci",
+          "slug": "lucio-fulci",
+          "titles": [
+            {
+              "title": "The Four of the Apocalypse...",
+              "imdbId": "tt0073594",
+              "year": "1975",
+              "slug": "the-four-of-the-apocalypse-1975",
+              "grade": "C+"
+            },
+            {
+              "title": "Murder to the Tune of the Seven Black Notes",
+              "imdbId": "tt0075614",
+              "year": "1977",
+              "slug": "murder-to-the-tune-of-the-seven-black-notes-1977",
+              "grade": "D"
+            },
+            {
+              "title": "The New York Ripper",
+              "imdbId": "tt0084719",
+              "year": "1982",
+              "slug": "the-new-york-ripper-1982",
+              "grade": "B-"
+            },
+            {
+              "title": "Massacre Time",
+              "imdbId": "tt0061074",
+              "year": "1966",
+              "slug": "massacre-time-1966",
+              "grade": "C+"
+            }
+          ]
+        }
+      ],
+      "withPerformer": [],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "A Chump at Oxford",
+          "imdbId": "tt0032339",
+          "year": "1940",
+          "slug": "a-chump-at-oxford-1939",
+          "grade": "D+"
+        },
+        {
+          "title": "The City of the Dead",
+          "imdbId": "tt0053719",
+          "year": "1960",
+          "slug": "the-city-of-the-dead-1960",
+          "grade": "B"
+        },
+        {
+          "title": "Cocaine Cowboys",
+          "imdbId": "tt0078980",
+          "year": "1979",
+          "slug": "cocaine-cowboys-1979",
+          "grade": "F"
+        },
+        {
+          "title": "Code Unknown",
+          "imdbId": "tt0216625",
+          "year": "2000",
+          "slug": "code-unknown-2000",
+          "grade": "B+"
+        }
+      ]
+    }
+  },
+  {
     "imdbId": "tt0071431",
     "title": "Let Sleeping Corpses Lie",
     "year": "1974",
@@ -12073,18 +12184,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "A Chump at Oxford",
-          "imdbId": "tt0032339",
-          "year": "1940",
-          "slug": "a-chump-at-oxford-1939",
-          "grade": "D+"
-        },
-        {
           "title": "The City of the Dead",
           "imdbId": "tt0053719",
           "year": "1960",
           "slug": "the-city-of-the-dead-1960",
           "grade": "B"
+        },
+        {
+          "title": "City of the Living Dead",
+          "imdbId": "tt0081318",
+          "year": "1980",
+          "slug": "city-of-the-living-dead-1980",
+          "grade": "B+"
         },
         {
           "title": "Code Unknown",
@@ -28420,11 +28531,11 @@
           "slug": "lucio-fulci",
           "titles": [
             {
-              "title": "Murder to the Tune of the Seven Black Notes",
-              "imdbId": "tt0075614",
-              "year": "1977",
-              "slug": "murder-to-the-tune-of-the-seven-black-notes-1977",
-              "grade": "D"
+              "title": "City of the Living Dead",
+              "imdbId": "tt0081318",
+              "year": "1980",
+              "slug": "city-of-the-living-dead-1980",
+              "grade": "B+"
             },
             {
               "title": "The New York Ripper",
@@ -29616,18 +29727,18 @@
               "grade": "C+"
             },
             {
+              "title": "City of the Living Dead",
+              "imdbId": "tt0081318",
+              "year": "1980",
+              "slug": "city-of-the-living-dead-1980",
+              "grade": "B+"
+            },
+            {
               "title": "The New York Ripper",
               "imdbId": "tt0084719",
               "year": "1982",
               "slug": "the-new-york-ripper-1982",
               "grade": "B-"
-            },
-            {
-              "title": "Massacre Time",
-              "imdbId": "tt0061074",
-              "year": "1966",
-              "slug": "massacre-time-1966",
-              "grade": "C+"
             }
           ]
         }
@@ -38747,11 +38858,11 @@
               "grade": "D"
             },
             {
-              "title": "The New York Ripper",
-              "imdbId": "tt0084719",
-              "year": "1982",
-              "slug": "the-new-york-ripper-1982",
-              "grade": "B-"
+              "title": "City of the Living Dead",
+              "imdbId": "tt0081318",
+              "year": "1980",
+              "slug": "city-of-the-living-dead-1980",
+              "grade": "B+"
             }
           ]
         }
@@ -42541,18 +42652,18 @@
           "slug": "lucio-fulci",
           "titles": [
             {
-              "title": "The Four of the Apocalypse...",
-              "imdbId": "tt0073594",
-              "year": "1975",
-              "slug": "the-four-of-the-apocalypse-1975",
-              "grade": "C+"
-            },
-            {
               "title": "Murder to the Tune of the Seven Black Notes",
               "imdbId": "tt0075614",
               "year": "1977",
               "slug": "murder-to-the-tune-of-the-seven-black-notes-1977",
               "grade": "D"
+            },
+            {
+              "title": "City of the Living Dead",
+              "imdbId": "tt0081318",
+              "year": "1980",
+              "slug": "city-of-the-living-dead-1980",
+              "grade": "B+"
             },
             {
               "title": "Massacre Time",
@@ -51705,11 +51816,11 @@
           "grade": "B"
         },
         {
-          "title": "Cocaine Cowboys",
-          "imdbId": "tt0078980",
-          "year": "1979",
-          "slug": "cocaine-cowboys-1979",
-          "grade": "F"
+          "title": "City of the Living Dead",
+          "imdbId": "tt0081318",
+          "year": "1980",
+          "slug": "city-of-the-living-dead-1980",
+          "grade": "B+"
         }
       ]
     }
@@ -56735,18 +56846,18 @@
           "grade": "D+"
         },
         {
+          "title": "City of the Living Dead",
+          "imdbId": "tt0081318",
+          "year": "1980",
+          "slug": "city-of-the-living-dead-1980",
+          "grade": "B+"
+        },
+        {
           "title": "Cocaine Cowboys",
           "imdbId": "tt0078980",
           "year": "1979",
           "slug": "cocaine-cowboys-1979",
           "grade": "F"
-        },
-        {
-          "title": "Code Unknown",
-          "imdbId": "tt0216625",
-          "year": "2000",
-          "slug": "code-unknown-2000",
-          "grade": "B+"
         }
       ]
     }
@@ -66074,11 +66185,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "The City of the Dead",
-          "imdbId": "tt0053719",
-          "year": "1960",
-          "slug": "the-city-of-the-dead-1960",
-          "grade": "B"
+          "title": "City of the Living Dead",
+          "imdbId": "tt0081318",
+          "year": "1980",
+          "slug": "city-of-the-living-dead-1980",
+          "grade": "B+"
         },
         {
           "title": "Cocaine Cowboys",
