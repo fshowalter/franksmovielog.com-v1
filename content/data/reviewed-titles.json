@@ -334,18 +334,18 @@
           "grade": "C+"
         },
         {
+          "title": "Crisis",
+          "imdbId": "tt0042352",
+          "year": "1950",
+          "slug": "crisis-1950",
+          "grade": "C-"
+        },
+        {
           "title": "Croupier",
           "imdbId": "tt0159382",
           "year": "1998",
           "slug": "croupier-1998",
           "grade": "B"
-        },
-        {
-          "title": "The Crowd Roars",
-          "imdbId": "tt0022792",
-          "year": "1932",
-          "slug": "the-crowd-roars-1932",
-          "grade": "C-"
         }
       ]
     }
@@ -3832,11 +3832,11 @@
           "slug": "cary-grant",
           "titles": [
             {
-              "title": "Every Girl Should Be Married",
-              "imdbId": "tt0040331",
-              "year": "1948",
-              "slug": "every-girl-should-be-married-1948",
-              "grade": "F"
+              "title": "Crisis",
+              "imdbId": "tt0042352",
+              "year": "1950",
+              "slug": "crisis-1950",
+              "grade": "C-"
             },
             {
               "title": "This Is the Night",
@@ -4143,18 +4143,18 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Crippled Avengers",
-          "imdbId": "tt0077292",
-          "year": "1978",
-          "slug": "crippled-avengers-1978",
-          "grade": "C+"
-        },
-        {
           "title": "Crisis",
           "imdbId": "tt0038675",
           "year": "1946",
           "slug": "crisis-1946",
           "grade": "B-"
+        },
+        {
+          "title": "Crisis",
+          "imdbId": "tt0042352",
+          "year": "1950",
+          "slug": "crisis-1950",
+          "grade": "C-"
         },
         {
           "title": "The Crowd Roars",
@@ -11591,9 +11591,9 @@
       "Carlo De Mejo",
       "Antonella Interlenghi"
     ],
-    "reviewDate": "2014-05-20",
-    "reviewYear": "2014",
-    "sequence": "2014-05-20-191",
+    "reviewDate": "2012-06-14",
+    "reviewYear": "2012",
+    "sequence": "2012-06-14-191",
     "viewings": [
       {
         "sequence": 191,
@@ -14188,11 +14188,11 @@
           "grade": "B-"
         },
         {
-          "title": "Croupier",
-          "imdbId": "tt0159382",
-          "year": "1998",
-          "slug": "croupier-1998",
-          "grade": "B"
+          "title": "Crisis",
+          "imdbId": "tt0042352",
+          "year": "1950",
+          "slug": "crisis-1950",
+          "grade": "C-"
         }
       ]
     }
@@ -53984,10 +53984,10 @@
       "reviews": [
         {
           "title": "Crisis",
-          "imdbId": "tt0038675",
-          "year": "1946",
-          "slug": "crisis-1946",
-          "grade": "B-"
+          "imdbId": "tt0042352",
+          "year": "1950",
+          "slug": "crisis-1950",
+          "grade": "C-"
         },
         {
           "title": "Croupier",
@@ -54201,6 +54201,120 @@
           "year": "2014",
           "slug": "the-guest-2014",
           "grade": "A"
+        }
+      ]
+    }
+  },
+  {
+    "imdbId": "tt0042352",
+    "title": "Crisis",
+    "year": "1950",
+    "slug": "crisis-1950",
+    "grade": "C-",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Crime",
+      "Drama",
+      "Romance",
+      "Thriller"
+    ],
+    "sortTitle": "Crisis (1950)",
+    "originalTitle": "Crisis",
+    "gradeValue": 5,
+    "runtimeMinutes": 95,
+    "releaseSequence": "1950-07-07tt0042352",
+    "directorNames": [
+      "Richard Brooks"
+    ],
+    "principalCastNames": [
+      "Cary Grant",
+      "Jos\u00e9 Ferrer",
+      "Paula Raymond",
+      "Signe Hasso"
+    ],
+    "reviewDate": "2012-01-14",
+    "reviewYear": "2012",
+    "sequence": "2012-01-14-18",
+    "viewings": [
+      {
+        "sequence": 18,
+        "medium": "TCM HD",
+        "mediumNotes": null,
+        "date": "2012-01-14",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [
+        {
+          "name": "Cary Grant",
+          "slug": "cary-grant",
+          "titles": [
+            {
+              "title": "Penny Serenade",
+              "imdbId": "tt0034012",
+              "year": "1941",
+              "slug": "penny-serenade-1941",
+              "grade": "F"
+            },
+            {
+              "title": "Every Girl Should Be Married",
+              "imdbId": "tt0040331",
+              "year": "1948",
+              "slug": "every-girl-should-be-married-1948",
+              "grade": "F"
+            },
+            {
+              "title": "This Is the Night",
+              "imdbId": "tt0023584",
+              "year": "1932",
+              "slug": "this-is-the-night-1932",
+              "grade": "C"
+            },
+            {
+              "title": "Merrily We Go to Hell",
+              "imdbId": "tt0023213",
+              "year": "1932",
+              "slug": "merrily-we-go-to-hell-1932",
+              "grade": "D"
+            }
+          ]
+        }
+      ],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Crippled Avengers",
+          "imdbId": "tt0077292",
+          "year": "1978",
+          "slug": "crippled-avengers-1978",
+          "grade": "C+"
+        },
+        {
+          "title": "Crisis",
+          "imdbId": "tt0038675",
+          "year": "1946",
+          "slug": "crisis-1946",
+          "grade": "B-"
+        },
+        {
+          "title": "Croupier",
+          "imdbId": "tt0159382",
+          "year": "1998",
+          "slug": "croupier-1998",
+          "grade": "B"
+        },
+        {
+          "title": "The Crowd Roars",
+          "imdbId": "tt0022792",
+          "year": "1932",
+          "slug": "the-crowd-roars-1932",
+          "grade": "C-"
         }
       ]
     }
@@ -55426,18 +55540,18 @@
               "grade": "F"
             },
             {
+              "title": "Crisis",
+              "imdbId": "tt0042352",
+              "year": "1950",
+              "slug": "crisis-1950",
+              "grade": "C-"
+            },
+            {
               "title": "This Is the Night",
               "imdbId": "tt0023584",
               "year": "1932",
               "slug": "this-is-the-night-1932",
               "grade": "C"
-            },
-            {
-              "title": "Merrily We Go to Hell",
-              "imdbId": "tt0023213",
-              "year": "1932",
-              "slug": "merrily-we-go-to-hell-1932",
-              "grade": "D"
             }
           ]
         }
@@ -58735,11 +58849,11 @@
               "grade": "F"
             },
             {
-              "title": "This Is the Night",
-              "imdbId": "tt0023584",
-              "year": "1932",
-              "slug": "this-is-the-night-1932",
-              "grade": "C"
+              "title": "Crisis",
+              "imdbId": "tt0042352",
+              "year": "1950",
+              "slug": "crisis-1950",
+              "grade": "C-"
             }
           ]
         }
@@ -65312,18 +65426,18 @@
           "slug": "cary-grant",
           "titles": [
             {
-              "title": "Penny Serenade",
-              "imdbId": "tt0034012",
-              "year": "1941",
-              "slug": "penny-serenade-1941",
-              "grade": "F"
-            },
-            {
               "title": "Every Girl Should Be Married",
               "imdbId": "tt0040331",
               "year": "1948",
               "slug": "every-girl-should-be-married-1948",
               "grade": "F"
+            },
+            {
+              "title": "Crisis",
+              "imdbId": "tt0042352",
+              "year": "1950",
+              "slug": "crisis-1950",
+              "grade": "C-"
             },
             {
               "title": "Merrily We Go to Hell",
