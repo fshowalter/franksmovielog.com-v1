@@ -13,12 +13,19 @@
 /sitemap.xml /sitemap-index.xml 301
 
 # old cast-and-crew to new watchlist entries
+/browse/christopher-lee /watchlist/performers/christopher-lee 301
+/browse/christopher-lee/* /watchlist/performers/christopher-lee 301
 /browse/dario-argento /watchlist/directors/dario-argento 301
 /browse/dario-argento/* /watchlist/directors/dario-argento 301
 /browse/frank-sinatra /watchlist/performers/frank-sinatra 301
 /browse/frank-sinatra/* /watchlist/performers/frank-sinatra 301
+/browse/hammer-films /watchlist/collections/hammer-films 301
+/browse/hammer-films/* /watchlist/collections/hammer-films 301
 /browse/humphrey-bogart /watchlist/performers/humphrey-bogart 301
 /browse/humphrey-bogart/* /watchlist/performers/humphrey-bogart 301
+/browse/peter-cushing /watchlist/performers/peter-cushing 301
+/browse/peter-cushing/* /watchlist/performers/peter-cushing 301
+/browse/reviews /reviews 301
 /browse/william-holden /watchlist/performers/william-holden 301
 /browse/william-holden/* /watchlist/performers/william-holden 301
 /cast-and-crew/boris-karloff-i /watchlist/performers/boris-karloff 301
@@ -145,6 +152,10 @@
 /cast-and-crew/* /gone 410
 /watchlist/cast/bill-murray /gone 410
 /watchlist/performers/bill-murray /gone 410
+/watchlist/writers/alfred-hitchcock /gone 410
+/watchlist/writers/john-ford /gone 410
+/watchlist/writers/lucio-fulci /gone 410
+
 
 # misc old links
 /images/5-stars-4661cb2a.svg /gone 410
