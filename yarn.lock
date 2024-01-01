@@ -9312,7 +9312,7 @@ __metadata:
     gatsby-plugin-manifest: "npm:5.13.0"
     gatsby-plugin-sharp: "npm:5.13.0"
     gatsby-plugin-sitemap: "npm:6.13.0"
-    gatsby-plugin-vanilla-extract: "npm:4.0.1"
+    gatsby-plugin-vanilla-extract: "npm:4.0.2"
     gatsby-remark-smartypants: "npm:6.13.0"
     gatsby-source-filesystem: "npm:5.13.0"
     gatsby-transformer-json: "npm:5.13.0"
@@ -9785,14 +9785,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-vanilla-extract@npm:4.0.1":
-  version: 4.0.1
-  resolution: "gatsby-plugin-vanilla-extract@npm:4.0.1"
+"gatsby-plugin-vanilla-extract@npm:4.0.2":
+  version: 4.0.2
+  resolution: "gatsby-plugin-vanilla-extract@npm:4.0.2"
   peerDependencies:
     "@vanilla-extract/css": ^1.0.0
     "@vanilla-extract/webpack-plugin": ^2.2.0
     gatsby: ^4.0.0 || ^5.0.0
-  checksum: 9566fab641c62dae577e97029c1871c584463629cb98021968f6c2772bb9a2491c47dce7b7d3f414771c960a3d7368b43a75106148523eece797ae1851cbcf12
+  checksum: e61ad0e05a98e05e83aa04bdf7cca87d2b2377b8235b68c70d50a34ebf0e7f90b2b4c9439e7221067ef2b2cc8fd748ba0c68fc4d1bd53a883c5c882e1d49a019
   languageName: node
   linkType: hard
 
