@@ -3953,12 +3953,12 @@ __metadata:
   linkType: hard
 
 "@types/eslint@npm:*":
-  version: 8.56.1
-  resolution: "@types/eslint@npm:8.56.1"
+  version: 8.56.2
+  resolution: "@types/eslint@npm:8.56.2"
   dependencies:
     "@types/estree": "npm:*"
     "@types/json-schema": "npm:*"
-  checksum: a2aa5e2ec16f07944a60b825d6447d66f83369783e31c014ccf582fa92df963aa8d62c447a8fdc4fbfcd7299ad74ed1a753e06e560ce184eab4efceccfa66262
+  checksum: e33ca87a30a9454ba9943e1270ac759996f5fe598a1c1afbaec1d1e7346a339e20bf2a9d81f177067116bbaa6cfa4f748993cb338f57978ae862ad38ffae56fe
   languageName: node
   linkType: hard
 
@@ -4160,16 +4160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.10.8
-  resolution: "@types/node@npm:20.10.8"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: 93268c33c3bf0194427d696658160c77ab8661aa57107df5b248ff952898a372bf92cf0ba7fc07788fa35e59c69b6619cce63d45e4e67fca806e37da7ea42512
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.11.0":
+"@types/node@npm:*, @types/node@npm:20.11.0, @types/node@npm:>=10.0.0":
   version: 20.11.0
   resolution: "@types/node@npm:20.11.0"
   dependencies:
@@ -4936,9 +4927,9 @@ __metadata:
   linkType: hard
 
 "acorn-walk@npm:^8.0.2, acorn-walk@npm:^8.2.0":
-  version: 8.3.1
-  resolution: "acorn-walk@npm:8.3.1"
-  checksum: a23d2f7c6b6cad617f4c77f14dfeb062a239208d61753e9ba808d916c550add92b39535467d2e6028280761ac4f5a904cc9df21530b84d3f834e3edef74ddde5
+  version: 8.3.2
+  resolution: "acorn-walk@npm:8.3.2"
+  checksum: 7e2a8dad5480df7f872569b9dccff2f3da7e65f5353686b1d6032ab9f4ddf6e3a2cb83a9b52cf50b1497fd522154dda92f0abf7153290cc79cd14721ff121e52
   languageName: node
   linkType: hard
 
@@ -16088,13 +16079,13 @@ __metadata:
   linkType: hard
 
 "safe-regex-test@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "safe-regex-test@npm:1.0.1"
+  version: 1.0.2
+  resolution: "safe-regex-test@npm:1.0.2"
   dependencies:
     call-bind: "npm:^1.0.5"
     get-intrinsic: "npm:^1.2.2"
     is-regex: "npm:^1.1.4"
-  checksum: abd426f19c2f46f810199751156e3644233845a0c8b00b74552fa3f42fd3bb3982fd944213ddbd9d7a4ae372aadbcaa0db6c8bf919a045b0dad0a3b6b92c72cc
+  checksum: c24df9c3cbd9e6a6800f02411a12ce2bd642be22ce6ad03f796e7b3f3851d9eb1fb8d1fab48278b04fabe75dd279c10bc07a45e39543aa72407fbd8a31174958
   languageName: node
   linkType: hard
 
