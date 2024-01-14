@@ -30,8 +30,8 @@ Source for www.franksmovielog.com. Built on [Gatsby](https://www.gatsbyjs.org/).
     Yarn is our package-manger of choice.
 
     ```shell
-    # install yarn via Homebrew
-    brew install yarn
+    # enable yarn via corepack
+    corepack enable
     ```
 
 1.  **Start a Dev server.**
@@ -46,7 +46,7 @@ Source for www.franksmovielog.com. Built on [Gatsby](https://www.gatsbyjs.org/).
 
 1.  **Open the source code and start editing!**
 
-    The site is now running at `http://localhost:8000` with a GraphQL instance at `http://localhost:8000/___graphql`.
+    The site is now running at `http://localhost:8001` with a GraphQL instance at `http://localhost:8001/___graphql`.
 
 ## What's inside?
 
