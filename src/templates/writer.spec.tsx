@@ -1,5 +1,5 @@
 import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import WriterTemplate, { Head } from "./writer";
 import { data } from "./writer.fixtures";
 
@@ -20,6 +20,7 @@ describe("/watchlist/writers/{slug}", () => {
     expect.hasAssertions();
     render(<WriterTemplate data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "The Shining");
       await new Promise((r) => setTimeout(r, 500));
