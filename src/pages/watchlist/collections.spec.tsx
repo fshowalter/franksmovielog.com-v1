@@ -1,5 +1,5 @@
 import { act, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import WatchlistCollectionsPage, { Head } from "./collections";
 import { data } from "./collections.fixtures";
 
@@ -9,6 +9,7 @@ describe("/watchlist/collections", () => {
 
     render(<WatchlistCollectionsPage data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Name"), "Friday the 13th");
       await new Promise((r) => setTimeout(r, 500));

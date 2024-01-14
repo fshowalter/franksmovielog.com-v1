@@ -1,5 +1,5 @@
 import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import DirectorTemplate, { Head } from "./director";
 import { data } from "./director.fixtures";
 
@@ -20,6 +20,7 @@ describe("/watchlist/directors/{slug}", () => {
     expect.hasAssertions();
     render(<DirectorTemplate data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(
         screen.getByLabelText("Title"),

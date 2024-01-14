@@ -1,5 +1,5 @@
 import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import PerformerTemplate, { Head } from "./performer";
 import { data } from "./performer.fixtures";
 
@@ -20,6 +20,7 @@ describe("/watchlist/performers/{slug}", () => {
     expect.hasAssertions();
     render(<PerformerTemplate data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "Rio Bravo");
       await new Promise((r) => setTimeout(r, 500));

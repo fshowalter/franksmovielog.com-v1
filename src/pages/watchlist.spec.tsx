@@ -1,5 +1,5 @@
 import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import WatchlistPage, { Head } from "./watchlist";
 import { data } from "./watchlist.fixtures";
 
@@ -20,6 +20,7 @@ describe("/watchlist", () => {
     expect.hasAssertions();
     render(<WatchlistPage data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "Lawyer Man");
       await new Promise((r) => setTimeout(r, 500));
@@ -32,6 +33,7 @@ describe("/watchlist", () => {
     expect.hasAssertions();
     render(<WatchlistPage data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(
         screen.getByLabelText("Title"),

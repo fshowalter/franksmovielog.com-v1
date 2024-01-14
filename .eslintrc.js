@@ -61,6 +61,7 @@ module.exports = {
     },
     {
       files: ["**/*.spec.ts", "**/*.spec.tsx"],
+      extends: ["plugin:testing-library/react"],
       rules: {
         "max-lines-per-function": ["off"],
       },

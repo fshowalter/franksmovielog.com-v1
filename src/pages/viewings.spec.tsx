@@ -1,5 +1,5 @@
 import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import { select } from "react-select-event";
 import ViewingsIndexPage, { Head } from "./viewings";
 import { data } from "./viewings.fixtures";
@@ -21,6 +21,7 @@ describe("/viewings", () => {
     expect.hasAssertions();
     render(<ViewingsIndexPage data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "Rio Bravo");
       await new Promise((r) => setTimeout(r, 500));
