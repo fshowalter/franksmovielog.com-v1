@@ -99,6 +99,66 @@ globalStyle(".reactSelect__placeholder", {
   padding: 0,
 });
 
-globalStyle(".littlefoot-footnote__content", {
-  backgroundColor: backgroundColors.default,
+globalStyle(".littlefoot__button", {
+  top: "-.1em",
+  position: "relative",
+  minWidth: "1.5em",
+  boxSizing: "border-box",
+  lineHeight: 1,
+});
+
+globalStyle(".littlefoot__button svg", {
+  height: ".3em",
+});
+
+globalStyle(".littlefoot__button svg circle", {
+  "@media": {
+    "(prefers-color-scheme: dark)": {
+      fill: foregroundColors.default,
+    },
+  },
+});
+
+globalStyle(".littlefoot__popover", {
+  "@media": {
+    "(width > 768px)": {
+      margin:
+        "calc(var(--popover-tooltip-size) + var(--button-height) + calc(var(--button-height) / 2)) 0",
+    },
+  },
+});
+
+globalStyle(".littlefoot", {
+  display: "inline-block",
+  position: "relative",
+  textIndent: 0,
+  vars: {
+    "--button-background-color": "hsla(0,0%,43%,.2)",
+    "--button-border-radius": ".5em",
+    "--button-font-size": ".9em",
+    "--button-font-weight": "700",
+    "--button-height": "1em",
+    "--button-margin": "0 .1em 0 .2em",
+    "--button-padding": ".35em .5em",
+    "--popover-background-color": "#fbfbfb",
+    "--popover-border-radius": "10px",
+    "--popover-border": "1px solid #c3c3c3",
+    "--popover-font-family": "",
+    "--popover-font-size": "1rem",
+    "--popover-line-height": "1.5rem",
+    "--popover-shadow": "0 0 8px rgba(0,0,0,.3)",
+    "--popover-text-color": foregroundColors.default,
+    "--popover-tooltip-size": ".65em",
+    "--popover-vertical-padding": "calc(1rem - 1px)",
+  },
+  "@media": {
+    "(prefers-color-scheme: dark)": {
+      vars: {
+        "--button-background-color": "rgba(0,0,0,.75)",
+        "--button-text-color": foregroundColors.default,
+        "--popover-shadow": "0 0 2px rgba(255,255,255,.7)",
+        "--popover-background-color": "#1d1818",
+      },
+    },
+  },
 });
