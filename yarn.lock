@@ -3011,26 +3011,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pacote/get-style@npm:^1.0.0, @pacote/get-style@npm:^1.1.7":
-  version: 1.1.7
-  resolution: "@pacote/get-style@npm:1.1.7"
-  checksum: c8f8bd57caa0c7ce460ca0211f836743030e0785ca38e991d0b81d74e58183d5029130fc409eebe59e8d4c774430b8f550762c474a8cb123490cb3e9dd93781a
+"@pacote/get-style@npm:2.0.2, @pacote/get-style@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@pacote/get-style@npm:2.0.2"
+  checksum: ecda0aa9c533756e2de4023ae4416515743e3ba61cf85819687c199bc970b0982391a4a0e584b97025c0ace7a41e5969e5e5086ba0d6795ab178342bbd19d9e5
   languageName: node
   linkType: hard
 
-"@pacote/pixels@npm:^1.0.0":
-  version: 1.1.7
-  resolution: "@pacote/pixels@npm:1.1.7"
+"@pacote/pixels@npm:2.0.2":
+  version: 2.0.2
+  resolution: "@pacote/pixels@npm:2.0.2"
   dependencies:
-    "@pacote/get-style": "npm:^1.1.7"
-  checksum: e9fe20641c4aa765dae3089faeae5f7b0dfbb956f2335d0141bbf979ab4d258a9687426ab27581fc17030405a39a4732845640c97b7d7c26d208c847ba69ea2d
+    "@pacote/get-style": "npm:^2.0.2"
+  checksum: 6633c5020796ac8b5cccb4feb65ae19f85c81a55ce7baa77da0cb5c29e374b2c0793e0c4ae4a4830d8ab95c0692c8833ac8e7ea2d3c0ab8d9417e06e10a599a4
   languageName: node
   linkType: hard
 
-"@pacote/throttle@npm:^1.0.0":
-  version: 1.0.7
-  resolution: "@pacote/throttle@npm:1.0.7"
-  checksum: 88e769c7cd9d2941d620d7033f07957dc9b3f628ee2ce66715eb903cf6c80d1405871b0045a1a63537a1ac40325b33b5d2957d5b4365f0c2bf11dc9dd942808f
+"@pacote/throttle@npm:2.0.2":
+  version: 2.0.2
+  resolution: "@pacote/throttle@npm:2.0.2"
+  checksum: 6734a5bb85bb7e5d06a218969b2e041d42926ca039582a82c68d6aade231d4a3114a496b34e589f6c918142ac71f838494c3b5bbf10640f587e6d931e871e082
   languageName: node
   linkType: hard
 
@@ -7185,15 +7185,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"delegated-events@npm:^1.0.10":
-  version: 1.1.2
-  resolution: "delegated-events@npm:1.1.2"
-  dependencies:
-    selector-set: "npm:^1.1.5"
-  checksum: b295a6d6c6cef4b9312bfd4132ac3a1255f3c2fadf3692a04cf7ddf8f0d472bfce9de06323faa75e922d20e5674d45022e1a5378b8500cd7d573ffa0cf7ca602
-  languageName: node
-  linkType: hard
-
 "depd@npm:2.0.0":
   version: 2.0.0
   resolution: "depd@npm:2.0.0"
@@ -9173,7 +9164,7 @@ __metadata:
     hast-util-to-html: "npm:^7.1.3"
     jest: "npm:29.7.0"
     jest-environment-jsdom: "npm:29.7.0"
-    littlefoot: "npm:3.4.1"
+    littlefoot: "npm:4.1.0"
     mdast-util-to-hast: "npm:^10.2.0"
     prettier: "npm:3.2.2"
     react: "npm:18.2.0"
@@ -12407,15 +12398,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"littlefoot@npm:3.4.1":
-  version: 3.4.1
-  resolution: "littlefoot@npm:3.4.1"
+"littlefoot@npm:4.1.0":
+  version: 4.1.0
+  resolution: "littlefoot@npm:4.1.0"
   dependencies:
-    "@pacote/get-style": "npm:^1.0.0"
-    "@pacote/pixels": "npm:^1.0.0"
-    "@pacote/throttle": "npm:^1.0.0"
-    delegated-events: "npm:^1.0.10"
-  checksum: 3271a759db2f78a449e5d6780b2c1e5bab45b3cb512759e150ae9532e0b8493eeb7ede7163a3ebf01ec5ad1b296bf2a207b2c0c28b3066a8e38883ffce9e76a2
+    "@pacote/get-style": "npm:2.0.2"
+    "@pacote/pixels": "npm:2.0.2"
+    "@pacote/throttle": "npm:2.0.2"
+  checksum: a781cf04532b82664e04a3a3c36a6ce7562e9570b01b67edbfe38a7c9b7697d6430474f892cf631062834c23d6bf704a9f360a750877e64f260425bad55ab241
   languageName: node
   linkType: hard
 
@@ -16187,13 +16177,6 @@ __metadata:
     extend-shallow: "npm:^2.0.1"
     kind-of: "npm:^6.0.0"
   checksum: 8007f91780adc5aaa781a848eaae50b0f680bbf4043b90cf8a96778195b8fab690c87fe7a989e02394ce69890e330811ec8dab22397d384673ce59f7d750641d
-  languageName: node
-  linkType: hard
-
-"selector-set@npm:^1.1.5":
-  version: 1.1.5
-  resolution: "selector-set@npm:1.1.5"
-  checksum: 4835907846eb8496c2cc4e5ce48355cce1ef3b55e82789542739dcdc71ebfb756e133d1d7f7ec9f0cf4b1c11fc0375a1d3b99a482d9c973493ca85a6d4b012ab
   languageName: node
   linkType: hard
 
