@@ -33,5 +33,6 @@
       "matchPackageNames": ["@typescript-eslint/*"],
       "groupName": "@typescript/eslint"
     }
-  ]
+  ],
+  "configMigration": true
 }
