@@ -1,5 +1,5 @@
 import { createVar, globalStyle } from "@vanilla-extract/css";
-import { backgroundColors, foregroundColors } from "./colors.css";
+import { backgroundColors, borderColors, foregroundColors } from "./colors.css";
 import { size } from "./sizes.css";
 
 globalStyle(`*, *::before, *::after`, {
@@ -142,11 +142,11 @@ globalStyle(".littlefoot", {
     "--button-padding": ".35em .5em",
     "--popover-background-color": "#fbfbfb",
     "--popover-border-radius": "10px",
-    "--popover-border": "1px solid #c3c3c3",
+    "--popover-border": `1px solid ${borderColors.default}`,
     "--popover-font-family": "",
     "--popover-font-size": "1rem",
     "--popover-line-height": "1.5rem",
-    "--popover-shadow": "0 0 8px rgba(0,0,0,.3)",
+    "--popover-shadow": "0 0 40px rgba(0,0,0,.3)",
     "--popover-text-color": foregroundColors.default,
     "--popover-tooltip-size": ".65em",
     "--popover-vertical-padding": "calc(1rem - 1px)",
@@ -156,8 +156,8 @@ globalStyle(".littlefoot", {
       vars: {
         "--button-background-color": "rgba(0,0,0,.75)",
         "--button-text-color": foregroundColors.default,
-        "--popover-shadow": "0 0 2px rgba(255,255,255,.7)",
-        "--popover-background-color": "#1d1818",
+        "--popover-shadow": "0 0 40px rgba(0, 0, 0,.7)",
+        "--popover-background-color": backgroundColors.subtle,
       },
     },
   },
