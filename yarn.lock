@@ -7500,9 +7500,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.601":
-  version: 1.4.636
-  resolution: "electron-to-chromium@npm:1.4.636"
-  checksum: 9eac3575c80f0ce60c275c2e212101328d329af676e5498ed501eedca322db6faa966ed4185b6217cc8153231dbda55238eb1b0b82132510e25c037eac8ea815
+  version: 1.4.637
+  resolution: "electron-to-chromium@npm:1.4.637"
+  checksum: ff3c338034d846fe9d912864dd597eecaab61d1bdc0de9f9f39f2e87127af9d069492789a7a920b6c10a83f1d511ce6474d248b3e5a34d38c5ce788b0e862ae6
   languageName: node
   linkType: hard
 
@@ -12103,15 +12103,15 @@ __metadata:
   linkType: hard
 
 "joi@npm:^17.9.2":
-  version: 17.11.1
-  resolution: "joi@npm:17.11.1"
+  version: 17.12.0
+  resolution: "joi@npm:17.12.0"
   dependencies:
     "@hapi/hoek": "npm:^9.3.0"
     "@hapi/topo": "npm:^5.1.0"
     "@sideway/address": "npm:^4.1.4"
     "@sideway/formula": "npm:^3.0.1"
     "@sideway/pinpoint": "npm:^2.0.0"
-  checksum: 7b68e7658f9d1b23c6240aa7c9def0f0ff0a1144e90a3ecc641e07f4ec33efe1d31fb373299f0e973f67020fef8cb7d5fd5c40f749ceac302f74f0c2cc8eb0e7
+  checksum: 2378f4ec8de2bc12674ce3e6faac509f52ff4f734c67bf68c288816b20336d4e59433ea1c1e187f1009075c81ec5fa8b5061094feb37a855d6e3ee0cfcd79dd8
   languageName: node
   linkType: hard
 
