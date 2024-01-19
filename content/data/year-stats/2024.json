@@ -1,23 +1,31 @@
 {
   "year": "2024",
-  "newTitleCount": 4,
-  "viewingCount": 5,
-  "titleCount": 5,
+  "newTitleCount": 7,
+  "viewingCount": 8,
+  "titleCount": 8,
   "mediaDistribution": [
+    {
+      "name": "iTunes",
+      "count": 3
+    },
     {
       "name": "Blu-ray",
       "count": 3
     },
     {
-      "name": "iTunes",
+      "name": "4k UHD Blu-ray",
       "count": 1
     },
     {
-      "name": "4k UHD Blu-ray",
+      "name": "WEBRip",
       "count": 1
     }
   ],
   "decadeDistribution": [
+    {
+      "name": "1970s",
+      "count": 1
+    },
     {
       "name": "1980s",
       "count": 3
@@ -28,7 +36,7 @@
     },
     {
       "name": "2020s",
-      "count": 1
+      "count": 3
     }
   ],
   "mostWatchedTitles": [],
