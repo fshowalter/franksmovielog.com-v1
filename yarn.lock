@@ -4120,7 +4120,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.11.13, @types/node@npm:>=10.0.0":
+"@types/node@npm:*, @types/node@npm:>=10.0.0":
+  version: 20.11.14
+  resolution: "@types/node@npm:20.11.14"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/81a55ddf68811439e58bdc2e4b8e501c6c6ea3d5351aa6362a36f5829055f58195bc201b0992ffda306fcd848c84b1eca327befb71f12f24e0d356e997e17add
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.11.13":
   version: 20.11.13
   resolution: "@types/node@npm:20.11.13"
   dependencies:
@@ -7447,9 +7456,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.648":
-  version: 1.4.651
-  resolution: "electron-to-chromium@npm:1.4.651"
-  checksum: 10c0/be68418d2e13470d676f6ea09bd8f2456bf278bb169ddab6da6b8bc7ab9b2ab1df6c8ed3e31b9664f3ad44f4dd1318e7bd88bf227cd1e9e0db691e9a92fd90ee
+  version: 1.4.652
+  resolution: "electron-to-chromium@npm:1.4.652"
+  checksum: 10c0/5b865642d38e6ef10b0babb4724658bf9cd69323cfa7a12f942b127c8702fca193da1e70a898cf3b44c34e04b54807526849d745dfaf6aaa8f410c89417c9484
   languageName: node
   linkType: hard
 
