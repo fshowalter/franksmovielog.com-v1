@@ -4583,27 +4583,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^6.5.0":
-  version: 6.5.0
-  resolution: "@vanilla-extract/integration@npm:6.5.0"
-  dependencies:
-    "@babel/core": "npm:^7.20.7"
-    "@babel/plugin-syntax-typescript": "npm:^7.20.0"
-    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.4"
-    "@vanilla-extract/css": "npm:^1.14.0"
-    esbuild: "npm:esbuild@~0.17.6 || ~0.18.0 || ~0.19.0"
-    eval: "npm:0.1.8"
-    find-up: "npm:^5.0.0"
-    javascript-stringify: "npm:^2.0.1"
-    lodash: "npm:^4.17.21"
-    mlly: "npm:^1.4.2"
-    outdent: "npm:^0.8.0"
-    vite: "npm:^5.0.11"
-    vite-node: "npm:^1.2.0"
-  checksum: 10c0/9c24ba5c8480dd39c3db85aaaf2e3328ec54d4f9c925a604298992c0883e199a115827251bcf8bbf10d4ec0ca98e7473898cbb886a4273844e9bb6553d109088
-  languageName: node
-  linkType: hard
-
 "@vanilla-extract/integration@npm:^7.0.0":
   version: 7.0.0
   resolution: "@vanilla-extract/integration@npm:7.0.0"
@@ -4651,17 +4630,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/webpack-plugin@npm:2.3.5":
-  version: 2.3.5
-  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.5"
+"@vanilla-extract/webpack-plugin@npm:2.3.6":
+  version: 2.3.6
+  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.6"
   dependencies:
-    "@vanilla-extract/integration": "npm:^6.5.0"
+    "@vanilla-extract/integration": "npm:^7.0.0"
     chalk: "npm:^4.1.1"
     debug: "npm:^4.3.1"
     loader-utils: "npm:^2.0.0"
   peerDependencies:
     webpack: ^4.30.0 || ^5.20.2
-  checksum: 10c0/f1182da382c6563782d5da8f22ce719054028106cb3e25b75f01ec1962b7bf504553f4fa3f68fc61f6f7421d67dd5b104b4ed4260d40920fba16ad0dda8cde3e
+  checksum: 10c0/ec3a31bf42ad7884cef4294c70411ef2f26362d2fd3f6a159a8bf1d661eb988f330c7043b33ce2013999e13b6cbaa42aa59054d966c8a9f73e25e6d0f4bcfd5f
   languageName: node
   linkType: hard
 
@@ -9033,7 +9012,7 @@ __metadata:
     "@vanilla-extract/css": "npm:1.14.1"
     "@vanilla-extract/jest-transform": "npm:1.1.4"
     "@vanilla-extract/sprinkles": "npm:1.6.1"
-    "@vanilla-extract/webpack-plugin": "npm:2.3.5"
+    "@vanilla-extract/webpack-plugin": "npm:2.3.6"
     babel-jest: "npm:29.7.0"
     babel-preset-gatsby: "npm:3.13.1"
     core-js: "npm:3.35.1"
