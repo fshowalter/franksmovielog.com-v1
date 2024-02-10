@@ -5694,14 +5694,14 @@ __metadata:
   linkType: hard
 
 "bare-fs@npm:^2.1.1":
-  version: 2.1.2
-  resolution: "bare-fs@npm:2.1.2"
+  version: 2.1.3
+  resolution: "bare-fs@npm:2.1.3"
   dependencies:
     bare-events: "npm:^2.0.0"
     bare-os: "npm:^2.0.0"
     bare-path: "npm:^2.0.0"
     streamx: "npm:^2.13.0"
-  checksum: 10c0/f52e1f5e14c5774b6742f7b8c1de8ff113c4e3c59f7edc2f309c121d74e7f190436eaa4075da0633ca44b8f21cc0260ac4ad5c6c4f587b9501f2bc91d673b689
+  checksum: 10c0/7c512d66b87f7de929276e4fdc42a8aafe986b885e0edf1b19ffd2d4b1715d652316136954dc9a56e7dd2ff33ea051aa50e2b3ed9d8ecbc42fc5ae7c3176ceeb
   languageName: node
   linkType: hard
 
@@ -7498,9 +7498,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.648":
-  version: 1.4.664
-  resolution: "electron-to-chromium@npm:1.4.664"
-  checksum: 10c0/52ea8b2b1ea3825f4eb845e472dbc0541abc098860ecd60e9c94f335e258f7e8eb08396a9ae758e6b54e871ee11adac762bb3a02c0ca521496f79fcde2d12e39
+  version: 1.4.665
+  resolution: "electron-to-chromium@npm:1.4.665"
+  checksum: 10c0/c97e00510f4a3f9dfa213957b997cd3f759fedece2627716b39f72294214f45e30f7e2ee3cc58a0ddb4b9b60e4ef07fd505200619c2f9aa31b89ce0bfc558679
   languageName: node
   linkType: hard
 
