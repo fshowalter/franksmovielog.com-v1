@@ -6668,7 +6668,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.35.1, core-js@npm:^3.31.0":
+"core-js@npm:3.36.0":
+  version: 3.36.0
+  resolution: "core-js@npm:3.36.0"
+  checksum: 10c0/62dcb41ba79ead581e4c5b2740ae18bfe6ee230e853893736d16edb01b580574d8645ff6c5513d1c75d59620f8451aee45c119d3c4f5ebc66cff5f003a816864
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.31.0":
   version: 3.35.1
   resolution: "core-js@npm:3.35.1"
   checksum: 10c0/ebc8e22c36d13bcf2140cbc1d8ad65d1b08192bff4c43ade70c72eac103cb4dcfbc521f2b1ad1c74881b0a4353e64986537893ae4f07888e49228340efa13ae6
@@ -9085,7 +9092,7 @@ __metadata:
     "@vanilla-extract/webpack-plugin": "npm:2.3.6"
     babel-jest: "npm:29.7.0"
     babel-preset-gatsby: "npm:3.13.1"
-    core-js: "npm:3.35.1"
+    core-js: "npm:3.36.0"
     eslint: "npm:8.56.0"
     eslint-config-airbnb: "npm:19.0.4"
     eslint-config-prettier: "npm:9.1.0"
