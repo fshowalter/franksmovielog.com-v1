@@ -1,12 +1,12 @@
 {
   "year": "2024",
-  "newTitleCount": 8,
-  "viewingCount": 9,
-  "titleCount": 9,
+  "newTitleCount": 9,
+  "viewingCount": 10,
+  "titleCount": 10,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 4
+      "count": 5
     },
     {
       "name": "iTunes",
@@ -32,7 +32,7 @@
     },
     {
       "name": "1990s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "2020s",
@@ -41,6 +41,32 @@
   ],
   "mostWatchedTitles": [],
   "mostWatchedDirectors": [],
-  "mostWatchedPerformers": [],
+  "mostWatchedPerformers": [
+    {
+      "name": "Warwick Davis",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1559,
+          "date": "2024-01-15",
+          "slug": "leprechaun-2-1994",
+          "title": "Leprechaun 2",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1994"
+        },
+        {
+          "sequence": 1564,
+          "date": "2024-01-27",
+          "slug": "leprechaun-4-in-space-1996",
+          "title": "Leprechaun 4: In Space",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1996"
+        }
+      ]
+    }
+  ],
   "mostWatchedWriters": []
 }
