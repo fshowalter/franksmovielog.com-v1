@@ -16,9 +16,9 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "strictNullChecks": true,
-    "noImplicitAny": true,
+    "noImplicitAny": true
   },
   "include": ["./src/**/*", "./gatsby/**/*", "*.ts"],
   "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"],
-  "typeRoots": ["./src/types", "./node_modules/@types/"],
+  "typeRoots": ["./src/types", "./node_modules/@types/"]
 }
