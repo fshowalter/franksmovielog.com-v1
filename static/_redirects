@@ -156,10 +156,6 @@
 /cast-and-crew/* /gone 410
 /watchlist/cast/bill-murray /gone 410
 /watchlist/performers/bill-murray /gone 410
-/watchlist/writers/alfred-hitchcock /gone 410
-/watchlist/writers/john-ford /gone 410
-/watchlist/writers/lucio-fulci /gone 410
-
 
 # misc old links
 /images/5-stars-4661cb2a.svg /gone 410
@@ -172,6 +168,15 @@
 /repeater.php /gone 410
 /sitemap/* /sitemap-index.xml 301
 /watchlist/writers/ingmar-bergman /watchlist/directors/ingmar-bergman 301
+/watchlist/writers/alfred-hitchcock /watchlist/directors/alfred-hitchcock 301
+/watchlist/writers/john-ford /watchlist/directors/john-ford 301
+/watchlist/writers/lucio-fulci /watchlist/directors/lucio-fulci 301
+/watchlist/writers/wes-craven /watchlist/directors/wes-craven 301
+/watchlist/writers/brian-de-palma /watchlist/directors/brian-de-palma 301
+/watchlist/writers/howard-hawks /watchlist/directors/howard-hawks 301
+/watchlist/writers/john-carpenter /watchlist/directors/john-carpenter 301
+/watchlist/writers/quentin-tarantino /watchlist/directors/quentin-tarantino 301
+
 
 # resized images
 /static/:contenthash/0e001/* /gone 410
