@@ -11579,18 +11579,18 @@
       ],
       "reviews": [
         {
-          "title": "Deathtrap",
-          "imdbId": "tt0083806",
-          "year": "1982",
-          "slug": "deathtrap-1982",
-          "grade": "B-"
-        },
-        {
           "title": "Delirio di sangue",
           "imdbId": "tt0094762",
           "year": "1988",
           "slug": "blood-delirium-1988",
           "grade": "D"
+        },
+        {
+          "title": "The Demon's Baby",
+          "imdbId": "tt0327628",
+          "year": "1998",
+          "slug": "the-demons-baby-1998",
+          "grade": "C"
         },
         {
           "title": "The Devil's Rejects",
@@ -18422,11 +18422,11 @@
       "inCollection": [],
       "reviews": [
         {
-          "title": "Delirio di sangue",
-          "imdbId": "tt0094762",
-          "year": "1988",
-          "slug": "blood-delirium-1988",
-          "grade": "D"
+          "title": "The Demon's Baby",
+          "imdbId": "tt0327628",
+          "year": "1998",
+          "slug": "the-demons-baby-1998",
+          "grade": "C"
         },
         {
           "title": "The Devil Rides Out",
@@ -20934,6 +20934,83 @@
           "year": "1941",
           "slug": "penny-serenade-1941",
           "grade": "F"
+        }
+      ]
+    }
+  },
+  {
+    "imdbId": "tt0327628",
+    "title": "The Demon's Baby",
+    "year": "1998",
+    "slug": "the-demons-baby-1998",
+    "grade": "C",
+    "countries": [
+      "Hong Kong"
+    ],
+    "genres": [
+      "Horror",
+      "Romance"
+    ],
+    "sortTitle": "Demon's Baby (1998)",
+    "originalTitle": "Mang gwai sik yan toi",
+    "gradeValue": 6,
+    "runtimeMinutes": 85,
+    "releaseSequence": "1998-08-15tt0327628",
+    "directorNames": [
+      "Kant Leung"
+    ],
+    "principalCastNames": [
+      "Emotion Cheung",
+      "Annie Wu",
+      "Elvis Tsui",
+      "Anthony Chau-Sang Wong"
+    ],
+    "reviewDate": "2024-02-11",
+    "reviewYear": "2024",
+    "sequence": "2024-02-11-1568",
+    "viewings": [
+      {
+        "sequence": 1568,
+        "medium": "Blu-ray",
+        "mediumNotes": "_Made in Hong Kong: Volume One_, Vinegar Syndrome, 2023",
+        "date": "2024-02-11",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "more": {
+      "directedBy": [],
+      "withPerformer": [],
+      "writtenBy": [],
+      "inCollection": [],
+      "reviews": [
+        {
+          "title": "Deathtrap",
+          "imdbId": "tt0083806",
+          "year": "1982",
+          "slug": "deathtrap-1982",
+          "grade": "B-"
+        },
+        {
+          "title": "Delirio di sangue",
+          "imdbId": "tt0094762",
+          "year": "1988",
+          "slug": "blood-delirium-1988",
+          "grade": "D"
+        },
+        {
+          "title": "The Devil Rides Out",
+          "imdbId": "tt0062885",
+          "year": "1968",
+          "slug": "the-devil-rides-out-1968",
+          "grade": "B"
+        },
+        {
+          "title": "The Devil's Rejects",
+          "imdbId": "tt0395584",
+          "year": "2005",
+          "slug": "the-devils-rejects-2005",
+          "grade": "C+"
         }
       ]
     }
@@ -36827,18 +36904,18 @@
           "grade": "B-"
         },
         {
+          "title": "The Demon's Baby",
+          "imdbId": "tt0327628",
+          "year": "1998",
+          "slug": "the-demons-baby-1998",
+          "grade": "C"
+        },
+        {
           "title": "The Devil Rides Out",
           "imdbId": "tt0062885",
           "year": "1968",
           "slug": "the-devil-rides-out-1968",
           "grade": "B"
-        },
-        {
-          "title": "The Devil's Rejects",
-          "imdbId": "tt0395584",
-          "year": "2005",
-          "slug": "the-devils-rejects-2005",
-          "grade": "C+"
         }
       ]
     }
@@ -46770,11 +46847,11 @@
           "grade": "D"
         },
         {
-          "title": "The Devil Rides Out",
-          "imdbId": "tt0062885",
-          "year": "1968",
-          "slug": "the-devil-rides-out-1968",
-          "grade": "B"
+          "title": "The Demon's Baby",
+          "imdbId": "tt0327628",
+          "year": "1998",
+          "slug": "the-demons-baby-1998",
+          "grade": "C"
         }
       ]
     }
