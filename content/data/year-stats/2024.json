@@ -1,20 +1,20 @@
 {
   "year": "2024",
-  "newTitleCount": 9,
-  "viewingCount": 10,
-  "titleCount": 10,
+  "newTitleCount": 13,
+  "viewingCount": 16,
+  "titleCount": 16,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 5
+      "count": 7
     },
     {
       "name": "iTunes",
-      "count": 3
+      "count": 4
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 1
+      "count": 4
     },
     {
       "name": "WEBRip",
@@ -28,15 +28,15 @@
     },
     {
       "name": "1980s",
-      "count": 3
+      "count": 7
     },
     {
       "name": "1990s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "2020s",
-      "count": 3
+      "count": 4
     }
   ],
   "mostWatchedTitles": [],
@@ -64,6 +64,31 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1996"
+        }
+      ]
+    },
+    {
+      "name": "Jack Taylor",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1565,
+          "date": "2024-02-01",
+          "slug": null,
+          "title": "Conan the Barbarian",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 1567,
+          "date": "2024-02-03",
+          "slug": null,
+          "title": "Pieces",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1982"
         }
       ]
     }
