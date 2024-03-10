@@ -16189,14 +16189,14 @@ __metadata:
   linkType: hard
 
 "safe-array-concat@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "safe-array-concat@npm:1.1.1"
+  version: 1.1.2
+  resolution: "safe-array-concat@npm:1.1.2"
   dependencies:
     call-bind: "npm:^1.0.7"
     get-intrinsic: "npm:^1.2.4"
     has-symbols: "npm:^1.0.3"
     isarray: "npm:^2.0.5"
-  checksum: 10c0/883f613716622ef0527a80aa2eae7b9ea4c69eaaf19715b3a0d7d5feebc042efd3941cf7075a11ccd07d38968e98d5dfa8e33119d2fbad67f211df573da93b57
+  checksum: 10c0/12f9fdb01c8585e199a347eacc3bae7b5164ae805cdc8c6707199dbad5b9e30001a50a43c4ee24dc9ea32dbb7279397850e9208a7e217f4d8b1cf5d90129dec9
   languageName: node
   linkType: hard
 
