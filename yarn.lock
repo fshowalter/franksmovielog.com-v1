@@ -5524,11 +5524,11 @@ __metadata:
   linkType: hard
 
 "autoprefixer@npm:^10.4.14":
-  version: 10.4.18
-  resolution: "autoprefixer@npm:10.4.18"
+  version: 10.4.19
+  resolution: "autoprefixer@npm:10.4.19"
   dependencies:
     browserslist: "npm:^4.23.0"
-    caniuse-lite: "npm:^1.0.30001591"
+    caniuse-lite: "npm:^1.0.30001599"
     fraction.js: "npm:^4.3.7"
     normalize-range: "npm:^0.1.2"
     picocolors: "npm:^1.0.0"
@@ -5537,7 +5537,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 10c0/b6e1c1ba2fc6c09360cdcd75b00ce809c5dbe1ad4c30f0186764609a982aa5563d45965cb9e6a9d195c639a9fb1dcac2594484fc41624050195f626e9add666e
+  checksum: 10c0/fe0178eb8b1da4f15c6535cd329926609b22d1811e047371dccce50563623f8075dd06fb167daff059e4228da651b0bdff6d9b44281541eaf0ce0b79125bfd19
   languageName: node
   linkType: hard
 
@@ -6246,7 +6246,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001587, caniuse-lite@npm:^1.0.30001591":
+"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001587, caniuse-lite@npm:^1.0.30001599":
   version: 1.0.30001599
   resolution: "caniuse-lite@npm:1.0.30001599"
   checksum: 10c0/8b3b9610b5be88533a3c8d0770d6896f7b1a9fee3dbeb7339e4ee119a514c81e5e07a628a5a289a6541ca291ac78a9402f5a99cf6012139e91f379083488a8eb
@@ -7727,9 +7727,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.712
-  resolution: "electron-to-chromium@npm:1.4.712"
-  checksum: 10c0/3ff86ee3c76348b93158b933f816bb0e7f288e7d30fe6b40319d755823a28594be0c9ba696b19a91af760bf875735ac53cd3bd93b6397af5211d7b8f6eb52bb9
+  version: 1.4.713
+  resolution: "electron-to-chromium@npm:1.4.713"
+  checksum: 10c0/eb28bb64f61c79bae53fa094f31611d938cf21067123e2ceb04e6617c0ffca37e45c1e08fbad4f196178917c3395a576aa4e4db03d12389244fea50d4316f68f
   languageName: node
   linkType: hard
 
@@ -8957,8 +8957,8 @@ __metadata:
   linkType: hard
 
 "express@npm:^4.18.2":
-  version: 4.19.0
-  resolution: "express@npm:4.19.0"
+  version: 4.19.1
+  resolution: "express@npm:4.19.1"
   dependencies:
     accepts: "npm:~1.3.8"
     array-flatten: "npm:1.1.1"
@@ -8991,7 +8991,7 @@ __metadata:
     type-is: "npm:~1.6.18"
     utils-merge: "npm:1.0.1"
     vary: "npm:~1.1.2"
-  checksum: 10c0/cf4be4838f154491da059bb2fb11f7186211a66b232e7f2e460eba634c8bcf0af330a067ea02ad33f8782f66114038e4bb23c0a53aca463da092d5495a5d11bf
+  checksum: 10c0/1cf6d3c095131f0d730105fac23a713083604d4f3ad9364df53cade50662abcfee2f6f8a955fdf164a5ee63f09f457da0b70cbed435ad302fa6f14162a9757f9
   languageName: node
   linkType: hard
 
@@ -15177,13 +15177,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.3.11, postcss@npm:^8.4.24, postcss@npm:^8.4.36":
-  version: 8.4.37
-  resolution: "postcss@npm:8.4.37"
+  version: 8.4.38
+  resolution: "postcss@npm:8.4.38"
   dependencies:
     nanoid: "npm:^3.3.7"
     picocolors: "npm:^1.0.0"
     source-map-js: "npm:^1.2.0"
-  checksum: 10c0/0b5730ad0ccbceaf0faaa4a283a144adefd23254f17dbdd63be5e0b37193c7df58003f88742c04c3ae6fd60d1a5158b331a4ce926797fb21e94833ae83c6bf69
+  checksum: 10c0/955407b8f70cf0c14acf35dab3615899a2a60a26718a63c848cf3c29f2467b0533991b985a2b994430d890bd7ec2b1963e36352b0774a19143b5f591540f7c06
   languageName: node
   linkType: hard
 
@@ -15421,9 +15421,9 @@ __metadata:
   linkType: hard
 
 "pure-rand@npm:^6.0.0":
-  version: 6.0.4
-  resolution: "pure-rand@npm:6.0.4"
-  checksum: 10c0/0fe7b12f25b10ea5b804598a6f37e4bcf645d2be6d44fe963741f014bf0095bdb6ff525106d6da6e76addc8142358fd380f1a9b8c62ea4d5516bf26a96a37c95
+  version: 6.1.0
+  resolution: "pure-rand@npm:6.1.0"
+  checksum: 10c0/1abe217897bf74dcb3a0c9aba3555fe975023147b48db540aa2faf507aee91c03bf54f6aef0eb2bf59cc259a16d06b28eca37f0dc426d94f4692aeff02fb0e65
   languageName: node
   linkType: hard
 
