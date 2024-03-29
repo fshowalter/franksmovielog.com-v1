@@ -14,11 +14,11 @@ export function filterTools<T, S, G>(
   const applyFilters = buildApplyFilters(sorter, grouper);
 
   return {
-    updateFilter: function updateFilter<State extends FilterableState<T, S, G>>(
+    updateFilter: <State extends FilterableState<T, S, G>>(
       currentState: State,
       key: string,
       handler: (item: T) => boolean,
-    ): State {
+    ): State => {
       const filters = {
         ...currentState.filters,
         [key]: handler,
@@ -26,11 +26,11 @@ export function filterTools<T, S, G>(
 
       return applyFilters(filters, currentState);
     },
-    clearFilter: function clearFilter<State extends FilterableState<T, S, G>>(
+    clearFilter: <State extends FilterableState<T, S, G>>(
       value: string,
       currentState: State,
       key: string,
-    ): State | null {
+    ): State | null => {
       if (value != "All") {
         return null;
       }
