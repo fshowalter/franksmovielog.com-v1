@@ -1,7 +1,7 @@
 {
-  "viewingCount": 1571,
-  "titleCount": 1288,
-  "reviewCount": 701,
+  "viewingCount": 1579,
+  "titleCount": 1293,
+  "reviewCount": 702,
   "watchlistTitlesReviewedCount": 385,
   "gradeDistribution": [
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "D",
-      "count": 67,
+      "count": 68,
       "sortValue": 3
     },
     {
@@ -73,7 +73,7 @@
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 272
+      "count": 277
     },
     {
       "name": "Netflix",
@@ -101,7 +101,7 @@
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 58
+      "count": 59
     },
     {
       "name": "Criterion Channel",
@@ -119,7 +119,7 @@
     },
     {
       "name": "1930s",
-      "count": 195
+      "count": 196
     },
     {
       "name": "1940s",
@@ -131,11 +131,11 @@
     },
     {
       "name": "1960s",
-      "count": 105
+      "count": 106
     },
     {
       "name": "1970s",
-      "count": 171
+      "count": 172
     },
     {
       "name": "1980s",
@@ -143,19 +143,19 @@
     },
     {
       "name": "1990s",
-      "count": 89
+      "count": 91
     },
     {
       "name": "2000s",
-      "count": 124
+      "count": 125
     },
     {
       "name": "2010s",
-      "count": 344
+      "count": 345
     },
     {
       "name": "2020s",
-      "count": 61
+      "count": 62
     }
   ],
   "mostWatchedTitles": [
@@ -233,7 +233,7 @@
   "mostWatchedDirectors": [
     {
       "name": "John Ford",
-      "count": 26,
+      "count": 28,
       "slug": "john-ford",
       "viewings": [
         {
@@ -469,6 +469,24 @@
           "medium": "OK.ru",
           "venue": null,
           "year": "1931"
+        },
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
         }
       ]
     },
@@ -2418,7 +2436,7 @@
     },
     {
       "name": "John Wayne",
-      "count": 53,
+      "count": 55,
       "slug": "john-wayne",
       "viewings": [
         {
@@ -2897,6 +2915,24 @@
           "medium": "Watch TCM",
           "venue": null,
           "year": "1952"
+        },
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
         }
       ]
     },
@@ -5453,7 +5489,7 @@
   "mostWatchedWriters": [
     {
       "name": "John Ford",
-      "count": 26,
+      "count": 28,
       "slug": "john-ford",
       "viewings": [
         {
@@ -5689,6 +5725,24 @@
           "medium": "OK.ru",
           "venue": null,
           "year": "1931"
+        },
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
         }
       ]
     },

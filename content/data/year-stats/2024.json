@@ -1,19 +1,19 @@
 {
   "year": "2024",
-  "newTitleCount": 13,
-  "viewingCount": 17,
-  "titleCount": 17,
+  "newTitleCount": 18,
+  "viewingCount": 25,
+  "titleCount": 25,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 8
-    },
-    {
-      "name": "iTunes",
-      "count": 4
+      "count": 13
     },
     {
       "name": "4k UHD Blu-ray",
+      "count": 5
+    },
+    {
+      "name": "iTunes",
       "count": 4
     },
     {
@@ -23,8 +23,16 @@
   ],
   "decadeDistribution": [
     {
+      "name": "1930s",
+      "count": 1
+    },
+    {
+      "name": "1960s",
+      "count": 1
+    },
+    {
       "name": "1970s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "1980s",
@@ -32,19 +40,53 @@
     },
     {
       "name": "1990s",
-      "count": 3
+      "count": 5
+    },
+    {
+      "name": "2000s",
+      "count": 1
+    },
+    {
+      "name": "2010s",
+      "count": 1
     },
     {
       "name": "2020s",
-      "count": 4
+      "count": 5
     }
   ],
   "mostWatchedTitles": [],
-  "mostWatchedDirectors": [],
+  "mostWatchedDirectors": [
+    {
+      "name": "John Ford",
+      "count": 2,
+      "slug": "john-ford",
+      "viewings": [
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        }
+      ]
+    }
+  ],
   "mostWatchedPerformers": [
     {
       "name": "Warwick Davis",
-      "count": 2,
+      "count": 3,
       "slug": null,
       "viewings": [
         {
@@ -64,6 +106,40 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1996"
+        },
+        {
+          "sequence": 1572,
+          "date": "2024-02-23",
+          "slug": "leprechaun-6-back-2-tha-hood-2003",
+          "title": "Leprechaun 6: Back 2 Tha Hood",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2003"
+        }
+      ]
+    },
+    {
+      "name": "Luis Barboo",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1565,
+          "date": "2024-02-01",
+          "slug": null,
+          "title": "Conan the Barbarian",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 1573,
+          "date": "2024-02-24",
+          "slug": null,
+          "title": "Satan's Blood",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1978"
         }
       ]
     },
@@ -91,7 +167,183 @@
           "year": "1982"
         }
       ]
+    },
+    {
+      "name": "Allan Graf",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1569,
+          "date": "2024-02-15",
+          "slug": null,
+          "title": "Southern Comfort",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1981"
+        },
+        {
+          "sequence": 1579,
+          "date": "2024-03-27",
+          "slug": null,
+          "title": "Magnolia",
+          "medium": null,
+          "venue": "Prince Charles Cinema",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "name": "William H. Macy",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1570,
+          "date": "2024-02-15",
+          "slug": null,
+          "title": "The Last Dragon",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1579,
+          "date": "2024-03-27",
+          "slug": null,
+          "title": "Magnolia",
+          "medium": null,
+          "venue": "Prince Charles Cinema",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "name": "Lia Chang",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1570,
+          "date": "2024-02-15",
+          "slug": null,
+          "title": "The Last Dragon",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1575,
+          "date": "2024-02-29",
+          "slug": "frankenhooker-1990",
+          "title": "Frankenhooker",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1990"
+        }
+      ]
+    },
+    {
+      "name": "John Wayne",
+      "count": 2,
+      "slug": "john-wayne",
+      "viewings": [
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        }
+      ]
+    },
+    {
+      "name": "Andy Devine",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        }
+      ]
+    },
+    {
+      "name": "John Carradine",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        }
+      ]
     }
   ],
-  "mostWatchedWriters": []
+  "mostWatchedWriters": [
+    {
+      "name": "John Ford",
+      "count": 2,
+      "slug": "john-ford",
+      "viewings": [
+        {
+          "sequence": 1576,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1939"
+        },
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        }
+      ]
+    }
+  ]
 }

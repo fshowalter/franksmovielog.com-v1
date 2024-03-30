@@ -31,6 +31,10 @@ globalStyle(`a`, {
   textDecoration: "none",
 });
 
+globalStyle("strong", {
+  fontWeight: 600,
+});
+
 globalStyle(`img, picture, video, canvas, svg`, {
   display: `block`,
   maxWidth: `100%`,
