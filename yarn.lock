@@ -4375,17 +4375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.73
-  resolution: "@types/react@npm:18.2.73"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10c0/b6645ab3c20efa41cfccf58ce0be45419517a0ba4594e323dd400342fb1c1f9589d169cf9bfa85b5b0605e9097fe9de7734b6d0c533f5b9bc32aaadb624537a4
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.74":
+"@types/react@npm:*, @types/react@npm:18.2.74":
   version: 18.2.74
   resolution: "@types/react@npm:18.2.74"
   dependencies:
@@ -7743,9 +7733,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.723
-  resolution: "electron-to-chromium@npm:1.4.723"
-  checksum: 10c0/336131ee6433df3f7f453aca872ef218ac8aed3bd1a4e3426ba940683157ece6ab5bf059c92d42d223f9a46b5137904167aa1c4525511fcfdb3b3df24b80575a
+  version: 1.4.724
+  resolution: "electron-to-chromium@npm:1.4.724"
+  checksum: 10c0/bc7a3f153d952325bac09c1e67325bfc6d686130541550d1b7429cf72a1202256eed09299c4d8010684aa3683332336f05324acf03bc0be7c7060f4e0820c267
   languageName: node
   linkType: hard
 
@@ -17635,8 +17625,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.2.0, terser@npm:^5.26.0":
-  version: 5.30.1
-  resolution: "terser@npm:5.30.1"
+  version: 5.30.2
+  resolution: "terser@npm:5.30.2"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -17644,7 +17634,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10c0/0c4d5c1097251604fe85231f2766eb6eba5d6172b7a15175c51cdbc9df7fa5a501acf037248d667961152a1b1aeffa80980b0930b408c8bdc749e5aec8b13c61
+  checksum: 10c0/6ad6beee2b8e2fdeb8b5451acfd88802becca7f2556ef2d1891b9ae90512f68d4a0d45558ceaf535f0a7cfaa152d7a7f4832a640ce3dca1ed9c4ef84c68893ee
   languageName: node
   linkType: hard
 
