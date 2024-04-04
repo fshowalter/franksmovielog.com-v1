@@ -5900,11 +5900,11 @@ __metadata:
   linkType: hard
 
 "bare-path@npm:^2.0.0, bare-path@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "bare-path@npm:2.1.0"
+  version: 2.1.1
+  resolution: "bare-path@npm:2.1.1"
   dependencies:
     bare-os: "npm:^2.1.0"
-  checksum: 10c0/60477ea217ee56f4e1070a944b30b1b4f7019568c63bd5485854040ae80d6912a58ffbc22438845fc7b4bae59516f7655f5a10f095ae1a2739642d4bebc458bc
+  checksum: 10c0/70a341dc15419d20fd7299a69aab39a2a85e6a6ca45989d9e8d2c175f523475317ffbc9b6a3918f87a0f96f8d5702feee2ace776a0596aa1e55dc230995e222c
   languageName: node
   linkType: hard
 
@@ -7745,9 +7745,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.726
-  resolution: "electron-to-chromium@npm:1.4.726"
-  checksum: 10c0/f98a0e0686534aa8d7baf425d991a89ef7d8d3b856a8dfc786fdc47e8e57715440877e67bcda31d486aa7f73350718502d0de839229ac84624ee360829f3b201
+  version: 1.4.727
+  resolution: "electron-to-chromium@npm:1.4.727"
+  checksum: 10c0/7a29cdeab08ae08f60af0509242f7a257798fc0031b93342ec39a2bb1ef93496c605c546105b69eadc1c77b9e45b82449a2916804e68f307e0757412d5b7079f
   languageName: node
   linkType: hard
 
