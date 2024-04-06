@@ -97,7 +97,7 @@
     "originalTitle": "Harold & Kumar Go to White Castle",
     "gradeValue": 11,
     "runtimeMinutes": 88,
-    "releaseSequence": "2004-07-30tt0366551",
+    "releaseSequence": "2004-05-20tt0366551",
     "directorNames": [
       "Danny Leiner"
     ],
@@ -178,7 +178,7 @@
     "originalTitle": "Apostle",
     "gradeValue": 7,
     "runtimeMinutes": 130,
-    "releaseSequence": "2018-10-12tt6217306",
+    "releaseSequence": "2018-09-21tt6217306",
     "directorNames": [
       "Gareth Evans"
     ],
@@ -366,7 +366,7 @@
     "originalTitle": "Pilgrimage",
     "gradeValue": 6,
     "runtimeMinutes": 96,
-    "releaseSequence": "1933-08-18tt0024453",
+    "releaseSequence": "1933-07-12tt0024453",
     "directorNames": [
       "John Ford"
     ],
@@ -484,7 +484,7 @@
     "originalTitle": "Trolls World Tour",
     "gradeValue": 4,
     "runtimeMinutes": 91,
-    "releaseSequence": "2020-04-10tt6587640",
+    "releaseSequence": "2020-03-12tt6587640",
     "directorNames": [
       "Walt Dohrn",
       "David P. Smith"
@@ -563,7 +563,7 @@
     "originalTitle": "Onibaba",
     "gradeValue": 4,
     "runtimeMinutes": 103,
-    "releaseSequence": "1964-??-??tt0058430",
+    "releaseSequence": "1964-11-21tt0058430",
     "directorNames": [
       "Kaneto Shind\u00f4"
     ],
@@ -719,7 +719,7 @@
     "originalTitle": "Frankenstein",
     "gradeValue": 10,
     "runtimeMinutes": 70,
-    "releaseSequence": "1931-11-21tt0021884",
+    "releaseSequence": "1931-11-19tt0021884",
     "directorNames": [
       "James Whale"
     ],
@@ -765,6 +765,13 @@
               "grade": "D+"
             },
             {
+              "title": "I Like Your Nerve",
+              "imdbId": "tt0021986",
+              "year": "1931",
+              "slug": "i-like-your-nerve-1931",
+              "grade": "F"
+            },
+            {
               "title": "The Guilty Generation",
               "imdbId": "tt0021932",
               "year": "1931",
@@ -777,13 +784,6 @@
               "year": "1931",
               "slug": "tonight-or-never-1931",
               "grade": "D+"
-            },
-            {
-              "title": "Behind the Mask",
-              "imdbId": "tt0022663",
-              "year": "1932",
-              "slug": "behind-the-mask-1932",
-              "grade": "C-"
             }
           ]
         }
@@ -840,7 +840,7 @@
     "originalTitle": "From Beyond",
     "gradeValue": 10,
     "runtimeMinutes": 85,
-    "releaseSequence": "1986-10-24tt0091083",
+    "releaseSequence": "1986-10-01tt0091083",
     "directorNames": [
       "Stuart Gordon"
     ],
@@ -925,7 +925,7 @@
     "originalTitle": "3 from Hell",
     "gradeValue": 4,
     "runtimeMinutes": 115,
-    "releaseSequence": "2019-09-16tt8134742",
+    "releaseSequence": "2019-09-15tt8134742",
     "directorNames": [
       "Rob Zombie"
     ],
@@ -1002,7 +1002,7 @@
     "originalTitle": "The Great Ziegfeld",
     "gradeValue": 3,
     "runtimeMinutes": 176,
-    "releaseSequence": "1936-09-01tt0027698",
+    "releaseSequence": "1936-03-22tt0027698",
     "directorNames": [
       "Robert Z. Leonard"
     ],
@@ -1033,18 +1033,18 @@
           "slug": "william-powell",
           "titles": [
             {
-              "title": "The Thin Man",
-              "imdbId": "tt0025878",
-              "year": "1934",
-              "slug": "the-thin-man-1934",
-              "grade": "B+"
-            },
-            {
               "title": "The Key",
               "imdbId": "tt0025346",
               "year": "1934",
               "slug": "the-key-1934",
               "grade": "D+"
+            },
+            {
+              "title": "Fashions of 1934",
+              "imdbId": "tt0025101",
+              "year": "1934",
+              "slug": "fashions-of-1934-1934",
+              "grade": "D"
             },
             {
               "title": "The Heavenly Body",
@@ -1116,7 +1116,7 @@
     "originalTitle": "I corpi presentano tracce di violenza carnale",
     "gradeValue": 10,
     "runtimeMinutes": 92,
-    "releaseSequence": "1973-??-??tt0069920",
+    "releaseSequence": "1973-01-04tt0069920",
     "directorNames": [
       "Sergio Martino"
     ],
@@ -1200,7 +1200,7 @@
     "originalTitle": "Blood Rage",
     "gradeValue": 6,
     "runtimeMinutes": 82,
-    "releaseSequence": "1987-05-01tt0085253",
+    "releaseSequence": "1987-03-29tt0085253",
     "directorNames": [
       "John Grissmer"
     ],
@@ -1293,7 +1293,7 @@
     "originalTitle": "The Oklahoma Kid",
     "gradeValue": 5,
     "runtimeMinutes": 85,
-    "releaseSequence": "1939-03-11tt0031747",
+    "releaseSequence": "1939-03-03tt0031747",
     "directorNames": [
       "Lloyd Bacon"
     ],
@@ -1406,7 +1406,7 @@
     "originalTitle": "X-Men Origins: Wolverine",
     "gradeValue": 3,
     "runtimeMinutes": 107,
-    "releaseSequence": "2009-05-01tt0458525",
+    "releaseSequence": "2009-04-08tt0458525",
     "directorNames": [
       "Gavin Hood"
     ],
@@ -1484,7 +1484,7 @@
     "originalTitle": "The Menu",
     "gradeValue": 9,
     "runtimeMinutes": 107,
-    "releaseSequence": "2022-11-18tt9764362",
+    "releaseSequence": "2022-09-10tt9764362",
     "directorNames": [
       "Mark Mylod"
     ],
@@ -1638,7 +1638,7 @@
     "originalTitle": "Loving Memory",
     "gradeValue": 6,
     "runtimeMinutes": 57,
-    "releaseSequence": "1971-??-??tt0241687",
+    "releaseSequence": "1970-09-21tt0241687",
     "directorNames": [
       "Tony Scott"
     ],
@@ -1716,7 +1716,7 @@
     "originalTitle": "Mortal Kombat Legends: Battle of the Realms",
     "gradeValue": 8,
     "runtimeMinutes": 80,
-    "releaseSequence": "2021-08-31tt14901058",
+    "releaseSequence": "2021-08-30tt14901058",
     "directorNames": [
       "Ethan Spaulding"
     ],
@@ -1783,8 +1783,7 @@
     "slug": "curse-of-the-demon-1957",
     "grade": "B",
     "countries": [
-      "United Kingdom",
-      "United States"
+      "United Kingdom"
     ],
     "genres": [
       "Fantasy",
@@ -1796,7 +1795,7 @@
     "originalTitle": "Night of the Demon",
     "gradeValue": 9,
     "runtimeMinutes": 96,
-    "releaseSequence": "1957-??-??tt0050766",
+    "releaseSequence": "1957-11-09tt0050766",
     "directorNames": [
       "Jacques Tourneur"
     ],
@@ -1879,7 +1878,8 @@
     "slug": "avengers-infinity-war-2018",
     "grade": "A+",
     "countries": [
-      "United States"
+      "United States",
+      "Norway"
     ],
     "genres": [
       "Action",
@@ -1890,7 +1890,7 @@
     "originalTitle": "Avengers: Infinity War",
     "gradeValue": 13,
     "runtimeMinutes": 149,
-    "releaseSequence": "2018-04-27tt4154756",
+    "releaseSequence": "2018-04-23tt4154756",
     "directorNames": [
       "Anthony Russo",
       "Joe Russo"
@@ -2011,7 +2011,7 @@
     "originalTitle": "Saw VI",
     "gradeValue": 6,
     "runtimeMinutes": 90,
-    "releaseSequence": "2009-10-23tt1233227",
+    "releaseSequence": "2009-10-22tt1233227",
     "directorNames": [
       "Kevin Greutert"
     ],
@@ -2123,7 +2123,7 @@
     "originalTitle": "Intruder",
     "gradeValue": 5,
     "runtimeMinutes": 83,
-    "releaseSequence": "1989-??-??tt0095379",
+    "releaseSequence": "1989-01-13tt0095379",
     "directorNames": [
       "Scott Spiegel"
     ],
@@ -2190,7 +2190,9 @@
     "slug": "mars-attacks-1996",
     "grade": "C-",
     "countries": [
-      "United States"
+      "United States",
+      "Japan",
+      "United Kingdom"
     ],
     "genres": [
       "Comedy",
@@ -2200,7 +2202,7 @@
     "originalTitle": "Mars Attacks!",
     "gradeValue": 5,
     "runtimeMinutes": 106,
-    "releaseSequence": "1996-12-13tt0116996",
+    "releaseSequence": "1996-12-12tt0116996",
     "directorNames": [
       "Tim Burton"
     ],
@@ -2276,7 +2278,7 @@
     "originalTitle": "Salvation!: Have You Said Your Prayers Today?",
     "gradeValue": 9,
     "runtimeMinutes": 80,
-    "releaseSequence": "1987-12-31tt0093912",
+    "releaseSequence": "1987-05-31tt0093912",
     "directorNames": [
       "Beth B"
     ],
@@ -2343,6 +2345,7 @@
     "slug": "bill-and-ted-face-the-music-2020",
     "grade": "D",
     "countries": [
+      "Bahamas",
       "United States"
     ],
     "genres": [
@@ -2355,7 +2358,7 @@
     "originalTitle": "Bill & Ted Face the Music",
     "gradeValue": 3,
     "runtimeMinutes": 91,
-    "releaseSequence": "2020-08-28tt1086064",
+    "releaseSequence": "2020-08-27tt1086064",
     "directorNames": [
       "Dean Parisot"
     ],
@@ -2523,7 +2526,7 @@
     "originalTitle": "Fear and Desire",
     "gradeValue": 4,
     "runtimeMinutes": 62,
-    "releaseSequence": "1952-??-??tt0045758",
+    "releaseSequence": "1952-08-18tt0045758",
     "directorNames": [
       "Stanley Kubrick"
     ],
@@ -2715,7 +2718,7 @@
     "originalTitle": "The Block Island Sound",
     "gradeValue": 4,
     "runtimeMinutes": 99,
-    "releaseSequence": "2020-??-??tt8747160",
+    "releaseSequence": "2020-08-28tt8747160",
     "directorNames": [
       "Kevin McManus",
       "Matthew McManus"
@@ -2795,7 +2798,7 @@
     "originalTitle": "X2",
     "gradeValue": 6,
     "runtimeMinutes": 134,
-    "releaseSequence": "2003-05-02tt0290334",
+    "releaseSequence": "2003-04-24tt0290334",
     "directorNames": [
       "Bryan Singer"
     ],
@@ -2874,7 +2877,7 @@
     "originalTitle": "The Young Savages",
     "gradeValue": 5,
     "runtimeMinutes": 103,
-    "releaseSequence": "1961-05-24tt0055633",
+    "releaseSequence": "1961-05-23tt0055633",
     "directorNames": [
       "John Frankenheimer"
     ],
@@ -2950,7 +2953,7 @@
     "originalTitle": "Skepp till India land",
     "gradeValue": 4,
     "runtimeMinutes": 98,
-    "releaseSequence": "1947-??-??tt0039834",
+    "releaseSequence": "1947-09-01tt0039834",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -2994,17 +2997,17 @@
               "grade": "B"
             },
             {
-              "title": "Port of Call",
-              "imdbId": "tt0040418",
-              "year": "1948",
-              "slug": "port-of-call-1948",
-              "grade": "D+"
-            },
-            {
               "title": "Music in Darkness",
               "imdbId": "tt0040622",
               "year": "1948",
               "slug": "music-in-darkness-1948",
+              "grade": "D+"
+            },
+            {
+              "title": "Port of Call",
+              "imdbId": "tt0040418",
+              "year": "1948",
+              "slug": "port-of-call-1948",
               "grade": "D+"
             }
           ]
@@ -3063,7 +3066,7 @@
     "originalTitle": "The Rise and Fall of Legs Diamond",
     "gradeValue": 7,
     "runtimeMinutes": 101,
-    "releaseSequence": "1960-05-15tt0054243",
+    "releaseSequence": "1960-02-03tt0054243",
     "directorNames": [
       "Budd Boetticher"
     ],
@@ -3094,6 +3097,13 @@
           "slug": "warren-oates",
           "titles": [
             {
+              "title": "Race with the Devil",
+              "imdbId": "tt0073600",
+              "year": "1975",
+              "slug": "race-with-the-devil-1975",
+              "grade": "B-"
+            },
+            {
               "title": "Yellowstone Kelly",
               "imdbId": "tt0053457",
               "year": "1959",
@@ -3113,13 +3123,6 @@
               "year": "1973",
               "slug": "the-thief-who-came-to-dinner-1973",
               "grade": "B+"
-            },
-            {
-              "title": "Race with the Devil",
-              "imdbId": "tt0073600",
-              "year": "1975",
-              "slug": "race-with-the-devil-1975",
-              "grade": "B-"
             }
           ]
         }
@@ -3176,7 +3179,7 @@
     "originalTitle": "Jewel Robbery",
     "gradeValue": 5,
     "runtimeMinutes": 68,
-    "releaseSequence": "1932-08-13tt0023074",
+    "releaseSequence": "1932-07-08tt0023074",
     "directorNames": [
       "William Dieterle"
     ],
@@ -3329,11 +3332,11 @@
           "slug": "boris-karloff",
           "titles": [
             {
-              "title": "Frankenstein",
-              "imdbId": "tt0021884",
+              "title": "The Guilty Generation",
+              "imdbId": "tt0021932",
               "year": "1931",
-              "slug": "frankenstein-1931",
-              "grade": "B+"
+              "slug": "the-guilty-generation-1931",
+              "grade": "C"
             },
             {
               "title": "Tonight or Never",
@@ -3497,7 +3500,7 @@
     "originalTitle": "Maniac Cop",
     "gradeValue": 7,
     "runtimeMinutes": 85,
-    "releaseSequence": "1988-05-13tt0095583",
+    "releaseSequence": "1988-03-01tt0095583",
     "directorNames": [
       "William Lustig"
     ],
@@ -3574,7 +3577,7 @@
     "originalTitle": "The Man Who Played God",
     "gradeValue": 3,
     "runtimeMinutes": 80,
-    "releaseSequence": "1932-02-20tt0023181",
+    "releaseSequence": "1932-02-09tt0023181",
     "directorNames": [
       "John G. Adolfi"
     ],
@@ -3619,17 +3622,17 @@
               "grade": "D+"
             },
             {
+              "title": "Hell's House",
+              "imdbId": "tt0022991",
+              "year": "1932",
+              "slug": "hells-house-1932",
+              "grade": "C-"
+            },
+            {
               "title": "So Big!",
               "imdbId": "tt0023491",
               "year": "1932",
               "slug": "so-big-1932",
-              "grade": "D"
-            },
-            {
-              "title": "The Rich Are Always with Us",
-              "imdbId": "tt0023394",
-              "year": "1932",
-              "slug": "the-rich-are-always-with-us-1932",
               "grade": "D"
             }
           ]
@@ -3676,8 +3679,7 @@
     "slug": "live-and-let-die-1973",
     "grade": "D+",
     "countries": [
-      "United Kingdom",
-      "United States"
+      "United Kingdom"
     ],
     "genres": [
       "Action",
@@ -3915,7 +3917,7 @@
     "originalTitle": "Sherlock Holmes: A Game of Shadows",
     "gradeValue": 5,
     "runtimeMinutes": 129,
-    "releaseSequence": "2011-12-16tt1515091",
+    "releaseSequence": "2011-12-10tt1515091",
     "directorNames": [
       "Guy Ritchie"
     ],
@@ -3991,7 +3993,7 @@
     "originalTitle": "Hell's House",
     "gradeValue": 5,
     "runtimeMinutes": 72,
-    "releaseSequence": "1932-09-19tt0022991",
+    "releaseSequence": "1932-02-10tt0022991",
     "directorNames": [
       "Howard Higgin"
     ],
@@ -4022,6 +4024,20 @@
           "slug": "bette-davis",
           "titles": [
             {
+              "title": "Way Back Home",
+              "imdbId": "tt0022551",
+              "year": "1931",
+              "slug": "way-back-home-1931",
+              "grade": "D+"
+            },
+            {
+              "title": "The Man Who Played God",
+              "imdbId": "tt0023181",
+              "year": "1932",
+              "slug": "the-man-who-played-god-1932",
+              "grade": "D"
+            },
+            {
               "title": "So Big!",
               "imdbId": "tt0023491",
               "year": "1932",
@@ -4034,20 +4050,6 @@
               "year": "1932",
               "slug": "the-rich-are-always-with-us-1932",
               "grade": "D"
-            },
-            {
-              "title": "The Cabin in the Cotton",
-              "imdbId": "tt0022735",
-              "year": "1932",
-              "slug": "the-cabin-in-the-cotton-1932",
-              "grade": "D"
-            },
-            {
-              "title": "Three on a Match",
-              "imdbId": "tt0023590",
-              "year": "1932",
-              "slug": "three-on-a-match-1932",
-              "grade": "C+"
             }
           ]
         }
@@ -4104,13 +4106,13 @@
     "originalTitle": "Hatchet",
     "gradeValue": 6,
     "runtimeMinutes": 93,
-    "releaseSequence": "2006-??-??tt0422401",
+    "releaseSequence": "2006-04-27tt0422401",
     "directorNames": [
       "Adam Green"
     ],
     "principalCastNames": [
       "Joel David Moore",
-      "Tamara Feldman",
+      "Amara Zaragoza",
       "Deon Richmond",
       "Kane Hodder"
     ],
@@ -4184,7 +4186,7 @@
     "originalTitle": "Croupier",
     "gradeValue": 9,
     "runtimeMinutes": 94,
-    "releaseSequence": "1998-??-??tt0159382",
+    "releaseSequence": "1998-06-25tt0159382",
     "directorNames": [
       "Mike Hodges"
     ],
@@ -4269,7 +4271,7 @@
     "originalTitle": "Iron Man",
     "gradeValue": 6,
     "runtimeMinutes": 73,
-    "releaseSequence": "1931-04-30tt0022002",
+    "releaseSequence": "1931-04-28tt0022002",
     "directorNames": [
       "Tod Browning"
     ],
@@ -4499,7 +4501,7 @@
     "originalTitle": "Interstellar",
     "gradeValue": 4,
     "runtimeMinutes": 169,
-    "releaseSequence": "2014-11-07tt0816692",
+    "releaseSequence": "2014-10-26tt0816692",
     "directorNames": [
       "Christopher Nolan"
     ],
@@ -4576,7 +4578,7 @@
     "originalTitle": "Carrie",
     "gradeValue": 8,
     "runtimeMinutes": 98,
-    "releaseSequence": "1976-11-16tt0074285",
+    "releaseSequence": "1976-11-03tt0074285",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -4688,7 +4690,7 @@
     "originalTitle": "The Heavenly Body",
     "gradeValue": 2,
     "runtimeMinutes": 95,
-    "releaseSequence": "1944-04-01tt0035980",
+    "releaseSequence": "1944-03-23tt0035980",
     "directorNames": [
       "Alexander Hall"
     ],
@@ -4719,11 +4721,11 @@
           "slug": "william-powell",
           "titles": [
             {
-              "title": "The Key",
-              "imdbId": "tt0025346",
+              "title": "Fashions of 1934",
+              "imdbId": "tt0025101",
               "year": "1934",
-              "slug": "the-key-1934",
-              "grade": "D+"
+              "slug": "fashions-of-1934-1934",
+              "grade": "D"
             },
             {
               "title": "The Great Ziegfeld",
@@ -4801,7 +4803,7 @@
     "originalTitle": "The Dawn Patrol",
     "gradeValue": 8,
     "runtimeMinutes": 108,
-    "releaseSequence": "1930-08-20tt0020815",
+    "releaseSequence": "1930-07-10tt0020815",
     "directorNames": [
       "Howard Hawks"
     ],
@@ -5006,7 +5008,7 @@
     "originalTitle": "The Wrong Box",
     "gradeValue": 7,
     "runtimeMinutes": 105,
-    "releaseSequence": "1966-07-01tt0061204",
+    "releaseSequence": "1966-05-26tt0061204",
     "directorNames": [
       "Bryan Forbes"
     ],
@@ -5085,7 +5087,7 @@
     "originalTitle": "Bride of Chucky",
     "gradeValue": 5,
     "runtimeMinutes": 89,
-    "releaseSequence": "1998-10-16tt0144120",
+    "releaseSequence": "1998-10-15tt0144120",
     "directorNames": [
       "Ronny Yu"
     ],
@@ -5196,7 +5198,7 @@
     "originalTitle": "Ku bei",
     "gradeValue": 10,
     "runtimeMinutes": 99,
-    "releaseSequence": "2021-??-??tt13872248",
+    "releaseSequence": "2021-01-22tt13872248",
     "directorNames": [
       "Rob Jabbaz"
     ],
@@ -5276,7 +5278,7 @@
     "originalTitle": "A Walk Among the Tombstones",
     "gradeValue": 1,
     "runtimeMinutes": 114,
-    "releaseSequence": "2014-09-19tt0365907",
+    "releaseSequence": "2014-09-18tt0365907",
     "directorNames": [
       "Scott Frank"
     ],
@@ -5356,7 +5358,7 @@
     "originalTitle": "The Peanut Butter Solution",
     "gradeValue": 8,
     "runtimeMinutes": 93,
-    "releaseSequence": "1985-12-06tt0089789",
+    "releaseSequence": "1985-12-04tt0089789",
     "directorNames": [
       "Michael Rubbo"
     ],
@@ -5423,7 +5425,8 @@
     "slug": "bill-and-teds-bogus-journey-1991",
     "grade": "D+",
     "countries": [
-      "United States"
+      "United States",
+      "United Kingdom"
     ],
     "genres": [
       "Adventure",
@@ -5516,7 +5519,7 @@
     "originalTitle": "Child's Play",
     "gradeValue": 5,
     "runtimeMinutes": 90,
-    "releaseSequence": "2019-06-21tt8663516",
+    "releaseSequence": "2019-06-18tt8663516",
     "directorNames": [
       "Lars Klevberg"
     ],
@@ -5629,7 +5632,7 @@
     "originalTitle": "In the Company of Men",
     "gradeValue": 11,
     "runtimeMinutes": 97,
-    "releaseSequence": "1997-08-01tt0119361",
+    "releaseSequence": "1997-01-19tt0119361",
     "directorNames": [
       "Neil LaBute"
     ],
@@ -6033,7 +6036,7 @@
     "originalTitle": "The Deadly Companions",
     "gradeValue": 5,
     "runtimeMinutes": 93,
-    "releaseSequence": "1961-??-??tt0054795",
+    "releaseSequence": "1961-06-06tt0054795",
     "directorNames": [
       "Sam Peckinpah"
     ],
@@ -6117,7 +6120,7 @@
     "originalTitle": "The Blood on Satan's Claw",
     "gradeValue": 7,
     "runtimeMinutes": 97,
-    "releaseSequence": "1971-04-16tt0066849",
+    "releaseSequence": "1971-04-14tt0066849",
     "directorNames": [
       "Piers Haggard"
     ],
@@ -6195,7 +6198,7 @@
     "originalTitle": "Dagon",
     "gradeValue": 9,
     "runtimeMinutes": 98,
-    "releaseSequence": "2001-10-31tt0264508",
+    "releaseSequence": "2001-10-12tt0264508",
     "directorNames": [
       "Stuart Gordon"
     ],
@@ -6381,13 +6384,14 @@
     "genres": [
       "Action",
       "Fantasy",
-      "Horror"
+      "Horror",
+      "Sci-Fi"
     ],
     "sortTitle": "Phantasm: Ravager (2016)",
     "originalTitle": "Phantasm: Ravager",
     "gradeValue": 5,
     "runtimeMinutes": 85,
-    "releaseSequence": "2016-10-07tt3627704",
+    "releaseSequence": "2016-09-25tt3627704",
     "directorNames": [
       "David Hartman"
     ],
@@ -6580,7 +6584,7 @@
     "originalTitle": "Point Break",
     "gradeValue": 7,
     "runtimeMinutes": 122,
-    "releaseSequence": "1991-07-12tt0102685",
+    "releaseSequence": "1991-07-10tt0102685",
     "directorNames": [
       "Kathryn Bigelow"
     ],
@@ -6656,7 +6660,7 @@
     "originalTitle": "Nekromantik",
     "gradeValue": 2,
     "runtimeMinutes": 71,
-    "releaseSequence": "1988-??-??tt0093608",
+    "releaseSequence": "1988-01-29tt0093608",
     "directorNames": [
       "J\u00f6rg Buttgereit"
     ],
@@ -6823,8 +6827,7 @@
       "Action",
       "Fantasy",
       "Horror",
-      "Sci-Fi",
-      "Thriller"
+      "Sci-Fi"
     ],
     "sortTitle": "Phantasm II (1988)",
     "originalTitle": "Phantasm II",
@@ -6952,7 +6955,7 @@
     "originalTitle": "Hatchet II",
     "gradeValue": 5,
     "runtimeMinutes": 85,
-    "releaseSequence": "2010-11-01tt1270835",
+    "releaseSequence": "2010-08-26tt1270835",
     "directorNames": [
       "Adam Green"
     ],
@@ -7029,7 +7032,7 @@
     "originalTitle": "Ocean's Thirteen",
     "gradeValue": 11,
     "runtimeMinutes": 122,
-    "releaseSequence": "2007-06-08tt0496806",
+    "releaseSequence": "2007-05-24tt0496806",
     "directorNames": [
       "Steven Soderbergh"
     ],
@@ -7108,7 +7111,7 @@
     "originalTitle": "The New Mutants",
     "gradeValue": 3,
     "runtimeMinutes": 94,
-    "releaseSequence": "2020-08-28tt4682266",
+    "releaseSequence": "2020-08-26tt4682266",
     "directorNames": [
       "Josh Boone"
     ],
@@ -7261,7 +7264,7 @@
     "originalTitle": "Get to Know Your Rabbit",
     "gradeValue": 6,
     "runtimeMinutes": 91,
-    "releaseSequence": "1972-??-??tt0068637",
+    "releaseSequence": "1972-06-07tt0068637",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -7485,7 +7488,7 @@
     "originalTitle": "The Entity",
     "gradeValue": 4,
     "runtimeMinutes": 125,
-    "releaseSequence": "1982-??-??tt0082334",
+    "releaseSequence": "1982-09-30tt0082334",
     "directorNames": [
       "Sidney J. Furie"
     ],
@@ -7565,6 +7568,7 @@
       "Spain"
     ],
     "genres": [
+      "Horror",
       "Mystery",
       "Thriller"
     ],
@@ -7572,7 +7576,7 @@
     "originalTitle": "Una sull'altra",
     "gradeValue": 9,
     "runtimeMinutes": 108,
-    "releaseSequence": "1969-??-??tt0065148",
+    "releaseSequence": "1969-08-15tt0065148",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -7602,6 +7606,13 @@
           "slug": "lucio-fulci",
           "titles": [
             {
+              "title": "The New York Ripper",
+              "imdbId": "tt0084719",
+              "year": "1982",
+              "slug": "the-new-york-ripper-1982",
+              "grade": "B-"
+            },
+            {
               "title": "Massacre Time",
               "imdbId": "tt0061074",
               "year": "1966",
@@ -7621,13 +7632,6 @@
               "year": "1971",
               "slug": "a-lizard-in-a-womans-skin-1971",
               "grade": "C+"
-            },
-            {
-              "title": "Don't Torture a Duckling",
-              "imdbId": "tt0069019",
-              "year": "1972",
-              "slug": "dont-torture-a-duckling-1972",
-              "grade": "B-"
             }
           ]
         }
@@ -7683,7 +7687,7 @@
     "originalTitle": "The Great O'Malley",
     "gradeValue": 2,
     "runtimeMinutes": 71,
-    "releaseSequence": "1937-02-13tt0028955",
+    "releaseSequence": "1937-02-05tt0028955",
     "directorNames": [
       "William Dieterle"
     ],
@@ -8039,7 +8043,7 @@
     "originalTitle": "Get Out",
     "gradeValue": 10,
     "runtimeMinutes": 104,
-    "releaseSequence": "2017-02-24tt5052448",
+    "releaseSequence": "2017-01-23tt5052448",
     "directorNames": [
       "Jordan Peele"
     ],
@@ -8119,7 +8123,7 @@
     "originalTitle": "Una lucertola con la pelle di donna",
     "gradeValue": 7,
     "runtimeMinutes": 95,
-    "releaseSequence": "1971-??-??tt0067361",
+    "releaseSequence": "1971-02-18tt0067361",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -8149,18 +8153,18 @@
           "slug": "lucio-fulci",
           "titles": [
             {
-              "title": "The Conspiracy of Torture",
-              "imdbId": "tt0064073",
-              "year": "1969",
-              "slug": "the-conspiracy-of-torture-1969",
-              "grade": "B-"
-            },
-            {
               "title": "One on Top of the Other",
               "imdbId": "tt0065148",
               "year": "1969",
               "slug": "one-on-top-of-the-other-1969",
               "grade": "B"
+            },
+            {
+              "title": "The Conspiracy of Torture",
+              "imdbId": "tt0064073",
+              "year": "1969",
+              "slug": "the-conspiracy-of-torture-1969",
+              "grade": "B-"
             },
             {
               "title": "Don't Torture a Duckling",
@@ -8309,7 +8313,7 @@
     "originalTitle": "Hell Is for Heroes",
     "gradeValue": 9,
     "runtimeMinutes": 90,
-    "releaseSequence": "1962-06-26tt0056062",
+    "releaseSequence": "1962-??-??tt0056062",
     "directorNames": [
       "Don Siegel"
     ],
@@ -8423,7 +8427,7 @@
     "originalTitle": "The Vast of Night",
     "gradeValue": 7,
     "runtimeMinutes": 91,
-    "releaseSequence": "2019-??-??tt6803046",
+    "releaseSequence": "2019-01-26tt6803046",
     "directorNames": [],
     "principalCastNames": [
       "Sierra McCormick",
@@ -8497,7 +8501,7 @@
     "originalTitle": "Asylum",
     "gradeValue": 4,
     "runtimeMinutes": 88,
-    "releaseSequence": "1972-11-17tt0068230",
+    "releaseSequence": "1972-07-06tt0068230",
     "directorNames": [
       "Roy Ward Baker"
     ],
@@ -8816,7 +8820,7 @@
     "originalTitle": "The Big Stampede",
     "gradeValue": 3,
     "runtimeMinutes": 54,
-    "releaseSequence": "1932-10-08tt0022681",
+    "releaseSequence": "1932-09-29tt0022681",
     "directorNames": [
       "Tenny Wright"
     ],
@@ -8936,7 +8940,7 @@
     "originalTitle": "The Road to Singapore",
     "gradeValue": 8,
     "runtimeMinutes": 69,
-    "releaseSequence": "1931-10-10tt0022321",
+    "releaseSequence": "1931-09-02tt0022321",
     "directorNames": [
       "Alfred E. Green"
     ],
@@ -9176,7 +9180,7 @@
     "originalTitle": "M - Eine Stadt sucht einen M\u00f6rder",
     "gradeValue": 7,
     "runtimeMinutes": 99,
-    "releaseSequence": "1931-08-31tt0022100",
+    "releaseSequence": "1931-05-11tt0022100",
     "directorNames": [
       "Fritz Lang"
     ],
@@ -9256,7 +9260,7 @@
     "originalTitle": "Thriller - En grym film",
     "gradeValue": 8,
     "runtimeMinutes": 104,
-    "releaseSequence": "1973-??-??tt0072285",
+    "releaseSequence": "1973-05-01tt0072285",
     "directorNames": [
       "Bo Arne Vibenius"
     ],
@@ -9334,7 +9338,7 @@
     "originalTitle": "Chain Lightning",
     "gradeValue": 4,
     "runtimeMinutes": 94,
-    "releaseSequence": "1950-05-31tt0042324",
+    "releaseSequence": "1950-02-18tt0042324",
     "directorNames": [
       "Stuart Heisler"
     ],
@@ -9567,7 +9571,7 @@
     "originalTitle": "Curse of Chucky",
     "gradeValue": 7,
     "runtimeMinutes": 97,
-    "releaseSequence": "2013-09-24tt2230358",
+    "releaseSequence": "2013-08-02tt2230358",
     "directorNames": [
       "Don Mancini"
     ],
@@ -9681,7 +9685,7 @@
     "originalTitle": "Malignant",
     "gradeValue": 4,
     "runtimeMinutes": 111,
-    "releaseSequence": "2021-09-10tt3811906",
+    "releaseSequence": "2021-09-01tt3811906",
     "directorNames": [
       "James Wan"
     ],
@@ -9760,7 +9764,7 @@
     "originalTitle": "Saw IV",
     "gradeValue": 3,
     "runtimeMinutes": 93,
-    "releaseSequence": "2007-10-26tt0890870",
+    "releaseSequence": "2007-10-25tt0890870",
     "directorNames": [
       "Darren Lynn Bousman"
     ],
@@ -9871,7 +9875,7 @@
     "originalTitle": "Ride Lonesome",
     "gradeValue": 10,
     "runtimeMinutes": 73,
-    "releaseSequence": "1959-02-15tt0053220",
+    "releaseSequence": "1959-02-01tt0053220",
     "directorNames": [
       "Budd Boetticher"
     ],
@@ -10060,7 +10064,7 @@
     "originalTitle": "The Wedding Party",
     "gradeValue": 4,
     "runtimeMinutes": 92,
-    "releaseSequence": "1969-??-??tt0065198",
+    "releaseSequence": "1969-04-09tt0065198",
     "directorNames": [
       "Brian De Palma",
       "Wilford Leach",
@@ -10092,18 +10096,18 @@
           "slug": "brian-de-palma",
           "titles": [
             {
-              "title": "Greetings",
-              "imdbId": "tt0063036",
-              "year": "1968",
-              "slug": "greetings-1968",
-              "grade": "D"
-            },
-            {
               "title": "Murder \u00e0 la Mod",
               "imdbId": "tt0163114",
               "year": "1968",
               "slug": "murder-a-la-mod-1968",
               "grade": "B-"
+            },
+            {
+              "title": "Greetings",
+              "imdbId": "tt0063036",
+              "year": "1968",
+              "slug": "greetings-1968",
+              "grade": "D"
             },
             {
               "title": "Dionysus in '69",
@@ -10176,7 +10180,7 @@
     "originalTitle": "Hocus Pocus",
     "gradeValue": 1,
     "runtimeMinutes": 96,
-    "releaseSequence": "1993-07-16tt0107120",
+    "releaseSequence": "1993-07-10tt0107120",
     "directorNames": [
       "Kenny Ortega"
     ],
@@ -10253,7 +10257,7 @@
     "originalTitle": "Rio Bravo",
     "gradeValue": 13,
     "runtimeMinutes": 141,
-    "releaseSequence": "1959-04-04tt0053221",
+    "releaseSequence": "1959-03-18tt0053221",
     "directorNames": [
       "Howard Hawks"
     ],
@@ -10426,7 +10430,7 @@
     "originalTitle": "No Time to Die",
     "gradeValue": 3,
     "runtimeMinutes": 163,
-    "releaseSequence": "2021-10-08tt2382320",
+    "releaseSequence": "2021-09-28tt2382320",
     "directorNames": [
       "Cary Joji Fukunaga"
     ],
@@ -10538,7 +10542,7 @@
     "originalTitle": "Smart Money",
     "gradeValue": 7,
     "runtimeMinutes": 81,
-    "releaseSequence": "1931-07-11tt0022403",
+    "releaseSequence": "1931-06-11tt0022403",
     "directorNames": [
       "Alfred E. Green"
     ],
@@ -10615,7 +10619,7 @@
     "originalTitle": "Phantasm",
     "gradeValue": 11,
     "runtimeMinutes": 89,
-    "releaseSequence": "1979-03-28tt0079714",
+    "releaseSequence": "1979-??-??tt0079714",
     "directorNames": [
       "Don Coscarelli"
     ],
@@ -10744,7 +10748,7 @@
     "originalTitle": "King of the Underworld",
     "gradeValue": 4,
     "runtimeMinutes": 67,
-    "releaseSequence": "1939-01-14tt0031536",
+    "releaseSequence": "1939-01-07tt0031536",
     "directorNames": [
       "Lewis Seiler"
     ],
@@ -10860,7 +10864,7 @@
     "originalTitle": "Suspiria",
     "gradeValue": 4,
     "runtimeMinutes": 152,
-    "releaseSequence": "2018-11-02tt1034415",
+    "releaseSequence": "2018-09-01tt1034415",
     "directorNames": [
       "Luca Guadagnino"
     ],
@@ -10940,7 +10944,7 @@
     "originalTitle": "Harry Potter and the Chamber of Secrets",
     "gradeValue": 6,
     "runtimeMinutes": 161,
-    "releaseSequence": "2002-11-15tt0295297",
+    "releaseSequence": "2002-11-03tt0295297",
     "directorNames": [
       "Chris Columbus"
     ],
@@ -11134,7 +11138,7 @@
     "originalTitle": "Lords of Chaos",
     "gradeValue": 10,
     "runtimeMinutes": 118,
-    "releaseSequence": "2018-??-??tt4669296",
+    "releaseSequence": "2018-01-23tt4669296",
     "directorNames": [
       "Jonas \u00c5kerlund"
     ],
@@ -11297,7 +11301,7 @@
     "originalTitle": "Soft & Quiet",
     "gradeValue": 7,
     "runtimeMinutes": 92,
-    "releaseSequence": "2022-11-04tt14557188",
+    "releaseSequence": "2022-03-12tt14557188",
     "directorNames": [
       "Beth de Ara\u00fajo"
     ],
@@ -11376,7 +11380,7 @@
     "originalTitle": "The Angry Hills",
     "gradeValue": 3,
     "runtimeMinutes": 105,
-    "releaseSequence": "1959-07-29tt0052563",
+    "releaseSequence": "1959-02-19tt0052563",
     "directorNames": [
       "Robert Aldrich"
     ],
@@ -11487,7 +11491,7 @@
     "originalTitle": "The Devil Rides Out",
     "gradeValue": 9,
     "runtimeMinutes": 95,
-    "releaseSequence": "1968-08-01tt0062885",
+    "releaseSequence": "1968-07-20tt0062885",
     "directorNames": [
       "Terence Fisher"
     ],
@@ -11642,7 +11646,7 @@
     "originalTitle": "71 Fragmente einer Chronologie des Zufalls",
     "gradeValue": 7,
     "runtimeMinutes": 100,
-    "releaseSequence": "1994-??-??tt0109020",
+    "releaseSequence": "1994-05-18tt0109020",
     "directorNames": [
       "Michael Haneke"
     ],
@@ -11868,7 +11872,7 @@
     "originalTitle": "Paura nella citt\u00e0 dei morti viventi",
     "gradeValue": 10,
     "runtimeMinutes": 93,
-    "releaseSequence": "1980-??-??tt0081318",
+    "releaseSequence": "1980-08-11tt0081318",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -11980,7 +11984,7 @@
     "originalTitle": "No profanar el sue\u00f1o de los muertos",
     "gradeValue": 8,
     "runtimeMinutes": 95,
-    "releaseSequence": "1974-??-??tt0071431",
+    "releaseSequence": "1974-09-30tt0071431",
     "directorNames": [
       "Jorge Grau"
     ],
@@ -12060,7 +12064,7 @@
     "originalTitle": "The Dark Knight",
     "gradeValue": 11,
     "runtimeMinutes": 152,
-    "releaseSequence": "2008-07-18tt0468569",
+    "releaseSequence": "2008-07-14tt0468569",
     "directorNames": [
       "Christopher Nolan"
     ],
@@ -12149,7 +12153,7 @@
     "originalTitle": "Kill List",
     "gradeValue": 10,
     "runtimeMinutes": 95,
-    "releaseSequence": "2011-09-02tt1788391",
+    "releaseSequence": "2011-03-12tt1788391",
     "directorNames": [
       "Ben Wheatley"
     ],
@@ -12364,7 +12368,7 @@
     "originalTitle": "Piercing",
     "gradeValue": 9,
     "runtimeMinutes": 81,
-    "releaseSequence": "2018-??-??tt6516314",
+    "releaseSequence": "2018-01-20tt6516314",
     "directorNames": [
       "Nicolas Pesce"
     ],
@@ -12441,7 +12445,7 @@
     "originalTitle": "Cocaine Cowboys",
     "gradeValue": 1,
     "runtimeMinutes": 87,
-    "releaseSequence": "1979-??-??tt0078980",
+    "releaseSequence": "1979-10-05tt0078980",
     "directorNames": [
       "Ulli Lommel"
     ],
@@ -12508,7 +12512,12 @@
     "slug": "deadpool-2-2018",
     "grade": "B-",
     "countries": [
-      "United States"
+      "United States",
+      "New Zealand",
+      "Canada",
+      "Denmark",
+      "India",
+      "United Kingdom"
     ],
     "genres": [
       "Action",
@@ -12520,7 +12529,7 @@
     "originalTitle": "Deadpool 2",
     "gradeValue": 8,
     "runtimeMinutes": 119,
-    "releaseSequence": "2018-05-18tt5463162",
+    "releaseSequence": "2018-05-01tt5463162",
     "directorNames": [
       "David Leitch"
     ],
@@ -12598,14 +12607,16 @@
       "United States"
     ],
     "genres": [
+      "Drama",
       "Horror",
+      "Mystery",
       "Thriller"
     ],
     "sortTitle": "Halloween Ends (2022)",
     "originalTitle": "Halloween Ends",
     "gradeValue": 5,
     "runtimeMinutes": 111,
-    "releaseSequence": "2022-10-14tt10665342",
+    "releaseSequence": "2022-10-06tt10665342",
     "directorNames": [
       "David Gordon Green"
     ],
@@ -12719,7 +12730,7 @@
     "originalTitle": "Black Mass",
     "gradeValue": 4,
     "runtimeMinutes": 123,
-    "releaseSequence": "2015-09-18tt1355683",
+    "releaseSequence": "2015-09-04tt1355683",
     "directorNames": [
       "Scott Cooper"
     ],
@@ -13117,7 +13128,7 @@
     "originalTitle": "Heat",
     "gradeValue": 13,
     "runtimeMinutes": 170,
-    "releaseSequence": "1995-12-15tt0113277",
+    "releaseSequence": "1995-12-06tt0113277",
     "directorNames": [
       "Michael Mann"
     ],
@@ -13307,9 +13318,7 @@
     "slug": "bill-and-teds-excellent-adventure-1989",
     "grade": "B-",
     "countries": [
-      "United States",
-      "Canada",
-      "Italy"
+      "United States"
     ],
     "genres": [
       "Adventure",
@@ -13531,7 +13540,7 @@
     "originalTitle": "WolfCop",
     "gradeValue": 9,
     "runtimeMinutes": 79,
-    "releaseSequence": "2014-??-??tt2781516",
+    "releaseSequence": "2014-06-06tt2781516",
     "directorNames": [
       "Lowell Dean"
     ],
@@ -13625,7 +13634,7 @@
     "originalTitle": "Assault on Precinct 13",
     "gradeValue": 11,
     "runtimeMinutes": 91,
-    "releaseSequence": "1976-11-05tt0074156",
+    "releaseSequence": "1976-10-08tt0074156",
     "directorNames": [
       "John Carpenter"
     ],
@@ -13824,7 +13833,7 @@
     "originalTitle": "The Blue Gardenia",
     "gradeValue": 2,
     "runtimeMinutes": 90,
-    "releaseSequence": "1953-03-28tt0045564",
+    "releaseSequence": "1953-03-20tt0045564",
     "directorNames": [
       "Fritz Lang"
     ],
@@ -13905,7 +13914,7 @@
     "originalTitle": "Sightseers",
     "gradeValue": 9,
     "runtimeMinutes": 88,
-    "releaseSequence": "2012-??-??tt2023690",
+    "releaseSequence": "2012-05-23tt2023690",
     "directorNames": [
       "Ben Wheatley"
     ],
@@ -13991,7 +14000,7 @@
     "originalTitle": "Bone",
     "gradeValue": 9,
     "runtimeMinutes": 95,
-    "releaseSequence": "1972-??-??tt0068306",
+    "releaseSequence": "1972-07-01tt0068306",
     "directorNames": [
       "Larry Cohen"
     ],
@@ -14071,7 +14080,7 @@
     "originalTitle": "Dredd",
     "gradeValue": 10,
     "runtimeMinutes": 95,
-    "releaseSequence": "2012-09-21tt1343727",
+    "releaseSequence": "2012-07-11tt1343727",
     "directorNames": [
       "Pete Travis"
     ],
@@ -14158,7 +14167,7 @@
     "originalTitle": "X",
     "gradeValue": 7,
     "runtimeMinutes": 105,
-    "releaseSequence": "2022-03-18tt13560574",
+    "releaseSequence": "2022-03-13tt13560574",
     "directorNames": [
       "Ti West"
     ],
@@ -14236,7 +14245,7 @@
     "originalTitle": "Il grande silenzio",
     "gradeValue": 9,
     "runtimeMinutes": 105,
-    "releaseSequence": "1968-??-??tt0063032",
+    "releaseSequence": "1968-11-22tt0063032",
     "directorNames": [
       "Sergio Corbucci"
     ],
@@ -14312,7 +14321,7 @@
     "originalTitle": "The Slumber Party Massacre",
     "gradeValue": 4,
     "runtimeMinutes": 77,
-    "releaseSequence": "1982-11-12tt0084695",
+    "releaseSequence": "1982-01-01tt0084695",
     "directorNames": [
       "Amy Holden Jones"
     ],
@@ -14389,7 +14398,7 @@
     "originalTitle": "Can que",
     "gradeValue": 7,
     "runtimeMinutes": 104,
-    "releaseSequence": "1978-??-??tt0077292",
+    "releaseSequence": "1978-12-21tt0077292",
     "directorNames": [
       "Cheh Chang"
     ],
@@ -14501,7 +14510,7 @@
     "originalTitle": "The Life of Jimmy Dolan",
     "gradeValue": 7,
     "runtimeMinutes": 88,
-    "releaseSequence": "1933-06-03tt0024257",
+    "releaseSequence": "1933-06-02tt0024257",
     "directorNames": [
       "Archie Mayo"
     ],
@@ -14618,7 +14627,7 @@
     "originalTitle": "M\u00e4n som hatar kvinnor",
     "gradeValue": 7,
     "runtimeMinutes": 152,
-    "releaseSequence": "2009-??-??tt1132620",
+    "releaseSequence": "2009-02-27tt1132620",
     "directorNames": [
       "Niels Arden Oplev"
     ],
@@ -14755,11 +14764,11 @@
               "grade": "C"
             },
             {
-              "title": "Street of Chance",
-              "imdbId": "tt0021420",
+              "title": "Behind the Make-Up",
+              "imdbId": "tt0020677",
               "year": "1930",
-              "slug": "street-of-chance-1930",
-              "grade": "D+"
+              "slug": "behind-the-make-up-1930",
+              "grade": "C+"
             }
           ]
         }
@@ -14816,7 +14825,7 @@
     "originalTitle": "Halloween Kills",
     "gradeValue": 5,
     "runtimeMinutes": 105,
-    "releaseSequence": "2021-10-15tt10665338",
+    "releaseSequence": "2021-09-08tt10665338",
     "directorNames": [
       "David Gordon Green"
     ],
@@ -14931,7 +14940,7 @@
     "originalTitle": "Green Room",
     "gradeValue": 12,
     "runtimeMinutes": 95,
-    "releaseSequence": "2015-??-??tt4062536",
+    "releaseSequence": "2015-05-17tt4062536",
     "directorNames": [
       "Jeremy Saulnier"
     ],
@@ -15047,11 +15056,11 @@
           "slug": "lucio-fulci",
           "titles": [
             {
-              "title": "One on Top of the Other",
-              "imdbId": "tt0065148",
+              "title": "The Conspiracy of Torture",
+              "imdbId": "tt0064073",
               "year": "1969",
-              "slug": "one-on-top-of-the-other-1969",
-              "grade": "B"
+              "slug": "the-conspiracy-of-torture-1969",
+              "grade": "B-"
             },
             {
               "title": "A Lizard in a Woman's Skin",
@@ -15128,7 +15137,7 @@
     "originalTitle": "The Brat",
     "gradeValue": 2,
     "runtimeMinutes": 60,
-    "releaseSequence": "1931-09-20tt0021695",
+    "releaseSequence": "1931-08-23tt0021695",
     "directorNames": [
       "John Ford"
     ],
@@ -15240,7 +15249,7 @@
     "originalTitle": "The Conspiracy",
     "gradeValue": 7,
     "runtimeMinutes": 84,
-    "releaseSequence": "2012-??-??tt2330322",
+    "releaseSequence": "2012-09-21tt2330322",
     "directorNames": [
       "Christopher MacBride"
     ],
@@ -15329,7 +15338,7 @@
     "originalTitle": "The Endless",
     "gradeValue": 10,
     "runtimeMinutes": 111,
-    "releaseSequence": "2017-??-??tt3986820",
+    "releaseSequence": "2017-04-21tt3986820",
     "directorNames": [
       "Justin Benson",
       "Aaron Moorhead"
@@ -15529,7 +15538,7 @@
     "originalTitle": "Blue Ruin",
     "gradeValue": 10,
     "runtimeMinutes": 90,
-    "releaseSequence": "2013-??-??tt2359024",
+    "releaseSequence": "2013-05-17tt2359024",
     "directorNames": [
       "Jeremy Saulnier"
     ],
@@ -15685,7 +15694,7 @@
     "originalTitle": "Casablanca",
     "gradeValue": 13,
     "runtimeMinutes": 102,
-    "releaseSequence": "1942-??-??tt0034583",
+    "releaseSequence": "1942-11-26tt0034583",
     "directorNames": [
       "Michael Curtiz"
     ],
@@ -15797,7 +15806,7 @@
     "originalTitle": "Deliria",
     "gradeValue": 6,
     "runtimeMinutes": 90,
-    "releaseSequence": "1987-02-08tt0092576",
+    "releaseSequence": "1987-01-01tt0092576",
     "directorNames": [
       "Michele Soavi"
     ],
@@ -15877,7 +15886,7 @@
     "originalTitle": "The Hunt",
     "gradeValue": 9,
     "runtimeMinutes": 90,
-    "releaseSequence": "2020-03-13tt8244784",
+    "releaseSequence": "2020-03-11tt8244784",
     "directorNames": [
       "Craig Zobel"
     ],
@@ -15955,7 +15964,7 @@
     "originalTitle": "La frusta e il corpo",
     "gradeValue": 7,
     "runtimeMinutes": 87,
-    "releaseSequence": "1963-??-??tt0057078",
+    "releaseSequence": "1963-08-29tt0057078",
     "directorNames": [
       "Mario Bava"
     ],
@@ -16375,7 +16384,7 @@
     "originalTitle": "The Invisible Menace",
     "gradeValue": 3,
     "runtimeMinutes": 55,
-    "releaseSequence": "1938-01-22tt0030277",
+    "releaseSequence": "1938-01-11tt0030277",
     "directorNames": [
       "John Farrow"
     ],
@@ -16567,7 +16576,7 @@
     "originalTitle": "The Hills Have Eyes",
     "gradeValue": 5,
     "runtimeMinutes": 90,
-    "releaseSequence": "1977-07-22tt0077681",
+    "releaseSequence": "1977-06-15tt0077681",
     "directorNames": [
       "Wes Craven"
     ],
@@ -16680,7 +16689,7 @@
     "originalTitle": "Switchblade Sisters",
     "gradeValue": 5,
     "runtimeMinutes": 91,
-    "releaseSequence": "1975-??-??tt0073778",
+    "releaseSequence": "1975-04-18tt0073778",
     "directorNames": [
       "Jack Hill"
     ],
@@ -16870,7 +16879,7 @@
     "originalTitle": "Circus of Fear",
     "gradeValue": 6,
     "runtimeMinutes": 91,
-    "releaseSequence": "1966-??-??tt0060865",
+    "releaseSequence": "1966-04-29tt0060865",
     "directorNames": [
       "Werner Jacobs",
       "John Llewellyn Moxey"
@@ -16988,7 +16997,7 @@
     "originalTitle": "The One I Love",
     "gradeValue": 9,
     "runtimeMinutes": 91,
-    "releaseSequence": "2014-08-08tt2756032",
+    "releaseSequence": "2014-01-21tt2756032",
     "directorNames": [
       "Charlie McDowell"
     ],
@@ -17067,7 +17076,7 @@
     "originalTitle": "Logan",
     "gradeValue": 9,
     "runtimeMinutes": 137,
-    "releaseSequence": "2017-03-03tt3315342",
+    "releaseSequence": "2017-02-17tt3315342",
     "directorNames": [
       "James Mangold"
     ],
@@ -17231,12 +17240,12 @@
     "originalTitle": "Cure",
     "gradeValue": 7,
     "runtimeMinutes": 111,
-    "releaseSequence": "1997-??-??tt0123948",
+    "releaseSequence": "1997-11-06tt0123948",
     "directorNames": [
       "Kiyoshi Kurosawa"
     ],
     "principalCastNames": [
-      "K\u00f4ji Yakusho",
+      "Koji Yakusho",
       "Masato Hagiwara",
       "Tsuyoshi Ujiki",
       "Anna Nakagawa"
@@ -17309,7 +17318,7 @@
     "originalTitle": "Saw",
     "gradeValue": 8,
     "runtimeMinutes": 103,
-    "releaseSequence": "2004-10-29tt0387564",
+    "releaseSequence": "2004-01-19tt0387564",
     "directorNames": [
       "James Wan"
     ],
@@ -17422,7 +17431,7 @@
     "originalTitle": "His House",
     "gradeValue": 6,
     "runtimeMinutes": 93,
-    "releaseSequence": "2020-10-30tt8508734",
+    "releaseSequence": "2020-01-27tt8508734",
     "directorNames": [
       "Remi Weekes"
     ],
@@ -17489,7 +17498,8 @@
     "slug": "captain-america-civil-war-2016",
     "grade": "B+",
     "countries": [
-      "United States"
+      "United States",
+      "Germany"
     ],
     "genres": [
       "Action",
@@ -17499,7 +17509,7 @@
     "originalTitle": "Captain America: Civil War",
     "gradeValue": 10,
     "runtimeMinutes": 147,
-    "releaseSequence": "2016-05-06tt3498820",
+    "releaseSequence": "2016-04-12tt3498820",
     "directorNames": [
       "Anthony Russo",
       "Joe Russo"
@@ -17672,7 +17682,7 @@
     "originalTitle": "Fronti\u00e8re(s)",
     "gradeValue": 5,
     "runtimeMinutes": 108,
-    "releaseSequence": "2007-??-??tt0814685",
+    "releaseSequence": "2007-07-01tt0814685",
     "directorNames": [
       "Xavier Gens"
     ],
@@ -17748,7 +17758,7 @@
     "originalTitle": "Arrowsmith",
     "gradeValue": 4,
     "runtimeMinutes": 108,
-    "releaseSequence": "1931-12-26tt0021622",
+    "releaseSequence": "1931-12-07tt0021622",
     "directorNames": [
       "John Ford"
     ],
@@ -18001,7 +18011,7 @@
     "originalTitle": "D\u00f8d sn\u00f8 2",
     "gradeValue": 7,
     "runtimeMinutes": 100,
-    "releaseSequence": "2014-10-07tt2832470",
+    "releaseSequence": "2014-01-19tt2832470",
     "directorNames": [
       "Tommy Wirkola"
     ],
@@ -18087,7 +18097,7 @@
     "originalTitle": "Black Christmas",
     "gradeValue": 10,
     "runtimeMinutes": 98,
-    "releaseSequence": "1974-12-20tt0071222",
+    "releaseSequence": "1974-10-11tt0071222",
     "directorNames": [
       "Bob Clark"
     ],
@@ -18219,13 +18229,6 @@
               "grade": "F"
             },
             {
-              "title": "Five Star Final",
-              "imdbId": "tt0021873",
-              "year": "1931",
-              "slug": "five-star-final-1931",
-              "grade": "D+"
-            },
-            {
               "title": "Frankenstein",
               "imdbId": "tt0021884",
               "year": "1931",
@@ -18238,6 +18241,13 @@
               "year": "1931",
               "slug": "tonight-or-never-1931",
               "grade": "D+"
+            },
+            {
+              "title": "Behind the Mask",
+              "imdbId": "tt0022663",
+              "year": "1932",
+              "slug": "behind-the-mask-1932",
+              "grade": "C-"
             }
           ]
         }
@@ -18293,7 +18303,7 @@
     "originalTitle": "The Boogie Man Will Get You",
     "gradeValue": 4,
     "runtimeMinutes": 66,
-    "releaseSequence": "1942-??-??tt0034540",
+    "releaseSequence": "1942-10-22tt0034540",
     "directorNames": [
       "Lew Landers"
     ],
@@ -18651,7 +18661,7 @@
     "originalTitle": "It Follows",
     "gradeValue": 3,
     "runtimeMinutes": 100,
-    "releaseSequence": "2014-??-??tt3235888",
+    "releaseSequence": "2014-05-17tt3235888",
     "directorNames": [
       "David Robert Mitchell"
     ],
@@ -18729,7 +18739,7 @@
     "originalTitle": "Rituals",
     "gradeValue": 6,
     "runtimeMinutes": 100,
-    "releaseSequence": "1977-??-??tt0076630",
+    "releaseSequence": "1977-07-21tt0076630",
     "directorNames": [
       "Peter Carter"
     ],
@@ -18806,7 +18816,7 @@
     "originalTitle": "Scarface",
     "gradeValue": 11,
     "runtimeMinutes": 170,
-    "releaseSequence": "1983-12-09tt0086250",
+    "releaseSequence": "1983-12-01tt0086250",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -18857,11 +18867,11 @@
               "grade": "D"
             },
             {
-              "title": "Greetings",
-              "imdbId": "tt0063036",
+              "title": "Murder \u00e0 la Mod",
+              "imdbId": "tt0163114",
               "year": "1968",
-              "slug": "greetings-1968",
-              "grade": "D"
+              "slug": "murder-a-la-mod-1968",
+              "grade": "B-"
             }
           ]
         }
@@ -18920,7 +18930,7 @@
     "originalTitle": "They Drive by Night",
     "gradeValue": 7,
     "runtimeMinutes": 95,
-    "releaseSequence": "1940-08-03tt0033149",
+    "releaseSequence": "1940-07-26tt0033149",
     "directorNames": [
       "Raoul Walsh"
     ],
@@ -19040,7 +19050,7 @@
     "originalTitle": "L'ultimo treno della notte",
     "gradeValue": 8,
     "runtimeMinutes": 94,
-    "releaseSequence": "1975-??-??tt0073836",
+    "releaseSequence": "1975-04-08tt0073836",
     "directorNames": [
       "Aldo Lado"
     ],
@@ -19118,7 +19128,7 @@
     "originalTitle": "British Intelligence",
     "gradeValue": 3,
     "runtimeMinutes": 61,
-    "releaseSequence": "1939-??-??tt0032283",
+    "releaseSequence": "1939-11-10tt0032283",
     "directorNames": [
       "Terry O. Morse"
     ],
@@ -19353,7 +19363,7 @@
     "originalTitle": "Crimes of the Future",
     "gradeValue": 4,
     "runtimeMinutes": 63,
-    "releaseSequence": "1970-??-??tt0065591",
+    "releaseSequence": "1970-06-01tt0065591",
     "directorNames": [
       "David Cronenberg"
     ],
@@ -19465,7 +19475,7 @@
     "originalTitle": "Cathy's Curse",
     "gradeValue": 1,
     "runtimeMinutes": 82,
-    "releaseSequence": "1977-??-??tt0075820",
+    "releaseSequence": "1977-07-29tt0075820",
     "directorNames": [
       "Eddy Matalon"
     ],
@@ -19542,7 +19552,7 @@
     "originalTitle": "Kvinnors v\u00e4ntan",
     "gradeValue": 5,
     "runtimeMinutes": 107,
-    "releaseSequence": "1952-??-??tt0044811",
+    "releaseSequence": "1952-11-03tt0044811",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -19655,7 +19665,7 @@
     "originalTitle": "Sisters",
     "gradeValue": 7,
     "runtimeMinutes": 93,
-    "releaseSequence": "1972-??-??tt0070698",
+    "releaseSequence": "1972-11-18tt0070698",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -19767,7 +19777,7 @@
     "originalTitle": "Five Star Final",
     "gradeValue": 4,
     "runtimeMinutes": 89,
-    "releaseSequence": "1931-09-26tt0021873",
+    "releaseSequence": "1931-09-10tt0021873",
     "directorNames": [
       "Mervyn LeRoy"
     ],
@@ -19798,6 +19808,13 @@
           "slug": "boris-karloff",
           "titles": [
             {
+              "title": "Cracked Nuts",
+              "imdbId": "tt0021768",
+              "year": "1931",
+              "slug": "cracked-nuts-1931",
+              "grade": "D"
+            },
+            {
               "title": "The Public Defender",
               "imdbId": "tt0022285",
               "year": "1931",
@@ -19810,13 +19827,6 @@
               "year": "1931",
               "slug": "i-like-your-nerve-1931",
               "grade": "F"
-            },
-            {
-              "title": "The Guilty Generation",
-              "imdbId": "tt0021932",
-              "year": "1931",
-              "slug": "the-guilty-generation-1931",
-              "grade": "C"
             },
             {
               "title": "Frankenstein",
@@ -19878,7 +19888,7 @@
     "originalTitle": "And Now the Screaming Starts!",
     "gradeValue": 4,
     "runtimeMinutes": 91,
-    "releaseSequence": "1973-??-??tt0069715",
+    "releaseSequence": "1973-04-27tt0069715",
     "directorNames": [
       "Roy Ward Baker"
     ],
@@ -20049,11 +20059,11 @@
               "grade": "D+"
             },
             {
-              "title": "Fashions of 1934",
-              "imdbId": "tt0025101",
+              "title": "The Thin Man",
+              "imdbId": "tt0025878",
               "year": "1934",
-              "slug": "fashions-of-1934-1934",
-              "grade": "D"
+              "slug": "the-thin-man-1934",
+              "grade": "B+"
             }
           ]
         }
@@ -20231,7 +20241,7 @@
     "originalTitle": "Kamera o tomeru na!",
     "gradeValue": 8,
     "runtimeMinutes": 96,
-    "releaseSequence": "2017-??-??tt7914416",
+    "releaseSequence": "2017-11-04tt7914416",
     "directorNames": [
       "Shin'ichir\u00f4 Ueda"
     ],
@@ -20386,7 +20396,7 @@
     "originalTitle": "The Benson Murder Case",
     "gradeValue": 6,
     "runtimeMinutes": 65,
-    "releaseSequence": "1930-04-13tt0020679",
+    "releaseSequence": "1930-04-12tt0020679",
     "directorNames": [
       "Frank Tuttle"
     ],
@@ -20417,18 +20427,18 @@
           "slug": "william-powell",
           "titles": [
             {
-              "title": "Street of Chance",
-              "imdbId": "tt0021420",
-              "year": "1930",
-              "slug": "street-of-chance-1930",
-              "grade": "D+"
-            },
-            {
               "title": "Behind the Make-Up",
               "imdbId": "tt0020677",
               "year": "1930",
               "slug": "behind-the-make-up-1930",
               "grade": "C+"
+            },
+            {
+              "title": "Street of Chance",
+              "imdbId": "tt0021420",
+              "year": "1930",
+              "slug": "street-of-chance-1930",
+              "grade": "D+"
             },
             {
               "title": "Shadow of the Law",
@@ -20501,7 +20511,7 @@
     "originalTitle": "Kingsman: The Secret Service",
     "gradeValue": 7,
     "runtimeMinutes": 129,
-    "releaseSequence": "2014-??-??tt2802144",
+    "releaseSequence": "2014-12-13tt2802144",
     "directorNames": [
       "Matthew Vaughn"
     ],
@@ -20580,7 +20590,7 @@
     "originalTitle": "Bullets or Ballots",
     "gradeValue": 5,
     "runtimeMinutes": 82,
-    "releaseSequence": "1936-06-06tt0027407",
+    "releaseSequence": "1936-05-26tt0027407",
     "directorNames": [
       "William Keighley"
     ],
@@ -20691,7 +20701,7 @@
     "originalTitle": "High Pressure",
     "gradeValue": 5,
     "runtimeMinutes": 73,
-    "releaseSequence": "1932-01-30tt0023007",
+    "releaseSequence": "1932-01-10tt0023007",
     "directorNames": [
       "Mervyn LeRoy"
     ],
@@ -20814,7 +20824,7 @@
     "originalTitle": "Murder, My Sweet",
     "gradeValue": 8,
     "runtimeMinutes": 95,
-    "releaseSequence": "1944-??-??tt0037101",
+    "releaseSequence": "1944-12-14tt0037101",
     "directorNames": [
       "Edward Dmytryk"
     ],
@@ -20894,7 +20904,7 @@
     "originalTitle": "Palm Springs",
     "gradeValue": 7,
     "runtimeMinutes": 90,
-    "releaseSequence": "2020-07-10tt9484998",
+    "releaseSequence": "2020-01-26tt9484998",
     "directorNames": [
       "Max Barbakow"
     ],
@@ -21049,7 +21059,7 @@
     "originalTitle": "Ant-Man",
     "gradeValue": 4,
     "runtimeMinutes": 117,
-    "releaseSequence": "2015-07-17tt0478970",
+    "releaseSequence": "2015-06-29tt0478970",
     "directorNames": [
       "Peyton Reed"
     ],
@@ -21136,7 +21146,7 @@
     "originalTitle": "Don't Breathe",
     "gradeValue": 3,
     "runtimeMinutes": 88,
-    "releaseSequence": "2016-08-26tt4160708",
+    "releaseSequence": "2016-03-12tt4160708",
     "directorNames": [
       "Fede Alvarez"
     ],
@@ -21216,7 +21226,7 @@
     "originalTitle": "Crimes of the Future",
     "gradeValue": 8,
     "runtimeMinutes": 107,
-    "releaseSequence": "2022-05-25tt14549466",
+    "releaseSequence": "2022-05-23tt14549466",
     "directorNames": [
       "David Cronenberg"
     ],
@@ -21246,18 +21256,18 @@
           "slug": "david-cronenberg",
           "titles": [
             {
-              "title": "The Brood",
-              "imdbId": "tt0078908",
-              "year": "1979",
-              "slug": "the-brood-1979",
-              "grade": "D-"
-            },
-            {
               "title": "Fast Company",
               "imdbId": "tt0079138",
               "year": "1979",
               "slug": "fast-company-1979",
               "grade": "C"
+            },
+            {
+              "title": "The Brood",
+              "imdbId": "tt0078908",
+              "year": "1979",
+              "slug": "the-brood-1979",
+              "grade": "D-"
             },
             {
               "title": "Stereo",
@@ -21329,7 +21339,7 @@
     "originalTitle": "Breakfast at Tiffany's",
     "gradeValue": 10,
     "runtimeMinutes": 115,
-    "releaseSequence": "1961-10-06tt0054698",
+    "releaseSequence": "1961-10-05tt0054698",
     "directorNames": [
       "Blake Edwards"
     ],
@@ -21408,7 +21418,7 @@
     "originalTitle": "Saint Maud",
     "gradeValue": 6,
     "runtimeMinutes": 84,
-    "releaseSequence": "2019-??-??tt7557108",
+    "releaseSequence": "2019-09-08tt7557108",
     "directorNames": [
       "Rose Glass"
     ],
@@ -21487,7 +21497,7 @@
     "originalTitle": "Prisoners of the Ghostland",
     "gradeValue": 6,
     "runtimeMinutes": 103,
-    "releaseSequence": "2021-09-17tt6372694",
+    "releaseSequence": "2021-01-31tt6372694",
     "directorNames": [
       "Sion Sono"
     ],
@@ -21565,7 +21575,7 @@
     "originalTitle": "Weekend at Bernie's",
     "gradeValue": 4,
     "runtimeMinutes": 97,
-    "releaseSequence": "1989-07-05tt0098627",
+    "releaseSequence": "1989-02-09tt0098627",
     "directorNames": [
       "Ted Kotcheff"
     ],
@@ -21724,7 +21734,7 @@
     "originalTitle": "Dune: Part One",
     "gradeValue": 6,
     "runtimeMinutes": 155,
-    "releaseSequence": "2021-10-22tt1160419",
+    "releaseSequence": "2021-09-03tt1160419",
     "directorNames": [
       "Denis Villeneuve"
     ],
@@ -21800,7 +21810,7 @@
     "originalTitle": "Dionysus in '69",
     "gradeValue": 1,
     "runtimeMinutes": 85,
-    "releaseSequence": "1970-??-??tt0065641",
+    "releaseSequence": "1970-03-22tt0065641",
     "directorNames": [
       "Brian De Palma",
       "Richard Schechner"
@@ -21831,11 +21841,11 @@
           "slug": "brian-de-palma",
           "titles": [
             {
-              "title": "Murder \u00e0 la Mod",
-              "imdbId": "tt0163114",
+              "title": "Greetings",
+              "imdbId": "tt0063036",
               "year": "1968",
-              "slug": "murder-a-la-mod-1968",
-              "grade": "B-"
+              "slug": "greetings-1968",
+              "grade": "D"
             },
             {
               "title": "The Wedding Party",
@@ -21914,7 +21924,7 @@
     "originalTitle": "Murder!",
     "gradeValue": 6,
     "runtimeMinutes": 92,
-    "releaseSequence": "1930-11-24tt0021165",
+    "releaseSequence": "1930-07-31tt0021165",
     "directorNames": [
       "Alfred Hitchcock"
     ],
@@ -22027,7 +22037,7 @@
     "originalTitle": "It Should Happen to You",
     "gradeValue": 1,
     "runtimeMinutes": 86,
-    "releaseSequence": "1954-03-01tt0047123",
+    "releaseSequence": "1954-01-15tt0047123",
     "directorNames": [
       "George Cukor"
     ],
@@ -22105,7 +22115,7 @@
     "originalTitle": "The Mad Genius",
     "gradeValue": 5,
     "runtimeMinutes": 81,
-    "releaseSequence": "1931-11-07tt0022103",
+    "releaseSequence": "1931-09-30tt0022103",
     "directorNames": [
       "Michael Curtiz"
     ],
@@ -22183,7 +22193,7 @@
     "originalTitle": "Street of Chance",
     "gradeValue": 4,
     "runtimeMinutes": 75,
-    "releaseSequence": "1930-02-08tt0021420",
+    "releaseSequence": "1930-01-26tt0021420",
     "directorNames": [
       "John Cromwell"
     ],
@@ -22222,13 +22232,6 @@
           "slug": "william-powell",
           "titles": [
             {
-              "title": "Pointed Heels",
-              "imdbId": "tt0020278",
-              "year": "1929",
-              "slug": "pointed-heels-1929",
-              "grade": "D"
-            },
-            {
               "title": "The Canary Murder Case",
               "imdbId": "tt0019745",
               "year": "1929",
@@ -22248,6 +22251,13 @@
               "year": "1930",
               "slug": "the-benson-murder-case-1930",
               "grade": "C"
+            },
+            {
+              "title": "Shadow of the Law",
+              "imdbId": "tt0021359",
+              "year": "1930",
+              "slug": "shadow-of-the-law-1930",
+              "grade": "C+"
             }
           ]
         }
@@ -22304,7 +22314,7 @@
     "originalTitle": "Seas Beneath",
     "gradeValue": 4,
     "runtimeMinutes": 90,
-    "releaseSequence": "1931-03-29tt0022353",
+    "releaseSequence": "1931-01-30tt0022353",
     "directorNames": [
       "John Ford"
     ],
@@ -22416,7 +22426,7 @@
     "originalTitle": "French Dressing",
     "gradeValue": 5,
     "runtimeMinutes": 86,
-    "releaseSequence": "1964-09-11tt0057073",
+    "releaseSequence": "1964-04-10tt0057073",
     "directorNames": [
       "Ken Russell"
     ],
@@ -22494,7 +22504,7 @@
     "originalTitle": "Halloween",
     "gradeValue": 10,
     "runtimeMinutes": 106,
-    "releaseSequence": "2018-10-19tt1502407",
+    "releaseSequence": "2018-09-08tt1502407",
     "directorNames": [
       "David Gordon Green"
     ],
@@ -22615,7 +22625,7 @@
     "originalTitle": "The Carey Treatment",
     "gradeValue": 8,
     "runtimeMinutes": 101,
-    "releaseSequence": "1972-07-02tt0068337",
+    "releaseSequence": "1972-03-29tt0068337",
     "directorNames": [
       "Blake Edwards"
     ],
@@ -22728,15 +22738,15 @@
     "originalTitle": "Busanhaeng",
     "gradeValue": 5,
     "runtimeMinutes": 118,
-    "releaseSequence": "2016-07-20tt5700672",
+    "releaseSequence": "2016-05-13tt5700672",
     "directorNames": [
-      "Sang-ho Yeon"
+      "Yeon Sang-ho"
     ],
     "principalCastNames": [
       "Gong Yoo",
       "Jung Yu-mi",
       "Ma Dong-seok",
-      "Su-an Kim"
+      "Kim Su-an"
     ],
     "reviewDate": "2021-03-08",
     "reviewYear": "2021",
@@ -22809,7 +22819,7 @@
     "originalTitle": "Fuzz",
     "gradeValue": 6,
     "runtimeMinutes": 92,
-    "releaseSequence": "1972-10-12tt0068617",
+    "releaseSequence": "1972-07-14tt0068617",
     "directorNames": [
       "Richard A. Colla"
     ],
@@ -22887,7 +22897,7 @@
     "originalTitle": "Bob le flambeur",
     "gradeValue": 8,
     "runtimeMinutes": 98,
-    "releaseSequence": "1956-??-??tt0047892",
+    "releaseSequence": "1956-08-24tt0047892",
     "directorNames": [
       "Jean-Pierre Melville"
     ],
@@ -23153,7 +23163,7 @@
     "originalTitle": "Corridor of Mirrors",
     "gradeValue": 4,
     "runtimeMinutes": 96,
-    "releaseSequence": "1948-07-24tt0040246",
+    "releaseSequence": "1948-02-23tt0040246",
     "directorNames": [
       "Terence Young"
     ],
@@ -23345,7 +23355,7 @@
     "originalTitle": "Blow Out",
     "gradeValue": 8,
     "runtimeMinutes": 108,
-    "releaseSequence": "1981-07-24tt0082085",
+    "releaseSequence": "1981-07-07tt0082085",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -23458,7 +23468,7 @@
     "originalTitle": "Benny's Video",
     "gradeValue": 11,
     "runtimeMinutes": 110,
-    "releaseSequence": "1992-??-??tt0103793",
+    "releaseSequence": "1992-05-13tt0103793",
     "directorNames": [
       "Michael Haneke"
     ],
@@ -23572,7 +23582,7 @@
     "originalTitle": "The Three Musketeers",
     "gradeValue": 3,
     "runtimeMinutes": 125,
-    "releaseSequence": "1948-10-20tt0040876",
+    "releaseSequence": "1948-10-19tt0040876",
     "directorNames": [
       "George Sidney"
     ],
@@ -23806,7 +23816,7 @@
     "originalTitle": "Dark Phoenix",
     "gradeValue": 4,
     "runtimeMinutes": 113,
-    "releaseSequence": "2019-06-07tt6565702",
+    "releaseSequence": "2019-06-04tt6565702",
     "directorNames": [
       "Simon Kinberg"
     ],
@@ -23883,7 +23893,7 @@
     "originalTitle": "N\u00f3z w wodzie",
     "gradeValue": 9,
     "runtimeMinutes": 94,
-    "releaseSequence": "1962-??-??tt0056291",
+    "releaseSequence": "1962-03-09tt0056291",
     "directorNames": [
       "Roman Polanski"
     ],
@@ -24078,7 +24088,7 @@
     "originalTitle": "House of 1000 Corpses",
     "gradeValue": 5,
     "runtimeMinutes": 89,
-    "releaseSequence": "2003-04-11tt0251736",
+    "releaseSequence": "2003-03-13tt0251736",
     "directorNames": [
       "Rob Zombie"
     ],
@@ -24451,7 +24461,7 @@
     "originalTitle": "Wrath of Man",
     "gradeValue": 8,
     "runtimeMinutes": 119,
-    "releaseSequence": "2021-05-07tt11083552",
+    "releaseSequence": "2021-04-22tt11083552",
     "directorNames": [
       "Guy Ritchie"
     ],
@@ -24530,7 +24540,7 @@
     "originalTitle": "Guardians of the Galaxy Vol. 2",
     "gradeValue": 7,
     "runtimeMinutes": 136,
-    "releaseSequence": "2017-05-05tt3896198",
+    "releaseSequence": "2017-04-10tt3896198",
     "directorNames": [
       "James Gunn"
     ],
@@ -24728,7 +24738,7 @@
     "originalTitle": "Frankenhooker",
     "gradeValue": 8,
     "runtimeMinutes": 85,
-    "releaseSequence": "1990-06-01tt0099611",
+    "releaseSequence": "1990-04-01tt0099611",
     "directorNames": [
       "Frank Henenlotter"
     ],
@@ -24812,7 +24822,7 @@
     "originalTitle": "Musik i m\u00f6rker",
     "gradeValue": 4,
     "runtimeMinutes": 87,
-    "releaseSequence": "1948-??-??tt0040622",
+    "releaseSequence": "1948-01-17tt0040622",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -24842,6 +24852,13 @@
           "slug": "ingmar-bergman",
           "titles": [
             {
+              "title": "It Rains on Our Love",
+              "imdbId": "tt0038468",
+              "year": "1946",
+              "slug": "it-rains-on-our-love-1946",
+              "grade": "B"
+            },
+            {
               "title": "A Ship to India",
               "imdbId": "tt0039834",
               "year": "1947",
@@ -24861,13 +24878,6 @@
               "year": "1949",
               "slug": "prison-1949",
               "grade": "D+"
-            },
-            {
-              "title": "Thirst",
-              "imdbId": "tt0041998",
-              "year": "1949",
-              "slug": "thirst-1949",
-              "grade": "F"
             }
           ]
         }
@@ -24924,7 +24934,7 @@
     "originalTitle": "Yellowstone Kelly",
     "gradeValue": 6,
     "runtimeMinutes": 91,
-    "releaseSequence": "1959-12-11tt0053457",
+    "releaseSequence": "1959-11-11tt0053457",
     "directorNames": [
       "Gordon Douglas"
     ],
@@ -24969,18 +24979,18 @@
               "grade": "B-"
             },
             {
-              "title": "Private Property",
-              "imdbId": "tt0054209",
-              "year": "1960",
-              "slug": "private-property-1960",
-              "grade": "D+"
-            },
-            {
               "title": "The Rise and Fall of Legs Diamond",
               "imdbId": "tt0054243",
               "year": "1960",
               "slug": "the-rise-and-fall-of-legs-diamond-1960",
               "grade": "C+"
+            },
+            {
+              "title": "Private Property",
+              "imdbId": "tt0054209",
+              "year": "1960",
+              "slug": "private-property-1960",
+              "grade": "D+"
             }
           ]
         }
@@ -25216,8 +25226,7 @@
     "slug": "childs-play-3-1991",
     "grade": "D+",
     "countries": [
-      "United States",
-      "United Kingdom"
+      "United States"
     ],
     "genres": [
       "Horror",
@@ -25333,13 +25342,14 @@
     ],
     "genres": [
       "Drama",
-      "History"
+      "History",
+      "Horror"
     ],
     "sortTitle": "Conspiracy of Torture (1969)",
     "originalTitle": "Beatrice Cenci",
     "gradeValue": 8,
     "runtimeMinutes": 84,
-    "releaseSequence": "1969-??-??tt0064073",
+    "releaseSequence": "1969-11-14tt0064073",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -25369,13 +25379,6 @@
           "slug": "lucio-fulci",
           "titles": [
             {
-              "title": "The New York Ripper",
-              "imdbId": "tt0084719",
-              "year": "1982",
-              "slug": "the-new-york-ripper-1982",
-              "grade": "B-"
-            },
-            {
               "title": "Massacre Time",
               "imdbId": "tt0061074",
               "year": "1966",
@@ -25395,6 +25398,13 @@
               "year": "1971",
               "slug": "a-lizard-in-a-womans-skin-1971",
               "grade": "C+"
+            },
+            {
+              "title": "Don't Torture a Duckling",
+              "imdbId": "tt0069019",
+              "year": "1972",
+              "slug": "dont-torture-a-duckling-1972",
+              "grade": "B-"
             }
           ]
         }
@@ -25454,7 +25464,7 @@
     "originalTitle": "Possessor",
     "gradeValue": 9,
     "runtimeMinutes": 103,
-    "releaseSequence": "2020-10-02tt5918982",
+    "releaseSequence": "2020-01-25tt5918982",
     "directorNames": [
       "Brandon Cronenberg"
     ],
@@ -25682,7 +25692,7 @@
     "originalTitle": "F\u00e4ngelse",
     "gradeValue": 4,
     "runtimeMinutes": 79,
-    "releaseSequence": "1949-??-??tt0041399",
+    "releaseSequence": "1949-03-19tt0041399",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -25712,17 +25722,17 @@
           "slug": "ingmar-bergman",
           "titles": [
             {
-              "title": "Port of Call",
-              "imdbId": "tt0040418",
-              "year": "1948",
-              "slug": "port-of-call-1948",
-              "grade": "D+"
-            },
-            {
               "title": "Music in Darkness",
               "imdbId": "tt0040622",
               "year": "1948",
               "slug": "music-in-darkness-1948",
+              "grade": "D+"
+            },
+            {
+              "title": "Port of Call",
+              "imdbId": "tt0040418",
+              "year": "1948",
+              "slug": "port-of-call-1948",
               "grade": "D+"
             },
             {
@@ -25909,7 +25919,7 @@
     "originalTitle": "Doctor Strange in the Multiverse of Madness",
     "gradeValue": 8,
     "runtimeMinutes": 126,
-    "releaseSequence": "2022-05-06tt9419884",
+    "releaseSequence": "2022-05-02tt9419884",
     "directorNames": [
       "Sam Raimi"
     ],
@@ -25988,14 +25998,14 @@
     "originalTitle": "24 Hour Party People",
     "gradeValue": 10,
     "runtimeMinutes": 117,
-    "releaseSequence": "2002-09-20tt0274309",
+    "releaseSequence": "2002-02-13tt0274309",
     "directorNames": [
       "Michael Winterbottom"
     ],
     "principalCastNames": [
       "Steve Coogan",
       "John Thomson",
-      "Nigel Pivaro",
+      "Paul Popplewell",
       "Lennie James"
     ],
     "reviewDate": "2021-08-05",
@@ -26065,7 +26075,7 @@
     "originalTitle": "Better Off Dead...",
     "gradeValue": 9,
     "runtimeMinutes": 97,
-    "releaseSequence": "1985-10-11tt0088794",
+    "releaseSequence": "1985-08-23tt0088794",
     "directorNames": [
       "Savage Steve Holland"
     ],
@@ -26261,7 +26271,7 @@
     "originalTitle": "Mo",
     "gradeValue": 9,
     "runtimeMinutes": 99,
-    "releaseSequence": "1983-??-??tt0085951",
+    "releaseSequence": "1983-10-29tt0085951",
     "directorNames": [
       "Chih-Hung Kuei"
     ],
@@ -26374,7 +26384,7 @@
     "originalTitle": "Society",
     "gradeValue": 8,
     "runtimeMinutes": 99,
-    "releaseSequence": "1989-??-??tt0098354",
+    "releaseSequence": "1989-05-13tt0098354",
     "directorNames": [
       "Brian Yuzna"
     ],
@@ -26462,7 +26472,7 @@
     "originalTitle": "Cosa avete fatto a Solange?",
     "gradeValue": 8,
     "runtimeMinutes": 107,
-    "releaseSequence": "1972-??-??tt0068416",
+    "releaseSequence": "1972-03-09tt0068416",
     "directorNames": [
       "Massimo Dallamano"
     ],
@@ -26541,7 +26551,7 @@
     "originalTitle": "Hereditary",
     "gradeValue": 11,
     "runtimeMinutes": 127,
-    "releaseSequence": "2018-06-08tt7784604",
+    "releaseSequence": "2018-01-21tt7784604",
     "directorNames": [
       "Ari Aster"
     ],
@@ -26731,7 +26741,7 @@
     "originalTitle": "Hellbound: Hellraiser II",
     "gradeValue": 6,
     "runtimeMinutes": 97,
-    "releaseSequence": "1988-12-23tt0095294",
+    "releaseSequence": "1988-09-09tt0095294",
     "directorNames": [
       "Tony Randel"
     ],
@@ -26811,7 +26821,7 @@
     "originalTitle": "Mandy",
     "gradeValue": 13,
     "runtimeMinutes": 121,
-    "releaseSequence": "2018-09-14tt6998518",
+    "releaseSequence": "2018-01-19tt6998518",
     "directorNames": [
       "Panos Cosmatos"
     ],
@@ -26916,7 +26926,7 @@
     "originalTitle": "Color Out of Space",
     "gradeValue": 8,
     "runtimeMinutes": 111,
-    "releaseSequence": "2019-??-??tt5073642",
+    "releaseSequence": "2019-09-07tt5073642",
     "directorNames": [
       "Richard Stanley"
     ],
@@ -27001,7 +27011,7 @@
     "originalTitle": "In the Wake of the Bounty",
     "gradeValue": 1,
     "runtimeMinutes": 66,
-    "releaseSequence": "1933-06-03tt0024176",
+    "releaseSequence": "1933-03-15tt0024176",
     "directorNames": [
       "Charles Chauvel"
     ],
@@ -27157,7 +27167,7 @@
     "originalTitle": "Gosford Park",
     "gradeValue": 8,
     "runtimeMinutes": 137,
-    "releaseSequence": "2001-??-??tt0280707",
+    "releaseSequence": "2001-11-07tt0280707",
     "directorNames": [
       "Robert Altman"
     ],
@@ -27236,7 +27246,7 @@
     "originalTitle": "Conflict",
     "gradeValue": 6,
     "runtimeMinutes": 86,
-    "releaseSequence": "1945-06-30tt0037611",
+    "releaseSequence": "1945-05-13tt0037611",
     "directorNames": [
       "Curtis Bernhardt"
     ],
@@ -27359,7 +27369,7 @@
     "originalTitle": "Coherence",
     "gradeValue": 9,
     "runtimeMinutes": 89,
-    "releaseSequence": "2013-??-??tt2866360",
+    "releaseSequence": "2013-09-19tt2866360",
     "directorNames": [
       "James Ward Byrkit"
     ],
@@ -27443,7 +27453,7 @@
     "originalTitle": "The Corn Is Green",
     "gradeValue": 8,
     "runtimeMinutes": 115,
-    "releaseSequence": "1945-07-14tt0037614",
+    "releaseSequence": "1945-03-29tt0037614",
     "directorNames": [
       "Irving Rapper"
     ],
@@ -27554,7 +27564,7 @@
     "originalTitle": "Curse of the Crimson Altar",
     "gradeValue": 4,
     "runtimeMinutes": 87,
-    "releaseSequence": "1968-??-??tt0062833",
+    "releaseSequence": "1968-12-01tt0062833",
     "directorNames": [
       "Vernon Sewell"
     ],
@@ -27711,7 +27721,7 @@
     "originalTitle": "Glass",
     "gradeValue": 2,
     "runtimeMinutes": 129,
-    "releaseSequence": "2019-01-18tt6823368",
+    "releaseSequence": "2019-01-07tt6823368",
     "directorNames": [
       "M. Night Shyamalan"
     ],
@@ -27789,7 +27799,7 @@
     "originalTitle": "Dr\u00e1cula",
     "gradeValue": 7,
     "runtimeMinutes": 104,
-    "releaseSequence": "1931-??-??tt0021815",
+    "releaseSequence": "1931-03-11tt0021815",
     "directorNames": [
       "George Melford"
     ],
@@ -28261,7 +28271,7 @@
     "originalTitle": "The Howling",
     "gradeValue": 9,
     "runtimeMinutes": 91,
-    "releaseSequence": "1981-04-10tt0082533",
+    "releaseSequence": "1981-01-01tt0082533",
     "directorNames": [
       "Joe Dante"
     ],
@@ -28338,7 +28348,7 @@
     "originalTitle": "Men Without Women",
     "gradeValue": 7,
     "runtimeMinutes": 77,
-    "releaseSequence": "1930-02-09tt0021140",
+    "releaseSequence": "1930-01-31tt0021140",
     "directorNames": [
       "John Ford"
     ],
@@ -28452,7 +28462,7 @@
     "originalTitle": "Victor Crowley",
     "gradeValue": 4,
     "runtimeMinutes": 83,
-    "releaseSequence": "2017-??-??tt5534434",
+    "releaseSequence": "2017-08-22tt5534434",
     "directorNames": [
       "Adam Green"
     ],
@@ -28530,7 +28540,7 @@
     "originalTitle": "Starry Eyes",
     "gradeValue": 6,
     "runtimeMinutes": 98,
-    "releaseSequence": "2014-11-14tt2793490",
+    "releaseSequence": "2014-03-08tt2793490",
     "directorNames": [
       "Kevin K\u00f6lsch",
       "Dennis Widmyer"
@@ -28611,7 +28621,7 @@
     "originalTitle": "X-Men: The Last Stand",
     "gradeValue": 1,
     "runtimeMinutes": 104,
-    "releaseSequence": "2006-05-26tt0376994",
+    "releaseSequence": "2006-05-22tt0376994",
     "directorNames": [
       "Brett Ratner"
     ],
@@ -28688,7 +28698,7 @@
     "originalTitle": "The Black Watch",
     "gradeValue": 1,
     "runtimeMinutes": 93,
-    "releaseSequence": "1929-05-22tt0019699",
+    "releaseSequence": "1929-05-08tt0019699",
     "directorNames": [
       "John Ford"
     ],
@@ -28802,7 +28812,7 @@
     "originalTitle": "Velvet Buzzsaw",
     "gradeValue": 4,
     "runtimeMinutes": 113,
-    "releaseSequence": "2019-02-01tt7043012",
+    "releaseSequence": "2019-01-27tt7043012",
     "directorNames": [
       "Dan Gilroy"
     ],
@@ -28881,7 +28891,7 @@
     "originalTitle": "Le colt cantarono la morte e fu... tempo di massacro",
     "gradeValue": 7,
     "runtimeMinutes": 92,
-    "releaseSequence": "1966-??-??tt0061074",
+    "releaseSequence": "1966-08-10tt0061074",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -28925,18 +28935,18 @@
               "grade": "B-"
             },
             {
-              "title": "The Conspiracy of Torture",
-              "imdbId": "tt0064073",
-              "year": "1969",
-              "slug": "the-conspiracy-of-torture-1969",
-              "grade": "B-"
-            },
-            {
               "title": "One on Top of the Other",
               "imdbId": "tt0065148",
               "year": "1969",
               "slug": "one-on-top-of-the-other-1969",
               "grade": "B"
+            },
+            {
+              "title": "The Conspiracy of Torture",
+              "imdbId": "tt0064073",
+              "year": "1969",
+              "slug": "the-conspiracy-of-torture-1969",
+              "grade": "B-"
             }
           ]
         }
@@ -29026,11 +29036,11 @@
           "slug": "william-powell",
           "titles": [
             {
-              "title": "Behind the Make-Up",
-              "imdbId": "tt0020677",
+              "title": "Street of Chance",
+              "imdbId": "tt0021420",
               "year": "1930",
-              "slug": "behind-the-make-up-1930",
-              "grade": "C+"
+              "slug": "street-of-chance-1930",
+              "grade": "D+"
             },
             {
               "title": "The Benson Murder Case",
@@ -29302,18 +29312,18 @@
           "slug": "wes-craven",
           "titles": [
             {
-              "title": "A Nightmare on Elm Street",
-              "imdbId": "tt0087800",
-              "year": "1984",
-              "slug": "a-nightmare-on-elm-street-1984",
-              "grade": "B"
-            },
-            {
               "title": "The Hills Have Eyes Part II",
               "imdbId": "tt0089274",
               "year": "1984",
               "slug": "the-hills-have-eyes-part-ii-1984",
               "grade": "F"
+            },
+            {
+              "title": "A Nightmare on Elm Street",
+              "imdbId": "tt0087800",
+              "year": "1984",
+              "slug": "a-nightmare-on-elm-street-1984",
+              "grade": "B"
             },
             {
               "title": "The Last House on the Left",
@@ -29496,7 +29506,7 @@
     "originalTitle": "Doctor Bull",
     "gradeValue": 5,
     "runtimeMinutes": 77,
-    "releaseSequence": "1933-09-22tt0023955",
+    "releaseSequence": "1933-09-01tt0023955",
     "directorNames": [
       "John Ford"
     ],
@@ -29598,7 +29608,8 @@
     "slug": "krampus-2015",
     "grade": "B-",
     "countries": [
-      "United States"
+      "United States",
+      "Canada"
     ],
     "genres": [
       "Comedy",
@@ -29609,7 +29620,7 @@
     "originalTitle": "Krampus",
     "gradeValue": 8,
     "runtimeMinutes": 98,
-    "releaseSequence": "2015-12-04tt3850590",
+    "releaseSequence": "2015-11-30tt3850590",
     "directorNames": [
       "Michael Dougherty"
     ],
@@ -29718,7 +29729,7 @@
     "originalTitle": "Ladies of the Chorus",
     "gradeValue": 6,
     "runtimeMinutes": 61,
-    "releaseSequence": "1948-??-??tt0041571",
+    "releaseSequence": "1948-12-30tt0041571",
     "directorNames": [
       "Phil Karlson"
     ],
@@ -29795,7 +29806,7 @@
     "originalTitle": "Shock",
     "gradeValue": 4,
     "runtimeMinutes": 70,
-    "releaseSequence": "1946-02-01tt0038937",
+    "releaseSequence": "1946-01-10tt0038937",
     "directorNames": [
       "Alfred L. Werker"
     ],
@@ -29987,7 +29998,7 @@
     "originalTitle": "Daniel Isn't Real",
     "gradeValue": 4,
     "runtimeMinutes": 100,
-    "releaseSequence": "2019-12-06tt8745960",
+    "releaseSequence": "2019-03-09tt8745960",
     "directorNames": [
       "Adam Egypt Mortimer"
     ],
@@ -30216,7 +30227,7 @@
     "originalTitle": "Hell Night",
     "gradeValue": 3,
     "runtimeMinutes": 101,
-    "releaseSequence": "1981-08-28tt0082511",
+    "releaseSequence": "1981-05-20tt0082511",
     "directorNames": [
       "Tom DeSimone"
     ],
@@ -30414,7 +30425,7 @@
     "originalTitle": "Body Double",
     "gradeValue": 3,
     "runtimeMinutes": 114,
-    "releaseSequence": "1984-10-26tt0086984",
+    "releaseSequence": "1984-10-15tt0086984",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -30458,18 +30469,18 @@
               "grade": "A-"
             },
             {
-              "title": "Greetings",
-              "imdbId": "tt0063036",
-              "year": "1968",
-              "slug": "greetings-1968",
-              "grade": "D"
-            },
-            {
               "title": "Murder \u00e0 la Mod",
               "imdbId": "tt0163114",
               "year": "1968",
               "slug": "murder-a-la-mod-1968",
               "grade": "B-"
+            },
+            {
+              "title": "Greetings",
+              "imdbId": "tt0063036",
+              "year": "1968",
+              "slug": "greetings-1968",
+              "grade": "D"
             }
           ]
         }
@@ -30527,7 +30538,7 @@
     "originalTitle": "Blackmail",
     "gradeValue": 7,
     "runtimeMinutes": 85,
-    "releaseSequence": "1929-10-06tt0019702",
+    "releaseSequence": "1929-07-28tt0019702",
     "directorNames": [
       "Alfred Hitchcock"
     ],
@@ -30640,7 +30651,7 @@
     "originalTitle": "Marked Woman",
     "gradeValue": 5,
     "runtimeMinutes": 96,
-    "releaseSequence": "1937-04-10tt0029217",
+    "releaseSequence": "1937-04-03tt0029217",
     "directorNames": [
       "Lloyd Bacon"
     ],
@@ -30863,7 +30874,7 @@
     "originalTitle": "Lilith",
     "gradeValue": 3,
     "runtimeMinutes": 114,
-    "releaseSequence": "1964-10-01tt0058294",
+    "releaseSequence": "1964-09-19tt0058294",
     "directorNames": [
       "Robert Rossen"
     ],
@@ -30939,7 +30950,7 @@
     "originalTitle": "Gycklarnas afton",
     "gradeValue": 10,
     "runtimeMinutes": 93,
-    "releaseSequence": "1953-??-??tt0045848",
+    "releaseSequence": "1953-09-14tt0045848",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -31052,7 +31063,7 @@
     "originalTitle": "New York Ninja",
     "gradeValue": 3,
     "runtimeMinutes": 93,
-    "releaseSequence": "2021-??-??tt15358226",
+    "releaseSequence": "2021-10-02tt15358226",
     "directorNames": [
       "John Liu",
       "Kurtis Spieler"
@@ -31131,7 +31142,7 @@
     "originalTitle": "The Curse of Frankenstein",
     "gradeValue": 12,
     "runtimeMinutes": 82,
-    "releaseSequence": "1957-06-25tt0050280",
+    "releaseSequence": "1957-05-02tt0050280",
     "directorNames": [
       "Terence Fisher"
     ],
@@ -31322,7 +31333,7 @@
     "originalTitle": "Underworld",
     "gradeValue": 2,
     "runtimeMinutes": 103,
-    "releaseSequence": "1985-??-??tt0090233",
+    "releaseSequence": "1985-11-29tt0090233",
     "directorNames": [
       "George Pavlou"
     ],
@@ -31400,7 +31411,7 @@
     "originalTitle": "Nightcrawler",
     "gradeValue": 9,
     "runtimeMinutes": 117,
-    "releaseSequence": "2014-10-31tt2872718",
+    "releaseSequence": "2014-09-05tt2872718",
     "directorNames": [
       "Dan Gilroy"
     ],
@@ -31485,7 +31496,7 @@
     "originalTitle": "Tonight or Never",
     "gradeValue": 4,
     "runtimeMinutes": 80,
-    "releaseSequence": "1931-??-??tt0022489",
+    "releaseSequence": "1931-12-17tt0022489",
     "directorNames": [
       "Mervyn LeRoy"
     ],
@@ -31516,18 +31527,18 @@
           "slug": "boris-karloff",
           "titles": [
             {
-              "title": "The Guilty Generation",
-              "imdbId": "tt0021932",
-              "year": "1931",
-              "slug": "the-guilty-generation-1931",
-              "grade": "C"
-            },
-            {
               "title": "Frankenstein",
               "imdbId": "tt0021884",
               "year": "1931",
               "slug": "frankenstein-1931",
               "grade": "B+"
+            },
+            {
+              "title": "The Guilty Generation",
+              "imdbId": "tt0021932",
+              "year": "1931",
+              "slug": "the-guilty-generation-1931",
+              "grade": "C"
             },
             {
               "title": "Behind the Mask",
@@ -31726,7 +31737,7 @@
     "originalTitle": "Det sjunde inseglet",
     "gradeValue": 10,
     "runtimeMinutes": 96,
-    "releaseSequence": "1957-??-??tt0050976",
+    "releaseSequence": "1957-02-16tt0050976",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -31841,7 +31852,7 @@
     "originalTitle": "Versus",
     "gradeValue": 8,
     "runtimeMinutes": 119,
-    "releaseSequence": "2000-??-??tt0275773",
+    "releaseSequence": "2000-10-29tt0275773",
     "directorNames": [
       "Ry\u00fbhei Kitamura"
     ],
@@ -32039,7 +32050,7 @@
     "originalTitle": "Der siebente Kontinent",
     "gradeValue": 11,
     "runtimeMinutes": 108,
-    "releaseSequence": "1989-??-??tt0098327",
+    "releaseSequence": "1989-05-19tt0098327",
     "directorNames": [
       "Michael Haneke"
     ],
@@ -32153,7 +32164,7 @@
     "originalTitle": "Murders in the Rue Morgue",
     "gradeValue": 2,
     "runtimeMinutes": 61,
-    "releaseSequence": "1932-02-21tt0023249",
+    "releaseSequence": "1932-01-27tt0023249",
     "directorNames": [
       "Robert Florey"
     ],
@@ -32277,7 +32288,7 @@
     "originalTitle": "Punisher: War Zone",
     "gradeValue": 5,
     "runtimeMinutes": 103,
-    "releaseSequence": "2008-12-05tt0450314",
+    "releaseSequence": "2008-12-04tt0450314",
     "directorNames": [
       "Lexi Alexander"
     ],
@@ -32354,7 +32365,7 @@
     "originalTitle": "So Big!",
     "gradeValue": 3,
     "runtimeMinutes": 81,
-    "releaseSequence": "1932-04-30tt0023491",
+    "releaseSequence": "1932-04-29tt0023491",
     "directorNames": [
       "William A. Wellman"
     ],
@@ -32385,18 +32396,18 @@
           "slug": "bette-davis",
           "titles": [
             {
-              "title": "Way Back Home",
-              "imdbId": "tt0022551",
-              "year": "1931",
-              "slug": "way-back-home-1931",
-              "grade": "D+"
-            },
-            {
               "title": "The Man Who Played God",
               "imdbId": "tt0023181",
               "year": "1932",
               "slug": "the-man-who-played-god-1932",
               "grade": "D"
+            },
+            {
+              "title": "Hell's House",
+              "imdbId": "tt0022991",
+              "year": "1932",
+              "slug": "hells-house-1932",
+              "grade": "C-"
             },
             {
               "title": "The Rich Are Always with Us",
@@ -32406,11 +32417,11 @@
               "grade": "D"
             },
             {
-              "title": "Hell's House",
-              "imdbId": "tt0022991",
+              "title": "The Cabin in the Cotton",
+              "imdbId": "tt0022735",
               "year": "1932",
-              "slug": "hells-house-1932",
-              "grade": "C-"
+              "slug": "the-cabin-in-the-cotton-1932",
+              "grade": "D"
             }
           ]
         }
@@ -32467,7 +32478,7 @@
     "originalTitle": "Cracked Nuts",
     "gradeValue": 3,
     "runtimeMinutes": 65,
-    "releaseSequence": "1931-04-18tt0021768",
+    "releaseSequence": "1931-04-04tt0021768",
     "directorNames": [
       "Edward F. Cline"
     ],
@@ -32519,11 +32530,11 @@
               "grade": "C"
             },
             {
-              "title": "I Like Your Nerve",
-              "imdbId": "tt0021986",
+              "title": "Five Star Final",
+              "imdbId": "tt0021873",
               "year": "1931",
-              "slug": "i-like-your-nerve-1931",
-              "grade": "F"
+              "slug": "five-star-final-1931",
+              "grade": "D+"
             }
           ]
         }
@@ -32578,7 +32589,7 @@
     "originalTitle": "The Duel at Silver Creek",
     "gradeValue": 3,
     "runtimeMinutes": 77,
-    "releaseSequence": "1952-09-05tt0044573",
+    "releaseSequence": "1952-08-01tt0044573",
     "directorNames": [
       "Don Siegel"
     ],
@@ -32658,7 +32669,7 @@
     "originalTitle": "The Last Seduction",
     "gradeValue": 5,
     "runtimeMinutes": 110,
-    "releaseSequence": "1994-10-26tt0110308",
+    "releaseSequence": "1994-??-??tt0110308",
     "directorNames": [
       "John Dahl"
     ],
@@ -32804,8 +32815,7 @@
     "grade": "C+",
     "countries": [
       "United States",
-      "United Kingdom",
-      "Japan"
+      "United Kingdom"
     ],
     "genres": [
       "Action",
@@ -32815,7 +32825,7 @@
     "originalTitle": "The Wolverine",
     "gradeValue": 7,
     "runtimeMinutes": 126,
-    "releaseSequence": "2013-07-26tt1430132",
+    "releaseSequence": "2013-07-16tt1430132",
     "directorNames": [
       "James Mangold"
     ],
@@ -33048,7 +33058,7 @@
     "originalTitle": "What We Do in the Shadows",
     "gradeValue": 10,
     "runtimeMinutes": 86,
-    "releaseSequence": "2014-??-??tt3416742",
+    "releaseSequence": "2014-01-19tt3416742",
     "directorNames": [
       "Jemaine Clement",
       "Taika Waititi"
@@ -33239,7 +33249,7 @@
     "originalTitle": "Watchmen",
     "gradeValue": 10,
     "runtimeMinutes": 162,
-    "releaseSequence": "2009-03-06tt0409459",
+    "releaseSequence": "2009-02-23tt0409459",
     "directorNames": [
       "Zack Snyder"
     ],
@@ -33316,7 +33326,7 @@
     "originalTitle": "Sommarlek",
     "gradeValue": 7,
     "runtimeMinutes": 96,
-    "releaseSequence": "1951-??-??tt0044060",
+    "releaseSequence": "1951-10-01tt0044060",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -33430,7 +33440,7 @@
     "originalTitle": "4 mosche di velluto grigio",
     "gradeValue": 4,
     "runtimeMinutes": 104,
-    "releaseSequence": "1971-??-??tt0066735",
+    "releaseSequence": "1971-12-17tt0066735",
     "directorNames": [
       "Dario Argento"
     ],
@@ -33543,7 +33553,7 @@
     "originalTitle": "Mal\u00e9fique",
     "gradeValue": 7,
     "runtimeMinutes": 90,
-    "releaseSequence": "2002-??-??tt0309832",
+    "releaseSequence": "2002-11-09tt0309832",
     "directorNames": [
       "Eric Valette"
     ],
@@ -33629,7 +33639,7 @@
     "originalTitle": "X the Unknown",
     "gradeValue": 7,
     "runtimeMinutes": 81,
-    "releaseSequence": "1956-??-??tt0049967",
+    "releaseSequence": "1956-09-21tt0049967",
     "directorNames": [
       "Leslie Norman"
     ],
@@ -33752,7 +33762,7 @@
     "originalTitle": "The Batman",
     "gradeValue": 7,
     "runtimeMinutes": 176,
-    "releaseSequence": "2022-03-04tt1877830",
+    "releaseSequence": "2022-03-01tt1877830",
     "directorNames": [
       "Matt Reeves"
     ],
@@ -33832,7 +33842,7 @@
     "originalTitle": "High Sierra",
     "gradeValue": 8,
     "runtimeMinutes": 100,
-    "releaseSequence": "1940-??-??tt0033717",
+    "releaseSequence": "1940-12-31tt0033717",
     "directorNames": [
       "Raoul Walsh"
     ],
@@ -33946,7 +33956,7 @@
     "originalTitle": "The Public Defender",
     "gradeValue": 6,
     "runtimeMinutes": 69,
-    "releaseSequence": "1931-08-01tt0022285",
+    "releaseSequence": "1931-07-31tt0022285",
     "directorNames": [
       "J. Walter Ruben"
     ],
@@ -33991,18 +34001,18 @@
               "grade": "D"
             },
             {
-              "title": "I Like Your Nerve",
-              "imdbId": "tt0021986",
-              "year": "1931",
-              "slug": "i-like-your-nerve-1931",
-              "grade": "F"
-            },
-            {
               "title": "Five Star Final",
               "imdbId": "tt0021873",
               "year": "1931",
               "slug": "five-star-final-1931",
               "grade": "D+"
+            },
+            {
+              "title": "I Like Your Nerve",
+              "imdbId": "tt0021986",
+              "year": "1931",
+              "slug": "i-like-your-nerve-1931",
+              "grade": "F"
             }
           ]
         }
@@ -34136,7 +34146,7 @@
     "originalTitle": "Humanoids from the Deep",
     "gradeValue": 8,
     "runtimeMinutes": 80,
-    "releaseSequence": "1980-05-16tt0080904",
+    "releaseSequence": "1980-03-28tt0080904",
     "directorNames": [
       "Barbara Peeters"
     ],
@@ -34203,9 +34213,9 @@
     "slug": "casino-royale-2006",
     "grade": "B-",
     "countries": [
+      "United States",
       "United Kingdom",
       "Czechia",
-      "United States",
       "Germany",
       "Bahamas"
     ],
@@ -34218,7 +34228,7 @@
     "originalTitle": "Casino Royale",
     "gradeValue": 8,
     "runtimeMinutes": 144,
-    "releaseSequence": "2006-11-17tt0381061",
+    "releaseSequence": "2006-11-14tt0381061",
     "directorNames": [
       "Martin Campbell"
     ],
@@ -34389,11 +34399,11 @@
               "grade": "C-"
             },
             {
-              "title": "A Nightmare on Elm Street",
-              "imdbId": "tt0087800",
+              "title": "The Hills Have Eyes Part II",
+              "imdbId": "tt0089274",
               "year": "1984",
-              "slug": "a-nightmare-on-elm-street-1984",
-              "grade": "B"
+              "slug": "the-hills-have-eyes-part-ii-1984",
+              "grade": "F"
             }
           ]
         }
@@ -34451,7 +34461,7 @@
     "originalTitle": "Ils",
     "gradeValue": 6,
     "runtimeMinutes": 77,
-    "releaseSequence": "2006-04-20tt0465203",
+    "releaseSequence": "2006-04-08tt0465203",
     "directorNames": [
       "David Moreau",
       "Xavier Palud"
@@ -34609,7 +34619,7 @@
     "originalTitle": "The Utah Kid",
     "gradeValue": 5,
     "runtimeMinutes": 57,
-    "releaseSequence": "1930-11-07tt0021509",
+    "releaseSequence": "1930-10-27tt0021509",
     "directorNames": [
       "Richard Thorpe"
     ],
@@ -34721,7 +34731,7 @@
     "originalTitle": "Ansiktet",
     "gradeValue": 9,
     "runtimeMinutes": 101,
-    "releaseSequence": "1958-??-??tt0051365",
+    "releaseSequence": "1958-12-26tt0051365",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -34834,7 +34844,7 @@
     "originalTitle": "For the Defense",
     "gradeValue": 6,
     "runtimeMinutes": 65,
-    "releaseSequence": "1930-10-25tt0020896",
+    "releaseSequence": "1930-07-19tt0020896",
     "directorNames": [
       "John Cromwell"
     ],
@@ -35086,7 +35096,7 @@
     "originalTitle": "Dangerous Mission",
     "gradeValue": 3,
     "runtimeMinutes": 75,
-    "releaseSequence": "1954-03-06tt0046891",
+    "releaseSequence": "1954-02-25tt0046891",
     "directorNames": [
       "Louis King"
     ],
@@ -35207,7 +35217,7 @@
     "originalTitle": "Tian xia di yi quan",
     "gradeValue": 9,
     "runtimeMinutes": 104,
-    "releaseSequence": "1972-??-??tt0070800",
+    "releaseSequence": "1972-04-28tt0070800",
     "directorNames": [
       "Chang-hwa Jeong"
     ],
@@ -35662,7 +35672,7 @@
     "originalTitle": "The Big Trail",
     "gradeValue": 8,
     "runtimeMinutes": 125,
-    "releaseSequence": "1930-11-01tt0020691",
+    "releaseSequence": "1930-10-02tt0020691",
     "directorNames": [
       "Raoul Walsh"
     ],
@@ -35774,7 +35784,7 @@
     "originalTitle": "Fast Company",
     "gradeValue": 6,
     "runtimeMinutes": 91,
-    "releaseSequence": "1979-08-17tt0079138",
+    "releaseSequence": "1979-03-18tt0079138",
     "directorNames": [
       "David Cronenberg"
     ],
@@ -35804,6 +35814,13 @@
           "slug": "david-cronenberg",
           "titles": [
             {
+              "title": "Shivers",
+              "imdbId": "tt0073705",
+              "year": "1975",
+              "slug": "shivers-1975",
+              "grade": "C-"
+            },
+            {
               "title": "Rabid",
               "imdbId": "tt0076590",
               "year": "1977",
@@ -35823,13 +35840,6 @@
               "year": "2022",
               "slug": "crimes-of-the-future-2022",
               "grade": "B-"
-            },
-            {
-              "title": "Stereo",
-              "imdbId": "tt0065036",
-              "year": "1969",
-              "slug": "stereo-tile-3b-of-a-caee-educational-mosaic-1969",
-              "grade": "D"
             }
           ]
         }
@@ -35888,7 +35898,7 @@
     "originalTitle": "Captain Marvel",
     "gradeValue": 7,
     "runtimeMinutes": 123,
-    "releaseSequence": "2019-03-08tt4154664",
+    "releaseSequence": "2019-02-27tt4154664",
     "directorNames": [
       "Anna Boden",
       "Ryan Fleck"
@@ -35973,7 +35983,7 @@
     "originalTitle": "A Nightmare on Elm Street Part 2: Freddy's Revenge",
     "gradeValue": 1,
     "runtimeMinutes": 87,
-    "releaseSequence": "1985-11-01tt0089686",
+    "releaseSequence": "1985-10-01tt0089686",
     "directorNames": [
       "Jack Sholder"
     ],
@@ -36051,7 +36061,7 @@
     "originalTitle": "Saw 3D",
     "gradeValue": 4,
     "runtimeMinutes": 90,
-    "releaseSequence": "2010-10-29tt1477076",
+    "releaseSequence": "2010-10-22tt1477076",
     "directorNames": [
       "Kevin Greutert"
     ],
@@ -36153,7 +36163,8 @@
     "slug": "batman-v-superman-dawn-of-justice-2016",
     "grade": "B-",
     "countries": [
-      "United States"
+      "United States",
+      "Morocco"
     ],
     "genres": [
       "Action",
@@ -36164,7 +36175,7 @@
     "originalTitle": "Batman v Superman: Dawn of Justice",
     "gradeValue": 8,
     "runtimeMinutes": 151,
-    "releaseSequence": "2016-03-25tt2975590",
+    "releaseSequence": "2016-03-12tt2975590",
     "directorNames": [
       "Zack Snyder"
     ],
@@ -36251,7 +36262,7 @@
     "originalTitle": "A Girl Walks Home Alone at Night",
     "gradeValue": 10,
     "runtimeMinutes": 101,
-    "releaseSequence": "2014-??-??tt2326554",
+    "releaseSequence": "2014-01-19tt2326554",
     "directorNames": [
       "Ana Lily Amirpour"
     ],
@@ -36407,7 +36418,7 @@
     "originalTitle": "Possession",
     "gradeValue": 12,
     "runtimeMinutes": 124,
-    "releaseSequence": "1981-??-??tt0082933",
+    "releaseSequence": "1981-05-25tt0082933",
     "directorNames": [
       "Andrzej Zulawski"
     ],
@@ -36490,7 +36501,8 @@
     "slug": "x-men-2000",
     "grade": "B",
     "countries": [
-      "United States"
+      "United States",
+      "Canada"
     ],
     "genres": [
       "Action",
@@ -36501,7 +36513,7 @@
     "originalTitle": "X-Men",
     "gradeValue": 9,
     "runtimeMinutes": 104,
-    "releaseSequence": "2000-07-14tt0120903",
+    "releaseSequence": "2000-07-12tt0120903",
     "directorNames": [
       "Bryan Singer"
     ],
@@ -36581,7 +36593,7 @@
     "originalTitle": "Il trono di fuoco",
     "gradeValue": 3,
     "runtimeMinutes": 84,
-    "releaseSequence": "1970-??-??tt0064727",
+    "releaseSequence": "1970-02-05tt0064727",
     "directorNames": [
       "Jes\u00fas Franco"
     ],
@@ -36633,11 +36645,11 @@
               "grade": "C+"
             },
             {
-              "title": "Hannie Caulder",
-              "imdbId": "tt0068675",
+              "title": "I, Monster",
+              "imdbId": "tt0068727",
               "year": "1971",
-              "slug": "hannie-caulder-1971",
-              "grade": "B"
+              "slug": "i-monster-1971",
+              "grade": "D+"
             }
           ]
         }
@@ -36771,7 +36783,7 @@
     "originalTitle": "Delirio di sangue",
     "gradeValue": 3,
     "runtimeMinutes": 94,
-    "releaseSequence": "1988-??-??tt0094762",
+    "releaseSequence": "1988-08-08tt0094762",
     "directorNames": [
       "Sergio Bergonzelli"
     ],
@@ -36848,7 +36860,7 @@
     "originalTitle": "Halloween",
     "gradeValue": 12,
     "runtimeMinutes": 91,
-    "releaseSequence": "1978-10-27tt0077651",
+    "releaseSequence": "1978-10-25tt0077651",
     "directorNames": [
       "John Carpenter"
     ],
@@ -36983,7 +36995,7 @@
     "originalTitle": "Truth or Dare?: A Critical Madness",
     "gradeValue": 4,
     "runtimeMinutes": 90,
-    "releaseSequence": "1986-??-??tt0092118",
+    "releaseSequence": "1986-06-01tt0092118",
     "directorNames": [
       "Tim Ritter",
       "Yale Wilson"
@@ -37140,7 +37152,7 @@
     "originalTitle": "Twentynine Palms",
     "gradeValue": 4,
     "runtimeMinutes": 119,
-    "releaseSequence": "2003-09-17tt0315110",
+    "releaseSequence": "2003-09-03tt0315110",
     "directorNames": [
       "Bruno Dumont"
     ],
@@ -37216,7 +37228,7 @@
     "originalTitle": "Black Panther",
     "gradeValue": 7,
     "runtimeMinutes": 134,
-    "releaseSequence": "2018-02-16tt1825683",
+    "releaseSequence": "2018-01-29tt1825683",
     "directorNames": [
       "Ryan Coogler"
     ],
@@ -37303,7 +37315,7 @@
     "originalTitle": "The Invitation",
     "gradeValue": 9,
     "runtimeMinutes": 100,
-    "releaseSequence": "2015-??-??tt2400463",
+    "releaseSequence": "2015-03-13tt2400463",
     "directorNames": [
       "Karyn Kusama"
     ],
@@ -37389,7 +37401,7 @@
     "originalTitle": "Black Legion",
     "gradeValue": 7,
     "runtimeMinutes": 83,
-    "releaseSequence": "1937-01-30tt0027367",
+    "releaseSequence": "1937-01-16tt0027367",
     "directorNames": [
       "Archie Mayo"
     ],
@@ -37510,7 +37522,7 @@
     "originalTitle": "The Human Tornado",
     "gradeValue": 6,
     "runtimeMinutes": 96,
-    "releaseSequence": "1976-10-02tt0074653",
+    "releaseSequence": "1976-07-23tt0074653",
     "directorNames": [
       "Cliff Roquemore"
     ],
@@ -37589,7 +37601,7 @@
     "originalTitle": "Arrebato",
     "gradeValue": 8,
     "runtimeMinutes": 115,
-    "releaseSequence": "1979-??-??tt0078797",
+    "releaseSequence": "1979-03-02tt0078797",
     "directorNames": [
       "Iv\u00e1n Zulueta"
     ],
@@ -37668,7 +37680,7 @@
     "originalTitle": "I onde dager",
     "gradeValue": 4,
     "runtimeMinutes": 113,
-    "releaseSequence": "2021-10-15tt13109952",
+    "releaseSequence": "2021-07-30tt13109952",
     "directorNames": [
       "Tommy Wirkola"
     ],
@@ -37748,7 +37760,7 @@
     "originalTitle": "The World Is Not Enough",
     "gradeValue": 5,
     "runtimeMinutes": 128,
-    "releaseSequence": "1999-11-19tt0143145",
+    "releaseSequence": "1999-11-08tt0143145",
     "directorNames": [
       "Michael Apted"
     ],
@@ -37940,7 +37952,7 @@
     "originalTitle": "Hannie Caulder",
     "gradeValue": 9,
     "runtimeMinutes": 85,
-    "releaseSequence": "1971-??-??tt0068675",
+    "releaseSequence": "1971-11-08tt0068675",
     "directorNames": [
       "Burt Kennedy"
     ],
@@ -37971,13 +37983,6 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "Night of the Blood Monster",
-              "imdbId": "tt0064727",
-              "year": "1970",
-              "slug": "the-bloody-judge-1970",
-              "grade": "D"
-            },
-            {
               "title": "The House That Dripped Blood",
               "imdbId": "tt0065854",
               "year": "1971",
@@ -37997,6 +38002,13 @@
               "year": "1976",
               "slug": "to-the-devil-a-daughter-1976",
               "grade": "D+"
+            },
+            {
+              "title": "Howling II: ... Your Sister Is a Werewolf",
+              "imdbId": "tt0089308",
+              "year": "1985",
+              "slug": "howling-ii-your-sister-is-a-werewolf-1985",
+              "grade": "F"
             }
           ]
         }
@@ -38225,7 +38237,7 @@
     "originalTitle": "The Rich Are Always with Us",
     "gradeValue": 3,
     "runtimeMinutes": 71,
-    "releaseSequence": "1932-05-21tt0023394",
+    "releaseSequence": "1932-05-19tt0023394",
     "directorNames": [
       "Alfred E. Green"
     ],
@@ -38256,11 +38268,11 @@
           "slug": "bette-davis",
           "titles": [
             {
-              "title": "The Man Who Played God",
-              "imdbId": "tt0023181",
+              "title": "Hell's House",
+              "imdbId": "tt0022991",
               "year": "1932",
-              "slug": "the-man-who-played-god-1932",
-              "grade": "D"
+              "slug": "hells-house-1932",
+              "grade": "C-"
             },
             {
               "title": "So Big!",
@@ -38270,18 +38282,18 @@
               "grade": "D"
             },
             {
-              "title": "Hell's House",
-              "imdbId": "tt0022991",
-              "year": "1932",
-              "slug": "hells-house-1932",
-              "grade": "C-"
-            },
-            {
               "title": "The Cabin in the Cotton",
               "imdbId": "tt0022735",
               "year": "1932",
               "slug": "the-cabin-in-the-cotton-1932",
               "grade": "D"
+            },
+            {
+              "title": "Three on a Match",
+              "imdbId": "tt0023590",
+              "year": "1932",
+              "slug": "three-on-a-match-1932",
+              "grade": "C+"
             }
           ]
         }
@@ -38339,7 +38351,7 @@
     "originalTitle": "GoldenEye",
     "gradeValue": 8,
     "runtimeMinutes": 130,
-    "releaseSequence": "1995-11-17tt0113189",
+    "releaseSequence": "1995-11-13tt0113189",
     "directorNames": [
       "Martin Campbell"
     ],
@@ -38453,7 +38465,7 @@
     "originalTitle": "The Camp on Blood Island",
     "gradeValue": 8,
     "runtimeMinutes": 81,
-    "releaseSequence": "1958-06-11tt0051444",
+    "releaseSequence": "1958-04-15tt0051444",
     "directorNames": [
       "Val Guest"
     ],
@@ -38647,7 +38659,7 @@
     "originalTitle": "Titane",
     "gradeValue": 5,
     "runtimeMinutes": 108,
-    "releaseSequence": "2021-10-01tt10944760",
+    "releaseSequence": "2021-07-13tt10944760",
     "directorNames": [
       "Julia Ducournau"
     ],
@@ -38723,7 +38735,7 @@
     "originalTitle": "Nightmare Beach",
     "gradeValue": 3,
     "runtimeMinutes": 90,
-    "releaseSequence": "1989-??-??tt0095740",
+    "releaseSequence": "1989-07-14tt0095740",
     "directorNames": [
       "James Justice",
       "Umberto Lenzi"
@@ -38922,7 +38934,7 @@
     "originalTitle": "Spider-Man: Homecoming",
     "gradeValue": 5,
     "runtimeMinutes": 133,
-    "releaseSequence": "2017-07-07tt2250912",
+    "releaseSequence": "2017-06-28tt2250912",
     "directorNames": [
       "Jon Watts"
     ],
@@ -39113,7 +39125,7 @@
     "originalTitle": "Three on a Match",
     "gradeValue": 7,
     "runtimeMinutes": 63,
-    "releaseSequence": "1932-10-29tt0023590",
+    "releaseSequence": "1932-10-28tt0023590",
     "directorNames": [
       "Mervyn LeRoy"
     ],
@@ -39152,11 +39164,11 @@
           "slug": "bette-davis",
           "titles": [
             {
-              "title": "Hell's House",
-              "imdbId": "tt0022991",
+              "title": "The Rich Are Always with Us",
+              "imdbId": "tt0023394",
               "year": "1932",
-              "slug": "hells-house-1932",
-              "grade": "C-"
+              "slug": "the-rich-are-always-with-us-1932",
+              "grade": "D"
             },
             {
               "title": "The Cabin in the Cotton",
@@ -39379,7 +39391,7 @@
     "originalTitle": "Dead & Buried",
     "gradeValue": 9,
     "runtimeMinutes": 94,
-    "releaseSequence": "1981-10-09tt0082242",
+    "releaseSequence": "1981-??-??tt0082242",
     "directorNames": [
       "Gary Sherman"
     ],
@@ -39487,13 +39499,6 @@
           "slug": "boris-karloff",
           "titles": [
             {
-              "title": "Cracked Nuts",
-              "imdbId": "tt0021768",
-              "year": "1931",
-              "slug": "cracked-nuts-1931",
-              "grade": "D"
-            },
-            {
               "title": "The Public Defender",
               "imdbId": "tt0022285",
               "year": "1931",
@@ -39506,6 +39511,13 @@
               "year": "1931",
               "slug": "five-star-final-1931",
               "grade": "D+"
+            },
+            {
+              "title": "Frankenstein",
+              "imdbId": "tt0021884",
+              "year": "1931",
+              "slug": "frankenstein-1931",
+              "grade": "B+"
             },
             {
               "title": "The Guilty Generation",
@@ -39570,7 +39582,7 @@
     "originalTitle": "Tomorrow Never Dies",
     "gradeValue": 4,
     "runtimeMinutes": 119,
-    "releaseSequence": "1997-12-19tt0120347",
+    "releaseSequence": "1997-12-09tt0120347",
     "directorNames": [
       "Roger Spottiswoode"
     ],
@@ -39684,7 +39696,7 @@
     "originalTitle": "Avengers: Endgame",
     "gradeValue": 12,
     "runtimeMinutes": 181,
-    "releaseSequence": "2019-04-26tt4154796",
+    "releaseSequence": "2019-04-18tt4154796",
     "directorNames": [
       "Anthony Russo",
       "Joe Russo"
@@ -39786,7 +39798,7 @@
     "originalTitle": "Locke",
     "gradeValue": 9,
     "runtimeMinutes": 85,
-    "releaseSequence": "2013-??-??tt2692904",
+    "releaseSequence": "2013-09-02tt2692904",
     "directorNames": [
       "Steven Knight"
     ],
@@ -40084,7 +40096,7 @@
     "originalTitle": "Hellraiser",
     "gradeValue": 12,
     "runtimeMinutes": 94,
-    "releaseSequence": "1987-09-18tt0093177",
+    "releaseSequence": "1987-09-11tt0093177",
     "directorNames": [
       "Clive Barker"
     ],
@@ -40172,7 +40184,7 @@
     "originalTitle": "Popstar: Never Stop Never Stopping",
     "gradeValue": 9,
     "runtimeMinutes": 87,
-    "releaseSequence": "2016-06-03tt3960412",
+    "releaseSequence": "2016-05-24tt3960412",
     "directorNames": [
       "Akiva Schaffer",
       "Jorma Taccone"
@@ -40378,7 +40390,7 @@
     "originalTitle": "The VVitch: A New-England Folktale",
     "gradeValue": 12,
     "runtimeMinutes": 92,
-    "releaseSequence": "2015-??-??tt4263482",
+    "releaseSequence": "2015-01-23tt4263482",
     "directorNames": [
       "Robert Eggers"
     ],
@@ -40470,7 +40482,7 @@
     "originalTitle": "Home Movies",
     "gradeValue": 3,
     "runtimeMinutes": 90,
-    "releaseSequence": "1979-??-??tt0079302",
+    "releaseSequence": "1979-08-28tt0079302",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -40662,7 +40674,7 @@
     "originalTitle": "Children of Men",
     "gradeValue": 10,
     "runtimeMinutes": 109,
-    "releaseSequence": "2006-??-??tt0206634",
+    "releaseSequence": "2006-09-03tt0206634",
     "directorNames": [
       "Alfonso Cuar\u00f3n"
     ],
@@ -40742,7 +40754,7 @@
     "originalTitle": "Les diaboliques",
     "gradeValue": 7,
     "runtimeMinutes": 117,
-    "releaseSequence": "1955-11-21tt0046911",
+    "releaseSequence": "1955-01-29tt0046911",
     "directorNames": [
       "Henri-Georges Clouzot"
     ],
@@ -40865,18 +40877,18 @@
               "grade": "C-"
             },
             {
-              "title": "Fashions of 1934",
-              "imdbId": "tt0025101",
-              "year": "1934",
-              "slug": "fashions-of-1934-1934",
-              "grade": "D"
-            },
-            {
               "title": "The Thin Man",
               "imdbId": "tt0025878",
               "year": "1934",
               "slug": "the-thin-man-1934",
               "grade": "B+"
+            },
+            {
+              "title": "The Key",
+              "imdbId": "tt0025346",
+              "year": "1934",
+              "slug": "the-key-1934",
+              "grade": "D+"
             }
           ]
         }
@@ -40932,7 +40944,7 @@
     "originalTitle": "Down Terrace",
     "gradeValue": 8,
     "runtimeMinutes": 89,
-    "releaseSequence": "2009-??-??tt1489167",
+    "releaseSequence": "2009-09-01tt1489167",
     "directorNames": [
       "Ben Wheatley"
     ],
@@ -41009,7 +41021,7 @@
     "originalTitle": "Gone with the Pope",
     "gradeValue": 7,
     "runtimeMinutes": 83,
-    "releaseSequence": "2010-??-??tt1617250",
+    "releaseSequence": "2010-03-12tt1617250",
     "directorNames": [
       "Duke Mitchell"
     ],
@@ -41088,7 +41100,7 @@
     "originalTitle": "Phantasm III: Lord of the Dead",
     "gradeValue": 8,
     "runtimeMinutes": 91,
-    "releaseSequence": "1994-12-08tt0110823",
+    "releaseSequence": "1994-02-25tt0110823",
     "directorNames": [
       "Don Coscarelli"
     ],
@@ -41201,7 +41213,7 @@
     "originalTitle": "Sette note in nero",
     "gradeValue": 3,
     "runtimeMinutes": 90,
-    "releaseSequence": "1977-??-??tt0075614",
+    "releaseSequence": "1977-08-10tt0075614",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -41619,7 +41631,7 @@
     "originalTitle": "The Suicide Squad",
     "gradeValue": 9,
     "runtimeMinutes": 132,
-    "releaseSequence": "2021-08-05tt6334354",
+    "releaseSequence": "2021-07-28tt6334354",
     "directorNames": [
       "James Gunn"
     ],
@@ -41808,7 +41820,7 @@
     "originalTitle": "Wonder Woman 1984",
     "gradeValue": 1,
     "runtimeMinutes": 151,
-    "releaseSequence": "2020-12-25tt7126948",
+    "releaseSequence": "2020-12-16tt7126948",
     "directorNames": [
       "Patty Jenkins"
     ],
@@ -41887,7 +41899,7 @@
     "originalTitle": "The Silent Partner",
     "gradeValue": 7,
     "runtimeMinutes": 106,
-    "releaseSequence": "1978-??-??tt0078269",
+    "releaseSequence": "1978-09-07tt0078269",
     "directorNames": [
       "Daryl Duke"
     ],
@@ -41967,7 +41979,7 @@
     "originalTitle": "The Perfection",
     "gradeValue": 8,
     "runtimeMinutes": 90,
-    "releaseSequence": "2018-??-??tt7772580",
+    "releaseSequence": "2018-09-20tt7772580",
     "directorNames": [
       "Richard Shepard"
     ],
@@ -42045,7 +42057,7 @@
     "originalTitle": "X-Men: Apocalypse",
     "gradeValue": 1,
     "runtimeMinutes": 144,
-    "releaseSequence": "2016-05-27tt3385516",
+    "releaseSequence": "2016-05-09tt3385516",
     "directorNames": [
       "Bryan Singer"
     ],
@@ -42125,7 +42137,7 @@
     "originalTitle": "Il gatto a nove code",
     "gradeValue": 7,
     "runtimeMinutes": 112,
-    "releaseSequence": "1971-05-26tt0065761",
+    "releaseSequence": "1971-02-12tt0065761",
     "directorNames": [
       "Dario Argento"
     ],
@@ -42238,7 +42250,7 @@
     "originalTitle": "Dirty Dancing",
     "gradeValue": 8,
     "runtimeMinutes": 100,
-    "releaseSequence": "1987-08-21tt0092890",
+    "releaseSequence": "1987-08-17tt0092890",
     "directorNames": [
       "Emile Ardolino"
     ],
@@ -42315,7 +42327,7 @@
     "originalTitle": "L'\u00e2ge d'or",
     "gradeValue": 7,
     "runtimeMinutes": 63,
-    "releaseSequence": "1930-??-??tt0021577",
+    "releaseSequence": "1930-11-28tt0021577",
     "directorNames": [
       "Luis Bu\u00f1uel"
     ],
@@ -42392,7 +42404,7 @@
     "originalTitle": "Dracula",
     "gradeValue": 11,
     "runtimeMinutes": 82,
-    "releaseSequence": "1958-06-16tt0051554",
+    "releaseSequence": "1958-05-08tt0051554",
     "directorNames": [
       "Terence Fisher"
     ],
@@ -42596,7 +42608,7 @@
     "originalTitle": "Behind the Make-Up",
     "gradeValue": 7,
     "runtimeMinutes": 65,
-    "releaseSequence": "1930-02-21tt0020677",
+    "releaseSequence": "1930-01-11tt0020677",
     "directorNames": [
       "Robert Milton"
     ],
@@ -42627,6 +42639,13 @@
           "slug": "william-powell",
           "titles": [
             {
+              "title": "Pointed Heels",
+              "imdbId": "tt0020278",
+              "year": "1929",
+              "slug": "pointed-heels-1929",
+              "grade": "D"
+            },
+            {
               "title": "The Canary Murder Case",
               "imdbId": "tt0019745",
               "year": "1929",
@@ -42646,13 +42665,6 @@
               "year": "1930",
               "slug": "the-benson-murder-case-1930",
               "grade": "C"
-            },
-            {
-              "title": "Shadow of the Law",
-              "imdbId": "tt0021359",
-              "year": "1930",
-              "slug": "shadow-of-the-law-1930",
-              "grade": "C+"
             }
           ]
         }
@@ -42709,7 +42721,7 @@
     "originalTitle": "Cult of Chucky",
     "gradeValue": 5,
     "runtimeMinutes": 91,
-    "releaseSequence": "2017-10-03tt3280262",
+    "releaseSequence": "2017-08-24tt3280262",
     "directorNames": [
       "Don Mancini"
     ],
@@ -42821,7 +42833,7 @@
     "originalTitle": "Greetings",
     "gradeValue": 3,
     "runtimeMinutes": 88,
-    "releaseSequence": "1968-??-??tt0063036",
+    "releaseSequence": "1968-12-15tt0063036",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -42851,13 +42863,6 @@
           "slug": "brian-de-palma",
           "titles": [
             {
-              "title": "Scarface",
-              "imdbId": "tt0086250",
-              "year": "1983",
-              "slug": "scarface-1983",
-              "grade": "A-"
-            },
-            {
               "title": "Body Double",
               "imdbId": "tt0086984",
               "year": "1984",
@@ -42877,6 +42882,13 @@
               "year": "1969",
               "slug": "the-wedding-party-1969",
               "grade": "D+"
+            },
+            {
+              "title": "Dionysus in '69",
+              "imdbId": "tt0065641",
+              "year": "1970",
+              "slug": "dionysus-in-69-1970",
+              "grade": "F"
             }
           ]
         }
@@ -43082,7 +43094,7 @@
     "originalTitle": "Chronicle",
     "gradeValue": 7,
     "runtimeMinutes": 84,
-    "releaseSequence": "2012-02-03tt1706593",
+    "releaseSequence": "2012-01-28tt1706593",
     "directorNames": [
       "Josh Trank"
     ],
@@ -43160,7 +43172,7 @@
     "originalTitle": "The Searchers",
     "gradeValue": 11,
     "runtimeMinutes": 119,
-    "releaseSequence": "1956-05-26tt0049730",
+    "releaseSequence": "1956-05-16tt0049730",
     "directorNames": [
       "John Ford"
     ],
@@ -43311,7 +43323,7 @@
     "originalTitle": "Trouble Every Day",
     "gradeValue": 4,
     "runtimeMinutes": 101,
-    "releaseSequence": "2001-07-11tt0204700",
+    "releaseSequence": "2001-05-13tt0204700",
     "directorNames": [
       "Claire Denis"
     ],
@@ -43389,7 +43401,7 @@
     "originalTitle": "Lo squartatore di New York",
     "gradeValue": 8,
     "runtimeMinutes": 85,
-    "releaseSequence": "1982-??-??tt0084719",
+    "releaseSequence": "1982-03-04tt0084719",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -43440,11 +43452,11 @@
               "grade": "C+"
             },
             {
-              "title": "The Conspiracy of Torture",
-              "imdbId": "tt0064073",
+              "title": "One on Top of the Other",
+              "imdbId": "tt0065148",
               "year": "1969",
-              "slug": "the-conspiracy-of-torture-1969",
-              "grade": "B-"
+              "slug": "one-on-top-of-the-other-1969",
+              "grade": "B"
             }
           ]
         }
@@ -43613,7 +43625,7 @@
     "originalTitle": "Smultronst\u00e4llet",
     "gradeValue": 7,
     "runtimeMinutes": 91,
-    "releaseSequence": "1957-??-??tt0050986",
+    "releaseSequence": "1957-12-26tt0050986",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -43728,7 +43740,7 @@
     "originalTitle": "Scarface",
     "gradeValue": 8,
     "runtimeMinutes": 93,
-    "releaseSequence": "1932-04-09tt0023427",
+    "releaseSequence": "1932-03-31tt0023427",
     "directorNames": [
       "Howard Hawks",
       "Richard Rosson"
@@ -43997,7 +44009,7 @@
     "originalTitle": "Service de Luxe",
     "gradeValue": 5,
     "runtimeMinutes": 85,
-    "releaseSequence": "1938-??-??tt0030732",
+    "releaseSequence": "1938-10-21tt0030732",
     "directorNames": [
       "Rowland V. Lee"
     ],
@@ -44108,7 +44120,7 @@
     "originalTitle": "I, Monster",
     "gradeValue": 4,
     "runtimeMinutes": 75,
-    "releaseSequence": "1971-??-??tt0068727",
+    "releaseSequence": "1971-11-01tt0068727",
     "directorNames": [
       "Stephen Weeks"
     ],
@@ -44139,6 +44151,13 @@
           "slug": "christopher-lee",
           "titles": [
             {
+              "title": "Night of the Blood Monster",
+              "imdbId": "tt0064727",
+              "year": "1970",
+              "slug": "the-bloody-judge-1970",
+              "grade": "D"
+            },
+            {
               "title": "The House That Dripped Blood",
               "imdbId": "tt0065854",
               "year": "1971",
@@ -44158,13 +44177,6 @@
               "year": "1976",
               "slug": "to-the-devil-a-daughter-1976",
               "grade": "D+"
-            },
-            {
-              "title": "Howling II: ... Your Sister Is a Werewolf",
-              "imdbId": "tt0089308",
-              "year": "1985",
-              "slug": "howling-ii-your-sister-is-a-werewolf-1985",
-              "grade": "F"
             }
           ]
         },
@@ -44307,11 +44319,11 @@
               "grade": "D"
             },
             {
-              "title": "So Big!",
-              "imdbId": "tt0023491",
+              "title": "Hell's House",
+              "imdbId": "tt0022991",
               "year": "1932",
-              "slug": "so-big-1932",
-              "grade": "D"
+              "slug": "hells-house-1932",
+              "grade": "C-"
             }
           ]
         }
@@ -44368,7 +44380,7 @@
     "originalTitle": "The Hills Have Eyes Part II",
     "gradeValue": 1,
     "runtimeMinutes": 86,
-    "releaseSequence": "1984-??-??tt0089274",
+    "releaseSequence": "1984-06-01tt0089274",
     "directorNames": [
       "Wes Craven"
     ],
@@ -44398,6 +44410,13 @@
           "slug": "wes-craven",
           "titles": [
             {
+              "title": "Deadly Blessing",
+              "imdbId": "tt0082245",
+              "year": "1981",
+              "slug": "deadly-blessing-1981",
+              "grade": "D-"
+            },
+            {
               "title": "Swamp Thing",
               "imdbId": "tt0084745",
               "year": "1982",
@@ -44417,13 +44436,6 @@
               "year": "1986",
               "slug": "deadly-friend-1986",
               "grade": "F"
-            },
-            {
-              "title": "The Last House on the Left",
-              "imdbId": "tt0068833",
-              "year": "1972",
-              "slug": "the-last-house-on-the-left-1972",
-              "grade": "D+"
             }
           ]
         }
@@ -44482,7 +44494,7 @@
     "originalTitle": "Doctor Strange",
     "gradeValue": 6,
     "runtimeMinutes": 115,
-    "releaseSequence": "2016-11-04tt1211837",
+    "releaseSequence": "2016-10-13tt1211837",
     "directorNames": [
       "Scott Derrickson"
     ],
@@ -44568,7 +44580,7 @@
     "originalTitle": "Night of the Demons",
     "gradeValue": 5,
     "runtimeMinutes": 90,
-    "releaseSequence": "1988-10-14tt0093624",
+    "releaseSequence": "1988-04-27tt0093624",
     "directorNames": [
       "Kevin Tenney"
     ],
@@ -44647,7 +44659,7 @@
     "originalTitle": "Valentine",
     "gradeValue": 5,
     "runtimeMinutes": 96,
-    "releaseSequence": "2001-02-02tt0242998",
+    "releaseSequence": "2001-02-01tt0242998",
     "directorNames": [
       "Jamie Blanks"
     ],
@@ -44803,7 +44815,7 @@
     "originalTitle": "The Family Stone",
     "gradeValue": 4,
     "runtimeMinutes": 103,
-    "releaseSequence": "2005-12-16tt0356680",
+    "releaseSequence": "2005-11-26tt0356680",
     "directorNames": [
       "Thomas Bezucha"
     ],
@@ -44884,7 +44896,7 @@
     "originalTitle": "Rare Exports",
     "gradeValue": 9,
     "runtimeMinutes": 84,
-    "releaseSequence": "2010-12-02tt1401143",
+    "releaseSequence": "2010-08-07tt1401143",
     "directorNames": [
       "Jalmari Helander"
     ],
@@ -44968,7 +44980,7 @@
     "originalTitle": "Uma",
     "gradeValue": 4,
     "runtimeMinutes": 128,
-    "releaseSequence": "1941-??-??tt0034333",
+    "releaseSequence": "1941-03-11tt0034333",
     "directorNames": [
       "Kajir\u00f4 Yamamoto"
     ],
@@ -45158,7 +45170,7 @@
     "originalTitle": "The Skin Game",
     "gradeValue": 3,
     "runtimeMinutes": 85,
-    "releaseSequence": "1931-06-20tt0022395",
+    "releaseSequence": "1931-02-26tt0022395",
     "directorNames": [
       "Alfred Hitchcock"
     ],
@@ -45272,7 +45284,7 @@
     "originalTitle": "Spider-Man: No Way Home",
     "gradeValue": 7,
     "runtimeMinutes": 148,
-    "releaseSequence": "2021-12-17tt10872600",
+    "releaseSequence": "2021-12-13tt10872600",
     "directorNames": [
       "Jon Watts"
     ],
@@ -45465,13 +45477,6 @@
           "slug": "warren-oates",
           "titles": [
             {
-              "title": "Race with the Devil",
-              "imdbId": "tt0073600",
-              "year": "1975",
-              "slug": "race-with-the-devil-1975",
-              "grade": "B-"
-            },
-            {
               "title": "Yellowstone Kelly",
               "imdbId": "tt0053457",
               "year": "1959",
@@ -45491,6 +45496,13 @@
               "year": "1973",
               "slug": "the-thief-who-came-to-dinner-1973",
               "grade": "B+"
+            },
+            {
+              "title": "Race with the Devil",
+              "imdbId": "tt0073600",
+              "year": "1975",
+              "slug": "race-with-the-devil-1975",
+              "grade": "B-"
             }
           ]
         }
@@ -45669,7 +45681,7 @@
     "originalTitle": "Pulp",
     "gradeValue": 6,
     "runtimeMinutes": 95,
-    "releaseSequence": "1972-??-??tt0069134",
+    "releaseSequence": "1972-08-16tt0069134",
     "directorNames": [
       "Mike Hodges"
     ],
@@ -45745,7 +45757,7 @@
     "originalTitle": "What About Bob?",
     "gradeValue": 7,
     "runtimeMinutes": 99,
-    "releaseSequence": "1991-05-17tt0103241",
+    "releaseSequence": "1991-05-15tt0103241",
     "directorNames": [
       "Frank Oz"
     ],
@@ -45827,7 +45839,7 @@
     "originalTitle": "Under the Skin",
     "gradeValue": 8,
     "runtimeMinutes": 108,
-    "releaseSequence": "2013-??-??tt1441395",
+    "releaseSequence": "2013-08-29tt1441395",
     "directorNames": [
       "Jonathan Glazer"
     ],
@@ -45905,7 +45917,7 @@
     "originalTitle": "Harry in Your Pocket",
     "gradeValue": 7,
     "runtimeMinutes": 103,
-    "releaseSequence": "1973-10-18tt0070158",
+    "releaseSequence": "1973-09-23tt0070158",
     "directorNames": [
       "Bruce Geller"
     ],
@@ -46026,7 +46038,7 @@
     "originalTitle": "The Range Feud",
     "gradeValue": 4,
     "runtimeMinutes": 64,
-    "releaseSequence": "1931-12-01tt0022293",
+    "releaseSequence": "1931-10-14tt0022293",
     "directorNames": [
       "D. Ross Lederman"
     ],
@@ -46137,7 +46149,7 @@
     "originalTitle": "National Lampoon's Christmas Vacation",
     "gradeValue": 10,
     "runtimeMinutes": 97,
-    "releaseSequence": "1989-12-01tt0097958",
+    "releaseSequence": "1989-11-30tt0097958",
     "directorNames": [
       "Jeremiah S. Chechik"
     ],
@@ -46234,7 +46246,7 @@
     "originalTitle": "The Death Kiss",
     "gradeValue": 3,
     "runtimeMinutes": 75,
-    "releaseSequence": "1932-??-??tt0023935",
+    "releaseSequence": "1932-12-05tt0023935",
     "directorNames": [
       "Edwin L. Marin"
     ],
@@ -46397,10 +46409,10 @@
               "grade": "D+"
             },
             {
-              "title": "Port of Call",
-              "imdbId": "tt0040418",
+              "title": "Music in Darkness",
+              "imdbId": "tt0040622",
               "year": "1948",
-              "slug": "port-of-call-1948",
+              "slug": "music-in-darkness-1948",
               "grade": "D+"
             }
           ]
@@ -46459,7 +46471,7 @@
     "originalTitle": "Leprechaun",
     "gradeValue": 4,
     "runtimeMinutes": 92,
-    "releaseSequence": "1992-??-??tt0107387",
+    "releaseSequence": "1992-04-24tt0107387",
     "directorNames": [
       "Mark Jones"
     ],
@@ -46619,7 +46631,7 @@
     "originalTitle": "The Girl with the Dragon Tattoo",
     "gradeValue": 3,
     "runtimeMinutes": 158,
-    "releaseSequence": "2011-12-21tt1568346",
+    "releaseSequence": "2011-12-12tt1568346",
     "directorNames": [
       "David Fincher"
     ],
@@ -46820,7 +46832,7 @@
     "originalTitle": "Deathtrap",
     "gradeValue": 8,
     "runtimeMinutes": 116,
-    "releaseSequence": "1982-03-19tt0083806",
+    "releaseSequence": "1982-03-16tt0083806",
     "directorNames": [
       "Sidney Lumet"
     ],
@@ -46896,7 +46908,7 @@
     "originalTitle": "Ladies' Man",
     "gradeValue": 6,
     "runtimeMinutes": 75,
-    "releaseSequence": "1931-05-09tt0022043",
+    "releaseSequence": "1931-04-16tt0022043",
     "directorNames": [
       "Lothar Mendes"
     ],
@@ -47250,7 +47262,7 @@
     "originalTitle": "Due occhi diabolici",
     "gradeValue": 7,
     "runtimeMinutes": 120,
-    "releaseSequence": "1990-??-??tt0100827",
+    "releaseSequence": "1990-01-25tt0100827",
     "directorNames": [
       "Dario Argento",
       "George A. Romero"
@@ -47364,7 +47376,7 @@
     "originalTitle": "Behind the Mask: The Rise of Leslie Vernon",
     "gradeValue": 9,
     "runtimeMinutes": 92,
-    "releaseSequence": "2006-??-??tt0437857",
+    "releaseSequence": "2006-07-08tt0437857",
     "directorNames": [
       "Scott Glosserman"
     ],
@@ -47556,7 +47568,7 @@
     "originalTitle": "Behind That Curtain",
     "gradeValue": 4,
     "runtimeMinutes": 91,
-    "releaseSequence": "1929-06-30tt0019684",
+    "releaseSequence": "1929-06-28tt0019684",
     "directorNames": [
       "Irving Cummings"
     ],
@@ -47667,7 +47679,7 @@
     "originalTitle": "Virginia City",
     "gradeValue": 5,
     "runtimeMinutes": 121,
-    "releaseSequence": "1940-03-23tt0033226",
+    "releaseSequence": "1940-03-16tt0033226",
     "directorNames": [
       "Michael Curtiz"
     ],
@@ -47950,7 +47962,7 @@
     "originalTitle": "Hatchet III",
     "gradeValue": 7,
     "runtimeMinutes": 81,
-    "releaseSequence": "2013-11-07tt1870419",
+    "releaseSequence": "2013-06-14tt1870419",
     "directorNames": [
       "BJ McDonnell"
     ],
@@ -48027,7 +48039,7 @@
     "originalTitle": "Deadpool",
     "gradeValue": 10,
     "runtimeMinutes": 108,
-    "releaseSequence": "2016-02-12tt1431045",
+    "releaseSequence": "2016-01-21tt1431045",
     "directorNames": [
       "Tim Miller"
     ],
@@ -48197,7 +48209,7 @@
     "originalTitle": "Business and Pleasure",
     "gradeValue": 3,
     "runtimeMinutes": 77,
-    "releaseSequence": "1932-03-06tt0021702",
+    "releaseSequence": "1932-02-24tt0021702",
     "directorNames": [
       "David Butler"
     ],
@@ -48273,7 +48285,7 @@
     "originalTitle": "The Cabin in the Cotton",
     "gradeValue": 3,
     "runtimeMinutes": 78,
-    "releaseSequence": "1932-10-15tt0022735",
+    "releaseSequence": "1932-09-26tt0022735",
     "directorNames": [
       "Michael Curtiz"
     ],
@@ -48304,18 +48316,18 @@
           "slug": "bette-davis",
           "titles": [
             {
+              "title": "So Big!",
+              "imdbId": "tt0023491",
+              "year": "1932",
+              "slug": "so-big-1932",
+              "grade": "D"
+            },
+            {
               "title": "The Rich Are Always with Us",
               "imdbId": "tt0023394",
               "year": "1932",
               "slug": "the-rich-are-always-with-us-1932",
               "grade": "D"
-            },
-            {
-              "title": "Hell's House",
-              "imdbId": "tt0022991",
-              "year": "1932",
-              "slug": "hells-house-1932",
-              "grade": "C-"
             },
             {
               "title": "Three on a Match",
@@ -48384,7 +48396,7 @@
     "originalTitle": "The Sentinel",
     "gradeValue": 7,
     "runtimeMinutes": 92,
-    "releaseSequence": "1977-02-11tt0076683",
+    "releaseSequence": "1977-01-07tt0076683",
     "directorNames": [
       "Michael Winner"
     ],
@@ -48470,7 +48482,7 @@
     "originalTitle": "Quatermass 2",
     "gradeValue": 4,
     "runtimeMinutes": 85,
-    "releaseSequence": "1957-09-01tt0050873",
+    "releaseSequence": "1957-05-10tt0050873",
     "directorNames": [
       "Val Guest"
     ],
@@ -49066,8 +49078,7 @@
     "slug": "the-magnificent-seven-1960",
     "grade": "B",
     "countries": [
-      "United States",
-      "Mexico"
+      "United States"
     ],
     "genres": [
       "Action",
@@ -49222,18 +49233,18 @@
           "slug": "warren-oates",
           "titles": [
             {
-              "title": "Private Property",
-              "imdbId": "tt0054209",
-              "year": "1960",
-              "slug": "private-property-1960",
-              "grade": "D+"
-            },
-            {
               "title": "The Rise and Fall of Legs Diamond",
               "imdbId": "tt0054243",
               "year": "1960",
               "slug": "the-rise-and-fall-of-legs-diamond-1960",
               "grade": "C+"
+            },
+            {
+              "title": "Private Property",
+              "imdbId": "tt0054209",
+              "year": "1960",
+              "slug": "private-property-1960",
+              "grade": "D+"
             },
             {
               "title": "Race with the Devil",
@@ -49381,15 +49392,15 @@
     "originalTitle": "Shock Waves",
     "gradeValue": 4,
     "runtimeMinutes": 85,
-    "releaseSequence": "1977-07-15tt0076704",
+    "releaseSequence": "1977-06-22tt0076704",
     "directorNames": [
       "Ken Wiederhorn"
     ],
     "principalCastNames": [
-      "Peter Cushing",
-      "John Carradine",
+      "Clarence Thomas",
       "Brooke Adams",
-      "Fred Buch"
+      "Luke Halpin",
+      "John Carradine"
     ],
     "reviewDate": "2015-08-15",
     "reviewYear": "2015",
@@ -49572,7 +49583,7 @@
     "originalTitle": "The Cabin in the Woods",
     "gradeValue": 13,
     "runtimeMinutes": 95,
-    "releaseSequence": "2011-??-??tt1259521",
+    "releaseSequence": "2011-12-11tt1259521",
     "directorNames": [
       "Drew Goddard"
     ],
@@ -49689,7 +49700,7 @@
     "originalTitle": "Dead of Night",
     "gradeValue": 5,
     "runtimeMinutes": 77,
-    "releaseSequence": "1945-??-??tt0037635",
+    "releaseSequence": "1945-09-09tt0037635",
     "directorNames": [
       "Alberto Cavalcanti",
       "Charles Crichton",
@@ -49884,7 +49895,7 @@
     "originalTitle": "X-Men: Days of Future Past",
     "gradeValue": 7,
     "runtimeMinutes": 132,
-    "releaseSequence": "2014-05-23tt1877832",
+    "releaseSequence": "2014-05-10tt1877832",
     "directorNames": [
       "Bryan Singer"
     ],
@@ -49969,7 +49980,7 @@
     "originalTitle": "Man of the World",
     "gradeValue": 4,
     "runtimeMinutes": 74,
-    "releaseSequence": "1931-03-28tt0022119",
+    "releaseSequence": "1931-03-20tt0022119",
     "directorNames": [
       "Richard Wallace"
     ],
@@ -50082,7 +50093,7 @@
     "originalTitle": "Interference",
     "gradeValue": 4,
     "runtimeMinutes": 83,
-    "releaseSequence": "1928-??-??tt0019035",
+    "releaseSequence": "1928-11-05tt0019035",
     "directorNames": [
       "Lothar Mendes",
       "Roy Pomeroy"
@@ -50276,7 +50287,7 @@
     "originalTitle": "The Criminal Code",
     "gradeValue": 7,
     "runtimeMinutes": 97,
-    "releaseSequence": "1930-??-??tt0021770",
+    "releaseSequence": "1930-12-31tt0021770",
     "directorNames": [
       "Howard Hawks"
     ],
@@ -50422,7 +50433,7 @@
     "originalTitle": "Stereo (Tile 3B of a CAEE Educational Mosaic)",
     "gradeValue": 3,
     "runtimeMinutes": 65,
-    "releaseSequence": "1969-??-??tt0065036",
+    "releaseSequence": "1969-06-20tt0065036",
     "directorNames": [
       "David Cronenberg"
     ],
@@ -50452,11 +50463,11 @@
           "slug": "david-cronenberg",
           "titles": [
             {
-              "title": "Fast Company",
-              "imdbId": "tt0079138",
+              "title": "The Brood",
+              "imdbId": "tt0078908",
               "year": "1979",
-              "slug": "fast-company-1979",
-              "grade": "C"
+              "slug": "the-brood-1979",
+              "grade": "D-"
             },
             {
               "title": "Crimes of the Future",
@@ -50535,7 +50546,7 @@
     "originalTitle": "The Town That Dreaded Sundown",
     "gradeValue": 7,
     "runtimeMinutes": 86,
-    "releaseSequence": "2014-10-17tt2561546",
+    "releaseSequence": "2014-09-20tt2561546",
     "directorNames": [
       "Alfonso Gomez-Rejon"
     ],
@@ -50768,7 +50779,7 @@
     "originalTitle": "Sommarnattens leende",
     "gradeValue": 7,
     "runtimeMinutes": 109,
-    "releaseSequence": "1955-??-??tt0048641",
+    "releaseSequence": "1955-12-26tt0048641",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -50882,7 +50893,7 @@
     "originalTitle": "Free Fire",
     "gradeValue": 7,
     "runtimeMinutes": 91,
-    "releaseSequence": "2016-??-??tt4158096",
+    "releaseSequence": "2016-09-08tt4158096",
     "directorNames": [
       "Ben Wheatley"
     ],
@@ -50949,8 +50960,7 @@
     "slug": "inside-out-2015",
     "grade": "C",
     "countries": [
-      "United States",
-      "Japan"
+      "United States"
     ],
     "genres": [
       "Animation",
@@ -50964,7 +50974,7 @@
     "originalTitle": "Inside Out",
     "gradeValue": 6,
     "runtimeMinutes": 95,
-    "releaseSequence": "2015-06-19tt2096673",
+    "releaseSequence": "2015-05-18tt2096673",
     "directorNames": [
       "Pete Docter",
       "Ronnie Del Carmen"
@@ -51171,7 +51181,7 @@
     "originalTitle": "The Canal",
     "gradeValue": 4,
     "runtimeMinutes": 92,
-    "releaseSequence": "2014-10-10tt2517658",
+    "releaseSequence": "2014-04-18tt2517658",
     "directorNames": [
       "Ivan Kavanagh"
     ],
@@ -51251,7 +51261,7 @@
     "originalTitle": "Dead Reckoning",
     "gradeValue": 7,
     "runtimeMinutes": 100,
-    "releaseSequence": "1946-??-??tt0039305",
+    "releaseSequence": "1946-12-31tt0039305",
     "directorNames": [
       "John Cromwell"
     ],
@@ -51492,7 +51502,7 @@
     "originalTitle": "Freaks",
     "gradeValue": 10,
     "runtimeMinutes": 64,
-    "releaseSequence": "1932-02-20tt0022913",
+    "releaseSequence": "1932-??-??tt0022913",
     "directorNames": [
       "Tod Browning"
     ],
@@ -51720,7 +51730,7 @@
     "originalTitle": "Faust: Love of the Damned",
     "gradeValue": 4,
     "runtimeMinutes": 101,
-    "releaseSequence": "2000-??-??tt0223268",
+    "releaseSequence": "2000-10-12tt0223268",
     "directorNames": [
       "Brian Yuzna"
     ],
@@ -52040,7 +52050,7 @@
     "originalTitle": "In Which We Serve",
     "gradeValue": 7,
     "runtimeMinutes": 115,
-    "releaseSequence": "1942-12-23tt0034891",
+    "releaseSequence": "1942-09-17tt0034891",
     "directorNames": [
       "No\u00ebl Coward",
       "David Lean"
@@ -52119,7 +52129,7 @@
     "originalTitle": "Saw V",
     "gradeValue": 7,
     "runtimeMinutes": 92,
-    "releaseSequence": "2008-10-24tt1132626",
+    "releaseSequence": "2008-10-23tt1132626",
     "directorNames": [
       "David Hackl"
     ],
@@ -52345,7 +52355,7 @@
     "originalTitle": "Tetsuo",
     "gradeValue": 8,
     "runtimeMinutes": 67,
-    "releaseSequence": "1989-07-01tt0096251",
+    "releaseSequence": "1989-06-01tt0096251",
     "directorNames": [
       "Shin'ya Tsukamoto"
     ],
@@ -52500,7 +52510,7 @@
     "originalTitle": "The Love Witch",
     "gradeValue": 6,
     "runtimeMinutes": 120,
-    "releaseSequence": "2016-??-??tt3908142",
+    "releaseSequence": "2016-01-31tt3908142",
     "directorNames": [
       "Anna Biller"
     ],
@@ -52567,19 +52577,24 @@
     "slug": "spider-man-far-from-home-2019",
     "grade": "D+",
     "countries": [
-      "United States"
+      "United States",
+      "Australia",
+      "Czechia",
+      "Canada",
+      "Italy"
     ],
     "genres": [
       "Action",
       "Adventure",
       "Comedy",
+      "Fantasy",
       "Sci-Fi"
     ],
     "sortTitle": "Spider-Man: Far from Home (2019)",
     "originalTitle": "Spider-Man: Far from Home",
     "gradeValue": 4,
     "runtimeMinutes": 129,
-    "releaseSequence": "2019-07-02tt6320628",
+    "releaseSequence": "2019-06-26tt6320628",
     "directorNames": [
       "Jon Watts"
     ],
@@ -52656,7 +52671,7 @@
     "originalTitle": "A Chump at Oxford",
     "gradeValue": 4,
     "runtimeMinutes": 62,
-    "releaseSequence": "1940-02-16tt0032339",
+    "releaseSequence": "1940-01-25tt0032339",
     "directorNames": [
       "Alfred J. Goulding"
     ],
@@ -52769,7 +52784,7 @@
     "originalTitle": "Batman",
     "gradeValue": 11,
     "runtimeMinutes": 126,
-    "releaseSequence": "1989-06-23tt0096895",
+    "releaseSequence": "1989-??-??tt0096895",
     "directorNames": [
       "Tim Burton"
     ],
@@ -52846,7 +52861,7 @@
     "originalTitle": "You Better Watch Out",
     "gradeValue": 10,
     "runtimeMinutes": 100,
-    "releaseSequence": "1980-??-??tt0081793",
+    "releaseSequence": "1980-11-01tt0081793",
     "directorNames": [
       "Lewis Jackson"
     ],
@@ -53066,7 +53081,7 @@
     "originalTitle": "The Key",
     "gradeValue": 4,
     "runtimeMinutes": 71,
-    "releaseSequence": "1934-06-09tt0025346",
+    "releaseSequence": "1934-05-31tt0025346",
     "directorNames": [
       "Michael Curtiz"
     ],
@@ -53105,11 +53120,11 @@
           "slug": "william-powell",
           "titles": [
             {
-              "title": "Fashions of 1934",
-              "imdbId": "tt0025101",
-              "year": "1934",
-              "slug": "fashions-of-1934-1934",
-              "grade": "D"
+              "title": "The Kennel Murder Case",
+              "imdbId": "tt0024210",
+              "year": "1933",
+              "slug": "the-kennel-murder-case-1933",
+              "grade": "D+"
             },
             {
               "title": "The Thin Man",
@@ -53119,18 +53134,18 @@
               "grade": "B+"
             },
             {
+              "title": "Fashions of 1934",
+              "imdbId": "tt0025101",
+              "year": "1934",
+              "slug": "fashions-of-1934-1934",
+              "grade": "D"
+            },
+            {
               "title": "The Great Ziegfeld",
               "imdbId": "tt0027698",
               "year": "1936",
               "slug": "the-great-ziegfeld-1936",
               "grade": "D"
-            },
-            {
-              "title": "The Heavenly Body",
-              "imdbId": "tt0035980",
-              "year": "1944",
-              "slug": "the-heavenly-body-1944",
-              "grade": "D-"
             }
           ]
         }
@@ -53187,7 +53202,7 @@
     "originalTitle": "The Man in the Iron Mask",
     "gradeValue": 6,
     "runtimeMinutes": 113,
-    "releaseSequence": "1939-07-13tt0031619",
+    "releaseSequence": "1939-06-26tt0031619",
     "directorNames": [
       "James Whale"
     ],
@@ -53302,7 +53317,7 @@
     "originalTitle": "The House That Dripped Blood",
     "gradeValue": 7,
     "runtimeMinutes": 102,
-    "releaseSequence": "1971-04-02tt0065854",
+    "releaseSequence": "1971-02-21tt0065854",
     "directorNames": [
       "Peter Duffell"
     ],
@@ -53347,18 +53362,18 @@
               "grade": "D"
             },
             {
-              "title": "Hannie Caulder",
-              "imdbId": "tt0068675",
-              "year": "1971",
-              "slug": "hannie-caulder-1971",
-              "grade": "B"
-            },
-            {
               "title": "I, Monster",
               "imdbId": "tt0068727",
               "year": "1971",
               "slug": "i-monster-1971",
               "grade": "D+"
+            },
+            {
+              "title": "Hannie Caulder",
+              "imdbId": "tt0068675",
+              "year": "1971",
+              "slug": "hannie-caulder-1971",
+              "grade": "B"
             }
           ]
         },
@@ -53448,7 +53463,7 @@
     "originalTitle": "Big City Blues",
     "gradeValue": 7,
     "runtimeMinutes": 63,
-    "releaseSequence": "1932-09-18tt0022676",
+    "releaseSequence": "1932-09-10tt0022676",
     "directorNames": [
       "Mervyn LeRoy"
     ],
@@ -53570,7 +53585,7 @@
     "originalTitle": "Du bei chuan wang",
     "gradeValue": 10,
     "runtimeMinutes": 93,
-    "releaseSequence": "1972-??-??tt0067009",
+    "releaseSequence": "1972-08-02tt0067009",
     "directorNames": [
       "Jimmy Wang Yu"
     ],
@@ -53647,7 +53662,7 @@
     "originalTitle": "Martyrs",
     "gradeValue": 10,
     "runtimeMinutes": 99,
-    "releaseSequence": "2008-09-03tt1029234",
+    "releaseSequence": "2008-05-01tt1029234",
     "directorNames": [
       "Pascal Laugier"
     ],
@@ -53994,7 +54009,7 @@
     "originalTitle": "Rawhead Rex",
     "gradeValue": 3,
     "runtimeMinutes": 89,
-    "releaseSequence": "1986-??-??tt0091829",
+    "releaseSequence": "1986-03-14tt0091829",
     "directorNames": [
       "George Pavlou"
     ],
@@ -54073,7 +54088,7 @@
     "originalTitle": "Kill a Dragon",
     "gradeValue": 4,
     "runtimeMinutes": 91,
-    "releaseSequence": "1967-??-??tt0180781",
+    "releaseSequence": "1967-12-06tt0180781",
     "directorNames": [
       "Michael D. Moore"
     ],
@@ -54227,7 +54242,7 @@
     "originalTitle": "She Couldn't Say No",
     "gradeValue": 5,
     "runtimeMinutes": 89,
-    "releaseSequence": "1953-??-??tt0047476",
+    "releaseSequence": "1953-06-28tt0047476",
     "directorNames": [
       "Lloyd Bacon"
     ],
@@ -54342,7 +54357,7 @@
     "originalTitle": "The Ghoul",
     "gradeValue": 1,
     "runtimeMinutes": 77,
-    "releaseSequence": "1933-11-25tt0024055",
+    "releaseSequence": "1933-08-06tt0024055",
     "directorNames": [
       "T. Hayes Hunter"
     ],
@@ -54454,7 +54469,7 @@
     "originalTitle": "Sweet Smell of Success",
     "gradeValue": 10,
     "runtimeMinutes": 96,
-    "releaseSequence": "1957-07-04tt0051036",
+    "releaseSequence": "1957-06-27tt0051036",
     "directorNames": [
       "Alexander Mackendrick"
     ],
@@ -54532,7 +54547,7 @@
     "originalTitle": "Funny Games",
     "gradeValue": 12,
     "runtimeMinutes": 108,
-    "releaseSequence": "1997-??-??tt0119167",
+    "releaseSequence": "1997-05-14tt0119167",
     "directorNames": [
       "Michael Haneke"
     ],
@@ -54645,7 +54660,7 @@
     "originalTitle": "Where Danger Lives",
     "gradeValue": 1,
     "runtimeMinutes": 82,
-    "releaseSequence": "1950-11-16tt0043131",
+    "releaseSequence": "1950-11-15tt0043131",
     "directorNames": [
       "John Farrow"
     ],
@@ -54758,7 +54773,7 @@
     "originalTitle": "The House on Sorority Row",
     "gradeValue": 5,
     "runtimeMinutes": 91,
-    "releaseSequence": "1982-??-??tt0085694",
+    "releaseSequence": "1982-11-19tt0085694",
     "directorNames": [
       "Mark Rosman"
     ],
@@ -54836,7 +54851,7 @@
     "originalTitle": "The Crowd Roars",
     "gradeValue": 5,
     "runtimeMinutes": 85,
-    "releaseSequence": "1932-04-16tt0022792",
+    "releaseSequence": "1932-04-13tt0022792",
     "directorNames": [
       "Howard Hawks"
     ],
@@ -54957,7 +54972,7 @@
     "originalTitle": "Born Reckless",
     "gradeValue": 4,
     "runtimeMinutes": 82,
-    "releaseSequence": "1930-06-06tt0020702",
+    "releaseSequence": "1930-05-11tt0020702",
     "directorNames": [
       "John Ford"
     ],
@@ -55071,7 +55086,7 @@
     "originalTitle": "Groundhog Day",
     "gradeValue": 10,
     "runtimeMinutes": 101,
-    "releaseSequence": "1993-02-12tt0107048",
+    "releaseSequence": "1993-02-02tt0107048",
     "directorNames": [
       "Harold Ramis"
     ],
@@ -55150,7 +55165,7 @@
     "originalTitle": "Crisis",
     "gradeValue": 5,
     "runtimeMinutes": 95,
-    "releaseSequence": "1950-07-07tt0042352",
+    "releaseSequence": "1950-07-03tt0042352",
     "directorNames": [
       "Richard Brooks"
     ],
@@ -55261,7 +55276,7 @@
     "originalTitle": "Jungfruk\u00e4llan",
     "gradeValue": 9,
     "runtimeMinutes": 89,
-    "releaseSequence": "1960-11-14tt0053976",
+    "releaseSequence": "1960-02-08tt0053976",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -55363,7 +55378,9 @@
     "slug": "luca-2021",
     "grade": "C-",
     "countries": [
-      "United States"
+      "United States",
+      "Italy",
+      "Japan"
     ],
     "genres": [
       "Animation",
@@ -55377,7 +55394,7 @@
     "originalTitle": "Luca",
     "gradeValue": 5,
     "runtimeMinutes": 95,
-    "releaseSequence": "2021-06-18tt12801262",
+    "releaseSequence": "2021-06-17tt12801262",
     "directorNames": [
       "Enrico Casarosa"
     ],
@@ -55455,7 +55472,7 @@
     "originalTitle": "John Wick: Chapter 2",
     "gradeValue": 10,
     "runtimeMinutes": 122,
-    "releaseSequence": "2017-02-10tt4425200",
+    "releaseSequence": "2017-01-30tt4425200",
     "directorNames": [
       "Chad Stahelski"
     ],
@@ -55533,7 +55550,7 @@
     "originalTitle": "Up the River",
     "gradeValue": 8,
     "runtimeMinutes": 92,
-    "releaseSequence": "1930-10-12tt0021508",
+    "releaseSequence": "1930-10-10tt0021508",
     "directorNames": [
       "John Ford"
     ],
@@ -55909,7 +55926,7 @@
     "originalTitle": "Witchboard",
     "gradeValue": 2,
     "runtimeMinutes": 98,
-    "releaseSequence": "1986-??-??tt0090327",
+    "releaseSequence": "1986-12-31tt0090327",
     "directorNames": [
       "Kevin Tenney"
     ],
@@ -55989,7 +56006,7 @@
     "originalTitle": "Rachel and the Stranger",
     "gradeValue": 3,
     "runtimeMinutes": 93,
-    "releaseSequence": "1948-10-02tt0040720",
+    "releaseSequence": "1948-09-18tt0040720",
     "directorNames": [
       "Norman Foster"
     ],
@@ -56133,7 +56150,10 @@
     "slug": "mortal-kombat-legends-snow-blind-2022",
     "grade": "C-",
     "countries": [
-      "United States"
+      "United States",
+      "Canada",
+      "South Korea",
+      "Australia"
     ],
     "genres": [
       "Animation",
@@ -56146,7 +56166,7 @@
     "originalTitle": "Mortal Kombat Legends: Snow Blind",
     "gradeValue": 5,
     "runtimeMinutes": 82,
-    "releaseSequence": "2022-??-??tt21477618",
+    "releaseSequence": "2022-10-09tt21477618",
     "directorNames": [
       "Rick Morales"
     ],
@@ -56343,7 +56363,7 @@
     "originalTitle": "Frozen",
     "gradeValue": 5,
     "runtimeMinutes": 93,
-    "releaseSequence": "2010-03-25tt1323045",
+    "releaseSequence": "2010-01-24tt1323045",
     "directorNames": [
       "Adam Green"
     ],
@@ -56577,18 +56597,18 @@
               "grade": "C-"
             },
             {
-              "title": "The Brood",
-              "imdbId": "tt0078908",
-              "year": "1979",
-              "slug": "the-brood-1979",
-              "grade": "D-"
-            },
-            {
               "title": "Fast Company",
               "imdbId": "tt0079138",
               "year": "1979",
               "slug": "fast-company-1979",
               "grade": "C"
+            },
+            {
+              "title": "The Brood",
+              "imdbId": "tt0078908",
+              "year": "1979",
+              "slug": "the-brood-1979",
+              "grade": "D-"
             }
           ]
         }
@@ -56767,7 +56787,7 @@
     "originalTitle": "Lake Mungo",
     "gradeValue": 7,
     "runtimeMinutes": 87,
-    "releaseSequence": "2008-??-??tt0816556",
+    "releaseSequence": "2008-06-18tt0816556",
     "directorNames": [
       "Joel Anderson"
     ],
@@ -56846,7 +56866,7 @@
     "originalTitle": "Happy Death Day",
     "gradeValue": 7,
     "runtimeMinutes": 96,
-    "releaseSequence": "2017-10-13tt5308322",
+    "releaseSequence": "2017-10-07tt5308322",
     "directorNames": [
       "Christopher Landon"
     ],
@@ -56923,7 +56943,7 @@
     "originalTitle": "Juno and the Paycock",
     "gradeValue": 1,
     "runtimeMinutes": 85,
-    "releaseSequence": "1929-??-??tt0021015",
+    "releaseSequence": "1929-12-30tt0021015",
     "directorNames": [
       "Alfred Hitchcock"
     ],
@@ -57034,7 +57054,7 @@
     "originalTitle": "\u00c0 l'int\u00e9rieur",
     "gradeValue": 4,
     "runtimeMinutes": 82,
-    "releaseSequence": "2007-06-13tt0856288",
+    "releaseSequence": "2007-05-24tt0856288",
     "directorNames": [
       "Alexandre Bustillo",
       "Julien Maury"
@@ -57192,7 +57212,7 @@
     "originalTitle": "Rich and Strange",
     "gradeValue": 3,
     "runtimeMinutes": 83,
-    "releaseSequence": "1931-??-??tt0023395",
+    "releaseSequence": "1931-12-10tt0023395",
     "directorNames": [
       "Alfred Hitchcock"
     ],
@@ -57305,7 +57325,7 @@
     "originalTitle": "One Way Passage",
     "gradeValue": 9,
     "runtimeMinutes": 67,
-    "releaseSequence": "1932-10-22tt0023305",
+    "releaseSequence": "1932-10-04tt0023305",
     "directorNames": [
       "Tay Garnett"
     ],
@@ -57419,7 +57439,7 @@
     "originalTitle": "Holiday Affair",
     "gradeValue": 6,
     "runtimeMinutes": 87,
-    "releaseSequence": "1949-12-24tt0041473",
+    "releaseSequence": "1949-11-23tt0041473",
     "directorNames": [
       "Don Hartman"
     ],
@@ -57532,7 +57552,7 @@
     "originalTitle": "China Clipper",
     "gradeValue": 3,
     "runtimeMinutes": 88,
-    "releaseSequence": "1936-08-22tt0027445",
+    "releaseSequence": "1936-08-11tt0027445",
     "directorNames": [
       "Ray Enright"
     ],
@@ -57653,7 +57673,7 @@
     "originalTitle": "When Harry Met Sally...",
     "gradeValue": 8,
     "runtimeMinutes": 95,
-    "releaseSequence": "1989-07-21tt0098635",
+    "releaseSequence": "1989-07-12tt0098635",
     "directorNames": [
       "Rob Reiner"
     ],
@@ -57807,7 +57827,7 @@
     "originalTitle": "The City of the Dead",
     "gradeValue": 9,
     "runtimeMinutes": 76,
-    "releaseSequence": "1960-??-??tt0053719",
+    "releaseSequence": "1960-09-09tt0053719",
     "directorNames": [
       "John Llewellyn Moxey"
     ],
@@ -57920,7 +57940,7 @@
     "originalTitle": "Rasputin: The Mad Monk",
     "gradeValue": 4,
     "runtimeMinutes": 91,
-    "releaseSequence": "1966-04-06tt0059635",
+    "releaseSequence": "1966-02-20tt0059635",
     "directorNames": [
       "Don Sharp"
     ],
@@ -58097,13 +58117,6 @@
           "slug": "david-cronenberg",
           "titles": [
             {
-              "title": "Shivers",
-              "imdbId": "tt0073705",
-              "year": "1975",
-              "slug": "shivers-1975",
-              "grade": "C-"
-            },
-            {
               "title": "Rabid",
               "imdbId": "tt0076590",
               "year": "1977",
@@ -58123,6 +58136,13 @@
               "year": "2022",
               "slug": "crimes-of-the-future-2022",
               "grade": "B-"
+            },
+            {
+              "title": "Stereo",
+              "imdbId": "tt0065036",
+              "year": "1969",
+              "slug": "stereo-tile-3b-of-a-caee-educational-mosaic-1969",
+              "grade": "D"
             }
           ]
         }
@@ -58180,7 +58200,7 @@
     "originalTitle": "The Autopsy of Jane Doe",
     "gradeValue": 7,
     "runtimeMinutes": 86,
-    "releaseSequence": "2016-12-21tt3289956",
+    "releaseSequence": "2016-09-09tt3289956",
     "directorNames": [
       "Andr\u00e9 \u00d8vredal"
     ],
@@ -58258,15 +58278,15 @@
     "originalTitle": "The Quatermass Xperiment",
     "gradeValue": 8,
     "runtimeMinutes": 78,
-    "releaseSequence": "1955-??-??tt0049646",
+    "releaseSequence": "1955-08-26tt0049646",
     "directorNames": [
       "Val Guest"
     ],
     "principalCastNames": [
       "Brian Donlevy",
       "Jack Warner",
-      "Margia Dean",
-      "Thora Hird"
+      "Richard Wordsworth",
+      "Margia Dean"
     ],
     "reviewDate": "2020-08-19",
     "reviewYear": "2020",
@@ -58402,11 +58422,11 @@
           "slug": "warren-oates",
           "titles": [
             {
-              "title": "The Rise and Fall of Legs Diamond",
-              "imdbId": "tt0054243",
+              "title": "Private Property",
+              "imdbId": "tt0054209",
               "year": "1960",
-              "slug": "the-rise-and-fall-of-legs-diamond-1960",
-              "grade": "C+"
+              "slug": "private-property-1960",
+              "grade": "D+"
             },
             {
               "title": "The Thief Who Came to Dinner",
@@ -58423,11 +58443,11 @@
               "grade": "C"
             },
             {
-              "title": "Private Property",
-              "imdbId": "tt0054209",
+              "title": "The Rise and Fall of Legs Diamond",
+              "imdbId": "tt0054243",
               "year": "1960",
-              "slug": "private-property-1960",
-              "grade": "D+"
+              "slug": "the-rise-and-fall-of-legs-diamond-1960",
+              "grade": "C+"
             }
           ]
         }
@@ -58614,7 +58634,7 @@
     "originalTitle": "The Other Guys",
     "gradeValue": 5,
     "runtimeMinutes": 107,
-    "releaseSequence": "2010-08-06tt1386588",
+    "releaseSequence": "2010-08-02tt1386588",
     "directorNames": [
       "Adam McKay"
     ],
@@ -58696,7 +58716,7 @@
     "originalTitle": "Infinity Pool",
     "gradeValue": 7,
     "runtimeMinutes": 117,
-    "releaseSequence": "2023-01-27tt10365998",
+    "releaseSequence": "2023-01-21tt10365998",
     "directorNames": [
       "Brandon Cronenberg"
     ],
@@ -58922,7 +58942,7 @@
     "originalTitle": "Freaky",
     "gradeValue": 7,
     "runtimeMinutes": 102,
-    "releaseSequence": "2020-11-13tt10919380",
+    "releaseSequence": "2020-10-08tt10919380",
     "directorNames": [
       "Christopher Landon"
     ],
@@ -59000,7 +59020,7 @@
     "originalTitle": "Grave",
     "gradeValue": 4,
     "runtimeMinutes": 99,
-    "releaseSequence": "2016-??-??tt4954522",
+    "releaseSequence": "2016-05-14tt4954522",
     "directorNames": [
       "Julia Ducournau"
     ],
@@ -59086,7 +59106,7 @@
     "originalTitle": "Straw Dogs",
     "gradeValue": 13,
     "runtimeMinutes": 113,
-    "releaseSequence": "1971-12-22tt0067800",
+    "releaseSequence": "1971-11-25tt0067800",
     "directorNames": [
       "Sam Peckinpah"
     ],
@@ -59171,7 +59191,7 @@
     "originalTitle": "The Body Snatcher",
     "gradeValue": 4,
     "runtimeMinutes": 78,
-    "releaseSequence": "1945-06-25tt0037549",
+    "releaseSequence": "1945-02-14tt0037549",
     "directorNames": [
       "Robert Wise"
     ],
@@ -59318,7 +59338,7 @@
     "originalTitle": "Obsession",
     "gradeValue": 4,
     "runtimeMinutes": 98,
-    "releaseSequence": "1976-09-01tt0074991",
+    "releaseSequence": "1976-08-01tt0074991",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -59431,7 +59451,7 @@
     "originalTitle": "Leprechaun 6: Back 2 Tha Hood",
     "gradeValue": 3,
     "runtimeMinutes": 87,
-    "releaseSequence": "2003-12-30tt0339294",
+    "releaseSequence": "2003-12-01tt0339294",
     "directorNames": [
       "Steven Ayromlooi"
     ],
@@ -59510,7 +59530,7 @@
     "originalTitle": "L'uccello dalle piume di cristallo",
     "gradeValue": 8,
     "runtimeMinutes": 96,
-    "releaseSequence": "1970-06-12tt0065143",
+    "releaseSequence": "1970-02-27tt0065143",
     "directorNames": [
       "Dario Argento"
     ],
@@ -59647,7 +59667,7 @@
     "originalTitle": "Fashions of 1934",
     "gradeValue": 3,
     "runtimeMinutes": 78,
-    "releaseSequence": "1934-02-14tt0025101",
+    "releaseSequence": "1934-??-??tt0025101",
     "directorNames": [
       "William Dieterle"
     ],
@@ -59720,20 +59740,6 @@
           "slug": "william-powell",
           "titles": [
             {
-              "title": "Private Detective 62",
-              "imdbId": "tt0024471",
-              "year": "1933",
-              "slug": "private-detective-62-1933",
-              "grade": "C-"
-            },
-            {
-              "title": "The Kennel Murder Case",
-              "imdbId": "tt0024210",
-              "year": "1933",
-              "slug": "the-kennel-murder-case-1933",
-              "grade": "D+"
-            },
-            {
               "title": "The Thin Man",
               "imdbId": "tt0025878",
               "year": "1934",
@@ -59746,6 +59752,20 @@
               "year": "1934",
               "slug": "the-key-1934",
               "grade": "D+"
+            },
+            {
+              "title": "The Great Ziegfeld",
+              "imdbId": "tt0027698",
+              "year": "1936",
+              "slug": "the-great-ziegfeld-1936",
+              "grade": "D"
+            },
+            {
+              "title": "The Heavenly Body",
+              "imdbId": "tt0035980",
+              "year": "1944",
+              "slug": "the-heavenly-body-1944",
+              "grade": "D-"
             }
           ]
         }
@@ -59803,7 +59823,7 @@
     "originalTitle": "\u00d4dishon",
     "gradeValue": 10,
     "runtimeMinutes": 115,
-    "releaseSequence": "1999-??-??tt0235198",
+    "releaseSequence": "1999-10-02tt0235198",
     "directorNames": [
       "Takashi Miike"
     ],
@@ -59880,7 +59900,7 @@
     "originalTitle": "Penny Serenade",
     "gradeValue": 1,
     "runtimeMinutes": 119,
-    "releaseSequence": "1941-04-24tt0034012",
+    "releaseSequence": "1941-??-??tt0034012",
     "directorNames": [
       "George Stevens"
     ],
@@ -59996,7 +60016,7 @@
     "originalTitle": "Nobody",
     "gradeValue": 10,
     "runtimeMinutes": 92,
-    "releaseSequence": "2021-03-26tt7888964",
+    "releaseSequence": "2021-03-18tt7888964",
     "directorNames": [
       "Ilya Naishuller"
     ],
@@ -60158,7 +60178,7 @@
     "originalTitle": "Mausoleum",
     "gradeValue": 4,
     "runtimeMinutes": 96,
-    "releaseSequence": "1983-??-??tt0085918",
+    "releaseSequence": "1983-02-18tt0085918",
     "directorNames": [
       "Michael Dugan"
     ],
@@ -60237,7 +60257,7 @@
     "originalTitle": "Il treno",
     "gradeValue": 8,
     "runtimeMinutes": 94,
-    "releaseSequence": "1989-??-??tt0096920",
+    "releaseSequence": "1989-10-01tt0096920",
     "directorNames": [
       "Jeff Kwitny"
     ],
@@ -60315,7 +60335,7 @@
     "originalTitle": "Good Times",
     "gradeValue": 1,
     "runtimeMinutes": 91,
-    "releaseSequence": "1967-05-01tt0061720",
+    "releaseSequence": "1967-04-11tt0061720",
     "directorNames": [
       "William Friedkin"
     ],
@@ -60511,7 +60531,7 @@
     "originalTitle": "The Ipcress File",
     "gradeValue": 9,
     "runtimeMinutes": 109,
-    "releaseSequence": "1965-08-02tt0059319",
+    "releaseSequence": "1965-03-18tt0059319",
     "directorNames": [
       "Sidney J. Furie"
     ],
@@ -60587,7 +60607,7 @@
     "originalTitle": "T\u00f6rst",
     "gradeValue": 1,
     "runtimeMinutes": 83,
-    "releaseSequence": "1949-??-??tt0041998",
+    "releaseSequence": "1949-10-17tt0041998",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -60617,10 +60637,10 @@
           "slug": "ingmar-bergman",
           "titles": [
             {
-              "title": "Music in Darkness",
-              "imdbId": "tt0040622",
+              "title": "Port of Call",
+              "imdbId": "tt0040418",
               "year": "1948",
-              "slug": "music-in-darkness-1948",
+              "slug": "port-of-call-1948",
               "grade": "D+"
             },
             {
@@ -60702,7 +60722,7 @@
     "originalTitle": "Zanna Bianca",
     "gradeValue": 4,
     "runtimeMinutes": 102,
-    "releaseSequence": "1973-??-??tt0069536",
+    "releaseSequence": "1973-12-21tt0069536",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -60815,7 +60835,7 @@
     "originalTitle": "Freddy vs. Jason",
     "gradeValue": 3,
     "runtimeMinutes": 97,
-    "releaseSequence": "2003-08-15tt0329101",
+    "releaseSequence": "2003-08-13tt0329101",
     "directorNames": [
       "Ronny Yu"
     ],
@@ -60980,18 +61000,18 @@
               "grade": "D"
             },
             {
-              "title": "Street of Chance",
-              "imdbId": "tt0021420",
-              "year": "1930",
-              "slug": "street-of-chance-1930",
-              "grade": "D+"
-            },
-            {
               "title": "Behind the Make-Up",
               "imdbId": "tt0020677",
               "year": "1930",
               "slug": "behind-the-make-up-1930",
               "grade": "C+"
+            },
+            {
+              "title": "Street of Chance",
+              "imdbId": "tt0021420",
+              "year": "1930",
+              "slug": "street-of-chance-1930",
+              "grade": "D+"
             }
           ]
         }
@@ -61050,7 +61070,7 @@
     "originalTitle": "Thor: Ragnarok",
     "gradeValue": 12,
     "runtimeMinutes": 130,
-    "releaseSequence": "2017-11-03tt3501632",
+    "releaseSequence": "2017-10-10tt3501632",
     "directorNames": [
       "Taika Waititi"
     ],
@@ -61136,7 +61156,7 @@
     "originalTitle": "Suzy",
     "gradeValue": 2,
     "runtimeMinutes": 93,
-    "releaseSequence": "1936-07-20tt0028330",
+    "releaseSequence": "1936-06-26tt0028330",
     "directorNames": [
       "George Fitzmaurice"
     ],
@@ -61607,18 +61627,18 @@
           "slug": "william-powell",
           "titles": [
             {
+              "title": "Private Detective 62",
+              "imdbId": "tt0024471",
+              "year": "1933",
+              "slug": "private-detective-62-1933",
+              "grade": "C-"
+            },
+            {
               "title": "The Kennel Murder Case",
               "imdbId": "tt0024210",
               "year": "1933",
               "slug": "the-kennel-murder-case-1933",
               "grade": "D+"
-            },
-            {
-              "title": "Fashions of 1934",
-              "imdbId": "tt0025101",
-              "year": "1934",
-              "slug": "fashions-of-1934-1934",
-              "grade": "D"
             },
             {
               "title": "The Key",
@@ -61628,10 +61648,10 @@
               "grade": "D+"
             },
             {
-              "title": "The Great Ziegfeld",
-              "imdbId": "tt0027698",
-              "year": "1936",
-              "slug": "the-great-ziegfeld-1936",
+              "title": "Fashions of 1934",
+              "imdbId": "tt0025101",
+              "year": "1934",
+              "slug": "fashions-of-1934-1934",
               "grade": "D"
             }
           ]
@@ -61688,7 +61708,7 @@
     "originalTitle": "La morte viene dallo spazio",
     "gradeValue": 4,
     "runtimeMinutes": 82,
-    "releaseSequence": "1958-??-??tt0051951",
+    "releaseSequence": "1958-09-04tt0051951",
     "directorNames": [
       "Paolo Heusch"
     ],
@@ -61768,7 +61788,7 @@
     "originalTitle": "Bram Stoker's Dracula",
     "gradeValue": 7,
     "runtimeMinutes": 128,
-    "releaseSequence": "1992-11-13tt0103874",
+    "releaseSequence": "1992-11-10tt0103874",
     "directorNames": [
       "Francis Ford Coppola"
     ],
@@ -61853,7 +61873,7 @@
     "originalTitle": "Shivers",
     "gradeValue": 5,
     "runtimeMinutes": 87,
-    "releaseSequence": "1975-??-??tt0073705",
+    "releaseSequence": "1975-09-01tt0073705",
     "directorNames": [
       "David Cronenberg"
     ],
@@ -61904,11 +61924,11 @@
               "grade": "C-"
             },
             {
-              "title": "The Brood",
-              "imdbId": "tt0078908",
+              "title": "Fast Company",
+              "imdbId": "tt0079138",
               "year": "1979",
-              "slug": "the-brood-1979",
-              "grade": "D-"
+              "slug": "fast-company-1979",
+              "grade": "C"
             }
           ]
         }
@@ -61967,7 +61987,7 @@
     "originalTitle": "Bones and All",
     "gradeValue": 7,
     "runtimeMinutes": 131,
-    "releaseSequence": "2022-11-23tt10168670",
+    "releaseSequence": "2022-09-02tt10168670",
     "directorNames": [
       "Luca Guadagnino"
     ],
@@ -62045,7 +62065,7 @@
     "originalTitle": "Black Widow",
     "gradeValue": 4,
     "runtimeMinutes": 134,
-    "releaseSequence": "2021-07-09tt3480822",
+    "releaseSequence": "2021-06-30tt3480822",
     "directorNames": [
       "Cate Shortland"
     ],
@@ -62125,7 +62145,7 @@
     "originalTitle": "Mortal Kombat",
     "gradeValue": 8,
     "runtimeMinutes": 110,
-    "releaseSequence": "2021-04-23tt0293429",
+    "releaseSequence": "2021-04-01tt0293429",
     "directorNames": [
       "Simon McQuoid"
     ],
@@ -62202,7 +62222,7 @@
     "originalTitle": "Life with Father",
     "gradeValue": 1,
     "runtimeMinutes": 118,
-    "releaseSequence": "1947-09-13tt0039566",
+    "releaseSequence": "1947-08-14tt0039566",
     "directorNames": [
       "Michael Curtiz"
     ],
@@ -62324,7 +62344,7 @@
     "originalTitle": "Saw III",
     "gradeValue": 6,
     "runtimeMinutes": 108,
-    "releaseSequence": "2006-10-27tt0489270",
+    "releaseSequence": "2006-10-26tt0489270",
     "directorNames": [
       "Darren Lynn Bousman"
     ],
@@ -62630,7 +62650,7 @@
     "originalTitle": "Howling II: Stirba - Werewolf Bitch",
     "gradeValue": 1,
     "runtimeMinutes": 91,
-    "releaseSequence": "1985-??-??tt0089308",
+    "releaseSequence": "1985-08-28tt0089308",
     "directorNames": [
       "Philippe Mora"
     ],
@@ -62661,11 +62681,11 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "I, Monster",
-              "imdbId": "tt0068727",
+              "title": "Hannie Caulder",
+              "imdbId": "tt0068675",
               "year": "1971",
-              "slug": "i-monster-1971",
-              "grade": "D+"
+              "slug": "hannie-caulder-1971",
+              "grade": "B"
             },
             {
               "title": "To the Devil a Daughter",
@@ -62833,7 +62853,7 @@
     "originalTitle": "Ant-Man and the Wasp",
     "gradeValue": 3,
     "runtimeMinutes": 118,
-    "releaseSequence": "2018-07-06tt5095030",
+    "releaseSequence": "2018-06-25tt5095030",
     "directorNames": [
       "Peyton Reed"
     ],
@@ -62910,7 +62930,7 @@
     "originalTitle": "Sydney",
     "gradeValue": 11,
     "runtimeMinutes": 101,
-    "releaseSequence": "1996-??-??tt0119256",
+    "releaseSequence": "1996-01-20tt0119256",
     "directorNames": [
       "Paul Thomas Anderson"
     ],
@@ -62995,7 +63015,7 @@
     "originalTitle": "Men Are Such Fools",
     "gradeValue": 1,
     "runtimeMinutes": 69,
-    "releaseSequence": "1938-07-16tt0030433",
+    "releaseSequence": "1938-06-15tt0030433",
     "directorNames": [
       "Busby Berkeley"
     ],
@@ -63122,7 +63142,7 @@
     "originalTitle": "Kvinnodr\u00f6m",
     "gradeValue": 7,
     "runtimeMinutes": 87,
-    "releaseSequence": "1955-??-??tt0048272",
+    "releaseSequence": "1955-08-22tt0048272",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -63234,7 +63254,7 @@
     "originalTitle": "To the Devil a Daughter",
     "gradeValue": 4,
     "runtimeMinutes": 95,
-    "releaseSequence": "1976-07-30tt0075334",
+    "releaseSequence": "1976-02-22tt0075334",
     "directorNames": [
       "Peter Sykes"
     ],
@@ -63265,18 +63285,18 @@
           "slug": "christopher-lee",
           "titles": [
             {
-              "title": "Hannie Caulder",
-              "imdbId": "tt0068675",
-              "year": "1971",
-              "slug": "hannie-caulder-1971",
-              "grade": "B"
-            },
-            {
               "title": "I, Monster",
               "imdbId": "tt0068727",
               "year": "1971",
               "slug": "i-monster-1971",
               "grade": "D+"
+            },
+            {
+              "title": "Hannie Caulder",
+              "imdbId": "tt0068675",
+              "year": "1971",
+              "slug": "hannie-caulder-1971",
+              "grade": "B"
             },
             {
               "title": "Howling II: ... Your Sister Is a Werewolf",
@@ -63540,7 +63560,7 @@
     "originalTitle": "All Jacked Up and Full of Worms",
     "gradeValue": 2,
     "runtimeMinutes": 72,
-    "releaseSequence": "2022-11-08tt12264824",
+    "releaseSequence": "2022-07-16tt12264824",
     "directorNames": [
       "Alex Phillips"
     ],
@@ -63616,7 +63636,7 @@
     "originalTitle": "Hamnstad",
     "gradeValue": 4,
     "runtimeMinutes": 100,
-    "releaseSequence": "1948-??-??tt0040418",
+    "releaseSequence": "1948-10-11tt0040418",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -63646,13 +63666,6 @@
           "slug": "ingmar-bergman",
           "titles": [
             {
-              "title": "It Rains on Our Love",
-              "imdbId": "tt0038468",
-              "year": "1946",
-              "slug": "it-rains-on-our-love-1946",
-              "grade": "B"
-            },
-            {
               "title": "A Ship to India",
               "imdbId": "tt0039834",
               "year": "1947",
@@ -63672,6 +63685,13 @@
               "year": "1949",
               "slug": "prison-1949",
               "grade": "D+"
+            },
+            {
+              "title": "Thirst",
+              "imdbId": "tt0041998",
+              "year": "1949",
+              "slug": "thirst-1949",
+              "grade": "F"
             }
           ]
         }
@@ -63954,7 +63974,7 @@
     "originalTitle": "While You Were Sleeping",
     "gradeValue": 6,
     "runtimeMinutes": 103,
-    "releaseSequence": "1995-04-21tt0114924",
+    "releaseSequence": "1995-04-09tt0114924",
     "directorNames": [
       "Jon Turteltaub"
     ],
@@ -64030,7 +64050,7 @@
     "originalTitle": "The Left Hand of God",
     "gradeValue": 5,
     "runtimeMinutes": 87,
-    "releaseSequence": "1955-11-14tt0048291",
+    "releaseSequence": "1955-09-02tt0048291",
     "directorNames": [
       "Edward Dmytryk"
     ],
@@ -64222,7 +64242,7 @@
     "originalTitle": "The Abominable Snowman",
     "gradeValue": 4,
     "runtimeMinutes": 85,
-    "releaseSequence": "1957-10-19tt0050095",
+    "releaseSequence": "1957-08-10tt0050095",
     "directorNames": [
       "Val Guest"
     ],
@@ -64370,7 +64390,7 @@
     "originalTitle": "X: First Class",
     "gradeValue": 9,
     "runtimeMinutes": 131,
-    "releaseSequence": "2011-06-03tt1270798",
+    "releaseSequence": "2011-05-25tt1270798",
     "directorNames": [
       "Matthew Vaughn"
     ],
@@ -64446,7 +64466,7 @@
     "originalTitle": "Messiah of Evil",
     "gradeValue": 7,
     "runtimeMinutes": 90,
-    "releaseSequence": "1974-??-??tt0071396",
+    "releaseSequence": "1974-12-11tt0071396",
     "directorNames": [
       "Willard Huyck"
     ],
@@ -64601,7 +64621,7 @@
     "originalTitle": "I vampiri",
     "gradeValue": 7,
     "runtimeMinutes": 82,
-    "releaseSequence": "1957-??-??tt0049429",
+    "releaseSequence": "1957-04-06tt0049429",
     "directorNames": [
       "Riccardo Freda"
     ],
@@ -64882,7 +64902,7 @@
     "originalTitle": "Violent Playground",
     "gradeValue": 8,
     "runtimeMinutes": 108,
-    "releaseSequence": "1958-03-07tt0052367",
+    "releaseSequence": "1958-01-14tt0052367",
     "directorNames": [
       "Basil Dearden"
     ],
@@ -64998,7 +65018,7 @@
     "originalTitle": "Hodejegerne",
     "gradeValue": 11,
     "runtimeMinutes": 100,
-    "releaseSequence": "2011-08-26tt1614989",
+    "releaseSequence": "2011-08-04tt1614989",
     "directorNames": [
       "Morten Tyldum"
     ],
@@ -65197,7 +65217,7 @@
     "originalTitle": "En lektion i k\u00e4rlek",
     "gradeValue": 6,
     "runtimeMinutes": 96,
-    "releaseSequence": "1954-??-??tt0047167",
+    "releaseSequence": "1954-10-04tt0047167",
     "directorNames": [
       "Ingmar Bergman"
     ],
@@ -65310,7 +65330,7 @@
     "originalTitle": "Avengers: Age of Ultron",
     "gradeValue": 7,
     "runtimeMinutes": 141,
-    "releaseSequence": "2015-05-01tt2395427",
+    "releaseSequence": "2015-04-13tt2395427",
     "directorNames": [
       "Joss Whedon"
     ],
@@ -65397,7 +65417,7 @@
     "originalTitle": "The Racket",
     "gradeValue": 8,
     "runtimeMinutes": 88,
-    "releaseSequence": "1951-12-12tt0043955",
+    "releaseSequence": "1951-10-25tt0043955",
     "directorNames": [
       "John Cromwell"
     ],
@@ -65505,13 +65525,14 @@
       "Drama",
       "Horror",
       "Mystery",
+      "Sci-Fi",
       "Thriller"
     ],
     "sortTitle": "Resolution (2012)",
     "originalTitle": "Resolution",
     "gradeValue": 10,
     "runtimeMinutes": 93,
-    "releaseSequence": "2012-??-??tt1977895",
+    "releaseSequence": "2012-04-22tt1977895",
     "directorNames": [
       "Justin Benson",
       "Aaron Moorhead"
@@ -65606,7 +65627,7 @@
     "originalTitle": "Another WolfCop",
     "gradeValue": 4,
     "runtimeMinutes": 82,
-    "releaseSequence": "2017-??-??tt4515762",
+    "releaseSequence": "2016-09-25tt4515762",
     "directorNames": [
       "Lowell Dean"
     ],
@@ -65696,7 +65717,7 @@
     "originalTitle": "Thor: Love and Thunder",
     "gradeValue": 4,
     "runtimeMinutes": 118,
-    "releaseSequence": "2022-07-08tt10648342",
+    "releaseSequence": "2022-06-23tt10648342",
     "directorNames": [
       "Taika Waititi"
     ],
@@ -65777,7 +65798,7 @@
     "originalTitle": "In Fabric",
     "gradeValue": 9,
     "runtimeMinutes": 118,
-    "releaseSequence": "2018-??-??tt7464188",
+    "releaseSequence": "2018-09-13tt7464188",
     "directorNames": [
       "Peter Strickland"
     ],
@@ -65844,7 +65865,6 @@
     "slug": "safe-house-2012",
     "grade": "C-",
     "countries": [
-      "South Africa",
       "United States",
       "Japan"
     ],
@@ -65856,7 +65876,7 @@
     "originalTitle": "Safe House",
     "gradeValue": 5,
     "runtimeMinutes": 115,
-    "releaseSequence": "2012-02-10tt1599348",
+    "releaseSequence": "2012-02-07tt1599348",
     "directorNames": [
       "Daniel Espinosa"
     ],
@@ -66045,7 +66065,7 @@
     "originalTitle": "Lawyer Man",
     "gradeValue": 3,
     "runtimeMinutes": 72,
-    "releaseSequence": "1932-??-??tt0023125",
+    "releaseSequence": "1932-12-10tt0023125",
     "directorNames": [
       "William Dieterle"
     ],
@@ -66166,7 +66186,7 @@
     "originalTitle": "Pete Kelly's Blues",
     "gradeValue": 7,
     "runtimeMinutes": 95,
-    "releaseSequence": "1955-07-31tt0048484",
+    "releaseSequence": "1955-07-27tt0048484",
     "directorNames": [
       "Jack Webb"
     ],
@@ -66243,7 +66263,7 @@
     "originalTitle": "Meet Danny Wilson",
     "gradeValue": 1,
     "runtimeMinutes": 88,
-    "releaseSequence": "1952-04-01tt0044893",
+    "releaseSequence": "1952-02-07tt0044893",
     "directorNames": [
       "Joseph Pevney"
     ],
@@ -66322,7 +66342,7 @@
     "originalTitle": "Suicide Squad",
     "gradeValue": 1,
     "runtimeMinutes": 123,
-    "releaseSequence": "2016-08-05tt1386697",
+    "releaseSequence": "2016-08-01tt1386697",
     "directorNames": [
       "David Ayer"
     ],
@@ -66479,7 +66499,7 @@
     "originalTitle": "Swamp Thing",
     "gradeValue": 5,
     "runtimeMinutes": 91,
-    "releaseSequence": "1982-02-19tt0084745",
+    "releaseSequence": "1982-01-01tt0084745",
     "directorNames": [
       "Wes Craven"
     ],
@@ -66523,18 +66543,18 @@
               "grade": "D-"
             },
             {
-              "title": "A Nightmare on Elm Street",
-              "imdbId": "tt0087800",
-              "year": "1984",
-              "slug": "a-nightmare-on-elm-street-1984",
-              "grade": "B"
-            },
-            {
               "title": "The Hills Have Eyes Part II",
               "imdbId": "tt0089274",
               "year": "1984",
               "slug": "the-hills-have-eyes-part-ii-1984",
               "grade": "F"
+            },
+            {
+              "title": "A Nightmare on Elm Street",
+              "imdbId": "tt0087800",
+              "year": "1984",
+              "slug": "a-nightmare-on-elm-street-1984",
+              "grade": "B"
             }
           ]
         }
@@ -66784,7 +66804,7 @@
     "originalTitle": "The Hunger Games: Mockingjay - Part 1",
     "gradeValue": 1,
     "runtimeMinutes": 123,
-    "releaseSequence": "2014-11-21tt1951265",
+    "releaseSequence": "2014-11-10tt1951265",
     "directorNames": [
       "Francis Lawrence"
     ],
@@ -66863,7 +66883,7 @@
     "originalTitle": "Murder a la Mod",
     "gradeValue": 8,
     "runtimeMinutes": 80,
-    "releaseSequence": "1968-??-??tt0163114",
+    "releaseSequence": "1968-05-01tt0163114",
     "directorNames": [
       "Brian De Palma"
     ],
@@ -66893,6 +66913,13 @@
           "slug": "brian-de-palma",
           "titles": [
             {
+              "title": "Scarface",
+              "imdbId": "tt0086250",
+              "year": "1983",
+              "slug": "scarface-1983",
+              "grade": "A-"
+            },
+            {
               "title": "Body Double",
               "imdbId": "tt0086984",
               "year": "1984",
@@ -66912,13 +66939,6 @@
               "year": "1969",
               "slug": "the-wedding-party-1969",
               "grade": "D+"
-            },
-            {
-              "title": "Dionysus in '69",
-              "imdbId": "tt0065641",
-              "year": "1970",
-              "slug": "dionysus-in-69-1970",
-              "grade": "F"
             }
           ]
         }
@@ -66965,7 +66985,8 @@
     "slug": "8-bit-christmas-2021",
     "grade": "D-",
     "countries": [
-      "United States"
+      "United States",
+      "Canada"
     ],
     "genres": [
       "Comedy",
@@ -67056,7 +67077,7 @@
     "originalTitle": "The Postman Always Rings Twice",
     "gradeValue": 4,
     "runtimeMinutes": 113,
-    "releaseSequence": "1946-09-06tt0038854",
+    "releaseSequence": "1946-04-01tt0038854",
     "directorNames": [
       "Tay Garnett"
     ],
@@ -67136,7 +67157,7 @@
     "originalTitle": "Acci\u00f3n mutante",
     "gradeValue": 8,
     "runtimeMinutes": 93,
-    "releaseSequence": "1993-02-03tt0106215",
+    "releaseSequence": "1993-01-18tt0106215",
     "directorNames": [
       "\u00c1lex de la Iglesia"
     ],
@@ -67213,7 +67234,7 @@
     "originalTitle": "Die Hard",
     "gradeValue": 13,
     "runtimeMinutes": 132,
-    "releaseSequence": "1988-07-20tt0095016",
+    "releaseSequence": "1988-07-12tt0095016",
     "directorNames": [
       "John McTiernan"
     ],
@@ -67507,7 +67528,7 @@
     "originalTitle": "Code inconnu: R\u00e9cit incomplet de divers voyages",
     "gradeValue": 10,
     "runtimeMinutes": 118,
-    "releaseSequence": "2000-??-??tt0216625",
+    "releaseSequence": "2000-05-19tt0216625",
     "directorNames": [
       "Michael Haneke"
     ],
@@ -67707,7 +67728,7 @@
     "originalTitle": "Phantasm IV: Oblivion",
     "gradeValue": 7,
     "runtimeMinutes": 90,
-    "releaseSequence": "1998-??-??tt0138703",
+    "releaseSequence": "1998-07-31tt0138703",
     "directorNames": [
       "Don Coscarelli"
     ],
@@ -67823,7 +67844,7 @@
     "originalTitle": "The Card Counter",
     "gradeValue": 4,
     "runtimeMinutes": 111,
-    "releaseSequence": "2021-09-10tt11196036",
+    "releaseSequence": "2021-09-02tt11196036",
     "directorNames": [
       "Paul Schrader"
     ],
@@ -67899,7 +67920,7 @@
     "originalTitle": "The Night They Raided Minsky's",
     "gradeValue": 3,
     "runtimeMinutes": 99,
-    "releaseSequence": "1968-??-??tt0063348",
+    "releaseSequence": "1968-12-21tt0063348",
     "directorNames": [
       "William Friedkin"
     ],
@@ -67976,7 +67997,7 @@
     "originalTitle": "The Greasy Strangler",
     "gradeValue": 11,
     "runtimeMinutes": 93,
-    "releaseSequence": "2016-10-07tt4381236",
+    "releaseSequence": "2016-01-22tt4381236",
     "directorNames": [
       "Jim Hosking"
     ],
@@ -68061,7 +68082,7 @@
     "originalTitle": "Stridulum",
     "gradeValue": 4,
     "runtimeMinutes": 108,
-    "releaseSequence": "1979-??-??tt0080100",
+    "releaseSequence": "1979-03-22tt0080100",
     "directorNames": [
       "Giulio Paradisi"
     ],
@@ -68137,7 +68158,7 @@
     "originalTitle": "A Nightmare on Elm Street",
     "gradeValue": 9,
     "runtimeMinutes": 91,
-    "releaseSequence": "1984-11-16tt0087800",
+    "releaseSequence": "1984-10-01tt0087800",
     "directorNames": [
       "Wes Craven"
     ],
@@ -68183,13 +68204,6 @@
           "slug": "wes-craven",
           "titles": [
             {
-              "title": "Deadly Blessing",
-              "imdbId": "tt0082245",
-              "year": "1981",
-              "slug": "deadly-blessing-1981",
-              "grade": "D-"
-            },
-            {
               "title": "Swamp Thing",
               "imdbId": "tt0084745",
               "year": "1982",
@@ -68209,6 +68223,13 @@
               "year": "1986",
               "slug": "deadly-friend-1986",
               "grade": "F"
+            },
+            {
+              "title": "The Last House on the Left",
+              "imdbId": "tt0068833",
+              "year": "1972",
+              "slug": "the-last-house-on-the-left-1972",
+              "grade": "D+"
             }
           ]
         }
@@ -68266,7 +68287,7 @@
     "originalTitle": "The Last House on the Left",
     "gradeValue": 4,
     "runtimeMinutes": 84,
-    "releaseSequence": "1972-08-30tt0068833",
+    "releaseSequence": "1972-08-02tt0068833",
     "directorNames": [
       "Wes Craven"
     ],
@@ -68296,11 +68317,11 @@
           "slug": "wes-craven",
           "titles": [
             {
-              "title": "The Hills Have Eyes Part II",
-              "imdbId": "tt0089274",
+              "title": "A Nightmare on Elm Street",
+              "imdbId": "tt0087800",
               "year": "1984",
-              "slug": "the-hills-have-eyes-part-ii-1984",
-              "grade": "F"
+              "slug": "a-nightmare-on-elm-street-1984",
+              "grade": "B"
             },
             {
               "title": "Deadly Friend",
@@ -68380,7 +68401,7 @@
     "originalTitle": "Il ritorno di Zanna Bianca",
     "gradeValue": 3,
     "runtimeMinutes": 89,
-    "releaseSequence": "1974-??-??tt0072085",
+    "releaseSequence": "1974-10-25tt0072085",
     "directorNames": [
       "Lucio Fulci"
     ],
@@ -68493,7 +68514,7 @@
     "originalTitle": "Necronomicon",
     "gradeValue": 5,
     "runtimeMinutes": 96,
-    "releaseSequence": "1993-??-??tt0107664",
+    "releaseSequence": "1993-11-01tt0107664",
     "directorNames": [
       "Christophe Gans",
       "Sh\u00fbsuke Kaneko",
@@ -68575,7 +68596,7 @@
     "originalTitle": "Tucker and Dale vs Evil",
     "gradeValue": 9,
     "runtimeMinutes": 89,
-    "releaseSequence": "2010-12-09tt1465522",
+    "releaseSequence": "2010-01-22tt1465522",
     "directorNames": [
       "Eli Craig"
     ],
@@ -68660,7 +68681,7 @@
     "originalTitle": "Dark Star",
     "gradeValue": 7,
     "runtimeMinutes": 83,
-    "releaseSequence": "1974-??-??tt0069945",
+    "releaseSequence": "1974-03-30tt0069945",
     "directorNames": [
       "John Carpenter"
     ],
@@ -68738,7 +68759,7 @@
     "originalTitle": "Stake Land",
     "gradeValue": 7,
     "runtimeMinutes": 98,
-    "releaseSequence": "2010-??-??tt1464580",
+    "releaseSequence": "2010-09-17tt1464580",
     "directorNames": [
       "Jim Mickle"
     ],
