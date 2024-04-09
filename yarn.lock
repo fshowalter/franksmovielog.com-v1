@@ -17018,12 +17018,12 @@ __metadata:
   linkType: hard
 
 "socks@npm:^2.7.1":
-  version: 2.8.1
-  resolution: "socks@npm:2.8.1"
+  version: 2.8.2
+  resolution: "socks@npm:2.8.2"
   dependencies:
     ip-address: "npm:^9.0.5"
     smart-buffer: "npm:^4.2.0"
-  checksum: 10c0/ac77b515c260473cc7c4452f09b20939e22510ce3ae48385c516d1d5784374d5cc75be3cb18ff66cc985a7f4f2ef8fef84e984c5ec70aad58355ed59241f40a8
+  checksum: 10c0/4287b6a1b752fae73bd315de54ae70998e780767e7790c7d284b46e7458a1cf35fc160edb8851079b5f25e58e7938b2fdd56b1280f79d0993b6caa140b511764
   languageName: node
   linkType: hard
 
