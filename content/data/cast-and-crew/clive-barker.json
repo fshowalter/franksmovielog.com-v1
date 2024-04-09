@@ -1,0 +1,274 @@
+{
+  "name": "Clive Barker",
+  "slug": "clive-barker",
+  "director": {
+    "titles": [
+      {
+        "imdbId": "tt0093177",
+        "title": "Hellraiser",
+        "year": "1987",
+        "slug": "hellraiser-1987",
+        "grade": "A",
+        "sortTitle": "Hellraiser (1987)",
+        "gradeValue": 12,
+        "releaseSequence": "1987-09-11tt0093177",
+        "reviewDate": "2020-11-04",
+        "viewingSequence": "2020-11-04-331"
+      },
+      {
+        "imdbId": "tt0100260",
+        "title": "Nightbreed",
+        "year": "1990",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Nightbreed (1990)",
+        "gradeValue": null,
+        "releaseSequence": "1990-02-16tt0100260",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0113690",
+        "title": "Lord of Illusions",
+        "year": "1995",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Lord of Illusions (1995)",
+        "gradeValue": null,
+        "releaseSequence": "1995-08-25tt0113690",
+        "reviewDate": null,
+        "viewingSequence": null
+      }
+    ],
+    "reviewCount": 1,
+    "watchlistCount": 2
+  },
+  "writer": {
+    "titles": [
+      {
+        "imdbId": "tt0090233",
+        "title": "Underworld",
+        "year": "1985",
+        "slug": "underworld-1985",
+        "grade": "D-",
+        "sortTitle": "Underworld (1985)",
+        "gradeValue": 2,
+        "releaseSequence": "1985-11-29tt0090233",
+        "reviewDate": "2022-02-20",
+        "viewingSequence": "2022-02-20-1258"
+      },
+      {
+        "imdbId": "tt0091829",
+        "title": "Rawhead Rex",
+        "year": "1986",
+        "slug": "rawhead-rex-1986",
+        "grade": "D",
+        "sortTitle": "Rawhead Rex (1986)",
+        "gradeValue": 3,
+        "releaseSequence": "1986-03-14tt0091829",
+        "reviewDate": "2022-02-20",
+        "viewingSequence": "2022-02-20-1259"
+      },
+      {
+        "imdbId": "tt0093177",
+        "title": "Hellraiser",
+        "year": "1987",
+        "slug": "hellraiser-1987",
+        "grade": "A",
+        "sortTitle": "Hellraiser (1987)",
+        "gradeValue": 12,
+        "releaseSequence": "1987-09-11tt0093177",
+        "reviewDate": "2020-11-04",
+        "viewingSequence": "2020-11-04-331"
+      },
+      {
+        "imdbId": "tt0095294",
+        "title": "Hellbound: Hellraiser II",
+        "year": "1988",
+        "slug": "hellbound-hellraiser-ii-1988",
+        "grade": "C",
+        "sortTitle": "Hellbound: Hellraiser II (1988)",
+        "gradeValue": 6,
+        "releaseSequence": "1988-09-09tt0095294",
+        "reviewDate": "2021-01-21",
+        "viewingSequence": "2021-01-21-993"
+      },
+      {
+        "imdbId": "tt0100260",
+        "title": "Nightbreed",
+        "year": "1990",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Nightbreed (1990)",
+        "gradeValue": null,
+        "releaseSequence": "1990-02-16tt0100260",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0103919",
+        "title": "Candyman",
+        "year": "1992",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Candyman (1992)",
+        "gradeValue": null,
+        "releaseSequence": "1992-09-11tt0103919",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0112625",
+        "title": "Candyman: Farewell to the Flesh",
+        "year": "1995",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Candyman: Farewell to the Flesh (1995)",
+        "gradeValue": null,
+        "releaseSequence": "1995-03-17tt0112625",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0113690",
+        "title": "Lord of Illusions",
+        "year": "1995",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Lord of Illusions (1995)",
+        "gradeValue": null,
+        "releaseSequence": "1995-08-25tt0113690",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0119975",
+        "title": "Quicksilver Highway",
+        "year": "1997",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Quicksilver Highway (1997)",
+        "gradeValue": null,
+        "releaseSequence": "1997-01-01tt0119975",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0313016",
+        "title": "Saint Sinner",
+        "year": "2002",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Saint Sinner (2002)",
+        "gradeValue": null,
+        "releaseSequence": "2002-10-26tt0313016",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0805570",
+        "title": "The Midnight Meat Train",
+        "year": "2008",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Midnight Meat Train (2008)",
+        "gradeValue": null,
+        "releaseSequence": "2008-05-16tt0805570",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt1169809",
+        "title": "Book of Blood",
+        "year": "2009",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Book of Blood (2009)",
+        "gradeValue": null,
+        "releaseSequence": "2009-03-07tt1169809",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt1331307",
+        "title": "Dread",
+        "year": "2009",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Dread (2009)",
+        "gradeValue": null,
+        "releaseSequence": "2009-07-14tt1331307",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt11242218",
+        "title": "Books of Blood",
+        "year": "2020",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Books of Blood (2020)",
+        "gradeValue": null,
+        "releaseSequence": "2020-10-07tt11242218",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt9347730",
+        "title": "Candyman",
+        "year": "2021",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Candyman (2021)",
+        "gradeValue": null,
+        "releaseSequence": "2021-08-22tt9347730",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0887261",
+        "title": "Hellraiser",
+        "year": "2022",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Hellraiser (2022)",
+        "gradeValue": null,
+        "releaseSequence": "2022-09-28tt0887261",
+        "reviewDate": null,
+        "viewingSequence": null
+      }
+    ],
+    "reviewCount": 4,
+    "watchlistCount": 12
+  },
+  "performer": {
+    "titles": [
+      {
+        "imdbId": "tt0105428",
+        "title": "Sleepwalkers",
+        "year": "1992",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Sleepwalkers (1992)",
+        "gradeValue": null,
+        "releaseSequence": "1992-04-10tt0105428",
+        "reviewDate": null,
+        "viewingSequence": null
+      },
+      {
+        "imdbId": "tt0119975",
+        "title": "Quicksilver Highway",
+        "year": "1997",
+        "slug": null,
+        "grade": null,
+        "sortTitle": "Quicksilver Highway (1997)",
+        "gradeValue": null,
+        "releaseSequence": "1997-01-01tt0119975",
+        "reviewDate": null,
+        "viewingSequence": null
+      }
+    ],
+    "reviewCount": 0,
+    "watchlistCount": 2
+  }
+}

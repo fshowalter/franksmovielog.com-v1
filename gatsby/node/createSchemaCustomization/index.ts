@@ -6,6 +6,11 @@ import {
   AllTimeStatsGradeDistribution,
   AllTimeStatsJson,
 } from "./objects/AllTimeStatsJson";
+import {
+  CastAndCrewCredits,
+  CastAndCrewCreditsTitle,
+  CastAndCrewJson,
+} from "./objects/CastAndCrewJson";
 import { MarkdownRemark } from "./objects/MarkdownRemark";
 import {
   MostWatchedPerson,
@@ -45,6 +50,9 @@ export function createSchemaCustomization({
 
   const typeDefs = [
     schema.buildInterfaceType(Title),
+    schema.buildObjectType(CastAndCrewCreditsTitle),
+    schema.buildObjectType(CastAndCrewCredits),
+    schema.buildObjectType(CastAndCrewJson),
     schema.buildObjectType(StatsDistribution),
     schema.buildObjectType(MostWatchedPersonViewing),
     schema.buildObjectType(MostWatchedPerson),

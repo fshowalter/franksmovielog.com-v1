@@ -1,6 +1,9 @@
 export enum SchemaNames {
   AllTimeStatsGradeDistribution = "AllTimeStatsGradeDistribution",
   AllTimeStatsJson = "AllTimeStatsJson",
+  CastAndCrewJson = "CastAndCrewJson",
+  CastAndCrewCredits = "CastAndCrewCredits",
+  CastAndCrewCreditsTitle = "CastAndCrewCreditsTitle",
   MarkdownRemark = "MarkdownRemark",
   MostWatchedPerson = "MostWatchedPerson",
   MostWatchedPersonViewing = "MostWatchedPersonViewing",
