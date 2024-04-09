@@ -1153,7 +1153,7 @@
     {
       "name": "Wes Craven",
       "count": 5,
-      "slug": "wes-craven",
+      "slug": null,
       "viewings": [
         {
           "sequence": 1228,
@@ -1203,114 +1203,157 @@
       ]
     },
     {
-      "name": "John Ford",
-      "count": 5,
-      "slug": "john-ford",
-      "viewings": [
-        {
-          "sequence": 1292,
-          "date": "2022-06-21",
-          "slug": "pilgrimage-1933",
-          "title": "Pilgrimage",
-          "medium": "Criterion Channel",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 1293,
-          "date": "2022-06-22",
-          "slug": "steamboat-round-the-bend-1935",
-          "title": "Steamboat Round the Bend",
-          "medium": "Criterion Channel",
-          "venue": null,
-          "year": "1935"
-        },
-        {
-          "sequence": 1294,
-          "date": "2022-06-27",
-          "slug": "the-plough-and-the-stars-1936",
-          "title": "The Plough and the Stars",
-          "medium": "Criterion Channel",
-          "venue": null,
-          "year": "1936"
-        },
-        {
-          "sequence": 1295,
-          "date": "2022-06-29",
-          "slug": "doctor-bull-1933",
-          "title": "Doctor Bull",
-          "medium": "Criterion Channel",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 1308,
-          "date": "2022-07-29",
-          "slug": "the-brat-1931",
-          "title": "The Brat",
-          "medium": "OK.ru",
-          "venue": null,
-          "year": "1931"
-        }
-      ]
-    },
-    {
-      "name": "Raoul Walsh",
+      "name": "Leigh Whannell",
       "count": 5,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1349,
-          "date": "2022-09-13",
-          "slug": "high-sierra-1941",
-          "title": "High Sierra",
-          "medium": "Watch TCM",
+          "sequence": 1301,
+          "date": "2022-07-08",
+          "slug": "saw-2004",
+          "title": "Saw",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1940"
+          "year": "2004"
         },
         {
-          "sequence": 1372,
-          "date": "2022-10-04",
-          "slug": "they-drive-by-night-1940",
-          "title": "They Drive by Night",
-          "medium": "Watch TCM",
+          "sequence": 1301,
+          "date": "2022-07-08",
+          "slug": "saw-2004",
+          "title": "Saw",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1940"
+          "year": "2004"
         },
         {
-          "sequence": 1378,
-          "date": "2022-10-12",
-          "slug": null,
-          "title": "The Roaring Twenties",
-          "medium": "Watch TCM",
+          "sequence": 1305,
+          "date": "2022-07-22",
+          "slug": "saw-ii-2005",
+          "title": "Saw II",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1939"
+          "year": "2005"
         },
         {
-          "sequence": 1401,
-          "date": "2022-10-26",
-          "slug": null,
-          "title": "Desperate Journey",
-          "medium": "Watch TCM",
+          "sequence": 1307,
+          "date": "2022-07-28",
+          "slug": "saw-iii-2006",
+          "title": "Saw III",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1942"
+          "year": "2006"
         },
         {
-          "sequence": 1407,
-          "date": "2022-10-28",
-          "slug": null,
-          "title": "Uncertain Glory",
-          "medium": "Watch TCM",
+          "sequence": 1307,
+          "date": "2022-07-28",
+          "slug": "saw-iii-2006",
+          "title": "Saw III",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1944"
+          "year": "2006"
         }
       ]
     },
     {
-      "name": "Lewis Seiler",
+      "name": "Patrick Melton",
       "count": 4,
       "slug": null,
       "viewings": [
+        {
+          "sequence": 1315,
+          "date": "2022-08-10",
+          "slug": "saw-iv-2007",
+          "title": "Saw IV",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2007"
+        },
+        {
+          "sequence": 1315,
+          "date": "2022-08-10",
+          "slug": "saw-iv-2007",
+          "title": "Saw IV",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2007"
+        },
+        {
+          "sequence": 1319,
+          "date": "2022-08-12",
+          "slug": "saw-v-2008",
+          "title": "Saw V",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2008"
+        },
+        {
+          "sequence": 1346,
+          "date": "2022-09-10",
+          "slug": "saw-vi-2009",
+          "title": "Saw VI",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "Marcus Dunstan",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1315,
+          "date": "2022-08-10",
+          "slug": "saw-iv-2007",
+          "title": "Saw IV",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2007"
+        },
+        {
+          "sequence": 1315,
+          "date": "2022-08-10",
+          "slug": "saw-iv-2007",
+          "title": "Saw IV",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2007"
+        },
+        {
+          "sequence": 1319,
+          "date": "2022-08-12",
+          "slug": "saw-v-2008",
+          "title": "Saw V",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2008"
+        },
+        {
+          "sequence": 1346,
+          "date": "2022-09-10",
+          "slug": "saw-vi-2009",
+          "title": "Saw VI",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "W.R. Burnett",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1327,
+          "date": "2022-08-22",
+          "slug": "dangerous-mission-1954",
+          "title": "Dangerous Mission",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1954"
+        },
         {
           "sequence": 1344,
           "date": "2022-09-09",
@@ -1321,31 +1364,56 @@
           "year": "1939"
         },
         {
-          "sequence": 1347,
-          "date": "2022-09-11",
-          "slug": "the-big-shot-1942",
-          "title": "The Big Shot",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1942"
-        },
-        {
-          "sequence": 1376,
-          "date": "2022-10-06",
-          "slug": null,
-          "title": "It All Came True",
+          "sequence": 1349,
+          "date": "2022-09-13",
+          "slug": "high-sierra-1941",
+          "title": "High Sierra",
           "medium": "Watch TCM",
           "venue": null,
           "year": "1940"
         },
         {
-          "sequence": 1380,
-          "date": "2022-10-14",
-          "slug": null,
-          "title": "Crime School",
+          "sequence": 1349,
+          "date": "2022-09-13",
+          "slug": "high-sierra-1941",
+          "title": "High Sierra",
           "medium": "Watch TCM",
           "venue": null,
-          "year": "1938"
+          "year": "1940"
+        }
+      ]
+    },
+    {
+      "name": "Julia Ducournau",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1226,
+          "date": "2022-01-09",
+          "slug": "raw-2016",
+          "title": "Raw",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2016"
+        },
+        {
+          "sequence": 1226,
+          "date": "2022-01-09",
+          "slug": "raw-2016",
+          "title": "Raw",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2016"
+        },
+        {
+          "sequence": 1232,
+          "date": "2022-01-20",
+          "slug": "titane-2021",
+          "title": "Titane",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "2021"
         }
       ]
     },
@@ -1386,7 +1454,7 @@
     {
       "name": "Brian De Palma",
       "count": 3,
-      "slug": "brian-de-palma",
+      "slug": null,
       "viewings": [
         {
           "sequence": 1239,
@@ -1398,13 +1466,13 @@
           "year": "1981"
         },
         {
-          "sequence": 1250,
-          "date": "2022-02-12",
-          "slug": "scarface-1983",
-          "title": "Scarface",
-          "medium": "4k UHD Blu-ray",
+          "sequence": 1269,
+          "date": "2022-04-04",
+          "slug": "body-double-1984",
+          "title": "Body Double",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1983"
+          "year": "1984"
         },
         {
           "sequence": 1269,
@@ -1418,120 +1486,70 @@
       ]
     },
     {
-      "name": "Darren Lynn Bousman",
+      "name": "Clive Barker",
+      "count": 3,
+      "slug": "clive-barker",
+      "viewings": [
+        {
+          "sequence": 1258,
+          "date": "2022-02-20",
+          "slug": "underworld-1985",
+          "title": "Underworld",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1258,
+          "date": "2022-02-20",
+          "slug": "underworld-1985",
+          "title": "Underworld",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1259,
+          "date": "2022-02-20",
+          "slug": "rawhead-rex-1986",
+          "title": "Rawhead Rex",
+          "medium": "Arrow Player",
+          "venue": null,
+          "year": "1986"
+        }
+      ]
+    },
+    {
+      "name": "Neal Purvis",
       "count": 3,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1305,
-          "date": "2022-07-22",
-          "slug": "saw-ii-2005",
-          "title": "Saw II",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2005"
-        },
-        {
-          "sequence": 1307,
-          "date": "2022-07-28",
-          "slug": "saw-iii-2006",
-          "title": "Saw III",
-          "medium": "Blu-ray",
+          "sequence": 1283,
+          "date": "2022-06-15",
+          "slug": "casino-royale-2006",
+          "title": "Casino Royale",
+          "medium": "4k UHD Blu-ray",
           "venue": null,
           "year": "2006"
         },
         {
-          "sequence": 1315,
-          "date": "2022-08-10",
-          "slug": "saw-iv-2007",
-          "title": "Saw IV",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2007"
-        }
-      ]
-    },
-    {
-      "name": "Lloyd Bacon",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1341,
-          "date": "2022-09-07",
-          "slug": "invisible-stripes-1939",
-          "title": "Invisible Stripes",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1939"
-        },
-        {
-          "sequence": 1375,
-          "date": "2022-10-06",
-          "slug": "the-oklahoma-kid-1939",
-          "title": "The Oklahoma Kid",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1939"
-        },
-        {
-          "sequence": 1379,
-          "date": "2022-10-13",
-          "slug": null,
-          "title": "Racket Busters",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1938"
-        }
-      ]
-    },
-    {
-      "name": "Julia Ducournau",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1226,
-          "date": "2022-01-09",
-          "slug": "raw-2016",
-          "title": "Raw",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2016"
-        },
-        {
-          "sequence": 1232,
-          "date": "2022-01-20",
-          "slug": "titane-2021",
-          "title": "Titane",
-          "medium": "iTunes",
+          "sequence": 1284,
+          "date": "2022-06-16",
+          "slug": "no-time-to-die-2021",
+          "title": "No Time to Die",
+          "medium": "Amazon",
           "venue": null,
           "year": "2021"
-        }
-      ]
-    },
-    {
-      "name": "Paul W.S. Anderson",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1236,
-          "date": "2022-01-28",
-          "slug": "event-horizon-1997",
-          "title": "Event Horizon",
-          "medium": "HBO Max",
-          "venue": null,
-          "year": "1997"
         },
         {
-          "sequence": 1277,
-          "date": "2022-05-29",
-          "slug": "event-horizon-1997",
-          "title": "Event Horizon",
-          "medium": "35mm",
-          "venue": "Prince Charles Cinema",
-          "year": "1997"
+          "sequence": 1284,
+          "date": "2022-06-16",
+          "slug": "no-time-to-die-2021",
+          "title": "No Time to Die",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2021"
         }
       ]
     }

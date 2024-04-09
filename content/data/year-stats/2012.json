@@ -1895,121 +1895,6 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "John Ford",
-      "count": 12,
-      "slug": "john-ford",
-      "viewings": [
-        {
-          "sequence": 28,
-          "date": "2012-01-25",
-          "slug": null,
-          "title": "The World Moves On",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1934"
-        },
-        {
-          "sequence": 45,
-          "date": "2012-01-28",
-          "slug": null,
-          "title": "Sergeant Rutledge",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1960"
-        },
-        {
-          "sequence": 68,
-          "date": "2012-02-10",
-          "slug": null,
-          "title": "The Long Voyage Home",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1940"
-        },
-        {
-          "sequence": 76,
-          "date": "2012-02-15",
-          "slug": null,
-          "title": "They Were Expendable",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1945"
-        },
-        {
-          "sequence": 82,
-          "date": "2012-02-19",
-          "slug": null,
-          "title": "Mogambo",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1953"
-        },
-        {
-          "sequence": 86,
-          "date": "2012-02-24",
-          "slug": "arrowsmith-1931",
-          "title": "Arrowsmith",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1931"
-        },
-        {
-          "sequence": 113,
-          "date": "2012-03-12",
-          "slug": null,
-          "title": "The Hurricane",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1937"
-        },
-        {
-          "sequence": 134,
-          "date": "2012-03-30",
-          "slug": null,
-          "title": "The Whole Town's Talking",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1935"
-        },
-        {
-          "sequence": 137,
-          "date": "2012-03-31",
-          "slug": null,
-          "title": "Mary of Scotland",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1936"
-        },
-        {
-          "sequence": 138,
-          "date": "2012-03-31",
-          "slug": null,
-          "title": "The Rising of the Moon",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1957"
-        },
-        {
-          "sequence": 139,
-          "date": "2012-04-01",
-          "slug": null,
-          "title": "The Last Hurrah",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1958"
-        },
-        {
-          "sequence": 143,
-          "date": "2012-04-06",
-          "slug": null,
-          "title": "Stagecoach",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1939"
-        }
-      ]
-    },
-    {
       "name": "Robert N. Bradbury",
       "count": 10,
       "slug": null,
@@ -2033,15 +1918,6 @@
           "year": "1934"
         },
         {
-          "sequence": 95,
-          "date": "2012-02-27",
-          "slug": null,
-          "title": "The Man from Utah",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "1934"
-        },
-        {
           "sequence": 96,
           "date": "2012-02-27",
           "slug": null,
@@ -2060,10 +1936,10 @@
           "year": "1934"
         },
         {
-          "sequence": 101,
+          "sequence": 100,
           "date": "2012-02-28",
-          "slug": null,
-          "title": "The Trail Beyond",
+          "slug": "the-star-packer-1934",
+          "title": "The Star Packer",
           "medium": "Netflix",
           "venue": null,
           "year": "1934"
@@ -2087,6 +1963,15 @@
           "year": "1935"
         },
         {
+          "sequence": 103,
+          "date": "2012-02-28",
+          "slug": null,
+          "title": "Texas Terror",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1935"
+        },
+        {
           "sequence": 106,
           "date": "2012-02-28",
           "slug": null,
@@ -2096,308 +1981,127 @@
           "year": "1934"
         },
         {
-          "sequence": 107,
+          "sequence": 106,
           "date": "2012-02-28",
           "slug": null,
-          "title": "The Dawn Rider",
+          "title": "Blue Steel",
           "medium": "Netflix",
           "venue": null,
-          "year": "1935"
+          "year": "1934"
         }
       ]
     },
     {
-      "name": "John Carpenter",
-      "count": 6,
-      "slug": "john-carpenter",
-      "viewings": [
-        {
-          "sequence": 23,
-          "date": "2012-01-20",
-          "slug": null,
-          "title": "They Live",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1988"
-        },
-        {
-          "sequence": 122,
-          "date": "2012-03-24",
-          "slug": null,
-          "title": "Big Trouble in Little China",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1986"
-        },
-        {
-          "sequence": 123,
-          "date": "2012-03-24",
-          "slug": null,
-          "title": "In the Mouth of Madness",
-          "medium": "Encore HD",
-          "venue": null,
-          "year": "1994"
-        },
-        {
-          "sequence": 176,
-          "date": "2012-05-05",
-          "slug": null,
-          "title": "Escape from New York",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1981"
-        },
-        {
-          "sequence": 194,
-          "date": "2012-07-02",
-          "slug": null,
-          "title": "The Thing",
-          "medium": null,
-          "venue": "The Black Cat",
-          "year": "1982"
-        },
-        {
-          "sequence": 235,
-          "date": "2012-10-30",
-          "slug": "halloween-1978",
-          "title": "Halloween",
-          "medium": null,
-          "venue": "Landmark E Street Cinema",
-          "year": "1978"
-        }
-      ]
-    },
-    {
-      "name": "Alfred Hitchcock",
-      "count": 6,
-      "slug": "alfred-hitchcock",
-      "viewings": [
-        {
-          "sequence": 59,
-          "date": "2012-02-04",
-          "slug": null,
-          "title": "Suspicion",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1941"
-        },
-        {
-          "sequence": 73,
-          "date": "2012-02-14",
-          "slug": null,
-          "title": "Rear Window",
-          "medium": "Encore HD",
-          "venue": null,
-          "year": "1954"
-        },
-        {
-          "sequence": 149,
-          "date": "2012-04-08",
-          "slug": null,
-          "title": "I Confess",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1953"
-        },
-        {
-          "sequence": 182,
-          "date": "2012-06-10",
-          "slug": null,
-          "title": "Foreign Correspondent",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1940"
-        },
-        {
-          "sequence": 184,
-          "date": "2012-06-12",
-          "slug": null,
-          "title": "Under Capricorn",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1949"
-        },
-        {
-          "sequence": 198,
-          "date": "2012-07-08",
-          "slug": null,
-          "title": "Vertigo",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1958"
-        }
-      ]
-    },
-    {
-      "name": "Howard Hawks",
-      "count": 6,
-      "slug": "howard-hawks",
-      "viewings": [
-        {
-          "sequence": 69,
-          "date": "2012-02-10",
-          "slug": null,
-          "title": "The Big Sky",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1952"
-        },
-        {
-          "sequence": 75,
-          "date": "2012-02-15",
-          "slug": null,
-          "title": "Air Force",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1943"
-        },
-        {
-          "sequence": 90,
-          "date": "2012-02-25",
-          "slug": null,
-          "title": "Only Angels Have Wings",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1939"
-        },
-        {
-          "sequence": 130,
-          "date": "2012-03-26",
-          "slug": null,
-          "title": "I Was a Male War Bride",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1949"
-        },
-        {
-          "sequence": 171,
-          "date": "2012-04-27",
-          "slug": null,
-          "title": "The Big Sleep",
-          "medium": null,
-          "venue": "Landmark E Street Cinema",
-          "year": "1946"
-        },
-        {
-          "sequence": 172,
-          "date": "2012-04-28",
-          "slug": null,
-          "title": "The Big Sleep",
-          "medium": null,
-          "venue": "Landmark E Street Cinema",
-          "year": "1946"
-        }
-      ]
-    },
-    {
-      "name": "Terence Fisher",
-      "count": 5,
+      "name": "Lindsley Parsons",
+      "count": 10,
       "slug": null,
       "viewings": [
         {
-          "sequence": 20,
-          "date": "2012-01-15",
-          "slug": null,
-          "title": "The Gorgon",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1964"
-        },
-        {
-          "sequence": 213,
-          "date": "2012-08-10",
-          "slug": null,
-          "title": "Frankenstein and the Monster from Hell",
+          "sequence": 94,
+          "date": "2012-02-26",
+          "slug": "sagebrush-trail-1933",
+          "title": "Sagebrush Trail",
           "medium": "Netflix",
           "venue": null,
-          "year": "1974"
+          "year": "1933"
         },
         {
-          "sequence": 233,
-          "date": "2012-10-28",
+          "sequence": 94,
+          "date": "2012-02-26",
+          "slug": "sagebrush-trail-1933",
+          "title": "Sagebrush Trail",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1933"
+        },
+        {
+          "sequence": 95,
+          "date": "2012-02-27",
           "slug": null,
-          "title": "The Hound of the Baskervilles",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1959"
-        },
-        {
-          "sequence": 240,
-          "date": "2012-11-02",
-          "slug": "the-devil-rides-out-1968",
-          "title": "The Devil Rides Out",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1968"
-        },
-        {
-          "sequence": 242,
-          "date": "2012-11-03",
-          "slug": null,
-          "title": "Dracula: Prince of Darkness",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1966"
-        }
-      ]
-    },
-    {
-      "name": "Michael Curtiz",
-      "count": 5,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 27,
-          "date": "2012-01-21",
-          "slug": "the-key-1934",
-          "title": "The Key",
-          "medium": "TCM HD",
+          "title": "The Man from Utah",
+          "medium": "Netflix",
           "venue": null,
           "year": "1934"
         },
         {
-          "sequence": 29,
-          "date": "2012-01-25",
+          "sequence": 95,
+          "date": "2012-02-27",
           "slug": null,
-          "title": "Kid Galahad",
-          "medium": "TCM HD",
+          "title": "The Man from Utah",
+          "medium": "Netflix",
           "venue": null,
-          "year": "1937"
+          "year": "1934"
         },
         {
-          "sequence": 44,
-          "date": "2012-01-28",
+          "sequence": 97,
+          "date": "2012-02-27",
           "slug": null,
-          "title": "Passage to Marseille",
-          "medium": "TCM HD",
+          "title": "Paradise Canyon",
+          "medium": "Netflix",
           "venue": null,
-          "year": "1944"
+          "year": "1935"
         },
         {
-          "sequence": 74,
-          "date": "2012-02-15",
-          "slug": "life-with-father-1947",
-          "title": "Life with Father",
-          "medium": "TCM HD",
+          "sequence": 101,
+          "date": "2012-02-28",
+          "slug": null,
+          "title": "The Trail Beyond",
+          "medium": "Netflix",
           "venue": null,
-          "year": "1947"
+          "year": "1934"
         },
         {
-          "sequence": 118,
-          "date": "2012-03-18",
-          "slug": "virginia-city-1940",
-          "title": "Virginia City",
-          "medium": "TCM HD",
+          "sequence": 104,
+          "date": "2012-02-28",
+          "slug": null,
+          "title": "The Desert Trail",
+          "medium": "Netflix",
           "venue": null,
-          "year": "1940"
+          "year": "1935"
+        },
+        {
+          "sequence": 104,
+          "date": "2012-02-28",
+          "slug": null,
+          "title": "The Desert Trail",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1935"
+        },
+        {
+          "sequence": 105,
+          "date": "2012-02-28",
+          "slug": "randy-rides-alone-1934",
+          "title": "Randy Rides Alone",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1934"
+        },
+        {
+          "sequence": 105,
+          "date": "2012-02-28",
+          "slug": "randy-rides-alone-1934",
+          "title": "Randy Rides Alone",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1934"
         }
       ]
     },
     {
       "name": "John Huston",
-      "count": 5,
-      "slug": "john-huston",
+      "count": 6,
+      "slug": null,
       "viewings": [
+        {
+          "sequence": 31,
+          "date": "2012-01-25",
+          "slug": "murders-in-the-rue-morgue-1932",
+          "title": "Murders in the Rue Morgue",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1932"
+        },
         {
           "sequence": 61,
           "date": "2012-02-04",
@@ -2406,15 +2110,6 @@
           "medium": "TCM HD",
           "venue": null,
           "year": "1948"
-        },
-        {
-          "sequence": 65,
-          "date": "2012-02-05",
-          "slug": null,
-          "title": "Under the Volcano",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1984"
         },
         {
           "sequence": 66,
@@ -2442,56 +2137,230 @@
           "medium": "TCM HD",
           "venue": null,
           "year": "1950"
+        },
+        {
+          "sequence": 153,
+          "date": "2012-04-09",
+          "slug": null,
+          "title": "The Amazing Dr. Clitterhouse",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1938"
         }
       ]
     },
     {
-      "name": "Tom Holland",
+      "name": "Dudley Nichols",
+      "count": 6,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 68,
+          "date": "2012-02-10",
+          "slug": null,
+          "title": "The Long Voyage Home",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1940"
+        },
+        {
+          "sequence": 69,
+          "date": "2012-02-10",
+          "slug": null,
+          "title": "The Big Sky",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1952"
+        },
+        {
+          "sequence": 75,
+          "date": "2012-02-15",
+          "slug": null,
+          "title": "Air Force",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1943"
+        },
+        {
+          "sequence": 113,
+          "date": "2012-03-12",
+          "slug": null,
+          "title": "The Hurricane",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1937"
+        },
+        {
+          "sequence": 137,
+          "date": "2012-03-31",
+          "slug": null,
+          "title": "Mary of Scotland",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1936"
+        },
+        {
+          "sequence": 143,
+          "date": "2012-04-06",
+          "slug": null,
+          "title": "Stagecoach",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1939"
+        }
+      ]
+    },
+    {
+      "name": "Richard Matheson",
+      "count": 5,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 6,
+          "date": "2012-01-12",
+          "slug": null,
+          "title": "The Pit and the Pendulum",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1961"
+        },
+        {
+          "sequence": 13,
+          "date": "2012-01-13",
+          "slug": null,
+          "title": "The Comedy of Terrors",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1963"
+        },
+        {
+          "sequence": 221,
+          "date": "2012-09-08",
+          "slug": null,
+          "title": "The Legend of Hell House",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1973"
+        },
+        {
+          "sequence": 221,
+          "date": "2012-09-08",
+          "slug": null,
+          "title": "The Legend of Hell House",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1973"
+        },
+        {
+          "sequence": 240,
+          "date": "2012-11-02",
+          "slug": "the-devil-rides-out-1968",
+          "title": "The Devil Rides Out",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1968"
+        }
+      ]
+    },
+    {
+      "name": "Christopher Nolan",
+      "count": 5,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 205,
+          "date": "2012-07-19",
+          "slug": null,
+          "title": "Batman Begins",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2005"
+        },
+        {
+          "sequence": 206,
+          "date": "2012-07-19",
+          "slug": "the-dark-knight-2008",
+          "title": "The Dark Knight",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2008"
+        },
+        {
+          "sequence": 206,
+          "date": "2012-07-19",
+          "slug": "the-dark-knight-2008",
+          "title": "The Dark Knight",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2008"
+        },
+        {
+          "sequence": 207,
+          "date": "2012-07-19",
+          "slug": null,
+          "title": "The Dark Knight Rises",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2012"
+        },
+        {
+          "sequence": 207,
+          "date": "2012-07-19",
+          "slug": null,
+          "title": "The Dark Knight Rises",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2012"
+        }
+      ]
+    },
+    {
+      "name": "Charles Bennett",
       "count": 4,
       "slug": null,
       "viewings": [
         {
-          "sequence": 48,
-          "date": "2012-01-28",
-          "slug": "fright-night-1985",
-          "title": "Fright Night",
-          "medium": "Blu-ray",
+          "sequence": 3,
+          "date": "2012-01-11",
+          "slug": "curse-of-the-demon-1957",
+          "title": "Curse of the Demon",
+          "medium": "TCM HD",
           "venue": null,
-          "year": "1985"
+          "year": "1957"
         },
         {
-          "sequence": 197,
-          "date": "2012-07-07",
-          "slug": "fright-night-1985",
-          "title": "Fright Night",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1985"
+          "sequence": 60,
+          "date": "2012-02-04",
+          "slug": null,
+          "title": "Reap the Wild Wind",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1942"
         },
         {
-          "sequence": 199,
-          "date": "2012-07-08",
-          "slug": "fright-night-1985",
-          "title": "Fright Night",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1985"
+          "sequence": 182,
+          "date": "2012-06-10",
+          "slug": null,
+          "title": "Foreign Correspondent",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1940"
         },
         {
-          "sequence": 210,
-          "date": "2012-07-30",
-          "slug": "fright-night-1985",
-          "title": "Fright Night",
-          "medium": "Blu-ray",
-          "venue": "The Black Cat",
-          "year": "1985"
+          "sequence": 237,
+          "date": "2012-11-01",
+          "slug": null,
+          "title": "The Big Circus",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1959"
         }
       ]
     },
     {
-      "name": "Roger Corman",
-      "count": 3,
-      "slug": "roger-corman",
+      "name": "Edgar Allan Poe",
+      "count": 4,
+      "slug": null,
       "viewings": [
         {
           "sequence": 6,
@@ -2512,13 +2381,108 @@
           "year": "1964"
         },
         {
-          "sequence": 124,
-          "date": "2012-03-24",
-          "slug": null,
-          "title": "Frankenstein Unbound",
-          "medium": "Encore HD",
+          "sequence": 31,
+          "date": "2012-01-25",
+          "slug": "murders-in-the-rue-morgue-1932",
+          "title": "Murders in the Rue Morgue",
+          "medium": "TCM HD",
           "venue": null,
-          "year": "1990"
+          "year": "1932"
+        },
+        {
+          "sequence": 35,
+          "date": "2012-01-26",
+          "slug": null,
+          "title": "The Black Cat",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1934"
+        }
+      ]
+    },
+    {
+      "name": "Raymond Chandler",
+      "count": 4,
+      "slug": "raymond-chandler",
+      "viewings": [
+        {
+          "sequence": 10,
+          "date": "2012-01-13",
+          "slug": "murder-my-sweet-1944",
+          "title": "Murder, My Sweet",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1944"
+        },
+        {
+          "sequence": 171,
+          "date": "2012-04-27",
+          "slug": null,
+          "title": "The Big Sleep",
+          "medium": null,
+          "venue": "Landmark E Street Cinema",
+          "year": "1946"
+        },
+        {
+          "sequence": 172,
+          "date": "2012-04-28",
+          "slug": null,
+          "title": "The Big Sleep",
+          "medium": null,
+          "venue": "Landmark E Street Cinema",
+          "year": "1946"
+        },
+        {
+          "sequence": 256,
+          "date": "2012-12-30",
+          "slug": null,
+          "title": "The Long Goodbye",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1973"
+        }
+      ]
+    },
+    {
+      "name": "Anthony Hinds",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 14,
+          "date": "2012-01-13",
+          "slug": null,
+          "title": "The Reptile",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1966"
+        },
+        {
+          "sequence": 213,
+          "date": "2012-08-10",
+          "slug": null,
+          "title": "Frankenstein and the Monster from Hell",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1974"
+        },
+        {
+          "sequence": 242,
+          "date": "2012-11-03",
+          "slug": null,
+          "title": "Dracula: Prince of Darkness",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1966"
+        },
+        {
+          "sequence": 244,
+          "date": "2012-11-09",
+          "slug": null,
+          "title": "Dracula Has Risen from the Grave",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1968"
         }
       ]
     }

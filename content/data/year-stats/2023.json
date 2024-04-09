@@ -915,15 +915,33 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Michael Curtiz",
-      "count": 6,
+      "name": "Robert Lord",
+      "count": 4,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1474,
-          "date": "2023-04-23",
-          "slug": "the-cabin-in-the-cotton-1932",
-          "title": "The Cabin in the Cotton",
+          "sequence": 1443,
+          "date": "2023-02-13",
+          "slug": "black-legion-1937",
+          "title": "Black Legion",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1937"
+        },
+        {
+          "sequence": 1463,
+          "date": "2023-04-05",
+          "slug": "one-way-passage-1932",
+          "title": "One Way Passage",
+          "medium": "Watch TCM",
+          "venue": null,
+          "year": "1932"
+        },
+        {
+          "sequence": 1469,
+          "date": "2023-04-08",
+          "slug": "so-big-1932",
+          "title": "So Big!",
           "medium": "Watch TCM",
           "venue": null,
           "year": "1932"
@@ -936,133 +954,210 @@
           "medium": "Watch TCM",
           "venue": null,
           "year": "1932"
-        },
-        {
-          "sequence": 1486,
-          "date": "2023-05-20",
-          "slug": "private-detective-62-1933",
-          "title": "Private Detective 62",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 1491,
-          "date": "2023-06-03",
-          "slug": "the-key-1934",
-          "title": "The Key",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1934"
-        },
-        {
-          "sequence": 1506,
-          "date": "2023-06-29",
-          "slug": "the-kennel-murder-case-1933",
-          "title": "The Kennel Murder Case",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 1511,
-          "date": "2023-07-15",
-          "slug": "life-with-father-1947",
-          "title": "Life with Father",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1947"
-        }
-      ]
-    },
-    {
-      "name": "William Dieterle",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1465,
-          "date": "2023-04-06",
-          "slug": "the-great-omalley-1937",
-          "title": "The Great O'Malley",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1937"
-        },
-        {
-          "sequence": 1478,
-          "date": "2023-05-02",
-          "slug": "fashions-of-1934-1934",
-          "title": "Fashions of 1934",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1934"
-        },
-        {
-          "sequence": 1485,
-          "date": "2023-05-19",
-          "slug": "lawyer-man-1932",
-          "title": "Lawyer Man",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1932"
-        }
-      ]
-    },
-    {
-      "name": "Richard Donner",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1437,
-          "date": "2023-01-26",
-          "slug": null,
-          "title": "The Goonies",
-          "medium": "iTunes",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1482,
-          "date": "2023-05-12",
-          "slug": "superman-ii-the-richard-donner-cut-1980",
-          "title": "Superman II: The Richard Donner Cut",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1980"
-        }
-      ]
-    },
-    {
-      "name": "Archie Mayo",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1441,
-          "date": "2023-02-09",
-          "slug": "the-life-of-jimmy-dolan-1933",
-          "title": "The Life of Jimmy Dolan",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 1443,
-          "date": "2023-02-13",
-          "slug": "black-legion-1937",
-          "title": "Black Legion",
-          "medium": "Watch TCM",
-          "venue": null,
-          "year": "1937"
         }
       ]
     },
     {
       "name": "Lucio Fulci",
-      "count": 2,
-      "slug": "lucio-fulci",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1449,
+          "date": "2023-03-11",
+          "slug": "the-new-york-ripper-1982",
+          "title": "The New York Ripper",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 1449,
+          "date": "2023-03-11",
+          "slug": "the-new-york-ripper-1982",
+          "title": "The New York Ripper",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 1461,
+          "date": "2023-04-03",
+          "slug": "the-psychic-1977",
+          "title": "The Psychic",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1977"
+        },
+        {
+          "sequence": 1461,
+          "date": "2023-04-03",
+          "slug": "the-psychic-1977",
+          "title": "The Psychic",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1977"
+        }
+      ]
+    },
+    {
+      "name": "Umberto Lenzi",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1456,
+          "date": "2023-03-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1989"
+        },
+        {
+          "sequence": 1456,
+          "date": "2023-03-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1989"
+        },
+        {
+          "sequence": 1540,
+          "date": "2023-10-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1989"
+        },
+        {
+          "sequence": 1540,
+          "date": "2023-10-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1989"
+        }
+      ]
+    },
+    {
+      "name": "James Justice",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1456,
+          "date": "2023-03-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1989"
+        },
+        {
+          "sequence": 1456,
+          "date": "2023-03-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1989"
+        },
+        {
+          "sequence": 1540,
+          "date": "2023-10-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1989"
+        },
+        {
+          "sequence": 1540,
+          "date": "2023-10-28",
+          "slug": "nightmare-beach-1989",
+          "title": "Nightmare Beach",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1989"
+        }
+      ]
+    },
+    {
+      "name": "Andrzej Zulawski",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1433,
+          "date": "2023-01-13",
+          "slug": "possession-1981",
+          "title": "Possession",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1981"
+        },
+        {
+          "sequence": 1433,
+          "date": "2023-01-13",
+          "slug": "possession-1981",
+          "title": "Possession",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1981"
+        },
+        {
+          "sequence": 1433,
+          "date": "2023-01-13",
+          "slug": "possession-1981",
+          "title": "Possession",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1981"
+        }
+      ]
+    },
+    {
+      "name": "Brian Yuzna",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1439,
+          "date": "2023-02-02",
+          "slug": "from-beyond-1986",
+          "title": "From Beyond",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1986"
+        },
+        {
+          "sequence": 1552,
+          "date": "2023-12-17",
+          "slug": null,
+          "title": "Silent Night, Deadly Night 4: Initiation",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1990"
+        },
+        {
+          "sequence": 1553,
+          "date": "2023-12-21",
+          "slug": null,
+          "title": "Silent Night, Deadly Night 5: The Toy Maker",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1991"
+        }
+      ]
+    },
+    {
+      "name": "Dardano Sacchetti",
+      "count": 3,
+      "slug": null,
       "viewings": [
         {
           "sequence": 1449,
@@ -1081,131 +1176,108 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1977"
-        }
-      ]
-    },
-    {
-      "name": "William Friedkin",
-      "count": 2,
-      "slug": "william-friedkin",
-      "viewings": [
-        {
-          "sequence": 1452,
-          "date": "2023-03-19",
-          "slug": "the-birthday-party-1968",
-          "title": "The Birthday Party",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1968"
         },
         {
-          "sequence": 1532,
-          "date": "2023-09-25",
-          "slug": "the-night-they-raided-minskys-1968",
-          "title": "The Night They Raided Minsky's",
+          "sequence": 1461,
+          "date": "2023-04-03",
+          "slug": "the-psychic-1977",
+          "title": "The Psychic",
           "medium": "Blu-ray",
           "venue": null,
-          "year": "1968"
+          "year": "1977"
         }
       ]
     },
     {
-      "name": "James Justice",
-      "count": 2,
+      "name": "Gary Brandner",
+      "count": 3,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1456,
-          "date": "2023-03-28",
-          "slug": "nightmare-beach-1989",
-          "title": "Nightmare Beach",
-          "medium": "Blu-ray",
+          "sequence": 1459,
+          "date": "2023-03-31",
+          "slug": "the-howling-1981",
+          "title": "The Howling",
+          "medium": "4k UHD Blu-ray",
           "venue": null,
-          "year": "1989"
+          "year": "1981"
         },
         {
-          "sequence": 1540,
-          "date": "2023-10-28",
-          "slug": "nightmare-beach-1989",
-          "title": "Nightmare Beach",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1989"
+          "sequence": 1462,
+          "date": "2023-04-04",
+          "slug": "howling-ii-your-sister-is-a-werewolf-1985",
+          "title": "Howling II: ... Your Sister Is a Werewolf",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1462,
+          "date": "2023-04-04",
+          "slug": "howling-ii-your-sister-is-a-werewolf-1985",
+          "title": "Howling II: ... Your Sister Is a Werewolf",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "1985"
         }
       ]
     },
     {
-      "name": "Umberto Lenzi",
-      "count": 2,
+      "name": "Don Coscarelli",
+      "count": 3,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1456,
-          "date": "2023-03-28",
-          "slug": "nightmare-beach-1989",
-          "title": "Nightmare Beach",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1989"
-        },
-        {
-          "sequence": 1540,
-          "date": "2023-10-28",
-          "slug": "nightmare-beach-1989",
-          "title": "Nightmare Beach",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1989"
-        }
-      ]
-    },
-    {
-      "name": "Justin Benson",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1467,
-          "date": "2023-04-07",
-          "slug": "resolution-2012",
-          "title": "Resolution",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2012"
-        },
-        {
-          "sequence": 1472,
+          "sequence": 1471,
           "date": "2023-04-13",
-          "slug": "the-endless-2017",
-          "title": "The Endless",
+          "slug": "phantasm-iii-lord-of-the-dead-1994",
+          "title": "Phantasm III: Lord of the Dead",
           "medium": "Blu-ray",
           "venue": null,
-          "year": "2017"
+          "year": "1994"
+        },
+        {
+          "sequence": 1476,
+          "date": "2023-04-27",
+          "slug": "phantasm-iv-oblivion-1998",
+          "title": "Phantasm IV: Oblivion",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1998"
+        },
+        {
+          "sequence": 1524,
+          "date": "2023-08-31",
+          "slug": "phantasm-ravager-2016",
+          "title": "Phantasm: Ravager",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2016"
         }
       ]
     },
     {
-      "name": "Aaron Moorhead",
+      "name": "Frederic Tuten",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1467,
-          "date": "2023-04-07",
-          "slug": "resolution-2012",
-          "title": "Resolution",
+          "sequence": 1433,
+          "date": "2023-01-13",
+          "slug": "possession-1981",
+          "title": "Possession",
           "medium": "Blu-ray",
           "venue": null,
-          "year": "2012"
+          "year": "1981"
         },
         {
-          "sequence": 1472,
-          "date": "2023-04-13",
-          "slug": "the-endless-2017",
-          "title": "The Endless",
+          "sequence": 1433,
+          "date": "2023-01-13",
+          "slug": "possession-1981",
+          "title": "Possession",
           "medium": "Blu-ray",
           "venue": null,
-          "year": "2017"
+          "year": "1981"
         }
       ]
     }

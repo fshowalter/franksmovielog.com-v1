@@ -647,9 +647,163 @@
   ],
   "mostWatchedWriters": [
     {
+      "name": "Quentin Tarantino",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 372,
+          "date": "2014-02-16",
+          "slug": null,
+          "title": "Kill Bill: Vol. 1",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2003"
+        },
+        {
+          "sequence": 372,
+          "date": "2014-02-16",
+          "slug": null,
+          "title": "Kill Bill: Vol. 1",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2003"
+        },
+        {
+          "sequence": 378,
+          "date": "2014-03-29",
+          "slug": null,
+          "title": "Kill Bill: Vol. 2",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2004"
+        },
+        {
+          "sequence": 378,
+          "date": "2014-03-29",
+          "slug": null,
+          "title": "Kill Bill: Vol. 2",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2004"
+        }
+      ]
+    },
+    {
+      "name": "Harry Alan Towers",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 414,
+          "date": "2014-08-02",
+          "slug": "the-bloody-judge-1970",
+          "title": "Night of the Blood Monster",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1970"
+        },
+        {
+          "sequence": 416,
+          "date": "2014-08-09",
+          "slug": "psycho-circus-1966",
+          "title": "Psycho-Circus",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1966"
+        },
+        {
+          "sequence": 436,
+          "date": "2014-10-18",
+          "slug": null,
+          "title": "The Face of Fu Manchu",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 437,
+          "date": "2014-10-18",
+          "slug": null,
+          "title": "The Brides of Fu Manchu",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
+    {
+      "name": "Boaz Davidson",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 360,
+          "date": "2014-01-11",
+          "slug": null,
+          "title": "Ninja: Shadow of a Tear",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2013"
+        },
+        {
+          "sequence": 367,
+          "date": "2014-01-27",
+          "slug": null,
+          "title": "Ninja",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2009"
+        },
+        {
+          "sequence": 367,
+          "date": "2014-01-27",
+          "slug": null,
+          "title": "Ninja",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "Dan O'Bannon",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 366,
+          "date": "2014-01-25",
+          "slug": null,
+          "title": "The Return of the Living Dead",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 408,
+          "date": "2014-07-05",
+          "slug": null,
+          "title": "Alien",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1979"
+        },
+        {
+          "sequence": 408,
+          "date": "2014-07-05",
+          "slug": null,
+          "title": "Alien",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1979"
+        }
+      ]
+    },
+    {
       "name": "Dario Argento",
       "count": 3,
-      "slug": "dario-argento",
+      "slug": null,
       "viewings": [
         {
           "sequence": 368,
@@ -681,60 +835,19 @@
       ]
     },
     {
-      "name": "Isaac Florentine",
-      "count": 2,
+      "name": "Bram Stoker",
+      "count": 3,
       "slug": null,
       "viewings": [
         {
-          "sequence": 360,
-          "date": "2014-01-11",
+          "sequence": 368,
+          "date": "2014-02-01",
           "slug": null,
-          "title": "Ninja: Shadow of a Tear",
+          "title": "Dracula 3D",
           "medium": "Netflix",
           "venue": null,
-          "year": "2013"
+          "year": "2012"
         },
-        {
-          "sequence": 367,
-          "date": "2014-01-27",
-          "slug": null,
-          "title": "Ninja",
-          "medium": "Amazon",
-          "venue": null,
-          "year": "2009"
-        }
-      ]
-    },
-    {
-      "name": "Quentin Tarantino",
-      "count": 2,
-      "slug": "quentin-tarantino",
-      "viewings": [
-        {
-          "sequence": 372,
-          "date": "2014-02-16",
-          "slug": null,
-          "title": "Kill Bill: Vol. 1",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2003"
-        },
-        {
-          "sequence": 378,
-          "date": "2014-03-29",
-          "slug": null,
-          "title": "Kill Bill: Vol. 2",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2004"
-        }
-      ]
-    },
-    {
-      "name": "Terence Fisher",
-      "count": 2,
-      "slug": null,
-      "viewings": [
         {
           "sequence": 418,
           "date": "2014-08-16",
@@ -756,8 +869,110 @@
       ]
     },
     {
-      "name": "Adam Wingard",
-      "count": 2,
+      "name": "Christopher Markus",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 379,
+          "date": "2014-04-10",
+          "slug": null,
+          "title": "Captain America: The Winter Soldier",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2014"
+        },
+        {
+          "sequence": 387,
+          "date": "2014-05-11",
+          "slug": null,
+          "title": "Pain & Gain",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2013"
+        },
+        {
+          "sequence": 462,
+          "date": "2014-12-31",
+          "slug": null,
+          "title": "Thor: The Dark World",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "name": "Stephen McFeely",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 379,
+          "date": "2014-04-10",
+          "slug": null,
+          "title": "Captain America: The Winter Soldier",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2014"
+        },
+        {
+          "sequence": 387,
+          "date": "2014-05-11",
+          "slug": null,
+          "title": "Pain & Gain",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2013"
+        },
+        {
+          "sequence": 462,
+          "date": "2014-12-31",
+          "slug": null,
+          "title": "Thor: The Dark World",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "name": "Clive Barker",
+      "count": 3,
+      "slug": "clive-barker",
+      "viewings": [
+        {
+          "sequence": 384,
+          "date": "2014-05-03",
+          "slug": null,
+          "title": "Candyman",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1992"
+        },
+        {
+          "sequence": 450,
+          "date": "2014-12-06",
+          "slug": null,
+          "title": "Nightbreed",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1990"
+        },
+        {
+          "sequence": 450,
+          "date": "2014-12-06",
+          "slug": null,
+          "title": "Nightbreed",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1990"
+        }
+      ]
+    },
+    {
+      "name": "Simon Barrett",
+      "count": 3,
       "slug": null,
       "viewings": [
         {
@@ -777,39 +992,7 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2013"
-        }
-      ]
-    },
-    {
-      "name": "Don Sharp",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 436,
-          "date": "2014-10-18",
-          "slug": null,
-          "title": "The Face of Fu Manchu",
-          "medium": "DVD",
-          "venue": null,
-          "year": "1965"
         },
-        {
-          "sequence": 437,
-          "date": "2014-10-18",
-          "slug": null,
-          "title": "The Brides of Fu Manchu",
-          "medium": "DVD",
-          "venue": null,
-          "year": "1966"
-        }
-      ]
-    },
-    {
-      "name": "Eduardo S\u00e1nchez",
-      "count": 2,
-      "slug": null,
-      "viewings": [
         {
           "sequence": 440,
           "date": "2014-10-25",
@@ -818,15 +1001,6 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2013"
-        },
-        {
-          "sequence": 441,
-          "date": "2014-10-26",
-          "slug": null,
-          "title": "Exists",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2014"
         }
       ]
     }

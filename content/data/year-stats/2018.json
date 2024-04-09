@@ -97,6 +97,92 @@
   ],
   "mostWatchedDirectors": [
     {
+      "name": "Anthony Russo",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 677,
+          "date": "2018-05-18",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 679,
+          "date": "2018-05-22",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 681,
+          "date": "2018-05-27",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 683,
+          "date": "2018-06-13",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "name": "Joe Russo",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 677,
+          "date": "2018-05-18",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 679,
+          "date": "2018-05-22",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 681,
+          "date": "2018-05-27",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 683,
+          "date": "2018-06-13",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        }
+      ]
+    },
+    {
       "name": "The Russo Brothers",
       "count": 4,
       "slug": null,
@@ -329,56 +415,6 @@
           "medium": "TCM HD",
           "venue": null,
           "year": "1936"
-        }
-      ]
-    },
-    {
-      "name": "Justin Benson",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 675,
-          "date": "2018-05-09",
-          "slug": "the-endless-2017",
-          "title": "The Endless",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2017"
-        },
-        {
-          "sequence": 678,
-          "date": "2018-05-19",
-          "slug": "resolution-2012",
-          "title": "Resolution",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "2012"
-        }
-      ]
-    },
-    {
-      "name": "Aaron Moorhead",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 675,
-          "date": "2018-05-09",
-          "slug": "the-endless-2017",
-          "title": "The Endless",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2017"
-        },
-        {
-          "sequence": 678,
-          "date": "2018-05-19",
-          "slug": "resolution-2012",
-          "title": "Resolution",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "2012"
         }
       ]
     }
@@ -925,7 +961,50 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "The Russo Brothers",
+      "name": "Dario Argento",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 644,
+          "date": "2018-03-10",
+          "slug": null,
+          "title": "Tenebrae",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 644,
+          "date": "2018-03-10",
+          "slug": null,
+          "title": "Tenebrae",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 649,
+          "date": "2018-03-23",
+          "slug": "the-bird-with-the-crystal-plumage-1970",
+          "title": "The Bird with the Crystal Plumage",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1970"
+        },
+        {
+          "sequence": 715,
+          "date": "2018-10-27",
+          "slug": null,
+          "title": "Deep Red",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - Woodbridge",
+          "year": "1975"
+        }
+      ]
+    },
+    {
+      "name": "Christopher Markus",
       "count": 4,
       "slug": null,
       "viewings": [
@@ -968,101 +1047,94 @@
       ]
     },
     {
-      "name": "Dario Argento",
-      "count": 3,
-      "slug": "dario-argento",
+      "name": "Stephen McFeely",
+      "count": 4,
+      "slug": null,
       "viewings": [
         {
-          "sequence": 644,
-          "date": "2018-03-10",
-          "slug": null,
-          "title": "Tenebrae",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "1982"
+          "sequence": 677,
+          "date": "2018-05-18",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
         },
         {
-          "sequence": 649,
-          "date": "2018-03-23",
-          "slug": "the-bird-with-the-crystal-plumage-1970",
-          "title": "The Bird with the Crystal Plumage",
+          "sequence": 679,
+          "date": "2018-05-22",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
           "medium": null,
-          "venue": "AFI Silver",
-          "year": "1970"
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
         },
         {
-          "sequence": 715,
-          "date": "2018-10-27",
-          "slug": null,
-          "title": "Deep Red",
+          "sequence": 681,
+          "date": "2018-05-27",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
           "medium": null,
-          "venue": "Alamo Drafthouse Cinema - Woodbridge",
-          "year": "1975"
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 683,
+          "date": "2018-06-13",
+          "slug": "avengers-infinity-war-2018",
+          "title": "Avengers: Infinity War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
         }
       ]
     },
     {
-      "name": "Howard Hawks",
-      "count": 3,
-      "slug": "howard-hawks",
+      "name": "Panos Cosmatos",
+      "count": 4,
+      "slug": null,
       "viewings": [
         {
-          "sequence": 657,
-          "date": "2018-03-28",
-          "slug": "the-crowd-roars-1932",
-          "title": "The Crowd Roars",
-          "medium": "TCM",
-          "venue": null,
-          "year": "1932"
-        },
-        {
-          "sequence": 671,
-          "date": "2018-05-01",
-          "slug": null,
-          "title": "Land of the Pharaohs",
-          "medium": "DVD",
-          "venue": null,
-          "year": "1955"
-        },
-        {
-          "sequence": 686,
-          "date": "2018-06-17",
-          "slug": "rio-bravo-1959",
-          "title": "Rio Bravo",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1959"
-        }
-      ]
-    },
-    {
-      "name": "Lucio Fulci",
-      "count": 2,
-      "slug": "lucio-fulci",
-      "viewings": [
-        {
-          "sequence": 633,
-          "date": "2018-01-20",
-          "slug": null,
-          "title": "Zombie 3",
+          "sequence": 702,
+          "date": "2018-09-16",
+          "slug": "mandy-2018",
+          "title": "Mandy",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1988"
+          "year": "2018"
         },
         {
-          "sequence": 710,
-          "date": "2018-10-13",
-          "slug": null,
-          "title": "Zombie",
+          "sequence": 702,
+          "date": "2018-09-16",
+          "slug": "mandy-2018",
+          "title": "Mandy",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1979"
+          "year": "2018"
+        },
+        {
+          "sequence": 703,
+          "date": "2018-09-18",
+          "slug": "mandy-2018",
+          "title": "Mandy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 703,
+          "date": "2018-09-18",
+          "slug": "mandy-2018",
+          "title": "Mandy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
         }
       ]
     },
     {
       "name": "Lowell Dean",
-      "count": 2,
+      "count": 3,
       "slug": null,
       "viewings": [
         {
@@ -1082,131 +1154,149 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2017"
-        }
-      ]
-    },
-    {
-      "name": "Michael Curtiz",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 654,
-          "date": "2018-03-25",
-          "slug": null,
-          "title": "Kid Galahad",
-          "medium": "TCM",
-          "venue": null,
-          "year": "1937"
         },
         {
-          "sequence": 695,
-          "date": "2018-08-05",
-          "slug": "private-detective-62-1933",
-          "title": "Private Detective 62",
-          "medium": "TCM",
-          "venue": null,
-          "year": "1933"
-        }
-      ]
-    },
-    {
-      "name": "Joseph Zito",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 662,
-          "date": "2018-04-13",
-          "slug": "friday-the-13th-the-final-chapter-1984",
-          "title": "Friday the 13th: The Final Chapter",
+          "sequence": 636,
+          "date": "2018-01-31",
+          "slug": "another-wolfcop-2017",
+          "title": "Another WolfCop",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1984"
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "name": "Hayao Miyazaki",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 670,
+          "date": "2018-04-29",
+          "slug": null,
+          "title": "My Neighbor Totoro",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1988"
         },
         {
-          "sequence": 701,
-          "date": "2018-09-15",
+          "sequence": 670,
+          "date": "2018-04-29",
           "slug": null,
-          "title": "The Prowler",
+          "title": "My Neighbor Totoro",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1988"
+        },
+        {
+          "sequence": 670,
+          "date": "2018-04-29",
+          "slug": null,
+          "title": "My Neighbor Totoro",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1988"
+        }
+      ]
+    },
+    {
+      "name": "Claudio Fragasso",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 633,
+          "date": "2018-01-20",
+          "slug": null,
+          "title": "Zombie 3",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1988"
+        },
+        {
+          "sequence": 633,
+          "date": "2018-01-20",
+          "slug": null,
+          "title": "Zombie 3",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1988"
+        }
+      ]
+    },
+    {
+      "name": "Nicolas Winding Refn",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 639,
+          "date": "2018-02-18",
+          "slug": null,
+          "title": "The Neon Demon",
           "medium": "Amazon",
           "venue": null,
-          "year": "1981"
-        }
-      ]
-    },
-    {
-      "name": "Ray Enright",
-      "count": 2,
-      "slug": null,
-      "viewings": [
+          "year": "2016"
+        },
         {
-          "sequence": 663,
-          "date": "2018-04-14",
+          "sequence": 639,
+          "date": "2018-02-18",
           "slug": null,
-          "title": "The Wagons Roll at Night",
-          "medium": "TCM",
+          "title": "The Neon Demon",
+          "medium": "Amazon",
           "venue": null,
-          "year": "1941"
-        },
-        {
-          "sequence": 673,
-          "date": "2018-05-02",
-          "slug": "china-clipper-1936",
-          "title": "China Clipper",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1936"
+          "year": "2016"
         }
       ]
     },
     {
-      "name": "Justin Benson",
+      "name": "Tetsuya Saruwatari",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 675,
-          "date": "2018-05-09",
-          "slug": "the-endless-2017",
-          "title": "The Endless",
+          "sequence": 640,
+          "date": "2018-02-20",
+          "slug": null,
+          "title": "Riki-Oh: The Story of Ricky",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2017"
+          "year": "1991"
         },
         {
-          "sequence": 678,
-          "date": "2018-05-19",
-          "slug": "resolution-2012",
-          "title": "Resolution",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "2012"
+          "sequence": 640,
+          "date": "2018-02-20",
+          "slug": null,
+          "title": "Riki-Oh: The Story of Ricky",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1991"
         }
       ]
     },
     {
-      "name": "Aaron Moorhead",
+      "name": "Neal Israel",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 675,
-          "date": "2018-05-09",
-          "slug": "the-endless-2017",
-          "title": "The Endless",
+          "sequence": 646,
+          "date": "2018-03-19",
+          "slug": null,
+          "title": "Real Genius",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2017"
+          "year": "1985"
         },
         {
-          "sequence": 678,
-          "date": "2018-05-19",
-          "slug": "resolution-2012",
-          "title": "Resolution",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "2012"
+          "sequence": 646,
+          "date": "2018-03-19",
+          "slug": null,
+          "title": "Real Genius",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
         }
       ]
     }

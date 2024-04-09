@@ -487,8 +487,51 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Tenny Wright",
-      "count": 2,
+      "name": "Guillermo del Toro",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 618,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2004"
+        },
+        {
+          "sequence": 618,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2004"
+        },
+        {
+          "sequence": 619,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy II: The Golden Army",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2008"
+        },
+        {
+          "sequence": 619,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy II: The Golden Army",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2008"
+        }
+      ]
+    },
+    {
+      "name": "Kurt Kempler",
+      "count": 3,
       "slug": null,
       "viewings": [
         {
@@ -508,13 +551,22 @@
           "medium": "TCM",
           "venue": null,
           "year": "1933"
+        },
+        {
+          "sequence": 580,
+          "date": "2017-01-17",
+          "slug": "the-telegraph-trail-1933",
+          "title": "The Telegraph Trail",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1933"
         }
       ]
     },
     {
       "name": "Dario Argento",
-      "count": 2,
-      "slug": "dario-argento",
+      "count": 3,
+      "slug": null,
       "viewings": [
         {
           "sequence": 582,
@@ -524,6 +576,15 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1970"
+        },
+        {
+          "sequence": 609,
+          "date": "2017-10-11",
+          "slug": null,
+          "title": "Demons",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
         },
         {
           "sequence": 613,
@@ -537,24 +598,58 @@
       ]
     },
     {
-      "name": "Taika Waititi",
+      "name": "Andrzej Zulawski",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 602,
+          "date": "2017-08-03",
+          "slug": "possession-1981",
+          "title": "Possession",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1981"
+        },
+        {
+          "sequence": 602,
+          "date": "2017-08-03",
+          "slug": "possession-1981",
+          "title": "Possession",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1981"
+        },
+        {
+          "sequence": 602,
+          "date": "2017-08-03",
+          "slug": "possession-1981",
+          "title": "Possession",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1981"
+        }
+      ]
+    },
+    {
+      "name": "James Mangold",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 588,
-          "date": "2017-03-01",
-          "slug": "what-we-do-in-the-shadows-2014",
-          "title": "What We Do in the Shadows",
-          "medium": "Amazon",
-          "venue": null,
-          "year": "2014"
+          "sequence": 589,
+          "date": "2017-03-09",
+          "slug": "logan-2017",
+          "title": "Logan",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2017"
         },
         {
-          "sequence": 623,
-          "date": "2017-12-13",
-          "slug": "thor-ragnarok-2017",
-          "title": "Thor: Ragnarok",
+          "sequence": 589,
+          "date": "2017-03-09",
+          "slug": "logan-2017",
+          "title": "Logan",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2017"
@@ -562,9 +657,59 @@
       ]
     },
     {
-      "name": "Howard Hawks",
+      "name": "Michael Green",
       "count": 2,
-      "slug": "howard-hawks",
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 589,
+          "date": "2017-03-09",
+          "slug": "logan-2017",
+          "title": "Logan",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2017"
+        },
+        {
+          "sequence": 616,
+          "date": "2017-10-30",
+          "slug": null,
+          "title": "Blade Runner 2049",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "name": "Julia Ducournau",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 593,
+          "date": "2017-04-25",
+          "slug": "raw-2016",
+          "title": "Raw",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2016"
+        },
+        {
+          "sequence": 593,
+          "date": "2017-04-25",
+          "slug": "raw-2016",
+          "title": "Raw",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Jules Furthman",
+      "count": 2,
+      "slug": null,
       "viewings": [
         {
           "sequence": 598,
@@ -587,27 +732,52 @@
       ]
     },
     {
-      "name": "Guillermo del Toro",
+      "name": "Leigh Brackett",
+      "count": 2,
+      "slug": "leigh-brackett",
+      "viewings": [
+        {
+          "sequence": 598,
+          "date": "2017-06-18",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1959"
+        },
+        {
+          "sequence": 622,
+          "date": "2017-12-09",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1959"
+        }
+      ]
+    },
+    {
+      "name": "B.H. McCampbell",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 618,
-          "date": "2017-11-13",
-          "slug": null,
-          "title": "Hellboy",
+          "sequence": 598,
+          "date": "2017-06-18",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2004"
+          "year": "1959"
         },
         {
-          "sequence": 619,
-          "date": "2017-11-13",
-          "slug": null,
-          "title": "Hellboy II: The Golden Army",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2008"
+          "sequence": 622,
+          "date": "2017-12-09",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1959"
         }
       ]
     }

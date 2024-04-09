@@ -103,6 +103,74 @@
   ],
   "mostWatchedDirectors": [
     {
+      "name": "Anthony Russo",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 750,
+          "date": "2019-05-13",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        },
+        {
+          "sequence": 751,
+          "date": "2019-05-16",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        },
+        {
+          "sequence": 756,
+          "date": "2019-06-03",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "name": "Joe Russo",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 750,
+          "date": "2019-05-13",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        },
+        {
+          "sequence": 751,
+          "date": "2019-05-16",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        },
+        {
+          "sequence": 756,
+          "date": "2019-06-03",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        }
+      ]
+    },
+    {
       "name": "The Russo Brothers",
       "count": 3,
       "slug": null,
@@ -308,31 +376,6 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2019"
-        }
-      ]
-    },
-    {
-      "name": "Tobe Hooper",
-      "count": 2,
-      "slug": "tobe-hooper",
-      "viewings": [
-        {
-          "sequence": 776,
-          "date": "2019-08-27",
-          "slug": null,
-          "title": "The Texas Chain Saw Massacre",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1974"
-        },
-        {
-          "sequence": 777,
-          "date": "2019-08-27",
-          "slug": null,
-          "title": "The Texas Chainsaw Massacre 2",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1986"
         }
       ]
     }
@@ -816,7 +859,152 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "The Russo Brothers",
+      "name": "Stephen King",
+      "count": 4,
+      "slug": "stephen-king",
+      "viewings": [
+        {
+          "sequence": 781,
+          "date": "2019-09-11",
+          "slug": null,
+          "title": "The Running Man",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1987"
+        },
+        {
+          "sequence": 783,
+          "date": "2019-09-26",
+          "slug": null,
+          "title": "Maximum Overdrive",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1986"
+        },
+        {
+          "sequence": 783,
+          "date": "2019-09-26",
+          "slug": null,
+          "title": "Maximum Overdrive",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1986"
+        },
+        {
+          "sequence": 783,
+          "date": "2019-09-26",
+          "slug": null,
+          "title": "Maximum Overdrive",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1986"
+        }
+      ]
+    },
+    {
+      "name": "Todd Farmer",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 736,
+          "date": "2019-02-12",
+          "slug": null,
+          "title": "My Bloody Valentine",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2009"
+        },
+        {
+          "sequence": 739,
+          "date": "2019-02-16",
+          "slug": null,
+          "title": "Jason X",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2001"
+        },
+        {
+          "sequence": 801,
+          "date": "2019-12-13",
+          "slug": null,
+          "title": "Jason X",
+          "medium": "Vudu",
+          "venue": null,
+          "year": "2001"
+        }
+      ]
+    },
+    {
+      "name": "Damian Shannon",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 746,
+          "date": "2019-04-13",
+          "slug": "freddy-vs-jason-2003",
+          "title": "Freddy vs. Jason",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2003"
+        },
+        {
+          "sequence": 748,
+          "date": "2019-04-27",
+          "slug": null,
+          "title": "Friday the 13th",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2009"
+        },
+        {
+          "sequence": 748,
+          "date": "2019-04-27",
+          "slug": null,
+          "title": "Friday the 13th",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "Mark Swift",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 746,
+          "date": "2019-04-13",
+          "slug": "freddy-vs-jason-2003",
+          "title": "Freddy vs. Jason",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2003"
+        },
+        {
+          "sequence": 748,
+          "date": "2019-04-27",
+          "slug": null,
+          "title": "Friday the 13th",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2009"
+        },
+        {
+          "sequence": 748,
+          "date": "2019-04-27",
+          "slug": null,
+          "title": "Friday the 13th",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "Christopher Markus",
       "count": 3,
       "slug": null,
       "viewings": [
@@ -850,10 +1038,121 @@
       ]
     },
     {
-      "name": "Rick Rosenthal",
+      "name": "Stephen McFeely",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 750,
+          "date": "2019-05-13",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        },
+        {
+          "sequence": 751,
+          "date": "2019-05-16",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        },
+        {
+          "sequence": 756,
+          "date": "2019-06-03",
+          "slug": "avengers-endgame-2019",
+          "title": "Avengers: Endgame",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2019"
+        }
+      ]
+    },
+    {
+      "name": "Neal Purvis",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 807,
+          "date": "2019-12-28",
+          "slug": null,
+          "title": "Skyfall",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "2012"
+        },
+        {
+          "sequence": 808,
+          "date": "2019-12-29",
+          "slug": "casino-royale-2006",
+          "title": "Casino Royale",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "2006"
+        },
+        {
+          "sequence": 809,
+          "date": "2019-12-30",
+          "slug": null,
+          "title": "Quantum of Solace",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "2008"
+        }
+      ]
+    },
+    {
+      "name": "Robert Wade",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 807,
+          "date": "2019-12-28",
+          "slug": null,
+          "title": "Skyfall",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "2012"
+        },
+        {
+          "sequence": 808,
+          "date": "2019-12-29",
+          "slug": "casino-royale-2006",
+          "title": "Casino Royale",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "2006"
+        },
+        {
+          "sequence": 809,
+          "date": "2019-12-30",
+          "slug": null,
+          "title": "Quantum of Solace",
+          "medium": "iTunes",
+          "venue": null,
+          "year": "2008"
+        }
+      ]
+    },
+    {
+      "name": "John Carpenter",
       "count": 2,
       "slug": null,
       "viewings": [
+        {
+          "sequence": 728,
+          "date": "2019-01-31",
+          "slug": "halloween-1978",
+          "title": "Halloween",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "1978"
+        },
         {
           "sequence": 729,
           "date": "2019-01-31",
@@ -862,190 +1161,31 @@
           "medium": "Amazon",
           "venue": null,
           "year": "1981"
-        },
-        {
-          "sequence": 737,
-          "date": "2019-02-15",
-          "slug": null,
-          "title": "Halloween: Resurrection",
-          "medium": "Hulu",
-          "venue": null,
-          "year": "2002"
         }
       ]
     },
     {
-      "name": "Tommy Lee Wallace",
+      "name": "Debra Hill",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 730,
-          "date": "2019-02-01",
-          "slug": null,
-          "title": "Halloween III: Season of the Witch",
-          "medium": "Vudu",
-          "venue": null,
-          "year": "1982"
-        },
-        {
-          "sequence": 790,
-          "date": "2019-10-22",
-          "slug": null,
-          "title": "Halloween III: Season of the Witch",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1982"
-        }
-      ]
-    },
-    {
-      "name": "Steve Miner",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 735,
-          "date": "2019-02-09",
-          "slug": null,
-          "title": "Halloween H20: 20 Years Later",
-          "medium": "Vudu",
-          "venue": null,
-          "year": "1998"
-        },
-        {
-          "sequence": 782,
-          "date": "2019-09-13",
-          "slug": "friday-the-13th-part-2-1981",
-          "title": "Friday the 13th Part 2",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1981"
-        }
-      ]
-    },
-    {
-      "name": "James Isaac",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 739,
-          "date": "2019-02-16",
-          "slug": null,
-          "title": "Jason X",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2001"
-        },
-        {
-          "sequence": 801,
-          "date": "2019-12-13",
-          "slug": null,
-          "title": "Jason X",
-          "medium": "Vudu",
-          "venue": null,
-          "year": "2001"
-        }
-      ]
-    },
-    {
-      "name": "Nicolas Winding Refn",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 755,
-          "date": "2019-05-25",
-          "slug": null,
-          "title": "Pusher",
+          "sequence": 728,
+          "date": "2019-01-31",
+          "slug": "halloween-1978",
+          "title": "Halloween",
           "medium": "Shudder",
           "venue": null,
-          "year": "1996"
+          "year": "1978"
         },
         {
-          "sequence": 767,
-          "date": "2019-08-05",
+          "sequence": 729,
+          "date": "2019-01-31",
           "slug": null,
-          "title": "Drive",
-          "medium": null,
-          "venue": "Prince Charles Cinema",
-          "year": "2011"
-        }
-      ]
-    },
-    {
-      "name": "Dan O'Bannon",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 763,
-          "date": "2019-07-20",
-          "slug": null,
-          "title": "The Resurrected",
-          "medium": "Blu-ray",
+          "title": "Halloween II",
+          "medium": "Amazon",
           "venue": null,
-          "year": "1991"
-        },
-        {
-          "sequence": 764,
-          "date": "2019-07-23",
-          "slug": null,
-          "title": "The Return of the Living Dead",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
-    },
-    {
-      "name": "Quentin Tarantino",
-      "count": 2,
-      "slug": "quentin-tarantino",
-      "viewings": [
-        {
-          "sequence": 773,
-          "date": "2019-08-22",
-          "slug": null,
-          "title": "Once Upon a Time... in Hollywood",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "2019"
-        },
-        {
-          "sequence": 780,
-          "date": "2019-09-09",
-          "slug": null,
-          "title": "Once Upon a Time... in Hollywood",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2019"
-        }
-      ]
-    },
-    {
-      "name": "Tobe Hooper",
-      "count": 2,
-      "slug": "tobe-hooper",
-      "viewings": [
-        {
-          "sequence": 776,
-          "date": "2019-08-27",
-          "slug": null,
-          "title": "The Texas Chain Saw Massacre",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1974"
-        },
-        {
-          "sequence": 777,
-          "date": "2019-08-27",
-          "slug": null,
-          "title": "The Texas Chainsaw Massacre 2",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1986"
+          "year": "1981"
         }
       ]
     }

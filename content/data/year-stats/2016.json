@@ -98,27 +98,52 @@
       ]
     },
     {
-      "name": "Sam Peckinpah",
+      "name": "Anthony Russo",
       "count": 2,
-      "slug": "sam-peckinpah",
+      "slug": null,
       "viewings": [
         {
-          "sequence": 571,
-          "date": "2016-11-27",
-          "slug": "the-getaway-1972",
-          "title": "The Getaway",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1972"
+          "sequence": 547,
+          "date": "2016-05-12",
+          "slug": "captain-america-civil-war-2016",
+          "title": "Captain America: Civil War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2016"
         },
         {
-          "sequence": 573,
-          "date": "2016-12-02",
-          "slug": "straw-dogs-1971",
-          "title": "Straw Dogs",
-          "medium": "Blu-ray",
+          "sequence": 569,
+          "date": "2016-11-12",
+          "slug": "captain-america-civil-war-2016",
+          "title": "Captain America: Civil War",
+          "medium": "Amazon",
           "venue": null,
-          "year": "1971"
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Joe Russo",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 547,
+          "date": "2016-05-12",
+          "slug": "captain-america-civil-war-2016",
+          "title": "Captain America: Civil War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2016"
+        },
+        {
+          "sequence": 569,
+          "date": "2016-11-12",
+          "slug": "captain-america-civil-war-2016",
+          "title": "Captain America: Civil War",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2016"
         }
       ]
     },
@@ -144,6 +169,31 @@
           "medium": "Amazon",
           "venue": null,
           "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Sam Peckinpah",
+      "count": 2,
+      "slug": "sam-peckinpah",
+      "viewings": [
+        {
+          "sequence": 571,
+          "date": "2016-11-27",
+          "slug": "the-getaway-1972",
+          "title": "The Getaway",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1972"
+        },
+        {
+          "sequence": 573,
+          "date": "2016-12-02",
+          "slug": "straw-dogs-1971",
+          "title": "Straw Dogs",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1971"
         }
       ]
     }
@@ -490,32 +540,7 @@
       ]
     },
     {
-      "name": "Sam Peckinpah",
-      "count": 2,
-      "slug": "sam-peckinpah",
-      "viewings": [
-        {
-          "sequence": 571,
-          "date": "2016-11-27",
-          "slug": "the-getaway-1972",
-          "title": "The Getaway",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1972"
-        },
-        {
-          "sequence": 573,
-          "date": "2016-12-02",
-          "slug": "straw-dogs-1971",
-          "title": "Straw Dogs",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1971"
-        }
-      ]
-    },
-    {
-      "name": "The Russo Brothers",
+      "name": "Christopher Markus",
       "count": 2,
       "slug": null,
       "viewings": [
@@ -536,6 +561,206 @@
           "medium": "Amazon",
           "venue": null,
           "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Stephen McFeely",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 547,
+          "date": "2016-05-12",
+          "slug": "captain-america-civil-war-2016",
+          "title": "Captain America: Civil War",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2016"
+        },
+        {
+          "sequence": 569,
+          "date": "2016-11-12",
+          "slug": "captain-america-civil-war-2016",
+          "title": "Captain America: Civil War",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Lucio Fulci",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 552,
+          "date": "2016-06-22",
+          "slug": null,
+          "title": "A Cat in the Brain",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1990"
+        },
+        {
+          "sequence": 552,
+          "date": "2016-06-22",
+          "slug": null,
+          "title": "A Cat in the Brain",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1990"
+        }
+      ]
+    },
+    {
+      "name": "Giovanni Simonelli",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 552,
+          "date": "2016-06-22",
+          "slug": null,
+          "title": "A Cat in the Brain",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1990"
+        },
+        {
+          "sequence": 552,
+          "date": "2016-06-22",
+          "slug": null,
+          "title": "A Cat in the Brain",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1990"
+        }
+      ]
+    },
+    {
+      "name": "Adele Buffington",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 555,
+          "date": "2016-08-22",
+          "slug": "haunted-gold-1932",
+          "title": "Haunted Gold",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1932"
+        },
+        {
+          "sequence": 555,
+          "date": "2016-08-22",
+          "slug": "haunted-gold-1932",
+          "title": "Haunted Gold",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1932"
+        }
+      ]
+    },
+    {
+      "name": "William Goldman",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 557,
+          "date": "2016-08-25",
+          "slug": null,
+          "title": "The Princess Bride",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1987"
+        },
+        {
+          "sequence": 557,
+          "date": "2016-08-25",
+          "slug": null,
+          "title": "The Princess Bride",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1987"
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Gems",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 561,
+          "date": "2016-09-22",
+          "slug": "mars-attacks-1996",
+          "title": "Mars Attacks!",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1996"
+        },
+        {
+          "sequence": 561,
+          "date": "2016-09-22",
+          "slug": "mars-attacks-1996",
+          "title": "Mars Attacks!",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1996"
+        }
+      ]
+    },
+    {
+      "name": "Sergio Martino",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 564,
+          "date": "2016-10-15",
+          "slug": "torso-1973",
+          "title": "Torso",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1973"
+        },
+        {
+          "sequence": 564,
+          "date": "2016-10-15",
+          "slug": "torso-1973",
+          "title": "Torso",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1973"
+        }
+      ]
+    },
+    {
+      "name": "Jeffrey Konvitz",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 567,
+          "date": "2016-10-29",
+          "slug": "the-sentinel-1977",
+          "title": "The Sentinel",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "1977"
+        },
+        {
+          "sequence": 567,
+          "date": "2016-10-29",
+          "slug": "the-sentinel-1977",
+          "title": "The Sentinel",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "1977"
         }
       ]
     }
