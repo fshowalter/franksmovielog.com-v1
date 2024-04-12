@@ -1,5 +1,6 @@
 export * from "./AllTimeStats";
 export * from "./Article";
+export * from "./CastAndCrew";
 export * from "./HeadBuilder";
 export * from "./Home";
 export * from "./Overrated";
