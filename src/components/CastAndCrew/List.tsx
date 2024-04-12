@@ -50,8 +50,8 @@ function Avatar({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
         overflow="hidden"
         boxShadow="borderAll"
         borderRadius="half"
-        maxWidth={48}
-        width={48}
+        maxWidth={64}
+        width={64}
       >
         <GraphqlImage
           image={entity.avatar}
@@ -62,7 +62,7 @@ function Avatar({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
   }
 
   return (
-    <Box width={48} maxWidth={48}>
+    <Box width={64} maxWidth={64}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
@@ -86,6 +86,7 @@ function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
         <Link to={`/cast-and-crew/${entity.slug}/`} fontSize="medium">
           <Box lineHeight="default">{entity.name}</Box>
         </Link>
+        <Spacer axis="vertical" size={4} />
         <Credits entity={entity} />
       </Box>
     );
@@ -96,18 +97,34 @@ function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
       <Box color="subtle" fontSize="medium">
         <Box lineHeight="default">{entity.name}</Box>
       </Box>
+      <Spacer axis="vertical" size={4} />
       <Credits entity={entity} />
     </Box>
   );
 }
 
-function buildCreditsString(
-  prefix: string,
-  reviewCount: number,
-  watchlistCount: number,
-): string {
-  if (!reviewCount && !watchlistCount) {
-    return "";
+function buildCreditsString(entity: Queries.CastAndCrewItemFragment): string {
+  let prefix = "";
+  let watchlistCount: number;
+  let reviewCount: number;
+
+  switch (entity.mostCreditedAs) {
+    case "director": {
+      prefix = "Director of";
+      reviewCount = entity.director.reviewCount;
+      watchlistCount = entity.director.watchlistCount;
+      break;
+    }
+    case "performer": {
+      prefix = "Performer in";
+      reviewCount = entity.performer.reviewCount;
+      watchlistCount = entity.performer.watchlistCount;
+      break;
+    }
+    default:
+      prefix = "Writer of";
+      reviewCount = entity.writer.reviewCount;
+      watchlistCount = entity.writer.watchlistCount;
   }
 
   let creditsString = "";
@@ -118,10 +135,10 @@ function buildCreditsString(
 
   if (watchlistCount) {
     if (reviewCount) {
-      creditsString = `${creditsString} and `;
+      creditsString = `${creditsString} and`;
     }
 
-    creditsString = `${creditsString}${watchlistCount} watchlist`;
+    creditsString = `${creditsString} ${watchlistCount} watchlist`;
   }
 
   return `${prefix} ${creditsString} titles.`;
@@ -133,22 +150,8 @@ function Credits({
   entity: Queries.CastAndCrewItemFragment;
 }): JSX.Element {
   return (
-    <Box>
-      {buildCreditsString(
-        "Director of",
-        entity.director.reviewCount,
-        entity.director.watchlistCount,
-      )}{" "}
-      {buildCreditsString(
-        "Writer of",
-        entity.writer.reviewCount,
-        entity.writer.watchlistCount,
-      )}{" "}
-      {buildCreditsString(
-        "Performer in",
-        entity.performer.reviewCount,
-        entity.performer.watchlistCount,
-      )}
+    <Box color="subtle" fontWeight="light" fontSize="small" letterSpacing={0.5}>
+      {buildCreditsString(entity)}
     </Box>
   );
 }

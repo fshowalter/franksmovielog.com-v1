@@ -41,6 +41,7 @@ export const query = graphql`
   fragment CastAndCrewItem on CastAndCrewJson {
     name
     slug
+    mostCreditedAs
     director {
       reviewCount
       watchlistCount
@@ -59,8 +60,8 @@ export const query = graphql`
           layout: FIXED
           formats: [JPG, AVIF]
           quality: 80
-          width: 48
-          height: 48
+          width: 64
+          height: 64
           placeholder: NONE
         )
       }

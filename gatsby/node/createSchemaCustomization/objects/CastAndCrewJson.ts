@@ -39,6 +39,7 @@ export const CastAndCrewJson = {
   fields: {
     name: "String!",
     slug: "String!",
+    mostCreditedAs: "String!",
     director: `${SchemaNames.CastAndCrewCredits}!`,
     performer: `${SchemaNames.CastAndCrewCredits}!`,
     writer: `${SchemaNames.CastAndCrewCredits}!`,
