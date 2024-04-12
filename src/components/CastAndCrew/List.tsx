@@ -82,15 +82,73 @@ function Avatar({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
 function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
   if (entity.slug) {
     return (
-      <Link to={`/cast-and-crew/${entity.slug}/`} fontSize="medium">
-        <Box lineHeight="default">{entity.name}</Box>
-      </Link>
+      <Box>
+        <Link to={`/cast-and-crew/${entity.slug}/`} fontSize="medium">
+          <Box lineHeight="default">{entity.name}</Box>
+        </Link>
+        <Credits entity={entity} />
+      </Box>
     );
   }
 
   return (
-    <Box color="subtle" fontSize="medium">
-      <Box lineHeight="default">{entity.name}</Box>
+    <Box>
+      <Box color="subtle" fontSize="medium">
+        <Box lineHeight="default">{entity.name}</Box>
+      </Box>
+      <Credits entity={entity} />
+    </Box>
+  );
+}
+
+function buildCreditsString(
+  prefix: string,
+  reviewCount: number,
+  watchlistCount: number,
+): string {
+  if (!reviewCount && !watchlistCount) {
+    return "";
+  }
+
+  let creditsString = "";
+
+  if (reviewCount) {
+    creditsString = `${reviewCount} reviewed`;
+  }
+
+  if (watchlistCount) {
+    if (reviewCount) {
+      creditsString = `${creditsString} and `;
+    }
+
+    creditsString = `${creditsString}${watchlistCount} watchlist`;
+  }
+
+  return `${prefix} ${creditsString} titles.`;
+}
+
+function Credits({
+  entity,
+}: {
+  entity: Queries.CastAndCrewItemFragment;
+}): JSX.Element {
+  return (
+    <Box>
+      {buildCreditsString(
+        "Director of",
+        entity.director.reviewCount,
+        entity.director.watchlistCount,
+      )}{" "}
+      {buildCreditsString(
+        "Writer of",
+        entity.writer.reviewCount,
+        entity.writer.watchlistCount,
+      )}{" "}
+      {buildCreditsString(
+        "Performer in",
+        entity.performer.reviewCount,
+        entity.performer.watchlistCount,
+      )}
     </Box>
   );
 }
