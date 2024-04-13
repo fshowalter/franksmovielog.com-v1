@@ -69,7 +69,7 @@ export function CreditsList({
           </Box>
         </Box>
       </Box>
-      <Spacer axis="vertical" size={{ default: 64 }} />
+      <Spacer axis="vertical" size={{ default: 32, tablet: 64 }} />
     </>
   );
 }
