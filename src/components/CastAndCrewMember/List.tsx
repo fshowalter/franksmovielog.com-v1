@@ -6,30 +6,50 @@ import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
 import { Action, ActionType } from "./CastAndCrewMember.reducer";
+import { SectionHeader } from "./CreditsSummary";
+import { stickyGroupHeaderStyle } from "./List.css";
 
 export function List({
   groupedItems,
   dispatch,
   totalCount,
   visibleCount,
+  headerText,
 }: {
   groupedItems: Map<string, Queries.WatchlistEntityTitleFragment[]>;
   dispatch: React.Dispatch<Action>;
   totalCount: number;
   visibleCount: number;
+  headerText: string;
 }) {
-  return (
-    <GroupedList
-      data-testid="poster-list"
-      groupedItems={groupedItems}
+  if (totalCount === 0) {
+    return null;
+  }
+
+  const header = (
+    <SectionHeader
       visibleCount={visibleCount}
       totalCount={totalCount}
-      onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
-    >
-      {(item) => {
-        return <WatchlistTitle item={item} key={item.imdbId} />;
-      }}
-    </GroupedList>
+      text={headerText}
+    />
+  );
+
+  return (
+    <section>
+      <GroupedList
+        data-testid="poster-list"
+        groupedItems={groupedItems}
+        visibleCount={visibleCount}
+        totalCount={totalCount}
+        onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
+        header={header}
+        stickyGroupHeaderStyleOverride={stickyGroupHeaderStyle}
+      >
+        {(item) => {
+          return <WatchlistTitle item={item} key={item.imdbId} />;
+        }}
+      </GroupedList>
+    </section>
   );
 }
 

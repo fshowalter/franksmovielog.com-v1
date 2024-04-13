@@ -81,7 +81,9 @@ export interface State {
   allPerformerTitles: Queries.CastAndCrewMemberTitleFragment[];
   allWriterTitles: Queries.CastAndCrewMemberTitleFragment[];
   sortValue: Sort;
-  showCount: number;
+  directorShowCount: number;
+  writerShowCount: number;
+  performerShowCount: number;
   groupedDirectorTitles: Map<string, Queries.CastAndCrewMemberTitleFragment[]>;
   groupedPerformerTitles: Map<string, Queries.CastAndCrewMemberTitleFragment[]>;
   groupedWriterTitles: Map<string, Queries.CastAndCrewMemberTitleFragment[]>;
@@ -119,7 +121,9 @@ export function initState({
       writerTitles.slice(0, SHOW_COUNT_DEFAULT),
       sort,
     ),
-    showCount: SHOW_COUNT_DEFAULT,
+    directorShowCount: SHOW_COUNT_DEFAULT,
+    writerShowCount: SHOW_COUNT_DEFAULT,
+    performerShowCount: SHOW_COUNT_DEFAULT,
     sortValue: sort,
     hideReviewed: false,
   };

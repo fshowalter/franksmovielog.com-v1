@@ -1,11 +1,10 @@
 import { graphql } from "gatsby";
 import { useReducer } from "react";
-import { Box } from "../Box";
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
 import { initState, reducer } from "./CastAndCrewMember.reducer";
+import { CreditsList } from "./CreditsList";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
-import { List } from "./List";
 
 export function CastAndCrewMember({
   entity,
@@ -43,26 +42,20 @@ export function CastAndCrewMember({
       }
       list={
         <>
-          <Box as="h3">Director</Box>
-          <List
-            dispatch={dispatch}
-            totalCount={state.filteredDirectorTitles.length}
-            visibleCount={state.showCount}
+          <CreditsList
             groupedItems={state.groupedDirectorTitles}
+            summaryText="Director"
+            titleCount={state.filteredDirectorTitles.length}
           />
-          <Box as="h3">Performer</Box>
-          <List
-            dispatch={dispatch}
-            totalCount={state.filteredPerformerTitles.length}
-            visibleCount={state.showCount}
+          <CreditsList
             groupedItems={state.groupedPerformerTitles}
+            summaryText="Performer"
+            titleCount={state.filteredPerformerTitles.length}
           />
-          <Box as="h3">Writer</Box>
-          <List
-            dispatch={dispatch}
-            totalCount={state.filteredWriterTitles.length}
-            visibleCount={state.showCount}
+          <CreditsList
             groupedItems={state.groupedWriterTitles}
+            summaryText="Writer"
+            titleCount={state.filteredWriterTitles.length}
           />
         </>
       }
