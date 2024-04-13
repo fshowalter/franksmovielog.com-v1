@@ -1,4 +1,5 @@
 import { allTimeStatsQuery } from "./allTimeStatsQuery";
+import { castAndCrewMemberQuery } from "./castAndCrewMemberQuery";
 import { reviewedTitleQuery } from "./reviewedTitleQuery";
 import { watchlistCollectionQuery } from "./watchlistCollectionQuery";
 import { watchlistDirectorQuery } from "./watchlistDirectorQuery";
@@ -19,5 +20,6 @@ export function createResolvers({ createResolvers }: CreateResolversArgs) {
     allTimeStatsQuery,
     watchlistProgressQuery,
     yearStatsQuery,
+    castAndCrewMemberQuery,
   ].forEach((resolver) => void createResolvers(resolver));
 }
