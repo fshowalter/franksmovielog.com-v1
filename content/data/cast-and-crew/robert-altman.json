@@ -1,730 +1,673 @@
 {
   "name": "Robert Altman",
   "slug": "robert-altman",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0050302",
-        "title": "The Delinquents",
-        "year": "1957",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Delinquents (1957)",
-        "gradeValue": null,
-        "releaseSequence": "1957-02-20tt0050302",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0058406",
-        "title": "Nightmare in Chicago",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Nightmare in Chicago (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-04-02tt0058406",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062827",
-        "title": "Countdown",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Countdown (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-08-20tt0062827",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0065086",
-        "title": "That Cold Day in the Park",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "That Cold Day in the Park (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-05-21tt0065086",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0066026",
-        "title": "M*A*S*H",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "M*A*S*H (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-01-25tt0066026",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0065492",
-        "title": "Brewster McCloud",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Brewster McCloud (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-12-05tt0065492",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0067411",
-        "title": "McCabe & Mrs. Miller",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "McCabe & Mrs. Miller (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-06-24tt0067411",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068732",
-        "title": "Images",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Images (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-05-09tt0068732",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070334",
-        "title": "The Long Goodbye",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Long Goodbye (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-03-07tt0070334",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072274",
-        "title": "Thieves Like Us",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Thieves Like Us (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-02-11tt0072274",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0071269",
-        "title": "California Split",
-        "year": "1974",
-        "slug": "california-split-1974",
-        "grade": "A",
-        "sortTitle": "California Split (1974)",
-        "gradeValue": 12,
-        "releaseSequence": "1974-08-01tt0071269",
-        "reviewDate": "2021-04-19",
-        "viewingSequence": "2021-04-19-661"
-      },
-      {
-        "imdbId": "tt0073440",
-        "title": "Nashville",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Nashville (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-06-11tt0073440",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074254",
-        "title": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-06-01tt0074254",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0075612",
-        "title": "3 Women",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "3 Women (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-04-10tt0075612",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0078481",
-        "title": "A Wedding",
-        "year": "1978",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Wedding (1978)",
-        "gradeValue": null,
-        "releaseSequence": "1978-09-12tt0078481",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0079770",
-        "title": "Quintet",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Quintet (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-02-09tt0079770",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0079710",
-        "title": "A Perfect Couple",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Perfect Couple (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-04-02tt0079710",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0079256",
-        "title": "HealtH",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "HealtH (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-08-23tt0079256",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0081353",
-        "title": "Popeye",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Popeye (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-12-06tt0081353",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0311701",
-        "title": "Rattlesnake in a Cooler",
-        "year": "1982",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Rattlesnake in a Cooler (1982)",
-        "gradeValue": null,
-        "releaseSequence": "1982-03-14tt0311701",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0084831",
-        "title": "Precious Blood",
-        "year": "1982",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Precious Blood (1982)",
-        "gradeValue": null,
-        "releaseSequence": "1982-04-06tt0084831",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0083745",
-        "title": "Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean",
-        "year": "1982",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean (1982)",
-        "gradeValue": null,
-        "releaseSequence": "1982-08-25tt0083745",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0086377",
-        "title": "Streamers",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Streamers (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-09-05tt0086377",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0088074",
-        "title": "Secret Honor",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Secret Honor (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-07-06tt0088074",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0089464",
-        "title": "The Laundromat",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Laundromat (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-04-01tt0089464",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0089160",
-        "title": "Fool for Love",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fool for Love (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-12-06tt0089160",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0089715",
-        "title": "O.C. and Stiggs",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "O.C. and Stiggs (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-??-??tt0089715",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0092646",
-        "title": "Beyond Therapy",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Beyond Therapy (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-02-06tt0092646",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0092620",
-        "title": "Basements",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Basements (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-05-12tt0092620",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0092580",
-        "title": "Aria",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Aria (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-05-19tt0092580",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094826",
-        "title": "The Caine Mutiny Court-Martial",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Caine Mutiny Court-Martial (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-05-08tt0094826",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0100873",
-        "title": "Vincent & Theo",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Vincent & Theo (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-04-27tt0100873",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0105151",
-        "title": "The Player",
-        "year": "1992",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Player (1992)",
-        "gradeValue": null,
-        "releaseSequence": "1992-04-03tt0105151",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0108122",
-        "title": "Short Cuts",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Short Cuts (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-09-04tt0108122",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0110907",
-        "title": "Ready to Wear",
-        "year": "1994",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ready to Wear (1994)",
-        "gradeValue": null,
-        "releaseSequence": "1994-12-23tt0110907",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0116745",
-        "title": "Kansas City",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Kansas City (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-05-01tt0116745",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0119196",
-        "title": "The Gingerbread Man",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gingerbread Man (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-01-23tt0119196",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0126250",
-        "title": "Cookie's Fortune",
-        "year": "1999",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cookie's Fortune (1999)",
-        "gradeValue": null,
-        "releaseSequence": "1999-01-22tt0126250",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0205271",
-        "title": "Dr. T & the Women",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dr. T & the Women (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-09-01tt0205271",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0280707",
-        "title": "Gosford Park",
-        "year": "2001",
-        "slug": "gosford-park-2001",
-        "grade": "B-",
-        "sortTitle": "Gosford Park (2001)",
-        "gradeValue": 8,
-        "releaseSequence": "2001-11-07tt0280707",
-        "reviewDate": "2023-05-25",
-        "viewingSequence": "2023-05-25-1489"
-      },
-      {
-        "imdbId": "tt0335013",
-        "title": "The Company",
-        "year": "2003",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Company (2003)",
-        "gradeValue": null,
-        "releaseSequence": "2003-09-08tt0335013",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0420087",
-        "title": "A Prairie Home Companion",
-        "year": "2006",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Prairie Home Companion (2006)",
-        "gradeValue": null,
-        "releaseSequence": "2006-02-12tt0420087",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt4791860",
-        "title": "Killer App",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Killer App (1998)",
-        "gradeValue": null,
-        "releaseSequence": "2015-04-13tt4791860",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 2,
-    "watchlistCount": 41
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0050302",
-        "title": "The Delinquents",
-        "year": "1957",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Delinquents (1957)",
-        "gradeValue": null,
-        "releaseSequence": "1957-02-20tt0050302",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0067411",
-        "title": "McCabe & Mrs. Miller",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "McCabe & Mrs. Miller (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-06-24tt0067411",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068732",
-        "title": "Images",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Images (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-05-09tt0068732",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072274",
-        "title": "Thieves Like Us",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Thieves Like Us (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-02-11tt0072274",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074254",
-        "title": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-06-01tt0074254",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0075612",
-        "title": "3 Women",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "3 Women (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-04-10tt0075612",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0078481",
-        "title": "A Wedding",
-        "year": "1978",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Wedding (1978)",
-        "gradeValue": null,
-        "releaseSequence": "1978-09-12tt0078481",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0079770",
-        "title": "Quintet",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Quintet (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-02-09tt0079770",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0079710",
-        "title": "A Perfect Couple",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Perfect Couple (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-04-02tt0079710",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0079256",
-        "title": "HealtH",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "HealtH (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-08-23tt0079256",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0092646",
-        "title": "Beyond Therapy",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Beyond Therapy (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-02-06tt0092646",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0092580",
-        "title": "Aria",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Aria (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-05-19tt0092580",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0108122",
-        "title": "Short Cuts",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Short Cuts (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-09-04tt0108122",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0110907",
-        "title": "Ready to Wear",
-        "year": "1994",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ready to Wear (1994)",
-        "gradeValue": null,
-        "releaseSequence": "1994-12-23tt0110907",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0116745",
-        "title": "Kansas City",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Kansas City (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-05-01tt0116745",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0280707",
-        "title": "Gosford Park",
-        "year": "2001",
-        "slug": "gosford-park-2001",
-        "grade": "B-",
-        "sortTitle": "Gosford Park (2001)",
-        "gradeValue": 8,
-        "releaseSequence": "2001-11-07tt0280707",
-        "reviewDate": "2023-05-25",
-        "viewingSequence": "2023-05-25-1489"
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 15
-  },
-  "performer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0050302",
+      "title": "The Delinquents",
+      "year": "1957",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Delinquents (1957)",
+      "gradeValue": null,
+      "releaseSequence": "1957-02-20tt0050302",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0058406",
+      "title": "Nightmare in Chicago",
+      "year": "1964",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Nightmare in Chicago (1964)",
+      "gradeValue": null,
+      "releaseSequence": "1964-04-02tt0058406",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0062827",
+      "title": "Countdown",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Countdown (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-08-20tt0062827",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0065086",
+      "title": "That Cold Day in the Park",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "That Cold Day in the Park (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-05-21tt0065086",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0066026",
+      "title": "M*A*S*H",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "M*A*S*H (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-01-25tt0066026",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0065492",
+      "title": "Brewster McCloud",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Brewster McCloud (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-12-05tt0065492",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0067411",
+      "title": "McCabe & Mrs. Miller",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "McCabe & Mrs. Miller (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-06-24tt0067411",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0068732",
+      "title": "Images",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Images (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-05-09tt0068732",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0070334",
+      "title": "The Long Goodbye",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Long Goodbye (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-03-07tt0070334",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0072274",
+      "title": "Thieves Like Us",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Thieves Like Us (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-02-11tt0072274",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0071269",
+      "title": "California Split",
+      "year": "1974",
+      "slug": "california-split-1974",
+      "grade": "A",
+      "sortTitle": "California Split (1974)",
+      "gradeValue": 12,
+      "releaseSequence": "1974-08-01tt0071269",
+      "reviewDate": "2021-04-19",
+      "viewingSequence": "2021-04-19-661"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0073440",
+      "title": "Nashville",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Nashville (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-06-11tt0073440",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0074254",
+      "title": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson",
+      "year": "1976",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Buffalo Bill and the Indians, or Sitting Bull's History Lesson (1976)",
+      "gradeValue": null,
+      "releaseSequence": "1976-06-01tt0074254",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0075612",
+      "title": "3 Women",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "3 Women (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-04-10tt0075612",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0078481",
+      "title": "A Wedding",
+      "year": "1978",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Wedding (1978)",
+      "gradeValue": null,
+      "releaseSequence": "1978-09-12tt0078481",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0079770",
+      "title": "Quintet",
+      "year": "1979",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Quintet (1979)",
+      "gradeValue": null,
+      "releaseSequence": "1979-02-09tt0079770",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0079710",
+      "title": "A Perfect Couple",
+      "year": "1979",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Perfect Couple (1979)",
+      "gradeValue": null,
+      "releaseSequence": "1979-04-02tt0079710",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0079256",
+      "title": "HealtH",
+      "year": "1980",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "HealtH (1980)",
+      "gradeValue": null,
+      "releaseSequence": "1980-08-23tt0079256",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0081353",
+      "title": "Popeye",
+      "year": "1980",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Popeye (1980)",
+      "gradeValue": null,
+      "releaseSequence": "1980-12-06tt0081353",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0311701",
+      "title": "Rattlesnake in a Cooler",
+      "year": "1982",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Rattlesnake in a Cooler (1982)",
+      "gradeValue": null,
+      "releaseSequence": "1982-03-14tt0311701",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0084831",
+      "title": "Precious Blood",
+      "year": "1982",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Precious Blood (1982)",
+      "gradeValue": null,
+      "releaseSequence": "1982-04-06tt0084831",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0083745",
+      "title": "Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean",
+      "year": "1982",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean (1982)",
+      "gradeValue": null,
+      "releaseSequence": "1982-08-25tt0083745",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0086377",
+      "title": "Streamers",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Streamers (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-09-05tt0086377",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0088074",
+      "title": "Secret Honor",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Secret Honor (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-07-06tt0088074",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0089464",
+      "title": "The Laundromat",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Laundromat (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-04-01tt0089464",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0089160",
+      "title": "Fool for Love",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Fool for Love (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-12-06tt0089160",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0089715",
+      "title": "O.C. and Stiggs",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "O.C. and Stiggs (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-??-??tt0089715",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0092646",
+      "title": "Beyond Therapy",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Beyond Therapy (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-02-06tt0092646",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0092620",
+      "title": "Basements",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Basements (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-05-12tt0092620",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0092580",
+      "title": "Aria",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Aria (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-05-19tt0092580",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0094826",
+      "title": "The Caine Mutiny Court-Martial",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Caine Mutiny Court-Martial (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-05-08tt0094826",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0100873",
+      "title": "Vincent & Theo",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Vincent & Theo (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-04-27tt0100873",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0105151",
+      "title": "The Player",
+      "year": "1992",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Player (1992)",
+      "gradeValue": null,
+      "releaseSequence": "1992-04-03tt0105151",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0108122",
+      "title": "Short Cuts",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Short Cuts (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-09-04tt0108122",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0110907",
+      "title": "Ready to Wear",
+      "year": "1994",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ready to Wear (1994)",
+      "gradeValue": null,
+      "releaseSequence": "1994-12-23tt0110907",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0116745",
+      "title": "Kansas City",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Kansas City (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-05-01tt0116745",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0119196",
+      "title": "The Gingerbread Man",
+      "year": "1998",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gingerbread Man (1998)",
+      "gradeValue": null,
+      "releaseSequence": "1998-01-23tt0119196",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0126250",
+      "title": "Cookie's Fortune",
+      "year": "1999",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Cookie's Fortune (1999)",
+      "gradeValue": null,
+      "releaseSequence": "1999-01-22tt0126250",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0205271",
+      "title": "Dr. T & the Women",
+      "year": "2000",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dr. T & the Women (2000)",
+      "gradeValue": null,
+      "releaseSequence": "2000-09-01tt0205271",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0280707",
+      "title": "Gosford Park",
+      "year": "2001",
+      "slug": "gosford-park-2001",
+      "grade": "B-",
+      "sortTitle": "Gosford Park (2001)",
+      "gradeValue": 8,
+      "releaseSequence": "2001-11-07tt0280707",
+      "reviewDate": "2023-05-25",
+      "viewingSequence": "2023-05-25-1489"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0335013",
+      "title": "The Company",
+      "year": "2003",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Company (2003)",
+      "gradeValue": null,
+      "releaseSequence": "2003-09-08tt0335013",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0420087",
+      "title": "A Prairie Home Companion",
+      "year": "2006",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Prairie Home Companion (2006)",
+      "gradeValue": null,
+      "releaseSequence": "2006-02-12tt0420087",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt4791860",
+      "title": "Killer App",
+      "year": "1998",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Killer App (1998)",
+      "gradeValue": null,
+      "releaseSequence": "2015-04-13tt4791860",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 2,
+  "totalCount": 43,
+  "creditedAs": [
+    "director",
+    "writer"
+  ]
 }

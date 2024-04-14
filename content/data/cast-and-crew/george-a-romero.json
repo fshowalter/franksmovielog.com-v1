@@ -1,455 +1,315 @@
 {
   "name": "George A. Romero",
   "slug": "george-a-romero",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0063350",
-        "title": "Night of the Living Dead",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Night of the Living Dead (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-10-01tt0063350",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0166843",
-        "title": "The Affair",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Affair (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-12-01tt0166843",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069239",
-        "title": "Season of the Witch",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Season of the Witch (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-12-27tt0069239",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069895",
-        "title": "The Crazies",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Crazies (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-03-16tt0069895",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt9270362",
-        "title": "The Amusement Park",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Amusement Park (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-06-01tt9270362",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077914",
-        "title": "Martin",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Martin (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-??-??tt0077914",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077402",
-        "title": "Dawn of the Dead",
-        "year": "1978",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dawn of the Dead (1978)",
-        "gradeValue": null,
-        "releaseSequence": "1978-09-01tt0077402",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0082622",
-        "title": "Knightriders",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Knightriders (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-04-10tt0082622",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0083767",
-        "title": "Creepshow",
-        "year": "1982",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Creepshow (1982)",
-        "gradeValue": null,
-        "releaseSequence": "1982-05-20tt0083767",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0088993",
-        "title": "Day of the Dead",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Day of the Dead (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-06-30tt0088993",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0095652",
-        "title": "Monkey Shines",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Monkey Shines (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-07-29tt0095652",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0100827",
-        "title": "Two Evil Eyes",
-        "year": "1990",
-        "slug": "two-evil-eyes-1990",
-        "grade": "C+",
-        "sortTitle": "Two Evil Eyes (1990)",
-        "gradeValue": 7,
-        "releaseSequence": "1990-01-25tt0100827",
-        "reviewDate": "2015-08-08",
-        "viewingSequence": "2015-08-08-511"
-      },
-      {
-        "imdbId": "tt0106664",
-        "title": "The Dark Half",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dark Half (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-04-23tt0106664",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0212830",
-        "title": "Bruiser",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bruiser (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-02-13tt0212830",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0418819",
-        "title": "Land of the Dead",
-        "year": "2005",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Land of the Dead (2005)",
-        "gradeValue": null,
-        "releaseSequence": "2005-06-18tt0418819",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0848557",
-        "title": "Diary of the Dead",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Diary of the Dead (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-09-08tt0848557",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1134854",
-        "title": "Survival of the Dead",
-        "year": "2009",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Survival of the Dead (2009)",
-        "gradeValue": null,
-        "releaseSequence": "2009-09-09tt1134854",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 16
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0063350",
-        "title": "Night of the Living Dead",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Night of the Living Dead (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-10-01tt0063350",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069239",
-        "title": "Season of the Witch",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Season of the Witch (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-12-27tt0069239",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069895",
-        "title": "The Crazies",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Crazies (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-03-16tt0069895",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077914",
-        "title": "Martin",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Martin (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-??-??tt0077914",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077402",
-        "title": "Dawn of the Dead",
-        "year": "1978",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dawn of the Dead (1978)",
-        "gradeValue": null,
-        "releaseSequence": "1978-09-01tt0077402",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0082622",
-        "title": "Knightriders",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Knightriders (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-04-10tt0082622",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0088993",
-        "title": "Day of the Dead",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Day of the Dead (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-06-30tt0088993",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0092796",
-        "title": "Creepshow 2",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Creepshow 2 (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-05-01tt0092796",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0095652",
-        "title": "Monkey Shines",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Monkey Shines (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-07-29tt0095652",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0100827",
-        "title": "Two Evil Eyes",
-        "year": "1990",
-        "slug": "two-evil-eyes-1990",
-        "grade": "C+",
-        "sortTitle": "Two Evil Eyes (1990)",
-        "gradeValue": 7,
-        "releaseSequence": "1990-01-25tt0100827",
-        "reviewDate": "2015-08-08",
-        "viewingSequence": "2015-08-08-511"
-      },
-      {
-        "imdbId": "tt0100740",
-        "title": "Tales from the Darkside: The Movie",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Tales from the Darkside: The Movie (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-05-04tt0100740",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0106664",
-        "title": "The Dark Half",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dark Half (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-04-23tt0106664",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0212830",
-        "title": "Bruiser",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bruiser (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-02-13tt0212830",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0418819",
-        "title": "Land of the Dead",
-        "year": "2005",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Land of the Dead (2005)",
-        "gradeValue": null,
-        "releaseSequence": "2005-06-18tt0418819",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0848557",
-        "title": "Diary of the Dead",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Diary of the Dead (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-09-08tt0848557",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1134854",
-        "title": "Survival of the Dead",
-        "year": "2009",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Survival of the Dead (2009)",
-        "gradeValue": null,
-        "releaseSequence": "2009-09-09tt1134854",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 15
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0069895",
-        "title": "The Crazies",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Crazies (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-03-16tt0069895",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077914",
-        "title": "Martin",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Martin (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-??-??tt0077914",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077402",
-        "title": "Dawn of the Dead",
-        "year": "1978",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dawn of the Dead (1978)",
-        "gradeValue": null,
-        "releaseSequence": "1978-09-01tt0077402",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 0,
-    "watchlistCount": 3
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0063350",
+      "title": "Night of the Living Dead",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Night of the Living Dead (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-10-01tt0063350",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0166843",
+      "title": "The Affair",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Affair (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-12-01tt0166843",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0069239",
+      "title": "Season of the Witch",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Season of the Witch (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-12-27tt0069239",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0069895",
+      "title": "The Crazies",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Crazies (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-03-16tt0069895",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt9270362",
+      "title": "The Amusement Park",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Amusement Park (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-06-01tt9270362",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0077914",
+      "title": "Martin",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Martin (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-??-??tt0077914",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0077402",
+      "title": "Dawn of the Dead",
+      "year": "1978",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dawn of the Dead (1978)",
+      "gradeValue": null,
+      "releaseSequence": "1978-09-01tt0077402",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0082622",
+      "title": "Knightriders",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Knightriders (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-04-10tt0082622",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0083767",
+      "title": "Creepshow",
+      "year": "1982",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Creepshow (1982)",
+      "gradeValue": null,
+      "releaseSequence": "1982-05-20tt0083767",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0088993",
+      "title": "Day of the Dead",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Day of the Dead (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-06-30tt0088993",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer"
+      ],
+      "imdbId": "tt0092796",
+      "title": "Creepshow 2",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Creepshow 2 (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-05-01tt0092796",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0095652",
+      "title": "Monkey Shines",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Monkey Shines (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-07-29tt0095652",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0100827",
+      "title": "Two Evil Eyes",
+      "year": "1990",
+      "slug": "two-evil-eyes-1990",
+      "grade": "C+",
+      "sortTitle": "Two Evil Eyes (1990)",
+      "gradeValue": 7,
+      "releaseSequence": "1990-01-25tt0100827",
+      "reviewDate": "2015-08-08",
+      "viewingSequence": "2015-08-08-511"
+    },
+    {
+      "creditedAs": [
+        "writer"
+      ],
+      "imdbId": "tt0100740",
+      "title": "Tales from the Darkside: The Movie",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Tales from the Darkside: The Movie (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-05-04tt0100740",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0106664",
+      "title": "The Dark Half",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dark Half (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-04-23tt0106664",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0212830",
+      "title": "Bruiser",
+      "year": "2000",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bruiser (2000)",
+      "gradeValue": null,
+      "releaseSequence": "2000-02-13tt0212830",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0418819",
+      "title": "Land of the Dead",
+      "year": "2005",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Land of the Dead (2005)",
+      "gradeValue": null,
+      "releaseSequence": "2005-06-18tt0418819",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0848557",
+      "title": "Diary of the Dead",
+      "year": "2007",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Diary of the Dead (2007)",
+      "gradeValue": null,
+      "releaseSequence": "2007-09-08tt0848557",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt1134854",
+      "title": "Survival of the Dead",
+      "year": "2009",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Survival of the Dead (2009)",
+      "gradeValue": null,
+      "releaseSequence": "2009-09-09tt1134854",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 1,
+  "totalCount": 19,
+  "creditedAs": [
+    "director",
+    "writer",
+    "performer"
+  ]
 }

@@ -7,9 +7,8 @@ import {
   AllTimeStatsJson,
 } from "./objects/AllTimeStatsJson";
 import {
-  CastAndCrewCredits,
-  CastAndCrewCreditsTitle,
   CastAndCrewJson,
+  CastAndCrewMemberTitle,
 } from "./objects/CastAndCrewJson";
 import { MarkdownRemark } from "./objects/MarkdownRemark";
 import {
@@ -50,8 +49,7 @@ export function createSchemaCustomization({
 
   const typeDefs = [
     schema.buildInterfaceType(Title),
-    schema.buildObjectType(CastAndCrewCreditsTitle),
-    schema.buildObjectType(CastAndCrewCredits),
+    schema.buildObjectType(CastAndCrewMemberTitle),
     schema.buildObjectType(CastAndCrewJson),
     schema.buildObjectType(StatsDistribution),
     schema.buildObjectType(MostWatchedPersonViewing),

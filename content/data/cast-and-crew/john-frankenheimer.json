@@ -1,405 +1,491 @@
 {
   "name": "John Frankenheimer",
   "slug": "john-frankenheimer",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0051214",
-        "title": "The Young Stranger",
-        "year": "1957",
-        "slug": "the-young-stranger-1957",
-        "grade": "C",
-        "sortTitle": "Young Stranger (1957)",
-        "gradeValue": 6,
-        "releaseSequence": "1957-02-01tt0051214",
-        "reviewDate": "2021-03-05",
-        "viewingSequence": "2021-03-05-1039"
-      },
-      {
-        "imdbId": "tt0055633",
-        "title": "The Young Savages",
-        "year": "1961",
-        "slug": "the-young-savages-1961",
-        "grade": "C-",
-        "sortTitle": "Young Savages (1961)",
-        "gradeValue": 5,
-        "releaseSequence": "1961-05-23tt0055633",
-        "reviewDate": "2023-03-21",
-        "viewingSequence": "2023-03-21-1453"
-      },
-      {
-        "imdbId": "tt0055738",
-        "title": "All Fall Down",
-        "year": "1962",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "All Fall Down (1962)",
-        "gradeValue": null,
-        "releaseSequence": "1962-03-28tt0055738",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0055798",
-        "title": "Birdman of Alcatraz",
-        "year": "1962",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Birdman of Alcatraz (1962)",
-        "gradeValue": null,
-        "releaseSequence": "1962-07-03tt0055798",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0056218",
-        "title": "The Manchurian Candidate",
-        "year": "1962",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Manchurian Candidate (1962)",
-        "gradeValue": null,
-        "releaseSequence": "1962-10-24tt0056218",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0058576",
-        "title": "Seven Days in May",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Seven Days in May (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-02-12tt0058576",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0059825",
-        "title": "The Train",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Train (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-09-23tt0059825",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0060955",
-        "title": "Seconds",
-        "year": "1966",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Seconds (1966)",
-        "gradeValue": null,
-        "releaseSequence": "1966-05-16tt0060955",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0060472",
-        "title": "Grand Prix",
-        "year": "1966",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Grand Prix (1966)",
-        "gradeValue": null,
-        "releaseSequence": "1966-12-21tt0060472",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062977",
-        "title": "The Fixer",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fixer (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-12-08tt0062977",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064307",
-        "title": "The Extraordinary Seaman",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Extraordinary Seaman (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-01-01tt0064307",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064397",
-        "title": "The Gypsy Moths",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gypsy Moths (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-08-28tt0064397",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0065874",
-        "title": "I Walk the Line",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "I Walk the Line (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-10-12tt0065874",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0067216",
-        "title": "The Horsemen",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Horsemen (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-07-22tt0067216",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070739",
-        "title": "Story of a Love Story",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Story of a Love Story (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-05-01tt0070739",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070212",
-        "title": "The Iceman Cometh",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Iceman Cometh (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-10-29tt0070212",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0071089",
-        "title": "99 and 44/100% Dead!",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "99 and 44/100% Dead! (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-08-29tt0071089",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0073018",
-        "title": "French Connection II",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "French Connection II (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-05-18tt0073018",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0075765",
-        "title": "Black Sunday",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Sunday (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-??-??tt0075765",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0079758",
-        "title": "Prophecy",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Prophecy (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-06-15tt0079758",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0083726",
-        "title": "The Challenge",
-        "year": "1982",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Challenge (1982)",
-        "gradeValue": null,
-        "releaseSequence": "1982-01-25tt0083726",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0089283",
-        "title": "The Holcroft Covenant",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Holcroft Covenant (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-07-06tt0089283",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090567",
-        "title": "52 Pick-Up",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "52 Pick-Up (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-11-07tt0090567",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0097166",
-        "title": "Dead Bang",
-        "year": "1989",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dead Bang (1989)",
-        "gradeValue": null,
-        "releaseSequence": "1989-03-24tt0097166",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0099606",
-        "title": "The Fourth War",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fourth War (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-01-12tt0099606",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0103303",
-        "title": "Year of the Gun",
-        "year": "1991",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Year of the Gun (1991)",
-        "gradeValue": null,
-        "releaseSequence": "1991-09-10tt0103303",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0109053",
-        "title": "Against the Wall",
-        "year": "1994",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Against the Wall (1994)",
-        "gradeValue": null,
-        "releaseSequence": "1994-03-26tt0109053",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0109351",
-        "title": "The Burning Season: The Chico Mendes Story",
-        "year": "1994",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Burning Season: The Chico Mendes Story (1994)",
-        "gradeValue": null,
-        "releaseSequence": "1994-09-16tt0109351",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0116654",
-        "title": "The Island of Dr. Moreau",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Island of Dr. Moreau (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-08-23tt0116654",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0122690",
-        "title": "Ronin",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ronin (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-??-??tt0122690",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0184858",
-        "title": "Reindeer Games",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Reindeer Games (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-??-??tt0184858",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0218505",
-        "title": "Path to War",
-        "year": "2002",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Path to War (2002)",
-        "gradeValue": null,
-        "releaseSequence": "2002-05-18tt0218505",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 2,
-    "watchlistCount": 30
-  },
-  "writer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "performer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0051214",
+      "title": "The Young Stranger",
+      "year": "1957",
+      "slug": "the-young-stranger-1957",
+      "grade": "C",
+      "sortTitle": "Young Stranger (1957)",
+      "gradeValue": 6,
+      "releaseSequence": "1957-02-01tt0051214",
+      "reviewDate": "2021-03-05",
+      "viewingSequence": "2021-03-05-1039"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0055633",
+      "title": "The Young Savages",
+      "year": "1961",
+      "slug": "the-young-savages-1961",
+      "grade": "C-",
+      "sortTitle": "Young Savages (1961)",
+      "gradeValue": 5,
+      "releaseSequence": "1961-05-23tt0055633",
+      "reviewDate": "2023-03-21",
+      "viewingSequence": "2023-03-21-1453"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0055738",
+      "title": "All Fall Down",
+      "year": "1962",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "All Fall Down (1962)",
+      "gradeValue": null,
+      "releaseSequence": "1962-03-28tt0055738",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0055798",
+      "title": "Birdman of Alcatraz",
+      "year": "1962",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Birdman of Alcatraz (1962)",
+      "gradeValue": null,
+      "releaseSequence": "1962-07-03tt0055798",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0056218",
+      "title": "The Manchurian Candidate",
+      "year": "1962",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Manchurian Candidate (1962)",
+      "gradeValue": null,
+      "releaseSequence": "1962-10-24tt0056218",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0058576",
+      "title": "Seven Days in May",
+      "year": "1964",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Seven Days in May (1964)",
+      "gradeValue": null,
+      "releaseSequence": "1964-02-12tt0058576",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0059825",
+      "title": "The Train",
+      "year": "1964",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Train (1964)",
+      "gradeValue": null,
+      "releaseSequence": "1964-09-23tt0059825",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0060955",
+      "title": "Seconds",
+      "year": "1966",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Seconds (1966)",
+      "gradeValue": null,
+      "releaseSequence": "1966-05-16tt0060955",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0060472",
+      "title": "Grand Prix",
+      "year": "1966",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Grand Prix (1966)",
+      "gradeValue": null,
+      "releaseSequence": "1966-12-21tt0060472",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0062977",
+      "title": "The Fixer",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Fixer (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-12-08tt0062977",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0064307",
+      "title": "The Extraordinary Seaman",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Extraordinary Seaman (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-01-01tt0064307",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0064397",
+      "title": "The Gypsy Moths",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gypsy Moths (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-08-28tt0064397",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0065874",
+      "title": "I Walk the Line",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "I Walk the Line (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-10-12tt0065874",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0067216",
+      "title": "The Horsemen",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Horsemen (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-07-22tt0067216",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0070739",
+      "title": "Story of a Love Story",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Story of a Love Story (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-05-01tt0070739",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0070212",
+      "title": "The Iceman Cometh",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Iceman Cometh (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-10-29tt0070212",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0071089",
+      "title": "99 and 44/100% Dead!",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "99 and 44/100% Dead! (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-08-29tt0071089",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0073018",
+      "title": "French Connection II",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "French Connection II (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-05-18tt0073018",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0075765",
+      "title": "Black Sunday",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Sunday (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-??-??tt0075765",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0079758",
+      "title": "Prophecy",
+      "year": "1979",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Prophecy (1979)",
+      "gradeValue": null,
+      "releaseSequence": "1979-06-15tt0079758",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0083726",
+      "title": "The Challenge",
+      "year": "1982",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Challenge (1982)",
+      "gradeValue": null,
+      "releaseSequence": "1982-01-25tt0083726",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0089283",
+      "title": "The Holcroft Covenant",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Holcroft Covenant (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-07-06tt0089283",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0090567",
+      "title": "52 Pick-Up",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "52 Pick-Up (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-11-07tt0090567",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0097166",
+      "title": "Dead Bang",
+      "year": "1989",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dead Bang (1989)",
+      "gradeValue": null,
+      "releaseSequence": "1989-03-24tt0097166",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0099606",
+      "title": "The Fourth War",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Fourth War (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-01-12tt0099606",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0103303",
+      "title": "Year of the Gun",
+      "year": "1991",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Year of the Gun (1991)",
+      "gradeValue": null,
+      "releaseSequence": "1991-09-10tt0103303",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0109053",
+      "title": "Against the Wall",
+      "year": "1994",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Against the Wall (1994)",
+      "gradeValue": null,
+      "releaseSequence": "1994-03-26tt0109053",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0109351",
+      "title": "The Burning Season: The Chico Mendes Story",
+      "year": "1994",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Burning Season: The Chico Mendes Story (1994)",
+      "gradeValue": null,
+      "releaseSequence": "1994-09-16tt0109351",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0116654",
+      "title": "The Island of Dr. Moreau",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Island of Dr. Moreau (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-08-23tt0116654",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0122690",
+      "title": "Ronin",
+      "year": "1998",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ronin (1998)",
+      "gradeValue": null,
+      "releaseSequence": "1998-??-??tt0122690",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0184858",
+      "title": "Reindeer Games",
+      "year": "2000",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Reindeer Games (2000)",
+      "gradeValue": null,
+      "releaseSequence": "2000-??-??tt0184858",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0218505",
+      "title": "Path to War",
+      "year": "2002",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Path to War (2002)",
+      "gradeValue": null,
+      "releaseSequence": "2002-05-18tt0218505",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 2,
+  "totalCount": 32,
+  "creditedAs": [
+    "director"
+  ]
 }

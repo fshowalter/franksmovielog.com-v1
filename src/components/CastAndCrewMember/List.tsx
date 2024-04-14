@@ -1,4 +1,5 @@
 import { Box } from "../Box";
+import { CreditedAs } from "../CreditedAs";
 import { Grade } from "../Grade";
 import { ListItem } from "../ListItem";
 import { ListItemPoster } from "../ListItemPoster";
@@ -6,57 +7,37 @@ import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
 import { Action, ActionType } from "./CastAndCrewMember.reducer";
-import { SectionHeader } from "./CreditsSummary";
-import { stickyGroupHeaderStyle } from "./List.css";
 
 export function List({
   groupedItems,
   dispatch,
   totalCount,
   visibleCount,
-  headerText,
 }: {
-  groupedItems: Map<string, Queries.WatchlistEntityTitleFragment[]>;
+  groupedItems: Map<string, Queries.CastAndCrewMemberTitleFragment[]>;
   dispatch: React.Dispatch<Action>;
   totalCount: number;
   visibleCount: number;
-  headerText: string;
 }) {
-  if (totalCount === 0) {
-    return null;
-  }
-
-  const header = (
-    <SectionHeader
+  return (
+    <GroupedList
+      data-testid="poster-list"
+      groupedItems={groupedItems}
       visibleCount={visibleCount}
       totalCount={totalCount}
-      text={headerText}
-    />
-  );
-
-  return (
-    <section>
-      <GroupedList
-        data-testid="poster-list"
-        groupedItems={groupedItems}
-        visibleCount={visibleCount}
-        totalCount={totalCount}
-        onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
-        header={header}
-        stickyGroupHeaderStyleOverride={stickyGroupHeaderStyle}
-      >
-        {(item) => {
-          return <WatchlistTitle item={item} key={item.imdbId} />;
-        }}
-      </GroupedList>
-    </section>
+      onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
+    >
+      {(item) => {
+        return <CastAndCrewMemberTitle item={item} key={item.imdbId} />;
+      }}
+    </GroupedList>
   );
 }
 
-function WatchlistTitle({
+function CastAndCrewMemberTitle({
   item,
 }: {
-  item: Queries.WatchlistEntityTitleFragment;
+  item: Queries.CastAndCrewMemberTitleFragment;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">
@@ -73,6 +54,8 @@ function WatchlistTitle({
         paddingRight={{ default: "gutter", desktop: 16 }}
       >
         <Box>
+          <CreditedAs creditedAs={item.creditedAs} />
+          <Spacer axis="vertical" size={4} />
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
           {item.grade && <Grade grade={item.grade} height={18} />}

@@ -1,298 +1,217 @@
 {
   "name": "Stanley Kubrick",
   "slug": "stanley-kubrick",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0045758",
-        "title": "Fear and Desire",
-        "year": "1952",
-        "slug": "fear-and-desire-1953",
-        "grade": "D+",
-        "sortTitle": "Fear and Desire (1952)",
-        "gradeValue": 4,
-        "releaseSequence": "1952-08-18tt0045758",
-        "reviewDate": "2020-11-30",
-        "viewingSequence": "2020-11-30-930"
-      },
-      {
-        "imdbId": "tt0048254",
-        "title": "Killer's Kiss",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Killer's Kiss (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-09-21tt0048254",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049406",
-        "title": "The Killing",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Killing (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-05-19tt0049406",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0050825",
-        "title": "Paths of Glory",
-        "year": "1957",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Paths of Glory (1957)",
-        "gradeValue": null,
-        "releaseSequence": "1957-11-01tt0050825",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0054331",
-        "title": "Spartacus",
-        "year": "1960",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Spartacus (1960)",
-        "gradeValue": null,
-        "releaseSequence": "1960-10-06tt0054331",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0056193",
-        "title": "Lolita",
-        "year": "1962",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Lolita (1962)",
-        "gradeValue": null,
-        "releaseSequence": "1962-06-13tt0056193",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0057012",
-        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-01-29tt0057012",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062622",
-        "title": "2001: A Space Odyssey",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "2001: A Space Odyssey (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-04-02tt0062622",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0066921",
-        "title": "A Clockwork Orange",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Clockwork Orange (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-12-19tt0066921",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072684",
-        "title": "Barry Lyndon",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Barry Lyndon (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-12-11tt0072684",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0081505",
-        "title": "The Shining",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Shining (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-05-23tt0081505",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0093058",
-        "title": "Full Metal Jacket",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Full Metal Jacket (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-06-17tt0093058",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120663",
-        "title": "Eyes Wide Shut",
-        "year": "1999",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Eyes Wide Shut (1999)",
-        "gradeValue": null,
-        "releaseSequence": "1999-07-13tt0120663",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 12
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0048254",
-        "title": "Killer's Kiss",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Killer's Kiss (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-09-21tt0048254",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049406",
-        "title": "The Killing",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Killing (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-05-19tt0049406",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0050825",
-        "title": "Paths of Glory",
-        "year": "1957",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Paths of Glory (1957)",
-        "gradeValue": null,
-        "releaseSequence": "1957-11-01tt0050825",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0057012",
-        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-01-29tt0057012",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062622",
-        "title": "2001: A Space Odyssey",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "2001: A Space Odyssey (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-04-02tt0062622",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0066921",
-        "title": "A Clockwork Orange",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Clockwork Orange (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-12-19tt0066921",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072684",
-        "title": "Barry Lyndon",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Barry Lyndon (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-12-11tt0072684",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0081505",
-        "title": "The Shining",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Shining (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-05-23tt0081505",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0093058",
-        "title": "Full Metal Jacket",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Full Metal Jacket (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-06-17tt0093058",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120663",
-        "title": "Eyes Wide Shut",
-        "year": "1999",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Eyes Wide Shut (1999)",
-        "gradeValue": null,
-        "releaseSequence": "1999-07-13tt0120663",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 0,
-    "watchlistCount": 10
-  },
-  "performer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0045758",
+      "title": "Fear and Desire",
+      "year": "1952",
+      "slug": "fear-and-desire-1953",
+      "grade": "D+",
+      "sortTitle": "Fear and Desire (1952)",
+      "gradeValue": 4,
+      "releaseSequence": "1952-08-18tt0045758",
+      "reviewDate": "2020-11-30",
+      "viewingSequence": "2020-11-30-930"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0048254",
+      "title": "Killer's Kiss",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Killer's Kiss (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-09-21tt0048254",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0049406",
+      "title": "The Killing",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Killing (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-05-19tt0049406",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0050825",
+      "title": "Paths of Glory",
+      "year": "1957",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Paths of Glory (1957)",
+      "gradeValue": null,
+      "releaseSequence": "1957-11-01tt0050825",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0054331",
+      "title": "Spartacus",
+      "year": "1960",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Spartacus (1960)",
+      "gradeValue": null,
+      "releaseSequence": "1960-10-06tt0054331",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0056193",
+      "title": "Lolita",
+      "year": "1962",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Lolita (1962)",
+      "gradeValue": null,
+      "releaseSequence": "1962-06-13tt0056193",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0057012",
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+      "year": "1964",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+      "gradeValue": null,
+      "releaseSequence": "1964-01-29tt0057012",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0062622",
+      "title": "2001: A Space Odyssey",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "2001: A Space Odyssey (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-04-02tt0062622",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0066921",
+      "title": "A Clockwork Orange",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Clockwork Orange (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-12-19tt0066921",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0072684",
+      "title": "Barry Lyndon",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Barry Lyndon (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-12-11tt0072684",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0081505",
+      "title": "The Shining",
+      "year": "1980",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Shining (1980)",
+      "gradeValue": null,
+      "releaseSequence": "1980-05-23tt0081505",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0093058",
+      "title": "Full Metal Jacket",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Full Metal Jacket (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-06-17tt0093058",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0120663",
+      "title": "Eyes Wide Shut",
+      "year": "1999",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Eyes Wide Shut (1999)",
+      "gradeValue": null,
+      "releaseSequence": "1999-07-13tt0120663",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 1,
+  "totalCount": 13,
+  "creditedAs": [
+    "director",
+    "writer"
+  ]
 }

@@ -1,801 +1,986 @@
 {
   "name": "Bela Lugosi",
   "slug": "bela-lugosi",
-  "director": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "writer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0020492",
-        "title": "The Thirteenth Chair",
-        "year": "1929",
-        "slug": "the-thirteenth-chair-1929",
-        "grade": "D+",
-        "sortTitle": "Thirteenth Chair (1929)",
-        "gradeValue": 4,
-        "releaseSequence": "1929-10-19tt0020492",
-        "reviewDate": "2020-08-17",
-        "viewingSequence": "2020-08-17-854"
-      },
-      {
-        "imdbId": "tt0021554",
-        "title": "Wild Company",
-        "year": "1930",
-        "slug": "wild-company-1930",
-        "grade": "D+",
-        "sortTitle": "Wild Company (1930)",
-        "gradeValue": 4,
-        "releaseSequence": "1930-07-05tt0021554",
-        "reviewDate": "2020-11-24",
-        "viewingSequence": "2020-11-24-922"
-      },
-      {
-        "imdbId": "tt0021295",
-        "title": "Renegades",
-        "year": "1930",
-        "slug": "renegades-1930",
-        "grade": "C+",
-        "sortTitle": "Renegades (1930)",
-        "gradeValue": 7,
-        "releaseSequence": "1930-10-26tt0021295",
-        "reviewDate": "2020-10-10",
-        "viewingSequence": "2020-10-10-886"
-      },
-      {
-        "imdbId": "tt0021199",
-        "title": "Oh, for a Man!",
-        "year": "1930",
-        "slug": "oh-for-a-man-1930",
-        "grade": "F",
-        "sortTitle": "Oh, for a Man! (1930)",
-        "gradeValue": 1,
-        "releaseSequence": "1930-11-28tt0021199",
-        "reviewDate": "2020-11-24",
-        "viewingSequence": "2020-11-24-923"
-      },
-      {
-        "imdbId": "tt0021814",
-        "title": "Dracula",
-        "year": "1931",
-        "slug": "dracula-1931",
-        "grade": "A-",
-        "sortTitle": "Dracula (1931)",
-        "gradeValue": 11,
-        "releaseSequence": "1931-02-14tt0021814",
-        "reviewDate": "2020-10-04",
-        "viewingSequence": "2020-10-04-880"
-      },
-      {
-        "imdbId": "tt0021668",
-        "title": "The Black Camel",
-        "year": "1931",
-        "slug": "the-black-camel-1931",
-        "grade": "C+",
-        "sortTitle": "Black Camel (1931)",
-        "gradeValue": 7,
-        "releaseSequence": "1931-06-21tt0021668",
-        "reviewDate": "2020-11-26",
-        "viewingSequence": "2020-11-26-926"
-      },
-      {
-        "imdbId": "tt0021697",
-        "title": "Broadminded",
-        "year": "1931",
-        "slug": "broadminded-1931",
-        "grade": "F",
-        "sortTitle": "Broadminded (1931)",
-        "gradeValue": 1,
-        "releaseSequence": "1931-08-01tt0021697",
-        "reviewDate": "2021-02-28",
-        "viewingSequence": "2021-02-28-1034"
-      },
-      {
-        "imdbId": "tt0023249",
-        "title": "Murders in the Rue Morgue",
-        "year": "1932",
-        "slug": "murders-in-the-rue-morgue-1932",
-        "grade": "D-",
-        "sortTitle": "Murders in the Rue Morgue (1932)",
-        "gradeValue": 2,
-        "releaseSequence": "1932-01-27tt0023249",
-        "reviewDate": "2021-07-15",
-        "viewingSequence": "2021-07-15-31"
-      },
-      {
-        "imdbId": "tt0023694",
-        "title": "White Zombie",
-        "year": "1932",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "White Zombie (1932)",
-        "gradeValue": null,
-        "releaseSequence": "1932-07-28tt0023694",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0022753",
-        "title": "Chandu the Magician",
-        "year": "1932",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Chandu the Magician (1932)",
-        "gradeValue": null,
-        "releaseSequence": "1932-08-04tt0022753",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0024188",
-        "title": "Island of Lost Souls",
-        "year": "1932",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Island of Lost Souls (1932)",
-        "gradeValue": null,
-        "releaseSequence": "1932-12-01tt0024188",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0023935",
-        "title": "The Death Kiss",
-        "year": "1932",
-        "slug": "the-death-kiss-1932",
-        "grade": "D",
-        "sortTitle": "Death Kiss (1932)",
-        "gradeValue": 3,
-        "releaseSequence": "1932-12-05tt0023935",
-        "reviewDate": "2023-10-20",
-        "viewingSequence": "2023-10-20-1537"
-      },
-      {
-        "imdbId": "tt0024768",
-        "title": "The Whispering Shadow",
-        "year": "1933",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Whispering Shadow (1933)",
-        "gradeValue": null,
-        "releaseSequence": "1933-04-18tt0024768",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0024382",
-        "title": "Night of Terror",
-        "year": "1933",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Night of Terror (1933)",
-        "gradeValue": null,
-        "releaseSequence": "1933-04-24tt0024382",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0024183",
-        "title": "International House",
-        "year": "1933",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "International House (1933)",
-        "gradeValue": null,
-        "releaseSequence": "1933-05-27tt0024183",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0024894",
-        "title": "The Black Cat",
-        "year": "1934",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Cat (1934)",
-        "gradeValue": null,
-        "releaseSequence": "1934-05-03tt0024894",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0025170",
-        "title": "Gift of Gab",
-        "year": "1934",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gift of Gab (1934)",
-        "gradeValue": null,
-        "releaseSequence": "1934-09-01tt0025170",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0025712",
-        "title": "The Return of Chandu",
-        "year": "1934",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Return of Chandu (1934)",
-        "gradeValue": null,
-        "releaseSequence": "1934-10-01tt0025712",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0026755",
-        "title": "The Mysterious Mr. Wong",
-        "year": "1934",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mysterious Mr. Wong (1934)",
-        "gradeValue": null,
-        "releaseSequence": "1934-12-22tt0026755",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt16978034",
-        "title": "El Misterioso Mr. Wong",
-        "year": "1934",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "El Misterioso Mr. Wong (1934)",
-        "gradeValue": null,
-        "releaseSequence": "1934-12-22tt16978034",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0026108",
-        "title": "The Best Man Wins",
-        "year": "1935",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Best Man Wins (1935)",
-        "gradeValue": null,
-        "releaseSequence": "1935-01-02tt0026108",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0026685",
-        "title": "Mark of the Vampire",
-        "year": "1935",
-        "slug": "mark-of-the-vampire-1935",
-        "grade": "F",
-        "sortTitle": "Mark of the Vampire (1935)",
-        "gradeValue": 1,
-        "releaseSequence": "1935-04-26tt0026685",
-        "reviewDate": "2023-05-08",
-        "viewingSequence": "2023-05-08-1479"
-      },
-      {
-        "imdbId": "tt0026912",
-        "title": "The Raven",
-        "year": "1935",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Raven (1935)",
-        "gradeValue": null,
-        "releaseSequence": "1935-07-08tt0026912",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0026740",
-        "title": "Murder by Television",
-        "year": "1935",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Murder by Television (1935)",
-        "gradeValue": null,
-        "releaseSequence": "1935-10-01tt0026740",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0026759",
-        "title": "Phantom Ship",
-        "year": "1935",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Phantom Ship (1935)",
-        "gradeValue": null,
-        "releaseSequence": "1935-11-14tt0026759",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0027800",
-        "title": "The Invisible Ray",
-        "year": "1935",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Invisible Ray (1935)",
-        "gradeValue": null,
-        "releaseSequence": "1935-12-24tt0027800",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0028132",
-        "title": "Postal Inspector",
-        "year": "1936",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Postal Inspector (1936)",
-        "gradeValue": null,
-        "releaseSequence": "1936-08-16tt0028132",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0028241",
-        "title": "Shadow of Chinatown",
-        "year": "1936",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Shadow of Chinatown (1936)",
-        "gradeValue": null,
-        "releaseSequence": "1936-10-10tt0028241",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0029508",
-        "title": "SOS Coast Guard",
-        "year": "1937",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "SOS Coast Guard (1937)",
-        "gradeValue": null,
-        "releaseSequence": "1937-08-28tt0029508",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031796",
-        "title": "The Phantom Creeps",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Phantom Creeps (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-01-07tt0031796",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031951",
-        "title": "Son of Frankenstein",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Son of Frankenstein (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-01-10tt0031951",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031387",
-        "title": "The Gorilla",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gorilla (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-05-26tt0031387",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031208",
-        "title": "The Human Monster",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Human Monster (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-10-19tt0031208",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031725",
-        "title": "Ninotchka",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ninotchka (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-11-09tt0031725",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0033014",
-        "title": "The Saint's Double Trouble",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Saint's Double Trouble (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-01-26tt0033014",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0032258",
-        "title": "Black Friday",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Friday (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-02-29tt0032258",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0032390",
-        "title": "The Devil Bat",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil Bat (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-11-11tt0032390",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0033283",
-        "title": "You'll Find Out",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "You'll Find Out (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-11-14tt0033283",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0033760",
-        "title": "Invisible Ghost",
-        "year": "1941",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Invisible Ghost (1941)",
-        "gradeValue": null,
-        "releaseSequence": "1941-04-25tt0033760",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0033397",
-        "title": "The Black Cat",
-        "year": "1941",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Cat (1941)",
-        "gradeValue": null,
-        "releaseSequence": "1941-05-02tt0033397",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034224",
-        "title": "Spooks Run Wild",
-        "year": "1941",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Spooks Run Wild (1941)",
-        "gradeValue": null,
-        "releaseSequence": "1941-10-24tt0034224",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034398",
-        "title": "The Wolf Man",
-        "year": "1941",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Wolf Man (1941)",
-        "gradeValue": null,
-        "releaseSequence": "1941-12-09tt0034398",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034521",
-        "title": "Black Dragons",
-        "year": "1942",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Dragons (1942)",
-        "gradeValue": null,
-        "releaseSequence": "1942-03-06tt0034521",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034786",
-        "title": "The Ghost of Frankenstein",
-        "year": "1942",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ghost of Frankenstein (1942)",
-        "gradeValue": null,
-        "releaseSequence": "1942-03-13tt0034786",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034613",
-        "title": "The Corpse Vanishes",
-        "year": "1942",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Corpse Vanishes (1942)",
-        "gradeValue": null,
-        "releaseSequence": "1942-05-08tt0034613",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0035124",
-        "title": "Night Monster",
-        "year": "1942",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Night Monster (1942)",
-        "gradeValue": null,
-        "releaseSequence": "1942-10-20tt0035124",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034546",
-        "title": "Bowery at Midnight",
-        "year": "1942",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bowery at Midnight (1942)",
-        "gradeValue": null,
-        "releaseSequence": "1942-10-30tt0034546",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0035640",
-        "title": "The Ape Man",
-        "year": "1943",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ape Man (1943)",
-        "gradeValue": null,
-        "releaseSequence": "1943-03-05tt0035640",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0035899",
-        "title": "Frankenstein Meets the Wolf Man",
-        "year": "1943",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Frankenstein Meets the Wolf Man (1943)",
-        "gradeValue": null,
-        "releaseSequence": "1943-03-05tt0035899",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037219",
-        "title": "The Return of the Vampire",
-        "year": "1943",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Return of the Vampire (1943)",
-        "gradeValue": null,
-        "releaseSequence": "1943-11-11tt0037219",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0035939",
-        "title": "Ghosts on the Loose",
-        "year": "1943",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ghosts on the Loose (1943)",
-        "gradeValue": null,
-        "releaseSequence": "1943-??-??tt0035939",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037441",
-        "title": "Voodoo Man",
-        "year": "1944",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Voodoo Man (1944)",
-        "gradeValue": null,
-        "releaseSequence": "1944-02-21tt0037441",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037217",
-        "title": "Return of the Ape Man",
-        "year": "1944",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Return of the Ape Man (1944)",
-        "gradeValue": null,
-        "releaseSequence": "1944-07-17tt0037217",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037151",
-        "title": "One Body Too Many",
-        "year": "1944",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "One Body Too Many (1944)",
-        "gradeValue": null,
-        "releaseSequence": "1944-10-27tt0037151",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037549",
-        "title": "The Body Snatcher",
-        "year": "1945",
-        "slug": "the-body-snatcher-1945",
-        "grade": "D+",
-        "sortTitle": "Body Snatcher (1945)",
-        "gradeValue": 4,
-        "releaseSequence": "1945-02-14tt0037549",
-        "reviewDate": "2012-01-12",
-        "viewingSequence": "2012-01-12-8"
-      },
-      {
-        "imdbId": "tt0038270",
-        "title": "Zombies on Broadway",
-        "year": "1945",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Zombies on Broadway (1945)",
-        "gradeValue": null,
-        "releaseSequence": "1945-04-26tt0038270",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037735",
-        "title": "Genius at Work",
-        "year": "1946",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Genius at Work (1946)",
-        "gradeValue": null,
-        "releaseSequence": "1946-08-01tt0037735",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0039800",
-        "title": "Scared to Death",
-        "year": "1946",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Scared to Death (1946)",
-        "gradeValue": null,
-        "releaseSequence": "1946-12-18tt0039800",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0040068",
-        "title": "Abbott and Costello Meet Frankenstein",
-        "year": "1948",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Abbott and Costello Meet Frankenstein (1948)",
-        "gradeValue": null,
-        "releaseSequence": "1948-06-15tt0040068",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0044406",
-        "title": "Bela Lugosi Meets a Brooklyn Gorilla",
-        "year": "1952",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bela Lugosi Meets a Brooklyn Gorilla (1952)",
-        "gradeValue": null,
-        "releaseSequence": "1952-09-04tt0044406",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0044925",
-        "title": "Vampire Over London",
-        "year": "1952",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Vampire Over London (1952)",
-        "gradeValue": null,
-        "releaseSequence": "1952-??-??tt0044925",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0045826",
-        "title": "Glen or Glenda",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Glen or Glenda (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-04-01tt0045826",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0047898",
-        "title": "Bride of the Monster",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bride of the Monster (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-05-11tt0047898",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049013",
-        "title": "The Black Sleep",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Sleep (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-06-01tt0049013",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0052077",
-        "title": "Plan 9 from Outer Space",
-        "year": "1957",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Plan 9 from Outer Space (1957)",
-        "gradeValue": null,
-        "releaseSequence": "1957-03-15tt0052077",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 11,
-    "watchlistCount": 54
-  },
-  "mostCreditedAs": "performer"
+  "titles": [
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0020492",
+      "title": "The Thirteenth Chair",
+      "year": "1929",
+      "slug": "the-thirteenth-chair-1929",
+      "grade": "D+",
+      "sortTitle": "Thirteenth Chair (1929)",
+      "gradeValue": 4,
+      "releaseSequence": "1929-10-19tt0020492",
+      "reviewDate": "2020-08-17",
+      "viewingSequence": "2020-08-17-854"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021554",
+      "title": "Wild Company",
+      "year": "1930",
+      "slug": "wild-company-1930",
+      "grade": "D+",
+      "sortTitle": "Wild Company (1930)",
+      "gradeValue": 4,
+      "releaseSequence": "1930-07-05tt0021554",
+      "reviewDate": "2020-11-24",
+      "viewingSequence": "2020-11-24-922"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021295",
+      "title": "Renegades",
+      "year": "1930",
+      "slug": "renegades-1930",
+      "grade": "C+",
+      "sortTitle": "Renegades (1930)",
+      "gradeValue": 7,
+      "releaseSequence": "1930-10-26tt0021295",
+      "reviewDate": "2020-10-10",
+      "viewingSequence": "2020-10-10-886"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021199",
+      "title": "Oh, for a Man!",
+      "year": "1930",
+      "slug": "oh-for-a-man-1930",
+      "grade": "F",
+      "sortTitle": "Oh, for a Man! (1930)",
+      "gradeValue": 1,
+      "releaseSequence": "1930-11-28tt0021199",
+      "reviewDate": "2020-11-24",
+      "viewingSequence": "2020-11-24-923"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021814",
+      "title": "Dracula",
+      "year": "1931",
+      "slug": "dracula-1931",
+      "grade": "A-",
+      "sortTitle": "Dracula (1931)",
+      "gradeValue": 11,
+      "releaseSequence": "1931-02-14tt0021814",
+      "reviewDate": "2020-10-04",
+      "viewingSequence": "2020-10-04-880"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021668",
+      "title": "The Black Camel",
+      "year": "1931",
+      "slug": "the-black-camel-1931",
+      "grade": "C+",
+      "sortTitle": "Black Camel (1931)",
+      "gradeValue": 7,
+      "releaseSequence": "1931-06-21tt0021668",
+      "reviewDate": "2020-11-26",
+      "viewingSequence": "2020-11-26-926"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021697",
+      "title": "Broadminded",
+      "year": "1931",
+      "slug": "broadminded-1931",
+      "grade": "F",
+      "sortTitle": "Broadminded (1931)",
+      "gradeValue": 1,
+      "releaseSequence": "1931-08-01tt0021697",
+      "reviewDate": "2021-02-28",
+      "viewingSequence": "2021-02-28-1034"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0023249",
+      "title": "Murders in the Rue Morgue",
+      "year": "1932",
+      "slug": "murders-in-the-rue-morgue-1932",
+      "grade": "D-",
+      "sortTitle": "Murders in the Rue Morgue (1932)",
+      "gradeValue": 2,
+      "releaseSequence": "1932-01-27tt0023249",
+      "reviewDate": "2021-07-15",
+      "viewingSequence": "2021-07-15-31"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0023694",
+      "title": "White Zombie",
+      "year": "1932",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "White Zombie (1932)",
+      "gradeValue": null,
+      "releaseSequence": "1932-07-28tt0023694",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0022753",
+      "title": "Chandu the Magician",
+      "year": "1932",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Chandu the Magician (1932)",
+      "gradeValue": null,
+      "releaseSequence": "1932-08-04tt0022753",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0024188",
+      "title": "Island of Lost Souls",
+      "year": "1932",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Island of Lost Souls (1932)",
+      "gradeValue": null,
+      "releaseSequence": "1932-12-01tt0024188",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0023935",
+      "title": "The Death Kiss",
+      "year": "1932",
+      "slug": "the-death-kiss-1932",
+      "grade": "D",
+      "sortTitle": "Death Kiss (1932)",
+      "gradeValue": 3,
+      "releaseSequence": "1932-12-05tt0023935",
+      "reviewDate": "2023-10-20",
+      "viewingSequence": "2023-10-20-1537"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0024768",
+      "title": "The Whispering Shadow",
+      "year": "1933",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Whispering Shadow (1933)",
+      "gradeValue": null,
+      "releaseSequence": "1933-04-18tt0024768",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0024382",
+      "title": "Night of Terror",
+      "year": "1933",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Night of Terror (1933)",
+      "gradeValue": null,
+      "releaseSequence": "1933-04-24tt0024382",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0024183",
+      "title": "International House",
+      "year": "1933",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "International House (1933)",
+      "gradeValue": null,
+      "releaseSequence": "1933-05-27tt0024183",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0024894",
+      "title": "The Black Cat",
+      "year": "1934",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Cat (1934)",
+      "gradeValue": null,
+      "releaseSequence": "1934-05-03tt0024894",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0025170",
+      "title": "Gift of Gab",
+      "year": "1934",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gift of Gab (1934)",
+      "gradeValue": null,
+      "releaseSequence": "1934-09-01tt0025170",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0025712",
+      "title": "The Return of Chandu",
+      "year": "1934",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Return of Chandu (1934)",
+      "gradeValue": null,
+      "releaseSequence": "1934-10-01tt0025712",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0026755",
+      "title": "The Mysterious Mr. Wong",
+      "year": "1934",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mysterious Mr. Wong (1934)",
+      "gradeValue": null,
+      "releaseSequence": "1934-12-22tt0026755",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt16978034",
+      "title": "El Misterioso Mr. Wong",
+      "year": "1934",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "El Misterioso Mr. Wong (1934)",
+      "gradeValue": null,
+      "releaseSequence": "1934-12-22tt16978034",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0026108",
+      "title": "The Best Man Wins",
+      "year": "1935",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Best Man Wins (1935)",
+      "gradeValue": null,
+      "releaseSequence": "1935-01-02tt0026108",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0026685",
+      "title": "Mark of the Vampire",
+      "year": "1935",
+      "slug": "mark-of-the-vampire-1935",
+      "grade": "F",
+      "sortTitle": "Mark of the Vampire (1935)",
+      "gradeValue": 1,
+      "releaseSequence": "1935-04-26tt0026685",
+      "reviewDate": "2023-05-08",
+      "viewingSequence": "2023-05-08-1479"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0026912",
+      "title": "The Raven",
+      "year": "1935",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Raven (1935)",
+      "gradeValue": null,
+      "releaseSequence": "1935-07-08tt0026912",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0026740",
+      "title": "Murder by Television",
+      "year": "1935",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Murder by Television (1935)",
+      "gradeValue": null,
+      "releaseSequence": "1935-10-01tt0026740",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0026759",
+      "title": "Phantom Ship",
+      "year": "1935",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Phantom Ship (1935)",
+      "gradeValue": null,
+      "releaseSequence": "1935-11-14tt0026759",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0027800",
+      "title": "The Invisible Ray",
+      "year": "1935",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Invisible Ray (1935)",
+      "gradeValue": null,
+      "releaseSequence": "1935-12-24tt0027800",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0028132",
+      "title": "Postal Inspector",
+      "year": "1936",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Postal Inspector (1936)",
+      "gradeValue": null,
+      "releaseSequence": "1936-08-16tt0028132",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0028241",
+      "title": "Shadow of Chinatown",
+      "year": "1936",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Shadow of Chinatown (1936)",
+      "gradeValue": null,
+      "releaseSequence": "1936-10-10tt0028241",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0029508",
+      "title": "SOS Coast Guard",
+      "year": "1937",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "SOS Coast Guard (1937)",
+      "gradeValue": null,
+      "releaseSequence": "1937-08-28tt0029508",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031796",
+      "title": "The Phantom Creeps",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Phantom Creeps (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-01-07tt0031796",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031951",
+      "title": "Son of Frankenstein",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Son of Frankenstein (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-01-10tt0031951",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031387",
+      "title": "The Gorilla",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gorilla (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-05-26tt0031387",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031208",
+      "title": "The Human Monster",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Human Monster (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-10-19tt0031208",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031725",
+      "title": "Ninotchka",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ninotchka (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-11-09tt0031725",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033014",
+      "title": "The Saint's Double Trouble",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Saint's Double Trouble (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-01-26tt0033014",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032258",
+      "title": "Black Friday",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Friday (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-02-29tt0032258",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032390",
+      "title": "The Devil Bat",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Devil Bat (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-11-11tt0032390",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033283",
+      "title": "You'll Find Out",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "You'll Find Out (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-11-14tt0033283",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033760",
+      "title": "Invisible Ghost",
+      "year": "1941",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Invisible Ghost (1941)",
+      "gradeValue": null,
+      "releaseSequence": "1941-04-25tt0033760",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033397",
+      "title": "The Black Cat",
+      "year": "1941",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Cat (1941)",
+      "gradeValue": null,
+      "releaseSequence": "1941-05-02tt0033397",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034224",
+      "title": "Spooks Run Wild",
+      "year": "1941",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Spooks Run Wild (1941)",
+      "gradeValue": null,
+      "releaseSequence": "1941-10-24tt0034224",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034398",
+      "title": "The Wolf Man",
+      "year": "1941",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Wolf Man (1941)",
+      "gradeValue": null,
+      "releaseSequence": "1941-12-09tt0034398",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034521",
+      "title": "Black Dragons",
+      "year": "1942",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Dragons (1942)",
+      "gradeValue": null,
+      "releaseSequence": "1942-03-06tt0034521",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034786",
+      "title": "The Ghost of Frankenstein",
+      "year": "1942",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ghost of Frankenstein (1942)",
+      "gradeValue": null,
+      "releaseSequence": "1942-03-13tt0034786",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034613",
+      "title": "The Corpse Vanishes",
+      "year": "1942",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Corpse Vanishes (1942)",
+      "gradeValue": null,
+      "releaseSequence": "1942-05-08tt0034613",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0035124",
+      "title": "Night Monster",
+      "year": "1942",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Night Monster (1942)",
+      "gradeValue": null,
+      "releaseSequence": "1942-10-20tt0035124",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034546",
+      "title": "Bowery at Midnight",
+      "year": "1942",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bowery at Midnight (1942)",
+      "gradeValue": null,
+      "releaseSequence": "1942-10-30tt0034546",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0035640",
+      "title": "The Ape Man",
+      "year": "1943",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ape Man (1943)",
+      "gradeValue": null,
+      "releaseSequence": "1943-03-05tt0035640",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0035899",
+      "title": "Frankenstein Meets the Wolf Man",
+      "year": "1943",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Frankenstein Meets the Wolf Man (1943)",
+      "gradeValue": null,
+      "releaseSequence": "1943-03-05tt0035899",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037219",
+      "title": "The Return of the Vampire",
+      "year": "1943",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Return of the Vampire (1943)",
+      "gradeValue": null,
+      "releaseSequence": "1943-11-11tt0037219",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0035939",
+      "title": "Ghosts on the Loose",
+      "year": "1943",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ghosts on the Loose (1943)",
+      "gradeValue": null,
+      "releaseSequence": "1943-??-??tt0035939",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037441",
+      "title": "Voodoo Man",
+      "year": "1944",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Voodoo Man (1944)",
+      "gradeValue": null,
+      "releaseSequence": "1944-02-21tt0037441",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037217",
+      "title": "Return of the Ape Man",
+      "year": "1944",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Return of the Ape Man (1944)",
+      "gradeValue": null,
+      "releaseSequence": "1944-07-17tt0037217",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037151",
+      "title": "One Body Too Many",
+      "year": "1944",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "One Body Too Many (1944)",
+      "gradeValue": null,
+      "releaseSequence": "1944-10-27tt0037151",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037549",
+      "title": "The Body Snatcher",
+      "year": "1945",
+      "slug": "the-body-snatcher-1945",
+      "grade": "D+",
+      "sortTitle": "Body Snatcher (1945)",
+      "gradeValue": 4,
+      "releaseSequence": "1945-02-14tt0037549",
+      "reviewDate": "2012-01-12",
+      "viewingSequence": "2012-01-12-8"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0038270",
+      "title": "Zombies on Broadway",
+      "year": "1945",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Zombies on Broadway (1945)",
+      "gradeValue": null,
+      "releaseSequence": "1945-04-26tt0038270",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037735",
+      "title": "Genius at Work",
+      "year": "1946",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Genius at Work (1946)",
+      "gradeValue": null,
+      "releaseSequence": "1946-08-01tt0037735",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0039800",
+      "title": "Scared to Death",
+      "year": "1946",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Scared to Death (1946)",
+      "gradeValue": null,
+      "releaseSequence": "1946-12-18tt0039800",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0040068",
+      "title": "Abbott and Costello Meet Frankenstein",
+      "year": "1948",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Abbott and Costello Meet Frankenstein (1948)",
+      "gradeValue": null,
+      "releaseSequence": "1948-06-15tt0040068",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044406",
+      "title": "Bela Lugosi Meets a Brooklyn Gorilla",
+      "year": "1952",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bela Lugosi Meets a Brooklyn Gorilla (1952)",
+      "gradeValue": null,
+      "releaseSequence": "1952-09-04tt0044406",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044925",
+      "title": "Vampire Over London",
+      "year": "1952",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Vampire Over London (1952)",
+      "gradeValue": null,
+      "releaseSequence": "1952-??-??tt0044925",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0045826",
+      "title": "Glen or Glenda",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Glen or Glenda (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-04-01tt0045826",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0047898",
+      "title": "Bride of the Monster",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bride of the Monster (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-05-11tt0047898",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0049013",
+      "title": "The Black Sleep",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Sleep (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-06-01tt0049013",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0052077",
+      "title": "Plan 9 from Outer Space",
+      "year": "1957",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Plan 9 from Outer Space (1957)",
+      "gradeValue": null,
+      "releaseSequence": "1957-03-15tt0052077",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 11,
+  "totalCount": 65,
+  "creditedAs": [
+    "performer"
+  ]
 }

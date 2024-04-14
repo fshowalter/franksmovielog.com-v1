@@ -1,491 +1,388 @@
 {
   "name": "Abel Ferrara",
   "slug": "abel-ferrara",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0079082",
-        "title": "The Driller Killer",
-        "year": "1979",
-        "slug": "the-driller-killer-1979",
-        "grade": "B-",
-        "sortTitle": "Driller Killer (1979)",
-        "gradeValue": 8,
-        "releaseSequence": "1979-06-15tt0079082",
-        "reviewDate": "2021-02-19",
-        "viewingSequence": "2021-02-19-1023"
-      },
-      {
-        "imdbId": "tt0082776",
-        "title": "Ms .45",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ms .45 (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-04-24tt0082776",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0087247",
-        "title": "Fear City",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fear City (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-05-16tt0087247",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0092751",
-        "title": "China Girl",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "China Girl (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-09-07tt0092751",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0097028",
-        "title": "Cat Chaser",
-        "year": "1989",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cat Chaser (1989)",
-        "gradeValue": null,
-        "releaseSequence": "1989-10-20tt0097028",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0099939",
-        "title": "King of New York",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "King of New York (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-02-01tt0099939",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0103759",
-        "title": "Bad Lieutenant",
-        "year": "1992",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bad Lieutenant (1992)",
-        "gradeValue": null,
-        "releaseSequence": "1992-05-14tt0103759",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0106452",
-        "title": "Body Snatchers",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Body Snatchers (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-05-15tt0106452",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0106660",
-        "title": "Dangerous Game",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dangerous Game (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-09-10tt0106660",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0112288",
-        "title": "The Addiction",
-        "year": "1995",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Addiction (1995)",
-        "gradeValue": null,
-        "releaseSequence": "1995-01-21tt0112288",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0116378",
-        "title": "The Funeral",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Funeral (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-09-03tt0116378",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0118734",
-        "title": "The Blackout",
-        "year": "1997",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Blackout (1997)",
-        "gradeValue": null,
-        "releaseSequence": "1997-05-01tt0118734",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120240",
-        "title": "SUBWAYStories: Tales from the Underground",
-        "year": "1997",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "SUBWAYStories: Tales from the Underground (1997)",
-        "gradeValue": null,
-        "releaseSequence": "1997-08-17tt0120240",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0133122",
-        "title": "New Rose Hotel",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "New Rose Hotel (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-09-09tt0133122",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0217978",
-        "title": "'R Xmas",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "'R Xmas (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-05-09tt0217978",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0425236",
-        "title": "Mary",
-        "year": "2005",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mary (2005)",
-        "gradeValue": null,
-        "releaseSequence": "2005-09-06tt0425236",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0393329",
-        "title": "Go Go Tales",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Go Go Tales (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-05-23tt0393329",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1707391",
-        "title": "4:44 Last Day on Earth",
-        "year": "2011",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "4:44 Last Day on Earth (2011)",
-        "gradeValue": null,
-        "releaseSequence": "2011-09-07tt1707391",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt2758890",
-        "title": "Welcome to New York",
-        "year": "2014",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Welcome to New York (2014)",
-        "gradeValue": null,
-        "releaseSequence": "2014-05-01tt2758890",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt3125652",
-        "title": "Pasolini",
-        "year": "2014",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Pasolini (2014)",
-        "gradeValue": null,
-        "releaseSequence": "2014-09-04tt3125652",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt9482230",
-        "title": "Tommaso",
-        "year": "2019",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Tommaso (2019)",
-        "gradeValue": null,
-        "releaseSequence": "2019-05-20tt9482230",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt4687856",
-        "title": "Siberia",
-        "year": "2020",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Siberia (2020)",
-        "gradeValue": null,
-        "releaseSequence": "2020-02-24tt4687856",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt13432484",
-        "title": "Zeros and Ones",
-        "year": "2021",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Zeros and Ones (2021)",
-        "gradeValue": null,
-        "releaseSequence": "2021-08-12tt13432484",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt18272884",
-        "title": "Padre Pio",
-        "year": "2022",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Padre Pio (2022)",
-        "gradeValue": null,
-        "releaseSequence": "2022-09-02tt18272884",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 23
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0103759",
-        "title": "Bad Lieutenant",
-        "year": "1992",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bad Lieutenant (1992)",
-        "gradeValue": null,
-        "releaseSequence": "1992-05-14tt0103759",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0118734",
-        "title": "The Blackout",
-        "year": "1997",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Blackout (1997)",
-        "gradeValue": null,
-        "releaseSequence": "1997-05-01tt0118734",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0133122",
-        "title": "New Rose Hotel",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "New Rose Hotel (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-09-09tt0133122",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0217978",
-        "title": "'R Xmas",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "'R Xmas (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-05-09tt0217978",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0425236",
-        "title": "Mary",
-        "year": "2005",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mary (2005)",
-        "gradeValue": null,
-        "releaseSequence": "2005-09-06tt0425236",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0393329",
-        "title": "Go Go Tales",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Go Go Tales (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-05-23tt0393329",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1707391",
-        "title": "4:44 Last Day on Earth",
-        "year": "2011",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "4:44 Last Day on Earth (2011)",
-        "gradeValue": null,
-        "releaseSequence": "2011-09-07tt1707391",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt2758890",
-        "title": "Welcome to New York",
-        "year": "2014",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Welcome to New York (2014)",
-        "gradeValue": null,
-        "releaseSequence": "2014-05-01tt2758890",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt3125652",
-        "title": "Pasolini",
-        "year": "2014",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Pasolini (2014)",
-        "gradeValue": null,
-        "releaseSequence": "2014-09-04tt3125652",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt9482230",
-        "title": "Tommaso",
-        "year": "2019",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Tommaso (2019)",
-        "gradeValue": null,
-        "releaseSequence": "2019-05-20tt9482230",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt4687856",
-        "title": "Siberia",
-        "year": "2020",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Siberia (2020)",
-        "gradeValue": null,
-        "releaseSequence": "2020-02-24tt4687856",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt13432484",
-        "title": "Zeros and Ones",
-        "year": "2021",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Zeros and Ones (2021)",
-        "gradeValue": null,
-        "releaseSequence": "2021-08-12tt13432484",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt18272884",
-        "title": "Padre Pio",
-        "year": "2022",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Padre Pio (2022)",
-        "gradeValue": null,
-        "releaseSequence": "2022-09-02tt18272884",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 0,
-    "watchlistCount": 13
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0079082",
-        "title": "The Driller Killer",
-        "year": "1979",
-        "slug": "the-driller-killer-1979",
-        "grade": "B-",
-        "sortTitle": "Driller Killer (1979)",
-        "gradeValue": 8,
-        "releaseSequence": "1979-06-15tt0079082",
-        "reviewDate": "2021-02-19",
-        "viewingSequence": "2021-02-19-1023"
-      },
-      {
-        "imdbId": "tt0082776",
-        "title": "Ms .45",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ms .45 (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-04-24tt0082776",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 1
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "performer",
+        "director"
+      ],
+      "imdbId": "tt0079082",
+      "title": "The Driller Killer",
+      "year": "1979",
+      "slug": "the-driller-killer-1979",
+      "grade": "B-",
+      "sortTitle": "Driller Killer (1979)",
+      "gradeValue": 8,
+      "releaseSequence": "1979-06-15tt0079082",
+      "reviewDate": "2021-02-19",
+      "viewingSequence": "2021-02-19-1023"
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "director"
+      ],
+      "imdbId": "tt0082776",
+      "title": "Ms .45",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ms .45 (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-04-24tt0082776",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0087247",
+      "title": "Fear City",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Fear City (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-05-16tt0087247",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0092751",
+      "title": "China Girl",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "China Girl (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-09-07tt0092751",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0097028",
+      "title": "Cat Chaser",
+      "year": "1989",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Cat Chaser (1989)",
+      "gradeValue": null,
+      "releaseSequence": "1989-10-20tt0097028",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0099939",
+      "title": "King of New York",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "King of New York (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-02-01tt0099939",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0103759",
+      "title": "Bad Lieutenant",
+      "year": "1992",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bad Lieutenant (1992)",
+      "gradeValue": null,
+      "releaseSequence": "1992-05-14tt0103759",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0106452",
+      "title": "Body Snatchers",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Body Snatchers (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-05-15tt0106452",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0106660",
+      "title": "Dangerous Game",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dangerous Game (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-09-10tt0106660",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0112288",
+      "title": "The Addiction",
+      "year": "1995",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Addiction (1995)",
+      "gradeValue": null,
+      "releaseSequence": "1995-01-21tt0112288",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0116378",
+      "title": "The Funeral",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Funeral (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-09-03tt0116378",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0118734",
+      "title": "The Blackout",
+      "year": "1997",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Blackout (1997)",
+      "gradeValue": null,
+      "releaseSequence": "1997-05-01tt0118734",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0120240",
+      "title": "SUBWAYStories: Tales from the Underground",
+      "year": "1997",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "SUBWAYStories: Tales from the Underground (1997)",
+      "gradeValue": null,
+      "releaseSequence": "1997-08-17tt0120240",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0133122",
+      "title": "New Rose Hotel",
+      "year": "1998",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "New Rose Hotel (1998)",
+      "gradeValue": null,
+      "releaseSequence": "1998-09-09tt0133122",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0217978",
+      "title": "'R Xmas",
+      "year": "2001",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "'R Xmas (2001)",
+      "gradeValue": null,
+      "releaseSequence": "2001-05-09tt0217978",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0425236",
+      "title": "Mary",
+      "year": "2005",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mary (2005)",
+      "gradeValue": null,
+      "releaseSequence": "2005-09-06tt0425236",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0393329",
+      "title": "Go Go Tales",
+      "year": "2007",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Go Go Tales (2007)",
+      "gradeValue": null,
+      "releaseSequence": "2007-05-23tt0393329",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt1707391",
+      "title": "4:44 Last Day on Earth",
+      "year": "2011",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "4:44 Last Day on Earth (2011)",
+      "gradeValue": null,
+      "releaseSequence": "2011-09-07tt1707391",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt2758890",
+      "title": "Welcome to New York",
+      "year": "2014",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Welcome to New York (2014)",
+      "gradeValue": null,
+      "releaseSequence": "2014-05-01tt2758890",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt3125652",
+      "title": "Pasolini",
+      "year": "2014",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Pasolini (2014)",
+      "gradeValue": null,
+      "releaseSequence": "2014-09-04tt3125652",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt9482230",
+      "title": "Tommaso",
+      "year": "2019",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Tommaso (2019)",
+      "gradeValue": null,
+      "releaseSequence": "2019-05-20tt9482230",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt4687856",
+      "title": "Siberia",
+      "year": "2020",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Siberia (2020)",
+      "gradeValue": null,
+      "releaseSequence": "2020-02-24tt4687856",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt13432484",
+      "title": "Zeros and Ones",
+      "year": "2021",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Zeros and Ones (2021)",
+      "gradeValue": null,
+      "releaseSequence": "2021-08-12tt13432484",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt18272884",
+      "title": "Padre Pio",
+      "year": "2022",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Padre Pio (2022)",
+      "gradeValue": null,
+      "releaseSequence": "2022-09-02tt18272884",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 1,
+  "totalCount": 24,
+  "creditedAs": [
+    "director",
+    "writer",
+    "performer"
+  ]
 }

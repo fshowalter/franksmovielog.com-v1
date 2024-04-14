@@ -10,7 +10,6 @@ import React from "react";
 import { composeClassNames } from "../../styles/composeClassNames";
 import "../../styles/global.css";
 import { Box } from "../Box";
-import { ripNotComingSoonBackgroundImageStyle } from "./backgroundImage.css";
 import { Footer } from "./Footer";
 import {
   bandStickyStyle,
@@ -19,6 +18,7 @@ import {
   skipToMainContentStyle,
 } from "./Layout.css";
 import { Mast } from "./Mast";
+import { ripNotComingSoonBackgroundImageStyle } from "./backgroundImage.css";
 
 export function Layout({
   children,
@@ -61,6 +61,7 @@ export function Layout({
           alignItems="center"
           boxShadow="borderBottom"
           backgroundColor="default"
+          columnGap={24}
           className={headerLayoutStyle}
         />
         <Box flexGrow={1} id="content">

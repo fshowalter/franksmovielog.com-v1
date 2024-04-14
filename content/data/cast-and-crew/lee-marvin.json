@@ -1,657 +1,806 @@
 {
   "name": "Lee Marvin",
   "slug": "lee-marvin",
-  "director": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "writer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0044573",
-        "title": "The Duel at Silver Creek",
-        "year": "1952",
-        "slug": "the-duel-at-silver-creek-1952",
-        "grade": "D",
-        "sortTitle": "Duel at Silver Creek (1952)",
-        "gradeValue": 3,
-        "releaseSequence": "1952-08-01tt0044573",
-        "reviewDate": "2023-03-23",
-        "viewingSequence": "2023-03-23-1454"
-      },
-      {
-        "imdbId": "tt0044683",
-        "title": "Hangman's Knot",
-        "year": "1952",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hangman's Knot (1952)",
-        "gradeValue": null,
-        "releaseSequence": "1952-11-15tt0044683",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0044579",
-        "title": "Eight Iron Men",
-        "year": "1952",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Eight Iron Men (1952)",
-        "gradeValue": null,
-        "releaseSequence": "1952-12-01tt0044579",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0046294",
-        "title": "Seminole",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Seminole (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-03-01tt0046294",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0045827",
-        "title": "The Glory Brigade",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Glory Brigade (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-05-20tt0045827",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0045555",
-        "title": "The Big Heat",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Big Heat (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-09-25tt0045555",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0045846",
-        "title": "Gun Fury",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gun Fury (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-10-04tt0045846",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0047677",
-        "title": "The Wild One",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Wild One (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-12-25tt0047677",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0046375",
-        "title": "The Stranger Wore a Gun",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Stranger Wore a Gun (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-??-??tt0046375",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0047041",
-        "title": "Gorilla at Large",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gorilla at Large (1954)",
-        "gradeValue": null,
-        "releaseSequence": "1954-05-01tt0047041",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0046816",
-        "title": "The Caine Mutiny",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Caine Mutiny (1954)",
-        "gradeValue": null,
-        "releaseSequence": "1954-06-24tt0046816",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0047388",
-        "title": "The Raid",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Raid (1954)",
-        "gradeValue": null,
-        "releaseSequence": "1954-08-04tt0047388",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0047849",
-        "title": "Bad Day at Black Rock",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bad Day at Black Rock (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-01-13tt0047849",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048790",
-        "title": "Violent Saturday",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Violent Saturday (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-04-20tt0048790",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048432",
-        "title": "Not as a Stranger",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Not as a Stranger (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-06-28tt0048432",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048301",
-        "title": "A Life in the Balance",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Life in the Balance (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-07-01tt0048301",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048484",
-        "title": "Pete Kelly's Blues",
-        "year": "1955",
-        "slug": "pete-kellys-blues-1955",
-        "grade": "C+",
-        "sortTitle": "Pete Kelly's Blues (1955)",
-        "gradeValue": 7,
-        "releaseSequence": "1955-07-27tt0048484",
-        "reviewDate": "2023-07-11",
-        "viewingSequence": "2023-07-11-1510"
-      },
-      {
-        "imdbId": "tt0048190",
-        "title": "I Died a Thousand Times",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "I Died a Thousand Times (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-11-09tt0048190",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048607",
-        "title": "Shack Out on 101",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Shack Out on 101 (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-11-23tt0048607",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049652",
-        "title": "The Rack",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Rack (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-05-24tt0049652",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049743",
-        "title": "7 Men from Now",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "7 Men from Now (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-07-15tt0049743",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048966",
-        "title": "Attack",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Attack (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-09-07tt0048966",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049619",
-        "title": "Pillars of the Sky",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Pillars of the Sky (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-09-14tt0049619",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0050882",
-        "title": "Raintree County",
-        "year": "1957",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Raintree County (1957)",
-        "gradeValue": null,
-        "releaseSequence": "1957-10-04tt0050882",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0051936",
-        "title": "The Missouri Traveler",
-        "year": "1958",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Missouri Traveler (1958)",
-        "gradeValue": null,
-        "releaseSequence": "1958-01-21tt0051936",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0054757",
-        "title": "The Comancheros",
-        "year": "1961",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Comancheros (1961)",
-        "gradeValue": null,
-        "releaseSequence": "1961-11-01tt0054757",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0056217",
-        "title": "The Man Who Shot Liberty Valance",
-        "year": "1962",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Man Who Shot Liberty Valance (1962)",
-        "gradeValue": null,
-        "releaseSequence": "1962-04-13tt0056217",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0057007",
-        "title": "Donovan's Reef",
-        "year": "1963",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Donovan's Reef (1963)",
-        "gradeValue": null,
-        "releaseSequence": "1963-06-12tt0057007",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0058262",
-        "title": "The Killers",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Killers (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-07-07tt0058262",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0059017",
-        "title": "Cat Ballou",
-        "year": "1965",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cat Ballou (1965)",
-        "gradeValue": null,
-        "releaseSequence": "1965-05-06tt0059017",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0059712",
-        "title": "Ship of Fools",
-        "year": "1965",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ship of Fools (1965)",
-        "gradeValue": null,
-        "releaseSequence": "1965-07-28tt0059712",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0060862",
-        "title": "The Professionals",
-        "year": "1966",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Professionals (1966)",
-        "gradeValue": null,
-        "releaseSequence": "1966-11-02tt0060862",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061578",
-        "title": "The Dirty Dozen",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dirty Dozen (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-06-15tt0061578",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062138",
-        "title": "Point Blank",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Point Blank (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-08-30tt0062138",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0063584",
-        "title": "Sergeant Ryker",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sergeant Ryker (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-02-01tt0063584",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0063056",
-        "title": "Hell in the Pacific",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hell in the Pacific (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-12-18tt0063056",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064782",
-        "title": "Paint Your Wagon",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Paint Your Wagon (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-10-15tt0064782",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0066093",
-        "title": "Monte Walsh",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Monte Walsh (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-10-02tt0066093",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069103",
-        "title": "Pocket Money",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Pocket Money (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-02-09tt0069103",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069121",
-        "title": "Prime Cut",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Prime Cut (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-??-??tt0069121",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070030",
-        "title": "Emperor of the North",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Emperor of the North (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-05-24tt0070030",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070212",
-        "title": "The Iceman Cometh",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Iceman Cometh (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-10-29tt0070212",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072198",
-        "title": "The Spikes Gang",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Spikes Gang (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-04-11tt0072198",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0071721",
-        "title": "The Klansman",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Klansman (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-10-25tt0071721",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074588",
-        "title": "The Great Scout & Cathouse Thursday",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Great Scout & Cathouse Thursday (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-02-11tt0074588",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0075214",
-        "title": "Shout at the Devil",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Shout at the Devil (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-??-??tt0075214",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0078812",
-        "title": "Avalanche Express",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Avalanche Express (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-07-05tt0078812",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0080437",
-        "title": "The Big Red One",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Big Red One (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-05-16tt0080437",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0082247",
-        "title": "Death Hunt",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Death Hunt (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-??-??tt0082247",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0085615",
-        "title": "Gorky Park",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gorky Park (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-12-16tt0085615",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0085289",
-        "title": "Dog Day",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dog Day (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-01-11tt0085289",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0089026",
-        "title": "The Dirty Dozen: Next Mission",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dirty Dozen: Next Mission (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-??-??tt0089026",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090927",
-        "title": "The Delta Force",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Delta Force (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-02-12tt0090927",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 2,
-    "watchlistCount": 51
-  },
-  "mostCreditedAs": "performer"
+  "titles": [
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044573",
+      "title": "The Duel at Silver Creek",
+      "year": "1952",
+      "slug": "the-duel-at-silver-creek-1952",
+      "grade": "D",
+      "sortTitle": "Duel at Silver Creek (1952)",
+      "gradeValue": 3,
+      "releaseSequence": "1952-08-01tt0044573",
+      "reviewDate": "2023-03-23",
+      "viewingSequence": "2023-03-23-1454"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044683",
+      "title": "Hangman's Knot",
+      "year": "1952",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hangman's Knot (1952)",
+      "gradeValue": null,
+      "releaseSequence": "1952-11-15tt0044683",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044579",
+      "title": "Eight Iron Men",
+      "year": "1952",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Eight Iron Men (1952)",
+      "gradeValue": null,
+      "releaseSequence": "1952-12-01tt0044579",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0046294",
+      "title": "Seminole",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Seminole (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-03-01tt0046294",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0045827",
+      "title": "The Glory Brigade",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Glory Brigade (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-05-20tt0045827",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0045555",
+      "title": "The Big Heat",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Big Heat (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-09-25tt0045555",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0045846",
+      "title": "Gun Fury",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gun Fury (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-10-04tt0045846",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0047677",
+      "title": "The Wild One",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Wild One (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-12-25tt0047677",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0046375",
+      "title": "The Stranger Wore a Gun",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Stranger Wore a Gun (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-??-??tt0046375",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0047041",
+      "title": "Gorilla at Large",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gorilla at Large (1954)",
+      "gradeValue": null,
+      "releaseSequence": "1954-05-01tt0047041",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0046816",
+      "title": "The Caine Mutiny",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Caine Mutiny (1954)",
+      "gradeValue": null,
+      "releaseSequence": "1954-06-24tt0046816",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0047388",
+      "title": "The Raid",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Raid (1954)",
+      "gradeValue": null,
+      "releaseSequence": "1954-08-04tt0047388",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0047849",
+      "title": "Bad Day at Black Rock",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bad Day at Black Rock (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-01-13tt0047849",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048790",
+      "title": "Violent Saturday",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Violent Saturday (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-04-20tt0048790",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048432",
+      "title": "Not as a Stranger",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Not as a Stranger (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-06-28tt0048432",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048301",
+      "title": "A Life in the Balance",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Life in the Balance (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-07-01tt0048301",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048484",
+      "title": "Pete Kelly's Blues",
+      "year": "1955",
+      "slug": "pete-kellys-blues-1955",
+      "grade": "C+",
+      "sortTitle": "Pete Kelly's Blues (1955)",
+      "gradeValue": 7,
+      "releaseSequence": "1955-07-27tt0048484",
+      "reviewDate": "2023-07-11",
+      "viewingSequence": "2023-07-11-1510"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048190",
+      "title": "I Died a Thousand Times",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "I Died a Thousand Times (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-11-09tt0048190",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048607",
+      "title": "Shack Out on 101",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Shack Out on 101 (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-11-23tt0048607",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0049652",
+      "title": "The Rack",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Rack (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-05-24tt0049652",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0049743",
+      "title": "7 Men from Now",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "7 Men from Now (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-07-15tt0049743",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048966",
+      "title": "Attack",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Attack (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-09-07tt0048966",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0049619",
+      "title": "Pillars of the Sky",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Pillars of the Sky (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-09-14tt0049619",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0050882",
+      "title": "Raintree County",
+      "year": "1957",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Raintree County (1957)",
+      "gradeValue": null,
+      "releaseSequence": "1957-10-04tt0050882",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0051936",
+      "title": "The Missouri Traveler",
+      "year": "1958",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Missouri Traveler (1958)",
+      "gradeValue": null,
+      "releaseSequence": "1958-01-21tt0051936",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0054757",
+      "title": "The Comancheros",
+      "year": "1961",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Comancheros (1961)",
+      "gradeValue": null,
+      "releaseSequence": "1961-11-01tt0054757",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0056217",
+      "title": "The Man Who Shot Liberty Valance",
+      "year": "1962",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Man Who Shot Liberty Valance (1962)",
+      "gradeValue": null,
+      "releaseSequence": "1962-04-13tt0056217",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0057007",
+      "title": "Donovan's Reef",
+      "year": "1963",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Donovan's Reef (1963)",
+      "gradeValue": null,
+      "releaseSequence": "1963-06-12tt0057007",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0058262",
+      "title": "The Killers",
+      "year": "1964",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Killers (1964)",
+      "gradeValue": null,
+      "releaseSequence": "1964-07-07tt0058262",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0059017",
+      "title": "Cat Ballou",
+      "year": "1965",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Cat Ballou (1965)",
+      "gradeValue": null,
+      "releaseSequence": "1965-05-06tt0059017",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0059712",
+      "title": "Ship of Fools",
+      "year": "1965",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ship of Fools (1965)",
+      "gradeValue": null,
+      "releaseSequence": "1965-07-28tt0059712",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0060862",
+      "title": "The Professionals",
+      "year": "1966",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Professionals (1966)",
+      "gradeValue": null,
+      "releaseSequence": "1966-11-02tt0060862",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061578",
+      "title": "The Dirty Dozen",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dirty Dozen (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-06-15tt0061578",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0062138",
+      "title": "Point Blank",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Point Blank (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-08-30tt0062138",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0063584",
+      "title": "Sergeant Ryker",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sergeant Ryker (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-02-01tt0063584",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0063056",
+      "title": "Hell in the Pacific",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hell in the Pacific (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-12-18tt0063056",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0064782",
+      "title": "Paint Your Wagon",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Paint Your Wagon (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-10-15tt0064782",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0066093",
+      "title": "Monte Walsh",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Monte Walsh (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-10-02tt0066093",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069103",
+      "title": "Pocket Money",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Pocket Money (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-02-09tt0069103",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069121",
+      "title": "Prime Cut",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Prime Cut (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-??-??tt0069121",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0070030",
+      "title": "Emperor of the North",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Emperor of the North (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-05-24tt0070030",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0070212",
+      "title": "The Iceman Cometh",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Iceman Cometh (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-10-29tt0070212",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0072198",
+      "title": "The Spikes Gang",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Spikes Gang (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-04-11tt0072198",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0071721",
+      "title": "The Klansman",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Klansman (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-10-25tt0071721",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0074588",
+      "title": "The Great Scout & Cathouse Thursday",
+      "year": "1976",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Great Scout & Cathouse Thursday (1976)",
+      "gradeValue": null,
+      "releaseSequence": "1976-02-11tt0074588",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0075214",
+      "title": "Shout at the Devil",
+      "year": "1976",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Shout at the Devil (1976)",
+      "gradeValue": null,
+      "releaseSequence": "1976-??-??tt0075214",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0078812",
+      "title": "Avalanche Express",
+      "year": "1979",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Avalanche Express (1979)",
+      "gradeValue": null,
+      "releaseSequence": "1979-07-05tt0078812",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0080437",
+      "title": "The Big Red One",
+      "year": "1980",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Big Red One (1980)",
+      "gradeValue": null,
+      "releaseSequence": "1980-05-16tt0080437",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0082247",
+      "title": "Death Hunt",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Death Hunt (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-??-??tt0082247",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0085615",
+      "title": "Gorky Park",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gorky Park (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-12-16tt0085615",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0085289",
+      "title": "Dog Day",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dog Day (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-01-11tt0085289",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0089026",
+      "title": "The Dirty Dozen: Next Mission",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dirty Dozen: Next Mission (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-??-??tt0089026",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0090927",
+      "title": "The Delta Force",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Delta Force (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-02-12tt0090927",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 2,
+  "totalCount": 53,
+  "creditedAs": [
+    "performer"
+  ]
 }

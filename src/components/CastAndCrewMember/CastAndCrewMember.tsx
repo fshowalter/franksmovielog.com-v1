@@ -2,69 +2,51 @@ import { graphql } from "gatsby";
 import { useReducer } from "react";
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
 import { initState, reducer } from "./CastAndCrewMember.reducer";
-import { CreditsList } from "./CreditsList";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
+import { List } from "./List";
 
 export function CastAndCrewMember({
-  entity,
-  directorReleaseYears,
-  performerReleaseYears,
-  writerReleaseYears,
+  member,
+  distinctReleaseYears,
 }: {
-  entity: Queries.CastAndCrewMemberFragment;
-  directorReleaseYears: readonly string[];
-  performerReleaseYears: readonly string[];
-  writerReleaseYears: readonly string[];
+  member: Queries.CastAndCrewMemberFragment;
+  distinctReleaseYears: readonly string[];
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      directorTitles: [...entity.director.titles],
-      performerTitles: [...entity.performer.titles],
-      writerTitles: [...entity.writer.titles],
+      items: [...member.titles],
       sort: "release-date-asc",
     },
     initState,
   );
   return (
     <ListWithFiltersLayout
-      header={<Header entity={entity} />}
+      header={<Header member={member} />}
       filters={
         <Filters
           dispatch={dispatch}
+          creditedAs={member.creditedAs}
           hideReviewed={state.hideReviewed}
           sortValue={state.sortValue}
-          directorReleaseYears={directorReleaseYears}
-          performerReleaseYears={performerReleaseYears}
-          writerReleaseYears={writerReleaseYears}
+          distinctReleaseYears={distinctReleaseYears}
         />
       }
       list={
-        <>
-          <CreditsList
-            groupedItems={state.groupedDirectorTitles}
-            summaryText="Director"
-            titleCount={state.filteredDirectorTitles.length}
-          />
-          <CreditsList
-            groupedItems={state.groupedPerformerTitles}
-            summaryText="Performer"
-            titleCount={state.filteredPerformerTitles.length}
-          />
-          <CreditsList
-            groupedItems={state.groupedWriterTitles}
-            summaryText="Writer"
-            titleCount={state.filteredWriterTitles.length}
-          />
-        </>
+        <List
+          dispatch={dispatch}
+          totalCount={state.filteredItems.length}
+          visibleCount={state.showCount}
+          groupedItems={state.groupedItems}
+        />
       }
     />
   );
 }
 
 export const query = graphql`
-  fragment CastAndCrewMemberTitle on CastAndCrewCreditsTitle {
+  fragment CastAndCrewMemberTitle on CastAndCrewMemberTitle {
     imdbId
     title
     year
@@ -73,6 +55,7 @@ export const query = graphql`
     slug
     sortTitle
     releaseSequence
+    creditedAs
     poster {
       ...ListItemPoster
     }
@@ -80,27 +63,9 @@ export const query = graphql`
 
   fragment CastAndCrewMember on CastAndCrewJson {
     name
-    director {
-      watchlistCount
-      reviewCount
-      titles {
-        ...CastAndCrewMemberTitle
-      }
-    }
-    performer {
-      watchlistCount
-      reviewCount
-      titles {
-        ...CastAndCrewMemberTitle
-      }
-    }
-    writer {
-      watchlistCount
-      reviewCount
-      titles {
-        ...CastAndCrewMemberTitle
-      }
-    }
+    reviewCount
+    totalCount
+    creditedAs
     avatar {
       childImageSharp {
         gatsbyImageData(
@@ -112,6 +77,9 @@ export const query = graphql`
           placeholder: BLURRED
         )
       }
+    }
+    titles {
+      ...CastAndCrewMemberTitle
     }
   }
 `;

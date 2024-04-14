@@ -1,574 +1,478 @@
 {
   "name": "Brian De Palma",
   "slug": "brian-de-palma",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0163114",
-        "title": "Murder \u00e0 la Mod",
-        "year": "1968",
-        "slug": "murder-a-la-mod-1968",
-        "grade": "B-",
-        "sortTitle": "Murder \u00e0 la Mod (1968)",
-        "gradeValue": 8,
-        "releaseSequence": "1968-05-01tt0163114",
-        "reviewDate": "2021-01-01",
-        "viewingSequence": "2021-01-01-969"
-      },
-      {
-        "imdbId": "tt0063036",
-        "title": "Greetings",
-        "year": "1968",
-        "slug": "greetings-1968",
-        "grade": "D",
-        "sortTitle": "Greetings (1968)",
-        "gradeValue": 3,
-        "releaseSequence": "1968-12-15tt0063036",
-        "reviewDate": "2021-02-03",
-        "viewingSequence": "2021-02-03-1006"
-      },
-      {
-        "imdbId": "tt0065198",
-        "title": "The Wedding Party",
-        "year": "1969",
-        "slug": "the-wedding-party-1969",
-        "grade": "D+",
-        "sortTitle": "Wedding Party (1969)",
-        "gradeValue": 4,
-        "releaseSequence": "1969-04-09tt0065198",
-        "reviewDate": "2021-03-04",
-        "viewingSequence": "2021-03-04-1038"
-      },
-      {
-        "imdbId": "tt0065641",
-        "title": "Dionysus in '69",
-        "year": "1970",
-        "slug": "dionysus-in-69-1970",
-        "grade": "F",
-        "sortTitle": "Dionysus in '69 (1970)",
-        "gradeValue": 1,
-        "releaseSequence": "1970-03-22tt0065641",
-        "reviewDate": "2021-03-21",
-        "viewingSequence": "2021-03-21-1056"
-      },
-      {
-        "imdbId": "tt0065836",
-        "title": "Hi, Mom!",
-        "year": "1970",
-        "slug": "hi-mom-1970",
-        "grade": "D+",
-        "sortTitle": "Hi, Mom! (1970)",
-        "gradeValue": 4,
-        "releaseSequence": "1970-??-??tt0065836",
-        "reviewDate": "2021-03-31",
-        "viewingSequence": "2021-03-31-1068"
-      },
-      {
-        "imdbId": "tt0068637",
-        "title": "Get to Know Your Rabbit",
-        "year": "1972",
-        "slug": "get-to-know-your-rabbit-1972",
-        "grade": "C",
-        "sortTitle": "Get to Know Your Rabbit (1972)",
-        "gradeValue": 6,
-        "releaseSequence": "1972-06-07tt0068637",
-        "reviewDate": "2021-04-15",
-        "viewingSequence": "2021-04-15-1082"
-      },
-      {
-        "imdbId": "tt0070698",
-        "title": "Sisters",
-        "year": "1972",
-        "slug": "sisters-1972",
-        "grade": "C+",
-        "sortTitle": "Sisters (1972)",
-        "gradeValue": 7,
-        "releaseSequence": "1972-11-18tt0070698",
-        "reviewDate": "2021-04-29",
-        "viewingSequence": "2021-04-29-1095"
-      },
-      {
-        "imdbId": "tt0071994",
-        "title": "Phantom of the Paradise",
-        "year": "1974",
-        "slug": "phantom-of-the-paradise-1974",
-        "grade": "B",
-        "sortTitle": "Phantom of the Paradise (1974)",
-        "gradeValue": 9,
-        "releaseSequence": "1974-11-01tt0071994",
-        "reviewDate": "2021-07-01",
-        "viewingSequence": "2021-07-01-1122"
-      },
-      {
-        "imdbId": "tt0074991",
-        "title": "Obsession",
-        "year": "1976",
-        "slug": "obsession-1976",
-        "grade": "D+",
-        "sortTitle": "Obsession (1976)",
-        "gradeValue": 4,
-        "releaseSequence": "1976-08-01tt0074991",
-        "reviewDate": "2021-08-02",
-        "viewingSequence": "2021-08-02-1138"
-      },
-      {
-        "imdbId": "tt0074285",
-        "title": "Carrie",
-        "year": "1976",
-        "slug": "carrie-1976",
-        "grade": "B-",
-        "sortTitle": "Carrie (1976)",
-        "gradeValue": 8,
-        "releaseSequence": "1976-11-03tt0074285",
-        "reviewDate": "2021-09-15",
-        "viewingSequence": "2021-09-15-1157"
-      },
-      {
-        "imdbId": "tt0077588",
-        "title": "The Fury",
-        "year": "1978",
-        "slug": "the-fury-1978",
-        "grade": "D-",
-        "sortTitle": "Fury (1978)",
-        "gradeValue": 2,
-        "releaseSequence": "1978-03-10tt0077588",
-        "reviewDate": "2021-10-01",
-        "viewingSequence": "2021-10-01-1172"
-      },
-      {
-        "imdbId": "tt0079302",
-        "title": "Home Movies",
-        "year": "1979",
-        "slug": "home-movies-1979",
-        "grade": "D",
-        "sortTitle": "Home Movies (1979)",
-        "gradeValue": 3,
-        "releaseSequence": "1979-08-28tt0079302",
-        "reviewDate": "2021-12-01",
-        "viewingSequence": "2021-12-01-1199"
-      },
-      {
-        "imdbId": "tt0080661",
-        "title": "Dressed to Kill",
-        "year": "1980",
-        "slug": "dressed-to-kill-1980",
-        "grade": "C+",
-        "sortTitle": "Dressed to Kill (1980)",
-        "gradeValue": 7,
-        "releaseSequence": "1980-07-25tt0080661",
-        "reviewDate": "2021-12-17",
-        "viewingSequence": "2021-12-17-1213"
-      },
-      {
-        "imdbId": "tt0082085",
-        "title": "Blow Out",
-        "year": "1981",
-        "slug": "blow-out-1981",
-        "grade": "B-",
-        "sortTitle": "Blow Out (1981)",
-        "gradeValue": 8,
-        "releaseSequence": "1981-07-07tt0082085",
-        "reviewDate": "2022-01-31",
-        "viewingSequence": "2022-01-31-1239"
-      },
-      {
-        "imdbId": "tt0086250",
-        "title": "Scarface",
-        "year": "1983",
-        "slug": "scarface-1983",
-        "grade": "A-",
-        "sortTitle": "Scarface (1983)",
-        "gradeValue": 11,
-        "releaseSequence": "1983-12-01tt0086250",
-        "reviewDate": "2022-02-12",
-        "viewingSequence": "2022-02-12-1250"
-      },
-      {
-        "imdbId": "tt0086984",
-        "title": "Body Double",
-        "year": "1984",
-        "slug": "body-double-1984",
-        "grade": "D",
-        "sortTitle": "Body Double (1984)",
-        "gradeValue": 3,
-        "releaseSequence": "1984-10-15tt0086984",
-        "reviewDate": "2022-04-04",
-        "viewingSequence": "2022-04-04-1269"
-      },
-      {
-        "imdbId": "tt0092226",
-        "title": "Wise Guys",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Wise Guys (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-04-18tt0092226",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094226",
-        "title": "The Untouchables",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Untouchables (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-06-02tt0094226",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0097027",
-        "title": "Casualties of War",
-        "year": "1989",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Casualties of War (1989)",
-        "gradeValue": null,
-        "releaseSequence": "1989-08-18tt0097027",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0099165",
-        "title": "The Bonfire of the Vanities",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bonfire of the Vanities (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-12-21tt0099165",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0105217",
-        "title": "Raising Cain",
-        "year": "1992",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Raising Cain (1992)",
-        "gradeValue": null,
-        "releaseSequence": "1992-08-07tt0105217",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0106519",
-        "title": "Carlito's Way",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Carlito's Way (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-11-07tt0106519",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0117060",
-        "title": "Mission: Impossible",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mission: Impossible (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-05-20tt0117060",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120832",
-        "title": "Snake Eyes",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Snake Eyes (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-07-30tt0120832",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0183523",
-        "title": "Mission to Mars",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mission to Mars (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-03-06tt0183523",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0280665",
-        "title": "Femme Fatale",
-        "year": "2002",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Femme Fatale (2002)",
-        "gradeValue": null,
-        "releaseSequence": "2002-04-30tt0280665",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0387877",
-        "title": "The Black Dahlia",
-        "year": "2006",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Dahlia (2006)",
-        "gradeValue": null,
-        "releaseSequence": "2006-08-09tt0387877",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0937237",
-        "title": "Redacted",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Redacted (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-08-31tt0937237",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1829012",
-        "title": "Passion",
-        "year": "2012",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Passion (2012)",
-        "gradeValue": null,
-        "releaseSequence": "2012-09-07tt1829012",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt3282076",
-        "title": "Domino",
-        "year": "2019",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Domino (2019)",
-        "gradeValue": null,
-        "releaseSequence": "2019-05-30tt3282076",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 16,
-    "watchlistCount": 14
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0163114",
-        "title": "Murder \u00e0 la Mod",
-        "year": "1968",
-        "slug": "murder-a-la-mod-1968",
-        "grade": "B-",
-        "sortTitle": "Murder \u00e0 la Mod (1968)",
-        "gradeValue": 8,
-        "releaseSequence": "1968-05-01tt0163114",
-        "reviewDate": "2021-01-01",
-        "viewingSequence": "2021-01-01-969"
-      },
-      {
-        "imdbId": "tt0063036",
-        "title": "Greetings",
-        "year": "1968",
-        "slug": "greetings-1968",
-        "grade": "D",
-        "sortTitle": "Greetings (1968)",
-        "gradeValue": 3,
-        "releaseSequence": "1968-12-15tt0063036",
-        "reviewDate": "2021-02-03",
-        "viewingSequence": "2021-02-03-1006"
-      },
-      {
-        "imdbId": "tt0065198",
-        "title": "The Wedding Party",
-        "year": "1969",
-        "slug": "the-wedding-party-1969",
-        "grade": "D+",
-        "sortTitle": "Wedding Party (1969)",
-        "gradeValue": 4,
-        "releaseSequence": "1969-04-09tt0065198",
-        "reviewDate": "2021-03-04",
-        "viewingSequence": "2021-03-04-1038"
-      },
-      {
-        "imdbId": "tt0065836",
-        "title": "Hi, Mom!",
-        "year": "1970",
-        "slug": "hi-mom-1970",
-        "grade": "D+",
-        "sortTitle": "Hi, Mom! (1970)",
-        "gradeValue": 4,
-        "releaseSequence": "1970-??-??tt0065836",
-        "reviewDate": "2021-03-31",
-        "viewingSequence": "2021-03-31-1068"
-      },
-      {
-        "imdbId": "tt0070698",
-        "title": "Sisters",
-        "year": "1972",
-        "slug": "sisters-1972",
-        "grade": "C+",
-        "sortTitle": "Sisters (1972)",
-        "gradeValue": 7,
-        "releaseSequence": "1972-11-18tt0070698",
-        "reviewDate": "2021-04-29",
-        "viewingSequence": "2021-04-29-1095"
-      },
-      {
-        "imdbId": "tt0071994",
-        "title": "Phantom of the Paradise",
-        "year": "1974",
-        "slug": "phantom-of-the-paradise-1974",
-        "grade": "B",
-        "sortTitle": "Phantom of the Paradise (1974)",
-        "gradeValue": 9,
-        "releaseSequence": "1974-11-01tt0071994",
-        "reviewDate": "2021-07-01",
-        "viewingSequence": "2021-07-01-1122"
-      },
-      {
-        "imdbId": "tt0074991",
-        "title": "Obsession",
-        "year": "1976",
-        "slug": "obsession-1976",
-        "grade": "D+",
-        "sortTitle": "Obsession (1976)",
-        "gradeValue": 4,
-        "releaseSequence": "1976-08-01tt0074991",
-        "reviewDate": "2021-08-02",
-        "viewingSequence": "2021-08-02-1138"
-      },
-      {
-        "imdbId": "tt0079302",
-        "title": "Home Movies",
-        "year": "1979",
-        "slug": "home-movies-1979",
-        "grade": "D",
-        "sortTitle": "Home Movies (1979)",
-        "gradeValue": 3,
-        "releaseSequence": "1979-08-28tt0079302",
-        "reviewDate": "2021-12-01",
-        "viewingSequence": "2021-12-01-1199"
-      },
-      {
-        "imdbId": "tt0080661",
-        "title": "Dressed to Kill",
-        "year": "1980",
-        "slug": "dressed-to-kill-1980",
-        "grade": "C+",
-        "sortTitle": "Dressed to Kill (1980)",
-        "gradeValue": 7,
-        "releaseSequence": "1980-07-25tt0080661",
-        "reviewDate": "2021-12-17",
-        "viewingSequence": "2021-12-17-1213"
-      },
-      {
-        "imdbId": "tt0082085",
-        "title": "Blow Out",
-        "year": "1981",
-        "slug": "blow-out-1981",
-        "grade": "B-",
-        "sortTitle": "Blow Out (1981)",
-        "gradeValue": 8,
-        "releaseSequence": "1981-07-07tt0082085",
-        "reviewDate": "2022-01-31",
-        "viewingSequence": "2022-01-31-1239"
-      },
-      {
-        "imdbId": "tt0086984",
-        "title": "Body Double",
-        "year": "1984",
-        "slug": "body-double-1984",
-        "grade": "D",
-        "sortTitle": "Body Double (1984)",
-        "gradeValue": 3,
-        "releaseSequence": "1984-10-15tt0086984",
-        "reviewDate": "2022-04-04",
-        "viewingSequence": "2022-04-04-1269"
-      },
-      {
-        "imdbId": "tt0105217",
-        "title": "Raising Cain",
-        "year": "1992",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Raising Cain (1992)",
-        "gradeValue": null,
-        "releaseSequence": "1992-08-07tt0105217",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120832",
-        "title": "Snake Eyes",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Snake Eyes (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-07-30tt0120832",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0280665",
-        "title": "Femme Fatale",
-        "year": "2002",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Femme Fatale (2002)",
-        "gradeValue": null,
-        "releaseSequence": "2002-04-30tt0280665",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0937237",
-        "title": "Redacted",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Redacted (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-08-31tt0937237",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1829012",
-        "title": "Passion",
-        "year": "2012",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Passion (2012)",
-        "gradeValue": null,
-        "releaseSequence": "2012-09-07tt1829012",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 11,
-    "watchlistCount": 5
-  },
-  "performer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0163114",
+      "title": "Murder \u00e0 la Mod",
+      "year": "1968",
+      "slug": "murder-a-la-mod-1968",
+      "grade": "B-",
+      "sortTitle": "Murder \u00e0 la Mod (1968)",
+      "gradeValue": 8,
+      "releaseSequence": "1968-05-01tt0163114",
+      "reviewDate": "2021-01-01",
+      "viewingSequence": "2021-01-01-969"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0063036",
+      "title": "Greetings",
+      "year": "1968",
+      "slug": "greetings-1968",
+      "grade": "D",
+      "sortTitle": "Greetings (1968)",
+      "gradeValue": 3,
+      "releaseSequence": "1968-12-15tt0063036",
+      "reviewDate": "2021-02-03",
+      "viewingSequence": "2021-02-03-1006"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0065198",
+      "title": "The Wedding Party",
+      "year": "1969",
+      "slug": "the-wedding-party-1969",
+      "grade": "D+",
+      "sortTitle": "Wedding Party (1969)",
+      "gradeValue": 4,
+      "releaseSequence": "1969-04-09tt0065198",
+      "reviewDate": "2021-03-04",
+      "viewingSequence": "2021-03-04-1038"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0065641",
+      "title": "Dionysus in '69",
+      "year": "1970",
+      "slug": "dionysus-in-69-1970",
+      "grade": "F",
+      "sortTitle": "Dionysus in '69 (1970)",
+      "gradeValue": 1,
+      "releaseSequence": "1970-03-22tt0065641",
+      "reviewDate": "2021-03-21",
+      "viewingSequence": "2021-03-21-1056"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0065836",
+      "title": "Hi, Mom!",
+      "year": "1970",
+      "slug": "hi-mom-1970",
+      "grade": "D+",
+      "sortTitle": "Hi, Mom! (1970)",
+      "gradeValue": 4,
+      "releaseSequence": "1970-??-??tt0065836",
+      "reviewDate": "2021-03-31",
+      "viewingSequence": "2021-03-31-1068"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0068637",
+      "title": "Get to Know Your Rabbit",
+      "year": "1972",
+      "slug": "get-to-know-your-rabbit-1972",
+      "grade": "C",
+      "sortTitle": "Get to Know Your Rabbit (1972)",
+      "gradeValue": 6,
+      "releaseSequence": "1972-06-07tt0068637",
+      "reviewDate": "2021-04-15",
+      "viewingSequence": "2021-04-15-1082"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0070698",
+      "title": "Sisters",
+      "year": "1972",
+      "slug": "sisters-1972",
+      "grade": "C+",
+      "sortTitle": "Sisters (1972)",
+      "gradeValue": 7,
+      "releaseSequence": "1972-11-18tt0070698",
+      "reviewDate": "2021-04-29",
+      "viewingSequence": "2021-04-29-1095"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0071994",
+      "title": "Phantom of the Paradise",
+      "year": "1974",
+      "slug": "phantom-of-the-paradise-1974",
+      "grade": "B",
+      "sortTitle": "Phantom of the Paradise (1974)",
+      "gradeValue": 9,
+      "releaseSequence": "1974-11-01tt0071994",
+      "reviewDate": "2021-07-01",
+      "viewingSequence": "2021-07-01-1122"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0074991",
+      "title": "Obsession",
+      "year": "1976",
+      "slug": "obsession-1976",
+      "grade": "D+",
+      "sortTitle": "Obsession (1976)",
+      "gradeValue": 4,
+      "releaseSequence": "1976-08-01tt0074991",
+      "reviewDate": "2021-08-02",
+      "viewingSequence": "2021-08-02-1138"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0074285",
+      "title": "Carrie",
+      "year": "1976",
+      "slug": "carrie-1976",
+      "grade": "B-",
+      "sortTitle": "Carrie (1976)",
+      "gradeValue": 8,
+      "releaseSequence": "1976-11-03tt0074285",
+      "reviewDate": "2021-09-15",
+      "viewingSequence": "2021-09-15-1157"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0077588",
+      "title": "The Fury",
+      "year": "1978",
+      "slug": "the-fury-1978",
+      "grade": "D-",
+      "sortTitle": "Fury (1978)",
+      "gradeValue": 2,
+      "releaseSequence": "1978-03-10tt0077588",
+      "reviewDate": "2021-10-01",
+      "viewingSequence": "2021-10-01-1172"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0079302",
+      "title": "Home Movies",
+      "year": "1979",
+      "slug": "home-movies-1979",
+      "grade": "D",
+      "sortTitle": "Home Movies (1979)",
+      "gradeValue": 3,
+      "releaseSequence": "1979-08-28tt0079302",
+      "reviewDate": "2021-12-01",
+      "viewingSequence": "2021-12-01-1199"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0080661",
+      "title": "Dressed to Kill",
+      "year": "1980",
+      "slug": "dressed-to-kill-1980",
+      "grade": "C+",
+      "sortTitle": "Dressed to Kill (1980)",
+      "gradeValue": 7,
+      "releaseSequence": "1980-07-25tt0080661",
+      "reviewDate": "2021-12-17",
+      "viewingSequence": "2021-12-17-1213"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0082085",
+      "title": "Blow Out",
+      "year": "1981",
+      "slug": "blow-out-1981",
+      "grade": "B-",
+      "sortTitle": "Blow Out (1981)",
+      "gradeValue": 8,
+      "releaseSequence": "1981-07-07tt0082085",
+      "reviewDate": "2022-01-31",
+      "viewingSequence": "2022-01-31-1239"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0086250",
+      "title": "Scarface",
+      "year": "1983",
+      "slug": "scarface-1983",
+      "grade": "A-",
+      "sortTitle": "Scarface (1983)",
+      "gradeValue": 11,
+      "releaseSequence": "1983-12-01tt0086250",
+      "reviewDate": "2022-02-12",
+      "viewingSequence": "2022-02-12-1250"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0086984",
+      "title": "Body Double",
+      "year": "1984",
+      "slug": "body-double-1984",
+      "grade": "D",
+      "sortTitle": "Body Double (1984)",
+      "gradeValue": 3,
+      "releaseSequence": "1984-10-15tt0086984",
+      "reviewDate": "2022-04-04",
+      "viewingSequence": "2022-04-04-1269"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0092226",
+      "title": "Wise Guys",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Wise Guys (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-04-18tt0092226",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0094226",
+      "title": "The Untouchables",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Untouchables (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-06-02tt0094226",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0097027",
+      "title": "Casualties of War",
+      "year": "1989",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Casualties of War (1989)",
+      "gradeValue": null,
+      "releaseSequence": "1989-08-18tt0097027",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0099165",
+      "title": "The Bonfire of the Vanities",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bonfire of the Vanities (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-12-21tt0099165",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0105217",
+      "title": "Raising Cain",
+      "year": "1992",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Raising Cain (1992)",
+      "gradeValue": null,
+      "releaseSequence": "1992-08-07tt0105217",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0106519",
+      "title": "Carlito's Way",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Carlito's Way (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-11-07tt0106519",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0117060",
+      "title": "Mission: Impossible",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mission: Impossible (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-05-20tt0117060",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0120832",
+      "title": "Snake Eyes",
+      "year": "1998",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Snake Eyes (1998)",
+      "gradeValue": null,
+      "releaseSequence": "1998-07-30tt0120832",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0183523",
+      "title": "Mission to Mars",
+      "year": "2000",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mission to Mars (2000)",
+      "gradeValue": null,
+      "releaseSequence": "2000-03-06tt0183523",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0280665",
+      "title": "Femme Fatale",
+      "year": "2002",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Femme Fatale (2002)",
+      "gradeValue": null,
+      "releaseSequence": "2002-04-30tt0280665",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0387877",
+      "title": "The Black Dahlia",
+      "year": "2006",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Dahlia (2006)",
+      "gradeValue": null,
+      "releaseSequence": "2006-08-09tt0387877",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0937237",
+      "title": "Redacted",
+      "year": "2007",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Redacted (2007)",
+      "gradeValue": null,
+      "releaseSequence": "2007-08-31tt0937237",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt1829012",
+      "title": "Passion",
+      "year": "2012",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Passion (2012)",
+      "gradeValue": null,
+      "releaseSequence": "2012-09-07tt1829012",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt3282076",
+      "title": "Domino",
+      "year": "2019",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Domino (2019)",
+      "gradeValue": null,
+      "releaseSequence": "2019-05-30tt3282076",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 16,
+  "totalCount": 30,
+  "creditedAs": [
+    "director",
+    "writer"
+  ]
 }

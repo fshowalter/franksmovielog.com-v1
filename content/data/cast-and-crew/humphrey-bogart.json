@@ -1,909 +1,1121 @@
 {
   "name": "Humphrey Bogart",
   "slug": "humphrey-bogart",
-  "director": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "writer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0021508",
-        "title": "Up the River",
-        "year": "1930",
-        "slug": "up-the-river-1930",
-        "grade": "B-",
-        "sortTitle": "Up the River (1930)",
-        "gradeValue": 8,
-        "releaseSequence": "1930-10-10tt0021508",
-        "reviewDate": "2020-11-06",
-        "viewingSequence": "2020-11-06-912"
-      },
-      {
-        "imdbId": "tt0020822",
-        "title": "A Devil with Women",
-        "year": "1930",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil with Women (1930)",
-        "gradeValue": null,
-        "releaseSequence": "1930-10-18tt0020822",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0021680",
-        "title": "Body and Soul",
-        "year": "1931",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Body and Soul (1931)",
-        "gradeValue": null,
-        "releaseSequence": "1931-02-22tt0021680",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0021636",
-        "title": "Bad Sister",
-        "year": "1931",
-        "slug": "the-bad-sister-1931",
-        "grade": "D+",
-        "sortTitle": "Bad Sister (1931)",
-        "gradeValue": 4,
-        "releaseSequence": "1931-03-29tt0021636",
-        "reviewDate": "2020-11-25",
-        "viewingSequence": "2020-11-25-924"
-      },
-      {
-        "imdbId": "tt0022576",
-        "title": "Women of All Nations",
-        "year": "1931",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Women of All Nations (1931)",
-        "gradeValue": null,
-        "releaseSequence": "1931-05-31tt0022576",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0021966",
-        "title": "A Holy Terror",
-        "year": "1931",
-        "slug": "a-holy-terror-1931",
-        "grade": "F",
-        "sortTitle": "Holy Terror (1931)",
-        "gradeValue": 1,
-        "releaseSequence": "1931-07-19tt0021966",
-        "reviewDate": "2020-11-27",
-        "viewingSequence": "2020-11-27-928"
-      },
-      {
-        "imdbId": "tt0023153",
-        "title": "Love Affair",
-        "year": "1932",
-        "slug": "love-affair-1932",
-        "grade": "C-",
-        "sortTitle": "Love Affair (1932)",
-        "gradeValue": 5,
-        "releaseSequence": "1932-03-17tt0023153",
-        "reviewDate": "2021-12-10",
-        "viewingSequence": "2021-12-10-1204"
-      },
-      {
-        "imdbId": "tt0023590",
-        "title": "Three on a Match",
-        "year": "1932",
-        "slug": "three-on-a-match-1932",
-        "grade": "C+",
-        "sortTitle": "Three on a Match (1932)",
-        "gradeValue": 7,
-        "releaseSequence": "1932-10-28tt0023590",
-        "reviewDate": "2022-09-30",
-        "viewingSequence": "2022-09-30-484"
-      },
-      {
-        "imdbId": "tt0025499",
-        "title": "Midnight",
-        "year": "1934",
-        "slug": "midnight-1934",
-        "grade": "F",
-        "sortTitle": "Midnight (1934)",
-        "gradeValue": 1,
-        "releaseSequence": "1934-03-07tt0025499",
-        "reviewDate": "2023-04-08",
-        "viewingSequence": "2023-04-08-1468"
-      },
-      {
-        "imdbId": "tt0028426",
-        "title": "Two Against the World",
-        "year": "1936",
-        "slug": "two-against-the-world-1936",
-        "grade": "D-",
-        "sortTitle": "Two Against the World (1936)",
-        "gradeValue": 2,
-        "releaseSequence": "1936-01-01tt0028426",
-        "reviewDate": "2022-10-04",
-        "viewingSequence": "2022-10-04-1371"
-      },
-      {
-        "imdbId": "tt0028096",
-        "title": "The Petrified Forest",
-        "year": "1936",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Petrified Forest (1936)",
-        "gradeValue": null,
-        "releaseSequence": "1936-01-30tt0028096",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0027407",
-        "title": "Bullets or Ballots",
-        "year": "1936",
-        "slug": "bullets-or-ballots-1936",
-        "grade": "C-",
-        "sortTitle": "Bullets or Ballots (1936)",
-        "gradeValue": 5,
-        "releaseSequence": "1936-05-26tt0027407",
-        "reviewDate": "2023-04-06",
-        "viewingSequence": "2023-04-06-1466"
-      },
-      {
-        "imdbId": "tt0027445",
-        "title": "China Clipper",
-        "year": "1936",
-        "slug": "china-clipper-1936",
-        "grade": "D",
-        "sortTitle": "China Clipper (1936)",
-        "gradeValue": 3,
-        "releaseSequence": "1936-08-11tt0027445",
-        "reviewDate": "2022-10-01",
-        "viewingSequence": "2022-10-01-673"
-      },
-      {
-        "imdbId": "tt0027805",
-        "title": "Isle of Fury",
-        "year": "1936",
-        "slug": "isle-of-fury-1936",
-        "grade": "D+",
-        "sortTitle": "Isle of Fury (1936)",
-        "gradeValue": 4,
-        "releaseSequence": "1936-10-10tt0027805",
-        "reviewDate": "2021-01-31",
-        "viewingSequence": "2021-01-31-1003"
-      },
-      {
-        "imdbId": "tt0027367",
-        "title": "Black Legion",
-        "year": "1937",
-        "slug": "black-legion-1937",
-        "grade": "C+",
-        "sortTitle": "Black Legion (1937)",
-        "gradeValue": 7,
-        "releaseSequence": "1937-01-16tt0027367",
-        "reviewDate": "2023-02-13",
-        "viewingSequence": "2023-02-13-188"
-      },
-      {
-        "imdbId": "tt0028955",
-        "title": "The Great O'Malley",
-        "year": "1937",
-        "slug": "the-great-omalley-1937",
-        "grade": "D-",
-        "sortTitle": "Great O'Malley (1937)",
-        "gradeValue": 2,
-        "releaseSequence": "1937-02-05tt0028955",
-        "reviewDate": "2023-04-06",
-        "viewingSequence": "2023-04-06-1465"
-      },
-      {
-        "imdbId": "tt0029217",
-        "title": "Marked Woman",
-        "year": "1937",
-        "slug": "marked-woman-1937",
-        "grade": "C-",
-        "sortTitle": "Marked Woman (1937)",
-        "gradeValue": 5,
-        "releaseSequence": "1937-04-03tt0029217",
-        "reviewDate": "2023-06-04",
-        "viewingSequence": "2023-06-04-1492"
-      },
-      {
-        "imdbId": "tt0029511",
-        "title": "San Quentin",
-        "year": "1937",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "San Quentin (1937)",
-        "gradeValue": null,
-        "releaseSequence": "1937-05-24tt0029511",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0029080",
-        "title": "Kid Galahad",
-        "year": "1937",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Kid Galahad (1937)",
-        "gradeValue": null,
-        "releaseSequence": "1937-05-26tt0029080",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0028773",
-        "title": "Dead End",
-        "year": "1937",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dead End (1937)",
-        "gradeValue": null,
-        "releaseSequence": "1937-08-24tt0028773",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0029605",
-        "title": "Stand-In",
-        "year": "1937",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Stand-In (1937)",
-        "gradeValue": null,
-        "releaseSequence": "1937-10-29tt0029605",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0030820",
-        "title": "Swing Your Lady",
-        "year": "1938",
-        "slug": "swing-your-lady-1938",
-        "grade": "F",
-        "sortTitle": "Swing Your Lady (1938)",
-        "gradeValue": 1,
-        "releaseSequence": "1938-01-08tt0030820",
-        "reviewDate": "2022-10-03",
-        "viewingSequence": "2022-10-03-1370"
-      },
-      {
-        "imdbId": "tt0030026",
-        "title": "Crime School",
-        "year": "1938",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Crime School (1938)",
-        "gradeValue": null,
-        "releaseSequence": "1938-05-10tt0030026",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0030433",
-        "title": "Men Are Such Fools",
-        "year": "1938",
-        "slug": "men-are-such-fools-1938",
-        "grade": "F",
-        "sortTitle": "Men Are Such Fools (1938)",
-        "gradeValue": 1,
-        "releaseSequence": "1938-06-15tt0030433",
-        "reviewDate": "2022-09-24",
-        "viewingSequence": "2022-09-24-189"
-      },
-      {
-        "imdbId": "tt0030650",
-        "title": "Racket Busters",
-        "year": "1938",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Racket Busters (1938)",
-        "gradeValue": null,
-        "releaseSequence": "1938-07-16tt0030650",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0029864",
-        "title": "The Amazing Dr. Clitterhouse",
-        "year": "1938",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Amazing Dr. Clitterhouse (1938)",
-        "gradeValue": null,
-        "releaseSequence": "1938-07-20tt0029864",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0029870",
-        "title": "Angels with Dirty Faces",
-        "year": "1938",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Angels with Dirty Faces (1938)",
-        "gradeValue": null,
-        "releaseSequence": "1938-11-26tt0029870",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031536",
-        "title": "King of the Underworld",
-        "year": "1939",
-        "slug": "king-of-the-underworld-1939",
-        "grade": "D+",
-        "sortTitle": "King of the Underworld (1939)",
-        "gradeValue": 4,
-        "releaseSequence": "1939-01-07tt0031536",
-        "reviewDate": "2022-09-09",
-        "viewingSequence": "2022-09-09-1344"
-      },
-      {
-        "imdbId": "tt0031747",
-        "title": "The Oklahoma Kid",
-        "year": "1939",
-        "slug": "the-oklahoma-kid-1939",
-        "grade": "C-",
-        "sortTitle": "Oklahoma Kid (1939)",
-        "gradeValue": 5,
-        "releaseSequence": "1939-03-03tt0031747",
-        "reviewDate": "2022-10-06",
-        "viewingSequence": "2022-10-06-1375"
-      },
-      {
-        "imdbId": "tt0032153",
-        "title": "You Can't Get Away with Murder",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "You Can't Get Away with Murder (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-03-23tt0032153",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031210",
-        "title": "Dark Victory",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dark Victory (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-04-19tt0031210",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031867",
-        "title": "The Roaring Twenties",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Roaring Twenties (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-10-25tt0031867",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0031851",
-        "title": "The Return of Doctor X",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Return of Doctor X (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-11-23tt0031851",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0032636",
-        "title": "Invisible Stripes",
-        "year": "1939",
-        "slug": "invisible-stripes-1939",
-        "grade": "D+",
-        "sortTitle": "Invisible Stripes (1939)",
-        "gradeValue": 4,
-        "releaseSequence": "1939-12-30tt0032636",
-        "reviewDate": "2022-09-07",
-        "viewingSequence": "2022-09-07-168"
-      },
-      {
-        "imdbId": "tt0033226",
-        "title": "Virginia City",
-        "year": "1940",
-        "slug": "virginia-city-1940",
-        "grade": "C-",
-        "sortTitle": "Virginia City (1940)",
-        "gradeValue": 5,
-        "releaseSequence": "1940-03-16tt0033226",
-        "reviewDate": "2022-08-20",
-        "viewingSequence": "2022-08-20-118"
-      },
-      {
-        "imdbId": "tt0032643",
-        "title": "It All Came True",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "It All Came True (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-04-05tt0032643",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0032285",
-        "title": "Brother Orchid",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Brother Orchid (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-05-29tt0032285",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0033149",
-        "title": "They Drive by Night",
-        "year": "1940",
-        "slug": "they-drive-by-night-1940",
-        "grade": "C+",
-        "sortTitle": "They Drive by Night (1940)",
-        "gradeValue": 7,
-        "releaseSequence": "1940-07-26tt0033149",
-        "reviewDate": "2022-10-04",
-        "viewingSequence": "2022-10-04-154"
-      },
-      {
-        "imdbId": "tt0033717",
-        "title": "High Sierra",
-        "year": "1940",
-        "slug": "high-sierra-1941",
-        "grade": "B-",
-        "sortTitle": "High Sierra (1940)",
-        "gradeValue": 8,
-        "releaseSequence": "1940-12-31tt0033717",
-        "reviewDate": "2022-09-13",
-        "viewingSequence": "2022-09-13-1349"
-      },
-      {
-        "imdbId": "tt0034370",
-        "title": "The Wagons Roll at Night",
-        "year": "1941",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Wagons Roll at Night (1941)",
-        "gradeValue": null,
-        "releaseSequence": "1941-04-25tt0034370",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0033870",
-        "title": "The Maltese Falcon",
-        "year": "1941",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Maltese Falcon (1941)",
-        "gradeValue": null,
-        "releaseSequence": "1941-10-03tt0033870",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034449",
-        "title": "All Through the Night",
-        "year": "1942",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "All Through the Night (1942)",
-        "gradeValue": null,
-        "releaseSequence": "1942-01-10tt0034449",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034513",
-        "title": "The Big Shot",
-        "year": "1942",
-        "slug": "the-big-shot-1942",
-        "grade": "C",
-        "sortTitle": "Big Shot (1942)",
-        "gradeValue": 6,
-        "releaseSequence": "1942-06-13tt0034513",
-        "reviewDate": "2022-09-11",
-        "viewingSequence": "2022-09-11-1347"
-      },
-      {
-        "imdbId": "tt0034428",
-        "title": "Across the Pacific",
-        "year": "1942",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Across the Pacific (1942)",
-        "gradeValue": null,
-        "releaseSequence": "1942-09-04tt0034428",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0034583",
-        "title": "Casablanca",
-        "year": "1942",
-        "slug": "casablanca-1942",
-        "grade": "A+",
-        "sortTitle": "Casablanca (1942)",
-        "gradeValue": 13,
-        "releaseSequence": "1942-11-26tt0034583",
-        "reviewDate": "2016-02-28",
-        "viewingSequence": "2016-02-28-540"
-      },
-      {
-        "imdbId": "tt0035608",
-        "title": "Action in the North Atlantic",
-        "year": "1943",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Action in the North Atlantic (1943)",
-        "gradeValue": null,
-        "releaseSequence": "1943-05-21tt0035608",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0036422",
-        "title": "Thank Your Lucky Stars",
-        "year": "1943",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Thank Your Lucky Stars (1943)",
-        "gradeValue": null,
-        "releaseSequence": "1943-09-15tt0036422",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0036323",
-        "title": "Sahara",
-        "year": "1943",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sahara (1943)",
-        "gradeValue": null,
-        "releaseSequence": "1943-??-??tt0036323",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037166",
-        "title": "Passage to Marseille",
-        "year": "1944",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Passage to Marseille (1944)",
-        "gradeValue": null,
-        "releaseSequence": "1944-02-16tt0037166",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037382",
-        "title": "To Have and Have Not",
-        "year": "1944",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "To Have and Have Not (1944)",
-        "gradeValue": null,
-        "releaseSequence": "1944-10-11tt0037382",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0037611",
-        "title": "Conflict",
-        "year": "1945",
-        "slug": "conflict-1945",
-        "grade": "C",
-        "sortTitle": "Conflict (1945)",
-        "gradeValue": 6,
-        "releaseSequence": "1945-05-13tt0037611",
-        "reviewDate": "2022-10-05",
-        "viewingSequence": "2022-10-05-55"
-      },
-      {
-        "imdbId": "tt0038355",
-        "title": "The Big Sleep",
-        "year": "1946",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Big Sleep (1946)",
-        "gradeValue": null,
-        "releaseSequence": "1946-08-22tt0038355",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0039305",
-        "title": "Dead Reckoning",
-        "year": "1946",
-        "slug": "dead-reckoning-1947",
-        "grade": "C+",
-        "sortTitle": "Dead Reckoning (1946)",
-        "gradeValue": 7,
-        "releaseSequence": "1946-12-31tt0039305",
-        "reviewDate": "2022-09-14",
-        "viewingSequence": "2022-09-14-238"
-      },
-      {
-        "imdbId": "tt0039926",
-        "title": "The Two Mrs. Carrolls",
-        "year": "1947",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Two Mrs. Carrolls (1947)",
-        "gradeValue": null,
-        "releaseSequence": "1947-03-04tt0039926",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0039302",
-        "title": "Dark Passage",
-        "year": "1947",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dark Passage (1947)",
-        "gradeValue": null,
-        "releaseSequence": "1947-09-05tt0039302",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0040897",
-        "title": "The Treasure of the Sierra Madre",
-        "year": "1948",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Treasure of the Sierra Madre (1948)",
-        "gradeValue": null,
-        "releaseSequence": "1948-01-07tt0040897",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0040506",
-        "title": "Key Largo",
-        "year": "1948",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Key Largo (1948)",
-        "gradeValue": null,
-        "releaseSequence": "1948-07-16tt0040506",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0041555",
-        "title": "Knock on Any Door",
-        "year": "1949",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Knock on Any Door (1949)",
-        "gradeValue": null,
-        "releaseSequence": "1949-02-22tt0041555",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0041967",
-        "title": "Tokyo Joe",
-        "year": "1949",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Tokyo Joe (1949)",
-        "gradeValue": null,
-        "releaseSequence": "1949-10-26tt0041967",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0042324",
-        "title": "Chain Lightning",
-        "year": "1950",
-        "slug": "chain-lightning-1950",
-        "grade": "D+",
-        "sortTitle": "Chain Lightning (1950)",
-        "gradeValue": 4,
-        "releaseSequence": "1950-02-18tt0042324",
-        "reviewDate": "2022-09-24",
-        "viewingSequence": "2022-09-24-539"
-      },
-      {
-        "imdbId": "tt0042593",
-        "title": "In a Lonely Place",
-        "year": "1950",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "In a Lonely Place (1950)",
-        "gradeValue": null,
-        "releaseSequence": "1950-05-17tt0042593",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0043503",
-        "title": "The Enforcer",
-        "year": "1951",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Enforcer (1951)",
-        "gradeValue": null,
-        "releaseSequence": "1951-01-25tt0043503",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0044040",
-        "title": "Sirocco",
-        "year": "1951",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sirocco (1951)",
-        "gradeValue": null,
-        "releaseSequence": "1951-06-01tt0044040",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0043265",
-        "title": "The African Queen",
-        "year": "1951",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "African Queen (1951)",
-        "gradeValue": null,
-        "releaseSequence": "1951-12-26tt0043265",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0044533",
-        "title": "Deadline - U.S.A.",
-        "year": "1952",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Deadline - U.S.A. (1952)",
-        "gradeValue": null,
-        "releaseSequence": "1952-03-14tt0044533",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0045544",
-        "title": "Battle Circus",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Battle Circus (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-03-06tt0045544",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0046414",
-        "title": "Beat the Devil",
-        "year": "1953",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Beat the Devil (1953)",
-        "gradeValue": null,
-        "releaseSequence": "1953-11-24tt0046414",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0046816",
-        "title": "The Caine Mutiny",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Caine Mutiny (1954)",
-        "gradeValue": null,
-        "releaseSequence": "1954-06-24tt0046816",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0047437",
-        "title": "Sabrina",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sabrina (1954)",
-        "gradeValue": null,
-        "releaseSequence": "1954-09-01tt0047437",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0046754",
-        "title": "The Barefoot Contessa",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Barefoot Contessa (1954)",
-        "gradeValue": null,
-        "releaseSequence": "1954-09-29tt0046754",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048801",
-        "title": "We're No Angels",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "We're No Angels (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-07-07tt0048801",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048291",
-        "title": "The Left Hand of God",
-        "year": "1955",
-        "slug": "the-left-hand-of-god-1955",
-        "grade": "C-",
-        "sortTitle": "Left Hand of God (1955)",
-        "gradeValue": 5,
-        "releaseSequence": "1955-09-02tt0048291",
-        "reviewDate": "2013-01-20",
-        "viewingSequence": "2013-01-20-267"
-      },
-      {
-        "imdbId": "tt0047985",
-        "title": "The Desperate Hours",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Desperate Hours (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-10-05tt0047985",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049291",
-        "title": "The Harder They Fall",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Harder They Fall (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-03-30tt0049291",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 27,
-    "watchlistCount": 47
-  },
-  "mostCreditedAs": "performer"
+  "titles": [
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021508",
+      "title": "Up the River",
+      "year": "1930",
+      "slug": "up-the-river-1930",
+      "grade": "B-",
+      "sortTitle": "Up the River (1930)",
+      "gradeValue": 8,
+      "releaseSequence": "1930-10-10tt0021508",
+      "reviewDate": "2020-11-06",
+      "viewingSequence": "2020-11-06-912"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0020822",
+      "title": "A Devil with Women",
+      "year": "1930",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Devil with Women (1930)",
+      "gradeValue": null,
+      "releaseSequence": "1930-10-18tt0020822",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021680",
+      "title": "Body and Soul",
+      "year": "1931",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Body and Soul (1931)",
+      "gradeValue": null,
+      "releaseSequence": "1931-02-22tt0021680",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021636",
+      "title": "Bad Sister",
+      "year": "1931",
+      "slug": "the-bad-sister-1931",
+      "grade": "D+",
+      "sortTitle": "Bad Sister (1931)",
+      "gradeValue": 4,
+      "releaseSequence": "1931-03-29tt0021636",
+      "reviewDate": "2020-11-25",
+      "viewingSequence": "2020-11-25-924"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0022576",
+      "title": "Women of All Nations",
+      "year": "1931",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Women of All Nations (1931)",
+      "gradeValue": null,
+      "releaseSequence": "1931-05-31tt0022576",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0021966",
+      "title": "A Holy Terror",
+      "year": "1931",
+      "slug": "a-holy-terror-1931",
+      "grade": "F",
+      "sortTitle": "Holy Terror (1931)",
+      "gradeValue": 1,
+      "releaseSequence": "1931-07-19tt0021966",
+      "reviewDate": "2020-11-27",
+      "viewingSequence": "2020-11-27-928"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0023153",
+      "title": "Love Affair",
+      "year": "1932",
+      "slug": "love-affair-1932",
+      "grade": "C-",
+      "sortTitle": "Love Affair (1932)",
+      "gradeValue": 5,
+      "releaseSequence": "1932-03-17tt0023153",
+      "reviewDate": "2021-12-10",
+      "viewingSequence": "2021-12-10-1204"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0023590",
+      "title": "Three on a Match",
+      "year": "1932",
+      "slug": "three-on-a-match-1932",
+      "grade": "C+",
+      "sortTitle": "Three on a Match (1932)",
+      "gradeValue": 7,
+      "releaseSequence": "1932-10-28tt0023590",
+      "reviewDate": "2022-09-30",
+      "viewingSequence": "2022-09-30-484"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0025499",
+      "title": "Midnight",
+      "year": "1934",
+      "slug": "midnight-1934",
+      "grade": "F",
+      "sortTitle": "Midnight (1934)",
+      "gradeValue": 1,
+      "releaseSequence": "1934-03-07tt0025499",
+      "reviewDate": "2023-04-08",
+      "viewingSequence": "2023-04-08-1468"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0028426",
+      "title": "Two Against the World",
+      "year": "1936",
+      "slug": "two-against-the-world-1936",
+      "grade": "D-",
+      "sortTitle": "Two Against the World (1936)",
+      "gradeValue": 2,
+      "releaseSequence": "1936-01-01tt0028426",
+      "reviewDate": "2022-10-04",
+      "viewingSequence": "2022-10-04-1371"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0028096",
+      "title": "The Petrified Forest",
+      "year": "1936",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Petrified Forest (1936)",
+      "gradeValue": null,
+      "releaseSequence": "1936-01-30tt0028096",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0027407",
+      "title": "Bullets or Ballots",
+      "year": "1936",
+      "slug": "bullets-or-ballots-1936",
+      "grade": "C-",
+      "sortTitle": "Bullets or Ballots (1936)",
+      "gradeValue": 5,
+      "releaseSequence": "1936-05-26tt0027407",
+      "reviewDate": "2023-04-06",
+      "viewingSequence": "2023-04-06-1466"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0027445",
+      "title": "China Clipper",
+      "year": "1936",
+      "slug": "china-clipper-1936",
+      "grade": "D",
+      "sortTitle": "China Clipper (1936)",
+      "gradeValue": 3,
+      "releaseSequence": "1936-08-11tt0027445",
+      "reviewDate": "2022-10-01",
+      "viewingSequence": "2022-10-01-673"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0027805",
+      "title": "Isle of Fury",
+      "year": "1936",
+      "slug": "isle-of-fury-1936",
+      "grade": "D+",
+      "sortTitle": "Isle of Fury (1936)",
+      "gradeValue": 4,
+      "releaseSequence": "1936-10-10tt0027805",
+      "reviewDate": "2021-01-31",
+      "viewingSequence": "2021-01-31-1003"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0027367",
+      "title": "Black Legion",
+      "year": "1937",
+      "slug": "black-legion-1937",
+      "grade": "C+",
+      "sortTitle": "Black Legion (1937)",
+      "gradeValue": 7,
+      "releaseSequence": "1937-01-16tt0027367",
+      "reviewDate": "2023-02-13",
+      "viewingSequence": "2023-02-13-188"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0028955",
+      "title": "The Great O'Malley",
+      "year": "1937",
+      "slug": "the-great-omalley-1937",
+      "grade": "D-",
+      "sortTitle": "Great O'Malley (1937)",
+      "gradeValue": 2,
+      "releaseSequence": "1937-02-05tt0028955",
+      "reviewDate": "2023-04-06",
+      "viewingSequence": "2023-04-06-1465"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0029217",
+      "title": "Marked Woman",
+      "year": "1937",
+      "slug": "marked-woman-1937",
+      "grade": "C-",
+      "sortTitle": "Marked Woman (1937)",
+      "gradeValue": 5,
+      "releaseSequence": "1937-04-03tt0029217",
+      "reviewDate": "2023-06-04",
+      "viewingSequence": "2023-06-04-1492"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0029511",
+      "title": "San Quentin",
+      "year": "1937",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "San Quentin (1937)",
+      "gradeValue": null,
+      "releaseSequence": "1937-05-24tt0029511",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0029080",
+      "title": "Kid Galahad",
+      "year": "1937",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Kid Galahad (1937)",
+      "gradeValue": null,
+      "releaseSequence": "1937-05-26tt0029080",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0028773",
+      "title": "Dead End",
+      "year": "1937",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dead End (1937)",
+      "gradeValue": null,
+      "releaseSequence": "1937-08-24tt0028773",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0029605",
+      "title": "Stand-In",
+      "year": "1937",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Stand-In (1937)",
+      "gradeValue": null,
+      "releaseSequence": "1937-10-29tt0029605",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0030820",
+      "title": "Swing Your Lady",
+      "year": "1938",
+      "slug": "swing-your-lady-1938",
+      "grade": "F",
+      "sortTitle": "Swing Your Lady (1938)",
+      "gradeValue": 1,
+      "releaseSequence": "1938-01-08tt0030820",
+      "reviewDate": "2022-10-03",
+      "viewingSequence": "2022-10-03-1370"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0030026",
+      "title": "Crime School",
+      "year": "1938",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Crime School (1938)",
+      "gradeValue": null,
+      "releaseSequence": "1938-05-10tt0030026",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0030433",
+      "title": "Men Are Such Fools",
+      "year": "1938",
+      "slug": "men-are-such-fools-1938",
+      "grade": "F",
+      "sortTitle": "Men Are Such Fools (1938)",
+      "gradeValue": 1,
+      "releaseSequence": "1938-06-15tt0030433",
+      "reviewDate": "2022-09-24",
+      "viewingSequence": "2022-09-24-189"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0030650",
+      "title": "Racket Busters",
+      "year": "1938",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Racket Busters (1938)",
+      "gradeValue": null,
+      "releaseSequence": "1938-07-16tt0030650",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0029864",
+      "title": "The Amazing Dr. Clitterhouse",
+      "year": "1938",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Amazing Dr. Clitterhouse (1938)",
+      "gradeValue": null,
+      "releaseSequence": "1938-07-20tt0029864",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0029870",
+      "title": "Angels with Dirty Faces",
+      "year": "1938",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Angels with Dirty Faces (1938)",
+      "gradeValue": null,
+      "releaseSequence": "1938-11-26tt0029870",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031536",
+      "title": "King of the Underworld",
+      "year": "1939",
+      "slug": "king-of-the-underworld-1939",
+      "grade": "D+",
+      "sortTitle": "King of the Underworld (1939)",
+      "gradeValue": 4,
+      "releaseSequence": "1939-01-07tt0031536",
+      "reviewDate": "2022-09-09",
+      "viewingSequence": "2022-09-09-1344"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031747",
+      "title": "The Oklahoma Kid",
+      "year": "1939",
+      "slug": "the-oklahoma-kid-1939",
+      "grade": "C-",
+      "sortTitle": "Oklahoma Kid (1939)",
+      "gradeValue": 5,
+      "releaseSequence": "1939-03-03tt0031747",
+      "reviewDate": "2022-10-06",
+      "viewingSequence": "2022-10-06-1375"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032153",
+      "title": "You Can't Get Away with Murder",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "You Can't Get Away with Murder (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-03-23tt0032153",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031210",
+      "title": "Dark Victory",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dark Victory (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-04-19tt0031210",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031867",
+      "title": "The Roaring Twenties",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Roaring Twenties (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-10-25tt0031867",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031851",
+      "title": "The Return of Doctor X",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Return of Doctor X (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-11-23tt0031851",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032636",
+      "title": "Invisible Stripes",
+      "year": "1939",
+      "slug": "invisible-stripes-1939",
+      "grade": "D+",
+      "sortTitle": "Invisible Stripes (1939)",
+      "gradeValue": 4,
+      "releaseSequence": "1939-12-30tt0032636",
+      "reviewDate": "2022-09-07",
+      "viewingSequence": "2022-09-07-168"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033226",
+      "title": "Virginia City",
+      "year": "1940",
+      "slug": "virginia-city-1940",
+      "grade": "C-",
+      "sortTitle": "Virginia City (1940)",
+      "gradeValue": 5,
+      "releaseSequence": "1940-03-16tt0033226",
+      "reviewDate": "2022-08-20",
+      "viewingSequence": "2022-08-20-118"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032643",
+      "title": "It All Came True",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "It All Came True (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-04-05tt0032643",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032285",
+      "title": "Brother Orchid",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Brother Orchid (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-05-29tt0032285",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033149",
+      "title": "They Drive by Night",
+      "year": "1940",
+      "slug": "they-drive-by-night-1940",
+      "grade": "C+",
+      "sortTitle": "They Drive by Night (1940)",
+      "gradeValue": 7,
+      "releaseSequence": "1940-07-26tt0033149",
+      "reviewDate": "2022-10-04",
+      "viewingSequence": "2022-10-04-154"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033717",
+      "title": "High Sierra",
+      "year": "1940",
+      "slug": "high-sierra-1941",
+      "grade": "B-",
+      "sortTitle": "High Sierra (1940)",
+      "gradeValue": 8,
+      "releaseSequence": "1940-12-31tt0033717",
+      "reviewDate": "2022-09-13",
+      "viewingSequence": "2022-09-13-1349"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034370",
+      "title": "The Wagons Roll at Night",
+      "year": "1941",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Wagons Roll at Night (1941)",
+      "gradeValue": null,
+      "releaseSequence": "1941-04-25tt0034370",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033870",
+      "title": "The Maltese Falcon",
+      "year": "1941",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Maltese Falcon (1941)",
+      "gradeValue": null,
+      "releaseSequence": "1941-10-03tt0033870",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034449",
+      "title": "All Through the Night",
+      "year": "1942",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "All Through the Night (1942)",
+      "gradeValue": null,
+      "releaseSequence": "1942-01-10tt0034449",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034513",
+      "title": "The Big Shot",
+      "year": "1942",
+      "slug": "the-big-shot-1942",
+      "grade": "C",
+      "sortTitle": "Big Shot (1942)",
+      "gradeValue": 6,
+      "releaseSequence": "1942-06-13tt0034513",
+      "reviewDate": "2022-09-11",
+      "viewingSequence": "2022-09-11-1347"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034428",
+      "title": "Across the Pacific",
+      "year": "1942",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Across the Pacific (1942)",
+      "gradeValue": null,
+      "releaseSequence": "1942-09-04tt0034428",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0034583",
+      "title": "Casablanca",
+      "year": "1942",
+      "slug": "casablanca-1942",
+      "grade": "A+",
+      "sortTitle": "Casablanca (1942)",
+      "gradeValue": 13,
+      "releaseSequence": "1942-11-26tt0034583",
+      "reviewDate": "2016-02-28",
+      "viewingSequence": "2016-02-28-540"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0035608",
+      "title": "Action in the North Atlantic",
+      "year": "1943",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Action in the North Atlantic (1943)",
+      "gradeValue": null,
+      "releaseSequence": "1943-05-21tt0035608",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0036422",
+      "title": "Thank Your Lucky Stars",
+      "year": "1943",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Thank Your Lucky Stars (1943)",
+      "gradeValue": null,
+      "releaseSequence": "1943-09-15tt0036422",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0036323",
+      "title": "Sahara",
+      "year": "1943",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sahara (1943)",
+      "gradeValue": null,
+      "releaseSequence": "1943-??-??tt0036323",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037166",
+      "title": "Passage to Marseille",
+      "year": "1944",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Passage to Marseille (1944)",
+      "gradeValue": null,
+      "releaseSequence": "1944-02-16tt0037166",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037382",
+      "title": "To Have and Have Not",
+      "year": "1944",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "To Have and Have Not (1944)",
+      "gradeValue": null,
+      "releaseSequence": "1944-10-11tt0037382",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0037611",
+      "title": "Conflict",
+      "year": "1945",
+      "slug": "conflict-1945",
+      "grade": "C",
+      "sortTitle": "Conflict (1945)",
+      "gradeValue": 6,
+      "releaseSequence": "1945-05-13tt0037611",
+      "reviewDate": "2022-10-05",
+      "viewingSequence": "2022-10-05-55"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0038355",
+      "title": "The Big Sleep",
+      "year": "1946",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Big Sleep (1946)",
+      "gradeValue": null,
+      "releaseSequence": "1946-08-22tt0038355",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0039305",
+      "title": "Dead Reckoning",
+      "year": "1946",
+      "slug": "dead-reckoning-1947",
+      "grade": "C+",
+      "sortTitle": "Dead Reckoning (1946)",
+      "gradeValue": 7,
+      "releaseSequence": "1946-12-31tt0039305",
+      "reviewDate": "2022-09-14",
+      "viewingSequence": "2022-09-14-238"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0039926",
+      "title": "The Two Mrs. Carrolls",
+      "year": "1947",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Two Mrs. Carrolls (1947)",
+      "gradeValue": null,
+      "releaseSequence": "1947-03-04tt0039926",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0039302",
+      "title": "Dark Passage",
+      "year": "1947",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dark Passage (1947)",
+      "gradeValue": null,
+      "releaseSequence": "1947-09-05tt0039302",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0040897",
+      "title": "The Treasure of the Sierra Madre",
+      "year": "1948",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Treasure of the Sierra Madre (1948)",
+      "gradeValue": null,
+      "releaseSequence": "1948-01-07tt0040897",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0040506",
+      "title": "Key Largo",
+      "year": "1948",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Key Largo (1948)",
+      "gradeValue": null,
+      "releaseSequence": "1948-07-16tt0040506",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0041555",
+      "title": "Knock on Any Door",
+      "year": "1949",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Knock on Any Door (1949)",
+      "gradeValue": null,
+      "releaseSequence": "1949-02-22tt0041555",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0041967",
+      "title": "Tokyo Joe",
+      "year": "1949",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Tokyo Joe (1949)",
+      "gradeValue": null,
+      "releaseSequence": "1949-10-26tt0041967",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0042324",
+      "title": "Chain Lightning",
+      "year": "1950",
+      "slug": "chain-lightning-1950",
+      "grade": "D+",
+      "sortTitle": "Chain Lightning (1950)",
+      "gradeValue": 4,
+      "releaseSequence": "1950-02-18tt0042324",
+      "reviewDate": "2022-09-24",
+      "viewingSequence": "2022-09-24-539"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0042593",
+      "title": "In a Lonely Place",
+      "year": "1950",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "In a Lonely Place (1950)",
+      "gradeValue": null,
+      "releaseSequence": "1950-05-17tt0042593",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0043503",
+      "title": "The Enforcer",
+      "year": "1951",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Enforcer (1951)",
+      "gradeValue": null,
+      "releaseSequence": "1951-01-25tt0043503",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044040",
+      "title": "Sirocco",
+      "year": "1951",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sirocco (1951)",
+      "gradeValue": null,
+      "releaseSequence": "1951-06-01tt0044040",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0043265",
+      "title": "The African Queen",
+      "year": "1951",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "African Queen (1951)",
+      "gradeValue": null,
+      "releaseSequence": "1951-12-26tt0043265",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044533",
+      "title": "Deadline - U.S.A.",
+      "year": "1952",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Deadline - U.S.A. (1952)",
+      "gradeValue": null,
+      "releaseSequence": "1952-03-14tt0044533",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0045544",
+      "title": "Battle Circus",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Battle Circus (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-03-06tt0045544",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0046414",
+      "title": "Beat the Devil",
+      "year": "1953",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Beat the Devil (1953)",
+      "gradeValue": null,
+      "releaseSequence": "1953-11-24tt0046414",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0046816",
+      "title": "The Caine Mutiny",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Caine Mutiny (1954)",
+      "gradeValue": null,
+      "releaseSequence": "1954-06-24tt0046816",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0047437",
+      "title": "Sabrina",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sabrina (1954)",
+      "gradeValue": null,
+      "releaseSequence": "1954-09-01tt0047437",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0046754",
+      "title": "The Barefoot Contessa",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Barefoot Contessa (1954)",
+      "gradeValue": null,
+      "releaseSequence": "1954-09-29tt0046754",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048801",
+      "title": "We're No Angels",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "We're No Angels (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-07-07tt0048801",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048291",
+      "title": "The Left Hand of God",
+      "year": "1955",
+      "slug": "the-left-hand-of-god-1955",
+      "grade": "C-",
+      "sortTitle": "Left Hand of God (1955)",
+      "gradeValue": 5,
+      "releaseSequence": "1955-09-02tt0048291",
+      "reviewDate": "2013-01-20",
+      "viewingSequence": "2013-01-20-267"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0047985",
+      "title": "The Desperate Hours",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Desperate Hours (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-10-05tt0047985",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0049291",
+      "title": "The Harder They Fall",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Harder They Fall (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-03-30tt0049291",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 27,
+  "totalCount": 74,
+  "creditedAs": [
+    "performer"
+  ]
 }

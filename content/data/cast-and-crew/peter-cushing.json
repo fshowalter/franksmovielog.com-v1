@@ -1,1149 +1,1421 @@
 {
   "name": "Peter Cushing",
   "slug": "peter-cushing",
-  "director": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "writer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0031619",
-        "title": "The Man in the Iron Mask",
-        "year": "1939",
-        "slug": "the-man-in-the-iron-mask-1939",
-        "grade": "C",
-        "sortTitle": "Man in the Iron Mask (1939)",
-        "gradeValue": 6,
-        "releaseSequence": "1939-06-26tt0031619",
-        "reviewDate": "2021-05-10",
-        "viewingSequence": "2021-05-10-1099"
-      },
-      {
-        "imdbId": "tt0032683",
-        "title": "Laddie",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Laddie (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-01-18tt0032683",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0032339",
-        "title": "A Chump at Oxford",
-        "year": "1940",
-        "slug": "a-chump-at-oxford-1939",
-        "grade": "D+",
-        "sortTitle": "Chump at Oxford (1940)",
-        "gradeValue": 4,
-        "releaseSequence": "1940-01-25tt0032339",
-        "reviewDate": "2020-10-06",
-        "viewingSequence": "2020-10-06-882"
-      },
-      {
-        "imdbId": "tt0033221",
-        "title": "Vigil in the Night",
-        "year": "1940",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Vigil in the Night (1940)",
-        "gradeValue": null,
-        "releaseSequence": "1940-02-08tt0033221",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0040416",
-        "title": "Hamlet",
-        "year": "1948",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hamlet (1948)",
-        "gradeValue": null,
-        "releaseSequence": "1948-05-06tt0040416",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0044926",
-        "title": "Moulin Rouge",
-        "year": "1952",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Moulin Rouge (1952)",
-        "gradeValue": null,
-        "releaseSequence": "1952-12-23tt0044926",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0046786",
-        "title": "The Black Knight",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Knight (1954)",
-        "gradeValue": null,
-        "releaseSequence": "1954-08-26tt0046786",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048034",
-        "title": "The End of the Affair",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "End of the Affair (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-02-24tt0048034",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0337099",
-        "title": "Richard of Bordeaux",
-        "year": "1955",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Richard of Bordeaux (1955)",
-        "gradeValue": null,
-        "releaseSequence": "1955-12-29tt0337099",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0048937",
-        "title": "Alexander the Great",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Alexander the Great (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-03-22tt0048937",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049461",
-        "title": "Magic Fire",
-        "year": "1956",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Magic Fire (1956)",
-        "gradeValue": null,
-        "releaseSequence": "1956-04-19tt0049461",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0049856",
-        "title": "Time Without Pity",
-        "year": "1957",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Time Without Pity (1957)",
-        "gradeValue": null,
-        "releaseSequence": "1957-03-21tt0049856",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0050280",
-        "title": "The Curse of Frankenstein",
-        "year": "1957",
-        "slug": "the-curse-of-frankenstein-1957",
-        "grade": "A",
-        "sortTitle": "Curse of Frankenstein (1957)",
-        "gradeValue": 12,
-        "releaseSequence": "1957-05-02tt0050280",
-        "reviewDate": "2020-09-19",
-        "viewingSequence": "2020-09-19-527"
-      },
-      {
-        "imdbId": "tt0050095",
-        "title": "The Abominable Snowman",
-        "year": "1957",
-        "slug": "the-abominable-snowman-1957",
-        "grade": "D+",
-        "sortTitle": "Abominable Snowman (1957)",
-        "gradeValue": 4,
-        "releaseSequence": "1957-08-10tt0050095",
-        "reviewDate": "2020-08-27",
-        "viewingSequence": "2020-08-27-861"
-      },
-      {
-        "imdbId": "tt0052367",
-        "title": "Violent Playground",
-        "year": "1958",
-        "slug": "violent-playground-1958",
-        "grade": "B-",
-        "sortTitle": "Violent Playground (1958)",
-        "gradeValue": 8,
-        "releaseSequence": "1958-01-14tt0052367",
-        "reviewDate": "2021-06-28",
-        "viewingSequence": "2021-06-28-1119"
-      },
-      {
-        "imdbId": "tt0337483",
-        "title": "The Winslow Boy",
-        "year": "1958",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Winslow Boy (1958)",
-        "gradeValue": null,
-        "releaseSequence": "1958-03-13tt0337483",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0051554",
-        "title": "Horror of Dracula",
-        "year": "1958",
-        "slug": "horror-of-dracula-1958",
-        "grade": "A-",
-        "sortTitle": "Horror of Dracula (1958)",
-        "gradeValue": 11,
-        "releaseSequence": "1958-05-08tt0051554",
-        "reviewDate": "2020-12-08",
-        "viewingSequence": "2020-12-08-418"
-      },
-      {
-        "imdbId": "tt0050894",
-        "title": "The Revenge of Frankenstein",
-        "year": "1958",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Revenge of Frankenstein (1958)",
-        "gradeValue": null,
-        "releaseSequence": "1958-06-13tt0050894",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0052905",
-        "title": "The Hound of the Baskervilles",
-        "year": "1959",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hound of the Baskervilles (1959)",
-        "gradeValue": null,
-        "releaseSequence": "1959-03-28tt0052905",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0052946",
-        "title": "John Paul Jones",
-        "year": "1959",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "John Paul Jones (1959)",
-        "gradeValue": null,
-        "releaseSequence": "1959-06-16tt0052946",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0053085",
-        "title": "The Mummy",
-        "year": "1959",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mummy (1959)",
-        "gradeValue": null,
-        "releaseSequence": "1959-??-??tt0053085",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0052811",
-        "title": "The Flesh and the Fiends",
-        "year": "1960",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Flesh and the Fiends (1960)",
-        "gradeValue": null,
-        "releaseSequence": "1960-02-02tt0052811",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0054762",
-        "title": "Trouble in the Sky",
-        "year": "1960",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Trouble in the Sky (1960)",
-        "gradeValue": null,
-        "releaseSequence": "1960-05-10tt0054762",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0053677",
-        "title": "The Brides of Dracula",
-        "year": "1960",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Brides of Dracula (1960)",
-        "gradeValue": null,
-        "releaseSequence": "1960-06-03tt0053677",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0054244",
-        "title": "The Risk",
-        "year": "1960",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Risk (1960)",
-        "gradeValue": null,
-        "releaseSequence": "1960-11-15tt0054244",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0054358",
-        "title": "Sword of Sherwood Forest",
-        "year": "1960",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sword of Sherwood Forest (1960)",
-        "gradeValue": null,
-        "releaseSequence": "1960-12-26tt0054358",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0053903",
-        "title": "The Hellfire Club",
-        "year": "1961",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hellfire Club (1961)",
-        "gradeValue": null,
-        "releaseSequence": "1961-02-01tt0053903",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0057085",
-        "title": "Fury at Smugglers' Bay",
-        "year": "1961",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fury at Smugglers' Bay (1961)",
-        "gradeValue": null,
-        "releaseSequence": "1961-03-01tt0057085",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0055214",
-        "title": "The Naked Edge",
-        "year": "1961",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Naked Edge (1961)",
-        "gradeValue": null,
-        "releaseSequence": "1961-06-28tt0055214",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0054731",
-        "title": "Cash on Demand",
-        "year": "1961",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cash on Demand (1961)",
-        "gradeValue": null,
-        "releaseSequence": "1961-12-20tt0054731",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0056277",
-        "title": "Night Creatures",
-        "year": "1962",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Night Creatures (1962)",
-        "gradeValue": null,
-        "releaseSequence": "1962-06-07tt0056277",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0054806",
-        "title": "The Devil's Agent",
-        "year": "1962",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil's Agent (1962)",
-        "gradeValue": null,
-        "releaseSequence": "1962-09-01tt0054806",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0056216",
-        "title": "The Man Who Finally Died",
-        "year": "1963",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Man Who Finally Died (1963)",
-        "gradeValue": null,
-        "releaseSequence": "1963-09-22tt0056216",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0058073",
-        "title": "The Evil of Frankenstein",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Evil of Frankenstein (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-05-08tt0058073",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0058155",
-        "title": "The Gorgon",
-        "year": "1964",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gorgon (1964)",
-        "gradeValue": null,
-        "releaseSequence": "1964-08-21tt0058155",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0059125",
-        "title": "Dr. Terror's House of Horrors",
-        "year": "1965",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dr. Terror's House of Horrors (1965)",
-        "gradeValue": null,
-        "releaseSequence": "1965-02-23tt0059125",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0059710",
-        "title": "She",
-        "year": "1965",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "She (1965)",
-        "gradeValue": null,
-        "releaseSequence": "1965-04-18tt0059710",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0059126",
-        "title": "Dr. Who and the Daleks",
-        "year": "1965",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dr. Who and the Daleks (1965)",
-        "gradeValue": null,
-        "releaseSequence": "1965-06-25tt0059126",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0059727",
-        "title": "The Skull",
-        "year": "1965",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Skull (1965)",
-        "gradeValue": null,
-        "releaseSequence": "1965-08-25tt0059727",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0060548",
-        "title": "Island of Terror",
-        "year": "1966",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Island of Terror (1966)",
-        "gradeValue": null,
-        "releaseSequence": "1966-06-03tt0060548",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0060278",
-        "title": "Daleks' Invasion Earth 2150 A.D.",
-        "year": "1966",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Daleks' Invasion Earth 2150 A.D. (1966)",
-        "gradeValue": null,
-        "releaseSequence": "1966-08-05tt0060278",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061683",
-        "title": "Frankenstein Created Woman",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Frankenstein Created Woman (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-03-15tt0061683",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062037",
-        "title": "Night of the Big Heat",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Night of the Big Heat (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-05-26tt0062037",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062287",
-        "title": "Some May Live",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Some May Live (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-08-01tt0062287",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0062384",
-        "title": "Torture Garden",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Torture Garden (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-11-10tt0062384",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061411",
-        "title": "The Blood Beast Terror",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Blood Beast Terror (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-01-01tt0061411",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061520",
-        "title": "Corruption",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Corruption (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-07-19tt0061520",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0065738",
-        "title": "Frankenstein Must Be Destroyed",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Frankenstein Must Be Destroyed (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-05-22tt0065738",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064949",
-        "title": "Scream and Scream Again",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Scream and Scream Again (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-01-01tt0064949",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0066518",
-        "title": "The Vampire Lovers",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Vampire Lovers (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-09-03tt0066518",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0065854",
-        "title": "The House That Dripped Blood",
-        "year": "1971",
-        "slug": "the-house-that-dripped-blood-1971",
-        "grade": "C+",
-        "sortTitle": "House That Dripped Blood (1971)",
-        "gradeValue": 7,
-        "releaseSequence": "1971-02-21tt0065854",
-        "reviewDate": "2015-09-05",
-        "viewingSequence": "2015-09-05-520"
-      },
-      {
-        "imdbId": "tt0065887",
-        "title": "Blood Suckers",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Blood Suckers (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-05-14tt0065887",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069427",
-        "title": "Twins of Evil",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Twins of Evil (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-10-03tt0069427",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068727",
-        "title": "I, Monster",
-        "year": "1971",
-        "slug": "i-monster-1971",
-        "grade": "D+",
-        "sortTitle": "I, Monster (1971)",
-        "gradeValue": 4,
-        "releaseSequence": "1971-11-01tt0068727",
-        "reviewDate": "2015-09-18",
-        "viewingSequence": "2015-09-18-514"
-      },
-      {
-        "imdbId": "tt0069341",
-        "title": "Tales from the Crypt",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Tales from the Crypt (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-03-08tt0069341",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068503",
-        "title": "Dr. Phibes Rises Again",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dr. Phibes Rises Again (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-07-05tt0068503",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068230",
-        "title": "Asylum",
-        "year": "1972",
-        "slug": "asylum-1972",
-        "grade": "D+",
-        "sortTitle": "Asylum (1972)",
-        "gradeValue": 4,
-        "releaseSequence": "1972-07-06tt0068230",
-        "reviewDate": "2015-09-19",
-        "viewingSequence": "2015-09-19-521"
-      },
-      {
-        "imdbId": "tt0068577",
-        "title": "Fear in the Night",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fear in the Night (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-07-06tt0068577",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068713",
-        "title": "Horror Express",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Horror Express (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-09-30tt0068713",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068505",
-        "title": "Dracula A.D. 1972",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dracula A.D. 1972 (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-??-??tt0068505",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069024",
-        "title": "Nothing But the Night",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Nothing But the Night (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-01-19tt0069024",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069715",
-        "title": "And Now the Screaming Starts!",
-        "year": "1973",
-        "slug": "and-now-the-screaming-starts-1973",
-        "grade": "D+",
-        "sortTitle": "And Now the Screaming Starts! (1973)",
-        "gradeValue": 4,
-        "releaseSequence": "1973-04-27tt0069715",
-        "reviewDate": "2015-08-13",
-        "viewingSequence": "2015-08-13-515"
-      },
-      {
-        "imdbId": "tt0070634",
-        "title": "The Satanic Rites of Dracula",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Satanic Rites of Dracula (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-11-03tt0070634",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068424",
-        "title": "The Creeping Flesh",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Creeping Flesh (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-??-??tt0068424",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070078",
-        "title": "From Beyond the Grave",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "From Beyond the Grave (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-02-21tt0070078",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0071790",
-        "title": "Madhouse",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Madhouse (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-03-28tt0071790",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0071200",
-        "title": "The Beast Must Die",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Beast Must Die (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-04-01tt0071200",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0071519",
-        "title": "Frankenstein and the Monster from Hell",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Frankenstein and the Monster from Hell (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-04-01tt0071519",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070297",
-        "title": "The Legend of the 7 Golden Vampires",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Legend of the 7 Golden Vampires (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-07-11tt0070297",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0073794",
-        "title": "The Big Scare",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Big Scare (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-08-07tt0073794",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074268",
-        "title": "Shatter",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Shatter (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-12-06tt0074268",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0073275",
-        "title": "Legend of the Werewolf",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Legend of the Werewolf (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-04-01tt0073275",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0073042",
-        "title": "The Ghoul",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ghoul (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-06-01tt0073042",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074409",
-        "title": "A Dirty Knight's Work",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dirty Knight's Work (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-04-01tt0074409",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074157",
-        "title": "At the Earth's Core",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "At the Earth's Core (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-07-15tt0074157",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074769",
-        "title": "The Devil's Men",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil's Men (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-08-11tt0074769",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074587",
-        "title": "The Great Houdini",
-        "year": "1976",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Great Houdini (1976)",
-        "gradeValue": null,
-        "releaseSequence": "1976-10-08tt0074587",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0074060",
-        "title": "The Standard",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Standard (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-05-18tt0074060",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0076759",
-        "title": "Star Wars: Episode IV - A New Hope",
-        "year": "1977",
-        "slug": "star-wars-episode-iv-a-new-hope-1977",
-        "grade": "C",
-        "sortTitle": "Star Wars: Episode IV - A New Hope (1977)",
-        "gradeValue": 6,
-        "releaseSequence": "1977-05-25tt0076759",
-        "reviewDate": "2020-08-01",
-        "viewingSequence": "2020-08-01-546"
-      },
-      {
-        "imdbId": "tt0076704",
-        "title": "Shock Waves",
-        "year": "1977",
-        "slug": "shock-waves-1977",
-        "grade": "D+",
-        "sortTitle": "Shock Waves (1977)",
-        "gradeValue": 4,
-        "releaseSequence": "1977-06-22tt0076704",
-        "reviewDate": "2015-08-15",
-        "viewingSequence": "2015-08-15-517"
-      },
-      {
-        "imdbId": "tt0076853",
-        "title": "The Uncanny",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Uncanny (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-08-24tt0076853",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077686",
-        "title": "Son of Hitler",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Son of Hitler (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-01-01tt0077686",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0078792",
-        "title": "Arabian Adventure",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Arabian Adventure (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-07-05tt0078792",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0080039",
-        "title": "A Touch of the Sun",
-        "year": "1979",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Touch of the Sun (1979)",
-        "gradeValue": null,
-        "releaseSequence": "1979-09-01tt0080039",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0081595",
-        "title": "A Tale of Two Cities",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Tale of Two Cities (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-12-02tt0081595",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0082769",
-        "title": "Mystery on Monster Island",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mystery on Monster Island (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-04-03tt0082769",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0080441",
-        "title": "Black Jack",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Black Jack (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-05-18tt0080441",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0085693",
-        "title": "House of the Long Shadows",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "House of the Long Shadows (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-01-01tt0085693",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0087401",
-        "title": "Helen Keller: The Miracle Continues",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Helen Keller: The Miracle Continues (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-04-23tt0087401",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0084750",
-        "title": "Sword of the Valiant",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sword of the Valiant (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-06-09tt0084750",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0088286",
-        "title": "Top Secret!",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Top Secret! (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-06-22tt0088286",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0088108",
-        "title": "Sherlock Holmes and the Masks of Death",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sherlock Holmes and the Masks of Death (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-12-23tt0088108",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090729",
-        "title": "Biggles: Adventures in Time",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Biggles: Adventures in Time (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-05-30tt0090729",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt14473100",
-        "title": "1984 - BBC Live TV Productions",
-        "year": "1954",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "1984 - BBC Live TV Productions (1954)",
-        "gradeValue": null,
-        "releaseSequence": "2005-11-28tt14473100",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 12,
-    "watchlistCount": 82
-  },
-  "mostCreditedAs": "performer"
+  "titles": [
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0031619",
+      "title": "The Man in the Iron Mask",
+      "year": "1939",
+      "slug": "the-man-in-the-iron-mask-1939",
+      "grade": "C",
+      "sortTitle": "Man in the Iron Mask (1939)",
+      "gradeValue": 6,
+      "releaseSequence": "1939-06-26tt0031619",
+      "reviewDate": "2021-05-10",
+      "viewingSequence": "2021-05-10-1099"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032683",
+      "title": "Laddie",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Laddie (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-01-18tt0032683",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0032339",
+      "title": "A Chump at Oxford",
+      "year": "1940",
+      "slug": "a-chump-at-oxford-1939",
+      "grade": "D+",
+      "sortTitle": "Chump at Oxford (1940)",
+      "gradeValue": 4,
+      "releaseSequence": "1940-01-25tt0032339",
+      "reviewDate": "2020-10-06",
+      "viewingSequence": "2020-10-06-882"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0033221",
+      "title": "Vigil in the Night",
+      "year": "1940",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Vigil in the Night (1940)",
+      "gradeValue": null,
+      "releaseSequence": "1940-02-08tt0033221",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0040416",
+      "title": "Hamlet",
+      "year": "1948",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hamlet (1948)",
+      "gradeValue": null,
+      "releaseSequence": "1948-05-06tt0040416",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0044926",
+      "title": "Moulin Rouge",
+      "year": "1952",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Moulin Rouge (1952)",
+      "gradeValue": null,
+      "releaseSequence": "1952-12-23tt0044926",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0046786",
+      "title": "The Black Knight",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Knight (1954)",
+      "gradeValue": null,
+      "releaseSequence": "1954-08-26tt0046786",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048034",
+      "title": "The End of the Affair",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "End of the Affair (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-02-24tt0048034",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0337099",
+      "title": "Richard of Bordeaux",
+      "year": "1955",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Richard of Bordeaux (1955)",
+      "gradeValue": null,
+      "releaseSequence": "1955-12-29tt0337099",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0048937",
+      "title": "Alexander the Great",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Alexander the Great (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-03-22tt0048937",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0049461",
+      "title": "Magic Fire",
+      "year": "1956",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Magic Fire (1956)",
+      "gradeValue": null,
+      "releaseSequence": "1956-04-19tt0049461",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0049856",
+      "title": "Time Without Pity",
+      "year": "1957",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Time Without Pity (1957)",
+      "gradeValue": null,
+      "releaseSequence": "1957-03-21tt0049856",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0050280",
+      "title": "The Curse of Frankenstein",
+      "year": "1957",
+      "slug": "the-curse-of-frankenstein-1957",
+      "grade": "A",
+      "sortTitle": "Curse of Frankenstein (1957)",
+      "gradeValue": 12,
+      "releaseSequence": "1957-05-02tt0050280",
+      "reviewDate": "2020-09-19",
+      "viewingSequence": "2020-09-19-527"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0050095",
+      "title": "The Abominable Snowman",
+      "year": "1957",
+      "slug": "the-abominable-snowman-1957",
+      "grade": "D+",
+      "sortTitle": "Abominable Snowman (1957)",
+      "gradeValue": 4,
+      "releaseSequence": "1957-08-10tt0050095",
+      "reviewDate": "2020-08-27",
+      "viewingSequence": "2020-08-27-861"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0052367",
+      "title": "Violent Playground",
+      "year": "1958",
+      "slug": "violent-playground-1958",
+      "grade": "B-",
+      "sortTitle": "Violent Playground (1958)",
+      "gradeValue": 8,
+      "releaseSequence": "1958-01-14tt0052367",
+      "reviewDate": "2021-06-28",
+      "viewingSequence": "2021-06-28-1119"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0337483",
+      "title": "The Winslow Boy",
+      "year": "1958",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Winslow Boy (1958)",
+      "gradeValue": null,
+      "releaseSequence": "1958-03-13tt0337483",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0051554",
+      "title": "Horror of Dracula",
+      "year": "1958",
+      "slug": "horror-of-dracula-1958",
+      "grade": "A-",
+      "sortTitle": "Horror of Dracula (1958)",
+      "gradeValue": 11,
+      "releaseSequence": "1958-05-08tt0051554",
+      "reviewDate": "2020-12-08",
+      "viewingSequence": "2020-12-08-418"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0050894",
+      "title": "The Revenge of Frankenstein",
+      "year": "1958",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Revenge of Frankenstein (1958)",
+      "gradeValue": null,
+      "releaseSequence": "1958-06-13tt0050894",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0052905",
+      "title": "The Hound of the Baskervilles",
+      "year": "1959",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hound of the Baskervilles (1959)",
+      "gradeValue": null,
+      "releaseSequence": "1959-03-28tt0052905",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0052946",
+      "title": "John Paul Jones",
+      "year": "1959",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "John Paul Jones (1959)",
+      "gradeValue": null,
+      "releaseSequence": "1959-06-16tt0052946",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0053085",
+      "title": "The Mummy",
+      "year": "1959",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mummy (1959)",
+      "gradeValue": null,
+      "releaseSequence": "1959-??-??tt0053085",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0052811",
+      "title": "The Flesh and the Fiends",
+      "year": "1960",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Flesh and the Fiends (1960)",
+      "gradeValue": null,
+      "releaseSequence": "1960-02-02tt0052811",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0054762",
+      "title": "Trouble in the Sky",
+      "year": "1960",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Trouble in the Sky (1960)",
+      "gradeValue": null,
+      "releaseSequence": "1960-05-10tt0054762",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0053677",
+      "title": "The Brides of Dracula",
+      "year": "1960",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Brides of Dracula (1960)",
+      "gradeValue": null,
+      "releaseSequence": "1960-06-03tt0053677",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0054244",
+      "title": "The Risk",
+      "year": "1960",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Risk (1960)",
+      "gradeValue": null,
+      "releaseSequence": "1960-11-15tt0054244",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0054358",
+      "title": "Sword of Sherwood Forest",
+      "year": "1960",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sword of Sherwood Forest (1960)",
+      "gradeValue": null,
+      "releaseSequence": "1960-12-26tt0054358",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0053903",
+      "title": "The Hellfire Club",
+      "year": "1961",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hellfire Club (1961)",
+      "gradeValue": null,
+      "releaseSequence": "1961-02-01tt0053903",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0057085",
+      "title": "Fury at Smugglers' Bay",
+      "year": "1961",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Fury at Smugglers' Bay (1961)",
+      "gradeValue": null,
+      "releaseSequence": "1961-03-01tt0057085",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0055214",
+      "title": "The Naked Edge",
+      "year": "1961",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Naked Edge (1961)",
+      "gradeValue": null,
+      "releaseSequence": "1961-06-28tt0055214",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0054731",
+      "title": "Cash on Demand",
+      "year": "1961",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Cash on Demand (1961)",
+      "gradeValue": null,
+      "releaseSequence": "1961-12-20tt0054731",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0056277",
+      "title": "Night Creatures",
+      "year": "1962",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Night Creatures (1962)",
+      "gradeValue": null,
+      "releaseSequence": "1962-06-07tt0056277",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0054806",
+      "title": "The Devil's Agent",
+      "year": "1962",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Devil's Agent (1962)",
+      "gradeValue": null,
+      "releaseSequence": "1962-09-01tt0054806",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0056216",
+      "title": "The Man Who Finally Died",
+      "year": "1963",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Man Who Finally Died (1963)",
+      "gradeValue": null,
+      "releaseSequence": "1963-09-22tt0056216",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0058073",
+      "title": "The Evil of Frankenstein",
+      "year": "1964",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Evil of Frankenstein (1964)",
+      "gradeValue": null,
+      "releaseSequence": "1964-05-08tt0058073",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0058155",
+      "title": "The Gorgon",
+      "year": "1964",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gorgon (1964)",
+      "gradeValue": null,
+      "releaseSequence": "1964-08-21tt0058155",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0059125",
+      "title": "Dr. Terror's House of Horrors",
+      "year": "1965",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dr. Terror's House of Horrors (1965)",
+      "gradeValue": null,
+      "releaseSequence": "1965-02-23tt0059125",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0059710",
+      "title": "She",
+      "year": "1965",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "She (1965)",
+      "gradeValue": null,
+      "releaseSequence": "1965-04-18tt0059710",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0059126",
+      "title": "Dr. Who and the Daleks",
+      "year": "1965",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dr. Who and the Daleks (1965)",
+      "gradeValue": null,
+      "releaseSequence": "1965-06-25tt0059126",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0059727",
+      "title": "The Skull",
+      "year": "1965",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Skull (1965)",
+      "gradeValue": null,
+      "releaseSequence": "1965-08-25tt0059727",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0060548",
+      "title": "Island of Terror",
+      "year": "1966",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Island of Terror (1966)",
+      "gradeValue": null,
+      "releaseSequence": "1966-06-03tt0060548",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0060278",
+      "title": "Daleks' Invasion Earth 2150 A.D.",
+      "year": "1966",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Daleks' Invasion Earth 2150 A.D. (1966)",
+      "gradeValue": null,
+      "releaseSequence": "1966-08-05tt0060278",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061683",
+      "title": "Frankenstein Created Woman",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Frankenstein Created Woman (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-03-15tt0061683",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0062037",
+      "title": "Night of the Big Heat",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Night of the Big Heat (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-05-26tt0062037",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0062287",
+      "title": "Some May Live",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Some May Live (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-08-01tt0062287",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0062384",
+      "title": "Torture Garden",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Torture Garden (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-11-10tt0062384",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061411",
+      "title": "The Blood Beast Terror",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Blood Beast Terror (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-01-01tt0061411",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061520",
+      "title": "Corruption",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Corruption (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-07-19tt0061520",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0065738",
+      "title": "Frankenstein Must Be Destroyed",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Frankenstein Must Be Destroyed (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-05-22tt0065738",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0064949",
+      "title": "Scream and Scream Again",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Scream and Scream Again (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-01-01tt0064949",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0066518",
+      "title": "The Vampire Lovers",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Vampire Lovers (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-09-03tt0066518",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0065854",
+      "title": "The House That Dripped Blood",
+      "year": "1971",
+      "slug": "the-house-that-dripped-blood-1971",
+      "grade": "C+",
+      "sortTitle": "House That Dripped Blood (1971)",
+      "gradeValue": 7,
+      "releaseSequence": "1971-02-21tt0065854",
+      "reviewDate": "2015-09-05",
+      "viewingSequence": "2015-09-05-520"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0065887",
+      "title": "Blood Suckers",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Blood Suckers (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-05-14tt0065887",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069427",
+      "title": "Twins of Evil",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Twins of Evil (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-10-03tt0069427",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068727",
+      "title": "I, Monster",
+      "year": "1971",
+      "slug": "i-monster-1971",
+      "grade": "D+",
+      "sortTitle": "I, Monster (1971)",
+      "gradeValue": 4,
+      "releaseSequence": "1971-11-01tt0068727",
+      "reviewDate": "2015-09-18",
+      "viewingSequence": "2015-09-18-514"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069341",
+      "title": "Tales from the Crypt",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Tales from the Crypt (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-03-08tt0069341",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068503",
+      "title": "Dr. Phibes Rises Again",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dr. Phibes Rises Again (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-07-05tt0068503",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068230",
+      "title": "Asylum",
+      "year": "1972",
+      "slug": "asylum-1972",
+      "grade": "D+",
+      "sortTitle": "Asylum (1972)",
+      "gradeValue": 4,
+      "releaseSequence": "1972-07-06tt0068230",
+      "reviewDate": "2015-09-19",
+      "viewingSequence": "2015-09-19-521"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068577",
+      "title": "Fear in the Night",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Fear in the Night (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-07-06tt0068577",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068713",
+      "title": "Horror Express",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Horror Express (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-09-30tt0068713",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068505",
+      "title": "Dracula A.D. 1972",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dracula A.D. 1972 (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-??-??tt0068505",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069024",
+      "title": "Nothing But the Night",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Nothing But the Night (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-01-19tt0069024",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069715",
+      "title": "And Now the Screaming Starts!",
+      "year": "1973",
+      "slug": "and-now-the-screaming-starts-1973",
+      "grade": "D+",
+      "sortTitle": "And Now the Screaming Starts! (1973)",
+      "gradeValue": 4,
+      "releaseSequence": "1973-04-27tt0069715",
+      "reviewDate": "2015-08-13",
+      "viewingSequence": "2015-08-13-515"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0070634",
+      "title": "The Satanic Rites of Dracula",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Satanic Rites of Dracula (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-11-03tt0070634",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068424",
+      "title": "The Creeping Flesh",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Creeping Flesh (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-??-??tt0068424",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0070078",
+      "title": "From Beyond the Grave",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "From Beyond the Grave (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-02-21tt0070078",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0071790",
+      "title": "Madhouse",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Madhouse (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-03-28tt0071790",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0071200",
+      "title": "The Beast Must Die",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Beast Must Die (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-04-01tt0071200",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0071519",
+      "title": "Frankenstein and the Monster from Hell",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Frankenstein and the Monster from Hell (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-04-01tt0071519",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0070297",
+      "title": "The Legend of the 7 Golden Vampires",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Legend of the 7 Golden Vampires (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-07-11tt0070297",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0073794",
+      "title": "The Big Scare",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Big Scare (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-08-07tt0073794",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0074268",
+      "title": "Shatter",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Shatter (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-12-06tt0074268",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0073275",
+      "title": "Legend of the Werewolf",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Legend of the Werewolf (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-04-01tt0073275",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0073042",
+      "title": "The Ghoul",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ghoul (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-06-01tt0073042",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0074409",
+      "title": "A Dirty Knight's Work",
+      "year": "1976",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dirty Knight's Work (1976)",
+      "gradeValue": null,
+      "releaseSequence": "1976-04-01tt0074409",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0074157",
+      "title": "At the Earth's Core",
+      "year": "1976",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "At the Earth's Core (1976)",
+      "gradeValue": null,
+      "releaseSequence": "1976-07-15tt0074157",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0074769",
+      "title": "The Devil's Men",
+      "year": "1976",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Devil's Men (1976)",
+      "gradeValue": null,
+      "releaseSequence": "1976-08-11tt0074769",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0074587",
+      "title": "The Great Houdini",
+      "year": "1976",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Great Houdini (1976)",
+      "gradeValue": null,
+      "releaseSequence": "1976-10-08tt0074587",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0074060",
+      "title": "The Standard",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Standard (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-05-18tt0074060",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0076759",
+      "title": "Star Wars: Episode IV - A New Hope",
+      "year": "1977",
+      "slug": "star-wars-episode-iv-a-new-hope-1977",
+      "grade": "C",
+      "sortTitle": "Star Wars: Episode IV - A New Hope (1977)",
+      "gradeValue": 6,
+      "releaseSequence": "1977-05-25tt0076759",
+      "reviewDate": "2020-08-01",
+      "viewingSequence": "2020-08-01-546"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0076704",
+      "title": "Shock Waves",
+      "year": "1977",
+      "slug": "shock-waves-1977",
+      "grade": "D+",
+      "sortTitle": "Shock Waves (1977)",
+      "gradeValue": 4,
+      "releaseSequence": "1977-06-22tt0076704",
+      "reviewDate": "2015-08-15",
+      "viewingSequence": "2015-08-15-517"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0076853",
+      "title": "The Uncanny",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Uncanny (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-08-24tt0076853",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0077686",
+      "title": "Son of Hitler",
+      "year": "1979",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Son of Hitler (1979)",
+      "gradeValue": null,
+      "releaseSequence": "1979-01-01tt0077686",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0078792",
+      "title": "Arabian Adventure",
+      "year": "1979",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Arabian Adventure (1979)",
+      "gradeValue": null,
+      "releaseSequence": "1979-07-05tt0078792",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0080039",
+      "title": "A Touch of the Sun",
+      "year": "1979",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Touch of the Sun (1979)",
+      "gradeValue": null,
+      "releaseSequence": "1979-09-01tt0080039",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0081595",
+      "title": "A Tale of Two Cities",
+      "year": "1980",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Tale of Two Cities (1980)",
+      "gradeValue": null,
+      "releaseSequence": "1980-12-02tt0081595",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0082769",
+      "title": "Mystery on Monster Island",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mystery on Monster Island (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-04-03tt0082769",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0080441",
+      "title": "Black Jack",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Black Jack (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-05-18tt0080441",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0085693",
+      "title": "House of the Long Shadows",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "House of the Long Shadows (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-01-01tt0085693",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0087401",
+      "title": "Helen Keller: The Miracle Continues",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Helen Keller: The Miracle Continues (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-04-23tt0087401",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0084750",
+      "title": "Sword of the Valiant",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sword of the Valiant (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-06-09tt0084750",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0088286",
+      "title": "Top Secret!",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Top Secret! (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-06-22tt0088286",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0088108",
+      "title": "Sherlock Holmes and the Masks of Death",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sherlock Holmes and the Masks of Death (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-12-23tt0088108",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0090729",
+      "title": "Biggles: Adventures in Time",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Biggles: Adventures in Time (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-05-30tt0090729",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt14473100",
+      "title": "1984 - BBC Live TV Productions",
+      "year": "1954",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "1984 - BBC Live TV Productions (1954)",
+      "gradeValue": null,
+      "releaseSequence": "2005-11-28tt14473100",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 12,
+  "totalCount": 94,
+  "creditedAs": [
+    "performer"
+  ]
 }

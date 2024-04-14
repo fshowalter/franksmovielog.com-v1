@@ -22,9 +22,7 @@ export function CastAndCrew({
 
   return (
     <ListWithFiltersLayout
-      header={
-        <Header title="Cast and Crew" tagline="Round up the usual suspects." />
-      }
+      header={<Header />}
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <List
@@ -41,19 +39,9 @@ export const query = graphql`
   fragment CastAndCrewItem on CastAndCrewJson {
     name
     slug
-    mostCreditedAs
-    director {
-      reviewCount
-      watchlistCount
-    }
-    performer {
-      watchlistCount
-      reviewCount
-    }
-    writer {
-      watchlistCount
-      reviewCount
-    }
+    totalCount
+    reviewCount
+    creditedAs
     avatar {
       childImageSharp {
         gatsbyImageData(

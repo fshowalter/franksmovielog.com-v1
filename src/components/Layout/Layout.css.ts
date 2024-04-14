@@ -31,6 +31,7 @@ export const headerLayoutStyle = style({
       justifyContent: "space-between",
       textAlign: "left",
       position: "sticky",
+      flexWrap: "wrap",
       top: "16px",
       zIndex: 10000,
     },

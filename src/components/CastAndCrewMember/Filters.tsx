@@ -1,3 +1,4 @@
+import { capitalize } from "../../utils";
 import { Box } from "../Box";
 import { Button } from "../Button";
 import { DebouncedInput } from "../DebouncedInput";
@@ -7,17 +8,15 @@ import { Action, ActionType, Sort } from "./CastAndCrewMember.reducer";
 
 export function Filters({
   dispatch,
-  directorReleaseYears,
-  performerReleaseYears,
-  writerReleaseYears,
+  distinctReleaseYears,
   hideReviewed,
   sortValue,
+  creditedAs,
 }: {
   dispatch: React.Dispatch<Action>;
   hideReviewed: boolean;
-  directorReleaseYears: readonly string[];
-  performerReleaseYears: readonly string[];
-  writerReleaseYears: readonly string[];
+  distinctReleaseYears: readonly string[];
+  creditedAs: string[];
   sortValue: Sort;
 }): JSX.Element {
   return (
@@ -33,6 +32,27 @@ export function Filters({
           {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
         </Button>
       </Box>
+      {creditedAs.length > 1 && (
+        <SelectField
+          flexBasis="full"
+          label="Credits"
+          onChange={(e) =>
+            dispatch({
+              type: ActionType.FILTER_CREDIT_KIND,
+              value: e.target.value,
+            })
+          }
+        >
+          <option value="All">All</option>
+          {creditedAs.map((credit) => {
+            return (
+              <option key={credit} value={credit}>
+                {capitalize(credit)}
+              </option>
+            );
+          })}
+        </SelectField>
+      )}
       <DebouncedInput
         label="Title"
         placeholder="Enter all or part of a title"
@@ -43,13 +63,7 @@ export function Filters({
 
       <YearInput
         label="Release Year"
-        years={Array.from(
-          new Set([
-            ...directorReleaseYears,
-            ...writerReleaseYears,
-            ...performerReleaseYears,
-          ]),
-        )}
+        years={distinctReleaseYears}
         onYearChange={(values) =>
           dispatch({ type: ActionType.FILTER_RELEASE_YEAR, values })
         }

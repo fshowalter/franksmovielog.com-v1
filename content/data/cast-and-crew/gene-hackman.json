@@ -1,969 +1,1196 @@
 {
   "name": "Gene Hackman",
   "slug": "gene-hackman",
-  "director": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "writer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0213196",
-        "title": "Ride with Terror",
-        "year": "1963",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Ride with Terror (1963)",
-        "gradeValue": null,
-        "releaseSequence": "1963-12-01tt0213196",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0058294",
-        "title": "Lilith",
-        "year": "1964",
-        "slug": "lilith-1964",
-        "grade": "D",
-        "sortTitle": "Lilith (1964)",
-        "gradeValue": 3,
-        "releaseSequence": "1964-09-19tt0058294",
-        "reviewDate": "2021-04-06",
-        "viewingSequence": "2021-04-06-1074"
-      },
-      {
-        "imdbId": "tt0060491",
-        "title": "Hawaii",
-        "year": "1966",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hawaii (1966)",
-        "gradeValue": null,
-        "releaseSequence": "1966-10-10tt0060491",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061667",
-        "title": "First to Fight",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "First to Fight (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-01-25tt0061667",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061525",
-        "title": "A Covenant with Death",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Covenant with Death (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-01-27tt0061525",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061383",
-        "title": "Banning",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Banning (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-06-30tt0061383",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0061418",
-        "title": "Bonnie and Clyde",
-        "year": "1967",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bonnie and Clyde (1967)",
-        "gradeValue": null,
-        "releaseSequence": "1967-08-04tt0061418",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0063636",
-        "title": "The Split",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Split (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-10-01tt0063636",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0063589",
-        "title": "Shadow on the Land",
-        "year": "1968",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Shadow on the Land (1968)",
-        "gradeValue": null,
-        "releaseSequence": "1968-12-04tt0063589",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064895",
-        "title": "Riot",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Riot (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-01-15tt0064895",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064397",
-        "title": "The Gypsy Moths",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Gypsy Moths (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-08-28tt0064397",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064253",
-        "title": "Downhill Racer",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Downhill Racer (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-10-28tt0064253",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0064639",
-        "title": "Marooned",
-        "year": "1969",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Marooned (1969)",
-        "gradeValue": null,
-        "releaseSequence": "1969-11-10tt0064639",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0065872",
-        "title": "I Never Sang for My Father",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "I Never Sang for My Father (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-10-18tt0065872",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0067004",
-        "title": "Doctors' Wives",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Doctors' Wives (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-02-03tt0067004",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0067224",
-        "title": "The Hunting Party",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hunting Party (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-07-16tt0067224",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0067116",
-        "title": "The French Connection",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "French Connection (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-10-07tt0067116",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0068384",
-        "title": "Cisco Pike",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cisco Pike (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-11-02tt0068384",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069113",
-        "title": "The Poseidon Adventure",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Poseidon Adventure (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-12-12tt0069113",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0069121",
-        "title": "Prime Cut",
-        "year": "1972",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Prime Cut (1972)",
-        "gradeValue": null,
-        "releaseSequence": "1972-??-??tt0069121",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070643",
-        "title": "Scarecrow",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Scarecrow (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-04-11tt0070643",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0071360",
-        "title": "The Conversation",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Conversation (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-04-07tt0071360",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072435",
-        "title": "Zandy's Bride",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Zandy's Bride (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-05-19tt0072435",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072431",
-        "title": "Young Frankenstein",
-        "year": "1974",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Young Frankenstein (1974)",
-        "gradeValue": null,
-        "releaseSequence": "1974-12-15tt0072431",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0073453",
-        "title": "Night Moves",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Night Moves (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-03-18tt0073453",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0072705",
-        "title": "Bite the Bullet",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bite the Bullet (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-04-26tt0072705",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0073018",
-        "title": "French Connection II",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "French Connection II (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-05-18tt0073018",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0073317",
-        "title": "Lucky Lady",
-        "year": "1975",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Lucky Lady (1975)",
-        "gradeValue": null,
-        "releaseSequence": "1975-12-25tt0073317",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0075950",
-        "title": "The Domino Principle",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Domino Principle (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-03-23tt0075950",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0076175",
-        "title": "March or Die",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "March or Die (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-08-05tt0076175",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0075784",
-        "title": "A Bridge Too Far",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bridge Too Far (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-??-??tt0075784",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0078346",
-        "title": "Superman",
-        "year": "1978",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Superman (1978)",
-        "gradeValue": null,
-        "releaseSequence": "1978-12-10tt0078346",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0081573",
-        "title": "Superman II",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Superman II (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-12-04tt0081573",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0839995",
-        "title": "Superman II: The Richard Donner Cut",
-        "year": "1980",
-        "slug": "superman-ii-the-richard-donner-cut-1980",
-        "grade": "C+",
-        "sortTitle": "Superman II: The Richard Donner Cut (1980)",
-        "gradeValue": 7,
-        "releaseSequence": "1980-??-??tt0839995",
-        "reviewDate": "2023-05-12",
-        "viewingSequence": "2023-05-12-1482"
-      },
-      {
-        "imdbId": "tt0082001",
-        "title": "All Night Long",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "All Night Long (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-03-06tt0082001",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0082979",
-        "title": "Reds",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Reds (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-12-03tt0082979",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0083906",
-        "title": "Eureka",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Eureka (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-05-20tt0083906",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0086510",
-        "title": "Under Fire",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Under Fire (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-07-07tt0086510",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0086508",
-        "title": "Uncommon Valor",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Uncommon Valor (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-12-16tt0086508",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0087730",
-        "title": "Misunderstood",
-        "year": "1984",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Misunderstood (1984)",
-        "gradeValue": null,
-        "releaseSequence": "1984-03-30tt0087730",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090223",
-        "title": "Twice in a Lifetime",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Twice in a Lifetime (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-05-09tt0090223",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090130",
-        "title": "Target",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Target (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-11-08tt0090130",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0091786",
-        "title": "Power",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Power (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-01-31tt0091786",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0091217",
-        "title": "Hoosiers",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hoosiers (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-11-10tt0091217",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094074",
-        "title": "Superman IV: The Quest for Peace",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Superman IV: The Quest for Peace (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-07-23tt0094074",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0093640",
-        "title": "No Way Out",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "No Way Out (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-08-14tt0093640",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0096161",
-        "title": "Split Decisions",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Split Decisions (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-02-11tt0096161",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094712",
-        "title": "Bat*21",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bat*21 (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-08-06tt0094712",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0095186",
-        "title": "Full Moon in Blue Water",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Full Moon in Blue Water (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-09-20tt0095186",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094663",
-        "title": "Another Woman",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Another Woman (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-10-14tt0094663",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0095647",
-        "title": "Mississippi Burning",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mississippi Burning (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-12-02tt0095647",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0098051",
-        "title": "The Package",
-        "year": "1989",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Package (1989)",
-        "gradeValue": null,
-        "releaseSequence": "1989-08-25tt0098051",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0100053",
-        "title": "Loose Cannons",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Loose Cannons (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-02-09tt0100053",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0100395",
-        "title": "Postcards from the Edge",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Postcards from the Edge (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-09-14tt0100395",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0100224",
-        "title": "Narrow Margin",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Narrow Margin (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-09-21tt0100224",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0101590",
-        "title": "Class Action",
-        "year": "1991",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Class Action (1991)",
-        "gradeValue": null,
-        "releaseSequence": "1991-03-15tt0101590",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0101606",
-        "title": "Company Business",
-        "year": "1991",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Company Business (1991)",
-        "gradeValue": null,
-        "releaseSequence": "1991-09-06tt0101606",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0105695",
-        "title": "Unforgiven",
-        "year": "1992",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Unforgiven (1992)",
-        "gradeValue": null,
-        "releaseSequence": "1992-??-??tt0105695",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0106918",
-        "title": "The Firm",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Firm (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-06-23tt0106918",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0107004",
-        "title": "Geronimo: An American Legend",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Geronimo: An American Legend (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-12-02tt0107004",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0111756",
-        "title": "Wyatt Earp",
-        "year": "1994",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Wyatt Earp (1994)",
-        "gradeValue": null,
-        "releaseSequence": "1994-06-24tt0111756",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0114214",
-        "title": "The Quick and the Dead",
-        "year": "1995",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Quick and the Dead (1995)",
-        "gradeValue": null,
-        "releaseSequence": "1995-02-10tt0114214",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0112740",
-        "title": "Crimson Tide",
-        "year": "1995",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Crimson Tide (1995)",
-        "gradeValue": null,
-        "releaseSequence": "1995-04-01tt0112740",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0113161",
-        "title": "Get Shorty",
-        "year": "1995",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Get Shorty (1995)",
-        "gradeValue": null,
-        "releaseSequence": "1995-10-20tt0113161",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0115685",
-        "title": "The Birdcage",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Birdcage (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-03-08tt0115685",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0116259",
-        "title": "Extreme Measures",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Extreme Measures (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-09-27tt0116259",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0115862",
-        "title": "The Chamber",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Chamber (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-10-02tt0115862",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0118548",
-        "title": "Absolute Power",
-        "year": "1997",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Absolute Power (1997)",
-        "gradeValue": null,
-        "releaseSequence": "1997-02-04tt0118548",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0119594",
-        "title": "Twilight",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Twilight (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-03-06tt0119594",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120660",
-        "title": "Enemy of the State",
-        "year": "1998",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Enemy of the State (1998)",
-        "gradeValue": null,
-        "releaseSequence": "1998-??-??tt0120660",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0164212",
-        "title": "Under Suspicion",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Under Suspicion (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-05-11tt0164212",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0191397",
-        "title": "The Replacements",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Replacements (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-08-07tt0191397",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0236493",
-        "title": "The Mexican",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Mexican (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-03-02tt0236493",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0125022",
-        "title": "Heartbreakers",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Heartbreakers (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-03-23tt0125022",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0252503",
-        "title": "Heist",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Heist (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-09-01tt0252503",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0265666",
-        "title": "The Royal Tenenbaums",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Royal Tenenbaums (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-10-05tt0265666",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0159273",
-        "title": "Behind Enemy Lines",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Behind Enemy Lines (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-11-17tt0159273",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0313542",
-        "title": "Runaway Jury",
-        "year": "2003",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Runaway Jury (2003)",
-        "gradeValue": null,
-        "releaseSequence": "2003-10-09tt0313542",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0361925",
-        "title": "Welcome to Mooseport",
-        "year": "2004",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Welcome to Mooseport (2004)",
-        "gradeValue": null,
-        "releaseSequence": "2004-02-20tt0361925",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 2,
-    "watchlistCount": 77
-  },
-  "mostCreditedAs": "performer"
+  "titles": [
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0213196",
+      "title": "Ride with Terror",
+      "year": "1963",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Ride with Terror (1963)",
+      "gradeValue": null,
+      "releaseSequence": "1963-12-01tt0213196",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0058294",
+      "title": "Lilith",
+      "year": "1964",
+      "slug": "lilith-1964",
+      "grade": "D",
+      "sortTitle": "Lilith (1964)",
+      "gradeValue": 3,
+      "releaseSequence": "1964-09-19tt0058294",
+      "reviewDate": "2021-04-06",
+      "viewingSequence": "2021-04-06-1074"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0060491",
+      "title": "Hawaii",
+      "year": "1966",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hawaii (1966)",
+      "gradeValue": null,
+      "releaseSequence": "1966-10-10tt0060491",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061667",
+      "title": "First to Fight",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "First to Fight (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-01-25tt0061667",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061525",
+      "title": "A Covenant with Death",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Covenant with Death (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-01-27tt0061525",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061383",
+      "title": "Banning",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Banning (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-06-30tt0061383",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0061418",
+      "title": "Bonnie and Clyde",
+      "year": "1967",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bonnie and Clyde (1967)",
+      "gradeValue": null,
+      "releaseSequence": "1967-08-04tt0061418",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0063636",
+      "title": "The Split",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Split (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-10-01tt0063636",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0063589",
+      "title": "Shadow on the Land",
+      "year": "1968",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Shadow on the Land (1968)",
+      "gradeValue": null,
+      "releaseSequence": "1968-12-04tt0063589",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0064895",
+      "title": "Riot",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Riot (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-01-15tt0064895",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0064397",
+      "title": "The Gypsy Moths",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Gypsy Moths (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-08-28tt0064397",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0064253",
+      "title": "Downhill Racer",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Downhill Racer (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-10-28tt0064253",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0064639",
+      "title": "Marooned",
+      "year": "1969",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Marooned (1969)",
+      "gradeValue": null,
+      "releaseSequence": "1969-11-10tt0064639",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0065872",
+      "title": "I Never Sang for My Father",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "I Never Sang for My Father (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-10-18tt0065872",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0067004",
+      "title": "Doctors' Wives",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Doctors' Wives (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-02-03tt0067004",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0067224",
+      "title": "The Hunting Party",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hunting Party (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-07-16tt0067224",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0067116",
+      "title": "The French Connection",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "French Connection (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-10-07tt0067116",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0068384",
+      "title": "Cisco Pike",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Cisco Pike (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-11-02tt0068384",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069113",
+      "title": "The Poseidon Adventure",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Poseidon Adventure (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-12-12tt0069113",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0069121",
+      "title": "Prime Cut",
+      "year": "1972",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Prime Cut (1972)",
+      "gradeValue": null,
+      "releaseSequence": "1972-??-??tt0069121",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0070643",
+      "title": "Scarecrow",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Scarecrow (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-04-11tt0070643",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0071360",
+      "title": "The Conversation",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Conversation (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-04-07tt0071360",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0072435",
+      "title": "Zandy's Bride",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Zandy's Bride (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-05-19tt0072435",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0072431",
+      "title": "Young Frankenstein",
+      "year": "1974",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Young Frankenstein (1974)",
+      "gradeValue": null,
+      "releaseSequence": "1974-12-15tt0072431",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0073453",
+      "title": "Night Moves",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Night Moves (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-03-18tt0073453",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0072705",
+      "title": "Bite the Bullet",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bite the Bullet (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-04-26tt0072705",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0073018",
+      "title": "French Connection II",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "French Connection II (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-05-18tt0073018",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0073317",
+      "title": "Lucky Lady",
+      "year": "1975",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Lucky Lady (1975)",
+      "gradeValue": null,
+      "releaseSequence": "1975-12-25tt0073317",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0075950",
+      "title": "The Domino Principle",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Domino Principle (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-03-23tt0075950",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0076175",
+      "title": "March or Die",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "March or Die (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-08-05tt0076175",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0075784",
+      "title": "A Bridge Too Far",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bridge Too Far (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-??-??tt0075784",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0078346",
+      "title": "Superman",
+      "year": "1978",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Superman (1978)",
+      "gradeValue": null,
+      "releaseSequence": "1978-12-10tt0078346",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0081573",
+      "title": "Superman II",
+      "year": "1980",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Superman II (1980)",
+      "gradeValue": null,
+      "releaseSequence": "1980-12-04tt0081573",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0839995",
+      "title": "Superman II: The Richard Donner Cut",
+      "year": "1980",
+      "slug": "superman-ii-the-richard-donner-cut-1980",
+      "grade": "C+",
+      "sortTitle": "Superman II: The Richard Donner Cut (1980)",
+      "gradeValue": 7,
+      "releaseSequence": "1980-??-??tt0839995",
+      "reviewDate": "2023-05-12",
+      "viewingSequence": "2023-05-12-1482"
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0082001",
+      "title": "All Night Long",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "All Night Long (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-03-06tt0082001",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0082979",
+      "title": "Reds",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Reds (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-12-03tt0082979",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0083906",
+      "title": "Eureka",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Eureka (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-05-20tt0083906",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0086510",
+      "title": "Under Fire",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Under Fire (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-07-07tt0086510",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0086508",
+      "title": "Uncommon Valor",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Uncommon Valor (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-12-16tt0086508",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0087730",
+      "title": "Misunderstood",
+      "year": "1984",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Misunderstood (1984)",
+      "gradeValue": null,
+      "releaseSequence": "1984-03-30tt0087730",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0090223",
+      "title": "Twice in a Lifetime",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Twice in a Lifetime (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-05-09tt0090223",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0090130",
+      "title": "Target",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Target (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-11-08tt0090130",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0091786",
+      "title": "Power",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Power (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-01-31tt0091786",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0091217",
+      "title": "Hoosiers",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hoosiers (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-11-10tt0091217",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0094074",
+      "title": "Superman IV: The Quest for Peace",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Superman IV: The Quest for Peace (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-07-23tt0094074",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0093640",
+      "title": "No Way Out",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "No Way Out (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-08-14tt0093640",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0096161",
+      "title": "Split Decisions",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Split Decisions (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-02-11tt0096161",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0094712",
+      "title": "Bat*21",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bat*21 (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-08-06tt0094712",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0095186",
+      "title": "Full Moon in Blue Water",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Full Moon in Blue Water (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-09-20tt0095186",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0094663",
+      "title": "Another Woman",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Another Woman (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-10-14tt0094663",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0095647",
+      "title": "Mississippi Burning",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mississippi Burning (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-12-02tt0095647",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0098051",
+      "title": "The Package",
+      "year": "1989",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Package (1989)",
+      "gradeValue": null,
+      "releaseSequence": "1989-08-25tt0098051",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0100053",
+      "title": "Loose Cannons",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Loose Cannons (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-02-09tt0100053",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0100395",
+      "title": "Postcards from the Edge",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Postcards from the Edge (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-09-14tt0100395",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0100224",
+      "title": "Narrow Margin",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Narrow Margin (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-09-21tt0100224",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0101590",
+      "title": "Class Action",
+      "year": "1991",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Class Action (1991)",
+      "gradeValue": null,
+      "releaseSequence": "1991-03-15tt0101590",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0101606",
+      "title": "Company Business",
+      "year": "1991",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Company Business (1991)",
+      "gradeValue": null,
+      "releaseSequence": "1991-09-06tt0101606",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0105695",
+      "title": "Unforgiven",
+      "year": "1992",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Unforgiven (1992)",
+      "gradeValue": null,
+      "releaseSequence": "1992-??-??tt0105695",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0106918",
+      "title": "The Firm",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Firm (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-06-23tt0106918",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0107004",
+      "title": "Geronimo: An American Legend",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Geronimo: An American Legend (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-12-02tt0107004",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0111756",
+      "title": "Wyatt Earp",
+      "year": "1994",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Wyatt Earp (1994)",
+      "gradeValue": null,
+      "releaseSequence": "1994-06-24tt0111756",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0114214",
+      "title": "The Quick and the Dead",
+      "year": "1995",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Quick and the Dead (1995)",
+      "gradeValue": null,
+      "releaseSequence": "1995-02-10tt0114214",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0112740",
+      "title": "Crimson Tide",
+      "year": "1995",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Crimson Tide (1995)",
+      "gradeValue": null,
+      "releaseSequence": "1995-04-01tt0112740",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0113161",
+      "title": "Get Shorty",
+      "year": "1995",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Get Shorty (1995)",
+      "gradeValue": null,
+      "releaseSequence": "1995-10-20tt0113161",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0115685",
+      "title": "The Birdcage",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Birdcage (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-03-08tt0115685",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0116259",
+      "title": "Extreme Measures",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Extreme Measures (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-09-27tt0116259",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0115862",
+      "title": "The Chamber",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Chamber (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-10-02tt0115862",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0118548",
+      "title": "Absolute Power",
+      "year": "1997",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Absolute Power (1997)",
+      "gradeValue": null,
+      "releaseSequence": "1997-02-04tt0118548",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0119594",
+      "title": "Twilight",
+      "year": "1998",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Twilight (1998)",
+      "gradeValue": null,
+      "releaseSequence": "1998-03-06tt0119594",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0120660",
+      "title": "Enemy of the State",
+      "year": "1998",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Enemy of the State (1998)",
+      "gradeValue": null,
+      "releaseSequence": "1998-??-??tt0120660",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0164212",
+      "title": "Under Suspicion",
+      "year": "2000",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Under Suspicion (2000)",
+      "gradeValue": null,
+      "releaseSequence": "2000-05-11tt0164212",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0191397",
+      "title": "The Replacements",
+      "year": "2000",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Replacements (2000)",
+      "gradeValue": null,
+      "releaseSequence": "2000-08-07tt0191397",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0236493",
+      "title": "The Mexican",
+      "year": "2001",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Mexican (2001)",
+      "gradeValue": null,
+      "releaseSequence": "2001-03-02tt0236493",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0125022",
+      "title": "Heartbreakers",
+      "year": "2001",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Heartbreakers (2001)",
+      "gradeValue": null,
+      "releaseSequence": "2001-03-23tt0125022",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0252503",
+      "title": "Heist",
+      "year": "2001",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Heist (2001)",
+      "gradeValue": null,
+      "releaseSequence": "2001-09-01tt0252503",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0265666",
+      "title": "The Royal Tenenbaums",
+      "year": "2001",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Royal Tenenbaums (2001)",
+      "gradeValue": null,
+      "releaseSequence": "2001-10-05tt0265666",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0159273",
+      "title": "Behind Enemy Lines",
+      "year": "2001",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Behind Enemy Lines (2001)",
+      "gradeValue": null,
+      "releaseSequence": "2001-11-17tt0159273",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0313542",
+      "title": "Runaway Jury",
+      "year": "2003",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Runaway Jury (2003)",
+      "gradeValue": null,
+      "releaseSequence": "2003-10-09tt0313542",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0361925",
+      "title": "Welcome to Mooseport",
+      "year": "2004",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Welcome to Mooseport (2004)",
+      "gradeValue": null,
+      "releaseSequence": "2004-02-20tt0361925",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 2,
+  "totalCount": 79,
+  "creditedAs": [
+    "performer"
+  ]
 }

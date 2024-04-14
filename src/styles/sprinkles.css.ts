@@ -88,6 +88,9 @@ const responsiveAtomicProperties = defineProperties({
     desktop: {
       "@media": minMediaQuery("desktop"),
     },
+    max: {
+      "@media": minMediaQuery("max"),
+    },
   },
   properties: {
     alignItems: ["center", "inherit", "flex-start", "baseline", "stretch"],

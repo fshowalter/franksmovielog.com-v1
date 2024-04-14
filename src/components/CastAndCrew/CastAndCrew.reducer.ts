@@ -1,11 +1,18 @@
-import { filterCollection, sortString } from "../../utils";
+import { filterCollection, sortNumber, sortString } from "../../utils";
 
 export enum ActionType {
   FILTER_NAME = "FILTER_NAME",
+  FILTER_CREDIT_KIND = "FILTER_CREDIT_KIND",
   SORT = "SORT",
 }
 
-export type SortValue = "name-asc" | "name-desc";
+export type SortValue =
+  | "name-asc"
+  | "name-desc"
+  | "title-count-asc"
+  | "title-count-desc"
+  | "review-count-asc"
+  | "review-count-desc";
 
 function sortEntities(
   entities: Queries.CastAndCrewItemFragment[],
@@ -20,6 +27,11 @@ function sortEntities(
   > = {
     "name-asc": (a, b) => sortString(a.name, b.name),
     "name-desc": (a, b) => sortString(a.name, b.name) * -1,
+    "title-count-asc": (a, b) => sortNumber(a.titleCount, b.titleCount),
+    "title-count-desc": (a, b) => sortNumber(a.titleCount, b.titleCount) * -1,
+    "review-count-asc": (a, b) => sortNumber(a.reviewCount, b.reviewCount),
+    "review-count-desc": (a, b) =>
+      sortNumber(a.reviewCount, b.reviewCount) * -1,
   };
 
   const comparer = sortMap[sortOrder];
@@ -52,12 +64,17 @@ interface FilterNameAction {
   value: string;
 }
 
+interface FilterCreditKindAction {
+  type: ActionType.FILTER_CREDIT_KIND;
+  value: string;
+}
+
 interface SortAction {
   type: ActionType.SORT;
   value: SortValue;
 }
 
-export type Action = FilterNameAction | SortAction;
+export type Action = FilterNameAction | FilterCreditKindAction | SortAction;
 
 /**
  * Applies the given action to the given state, returning a new State object.
@@ -77,6 +94,34 @@ export function reducer(state: State, action: Action): State {
           return regex.test(person.name);
         },
       };
+      filteredEntities = sortEntities(
+        filterCollection<Queries.CastAndCrewItemFragment>({
+          collection: state.allEntities,
+          filters,
+        }),
+        state.sortValue,
+      );
+      return {
+        ...state,
+        filters,
+        filteredEntities,
+      };
+    }
+    case ActionType.FILTER_CREDIT_KIND: {
+      if (action.value === "All") {
+        filters = {
+          ...state.filters,
+        };
+
+        delete filters.credits;
+      } else {
+        filters = {
+          ...state.filters,
+          credits: (item: Queries.CastAndCrewItemFragment) => {
+            return item.creditedAs.includes(action.value);
+          },
+        };
+      }
       filteredEntities = sortEntities(
         filterCollection<Queries.CastAndCrewItemFragment>({
           collection: state.allEntities,

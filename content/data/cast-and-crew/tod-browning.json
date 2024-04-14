@@ -1,130 +1,133 @@
 {
   "name": "Tod Browning",
   "slug": "tod-browning",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0020492",
-        "title": "The Thirteenth Chair",
-        "year": "1929",
-        "slug": "the-thirteenth-chair-1929",
-        "grade": "D+",
-        "sortTitle": "Thirteenth Chair (1929)",
-        "gradeValue": 4,
-        "releaseSequence": "1929-10-19tt0020492",
-        "reviewDate": "2020-08-17",
-        "viewingSequence": "2020-08-17-854"
-      },
-      {
-        "imdbId": "tt0021224",
-        "title": "Outside the Law",
-        "year": "1930",
-        "slug": "outside-the-law-1930",
-        "grade": "D",
-        "sortTitle": "Outside the Law (1930)",
-        "gradeValue": 3,
-        "releaseSequence": "1930-09-18tt0021224",
-        "reviewDate": "2021-01-01",
-        "viewingSequence": "2021-01-01-967"
-      },
-      {
-        "imdbId": "tt0021814",
-        "title": "Dracula",
-        "year": "1931",
-        "slug": "dracula-1931",
-        "grade": "A-",
-        "sortTitle": "Dracula (1931)",
-        "gradeValue": 11,
-        "releaseSequence": "1931-02-14tt0021814",
-        "reviewDate": "2020-10-04",
-        "viewingSequence": "2020-10-04-880"
-      },
-      {
-        "imdbId": "tt0022002",
-        "title": "The Iron Man",
-        "year": "1931",
-        "slug": "iron-man-1931",
-        "grade": "C",
-        "sortTitle": "Iron Man (1931)",
-        "gradeValue": 6,
-        "releaseSequence": "1931-04-28tt0022002",
-        "reviewDate": "2021-01-17",
-        "viewingSequence": "2021-01-17-988"
-      },
-      {
-        "imdbId": "tt0022913",
-        "title": "Freaks",
-        "year": "1932",
-        "slug": "freaks-1932",
-        "grade": "B+",
-        "sortTitle": "Freaks (1932)",
-        "gradeValue": 10,
-        "releaseSequence": "1932-??-??tt0022913",
-        "reviewDate": "2021-07-31",
-        "viewingSequence": "2021-07-31-1136"
-      },
-      {
-        "imdbId": "tt0026685",
-        "title": "Mark of the Vampire",
-        "year": "1935",
-        "slug": "mark-of-the-vampire-1935",
-        "grade": "F",
-        "sortTitle": "Mark of the Vampire (1935)",
-        "gradeValue": 1,
-        "releaseSequence": "1935-04-26tt0026685",
-        "reviewDate": "2023-05-08",
-        "viewingSequence": "2023-05-08-1479"
-      },
-      {
-        "imdbId": "tt0031657",
-        "title": "Miracles for Sale",
-        "year": "1939",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Miracles for Sale (1939)",
-        "gradeValue": null,
-        "releaseSequence": "1939-08-10tt0031657",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 6,
-    "watchlistCount": 1
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0021224",
-        "title": "Outside the Law",
-        "year": "1930",
-        "slug": "outside-the-law-1930",
-        "grade": "D",
-        "sortTitle": "Outside the Law (1930)",
-        "gradeValue": 3,
-        "releaseSequence": "1930-09-18tt0021224",
-        "reviewDate": "2021-01-01",
-        "viewingSequence": "2021-01-01-967"
-      },
-      {
-        "imdbId": "tt0027521",
-        "title": "The Devil-Doll",
-        "year": "1936",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil-Doll (1936)",
-        "gradeValue": null,
-        "releaseSequence": "1936-07-10tt0027521",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 1
-  },
-  "performer": {
-    "titles": [],
-    "reviewCount": 0,
-    "watchlistCount": 0
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0020492",
+      "title": "The Thirteenth Chair",
+      "year": "1929",
+      "slug": "the-thirteenth-chair-1929",
+      "grade": "D+",
+      "sortTitle": "Thirteenth Chair (1929)",
+      "gradeValue": 4,
+      "releaseSequence": "1929-10-19tt0020492",
+      "reviewDate": "2020-08-17",
+      "viewingSequence": "2020-08-17-854"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0021224",
+      "title": "Outside the Law",
+      "year": "1930",
+      "slug": "outside-the-law-1930",
+      "grade": "D",
+      "sortTitle": "Outside the Law (1930)",
+      "gradeValue": 3,
+      "releaseSequence": "1930-09-18tt0021224",
+      "reviewDate": "2021-01-01",
+      "viewingSequence": "2021-01-01-967"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0021814",
+      "title": "Dracula",
+      "year": "1931",
+      "slug": "dracula-1931",
+      "grade": "A-",
+      "sortTitle": "Dracula (1931)",
+      "gradeValue": 11,
+      "releaseSequence": "1931-02-14tt0021814",
+      "reviewDate": "2020-10-04",
+      "viewingSequence": "2020-10-04-880"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0022002",
+      "title": "The Iron Man",
+      "year": "1931",
+      "slug": "iron-man-1931",
+      "grade": "C",
+      "sortTitle": "Iron Man (1931)",
+      "gradeValue": 6,
+      "releaseSequence": "1931-04-28tt0022002",
+      "reviewDate": "2021-01-17",
+      "viewingSequence": "2021-01-17-988"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0022913",
+      "title": "Freaks",
+      "year": "1932",
+      "slug": "freaks-1932",
+      "grade": "B+",
+      "sortTitle": "Freaks (1932)",
+      "gradeValue": 10,
+      "releaseSequence": "1932-??-??tt0022913",
+      "reviewDate": "2021-07-31",
+      "viewingSequence": "2021-07-31-1136"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0026685",
+      "title": "Mark of the Vampire",
+      "year": "1935",
+      "slug": "mark-of-the-vampire-1935",
+      "grade": "F",
+      "sortTitle": "Mark of the Vampire (1935)",
+      "gradeValue": 1,
+      "releaseSequence": "1935-04-26tt0026685",
+      "reviewDate": "2023-05-08",
+      "viewingSequence": "2023-05-08-1479"
+    },
+    {
+      "creditedAs": [
+        "writer"
+      ],
+      "imdbId": "tt0027521",
+      "title": "The Devil-Doll",
+      "year": "1936",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Devil-Doll (1936)",
+      "gradeValue": null,
+      "releaseSequence": "1936-07-10tt0027521",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0031657",
+      "title": "Miracles for Sale",
+      "year": "1939",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Miracles for Sale (1939)",
+      "gradeValue": null,
+      "releaseSequence": "1939-08-10tt0031657",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 6,
+  "totalCount": 8,
+  "creditedAs": [
+    "director",
+    "writer"
+  ]
 }

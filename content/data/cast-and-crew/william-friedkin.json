@@ -1,407 +1,381 @@
 {
   "name": "William Friedkin",
   "slug": "william-friedkin",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0061720",
-        "title": "Good Times",
-        "year": "1967",
-        "slug": "good-times-1967",
-        "grade": "F",
-        "sortTitle": "Good Times (1967)",
-        "gradeValue": 1,
-        "releaseSequence": "1967-04-11tt0061720",
-        "reviewDate": "2021-09-20",
-        "viewingSequence": "2021-09-20-1162"
-      },
-      {
-        "imdbId": "tt0062732",
-        "title": "The Birthday Party",
-        "year": "1968",
-        "slug": "the-birthday-party-1968",
-        "grade": "C+",
-        "sortTitle": "Birthday Party (1968)",
-        "gradeValue": 7,
-        "releaseSequence": "1968-12-09tt0062732",
-        "reviewDate": "2023-03-19",
-        "viewingSequence": "2023-03-19-1452"
-      },
-      {
-        "imdbId": "tt0063348",
-        "title": "The Night They Raided Minsky's",
-        "year": "1968",
-        "slug": "the-night-they-raided-minskys-1968",
-        "grade": "D",
-        "sortTitle": "Night They Raided Minsky's (1968)",
-        "gradeValue": 3,
-        "releaseSequence": "1968-12-21tt0063348",
-        "reviewDate": "2023-09-25",
-        "viewingSequence": "2023-09-25-1532"
-      },
-      {
-        "imdbId": "tt0065488",
-        "title": "The Boys in the Band",
-        "year": "1970",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Boys in the Band (1970)",
-        "gradeValue": null,
-        "releaseSequence": "1970-03-17tt0065488",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0067116",
-        "title": "The French Connection",
-        "year": "1971",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "French Connection (1971)",
-        "gradeValue": null,
-        "releaseSequence": "1971-10-07tt0067116",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0070047",
-        "title": "The Exorcist",
-        "year": "1973",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Exorcist (1973)",
-        "gradeValue": null,
-        "releaseSequence": "1973-??-??tt0070047",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0076740",
-        "title": "Sorcerer",
-        "year": "1977",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Sorcerer (1977)",
-        "gradeValue": null,
-        "releaseSequence": "1977-06-24tt0076740",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0077275",
-        "title": "The Brink's Job",
-        "year": "1978",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Brink's Job (1978)",
-        "gradeValue": null,
-        "releaseSequence": "1978-12-07tt0077275",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0080569",
-        "title": "Cruising",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cruising (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-02-08tt0080569",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0085412",
-        "title": "Deal of the Century",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Deal of the Century (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-11-04tt0085412",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090180",
-        "title": "To Live and Die in L.A.",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "To Live and Die in L.A. (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-10-31tt0090180",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090783",
-        "title": "C.A.T. Squad",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "C.A.T. Squad (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-07-27tt0090783",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0095958",
-        "title": "Rampage",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Rampage (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-09-01tt0095958",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094823",
-        "title": "C.A.T. Squad: Python Wolf",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "C.A.T. Squad: Python Wolf (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-05-23tt0094823",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0099710",
-        "title": "The Guardian",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Guardian (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-04-27tt0099710",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0109305",
-        "title": "Blue Chips",
-        "year": "1994",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Blue Chips (1994)",
-        "gradeValue": null,
-        "releaseSequence": "1994-02-18tt0109305",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0113451",
-        "title": "Jade",
-        "year": "1995",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Jade (1995)",
-        "gradeValue": null,
-        "releaseSequence": "1995-09-01tt0113451",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0118528",
-        "title": "12 Angry Men",
-        "year": "1997",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "12 Angry Men (1997)",
-        "gradeValue": null,
-        "releaseSequence": "1997-08-17tt0118528",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0160797",
-        "title": "Rules of Engagement",
-        "year": "2000",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Rules of Engagement (2000)",
-        "gradeValue": null,
-        "releaseSequence": "2000-04-07tt0160797",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0269347",
-        "title": "The Hunted",
-        "year": "2003",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Hunted (2003)",
-        "gradeValue": null,
-        "releaseSequence": "2003-03-11tt0269347",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0470705",
-        "title": "Bug",
-        "year": "2006",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Bug (2006)",
-        "gradeValue": null,
-        "releaseSequence": "2006-05-19tt0470705",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1726669",
-        "title": "Killer Joe",
-        "year": "2011",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Killer Joe (2011)",
-        "gradeValue": null,
-        "releaseSequence": "2011-09-08tt1726669",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt6883152",
-        "title": "The Devil and Father Amorth",
-        "year": "2017",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil and Father Amorth (2017)",
-        "gradeValue": null,
-        "releaseSequence": "2017-08-31tt6883152",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt24249946",
-        "title": "The Caine Mutiny Court-Martial",
-        "year": "2023",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Caine Mutiny Court-Martial (2023)",
-        "gradeValue": null,
-        "releaseSequence": "2023-09-03tt24249946",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 3,
-    "watchlistCount": 21
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0080569",
-        "title": "Cruising",
-        "year": "1980",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cruising (1980)",
-        "gradeValue": null,
-        "releaseSequence": "1980-02-08tt0080569",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0090180",
-        "title": "To Live and Die in L.A.",
-        "year": "1985",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "To Live and Die in L.A. (1985)",
-        "gradeValue": null,
-        "releaseSequence": "1985-10-31tt0090180",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0095958",
-        "title": "Rampage",
-        "year": "1987",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Rampage (1987)",
-        "gradeValue": null,
-        "releaseSequence": "1987-09-01tt0095958",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094823",
-        "title": "C.A.T. Squad: Python Wolf",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "C.A.T. Squad: Python Wolf (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-05-23tt0094823",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0099710",
-        "title": "The Guardian",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Guardian (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-04-27tt0099710",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt6883152",
-        "title": "The Devil and Father Amorth",
-        "year": "2017",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil and Father Amorth (2017)",
-        "gradeValue": null,
-        "releaseSequence": "2017-08-31tt6883152",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt24249946",
-        "title": "The Caine Mutiny Court-Martial",
-        "year": "2023",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Caine Mutiny Court-Martial (2023)",
-        "gradeValue": null,
-        "releaseSequence": "2023-09-03tt24249946",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 0,
-    "watchlistCount": 7
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt6883152",
-        "title": "The Devil and Father Amorth",
-        "year": "2017",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Devil and Father Amorth (2017)",
-        "gradeValue": null,
-        "releaseSequence": "2017-08-31tt6883152",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 0,
-    "watchlistCount": 1
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0061720",
+      "title": "Good Times",
+      "year": "1967",
+      "slug": "good-times-1967",
+      "grade": "F",
+      "sortTitle": "Good Times (1967)",
+      "gradeValue": 1,
+      "releaseSequence": "1967-04-11tt0061720",
+      "reviewDate": "2021-09-20",
+      "viewingSequence": "2021-09-20-1162"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0062732",
+      "title": "The Birthday Party",
+      "year": "1968",
+      "slug": "the-birthday-party-1968",
+      "grade": "C+",
+      "sortTitle": "Birthday Party (1968)",
+      "gradeValue": 7,
+      "releaseSequence": "1968-12-09tt0062732",
+      "reviewDate": "2023-03-19",
+      "viewingSequence": "2023-03-19-1452"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0063348",
+      "title": "The Night They Raided Minsky's",
+      "year": "1968",
+      "slug": "the-night-they-raided-minskys-1968",
+      "grade": "D",
+      "sortTitle": "Night They Raided Minsky's (1968)",
+      "gradeValue": 3,
+      "releaseSequence": "1968-12-21tt0063348",
+      "reviewDate": "2023-09-25",
+      "viewingSequence": "2023-09-25-1532"
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0065488",
+      "title": "The Boys in the Band",
+      "year": "1970",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Boys in the Band (1970)",
+      "gradeValue": null,
+      "releaseSequence": "1970-03-17tt0065488",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0067116",
+      "title": "The French Connection",
+      "year": "1971",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "French Connection (1971)",
+      "gradeValue": null,
+      "releaseSequence": "1971-10-07tt0067116",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0070047",
+      "title": "The Exorcist",
+      "year": "1973",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Exorcist (1973)",
+      "gradeValue": null,
+      "releaseSequence": "1973-??-??tt0070047",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0076740",
+      "title": "Sorcerer",
+      "year": "1977",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Sorcerer (1977)",
+      "gradeValue": null,
+      "releaseSequence": "1977-06-24tt0076740",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0077275",
+      "title": "The Brink's Job",
+      "year": "1978",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Brink's Job (1978)",
+      "gradeValue": null,
+      "releaseSequence": "1978-12-07tt0077275",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0080569",
+      "title": "Cruising",
+      "year": "1980",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Cruising (1980)",
+      "gradeValue": null,
+      "releaseSequence": "1980-02-08tt0080569",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0085412",
+      "title": "Deal of the Century",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Deal of the Century (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-11-04tt0085412",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0090180",
+      "title": "To Live and Die in L.A.",
+      "year": "1985",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "To Live and Die in L.A. (1985)",
+      "gradeValue": null,
+      "releaseSequence": "1985-10-31tt0090180",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0090783",
+      "title": "C.A.T. Squad",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "C.A.T. Squad (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-07-27tt0090783",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0095958",
+      "title": "Rampage",
+      "year": "1987",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Rampage (1987)",
+      "gradeValue": null,
+      "releaseSequence": "1987-09-01tt0095958",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0094823",
+      "title": "C.A.T. Squad: Python Wolf",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "C.A.T. Squad: Python Wolf (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-05-23tt0094823",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0099710",
+      "title": "The Guardian",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Guardian (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-04-27tt0099710",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0109305",
+      "title": "Blue Chips",
+      "year": "1994",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Blue Chips (1994)",
+      "gradeValue": null,
+      "releaseSequence": "1994-02-18tt0109305",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0113451",
+      "title": "Jade",
+      "year": "1995",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Jade (1995)",
+      "gradeValue": null,
+      "releaseSequence": "1995-09-01tt0113451",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0118528",
+      "title": "12 Angry Men",
+      "year": "1997",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "12 Angry Men (1997)",
+      "gradeValue": null,
+      "releaseSequence": "1997-08-17tt0118528",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0160797",
+      "title": "Rules of Engagement",
+      "year": "2000",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Rules of Engagement (2000)",
+      "gradeValue": null,
+      "releaseSequence": "2000-04-07tt0160797",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0269347",
+      "title": "The Hunted",
+      "year": "2003",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Hunted (2003)",
+      "gradeValue": null,
+      "releaseSequence": "2003-03-11tt0269347",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0470705",
+      "title": "Bug",
+      "year": "2006",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Bug (2006)",
+      "gradeValue": null,
+      "releaseSequence": "2006-05-19tt0470705",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt1726669",
+      "title": "Killer Joe",
+      "year": "2011",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Killer Joe (2011)",
+      "gradeValue": null,
+      "releaseSequence": "2011-09-08tt1726669",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt6883152",
+      "title": "The Devil and Father Amorth",
+      "year": "2017",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Devil and Father Amorth (2017)",
+      "gradeValue": null,
+      "releaseSequence": "2017-08-31tt6883152",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt24249946",
+      "title": "The Caine Mutiny Court-Martial",
+      "year": "2023",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Caine Mutiny Court-Martial (2023)",
+      "gradeValue": null,
+      "releaseSequence": "2023-09-03tt24249946",
+      "reviewDate": null,
+      "viewingSequence": null
+    }
+  ],
+  "reviewCount": 3,
+  "totalCount": 24,
+  "creditedAs": [
+    "director",
+    "writer",
+    "performer"
+  ]
 }

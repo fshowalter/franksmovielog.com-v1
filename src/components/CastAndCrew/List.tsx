@@ -1,10 +1,12 @@
 import { backgroundColors } from "../../styles/colors.css";
 import { Box } from "../Box";
+import { CreditedAs } from "../CreditedAs";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { ListItem } from "../ListItem";
 import { ListInfo } from "../ListWithFiltersLayout/ListInfo";
 import { Spacer } from "../Spacer";
+import { countMarginStyle } from "./List.css";
 
 export function List({
   entities,
@@ -20,7 +22,7 @@ export function List({
       <ListInfo totalCount={totalCount} visibleCount={visibleCount} />
       <Box as="ol" data-testid="entity-list">
         {entities.map((entity) => {
-          return <EntityListItem key={entity.slug} entity={entity} />;
+          return <EntityListItem key={entity.name} entity={entity} />;
         })}
       </Box>
       <Spacer axis="vertical" size={32} />
@@ -37,6 +39,7 @@ function EntityListItem({
     <ListItem alignItems="center">
       <Avatar entity={entity} />
       <EntityName entity={entity} />
+      <ReviewCount entity={entity} />
     </ListItem>
   );
 }
@@ -79,7 +82,11 @@ function Avatar({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
   );
 }
 
-function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
+function EntityName({
+  entity,
+}: {
+  entity: Queries.WatchlistEntitiesItemFragment;
+}) {
   if (entity.slug) {
     return (
       <Box>
@@ -87,71 +94,29 @@ function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
           <Box lineHeight="default">{entity.name}</Box>
         </Link>
         <Spacer axis="vertical" size={4} />
-        <Credits entity={entity} />
+        <CreditedAs creditedAs={entity.creditedAs} />
       </Box>
     );
   }
 
   return (
-    <Box>
-      <Box color="subtle" fontSize="medium">
-        <Box lineHeight="default">{entity.name}</Box>
-      </Box>
-      <Spacer axis="vertical" size={4} />
-      <Credits entity={entity} />
+    <Box color="subtle" fontSize="medium">
+      <Box lineHeight="default">{entity.name}</Box>
     </Box>
   );
 }
 
-function buildCreditsString(entity: Queries.CastAndCrewItemFragment): string {
-  let prefix = "";
-  let watchlistCount: number;
-  let reviewCount: number;
-
-  switch (entity.mostCreditedAs) {
-    case "director": {
-      prefix = "Director of";
-      reviewCount = entity.director.reviewCount;
-      watchlistCount = entity.director.watchlistCount;
-      break;
-    }
-    case "performer": {
-      prefix = "Performer in";
-      reviewCount = entity.performer.reviewCount;
-      watchlistCount = entity.performer.watchlistCount;
-      break;
-    }
-    default:
-      prefix = "Writer of";
-      reviewCount = entity.writer.reviewCount;
-      watchlistCount = entity.writer.watchlistCount;
-  }
-
-  let creditsString = "";
-
-  if (reviewCount) {
-    creditsString = `${reviewCount} reviewed`;
-  }
-
-  if (watchlistCount) {
-    if (reviewCount) {
-      creditsString = `${creditsString} and`;
-    }
-
-    creditsString = `${creditsString} ${watchlistCount} watchlist`;
-  }
-
-  return `${prefix} ${creditsString} titles.`;
-}
-
-function Credits({
+function ReviewCount({
   entity,
 }: {
   entity: Queries.CastAndCrewItemFragment;
 }): JSX.Element {
   return (
-    <Box color="subtle" fontWeight="light" fontSize="small" letterSpacing={0.5}>
-      {buildCreditsString(entity)}
+    <Box
+      color={entity.reviewCount === entity.totalCount ? "progress" : "subtle"}
+      className={countMarginStyle}
+    >
+      {entity.reviewCount} / {entity.totalCount}
     </Box>
   );
 }

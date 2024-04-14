@@ -1,4 +1,5 @@
 import {
+  FilterableState,
   buildGroupItems,
   collator,
   filterTools,
@@ -16,7 +17,10 @@ export type Sort =
 const SHOW_COUNT_DEFAULT = 100;
 
 const groupItems = buildGroupItems(groupForItem);
-const { updateFilter, applyFilters } = filterTools(sortItems, groupItems);
+const { updateFilter, applyFilters, clearFilter } = filterTools(
+  sortItems,
+  groupItems,
+);
 
 function sortItems(
   items: Queries.CastAndCrewMemberTitleFragment[],
@@ -69,61 +73,28 @@ function groupForItem(
   }
 }
 
-export interface State {
-  filters: Record<
-    string,
-    (title: Queries.CastAndCrewMemberTitleFragment) => boolean
-  >;
-  filteredDirectorTitles: Queries.CastAndCrewMemberTitleFragment[];
-  filteredPerformerTitles: Queries.CastAndCrewMemberTitleFragment[];
-  filteredWriterTitles: Queries.CastAndCrewMemberTitleFragment[];
-  allDirectorTitles: Queries.CastAndCrewMemberTitleFragment[];
-  allPerformerTitles: Queries.CastAndCrewMemberTitleFragment[];
-  allWriterTitles: Queries.CastAndCrewMemberTitleFragment[];
-  sortValue: Sort;
-  directorShowCount: number;
-  writerShowCount: number;
-  performerShowCount: number;
-  groupedDirectorTitles: Map<string, Queries.CastAndCrewMemberTitleFragment[]>;
-  groupedPerformerTitles: Map<string, Queries.CastAndCrewMemberTitleFragment[]>;
-  groupedWriterTitles: Map<string, Queries.CastAndCrewMemberTitleFragment[]>;
+export interface State
+  extends FilterableState<
+    Queries.CastAndCrewMemberTitleFragment,
+    Sort,
+    Map<string, Queries.CastAndCrewMemberTitleFragment[]>
+  > {
   hideReviewed: boolean;
 }
 
 export function initState({
-  directorTitles,
-  performerTitles,
-  writerTitles,
+  items,
   sort,
 }: {
-  directorTitles: Queries.CastAndCrewMemberTitleFragment[];
-  performerTitles: Queries.CastAndCrewMemberTitleFragment[];
-  writerTitles: Queries.CastAndCrewMemberTitleFragment[];
+  items: Queries.CastAndCrewMemberTitleFragment[];
   sort: Sort;
 }): State {
   return {
-    allDirectorTitles: directorTitles,
-    allPerformerTitles: performerTitles,
-    allWriterTitles: writerTitles,
-    filteredDirectorTitles: directorTitles,
-    filteredPerformerTitles: performerTitles,
-    filteredWriterTitles: writerTitles,
+    allItems: items,
+    filteredItems: items,
     filters: {},
-    groupedDirectorTitles: groupItems(
-      directorTitles.slice(0, SHOW_COUNT_DEFAULT),
-      sort,
-    ),
-    groupedPerformerTitles: groupItems(
-      performerTitles.slice(0, SHOW_COUNT_DEFAULT),
-      sort,
-    ),
-    groupedWriterTitles: groupItems(
-      writerTitles.slice(0, SHOW_COUNT_DEFAULT),
-      sort,
-    ),
-    directorShowCount: SHOW_COUNT_DEFAULT,
-    writerShowCount: SHOW_COUNT_DEFAULT,
-    performerShowCount: SHOW_COUNT_DEFAULT,
+    groupedItems: groupItems(items.slice(0, SHOW_COUNT_DEFAULT), sort),
+    showCount: SHOW_COUNT_DEFAULT,
     sortValue: sort,
     hideReviewed: false,
   };
@@ -135,10 +106,16 @@ export enum ActionType {
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
   TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
+  FILTER_CREDIT_KIND = "FILTER_CREDIT_KIND",
 }
 
 interface FilterTitleAction {
   type: ActionType.FILTER_TITLE;
+  value: string;
+}
+
+interface FilterCreditKindAction {
+  type: ActionType.FILTER_CREDIT_KIND;
   value: string;
 }
 
@@ -163,6 +140,7 @@ interface ToggleReviewedAction {
 export type Action =
   | FilterTitleAction
   | FilterReleaseYearAction
+  | FilterCreditKindAction
   | SortAction
   | ShowMoreAction
   | ToggleReviewedAction;
@@ -191,6 +169,14 @@ export function reducer(state: State, action: Action): State {
           releaseYear >= action.values[0] && releaseYear <= action.values[1]
         );
       });
+    }
+    case ActionType.FILTER_CREDIT_KIND: {
+      return (
+        clearFilter(action.value, state, "credits") ??
+        updateFilter(state, "credits", (item) => {
+          return item.creditedAs.includes(action.value);
+        })
+      );
     }
     case ActionType.SORT: {
       filteredItems = sortItems(state.filteredItems, action.value);

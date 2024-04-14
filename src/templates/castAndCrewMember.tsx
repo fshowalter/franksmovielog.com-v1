@@ -23,28 +23,16 @@ export default function DirectorTemplate({
 }): JSX.Element {
   return (
     <CastAndCrewMember
-      entity={data.castAndCrewMember}
-      directorReleaseYears={data.distinct.directorReleaseYears}
-      performerReleaseYears={data.distinct.directorReleaseYears}
-      writerReleaseYears={data.distinct.directorReleaseYears}
+      member={data.castAndCrewMember}
+      distinctReleaseYears={data.distinct.releaseYears}
     />
   );
 }
 
 export const pageQuery = graphql`
   query CastAndCrewMemberTemplate($id: String!) {
-    distinct: allCastAndCrewJson(
-      filter: { id: { eq: $id }, slug: { ne: null } }
-    ) {
-      directorReleaseYears: distinct(
-        field: { director: { titles: { year: SELECT } } }
-      )
-      performerReleaseYears: distinct(
-        field: { director: { titles: { year: SELECT } } }
-      )
-      writerReleaseYears: distinct(
-        field: { director: { titles: { year: SELECT } } }
-      )
+    distinct: allCastAndCrewJson(filter: { id: { eq: $id } }) {
+      releaseYears: distinct(field: { titles: { year: SELECT } })
     }
     castAndCrewMember: castAndCrewMember(id: $id) {
       ...CastAndCrewMember

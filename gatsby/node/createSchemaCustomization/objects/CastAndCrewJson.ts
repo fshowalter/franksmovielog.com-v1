@@ -2,8 +2,8 @@ import { SchemaNames } from "../schemaNames";
 import { avatarFieldResolver } from "./fieldResolvers/avatarFieldResolver";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 
-export const CastAndCrewCreditsTitle = {
-  name: SchemaNames.CastAndCrewCreditsTitle,
+export const CastAndCrewMemberTitle = {
+  name: SchemaNames.CastAndCrewMemberTitle,
   fields: {
     imdbId: "String!",
     title: "String!",
@@ -15,6 +15,7 @@ export const CastAndCrewCreditsTitle = {
     releaseSequence: "String!",
     poster: posterFieldResolver,
     viewingSequence: "Int",
+    creditedAs: "[String!]!",
     reviewDate: {
       type: "Date",
       extensions: {
@@ -24,25 +25,16 @@ export const CastAndCrewCreditsTitle = {
   },
 };
 
-export const CastAndCrewCredits = {
-  name: SchemaNames.CastAndCrewCredits,
-  fields: {
-    titles: `[${SchemaNames.CastAndCrewCreditsTitle}!]!`,
-    reviewCount: "Int!",
-    watchlistCount: "Int!",
-  },
-};
-
 export const CastAndCrewJson = {
   name: SchemaNames.CastAndCrewJson,
   interfaces: ["Node"],
   fields: {
     name: "String!",
     slug: "String!",
-    mostCreditedAs: "String!",
-    director: `${SchemaNames.CastAndCrewCredits}!`,
-    performer: `${SchemaNames.CastAndCrewCredits}!`,
-    writer: `${SchemaNames.CastAndCrewCredits}!`,
+    creditedAs: "[String!]!",
+    reviewCount: "Int!",
+    totalCount: "Int!",
+    titles: `[${SchemaNames.CastAndCrewMemberTitle}!]!`,
     avatar: avatarFieldResolver,
   },
   extensions: {

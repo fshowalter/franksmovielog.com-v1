@@ -1,575 +1,437 @@
 {
   "name": "David Cronenberg",
   "slug": "david-cronenberg",
-  "director": {
-    "titles": [
-      {
-        "imdbId": "tt0065036",
-        "title": "Stereo",
-        "year": "1969",
-        "slug": "stereo-tile-3b-of-a-caee-educational-mosaic-1969",
-        "grade": "D",
-        "sortTitle": "Stereo (1969)",
-        "gradeValue": 3,
-        "releaseSequence": "1969-06-20tt0065036",
-        "reviewDate": "2020-12-26",
-        "viewingSequence": "2020-12-26-964"
-      },
-      {
-        "imdbId": "tt0065591",
-        "title": "Crimes of the Future",
-        "year": "1970",
-        "slug": "crimes-of-the-future-1970",
-        "grade": "D+",
-        "sortTitle": "Crimes of the Future (1970)",
-        "gradeValue": 4,
-        "releaseSequence": "1970-06-01tt0065591",
-        "reviewDate": "2021-01-03",
-        "viewingSequence": "2021-01-03-972"
-      },
-      {
-        "imdbId": "tt0073705",
-        "title": "Shivers",
-        "year": "1975",
-        "slug": "shivers-1975",
-        "grade": "C-",
-        "sortTitle": "Shivers (1975)",
-        "gradeValue": 5,
-        "releaseSequence": "1975-09-01tt0073705",
-        "reviewDate": "2021-01-28",
-        "viewingSequence": "2021-01-28-1000"
-      },
-      {
-        "imdbId": "tt0076590",
-        "title": "Rabid",
-        "year": "1977",
-        "slug": "rabid-1977",
-        "grade": "C-",
-        "sortTitle": "Rabid (1977)",
-        "gradeValue": 5,
-        "releaseSequence": "1977-04-08tt0076590",
-        "reviewDate": "2021-02-04",
-        "viewingSequence": "2021-02-04-1007"
-      },
-      {
-        "imdbId": "tt0079138",
-        "title": "Fast Company",
-        "year": "1979",
-        "slug": "fast-company-1979",
-        "grade": "C",
-        "sortTitle": "Fast Company (1979)",
-        "gradeValue": 6,
-        "releaseSequence": "1979-03-18tt0079138",
-        "reviewDate": "2022-02-08",
-        "viewingSequence": "2022-02-08-1246"
-      },
-      {
-        "imdbId": "tt0078908",
-        "title": "The Brood",
-        "year": "1979",
-        "slug": "the-brood-1979",
-        "grade": "D-",
-        "sortTitle": "Brood (1979)",
-        "gradeValue": 2,
-        "releaseSequence": "1979-05-25tt0078908",
-        "reviewDate": "2022-06-18",
-        "viewingSequence": "2022-06-18-1286"
-      },
-      {
-        "imdbId": "tt0081455",
-        "title": "Scanners",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Scanners (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-01-14tt0081455",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0086541",
-        "title": "Videodrome",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Videodrome (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-02-04tt0086541",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0085407",
-        "title": "The Dead Zone",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dead Zone (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-10-21tt0085407",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0091064",
-        "title": "The Fly",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fly (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-08-15tt0091064",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094964",
-        "title": "Dead Ringers",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dead Ringers (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-09-08tt0094964",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0102511",
-        "title": "Naked Lunch",
-        "year": "1991",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Naked Lunch (1991)",
-        "gradeValue": null,
-        "releaseSequence": "1991-12-12tt0102511",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0107468",
-        "title": "M. Butterfly",
-        "year": "1993",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "M. Butterfly (1993)",
-        "gradeValue": null,
-        "releaseSequence": "1993-09-01tt0107468",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0115964",
-        "title": "Crash",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Crash (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-05-17tt0115964",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120907",
-        "title": "eXistenZ",
-        "year": "1999",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "eXistenZ (1999)",
-        "gradeValue": null,
-        "releaseSequence": "1999-02-16tt0120907",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1612776",
-        "title": "Short6",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Short6 (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-09-17tt1612776",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0278731",
-        "title": "Spider",
-        "year": "2002",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Spider (2002)",
-        "gradeValue": null,
-        "releaseSequence": "2002-05-21tt0278731",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0399146",
-        "title": "A History of Violence",
-        "year": "2005",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "History of Violence (2005)",
-        "gradeValue": null,
-        "releaseSequence": "2005-05-16tt0399146",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0973844",
-        "title": "To Each His Own Cinema",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "To Each His Own Cinema (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-05-20tt0973844",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0765443",
-        "title": "Eastern Promises",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Eastern Promises (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-09-08tt0765443",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1571222",
-        "title": "A Dangerous Method",
-        "year": "2011",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dangerous Method (2011)",
-        "gradeValue": null,
-        "releaseSequence": "2011-09-02tt1571222",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1480656",
-        "title": "Cosmopolis",
-        "year": "2012",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cosmopolis (2012)",
-        "gradeValue": null,
-        "releaseSequence": "2012-05-25tt1480656",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt2172584",
-        "title": "Maps to the Stars",
-        "year": "2014",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Maps to the Stars (2014)",
-        "gradeValue": null,
-        "releaseSequence": "2014-05-19tt2172584",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt14549466",
-        "title": "Crimes of the Future",
-        "year": "2022",
-        "slug": "crimes-of-the-future-2022",
-        "grade": "B-",
-        "sortTitle": "Crimes of the Future (2022)",
-        "gradeValue": 8,
-        "releaseSequence": "2022-05-23tt14549466",
-        "reviewDate": "2023-03-02",
-        "viewingSequence": "2023-03-02-1446"
-      }
-    ],
-    "reviewCount": 7,
-    "watchlistCount": 17
-  },
-  "writer": {
-    "titles": [
-      {
-        "imdbId": "tt0065036",
-        "title": "Stereo",
-        "year": "1969",
-        "slug": "stereo-tile-3b-of-a-caee-educational-mosaic-1969",
-        "grade": "D",
-        "sortTitle": "Stereo (1969)",
-        "gradeValue": 3,
-        "releaseSequence": "1969-06-20tt0065036",
-        "reviewDate": "2020-12-26",
-        "viewingSequence": "2020-12-26-964"
-      },
-      {
-        "imdbId": "tt0065591",
-        "title": "Crimes of the Future",
-        "year": "1970",
-        "slug": "crimes-of-the-future-1970",
-        "grade": "D+",
-        "sortTitle": "Crimes of the Future (1970)",
-        "gradeValue": 4,
-        "releaseSequence": "1970-06-01tt0065591",
-        "reviewDate": "2021-01-03",
-        "viewingSequence": "2021-01-03-972"
-      },
-      {
-        "imdbId": "tt0073705",
-        "title": "Shivers",
-        "year": "1975",
-        "slug": "shivers-1975",
-        "grade": "C-",
-        "sortTitle": "Shivers (1975)",
-        "gradeValue": 5,
-        "releaseSequence": "1975-09-01tt0073705",
-        "reviewDate": "2021-01-28",
-        "viewingSequence": "2021-01-28-1000"
-      },
-      {
-        "imdbId": "tt0076590",
-        "title": "Rabid",
-        "year": "1977",
-        "slug": "rabid-1977",
-        "grade": "C-",
-        "sortTitle": "Rabid (1977)",
-        "gradeValue": 5,
-        "releaseSequence": "1977-04-08tt0076590",
-        "reviewDate": "2021-02-04",
-        "viewingSequence": "2021-02-04-1007"
-      },
-      {
-        "imdbId": "tt0079138",
-        "title": "Fast Company",
-        "year": "1979",
-        "slug": "fast-company-1979",
-        "grade": "C",
-        "sortTitle": "Fast Company (1979)",
-        "gradeValue": 6,
-        "releaseSequence": "1979-03-18tt0079138",
-        "reviewDate": "2022-02-08",
-        "viewingSequence": "2022-02-08-1246"
-      },
-      {
-        "imdbId": "tt0078908",
-        "title": "The Brood",
-        "year": "1979",
-        "slug": "the-brood-1979",
-        "grade": "D-",
-        "sortTitle": "Brood (1979)",
-        "gradeValue": 2,
-        "releaseSequence": "1979-05-25tt0078908",
-        "reviewDate": "2022-06-18",
-        "viewingSequence": "2022-06-18-1286"
-      },
-      {
-        "imdbId": "tt0081455",
-        "title": "Scanners",
-        "year": "1981",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Scanners (1981)",
-        "gradeValue": null,
-        "releaseSequence": "1981-01-14tt0081455",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0086541",
-        "title": "Videodrome",
-        "year": "1983",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Videodrome (1983)",
-        "gradeValue": null,
-        "releaseSequence": "1983-02-04tt0086541",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0091064",
-        "title": "The Fly",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fly (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-08-15tt0091064",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0094964",
-        "title": "Dead Ringers",
-        "year": "1988",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Dead Ringers (1988)",
-        "gradeValue": null,
-        "releaseSequence": "1988-09-08tt0094964",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0102511",
-        "title": "Naked Lunch",
-        "year": "1991",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Naked Lunch (1991)",
-        "gradeValue": null,
-        "releaseSequence": "1991-12-12tt0102511",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0115964",
-        "title": "Crash",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Crash (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-05-17tt0115964",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0120907",
-        "title": "eXistenZ",
-        "year": "1999",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "eXistenZ (1999)",
-        "gradeValue": null,
-        "releaseSequence": "1999-02-16tt0120907",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1612776",
-        "title": "Short6",
-        "year": "2001",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Short6 (2001)",
-        "gradeValue": null,
-        "releaseSequence": "2001-09-17tt1612776",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt1480656",
-        "title": "Cosmopolis",
-        "year": "2012",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Cosmopolis (2012)",
-        "gradeValue": null,
-        "releaseSequence": "2012-05-25tt1480656",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt14549466",
-        "title": "Crimes of the Future",
-        "year": "2022",
-        "slug": "crimes-of-the-future-2022",
-        "grade": "B-",
-        "sortTitle": "Crimes of the Future (2022)",
-        "gradeValue": 8,
-        "releaseSequence": "2022-05-23tt14549466",
-        "reviewDate": "2023-03-02",
-        "viewingSequence": "2023-03-02-1446"
-      }
-    ],
-    "reviewCount": 7,
-    "watchlistCount": 9
-  },
-  "performer": {
-    "titles": [
-      {
-        "imdbId": "tt0073705",
-        "title": "Shivers",
-        "year": "1975",
-        "slug": "shivers-1975",
-        "grade": "C-",
-        "sortTitle": "Shivers (1975)",
-        "gradeValue": 5,
-        "releaseSequence": "1975-09-01tt0073705",
-        "reviewDate": "2021-01-28",
-        "viewingSequence": "2021-01-28-1000"
-      },
-      {
-        "imdbId": "tt0091064",
-        "title": "The Fly",
-        "year": "1986",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Fly (1986)",
-        "gradeValue": null,
-        "releaseSequence": "1986-08-15tt0091064",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0100260",
-        "title": "Nightbreed",
-        "year": "1990",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Nightbreed (1990)",
-        "gradeValue": null,
-        "releaseSequence": "1990-02-16tt0100260",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0117768",
-        "title": "The Stupids",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Stupids (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-08-08tt0117768",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0116259",
-        "title": "Extreme Measures",
-        "year": "1996",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "Extreme Measures (1996)",
-        "gradeValue": null,
-        "releaseSequence": "1996-09-27tt0116259",
-        "reviewDate": null,
-        "viewingSequence": null
-      },
-      {
-        "imdbId": "tt0973844",
-        "title": "To Each His Own Cinema",
-        "year": "2007",
-        "slug": null,
-        "grade": null,
-        "sortTitle": "To Each His Own Cinema (2007)",
-        "gradeValue": null,
-        "releaseSequence": "2007-05-20tt0973844",
-        "reviewDate": null,
-        "viewingSequence": null
-      }
-    ],
-    "reviewCount": 1,
-    "watchlistCount": 5
-  },
-  "mostCreditedAs": "director"
+  "titles": [
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0065036",
+      "title": "Stereo",
+      "year": "1969",
+      "slug": "stereo-tile-3b-of-a-caee-educational-mosaic-1969",
+      "grade": "D",
+      "sortTitle": "Stereo (1969)",
+      "gradeValue": 3,
+      "releaseSequence": "1969-06-20tt0065036",
+      "reviewDate": "2020-12-26",
+      "viewingSequence": "2020-12-26-964"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0065591",
+      "title": "Crimes of the Future",
+      "year": "1970",
+      "slug": "crimes-of-the-future-1970",
+      "grade": "D+",
+      "sortTitle": "Crimes of the Future (1970)",
+      "gradeValue": 4,
+      "releaseSequence": "1970-06-01tt0065591",
+      "reviewDate": "2021-01-03",
+      "viewingSequence": "2021-01-03-972"
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0073705",
+      "title": "Shivers",
+      "year": "1975",
+      "slug": "shivers-1975",
+      "grade": "C-",
+      "sortTitle": "Shivers (1975)",
+      "gradeValue": 5,
+      "releaseSequence": "1975-09-01tt0073705",
+      "reviewDate": "2021-01-28",
+      "viewingSequence": "2021-01-28-1000"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0076590",
+      "title": "Rabid",
+      "year": "1977",
+      "slug": "rabid-1977",
+      "grade": "C-",
+      "sortTitle": "Rabid (1977)",
+      "gradeValue": 5,
+      "releaseSequence": "1977-04-08tt0076590",
+      "reviewDate": "2021-02-04",
+      "viewingSequence": "2021-02-04-1007"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0079138",
+      "title": "Fast Company",
+      "year": "1979",
+      "slug": "fast-company-1979",
+      "grade": "C",
+      "sortTitle": "Fast Company (1979)",
+      "gradeValue": 6,
+      "releaseSequence": "1979-03-18tt0079138",
+      "reviewDate": "2022-02-08",
+      "viewingSequence": "2022-02-08-1246"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0078908",
+      "title": "The Brood",
+      "year": "1979",
+      "slug": "the-brood-1979",
+      "grade": "D-",
+      "sortTitle": "Brood (1979)",
+      "gradeValue": 2,
+      "releaseSequence": "1979-05-25tt0078908",
+      "reviewDate": "2022-06-18",
+      "viewingSequence": "2022-06-18-1286"
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0081455",
+      "title": "Scanners",
+      "year": "1981",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Scanners (1981)",
+      "gradeValue": null,
+      "releaseSequence": "1981-01-14tt0081455",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0086541",
+      "title": "Videodrome",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Videodrome (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-02-04tt0086541",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0085407",
+      "title": "The Dead Zone",
+      "year": "1983",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dead Zone (1983)",
+      "gradeValue": null,
+      "releaseSequence": "1983-10-21tt0085407",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0091064",
+      "title": "The Fly",
+      "year": "1986",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Fly (1986)",
+      "gradeValue": null,
+      "releaseSequence": "1986-08-15tt0091064",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0094964",
+      "title": "Dead Ringers",
+      "year": "1988",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dead Ringers (1988)",
+      "gradeValue": null,
+      "releaseSequence": "1988-09-08tt0094964",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0100260",
+      "title": "Nightbreed",
+      "year": "1990",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Nightbreed (1990)",
+      "gradeValue": null,
+      "releaseSequence": "1990-02-16tt0100260",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0102511",
+      "title": "Naked Lunch",
+      "year": "1991",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Naked Lunch (1991)",
+      "gradeValue": null,
+      "releaseSequence": "1991-12-12tt0102511",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0107468",
+      "title": "M. Butterfly",
+      "year": "1993",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "M. Butterfly (1993)",
+      "gradeValue": null,
+      "releaseSequence": "1993-09-01tt0107468",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0115964",
+      "title": "Crash",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Crash (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-05-17tt0115964",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0117768",
+      "title": "The Stupids",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Stupids (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-08-08tt0117768",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer"
+      ],
+      "imdbId": "tt0116259",
+      "title": "Extreme Measures",
+      "year": "1996",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Extreme Measures (1996)",
+      "gradeValue": null,
+      "releaseSequence": "1996-09-27tt0116259",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt0120907",
+      "title": "eXistenZ",
+      "year": "1999",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "eXistenZ (1999)",
+      "gradeValue": null,
+      "releaseSequence": "1999-02-16tt0120907",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt1612776",
+      "title": "Short6",
+      "year": "2001",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Short6 (2001)",
+      "gradeValue": null,
+      "releaseSequence": "2001-09-17tt1612776",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0278731",
+      "title": "Spider",
+      "year": "2002",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Spider (2002)",
+      "gradeValue": null,
+      "releaseSequence": "2002-05-21tt0278731",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0399146",
+      "title": "A History of Violence",
+      "year": "2005",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "History of Violence (2005)",
+      "gradeValue": null,
+      "releaseSequence": "2005-05-16tt0399146",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "performer",
+        "director"
+      ],
+      "imdbId": "tt0973844",
+      "title": "To Each His Own Cinema",
+      "year": "2007",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "To Each His Own Cinema (2007)",
+      "gradeValue": null,
+      "releaseSequence": "2007-05-20tt0973844",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt0765443",
+      "title": "Eastern Promises",
+      "year": "2007",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Eastern Promises (2007)",
+      "gradeValue": null,
+      "releaseSequence": "2007-09-08tt0765443",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt1571222",
+      "title": "A Dangerous Method",
+      "year": "2011",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Dangerous Method (2011)",
+      "gradeValue": null,
+      "releaseSequence": "2011-09-02tt1571222",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt1480656",
+      "title": "Cosmopolis",
+      "year": "2012",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Cosmopolis (2012)",
+      "gradeValue": null,
+      "releaseSequence": "2012-05-25tt1480656",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "director"
+      ],
+      "imdbId": "tt2172584",
+      "title": "Maps to the Stars",
+      "year": "2014",
+      "slug": null,
+      "grade": null,
+      "sortTitle": "Maps to the Stars (2014)",
+      "gradeValue": null,
+      "releaseSequence": "2014-05-19tt2172584",
+      "reviewDate": null,
+      "viewingSequence": null
+    },
+    {
+      "creditedAs": [
+        "writer",
+        "director"
+      ],
+      "imdbId": "tt14549466",
+      "title": "Crimes of the Future",
+      "year": "2022",
+      "slug": "crimes-of-the-future-2022",
+      "grade": "B-",
+      "sortTitle": "Crimes of the Future (2022)",
+      "gradeValue": 8,
+      "releaseSequence": "2022-05-23tt14549466",
+      "reviewDate": "2023-03-02",
+      "viewingSequence": "2023-03-02-1446"
+    }
+  ],
+  "reviewCount": 7,
+  "totalCount": 27,
+  "creditedAs": [
+    "director",
+    "writer",
+    "performer"
+  ]
 }

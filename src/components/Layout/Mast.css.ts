@@ -24,7 +24,7 @@ export const navActiveLinkStyle = style({
 
 export const orderStyle = style({
   "@media": {
-    [minMediaQuery("desktop")]: {
+    [minMediaQuery("max")]: {
       order: 4,
     },
   },
