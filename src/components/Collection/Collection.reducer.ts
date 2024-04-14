@@ -19,15 +19,12 @@ const SHOW_COUNT_DEFAULT = 100;
 const groupItems = buildGroupItems(groupForItem);
 const { updateFilter, applyFilters } = filterTools(sortItems, groupItems);
 
-function sortItems(
-  items: Queries.WatchlistEntityTitleFragment[],
-  sortOrder: Sort,
-) {
+function sortItems(items: Queries.CollectionTitleFragment[], sortOrder: Sort) {
   const sortMap: Record<
     Sort,
     (
-      a: Queries.WatchlistEntityTitleFragment,
-      b: Queries.WatchlistEntityTitleFragment,
+      a: Queries.CollectionTitleFragment,
+      b: Queries.CollectionTitleFragment,
     ) => number
   > = {
     "release-date-desc": (a, b) =>
@@ -45,7 +42,7 @@ function sortItems(
 }
 
 function groupForItem(
-  item: Queries.WatchlistEntityTitleFragment,
+  item: Queries.CollectionTitleFragment,
   sortValue: Sort,
 ): string {
   switch (sortValue) {
@@ -72,9 +69,9 @@ function groupForItem(
 
 export interface State
   extends FilterableState<
-    Queries.WatchlistEntityTitleFragment,
+    Queries.CollectionTitleFragment,
     Sort,
-    Map<string, Queries.WatchlistEntityTitleFragment[]>
+    Map<string, Queries.CollectionTitleFragment[]>
   > {
   hideReviewed: boolean;
 }
@@ -83,7 +80,7 @@ export function initState({
   items,
   sort,
 }: {
-  items: Queries.WatchlistEntityTitleFragment[];
+  items: Queries.CollectionTitleFragment[];
   sort: Sort;
 }): State {
   return {
@@ -196,7 +193,7 @@ export function reducer(state: State, action: Action): State {
       } else {
         filters = {
           ...state.filters,
-          reviewed: (item: Queries.WatchlistEntityTitleFragment) => {
+          reviewed: (item: Queries.CollectionTitleFragment) => {
             return item.slug === null;
           },
         };

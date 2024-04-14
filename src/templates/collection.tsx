@@ -31,12 +31,12 @@ export default function CollectionTemplate({
 
 export const pageQuery = graphql`
   query CollectionTemplate($id: String!) {
-    distinct: allWatchlistCollectionsJson(
+    distinct: allCollectionsJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
       releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    collection: watchlistCollection(id: $id) {
+    collection: collection(id: $id) {
       ...Collection
     }
   }

@@ -3,7 +3,7 @@ import type { GatsbyNodeContext } from "../createSchemaCustomization/type-defini
 
 export const collectionQuery = {
   Query: {
-    watchlistCollection: {
+    collection: {
       type: `${SchemaNames.CollectionsJson}!`,
       args: {
         id: "String!",

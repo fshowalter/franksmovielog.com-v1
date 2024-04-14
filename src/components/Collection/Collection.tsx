@@ -10,30 +10,20 @@ export function Collection({
   collection,
   distinctReleaseYears,
 }: {
-  entity: Queries.CollectionFragment;
-  entityType: EntityType;
+  collection: Queries.CollectionFragment;
   distinctReleaseYears: readonly string[];
-  tagline: string;
-  breadcrumb: string;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...entity.titles],
+      items: [...collection.titles],
       sort: "release-date-asc",
     },
     initState,
   );
   return (
     <ListWithFiltersLayout
-      header={
-        <Header
-          entity={entity}
-          entityType={entityType}
-          tagline={tagline}
-          breadcrumb={breadcrumb}
-        />
-      }
+      header={<Header collection={collection} />}
       filters={
         <Filters
           dispatch={dispatch}
@@ -55,7 +45,7 @@ export function Collection({
 }
 
 export const query = graphql`
-  fragment CollectionTitle on CollectionTitles {
+  fragment CollectionTitle on CollectionTitle {
     imdbId
     title
     year
@@ -85,7 +75,7 @@ export const query = graphql`
       }
     }
     titles {
-      ...WatchlistEntityTitle
+      ...CollectionTitle
     }
   }
 `;

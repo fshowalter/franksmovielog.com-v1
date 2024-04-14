@@ -14,7 +14,7 @@ export function Collections({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      collections,
+      entities: collections,
       sort: "name-asc",
     },
     initState,

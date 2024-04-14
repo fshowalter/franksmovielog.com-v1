@@ -1,4 +1,4 @@
-import type { Actions, CreatePagesArgs } from "gatsby";
+import type { CreatePagesArgs } from "gatsby";
 import path from "path";
 
 interface CollectionQueryResult {
@@ -10,11 +10,13 @@ interface CollectionQueryResult {
   };
 }
 
-async function createCollectionPages(
-  graphql: CreatePagesArgs["graphql"],
-  reporter: CreatePagesArgs["reporter"],
-  createPage: Actions["createPage"],
-) {
+export async function createCollectionPages({
+  graphql,
+  reporter,
+  actions,
+}: CreatePagesArgs) {
+  const { createPage } = actions;
+
   const queryResult = await graphql<CollectionQueryResult>(`
     {
       collection: allCollectionsJson(filter: { reviewCount: { gt: 0 } }) {
@@ -42,14 +44,4 @@ async function createCollectionPages(
       },
     });
   });
-}
-
-export async function createWatchlistPages({
-  graphql,
-  reporter,
-  actions,
-}: CreatePagesArgs) {
-  const { createPage } = actions;
-
-  await createCollectionPages(graphql, reporter, createPage);
 }
