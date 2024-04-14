@@ -1,21 +1,16 @@
 import { graphql } from "gatsby";
 import { useReducer } from "react";
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
+import { initState, reducer } from "./Collection.reducer";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
 import { List } from "./List";
-import { initState, reducer } from "./WatchlistEntity.reducer";
 
-type EntityType = "director" | "performer" | "writer" | "collection";
-
-export function WatchlistEntity({
-  entity,
-  entityType,
+export function Collection({
+  collection,
   distinctReleaseYears,
-  tagline,
-  breadcrumb,
 }: {
-  entity: Queries.WatchlistEntityFragment;
+  entity: Queries.CollectionFragment;
   entityType: EntityType;
   distinctReleaseYears: readonly string[];
   tagline: string;
@@ -60,7 +55,7 @@ export function WatchlistEntity({
 }
 
 export const query = graphql`
-  fragment WatchlistEntityTitle on WatchlistEntityTitle {
+  fragment CollectionTitle on CollectionTitles {
     imdbId
     title
     year
@@ -74,7 +69,7 @@ export const query = graphql`
     }
   }
 
-  fragment WatchlistEntity on WatchlistEntity {
+  fragment Collection on CollectionsJson {
     name
     reviewCount
     avatar {

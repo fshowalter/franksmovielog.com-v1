@@ -1,6 +1,6 @@
 import { DebouncedInput } from "../DebouncedInput";
 import { SelectField } from "../SelectField";
-import { Action, ActionType, SortValue } from "./WatchlistEntities.reducer";
+import { Action, ActionType, SortValue } from "./Collections.reducer";
 
 export function Filters({
   dispatch,

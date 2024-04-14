@@ -5,7 +5,7 @@ import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
-import { Action, ActionType } from "./WatchlistEntity.reducer";
+import { Action, ActionType } from "./Collection.reducer";
 
 export function List({
   groupedItems,

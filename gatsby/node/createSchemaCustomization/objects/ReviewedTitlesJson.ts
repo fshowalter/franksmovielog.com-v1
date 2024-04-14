@@ -129,7 +129,7 @@ export const ReviewedTitleMore = {
 
 export const ReviewedTitlesJson = {
   name: SchemaNames.ReviewedTitlesJson,
-  interfaces: ["Node", "Title"],
+  interfaces: ["Node", SchemaNames.Title],
   fields: {
     sequence: "String!",
     reviewDate: {

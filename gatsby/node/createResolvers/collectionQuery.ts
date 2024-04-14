@@ -1,10 +1,10 @@
 import { SchemaNames } from "../createSchemaCustomization/schemaNames";
 import type { GatsbyNodeContext } from "../createSchemaCustomization/type-definitions";
 
-export const watchlistPerformerQuery = {
+export const collectionQuery = {
   Query: {
-    watchlistPerformer: {
-      type: `${SchemaNames.WatchlistPerformersJson}!`,
+    watchlistCollection: {
+      type: `${SchemaNames.CollectionsJson}!`,
       args: {
         id: "String!",
       },

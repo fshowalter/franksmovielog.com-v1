@@ -1,26 +1,20 @@
 import { graphql } from "gatsby";
 import { useReducer } from "react";
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
+import { initState, reducer } from "./Collections.reducer";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
 import { List } from "./List";
-import { initState, reducer } from "./WatchlistEntities.reducer";
 
-export function WatchlistEntities({
-  entities,
-  title,
-  tagline,
-  entityType,
+export function Collections({
+  collections,
 }: {
-  entities: readonly Queries.WatchlistEntitiesItemFragment[];
-  title: string;
-  tagline: string;
-  entityType: string;
+  collections: readonly Queries.CollectionsItemFragment[];
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      entities,
+      collections,
       sort: "name-asc",
     },
     initState,
@@ -28,11 +22,10 @@ export function WatchlistEntities({
 
   return (
     <ListWithFiltersLayout
-      header={<Header title={title} tagline={tagline} />}
+      header={<Header />}
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <List
-          entityType={entityType}
           entities={state.filteredEntities}
           totalCount={state.filteredEntities.length}
           visibleCount={state.filteredEntities.length}
@@ -43,7 +36,7 @@ export function WatchlistEntities({
 }
 
 export const query = graphql`
-  fragment WatchlistEntitiesItem on WatchlistEntity {
+  fragment CollectionsItem on CollectionsJson {
     name
     slug
     titleCount

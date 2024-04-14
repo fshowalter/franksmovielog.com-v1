@@ -14,14 +14,14 @@ export type SortValue =
   | "review-count-desc";
 
 function sortEntities(
-  entities: Queries.WatchlistEntitiesItemFragment[],
+  entities: Queries.CollectionsItemFragment[],
   sortOrder: SortValue,
-): Queries.WatchlistEntitiesItemFragment[] {
+): Queries.CollectionsItemFragment[] {
   const sortMap: Record<
     SortValue,
     (
-      a: Queries.WatchlistEntitiesItemFragment,
-      b: Queries.WatchlistEntitiesItemFragment,
+      a: Queries.CollectionsItemFragment,
+      b: Queries.CollectionsItemFragment,
     ) => number
   > = {
     "name-asc": (a, b) => sortString(a.name, b.name),
@@ -39,19 +39,16 @@ function sortEntities(
 }
 
 interface State {
-  allEntities: Queries.WatchlistEntitiesItemFragment[];
-  filteredEntities: Queries.WatchlistEntitiesItemFragment[];
-  filters: Record<
-    string,
-    (entity: Queries.WatchlistEntitiesItemFragment) => boolean
-  >;
+  allEntities: Queries.CollectionsItemFragment[];
+  filteredEntities: Queries.CollectionsItemFragment[];
+  filters: Record<string, (entity: Queries.CollectionsItemFragment) => boolean>;
   sortValue: SortValue;
 }
 
 export function initState({
   entities,
 }: {
-  entities: readonly Queries.WatchlistEntitiesItemFragment[];
+  entities: readonly Queries.CollectionsItemFragment[];
 }): State {
   return {
     allEntities: [...entities],
@@ -87,12 +84,12 @@ export function reducer(state: State, action: Action): State {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        name: (person: Queries.WatchlistEntitiesItemFragment) => {
+        name: (person: Queries.CollectionsItemFragment) => {
           return regex.test(person.name);
         },
       };
       filteredEntities = sortEntities(
-        filterCollection<Queries.WatchlistEntitiesItemFragment>({
+        filterCollection<Queries.CollectionsItemFragment>({
           collection: state.allEntities,
           filters,
         }),

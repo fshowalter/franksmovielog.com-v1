@@ -3,7 +3,7 @@ import { Button } from "../Button";
 import { DebouncedInput } from "../DebouncedInput";
 import { SelectField } from "../SelectField";
 import { YearInput } from "../YearInput";
-import { Action, ActionType, Sort } from "./WatchlistEntity.reducer";
+import { Action, ActionType, Sort } from "./Collection.reducer";
 
 export function Filters({
   dispatch,

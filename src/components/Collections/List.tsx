@@ -8,13 +8,11 @@ import { Spacer } from "../Spacer";
 import { countMarginStyle } from "./List.css";
 
 export function List({
-  entityType,
   entities,
   totalCount,
   visibleCount,
 }: {
-  entityType: string;
-  entities: readonly Queries.WatchlistEntitiesItemFragment[];
+  entities: readonly Queries.CollectionsItemFragment[];
   totalCount: number;
   visibleCount: number;
 }): JSX.Element {
@@ -23,13 +21,7 @@ export function List({
       <ListInfo totalCount={totalCount} visibleCount={visibleCount} />
       <Box as="ol" data-testid="entity-list">
         {entities.map((entity) => {
-          return (
-            <EntityListItem
-              key={entity.name}
-              entity={entity}
-              entityType={entityType}
-            />
-          );
+          return <CollectionListItem key={entity.name} entity={entity} />;
         })}
       </Box>
       <Spacer axis="vertical" size={32} />
@@ -37,33 +29,25 @@ export function List({
   );
 }
 
-function EntityListItem({
+function CollectionListItem({
   entity,
-  entityType,
 }: {
-  entity: Queries.WatchlistEntitiesItemFragment;
-  entityType: string;
+  entity: Queries.CollectionsItemFragment;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">
-      <Avatar entity={entity} entityType={entityType} />
-      <EntityName entity={entity} entityType={entityType} />
+      <Avatar entity={entity} />
+      <CollectionName entity={entity} />
       <ReviewCount entity={entity} />
     </ListItem>
   );
 }
 
-function Avatar({
-  entity,
-  entityType,
-}: {
-  entity: Queries.WatchlistEntitiesItemFragment;
-  entityType: string;
-}) {
+function Avatar({ entity }: { entity: Queries.CollectionsItemFragment }) {
   if (entity.avatar && entity.slug) {
     return (
       <Link
-        to={`/watchlist/${entityType}s/${entity.slug}/`}
+        to={`/collections/${entity.slug}/`}
         transform="safariBorderRadiusFix"
         overflow="hidden"
         boxShadow="borderAll"
@@ -97,16 +81,14 @@ function Avatar({
   );
 }
 
-function EntityName({
+function CollectionName({
   entity,
-  entityType,
 }: {
-  entity: Queries.WatchlistEntitiesItemFragment;
-  entityType: string;
+  entity: Queries.CollectionsItemFragment;
 }) {
   if (entity.slug) {
     return (
-      <Link to={`/watchlist/${entityType}s/${entity.slug}/`} fontSize="medium">
+      <Link to={`/collections/${entity.slug}/`} fontSize="medium">
         <Box lineHeight="default">{entity.name}</Box>
       </Link>
     );
@@ -122,7 +104,7 @@ function EntityName({
 function ReviewCount({
   entity,
 }: {
-  entity: Queries.WatchlistEntitiesItemFragment;
+  entity: Queries.CollectionsItemFragment;
 }): JSX.Element {
   return (
     <Box
