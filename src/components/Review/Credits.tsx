@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { stickyHeaderScrollMarginTopStyle } from "../../styles/utils.css";
-import { toSentenceArray } from "../../utils/toSentenceArray";
+import { toSentence } from "../../utils";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Spacer } from "../Spacer";
@@ -53,15 +53,12 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
         {review.originalTitle != review.title && (
           <Credit title="Original Title" value={review.originalTitle} />
         )}
-        <Credit title="Financing" value={toSentenceArray(review.countries)} />
+        <Credit title="Financing" value={toSentence(review.countries)} />
         <Credit title="Running Time" value={`${review.runtimeMinutes} min`} />
-        <Credit
-          title="Directed by"
-          value={toSentenceArray(review.directorNames)}
-        />
+        <Credit title="Directed by" value={toSentence(review.directorNames)} />
         <Credit
           title="Starring"
-          value={toSentenceArray(review.principalCastNames)}
+          value={toSentence(review.principalCastNames)}
         />
       </Box>
       <Spacer axis="vertical" size={32} />
