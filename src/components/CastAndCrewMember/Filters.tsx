@@ -16,7 +16,7 @@ export function Filters({
   dispatch: React.Dispatch<Action>;
   hideReviewed: boolean;
   distinctReleaseYears: readonly string[];
-  creditedAs: string[];
+  creditedAs: readonly string[];
   sortValue: Sort;
 }): JSX.Element {
   return (

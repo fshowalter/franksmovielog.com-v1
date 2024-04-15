@@ -23,7 +23,7 @@ export function Collections({
   return (
     <ListWithFiltersLayout
       header={<Header />}
-      filters={<Filters dispatch={dispatch} sortValue={state.sortValue} hid />}
+      filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <List
           entities={state.filteredEntities}
