@@ -93,7 +93,7 @@ function formatPeopleNames(
   suffix: string | string[],
 ): string[] {
   if (names.length === 0) {
-    return [""];
+    return [];
   }
 
   let append;
