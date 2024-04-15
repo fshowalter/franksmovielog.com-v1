@@ -1,63 +1,71 @@
 export const data = {
   distinct: {
     releaseYears: [
-      "1929",
-      "1930",
-      "1931",
-      "1932",
-      "1933",
-      "1934",
-      "1935",
-      "1936",
-      "1937",
-      "1938",
-      "1939",
-      "1940",
-      "1941",
-      "1944",
-      "1945",
       "1946",
       "1947",
       "1948",
       "1949",
       "1950",
+      "1951",
       "1952",
       "1953",
+      "1954",
       "1955",
-      "1956",
       "1957",
       "1958",
-      "1959",
       "1960",
       "1961",
-      "1962",
       "1963",
       "1964",
-      "1965",
+      "1966",
+      "1967",
+      "1968",
+      "1969",
+      "1971",
+      "1972",
+      "1974",
+      "1975",
+      "1976",
+      "1977",
+      "1978",
+      "1980",
+      "1982",
+      "1983",
+      "1984",
+      "1985",
+      "1986",
+      "1992",
+      "1993",
+      "1995",
+      "1997",
+      "2000",
+      "2003",
     ],
   },
-  director: {
-    name: "John Ford",
-    reviewCount: 12,
+  castAndCrewMember: {
+    name: "Ingmar Bergman",
+    reviewCount: 21,
+    totalCount: 57,
+    creditedAs: ["director", "writer", "performer"],
     avatar: {
       childImageSharp: {
         gatsbyImageData: {
           layout: "fixed" as const,
           placeholder: {
             fallback:
-              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+UlEQVR42j1UWSigYRT98yCRePBGKCl58IKakjReSMx4IKJkp0wZW1lSmGnGkiWRkJ3Jlp3sY2eMfd+N3TSyG9vDmc6dePj6/v/7v3vuOefe+ytXV1e4vLwE94eHB1n39/eyPz8/4+npCXd3d7i9vcXfv39f183NDS4uLnB6eoqTkxM547vy588fOeS6vr6WxctM8uvXLywuLmJ8fBxjY2NYWlrCzs6OfHuJ29/fl50EGKscHR3h8PBQsvAi2ezu7mJgYACDg4OYmJjAyMgISktLUVxcjP7+flkEJyiTEpBqGKvs7e0JwMHBAc7OzoQdQTIzM9HZ2Ynt7W38+PED9fX1yM3NxefPn5GQkICMjAwBI0PG0hpapWxtbYGLUo6Pj8UHMmMw5a6trWFmZgZ9fX2orq7Gly9fkJycDD8/P7S0tEgMST0+Pv4HXF1dxcrKCjY2NkT6+fk5Ojo6UFFRIYk2Nzfx8+dPtLe3o7W1FZWVlfj27Ru+fv2KhoYG0DKqeCmWQjD6sby8LPR///6NtrY2YckkTMiiNDU1CSN6yWS0Y3JyUkgwMf0TQKJTFkHpBdnQr6GhIYyOjuLTp0/iJ0F4npeXJ+Dfv38Xm+j/C6BIpn7KIlNWiwWhtMbGRqSkpMDNzQ1v3rxBWFgYHB0dYWVlJZKZjICM504wASTl9fV1LCwsCH2y5PPc3BzKy8sREhICT09PKYauri7MzMwQGhqKtLQ0UUGLCEi5r4D0j368SKZnBJ2fn5cWaW5uFrnW1tZ4+/at2FBYWCjKCMZ4NjWnSWEh6CEB2G8EoEdkTZ/YIpRIRsHBwUhMTERtba0QYMGmp6eFKavN4ZBJITN6kpqaioCAABQVFYnRZWVlKCkpkf4LDw+Hq6urJGAHTE1NSQyTsn1oEUkoRK2rq5OLsbGxCAoKgo+PjzQzL1ZVVSEmJgYeHh6y8vPzZSx7enrQ1dUlxaPXTEKLFJqalJSEwMBAREVFIT4+Hra2tvD39xdvyIRyIyIi8OHDB2kbgrBXa2pqpC+ZhPM9Ozv7H5Bd7+XlhY8fP0ogq6qpqQkXFxepbmRkJHx9fYV5Tk6OMCJz/izoL896e3tFtjI8PCwHzs7OwpJBdnZ2MDU1haqqKlRUVKClpQUjIyOxgwzpNe9TBSeGnnd3d0thFXrHA8okI3d3d3k2MTGBnp6egHHp6+u/9h8LZ2BgID8IqisoKBBfOW1Keno64uLiZAo4EU5OTnBwcIChoSF0dHSgra0NDQ0N2b29vREdHS2WGBsbw8bGBu/fv0d2dra0Dj1XsrKyBOzdu3ewsLCAvb29vJubmwtDnqmpqUFdXV2SsHVY7ZfvlpaWUlQOBNvmHwQkqDCHLtv6AAAAAElFTkSuQmCC",
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADXklEQVR42m1U2Su9XRg9/4IbomTIeIUrGTKlyJDxwnjBDSIyhwxFbgxlpoQoZEqmXFBEZMg8z9yQf2J9rfW1T+f3+76Lp/O+e797PWs9a+1juby8xPX1NS4uLnB1daXn29tb3N3d4f7+XsVnrv1f3dzc6AyL5y0EYp2dnWnTFuj5+RkvLy94eHj4DyjfWbaAJGexZcaDBujz81ON9vb2cHJy8sc+AW2ZG0CWxUhkJwN2fHyM0dFRLCws4PDw0ApydHSkJmRtlBhQw1SAfDFy39/fMTw8LMDz83Otv7294fX1Faenp2htbcX29rbW/p4xv7VQrgHk5uPjIw4ODrCxsYHFxUXMzc1hdXUVOzs7mlFnZyeysrIEwm//nuUfgNygZB4eGRnBxMSEZK+vr2NzcxO7u7tqEhsbqz3O2ZhkdZldDbphSCPGxsYwODiIiooKJCUlIS8vT2tsEB8fj+LiYo3BSLUyNDkkOjefnp7Q39+PsLAwlJSUID8/Hy4uLggKChII2TY2NqK+vl4mGblWQLpmAI0BVVVVsLe3R21tLZaXl/Xe0dGBpaUlzZOym5qaMD09LVXmvCQbIOM2I7G2tobCwkJMTU3JnK6uLrS1tYn5+Pg4ZmZm5Pb8/Lyyac6KoTHD/HKGJodkmJaWhoKCAlRWVqKsrAxDQ0NiRuD9/X1rRo1si4mLuU6cIcPc0NAggMzMTJSXl6vq6urQ29src2ZnZ9Xc9h5LMoHMXSUwn/nh5OQkampqkJOTo9w1NzeLJUHb29uVTxpq1JmQW7hgC8gZ/vz8aI7V1dWKDd3t6elBd3e3WJM9cxoeHi4FDPvAwIAiZTFSyerj40P/On19fUhMTFRsWlpalMHs7GxkZGQIgK6vrKxonWnw8fHRXmpq6r8uM6C8bnQyPT0dkZGRCAgIQHBwMKKjoxESEoKoqCjdkNzcXDWhXDLlvqenp0D5vYUmcB5xcXHw8vKCk5OTNmNiYpCQkAA3Nzf4+voKLDk5GaWlpdja2sL397cUhIaGIiUlBf7+/vDz84OF9hOAt8Hb2xvOzs6S4e7urs58dnV1FXOOgc05oq+vLxQVFSEwMFDRIlOCWjgTOzs7HSIIAR0cHFSOjo7W8vDwEFsaxTn//v7KMJKJiIjQ1SShfwCu2IfSzNdO7AAAAABJRU5ErkJggg==",
           },
           images: {
             fallback: {
-              src: "/static/28c691cfc6ec7ba6cad3b120bcf05f1d/448fd/john-ford.jpg",
+              src: "/static/e8980c4b7e173100bd44c071e0faea87/448fd/ingmar-bergman.jpg",
               srcSet:
-                "/static/28c691cfc6ec7ba6cad3b120bcf05f1d/448fd/john-ford.jpg 200w,\n/static/28c691cfc6ec7ba6cad3b120bcf05f1d/382f3/john-ford.jpg 400w",
+                "/static/e8980c4b7e173100bd44c071e0faea87/448fd/ingmar-bergman.jpg 200w,\n/static/e8980c4b7e173100bd44c071e0faea87/382f3/ingmar-bergman.jpg 400w",
               sizes: "200px",
             },
             sources: [
               {
                 srcSet:
-                  "/static/28c691cfc6ec7ba6cad3b120bcf05f1d/c7382/john-ford.avif 200w,\n/static/28c691cfc6ec7ba6cad3b120bcf05f1d/20a4d/john-ford.avif 400w",
+                  "/static/e8980c4b7e173100bd44c071e0faea87/c7382/ingmar-bergman.avif 200w,\n/static/e8980c4b7e173100bd44c071e0faea87/20a4d/ingmar-bergman.avif 400w",
                 type: "image/avif",
                 sizes: "200px",
               },
@@ -70,169 +78,30 @@ export const data = {
     },
     titles: [
       {
-        imdbId: "tt0019699",
-        title: "The Black Watch",
-        year: "1929",
-        grade: "F",
-        gradeValue: 1,
-        slug: "the-black-watch-1929",
-        sortTitle: "Black Watch, The",
-        releaseSequence: "1929tt0019699",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/08050f439b01b2a7f5b2563b3f5b3ad4/76ee4/the-black-watch-1929.jpg",
-                  srcSet:
-                    "/static/08050f439b01b2a7f5b2563b3f5b3ad4/76ee4/the-black-watch-1929.jpg 56w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/a7533/the-black-watch-1929.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/08050f439b01b2a7f5b2563b3f5b3ad4/b5dba/the-black-watch-1929.avif 56w,\n/static/08050f439b01b2a7f5b2563b3f5b3ad4/ab5a1/the-black-watch-1929.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0020359",
-        title: "Salute",
-        year: "1929",
-        grade: "D+",
-        gradeValue: 4,
-        slug: "salute-1929",
-        sortTitle: "Salute",
-        releaseSequence: "1929tt0020359",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/3251f70a0604bd387a4cae82bf806ffb/76ee4/salute-1929.jpg",
-                  srcSet:
-                    "/static/3251f70a0604bd387a4cae82bf806ffb/76ee4/salute-1929.jpg 56w,\n/static/3251f70a0604bd387a4cae82bf806ffb/a7533/salute-1929.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3251f70a0604bd387a4cae82bf806ffb/b5dba/salute-1929.avif 56w,\n/static/3251f70a0604bd387a4cae82bf806ffb/ab5a1/salute-1929.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0020702",
-        title: "Born Reckless",
-        year: "1930",
-        grade: "D+",
-        gradeValue: 4,
-        slug: "born-reckless-1930",
-        sortTitle: "Born Reckless",
-        releaseSequence: "1930tt0020702",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/e1a8d3caa79b0213ebde9f5e87a9591e/76ee4/born-reckless-1930.jpg",
-                  srcSet:
-                    "/static/e1a8d3caa79b0213ebde9f5e87a9591e/76ee4/born-reckless-1930.jpg 56w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/a7533/born-reckless-1930.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/e1a8d3caa79b0213ebde9f5e87a9591e/b5dba/born-reckless-1930.avif 56w,\n/static/e1a8d3caa79b0213ebde9f5e87a9591e/ab5a1/born-reckless-1930.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0021140",
-        title: "Men Without Women",
-        year: "1930",
-        grade: "C+",
-        gradeValue: 7,
-        slug: "men-without-women-1930",
-        sortTitle: "Men Without Women",
-        releaseSequence: "1930tt0021140",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg",
-                  srcSet:
-                    "/static/dbc56d5f031a66a9333f79c3d27e214f/76ee4/men-without-women-1930.jpg 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/a7533/men-without-women-1930.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/dbc56d5f031a66a9333f79c3d27e214f/b5dba/men-without-women-1930.avif 56w,\n/static/dbc56d5f031a66a9333f79c3d27e214f/ab5a1/men-without-women-1930.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0021508",
-        title: "Up the River",
-        year: "1930",
+        imdbId: "tt0038675",
+        title: "Crisis",
+        year: "1946",
         grade: "B-",
         gradeValue: 8,
-        slug: "up-the-river-1930",
-        sortTitle: "Up the River",
-        releaseSequence: "1930tt0021508",
+        slug: "crisis-1946",
+        sortTitle: "Crisis (1946)",
+        releaseSequence: "1946-02-25tt0038675",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/9b24450a272c100c7eb6117cb00d33ba/76ee4/up-the-river-1930.jpg",
+                  src: "/static/f9398b9a6e7a555ca97cffb170443883/76ee4/crisis-1946.jpg",
                   srcSet:
-                    "/static/9b24450a272c100c7eb6117cb00d33ba/76ee4/up-the-river-1930.jpg 56w,\n/static/9b24450a272c100c7eb6117cb00d33ba/a7533/up-the-river-1930.jpg 112w",
+                    "/static/f9398b9a6e7a555ca97cffb170443883/76ee4/crisis-1946.jpg 56w,\n/static/f9398b9a6e7a555ca97cffb170443883/a7533/crisis-1946.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/9b24450a272c100c7eb6117cb00d33ba/b5dba/up-the-river-1930.avif 56w,\n/static/9b24450a272c100c7eb6117cb00d33ba/ab5a1/up-the-river-1930.avif 112w",
+                      "/static/f9398b9a6e7a555ca97cffb170443883/b5dba/crisis-1946.avif 56w,\n/static/f9398b9a6e7a555ca97cffb170443883/ab5a1/crisis-1946.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -245,29 +114,66 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0021622",
-        title: "Arrowsmith",
-        year: "1931",
+        imdbId: "tt0038468",
+        title: "It Rains on Our Love",
+        year: "1946",
+        grade: "B",
+        gradeValue: 9,
+        slug: "it-rains-on-our-love-1946",
+        sortTitle: "It Rains on Our Love (1946)",
+        releaseSequence: "1946-11-09tt0038468",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ff0ccd71a209bb56a8a1139071c48b2b/76ee4/it-rains-on-our-love-1946.jpg",
+                  srcSet:
+                    "/static/ff0ccd71a209bb56a8a1139071c48b2b/76ee4/it-rains-on-our-love-1946.jpg 56w,\n/static/ff0ccd71a209bb56a8a1139071c48b2b/a7533/it-rains-on-our-love-1946.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ff0ccd71a209bb56a8a1139071c48b2b/b5dba/it-rains-on-our-love-1946.avif 56w,\n/static/ff0ccd71a209bb56a8a1139071c48b2b/ab5a1/it-rains-on-our-love-1946.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0039834",
+        title: "A Ship to India",
+        year: "1947",
         grade: "D+",
         gradeValue: 4,
-        slug: "arrowsmith-1931",
-        sortTitle: "Arrowsmith",
-        releaseSequence: "1931tt0021622",
+        slug: "a-ship-to-india-1947",
+        sortTitle: "Ship to India (1947)",
+        releaseSequence: "1947-09-01tt0039834",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/20549b2a916b4a602590dfd4d98e2875/76ee4/arrowsmith-1931.jpg",
+                  src: "/static/7c018ee0bef220c2b9020dc9ebbec982/76ee4/a-ship-to-india-1947.jpg",
                   srcSet:
-                    "/static/20549b2a916b4a602590dfd4d98e2875/76ee4/arrowsmith-1931.jpg 56w,\n/static/20549b2a916b4a602590dfd4d98e2875/a7533/arrowsmith-1931.jpg 112w",
+                    "/static/7c018ee0bef220c2b9020dc9ebbec982/76ee4/a-ship-to-india-1947.jpg 56w,\n/static/7c018ee0bef220c2b9020dc9ebbec982/a7533/a-ship-to-india-1947.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/20549b2a916b4a602590dfd4d98e2875/b5dba/arrowsmith-1931.avif 56w,\n/static/20549b2a916b4a602590dfd4d98e2875/ab5a1/arrowsmith-1931.avif 112w",
+                      "/static/7c018ee0bef220c2b9020dc9ebbec982/b5dba/a-ship-to-india-1947.avif 56w,\n/static/7c018ee0bef220c2b9020dc9ebbec982/ab5a1/a-ship-to-india-1947.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -280,64 +186,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0021695",
-        title: "The Brat",
-        year: "1931",
-        grade: "D-",
-        gradeValue: 2,
-        slug: "the-brat-1931",
-        sortTitle: "Brat, The",
-        releaseSequence: "1931tt0021695",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg",
-                  srcSet:
-                    "/static/3b1ce9e29d651bdb030317c5aa03cc8f/76ee4/the-brat-1931.jpg 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/a7533/the-brat-1931.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3b1ce9e29d651bdb030317c5aa03cc8f/b5dba/the-brat-1931.avif 56w,\n/static/3b1ce9e29d651bdb030317c5aa03cc8f/ab5a1/the-brat-1931.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0022353",
-        title: "The Seas Beneath",
-        year: "1931",
+        imdbId: "tt0040622",
+        title: "Music in Darkness",
+        year: "1948",
         grade: "D+",
         gradeValue: 4,
-        slug: "seas-beneath-1931",
-        sortTitle: "Seas Beneath, The",
-        releaseSequence: "1931tt0022353",
+        slug: "music-in-darkness-1948",
+        sortTitle: "Music in Darkness (1948)",
+        releaseSequence: "1948-01-17tt0040622",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg",
+                  src: "/static/80ca90fc9a3efc8e718ab1770e7d5d7e/76ee4/music-in-darkness-1948.jpg",
                   srcSet:
-                    "/static/b69aa80c0559af9cdfa586657a7b9c95/76ee4/seas-beneath-1931.jpg 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/a7533/seas-beneath-1931.jpg 112w",
+                    "/static/80ca90fc9a3efc8e718ab1770e7d5d7e/76ee4/music-in-darkness-1948.jpg 56w,\n/static/80ca90fc9a3efc8e718ab1770e7d5d7e/a7533/music-in-darkness-1948.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/b69aa80c0559af9cdfa586657a7b9c95/b5dba/seas-beneath-1931.avif 56w,\n/static/b69aa80c0559af9cdfa586657a7b9c95/ab5a1/seas-beneath-1931.avif 112w",
+                      "/static/80ca90fc9a3efc8e718ab1770e7d5d7e/b5dba/music-in-darkness-1948.avif 56w,\n/static/80ca90fc9a3efc8e718ab1770e7d5d7e/ab5a1/music-in-darkness-1948.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -350,29 +222,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0022615",
-        title: "Air Mail",
-        year: "1932",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Air Mail",
-        releaseSequence: "1932tt0022615",
+        imdbId: "tt0040418",
+        title: "Port of Call",
+        year: "1948",
+        grade: "D+",
+        gradeValue: 4,
+        slug: "port-of-call-1948",
+        sortTitle: "Port of Call (1948)",
+        releaseSequence: "1948-10-11tt0040418",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/c7fd17c74f5258264d10654cf3d68df7/76ee4/port-of-call-1948.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/c7fd17c74f5258264d10654cf3d68df7/76ee4/port-of-call-1948.jpg 56w,\n/static/c7fd17c74f5258264d10654cf3d68df7/a7533/port-of-call-1948.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/c7fd17c74f5258264d10654cf3d68df7/b5dba/port-of-call-1948.avif 56w,\n/static/c7fd17c74f5258264d10654cf3d68df7/ab5a1/port-of-call-1948.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -385,29 +258,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0022897",
-        title: "Flesh",
-        year: "1932",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Flesh",
-        releaseSequence: "1932tt0022897",
+        imdbId: "tt0041399",
+        title: "Prison",
+        year: "1949",
+        grade: "D+",
+        gradeValue: 4,
+        slug: "prison-1949",
+        sortTitle: "Prison (1949)",
+        releaseSequence: "1949-03-19tt0041399",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/63aecc6ea0f6ebc4280ec1cc05b020a1/76ee4/prison-1949.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/63aecc6ea0f6ebc4280ec1cc05b020a1/76ee4/prison-1949.jpg 56w,\n/static/63aecc6ea0f6ebc4280ec1cc05b020a1/a7533/prison-1949.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/63aecc6ea0f6ebc4280ec1cc05b020a1/b5dba/prison-1949.avif 56w,\n/static/63aecc6ea0f6ebc4280ec1cc05b020a1/ab5a1/prison-1949.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -420,344 +294,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0023955",
-        title: "Doctor Bull",
-        year: "1933",
-        grade: "C-",
-        gradeValue: 5,
-        slug: "doctor-bull-1933",
-        sortTitle: "Doctor Bull",
-        releaseSequence: "1933tt0023955",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/36be61541148066ebb4877325e6ffad4/76ee4/doctor-bull-1933.jpg",
-                  srcSet:
-                    "/static/36be61541148066ebb4877325e6ffad4/76ee4/doctor-bull-1933.jpg 56w,\n/static/36be61541148066ebb4877325e6ffad4/a7533/doctor-bull-1933.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/36be61541148066ebb4877325e6ffad4/b5dba/doctor-bull-1933.avif 56w,\n/static/36be61541148066ebb4877325e6ffad4/ab5a1/doctor-bull-1933.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0024453",
-        title: "Pilgrimage",
-        year: "1933",
-        grade: "C",
-        gradeValue: 6,
-        slug: "pilgrimage-1933",
-        sortTitle: "Pilgrimage",
-        releaseSequence: "1933tt0024453",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg",
-                  srcSet:
-                    "/static/2eb7f841948a8b76e88d5d3637f8266a/76ee4/pilgrimage-1933.jpg 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/a7533/pilgrimage-1933.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2eb7f841948a8b76e88d5d3637f8266a/b5dba/pilgrimage-1933.avif 56w,\n/static/2eb7f841948a8b76e88d5d3637f8266a/ab5a1/pilgrimage-1933.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0025335",
-        title: "Judge Priest",
-        year: "1934",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Judge Priest",
-        releaseSequence: "1934tt0025335",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0025423",
-        title: "The Lost Patrol",
-        year: "1934",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Lost Patrol, The",
-        releaseSequence: "1934tt0025423",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0026008",
-        title: "The World Moves On",
-        year: "1934",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "World Moves On, The",
-        releaseSequence: "1934tt0026008",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0026529",
-        title: "The Informer",
-        year: "1935",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Informer, The",
-        releaseSequence: "1935tt0026529",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0027042",
-        title: "Steamboat Round the Bend",
-        year: "1935",
-        grade: "C",
-        gradeValue: 6,
-        slug: "steamboat-round-the-bend-1935",
-        sortTitle: "Steamboat Round the Bend",
-        releaseSequence: "1935tt0027042",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/6fe4258194a6025d59fd85f5f526655d/76ee4/steamboat-round-the-bend-1935.jpg",
-                  srcSet:
-                    "/static/6fe4258194a6025d59fd85f5f526655d/76ee4/steamboat-round-the-bend-1935.jpg 56w,\n/static/6fe4258194a6025d59fd85f5f526655d/a7533/steamboat-round-the-bend-1935.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/6fe4258194a6025d59fd85f5f526655d/b5dba/steamboat-round-the-bend-1935.avif 56w,\n/static/6fe4258194a6025d59fd85f5f526655d/ab5a1/steamboat-round-the-bend-1935.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0027214",
-        title: "The Whole Town's Talking",
-        year: "1935",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Whole Town's Talking, The",
-        releaseSequence: "1935tt0027214",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0027948",
-        title: "Mary of Scotland",
-        year: "1936",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Mary of Scotland",
-        releaseSequence: "1936tt0027948",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0028112",
-        title: "The Plough and the Stars",
-        year: "1936",
+        imdbId: "tt0041998",
+        title: "Thirst",
+        year: "1949",
         grade: "F",
         gradeValue: 1,
-        slug: "the-plough-and-the-stars-1936",
-        sortTitle: "Plough and the Stars, The",
-        releaseSequence: "1936tt0028112",
+        slug: "thirst-1949",
+        sortTitle: "Thirst (1949)",
+        releaseSequence: "1949-10-17tt0041998",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/7015b5e4fcb39aaf7d2fcfc4106674da/76ee4/the-plough-and-the-stars-1936.jpg",
+                  src: "/static/1e6edea4a8d93354879bde0d8fd7181f/76ee4/thirst-1949.jpg",
                   srcSet:
-                    "/static/7015b5e4fcb39aaf7d2fcfc4106674da/76ee4/the-plough-and-the-stars-1936.jpg 56w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/a7533/the-plough-and-the-stars-1936.jpg 112w",
+                    "/static/1e6edea4a8d93354879bde0d8fd7181f/76ee4/thirst-1949.jpg 56w,\n/static/1e6edea4a8d93354879bde0d8fd7181f/a7533/thirst-1949.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/7015b5e4fcb39aaf7d2fcfc4106674da/b5dba/the-plough-and-the-stars-1936.avif 56w,\n/static/7015b5e4fcb39aaf7d2fcfc4106674da/ab5a1/the-plough-and-the-stars-1936.avif 112w",
+                      "/static/1e6edea4a8d93354879bde0d8fd7181f/b5dba/thirst-1949.avif 56w,\n/static/1e6edea4a8d93354879bde0d8fd7181f/ab5a1/thirst-1949.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -770,729 +330,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0028141",
-        title: "The Prisoner of Shark Island",
-        year: "1936",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Prisoner of Shark Island, The",
-        releaseSequence: "1936tt0028141",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0029030",
-        title: "The Hurricane",
-        year: "1937",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Hurricane, The",
-        releaseSequence: "1937tt0029030",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0029751",
-        title: "Wee Willie Winkie",
-        year: "1937",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Wee Willie Winkie",
-        releaseSequence: "1937tt0029751",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0030150",
-        title: "Four Men and a Prayer",
-        year: "1938",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Four Men and a Prayer",
-        releaseSequence: "1938tt0030150",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0030808",
-        title: "Submarine Patrol",
-        year: "1938",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Submarine Patrol",
-        releaseSequence: "1938tt0030808",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0031252",
-        title: "Drums Along the Mohawk",
-        year: "1939",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Drums Along the Mohawk",
-        releaseSequence: "1939tt0031252",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0031971",
-        title: "Stagecoach",
-        year: "1939",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Stagecoach",
-        releaseSequence: "1939tt0031971",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0032155",
-        title: "Young Mr. Lincoln",
-        year: "1939",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Young Mr. Lincoln",
-        releaseSequence: "1939tt0032155",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0032551",
-        title: "The Grapes of Wrath",
-        year: "1940",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Grapes of Wrath, The",
-        releaseSequence: "1940tt0032551",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0032728",
-        title: "The Long Voyage Home",
-        year: "1940",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Long Voyage Home, The",
-        releaseSequence: "1940tt0032728",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0033729",
-        title: "How Green Was My Valley",
-        year: "1941",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "How Green Was My Valley",
-        releaseSequence: "1941tt0033729",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0034297",
-        title: "Tobacco Road",
-        year: "1941",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Tobacco Road",
-        releaseSequence: "1941tt0034297",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0274560",
-        title: "Undercover",
-        year: "1944",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Undercover",
-        releaseSequence: "1944tt0274560",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0038160",
-        title: "They Were Expendable",
-        year: "1945",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "They Were Expendable",
-        releaseSequence: "1945tt0038160",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0038762",
-        title: "My Darling Clementine",
-        year: "1946",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "My Darling Clementine",
-        releaseSequence: "1946tt0038762",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0039402",
-        title: "The Fugitive",
-        year: "1947",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Fugitive, The",
-        releaseSequence: "1947tt0039402",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0040064",
-        title: "3 Godfathers",
-        year: "1948",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "3 Godfathers",
-        releaseSequence: "1948tt0040064",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0040369",
-        title: "Fort Apache",
-        year: "1948",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Fort Apache",
-        releaseSequence: "1948tt0040369",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0041746",
-        title: "Pinky",
-        year: "1949",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Pinky",
-        releaseSequence: "1949tt0041746",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0041866",
-        title: "She Wore a Yellow Ribbon",
-        year: "1949",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "She Wore a Yellow Ribbon",
-        releaseSequence: "1949tt0041866",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0042895",
-        title: "Rio Grande",
+        imdbId: "tt0043048",
+        title: "To Joy",
         year: "1950",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Rio Grande",
-        releaseSequence: "1950tt0042895",
+        grade: "C+",
+        gradeValue: 7,
+        slug: "to-joy-1950",
+        sortTitle: "To Joy (1950)",
+        releaseSequence: "1950-02-20tt0043048",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/871755eff3ddee3fef6069d3bd082d22/76ee4/to-joy-1950.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/871755eff3ddee3fef6069d3bd082d22/76ee4/to-joy-1950.jpg 56w,\n/static/871755eff3ddee3fef6069d3bd082d22/a7533/to-joy-1950.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/871755eff3ddee3fef6069d3bd082d22/b5dba/to-joy-1950.avif 56w,\n/static/871755eff3ddee3fef6069d3bd082d22/ab5a1/to-joy-1950.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1505,29 +366,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0043117",
-        title: "Wagon Master",
+        imdbId: "tt0043019",
+        title: "This Can't Happen Here",
         year: "1950",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Wagon Master",
-        releaseSequence: "1950tt0043117",
+        grade: "F",
+        gradeValue: 1,
+        slug: "this-cant-happen-here-1950",
+        sortTitle: "This Can't Happen Here (1950)",
+        releaseSequence: "1950-10-23tt0043019",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/34b306530bad69cbf1590e91bbd85249/76ee4/this-cant-happen-here-1950.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/34b306530bad69cbf1590e91bbd85249/76ee4/this-cant-happen-here-1950.jpg 56w,\n/static/34b306530bad69cbf1590e91bbd85249/a7533/this-cant-happen-here-1950.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/34b306530bad69cbf1590e91bbd85249/b5dba/this-cant-happen-here-1950.avif 56w,\n/static/34b306530bad69cbf1590e91bbd85249/ab5a1/this-cant-happen-here-1950.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1540,29 +402,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0043129",
-        title: "When Willie Comes Marching Home",
-        year: "1950",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "When Willie Comes Marching Home",
-        releaseSequence: "1950tt0043129",
+        imdbId: "tt0044060",
+        title: "Summer Interlude",
+        year: "1951",
+        grade: "C+",
+        gradeValue: 7,
+        slug: "summer-interlude-1951",
+        sortTitle: "Summer Interlude (1951)",
+        releaseSequence: "1951-10-01tt0044060",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/cfa7e43318f7c10264989ed3d8b2ed9f/76ee4/summer-interlude-1951.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/cfa7e43318f7c10264989ed3d8b2ed9f/76ee4/summer-interlude-1951.jpg 56w,\n/static/cfa7e43318f7c10264989ed3d8b2ed9f/a7533/summer-interlude-1951.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/cfa7e43318f7c10264989ed3d8b2ed9f/b5dba/summer-interlude-1951.avif 56w,\n/static/cfa7e43318f7c10264989ed3d8b2ed9f/ab5a1/summer-interlude-1951.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1575,29 +438,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0045061",
-        title: "The Quiet Man",
+        imdbId: "tt0044811",
+        title: "Secrets of Women",
         year: "1952",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Quiet Man, The",
-        releaseSequence: "1952tt0045061",
+        grade: "C-",
+        gradeValue: 5,
+        slug: "waiting-women-1952",
+        sortTitle: "Secrets of Women (1952)",
+        releaseSequence: "1952-11-03tt0044811",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/63994188403c8c1ce78bc3de3c00432b/76ee4/waiting-women-1952.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/63994188403c8c1ce78bc3de3c00432b/76ee4/waiting-women-1952.jpg 56w,\n/static/63994188403c8c1ce78bc3de3c00432b/a7533/waiting-women-1952.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/63994188403c8c1ce78bc3de3c00432b/b5dba/waiting-women-1952.avif 56w,\n/static/63994188403c8c1ce78bc3de3c00432b/ab5a1/waiting-women-1952.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1610,64 +474,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0045323",
-        title: "What Price Glory",
-        year: "1952",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "What Price Glory",
-        releaseSequence: "1952tt0045323",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0046085",
-        title: "Mogambo",
+        imdbId: "tt0046345",
+        title: "Summer with Monika",
         year: "1953",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Mogambo",
-        releaseSequence: "1953tt0046085",
+        grade: "B+",
+        gradeValue: 10,
+        slug: "summer-with-monika-1953",
+        sortTitle: "Summer with Monika (1953)",
+        releaseSequence: "1953-02-09tt0046345",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/8b68d2828f6c80db3716575da3abaeeb/76ee4/summer-with-monika-1953.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/8b68d2828f6c80db3716575da3abaeeb/76ee4/summer-with-monika-1953.jpg 56w,\n/static/8b68d2828f6c80db3716575da3abaeeb/a7533/summer-with-monika-1953.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/8b68d2828f6c80db3716575da3abaeeb/b5dba/summer-with-monika-1953.avif 56w,\n/static/8b68d2828f6c80db3716575da3abaeeb/ab5a1/summer-with-monika-1953.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1680,29 +510,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0046384",
-        title: "The Sun Shines Bright",
+        imdbId: "tt0045848",
+        title: "Sawdust and Tinsel",
         year: "1953",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Sun Shines Bright, The",
-        releaseSequence: "1953tt0046384",
+        grade: "B+",
+        gradeValue: 10,
+        slug: "sawdust-and-tinsel-1953",
+        sortTitle: "Sawdust and Tinsel (1953)",
+        releaseSequence: "1953-09-14tt0045848",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/bbbc7b5676486795ad0304c39573ab45/76ee4/sawdust-and-tinsel-1953.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/bbbc7b5676486795ad0304c39573ab45/76ee4/sawdust-and-tinsel-1953.jpg 56w,\n/static/bbbc7b5676486795ad0304c39573ab45/a7533/sawdust-and-tinsel-1953.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/bbbc7b5676486795ad0304c39573ab45/b5dba/sawdust-and-tinsel-1953.avif 56w,\n/static/bbbc7b5676486795ad0304c39573ab45/ab5a1/sawdust-and-tinsel-1953.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1715,29 +546,66 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0048312",
-        title: "The Long Gray Line",
+        imdbId: "tt0047167",
+        title: "A Lesson in Love",
+        year: "1954",
+        grade: "C",
+        gradeValue: 6,
+        slug: "a-lesson-in-love-1954",
+        sortTitle: "Lesson in Love (1954)",
+        releaseSequence: "1954-10-04tt0047167",
+        creditedAs: ["writer", "director", "performer"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/f4940ae0bc1f8160f7271c9387f4a490/76ee4/a-lesson-in-love-1954.jpg",
+                  srcSet:
+                    "/static/f4940ae0bc1f8160f7271c9387f4a490/76ee4/a-lesson-in-love-1954.jpg 56w,\n/static/f4940ae0bc1f8160f7271c9387f4a490/a7533/a-lesson-in-love-1954.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/f4940ae0bc1f8160f7271c9387f4a490/b5dba/a-lesson-in-love-1954.avif 56w,\n/static/f4940ae0bc1f8160f7271c9387f4a490/ab5a1/a-lesson-in-love-1954.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0048272",
+        title: "Dreams",
         year: "1955",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Long Gray Line, The",
-        releaseSequence: "1955tt0048312",
+        grade: "C+",
+        gradeValue: 7,
+        slug: "dreams-1955",
+        sortTitle: "Dreams (1955)",
+        releaseSequence: "1955-08-22tt0048272",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/1f1d2684db6db9defde5992eecfdab03/76ee4/dreams-1955.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/1f1d2684db6db9defde5992eecfdab03/76ee4/dreams-1955.jpg 56w,\n/static/1f1d2684db6db9defde5992eecfdab03/a7533/dreams-1955.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/1f1d2684db6db9defde5992eecfdab03/b5dba/dreams-1955.avif 56w,\n/static/1f1d2684db6db9defde5992eecfdab03/ab5a1/dreams-1955.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1750,29 +618,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0048380",
-        title: "Mister Roberts",
+        imdbId: "tt0048641",
+        title: "Smiles of a Summer Night",
         year: "1955",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Mister Roberts",
-        releaseSequence: "1955tt0048380",
+        grade: "C+",
+        gradeValue: 7,
+        slug: "smiles-of-a-summer-night-1955",
+        sortTitle: "Smiles of a Summer Night (1955)",
+        releaseSequence: "1955-12-26tt0048641",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/e3e7fd2f214543c8ee307569ec85f29e/76ee4/smiles-of-a-summer-night-1955.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/e3e7fd2f214543c8ee307569ec85f29e/76ee4/smiles-of-a-summer-night-1955.jpg 56w,\n/static/e3e7fd2f214543c8ee307569ec85f29e/a7533/smiles-of-a-summer-night-1955.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/e3e7fd2f214543c8ee307569ec85f29e/b5dba/smiles-of-a-summer-night-1955.avif 56w,\n/static/e3e7fd2f214543c8ee307569ec85f29e/ab5a1/smiles-of-a-summer-night-1955.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1785,29 +654,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0049730",
-        title: "The Searchers",
-        year: "1956",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Searchers, The",
-        releaseSequence: "1956tt0049730",
+        imdbId: "tt0050976",
+        title: "The Seventh Seal",
+        year: "1957",
+        grade: "B+",
+        gradeValue: 10,
+        slug: "the-seventh-seal-1957",
+        sortTitle: "Seventh Seal (1957)",
+        releaseSequence: "1957-02-16tt0050976",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/9ed112b7594e6a2516cd03dbca09a4e2/76ee4/the-seventh-seal-1957.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/9ed112b7594e6a2516cd03dbca09a4e2/76ee4/the-seventh-seal-1957.jpg 56w,\n/static/9ed112b7594e6a2516cd03dbca09a4e2/a7533/the-seventh-seal-1957.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/9ed112b7594e6a2516cd03dbca09a4e2/b5dba/the-seventh-seal-1957.avif 56w,\n/static/9ed112b7594e6a2516cd03dbca09a4e2/ab5a1/the-seventh-seal-1957.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1820,14 +690,15 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0050902",
-        title: "The Rising of the Moon",
+        imdbId: "tt0050502",
+        title: "Mr. Sleeman Is Coming",
         year: "1957",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Rising of the Moon, The",
-        releaseSequence: "1957tt0050902",
+        sortTitle: "Mr. Sleeman Is Coming (1957)",
+        releaseSequence: "1957-04-18tt0050502",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1855,29 +726,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0051198",
-        title: "The Wings of Eagles",
+        imdbId: "tt0050986",
+        title: "Wild Strawberries",
         year: "1957",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Wings of Eagles, The",
-        releaseSequence: "1957tt0051198",
+        grade: "C+",
+        gradeValue: 7,
+        slug: "wild-strawberries-1957",
+        sortTitle: "Wild Strawberries (1957)",
+        releaseSequence: "1957-12-26tt0050986",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/287a5d7f039f167c078038ab6aff2c41/76ee4/wild-strawberries-1957.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/287a5d7f039f167c078038ab6aff2c41/76ee4/wild-strawberries-1957.jpg 56w,\n/static/287a5d7f039f167c078038ab6aff2c41/a7533/wild-strawberries-1957.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/287a5d7f039f167c078038ab6aff2c41/b5dba/wild-strawberries-1957.avif 56w,\n/static/287a5d7f039f167c078038ab6aff2c41/ab5a1/wild-strawberries-1957.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1890,14 +762,15 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0051655",
-        title: "Gideon of Scotland Yard",
+        imdbId: "tt0130344",
+        title: "The Venetian",
         year: "1958",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Gideon of Scotland Yard",
-        releaseSequence: "1958tt0051655",
+        sortTitle: "Venetian (1958)",
+        releaseSequence: "1958-02-21tt0130344",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1925,14 +798,51 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0051845",
-        title: "The Last Hurrah",
+        imdbId: "tt0052017",
+        title: "Brink of Life",
+        year: "1958",
+        grade: "D+",
+        gradeValue: 4,
+        slug: "brink-of-life-1958",
+        sortTitle: "Brink of Life (1958)",
+        releaseSequence: "1958-03-31tt0052017",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/72d52b7c6d60ad9edf65a38f330375a7/76ee4/brink-of-life-1958.jpg",
+                  srcSet:
+                    "/static/72d52b7c6d60ad9edf65a38f330375a7/76ee4/brink-of-life-1958.jpg 56w,\n/static/72d52b7c6d60ad9edf65a38f330375a7/a7533/brink-of-life-1958.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/72d52b7c6d60ad9edf65a38f330375a7/b5dba/brink-of-life-1958.avif 56w,\n/static/72d52b7c6d60ad9edf65a38f330375a7/ab5a1/brink-of-life-1958.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0130204",
+        title: "Rabies",
         year: "1958",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Last Hurrah, The",
-        releaseSequence: "1958tt0051845",
+        sortTitle: "Rabies (1958)",
+        releaseSequence: "1958-11-07tt0130204",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -1960,29 +870,30 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0052902",
-        title: "The Horse Soldiers",
-        year: "1959",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Horse Soldiers, The",
-        releaseSequence: "1959tt0052902",
+        imdbId: "tt0051365",
+        title: "The Magician",
+        year: "1958",
+        grade: "B",
+        gradeValue: 9,
+        slug: "the-magician-1958",
+        sortTitle: "Magician (1958)",
+        releaseSequence: "1958-12-26tt0051365",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  src: "/static/2906f7ae05b32c0962f745abc6ac3ce2/76ee4/the-magician-1958.jpg",
                   srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                    "/static/2906f7ae05b32c0962f745abc6ac3ce2/76ee4/the-magician-1958.jpg 56w,\n/static/2906f7ae05b32c0962f745abc6ac3ce2/a7533/the-magician-1958.jpg 112w",
                   sizes: "56px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                      "/static/2906f7ae05b32c0962f745abc6ac3ce2/b5dba/the-magician-1958.avif 56w,\n/static/2906f7ae05b32c0962f745abc6ac3ce2/ab5a1/the-magician-1958.avif 112w",
                     type: "image/avif",
                     sizes: "56px",
                   },
@@ -1995,14 +906,15 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0054292",
-        title: "Sergeant Rutledge",
+        imdbId: "tt0130171",
+        title: "Storm Weather",
         year: "1960",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Sergeant Rutledge",
-        releaseSequence: "1960tt0054292",
+        sortTitle: "Storm Weather (1960)",
+        releaseSequence: "1960-01-22tt0130171",
+        creditedAs: ["director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2030,14 +942,87 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0055558",
-        title: "Two Rode Together",
+        imdbId: "tt0053976",
+        title: "The Virgin Spring",
+        year: "1960",
+        grade: "B",
+        gradeValue: 9,
+        slug: "the-virgin-spring-1960",
+        sortTitle: "Virgin Spring (1960)",
+        releaseSequence: "1960-02-08tt0053976",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/708c380b880f54c30612a098199d1cb3/76ee4/the-virgin-spring-1960.jpg",
+                  srcSet:
+                    "/static/708c380b880f54c30612a098199d1cb3/76ee4/the-virgin-spring-1960.jpg 56w,\n/static/708c380b880f54c30612a098199d1cb3/a7533/the-virgin-spring-1960.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/708c380b880f54c30612a098199d1cb3/b5dba/the-virgin-spring-1960.avif 56w,\n/static/708c380b880f54c30612a098199d1cb3/ab5a1/the-virgin-spring-1960.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0053772",
+        title: "The Devil's Eye",
+        year: "1960",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Devil's Eye (1960)",
+        releaseSequence: "1960-10-17tt0053772",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0055499",
+        title: "Through a Glass Darkly",
         year: "1961",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Two Rode Together",
-        releaseSequence: "1961tt0055558",
+        sortTitle: "Through a Glass Darkly (1961)",
+        releaseSequence: "1961-10-16tt0055499",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2065,84 +1050,15 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0056085",
-        title: "How the West Was Won",
-        year: "1962",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "How the West Was Won",
-        releaseSequence: "1962tt0056085",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0056217",
-        title: "The Man Who Shot Liberty Valance",
-        year: "1962",
-        grade: null,
-        gradeValue: null,
-        slug: null,
-        sortTitle: "Man Who Shot Liberty Valance, The",
-        releaseSequence: "1962tt0056217",
-        poster: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
-                  srcSet:
-                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
-                  sizes: "56px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
-                    type: "image/avif",
-                    sizes: "56px",
-                  },
-                ],
-              },
-              width: 56,
-              height: 84,
-            },
-          },
-        },
-      },
-      {
-        imdbId: "tt0057007",
-        title: "Donovan's Reef",
+        imdbId: "tt0057358",
+        title: "Winter Light",
         year: "1963",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Donovan's Reef",
-        releaseSequence: "1963tt0057007",
+        sortTitle: "Winter Light (1963)",
+        releaseSequence: "1963-02-11tt0057358",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2170,14 +1086,87 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0057940",
-        title: "Cheyenne Autumn",
+        imdbId: "tt0129891",
+        title: "A Dream Play",
+        year: "1963",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Dream Play (1963)",
+        releaseSequence: "1963-05-02tt0129891",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0057611",
+        title: "The Silence",
+        year: "1963",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Silence (1963)",
+        releaseSequence: "1963-09-23tt0057611",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0058124",
+        title: "All These Women",
         year: "1964",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Cheyenne Autumn",
-        releaseSequence: "1964tt0057940",
+        sortTitle: "All These Women (1964)",
+        releaseSequence: "1964-06-15tt0058124",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2205,14 +1194,15 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0059930",
-        title: "Young Cassidy",
-        year: "1965",
+        imdbId: "tt0060827",
+        title: "Persona",
+        year: "1966",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "Young Cassidy",
-        releaseSequence: "1965tt0059930",
+        sortTitle: "Persona (1966)",
+        releaseSequence: "1966-10-18tt0060827",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {
@@ -2240,14 +1230,879 @@ export const data = {
         },
       },
       {
-        imdbId: "tt0060050",
-        title: "7 Women",
-        year: "1965",
+        imdbId: "tt0062306",
+        title: "Stimulantia",
+        year: "1967",
         grade: null,
         gradeValue: null,
         slug: null,
-        sortTitle: "7 Women",
-        releaseSequence: "1965tt0060050",
+        sortTitle: "Stimulantia (1967)",
+        releaseSequence: "1967-03-28tt0062306",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0063611",
+        title: "Shame",
+        year: "1968",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Shame (1968)",
+        releaseSequence: "1968-09-29tt0063611",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0063759",
+        title: "Hour of the Wolf",
+        year: "1968",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Hour of the Wolf (1968)",
+        releaseSequence: "1968-??-??tt0063759",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0064897",
+        title: "The Rite",
+        year: "1969",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Rite (1969)",
+        releaseSequence: "1969-03-25tt0064897",
+        creditedAs: ["writer", "director", "performer"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0064793",
+        title: "The Passion of Anna",
+        year: "1969",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Passion of Anna (1969)",
+        releaseSequence: "1969-11-10tt0064793",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0066826",
+        title: "The Touch",
+        year: "1971",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Touch (1971)",
+        releaseSequence: "1971-06-26tt0066826",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0069467",
+        title: "Cries & Whispers",
+        year: "1972",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Cries & Whispers (1972)",
+        releaseSequence: "1972-12-21tt0069467",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0184741",
+        title: "The Misanthrope",
+        year: "1974",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Misanthrope (1974)",
+        releaseSequence: "1974-05-10tt0184741",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt6725014",
+        title: "Scenes from a Marriage",
+        year: "1974",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Scenes from a Marriage (1974)",
+        releaseSequence: "1974-09-15tt6725014",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0073822",
+        title: "The Magic Flute",
+        year: "1975",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Magic Flute (1975)",
+        releaseSequence: "1975-01-01tt0073822",
+        creditedAs: ["writer"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0074147",
+        title: "Face to Face",
+        year: "1976",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Face to Face (1976)",
+        releaseSequence: "1976-04-05tt0074147",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0076686",
+        title: "The Serpent's Egg",
+        year: "1977",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Serpent's Egg (1977)",
+        releaseSequence: "1977-10-26tt0076686",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0077711",
+        title: "Autumn Sonata",
+        year: "1978",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Autumn Sonata (1978)",
+        releaseSequence: "1978-10-08tt0077711",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0080397",
+        title: "From the Life of the Marionettes",
+        year: "1980",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "From the Life of the Marionettes (1980)",
+        releaseSequence: "1980-07-13tt0080397",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0083922",
+        title: "Fanny and Alexander",
+        year: "1982",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Fanny and Alexander (1982)",
+        releaseSequence: "1982-12-17tt0083922",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0130010",
+        title: "Hustruskolan",
+        year: "1983",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Hustruskolan (1983)",
+        releaseSequence: "1983-12-25tt0130010",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0087193",
+        title: "After the Rehearsal",
+        year: "1984",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "After the Rehearsal (1984)",
+        releaseSequence: "1984-04-09tt0087193",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt1194576",
+        title: "Dom Juan",
+        year: "1985",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Dom Juan (1985)",
+        releaseSequence: "1985-04-23tt1194576",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0090222",
+        title: "The Blessed Ones",
+        year: "1986",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Blessed Ones (1986)",
+        releaseSequence: "1986-02-19tt0090222",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0104819",
+        title: "Madame de Sade",
+        year: "1992",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Madame de Sade (1992)",
+        releaseSequence: "1992-04-17tt0104819",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0313247",
+        title: "Backanterna",
+        year: "1993",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Backanterna (1993)",
+        releaseSequence: "1993-04-09tt0313247",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0111204",
+        title: "The Last Gasp",
+        year: "1995",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Last Gasp (1995)",
+        releaseSequence: "1995-01-06tt0111204",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0119496",
+        title: "In the Presence of a Clown",
+        year: "1997",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "In the Presence of a Clown (1997)",
+        releaseSequence: "1997-11-01tt0119496",
+        creditedAs: ["writer", "director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0303764",
+        title: "The Image Makers",
+        year: "2000",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Image Makers (2000)",
+        releaseSequence: "2000-11-15tt0303764",
+        creditedAs: ["director"],
+        poster: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg",
+                  srcSet:
+                    "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/76ee4/default.jpg 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/a7533/default.jpg 112w",
+                  sizes: "56px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/b5dba/default.avif 56w,\n/static/801b99703dc5ef5ed5dcd8bb3f5ed3b1/ab5a1/default.avif 112w",
+                    type: "image/avif",
+                    sizes: "56px",
+                  },
+                ],
+              },
+              width: 56,
+              height: 84,
+            },
+          },
+        },
+      },
+      {
+        imdbId: "tt0299478",
+        title: "Saraband",
+        year: "2003",
+        grade: null,
+        gradeValue: null,
+        slug: null,
+        sortTitle: "Saraband (2003)",
+        releaseSequence: "2003-12-01tt0299478",
+        creditedAs: ["writer", "director"],
         poster: {
           childImageSharp: {
             gatsbyImageData: {

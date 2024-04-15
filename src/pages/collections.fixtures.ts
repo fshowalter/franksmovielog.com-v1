@@ -1,5 +1,5 @@
 export const data = {
-  entity: {
+  collection: {
     nodes: [
       {
         name: "Child's Play",
@@ -98,7 +98,7 @@ export const data = {
         name: "Hammer Films",
         slug: "hammer-films",
         titleCount: 94,
-        reviewCount: 7,
+        reviewCount: 10,
         avatar: {
           childImageSharp: {
             gatsbyImageData: {

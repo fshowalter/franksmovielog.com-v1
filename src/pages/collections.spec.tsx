@@ -1,13 +1,13 @@
 import { act, render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
-import WatchlistCollectionsPage, { Head } from "./collections";
+import CollectionsPage, { Head } from "./collections";
 import { data } from "./collections.fixtures";
 
-describe("/watchlist/collections", () => {
+describe("/collections", () => {
   it("can filter by name", async () => {
     expect.hasAssertions();
 
-    render(<WatchlistCollectionsPage data={data} />);
+    render(<CollectionsPage data={data} />);
 
     // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
@@ -21,7 +21,7 @@ describe("/watchlist/collections", () => {
   it("can sort by name desc", async () => {
     expect.hasAssertions();
 
-    render(<WatchlistCollectionsPage data={data} />);
+    render(<CollectionsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -34,7 +34,7 @@ describe("/watchlist/collections", () => {
   it("can sort by name asc", async () => {
     expect.hasAssertions();
 
-    render(<WatchlistCollectionsPage data={data} />);
+    render(<CollectionsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -47,7 +47,7 @@ describe("/watchlist/collections", () => {
   it("can sort by title count desc", async () => {
     expect.hasAssertions();
 
-    render(<WatchlistCollectionsPage data={data} />);
+    render(<CollectionsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -60,7 +60,7 @@ describe("/watchlist/collections", () => {
   it("can sort by title count asc", async () => {
     expect.hasAssertions();
 
-    render(<WatchlistCollectionsPage data={data} />);
+    render(<CollectionsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -73,7 +73,7 @@ describe("/watchlist/collections", () => {
   it("can sort by review count desc", async () => {
     expect.hasAssertions();
 
-    render(<WatchlistCollectionsPage data={data} />);
+    render(<CollectionsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -86,7 +86,7 @@ describe("/watchlist/collections", () => {
   it("can sort by review count asc", async () => {
     expect.hasAssertions();
 
-    render(<WatchlistCollectionsPage data={data} />);
+    render(<CollectionsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -99,6 +99,6 @@ describe("/watchlist/collections", () => {
   it("sets page title", () => {
     render(<Head />);
 
-    expect(document.title).toStrictEqual("Watchlist Collections");
+    expect(document.title).toStrictEqual("Collections");
   });
 });

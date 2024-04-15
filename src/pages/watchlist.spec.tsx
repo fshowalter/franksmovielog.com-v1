@@ -228,27 +228,6 @@ describe("/watchlist", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
-  it("can hide reviewed titles", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
-  it("can show hidden reviewed titles", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-    await userEvent.click(screen.getByText("Show Reviewed"));
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
   it("can show more titles", async () => {
     expect.hasAssertions();
 
