@@ -27,8 +27,8 @@ function sortEntities(
   > = {
     "name-asc": (a, b) => sortString(a.name, b.name),
     "name-desc": (a, b) => sortString(a.name, b.name) * -1,
-    "title-count-asc": (a, b) => sortNumber(a.titleCount, b.titleCount),
-    "title-count-desc": (a, b) => sortNumber(a.titleCount, b.titleCount) * -1,
+    "title-count-asc": (a, b) => sortNumber(a.totalCount, b.totalCount),
+    "title-count-desc": (a, b) => sortNumber(a.totalCount, b.totalCount) * -1,
     "review-count-asc": (a, b) => sortNumber(a.reviewCount, b.reviewCount),
     "review-count-desc": (a, b) =>
       sortNumber(a.reviewCount, b.reviewCount) * -1,

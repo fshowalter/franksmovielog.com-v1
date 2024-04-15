@@ -12,7 +12,7 @@ import {
   posterStyle,
   titleStyle,
 } from "./Credits.css";
-import { WatchlistLinks } from "./WatchlistLinks";
+import { CreditsChips } from "./CreditsChips";
 
 interface ICreditsProps extends IBoxProps {
   review: Queries.CreditsFragment;
@@ -65,7 +65,7 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
         />
       </Box>
       <Spacer axis="vertical" size={32} />
-      <WatchlistLinks more={review.more} />
+      <CreditsChips chips={review.more} />
       <Spacer axis="vertical" size={32} />
       <Box
         as="a"
@@ -128,7 +128,7 @@ export const query = graphql`
       }
     }
     more {
-      ...WatchlistLinks
+      ...CreditChips
     }
   }
 `;

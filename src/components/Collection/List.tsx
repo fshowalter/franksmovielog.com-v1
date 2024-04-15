@@ -13,7 +13,7 @@ export function List({
   totalCount,
   visibleCount,
 }: {
-  groupedItems: Map<string, Queries.WatchlistEntityTitleFragment[]>;
+  groupedItems: Map<string, Queries.CollectionTitleFragment[]>;
   dispatch: React.Dispatch<Action>;
   totalCount: number;
   visibleCount: number;
@@ -36,7 +36,7 @@ export function List({
 function WatchlistTitle({
   item,
 }: {
-  item: Queries.WatchlistEntityTitleFragment;
+  item: Queries.CollectionTitleFragment;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">

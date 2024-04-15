@@ -8,6 +8,17 @@ const leadText = {
   collection: "",
 };
 
+function linkTarget(
+  entityType: "director" | "writer" | "performer" | "collection",
+  slug: string,
+): string {
+  if (entityType === "collection") {
+    return `/collections/${slug}`;
+  }
+
+  return `/cast-and-crew/${slug}`;
+}
+
 export function RelatedMoviesForWatchlistEntities({
   entityType,
   entities,
@@ -19,15 +30,15 @@ export function RelatedMoviesForWatchlistEntities({
     <>
       {entities.map((entity) => {
         return (
-          <StillListNav key={`${entityType}s/${entity.slug}`}>
+          <StillListNav key={entity.slug}>
             <StillListHeading
               leadText={`More${leadText[entityType]}`}
-              linkTarget={`/watchlist/${entityType}s/${entity.slug}`}
+              linkTarget={linkTarget(entityType, entity.slug)}
               linkText={entity.name}
             />
             <StillList
               movies={entity.titles}
-              seeAllLinkTarget={`/watchlist/${entityType}s/${entity.slug}/`}
+              seeAllLinkTarget={linkTarget(entityType, entity.slug)}
               seeAllLinkText={`${leadText[entityType]} ${entity.name}`}
             />
           </StillListNav>

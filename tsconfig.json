@@ -2,9 +2,8 @@
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node",
-    "target": "ES2020",
+    "target": "ES2021",
     "jsx": "preserve",
-    "lib": ["dom", "ES2020"],
     "strict": true,
     "noEmit": true,
     "forceConsistentCasingInFileNames": true,

@@ -16,16 +16,14 @@ export function Header(): JSX.Element {
       <PageTitle paddingTop={{ default: 24, desktop: 32 }} lineHeight={40}>
         Watchlist Progress
       </PageTitle>
+      <Spacer axis="vertical" size={8} />
       <Box as="q" color="subtle">
         I find your lack of faith disturbing.
       </Box>
-      <Spacer axis="vertical" size={16} />
-      <Box color="subtle">
-        <Spacer axis="vertical" size={16} />
-        <p>
-          My progress working through{" "}
-          <Link to="/watchlist/">my movie-review bucketlist</Link>.
-        </p>
+      <Spacer axis="vertical" size={32} />
+      <Box color="subtle" as="p">
+        My progress working through{" "}
+        <Link to="/watchlist/">my movie-review bucketlist</Link>.
       </Box>
     </Box>
   );

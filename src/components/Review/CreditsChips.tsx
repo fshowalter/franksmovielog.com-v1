@@ -2,14 +2,14 @@ import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
-import { avatarStyle, linkStyle } from "./WatchlistLinks.css";
+import { avatarStyle, linkStyle } from "./CreditsChips.css";
 
 interface IWatchlistLinksProps extends IBoxProps {
-  more: Queries.WatchlistLinksFragment;
+  chips: Queries.CreditChipsFragment;
 }
 
-export function WatchlistLinks({
-  more,
+export function CreditsChips({
+  chips,
   ...rest
 }: IWatchlistLinksProps): JSX.Element {
   return (
@@ -21,34 +21,26 @@ export function WatchlistLinks({
       rowGap={8}
       {...rest}
     >
-      <ListItemsForEntities
-        entities={more.inCollection}
-        entityType="collection"
-      />
-      <ListItemsForEntities entities={more.directedBy} entityType="director" />
-      <ListItemsForEntities
-        entities={more.withPerformer}
-        entityType="performer"
-      />
-      <ListItemsForEntities entities={more.writtenBy} entityType="writer" />
+      <Chips entities={chips.inCollection} />
+      <Chips entities={chips.directedBy} />
+      <Chips entities={chips.withPerformer} />
+      <Chips entities={chips.writtenBy} />
     </Box>
   );
 }
 
-function ListItemsForEntities({
-  entityType,
+function Chips({
   entities,
 }: {
-  entityType: string;
-  entities: readonly Queries.WatchlistLinkEntityFragment[];
+  entities: readonly Queries.CreditChipFragment[];
 }) {
   return (
     <>
       {entities.map((entity) => {
         return (
-          <Box as="li" display="block" key={`${entityType}s/${entity.slug}`}>
+          <Box as="li" display="block" key={entity.slug}>
             <Link
-              to={`/watchlist/${entityType}s/${entity.slug}/`}
+              to={`/cast-and-crew/${entity.slug}/`}
               backgroundColor="inverse"
               display="flex"
               alignItems="center"
@@ -76,7 +68,7 @@ function ListItemsForEntities({
 }
 
 export const query = graphql`
-  fragment WatchlistLinkEntity on ReviewedTitleMoreEntity {
+  fragment CreditChip on ReviewedTitleMoreEntity {
     name
     slug
     avatar {
@@ -93,18 +85,18 @@ export const query = graphql`
     }
   }
 
-  fragment WatchlistLinks on ReviewedTitleMore {
+  fragment CreditChips on ReviewedTitleMore {
     withPerformer {
-      ...WatchlistLinkEntity
+      ...CreditChip
     }
     directedBy {
-      ...WatchlistLinkEntity
+      ...CreditChip
     }
     writtenBy {
-      ...WatchlistLinkEntity
+      ...CreditChip
     }
     inCollection {
-      ...WatchlistLinkEntity
+      ...CreditChip
     }
   }
 `;

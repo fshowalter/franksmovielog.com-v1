@@ -30,6 +30,7 @@ export function Collection({
           hideReviewed={state.hideReviewed}
           sortValue={state.sortValue}
           distinctReleaseYears={distinctReleaseYears}
+          showHideReviewd={collection.reviewCount != collection.titles.length}
         />
       }
       list={
@@ -62,6 +63,7 @@ export const query = graphql`
   fragment Collection on CollectionsJson {
     name
     reviewCount
+    description
     avatar {
       childImageSharp {
         gatsbyImageData(

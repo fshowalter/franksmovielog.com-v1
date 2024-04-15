@@ -72,12 +72,15 @@ function EntityName({
   entityType: EntityType;
   entity: Queries.WatchlistProgressDetailFragment;
 }) {
-  if (entity.slug)
-    return (
-      <Link to={`/watchlist/${entityType}s/${entity.slug}/`}>
-        {entity.name}
-      </Link>
-    );
+  let linkTarget;
+
+  if (entityType === "collection") {
+    linkTarget = `/collections/${entity.slug}`;
+  } else {
+    linkTarget = `/cast-and-crew/${entity.slug}`;
+  }
+
+  if (entity.slug) return <Link to={linkTarget}>{entity.name}</Link>;
 
   return (
     <Box as="span" color="subtle">

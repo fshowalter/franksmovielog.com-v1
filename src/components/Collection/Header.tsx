@@ -2,8 +2,17 @@ import { Box } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { PageTitle } from "../PageTitle";
+import { RenderedMarkdown } from "../RenderedMarkdown";
 import { Spacer } from "../Spacer";
 import { avatarStyle } from "./Collection.css";
+
+function tagline(collection: Queries.CollectionFragment): string {
+  if (collection.titles.length === collection.reviewCount) {
+    return `Collection of ${collection.reviewCount.toLocaleString()} reviewed movies.`;
+  }
+
+  return `Collection of ${collection.titles.length.toLocaleString()} movies. ${collection.reviewCount.toLocaleString()} reviewed.`;
+}
 
 export function Header({
   collection,
@@ -28,10 +37,14 @@ export function Header({
       <Spacer axis="vertical" size={16} />
       <PageTitle textAlign="center">{collection.name}</PageTitle>
       <Spacer axis="vertical" size={24} />
-      <Box
-        color="subtle"
-        textAlign="center"
-      >{`Collection of ${collection.titles.length.toLocaleString()} movies. ${collection.reviewCount.toLocaleString()} reviewed.`}</Box>
+      <Box color="subtle" textAlign="center">
+        <RenderedMarkdown
+          // eslint-disable-next-line react/no-danger
+          text={collection.description || tagline(collection)}
+          lineHeight={1}
+          as="span"
+        />
+      </Box>
     </>
   );
 }

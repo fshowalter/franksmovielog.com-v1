@@ -5,10 +5,8 @@ import { Spacer } from "../Spacer";
 export function Header(): JSX.Element {
   return (
     <>
-      <PageTitle textAlign="center">
-        Cast & Crew
-        <Spacer axis="vertical" size={8} />
-      </PageTitle>
+      <PageTitle textAlign="center">Cast & Crew</PageTitle>
+      <Spacer axis="vertical" size={8} />
       <Box color="subtle">
         <Box as="q" display="block" textAlign="center" color="subtle">
           Round up the usual suspects.

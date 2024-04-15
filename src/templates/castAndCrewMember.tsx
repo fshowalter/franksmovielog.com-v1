@@ -4,22 +4,22 @@ import { CastAndCrewMember, HeadBuilder } from "../components";
 export function Head({
   data,
 }: {
-  data: Queries.DirectorTemplateQuery;
+  data: Queries.CastAndCrewMemberTemplateQuery;
 }): JSX.Element {
   return (
     <HeadBuilder
       pageTitle={data.castAndCrewMember.name}
-      description={`A sortable and filterable list of reviews of movies directed by ${data.castAndCrewMember.name}.`}
+      description={`A sortable and filterable list of reviews of ${data.castAndCrewMember.name} movies.`}
       image={null}
       article={false}
     />
   );
 }
 
-export default function DirectorTemplate({
+export default function CastAndCrewMemberTemplate({
   data,
 }: {
-  data: Queries.DirectorTemplateQuery;
+  data: Queries.CastAndCrewMemberTemplateQuery;
 }): JSX.Element {
   return (
     <CastAndCrewMember

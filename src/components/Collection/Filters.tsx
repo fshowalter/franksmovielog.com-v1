@@ -10,25 +10,31 @@ export function Filters({
   distinctReleaseYears,
   hideReviewed,
   sortValue,
+  showHideReviewd,
 }: {
   dispatch: React.Dispatch<Action>;
+  showHideReviewd: boolean;
   hideReviewed: boolean;
   distinctReleaseYears: readonly string[];
   sortValue: Sort;
 }): JSX.Element {
   return (
     <>
-      <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="flex-end"
-        flexBasis="full"
-        alignItems="center"
-      >
-        <Button onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}>
-          {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-        </Button>
-      </Box>
+      {showHideReviewd && (
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="flex-end"
+          flexBasis="full"
+          alignItems="center"
+        >
+          <Button
+            onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}
+          >
+            {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
+          </Button>
+        </Box>
+      )}
       <DebouncedInput
         label="Title"
         placeholder="Enter all or part of a title"

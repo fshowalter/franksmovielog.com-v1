@@ -82,11 +82,7 @@ function Avatar({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
   );
 }
 
-function EntityName({
-  entity,
-}: {
-  entity: Queries.WatchlistEntitiesItemFragment;
-}) {
+function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
   if (entity.slug) {
     return (
       <Box>
