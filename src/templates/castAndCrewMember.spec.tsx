@@ -13,7 +13,7 @@ describe("/cast-and-crew/{slug}", () => {
   it("sets page title", () => {
     render(<Head data={data} />);
 
-    expect(document.title).toStrictEqual("Ingmar Bergman");
+    expect(document.title).toStrictEqual("Burt Reynolds");
   });
 
   it("can filter by title", async () => {
@@ -103,8 +103,8 @@ describe("/cast-and-crew/{slug}", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1950");
-    await userEvent.selectOptions(toInput, "1960");
+    await userEvent.selectOptions(fromInput, "1970");
+    await userEvent.selectOptions(toInput, "1980");
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
@@ -126,6 +126,85 @@ describe("/cast-and-crew/{slug}", () => {
 
     await userEvent.click(screen.getByText("Hide Reviewed"));
     await userEvent.click(screen.getByText("Show Reviewed"));
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show director titles", async () => {
+    expect.hasAssertions();
+
+    render(<CastAndCrewMember data={data} />);
+
+    await userEvent.selectOptions(screen.getByLabelText("Credits"), "Director");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show director titles then show all", async () => {
+    expect.hasAssertions();
+
+    render(<CastAndCrewMember data={data} />);
+
+    await userEvent.selectOptions(screen.getByLabelText("Credits"), "Director");
+    await userEvent.selectOptions(screen.getByLabelText("Credits"), "All");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show writer titles", async () => {
+    expect.hasAssertions();
+
+    render(<CastAndCrewMember data={data} />);
+
+    await userEvent.selectOptions(screen.getByLabelText("Credits"), "Writer");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show writer titles then show all", async () => {
+    expect.hasAssertions();
+
+    render(<CastAndCrewMember data={data} />);
+
+    await userEvent.selectOptions(screen.getByLabelText("Credits"), "Writer");
+    await userEvent.selectOptions(screen.getByLabelText("Credits"), "All");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show performer titles", async () => {
+    expect.hasAssertions();
+
+    render(<CastAndCrewMember data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Credits"),
+      "Performer",
+    );
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show performer titles then show all", async () => {
+    expect.hasAssertions();
+
+    render(<CastAndCrewMember data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Credits"),
+      "Performer",
+    );
+    await userEvent.selectOptions(screen.getByLabelText("Credits"), "All");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show more credits", async () => {
+    expect.hasAssertions();
+
+    render(<CastAndCrewMember data={data} />);
+
+    await userEvent.click(screen.getByText("Show More..."));
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });

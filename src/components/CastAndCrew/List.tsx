@@ -83,21 +83,13 @@ function Avatar({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
 }
 
 function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
-  if (entity.slug) {
-    return (
-      <Box>
-        <Link to={`/cast-and-crew/${entity.slug}/`} fontSize="medium">
-          <Box lineHeight="default">{entity.name}</Box>
-        </Link>
-        <Spacer axis="vertical" size={4} />
-        <CreditedAs creditedAs={entity.creditedAs} />
-      </Box>
-    );
-  }
-
   return (
-    <Box color="subtle" fontSize="medium">
-      <Box lineHeight="default">{entity.name}</Box>
+    <Box>
+      <Link to={`/cast-and-crew/${entity.slug}/`} fontSize="medium">
+        <Box lineHeight="default">{entity.name}</Box>
+      </Link>
+      <Spacer axis="vertical" size={4} />
+      <CreditedAs creditedAs={entity.creditedAs} />
     </Box>
   );
 }
@@ -107,11 +99,12 @@ function ReviewCount({
 }: {
   entity: Queries.CastAndCrewItemFragment;
 }): JSX.Element {
+  if (entity.reviewCount === entity.totalCount) {
+    return <Box className={countMarginStyle}>{entity.totalCount}</Box>;
+  }
+
   return (
-    <Box
-      color={entity.reviewCount === entity.totalCount ? "progress" : "subtle"}
-      className={countMarginStyle}
-    >
+    <Box className={countMarginStyle}>
       {entity.reviewCount} / {entity.totalCount}
     </Box>
   );

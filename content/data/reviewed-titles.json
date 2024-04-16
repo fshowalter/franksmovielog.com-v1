@@ -1355,6 +1355,40 @@
       "directedBy": [],
       "withPerformer": [
         {
+          "name": "Ward Bond",
+          "slug": "ward-bond",
+          "titles": [
+            {
+              "title": "Salute",
+              "imdbId": "tt0020359",
+              "year": "1929",
+              "slug": "salute-1929",
+              "grade": "D+"
+            },
+            {
+              "title": "Born Reckless",
+              "imdbId": "tt0020702",
+              "year": "1930",
+              "slug": "born-reckless-1930",
+              "grade": "D+"
+            },
+            {
+              "title": "The Searchers",
+              "imdbId": "tt0049730",
+              "year": "1956",
+              "slug": "the-searchers-1956",
+              "grade": "A-"
+            },
+            {
+              "title": "Rio Bravo",
+              "imdbId": "tt0053221",
+              "year": "1959",
+              "slug": "rio-bravo-1959",
+              "grade": "A+"
+            }
+          ]
+        },
+        {
           "name": "Humphrey Bogart",
           "slug": "humphrey-bogart",
           "titles": [
@@ -10518,6 +10552,40 @@
       ],
       "withPerformer": [
         {
+          "name": "Ward Bond",
+          "slug": "ward-bond",
+          "titles": [
+            {
+              "title": "The Oklahoma Kid",
+              "imdbId": "tt0031747",
+              "year": "1939",
+              "slug": "the-oklahoma-kid-1939",
+              "grade": "C-"
+            },
+            {
+              "title": "The Searchers",
+              "imdbId": "tt0049730",
+              "year": "1956",
+              "slug": "the-searchers-1956",
+              "grade": "A-"
+            },
+            {
+              "title": "Salute",
+              "imdbId": "tt0020359",
+              "year": "1929",
+              "slug": "salute-1929",
+              "grade": "D+"
+            },
+            {
+              "title": "Born Reckless",
+              "imdbId": "tt0020702",
+              "year": "1930",
+              "slug": "born-reckless-1930",
+              "grade": "D+"
+            }
+          ]
+        },
+        {
           "name": "John Wayne",
           "slug": "john-wayne",
           "titles": [
@@ -11220,7 +11288,42 @@
     ],
     "more": {
       "directedBy": [],
-      "withPerformer": [],
+      "withPerformer": [
+        {
+          "name": "Ward Bond",
+          "slug": "ward-bond",
+          "titles": [
+            {
+              "title": "The Searchers",
+              "imdbId": "tt0049730",
+              "year": "1956",
+              "slug": "the-searchers-1956",
+              "grade": "A-"
+            },
+            {
+              "title": "Rio Bravo",
+              "imdbId": "tt0053221",
+              "year": "1959",
+              "slug": "rio-bravo-1959",
+              "grade": "A+"
+            },
+            {
+              "title": "Born Reckless",
+              "imdbId": "tt0020702",
+              "year": "1930",
+              "slug": "born-reckless-1930",
+              "grade": "D+"
+            },
+            {
+              "title": "The Oklahoma Kid",
+              "imdbId": "tt0031747",
+              "year": "1939",
+              "slug": "the-oklahoma-kid-1939",
+              "grade": "C-"
+            }
+          ]
+        }
+      ],
       "writtenBy": [],
       "inCollection": [],
       "reviews": [
@@ -44389,6 +44492,40 @@
       ],
       "withPerformer": [
         {
+          "name": "Ward Bond",
+          "slug": "ward-bond",
+          "titles": [
+            {
+              "title": "Born Reckless",
+              "imdbId": "tt0020702",
+              "year": "1930",
+              "slug": "born-reckless-1930",
+              "grade": "D+"
+            },
+            {
+              "title": "The Oklahoma Kid",
+              "imdbId": "tt0031747",
+              "year": "1939",
+              "slug": "the-oklahoma-kid-1939",
+              "grade": "C-"
+            },
+            {
+              "title": "Rio Bravo",
+              "imdbId": "tt0053221",
+              "year": "1959",
+              "slug": "rio-bravo-1959",
+              "grade": "A+"
+            },
+            {
+              "title": "Salute",
+              "imdbId": "tt0020359",
+              "year": "1929",
+              "slug": "salute-1929",
+              "grade": "D+"
+            }
+          ]
+        },
+        {
           "name": "John Wayne",
           "slug": "john-wayne",
           "titles": [
@@ -56537,7 +56674,42 @@
           ]
         }
       ],
-      "withPerformer": [],
+      "withPerformer": [
+        {
+          "name": "Ward Bond",
+          "slug": "ward-bond",
+          "titles": [
+            {
+              "title": "Rio Bravo",
+              "imdbId": "tt0053221",
+              "year": "1959",
+              "slug": "rio-bravo-1959",
+              "grade": "A+"
+            },
+            {
+              "title": "Salute",
+              "imdbId": "tt0020359",
+              "year": "1929",
+              "slug": "salute-1929",
+              "grade": "D+"
+            },
+            {
+              "title": "The Oklahoma Kid",
+              "imdbId": "tt0031747",
+              "year": "1939",
+              "slug": "the-oklahoma-kid-1939",
+              "grade": "C-"
+            },
+            {
+              "title": "The Searchers",
+              "imdbId": "tt0049730",
+              "year": "1956",
+              "slug": "the-searchers-1956",
+              "grade": "A-"
+            }
+          ]
+        }
+      ],
       "writtenBy": [],
       "inCollection": [],
       "reviews": [
