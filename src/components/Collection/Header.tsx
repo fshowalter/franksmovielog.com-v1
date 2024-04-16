@@ -37,7 +37,7 @@ export function Header({
       <Spacer axis="vertical" size={16} />
       <PageTitle textAlign="center">{collection.name}</PageTitle>
       <Spacer axis="vertical" size={24} />
-      <Box color="subtle" textAlign="center">
+      <Box color="subtle" textAlign="center" paddingX="gutter" maxWidth="prose">
         <RenderedMarkdown
           // eslint-disable-next-line react/no-danger
           text={collection.description || tagline(collection)}

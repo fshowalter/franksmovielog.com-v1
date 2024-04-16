@@ -13,7 +13,7 @@ export function Header({ titleCount }: { titleCount: number }): JSX.Element {
       </Box>
       <Spacer axis="vertical" size={32} />
 
-      <Box as="p" color="subtle" maxWidth="shortForm">
+      <Box as="p" color="subtle" paddingX="gutter" maxWidth="prose">
         My movie review bucketlist. {titleCount.toLocaleString()} titles. No
         silents or documentaries.
       </Box>

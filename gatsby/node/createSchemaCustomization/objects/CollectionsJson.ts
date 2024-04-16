@@ -3,6 +3,8 @@ import toHtml from "hast-util-to-html";
 import toHast from "mdast-util-to-hast";
 import remark from "remark";
 import { SchemaNames } from "../schemaNames";
+import { GatsbyNodeContext, GatsbyResolveArgs } from "../type-definitions";
+import addReviewLinks from "../utils/addReviewLinks";
 import { avatarFieldResolver } from "./fieldResolvers/avatarFieldResolver";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 
@@ -32,13 +34,18 @@ export const CollectionsJson = {
   interfaces: ["Node"],
   fields: {
     name: "String!",
+    slug: "String!",
     titleCount: "Int!",
     reviewCount: "Int!",
     titles: `[${SchemaNames.CollectionTitle}!]!`,
     avatar: avatarFieldResolver,
     description: {
       type: "String",
-      resolve: (source: { description: string }) => {
+      resolve: (
+        source: { description: string },
+        _args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+      ) => {
         if (!source.description) {
           return null;
         }
@@ -51,8 +58,15 @@ export const CollectionsJson = {
 
         hast.children[0].tagName = "span";
 
-        return toHtml(hast);
+        const html = toHtml(hast, {
+          allowDangerousHtml: true,
+        });
+
+        return addReviewLinks(html, context.nodeModel);
       },
     },
+  },
+  extensions: {
+    infer: false,
   },
 };

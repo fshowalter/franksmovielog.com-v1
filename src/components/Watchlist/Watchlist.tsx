@@ -64,8 +64,6 @@ export const query = graphql`
     releaseSequence
     sortTitle
     slug
-    grade
-    gradeValue
     directorNames
     performerNames
     writerNames

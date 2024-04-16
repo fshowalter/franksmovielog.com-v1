@@ -1,6 +1,5 @@
 import { toSentence } from "../../utils";
 import { Box } from "../Box";
-import { Grade } from "../Grade";
 import { ListItem } from "../ListItem";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
@@ -56,7 +55,6 @@ function WatchlistTitle({
         <Box>
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
-          {item.grade && <Grade grade={item.grade} height={16} />}
           <Spacer axis="vertical" size={8} />
           <Slug movie={item} />
           <Spacer axis="vertical" size={8} />

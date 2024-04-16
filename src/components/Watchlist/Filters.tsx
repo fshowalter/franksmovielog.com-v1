@@ -73,8 +73,6 @@ export function Filters({
         <option value="release-date-desc">Release Date (Newest First)</option>
         <option value="release-date-asc">Release Date (Oldest First)</option>
         <option value="title">Title</option>
-        <option value="grade-desc">Grade (Best First)</option>
-        <option value="grade-asc">Grade (Worst First)</option>
       </SelectField>
     </>
   );

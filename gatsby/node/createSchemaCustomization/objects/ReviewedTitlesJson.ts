@@ -139,7 +139,7 @@ export const ReviewedTitlesJson = {
       },
     },
     reviewYear: "String!",
-    originalTitle: "String!",
+    originalTitle: "String",
     releaseSequence: "String!",
     runtimeMinutes: "Int!",
     directorNames: "[String!]!",

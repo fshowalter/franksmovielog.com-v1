@@ -3,9 +3,9 @@ import { Box } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { ListItem } from "../ListItem";
+import { ListItemCounts } from "../ListItemCounts";
 import { ListInfo } from "../ListWithFiltersLayout/ListInfo";
 import { Spacer } from "../Spacer";
-import { countMarginStyle } from "./List.css";
 
 export function List({
   entities,
@@ -38,33 +38,20 @@ function CollectionListItem({
     <ListItem alignItems="center">
       <Avatar entity={entity} />
       <CollectionName entity={entity} />
-      <ReviewCount entity={entity} />
+      <ListItemCounts current={entity.reviewCount} total={entity.titleCount} />
     </ListItem>
   );
 }
 
 function Avatar({ entity }: { entity: Queries.CollectionsItemFragment }) {
-  if (entity.avatar && entity.slug) {
-    return (
-      <Link
-        to={`/collections/${entity.slug}/`}
-        transform="safariBorderRadiusFix"
-        overflow="hidden"
-        boxShadow="borderAll"
-        borderRadius="half"
-        maxWidth={48}
-        width={48}
-      >
-        <GraphqlImage
-          image={entity.avatar}
-          alt={`An image of ${entity.name}`}
-        />
-      </Link>
-    );
-  }
+  let avatarImage;
 
-  return (
-    <Box width={48} maxWidth={48}>
+  if (entity.avatar) {
+    avatarImage = (
+      <GraphqlImage image={entity.avatar} alt={`An image of ${entity.name}`} />
+    );
+  } else {
+    avatarImage = (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
@@ -77,7 +64,21 @@ function Avatar({ entity }: { entity: Queries.CollectionsItemFragment }) {
           fillRule="evenodd"
         />
       </svg>
-    </Box>
+    );
+  }
+
+  return (
+    <Link
+      to={`/collections/${entity.slug}/`}
+      transform="safariBorderRadiusFix"
+      overflow="hidden"
+      boxShadow="borderAll"
+      borderRadius="half"
+      maxWidth={48}
+      width={48}
+    >
+      {avatarImage}
+    </Link>
   );
 }
 
@@ -86,32 +87,9 @@ function CollectionName({
 }: {
   entity: Queries.CollectionsItemFragment;
 }) {
-  if (entity.slug) {
-    return (
-      <Link to={`/collections/${entity.slug}/`} fontSize="medium">
-        <Box lineHeight="default">{entity.name}</Box>
-      </Link>
-    );
-  }
-
   return (
-    <Box color="subtle" fontSize="medium">
+    <Link to={`/collections/${entity.slug}/`} fontSize="medium">
       <Box lineHeight="default">{entity.name}</Box>
-    </Box>
-  );
-}
-
-function ReviewCount({
-  entity,
-}: {
-  entity: Queries.CollectionsItemFragment;
-}): JSX.Element {
-  return (
-    <Box
-      color={entity.reviewCount === entity.titleCount ? "progress" : "subtle"}
-      className={countMarginStyle}
-    >
-      {entity.reviewCount} / {entity.titleCount}
-    </Box>
+    </Link>
   );
 }

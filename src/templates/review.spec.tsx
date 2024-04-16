@@ -12,6 +12,6 @@ describe("/reviews/{slug}", () => {
   it("sets page title", () => {
     render(<Head data={data} />);
 
-    expect(document.title).toStrictEqual("The Curse of Frankenstein (1957)");
+    expect(document.title).toStrictEqual("Horror of Dracula (1958)");
   });
 });

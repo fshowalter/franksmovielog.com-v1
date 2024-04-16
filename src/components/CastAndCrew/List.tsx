@@ -4,9 +4,9 @@ import { CreditedAs } from "../CreditedAs";
 import { GraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { ListItem } from "../ListItem";
+import { ListItemCounts } from "../ListItemCounts";
 import { ListInfo } from "../ListWithFiltersLayout/ListInfo";
 import { Spacer } from "../Spacer";
-import { countMarginStyle } from "./List.css";
 
 export function List({
   entities,
@@ -39,7 +39,7 @@ function EntityListItem({
     <ListItem alignItems="center">
       <Avatar entity={entity} />
       <EntityName entity={entity} />
-      <ReviewCount entity={entity} />
+      <ListItemCounts current={entity.reviewCount} total={entity.totalCount} />
     </ListItem>
   );
 }
@@ -90,22 +90,6 @@ function EntityName({ entity }: { entity: Queries.CastAndCrewItemFragment }) {
       </Link>
       <Spacer axis="vertical" size={4} />
       <CreditedAs creditedAs={entity.creditedAs} />
-    </Box>
-  );
-}
-
-function ReviewCount({
-  entity,
-}: {
-  entity: Queries.CastAndCrewItemFragment;
-}): JSX.Element {
-  if (entity.reviewCount === entity.totalCount) {
-    return <Box className={countMarginStyle}>{entity.totalCount}</Box>;
-  }
-
-  return (
-    <Box className={countMarginStyle}>
-      {entity.reviewCount} / {entity.totalCount}
     </Box>
   );
 }

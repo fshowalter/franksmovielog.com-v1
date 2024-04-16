@@ -112,7 +112,8 @@ function Poster({ movie, ...rest }: IPosterProps) {
   return (
     <GraphqlImage
       image={movie.poster}
-      alt="An unreviewed title."
+      alt={`${movie.title} (${movie.year})`}
+      title={`${movie.title} (${movie.year})`}
       className={posterStyle}
       overflow="hidden"
       transform="safariBorderRadiusFix"

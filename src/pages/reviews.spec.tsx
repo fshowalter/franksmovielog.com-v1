@@ -166,6 +166,38 @@ describe("/reviews", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
+  it("can filter by review year", async () => {
+    expect.hasAssertions();
+
+    render(<ReviewsIndexPage data={data} />);
+
+    const fieldset = screen.getByRole("group", { name: "Review Year" });
+    const fromInput = within(fieldset).getByLabelText("From");
+    const toInput = within(fieldset).getByLabelText("to");
+
+    await userEvent.selectOptions(fromInput, "2015");
+    await userEvent.selectOptions(toInput, "2020");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can filter by review year reversed", async () => {
+    expect.hasAssertions();
+
+    render(<ReviewsIndexPage data={data} />);
+
+    const fieldset = screen.getByRole("group", { name: "Review Year" });
+    const fromInput = within(fieldset).getByLabelText("From");
+    const toInput = within(fieldset).getByLabelText("to");
+
+    await userEvent.selectOptions(fromInput, "2015");
+    await userEvent.selectOptions(toInput, "2020");
+    await userEvent.selectOptions(fromInput, "2017");
+    await userEvent.selectOptions(toInput, "2015");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
   it("can filter by grade", async () => {
     expect.hasAssertions();
 

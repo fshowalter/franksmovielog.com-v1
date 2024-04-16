@@ -187,32 +187,6 @@ describe("/watchlist", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with best first", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Grade (Best First)",
-    );
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
-  it("can sort by grade with worst first", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Grade (Worst First)",
-    );
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
   it("can filter by release year", async () => {
     expect.hasAssertions();
 

@@ -180,7 +180,7 @@ export function reducer(state: State, action: Action): State {
       });
     }
     case ActionType.FILTER_REVIEW_YEAR: {
-      return updateFilter(state, "releaseYear", (item) => {
+      return updateFilter(state, "reviewYear", (item) => {
         const reviewYear = item.reviewYear;
         return reviewYear >= action.values[0] && reviewYear <= action.values[1];
       });
