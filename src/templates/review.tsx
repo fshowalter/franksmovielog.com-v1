@@ -51,7 +51,7 @@ export const pageQuery = graphql`
       ...ReviewHeader
       ...ViewingHistory
       ...Credits
-      ...RelatedMovies
+      ...MoreReviews
       ...StructuredData
     }
   }

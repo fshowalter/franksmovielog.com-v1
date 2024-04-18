@@ -13,7 +13,6 @@ export enum SchemaNames {
   ReviewedTitleMore = "ReviewedTitleMore",
   ReviewedTitleMoreCastAndCrewMember = "ReviewedTitleMoreCastAndCrewMember",
   ReviewedTitleMoreCollection = "ReviewedTitleMoreCollection",
-  ReviewedTitleMoreEntity = "ReviewedTitleMoreEntity",
   ReviewedTitleMoreTitle = "ReviewedTitleMoreTitle",
   ReviewedTitlesJson = "ReviewedTitlesJson",
   ReviewedTitleViewing = "ReviewedTitleViewing",

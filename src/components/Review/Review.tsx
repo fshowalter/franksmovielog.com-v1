@@ -7,7 +7,7 @@ import { Still } from "../Still";
 import { Content } from "./Content";
 import { Credits } from "./Credits";
 import { Header } from "./Header";
-import { RelatedMovies } from "./RelatedMovies";
+import { MoreReviews } from "./MoreReviews";
 import { stillMarginStyle } from "./Review.css";
 import { StructuredData } from "./StructuredData";
 import { ViewingHistory } from "./ViewingHistory";
@@ -50,7 +50,7 @@ export function Review({
         <Spacer axis="vertical" size={128} />
         <Credits review={review} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
-        <RelatedMovies
+        <MoreReviews
           review={review}
           maxWidth={{ default: "popout", tablet: "full" }}
           width="full"
@@ -83,7 +83,7 @@ export const query = graphql`
     ...ReviewHeader
     ...ViewingHistory
     ...Credits
-    ...RelatedMovies
+    ...MoreReviews
     ...StructuredData
   }
 `;

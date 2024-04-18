@@ -4,6 +4,7 @@ import { toSentence } from "../../utils";
 import { Box, IBoxProps } from "../Box";
 import { GraphqlImage } from "../GraphqlImage";
 import { Spacer } from "../Spacer";
+import { Chips } from "./Chips";
 import {
   backToTopArrowStyle,
   backToTopContainerStyle,
@@ -12,7 +13,6 @@ import {
   posterStyle,
   titleStyle,
 } from "./Credits.css";
-import { CreditsChips } from "./CreditsChips";
 
 interface ICreditsProps extends IBoxProps {
   review: Queries.CreditsFragment;
@@ -62,7 +62,7 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
         />
       </Box>
       <Spacer axis="vertical" size={32} />
-      <CreditsChips chips={review.more} />
+      <Chips chips={review.more} />
       <Spacer axis="vertical" size={32} />
       <Box
         as="a"
@@ -125,7 +125,7 @@ export const query = graphql`
       }
     }
     more {
-      ...CreditChips
+      ...ReviewChips
     }
   }
 `;

@@ -106,19 +106,8 @@ export const ReviewedTitleMoreTitle = {
   },
 };
 
-export const ReviewedTitleMoreEntity = {
-  name: SchemaNames.ReviewedTitleMoreEntity,
-  fields: {
-    name: "String!",
-    slug: "String!",
-    titles: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
-    avatar: "File!",
-  },
-};
-
 export const ReviewedTitleMoreCastAndCrewMember = {
   name: SchemaNames.ReviewedTitleMoreCastAndCrewMember,
-  interfaces: [SchemaNames.ReviewedTitleMoreEntity],
   fields: {
     name: "String!",
     slug: "String!",
@@ -130,7 +119,6 @@ export const ReviewedTitleMoreCastAndCrewMember = {
 
 export const ReviewedTitleMoreCollection = {
   name: SchemaNames.ReviewedTitleMoreCollection,
-  interfaces: [SchemaNames.ReviewedTitleMoreEntity],
   fields: {
     name: "String!",
     slug: "String!",
