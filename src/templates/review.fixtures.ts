@@ -127,7 +127,7 @@ export const data = {
       },
     },
     more: {
-      withPerformer: [
+      castAndCrew: [
         {
           name: "Peter Cushing",
           slug: "peter-cushing",
@@ -160,6 +160,7 @@ export const data = {
               },
             },
           },
+          creditKind: "performer",
           titles: [
             {
               imdbId: "tt0050095",
@@ -339,6 +340,7 @@ export const data = {
               },
             },
           },
+          creditKind: "performer",
           titles: [
             {
               imdbId: "tt0040246",
@@ -487,9 +489,7 @@ export const data = {
           ],
         },
       ],
-      directedBy: [],
-      writtenBy: [],
-      inCollection: [
+      collections: [
         {
           name: "Hammer Films",
           slug: "hammer-films",

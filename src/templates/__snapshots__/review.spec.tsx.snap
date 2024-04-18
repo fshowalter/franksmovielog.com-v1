@@ -891,59 +891,11 @@ exports[`/reviews/{slug} renders 1`] = `
               class="sprinkles_display_block_default__8lcvdk6g"
             >
               <a
-                class="CreditsChips_linkStyle__gwlpsn1 sprinkles_paddingLeft_16_default__8lcvdkio sprinkles_paddingRight_16_default__8lcvdklg sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_inverse_default__8lcvdk2o sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_center_default__8lcvdk1k sprinkles_whiteSpace_nowrap__8lcvdk1g sprinkles_boxShadow_borderAll_default__8lcvdk3k sprinkles_borderRadius_8__8lcvdk2"
-                href="/cast-and-crew/hammer-films/"
+                class="Chips_linkStyle__1onbt8q1 sprinkles_paddingLeft_16_default__8lcvdkio sprinkles_paddingRight_16_default__8lcvdklg sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_inverse_default__8lcvdk2o sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_center_default__8lcvdk1k sprinkles_whiteSpace_nowrap__8lcvdk1g sprinkles_boxShadow_borderAll_default__8lcvdk3k sprinkles_borderRadius_8__8lcvdk2"
+                href="/cast-and-crew/peter-cushing"
               >
                 <div
-                  class="gatsby-image-wrapper CreditsChips_avatarStyle__gwlpsn0 sprinkles_borderRadius_half__8lcvdk5 sprinkles_transform_safariBorderRadiusFix__8lcvdk1f"
-                  data-gatsby-image-wrapper=""
-                  style="position: relative; overflow: hidden; width: 40px; height: 40px;"
-                >
-                  <img
-                    alt=""
-                    aria-hidden="true"
-                    data-placeholder-image=""
-                    decoding="async"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEklEQVR42u1SvUrEQBjMIwh3XvSbSfaS7CY5BRGvvtLCRsRCtBAELQQVEWzUxp/OwkYEGwULC+19AN/Mz71LiIWFItgcDOzA7sy3M7sBGP0awVj8R2J6NIl8J56uMOWhZJLseF6TqDIKyaFdoH4xo33YZSZbyNaR7sFuIN1GtoPsUcpVJEew91KewymukR/AGsajyWpzg+IJpW7cSvEiPSUPUireZOZOimcp32X2BO4Y9lV6V5KHXjWafCFuBckl8k2kS0jWkM7T9GEW0Z2jGbCrt9hFdgZ3Ku4QtvUZwE/WZYFmGKlNtjzUu0O2PdHYEz555KP2adgsLKz6pD9Rd1OTuNG5mn5pmz95Xo7/9n+IPwAB5JUweJ46+wAAAABJRU5ErkJggg=="
-                    style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                  />
-                  <picture>
-                    <source
-                      data-srcset="/static/e919b03855219e9e019a1dac518d405d/5bae1/hammer-films.avif 40w,/static/e919b03855219e9e019a1dac518d405d/d60a5/hammer-films.avif 80w"
-                      sizes="40px"
-                      type="image/avif"
-                    />
-                    <img
-                      alt="More Hammer Films reviews"
-                      data-gatsby-image-ssr=""
-                      data-main-image=""
-                      data-src="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg"
-                      data-srcset="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg 40w,/static/e919b03855219e9e019a1dac518d405d/d18de/hammer-films.jpg 80w"
-                      decoding="async"
-                      loading="lazy"
-                      sizes="40px"
-                      style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                    />
-                  </picture>
-                  <noscript />
-                  <script
-                    type="module"
-                  >
-                    const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                  </script>
-                </div>
-                Hammer Films
-              </a>
-            </li>
-            <li
-              class="sprinkles_display_block_default__8lcvdk6g"
-            >
-              <a
-                class="CreditsChips_linkStyle__gwlpsn1 sprinkles_paddingLeft_16_default__8lcvdkio sprinkles_paddingRight_16_default__8lcvdklg sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_inverse_default__8lcvdk2o sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_center_default__8lcvdk1k sprinkles_whiteSpace_nowrap__8lcvdk1g sprinkles_boxShadow_borderAll_default__8lcvdk3k sprinkles_borderRadius_8__8lcvdk2"
-                href="/cast-and-crew/peter-cushing/"
-              >
-                <div
-                  class="gatsby-image-wrapper CreditsChips_avatarStyle__gwlpsn0 sprinkles_borderRadius_half__8lcvdk5 sprinkles_transform_safariBorderRadiusFix__8lcvdk1f"
+                  class="gatsby-image-wrapper Chips_avatarStyle__1onbt8q0 sprinkles_borderRadius_half__8lcvdk5 sprinkles_transform_safariBorderRadiusFix__8lcvdk1f"
                   data-gatsby-image-wrapper=""
                   style="position: relative; overflow: hidden; width: 40px; height: 40px;"
                 >
@@ -987,11 +939,11 @@ exports[`/reviews/{slug} renders 1`] = `
               class="sprinkles_display_block_default__8lcvdk6g"
             >
               <a
-                class="CreditsChips_linkStyle__gwlpsn1 sprinkles_paddingLeft_16_default__8lcvdkio sprinkles_paddingRight_16_default__8lcvdklg sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_inverse_default__8lcvdk2o sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_center_default__8lcvdk1k sprinkles_whiteSpace_nowrap__8lcvdk1g sprinkles_boxShadow_borderAll_default__8lcvdk3k sprinkles_borderRadius_8__8lcvdk2"
-                href="/cast-and-crew/christopher-lee/"
+                class="Chips_linkStyle__1onbt8q1 sprinkles_paddingLeft_16_default__8lcvdkio sprinkles_paddingRight_16_default__8lcvdklg sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_inverse_default__8lcvdk2o sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_center_default__8lcvdk1k sprinkles_whiteSpace_nowrap__8lcvdk1g sprinkles_boxShadow_borderAll_default__8lcvdk3k sprinkles_borderRadius_8__8lcvdk2"
+                href="/cast-and-crew/christopher-lee"
               >
                 <div
-                  class="gatsby-image-wrapper CreditsChips_avatarStyle__gwlpsn0 sprinkles_borderRadius_half__8lcvdk5 sprinkles_transform_safariBorderRadiusFix__8lcvdk1f"
+                  class="gatsby-image-wrapper Chips_avatarStyle__1onbt8q0 sprinkles_borderRadius_half__8lcvdk5 sprinkles_transform_safariBorderRadiusFix__8lcvdk1f"
                   data-gatsby-image-wrapper=""
                   style="position: relative; overflow: hidden; width: 40px; height: 40px;"
                 >
@@ -1031,6 +983,54 @@ exports[`/reviews/{slug} renders 1`] = `
                 Christopher Lee
               </a>
             </li>
+            <li
+              class="sprinkles_display_block_default__8lcvdk6g"
+            >
+              <a
+                class="Chips_linkStyle__1onbt8q1 sprinkles_paddingLeft_16_default__8lcvdkio sprinkles_paddingRight_16_default__8lcvdklg sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_inverse_default__8lcvdk2o sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_center_default__8lcvdk1k sprinkles_whiteSpace_nowrap__8lcvdk1g sprinkles_boxShadow_borderAll_default__8lcvdk3k sprinkles_borderRadius_8__8lcvdk2"
+                href="/collections/hammer-films"
+              >
+                <div
+                  class="gatsby-image-wrapper Chips_avatarStyle__1onbt8q0 sprinkles_borderRadius_half__8lcvdk5 sprinkles_transform_safariBorderRadiusFix__8lcvdk1f"
+                  data-gatsby-image-wrapper=""
+                  style="position: relative; overflow: hidden; width: 40px; height: 40px;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    data-placeholder-image=""
+                    decoding="async"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEklEQVR42u1SvUrEQBjMIwh3XvSbSfaS7CY5BRGvvtLCRsRCtBAELQQVEWzUxp/OwkYEGwULC+19AN/Mz71LiIWFItgcDOzA7sy3M7sBGP0awVj8R2J6NIl8J56uMOWhZJLseF6TqDIKyaFdoH4xo33YZSZbyNaR7sFuIN1GtoPsUcpVJEew91KewymukR/AGsajyWpzg+IJpW7cSvEiPSUPUireZOZOimcp32X2BO4Y9lV6V5KHXjWafCFuBckl8k2kS0jWkM7T9GEW0Z2jGbCrt9hFdgZ3Ku4QtvUZwE/WZYFmGKlNtjzUu0O2PdHYEz555KP2adgsLKz6pD9Rd1OTuNG5mn5pmz95Xo7/9n+IPwAB5JUweJ46+wAAAABJRU5ErkJggg=="
+                    style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                  />
+                  <picture>
+                    <source
+                      data-srcset="/static/e919b03855219e9e019a1dac518d405d/5bae1/hammer-films.avif 40w,/static/e919b03855219e9e019a1dac518d405d/d60a5/hammer-films.avif 80w"
+                      sizes="40px"
+                      type="image/avif"
+                    />
+                    <img
+                      alt="More Hammer Films reviews"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg"
+                      data-srcset="/static/e919b03855219e9e019a1dac518d405d/5e3dc/hammer-films.jpg 40w,/static/e919b03855219e9e019a1dac518d405d/d18de/hammer-films.jpg 80w"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="40px"
+                      style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                    />
+                  </picture>
+                  <noscript />
+                  <script
+                    type="module"
+                  >
+                    const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                  </script>
+                </div>
+                Hammer Films
+              </a>
+            </li>
           </ul>
           <span
             class="sprinkles_width_px_default__8lcvdku0 sprinkles_height_32_default__8lcvdk88 sprinkles_minWidth_px_default__8lcvdkfo sprinkles_minHeight_32_default__8lcvdkd0 sprinkles_display_block_default__8lcvdk6g"
@@ -1056,419 +1056,6 @@ exports[`/reviews/{slug} renders 1`] = `
         <div
           class="sprinkles_maxWidth_popout_default__8lcvdkbw sprinkles_maxWidth_full_tablet__8lcvdkbl sprinkles_width_full_default__8lcvdku8 sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_rowGap_48_default__8lcvdkqg sprinkles_rowGap_96_desktop__8lcvdkqu sprinkles_alignItems_center_default__8lcvdk1k sprinkles_backgroundColor_default_default__8lcvdk2c sprinkles_backgroundColor_subtle_tablet__8lcvdk2l sprinkles_paddingTop_0_default__8lcvdknw sprinkles_paddingTop_32_tablet__8lcvdkoh sprinkles_paddingBottom_0_default__8lcvdkgs sprinkles_paddingBottom_128_tablet__8lcvdki1"
         >
-          <nav
-            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
-          >
-            <div
-              class="sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingLeft_pageMargin_desktop__8lcvdkky sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingRight_pageMargin_desktop__8lcvdknq sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingTop_16_tablet__8lcvdko9 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_paddingBottom_16_tablet__8lcvdkh5 sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d sprinkles_width_full_default__8lcvdku8"
-            >
-              <span
-                class="sprinkles_fontWeight_semiBold__8lcvdkt sprinkles_color_muted__8lcvdk8"
-              >
-                More 
-              </span>
-              <a
-                href="/collections/hammer-films"
-              >
-                Hammer Films
-              </a>
-            </div>
-            <ul
-              class="StillList_movieListStyle__v7difm1"
-            >
-              <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
-              >
-                <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
-                >
-                  <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/the-abominable-snowman-1957/"
-                  >
-                    <div
-                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                      data-gatsby-image-wrapper=""
-                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                    >
-                      <div
-                        style="max-width: 312px; display: block;"
-                      >
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          role="presentation"
-                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
-                          style="max-width: 100%; display: block; position: static;"
-                        />
-                      </div>
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        data-placeholder-image=""
-                        decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACgklEQVR42jWTSUtyURjH72cowk2tJASDaBPoRkhBXBhEtilEBbFa1EJRXEQmmQvFaCJbWEk0QFqYig0alQNhIVpSDoiN1Krv8H95HngXl8O93PM7/+E5wtXVFaLRKK6vr3F7e4vz83Nen5+fUavV8PT0BJfLhcvLS7y/v6PVauH7+xtnZ2fw+/3wer2YnZ3F4OAg+vr6INzf3yOTyeDm5gaFQoEBBL24uMDb2xsqlQq0Wi08Hg/q9TqKxSJOT0+xvLwMi8UCnU6H0dFR6PV67O3tQahWq3h4eACtr6+vDInFYnxqOp2GzWaDSqXC2NgY7HY7yuUycrkckskkVldXsb29zQeQUxIjNJtNBtFKqiKRCObn5zE+Po6RkREMDQ3BYDDwt4GBAZycnODz8xN3d3ccE1k/PDzE2toatra2IJAiyuTl5YU3Tk5OwuFwQCKRQKlUwmQyMVwmk6GrqwszMzP4+PhgIIHW19c5R6vVirm5OQgUNP1AYKfTCblczkpEIhFDyerw8DA6Ozs5M8qUrJEAiiQQCGBhYYGLo1X4+vri5n5+fhCPx9Hf3w+pVMqN9fT0QK1W87eOjg5MTU1hc3MTZrOZD6esKcv9/X2EQiHs7OxAILvUHkEpE4KJxWL09vYyUKFQMGBiYoIVEohUHR8fs+WNjQ1u/OjoiEdL+P39ZflUTKlUYnvd3d2sbGVlhRvNZrOg8aI2w+EwO0mlUvy+u7vLZSwtLbF64e/vD2SbHgpao9FwfjS0jUYD+XyeZ4+G/eDgAG63G4uLiwyg3IxGI3w+H4LBIJcjtNttVkFB042hpmjD4+Mjl/W/NHJBDugS0GglEgkG0b/T09M8GXTgP1RuXaSSVWqVAAAAAElFTkSuQmCC"
-                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                      />
-                      <picture>
-                        <source
-                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/08742/the-abominable-snowman-1957.avif 78w,/static/1c1dbef182e8e74925e612887a718990/1c619/the-abominable-snowman-1957.avif 156w,/static/1c1dbef182e8e74925e612887a718990/c02e5/the-abominable-snowman-1957.avif 312w,/static/1c1dbef182e8e74925e612887a718990/81026/the-abominable-snowman-1957.avif 624w"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          type="image/avif"
-                        />
-                        <img
-                          alt="A still from The Abominable Snowman (1957)"
-                          data-gatsby-image-ssr=""
-                          data-main-image=""
-                          data-src="/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg"
-                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/43c32/the-abominable-snowman-1957.jpg 78w,/static/1c1dbef182e8e74925e612887a718990/78def/the-abominable-snowman-1957.jpg 156w,/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg 312w,/static/1c1dbef182e8e74925e612887a718990/a02d5/the-abominable-snowman-1957.jpg 624w"
-                          decoding="async"
-                          loading="lazy"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                        />
-                      </picture>
-                      <noscript />
-                      <script
-                        type="module"
-                      >
-                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                      </script>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
-                >
-                  <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
-                    href="/reviews/the-abominable-snowman-1957/"
-                  >
-                    The Abominable Snowman 
-                    <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
-                    >
-                      1957
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
-                >
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/2-stars-dark.svg"
-                    />
-                    <img
-                      alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
-                      height="16"
-                      src="/svg/2-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
-              >
-                <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
-                >
-                  <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/the-camp-on-blood-island-1958/"
-                  >
-                    <div
-                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                      data-gatsby-image-wrapper=""
-                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                    >
-                      <div
-                        style="max-width: 312px; display: block;"
-                      >
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          role="presentation"
-                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
-                          style="max-width: 100%; display: block; position: static;"
-                        />
-                      </div>
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        data-placeholder-image=""
-                        decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACG0lEQVR42j1SSUuyURh9164DJQLFFqbiiKY54zyb5ZCkKCJOiRopQYmaG4lE8Ae09W+eOA983+Jyp+ee6bmK0WhEMplEJpP5PxwOB5xOp4x8Po9Op4NWq4Ver4dwOIx6vS573tlsNlxcXECv14NYitfrRSqVQr/flwKu/X4/0uk0Go2GnBNwPp9jvV5jNpvJPYHj8ThqtZoIKpfLyOVyUO7u7hAKhRAMBkUZgXhGcBZEIhE5+/z8xNfXF9rtNqxWK9RqNbRaLWKxGCqVCobDISaTCZR/D10ul0gmGBkJxL3dbkc2m8V+v8dqtZI72tTpdDAYDOKITgqFghArXFxdXeH6+loATCYTLBYLHh8fkUgk4Ha7BXw6nQogyW9vb4X46ekJm80Gp9NJ8qVD5ebmBiqVCpeXl2KDjWA+0WhU1h6PR7JidlRCdYFAQKwS5O3tDaVSCcQxm81QGHqxWBTJVEgL7DQv2Yyfnx+8vr7KPBgMhKBareL+/l5qSUxXdEg3ysfHh9hhEYFpiQ3y+Xw4Ho/4/v4WdWwICRhDs9mURvDrsI6AjI1fR2F32BhmRpUEI/PhcMByuRR15/MZ7+/veH5+FlJaJODDw4O8YSQE02g0UJgHs2LIzIUdHY1GUsy8Xl5e8Pv7i+12K3+NcZCQ6263KyTMlnv+T4VMHGRhHgQiKDvJGMbjMXa7HRaLhZyTmCKojGB8S8Xc0+kfIfifIbe+Rl4AAAAASUVORK5CYII="
-                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                      />
-                      <picture>
-                        <source
-                          data-srcset="/static/98f907bf24d0312b5bf4f11155b754a0/08742/the-camp-on-blood-island-1958.avif 78w,/static/98f907bf24d0312b5bf4f11155b754a0/1c619/the-camp-on-blood-island-1958.avif 156w,/static/98f907bf24d0312b5bf4f11155b754a0/c02e5/the-camp-on-blood-island-1958.avif 312w,/static/98f907bf24d0312b5bf4f11155b754a0/81026/the-camp-on-blood-island-1958.avif 624w"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          type="image/avif"
-                        />
-                        <img
-                          alt="A still from The Camp on Blood Island (1958)"
-                          data-gatsby-image-ssr=""
-                          data-main-image=""
-                          data-src="/static/98f907bf24d0312b5bf4f11155b754a0/11456/the-camp-on-blood-island-1958.jpg"
-                          data-srcset="/static/98f907bf24d0312b5bf4f11155b754a0/43c32/the-camp-on-blood-island-1958.jpg 78w,/static/98f907bf24d0312b5bf4f11155b754a0/78def/the-camp-on-blood-island-1958.jpg 156w,/static/98f907bf24d0312b5bf4f11155b754a0/11456/the-camp-on-blood-island-1958.jpg 312w,/static/98f907bf24d0312b5bf4f11155b754a0/a02d5/the-camp-on-blood-island-1958.jpg 624w"
-                          decoding="async"
-                          loading="lazy"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                        />
-                      </picture>
-                      <noscript />
-                      <script
-                        type="module"
-                      >
-                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                      </script>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
-                >
-                  <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
-                    href="/reviews/the-camp-on-blood-island-1958/"
-                  >
-                    The Camp on Blood Island 
-                    <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
-                    >
-                      1958
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
-                >
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/3-half-stars-dark.svg"
-                    />
-                    <img
-                      alt="B-: 3.5 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
-                      height="16"
-                      src="/svg/3-half-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
-              >
-                <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
-                >
-                  <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/rasputin-the-mad-monk-1966/"
-                  >
-                    <div
-                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                      data-gatsby-image-wrapper=""
-                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                    >
-                      <div
-                        style="max-width: 312px; display: block;"
-                      >
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          role="presentation"
-                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
-                          style="max-width: 100%; display: block; position: static;"
-                        />
-                      </div>
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        data-placeholder-image=""
-                        decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACu0lEQVR42kWS204bVxSGB/Bh7LEph9hNAxgoroXt8WHGc/DZ+IghxtgJISQYp21IE5GkUnJRqbGQeIW+QKWqUq+qvuLX5ShSLj4tbW2tf///WltJptLoeg49a5DJmeRM5zNWsUqt0aZab1ERCm5FqOGUGzilJnaxje1+xXLamHYLJaXrpPQMaUHP5MhkTTL5AvVyBTed4uLA5qiQputadDtdDKskzXXhQGgK8tgcETOtJophWhgFi7w5xyZfcHFsh51IlEYyzmwy5LER59AyeDN9ju2UMQsloUI+X8EwquSNmlAlK2elfzpmcPaM0/MrqZcMnkxxLYf1QJCanmLScOim4uR2tnkngqcnI4ndoVzt4RY7OF8i58yGuJfIPbdA5/Ahje4x7f6Qo+EZbjbLss/HtFXjbvqY/v4O9uYDng/6TC8uqTZPqQvV+oBiuY9d6vNk8JRaUQQLqQzNbIqjwyPKjR7lSoNYNELQr1JNxGgl98jfjxIJatSyOueDY5nXgTiTmYmrnFnnl8krJgct8rqLcvnTaz5enTP79S3T67cMJfYPW5uoPj9rWpDd9RX2IutsrN+jlEzw/sUFh/2xxO5Rbwy4/e2Wj5Mr9vctEZelPO22uBkfc3vzktmH94xHZ+zHYmhqgKCg+qXKPFfDyyQ2N2k7NoPhBfXWI+4+3fHvn3/z6dVrrifXPOyOUZxcjpNahZ9POvz+8hkffnxBejeBVxzOheaEgiGiaxF2N7bY3tgmHL7Ho8E5//31D3/MZtyMRoyafZqVHspyKETAr/H9g/sY8T2iK6sE1CAer5+QJndzUZlf7Nvv2BAWFr2EtRVO5J9etjrU5O8mt3bIZ4qy7Q7K6jcraOE1FEVhcdGDPxBi0eNjyeNHVTUhIA41lkNhca2y5FXx+zQ8S16WFjwsCPO+RDwtS6rzP3ItYbxS0nH/AAAAAElFTkSuQmCC"
-                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                      />
-                      <picture>
-                        <source
-                          data-srcset="/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/08742/rasputin-the-mad-monk-1966.avif 78w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/1c619/rasputin-the-mad-monk-1966.avif 156w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/c02e5/rasputin-the-mad-monk-1966.avif 312w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/81026/rasputin-the-mad-monk-1966.avif 624w"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          type="image/avif"
-                        />
-                        <img
-                          alt="A still from Rasputin: The Mad Monk (1966)"
-                          data-gatsby-image-ssr=""
-                          data-main-image=""
-                          data-src="/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/11456/rasputin-the-mad-monk-1966.jpg"
-                          data-srcset="/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/43c32/rasputin-the-mad-monk-1966.jpg 78w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/78def/rasputin-the-mad-monk-1966.jpg 156w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/11456/rasputin-the-mad-monk-1966.jpg 312w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/a02d5/rasputin-the-mad-monk-1966.jpg 624w"
-                          decoding="async"
-                          loading="lazy"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                        />
-                      </picture>
-                      <noscript />
-                      <script
-                        type="module"
-                      >
-                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                      </script>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
-                >
-                  <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
-                    href="/reviews/rasputin-the-mad-monk-1966/"
-                  >
-                    Rasputin: The Mad Monk 
-                    <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
-                    >
-                      1966
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
-                >
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/2-stars-dark.svg"
-                    />
-                    <img
-                      alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
-                      height="16"
-                      src="/svg/2-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
-              >
-                <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
-                >
-                  <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/the-devil-rides-out-1968/"
-                  >
-                    <div
-                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                      data-gatsby-image-wrapper=""
-                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                    >
-                      <div
-                        style="max-width: 312px; display: block;"
-                      >
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          role="presentation"
-                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
-                          style="max-width: 100%; display: block; position: static;"
-                        />
-                      </div>
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        data-placeholder-image=""
-                        decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACb0lEQVR42m2S3UvTURyHt99ebNP5Uu2lbe6nczo319S9ujldc3NO3fu06cLCpBAklMTKwMibIIiIuumqq+66q5tAEOuiIAoEr+uP6MbLpx9mYurFl8M5fM9zns85RyaTyfhXcrkcuUI4GGWCDL3eykx2FM9lJ0OpJMPpBDa7jQt6HbpGDfUNGtQqJccZsiOYICAoBRRqpdSkoKWlEW9nmvX5KabGBuj2uvAHPXR2d+AL+qRDOrC0mmnUNZwNFJQKFHUqVBo1zU1a+vs8pAKL3MnN8rgYpTA4hNfrJhoLEAj5iUR8dDntmEyms4FKtQTTatEbjZKBl+HYCBHXVWrpu1yLL5ALrzAYGGE4HmYsk2RldZWZag5RtCEIitNA1TkN2uZmHF1OotEQXR0u+h1Jnmy8Ya60SSX+iB4xRmNTPfF4jKx0t7PVCdraxL8g+UlDCWgwWwiGowTdToK+fgqJBRbLLyjF1phObBDszh309vS4SSfD1Gby2MXWowf931CjwSK2M5KeJGwzU4z5KaaWmQrfJ+66RT6yTq89cxTNaDIwNzdDl9V8NlAtAU2tbaTH8wyJZqpmHeWBJXL+ZYac84ScFYwNPUwXxyhNDB/sKWdTeNqth5FPAAWVGoNVZDxbIWoxkVHXEbHNSrZVHC2TnNfYuagzsvXuNdtv1ykkeymPhui8pD8NlB8uNBksFEo1ktK3KPT5eb7xlJ2Pn9h8+Aq3mCKVKPPj2xfWl6q8fFAhf8WDVlN3PK5UhxO90UwoliaeyPDs3m1er9X49XOX3/v7fN/+zNf3H9je2mF3b4+b12/QYTMQD7tx2M3H7fgD3CNLoMoYzMoAAAAASUVORK5CYII="
-                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                      />
-                      <picture>
-                        <source
-                          data-srcset="/static/87bc675a2af702d4d63d5febc5fb2c21/08742/the-devil-rides-out-1968.avif 78w,/static/87bc675a2af702d4d63d5febc5fb2c21/1c619/the-devil-rides-out-1968.avif 156w,/static/87bc675a2af702d4d63d5febc5fb2c21/c02e5/the-devil-rides-out-1968.avif 312w,/static/87bc675a2af702d4d63d5febc5fb2c21/81026/the-devil-rides-out-1968.avif 624w"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          type="image/avif"
-                        />
-                        <img
-                          alt="A still from The Devil Rides Out (1968)"
-                          data-gatsby-image-ssr=""
-                          data-main-image=""
-                          data-src="/static/87bc675a2af702d4d63d5febc5fb2c21/11456/the-devil-rides-out-1968.jpg"
-                          data-srcset="/static/87bc675a2af702d4d63d5febc5fb2c21/43c32/the-devil-rides-out-1968.jpg 78w,/static/87bc675a2af702d4d63d5febc5fb2c21/78def/the-devil-rides-out-1968.jpg 156w,/static/87bc675a2af702d4d63d5febc5fb2c21/11456/the-devil-rides-out-1968.jpg 312w,/static/87bc675a2af702d4d63d5febc5fb2c21/a02d5/the-devil-rides-out-1968.jpg 624w"
-                          decoding="async"
-                          loading="lazy"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                        />
-                      </picture>
-                      <noscript />
-                      <script
-                        type="module"
-                      >
-                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                      </script>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
-                >
-                  <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
-                    href="/reviews/the-devil-rides-out-1968/"
-                  >
-                    The Devil Rides Out 
-                    <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
-                    >
-                      1968
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
-                >
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/4-stars-dark.svg"
-                    />
-                    <img
-                      alt="B: 4 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
-                      height="16"
-                      src="/svg/4-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li
-                class="StillList_seeAllLinkGridStyle__v7difm0 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingTop_16_default__8lcvdko8 sprinkles_paddingBottom_16_default__8lcvdkh4 sprinkles_display_block_default__8lcvdk6g sprinkles_textAlign_right__8lcvdk1a sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d"
-              >
-                <a
-                  href="/collections/hammer-films"
-                >
-                  All 
-                  <span
-                    class="sprinkles_display_inline_default__8lcvdk6s sprinkles_display_none_tablet__8lcvdk6l sprinkles_display_inline_desktop__8lcvdk6u"
-                  >
-                     Hammer Films
-                  </span>
-                   →
-                </a>
-              </li>
-            </ul>
-          </nav>
           <nav
             class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
           >
@@ -1875,7 +1462,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   <span
                     class="sprinkles_display_inline_default__8lcvdk6s sprinkles_display_none_tablet__8lcvdk6l sprinkles_display_inline_desktop__8lcvdk6u"
                   >
-                     with Peter Cushing
+                    Peter Cushing
                   </span>
                    →
                 </a>
@@ -2288,7 +1875,420 @@ exports[`/reviews/{slug} renders 1`] = `
                   <span
                     class="sprinkles_display_inline_default__8lcvdk6s sprinkles_display_none_tablet__8lcvdk6l sprinkles_display_inline_desktop__8lcvdk6u"
                   >
-                     with Christopher Lee
+                    Christopher Lee
+                  </span>
+                   →
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav
+            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
+          >
+            <div
+              class="sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingLeft_pageMargin_desktop__8lcvdkky sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingRight_pageMargin_desktop__8lcvdknq sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingTop_16_tablet__8lcvdko9 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_paddingBottom_16_tablet__8lcvdkh5 sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d sprinkles_width_full_default__8lcvdku8"
+            >
+              <span
+                class="sprinkles_fontWeight_semiBold__8lcvdkt sprinkles_color_muted__8lcvdk8"
+              >
+                More 
+              </span>
+              <a
+                href="/collections/hammer-films"
+              >
+                Hammer Films
+              </a>
+            </div>
+            <ul
+              class="StillList_movieListStyle__v7difm1"
+            >
+              <li
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+              >
+                <div
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                >
+                  <a
+                    class="StillListMovie_stillStyle__1ug8mv51"
+                    href="/reviews/the-abominable-snowman-1957/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 312px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        decoding="async"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAC4jAAAuIwF4pT92AAACgklEQVR42jWTSUtyURjH72cowk2tJASDaBPoRkhBXBhEtilEBbFa1EJRXEQmmQvFaCJbWEk0QFqYig0alQNhIVpSDoiN1Krv8H95HngXl8O93PM7/+E5wtXVFaLRKK6vr3F7e4vz83Nen5+fUavV8PT0BJfLhcvLS7y/v6PVauH7+xtnZ2fw+/3wer2YnZ3F4OAg+vr6INzf3yOTyeDm5gaFQoEBBL24uMDb2xsqlQq0Wi08Hg/q9TqKxSJOT0+xvLwMi8UCnU6H0dFR6PV67O3tQahWq3h4eACtr6+vDInFYnxqOp2GzWaDSqXC2NgY7HY7yuUycrkckskkVldXsb29zQeQUxIjNJtNBtFKqiKRCObn5zE+Po6RkREMDQ3BYDDwt4GBAZycnODz8xN3d3ccE1k/PDzE2toatra2IJAiyuTl5YU3Tk5OwuFwQCKRQKlUwmQyMVwmk6GrqwszMzP4+PhgIIHW19c5R6vVirm5OQgUNP1AYKfTCblczkpEIhFDyerw8DA6Ozs5M8qUrJEAiiQQCGBhYYGLo1X4+vri5n5+fhCPx9Hf3w+pVMqN9fT0QK1W87eOjg5MTU1hc3MTZrOZD6esKcv9/X2EQiHs7OxAILvUHkEpE4KJxWL09vYyUKFQMGBiYoIVEohUHR8fs+WNjQ1u/OjoiEdL+P39ZflUTKlUYnvd3d2sbGVlhRvNZrOg8aI2w+EwO0mlUvy+u7vLZSwtLbF64e/vD2SbHgpao9FwfjS0jUYD+XyeZ4+G/eDgAG63G4uLiwyg3IxGI3w+H4LBIJcjtNttVkFB042hpmjD4+Mjl/W/NHJBDugS0GglEgkG0b/T09M8GXTgP1RuXaSSVWqVAAAAAElFTkSuQmCC"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/08742/the-abominable-snowman-1957.avif 78w,/static/1c1dbef182e8e74925e612887a718990/1c619/the-abominable-snowman-1957.avif 156w,/static/1c1dbef182e8e74925e612887a718990/c02e5/the-abominable-snowman-1957.avif 312w,/static/1c1dbef182e8e74925e612887a718990/81026/the-abominable-snowman-1957.avif 624w"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from The Abominable Snowman (1957)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg"
+                          data-srcset="/static/1c1dbef182e8e74925e612887a718990/43c32/the-abominable-snowman-1957.jpg 78w,/static/1c1dbef182e8e74925e612887a718990/78def/the-abominable-snowman-1957.jpg 156w,/static/1c1dbef182e8e74925e612887a718990/11456/the-abominable-snowman-1957.jpg 312w,/static/1c1dbef182e8e74925e612887a718990/a02d5/the-abominable-snowman-1957.jpg 624w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                >
+                  <a
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/the-abominable-snowman-1957/"
+                  >
+                    The Abominable Snowman 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
+                    >
+                      1957
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                >
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+              >
+                <div
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                >
+                  <a
+                    class="StillListMovie_stillStyle__1ug8mv51"
+                    href="/reviews/the-camp-on-blood-island-1958/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 312px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        decoding="async"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACG0lEQVR42j1SSUuyURh9164DJQLFFqbiiKY54zyb5ZCkKCJOiRopQYmaG4lE8Ae09W+eOA983+Jyp+ee6bmK0WhEMplEJpP5PxwOB5xOp4x8Po9Op4NWq4Ver4dwOIx6vS573tlsNlxcXECv14NYitfrRSqVQr/flwKu/X4/0uk0Go2GnBNwPp9jvV5jNpvJPYHj8ThqtZoIKpfLyOVyUO7u7hAKhRAMBkUZgXhGcBZEIhE5+/z8xNfXF9rtNqxWK9RqNbRaLWKxGCqVCobDISaTCZR/D10ul0gmGBkJxL3dbkc2m8V+v8dqtZI72tTpdDAYDOKITgqFghArXFxdXeH6+loATCYTLBYLHh8fkUgk4Ha7BXw6nQogyW9vb4X46ekJm80Gp9NJ8qVD5ebmBiqVCpeXl2KDjWA+0WhU1h6PR7JidlRCdYFAQKwS5O3tDaVSCcQxm81QGHqxWBTJVEgL7DQv2Yyfnx+8vr7KPBgMhKBareL+/l5qSUxXdEg3ysfHh9hhEYFpiQ3y+Xw4Ho/4/v4WdWwICRhDs9mURvDrsI6AjI1fR2F32BhmRpUEI/PhcMByuRR15/MZ7+/veH5+FlJaJODDw4O8YSQE02g0UJgHs2LIzIUdHY1GUsy8Xl5e8Pv7i+12K3+NcZCQ6263KyTMlnv+T4VMHGRhHgQiKDvJGMbjMXa7HRaLhZyTmCKojGB8S8Xc0+kfIfifIbe+Rl4AAAAASUVORK5CYII="
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/98f907bf24d0312b5bf4f11155b754a0/08742/the-camp-on-blood-island-1958.avif 78w,/static/98f907bf24d0312b5bf4f11155b754a0/1c619/the-camp-on-blood-island-1958.avif 156w,/static/98f907bf24d0312b5bf4f11155b754a0/c02e5/the-camp-on-blood-island-1958.avif 312w,/static/98f907bf24d0312b5bf4f11155b754a0/81026/the-camp-on-blood-island-1958.avif 624w"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from The Camp on Blood Island (1958)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/98f907bf24d0312b5bf4f11155b754a0/11456/the-camp-on-blood-island-1958.jpg"
+                          data-srcset="/static/98f907bf24d0312b5bf4f11155b754a0/43c32/the-camp-on-blood-island-1958.jpg 78w,/static/98f907bf24d0312b5bf4f11155b754a0/78def/the-camp-on-blood-island-1958.jpg 156w,/static/98f907bf24d0312b5bf4f11155b754a0/11456/the-camp-on-blood-island-1958.jpg 312w,/static/98f907bf24d0312b5bf4f11155b754a0/a02d5/the-camp-on-blood-island-1958.jpg 624w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                >
+                  <a
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/the-camp-on-blood-island-1958/"
+                  >
+                    The Camp on Blood Island 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
+                    >
+                      1958
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                >
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="B-: 3.5 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/3-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+              >
+                <div
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                >
+                  <a
+                    class="StillListMovie_stillStyle__1ug8mv51"
+                    href="/reviews/rasputin-the-mad-monk-1966/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 312px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        decoding="async"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACu0lEQVR42kWS204bVxSGB/Bh7LEph9hNAxgoroXt8WHGc/DZ+IghxtgJISQYp21IE5GkUnJRqbGQeIW+QKWqUq+qvuLX5ShSLj4tbW2tf///WltJptLoeg49a5DJmeRM5zNWsUqt0aZab1ERCm5FqOGUGzilJnaxje1+xXLamHYLJaXrpPQMaUHP5MhkTTL5AvVyBTed4uLA5qiQputadDtdDKskzXXhQGgK8tgcETOtJophWhgFi7w5xyZfcHFsh51IlEYyzmwy5LER59AyeDN9ju2UMQsloUI+X8EwquSNmlAlK2elfzpmcPaM0/MrqZcMnkxxLYf1QJCanmLScOim4uR2tnkngqcnI4ndoVzt4RY7OF8i58yGuJfIPbdA5/Ahje4x7f6Qo+EZbjbLss/HtFXjbvqY/v4O9uYDng/6TC8uqTZPqQvV+oBiuY9d6vNk8JRaUQQLqQzNbIqjwyPKjR7lSoNYNELQr1JNxGgl98jfjxIJatSyOueDY5nXgTiTmYmrnFnnl8krJgct8rqLcvnTaz5enTP79S3T67cMJfYPW5uoPj9rWpDd9RX2IutsrN+jlEzw/sUFh/2xxO5Rbwy4/e2Wj5Mr9vctEZelPO22uBkfc3vzktmH94xHZ+zHYmhqgKCg+qXKPFfDyyQ2N2k7NoPhBfXWI+4+3fHvn3/z6dVrrifXPOyOUZxcjpNahZ9POvz+8hkffnxBejeBVxzOheaEgiGiaxF2N7bY3tgmHL7Ho8E5//31D3/MZtyMRoyafZqVHspyKETAr/H9g/sY8T2iK6sE1CAer5+QJndzUZlf7Nvv2BAWFr2EtRVO5J9etjrU5O8mt3bIZ4qy7Q7K6jcraOE1FEVhcdGDPxBi0eNjyeNHVTUhIA41lkNhca2y5FXx+zQ8S16WFjwsCPO+RDwtS6rzP3ItYbxS0nH/AAAAAElFTkSuQmCC"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/08742/rasputin-the-mad-monk-1966.avif 78w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/1c619/rasputin-the-mad-monk-1966.avif 156w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/c02e5/rasputin-the-mad-monk-1966.avif 312w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/81026/rasputin-the-mad-monk-1966.avif 624w"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Rasputin: The Mad Monk (1966)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/11456/rasputin-the-mad-monk-1966.jpg"
+                          data-srcset="/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/43c32/rasputin-the-mad-monk-1966.jpg 78w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/78def/rasputin-the-mad-monk-1966.jpg 156w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/11456/rasputin-the-mad-monk-1966.jpg 312w,/static/4a5ba0aed8d6feb750d2ecd2325ac0fa/a02d5/rasputin-the-mad-monk-1966.jpg 624w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                >
+                  <a
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/rasputin-the-mad-monk-1966/"
+                  >
+                    Rasputin: The Mad Monk 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
+                    >
+                      1966
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                >
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D+: 2 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li
+                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+              >
+                <div
+                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                >
+                  <a
+                    class="StillListMovie_stillStyle__1ug8mv51"
+                    href="/reviews/the-devil-rides-out-1968/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 312px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        decoding="async"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACb0lEQVR42m2S3UvTURyHt99ebNP5Uu2lbe6nczo319S9ujldc3NO3fu06cLCpBAklMTKwMibIIiIuumqq+66q5tAEOuiIAoEr+uP6MbLpx9mYurFl8M5fM9zns85RyaTyfhXcrkcuUI4GGWCDL3eykx2FM9lJ0OpJMPpBDa7jQt6HbpGDfUNGtQqJccZsiOYICAoBRRqpdSkoKWlEW9nmvX5KabGBuj2uvAHPXR2d+AL+qRDOrC0mmnUNZwNFJQKFHUqVBo1zU1a+vs8pAKL3MnN8rgYpTA4hNfrJhoLEAj5iUR8dDntmEyms4FKtQTTatEbjZKBl+HYCBHXVWrpu1yLL5ALrzAYGGE4HmYsk2RldZWZag5RtCEIitNA1TkN2uZmHF1OotEQXR0u+h1Jnmy8Ya60SSX+iB4xRmNTPfF4jKx0t7PVCdraxL8g+UlDCWgwWwiGowTdToK+fgqJBRbLLyjF1phObBDszh309vS4SSfD1Gby2MXWowf931CjwSK2M5KeJGwzU4z5KaaWmQrfJ+66RT6yTq89cxTNaDIwNzdDl9V8NlAtAU2tbaTH8wyJZqpmHeWBJXL+ZYac84ScFYwNPUwXxyhNDB/sKWdTeNqth5FPAAWVGoNVZDxbIWoxkVHXEbHNSrZVHC2TnNfYuagzsvXuNdtv1ykkeymPhui8pD8NlB8uNBksFEo1ktK3KPT5eb7xlJ2Pn9h8+Aq3mCKVKPPj2xfWl6q8fFAhf8WDVlN3PK5UhxO90UwoliaeyPDs3m1er9X49XOX3/v7fN/+zNf3H9je2mF3b4+b12/QYTMQD7tx2M3H7fgD3CNLoMoYzMoAAAAASUVORK5CYII="
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/87bc675a2af702d4d63d5febc5fb2c21/08742/the-devil-rides-out-1968.avif 78w,/static/87bc675a2af702d4d63d5febc5fb2c21/1c619/the-devil-rides-out-1968.avif 156w,/static/87bc675a2af702d4d63d5febc5fb2c21/c02e5/the-devil-rides-out-1968.avif 312w,/static/87bc675a2af702d4d63d5febc5fb2c21/81026/the-devil-rides-out-1968.avif 624w"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from The Devil Rides Out (1968)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/87bc675a2af702d4d63d5febc5fb2c21/11456/the-devil-rides-out-1968.jpg"
+                          data-srcset="/static/87bc675a2af702d4d63d5febc5fb2c21/43c32/the-devil-rides-out-1968.jpg 78w,/static/87bc675a2af702d4d63d5febc5fb2c21/78def/the-devil-rides-out-1968.jpg 156w,/static/87bc675a2af702d4d63d5febc5fb2c21/11456/the-devil-rides-out-1968.jpg 312w,/static/87bc675a2af702d4d63d5febc5fb2c21/a02d5/the-devil-rides-out-1968.jpg 624w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                >
+                  <a
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/the-devil-rides-out-1968/"
+                  >
+                    The Devil Rides Out 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
+                    >
+                      1968
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                >
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B: 4 stars (out of 5)"
+                      class="StillListMovie_gradeStyle__1ug8mv50"
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li
+                class="StillList_seeAllLinkGridStyle__v7difm0 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingTop_16_default__8lcvdko8 sprinkles_paddingBottom_16_default__8lcvdkh4 sprinkles_display_block_default__8lcvdk6g sprinkles_textAlign_right__8lcvdk1a sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d"
+              >
+                <a
+                  href="/collections/hammer-films"
+                >
+                  All 
+                  <span
+                    class="sprinkles_display_inline_default__8lcvdk6s sprinkles_display_none_tablet__8lcvdk6l sprinkles_display_inline_desktop__8lcvdk6u"
+                  >
+                    Hammer Films
                   </span>
                    →
                 </a>
