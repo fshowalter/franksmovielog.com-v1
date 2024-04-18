@@ -97,6 +97,7 @@ export const data = {
       "Michael Gough",
       "Melissa Stribling",
     ],
+    writerNames: ["Jimmy Sangster", "Bram Stoker"],
     poster: {
       childImageSharp: {
         gatsbyImageData: {
@@ -168,6 +169,7 @@ export const data = {
               grade: "D+",
               slug: "the-abominable-snowman-1957",
               year: "1957",
+              genres: ["Adventure", "Horror"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -204,6 +206,7 @@ export const data = {
               grade: "B-",
               slug: "violent-playground-1958",
               year: "1958",
+              genres: ["Drama", "Crime"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -240,6 +243,7 @@ export const data = {
               grade: "C+",
               slug: "the-house-that-dripped-blood-1971",
               year: "1971",
+              genres: ["Drama", "Fantasy", "Horror", "Mystery", "Thriller"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -276,6 +280,7 @@ export const data = {
               grade: "D+",
               slug: "i-monster-1971",
               year: "1971",
+              genres: ["Horror"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -348,6 +353,7 @@ export const data = {
               grade: "D+",
               slug: "corridor-of-mirrors-1948",
               year: "1948",
+              genres: ["Drama", "Mystery"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -384,6 +390,7 @@ export const data = {
               grade: "A",
               slug: "the-curse-of-frankenstein-1957",
               year: "1957",
+              genres: ["Horror", "Sci-Fi", "Thriller"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -420,6 +427,7 @@ export const data = {
               grade: "B",
               slug: "the-city-of-the-dead-1960",
               year: "1960",
+              genres: ["Horror", "Mystery", "Thriller"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -456,6 +464,7 @@ export const data = {
               grade: "C+",
               slug: "the-whip-and-the-body-1963",
               year: "1963",
+              genres: ["Horror", "Romance"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -529,6 +538,7 @@ export const data = {
               grade: "D+",
               slug: "the-abominable-snowman-1957",
               year: "1957",
+              genres: ["Adventure", "Horror"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -565,6 +575,7 @@ export const data = {
               grade: "B-",
               slug: "the-camp-on-blood-island-1958",
               year: "1958",
+              genres: ["Action", "Drama", "History", "War"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -601,6 +612,7 @@ export const data = {
               grade: "D+",
               slug: "rasputin-the-mad-monk-1966",
               year: "1966",
+              genres: ["Biography", "Drama", "Horror"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -637,6 +649,7 @@ export const data = {
               grade: "B",
               slug: "the-devil-rides-out-1968",
               year: "1968",
+              genres: ["Horror"],
               still: {
                 childImageSharp: {
                   gatsbyImageData: {
@@ -677,6 +690,7 @@ export const data = {
           grade: "D",
           slug: "the-hoodlum-saint-1946",
           year: "1946",
+          genres: ["Drama", "Music"],
           still: {
             childImageSharp: {
               gatsbyImageData: {
@@ -713,6 +727,7 @@ export const data = {
           grade: "D",
           slug: "hoppy-serves-a-writ-1943",
           year: "1943",
+          genres: ["Western"],
           still: {
             childImageSharp: {
               gatsbyImageData: {
@@ -749,6 +764,7 @@ export const data = {
           grade: "C+",
           slug: "the-house-that-dripped-blood-1971",
           year: "1971",
+          genres: ["Drama", "Fantasy", "Horror", "Mystery", "Thriller"],
           still: {
             childImageSharp: {
               gatsbyImageData: {
@@ -785,6 +801,7 @@ export const data = {
           grade: "C-",
           slug: "house-of-1000-corpses-2003",
           year: "2003",
+          genres: ["Horror"],
           still: {
             childImageSharp: {
               gatsbyImageData: {

@@ -53,11 +53,37 @@ function ReviewListItem({
         <Box>
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
-          <Grade grade={item.grade} height={18} />
-          <Spacer axis="vertical" size={4} />
+          <Box __paddingBottom={1} __paddingTop={1}>
+            <Grade grade={item.grade} height={18} />
+          </Box>
+          <Spacer axis="vertical" size={8} />
+          <Genres genres={item.genres} />
           <Spacer axis="vertical" size={8} />
         </Box>
       </Box>
     </ListItem>
+  );
+}
+
+function Genres({ genres }: { genres: readonly string[] }): JSX.Element | null {
+  return (
+    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
+      {genres.map((genre, index) => {
+        if (index === 0) {
+          return (
+            <Box key={genre} as="span">
+              {genre}
+            </Box>
+          );
+        }
+
+        return (
+          <Box as="span" key={genre}>
+            {" "}
+            | {genre}
+          </Box>
+        );
+      })}
+    </Box>
   );
 }

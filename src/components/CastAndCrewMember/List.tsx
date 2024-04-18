@@ -58,7 +58,11 @@ function CastAndCrewMemberTitle({
           <Spacer axis="vertical" size={4} />
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
-          {item.grade && <Grade grade={item.grade} height={18} />}
+          {item.grade && (
+            <Box __paddingBottom={1} __paddingTop={1}>
+              <Grade grade={item.grade} height={18} />
+            </Box>
+          )}
           <Spacer axis="vertical" size={8} />
         </Box>
       </Box>

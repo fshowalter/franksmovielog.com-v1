@@ -31,6 +31,21 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
       backgroundColor="subtle"
       className={stickyHeaderScrollMarginTopStyle}
     >
+      <Box
+        as="header"
+        fontSize="large"
+        paddingBottom={24}
+        className={titleStyle}
+        display="flex"
+        alignItems="baseline"
+        justifyContent="center"
+        columnGap={8}
+      >
+        {review.title}{" "}
+        <Box as="span" fontSize="small" color="subtle" fontWeight="light">
+          ({review.year})
+        </Box>
+      </Box>
       <Box className={posterFloatStyle}>
         <GraphqlImage
           image={review.poster}
@@ -40,25 +55,31 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
           className={posterStyle}
         />
       </Box>
-      <Box
-        as="header"
-        fontSize="large"
-        paddingBottom={24}
-        className={titleStyle}
-      >
-        {review.title}
-      </Box>
+
       <Box as="dl" flexDirection="column" rowGap={24}>
-        <Credit title="Year" value={review.year} />
-        {review.originalTitle != review.title && (
-          <Credit title="Original Title" value={review.originalTitle} />
+        {review.originalTitle && (
+          <Credit title="Original Title" creditValue={review.originalTitle} />
         )}
-        <Credit title="Financing" value={toSentence(review.countries)} />
-        <Credit title="Running Time" value={`${review.runtimeMinutes} min`} />
-        <Credit title="Directed by" value={toSentence(review.directorNames)} />
+        <Credit title="Financing" creditValue={toSentence(review.countries)} />
+        <Credit
+          title="Running Time"
+          creditValue={`${review.runtimeMinutes} min`}
+        />
+        <Credit
+          title="Directed by"
+          creditValue={review.directorNames.map((name) => (
+            <Box key={name}>{name}</Box>
+          ))}
+        />
+        <Credit
+          title="Written by"
+          creditValue={review.writerNames.map((name) => (
+            <Box key={name}>{name}</Box>
+          ))}
+        />
         <Credit
           title="Starring"
-          value={toSentence(review.principalCastNames)}
+          creditValue={toSentence(review.principalCastNames)}
         />
       </Box>
       <Spacer axis="vertical" size={32} />
@@ -88,17 +109,17 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
 
 interface ICreditProps extends IBoxProps {
   title: string;
-  value: string | number | string[];
+  creditValue: React.ReactNode;
 }
 
-function Credit({ title, value, ...rest }: ICreditProps) {
+function Credit({ title, creditValue, ...rest }: ICreditProps) {
   return (
     <Box {...rest} className={creditStyle}>
       <Box as="dt" fontWeight="bold" color="subtle">
         {title}
       </Box>
       <Box as="dd" color="subtle">
-        {value}
+        {creditValue}
       </Box>
     </Box>
   );
@@ -113,6 +134,7 @@ export const query = graphql`
     runtimeMinutes
     directorNames
     principalCastNames
+    writerNames
     poster {
       childImageSharp {
         gatsbyImageData(

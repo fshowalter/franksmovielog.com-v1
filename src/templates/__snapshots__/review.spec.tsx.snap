@@ -735,6 +735,16 @@ exports[`/reviews/{slug} renders 1`] = `
           class="utils_stickyHeaderScrollMarginTopStyle__506800 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_position_relative_default__8lcvdkpg sprinkles_maxWidth_popout_default__8lcvdkbw sprinkles_width_full_default__8lcvdku8 sprinkles_paddingTop_32_default__8lcvdkog sprinkles_paddingTop_48_tablet__8lcvdkop sprinkles_paddingBottom_32_default__8lcvdkhc sprinkles_backgroundColor_subtle_default__8lcvdk2k"
           id="credits"
         >
+          <header
+            class="Credits_titleStyle__183gtw1 sprinkles_fontSize_large__8lcvdkp sprinkles_paddingBottom_24_default__8lcvdkh8 sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_baseline_default__8lcvdk1w sprinkles_justifyContent_center_default__8lcvdk9c sprinkles_columnGap_8_default__8lcvdk3w"
+          >
+            Horror of Dracula 
+            <span
+              class="sprinkles_fontSize_small__8lcvdkl sprinkles_color_subtle__8lcvdk9 sprinkles_fontWeight_light__8lcvdkr"
+            >
+              (1958)
+            </span>
+          </header>
           <div
             class="Credits_posterFloatStyle__183gtw2"
           >
@@ -788,28 +798,9 @@ exports[`/reviews/{slug} renders 1`] = `
               </script>
             </div>
           </div>
-          <header
-            class="Credits_titleStyle__183gtw1 sprinkles_fontSize_large__8lcvdkp sprinkles_paddingBottom_24_default__8lcvdkh8"
-          >
-            Horror of Dracula
-          </header>
           <dl
             class="sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_rowGap_24_default__8lcvdkq4"
           >
-            <div
-              class="Credits_creditStyle__183gtw3"
-            >
-              <dt
-                class="sprinkles_fontWeight_bold__8lcvdku sprinkles_color_subtle__8lcvdk9"
-              >
-                Year
-              </dt>
-              <dd
-                class="sprinkles_color_subtle__8lcvdk9"
-              >
-                1958
-              </dd>
-            </div>
             <div
               class="Credits_creditStyle__183gtw3"
             >
@@ -863,7 +854,28 @@ exports[`/reviews/{slug} renders 1`] = `
               <dd
                 class="sprinkles_color_subtle__8lcvdk9"
               >
-                Terence Fisher
+                <div>
+                  Terence Fisher
+                </div>
+              </dd>
+            </div>
+            <div
+              class="Credits_creditStyle__183gtw3"
+            >
+              <dt
+                class="sprinkles_fontWeight_bold__8lcvdku sprinkles_color_subtle__8lcvdk9"
+              >
+                Written by
+              </dt>
+              <dd
+                class="sprinkles_color_subtle__8lcvdk9"
+              >
+                <div>
+                  Jimmy Sangster
+                </div>
+                <div>
+                  Bram Stoker
+                </div>
               </dd>
             </div>
             <div
@@ -1057,7 +1069,7 @@ exports[`/reviews/{slug} renders 1`] = `
           class="sprinkles_maxWidth_popout_default__8lcvdkbw sprinkles_maxWidth_full_tablet__8lcvdkbl sprinkles_width_full_default__8lcvdku8 sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_rowGap_48_default__8lcvdkqg sprinkles_rowGap_96_desktop__8lcvdkqu sprinkles_alignItems_center_default__8lcvdk1k sprinkles_backgroundColor_default_default__8lcvdk2c sprinkles_backgroundColor_subtle_tablet__8lcvdk2l sprinkles_paddingTop_0_default__8lcvdknw sprinkles_paddingTop_32_tablet__8lcvdkoh sprinkles_paddingBottom_0_default__8lcvdkgs sprinkles_paddingBottom_128_tablet__8lcvdki1"
         >
           <nav
-            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
+            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k sprinkles_width_full_default__8lcvdku8 sprinkles_width_unset_tablet__8lcvdkuh"
           >
             <div
               class="sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingLeft_pageMargin_desktop__8lcvdkky sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingRight_pageMargin_desktop__8lcvdknq sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingTop_16_tablet__8lcvdko9 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_paddingBottom_16_tablet__8lcvdkh5 sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d sprinkles_width_full_default__8lcvdku8"
@@ -1077,13 +1089,13 @@ exports[`/reviews/{slug} renders 1`] = `
               class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-abominable-snowman-1957/"
                   >
                     <div
@@ -1138,7 +1150,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1153,7 +1165,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1162,22 +1174,35 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Adventure
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/violent-playground-1958/"
                   >
                     <div
@@ -1232,7 +1257,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1247,7 +1272,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1256,22 +1281,35 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="B-: 3.5 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/3-half-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Drama
+                    </span>
+                    <span>
+                       | Crime
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-house-that-dripped-blood-1971/"
                   >
                     <div
@@ -1326,7 +1364,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1341,7 +1379,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1350,22 +1388,44 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="C+: 3 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/3-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Drama
+                    </span>
+                    <span>
+                       | Fantasy
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                    <span>
+                       | Mystery
+                    </span>
+                    <span>
+                       | Thriller
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/i-monster-1971/"
                   >
                     <div
@@ -1420,7 +1480,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1435,7 +1495,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1444,12 +1504,22 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Horror
+                    </span>
+                  </div>
                 </div>
               </li>
               <li
@@ -1470,7 +1540,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </ul>
           </nav>
           <nav
-            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
+            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k sprinkles_width_full_default__8lcvdku8 sprinkles_width_unset_tablet__8lcvdkuh"
           >
             <div
               class="sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingLeft_pageMargin_desktop__8lcvdkky sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingRight_pageMargin_desktop__8lcvdknq sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingTop_16_tablet__8lcvdko9 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_paddingBottom_16_tablet__8lcvdkh5 sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d sprinkles_width_full_default__8lcvdku8"
@@ -1490,13 +1560,13 @@ exports[`/reviews/{slug} renders 1`] = `
               class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/corridor-of-mirrors-1948/"
                   >
                     <div
@@ -1551,7 +1621,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1566,7 +1636,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1575,22 +1645,35 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Drama
+                    </span>
+                    <span>
+                       | Mystery
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-curse-of-frankenstein-1957/"
                   >
                     <div
@@ -1645,7 +1728,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1660,7 +1743,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1669,22 +1752,38 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="A: 5 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/5-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Horror
+                    </span>
+                    <span>
+                       | Sci-Fi
+                    </span>
+                    <span>
+                       | Thriller
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-city-of-the-dead-1960/"
                   >
                     <div
@@ -1739,7 +1838,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1754,7 +1853,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1763,22 +1862,38 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="B: 4 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/4-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Horror
+                    </span>
+                    <span>
+                       | Mystery
+                    </span>
+                    <span>
+                       | Thriller
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-whip-and-the-body-1963/"
                   >
                     <div
@@ -1833,7 +1948,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1848,7 +1963,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1857,12 +1972,25 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="C+: 3 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/3-stars.svg"
                       width="80"
                     />
                   </picture>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Horror
+                    </span>
+                    <span>
+                       | Romance
+                    </span>
+                  </div>
                 </div>
               </li>
               <li
@@ -1883,7 +2011,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </ul>
           </nav>
           <nav
-            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
+            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k sprinkles_width_full_default__8lcvdku8 sprinkles_width_unset_tablet__8lcvdkuh"
           >
             <div
               class="sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingLeft_pageMargin_desktop__8lcvdkky sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingRight_pageMargin_desktop__8lcvdknq sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingTop_16_tablet__8lcvdko9 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_paddingBottom_16_tablet__8lcvdkh5 sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d sprinkles_width_full_default__8lcvdku8"
@@ -1903,13 +2031,13 @@ exports[`/reviews/{slug} renders 1`] = `
               class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-abominable-snowman-1957/"
                   >
                     <div
@@ -1964,7 +2092,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -1979,7 +2107,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -1988,22 +2116,35 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Adventure
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-camp-on-blood-island-1958/"
                   >
                     <div
@@ -2058,7 +2199,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -2073,7 +2214,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -2082,22 +2223,41 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="B-: 3.5 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/3-half-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Action
+                    </span>
+                    <span>
+                       | Drama
+                    </span>
+                    <span>
+                       | History
+                    </span>
+                    <span>
+                       | War
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/rasputin-the-mad-monk-1966/"
                   >
                     <div
@@ -2152,7 +2312,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -2167,7 +2327,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -2176,22 +2336,38 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Biography
+                    </span>
+                    <span>
+                       | Drama
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-devil-rides-out-1968/"
                   >
                     <div
@@ -2246,7 +2422,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -2261,7 +2437,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -2270,12 +2446,22 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="B: 4 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/4-stars.svg"
                       width="80"
                     />
                   </picture>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Horror
+                    </span>
+                  </div>
                 </div>
               </li>
               <li
@@ -2296,7 +2482,7 @@ exports[`/reviews/{slug} renders 1`] = `
             </ul>
           </nav>
           <nav
-            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
+            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k sprinkles_width_full_default__8lcvdku8 sprinkles_width_unset_tablet__8lcvdkuh"
           >
             <div
               class="sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingLeft_pageMargin_desktop__8lcvdkky sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingRight_pageMargin_desktop__8lcvdknq sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingTop_16_tablet__8lcvdko9 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_paddingBottom_16_tablet__8lcvdkh5 sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d sprinkles_width_full_default__8lcvdku8"
@@ -2316,13 +2502,13 @@ exports[`/reviews/{slug} renders 1`] = `
               class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-hoodlum-saint-1946/"
                   >
                     <div
@@ -2377,7 +2563,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -2392,7 +2578,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -2401,22 +2587,35 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="D: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Drama
+                    </span>
+                    <span>
+                       | Music
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/hoppy-serves-a-writ-1943/"
                   >
                     <div
@@ -2471,7 +2670,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -2486,7 +2685,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -2495,22 +2694,32 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="D: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Western
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/the-house-that-dripped-blood-1971/"
                   >
                     <div
@@ -2565,7 +2774,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -2580,7 +2789,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -2589,22 +2798,44 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="C+: 3 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/3-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Drama
+                    </span>
+                    <span>
+                       | Fantasy
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                    <span>
+                       | Mystery
+                    </span>
+                    <span>
+                       | Thriller
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
+                    class="StillListMovie_stillStyle__1ug8mv50"
                     href="/reviews/house-of-1000-corpses-2003/"
                   >
                     <div
@@ -2659,7 +2890,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
                     class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
@@ -2674,7 +2905,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -2683,12 +2914,22 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <img
                       alt="C-: 2.5 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-half-stars.svg"
                       width="80"
                     />
                   </picture>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Horror
+                    </span>
+                  </div>
                 </div>
               </li>
               <li

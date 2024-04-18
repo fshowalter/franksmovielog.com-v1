@@ -4,12 +4,7 @@ import { Grade } from "../Grade";
 import { gridAreaComponent, gridComponent } from "../Grid";
 import { Link } from "../Link";
 import { Still } from "../Still";
-import {
-  gradeStyle,
-  gridAreas,
-  gridStyle,
-  stillStyle,
-} from "./StillListMovie.css";
+import { gridAreas, gridStyle, stillStyle } from "./StillListMovie.css";
 
 const GridArea = gridAreaComponent(gridAreas);
 
@@ -47,9 +42,35 @@ export function StillListMovie({ movie, ...rest }: IStillListMovieProps) {
         </Link>
       </GridArea>
       <GridArea name="grade">
-        <Grade grade={movie.grade} height={16} className={gradeStyle} />
+        <Grade grade={movie.grade} height={16} />
+      </GridArea>
+      <GridArea name="genres">
+        <Genres genres={movie.genres} />
       </GridArea>
     </Grid>
+  );
+}
+
+function Genres({ genres }: { genres: readonly string[] }): JSX.Element | null {
+  return (
+    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
+      {genres.map((genre, index) => {
+        if (index === 0) {
+          return (
+            <Box key={genre} as="span">
+              {genre}
+            </Box>
+          );
+        }
+
+        return (
+          <Box as="span" key={genre}>
+            {" "}
+            | {genre}
+          </Box>
+        );
+      })}
+    </Box>
   );
 }
 
@@ -60,6 +81,7 @@ export const query = graphql`
     grade
     slug
     year
+    genres
     still {
       childImageSharp {
         gatsbyImageData(

@@ -10,5 +10,6 @@ export const Title = {
     slug: "String",
     still: "File",
     poster: "File!",
+    genres: "[String!]!",
   },
 };
