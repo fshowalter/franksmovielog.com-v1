@@ -112,6 +112,29 @@ export const ReviewedTitleMoreEntity = {
     name: "String!",
     slug: "String!",
     titles: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
+    avatar: "File!",
+  },
+};
+
+export const ReviewedTitleMoreCastAndCrewMember = {
+  name: SchemaNames.ReviewedTitleMoreCastAndCrewMember,
+  interfaces: [SchemaNames.ReviewedTitleMoreEntity],
+  fields: {
+    name: "String!",
+    slug: "String!",
+    creditKind: "String!",
+    titles: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
+    avatar: avatarFieldResolver,
+  },
+};
+
+export const ReviewedTitleMoreCollection = {
+  name: SchemaNames.ReviewedTitleMoreCollection,
+  interfaces: [SchemaNames.ReviewedTitleMoreEntity],
+  fields: {
+    name: "String!",
+    slug: "String!",
+    titles: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
     avatar: avatarFieldResolver,
   },
 };
@@ -119,10 +142,8 @@ export const ReviewedTitleMoreEntity = {
 export const ReviewedTitleMore = {
   name: SchemaNames.ReviewedTitleMore,
   fields: {
-    directedBy: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
-    withPerformer: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
-    writtenBy: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
-    inCollection: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
+    castAndCrew: `[${SchemaNames.ReviewedTitleMoreCastAndCrewMember}!]!`,
+    collections: `[${SchemaNames.ReviewedTitleMoreCollection}!]!`,
     reviews: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
   },
 };

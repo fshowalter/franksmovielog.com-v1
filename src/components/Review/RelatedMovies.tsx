@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import { Box, IBoxProps } from "../Box";
 import { StillList, StillListHeading, StillListNav } from "../StillList";
-import { RelatedMoviesForWatchlistEntities } from "./RelatedMoviesForWatchlistEntities";
+import { RelatedMoviesList } from "./RelatedMoviesList";
 
 interface IRelatedMoviesProps extends IBoxProps {
   review: Queries.RelatedMoviesFragment;
@@ -19,22 +19,25 @@ export function RelatedMovies({ review, ...rest }: IRelatedMoviesProps) {
       paddingTop={{ default: 0, tablet: 32 }}
       paddingBottom={{ default: 0, tablet: 128 }}
     >
-      <RelatedMoviesForWatchlistEntities
+      {review.more.castAndCrew.map({person} => {
+        <RelatedMoviesList
+        entityType="collection"
+        entities={review.more.inCollection}
+      />  
+      })}
+      <RelatedMoviesList
         entityType="collection"
         entities={review.more.inCollection}
       />
-      <RelatedMoviesForWatchlistEntities
+      <RelatedMoviesList
         entityType="performer"
         entities={review.more.withPerformer}
       />
-      <RelatedMoviesForWatchlistEntities
+      <RelatedMoviesList
         entityType="director"
         entities={review.more.directedBy}
       />
-      <RelatedMoviesForWatchlistEntities
-        entityType="writer"
-        entities={review.more.writtenBy}
-      />
+      <RelatedMoviesList entityType="writer" entities={review.more.writtenBy} />
       <MoreReviews reviews={review.more.reviews} />
     </Box>
   );
@@ -64,17 +67,11 @@ function MoreReviews({
 export const query = graphql`
   fragment RelatedMovies on ReviewedTitlesJson {
     more {
-      withPerformer {
-        ...RelatedMoviesForWatchlistEntity
+      castAndCrew {
+        ...RelatedMoviesListItem
       }
-      directedBy {
-        ...RelatedMoviesForWatchlistEntity
-      }
-      writtenBy {
-        ...RelatedMoviesForWatchlistEntity
-      }
-      inCollection {
-        ...RelatedMoviesForWatchlistEntity
+      collections {
+        ...RelatedMoviesListItem
       }
       reviews {
         ...StillListMovie

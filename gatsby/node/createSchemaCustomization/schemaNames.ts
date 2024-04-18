@@ -11,6 +11,8 @@ export enum SchemaNames {
   MostWatchedTitle = "MostWatchedTitle",
   OverratedDisappointmentsJson = "OverratedDisappointmentsJson",
   ReviewedTitleMore = "ReviewedTitleMore",
+  ReviewedTitleMoreCastAndCrewMember = "ReviewedTitleMoreCastAndCrewMember",
+  ReviewedTitleMoreCollection = "ReviewedTitleMoreCollection",
   ReviewedTitleMoreEntity = "ReviewedTitleMoreEntity",
   ReviewedTitleMoreTitle = "ReviewedTitleMoreTitle",
   ReviewedTitlesJson = "ReviewedTitlesJson",
