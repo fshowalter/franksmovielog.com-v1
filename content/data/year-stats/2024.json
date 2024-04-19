@@ -1,8 +1,8 @@
 {
   "year": "2024",
-  "newTitleCount": 19,
-  "viewingCount": 26,
-  "titleCount": 26,
+  "newTitleCount": 20,
+  "viewingCount": 29,
+  "titleCount": 29,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
@@ -10,7 +10,7 @@
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 5
+      "count": 6
     },
     {
       "name": "iTunes",
@@ -36,11 +36,11 @@
     },
     {
       "name": "1970s",
-      "count": 4
+      "count": 5
     },
     {
       "name": "1980s",
-      "count": 8
+      "count": 9
     },
     {
       "name": "1990s",
@@ -52,7 +52,7 @@
     },
     {
       "name": "2010s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "2020s",
@@ -169,6 +169,31 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1982"
+        }
+      ]
+    },
+    {
+      "name": "Christopher George",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1567,
+          "date": "2024-02-03",
+          "slug": null,
+          "title": "Pieces",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 1581,
+          "date": "2024-04-10",
+          "slug": "city-of-the-living-dead-1980",
+          "title": "City of the Living Dead",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1980"
         }
       ]
     },
@@ -346,6 +371,81 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1982"
+        }
+      ]
+    },
+    {
+      "name": "Lucio Fulci",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1581,
+          "date": "2024-04-10",
+          "slug": "city-of-the-living-dead-1980",
+          "title": "City of the Living Dead",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1980"
+        },
+        {
+          "sequence": 1581,
+          "date": "2024-04-10",
+          "slug": "city-of-the-living-dead-1980",
+          "title": "City of the Living Dead",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1980"
+        }
+      ]
+    },
+    {
+      "name": "Dardano Sacchetti",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1581,
+          "date": "2024-04-10",
+          "slug": "city-of-the-living-dead-1980",
+          "title": "City of the Living Dead",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1980"
+        },
+        {
+          "sequence": 1581,
+          "date": "2024-04-10",
+          "slug": "city-of-the-living-dead-1980",
+          "title": "City of the Living Dead",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1980"
+        }
+      ]
+    },
+    {
+      "name": "Panos Cosmatos",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1582,
+          "date": "2024-04-13",
+          "slug": "mandy-2018",
+          "title": "Mandy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 1582,
+          "date": "2024-04-13",
+          "slug": "mandy-2018",
+          "title": "Mandy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
         }
       ]
     }

@@ -1,7 +1,7 @@
 [
   {
-    "viewingCount": 1580,
-    "titleCount": 1294,
+    "viewingCount": 1583,
+    "titleCount": 1295,
     "reviewCount": 702,
     "watchlistTitlesReviewedCount": 385,
     "gradeDistribution": [
@@ -97,11 +97,11 @@
         "count": 64
       },
       {
-        "name": "Amazon",
-        "count": 59
+        "name": "4k UHD Blu-ray",
+        "count": 60
       },
       {
-        "name": "4k UHD Blu-ray",
+        "name": "Amazon",
         "count": 59
       },
       {
@@ -136,11 +136,11 @@
       },
       {
         "name": "1970s",
-        "count": 173
+        "count": 174
       },
       {
         "name": "1980s",
-        "count": 256
+        "count": 257
       },
       {
         "name": "1990s",
@@ -152,7 +152,7 @@
       },
       {
         "name": "2010s",
-        "count": 345
+        "count": 346
       },
       {
         "name": "2020s",
@@ -196,6 +196,13 @@
         "slug": "christmas-evil-1980"
       },
       {
+        "title": "Mandy",
+        "imdbId": "tt6998518",
+        "year": "2018",
+        "count": 5,
+        "slug": "mandy-2018"
+      },
+      {
         "title": "Halloween",
         "imdbId": "tt0077651",
         "year": "1978",
@@ -222,13 +229,6 @@
         "year": "1988",
         "count": 4,
         "slug": "die-hard-1988"
-      },
-      {
-        "title": "Rio Bravo",
-        "imdbId": "tt0053221",
-        "year": "1959",
-        "count": 4,
-        "slug": "rio-bravo-1959"
       }
     ],
     "mostWatchedDirectors": [
@@ -684,6 +684,175 @@
             "medium": "Criterion Channel",
             "venue": null,
             "year": "1960"
+          }
+        ]
+      },
+      {
+        "name": "Lucio Fulci",
+        "count": 18,
+        "slug": "lucio-fulci",
+        "viewings": [
+          {
+            "sequence": 175,
+            "date": "2012-05-04",
+            "slug": null,
+            "title": "The House by the Cemetery",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1981"
+          },
+          {
+            "sequence": 191,
+            "date": "2012-06-14",
+            "slug": "city-of-the-living-dead-1980",
+            "title": "City of the Living Dead",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1980"
+          },
+          {
+            "sequence": 503,
+            "date": "2015-06-23",
+            "slug": null,
+            "title": "The Beyond",
+            "medium": null,
+            "venue": "Alamo Drafthouse Cinema - Winchester",
+            "year": "1981"
+          },
+          {
+            "sequence": 532,
+            "date": "2015-11-05",
+            "slug": null,
+            "title": "The Beyond",
+            "medium": null,
+            "venue": "AFI Silver",
+            "year": "1981"
+          },
+          {
+            "sequence": 552,
+            "date": "2016-06-22",
+            "slug": null,
+            "title": "A Cat in the Brain",
+            "medium": null,
+            "venue": "Alamo Drafthouse Cinema - One Loudoun",
+            "year": "1990"
+          },
+          {
+            "sequence": 633,
+            "date": "2018-01-20",
+            "slug": null,
+            "title": "Zombie 3",
+            "medium": null,
+            "venue": "Alamo Drafthouse Cinema - One Loudoun",
+            "year": "1988"
+          },
+          {
+            "sequence": 710,
+            "date": "2018-10-13",
+            "slug": null,
+            "title": "Zombie",
+            "medium": null,
+            "venue": "Alamo Drafthouse Cinema - One Loudoun",
+            "year": "1979"
+          },
+          {
+            "sequence": 873,
+            "date": "2020-09-21",
+            "slug": "massacre-time-1966",
+            "title": "Massacre Time",
+            "medium": "DVD",
+            "venue": null,
+            "year": "1966"
+          },
+          {
+            "sequence": 874,
+            "date": "2020-09-24",
+            "slug": "one-on-top-of-the-other-1969",
+            "title": "One on Top of the Other",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1969"
+          },
+          {
+            "sequence": 896,
+            "date": "2020-10-22",
+            "slug": "the-conspiracy-of-torture-1969",
+            "title": "The Conspiracy of Torture",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1969"
+          },
+          {
+            "sequence": 897,
+            "date": "2020-10-23",
+            "slug": "a-lizard-in-a-womans-skin-1971",
+            "title": "A Lizard in a Woman's Skin",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1971"
+          },
+          {
+            "sequence": 901,
+            "date": "2020-10-27",
+            "slug": "dont-torture-a-duckling-1972",
+            "title": "Don't Torture a Duckling",
+            "medium": "iTunes",
+            "venue": null,
+            "year": "1972"
+          },
+          {
+            "sequence": 1060,
+            "date": "2021-03-26",
+            "slug": "white-fang-1973",
+            "title": "White Fang",
+            "medium": "DVD",
+            "venue": null,
+            "year": "1973"
+          },
+          {
+            "sequence": 1209,
+            "date": "2021-12-15",
+            "slug": "challenge-to-white-fang-1974",
+            "title": "Challenge to White Fang",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1974"
+          },
+          {
+            "sequence": 1248,
+            "date": "2022-02-10",
+            "slug": "the-four-of-the-apocalypse-1975",
+            "title": "The Four of the Apocalypse...",
+            "medium": "Alamo On Demand",
+            "venue": null,
+            "year": "1975"
+          },
+          {
+            "sequence": 1449,
+            "date": "2023-03-11",
+            "slug": "the-new-york-ripper-1982",
+            "title": "The New York Ripper",
+            "medium": "4k UHD Blu-ray",
+            "venue": null,
+            "year": "1982"
+          },
+          {
+            "sequence": 1461,
+            "date": "2023-04-03",
+            "slug": "the-psychic-1977",
+            "title": "The Psychic",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1977"
+          },
+          {
+            "sequence": 1581,
+            "date": "2024-04-10",
+            "slug": "city-of-the-living-dead-1980",
+            "title": "City of the Living Dead",
+            "medium": "4k UHD Blu-ray",
+            "venue": null,
+            "year": "1980"
           }
         ]
       },
@@ -1164,166 +1333,6 @@
             "medium": "DVD",
             "venue": null,
             "year": "1932"
-          }
-        ]
-      },
-      {
-        "name": "Lucio Fulci",
-        "count": 17,
-        "slug": "lucio-fulci",
-        "viewings": [
-          {
-            "sequence": 175,
-            "date": "2012-05-04",
-            "slug": null,
-            "title": "The House by the Cemetery",
-            "medium": "Blu-ray",
-            "venue": null,
-            "year": "1981"
-          },
-          {
-            "sequence": 191,
-            "date": "2012-06-14",
-            "slug": "city-of-the-living-dead-1980",
-            "title": "City of the Living Dead",
-            "medium": "Blu-ray",
-            "venue": null,
-            "year": "1980"
-          },
-          {
-            "sequence": 503,
-            "date": "2015-06-23",
-            "slug": null,
-            "title": "The Beyond",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - Winchester",
-            "year": "1981"
-          },
-          {
-            "sequence": 532,
-            "date": "2015-11-05",
-            "slug": null,
-            "title": "The Beyond",
-            "medium": null,
-            "venue": "AFI Silver",
-            "year": "1981"
-          },
-          {
-            "sequence": 552,
-            "date": "2016-06-22",
-            "slug": null,
-            "title": "A Cat in the Brain",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "1990"
-          },
-          {
-            "sequence": 633,
-            "date": "2018-01-20",
-            "slug": null,
-            "title": "Zombie 3",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "1988"
-          },
-          {
-            "sequence": 710,
-            "date": "2018-10-13",
-            "slug": null,
-            "title": "Zombie",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "1979"
-          },
-          {
-            "sequence": 873,
-            "date": "2020-09-21",
-            "slug": "massacre-time-1966",
-            "title": "Massacre Time",
-            "medium": "DVD",
-            "venue": null,
-            "year": "1966"
-          },
-          {
-            "sequence": 874,
-            "date": "2020-09-24",
-            "slug": "one-on-top-of-the-other-1969",
-            "title": "One on Top of the Other",
-            "medium": "Blu-ray",
-            "venue": null,
-            "year": "1969"
-          },
-          {
-            "sequence": 896,
-            "date": "2020-10-22",
-            "slug": "the-conspiracy-of-torture-1969",
-            "title": "The Conspiracy of Torture",
-            "medium": "Blu-ray",
-            "venue": null,
-            "year": "1969"
-          },
-          {
-            "sequence": 897,
-            "date": "2020-10-23",
-            "slug": "a-lizard-in-a-womans-skin-1971",
-            "title": "A Lizard in a Woman's Skin",
-            "medium": "Blu-ray",
-            "venue": null,
-            "year": "1971"
-          },
-          {
-            "sequence": 901,
-            "date": "2020-10-27",
-            "slug": "dont-torture-a-duckling-1972",
-            "title": "Don't Torture a Duckling",
-            "medium": "iTunes",
-            "venue": null,
-            "year": "1972"
-          },
-          {
-            "sequence": 1060,
-            "date": "2021-03-26",
-            "slug": "white-fang-1973",
-            "title": "White Fang",
-            "medium": "DVD",
-            "venue": null,
-            "year": "1973"
-          },
-          {
-            "sequence": 1209,
-            "date": "2021-12-15",
-            "slug": "challenge-to-white-fang-1974",
-            "title": "Challenge to White Fang",
-            "medium": "Blu-ray",
-            "venue": null,
-            "year": "1974"
-          },
-          {
-            "sequence": 1248,
-            "date": "2022-02-10",
-            "slug": "the-four-of-the-apocalypse-1975",
-            "title": "The Four of the Apocalypse...",
-            "medium": "Alamo On Demand",
-            "venue": null,
-            "year": "1975"
-          },
-          {
-            "sequence": 1449,
-            "date": "2023-03-11",
-            "slug": "the-new-york-ripper-1982",
-            "title": "The New York Ripper",
-            "medium": "4k UHD Blu-ray",
-            "venue": null,
-            "year": "1982"
-          },
-          {
-            "sequence": 1461,
-            "date": "2023-04-03",
-            "slug": "the-psychic-1977",
-            "title": "The Psychic",
-            "medium": "Blu-ray",
-            "venue": null,
-            "year": "1977"
           }
         ]
       },
@@ -4004,7 +4013,7 @@
             "sequence": 414,
             "date": "2014-08-02",
             "slug": "the-bloody-judge-1970",
-            "title": "Night of the Blood Monster",
+            "title": "The Bloody Judge",
             "medium": "DVD",
             "venue": null,
             "year": "1970"
@@ -5535,7 +5544,7 @@
     "mostWatchedWriters": [
       {
         "name": "Lucio Fulci",
-        "count": 21,
+        "count": 23,
         "slug": null,
         "viewings": [
           {
@@ -5726,6 +5735,24 @@
             "medium": "Blu-ray",
             "venue": null,
             "year": "1977"
+          },
+          {
+            "sequence": 1581,
+            "date": "2024-04-10",
+            "slug": "city-of-the-living-dead-1980",
+            "title": "City of the Living Dead",
+            "medium": "4k UHD Blu-ray",
+            "venue": null,
+            "year": "1980"
+          },
+          {
+            "sequence": 1581,
+            "date": "2024-04-10",
+            "slug": "city-of-the-living-dead-1980",
+            "title": "City of the Living Dead",
+            "medium": "4k UHD Blu-ray",
+            "venue": null,
+            "year": "1980"
           }
         ]
       },
@@ -6319,7 +6346,7 @@
       },
       {
         "name": "Dardano Sacchetti",
-        "count": 18,
+        "count": 20,
         "slug": null,
         "viewings": [
           {
@@ -6483,6 +6510,24 @@
             "medium": "Blu-ray",
             "venue": null,
             "year": "1977"
+          },
+          {
+            "sequence": 1581,
+            "date": "2024-04-10",
+            "slug": "city-of-the-living-dead-1980",
+            "title": "City of the Living Dead",
+            "medium": "4k UHD Blu-ray",
+            "venue": null,
+            "year": "1980"
+          },
+          {
+            "sequence": 1581,
+            "date": "2024-04-10",
+            "slug": "city-of-the-living-dead-1980",
+            "title": "City of the Living Dead",
+            "medium": "4k UHD Blu-ray",
+            "venue": null,
+            "year": "1980"
           }
         ]
       },
