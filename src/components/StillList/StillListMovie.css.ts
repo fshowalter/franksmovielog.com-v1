@@ -12,6 +12,7 @@ export const stillStyle = style({
   transform: "translateZ(0)",
   float: "right",
   marginLeft: "24px",
+  marginBottom: "8px",
   width: "calc(50% - 12px)",
 
   "@media": {
