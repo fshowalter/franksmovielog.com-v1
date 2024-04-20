@@ -3,7 +3,7 @@ import { Box, IBoxProps } from "../Box";
 import { StillList, StillListHeading, StillListNav } from "../StillList";
 
 interface IMoreMoviesProps extends IBoxProps {
-  review: Queries.MoreMoviesFragment;
+  review: Queries.MoreReviewsFragment;
 }
 
 export function MoreReviews({ review, ...rest }: IMoreMoviesProps) {
