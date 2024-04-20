@@ -20,6 +20,10 @@ export function MostWatchedPeople({
   header: string;
   people: readonly Queries.MostWatchedPersonFragment[];
 }): JSX.Element | null {
+  if (people.length == 0) {
+    return null;
+  }
+
   return (
     <Box as="section" boxShadow="borderAll">
       <StatHeading>{header}</StatHeading>

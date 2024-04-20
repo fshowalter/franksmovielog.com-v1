@@ -705,18 +705,9 @@
   "mostWatchedWriters": [
     {
       "name": "Dardano Sacchetti",
-      "count": 6,
+      "count": 3,
       "slug": null,
       "viewings": [
-        {
-          "sequence": 503,
-          "date": "2015-06-23",
-          "slug": null,
-          "title": "The Beyond",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - Winchester",
-          "year": "1981"
-        },
         {
           "sequence": 503,
           "date": "2015-06-23",
@@ -736,15 +727,6 @@
           "year": "1985"
         },
         {
-          "sequence": 531,
-          "date": "2015-10-31",
-          "slug": null,
-          "title": "Demons",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "1985"
-        },
-        {
           "sequence": 532,
           "date": "2015-11-05",
           "slug": null,
@@ -752,108 +734,6 @@
           "medium": null,
           "venue": "AFI Silver",
           "year": "1981"
-        },
-        {
-          "sequence": 532,
-          "date": "2015-11-05",
-          "slug": null,
-          "title": "The Beyond",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1981"
-        }
-      ]
-    },
-    {
-      "name": "Daniel Mainwaring",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 473,
-          "date": "2015-01-31",
-          "slug": "the-big-steal-1949",
-          "title": "The Big Steal",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1949"
-        },
-        {
-          "sequence": 499,
-          "date": "2015-06-06",
-          "slug": null,
-          "title": "Out of the Past",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1947"
-        },
-        {
-          "sequence": 499,
-          "date": "2015-06-06",
-          "slug": null,
-          "title": "Out of the Past",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1947"
-        }
-      ]
-    },
-    {
-      "name": "Hayao Miyazaki",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 526,
-          "date": "2015-10-24",
-          "slug": null,
-          "title": "My Neighbor Totoro",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1988"
-        },
-        {
-          "sequence": 526,
-          "date": "2015-10-24",
-          "slug": null,
-          "title": "My Neighbor Totoro",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1988"
-        },
-        {
-          "sequence": 526,
-          "date": "2015-10-24",
-          "slug": null,
-          "title": "My Neighbor Totoro",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1988"
-        }
-      ]
-    },
-    {
-      "name": "D.D. Beauchamp",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 463,
-          "date": "2015-01-03",
-          "slug": "she-couldnt-say-no-1953",
-          "title": "She Couldn't Say No",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1953"
-        },
-        {
-          "sequence": 463,
-          "date": "2015-01-03",
-          "slug": "she-couldnt-say-no-1953",
-          "title": "She Couldn't Say No",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1953"
         }
       ]
     },
@@ -879,6 +759,31 @@
           "medium": "DVD",
           "venue": null,
           "year": "1976"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Mainwaring",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 473,
+          "date": "2015-01-31",
+          "slug": "the-big-steal-1949",
+          "title": "The Big Steal",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1949"
+        },
+        {
+          "sequence": 499,
+          "date": "2015-06-06",
+          "slug": null,
+          "title": "Out of the Past",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1947"
         }
       ]
     },
@@ -933,56 +838,6 @@
       ]
     },
     {
-      "name": "Horace McCoy",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 483,
-          "date": "2015-02-28",
-          "slug": "dangerous-mission-1954",
-          "title": "Dangerous Mission",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1954"
-        },
-        {
-          "sequence": 483,
-          "date": "2015-02-28",
-          "slug": "dangerous-mission-1954",
-          "title": "Dangerous Mission",
-          "medium": "TCM HD",
-          "venue": null,
-          "year": "1954"
-        }
-      ]
-    },
-    {
-      "name": "Joe Giannone",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 491,
-          "date": "2015-04-23",
-          "slug": null,
-          "title": "Madman",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1981"
-        },
-        {
-          "sequence": 491,
-          "date": "2015-04-23",
-          "slug": null,
-          "title": "Madman",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1981"
-        }
-      ]
-    },
-    {
       "name": "Joss Whedon",
       "count": 2,
       "slug": null,
@@ -1004,6 +859,106 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "2011"
+        }
+      ]
+    },
+    {
+      "name": "Milton Subotsky",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 498,
+          "date": "2015-06-06",
+          "slug": "the-city-of-the-dead-1960",
+          "title": "The City of the Dead",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1960"
+        },
+        {
+          "sequence": 514,
+          "date": "2015-08-11",
+          "slug": "i-monster-1971",
+          "title": "I, Monster",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "1971"
+        }
+      ]
+    },
+    {
+      "name": "Michael Arndt",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 502,
+          "date": "2015-06-22",
+          "slug": "inside-out-2015",
+          "title": "Inside Out",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2015"
+        },
+        {
+          "sequence": 536,
+          "date": "2015-12-21",
+          "slug": null,
+          "title": "Star Wars: Episode VII - The Force Awakens",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "name": "Giorgio Mariuzzo",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 503,
+          "date": "2015-06-23",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - Winchester",
+          "year": "1981"
+        },
+        {
+          "sequence": 532,
+          "date": "2015-11-05",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1981"
+        }
+      ]
+    },
+    {
+      "name": "Lucio Fulci",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 503,
+          "date": "2015-06-23",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - Winchester",
+          "year": "1981"
+        },
+        {
+          "sequence": 532,
+          "date": "2015-11-05",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1981"
         }
       ]
     }

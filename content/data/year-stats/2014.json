@@ -647,49 +647,6 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Quentin Tarantino",
-      "count": 4,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 372,
-          "date": "2014-02-16",
-          "slug": null,
-          "title": "Kill Bill: Vol. 1",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2003"
-        },
-        {
-          "sequence": 372,
-          "date": "2014-02-16",
-          "slug": null,
-          "title": "Kill Bill: Vol. 1",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2003"
-        },
-        {
-          "sequence": 378,
-          "date": "2014-03-29",
-          "slug": null,
-          "title": "Kill Bill: Vol. 2",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2004"
-        },
-        {
-          "sequence": 378,
-          "date": "2014-03-29",
-          "slug": null,
-          "title": "Kill Bill: Vol. 2",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2004"
-        }
-      ]
-    },
-    {
       "name": "Harry Alan Towers",
       "count": 4,
       "slug": null,
@@ -729,74 +686,6 @@
           "medium": "DVD",
           "venue": null,
           "year": "1966"
-        }
-      ]
-    },
-    {
-      "name": "Boaz Davidson",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 360,
-          "date": "2014-01-11",
-          "slug": null,
-          "title": "Ninja: Shadow of a Tear",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2013"
-        },
-        {
-          "sequence": 367,
-          "date": "2014-01-27",
-          "slug": null,
-          "title": "Ninja",
-          "medium": "Amazon",
-          "venue": null,
-          "year": "2009"
-        },
-        {
-          "sequence": 367,
-          "date": "2014-01-27",
-          "slug": null,
-          "title": "Ninja",
-          "medium": "Amazon",
-          "venue": null,
-          "year": "2009"
-        }
-      ]
-    },
-    {
-      "name": "Dan O'Bannon",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 366,
-          "date": "2014-01-25",
-          "slug": null,
-          "title": "The Return of the Living Dead",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 408,
-          "date": "2014-07-05",
-          "slug": null,
-          "title": "Alien",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1979"
-        },
-        {
-          "sequence": 408,
-          "date": "2014-07-05",
-          "slug": null,
-          "title": "Alien",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1979"
         }
       ]
     },
@@ -937,33 +826,99 @@
       ]
     },
     {
-      "name": "Clive Barker",
-      "count": 3,
-      "slug": "clive-barker",
+      "name": "Michael Hurst",
+      "count": 2,
+      "slug": null,
       "viewings": [
         {
-          "sequence": 384,
-          "date": "2014-05-03",
+          "sequence": 360,
+          "date": "2014-01-11",
           "slug": null,
-          "title": "Candyman",
+          "title": "Ninja: Shadow of a Tear",
           "medium": "Netflix",
           "venue": null,
-          "year": "1992"
+          "year": "2013"
         },
         {
-          "sequence": 450,
-          "date": "2014-12-06",
+          "sequence": 367,
+          "date": "2014-01-27",
           "slug": null,
-          "title": "Nightbreed",
+          "title": "Ninja",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "Boaz Davidson",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 360,
+          "date": "2014-01-11",
+          "slug": null,
+          "title": "Ninja: Shadow of a Tear",
           "medium": "Netflix",
           "venue": null,
-          "year": "1990"
+          "year": "2013"
         },
         {
-          "sequence": 450,
-          "date": "2014-12-06",
+          "sequence": 367,
+          "date": "2014-01-27",
           "slug": null,
-          "title": "Nightbreed",
+          "title": "Ninja",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "Dan O'Bannon",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 366,
+          "date": "2014-01-25",
+          "slug": null,
+          "title": "The Return of the Living Dead",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 408,
+          "date": "2014-07-05",
+          "slug": null,
+          "title": "Alien",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1979"
+        }
+      ]
+    },
+    {
+      "name": "George A. Romero",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 369,
+          "date": "2014-02-08",
+          "slug": null,
+          "title": "Day of the Dead",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 371,
+          "date": "2014-02-15",
+          "slug": null,
+          "title": "Tales from the Darkside: The Movie",
           "medium": "Netflix",
           "venue": null,
           "year": "1990"
@@ -971,36 +926,27 @@
       ]
     },
     {
-      "name": "Simon Barrett",
-      "count": 3,
-      "slug": null,
+      "name": "Stephen King",
+      "count": 2,
+      "slug": "stephen-king",
       "viewings": [
         {
-          "sequence": 420,
-          "date": "2014-08-22",
+          "sequence": 371,
+          "date": "2014-02-15",
           "slug": null,
-          "title": "You're Next",
+          "title": "Tales from the Darkside: The Movie",
           "medium": "Netflix",
           "venue": null,
-          "year": "2011"
+          "year": "1990"
         },
         {
-          "sequence": 440,
-          "date": "2014-10-25",
+          "sequence": 386,
+          "date": "2014-05-10",
           "slug": null,
-          "title": "V/H/S/2",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2013"
-        },
-        {
-          "sequence": 440,
-          "date": "2014-10-25",
-          "slug": null,
-          "title": "V/H/S/2",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2013"
+          "title": "The Running Man",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1987"
         }
       ]
     }

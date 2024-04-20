@@ -487,83 +487,6 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Guillermo del Toro",
-      "count": 4,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 618,
-          "date": "2017-11-13",
-          "slug": null,
-          "title": "Hellboy",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2004"
-        },
-        {
-          "sequence": 618,
-          "date": "2017-11-13",
-          "slug": null,
-          "title": "Hellboy",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2004"
-        },
-        {
-          "sequence": 619,
-          "date": "2017-11-13",
-          "slug": null,
-          "title": "Hellboy II: The Golden Army",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2008"
-        },
-        {
-          "sequence": 619,
-          "date": "2017-11-13",
-          "slug": null,
-          "title": "Hellboy II: The Golden Army",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2008"
-        }
-      ]
-    },
-    {
-      "name": "Kurt Kempler",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 578,
-          "date": "2017-01-10",
-          "slug": "the-big-stampede-1932",
-          "title": "The Big Stampede",
-          "medium": "TCM",
-          "venue": null,
-          "year": "1932"
-        },
-        {
-          "sequence": 580,
-          "date": "2017-01-17",
-          "slug": "the-telegraph-trail-1933",
-          "title": "The Telegraph Trail",
-          "medium": "TCM",
-          "venue": null,
-          "year": "1933"
-        },
-        {
-          "sequence": 580,
-          "date": "2017-01-17",
-          "slug": "the-telegraph-trail-1933",
-          "title": "The Telegraph Trail",
-          "medium": "TCM",
-          "venue": null,
-          "year": "1933"
-        }
-      ]
-    },
-    {
       "name": "Dario Argento",
       "count": 3,
       "slug": null,
@@ -598,61 +521,27 @@
       ]
     },
     {
-      "name": "Andrzej Zulawski",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 602,
-          "date": "2017-08-03",
-          "slug": "possession-1981",
-          "title": "Possession",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1981"
-        },
-        {
-          "sequence": 602,
-          "date": "2017-08-03",
-          "slug": "possession-1981",
-          "title": "Possession",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1981"
-        },
-        {
-          "sequence": 602,
-          "date": "2017-08-03",
-          "slug": "possession-1981",
-          "title": "Possession",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1981"
-        }
-      ]
-    },
-    {
-      "name": "James Mangold",
+      "name": "Kurt Kempler",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 589,
-          "date": "2017-03-09",
-          "slug": "logan-2017",
-          "title": "Logan",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2017"
+          "sequence": 578,
+          "date": "2017-01-10",
+          "slug": "the-big-stampede-1932",
+          "title": "The Big Stampede",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1932"
         },
         {
-          "sequence": 589,
-          "date": "2017-03-09",
-          "slug": "logan-2017",
-          "title": "Logan",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2017"
+          "sequence": 580,
+          "date": "2017-01-17",
+          "slug": "the-telegraph-trail-1933",
+          "title": "The Telegraph Trail",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1933"
         }
       ]
     },
@@ -678,31 +567,6 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2017"
-        }
-      ]
-    },
-    {
-      "name": "Julia Ducournau",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 593,
-          "date": "2017-04-25",
-          "slug": "raw-2016",
-          "title": "Raw",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2016"
-        },
-        {
-          "sequence": 593,
-          "date": "2017-04-25",
-          "slug": "raw-2016",
-          "title": "Raw",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2016"
         }
       ]
     },
@@ -778,6 +642,56 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1959"
+        }
+      ]
+    },
+    {
+      "name": "Guillermo del Toro",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 618,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2004"
+        },
+        {
+          "sequence": 619,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy II: The Golden Army",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2008"
+        }
+      ]
+    },
+    {
+      "name": "Mike Mignola",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 618,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2004"
+        },
+        {
+          "sequence": 619,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy II: The Golden Army",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2008"
         }
       ]
     }

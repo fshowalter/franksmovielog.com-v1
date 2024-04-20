@@ -961,49 +961,6 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Dario Argento",
-      "count": 4,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 644,
-          "date": "2018-03-10",
-          "slug": null,
-          "title": "Tenebrae",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "1982"
-        },
-        {
-          "sequence": 644,
-          "date": "2018-03-10",
-          "slug": null,
-          "title": "Tenebrae",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "1982"
-        },
-        {
-          "sequence": 649,
-          "date": "2018-03-23",
-          "slug": "the-bird-with-the-crystal-plumage-1970",
-          "title": "The Bird with the Crystal Plumage",
-          "medium": null,
-          "venue": "AFI Silver",
-          "year": "1970"
-        },
-        {
-          "sequence": 715,
-          "date": "2018-10-27",
-          "slug": null,
-          "title": "Deep Red",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - Woodbridge",
-          "year": "1975"
-        }
-      ]
-    },
-    {
       "name": "Christopher Markus",
       "count": 4,
       "slug": null,
@@ -1090,51 +1047,42 @@
       ]
     },
     {
-      "name": "Panos Cosmatos",
-      "count": 4,
+      "name": "Dario Argento",
+      "count": 3,
       "slug": null,
       "viewings": [
         {
-          "sequence": 702,
-          "date": "2018-09-16",
-          "slug": "mandy-2018",
-          "title": "Mandy",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2018"
+          "sequence": 644,
+          "date": "2018-03-10",
+          "slug": null,
+          "title": "Tenebrae",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "1982"
         },
         {
-          "sequence": 702,
-          "date": "2018-09-16",
-          "slug": "mandy-2018",
-          "title": "Mandy",
+          "sequence": 649,
+          "date": "2018-03-23",
+          "slug": "the-bird-with-the-crystal-plumage-1970",
+          "title": "The Bird with the Crystal Plumage",
           "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2018"
+          "venue": "AFI Silver",
+          "year": "1970"
         },
         {
-          "sequence": 703,
-          "date": "2018-09-18",
-          "slug": "mandy-2018",
-          "title": "Mandy",
+          "sequence": 715,
+          "date": "2018-10-27",
+          "slug": null,
+          "title": "Deep Red",
           "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2018"
-        },
-        {
-          "sequence": 703,
-          "date": "2018-09-18",
-          "slug": "mandy-2018",
-          "title": "Mandy",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2018"
+          "venue": "Alamo Drafthouse Cinema - Woodbridge",
+          "year": "1975"
         }
       ]
     },
     {
       "name": "Lowell Dean",
-      "count": 3,
+      "count": 2,
       "slug": null,
       "viewings": [
         {
@@ -1154,149 +1102,156 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2017"
+        }
+      ]
+    },
+    {
+      "name": "Frank Wead",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 653,
+          "date": "2018-03-25",
+          "slug": "the-hoodlum-saint-1946",
+          "title": "The Hoodlum Saint",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1946"
         },
         {
-          "sequence": 636,
-          "date": "2018-01-31",
-          "slug": "another-wolfcop-2017",
-          "title": "Another WolfCop",
+          "sequence": 673,
+          "date": "2018-05-02",
+          "slug": "china-clipper-1936",
+          "title": "China Clipper",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1936"
+        }
+      ]
+    },
+    {
+      "name": "Seton I. Miller",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 654,
+          "date": "2018-03-25",
+          "slug": null,
+          "title": "Kid Galahad",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1937"
+        },
+        {
+          "sequence": 657,
+          "date": "2018-03-28",
+          "slug": "the-crowd-roars-1932",
+          "title": "The Crowd Roars",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1932"
+        }
+      ]
+    },
+    {
+      "name": "Francis Wallace",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 654,
+          "date": "2018-03-25",
+          "slug": null,
+          "title": "Kid Galahad",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1937"
+        },
+        {
+          "sequence": 663,
+          "date": "2018-04-14",
+          "slug": null,
+          "title": "The Wagons Roll at Night",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1941"
+        }
+      ]
+    },
+    {
+      "name": "Allen Rivkin",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 655,
+          "date": "2018-03-25",
+          "slug": "its-a-big-country-an-american-anthology-1951",
+          "title": "It's a Big Country: An American Anthology",
+          "medium": "TCM",
+          "venue": null,
+          "year": "1951"
+        },
+        {
+          "sequence": 692,
+          "date": "2018-08-04",
+          "slug": "dead-reckoning-1947",
+          "title": "Dead Reckoning",
+          "medium": "TCM HD",
+          "venue": null,
+          "year": "1946"
+        }
+      ]
+    },
+    {
+      "name": "Justin Benson",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 675,
+          "date": "2018-05-09",
+          "slug": "the-endless-2017",
+          "title": "The Endless",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2017"
+        },
+        {
+          "sequence": 678,
+          "date": "2018-05-19",
+          "slug": "resolution-2012",
+          "title": "Resolution",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "2012"
         }
       ]
     },
     {
-      "name": "Hayao Miyazaki",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 670,
-          "date": "2018-04-29",
-          "slug": null,
-          "title": "My Neighbor Totoro",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1988"
-        },
-        {
-          "sequence": 670,
-          "date": "2018-04-29",
-          "slug": null,
-          "title": "My Neighbor Totoro",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1988"
-        },
-        {
-          "sequence": 670,
-          "date": "2018-04-29",
-          "slug": null,
-          "title": "My Neighbor Totoro",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1988"
-        }
-      ]
-    },
-    {
-      "name": "Claudio Fragasso",
+      "name": "Sean Byrne",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 633,
-          "date": "2018-01-20",
+          "sequence": 690,
+          "date": "2018-07-28",
           "slug": null,
-          "title": "Zombie 3",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1988"
-        },
-        {
-          "sequence": 633,
-          "date": "2018-01-20",
-          "slug": null,
-          "title": "Zombie 3",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1988"
-        }
-      ]
-    },
-    {
-      "name": "Nicolas Winding Refn",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 639,
-          "date": "2018-02-18",
-          "slug": null,
-          "title": "The Neon Demon",
+          "title": "The Loved Ones",
           "medium": "Amazon",
           "venue": null,
-          "year": "2016"
+          "year": "2009"
         },
         {
-          "sequence": 639,
-          "date": "2018-02-18",
+          "sequence": 691,
+          "date": "2018-07-28",
           "slug": null,
-          "title": "The Neon Demon",
-          "medium": "Amazon",
+          "title": "The Devil's Candy",
+          "medium": "Netflix",
           "venue": null,
-          "year": "2016"
-        }
-      ]
-    },
-    {
-      "name": "Tetsuya Saruwatari",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 640,
-          "date": "2018-02-20",
-          "slug": null,
-          "title": "Riki-Oh: The Story of Ricky",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1991"
-        },
-        {
-          "sequence": 640,
-          "date": "2018-02-20",
-          "slug": null,
-          "title": "Riki-Oh: The Story of Ricky",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1991"
-        }
-      ]
-    },
-    {
-      "name": "Neal Israel",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 646,
-          "date": "2018-03-19",
-          "slug": null,
-          "title": "Real Genius",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        },
-        {
-          "sequence": 646,
-          "date": "2018-03-19",
-          "slug": null,
-          "title": "Real Genius",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
+          "year": "2015"
         }
       ]
     }

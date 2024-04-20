@@ -859,49 +859,6 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Stephen King",
-      "count": 4,
-      "slug": "stephen-king",
-      "viewings": [
-        {
-          "sequence": 781,
-          "date": "2019-09-11",
-          "slug": null,
-          "title": "The Running Man",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1987"
-        },
-        {
-          "sequence": 783,
-          "date": "2019-09-26",
-          "slug": null,
-          "title": "Maximum Overdrive",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1986"
-        },
-        {
-          "sequence": 783,
-          "date": "2019-09-26",
-          "slug": null,
-          "title": "Maximum Overdrive",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1986"
-        },
-        {
-          "sequence": 783,
-          "date": "2019-09-26",
-          "slug": null,
-          "title": "Maximum Overdrive",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1986"
-        }
-      ]
-    },
-    {
       "name": "Todd Farmer",
       "count": 3,
       "slug": null,
@@ -932,74 +889,6 @@
           "medium": "Vudu",
           "venue": null,
           "year": "2001"
-        }
-      ]
-    },
-    {
-      "name": "Damian Shannon",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 746,
-          "date": "2019-04-13",
-          "slug": "freddy-vs-jason-2003",
-          "title": "Freddy vs. Jason",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2003"
-        },
-        {
-          "sequence": 748,
-          "date": "2019-04-27",
-          "slug": null,
-          "title": "Friday the 13th",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2009"
-        },
-        {
-          "sequence": 748,
-          "date": "2019-04-27",
-          "slug": null,
-          "title": "Friday the 13th",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2009"
-        }
-      ]
-    },
-    {
-      "name": "Mark Swift",
-      "count": 3,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 746,
-          "date": "2019-04-13",
-          "slug": "freddy-vs-jason-2003",
-          "title": "Freddy vs. Jason",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2003"
-        },
-        {
-          "sequence": 748,
-          "date": "2019-04-27",
-          "slug": null,
-          "title": "Friday the 13th",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2009"
-        },
-        {
-          "sequence": 748,
-          "date": "2019-04-27",
-          "slug": null,
-          "title": "Friday the 13th",
-          "medium": "Netflix",
-          "venue": null,
-          "year": "2009"
         }
       ]
     },
@@ -1186,6 +1075,81 @@
           "medium": "Amazon",
           "venue": null,
           "year": "1981"
+        }
+      ]
+    },
+    {
+      "name": "Tommy Lee Wallace",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 730,
+          "date": "2019-02-01",
+          "slug": null,
+          "title": "Halloween III: Season of the Witch",
+          "medium": "Vudu",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 790,
+          "date": "2019-10-22",
+          "slug": null,
+          "title": "Halloween III: Season of the Witch",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1982"
+        }
+      ]
+    },
+    {
+      "name": "Damian Shannon",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 746,
+          "date": "2019-04-13",
+          "slug": "freddy-vs-jason-2003",
+          "title": "Freddy vs. Jason",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2003"
+        },
+        {
+          "sequence": 748,
+          "date": "2019-04-27",
+          "slug": null,
+          "title": "Friday the 13th",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2009"
+        }
+      ]
+    },
+    {
+      "name": "Mark Swift",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 746,
+          "date": "2019-04-13",
+          "slug": "freddy-vs-jason-2003",
+          "title": "Freddy vs. Jason",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2003"
+        },
+        {
+          "sequence": 748,
+          "date": "2019-04-27",
+          "slug": null,
+          "title": "Friday the 13th",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2009"
         }
       ]
     }
