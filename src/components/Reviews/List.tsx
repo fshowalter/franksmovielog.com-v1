@@ -1,6 +1,7 @@
 import { Box } from "../Box";
 import { Grade } from "../Grade";
 import { ListItem } from "../ListItem";
+import { ListItemGenres } from "../ListItemGenres";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
@@ -57,33 +58,10 @@ function ReviewListItem({
             <Grade grade={item.grade} height={18} />
           </Box>
           <Spacer axis="vertical" size={8} />
-          <Genres genres={item.genres} />
+          <ListItemGenres genres={item.genres} />
           <Spacer axis="vertical" size={8} />
         </Box>
       </Box>
     </ListItem>
-  );
-}
-
-function Genres({ genres }: { genres: readonly string[] }): JSX.Element | null {
-  return (
-    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
-      {genres.map((genre, index) => {
-        if (index === 0) {
-          return (
-            <Box key={genre} as="span">
-              {genre}
-            </Box>
-          );
-        }
-
-        return (
-          <Box as="span" key={genre}>
-            {" "}
-            | {genre}
-          </Box>
-        );
-      })}
-    </Box>
   );
 }
