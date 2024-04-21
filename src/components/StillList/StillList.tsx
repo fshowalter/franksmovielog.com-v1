@@ -11,11 +11,7 @@ export function StillList({
   movies: readonly Queries.StillListMovieFragment[];
   seeAllLinkText: string;
   seeAllLinkTarget: string;
-}): JSX.Element | null {
-  if (movies.length < 4) {
-    return null;
-  }
-
+}): JSX.Element {
   return (
     <Box as="ul" className={movieListStyle}>
       {movies.map((movie) => {

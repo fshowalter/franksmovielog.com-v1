@@ -15,8 +15,6 @@ export const WatchlistTitlesJson = {
     performerNames: "[String!]!",
     writerNames: "[String!]!",
     slug: "String",
-    grade: "String",
-    gradeValue: "Int",
     poster: posterFieldResolver,
   },
   extensions: {

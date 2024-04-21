@@ -187,32 +187,6 @@ describe("/watchlist", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with best first", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Grade (Best First)",
-    );
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
-  it("can sort by grade with worst first", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Grade (Worst First)",
-    );
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
   it("can filter by release year", async () => {
     expect.hasAssertions();
 
@@ -224,27 +198,6 @@ describe("/watchlist", () => {
 
     await userEvent.selectOptions(fromInput, "1947");
     await userEvent.selectOptions(toInput, "1948");
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
-  it("can hide reviewed titles", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-
-    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
-  });
-
-  it("can show hidden reviewed titles", async () => {
-    expect.hasAssertions();
-
-    render(<WatchlistPage data={data} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-    await userEvent.click(screen.getByText("Show Reviewed"));
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });

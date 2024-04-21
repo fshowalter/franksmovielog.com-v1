@@ -1,6 +1,7 @@
 import { Box } from "../Box";
 import { Grade } from "../Grade";
 import { ListItem } from "../ListItem";
+import { ListItemGenres } from "../ListItemGenres";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
@@ -54,7 +55,8 @@ function UnderseenGemsListItem({
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
           <Grade grade={item.grade} height={18} />
-          <Spacer axis="vertical" size={4} />
+          <Spacer axis="vertical" size={8} />
+          <ListItemGenres genres={item.genres} />
           <Spacer axis="vertical" size={8} />
         </Box>
       </Box>

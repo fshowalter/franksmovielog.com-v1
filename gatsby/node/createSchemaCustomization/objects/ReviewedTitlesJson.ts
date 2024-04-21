@@ -101,13 +101,25 @@ export const ReviewedTitleMoreTitle = {
     grade: "String!",
     year: "String!",
     slug: "String!",
+    genres: "[String!]!",
     poster: posterFieldResolver,
     still: stillFieldResolver,
   },
 };
 
-export const ReviewedTitleMoreEntity = {
-  name: SchemaNames.ReviewedTitleMoreEntity,
+export const ReviewedTitleMoreCastAndCrewMember = {
+  name: SchemaNames.ReviewedTitleMoreCastAndCrewMember,
+  fields: {
+    name: "String!",
+    slug: "String!",
+    creditKind: "String!",
+    titles: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
+    avatar: avatarFieldResolver,
+  },
+};
+
+export const ReviewedTitleMoreCollection = {
+  name: SchemaNames.ReviewedTitleMoreCollection,
   fields: {
     name: "String!",
     slug: "String!",
@@ -119,17 +131,15 @@ export const ReviewedTitleMoreEntity = {
 export const ReviewedTitleMore = {
   name: SchemaNames.ReviewedTitleMore,
   fields: {
-    directedBy: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
-    withPerformer: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
-    writtenBy: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
-    inCollection: `[${SchemaNames.ReviewedTitleMoreEntity}!]!`,
+    castAndCrew: `[${SchemaNames.ReviewedTitleMoreCastAndCrewMember}!]!`,
+    collections: `[${SchemaNames.ReviewedTitleMoreCollection}!]!`,
     reviews: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
   },
 };
 
 export const ReviewedTitlesJson = {
   name: SchemaNames.ReviewedTitlesJson,
-  interfaces: ["Node", "Title"],
+  interfaces: ["Node", SchemaNames.Title],
   fields: {
     sequence: "String!",
     reviewDate: {
@@ -139,11 +149,12 @@ export const ReviewedTitlesJson = {
       },
     },
     reviewYear: "String!",
-    originalTitle: "String!",
+    originalTitle: "String",
     releaseSequence: "String!",
     runtimeMinutes: "Int!",
     directorNames: "[String!]!",
     principalCastNames: "[String!]!",
+    writerNames: "[String!]!",
     countries: "[String!]!",
     genres: "[String!]!",
     grade: "String!",

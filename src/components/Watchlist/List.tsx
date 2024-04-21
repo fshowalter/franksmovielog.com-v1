@@ -1,6 +1,5 @@
-import { toSentenceArray } from "../../utils";
+import { toSentence } from "../../utils";
 import { Box } from "../Box";
-import { Grade } from "../Grade";
 import { ListItem } from "../ListItem";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
@@ -56,7 +55,6 @@ function WatchlistTitle({
         <Box>
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
-          {item.grade && <Grade grade={item.grade} height={16} />}
           <Spacer axis="vertical" size={8} />
           <Slug movie={item} />
           <Spacer axis="vertical" size={8} />
@@ -83,7 +81,7 @@ function Slug({
 
   return (
     <Box color="subtle" fontWeight="light" fontSize="small" letterSpacing={0.5}>
-      Because {toSentenceArray(credits)}.
+      Because {toSentence(credits)}.
     </Box>
   );
 }
@@ -93,7 +91,7 @@ function formatPeopleNames(
   suffix: string | string[],
 ): string[] {
   if (names.length === 0) {
-    return [""];
+    return [];
   }
 
   let append;
@@ -104,7 +102,7 @@ function formatPeopleNames(
     append = suffix;
   }
 
-  return [`${toSentenceArray(names).join("")} ${append}`];
+  return [`${toSentence(names)} ${append}`];
 }
 
 function formatCollectionNames(names: readonly string[]): string | string[] {
@@ -114,5 +112,5 @@ function formatCollectionNames(names: readonly string[]): string | string[] {
 
   const suffix = names.length > 1 ? "collections" : "collection";
 
-  return [`it's in the ${toSentenceArray(names).join("")} ${suffix}`];
+  return [`it's in the ${toSentence(names)} ${suffix}`];
 }

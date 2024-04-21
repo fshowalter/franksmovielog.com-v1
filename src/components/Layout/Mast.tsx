@@ -43,7 +43,8 @@ export function Mast({ ...rest }: IBoxProps) {
       <Nav
         activeClassName={navActiveLinkStyle}
         color="accent"
-        justifyContent="center"
+        justifyContent={{ default: "center", desktop: "flex-start" }}
+        width={{ default: "full", max: "unset" }}
       />
     </Box>
   );

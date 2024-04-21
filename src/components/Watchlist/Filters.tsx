@@ -1,5 +1,3 @@
-import { Box } from "../Box";
-import { Button } from "../Button";
 import { DebouncedInput } from "../DebouncedInput";
 import { SelectField, SelectOptions } from "../SelectField";
 import { YearInput } from "../YearInput";
@@ -7,7 +5,6 @@ import { Action, ActionType, Sort } from "./Watchlist.reducer";
 
 export function Filters({
   dispatch,
-  hideReviewed,
   sortValue,
   distinctDirectors,
   distinctPerformers,
@@ -16,7 +13,6 @@ export function Filters({
   distinctReleaseYears,
 }: {
   dispatch: React.Dispatch<Action>;
-  hideReviewed: boolean;
   sortValue: string;
   distinctDirectors: readonly string[];
   distinctPerformers: readonly string[];
@@ -26,17 +22,6 @@ export function Filters({
 }): JSX.Element {
   return (
     <>
-      <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="flex-end"
-        alignItems="center"
-        flexBasis="full"
-      >
-        <Button onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}>
-          {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-        </Button>
-      </Box>
       <DebouncedInput
         label="Title"
         placeholder="Enter all or part of a title"
@@ -88,8 +73,6 @@ export function Filters({
         <option value="release-date-desc">Release Date (Newest First)</option>
         <option value="release-date-asc">Release Date (Oldest First)</option>
         <option value="title">Title</option>
-        <option value="grade-desc">Grade (Best First)</option>
-        <option value="grade-asc">Grade (Worst First)</option>
       </SelectField>
     </>
   );

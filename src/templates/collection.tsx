@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder, WatchlistEntity } from "../components";
+import { Collection, HeadBuilder } from "../components";
 
 export function Head({
   data,
@@ -22,25 +22,22 @@ export default function CollectionTemplate({
   data: Queries.CollectionTemplateQuery;
 }): JSX.Element {
   return (
-    <WatchlistEntity
-      entityType="collection"
-      entity={data.collection}
+    <Collection
+      collection={data.collection}
       distinctReleaseYears={data.distinct.releaseYears}
-      tagline="Collection of"
-      breadcrumb="Collections"
     />
   );
 }
 
 export const pageQuery = graphql`
   query CollectionTemplate($id: String!) {
-    distinct: allWatchlistCollectionsJson(
+    distinct: allCollectionsJson(
       filter: { id: { eq: $id }, slug: { ne: null } }
     ) {
       releaseYears: distinct(field: { titles: { year: SELECT } })
     }
-    collection: watchlistCollection(id: $id) {
-      ...WatchlistEntity
+    collection: collection(id: $id) {
+      ...Collection
     }
   }
 `;

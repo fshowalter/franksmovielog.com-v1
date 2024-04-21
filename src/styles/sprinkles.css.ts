@@ -29,6 +29,10 @@ const unresponsiveAtomicProperties = defineProperties({
         fontSize: "1.125rem",
         lineHeight: "1.5rem",
       },
+      medium2: {
+        fontSize: "1.5rem",
+        lineHeight: "2.25rem",
+      },
       large: {
         fontSize: "1.625rem",
         lineHeight: "2rem",
@@ -83,6 +87,9 @@ const responsiveAtomicProperties = defineProperties({
     },
     desktop: {
       "@media": minMediaQuery("desktop"),
+    },
+    max: {
+      "@media": minMediaQuery("max"),
     },
   },
   properties: {

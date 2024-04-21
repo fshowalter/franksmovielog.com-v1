@@ -9,6 +9,7 @@ export function StillListNav({ children }: IBoxProps) {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      width={{ default: "full", tablet: "unset" }}
     >
       {children}
     </Box>

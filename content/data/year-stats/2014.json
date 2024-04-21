@@ -277,7 +277,7 @@
           "sequence": 414,
           "date": "2014-08-02",
           "slug": "the-bloody-judge-1970",
-          "title": "Night of the Blood Monster",
+          "title": "The Bloody Judge",
           "medium": "DVD",
           "venue": null,
           "year": "1970"
@@ -647,9 +647,52 @@
   ],
   "mostWatchedWriters": [
     {
+      "name": "Harry Alan Towers",
+      "count": 4,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 414,
+          "date": "2014-08-02",
+          "slug": "the-bloody-judge-1970",
+          "title": "The Bloody Judge",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1970"
+        },
+        {
+          "sequence": 416,
+          "date": "2014-08-09",
+          "slug": "psycho-circus-1966",
+          "title": "Psycho-Circus",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1966"
+        },
+        {
+          "sequence": 436,
+          "date": "2014-10-18",
+          "slug": null,
+          "title": "The Face of Fu Manchu",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 437,
+          "date": "2014-10-18",
+          "slug": null,
+          "title": "The Brides of Fu Manchu",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
+    {
       "name": "Dario Argento",
       "count": 3,
-      "slug": "dario-argento",
+      "slug": null,
       "viewings": [
         {
           "sequence": 368,
@@ -681,7 +724,109 @@
       ]
     },
     {
-      "name": "Isaac Florentine",
+      "name": "Bram Stoker",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 368,
+          "date": "2014-02-01",
+          "slug": null,
+          "title": "Dracula 3D",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2012"
+        },
+        {
+          "sequence": 418,
+          "date": "2014-08-16",
+          "slug": "horror-of-dracula-1958",
+          "title": "Horror of Dracula",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1958"
+        },
+        {
+          "sequence": 456,
+          "date": "2014-12-20",
+          "slug": "horror-of-dracula-1958",
+          "title": "Horror of Dracula",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1958"
+        }
+      ]
+    },
+    {
+      "name": "Christopher Markus",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 379,
+          "date": "2014-04-10",
+          "slug": null,
+          "title": "Captain America: The Winter Soldier",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2014"
+        },
+        {
+          "sequence": 387,
+          "date": "2014-05-11",
+          "slug": null,
+          "title": "Pain & Gain",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2013"
+        },
+        {
+          "sequence": 462,
+          "date": "2014-12-31",
+          "slug": null,
+          "title": "Thor: The Dark World",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "name": "Stephen McFeely",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 379,
+          "date": "2014-04-10",
+          "slug": null,
+          "title": "Captain America: The Winter Soldier",
+          "medium": null,
+          "venue": "AMC Tysons Corner 16",
+          "year": "2014"
+        },
+        {
+          "sequence": 387,
+          "date": "2014-05-11",
+          "slug": null,
+          "title": "Pain & Gain",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2013"
+        },
+        {
+          "sequence": 462,
+          "date": "2014-12-31",
+          "slug": null,
+          "title": "Thor: The Dark World",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "name": "Michael Hurst",
       "count": 2,
       "slug": null,
       "viewings": [
@@ -706,127 +851,102 @@
       ]
     },
     {
-      "name": "Quentin Tarantino",
-      "count": 2,
-      "slug": "quentin-tarantino",
-      "viewings": [
-        {
-          "sequence": 372,
-          "date": "2014-02-16",
-          "slug": null,
-          "title": "Kill Bill: Vol. 1",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2003"
-        },
-        {
-          "sequence": 378,
-          "date": "2014-03-29",
-          "slug": null,
-          "title": "Kill Bill: Vol. 2",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "2004"
-        }
-      ]
-    },
-    {
-      "name": "Terence Fisher",
+      "name": "Boaz Davidson",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 418,
-          "date": "2014-08-16",
-          "slug": "horror-of-dracula-1958",
-          "title": "Horror of Dracula",
-          "medium": "DVD",
-          "venue": null,
-          "year": "1958"
-        },
-        {
-          "sequence": 456,
-          "date": "2014-12-20",
-          "slug": "horror-of-dracula-1958",
-          "title": "Horror of Dracula",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1958"
-        }
-      ]
-    },
-    {
-      "name": "Adam Wingard",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 420,
-          "date": "2014-08-22",
+          "sequence": 360,
+          "date": "2014-01-11",
           "slug": null,
-          "title": "You're Next",
+          "title": "Ninja: Shadow of a Tear",
           "medium": "Netflix",
           "venue": null,
-          "year": "2011"
+          "year": "2013"
         },
         {
-          "sequence": 440,
-          "date": "2014-10-25",
+          "sequence": 367,
+          "date": "2014-01-27",
           "slug": null,
-          "title": "V/H/S/2",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2013"
+          "title": "Ninja",
+          "medium": "Amazon",
+          "venue": null,
+          "year": "2009"
         }
       ]
     },
     {
-      "name": "Don Sharp",
+      "name": "Dan O'Bannon",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 436,
-          "date": "2014-10-18",
+          "sequence": 366,
+          "date": "2014-01-25",
           "slug": null,
-          "title": "The Face of Fu Manchu",
-          "medium": "DVD",
+          "title": "The Return of the Living Dead",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1965"
+          "year": "1985"
         },
         {
-          "sequence": 437,
-          "date": "2014-10-18",
+          "sequence": 408,
+          "date": "2014-07-05",
           "slug": null,
-          "title": "The Brides of Fu Manchu",
-          "medium": "DVD",
+          "title": "Alien",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1966"
+          "year": "1979"
         }
       ]
     },
     {
-      "name": "Eduardo S\u00e1nchez",
+      "name": "George A. Romero",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 440,
-          "date": "2014-10-25",
+          "sequence": 369,
+          "date": "2014-02-08",
           "slug": null,
-          "title": "V/H/S/2",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2013"
+          "title": "Day of the Dead",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1985"
         },
         {
-          "sequence": 441,
-          "date": "2014-10-26",
+          "sequence": 371,
+          "date": "2014-02-15",
           "slug": null,
-          "title": "Exists",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "2014"
+          "title": "Tales from the Darkside: The Movie",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1990"
+        }
+      ]
+    },
+    {
+      "name": "Stephen King",
+      "count": 2,
+      "slug": "stephen-king",
+      "viewings": [
+        {
+          "sequence": 371,
+          "date": "2014-02-15",
+          "slug": null,
+          "title": "Tales from the Darkside: The Movie",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1990"
+        },
+        {
+          "sequence": 386,
+          "date": "2014-05-10",
+          "slug": null,
+          "title": "The Running Man",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "1987"
         }
       ]
     }

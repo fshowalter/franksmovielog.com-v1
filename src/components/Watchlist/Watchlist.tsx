@@ -35,7 +35,6 @@ export function Watchlist({
       header={<Header titleCount={items.length} />}
       filters={
         <Filters
-          hideReviewed={state.hideReviewed}
           sortValue={state.sortValue}
           dispatch={dispatch}
           distinctDirectors={distinctDirectors}
@@ -65,8 +64,6 @@ export const query = graphql`
     releaseSequence
     sortTitle
     slug
-    grade
-    gradeValue
     directorNames
     performerNames
     writerNames

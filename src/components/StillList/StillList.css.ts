@@ -18,6 +18,7 @@ export const seeAllLinkGridStyle = style({
 
 export const movieListStyle = style({
   padding: 0,
+  width: "100%",
   "@media": {
     [minMediaQuery("tablet")]: {
       padding: `0 ${gutterWidth}`,
@@ -25,6 +26,7 @@ export const movieListStyle = style({
       gridTemplateColumns: "repeat(2, minmax(100px, 312px))",
       columnGap: size[32],
       rowGap: size[32],
+      width: "unset",
     },
     [minMediaQuery("desktop")]: {
       padding: `${size[8]} ${pageMarginWidth} 0`,

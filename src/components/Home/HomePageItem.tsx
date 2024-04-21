@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { toSentenceArray } from "../../utils/toSentenceArray";
+import { toSentence } from "../../utils";
 import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
 import { gridAreaComponent, gridComponent } from "../Grid";
@@ -91,8 +91,8 @@ export function HomePageItem({ item, eagerLoadImage }: IItemProps) {
             letterSpacing={0.25}
             lineHeight="default"
           >
-            Directed by {toSentenceArray(item.directorNames)}. Starring{" "}
-            {toSentenceArray(item.principalCastNames)}.
+            Directed by {toSentence(item.directorNames)}. Starring{" "}
+            {toSentence(item.principalCastNames)}.
           </Box>
           <Spacer axis="vertical" size={24} />
           <RenderedMarkdown

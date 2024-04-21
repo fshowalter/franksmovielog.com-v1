@@ -3,25 +3,25 @@
 exports[`/how-i-grade renders 1`] = `
 <DocumentFragment>
   <a
-    class="Layout_skipToMainContentStyle__1965ugi3 sprinkles_paddingLeft_24_default__8lcvdkeg sprinkles_paddingRight_24_default__8lcvdkgj sprinkles_paddingTop_8_default__8lcvdkig sprinkles_paddingBottom_8_default__8lcvdkd4 sprinkles_backgroundColor_subtle_default__8lcvdk2a sprinkles_color_accent__8lcvdk6 sprinkles_textAlign_center__8lcvdk1a"
+    class="Layout_skipToMainContentStyle__1965ugi3 sprinkles_paddingLeft_24_default__8lcvdkis sprinkles_paddingRight_24_default__8lcvdklk sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_subtle_default__8lcvdk2k sprinkles_color_accent__8lcvdk6 sprinkles_textAlign_center__8lcvdk1b"
     href="#content"
   >
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1965ugi1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_minHeight_16_default__8lcvdk9y sprinkles_width_full_default__8lcvdkn1"
+    class="Layout_bandStickyStyle__1965ugi1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_minHeight_16_default__8lcvdkcs sprinkles_width_full_default__8lcvdku8"
   />
   <div
-    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk24 sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v"
+    class="Layout_pageCanvasStyle__1965ugi0 sprinkles_backgroundColor_default_default__8lcvdk2c sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c"
   >
     <header
-      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_24_default__8lcvdkim sprinkles_paddingTop_32_desktop__8lcvdkir sprinkles_paddingBottom_24_default__8lcvdkda sprinkles_paddingBottom_32_desktop__8lcvdkdf sprinkles_display_flex_default__8lcvdk5d sprinkles_rowGap_24_default__8lcvdkjy sprinkles_alignItems_center_default__8lcvdk1j sprinkles_boxShadow_borderBottom_default__8lcvdk2y sprinkles_backgroundColor_default_default__8lcvdk24"
+      class="Layout_headerLayoutStyle__1965ugi2 sprinkles_paddingLeft_pageMargin_default__8lcvdkkw sprinkles_paddingRight_pageMargin_default__8lcvdkno sprinkles_paddingTop_24_default__8lcvdkoc sprinkles_paddingTop_32_desktop__8lcvdkoi sprinkles_paddingBottom_24_default__8lcvdkh8 sprinkles_paddingBottom_32_desktop__8lcvdkhe sprinkles_display_flex_default__8lcvdk6o sprinkles_rowGap_24_default__8lcvdkq4 sprinkles_alignItems_center_default__8lcvdk1k sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_backgroundColor_default_default__8lcvdk2c sprinkles_columnGap_24_default__8lcvdk44"
     >
       <div
-        class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_inherit_default__8lcvdk1m sprinkles_justifyItems_inherit__8lcvdkv"
+        class="sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_inherit_default__8lcvdk1o sprinkles_justifyItems_inherit__8lcvdkw"
       >
         <h1
-          class="Mast_flagTypographyStyle__17la42y0 sprinkles_whiteSpace_nowrap__8lcvdk1f sprinkles_fontWeight_normal__8lcvdkr"
+          class="Mast_flagTypographyStyle__17la42y0 sprinkles_whiteSpace_nowrap__8lcvdk1g sprinkles_fontWeight_normal__8lcvdks"
         >
           <a
             class="sprinkles_color_default__8lcvdk7"
@@ -31,7 +31,7 @@ exports[`/how-i-grade renders 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__17la42y1 sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_16__8lcvdk10 sprinkles_width_full_default__8lcvdkn1 sprinkles_fontSize_small__8lcvdkl"
+          class="Mast_taglineStyle__17la42y1 sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_16__8lcvdk11 sprinkles_width_full_default__8lcvdku8 sprinkles_fontSize_small__8lcvdkl"
         >
           My life at the movies.
         </p>
@@ -39,12 +39,12 @@ exports[`/how-i-grade renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__17la42y3 sprinkles_boxShadow_borderAll_default__8lcvdk31 sprinkles_borderRadius_4__8lcvdk1 sprinkles_overflow_hidden__8lcvdk17 sprinkles_width_full_default__8lcvdkn1 sprinkles_width_unset_desktop__8lcvdkn9 sprinkles_maxWidth_prose_default__8lcvdk9d"
+        class="Mast_orderStyle__17la42y3 sprinkles_boxShadow_borderAll_default__8lcvdk3k sprinkles_borderRadius_4__8lcvdk1 sprinkles_overflow_hidden__8lcvdk18 sprinkles_width_full_default__8lcvdku8 sprinkles_width_unset_desktop__8lcvdkui sprinkles_maxWidth_prose_default__8lcvdkc0"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_overflow_hidden__8lcvdk17"
+          class="sprinkles_display_flex_default__8lcvdk6o sprinkles_overflow_hidden__8lcvdk18"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/how-i-grade renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdked sprinkles_paddingRight_16_default__8lcvdkgg sprinkles_paddingTop_8_default__8lcvdkig sprinkles_paddingBottom_8_default__8lcvdkd4 sprinkles_backgroundColor_subtle_default__8lcvdk2a sprinkles_color_default__8lcvdk7 sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkq sprinkles_lineHeight_24__8lcvdk11 sprinkles_flexGrow_1__8lcvdki"
+            class="SiteSearchForm_searchInputStyle__1pnfbha0 sprinkles_paddingLeft_16_default__8lcvdkio sprinkles_paddingRight_16_default__8lcvdklg sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_backgroundColor_subtle_default__8lcvdk2k sprinkles_color_default__8lcvdk7 sprinkles_fontSize_default__8lcvdkm sprinkles_fontWeight_light__8lcvdkr sprinkles_lineHeight_24__8lcvdk12 sprinkles_flexGrow_1__8lcvdki"
             id="search"
             name="q"
             placeholder="Search..."
@@ -66,7 +66,7 @@ exports[`/how-i-grade renders 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk2a"
+            class="SiteSearchForm_submitButtonStyle__1pnfbha1 sprinkles_backgroundColor_subtle_default__8lcvdk2k"
             type="submit"
             value="Search"
           >
@@ -90,13 +90,13 @@ exports[`/how-i-grade renders 1`] = `
         </label>
       </form>
       <nav
-        class="sprinkles_color_accent__8lcvdk6"
+        class="sprinkles_color_accent__8lcvdk6 sprinkles_width_full_default__8lcvdku8 sprinkles_width_unset_max__8lcvdkuj"
       >
         <ul
-          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexWrap_wrap_default__8lcvdk5y sprinkles_justifyContent_center_default__8lcvdk7d sprinkles_rowGap_8_default__8lcvdkjs sprinkles_columnGap_16_default__8lcvdk3d sprinkles_columnGap_24_tablet__8lcvdk3h"
+          class="sprinkles_display_flex_default__8lcvdk6o sprinkles_flexWrap_wrap_default__8lcvdk7g sprinkles_justifyContent_center_default__8lcvdk9c sprinkles_justifyContent_flex-start_desktop__8lcvdk9m sprinkles_rowGap_8_default__8lcvdkpw sprinkles_columnGap_16_default__8lcvdk40 sprinkles_columnGap_24_tablet__8lcvdk45"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -106,7 +106,7 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -116,7 +116,7 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -126,7 +126,7 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -136,7 +136,27 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/cast-and-crew/"
+            >
+              Cast & Crew
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/collections/"
+            >
+              Collections
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -154,10 +174,10 @@ exports[`/how-i-grade renders 1`] = `
     >
       <main>
         <article
-          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j"
+          class="sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k"
         >
           <h1
-            class="PageTitle_typographyStyle__lk643y0 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_24_default__8lcvdkim sprinkles_paddingTop_32_desktop__8lcvdkir sprinkles_paddingBottom_24_default__8lcvdkda sprinkles_paddingBottom_32_desktop__8lcvdkdf sprinkles_textAlign_center__8lcvdk1a"
+            class="PageTitle_typographyStyle__lk643y0 sprinkles_paddingLeft_pageMargin_default__8lcvdkkw sprinkles_paddingRight_pageMargin_default__8lcvdkno sprinkles_paddingTop_24_default__8lcvdkoc sprinkles_paddingTop_32_desktop__8lcvdkoi sprinkles_paddingBottom_24_default__8lcvdkh8 sprinkles_paddingBottom_32_desktop__8lcvdkhe sprinkles_textAlign_center__8lcvdk1b"
           >
             How I Grade
           </h1>
@@ -211,13 +231,13 @@ exports[`/how-i-grade renders 1`] = `
             </script>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_64_default__8lcvdk6s sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_64_default__8lcvdkad sprinkles_display_block_default__8lcvdk57"
+            class="sprinkles_width_px_default__8lcvdku0 sprinkles_height_64_default__8lcvdk8k sprinkles_minWidth_px_default__8lcvdkfo sprinkles_minHeight_64_default__8lcvdkdc sprinkles_display_block_default__8lcvdk6g"
           />
           <div
-            class="sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4"
+            class="sprinkles_paddingLeft_pageMargin_default__8lcvdkkw sprinkles_paddingRight_pageMargin_default__8lcvdkno"
           >
             <div
-              class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 LongFormText_typographyStyle__1ddgr590 sprinkles_fontWeight_light__8lcvdkq sprinkles_maxWidth_prose_default__8lcvdk9d"
+              class="RenderedMarkdown_renderedMarkdownStyle__1vb8ogj0 LongFormText_typographyStyle__1ddgr590 sprinkles_fontWeight_light__8lcvdkr sprinkles_maxWidth_prose_default__8lcvdkc0"
             >
               <ul>
                 
@@ -526,20 +546,20 @@ exports[`/how-i-grade renders 1`] = `
             </div>
           </div>
           <span
-            class="sprinkles_width_px_default__8lcvdkmv sprinkles_height_128_default__8lcvdk71 sprinkles_minWidth_px_default__8lcvdkc4 sprinkles_minHeight_128_default__8lcvdkam sprinkles_display_block_default__8lcvdk57"
+            class="sprinkles_width_px_default__8lcvdku0 sprinkles_height_128_default__8lcvdk8w sprinkles_minWidth_px_default__8lcvdkfo sprinkles_minHeight_128_default__8lcvdkdo sprinkles_display_block_default__8lcvdk6g"
           />
         </article>
         <div
-          class="sprinkles_maxWidth_popout_default__8lcvdk9a sprinkles_maxWidth_full_tablet__8lcvdk92 sprinkles_width_full_default__8lcvdkn1 sprinkles_display_flex_default__8lcvdk5d sprinkles_alignItems_center_default__8lcvdk1j sprinkles_backgroundColor_default_default__8lcvdk24 sprinkles_backgroundColor_subtle_tablet__8lcvdk2b sprinkles_paddingTop_0_default__8lcvdkia sprinkles_paddingTop_32_tablet__8lcvdkiq sprinkles_paddingBottom_0_default__8lcvdkcy sprinkles_paddingBottom_128_tablet__8lcvdkdw sprinkles_justifyContent_center_default__8lcvdk7d"
+          class="sprinkles_maxWidth_popout_default__8lcvdkbw sprinkles_maxWidth_full_tablet__8lcvdkbl sprinkles_width_full_default__8lcvdku8 sprinkles_display_flex_default__8lcvdk6o sprinkles_alignItems_center_default__8lcvdk1k sprinkles_backgroundColor_default_default__8lcvdk2c sprinkles_backgroundColor_subtle_tablet__8lcvdk2l sprinkles_paddingTop_0_default__8lcvdknw sprinkles_paddingTop_32_tablet__8lcvdkoh sprinkles_paddingBottom_0_default__8lcvdkgs sprinkles_paddingBottom_128_tablet__8lcvdki1 sprinkles_justifyContent_center_default__8lcvdk9c"
         >
           <nav
-            class="sprinkles_position_relative_default__8lcvdkjg sprinkles_display_flex_default__8lcvdk5d sprinkles_flexDirection_column_default__8lcvdk5v sprinkles_alignItems_center_default__8lcvdk1j"
+            class="sprinkles_position_relative_default__8lcvdkpg sprinkles_display_flex_default__8lcvdk6o sprinkles_flexDirection_column_default__8lcvdk7c sprinkles_alignItems_center_default__8lcvdk1k sprinkles_width_full_default__8lcvdku8 sprinkles_width_unset_tablet__8lcvdkuh"
           >
             <div
-              class="sprinkles_paddingLeft_gutter_default__8lcvdkfy sprinkles_paddingLeft_pageMargin_desktop__8lcvdkg3 sprinkles_paddingRight_gutter_default__8lcvdki1 sprinkles_paddingRight_pageMargin_desktop__8lcvdki6 sprinkles_paddingTop_8_default__8lcvdkig sprinkles_paddingTop_16_tablet__8lcvdkik sprinkles_paddingBottom_8_default__8lcvdkd4 sprinkles_paddingBottom_16_tablet__8lcvdkd8 sprinkles_boxShadow_borderBottom_default__8lcvdk2y sprinkles_boxShadow_unset_tablet__8lcvdk2w sprinkles_width_full_default__8lcvdkn1"
+              class="sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingLeft_pageMargin_desktop__8lcvdkky sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingRight_pageMargin_desktop__8lcvdknq sprinkles_paddingTop_8_default__8lcvdko4 sprinkles_paddingTop_16_tablet__8lcvdko9 sprinkles_paddingBottom_8_default__8lcvdkh0 sprinkles_paddingBottom_16_tablet__8lcvdkh5 sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d sprinkles_width_full_default__8lcvdku8"
             >
               <span
-                class="sprinkles_fontWeight_semiBold__8lcvdks sprinkles_color_muted__8lcvdk8"
+                class="sprinkles_fontWeight_semiBold__8lcvdkt sprinkles_color_muted__8lcvdk8"
               >
                 Latest 
               </span>
@@ -553,14 +573,14 @@ exports[`/how-i-grade renders 1`] = `
               class="StillList_movieListStyle__v7difm1"
             >
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkfy sprinkles_paddingRight_gutter_default__8lcvdki1"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/the-death-kiss-1932/"
+                    class="StillListMovie_stillStyle__1ug8mv50"
+                    href="/reviews/frankenhooker-1990/"
                   >
                     <div
                       class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
@@ -583,21 +603,21 @@ exports[`/how-i-grade renders 1`] = `
                         aria-hidden="true"
                         data-placeholder-image=""
                         decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACR0lEQVR42jWTy0tyURTFD2hmlkRUaljS09RCEEXFULOHkZYZaqJoqVj5mASm4KSoBhXOpEGNRPD/XB9rwzfYnHvuved31157XXV+fo5EIoF0Oo1QKITV1VXY7Xa4XC4cHBzg7u4OpVIJsVgMfPfo6AiHh4dYX1/HysoK1tbWYDabMT8/D4PBAMVDhDWbTTw8PMihnZ0d7O3tycGvry+Mx2OUy2WBhsNh+P1+gXi9XrleXl7G9PQ0ZmZmoDY3NwUQj8cxGAzw+fmJs7MzBAIB+Hw+XF9fYzQa4e/vD8ViUYAWiwULCwt4enrCxcWF7PV6PaampqCsViuMRiPcbjd+f3/x/PyMer2OWq2G09NTZLNZvL+/YzKZCOD+/h67u7tyuFKpoNPpiFqNRiMqlclkEi/YYi6XExVsnYd53Wq1UK1WBdTr9eQ+vVZKScs/Pz94fHwEhel0OqjFxUXZcAgOh0NWDoWeUiWhVHx7e4tGo4F8Po+bmxu0220Mh0MBfn9/y3tarRaKgP39fYGwFSpdWloSD3mYfnJlFQoFRKNRWT8+PsSK19dXvLy84O3tTYao2BKN397eFijXjY0NOJ1OnJycSEwymYyoIogpuLq6kqkzUuyCez7vdrtQ/7PFaRPk8Xjka4wIlfM5Y8XhpFIpJJNJKYqg53weiURk+rRFbW1tSUgZaBYjRBi9ZVipkgoJZV1eXiIYDAqUiukvP8R7tEPRL5bNZhMwBzQ7OyswZo2K2RIVHB8fSzHMhPAP6vf7kgAKm5ubwz9Mp4pso2sFRQAAAABJRU5ErkJggg=="
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzUlEQVR42iWSa1MaZxiG+QntjO04k4k1iSaAMSmVlkSplkVAVFCowLIiyHJmOekSREAW8RBMCNq0nenH/NOrr/rh+XrN/dz3ZVIjGfLpKrlkmWw0R2xzF+ebV/h+WWDDZsH9h4THu8G6240kuQkFwtgtLzkMxOgWLxic3nHeusWo3mDUJpgyexmycoGsUqJ8oOF9v4Zt7if2V+14lyyYn8+yYLEyP/dCAAPkAiEWp79j3eGkr13SLV/SP/rE4PgL/eoYUy6SJ58okxNXUjRCniDuN2bk5besvn7J86nvcS5Ysc/Ns/zKwsGKA9/rOQ5DKr3SkG7l6hHYGGNUPmPKx0sUD2tk93LkIyVKcprClpuET0JasvFs+kd27D+zt7KK48Uzih4XafF+O92iI4CD9h1nlWsBG4mUtyJhrIiW1ykoImW0SK/Ywkgl0RNR1C0vsstJUlqjFY5y5N/ko6LQ2w1RDauPwA8TARrTL10zqN8D5fuEdXL7GplIDj3b5kY75kxA6+EdVPcqYYeDhn+bXiDAXTLN8M8Y9YPqQ3+Dk1uG7b8YinSPwEiRogC1MlXaB1m0aJJGPMW4dsJI08n4fLitVhLvVjAiESZqmtJWkEa6SbcwpKddYRyNOT+a0L/vUE9W+BCV6aQy6HsRVMmF8rsTNRCkm0yxNDODdeoH3s3MciErDBIK/uU12tkzOvkBRlPAmhPOa5/FygI40XuoXh9xyUPe56cWktnfCLIuhigHN7FOT/Hbk6d0tsP8W6lyLFLazVb0ZPPhZUN0aNSEg9qIfl1oMyrXSbjceN7aUF0S9USOWqlFfDtEU5FZWzRjm31KZXuHm4LGqRwj7t9FV09o5w3OO18Zdv4WTn4UCn3ClPL78f9qRxZaFMP7Dy4Oh/8xuPiHL/1rWnKUFfM80qKFxm6AUfmYydU3GuU+l2ffGJ5+fVi6L3rsVm74H2/1zacpYcAWAAAAAElFTkSuQmCC"
                         style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
                       />
                       <picture>
                         <source
-                          data-srcset="/static/084f9ba228213fdf053944708d31c608/08742/the-death-kiss-1932.avif 78w,/static/084f9ba228213fdf053944708d31c608/1c619/the-death-kiss-1932.avif 156w,/static/084f9ba228213fdf053944708d31c608/c02e5/the-death-kiss-1932.avif 312w,/static/084f9ba228213fdf053944708d31c608/81026/the-death-kiss-1932.avif 624w"
+                          data-srcset="/static/c273204af0ec0ab2b8b87604950e1daa/08742/frankenhooker-1990.avif 78w,/static/c273204af0ec0ab2b8b87604950e1daa/1c619/frankenhooker-1990.avif 156w,/static/c273204af0ec0ab2b8b87604950e1daa/c02e5/frankenhooker-1990.avif 312w,/static/c273204af0ec0ab2b8b87604950e1daa/81026/frankenhooker-1990.avif 624w"
                           sizes="(min-width: 312px) 312px, 100vw"
                           type="image/avif"
                         />
                         <img
-                          alt="A still from The Death Kiss (1932)"
+                          alt="A still from Frankenhooker (1990)"
                           data-gatsby-image-ssr=""
                           data-main-image=""
-                          data-src="/static/084f9ba228213fdf053944708d31c608/11456/the-death-kiss-1932.jpg"
-                          data-srcset="/static/084f9ba228213fdf053944708d31c608/43c32/the-death-kiss-1932.jpg 78w,/static/084f9ba228213fdf053944708d31c608/78def/the-death-kiss-1932.jpg 156w,/static/084f9ba228213fdf053944708d31c608/11456/the-death-kiss-1932.jpg 312w,/static/084f9ba228213fdf053944708d31c608/a02d5/the-death-kiss-1932.jpg 624w"
+                          data-src="/static/c273204af0ec0ab2b8b87604950e1daa/11456/frankenhooker-1990.jpg"
+                          data-srcset="/static/c273204af0ec0ab2b8b87604950e1daa/43c32/frankenhooker-1990.jpg 78w,/static/c273204af0ec0ab2b8b87604950e1daa/78def/frankenhooker-1990.jpg 156w,/static/c273204af0ec0ab2b8b87604950e1daa/11456/frankenhooker-1990.jpg 312w,/static/c273204af0ec0ab2b8b87604950e1daa/a02d5/frankenhooker-1990.jpg 624w"
                           decoding="async"
                           loading="lazy"
                           sizes="(min-width: 312px) 312px, 100vw"
@@ -614,22 +634,248 @@ exports[`/how-i-grade renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk57"
-                    href="/reviews/the-death-kiss-1932/"
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/frankenhooker-1990/"
                   >
-                    The Death Kiss 
+                    Frankenhooker 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkq sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdkz"
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
                     >
-                      1932
+                      1990
                     </span>
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
+                >
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="B-: 3.5 stars (out of 5)"
+                      height="16"
+                      src="/svg/3-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Comedy
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                    <span>
+                       | Sci-Fi
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+              >
+                <div
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
+                >
+                  <a
+                    class="StillListMovie_stillStyle__1ug8mv50"
+                    href="/reviews/lords-of-chaos-2018/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 312px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        decoding="async"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgElEQVR42lWTWU8TYRiFuRK6TKfTaaf7lKV1aCtDmbB0odZSkKUCAYyklBAFAhIXMBaiEOJCuPDGoFfc8hP8hY/ftAp6MRfzTs7znXPeb7ocbgWXJ0CPU8EYGWew+oT4cIlqc59S4yWJ/BzZQhXTKlDKl/naavHjy2e+fWgxUyzicPmEXsXhlDFy43R1gP72h+xEmXRtmag5yexui8qLFqmpVXKFR6Tum1QLJS5b77k6P+fnpzPm83lcwohL9tPdIxFN5+6ATgEcLtfIPl5BtyrM739kau9UHLBGZmiMeDyFaTxgUbi6OHrDaqXCqJFGtrXCYY/TgxLp6wDtgUvyo6ctYiNlwpkJHjb2mFjfZzBfI5nMEokOMJoxuTw8ojlXJ67FSSWSeOx0guFweZF84T9AyScGKklzgsmldTLFKtPN54wtN9BTJpFIP0Z/hsbCIr+urykaQxjhBMlIb6cuG9jm+O+A3aKLdK5I89U7nh685fDyiubJBbH+tHChMT48yvHODsebmyTVCGZIb0NtiM3oFpED0b47YI/oMJE0qc0tsLR9wMnVDWuvTwmEevHIQaYnS+wtrbCRr5AJxTG0KKpX46/+nkNCHxj8J7LbRzhmYGUs6lsHHH2/wZpexRfQcUgBZqeqnO1us2RapNQQYSWIJLZra//qZUXrAO0X23pA62V4aJyZjV0Ky1v4Y2kUAZTVGMGIzrN6nZplEfUF8XoD7ftnL9QpdR63HPgfqKhREqkcWm8WNWogqToeAfNpibag2yETE1F9wkkbJim3MNulPeu63ZB9dcQf4/QEcXtDKKF+ARPu/DqSEmqfbgu8ojdFuLPj2jq3rLWBnepUfgNQz0PI37IJYgAAAABJRU5ErkJggg=="
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/300a1a72b3f49cca258500146b76a362/08742/lords-of-chaos-2018.avif 78w,/static/300a1a72b3f49cca258500146b76a362/1c619/lords-of-chaos-2018.avif 156w,/static/300a1a72b3f49cca258500146b76a362/c02e5/lords-of-chaos-2018.avif 312w,/static/300a1a72b3f49cca258500146b76a362/81026/lords-of-chaos-2018.avif 624w"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Lords of Chaos (2018)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/300a1a72b3f49cca258500146b76a362/11456/lords-of-chaos-2018.jpg"
+                          data-srcset="/static/300a1a72b3f49cca258500146b76a362/43c32/lords-of-chaos-2018.jpg 78w,/static/300a1a72b3f49cca258500146b76a362/78def/lords-of-chaos-2018.jpg 156w,/static/300a1a72b3f49cca258500146b76a362/11456/lords-of-chaos-2018.jpg 312w,/static/300a1a72b3f49cca258500146b76a362/a02d5/lords-of-chaos-2018.jpg 624w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
+                >
+                  <a
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/lords-of-chaos-2018/"
+                  >
+                    Lords of Chaos 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
+                    >
+                      2018
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
+                >
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B+: 4 stars (out of 5)"
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Biography
+                    </span>
+                    <span>
+                       | Drama
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                    <span>
+                       | Music
+                    </span>
+                    <span>
+                       | Thriller
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
+              >
+                <div
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
+                >
+                  <a
+                    class="StillListMovie_stillStyle__1ug8mv50"
+                    href="/reviews/leprechaun-6-back-2-tha-hood-2003/"
+                  >
+                    <div
+                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+                      data-gatsby-image-wrapper=""
+                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
+                    >
+                      <div
+                        style="max-width: 312px; display: block;"
+                      >
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          role="presentation"
+                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+                          style="max-width: 100%; display: block; position: static;"
+                        />
+                      </div>
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        data-placeholder-image=""
+                        decoding="async"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0ElEQVR42j2Sy1NbZRjGz5CQy0nOPck5JyccLiExIfebEMDQwjC0aRtbBqkOVdPSKKilOlAc6GC1Szc4duHC8TLjuHHXv/DXL1m4eOfbfPN7n+d5H2n30YgHHx8y2D1g/cYOlXaPxVKHbKFOIuUxNRUkOB0iEAwRjkZRTZ1Co06lVWNuwcVxNRLJOKYZxXZUJFWJoGlhTD2Crk6jxYOTSVhhdD0qgNMEx7BIBDkmo5gGpdVlWmtrFCoFMhkTR4B0Y8yJIMWiYdR4FEONYhpxbFsn4yfxZixkOYwkTU3UhQQwLEeJ6Rql95eprfUoNqr48ym8jDFRmrQ1pHBIbBdjmQppz8JNG9ipOEoszLSwKsuyUKqQTOjMzTqUinNCVYJOo8hn97boijeXX2Q+m2Y2OycUxoRVIyZyUEUOMpYRJS02ZQR4wTcZrJd49mCds/2b/Pf6a3452ePxTpXfTw94dTzg8f0ed7c3yS3NkysWkDQ9hqaOLYdJWjKureJ5Qo1v4LsK7VqO0b0Nnn/yIT+ffcn1s11G/Tpvr7/l11eHFHJxjp/0+fTz+7jCoRSJhIgLexOogFtmjBkBdJIyKV2mXZ5ls1Pkp6N9rkZ7/H31hPO9Lj8Ot7n4ok+jbPHmhwP+fPMCxzOQxrUIBAL/TzAYwPc0FjwV14wzWM3z9M4Kf718yh+Xh/xzNWS4XWWrmebOxjwrTYcXh5ucHfVJ+jZSoVyk1q7R7LZor3aoN4uUcybZTBwvpdB6z+Wg3+VytM/16SN+++4htzo+rbLGzs28uHKSh7erfDRooTo60lffn3Py8oJvLs45Pn1O78YqjSVLXFSb5KhrMZoFh8vhLf59fcTwdouViku3btMS44k/vWWfdssTlZKRtu9u0VlrkBdXStkWoVCQ/ILOTEYnLbo17p7vqpzsf8BgoyoqJaLwkixmx9WxqVRmWCo6AqygWArvALP3Su3uqjNsAAAAAElFTkSuQmCC"
+                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                      />
+                      <picture>
+                        <source
+                          data-srcset="/static/800dfcf13f12c4da358f71c042cab6d2/08742/leprechaun-6-back-2-tha-hood-2003.avif 78w,/static/800dfcf13f12c4da358f71c042cab6d2/1c619/leprechaun-6-back-2-tha-hood-2003.avif 156w,/static/800dfcf13f12c4da358f71c042cab6d2/c02e5/leprechaun-6-back-2-tha-hood-2003.avif 312w,/static/800dfcf13f12c4da358f71c042cab6d2/81026/leprechaun-6-back-2-tha-hood-2003.avif 624w"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          type="image/avif"
+                        />
+                        <img
+                          alt="A still from Leprechaun 6: Back 2 Tha Hood (2003)"
+                          data-gatsby-image-ssr=""
+                          data-main-image=""
+                          data-src="/static/800dfcf13f12c4da358f71c042cab6d2/11456/leprechaun-6-back-2-tha-hood-2003.jpg"
+                          data-srcset="/static/800dfcf13f12c4da358f71c042cab6d2/43c32/leprechaun-6-back-2-tha-hood-2003.jpg 78w,/static/800dfcf13f12c4da358f71c042cab6d2/78def/leprechaun-6-back-2-tha-hood-2003.jpg 156w,/static/800dfcf13f12c4da358f71c042cab6d2/11456/leprechaun-6-back-2-tha-hood-2003.jpg 312w,/static/800dfcf13f12c4da358f71c042cab6d2/a02d5/leprechaun-6-back-2-tha-hood-2003.jpg 624w"
+                          decoding="async"
+                          loading="lazy"
+                          sizes="(min-width: 312px) 312px, 100vw"
+                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+                        />
+                      </picture>
+                      <noscript />
+                      <script
+                        type="module"
+                      >
+                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+                      </script>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
+                >
+                  <a
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/leprechaun-6-back-2-tha-hood-2003/"
+                  >
+                    Leprechaun 6: Back 2 Tha Hood 
+                    <span
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
+                    >
+                      2003
+                    </span>
+                  </a>
+                </div>
+                <div
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -638,23 +884,39 @@ exports[`/how-i-grade renders 1`] = `
                     />
                     <img
                       alt="D: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
+                <div
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
+                >
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
+                  >
+                    <span>
+                      Comedy
+                    </span>
+                    <span>
+                       | Fantasy
+                    </span>
+                    <span>
+                       | Horror
+                    </span>
+                  </div>
+                </div>
               </li>
               <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkfy sprinkles_paddingRight_gutter_default__8lcvdki1"
+                class="StillListMovie_gridStyle__1ug8mv51 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk"
               >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_still__1ug8mv54"
                 >
                   <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/friday-the-13th-part-vii-the-new-blood-1988/"
+                    class="StillListMovie_stillStyle__1ug8mv50"
+                    href="/reviews/the-entity-1982/"
                   >
                     <div
                       class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
@@ -677,21 +939,21 @@ exports[`/how-i-grade renders 1`] = `
                         aria-hidden="true"
                         data-placeholder-image=""
                         decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpklEQVR42h2RZ3PiVhSGtYVeDAiQaAIEAhHqii46pphmYDe2N/HYu5PMZDL5/9+f3OXDnTtzynPec15pP+lzmttc76c8bZd8P6x5O+/5+fWRH9czLw9rNgOL78cd/72/8+/rK38/P7Ozu9jlNLOmydKqMW6YHOwe0m7U5jTrcVnafNtMed4v+ON0z8/LjqfVgodeA0tXKcTvuIqa98uW47TDuF6gqysCVL4BZ63feDtskbpminFTZ9ExWQ8bHOcdLqs+/zz/zuvpyNFuM6zqVFJR0Vzgq8hNGlnaRRUrG2NQyTFvmWKAwV/XI9J9v8Z21LzBHsYW+1mbl/2Sy3rDdtBhL1ar5DN4XG70lMph8oVxS8cqJmkJYM/MMq4VxBCD7bCN9LgYshtZbOyGUGYLkC3UfeO8XjEfDlj0emjxOOloGDOjsuxWmH4p0CokaaRjQmmanpFkVM3TMHSk02LAL5X7WZen/Zynw1yYceD1fOXlcOTPxwNWKSuAIcy8xmpQZ1jP0SyoVJMRmrkEHXHLvpHASCeEKZM2970Kp2WPs1C4m3bFzQzeHk9sxxOMXIayUKYnYlSLOVb9KoNqhkZewVTD1DSFekampcnEgz6kjV1nUM9TL2bQkzFyikxRjbGwmnSrJn6PEyUcIhEOIgf81PIqv4ysZ6OYSoiyEsYyNKbt5i0vjVoltFgYNRQg4nPffkPTqGRSLLpt+tUiVS2OIqa7HU58Thd3XjexgBcjGqQQ8TOoGZSzGo4PH5HyaoSoAGWid7ciJeghJYeI+H2UNKGkoCF7XfjdLrxOJxEB8zocBJwOVL9wPuyjqafIxCI4P35GKqVVcZMSHSFbF+vWdI2QaI4HA8g+L57Pn24An3gREZdvQCd+AQ+IWNzjxkzIt3rXJwf/A26sSxw7SBqeAAAAAElFTkSuQmCC"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1ElEQVR42h2SW28aVxRGBwaQMWBzMTgGZoabGYwHGDMwgGHAXHwjJI5x8SXFiuLGaRRFeU2dVJHy0EZK1Yf+gUr9pasneTgv52gvfWt/R8rXCpQaOpoeQy1GUHIh1GyI0m6cTiWJkQ+Ty66TL0RIKWusBry43G68sovAqkxVzIzsJN1qjLYRRcrVNMrWNno1RTwZwB/y4vG5WVmRWe4X+bLoY4s3fTuKzyuTTQQpbazw2mnTLSgE/DLjlsJxK8mBlUDS9C2UfIyMGiK4Jv+AybKMJEmctA3+e7hj1BIW5U3Wg15sbY2z4iZ/XZ5z328Q9Ej0rAwXE52JSCq1Jj2qjSJGNkA46sMrgG6h9B24EVtned5l2NPZ2XnE5roPJxcRJ8HDrM+hkUMVd6ODBjdPm5x0FCTTymLubvGTU6aQDhIUe5EF0OVy/YBaRoqTsUFJ36SwscqH+Ygvt9f8vZzz5+UzFnUDo5Tm6nGdaTcjEtoqw3aGN0dVnHwILeoVwO8wFx6PG8tUGDg6djNHuxjj87TFv6+X/D4b8fHQ4bmlo6cDnPeLzPoFpAOrQL+q8Kyu0FL8mNoq8bBHNOkiEvVjNbPsi3KGA4Pmnsrtfp5PM5u3HZNXjV2mtRRDW+PnWZMngyJSz6lRr+Wp6SnULT8XXY2BESEZ86A98tMwVWq1NNs7W7TsPK9O9rhtKrxzDO46ZSZ7CovTOhfHFYbNlFAem3SHdc6O97keV7h2sjilMGV1BUNbwRJrqGb8DMw0v542+HBuczcoMVQCHJUSIkCFN09HLCY2mir+YUM0NJ/2ePvYEjCNSSXCuLpBNbfKrtBvbodY9op8+2XO1xdzPj8/5uPlgBcdnZeO0J6e8u7slPcXp2STG0jxVIjBXoabQZZDM0Z/N8zETGBmAqhxDxetHP/cX/Ht/paHq3N+W5zxaX7EHzdnfH15xfvFpYDNGFYyBH1u/gdvaFUhk4ko6AAAAABJRU5ErkJggg=="
                         style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
                       />
                       <picture>
                         <source
-                          data-srcset="/static/6120020caf2f1f875502feb23acbd164/08742/friday-the-13th-part-vii-the-new-blood-1988.avif 78w,/static/6120020caf2f1f875502feb23acbd164/1c619/friday-the-13th-part-vii-the-new-blood-1988.avif 156w,/static/6120020caf2f1f875502feb23acbd164/c02e5/friday-the-13th-part-vii-the-new-blood-1988.avif 312w,/static/6120020caf2f1f875502feb23acbd164/81026/friday-the-13th-part-vii-the-new-blood-1988.avif 624w"
+                          data-srcset="/static/bf52955ea10e17c5ab7544d16651d1f1/08742/the-entity-1982.avif 78w,/static/bf52955ea10e17c5ab7544d16651d1f1/1c619/the-entity-1982.avif 156w,/static/bf52955ea10e17c5ab7544d16651d1f1/c02e5/the-entity-1982.avif 312w,/static/bf52955ea10e17c5ab7544d16651d1f1/81026/the-entity-1982.avif 624w"
                           sizes="(min-width: 312px) 312px, 100vw"
                           type="image/avif"
                         />
                         <img
-                          alt="A still from Friday the 13th: The New Blood (1988)"
+                          alt="A still from The Entity (1982)"
                           data-gatsby-image-ssr=""
                           data-main-image=""
-                          data-src="/static/6120020caf2f1f875502feb23acbd164/11456/friday-the-13th-part-vii-the-new-blood-1988.jpg"
-                          data-srcset="/static/6120020caf2f1f875502feb23acbd164/43c32/friday-the-13th-part-vii-the-new-blood-1988.jpg 78w,/static/6120020caf2f1f875502feb23acbd164/78def/friday-the-13th-part-vii-the-new-blood-1988.jpg 156w,/static/6120020caf2f1f875502feb23acbd164/11456/friday-the-13th-part-vii-the-new-blood-1988.jpg 312w,/static/6120020caf2f1f875502feb23acbd164/a02d5/friday-the-13th-part-vii-the-new-blood-1988.jpg 624w"
+                          data-src="/static/bf52955ea10e17c5ab7544d16651d1f1/11456/the-entity-1982.jpg"
+                          data-srcset="/static/bf52955ea10e17c5ab7544d16651d1f1/43c32/the-entity-1982.jpg 78w,/static/bf52955ea10e17c5ab7544d16651d1f1/78def/the-entity-1982.jpg 156w,/static/bf52955ea10e17c5ab7544d16651d1f1/11456/the-entity-1982.jpg 312w,/static/bf52955ea10e17c5ab7544d16651d1f1/a02d5/the-entity-1982.jpg 624w"
                           decoding="async"
                           loading="lazy"
                           sizes="(min-width: 312px) 312px, 100vw"
@@ -708,22 +970,22 @@ exports[`/how-i-grade renders 1`] = `
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
+                  class="StillListMovie_gridAreas_title__1ug8mv52"
                 >
                   <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk57"
-                    href="/reviews/friday-the-13th-part-vii-the-new-blood-1988/"
+                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk6g"
+                    href="/reviews/the-entity-1982/"
                   >
-                    Friday the 13th: The New Blood 
+                    The Entity 
                     <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkq sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdkz"
+                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkr sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdk10"
                     >
-                      1988
+                      1982
                     </span>
                   </a>
                 </div>
                 <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
+                  class="StillListMovie_gridAreas_grade__1ug8mv53"
                 >
                   <picture>
                     <source
@@ -732,211 +994,36 @@ exports[`/how-i-grade renders 1`] = `
                     />
                     <img
                       alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
                       height="16"
                       src="/svg/2-stars.svg"
                       width="80"
                     />
                   </picture>
                 </div>
-              </li>
-              <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkfy sprinkles_paddingRight_gutter_default__8lcvdki1"
-              >
                 <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
+                  class="StillListMovie_gridAreas_genres__1ug8mv55"
                 >
-                  <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/eggshells-1969/"
+                  <div
+                    class="sprinkles_color_subtle__8lcvdk9 sprinkles_fontSize_small__8lcvdkl sprinkles_letterSpacing_0.5__8lcvdky sprinkles_lineHeight_16__8lcvdk11"
                   >
-                    <div
-                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                      data-gatsby-image-wrapper=""
-                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                    >
-                      <div
-                        style="max-width: 312px; display: block;"
-                      >
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          role="presentation"
-                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
-                          style="max-width: 100%; display: block; position: static;"
-                        />
-                      </div>
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        data-placeholder-image=""
-                        decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC9UlEQVR42h2Sy3KadRiHuQGX7Zg0jrW2JY00NBgOIRAOAQKUhFOAj4+PQzhJBEIIw6EjgWJSTal20rE2rU6sk8TxMG6qLqoLV854AW5cufECvITHf7p45rd4Z555T6opjYHXr+u4eEXHxFU9r12YQa1ZJiq3yG+N6d77msPjF4wOT9nuP6S0vYstmOQts5tpt48Zn5dpn5sbfg+zQT+qN7QGLs0YuPj2udSAxV+jsHPCBw9+pXfvZ0YPX/L45A9+/O0v/vn3P37/829qwyN03riQOlE7PVx1OFC7Xa/kqslbJqbeMaC1BZFqT6gPf0F57xh/9IC1xMdEkvsoxQdUdj6n9+Epnb1vuTN+QWV4hs6vcElv4c1FG9Mu1yuxamJOz+U5D9W7P9D/9CWV3in9g+9ZTeyjdzSx+3aIpwaUG/eRiiMi2RF+eUCocEiud4bGFeOCRs+U0cykwYTq2pKL26VDlOZzSp1n2CJ32Wg8IZbdZy05oDd8Tq/zmMHgGdFkFylzB2+8xZy7ij3+EVLjKRM3rVw2elA7AqjMUovl7AH+TJeV9C7WcIvU5ic0+0c8+uIn9sbfsTv4kkppj6QQLXny6F1ZzMEaXmmXYvsEl3CY1gpYYmVU7nIffTSHeT3PYqyGOVIhXtmjPz4TfENn+BX11iO2O0dk8gOW/SUWPFkCiQa2tRq3PNt4lTaZTp3EjhDqEwracIL59SwLyQLGRJYlpYwz08CRauNJj5Crn7HZPea20scRrgoq6Nwy120SU6YIanuQaL1CpFlANS/HmY1F0MbCzMsSBkXCKDDJChY5z0quTbx6n/X3xzhlsZJ4W2SXGysyV5xBJk0urtk9xJo1wufChY0outQqmnWfIIBOCmHOyBhTSazpDdzFLRy5LSxSFWuijjG0KXKL2VVJPHNA/J4PfSyKPZ9iuSyLoxSjGHMh3hXSmzEf2ngAUzomiAtEx2ICazbDUrqINVVkUcriyuTFehKYRc15LiokMaVCmJQo/wOzz8RApc8rUAAAAABJRU5ErkJggg=="
-                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                      />
-                      <picture>
-                        <source
-                          data-srcset="/static/13819517d0a3959e80b359d3835e66a4/08742/eggshells-1969.avif 78w,/static/13819517d0a3959e80b359d3835e66a4/1c619/eggshells-1969.avif 156w,/static/13819517d0a3959e80b359d3835e66a4/c02e5/eggshells-1969.avif 312w,/static/13819517d0a3959e80b359d3835e66a4/81026/eggshells-1969.avif 624w"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          type="image/avif"
-                        />
-                        <img
-                          alt="A still from Eggshells (1969)"
-                          data-gatsby-image-ssr=""
-                          data-main-image=""
-                          data-src="/static/13819517d0a3959e80b359d3835e66a4/11456/eggshells-1969.jpg"
-                          data-srcset="/static/13819517d0a3959e80b359d3835e66a4/43c32/eggshells-1969.jpg 78w,/static/13819517d0a3959e80b359d3835e66a4/78def/eggshells-1969.jpg 156w,/static/13819517d0a3959e80b359d3835e66a4/11456/eggshells-1969.jpg 312w,/static/13819517d0a3959e80b359d3835e66a4/a02d5/eggshells-1969.jpg 624w"
-                          decoding="async"
-                          loading="lazy"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                        />
-                      </picture>
-                      <noscript />
-                      <script
-                        type="module"
-                      >
-                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                      </script>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
-                >
-                  <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk57"
-                    href="/reviews/eggshells-1969/"
-                  >
-                    Eggshells 
-                    <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkq sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdkz"
-                    >
-                      1969
+                    <span>
+                      Drama
                     </span>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
-                >
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/2-stars-dark.svg"
-                    />
-                    <img
-                      alt="D+: 2 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
-                      height="16"
-                      src="/svg/2-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                </div>
-              </li>
-              <li
-                class="StillListMovie_gridStyle__1ug8mv52 sprinkles_paddingLeft_gutter_default__8lcvdkfy sprinkles_paddingRight_gutter_default__8lcvdki1"
-              >
-                <div
-                  class="StillListMovie_gridAreas_still__1ug8mv55"
-                >
-                  <a
-                    class="StillListMovie_stillStyle__1ug8mv51"
-                    href="/reviews/bones-and-all-2022/"
-                  >
-                    <div
-                      class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-                      data-gatsby-image-wrapper=""
-                      style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
-                    >
-                      <div
-                        style="max-width: 312px; display: block;"
-                      >
-                        <img
-                          alt=""
-                          aria-hidden="true"
-                          role="presentation"
-                          src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='176'%20width='312'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
-                          style="max-width: 100%; display: block; position: static;"
-                        />
-                      </div>
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        data-placeholder-image=""
-                        decoding="async"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADGUlEQVR42h2R/VOTBQDHn1/q+sm4s6C7yK60Iio1PQmuTNjJa94UQ0icAs4H9sLDngFj42UPL7IXcCgwxmQDh27j1USyoeQcIJCQoUX693xa/fD54Xv3vc99777CJfd9Lg/EqBt8hORPYOzwoTG5kP1PMI+vYwokGd+gcWKDpiQtoQ3ao8/pmHqBNbSJOZBAuvkEafQ3jN5HCOKNGPrhh5j+KyteavancujtNyi6INE59xLbnWfYwtu0RbZRpraxR7bQWDwUlmtpGJhFiT5LitewTKzSNBZHkEaXaQzEsd7epMN7F9/FIq4c+4j8MxquPXjF1bk/6J7foWfueTK/xtx1g4Mfp5Ga8iaqU2X0zW/RHV1DCa/RFkogWCfitCeDe3adcPQBK55mDN9/gVayM/pwF88vL/As7nA9yeDSK6anZxm+mMWH76WgKlHjXfobz70tXDNP6YmuIHRFEvRPr7A4EiBYVYlDfZz2H7KZEDW8nBxj5ucEocRrgss7jD/exd7loDn/s/+FBz45QFevC+9UjKFf/2RwYRPBO/+YJWcbd+p/ovxwFqUZmWw5JVYselbaTKx1NTLQ6yayustsLHnUyc85nL6H/e+/w7t7U+guO0JUdxx/sueLLCAEFuLc9fXzT6SV+JBMf00pk7pzjNZW0GfQYCw8gs2k5/7vf9Ena9GeyGCy8xK5X+0jbc9bdEoapif9RFrPM1yZg3DTa8c30sl60IxPV4KpOIepxgoMpfl0N1TSq8kjfN1E1NeAs+woTrGY5VsKoV6RfukME9ckwoFmxoZMuC3nEHQXvsRam03CLxN3VfF1eipl3x7FVaWm5XwuIVlNyFqCo/U09Xo9ruSicLOae30iik1CluuwK2YaWmzUWroRaiuP4TGoGemUiQ0ZmXbWk3Eoi/IiFafysrjdIxJ26flGpUIn1uC0GtGKdSjVJZwuyMXQYkdud9B0dRDZ7kawXz5Jh/o76qsraFNMPF0Mcmu4B1ESSfsgHYfSwO7qDCfyCskpKMVmqKKnuoCgoRhD/kE+zczkx4JszMYrnNVo+RcMihmT0GrC/wAAAABJRU5ErkJggg=="
-                        style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                      />
-                      <picture>
-                        <source
-                          data-srcset="/static/6615177e6d4747091277114c8c429f1f/08742/bones-and-all-2022.avif 78w,/static/6615177e6d4747091277114c8c429f1f/1c619/bones-and-all-2022.avif 156w,/static/6615177e6d4747091277114c8c429f1f/c02e5/bones-and-all-2022.avif 312w,/static/6615177e6d4747091277114c8c429f1f/81026/bones-and-all-2022.avif 624w"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          type="image/avif"
-                        />
-                        <img
-                          alt="A still from Bones and All (2022)"
-                          data-gatsby-image-ssr=""
-                          data-main-image=""
-                          data-src="/static/6615177e6d4747091277114c8c429f1f/11456/bones-and-all-2022.jpg"
-                          data-srcset="/static/6615177e6d4747091277114c8c429f1f/43c32/bones-and-all-2022.jpg 78w,/static/6615177e6d4747091277114c8c429f1f/78def/bones-and-all-2022.jpg 156w,/static/6615177e6d4747091277114c8c429f1f/11456/bones-and-all-2022.jpg 312w,/static/6615177e6d4747091277114c8c429f1f/a02d5/bones-and-all-2022.jpg 624w"
-                          decoding="async"
-                          loading="lazy"
-                          sizes="(min-width: 312px) 312px, 100vw"
-                          style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
-                        />
-                      </picture>
-                      <noscript />
-                      <script
-                        type="module"
-                      >
-                        const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
-                      </script>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_title__1ug8mv53"
-                >
-                  <a
-                    class="sprinkles_fontSize_medium__8lcvdkn sprinkles_color_default__8lcvdk7 sprinkles_display_block_default__8lcvdk57"
-                    href="/reviews/bones-and-all-2022/"
-                  >
-                    Bones and All 
-                    <span
-                      class="sprinkles_fontSize_small__8lcvdkl sprinkles_fontWeight_light__8lcvdkq sprinkles_color_muted__8lcvdk8 sprinkles_lineHeight_1__8lcvdkz"
-                    >
-                      2022
+                    <span>
+                       | Horror
                     </span>
-                  </a>
-                </div>
-                <div
-                  class="StillListMovie_gridAreas_grade__1ug8mv54"
-                >
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/3-stars-dark.svg"
-                    />
-                    <img
-                      alt="C+: 3 stars (out of 5)"
-                      class="StillListMovie_gradeStyle__1ug8mv50"
-                      height="16"
-                      src="/svg/3-stars.svg"
-                      width="80"
-                    />
-                  </picture>
+                  </div>
                 </div>
               </li>
               <li
-                class="StillList_seeAllLinkGridStyle__v7difm0 sprinkles_paddingLeft_gutter_default__8lcvdkfy sprinkles_paddingRight_gutter_default__8lcvdki1 sprinkles_paddingTop_16_default__8lcvdkij sprinkles_paddingBottom_16_default__8lcvdkd7 sprinkles_display_block_default__8lcvdk57 sprinkles_textAlign_right__8lcvdk19 sprinkles_boxShadow_borderBottom_default__8lcvdk2y sprinkles_boxShadow_unset_tablet__8lcvdk2w"
+                class="StillList_seeAllLinkGridStyle__v7difm0 sprinkles_paddingLeft_gutter_default__8lcvdkks sprinkles_paddingRight_gutter_default__8lcvdknk sprinkles_paddingTop_16_default__8lcvdko8 sprinkles_paddingBottom_16_default__8lcvdkh4 sprinkles_display_block_default__8lcvdk6g sprinkles_textAlign_right__8lcvdk1a sprinkles_boxShadow_borderBottom_default__8lcvdk3g sprinkles_boxShadow_unset_tablet__8lcvdk3d"
               >
                 <a
                   href="/reviews/"
                 >
                   All 
                   <span
-                    class="sprinkles_display_inline_default__8lcvdk5g sprinkles_display_none_tablet__8lcvdk5b sprinkles_display_inline_desktop__8lcvdk5i"
+                    class="sprinkles_display_inline_default__8lcvdk6s sprinkles_display_none_tablet__8lcvdk6l sprinkles_display_inline_desktop__8lcvdk6u"
                   >
                     Reviews
                   </span>
@@ -949,14 +1036,14 @@ exports[`/how-i-grade renders 1`] = `
       </main>
     </div>
     <footer
-      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_paddingLeft_pageMargin_default__8lcvdkg1 sprinkles_paddingRight_pageMargin_default__8lcvdki4 sprinkles_paddingTop_32_default__8lcvdkip sprinkles_paddingBottom_32_default__8lcvdkdd sprinkles_color_inverse__8lcvdka sprinkles_display_flex_default__8lcvdk5d sprinkles_rowGap_24_default__8lcvdkjy sprinkles_alignItems_center_default__8lcvdk1j sprinkles_flexDirection_column_default__8lcvdk5v"
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ouofw20 sprinkles_paddingLeft_pageMargin_default__8lcvdkkw sprinkles_paddingRight_pageMargin_default__8lcvdkno sprinkles_paddingTop_32_default__8lcvdkog sprinkles_paddingBottom_32_default__8lcvdkhc sprinkles_color_inverse__8lcvdka sprinkles_display_flex_default__8lcvdk6o sprinkles_rowGap_24_default__8lcvdkq4 sprinkles_alignItems_center_default__8lcvdk1k sprinkles_flexDirection_column_default__8lcvdk7c"
     >
       <nav>
         <ul
-          class="sprinkles_display_flex_default__8lcvdk5d sprinkles_flexWrap_wrap_default__8lcvdk5y sprinkles_justifyContent_center_default__8lcvdk7d sprinkles_rowGap_8_default__8lcvdkjs sprinkles_columnGap_16_default__8lcvdk3d sprinkles_columnGap_24_tablet__8lcvdk3h"
+          class="sprinkles_display_flex_default__8lcvdk6o sprinkles_flexWrap_wrap_default__8lcvdk7g sprinkles_justifyContent_center_default__8lcvdk9c sprinkles_rowGap_8_default__8lcvdkpw sprinkles_columnGap_16_default__8lcvdk40 sprinkles_columnGap_24_tablet__8lcvdk45"
         >
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -966,7 +1053,7 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -976,7 +1063,7 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -986,7 +1073,7 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -996,7 +1083,27 @@ exports[`/how-i-grade renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__8lcvdk57 sprinkles_letterSpacing_0.5__8lcvdkx sprinkles_whiteSpace_nowrap__8lcvdk1f"
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/cast-and-crew/"
+            >
+              Cast & Crew
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
+          >
+            <a
+              class="sprinkles_color_inherit__8lcvdkb"
+              href="/collections/"
+            >
+              Collections
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__8lcvdk6g sprinkles_letterSpacing_0.5__8lcvdky sprinkles_whiteSpace_nowrap__8lcvdk1g"
           >
             <a
               class="sprinkles_color_inherit__8lcvdkb"
@@ -1008,7 +1115,7 @@ exports[`/how-i-grade renders 1`] = `
         </ul>
       </nav>
       <p
-        class="sprinkles_fontWeight_light__8lcvdkq sprinkles_fontSize_small__8lcvdkl sprinkles_lineHeight_16__8lcvdk10"
+        class="sprinkles_fontWeight_light__8lcvdkr sprinkles_fontSize_small__8lcvdkl sprinkles_lineHeight_16__8lcvdk11"
       >
         All stills used in accordance with the 
         <a

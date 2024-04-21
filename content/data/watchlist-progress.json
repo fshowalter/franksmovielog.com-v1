@@ -1,0 +1,544 @@
+[
+  {
+    "total": 3554,
+    "reviewed": 385,
+    "directorTotal": 1205,
+    "directorReviewed": 138,
+    "directorDetails": [
+      {
+        "name": "Abel Ferrara",
+        "titleCount": 24,
+        "slug": "abel-ferrara",
+        "reviewCount": 1
+      },
+      {
+        "name": "Akira Kurosawa",
+        "titleCount": 31,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Alfred Hitchcock",
+        "titleCount": 46,
+        "slug": "alfred-hitchcock",
+        "reviewCount": 5
+      },
+      {
+        "name": "Billy Wilder",
+        "titleCount": 26,
+        "slug": "billy-wilder",
+        "reviewCount": 2
+      },
+      {
+        "name": "Brian De Palma",
+        "titleCount": 30,
+        "slug": "brian-de-palma",
+        "reviewCount": 16
+      },
+      {
+        "name": "Dario Argento",
+        "titleCount": 21,
+        "slug": "dario-argento",
+        "reviewCount": 5
+      },
+      {
+        "name": "David Cronenberg",
+        "titleCount": 24,
+        "slug": "david-cronenberg",
+        "reviewCount": 7
+      },
+      {
+        "name": "David Lean",
+        "titleCount": 16,
+        "slug": "david-lean",
+        "reviewCount": 1
+      },
+      {
+        "name": "Fran\u00e7ois Truffaut",
+        "titleCount": 23,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Fritz Lang",
+        "titleCount": 29,
+        "slug": "fritz-lang",
+        "reviewCount": 3
+      },
+      {
+        "name": "George A. Romero",
+        "titleCount": 17,
+        "slug": "george-a-romero",
+        "reviewCount": 1
+      },
+      {
+        "name": "Howard Hawks",
+        "titleCount": 33,
+        "slug": "howard-hawks",
+        "reviewCount": 5
+      },
+      {
+        "name": "Ingmar Bergman",
+        "titleCount": 57,
+        "slug": "ingmar-bergman",
+        "reviewCount": 21
+      },
+      {
+        "name": "John Boorman",
+        "titleCount": 17,
+        "slug": "john-boorman",
+        "reviewCount": 1
+      },
+      {
+        "name": "John Carpenter",
+        "titleCount": 21,
+        "slug": "john-carpenter",
+        "reviewCount": 3
+      },
+      {
+        "name": "John Ford",
+        "titleCount": 63,
+        "slug": "john-ford",
+        "reviewCount": 13
+      },
+      {
+        "name": "John Frankenheimer",
+        "titleCount": 32,
+        "slug": "john-frankenheimer",
+        "reviewCount": 2
+      },
+      {
+        "name": "John Huston",
+        "titleCount": 41,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "John Sturges",
+        "titleCount": 44,
+        "slug": "john-sturges",
+        "reviewCount": 3
+      },
+      {
+        "name": "Ken Russell",
+        "titleCount": 34,
+        "slug": "ken-russell",
+        "reviewCount": 1
+      },
+      {
+        "name": "Lucio Fulci",
+        "titleCount": 33,
+        "slug": "lucio-fulci",
+        "reviewCount": 11
+      },
+      {
+        "name": "Luis Bu\u00f1uel",
+        "titleCount": 31,
+        "slug": "luis-bunuel",
+        "reviewCount": 1
+      },
+      {
+        "name": "Mario Bava",
+        "titleCount": 31,
+        "slug": "mario-bava",
+        "reviewCount": 3
+      },
+      {
+        "name": "Martin Scorsese",
+        "titleCount": 28,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Michael Haneke",
+        "titleCount": 20,
+        "slug": "michael-haneke",
+        "reviewCount": 5
+      },
+      {
+        "name": "Michele Soavi",
+        "titleCount": 18,
+        "slug": "michele-soavi",
+        "reviewCount": 1
+      },
+      {
+        "name": "Mike Nichols",
+        "titleCount": 20,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Paul Thomas Anderson",
+        "titleCount": 9,
+        "slug": "paul-thomas-anderson",
+        "reviewCount": 1
+      },
+      {
+        "name": "Paul Verhoeven",
+        "titleCount": 18,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Quentin Tarantino",
+        "titleCount": 14,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Ridley Scott",
+        "titleCount": 29,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Robert Altman",
+        "titleCount": 43,
+        "slug": "robert-altman",
+        "reviewCount": 2
+      },
+      {
+        "name": "Roger Corman",
+        "titleCount": 56,
+        "slug": "roger-corman",
+        "reviewCount": 1
+      },
+      {
+        "name": "Roman Polanski",
+        "titleCount": 24,
+        "slug": "roman-polanski",
+        "reviewCount": 1
+      },
+      {
+        "name": "Sam Peckinpah",
+        "titleCount": 15,
+        "slug": "sam-peckinpah",
+        "reviewCount": 3
+      },
+      {
+        "name": "Sergio Leone",
+        "titleCount": 8,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Sidney Lumet",
+        "titleCount": 49,
+        "slug": "sidney-lumet",
+        "reviewCount": 1
+      },
+      {
+        "name": "Stanley Kubrick",
+        "titleCount": 13,
+        "slug": "stanley-kubrick",
+        "reviewCount": 1
+      },
+      {
+        "name": "The Coen Brothers",
+        "titleCount": 19,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Tobe Hooper",
+        "titleCount": 18,
+        "slug": "tobe-hooper",
+        "reviewCount": 1
+      },
+      {
+        "name": "Tod Browning",
+        "titleCount": 9,
+        "slug": "tod-browning",
+        "reviewCount": 6
+      },
+      {
+        "name": "Tony Scott",
+        "titleCount": 17,
+        "slug": "tony-scott",
+        "reviewCount": 1
+      },
+      {
+        "name": "Wes Anderson",
+        "titleCount": 11,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Wes Craven",
+        "titleCount": 25,
+        "slug": "wes-craven",
+        "reviewCount": 7
+      },
+      {
+        "name": "William Friedkin",
+        "titleCount": 24,
+        "slug": "william-friedkin",
+        "reviewCount": 3
+      }
+    ],
+    "performerTotal": 2024,
+    "performerReviewed": 198,
+    "performerDetails": [
+      {
+        "name": "Bela Lugosi",
+        "titleCount": 65,
+        "slug": "bela-lugosi",
+        "reviewCount": 11
+      },
+      {
+        "name": "Bette Davis",
+        "titleCount": 101,
+        "slug": "bette-davis",
+        "reviewCount": 13
+      },
+      {
+        "name": "Boris Karloff",
+        "titleCount": 97,
+        "slug": "boris-karloff",
+        "reviewCount": 19
+      },
+      {
+        "name": "Burt Reynolds",
+        "titleCount": 112,
+        "slug": "burt-reynolds",
+        "reviewCount": 2
+      },
+      {
+        "name": "Cary Grant",
+        "titleCount": 72,
+        "slug": "cary-grant",
+        "reviewCount": 7
+      },
+      {
+        "name": "Christopher Lee",
+        "titleCount": 195,
+        "slug": "christopher-lee",
+        "reviewCount": 15
+      },
+      {
+        "name": "Dean Martin",
+        "titleCount": 38,
+        "slug": "dean-martin",
+        "reviewCount": 1
+      },
+      {
+        "name": "Errol Flynn",
+        "titleCount": 54,
+        "slug": "errol-flynn",
+        "reviewCount": 2
+      },
+      {
+        "name": "Frank Sinatra",
+        "titleCount": 53,
+        "slug": "frank-sinatra",
+        "reviewCount": 2
+      },
+      {
+        "name": "Gene Hackman",
+        "titleCount": 79,
+        "slug": "gene-hackman",
+        "reviewCount": 2
+      },
+      {
+        "name": "Humphrey Bogart",
+        "titleCount": 75,
+        "slug": "humphrey-bogart",
+        "reviewCount": 28
+      },
+      {
+        "name": "Jack Lemmon",
+        "titleCount": 64,
+        "slug": "jack-lemmon",
+        "reviewCount": 3
+      },
+      {
+        "name": "Jack Nicholson",
+        "titleCount": 61,
+        "slug": "jack-nicholson",
+        "reviewCount": 4
+      },
+      {
+        "name": "James Coburn",
+        "titleCount": 84,
+        "slug": "james-coburn",
+        "reviewCount": 7
+      },
+      {
+        "name": "James Garner",
+        "titleCount": 68,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "James Stewart",
+        "titleCount": 81,
+        "slug": "james-stewart",
+        "reviewCount": 2
+      },
+      {
+        "name": "John Wayne",
+        "titleCount": 146,
+        "slug": "john-wayne",
+        "reviewCount": 23
+      },
+      {
+        "name": "Lee Marvin",
+        "titleCount": 53,
+        "slug": "lee-marvin",
+        "reviewCount": 2
+      },
+      {
+        "name": "Marilyn Monroe",
+        "titleCount": 26,
+        "slug": "marilyn-monroe",
+        "reviewCount": 1
+      },
+      {
+        "name": "Paul Newman",
+        "titleCount": 57,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Peter Cushing",
+        "titleCount": 94,
+        "slug": "peter-cushing",
+        "reviewCount": 12
+      },
+      {
+        "name": "Robert Mitchum",
+        "titleCount": 113,
+        "slug": "robert-mitchum",
+        "reviewCount": 11
+      },
+      {
+        "name": "Sean Connery",
+        "titleCount": 69,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Steve McQueen",
+        "titleCount": 27,
+        "slug": "steve-mcqueen",
+        "reviewCount": 3
+      },
+      {
+        "name": "Vincent Price",
+        "titleCount": 108,
+        "slug": "vincent-price",
+        "reviewCount": 5
+      },
+      {
+        "name": "Warren Oates",
+        "titleCount": 49,
+        "slug": "warren-oates",
+        "reviewCount": 5
+      },
+      {
+        "name": "William Holden",
+        "titleCount": 69,
+        "slug": "william-holden",
+        "reviewCount": 6
+      },
+      {
+        "name": "William Powell",
+        "titleCount": 59,
+        "slug": "william-powell",
+        "reviewCount": 28
+      }
+    ],
+    "writerTotal": 2024,
+    "writerReviewed": 198,
+    "writerDetails": [
+      {
+        "name": "Anthony Shaffer",
+        "titleCount": 11,
+        "slug": null,
+        "reviewCount": 0
+      },
+      {
+        "name": "Clive Barker",
+        "titleCount": 15,
+        "slug": "clive-barker",
+        "reviewCount": 3
+      },
+      {
+        "name": "David Mamet",
+        "titleCount": 29,
+        "slug": "david-mamet",
+        "reviewCount": 1
+      },
+      {
+        "name": "Leigh Brackett",
+        "titleCount": 12,
+        "slug": "leigh-brackett",
+        "reviewCount": 1
+      },
+      {
+        "name": "Neil LaBute",
+        "titleCount": 15,
+        "slug": "neil-labute",
+        "reviewCount": 1
+      },
+      {
+        "name": "Raymond Chandler",
+        "titleCount": 18,
+        "slug": "raymond-chandler",
+        "reviewCount": 2
+      },
+      {
+        "name": "Stephen King",
+        "titleCount": 78,
+        "slug": "stephen-king",
+        "reviewCount": 1
+      }
+    ],
+    "collectionTotal": 391,
+    "collectionReviewed": 48,
+    "collectionDetails": [
+      {
+        "name": "Friday the 13th",
+        "titleCount": 12,
+        "slug": "friday-the-13th",
+        "reviewCount": 10
+      },
+      {
+        "name": "Halloween",
+        "titleCount": 13,
+        "slug": "halloween",
+        "reviewCount": 6
+      },
+      {
+        "name": "Hammer Films",
+        "titleCount": 94,
+        "slug": "hammer-films",
+        "reviewCount": 10
+      },
+      {
+        "name": "James Bond",
+        "titleCount": 27,
+        "slug": "james-bond",
+        "reviewCount": 6
+      },
+      {
+        "name": "Saw",
+        "titleCount": 9,
+        "slug": "saw",
+        "reviewCount": 7
+      },
+      {
+        "name": "Shaw Brothers",
+        "titleCount": 208,
+        "slug": "shaw-brothers",
+        "reviewCount": 6
+      },
+      {
+        "name": "Universal Monsters",
+        "titleCount": 29,
+        "slug": "universal-monsters",
+        "reviewCount": 3
+      }
+    ]
+  }
+]

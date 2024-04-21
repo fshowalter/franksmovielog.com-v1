@@ -487,7 +487,41 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Tenny Wright",
+      "name": "Dario Argento",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 582,
+          "date": "2017-01-31",
+          "slug": "the-bird-with-the-crystal-plumage-1970",
+          "title": "The Bird with the Crystal Plumage",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1970"
+        },
+        {
+          "sequence": 609,
+          "date": "2017-10-11",
+          "slug": null,
+          "title": "Demons",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        },
+        {
+          "sequence": 613,
+          "date": "2017-10-21",
+          "slug": null,
+          "title": "Suspiria",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1977"
+        }
+      ]
+    },
+    {
+      "name": "Kurt Kempler",
       "count": 2,
       "slug": null,
       "viewings": [
@@ -512,49 +546,24 @@
       ]
     },
     {
-      "name": "Dario Argento",
-      "count": 2,
-      "slug": "dario-argento",
-      "viewings": [
-        {
-          "sequence": 582,
-          "date": "2017-01-31",
-          "slug": "the-bird-with-the-crystal-plumage-1970",
-          "title": "The Bird with the Crystal Plumage",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1970"
-        },
-        {
-          "sequence": 613,
-          "date": "2017-10-21",
-          "slug": null,
-          "title": "Suspiria",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1977"
-        }
-      ]
-    },
-    {
-      "name": "Taika Waititi",
+      "name": "Michael Green",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 588,
-          "date": "2017-03-01",
-          "slug": "what-we-do-in-the-shadows-2014",
-          "title": "What We Do in the Shadows",
-          "medium": "Amazon",
-          "venue": null,
-          "year": "2014"
+          "sequence": 589,
+          "date": "2017-03-09",
+          "slug": "logan-2017",
+          "title": "Logan",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2017"
         },
         {
-          "sequence": 623,
-          "date": "2017-12-13",
-          "slug": "thor-ragnarok-2017",
-          "title": "Thor: Ragnarok",
+          "sequence": 616,
+          "date": "2017-10-30",
+          "slug": null,
+          "title": "Blade Runner 2049",
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "2017"
@@ -562,9 +571,59 @@
       ]
     },
     {
-      "name": "Howard Hawks",
+      "name": "Jules Furthman",
       "count": 2,
-      "slug": "howard-hawks",
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 598,
+          "date": "2017-06-18",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1959"
+        },
+        {
+          "sequence": 622,
+          "date": "2017-12-09",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1959"
+        }
+      ]
+    },
+    {
+      "name": "Leigh Brackett",
+      "count": 2,
+      "slug": "leigh-brackett",
+      "viewings": [
+        {
+          "sequence": 598,
+          "date": "2017-06-18",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1959"
+        },
+        {
+          "sequence": 622,
+          "date": "2017-12-09",
+          "slug": "rio-bravo-1959",
+          "title": "Rio Bravo",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1959"
+        }
+      ]
+    },
+    {
+      "name": "B.H. McCampbell",
+      "count": 2,
+      "slug": null,
       "viewings": [
         {
           "sequence": 598,
@@ -588,6 +647,31 @@
     },
     {
       "name": "Guillermo del Toro",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 618,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2004"
+        },
+        {
+          "sequence": 619,
+          "date": "2017-11-13",
+          "slug": null,
+          "title": "Hellboy II: The Golden Army",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2008"
+        }
+      ]
+    },
+    {
+      "name": "Mike Mignola",
       "count": 2,
       "slug": null,
       "viewings": [

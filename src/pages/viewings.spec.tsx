@@ -50,6 +50,31 @@ describe("/viewings", () => {
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
 
+  it("can filter by venue", async () => {
+    expect.hasAssertions();
+    render(<ViewingsIndexPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Venue"),
+      "Alamo Drafthouse Cinema - One Loudoun",
+    );
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can filter by venue then show all", async () => {
+    expect.hasAssertions();
+    render(<ViewingsIndexPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Venue"),
+      "Alamo Drafthouse Cinema - One Loudoun",
+    );
+    await userEvent.selectOptions(screen.getByLabelText("Venue"), "All");
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
   it("can sort by viewing date with newest first", async () => {
     expect.hasAssertions();
 

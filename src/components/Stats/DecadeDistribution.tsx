@@ -12,12 +12,8 @@ import {
 export function DecadeDistribution({
   distributions,
 }: {
-  distributions: readonly Queries.DecadeDistributionFragment[] | null;
-}): JSX.Element | null {
-  if (!distributions) {
-    return null;
-  }
-
+  distributions: readonly Queries.DecadeDistributionFragment[];
+}): JSX.Element {
   const maxBar = distributions.reduce((acc, distribution) => {
     const value = distribution.count;
     return acc > value ? acc : value;

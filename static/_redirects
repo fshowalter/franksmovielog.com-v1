@@ -6,100 +6,21 @@
 /reviews/stats/* /viewings/:splat 301
 /stats/* /viewings/stats/:splat 301
 
-# cast links to performers
-/watchlist/cast/* /watchlist/performers/:splat 301
-
 # sitemap 
 /sitemap.xml /sitemap-index.xml 301
 
-# old cast-and-crew to new watchlist entries
-/browse/christopher-lee /watchlist/performers/christopher-lee 301
-/browse/christopher-lee/* /watchlist/performers/christopher-lee 301
-/browse/dario-argento /watchlist/directors/dario-argento 301
-/browse/dario-argento/* /watchlist/directors/dario-argento 301
-/browse/frank-sinatra /watchlist/performers/frank-sinatra 301
-/browse/frank-sinatra/* /watchlist/performers/frank-sinatra 301
-/browse/hammer-films /watchlist/collections/hammer-films 301
-/browse/hammer-films/* /watchlist/collections/hammer-films 301
-/browse/humphrey-bogart /watchlist/performers/humphrey-bogart 301
-/browse/humphrey-bogart/* /watchlist/performers/humphrey-bogart 301
-/browse/peter-cushing /watchlist/performers/peter-cushing 301
-/browse/peter-cushing/* /watchlist/performers/peter-cushing 301
+# watchlist to  cast-and-crew
 /browse/reviews /reviews 301
-/browse/william-holden /watchlist/performers/william-holden 301
-/browse/william-holden/* /watchlist/performers/william-holden 301
-/cast-and-crew/boris-karloff-i /watchlist/performers/boris-karloff 301
-/cast-and-crew/christopher-lee-i /watchlist/performers/christopher-lee 301
-/cast-and-crew/humphrey-bogart /watchlist/performers/humphrey-bogart 301
-/cast-and-crew/john-wayne-i /watchlist/performers/john-wayne 301
-/cast-and-crew/peter-cushing /watchlist/performers/peter-cushing 301
-/cast-and-crew/robert-mitchum-i /watchlist/performers/robert-mitchum 301
-/cast-and-crew/sam-peckinpah /watchlist/directors/sam-peckinpah 301
-/cast-and-crew/william-powell-i /watchlist/performers/william-powell 301
+/wachlist/performers/* /cast-and-crew/:splat 301
+/wachlist/directors/* /cast-and-crew/:splat 301
+/wachlist/writers/* /cast-and-crew/:splat 301
+/wachlist/collections/* /collections/:splat 301
 
 # old review links to new
-/browse/reviews/24-hour-party-people-2002 /reviews/24-hour-party-people-2002 301
-/browse/reviews/better-off-dead-1985 /reviews/better-off-dead-1985 301
-/browse/reviews/big-jim-mclain-1952 /reviews/big-jim-mclain-1952 301
-/browse/reviews/bullets-or-ballots-1936 /reviews/bullets-or-ballots-1936 301
-/browse/reviews/casino-royale-2006 /reviews/casino-royale-2006 301
-/browse/reviews/doctor-bull-1933 /reviews/doctor-bull-1933 301
-/browse/reviews/dont-torture-a-duckling-1972 /reviews/dont-torture-a-duckling-1972 301
-/browse/reviews/friday-the-13th-part-iii-1982 /reviews/friday-the-13th-part-iii-1982 301
-/browse/reviews/golden-boy-1939 /reviews/golden-boy-1939 301
-/browse/reviews/halloween-2007 /reviews/halloween-2007 301
-/browse/reviews/high-pressure-1932 /reviews/high-pressure-1932 301
-/browse/reviews/higher-and-higher-1943 /reviews/higher-and-higher-1943 301
-/browse/reviews/kill-a-dragon-1967 /reviews/kill-a-dragon-1967 301
-/browse/reviews/king-of-the-underworld-1939 /reviews/king-of-the-underworld-1939 301
-/browse/reviews/labyrinth-1986 /reviews/labyrinth-1986 301
-/browse/reviews/marked-woman-1937 /reviews/marked-woman-1937 301
-/browse/reviews/one-way-passage-1932 /reviews/one-way-passage-1932 301
-/browse/reviews/penny-serenade-1941 /reviews/penny-serenade-1941 301
-/browse/reviews/pilgrimage-1933 /reviews/pilgrimage-1933 301
-/browse/reviews/private-detective-62-1933 /reviews/private-detective-62-1933 301
-/browse/reviews/punisher-war-zone-2008 /reviews/punisher-war-zone-2008 301
-/browse/reviews/race-with-the-devil-1975 /reviews/race-with-the-devil-1975 301
-/browse/reviews/scarface-1983 /reviews/scarface-1983 301
-/browse/reviews/swing-your-lady-1938 /reviews/swing-your-lady-1938 301
-/browse/reviews/the-big-trail-1930 /reviews/the-big-trail-1930 301
-/browse/reviews/the-bird-with-the-crystal-plumage-1970 /reviews/the-bird-with-the-crystal-plumage-1970 301
-/browse/reviews/the-corn-is-green-1945 /reviews/the-corn-is-green-1945 301
-/browse/reviews/the-crowd-roars-1932 /reviews/the-crowd-roars-1932 301
-/browse/reviews/the-last-house-on-the-left-1972 /reviews/the-last-house-on-the-left-1972 301
-/browse/reviews/the-left-hand-of-god-1955 /reviews/the-left-hand-of-god-1955 301
-/browse/reviews/the-new-york-ripper-1982 /reviews/the-new-york-ripper-1982 301
-/browse/reviews/the-oklahoma-kid-1939 /reviews/the-oklahoma-kid-1939 301
-/browse/reviews/topper-1937 reviews/topper-1937 301
-/browse/reviews/up-the-river-1930 /reviews/up-the-river-1930 301
-/browse/reviews/watchmen-2009 /reviews/watchmen-2009 301
-/movies/conflict-1945 /reviews/conflict-1945 301
-/movies/crisis-1950 /reviews/crisis-1950 301
-/movies/curse-of-the-demon-1958 /reviews/curse-of-the-demon-1957 301
-/movies/fashions-of-1934-1934 /reviews/fashions-of-1934-1934 301
-/movies/fright-night-1985 /reviews/fright-night-1985 301
-/movies/invisible-stripes-1939 /reviews/invisible-stripes-1939 301
-/movies/jewel-robbery-1932 /reviews/jewel-robbery-1932 301
-/movies/life-with-father-1947 /reviews/life-with-father-1947 301
-/movies/murder-my-sweet-1944 /reviews/murder-my-sweet-1944 301
-/movies/murders-in-the-rue-morgue-1932 /reviews/murders-in-the-rue-morgue-1932 301
-/movies/randy-rides-alone-1934 /reviews/randy-rides-alone-1934 301
-/movies/the-cabin-in-the-woods-2011 /reviews/the-cabin-in-the-woods-2011 301
-/movies/the-girl-with-the-dragon-tattoo-2011 /reviews/the-girl-with-the-dragon-tattoo-2011 301
-/movies/the-key-1934 /reviews/the-key-1934 301
-/movies/the-lawless-frontier-1934 /reviews/the-lawless-frontier-1934 301
-/movies/the-lucky-texan-1934 /reviews/the-lucky-texan-1934 301
-/movies/the-other-guys-2010 /reviews/the-other-guys-2010 301
-/movies/the-three-musketeers-1948 /reviews/the-three-musketeers-1948 301
-/movies/virginia-city-1940 /reviews/virginia-city-1940 301
-/reviews/bill-ted-face-the-music-2020 /reviews/bill-and-ted-face-the-music-2020 301
-/reviews/curse-of-the-demon-1958 /reviews/curse-of-the-demon-1957 301
-/reviews/island-of-death-1977 /reviews/island-of-death-1976 301
-/reviews/jason-lives-friday-the-13th-part-vi-1986 /reviews/friday-the-13th-part-vi-jason-lives-1986 301
-/reviews/l-age-d-or-1930 /reviews/lage-dor-1930 301
-/reviews/the-brute-and-the-beast-1966 /reviews/massacre-time-1966 301
-/reviews/the-visitor-1980 /reviews/the-visitor-1979 301
+/browse/reviews/* /reviews/:splat 301
+/movies/* /reviews/:splat 301
 /reviews/murder-to-the-tune-of-the-seven-black-notes-1977 /reviews/the-psychic-1977 301
+/reviews/dune-2021 /reviews/dune-part-one-2021 301
 
 # misc spam
 */wlwmanifest.xml /gone 410
@@ -153,11 +74,6 @@
 /apple-touch-icon-120x120-precomposed.png /gone 410
 /apple-touch-icon-precomposed.png /gone 410
 
-# old cast and crew links we're not bringing back
-/cast-and-crew/* /gone 410
-/watchlist/cast/bill-murray /gone 410
-/watchlist/performers/bill-murray /gone 410
-
 # misc old links
 /images/5-stars-4661cb2a.svg /gone 410
 /metrics /gone 410
@@ -168,15 +84,6 @@
 /page-* /reviews 301
 /repeater.php /gone 410
 /sitemap/* /sitemap-index.xml 301
-/watchlist/writers/ingmar-bergman /watchlist/directors/ingmar-bergman 301
-/watchlist/writers/alfred-hitchcock /watchlist/directors/alfred-hitchcock 301
-/watchlist/writers/john-ford /watchlist/directors/john-ford 301
-/watchlist/writers/lucio-fulci /watchlist/directors/lucio-fulci 301
-/watchlist/writers/wes-craven /watchlist/directors/wes-craven 301
-/watchlist/writers/brian-de-palma /watchlist/directors/brian-de-palma 301
-/watchlist/writers/howard-hawks /watchlist/directors/howard-hawks 301
-/watchlist/writers/john-carpenter /watchlist/directors/john-carpenter 301
-/watchlist/writers/quentin-tarantino /watchlist/directors/quentin-tarantino 301
 
 
 # resized images

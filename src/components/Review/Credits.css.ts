@@ -24,7 +24,7 @@ export const titleStyle = style({
 
   "@media": {
     [minMediaQuery("tablet")]: {
-      textAlign: "left",
+      // textAlign: "left",
     },
   },
 });

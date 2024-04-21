@@ -651,43 +651,34 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Steve Miner",
-      "count": 3,
+      "name": "Oscar Millard",
+      "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 259,
-          "date": "2013-01-05",
+          "sequence": 264,
+          "date": "2013-01-19",
           "slug": null,
-          "title": "Warlock",
-          "medium": "Netflix",
+          "title": "Second Chance",
+          "medium": "TCM HD",
           "venue": null,
-          "year": "1989"
+          "year": "1953"
         },
         {
-          "sequence": 317,
-          "date": "2013-09-21",
-          "slug": "friday-the-13th-part-2-1981",
-          "title": "Friday the 13th Part 2",
-          "medium": "Blu-ray",
+          "sequence": 265,
+          "date": "2013-01-19",
+          "slug": null,
+          "title": "Angel Face",
+          "medium": "TCM HD",
           "venue": null,
-          "year": "1981"
-        },
-        {
-          "sequence": 318,
-          "date": "2013-09-27",
-          "slug": "friday-the-13th-part-iii-1982",
-          "title": "Friday the 13th: Part 3",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1982"
+          "year": "1952"
         }
       ]
     },
     {
       "name": "John Carpenter",
       "count": 2,
-      "slug": "john-carpenter",
+      "slug": null,
       "viewings": [
         {
           "sequence": 268,
@@ -737,7 +728,7 @@
     {
       "name": "Billy Wilder",
       "count": 2,
-      "slug": "billy-wilder",
+      "slug": null,
       "viewings": [
         {
           "sequence": 271,
@@ -760,52 +751,77 @@
       ]
     },
     {
-      "name": "Jon Favreau",
+      "name": "David Mamet",
       "count": 2,
-      "slug": null,
+      "slug": "david-mamet",
       "viewings": [
         {
-          "sequence": 283,
-          "date": "2013-02-17",
+          "sequence": 294,
+          "date": "2013-04-05",
           "slug": null,
-          "title": "Iron Man",
-          "medium": "Blu-ray",
+          "title": "Glengarry Glen Ross",
+          "medium": "Netflix",
           "venue": null,
-          "year": "2008"
+          "year": "1992"
         },
         {
-          "sequence": 284,
-          "date": "2013-02-17",
+          "sequence": 307,
+          "date": "2013-07-05",
           "slug": null,
-          "title": "Iron Man 2",
-          "medium": "Blu-ray",
+          "title": "Heist",
+          "medium": "HBO HD",
           "venue": null,
-          "year": "2010"
+          "year": "2001"
         }
       ]
     },
     {
-      "name": "Tomas Alfredson",
+      "name": "Adam McKay",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 298,
-          "date": "2013-04-30",
+          "sequence": 316,
+          "date": "2013-09-14",
           "slug": null,
-          "title": "Tinker Tailor Soldier Spy",
-          "medium": "Netflix",
+          "title": "The Campaign",
+          "medium": "HBO HD",
           "venue": null,
-          "year": "2011"
+          "year": "2012"
         },
         {
-          "sequence": 330,
-          "date": "2013-10-31",
+          "sequence": 353,
+          "date": "2013-12-27",
           "slug": null,
-          "title": "Let the Right One In",
-          "medium": "Blu-ray",
+          "title": "Anchorman 2: The Legend Continues",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2013"
+        }
+      ]
+    },
+    {
+      "name": "Won-Chan Hong",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 328,
+          "date": "2013-10-29",
+          "slug": null,
+          "title": "The Chaser",
+          "medium": "Netflix",
           "venue": null,
           "year": "2008"
+        },
+        {
+          "sequence": 355,
+          "date": "2013-12-28",
+          "slug": null,
+          "title": "The Yellow Sea",
+          "medium": "Netflix",
+          "venue": null,
+          "year": "2010"
         }
       ]
     },

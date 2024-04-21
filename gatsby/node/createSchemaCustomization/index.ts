@@ -1,11 +1,15 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
 import { linkReviewedMoviesExtension } from "./extensions/linkReviewedMovies";
 import { Title } from "./interfaces/Title";
-import { WatchlistEntity } from "./interfaces/WatchlistEntity";
 import {
   AllTimeStatsGradeDistribution,
   AllTimeStatsJson,
 } from "./objects/AllTimeStatsJson";
+import {
+  CastAndCrewJson,
+  CastAndCrewMemberTitle,
+} from "./objects/CastAndCrewJson";
+import { CollectionTitle, CollectionsJson } from "./objects/CollectionsJson";
 import { MarkdownRemark } from "./objects/MarkdownRemark";
 import {
   MostWatchedPerson,
@@ -15,7 +19,8 @@ import { MostWatchedTitle } from "./objects/MostWatchedTitle";
 import { OverratedDisappointmentsJson } from "./objects/OverratedDisappointmentsJson";
 import {
   ReviewedTitleMore,
-  ReviewedTitleMoreEntity,
+  ReviewedTitleMoreCastAndCrewMember,
+  ReviewedTitleMoreCollection,
   ReviewedTitleMoreTitle,
   ReviewedTitleViewing,
   ReviewedTitlesJson,
@@ -23,16 +28,11 @@ import {
 import { StatsDistribution } from "./objects/StatsDistribution";
 import { UnderseenGemsJson } from "./objects/UnderseenGemsJson";
 import { ViewingsJson } from "./objects/ViewingsJson";
-import { WatchlistCollectionsJson } from "./objects/WatchlistCollectionsJson";
-import { WatchlistDirectorsJson } from "./objects/WatchlistDirectorsJson";
-import { WatchlistEntityTitle } from "./objects/WatchlistEntityTitle";
-import { WatchlistPerformersJson } from "./objects/WatchlistPerformersJson";
 import {
   WatchlistProgressDetail,
   WatchlistProgressJson,
 } from "./objects/WatchlistProgressJson";
 import { WatchlistTitlesJson } from "./objects/WatchlistTitlesJson";
-import { WatchlistWritersJson } from "./objects/WatchlistWritersJson";
 import { YearStatsJson } from "./objects/YearStatsJson";
 
 export function createSchemaCustomization({
@@ -45,6 +45,8 @@ export function createSchemaCustomization({
 
   const typeDefs = [
     schema.buildInterfaceType(Title),
+    schema.buildObjectType(CastAndCrewMemberTitle),
+    schema.buildObjectType(CastAndCrewJson),
     schema.buildObjectType(StatsDistribution),
     schema.buildObjectType(MostWatchedPersonViewing),
     schema.buildObjectType(MostWatchedPerson),
@@ -56,15 +58,12 @@ export function createSchemaCustomization({
     schema.buildObjectType(ViewingsJson),
     schema.buildObjectType(ReviewedTitleViewing),
     schema.buildObjectType(ReviewedTitleMoreTitle),
-    schema.buildObjectType(ReviewedTitleMoreEntity),
+    schema.buildObjectType(ReviewedTitleMoreCastAndCrewMember),
+    schema.buildObjectType(ReviewedTitleMoreCollection),
     schema.buildObjectType(ReviewedTitleMore),
     schema.buildObjectType(ReviewedTitlesJson),
-    schema.buildObjectType(WatchlistEntityTitle),
-    schema.buildInterfaceType(WatchlistEntity),
-    schema.buildObjectType(WatchlistCollectionsJson),
-    schema.buildObjectType(WatchlistDirectorsJson),
-    schema.buildObjectType(WatchlistPerformersJson),
-    schema.buildObjectType(WatchlistWritersJson),
+    schema.buildObjectType(CollectionTitle),
+    schema.buildObjectType(CollectionsJson),
     schema.buildObjectType(UnderseenGemsJson),
     schema.buildObjectType(OverratedDisappointmentsJson),
     schema.buildObjectType(WatchlistTitlesJson),

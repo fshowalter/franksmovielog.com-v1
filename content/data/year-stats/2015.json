@@ -704,7 +704,41 @@
   ],
   "mostWatchedWriters": [
     {
-      "name": "Terence Fisher",
+      "name": "Dardano Sacchetti",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 503,
+          "date": "2015-06-23",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - Winchester",
+          "year": "1981"
+        },
+        {
+          "sequence": 531,
+          "date": "2015-10-31",
+          "slug": null,
+          "title": "Demons",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 532,
+          "date": "2015-11-05",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1981"
+        }
+      ]
+    },
+    {
+      "name": "Dennis Wheatley",
       "count": 2,
       "slug": null,
       "viewings": [
@@ -718,18 +752,18 @@
           "year": "1968"
         },
         {
-          "sequence": 527,
-          "date": "2015-10-24",
-          "slug": "the-curse-of-frankenstein-1957",
-          "title": "The Curse of Frankenstein",
-          "medium": "Blu-ray",
+          "sequence": 481,
+          "date": "2015-02-21",
+          "slug": "to-the-devil-a-daughter-1976",
+          "title": "To the Devil a Daughter",
+          "medium": "DVD",
           "venue": null,
-          "year": "1957"
+          "year": "1976"
         }
       ]
     },
     {
-      "name": "Don Siegel",
+      "name": "Daniel Mainwaring",
       "count": 2,
       "slug": null,
       "viewings": [
@@ -743,45 +777,145 @@
           "year": "1949"
         },
         {
-          "sequence": 504,
-          "date": "2015-07-11",
-          "slug": "hell-is-for-heroes-1962",
-          "title": "Hell Is for Heroes",
-          "medium": "Netflix",
+          "sequence": 499,
+          "date": "2015-06-06",
+          "slug": null,
+          "title": "Out of the Past",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1962"
+          "year": "1947"
         }
       ]
     },
     {
-      "name": "Mervyn LeRoy",
+      "name": "Charles Bennett",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 484,
-          "date": "2015-03-07",
-          "slug": "three-on-a-match-1932",
-          "title": "Three on a Match",
+          "sequence": 476,
+          "date": "2015-02-07",
+          "slug": "where-danger-lives-1950",
+          "title": "Where Danger Lives",
           "medium": "TCM HD",
           "venue": null,
-          "year": "1932"
+          "year": "1950"
         },
         {
-          "sequence": 513,
-          "date": "2015-08-08",
-          "slug": "big-city-blues-1932",
-          "title": "Big City Blues",
-          "medium": "TCM",
+          "sequence": 483,
+          "date": "2015-02-28",
+          "slug": "dangerous-mission-1954",
+          "title": "Dangerous Mission",
+          "medium": "TCM HD",
           "venue": null,
-          "year": "1932"
+          "year": "1954"
         }
       ]
     },
     {
-      "name": "Lucio Fulci",
+      "name": "Lawrence Kasdan",
       "count": 2,
-      "slug": "lucio-fulci",
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 479,
+          "date": "2015-02-14",
+          "slug": null,
+          "title": "Raiders of the Lost Ark",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1981"
+        },
+        {
+          "sequence": 536,
+          "date": "2015-12-21",
+          "slug": null,
+          "title": "Star Wars: Episode VII - The Force Awakens",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "name": "Joss Whedon",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 492,
+          "date": "2015-04-30",
+          "slug": "avengers-age-of-ultron-2015",
+          "title": "Avengers: Age of Ultron",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2015"
+        },
+        {
+          "sequence": 529,
+          "date": "2015-10-31",
+          "slug": "the-cabin-in-the-woods-2011",
+          "title": "The Cabin in the Woods",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "2011"
+        }
+      ]
+    },
+    {
+      "name": "Milton Subotsky",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 498,
+          "date": "2015-06-06",
+          "slug": "the-city-of-the-dead-1960",
+          "title": "The City of the Dead",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1960"
+        },
+        {
+          "sequence": 514,
+          "date": "2015-08-11",
+          "slug": "i-monster-1971",
+          "title": "I, Monster",
+          "medium": "Shudder",
+          "venue": null,
+          "year": "1971"
+        }
+      ]
+    },
+    {
+      "name": "Michael Arndt",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 502,
+          "date": "2015-06-22",
+          "slug": "inside-out-2015",
+          "title": "Inside Out",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2015"
+        },
+        {
+          "sequence": 536,
+          "date": "2015-12-21",
+          "slug": null,
+          "title": "Star Wars: Episode VII - The Force Awakens",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2015"
+        }
+      ]
+    },
+    {
+      "name": "Giorgio Mariuzzo",
+      "count": 2,
+      "slug": null,
       "viewings": [
         {
           "sequence": 503,
@@ -804,27 +938,27 @@
       ]
     },
     {
-      "name": "Roy Ward Baker",
+      "name": "Lucio Fulci",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 515,
-          "date": "2015-08-13",
-          "slug": "and-now-the-screaming-starts-1973",
-          "title": "And Now the Screaming Starts!",
-          "medium": "Shudder",
-          "venue": null,
-          "year": "1973"
+          "sequence": 503,
+          "date": "2015-06-23",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - Winchester",
+          "year": "1981"
         },
         {
-          "sequence": 521,
-          "date": "2015-09-19",
-          "slug": "asylum-1972",
-          "title": "Asylum",
-          "medium": "Amazon",
-          "venue": null,
-          "year": "1972"
+          "sequence": 532,
+          "date": "2015-11-05",
+          "slug": null,
+          "title": "The Beyond",
+          "medium": null,
+          "venue": "AFI Silver",
+          "year": "1981"
         }
       ]
     }

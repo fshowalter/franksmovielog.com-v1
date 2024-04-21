@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import { Box } from "../Box";
+import { Link } from "../Link";
 import { ListItem } from "../ListItem";
 import { ListItemMediumAndVenue } from "../ListItemMediumAndVenue";
 import { ListItemPoster } from "../ListItemPoster";
@@ -15,16 +16,14 @@ import {
 export function MostWatchedPeople({
   people,
   header,
-  nameRenderer,
 }: {
   header: string;
   people: readonly Queries.MostWatchedPersonFragment[];
-  nameRenderer: ({
-    person,
-  }: {
-    person: Queries.MostWatchedPersonFragment;
-  }) => JSX.Element;
 }): JSX.Element | null {
+  if (people.length == 0) {
+    return null;
+  }
+
   return (
     <Box as="section" boxShadow="borderAll">
       <StatHeading>{header}</StatHeading>
@@ -55,7 +54,7 @@ export function MostWatchedPeople({
                 backgroundColor="stripe"
               >
                 <Box as="span" lineHeight={40}>
-                  {nameRenderer({ person })}
+                  <Name person={person} />
                 </Box>
                 <Box as="span" lineHeight={40}>
                   &nbsp;
@@ -97,6 +96,18 @@ export function MostWatchedPeople({
       </Box>
     </Box>
   );
+}
+
+function Name({
+  person,
+}: {
+  person: Queries.MostWatchedPersonFragment;
+}): JSX.Element {
+  if (person.slug) {
+    return <Link to={`/cast-and-crew/${person.slug}/`}>{person.name}</Link>;
+  }
+
+  return <>{person.name}</>;
 }
 
 export function MostWatchedPersonViewingListItem({

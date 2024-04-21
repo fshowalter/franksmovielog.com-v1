@@ -6985,8 +6985,8 @@
     "sequence": 414,
     "viewingYear": "2014",
     "viewingDate": "2014-08-02",
-    "title": "Night of the Blood Monster",
-    "sortTitle": "Night of the Blood Monster (1970)",
+    "title": "The Bloody Judge",
+    "sortTitle": "Bloody Judge (1970)",
     "medium": "DVD",
     "venue": null,
     "year": "1970",
@@ -15787,7 +15787,7 @@
       "Sci-Fi",
       "Thriller"
     ],
-    "releaseSequence": "2013-01-29tt11060882"
+    "releaseSequence": "2013-10-08tt2166834"
   },
   {
     "sequence": 934,
@@ -16297,8 +16297,8 @@
     "sequence": 964,
     "viewingYear": "2020",
     "viewingDate": "2020-12-26",
-    "title": "Stereo",
-    "sortTitle": "Stereo (1969)",
+    "title": "Stereo (Tile 3B of a CAEE Educational Mosaic)",
+    "sortTitle": "Stereo (Tile 3B of a CAEE Educational Mosaic) (1969)",
     "medium": "Criterion Channel",
     "venue": null,
     "year": "1969",
@@ -20071,12 +20071,12 @@
     "sequence": 1191,
     "viewingYear": "2021",
     "viewingDate": "2021-11-18",
-    "title": "Dune",
-    "sortTitle": "Dune (2021)",
+    "title": "Dune: Part One",
+    "sortTitle": "Dune: Part One (2021)",
     "medium": "HBO Max",
     "venue": null,
     "year": "2021",
-    "slug": "dune-2021",
+    "slug": "dune-part-one-2021",
     "genres": [
       "Action",
       "Adventure",
@@ -24438,8 +24438,8 @@
     "sequence": 1450,
     "viewingYear": "2023",
     "viewingDate": "2023-03-11",
-    "title": "Delirio di sangue",
-    "sortTitle": "Delirio di sangue (1988)",
+    "title": "Blood Delirium",
+    "sortTitle": "Blood Delirium (1988)",
     "medium": "Blu-ray",
     "venue": null,
     "year": "1988",
@@ -25771,7 +25771,7 @@
       "Sci-Fi",
       "Thriller"
     ],
-    "releaseSequence": "2013-01-29tt11060882"
+    "releaseSequence": "2013-10-08tt2166834"
   },
   {
     "sequence": 1529,
@@ -26631,5 +26631,53 @@
       "History"
     ],
     "releaseSequence": "1971-07-16tt0066993"
+  },
+  {
+    "sequence": 1581,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-10",
+    "title": "City of the Living Dead",
+    "sortTitle": "City of the Living Dead (1980)",
+    "medium": "4k UHD Blu-ray",
+    "venue": null,
+    "year": "1980",
+    "slug": "city-of-the-living-dead-1980",
+    "genres": [
+      "Horror"
+    ],
+    "releaseSequence": "1980-08-11tt0081318"
+  },
+  {
+    "sequence": 1582,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-13",
+    "title": "Mandy",
+    "sortTitle": "Mandy (2018)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "2018",
+    "slug": "mandy-2018",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Horror"
+    ],
+    "releaseSequence": "2018-01-19tt6998518"
+  },
+  {
+    "sequence": 1583,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-14",
+    "title": "Dawn of the Dead",
+    "sortTitle": "Dawn of the Dead (1978)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "1978",
+    "slug": null,
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "releaseSequence": "1978-09-01tt0077402"
   }
 ]

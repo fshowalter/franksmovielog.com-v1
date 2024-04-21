@@ -3,16 +3,10 @@ import {
   buildGroupItems,
   collator,
   filterTools,
-  sortNumber,
   sortString,
 } from "../../utils";
 
-export type Sort =
-  | "release-date-desc"
-  | "release-date-asc"
-  | "title"
-  | "grade-asc"
-  | "grade-desc";
+export type Sort = "release-date-desc" | "release-date-asc" | "title";
 
 const SHOW_COUNT_DEFAULT = 100;
 
@@ -32,9 +26,6 @@ function sortItems(items: Queries.WatchlistTitleFragment[], sortOrder: Sort) {
     "release-date-asc": (a, b) =>
       sortString(a.releaseSequence, b.releaseSequence),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-    "grade-asc": (a, b) => sortNumber(a.gradeValue ?? 50, b.gradeValue ?? 50),
-    "grade-desc": (a, b) =>
-      sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
   };
 
   const comparer = sortMap[sortOrder];
@@ -49,10 +40,6 @@ function groupForItem(
     case "release-date-asc":
     case "release-date-desc": {
       return item.year.toString();
-    }
-    case "grade-asc":
-    case "grade-desc": {
-      return item.grade ?? "Unrated";
     }
     case "title": {
       const letter = item.sortTitle.substring(0, 1);
@@ -103,7 +90,6 @@ export enum ActionType {
   FILTER_COLLECTION = "FILTER_COLLECTION",
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
-  TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
 }
 
 interface FilterTitleAction {
@@ -145,10 +131,6 @@ interface ShowMoreAction {
   type: ActionType.SHOW_MORE;
 }
 
-interface ToggleReviewedAction {
-  type: ActionType.TOGGLE_REVIEWED;
-}
-
 export type Action =
   | FilterTitleAction
   | FilterDirectorAction
@@ -157,8 +139,7 @@ export type Action =
   | FilterCollectionAction
   | FilterReleaseYearAction
   | SortAction
-  | ShowMoreAction
-  | ToggleReviewedAction;
+  | ShowMoreAction;
 
 function clearFilter(
   value: string,
@@ -186,7 +167,6 @@ function clearFilter(
 export function reducer(state: State, action: Action): State {
   let filteredItems;
   let groupedItems;
-  let filters;
 
   switch (action.type) {
     case ActionType.FILTER_TITLE: {
@@ -262,25 +242,7 @@ export function reducer(state: State, action: Action): State {
         showCount,
       };
     }
-    case ActionType.TOGGLE_REVIEWED: {
-      if (state.hideReviewed) {
-        filters = {
-          ...state.filters,
-        };
-        delete filters.reviewed;
-      } else {
-        filters = {
-          ...state.filters,
-          reviewed: (item: Queries.WatchlistTitleFragment) => {
-            return item.slug === null;
-          },
-        };
-      }
-      return {
-        ...applyFilters(filters, state),
-        hideReviewed: !state.hideReviewed,
-      };
-    }
+
     // no default
   }
 }

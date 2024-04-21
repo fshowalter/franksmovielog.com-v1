@@ -28,10 +28,6 @@ function YearLink({
   currentYear: string;
   linkFunc: (y: string) => string;
 }): JSX.Element | null {
-  if (year === "all") {
-    return null;
-  }
-
   if (year === currentYear) {
     return (
       <Box as="li" display="block">

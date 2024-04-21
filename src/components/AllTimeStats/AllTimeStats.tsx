@@ -44,10 +44,6 @@ export function AllTimeStats({
             <StatsNavigation
               currentYear={"all"}
               linkFunc={(year: string) => {
-                if (year === "all") {
-                  return "/viewings/stats/";
-                }
-
                 return `/viewings/stats/${year}/`;
               }}
               years={statYears}

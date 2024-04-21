@@ -13,7 +13,7 @@ describe("/watchlist/collections/{slug}", () => {
   it("sets page title", () => {
     render(<Head data={data} />);
 
-    expect(document.title).toStrictEqual("Hammer Films");
+    expect(document.title).toStrictEqual("Shaw Brothers");
   });
 
   it("can filter by title", async () => {
@@ -100,8 +100,8 @@ describe("/watchlist/collections/{slug}", () => {
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    await userEvent.selectOptions(fromInput, "1960");
-    await userEvent.selectOptions(toInput, "1966");
+    await userEvent.selectOptions(fromInput, "1970");
+    await userEvent.selectOptions(toInput, "1980");
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });
@@ -123,6 +123,16 @@ describe("/watchlist/collections/{slug}", () => {
 
     await userEvent.click(screen.getByText("Hide Reviewed"));
     await userEvent.click(screen.getByText("Show Reviewed"));
+
+    expect(screen.getByTestId("poster-list")).toMatchSnapshot();
+  });
+
+  it("can show more titles", async () => {
+    expect.hasAssertions();
+
+    render(<CollectionTemplate data={data} />);
+
+    await userEvent.click(screen.getByText("Show More..."));
 
     expect(screen.getByTestId("poster-list")).toMatchSnapshot();
   });

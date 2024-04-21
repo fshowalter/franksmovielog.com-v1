@@ -32,6 +32,10 @@
     {
       "matchPackageNames": ["@typescript-eslint/*"],
       "groupName": "@typescript/eslint"
+    },
+    {
+      "matchPackageNames": ["@testing-library/*"],
+      "groupName": "@testing-library"
     }
   ],
   "configMigration": true
