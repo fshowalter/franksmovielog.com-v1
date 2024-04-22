@@ -11,10 +11,12 @@
 
 # watchlist to  cast-and-crew
 /browse/reviews /reviews 301
-/wachlist/performers/* /cast-and-crew/:splat 301
-/wachlist/directors/* /cast-and-crew/:splat 301
-/wachlist/writers/* /cast-and-crew/:splat 301
-/wachlist/collections/* /collections/:splat 301
+/browse/* /cast-and-crew/:splat 301
+/watchlist/cast/* /cast-and-crew/:splat 301
+/watchlist/performers/* /cast-and-crew/:splat 301
+/watchlist/directors/* /cast-and-crew/:splat 301
+/watchlist/writers/* /cast-and-crew/:splat 301
+/watchlist/collections/* /collections/:splat 301
 
 # old review links to new
 /browse/reviews/* /reviews/:splat 301
