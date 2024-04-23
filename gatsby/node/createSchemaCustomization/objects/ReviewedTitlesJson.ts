@@ -118,6 +118,26 @@ export const ReviewedTitleMoreCastAndCrewMember = {
   },
 };
 
+export const ReviewedTitleCastAndCrewMember = {
+  name: SchemaNames.ReviewedTitleCastAndCrewMember,
+  fields: {
+    name: "String!",
+    slug: "String!",
+    creditedAs: "[String!]!",
+    avatar: avatarFieldResolver,
+  },
+};
+
+export const ReviewedTitleCollection = {
+  name: SchemaNames.ReviewedTitleCollection,
+  fields: {
+    name: "String!",
+    slug: "String!",
+    creditedAs: "[String!]!",
+    avatar: avatarFieldResolver,
+  },
+};
+
 export const ReviewedTitleMoreCollection = {
   name: SchemaNames.ReviewedTitleMoreCollection,
   fields: {
@@ -125,15 +145,6 @@ export const ReviewedTitleMoreCollection = {
     slug: "String!",
     titles: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
     avatar: avatarFieldResolver,
-  },
-};
-
-export const ReviewedTitleMore = {
-  name: SchemaNames.ReviewedTitleMore,
-  fields: {
-    castAndCrew: `[${SchemaNames.ReviewedTitleMoreCastAndCrewMember}!]!`,
-    collections: `[${SchemaNames.ReviewedTitleMoreCollection}!]!`,
-    reviews: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
   },
 };
 
@@ -165,9 +176,13 @@ export const ReviewedTitlesJson = {
     title: "String!",
     year: "String!",
     viewings: `[${SchemaNames.ReviewedTitleViewing}!]!`,
-    more: `${SchemaNames.ReviewedTitleMore}!`,
     poster: posterFieldResolver,
     still: stillFieldResolver,
+    castAndCrew: `[${SchemaNames.ReviewedTitleCastAndCrewMember}!]!`,
+    collections: `[${SchemaNames.ReviewedTitleCollection}!]!`,
+    moreCastAndCrew: `[${SchemaNames.ReviewedTitleMoreCastAndCrewMember}!]!`,
+    moreCollections: `[${SchemaNames.ReviewedTitleMoreCollection}!]!`,
+    moreReviews: `[${SchemaNames.ReviewedTitleMoreTitle}!]!`,
     review: {
       type: `${SchemaNames.MarkdownRemark}!`,
       resolve: async (
