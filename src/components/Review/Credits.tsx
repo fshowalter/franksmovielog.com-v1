@@ -83,7 +83,7 @@ export function Credits({ review, ...rest }: ICreditsProps): JSX.Element {
         />
       </Box>
       <Spacer axis="vertical" size={32} />
-      <Chips chips={review.more} />
+      <Chips chips={review} />
       <Spacer axis="vertical" size={32} />
       <Box
         as="a"
@@ -146,8 +146,6 @@ export const query = graphql`
         )
       }
     }
-    more {
-      ...ReviewChips
-    }
+    ...ReviewChips
   }
 `;

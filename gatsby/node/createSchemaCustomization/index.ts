@@ -18,7 +18,8 @@ import {
 import { MostWatchedTitle } from "./objects/MostWatchedTitle";
 import { OverratedDisappointmentsJson } from "./objects/OverratedDisappointmentsJson";
 import {
-  ReviewedTitleMore,
+  ReviewedTitleCastAndCrewMember,
+  ReviewedTitleCollection,
   ReviewedTitleMoreCastAndCrewMember,
   ReviewedTitleMoreCollection,
   ReviewedTitleMoreTitle,
@@ -60,7 +61,8 @@ export function createSchemaCustomization({
     schema.buildObjectType(ReviewedTitleMoreTitle),
     schema.buildObjectType(ReviewedTitleMoreCastAndCrewMember),
     schema.buildObjectType(ReviewedTitleMoreCollection),
-    schema.buildObjectType(ReviewedTitleMore),
+    schema.buildObjectType(ReviewedTitleCastAndCrewMember),
+    schema.buildObjectType(ReviewedTitleCollection),
     schema.buildObjectType(ReviewedTitlesJson),
     schema.buildObjectType(CollectionTitle),
     schema.buildObjectType(CollectionsJson),

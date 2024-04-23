@@ -18,7 +18,7 @@ export function MoreReviews({ review, ...rest }: IMoreMoviesProps) {
       paddingTop={{ default: 0, tablet: 32 }}
       paddingBottom={{ default: 0, tablet: 128 }}
     >
-      {review.more.castAndCrew.map((castAndCrewMember) => (
+      {review.moreCastAndCrew.map((castAndCrewMember) => (
         <MoreReviewsList
           key={castAndCrewMember.slug}
           leadText={leadTextForCreditKind(castAndCrewMember.creditKind)}
@@ -28,7 +28,7 @@ export function MoreReviews({ review, ...rest }: IMoreMoviesProps) {
         />
       ))}
 
-      {review.more.collections.map((collection) => (
+      {review.moreCollections.map((collection) => (
         <MoreReviewsList
           key={collection.slug}
           leadText="More"
@@ -42,7 +42,7 @@ export function MoreReviews({ review, ...rest }: IMoreMoviesProps) {
         leadText="More"
         linkText="Reviews"
         linkTarget="/reviews/"
-        reviews={review.more.reviews}
+        reviews={review.moreReviews}
       />
     </Box>
   );
@@ -111,16 +111,14 @@ export const query = graphql`
   }
 
   fragment MoreReviews on ReviewedTitlesJson {
-    more {
-      castAndCrew {
-        ...MoreReviewsCastAndCrewMember
-      }
-      collections {
-        ...MoreReviewsCollection
-      }
-      reviews {
-        ...StillListMovie
-      }
+    moreCastAndCrew {
+      ...MoreReviewsCastAndCrewMember
+    }
+    moreCollections {
+      ...MoreReviewsCollection
+    }
+    moreReviews {
+      ...StillListMovie
     }
   }
 `;

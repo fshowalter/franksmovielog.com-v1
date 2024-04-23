@@ -79,7 +79,7 @@ function Chip({
 }
 
 export const query = graphql`
-  fragment CollectionChip on ReviewedTitleMoreCollection {
+  fragment CollectionChip on ReviewedTitleCollection {
     name
     slug
     avatar {
@@ -96,7 +96,7 @@ export const query = graphql`
     }
   }
 
-  fragment CastAndCrewChip on ReviewedTitleMoreCastAndCrewMember {
+  fragment CastAndCrewChip on ReviewedTitleCastAndCrewMember {
     name
     slug
     avatar {
@@ -113,7 +113,7 @@ export const query = graphql`
     }
   }
 
-  fragment ReviewChips on ReviewedTitleMore {
+  fragment ReviewChips on ReviewedTitlesJson {
     castAndCrew {
       ...CastAndCrewChip
     }
