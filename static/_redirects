@@ -9,20 +9,20 @@
 # sitemap 
 /sitemap.xml /sitemap-index.xml 301
 
-# watchlist to  cast-and-crew
+# old review links to new
 /browse/reviews /reviews 301
+/browse/reviews/* /reviews/:splat 301
+/movies/* /reviews/:splat 301
+/reviews/murder-to-the-tune-of-the-seven-black-notes-1977 /reviews/the-psychic-1977 301
+/reviews/dune-2021 /reviews/dune-part-one-2021 301
+
+# watchlist to cast-and-crew
 /browse/* /cast-and-crew/:splat 301
 /watchlist/cast/* /cast-and-crew/:splat 301
 /watchlist/performers/* /cast-and-crew/:splat 301
 /watchlist/directors/* /cast-and-crew/:splat 301
 /watchlist/writers/* /cast-and-crew/:splat 301
 /watchlist/collections/* /collections/:splat 301
-
-# old review links to new
-/browse/reviews/* /reviews/:splat 301
-/movies/* /reviews/:splat 301
-/reviews/murder-to-the-tune-of-the-seven-black-notes-1977 /reviews/the-psychic-1977 301
-/reviews/dune-2021 /reviews/dune-part-one-2021 301
 
 # misc spam
 */wlwmanifest.xml /gone 410
