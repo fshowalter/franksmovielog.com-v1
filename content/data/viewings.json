@@ -2110,7 +2110,7 @@
     "medium": "TCM HD",
     "venue": null,
     "year": "1972",
-    "slug": null,
+    "slug": "horror-express-1972",
     "genres": [
       "Adventure",
       "Horror",
@@ -3343,7 +3343,7 @@
     "viewingDate": "2012-07-08",
     "title": "Vertigo",
     "sortTitle": "Vertigo (1958)",
-    "medium": null,
+    "medium": "70mm",
     "venue": "AFI Silver",
     "year": "1958",
     "slug": null,
@@ -3360,7 +3360,7 @@
     "viewingDate": "2012-07-08",
     "title": "Fright Night",
     "sortTitle": "Fright Night (1985)",
-    "medium": null,
+    "medium": "35mm",
     "venue": "AFI Silver",
     "year": "1985",
     "slug": "fright-night-1985",
@@ -3410,7 +3410,7 @@
     "viewingDate": "2012-07-14",
     "title": "Commando",
     "sortTitle": "Commando (1985)",
-    "medium": null,
+    "medium": "35mm",
     "venue": "AFI Silver",
     "year": "1985",
     "slug": null,
@@ -8499,7 +8499,7 @@
     "viewingDate": "2015-06-23",
     "title": "The Beyond",
     "sortTitle": "Beyond (1981)",
-    "medium": null,
+    "medium": "35mm",
     "venue": "Alamo Drafthouse Cinema - Winchester",
     "year": "1981",
     "slug": null,
@@ -8970,7 +8970,7 @@
     "viewingDate": "2015-11-05",
     "title": "The Beyond",
     "sortTitle": "Beyond (1981)",
-    "medium": null,
+    "medium": "35mm",
     "venue": "AFI Silver",
     "year": "1981",
     "slug": null,
@@ -9053,7 +9053,7 @@
     "viewingDate": "2015-12-29",
     "title": "The Hateful Eight",
     "sortTitle": "Hateful Eight (2015)",
-    "medium": null,
+    "medium": "70mm",
     "venue": "AFI Silver",
     "year": "2015",
     "slug": null,
@@ -13064,7 +13064,7 @@
     "viewingDate": "2019-08-22",
     "title": "Once Upon a Time... in Hollywood",
     "sortTitle": "Once Upon a Time... in Hollywood (2019)",
-    "medium": null,
+    "medium": "35mm",
     "venue": "AFI Silver",
     "year": "2019",
     "slug": null,
@@ -13270,7 +13270,7 @@
     "viewingDate": "2019-10-14",
     "title": "Joker",
     "sortTitle": "Joker (2019)",
-    "medium": null,
+    "medium": "70mm",
     "venue": "AFI Silver",
     "year": "2019",
     "slug": null,
@@ -26606,7 +26606,7 @@
     "viewingDate": "2024-03-27",
     "title": "Magnolia",
     "sortTitle": "Magnolia (1999)",
-    "medium": null,
+    "medium": "35mm",
     "venue": "Prince Charles Cinema",
     "year": "1999",
     "slug": null,
@@ -26679,5 +26679,108 @@
       "Thriller"
     ],
     "releaseSequence": "1978-09-01tt0077402"
+  },
+  {
+    "sequence": 1584,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-24",
+    "title": "Ninja in the Dragon's Den",
+    "sortTitle": "Ninja in the Dragon's Den (1982)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1982",
+    "slug": "ninja-in-the-dragons-den-1982",
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "releaseSequence": "1982-04-17tt0084267"
+  },
+  {
+    "sequence": 1585,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-24",
+    "title": "Human Lanterns",
+    "sortTitle": "Human Lanterns (1982)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1982",
+    "slug": "human-lanterns-1982",
+    "genres": [
+      "Horror",
+      "Action"
+    ],
+    "releaseSequence": "1982-07-14tt0084586"
+  },
+  {
+    "sequence": 1586,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-27",
+    "title": "Night Train to Terror",
+    "sortTitle": "Night Train to Terror (1985)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "1985",
+    "slug": "night-train-to-terror-1985",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "releaseSequence": "1985-02-22tt0087798"
+  },
+  {
+    "sequence": 1587,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-27",
+    "title": "Horror Express",
+    "sortTitle": "Horror Express (1972)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "1972",
+    "slug": "horror-express-1972",
+    "genres": [
+      "Adventure",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "releaseSequence": "1972-09-30tt0068713"
+  },
+  {
+    "sequence": 1588,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-27",
+    "title": "The Midnight Meat Train",
+    "sortTitle": "Midnight Meat Train (2008)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "2008",
+    "slug": "the-midnight-meat-train-2008",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "releaseSequence": "2008-05-16tt0805570"
+  },
+  {
+    "sequence": 1589,
+    "viewingYear": "2024",
+    "viewingDate": "2024-04-27",
+    "title": "Beyond the Door III",
+    "sortTitle": "Beyond the Door III (1989)",
+    "medium": null,
+    "venue": "Alamo Drafthouse Cinema - One Loudoun",
+    "year": "1989",
+    "slug": "beyond-the-door-iii-1989",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Horror"
+    ],
+    "releaseSequence": "1989-10-01tt0096920"
   }
 ]

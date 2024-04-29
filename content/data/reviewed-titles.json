@@ -23,10 +23,10 @@
       "Billy Wilder"
     ],
     "writerNames": [
-      "Claude-Andr\u00e9 Puget",
       "Jan Lustig",
+      "Max Kolp\u00e9",
       "Billy Wilder",
-      "Max Kolp\u00e9"
+      "Claude-Andr\u00e9 Puget"
     ],
     "principalCastNames": [
       "Danielle Darrieux",
@@ -492,10 +492,10 @@
       "John Ford"
     ],
     "writerNames": [
+      "I.A.R. Wylie",
       "Philip Klein",
-      "Dudley Nichols",
       "Barry Conners",
-      "I.A.R. Wylie"
+      "Dudley Nichols"
     ],
     "principalCastNames": [
       "Henrietta Crosman",
@@ -660,10 +660,10 @@
       "David P. Smith"
     ],
     "writerNames": [
-      "Elizabeth Tippet",
       "Wallace Wolodarsky",
       "Maya Forbes",
       "Glenn Berger",
+      "Elizabeth Tippet",
       "Jonathan Aibel"
     ],
     "principalCastNames": [
@@ -862,8 +862,8 @@
       "Douglas Cheek"
     ],
     "writerNames": [
-      "Parnell Hall",
-      "Shepard Abbott"
+      "Shepard Abbott",
+      "Parnell Hall"
     ],
     "principalCastNames": [
       "John Heard",
@@ -957,12 +957,12 @@
       "James Whale"
     ],
     "writerNames": [
-      "Mary Shelley",
-      "Garrett Fort",
       "Francis Edward Faragoh",
       "Richard Schayer",
       "John L. Balderston",
-      "Peggy Webling"
+      "Mary Shelley",
+      "Peggy Webling",
+      "Garrett Fort"
     ],
     "principalCastNames": [
       "Colin Clive",
@@ -1133,10 +1133,10 @@
       "Stuart Gordon"
     ],
     "writerNames": [
-      "Brian Yuzna",
-      "H.P. Lovecraft",
+      "Stuart Gordon",
       "Dennis Paoli",
-      "Stuart Gordon"
+      "Brian Yuzna",
+      "H.P. Lovecraft"
     ],
     "principalCastNames": [
       "Jeffrey Combs",
@@ -1706,10 +1706,10 @@
       "Lloyd Bacon"
     ],
     "writerNames": [
-      "Robert Buckner",
-      "Warren Duff",
       "Edward E. Paramore Jr.",
-      "Wally Kline"
+      "Warren Duff",
+      "Wally Kline",
+      "Robert Buckner"
     ],
     "principalCastNames": [
       "James Cagney",
@@ -1933,8 +1933,8 @@
       "Gavin Hood"
     ],
     "writerNames": [
-      "Skip Woods",
-      "David Benioff"
+      "David Benioff",
+      "Skip Woods"
     ],
     "principalCastNames": [
       "Hugh Jackman",
@@ -2033,8 +2033,8 @@
       "Mark Mylod"
     ],
     "writerNames": [
-      "Seth Reiss",
-      "Will Tracy"
+      "Will Tracy",
+      "Seth Reiss"
     ],
     "principalCastNames": [
       "Ralph Fiennes",
@@ -2202,6 +2202,173 @@
     ]
   },
   {
+    "imdbId": "tt0805570",
+    "title": "The Midnight Meat Train",
+    "year": "2008",
+    "slug": "the-midnight-meat-train-2008",
+    "grade": "D",
+    "countries": [
+      "United States",
+      "United Kingdom"
+    ],
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "sortTitle": "Midnight Meat Train (2008)",
+    "originalTitle": null,
+    "gradeValue": 3,
+    "runtimeMinutes": 100,
+    "releaseSequence": "2008-05-16tt0805570",
+    "directorNames": [
+      "Ry\u00fbhei Kitamura"
+    ],
+    "writerNames": [
+      "Jeff Buhler",
+      "Clive Barker"
+    ],
+    "principalCastNames": [
+      "Bradley Cooper",
+      "Leslie Bibb",
+      "Brooke Shields",
+      "Vinnie Jones"
+    ],
+    "reviewDate": "2024-04-27",
+    "reviewYear": "2024",
+    "sequence": "2024-04-27-1588",
+    "viewings": [
+      {
+        "sequence": 1588,
+        "medium": null,
+        "mediumNotes": null,
+        "date": "2024-04-27",
+        "venue": "Alamo Drafthouse Cinema - One Loudoun",
+        "venueNotes": "Railway to Hell Mystery Marathon"
+      }
+    ],
+    "castAndCrew": [
+      {
+        "name": "Clive Barker",
+        "slug": "clive-barker",
+        "creditedAs": [
+          "writer"
+        ]
+      }
+    ],
+    "collections": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Clive Barker",
+        "slug": "clive-barker",
+        "creditKind": "writer",
+        "titles": [
+          {
+            "title": "Hellraiser",
+            "imdbId": "tt0093177",
+            "year": "1987",
+            "slug": "hellraiser-1987",
+            "grade": "A",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Hellbound: Hellraiser II",
+            "imdbId": "tt0095294",
+            "year": "1988",
+            "slug": "hellbound-hellraiser-ii-1988",
+            "grade": "C",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Underworld",
+            "imdbId": "tt0090233",
+            "year": "1985",
+            "slug": "underworld-1985",
+            "grade": "D-",
+            "genres": [
+              "Action",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Rawhead Rex",
+            "imdbId": "tt0091829",
+            "year": "1986",
+            "slug": "rawhead-rex-1986",
+            "grade": "D",
+            "genres": [
+              "Fantasy",
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          }
+        ]
+      }
+    ],
+    "moreCollections": [],
+    "moreReviews": [
+      {
+        "title": "Messiah of Evil",
+        "imdbId": "tt0071396",
+        "year": "1974",
+        "slug": "messiah-of-evil-1973",
+        "grade": "C+",
+        "genres": [
+          "Horror"
+        ]
+      },
+      {
+        "title": "Midnight",
+        "imdbId": "tt0025499",
+        "year": "1934",
+        "slug": "midnight-1934",
+        "grade": "F",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Film-Noir",
+          "Romance"
+        ]
+      },
+      {
+        "title": "Mortal Kombat",
+        "imdbId": "tt0293429",
+        "year": "2021",
+        "slug": "mortal-kombat-2021",
+        "grade": "B-",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Mortal Kombat Legends: Battle of the Realms",
+        "imdbId": "tt14901058",
+        "year": "2021",
+        "slug": "mortal-kombat-legends-battle-of-the-realms-2021",
+        "grade": "B-",
+        "genres": [
+          "Animation",
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ]
+      }
+    ]
+  },
+  {
     "imdbId": "tt0241687",
     "title": "Loving Memory",
     "year": "1970",
@@ -2361,16 +2528,15 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Midnight",
-        "imdbId": "tt0025499",
-        "year": "1934",
-        "slug": "midnight-1934",
-        "grade": "F",
+        "title": "The Midnight Meat Train",
+        "imdbId": "tt0805570",
+        "year": "2008",
+        "slug": "the-midnight-meat-train-2008",
+        "grade": "D",
         "genres": [
-          "Crime",
-          "Drama",
-          "Film-Noir",
-          "Romance"
+          "Horror",
+          "Mystery",
+          "Thriller"
         ]
       },
       {
@@ -2440,8 +2606,8 @@
       "Jacques Tourneur"
     ],
     "writerNames": [
-      "Hal E. Chester",
       "Charles Bennett",
+      "Hal E. Chester",
       "M.R. James"
     ],
     "principalCastNames": [
@@ -2856,8 +3022,8 @@
       "Scott Spiegel"
     ],
     "writerNames": [
-      "Lawrence Bender",
-      "Scott Spiegel"
+      "Scott Spiegel",
+      "Lawrence Bender"
     ],
     "principalCastNames": [
       "Liz Kern",
@@ -3061,8 +3227,8 @@
       "Beth B"
     ],
     "writerNames": [
-      "Beth B",
-      "Tom Robinson"
+      "Tom Robinson",
+      "Beth B"
     ],
     "principalCastNames": [
       "Stephen McHattie",
@@ -3273,9 +3439,9 @@
       "Jay Oliva"
     ],
     "writerNames": [
+      "Klaus Janson",
       "Frank Miller",
-      "Bob Goodman",
-      "Klaus Janson"
+      "Bob Goodman"
     ],
     "principalCastNames": [
       "Peter Weller",
@@ -3491,9 +3657,9 @@
       "Sam Wood"
     ],
     "writerNames": [
-      "Thornton Wilder",
+      "Frank Craven",
       "Harry Chandlee",
-      "Frank Craven"
+      "Thornton Wilder"
     ],
     "principalCastNames": [
       "William Holden",
@@ -3663,8 +3829,8 @@
       "Matthew McManus"
     ],
     "writerNames": [
-      "Matthew McManus",
-      "Kevin McManus"
+      "Kevin McManus",
+      "Matthew McManus"
     ],
     "principalCastNames": [
       "Chris Sheffield",
@@ -3762,10 +3928,10 @@
     ],
     "writerNames": [
       "David Hayter",
-      "Bryan Singer",
-      "Dan Harris",
       "Zak Penn",
-      "Michael Dougherty"
+      "Bryan Singer",
+      "Michael Dougherty",
+      "Dan Harris"
     ],
     "principalCastNames": [
       "Patrick Stewart",
@@ -3863,9 +4029,9 @@
       "John Frankenheimer"
     ],
     "writerNames": [
-      "Evan Hunter",
+      "Edward Anhalt",
       "J.P. Miller",
-      "Edward Anhalt"
+      "Evan Hunter"
     ],
     "principalCastNames": [
       "Burt Lancaster",
@@ -4283,8 +4449,8 @@
     ],
     "writerNames": [
       "Ladislas Fodor",
-      "Erwin Gelsey",
-      "Bertram Bloch"
+      "Bertram Bloch",
+      "Erwin Gelsey"
     ],
     "principalCastNames": [
       "William Powell",
@@ -4828,10 +4994,10 @@
       "John G. Adolfi"
     ],
     "writerNames": [
-      "Maude T. Howell",
+      "Gouverneur Morris",
       "Julien Josephson",
       "Jules Eckert Goodman",
-      "Gouverneur Morris"
+      "Maude T. Howell"
     ],
     "principalCastNames": [
       "George Arliss",
@@ -5147,8 +5313,8 @@
       "Dorothy Arzner"
     ],
     "writerNames": [
-      "Edwin Justus Mayer",
-      "Cleo Lucas"
+      "Cleo Lucas",
+      "Edwin Justus Mayer"
     ],
     "principalCastNames": [
       "Sylvia Sidney",
@@ -5309,8 +5475,8 @@
       "Guy Ritchie"
     ],
     "writerNames": [
-      "Kieran Mulroney",
-      "Michele Mulroney"
+      "Michele Mulroney",
+      "Kieran Mulroney"
     ],
     "principalCastNames": [
       "Robert Downey Jr.",
@@ -5404,8 +5570,8 @@
       "Howard Higgin"
     ],
     "writerNames": [
-      "Paul Gangelin",
       "Howard Higgin",
+      "Paul Gangelin",
       "B. Harrison Orkow"
     ],
     "principalCastNames": [
@@ -5778,8 +5944,8 @@
       "Tod Browning"
     ],
     "writerNames": [
-      "Francis Edward Faragoh",
-      "W.R. Burnett"
+      "W.R. Burnett",
+      "Francis Edward Faragoh"
     ],
     "principalCastNames": [
       "Lew Ayres",
@@ -5941,8 +6107,8 @@
       "Edward Ludwig"
     ],
     "writerNames": [
-      "Richard English",
       "Stephen Vincent Benet",
+      "Richard English",
       "James Edward Grant",
       "Eric Taylor"
     ],
@@ -6379,10 +6545,10 @@
       "Alexander Hall"
     ],
     "writerNames": [
-      "Michael Arlen",
       "Jacques Th\u00e9ry",
-      "Walter Reisch",
-      "Harry Kurnitz"
+      "Harry Kurnitz",
+      "Michael Arlen",
+      "Walter Reisch"
     ],
     "principalCastNames": [
       "William Powell",
@@ -6540,10 +6706,10 @@
       "Howard Hawks"
     ],
     "writerNames": [
-      "Dan Totheroh",
-      "Howard Hawks",
+      "John Monk Saunders",
       "Seton I. Miller",
-      "John Monk Saunders"
+      "Howard Hawks",
+      "Dan Totheroh"
     ],
     "principalCastNames": [
       "Richard Barthelmess",
@@ -6817,10 +6983,10 @@
       "Bryan Forbes"
     ],
     "writerNames": [
-      "Lloyd Osbourne",
       "Robert Louis Stevenson",
-      "Burt Shevelove",
-      "Larry Gelbart"
+      "Larry Gelbart",
+      "Lloyd Osbourne",
+      "Burt Shevelove"
     ],
     "principalCastNames": [
       "John Mills",
@@ -7478,9 +7644,9 @@
       "Lars Klevberg"
     ],
     "writerNames": [
+      "Tom Holland",
       "John Lafia",
       "Don Mancini",
-      "Tom Holland",
       "Tyler Burton Smith"
     ],
     "principalCastNames": [
@@ -8069,8 +8235,8 @@
       "Michael Cooney"
     ],
     "writerNames": [
-      "Jeremy Paige",
-      "Michael Cooney"
+      "Michael Cooney",
+      "Jeremy Paige"
     ],
     "principalCastNames": [
       "Scott MacDonald",
@@ -8392,8 +8558,8 @@
       "Stuart Gordon"
     ],
     "writerNames": [
-      "H.P. Lovecraft",
-      "Dennis Paoli"
+      "Dennis Paoli",
+      "H.P. Lovecraft"
     ],
     "principalCastNames": [
       "Ezra Godden",
@@ -8923,8 +9089,8 @@
       "Kathryn Bigelow"
     ],
     "writerNames": [
-      "W. Peter Iliff",
-      "Rick King"
+      "Rick King",
+      "W. Peter Iliff"
     ],
     "principalCastNames": [
       "Patrick Swayze",
@@ -9116,8 +9282,8 @@
       "George Mihalka"
     ],
     "writerNames": [
-      "Stephen A. Miller",
-      "John Beaird"
+      "John Beaird",
+      "Stephen A. Miller"
     ],
     "principalCastNames": [
       "Paul Kelman",
@@ -9501,8 +9667,8 @@
       "Steven Soderbergh"
     ],
     "writerNames": [
-      "Brian Koppelman",
-      "David Levien"
+      "David Levien",
+      "Brian Koppelman"
     ],
     "principalCastNames": [
       "George Clooney",
@@ -9601,8 +9767,8 @@
       "Josh Boone"
     ],
     "writerNames": [
-      "Knate Lee",
-      "Josh Boone"
+      "Josh Boone",
+      "Knate Lee"
     ],
     "principalCastNames": [
       "Maisie Williams",
@@ -9697,8 +9863,8 @@
     ],
     "writerNames": [
       "Margaret Oberman",
-      "Ava Ostern Fries",
-      "Pamela Norris"
+      "Pamela Norris",
+      "Ava Ostern Fries"
     ],
     "principalCastNames": [
       "Shelley Long",
@@ -9966,9 +10132,9 @@
       "Tom Holland"
     ],
     "writerNames": [
+      "Tom Holland",
       "John Lafia",
-      "Don Mancini",
-      "Tom Holland"
+      "Don Mancini"
     ],
     "principalCastNames": [
       "Catherine Hicks",
@@ -10564,9 +10730,9 @@
       "Jim Henson"
     ],
     "writerNames": [
-      "Terry Jones",
+      "Dennis Lee",
       "Jim Henson",
-      "Dennis Lee"
+      "Terry Jones"
     ],
     "principalCastNames": [
       "David Bowie",
@@ -10670,10 +10836,10 @@
       "Bruce Timm"
     ],
     "writerNames": [
-      "Martin Pasko",
       "Paul Dini",
-      "Bob Kane",
       "Alan Burnett",
+      "Martin Pasko",
+      "Bob Kane",
       "Michael Reaves"
     ],
     "principalCastNames": [
@@ -10777,9 +10943,9 @@
       "Ben Stiller"
     ],
     "writerNames": [
-      "Ben Stiller",
+      "Drake Sather",
       "John Hamburg",
-      "Drake Sather"
+      "Ben Stiller"
     ],
     "principalCastNames": [
       "Ben Stiller",
@@ -10981,9 +11147,9 @@
       "Lucio Fulci"
     ],
     "writerNames": [
-      "Andr\u00e9 Tranch\u00e9",
       "Jos\u00e9 Luis Mart\u00ednez Moll\u00e1",
       "Lucio Fulci",
+      "Andr\u00e9 Tranch\u00e9",
       "Roberto Gianviti"
     ],
     "principalCastNames": [
@@ -11146,8 +11312,8 @@
       "Lewis Teague"
     ],
     "writerNames": [
-      "Frank Ray Perilli",
-      "John Sayles"
+      "John Sayles",
+      "Frank Ray Perilli"
     ],
     "principalCastNames": [
       "Robert Forster",
@@ -11239,8 +11405,8 @@
       "Don Siegel"
     ],
     "writerNames": [
-      "Richard Carr",
-      "Robert Pirosh"
+      "Robert Pirosh",
+      "Richard Carr"
     ],
     "principalCastNames": [
       "Steve McQueen",
@@ -11564,6 +11730,19 @@
             ]
           },
           {
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
+            "year": "1972",
+            "slug": "horror-express-1972",
+            "grade": "D+",
+            "genres": [
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
+            ]
+          },
+          {
             "title": "And Now the Screaming Starts!",
             "imdbId": "tt0069715",
             "year": "1973",
@@ -11571,19 +11750,6 @@
             "grade": "D+",
             "genres": [
               "Horror"
-            ]
-          },
-          {
-            "title": "Star Wars: Episode IV - A New Hope",
-            "imdbId": "tt0076759",
-            "year": "1977",
-            "slug": "star-wars-episode-iv-a-new-hope-1977",
-            "grade": "C",
-            "genres": [
-              "Action",
-              "Adventure",
-              "Fantasy",
-              "Sci-Fi"
             ]
           }
         ]
@@ -11771,8 +11937,8 @@
       "Anatole Litvak"
     ],
     "writerNames": [
-      "Jacques Viot",
-      "John Wexley"
+      "John Wexley",
+      "Jacques Viot"
     ],
     "principalCastNames": [
       "Henry Fonda",
@@ -12122,9 +12288,9 @@
       "Alfred E. Green"
     ],
     "writerNames": [
-      "Denise Robins",
       "J. Grubb Alexander",
-      "Roland Pertwee"
+      "Roland Pertwee",
+      "Denise Robins"
     ],
     "principalCastNames": [
       "William Powell",
@@ -12658,9 +12824,9 @@
       "Stuart Heisler"
     ],
     "writerNames": [
+      "Liam O'Brien",
       "Vince Evans",
-      "Lester Cole",
-      "Liam O'Brien"
+      "Lester Cole"
     ],
     "principalCastNames": [
       "Humphrey Bogart",
@@ -13152,9 +13318,9 @@
       "James Wan"
     ],
     "writerNames": [
-      "Ingrid Bisu",
       "Akela Cooper",
-      "James Wan"
+      "James Wan",
+      "Ingrid Bisu"
     ],
     "principalCastNames": [
       "Annabelle Wallis",
@@ -13252,9 +13418,9 @@
       "Darren Lynn Bousman"
     ],
     "writerNames": [
-      "Thomas Fenton",
       "Marcus Dunstan",
-      "Patrick Melton"
+      "Patrick Melton",
+      "Thomas Fenton"
     ],
     "principalCastNames": [
       "Tobin Bell",
@@ -13686,8 +13852,8 @@
     ],
     "writerNames": [
       "Brian De Palma",
-      "Cynthia Munroe",
-      "Wilford Leach"
+      "Wilford Leach",
+      "Cynthia Munroe"
     ],
     "principalCastNames": [
       "Valda Setterfield",
@@ -13849,8 +14015,8 @@
     ],
     "writerNames": [
       "Mick Garris",
-      "Neil Cuthbert",
-      "David Kirschner"
+      "David Kirschner",
+      "Neil Cuthbert"
     ],
     "principalCastNames": [
       "Bette Midler",
@@ -14277,10 +14443,10 @@
       "Cary Joji Fukunaga"
     ],
     "writerNames": [
-      "Phoebe Waller-Bridge",
+      "Robert Wade",
       "Cary Joji Fukunaga",
-      "Neal Purvis",
-      "Robert Wade"
+      "Phoebe Waller-Bridge",
+      "Neal Purvis"
     ],
     "principalCastNames": [
       "Daniel Craig",
@@ -14367,16 +14533,6 @@
     ],
     "moreReviews": [
       {
-        "title": "A Nightmare on Elm Street",
-        "imdbId": "tt0087800",
-        "year": "1984",
-        "slug": "a-nightmare-on-elm-street-1984",
-        "grade": "B",
-        "genres": [
-          "Horror"
-        ]
-      },
-      {
         "title": "A Nightmare on Elm Street 2: Freddy's Revenge",
         "imdbId": "tt0089686",
         "year": "1985",
@@ -14384,6 +14540,17 @@
         "grade": "F",
         "genres": [
           "Horror"
+        ]
+      },
+      {
+        "title": "Ninja in the Dragon's Den",
+        "imdbId": "tt0084267",
+        "year": "1982",
+        "slug": "ninja-in-the-dragons-den-1982",
+        "grade": "B",
+        "genres": [
+          "Action",
+          "Comedy"
         ]
       },
       {
@@ -14435,10 +14602,10 @@
       "Alfred E. Green"
     ],
     "writerNames": [
-      "Joseph Jackson",
-      "John Bright",
+      "Lucien Hubbard",
       "Kubec Glasmon",
-      "Lucien Hubbard"
+      "Joseph Jackson",
+      "John Bright"
     ],
     "principalCastNames": [
       "Edward G. Robinson",
@@ -14711,9 +14878,9 @@
       "Lewis Seiler"
     ],
     "writerNames": [
+      "George Bricker",
       "W.R. Burnett",
-      "Vincent Sherman",
-      "George Bricker"
+      "Vincent Sherman"
     ],
     "principalCastNames": [
       "Humphrey Bogart",
@@ -14977,8 +15144,8 @@
       "Chris Columbus"
     ],
     "writerNames": [
-      "Steve Kloves",
-      "J.K. Rowling"
+      "J.K. Rowling",
+      "Steve Kloves"
     ],
     "principalCastNames": [
       "Daniel Radcliffe",
@@ -15073,9 +15240,9 @@
     "releaseSequence": "1929-09-01tt0020359",
     "directorNames": [],
     "writerNames": [
-      "James Kevin McGuinness",
+      "John Stone",
       "Tristram Tupper",
-      "John Stone"
+      "James Kevin McGuinness"
     ],
     "principalCastNames": [
       "George O'Brien",
@@ -15239,10 +15406,10 @@
       "Jonas \u00c5kerlund"
     ],
     "writerNames": [
-      "Jonas \u00c5kerlund",
-      "Didrik S\u00f8derlind",
+      "Michael Moynihan",
       "Dennis Magnusson",
-      "Michael Moynihan"
+      "Jonas \u00c5kerlund",
+      "Didrik S\u00f8derlind"
     ],
     "principalCastNames": [
       "Rory Culkin",
@@ -15554,8 +15721,8 @@
       "Robert Aldrich"
     ],
     "writerNames": [
-      "Leon Uris",
-      "A.I. Bezzerides"
+      "A.I. Bezzerides",
+      "Leon Uris"
     ],
     "principalCastNames": [
       "Robert Mitchum",
@@ -15710,8 +15877,8 @@
       "Terence Fisher"
     ],
     "writerNames": [
-      "Dennis Wheatley",
-      "Richard Matheson"
+      "Richard Matheson",
+      "Dennis Wheatley"
     ],
     "principalCastNames": [
       "Christopher Lee",
@@ -16426,8 +16593,8 @@
       "Jorge Grau"
     ],
     "writerNames": [
-      "Marcello Coscia",
-      "Sandro Continenza"
+      "Sandro Continenza",
+      "Marcello Coscia"
     ],
     "principalCastNames": [
       "Cristina Galb\u00f3",
@@ -17020,10 +17187,10 @@
       "Ulli Lommel"
     ],
     "writerNames": [
-      "Spencer Compton",
-      "Tom Sullivan",
       "Ulli Lommel",
-      "Victor Bockris"
+      "Spencer Compton",
+      "Victor Bockris",
+      "Tom Sullivan"
     ],
     "principalCastNames": [
       "Jack Palance",
@@ -17126,8 +17293,8 @@
     ],
     "writerNames": [
       "Rhett Reese",
-      "Ryan Reynolds",
-      "Paul Wernick"
+      "Paul Wernick",
+      "Ryan Reynolds"
     ],
     "principalCastNames": [
       "Ryan Reynolds",
@@ -17237,10 +17404,10 @@
       "David Gordon Green"
     ],
     "writerNames": [
-      "Chris Bernier",
-      "Danny McBride",
       "Paul Brad Logan",
-      "David Gordon Green"
+      "Danny McBride",
+      "David Gordon Green",
+      "Chris Bernier"
     ],
     "principalCastNames": [
       "Jamie Lee Curtis",
@@ -17393,10 +17560,10 @@
       "Scott Cooper"
     ],
     "writerNames": [
-      "Mark Mallouk",
+      "Gerard O'Neill",
       "Jez Butterworth",
       "Dick Lehr",
-      "Gerard O'Neill"
+      "Mark Mallouk"
     ],
     "principalCastNames": [
       "Johnny Depp",
@@ -17495,9 +17662,9 @@
       "Don Siegel"
     ],
     "writerNames": [
+      "Daniel Mainwaring",
       "Richard Wormser",
-      "Gerald Drayson Adams",
-      "Daniel Mainwaring"
+      "Gerald Drayson Adams"
     ],
     "principalCastNames": [
       "Robert Mitchum",
@@ -17673,8 +17840,8 @@
     ],
     "writerNames": [
       "Enzo Gallo",
-      "Giulio Berruti",
-      "Alberto Tarallo"
+      "Alberto Tarallo",
+      "Giulio Berruti"
     ],
     "principalCastNames": [
       "Anita Ekberg",
@@ -17782,8 +17949,8 @@
       "Robert Milton"
     ],
     "writerNames": [
-      "W. Somerset Maugham",
-      "Doris Anderson"
+      "Doris Anderson",
+      "W. Somerset Maugham"
     ],
     "principalCastNames": [
       "Ruth Chatterton",
@@ -18357,7 +18524,7 @@
       },
       {
         "sequence": 199,
-        "medium": null,
+        "medium": "35mm",
         "mediumNotes": null,
         "date": "2012-07-08",
         "venue": "AFI Silver",
@@ -18369,7 +18536,7 @@
         "mediumNotes": null,
         "date": "2012-07-07",
         "venue": "AFI Silver",
-        "venueNotes": null
+        "venueNotes": "35mm"
       },
       {
         "sequence": 48,
@@ -18792,6 +18959,19 @@
         ]
       },
       {
+        "title": "Horror Express",
+        "imdbId": "tt0068713",
+        "year": "1972",
+        "slug": "horror-express-1972",
+        "grade": "D+",
+        "genres": [
+          "Adventure",
+          "Horror",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
         "title": "Horror of Dracula",
         "imdbId": "tt0051554",
         "year": "1958",
@@ -18800,20 +18980,6 @@
         "genres": [
           "Drama",
           "Horror"
-        ]
-      },
-      {
-        "title": "The House That Dripped Blood",
-        "imdbId": "tt0065854",
-        "year": "1971",
-        "slug": "the-house-that-dripped-blood-1971",
-        "grade": "C+",
-        "genres": [
-          "Drama",
-          "Fantasy",
-          "Horror",
-          "Mystery",
-          "Thriller"
         ]
       }
     ]
@@ -18954,9 +19120,9 @@
       "Ben Wheatley"
     ],
     "writerNames": [
+      "Amy Jump",
       "Steve Oram",
-      "Alice Lowe",
-      "Amy Jump"
+      "Alice Lowe"
     ],
     "principalCastNames": [
       "Alice Lowe",
@@ -19363,12 +19529,12 @@
       "Sergio Corbucci"
     ],
     "writerNames": [
-      "Bruno Corbucci",
       "Sergio Corbucci",
-      "Lewis E. Ciannelli",
-      "John Davis Hart",
+      "Mario Amendola",
       "Vittoriano Petrilli",
-      "Mario Amendola"
+      "Bruno Corbucci",
+      "Lewis E. Ciannelli",
+      "John Davis Hart"
     ],
     "principalCastNames": [
       "Jean-Louis Trintignant",
@@ -19554,8 +19720,8 @@
       "Cheh Chang"
     ],
     "writerNames": [
-      "Cheh Chang",
-      "Kuang Ni"
+      "Kuang Ni",
+      "Cheh Chang"
     ],
     "principalCastNames": [
       "Kuan Tai Chen",
@@ -19626,13 +19792,14 @@
             ]
           },
           {
-            "title": "The Boxer's Omen",
-            "imdbId": "tt0085951",
-            "year": "1983",
-            "slug": "the-boxers-omen-1983",
-            "grade": "B",
+            "title": "Human Lanterns",
+            "imdbId": "tt0084586",
+            "year": "1982",
+            "slug": "human-lanterns-1982",
+            "grade": "C",
             "genres": [
-              "Horror"
+              "Horror",
+              "Action"
             ]
           }
         ]
@@ -19709,10 +19876,10 @@
       "Archie Mayo"
     ],
     "writerNames": [
-      "David Boehm",
+      "Beulah Marie Dix",
       "Erwin Gelsey",
       "Bertram Millhauser",
-      "Beulah Marie Dix"
+      "David Boehm"
     ],
     "principalCastNames": [
       "Douglas Fairbanks Jr.",
@@ -19875,8 +20042,8 @@
       "Niels Arden Oplev"
     ],
     "writerNames": [
-      "Nikolaj Arcel",
       "Stieg Larsson",
+      "Nikolaj Arcel",
       "Rasmus Heisterberg"
     ],
     "principalCastNames": [
@@ -19985,9 +20152,9 @@
       "A. Edward Sutherland"
     ],
     "writerNames": [
+      "John V.A. Weaver",
       "Charles Brackett",
-      "Florence Ryerson",
-      "John V.A. Weaver"
+      "Florence Ryerson"
     ],
     "principalCastNames": [
       "William Powell",
@@ -20144,8 +20311,8 @@
     ],
     "writerNames": [
       "Scott Teems",
-      "David Gordon Green",
-      "Danny McBride"
+      "Danny McBride",
+      "David Gordon Green"
     ],
     "principalCastNames": [
       "Jamie Lee Curtis",
@@ -20160,7 +20327,7 @@
       {
         "sequence": 1262,
         "medium": "4k UHD Blu-ray",
-        "mediumNotes": "Universal Studios, 2022",
+        "mediumNotes": "\"Extended Cut\", Universal Studios, 2022",
         "date": "2022-03-03",
         "venue": null,
         "venueNotes": null
@@ -20571,9 +20738,9 @@
       "John Ford"
     ],
     "writerNames": [
-      "Sonya Levien",
       "Maude Fulton",
-      "S.N. Behrman"
+      "S.N. Behrman",
+      "Sonya Levien"
     ],
     "principalCastNames": [
       "Sally O'Neil",
@@ -20942,8 +21109,8 @@
       "Cheh Chang"
     ],
     "writerNames": [
-      "Cheh Chang",
-      "Kuang Ni"
+      "Kuang Ni",
+      "Cheh Chang"
     ],
     "principalCastNames": [
       "Tien-Chi Cheng",
@@ -21001,6 +21168,17 @@
             ]
           },
           {
+            "title": "Human Lanterns",
+            "imdbId": "tt0084586",
+            "year": "1982",
+            "slug": "human-lanterns-1982",
+            "grade": "C",
+            "genres": [
+              "Horror",
+              "Action"
+            ]
+          },
+          {
             "title": "The Boxer's Omen",
             "imdbId": "tt0085951",
             "year": "1983",
@@ -21008,17 +21186,6 @@
             "grade": "B",
             "genres": [
               "Horror"
-            ]
-          },
-          {
-            "title": "The Eight Diagram Pole Fighter",
-            "imdbId": "tt0086606",
-            "year": "1984",
-            "slug": "the-eight-diagram-pole-fighter-1984",
-            "grade": "D+",
-            "genres": [
-              "Action",
-              "Drama"
             ]
           }
         ]
@@ -21302,11 +21469,11 @@
       "Michael Curtiz"
     ],
     "writerNames": [
-      "Howard Koch",
+      "Julius J. Epstein",
       "Joan Alison",
       "Murray Burnett",
-      "Julius J. Epstein",
-      "Philip G. Epstein"
+      "Philip G. Epstein",
+      "Howard Koch"
     ],
     "principalCastNames": [
       "Humphrey Bogart",
@@ -21474,8 +21641,8 @@
       "Michele Soavi"
     ],
     "writerNames": [
-      "Sheila Goldberg",
-      "George Eastman"
+      "George Eastman",
+      "Sheila Goldberg"
     ],
     "principalCastNames": [
       "David Brandon",
@@ -21684,9 +21851,9 @@
       "Mario Bava"
     ],
     "writerNames": [
-      "Luciano Martino",
+      "Ugo Guerra",
       "Ernesto Gastaldi",
-      "Ugo Guerra"
+      "Luciano Martino"
     ],
     "principalCastNames": [
       "Daliah Lavi",
@@ -22179,9 +22346,9 @@
       "John Sturges"
     ],
     "writerNames": [
+      "Alex Gottlieb",
       "Maxwell Shane",
       "Malcolm Stuart Boylan",
-      "Alex Gottlieb",
       "Edward Bock"
     ],
     "principalCastNames": [
@@ -22459,9 +22626,9 @@
       "Stuart Gordon"
     ],
     "writerNames": [
-      "H.P. Lovecraft",
       "Dennis Paoli",
-      "Stuart Gordon"
+      "Stuart Gordon",
+      "H.P. Lovecraft"
     ],
     "principalCastNames": [
       "Jeffrey Combs",
@@ -22721,8 +22888,8 @@
       "Jack Hill"
     ],
     "writerNames": [
-      "John Prizer",
       "F.X. Maier",
+      "John Prizer",
       "Jack Hill"
     ],
     "principalCastNames": [
@@ -22820,9 +22987,9 @@
       "Rob Zombie"
     ],
     "writerNames": [
-      "Debra Hill",
       "Rob Zombie",
-      "John Carpenter"
+      "John Carpenter",
+      "Debra Hill"
     ],
     "principalCastNames": [
       "Malcolm McDowell",
@@ -23251,9 +23418,9 @@
       "James Mangold"
     ],
     "writerNames": [
-      "Scott Frank",
       "Michael Green",
-      "James Mangold"
+      "James Mangold",
+      "Scott Frank"
     ],
     "principalCastNames": [
       "Hugh Jackman",
@@ -23554,8 +23721,8 @@
       "James Wan"
     ],
     "writerNames": [
-      "James Wan",
-      "Leigh Whannell"
+      "Leigh Whannell",
+      "James Wan"
     ],
     "principalCastNames": [
       "Leigh Whannell",
@@ -23708,9 +23875,9 @@
       "Remi Weekes"
     ],
     "writerNames": [
-      "Felicity Evans",
+      "Remi Weekes",
       "Toby Venables",
-      "Remi Weekes"
+      "Felicity Evans"
     ],
     "principalCastNames": [
       "Sope Dirisu",
@@ -23925,9 +24092,9 @@
       "Pieter Van Hees"
     ],
     "writerNames": [
-      "Dimitri Karakatsanis",
+      "Pieter Van Hees",
       "Christophe Dirickx",
-      "Pieter Van Hees"
+      "Dimitri Karakatsanis"
     ],
     "principalCastNames": [
       "Eline Kuppens",
@@ -24457,8 +24624,8 @@
     ],
     "writerNames": [
       "Stig Frode Henriksen",
-      "Tommy Wirkola",
-      "Geir Vegar Hoel"
+      "Geir Vegar Hoel",
+      "Tommy Wirkola"
     ],
     "principalCastNames": [
       "Geir Vegar Hoel",
@@ -24681,8 +24848,8 @@
       "Rowland V. Lee"
     ],
     "writerNames": [
-      "Jack Cunningham",
       "Jo Milward",
+      "Jack Cunningham",
       "J. Kirby Hawks"
     ],
     "principalCastNames": [
@@ -24843,10 +25010,10 @@
       "Lew Landers"
     ],
     "writerNames": [
-      "Robert B. Hunt",
-      "Hal Fimberg",
       "Edwin Blum",
-      "Paul Gangelin"
+      "Robert B. Hunt",
+      "Paul Gangelin",
+      "Hal Fimberg"
     ],
     "principalCastNames": [
       "Boris Karloff",
@@ -25209,8 +25376,8 @@
       "Richard Donner"
     ],
     "writerNames": [
-      "Mario Puzo",
       "David Newman",
+      "Mario Puzo",
       "Leslie Newman"
     ],
     "principalCastNames": [
@@ -25680,8 +25847,8 @@
     ],
     "writerNames": [
       "A.I. Bezzerides",
-      "Richard Macaulay",
-      "Jerry Wald"
+      "Jerry Wald",
+      "Richard Macaulay"
     ],
     "principalCastNames": [
       "George Raft",
@@ -25853,8 +26020,8 @@
     "writerNames": [
       "Renato Izzo",
       "Ettore Sanz\u00f2",
-      "Roberto Infascelli",
-      "Aldo Lado"
+      "Aldo Lado",
+      "Roberto Infascelli"
     ],
     "principalCastNames": [
       "Flavio Bucci",
@@ -25932,6 +26099,156 @@
     ]
   },
   {
+    "imdbId": "tt0084586",
+    "title": "Human Lanterns",
+    "year": "1982",
+    "slug": "human-lanterns-1982",
+    "grade": "C",
+    "countries": [
+      "Hong Kong"
+    ],
+    "genres": [
+      "Horror",
+      "Action"
+    ],
+    "sortTitle": "Human Lanterns (1982)",
+    "originalTitle": "Ren pi deng long",
+    "gradeValue": 6,
+    "runtimeMinutes": 99,
+    "releaseSequence": "1982-07-14tt0084586",
+    "directorNames": [
+      "Chung Sun"
+    ],
+    "writerNames": [
+      "Chung Sun",
+      "Kuang Ni"
+    ],
+    "principalCastNames": [
+      "Tony Liu",
+      "Kuan Tai Chen",
+      "Lieh Lo",
+      "Ni Tien"
+    ],
+    "reviewDate": "2024-04-24",
+    "reviewYear": "2024",
+    "sequence": "2024-04-24-1585",
+    "viewings": [
+      {
+        "sequence": 1585,
+        "medium": "Blu-ray",
+        "mediumNotes": "88 Films, 2022",
+        "date": "2024-04-24",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "castAndCrew": [],
+    "collections": [
+      {
+        "name": "Shaw Brothers",
+        "slug": "shaw-brothers"
+      }
+    ],
+    "moreCastAndCrew": [],
+    "moreCollections": [
+      {
+        "name": "Shaw Brothers",
+        "slug": "shaw-brothers",
+        "titles": [
+          {
+            "title": "Crippled Avengers",
+            "imdbId": "tt0077292",
+            "year": "1978",
+            "slug": "crippled-avengers-1978",
+            "grade": "C+",
+            "genres": [
+              "Action",
+              "Drama"
+            ]
+          },
+          {
+            "title": "Five Elements Ninjas",
+            "imdbId": "tt0084921",
+            "year": "1982",
+            "slug": "five-elements-ninjas-1982",
+            "grade": "C+",
+            "genres": [
+              "Action",
+              "Drama"
+            ]
+          },
+          {
+            "title": "The Boxer's Omen",
+            "imdbId": "tt0085951",
+            "year": "1983",
+            "slug": "the-boxers-omen-1983",
+            "grade": "B",
+            "genres": [
+              "Horror"
+            ]
+          },
+          {
+            "title": "The Eight Diagram Pole Fighter",
+            "imdbId": "tt0086606",
+            "year": "1984",
+            "slug": "the-eight-diagram-pole-fighter-1984",
+            "grade": "D+",
+            "genres": [
+              "Action",
+              "Drama"
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "The Howling",
+        "imdbId": "tt0082533",
+        "year": "1981",
+        "slug": "the-howling-1981",
+        "grade": "B",
+        "genres": [
+          "Horror"
+        ]
+      },
+      {
+        "title": "Howling II: ... Your Sister Is a Werewolf",
+        "imdbId": "tt0089308",
+        "year": "1985",
+        "slug": "howling-ii-your-sister-is-a-werewolf-1985",
+        "grade": "F",
+        "genres": [
+          "Horror",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "The Human Tornado",
+        "imdbId": "tt0074653",
+        "year": "1976",
+        "slug": "the-human-tornado-1976",
+        "grade": "C",
+        "genres": [
+          "Action",
+          "Comedy",
+          "Drama"
+        ]
+      },
+      {
+        "title": "Humanoids from the Deep",
+        "imdbId": "tt0080904",
+        "year": "1980",
+        "slug": "humanoids-from-the-deep-1980",
+        "grade": "B-",
+        "genres": [
+          "Horror",
+          "Sci-Fi"
+        ]
+      }
+    ]
+  },
+  {
     "imdbId": "tt0032283",
     "title": "British Intelligence",
     "year": "1939",
@@ -25954,8 +26271,8 @@
       "Terry O. Morse"
     ],
     "writerNames": [
-      "Anthony Paul Kelly",
-      "Lee Katz"
+      "Lee Katz",
+      "Anthony Paul Kelly"
     ],
     "principalCastNames": [
       "Boris Karloff",
@@ -26124,8 +26441,8 @@
       "Hsueh-Li Pao"
     ],
     "writerNames": [
-      "Cheh Chang",
-      "Kuang Ni"
+      "Kuang Ni",
+      "Cheh Chang"
     ],
     "principalCastNames": [
       "Kuan Tai Chen",
@@ -26435,9 +26752,9 @@
       "Eddy Matalon"
     ],
     "writerNames": [
-      "Eddy Matalon",
+      "Myra Cl\u00e9ment",
       "Alain Sens-Cazenave",
-      "Myra Cl\u00e9ment"
+      "Eddy Matalon"
     ],
     "principalCastNames": [
       "Alan Scarfe",
@@ -26535,8 +26852,8 @@
       "Ingmar Bergman"
     ],
     "writerNames": [
-      "Gun Grut",
-      "Ingmar Bergman"
+      "Ingmar Bergman",
+      "Gun Grut"
     ],
     "principalCastNames": [
       "Anita Bj\u00f6rk",
@@ -26856,8 +27173,8 @@
       "Mervyn LeRoy"
     ],
     "writerNames": [
-      "Byron Morgan",
       "Louis Weitzenkorn",
+      "Byron Morgan",
       "Robert Lord"
     ],
     "principalCastNames": [
@@ -27019,8 +27336,8 @@
       "Roy Ward Baker"
     ],
     "writerNames": [
-      "Roger Marshall",
-      "David Case"
+      "David Case",
+      "Roger Marshall"
     ],
     "principalCastNames": [
       "Peter Cushing",
@@ -27058,16 +27375,6 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "I, Monster",
-            "imdbId": "tt0068727",
-            "year": "1971",
-            "slug": "i-monster-1971",
-            "grade": "D+",
-            "genres": [
-              "Horror"
-            ]
-          },
-          {
             "title": "Asylum",
             "imdbId": "tt0068230",
             "year": "1972",
@@ -27075,6 +27382,19 @@
             "grade": "D+",
             "genres": [
               "Horror"
+            ]
+          },
+          {
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
+            "year": "1972",
+            "slug": "horror-express-1972",
+            "grade": "D+",
+            "genres": [
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
             ]
           },
           {
@@ -27514,8 +27834,8 @@
       "Shin'ichir\u00f4 Ueda"
     ],
     "writerNames": [
-      "Ryoichi Wada",
-      "Shin'ichir\u00f4 Ueda"
+      "Shin'ichir\u00f4 Ueda",
+      "Ryoichi Wada"
     ],
     "principalCastNames": [
       "Takayuki Hamatsu",
@@ -27878,10 +28198,10 @@
       "Matthew Vaughn"
     ],
     "writerNames": [
-      "Jane Goldman",
       "Mark Millar",
       "Dave Gibbons",
-      "Matthew Vaughn"
+      "Matthew Vaughn",
+      "Jane Goldman"
     ],
     "principalCastNames": [
       "Adrian Quinton",
@@ -27979,8 +28299,8 @@
       "William Keighley"
     ],
     "writerNames": [
-      "Martin Mooney",
-      "Seton I. Miller"
+      "Seton I. Miller",
+      "Martin Mooney"
     ],
     "principalCastNames": [
       "Edward G. Robinson",
@@ -28307,8 +28627,8 @@
       "Edward Dmytryk"
     ],
     "writerNames": [
-      "John Paxton",
-      "Raymond Chandler"
+      "Raymond Chandler",
+      "John Paxton"
     ],
     "principalCastNames": [
       "Dick Powell",
@@ -28417,8 +28737,8 @@
       "Max Barbakow"
     ],
     "writerNames": [
-      "Andy Siara",
-      "Max Barbakow"
+      "Max Barbakow",
+      "Andy Siara"
     ],
     "principalCastNames": [
       "Andy Samberg",
@@ -28615,10 +28935,10 @@
       "Peyton Reed"
     ],
     "writerNames": [
+      "Paul Rudd",
       "Adam McKay",
-      "Joe Cornish",
       "Edgar Wright",
-      "Paul Rudd"
+      "Joe Cornish"
     ],
     "principalCastNames": [
       "Paul Rudd",
@@ -28729,8 +29049,8 @@
       "Fede Alvarez"
     ],
     "writerNames": [
-      "Rodo Sayagues",
-      "Fede Alvarez"
+      "Fede Alvarez",
+      "Rodo Sayagues"
     ],
     "principalCastNames": [
       "Stephen Lang",
@@ -28991,8 +29311,8 @@
       "Blake Edwards"
     ],
     "writerNames": [
-      "George Axelrod",
-      "Truman Capote"
+      "Truman Capote",
+      "George Axelrod"
     ],
     "principalCastNames": [
       "Audrey Hepburn",
@@ -29185,8 +29505,8 @@
       "Sion Sono"
     ],
     "writerNames": [
-      "Aaron Hendry",
-      "Reza Sixo Safai"
+      "Reza Sixo Safai",
+      "Aaron Hendry"
     ],
     "principalCastNames": [
       "Nicolas Cage",
@@ -29632,11 +29952,11 @@
       "Alfred Hitchcock"
     ],
     "writerNames": [
-      "Walter C. Mycroft",
-      "Alfred Hitchcock",
       "Helen Simpson",
+      "Walter C. Mycroft",
       "Alma Reville",
-      "Clemence Dane"
+      "Clemence Dane",
+      "Alfred Hitchcock"
     ],
     "principalCastNames": [
       "Herbert Marshall",
@@ -29907,8 +30227,8 @@
       "Michael Curtiz"
     ],
     "writerNames": [
-      "Harvey F. Thew",
       "Martin Brown",
+      "Harvey F. Thew",
       "J. Grubb Alexander"
     ],
     "principalCastNames": [
@@ -30006,10 +30326,10 @@
       "John Cromwell"
     ],
     "writerNames": [
-      "Howard Estabrook",
-      "Gerald Geraghty",
+      "Lenore J. Coffee",
       "Oliver H.P. Garrett",
-      "Lenore J. Coffee"
+      "Gerald Geraghty",
+      "Howard Estabrook"
     ],
     "principalCastNames": [
       "William Powell",
@@ -30336,9 +30656,9 @@
       "Ken Russell"
     ],
     "writerNames": [
+      "Ronald Cass",
       "Peter Brett",
       "Johnny Speight",
-      "Ronald Cass",
       "Peter Myers"
     ],
     "principalCastNames": [
@@ -30446,9 +30766,9 @@
       "David Gordon Green"
     ],
     "writerNames": [
+      "Danny McBride",
       "Jeff Fradley",
-      "David Gordon Green",
-      "Danny McBride"
+      "David Gordon Green"
     ],
     "principalCastNames": [
       "Jamie Lee Curtis",
@@ -30608,10 +30928,10 @@
       "Blake Edwards"
     ],
     "writerNames": [
+      "John D.F. Black",
       "Irving Ravetch",
       "Harriet Frank Jr.",
-      "Michael Crichton",
-      "John D.F. Black"
+      "Michael Crichton"
     ],
     "principalCastNames": [
       "James Coburn",
@@ -31943,8 +32263,8 @@
       "George Sidney"
     ],
     "writerNames": [
-      "Robert Ardrey",
-      "Alexandre Dumas"
+      "Alexandre Dumas",
+      "Robert Ardrey"
     ],
     "principalCastNames": [
       "Lana Turner",
@@ -32117,8 +32437,8 @@
       "Leo McCarey"
     ],
     "writerNames": [
-      "Bradley King",
-      "John Stone"
+      "John Stone",
+      "Bradley King"
     ],
     "principalCastNames": [
       "Frank Albertson",
@@ -32380,9 +32700,9 @@
       "Roman Polanski"
     ],
     "writerNames": [
+      "Roman Polanski",
       "Jakub Goldberg",
-      "Jerzy Skolimowski",
-      "Roman Polanski"
+      "Jerzy Skolimowski"
     ],
     "principalCastNames": [
       "Leon Niemczyk",
@@ -33022,7 +33342,7 @@
     "title": "Night Train to Terror",
     "year": "1985",
     "slug": "night-train-to-terror-1985",
-    "grade": "C-",
+    "grade": "C",
     "countries": [
       "United States"
     ],
@@ -33035,7 +33355,7 @@
     ],
     "sortTitle": "Night Train to Terror (1985)",
     "originalTitle": null,
-    "gradeValue": 5,
+    "gradeValue": 6,
     "runtimeMinutes": 98,
     "releaseSequence": "1985-02-22tt0087798",
     "directorNames": [
@@ -33054,10 +33374,18 @@
       "Stacey Lyons",
       "Linda Maderas"
     ],
-    "reviewDate": "2024-01-04",
+    "reviewDate": "2024-04-27",
     "reviewYear": "2024",
-    "sequence": "2024-01-04-1556",
+    "sequence": "2024-04-27-1586",
     "viewings": [
+      {
+        "sequence": 1586,
+        "medium": null,
+        "mediumNotes": null,
+        "date": "2024-04-27",
+        "venue": "Alamo Drafthouse Cinema - One Loudoun",
+        "venueNotes": "Railway to Hell Mystery Marathon"
+      },
       {
         "sequence": 1556,
         "medium": "Blu-ray",
@@ -33153,11 +33481,11 @@
       "Guy Ritchie"
     ],
     "writerNames": [
-      "Guy Ritchie",
+      "Nicolas Boukhrief",
       "Marn Davies",
-      "\u00c9ric Besnard",
       "Ivan Atkinson",
-      "Nicolas Boukhrief"
+      "Guy Ritchie",
+      "\u00c9ric Besnard"
     ],
     "principalCastNames": [
       "Jason Statham",
@@ -33520,8 +33848,8 @@
       "Frank Henenlotter"
     ],
     "writerNames": [
-      "Robert Martin",
-      "Frank Henenlotter"
+      "Frank Henenlotter",
+      "Robert Martin"
     ],
     "principalCastNames": [
       "James Lorinz",
@@ -33944,9 +34272,9 @@
       "James Whale"
     ],
     "writerNames": [
-      "Benn W. Levy",
       "Tom Reed",
-      "Robert E. Sherwood"
+      "Robert E. Sherwood",
+      "Benn W. Levy"
     ],
     "principalCastNames": [
       "Mae Clarke",
@@ -34105,8 +34433,8 @@
       "Sam Peckinpah"
     ],
     "writerNames": [
-      "Walter Hill",
-      "Jim Thompson"
+      "Jim Thompson",
+      "Walter Hill"
     ],
     "principalCastNames": [
       "Steve McQueen",
@@ -34994,9 +35322,9 @@
       "Frank McDonald"
     ],
     "writerNames": [
-      "William Jacobs",
       "Robert Hardy Andrews",
-      "W. Somerset Maugham"
+      "W. Somerset Maugham",
+      "William Jacobs"
     ],
     "principalCastNames": [
       "Humphrey Bogart",
@@ -35158,8 +35486,8 @@
     ],
     "writerNames": [
       "Michael Waldron",
-      "Stan Lee",
-      "Steve Ditko"
+      "Steve Ditko",
+      "Stan Lee"
     ],
     "principalCastNames": [
       "Benedict Cumberbatch",
@@ -35458,8 +35786,8 @@
       "Chia-Liang Liu"
     ],
     "writerNames": [
-      "Kuang Ni",
-      "Chia-Liang Liu"
+      "Chia-Liang Liu",
+      "Kuang Ni"
     ],
     "principalCastNames": [
       "Chia-Hui Liu",
@@ -35494,14 +35822,14 @@
         "slug": "shaw-brothers",
         "titles": [
           {
-            "title": "Five Elements Ninjas",
-            "imdbId": "tt0084921",
+            "title": "Human Lanterns",
+            "imdbId": "tt0084586",
             "year": "1982",
-            "slug": "five-elements-ninjas-1982",
-            "grade": "C+",
+            "slug": "human-lanterns-1982",
+            "grade": "C",
             "genres": [
-              "Action",
-              "Drama"
+              "Horror",
+              "Action"
             ]
           },
           {
@@ -35651,17 +35979,6 @@
         "slug": "shaw-brothers",
         "titles": [
           {
-            "title": "Crippled Avengers",
-            "imdbId": "tt0077292",
-            "year": "1978",
-            "slug": "crippled-avengers-1978",
-            "grade": "C+",
-            "genres": [
-              "Action",
-              "Drama"
-            ]
-          },
-          {
             "title": "Five Elements Ninjas",
             "imdbId": "tt0084921",
             "year": "1982",
@@ -35670,6 +35987,17 @@
             "genres": [
               "Action",
               "Drama"
+            ]
+          },
+          {
+            "title": "Human Lanterns",
+            "imdbId": "tt0084586",
+            "year": "1982",
+            "slug": "human-lanterns-1982",
+            "grade": "C",
+            "genres": [
+              "Horror",
+              "Action"
             ]
           },
           {
@@ -35773,8 +36101,8 @@
       "Brian Yuzna"
     ],
     "writerNames": [
-      "Zeph E. Daniel",
-      "Rick Fry"
+      "Rick Fry",
+      "Zeph E. Daniel"
     ],
     "principalCastNames": [
       "Billy Warlock",
@@ -36071,8 +36399,8 @@
       "Michael Curtiz"
     ],
     "writerNames": [
-      "Richard Tregaskis",
-      "Orin Jannings"
+      "Orin Jannings",
+      "Richard Tregaskis"
     ],
     "principalCastNames": [
       "William Holden",
@@ -36234,8 +36562,8 @@
       "Tony Randel"
     ],
     "writerNames": [
-      "Clive Barker",
-      "Peter Atkins"
+      "Peter Atkins",
+      "Clive Barker"
     ],
     "principalCastNames": [
       "Clare Higgins",
@@ -36266,7 +36594,64 @@
       }
     ],
     "collections": [],
-    "moreCastAndCrew": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Clive Barker",
+        "slug": "clive-barker",
+        "creditKind": "writer",
+        "titles": [
+          {
+            "title": "Rawhead Rex",
+            "imdbId": "tt0091829",
+            "year": "1986",
+            "slug": "rawhead-rex-1986",
+            "grade": "D",
+            "genres": [
+              "Fantasy",
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Hellraiser",
+            "imdbId": "tt0093177",
+            "year": "1987",
+            "slug": "hellraiser-1987",
+            "grade": "A",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "The Midnight Meat Train",
+            "imdbId": "tt0805570",
+            "year": "2008",
+            "slug": "the-midnight-meat-train-2008",
+            "grade": "D",
+            "genres": [
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Underworld",
+            "imdbId": "tt0090233",
+            "year": "1985",
+            "slug": "underworld-1985",
+            "grade": "D-",
+            "genres": [
+              "Action",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
+            ]
+          }
+        ]
+      }
+    ],
     "moreCollections": [],
     "moreReviews": [
       {
@@ -36341,9 +36726,9 @@
       "Panos Cosmatos"
     ],
     "writerNames": [
+      "Panos Cosmatos",
       "Aaron Stewart-Ahn",
-      "Casper Kelly",
-      "Panos Cosmatos"
+      "Casper Kelly"
     ],
     "principalCastNames": [
       "Nicolas Cage",
@@ -36476,9 +36861,9 @@
       "Richard Stanley"
     ],
     "writerNames": [
+      "Scarlett Amaris",
       "Richard Stanley",
-      "H.P. Lovecraft",
-      "Scarlett Amaris"
+      "H.P. Lovecraft"
     ],
     "principalCastNames": [
       "Nicolas Cage",
@@ -36759,6 +37144,230 @@
     ]
   },
   {
+    "imdbId": "tt0068713",
+    "title": "Horror Express",
+    "year": "1972",
+    "slug": "horror-express-1972",
+    "grade": "D+",
+    "countries": [
+      "Spain",
+      "United Kingdom"
+    ],
+    "genres": [
+      "Adventure",
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "sortTitle": "Horror Express (1972)",
+    "originalTitle": "P\u00e1nico en el Transiberiano",
+    "gradeValue": 4,
+    "runtimeMinutes": 88,
+    "releaseSequence": "1972-09-30tt0068713",
+    "directorNames": [
+      "Eugenio Mart\u00edn"
+    ],
+    "writerNames": [
+      "Julian Zimet",
+      "Arnaud d'Usseau"
+    ],
+    "principalCastNames": [
+      "Christopher Lee",
+      "Peter Cushing",
+      "Alberto de Mendoza",
+      "Telly Savalas"
+    ],
+    "reviewDate": "2024-04-27",
+    "reviewYear": "2024",
+    "sequence": "2024-04-27-1587",
+    "viewings": [
+      {
+        "sequence": 1587,
+        "medium": null,
+        "mediumNotes": null,
+        "date": "2024-04-27",
+        "venue": "Alamo Drafthouse Cinema - One Loudoun",
+        "venueNotes": "Railway to Hell Mystery Marathon"
+      },
+      {
+        "sequence": 125,
+        "medium": "TCM HD",
+        "mediumNotes": null,
+        "date": "2012-03-25",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "castAndCrew": [
+      {
+        "name": "Peter Cushing",
+        "slug": "peter-cushing",
+        "creditedAs": [
+          "performer"
+        ]
+      },
+      {
+        "name": "Christopher Lee",
+        "slug": "christopher-lee",
+        "creditedAs": [
+          "performer"
+        ]
+      }
+    ],
+    "collections": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Peter Cushing",
+        "slug": "peter-cushing",
+        "creditKind": "performer",
+        "titles": [
+          {
+            "title": "I, Monster",
+            "imdbId": "tt0068727",
+            "year": "1971",
+            "slug": "i-monster-1971",
+            "grade": "D+",
+            "genres": [
+              "Horror"
+            ]
+          },
+          {
+            "title": "Asylum",
+            "imdbId": "tt0068230",
+            "year": "1972",
+            "slug": "asylum-1972",
+            "grade": "D+",
+            "genres": [
+              "Horror"
+            ]
+          },
+          {
+            "title": "And Now the Screaming Starts!",
+            "imdbId": "tt0069715",
+            "year": "1973",
+            "slug": "and-now-the-screaming-starts-1973",
+            "grade": "D+",
+            "genres": [
+              "Horror"
+            ]
+          },
+          {
+            "title": "Star Wars: Episode IV - A New Hope",
+            "imdbId": "tt0076759",
+            "year": "1977",
+            "slug": "star-wars-episode-iv-a-new-hope-1977",
+            "grade": "C",
+            "genres": [
+              "Action",
+              "Adventure",
+              "Fantasy",
+              "Sci-Fi"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Christopher Lee",
+        "slug": "christopher-lee",
+        "creditKind": "performer",
+        "titles": [
+          {
+            "title": "I, Monster",
+            "imdbId": "tt0068727",
+            "year": "1971",
+            "slug": "i-monster-1971",
+            "grade": "D+",
+            "genres": [
+              "Horror"
+            ]
+          },
+          {
+            "title": "Hannie Caulder",
+            "imdbId": "tt0068675",
+            "year": "1971",
+            "slug": "hannie-caulder-1971",
+            "grade": "B",
+            "genres": [
+              "Crime",
+              "Drama",
+              "Western"
+            ]
+          },
+          {
+            "title": "To the Devil a Daughter",
+            "imdbId": "tt0075334",
+            "year": "1976",
+            "slug": "to-the-devil-a-daughter-1976",
+            "grade": "D+",
+            "genres": [
+              "Horror"
+            ]
+          },
+          {
+            "title": "Howling II: ... Your Sister Is a Werewolf",
+            "imdbId": "tt0089308",
+            "year": "1985",
+            "slug": "howling-ii-your-sister-is-a-werewolf-1985",
+            "grade": "F",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          }
+        ]
+      }
+    ],
+    "moreCollections": [],
+    "moreReviews": [
+      {
+        "title": "The Hoodlum Saint",
+        "imdbId": "tt0038615",
+        "year": "1946",
+        "slug": "the-hoodlum-saint-1946",
+        "grade": "D",
+        "genres": [
+          "Drama",
+          "Music"
+        ]
+      },
+      {
+        "title": "Hoppy Serves a Writ",
+        "imdbId": "tt0036016",
+        "year": "1943",
+        "slug": "hoppy-serves-a-writ-1943",
+        "grade": "D",
+        "genres": [
+          "Western"
+        ]
+      },
+      {
+        "title": "Horror of Dracula",
+        "imdbId": "tt0051554",
+        "year": "1958",
+        "slug": "horror-of-dracula-1958",
+        "grade": "A-",
+        "genres": [
+          "Drama",
+          "Horror"
+        ]
+      },
+      {
+        "title": "The House That Dripped Blood",
+        "imdbId": "tt0065854",
+        "year": "1971",
+        "slug": "the-house-that-dripped-blood-1971",
+        "grade": "C+",
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Horror",
+          "Mystery",
+          "Thriller"
+        ]
+      }
+    ]
+  },
+  {
     "imdbId": "tt0280707",
     "title": "Gosford Park",
     "year": "2001",
@@ -36784,8 +37393,8 @@
     ],
     "writerNames": [
       "Bob Balaban",
-      "Robert Altman",
-      "Julian Fellowes"
+      "Julian Fellowes",
+      "Robert Altman"
     ],
     "principalCastNames": [
       "Maggie Smith",
@@ -36890,10 +37499,10 @@
       "Curtis Bernhardt"
     ],
     "writerNames": [
-      "Arthur T. Horman",
-      "Dwight Taylor",
+      "Robert Siodmak",
       "Alfred Neumann",
-      "Robert Siodmak"
+      "Arthur T. Horman",
+      "Dwight Taylor"
     ],
     "principalCastNames": [
       "Humphrey Bogart",
@@ -37068,8 +37677,8 @@
       "James Ward Byrkit"
     ],
     "writerNames": [
-      "Alex Manugian",
-      "James Ward Byrkit"
+      "James Ward Byrkit",
+      "Alex Manugian"
     ],
     "principalCastNames": [
       "Emily Baldoni",
@@ -37171,9 +37780,9 @@
       "Irving Rapper"
     ],
     "writerNames": [
-      "Casey Robinson",
+      "Frank Cavett",
       "Emlyn Williams",
-      "Frank Cavett"
+      "Casey Robinson"
     ],
     "principalCastNames": [
       "Bette Davis",
@@ -37329,8 +37938,8 @@
       "Vernon Sewell"
     ],
     "writerNames": [
-      "Jerry Sohl",
       "Mervyn Haisman",
+      "Jerry Sohl",
       "Henry Lincoln"
     ],
     "principalCastNames": [
@@ -38369,15 +38978,14 @@
         ]
       },
       {
-        "title": "The Human Tornado",
-        "imdbId": "tt0074653",
-        "year": "1976",
-        "slug": "the-human-tornado-1976",
+        "title": "Human Lanterns",
+        "imdbId": "tt0084586",
+        "year": "1982",
+        "slug": "human-lanterns-1982",
         "grade": "C",
         "genres": [
-          "Action",
-          "Comedy",
-          "Drama"
+          "Horror",
+          "Action"
         ]
       }
     ]
@@ -38404,10 +39012,10 @@
       "John Ford"
     ],
     "writerNames": [
-      "James Kevin McGuinness",
-      "Dudley Nichols",
+      "Otis C. Freeman",
       "John Ford",
-      "Otis C. Freeman"
+      "Dudley Nichols",
+      "James Kevin McGuinness"
     ],
     "principalCastNames": [
       "Kenneth MacKenna",
@@ -38673,8 +39281,8 @@
       "Dennis Widmyer"
     ],
     "writerNames": [
-      "Kevin K\u00f6lsch",
-      "Dennis Widmyer"
+      "Dennis Widmyer",
+      "Kevin K\u00f6lsch"
     ],
     "principalCastNames": [
       "Alexandra Essoe",
@@ -38776,8 +39384,8 @@
       "Brett Ratner"
     ],
     "writerNames": [
-      "Zak Penn",
-      "Simon Kinberg"
+      "Simon Kinberg",
+      "Zak Penn"
     ],
     "principalCastNames": [
       "Hugh Jackman",
@@ -38876,8 +39484,8 @@
     ],
     "writerNames": [
       "Talbot Mundy",
-      "James Kevin McGuinness",
-      "John Stone"
+      "John Stone",
+      "James Kevin McGuinness"
     ],
     "principalCastNames": [
       "Victor McLaglen",
@@ -39663,8 +40271,8 @@
       "Wes Craven"
     ],
     "writerNames": [
-      "Diana Henstell",
-      "Bruce Joel Rubin"
+      "Bruce Joel Rubin",
+      "Diana Henstell"
     ],
     "principalCastNames": [
       "Matthew Labyorteaux",
@@ -40137,9 +40745,9 @@
       "Michael Dougherty"
     ],
     "writerNames": [
-      "Michael Dougherty",
+      "Zach Shields",
       "Todd Casey",
-      "Zach Shields"
+      "Michael Dougherty"
     ],
     "principalCastNames": [
       "Emjay Anthony",
@@ -40269,8 +40877,8 @@
       "Phil Karlson"
     ],
     "writerNames": [
-      "Joseph Carole",
-      "Harry Sauber"
+      "Harry Sauber",
+      "Joseph Carole"
     ],
     "principalCastNames": [
       "Adele Jergens",
@@ -40376,9 +40984,9 @@
       "Alfred L. Werker"
     ],
     "writerNames": [
-      "Albert DeMond",
+      "Eugene Ling",
       "Martin Berkeley",
-      "Eugene Ling"
+      "Albert DeMond"
     ],
     "principalCastNames": [
       "Vincent Price",
@@ -40541,8 +41149,8 @@
       "Rowdy Herrington"
     ],
     "writerNames": [
-      "R. Lance Hill",
-      "Hilary Henkin"
+      "Hilary Henkin",
+      "R. Lance Hill"
     ],
     "principalCastNames": [
       "Patrick Swayze",
@@ -41028,8 +41636,8 @@
     "directorNames": [],
     "writerNames": [
       "Dorothy Yost",
-      "John Howard Lawson",
-      "Bess Meredyth"
+      "Bess Meredyth",
+      "John Howard Lawson"
     ],
     "principalCastNames": [
       "Raquel Torres",
@@ -41201,8 +41809,8 @@
       "Brian De Palma"
     ],
     "writerNames": [
-      "Robert J. Avrech",
-      "Brian De Palma"
+      "Brian De Palma",
+      "Robert J. Avrech"
     ],
     "principalCastNames": [
       "Craig Wasson",
@@ -41365,9 +41973,9 @@
       "Alfred Hitchcock"
     ],
     "writerNames": [
+      "Charles Bennett",
       "Alfred Hitchcock",
-      "Benn W. Levy",
-      "Charles Bennett"
+      "Benn W. Levy"
     ],
     "principalCastNames": [
       "Anny Ondra",
@@ -41527,8 +42135,8 @@
       "Lloyd Bacon"
     ],
     "writerNames": [
-      "Abem Finkel",
-      "Robert Rossen"
+      "Robert Rossen",
+      "Abem Finkel"
     ],
     "principalCastNames": [
       "Bette Davis",
@@ -41841,8 +42449,8 @@
       "Robert Rossen"
     ],
     "writerNames": [
-      "J.R. Salamanca",
-      "Robert Rossen"
+      "Robert Rossen",
+      "J.R. Salamanca"
     ],
     "principalCastNames": [
       "Warren Beatty",
@@ -42104,9 +42712,9 @@
       "Kurtis Spieler"
     ],
     "writerNames": [
-      "John Liu",
       "Arthur Schweitzer",
-      "Kurtis Spieler"
+      "Kurtis Spieler",
+      "John Liu"
     ],
     "principalCastNames": [
       "Don Wilson",
@@ -42491,8 +43099,8 @@
       "George Pavlou"
     ],
     "writerNames": [
-      "Clive Barker",
-      "James Caplin"
+      "James Caplin",
+      "Clive Barker"
     ],
     "principalCastNames": [
       "Denholm Elliott",
@@ -42523,7 +43131,62 @@
       }
     ],
     "collections": [],
-    "moreCastAndCrew": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Clive Barker",
+        "slug": "clive-barker",
+        "creditKind": "writer",
+        "titles": [
+          {
+            "title": "Hellbound: Hellraiser II",
+            "imdbId": "tt0095294",
+            "year": "1988",
+            "slug": "hellbound-hellraiser-ii-1988",
+            "grade": "C",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "The Midnight Meat Train",
+            "imdbId": "tt0805570",
+            "year": "2008",
+            "slug": "the-midnight-meat-train-2008",
+            "grade": "D",
+            "genres": [
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Rawhead Rex",
+            "imdbId": "tt0091829",
+            "year": "1986",
+            "slug": "rawhead-rex-1986",
+            "grade": "D",
+            "genres": [
+              "Fantasy",
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Hellraiser",
+            "imdbId": "tt0093177",
+            "year": "1987",
+            "slug": "hellraiser-1987",
+            "grade": "A",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          }
+        ]
+      }
+    ],
     "moreCollections": [],
     "moreReviews": [
       {
@@ -42638,7 +43301,7 @@
         "imdbId": "tt0087798",
         "year": "1985",
         "slug": "night-train-to-terror-1985",
-        "grade": "C-",
+        "grade": "C",
         "genres": [
           "Drama",
           "Fantasy",
@@ -42704,8 +43367,8 @@
     ],
     "writerNames": [
       "Lily Hatvany",
-      "Fanny Hatton",
       "Frederic Hatton",
+      "Fanny Hatton",
       "Ernest Vajda"
     ],
     "principalCastNames": [
@@ -43198,8 +43861,8 @@
       "Ry\u00fbhei Kitamura"
     ],
     "writerNames": [
-      "Y\u00fbdai Yamaguchi",
-      "Ry\u00fbhei Kitamura"
+      "Ry\u00fbhei Kitamura",
+      "Y\u00fbdai Yamaguchi"
     ],
     "principalCastNames": [
       "Tak Sakaguchi",
@@ -43346,13 +44009,16 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "Asylum",
-            "imdbId": "tt0068230",
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
             "year": "1972",
-            "slug": "asylum-1972",
+            "slug": "horror-express-1972",
             "grade": "D+",
             "genres": [
-              "Horror"
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
             ]
           },
           {
@@ -43622,11 +44288,11 @@
       "Robert Florey"
     ],
     "writerNames": [
-      "John Huston",
       "Tom Reed",
-      "Robert Florey",
+      "Dale Van Every",
       "Edgar Allan Poe",
-      "Dale Van Every"
+      "Robert Florey",
+      "John Huston"
     ],
     "principalCastNames": [
       "Sidney Fox",
@@ -43809,9 +44475,9 @@
       "Lexi Alexander"
     ],
     "writerNames": [
-      "Matt Holloway",
       "Art Marcum",
-      "Nick Santora"
+      "Nick Santora",
+      "Matt Holloway"
     ],
     "principalCastNames": [
       "Ray Stevenson",
@@ -43910,8 +44576,8 @@
       "William A. Wellman"
     ],
     "writerNames": [
-      "Edna Ferber",
       "J. Grubb Alexander",
+      "Edna Ferber",
       "Robert Lord"
     ],
     "principalCastNames": [
@@ -44645,8 +45311,8 @@
     ],
     "writerNames": [
       "Lewis E. Lawes",
-      "Warren Duff",
-      "Jonathan Finn"
+      "Jonathan Finn",
+      "Warren Duff"
     ],
     "principalCastNames": [
       "George Raft",
@@ -44875,8 +45541,8 @@
       "Taika Waititi"
     ],
     "writerNames": [
-      "Jemaine Clement",
-      "Taika Waititi"
+      "Taika Waititi",
+      "Jemaine Clement"
     ],
     "principalCastNames": [
       "Jemaine Clement",
@@ -45129,8 +45795,8 @@
       "Zack Snyder"
     ],
     "writerNames": [
-      "David Hayter",
-      "Alex Tse"
+      "Alex Tse",
+      "David Hayter"
     ],
     "principalCastNames": [
       "Malin Akerman",
@@ -45228,8 +45894,8 @@
       "Ingmar Bergman"
     ],
     "writerNames": [
-      "Herbert Grevenius",
-      "Ingmar Bergman"
+      "Ingmar Bergman",
+      "Herbert Grevenius"
     ],
     "principalCastNames": [
       "Maj-Britt Nilsson",
@@ -45392,10 +46058,10 @@
       "Dario Argento"
     ],
     "writerNames": [
-      "Mario Foglietti",
-      "Giorgio Piferi",
       "Luigi Cozzi",
-      "Dario Argento"
+      "Giorgio Piferi",
+      "Dario Argento",
+      "Mario Foglietti"
     ],
     "principalCastNames": [
       "Michael Brandon",
@@ -45827,10 +46493,10 @@
       "Matt Reeves"
     ],
     "writerNames": [
-      "Matt Reeves",
-      "Peter Craig",
       "Bob Kane",
-      "Bill Finger"
+      "Bill Finger",
+      "Matt Reeves",
+      "Peter Craig"
     ],
     "principalCastNames": [
       "Robert Pattinson",
@@ -45933,8 +46599,8 @@
       "Raoul Walsh"
     ],
     "writerNames": [
-      "John Huston",
-      "W.R. Burnett"
+      "W.R. Burnett",
+      "John Huston"
     ],
     "principalCastNames": [
       "Ida Lupino",
@@ -46266,8 +46932,8 @@
       "John Grissmer"
     ],
     "writerNames": [
-      "John Grissmer",
-      "Joseph Weintraub"
+      "Joseph Weintraub",
+      "John Grissmer"
     ],
     "principalCastNames": [
       "Robert Lansing",
@@ -46364,8 +47030,8 @@
       "Barbara Peeters"
     ],
     "writerNames": [
-      "William Martin",
       "Frank Arnold",
+      "William Martin",
       "Martin B. Cohen"
     ],
     "principalCastNames": [
@@ -46393,14 +47059,14 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Howling II: ... Your Sister Is a Werewolf",
-        "imdbId": "tt0089308",
-        "year": "1985",
-        "slug": "howling-ii-your-sister-is-a-werewolf-1985",
-        "grade": "F",
+        "title": "Human Lanterns",
+        "imdbId": "tt0084586",
+        "year": "1982",
+        "slug": "human-lanterns-1982",
+        "grade": "C",
         "genres": [
           "Horror",
-          "Thriller"
+          "Action"
         ]
       },
       {
@@ -46469,10 +47135,10 @@
       "Martin Campbell"
     ],
     "writerNames": [
-      "Paul Haggis",
+      "Robert Wade",
       "Ian Fleming",
-      "Neal Purvis",
-      "Robert Wade"
+      "Paul Haggis",
+      "Neal Purvis"
     ],
     "principalCastNames": [
       "Daniel Craig",
@@ -46638,9 +47304,9 @@
       "Wes Craven"
     ],
     "writerNames": [
-      "Wes Craven",
+      "Glenn M. Benest",
       "Matthew Barr",
-      "Glenn M. Benest"
+      "Wes Craven"
     ],
     "principalCastNames": [
       "Maren Jensen",
@@ -46901,8 +47567,8 @@
     ],
     "writerNames": [
       "Fritz Lang",
-      "Norman Krasna",
-      "Bartlett Cormack"
+      "Bartlett Cormack",
+      "Norman Krasna"
     ],
     "principalCastNames": [
       "Sylvia Sidney",
@@ -47334,8 +48000,8 @@
       "John Cromwell"
     ],
     "writerNames": [
-      "Charles Furthman",
-      "Oliver H.P. Garrett"
+      "Oliver H.P. Garrett",
+      "Charles Furthman"
     ],
     "principalCastNames": [
       "William Powell",
@@ -47673,8 +48339,8 @@
       "Louis King"
     ],
     "writerNames": [
-      "W.R. Burnett",
       "Charles Bennett",
+      "W.R. Burnett",
       "James Edmiston",
       "Horace McCoy"
     ],
@@ -48647,8 +49313,8 @@
       "David Cronenberg"
     ],
     "writerNames": [
-      "Courtney Smith",
       "Alan Treen",
+      "Courtney Smith",
       "David Cronenberg",
       "Phil Savath"
     ],
@@ -48968,6 +49634,17 @@
         ]
       },
       {
+        "title": "Ninja in the Dragon's Den",
+        "imdbId": "tt0084267",
+        "year": "1982",
+        "slug": "ninja-in-the-dragons-den-1982",
+        "grade": "B",
+        "genres": [
+          "Action",
+          "Comedy"
+        ]
+      },
+      {
         "title": "No Time to Die",
         "imdbId": "tt2382320",
         "year": "2021",
@@ -48976,19 +49653,6 @@
         "genres": [
           "Action",
           "Adventure",
-          "Thriller"
-        ]
-      },
-      {
-        "title": "Nobody",
-        "imdbId": "tt7888964",
-        "year": "2021",
-        "slug": "nobody-2021",
-        "grade": "B+",
-        "genres": [
-          "Action",
-          "Crime",
-          "Drama",
           "Thriller"
         ]
       }
@@ -49173,8 +49837,8 @@
       "Zack Snyder"
     ],
     "writerNames": [
-      "David S. Goyer",
-      "Chris Terrio"
+      "Chris Terrio",
+      "David S. Goyer"
     ],
     "principalCastNames": [
       "Ben Affleck",
@@ -49393,10 +50057,10 @@
       "Tim Whelan"
     ],
     "writerNames": [
-      "Gladys Hurlbut",
       "Howard Harris",
-      "William Bowers",
+      "Gladys Hurlbut",
       "Jay Dratler",
+      "William Bowers",
       "Ralph Spence",
       "Joshua Logan"
     ],
@@ -49503,8 +50167,8 @@
       "Andrzej Zulawski"
     ],
     "writerNames": [
-      "Andrzej Zulawski",
-      "Frederic Tuten"
+      "Frederic Tuten",
+      "Andrzej Zulawski"
     ],
     "principalCastNames": [
       "Isabelle Adjani",
@@ -49623,8 +50287,8 @@
       "Bryan Singer"
     ],
     "writerNames": [
-      "Bryan Singer",
       "Tom DeSanto",
+      "Bryan Singer",
       "David Hayter"
     ],
     "principalCastNames": [
@@ -49886,8 +50550,8 @@
       "Dave Willis"
     ],
     "writerNames": [
-      "Matt Maiellaro",
-      "Dave Willis"
+      "Dave Willis",
+      "Matt Maiellaro"
     ],
     "principalCastNames": [
       "Dave Willis",
@@ -49960,6 +50624,102 @@
           "Fantasy",
           "Horror",
           "Mystery"
+        ]
+      }
+    ]
+  },
+  {
+    "imdbId": "tt0084267",
+    "title": "Ninja in the Dragon's Den",
+    "year": "1982",
+    "slug": "ninja-in-the-dragons-den-1982",
+    "grade": "B",
+    "countries": [
+      "Hong Kong",
+      "Japan"
+    ],
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "sortTitle": "Ninja in the Dragon's Den (1982)",
+    "originalTitle": "Long zhi ren zhe",
+    "gradeValue": 9,
+    "runtimeMinutes": 95,
+    "releaseSequence": "1982-04-17tt0084267",
+    "directorNames": [
+      "Corey Yuen"
+    ],
+    "writerNames": [
+      "See-Yuen Ng"
+    ],
+    "principalCastNames": [
+      "Hiroyuki Sanada",
+      "Conan Lee",
+      "Jeong-lee Hwang",
+      "Kaname Tsushima"
+    ],
+    "reviewDate": "2024-04-24",
+    "reviewYear": "2024",
+    "sequence": "2024-04-24-1584",
+    "viewings": [
+      {
+        "sequence": 1584,
+        "medium": "Blu-ray",
+        "mediumNotes": "_Ninja Kommando_, Ascot Elite Home Entertainment, 2014",
+        "date": "2024-04-24",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "castAndCrew": [],
+    "collections": [],
+    "moreCastAndCrew": [],
+    "moreCollections": [],
+    "moreReviews": [
+      {
+        "title": "A Nightmare on Elm Street",
+        "imdbId": "tt0087800",
+        "year": "1984",
+        "slug": "a-nightmare-on-elm-street-1984",
+        "grade": "B",
+        "genres": [
+          "Horror"
+        ]
+      },
+      {
+        "title": "A Nightmare on Elm Street 2: Freddy's Revenge",
+        "imdbId": "tt0089686",
+        "year": "1985",
+        "slug": "a-nightmare-on-elm-street-2-freddys-revenge-1985",
+        "grade": "F",
+        "genres": [
+          "Horror"
+        ]
+      },
+      {
+        "title": "No Time to Die",
+        "imdbId": "tt2382320",
+        "year": "2021",
+        "slug": "no-time-to-die-2021",
+        "grade": "D",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "Nobody",
+        "imdbId": "tt7888964",
+        "year": "2021",
+        "slug": "nobody-2021",
+        "grade": "B+",
+        "genres": [
+          "Action",
+          "Crime",
+          "Drama",
+          "Thriller"
         ]
       }
     ]
@@ -50554,8 +51314,8 @@
       "Ryan Coogler"
     ],
     "writerNames": [
-      "Ryan Coogler",
       "Joe Robert Cole",
+      "Ryan Coogler",
       "Jack Kirby"
     ],
     "principalCastNames": [
@@ -50663,8 +51423,8 @@
       "Karyn Kusama"
     ],
     "writerNames": [
-      "Phil Hay",
-      "Matt Manfredi"
+      "Matt Manfredi",
+      "Phil Hay"
     ],
     "principalCastNames": [
       "Logan Marshall-Green",
@@ -50969,16 +51729,6 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "The Howling",
-        "imdbId": "tt0082533",
-        "year": "1981",
-        "slug": "the-howling-1981",
-        "grade": "B",
-        "genres": [
-          "Horror"
-        ]
-      },
-      {
         "title": "Howling II: ... Your Sister Is a Werewolf",
         "imdbId": "tt0089308",
         "year": "1985",
@@ -50987,6 +51737,17 @@
         "genres": [
           "Horror",
           "Thriller"
+        ]
+      },
+      {
+        "title": "Human Lanterns",
+        "imdbId": "tt0084586",
+        "year": "1982",
+        "slug": "human-lanterns-1982",
+        "grade": "C",
+        "genres": [
+          "Horror",
+          "Action"
         ]
       },
       {
@@ -51135,9 +51896,9 @@
       "Tommy Wirkola"
     ],
     "writerNames": [
+      "John Niven",
       "Nick Ball",
-      "Tommy Wirkola",
-      "John Niven"
+      "Tommy Wirkola"
     ],
     "principalCastNames": [
       "Noomi Rapace",
@@ -51241,9 +52002,9 @@
       "Michael Apted"
     ],
     "writerNames": [
+      "Robert Wade",
       "Bruce Feirstein",
-      "Neal Purvis",
-      "Robert Wade"
+      "Neal Purvis"
     ],
     "principalCastNames": [
       "Pierce Brosnan",
@@ -51403,10 +52164,10 @@
     "writerNames": [
       "Seong-san Jeong",
       "Park Myeong-chan",
-      "Park Chan-wook",
-      "Mu-yeong Lee",
+      "Hyun-seok Kim",
       "Sang-yeon Park",
-      "Hyun-seok Kim"
+      "Mu-yeong Lee",
+      "Park Chan-wook"
     ],
     "principalCastNames": [
       "Lee Yeong-ae",
@@ -51504,9 +52265,9 @@
       "Burt Kennedy"
     ],
     "writerNames": [
+      "David Haft",
       "Burt Kennedy",
-      "Peter Cooper",
-      "David Haft"
+      "Peter Cooper"
     ],
     "principalCastNames": [
       "Raquel Welch",
@@ -51568,6 +52329,19 @@
             ]
           },
           {
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
+            "year": "1972",
+            "slug": "horror-express-1972",
+            "grade": "D+",
+            "genres": [
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
+            ]
+          },
+          {
             "title": "To the Devil a Daughter",
             "imdbId": "tt0075334",
             "year": "1976",
@@ -51575,17 +52349,6 @@
             "grade": "D+",
             "genres": [
               "Horror"
-            ]
-          },
-          {
-            "title": "Howling II: ... Your Sister Is a Werewolf",
-            "imdbId": "tt0089308",
-            "year": "1985",
-            "slug": "howling-ii-your-sister-is-a-werewolf-1985",
-            "grade": "F",
-            "genres": [
-              "Horror",
-              "Thriller"
             ]
           }
         ]
@@ -51684,7 +52447,7 @@
       {
         "sequence": 1277,
         "medium": "35mm",
-        "mediumNotes": "35mm",
+        "mediumNotes": null,
         "date": "2022-05-29",
         "venue": "Prince Charles Cinema",
         "venueNotes": null
@@ -51883,8 +52646,8 @@
       "Alfred E. Green"
     ],
     "writerNames": [
-      "Austin Parker",
-      "Ethel Pettit"
+      "Ethel Pettit",
+      "Austin Parker"
     ],
     "principalCastNames": [
       "Ruth Chatterton",
@@ -52204,8 +52967,8 @@
       "Val Guest"
     ],
     "writerNames": [
-      "Val Guest",
-      "Jon Manchip White"
+      "Jon Manchip White",
+      "Val Guest"
     ],
     "principalCastNames": [
       "Andr\u00e9 Morell",
@@ -52361,9 +53124,9 @@
       "Zack Snyder"
     ],
     "writerNames": [
+      "Chris Terrio",
       "Zack Snyder",
-      "Will Beall",
-      "Chris Terrio"
+      "Will Beall"
     ],
     "principalCastNames": [
       "Ben Affleck",
@@ -52461,10 +53224,10 @@
       "Julia Ducournau"
     ],
     "writerNames": [
+      "Simonetta Greggio",
       "Julia Ducournau",
-      "Jean-Christophe Bouzy",
       "Jacques Akchoti",
-      "Simonetta Greggio"
+      "Jean-Christophe Bouzy"
     ],
     "principalCastNames": [
       "Vincent Lindon",
@@ -52561,9 +53324,9 @@
       "Umberto Lenzi"
     ],
     "writerNames": [
-      "Vittorio Rambaldi",
+      "James Justice",
       "Umberto Lenzi",
-      "James Justice"
+      "Vittorio Rambaldi"
     ],
     "principalCastNames": [
       "Nicolas De Toth",
@@ -52665,8 +53428,8 @@
       "Thornton Freeland"
     ],
     "writerNames": [
-      "Jo Swerling",
-      "Ursula Parrott"
+      "Ursula Parrott",
+      "Jo Swerling"
     ],
     "principalCastNames": [
       "Dorothy Mackaill",
@@ -52828,14 +53591,14 @@
       "Jon Watts"
     ],
     "writerNames": [
-      "John Francis Daley",
-      "Christopher Ford",
-      "Jonathan Goldstein",
       "Steve Ditko",
+      "Jonathan Goldstein",
       "Erik Sommers",
       "Chris McKenna",
+      "Christopher Ford",
+      "Stan Lee",
       "Jon Watts",
-      "Stan Lee"
+      "John Francis Daley"
     ],
     "principalCastNames": [
       "Tom Holland",
@@ -52934,9 +53697,9 @@
       "John Ford"
     ],
     "writerNames": [
+      "Lamar Trotti",
       "Dudley Nichols",
-      "Ben Lucien Burman",
-      "Lamar Trotti"
+      "Ben Lucien Burman"
     ],
     "principalCastNames": [
       "Will Rogers",
@@ -53091,9 +53854,9 @@
       "Mervyn LeRoy"
     ],
     "writerNames": [
-      "John Bright",
+      "Lucien Hubbard",
       "Kubec Glasmon",
-      "Lucien Hubbard"
+      "John Bright"
     ],
     "principalCastNames": [
       "Joan Blondell",
@@ -53322,8 +54085,8 @@
       "Lucio Fulci"
     ],
     "writerNames": [
-      "Bret Harte",
-      "Ennio De Concini"
+      "Ennio De Concini",
+      "Bret Harte"
     ],
     "principalCastNames": [
       "Fabio Testi",
@@ -53482,11 +54245,11 @@
       "Gary Sherman"
     ],
     "writerNames": [
-      "Alex Stern",
-      "Dan O'Bannon",
       "Ronald Shusett",
+      "Chelsea Quinn Yarbro",
       "Jeff Millar",
-      "Chelsea Quinn Yarbro"
+      "Alex Stern",
+      "Dan O'Bannon"
     ],
     "principalCastNames": [
       "James Farentino",
@@ -53584,8 +54347,8 @@
       "William C. McGann"
     ],
     "writerNames": [
-      "Houston Branch",
-      "Roland Pertwee"
+      "Roland Pertwee",
+      "Houston Branch"
     ],
     "principalCastNames": [
       "Douglas Fairbanks Jr.",
@@ -54491,7 +55254,64 @@
       }
     ],
     "collections": [],
-    "moreCastAndCrew": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Clive Barker",
+        "slug": "clive-barker",
+        "creditKind": "writer",
+        "titles": [
+          {
+            "title": "Underworld",
+            "imdbId": "tt0090233",
+            "year": "1985",
+            "slug": "underworld-1985",
+            "grade": "D-",
+            "genres": [
+              "Action",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Rawhead Rex",
+            "imdbId": "tt0091829",
+            "year": "1986",
+            "slug": "rawhead-rex-1986",
+            "grade": "D",
+            "genres": [
+              "Fantasy",
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Hellbound: Hellraiser II",
+            "imdbId": "tt0095294",
+            "year": "1988",
+            "slug": "hellbound-hellraiser-ii-1988",
+            "grade": "C",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "The Midnight Meat Train",
+            "imdbId": "tt0805570",
+            "year": "2008",
+            "slug": "the-midnight-meat-train-2008",
+            "grade": "D",
+            "genres": [
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          }
+        ]
+      }
+    ],
     "moreCollections": [],
     "moreReviews": [
       {
@@ -54567,8 +55387,8 @@
       "Jorma Taccone"
     ],
     "writerNames": [
-      "Andy Samberg",
       "Jorma Taccone",
+      "Andy Samberg",
       "Akiva Schaffer"
     ],
     "principalCastNames": [
@@ -54955,13 +55775,13 @@
       "Brian De Palma"
     ],
     "writerNames": [
-      "Robert Harders",
-      "Charlie Loventhal",
       "Brian De Palma",
+      "Gloria Norris",
+      "Charlie Loventhal",
       "Kim Ambler",
       "Stephen Le May",
-      "Dana Edelman",
-      "Gloria Norris"
+      "Robert Harders",
+      "Dana Edelman"
     ],
     "principalCastNames": [
       "Nancy Allen",
@@ -55122,11 +55942,11 @@
       "Tony Maylam"
     ],
     "writerNames": [
+      "Harvey Weinstein",
+      "Peter Lawrence",
       "Tony Maylam",
       "Brad Grey",
-      "Bob Weinstein",
-      "Harvey Weinstein",
-      "Peter Lawrence"
+      "Bob Weinstein"
     ],
     "principalCastNames": [
       "Brian Matthews",
@@ -55225,12 +56045,12 @@
       "Alfonso Cuar\u00f3n"
     ],
     "writerNames": [
-      "Hawk Ostby",
-      "P.D. James",
-      "Mark Fergus",
-      "Timothy J. Sexton",
       "David Arata",
-      "Alfonso Cuar\u00f3n"
+      "P.D. James",
+      "Timothy J. Sexton",
+      "Alfonso Cuar\u00f3n",
+      "Mark Fergus",
+      "Hawk Ostby"
     ],
     "principalCastNames": [
       "Juan Gabriel Yacuzzi",
@@ -55328,12 +56148,12 @@
       "Henri-Georges Clouzot"
     ],
     "writerNames": [
-      "Fr\u00e9d\u00e9ric Grendel",
       "Ren\u00e9 Masson",
-      "Thomas Narcejac",
       "J\u00e9r\u00f4me G\u00e9ronimi",
+      "Henri-Georges Clouzot",
       "Pierre Boileau",
-      "Henri-Georges Clouzot"
+      "Fr\u00e9d\u00e9ric Grendel",
+      "Thomas Narcejac"
     ],
     "principalCastNames": [
       "Simone Signoret",
@@ -55428,10 +56248,10 @@
       "Michael Curtiz"
     ],
     "writerNames": [
-      "Peter Milne",
-      "S.S. Van Dine",
+      "Robert Presnell Sr.",
       "Robert N. Lee",
-      "Robert Presnell Sr."
+      "S.S. Van Dine",
+      "Peter Milne"
     ],
     "principalCastNames": [
       "William Powell",
@@ -56108,11 +56928,11 @@
       "Dario Argento"
     ],
     "writerNames": [
-      "Nanni Balestrini",
-      "Dario Argento",
       "Enzo Ungari",
       "Luigi Cozzi",
-      "Franco Catalano"
+      "Nanni Balestrini",
+      "Franco Catalano",
+      "Dario Argento"
     ],
     "principalCastNames": [
       "Adriano Celentano",
@@ -56274,10 +57094,10 @@
       "Norman Z. McLeod"
     ],
     "writerNames": [
-      "Eric Hatch",
-      "Thorne Smith",
       "Eddie Moran",
-      "Jack Jevne"
+      "Jack Jevne",
+      "Eric Hatch",
+      "Thorne Smith"
     ],
     "principalCastNames": [
       "Constance Bennett",
@@ -56797,9 +57617,9 @@
       "Patty Jenkins"
     ],
     "writerNames": [
+      "Dave Callaham",
       "Patty Jenkins",
-      "Geoff Johns",
-      "Dave Callaham"
+      "Geoff Johns"
     ],
     "principalCastNames": [
       "Gal Gadot",
@@ -57098,10 +57918,10 @@
       "Bryan Singer"
     ],
     "writerNames": [
-      "Michael Dougherty",
-      "Bryan Singer",
       "Simon Kinberg",
-      "Dan Harris"
+      "Dan Harris",
+      "Bryan Singer",
+      "Michael Dougherty"
     ],
     "principalCastNames": [
       "James McAvoy",
@@ -57201,8 +58021,8 @@
       "Dario Argento"
     ],
     "writerNames": [
-      "Dardano Sacchetti",
       "Luigi Cozzi",
+      "Dardano Sacchetti",
       "Dario Argento"
     ],
     "principalCastNames": [
@@ -57803,17 +58623,6 @@
     ],
     "moreReviews": [
       {
-        "title": "The Hoodlum Saint",
-        "imdbId": "tt0038615",
-        "year": "1946",
-        "slug": "the-hoodlum-saint-1946",
-        "grade": "D",
-        "genres": [
-          "Drama",
-          "Music"
-        ]
-      },
-      {
         "title": "Hoppy Serves a Writ",
         "imdbId": "tt0036016",
         "year": "1943",
@@ -57821,6 +58630,19 @@
         "grade": "D",
         "genres": [
           "Western"
+        ]
+      },
+      {
+        "title": "Horror Express",
+        "imdbId": "tt0068713",
+        "year": "1972",
+        "slug": "horror-express-1972",
+        "grade": "D+",
+        "genres": [
+          "Adventure",
+          "Horror",
+          "Sci-Fi",
+          "Thriller"
         ]
       },
       {
@@ -57871,8 +58693,8 @@
     ],
     "writerNames": [
       "Mildred Cram",
-      "George Manker Watters",
-      "Howard Estabrook"
+      "Howard Estabrook",
+      "George Manker Watters"
     ],
     "principalCastNames": [
       "Hal Skelly",
@@ -58196,8 +59018,8 @@
       "Brian De Palma"
     ],
     "writerNames": [
-      "Charles Hirsch",
-      "Brian De Palma"
+      "Brian De Palma",
+      "Charles Hirsch"
     ],
     "principalCastNames": [
       "Jonathan Warden",
@@ -58679,8 +59501,8 @@
       "John Ford"
     ],
     "writerNames": [
-      "Frank S. Nugent",
-      "Alan Le May"
+      "Alan Le May",
+      "Frank S. Nugent"
     ],
     "principalCastNames": [
       "John Wayne",
@@ -59064,10 +59886,10 @@
       "Lucio Fulci"
     ],
     "writerNames": [
-      "Vincenzo Mannino",
-      "Dardano Sacchetti",
+      "Gianfranco Clerici",
       "Lucio Fulci",
-      "Gianfranco Clerici"
+      "Dardano Sacchetti",
+      "Vincenzo Mannino"
     ],
     "principalCastNames": [
       "Jack Hedley",
@@ -59230,8 +60052,8 @@
       "Edward Sedgwick"
     ],
     "writerNames": [
-      "Edward Sedgwick",
-      "Howard J. Green"
+      "Howard J. Green",
+      "Edward Sedgwick"
     ],
     "principalCastNames": [
       "Jack Holt",
@@ -59554,11 +60376,11 @@
       "Richard Rosson"
     ],
     "writerNames": [
-      "Armitage Trail",
-      "John Lee Mahin",
-      "Ben Hecht",
       "Seton I. Miller",
-      "W.R. Burnett"
+      "Armitage Trail",
+      "Ben Hecht",
+      "W.R. Burnett",
+      "John Lee Mahin"
     ],
     "principalCastNames": [
       "Paul Muni",
@@ -59946,8 +60768,8 @@
       "Rowland V. Lee"
     ],
     "writerNames": [
-      "Gertrude Purcell",
       "Leonard Spigelgass",
+      "Gertrude Purcell",
       "Vera Caspary",
       "Bruce Manning"
     ],
@@ -60107,8 +60929,8 @@
       "Stephen Weeks"
     ],
     "writerNames": [
-      "Milton Subotsky",
-      "Robert Louis Stevenson"
+      "Robert Louis Stevenson",
+      "Milton Subotsky"
     ],
     "principalCastNames": [
       "Christopher Lee",
@@ -60188,13 +61010,16 @@
             ]
           },
           {
-            "title": "And Now the Screaming Starts!",
-            "imdbId": "tt0069715",
-            "year": "1973",
-            "slug": "and-now-the-screaming-starts-1973",
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
+            "year": "1972",
+            "slug": "horror-express-1972",
             "grade": "D+",
             "genres": [
-              "Horror"
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
             ]
           }
         ]
@@ -60242,13 +61067,16 @@
             ]
           },
           {
-            "title": "To the Devil a Daughter",
-            "imdbId": "tt0075334",
-            "year": "1976",
-            "slug": "to-the-devil-a-daughter-1976",
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
+            "year": "1972",
+            "slug": "horror-express-1972",
             "grade": "D+",
             "genres": [
-              "Horror"
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
             ]
           }
         ]
@@ -60645,9 +61473,9 @@
       "Scott Derrickson"
     ],
     "writerNames": [
+      "C. Robert Cargill",
       "Jon Spaihts",
-      "Scott Derrickson",
-      "C. Robert Cargill"
+      "Scott Derrickson"
     ],
     "principalCastNames": [
       "Benedict Cumberbatch",
@@ -60797,7 +61625,7 @@
         "imdbId": "tt0087798",
         "year": "1985",
         "slug": "night-train-to-terror-1985",
-        "grade": "C-",
+        "grade": "C",
         "genres": [
           "Drama",
           "Fantasy",
@@ -60854,11 +61682,11 @@
       "Jamie Blanks"
     ],
     "writerNames": [
-      "Donna Powers",
       "Wayne Powers",
-      "Tom Savage",
+      "Aaron Harberts",
       "Gretchen J. Berg",
-      "Aaron Harberts"
+      "Donna Powers",
+      "Tom Savage"
     ],
     "principalCastNames": [
       "Denise Richards",
@@ -61172,9 +62000,9 @@
       "Jalmari Helander"
     ],
     "writerNames": [
-      "Sami Parkkinen",
-      "Juuso Helander",
       "Jalmari Helander",
+      "Juuso Helander",
+      "Sami Parkkinen",
       "Petri Jokiranta"
     ],
     "principalCastNames": [
@@ -61495,6 +62323,18 @@
         ]
       },
       {
+        "title": "The Midnight Meat Train",
+        "imdbId": "tt0805570",
+        "year": "2008",
+        "slug": "the-midnight-meat-train-2008",
+        "grade": "D",
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Thriller"
+        ]
+      },
+      {
         "title": "Mortal Kombat",
         "imdbId": "tt0293429",
         "year": "2021",
@@ -61506,19 +62346,6 @@
           "Fantasy",
           "Sci-Fi",
           "Thriller"
-        ]
-      },
-      {
-        "title": "Mortal Kombat Legends: Battle of the Realms",
-        "imdbId": "tt14901058",
-        "year": "2021",
-        "slug": "mortal-kombat-legends-battle-of-the-realms-2021",
-        "grade": "B-",
-        "genres": [
-          "Animation",
-          "Action",
-          "Adventure",
-          "Fantasy"
         ]
       }
     ]
@@ -61544,9 +62371,9 @@
       "Alfred Hitchcock"
     ],
     "writerNames": [
-      "Alfred Hitchcock",
+      "Alma Reville",
       "John Galsworthy",
-      "Alma Reville"
+      "Alfred Hitchcock"
     ],
     "principalCastNames": [
       "C.V. France",
@@ -61709,8 +62536,8 @@
     "writerNames": [
       "Erik Sommers",
       "Chris McKenna",
-      "Stan Lee",
-      "Steve Ditko"
+      "Steve Ditko",
+      "Stan Lee"
     ],
     "principalCastNames": [
       "Tom Holland",
@@ -61810,8 +62637,8 @@
     ],
     "writerNames": [
       "Siu-Tung Ching",
-      "David Lai",
-      "Manfred Wong"
+      "Manfred Wong",
+      "David Lai"
     ],
     "principalCastNames": [
       "Norman Chu",
@@ -62348,8 +63175,8 @@
       "Frank Oz"
     ],
     "writerNames": [
-      "Tom Schulman",
       "Laura Ziskin",
+      "Tom Schulman",
       "Alvin Sargent"
     ],
     "principalCastNames": [
@@ -62452,8 +63279,8 @@
       "Jonathan Glazer"
     ],
     "writerNames": [
-      "Walter Campbell",
       "Jonathan Glazer",
+      "Walter Campbell",
       "Michel Faber"
     ],
     "principalCastNames": [
@@ -62552,8 +63379,8 @@
       "Bruce Geller"
     ],
     "writerNames": [
-      "James D. Buchanan",
-      "Ronald Austin"
+      "Ronald Austin",
+      "James D. Buchanan"
     ],
     "principalCastNames": [
       "James Coburn",
@@ -63163,9 +63990,9 @@
       "Ingmar Bergman"
     ],
     "writerNames": [
-      "Herbert Grevenius",
       "Oskar Braaten",
-      "Ingmar Bergman"
+      "Ingmar Bergman",
+      "Herbert Grevenius"
     ],
     "principalCastNames": [
       "Barbro Kollberg",
@@ -63533,8 +64360,8 @@
       "David Fincher"
     ],
     "writerNames": [
-      "Steven Zaillian",
-      "Stieg Larsson"
+      "Stieg Larsson",
+      "Steven Zaillian"
     ],
     "principalCastNames": [
       "Daniel Craig",
@@ -63800,8 +64627,8 @@
       "Sidney Lumet"
     ],
     "writerNames": [
-      "Ira Levin",
-      "Jay Presson Allen"
+      "Jay Presson Allen",
+      "Ira Levin"
     ],
     "principalCastNames": [
       "Michael Caine",
@@ -63908,10 +64735,10 @@
       "Denis Villeneuve"
     ],
     "writerNames": [
-      "Denis Villeneuve",
-      "Jon Spaihts",
+      "Eric Roth",
       "Frank Herbert",
-      "Eric Roth"
+      "Jon Spaihts",
+      "Denis Villeneuve"
     ],
     "principalCastNames": [
       "Timoth\u00e9e Chalamet",
@@ -64279,8 +65106,8 @@
       "Tod Browning"
     ],
     "writerNames": [
-      "Guy Endore",
-      "Bernard Schubert"
+      "Bernard Schubert",
+      "Guy Endore"
     ],
     "principalCastNames": [
       "Lionel Barrymore",
@@ -64505,11 +65332,11 @@
       "George A. Romero"
     ],
     "writerNames": [
-      "Dario Argento",
-      "Peter Koper",
-      "Franco Ferrini",
       "George A. Romero",
-      "Edgar Allan Poe"
+      "Franco Ferrini",
+      "Dario Argento",
+      "Edgar Allan Poe",
+      "Peter Koper"
     ],
     "principalCastNames": [
       "Adrienne Barbeau",
@@ -64677,8 +65504,8 @@
       "Scott Glosserman"
     ],
     "writerNames": [
-      "David J. Stieve",
-      "Scott Glosserman"
+      "Scott Glosserman",
+      "David J. Stieve"
     ],
     "principalCastNames": [
       "Nathan Baesel",
@@ -64776,8 +65603,8 @@
     ],
     "writerNames": [
       "Marc Connelly",
-      "Leslie Bush-Fekete",
       "Jan Lustig",
+      "Leslie Bush-Fekete",
       "Marvin Borowsky"
     ],
     "principalCastNames": [
@@ -64949,11 +65776,11 @@
       "Irving Cummings"
     ],
     "writerNames": [
-      "Clarke Silvernail",
       "Wilbur Morse Jr.",
+      "Earl Derr Biggers",
+      "Clarke Silvernail",
       "George Middleton",
-      "Sonya Levien",
-      "Earl Derr Biggers"
+      "Sonya Levien"
     ],
     "principalCastNames": [
       "Warner Baxter",
@@ -65739,8 +66566,8 @@
       "Raoul Walsh"
     ],
     "writerNames": [
-      "Michael Morton",
       "Guy Bolton",
+      "Michael Morton",
       "Jules Furthman"
     ],
     "principalCastNames": [
@@ -65838,9 +66665,9 @@
       "David Butler"
     ],
     "writerNames": [
-      "William M. Conselman",
       "Arthur F. Goodrich",
-      "Booth Tarkington"
+      "Booth Tarkington",
+      "William M. Conselman"
     ],
     "principalCastNames": [
       "Will Rogers",
@@ -65933,8 +66760,8 @@
       "Michael Curtiz"
     ],
     "writerNames": [
-      "Harry Harrison Kroll",
-      "Paul Green"
+      "Paul Green",
+      "Harry Harrison Kroll"
     ],
     "principalCastNames": [
       "Richard Barthelmess",
@@ -66090,8 +66917,8 @@
       "Michael Winner"
     ],
     "writerNames": [
-      "Michael Winner",
-      "Jeffrey Konvitz"
+      "Jeffrey Konvitz",
+      "Michael Winner"
     ],
     "principalCastNames": [
       "Chris Sarandon",
@@ -66194,8 +67021,8 @@
       "Val Guest"
     ],
     "writerNames": [
-      "Nigel Kneale",
-      "Val Guest"
+      "Val Guest",
+      "Nigel Kneale"
     ],
     "principalCastNames": [
       "Brian Donlevy",
@@ -66939,8 +67766,8 @@
       "Billy Wilder"
     ],
     "writerNames": [
-      "Billy Wilder",
-      "I.A.L. Diamond"
+      "I.A.L. Diamond",
+      "Billy Wilder"
     ],
     "principalCastNames": [
       "Jack Lemmon",
@@ -67224,8 +68051,8 @@
       "Bud Yorkin"
     ],
     "writerNames": [
-      "Walter Hill",
-      "Terrence Lore Smith"
+      "Terrence Lore Smith",
+      "Walter Hill"
     ],
     "principalCastNames": [
       "Ryan O'Neal",
@@ -67384,8 +68211,8 @@
       "William Castle"
     ],
     "writerNames": [
-      "Eric Taylor",
-      "J. Donald Wilson"
+      "J. Donald Wilson",
+      "Eric Taylor"
     ],
     "principalCastNames": [
       "Richard Dix",
@@ -67482,8 +68309,8 @@
       "Ken Wiederhorn"
     ],
     "writerNames": [
-      "John Kent Harrison",
-      "Ken Wiederhorn"
+      "Ken Wiederhorn",
+      "John Kent Harrison"
     ],
     "principalCastNames": [
       "Clarence Thomas",
@@ -67742,8 +68569,8 @@
       "Drew Goddard"
     ],
     "writerNames": [
-      "Drew Goddard",
-      "Joss Whedon"
+      "Joss Whedon",
+      "Drew Goddard"
     ],
     "principalCastNames": [
       "Kristen Connolly",
@@ -67881,11 +68708,11 @@
       "Robert Hamer"
     ],
     "writerNames": [
-      "T.E.B. Clarke",
       "E.F. Benson",
+      "T.E.B. Clarke",
+      "John Baines",
       "Angus MacPhail",
-      "H.G. Wells",
-      "John Baines"
+      "H.G. Wells"
     ],
     "principalCastNames": [
       "Mervyn Johns",
@@ -67983,8 +68810,8 @@
       "Brian De Palma"
     ],
     "writerNames": [
-      "Charles Hirsch",
-      "Brian De Palma"
+      "Brian De Palma",
+      "Charles Hirsch"
     ],
     "principalCastNames": [
       "Charles Durning",
@@ -68144,9 +68971,9 @@
       "Bryan Singer"
     ],
     "writerNames": [
-      "Jane Goldman",
       "Simon Kinberg",
-      "Matthew Vaughn"
+      "Matthew Vaughn",
+      "Jane Goldman"
     ],
     "principalCastNames": [
       "Hugh Jackman",
@@ -68414,12 +69241,12 @@
       "Roy Pomeroy"
     ],
     "writerNames": [
-      "Julian Johnson",
+      "Hope Loring",
       "Louise Long",
-      "Roland Pertwee",
       "Harold Dearden",
-      "Ernest Pascal",
-      "Hope Loring"
+      "Roland Pertwee",
+      "Julian Johnson",
+      "Ernest Pascal"
     ],
     "principalCastNames": [
       "Evelyn Brent",
@@ -68689,9 +69516,9 @@
       "Howard Hawks"
     ],
     "writerNames": [
-      "Fred Niblo Jr.",
       "Seton I. Miller",
-      "Martin Flavin"
+      "Martin Flavin",
+      "Fred Niblo Jr."
     ],
     "principalCastNames": [
       "Walter Huston",
@@ -69273,8 +70100,8 @@
       "Michael Fimognari"
     ],
     "writerNames": [
-      "Katie Lovejoy",
-      "Jenny Han"
+      "Jenny Han",
+      "Katie Lovejoy"
     ],
     "principalCastNames": [
       "Lana Condor",
@@ -69527,8 +70354,8 @@
       "Ben Wheatley"
     ],
     "writerNames": [
-      "Ben Wheatley",
-      "Amy Jump"
+      "Amy Jump",
+      "Ben Wheatley"
     ],
     "principalCastNames": [
       "Enzo Cilenti",
@@ -69629,14 +70456,14 @@
       "Ronnie Del Carmen"
     ],
     "writerNames": [
-      "Pete Docter",
-      "Ronnie Del Carmen",
-      "Josh Cooley",
+      "Bill Hader",
       "Simon Rich",
-      "Amy Poehler",
       "Meg LeFauve",
+      "Josh Cooley",
+      "Amy Poehler",
+      "Pete Docter",
       "Michael Arndt",
-      "Bill Hader"
+      "Ronnie Del Carmen"
     ],
     "principalCastNames": [
       "Paula Pell",
@@ -69740,18 +70567,18 @@
       "William A. Wellman"
     ],
     "writerNames": [
-      "Claudia Cranston",
-      "William Ludwig",
-      "Edgar Brooke",
-      "Dorothy Kingsley",
-      "Isobel Lennart",
+      "Dore Schary",
+      "Ray Chordes",
       "Lucille Schlossberg",
       "George Wells",
-      "Allen Rivkin",
-      "Helen Deutsch",
       "Joseph Petracca",
-      "Ray Chordes",
-      "Dore Schary"
+      "Allen Rivkin",
+      "Dorothy Kingsley",
+      "Claudia Cranston",
+      "Isobel Lennart",
+      "Edgar Brooke",
+      "William Ludwig",
+      "Helen Deutsch"
     ],
     "principalCastNames": [
       "Ethel Barrymore",
@@ -70026,11 +70853,11 @@
       "John Cromwell"
     ],
     "writerNames": [
-      "Gerald Drayson Adams",
       "Steve Fisher",
-      "Sidney Biddell",
+      "Gerald Drayson Adams",
+      "Allen Rivkin",
       "Oliver H.P. Garrett",
-      "Allen Rivkin"
+      "Sidney Biddell"
     ],
     "principalCastNames": [
       "Humphrey Bogart",
@@ -70206,11 +71033,11 @@
       "Michael Curtiz"
     ],
     "writerNames": [
+      "Courtney Terrett",
+      "Lewis E. Lawes",
       "Wilson Mizner",
       "Brown Holmes",
-      "Robert Lord",
-      "Lewis E. Lawes",
-      "Courtney Terrett"
+      "Robert Lord"
     ],
     "principalCastNames": [
       "Spencer Tracy",
@@ -70369,9 +71196,9 @@
       "Tod Browning"
     ],
     "writerNames": [
-      "Leon Gordon",
       "Willis Goldbeck",
-      "Clarence Aaron 'Tod' Robbins"
+      "Clarence Aaron 'Tod' Robbins",
+      "Leon Gordon"
     ],
     "principalCastNames": [
       "Wallace Ford",
@@ -70693,9 +71520,9 @@
     ],
     "writerNames": [
       "Miguel Tejada-Flores",
-      "David Quinn",
       "Tim Vigil",
-      "Johann Wolfgang von Goethe"
+      "Johann Wolfgang von Goethe",
+      "David Quinn"
     ],
     "principalCastNames": [
       "Mark Frost",
@@ -71837,8 +72664,8 @@
     "writerNames": [
       "Erik Sommers",
       "Chris McKenna",
-      "Stan Lee",
-      "Steve Ditko"
+      "Steve Ditko",
+      "Stan Lee"
     ],
     "principalCastNames": [
       "Tom Holland",
@@ -72097,9 +72924,9 @@
       "Tim Burton"
     ],
     "writerNames": [
-      "Warren Skaaren",
+      "Bob Kane",
       "Sam Hamm",
-      "Bob Kane"
+      "Warren Skaaren"
     ],
     "principalCastNames": [
       "Michael Keaton",
@@ -72339,8 +73166,8 @@
       "George B. Seitz"
     ],
     "writerNames": [
-      "Robert Riskin",
-      "Augustus Thomas"
+      "Augustus Thomas",
+      "Robert Riskin"
     ],
     "principalCastNames": [
       "Laura La Plante",
@@ -72497,8 +73324,8 @@
       "Michael Curtiz"
     ],
     "writerNames": [
-      "J.L. Hardy",
       "Laird Doyle",
+      "J.L. Hardy",
       "R. Gore Brown"
     ],
     "principalCastNames": [
@@ -72981,13 +73808,16 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Hoppy Serves a Writ",
-        "imdbId": "tt0036016",
-        "year": "1943",
-        "slug": "hoppy-serves-a-writ-1943",
-        "grade": "D",
+        "title": "Horror Express",
+        "imdbId": "tt0068713",
+        "year": "1972",
+        "slug": "horror-express-1972",
+        "grade": "D+",
         "genres": [
-          "Western"
+          "Adventure",
+          "Horror",
+          "Sci-Fi",
+          "Thriller"
         ]
       },
       {
@@ -73354,10 +74184,10 @@
       "Hobart Henley"
     ],
     "writerNames": [
+      "Booth Tarkington",
       "Tom Reed",
-      "Edwin H. Knopf",
       "Raymond L. Schrock",
-      "Booth Tarkington"
+      "Edwin H. Knopf"
     ],
     "principalCastNames": [
       "Conrad Nagel",
@@ -73779,7 +74609,62 @@
       }
     ],
     "collections": [],
-    "moreCastAndCrew": [],
+    "moreCastAndCrew": [
+      {
+        "name": "Clive Barker",
+        "slug": "clive-barker",
+        "creditKind": "writer",
+        "titles": [
+          {
+            "title": "The Midnight Meat Train",
+            "imdbId": "tt0805570",
+            "year": "2008",
+            "slug": "the-midnight-meat-train-2008",
+            "grade": "D",
+            "genres": [
+              "Horror",
+              "Mystery",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Underworld",
+            "imdbId": "tt0090233",
+            "year": "1985",
+            "slug": "underworld-1985",
+            "grade": "D-",
+            "genres": [
+              "Action",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Hellraiser",
+            "imdbId": "tt0093177",
+            "year": "1987",
+            "slug": "hellraiser-1987",
+            "grade": "A",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          },
+          {
+            "title": "Hellbound: Hellraiser II",
+            "imdbId": "tt0095294",
+            "year": "1988",
+            "slug": "hellbound-hellraiser-ii-1988",
+            "grade": "C",
+            "genres": [
+              "Horror",
+              "Thriller"
+            ]
+          }
+        ]
+      }
+    ],
     "moreCollections": [],
     "moreReviews": [
       {
@@ -73858,8 +74743,8 @@
       "Michael D. Moore"
     ],
     "writerNames": [
-      "George Schenck",
-      "William Marks"
+      "William Marks",
+      "George Schenck"
     ],
     "principalCastNames": [
       "Jack Palance",
@@ -74053,9 +74938,9 @@
       "Lloyd Bacon"
     ],
     "writerNames": [
-      "Richard Flournoy",
       "William Bowers",
-      "D.D. Beauchamp"
+      "D.D. Beauchamp",
+      "Richard Flournoy"
     ],
     "principalCastNames": [
       "Robert Mitchum",
@@ -74221,11 +75106,11 @@
       "T. Hayes Hunter"
     ],
     "writerNames": [
+      "Frank King",
       "Leonard Hines",
-      "Rupert Downing",
       "Roland Pertwee",
-      "John Hastings Turner",
-      "Frank King"
+      "Rupert Downing",
+      "John Hastings Turner"
     ],
     "principalCastNames": [
       "Boris Karloff",
@@ -74645,8 +75530,8 @@
       "John Farrow"
     ],
     "writerNames": [
-      "Leo Rosten",
-      "Charles Bennett"
+      "Charles Bennett",
+      "Leo Rosten"
     ],
     "principalCastNames": [
       "Robert Mitchum",
@@ -74906,11 +75791,11 @@
       "Howard Hawks"
     ],
     "writerNames": [
-      "Kubec Glasmon",
-      "John Bright",
-      "Howard Hawks",
       "Seton I. Miller",
-      "Niven Busch"
+      "John Bright",
+      "Niven Busch",
+      "Kubec Glasmon",
+      "Howard Hawks"
     ],
     "principalCastNames": [
       "James Cagney",
@@ -75402,8 +76287,8 @@
       "Richard Brooks"
     ],
     "writerNames": [
-      "George Tabori",
-      "Richard Brooks"
+      "Richard Brooks",
+      "George Tabori"
     ],
     "principalCastNames": [
       "Cary Grant",
@@ -75718,12 +76603,12 @@
       "Enrico Casarosa"
     ],
     "writerNames": [
-      "Randall Green",
-      "Jesse Andrews",
-      "Simon Stephenson",
-      "Enrico Casarosa",
+      "Julie Lynn",
       "Mike Jones",
-      "Julie Lynn"
+      "Simon Stephenson",
+      "Jesse Andrews",
+      "Enrico Casarosa",
+      "Randall Green"
     ],
     "principalCastNames": [
       "Enrico Casarosa"
@@ -76137,10 +77022,10 @@
       "Ray Enright"
     ],
     "writerNames": [
-      "Kenyon Nicholson",
       "Charles Robinson",
+      "Maurice Leo",
       "Joseph Schrank",
-      "Maurice Leo"
+      "Kenyon Nicholson"
     ],
     "principalCastNames": [
       "Humphrey Bogart",
@@ -77169,9 +78054,9 @@
       "Don Hartman"
     ],
     "writerNames": [
-      "Eleanor Harris",
+      "Stephen Morehouse Avery",
       "Don Hartman",
-      "Stephen Morehouse Avery"
+      "Eleanor Harris"
     ],
     "principalCastNames": [
       "Cary Grant",
@@ -78197,7 +79082,7 @@
         "imdbId": "tt0087798",
         "year": "1985",
         "slug": "night-train-to-terror-1985",
-        "grade": "C-",
+        "grade": "C",
         "genres": [
           "Drama",
           "Fantasy",
@@ -78231,9 +79116,9 @@
       "Alfred Hitchcock"
     ],
     "writerNames": [
-      "Dale Collins",
-      "Alfred Hitchcock",
       "Alma Reville",
+      "Alfred Hitchcock",
+      "Dale Collins",
       "Val Valentine"
     ],
     "principalCastNames": [
@@ -78393,8 +79278,8 @@
       "Tay Garnett"
     ],
     "writerNames": [
-      "Wilson Mizner",
       "Joseph Jackson",
+      "Wilson Mizner",
       "Robert Lord"
     ],
     "principalCastNames": [
@@ -78990,8 +79875,8 @@
       "Phil Joanou"
     ],
     "writerNames": [
-      "Tom Szollosi",
-      "Richard Christian Matheson"
+      "Richard Christian Matheson",
+      "Tom Szollosi"
     ],
     "principalCastNames": [
       "Casey Siemaszko",
@@ -79092,8 +79977,8 @@
       "John Llewellyn Moxey"
     ],
     "writerNames": [
-      "Milton Subotsky",
-      "George Baxt"
+      "George Baxt",
+      "Milton Subotsky"
     ],
     "principalCastNames": [
       "Dennis Lotis",
@@ -79723,9 +80608,9 @@
       "Val Guest"
     ],
     "writerNames": [
+      "Val Guest",
       "Richard H. Landau",
-      "Nigel Kneale",
-      "Val Guest"
+      "Nigel Kneale"
     ],
     "principalCastNames": [
       "Brian Donlevy",
@@ -79878,8 +80763,8 @@
       "Jack Starrett"
     ],
     "writerNames": [
-      "Lee Frost",
-      "Wes Bishop"
+      "Wes Bishop",
+      "Lee Frost"
     ],
     "principalCastNames": [
       "Peter Fonda",
@@ -80040,8 +80925,8 @@
       "Danny Steinmann"
     ],
     "writerNames": [
-      "Danny Steinmann",
       "David Cohen",
+      "Danny Steinmann",
       "Martin Kitrosser"
     ],
     "principalCastNames": [
@@ -80414,9 +81299,9 @@
       "Tod Browning"
     ],
     "writerNames": [
-      "John L. Balderston",
-      "Hamilton Deane",
       "Garrett Fort",
+      "Hamilton Deane",
+      "John L. Balderston",
       "Bram Stoker"
     ],
     "principalCastNames": [
@@ -80851,9 +81736,9 @@
       "Sam Peckinpah"
     ],
     "writerNames": [
-      "Gordon Williams",
       "David Zelag Goodman",
-      "Sam Peckinpah"
+      "Sam Peckinpah",
+      "Gordon Williams"
     ],
     "principalCastNames": [
       "Dustin Hoffman",
@@ -80965,8 +81850,8 @@
       "Robert Wise"
     ],
     "writerNames": [
-      "Robert Louis Stevenson",
       "Philip MacDonald",
+      "Robert Louis Stevenson",
       "Val Lewton"
     ],
     "principalCastNames": [
@@ -81191,8 +82076,8 @@
       "Brian De Palma"
     ],
     "writerNames": [
-      "Paul Schrader",
-      "Brian De Palma"
+      "Brian De Palma",
+      "Paul Schrader"
     ],
     "principalCastNames": [
       "Cliff Robertson",
@@ -81649,10 +82534,10 @@
       "William Dieterle"
     ],
     "writerNames": [
-      "Carl Erickson",
       "Warren Duff",
       "Harry Collins",
-      "F. Hugh Herbert"
+      "F. Hugh Herbert",
+      "Carl Erickson"
     ],
     "principalCastNames": [
       "William Powell",
@@ -82187,13 +83072,14 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "A Nightmare on Elm Street 2: Freddy's Revenge",
-        "imdbId": "tt0089686",
-        "year": "1985",
-        "slug": "a-nightmare-on-elm-street-2-freddys-revenge-1985",
-        "grade": "F",
+        "title": "Ninja in the Dragon's Den",
+        "imdbId": "tt0084267",
+        "year": "1982",
+        "slug": "ninja-in-the-dragons-den-1982",
+        "grade": "B",
         "genres": [
-          "Horror"
+          "Action",
+          "Comedy"
         ]
       },
       {
@@ -82354,9 +83240,9 @@
       "Michael Dugan"
     ],
     "writerNames": [
-      "Katherine Rosenwink",
       "Robert Madero",
-      "Robert Barich"
+      "Robert Barich",
+      "Katherine Rosenwink"
     ],
     "principalCastNames": [
       "Marjoe Gortner",
@@ -82461,10 +83347,18 @@
       "Victoria Zinny",
       "Savina Gersak"
     ],
-    "reviewDate": "2021-10-30",
-    "reviewYear": "2021",
-    "sequence": "2021-10-30-1187",
+    "reviewDate": "2024-04-27",
+    "reviewYear": "2024",
+    "sequence": "2024-04-27-1589",
     "viewings": [
+      {
+        "sequence": 1589,
+        "medium": null,
+        "mediumNotes": null,
+        "date": "2024-04-27",
+        "venue": "Alamo Drafthouse Cinema - One Loudoun",
+        "venueNotes": "Railway to Hell Mystery Marathon"
+      },
       {
         "sequence": 1187,
         "medium": "Blu-ray",
@@ -82664,8 +83558,8 @@
     "writerNames": [
       "Philip Klein",
       "Hugh Stanislaus Stange",
-      "Barry Conners",
-      "Earl Derr Biggers"
+      "Earl Derr Biggers",
+      "Barry Conners"
     ],
     "principalCastNames": [
       "Warner Oland",
@@ -82925,8 +83819,8 @@
       "Ingmar Bergman"
     ],
     "writerNames": [
-      "Herbert Grevenius",
-      "Birgit Tengroth"
+      "Birgit Tengroth",
+      "Herbert Grevenius"
     ],
     "principalCastNames": [
       "Eva Henning",
@@ -83084,13 +83978,13 @@
       "Lucio Fulci"
     ],
     "writerNames": [
-      "Guy Elmes",
       "Piero Regnoli",
-      "Roberto Gianviti",
       "Thom Keyes",
       "Jack London",
       "Harry Alan Towers",
-      "Guillaume Roux"
+      "Guillaume Roux",
+      "Guy Elmes",
+      "Roberto Gianviti"
     ],
     "principalCastNames": [
       "Franco Nero",
@@ -83247,8 +84141,8 @@
       "Ronny Yu"
     ],
     "writerNames": [
-      "Mark Swift",
-      "Damian Shannon"
+      "Damian Shannon",
+      "Mark Swift"
     ],
     "principalCastNames": [
       "Robert Englund",
@@ -83413,10 +84307,10 @@
       "Malcolm St. Clair"
     ],
     "writerNames": [
-      "Florence Ryerson",
       "Herman J. Mankiewicz",
       "S.S. Van Dine",
-      "Albert S. Le Vino"
+      "Albert S. Le Vino",
+      "Florence Ryerson"
     ],
     "principalCastNames": [
       "William Powell",
@@ -83579,8 +84473,8 @@
     ],
     "writerNames": [
       "Christopher L. Yost",
-      "Eric Pearson",
-      "Craig Kyle"
+      "Craig Kyle",
+      "Eric Pearson"
     ],
     "principalCastNames": [
       "Chris Hemsworth",
@@ -83687,11 +84581,11 @@
       "George Fitzmaurice"
     ],
     "writerNames": [
-      "Horace Jackson",
-      "Dorothy Parker",
-      "Alan Campbell",
+      "Lenore J. Coffee",
       "Herbert Gorman",
-      "Lenore J. Coffee"
+      "Dorothy Parker",
+      "Horace Jackson",
+      "Alan Campbell"
     ],
     "principalCastNames": [
       "Jean Harlow",
@@ -83852,10 +84746,10 @@
       "Irving Cummings"
     ],
     "writerNames": [
+      "Max Brand",
       "Myron C. Fagan",
       "Alfred A. Cohn",
-      "Ralph Block",
-      "Max Brand"
+      "Ralph Block"
     ],
     "principalCastNames": [
       "George O'Brien",
@@ -84013,10 +84907,10 @@
       "Lee Harry"
     ],
     "writerNames": [
-      "Lee Harry",
-      "Dennis Patterson",
+      "Lawrence Appelbaum",
       "Joseph H. Earle",
-      "Lawrence Appelbaum"
+      "Dennis Patterson",
+      "Lee Harry"
     ],
     "principalCastNames": [
       "Eric Freeman",
@@ -84256,14 +85150,16 @@
         ]
       },
       {
-        "title": "Horror of Dracula",
-        "imdbId": "tt0051554",
-        "year": "1958",
-        "slug": "horror-of-dracula-1958",
-        "grade": "A-",
+        "title": "Horror Express",
+        "imdbId": "tt0068713",
+        "year": "1972",
+        "slug": "horror-express-1972",
+        "grade": "D+",
         "genres": [
-          "Drama",
-          "Horror"
+          "Adventure",
+          "Horror",
+          "Sci-Fi",
+          "Thriller"
         ]
       }
     ]
@@ -84292,9 +85188,9 @@
       "W.S. Van Dyke"
     ],
     "writerNames": [
+      "Dashiell Hammett",
       "Frances Goodrich",
-      "Albert Hackett",
-      "Dashiell Hammett"
+      "Albert Hackett"
     ],
     "principalCastNames": [
       "William Powell",
@@ -84449,8 +85345,8 @@
       "Paolo Heusch"
     ],
     "writerNames": [
-      "Virgilio Sabel",
       "Marcello Coscia",
+      "Virgilio Sabel",
       "Sandro Continenza"
     ],
     "principalCastNames": [
@@ -85015,8 +85911,8 @@
     ],
     "writerNames": [
       "Oren Uziel",
-      "Greg Russo",
-      "Dave Callaham"
+      "Dave Callaham",
+      "Greg Russo"
     ],
     "principalCastNames": [
       "Lewis Tan",
@@ -85043,16 +85939,6 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Messiah of Evil",
-        "imdbId": "tt0071396",
-        "year": "1974",
-        "slug": "messiah-of-evil-1973",
-        "grade": "C+",
-        "genres": [
-          "Horror"
-        ]
-      },
-      {
         "title": "Midnight",
         "imdbId": "tt0025499",
         "year": "1934",
@@ -85063,6 +85949,18 @@
           "Drama",
           "Film-Noir",
           "Romance"
+        ]
+      },
+      {
+        "title": "The Midnight Meat Train",
+        "imdbId": "tt0805570",
+        "year": "2008",
+        "slug": "the-midnight-meat-train-2008",
+        "grade": "D",
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Thriller"
         ]
       },
       {
@@ -85116,9 +86014,9 @@
     ],
     "writerNames": [
       "Donald Ogden Stewart",
+      "Howard Lindsay",
       "Russel Crouse",
-      "Clarence Day",
-      "Howard Lindsay"
+      "Clarence Day"
     ],
     "principalCastNames": [
       "William Powell",
@@ -85282,8 +86180,8 @@
       "Darren Lynn Bousman"
     ],
     "writerNames": [
-      "James Wan",
-      "Leigh Whannell"
+      "Leigh Whannell",
+      "James Wan"
     ],
     "principalCastNames": [
       "Tobin Bell",
@@ -85437,8 +86335,8 @@
       "Justus Addiss"
     ],
     "writerNames": [
-      "Melvin Levy",
-      "Leo Gordon"
+      "Leo Gordon",
+      "Melvin Levy"
     ],
     "principalCastNames": [
       "Harry Lauter",
@@ -85709,8 +86607,8 @@
       "Philippe Mora"
     ],
     "writerNames": [
-      "Gary Brandner",
-      "Robert Sarno"
+      "Robert Sarno",
+      "Gary Brandner"
     ],
     "principalCastNames": [
       "Christopher Lee",
@@ -85748,15 +86646,16 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "Hannie Caulder",
-            "imdbId": "tt0068675",
-            "year": "1971",
-            "slug": "hannie-caulder-1971",
-            "grade": "B",
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
+            "year": "1972",
+            "slug": "horror-express-1972",
+            "grade": "D+",
             "genres": [
-              "Crime",
-              "Drama",
-              "Western"
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
             ]
           },
           {
@@ -85820,6 +86719,17 @@
         ]
       },
       {
+        "title": "Human Lanterns",
+        "imdbId": "tt0084586",
+        "year": "1982",
+        "slug": "human-lanterns-1982",
+        "grade": "C",
+        "genres": [
+          "Horror",
+          "Action"
+        ]
+      },
+      {
         "title": "The Human Tornado",
         "imdbId": "tt0074653",
         "year": "1976",
@@ -85829,17 +86739,6 @@
           "Action",
           "Comedy",
           "Drama"
-        ]
-      },
-      {
-        "title": "Humanoids from the Deep",
-        "imdbId": "tt0080904",
-        "year": "1980",
-        "slug": "humanoids-from-the-deep-1980",
-        "grade": "B-",
-        "genres": [
-          "Horror",
-          "Sci-Fi"
         ]
       }
     ]
@@ -85973,14 +86872,14 @@
       "Peyton Reed"
     ],
     "writerNames": [
-      "Larry Lieber",
-      "Paul Rudd",
-      "Andrew Barrer",
-      "Jack Kirby",
-      "Erik Sommers",
       "Gabriel Ferrari",
+      "Larry Lieber",
+      "Erik Sommers",
       "Chris McKenna",
-      "Stan Lee"
+      "Paul Rudd",
+      "Stan Lee",
+      "Andrew Barrer",
+      "Jack Kirby"
     ],
     "principalCastNames": [
       "Paul Rudd",
@@ -86197,9 +87096,9 @@
       "Busby Berkeley"
     ],
     "writerNames": [
+      "Norman Reilly Raine",
       "Faith Baldwin",
-      "Horace Jackson",
-      "Norman Reilly Raine"
+      "Horace Jackson"
     ],
     "principalCastNames": [
       "Wayne Morris",
@@ -86532,8 +87431,8 @@
       "Peter Sykes"
     ],
     "writerNames": [
-      "Dennis Wheatley",
       "Christopher Wicking",
+      "Dennis Wheatley",
       "John Peacock"
     ],
     "principalCastNames": [
@@ -86577,16 +87476,6 @@
         "creditKind": "performer",
         "titles": [
           {
-            "title": "I, Monster",
-            "imdbId": "tt0068727",
-            "year": "1971",
-            "slug": "i-monster-1971",
-            "grade": "D+",
-            "genres": [
-              "Horror"
-            ]
-          },
-          {
             "title": "Hannie Caulder",
             "imdbId": "tt0068675",
             "year": "1971",
@@ -86596,6 +87485,19 @@
               "Crime",
               "Drama",
               "Western"
+            ]
+          },
+          {
+            "title": "Horror Express",
+            "imdbId": "tt0068713",
+            "year": "1972",
+            "slug": "horror-express-1972",
+            "grade": "D+",
+            "genres": [
+              "Adventure",
+              "Horror",
+              "Sci-Fi",
+              "Thriller"
             ]
           },
           {
@@ -86847,8 +87749,8 @@
       "Michael Sarnoski"
     ],
     "writerNames": [
-      "Michael Sarnoski",
-      "Vanessa Block"
+      "Vanessa Block",
+      "Michael Sarnoski"
     ],
     "principalCastNames": [
       "Nicolas Cage",
@@ -87035,8 +87937,8 @@
       "Ingmar Bergman"
     ],
     "writerNames": [
-      "Ingmar Bergman",
-      "Olle L\u00e4nsberg"
+      "Olle L\u00e4nsberg",
+      "Ingmar Bergman"
     ],
     "principalCastNames": [
       "Nine-Christine J\u00f6nsson",
@@ -87190,9 +88092,9 @@
       "Tony Richardson"
     ],
     "writerNames": [
-      "Christopher Isherwood",
       "Evelyn Waugh",
-      "Terry Southern"
+      "Terry Southern",
+      "Christopher Isherwood"
     ],
     "principalCastNames": [
       "Robert Morse",
@@ -87524,8 +88426,8 @@
       "Jon Turteltaub"
     ],
     "writerNames": [
-      "Daniel G. Sullivan",
-      "Fredric Lebow"
+      "Fredric Lebow",
+      "Daniel G. Sullivan"
     ],
     "principalCastNames": [
       "Sandra Bullock",
@@ -88099,12 +89001,12 @@
       "Matthew Vaughn"
     ],
     "writerNames": [
-      "Bryan Singer",
-      "Ashley Miller",
       "Matthew Vaughn",
-      "Sheldon Turner",
       "Zack Stentz",
-      "Jane Goldman"
+      "Bryan Singer",
+      "Jane Goldman",
+      "Ashley Miller",
+      "Sheldon Turner"
     ],
     "principalCastNames": [
       "James McAvoy",
@@ -88267,16 +89169,14 @@
         ]
       },
       {
-        "title": "Mortal Kombat",
-        "imdbId": "tt0293429",
-        "year": "2021",
-        "slug": "mortal-kombat-2021",
-        "grade": "B-",
+        "title": "The Midnight Meat Train",
+        "imdbId": "tt0805570",
+        "year": "2008",
+        "slug": "the-midnight-meat-train-2008",
+        "grade": "D",
         "genres": [
-          "Action",
-          "Adventure",
-          "Fantasy",
-          "Sci-Fi",
+          "Horror",
+          "Mystery",
           "Thriller"
         ]
       }
@@ -88306,11 +89206,11 @@
       "Rob Spera"
     ],
     "writerNames": [
-      "William Wells",
       "Doug Hall",
       "Jon Huffman",
-      "Rob Spera",
-      "Alan Reynolds"
+      "Alan Reynolds",
+      "William Wells",
+      "Rob Spera"
     ],
     "principalCastNames": [
       "Warwick Davis",
@@ -88408,9 +89308,9 @@
       "Riccardo Freda"
     ],
     "writerNames": [
-      "Riccardo Freda",
+      "Piero Regnoli",
       "Mario Bava",
-      "Piero Regnoli"
+      "Riccardo Freda"
     ],
     "principalCastNames": [
       "Gianna Maria Canale",
@@ -88690,8 +89590,8 @@
     ],
     "writerNames": [
       "Paul Mason",
-      "Samuel Roeca",
       "Elsie Oakes Barber",
+      "Samuel Roeca",
       "Orin Borsten"
     ],
     "principalCastNames": [
@@ -88961,9 +89861,9 @@
       "Morten Tyldum"
     ],
     "writerNames": [
+      "Jo Nesb\u00f8",
       "Ulf Ryberg",
-      "Lars Gudmestad",
-      "Jo Nesb\u00f8"
+      "Lars Gudmestad"
     ],
     "principalCastNames": [
       "Aksel Hennie",
@@ -89068,11 +89968,11 @@
       "Rouben Mamoulian"
     ],
     "writerNames": [
+      "Daniel Taradash",
       "Clifford Odets",
-      "Victor Heerman",
-      "Sarah Y. Mason",
       "Lewis Meltzer",
-      "Daniel Taradash"
+      "Victor Heerman",
+      "Sarah Y. Mason"
     ],
     "principalCastNames": [
       "Barbara Stanwyck",
@@ -89504,9 +90404,9 @@
       "John Cromwell"
     ],
     "writerNames": [
-      "William Wister Haines",
       "W.R. Burnett",
-      "Bartlett Cormack"
+      "Bartlett Cormack",
+      "William Wister Haines"
     ],
     "principalCastNames": [
       "Robert Mitchum",
@@ -89907,8 +90807,8 @@
       "Taika Waititi"
     ],
     "writerNames": [
-      "Jennifer Kaytin Robinson",
-      "Taika Waititi"
+      "Taika Waititi",
+      "Jennifer Kaytin Robinson"
     ],
     "principalCastNames": [
       "Chris Hemsworth",
@@ -90201,8 +91101,8 @@
     ],
     "writerNames": [
       "Philip Klein",
-      "Lynn Starling",
-      "Mary F. Watkins"
+      "Mary F. Watkins",
+      "Lynn Starling"
     ],
     "principalCastNames": [
       "Jeanette MacDonald",
@@ -90362,9 +91262,9 @@
       "William Dieterle"
     ],
     "writerNames": [
-      "Rian James",
       "James Seymour",
-      "Max Trell"
+      "Max Trell",
+      "Rian James"
     ],
     "principalCastNames": [
       "William Powell",
@@ -90844,8 +91744,8 @@
       "Bob Rafelson"
     ],
     "writerNames": [
-      "James M. Cain",
-      "David Mamet"
+      "David Mamet",
+      "James M. Cain"
     ],
     "principalCastNames": [
       "Jack Nicholson",
@@ -91121,8 +92021,8 @@
       "Mark Herrier"
     ],
     "writerNames": [
-      "Mitchell Smith",
-      "Alan Ormsby"
+      "Alan Ormsby",
+      "Mitchell Smith"
     ],
     "principalCastNames": [
       "Jill Schoelen",
@@ -91217,11 +92117,11 @@
       "Frank Tuttle"
     ],
     "writerNames": [
-      "Benjamin Glazer",
+      "Henri Falk",
       "Ren\u00e9 Peter",
-      "George Marion Jr.",
+      "Benjamin Glazer",
       "Avery Hopwood",
-      "Henri Falk"
+      "George Marion Jr."
     ],
     "principalCastNames": [
       "Lili Damita",
@@ -91392,8 +92292,8 @@
       "Francis Lawrence"
     ],
     "writerNames": [
-      "Peter Craig",
       "Danny Strong",
+      "Peter Craig",
       "Suzanne Collins"
     ],
     "principalCastNames": [
@@ -91755,9 +92655,9 @@
       "Tay Garnett"
     ],
     "writerNames": [
-      "Niven Busch",
+      "Harry Ruskin",
       "James M. Cain",
-      "Harry Ruskin"
+      "Niven Busch"
     ],
     "principalCastNames": [
       "Lana Turner",
@@ -91859,8 +92759,8 @@
       "\u00c1lex de la Iglesia"
     ],
     "writerNames": [
-      "Jorge Guerricaechevarr\u00eda",
-      "\u00c1lex de la Iglesia"
+      "\u00c1lex de la Iglesia",
+      "Jorge Guerricaechevarr\u00eda"
     ],
     "principalCastNames": [
       "Antonio Resines",
@@ -91955,9 +92855,9 @@
       "John McTiernan"
     ],
     "writerNames": [
-      "Jeb Stuart",
       "Roderick Thorp",
-      "Steven E. de Souza"
+      "Steven E. de Souza",
+      "Jeb Stuart"
     ],
     "principalCastNames": [
       "Bruce Willis",
@@ -92081,8 +92981,8 @@
     ],
     "writerNames": [
       "Louise Long",
-      "Richard H. Digges Jr.",
       "S.S. Van Dine",
+      "Richard H. Digges Jr.",
       "Bartlett Cormack"
     ],
     "principalCastNames": [
@@ -92874,9 +93774,9 @@
     ],
     "writerNames": [
       "Arnold Schulman",
-      "Rowland Barber",
       "Sidney Michaels",
-      "Norman Lear"
+      "Norman Lear",
+      "Rowland Barber"
     ],
     "principalCastNames": [
       "Jason Robards",
@@ -92940,7 +93840,7 @@
         "imdbId": "tt0087798",
         "year": "1985",
         "slug": "night-train-to-terror-1985",
-        "grade": "C-",
+        "grade": "C",
         "genres": [
           "Drama",
           "Fantasy",
@@ -93088,10 +93988,10 @@
       "Giulio Paradisi"
     ],
     "writerNames": [
-      "Giulio Paradisi",
+      "Robert Mundi",
       "Luciano Comici",
-      "Ovidio G. Assonitis",
-      "Robert Mundi"
+      "Giulio Paradisi",
+      "Ovidio G. Assonitis"
     ],
     "principalCastNames": [
       "Mel Ferrer",
@@ -93341,15 +94241,14 @@
         ]
       },
       {
-        "title": "No Time to Die",
-        "imdbId": "tt2382320",
-        "year": "2021",
-        "slug": "no-time-to-die-2021",
-        "grade": "D",
+        "title": "Ninja in the Dragon's Den",
+        "imdbId": "tt0084267",
+        "year": "1982",
+        "slug": "ninja-in-the-dragons-den-1982",
+        "grade": "B",
         "genres": [
           "Action",
-          "Adventure",
-          "Thriller"
+          "Comedy"
         ]
       }
     ]
@@ -93538,8 +94437,8 @@
       "Lucio Fulci"
     ],
     "writerNames": [
-      "Alberto Silvestri",
-      "Roberto Gianviti"
+      "Roberto Gianviti",
+      "Alberto Silvestri"
     ],
     "principalCastNames": [
       "Franco Nero",
@@ -93699,11 +94598,11 @@
       "Brian Yuzna"
     ],
     "writerNames": [
-      "Christophe Gans",
-      "Brian Yuzna",
+      "Brent V. Friedman",
       "H.P. Lovecraft",
+      "Christophe Gans",
       "Kazunori It\u00f4",
-      "Brent V. Friedman"
+      "Brian Yuzna"
     ],
     "principalCastNames": [
       "Jeffrey Combs",

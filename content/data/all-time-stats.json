@@ -1,9 +1,9 @@
 [
   {
-    "viewingCount": 1583,
-    "titleCount": 1295,
-    "reviewCount": 702,
-    "watchlistTitlesReviewedCount": 385,
+    "viewingCount": 1589,
+    "titleCount": 1298,
+    "reviewCount": 706,
+    "watchlistTitlesReviewedCount": 388,
     "gradeDistribution": [
       {
         "name": "A+",
@@ -27,7 +27,7 @@
       },
       {
         "name": "B",
-        "count": 58,
+        "count": 59,
         "sortValue": 9
       },
       {
@@ -42,22 +42,22 @@
       },
       {
         "name": "C",
-        "count": 60,
+        "count": 62,
         "sortValue": 6
       },
       {
         "name": "C-",
-        "count": 76,
+        "count": 75,
         "sortValue": 5
       },
       {
         "name": "D+",
-        "count": 121,
+        "count": 122,
         "sortValue": 4
       },
       {
         "name": "D",
-        "count": 68,
+        "count": 69,
         "sortValue": 3
       },
       {
@@ -74,7 +74,7 @@
     "mediaDistribution": [
       {
         "name": "Blu-ray",
-        "count": 277
+        "count": 279
       },
       {
         "name": "Netflix",
@@ -136,11 +136,11 @@
       },
       {
         "name": "1970s",
-        "count": 174
+        "count": 175
       },
       {
         "name": "1980s",
-        "count": 257
+        "count": 261
       },
       {
         "name": "1990s",
@@ -148,7 +148,7 @@
       },
       {
         "name": "2000s",
-        "count": 125
+        "count": 126
       },
       {
         "name": "2010s",
@@ -715,7 +715,7 @@
             "date": "2015-06-23",
             "slug": null,
             "title": "The Beyond",
-            "medium": null,
+            "medium": "35mm",
             "venue": "Alamo Drafthouse Cinema - Winchester",
             "year": "1981"
           },
@@ -724,7 +724,7 @@
             "date": "2015-11-05",
             "slug": null,
             "title": "The Beyond",
-            "medium": null,
+            "medium": "35mm",
             "venue": "AFI Silver",
             "year": "1981"
           },
@@ -3898,7 +3898,7 @@
       },
       {
         "name": "Christopher Lee",
-        "count": 35,
+        "count": 36,
         "slug": "christopher-lee",
         "viewings": [
           {
@@ -3931,7 +3931,7 @@
           {
             "sequence": 125,
             "date": "2012-03-25",
-            "slug": null,
+            "slug": "horror-express-1972",
             "title": "Horror Express",
             "medium": "TCM HD",
             "venue": null,
@@ -4215,6 +4215,15 @@
             "medium": "iTunes",
             "venue": null,
             "year": "1985"
+          },
+          {
+            "sequence": 1587,
+            "date": "2024-04-27",
+            "slug": "horror-express-1972",
+            "title": "Horror Express",
+            "medium": null,
+            "venue": "Alamo Drafthouse Cinema - One Loudoun",
+            "year": "1972"
           }
         ]
       },
@@ -4881,7 +4890,7 @@
             "date": "2015-12-29",
             "slug": null,
             "title": "The Hateful Eight",
-            "medium": null,
+            "medium": "70mm",
             "venue": "AFI Silver",
             "year": "2015"
           },
@@ -5300,243 +5309,243 @@
         ]
       },
       {
-        "name": "Robert Downey Jr.",
+        "name": "Peter Cushing",
         "count": 26,
-        "slug": null,
+        "slug": "peter-cushing",
         "viewings": [
           {
-            "sequence": 22,
-            "date": "2012-01-19",
-            "slug": "sherlock-holmes-a-game-of-shadows-2011",
-            "title": "Sherlock Holmes: A Game of Shadows",
-            "medium": null,
-            "venue": "AMC Tysons Corner 16",
-            "year": "2011"
+            "sequence": 20,
+            "date": "2012-01-15",
+            "slug": null,
+            "title": "The Gorgon",
+            "medium": "TCM HD",
+            "venue": null,
+            "year": "1964"
           },
           {
-            "sequence": 174,
-            "date": "2012-05-03",
+            "sequence": 50,
+            "date": "2012-01-29",
             "slug": null,
-            "title": "The Avengers",
-            "medium": null,
-            "venue": "AMC Tysons Corner 16",
-            "year": "2012"
+            "title": "She",
+            "medium": "TCM HD",
+            "venue": null,
+            "year": "1965"
           },
           {
-            "sequence": 283,
-            "date": "2013-02-17",
+            "sequence": 125,
+            "date": "2012-03-25",
+            "slug": "horror-express-1972",
+            "title": "Horror Express",
+            "medium": "TCM HD",
+            "venue": null,
+            "year": "1972"
+          },
+          {
+            "sequence": 213,
+            "date": "2012-08-10",
             "slug": null,
-            "title": "Iron Man",
+            "title": "Frankenstein and the Monster from Hell",
+            "medium": "Netflix",
+            "venue": null,
+            "year": "1974"
+          },
+          {
+            "sequence": 233,
+            "date": "2012-10-28",
+            "slug": null,
+            "title": "The Hound of the Baskervilles",
+            "medium": "TCM HD",
+            "venue": null,
+            "year": "1959"
+          },
+          {
+            "sequence": 245,
+            "date": "2012-11-09",
+            "slug": null,
+            "title": "Cash on Demand",
+            "medium": "TCM HD",
+            "venue": null,
+            "year": "1961"
+          },
+          {
+            "sequence": 418,
+            "date": "2014-08-16",
+            "slug": "horror-of-dracula-1958",
+            "title": "Horror of Dracula",
+            "medium": "DVD",
+            "venue": null,
+            "year": "1958"
+          },
+          {
+            "sequence": 456,
+            "date": "2014-12-20",
+            "slug": "horror-of-dracula-1958",
+            "title": "Horror of Dracula",
             "medium": "Blu-ray",
             "venue": null,
-            "year": "2008"
+            "year": "1958"
           },
           {
-            "sequence": 284,
-            "date": "2013-02-17",
-            "slug": null,
-            "title": "Iron Man 2",
-            "medium": "Blu-ray",
+            "sequence": 514,
+            "date": "2015-08-11",
+            "slug": "i-monster-1971",
+            "title": "I, Monster",
+            "medium": "Shudder",
             "venue": null,
-            "year": "2010"
+            "year": "1971"
           },
           {
-            "sequence": 299,
-            "date": "2013-05-02",
-            "slug": null,
-            "title": "Iron Man 3",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2013"
-          },
-          {
-            "sequence": 459,
-            "date": "2014-12-24",
-            "slug": null,
-            "title": "Iron Man 3",
-            "medium": "Blu-ray",
+            "sequence": 515,
+            "date": "2015-08-13",
+            "slug": "and-now-the-screaming-starts-1973",
+            "title": "And Now the Screaming Starts!",
+            "medium": "Shudder",
             "venue": null,
-            "year": "2013"
+            "year": "1973"
           },
           {
-            "sequence": 492,
-            "date": "2015-04-30",
-            "slug": "avengers-age-of-ultron-2015",
-            "title": "Avengers: Age of Ultron",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2015"
+            "sequence": 517,
+            "date": "2015-08-15",
+            "slug": "shock-waves-1977",
+            "title": "Shock Waves",
+            "medium": "Shudder",
+            "venue": null,
+            "year": "1977"
           },
           {
-            "sequence": 547,
-            "date": "2016-05-12",
-            "slug": "captain-america-civil-war-2016",
-            "title": "Captain America: Civil War",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2016"
-          },
-          {
-            "sequence": 569,
-            "date": "2016-11-12",
-            "slug": "captain-america-civil-war-2016",
-            "title": "Captain America: Civil War",
+            "sequence": 520,
+            "date": "2015-09-05",
+            "slug": "the-house-that-dripped-blood-1971",
+            "title": "The House That Dripped Blood",
             "medium": "Amazon",
             "venue": null,
-            "year": "2016"
+            "year": "1971"
           },
           {
-            "sequence": 677,
-            "date": "2018-05-18",
-            "slug": "avengers-infinity-war-2018",
-            "title": "Avengers: Infinity War",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2018"
-          },
-          {
-            "sequence": 679,
-            "date": "2018-05-22",
-            "slug": "avengers-infinity-war-2018",
-            "title": "Avengers: Infinity War",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2018"
-          },
-          {
-            "sequence": 681,
-            "date": "2018-05-27",
-            "slug": "avengers-infinity-war-2018",
-            "title": "Avengers: Infinity War",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2018"
-          },
-          {
-            "sequence": 683,
-            "date": "2018-06-13",
-            "slug": "avengers-infinity-war-2018",
-            "title": "Avengers: Infinity War",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2018"
-          },
-          {
-            "sequence": 750,
-            "date": "2019-05-13",
-            "slug": "avengers-endgame-2019",
-            "title": "Avengers: Endgame",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2019"
-          },
-          {
-            "sequence": 751,
-            "date": "2019-05-16",
-            "slug": "avengers-endgame-2019",
-            "title": "Avengers: Endgame",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2019"
-          },
-          {
-            "sequence": 756,
-            "date": "2019-06-03",
-            "slug": "avengers-endgame-2019",
-            "title": "Avengers: Endgame",
-            "medium": null,
-            "venue": "Alamo Drafthouse Cinema - One Loudoun",
-            "year": "2019"
-          },
-          {
-            "sequence": 824,
-            "date": "2020-03-28",
-            "slug": "avengers-infinity-war-2018",
-            "title": "Avengers: Infinity War",
-            "medium": "4k UHD Blu-ray",
+            "sequence": 521,
+            "date": "2015-09-19",
+            "slug": "asylum-1972",
+            "title": "Asylum",
+            "medium": "Amazon",
             "venue": null,
-            "year": "2018"
+            "year": "1972"
           },
           {
-            "sequence": 825,
-            "date": "2020-04-04",
+            "sequence": 525,
+            "date": "2015-10-13",
             "slug": null,
-            "title": "Iron Man",
-            "medium": "4k UHD Blu-ray",
-            "venue": null,
-            "year": "2008"
+            "title": "The Creeping Flesh",
+            "medium": null,
+            "venue": "AFI Silver",
+            "year": "1973"
           },
           {
-            "sequence": 827,
-            "date": "2020-05-02",
-            "slug": null,
-            "title": "Iron Man 2",
-            "medium": "4k UHD Blu-ray",
+            "sequence": 527,
+            "date": "2015-10-24",
+            "slug": "the-curse-of-frankenstein-1957",
+            "title": "The Curse of Frankenstein",
+            "medium": "Blu-ray",
             "venue": null,
-            "year": "2010"
+            "year": "1957"
           },
           {
-            "sequence": 830,
-            "date": "2020-05-23",
-            "slug": null,
-            "title": "The Avengers",
-            "medium": "4k UHD Blu-ray",
-            "venue": null,
-            "year": "2012"
+            "sequence": 546,
+            "date": "2016-05-04",
+            "slug": "star-wars-episode-iv-a-new-hope-1977",
+            "title": "Star Wars: Episode IV - A New Hope",
+            "medium": null,
+            "venue": "Alamo Drafthouse Cinema - One Loudoun",
+            "year": "1977"
           },
           {
-            "sequence": 831,
-            "date": "2020-05-31",
-            "slug": null,
-            "title": "Iron Man 3",
-            "medium": "4k UHD Blu-ray",
+            "sequence": 721,
+            "date": "2018-12-25",
+            "slug": "horror-of-dracula-1958",
+            "title": "Horror of Dracula",
+            "medium": "Blu-ray",
             "venue": null,
-            "year": "2013"
+            "year": "1958"
           },
           {
-            "sequence": 839,
-            "date": "2020-07-11",
-            "slug": "avengers-age-of-ultron-2015",
-            "title": "Avengers: Age of Ultron",
-            "medium": "4k UHD Blu-ray",
-            "venue": null,
-            "year": "2015"
-          },
-          {
-            "sequence": 844,
-            "date": "2020-07-25",
-            "slug": "captain-america-civil-war-2016",
-            "title": "Captain America: Civil War",
-            "medium": "4k UHD Blu-ray",
-            "venue": null,
-            "year": "2016"
-          },
-          {
-            "sequence": 865,
-            "date": "2020-09-05",
-            "slug": "spider-man-homecoming-2017",
-            "title": "Spider-Man: Homecoming",
+            "sequence": 847,
+            "date": "2020-08-01",
+            "slug": "star-wars-episode-iv-a-new-hope-1977",
+            "title": "Star Wars: Episode IV - A New Hope",
             "medium": "iTunes",
             "venue": null,
-            "year": "2017"
+            "year": "1977"
           },
           {
-            "sequence": 893,
-            "date": "2020-10-17",
-            "slug": "avengers-infinity-war-2018",
-            "title": "Avengers: Infinity War",
-            "medium": "4k UHD Blu-ray",
+            "sequence": 861,
+            "date": "2020-08-27",
+            "slug": "the-abominable-snowman-1957",
+            "title": "The Abominable Snowman",
+            "medium": "Blu-ray",
             "venue": null,
-            "year": "2018"
+            "year": "1957"
           },
           {
-            "sequence": 918,
-            "date": "2020-11-14",
-            "slug": "avengers-endgame-2019",
-            "title": "Avengers: Endgame",
-            "medium": "4k UHD Blu-ray",
+            "sequence": 872,
+            "date": "2020-09-19",
+            "slug": "the-curse-of-frankenstein-1957",
+            "title": "The Curse of Frankenstein",
+            "medium": "Blu-ray",
             "venue": null,
-            "year": "2019"
+            "year": "1957"
+          },
+          {
+            "sequence": 882,
+            "date": "2020-10-06",
+            "slug": "a-chump-at-oxford-1939",
+            "title": "A Chump at Oxford",
+            "medium": "Watch TCM",
+            "venue": null,
+            "year": "1940"
+          },
+          {
+            "sequence": 936,
+            "date": "2020-12-08",
+            "slug": "horror-of-dracula-1958",
+            "title": "Horror of Dracula",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1958"
+          },
+          {
+            "sequence": 1099,
+            "date": "2021-05-10",
+            "slug": "the-man-in-the-iron-mask-1939",
+            "title": "The Man in the Iron Mask",
+            "medium": "Kanopy",
+            "venue": null,
+            "year": "1939"
+          },
+          {
+            "sequence": 1119,
+            "date": "2021-06-28",
+            "slug": "violent-playground-1958",
+            "title": "Violent Playground",
+            "medium": "Watch TCM",
+            "venue": null,
+            "year": "1958"
+          },
+          {
+            "sequence": 1410,
+            "date": "2022-10-30",
+            "slug": null,
+            "title": "Vigil in the Night",
+            "medium": "Watch TCM",
+            "venue": null,
+            "year": "1940"
+          },
+          {
+            "sequence": 1587,
+            "date": "2024-04-27",
+            "slug": "horror-express-1972",
+            "title": "Horror Express",
+            "medium": null,
+            "venue": "Alamo Drafthouse Cinema - One Loudoun",
+            "year": "1972"
           }
         ]
       }
@@ -6769,7 +6778,7 @@
             "date": "2015-06-23",
             "slug": null,
             "title": "The Beyond",
-            "medium": null,
+            "medium": "35mm",
             "venue": "Alamo Drafthouse Cinema - Winchester",
             "year": "1981"
           },
@@ -6787,7 +6796,7 @@
             "date": "2015-11-05",
             "slug": null,
             "title": "The Beyond",
-            "medium": null,
+            "medium": "35mm",
             "venue": "AFI Silver",
             "year": "1981"
           },
@@ -6875,7 +6884,7 @@
             "date": "2015-06-23",
             "slug": null,
             "title": "The Beyond",
-            "medium": null,
+            "medium": "35mm",
             "venue": "Alamo Drafthouse Cinema - Winchester",
             "year": "1981"
           },
@@ -6884,7 +6893,7 @@
             "date": "2015-11-05",
             "slug": null,
             "title": "The Beyond",
-            "medium": null,
+            "medium": "35mm",
             "venue": "AFI Silver",
             "year": "1981"
           },

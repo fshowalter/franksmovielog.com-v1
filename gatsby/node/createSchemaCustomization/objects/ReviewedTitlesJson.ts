@@ -199,6 +199,7 @@ export const ReviewedTitlesJson = {
                   eq: source.imdbId,
                 },
               },
+              fileAbsolutePath: { regex: "//reviews/" },
             },
           },
         });
