@@ -1,12 +1,12 @@
 {
   "year": "2024",
-  "newTitleCount": 20,
-  "viewingCount": 29,
-  "titleCount": 29,
+  "newTitleCount": 23,
+  "viewingCount": 35,
+  "titleCount": 34,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 13
+      "count": 15
     },
     {
       "name": "4k UHD Blu-ray",
@@ -18,6 +18,10 @@
     },
     {
       "name": "WEBRip",
+      "count": 1
+    },
+    {
+      "name": "35mm",
       "count": 1
     },
     {
@@ -36,11 +40,11 @@
     },
     {
       "name": "1970s",
-      "count": 5
+      "count": 6
     },
     {
       "name": "1980s",
-      "count": 9
+      "count": 13
     },
     {
       "name": "1990s",
@@ -48,7 +52,7 @@
     },
     {
       "name": "2000s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "2010s",
@@ -59,8 +63,141 @@
       "count": 5
     }
   ],
-  "mostWatchedTitles": [],
+  "mostWatchedTitles": [
+    {
+      "title": "Night Train to Terror",
+      "imdbId": "tt0087798",
+      "year": "1985",
+      "count": 2,
+      "slug": "night-train-to-terror-1985"
+    }
+  ],
   "mostWatchedDirectors": [
+    {
+      "name": "John Carr",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Phillip Marshak",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Tom McGowan",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Jay Schlossberg-Cohen",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Gregg G. Tallas",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
     {
       "name": "John Ford",
       "count": 2,
@@ -88,6 +225,40 @@
     }
   ],
   "mostWatchedPerformers": [
+    {
+      "name": "Faith Clift",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        },
+        {
+          "sequence": 1587,
+          "date": "2024-04-27",
+          "slug": "horror-express-1972",
+          "title": "Horror Express",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1972"
+        }
+      ]
+    },
     {
       "name": "Warwick Davis",
       "count": 3,
@@ -123,230 +294,231 @@
       ]
     },
     {
-      "name": "Luis Barboo",
+      "name": "Barbara Wyler",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1565,
-          "date": "2024-02-01",
-          "slug": null,
-          "title": "Conan the Barbarian",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1982"
-        },
-        {
-          "sequence": 1573,
-          "date": "2024-02-24",
-          "slug": null,
-          "title": "Satan's Blood",
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
           "medium": "Blu-ray",
-          "venue": null,
-          "year": "1978"
-        }
-      ]
-    },
-    {
-      "name": "Jack Taylor",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1565,
-          "date": "2024-02-01",
-          "slug": null,
-          "title": "Conan the Barbarian",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1982"
-        },
-        {
-          "sequence": 1567,
-          "date": "2024-02-03",
-          "slug": null,
-          "title": "Pieces",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1982"
-        }
-      ]
-    },
-    {
-      "name": "Christopher George",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1567,
-          "date": "2024-02-03",
-          "slug": null,
-          "title": "Pieces",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1982"
-        },
-        {
-          "sequence": 1581,
-          "date": "2024-04-10",
-          "slug": "city-of-the-living-dead-1980",
-          "title": "City of the Living Dead",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1980"
-        }
-      ]
-    },
-    {
-      "name": "Allan Graf",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1569,
-          "date": "2024-02-15",
-          "slug": null,
-          "title": "Southern Comfort",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1981"
-        },
-        {
-          "sequence": 1579,
-          "date": "2024-03-27",
-          "slug": null,
-          "title": "Magnolia",
-          "medium": null,
-          "venue": "Prince Charles Cinema",
-          "year": "1999"
-        }
-      ]
-    },
-    {
-      "name": "William H. Macy",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1570,
-          "date": "2024-02-15",
-          "slug": null,
-          "title": "The Last Dragon",
-          "medium": "4k UHD Blu-ray",
           "venue": null,
           "year": "1985"
         },
         {
-          "sequence": 1579,
-          "date": "2024-03-27",
-          "slug": null,
-          "title": "Magnolia",
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
           "medium": null,
-          "venue": "Prince Charles Cinema",
-          "year": "1999"
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
         }
       ]
     },
     {
-      "name": "Lia Chang",
+      "name": "Jamie Scoggin",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1570,
-          "date": "2024-02-15",
-          "slug": null,
-          "title": "The Last Dragon",
-          "medium": "4k UHD Blu-ray",
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
           "venue": null,
           "year": "1985"
         },
         {
-          "sequence": 1575,
-          "date": "2024-02-29",
-          "slug": "frankenhooker-1990",
-          "title": "Frankenhooker",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1990"
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
         }
       ]
     },
     {
-      "name": "John Wayne",
-      "count": 2,
-      "slug": "john-wayne",
-      "viewings": [
-        {
-          "sequence": 1576,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "Stagecoach",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1939"
-        },
-        {
-          "sequence": 1577,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "The Man Who Shot Liberty Valance",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1962"
-        }
-      ]
-    },
-    {
-      "name": "Andy Devine",
+      "name": "Stacey Lyons",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1576,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "Stagecoach",
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
           "medium": "Blu-ray",
           "venue": null,
-          "year": "1939"
+          "year": "1985"
         },
         {
-          "sequence": 1577,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "The Man Who Shot Liberty Valance",
-          "medium": "4k UHD Blu-ray",
-          "venue": null,
-          "year": "1962"
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
         }
       ]
     },
     {
-      "name": "John Carradine",
+      "name": "Linda Maderas",
       "count": 2,
       "slug": null,
       "viewings": [
         {
-          "sequence": 1576,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "Stagecoach",
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
           "medium": "Blu-ray",
           "venue": null,
-          "year": "1939"
+          "year": "1985"
         },
         {
-          "sequence": 1577,
-          "date": "2024-03-12",
-          "slug": null,
-          "title": "The Man Who Shot Liberty Valance",
-          "medium": "4k UHD Blu-ray",
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Melanie Montilla",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
           "venue": null,
-          "year": "1962"
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Chantel Morogeus",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Byron Yordan",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Richard Sanford",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
         }
       ]
     }
   ],
-  "mostWatchedWriters": []
+  "mostWatchedWriters": [
+    {
+      "name": "Philip Yordan",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1556,
+          "date": "2024-01-04",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1985"
+        },
+        {
+          "sequence": 1586,
+          "date": "2024-04-27",
+          "slug": "night-train-to-terror-1985",
+          "title": "Night Train to Terror",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1985"
+        }
+      ]
+    }
+  ]
 }

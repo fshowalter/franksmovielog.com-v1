@@ -29,7 +29,15 @@
       "count": 4
     },
     {
+      "name": "35mm",
+      "count": 2
+    },
+    {
       "name": "TCM",
+      "count": 1
+    },
+    {
+      "name": "70mm",
       "count": 1
     }
   ],
@@ -166,7 +174,7 @@
           "date": "2015-06-23",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "Alamo Drafthouse Cinema - Winchester",
           "year": "1981"
         },
@@ -175,7 +183,7 @@
           "date": "2015-11-05",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "AFI Silver",
           "year": "1981"
         }
@@ -482,7 +490,7 @@
           "date": "2015-12-29",
           "slug": null,
           "title": "The Hateful Eight",
-          "medium": null,
+          "medium": "70mm",
           "venue": "AFI Silver",
           "year": "2015"
         }
@@ -713,7 +721,7 @@
           "date": "2015-06-23",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "Alamo Drafthouse Cinema - Winchester",
           "year": "1981"
         },
@@ -731,7 +739,7 @@
           "date": "2015-11-05",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "AFI Silver",
           "year": "1981"
         }
@@ -922,7 +930,7 @@
           "date": "2015-06-23",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "Alamo Drafthouse Cinema - Winchester",
           "year": "1981"
         },
@@ -931,7 +939,7 @@
           "date": "2015-11-05",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "AFI Silver",
           "year": "1981"
         }
@@ -947,7 +955,7 @@
           "date": "2015-06-23",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "Alamo Drafthouse Cinema - Winchester",
           "year": "1981"
         },
@@ -956,7 +964,7 @@
           "date": "2015-11-05",
           "slug": null,
           "title": "The Beyond",
-          "medium": null,
+          "medium": "35mm",
           "venue": "AFI Silver",
           "year": "1981"
         }

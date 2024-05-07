@@ -35,6 +35,14 @@
     {
       "name": "DVD",
       "count": 2
+    },
+    {
+      "name": "35mm",
+      "count": 1
+    },
+    {
+      "name": "70mm",
+      "count": 1
     }
   ],
   "decadeDistribution": [
@@ -364,7 +372,7 @@
           "date": "2019-08-22",
           "slug": null,
           "title": "Once Upon a Time... in Hollywood",
-          "medium": null,
+          "medium": "35mm",
           "venue": "AFI Silver",
           "year": "2019"
         },
@@ -626,7 +634,7 @@
           "date": "2019-08-22",
           "slug": null,
           "title": "Once Upon a Time... in Hollywood",
-          "medium": null,
+          "medium": "35mm",
           "venue": "AFI Silver",
           "year": "2019"
         },
