@@ -9,6 +9,7 @@
     "enabled": true,
     "schedule": ["at any time"]
   },
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
       "groupName": "esm dependent",
