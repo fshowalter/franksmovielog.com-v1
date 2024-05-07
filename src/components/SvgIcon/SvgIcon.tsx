@@ -6,7 +6,7 @@ import { iconStyle } from "./SvgIcon.css";
  * Renders a search icon.
  */
 export default function SvgIcon({
-  className,
+  className = "",
   children,
 }: {
   /** CSS class to apply to the rendered element. */
@@ -25,7 +25,3 @@ export default function SvgIcon({
     </svg>
   );
 }
-
-SvgIcon.defaultProps = {
-  className: "",
-};
