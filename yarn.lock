@@ -5108,13 +5108,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"address@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "address@npm:2.0.2"
-  checksum: 10c0/1b2a57081361c0669511f03582b7db35daab771d35735ac458bd66291afaa5c27cda4da12c048ab2124075e26a83638893eae673fb380b6538c03799deced620
-  languageName: node
-  linkType: hard
-
 "agent-base@npm:6":
   version: 6.0.2
   resolution: "agent-base@npm:6.0.2"
@@ -7477,14 +7470,15 @@ __metadata:
   linkType: hard
 
 "detect-port@npm:^1.5.1":
-  version: 1.6.0
-  resolution: "detect-port@npm:1.6.0"
+  version: 1.6.1
+  resolution: "detect-port@npm:1.6.1"
   dependencies:
-    address: "npm:^2.0.2"
+    address: "npm:^1.0.1"
+    debug: "npm:4"
   bin:
     detect: bin/detect-port.js
     detect-port: bin/detect-port.js
-  checksum: 10c0/9519e9513d0ed27bf04465358a577d9d2476e57fe015d5a03e22ed3f89e2454202741264d7022d5b710a4f16aec2bebf8e3fdc0368a120385c71a3def465aa78
+  checksum: 10c0/4ea9eb46a637cb21220dd0a62b6074792894fc77b2cacbc9de533d1908b2eedafa7bfd7547baaa2ac1e9c7ba7c289b34b17db896dca6da142f4fc6e2060eee17
   languageName: node
   linkType: hard
 
@@ -7726,9 +7720,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.758
-  resolution: "electron-to-chromium@npm:1.4.758"
-  checksum: 10c0/60151ca87bfdf50ee8fc47df4db32f62f33c972259856bc308134bf278d21af62842d9f9f1e1f397df6bb82925e83745f6d3a4ecda00813d14c2156f0e681d3f
+  version: 1.4.759
+  resolution: "electron-to-chromium@npm:1.4.759"
+  checksum: 10c0/6bae3229b1ad9652eb6f9a037cfebd1f782162497aa124593409873a6a17fe312822430ea73c20307fb5149be2aefea5ac0f2a639122f3fee20f0c5de7525a3e
   languageName: node
   linkType: hard
 
