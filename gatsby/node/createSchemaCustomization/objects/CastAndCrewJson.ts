@@ -16,6 +16,10 @@ export const CastAndCrewMemberTitle = {
     poster: posterFieldResolver,
     viewingSequence: "Int",
     creditedAs: "[String!]!",
+    collectionNames: "[String!]!",
+    watchlistDirectorNames: "[String!]!",
+    watchlistPerformerNames: "[String!]!",
+    watchlistWriterNames: "[String!]!",
     reviewDate: {
       type: "Date",
       extensions: {

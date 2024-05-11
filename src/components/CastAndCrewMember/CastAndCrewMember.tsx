@@ -59,6 +59,10 @@ export const query = graphql`
     poster {
       ...ListItemPoster
     }
+    watchlistDirectorNames
+    watchlistPerformerNames
+    watchlistWriterNames
+    collectionNames
   }
 
   fragment CastAndCrewMember on CastAndCrewJson {
