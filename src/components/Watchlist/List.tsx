@@ -1,10 +1,10 @@
-import { toSentence } from "../../utils";
 import { Box } from "../Box";
 import { ListItem } from "../ListItem";
 import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
+import { WatchlistTitleSlug } from "../WatchlistTitleSlug";
 import { Action, ActionType } from "./Watchlist.reducer";
 
 export function List({
@@ -56,61 +56,15 @@ function WatchlistTitle({
           <ListItemTitle title={item.title} year={item.year} slug={item.slug} />
           <Spacer axis="vertical" size={4} />
           <Spacer axis="vertical" size={8} />
-          <Slug movie={item} />
+          <WatchlistTitleSlug
+            directorNames={item.directorNames}
+            performerNames={item.performerNames}
+            writerNames={item.writerNames}
+            collectionNames={item.collectionNames}
+          />
           <Spacer axis="vertical" size={8} />
         </Box>
       </Box>
     </ListItem>
   );
-}
-
-function Slug({
-  movie,
-}: {
-  movie: Queries.WatchlistTitleFragment;
-}): JSX.Element {
-  const credits = [
-    ...formatPeopleNames(movie.directorNames, "directed"),
-    ...formatPeopleNames(movie.performerNames, "performed"),
-    ...formatPeopleNames(movie.writerNames, [
-      "has a writing credit",
-      "have writing credits",
-    ]),
-    ...formatCollectionNames(movie.collectionNames),
-  ];
-
-  return (
-    <Box color="subtle" fontWeight="light" fontSize="small" letterSpacing={0.5}>
-      Because {toSentence(credits)}.
-    </Box>
-  );
-}
-
-function formatPeopleNames(
-  names: readonly string[],
-  suffix: string | string[],
-): string[] {
-  if (names.length === 0) {
-    return [];
-  }
-
-  let append;
-
-  if (Array.isArray(suffix)) {
-    append = names.length > 1 ? suffix[1] : suffix[0];
-  } else {
-    append = suffix;
-  }
-
-  return [`${toSentence(names)} ${append}`];
-}
-
-function formatCollectionNames(names: readonly string[]): string | string[] {
-  if (names.length === 0) {
-    return "";
-  }
-
-  const suffix = names.length > 1 ? "collections" : "collection";
-
-  return [`it's in the ${toSentence(names)} ${suffix}`];
 }

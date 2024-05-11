@@ -6,6 +6,7 @@ import { ListItemPoster } from "../ListItemPoster";
 import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
+import { WatchlistTitleSlug } from "../WatchlistTitleSlug";
 import { Action, ActionType } from "./CastAndCrewMember.reducer";
 
 export function List({
@@ -62,6 +63,17 @@ function CastAndCrewMemberTitle({
             <Box __paddingBottom={1} __paddingTop={1}>
               <Grade grade={item.grade} height={18} />
             </Box>
+          )}
+          {!item.grade && (
+            <>
+              <Spacer axis="vertical" size={4} />
+              <WatchlistTitleSlug
+                directorNames={item.watchlistDirectorNames}
+                performerNames={item.watchlistPerformerNames}
+                writerNames={item.watchlistWriterNames}
+                collectionNames={item.collectionNames}
+              />
+            </>
           )}
           <Spacer axis="vertical" size={8} />
         </Box>
