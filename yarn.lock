@@ -4260,9 +4260,9 @@ __metadata:
   linkType: hard
 
 "@types/lodash@npm:^4.14.92":
-  version: 4.17.1
-  resolution: "@types/lodash@npm:4.17.1"
-  checksum: 10c0/af2ad8a3c8d7deb170a7ec6e18afc5ae8980576e5f7fe798d8a95a1df7222c15bdf967a25a35879f575a3b64743de00145710ee461a0051e055e94e4fe253f45
+  version: 4.17.3
+  resolution: "@types/lodash@npm:4.17.3"
+  checksum: 10c0/04eb8cfde06b12f4b68251b8956a636c4e80e4ac85926f41d502e26b9c6d050dbbc9e586e4bf706c62e97d78309c3dad079e791f07efbe7ff6f19ccf62a414b4
   languageName: node
   linkType: hard
 
@@ -4821,11 +4821,11 @@ __metadata:
   linkType: hard
 
 "@vercel/webpack-asset-relocator-loader@npm:^1.7.3":
-  version: 1.7.3
-  resolution: "@vercel/webpack-asset-relocator-loader@npm:1.7.3"
+  version: 1.7.4
+  resolution: "@vercel/webpack-asset-relocator-loader@npm:1.7.4"
   dependencies:
     resolve: "npm:^1.10.0"
-  checksum: 10c0/5b35ee7c5cab08ef8ee9f0a2413be220e905824d1481bf6bed3ba2d8e97d052448317654f9e947b698da51f27f255940e9e8209db9123d8ddcb0bc9cd2a502d3
+  checksum: 10c0/0a04cecad5e1910e64c2e9eaacea36336e1aa1fd74e3077b078b327340634744e480ac60322d0dd60461734568811d02473a7a8c433a3c51cb2878650dd933bb
   languageName: node
   linkType: hard
 
@@ -7715,9 +7715,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.772
-  resolution: "electron-to-chromium@npm:1.4.772"
-  checksum: 10c0/79ea8f4d41b64e092677e801fd88affe0089e4e76dbbecf78fe2831a66d4b4ef6d0da6ad59be8079eb7b7f03c72d1667e81d13a803e343b8bd4ade3e3f1f7b49
+  version: 1.4.773
+  resolution: "electron-to-chromium@npm:1.4.773"
+  checksum: 10c0/eef684e2d64848418080715a76bc4147373d75ade07f65e64a97a3efd52d8c83dd8dd0daadba0d5ca891e3738144f8e97e1b7fe4545de3d15e71cd70ff14b2f1
   languageName: node
   linkType: hard
 
