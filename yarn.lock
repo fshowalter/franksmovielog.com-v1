@@ -7715,9 +7715,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.779
-  resolution: "electron-to-chromium@npm:1.4.779"
-  checksum: 10c0/9ed241b723258b3f0c4653a3c97a465e8d5a7a226cf9b5249d309aeab6fb22399084464304955b96d3c1cf13b8c6161f06366bfa87bd9a27740713fee32b5e8d
+  version: 1.4.782
+  resolution: "electron-to-chromium@npm:1.4.782"
+  checksum: 10c0/bf3b7e3c3d3ba20ee94958c0a9fa42dd6224140e070f3e31306986c6974ddb26f4b0ebe688ee140b98ebb410d3cb79f60a2e63832b767e800dbb2f471e5d72a4
   languageName: node
   linkType: hard
 
@@ -8033,7 +8033,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es5-ext@npm:^0.10.35, es5-ext@npm:^0.10.46, es5-ext@npm:^0.10.53, es5-ext@npm:^0.10.62, es5-ext@npm:^0.10.64, es5-ext@npm:~0.10.14, es5-ext@npm:~0.10.2, es5-ext@npm:~0.10.46":
+"es5-ext@npm:^0.10.35, es5-ext@npm:^0.10.46, es5-ext@npm:^0.10.62, es5-ext@npm:^0.10.64, es5-ext@npm:~0.10.14, es5-ext@npm:~0.10.2, es5-ext@npm:~0.10.46":
   version: 0.10.64
   resolution: "es5-ext@npm:0.10.64"
   dependencies:
@@ -10371,17 +10371,17 @@ __metadata:
   linkType: hard
 
 "glob@npm:^10.2.2, glob@npm:^10.3.10":
-  version: 10.3.16
-  resolution: "glob@npm:10.3.16"
+  version: 10.4.0
+  resolution: "glob@npm:10.4.0"
   dependencies:
     foreground-child: "npm:^3.1.0"
     jackspeak: "npm:^3.1.2"
-    minimatch: "npm:^9.0.1"
-    minipass: "npm:^7.0.4"
-    path-scurry: "npm:^1.11.0"
+    minimatch: "npm:^9.0.4"
+    minipass: "npm:^7.1.2"
+    path-scurry: "npm:^1.11.1"
   bin:
     glob: dist/esm/bin.mjs
-  checksum: 10c0/f7eb4c3e66f221f0be3967c02527047167967549bdf8ed1bd5f6277d43a35191af4e2bb8c89f07a79664958bae088fd06659e69a0f1de462972f1eab52a715e8
+  checksum: 10c0/180d218de9539371664dd89cf4b26654b900b6cee689f0c5e281aab6cc655ccff11dba983906db9a75b2fcee9d6cea3e8d4db4d3cc66c2c6162b00b8cd6613cc
   languageName: node
   linkType: hard
 
@@ -13287,18 +13287,18 @@ __metadata:
   linkType: hard
 
 "memoizee@npm:^0.4.15":
-  version: 0.4.15
-  resolution: "memoizee@npm:0.4.15"
+  version: 0.4.16
+  resolution: "memoizee@npm:0.4.16"
   dependencies:
-    d: "npm:^1.0.1"
-    es5-ext: "npm:^0.10.53"
+    d: "npm:^1.0.2"
+    es5-ext: "npm:^0.10.64"
     es6-weak-map: "npm:^2.0.3"
     event-emitter: "npm:^0.3.5"
     is-promise: "npm:^2.2.2"
     lru-queue: "npm:^0.1.0"
     next-tick: "npm:^1.1.0"
     timers-ext: "npm:^0.1.7"
-  checksum: 10c0/297e65cd8256bdf24c48f5e158da80d4c9688db0d6e65c5dcc13fa768e782ddeb71aec36925359931b5efef0efc6666b5bb2af6deb3de63d4258a3821ed16fce
+  checksum: 10c0/5e0d83ac68d69bb03e13793a2d8c1fb1877699bea913d277a10ebd6c2f0ee824b46b3eb7b71e8ce0d20f79dbe9405c30e5755ac1772261827c78c181c0d4b25a
   languageName: node
   linkType: hard
 
@@ -13537,7 +13537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.1, minimatch@npm:^9.0.4":
+"minimatch@npm:^9.0.4":
   version: 9.0.4
   resolution: "minimatch@npm:9.0.4"
   dependencies:
@@ -13620,10 +13620,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0, minipass@npm:^7.0.2, minipass@npm:^7.0.3, minipass@npm:^7.0.4":
-  version: 7.1.1
-  resolution: "minipass@npm:7.1.1"
-  checksum: 10c0/fdccc2f99c31083f45f881fd1e6971d798e333e078ab3c8988fb818c470fbd5e935388ad9adb286397eba50baebf46ef8ff487c8d3f455a69c6f3efc327bdff9
+"minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0, minipass@npm:^7.0.2, minipass@npm:^7.0.3, minipass@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "minipass@npm:7.1.2"
+  checksum: 10c0/b0fd20bb9fb56e5fa9a8bfac539e8915ae07430a619e4b86ff71f5fc757ef3924b23b2c4230393af1eda647ed3d75739e4e0acb250a6b1eb277cf7f8fe449557
   languageName: node
   linkType: hard
 
@@ -14626,7 +14626,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-scurry@npm:^1.11.0":
+"path-scurry@npm:^1.11.1":
   version: 1.11.1
   resolution: "path-scurry@npm:1.11.1"
   dependencies:
