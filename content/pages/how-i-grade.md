@@ -51,5 +51,7 @@ So why display them as stars? Well, for one, grade definitions aren't universal.
 Grading systems are hard. I think a 5-star system works, but I'm not married to the idea. Some of my favorite reviewers eschew grades, preferring you read the review. Fair enough, but I bet they rate them behind the scenes.
 
 [^1]: [Ebert, Roger, “You Give Out Too Many Stars”, Roger Ebert , last modified September 14, 2008](http://www.rogerebert.com/rogers-journal/you-give-out-too-many-stars)
+
 [^2]: Ebert also argues that readers dislike scales with a middle ground, but I disagree. We know what it means for a movie to be “okay.” Sometimes, instead of “Should I see this movie?” readers want to know “Will I hate this movie?” A middle ground answers that question.
+
 [^3]: [The Onion A.V. Club](http://www.avclub.com/film/) makes great use of letter grades.
