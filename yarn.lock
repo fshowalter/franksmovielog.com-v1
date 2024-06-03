@@ -3563,8 +3563,8 @@ __metadata:
   linkType: hard
 
 "@pmmmwh/react-refresh-webpack-plugin@npm:^0.5.10":
-  version: 0.5.14
-  resolution: "@pmmmwh/react-refresh-webpack-plugin@npm:0.5.14"
+  version: 0.5.15
+  resolution: "@pmmmwh/react-refresh-webpack-plugin@npm:0.5.15"
   dependencies:
     ansi-html: "npm:^0.0.9"
     core-js-pure: "npm:^3.23.3"
@@ -3595,7 +3595,7 @@ __metadata:
       optional: true
     webpack-plugin-serve:
       optional: true
-  checksum: 10c0/842cb79bfd0a04491bc43b3f8666c36287013237383723b7bb05a7ef9762233fba1b8f901e4e8fe15895e9a37e829dcabaedf2cbfd675e6d4c1b62c86e89982e
+  checksum: 10c0/ba310aa4d53070f59c8a374d1d256c5965c044c0c3fb1ff6b55353fb5e86de08a490a7bd59a31f0d4951f8f29f81864c7df224fe1342543a95d048b7413ff171
   languageName: node
   linkType: hard
 
