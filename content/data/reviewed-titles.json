@@ -1996,16 +1996,15 @@
         ]
       },
       {
-        "title": "X-Men: Days of Future Past",
-        "imdbId": "tt1877832",
-        "year": "2014",
-        "slug": "x-men-days-of-future-past-2014",
-        "grade": "C+",
+        "title": "X-Men: Dark Phoenix",
+        "imdbId": "tt6565702",
+        "year": "2019",
+        "slug": "x-men-dark-phoenix-2019",
+        "grade": "D+",
         "genres": [
           "Action",
           "Adventure",
-          "Sci-Fi",
-          "Thriller"
+          "Sci-Fi"
         ]
       }
     ]
@@ -6891,15 +6890,16 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Dark Phoenix",
-        "imdbId": "tt6565702",
-        "year": "2019",
-        "slug": "x-men-dark-phoenix-2019",
-        "grade": "D+",
+        "title": "The Dark Knight",
+        "imdbId": "tt0468569",
+        "year": "2008",
+        "slug": "the-dark-knight-2008",
+        "grade": "A-",
         "genres": [
           "Action",
-          "Adventure",
-          "Sci-Fi"
+          "Crime",
+          "Drama",
+          "Thriller"
         ]
       },
       {
@@ -10848,17 +10848,6 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Knife in the Water",
-        "imdbId": "tt0056291",
-        "year": "1962",
-        "slug": "knife-in-the-water-1962",
-        "grade": "B",
-        "genres": [
-          "Drama",
-          "Thriller"
-        ]
-      },
-      {
         "title": "Krampus",
         "imdbId": "tt3850590",
         "year": "2015",
@@ -10868,6 +10857,17 @@
           "Comedy",
           "Fantasy",
           "Horror"
+        ]
+      },
+      {
+        "title": "L'Age d'Or",
+        "imdbId": "tt0021577",
+        "year": "1930",
+        "slug": "lage-dor-1930",
+        "grade": "C+",
+        "genres": [
+          "Comedy",
+          "Drama"
         ]
       },
       {
@@ -16848,18 +16848,6 @@
         ]
       },
       {
-        "title": "Dark Phoenix",
-        "imdbId": "tt6565702",
-        "year": "2019",
-        "slug": "x-men-dark-phoenix-2019",
-        "grade": "D+",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Sci-Fi"
-        ]
-      },
-      {
         "title": "Dark Star",
         "imdbId": "tt0069945",
         "year": "1974",
@@ -16868,6 +16856,18 @@
         "genres": [
           "Comedy",
           "Sci-Fi"
+        ]
+      },
+      {
+        "title": "The Dawn Patrol",
+        "imdbId": "tt0020815",
+        "year": "1930",
+        "slug": "the-dawn-patrol-1930",
+        "grade": "B-",
+        "genres": [
+          "Action",
+          "Drama",
+          "War"
         ]
       }
     ]
@@ -32667,7 +32667,7 @@
   },
   {
     "imdbId": "tt6565702",
-    "title": "Dark Phoenix",
+    "title": "X-Men: Dark Phoenix",
     "year": "2019",
     "slug": "x-men-dark-phoenix-2019",
     "grade": "D+",
@@ -32680,7 +32680,7 @@
       "Adventure",
       "Sci-Fi"
     ],
-    "sortTitle": "Dark Phoenix (2019)",
+    "sortTitle": "X-Men: Dark Phoenix (2019)",
     "originalTitle": null,
     "gradeValue": 4,
     "runtimeMinutes": 113,
@@ -32716,53 +32716,50 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Daniel Isn't Real",
-        "imdbId": "tt8745960",
-        "year": "2019",
-        "slug": "daniel-isnt-real-2019",
-        "grade": "D+",
-        "genres": [
-          "Drama",
-          "Fantasy",
-          "Horror",
-          "Mystery",
-          "Thriller"
-        ]
-      },
-      {
-        "title": "The Dark Knight",
-        "imdbId": "tt0468569",
-        "year": "2008",
-        "slug": "the-dark-knight-2008",
-        "grade": "A-",
+        "title": "X-Men Origins: Wolverine",
+        "imdbId": "tt0458525",
+        "year": "2009",
+        "slug": "x-men-origins-wolverine-2009",
+        "grade": "D",
         "genres": [
           "Action",
-          "Crime",
-          "Drama",
-          "Thriller"
-        ]
-      },
-      {
-        "title": "Dark Star",
-        "imdbId": "tt0069945",
-        "year": "1974",
-        "slug": "dark-star-1974",
-        "grade": "C+",
-        "genres": [
-          "Comedy",
           "Sci-Fi"
         ]
       },
       {
-        "title": "The Dawn Patrol",
-        "imdbId": "tt0020815",
-        "year": "1930",
-        "slug": "the-dawn-patrol-1930",
-        "grade": "B-",
+        "title": "X-Men: Apocalypse",
+        "imdbId": "tt3385516",
+        "year": "2016",
+        "slug": "x-men-apocalypse-2016",
+        "grade": "F",
         "genres": [
           "Action",
-          "Drama",
-          "War"
+          "Adventure",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "X-Men: Days of Future Past",
+        "imdbId": "tt1877832",
+        "year": "2014",
+        "slug": "x-men-days-of-future-past-2014",
+        "grade": "C+",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
+        "title": "X-Men: First Class",
+        "imdbId": "tt1270798",
+        "year": "2011",
+        "slug": "x-men-first-class-2011",
+        "grade": "B",
+        "genres": [
+          "Action",
+          "Sci-Fi"
         ]
       }
     ]
@@ -32863,16 +32860,14 @@
         ]
       },
       {
-        "title": "Labyrinth",
-        "imdbId": "tt0091369",
-        "year": "1986",
-        "slug": "labyrinth-1986",
+        "title": "L'Age d'Or",
+        "imdbId": "tt0021577",
+        "year": "1930",
+        "slug": "lage-dor-1930",
         "grade": "C+",
         "genres": [
-          "Adventure",
-          "Family",
-          "Fantasy",
-          "Musical"
+          "Comedy",
+          "Drama"
         ]
       }
     ]
@@ -38327,14 +38322,15 @@
         ]
       },
       {
-        "title": "The Golden Age",
-        "imdbId": "tt0021577",
-        "year": "1930",
-        "slug": "lage-dor-1930",
-        "grade": "C+",
+        "title": "Golden Boy",
+        "imdbId": "tt0031377",
+        "year": "1939",
+        "slug": "golden-boy-1939",
+        "grade": "D+",
         "genres": [
-          "Comedy",
-          "Drama"
+          "Drama",
+          "Romance",
+          "Sport"
         ]
       }
     ]
@@ -40919,6 +40915,17 @@
         ]
       },
       {
+        "title": "L'Age d'Or",
+        "imdbId": "tt0021577",
+        "year": "1930",
+        "slug": "lage-dor-1930",
+        "grade": "C+",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ]
+      },
+      {
         "title": "Labyrinth",
         "imdbId": "tt0091369",
         "year": "1986",
@@ -40929,17 +40936,6 @@
           "Family",
           "Fantasy",
           "Musical"
-        ]
-      },
-      {
-        "title": "Ladies of the Chorus",
-        "imdbId": "tt0041571",
-        "year": "1948",
-        "slug": "ladies-of-the-chorus-1948",
-        "grade": "C",
-        "genres": [
-          "Musical",
-          "Romance"
         ]
       }
     ]
@@ -41002,15 +40998,14 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Krampus",
-        "imdbId": "tt3850590",
-        "year": "2015",
-        "slug": "krampus-2015",
-        "grade": "B-",
+        "title": "L'Age d'Or",
+        "imdbId": "tt0021577",
+        "year": "1930",
+        "slug": "lage-dor-1930",
+        "grade": "C+",
         "genres": [
           "Comedy",
-          "Fantasy",
-          "Horror"
+          "Drama"
         ]
       },
       {
@@ -41405,14 +41400,13 @@
         ]
       },
       {
-        "title": "Dark Phoenix",
-        "imdbId": "tt6565702",
-        "year": "2019",
-        "slug": "x-men-dark-phoenix-2019",
-        "grade": "D+",
+        "title": "Dark Star",
+        "imdbId": "tt0069945",
+        "year": "1974",
+        "slug": "dark-star-1974",
+        "grade": "C+",
         "genres": [
-          "Action",
-          "Adventure",
+          "Comedy",
           "Sci-Fi"
         ]
       }
@@ -45051,7 +45045,7 @@
         ]
       },
       {
-        "title": "Dune: Part One",
+        "title": "Dune",
         "imdbId": "tt1160419",
         "year": "2021",
         "slug": "dune-part-one-2021",
@@ -52985,14 +52979,17 @@
     ],
     "moreReviews": [
       {
-        "title": "The Golden Age",
-        "imdbId": "tt0021577",
-        "year": "1930",
-        "slug": "lage-dor-1930",
-        "grade": "C+",
+        "title": "God Told Me To",
+        "imdbId": "tt0075930",
+        "year": "1976",
+        "slug": "god-told-me-to-1976",
+        "grade": "D+",
         "genres": [
-          "Comedy",
-          "Drama"
+          "Crime",
+          "Horror",
+          "Sci-Fi",
+          "Mystery",
+          "Thriller"
         ]
       },
       {
@@ -58059,6 +58056,18 @@
         ]
       },
       {
+        "title": "X-Men: Dark Phoenix",
+        "imdbId": "tt6565702",
+        "year": "2019",
+        "slug": "x-men-dark-phoenix-2019",
+        "grade": "D+",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ]
+      },
+      {
         "title": "X-Men: Days of Future Past",
         "imdbId": "tt1877832",
         "year": "2014",
@@ -58069,17 +58078,6 @@
           "Adventure",
           "Sci-Fi",
           "Thriller"
-        ]
-      },
-      {
-        "title": "X-Men: First Class",
-        "imdbId": "tt1270798",
-        "year": "2011",
-        "slug": "x-men-first-class-2011",
-        "grade": "B",
-        "genres": [
-          "Action",
-          "Sci-Fi"
         ]
       }
     ]
@@ -58348,7 +58346,7 @@
   },
   {
     "imdbId": "tt0021577",
-    "title": "The Golden Age",
+    "title": "L'Age d'Or",
     "year": "1930",
     "slug": "lage-dor-1930",
     "grade": "C+",
@@ -58359,7 +58357,7 @@
       "Comedy",
       "Drama"
     ],
-    "sortTitle": "Golden Age (1930)",
+    "sortTitle": "L'Age d'Or (1930)",
     "originalTitle": "L'\u00e2ge d'or",
     "gradeValue": 7,
     "runtimeMinutes": 63,
@@ -58405,54 +58403,50 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Glass",
-        "imdbId": "tt6823368",
-        "year": "2019",
-        "slug": "glass-2019",
-        "grade": "D-",
+        "title": "Knife in the Water",
+        "imdbId": "tt0056291",
+        "year": "1962",
+        "slug": "knife-in-the-water-1962",
+        "grade": "B",
         "genres": [
           "Drama",
-          "Horror",
-          "Sci-Fi",
           "Thriller"
         ]
       },
       {
-        "title": "God Told Me To",
-        "imdbId": "tt0075930",
-        "year": "1976",
-        "slug": "god-told-me-to-1976",
-        "grade": "D+",
-        "genres": [
-          "Crime",
-          "Horror",
-          "Sci-Fi",
-          "Mystery",
-          "Thriller"
-        ]
-      },
-      {
-        "title": "Golden Boy",
-        "imdbId": "tt0031377",
-        "year": "1939",
-        "slug": "golden-boy-1939",
-        "grade": "D+",
-        "genres": [
-          "Drama",
-          "Romance",
-          "Sport"
-        ]
-      },
-      {
-        "title": "GoldenEye",
-        "imdbId": "tt0113189",
-        "year": "1995",
-        "slug": "goldeneye-1995",
+        "title": "Krampus",
+        "imdbId": "tt3850590",
+        "year": "2015",
+        "slug": "krampus-2015",
         "grade": "B-",
         "genres": [
-          "Action",
+          "Comedy",
+          "Fantasy",
+          "Horror"
+        ]
+      },
+      {
+        "title": "Labyrinth",
+        "imdbId": "tt0091369",
+        "year": "1986",
+        "slug": "labyrinth-1986",
+        "grade": "C+",
+        "genres": [
           "Adventure",
-          "Thriller"
+          "Family",
+          "Fantasy",
+          "Musical"
+        ]
+      },
+      {
+        "title": "Ladies of the Chorus",
+        "imdbId": "tt0041571",
+        "year": "1948",
+        "slug": "ladies-of-the-chorus-1948",
+        "grade": "C",
+        "genres": [
+          "Musical",
+          "Romance"
         ]
       }
     ]
@@ -62783,7 +62777,7 @@
         ]
       },
       {
-        "title": "Dune: Part One",
+        "title": "Dune",
         "imdbId": "tt1160419",
         "year": "2021",
         "slug": "dune-part-one-2021",
@@ -64800,7 +64794,7 @@
   },
   {
     "imdbId": "tt1160419",
-    "title": "Dune: Part One",
+    "title": "Dune",
     "year": "2021",
     "slug": "dune-part-one-2021",
     "grade": "C",
@@ -64814,8 +64808,8 @@
       "Drama",
       "Sci-Fi"
     ],
-    "sortTitle": "Dune: Part One (2021)",
-    "originalTitle": "Dune",
+    "sortTitle": "Dune (2021)",
+    "originalTitle": null,
     "gradeValue": 6,
     "runtimeMinutes": 155,
     "releaseSequence": "2021-09-03tt1160419",
@@ -66255,7 +66249,7 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Dune: Part One",
+        "title": "Dune",
         "imdbId": "tt1160419",
         "year": "2021",
         "slug": "dune-part-one-2021",
@@ -69093,22 +69087,23 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "X-Men Origins: Wolverine",
-        "imdbId": "tt0458525",
-        "year": "2009",
-        "slug": "x-men-origins-wolverine-2009",
-        "grade": "D",
-        "genres": [
-          "Action",
-          "Sci-Fi"
-        ]
-      },
-      {
         "title": "X-Men: Apocalypse",
         "imdbId": "tt3385516",
         "year": "2016",
         "slug": "x-men-apocalypse-2016",
         "grade": "F",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "title": "X-Men: Dark Phoenix",
+        "imdbId": "tt6565702",
+        "year": "2019",
+        "slug": "x-men-dark-phoenix-2019",
+        "grade": "D+",
         "genres": [
           "Action",
           "Adventure",
@@ -79403,7 +79398,7 @@
         ]
       },
       {
-        "title": "Dune: Part One",
+        "title": "Dune",
         "imdbId": "tt1160419",
         "year": "2021",
         "slug": "dune-part-one-2021",
@@ -88924,17 +88919,6 @@
         ]
       },
       {
-        "title": "The Golden Age",
-        "imdbId": "tt0021577",
-        "year": "1930",
-        "slug": "lage-dor-1930",
-        "grade": "C+",
-        "genres": [
-          "Comedy",
-          "Drama"
-        ]
-      },
-      {
         "title": "Golden Boy",
         "imdbId": "tt0031377",
         "year": "1939",
@@ -88944,6 +88928,18 @@
           "Drama",
           "Romance",
           "Sport"
+        ]
+      },
+      {
+        "title": "GoldenEye",
+        "imdbId": "tt0113189",
+        "year": "1995",
+        "slug": "goldeneye-1995",
+        "grade": "B-",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Thriller"
         ]
       }
     ]
@@ -89217,11 +89213,11 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "X-Men: Apocalypse",
-        "imdbId": "tt3385516",
-        "year": "2016",
-        "slug": "x-men-apocalypse-2016",
-        "grade": "F",
+        "title": "X-Men: Dark Phoenix",
+        "imdbId": "tt6565702",
+        "year": "2019",
+        "slug": "x-men-dark-phoenix-2019",
+        "grade": "D+",
         "genres": [
           "Action",
           "Adventure",
@@ -90245,6 +90241,19 @@
     "moreCollections": [],
     "moreReviews": [
       {
+        "title": "Glass",
+        "imdbId": "tt6823368",
+        "year": "2019",
+        "slug": "glass-2019",
+        "grade": "D-",
+        "genres": [
+          "Drama",
+          "Horror",
+          "Sci-Fi",
+          "Thriller"
+        ]
+      },
+      {
         "title": "God Told Me To",
         "imdbId": "tt0075930",
         "year": "1976",
@@ -90256,17 +90265,6 @@
           "Sci-Fi",
           "Mystery",
           "Thriller"
-        ]
-      },
-      {
-        "title": "The Golden Age",
-        "imdbId": "tt0021577",
-        "year": "1930",
-        "slug": "lage-dor-1930",
-        "grade": "C+",
-        "genres": [
-          "Comedy",
-          "Drama"
         ]
       },
       {
@@ -95019,6 +95017,20 @@
     "moreCollections": [],
     "moreReviews": [
       {
+        "title": "Daniel Isn't Real",
+        "imdbId": "tt8745960",
+        "year": "2019",
+        "slug": "daniel-isnt-real-2019",
+        "grade": "D+",
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Horror",
+          "Mystery",
+          "Thriller"
+        ]
+      },
+      {
         "title": "The Dark Knight",
         "imdbId": "tt0468569",
         "year": "2008",
@@ -95029,18 +95041,6 @@
           "Crime",
           "Drama",
           "Thriller"
-        ]
-      },
-      {
-        "title": "Dark Phoenix",
-        "imdbId": "tt6565702",
-        "year": "2019",
-        "slug": "x-men-dark-phoenix-2019",
-        "grade": "D+",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Sci-Fi"
         ]
       },
       {

@@ -1,12 +1,12 @@
 {
   "year": "2024",
-  "newTitleCount": 25,
-  "viewingCount": 37,
-  "titleCount": 36,
+  "newTitleCount": 29,
+  "viewingCount": 41,
+  "titleCount": 40,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 16
+      "count": 18
     },
     {
       "name": "4k UHD Blu-ray",
@@ -14,7 +14,11 @@
     },
     {
       "name": "iTunes",
-      "count": 4
+      "count": 5
+    },
+    {
+      "name": "DVD",
+      "count": 2
     },
     {
       "name": "WEBRip",
@@ -22,10 +26,6 @@
     },
     {
       "name": "35mm",
-      "count": 1
-    },
-    {
-      "name": "DVD",
       "count": 1
     }
   ],
@@ -40,7 +40,7 @@
     },
     {
       "name": "1970s",
-      "count": 7
+      "count": 9
     },
     {
       "name": "1980s",
@@ -48,7 +48,7 @@
     },
     {
       "name": "1990s",
-      "count": 5
+      "count": 6
     },
     {
       "name": "2000s",
@@ -60,7 +60,7 @@
     },
     {
       "name": "2020s",
-      "count": 5
+      "count": 6
     }
   ],
   "mostWatchedTitles": [
@@ -517,6 +517,31 @@
           "medium": null,
           "venue": "Alamo Drafthouse Cinema - One Loudoun",
           "year": "1985"
+        }
+      ]
+    },
+    {
+      "name": "Sheridan Le Fanu",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1592,
+          "date": "2024-05-23",
+          "slug": null,
+          "title": "Alucarda",
+          "medium": "DVD",
+          "venue": null,
+          "year": "1977"
+        },
+        {
+          "sequence": 1593,
+          "date": "2024-06-01",
+          "slug": null,
+          "title": "The Blood Spattered Bride",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1972"
         }
       ]
     }
