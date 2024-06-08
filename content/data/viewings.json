@@ -13302,8 +13302,8 @@
     "sequence": 787,
     "viewingYear": "2019",
     "viewingDate": "2019-10-19",
-    "title": "Spider Baby or, the Maddest Story Ever Told",
-    "sortTitle": "Spider Baby or, the Maddest Story Ever Told (1967)",
+    "title": "Spider Baby or, The Maddest Story Ever Told",
+    "sortTitle": "Spider Baby or, The Maddest Story Ever Told (1967)",
     "medium": null,
     "venue": "Alamo Drafthouse Cinema - One Loudoun",
     "year": "1967",
@@ -15458,8 +15458,8 @@
     "sequence": 914,
     "viewingYear": "2020",
     "viewingDate": "2020-11-09",
-    "title": "The Golden Age",
-    "sortTitle": "Golden Age (1930)",
+    "title": "L'Age d'Or",
+    "sortTitle": "L'Age d'Or (1930)",
     "medium": "Kanopy",
     "venue": null,
     "year": "1930",
@@ -18058,8 +18058,8 @@
     "sequence": 1071,
     "viewingYear": "2021",
     "viewingDate": "2021-04-03",
-    "title": "Dark Phoenix",
-    "sortTitle": "Dark Phoenix (2019)",
+    "title": "X-Men: Dark Phoenix",
+    "sortTitle": "X-Men: Dark Phoenix (2019)",
     "medium": "HBO Max",
     "venue": null,
     "year": "2019",
@@ -20071,8 +20071,8 @@
     "sequence": 1191,
     "viewingYear": "2021",
     "viewingDate": "2021-11-18",
-    "title": "Dune: Part One",
-    "sortTitle": "Dune: Part One (2021)",
+    "title": "Dune",
+    "sortTitle": "Dune (2021)",
     "medium": "HBO Max",
     "venue": null,
     "year": "2021",
@@ -26812,5 +26812,69 @@
       "Horror"
     ],
     "releaseSequence": "1981-01-23tt0081248"
+  },
+  {
+    "sequence": 1592,
+    "viewingYear": "2024",
+    "viewingDate": "2024-05-23",
+    "title": "Alucarda",
+    "sortTitle": "Alucarda (1977)",
+    "medium": "DVD",
+    "venue": null,
+    "year": "1977",
+    "slug": null,
+    "genres": [
+      "Horror"
+    ],
+    "releaseSequence": "1977-03-10tt0075666"
+  },
+  {
+    "sequence": 1593,
+    "viewingYear": "2024",
+    "viewingDate": "2024-06-01",
+    "title": "The Blood Spattered Bride",
+    "sortTitle": "Blood Spattered Bride (1972)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1972",
+    "slug": null,
+    "genres": [
+      "Horror"
+    ],
+    "releaseSequence": "1972-09-30tt0069029"
+  },
+  {
+    "sequence": 1594,
+    "viewingYear": "2024",
+    "viewingDate": "2024-06-06",
+    "title": "The Coffee Table",
+    "sortTitle": "Coffee Table (2022)",
+    "medium": "iTunes",
+    "venue": null,
+    "year": "2022",
+    "slug": null,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Horror"
+    ],
+    "releaseSequence": "2022-11-23tt21874760"
+  },
+  {
+    "sequence": 1595,
+    "viewingYear": "2024",
+    "viewingDate": "2024-06-06",
+    "title": "Red Rock West",
+    "sortTitle": "Red Rock West (1993)",
+    "medium": "Blu-ray",
+    "venue": null,
+    "year": "1993",
+    "slug": null,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "releaseSequence": "1993-05-14tt0105226"
   }
 ]
