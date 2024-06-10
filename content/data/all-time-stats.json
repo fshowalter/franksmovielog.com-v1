@@ -1,9 +1,9 @@
 [
   {
-    "viewingCount": 1595,
-    "titleCount": 1304,
-    "reviewCount": 708,
-    "watchlistTitlesReviewedCount": 388,
+    "viewingCount": 1596,
+    "titleCount": 1305,
+    "reviewCount": 709,
+    "watchlistTitlesReviewedCount": 389,
     "gradeDistribution": [
       {
         "name": "A+",
@@ -47,7 +47,7 @@
       },
       {
         "name": "C-",
-        "count": 75,
+        "count": 76,
         "sortValue": 5
       },
       {
@@ -74,7 +74,7 @@
     "mediaDistribution": [
       {
         "name": "Blu-ray",
-        "count": 282
+        "count": 283
       },
       {
         "name": "Netflix",
@@ -124,7 +124,7 @@
       },
       {
         "name": "1940s",
-        "count": 105
+        "count": 106
       },
       {
         "name": "1950s",
@@ -4229,7 +4229,7 @@
       },
       {
         "name": "Boris Karloff",
-        "count": 31,
+        "count": 32,
         "slug": "boris-karloff",
         "viewings": [
           {
@@ -4510,6 +4510,15 @@
             "medium": "Watch TCM",
             "venue": null,
             "year": "1938"
+          },
+          {
+            "sequence": 1596,
+            "date": "2024-06-08",
+            "slug": "the-man-with-nine-lives-1940",
+            "title": "The Man with Nine Lives",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1940"
           }
         ]
       },
