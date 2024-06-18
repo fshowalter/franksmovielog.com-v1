@@ -1,16 +1,16 @@
 {
   "year": "2024",
-  "newTitleCount": 30,
-  "viewingCount": 42,
-  "titleCount": 41,
+  "newTitleCount": 35,
+  "viewingCount": 48,
+  "titleCount": 47,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 19
+      "count": 21
     },
     {
       "name": "4k UHD Blu-ray",
-      "count": 7
+      "count": 10
     },
     {
       "name": "iTunes",
@@ -40,7 +40,7 @@
     },
     {
       "name": "1960s",
-      "count": 1
+      "count": 5
     },
     {
       "name": "1970s",
@@ -60,11 +60,11 @@
     },
     {
       "name": "2010s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "2020s",
-      "count": 6
+      "count": 7
     }
   ],
   "mostWatchedTitles": [
@@ -77,6 +77,40 @@
     }
   ],
   "mostWatchedDirectors": [
+    {
+      "name": "Sergio Leone",
+      "count": 3,
+      "slug": "sergio-leone",
+      "viewings": [
+        {
+          "sequence": 1600,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "A Fistful of Dollars",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1964"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
     {
       "name": "John Carr",
       "count": 2,
@@ -298,6 +332,176 @@
       ]
     },
     {
+      "name": "Lee Van Cleef",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1577,
+          "date": "2024-03-12",
+          "slug": null,
+          "title": "The Man Who Shot Liberty Valance",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1962"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
+    {
+      "name": "Clint Eastwood",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1600,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "A Fistful of Dollars",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1964"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
+    {
+      "name": "Benito Stefanelli",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1600,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "A Fistful of Dollars",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1964"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
+    {
+      "name": "Mario Brega",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1600,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "A Fistful of Dollars",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1964"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
+    {
+      "name": "Aldo Sambrell",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1600,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "A Fistful of Dollars",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1964"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
+    {
       "name": "Barbara Wyler",
       "count": 2,
       "slug": null,
@@ -371,134 +575,43 @@
           "year": "1985"
         }
       ]
-    },
-    {
-      "name": "Linda Maderas",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1556,
-          "date": "2024-01-04",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1586,
-          "date": "2024-04-27",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
-    },
-    {
-      "name": "Melanie Montilla",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1556,
-          "date": "2024-01-04",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1586,
-          "date": "2024-04-27",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
-    },
-    {
-      "name": "Chantel Morogeus",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1556,
-          "date": "2024-01-04",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1586,
-          "date": "2024-04-27",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
-    },
-    {
-      "name": "Byron Yordan",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1556,
-          "date": "2024-01-04",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1586,
-          "date": "2024-04-27",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
-    },
-    {
-      "name": "Richard Sanford",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1556,
-          "date": "2024-01-04",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1586,
-          "date": "2024-04-27",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
     }
   ],
   "mostWatchedWriters": [
+    {
+      "name": "Sergio Leone",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1600,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "A Fistful of Dollars",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1964"
+        },
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
+        }
+      ]
+    },
     {
       "name": "Philip Yordan",
       "count": 2,
@@ -546,6 +659,31 @@
           "medium": "Blu-ray",
           "venue": null,
           "year": "1972"
+        }
+      ]
+    },
+    {
+      "name": "Luciano Vincenzoni",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1601,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "For a Few Dollars More",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1965"
+        },
+        {
+          "sequence": 1602,
+          "date": "2024-06-16",
+          "slug": null,
+          "title": "The Good, the Bad and the Ugly",
+          "medium": "4k UHD Blu-ray",
+          "venue": null,
+          "year": "1966"
         }
       ]
     }
