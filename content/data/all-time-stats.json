@@ -1,9 +1,9 @@
 [
   {
-    "viewingCount": 1602,
-    "titleCount": 1310,
-    "reviewCount": 709,
-    "watchlistTitlesReviewedCount": 389,
+    "viewingCount": 1603,
+    "titleCount": 1311,
+    "reviewCount": 710,
+    "watchlistTitlesReviewedCount": 390,
     "gradeDistribution": [
       {
         "name": "A+",
@@ -37,7 +37,7 @@
       },
       {
         "name": "C+",
-        "count": 101,
+        "count": 102,
         "sortValue": 7
       },
       {
@@ -74,7 +74,7 @@
     "mediaDistribution": [
       {
         "name": "Blu-ray",
-        "count": 285
+        "count": 286
       },
       {
         "name": "Netflix",
@@ -132,7 +132,7 @@
       },
       {
         "name": "1960s",
-        "count": 110
+        "count": 111
       },
       {
         "name": "1970s",
@@ -4524,7 +4524,7 @@
       },
       {
         "name": "Robert Mitchum",
-        "count": 30,
+        "count": 31,
         "slug": "robert-mitchum",
         "viewings": [
           {
@@ -4796,6 +4796,15 @@
             "medium": "Watch TCM",
             "venue": null,
             "year": "1951"
+          },
+          {
+            "sequence": 1603,
+            "date": "2024-06-18",
+            "slug": "two-for-the-seesaw-1962",
+            "title": "Two for the Seesaw",
+            "medium": "Blu-ray",
+            "venue": null,
+            "year": "1962"
           }
         ]
       },
