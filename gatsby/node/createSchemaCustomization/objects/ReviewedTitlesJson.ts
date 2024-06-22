@@ -80,7 +80,7 @@ export const ReviewedTitleViewing = {
           query: {
             filter: {
               fileAbsolutePath: {
-                regex: `//viewing_notes/${source.sequence
+                regex: `//viewings/${source.sequence
                   .toString()
                   .padStart(4, "0")}-.*/`,
               },

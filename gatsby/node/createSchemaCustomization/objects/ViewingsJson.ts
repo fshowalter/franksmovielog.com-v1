@@ -1,9 +1,11 @@
-import { Node } from "hast";
-import toHtml from "hast-util-to-html";
-import toHast from "mdast-util-to-hast";
-import remark from "remark";
 import { SchemaNames } from "../schemaNames";
-import type { GatsbyNode, GatsbyNodeContext } from "../type-definitions";
+import type {
+  GatsbyNode,
+  GatsbyNodeContext,
+  GatsbyResolveArgs,
+  GatsbyResolveInfo,
+} from "../type-definitions";
+import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 
 interface ViewingNode extends GatsbyNode {
@@ -13,10 +15,12 @@ interface ViewingNode extends GatsbyNode {
   viewingDate: string;
 }
 
-interface IHastNode extends Node {
-  children: {
-    tagName: string;
-  }[];
+interface MarkdownNode extends GatsbyNode {
+  frontmatter: FrontMatter;
+}
+
+interface FrontMatter {
+  mediumNotes: string;
 }
 
 export const ViewingsJson = {
@@ -40,41 +44,39 @@ export const ViewingsJson = {
     },
     mediumNotes: {
       type: "String",
-      resolve: (source: ViewingNode) => {
-        if (!source.mediumNotes) {
+      resolve: async (
+        source: ViewingNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo,
+      ) => {
+        const viewingMarkdownNode =
+          await context.nodeModel.findOne<MarkdownNode>({
+            type: SchemaNames.MarkdownRemark,
+            query: {
+              filter: {
+                fileAbsolutePath: {
+                  regex: `//viewings/${source.sequence
+                    .toString()
+                    .padStart(4, "0")}-.*/`,
+                },
+              },
+            },
+          });
+
+        if (!viewingMarkdownNode) {
           return null;
         }
 
-        const mdast = remark().parse(source.mediumNotes);
-
-        const hast = toHast(mdast, {
-          allowDangerousHtml: true,
-        }) as IHastNode;
-
-        hast.children[0].tagName = "span";
-
-        return toHtml(hast);
-      },
-    },
-    viewingNote: {
-      type: SchemaNames.MarkdownRemark,
-      resolve: async (
-        source: ViewingNode,
-        _args: unknown,
-        context: GatsbyNodeContext,
-      ) => {
-        return await context.nodeModel.findOne({
-          type: SchemaNames.MarkdownRemark,
-          query: {
-            filter: {
-              fileAbsolutePath: {
-                regex: `//viewing_notes/${source.sequence
-                  .toString()
-                  .padStart(4, "0")}-.*/`,
-              },
-            },
-          },
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
+          source: viewingMarkdownNode,
+          context,
+          info,
+          args,
         });
+
+        return frontMatter ? frontMatter.mediumNotes : null;
       },
     },
     poster: posterFieldResolver,
