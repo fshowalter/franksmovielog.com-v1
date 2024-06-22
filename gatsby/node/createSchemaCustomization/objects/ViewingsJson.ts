@@ -1,11 +1,5 @@
 import { SchemaNames } from "../schemaNames";
-import type {
-  GatsbyNode,
-  GatsbyNodeContext,
-  GatsbyResolveArgs,
-  GatsbyResolveInfo,
-} from "../type-definitions";
-import { resolveFieldForNode } from "../utils/resolveFieldForNode";
+import type { GatsbyNode } from "../type-definitions";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
 
 interface ViewingNode extends GatsbyNode {
@@ -42,43 +36,7 @@ export const ViewingsJson = {
         dateformat: {},
       },
     },
-    mediumNotes: {
-      type: "String",
-      resolve: async (
-        source: ViewingNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo,
-      ) => {
-        const viewingMarkdownNode =
-          await context.nodeModel.findOne<MarkdownNode>({
-            type: SchemaNames.MarkdownRemark,
-            query: {
-              filter: {
-                fileAbsolutePath: {
-                  regex: `//viewings/${source.sequence
-                    .toString()
-                    .padStart(4, "0")}-.*/`,
-                },
-              },
-            },
-          });
 
-        if (!viewingMarkdownNode) {
-          return null;
-        }
-
-        const frontMatter = await resolveFieldForNode<FrontMatter>({
-          fieldName: "frontmatter",
-          source: viewingMarkdownNode,
-          context,
-          info,
-          args,
-        });
-
-        return frontMatter ? frontMatter.mediumNotes : null;
-      },
-    },
     poster: posterFieldResolver,
   },
 };

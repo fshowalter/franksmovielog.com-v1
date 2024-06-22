@@ -3,7 +3,13 @@ import toHtml from "hast-util-to-html";
 import toHast from "mdast-util-to-hast";
 import remark from "remark";
 import { SchemaNames } from "../schemaNames";
-import type { GatsbyNode, GatsbyNodeContext } from "../type-definitions";
+import type {
+  GatsbyNode,
+  GatsbyNodeContext,
+  GatsbyResolveArgs,
+  GatsbyResolveInfo,
+} from "../type-definitions";
+import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import { MarkdownNode } from "./MarkdownRemark";
 import { avatarFieldResolver } from "./fieldResolvers/avatarFieldResolver";
 import { posterFieldResolver } from "./fieldResolvers/posterFieldResolver";
@@ -12,6 +18,14 @@ import { stillFieldResolver } from "./fieldResolvers/stillFieldResolver";
 export interface ReviewedTitleNode extends GatsbyNode {
   imdbId: string;
   slug: string;
+}
+
+interface ReviewedTitleViewingNode {
+  sequence: number;
+}
+
+interface ReviewedTitleViewingNodeFrontMatter {
+  mediumNotes: string;
 }
 
 interface IHastNode extends Node {
@@ -51,24 +65,44 @@ export const ReviewedTitleViewing = {
     medium: "String",
     mediumNotes: {
       type: "String",
-      resolve: (source: { mediumNotes: string }) => {
-        if (!source.mediumNotes) {
+      resolve: async (
+        source: ReviewedTitleViewingNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo,
+      ) => {
+        const viewingMarkdownNode =
+          await context.nodeModel.findOne<MarkdownNode>({
+            type: SchemaNames.MarkdownRemark,
+            query: {
+              filter: {
+                fileAbsolutePath: {
+                  regex: `//viewings/${source.sequence
+                    .toString()
+                    .padStart(4, "0")}-.*/`,
+                },
+              },
+            },
+          });
+
+        if (!viewingMarkdownNode) {
           return null;
         }
 
-        const mdast = remark().parse(source.mediumNotes);
+        const frontMatter =
+          await resolveFieldForNode<ReviewedTitleViewingNodeFrontMatter>({
+            fieldName: "frontmatter",
+            source: viewingMarkdownNode,
+            context,
+            info,
+            args,
+          });
 
-        const hast = toHast(mdast, {
-          allowDangerousHtml: true,
-        }) as IHastNode;
-
-        hast.children[0].tagName = "span";
-
-        return toHtml(hast);
+        return frontMatter ? frontMatter.mediumNotes : null;
       },
     },
     sequence: "Int!",
-    viewingNote: {
+    viewingNotes: {
       type: SchemaNames.MarkdownRemark,
       resolve: async (
         source: { sequence: number },

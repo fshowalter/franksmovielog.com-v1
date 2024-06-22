@@ -111,7 +111,7 @@ function Venue({
   );
 }
 
-function ViewingNote({
+function ViewingNotes({
   viewing,
 }: {
   viewing: Queries.ViewingHistoryFragment["viewings"][0];
@@ -141,15 +141,13 @@ export function ViewingHistoryEntry({ viewing }: IIViewingHistoryItemProps) {
       <GridArea name="icon">
         <DateIcon />{" "}
       </GridArea>
-      <GridArea name="date">
+      <GridArea name="slug">
         <Date viewing={viewing} />
         <Medium viewing={viewing} /> <MediumNotes viewing={viewing} />
-      </GridArea>
-      <GridArea name="venue">
         <Venue viewing={viewing} /> <VenueNotes viewing={viewing} />
       </GridArea>
-      <GridArea name="viewingNote">
-        <ViewingNote viewing={viewing} />
+      <GridArea name="notes">
+        <ViewingNotes viewing={viewing} />
       </GridArea>
     </Grid>
   );
@@ -162,7 +160,7 @@ export const query = graphql`
     venueNotes
     medium
     mediumNotes
-    viewingNote {
+    viewingNotes {
       linkedHtml
     }
     sequence
