@@ -98,7 +98,19 @@ export const ReviewedTitleViewing = {
             args,
           });
 
-        return frontMatter ? frontMatter.mediumNotes : null;
+        if (!frontMatter || !frontMatter.mediumNotes) {
+          return null;
+        }
+
+        const mdast = remark().parse(frontMatter.mediumNotes);
+
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as IHastNode;
+
+        hast.children[0].tagName = "span";
+
+        return toHtml(hast);
       },
     },
     sequence: "Int!",

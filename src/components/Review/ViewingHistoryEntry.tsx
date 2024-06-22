@@ -116,7 +116,7 @@ function ViewingNotes({
 }: {
   viewing: Queries.ViewingHistoryFragment["viewings"][0];
 }) {
-  if (!viewing.viewingNote) {
+  if (!viewing.viewingNotes) {
     return null;
   }
   return (
@@ -125,7 +125,7 @@ function ViewingNotes({
         fontSize="default"
         lineHeight="default"
         // eslint-disable-next-line react/no-danger
-        text={viewing.viewingNote.linkedHtml}
+        text={viewing.viewingNotes.linkedHtml}
       />
     </Box>
   );
