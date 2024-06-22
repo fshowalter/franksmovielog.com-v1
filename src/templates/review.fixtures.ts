@@ -59,7 +59,7 @@ export const data = {
         medium: "Blu-ray",
         mediumNotes:
           "<span>2013 | Lionsgate Films | 2012 Hammer Restoration</span>",
-        viewingNote: null,
+        viewingNotes: null,
         sequence: 936,
       },
       {
@@ -68,7 +68,7 @@ export const data = {
         venueNotes: null,
         medium: "Blu-ray",
         mediumNotes: null,
-        viewingNote: null,
+        viewingNotes: null,
         sequence: 721,
       },
       {
@@ -77,7 +77,7 @@ export const data = {
         venueNotes: null,
         medium: "Blu-ray",
         mediumNotes: null,
-        viewingNote: null,
+        viewingNotes: null,
         sequence: 456,
       },
       {
@@ -86,7 +86,7 @@ export const data = {
         venueNotes: null,
         medium: "DVD",
         mediumNotes: null,
-        viewingNote: null,
+        viewingNotes: null,
         sequence: 418,
       },
     ],
