@@ -497,7 +497,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__8ppdi33"
+                class="ViewingHistoryEntry_gridAreas_slug__8ppdi33"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk70"
@@ -530,14 +530,10 @@ exports[`/reviews/{slug} renders 1`] = `
                   </span>
                   )
                 </span>
-              </div>
-              <div
-                class="ViewingHistoryEntry_gridAreas_venue__8ppdi36"
-              >
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__8ppdi37"
+                class="ViewingHistoryEntry_gridAreas_notes__8ppdi34"
               />
             </div>
             <div
@@ -572,7 +568,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__8ppdi33"
+                class="ViewingHistoryEntry_gridAreas_slug__8ppdi33"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk70"
@@ -591,15 +587,10 @@ exports[`/reviews/{slug} renders 1`] = `
                     Blu-ray
                   </span>
                 </span>
-                 
+                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_venue__8ppdi36"
-              >
-                 
-              </div>
-              <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__8ppdi37"
+                class="ViewingHistoryEntry_gridAreas_notes__8ppdi34"
               />
             </div>
             <div
@@ -634,7 +625,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__8ppdi33"
+                class="ViewingHistoryEntry_gridAreas_slug__8ppdi33"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk70"
@@ -653,15 +644,10 @@ exports[`/reviews/{slug} renders 1`] = `
                     Blu-ray
                   </span>
                 </span>
-                 
+                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_venue__8ppdi36"
-              >
-                 
-              </div>
-              <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__8ppdi37"
+                class="ViewingHistoryEntry_gridAreas_notes__8ppdi34"
               />
             </div>
             <div
@@ -696,7 +682,7 @@ exports[`/reviews/{slug} renders 1`] = `
                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_date__8ppdi33"
+                class="ViewingHistoryEntry_gridAreas_slug__8ppdi33"
               >
                 <span
                   class="sprinkles_color_default__8lcvdk7 sprinkles_display_inline-block_default__8lcvdk70"
@@ -715,15 +701,10 @@ exports[`/reviews/{slug} renders 1`] = `
                     DVD
                   </span>
                 </span>
-                 
+                  
               </div>
               <div
-                class="ViewingHistoryEntry_gridAreas_venue__8ppdi36"
-              >
-                 
-              </div>
-              <div
-                class="ViewingHistoryEntry_gridAreas_viewingNote__8ppdi37"
+                class="ViewingHistoryEntry_gridAreas_notes__8ppdi34"
               />
             </div>
           </ul>
