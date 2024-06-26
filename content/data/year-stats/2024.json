@@ -1,12 +1,12 @@
 {
   "year": "2024",
-  "newTitleCount": 36,
-  "viewingCount": 49,
-  "titleCount": 48,
+  "newTitleCount": 38,
+  "viewingCount": 54,
+  "titleCount": 53,
   "mediaDistribution": [
     {
       "name": "Blu-ray",
-      "count": 22
+      "count": 25
     },
     {
       "name": "4k UHD Blu-ray",
@@ -18,7 +18,7 @@
     },
     {
       "name": "DVD",
-      "count": 2
+      "count": 3
     },
     {
       "name": "WEBRip",
@@ -40,7 +40,7 @@
     },
     {
       "name": "1960s",
-      "count": 6
+      "count": 7
     },
     {
       "name": "1970s",
@@ -48,15 +48,15 @@
     },
     {
       "name": "1980s",
-      "count": 14
+      "count": 16
     },
     {
       "name": "1990s",
-      "count": 6
+      "count": 7
     },
     {
       "name": "2000s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "2010s",
@@ -260,6 +260,31 @@
           "year": "1962"
         }
       ]
+    },
+    {
+      "name": "Corey Yuen",
+      "count": 2,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1584,
+          "date": "2024-04-24",
+          "slug": "ninja-in-the-dragons-den-1982",
+          "title": "Ninja in the Dragon's Den",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1982"
+        },
+        {
+          "sequence": 1604,
+          "date": "2024-06-20",
+          "slug": null,
+          "title": "Righting Wrongs",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1986"
+        }
+      ]
     }
   ],
   "mostWatchedPerformers": [
@@ -362,6 +387,40 @@
           "medium": "4k UHD Blu-ray",
           "venue": null,
           "year": "1966"
+        }
+      ]
+    },
+    {
+      "name": "Nicolas Cage",
+      "count": 3,
+      "slug": null,
+      "viewings": [
+        {
+          "sequence": 1582,
+          "date": "2024-04-13",
+          "slug": "mandy-2018",
+          "title": "Mandy",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "2018"
+        },
+        {
+          "sequence": 1595,
+          "date": "2024-06-06",
+          "slug": null,
+          "title": "Red Rock West",
+          "medium": "Blu-ray",
+          "venue": null,
+          "year": "1993"
+        },
+        {
+          "sequence": 1607,
+          "date": "2024-06-24",
+          "slug": null,
+          "title": "Vampire's Kiss",
+          "medium": null,
+          "venue": "Alamo Drafthouse Cinema - One Loudoun",
+          "year": "1988"
         }
       ]
     },
@@ -528,31 +587,6 @@
     },
     {
       "name": "Jamie Scoggin",
-      "count": 2,
-      "slug": null,
-      "viewings": [
-        {
-          "sequence": 1556,
-          "date": "2024-01-04",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": "Blu-ray",
-          "venue": null,
-          "year": "1985"
-        },
-        {
-          "sequence": 1586,
-          "date": "2024-04-27",
-          "slug": "night-train-to-terror-1985",
-          "title": "Night Train to Terror",
-          "medium": null,
-          "venue": "Alamo Drafthouse Cinema - One Loudoun",
-          "year": "1985"
-        }
-      ]
-    },
-    {
-      "name": "Stacey Lyons",
       "count": 2,
       "slug": null,
       "viewings": [

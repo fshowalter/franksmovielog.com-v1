@@ -71,5 +71,6 @@ export const query = graphql`
     poster {
       ...ListItemPoster
     }
+    viewed
   }
 `;
