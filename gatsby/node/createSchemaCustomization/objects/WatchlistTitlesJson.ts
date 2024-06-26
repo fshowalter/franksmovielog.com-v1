@@ -16,6 +16,7 @@ export const WatchlistTitlesJson = {
     writerNames: "[String!]!",
     slug: "String",
     poster: posterFieldResolver,
+    viewed: "Boolean!",
   },
   extensions: {
     infer: false,

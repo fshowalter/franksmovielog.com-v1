@@ -10308,14 +10308,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Challenge to White Fang",
-        "imdbId": "tt0072085",
-        "year": "1974",
-        "slug": "challenge-to-white-fang-1974",
-        "grade": "D",
+        "title": "Chamber of Horrors",
+        "imdbId": "tt0060228",
+        "year": "1966",
+        "slug": "chamber-of-horrors-1966",
+        "grade": "D+",
         "genres": [
-          "Adventure",
-          "Western"
+          "Crime",
+          "Horror",
+          "Thriller"
         ]
       },
       {
@@ -13048,14 +13049,15 @@
         ]
       },
       {
-        "title": "Charming Sinners",
-        "imdbId": "tt0019758",
-        "year": "1929",
-        "slug": "charming-sinners-1929",
-        "grade": "C",
+        "title": "Chamber of Horrors",
+        "imdbId": "tt0060228",
+        "year": "1966",
+        "slug": "chamber-of-horrors-1966",
+        "grade": "D+",
         "genres": [
-          "Drama",
-          "Romance"
+          "Crime",
+          "Horror",
+          "Thriller"
         ]
       }
     ]
@@ -18128,18 +18130,6 @@
     "moreCollections": [],
     "moreReviews": [
       {
-        "title": "Chain Lightning",
-        "imdbId": "tt0042324",
-        "year": "1950",
-        "slug": "chain-lightning-1950",
-        "grade": "D+",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Drama"
-        ]
-      },
-      {
         "title": "Challenge to White Fang",
         "imdbId": "tt0072085",
         "year": "1974",
@@ -18148,6 +18138,18 @@
         "genres": [
           "Adventure",
           "Western"
+        ]
+      },
+      {
+        "title": "Chamber of Horrors",
+        "imdbId": "tt0060228",
+        "year": "1966",
+        "slug": "chamber-of-horrors-1966",
+        "grade": "D+",
+        "genres": [
+          "Crime",
+          "Horror",
+          "Thriller"
         ]
       },
       {
@@ -73382,6 +73384,103 @@
     ]
   },
   {
+    "imdbId": "tt0060228",
+    "title": "Chamber of Horrors",
+    "year": "1966",
+    "slug": "chamber-of-horrors-1966",
+    "grade": "D+",
+    "countries": [
+      "United States"
+    ],
+    "genres": [
+      "Crime",
+      "Horror",
+      "Thriller"
+    ],
+    "sortTitle": "Chamber of Horrors (1966)",
+    "originalTitle": null,
+    "gradeValue": 4,
+    "runtimeMinutes": 80,
+    "releaseSequence": "1966-08-31tt0060228",
+    "directorNames": [
+      "Hy Averback"
+    ],
+    "writerNames": [
+      "Stephen Kandel",
+      "Ray Russell"
+    ],
+    "principalCastNames": [
+      "Patrick O'Neal",
+      "Cesare Danova",
+      "Wilfrid Hyde-White",
+      "Laura Devon"
+    ],
+    "reviewDate": "2024-06-23",
+    "reviewYear": "2024",
+    "sequence": "2024-06-23-1606",
+    "viewings": [
+      {
+        "sequence": 1606,
+        "medium": "DVD",
+        "mediumNotes": "_Horror Double Feature_, Warner Bros., 2008",
+        "date": "2024-06-23",
+        "venue": null,
+        "venueNotes": null
+      }
+    ],
+    "castAndCrew": [],
+    "collections": [],
+    "moreCastAndCrew": [],
+    "moreCollections": [],
+    "moreReviews": [
+      {
+        "title": "Chain Lightning",
+        "imdbId": "tt0042324",
+        "year": "1950",
+        "slug": "chain-lightning-1950",
+        "grade": "D+",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ]
+      },
+      {
+        "title": "Challenge to White Fang",
+        "imdbId": "tt0072085",
+        "year": "1974",
+        "slug": "challenge-to-white-fang-1974",
+        "grade": "D",
+        "genres": [
+          "Adventure",
+          "Western"
+        ]
+      },
+      {
+        "title": "Charming Sinners",
+        "imdbId": "tt0019758",
+        "year": "1929",
+        "slug": "charming-sinners-1929",
+        "grade": "C",
+        "genres": [
+          "Drama",
+          "Romance"
+        ]
+      },
+      {
+        "title": "Child's Play",
+        "imdbId": "tt0094862",
+        "year": "1988",
+        "slug": "childs-play-1988",
+        "grade": "C-",
+        "genres": [
+          "Horror",
+          "Thriller"
+        ]
+      }
+    ]
+  },
+  {
     "imdbId": "tt0022134",
     "title": "Arizona",
     "year": "1931",
@@ -95046,6 +95145,18 @@
         ]
       },
       {
+        "title": "Chamber of Horrors",
+        "imdbId": "tt0060228",
+        "year": "1966",
+        "slug": "chamber-of-horrors-1966",
+        "grade": "D+",
+        "genres": [
+          "Crime",
+          "Horror",
+          "Thriller"
+        ]
+      },
+      {
         "title": "Charming Sinners",
         "imdbId": "tt0019758",
         "year": "1929",
@@ -95054,17 +95165,6 @@
         "genres": [
           "Drama",
           "Romance"
-        ]
-      },
-      {
-        "title": "Child's Play",
-        "imdbId": "tt0094862",
-        "year": "1988",
-        "slug": "childs-play-1988",
-        "grade": "C-",
-        "genres": [
-          "Horror",
-          "Thriller"
         ]
       }
     ]
