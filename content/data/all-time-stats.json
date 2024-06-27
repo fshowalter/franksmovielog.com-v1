@@ -1,6 +1,6 @@
 [
   {
-    "viewingCount": 1608,
+    "viewingCount": 1609,
     "titleCount": 1313,
     "reviewCount": 711,
     "watchlistTitlesReviewedCount": 390,
@@ -98,7 +98,7 @@
       },
       {
         "name": "4k UHD Blu-ray",
-        "count": 64
+        "count": 65
       },
       {
         "name": "Amazon",
@@ -136,7 +136,7 @@
       },
       {
         "name": "1970s",
-        "count": 178
+        "count": 179
       },
       {
         "name": "1980s",
@@ -5963,7 +5963,7 @@
       },
       {
         "name": "Dario Argento",
-        "count": 17,
+        "count": 18,
         "slug": null,
         "viewings": [
           {
@@ -6118,6 +6118,15 @@
             "medium": "DVD",
             "venue": null,
             "year": "1973"
+          },
+          {
+            "sequence": 1609,
+            "date": "2024-06-26",
+            "slug": null,
+            "title": "Deep Red",
+            "medium": "4k UHD Blu-ray",
+            "venue": null,
+            "year": "1975"
           }
         ]
       },
