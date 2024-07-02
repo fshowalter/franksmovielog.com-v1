@@ -14588,13 +14588,13 @@ __metadata:
   linkType: hard
 
 "pkg-types@npm:^1.1.1":
-  version: 1.1.2
-  resolution: "pkg-types@npm:1.1.2"
+  version: 1.1.3
+  resolution: "pkg-types@npm:1.1.3"
   dependencies:
     confbox: "npm:^0.1.7"
     mlly: "npm:^1.7.1"
     pathe: "npm:^1.1.2"
-  checksum: 10c0/bf49957601b17dbd7fdba4a4a44026a04253a97946f1c68f83fad2e3f0aefbf5b6f93f0d90ccdd6c2f5aa15bfffbeab431eb3f26d12311c3664853ec6af571e9
+  checksum: 10c0/4cd2c9442dd5e4ae0c61cbd8fdaa92a273939749b081f78150ce9a3f4e625cca0375607386f49f103f0720b239d02369bf181c3ea6c80cf1028a633df03706ad
   languageName: node
   linkType: hard
 
